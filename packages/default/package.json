@@ -1,0 +1,8 @@
+{
+  "name": "kendo-theme-default",
+  "version": "0.1.0",
+  "description": "SASS resources for the default Kendo UI theme",
+  "keywords": [ "Kendo UI", "Theme" ],
+  "author": "Telerik",
+  "license": "Apache-2.0"
+}
