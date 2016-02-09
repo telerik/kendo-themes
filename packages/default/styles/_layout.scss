@@ -1,0 +1,50 @@
+.common-test-class { opacity: 0; }
+
+.reset { margin:0;padding:0;border:0;outline:0;text-decoration:none;font-size:100%;list-style:none;}
+
+.floatwrap:after{content:"";display:block;clear:both;visibility:hidden;height:0;overflow:hidden;}
+.floatwrap{display:inline-block;}
+.floatwrap{display:block;}
+
+/* main gradient */
+
+.header,
+.link.state-hover {
+    background-repeat: repeat;
+    background-position: 0 center;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+/* link */
+
+.link {
+    cursor: pointer;
+    outline: 0;
+    text-decoration: none;
+}
+
+/* states */
+
+.state-disabled,
+.state-disabled .link {
+    cursor: default !important;
+    outline: 0;
+}
+
+.state-error {
+    border-style: ridge;
+}
+
+.state-empty {
+    font-style: italic;
+}
+
+/* override box sizing for grid layout framework integration (Bootstrap 3, Foundation 4) */
+.widget,
+.widget *,
+.widget *:before {
+    box-sizing: content-box;
+}

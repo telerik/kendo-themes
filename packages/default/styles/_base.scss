@@ -1,4 +1,65 @@
-.widget {
-    box-sizing: border-box;
+$widget-border-color: darken($base, 8%);
+$disabled-border-color: darken($base, 14%);
+$hover-border-color: darken($base, 20%);
+$focused-item-shadow: inset 0 0 3px 1px lighten($normal-text-color, 30%);
+
+.item {
+    border-color: transparent;
 }
 
+.widget {
+    background-color: $background;
+}
+
+.widget,
+.content,
+.header,
+.state-default,
+.state-disabled {
+    border-color: $widget-border-color;
+}
+
+.header,
+.state-highlight {
+    background-color: saturate($base, 4%);
+    border-color: $accent;
+}
+
+.widget,
+.content,
+.link {
+    color: $normal-text-color;
+}
+
+.content {
+    background-color: $background;
+}
+
+// States
+.state-selected {
+    color: $selected-text-color;
+    background-color: $selected-background;
+    border-color: lighten($accent, 1%);
+}
+
+.state-focused {
+    box-shadow: $focused-item-shadow;
+}
+
+.state-hover,
+.state-hover:hover {
+    color: $hover-text-color;
+    background-color: $hover-background;
+    border-color: $hover-border-color;
+}
+
+.state-disabled,
+.state-disabled .link,
+.state-disabled .button {
+    color: $disabled-border-color;
+    border-color: $disabled-border-color;
+}
+
+.state-disabled {
+    opacity: .7;
+}
