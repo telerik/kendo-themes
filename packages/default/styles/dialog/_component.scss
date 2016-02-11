@@ -1,3 +1,34 @@
 @include exports('dialog/component') {
 @import 'layout';
+
+$window-border-color: darken($base, 8%);
+$window-shadow-color: rgba(0,0,0,.3);
+$window-shadow: 0 0 4px 0 $window-shadow-color;
+$window-focused-box-shadow: 1px 1px 7px 1px $window-shadow-color;
+
+.window {
+    border-color: $window-border-color;
+    border-radius: $border-radius;
+    box-shadow: $window-shadow;
+
+    >.header {
+        border-color: $window-border-color;
+    }
+
+    &.state-focused {
+        box-shadow: $window-focused-box-shadow;
+    }
+}
+
+.window-titlebar {
+    border-radius: $border-radius $border-radius 0 0;
+
+    .link {
+        border-radius: $border-radius;
+    }
+}
+
+.window-content {
+    border-radius: 0 0 $border-radius $border-radius;
+}
 }

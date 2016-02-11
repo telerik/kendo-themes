@@ -1,3 +1,156 @@
 @include exports('dialog/layout') {
 
+$window-titlebar-size: 2em;
+
+.window
+{
+    display: inline-block;
+    position: absolute;
+    z-index: 10001;
+    border-style: solid;
+    border-width: 1px;
+    padding-top: $window-titlebar-size;
+
+    .window-titleless {
+        padding-top: 0;
+    }
+}
+
+.window-titlebar {
+    position: absolute;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-top: -$window-titlebar-size;
+    height: 1.1em;
+    padding: .4em 0;
+    font-size: 1.2em;
+    white-space: nowrap;
+    min-height: $icon-size; /* icon size */
+
+    .window-actions {
+        position: absolute;
+        top: 0;
+        right: .3em;
+        padding-top: .3em;
+        white-space: nowrap;
+    }
+
+    .window-action {
+        display: inline-block;
+        width: $icon-size;
+        height: $icon-size;
+        padding: 2px;
+        text-decoration: none;
+        vertical-align: middle;
+        opacity: .7;
+    }
+
+    .state-hover {
+        border-style: solid;
+        border-width: 1px;
+        padding: 1px;
+        opacity: 1;
+    }
+}
+
+.window-title {
+    position: absolute;
+    left: .44em;
+    right: .44em;
+    overflow: hidden;
+    cursor: default;
+    text-overflow: ellipsis;
+
+    .image {
+        margin: 0 5px 0 0;
+        vertical-align: middle;
+    }
+}
+
+.window-content
+{
+    position: relative;
+    height: 100%;
+    padding: .58em;
+    overflow: auto;
+    outline: 0;
+}
+
+.window-iframecontent
+{
+    padding: 0;
+    overflow: visible;
+}
+
+.window-action .icon
+{
+    margin: 0;
+    vertical-align: top;
+}
+
+.window > .resize-handle
+{
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    font-size: 0;
+    line-height: 6px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    zoom: 1;
+}
+
+$resizer-size: 6px;
+$resizer-offset: -$resizer-size/2;
+
+.resize-n { top: $resizer-offset; left: 0; width: 100%; height: $resizer-size; cursor: n-resize; }
+.resize-e { top: 0; right: $resizer-offset; width: $resizer-size; height: 100%; cursor: e-resize; }
+.resize-s { bottom: $resizer-offset; left: 0; width: 100%; height: $resizer-size; cursor: s-resize; }
+.resize-w { top: 0; left: $resizer-offset; width: $resizer-size; height: 100%; cursor: w-resize; }
+.resize-se { bottom: $resizer-offset; right: $resizer-offset; width: $icon-size; height: $icon-size; cursor: se-resize; }
+.resize-sw { bottom: $resizer-offset; left: $resizer-offset; width: $resizer-size; height: $resizer-size; cursor: sw-resize; }
+.resize-ne { top: $resizer-offset; right: $resizer-offset; width: $resizer-size; height: $resizer-size; cursor: ne-resize; }
+.resize-nw { top: $resizer-offset; left: $resizer-offset; width: $resizer-size; height: $resizer-size; cursor: nw-resize; }
+
+.overlay
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10001;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+.window .overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+
+.action-buttons {
+    clear: both;
+    text-align: right;
+    border-width: 1px 0 0;
+    border-style: solid;
+    position: relative;
+    bottom: -1em;
+    padding: .6em;
+    margin: 0 -1em;
+
+    .button {
+        display: inline-block;
+        margin: 0 0 0 6px;
+        min-width: 75px;
+    }
+}
 }
