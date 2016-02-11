@@ -1,0 +1,25 @@
+@include exports('tabstrip/component') {
+@import 'layout';
+
+$tabstrip-background-color: saturate($base, 4%) !default;
+$tabstrip-border-color: darken($base, 8%) !default;
+$tabstrip-active-background-color: desaturate($background, 1%) !default;
+$tabstrip-active-border-color: darken($base, 29%) !default;
+
+.tabstrip {
+    &.header {
+        background-color: $tabstrip-background-color;
+        border-color: $tabstrip-border-color;
+    }
+
+    > .state-active,
+    .tabstrip-items .state-active {
+        background-color: $tabstrip-active-background-color;
+        border-color: $tabstrip-active-border-color;
+    }
+}
+
+.tabstrip-items .item {
+    border-radius: $border-radius $border-radius 0 0;
+}
+}

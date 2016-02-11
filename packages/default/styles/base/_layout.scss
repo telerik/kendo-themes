@@ -1,0 +1,37 @@
+@include exports('base/layout') {
+.reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none;
+}
+
+.floatwrap:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+.link {
+    cursor: pointer;
+    outline: 0;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/* override box sizing for grid layout framework integration (Bootstrap 3, Foundation 4) */
+.widget,
+.widget *,
+.widget *:before {
+    box-sizing: content-box;
+}
+}
