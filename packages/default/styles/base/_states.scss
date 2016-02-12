@@ -25,9 +25,9 @@ $focused-item-shadow: inset 0 0 3px 1px lighten($normal-text-color, 30%);
 }
 
 .state-selected {
-    color: $selected-text-color;
     background-color: $selected-background;
     border-color: lighten($accent, 1%);
+    color: $selected-text-color;
 }
 
 .state-focused {
@@ -36,17 +36,17 @@ $focused-item-shadow: inset 0 0 3px 1px lighten($normal-text-color, 30%);
 
 .state-hover,
 .state-hover:hover {
-    color: $hover-text-color;
     background-color: $hover-background;
     border-color: $hover-border-color;
+    color: $hover-text-color;
 }
 
 .state-disabled,
 .state-disabled .link,
 .state-disabled .button {
-    color: $disabled-border-color;
     border-color: $disabled-border-color;
-    cursor: default !important;
+    color: $disabled-border-color;
+    cursor: default;
     outline: 0;
 }
 

@@ -2,7 +2,43 @@
   "name": "@telerik/kendo-theme-default",
   "version": "0.1.0",
   "description": "SASS resources for the default Kendo UI theme",
-  "keywords": [ "Kendo UI", "Theme" ],
+  "keywords": [
+    "Kendo UI",
+    "Theme"
+  ],
+  "scripts": {
+    "lint": "sass-lint -v -c ./sass-lint.yml"
+  },
   "author": "Telerik",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.1.5",
+    "ghooks": "^1.0.3",
+    "sass-lint": "^1.5.0",
+    "validate-commit-msg": "^1.1.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run lint",
+      "commit-msg": "validate-commit-msg"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert"
+      ],
+      "warnOnFail": false,
+      "maxSubjectLength": 100
+    }
+  }
 }

@@ -5,38 +5,38 @@
 
     margin: 0;
     padding: 0;
-    zoom: 1;
     position: relative;
+    zoom: 1;
 
     > .button {
         position: absolute;
         top: .4em;
-        z-index: 2;
         user-select: none;
+        z-index: 2;
     }
 }
 
 .tabstrip-items {
-    padding: 0.3em 0.3em 0;
+    padding: .3em .3em 0;
 
     .tabstrip-scrollable & {
-        white-space: nowrap;
         overflow: hidden;
+        white-space: nowrap;
     }
 
     .item {
-        list-style-type: none;
-        display: inline-block;
-        position: relative;
         border-style: solid;
         border-width: 1px 1px 0;
+        display: inline-block;
+        list-style-type: none;
         margin: 0 -1px 0 0;
         padding: 0;
+        position: relative;
         vertical-align: top;
 
         .link {
-            display: inline-block;
             border-bottom-width: 0;
+            display: inline-block;
             padding: .5em .92em;
         }
 
@@ -72,24 +72,25 @@
 }
 
 .tabstrip > .content {
-    position: static;
     border-style: solid;
     border-width: 1px;
-    margin: 0 .286em .3em;
-    padding: .3em .92em;
-    zoom: 1;
     display: none;
+    margin: 0 .286em .3em;
     overflow: auto;
+    padding: .3em .92em;
+    position: static;
+    zoom: 1;
 
     &.state-active {
         display: block;
     }
 }
 
-/* left and right tabs */
+// left and right tabs
 
-.tabstrip-left, .tabstrip-right {
-    > div.content {
+.tabstrip-left,
+.tabstrip-right {
+    > .content {
         margin: .286em .3em;
     }
 
@@ -111,15 +112,15 @@
     }
 }
 
-/* left tabs */
+// left tabs
 
 .tabstrip-left > .tabstrip-items {
     float: left;
     padding: .25em 0 .3em .3em;
 
     .item {
-        border-width: 1px 0 1px 1px;
         border-radius: 3px 0 0 3px;
+        border-width: 1px 0 1px 1px;
     }
 
     .state-active {
@@ -133,15 +134,15 @@
     }
 }
 
-/* right tabs */
+// right tabs
 
 .tabstrip-right > .tabstrip-items {
     float: right;
     padding: .25em .3em .3em 0;
 
     .item {
-        border-width: 1px 1px 1px 0;
         border-radius: 0 3px 3px 0;
+        border-width: 1px 1px 1px 0;
     }
 
     .state-active {
@@ -155,12 +156,12 @@
     }
 }
 
-/* bottom tabs */
+// bottom tabs
 
 .tabstrip-bottom {
     > .button {
-        top: auto;
         bottom: .4em;
+        top: auto;
     }
 
     > .tabstrip-items {
@@ -168,8 +169,8 @@
         padding: 0 .3em .3em;
 
         .item {
-            border-width: 0 1px 1px;
             border-radius: 0 0 4px 4px;
+            border-width: 0 1px 1px;
         }
 
         .state-active {
@@ -180,9 +181,9 @@
 
     > .content {
         margin: .3em .286em 0;
-        z-index: 1;
-        position: relative;
         min-height: 100px;
+        position: relative;
+        z-index: 1;
     }
 }
 }

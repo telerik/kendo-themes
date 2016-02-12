@@ -1,0 +1,18 @@
+options:
+    verbose: true
+
+files:
+    include: 'styles/**/*.scss'
+    ignore:
+        - 'styles/mixins/_import-once.scss'
+
+
+rules:
+    no-ids: 2
+    property-sort-order: 2
+
+    indentation: 0
+
+    force-element-nesting: 0
+    force-pseudo-nesting: 0
+

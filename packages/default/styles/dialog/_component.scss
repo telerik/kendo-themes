@@ -2,7 +2,7 @@
 @import 'layout';
 
 $window-border-color: darken($base, 8%);
-$window-shadow-color: rgba(0,0,0,.3);
+$window-shadow-color: rgba(0, 0, 0, .3);
 $window-shadow: 0 0 4px 0 $window-shadow-color;
 $window-focused-box-shadow: 1px 1px 7px 1px $window-shadow-color;
 
