@@ -1,0 +1,21 @@
+@include exports('example/component') {
+@import 'layout';
+
+$example-background-color: saturate($base, 4%) !default;
+$example-border-color: darken($base, 8%) !default;
+$example-active-background-color: desaturate($background, 1%) !default;
+$example-active-border-color: darken($base, 29%) !default;
+
+.example {
+    &.header {
+        background-color: $example-background-color;
+        border-color: $example-border-color;
+    }
+
+    > .state-active,
+    .example-items .state-active {
+        background-color: $example-active-background-color;
+        border-color: $example-active-border-color;
+    }
+}
+}
