@@ -1,0 +1,59 @@
+@include exports('button/layout') {
+
+$button-padding: 2px 7px 2px;
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    line-height: 1.72em;
+    margin: 0;
+    padding: $button-padding;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+
+    [disabled] {
+        cursor: default;
+    }
+
+    // Override the important default line-height in Firefox 4+
+    .ff input& {
+        padding-bottom: .37em;
+        padding-top: .37em;
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+
+}
+
+.button-icon {
+    padding-left: .4em;
+    padding-right: .4em;
+}
+
+.button-icontext {
+    overflow: visible; // IE9
+
+    .icon,
+    .image,
+    .sprite {
+        margin-left: -3px;
+        margin-right: 3px;
+    }
+
+    .icon,
+    .image {
+        vertical-align: text-top;
+    }
+}
+
+.button-bare {
+    border-width: 0;
+    color: inherit;
+}
+}
+

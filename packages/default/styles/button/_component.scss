@@ -1,0 +1,72 @@
+@include exports('button/component') {
+@import 'layout';
+
+$button-border-color: lighten($base, 1%);
+$button-background: saturate($base, 1%);
+
+$primary-button-background: lighten($accent, 7%);
+$primary-button-border-color: lighten($accent, 3%);
+$primary-button-hover-background: lighten($accent, 3%);
+$primary-button-focused-box-shadow: 0 0 3px 0 $accent;
+$primary-active-background: desaturate($accent, 1%);
+$primary-disabled-background: lighten($accent, 18%);
+
+.button {
+    background-color: $button-background;
+    border-color: $button-border-color;
+    color: $normal-text-color;
+
+    &:hover,
+    &.state-hover {
+        background-color: $hover-background;
+    }
+
+    &:focus,
+    &.state-focused {
+        outline: 0;
+    }
+
+    &:active,
+    &.state-active {
+        background-color: $selected-background;
+        border-color: $selected-background;
+        color: $selected-text-color;
+    }
+
+    &[disabled],
+    &.state-disabled,
+    &.state-disabled:hover,
+    &.state-disabled:active {
+        background-color: $button-background;
+        border-color: $disabled-border-color;
+        color: $disabled-border-color;
+    }
+}
+
+.primary {
+    background-color: $primary-button-background;
+    border-color: $primary-button-border-color;
+    color: $selected-text-color;
+
+    &:hover {
+        background-color: $primary-button-hover-background;
+    }
+
+    &.state-focused {
+        border-color: darken($primary-button-background, 10%);
+        box-shadow: $primary-button-focused-box-shadow;
+    }
+
+    &:active {
+        background-color: $primary-active-background;
+    }
+
+    &.state-disabled,
+    &.state-disabled:hover,
+    .state-disabled:active {
+        background-color: $primary-disabled-background;
+        border-color: $primary-disabled-background;
+        color: $selected-text-color;
+    }
+}
+}
