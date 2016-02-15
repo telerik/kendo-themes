@@ -5,7 +5,7 @@
     border-width: $input-btn-border-width;
     border-style: solid;
     font-size: $font-size-base;
-    line-height: $line-height;
+    line-height: $line-height-base;
     display: inline-block;
 
     .k-input {
@@ -26,6 +26,6 @@
     border-width: $dropdown-border-width;
     border-style: solid;
     font-size: $font-size-base;
-    line-height: $line-height;
+    line-height: $line-height-base;
     @include appearance_popup;
 }
