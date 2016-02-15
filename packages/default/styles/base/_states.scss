@@ -1,8 +1,9 @@
-@include exports('base/states') {
-$widget-border-color: darken($base, 8%);
 $disabled-border-color: darken($base, 14%);
+$widget-border-color: darken($base, 8%);
 $hover-border-color: darken($base, 20%);
 $focused-item-shadow: inset 0 0 3px 1px lighten($normal-text-color, 30%);
+
+@include exports('base/states') {
 
 .widget,
 .content {

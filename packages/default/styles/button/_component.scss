@@ -1,15 +1,16 @@
+$button-border-color: lighten($base, 1%) !default;
+$button-background: saturate($base, 1%) !default;
+
+$primary-background: lighten($accent, 7%) !default;
+$primary-border-color: lighten($accent, 3%) !default;
+$primary-hover-background: lighten($accent, 3%) !default;
+$primary-focused-box-shadow: 0 0 3px 0 $accent !default;
+$primary-active-background: desaturate($accent, 1%) !default;
+$primary-disabled-background: lighten($accent, 18%) !default;
+
 @include exports('button/component') {
+@import '../base/states';
 @import 'layout';
-
-$button-border-color: lighten($base, 1%);
-$button-background: saturate($base, 1%);
-
-$primary-button-background: lighten($accent, 7%);
-$primary-button-border-color: lighten($accent, 3%);
-$primary-button-hover-background: lighten($accent, 3%);
-$primary-button-focused-box-shadow: 0 0 3px 0 $accent;
-$primary-active-background: desaturate($accent, 1%);
-$primary-disabled-background: lighten($accent, 18%);
 
 .button {
     background-color: $button-background;
@@ -44,17 +45,17 @@ $primary-disabled-background: lighten($accent, 18%);
 }
 
 .primary {
-    background-color: $primary-button-background;
-    border-color: $primary-button-border-color;
+    background-color: $primary-background;
+    border-color: $primary-border-color;
     color: $selected-text-color;
 
     &:hover {
-        background-color: $primary-button-hover-background;
+        background-color: $primary-hover-background;
     }
 
     &.state-focused {
-        border-color: darken($primary-button-background, 10%);
-        box-shadow: $primary-button-focused-box-shadow;
+        border-color: darken($primary-background, 10%);
+        box-shadow: $primary-focused-box-shadow;
     }
 
     &:active {

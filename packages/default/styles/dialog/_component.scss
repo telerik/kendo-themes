@@ -1,4 +1,6 @@
 @include exports('dialog/component') {
+
+@import '../base/states';
 @import 'layout';
 
 $window-border-color: darken($base, 8%);
@@ -30,5 +32,6 @@ $window-focused-box-shadow: 1px 1px 7px 1px $window-shadow-color;
 
 .window-content {
     border-radius: 0 0 $border-radius $border-radius;
+    overflow: hidden;
 }
 }

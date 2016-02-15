@@ -3,6 +3,7 @@
 $button-padding: 2px 7px 2px;
 
 .button {
+    border-radius: $border-radius;
     cursor: pointer;
     display: inline-block;
     font-family: inherit;
