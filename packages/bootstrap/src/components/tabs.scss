@@ -1,0 +1,30 @@
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../mixins/appearance/all";
+
+.k-tabstrip {
+    .k-tabstrip-items {
+        border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
+    }
+
+    .k-item {
+        display: inline-block;
+    }
+    .k-item + .k-item {
+        margin-left: $nav-item-margin;
+    }
+    .k-item .k-link {
+        margin-bottom: -$nav-tabs-border-width;
+        padding: $nav-link-padding;
+        border: $nav-tabs-border-width solid transparent;
+        display: block;
+    }
+
+    .k-state-hover .k-link {
+        border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+    }
+    .k-state-active .k-link {
+        color: $nav-tabs-active-link-hover-color;
+        background-color: $nav-tabs-active-link-hover-bg;
+        border-color: $nav-tabs-active-link-hover-border-color $nav-tabs-active-link-hover-border-color transparent;
+    }
+}

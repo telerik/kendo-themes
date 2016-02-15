@@ -1,0 +1,26 @@
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../mixins/appearance/all";
+
+.k-combobox {
+    font-size: $font-size-base;
+    line-height: $line-height;
+    display: inline-block;
+
+    .k-dropdown-wrap {
+        border-width: $input-btn-border-width;
+        border-style: solid;
+        display: block;
+    }
+
+    .k-input {
+        height: $input-height;
+        padding: $input-padding-y $input-padding-x;
+        border-width: 0;
+        box-sizing: border-box;
+        font: inherit;
+    }
+
+    .k-dropdown-wrap.k-state-default { @include appearance_input; }
+    .k-dropdown-wrap.k-state-hover {}
+    .k-dropdown-wrap.k-state-focused { @include appearance_focused-input; }
+}

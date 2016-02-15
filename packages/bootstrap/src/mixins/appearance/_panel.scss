@@ -1,0 +1,13 @@
+%appearance_panel {
+    color: $body-color;
+    background-color: $card-bg;
+    border-color: $card-border-color;
+}
+%appearance_popup {
+    color: $body-color;
+    background-color: $dropdown-bg;
+    border-color: $dropdown-border-color;
+}
+
+@mixin appearance_panel { @extend %appearance_panel; }
+@mixin appearance_popup { @extend %appearance_popup; }

@@ -1,0 +1,32 @@
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../mixins/appearance/all";
+
+.k-button {
+    padding: $btn-padding-y $btn-padding-x;
+    border-width: $input-btn-border-width;
+    border-style: solid;
+    font-weight: $btn-font-weight;
+    font-size: $font-size-base;
+    line-height: $line-height;
+
+    &:disabled,
+    &[disabled],
+    &.k-disabled {
+        cursor: $cursor-disabled;
+        opacity: .65;
+        pointer-events: none;
+    }
+}
+.k-button {
+    @include appearance_button;
+
+    &:hover { @include appearance_hovered-button; }
+    &.k-state-focused { @include appearance_active-button; }
+}
+
+.k-button.k-primary {
+    @include appearance_primary-button;
+
+    &:hover { @include appearance_primary-hovered-button; }
+    &.k-state-focused { @include appearance_primary-active-button; }
+}

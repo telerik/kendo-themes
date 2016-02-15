@@ -1,0 +1,31 @@
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../mixins/appearance/all";
+
+.k-autocomplete {
+    border-width: $input-btn-border-width;
+    border-style: solid;
+    font-size: $font-size-base;
+    line-height: $line-height;
+    display: inline-block;
+
+    .k-input {
+        height: $input-height;
+        padding: $input-padding-y $input-padding-x;
+        border-width: 0;
+        box-sizing: border-box;
+        font: inherit;
+    }
+
+    &.k-state-default { @include appearance_input; }
+    &.k-state-hover {}
+    &.k-state-focused { @include appearance_focused-input; }
+}
+.k-popup {
+    padding: 5px 0;
+    margin:2px;
+    border-width: $dropdown-border-width;
+    border-style: solid;
+    font-size: $font-size-base;
+    line-height: $line-height;
+    @include appearance_popup;
+}
