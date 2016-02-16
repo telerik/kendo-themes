@@ -167,7 +167,6 @@ $resizer-offset: -$resizer-size / 2;
 
 .overlay {
     background-color: invert($background);
-    filter: alpha(opacity=50);
     height: 100%;
     left: 0;
     opacity: .5;
@@ -179,7 +178,6 @@ $resizer-offset: -$resizer-size / 2;
 
 .window .overlay {
     background-color: $background;
-    filter: alpha(opacity=0);
     height: 100%;
     opacity: 0;
     position: absolute;
@@ -189,13 +187,11 @@ $resizer-offset: -$resizer-size / 2;
 .action-buttons {
     border-top: 1px solid $widget-border-color;
     clear: both;
-    margin: 0 -$window-padding;
     padding: $window-padding;
     text-align: right;
 
     .button {
-        display: inline-block;
-        margin: 0 0 0 6px;
+        margin: 0 0 0 $window-padding;
         min-width: 75px;
     }
 }
