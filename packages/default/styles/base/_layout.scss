@@ -1,4 +1,8 @@
 @include exports('base/layout') {
+html {
+    font-family: sans-serif;
+}
+
 .reset {
     border: 0;
     font-size: 100%;
