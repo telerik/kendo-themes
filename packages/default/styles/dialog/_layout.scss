@@ -22,40 +22,34 @@ $window-padding: .58em;
     font-size: 1.2em;
     height: 1.1em;
     margin-top: -$window-titlebar-size;
-    min-height: $icon-size;
+    min-height: 1em;
     padding: .4em 0;
     position: absolute;
     white-space: nowrap;
     width: 100%;
 
     .window-actions {
-        padding-top: .3em;
+        padding-top: .4em;
         position: absolute;
-        right: .3em;
+        right: .4em;
         top: 0;
         white-space: nowrap;
     }
 
     .window-action {
+        cursor: pointer;
         display: inline-block;
-        height: $icon-size;
+        font-size: .6em;
+        line-height: 1em;
         opacity: .7;
-        padding: 2px;
+        padding: .4em;
         text-decoration: none;
         vertical-align: middle;
-        width: $icon-size;
 
         .icon {
             margin: 0;
             vertical-align: top;
         }
-    }
-
-    .state-hover {
-        border-style: solid;
-        border-width: 1px;
-        opacity: 1;
-        padding: 1px;
     }
 }
 
@@ -136,9 +130,9 @@ $resizer-offset: -$resizer-size / 2;
 .resize-se {
     bottom: $resizer-offset;
     cursor: se-resize;
-    height: $icon-size;
+    height: 1em;
     right: $resizer-offset;
-    width: $icon-size;
+    width: 1em;
 }
 
 .resize-sw {
