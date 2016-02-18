@@ -21,5 +21,9 @@ $tabstrip-active-border-color: darken($base, 29%) !default;
 
 .tabstrip-items .item {
     border-radius: $border-radius $border-radius 0 0;
+
+    &.state-default:hover {
+        background-color: $hover-background;
+    }
 }
 }
