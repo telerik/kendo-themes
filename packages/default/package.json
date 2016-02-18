@@ -7,6 +7,7 @@
     "Theme"
   ],
   "scripts": {
+    "test": "node-sass -r styles/ -o dist/",
     "lint": "sass-lint -v -c ./sass-lint.yml"
   },
   "author": "Telerik",
@@ -14,6 +15,7 @@
   "devDependencies": {
     "cz-conventional-changelog": "^1.1.5",
     "ghooks": "^1.0.3",
+    "node-sass": "^3.4.2",
     "sass-lint": "^1.5.0",
     "validate-commit-msg": "^1.1.1"
   },
@@ -23,6 +25,7 @@
     },
     "ghooks": {
       "pre-commit": "npm run lint",
+      "pre-push": "npm run test",
       "commit-msg": "validate-commit-msg"
     },
     "validate-commit-msg": {
