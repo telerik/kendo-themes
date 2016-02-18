@@ -1,0 +1,19 @@
+@mixin linear-gradient( $gradient ) {
+
+	@if $gradient {
+		@if $gradient == none {
+			background-image: none
+		}
+		@else {
+			background-image: linear-gradient( $gradient );
+		}
+	}
+
+}
+@mixin box-shadow( $shadow ) {
+
+	@if $shadow {
+		box-shadow: $shadow;
+	}
+
+}

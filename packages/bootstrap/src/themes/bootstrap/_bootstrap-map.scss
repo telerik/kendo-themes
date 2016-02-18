@@ -23,6 +23,27 @@ $bootstrap-vars: (
 	popup-border: $dropdown-border-color,
 
 
+	// Header
+	header-color: $body-color,
+	header-bg: $card-cap-bg,
+	header-border: $card-border-color,
+
+		// Header hovered
+		header-hovered-color: null,
+		header-hovered-bg: null,
+		header-hovered-border: null,
+
+		// Header active
+		header-active-color: null,
+		header-active-bg: null,
+		header-active-border: dnull,
+
+		// Header disabled
+		header-disabled-color: $body-color,
+		header-disabled-bg: $card-cap-bg,
+		header-disabled-border: $card-border-color,
+
+
 	// Button
 	button-color: $btn-secondary-color,
 	button-bg: $btn-secondary-bg,
@@ -84,5 +105,26 @@ $bootstrap-vars: (
 		input-disabled-color: $input-color,
 		input-disabled-bg: $input-bg-disabled,
 		input-disabled-border: $input-border-color,
+
+
+	// Button
+	node-color: $btn-secondary-color,
+	node-bg: $btn-secondary-bg,
+	node-border: $btn-secondary-border,
+
+		// Node hovered
+		node-hovered-color: $btn-secondary-color,
+		node-hovered-bg: darken( $btn-secondary-bg, 10% ),
+		node-hovered-border: darken( $btn-secondary-border, 12% ),
+
+		// Node active
+		node-active-color: $btn-secondary-color,
+		node-active-bg: darken( $btn-secondary-bg, 17% ),
+		node-active-border: darken( $btn-secondary-border, 25% ),
+
+		// Node disabled
+		node-disabled-color: $btn-secondary-color,
+		node-disabled-bg: $btn-secondary-bg,
+		node-disabled-border: $btn-secondary-border,
 
 )!global;

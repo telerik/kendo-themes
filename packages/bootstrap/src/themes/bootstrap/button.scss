@@ -24,7 +24,7 @@
 
 	// Appearance
 	.k-button {
-		@include appearance_button;
+		@include appearance( button );
 
 		&:hover,
 		&.k-state-hover { @include appearance_hovered-button; }

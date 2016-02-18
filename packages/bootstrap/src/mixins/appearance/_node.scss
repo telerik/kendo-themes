@@ -1,0 +1,30 @@
+%appearance_node {
+	color: $node-color;
+	background-color: $node-bg;
+	border-color: $node-border;
+	@include linear-gradient( $node-gradient );
+}
+%appearance_hovered-node {
+	color: $node-hovered-color;
+	background-color: $node-hovered-bg;
+	border-color: $node-hovered-border;
+	@include linear-gradient( $node-hovered-gradient );
+}
+%appearance_active-node {
+	color: $node-active-color;
+	background-color: $node-active-bg;
+	border-color: $node-active-border;
+	@include linear-gradient( $node-active-gradient );
+}
+%appearance_disabled-node {
+	color: $node-disabled-color;
+	background-color: $node-disabled-bg;
+	border-color: $node-disabled-border;
+	@include linear-gradient( $node-disabled-gradient );
+}
+
+
+@mixin appearance_node { @extend %appearance_node };
+@mixin appearance_hovered-node { @extend %appearance_hovered-node };
+@mixin appearance_active-node { @extend %appearance_active-node };
+@mixin appearance_disabled-node { @extend %appearance_disabled-node };
