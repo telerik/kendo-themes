@@ -1,36 +1,44 @@
 @import "theme";
-@import "../../mixins/appearance/all";
+@import "../../mixins/all";
 
-.k-button {
-    padding: $btn-padding-y $btn-padding-x;
-    border-width: $input-btn-border-width;
-    border-style: solid;
-    font-weight: $btn-font-weight;
-    font-size: $font-size-base;
-    line-height: $line-height-base;
+@include exports( button ) {
 
-    &:disabled,
-    &[disabled],
-    &.k-disabled {
-        cursor: $cursor-disabled;
-        opacity: .65;
-        pointer-events: none;
-    }
-}
-.k-button {
-    @include appearance_button;
+	// Base
+	.k-button {
+		padding: $btn-padding-y $btn-padding-x;
+		border-width: $input-btn-border-width;
+		border-style: solid;
+		font-weight: $btn-font-weight;
+		font-size: $font-size-base;
+		line-height: $line-height-base;
 
-    &:hover,
-    &.k-state-hover { @include appearance_hovered-button; }
-    &:active,
-    &.k-state-active { @include appearance_active-button; }
-}
+		&:disabled,
+		&[disabled],
+		&.k-disabled {
+			cursor: $cursor-disabled;
+			opacity: .65;
+			pointer-events: none;
+		}
+	}
 
-.k-button.k-primary {
-    @include appearance_primary-button;
 
-    &:hover,
-    &.k-state-hover { @include appearance_prumary-hovered-button; }
-    &:active,
-    &.k-state-active { @include appearance_primary-active-button; }
+	// Appearance
+	.k-button {
+		@include appearance_button;
+
+		&:hover,
+		&.k-state-hover { @include appearance_hovered-button; }
+		&:active,
+		&.k-state-active { @include appearance_active-button; }
+	}
+
+	.k-button.k-primary {
+		@include appearance_primary-button;
+
+		&:hover,
+		&.k-state-hover { @include appearance_primary-hovered-button; }
+		&:active,
+		&.k-state-active { @include appearance_primary-active-button; }
+	}
+
 }

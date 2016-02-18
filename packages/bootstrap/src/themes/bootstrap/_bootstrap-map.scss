@@ -35,8 +35,8 @@ $bootstrap-vars: (
 
 		// Button active
 		button-active-color: $btn-secondary-color,
-		button-active-bg: darken( $btn-secondary-bg, 10% ),
-		button-active-border: darken( $btn-secondary-border, 12% ),
+		button-active-bg: darken( $btn-secondary-bg, 17% ),
+		button-active-border: darken( $btn-secondary-border, 25% ),
 
 		// Button disabled
 		button-disabled-color: $btn-secondary-color,
@@ -56,8 +56,8 @@ $bootstrap-vars: (
 
 		// Primary button active
 		primary-button-active-color: $btn-primary-color,
-		primary-button-active-bg: darken( $btn-primary-bg, 10% ),
-		primary-button-active-border: darken( $btn-primary-border, 12% ),
+		primary-button-active-bg: darken( $btn-primary-bg, 17% ),
+		primary-button-active-border: darken( $btn-primary-border, 25% ),
 
 		// Primary button disable
 		primary-button-disabled-color: $btn-primary-color,
