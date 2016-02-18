@@ -20,13 +20,17 @@
 .k-button {
     @include appearance_button;
 
-    &:hover { @include appearance_hovered-button; }
-    &.k-state-focused { @include appearance_active-button; }
+    &:hover,
+    &.k-state-hover { @include appearance_hovered-button; }
+    &:active,
+    &.k-state-active { @include appearance_active-button; }
 }
 
 .k-button.k-primary {
     @include appearance_primary-button;
 
-    &:hover { @include appearance_primary-hovered-button; }
-    &.k-state-focused { @include appearance_primary-active-button; }
+    &:hover,
+    &.k-state-hover { @include appearance_prumary-hovered-button; }
+    &:active,
+    &.k-state-active { @include appearance_primary-active-button; }
 }
