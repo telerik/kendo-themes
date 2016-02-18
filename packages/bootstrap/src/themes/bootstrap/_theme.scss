@@ -1,0 +1,74 @@
+@import "bootstrap-map";
+
+// Panel
+$panel-color: get-bootstrap-var( panel-color );
+$panel-bg: get-bootstrap-var( panel-bg );
+$panel-border: get-bootstrap-var( panel-border );
+
+// Popup
+$popup-color: get-bootstrap-var( popup-color );
+$popup-bg: get-bootstrap-var( popup-bg );
+$popup-border: get-bootstrap-var( popup-border );
+
+
+// Button
+$button-color: get-bootstrap-var( button-color );
+$button-bg: get-bootstrap-var( button-bg );
+$button-border: get-bootstrap-var( button-border );
+
+	// Hovered button
+	$button-hovered-color: get-bootstrap-var( button-hovered-color );
+	$button-hovered-bg: get-bootstrap-var( button-hovered-bg );
+	$button-hovered-border: get-bootstrap-var( button-hovered-border );
+
+	// Active button
+	$button-active-color: get-bootstrap-var( button-active-color );
+	$button-active-bg: get-bootstrap-var( button-active-bg );
+	$button-active-border: get-bootstrap-var( button-active-border );
+
+	// Disabled button
+	$button-disabled-color: get-bootstrap-var( button-disabled-color );
+	$button-disabled-bg: get-bootstrap-var( button-disabled-bg );
+	$button-disabled-border: get-bootstrap-var( button-disabled-border );
+
+
+// Primary button
+$primary-button-color: get-bootstrap-var( primary-button-color );
+$primary-button-bg: get-bootstrap-var( primary-button-bg );
+$primary-button-border: get-bootstrap-var( primary-button-border );
+
+	// Primary hovered button
+	$primary-button-hovered-color: get-bootstrap-var( primary-button-hovered-color );
+	$primary-button-hovered-bg: get-bootstrap-var( primary-button-hovered-bg );
+	$primary-button-hovered-border: get-bootstrap-var( primary-button-hovered-border );
+
+	// Primary active button
+	$primary-button-active-color: get-bootstrap-var( primary-button-active-color );
+	$primary-button-active-bg: get-bootstrap-var( primary-button-active-bg );
+	$primary-button-active-border: get-bootstrap-var( primary-button-active-border );
+
+	// Primary disabled button
+	$primary-button-disabled-color: get-bootstrap-var( primary-button-disabled-color );
+	$primary-button-disabled-bg: get-bootstrap-var( primary-button-disabled-bg );
+	$primary-button-disabled-border: get-bootstrap-var( primary-button-disabled-border );
+
+
+// Input
+$input-color: get-bootstrap-var( input-color );
+$input-bg: get-bootstrap-var( input-bg );
+$input-border: get-bootstrap-var( input-border );
+
+	// Hovered input
+	$input-hovered-color: get-bootstrap-var( input-hovered-color );
+	$input-hovered-bg: get-bootstrap-var( input-hovered-bg );
+	$input-hovered-border: get-bootstrap-var( input-hovered-border );
+
+	// Active input
+	$input-active-color: get-bootstrap-var( input-active-color );
+	$input-active-bg: get-bootstrap-var( input-active-bg );
+	$input-active-border: get-bootstrap-var( input-active-border );
+
+	// Disabled input
+	$input-disabled-color: get-bootstrap-var( input-disabled-color );
+	$input-disabled-bg: get-bootstrap-var( input-disabled-bg );
+	$input-disabled-border: get-bootstrap-var( input-disabled-border );

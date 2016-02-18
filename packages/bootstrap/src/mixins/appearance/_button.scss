@@ -1,43 +1,43 @@
 %appearance_button {
-    color: $btn-secondary-color;
-    border-color: $btn-secondary-border;
-    background-color: $btn-secondary-bg;
+    color: $button-color;
+    background-color: $button-bg;
+    border-color: $button-border;
 }
 %appearance_hovered-button {
-    color: $btn-secondary-color;
-    border-color: daken( $btn-secondary-border, 12% );
-    background-color: darken( $btn-secondary-bg, 10% );
+    color: $button-hovered-color;
+    background-color: $button-hovered-bg;
+    border-color: $button-hovered-border;
 }
 %appearance_active-button {
-    color: $btn-secondary-color;
-    border-color: daken( $btn-secondary-border, 12% );
-    background-color: darken( $btn-secondary-bg, 10% );
+    color: $button-active-color;
+    background-color: $button-active-bg;
+    border-color: $button-active-border;
 }
 %appearance_disabled-button {
-    color: $btn-secondary-color;
-    border-color: $btn-secondary-border;
-    background-color: $btn-secondary-bg;
+    color: $button-disabled-color;
+    background-color: $button-disabled-bg;
+    border-color: $button-disabled-border;
 }
 
 %appearance_primary-button {
-    color: $btn-primary-color;
-    border-color: $btn-primary-border;
-    background-color: $btn-primary-bg;
+    color: $primary-button-color;
+    background-color: $primary-button-bg;
+    border-color: $primary-button-border;
 }
 %appearance_primary-hovered-button {
-    color: $btn-primary-color;
-    border-color: daken( $btn-primary-border, 12% );
-    background-color: darken( $btn-primary-bg, 10% );
+    color: $primary-button-hovered-color;
+    background-color: $primary-button-hovered-bg;
+    border-color: $primary-button-hovered-border;
 }
 %appearance_primary-active-button {
-    color: $btn-primary-color;
-    border-color: daken( $btn-primary-border, 12% );
-    background-color: darken( $btn-primary-bg, 10% );
+    color: $primary-button-active-color;
+    background-color: $primary-button-active-bg;
+    border-color: $primary-button-active-border;
 }
 %appearance_primary-disabled-button {
-    color: $btn-primary-color;
-    border-color: $btn-primary-border;
-    background-color: $btn-primary-bg;
+    color: $primary-button-disabled-color;
+    background-color: $primary-button-disabled-bg;
+    border-color: $primary-button-disabled-border;
 }
 
 @mixin appearance_button { @extend %appearance_button };

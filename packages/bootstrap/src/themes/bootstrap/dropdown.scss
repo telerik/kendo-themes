@@ -1,5 +1,5 @@
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../mixins/appearance/all";
+@import "theme";
+@import "../../mixins/appearance/all";
 
 .k-dropdown {
     display: inline-block;
@@ -23,9 +23,9 @@
 
 
     .k-dropdown-wrap {
-        @include appearance_button;
+        // @include appearance_button;
 
-        &.k-state-hover { @include appearance_hovered-button; }
-        &.k-state-active { @include appearance_active-button; }
+        // &.k-state-hover { @include appearance_hovered-button; }
+        // &.k-state-active { @include appearance_active-button; }
     }
 }

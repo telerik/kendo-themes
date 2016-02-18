@@ -1,0 +1,88 @@
+@import "../../../node_modules/bootstrap/scss/variables";
+
+@function get-bootstrap-var($var-name) {
+	@if map-has-key($bootstrap-vars, $var-name) {
+		@return map-get($bootstrap-vars, $var-name);
+	}
+	@else {
+		@warn "No key #{$var-name} in $bootstrap-vars";
+	}
+}
+
+$bootstrap-vars: (
+
+	// Panel
+	panel-color: $body-color,
+	panel-bg: $card-bg,
+	panel-border: $card-border-color,
+
+
+	// Popup
+	popup-color: $body-color,
+	popup-bg: $dropdown-bg,
+	popup-border: $dropdown-border-color,
+
+
+	// Button
+	button-color: $btn-secondary-color,
+	button-bg: $btn-secondary-bg,
+	button-border: $btn-secondary-border,
+
+		// Button hovered
+		button-hovered-color: $btn-secondary-color,
+		button-hovered-bg: darken( $btn-secondary-bg, 10% ),
+		button-hovered-border: darken( $btn-secondary-border, 12% ),
+
+		// Button active
+		button-active-color: $btn-secondary-color,
+		button-active-bg: darken( $btn-secondary-bg, 10% ),
+		button-active-border: darken( $btn-secondary-border, 12% ),
+
+		// Button disabled
+		button-disabled-color: $btn-secondary-color,
+		button-disabled-bg: $btn-secondary-bg,
+		button-disabled-border: $btn-secondary-border,
+
+
+	// Primary button
+	primary-button-color: $btn-primary-color,
+	primary-button-bg: $btn-primary-bg,
+	primary-button-border: $btn-primary-border,
+
+		// Primary button hovered
+		primary-button-hovered-color: $btn-primary-color,
+		primary-button-hovered-bg: darken( $btn-primary-bg, 10% ),
+		primary-button-hovered-border: darken( $btn-primary-border, 12% ),
+
+		// Primary button active
+		primary-button-active-color: $btn-primary-color,
+		primary-button-active-bg: darken( $btn-primary-bg, 10% ),
+		primary-button-active-border: darken( $btn-primary-border, 12% ),
+
+		// Primary button disable
+		primary-button-disabled-color: $btn-primary-color,
+		primary-button-disabled-bg: $btn-primary-bg,
+		primary-button-disabled-border: $btn-primary-border,
+
+
+	// Input
+	input-color: $input-color,
+	input-bg: $input-bg,
+	input-border: $input-border-color,
+
+		// Hovered input
+		input-hovered-color: $input-color,
+		input-hovered-bg: $input-bg,
+		input-hovered-border: $input-border-color,
+
+		// Active input
+		input-active-color: $input-color,
+		input-active-bg: $input-bg,
+		input-active-border: $input-border-focus,
+
+		// Disable input
+		input-disabled-color: $input-color,
+		input-disabled-bg: $input-bg-disabled,
+		input-disabled-border: $input-border-color,
+
+)!global;
