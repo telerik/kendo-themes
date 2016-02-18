@@ -1,10 +1,13 @@
-@include exports('tabstrip/component') {
-@import 'layout';
+@import '../base/states';
 
 $tabstrip-background-color: saturate($base, 4%) !default;
-$tabstrip-border-color: darken($base, 8%) !default;
+$tabstrip-border-color: $widget-border-color !default;
 $tabstrip-active-background-color: desaturate($background, 1%) !default;
 $tabstrip-active-border-color: darken($base, 29%) !default;
+
+@include exports('tabstrip/component') {
+
+@import 'layout';
 
 .tabstrip {
     &.header {

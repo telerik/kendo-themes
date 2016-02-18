@@ -1,6 +1,6 @@
-@include exports('button/layout') {
+$button-padding: 2px 7px 2px !default;
 
-$button-padding: 2px 7px 2px;
+@include exports('button/layout') {
 
 .button {
     border-radius: $border-radius;
