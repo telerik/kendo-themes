@@ -21,3 +21,5 @@ gulp.task("sass", function() {
         .pipe($.rename({dirname: ''}))
         .pipe(gulp.dest('dist'));
 });
+
+gulp.task("default", [ "sass" ]);

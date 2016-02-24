@@ -1,4 +1,5 @@
 node_modules
-dist
+dist/*
+!dist/kendo.bootstrap-v4.*
 tmp
 .DS_Store
