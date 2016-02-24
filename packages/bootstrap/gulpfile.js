@@ -22,4 +22,11 @@ gulp.task("sass", function() {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task("default", [ "sass" ]);
+gulp.task("minify", ["sass"], function() {
+    return gulp.src('dist/kendo.*.css')
+        .pipe($.minifyCss())
+        .pipe($.rename({suffix: '.min'}))
+        .pipe(gulp.dest('dist'))
+});
+
+gulp.task("default", [ "minify" ]);
