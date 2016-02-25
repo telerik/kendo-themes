@@ -29,19 +29,19 @@
 	border-color: $primary-button-border;
 	@include linear-gradient( $primary-button-gradient );
 }
-%appearance_primary-hovered-button {
+%appearance_hovered-primary-button {
 	color: $primary-button-hovered-color;
 	background-color: $primary-button-hovered-bg;
 	border-color: $primary-button-hovered-border;
 	@include linear-gradient( $primary-button-hovered-gradient );
 }
-%appearance_primary-active-button {
+%appearance_active-primary-button {
 	color: $primary-button-active-color;
 	background-color: $primary-button-active-bg;
 	border-color: $primary-button-active-border;
 	@include linear-gradient( $primary-button-active-gradient );
 }
-%appearance_primary-disabled-button {
+%appearance_disabled-primary-button {
 	color: $primary-button-disabled-color;
 	background-color: $primary-button-disabled-bg;
 	border-color: $primary-button-disabled-border;
@@ -55,6 +55,6 @@
 @mixin appearance_disabled-button { @extend %appearance_disabled-button };
 
 @mixin appearance_primary-button { @extend %appearance_primary-button };
-@mixin appearance_primary-hovered-button { @extend %appearance_primary-hovered-button };
-@mixin appearance_primary-active-button { @extend %appearance_primary-active-button };
-@mixin appearance_primary-disabled-button { @extend %appearance_primary-disabled-button };
+@mixin appearance_hovered-primary-button { @extend %appearance_hovered-primary-button };
+@mixin appearance_active-primary-button { @extend %appearance_active-primary-button };
+@mixin appearance_disabled-primary-button { @extend %appearance_disabled-primary-button };

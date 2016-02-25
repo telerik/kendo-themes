@@ -1,171 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+	<meta charset="UTF-8">
+	<title></title>
 
-    <!-- <link rel="stylesheet" href="../dist/kendo.bootstrap.css"> -->
-    <link rel="stylesheet" href="../dist/widget.css" />
-    <link rel="stylesheet" href="../dist/button.css" />
-    <link rel="stylesheet" href="../dist/dropdown.css" />
-    <link rel="stylesheet" href="../dist/autocomplete.css" />
-    <link rel="stylesheet" href="../dist/combobox.css" />
-    <link rel="stylesheet" href="../dist/tabs.css" />
+	<!-- <link rel="stylesheet" href="../dist/kendo.bootstrap.css"> -->
+	<link rel="stylesheet" href="../dist/widget.css" />
+	<link rel="stylesheet" href="../dist/button.css" />
+	<link rel="stylesheet" href="../dist/dropdown.css" />
+	<link rel="stylesheet" href="../dist/autocomplete.css" />
+	<link rel="stylesheet" href="../dist/combobox.css" />
+	<link rel="stylesheet" href="../dist/tabs.css" />
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.web.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.web.min.js"></script>
 
-    <style>
-        .k-widget {
-            margin: 1em 0;
-        }
-        .k-reset {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
+	<style>
+		.k-widget {
+			margin: 1em 0;
+		}
+		.k-reset {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
 
-        .customer-photo {
-            display: inline-block;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background-size: 32px 35px;
-            background-position: center center;
-            vertical-align: middle;
-            line-height: 32px;
-            box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
-            margin-left: 5px;
-        }
+		.customer-photo {
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			background-size: 32px 35px;
+			background-position: center center;
+			vertical-align: middle;
+			line-height: 32px;
+			box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+			margin-left: 5px;
+		}
 
-        .customer-name {
-            display: inline-block;
-            vertical-align: middle;
-            line-height: 32px;
-            padding-left: 3px;
-        }
+		.customer-name {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 32px;
+			padding-left: 3px;
+		}
 
-        .dropdown-menu {
-            position: static;
-            float: none;
-            width: 300px;
-            margin-bottom: 50px;
-        }
-    </style>
+		.dropdown-menu {
+			position: static;
+			float: none;
+			width: 300px;
+			margin-bottom: 50px;
+		}
+	</style>
 </head>
 <body>
-    <div class="jumbotron">
-        <h1 class="display-3">Extending Bootstrap</h1>
-        <p class="lead">This example explores the styling that we can achieve by using <code>@extend</code> directives over the bootstrap content</p>
-        <ul>
-            <li>Icons use our own icon font (because Glyphicons are now dropped).</li>
-            <li>The example <strong>does not</strong> include any common / theme css</li>
-        </ul>
-    </div>
+	<div class="jumbotron">
+		<h1 class="display-3">Extending Bootstrap</h1>
+		<p class="lead">This example explores the styling that we can achieve by using <code>@extend</code> directives over the bootstrap content</p>
+		<ul>
+			<li>Icons use our own icon font (because Glyphicons are now dropped).</li>
+			<li>The example <strong>does not</strong> include any common / theme css</li>
+		</ul>
+	</div>
 
 
-    <div id="buttons">
-        <button class="btn btn-primary">Primary</button>
-        <button class="btn btn-secondary">Default</button>
-        |
-        <button class="k-button k-primary">Kendo Primary</button>
-        <button class="k-button">Kendo Default</button>
-    </div>
+	<div id="buttons">
+		<button class="btn btn-primary">Primary</button>
+		<button class="btn btn-secondary">Default</button>
+		|
+		<button class="k-button k-primary">Kendo Primary</button>
+		<button class="k-button">Kendo Default</button>
+	</div>
 
-    <div class="dropdown open">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Bootstrap dropdown
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-      </div>
-    </div>
+	<div class="dropdown open">
+	  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Bootstrap dropdown
+	  </button>
+	  <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+		<a class="dropdown-item" href="#">Action</a>
+		<a class="dropdown-item" href="#">Another action</a>
+		<a class="dropdown-item" href="#">Something else here</a>
+	  </div>
+	</div>
 
-    <input id="dropdown" />
+	<input id="dropdown" />
 
-    <input id="autocomplete" />
+	<input id="autocomplete" />
 
-    <input id="combobox" value="Foo" />
+	<input id="combobox" value="Foo" />
 
-    <div id="tabstrip"></div>
+	<div id="tabstrip"></div>
 
-    <div id="grid"></div>
+	<div id="grid"></div>
 
-    <script>
-        function rendering_changes() {
-            $(".k-combobox .k-icon").text("");
-        }
+	<script>
+		function rendering_changes() {
+			$(".k-combobox .k-icon").text("");
+		}
 
-        var sampleData = {
-            dataTextField: "text",
-            dataSource: [
-                { text: "Foo" },
-                { text: "Bar" },
-                { text: "Baz" }
-            ]
-        };
+		var sampleData = {
+			dataTextField: "text",
+			dataSource: [
+				{ text: "Foo" },
+				{ text: "Bar" },
+				{ text: "Baz" }
+			]
+		};
 
-        $("#tabstrip").kendoTabStrip(sampleData)
-            .data("kendoTabStrip").select(0);
+		$("#tabstrip").kendoTabStrip(sampleData)
+			.data("kendoTabStrip").select(0);
 
-        $("#autocomplete").kendoAutoComplete(sampleData);
+		$("#autocomplete").kendoAutoComplete(sampleData);
 
-        $("#dropdown").kendoDropDownList({
-            dataTextField: "ContactName",
-            dataValueField: "CustomerID",
-            height: 400,
-            dataSource: {
-                type: "odata",
-                transport: {
-                    read: "//demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
-                },
-                group: { field: "Country" }
-            }
-        });
+		$("#dropdown").kendoDropDownList({
+			dataTextField: "ContactName",
+			dataValueField: "CustomerID",
+			height: 400,
+			dataSource: {
+				type: "odata",
+				transport: {
+					read: "//demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+				},
+				group: { field: "Country" }
+			}
+		});
 
-        $("#combobox").kendoComboBox(sampleData);
+		$("#combobox").kendoComboBox(sampleData);
 
-        $("#grid").kendoGrid({
-            dataSource: {
-                type: "odata",
-                transport: {
-                    read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
-                },
-                pageSize: 20
-            },
-            height: 550,
-            groupable: true,
-            sortable: true,
-            editable: "popup",
-            pageable: {
-                refresh: true,
-                pageSizes: true,
-                previousNext: true,
-                buttonCount: 5
-            },
-            columns: [{
-                template:
-                    "<div class='customer-photo'" +
-                        "style='background-image: url(http://demos.telerik.com/kendo-ui/content/web/Customers/#:data.CustomerID#.jpg);'></div>" +
-                    "<div class='customer-name'>#: ContactName #</div>",
-                field: "ContactName",
-                title: "Contact Name",
-                width: 240
-            }, {
-                field: "ContactTitle",
-                title: "Contact Title"
-            }, {
-                field: "CompanyName",
-                title: "Company Name"
-            }, {
-                field: "Country",
-                width: 150
-            }]
-        });
+		$("#grid").kendoGrid({
+			dataSource: {
+				type: "odata",
+				transport: {
+					read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+				},
+				pageSize: 20
+			},
+			height: 550,
+			groupable: true,
+			sortable: true,
+			editable: "popup",
+			pageable: {
+				refresh: true,
+				pageSizes: true,
+				previousNext: true,
+				buttonCount: 5
+			},
+			columns: [{
+				template:
+					"<div class='customer-photo'" +
+						"style='background-image: url(http://demos.telerik.com/kendo-ui/content/web/Customers/#:data.CustomerID#.jpg);'></div>" +
+					"<div class='customer-name'>#: ContactName #</div>",
+				field: "ContactName",
+				title: "Contact Name",
+				width: 240
+			}, {
+				field: "ContactTitle",
+				title: "Contact Title"
+			}, {
+				field: "CompanyName",
+				title: "Company Name"
+			}, {
+				field: "Country",
+				width: 150
+			}]
+		});
 
-        rendering_changes();
-    </script>
+		rendering_changes();
+	</script>
 </body>
 </html>

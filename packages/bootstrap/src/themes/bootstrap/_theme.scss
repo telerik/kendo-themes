@@ -1,5 +1,22 @@
 @import "bootstrap-map";
 
+// Metrics
+$base-padding-x: 10px;
+$base-padding-y: 4px;
+
+$panel-padding-x: 10px;
+$panel-padding-y: 10px;
+$popup-padding-x: 10px;
+$popup-padding-y: 10px;
+$header-padding-x: 15px;
+$header-padding-y: 10px;
+
+$button-padding-x: $base-padding-x;
+$button-padding-y: $base-padding-y;
+$input-padding-x: $base-padding-x;
+$input-padding-y: $base-padding-y;
+
+
 // Panel
 $panel-color: get-bootstrap-var( panel-color );
 $panel-bg: get-bootstrap-var( panel-bg );

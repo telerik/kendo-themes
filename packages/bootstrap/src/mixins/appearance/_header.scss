@@ -1,0 +1,29 @@
+%appearance_header {
+	color: $header-color;
+	background-color: $header-bg;
+	border-color: $header-border;
+	@include linear-gradient( $header-gradient );
+}
+%appearance_hovered-header {
+	color: $header-hovered-color;
+	background-color: $header-hovered-bg;
+	border-color: $header-hovered-border;
+	@include linear-gradient( $header-hovered-gradient );
+}
+%appearance_active-header {
+	color: $header-active-color;
+	background-color: $header-active-bg;
+	border-color: $header-active-border;
+	@include linear-gradient( $header-active-gradient );
+}
+%appearance_disabled-header {
+	color: $header-disabled-color;
+	background-color: $header-disabled-bg;
+	border-color: $header-disabled-border;
+	@include linear-gradient( $header-disabled-gradient );
+}
+
+@mixin appearance_header { @extend %appearance_header };
+@mixin appearance_hovered-header { @extend %appearance_hovered-header };
+@mixin appearance_active-header { @extend %appearance_active-header };
+@mixin appearance_disabled-header { @extend %appearance_disabled-header };
