@@ -11,6 +11,10 @@
 
 $bootstrap-vars: (
 
+	// Metrics
+	input-padding-x: $input-padding-x,
+	input-padding-y: $input-padding-y,
+
 	// Panel
 	panel-color: $body-color,
 	panel-bg: $card-bg,

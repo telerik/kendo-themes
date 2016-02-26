@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Inputs</title>
+
+	<link rel="stylesheet" href="../dist/input.css" />
+	<link rel="stylesheet" href="../dist/autocomplete.css" />
+	<link rel="stylesheet" href="../dist/combobox.css" />
+	<link rel="stylesheet" href="../dist/dropdown.css" />
+	<link rel="stylesheet" href="../dist/multiselect.css" />
+	<link rel="stylesheet" href="../dist/bootstrap_dist.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.web.min.js"></script>
+
+	<style type="text/css">
+	.w20p { display: inline-block; width: 20%; }
+	.input-group.w20p { display: inline-table; }
+	.k-animation-container {
+		height: 200px;
+		position: relative;
+	}
+	</style>
+</head>
+<body>
+
+
+	<div class="container" id="inputs">
+		<legend>Input / Autocomplete / Token</legend>
+		<input type="text" class="w20p form-control" />
+		<input type="text" class="w20p form-control" />
+		<input type="text" class="w20p form-control focused" />
+		<input type="text" class="w20p form-control" disabled="disabled" />
+		<hr />
+		<input type="text" class="w20p k-textbox" />
+		<input type="text" class="w20p k-textbox k-state-hover" />
+		<input type="text" class="w20p k-textbox k-state-focus" />
+		<input type="text" class="w20p k-textbox k-disabled" />
+		<hr />
+		<div class="w20p k-multiselect">
+			<div class="k-multiselect-wrap k-floatwrap">
+				<ul class="k-reset">
+					<li class="k-button"><span>Item</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+					<li class="k-button k-state-hover"><span>Item</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+				</ul>
+				<input style="width: 25px;" class="k-input" />
+				<span class="k-icon k-loading k-loading-hidden"></span>
+			</div>
+		</div>
+		<span class="w20p k-multiselect k-state-hover"><input type="text" class="k-input" /></span>
+		<span class="w20p k-multiselect k-state-focus"><input type="text" class="k-input" /></span>
+		<span class="w20p k-multiselect k-disabled"><input type="text" class="k-input" /></span>
+	</div>
+
+
+	<div class="container" id="combobox">
+		<legend>ComboBox / Dropdown</legend>
+		<span class="w20p input-group"><input type="text" class="form-control" /><span class="input-group-addon dropdown-toggle"></span></span>
+		<span class="w20p input-group"><input type="text" class="form-control" /><span class="input-group-addon dropdown-toggle"></span></span>
+		<span class="w20p input-group"><input type="text" class="form-control focused" /><span class="input-group-addon dropdown-toggle"></span></span>
+		<span class="w20p input-group"><input type="text" class="form-control" disabled="disabled" /><span class="input-group-addon dropdown-toggle"></span></span>
+		<hr />
+		<span class="w20p k-combobox"><span class="k-dropdown-wrap"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<span class="w20p k-combobox"><span class="k-dropdown-wrap k-state-hover"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<span class="w20p k-combobox"><span class="k-dropdown-wrap k-state-active"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<span class="w20p k-combobox"><span class="k-dropdown-wrap k-dsiabled"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<hr />
+		<span class="w20p k-dropdown"><span class="k-dropdown-wrap"><span class="k-input"></span><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<span class="w20p k-dropdown"><span class="k-dropdown-wrap k-state-hover"><span class="k-input"></span><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<span class="w20p k-dropdown"><span class="k-dropdown-wrap k-state-active"><span class="k-input"></span><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<span class="w20p k-dropdown"><span class="k-dropdown-wrap k-dsiabled"><span class="k-input"></span><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+	</div>
+
+	<div class="container">
+		<legend>Popup</legend>
+
+		<div class="w20p k-animation-container">
+			<div class="k-list-container k-popup k-group k-reset">
+				<div class="k-group-header"></div>
+				<div class="k-list-scroller">
+					<ul class="k-list k-reset">
+						<li class="k-item">Normal</li>
+						<li class="k-item k-state-hover">Hovered</li>
+						<li class="k-item k-state-focused">Focused</li>
+						<li class="k-item k-state-selected">Selected</li>
+						<li class="k-item k-disabled">Disabled</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

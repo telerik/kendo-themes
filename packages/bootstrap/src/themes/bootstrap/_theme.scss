@@ -13,8 +13,8 @@ $header-padding-y: 10px;
 
 $button-padding-x: $base-padding-x;
 $button-padding-y: $base-padding-y;
-$input-padding-x: $base-padding-x;
-$input-padding-y: $base-padding-y;
+$input-padding-x: get-bootstrap-var( input-padding-x );
+$input-padding-y: get-bootstrap-var( input-padding-y );
 
 
 // Panel

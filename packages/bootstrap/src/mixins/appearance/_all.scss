@@ -68,8 +68,8 @@
 	@if ( $what == hovered-input ) {
 		@include appearance_hovered-input;
 	}
-	@if ( $what == active-input ) {
-		@include appearance_active-input;
+	@if ( $what == focused-input ) {
+		@include appearance_focused-input;
 	}
 	@if ( $what == disabled-input ) {
 		@include appearance_disabled-input;
