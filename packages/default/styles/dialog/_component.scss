@@ -8,7 +8,8 @@ $window-border-radius: $border-radius !default;
 
 @include exports('dialog/component') {
 
-@import 'layout';
+@import './layout';
+@import '../button/component';
 
 .window {
     border-color: $window-border-color;
