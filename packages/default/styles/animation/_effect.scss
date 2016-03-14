@@ -1,0 +1,128 @@
+@include exports('animation/effect') {
+    /* right */
+    .right-enter {
+        transform: translate(-100%, 0);
+    }
+
+    .right-enter-active {
+        transform: translate(0, 0);
+        transition: transform 300ms ease-in-out;
+    }
+
+    .right-leave {
+        transform: translate(0, -100%);
+    }
+
+    .right-leave + .right-leave,
+    .right-enter + .right-enter {
+        position: absolute;
+        top: 0;
+    }
+
+    .right-leave-active {
+        transform: translate(100%, -100%);
+        transition: transform 300ms ease-in-out;
+    }
+
+    /* left */
+    .left-enter {
+        transform: translate(100%, 0);
+    }
+
+    .left-enter-active {
+        transform: translate(0, 0);
+        transition: transform 300ms ease-in-out;
+    }
+
+    .left-leave {
+        transform: translate(0, -100%);
+    }
+
+    .left-leave + .left-leave,
+    .left-enter + .left-enter {
+        position: absolute;
+        top: 0;
+    }
+
+    .left-leave-active {
+        transform: translate(-100%, -100%);
+        transition: transform 300ms ease-in-out;
+    }
+
+    /* down */
+    .down-enter {
+        transform: translate(0, -100%);
+    }
+
+    .down-enter-active {
+        transform: translate(0, 0);
+        transition: transform 300ms ease-in-out;
+    }
+
+    .down-leave {
+        transform: translate(0, -100%);
+    }
+
+    .down-leave-active {
+        transform: translate(0, 0);
+        transition: transform 300ms ease-in-out;
+    }
+
+    /* up */
+    .up-enter {
+        transform: translate(0, 100%);
+    }
+
+    .up-enter-active {
+        transform: translate(0, 0);
+        transition: transform 300ms ease-in-out;
+    }
+
+    .up-leave {
+        transform: translate(0, -100%);
+    }
+
+    .up-leave-active {
+        transform: translate(0, -200%);
+        transition: transform 300ms ease-in-out;
+    }
+
+    /* zoom-in */
+    .zoom-in-enter {
+        opacity: 0;
+    }
+
+    .zoom-in-enter-active {
+        opacity: 1;
+        transition: opacity 300ms ease-in-out;
+    }
+
+    .zoom-in-leave {
+        transform: translate(0, -100%) scale(1);
+    }
+
+    .zoom-in-leave-active {
+        transform: translate(0, -100%) scale(0);
+        transition: transform 300ms ease-in-out;
+    }
+
+    /* zoom-out */
+    .zoom-out-enter {
+        transform: scale(0);
+    }
+
+    .zoom-out-enter-active {
+        transform: scale(1);
+        transition: transform 300ms ease-in-out;
+    }
+
+    .zoom-out-leave {
+        opacity: 1;
+        transform: translate(0, -100%);
+    }
+
+    .zoom-out-leave-active {
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+    }
+}

@@ -1,0 +1,8 @@
+@include exports('animation/container') {
+.animation-container {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+}
