@@ -1,128 +1,146 @@
 @include exports('animation/effect') {
-    /* right */
-    .right-enter {
-        transform: translate(-100%, 0);
+    .right {
+        /* DO NOT MOVE - a comment to force root class generation */
+
+        &-enter {
+            transform: translate(-100%, 0);
+        }
+
+        &-enter-active {
+            transform: translate(0, 0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translate(0, -100%);
+        }
+
+        &-leave + &-leave,
+        &-enter + &-enter {
+            position: absolute;
+            top: 0;
+        }
+
+        &-leave-active {
+            transform: translate(100%, -100%);
+            transition: transform 300ms ease-in-out;
+        }
     }
 
-    .right-enter-active {
-        transform: translate(0, 0);
-        transition: transform 300ms ease-in-out;
+    .left {
+        /* DO NOT MOVE - a comment to force root class generation */
+
+        &-enter {
+            transform: translate(100%, 0);
+        }
+
+        &-enter-active {
+            transform: translate(0, 0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translate(0, -100%);
+        }
+
+        &-leave + &-leave,
+        &-enter + &-enter {
+            position: absolute;
+            top: 0;
+        }
+
+        &-leave-active {
+            transform: translate(-100%, -100%);
+            transition: transform 300ms ease-in-out;
+        }
     }
 
-    .right-leave {
-        transform: translate(0, -100%);
+    .down {
+        /* DO NOT MOVE - a comment to force root class generation */
+
+        &-enter {
+            transform: translate(0, -100%);
+        }
+
+        &-enter-active {
+            transform: translate(0, 0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translate(0, -100%);
+        }
+
+        &-leave-active {
+            transform: translate(0, 0);
+            transition: transform 300ms ease-in-out;
+        }
     }
 
-    .right-leave + .right-leave,
-    .right-enter + .right-enter {
-        position: absolute;
-        top: 0;
+    .up {
+        /* DO NOT MOVE - a comment to force root class generation */
+
+        &-enter {
+            transform: translate(0, 100%);
+        }
+
+        &-enter-active {
+            transform: translate(0, 0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translate(0, -100%);
+        }
+
+        &-leave-active {
+            transform: translate(0, -200%);
+            transition: transform 300ms ease-in-out;
+        }
     }
 
-    .right-leave-active {
-        transform: translate(100%, -100%);
-        transition: transform 300ms ease-in-out;
+    .zoom-in {
+        /* DO NOT MOVE - a comment to force root class generation */
+
+        &-in-enter {
+            opacity: 0;
+        }
+
+        &-in-enter-active {
+            opacity: 1;
+            transition: opacity 300ms ease-in-out;
+        }
+
+        &-in-leave {
+            transform: translate(0, -100%) scale(1);
+        }
+
+        &-in-leave-active {
+            transform: translate(0, -100%) scale(0);
+            transition: transform 300ms ease-in-out;
+        }
     }
 
-    /* left */
-    .left-enter {
-        transform: translate(100%, 0);
-    }
+    .zoom-out {
+        /* DO NOT MOVE - a comment to force root class generation */
 
-    .left-enter-active {
-        transform: translate(0, 0);
-        transition: transform 300ms ease-in-out;
-    }
+        &-out-enter {
+            transform: scale(0);
+        }
 
-    .left-leave {
-        transform: translate(0, -100%);
-    }
+        &-out-enter-active {
+            transform: scale(1);
+            transition: transform 300ms ease-in-out;
+        }
 
-    .left-leave + .left-leave,
-    .left-enter + .left-enter {
-        position: absolute;
-        top: 0;
-    }
+        &-out-leave {
+            opacity: 1;
+            transform: translate(0, -100%);
+        }
 
-    .left-leave-active {
-        transform: translate(-100%, -100%);
-        transition: transform 300ms ease-in-out;
-    }
-
-    /* down */
-    .down-enter {
-        transform: translate(0, -100%);
-    }
-
-    .down-enter-active {
-        transform: translate(0, 0);
-        transition: transform 300ms ease-in-out;
-    }
-
-    .down-leave {
-        transform: translate(0, -100%);
-    }
-
-    .down-leave-active {
-        transform: translate(0, 0);
-        transition: transform 300ms ease-in-out;
-    }
-
-    /* up */
-    .up-enter {
-        transform: translate(0, 100%);
-    }
-
-    .up-enter-active {
-        transform: translate(0, 0);
-        transition: transform 300ms ease-in-out;
-    }
-
-    .up-leave {
-        transform: translate(0, -100%);
-    }
-
-    .up-leave-active {
-        transform: translate(0, -200%);
-        transition: transform 300ms ease-in-out;
-    }
-
-    /* zoom-in */
-    .zoom-in-enter {
-        opacity: 0;
-    }
-
-    .zoom-in-enter-active {
-        opacity: 1;
-        transition: opacity 300ms ease-in-out;
-    }
-
-    .zoom-in-leave {
-        transform: translate(0, -100%) scale(1);
-    }
-
-    .zoom-in-leave-active {
-        transform: translate(0, -100%) scale(0);
-        transition: transform 300ms ease-in-out;
-    }
-
-    /* zoom-out */
-    .zoom-out-enter {
-        transform: scale(0);
-    }
-
-    .zoom-out-enter-active {
-        transform: scale(1);
-        transition: transform 300ms ease-in-out;
-    }
-
-    .zoom-out-leave {
-        opacity: 1;
-        transform: translate(0, -100%);
-    }
-
-    .zoom-out-leave-active {
-        opacity: 0;
-        transition: opacity 300ms ease-in-out;
+        &-out-leave-active {
+            opacity: 0;
+            transition: opacity 300ms ease-in-out;
+        }
     }
 }
