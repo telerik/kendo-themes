@@ -102,20 +102,20 @@
     .zoom-in {
         /* DO NOT MOVE - a comment to force root class generation */
 
-        &-in-enter {
+        &-enter {
             opacity: 0;
         }
 
-        &-in-enter-active {
+        &-enter-active {
             opacity: 1;
             transition: opacity 300ms ease-in-out;
         }
 
-        &-in-leave {
+        &-leave {
             transform: translate(0, -100%) scale(1);
         }
 
-        &-in-leave-active {
+        &-leave-active {
             transform: translate(0, -100%) scale(0);
             transition: transform 300ms ease-in-out;
         }
@@ -124,21 +124,21 @@
     .zoom-out {
         /* DO NOT MOVE - a comment to force root class generation */
 
-        &-out-enter {
+        &-enter {
             transform: scale(0);
         }
 
-        &-out-enter-active {
+        &-enter-active {
             transform: scale(1);
             transition: transform 300ms ease-in-out;
         }
 
-        &-out-leave {
+        &-leave {
             opacity: 1;
             transform: translate(0, -100%);
         }
 
-        &-out-leave-active {
+        &-leave-active {
             opacity: 0;
             transition: opacity 300ms ease-in-out;
         }
