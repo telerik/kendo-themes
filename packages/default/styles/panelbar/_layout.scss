@@ -1,0 +1,73 @@
+@include exports('panelbar/layout') {
+
+@import '../base/layout';
+
+.panelbar {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.panelbar > .item,
+.panel > .item {
+    border-radius: 0;
+    border-width: 0;
+    display: block;
+    list-style-type: none;
+    margin: 0;
+}
+
+.panelbar .link > .image,
+.panelbar .link > .sprite {
+    float: left;
+    margin-right: 5px;
+    margin-top: 4px;
+    vertical-align: middle;
+}
+
+.panelbar > .item > .link,
+.panel > .item > .link {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    display: block;
+    line-height: 2.34em;
+    padding: 0 1em;
+    position: relative;
+    text-decoration: none;
+}
+
+.panelbar-expand,
+.panelbar-collapse {
+    margin-top: -8px;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+}
+
+.panelbar .panel,
+.panelbar .content {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.panel > .item > .link {
+    border-bottom: 0;
+    font-size: .95em;
+    line-height: 2.2;
+}
+
+.panel .panel > .item > .link {
+    padding-left: 2em;
+}
+
+.panelbar .i-seee .link {
+    border-bottom: 0;
+}
+
+.panel .panel {
+    border-bottom: 0;
+}
+
+}

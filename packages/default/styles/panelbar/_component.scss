@@ -1,0 +1,45 @@
+@import '../base/states';
+
+$panelbar-color: $normal-text-color !default;
+$panelbar-border-color: $widget-border-color !default;
+$panelbar-background-color: $background !default;
+
+@include exports('panelbar/component') {
+
+@import './layout';
+
+.panelbar {
+    &.header,
+    .item,
+    > .item > .link {
+        border-color: $panelbar-border-color;
+    }
+
+    .content,
+    .item,
+    .panel {
+        background-color: $panelbar-background-color;
+    }
+
+    .link:hover {
+        background-color: $hover-background;
+        border-color: $hover-border-color;
+    }
+
+    .link.state-selected {
+        background-color: $selected-background;
+        color: $selected-text-color;
+
+        &:hover {
+            background-color: darken($selected-background, 2%);
+        }
+    }
+
+    .state-disabled .link,
+    .state-disabled .link:hover {
+        background-color: $header-background;
+        border-color: $panelbar-border-color;
+    }
+}
+
+}
