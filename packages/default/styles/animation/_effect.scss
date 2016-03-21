@@ -99,6 +99,30 @@
         }
     }
 
+    .toggle {
+        /* DO NOT MOVE - a comment to force root class generation */
+
+        &-enter {
+            opacity: 0;
+            position: absolute;
+        }
+
+        &-enter-active {
+            opacity: 1;
+            transition: opacity 500ms ease-in-out;
+        }
+
+        &-leave {
+            opacity: 1;
+            position: absolute;
+        }
+
+        &-leave-active {
+            opacity: 0;
+            transition: opacity 600ms ease-in-out;
+        }
+    }
+
     .zoom-in {
         /* DO NOT MOVE - a comment to force root class generation */
 
