@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Pickers</title>
+
+	<link rel="stylesheet" href="../dist/input.css" />
+	<link rel="stylesheet" href="../dist/autocomplete.css" />
+	<link rel="stylesheet" href="../dist/combobox.css" />
+	<link rel="stylesheet" href="../dist/dropdown.css" />
+	<link rel="stylesheet" href="../dist/multiselect.css" />
+	<link rel="stylesheet" href="../dist/bootstrap_dist.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.web.min.js"></script>
+
+	<style type="text/css">
+	.w20p { display: inline-block; width: 20%; }
+	.input-group.w20p { display: inline-table; }
+	.k-animation-container {
+		height: 200px;
+		position: relative;
+	}
+	</style>
+</head>
+<body>
+
+
+	<div class="container" id="inputs">
+		<legend>Date / Time / DateTime</legend>
+		<span class="w20p input-group"><input type="text" class="form-control" /><span class="input-group-addon dropdown-toggle"></span></span>
+		<span class="w20p input-group"><input type="text" class="form-control" /><span class="input-group-addon dropdown-toggle"></span></span>
+		<span class="w20p input-group"><input type="text" class="form-control focused" /><span class="input-group-addon dropdown-toggle"></span></span>
+		<span class="w20p input-group"><input type="text" class="form-control" disabled="disabled" /><span class="input-group-addon dropdown-toggle"></span></span>
+		<hr />
+		<span class="w20p k-datepicker"><span class="k-picker-wrap"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<span class="w20p k-datepicker"><span class="k-picker-wrap k-state-hover"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<span class="w20p k-datepicker"><span class="k-picker-wrap k-state-active"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<span class="w20p k-datepicker"><span class="k-picker-wrap k-dsiabled"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<hr />
+		<span class="w20p k-timepicker"><span class="k-picker-wrap"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<span class="w20p k-timepicker"><span class="k-picker-wrap k-state-hover"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<span class="w20p k-timepicker"><span class="k-picker-wrap k-state-active"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<span class="w20p k-timepicker"><span class="k-picker-wrap k-dsiabled"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<hr />
+		<span class="w20p k-datetimepicker"><span class="k-picker-wrap"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<span class="w20p k-datetimepicker"><span class="k-picker-wrap k-state-hover"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<span class="w20p k-datetimepicker"><span class="k-picker-wrap k-state-active"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+		<span class="w20p k-datetimepicker"><span class="k-picker-wrap k-dsiabled"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span></span></span>
+	</div>
+
+
+</body>
+</html>
