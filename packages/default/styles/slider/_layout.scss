@@ -1,0 +1,268 @@
+@include exports('slider/layout') {
+
+@import '../base/layout';
+@import '../button/layout';
+@import '../icons/main';
+
+.slider {
+    background-color: transparent;
+    border-width: 0;
+    position: relative;
+}
+
+.slider-vertical {
+    height: 200px; /* default height */
+    width: 26px;
+}
+
+.slider-horizontal {
+    display: inline-block;
+    height: 26px;
+    width: 200px; /* default width */
+}
+
+.slider-wrap {
+    height: 100%;
+    width: 100%;
+}
+
+.slider .button {
+    height: 24px;
+    margin: 0;
+    min-width: 0;
+    outline: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 24px;
+}
+
+.slider .button .icon {
+    margin-top: 3px;
+    vertical-align: top;
+}
+
+.state-disabled .slider-wrap {
+    opacity: .6;
+}
+
+.state-disabled .slider-wrap .slider-items {
+    color: #333;
+}
+
+.slider .button-decrease {
+    left: 0;
+}
+
+.slider-vertical .button-decrease {
+    bottom: 0;
+    top: auto;
+}
+
+.slider .button-increase {
+    right: 0;
+}
+
+.slider .icon,
+.slider-track,
+.slider .tick {
+    cursor: pointer;
+}
+
+.slider-track,
+.slider-selection {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.slider-horizontal .slider-track,
+.slider-horizontal .slider-selection {
+    background-repeat: repeat-x;
+    height: 8px;
+    left: 0;
+    margin-top: -4px;
+    top: 50%;
+}
+
+.slider-horizontal .slider-buttons .slider-track {
+    left: 34px;
+}
+
+.slider-vertical .slider-track,
+.slider-vertical .slider-selection {
+    background-repeat: repeat-y;
+    bottom: 0;
+    left: 50%;
+    margin-left: -4px;
+    width: 8px;
+}
+
+.slider-vertical .slider-buttons .slider-track {
+    bottom: 34px;
+}
+
+.draghandle {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-width: 1px;
+    outline: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    text-indent: -3333px;
+}
+
+.slider-horizontal .draghandle {
+    height: 14px;
+    top: -4px;
+    width: 13px;
+}
+
+.slider-vertical .draghandle {
+    height: 13px;
+    left: -4px;
+    width: 14px;
+}
+
+.slider-buttons .slider-items {
+    margin-left: 34px;
+}
+
+.slider-horizontal .slider-items {
+    height: 100%;
+}
+
+.slider-vertical .slider-items {
+    padding-top: 1px;
+}
+
+.slider-vertical .slider-buttons .slider-items {
+    padding-top: 0;
+}
+
+.slider-vertical .slider-buttons .slider-items {
+    margin: 0;
+    padding-top: 35px;
+}
+
+.slider .tick {
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.slider-horizontal .tick {
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+
+.slider-horizontal .tick { background-position: center -92px; }
+.slider-horizontal .slider-topleft .tick { background-position: center -122px; }
+.slider-horizontal .slider-bottomright .tick { background-position: center -152px; }
+
+.slider-horizontal .ticlarge { background-position: center -2px; }
+.slider-horizontal .slider-topleft .ticlarge { background-position: center -32px; }
+.slider-horizontal .slider-bottomright .ticlarge { background-position: center -62px; }
+
+.slider-vertical .tick { background-position: -92px center; }
+.slider-vertical .slider-topleft .tick { background-position: -122px center; }
+.slider-vertical .slider-bottomright .tick { background-position: -152px center; }
+
+.slider-vertical .ticlarge { background-position: -2px center; }
+.slider-vertical .slider-topleft .ticlarge { background-position: -32px center; }
+.slider-vertical .slider-bottomright .ticlarge { background-position: -62px center; }
+
+.slider-horizontal .first { background-position: 0 -92px; }
+.slider-horizontal .ticlarge.first { background-position: 0 -2px; }
+.slider-horizontal .slider-topleft .first { background-position: 0 -122px; }
+.slider-horizontal .slider-topleft .ticlarge.first { background-position: 0 -32px; }
+.slider-horizontal .slider-bottomright .first { background-position: 0 -152px; }
+.slider-horizontal .slider-bottomright .ticlarge.first { background-position: 0 -62px; }
+
+.slider-horizontal .last { background-position: 100% -92px; }
+.slider-horizontal .ticlarge.last { background-position: 100% -2px; }
+.slider-horizontal .slider-topleft .last { background-position: 100% -122px; }
+.slider-horizontal .slider-topleft .ticlarge.last { background-position: 100% -32px; }
+.slider-horizontal .slider-bottomright .last { background-position: 100% -152px; }
+.slider-horizontal .slider-bottomright .ticlarge.last { background-position: 100% -62px; }
+
+.slider-vertical .first { background-position: -92px 100%; }
+.slider-vertical .ticlarge.first { background-position: -2px 100%; }
+.slider-vertical .slider-topleft .first { background-position: -122px 100%; }
+.slider-vertical .slider-topleft .ticlarge.first { background-position: -32px 100%; }
+.slider-vertical .slider-bottomright .first { background-position: -152px 100%; }
+.slider-vertical .slider-bottomright .ticlarge.first { background-position: -62px 100%; }
+
+.slider-vertical .last { background-position: -92px 0; }
+.slider-vertical .ticlarge.last { background-position: -2px 0; }
+.slider-vertical .slider-topleft .last { background-position: -122px 0; }
+.slider-vertical .slider-topleft .ticlarge.last { background-position: -32px 0; }
+.slider-vertical .slider-bottomright .last { background-position: -152px 0; }
+.slider-vertical .slider-bottomright .ticlarge.last { background-position: -62px 0; }
+
+.slider-vertical .tick {
+    text-align: right;
+}
+
+.slider-vertical .slider-topleft .tick {
+    text-align: left;
+}
+
+.slider .label {
+    font-size: .92em;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.slider-horizontal .label {
+    left: 0;
+    line-height: 1;
+    width: 100%;
+}
+
+.slider-horizontal .first .label {
+    left: -50%;
+}
+
+.slider-horizontal .last .label {
+    left: auto;
+    right: -50%;
+}
+
+.slider-horizontal .label {
+    bottom: -1.2em;
+}
+
+.slider-horizontal .slider-topleft .label {
+    top: -1.2em;
+}
+
+.slider-vertical .label {
+    display: block;
+    left: 120%;
+    text-align: left;
+}
+
+.slider-vertical .last .label {
+    top: -.5em;
+}
+
+.slider-vertical .first .label {
+    bottom: -.5em;
+}
+
+.slider-vertical .slider-topleft .label {
+    left: auto;
+    right: 120%;
+}
+
+}
+
+

@@ -1,0 +1,62 @@
+@import '../base/states';
+
+$slider-tracbackground-color: darken($base, 8%) !default;
+$slider-selection-background-color: $accent !default;
+$slider-draghandle-background-color: $background !default;
+$slider-draghandle-border-color: darken($base, 8%) !default;
+$slider-draghandle-hover-background-color: desaturate($hover-background, 2%) !default;
+$slider-draghandle-hover-border-color: desaturate($hover-background, 2%) !default;
+
+$slider-draghandle-selected-background-color: $accent !default;
+$slider-draghandle-selected-border-color: $accent !default;
+$slider-draghandle-selected-box-shadow: inset 0 0 3px 1px darken($accent, 9%) !default;
+
+@include exports('slider/component') {
+
+@import './layout';
+@import '../button/component';
+
+.slider {
+    .slider-track,
+    .slider-selection {
+        border-radius: $border-radius;
+    }
+
+   .slider-track {
+        background-color: $slider-tracbackground-color;
+    }
+
+    .slider-selection {
+        background-color: $slider-selection-background-color;
+    }
+
+    .draghandle {
+        background-color: $slider-draghandle-background-color;
+        border-color: $slider-draghandle-border-color;
+        border-radius: 50%;
+
+        &:hover {
+            background-color: $slider-draghandle-hover-background-color;
+            border-color: $slider-draghandle-hover-border-color;
+        }
+
+        &.state-selected {
+            background-color: $slider-draghandle-selected-background-color;
+            border-color: $slider-draghandle-selected-border-color;
+            box-shadow: $slider-draghandle-selected-box-shadow;
+        }
+    }
+
+    .button {
+        border-radius: 50%;
+    }
+}
+
+.slider-horizontal .tick {
+    background-image: url('./images/slider-h.gif');
+}
+
+.slider-vertical .tick {
+    background-image: url('./images/slider-v.gif');
+}
+}
