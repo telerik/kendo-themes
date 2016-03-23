@@ -1,4 +1,4 @@
-$button-border-color: lighten($base, 1%) !default;
+$button-border-color: darken($base, 10%) !default;
 $button-background: saturate($base, 1%) !default;
 
 $primary-background: lighten($accent, 7%) !default;
