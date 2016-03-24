@@ -1,4 +1,12 @@
+$slider-size: 200px !default;
+$slider-alt-size: 26px !default;
+$slider-button-offset: 10px !default;
+$slider-button-size: ($slider-alt-size - 2) !default;
+$slider-track-thickness: 8px !default;
+
 @include exports('slider/layout') {
+
+$button-spacing: ($slider-button-size + $slider-button-offset);
 
 @import '../base/layout';
 @import '../button/layout';
@@ -8,65 +16,65 @@
     background-color: transparent;
     border-width: 0;
     position: relative;
+
+    .button {
+        height: $slider-button-size;
+        margin: 0;
+        min-width: 0;
+        outline: 0;
+        padding: 0;
+        position: absolute;
+        width: $slider-button-size;
+
+        .icon {
+            vertical-align: baseline;
+        }
+    }
+
+    .button-increase {
+        right: 0;
+        top: 0;
+    }
+
+    .button-decrease {
+        left: 0;
+        top: 0;
+    }
+
+    .tick,
+    .slider-track {
+        cursor: pointer;
+    }
 }
 
 .slider-vertical {
-    height: 200px; /* default height */
-    width: 26px;
+    height: $slider-size;
+    width: $slider-alt-size;
+
+    .button-decrease {
+        bottom: 0;
+        top: 0;
+        top: auto;
+    }
 }
 
 .slider-horizontal {
     display: inline-block;
-    height: 26px;
-    width: 200px; /* default width */
+    height: $slider-alt-size;
+    width: $slider-size;
 }
 
 .slider-wrap {
     height: 100%;
     width: 100%;
-}
 
-.slider .button {
-    height: 24px;
-    margin: 0;
-    min-width: 0;
-    outline: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    width: 24px;
-}
+    .state-disabled & {
+        opacity: .6;
 
-.slider .button .icon {
-    margin-top: 3px;
-    vertical-align: top;
-}
-
-.state-disabled .slider-wrap {
-    opacity: .6;
-}
-
-.state-disabled .slider-wrap .slider-items {
-    color: #333;
-}
-
-.slider .button-decrease {
-    left: 0;
-}
-
-.slider-vertical .button-decrease {
-    bottom: 0;
-    top: auto;
-}
-
-.slider .button-increase {
-    right: 0;
-}
-
-.slider .icon,
-.slider-track,
-.slider .tick {
-    cursor: pointer;
+        .slider-items {
+            color: #333;
+        }
+    }
 }
 
 .slider-track,
@@ -74,33 +82,32 @@
     margin: 0;
     padding: 0;
     position: absolute;
+
+    .slider-horizontal & {
+        height: $slider-track-thickness;
+        left: 0;
+        margin-top: -($slider-track-thickness / 2);
+        top: 50%;
+    }
+
+    .slider-vertical & {
+        bottom: 0;
+        left: 50%;
+        margin-left: -($slider-track-thickness / 2);
+        width: $slider-track-thickness;
+    }
 }
 
-.slider-horizontal .slider-track,
-.slider-horizontal .slider-selection {
-    background-repeat: repeat-x;
-    height: 8px;
-    left: 0;
-    margin-top: -4px;
-    top: 50%;
+.slider-buttons .slider-track {
+    .slider-horizontal & {
+        left: $button-spacing;
+    }
+
+    .slider-vertical & {
+        bottom: $button-spacing;
+    }
 }
 
-.slider-horizontal .slider-buttons .slider-track {
-    left: 34px;
-}
-
-.slider-vertical .slider-track,
-.slider-vertical .slider-selection {
-    background-repeat: repeat-y;
-    bottom: 0;
-    left: 50%;
-    margin-left: -4px;
-    width: 8px;
-}
-
-.slider-vertical .slider-buttons .slider-track {
-    bottom: 34px;
-}
 
 .draghandle {
     background-color: transparent;
@@ -113,39 +120,41 @@
     text-align: center;
     text-decoration: none;
     text-indent: -3333px;
+
+    .slider-horizontal & {
+        height: 14px;
+        top: -4px;
+        width: 13px;
+    }
+
+    .slider-vertical & {
+        height: 13px;
+        left: -4px;
+        width: 14px;
+    }
 }
 
-.slider-horizontal .draghandle {
-    height: 14px;
-    top: -4px;
-    width: 13px;
-}
+.slider-items {
+    .slider-buttons & {
+        margin-left: $button-spacing;
+    }
 
-.slider-vertical .draghandle {
-    height: 13px;
-    left: -4px;
-    width: 14px;
-}
+    .slider-horizontal & {
+        height: 100%;
+    }
 
-.slider-buttons .slider-items {
-    margin-left: 34px;
-}
+    .slider-vertical & {
+        padding-top: 1px;
+    }
 
-.slider-horizontal .slider-items {
-    height: 100%;
-}
+    .slider-horizontal .slider-buttons & {
+        padding-top: 0;
+    }
 
-.slider-vertical .slider-items {
-    padding-top: 1px;
-}
-
-.slider-vertical .slider-buttons .slider-items {
-    padding-top: 0;
-}
-
-.slider-vertical .slider-buttons .slider-items {
-    margin: 0;
-    padding-top: 35px;
+    .slider-vertical .slider-buttons & {
+        margin: 0;
+        padding-top: 35px;
+    }
 }
 
 .slider .tick {
