@@ -2,11 +2,13 @@
     .right {
         /* DO NOT MOVE - a comment to force root class generation */
 
-        &-enter {
+        &-enter,
+        &-appear {
             transform: translate(-100%, 0);
         }
 
-        &-enter-active {
+        &-enter-active,
+        &-appear-active {
             transform: translate(0, 0);
             transition: transform 300ms ease-in-out;
         }
@@ -30,11 +32,13 @@
     .left {
         /* DO NOT MOVE - a comment to force root class generation */
 
-        &-enter {
+        &-enter,
+        &-appear {
             transform: translate(100%, 0);
         }
 
-        &-enter-active {
+        &-enter-active,
+        &-appear-active {
             transform: translate(0, 0);
             transition: transform 300ms ease-in-out;
         }
@@ -58,11 +62,13 @@
     .down {
         /* DO NOT MOVE - a comment to force root class generation */
 
-        &-enter {
+        &-enter,
+        &-appear {
             transform: translate(0, -100%);
         }
 
-        &-enter-active {
+        &-enter-active,
+        &-appear-active {
             transform: translate(0, 0);
             transition: transform 300ms ease-in-out;
         }
@@ -80,11 +86,13 @@
     .up {
         /* DO NOT MOVE - a comment to force root class generation */
 
-        &-enter {
+        &-enter,
+        &-appear {
             transform: translate(0, 100%);
         }
 
-        &-enter-active {
+        &-enter-active,
+        &-appear-active {
             transform: translate(0, 0);
             transition: transform 300ms ease-in-out;
         }
@@ -102,12 +110,14 @@
     .toggle {
         /* DO NOT MOVE - a comment to force root class generation */
 
-        &-enter {
+        &-enter,
+        &-appear {
             opacity: 0;
             position: absolute;
         }
 
-        &-enter-active {
+        &-enter-active,
+        &-appear-active {
             opacity: 1;
             transition: opacity 500ms ease-in-out;
         }
@@ -126,11 +136,13 @@
     .zoom-in {
         /* DO NOT MOVE - a comment to force root class generation */
 
-        &-enter {
+        &-enter,
+        &-appear {
             opacity: 0;
         }
 
-        &-enter-active {
+        &-enter-active,
+        &-appear-active {
             opacity: 1;
             transition: opacity 300ms ease-in-out;
         }
@@ -148,11 +160,13 @@
     .zoom-out {
         /* DO NOT MOVE - a comment to force root class generation */
 
-        &-enter {
+        &-enter,
+        &-appear {
             transform: scale(0);
         }
 
-        &-enter-active {
+        &-enter-active,
+        &-appear-active {
             transform: scale(1);
             transition: transform 300ms ease-in-out;
         }
