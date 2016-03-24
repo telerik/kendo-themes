@@ -38,7 +38,11 @@ $primary-disabled-background: lighten($accent, 18%) !default;
     &[disabled],
     &.state-disabled,
     &.state-disabled:hover,
-    &.state-disabled:active {
+    &.state-disabled:active,
+    [disabled] &,
+    .state-disabled &,
+    .state-disabled &:hover,
+    .state-disabled &:active {
         background-color: $button-background;
         border-color: $disabled-border-color;
         color: $disabled-border-color;

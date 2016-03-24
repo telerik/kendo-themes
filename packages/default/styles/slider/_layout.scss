@@ -45,6 +45,14 @@ $button-spacing: ($slider-button-size + $slider-button-offset);
     .slider-track {
         cursor: pointer;
     }
+
+    &.state-disabled {
+        .tick,
+        .slider-track,
+        .draghandle {
+            cursor: default;
+        }
+    }
 }
 
 .slider-vertical {
@@ -67,14 +75,6 @@ $button-spacing: ($slider-button-size + $slider-button-offset);
 .slider-wrap {
     height: 100%;
     width: 100%;
-
-    .state-disabled & {
-        opacity: .6;
-
-        .slider-items {
-            color: #333;
-        }
-    }
 }
 
 .slider-track,
