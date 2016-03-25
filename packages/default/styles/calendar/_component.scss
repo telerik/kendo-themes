@@ -1,0 +1,103 @@
+@import '../base/states';
+
+@include exports('calendar/component') {
+
+@import './layout';
+@import '../animation/main';
+
+$dateinputs-background-color: lighten($base, 1%);
+$dateinputs-border-color: darken($base, 14%);
+
+$dateinputs-focused-background-color: saturate($hover-background, 1%);
+$dateinputs-focused-border-color: darken($base, 20%);
+$dateinputs-focused-box-shadow: 0 0 4px 0 $base;
+
+$calendar-header-background-color: $base;
+
+.datepicker,
+.timepicker,
+.datetimepicker,
+.picker-wrap,
+.calendar td,
+.calendar .link {
+    border-radius: $border-radius;
+}
+
+.picker-wrap {
+    border-radius: $border-radius;
+    background-color: $dateinputs-background-color;
+    background-position: 50% 50%;
+    border-color: $dateinputs-border-color;
+
+    &.state-hover {
+        background-color: saturate($hover-background, 1%);
+    }
+
+    &.state-focused {
+        background-color: $dateinputs-focused-background-color;
+        background-position: 50% 50%;
+        border-color: $dateinputs-focused-border-color;
+        box-shadow: $dateinputs-focused-box-shadow;
+    }
+
+    .input {
+        border-radius: ($border-radius - 1) 0 0 ($border-radius - 1);
+    }
+}
+
+.calendar {
+    background-color: $background;
+    border-color: $dateinputs-border-color;
+
+    th {
+        background-color: $calendar-header-background-color;
+        border-color: $dateinputs-border-color;
+    }
+
+    .other-month,
+    .other-month .link {
+        color: $base;
+
+        &.state-hover .link {
+            color: $hover-text-color;
+        }
+    }
+
+    td {
+        & .state-focused {
+            box-shadow: $dateinputs-focused-box-shadow;
+        }
+
+        &.state-selected .link {
+            color: $selected-text-color;
+        }
+
+        &.state-selected.state-hover {
+            background-color: saturate($selected-background, 7%);
+        }
+
+    }
+
+    .today {
+        box-shadow: inset 0 0 0 1px $accent;
+
+        .link {
+            color: $dateinputs-background-color;
+            font-weight: bold;
+        }
+
+        &.state-hover {
+            box-shadow: none;
+        }
+
+        &.state-hover .link {
+            color: $hover-text-color;
+        }
+
+        &.state-selected:hover .link {
+            color: $selected-text-color;
+        }
+    }
+}
+
+}

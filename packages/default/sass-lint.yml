@@ -9,7 +9,7 @@ files:
 
 rules:
     no-ids: 2
-    property-sort-order: 2
+    property-sort-order: 0
 
     indentation: 0
 
