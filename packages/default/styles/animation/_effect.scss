@@ -113,13 +113,16 @@
         &-enter,
         &-appear {
             opacity: 0;
-            position: absolute;
         }
 
         &-enter-active,
         &-appear-active {
             opacity: 1;
             transition: opacity 500ms ease-in-out;
+        }
+
+        &-enter + &-enter {
+            display: none;
         }
 
         &-leave {
