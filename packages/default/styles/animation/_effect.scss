@@ -19,8 +19,7 @@
 
         &-leave + &-leave,
         &-enter + &-enter {
-            position: absolute;
-            top: 0;
+            display: none;
         }
 
         &-leave-active {
@@ -49,8 +48,7 @@
 
         &-leave + &-leave,
         &-enter + &-enter {
-            position: absolute;
-            top: 0;
+            display: none;
         }
 
         &-leave-active {
