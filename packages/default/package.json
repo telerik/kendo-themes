@@ -1,14 +1,16 @@
 {
   "name": "@telerik/kendo-theme-default",
-  "version": "0.1.0",
   "description": "SASS resources for the default Kendo UI theme",
+  "version": "1.0.0",
   "keywords": [
     "Kendo UI",
     "Theme"
   ],
   "scripts": {
     "test": "node-sass -r styles/ -o dist/",
-    "lint": "sass-lint -v -c ./sass-lint.yml"
+    "lint": "sass-lint -v -c ./sass-lint.yml",
+    "test": "npm run lint",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "Telerik",
   "license": "Apache-2.0",
@@ -17,7 +19,8 @@
     "ghooks": "^1.0.3",
     "node-sass": "^3.4.2",
     "sass-lint": "^1.5.0",
-    "validate-commit-msg": "^1.1.1"
+    "validate-commit-msg": "^1.1.1",
+    "semantic-release": "^4.3.5"
   },
   "config": {
     "commitizen": {
@@ -43,5 +46,9 @@
       "warnOnFail": false,
       "maxSubjectLength": 100
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telerik/kendo-theme-default.git"
   }
 }
