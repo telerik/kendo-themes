@@ -183,4 +183,28 @@
             transition: opacity 300ms ease-in-out;
         }
     }
+
+    .slide-in-appear {
+        /* DO NOT MOVE - a comment to force root class generation */
+
+        &-appear {
+            opacity: .1;
+            transform: translate(0, -3em);
+
+            &.centered {
+                transform: translate(-50%, calc(-50% - 3em));
+            }
+        }
+
+        &-appear-active {
+            opacity: 1;
+            transform: translate(0, 0);
+            transition: transform .3s cubic-bezier(.215, .61, .355, 1), opacity .3s cubic-bezier(.19, 1, .22, 1);
+            // transition: transform .3s cubic-bezier(.2,.6,.4,1), opacity .3s cubic-bezier(.2,1,.2,1);
+
+            &.centered {
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
 }

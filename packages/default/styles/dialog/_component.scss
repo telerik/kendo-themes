@@ -10,6 +10,7 @@ $window-border-radius: $border-radius !default;
 
 @import './layout';
 @import '../button/component';
+@import '../animation/effect';
 
 .window {
     border-color: $window-border-color;
@@ -36,5 +37,15 @@ $window-border-radius: $border-radius !default;
 .window-content {
     border-radius: 0 0 $window-border-radius $window-border-radius;
     overflow: hidden;
+}
+
+.dialog-wrapper {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    .animation-container {
+        overflow: visible;
+    }
 }
 }
