@@ -13,7 +13,7 @@ $window-padding: .58em;
     position: absolute;
     z-index: 10001;
 
-    .window-titleless {
+    &.window-titleless {
         padding-top: 0;
     }
 }
