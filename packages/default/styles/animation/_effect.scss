@@ -192,15 +192,14 @@
             transform: translate(0, -3em);
 
             &.centered {
-                transform: translate(-50%, calc(-50% - 3em));
+                transform: translate(-50%, -60%);
             }
         }
 
         &-appear-active {
             opacity: 1;
             transform: translate(0, 0);
-            transition: transform .3s cubic-bezier(.215, .61, .355, 1), opacity .3s cubic-bezier(.19, 1, .22, 1);
-            // transition: transform .3s cubic-bezier(.2,.6,.4,1), opacity .3s cubic-bezier(.2,1,.2,1);
+            transition: transform .3s cubic-bezier(.2, .6, .4, 1), opacity .3s cubic-bezier(.2, 1, .2, 1);
 
             &.centered {
                 transform: translate(-50%, -50%);
