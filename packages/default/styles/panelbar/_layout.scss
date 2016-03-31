@@ -1,6 +1,7 @@
 @include exports('panelbar/layout') {
 
 @import '../base/layout';
+@import '../icons/main';
 
 .panelbar {
     border-style: solid;
