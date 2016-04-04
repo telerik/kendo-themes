@@ -1,0 +1,88 @@
+@import '../base/states';
+
+$dropdowns-background-color: lighten($base, 1%);
+$dropdowns-border-color: darken($base, 14%);
+$dropdowns-shadow-color: rgba(0, 0, 0, .3);
+
+$dropdowns-focused-background-color: saturate($hover-background, 1%); 
+$dropdowns-focused-border-color: darken($base, 20%);
+$dropdowns-focused-box-shadow: 0 0 4px 0 $dropdowns-shadow-color;
+
+@include exports('dropdowns/component') {
+
+@import './layout';
+@import '../animation/main';
+
+.autocomplete,
+.autocomplete .input,
+.multiselect,
+.combobox,
+.dropdown,
+.dropdown-wrap {
+    border-radius: $border-radius;
+}
+
+.autocomplete,
+.dropdown-wrap {    
+    background-color: $dropdowns-background-color;   
+    background-position: 50% 50%;
+    border-color: $dropdowns-border-color;
+
+    &.state-hover {
+        background-color: $hover-background;
+    }
+
+    &.state-focused {
+        background-color: $dropdowns-focused-background-color;
+        background-position: 50% 50%;
+        border-color: $dropdowns-focused-border-color;
+        box-shadow: $dropdowns-focused-box-shadow;
+    }
+}
+
+.combobox .select {
+    border-color: $dropdowns-border-color;
+}
+
+.dropdown .input {
+    color: $normal-text-color;
+}
+
+.dropdown-wrap .input {
+    border-radius: $border-radius 0 0 $border-radius;
+}
+
+.autocomplete.state-border-down,
+.autocomplete.state-border-down .input,
+.multiselect.state-border-down,
+.dropdown-wrap.state-border-down {
+    border-radius: $border-radius $border-radius 0 0;
+}
+
+.multiselect {
+    background-color: $background;
+    border-color: $dropdowns-border-color;
+
+    &.state-focused {
+        box-shadow: $dropdowns-focused-box-shadow;
+    }
+
+    .button {
+        background-color: $base;
+        border-color: darken($base, 14%);
+
+        &.state-hover {
+            background-color: $hover-background;
+            border-color: $hover-background;
+        }
+    }
+
+    &.state-border-down .multiselect-wrap {
+        border-radius: ($border-radius - 1) ($border-radius - 1) 0 0;
+    }
+
+    .state-border-down .multiselect-wrap {
+        border-radius: ($border-radius - 1) ($border-radius - 1) 0 0;
+    }
+}
+}

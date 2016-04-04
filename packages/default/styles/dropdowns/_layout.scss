@@ -1,0 +1,363 @@
+
+@include exports('dropdowns/layout') {
+
+@import '../base/layout';
+@import '../icons/main';
+
+$input-height: 1.65em;
+$input-indent: .33em;
+
+.autocomplete,
+.combobox,
+.dropdown,
+.textbox {
+    position: relative;
+    display: inline-block;
+    width: 12.4em;
+    overflow: visible;
+    border-width: 0;
+    vertical-align: middle;
+}
+
+.autocomplete,
+.combobox,
+.dropdown {
+    white-space: nowrap;
+}
+
+.autocomplete {
+    position: relative;
+    cursor: default;
+}
+
+.dropdown-wrap {
+    display: block;
+    position: relative;
+
+   .select {
+        position: absolute; /* icon positioning */
+        top: 0;
+        right: 0;
+        display: inline-block;
+        text-decoration: none;
+        min-height: $input-height;
+        line-height: ($input-height + .35em);
+        vertical-align: middle;
+        -moz-box-sizing: border-box;
+        text-align: center;
+        width: 1.9em;
+        height: 100%;
+    }
+}
+
+.list-scroller {
+    position: relative;
+    overflow: auto;
+}
+
+.list-container.state-border-down,
+.autocomplete.state-border-down,
+.dropdown-wrap.state-border-down,
+.picker-wrap.state-border-down,
+.numeric-wrap.state-border-down {
+    border-bottom-width: 0;
+    padding-bottom: 1px;
+}
+
+.list-container .km-scroll-container {
+    padding-bottom: 6px;
+}
+
+.textbox,
+.autocomplete,
+.dropdown-wrap {
+    border-width: 1px;
+    border-style: solid;
+    padding: 0 1.9em 0 0;
+}
+
+.textbox,
+.autocomplete {
+    padding: 0;
+}
+
+.space-left .icon {
+    left: 3px;
+}
+
+.space-right .icon {
+    right: 3px;
+}
+
+/*prevent missing bottom border at some zoom levels*/
+.textbox:after {
+  content: '\a0';
+  display: block;
+  height: .4px;
+  overflow: hidden;
+}
+
+.textbox > input,
+.combobox .input {
+    width: 100%;
+    vertical-align: top;
+}
+
+.dropdown-wrap .input,
+.selectbox .input {
+    font-family: inherit;
+    border-width: 0;
+    outline: 0;
+}
+
+.dropdown .input,
+.selectbox .input {
+    background: transparent;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.combobox .select {
+    border-style: solid;
+    border-width: 0 0 0 1px;
+    border-color: inherit; /* skin-related, inherit does not work in ie7- */
+}
+
+.textbox > input,
+.autocomplete .input {
+    display: block;
+}
+
+.autocomplete .input {
+    width: 100%;
+}
+
+.dropdown .select,
+.selectbox .select {
+    overflow: hidden;
+    border: 0;
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+}
+
+.textbox > input,
+.autocomplete .input,
+.dropdown-wrap .input,
+.selectbox .input {
+    height: $input-height;
+    line-height: $input-height;
+    padding: .177em 0;
+    text-indent: $input-indent;
+    border: 0;
+    margin: 0;
+}
+
+.combobox {
+    .dropdown-wrap:before {
+        content: '\a0';
+        display: inline-block;
+        width: 0;
+        height: $input-height;
+        padding-bottom: .3em;
+    }
+
+    .input {
+        display: inline;
+    }
+}
+
+/* fix missing bottom border on browser zoom in Chrome */
+.webkit .combobox .dropdown-wrap:before {
+    padding-bottom: .38em;
+}
+
+/* above style breaks NumericTextBox layout due display:block style applied to the input */
+.km.root .combobox .dropdown-wrap:before {
+    content: none;
+}
+
+.combobox .icon,
+.dropdown,
+.selectbox .icon {
+    cursor: pointer;
+}
+
+
+.popup {
+    border-style: solid;
+    border-width: 1px;
+
+    &.list-container,
+    &.calendar-container {
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+        padding: 2px;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    > .group-header,
+    > .virtual-wrap > .group-header {
+        padding-right: 22px;
+    }
+}
+
+.popup .item,
+.list-optionlabel {
+    cursor: default;
+}
+
+.list {
+    height: auto;
+}
+
+.popup .list .item,
+.list-optionlabel,
+.popup > .group-header,
+.popup > .virtual-wrap > .group-header {
+    padding: 1px 5px;
+    line-height: 1.8em;
+    min-height: 1.8em;
+}
+
+.popup .list .state-hover,
+.popup .list .state-focused,
+.popup .list .state-selected,
+.list-optionlabel.state-focused,
+.list-optionlabel.state-selected {
+    padding: 0 4px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.list-filter {
+    position: relative;
+    margin-bottom: 2px;
+
+    > .textbox {
+        padding-right: 20px;
+        width: 100%;
+    }
+
+    > .icon {
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.km-root .list-filter > .textbox {
+    padding-left: 0;
+    padding-right: 0;
+    border-left-width: 0;
+    border-right-width: 0;    
+}
+
+/* MultiSelect */
+.multiselect-wrap {
+    position: relative;
+    border-width: 0;
+    border-style: solid;
+    border-radius: 4px;
+    min-height: 2.04em;
+
+    .input {
+        background-color: transparent;
+        height: 1.31em;
+        line-height: 1.31em;
+        padding: .18em 0;
+        text-indent: $input-indent;
+        border: 0;
+        margin: 1px 0 0;
+        float: left;
+    }
+
+    .input::-ms-clear {
+        display: none;
+    }
+
+    li {
+        margin: 1px 0 1px 1px;
+        padding: .1em 1.6em .1em .4em;
+        line-height: ($input-height - .15);
+        float: left;
+        position: relative;
+    }
+
+    .select {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: .1em .2em;
+    }
+}
+
+.autocomplete .loading,
+.multiselect .loading {
+    position: absolute;
+    right: 3px;
+    bottom: 4px;
+}
+
+.multiselect .loading-hidden {
+    visibility: hidden;
+}
+
+.textbox {
+    display: inline-block;
+    vertical-align: middle;
+    outline: 0;
+
+    &.space-left {
+        padding-left: 1.9em;
+    }
+
+    &.space-right {
+        padding-right: 1.9em;
+    }
+
+    .icon {
+        top: 50%;
+        margin: -8px 0 0;
+        position: absolute;
+    }
+}
+
+/* inputs */
+.input {
+    padding: .25em 0;
+}
+
+.input,
+.textbox > input {
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+input.textbox,
+textarea.textbox {
+    padding: 2px .3em;
+}
+
+input.textbox {
+    height: ($input-height + .48em);
+    text-indent: $input-indent;
+    line-height: 1.6em;
+}
+
+.ie input.textbox {
+    text-indent: ($input-indent / 2);
+}
+
+.ff input.textbox {
+    height: 2.17em;
+}
+
+textarea.textbox {
+    height: auto;
+}
+}
