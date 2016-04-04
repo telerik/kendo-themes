@@ -1,4 +1,7 @@
 @include exports('tabstrip/layout') {
+
+@import '../base/layout';
+
 .tabstrip {
     border-style: solid;
     border-width: 1px;
