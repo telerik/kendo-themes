@@ -7,9 +7,8 @@
     "Theme"
   ],
   "scripts": {
-    "test": "node-sass -r styles/ -o dist/",
     "lint": "sass-lint -v -c ./sass-lint.yml",
-    "test": "npm run lint",
+    "test": "npm run lint && node-sass -r styles/ -o dist/",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "Telerik",
