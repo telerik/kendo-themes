@@ -2,6 +2,8 @@ $button-padding: 2px 7px 2px !default;
 
 @include exports('button/layout') {
 
+@import '../icons/main';
+
 .button {
     border-radius: $border-radius;
     border-style: solid;
@@ -30,6 +32,10 @@ $button-padding: 2px 7px 2px !default;
         border: 0;
         padding: 0;
     }
+
+    .icon {
+        vertical-align: text-bottom;
+    }
 }
 
 .button-icon {
@@ -56,6 +62,26 @@ $button-padding: 2px 7px 2px !default;
 .button-bare {
     border-width: 0;
     color: inherit;
+}
+
+.button-group {
+    .button {
+        &.group-start {
+            border-right-width: 0;
+        }
+
+        &.group-end {
+            border-left-width: 0;
+        }
+
+        &.group-start + .group-end {
+            border-left-width: 1px;
+        }
+
+        &:last-child {
+            border-right-width: 1px;
+        }
+    }
 }
 }
 
