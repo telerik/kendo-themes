@@ -7,6 +7,8 @@ $slider-track-thickness: 8px !default;
 @include exports('slider/layout') {
 
 $button-spacing: ($slider-button-size + $slider-button-offset);
+$transition-speed: .3s;
+$transition-function: ease-out;
 
 @import '../base/layout';
 @import '../button/layout';
@@ -196,6 +198,16 @@ $button-spacing: ($slider-button-size + $slider-button-offset);
     width: 100%;
 }
 
+.slider-selection {
+    .slider-horizontal & {
+        transition: width $transition-speed $transition-function;
+    }
+
+    .slider-vertical & {
+        transition: height $transition-speed $transition-function;
+    }
+}
+
 .slider-track,
 .slider-selection {
     margin: 0;
@@ -244,12 +256,14 @@ $button-spacing: ($slider-button-size + $slider-button-offset);
         height: 14px;
         top: -4px;
         width: 13px;
+        transition: left $transition-speed $transition-function;
     }
 
     .slider-vertical & {
         height: 13px;
         left: -4px;
         width: 14px;
+        transition: bottom $transition-speed $transition-function;
     }
 }
 
