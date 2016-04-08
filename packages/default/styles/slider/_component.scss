@@ -35,7 +35,8 @@ $slider-draghandle-selected-box-shadow: inset 0 0 3px 1px darken($accent, 9%) !d
         border-color: $slider-draghandle-border-color;
         border-radius: 50%;
 
-        &:hover {
+        &:hover,
+        &.pressed {
             background-color: $slider-draghandle-hover-background-color;
             border-color: $slider-draghandle-hover-border-color;
         }

@@ -254,6 +254,8 @@ $button-spacing: ($slider-button-size + $slider-button-offset);
 }
 
 .slider-items {
+    user-select: none;
+
     .slider-buttons & {
         margin-left: $button-spacing;
     }
