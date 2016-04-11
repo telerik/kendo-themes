@@ -3,7 +3,9 @@ $imported-modules: () !default;
 @mixin exports($name) {
 	@if not index($imported-modules, $name) {
 		$imported-modules: append($imported-modules, $name) !global;
+		/** #region #{$name} */
 		@content;
+		/** #endregion */
 	} @else {
 		@warn 'Module `#{$name}` has already been imported.';
 	}

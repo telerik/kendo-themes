@@ -15,6 +15,10 @@ $bootstrap-vars: (
 	input-padding-x: $input-padding-x,
 	input-padding-y: $input-padding-y,
 
+	// Font size
+	font-size: $font-size-base,
+	line-height: $line-height-base,
+
 	// Panel
 	panel-color: $body-color,
 	panel-bg: $card-bg,

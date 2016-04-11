@@ -1,7 +1,23 @@
-@import "theme";
-@import "../../mixins/appearance/all";
+@import "variables";
+@import "../../mixins/all";
 
-.k-widget {
-    font-size: $font-size-base;
-    line-height: $line-height-base;
+
+@include exports( widget ) {
+
+	// Base
+	.k-widget {
+		border-width: 1px;
+		border-style: solid;
+		font-size: $font-size;
+		line-height: $line-height;
+
+		&:disabled,
+		&[disabled],
+		&.k-disabled {
+			cursor: $cursor-disabled;
+			opacity: .65;
+			pointer-events: none;
+		}
+	}
+
 }
