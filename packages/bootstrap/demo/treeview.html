@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Treeview</title>
+
+	<link rel="stylesheet" href="../dist/treeview.css" />
+	<link rel="stylesheet" href="../dist/bootstrap_dist.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.web.min.js"></script>
+
+	<style type="text/css">
+	.w20p { display: inline-block; width: 20%; }
+	</style>
+</head>
+<body>
+
+
+	<div class="container" id="inputs">
+		<legend>Treeview</legend>
+		<hr />
+		<div class="k-widget k-treeview">
+			<ul class="k-group k-treeview-lines">
+				<li class="k-item k-first">
+					<div class="k-top">
+						<span class="k-icon k-minus"></span>
+						<span class="k-in"><span class="k-sprite folder"></span>images</span>
+					</div>
+					<ul class="k-group">
+						<li class="k-item">
+							<div class="k-top"><span class="k-in">Sub item 1</span></div>
+						</li>
+						<li class="k-item">
+							<div class="k-mid"><span class="k-in">Sub item 2</span></div>
+						</li>
+						<li class="k-item k-last">
+							<div class="k-bot"><span class="k-in">Sub Item 3</span></div>
+						</li>
+					</ul>
+				</li>
+				<li class="k-item">
+					<div class="k-mid"><span class="k-in">Normal</span></div>
+				</li>
+				<li class="k-item">
+					<div class="k-mid"><span class="k-in k-state-hover">Hovered</span></div>
+				</li>
+				<li class="k-item">
+					<div class="k-mid"><span class="k-in k-state-selected">Selected</span></div>
+				</li>
+				<li class="k-item">
+					<div class="k-mid"><span class="k-in k-state-focused">Focused</span></div>
+				</li>
+				<li class="k-item k-last">
+					<div class="k-mid"><span class="k-in k-state-disabled">Disabled</span></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+</body>
+</html>

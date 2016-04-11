@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Panelbar</title>
+
+	<link rel="stylesheet" href="../dist/panelbar.css" />
+	<link rel="stylesheet" href="../dist/bootstrap_dist.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.web.min.js"></script>
+
+	<style type="text/css">
+	.w20p { display: inline-block; width: 20%; }
+	</style>
+</head>
+<body>
+
+
+	<div class="container" id="inputs">
+		<legend>Panelbar</legend>
+		<hr />
+		<ul id="panelbar-images" class="k-widget k-reset k-header k-panelbar">
+			<li class="k-item k-state-default k-first">
+				<span class="k-link k-header">Expanded<span class="k-icon k-i-arrow-n k-panelbar-collapse"></span></span>
+				<ul class="k-group k-panel">
+					<li class="k-item"><span class="k-link">Normal</span></li>
+					<li class="k-item"><span class="k-link k-state-hover">Hovered</span></li>
+					<li class="k-item"><span class="k-link k-state-selected">Selected</span></li>
+					<li class="k-item"><span class="k-link k-state-focused">Focused</span></li>
+					<li class="k-item"><span class="k-link k-state-disabled">Disabled</span></li>
+				</ul>
+			</li>
+			<li class="k-item">
+				<span class="k-link k-header k-state-hover">Hover</span>
+			</li>
+			<li class="k-item">
+				<span class="k-link k-header k-state-selected">Selected</span>
+			</li>
+			<li class="k-item">
+				<span class="k-link k-header k-state-focused">Focused</span>
+			</li>
+			<li class="k-item k-state-disabled">
+				<span class="k-link k-header">Disabled</span>
+			</li>
+		</ul>
+	</div>
+
+
+</body>
+</html>

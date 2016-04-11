@@ -1,0 +1,42 @@
+@include exports("button/layout") {
+
+	// Button
+	.k-button {
+		padding: $btn-padding-y $btn-padding-x;
+		border-width: $input-btn-border-width;
+		border-style: solid;
+		font-weight: $btn-font-weight;
+		font-size: $font-size-base;
+		line-height: $line-height-base;
+
+		&[disabled],
+		&.k-disabled {
+			cursor: $cursor-disabled;
+			opacity: .65;
+			pointer-events: none;
+		}
+	}
+
+
+	// Button group
+	.k-button-group {
+		white-space: nowrap;
+		display: inline-table;
+		vertical-align: middle;
+		position: relative;
+
+		.k-button {
+			display: table-cell;
+			position: relative;
+		}
+		.k-button + .k-button {
+			margin-left: -1px;
+		}
+
+		.k-button:hover,
+		.k-button.k-state-hover {
+			z-index: 2;
+		}
+	}
+
+}

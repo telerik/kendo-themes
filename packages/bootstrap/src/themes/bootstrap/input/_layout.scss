@@ -1,0 +1,22 @@
+@include exports("input/layout") {
+
+	// Base
+	.k-textbox {
+		padding: $input-padding-y $input-padding-x;
+		border-width: 1px;
+		border-style: solid;
+		font-size: $font-size;
+		line-height: $line-height;
+		display: inline-block;
+		vertical-align: middle;
+
+		&:disabled,
+		&[disabled],
+		&.k-disabled {
+			cursor: $cursor-disabled;
+			opacity: 1;
+			pointer-events: none;
+		}
+	}
+
+}

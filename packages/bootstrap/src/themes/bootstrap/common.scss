@@ -1,0 +1,67 @@
+@import "variables";
+@import "../../mixins/all";
+
+
+@include exports( common ) {
+
+	//
+	.k-disabled,
+	.k-state-disabled {
+		opacity: .65;
+		pointer-events: none;
+	}
+
+	.k-list-scroller {
+		position: relative;
+		overflow: auto;
+	}
+	.k-list {
+		height: auto;
+	}
+	.k-reset {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font: inherit;
+		text-decoration: none;
+		list-style: none;
+	}
+	.k-icon,
+	.k-sprite {
+		width: 16px;
+		height: 16px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.k-icon { background: red; }
+	.k-sprite { background: green; }
+
+
+	// Popup
+	& {
+
+		// Base
+		.k-popup {
+			margin: 2px;
+			padding: 5px 0;
+			border-width: 1px;
+			border-style: solid;
+			font-size: $font-size;
+			line-height: $line-height;
+		}
+		.k-animation-container {
+			.k-popup {
+				position: relative;
+			}
+		}
+
+
+		// Appearance
+		.k-popup {
+			@include appearance( popup );
+		}
+
+	}
+
+}

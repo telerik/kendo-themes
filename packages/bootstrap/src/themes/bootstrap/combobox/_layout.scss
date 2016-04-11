@@ -1,0 +1,51 @@
+@include exports("combobox/layout") {
+
+	// Base
+	.k-combobox {
+		font-size: $font-size-base;
+		line-height: $input-line-height;
+		display: inline-block;
+		vertical-align: middle;
+
+		.k-dropdown-wrap {
+			padding: $input-padding-y $input-padding-x;
+			padding-right: $input-padding-x + ($button-padding-x * 2);
+			border-width: 1px;
+			border-style: solid;
+			box-sizing: border-box;
+			display: block;
+			position: relative;
+
+			&.k-disabled {
+				cursor: $cursor-disabled;
+				opacity: .65;
+				pointer-events: none;
+			}
+		}
+
+		.k-input {
+			padding: 0;
+			width: 100%;
+			border: 0;
+			outline: 0;
+			color: inherit;
+			background: none;
+			font: inherit;
+			display: block;
+		}
+
+		.k-select {
+			padding: $btn-padding-y $btn-padding-x;
+			border-width: 0 0 0 1px;
+			border-style: solid;
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			.k-icon {
+				margin: 0 -.25rem;
+			}
+		}
+	}
+
+}

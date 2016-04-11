@@ -1,0 +1,57 @@
+@include exports("multiselect/layout") {
+
+	// Base
+	.k-multiselect {
+		padding: $input-padding-y $input-padding-x;
+		border-width: $input-btn-border-width;
+		border-style: solid;
+		font-size: $font-size-base;
+		line-height: $input-line-height;
+		display: inline-block;
+		vertical-align: middle;
+		box-sizing: border-box;
+
+		&.k-disabled {
+			cursor: $cursor-disabled;
+			opacity: 1;
+			pointer-events: none;
+		}
+
+		.k-dropdown-wrap {}
+
+		ul {
+			margin: (-$input-padding-y/3) 0 (-$input-padding-y/3) (-$input-padding-x/2);
+			padding: 0;
+			list-style: none;
+			display: inline-block;
+		}
+		li {
+			padding: $btn-padding-y/4 $btn-padding-x/4;
+			line-height: inherit;
+			display: inline-block;
+
+			> span {
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.k-select {
+				height: 16px;
+			}
+			.k-icon {
+				vertical-align: top;
+			}
+		}
+
+		.k-input {
+			padding: 0;
+			width: 100%;
+			border: 0;
+			outline: 0;
+			color: inherit;
+			background: none;
+			font: inherit;
+			display: inline-block;
+		}
+	}
+
+}

@@ -1,0 +1,37 @@
+@include exports("panelbar/theme") {
+
+	// Appearance
+	.k-panelbar {
+		@include appearance( panel );
+
+		// Root
+		> .k-item >.k-link {
+			@include appearance( header );
+		}
+		> .k-item >.k-link.k-state-hover {
+			@include appearance( hovered-header );
+		}
+		> .k-item >.k-link.k-state-selected {
+			@include appearance( selected-header );
+		}
+		> .k-item >.k-link.k-state-focused {
+			@include appearance( header );
+		}
+
+		// Child
+		.k-panel > .k-item > .k-link {}
+		.k-panel > .k-item > .k-link.k-state-hover {
+			color: $dropdown-link-hover-color;
+			background-color: $dropdown-link-hover-bg;
+		}
+		.k-panel > .k-item > .k-link.k-state-selected {
+			color: $dropdown-link-hover-color;
+			background-color: $dropdown-link-hover-bg;
+		}
+		.k-panel > .k-item > .k-link.k-state-docused {
+			color: $dropdown-link-hover-color;
+			background-color: $dropdown-link-hover-bg;
+		}
+	}
+
+}

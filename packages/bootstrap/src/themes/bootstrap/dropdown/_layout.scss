@@ -1,0 +1,44 @@
+@include exports("dropdown/layout") {
+
+	// Base
+	.k-dropdown {
+		font-size: $font-size-base;
+		line-height: $input-line-height;
+		display: inline-block;
+		vertical-align: middle;
+
+		.k-dropdown-wrap {
+			padding: $input-padding-y $input-padding-x;
+			padding-right: $input-padding-x + ($button-padding-x * 2);
+			border-width: $input-btn-border-width;
+			border-style: solid;
+			box-sizing: border-box;
+			display: block;
+			position: relative;
+
+			&.k-disabled {
+				cursor: $cursor-disabled;
+				opacity: .65;
+				pointer-events: none;
+			}
+		}
+
+		.k-input {
+			width: 100%;
+			height: $input-line-height * 1em;
+			display: block;
+		}
+
+		.k-select {
+			padding: $btn-padding-y $btn-padding-x;
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			.k-icon {
+				margin: 0 -.25rem;
+			}
+		}
+	}
+
+}

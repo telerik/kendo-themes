@@ -1,0 +1,16 @@
+@include exports("input/theme") {
+
+	.k-textbox {
+		@include appearance( input );
+		border-radius: $border-radius;
+
+		&:hover,
+		&.k-state-hover { @include appearance( hovered-input ); }
+		&:focus,
+		&.k-state-focus { @include appearance( focused-input ); }
+		&:disabled,
+		&[disabled],
+		&.k-disabled { @include appearance( disabled-input ); }
+	}
+
+}

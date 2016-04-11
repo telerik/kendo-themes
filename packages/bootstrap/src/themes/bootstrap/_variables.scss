@@ -1,0 +1,155 @@
+@import "bootstrap-map";
+
+// Metrics
+$base-padding-x: 10px;
+$base-padding-y: 4px;
+
+$panel-padding-x: 10px;
+$panel-padding-y: 10px;
+$popup-padding-x: 10px;
+$popup-padding-y: 10px;
+$header-padding-x: 15px;
+$header-padding-y: 10px;
+
+$button-padding-x: $base-padding-x;
+$button-padding-y: $base-padding-y;
+$input-padding-x: $base-padding-x;
+$input-padding-y: $base-padding-y;
+
+$border-radius: 4px;
+
+// Font
+$font-size: get-bootstrap-var( font-size );
+$line-height: get-bootstrap-var( line-height );
+
+
+// Panel
+$panel-color: get-bootstrap-var( panel-color );
+$panel-bg: get-bootstrap-var( panel-bg );
+$panel-border: get-bootstrap-var( panel-border );
+
+// Popup
+$popup-color: get-bootstrap-var( popup-color );
+$popup-bg: get-bootstrap-var( popup-bg );
+$popup-border: get-bootstrap-var( popup-border );
+
+
+// Header
+$header-color: get-bootstrap-var( header-color );
+$header-bg: get-bootstrap-var( header-bg );
+$header-border: get-bootstrap-var( header-border );
+$header-gradient: null;
+
+	// Hovered header
+	$header-hovered-color: get-bootstrap-var( header-hovered-color );
+	$header-hovered-bg: get-bootstrap-var( header-hovered-bg );
+	$header-hovered-border: get-bootstrap-var( header-hovered-border );
+	$header-hovered-gradient: null;
+
+	// Active header
+	$header-active-color: get-bootstrap-var( header-active-color );
+	$header-active-bg: get-bootstrap-var( header-active-bg );
+	$header-active-border: get-bootstrap-var( header-active-border );
+	$header-active-gradient: null;
+
+	// Disabled header
+	$header-disabled-color: get-bootstrap-var( header-disabled-color );
+	$header-disabled-bg: get-bootstrap-var( header-disabled-bg );
+	$header-disabled-border: get-bootstrap-var( header-disabled-border );
+	$header-disabled-gradient: null;
+
+
+// Button
+$button-color: get-bootstrap-var( button-color );
+$button-bg: get-bootstrap-var( button-bg );
+$button-border: get-bootstrap-var( button-border );
+$button-gradient: null;
+
+	// Hovered button
+	$button-hovered-color: get-bootstrap-var( button-hovered-color );
+	$button-hovered-bg: get-bootstrap-var( button-hovered-bg );
+	$button-hovered-border: get-bootstrap-var( button-hovered-border );
+	$button-hovered-gradient: null;
+
+	// Active button
+	$button-active-color: get-bootstrap-var( button-active-color );
+	$button-active-bg: get-bootstrap-var( button-active-bg );
+	$button-active-border: get-bootstrap-var( button-active-border );
+	$button-active-gradient: null;
+
+	// Disabled button
+	$button-disabled-color: get-bootstrap-var( button-disabled-color );
+	$button-disabled-bg: get-bootstrap-var( button-disabled-bg );
+	$button-disabled-border: get-bootstrap-var( button-disabled-border );
+	$button-disabled-gradient: null;
+
+
+// Primary button
+$primary-button-color: get-bootstrap-var( primary-button-color );
+$primary-button-bg: get-bootstrap-var( primary-button-bg );
+$primary-button-border: get-bootstrap-var( primary-button-border );
+$primary-button-gradient: null;
+
+	// Primary hovered button
+	$primary-button-hovered-color: get-bootstrap-var( primary-button-hovered-color );
+	$primary-button-hovered-bg: get-bootstrap-var( primary-button-hovered-bg );
+	$primary-button-hovered-border: get-bootstrap-var( primary-button-hovered-border );
+	$primary-button-hovered-gradient: null;
+
+	// Primary active button
+	$primary-button-active-color: get-bootstrap-var( primary-button-active-color );
+	$primary-button-active-bg: get-bootstrap-var( primary-button-active-bg );
+	$primary-button-active-border: get-bootstrap-var( primary-button-active-border );
+	$primary-button-active-gradient: null;
+
+	// Primary disabled button
+	$primary-button-disabled-color: get-bootstrap-var( primary-button-disabled-color );
+	$primary-button-disabled-bg: get-bootstrap-var( primary-button-disabled-bg );
+	$primary-button-disabled-border: get-bootstrap-var( primary-button-disabled-border );
+	$primary-button-disabled-gradient: null;
+
+
+// Input
+$input-color: get-bootstrap-var( input-color );
+$input-bg: get-bootstrap-var( input-bg );
+$input-border: get-bootstrap-var( input-border );
+
+	// Hovered input
+	$input-hovered-color: get-bootstrap-var( input-hovered-color );
+	$input-hovered-bg: get-bootstrap-var( input-hovered-bg );
+	$input-hovered-border: get-bootstrap-var( input-hovered-border );
+
+	// Active input
+	$input-active-color: get-bootstrap-var( input-active-color );
+	$input-active-bg: get-bootstrap-var( input-active-bg );
+	$input-active-border: get-bootstrap-var( input-active-border );
+
+	// Disabled input
+	$input-disabled-color: get-bootstrap-var( input-disabled-color );
+	$input-disabled-bg: get-bootstrap-var( input-disabled-bg );
+	$input-disabled-border: get-bootstrap-var( input-disabled-border );
+
+
+// Node
+$node-color: get-bootstrap-var( node-color );
+$node-bg: get-bootstrap-var( node-bg );
+$node-border: get-bootstrap-var( node-border );
+$node-gradient: null;
+
+	// Hovered node
+	$node-hovered-color: get-bootstrap-var( node-hovered-color );
+	$node-hovered-bg: get-bootstrap-var( node-hovered-bg );
+	$node-hovered-border: get-bootstrap-var( node-hovered-border );
+	$node-hovered-gradient: null;
+
+	// Active node
+	$node-active-color: get-bootstrap-var( node-active-color );
+	$node-active-bg: get-bootstrap-var( node-active-bg );
+	$node-active-border: get-bootstrap-var( node-active-border );
+	$node-active-gradient: null;
+
+	// Disabled node
+	$node-disabled-color: get-bootstrap-var( node-disabled-color );
+	$node-disabled-bg: get-bootstrap-var( node-disabled-bg );
+	$node-disabled-border: get-bootstrap-var( node-disabled-border );
+	$node-disabled-gradient: null;
