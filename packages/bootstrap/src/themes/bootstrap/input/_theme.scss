@@ -2,7 +2,7 @@
 
 	.k-textbox {
 		@include appearance( input );
-		border-radius: $border-radius;
+		@include border-radius( $border-radius );
 
 		&:hover,
 		&.k-state-hover { @include appearance( hovered-input ); }

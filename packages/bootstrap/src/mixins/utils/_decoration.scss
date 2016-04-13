@@ -17,3 +17,8 @@
 	}
 
 }
+@mixin border-radius( $radius ) {
+	@if $radius {
+		border-radius: $radius;
+	}
+}

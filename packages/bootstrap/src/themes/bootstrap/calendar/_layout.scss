@@ -1,2 +1,141 @@
 @include exports("calendar/layout") {
+
+	// Local imports
+	//@import "../icons/icons";
+
+	// Local variables
+	$cell-padding-x: $button-padding-x/2;
+	$cell-padding-y: $button-padding-y/2;
+
+
+	// Base
+	.k-calendar {
+		width: 16.917em;
+		border-width: 1px;
+		border-style: solid;
+		font-size: $font-size;
+		line-height: $line-height;
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+
+
+		// Common
+		.k-link {
+			padding: $cell-padding-y $cell-padding-x;
+			color: inherit;
+			line-height: $form-line-height;
+			text-decoration: none;
+			display: block;
+		}
+
+		th {
+			border-bottom-style: solid;
+			border-bottom-width: 1px;
+			padding: $cell-padding-y $cell-padding-x $cell-padding-y 0;
+			font-weight: normal;
+			cursor: default;
+		}
+
+		td {
+			border-width: 1px;
+			border-style: solid;
+			cursor: pointer;
+		}
+
+
+		// Header / footer
+		& {
+
+			.k-header,
+			.k-footer {
+				padding: $cell-padding-y;
+				position: relative;
+				text-align: center;
+			}
+
+
+			// Header
+			.k-header {
+
+				.k-icon {
+					vertical-align: middle;
+				}
+			}
+
+
+			// Footer
+			.k-footer {
+				clear: both;
+
+				.k-nav-today {}
+			}
+
+
+			// Previous / next
+			.k-nav-prev,
+			.k-nav-next {
+				padding: $cell-padding-y;
+				width: $form-line-height * 1em;
+				height: $form-line-height * 1em;
+				box-sizing: content-box;
+				position: absolute;
+				top: $cell-padding-y;
+			}
+			.k-nav-prev { left: $cell-padding-y; }
+			.k-nav-next { right: $cell-padding-y; }
+
+
+			// Fast navigation
+			.k-nav-fast {
+				width: 75%;
+				display: inline-block;
+			}
+
+		}
+
+
+		// Content
+		& {
+
+			.k-content {
+				margin: 0;
+				width: 100%;
+				height: 14.167em;
+				border-width: 0;
+				border-spacing: 0;
+				border-collapse: separate;
+				table-layout: fixed;
+				float: left;
+				outline: 0;
+			}
+
+			.k-content,
+			.k-content th {
+				text-align: right;
+			}
+
+			.k-animation-container .k-content {
+				height: 100%;
+			}
+
+			.k-content .k-link {
+				overflow: hidden;
+			}
+
+			.k-weekend,
+			.k-other-month {
+				opacity: .6;
+			}
+		}
+
+
+		// Meta view
+		.k-meta-view {}
+		.k-meta-view .k-link {
+			text-align: center;
+		}
+
+	}
+
 }

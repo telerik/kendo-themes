@@ -83,8 +83,8 @@
 	@if ( $what == hovered-node ) {
 		@include appearance_hovered-node;
 	}
-	@if ( $what == active-node ) {
-		@include appearance_active-node;
+	@if ( $what == selected-node ) {
+		@include appearance_selected-node;
 	}
 	@if ( $what == disabled-node ) {
 		@include appearance_disabled-node;

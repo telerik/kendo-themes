@@ -1,16 +1,20 @@
 @include exports("dropdown/layout") {
 
+	// Local imports
+	//@import "../icons/icons";
+
+
 	// Base
 	.k-dropdown {
-		font-size: $font-size-base;
-		line-height: $input-line-height;
+		font-size: $font-size;
+		line-height: $form-line-height;
 		display: inline-block;
 		vertical-align: middle;
 
 		.k-dropdown-wrap {
 			padding: $input-padding-y $input-padding-x;
 			padding-right: $input-padding-x + ($button-padding-x * 2);
-			border-width: $input-btn-border-width;
+			border-width: 1px;
 			border-style: solid;
 			box-sizing: border-box;
 			display: block;
@@ -25,12 +29,12 @@
 
 		.k-input {
 			width: 100%;
-			height: $input-line-height * 1em;
+			height: $form-line-height * 1em;
 			display: block;
 		}
 
 		.k-select {
-			padding: $btn-padding-y $btn-padding-x;
+			padding: $button-padding-y $button-padding-x;
 			position: absolute;
 			top: 0;
 			right: 0;

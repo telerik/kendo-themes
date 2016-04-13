@@ -11,10 +11,11 @@ $popup-padding-y: 10px;
 $header-padding-x: 15px;
 $header-padding-y: 10px;
 
-$button-padding-x: $base-padding-x;
-$button-padding-y: $base-padding-y;
-$input-padding-x: $base-padding-x;
-$input-padding-y: $base-padding-y;
+$button-padding-x: get-bootstrap-var( button-padding-x );
+$button-padding-y: get-bootstrap-var( button-padding-y );
+$input-padding-x: get-bootstrap-var( input-padding-x );
+$input-padding-y: get-bootstrap-var( input-padding-y );
+$form-line-height: get-bootstrap-var( form-line-height );
 
 $border-radius: 4px;
 
@@ -142,11 +143,11 @@ $node-gradient: null;
 	$node-hovered-border: get-bootstrap-var( node-hovered-border );
 	$node-hovered-gradient: null;
 
-	// Active node
-	$node-active-color: get-bootstrap-var( node-active-color );
-	$node-active-bg: get-bootstrap-var( node-active-bg );
-	$node-active-border: get-bootstrap-var( node-active-border );
-	$node-active-gradient: null;
+	// Selected node
+	$node-selected-color: get-bootstrap-var( node-selected-color );
+	$node-selected-bg: get-bootstrap-var( node-selected-bg );
+	$node-selected-border: get-bootstrap-var( node-selected-border );
+	$node-selected-gradient: null;
 
 	// Disabled node
 	$node-disabled-color: get-bootstrap-var( node-disabled-color );

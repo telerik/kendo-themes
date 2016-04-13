@@ -14,11 +14,11 @@ $_node-imported: false !default;
 		border-color: $node-hovered-border;
 		@include linear-gradient( $node-hovered-gradient );
 	}
-	%appearance_active-node {
-		color: $node-active-color;
-		background-color: $node-active-bg;
-		border-color: $node-active-border;
-		@include linear-gradient( $node-active-gradient );
+	%appearance_selected-node {
+		color: $node-selected-color;
+		background-color: $node-selected-bg;
+		border-color: $node-selected-border;
+		@include linear-gradient( $node-selected-gradient );
 	}
 	%appearance_disabled-node {
 		color: $node-disabled-color;
@@ -34,5 +34,5 @@ $_node-imported: false !default;
 
 @mixin appearance_node { @extend %appearance_node };
 @mixin appearance_hovered-node { @extend %appearance_hovered-node };
-@mixin appearance_active-node { @extend %appearance_active-node };
+@mixin appearance_selected-node { @extend %appearance_selected-node };
 @mixin appearance_disabled-node { @extend %appearance_disabled-node };

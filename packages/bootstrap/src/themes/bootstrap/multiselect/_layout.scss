@@ -1,12 +1,16 @@
 @include exports("multiselect/layout") {
 
+	// Local imports
+	//@import "../icons/icons";
+
+
 	// Base
 	.k-multiselect {
 		padding: $input-padding-y $input-padding-x;
-		border-width: $input-btn-border-width;
+		border-width: 1px;
 		border-style: solid;
-		font-size: $font-size-base;
-		line-height: $input-line-height;
+		font-size: $font-size;
+		line-height: $form-line-height;
 		display: inline-block;
 		vertical-align: middle;
 		box-sizing: border-box;
@@ -26,7 +30,7 @@
 			display: inline-block;
 		}
 		li {
-			padding: $btn-padding-y/4 $btn-padding-x/4;
+			padding: $button-padding-y/4 $button-padding-x/2;
 			line-height: inherit;
 			display: inline-block;
 

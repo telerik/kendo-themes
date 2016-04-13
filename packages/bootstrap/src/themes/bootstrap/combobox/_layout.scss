@@ -1,9 +1,13 @@
 @include exports("combobox/layout") {
 
+	// Local imports
+	//@import "../icons/icons";
+
+
 	// Base
 	.k-combobox {
-		font-size: $font-size-base;
-		line-height: $input-line-height;
+		font-size: $font-size;
+		line-height: $form-line-height;
 		display: inline-block;
 		vertical-align: middle;
 
@@ -35,7 +39,7 @@
 		}
 
 		.k-select {
-			padding: $btn-padding-y $btn-padding-x;
+			padding: $button-padding-y $button-padding-x;
 			border-width: 0 0 0 1px;
 			border-style: solid;
 			position: absolute;

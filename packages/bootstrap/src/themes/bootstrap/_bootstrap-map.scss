@@ -12,12 +12,15 @@
 $bootstrap-vars: (
 
 	// Metrics
+	button-padding-x: $btn-padding-x,
+	button-padding-y: $btn-padding-y,
 	input-padding-x: $input-padding-x,
 	input-padding-y: $input-padding-y,
 
 	// Font size
 	font-size: $font-size-base,
 	line-height: $line-height-base,
+	form-line-height: $btn-line-height,
 
 	// Panel
 	panel-color: $body-color,
@@ -125,10 +128,10 @@ $bootstrap-vars: (
 		node-hovered-bg: darken( $btn-secondary-bg, 10% ),
 		node-hovered-border: darken( $btn-secondary-border, 12% ),
 
-		// Node active
-		node-active-color: $btn-secondary-color,
-		node-active-bg: darken( $btn-secondary-bg, 17% ),
-		node-active-border: darken( $btn-secondary-border, 25% ),
+		// Node selected
+		node-selected-color: $btn-primary-color,
+		node-selected-bg: darken( $btn-primary-bg, 17% ),
+		node-selected-border: darken( $btn-primary-border, 25% ),
 
 		// Node disabled
 		node-disabled-color: $btn-secondary-color,

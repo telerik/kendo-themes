@@ -1,10 +1,12 @@
-@include exports("combobox/theme") {
+@include exports("datetime/theme") {
 
-	// Combobox
-	.k-combobox {
+	// Shared
+	.k-datepicker,
+	.k-timepicker,
+	.k-datetimepicker {
 
 		// Normal state
-		.k-dropdown-wrap {
+		.k-picker-wrap {
 			@include appearance( input );
 			@include border-radius( $border-radius );
 		}
@@ -28,5 +30,14 @@
 		}
 
 	}
+
+	// Datepicker
+	.k-datepicker {}
+
+	// Timepicker
+	.k-timepicker {}
+
+	// Datetimepicker
+	.k-datetimepicker {}
 
 }
