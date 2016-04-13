@@ -206,4 +206,48 @@
             }
         }
     }
+
+    .slide-down {
+        /* DO NOT MOVE - a comment to force root class generation */
+
+        &-enter {
+            transform: translateY(-100%);
+        }
+
+        &-enter-active {
+            transform: translateY(0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translateY(0);
+        }
+
+        &-leave-active {
+            transform: translateY(-100%);
+            transition: transform 300ms ease-in-out;
+        }
+    }
+
+    .slide-up {
+        /* DO NOT MOVE - a comment to force root class generation */
+
+        &-enter {
+            transform: translateY(100%);
+        }
+
+        &-enter-active {
+            transform: translateY(0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translateY(0);
+        }
+
+        &-leave-active {
+            transform: translateY(100%);
+            transition: transform 300ms ease-in-out;
+        }
+    }
 }
