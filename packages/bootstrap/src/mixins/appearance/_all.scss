@@ -90,4 +90,19 @@
 		@include appearance_disabled-node;
 	}
 
+
+	// List item
+	@if ( $what == list-item ) {
+		@include appearance_list-item;
+	}
+	@if ( $what == hovered-list-item ) {
+		@include appearance_hovered-list-item;
+	}
+	@if ( $what == selected-list-item ) {
+		@include appearance_selected-list-item;
+	}
+	@if ( $what == disabled-list-item ) {
+		@include appearance_disabled-list-item;
+	}
+
 }

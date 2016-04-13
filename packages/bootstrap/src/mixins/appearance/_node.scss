@@ -27,6 +27,23 @@ $_node-imported: false !default;
 		@include linear-gradient( $node-disabled-gradient );
 	}
 
+	%appearance_list-item {
+		color: $list-item-color;
+		background-color: $list-item-bg;
+	}
+	%appearance_hovered-list-item {
+		color: $list-item-hovered-color;
+		background-color: $list-item-hovered-bg;
+	}
+	%appearance_selected-list-item {
+		color: $list-item-selected-color;
+		background-color: $list-item-selected-bg;
+	}
+	%appearance_disabled-list-item {
+		color: $list-item-disabled-color;
+		background-color: $list-item-disabled-bg;
+	}
+
 	$_node-imported: true;
 
 }
@@ -36,3 +53,8 @@ $_node-imported: false !default;
 @mixin appearance_hovered-node { @extend %appearance_hovered-node };
 @mixin appearance_selected-node { @extend %appearance_selected-node };
 @mixin appearance_disabled-node { @extend %appearance_disabled-node };
+
+@mixin appearance_list-item { @extend %appearance_list-item };
+@mixin appearance_hovered-list-item { @extend %appearance_hovered-list-item };
+@mixin appearance_selected-list-item { @extend %appearance_selected-list-item };
+@mixin appearance_disabled-list-item { @extend %appearance_disabled-list-item };

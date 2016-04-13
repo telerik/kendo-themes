@@ -8,8 +8,8 @@ $panel-padding-x: 10px;
 $panel-padding-y: 10px;
 $popup-padding-x: 10px;
 $popup-padding-y: 10px;
-$header-padding-x: 15px;
-$header-padding-y: 10px;
+$header-padding-x: get-bootstrap-var( header-padding-x );
+$header-padding-y: get-bootstrap-var( header-padding-y );
 
 $button-padding-x: get-bootstrap-var( button-padding-x );
 $button-padding-y: get-bootstrap-var( button-padding-y );
@@ -154,3 +154,20 @@ $node-gradient: null;
 	$node-disabled-bg: get-bootstrap-var( node-disabled-bg );
 	$node-disabled-border: get-bootstrap-var( node-disabled-border );
 	$node-disabled-gradient: null;
+
+
+// List item
+$list-item-color: get-bootstrap-var( list-item-color );
+$list-item-bg: get-bootstrap-var( list-item-bg );
+
+	// Hovered list item
+	$list-item-hovered-color: get-bootstrap-var( list-item-hovered-color );
+	$list-item-hovered-bg: get-bootstrap-var( list-item-hovered-bg );
+
+	// Selected list item
+	$list-item-selected-color: get-bootstrap-var( list-item-selected-color );
+	$list-item-selected-bg: get-bootstrap-var( list-item-selected-bg );
+
+	// Disabled list item
+	$list-item-disabled-color: get-bootstrap-var( list-item-disabled-color );
+	$list-item-disabled-bg: get-bootstrap-var( list-item-disabled-bg );
