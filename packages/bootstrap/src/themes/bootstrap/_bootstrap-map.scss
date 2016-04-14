@@ -42,14 +42,14 @@ $bootstrap-vars: (
 	header-border: $card-border-color,
 
 		// Header hovered
-		header-hovered-color: null,
-		header-hovered-bg: null,
-		header-hovered-border: null,
+		header-hovered-color: $body-color,
+		header-hovered-bg: darken( $card-cap-bg, 10% ),
+		header-hovered-border: darken( $card-border-color, 12% ),
 
-		// Header active
-		header-active-color: null,
-		header-active-bg: null,
-		header-active-border: dnull,
+		// Header selected
+		header-selected-color: $component-active-color,
+		header-selected-bg: $component-active-bg,
+		header-selected-border: darken( $component-active-bg, 12% ),
 
 		// Header disabled
 		header-disabled-color: $body-color,

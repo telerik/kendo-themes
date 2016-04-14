@@ -25,11 +25,11 @@ $_panel-imported: false !default;
 		border-color: $header-hovered-border;
 		@include linear-gradient( $header-hovered-gradient );
 	}
-	%appearance_active-header {
-		color: $header-active-color;
-		background-color: $header-active-bg;
-		border-color: $header-active-border;
-		@include linear-gradient( $header-active-gradient );
+	%appearance_selected-header {
+		color: $header-selected-color;
+		background-color: $header-selected-bg;
+		border-color: $header-selected-border;
+		@include linear-gradient( $header-selected-gradient );
 	}
 	%appearance_disabled-header {
 		color: $header-disabled-color;
@@ -48,5 +48,5 @@ $_panel-imported: false !default;
 
 @mixin appearance_header { @extend %appearance_header };
 @mixin appearance_hovered-header { @extend %appearance_hovered-header };
-@mixin appearance_active-header { @extend %appearance_active-header };
+@mixin appearance_selected-header { @extend %appearance_selected-header };
 @mixin appearance_disabled-header { @extend %appearance_disabled-header };

@@ -23,8 +23,8 @@
 	@if ( $what == hovered-header ) {
 		@include appearance_hovered-header;
 	}
-	@if ( $what == active-header ) {
-		@include appearance_active-header;
+	@if ( $what == selected-header ) {
+		@include appearance_selected-header;
 	}
 	@if ( $what == disabled-header ) {
 		@include appearance_disabled-header;

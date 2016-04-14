@@ -47,11 +47,11 @@ $header-gradient: null;
 	$header-hovered-border: get-bootstrap-var( header-hovered-border );
 	$header-hovered-gradient: null;
 
-	// Active header
-	$header-active-color: get-bootstrap-var( header-active-color );
-	$header-active-bg: get-bootstrap-var( header-active-bg );
-	$header-active-border: get-bootstrap-var( header-active-border );
-	$header-active-gradient: null;
+	// Selected header
+	$header-selected-color: get-bootstrap-var( header-selected-color );
+	$header-selected-bg: get-bootstrap-var( header-selected-bg );
+	$header-selected-border: get-bootstrap-var( header-selected-border );
+	$header-selected-gradient: null;
 
 	// Disabled header
 	$header-disabled-color: get-bootstrap-var( header-disabled-color );

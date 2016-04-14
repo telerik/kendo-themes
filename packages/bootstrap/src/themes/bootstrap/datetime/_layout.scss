@@ -42,6 +42,9 @@
 			.k-icon {
 				margin: 0 -.25rem;
 			}
+			.k-icon + .k-icon {
+				margin-left: 1em;
+			}
 		}
 	}
 
