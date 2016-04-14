@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Slider</title>
+
+	<link rel="stylesheet" href="../dist/slider.css" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.web.min.js"></script>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Slider</legend>
+
+		<div style="width: 500px;">
+			<input id="slider" value="0" />
+		</div>
+	</div>
+
+
+	<script>
+	$(document).ready(function() {
+
+		var slider = $("#slider").kendoSlider({
+			increaseButtonTitle: "Right",
+			decreaseButtonTitle: "Left",
+			min: -10,
+			max: 10,
+			smallStep: 2,
+			largeStep: 1
+		}).data("kendoSlider");
+
+		slider.wrapper.find( ".k-icon" ).html( "" );
+
+	});
+	</script>
+
+
+</body>
+</html>

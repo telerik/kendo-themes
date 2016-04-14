@@ -1,0 +1,12 @@
+@include exports("slider/theme") {
+
+	.k-slider {
+
+		.k-slider-track {
+			background: $header-bg;
+		}
+		.k-slider-selection {
+			background: $header-selected-bg;
+		}
+	}
+}

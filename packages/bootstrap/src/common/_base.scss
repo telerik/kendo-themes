@@ -11,6 +11,19 @@
 		list-style: none;
 	}
 
+
+	// Box sizing
+	.k-animation-container,
+	.k-animation-container *,
+	.k-animation-container :after,
+	.k-block .k-header,
+	.k-list-container,
+	.k-widget,
+	.k-widget *,
+	.k-widget :before {
+		box-sizing: content-box;
+	}
+
 }
 
 

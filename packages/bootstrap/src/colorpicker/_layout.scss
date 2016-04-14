@@ -1,5 +1,141 @@
 @include exports("colorpicker/layout") {
 
-	.k-colorpicker {}
+	.k-colorpicker {
+		border-width: 0;
+		font-size: $font-size;
+		line-height: $form-line-height;
+		white-space: normal;
+		display: inline-block;
+		vertical-align: middle;
+		overflow: visible;
+		position: relative;
+
+		.k-picker-wrap {
+			padding: 0 (1rem + $button-padding-x) 0 0;
+			border-width: 1px;
+			border-style: solid;
+			box-sizing: border-box;
+			display: block;
+			position: relative;
+			overflow: hidden;
+		}
+		.k-picker-wrap:before {
+			content: "\a0";
+			display: inline-block;
+			width: 0;
+		}
+
+		.k-selected-color {
+			padding: $input-padding-y;
+			width: $form-line-height * 1em;
+			height: $form-line-height * 1em;
+			line-height: 0;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.k-select {
+			padding: $button-padding-y $button-padding-x/2;
+			border-width: 0 0 0 1px;
+			border-style: solid;
+			border-color: inherit;
+			text-decoration: none;
+			display: inline-block;
+			vertical-align: top;
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			.k-icon {}
+		}
+	}
+
+}
+
+
+@include exports( "flatcolorpicker/layout" ) {
+
+	.k-flatcolorpicker {
+
+		.k-selected-color {
+			background-image: url( "textures/transtexture.png" );
+			background-position: 50% 50%;
+			text-align: right;
+		}
+		input.k-color-value {
+			margin: 0;
+			padding: $input-padding-y/2 $input-padding-x/2;
+			width: 70%;
+			border: 0;
+			font-family: Consolas,"Ubuntu Mono","Lucida Console","Courier New",monospace;
+			line-height: $form-line-height;
+		}
+
+		.k-hsv-rectangle {
+			position: relative;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-ms-touch-action: pinch-zoom double-tap-zoom;
+
+			.k-draghandle {
+				margin: -5px 0 0 -5px;
+				width: 8px;
+				height: 8px;
+				border: 1px solid #eee;
+				border-radius: 6px;
+				box-shadow: 0 1px 2px #444;
+				cursor: pointer;
+				position: absolute;
+				z-index: 10;
+				left: 50%;
+				top: 50%;
+			}
+		}
+		.k-hsv-gradient {
+			margin-bottom: 5px;
+			height: 180px;
+			background: linear-gradient( to bottom, rgba( black, 0 ), black ),
+				linear-gradient( to right, white, rgba( white, 0 ) );
+		}
+
+	}
+
+}
+
+
+@include exports( "colorpalette/layout" ) {
+
+	.k-colorpalette {
+		border-width: 0;
+		line-height: 0;
+		display: inline-block;
+		position: relative;
+
+		.k-palette {
+			width: 100%;
+			height: 100%;
+			border-collapse: collapse;
+			position: relative;
+		}
+		.k-item {
+			width: 14px;
+			height: 14px;
+			overflow: hidden;
+			-ms-high-contrast-adjust: none;
+		}
+		.k-item:hover {
+			box-shadow: 0 1px 3px 1px rgba( black,.5 ), inset 0 0 0 1px rgba( white,.3 );
+			position: relative;
+			z-index: 101;
+		}
+		.k-item.k-state-selected,
+		.k-item.k-state-selected:hover {
+			box-shadow: 0 1px 3px 1px rgba( black,.7 ), inset 0 0 0 1px rgba( white,.45 );
+			position: relative;
+			z-index: 100;
+		}
+	}
 
 }
