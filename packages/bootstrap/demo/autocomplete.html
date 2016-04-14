@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Autocomplete</title>
+
+	<link rel="stylesheet" href="../dist/autocomplete.css" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.web.min.js"></script>
+
+	<style type="text/css">
+	.w20p { display: inline-block; width: 20%; }
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Autocomplete</legend>
+		<hr />
+		<span class="w20p k-autocomplete"><input type="text" class="k-input" /></span>
+		<span class="w20p k-autocomplete k-state-hover"><input type="text" class="k-input" /></span>
+		<span class="w20p k-autocomplete k-state-focus"><input type="text" class="k-input" /></span>
+		<span class="w20p k-autocomplete k-disabled"><input type="text" class="k-input" /></span>
+		<input id="countries" style="width: 100%;" />
+		<hr />
+		<input id="fruits" />
+	</div>
+
+
+	<script>
+	var data = [
+		"Albania",
+		"Andorra",
+		"Armenia",
+		"Austria",
+		"Azerbaijan",
+		"Belarus",
+		"Belgium",
+		"Bosnia & Herzegovina",
+		"Bulgaria",
+		"Croatia",
+		"Cyprus",
+		"Czech Republic",
+		"Denmark",
+		"Estonia",
+		"Finland",
+		"France",
+		"Georgia",
+		"Germany",
+		"Greece",
+		"Hungary",
+		"Iceland",
+		"Ireland",
+		"Italy",
+		"Kosovo",
+		"Latvia",
+		"Liechtenstein",
+		"Lithuania",
+		"Luxembourg",
+		"Macedonia",
+		"Malta",
+		"Moldova",
+		"Monaco",
+		"Montenegro",
+		"Netherlands",
+		"Norway",
+		"Poland",
+		"Portugal",
+		"Romania",
+		"Russia",
+		"San Marino",
+		"Serbia",
+		"Slovakia",
+		"Slovenia",
+		"Spain",
+		"Sweden",
+		"Switzerland",
+		"Turkey",
+		"Ukraine",
+		"United Kingdom",
+		"Vatican City"
+	];
+
+	$("#countries").kendoAutoComplete({
+		dataSource: data,
+		filter: "startswith",
+		placeholder: "Select country...",
+		separator: ", "
+	});
+
+
+	$("#fruits").kendoAutoComplete({
+		dataSource: [ "Apples", "Oranges" ]
+	}).data("kendoAutoComplete").search( "A" );
+	</script>
+
+
+</body>
+</html>

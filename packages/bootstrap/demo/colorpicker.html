@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Colorpicker</title>
+
+	<link rel="stylesheet" href="../dist/colorpicker.css" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.web.min.js"></script>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Colorpicker</legend>
+
+		<div id="palette"></div>
+		<hr>
+		<input id="picker" />
+	</div>
+
+
+	<script>
+	$("#palette").kendoColorPalette({
+		columns: 4,
+		tileSize: {
+			width: 34,
+			height: 19
+		},
+		palette: [
+			"#f0d0c9", "#e2a293", "#d4735e", "#65281a",
+			"#eddfda", "#dcc0b6", "#cba092", "#7b4b3a",
+			"#fcecd5", "#f9d9ab", "#f6c781", "#c87d0e",
+			"#e1dca5", "#d0c974", "#a29a36", "#514d1b",
+			"#c6d9f0", "#8db3e2", "#548dd4", "#17365d"
+		]
+	});
+
+	$("#picker").kendoColorPicker({
+		value: "#ffffff",
+		buttons: false
+	});
+	</script>
+
+
+</body>
+</html>
