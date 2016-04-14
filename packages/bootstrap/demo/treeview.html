@@ -18,46 +18,53 @@
 <body>
 
 
-	<div class="container" id="inputs">
+	<div class="container" id="treeview">
 		<legend>Treeview</legend>
 		<hr />
-		<div class="k-widget k-treeview">
-			<ul class="k-group k-treeview-lines">
-				<li class="k-item k-first">
-					<div class="k-top">
-						<span class="k-icon k-minus"></span>
-						<span class="k-in"><span class="k-sprite folder"></span>images</span>
-					</div>
-					<ul class="k-group">
-						<li class="k-item">
-							<div class="k-top"><span class="k-in">Sub item 1</span></div>
-						</li>
-						<li class="k-item">
-							<div class="k-mid"><span class="k-in">Sub item 2</span></div>
-						</li>
-						<li class="k-item k-last">
-							<div class="k-bot"><span class="k-in">Sub Item 3</span></div>
+		<div>
+			<ul id="treeview-target">
+				<li data-expanded="true">
+					Normal
+					<ul>
+						<li>Sub item 1</li>
+						<li>Sub item 2</li>
+						<li>
+							Sub item 3
+							<ul>
+								<li>Sub item 3.1</li>
+								<li>Sub item 3.2</li>
+								<li>Sub item 3.3</li>
+							</ul>
 						</li>
 					</ul>
 				</li>
-				<li class="k-item">
-					<div class="k-mid"><span class="k-in">Normal</span></div>
-				</li>
-				<li class="k-item">
-					<div class="k-mid"><span class="k-in k-state-hover">Hovered</span></div>
-				</li>
-				<li class="k-item">
-					<div class="k-mid"><span class="k-in k-state-selected">Selected</span></div>
-				</li>
-				<li class="k-item">
-					<div class="k-mid"><span class="k-in k-state-focused">Focused</span></div>
-				</li>
-				<li class="k-item k-last">
-					<div class="k-mid"><span class="k-in k-state-disabled">Disabled</span></div>
-				</li>
+				<li>Hovered</li>
+				<li>Selected</li>
+				<li>Focused</li>
+				<li>Disabled</li>
 			</ul>
 		</div>
 	</div>
+
+
+	<script>
+	$("#treeview-target").kendoTreeView();
+	$("#treeview-target")
+		.find( ".k-in:contains('Hovered')" )
+			.addClass( "k-state-hover" )
+		.end()
+		.find( ".k-in:contains('Selected')" )
+			.addClass( "k-state-selected" )
+		.end()
+		.find( ".k-in:contains('Focused')" )
+			.addClass( "k-state-focused" )
+		.end()
+		.find( ".k-in:contains('Disabled')" )
+			.addClass( "k-state-disabled" );
+
+	$("#treeview-target").find( ".k-minus" ).addClass( "k-i-minus" );
+	$("#treeview-target").find( ".k-plus" ).addClass( "k-i-plus" );
+	</script>
 
 
 </body>
