@@ -1,7 +1,7 @@
 @import "../variables";
 @import "../../../mixins/all";
 
-@include exports( "icons") {
+@include exports( "common/icons") {
 
 	@font-face {
 		font-family: "KendoUIGlyphs";

@@ -1,6 +1,14 @@
 @import "../variables";
 @import "../../../mixins/all";
-@import "../button/button.scss";
 
+
+// Dependencies
+@import "../common/base";
+@import "../common/icons";
+@import "../common/popup";
+@import "../button/button";
+
+
+// Component
 @import "layout";
 @import "theme";

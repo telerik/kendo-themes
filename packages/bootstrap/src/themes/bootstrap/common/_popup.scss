@@ -1,0 +1,27 @@
+@import "../variables";
+@import "../../../mixins/all";
+
+@include exports("common/popup") {
+
+	// Layout
+	.k-popup {
+		margin: 2px;
+		padding: 5px 0;
+		border-width: 1px;
+		border-style: solid;
+		font-size: $font-size;
+		line-height: $line-height;
+	}
+	.k-animation-container {
+		.k-popup {
+			position: relative;
+		}
+	}
+
+
+	// Theme
+	.k-popup {
+		@include appearance( popup );
+	}
+
+}

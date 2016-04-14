@@ -1,5 +1,5 @@
-@include exports("component/layout") {
+@include exports("colorpicker/layout") {
 
-	// Local imports
-	//@import "../icons/icons";
+	.k-colorpicker {}
+
 }

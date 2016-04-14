@@ -1,6 +1,13 @@
 @import "../variables";
 @import "../../../mixins/all";
-@import "../common";
 
+
+// Dependencies
+@import "../common/base";
+@import "../common/icons";
+@import "../common/popup";
+
+
+// Component
 @import "layout";
 @import "theme";
