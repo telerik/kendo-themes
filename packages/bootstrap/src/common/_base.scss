@@ -41,23 +41,6 @@
 }
 
 
-@include exports( "common/list" ) {
-
-	// Layout
-	.k-list-scroller {
-		position: relative;
-		overflow: auto;
-	}
-	.k-list {
-		height: auto;
-	}
-
-
-	// Theme
-
-}
-
-
 @include exports( "common/states" ) {
 
 

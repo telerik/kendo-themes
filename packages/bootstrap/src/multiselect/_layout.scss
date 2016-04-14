@@ -35,11 +35,16 @@
 				vertical-align: middle;
 			}
 			.k-select {
+				margin-left: .4ex;
+				margin-right: -.4ex;
 				height: 16px;
 			}
 			.k-icon {
 				vertical-align: top;
 			}
+		}
+		li + li {
+			margin-left: .4ex;
 		}
 
 		.k-input {
