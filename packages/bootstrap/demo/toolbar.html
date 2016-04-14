@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Toolbar</title>
+
+	<link rel="stylesheet" href="../dist/icons.css" />
+	<link rel="stylesheet" href="../dist/toolbar.css" />
+	<link rel="stylesheet" href="../dist/bootstrap_dist.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.web.min.js"></script>
+
+	<style type="text/css">
+	.w20p { display: inline-block; width: 20%; }
+	</style>
+</head>
+<body>
+
+
+	<div class="container" id="toolbar">
+		<legend>Toolbar</legend>
+		<hr />
+		<div id="toolbar-target">
+		</div>
+	</div>
+
+
+	<script>
+	$("#toolbar-target").kendoToolBar({
+		items: [
+			{ type: "button", text: "Button" },
+			{ type: "button", text: "Toggle Button", togglable: true },
+			{
+				type: "splitButton",
+				text: "Insert",
+				menuButtons: [
+					{ text: "Insert above", icon: "insert-n" },
+					{ text: "Insert between", icon: "insert-m" },
+					{ text: "Insert below", icon: "insert-s" }
+				]
+			},
+			{ type: "separator" },
+			{
+				type: "buttonGroup",
+				buttons: [
+					{ spriteCssClass: "k-tool-icon k-justifyLeft", text: "Left", togglable: true, group: "text-align" },
+					{ spriteCssClass: "k-tool-icon k-justifyCenter", text: "Center", togglable: true, group: "text-align" },
+					{ spriteCssClass: "k-tool-icon k-justifyRight", text: "Right", togglable: true, group: "text-align" }
+				]
+			},
+			{
+				type: "buttonGroup",
+				buttons: [
+					{ spriteCssClass: "k-tool-icon k-bold", text: "Bold", togglable: true, showText: "overflow" },
+					{ spriteCssClass: "k-tool-icon k-italic", text: "Italic", togglable: true, showText: "overflow" },
+					{ spriteCssClass: "k-tool-icon k-underline", text: "Underline", togglable: true, showText: "overflow" }
+				]
+			},
+			{
+				type: "button",
+				text: "Action",
+				overflow: "always"
+			},
+			{
+				type: "button",
+				text: "Another Action",
+				overflow: "always"
+			},
+			{
+				type: "button",
+				text: "Something else here",
+				overflow: "always"
+			}
+		]
+	});
+	</script>
+
+
+</body>
+</html>
