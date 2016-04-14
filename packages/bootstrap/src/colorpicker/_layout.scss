@@ -100,6 +100,31 @@
 				linear-gradient( to right, white, rgba( white, 0 ) );
 		}
 
+		// Sliders
+		.k-hue-slider,
+		.k-transparency-slider {
+			display: block;
+
+			.k-draghandle {
+				width: 10px;
+				height: 10px;
+				border-width: 3px;
+				border-color: rgba( white, .9);
+				border-radius: 100%;
+				box-shadow: 0 1px 4px rgba( black, .9);
+			}
+			.k-draghandle:hover,
+			.k-draghandle:focus {
+				border-color: white;
+				box-shadow: 0 1px 4px black;
+			}
+		}
+		.k-slider-horizontal {
+			margin: 0 5%;
+			width: 90%;
+			height: 20px;
+		}
+
 	}
 
 }

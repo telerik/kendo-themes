@@ -53,6 +53,19 @@
 			position: absolute;
 		}
 
+		.k-draghandle {
+			border-width: 1px;
+			border-style: solid;
+			background-color: transparent;
+			background-repeat: no-repeat;
+			outline: 0;
+			text-align: center;
+			text-decoration: none;
+			text-indent: -3333px;
+			overflow: hidden;
+			position: absolute;
+		}
+
 	}
 
 
@@ -84,6 +97,12 @@
 		.k-slider-buttons .k-slider-track {
 			left: 34px;
 			right: 34px;
+		}
+
+		.k-draghandle {
+			width: 13px;
+			height: 14px;
+			top: -4px;
 		}
 
 	}
