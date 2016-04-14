@@ -1,7 +1,5 @@
 @include exports('animation/effect') {
     .right {
-        /* DO NOT MOVE - a comment to force root class generation */
-
         &-enter,
         &-appear {
             transform: translate(-100%, 0);
@@ -29,8 +27,6 @@
     }
 
     .left {
-        /* DO NOT MOVE - a comment to force root class generation */
-
         &-enter,
         &-appear {
             transform: translate(100%, 0);
@@ -58,8 +54,6 @@
     }
 
     .down {
-        /* DO NOT MOVE - a comment to force root class generation */
-
         &-enter,
         &-appear {
             transform: translate(0, -100%);
@@ -82,8 +76,6 @@
     }
 
     .up {
-        /* DO NOT MOVE - a comment to force root class generation */
-
         &-enter,
         &-appear {
             transform: translate(0, 100%);
@@ -106,8 +98,6 @@
     }
 
     .toggle {
-        /* DO NOT MOVE - a comment to force root class generation */
-
         &-enter,
         &-appear {
             opacity: 0;
@@ -136,8 +126,6 @@
     }
 
     .zoom-in {
-        /* DO NOT MOVE - a comment to force root class generation */
-
         &-enter,
         &-appear {
             opacity: 0;
@@ -160,8 +148,6 @@
     }
 
     .zoom-out {
-        /* DO NOT MOVE - a comment to force root class generation */
-
         &-enter,
         &-appear {
             transform: scale(0);
@@ -185,8 +171,6 @@
     }
 
     .slide-in-appear {
-        /* DO NOT MOVE - a comment to force root class generation */
-
         &-appear {
             opacity: .1;
             transform: translate(0, -3em);
@@ -208,8 +192,6 @@
     }
 
     .slide-down {
-        /* DO NOT MOVE - a comment to force root class generation */
-
         &-enter {
             transform: translateY(-100%);
         }
@@ -230,8 +212,6 @@
     }
 
     .slide-up {
-        /* DO NOT MOVE - a comment to force root class generation */
-
         &-enter {
             transform: translateY(100%);
         }
