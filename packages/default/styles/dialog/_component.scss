@@ -38,14 +38,4 @@ $window-border-radius: $border-radius !default;
     border-radius: 0 0 $window-border-radius $window-border-radius;
     overflow: hidden;
 }
-
-.dialog-wrapper {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-
-    .animation-container {
-        overflow: visible;
-    }
-}
 }

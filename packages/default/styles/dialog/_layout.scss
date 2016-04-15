@@ -160,14 +160,22 @@ $resizer-offset: -$resizer-size / 2;
     width: $resizer-size;
 }
 
+.overlay,
+.dialog-wrapper {
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.dialog-wrapper .animation-container {
+    overflow: visible;
+}
+
 .overlay {
     background-color: invert($background);
-    height: 100%;
-    left: 0;
     opacity: .5;
-    position: fixed;
-    top: 0;
-    width: 100%;
     z-index: 10001;
 }
 
