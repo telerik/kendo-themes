@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Tooltip</title>
+
+	<link rel="stylesheet" href="../dist/tooltip.css" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.web.min.js"></script>
+
+	<style type="text/css">
+	.w20p { display: inline-block; width: 20%; }
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Tooltip</legend>
+
+		<div id="tooltip" title="I am tooltip">I have a tooltip</div>
+	</div>
+
+
+	<script>
+	var tooltip = $("#tooltip").kendoTooltip({
+		width: 120,
+		position: "top"
+	}).data("kendoTooltip");
+
+	tooltip.show();
+	</script>
+
+
+</body>
+</html>

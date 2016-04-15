@@ -1,2 +1,15 @@
 @include exports("tooltip/theme") {
+
+	.k-tooltip {
+		color: $tooltip-color;
+		background-color: $tooltip-bg;
+		@include border-radius($border-radius);
+	}
+
+
+	.k-callout-n { border-bottom-color: $tooltip-arrow-color; }
+	.k-callout-e { border-left-color: $tooltip-arrow-color; }
+	.k-callout-s { border-top-color: $tooltip-arrow-color; }
+	.k-callout-w { border-right-color: $tooltip-arrow-color; }
+
 }
