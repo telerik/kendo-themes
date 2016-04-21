@@ -97,31 +97,14 @@
         }
     }
 
-    .toggle {
-        &-enter,
-        &-appear {
+    .fade-in {
+        &-enter {
             opacity: 0;
         }
 
-        &-enter-active,
-        &-appear-active {
+        &-enter-active {
             opacity: 1;
             transition: opacity 500ms ease-in-out;
-        }
-
-        &-leave {
-            opacity: 1;
-            position: absolute;
-        }
-
-        &-leave-active {
-            opacity: 0;
-            transition: opacity 600ms ease-in-out;
-        }
-
-        &-enter-active + &-enter-active,
-        &-leave-active + &-leave-active {
-            display: none;
         }
     }
 
