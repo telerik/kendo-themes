@@ -97,7 +97,7 @@
         }
     }
 
-    .fade-in {
+    .fade {
         &-enter {
             opacity: 0;
         }
@@ -105,6 +105,20 @@
         &-enter-active {
             opacity: 1;
             transition: opacity 500ms ease-in-out;
+        }
+
+        &-leave {
+            opacity: 1;
+        }
+
+        &-leave-active {
+            opacity: 0;
+            transition: opacity 500ms ease-in-out;
+        }
+
+        &-leave-active + &-leave-active,
+        &-enter-active + &-enter-active {
+            display: none;
         }
     }
 
