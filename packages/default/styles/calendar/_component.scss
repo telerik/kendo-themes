@@ -1,9 +1,8 @@
 @import '../base/states';
+@import '../animation/main';
+@import './layout';
 
 @include exports('calendar/component') {
-
-@import './layout';
-@import '../animation/main';
 
 $dateinputs-background-color: lighten($base, 1%);
 $dateinputs-border-color: darken($base, 14%);

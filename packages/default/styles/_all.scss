@@ -1,8 +1,14 @@
 @import 'mixins/import-once';
+
 @import 'base/layout';
 @import 'base/states';
 @import 'animation/container';
 @import 'animation/effect';
+
+@import 'button/component';
+@import 'calendar/component';
 @import 'dialog/component';
-@import 'tabstrip/component';
+@import 'dropdowns/component';
 @import 'panelbar/component';
+@import 'slider/component';
+@import 'tabstrip/component';

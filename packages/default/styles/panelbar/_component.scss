@@ -1,12 +1,11 @@
 @import '../base/states';
+@import './layout';
 
 $panelbar-color: $normal-text-color !default;
 $panelbar-border-color: $widget-border-color !default;
 $panelbar-background-color: $background !default;
 
 @include exports('panelbar/component') {
-
-@import './layout';
 
 .panelbar {
     &.header,

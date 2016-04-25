@@ -1,4 +1,6 @@
 @import '../base/states';
+@import '../animation/main';
+@import './layout';
 
 $dropdowns-background-color: lighten($base, 1%);
 $dropdowns-border-color: darken($base, 14%);
@@ -9,9 +11,6 @@ $dropdowns-focused-border-color: darken($base, 20%);
 $dropdowns-focused-box-shadow: 0 0 4px 0 $dropdowns-shadow-color;
 
 @include exports('dropdowns/component') {
-
-@import './layout';
-@import '../animation/main';
 
 .autocomplete,
 .autocomplete .input,

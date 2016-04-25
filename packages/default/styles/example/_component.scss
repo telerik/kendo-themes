@@ -1,5 +1,6 @@
+@import './layout';
+
 @include exports('example/component') {
-@import 'layout';
 
 $example-background-color: saturate($base, 4%) !default;
 $example-border-color: darken($base, 8%) !default;

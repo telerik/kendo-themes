@@ -1,4 +1,6 @@
 @import '../base/states';
+@import '../button/component';
+@import './layout';
 
 $slider-tracbackground-color: darken($base, 8%) !default;
 $slider-selection-background-color: $accent !default;
@@ -12,9 +14,6 @@ $slider-draghandle-selected-border-color: $accent !default;
 $slider-draghandle-selected-box-shadow: inset 0 0 3px 1px darken($accent, 9%) !default;
 
 @include exports('slider/component') {
-
-@import './layout';
-@import '../button/component';
 
 .slider {
     .slider-track,

@@ -1,8 +1,7 @@
-
-@include exports('dropdowns/layout') {
-
 @import '../base/layout';
 @import '../icons/main';
+
+@include exports('dropdowns/layout') {
 
 $input-height: 1.65em;
 $input-indent: .33em;

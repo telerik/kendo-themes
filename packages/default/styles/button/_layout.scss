@@ -1,8 +1,8 @@
+@import '../icons/main';
+
 $button-padding: 2px 7px 2px !default;
 
 @include exports('button/layout') {
-
-@import '../icons/main';
 
 .button {
     border-radius: $border-radius;

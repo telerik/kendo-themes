@@ -1,8 +1,7 @@
-
-@include exports('calendar/layout') {
-
 @import '../base/layout';
 @import '../icons/main';
+
+@include exports('calendar/layout') {
 
 .calendar {
     position: relative;

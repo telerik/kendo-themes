@@ -1,4 +1,7 @@
 @import '../base/states';
+@import '../button/component';
+@import '../animation/effect';
+@import './layout';
 
 $window-border-color: $widget-border-color !default;
 $window-shadow-color: rgba(0, 0, 0, .3) !default;
@@ -7,10 +10,6 @@ $window-focused-box-shadow: 1px 1px 7px 1px $window-shadow-color !default;
 $window-border-radius: $border-radius !default;
 
 @include exports('dialog/component') {
-
-@import './layout';
-@import '../button/component';
-@import '../animation/effect';
 
 .window {
     border-color: $window-border-color;

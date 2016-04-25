@@ -1,3 +1,7 @@
+@import '../base/layout';
+@import '../button/layout';
+@import '../icons/main';
+
 $slider-size: 200px !default;
 $slider-alt-size: 26px !default;
 $slider-button-offset: 10px !default;
@@ -9,10 +13,6 @@ $slider-track-thickness: 8px !default;
 $button-spacing: ($slider-button-size + $slider-button-offset);
 $transition-speed: .3s;
 $transition-function: ease-out;
-
-@import '../base/layout';
-@import '../button/layout';
-@import '../icons/main';
 
 .slider {
     background-color: transparent;

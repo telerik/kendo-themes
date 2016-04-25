@@ -1,6 +1,6 @@
-@include exports('dialog/layout') {
-
 @import '../button/layout';
+
+@include exports('dialog/layout') {
 
 $window-titlebar-size: 2em;
 $window-padding: .58em;
