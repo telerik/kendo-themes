@@ -22,12 +22,6 @@ $button-padding: 2px 7px 2px !default;
         cursor: default;
     }
 
-    // Override the important default line-height in Firefox 4+
-    .ff input& {
-        padding-bottom: .37em;
-        padding-top: .37em;
-    }
-
     &::-moz-focus-inner {
         border: 0;
         padding: 0;
