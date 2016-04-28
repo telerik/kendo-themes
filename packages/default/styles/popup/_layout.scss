@@ -1,0 +1,64 @@
+@include exports('popup/layout') {
+.popup {
+    position: absolute;
+    z-index: 100;
+
+    .list-container,
+    .calendar-container {
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+        padding: 2px;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    > .group-header,
+    > .virtual-wrap > .group-header {
+        padding-right: 22px;
+    }
+
+    .item,
+    .list-optionlabel {
+        cursor: default;
+    }
+
+    .list {
+        height: auto;
+    }
+
+    .list .item,
+    .list-optionlabel,
+    > .group-header,
+    > .virtual-wrap > .group-header {
+        padding: 1px 5px;
+        line-height: 1.8em;
+        min-height: 1.8em;
+    }
+
+    .list .state-focused,
+    .list .state-selected,
+    .list-optionlabel.state-focused,
+    .list-optionlabel.state-selected {
+        padding: 0 4px;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .list-filter {
+        position: relative;
+        margin-bottom: 2px;
+
+        > .textbox {
+            padding-right: 20px;
+            width: 100%;
+        }
+
+        > .icon {
+            position: absolute;
+            right: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+}

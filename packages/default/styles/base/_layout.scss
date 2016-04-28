@@ -13,6 +13,19 @@ html {
     text-decoration: none;
 }
 
+.textbox > input,
+.input[type='text'],
+.input[type='number'],
+.textbox,
+.picker-wrap .input,
+.button {
+    font-size: 100%;
+    font-family: inherit;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-appearance: none;
+}
+
 .floatwrap:after {
     clear: both;
     content: '';
@@ -38,5 +51,16 @@ html {
 .widget *,
 .widget *:before {
     box-sizing: content-box;
+}
+
+.autocomplete, 
+.block,
+.k-utton, 
+.edit-cell .widget, 
+.grid-edit-row .widget, 
+.grid-edit-row .text-box
+.textbox,
+.list-filter .textbox {
+    box-sizing: border-box;
 }
 }

@@ -22,6 +22,10 @@ $input-indent: .33em;
 .combobox,
 .dropdown {
     white-space: nowrap;
+
+    .popup {
+        width: 100%;
+    }
 }
 
 .autocomplete {
@@ -42,10 +46,14 @@ $input-indent: .33em;
         min-height: $input-height;
         line-height: ($input-height + .35em);
         vertical-align: middle;
-        -moz-box-sizing: border-box;
         text-align: center;
         width: 1.9em;
         height: 100%;
+        padding: 0;
+    }
+
+    .icon {
+        line-height: 2.004em;
     }
 }
 
@@ -57,14 +65,9 @@ $input-indent: .33em;
 .list-container.state-border-down,
 .autocomplete.state-border-down,
 .dropdown-wrap.state-border-down,
-.picker-wrap.state-border-down,
-.numeric-wrap.state-border-down {
+.picker-wrap.state-border-down {
     border-bottom-width: 0;
     padding-bottom: 1px;
-}
-
-.list-container .km-scroll-container {
-    padding-bottom: 6px;
 }
 
 .textbox,
@@ -120,7 +123,7 @@ $input-indent: .33em;
 .combobox .select {
     border-style: solid;
     border-width: 0 0 0 1px;
-    border-color: inherit; /* skin-related, inherit does not work in ie7- */
+    border-color: inherit;
 }
 
 .textbox > input,
@@ -172,11 +175,6 @@ $input-indent: .33em;
     padding-bottom: .38em;
 }
 
-/* above style breaks NumericTextBox layout due display:block style applied to the input */
-.km.root .combobox .dropdown-wrap:before {
-    content: none;
-}
-
 .combobox .icon,
 .dropdown,
 .selectbox .icon {
@@ -185,9 +183,6 @@ $input-indent: .33em;
 
 
 .popup {
-    border-style: solid;
-    border-width: 1px;
-
     &.list-container,
     &.calendar-container {
         -webkit-touch-callout: none;
@@ -246,13 +241,6 @@ $input-indent: .33em;
         top: 50%;
         transform: translateY(-50%);
     }
-}
-
-.km-root .list-filter > .textbox {
-    padding-left: 0;
-    padding-right: 0;
-    border-left-width: 0;
-    border-right-width: 0;    
 }
 
 /* MultiSelect */

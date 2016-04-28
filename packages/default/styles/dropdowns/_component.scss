@@ -1,14 +1,17 @@
 @import '../base/states';
 @import '../animation/main';
+@import '../popup/main';
 @import './layout';
 
-$dropdowns-background-color: lighten($base, 1%);
-$dropdowns-border-color: darken($base, 14%);
-$dropdowns-shadow-color: rgba(0, 0, 0, .3);
+$dropdowns-background-color: lighten($base, 1%) !default;
+$dropdowns-border-color: darken($base, 14%) !default;
+$dropdowns-shadow-color: rgba(0, 0, 0, .3) !default;
 
-$dropdowns-focused-background-color: saturate($hover-background, 1%);
-$dropdowns-focused-border-color: darken($base, 20%);
-$dropdowns-focused-box-shadow: 0 0 4px 0 $dropdowns-shadow-color;
+$dropdowns-hover-border-color: darken($base, 20%) !default;
+
+$dropdowns-focused-background-color: saturate($hover-background, 1%) !default;
+$dropdowns-focused-border-color: darken($base, 20%) !default;
+$dropdowns-focused-box-shadow: 0 0 4px 0 $dropdowns-shadow-color !default;
 
 @include exports('dropdowns/component') {
 
@@ -27,8 +30,9 @@ $dropdowns-focused-box-shadow: 0 0 4px 0 $dropdowns-shadow-color;
     background-position: 50% 50%;
     border-color: $dropdowns-border-color;
 
-    &.state-hover {
+    &:hover {
         background-color: $hover-background;
+        border-color: $dropdowns-hover-border-color;
     }
 
     &.state-focused {
@@ -36,6 +40,24 @@ $dropdowns-focused-box-shadow: 0 0 4px 0 $dropdowns-shadow-color;
         background-position: 50% 50%;
         border-color: $dropdowns-focused-border-color;
         box-shadow: $dropdowns-focused-box-shadow;
+        outline: 0;
+    }
+
+    &.state-disabled:hover,
+    &.state-disabled.state-focused {
+        box-shadow: none;
+        background-color: $dropdowns-background-color;
+        background-position: 50% 50%;
+        border-color: $dropdowns-border-color;
+    }
+}
+
+.textbox {
+    border-color: $dropdowns-border-color;
+    border-radius: $border-radius;
+
+    &:hover {
+        border-color: $dropdowns-hover-border-color;
     }
 }
 
@@ -47,8 +69,14 @@ $dropdowns-focused-box-shadow: 0 0 4px 0 $dropdowns-shadow-color;
     color: $normal-text-color;
 }
 
-.dropdown-wrap .input {
-    border-radius: $border-radius 0 0 $border-radius;
+.dropdown-wrap {
+    .input {
+        border-radius: $border-radius 0 0 $border-radius;
+    }
+
+    > .select {
+        border-radius: 0 $border-radius $border-radius 0;
+    }
 }
 
 .autocomplete.state-border-down,
