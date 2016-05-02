@@ -17,7 +17,7 @@
     "cz-conventional-changelog": "^1.1.5",
     "ghooks": "^1.0.3",
     "node-sass": "^3.4.2",
-    "sass-lint": "^1.5.0",
+    "sass-lint": "^1.7.0",
     "validate-commit-msg": "^1.1.1",
     "semantic-release": "^4.3.5"
   },

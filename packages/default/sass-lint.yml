@@ -20,3 +20,4 @@ rules:
 
     no-css-comments: 0
     no-misspelled-properties: 0
+    no-trailing-whitespace: 2
