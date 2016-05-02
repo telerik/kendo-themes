@@ -4,6 +4,7 @@
 
 $window-titlebar-size: 2em;
 $window-padding: .58em;
+$window-z-index: 10001;
 
 .window {
     border-style: solid;
@@ -11,7 +12,7 @@ $window-padding: .58em;
     display: inline-block;
     padding-top: $window-titlebar-size;
     position: absolute;
-    z-index: 10001;
+    z-index: $window-z-index;
 
     &.window-titleless {
         padding-top: 0;
@@ -161,7 +162,9 @@ $resizer-offset: -$resizer-size / 2;
 }
 
 .overlay,
-.dialog-wrapper {
+.dialog-wrapper,
+.dialog-wrapper > .animation-container,
+.dialog-wrapper > .animation-container > div {
     top: 0;
     left: 0;
     position: fixed;
@@ -169,14 +172,14 @@ $resizer-offset: -$resizer-size / 2;
     width: 100%;
 }
 
-.dialog-wrapper .animation-container {
-    overflow: visible;
+.dialog-wrapper > .animation-container {
+    z-index: $window-z-index;
 }
 
 .overlay {
     background-color: invert($background);
     opacity: .5;
-    z-index: 10001;
+    z-index: $window-z-index;
 }
 
 .window .overlay {

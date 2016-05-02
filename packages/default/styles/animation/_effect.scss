@@ -172,7 +172,7 @@
             opacity: .1;
             transform: translate(0, -3em);
 
-            &.centered {
+            .centered {
                 transform: translate(-50%, -60%);
             }
         }
@@ -182,7 +182,7 @@
             transform: translate(0, 0);
             transition: transform .3s cubic-bezier(.2, .6, .4, 1), opacity .3s cubic-bezier(.2, 1, .2, 1);
 
-            &.centered {
+            .centered {
                 transform: translate(-50%, -50%);
             }
         }
