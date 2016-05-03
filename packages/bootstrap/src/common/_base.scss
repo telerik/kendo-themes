@@ -21,7 +21,7 @@
 	.k-widget,
 	.k-widget *,
 	.k-widget :before {
-		box-sizing: content-box;
+		@extend %content-box;
 	}
 
 }

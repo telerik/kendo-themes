@@ -1,231 +1,71 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-//@import "icons";
+@import "variables";
+@import "mixins/all";
 
-// functional styles
-.k-icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    font-size: 1em;
-    overflow: hidden;
-    text-align: center;
-    vertical-align: middle;
-
-    //@include use-font-icon();
-}
-
-.k-reset {
-  margin: 0;
-  padding: 0;
-}
-
-.k-auto-scrollable {
-  overflow: auto;
-}
-
-.k-combobox {
-  display: inline-block;
-}
-
-.k-grid {
-    table {
-      table-layout: fixed;
-      width: 100%;
-    }
-
-    .k-group-col,
-    .k-hierarchy-col {
-        width: $spacer-x * 2;
-    }
-}
+// Dependencies
+@import "common/base";
+@import "common/icons";
+@import "common/popup";
 
 
-.k-pager-wrap {
-  .k-link, .k-label, .k-reset {
-    vertical-align: middle;
-  }
+// Data management
+//@import "grid/grid";
+//@import "spreadsheet/spreadsheet";
+//@import "listview/listview";
+//@import "pivotgrid/pivotgrid";
+//@import "treelist/treelist";
+//@import "scrollview/scrollview";
 
-  ul {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
 
-.k-group-delete {
-  @extend .k-i-x;
-}
+// Editors
+@import "autocomplete/autocomplete";
+@import "colorpicker/colorpicker";
+@import "combobox/combobox";
+//@import "datepicker/datepicker";
+//@import "datetimepicker/datetimepicker";
+@import "dropdownlist/dropdownlist";
+//@import "editor/editor";
+@import "input/input";
+@import "multiselect/multiselect";
+@import "numerictextbox/numerictextbox";
+@import "slider/slider";
+//@import "timepicker/timepicker";
+//@import "upload/upload";
+//@import "validator/validator";
+//@import "switch/switch";
 
-// theme
-.k-button {
-  @extend .btn;
-  @extend .btn-secondary;
 
-  &.k-primary {
-    @extend .btn-primary;
-  }
-}
+// Charts
+//@import "chart/chart";
+//@import "treemap/treemap";
 
-.k-drag-clue {
-  @extend .label;
-  @extend .label-default;
 
-  width: auto;
-}
+// Diagrams and map
+//@import "map/map";
 
-.k-dropdown {
-  @extend .btn;
-  @extend .btn-secondary;
-}
 
-.k-autocomplete .k-input {
-    @extend .form-control;
-}
+// Scheduling
+//@import "calendar/calendar";
+//@import "gantt/gantt";
+//@import "scheduler/scheduler";
 
-.k-combobox .k-dropdown-wrap {
-  @extend .input-group;
 
-  .k-input {
-    @extend .form-control;
-  }
+// Layout
+//@import "notification/notification";
+//@import "responsive panel/responsive panel";
+//@import "splitter/splitter";
+//@import "tooltip/tooltip";
+//@import "window/window";
 
-  .k-select {
-    @extend .input-group-btn;
 
-    .k-icon {
-      @extend .btn;
-      @extend .btn-secondary;
-      @extend .dropdown-toggle;
-      width: auto;
-      height: auto;
+// Navigation
+//@import "button/button";
+//@import "buttongroup/buttongroup";
+//@import "menu/menu";
+//@import "panelbar/panelbar";
+//@import "tabstrip/tabstrip";
+//@import "toolbar/toolbar";
+//@import "treeview/treeview";
 
-      &:after {
-        display: none;
-      }
-    }
-  }
 
-  &.k-state-active .k-select {
-    @extend .open;
-  }
-}
-
-.k-popup {
-  @extend .dropdown-menu;
-
-  box-sizing: border-box;
-  top: 0;
-
-  .k-list {
-    margin: 0;
-    padding: 0;
-  }
-
-  .k-group-header {
-    @extend .dropdown-header;
-  }
-
-  .k-item {
-    @extend .dropdown-item;
-    cursor: pointer;
-    position: relative;
-
-    >.k-group {
-      @extend .btn-sm;
-
-      color: $btn-primary-color;
-      background-color: $btn-primary-bg;
-
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-  }
-
-  .k-state-selected {
-    @extend .active;
-  }
-}
-
-.k-tabstrip {
-  outline: none;
-}
-
-.k-tabstrip-items {
-  @extend .nav;
-  @extend .nav-tabs;
-
-  .k-item {
-    @extend .nav-item;
-  }
-
-  .k-link {
-    @extend .nav-link;
-    cursor: pointer;
-  }
-
-  .k-state-active .k-link {
-    @extend .active;
-  }
-}
-
-.k-grid {
-  @extend .table;
-  @extend .table-striped;
-  @extend .table-bordered;
-
-  .k-grouping-header {
-    @extend .card-header;
-  }
-
-  .k-grid-pager {
-    @extend .card-footer;
-  }
-}
-
-.k-pager-wrap {
-  @extend .btn-toolbar;
-
-  > .k-link {
-    @extend .btn;
-    @extend .btn-secondary;
-  }
-
-  .k-pager-numbers {
-    @extend .pagination;
-
-    li:not(.k-current-page) {
-      @extend .hidden-sm-down;
-    }
-
-    .k-current-page {
-      @extend .hidden-md-up;
-      @extend .dropdown;
-
-      .k-link {
-        @extend .dropdown-toggle;
-      }
-    }
-
-    .k-state-selected {
-      @extend .active;
-    }
-
-    .k-current-page {
-      @extend .visible-sm;
-      @extend .hidden-md;
-    }
-  }
-
-  .k-pager-input,
-  .k-pager-sizes {
-    @extend .m-x;
-  }
-
-  .k-pager-sizes > .k-widget {
-    @extend .m-r;
-  }
-
-  .k-pager-info {
-    @extend .m-l;
-  }
-}
+// Interactivity & UX
+//@import "progressbar/progressbar";
