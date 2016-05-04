@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Window</title>
+
+	<link rel="stylesheet" href="../dist/window.css" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.web.min.js"></script>
+
+	<style type="text/css">
+	.w20p { display: inline-block; width: 20%; }
+	</style>
+</head>
+<body>
+
+
+	<div class="container" id="window-container">
+		<legend>Window</legend>
+		<div class="modal" style="position: relative; display: block;">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+						<h4 class="modal-title">Modal title</h4>
+					</div>
+					<div class="modal-body">
+						<p>One fine body…</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+
+		<div id="window-target">
+			<p>Window content</p>
+		</div>
+	</div>
+
+
+	<script>
+	$(document).ready(function() {
+
+		var myWindow = $("#window-target").kendoWindow({
+			width: "600px",
+			title: "My title",
+			visible: true,
+			actions: [
+				"Pin",
+				"Minimize",
+				"Maximize",
+				"Close",
+				"Refresh"
+			],
+			close: function () {}
+		}).data("kendoWindow");
+
+		myWindow.center().open();
+
+		// Massage
+		myWindow.wrapper.find(".k-window-action .k-icon").html("");
+		myWindow.wrapper.find(".k-window-action .k-i-close").addClass("k-i-x");
+
+	});
+	</script>
+
+
+</body>
+</html>
