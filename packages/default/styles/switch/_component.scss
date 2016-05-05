@@ -1,0 +1,55 @@
+@import '../base/states';
+@import './layout';
+
+$switch-base: darken($base, 10%);
+
+@include exports('switch/component') {
+    .switch-container,
+    .switch-wrapper {
+        border-color: $widget-border-color;
+    }
+
+    .switch-wrapper {
+        background-color: $switch-base;
+    }
+
+    .switch-background {
+        background-position: 4.3em 0;
+        background-repeat: no-repeat;
+        background-color: $accent;
+    }
+
+    .switch-handle {
+        background: $background;
+    }
+
+    .switch-on {
+        color: $accent;
+    }
+
+    .switch-label-on {
+        color: $selected-text-color;
+    }
+
+    .switch-off {
+        color: $widget-border-color;
+    }
+
+    .switch-label-off {
+        color: $normal-text-color;
+    }
+
+    .switch-off .switch-handle {
+        box-shadow: 0 1px 0 1px $base, 0 -1px 0 1px $base;
+    }
+
+    .switch-wrapper,
+    .switch-container,
+    .switch-background {
+        border-radius: ($border-radius + 1px);
+    }
+
+    .switch-handle {
+        border-radius: $border-radius;
+    }
+}
