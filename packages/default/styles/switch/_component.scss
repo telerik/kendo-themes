@@ -1,7 +1,7 @@
 @import '../base/states';
 @import './layout';
 
-$switch-base: darken($base, 10%);
+$switch-base: darken($base, 20%);
 
 @include exports('switch/component') {
     .switch-container,
@@ -27,16 +27,13 @@ $switch-base: darken($base, 10%);
         color: $accent;
     }
 
-    .switch-label-on {
+    .switch-label-on,
+    .switch-label-off {
         color: $selected-text-color;
     }
 
     .switch-off {
         color: $widget-border-color;
-    }
-
-    .switch-label-off {
-        color: $normal-text-color;
     }
 
     .switch-off .switch-handle {
