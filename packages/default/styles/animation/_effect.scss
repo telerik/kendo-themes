@@ -233,4 +233,44 @@
             transition: transform 300ms ease-in-out;
         }
     }
+
+    .slide-right {
+        &-enter {
+            transform: translateX(-100%);
+        }
+
+        &-enter-active {
+            transform: translateX(0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translateX(0);
+        }
+
+        &-leave-active {
+            transform: translateX(-100%);
+            transition: transform 300ms ease-in-out;
+        }
+    }
+
+    .slide-left {
+        &-enter {
+            transform: translateX(100%);
+        }
+
+        &-enter-active {
+            transform: translateX(0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translateX(0);
+        }
+
+        &-leave-active {
+            transform: translateX(100%);
+            transition: transform 300ms ease-in-out;
+        }
+    }
 }
