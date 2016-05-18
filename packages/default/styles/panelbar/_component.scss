@@ -10,6 +10,7 @@ $panelbar-background-color: $background !default;
 .panelbar {
     &.header,
     .item,
+    .panel,
     > .item > .link {
         border-color: $panelbar-border-color;
     }
