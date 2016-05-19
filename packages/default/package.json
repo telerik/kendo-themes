@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "lint": "sass-lint -v -c ./sass-lint.yml",
-    "test": "npm run lint && node-sass -r styles/ -o dist/",
+    "build": "node-sass -r styles/ -o dist/",
+    "test": "npm run lint && npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "Telerik",
