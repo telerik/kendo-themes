@@ -1,18 +1,19 @@
+@import '../mixins/blend-modes';
 @import '../animation/main';
 @import '../base/states';
 @import './layout';
 
-$list-container-border-color: darken($base, 10%) !default;
-$list-container-button-background: $base !default;
+$list-container-border: darken($base, 10%) !default;
 $list-container-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .3) !default;
+$list-container-background: lighten($base, 6%) !default;
 
-$list-items-hover-border-color: darken($base, 20%) !default;
-$list-items-focused-border-color: darken($base, 20%) !default;
+$list-items-hover-border: darken($base, 20%) !default;
+$list-items-focused-border: darken($base, 20%) !default;
 
 @include exports('popup/component') {
 .popup .list-container {
-    background-color: $list-container-button-background;
-    border-color: $list-container-border-color;
+    background-color: $list-container-background;
+    border-color: $list-container-border;
     box-shadow: $list-container-box-shadow;
 
     &.state-border-up {
@@ -25,8 +26,6 @@ $list-items-focused-border-color: darken($base, 20%) !default;
 
     .item,
     .list-optionlabel {
-        border-radius: $border-radius;
-
         &.state-selected {
             box-shadow: none;
         }
@@ -36,7 +35,11 @@ $list-items-focused-border-color: darken($base, 20%) !default;
     .list-optionlabel:hover {
         color: $hover-text-color;
         background-color: $hover-background;
-        border-color: $list-items-hover-border-color;
+
+        &.state-selected {
+            background-color: blend-multiply($selected-background, $hover-background);
+            color: $selected-text-color;
+        }
     }
 
 }

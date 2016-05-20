@@ -7,7 +7,6 @@
     .calendar-container {
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: transparent;
-        padding: 2px;
         border-width: 1px;
         border-style: solid;
     }
@@ -30,18 +29,9 @@
     .list-optionlabel,
     > .group-header,
     > .virtual-wrap > .group-header {
-        padding: 1px 5px;
+        padding: 2px 8px;
         line-height: 1.8em;
         min-height: 1.8em;
-    }
-
-    .list .state-focused,
-    .list .state-selected,
-    .list-optionlabel.state-focused,
-    .list-optionlabel.state-selected {
-        padding: 0 4px;
-        border-width: 1px;
-        border-style: solid;
     }
 
     .list-filter {

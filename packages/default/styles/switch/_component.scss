@@ -1,52 +1,107 @@
 @import '../base/states';
 @import './layout';
 
-$switch-base: darken($base, 20%);
+$switch-on-color: $accent !default;
+$switch-off-color: darken($base, 48%) !default;
+$switch-background: $normal-background !default;
+$switch-border-color: rgba(0, 0, 0, .08) !default;
+$switch-border-radius: ($switch-size / 2) !default;
+$switch-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06) !default;
+$switch-handle-gradient: lighten($base, 5%), lighten($base, 3%) !default;
+$switch-hover-border-color: rgba(0, 0, 0, .15) !default;
+$switch-hover-on-handle-gradient: adjust-hue($accent, 7), adjust-hue($accent, 4) !default;
+$switch-hover-onhandle-border-color: adjust-hue($accent, -3) !default;
+$switch-hover-off-handle-gradient: lighten($base, 2%), $base !default;
+$switch-focus-box-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 
 @include exports('switch/component') {
     .switch-container,
     .switch-wrapper {
-        border-color: $widget-border-color;
+        border-color: $switch-border-color;
+
+        &:hover {
+            border-color: $switch-hover-border-color;
+        }
+    }
+
+    .switch-container {
+        box-shadow: $switch-box-shadow;
     }
 
     .switch-wrapper {
-        background-color: $switch-base;
+        background-color: $switch-background;
     }
 
     .switch-background {
         background-position: 4.3em 0;
         background-repeat: no-repeat;
-        background-color: $accent;
     }
 
     .switch-handle {
-        background: $background;
+        background-color: $switch-background;
+        background-image: linear-gradient($switch-handle-gradient);
+        border-color: $switch-border-color;
+        box-shadow: $switch-box-shadow;
+    }
+
+    .switch-on,
+    .switch-off {
+        color: $switch-background;
     }
 
     .switch-on {
-        color: $accent;
-    }
+        .switch-handle {
+            background: $accent;
+            border-color: $accent;
+        }
 
-    .switch-label-on,
-    .switch-label-off {
-        color: $selected-text-color;
+        &:hover {
+            .switch-handle {
+                background-color: $accent;
+                background-image: linear-gradient($switch-hover-on-handle-gradient);
+                border-color: $switch-hover-onhandle-border-color;
+            }
+        }
     }
 
     .switch-off {
-        color: $widget-border-color;
+        &:hover {
+            .switch-handle {
+                background-image: linear-gradient($switch-hover-off-handle-gradient);
+                border-color: $switch-hover-border-color;
+            }
+        }
     }
 
-    .switch-off .switch-handle {
-        box-shadow: 0 1px 0 1px $base, 0 -1px 0 1px $base;
+    .switch-label-on {
+        color: $switch-on-color;
+        background-color: $switch-background;
     }
 
+    .switch-label-off {
+        color: $switch-off-color;
+    }
+
+    .switch,
     .switch-wrapper,
-    .switch-container,
-    .switch-background {
-        border-radius: ($border-radius + 1px);
+    .switch-container {
+        border-radius: $switch-border-radius;
     }
 
     .switch-handle {
-        border-radius: $border-radius;
+        border-radius: 50%;
+    }
+
+    .switch {
+        &:focus {
+            box-shadow: $switch-focus-box-shadow;
+            outline: none;
+
+            .switch-handle {
+                background: $accent;
+                background-image: none;
+                border-color: $accent;
+            }
+        }
     }
 }

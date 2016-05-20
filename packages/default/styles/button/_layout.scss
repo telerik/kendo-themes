@@ -1,6 +1,6 @@
 @import '../icons/main';
 
-$button-padding: 2px 7px 2px !default;
+$button-padding: 2px 7px !default;
 
 @include exports('button/layout') {
 
@@ -30,11 +30,19 @@ $button-padding: 2px 7px 2px !default;
     .icon {
         vertical-align: text-bottom;
     }
+
+    > .image {
+        vertical-align: middle;
+    }
 }
 
 .button-icon {
-    padding-left: .4em;
-    padding-right: .4em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.button-icon > span {
+    width: 1em;
 }
 
 .button-icontext {
@@ -59,23 +67,32 @@ $button-padding: 2px 7px 2px !default;
 }
 
 .button-group {
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+
     .button {
+        border-width: 0;
+        position: relative;
+        margin-left: 1px;
+
+        &:before {
+            content: '';
+            height: 100%;
+            position: absolute;
+            width: 1px;
+            top: 0;
+            left: 0;
+            margin-left: -1px;
+        }
+
         &.group-start {
-            border-right-width: 0;
-        }
+            margin-left: 0;
 
-        &.group-end {
-            border-left-width: 0;
-        }
-
-        &.group-start + .group-end {
-            border-left-width: 1px;
-        }
-
-        &:last-child {
-            border-right-width: 1px;
+            &:before {
+                display: none;
+            }
         }
     }
 }
 }
-

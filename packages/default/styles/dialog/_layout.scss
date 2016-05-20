@@ -2,13 +2,12 @@
 
 @include exports('dialog/layout') {
 
-$window-titlebar-size: 2em;
-$window-padding: .58em;
+$window-titlebar-size: 3em;
+$window-padding: .93em;
 $window-z-index: 10001;
 
 .window {
-    border-style: solid;
-    border-width: 1px;
+    border-width: 0;
     display: inline-block;
     padding-top: $window-titlebar-size;
     position: absolute;
@@ -19,19 +18,21 @@ $window-z-index: 10001;
     }
 }
 
+$icon-sizing-factor: (.875 / .6);
+$icon-size: .6em;
+$icon-width: 1em * $icon-sizing-factor;
+
 .window-titlebar {
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    height: 1.1em;
+    height: $window-titlebar-size;
+    line-height: $window-titlebar-size;
     margin-top: -$window-titlebar-size;
     min-height: 1em;
-    padding: .4em 0;
     position: absolute;
     white-space: nowrap;
     width: 100%;
 
     .window-actions {
-        padding-top: .4em;
+        line-height: $window-titlebar-size;
         position: absolute;
         right: .4em;
         top: 0;
@@ -41,26 +42,32 @@ $window-z-index: 10001;
     .window-action {
         cursor: pointer;
         display: inline-block;
-        font-size: .6em;
-        line-height: 1em;
-        opacity: .7;
-        padding: .4em;
+        border: 0;
+        font-size: $icon-size;
+        width: $icon-width;
         text-decoration: none;
+        text-align: center;
         vertical-align: middle;
 
         .icon {
             margin: 0;
             vertical-align: top;
         }
+
+        &:hover,
+        &:focus {
+            font-size: ($icon-size * $icon-sizing-factor);
+            width: ($icon-width / $icon-sizing-factor);
+        }
     }
 }
 
 .window-title {
     cursor: default;
-    left: .44em;
+    left: $window-padding;
     overflow: hidden;
     position: absolute;
-    right: .44em;
+    right: $window-padding;
     text-overflow: ellipsis;
 
     .image {
@@ -191,7 +198,6 @@ $resizer-offset: -$resizer-size / 2;
 }
 
 .action-buttons {
-    border-top: 1px solid $widget-border-color;
     clear: both;
     padding: $window-padding;
     text-align: right;

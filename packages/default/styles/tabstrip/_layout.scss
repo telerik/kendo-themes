@@ -18,6 +18,10 @@
         user-select: none;
         z-index: 2;
     }
+
+    &.header {
+        border: 0;
+    }
 }
 
 .tabstrip-items {

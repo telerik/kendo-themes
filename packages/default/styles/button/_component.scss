@@ -1,41 +1,61 @@
 @import '../base/states';
 @import './layout';
 
-$button-border-color: darken($base, 10%) !default;
-$button-background: saturate($base, 1%) !default;
-$button-hover-border-color: darken($hover-background, 5%) !default;
-$button-active-border-color: darken($selected-background, 5%) !default;
+$button-border: lighten($base, 1%) !default;
+$button-background: $background !default;
+$button-hover-border: darken($button-border, 7%) !default;
+$button-active-border: rgba(0, 0, 0, .1) !default;
+$button-disabled-border: $button-border;
 
-$primary-background: lighten($accent, 7%) !default;
-$primary-border-color: lighten($accent, 3%) !default;
-$primary-hover-background: lighten($accent, 3%) !default;
-$primary-focused-box-shadow: 0 0 3px 0 $accent !default;
-$primary-active-background: desaturate($accent, 1%) !default;
-$primary-disabled-background: lighten($accent, 18%) !default;
+$button-gradient: linear-gradient(lighten($base, 5%), lighten($base, 3%)) !default;
+$button-hover-gradient: linear-gradient(lighten($base, 2%), $base) !default;
+$button-active-gradient: linear-gradient(lighten($base, 3%), lighten($base, 5%)) !default;
+
+$button-focused-box-shadow: 0 0 0 2px lighten($base, 3%) !default;
+$button-active-box-shadow: inset 0 3px 5px $base !default;
+
+$primary-background: $accent !default;
+$primary-border: $accent !default;
+$primary-focused-box-shadow: 0 0 0 2px lighten($primary-background, 23%) !default;
+$primary-active-background: $primary-background !default;
+$primary-active-box-shadow: inset 0 3px 5px desaturate($primary-background, 3%) !default;
+$primary-disabled-background: $primary-background !default;
+
+$primary-gradient: linear-gradient(adjust-hue($primary-background, 3), $primary-background) !default;
+$primary-hover-gradient: linear-gradient(adjust-hue($primary-background, 6), adjust-hue($primary-background, 3)) !default;
+$primary-active-gradient: linear-gradient($primary-background, adjust-hue($primary-background, 3)) !default;
+$primary-disabled-gradient: linear-gradient(adjust-hue($primary-background, 6), $primary-disabled-background) !default;
+
+$buttongroup-button-focused-box-shadow: inset 0 0 0 2px darken($base, 5%) !default;
+$buttongroup-button-hover-box-shadow: inset 0 0 0 1px darken($base, 6%) !default;
+$buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary-background, 2%) !default;
 
 @include exports('button/component') {
 
 .button {
-    background-color: $button-background;
-    border-color: $button-border-color;
     color: $normal-text-color;
+    background-color: $button-background;
+    background-image: $button-gradient;
+    border-color: $button-border;
     user-select: none;
 
     &:hover {
-        background-color: $hover-background;
-        border-color: $button-hover-border-color;
+        background-image: $button-hover-gradient;
+        border-color: $button-hover-border;
     }
 
     &:focus,
     &.state-focused {
+        border-color: $button-hover-border;
+        box-shadow: $button-focused-box-shadow;
         outline: 0;
     }
 
     &:active,
     &.state-active {
-        background-color: $selected-background;
-        border-color: $button-active-border-color;
-        color: $selected-text-color;
+        background-image: $button-active-gradient;
+        border-color: $button-active-border;
+        box-shadow: $button-active-box-shadow;
     }
 
     &[disabled],
@@ -43,61 +63,109 @@ $primary-disabled-background: lighten($accent, 18%) !default;
     &.state-disabled:hover,
     &.state-disabled:active,
     [disabled] &,
-    .state-disabled &,
-    .state-disabled &:hover,
-    .state-disabled &:active {
-        background-color: $button-background;
-        border-color: $disabled-border-color;
-        color: $disabled-border-color;
+    &.state-disabled:hover,
+    &.state-disabled:active {
+        background-image: $button-gradient;
+        border-color: $button-disabled-border;
+        opacity: .7;
+        box-shadow: none;
         cursor: default;
         outline: 0;
     }
 }
 
 .primary {
-    background-color: $primary-background;
-    border-color: $primary-border-color;
     color: $selected-text-color;
+    background-color: $primary-background;
+    background-image: $primary-gradient;
+    border-color: $primary-border;
 
     &:hover {
-        background-color: $primary-hover-background;
+        background-image: $primary-hover-gradient;
+        border-color: $primary-border;
     }
 
+    &:focus,
     &.state-focused {
-        border-color: darken($primary-background, 10%);
         box-shadow: $primary-focused-box-shadow;
     }
 
     &:active {
-        background-color: $primary-active-background;
+        background-image: $primary-active-gradient;
+        box-shadow: $primary-active-box-shadow;
     }
 
     &.state-disabled,
     &.state-disabled:hover,
+    .state-disabled:focus,
     .state-disabled:active {
-        background-color: $primary-disabled-background;
-        border-color: $primary-disabled-background;
         color: $selected-text-color;
+        background-color: $primary-disabled-background;
+        background-image: $primary-disabled-gradient;
+        border-color: $primary-disabled-background;
+        box-shadow: none;
     }
 }
 
+$inner-border-radius: 1px; /* $border-radius - 1 */
+
 .button-group {
-    border-radius: $border-radius;
+    border-color: $button-border;
+    border-radius: 2px; /* $border-radius */
 
     .button {
         border-radius: 0;
 
+        &:before {
+            background: $button-border;
+        }
+
+        &:focus {
+            box-shadow: $buttongroup-button-focused-box-shadow;
+        }
+
+        &.state-active {
+            color: $selected-text-color;
+            background-color: $primary-background;
+            background-image: $primary-gradient;
+            border-color: $primary-border;
+            box-shadow: none;
+
+            &:focus {
+                box-shadow: $buttongroup-selected-button-focused-box-shadow;
+            }
+
+            &:hover {
+                background-image: $primary-hover-gradient;
+                border-color: $primary-border;
+            }
+
+            &.state-active:before,
+            &.state-active + .button:before {
+                background: $primary-border;
+            }
+        }
+
         &.group-start {
-            border-radius: $border-radius 0 0 $border-radius;
+            border-radius: $inner-border-radius 0 0 $inner-border-radius;
         }
 
         &.group-end {
-            border-radius: 0 $border-radius $border-radius 0;
+            border-radius: 0 $inner-border-radius $inner-border-radius 0;
         }
 
         &.group-start:last-child {
             border-radius: $border-radius;
         }
+    }
+
+    &.state-disabled {
+        .button {
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
     }
 }
 }

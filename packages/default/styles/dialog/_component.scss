@@ -3,9 +3,10 @@
 @import '../animation/effect';
 @import './layout';
 
-$window-border-color: $widget-border-color !default;
+$window-header-color: $selected-text-color !default;
+$window-border-color: darken($background, 10%) !default;
 $window-shadow-color: rgba(0, 0, 0, .3) !default;
-$window-shadow: 0 0 4px 0 $window-shadow-color !default;
+$window-shadow: 0 3px 3px 0 rgba(0, 0, 0, .06) !default;
 $window-focused-box-shadow: 1px 1px 7px 1px $window-shadow-color !default;
 $window-border-radius: $border-radius !default;
 
@@ -13,28 +14,30 @@ $window-border-radius: $border-radius !default;
 
 .window {
     border-color: $window-border-color;
-    border-radius: $window-border-radius;
     box-shadow: $window-shadow;
 
     >.header {
-        border-color: $window-border-color;
+        color: $window-header-color;
+        background-color: $accent;
+
+        .window-action {
+            color: inherit;
+            background: transparent;
+        }
     }
 
     &.state-focused {
         box-shadow: $window-focused-box-shadow;
     }
-}
 
-.window-titlebar {
-    border-radius: $window-border-radius $window-border-radius 0 0;
-
-    .link {
-        border-radius: $border-radius;
+    .window-action {
+        &:active {
+            box-shadow: none;
+        }
     }
 }
 
 .window-content {
-    border-radius: 0 0 $window-border-radius $window-border-radius;
     overflow: hidden;
 }
 }

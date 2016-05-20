@@ -1,18 +1,19 @@
-$switch-border-width: 1px;
+$switch-size: 2.5em !default;
+$switch-handle-size: (.8 * $switch-size) !default;
 
 @include exports('switch/layout') {
+    $switch-border-width: 1px;
+
     .switch {
         cursor: pointer;
         display: inline-block;
-        font-size: 1rem;
-        height: 1.9em;
-        line-height: 1.76em;
+        font-size: .75em;
         overflow: hidden;
         position: relative;
         text-align: left;
         user-select: none;
         vertical-align: middle;
-        width: 4.2em;
+        width: (2 * $switch-size);
         outline: 0;
 
         [type=checkbox] {
@@ -28,20 +29,7 @@ $switch-border-width: 1px;
     }
 
     .switch-wrapper {
-        display: block;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .switch-background {
-        display: block;
-        margin: 0 1px 1px 0;
-        height: 100%;
-        width: 118%;
-        position: relative;
-        left: -95%;
-        background: currentcolor;
+        display: none; // TODO: do not render
     }
 
     .switch .switch-background {
@@ -50,51 +38,47 @@ $switch-border-width: 1px;
     }
 
     .switch-container {
-        top: 0;
-        left: 0;
-        position: absolute;
+        padding: (2 * $switch-border-width) 0;
         display: block;
-        height: 100%;
         width: 100%;
         overflow: hidden;
         background: transparent;
-        padding: 1px 0 1px 1px;
         border-width: 0;
+        transform: translateZ(0);
     }
 
     .switch-handle {
-        top: 0;
-        left: 0;
-        height: 100%;
+        position: relative;
+        width: $switch-handle-size;
+        height: $switch-handle-size;
         display: inline-block;
         background-color: currentcolor;
-        width: 1.6em;
-        margin: 0 4px 0 0;
+        margin: 0 6px 0 2px;
         border: $switch-border-width solid transparent;
         background-clip: padding-box;
         box-shadow: 0 1px 0 1px currentcolor, 0 -1px 0 1px currentcolor;
+        vertical-align: middle;
     }
 
     .switch-label-off {
-        left: 101%;
+        left: $switch-handle-size;
+        margin-left: 2px;
     }
 
     .switch-label-on {
-        left: -171%;
+        left: -$switch-handle-size;
     }
 
     .switch-label-on,
     .switch-label-off {
+        top: -$switch-border-width;
         display: block;
         text-align: center;
         position: absolute;
         text-transform: uppercase;
         text-shadow: none;
-        width: 170%;
-        font-size: 1em;
-        line-height: 1.76em;
+        line-height: $switch-handle-size;
         vertical-align: middle;
-        top: -2px;
     }
 
     .switch-container,

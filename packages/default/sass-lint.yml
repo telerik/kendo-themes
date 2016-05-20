@@ -4,7 +4,7 @@ options:
 files:
     include: 'styles/**/*.scss'
     ignore:
-        - 'styles/mixins/_import-once.scss'
+        - 'styles/mixins/*.scss'
 
 
 rules:

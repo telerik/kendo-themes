@@ -3,10 +3,10 @@
 @import '../icons/main';
 
 $slider-size: 200px !default;
-$slider-alt-size: 26px !default;
+$slider-alt-size: 30px !default;
 $slider-button-offset: 10px !default;
 $slider-button-size: ($slider-alt-size - 2) !default;
-$slider-track-thickness: 8px !default;
+$slider-track-thickness: 4px !default;
 
 @include exports('slider/layout') {
 
@@ -21,6 +21,7 @@ $transition-function: ease-out;
 
     .button {
         height: $slider-button-size;
+        line-height: $slider-button-size;
         margin: 0;
         min-width: 0;
         outline: 0;
@@ -30,6 +31,7 @@ $transition-function: ease-out;
 
         .icon {
             vertical-align: baseline;
+            line-height: $slider-button-size;
         }
     }
 
@@ -84,6 +86,7 @@ $transition-function: ease-out;
 
     .tick {
         text-align: right;
+        margin-left: 2px;
     }
 
     .slider-topleft .tick {
@@ -146,6 +149,7 @@ $transition-function: ease-out;
         float: left;
         height: 100%;
         text-align: center;
+        margin-top: 2px;
     }
 
     .tick { background-position: center -92px; }
@@ -244,14 +248,14 @@ $transition-function: ease-out;
 
     .slider-horizontal & {
         height: 14px;
-        top: -4px;
-        width: 13px;
+        top: -6px;
+        width: 14px;
         transition: left $transition-speed $transition-function;
     }
 
     .slider-vertical & {
-        height: 13px;
-        left: -4px;
+        height: 14px;
+        left: -6px;
         width: 14px;
         transition: bottom $transition-speed $transition-function;
     }

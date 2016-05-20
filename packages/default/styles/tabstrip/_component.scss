@@ -1,31 +1,56 @@
 @import '../base/states';
 @import './layout';
 
-$tabstrip-background-color: saturate($base, 4%) !default;
-$tabstrip-border-color: $widget-border-color !default;
+$tabstrip-tabs-color: $accent !default;
+$tabstrip-background-color: $background !default;
+$tabstrip-border-color: rgba(0, 0, 0, .08) !default;
+$tabstrip-hover-color: darken($tabstrip-tabs-color, 4%) !default;
+$tabstrip-active-color: lighten($normal-text-color, 22%) !default;
 $tabstrip-active-background-color: desaturate($background, 1%) !default;
 $tabstrip-active-border-color: darken($base, 29%) !default;
+$tabstrip-disabled-color: darken($background, 27%) !default;
 
 @include exports('tabstrip/component') {
 
 .tabstrip {
-    &.header {
-        background-color: $tabstrip-background-color;
+    background-color: $tabstrip-background-color;
+
+    .item {
+        border-color: transparent;
+
+        .link {
+            color: $tabstrip-tabs-color;
+        }
+
+        &:hover {
+            .link {
+                color: $tabstrip-hover-color;
+            }
+        }
+
+        &.state-active {
+            border-color: $tabstrip-border-color;
+
+            .link {
+                color: $tabstrip-active-color;
+            }
+        }
+
+        &.state-disabled {
+            .link {
+                color: $tabstrip-disabled-color;
+            }
+        }
+    }
+
+    .content {
+        color: $tabstrip-active-color;
         border-color: $tabstrip-border-color;
     }
 
     > .state-active,
     .tabstrip-items .state-active {
         background-color: $tabstrip-active-background-color;
-        border-color: $tabstrip-active-border-color;
-    }
-}
-
-.tabstrip-items .item {
-    border-radius: $border-radius $border-radius 0 0;
-
-    &.state-default:hover {
-        background-color: $hover-background;
     }
 }
 }
