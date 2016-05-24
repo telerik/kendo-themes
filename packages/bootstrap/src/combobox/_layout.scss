@@ -2,10 +2,30 @@
 
 	// Base
 	.k-combobox {
+		border-width: 0;
 		font-size: $font-size;
 		line-height: $form-line-height;
 		display: inline-block;
 		vertical-align: middle;
+
+		.k-input {
+			padding: 0;
+			width: 100%;
+			border: 0;
+			outline: 0;
+			color: inherit;
+			background: none;
+			font: inherit;
+			display: block;
+		}
+
+		.k-select {
+			border-width: 0 0 0 1px;
+			border-style: solid;
+		}
+	}
+
+	@include exports("dropdownwrap/layout") {
 
 		.k-dropdown-wrap {
 			padding: $input-padding-y $input-padding-x;
@@ -21,29 +41,22 @@
 				opacity: .65;
 				pointer-events: none;
 			}
-		}
 
-		.k-input {
-			padding: 0;
-			width: 100%;
-			border: 0;
-			outline: 0;
-			color: inherit;
-			background: none;
-			font: inherit;
-			display: block;
-		}
+			.k-input {
+				width: 100%;
+				height: $form-line-height * 1em;
+				display: block;
+			}
 
-		.k-select {
-			padding: $button-padding-y $button-padding-x;
-			border-width: 0 0 0 1px;
-			border-style: solid;
-			position: absolute;
-			top: 0;
-			right: 0;
+			.k-select {
+				padding: $button-padding-y $button-padding-x;
+				position: absolute;
+				top: 0;
+				right: 0;
 
-			.k-icon {
-				margin: 0 -.25rem;
+				.k-icon {
+					margin: 0 -.25rem;
+				}
 			}
 		}
 	}

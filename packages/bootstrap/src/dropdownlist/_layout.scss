@@ -2,10 +2,25 @@
 
 	// Base
 	.k-dropdown {
+		border-width: 0;
 		font-size: $font-size;
 		line-height: $form-line-height;
 		display: inline-block;
 		vertical-align: middle;
+
+		.k-select {
+			padding: $button-padding-y $button-padding-x;
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			.k-icon {
+				margin: 0 -.25rem;
+			}
+		}
+	}
+
+	@include exports("dropdownwrap/layout") {
 
 		.k-dropdown-wrap {
 			padding: $input-padding-y $input-padding-x;
@@ -21,22 +36,11 @@
 				opacity: .65;
 				pointer-events: none;
 			}
-		}
 
-		.k-input {
-			width: 100%;
-			height: $form-line-height * 1em;
-			display: block;
-		}
-
-		.k-select {
-			padding: $button-padding-y $button-padding-x;
-			position: absolute;
-			top: 0;
-			right: 0;
-
-			.k-icon {
-				margin: 0 -.25rem;
+			.k-input {
+				width: 100%;
+				height: $form-line-height * 1em;
+				display: block;
 			}
 		}
 	}
