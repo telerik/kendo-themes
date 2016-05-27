@@ -1,0 +1,199 @@
+@include exports('progressbar/layout') {
+    $progressbar-size: 1.9em;
+    $progressbar-altsize: 27em;
+
+    .progressbar {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        border-radius: $border-radius;
+
+        > .state-selected {
+            position: absolute;
+            border-style: solid;
+            border-width: 1px;
+            overflow: hidden;
+        }
+
+        > .reset {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: -1px;
+            top: -1px;
+            width: 100%;
+            height: 100%;
+            border-radius: $border-radius;
+            white-space: nowrap;
+        }
+    }
+
+    .progressbar-horizontal {
+        width: $progressbar-altsize;;
+        height: $progressbar-size;
+
+        > .state-selected {
+            left: -1px;
+            right: auto;
+            top: -1px;
+            height: 100%;
+            border-radius: $border-radius 0 0 $border-radius;
+        }
+
+        .item {
+            display: inline-block;
+            height: 100%;
+            border-style: solid;
+            margin-left: -1px;
+            border-width: 1px 0 1px 1px;
+
+            &.first {
+                margin-left: 0;
+            }
+
+            &.last {
+                border-right-width: 0;
+            }
+        }
+
+        &.progressbar-reverse {
+            > .state-selected {
+                left: auto;
+                right: -1px;
+                border-radius: 0 $border-radius $border-radius 0;
+            }
+
+            .item {
+                border-width: 1px 0 1px 1px;
+            }
+        }
+    }
+
+    .progressbar-vertical {
+        width: $progressbar-size;;
+        height: $progressbar-altsize;
+
+        > .state-selected {
+            left: -1px;
+            bottom: -1px;
+            width: 100%;
+            border-radius: 0 0 $border-radius $border-radius;
+        }
+
+        &.progressbar-reverse > .state-selected {
+            bottom: auto;
+            top: -1px;
+            border-radius: $border-radius $border-radius 0 0;
+        }
+    }
+
+    .progressbar > .state-selected.complete {
+        border-radius: $border-radius;
+    }
+
+    .progressbar-horizontal .first {
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+        border-left-width: 1px;
+    }
+
+    .progressbar-horizontal .last {
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+    }
+
+    .progressbar-horizontal.progressbar-reverse .last {
+        border-right-width: 1px;
+    }
+
+    .progressbar-horizontal .last.state-selected {
+        border-right-width: 1px;
+    }
+
+    .progressbar-vertical .item {
+        width: 100%;
+        border-style: solid;
+        border-width: 1px 1px 0;
+        margin-top: -1px;
+    }
+
+    .progressbar-vertical .item.first {
+        margin-top: 0;
+    }
+
+    .progressbar-vertical .item.last {
+        border-bottom-width: 0;
+    }
+
+    .progressbar-vertical .first {
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+    }
+
+    .progressbar-vertical .last {
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        border-bottom-width: 1px;
+    }
+
+    .progressbar-vertical.progressbar-reverse .item {
+        border-width: 0 1px 1px;
+    }
+
+    .progressbar-vertical.progressbar-reverse .first {
+        border-top-width: 1px;
+    }
+
+    .progress-status-wrap {
+        position: absolute;
+        top: -1px;
+        border: 1px solid transparent;
+        border-radius: $border-radius;
+        line-height: 2em;
+        width: 100%;
+        height: 100%;
+        left: -1px;
+        right: auto;
+        text-align: right;
+    }
+
+    .progressbar-horizontal.progressbar-reverse .progress-status-wrap {
+        left: auto;
+        right: -1px;
+        text-align: left;
+    }
+
+    .progressbar-vertical .progress-status-wrap {
+        top: auto;
+        bottom: -1px;
+    }
+
+    .progressbar-vertical.progressbar-reverse .progress-status-wrap {
+        bottom: auto;
+        top: -1px;
+    }
+
+    .progress-status {
+        display: inline-block;
+        padding: 0 .5em;
+        min-width: 10px;
+        white-space: nowrap;
+    }
+
+    .progressbar-vertical.progressbar-reverse .progress-status {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .progressbar-vertical .progress-status {
+        transform: rotate(-90deg) translateX(-100%);
+        transform-origin: 0 0;
+    }
+
+    .progressbar-vertical.progressbar-reverse .progress-status {
+        transform: rotate(90deg) translateX(-100%);
+        transform-origin: 0 100%;
+    }
+}

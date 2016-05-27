@@ -1,0 +1,30 @@
+@import './layout';
+@import './../base/states';
+
+$progressbar-base: saturate($base, 4%) !default;
+$progressbar-border: darken($base, 4%) !default;
+$progressbar-active-border: darken($accent, 4%) !default;
+
+@include exports('progressbar/component') {
+
+    .progressbar {
+        background-color: $progressbar-base;
+
+        .progress-status-wrap {
+            border-color: $progressbar-border;
+        }
+
+        .state-selected {
+            border-color: $progressbar-active-border;
+        }
+    }
+
+    .progressbar-indeterminate {
+        background: url('./../progressbar/images/indeterminate.gif');
+
+        .progress-status-wrap,
+        .state-selected {
+            display: none;
+        }
+    }
+}
