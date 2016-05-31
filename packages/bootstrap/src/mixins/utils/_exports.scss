@@ -7,6 +7,6 @@ $imported-modules: () !default;
 		@content;
 		/** #endregion */
 	} @else {
-		@warn 'Module `#{$name}` has already been imported.';
+		//@warn 'Module `#{$name}` has already been imported.';
 	}
 }

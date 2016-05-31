@@ -1,30 +1,33 @@
 @include exports("autocomplete/layout") {
 
 	.k-autocomplete {
-		padding: $input-padding-y $input-padding-x;
 		border-width: 1px;
 		border-style: solid;
 		font-size: $font-size;
-		line-height: $form-line-height;
-		display: inline-block;
-		vertical-align: middle;
+		line-height: $input-line-height;
 		box-sizing: border-box;
+		display: inline-flex;
+		flex-direction: row;
+		vertical-align: middle;
+		position: relative;
 
 		&.k-disabled {
-			cursor: $cursor-disabled;
-			opacity: 1;
-			pointer-events: none;
+			@include disabled;
 		}
 
 		.k-input {
-			padding: 0;
-			width: 100%;
+			padding: $input-padding-y $input-padding-x;
 			border: 0;
 			outline: 0;
 			color: inherit;
 			background: none;
 			font: inherit;
-			display: block;
+		}
+
+		.k-loading {
+			position: absolute;
+			top: $input-padding-x;
+			right: $input-padding-y;
 		}
 	}
 

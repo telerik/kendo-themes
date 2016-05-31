@@ -22,3 +22,8 @@
 		border-radius: $radius;
 	}
 }
+@mixin disabled {
+	cursor: $cursor-disabled;
+	opacity: .65;
+	pointer-events: none;
+}
