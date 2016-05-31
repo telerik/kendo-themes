@@ -7,40 +7,38 @@
 		line-height: $form-line-height;
 		display: inline-block;
 		vertical-align: middle;
-
-		.k-select {
-			padding: $button-padding-y $button-padding-x;
-			position: absolute;
-			top: 0;
-			right: 0;
-
-			.k-icon {
-				margin: 0 -.25rem;
-			}
-		}
 	}
 
 	@include exports("dropdownwrap/layout") {
 
 		.k-dropdown-wrap {
-			padding: $input-padding-y $input-padding-x;
-			padding-right: $input-padding-x + ($button-padding-x * 2);
+			padding: 0;
 			border-width: 1px;
 			border-style: solid;
 			box-sizing: border-box;
-			display: block;
+			display: flex;
+			flex-direction: row;
 			position: relative;
 
 			&.k-disabled {
-				cursor: $cursor-disabled;
-				opacity: .65;
-				pointer-events: none;
+				@include disabled;
 			}
 
 			.k-input {
-				width: 100%;
-				height: $form-line-height * 1em;
-				display: block;
+				padding: $input-padding-y $input-padding-x;
+				flex: 1;
+				display: flex;
+				align-items: center;
+			}
+
+			.k-select {
+				padding: $button-padding-y $button-padding-x;
+				display: flex;
+				align-items: center;
+
+				.k-icon {
+					margin: 0 -.25rem;
+				}
 			}
 		}
 	}
