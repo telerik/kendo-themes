@@ -1,18 +1,20 @@
 @include exports("tabstrip/layout") {
 
 	.k-tabstrip {
+		border-width: 0;
 
 		.k-tabstrip-items {
 			border-width: 0;
 			border-style: solid;
+			display: flex;
+			flex-direction: row;
+			position: relative;
 		}
 
 		.k-item {
 			margin: 0;
 			padding: 0;
 			border: 1px solid transparent;
-			display: inline-block;
-			vertical-align: top;
 			position: relative;
 		}
 		.k-item.k-tab-on-top {
@@ -74,11 +76,11 @@
 
 		.k-tabstrip-items {
 			border-right-width: 1px;
+			flex-direction: column;
 		}
 
 		.k-item {
 			margin-right: -1px;
-			display: block;
 		}
 		.k-item + .k-item {
 			margin-top: $nav-item-margin;
@@ -89,11 +91,11 @@
 
 		.k-tabstrip-items {
 			border-left-width: 1px;
+			flex-direction: column;
 		}
 
 		.k-item {
 			margin-left: -1px;
-			display: block;
 		}
 		.k-item + .k-item {
 			margin-top: $nav-item-margin;
