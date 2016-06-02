@@ -13,7 +13,8 @@
 		font-size: $font-size;
 		line-height: $line-height;
 		position: relative;
-		display: inline-block;
+		display: inline-flex;
+		flex-direction: column;
 		overflow: hidden;
 
 
@@ -47,25 +48,27 @@
 			.k-header,
 			.k-footer {
 				padding: $cell-padding-y;
-				position: relative;
 				text-align: center;
+				display: flex;
+				flex-direction: row;
+				position: relative;
+
+				.k-link {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
+				}
 			}
 
 
 			// Header
-			.k-header {
-
-				.k-icon {
-					vertical-align: middle;
-				}
-			}
+			.k-header {}
 
 
 			// Footer
 			.k-footer {
 				clear: both;
-
-				.k-nav-today {}
 			}
 
 
@@ -76,8 +79,6 @@
 				width: $form-line-height * 1em;
 				height: $form-line-height * 1em;
 				box-sizing: content-box;
-				position: absolute;
-				top: $cell-padding-y;
 			}
 			.k-nav-prev { left: $cell-padding-y; }
 			.k-nav-next { right: $cell-padding-y; }
@@ -85,8 +86,14 @@
 
 			// Fast navigation
 			.k-nav-fast {
-				width: 75%;
-				display: inline-block;
+				margin: 0 $cell-padding-y;
+				flex: 1;
+			}
+
+
+			// Today
+			.k-nav-today {
+				flex: 1;
 			}
 
 		}
