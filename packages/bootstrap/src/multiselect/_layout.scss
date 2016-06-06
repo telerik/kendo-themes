@@ -2,7 +2,7 @@
 
 	// Base
 	.k-multiselect {
-		padding: $input-padding-y $input-padding-x;
+		padding: $input-padding-y/2 $input-padding-x/2;
 		border-width: 1px;
 		border-style: solid;
 		font-size: $font-size;
@@ -13,49 +13,51 @@
 
 		&.k-disabled {
 			cursor: $cursor-disabled;
-			opacity: 1;
+			opacity: .65;
 			pointer-events: none;
 		}
 
-		.k-dropdown-wrap {}
+		.k-multiselect-wrap {}
 
 		ul {
-			margin: (-$input-padding-y/3) 0 (-$input-padding-y/3) (-$input-padding-x/2);
+			margin: (-$input-padding-y/4) 0 (-$input-padding-y/4) (-$input-padding-x/4);
 			padding: 0;
 			list-style: none;
-			display: inline-block;
+			vertical-align: top;
 		}
 		li {
+			margin: $input-padding-y/4 $input-padding-x/4;
+			float: left;
+		}
+
+		.k-button {
 			padding: $button-padding-y/4 $button-padding-x/2;
 			line-height: inherit;
-			display: inline-block;
+			cursor: pointer;
+			display: inline-flex;
+			flex-direction: row;
+			align-items: center;
 
-			> span {
-				display: inline-block;
-				vertical-align: middle;
-			}
 			.k-select {
 				margin-left: .4ex;
 				margin-right: -.4ex;
-				height: 16px;
+				display: inline-flex;
+				flex-direction: row;
+				align-items: center;
 			}
-			.k-icon {
-				vertical-align: top;
-			}
-		}
-		li + li {
-			margin-left: .4ex;
 		}
 
 		.k-input {
 			padding: 0;
-			width: 100%;
+			margin: $input-padding-y/2 $input-padding-x/4;
+			width: auto;
 			border: 0;
 			outline: 0;
 			color: inherit;
 			background: none;
 			font: inherit;
 			display: inline-block;
+			float: left;
 		}
 	}
 
