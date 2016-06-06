@@ -1,0 +1,11 @@
+{
+    "replace": "dist/*.css",
+    "use": [
+        "autoprefixer",
+        "postcss-class-prefix"
+    ],
+    "autoprefixer": {
+        "browsers": "last 2 versions"
+    },
+    "postcss-class-prefix": "k-"
+}

@@ -8,19 +8,23 @@
   ],
   "scripts": {
     "lint": "sass-lint -v -c ./sass-lint.yml",
-    "build": "node-sass -r styles/ -o dist/",
+    "build": "node-sass -r styles/ -o dist/ && postcss --config postcss-config.json --replace dist/*.css",
     "test": "npm run lint && npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "Telerik",
   "license": "Apache-2.0",
   "devDependencies": {
+    "autoprefixer": "^6.3.6",
     "cz-conventional-changelog": "^1.1.5",
     "ghooks": "^1.0.3",
     "node-sass": "^3.4.2",
+    "postcss": "^5.0.21",
+    "postcss-class-prefix": "^0.3.0",
+    "postcss-cli": "^2.5.2",
     "sass-lint": "^1.7.0",
-    "validate-commit-msg": "^1.1.1",
-    "semantic-release": "^4.3.5"
+    "semantic-release": "^4.3.5",
+    "validate-commit-msg": "^1.1.1"
   },
   "config": {
     "commitizen": {
