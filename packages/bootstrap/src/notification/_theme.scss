@@ -1,2 +1,28 @@
 @include exports("notification/theme") {
+
+	// Theme
+	.k-notification {
+		@include border-radius( $border-radius );
+	}
+	.k-notification-info {
+		border-color: $alert-info-border;
+		color: $alert-info-text;
+		background-color: $alert-info-bg;
+	}
+	.k-notification-success {
+		border-color: $alert-success-border;
+		color: $alert-success-text;
+		background-color: $alert-success-bg;
+	}
+	.k-notification-warning {
+		border-color: $alert-warning-border;
+		color: $alert-warning-text;
+		background-color: $alert-warning-bg;
+	}
+	.k-notification-error {
+		border-color: $alert-danger-border;
+		color: $alert-danger-text;
+		background-color: $alert-danger-bg;
+	}
+
 }

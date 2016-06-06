@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Notification</title>
+
+	<link rel="stylesheet" href="../dist/notification.css" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.web.min.js"></script>
+
+	<style type="text/css">
+	.w20p { display: inline-block; width: 20%; }
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Notification</legend>
+
+		<button id="append" class="k-button">append</button>
+		<div id="appendto">
+			<div class="k-widget k-notification k-notification-button k-notification-info">
+				<div class="k-notification-wrap">
+					<span class="k-icon k-i-note">info</span>Info<span class="k-icon k-i-close">Hide</span>
+				</div>
+			</div>
+			<div class="k-widget k-notification k-notification-success">
+				<div class="k-notification-wrap">
+					<span class="k-icon k-i-note">info</span>Success<span class="k-icon k-i-close">Hide</span>
+				</div>
+			</div>
+			<div class="k-widget k-notification k-notification-warning">
+				<div class="k-notification-wrap">
+					<span class="k-icon k-i-note">info</span>Warning<span class="k-icon k-i-close">Hide</span>
+				</div>
+			</div>
+			<div class="k-widget k-notification k-notification-error">
+				<div class="k-notification-wrap">
+					<span class="k-icon k-i-note">info</span>Error<span class="k-icon k-i-close">Hide</span>
+				</div>
+			</div>
+		</div>
+		<span id="staticNotification"></span>
+
+	</div>
+
+
+	<script>
+	var staticNotification = $("#staticNotification").kendoNotification({
+		appendTo: "#appendto"
+	}).data("kendoNotification");
+
+	$("#append").click(function(){
+		var d = new Date();
+
+		staticNotification.show(kendo.toString(d, 'HH:MM:ss.') + kendo.toString(d.getMilliseconds(), "000"), "info");
+
+		var container = $(staticNotification.options.appendTo);
+		container.scrollTop(container[0].scrollHeight);
+
+	});
+
+	$(".k-icon").html( "" )
+
+	$(".k-i-close").addClass("k-i-x");
+	</script>
+
+
+</body>
+</html>

@@ -1,6 +1,22 @@
 @include exports("notification/layout") {
 
-	// Local imports
-	//@import "../icons/icons";
+	// Base
+	.k-notification {}
+	.k-notification-wrap {
+		padding: $alert-padding;
+		white-space: nowrap;
+		cursor: default;
+		position: relative;
+
+		> .k-i-close {
+			position: absolute;
+			top: $alert-padding * 1.25;
+			right: $alert-padding / 2;
+			display: none;
+		}
+		.k-notification-button & .k-i-close {
+			display: block;
+		}
+	}
 
 }
