@@ -228,3 +228,15 @@
 	}
 
 }
+
+
+
+@include exports("slider/tooltip") {
+
+	.k-slider-tooltip {}
+	.k-slider-tooltip .k-callout-n,
+	.k-slider-tooltip .k-callout-s { margin-left: -5px; }
+	.k-slider-tooltip .k-callout-w,
+	.k-slider-tooltip .k-callout-e { margin-top: -5px; }
+
+}
