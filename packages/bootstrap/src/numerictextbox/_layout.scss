@@ -1,57 +1,63 @@
 @include exports("numerictextbox/layout") {
 
+	// Base
 	.k-numerictextbox {
-		width: 12.4em;
 		border-width: 0;
-		white-space: nowrap;
+		font-size: $font-size;
+		line-height: $form-line-height;
 		display: inline-block;
 		vertical-align: middle;
-		overflow: visible;
-		position: relative;
 
 		.k-input {
-			padding: 0;
-			width: 100%;
 			border: 0;
 			outline: 0;
 			color: inherit;
 			background: none;
 			font: inherit;
-			display: block;
 		}
 
 		.k-select {
-			width: 1.9em;
-			height: 100%;
-			padding: 0;
 			border-width: 0 0 0 1px;
 			border-style: solid;
-			border-color: inherit;
-			text-align: center;
-			position: absolute;
-			top: 0;
-			right: 0;
 		}
-		.k-link {
-			padding: $button-padding-y/4 0;
-			border-width: 0;
-			display: block;
-			line-height: $form-line-height / 2;
-			vertical-align: middle;
-		}
-		.k-icon {
-			height: 11px;
-		}
-	}
-	.k-numeric-wrap {
-		padding: $input-padding-y $input-padding-x;
-		padding-right: $input-padding-x + ($button-padding-x * 2);
-		border-width: 1px;
-		border-style: solid;
-		box-sizing: border-box;
-		display: block;
-		position: relative;
 	}
 
+	@include exports("numericwrap/layout") {
+
+		.k-numeric-wrap {
+			padding: 0;
+			border-width: 1px;
+			border-style: solid;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
+			position: relative;
+
+			&.k-disabled {
+				@include disabled;
+			}
+
+			.k-input {
+				padding: $input-padding-y $input-padding-x;
+				flex: 1;
+				display: flex;
+				align-items: center;
+			}
+
+			.k-select {
+				display: flex;
+				flex-direction: column;
+
+				.k-link {
+					padding: 0 $button-padding-x;
+				}
+
+				.k-icon {
+					margin: 0 -.25rem;
+				}
+
+			}
+		}
+	}
 
 }
