@@ -11,18 +11,14 @@
 		position: relative;
 
 		.k-picker-wrap {
-			padding: 0 (1rem + $button-padding-x) 0 0;
+			padding: 0;
 			border-width: 1px;
 			border-style: solid;
 			box-sizing: border-box;
-			display: block;
+			display: flex;
+			flex-direction: row;
 			position: relative;
 			overflow: hidden;
-		}
-		.k-picker-wrap:before {
-			content: "\a0";
-			display: inline-block;
-			width: 0;
 		}
 
 		.k-selected-color {
@@ -30,8 +26,6 @@
 			width: $form-line-height * 1em;
 			height: $form-line-height * 1em;
 			line-height: 0;
-			display: inline-block;
-			vertical-align: top;
 		}
 
 		.k-select {
@@ -40,11 +34,6 @@
 			border-style: solid;
 			border-color: inherit;
 			text-decoration: none;
-			display: inline-block;
-			vertical-align: top;
-			position: absolute;
-			top: 0;
-			right: 0;
 
 			.k-icon {}
 		}
@@ -56,6 +45,7 @@
 @include exports( "flatcolorpicker/layout" ) {
 
 	.k-flatcolorpicker {
+		width: 250px;
 
 		.k-selected-color {
 			background-image: url( "textures/transtexture.png" );
@@ -67,7 +57,7 @@
 			padding: $input-padding-y/2 $input-padding-x/2;
 			width: 70%;
 			border: 0;
-			font-family: Consolas,"Ubuntu Mono","Lucida Console","Courier New",monospace;
+			font-family: Consolas,"Ubuntu Mono","Lucida Console","Courier New", monospace;
 			line-height: $form-line-height;
 		}
 
@@ -106,17 +96,26 @@
 			display: block;
 
 			.k-draghandle {
-				width: 10px;
-				height: 10px;
 				border-width: 3px;
 				border-color: rgba( white, .9);
 				border-radius: 100%;
 				box-shadow: 0 1px 4px rgba( black, .9);
+				background-color: transparent;
 			}
 			.k-draghandle:hover,
 			.k-draghandle:focus {
 				border-color: white;
 				box-shadow: 0 1px 4px black;
+				background-color: transparent;
+			}
+		}
+		.k-hue-slider {
+			.k-slider-track {
+				background: linear-gradient( to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00 );
+			}
+			.k-slider-selection {
+				background: none;
+				opacity: 0;
 			}
 		}
 		.k-slider-horizontal {
