@@ -9,6 +9,21 @@
 
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.web.min.js"></script>
+	<style>
+	.slider-h {
+		width: 500px;
+	}
+	.slider-h .k-slider {
+		width: 100%;
+	}
+	.slider-v {
+		margin-top: 20px;
+		height: 240px;
+	}
+	.slider-v .k-slider {
+		height: 100%;
+	}
+	</style>
 </head>
 <body>
 
@@ -16,8 +31,12 @@
 	<div class="container">
 		<legend>Slider</legend>
 
-		<div style="width: 500px;">
+		<div class="slider-h">
 			<input id="slider" value="0" />
+		</div>
+
+		<div class="slider-v">
+			<input id="slider-v" value="0" />
 		</div>
 	</div>
 
@@ -26,15 +45,22 @@
 	$(document).ready(function() {
 
 		var slider = $("#slider").kendoSlider({
-			increaseButtonTitle: "Right",
-			decreaseButtonTitle: "Left",
-			min: -10,
+			min: 0,
 			max: 10,
-			smallStep: 2,
-			largeStep: 1
+			smallStep: 1,
+			largeStep: 2
+		}).data("kendoSlider");
+
+		var sliderv = $("#slider-v").kendoSlider({
+			orientation: "vertical",
+			min: 0,
+			max: 10,
+			smallStep: 1,
+			largeStep: 2
 		}).data("kendoSlider");
 
 		slider.wrapper.find( ".k-icon" ).html( "" );
+		sliderv.wrapper.find( ".k-icon" ).html( "" );
 
 	});
 	</script>
