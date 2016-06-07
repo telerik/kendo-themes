@@ -4,45 +4,42 @@
 		padding-top: 2em;
 		border-style: solid;
 		border-width: 1px;
-		@include border-radius($border-radius);
-		display: inline-block;
+		display: inline-flex;
+		flex-direction: column;
 		position: absolute;
 		z-index: 10001;
 	}
+
+	// Title bar
 	.k-window-titlebar {
 		padding: $modal-title-padding;
-		width: 100%;
 		min-height: 16px;
-		box-sizing: border-box;
-		font-size: 1.2em;
+		border-width: 0 0 1px;
+		border-style: solid;
 		white-space: nowrap;
-		border-bottom-width: 1px;
-		border-bottom-style: solid;
-		position: absolute;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
 	}
 	.k-window-title {
-		width: 100%;
+		margin: 0;
 		line-height: $modal-title-line-height;
 		text-overflow: ellipsis;
-		display: inline-block;
 		overflow: hidden;
 		cursor: default;
+		flex: 1;
 	}
+
+	// Actions
 	.k-window-actions {
-		padding-top: .3em;
-		white-space: nowrap;
-		position: absolute;
-		top: 0;
-		right: .3em;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
 	}
 	.k-window-action {
-		width: 16px;
-		height: 16px;
 		padding: 2px;
 		color: inherit;
 		text-decoration: none;
-		display: inline-block;
-		vertical-align: middle;
 		opacity: .2;
 
 		&.k-state-hover {
@@ -51,11 +48,14 @@
 			opacity: .5;
 		}
 	}
+
+	// Content
 	.k-window-content {
 		padding: $modal-inner-padding;
-		height: 100%;
 		outline: 0;
 		overflow: auto;
 		position: relative;
+		flex: 1;
 	}
+
 }
