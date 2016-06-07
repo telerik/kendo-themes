@@ -1,14 +1,18 @@
 @include exports("toolbar/layout") {
 
+	// Base
 	.k-toolbar {
 		padding: $button-padding-y/2;
 		border-width: 1px;
 		border-style: solid;
 		line-height: $form-line-height;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		position: relative;
 
-		> *,
-		.k-button {
-			display: inline-block;
+		> * {
+			display: inline-flex;
 		}
 		> * + * {
 			margin-left: $button-padding-y/2;
@@ -30,6 +34,17 @@
 			padding: $button-padding-y/2 $button-padding-x/2;
 			border-width: 1px;
 			border-style: solid;
+
+			&-icontext {
+				.k-icon {
+					margin: 0 ($button-padding-x/4) 0 (-$button-padding-x/4)
+				}
+			}
+			&-icon {
+				width: $form-line-height * 1em;
+				padding: $button-padding-y/2;
+				justify-content: center;
+			}
 		}
 
 		// Toggle button
@@ -39,6 +54,7 @@
 		.k-split-button {}
 		.k-split-button-arrow {
 			margin-left: -1px;
+			padding: $button-padding-y/2;
 		}
 
 		// Button group
@@ -48,6 +64,68 @@
 				margin-left: -1px;
 			}
 		}
+
+		// Overflow anchor
+		.k-overflow-anchor {
+			width: $form-line-height * 1em;
+			height: $form-line-height * 1em;
+			padding: $button-padding-y/2;
+			justify-content: center;
+			position: absolute;
+			top: $button-padding-y/2;
+			right: $button-padding-y/2;
+		}
+
+		// Separator
+		.k-separator {
+			width: 0;
+			border-width: 0 0 0 1px;
+			border-style: solid;
+			border-color: inherit;
+		}
+	}
+
+
+	.k-overflow-container {
+
+		// Group
+		.k-overflow-group {
+			padding-bottom: $spacer-y / 2;
+			margin-bottom: $spacer-y / 2;
+			border-width: 0 0 1px;
+			border-style: solid;
+			border-color: inherit;
+			flex-direction: column;
+
+			.k-button {
+				margin: 0;
+				border-radius: 0;
+			}
+		}
+
+		// Items
+		.k-overflow-button {
+			padding: 3px $dropdown-item-padding-x;
+			border-width: 0;
+			border-radius: 0;
+			display: flex;
+		}
+
+		// Hidden items
+		.k-overflow-hidden {
+			display: none;
+		}
+	}
+	.k-split-container {
+
+		// Items
+		.k-button {
+			padding: 3px $dropdown-item-padding-x;
+			border-width: 0;
+			border-radius: 0;
+			display: flex;
+		}
+
 	}
 
 }

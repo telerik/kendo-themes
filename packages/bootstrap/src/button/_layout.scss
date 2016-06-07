@@ -7,6 +7,9 @@
 		border-style: solid;
 		font-size: $font-size;
 		line-height: $form-line-height;
+		text-decoration: none;
+		white-space: nowrap;
+		display: inline-flex;
 
 		&[disabled],
 		&.k-disabled {
@@ -14,18 +17,28 @@
 			opacity: .65;
 			pointer-events: none;
 		}
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+
+		.k-icon {
+			align-self: center;
+		}
+
 	}
 
 
 	// Button group
 	.k-button-group {
 		white-space: nowrap;
-		display: inline-table;
+		display: inline-flex;
+		flex-direction: row;
 		vertical-align: middle;
 		position: relative;
 
 		.k-button {
-			display: table-cell;
 			position: relative;
 		}
 		.k-button + .k-button {
