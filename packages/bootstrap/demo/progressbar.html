@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Progressbar</title>
+
+	<link rel="stylesheet" href="../dist/progressbar.css" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.web.min.js"></script>
+
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+
+	<div class="container" id="inputs">
+		<legend>Progressbar</legend>
+		<div id="pb"></div>
+		<div id="pb-chunk"></div>
+		<br />
+		<div id="pbr"></div>
+		<div id="pbr-chunk"></div>
+		<hr />
+		<div id="pbv"></div>
+		<div id="pbv-chunk"></div>
+		<div id="pbvr"></div>
+		<div id="pbvr-chunk"></div>
+	</div>
+
+
+	<script>
+	(function() {
+
+		var pb = $("#pb").kendoProgressBar({
+			orientation: "horizontal"
+		}).data( "kendoProgressBar" );
+		var pbr = $("#pbr").kendoProgressBar({
+			orientation: "horizontal",
+			reverse: true
+		}).data( "kendoProgressBar" );
+
+		var pbChunk = $("#pb-chunk").kendoProgressBar({
+			orientation: "horizontal",
+			type: "chunk",
+			min: 0,
+			max: 10
+		}).data( "kendoProgressBar" );
+		var pbrChunk = $("#pbr-chunk").kendoProgressBar({
+			orientation: "horizontal",
+			reverse: true,
+			type: "chunk",
+			min: 0,
+			max: 10
+		}).data( "kendoProgressBar" );
+
+		var pbv = $("#pbv").kendoProgressBar({
+			orientation: "vertical"
+		}).data( "kendoProgressBar" );
+		var pbvr = $("#pbvr").kendoProgressBar({
+			orientation: "vertical",
+			reverse: true,
+		}).data( "kendoProgressBar" );
+
+		var pbvChunk = $("#pbv-chunk").kendoProgressBar({
+			orientation: "vertical",
+			type: "chunk",
+			min: 0,
+			max: 10
+		}).data( "kendoProgressBar" );
+		var pbvrChunk = $("#pbvr-chunk").kendoProgressBar({
+			orientation: "vertical",
+			reverse: true,
+			type: "chunk",
+			min: 0,
+			max: 10
+		}).data( "kendoProgressBar" );
+
+		pb.value(10);
+		pbr.value(10);
+		pbChunk.value(4);
+		pbrChunk.value(4);
+
+		pbv.value(20);
+		pbvr.value(98);
+		pbvChunk.value(6);
+		pbvrChunk.value(6);
+
+	})();
+	</script>
+
+
+</body>
+</html>

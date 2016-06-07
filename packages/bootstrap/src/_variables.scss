@@ -22,6 +22,7 @@ $border-radius: 4px;
 // Font
 $font-size: get-bootstrap-var( font-size );
 $line-height: get-bootstrap-var( line-height );
+$line-height-em: $line-height * 1em;
 
 
 // Panel
