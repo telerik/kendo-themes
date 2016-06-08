@@ -20,7 +20,7 @@
 	<div class="container">
 		<legend>Dropdown</legend>
 
-		<select id="size" placeholder="Select size..." style="width: 100%;" >
+		<select id="size" placeholder="Select..." data-role="dropdownlist">
 			<option>X-Small</option>
 			<option>Small</option>
 			<option>Medium</option>
@@ -28,11 +28,24 @@
 			<option>X-Large</option>
 			<option>2X-Large</option>
 		</select>
+
+		<span class="k-compact">
+			<select placeholder="Select..." data-role="dropdownlist">
+				<option>X-Small</option>
+				<option>Small</option>
+				<option>Medium</option>
+				<option>Large</option>
+				<option>X-Large</option>
+				<option>2X-Large</option>
+			</select>
+		</span>
 	</div>
 
 
 	<script>
-	$("#size").kendoDropDownList().data("kendoDropDownList").open();
+	kendo.init( $(".container") );
+	$(".k-icon").html( "" );
+	$("#size").data("kendoDropDownList").open();
 	</script>
 
 
