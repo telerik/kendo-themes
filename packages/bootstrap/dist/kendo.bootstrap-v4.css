@@ -712,7 +712,8 @@
   line-height: 1.25;
   text-decoration: none;
   white-space: nowrap;
-  display: inline-flex; }
+  display: inline-flex;
+  vertical-align: middle; }
   .k-button[disabled], .k-button.k-disabled {
     cursor: not-allowed;
     opacity: .65;
@@ -721,6 +722,9 @@
     text-decoration: none; }
   .k-button .k-icon {
     align-self: center; }
+  .k-compact .k-button, .k-button.k-compact {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem; }
 
 .k-button-group {
   white-space: nowrap;

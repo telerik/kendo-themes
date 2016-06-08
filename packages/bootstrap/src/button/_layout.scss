@@ -10,12 +10,11 @@
 		text-decoration: none;
 		white-space: nowrap;
 		display: inline-flex;
+		vertical-align: middle;
 
 		&[disabled],
 		&.k-disabled {
-			cursor: $cursor-disabled;
-			opacity: .65;
-			pointer-events: none;
+			@include disabled;
 		}
 
 		&:hover,
@@ -25,6 +24,15 @@
 
 		.k-icon {
 			align-self: center;
+		}
+
+
+
+
+		// Compact
+		@include compact {
+			padding: $button-padding-y-sm $button-padding-x-sm;
+			font-size: $font-size-sm;
 		}
 
 	}

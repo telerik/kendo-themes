@@ -38,15 +38,19 @@ $bootstrap-vars: (
 	header-padding-x: $card-spacer-x,
 	header-padding-y: $card-spacer-y,
 
+	form-line-height: $btn-line-height,
+
 	button-padding-x: $btn-padding-x,
 	button-padding-y: $btn-padding-y,
+	button-padding-x-sm: $btn-padding-x-sm,
+	button-padding-y-sm: $btn-padding-y-sm,
 	button-line-height: $btn-line-height,
 
 	input-padding-x: $input-padding-x,
 	input-padding-y: $input-padding-y,
+	input-padding-x-sm: $input-padding-x-sm,
+	input-padding-y-sm: $input-padding-y-sm,
 	input-line-height: $input-line-height,
-
-	form-line-height: $btn-line-height,
 
 
 	// Colors
