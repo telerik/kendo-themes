@@ -20,7 +20,7 @@
 	<div class="container">
 		<legend>Combobox</legend>
 
-		<select id="size" placeholder="Select size..." style="width: 100%;" >
+		<select id="size" placeholder="Select..." data-role="combobox">
 			<option>X-Small</option>
 			<option>Small</option>
 			<option>Medium</option>
@@ -28,11 +28,24 @@
 			<option>X-Large</option>
 			<option>2X-Large</option>
 		</select>
+
+		<span class="k-compact">
+			<select placeholder="Select..." data-role="combobox">
+				<option>X-Small</option>
+				<option>Small</option>
+				<option>Medium</option>
+				<option>Large</option>
+				<option>X-Large</option>
+				<option>2X-Large</option>
+			</select>
+		</span>
 	</div>
 
 
 	<script>
-	$("#size").kendoComboBox().data("kendoComboBox").open();
+	kendo.init( $(".container") );
+	$(".k-icon").html( "" );
+	$("#size").data("kendoComboBox").open();
 	</script>
 
 

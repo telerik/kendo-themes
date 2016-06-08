@@ -20,6 +20,22 @@
 			border-width: 0 0 0 1px;
 			border-style: solid;
 		}
+
+
+
+
+		// Compact
+		@include compact {
+			font-size: $font-size-sm;
+
+			.k-input {
+				padding: $input-padding-y-sm $input-padding-x-sm;
+			}
+
+			.k-select {
+				padding: $button-padding-y-sm;
+			}
+		}
 	}
 
 	@include exports("dropdownwrap/layout") {
@@ -32,6 +48,7 @@
 			display: flex;
 			flex-direction: row;
 			position: relative;
+			cursor: default;
 
 			&.k-disabled {
 				@include disabled;
@@ -40,18 +57,14 @@
 			.k-input {
 				padding: $input-padding-y $input-padding-x;
 				flex: 1;
-				display: flex;
-				align-items: center;
 			}
 
 			.k-select {
-				padding: $button-padding-y $button-padding-x;
+				padding: $button-padding-y;
 				display: flex;
 				align-items: center;
 
-				.k-icon {
-					margin: 0 -.25rem;
-				}
+				.k-icon {}
 			}
 		}
 	}
