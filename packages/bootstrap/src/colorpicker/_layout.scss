@@ -19,6 +19,10 @@
 			flex-direction: row;
 			position: relative;
 			overflow: hidden;
+
+			&.k-disabled {
+				@include disabled;
+			}
 		}
 
 		.k-selected-color {
@@ -29,13 +33,28 @@
 		}
 
 		.k-select {
-			padding: $button-padding-y $button-padding-x/2;
+			padding: $button-padding-y;
 			border-width: 0 0 0 1px;
 			border-style: solid;
-			border-color: inherit;
-			text-decoration: none;
+			display: flex;
+			align-items: center;
 
 			.k-icon {}
+		}
+
+
+
+
+		// Compact
+		@include compact {
+			font-size: $font-size-sm;
+
+			.k-selected-color {
+				padding: $input-padding-y-sm;
+			}
+			.k-select {
+				padding: $button-padding-y-sm;
+			}
 		}
 	}
 
@@ -45,6 +64,7 @@
 @include exports( "flatcolorpicker/layout" ) {
 
 	.k-flatcolorpicker {
+		padding: 0;
 		width: 250px;
 
 		.k-selected-color {
@@ -52,12 +72,11 @@
 			background-position: 50% 50%;
 			text-align: right;
 		}
-		input.k-color-value {
-			margin: 0;
-			padding: $input-padding-y/2 $input-padding-x/2;
+		.k-color-value {
+			padding: $input-padding-y-sm $input-padding-x-sm;
 			width: 70%;
 			border: 0;
-			font-family: Consolas,"Ubuntu Mono","Lucida Console","Courier New", monospace;
+			font-family: Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace;
 			line-height: $form-line-height;
 		}
 

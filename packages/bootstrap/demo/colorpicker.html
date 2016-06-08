@@ -16,10 +16,16 @@
 	<div class="container">
 		<legend>Colorpicker</legend>
 
+		<input id="picker" />
+		<span class="k-compact"><input id="picker-compact" /></span>
+	</div>
+
+
+	<div class="container">
+		<legend>Palette</legend>
+
 		<div id="palette"></div>
 		<div id="flat"></div>
-		<hr>
-		<input id="picker" />
 	</div>
 
 
@@ -46,6 +52,7 @@
 		buttons: false
 	}).data( "kendoColorPicker" );
 	//picker.open();
+	$("#picker-compact").kendoColorPicker();
 	</script>
 
 
