@@ -3,7 +3,7 @@
 	// Layout
 	.k-popup {
 		margin: 0;
-		padding: 5px 0;
+		padding: $popup-padding-y 0;
 		border-width: 1px;
 		border-style: solid;
 		font-size: $font-size;
@@ -53,6 +53,6 @@
 	}
 	.k-list .k-state-focused {
 		border-color: $node-selected-border;
-		box-shadow: inset 0 0 5px $node-selected-border;
+		box-shadow: inset 0 0 5px rgba( $node-selected-border, .5 );
 	}
 }

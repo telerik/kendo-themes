@@ -2,10 +2,10 @@
 
 	// Layout
 	.k-drag-clue {
-		padding: $base-padding-y/2 $base-padding-x/2;
-		border-style: solid;
+		padding: $padding-y-sm $padding-x-sm;
 		border-width: 1px;
-		font-size: .9em;
+		border-style: solid;
+		font-size: $font-size-sm;
 		white-space: nowrap;
 		overflow: hidden;
 		cursor: default;

@@ -12,19 +12,45 @@
 $bootstrap-vars: (
 
 	// Metrics
-	button-padding-x: $btn-padding-x,
-	button-padding-y: $btn-padding-y,
-	button-line-height: $btn-line-height,
-	input-padding-x: $input-padding-x,
-	input-padding-y: $input-padding-y,
-	input-line-height: $input-line-height,
+	spacer: $spacer,
+	spacer-x: $spacer-x,
+	spacer-y: $spacer-y,
+
+	border-radius: $border-radius,
+	border-radius-sm: $border-radius-sm,
+	border-radius-lg: $border-radius-lg,
+
+	font-size: $font-size-base,
+	font-size-xs: $font-size-xs,
+	font-size-sm: $font-size-sm,
+	font-size-lg: $font-size-lg,
+
+	line-height: $line-height-base,
+	line-height-sm: $line-height-sm,
+	line-height-lg: $line-height-lg,
+
+	panel-padding-x: $card-spacer-x,
+	panel-padding-y: null,
+
+	popup-padding-x: null,
+	popup-padding-y: $dropdown-padding-y,
+
 	header-padding-x: $card-spacer-x,
 	header-padding-y: $card-spacer-y,
 
-	// Font size
-	font-size: $font-size-base,
-	line-height: $line-height-base,
+	button-padding-x: $btn-padding-x,
+	button-padding-y: $btn-padding-y,
+	button-line-height: $btn-line-height,
+
+	input-padding-x: $input-padding-x,
+	input-padding-y: $input-padding-y,
+	input-line-height: $input-line-height,
+
 	form-line-height: $btn-line-height,
+
+
+	// Colors
+
 
 	// Panel
 	panel-color: $body-color,

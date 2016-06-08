@@ -1,13 +1,38 @@
 @import "bootstrap-map";
 
 // Metrics
-$base-padding-x: 10px;
-$base-padding-y: 4px;
+$spacer: get-bootstrap-var( spacer );
+$spacer-x: get-bootstrap-var( spacer-x );
+$spacer-y: get-bootstrap-var( spacer-y );
 
-$panel-padding-x: 10px;
-$panel-padding-y: 10px;
-$popup-padding-x: 10px;
-$popup-padding-y: 10px;
+$padding-x: $spacer;
+$padding-y: $spacer / 2;
+$padding-x-sm: $padding-x / 2;
+$padding-y-sm: $padding-y / 2;
+$padding-x-lg: $padding-x * 1.5;
+$padding-y-lg: $padding-y * 1.5;
+
+$border-radius: get-bootstrap-var( border-radius );
+$border-radius-sm: get-bootstrap-var( border-radius-sm );
+$border-radius-lg: get-bootstrap-var( border-radius-lg );
+
+$font-size: get-bootstrap-var( font-size );
+$font-size-xs: get-bootstrap-var( font-size-xs );
+$font-size-sm: get-bootstrap-var( font-size-sm );
+$font-size-lg: get-bootstrap-var( font-size-lg );
+
+$line-height: get-bootstrap-var( line-height );
+$line-height-sm: get-bootstrap-var( line-height-sm );
+$line-height-lg: get-bootstrap-var( line-height-lg );
+$line-height-em: $line-height * 1em;
+$line-height-rem: $line-height * 1rem;
+
+$panel-padding-x: get-bootstrap-var( panel-padding-x );
+$panel-padding-y: get-bootstrap-var( panel-padding-y );
+
+$popup-padding-x: get-bootstrap-var( popup-padding-x );
+$popup-padding-y: get-bootstrap-var( popup-padding-y );
+
 $header-padding-x: get-bootstrap-var( header-padding-x );
 $header-padding-y: get-bootstrap-var( header-padding-y );
 
@@ -17,12 +42,7 @@ $input-padding-x: get-bootstrap-var( input-padding-x );
 $input-padding-y: get-bootstrap-var( input-padding-y );
 $form-line-height: get-bootstrap-var( form-line-height );
 
-$border-radius: 4px;
 
-// Font
-$font-size: get-bootstrap-var( font-size );
-$line-height: get-bootstrap-var( line-height );
-$line-height-em: $line-height * 1em;
 
 
 // Panel
