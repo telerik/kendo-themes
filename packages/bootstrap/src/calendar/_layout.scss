@@ -1,10 +1,5 @@
 @include exports("calendar/layout") {
 
-	// Local variables
-	$cell-padding-x: $button-padding-x/2;
-	$cell-padding-y: $button-padding-y/2;
-
-
 	// Base
 	.k-calendar {
 		width: 16.917em;
@@ -28,9 +23,9 @@
 		}
 
 		th {
-			border-bottom-style: solid;
-			border-bottom-width: 1px;
-			padding: $cell-padding-y $cell-padding-x $cell-padding-y 0;
+			border-width: 0 0 1px;
+			border-style: solid;
+			padding: $cell-padding-y $cell-padding-x;
 			font-weight: normal;
 			cursor: default;
 		}
