@@ -19,14 +19,14 @@
 
 	<div class="container">
 		<legend>Autocomplete</legend>
-		<hr />
-		<span class="w20p k-autocomplete"><input type="text" class="k-input" /></span>
-		<span class="w20p k-autocomplete k-state-hover"><input type="text" class="k-input" /></span>
-		<span class="w20p k-autocomplete k-state-focused"><input type="text" class="k-input" /></span>
-		<span class="w20p k-autocomplete k-disabled"><input type="text" class="k-input" /></span>
-		<input id="countries" style="width: 100%;" />
-		<hr />
+
+		<input id="countries" />
 		<input id="fruits" />
+
+		<hr />
+
+		<input id="countries-compact" class="k-compact" />
+		<span class="k-compact"><input id="fruits-compact" /></span>
 	</div>
 
 
@@ -84,7 +84,7 @@
 		"Vatican City"
 	];
 
-	$("#countries").kendoAutoComplete({
+	$("#countries, #countries-compact").kendoAutoComplete({
 		dataSource: data,
 		filter: "startswith",
 		placeholder: "Select country...",
@@ -92,7 +92,7 @@
 	});
 
 
-	$("#fruits").kendoAutoComplete({
+	$("#fruits, #fruits-compact").kendoAutoComplete({
 		dataSource: [ "Apples", "Oranges" ]
 	}).data("kendoAutoComplete").search( "A" );
 	</script>

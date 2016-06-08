@@ -689,6 +689,13 @@
     position: absolute;
     top: 0.75rem;
     right: 0.5rem; }
+  .k-compact .k-autocomplete, .k-autocomplete.k-compact {
+    font-size: 0.875rem; }
+    .k-compact .k-autocomplete .k-input, .k-autocomplete.k-compact .k-input {
+      padding: 0.25rem 0.5rem; }
+    .k-compact .k-autocomplete .k-loading, .k-autocomplete.k-compact .k-loading {
+      top: 0.5rem;
+      right: 0.25rem; }
 
 /** #endregion */
 /** #region autocomplete/theme */
