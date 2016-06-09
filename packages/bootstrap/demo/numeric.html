@@ -20,14 +20,14 @@
 	<div class="container">
 		<legend>Numeric</legend>
 
-		<input id="numeric" type="number" value="30" min="0" max="100" style="width: 100%;" />
+		<input type="number" value="30" min="0" max="100" data-role="numerictextbox" />
+		<span class="k-compact"><input type="number" value="30" min="0" max="100" data-role="numerictextbox" /></span>
 	</div>
 
 
 	<script>
-	var numeric = $("#numeric").kendoNumericTextBox().data( "kendoNumericTextBox" );
-
-	numeric.wrapper.find( ".k-icon" ).html( "" );
+	kendo.init( $(".container") );
+	$( ".k-icon" ).html( "" );
 	</script>
 
 

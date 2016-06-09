@@ -1422,6 +1422,12 @@
   .k-numerictextbox .k-select {
     border-width: 0 0 0 1px;
     border-style: solid; }
+  .k-compact .k-numerictextbox, .k-numerictextbox.k-compact {
+    font-size: 0.875rem; }
+    .k-compact .k-numerictextbox .k-input, .k-numerictextbox.k-compact .k-input {
+      padding: 0.25rem 0.5rem; }
+    .k-compact .k-numerictextbox .k-select .k-link, .k-numerictextbox.k-compact .k-select .k-link {
+      padding: 0 0.25rem; }
 
 /** #region numericwrap/layout */
 .k-numeric-wrap {
@@ -1441,9 +1447,7 @@
     display: flex;
     flex-direction: column; }
     .k-numeric-wrap .k-select .k-link {
-      padding: 0 1rem; }
-    .k-numeric-wrap .k-select .k-icon {
-      margin: 0 -.25rem; }
+      padding: 0 0.5rem; }
 
 /** #endregion */
 /** #endregion */

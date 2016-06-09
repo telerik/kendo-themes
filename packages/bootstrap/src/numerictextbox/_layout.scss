@@ -20,6 +20,22 @@
 			border-width: 0 0 0 1px;
 			border-style: solid;
 		}
+
+
+
+
+		// Compact
+		@include compact {
+			font-size: $font-size-sm;
+
+			.k-input {
+				padding: $input-padding-y-sm $input-padding-x-sm;
+			}
+
+			.k-select {
+				.k-link { padding: 0 $button-padding-y-sm }
+			}
+		}
 	}
 
 	@include exports("numericwrap/layout") {
@@ -45,12 +61,10 @@
 				flex-direction: column;
 
 				.k-link {
-					padding: 0 $button-padding-x;
+					padding: 0 $button-padding-y;
 				}
 
-				.k-icon {
-					margin: 0 -.25rem;
-				}
+				.k-icon {}
 
 			}
 		}
