@@ -4,6 +4,7 @@
 	<meta charset="UTF-8" />
 	<title>Pickers</title>
 
+	<link rel="stylesheet" href="../dist/calendar.css" />
 	<link rel="stylesheet" href="../dist/datetime.css" />
 	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
 
@@ -22,28 +23,25 @@
 <body>
 
 
-	<div class="container" id="inputs">
+	<div class="container">
 		<legend>Date / Time / DateTime</legend>
-		<span class="w20p input-group"><input type="text" class="form-control" /><span class="input-group-addon dropdown-toggle"></span></span>
-		<span class="w20p input-group"><input type="text" class="form-control" /><span class="input-group-addon dropdown-toggle"></span></span>
-		<span class="w20p input-group"><input type="text" class="form-control focused" /><span class="input-group-addon dropdown-toggle"></span></span>
-		<span class="w20p input-group"><input type="text" class="form-control" disabled="disabled" /><span class="input-group-addon dropdown-toggle"></span></span>
+		<input type="date" data-role="datepicker" />
+		<input type="date" data-role="timepicker" />
+		<input type="date" data-role="datetimepicker" />
+
 		<hr />
-		<span class="w20p k-datepicker"><span class="k-picker-wrap"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-calendar"></span></span></span></span>
-		<span class="w20p k-datepicker"><span class="k-picker-wrap k-state-hover"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-calendar"></span></span></span></span>
-		<span class="w20p k-datepicker"><span class="k-picker-wrap k-state-active"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-calendar"></span></span></span></span>
-		<span class="w20p k-datepicker"><span class="k-picker-wrap k-dsiabled"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-calendar"></span></span></span></span>
-		<hr />
-		<span class="w20p k-timepicker"><span class="k-picker-wrap"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-clock"></span></span></span></span>
-		<span class="w20p k-timepicker"><span class="k-picker-wrap k-state-hover"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-clock"></span></span></span></span>
-		<span class="w20p k-timepicker"><span class="k-picker-wrap k-state-active"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-clock"></span></span></span></span>
-		<span class="w20p k-timepicker"><span class="k-picker-wrap k-dsiabled"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-clock"></span></span></span></span>
-		<hr />
-		<span class="w20p k-datetimepicker"><span class="k-picker-wrap"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-calendar"></span><span class="k-icon k-i-clock"></span></span></span></span>
-		<span class="w20p k-datetimepicker"><span class="k-picker-wrap k-state-hover"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-calendar"></span><span class="k-icon k-i-clock"></span></span></span></span>
-		<span class="w20p k-datetimepicker"><span class="k-picker-wrap k-state-active"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-calendar"></span><span class="k-icon k-i-clock"></span></span></span></span>
-		<span class="w20p k-datetimepicker"><span class="k-picker-wrap k-dsiabled"><input type="text" class="k-input" /><span class="k-select"><span class="k-icon k-i-calendar"></span><span class="k-icon k-i-clock"></span></span></span></span>
+
+		<span class="k-compact"><input type="date" data-role="datepicker" /></span>
+		<span class="k-compact"><input type="date" data-role="timepicker" /></span>
+		<span class="k-compact"><input type="date" data-role="datetimepicker" /></span>
 	</div>
+
+
+	<script>
+	kendo.init( $(".container") );
+
+	$( ".k-icon" ).html( "" );
+	</script>
 
 
 </body>

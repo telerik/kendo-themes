@@ -133,4 +133,16 @@
 
 	}
 
+
+
+
+	// Calendar container
+	.k-calendar-container {
+		padding: 0;
+
+		.k-calendar {
+			border-width: 0;
+		}
+	}
+
 }

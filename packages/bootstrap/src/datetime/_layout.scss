@@ -2,49 +2,113 @@
 
 	// Shared
 	.k-picker-wrap {
-		padding: $input-padding-y $input-padding-x;
-		padding-right: $input-padding-x + ($button-padding-x * 2);
+		padding: 0;
 		border-width: 1px;
 		border-style: solid;
 		box-sizing: border-box;
-		display: block;
+		display: flex;
+		flex-direction: row;
 		position: relative;
+		cursor: default;
 
 		.k-input {
-			padding: 0;
-			width: 100%;
+			padding: $input-padding-y $input-padding-x;
 			border: 0;
 			outline: 0;
 			color: inherit;
 			background: none;
 			font: inherit;
-			display: block;
+			flex: 1;
 		}
 
 		.k-select {
-			padding: $button-padding-y $button-padding-x;
+			padding: $button-padding-y;
 			border-width: 0 0 0 1px;
 			border-style: solid;
-			position: absolute;
-			top: 0;
-			right: 0;
+			display: flex;
+			align-items: center;
 
-			.k-icon {
-				margin: 0 -.25rem;
-			}
-			.k-icon + .k-icon {
-				margin-left: 1em;
-			}
+			.k-icon {}
+			.k-icon + .k-icon {}
 		}
 	}
 
 	// Datepicker
-	.k-datepicker {}
+	.k-datepicker {
+		border-width: 0;
+		font-size: $font-size;
+		line-height: $form-line-height;
+		display: inline-block;
+		vertical-align: middle;
+
+
+		// Compact
+		@include compact {
+			font-size: $font-size-sm;
+
+			.k-input {
+				padding: $input-padding-y-sm $input-padding-x-sm;
+			}
+
+			.k-select {
+				padding: $button-padding-y-sm;
+			}
+		}
+	}
 
 	// Timepicker
-	.k-timepicker {}
+	.k-timepicker {
+		border-width: 0;
+		font-size: $font-size;
+		line-height: $form-line-height;
+		display: inline-block;
+		vertical-align: middle;
+
+
+		// Compact
+		@include compact {
+			font-size: $font-size-sm;
+
+			.k-input {
+				padding: $input-padding-y-sm $input-padding-x-sm;
+			}
+
+			.k-select {
+				padding: $button-padding-y-sm;
+			}
+		}
+	}
 
 	// Datetimepicker
-	.k-datetimepicker {}
+	.k-datetimepicker {
+		border-width: 0;
+		font-size: $font-size;
+		line-height: $form-line-height;
+		display: inline-block;
+		vertical-align: middle;
+
+
+		.k-select {
+			padding: 0;
+
+			.k-icon {
+				padding: $button-padding-y;
+			}
+		}
+
+
+		// Compact
+		@include compact {
+			font-size: $font-size-sm;
+
+			.k-input {
+				padding: $input-padding-y-sm $input-padding-x-sm;
+			}
+
+			.k-select .k-icon {
+				padding: $button-padding-y-sm;
+			}
+		}
+	}
 
 }
