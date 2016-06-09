@@ -37,10 +37,6 @@
 			position: relative;
 			cursor: default;
 
-			&.k-disabled {
-				@include disabled;
-			}
-
 			.k-input {
 				padding: $input-padding-y $input-padding-x;
 				flex: 1;

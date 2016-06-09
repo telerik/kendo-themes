@@ -19,10 +19,6 @@
 			flex-direction: row;
 			position: relative;
 			overflow: hidden;
-
-			&.k-disabled {
-				@include disabled;
-			}
 		}
 
 		.k-selected-color {

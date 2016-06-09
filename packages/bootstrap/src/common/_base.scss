@@ -47,11 +47,8 @@
 		line-height: $line-height;
 
 		&:disabled,
-		&[disabled],
-		&.k-disabled {
-			cursor: $cursor-disabled;
-			opacity: .65;
-			pointer-events: none;
+		&[disabled] {
+			@include disabled;
 		}
 	}
 
@@ -66,12 +63,10 @@
 
 @include exports( "common/states" ) {
 
-
-	// Theme
+	// Disabled
 	.k-disabled,
 	.k-state-disabled {
-		opacity: .65;
-		pointer-events: none;
+		@include disabled;
 	}
 
 }

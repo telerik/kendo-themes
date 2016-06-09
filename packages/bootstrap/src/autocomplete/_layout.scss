@@ -1,19 +1,13 @@
 @include exports("autocomplete/layout") {
 
+	// Layout
 	.k-autocomplete {
-		border-width: 1px;
-		border-style: solid;
-		font-size: $font-size;
 		line-height: $form-line-height;
 		box-sizing: border-box;
 		display: inline-flex;
 		flex-direction: row;
 		vertical-align: middle;
 		position: relative;
-
-		&.k-disabled {
-			@include disabled;
-		}
 
 		.k-input {
 			padding: $input-padding-y $input-padding-x;

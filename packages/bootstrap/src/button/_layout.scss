@@ -12,9 +12,8 @@
 		display: inline-flex;
 		vertical-align: middle;
 
-		&[disabled],
-		&.k-disabled {
-			@include disabled;
+		&[disabled] {
+			@extend %disabled;
 		}
 
 		&:hover,

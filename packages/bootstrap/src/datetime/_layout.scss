@@ -10,12 +10,6 @@
 		display: block;
 		position: relative;
 
-		&.k-disabled {
-			cursor: $cursor-disabled;
-			opacity: .65;
-			pointer-events: none;
-		}
-
 		.k-input {
 			padding: 0;
 			width: 100%;

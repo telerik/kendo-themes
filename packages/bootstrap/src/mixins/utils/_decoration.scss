@@ -27,3 +27,6 @@
 	opacity: .65;
 	pointer-events: none;
 }
+%disabled {
+	@include disabled;
+}
