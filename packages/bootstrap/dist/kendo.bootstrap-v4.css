@@ -1348,15 +1348,14 @@
 
 /** #region multiselect/layout */
 .k-multiselect {
-  padding: 0.25rem 0.375rem;
+  padding: 0.25rem;
   line-height: 1.25;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box; }
+  .k-multiselect .k-multiselect-wrap {
+    margin: -0.125rem 0; }
   .k-multiselect ul {
-    margin: -0.125rem 0 -0.125rem -0.1875rem;
-    padding: 0;
-    list-style: none;
     vertical-align: top; }
   .k-multiselect li {
     margin: 0.125rem 0.1875rem;
@@ -1385,6 +1384,9 @@
     font: inherit;
     display: inline-block;
     float: left; }
+  .k-compact .k-multiselect, .k-multiselect.k-compact {
+    padding: 0.125rem;
+    font-size: 0.875rem; }
 
 /** #endregion */
 /** #region multiselect/theme */

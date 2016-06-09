@@ -21,7 +21,7 @@
 		<legend>Multiselect</legend>
 
 		<hr />
-		<div class="w20p k-multiselect">
+		<div class="w20p k-widget k-multiselect">
 			<div class="k-multiselect-wrap k-floatwrap">
 				<ul class="k-reset">
 					<li class="k-button"><span>Item</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
@@ -31,13 +31,22 @@
 				<span class="k-icon k-loading k-loading-hidden"></span>
 			</div>
 		</div>
-		<span class="w20p k-multiselect k-state-hover"><input type="text" class="k-input" /></span>
-		<span class="w20p k-multiselect k-state-focus"><input type="text" class="k-input" /></span>
-		<span class="w20p k-multiselect k-disabled"><input type="text" class="k-input" /></span>
+		<span class="w20p k-widget k-multiselect k-state-hover"><input type="text" class="k-input" /></span>
+		<span class="w20p k-widget k-multiselect k-state-focus"><input type="text" class="k-input" /></span>
+		<span class="w20p k-widget k-multiselect k-disabled"><input type="text" class="k-input" /></span>
 
 		<hr />
 
-		<select id="size" multiple="multiple" placeholder="Select size..." style="width: 100%;">
+		<select id="size" multiple="multiple" placeholder="Select size..." style="width: 500px">
+			<option>X-Small</option>
+			<option>Small</option>
+			<option selected="selected">Medium</option>
+			<option>Large</option>
+			<option disabled="disabled">X-Large</option>
+			<option>2X-Large</option>
+		</select>
+
+		<select id="size-compact" multiple="multiple" placeholder="Select..." style="width: 500px">
 			<option>X-Small</option>
 			<option>Small</option>
 			<option selected="selected">Medium</option>
@@ -50,13 +59,16 @@
 
 	<script>
 	var multiselect = $("#size").kendoMultiSelect().data("kendoMultiSelect");
-	multiselect.open();
+
+	$("#size-compact").kendoMultiSelect().data("kendoMultiSelect").wrapper.addClass( "k-compact" );
 
 
 	// Prep
 	window.setTimeout(function() {
 
 		multiselect.wrapper.find( ".k-i-close" ).html("").addClass( "k-i-x" );
+
+		multiselect.open();
 
 		multiselect.list.find("li").eq(1).addClass( "k-state-hover" );
 		multiselect.list.find("li").eq(2).addClass( "k-state-selected" );
