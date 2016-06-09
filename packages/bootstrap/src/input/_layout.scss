@@ -13,9 +13,16 @@
 		&:disabled,
 		&[disabled],
 		&.k-disabled {
-			cursor: $cursor-disabled;
-			opacity: 1;
-			pointer-events: none;
+			@include disabled;
+		}
+
+
+
+
+		// Compact
+		@include compact {
+			font-size: $font-size-sm;
+			padding: $input-padding-y-sm $input-padding-x-sm;
 		}
 	}
 

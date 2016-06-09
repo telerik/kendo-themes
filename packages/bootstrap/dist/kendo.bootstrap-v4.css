@@ -1246,8 +1246,11 @@
   vertical-align: middle; }
   .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
     cursor: not-allowed;
-    opacity: 1;
+    opacity: .65;
     pointer-events: none; }
+  .k-compact .k-textbox, .k-textbox.k-compact {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem; }
 
 /** #endregion */
 /** #region input/theme */
