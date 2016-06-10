@@ -2,7 +2,6 @@
 
 	.k-colorpicker {
 		border-width: 0;
-		font-size: $font-size;
 		line-height: $form-line-height;
 		white-space: normal;
 		display: inline-block;
@@ -43,7 +42,6 @@
 
 		// Compact
 		@include compact {
-			font-size: $font-size-sm;
 
 			.k-selected-color {
 				padding: $input-padding-y-sm;

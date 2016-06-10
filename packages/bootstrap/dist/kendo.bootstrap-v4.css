@@ -141,6 +141,8 @@
     cursor: not-allowed;
     opacity: .65;
     pointer-events: none; }
+  .k-compact .k-widget, .k-widget.k-compact {
+    font-size: 0.875rem; }
 
 /** #endregion */
 /** #region common/states */
@@ -703,13 +705,11 @@
     position: absolute;
     top: 0.75rem;
     right: 0.5rem; }
-  .k-compact .k-autocomplete, .k-autocomplete.k-compact {
-    font-size: 0.875rem; }
-    .k-compact .k-autocomplete .k-input, .k-autocomplete.k-compact .k-input {
-      padding: 0.25rem 0.5rem; }
-    .k-compact .k-autocomplete .k-loading, .k-autocomplete.k-compact .k-loading {
-      top: 0.5rem;
-      right: 0.25rem; }
+  .k-compact .k-autocomplete .k-input, .k-autocomplete.k-compact .k-input {
+    padding: 0.25rem 0.5rem; }
+  .k-compact .k-autocomplete .k-loading, .k-autocomplete.k-compact .k-loading {
+    top: 0.5rem;
+    right: 0.25rem; }
 
 /** #endregion */
 /** #region autocomplete/theme */
@@ -1074,7 +1074,6 @@
 /** #region colorpicker/layout */
 .k-colorpicker {
   border-width: 0;
-  font-size: 1rem;
   line-height: 1.25;
   white-space: normal;
   display: inline-block;
@@ -1101,12 +1100,10 @@
     border-style: solid;
     display: flex;
     align-items: center; }
-  .k-compact .k-colorpicker, .k-colorpicker.k-compact {
-    font-size: 0.875rem; }
-    .k-compact .k-colorpicker .k-selected-color, .k-colorpicker.k-compact .k-selected-color {
-      padding: 0.25rem; }
-    .k-compact .k-colorpicker .k-select, .k-colorpicker.k-compact .k-select {
-      padding: 0.25rem; }
+  .k-compact .k-colorpicker .k-selected-color, .k-colorpicker.k-compact .k-selected-color {
+    padding: 0.25rem; }
+  .k-compact .k-colorpicker .k-select, .k-colorpicker.k-compact .k-select {
+    padding: 0.25rem; }
 
 /** #endregion */
 /** #region flatcolorpicker/layout */
@@ -1228,7 +1225,6 @@
 /** #region combobox/layout */
 .k-combobox {
   border-width: 0;
-  font-size: 1rem;
   line-height: 1.25;
   display: inline-block;
   vertical-align: middle; }
@@ -1241,12 +1237,10 @@
   .k-combobox .k-select {
     border-width: 0 0 0 1px;
     border-style: solid; }
-  .k-compact .k-combobox, .k-combobox.k-compact {
-    font-size: 0.875rem; }
-    .k-compact .k-combobox .k-input, .k-combobox.k-compact .k-input {
-      padding: 0.25rem 0.5rem; }
-    .k-compact .k-combobox .k-select, .k-combobox.k-compact .k-select {
-      padding: 0.25rem; }
+  .k-compact .k-combobox .k-input, .k-combobox.k-compact .k-input {
+    padding: 0.25rem 0.5rem; }
+  .k-compact .k-combobox .k-select, .k-combobox.k-compact .k-select {
+    padding: 0.25rem; }
 
 /** #region dropdownwrap/layout */
 .k-dropdown-wrap {
@@ -1297,16 +1291,13 @@
 /** #region dropdownlist/layout */
 .k-dropdown {
   border-width: 0;
-  font-size: 1rem;
   line-height: 1.25;
   display: inline-block;
   vertical-align: middle; }
-  .k-compact .k-dropdown, .k-dropdown.k-compact {
-    font-size: 0.875rem; }
-    .k-compact .k-dropdown .k-input, .k-dropdown.k-compact .k-input {
-      padding: 0.25rem 0.5rem; }
-    .k-compact .k-dropdown .k-select, .k-dropdown.k-compact .k-select {
-      padding: 0.25rem; }
+  .k-compact .k-dropdown .k-input, .k-dropdown.k-compact .k-input {
+    padding: 0.25rem 0.5rem; }
+  .k-compact .k-dropdown .k-select, .k-dropdown.k-compact .k-select {
+    padding: 0.25rem; }
 
 /** #endregion */
 /** #region dropdownlist/theme */
@@ -1402,8 +1393,7 @@
     display: inline-block;
     float: left; }
   .k-compact .k-multiselect, .k-multiselect.k-compact {
-    padding: 0.125rem;
-    font-size: 0.875rem; }
+    padding: 0.125rem; }
 
 /** #endregion */
 /** #region multiselect/theme */
@@ -1426,7 +1416,6 @@
 /** #region numerictextbox/layout */
 .k-numerictextbox {
   border-width: 0;
-  font-size: 1rem;
   line-height: 1.25;
   display: inline-block;
   vertical-align: middle; }
@@ -1439,12 +1428,10 @@
   .k-numerictextbox .k-select {
     border-width: 0 0 0 1px;
     border-style: solid; }
-  .k-compact .k-numerictextbox, .k-numerictextbox.k-compact {
-    font-size: 0.875rem; }
-    .k-compact .k-numerictextbox .k-input, .k-numerictextbox.k-compact .k-input {
-      padding: 0.25rem 0.5rem; }
-    .k-compact .k-numerictextbox .k-select .k-link, .k-numerictextbox.k-compact .k-select .k-link {
-      padding: 0 0.25rem; }
+  .k-compact .k-numerictextbox .k-input, .k-numerictextbox.k-compact .k-input {
+    padding: 0.25rem 0.5rem; }
+  .k-compact .k-numerictextbox .k-select .k-link, .k-numerictextbox.k-compact .k-select .k-link {
+    padding: 0 0.25rem; }
 
 /** #region numericwrap/layout */
 .k-numeric-wrap {
@@ -1943,10 +1930,8 @@
   .k-treeview .k-image,
   .k-treeview .k-sprite {
     margin-right: 3px; }
-  .k-compact .k-treeview, .k-treeview.k-compact {
-    font-size: 0.875rem; }
-    .k-compact .k-treeview .k-in, .k-treeview.k-compact .k-in {
-      padding: 0.25rem 0.5rem; }
+  .k-compact .k-treeview .k-in, .k-treeview.k-compact .k-in {
+    padding: 0.25rem 0.5rem; }
 
 /** #endregion */
 /** #region treeview/theme */

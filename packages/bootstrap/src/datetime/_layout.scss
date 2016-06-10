@@ -36,7 +36,6 @@
 	// Datepicker
 	.k-datepicker {
 		border-width: 0;
-		font-size: $font-size;
 		line-height: $form-line-height;
 		display: inline-block;
 		vertical-align: middle;
@@ -44,7 +43,6 @@
 
 		// Compact
 		@include compact {
-			font-size: $font-size-sm;
 
 			.k-input {
 				padding: $input-padding-y-sm $input-padding-x-sm;
@@ -59,7 +57,6 @@
 	// Timepicker
 	.k-timepicker {
 		border-width: 0;
-		font-size: $font-size;
 		line-height: $form-line-height;
 		display: inline-block;
 		vertical-align: middle;
@@ -67,7 +64,6 @@
 
 		// Compact
 		@include compact {
-			font-size: $font-size-sm;
 
 			.k-input {
 				padding: $input-padding-y-sm $input-padding-x-sm;
@@ -82,7 +78,6 @@
 	// Datetimepicker
 	.k-datetimepicker {
 		border-width: 0;
-		font-size: $font-size;
 		line-height: $form-line-height;
 		display: inline-block;
 		vertical-align: middle;
@@ -99,7 +94,6 @@
 
 		// Compact
 		@include compact {
-			font-size: $font-size-sm;
 
 			.k-input {
 				padding: $input-padding-y-sm $input-padding-x-sm;
