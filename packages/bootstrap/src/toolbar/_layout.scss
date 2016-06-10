@@ -2,9 +2,7 @@
 
 	// Base
 	.k-toolbar {
-		padding: $button-padding-y/2;
-		border-width: 1px;
-		border-style: solid;
+		padding: $padding-y-sm;
 		line-height: $form-line-height;
 		display: flex;
 		flex-direction: row;
@@ -15,65 +13,44 @@
 			display: inline-flex;
 		}
 		> * + * {
-			margin-left: $button-padding-y/2;
+			margin-left: $padding-y-sm;
+		}
+		> .k-overflow-anchor + * {
+			margin-left: 0;
 		}
 
-		.k-toolbar .k-button,
-		.k-toolbar .k-button-group,
-		.k-toolbar .k-separator,
-		.k-toolbar .k-split-button,
-		.k-toolbar .k-textbox,
-		.k-toolbar .k-widget,
-		.k-toolbar label {
+		.k-button,
+		.k-button-group,
+		.k-separator,
+		.k-split-button,
+		.k-textbox,
+		.k-widget,
+		label {
 			vertical-align: middle;
 		}
 
 
 		// Button
-		.k-button {
-			padding: $button-padding-y/2 $button-padding-x/2;
-			border-width: 1px;
-			border-style: solid;
-
-			&-icontext {
-				.k-icon {
-					margin: 0 ($button-padding-x/4) 0 (-$button-padding-x/4)
-				}
-			}
-			&-icon {
-				width: $form-line-height * 1em;
-				padding: $button-padding-y/2;
-				justify-content: center;
-			}
-		}
+		.k-button {}
 
 		// Toggle button
 		.k-toggle-button {}
 
 		// Split button
 		.k-split-button {}
-		.k-split-button-arrow {
-			margin-left: -1px;
-			padding: $button-padding-y/2;
-		}
 
 		// Button group
-		.k-button-group {
-			> .k-button {}
-			> .k-button + .k-button {
-				margin-left: -1px;
-			}
-		}
+		.k-button-group {}
 
 		// Overflow anchor
 		.k-overflow-anchor {
 			width: $form-line-height * 1em;
 			height: $form-line-height * 1em;
-			padding: $button-padding-y/2;
+			padding: $button-padding-y;
 			justify-content: center;
 			position: absolute;
-			top: $button-padding-y/2;
-			right: $button-padding-y/2;
+			top: $padding-y-sm;
+			right: $padding-y-sm;
 		}
 
 		// Separator
@@ -82,6 +59,35 @@
 			border-width: 0 0 0 1px;
 			border-style: solid;
 			border-color: inherit;
+		}
+
+
+
+
+		// Compact
+		@include compact {
+
+
+			// Button
+			.k-button {}
+
+			// Toggle button
+			.k-toggle-button {}
+
+			// Split button
+			.k-split-button {}
+
+			// Button group
+			.k-button-group {}
+
+			// Overflow anchor
+			.k-overflow-anchor {
+				padding: $button-padding-y-sm;
+			}
+
+			// Separator
+			.k-separator {}
+
 		}
 	}
 

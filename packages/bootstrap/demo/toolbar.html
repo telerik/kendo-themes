@@ -17,16 +17,16 @@
 <body>
 
 
-	<div class="container" id="toolbar">
+	<div class="container">
 		<legend>Toolbar</legend>
 		<hr />
-		<div id="toolbar-target">
-		</div>
+		<div id="toolbar-target"></div>
+		<div id="toolbar-compact" class="k-compact"></div>
 	</div>
 
 
 	<script>
-	$("#toolbar-target").kendoToolBar({
+	var tbData = {
 		items: [
 			{ type: "button", text: "Button" },
 			{ type: "button", text: "Toggle Button", togglable: true },
@@ -72,7 +72,9 @@
 				overflow: "always"
 			}
 		]
-	});
+	}
+	$("#toolbar-target").kendoToolBar(tbData);
+	$("#toolbar-compact").kendoToolBar(tbData);
 	</script>
 
 

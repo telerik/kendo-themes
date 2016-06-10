@@ -26,14 +26,57 @@
 		}
 
 
+		// Button variants
+		&-icontext {
+			.k-icon {
+				margin: 0 ($button-padding-x/2) 0 (-$button-padding-x/2);
+			}
+		}
+		&-icon {
+			width: $form-line-height * 1em;
+			padding: $button-padding-y;
+			justify-content: center;
+		}
+
+
 
 
 		// Compact
 		@include compact {
 			padding: $button-padding-y-sm $button-padding-x-sm;
 			font-size: $font-size-sm;
+
+			&-icontext {
+				.k-icon {
+					margin: 0 ($button-padding-x-sm/2) 0 (-$button-padding-x-sm/2);
+				}
+			}
+			&-icon {
+				padding: $button-padding-y-sm;
+			}
 		}
 
+	}
+
+
+	// Toggle button
+	.k-toggle-button {}
+
+
+	// Split button
+	.k-split-button {
+
+		.k-split-button-arrow {
+			margin-left: -1px;
+			padding: $button-padding-y;
+		}
+
+
+		@include compact {
+			.k-split-button-arrow {
+				padding: $button-padding-y-sm;
+			}
+		}
 	}
 
 

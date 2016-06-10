@@ -762,9 +762,26 @@
     text-decoration: none; }
   .k-button .k-icon {
     align-self: center; }
+  .k-button-icontext .k-icon {
+    margin: 0 0.5rem 0 -0.5rem; }
+  .k-button-icon {
+    width: 1.25em;
+    padding: 0.5rem;
+    justify-content: center; }
   .k-compact .k-button, .k-button.k-compact {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem; }
+    .k-compact .k-button-icontext .k-icon, .k-button.k-compact-icontext .k-icon {
+      margin: 0 0.25rem 0 -0.25rem; }
+    .k-compact .k-button-icon, .k-button.k-compact-icon {
+      padding: 0.25rem; }
+
+.k-split-button .k-split-button-arrow {
+  margin-left: -1px;
+  padding: 0.5rem; }
+
+.k-compact .k-split-button .k-split-button-arrow, .k-split-button.k-compact .k-split-button-arrow {
+  padding: 0.25rem; }
 
 .k-button-group {
   white-space: nowrap;
@@ -1787,8 +1804,6 @@
 /** #region toolbar/layout */
 .k-toolbar {
   padding: 0.25rem;
-  border-width: 1px;
-  border-style: solid;
   line-height: 1.25;
   display: flex;
   flex-direction: row;
@@ -1798,33 +1813,20 @@
     display: inline-flex; }
   .k-toolbar > * + * {
     margin-left: 0.25rem; }
-  .k-toolbar .k-toolbar .k-button,
-  .k-toolbar .k-toolbar .k-button-group,
-  .k-toolbar .k-toolbar .k-separator,
-  .k-toolbar .k-toolbar .k-split-button,
-  .k-toolbar .k-toolbar .k-textbox,
-  .k-toolbar .k-toolbar .k-widget,
-  .k-toolbar .k-toolbar label {
+  .k-toolbar > .k-overflow-anchor + * {
+    margin-left: 0; }
+  .k-toolbar .k-button,
+  .k-toolbar .k-button-group,
+  .k-toolbar .k-separator,
+  .k-toolbar .k-split-button,
+  .k-toolbar .k-textbox,
+  .k-toolbar .k-widget,
+  .k-toolbar label {
     vertical-align: middle; }
-  .k-toolbar .k-button {
-    padding: 0.25rem 0.5rem;
-    border-width: 1px;
-    border-style: solid; }
-    .k-toolbar .k-button-icontext .k-icon {
-      margin: 0 0.25rem 0 -0.25rem; }
-    .k-toolbar .k-button-icon {
-      width: 1.25em;
-      padding: 0.25rem;
-      justify-content: center; }
-  .k-toolbar .k-split-button-arrow {
-    margin-left: -1px;
-    padding: 0.25rem; }
-  .k-toolbar .k-button-group > .k-button + .k-button {
-    margin-left: -1px; }
   .k-toolbar .k-overflow-anchor {
     width: 1.25em;
     height: 1.25em;
-    padding: 0.25rem;
+    padding: 0.5rem;
     justify-content: center;
     position: absolute;
     top: 0.25rem;
@@ -1834,6 +1836,8 @@
     border-width: 0 0 0 1px;
     border-style: solid;
     border-color: inherit; }
+  .k-compact .k-toolbar .k-overflow-anchor, .k-toolbar.k-compact .k-overflow-anchor {
+    padding: 0.25rem; }
 
 .k-overflow-container .k-overflow-group {
   padding-bottom: 0.5rem;
