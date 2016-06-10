@@ -42,6 +42,11 @@
 			border-width: 0;
 			border-style: solid;
 		}
+
+
+		@include compact {
+			font-size: $spacer-y * .75;
+		}
 	}
 
 
