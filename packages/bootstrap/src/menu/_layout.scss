@@ -29,7 +29,7 @@
 			.k-i-arrow-e {
 				position: absolute;
 				top: 50%;
-				margin-top: -8px;
+				margin-top: -.5em;
 				right: 2px;
 			}
 		}
@@ -42,6 +42,9 @@
 			list-style: none;
 			display: none;
 			position: absolute;
+		}
+		.k-menu-group .k-menu-group {
+			padding: 0;
 		}
 		.k-menu-group .k-item {
 			border-width: 0;
@@ -56,6 +59,21 @@
 		// Images
 		.k-image,
 		.k-menu .k-sprite {}
+
+
+
+
+		// Compact
+		@include compact {
+
+			.k-link {
+				padding: $padding-y-sm $padding-x-sm;
+			}
+
+			.k-menu-group .k-item > .k-link {
+				padding: ($padding-y-sm / 2) $padding-x-sm;
+			}
+		}
 
 	}
 
