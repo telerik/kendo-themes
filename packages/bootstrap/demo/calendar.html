@@ -9,6 +9,12 @@
 
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.web.min.js"></script>
+
+	<style>
+	.k-calendar {
+		vertical-align: top;
+	}
+	</style>
 </head>
 <body>
 
@@ -16,12 +22,13 @@
 	<div class="container" id="calendar">
 		<legend>Calendar</legend>
 
-		<div id="calendar-target"></div>
+		<div data-role="calendar"></div>
+		<div data-role="calendar" class="k-compact"></div>
 	</div>
 
 
 	<script>
-	$("#calendar-target").kendoCalendar();
+	kendo.init( $(".container") );
 	</script>
 
 
