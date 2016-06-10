@@ -11,40 +11,62 @@
 	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.web.min.js"></script>
 
 	<style type="text/css">
-	.w20p { display: inline-block; width: 20%; }
+	.k-panelbar {
+		width: 300px;
+		display: inline-block;
+		vertical-align: top;
+	}
 	</style>
 </head>
 <body>
 
 
-	<div class="container" id="inputs">
+	<div class="container">
 		<legend>Panelbar</legend>
 		<hr />
-		<ul id="panelbar-images" class="k-widget k-reset k-header k-panelbar">
-			<li class="k-item k-state-default k-first">
-				<span class="k-link k-header">Expanded<span class="k-icon k-i-arrow-n k-panelbar-collapse"></span></span>
-				<ul class="k-group k-panel">
-					<li class="k-item"><span class="k-link">Normal</span></li>
-					<li class="k-item"><span class="k-link k-state-hover">Hovered</span></li>
-					<li class="k-item"><span class="k-link k-state-selected">Selected</span></li>
-					<li class="k-item"><span class="k-link k-state-focused">Focused</span></li>
-					<li class="k-item"><span class="k-link k-state-disabled">Disabled</span></li>
+		<ul data-role="panelbar">
+			<li class="k-state-active">
+				Expanded
+				<ul>
+					<li>Normal</li>
+					<li>Hovered</li>
+					<li>Selected</li>
+					<li>Focused</li>
+					<li>Disabled</li>
 				</ul>
 			</li>
-			<li class="k-item">
-				<span class="k-link k-header k-state-hover">Hover</span>
+			<li>Hover</li>
+			<li>Selected</li>
+			<li>Focused</li>
+			<li>Disabled</li>
+		</ul>
+		<ul class="k-compact" data-role="panelbar">
+			<li class="k-state-active">
+				Expanded
+				<ul>
+					<li>Normal</li>
+					<li>Hovered</li>
+					<li>Selected</li>
+					<li>Focused</li>
+					<li>Disabled</li>
+				</ul>
 			</li>
-			<li class="k-item">
-				<span class="k-link k-header k-state-selected">Selected</span>
-			</li>
-			<li class="k-item">
-				<span class="k-link k-header k-state-focused">Focused</span>
-			</li>
-			<li class="k-item k-state-disabled">
-				<span class="k-link k-header">Disabled</span>
-			</li>
+			<li>Hover</li>
+			<li>Selected</li>
+			<li>Focused</li>
+			<li>Disabled</li>
 		</ul>
 	</div>
+
+
+	<script>
+	kendo.init( $( ".container" ) );
+
+	$( ".k-link:contains('Hovered')" ).addClass( "k-state-hover" );
+	$( ".k-link:contains('Selected')" ).addClass( "k-state-selected" );
+	$( ".k-link:contains('Focused')" ).addClass( "k-state-focused" );
+	$( ".k-link:contains('Disabled')" ).addClass( "k-state-disabled" );
+	</script>
 
 
 </body>

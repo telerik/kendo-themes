@@ -1595,42 +1595,51 @@
   pointer-events: none; }
 
 /** #region panelbar/layout */
-.k-panelbar {
-  padding: 0;
+.k-panelbar .k-panel,
+.k-panelbar .k-content {
   margin: 0;
-  list-style: none; }
-  .k-panelbar .k-panel,
-  .k-panelbar .k-content {
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid;
-    border-color: inherit;
-    list-style: none;
-    position: relative; }
-  .k-panelbar > .k-item,
-  .k-panelbar .k-panel > .k-item {
-    margin: 0;
-    border-width: 0;
-    border-color: inherit;
-    border-radius: 0;
-    display: block; }
-  .k-panelbar > .k-item > .k-link {
-    padding: 0.75rem 1.25rem;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    text-decoration: none;
-    display: block;
-    position: relative; }
-  .k-panelbar .k-panel > .k-item > .k-link {
-    padding: 3px 20px;
-    text-decoration: none;
-    display: block;
-    position: relative; }
-  .k-panelbar .k-panelbar-collapse, .k-panelbar .k-panelbar-expand {
-    margin-top: -.5em;
-    position: absolute;
-    top: 50%;
-    right: 0.625rem; }
+  padding: 0;
+  border-bottom: 1px solid;
+  border-color: inherit;
+  list-style: none;
+  position: relative; }
+
+.k-panelbar > .k-item,
+.k-panelbar .k-panel > .k-item {
+  margin: 0;
+  border-width: 0;
+  border-color: inherit;
+  border-radius: 0;
+  display: block; }
+
+.k-panelbar > .k-item > .k-link {
+  padding: 0.75rem 1.25rem;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  text-decoration: none;
+  display: block;
+  position: relative; }
+
+.k-panelbar .k-panel > .k-item > .k-link {
+  padding: 3px 20px;
+  text-decoration: none;
+  display: block;
+  position: relative; }
+
+.k-panelbar .k-panelbar-collapse, .k-panelbar .k-panelbar-expand {
+  margin-top: -.5em;
+  position: absolute;
+  top: 50%;
+  right: 0.625rem; }
+
+.k-compact .k-panelbar > .k-item > .k-link, .k-panelbar.k-compact > .k-item > .k-link {
+  padding: 0.25rem 0.5rem; }
+
+.k-compact .k-panelbar .k-panel > .k-item > .k-link, .k-panelbar.k-compact .k-panel > .k-item > .k-link {
+  padding: 0.125rem 0.5rem; }
+
+.k-compact .k-panelbar .k-panelbar-collapse, .k-compact .k-panelbar .k-panelbar-expand, .k-panelbar.k-compact .k-panelbar-collapse, .k-panelbar.k-compact .k-panelbar-expand {
+  right: 0.125rem; }
 
 /** #endregion */
 /** #region panelbar/theme */

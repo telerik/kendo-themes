@@ -2,9 +2,6 @@
 
 	// Base
 	.k-panelbar {
-		padding: 0;
-		margin: 0;
-		list-style: none;
 
 		.k-panel,
 		.k-content {
@@ -48,6 +45,26 @@
 			position: absolute;
 			top: 50%;
 			right: $header-padding-x/2;
+		}
+
+
+
+
+		// Compact
+		@include compact {
+
+			// Links
+			> .k-item > .k-link {
+				padding: $padding-y-sm $padding-x-sm;
+			}
+			.k-panel > .k-item > .k-link {
+				padding: ($padding-y-sm / 2) $padding-x-sm;
+			}
+
+			// Expand collapse
+			.k-panelbar-collapse, .k-panelbar-expand {
+				right: $padding-y-sm / 2;
+			}
 		}
 	}
 
