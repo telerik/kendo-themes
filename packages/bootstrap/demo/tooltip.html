@@ -12,6 +12,11 @@
 
 	<style type="text/css">
 	.w20p { display: inline-block; width: 20%; }
+	hr ~ .k-tooltip {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+	}
 	</style>
 </head>
 <body>
@@ -21,6 +26,15 @@
 		<legend>Tooltip</legend>
 
 		<div id="tooltip" title="I am tooltip">I have a tooltip</div>
+		<hr />
+		<div role="tooltip" class="k-widget k-tooltip k-popup k-group k-reset">
+			<div class="k-tooltip-content">I am tooltip</div>
+			<div class="k-callout k-callout-s"></div>
+		</div>
+		<div role="tooltip" class="k-widget k-tooltip k-popup k-group k-reset k-compact">
+			<div class="k-tooltip-content">I am tooltip</div>
+			<div class="k-callout k-callout-s"></div>
+		</div>
 	</div>
 
 

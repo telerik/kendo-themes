@@ -825,13 +825,13 @@
 /** #region tooltip/layout */
 .k-tooltip {
   padding: 3px 8px;
-  max-width: 200px;
-  border-style: solid;
   border-width: 0;
   background-repeat: repeat-x;
   text-align: center;
   position: absolute;
   z-index: 12000; }
+  .k-compact .k-tooltip, .k-tooltip.k-compact {
+    padding: 0.125rem 0.5rem; }
 
 .k-callout {
   width: 0;

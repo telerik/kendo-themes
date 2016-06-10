@@ -2,13 +2,19 @@
 
 	.k-tooltip {
 		padding: $tooltip-padding-y $tooltip-padding-x;
-		max-width: $tooltip-max-width;
-		border-style: solid;
 		border-width: 0;
 		background-repeat: repeat-x;
 		text-align: center;
 		position: absolute;
 		z-index: 12000;
+
+
+
+
+		// Compact
+		@include compact {
+			padding: ($padding-y-sm / 2) $padding-x-sm;
+		}
 	}
 
 
