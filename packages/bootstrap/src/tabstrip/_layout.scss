@@ -40,6 +40,18 @@
 				overflow: hidden;
 			}
 		}
+
+
+
+
+		// Compact
+		@include compact {
+
+			.k-item .k-link {
+				padding: $padding-y-sm $padding-x-sm;
+			}
+
+		}
 	}
 
 

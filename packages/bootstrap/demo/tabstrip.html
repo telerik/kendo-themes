@@ -9,6 +9,13 @@
 
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.web.min.js"></script>
+
+	<style>
+	.k-tabstrip-wrapper {
+		display: inline-block;
+		vertical-align: top;
+	}
+	</style>
 </head>
 <body>
 
@@ -23,52 +30,48 @@
 			<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
 		</ul>
 		<hr />
-		<div id="tabstrip-target">
-			<div id="tabstrip-top">
-				<ul>
-					<li>Normal</li>
-					<li class="k-state-hover">Hovered</li>
-					<li class="k-state-active">Selected</li>
-					<li class="k-state-focused">Focused</li>
-					<li class="k-state-disabled">Disabled</li>
-				</ul>
-			</div>
-			<div id="tabstrip-bottom">
-				<ul>
-					<li>Normal</li>
-					<li class="k-state-hover">Hovered</li>
-					<li class="k-state-active">Selected</li>
-					<li class="k-state-focused">Focused</li>
-					<li class="k-state-disabled">Disabled</li>
-				</ul>
-			</div>
-			<div id="tabstrip-left">
-				<ul>
-					<li>Normal</li>
-					<li class="k-state-hover">Hovered</li>
-					<li class="k-state-active">Selected</li>
-					<li class="k-state-focused">Focused</li>
-					<li class="k-state-disabled">Disabled</li>
-				</ul>
-			</div>
-			<div id="tabstrip-right">
-				<ul>
-					<li>Normal</li>
-					<li class="k-state-hover">Hovered</li>
-					<li class="k-state-active">Selected</li>
-					<li class="k-state-focused">Focused</li>
-					<li class="k-state-disabled">Disabled</li>
-				</ul>
-			</div>
+		<div data-role="tabstrip" data-tab-position="top" class="k-compact">
+			<ul>
+				<li>Normal</li>
+				<li class="k-state-hover">Hovered</li>
+				<li class="k-state-active">Selected</li>
+				<li class="k-state-focused">Focused</li>
+				<li class="k-state-disabled">Disabled</li>
+			</ul>
+		</div>
+		<div data-role="tabstrip" data-tab-position="bottom">
+			<ul>
+				<li>Normal</li>
+				<li class="k-state-hover">Hovered</li>
+				<li class="k-state-active">Selected</li>
+				<li class="k-state-focused">Focused</li>
+				<li class="k-state-disabled">Disabled</li>
+			</ul>
+		</div>
+		<hr>
+		<div data-role="tabstrip" data-tab-position="left" class="k-compact">
+			<ul>
+				<li>Normal</li>
+				<li class="k-state-hover">Hovered</li>
+				<li class="k-state-active">Selected</li>
+				<li class="k-state-focused">Focused</li>
+				<li class="k-state-disabled">Disabled</li>
+			</ul>
+		</div>
+		<div data-role="tabstrip" data-tab-position="right">
+			<ul>
+				<li>Normal</li>
+				<li class="k-state-hover">Hovered</li>
+				<li class="k-state-active">Selected</li>
+				<li class="k-state-focused">Focused</li>
+				<li class="k-state-disabled">Disabled</li>
+			</ul>
 		</div>
 	</div>
 
 
 	<script>
-	$("#tabstrip-top").kendoTabStrip({tabPosition: "top"});
-	$("#tabstrip-bottom").kendoTabStrip({tabPosition: "bottom"});
-	$("#tabstrip-left").kendoTabStrip({tabPosition: "left"});
-	$("#tabstrip-right").kendoTabStrip({tabPosition: "right"});
+	kendo.init( ".container" );
 	</script>
 
 

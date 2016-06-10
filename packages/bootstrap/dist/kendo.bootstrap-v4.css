@@ -1693,6 +1693,8 @@
   .k-tabstrip.k-tabstrip-scrollable .k-tabstrip-items {
     white-space: nowrap;
     overflow: hidden; }
+  .k-compact .k-tabstrip .k-item .k-link, .k-tabstrip.k-compact .k-item .k-link {
+    padding: 0.25rem 0.5rem; }
 
 .k-tabstrip-top .k-tabstrip-items {
   border-bottom-width: 1px; }
