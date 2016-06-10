@@ -28,8 +28,31 @@
 			Drag clue
 		</div>
 		<hr />
-		<div>
-			<ul id="treeview-target">
+		<div style="display: inline-block">
+			<ul data-role="treeview">
+				<li data-expanded="true">
+					Normal
+					<ul>
+						<li>Sub item 1</li>
+						<li>Sub item 2</li>
+						<li>
+							Sub item 3
+							<ul>
+								<li>Sub item 3.1</li>
+								<li>Sub item 3.2</li>
+								<li>Sub item 3.3</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Hovered</li>
+				<li>Selected</li>
+				<li>Focused</li>
+				<li>Disabled</li>
+			</ul>
+		</div>
+		<div class="k-compact" style="display: inline-block">
+			<ul data-role="treeview">
 				<li data-expanded="true">
 					Normal
 					<ul>
@@ -55,22 +78,15 @@
 
 
 	<script>
-	$("#treeview-target").kendoTreeView();
-	$("#treeview-target")
-		.find( ".k-in:contains('Hovered')" )
-			.addClass( "k-state-hover" )
-		.end()
-		.find( ".k-in:contains('Selected')" )
-			.addClass( "k-state-selected" )
-		.end()
-		.find( ".k-in:contains('Focused')" )
-			.addClass( "k-state-focused" )
-		.end()
-		.find( ".k-in:contains('Disabled')" )
-			.addClass( "k-state-disabled" );
+	kendo.init( $( ".container" ) );
 
-	$("#treeview-target").find( ".k-minus" ).addClass( "k-i-minus" );
-	$("#treeview-target").find( ".k-plus" ).addClass( "k-i-plus" );
+	$( ".k-in:contains('Hovered')" ).addClass( "k-state-hover" );
+	$( ".k-in:contains('Selected')" ).addClass( "k-state-selected" );
+	$( ".k-in:contains('Focused')" ).addClass( "k-state-focused" );
+	$( ".k-in:contains('Disabled')" ).addClass( "k-state-disabled" );
+
+	$( ".k-minus" ).addClass( "k-i-minus" );
+	$( ".k-plus" ).addClass( "k-i-plus" );
 	</script>
 
 

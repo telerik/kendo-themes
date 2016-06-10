@@ -21,7 +21,7 @@
 		// Items
 		.k-item {
 			margin: 0;
-			padding: 0 0 0 16px;
+			padding: 0 0 0 $spacer-x;
 			border-width: 0;
 			display: block;
 		}
@@ -29,7 +29,7 @@
 		// Link
 		.k-in {
 			margin: 0;
-			padding: $nav-link-padding;
+			padding: $padding-y $padding-x;
 			border: 1px solid;
 			border-color: transparent;
 			text-decoration: none;
@@ -42,7 +42,7 @@
 		.k-minus-disabled,
 		.k-plus,
 		.k-plus-disabled {
-			margin-left: -16px;
+			margin-left: -$spacer-x;
 			cursor: pointer;
 		}
 
@@ -60,6 +60,20 @@
 		.k-image,
 		.k-sprite {
 			margin-right: 3px;
+		}
+
+
+
+
+		// Compact
+		@include compact {
+			font-size: $font-size-sm;
+
+			// Link
+			.k-in {
+				padding: $padding-y-sm $padding-x-sm;
+			}
+
 		}
 	}
 
