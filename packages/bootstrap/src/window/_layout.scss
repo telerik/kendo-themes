@@ -8,6 +8,21 @@
 		flex-direction: column;
 		position: absolute;
 		z-index: 10001;
+
+
+
+
+		// Compact
+		@include compact {
+
+			.k-window-titlebar {
+				padding: $padding-y-sm $padding-x-sm;
+				line-height: $line-height;
+			}
+			.k-window-content {
+				padding: $padding-x-sm;
+			}
+		}
 	}
 
 	// Title bar

@@ -11,7 +11,14 @@
 	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.web.min.js"></script>
 
 	<style type="text/css">
-	.w20p { display: inline-block; width: 20%; }
+	.k-window {
+		width: 400px;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		top: 0 !important;
+		left: 0 !important;
+	}
 	</style>
 </head>
 <body>
@@ -42,33 +49,36 @@
 		<div id="window-target">
 			<p>Window content</p>
 		</div>
+		<div class="k-compact" data-role="window"
+			data-title="Window">
+			<p>Window content</p>
+		</div>
 	</div>
 
 
 	<script>
-	$(document).ready(function() {
 
-		var myWindow = $("#window-target").kendoWindow({
-			width: "600px",
-			title: "My title",
-			visible: true,
-			actions: [
-				"Pin",
-				"Minimize",
-				"Maximize",
-				"Close",
-				"Refresh"
-			],
-			close: function () {}
-		}).data("kendoWindow");
+	var myWindow = $("#window-target").kendoWindow({
+		title: "My title",
+		visible: true,
+		actions: [
+			"Pin",
+			"Minimize",
+			"Maximize",
+			"Close",
+			"Refresh"
+		],
+		close: function () {}
+	}).data("kendoWindow");
 
-		myWindow.center().open();
+	kendo.init( $(".container") );
 
-		// Massage
-		myWindow.wrapper.find(".k-window-action .k-icon").html("");
-		myWindow.wrapper.find(".k-window-action .k-i-close").addClass("k-i-x");
+	// Massage
+	$(".k-icon").html("");
+	$(".k-i-close").addClass("k-i-x");
 
-	});
+	$(".k-compact").removeClass( ".k-compact" )
+		.parents(".k-window").addClass( "k-compact" )
 	</script>
 
 

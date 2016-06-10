@@ -1522,6 +1522,11 @@
   flex-direction: column;
   position: absolute;
   z-index: 10001; }
+  .k-compact .k-window .k-window-titlebar, .k-window.k-compact .k-window-titlebar {
+    padding: 0.25rem 0.5rem;
+    line-height: 1.5; }
+  .k-compact .k-window .k-window-content, .k-window.k-compact .k-window-content {
+    padding: 0.5rem; }
 
 .k-window-titlebar {
   padding: 15px;
