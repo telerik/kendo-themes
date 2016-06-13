@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Validation</title>
+
+	<link rel="stylesheet" href="../dist/validator.css" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.web.min.js"></script>
+
+	<style type="text/css">
+	.w20p { display: inline-block; width: 20%; }
+	hr ~ .k-tooltip {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+	}
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Validation</legend>
+
+		<form id="dasForm" data-role="validator" data-validateOnBlur="true">
+			<input type="text" required="required" />
+			<input type="number" min="0" max="10" />
+		</form>
+	</div>
+
+
+	<script>
+	kendo.init( $(".container") );
+	</script>
+
+
+</body>
+</html>
