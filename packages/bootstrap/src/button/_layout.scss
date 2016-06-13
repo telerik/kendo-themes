@@ -37,6 +37,11 @@
 			padding: $button-padding-y;
 			justify-content: center;
 		}
+		&.k-button-bare {
+			border-width: 0;
+			color: inherit;
+			background: none !important;
+		}
 
 
 

@@ -18,7 +18,7 @@
   opacity: .65;
   pointer-events: none; }
 
-.k-widget, .k-panelbar {
+.k-widget, .k-upload-files .k-file, .k-panelbar {
   color: #373a3c;
   background-color: #fff;
   border-color: rgba(0, 0, 0, 0.125); }
@@ -28,7 +28,7 @@
   background-color: #fff;
   border-color: rgba(0, 0, 0, 0.15); }
 
-.k-calendar .k-header, .k-calendar .k-content th, .k-panelbar > .k-item > .k-link {
+.k-upload, .k-calendar .k-header, .k-calendar .k-content th, .k-panelbar > .k-item > .k-link {
   color: #373a3c;
   background-color: #f5f5f5;
   border-color: rgba(0, 0, 0, 0.125); }
@@ -1507,6 +1507,138 @@
   opacity: .65;
   pointer-events: none; }
 
+.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+  cursor: not-allowed;
+  opacity: .65;
+  pointer-events: none; }
+
+.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+  cursor: not-allowed;
+  opacity: .65;
+  pointer-events: none; }
+
+.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+  cursor: not-allowed;
+  opacity: .65;
+  pointer-events: none; }
+
+.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+  cursor: not-allowed;
+  opacity: .65;
+  pointer-events: none; }
+
+/** #region upload/layout */
+.k-compact .k-upload.k-upload-sync .k-upload-button, .k-upload.k-compact.k-upload-sync .k-upload-button {
+  margin: 0.25rem 0.5rem; }
+
+.k-compact .k-upload .k-dropzone, .k-upload.k-compact .k-dropzone {
+  padding: 0.25rem 0.5rem; }
+
+.k-compact .k-upload .k-upload-files .k-file, .k-upload.k-compact .k-upload-files .k-file {
+  padding: 0.125rem 0.5rem; }
+
+.k-compact .k-upload .k-upload-files .k-filename, .k-upload.k-compact .k-upload-files .k-filename {
+  margin-left: 0.5rem; }
+
+.k-upload-button {
+  position: relative;
+  overflow: hidden;
+  direction: ltr; }
+  .k-upload-sync .k-upload-button {
+    margin: 0.5rem 1rem; }
+
+.k-upload-button input {
+  margin: 0;
+  padding: 0;
+  font: 170px monospace !important;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1; }
+
+.k-dropzone {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  position: relative; }
+  .k-dropzone em {
+    margin-left: 1rem;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0;
+    white-space: nowrap;
+    position: relative; }
+  .k-dropzone .k-upload-status-total {
+    display: flex;
+    align-items: center;
+    position: relative; }
+    .k-dropzone .k-upload-status-total .k-icon {
+      margin-left: 0.5rem; }
+
+.k-dropzone-active em {
+  opacity: 1; }
+
+.k-upload-files {
+  padding-bottom: 0.5rem;
+  border-width: 1px 0 0;
+  border-style: solid;
+  border-color: inherit; }
+  .k-upload-files .k-file {
+    padding: 3px 20px;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: inherit;
+    display: flex;
+    align-items: center;
+    position: relative; }
+    .k-upload-files .k-file > .k-icon {
+      position: relative; }
+  .k-upload-files .k-progress {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; }
+  .k-upload-files .k-filename {
+    margin-left: 1rem;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative; }
+  .k-upload-files .k-upload-status {
+    display: flex;
+    align-items: center;
+    position: relative; }
+    .k-upload-files .k-upload-status .k-button {
+      margin-left: 0.5rem; }
+  .k-upload-files .k-button {
+    padding: 0; }
+
+/** #endregion */
+/** #region upload/theme */
+.k-upload {
+  border-radius: 0.25rem; }
+
+.k-upload-files .k-file-progress {
+  color: #31708f; }
+  .k-upload-files .k-file-progress .k-progress {
+    background-color: #d9edf7; }
+
+.k-upload-files .k-file-success {
+  color: #3c763d; }
+  .k-upload-files .k-file-success .k-progress {
+    background-color: #dff0d8; }
+
+.k-upload-files .k-file-error {
+  color: #a94442; }
+  .k-upload-files .k-file-error .k-progress {
+    background-color: #f2dede; }
+
+/** #endregion */
 .k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;

@@ -1,0 +1,136 @@
+@include exports("upload/layout") {
+
+	.k-upload {
+
+
+		// Compact
+		@include compact {
+
+			&.k-upload-sync .k-upload-button {
+				margin: $padding-y-sm $padding-x-sm;
+			}
+			.k-dropzone {
+				padding: $padding-y-sm $padding-x-sm;
+			}
+
+			.k-upload-files {
+
+				.k-file {
+					padding: ($padding-y-sm / 2) $padding-x-sm;
+				}
+				.k-filename {
+					margin-left: $spacer-x/2;
+				}
+			}
+		}
+	}
+
+	// Upload button
+	.k-upload-button {
+		position: relative;
+		overflow: hidden;
+		direction: ltr;
+
+		.k-upload-sync & {
+			margin: $padding-y $padding-x;
+		}
+	}
+	.k-upload-button input {
+		margin: 0;
+		padding: 0;
+		font: 170px monospace!important;
+		filter: alpha(opacity=0);
+		opacity: 0;
+		cursor: pointer;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+	}
+
+
+	// Drop zone
+	.k-dropzone {
+		padding: $padding-y $padding-x;
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		em {
+			margin-left: $spacer-x;
+			flex: 1;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			opacity: 0;
+			white-space: nowrap;
+			position: relative;
+		}
+		.k-upload-status-total {
+			display: flex;
+			align-items: center;
+			position: relative;
+
+			.k-icon {
+				margin-left: $spacer-x / 2;
+			}
+		}
+	}
+	.k-dropzone-active {
+
+		em {
+			opacity: 1;
+		}
+	}
+
+
+	// Upload files list
+	.k-upload-files {
+		padding-bottom: $padding-y;
+		border-width: 1px 0 0;
+		border-style: solid;
+		border-color: inherit;
+
+		.k-file {
+			padding: 3px $dropdown-item-padding-x;
+			border-width: 0 0 1px;
+			border-style: solid;
+			border-color: inherit;
+			display: flex;
+			align-items: center;
+			position: relative;
+
+			> .k-icon {
+				position: relative;
+			}
+		}
+		.k-progress {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+		}
+		.k-filename {
+			margin-left: $spacer-x;
+			flex: 1;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			position: relative;
+		}
+		.k-upload-status {
+			display: flex;
+			align-items: center;
+			position: relative;
+
+			.k-button {
+				margin-left: $spacer-x / 2;
+			}
+		}
+
+		.k-button {
+			padding: 0;
+		}
+
+	}
+
+}
