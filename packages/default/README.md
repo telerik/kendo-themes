@@ -6,7 +6,7 @@ A SCSS-based theme for Kendo UI components. Currently available for **Kendo UI f
 
 ### As a pre-built theme
 
-Clone the repo and build it via `npm run build`. This will output CSS files in the `dist/` folder. The file `dist/main.css` will contain the complete theme, which can be used in your project.
+Clone the repo and build it via `npm run build`. This will output CSS files in the `dist/` folder. The file `dist/packages/all.css` will contain the complete theme, which can be used in your project.
 
 ### Via webpack
 
