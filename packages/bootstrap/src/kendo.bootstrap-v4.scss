@@ -44,22 +44,22 @@
 
 
 // Scheduling
-//@import "calendar/calendar";
+@import "calendar/calendar";
 //@import "gantt/gantt";
 //@import "scheduler/scheduler";
 
 
 // Layout
-//@import "notification/notification";
+@import "notification/notification";
 //@import "responsive panel/responsive panel";
-//@import "splitter/splitter";
+@import "splitter/splitter";
 @import "tooltip/tooltip";
 @import "window/window";
 
 
 // Navigation
 @import "button/button";
-//@import "menu/menu";
+@import "menu/menu";
 @import "panelbar/panelbar";
 @import "tabstrip/tabstrip";
 @import "toolbar/toolbar";
@@ -67,4 +67,4 @@
 
 
 // Interactivity & UX
-//@import "progressbar/progressbar";
+@import "progressbar/progressbar";
