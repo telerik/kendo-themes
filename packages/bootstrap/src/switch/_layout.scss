@@ -1,0 +1,66 @@
+@include exports("switch/layout") {
+
+	// Layout
+	.km-switch {
+		width: 5em;
+		height: 2em;
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+		user-select: none;
+
+		// Hide input
+		input[type="checkbox"] { display: none; }
+
+		// Switch wrapper
+		.km-switch-wrapper {
+			width: 100%;
+			height: 100%;
+			border-width: 1px;
+			border-style: solid;
+			display: block;
+		}
+		.km-switch-background {
+			width: 100%;
+			height: 100%;
+			display: block;
+			position: relative;
+			left: -98%
+		}
+
+		// Switch container
+		.km-switch-container {
+			width: 100%;
+			height: 100%;
+			border-width: 1px;
+			border-style: solid;
+			display: block;
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.km-switch-handle {
+			width: 2em;
+			height: 100%;
+			display: inline-block;
+		}
+		.km-switch-label-on,
+		.km-switch-label-off {
+			padding: $padding-y-sm $padding-x-sm;
+			text-transform: uppercase;
+			display: block;
+			position: absolute;
+			top: 0;
+		}
+		.km-switch-label-on {
+			right: 100%;
+		}
+		.km-switch-label-off {
+			left: 100%;
+		}
+
+
+	}
+
+}

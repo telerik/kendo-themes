@@ -55,10 +55,21 @@
 			font-size: $font-size-sm;
 		}
 	}
+	.km-widget {
+		font-size: $font-size;
+		line-height: $line-height;
+
+		&,
+		* {
+			box-sizing: border-box;
+			background-clip: border-box
+		}
+	}
 
 
 	// Theme
-	.k-widget {
+	.k-widget,
+	.km-widget {
 		@include appearance( panel );
 	}
 

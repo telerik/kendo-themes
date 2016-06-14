@@ -18,7 +18,8 @@
   opacity: .65;
   pointer-events: none; }
 
-.k-widget, .k-upload-files .k-file, .k-panelbar {
+.k-widget,
+.km-widget, .k-upload-files .k-file, .k-panelbar {
   color: #373a3c;
   background-color: #fff;
   border-color: rgba(0, 0, 0, 0.125); }
@@ -153,6 +154,14 @@
     pointer-events: none; }
   .k-compact .k-widget, .k-widget.k-compact {
     font-size: 0.875rem; }
+
+.km-widget {
+  font-size: 1rem;
+  line-height: 1.5; }
+  .km-widget,
+  .km-widget * {
+    box-sizing: border-box;
+    background-clip: border-box; }
 
 /** #endregion */
 /** #region common/states */

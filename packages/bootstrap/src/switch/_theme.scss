@@ -1,0 +1,32 @@
+@include exports("switch/theme") {
+
+	// Theme
+	.km-switch {
+		@include border-radius( $border-radius );
+	}
+
+	// Switch wrapper
+	.km-switch-wrapper {
+		@include appearance( button );
+		@include border-radius( $border-radius );
+	}
+	.km-switch-background {
+		@include appearance( primary-button );
+	}
+
+	// Switch container
+	.km-switch-container {
+		@include border-radius( $border-radius );
+		border-color: $button-border;
+		color: $button-color;
+	}
+	.km-switch-handle {
+		@include border-radius( $border-radius );
+		background-color: $button-bg;
+		box-shadow: 0 1px 0 1px $button-border, 0 -1px 0 1px $button-border;
+	}
+	.km-switch-label-on {
+		color: $primary-button-color;
+	}
+
+}
