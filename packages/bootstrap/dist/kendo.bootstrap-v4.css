@@ -1,4 +1,4 @@
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -13,7 +13,7 @@
 .k-widget :before {
   box-sizing: content-box; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -44,7 +44,7 @@
   background-color: #0275d8;
   border-color: #01549b; }
 
-.k-button, .k-slider .k-draghandle, .k-colorpicker .k-select, .k-combobox .k-select, .k-dropdown .k-dropdown-wrap, .k-numerictextbox .k-select, .k-splitbar {
+.k-button, .km-button, .k-slider .k-draghandle, .k-colorpicker .k-select, .k-combobox .k-select, .k-dropdown .k-dropdown-wrap, .k-numerictextbox .k-select, .k-splitbar {
   color: #373a3c;
   background-color: #fff;
   border-color: #ccc; }
@@ -61,7 +61,7 @@
   background-color: #e6e6e6;
   border-color: #adadad; }
 
-.k-button:active, .k-button.k-state-active, .k-slider .k-draghandle.k-state-active, .k-colorpicker .k-state-active .k-select, .k-combobox .k-state-focused .k-select,
+.k-button:active, .k-button.k-state-active, .km-button.km-state-active, .k-slider .k-draghandle.k-state-active, .k-colorpicker .k-state-active .k-select, .k-combobox .k-state-focused .k-select,
 .k-combobox .k-state-active .k-select, .k-dropdown .k-state-active, .k-numerictextbox .k-state-active .k-select, .k-calendar .k-nav-prev:active,
 .k-calendar .k-nav-next:active,
 .k-calendar .k-nav-fast:active,
@@ -166,7 +166,8 @@
 /** #endregion */
 /** #region common/states */
 .k-disabled,
-.k-state-disabled {
+.k-state-disabled,
+.km-state-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -695,12 +696,12 @@
   box-shadow: inset 0 0 5px rgba(1, 84, 155, 0.5); }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -736,32 +737,32 @@
   border-radius: 0.25rem; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -817,8 +818,44 @@
   .k-button-group .k-button + .k-button {
     margin-left: -1px; }
   .k-button-group .k-button:hover,
-  .k-button-group .k-button.k-state-hover {
+  .k-button-group .k-button.k-state-hover,
+  .k-button-group .k-button.k-state-active {
     z-index: 2; }
+
+/** #endregion */
+/** #region km-button/layout */
+.km-button {
+  padding: 0.5rem 1rem;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 1rem;
+  line-height: 1.25;
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline-flex;
+  vertical-align: middle; }
+  .km-button:hover, .km-button:focus {
+    text-decoration: none; }
+  .km-button .k-icon {
+    align-self: center; }
+
+.km-buttongroup {
+  white-space: nowrap;
+  display: inline-flex;
+  flex-direction: row;
+  vertical-align: middle;
+  position: relative; }
+  .km-buttongroup .km-button {
+    position: relative; }
+  .km-buttongroup .km-button + .km-button {
+    margin-left: -1px; }
+  .km-buttongroup .km-button.km-state-active {
+    z-index: 2; }
+
+ul.km-buttongroup {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
 
 /** #endregion */
 /** #region button/theme */
@@ -835,12 +872,26 @@
   border-radius: 0 0.25rem 0.25rem 0; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+/** #region km-button/theme */
+.km-button {
+  border-radius: 0.25rem; }
+
+.km-buttongroup .km-button {
+  border-radius: 0; }
+
+.km-buttongroup .km-button:first-child {
+  border-radius: 0.25rem 0 0 0.25rem; }
+
+.km-buttongroup .km-button:last-child {
+  border-radius: 0 0.25rem 0.25rem 0; }
+
+/** #endregion */
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -1235,12 +1286,12 @@
   border-color: inherit; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -1301,12 +1352,12 @@
   border-color: inherit; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -1328,12 +1379,12 @@
   border-radius: 0.25rem; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -1357,22 +1408,22 @@
   border-radius: 0.25rem; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -1426,12 +1477,12 @@
     border-radius: 0.1875rem; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -1486,52 +1537,52 @@
   border-radius: 0 0.25rem 0.25rem 0; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -1648,12 +1699,12 @@
     background-color: #f2dede; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -1756,12 +1807,12 @@
   box-shadow: inset 0 0 5px #01549b; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -1806,12 +1857,12 @@
   background-color: #f2dede; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -1878,22 +1929,22 @@
 /** #endregion */
 /** #region splitter/theme */
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -1964,22 +2015,22 @@
   border-color: #e5e5e5; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -2053,12 +2104,12 @@
     background-color: #0275d8; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -2121,12 +2172,12 @@
   box-shadow: inset 0 0 5px #01549b; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -2248,22 +2299,22 @@
   border-left-color: transparent; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -2341,12 +2392,12 @@
   border-radius: 0 0.25rem 0.25rem 0; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
@@ -2423,12 +2474,12 @@
   box-shadow: inset 0 0 5px #01549b; }
 
 /** #endregion */
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }
 
-.k-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
+.k-button[disabled], .km-button[disabled], .k-textbox:disabled, .k-textbox[disabled], .k-textbox.k-disabled {
   cursor: not-allowed;
   opacity: .65;
   pointer-events: none; }

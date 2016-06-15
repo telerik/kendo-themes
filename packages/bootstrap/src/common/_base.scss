@@ -80,7 +80,8 @@
 
 	// Disabled
 	.k-disabled,
-	.k-state-disabled {
+	.k-state-disabled,
+	.km-state-disabled {
 		@include disabled;
 	}
 

@@ -11,6 +11,7 @@
 		white-space: nowrap;
 		display: inline-flex;
 		vertical-align: middle;
+		cursor: pointer;
 
 		&[disabled] {
 			@extend %disabled;
@@ -101,9 +102,69 @@
 		}
 
 		.k-button:hover,
-		.k-button.k-state-hover {
+		.k-button.k-state-hover,
+		.k-button.k-state-active {
 			z-index: 2;
 		}
+	}
+
+}
+
+
+@include exports("km-button/layout") {
+
+	// Button
+	.km-button {
+		padding: $button-padding-y $button-padding-x;
+		border-width: 1px;
+		border-style: solid;
+		font-size: $font-size;
+		line-height: $form-line-height;
+		text-decoration: none;
+		white-space: nowrap;
+		display: inline-flex;
+		vertical-align: middle;
+		cursor: pointer;
+
+		&[disabled] {
+			@extend %disabled;
+		}
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+
+		.k-icon {
+			align-self: center;
+		}
+
+	}
+
+
+	// Button group
+	.km-buttongroup {
+		white-space: nowrap;
+		display: inline-flex;
+		flex-direction: row;
+		vertical-align: middle;
+		position: relative;
+
+		.km-button {
+			position: relative;
+		}
+		.km-button + .km-button {
+			margin-left: -1px;
+		}
+
+		.km-button.km-state-active {
+			z-index: 2;
+		}
+	}
+	ul.km-buttongroup {
+		margin: 0;
+		padding: 0;
+		list-style: none;
 	}
 
 }

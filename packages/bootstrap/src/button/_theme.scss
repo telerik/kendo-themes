@@ -38,3 +38,33 @@
 	}
 
 }
+
+
+@include exports("km-button/theme") {
+
+	// Appearance
+	.km-button {
+		@include appearance( button );
+		@include border-radius( $border-radius );
+
+		&.km-state-active { @include appearance( active-button ); }
+	}
+
+
+	// Button group
+	.km-buttongroup {
+
+		.km-button {
+			border-radius: 0;
+		}
+
+		.km-button:first-child {
+			@include border-radius( $border-radius 0 0 $border-radius );
+		}
+		.km-button:last-child {
+			@include border-radius( 0 $border-radius $border-radius 0 );
+		}
+
+	}
+
+}
