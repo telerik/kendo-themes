@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Responsive panel</title>
+
+	<link rel="stylesheet" href="../dist/responsivepanel.css" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Responsive panel</legend>
+
+		<button class="toggle-button"><span class="k-icon k-i-hbars"></span></button>
+		<article data-role="responsivepanel"
+			data-orientation="right"
+			data-toggle-button=".toggle-button"
+			data-breakpoint="1300">
+
+			Content
+		</article>
+	</div>
+
+
+	<script>
+	kendo.init( $(".container") );
+
+	// Massage
+	$(".k-icon").html("");
+	$(".k-i-close").addClass("k-i-x");
+	</script>
+
+
+</body>
+</html>
