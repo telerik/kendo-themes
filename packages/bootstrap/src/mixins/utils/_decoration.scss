@@ -27,6 +27,14 @@
 	opacity: .65;
 	pointer-events: none;
 }
-%disabled {
-	@include disabled;
+
+
+$_disabled-imported: false !default;
+
+@if ( $_disabled-imported == false ) {
+	%disabled {
+		@include disabled;
+	}
+
+	$_disabled-imported: true;
 }
