@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>QR code</title>
+
+	<link rel="stylesheet" href="../dist/switch.css" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>QR code</legend>
+		<span data-role="qrcode" data-value="1234567" data-error-correction="M"></span>
+	</div>
+
+
+	<script>
+	kendo.init( $(".container") );
+	</script>
+
+
+</body>
+</html>
