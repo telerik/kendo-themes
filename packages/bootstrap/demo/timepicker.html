@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Time picker</title>
+
+	<link rel="stylesheet" href="../dist/calendar.css" />
+	<link rel="stylesheet" href="../dist/datetime.css" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.web.min.js"></script>
+
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Time picker</legend>
+		<input type="date" value="10:00 AM" data-role="timepicker" />
+	</div>
+
+
+	<script>
+	kendo.init( $(".container") );
+
+	$( ".k-icon" ).html( "" );
+	</script>
+
+
+</body>
+</html>

@@ -2,31 +2,30 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>Numeric</title>
+	<title>Datetime picker</title>
 
-	<link rel="stylesheet" href="../dist/numerictextbox.css" />
+	<link rel="stylesheet" href="../dist/calendar.css" />
+	<link rel="stylesheet" href="../dist/datetime.css" />
 	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
 
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.web.min.js"></script>
 
 	<style type="text/css">
-	.w20p { display: inline-block; width: 20%; }
 	</style>
 </head>
 <body>
 
 
 	<div class="container">
-		<legend>Numeric</legend>
-
-		<input type="number" value="30" min="0" max="100" data-role="numerictextbox" />
-		<span class="k-compact"><input type="number" value="30" min="0" max="100" data-role="numerictextbox" /></span>
+		<legend>Datetime picker</legend>
+		<input type="date" data-role="datetimepicker" />
 	</div>
 
 
 	<script>
 	kendo.init( $(".container") );
+
 	$( ".k-icon" ).html( "" );
 	</script>
 
