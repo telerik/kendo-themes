@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Scroller</title>
+
+	<link rel="stylesheet" href="../dist/scroller.css" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+
+	<div class="container" data-role="view">
+		<legend>Scroller</legend>
+
+		<div data-role="scroller" style="width: 200px; height: 200px" data-elastic="false">
+			<div style="width: 500px; height: 500px">Content</div>
+		</div>
+	</div>
+
+
+	<script>
+	new kendo.mobile.Application();
+	kendo.init( $(".container") );
+
+	// Massage
+	$(".k-icon").html("");
+	</script>
+
+
+</body>
+</html>

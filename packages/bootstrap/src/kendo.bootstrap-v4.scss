@@ -30,8 +30,8 @@
 @import "slider/slider";
 //@import "timepicker/timepicker";
 @import "upload/upload";
-//@import "validator/validator";
-//@import "switch/switch";
+@import "validator/validator";
+@import "switch/switch";
 
 
 // Charts
@@ -40,7 +40,7 @@
 
 
 // Diagrams and map
-//@import "map/map";
+@import "map/map";
 
 
 // Scheduling
@@ -51,7 +51,7 @@
 
 // Layout
 @import "notification/notification";
-//@import "responsive panel/responsive panel";
+@import "responsivepanel/responsivepanel";
 @import "splitter/splitter";
 @import "tooltip/tooltip";
 @import "window/window";
@@ -68,3 +68,4 @@
 
 // Interactivity & UX
 @import "progressbar/progressbar";
+@import "scroller/scroller";
