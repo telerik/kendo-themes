@@ -2,5 +2,11 @@
 
 	// Chart
 	.k-chart {}
+	.k-chart-tooltip {
+		color: $panel-bg;
+	}
+	.k-chart-tooltip-inverse {
+		color: $panel-color;
+	}
 
 }
