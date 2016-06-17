@@ -2,6 +2,22 @@
 
 	// Treemap
 	.k-treemap {
+
+		// Title
+		.k-treemap-title {
+			@include appearance( header );
+		}
+
+		// Leaf
+		.k-leaf {
+			color: $panel-bg;
+		}
+		.k-leaf.k-inverse {
+			color: $panel-color;
+		}
+		.k-leaf.k-state-hover {
+			box-shadow: inset 0 0 0 3px $panel-border;
+		}
 	}
 
 }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Treemap</title>
+
+	<link rel="stylesheet" href="../dist/treemap.css" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Treemap</legend>
+
+		<div data-role="treemap"
+			data-source="{
+				data: [{
+					name: 'Root',
+					items: [
+						{ name: 'foo', value: 1 },
+						{ name: 'bar', value: 2 },
+						{ name: 'baz', value: 3 }
+					]
+				}]
+			}"
+			data-value-field="value"
+			data-text-field="name"
+			data-colors="['red', 'green']"
+			></div>
+	</div>
+
+
+	<script>
+	kendo.init( $(".container") );
+
+	$("[data-role='treemap']").getKendoTreeMap().setOptions({type: "vertical"})
+	</script>
+	<script>
+	// $("#treeMap").kendoTreeMap({
+	// 	dataSource: {
+	// 		data: [{
+	// 			name: "foo",
+	// 			value: 1,
+	// 			items: [{
+	// 				name: "bar",
+	// 				value: 1
+	// 			},{
+	// 				name: "baz",
+	// 				value: 1
+	// 			}]
+	// 		}],
+	// 		schema: {
+	// 			model: {
+	// 				children: "items"
+	// 			}
+	// 		}
+	// 	},
+	// 	type: "horizontal",
+	// 	valueField: "value",
+	// 	textField: "name"
+	// });
+	</script>
+
+
+</body>
+</html>
