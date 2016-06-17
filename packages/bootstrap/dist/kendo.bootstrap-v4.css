@@ -1652,21 +1652,27 @@ ul.km-buttongroup {
   color: #000; }
 
 .k-chart-tooltip table {
-  border-spacing: 0;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 .k-chart-tooltip th {
+  padding: 1px;
   width: auto;
-  text-align: center;
-  padding: 1px; }
+  text-align: center; }
 
 .k-chart-tooltip td {
   width: auto;
-  text-align: left;
-  padding: .1em .2em; }
+  padding: .1em .2em;
+  text-align: left; }
 
 /** #endregion */
 /** #region chart/theme */
+.k-chart-tooltip {
+  color: #fff; }
+
+.k-chart-tooltip-inverse {
+  color: #373a3c; }
+
 /** #endregion */
 /** #region treemap/layout */
 .k-treemap {

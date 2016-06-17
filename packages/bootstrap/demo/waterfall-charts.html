@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Waterfall charts</title>
+
+	<link rel="stylesheet" href="../dist/chart.css" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Waterfall charts</legend>
+
+		<div data-role="chart"
+			data-series-defaults="{
+				type: 'waterfall'
+			}"
+			data-series="[
+				{ data: [3.907, 7.943, 7.848, 9.284, 9.801, 3.890, 8.238, 9.552, 6.855] },
+				{ data: [-0.253, 0.362, -3.519, 1.799, 3.343, 0.843, 2.877, -5.416, 5.590] }
+			]"
+			data-tooltip="{
+				visible: true
+			}"
+			></div>
+	</div>
+
+
+	<script>
+	kendo.init( $(".container") );
+	</script>
+
+
+</body>
+</html>

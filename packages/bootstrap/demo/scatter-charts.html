@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Scatter charts</title>
+
+	<link rel="stylesheet" href="../dist/chart.css" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://kendo.cdn.telerik.com/2016.2.504/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Scatter charts</legend>
+
+		<div data-role="chart"
+			data-series-defaults="{
+				type: 'scatter'
+			}"
+			data-series="[
+				{ data: [[5, 11], [5, 13], [7, 15], [10, 19], [13, 23], [17, 28]] },
+				{ data: [[20, 30], [20, 30], [17, 26], [13, 22], [9, 16], [6, 13]] }
+			]"
+			data-tooltip="{
+				visible: true
+			}"
+			></div>
+	</div>
+
+
+	<script>
+	kendo.init( $(".container") );
+	</script>
+
+
+</body>
+</html>
