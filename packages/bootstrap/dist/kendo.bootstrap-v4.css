@@ -1624,6 +1624,50 @@ ul.km-buttongroup {
   color: #fff; }
 
 /** #endregion */
+/** #region chart/layout */
+.k-chart,
+.k-gauge,
+.k-sparkline,
+.k-stockchart {
+  background-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent; }
+
+.k-chart,
+.k-stockchart {
+  height: 400px; }
+
+.k-gauge {
+  text-align: left;
+  position: relative; }
+
+.k-chart-tooltip {
+  border-radius: 4px;
+  padding: 6px;
+  white-space: nowrap;
+  z-index: 12000;
+  line-height: normal; }
+
+.k-chart-tooltip-inverse {
+  color: #000; }
+
+.k-chart-tooltip table {
+  border-spacing: 0;
+  border-collapse: collapse; }
+
+.k-chart-tooltip th {
+  width: auto;
+  text-align: center;
+  padding: 1px; }
+
+.k-chart-tooltip td {
+  width: auto;
+  text-align: left;
+  padding: .1em .2em; }
+
+/** #endregion */
+/** #region chart/theme */
+/** #endregion */
 /** #region treemap/layout */
 .k-treemap {
   height: 400px;
