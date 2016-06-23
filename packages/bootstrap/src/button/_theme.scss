@@ -28,11 +28,17 @@
 			border-radius: 0;
 		}
 
+		.k-group-start,
 		.k-button:first-child {
 			@include border-radius( $border-radius 0 0 $border-radius );
 		}
+		.k-group-end,
 		.k-button:last-child {
 			@include border-radius( 0 $border-radius $border-radius 0 );
+		}
+		.k-group-start.k-group-end,
+		.k-button:first-child:last-child {
+			@include border-radius( $border-radius );
 		}
 
 	}

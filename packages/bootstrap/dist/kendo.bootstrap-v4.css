@@ -822,11 +822,17 @@ ul.km-buttongroup {
 .k-button-group .k-button {
   border-radius: 0; }
 
+.k-button-group .k-group-start,
 .k-button-group .k-button:first-child {
   border-radius: 0.25rem 0 0 0.25rem; }
 
+.k-button-group .k-group-end,
 .k-button-group .k-button:last-child {
   border-radius: 0 0.25rem 0.25rem 0; }
+
+.k-button-group .k-group-start.k-group-end,
+.k-button-group .k-button:first-child:last-child {
+  border-radius: 0.25rem; }
 
 /** #endregion */
 /** #region km-button/theme */
