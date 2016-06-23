@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "lint": "sass-lint -v -c ./sass-lint.yml",
-    "build": "node-sass -r styles/ -o dist/ && postcss --config postcss-config.json --replace dist/*.css",
+    "build": "node-sass -r styles/ -o dist/ && postcss --config postcss-config.json --replace dist/packages/*.css",
     "test": "npm run lint && npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
