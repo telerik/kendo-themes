@@ -12,6 +12,7 @@
     "test": "npm run lint && npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
+  "main": "styles/packages/all.scss",
   "author": "Telerik",
   "license": "Apache-2.0",
   "devDependencies": {
