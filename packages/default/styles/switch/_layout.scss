@@ -16,7 +16,7 @@ $switch-handle-size: (.8 * $switch-size) !default;
         width: (2 * $switch-size);
         outline: 0;
 
-        [type=checkbox] {
+        [type='checkbox'] {
             display: none;
         }
     }

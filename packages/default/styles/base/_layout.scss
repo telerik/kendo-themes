@@ -14,10 +14,8 @@ html {
 }
 
 .textbox > input,
-.input[type='text'],
-.input[type='number'],
+.input,
 .textbox,
-.picker-wrap .input,
 .button {
     font-size: 100%;
     font-family: inherit;
@@ -26,7 +24,7 @@ html {
     -webkit-appearance: none;
 }
 
-.floatwrap:after {
+.floatwrap::after {
     clear: both;
     content: '';
     display: block;
@@ -49,7 +47,7 @@ html {
 // (Bootstrap 3, Foundation 4)
 .widget,
 .widget *,
-.widget *:before {
+.widget *::before {
     box-sizing: content-box;
 }
 

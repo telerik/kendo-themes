@@ -92,7 +92,7 @@ $input-indent: .33em;
 }
 
 /*prevent missing bottom border at some zoom levels*/
-.textbox:after {
+.textbox::after {
   content: '\a0';
   display: block;
   height: .4px;
@@ -157,7 +157,7 @@ $input-indent: .33em;
 }
 
 .combobox {
-    .dropdown-wrap:before {
+    .dropdown-wrap::before {
         content: '\a0';
         display: inline-block;
         width: 0;
@@ -171,7 +171,7 @@ $input-indent: .33em;
 }
 
 /* fix missing bottom border on browser zoom in Chrome */
-.webkit .combobox .dropdown-wrap:before {
+.webkit .combobox .dropdown-wrap::before {
     padding-bottom: .38em;
 }
 

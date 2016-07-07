@@ -76,7 +76,7 @@ $button-padding: 2px 7px !default;
         position: relative;
         margin-left: 1px;
 
-        &:before {
+        &::before {
             content: '';
             height: 100%;
             position: absolute;
@@ -89,7 +89,7 @@ $button-padding: 2px 7px !default;
         &.group-start {
             margin-left: 0;
 
-            &:before {
+            &::before {
                 display: none;
             }
         }

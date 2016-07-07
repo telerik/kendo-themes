@@ -116,7 +116,7 @@ $inner-border-radius: 1px; /* $border-radius - 1 */
     .button {
         border-radius: 0;
 
-        &:before {
+        &::before {
             background: $button-border;
         }
 
@@ -140,8 +140,8 @@ $inner-border-radius: 1px; /* $border-radius - 1 */
                 border-color: $primary-border;
             }
 
-            &.state-active:before,
-            &.state-active + .button:before {
+            &.state-active::before,
+            &.state-active + .button::before {
                 background: $primary-border;
             }
         }
