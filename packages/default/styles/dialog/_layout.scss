@@ -23,6 +23,7 @@ $icon-size: .6em;
 $icon-width: 1em * $icon-sizing-factor;
 
 .window-titlebar {
+    display: block;
     height: $window-titlebar-size;
     line-height: $window-titlebar-size;
     margin-top: -$window-titlebar-size;
@@ -199,6 +200,7 @@ $resizer-offset: -$resizer-size / 2;
 
 .action-buttons {
     clear: both;
+    display: block;
     padding: $window-padding;
     text-align: right;
 
