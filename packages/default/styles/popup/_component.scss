@@ -4,43 +4,55 @@
 @import './layout';
 
 $list-container-border: darken($base, 10%) !default;
-$list-container-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .3) !default;
-$list-container-background: lighten($base, 6%) !default;
+$list-container-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
+$list-container-background: $base !default;
 
-$list-items-hover-border: darken($base, 20%) !default;
-$list-items-focused-border: darken($base, 20%) !default;
+$list-item-focused-box-shadow: inset 0 0 0 1px darken($base, 10%) !default;
+$list-item-focused-border: darken($base, 10%) !default;
 
 @include exports('popup/component') {
-.popup .list-container {
-    background-color: $list-container-background;
-    border-color: $list-container-border;
+.popup {
     box-shadow: $list-container-box-shadow;
 
-    &.state-border-up {
-        border-radius: 0 0 $border-radius $border-radius;
-    }
+    .list-container {
+        background-color: $list-container-background;
+        border-color: $list-container-border;
 
-    &.state-border-down {
-        border-radius: $border-radius $border-radius 0 0;
-    }
+        &.state-border-up {
+            border-radius: 0 0 $border-radius $border-radius;
+        }
 
-    .item,
-    .list-optionlabel {
-        &.state-selected {
-            box-shadow: none;
+        &.state-border-down {
+            border-radius: $border-radius $border-radius 0 0;
+        }
+
+        .item,
+        .list-optionlabel {
+            &.state-selected {
+                box-shadow: none;
+            }
+        }
+
+        .item:hover,
+        .list-optionlabel:hover {
+            color: $hover-text-color;
+            background-color: $hover-background;
+
+            &.state-selected {
+                background-color: blend-multiply($selected-background, $hover-background);
+                color: $selected-text-color;
+            }
+        }
+
+        .item.state-focused {
+            border-color: $list-item-focused-border;
+            box-shadow: $list-item-focused-box-shadow;
         }
     }
+}
 
-    .item:hover,
-    .list-optionlabel:hover {
-        color: $hover-text-color;
-        background-color: $hover-background;
-
-        &.state-selected {
-            background-color: blend-multiply($selected-background, $hover-background);
-            color: $selected-text-color;
-        }
-    }
-
+.popup,
+.list-container {
+    border-radius: $border-radius;
 }
 }

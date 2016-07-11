@@ -1,18 +1,19 @@
 @import '../base/states';
 @import './layout';
 
-$button-border: lighten($base, 1%) !default;
+$button-border: rgba(0, 0, 0, .08) !default;
 $button-background: $background !default;
 $button-hover-border: darken($button-border, 7%) !default;
 $button-active-border: rgba(0, 0, 0, .1) !default;
 $button-disabled-border: $button-border;
 
-$button-gradient: linear-gradient(lighten($base, 5%), lighten($base, 3%)) !default;
-$button-hover-gradient: linear-gradient(lighten($base, 2%), $base) !default;
-$button-active-gradient: linear-gradient(lighten($base, 3%), lighten($base, 5%)) !default;
+$button-gradient: linear-gradient(darken($base, 1%), darken($base, 3%)) !default;
+$button-hover-gradient: linear-gradient(darken($hover-background, 1%), darken($hover-background, 2%)) !default;
+$button-active-gradient: linear-gradient(darken($base, 3%), darken($base, 1%)) !default;
 
-$button-focused-box-shadow: 0 0 0 2px lighten($base, 3%) !default;
-$button-active-box-shadow: inset 0 3px 5px $base !default;
+$button-focused-box-shadow: 0 0 0 2px darken($background, 6%) !default;
+$button-active-box-shadow: inset 0 3px 5px darken($background, 9%) !default;
+$button-active-focused-box-shadow: inset 0 3px 5px darken($background, 9%), 0 0 0 2px darken($background, 6%) !default;
 
 $primary-background: $accent !default;
 $primary-border: $accent !default;
@@ -20,6 +21,7 @@ $primary-focused-box-shadow: 0 0 0 2px lighten($primary-background, 23%) !defaul
 $primary-active-background: $primary-background !default;
 $primary-active-box-shadow: inset 0 3px 5px desaturate($primary-background, 3%) !default;
 $primary-disabled-background: $primary-background !default;
+$primary-active-focused-box-shadow: inset 0 3px 5px desaturate($primary-background, 3%), 0 0 0 2px lighten($primary-background, 23%) !default;
 
 $primary-gradient: linear-gradient(adjust-hue($primary-background, 3), $primary-background) !default;
 $primary-hover-gradient: linear-gradient(adjust-hue($primary-background, 6), adjust-hue($primary-background, 3)) !default;
@@ -58,6 +60,13 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
         box-shadow: $button-active-box-shadow;
     }
 
+    &:active:focus,
+    &.state-active:focus,
+    &.state-focused:active,
+    &.state-active.state-focused {
+        box-shadow: $button-active-focused-box-shadow;
+    }
+
     &[disabled],
     &.state-disabled,
     &.state-disabled:hover,
@@ -65,6 +74,7 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
     [disabled] &,
     &.state-disabled:hover,
     &.state-disabled:active {
+        color: $normal-text-color;
         background-image: $button-gradient;
         border-color: $button-disabled-border;
         opacity: .7;
@@ -93,6 +103,11 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
     &:active {
         background-image: $primary-active-gradient;
         box-shadow: $primary-active-box-shadow;
+    }
+
+    &:active:focus,
+    &.state-active:focus {
+        box-shadow: $primary-active-focused-box-shadow;
     }
 
     &.state-disabled,

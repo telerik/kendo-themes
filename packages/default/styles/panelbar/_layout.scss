@@ -37,6 +37,14 @@
     text-decoration: none;
 }
 
+.panelbar > .item > .link {
+    padding: .214em 2em .214em .714em;
+}
+
+.panelbar > .item:last-child > .link {
+    border-bottom: 0;
+}
+
 .panelbar-expand,
 .panelbar-collapse {
     margin-top: -8px;
@@ -57,7 +65,7 @@
 .panel > .item > .link {
     border-bottom: 0;
     font-size: .95em;
-    line-height: 2.2;
+    line-height: 2.3;
 }
 
 .panel .panel > .item > .link {
@@ -71,5 +79,4 @@
 .panel .panel {
     border-bottom: 0;
 }
-
 }

@@ -1,24 +1,24 @@
 $accent: #ff6358 !default;
-$base: #e9e9e9 !default;
+$base: #f9f9f9 !default;
 $background: #fff !default;
 
-$border-radius: 4px !default;
+$border-radius: 2px !default;
 
-$normal-background: #fff !default;
-$normal-text-color: #2e2e2e !default;
-$hover-background: #ececec !default;
-$hover-text-color: #2e2e2e !default;
+$normal-background: $background !default;
+$normal-text-color: #656565 !default;
+$hover-background: #ededed !default;
+$hover-text-color: $normal-text-color !default;
 $selected-background: $accent !default;
 $selected-text-color: #fff !default;
 
-$error: #ffe0d9 !default;
-$warning: #ffe79e !default;
-$success: #eaf7ec !default;
-$info: #e5f5fa !default;
+$error: #f31700 !default;
+$warning: #ffc000 !default;
+$success: #37b400 !default;
+$info: #0058e9 !default;
 
-$series-a: #ff6800 !default;
-$series-b: #a0a700 !default;
-$series-c: #ff8d00 !default;
-$series-d: #678900 !default;
-$series-e: #ffb53c !default;
-$series-f: #396000 !default;
+$series-a: #ff6358 !default;
+$series-b: #ffd246 !default;
+$series-c: #78d237 !default;
+$series-d: #28b4c8 !default;
+$series-e: #2d73f5 !default;
+$series-f: #aa46be !default;

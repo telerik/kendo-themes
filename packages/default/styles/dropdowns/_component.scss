@@ -4,40 +4,51 @@
 @import './layout';
 
 $dropdowns-background-color: lighten($base, 1%) !default;
-$dropdowns-border-color: darken($base, 14%) !default;
-$dropdowns-shadow-color: rgba(0, 0, 0, .3) !default;
+$dropdowns-border-color: rgba(0, 0, 0, .08) !default;;
 
-$dropdowns-hover-border-color: darken($base, 20%) !default;
+$dropdowns-gradient: linear-gradient(darken($base, 1%), darken($base, 3%)) !default;
+
+$dropdowns-hover-gradient: linear-gradient(darken($hover-background, 1%), darken($hover-background, 2%)) !default;
+
+
+$dropdowns-active-gradient: linear-gradient(darken($base, 3%), darken($base, 1%)) !default;
+
+
+$dropdowns-hover-border-color: rgba(0, 0, 0, .15) !default;
 
 $dropdowns-focused-background-color: saturate($hover-background, 1%) !default;
-$dropdowns-focused-border-color: darken($base, 20%) !default;
-$dropdowns-focused-box-shadow: 0 0 4px 0 $dropdowns-shadow-color !default;
+$dropdowns-focused-border-color: $dropdowns-hover-border-color;
+$dropdowns-focused-box-shadow: 0 0 0 2px darken($background, 6%) !default;
+
+$dropdowns-invalid-background: $error !default;
+$dropdowns-invalid-color: $selected-text-color !default;
 
 @include exports('dropdowns/component') {
 
-.autocomplete,
-.autocomplete .input,
-.multiselect,
 .combobox,
 .dropdown,
 .dropdown-wrap {
     border-radius: $border-radius;
 }
 
-.autocomplete,
 .dropdown-wrap {
     background-color: $dropdowns-background-color;
-    background-position: 50% 50%;
+    background-image: $dropdowns-gradient;
     border-color: $dropdowns-border-color;
 
     &:hover {
         background-color: $hover-background;
+        background-image: $dropdowns-hover-gradient;
         border-color: $dropdowns-hover-border-color;
+
+        .select {
+            background-color: $hover-background;
+            background-image: $dropdowns-hover-gradient;
+            border-color: $dropdowns-hover-border-color;
+        }
     }
 
     &.state-focused {
-        background-color: $dropdowns-focused-background-color;
-        background-position: 50% 50%;
         border-color: $dropdowns-focused-border-color;
         box-shadow: $dropdowns-focused-box-shadow;
         outline: 0;
@@ -50,6 +61,38 @@ $dropdowns-focused-box-shadow: 0 0 4px 0 $dropdowns-shadow-color !default;
         background-position: 50% 50%;
         border-color: $dropdowns-border-color;
     }
+
+    &.state-invalid {
+        color: $dropdowns-invalid-color;
+        background-color: $dropdowns-invalid-background;
+        background-image: none;
+
+        >.input {
+            color: $dropdowns-invalid-color;
+        }
+    }
+
+    .input {
+        border-radius: $border-radius 0 0 $border-radius;
+    }
+
+    > .select {
+        border-radius: 0 $border-radius $border-radius 0;
+    }
+}
+
+.combobox {
+    .dropdown-wrap.state-invalid {
+        >.input {
+            color: $normal-text-color;
+        }
+
+        .select {
+            color: $dropdowns-invalid-color;
+            background-color: $dropdowns-invalid-background;
+            background-image: none;
+        }
+    }
 }
 
 .textbox {
@@ -61,55 +104,7 @@ $dropdowns-focused-box-shadow: 0 0 4px 0 $dropdowns-shadow-color !default;
     }
 }
 
-.combobox .select {
-    border-color: $dropdowns-border-color;
-}
-
-.dropdown .input {
-    color: $normal-text-color;
-}
-
-.dropdown-wrap {
-    .input {
-        border-radius: $border-radius 0 0 $border-radius;
-    }
-
-    > .select {
-        border-radius: 0 $border-radius $border-radius 0;
-    }
-}
-
-.autocomplete.state-border-down,
-.autocomplete.state-border-down .input,
-.multiselect.state-border-down,
 .dropdown-wrap.state-border-down {
     border-radius: $border-radius $border-radius 0 0;
-}
-
-.multiselect {
-    background-color: $background;
-    border-color: $dropdowns-border-color;
-
-    &.state-focused {
-        box-shadow: $dropdowns-focused-box-shadow;
-    }
-
-    .button {
-        background-color: $base;
-        border-color: darken($base, 14%);
-
-        &.state-hover {
-            background-color: $hover-background;
-            border-color: $hover-background;
-        }
-    }
-
-    &.state-border-down .multiselect-wrap {
-        border-radius: ($border-radius - 1) ($border-radius - 1) 0 0;
-    }
-
-    .state-border-down .multiselect-wrap {
-        border-radius: ($border-radius - 1) ($border-radius - 1) 0 0;
-    }
 }
 }

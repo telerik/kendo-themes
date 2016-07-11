@@ -122,7 +122,7 @@ $input-indent: .33em;
 
 .combobox .select {
     border-style: solid;
-    border-width: 0 0 0 1px;
+    border-width: 0;
     border-color: inherit;
 }
 
@@ -205,15 +205,6 @@ $input-indent: .33em;
 
 .list {
     height: auto;
-}
-
-.popup .list .item,
-.list-optionlabel,
-.popup > .group-header,
-.popup > .virtual-wrap > .group-header {
-    padding: 1px 5px;
-    line-height: 1.8em;
-    min-height: 1.8em;
 }
 
 .popup .list .state-hover,
@@ -331,9 +322,9 @@ textarea.textbox {
 }
 
 input.textbox {
-    height: ($input-height + .48em);
+    height: ($input-height + .35em);
     text-indent: $input-indent;
-    line-height: 1.6em;
+    line-height: 2em;
 }
 
 .ie input.textbox {

@@ -1,11 +1,12 @@
 @import '../base/states';
 @import './layout';
+@import '../mixins/blend-modes';
 
 $tabstrip-tabs-color: $accent !default;
 $tabstrip-background-color: $background !default;
 $tabstrip-border-color: rgba(0, 0, 0, .08) !default;
-$tabstrip-hover-color: darken($tabstrip-tabs-color, 4%) !default;
-$tabstrip-active-color: lighten($normal-text-color, 22%) !default;
+$tabstrip-hover-color: blend-multiply($accent, darken($background, 8%)) !default;
+$tabstrip-active-color: $normal-text-color !default;
 $tabstrip-active-background-color: desaturate($background, 1%) !default;
 $tabstrip-active-border-color: darken($base, 29%) !default;
 $tabstrip-disabled-color: darken($background, 27%) !default;
@@ -13,10 +14,11 @@ $tabstrip-disabled-color: darken($background, 27%) !default;
 @include exports('tabstrip/component') {
 
 .tabstrip {
-    background-color: $tabstrip-background-color;
+    background-color: transparent;
 
     .item {
         border-color: transparent;
+        border-radius: $border-radius $border-radius 0 0;
 
         .link {
             color: $tabstrip-tabs-color;
@@ -46,11 +48,42 @@ $tabstrip-disabled-color: darken($background, 27%) !default;
     .content {
         color: $tabstrip-active-color;
         border-color: $tabstrip-border-color;
+        border-radius: 0 0 $border-radius $border-radius;
     }
 
     > .state-active,
     .tabstrip-items .state-active {
         background-color: $tabstrip-active-background-color;
+    }
+
+    &.tabstrip-right {
+        .content {
+            border-radius: $border-radius 0 0 $border-radius;
+        }
+
+        .item {
+            border-radius: 0 $border-radius $border-radius 0;
+        }
+    }
+
+    &.tabstrip-left {
+        .content {
+            border-radius: 0 $border-radius $border-radius 0;
+        }
+
+        .item {
+            border-radius: $border-radius 0 0 $border-radius;
+        }
+    }
+
+    &.tabstrip-bottom {
+        .content {
+            border-radius: $border-radius $border-radius 0 0;
+        }
+
+        .item {
+            border-radius: 0 0 $border-radius $border-radius;
+        }
     }
 }
 }

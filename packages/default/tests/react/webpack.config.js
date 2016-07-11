@@ -1,3 +1,5 @@
+"use strict";
+
 const StringReplacePlugin = require("string-replace-webpack-plugin");
 const commonTasks = require('@telerik/kendo-common-tasks');
 const path = require('path');

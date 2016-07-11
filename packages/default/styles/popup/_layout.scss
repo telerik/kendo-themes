@@ -29,9 +29,9 @@
     .list-optionlabel,
     > .group-header,
     > .virtual-wrap > .group-header {
-        padding: 2px 8px;
-        line-height: 1.8em;
-        min-height: 1.8em;
+        padding: 1px 5px;
+        line-height: 2em;
+        min-height: 2em;
     }
 
     .list-filter {
@@ -41,6 +41,8 @@
         > .textbox {
             padding-right: 20px;
             width: 100%;
+            border-width: 0 0 1px;
+            height: 2.143em; // $input-height + padding + border
         }
 
         > .icon {

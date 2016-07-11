@@ -1,9 +1,15 @@
 @import '../base/states';
 @import './layout';
+@import '../mixins/blend-modes';
 
+
+$panelbar-header-color: $accent !default;
 $panelbar-color: $normal-text-color !default;
-$panelbar-border-color: $widget-border-color !default;
-$panelbar-background-color: $background !default;
+$panelbar-border-color: rgba(0, 0, 0, .08) !default;
+$panelbar-header-background: $background !default;
+$panelbar-background: $base !default;
+$panelbar-hover-color: blend-multiply($accent, darken($background, 8%)) !default;
+$panelbar-focused-box-shadow: inset 0 0 0 2px darken($base, 8%) !default;
 
 @include exports('panelbar/component') {
 
@@ -15,31 +21,52 @@ $panelbar-background-color: $background !default;
         border-color: $panelbar-border-color;
     }
 
-    .content,
-    .item,
-    .panel {
-        background-color: $panelbar-background-color;
-    }
+    .item {
+        > .link {
+            color: $panelbar-color;
 
-    .link:hover {
-        background-color: $hover-background;
-        border-color: $hover-border-color;
-    }
-
-    .link.state-selected {
-        background-color: $selected-background;
-        color: $selected-text-color;
-
-        &:hover {
-            background-color: darken($selected-background, 2%);
+            &.state-focused {
+                box-shadow: $panelbar-focused-box-shadow;
+            }
         }
     }
 
-    .state-disabled .link,
-    .state-disabled .link:hover {
-        background-color: $header-background;
-        border-color: $panelbar-border-color;
+    >.item>.header {
+        color: $panelbar-header-color;
+        background-color: $panelbar-header-background;
+        background-image: none;
+    }
+
+    .link {
+        &:hover {
+            color: $panelbar-hover-color;
+        }
+
+        &.state-selected {
+            background-color: $selected-background;
+            color: $selected-text-color;
+
+            &:hover {
+                background-color: darken($selected-background, 2%);
+            }
+        }
+    }
+
+    .panel,
+    > .item.state-active>.header  {
+        color: $panelbar-color;
+        background-color: $panelbar-background;
+    }
+
+    >.item.state-active>.header {
+        border-bottom-color: $panelbar-background;
+    }
+
+    .panel {
+        .link:hover {
+            color: $panelbar-color;
+            background: $hover-background;
+        }
     }
 }
-
 }

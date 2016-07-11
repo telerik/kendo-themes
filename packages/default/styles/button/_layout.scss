@@ -1,6 +1,6 @@
 @import '../icons/main';
 
-$button-padding: 2px 7px !default;
+$button-padding: .375em !default;
 
 @include exports('button/layout') {
 
@@ -11,9 +11,9 @@ $button-padding: 2px 7px !default;
     cursor: pointer;
     display: inline-block;
     font-family: inherit;
-    line-height: 1.72em;
+    line-height: 1em;
     margin: 0;
-    padding: $button-padding;
+    padding: $button-padding ($button-padding * 3);
     text-align: center;
     text-decoration: none;
     user-select: none;
@@ -34,11 +34,20 @@ $button-padding: 2px 7px !default;
     > .image {
         vertical-align: middle;
     }
+
+    .icon,
+    > .image {
+        margin-right: (2 * $button-padding) / 3;
+    }
 }
 
 .button-icon {
-    padding-left: .5em;
-    padding-right: .5em;
+    padding: $button-padding;
+    line-height: 1em;
+
+    .icon {
+        margin-right: 0;
+    }
 }
 
 .button-icon > span {

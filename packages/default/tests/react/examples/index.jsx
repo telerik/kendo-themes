@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom'
 //import { Slider } from '@telerik/kendo-react-inputs';
 //import { Dialog } from '@telerik/kendo-react-dialog';
 import { Button } from '@telerik/kendo-react-buttons';
+import { PanelBar, PanelBarItem, PanelBarContent, PanelBarNavigation } from '@telerik/kendo-react-layout';
 import '@telerik/kendo-theme-default/styles/packages/all.scss';
 import { Stateless as StatelessDropDowns } from '@telerik/kendo-react-dropdowns';
 const { DropDownList, ComboBox, List, ListContainer, ListFilter } = StatelessDropDowns;
@@ -189,6 +190,27 @@ class Container extends React.Component {
                     <List {...ddlProps} height={300} selected={5} focused={3} />
                 </ListContainer>
             </article>
+
+            <article>
+                <h2>PanelBar</h2>
+
+                <PanelBar>
+                    <PanelBarItem title="Item 1 (Default)" id="0"></PanelBarItem>
+                    <PanelBarItem title="Item 2 (Hover)" id="1" headerClassName='__pseudo-hover'></PanelBarItem>
+                    <PanelBarItem title="Item 3 (Expanded)" id="2" expanded={true}>
+                        <PanelBarNavigation>                         
+                            <PanelBarItem title="Item 3.1 (Default)" id="3"></PanelBarItem>
+                            <PanelBarItem title="Item 3.2 (Hover)" id="4" headerClassName='__pseudo-hover'></PanelBarItem>
+                            <PanelBarItem title="Item 3.3 (Disabled)" id="5" disabled></PanelBarItem>
+                            <PanelBarItem title="Item 3.4 (Selected)" id="6" headerClassName='k-state-selected'></PanelBarItem>
+                            <PanelBarItem title="Item 3.5 (Focused)" id="7" headerClassName='k-state-focused'></PanelBarItem>
+                        </PanelBarNavigation>
+                    </PanelBarItem>
+                    <PanelBarItem title="Item 4 (Focused)" id="8" headerClassName='k-state-focused'></PanelBarItem>
+                    <PanelBarItem title="Item 5 (Disabled)" id="9" disabled></PanelBarItem>                    
+                </PanelBar>
+            </article>
+
             </main>
         );
     }
