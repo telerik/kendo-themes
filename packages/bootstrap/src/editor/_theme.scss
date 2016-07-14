@@ -1,0 +1,12 @@
+@include exports("editor/theme") {
+
+	.k-editor {
+		@include appearance( header );
+
+
+		.k-editable-area {
+			@include appearance( input );
+		}
+	}
+
+}

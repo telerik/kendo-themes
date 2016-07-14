@@ -15,7 +15,7 @@ gulp.task('start', ['sass'], function() {
 });
 
 gulp.task("sass", function() {
-    return gulp.src(STYLES)
+    return gulp.src('src/main.scss')
         .pipe($.sass().on('error', $.sass.logError))
         .pipe(browserSync.stream({match: '**/*.css'}))
         .pipe($.rename({dirname: ''}))
@@ -23,7 +23,7 @@ gulp.task("sass", function() {
 });
 
 gulp.task("minify", ["sass"], function() {
-    return gulp.src('dist/kendo.*.css')
+    return gulp.src('dist/*.css')
         .pipe($.minifyCss())
         .pipe($.rename({suffix: '.min'}))
         .pipe(gulp.dest('dist'))

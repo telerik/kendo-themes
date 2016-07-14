@@ -1,5 +1,3 @@
-//@import "../node_modules/bootstrap/scss/variables";
-
 @function get-bootstrap-var($var-name) {
 	@if map-has-key($bootstrap-vars, $var-name) {
 		@return map-get($bootstrap-vars, $var-name);

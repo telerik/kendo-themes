@@ -1,0 +1,11 @@
+@include exports("scrollview/layout") {
+
+	.km-scrollview {}
+
+
+	.km-scrollview {
+		margin-collapse: separate;
+		user-select: none;
+	}
+
+}
