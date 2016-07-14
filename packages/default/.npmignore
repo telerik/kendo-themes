@@ -1,3 +1,7 @@
 .travis.yml
-dist
+dist/**/*.css
+!dist/packages/*.css
 sass-lint.yml
+tests
+examples
+*.tgz
