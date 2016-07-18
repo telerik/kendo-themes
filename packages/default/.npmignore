@@ -1,6 +1,6 @@
+.tmp/
 .travis.yml
-dist/**/*.css
-!dist/packages/*.css
+dist/*.js
 sass-lint.yml
 tests
 examples
