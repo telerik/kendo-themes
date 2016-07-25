@@ -82,4 +82,46 @@ $focused-item-shadow: inset 0 0 3px 1px darken($base, 10%) !default;
     background-color: saturate($base, 4%);
     border-color: $accent;
 }
+
+    // export variables to allow use in scripts
+    $exported: (
+        accent: $accent,
+        base: $base,
+        background: $background,
+
+        border-radius: $border-radius,
+
+        normal-background: $normal-background,
+        normal-text-color: $normal-text-color,
+        hover-background: $hover-background,
+        hover-text-color: $hover-text-color,
+        selected-background: $selected-background,
+        selected-text-color: $selected-text-color,
+
+        error: $error,
+        warning: $warning,
+        success: $success,
+        info: $info,
+
+        series-a: $series-a,
+        series-b: $series-b,
+        series-c: $series-c,
+        series-d: $series-d,
+        series-e: $series-e,
+        series-f: $series-f
+    );
+
+    @each $name, $value in $exported {
+        $type: type-of($value);
+
+        .var--#{$name} {
+            @if $type == 'color' {
+                // background-color can store any color
+                background-color: $value;
+            } @else if $type == 'number' {
+                // margin-top can store positive & negative values
+                margin-top: $value;
+            }
+        }
+    }
 }
