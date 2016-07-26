@@ -64,6 +64,8 @@
 			.k-input {
 				padding: $input-padding-y $input-padding-x;
 				flex: 1;
+				overflow: hidden;
+				text-overflow: ellipsis;
 			}
 
 			.k-select {
