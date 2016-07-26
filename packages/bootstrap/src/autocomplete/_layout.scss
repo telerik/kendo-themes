@@ -10,18 +10,27 @@
 		position: relative;
 
 		.k-input {
+			width: auto !important;
 			padding: $input-padding-y $input-padding-x;
 			border: 0;
 			outline: 0;
 			color: inherit;
 			background: none;
 			font: inherit;
+			display: block;
+			flex: 1;
 		}
 
-		.k-loading {
+		.k-icon {
+			display: none;
+			align-self: center;
 			position: absolute;
-			top: $input-padding-x;
+			top: $input-padding-y;
 			right: $input-padding-y;
+		}
+		&.k-state-hover .k-i-close,
+		&.k-state-focused .k-i-close {
+			display: block;
 		}
 
 
@@ -35,8 +44,8 @@
 				padding: $input-padding-y-sm $input-padding-x-sm;
 			}
 
-			.k-loading {
-				top: $input-padding-x-sm;
+			.k-icon {
+				top: $input-padding-y-sm;
 				right: $input-padding-y-sm;
 			}
 		}

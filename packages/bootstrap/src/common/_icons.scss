@@ -36,11 +36,11 @@
 	.k-i-sarrow-s:before { content: '\e60a'; }
 	.k-i-sarrow-w:before { content: '\e60b'; }
 	.k-i-expand-n:before { content: '\e60c'; }
-	.k-i-expand-e:before { content: '\e60d'; }
+	.k-i-expand-e:before, .k-i-expand:before { content: '\e60d'; }
 	.k-i-expand-s:before { content: '\e60e'; }
 	.k-i-expand-w:before { content: '\e60f'; }
 	.k-i-collapse-ne:before { content: '\e610'; }
-	.k-i-collapse-se:before { content: '\e611'; }
+	.k-i-collapse-se:before, .k-i-collapse:before { content: '\e611'; }
 	.k-i-collapse-sw:before { content: '\e612'; }
 	.k-i-collapse-nw:before { content: '\e613'; }
 	.k-i-resize-ne:before { content: '\e614'; }
@@ -52,7 +52,7 @@
 	.k-i-arrowhead-s:before { content: '\e61a'; }
 	.k-i-arrowhead-w:before { content: '\e61b'; }
 	.k-i-pencil:before { content: '\e61c'; }
-	.k-i-x:before { content: '\e61d'; }
+	.k-i-x:before, .k-i-close:before { content: '\e61d'; }
 	.k-i-checkmark:before { content: '\e61e'; }
 	.k-i-deny:before { content: '\e61f'; }
 	.k-i-trash:before { content: '\e620'; }
@@ -91,8 +91,8 @@
 	.k-i-rows:before { content: '\e640'; }
 	.k-i-columns:before { content: '\e641'; }
 	.k-i-hamburger:before { content: '\e642'; }
-	.k-i-vbars:before { content: '\e643'; }
-	.k-i-hbars:before { content: '\e644'; }
+	.k-i-vbars:before, .k-i-vbar:before { content: '\e643'; }
+	.k-i-hbars:before, .k-i-hbar:before { content: '\e644'; }
 	.k-i-move:before { content: '\e645'; }
 	.k-i-group:before { content: '\e646'; }
 	.k-i-ungroup:before { content: '\e647'; }
@@ -140,8 +140,8 @@
 	.k-i-sort-asc:before { content: '\e66f'; }
 	.k-i-sort-desc:before { content: '\e670'; }
 	.k-i-unsort:before { content: '\e671'; }
-	.k-i-hyperlink:before { content: '\e672'; }
-	.k-i-hyperlinremove:before { content: '\e673'; }
+	.k-i-hyperlink:before, .k-i-create-link:before { content: '\e672'; }
+	.k-i-hyperlinkremove:before, .k-i-unlink:before { content: '\e673'; }
 	.k-i-clearformat:before { content: '\e674'; }
 	.k-i-html:before { content: '\e675'; }
 	.k-i-exception:before { content: '\e676'; }
@@ -180,5 +180,13 @@
 	.k-i-file-horizontal:before { content: '\e901'; }
 	.k-i-folder:before { content: '\e902'; }
 	.k-i-folder-open:before { content: '\e903'; }
+
+
+	// Fix those
+	.k-i-close,
+	.k-i-create-link,
+	.k-i-unlink {
+		background-color: red;
+	}
 
 }

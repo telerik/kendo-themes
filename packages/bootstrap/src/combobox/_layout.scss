@@ -15,6 +15,19 @@
 			font: inherit;
 		}
 
+		.k-i-close {
+			display: none;
+			align-self: center;
+			position: absolute;
+			// TODO: position [x] correctly
+			top: $input-padding-y;
+			right: $input-padding-y;
+		}
+		.k-state-hover .k-i-close,
+		.k-state-focused .k-i-close {
+			display: block;
+		}
+
 		.k-select {
 			border-width: 0 0 0 1px;
 			border-style: solid;

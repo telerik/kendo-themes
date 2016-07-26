@@ -7,6 +7,7 @@
 		display: inline-block;
 		vertical-align: middle;
 		box-sizing: border-box;
+		position: relative;
 
 		.k-multiselect-wrap {
 			margin: (-$input-padding-y/4) 0;
@@ -48,6 +49,19 @@
 			font: inherit;
 			display: inline-block;
 			float: left;
+		}
+
+
+		// Icons
+		.k-i-loading {
+			position: absolute;
+			right: $padding-y-sm;
+			top: $padding-y-sm;
+		}
+		.k-multiselect-wrap > .k-i-close {
+			position: absolute;
+			right: $padding-y-sm * 2 + 1rem;
+			top: $padding-y-sm;
 		}
 
 
