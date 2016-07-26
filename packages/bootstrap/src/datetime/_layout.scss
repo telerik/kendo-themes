@@ -27,9 +27,6 @@
 			border-style: solid;
 			display: flex;
 			align-items: center;
-
-			.k-icon {}
-			.k-icon + .k-icon {}
 		}
 	}
 
@@ -86,7 +83,7 @@
 		.k-select {
 			padding: 0;
 
-			.k-icon {
+			.k-link {
 				padding: $button-padding-y;
 			}
 		}
@@ -99,7 +96,7 @@
 				padding: $input-padding-y-sm $input-padding-x-sm;
 			}
 
-			.k-select .k-icon {
+			.k-select .k-link {
 				padding: $button-padding-y-sm;
 			}
 		}

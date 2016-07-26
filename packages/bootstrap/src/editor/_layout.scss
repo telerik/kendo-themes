@@ -60,4 +60,67 @@
 		outline: 0;
 	}
 
+
+	// Insert table
+	.k-ct-popup {
+		padding: $padding-y-sm;
+		width: (1rem + $padding-y-sm) * 8;
+	}
+	.k-ct-cell {
+		margin: $padding-y-sm / 2;
+		width: 1rem;
+		height: 1rem;
+		box-sizing: border-box;
+		border: 1px solid;
+		border-color: inherit;
+		display: inline-block;
+		vertical-align: top;
+		overflow: hidden;
+		opacity: .7;
+	}
+
+
+	// Editor dialog
+	.k-editor-dialog {
+		padding: $padding-y;
+		width: 400px;
+		border-color: inherit;
+
+		.k-edit-label {
+			padding-bottom: $padding-y;
+			width: 25%;
+			text-align: right;
+			float: left;
+			clear: both;
+		}
+		.k-edit-field {
+			padding-bottom: $padding-y;
+			width: 66%;
+			float: right;
+			clear: right;
+
+			.k-textbox {
+				width: 100%;
+				box-sizing: border-box;
+			}
+		}
+
+		.k-edit-buttons {
+			margin: $padding-y (-$padding-y) (-$padding-y);
+			padding: $padding-y;
+			border-top: 1px solid;
+			border-color: inherit;
+			text-align: right;
+			clear: both;
+
+			.k-button + .k-button {
+				margin-left: $padding-y;
+			}
+		}
+	}
+	#k-editor-image-width,
+	#k-editor-image-height {
+		width: 5em;
+	}
+
 }
