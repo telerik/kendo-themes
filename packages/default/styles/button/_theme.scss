@@ -32,7 +32,7 @@ $buttongroup-button-focused-box-shadow: inset 0 0 0 2px darken($base, 5%) !defau
 $buttongroup-button-hover-box-shadow: inset 0 0 0 1px darken($base, 6%) !default;
 $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary-background, 2%) !default;
 
-@include exports('button/component') {
+@include exports('button/theme') {
 
 .button {
     color: $normal-text-color;

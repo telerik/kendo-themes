@@ -2,7 +2,7 @@
 @import '../animation/main';
 @import './layout';
 
-@include exports('calendar/component') {
+@include exports('calendar/theme') {
 
 $dateinputs-background-color: lighten($base, 1%);
 $dateinputs-border-color: darken($base, 14%);

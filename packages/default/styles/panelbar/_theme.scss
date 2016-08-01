@@ -11,7 +11,7 @@ $panelbar-background: $base !default;
 $panelbar-hover-color: blend-multiply($accent, darken($background, 8%)) !default;
 $panelbar-focused-box-shadow: inset 0 0 0 2px darken($base, 8%) !default;
 
-@include exports('panelbar/component') {
+@include exports('panelbar/theme') {
 
 .panelbar {
     &.header,

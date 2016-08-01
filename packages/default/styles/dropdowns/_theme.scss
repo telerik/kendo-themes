@@ -23,7 +23,7 @@ $dropdowns-focused-box-shadow: 0 0 0 2px darken($background, 6%) !default;
 $dropdowns-invalid-background: $error !default;
 $dropdowns-invalid-color: $selected-text-color !default;
 
-@include exports('dropdowns/component') {
+@include exports('dropdowns/theme') {
 
 .combobox,
 .dropdown,

@@ -5,7 +5,7 @@ $progressbar-base: saturate($base, 4%) !default;
 $progressbar-border: darken($base, 4%) !default;
 $progressbar-active-border: darken($accent, 4%) !default;
 
-@include exports('progressbar/component') {
+@include exports('progressbar/theme') {
 
     .progressbar {
         background-color: $progressbar-base;

@@ -11,7 +11,7 @@ $tabstrip-active-background-color: desaturate($background, 1%) !default;
 $tabstrip-active-border-color: darken($base, 29%) !default;
 $tabstrip-disabled-color: darken($background, 27%) !default;
 
-@include exports('tabstrip/component') {
+@include exports('tabstrip/theme') {
 
 .tabstrip {
     background-color: transparent;
