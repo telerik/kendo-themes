@@ -1,0 +1,85 @@
+@include exports("pager/layout") {
+
+	// Pager
+	.k-pager-wrap {
+		padding: $padding-y;
+		border-width: 1px;
+		line-height: $form-line-height;
+		display: flex;
+		align-items: center;
+
+		.k-link,
+		.k-state-selected {
+			padding: $button-padding-y;
+			width: $form-line-height-rem;
+			height: $form-line-height-rem;
+			border-width: 1px;
+			border-style: solid;
+			display: inline-block;
+			position: relative;
+			z-index: 1;
+		}
+		.k-link:hover,
+		.k-state-selected {
+			z-index: 2;
+		}
+		.k-link + .k-link,
+		.k-link + .k-pager-numbers,
+		.k-pager-numbers + .k-link {
+			margin-left: -1px;
+		}
+
+
+		> .k-pager-nav {}
+		> .k-pager-nav + .k-pager-nav {}
+
+
+		.k-pager-numbers {
+			display: inline-flex;
+			flex-direction: row;
+
+			li {
+				display: inline-block;
+			}
+			li + li {
+				margin-left: -1px;
+			}
+
+			.k-current-page {
+				display: none;
+			}
+			.k-current-page + li {
+				margin-left: 0;
+			}
+		}
+
+
+		.k-label {
+			margin: 0 $spacer-x;
+			display: inline-block;
+		}
+		.k-pager-input {
+
+			.k-textbox {
+				margin: 0 1ex;
+				width: 3em;
+			}
+		}
+		.k-pager-sizes {
+			margin: 0 ( 2 * $spacer-x );
+
+			.k-dropdown {
+				margin-right: 1ex;
+			}
+		}
+		.k-pager-refresh {
+			order: 10;
+		}
+		.k-pager-info {
+			flex: 1;
+			text-align: right;
+		}
+
+	}
+
+}
