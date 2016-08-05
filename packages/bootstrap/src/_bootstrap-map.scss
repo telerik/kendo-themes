@@ -50,6 +50,13 @@ $bootstrap-vars: (
 	input-padding-y-sm: $input-padding-y-sm,
 	input-line-height: $input-line-height,
 
+	table-alt-bg: $table-bg-accent,
+	table-hover-bg: $table-bg-hover,
+	table-active-bg: $table-bg-active,
+
+	cell-padding: $table-cell-padding,
+	cell-padding-sm: $table-sm-cell-padding,
+
 
 	// Colors
 

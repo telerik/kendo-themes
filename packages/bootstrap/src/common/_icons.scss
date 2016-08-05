@@ -52,11 +52,11 @@
 	.k-i-arrowhead-s:before { content: '\e61a'; }
 	.k-i-arrowhead-w:before { content: '\e61b'; }
 	.k-i-pencil:before { content: '\e61c'; }
-	.k-i-x:before, .k-i-close:before { content: '\e61d'; }
+	.k-i-x:before, .k-i-close:before, .k-i-group-delete:before { content: '\e61d'; }
 	.k-i-checkmark:before { content: '\e61e'; }
-	.k-i-deny:before { content: '\e61f'; }
+	.k-i-deny:before, .k-i-denied:before, .k-i-cancel:before { content: '\e61f'; }
 	.k-i-trash:before { content: '\e620'; }
-	.k-i-plus:before { content: '\e621'; }
+	.k-i-plus:before, .k-i-add:before { content: '\e621'; }
 	.k-i-splus:before { content: '\e622'; }
 	.k-i-minus:before { content: '\e623'; }
 	.k-i-sminus:before { content: '\e624'; }
@@ -185,7 +185,11 @@
 	// Fix those
 	.k-i-close,
 	.k-i-create-link,
-	.k-i-unlink {
+	.k-i-unlink,
+	.k-i-add,
+	.k-i-denied,
+	.k-i-group-delete,
+	.k-i-cancel {
 		background-color: red;
 	}
 

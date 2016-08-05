@@ -37,6 +37,8 @@ $header-padding-x: get-bootstrap-var( header-padding-x );
 $header-padding-y: get-bootstrap-var( header-padding-y );
 
 $form-line-height: get-bootstrap-var( form-line-height );
+$form-line-height-em: $form-line-height * 1em;
+$form-line-height-rem: $form-line-height * 1rem;
 
 $button-padding-x: get-bootstrap-var( button-padding-x );
 $button-padding-y: get-bootstrap-var( button-padding-y );
@@ -48,8 +50,14 @@ $input-padding-y: get-bootstrap-var( input-padding-y );
 $input-padding-x-sm: get-bootstrap-var( input-padding-x-sm );
 $input-padding-y-sm: get-bootstrap-var( input-padding-y-sm );
 
+$table-alt-bg: get-bootstrap-var( table-alt-bg );
+$table-hover-bg: get-bootstrap-var( table-hover-bg );
+$table-active-bg: get-bootstrap-var( table-active-bg );
+
 $cell-padding-x: $padding-x-sm;
 $cell-padding-y: $padding-y-sm;
+$cell-padding: get-bootstrap-var( cell-padding );
+$cell-padding-sm: get-bootstrap-var( cell-padding-sm );
 
 
 
