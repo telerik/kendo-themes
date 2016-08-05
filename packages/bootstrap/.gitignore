@@ -1,5 +1,5 @@
 node_modules
 dist/*
-!dist/kendo.bootstrap-v4.*
+!dist/main.css
 tmp
 .DS_Store
