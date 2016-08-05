@@ -1,6 +1,6 @@
 # Default theme for Kendo UI
 
-A SCSS-based theme for Kendo UI components. Currently available for **Kendo UI for React** and **Kendo UI for AngularJS**.
+A SCSS-based theme for Kendo UI components. Currently available for **Kendo UI for React** and **Kendo UI for Angular 2**.
 
 ## Usage
 
@@ -14,7 +14,7 @@ The `webpackThemeConfig` function from the [@telerik/kendo-common-tasks module](
 
 ### With Kendo UI jQuery
 
-Use with the jQuery widgets is currently **not supported**, as this theme is focused on the React / AngularJS offering, and requires changes in order to work with the jQuery widgets.
+Use with the jQuery widgets is currently **not supported**, as this theme is focused on the React / Angular 2 offering, and requires changes in order to work with the jQuery widgets.
 
 ## Customization
 
