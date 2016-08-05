@@ -1,13 +1,13 @@
 @include exports("combobox/layout") {
 
 	// Base
-	.k-combobox {
+	.combobox {
 		border-width: 0;
 		line-height: $form-line-height;
 		display: inline-block;
 		vertical-align: middle;
 
-		.k-input {
+		.input {
 			border: 0;
 			outline: 0;
 			color: inherit;
@@ -15,7 +15,7 @@
 			font: inherit;
 		}
 
-		.k-i-close {
+		.i-close {
 			display: none;
 			align-self: center;
 			position: absolute;
@@ -23,12 +23,12 @@
 			top: $input-padding-y;
 			right: $input-padding-y;
 		}
-		.k-state-hover .k-i-close,
-		.k-state-focused .k-i-close {
+		.state-hover .i-close,
+		.state-focused .i-close {
 			display: block;
 		}
 
-		.k-select {
+		.select {
 			border-width: 0 0 0 1px;
 			border-style: solid;
 		}
@@ -39,11 +39,11 @@
 		// Compact
 		@include compact {
 
-			.k-input {
+			.input {
 				padding: $input-padding-y-sm $input-padding-x-sm;
 			}
 
-			.k-select {
+			.select {
 				padding: $button-padding-y-sm;
 			}
 		}
@@ -51,7 +51,7 @@
 
 	@include exports("dropdownwrap/layout") {
 
-		.k-dropdown-wrap {
+		.dropdown-wrap {
 			padding: 0;
 			border-width: 1px;
 			border-style: solid;
@@ -61,19 +61,19 @@
 			position: relative;
 			cursor: default;
 
-			.k-input {
+			.input {
 				padding: $input-padding-y $input-padding-x;
 				flex: 1;
 				overflow: hidden;
 				text-overflow: ellipsis;
 			}
 
-			.k-select {
+			.select {
 				padding: $button-padding-y;
 				display: flex;
 				align-items: center;
 
-				.k-icon {}
+				.icon {}
 			}
 		}
 	}

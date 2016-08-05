@@ -1,10 +1,10 @@
 @include exports("editor/theme") {
 
-	.k-editor {
+	.editor {
 		@include appearance( header );
 
 
-		.k-editable-area {
+		.editable-area {
 			@include appearance( input );
 		}
 	}

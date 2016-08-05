@@ -1,27 +1,27 @@
 @include exports("menu/theme") {
 
 	// Theme
-	.k-menu {
+	.menu {
 		border-color: $gray-lightest;
 		color: $navbar-light-color;
 		background-color: $gray-lightest;
 
-		.k-link {}
-		.k-item.k-state-hover > .k-link {
+		.link {}
+		.item.state-hover > .link {
 			color: $navbar-light-hover-color;
 		}
 
 	}
-	.k-menu-group {
+	.menu-group {
 		color: $dropdown-link-color;
 
-		.k-link {}
-		.k-item.k-state-hover > .k-link,
-		.k-item > .k-link.k-state-active {
+		.link {}
+		.item.state-hover > .link,
+		.item > .link.state-active {
 			color: $dropdown-link-hover-color;
 			background-color: $dropdown-link-hover-bg;
 		}
-		.k-item.k-state-hover > .k-link.k-state-active {
+		.item.state-hover > .link.state-active {
 			color: $dropdown-link-active-color;
 			background-color: $dropdown-link-active-bg;
 		}

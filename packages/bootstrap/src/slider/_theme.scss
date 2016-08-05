@@ -1,23 +1,23 @@
 @include exports("slider/theme") {
 
-	.k-slider {
+	.slider {
 
-		.k-slider-track {
+		.slider-track {
 			background: $header-bg;
 		}
-		.k-slider-selection {
+		.slider-selection {
 			background: $header-selected-bg;
 		}
 
 
 		// Drag handle
-		.k-draghandle {
+		.draghandle {
 			@include appearance( button );
 		}
-		.k-draghandle:hover {
+		.draghandle:hover {
 			@include appearance( hovered-button );
 		}
-		.k-draghandle.k-state-active {
+		.draghandle.state-active {
 			@include appearance( active-button );
 		}
 

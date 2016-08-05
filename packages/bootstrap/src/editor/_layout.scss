@@ -1,14 +1,14 @@
 @include exports("editor/layout") {
 
 	// Base
-	.k-editor {
+	.editor {
 		border-collapse: separate;
 		border-spacing: 4px;
 		vertical-align: top;
 		position: relative;
 		table-layout: fixed;
 
-		.k-content {
+		.content {
 			margin: 0;
 			padding: 0;
 			width: 100%;
@@ -18,7 +18,7 @@
 			display: block;
 		}
 	}
-	.k-editor-inline {
+	.editor-inline {
 		border-width: 2px;
 		padding: $padding-y-sm $padding-x-sm;
 		word-wrap: break-word;
@@ -28,30 +28,30 @@
 
 	// Toolbar
 	.keditor-toolbar-wrap {}
-	.k-editor-toolbar {
+	.editor-toolbar {
 
 
 		// Group
-		.k-tool-group {}
-		.k-tool-group .k-state-disabled {
+		.tool-group {}
+		.tool-group .state-disabled {
 			display: none;
 		}
 
 
 		// Tools
-		.k-tool {
+		.tool {
 			padding: $button-padding-y;
 		}
 
 
-		.k-tool-text {
+		.tool-text {
 			display: none;
 		}
 	}
 
 
 	// Editable area
-	.k-editable-area {
+	.editable-area {
 		padding: $input-padding-y;
 		width: 100%;
 		height: 100%;
@@ -62,11 +62,11 @@
 
 
 	// Insert table
-	.k-ct-popup {
+	.ct-popup {
 		padding: $padding-y-sm;
 		width: (1rem + $padding-y-sm) * 8;
 	}
-	.k-ct-cell {
+	.ct-cell {
 		margin: $padding-y-sm / 2;
 		width: 1rem;
 		height: 1rem;
@@ -81,31 +81,31 @@
 
 
 	// Editor dialog
-	.k-editor-dialog {
+	.editor-dialog {
 		padding: $padding-y;
 		width: 400px;
 		border-color: inherit;
 
-		.k-edit-label {
+		.edit-label {
 			padding-bottom: $padding-y;
 			width: 25%;
 			text-align: right;
 			float: left;
 			clear: both;
 		}
-		.k-edit-field {
+		.edit-field {
 			padding-bottom: $padding-y;
 			width: 66%;
 			float: right;
 			clear: right;
 
-			.k-textbox {
+			.textbox {
 				width: 100%;
 				box-sizing: border-box;
 			}
 		}
 
-		.k-edit-buttons {
+		.edit-buttons {
 			margin: $padding-y (-$padding-y) (-$padding-y);
 			padding: $padding-y;
 			border-top: 1px solid;
@@ -113,13 +113,13 @@
 			text-align: right;
 			clear: both;
 
-			.k-button + .k-button {
+			.button + .button {
 				margin-left: $padding-y;
 			}
 		}
 	}
-	#k-editor-image-width,
-	#k-editor-image-height {
+	#editor-image-width,
+	#editor-image-height {
 		width: 5em;
 	}
 

@@ -1,7 +1,7 @@
 @include exports("dropdownlist/layout") {
 
 	// Base
-	.k-dropdown {
+	.dropdown {
 		border-width: 0;
 		line-height: $form-line-height;
 		display: inline-block;
@@ -13,11 +13,11 @@
 		// Compact
 		@include compact {
 
-			.k-input {
+			.input {
 				padding: $input-padding-y-sm $input-padding-x-sm;
 			}
 
-			.k-select {
+			.select {
 				padding: $button-padding-y-sm;
 			}
 		}
@@ -25,7 +25,7 @@
 
 	@include exports("dropdownwrap/layout") {
 
-		.k-dropdown-wrap {
+		.dropdown-wrap {
 			padding: 0;
 			border-width: 1px;
 			border-style: solid;
@@ -35,19 +35,19 @@
 			position: relative;
 			cursor: default;
 
-			.k-input {
+			.input {
 				padding: $input-padding-y $input-padding-x;
 				flex: 1;
 				overflow: hidden;
 				text-overflow: ellipsis;
 			}
 
-			.k-select {
+			.select {
 				padding: $button-padding-y;
 				display: flex;
 				align-items: center;
 
-				.k-icon {}
+				.icon {}
 			}
 		}
 	}

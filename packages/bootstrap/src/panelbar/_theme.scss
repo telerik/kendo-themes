@@ -1,33 +1,33 @@
 @include exports("panelbar/theme") {
 
 	// Appearance
-	.k-panelbar {
+	.panelbar {
 		@include appearance( panel );
 
 		// Root
-		> .k-item > .k-link {
+		> .item > .link {
 			@include appearance( header );
 		}
-		> .k-item > .k-link.k-state-hover {
+		> .item > .link.state-hover {
 			@include appearance( hovered-header );
 		}
-		> .k-item > .k-link.k-state-selected {
+		> .item > .link.state-selected {
 			@include appearance( selected-header );
 		}
-		> .k-item > .k-link.k-state-focused {
+		> .item > .link.state-focused {
 			border-color: $header-selected-border;
 			box-shadow: inset 0 0 5px $header-selected-border;
 		}
 
 		// Child
-		.k-panel > .k-item > .k-link {}
-		.k-panel > .k-item > .k-link.k-state-hover {
+		.panel > .item > .link {}
+		.panel > .item > .link.state-hover {
 			@include appearance( hovered-node );
 		}
-		.k-panel > .k-item > .k-link.k-state-selected {
+		.panel > .item > .link.state-selected {
 			@include appearance( selected-node );
 		}
-		.k-panel > .k-item > .k-link.k-state-focused {
+		.panel > .item > .link.state-focused {
 			border-color: $node-selected-border;
 			box-shadow: inset 0 0 5px $node-selected-border;
 		}

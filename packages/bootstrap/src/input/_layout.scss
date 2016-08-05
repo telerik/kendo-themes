@@ -1,7 +1,7 @@
 @include exports("input/layout") {
 
 	// Base
-	.k-textbox {
+	.textbox {
 		padding: $input-padding-y $input-padding-x;
 		border-width: 1px;
 		border-style: solid;
@@ -12,7 +12,7 @@
 
 		&:disabled,
 		&[disabled],
-		&.k-disabled {
+		&.disabled {
 			@extend %disabled;
 		}
 

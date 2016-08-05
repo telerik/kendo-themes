@@ -1,43 +1,43 @@
 @include exports("button/theme") {
 
 	// Appearance
-	.k-button {
+	.button {
 		@include appearance( button );
 		@include border-radius( $border-radius );
 
 		&:hover,
-		&.k-state-hover { @include appearance( hovered-button ); }
+		&.state-hover { @include appearance( hovered-button ); }
 		&:active,
-		&.k-state-active { @include appearance( active-button ); }
+		&.state-active { @include appearance( active-button ); }
 	}
 
-	.k-button.k-primary {
+	.button.primary {
 		@include appearance( primary-button );
 
 		&:hover,
-		&.k-state-hover { @include appearance( hovered-primary-button ); }
+		&.state-hover { @include appearance( hovered-primary-button ); }
 		&:active,
-		&.k-state-active { @include appearance( active-primary-button ); }
+		&.state-active { @include appearance( active-primary-button ); }
 	}
 
 
 	// Button group
-	.k-button-group {
+	.button-group {
 
-		.k-button {
+		.button {
 			border-radius: 0;
 		}
 
-		.k-group-start,
-		.k-button:first-child {
+		.group-start,
+		.button:first-child {
 			@include border-radius( $border-radius 0 0 $border-radius );
 		}
-		.k-group-end,
-		.k-button:last-child {
+		.group-end,
+		.button:last-child {
 			@include border-radius( 0 $border-radius $border-radius 0 );
 		}
-		.k-group-start.k-group-end,
-		.k-button:first-child:last-child {
+		.group-start.group-end,
+		.button:first-child:last-child {
 			@include border-radius( $border-radius );
 		}
 
@@ -46,28 +46,28 @@
 }
 
 
-@include exports("km-button/theme") {
+@include exports("button/theme") {
 
 	// Appearance
-	.km-button {
+	.button {
 		@include appearance( button );
 		@include border-radius( $border-radius );
 
-		&.km-state-active { @include appearance( active-button ); }
+		&.state-active { @include appearance( active-button ); }
 	}
 
 
 	// Button group
-	.km-buttongroup {
+	.buttongroup {
 
-		.km-button {
+		.button {
 			border-radius: 0;
 		}
 
-		.km-button:first-child {
+		.button:first-child {
 			@include border-radius( $border-radius 0 0 $border-radius );
 		}
-		.km-button:last-child {
+		.button:last-child {
 			@include border-radius( 0 $border-radius $border-radius 0 );
 		}
 

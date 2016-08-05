@@ -1,47 +1,47 @@
 @include exports("chart/layout") {
 
 	// Base
-	.k-chart,
-	.k-gauge,
-	.k-sparkline,
-	.k-stockchart {
+	.chart,
+	.gauge,
+	.sparkline,
+	.stockchart {
 		background-color: transparent;
 		-webkit-touch-callout: none;
 		-webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
 	}
 
 	// Charts
-	.k-chart,
-	.k-stockchart {
+	.chart,
+	.stockchart {
 		height: 400px;
 	}
 
 
 	// Gauges
-	.k-gauge {
+	.gauge {
 		text-align: left;
 		position: relative;
 	}
 
 	// Sparkline
-	.k-sparkline,
-	.k-sparkline span {
+	.sparkline,
+	.sparkline span {
 		display: inline-block;
 		vertical-align: top;
 	}
-	.k-sparkline span {
+	.sparkline span {
 		height: 100%;
 		width: 100%;
 	}
 
 
 	// Stockchart selector
-	.k-selector {
+	.selector {
 		position: absolute;
 		-webkit-transform: translateZ(0);
 	}
 
-	.k-selection {
+	.selection {
 		border-bottom: 0;
 		position: absolute;
 		border-width: 1px;
@@ -51,7 +51,7 @@
 		height: 100%;
 	}
 
-	.k-selection-bg {
+	.selection-bg {
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -59,7 +59,7 @@
 		background-color: rgba(#ffffff, 0.01);
 	}
 
-	.k-handle {
+	.handle {
 		background: #d2d2d2;
 		width: 7px;
 		height: 26px;
@@ -69,38 +69,38 @@
 		position: absolute;
 	}
 
-	.k-handle div {
+	.handle div {
 		width: 100%;
 		height: 100%;
 		background-color: transparent;
 	}
 
-	.k-leftHandle {
+	.leftHandle {
 		left: -4px;
 	}
 
-	.k-rightHandle {
+	.rightHandle {
 		right: -4px;
 	}
 
-	.k-leftHandle div {
+	.leftHandle div {
 		margin: -20px 0 0 -15px;
 		padding: 40px 30px 0 0;
 	}
 
-	.k-rightHandle div {
+	.rightHandle div {
 		margin: -20px 0 0 -15px;
 		padding: 40px 0 0 30px;
 	}
 
-	.k-mask {
+	.mask {
 		position: absolute;
 		height: 100%;
 		background-color: #fff;
 		opacity: 0.80;
 	}
 
-	.k-border {
+	.border {
 		background: #d2d2d2;
 		width: 1px;
 		height: 100%;
@@ -109,27 +109,27 @@
 
 
 	// Tooltip
-	.k-chart-tooltip {
+	.chart-tooltip {
 		border-radius: 4px;
 		padding: 6px;
 		white-space: nowrap;
 		z-index: 12000;
 		line-height: normal;
 	}
-	.k-chart-tooltip-inverse {
+	.chart-tooltip-inverse {
 		color: #000;
 	}
 
-	.k-chart-tooltip table {
+	.chart-tooltip table {
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
-	.k-chart-tooltip th {
+	.chart-tooltip th {
 		padding: 1px;
 		width: auto;
 		text-align: center;
 	}
-	.k-chart-tooltip td {
+	.chart-tooltip td {
 		width: auto;
 		padding: .1em .2em;
 		text-align: left;

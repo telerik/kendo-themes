@@ -1,13 +1,13 @@
 @include exports("numerictextbox/layout") {
 
 	// Base
-	.k-numerictextbox {
+	.numerictextbox {
 		border-width: 0;
 		line-height: $form-line-height;
 		display: inline-block;
 		vertical-align: middle;
 
-		.k-input {
+		.input {
 			border: 0;
 			outline: 0;
 			color: inherit;
@@ -15,7 +15,7 @@
 			font: inherit;
 		}
 
-		.k-select {
+		.select {
 			border-width: 0 0 0 1px;
 			border-style: solid;
 		}
@@ -26,19 +26,19 @@
 		// Compact
 		@include compact {
 
-			.k-input {
+			.input {
 				padding: $input-padding-y-sm $input-padding-x-sm;
 			}
 
-			.k-select {
-				.k-link { padding: 0 $button-padding-y-sm }
+			.select {
+				.link { padding: 0 $button-padding-y-sm }
 			}
 		}
 	}
 
 	@include exports("numericwrap/layout") {
 
-		.k-numeric-wrap {
+		.numeric-wrap {
 			padding: 0;
 			border-width: 1px;
 			border-style: solid;
@@ -47,22 +47,22 @@
 			flex-direction: row;
 			position: relative;
 
-			.k-input {
+			.input {
 				padding: $input-padding-y $input-padding-x;
 				flex: 1;
 				display: flex;
 				align-items: center;
 			}
 
-			.k-select {
+			.select {
 				display: flex;
 				flex-direction: column;
 
-				.k-link {
+				.link {
 					padding: 0 $button-padding-y;
 				}
 
-				.k-icon {}
+				.icon {}
 
 			}
 		}

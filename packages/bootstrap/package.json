@@ -1,21 +1,24 @@
 {
-  "name": "kendo-bootstrap",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@telerik/kendo-theme-bootstrap",
+  "description": "Bootstrap v4 theme for Kendo UI",
+  "version": "0.1.0",
+  "keywords": [
+    "Kendo UI",
+    "Bootstrap",
+    "Theme"
+  ],
+  "main": "src/main.scss",
+  "typings": "src/main.d.ts",
   "scripts": {
-    "build": "node ./node_modules/gulp/bin/gulp.js sass"
+    "start": "webpack-dev-server --hot --inline ./src/main",
+    "build": "webpack --optimize-minimize && rm dist/main.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Progress",
+  "license": "Apache-2.0",
   "devDependencies": {
+    "@telerik/kendo-common-tasks": "^1.8.2",
     "bootstrap": "git://github.com/twbs/bootstrap.git#v4-dev",
-    "browser-sync": "^2.10.0",
-    "gulp": "^3.9.0",
-    "gulp-load-plugins": "^1.1.0",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.0"
+    "browser-sync": "^2.14.0",
+    "webpack-dev-server": "^1.14.1"
   }
 }

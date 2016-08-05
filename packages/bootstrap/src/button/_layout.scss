@@ -1,7 +1,7 @@
 @include exports("button/layout") {
 
 	// Button
-	.k-button {
+	.button {
 		padding: $button-padding-y $button-padding-x;
 		border-width: 1px;
 		border-style: solid;
@@ -23,14 +23,14 @@
 			text-decoration: none;
 		}
 
-		.k-icon {
+		.icon {
 			align-self: center;
 		}
 
 
 		// Button variants
 		&-icontext {
-			.k-icon {
+			.icon {
 				margin: 0 ($button-padding-x/2) 0 (-$button-padding-x/2);
 			}
 		}
@@ -39,7 +39,7 @@
 			padding: $button-padding-y;
 			justify-content: center;
 		}
-		&.k-button-bare {
+		&.button-bare {
 			border-width: 0;
 			color: inherit;
 			background: none !important;
@@ -54,7 +54,7 @@
 			font-size: $font-size-sm;
 
 			&-icontext {
-				.k-icon {
+				.icon {
 					margin: 0 ($button-padding-x-sm/2) 0 (-$button-padding-x-sm/2);
 				}
 			}
@@ -67,20 +67,20 @@
 
 
 	// Toggle button
-	.k-toggle-button {}
+	.toggle-button {}
 
 
 	// Split button
-	.k-split-button {
+	.split-button {
 
-		.k-split-button-arrow {
+		.split-button-arrow {
 			margin-left: -1px;
 			padding: $button-padding-y;
 		}
 
 
 		@include compact {
-			.k-split-button-arrow {
+			.split-button-arrow {
 				padding: $button-padding-y-sm;
 			}
 		}
@@ -88,23 +88,23 @@
 
 
 	// Button group
-	.k-button-group {
+	.button-group {
 		white-space: nowrap;
 		display: inline-flex;
 		flex-direction: row;
 		vertical-align: middle;
 		position: relative;
 
-		.k-button {
+		.button {
 			position: relative;
 		}
-		.k-button + .k-button {
+		.button + .button {
 			margin-left: -1px;
 		}
 
-		.k-button:hover,
-		.k-button.k-state-hover,
-		.k-button.k-state-active {
+		.button:hover,
+		.button.state-hover,
+		.button.state-active {
 			z-index: 2;
 		}
 	}
@@ -112,10 +112,10 @@
 }
 
 
-@include exports("km-button/layout") {
+@include exports("button/layout") {
 
 	// Button
-	.km-button {
+	.button {
 		padding: $button-padding-y $button-padding-x;
 		border-width: 1px;
 		border-style: solid;
@@ -136,7 +136,7 @@
 			text-decoration: none;
 		}
 
-		.k-icon {
+		.icon {
 			align-self: center;
 		}
 
@@ -144,25 +144,25 @@
 
 
 	// Button group
-	.km-buttongroup {
+	.buttongroup {
 		white-space: nowrap;
 		display: inline-flex;
 		flex-direction: row;
 		vertical-align: middle;
 		position: relative;
 
-		.km-button {
+		.button {
 			position: relative;
 		}
-		.km-button + .km-button {
+		.button + .button {
 			margin-left: -1px;
 		}
 
-		.km-button.km-state-active {
+		.button.state-active {
 			z-index: 2;
 		}
 	}
-	ul.km-buttongroup {
+	ul.buttongroup {
 		margin: 0;
 		padding: 0;
 		list-style: none;

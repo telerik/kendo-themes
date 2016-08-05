@@ -1,7 +1,7 @@
 @include exports( "common/reset" ) {
 
 	// Layout
-	.k-reset {
+	.reset {
 		margin: 0;
 		padding: 0;
 		border-width: 0;
@@ -13,22 +13,22 @@
 
 
 	// Box sizing
-	.k-animation-container,
-	.k-animation-container *,
-	.k-animation-container :after,
-	.k-block .k-header,
-	.k-list-container,
-	.k-widget,
-	.k-widget *,
-	.k-widget :before {
+	.animation-container,
+	.animation-container *,
+	.animation-container :after,
+	.block .header,
+	.list-container,
+	.widget,
+	.widget *,
+	.widget :before {
 		@extend %content-box;
 	}
 
 
 	// Float wrap
-	.k-floatwrap:after,
-	.k-grid-toolbar:after,
-	.k-slider-items:after {
+	.floatwrap:after,
+	.grid-toolbar:after,
+	.slider-items:after {
 		content: "";
 		display: block;
 		clear: both;
@@ -47,7 +47,7 @@
 @include exports( "common/widget" ) {
 
 	// Layout
-	.k-widget {
+	.widget {
 		border-width: 1px;
 		border-style: solid;
 		font-size: $font-size;
@@ -62,7 +62,7 @@
 			font-size: $font-size-sm;
 		}
 	}
-	.km-widget {
+	.widget {
 		font-size: $font-size;
 		line-height: $line-height;
 
@@ -75,8 +75,8 @@
 
 
 	// Theme
-	.k-widget,
-	.km-widget {
+	.widget,
+	.widget {
 		@include appearance( panel );
 	}
 
@@ -86,9 +86,9 @@
 @include exports( "common/states" ) {
 
 	// Disabled
-	.k-disabled,
-	.k-state-disabled,
-	.km-state-disabled {
+	.disabled,
+	.state-disabled,
+	.state-disabled {
 		@include disabled;
 	}
 

@@ -1,24 +1,24 @@
 @include exports("scroller/layout") {
 
 	// Layout
-	.km-scroll-wrapper {
+	.scroll-wrapper {
 		position: relative;
 	}
-	.km-scroll-header {
+	.scroll-header {
 		width: 100%;
 		position: absolute;
 		z-index: 1001;
 		top: 0;
 		left: 0;
 	}
-	.km-scroll-container {
+	.scroll-container {
 		margin-collapse: separate;
 		user-select: none;
 	}
 
 
 	// Pull to refresh
-	.km-scroller-pull {
+	.scroller-pull {
 		width: 100%;
 		display: block;
 		position: absolute;
@@ -27,13 +27,13 @@
 		text-align: center;
 		transform: translate3d( 0, -3em, 0 );
 	}
-	.km-scroller-pull .km-template {
+	.scroller-pull .template {
 		display: inline-block;
 		min-width: 200px;
 		text-align: left;
 	}
-	.km-load-more .km-icon,
-	.km-scroller-pull .km-icon {
+	.load-more .icon,
+	.scroller-pull .icon {
 		display: inline-block;
 		height: 2rem;
 		margin-right: 1rem;
@@ -43,16 +43,16 @@
 		transform: rotate( 0deg );
 		transition: transform 300ms linear;
 	}
-	.km-scroller-release .km-icon {
+	.scroller-release .icon {
 		transform: rotate( 180deg );
 	}
-	.km-scroller-refresh .km-icon {
+	.scroller-refresh .icon {
 		transition: none;
 	}
 
 
 	// Scrollbar
-	.km-touch-scrollbar {
+	.touch-scrollbar {
 		height: .4em;
 		width: .4em;
 		background-color: #333;
@@ -63,12 +63,12 @@
 		position: absolute;
 		z-index: 200000;
 	}
-	.km-vertical-scrollbar {
+	.vertical-scrollbar {
 		height: 100%;
 		right: 2px;
 		top: 0;
 	}
-	.km-horizontal-scrollbar {
+	.horizontal-scrollbar {
 		width: 100%;
 		left: 0;
 		bottom: 2px;

@@ -1,30 +1,30 @@
 @include exports("upload/theme") {
 
-	.k-upload {
+	.upload {
 		@include border-radius( $border-radius );
 		@include appearance( header );
 	}
 
 
 	// Upload files list
-	.k-upload-files {}
-	.k-upload-files .k-file {
+	.upload-files {}
+	.upload-files .file {
 		@include appearance( panel );
 	}
-	.k-upload-files .k-file-progress {
+	.upload-files .file-progress {
 		color: $alert-info-text;
 
-		.k-progress { background-color: $alert-info-bg; }
+		.progress { background-color: $alert-info-bg; }
 	}
-	.k-upload-files .k-file-success {
+	.upload-files .file-success {
 		color: $alert-success-text;
 
-		.k-progress { background-color: $alert-success-bg; }
+		.progress { background-color: $alert-success-bg; }
 	}
-	.k-upload-files .k-file-error {
+	.upload-files .file-error {
 		color: $alert-danger-text;
 
-		.k-progress { background-color: $alert-danger-bg; }
+		.progress { background-color: $alert-danger-bg; }
 	}
 
 }

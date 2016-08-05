@@ -1,37 +1,37 @@
 @include exports("datetime/theme") {
 
 	// Shared
-	.k-datepicker,
-	.k-timepicker,
-	.k-datetimepicker {
+	.datepicker,
+	.timepicker,
+	.datetimepicker {
 
 		// Normal state
-		.k-picker-wrap {
+		.picker-wrap {
 			@include appearance( input );
 			@include border-radius( $border-radius );
 		}
-		.k-select {
+		.select {
 			@include appearance( button );
 			@include border-radius(  0 $border-radius $border-radius 0 );
 			border-color: inherit;
 		}
 
 		// Hovered state
-		.k-state-hover {
+		.state-hover {
 			@include appearance( hovered-input );
 
-			.k-select {
+			.select {
 				@include appearance( hovered-button );
 				border-color: inherit;
 			}
 		}
 
 		// Selected state
-		.k-state-focused,
-		.k-state-active {
+		.state-focused,
+		.state-active {
 			@include appearance( focused-input );
 
-			.k-select {
+			.select {
 				@include appearance( active-button );
 				border-color: inherit;
 			}
@@ -40,12 +40,12 @@
 	}
 
 	// Datepicker
-	.k-datepicker {}
+	.datepicker {}
 
 	// Timepicker
-	.k-timepicker {}
+	.timepicker {}
 
 	// Datetimepicker
-	.k-datetimepicker {}
+	.datetimepicker {}
 
 }

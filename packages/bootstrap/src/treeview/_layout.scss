@@ -1,16 +1,16 @@
 @include exports("treeview/layout") {
 
 	// Base
-	.k-treeview {
+	.treeview {
 		border-width: 0;
 		background: none;
 		cursor: default;
 		overflow: auto;
 		white-space: nowrap;
 
-		.k-content,
-		> .k-group,
-		.k-item > .k-group {
+		.content,
+		> .group,
+		.item > .group {
 			margin: 0;
 			padding: 0;
 			background: none;
@@ -19,7 +19,7 @@
 		}
 
 		// Items
-		.k-item {
+		.item {
 			margin: 0;
 			padding: 0 0 0 $spacer-x;
 			border-width: 0;
@@ -27,7 +27,7 @@
 		}
 
 		// Link
-		.k-in {
+		.in {
 			margin: 0;
 			padding: $padding-y $padding-x;
 			border: 1px solid;
@@ -38,27 +38,27 @@
 		}
 
 		// Collapse expand
-		.k-minus,
-		.k-minus-disabled,
-		.k-plus,
-		.k-plus-disabled {
+		.minus,
+		.minus-disabled,
+		.plus,
+		.plus-disabled {
 			margin-left: -$spacer-x;
 			cursor: pointer;
 		}
 
 		// Other content
-		.k-checkbox,
-		.k-icon,
-		.k-image,
-		.k-sprite {
+		.checkbox,
+		.icon,
+		.image,
+		.sprite {
 			display: inline-block;
 			vertical-align: top;
 		}
-		.k-icon {
+		.icon {
 			vertical-align: middle;
 		}
-		.k-image,
-		.k-sprite {
+		.image,
+		.sprite {
 			margin-right: 3px;
 		}
 
@@ -69,7 +69,7 @@
 		@include compact {
 
 			// Link
-			.k-in {
+			.in {
 				padding: $padding-y-sm $padding-x-sm;
 			}
 

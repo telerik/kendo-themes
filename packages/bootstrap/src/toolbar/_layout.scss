@@ -1,7 +1,7 @@
 @include exports("toolbar/layout") {
 
 	// Base
-	.k-toolbar {
+	.toolbar {
 		padding: $padding-y-sm;
 		line-height: $form-line-height;
 		display: flex;
@@ -15,35 +15,35 @@
 		> * + * {
 			margin-left: $padding-y-sm;
 		}
-		> .k-overflow-anchor + * {
+		> .overflow-anchor + * {
 			margin-left: 0;
 		}
 
-		.k-button,
-		.k-button-group,
-		.k-separator,
-		.k-split-button,
-		.k-textbox,
-		.k-widget,
+		.button,
+		.button-group,
+		.separator,
+		.split-button,
+		.textbox,
+		.widget,
 		label {
 			vertical-align: middle;
 		}
 
 
 		// Button
-		.k-button {}
+		.button {}
 
 		// Toggle button
-		.k-toggle-button {}
+		.toggle-button {}
 
 		// Split button
-		.k-split-button {}
+		.split-button {}
 
 		// Button group
-		.k-button-group {}
+		.button-group {}
 
 		// Overflow anchor
-		.k-overflow-anchor {
+		.overflow-anchor {
 			width: $form-line-height * 1em;
 			height: $form-line-height * 1em;
 			padding: $button-padding-y;
@@ -54,7 +54,7 @@
 		}
 
 		// Separator
-		.k-separator {
+		.separator {
 			width: 0;
 			border-width: 0 0 0 1px;
 			border-style: solid;
@@ -69,33 +69,33 @@
 
 
 			// Button
-			.k-button {}
+			.button {}
 
 			// Toggle button
-			.k-toggle-button {}
+			.toggle-button {}
 
 			// Split button
-			.k-split-button {}
+			.split-button {}
 
 			// Button group
-			.k-button-group {}
+			.button-group {}
 
 			// Overflow anchor
-			.k-overflow-anchor {
+			.overflow-anchor {
 				padding: $button-padding-y-sm;
 			}
 
 			// Separator
-			.k-separator {}
+			.separator {}
 
 		}
 	}
 
 
-	.k-overflow-container {
+	.overflow-container {
 
 		// Group
-		.k-overflow-group {
+		.overflow-group {
 			padding-bottom: $spacer-y / 2;
 			margin-bottom: $spacer-y / 2;
 			border-width: 0 0 1px;
@@ -103,14 +103,14 @@
 			border-color: inherit;
 			flex-direction: column;
 
-			.k-button {
+			.button {
 				margin: 0;
 				border-radius: 0;
 			}
 		}
 
 		// Items
-		.k-overflow-button {
+		.overflow-button {
 			padding: 3px $dropdown-item-padding-x;
 			border-width: 0;
 			border-radius: 0;
@@ -118,14 +118,14 @@
 		}
 
 		// Hidden items
-		.k-overflow-hidden {
+		.overflow-hidden {
 			display: none;
 		}
 	}
-	.k-split-container {
+	.split-container {
 
 		// Items
-		.k-button {
+		.button {
 			padding: 3px $dropdown-item-padding-x;
 			border-width: 0;
 			border-radius: 0;

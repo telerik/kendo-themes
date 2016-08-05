@@ -1,14 +1,14 @@
 @include exports("dropdownlist/theme") {
 
 	// Dropdown
-	.k-dropdown {
+	.dropdown {
 
-		.k-dropdown-wrap {
+		.dropdown-wrap {
 			@include appearance( button );
 			@include border-radius( $border-radius );
 		}
-		.k-state-hover { @include appearance( hovered-button ); }
-		.k-state-active { @include appearance( active-button ); }
+		.state-hover { @include appearance( hovered-button ); }
+		.state-active { @include appearance( active-button ); }
 	}
 
 }

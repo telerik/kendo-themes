@@ -1,7 +1,7 @@
 @include exports("progressbar/layout") {
 
 	// Base
-	.k-progressbar {
+	.progressbar {
 		border-width: 0;
 		font-size: $spacer-y * .75;
 		line-height: $spacer-y;
@@ -11,13 +11,13 @@
 		overflow: hidden;
 
 		// Status
-		.k-progress-status-wrap {
+		.progress-status-wrap {
 			width: 100%;
 			height: 100%;
 			display: flex;
 			position: absolute;
 		}
-		.k-progress-status {
+		.progress-status {
 			padding: 0 $spacer-x / 4;
 			min-width: 10px;
 			text-align: center;
@@ -26,11 +26,11 @@
 		}
 
 		// Progress
-		> .k-state-selected {
+		> .state-selected {
 			position: relative;
 			overflow: hidden;
 
-			.k-progress-status-wrap {}
+			.progress-status-wrap {}
 		}
 
 		// Chunks
@@ -38,7 +38,7 @@
 			display: flex;
 			flex: 1;
 		}
-		.k-item {
+		.item {
 			border-width: 0;
 			border-style: solid;
 		}
@@ -51,13 +51,13 @@
 
 
 	// Orientation
-	.k-progressbar-horizontal {
+	.progressbar-horizontal {
 		width: 27em;
 		height: $spacer-y;
 		flex-direction: row;
 
 		// Status
-		.k-progress-status-wrap {
+		.progress-status-wrap {
 			flex-direction: row;
 			justify-content: flex-end;
 			top: 0;
@@ -65,38 +65,38 @@
 		}
 
 		// Progress
-		> .k-state-selected {}
+		> .state-selected {}
 
 		// Chunks
 		> ul {
 			flex-direction: row;
 		}
-		.k-item {}
-		.k-item + .k-item {
+		.item {}
+		.item + .item {
 			border-left-width: 1px;
 		}
 
 
 		// Reverse
-		&.k-progressbar-reverse {
+		&.progressbar-reverse {
 			flex-direction: row-reverse;
 
 			// Status
-			.k-progress-status-wrap {
+			.progress-status-wrap {
 				justify-content: flex-start;
 				left: auto;
 				right: 0;
 			}
 		}
 	}
-	.k-progressbar-vertical {
+	.progressbar-vertical {
 		width: $spacer-y;
 		height: 27em;
 		flex-direction: column;
 		justify-content: flex-end;
 
 		// Status
-		.k-progress-status-wrap {
+		.progress-status-wrap {
 			flex-direction: column;
 			justify-content: flex-start;
 			left: 0;
@@ -104,31 +104,31 @@
 		}
 
 		// Progress
-		> .k-state-selected {}
+		> .state-selected {}
 
 		// Chunks
 		> ul {
 			flex-direction: column;
 		}
-		.k-item {}
-		.k-item + .k-item {
+		.item {}
+		.item + .item {
 			border-top-width: 1px;
 		}
 
 
 		// Reverse
-		&.k-progressbar-reverse {
+		&.progressbar-reverse {
 			flex-direction: column-reverse;
 
 			// Status
-			.k-progress-status-wrap {
+			.progress-status-wrap {
 				justify-content: flex-end;
 				top: 0;
 				bottom: auto;
 			}
 
 			// Progress
-			> .k-state-selected {}
+			> .state-selected {}
 		}
 	}
 
