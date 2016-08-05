@@ -1,4 +1,5 @@
 const path = require('path');
+const inDevelopment = process.argv.find(v => v.includes('webpack-dev-server'))
 
 function BrowserSync() {
     this.bs = require("browser-sync").create('bs-refresh');
@@ -24,9 +25,10 @@ module.exports = require('@telerik/kendo-common-tasks')
         entry: {
             main: './src/main.js'
         },
-        plugins: [
-            new BrowserSync()
-        ],
+        plugins:
+            inDevelopment ? [
+                new BrowserSync()
+            ] : [],
         output: {
             path: path.resolve(__dirname, 'dist'),
             publicPath: '/dist/',
