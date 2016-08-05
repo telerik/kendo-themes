@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Grid</title>
+
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="../dist/main.css" />
+
+	<script src="http://localhost/kendo/dist/js/jquery.min.js"></script>
+	<script src="http://localhost/kendo/dist/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Grid</legend>
+
+		<div id="grid"></div>
+	</div>
+
+
+	<script>
+		$(document).ready(function () {
+			$("#grid").kendoGrid({
+				dataSource: {
+					type: "odata",
+					transport: {
+						read: "//demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+					},
+					pageSize: 20
+				},
+				height: 550,
+				// groupable: true,
+				sortable: true,
+				pageable: {
+					refresh: true,
+					pageSizes: true,
+					buttonCount: 5
+				},
+				editable: true,
+				// toolbar: ["create", "save", "cancel"],
+				columns: [{
+					template: "<div class='customer-photo'" +
+									"style='background-image: url(../content/web/Customers/#:data.CustomerID#.jpg);'></div>" +
+								"<div class='customer-name'>#: ContactName #</div>",
+					field: "ContactName",
+					title: "Contact Name",
+					width: 240
+				}, {
+					field: "ContactTitle",
+					title: "Contact Title"
+				}, {
+					field: "CompanyName",
+					title: "Company Name"
+				}, {
+					field: "Country",
+					width: 150
+				}]
+			});
+		});
+	</script>
+
+
+</body>
+</html>
