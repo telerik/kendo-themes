@@ -36,8 +36,8 @@
 
 
 	// Links
-	.k-link,
-	.k-link:hover {
+	.link,
+	.link:hover {
 		text-decoration: none;
 	}
 
@@ -62,20 +62,9 @@
 			font-size: $font-size-sm;
 		}
 	}
-	.widget {
-		font-size: $font-size;
-		line-height: $line-height;
-
-		&,
-		* {
-			box-sizing: border-box;
-			background-clip: border-box
-		}
-	}
 
 
 	// Theme
-	.widget,
 	.widget {
 		@include appearance( panel );
 	}
@@ -87,7 +76,6 @@
 
 	// Disabled
 	.disabled,
-	.state-disabled,
 	.state-disabled {
 		@include disabled;
 	}

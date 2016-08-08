@@ -44,33 +44,3 @@
 	}
 
 }
-
-
-@include exports("button/theme") {
-
-	// Appearance
-	.button {
-		@include appearance( button );
-		@include border-radius( $border-radius );
-
-		&.state-active { @include appearance( active-button ); }
-	}
-
-
-	// Button group
-	.buttongroup {
-
-		.button {
-			border-radius: 0;
-		}
-
-		.button:first-child {
-			@include border-radius( $border-radius 0 0 $border-radius );
-		}
-		.button:last-child {
-			@include border-radius( 0 $border-radius $border-radius 0 );
-		}
-
-	}
-
-}

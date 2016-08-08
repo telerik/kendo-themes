@@ -1,17 +1,17 @@
 @include exports("pager/theme") {
 
 	// Theme
-	.k-pager-wrap {
+	.pager-wrap {
 
-		.k-pager-first {
+		.pager-first {
 			@include border-radius( $border-radius 0 0 $border-radius );
 		}
-		.k-pager-last {
+		.pager-last {
 			@include border-radius( 0 $border-radius $border-radius 0 );
 		}
 
-		.k-link,
-		.k-pager-nav {
+		.link,
+		.pager-nav {
 			@include appearance( button );
 
 			&:hover {
@@ -20,7 +20,7 @@
 			}
 		}
 
-		.k-state-selected {
+		.state-selected {
 			@include appearance( active-button );
 			z-index: 2;
 		}
