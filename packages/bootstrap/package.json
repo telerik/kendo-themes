@@ -7,10 +7,10 @@
     "Bootstrap",
     "Theme"
   ],
-  "main": "src/main.scss",
-  "typings": "src/main.d.ts",
+  "main": "src/packages/all.scss",
+  "typings": "src/packages/all.d.ts",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline ./src/main",
+    "start": "webpack-dev-server --hot --inline",
     "build": "webpack --optimize-minimize"
   },
   "author": "Progress",

@@ -45,7 +45,7 @@ function BrowserSync() {
 BrowserSync.prototype = {
     apply: function(compiler) {
         compiler.plugin("emit", (compilation, callback) => {
-            this.bs.reload("main.css");
+            this.bs.reload("all.css");
             callback();
         });
     }
