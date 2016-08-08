@@ -11,14 +11,14 @@
   "typings": "src/main.d.ts",
   "scripts": {
     "start": "webpack-dev-server --hot --inline ./src/main",
-    "build": "webpack --optimize-minimize && rm dist/main.js"
+    "build": "webpack --optimize-minimize"
   },
   "author": "Progress",
   "license": "Apache-2.0",
   "devDependencies": {
     "@telerik/kendo-common-tasks": "^1.8.2",
     "bootstrap": "git://github.com/twbs/bootstrap.git#v4-dev",
-    "browser-sync": "^2.14.0",
+    "browser-sync": "^2.13.0",
     "webpack-dev-server": "^1.14.1"
   }
 }
