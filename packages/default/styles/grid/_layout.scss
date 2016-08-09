@@ -1,0 +1,252 @@
+@import '../base/layout';
+@import '../icons/main';
+@import '../dialog/main';
+
+@include exports('grid/layout') {
+    .grid {
+        display: block;
+        position: relative;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .grid table {
+        width: 100%;
+        margin: 0; /* override CSS libraries */
+        max-width: none;
+        border-collapse: separate;
+        border-spacing: 0;
+        empty-cells: show;
+        border-width: 0;
+        outline: none;
+    }
+
+    .grid-header {
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+
+        th>.link>.icon {
+            vertical-align: text-bottom;
+        }
+    }
+
+    .grid-content table,
+    .grid-content-locked>table,
+    .grid-footer table,
+    .grid-header table {
+        table-layout: fixed;
+    }
+
+    .grid-header th.header,
+    .filter-row th {
+        overflow: hidden;
+        border-style: solid;
+        border-width: 0 0 0 1px;
+        padding: .643em;
+        font-weight: normal;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: left;
+        line-height: 2em;
+    }
+
+    .grid-header th.header>.link {
+        display: block;
+        line-height: 2em;
+        padding: .643em;
+        margin: -.643em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .grid-content {
+        position: relative;
+        overflow: auto;
+        overflow-x: auto;
+        overflow-y: scroll;
+        min-height: 0%; /* IE9 bug workaround - expanding Grid on hover */
+    }
+
+    .grid td {
+        border-style: solid;
+        border-width: 0 0 0 1px;
+        padding: .5em .643em;
+        overflow: hidden;
+        line-height: 1.6em;
+        vertical-align: middle;
+        text-overflow: ellipsis;
+    }
+
+    .grid tbody td:first-child,
+    .grid tfoot td:first-child,
+    .grid-header th.header:first-child {
+        border-left-width: 0;
+    }
+
+    .grid-content tr:last-child td {
+        border-bottom-width: 0;
+    }
+
+    .grid-footer-wrap,
+    .grid-header-wrap {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border-style: solid;
+        border-width: 0 1px 0 0;
+    }
+
+    .grid .group-col,
+    .grid .hierarchy-col {
+        width: 18px;
+    }
+
+    .hierarchy-cell {
+        text-align: center;
+    }
+
+    /* Locked columns */
+    .grid-content-locked,
+    .grid-footer-locked,
+    .grid-header-locked {
+        display: inline-block;
+        vertical-align: top;
+        overflow: hidden;
+        position: relative;
+        border-style: solid;
+        border-width: 0;
+    }
+
+    .grid-content-locked td:last-child,
+    .grid-header-locked th:last-child {
+        border-right-width: 1px;
+        border-style: solid;
+    }
+
+    .grid-content-locked td:first-child {
+        border-width: 0 0 0 1px;
+    }
+
+    .grid-content-locked+.grid-content,
+    .grid-footer-locked+.grid-footer-wrap,
+    .grid-header-locked+.grid-header-wrap {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    /* Pager */
+    .grid .pager-numbers,
+    .pager-numbers .link,
+    .pager-numbers .state-selected {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .pager-wrap {
+        clear: both;
+        overflow: hidden;
+        position: relative;
+        border-style: solid;
+        border-width: 1px 0 0;
+        line-height: 2em;
+        padding: .571em;
+    }
+
+    .pager-numbers .current-page {
+        display: none;
+    }
+
+    .pager-numbers li,
+    .pager-input {
+        float: left;
+    }
+
+    .grid .pager-numbers {
+        float: left;
+        cursor: default;
+    }
+
+    .pager-info {
+        float: right;
+        margin-top: 1px;
+    }
+
+    .pager-numbers .link {
+        text-decoration: none;
+    }
+
+    .pager-wrap > .link,
+    .pager-numbers .link,
+    .pager-numbers .state-selected {
+        min-width: 2em;
+    }
+
+    .pager-wrap>.link {
+        float: left;
+        height: 2em;/*IE7*/
+        line-height: 2em;/*IE7*/
+        cursor: pointer;
+        text-align: center;
+        border-width: 1px;
+        border-style: solid;
+        border-color: transparent;
+    }
+
+    .pager-wrap>a.state-disabled:hover {
+        background: none;
+        cursor: default;
+    }
+
+    .pager-numbers .link {
+        text-align: center;
+        line-height: 2em;
+        border-width: 1px;
+        border-style: solid;
+        border-color: transparent;
+    }
+
+    .pager-wrap .pager-refresh {
+        float: right;
+        margin-right: .5em;
+        border-width: 0;
+        border-radius: 0;
+    }
+
+    .pager-numbers .state-selected {
+        text-align: center;
+    }
+
+    .pager-wrap .textbox {
+        width: 3.333em;
+        height: 2em;
+        padding: 0;
+        text-indent: .5em;
+    }
+
+    .pager-wrap .dropdown {
+        width: 4.5em;
+    }
+
+    .pager-refresh {
+        float: right;
+    }
+
+    .pager-input,
+    .pager-sizes {
+        padding: 0 1.4166em;
+    }
+
+    .pager-sizes {
+        display: inline-block;
+        padding-top: 1px;
+    }
+
+    .pager-sizes .widget.dropdown {
+        margin-top: -2px;
+    }
+
+    .pager-wrap .textbox,
+    .pager-wrap .widget {
+        margin: 0 .4em;
+    }
+}

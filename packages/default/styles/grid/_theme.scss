@@ -1,0 +1,57 @@
+@import '../base/states';
+@import './layout';
+
+$grid-header-color: $accent !default;
+$grid-color: $normal-text-color !default;
+$grid-border-color: rgba(0, 0, 0, .08) !default;
+$grid-header-background: $background !default;
+$grid-background: $base !default;
+$grid-hover-color: blend-multiply($accent, darken($background, 8%)) !default;
+$grid-focused-box-shadow: inset 0 0 0 2px darken($base, 8%) !default;
+
+$grid-alt-background: $base !default;
+$grid-active-color: $accent !default;
+
+
+@include exports('grid/theme') {
+    .grid-header,
+    .grid-header-wrap,
+    .grid td,
+    .grid-content-locked,
+    .grid-footer-locked,
+    .grid-header-locked {
+        border-color: $grid-border-color;
+    }
+
+    .grid-header,
+    .pager-wrap {
+        background-color: $grid-background;
+    }
+
+    .grid {
+        .alt {
+            background-color: $grid-alt-background;
+        }
+
+        tr.state-selected {
+            background-color: $selected-background;
+            color: $selected-text-color;
+        }
+    }
+
+    /* Pager */
+    .pager-numbers {
+        .link,
+        .link:link {
+            color: $grid-active-color;
+        }
+
+        .state-selected {
+            background: transparent;
+
+            .link {
+                color: $grid-color;
+            }
+        }
+    }
+}

@@ -12,6 +12,8 @@ $window-z-index: 10001;
     padding-top: $window-titlebar-size;
     position: absolute;
     z-index: $window-z-index;
+    min-width: 450px;
+    max-width: 100%;
 
     &.window-titleless {
         padding-top: 0;
@@ -203,12 +205,34 @@ $resizer-offset: -$resizer-size / 2;
 .action-buttons {
     clear: both;
     display: block;
-    padding: $window-padding;
-    text-align: right;
+    border-top-width: 1px;
+    border-top-style: solid;
+    margin: (2 * $window-padding) (-$window-padding) (-$window-padding);
+    padding: $window-padding 0;
 
     .button {
-        margin: 0 0 0 $window-padding;
-        min-width: 75px;
+        width: 50%;
+        float: left;
+        margin: -$window-padding 0;
+        padding: $window-padding 0;
+        line-height: 2em;
+        border-radius: 0;
+    }
+
+    .primary::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+    }
+
+    &::after {
+        display: block;
+        content: '';
+        clear: both;
     }
 }
 }

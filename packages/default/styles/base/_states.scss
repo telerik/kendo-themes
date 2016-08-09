@@ -9,10 +9,12 @@ $focused-item-shadow: inset 0 0 3px 1px darken($base, 10%) !default;
 
 .widget,
 .content,
-.input {
+.input,
+.textbox {
     background-color: $background;
     border-color: $widget-border-color;
     color: $normal-text-color;
+    border-radius: $border-radius;
 }
 
 .header {
@@ -20,7 +22,8 @@ $focused-item-shadow: inset 0 0 3px 1px darken($base, 10%) !default;
     border-color: $widget-border-color;
 }
 
-.link {
+.link,
+.icon {
     color: $normal-text-color;
 }
 

@@ -24,6 +24,10 @@ html {
     -webkit-appearance: none;
 }
 
+.textbox {
+    outline: 0;
+}
+
 .floatwrap::after {
     clear: both;
     content: '';
