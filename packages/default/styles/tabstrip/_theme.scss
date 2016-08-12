@@ -8,7 +8,6 @@ $tabstrip-border-color: rgba(0, 0, 0, .08) !default;
 $tabstrip-hover-color: blend-multiply($accent, darken($background, 8%)) !default;
 $tabstrip-active-color: $normal-text-color !default;
 $tabstrip-active-background-color: desaturate($background, 1%) !default;
-$tabstrip-active-border-color: darken($base, 29%) !default;
 $tabstrip-disabled-color: darken($background, 27%) !default;
 
 @include exports('tabstrip/theme') {

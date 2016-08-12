@@ -4,11 +4,11 @@
 
 @include exports('calendar/theme') {
 
-$dateinputs-background-color: lighten($base, 1%);
-$dateinputs-border-color: darken($base, 14%);
+$dateinputs-background-color: $base;
+$dateinputs-border-color: darken($base, 7%);
 
 $dateinputs-focused-background-color: saturate($hover-background, 1%);
-$dateinputs-focused-border-color: darken($base, 20%);
+$dateinputs-focused-border-color: darken($base, 7%);
 $dateinputs-focused-box-shadow: 0 0 4px 0 $base;
 
 $calendar-header-background-color: $base;

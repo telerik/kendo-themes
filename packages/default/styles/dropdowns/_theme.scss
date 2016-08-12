@@ -3,15 +3,15 @@
 @import '../popup/main';
 @import './layout';
 
-$dropdowns-background-color: lighten($base, 1%) !default;
+$dropdowns-background-color: lighten($base, 4%) !default;
 $dropdowns-border-color: rgba(0, 0, 0, .08) !default;;
 
-$dropdowns-gradient: linear-gradient(darken($base, 1%), darken($base, 3%)) !default;
+$dropdowns-gradient: linear-gradient($base, darken($base, 2%)) !default;
 
 $dropdowns-hover-gradient: linear-gradient(darken($hover-background, 1%), darken($hover-background, 2%)) !default;
 
 
-$dropdowns-active-gradient: linear-gradient(darken($base, 3%), darken($base, 1%)) !default;
+$dropdowns-active-gradient: linear-gradient(darken($base, 2%), $base) !default;
 
 
 $dropdowns-hover-border-color: rgba(0, 0, 0, .15) !default;

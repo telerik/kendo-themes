@@ -2,7 +2,7 @@
 @import './layout';
 
 $switch-on-color: $accent !default;
-$switch-off-color: darken($base, 48%) !default;
+$switch-off-color: darken($base, 44%) !default;
 $switch-background: $normal-background !default;
 $switch-border-color: rgba(0, 0, 0, .08) !default;
 $switch-border-radius: ($switch-size / 2) !default;

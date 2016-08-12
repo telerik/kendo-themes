@@ -7,9 +7,9 @@ $button-hover-border: darken($button-border, 7%) !default;
 $button-active-border: rgba(0, 0, 0, .1) !default;
 $button-disabled-border: $button-border;
 
-$button-gradient: linear-gradient(darken($base, 1%), darken($base, 3%)) !default;
+$button-gradient: linear-gradient($base, darken($base, 2%)) !default;
 $button-hover-gradient: linear-gradient(darken($hover-background, 1%), darken($hover-background, 2%)) !default;
-$button-active-gradient: linear-gradient(darken($base, 3%), darken($base, 1%)) !default;
+$button-active-gradient: linear-gradient(darken($base, 2%), $base) !default;
 
 $button-focused-box-shadow: 0 0 0 2px darken($background, 6%) !default;
 $button-active-box-shadow: inset 0 3px 5px darken($background, 9%) !default;
@@ -29,7 +29,6 @@ $primary-active-gradient: linear-gradient($primary-background, adjust-hue($prima
 $primary-disabled-gradient: linear-gradient(adjust-hue($primary-background, 6), $primary-disabled-background) !default;
 
 $buttongroup-button-focused-box-shadow: inset 0 0 0 2px darken($base, 5%) !default;
-$buttongroup-button-hover-box-shadow: inset 0 0 0 1px darken($base, 6%) !default;
 $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary-background, 2%) !default;
 
 @include exports('button/theme') {
