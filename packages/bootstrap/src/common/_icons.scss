@@ -21,6 +21,17 @@
 		&:before {
 			vertical-align: baseline;
 		}
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+
+	.k-i-none {
+		width: 1em;
+		height: 1em;
+		display: inline-block;
 	}
 
 	.k-i-arrow-n:before { content: '\e600'; }

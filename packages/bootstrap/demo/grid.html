@@ -34,28 +34,29 @@
 					pageSize: 20
 				},
 				height: 550,
-				// groupable: true,
+				groupable: true,
 				sortable: true,
-				pageable: {
-					refresh: true,
-					pageSizes: true,
-					buttonCount: 5
-				},
-				editable: true,
+				pageable: true,
+				// editable: true,
 				// toolbar: ["create", "save", "cancel"],
+				filterable: true,
+				reorderable: true,
+				resizable: true,
+				columnMenu: true,
+				selectable: "multiple",
 				columns: [{
-					template: "<div class='customer-photo'" +
-									"style='background-image: url(../content/web/Customers/#:data.CustomerID#.jpg);'></div>" +
-								"<div class='customer-name'>#: ContactName #</div>",
 					field: "ContactName",
 					title: "Contact Name",
+					filterable: { multi: true, search: true, search: true },
 					width: 240
 				}, {
 					field: "ContactTitle",
-					title: "Contact Title"
+					title: "Contact Title",
+					filterable: { multi: true, search: true, search: true }
 				}, {
 					field: "CompanyName",
-					title: "Company Name"
+					title: "Company Name",
+					filterable: { multi: true, search: true, search: true }
 				}, {
 					field: "Country",
 					width: 150

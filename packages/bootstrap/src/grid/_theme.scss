@@ -30,4 +30,11 @@
 		@include appearance( header );
 	}
 
+
+	// Grouping
+	.k-grouping-row,
+	.k-group-cell {
+		@include appearance( header );
+	}
+
 }
