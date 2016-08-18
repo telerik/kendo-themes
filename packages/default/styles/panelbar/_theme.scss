@@ -2,14 +2,16 @@
 @import './layout';
 @import '../mixins/blend-modes';
 
-
-$panelbar-header-color: $accent !default;
 $panelbar-color: $normal-text-color !default;
 $panelbar-border-color: rgba(0, 0, 0, .08) !default;
+$panelbar-header-color: $accent !default;
 $panelbar-header-background: $background !default;
-$panelbar-background: $base !default;
-$panelbar-hover-color: blend-multiply($accent, darken($background, 8%)) !default;
+$panelbar-header-hover-color: blend-multiply($accent, darken($background, 14%)) !default;
+$panelbar-expanded-background: $base !default;
+$panelbar-selected-hover-background: blend-multiply($accent, darken($background, 8%)) !default;
 $panelbar-focused-box-shadow: inset 0 0 0 2px darken($base, 8%) !default;
+$panelbar-selected-focused-box-shadow: inset 0 0 0 2px blend-multiply($accent, darken($background, 8%)) !default;
+$panelbar-selected-focused-hover-box-shadow: inset 0 0 0 2px blend-multiply($accent, darken($background, 14%)) !default;
 
 @include exports('panelbar/theme') {
 
@@ -21,9 +23,35 @@ $panelbar-focused-box-shadow: inset 0 0 0 2px darken($base, 8%) !default;
         border-color: $panelbar-border-color;
     }
 
+    .k-state-expanded {
+        background: $panelbar-expanded-background;
+    }
+
     .k-item {
-        > .k-link {
+        .k-link {
             color: $panelbar-color;
+
+            &.k-state-selected {
+                background-color: $selected-background;
+                color: $selected-text-color;
+
+                >.k-icon {
+                    color: $selected-text-color;
+                }
+
+                &.k-state-focused {
+                    box-shadow: $panelbar-selected-focused-box-shadow;
+
+                    &:hover {
+                        box-shadow: $panelbar-selected-focused-hover-box-shadow;
+                    }
+                }
+
+                &:hover {
+                    color: $selected-text-color;
+                    background-color: $panelbar-selected-hover-background;
+                }
+            }
 
             &.k-state-focused {
                 box-shadow: $panelbar-focused-box-shadow;
@@ -35,37 +63,15 @@ $panelbar-focused-box-shadow: inset 0 0 0 2px darken($base, 8%) !default;
         color: $panelbar-header-color;
         background-color: $panelbar-header-background;
         background-image: none;
-    }
 
-    .k-link {
         &:hover {
-            color: $panelbar-hover-color;
+            color: $panelbar-header-hover-color;
         }
-
-        &.k-state-selected {
-            background-color: $selected-background;
-            color: $selected-text-color;
-
-            &:hover {
-                background-color: darken($selected-background, 2%);
-            }
-        }
-    }
-
-    .k-panel,
-    > .k-item.k-state-active>.k-header  {
-        color: $panelbar-color;
-        background-color: $panelbar-background;
-    }
-
-    >.k-item.k-state-active>.k-header {
-        border-bottom-color: $panelbar-background;
     }
 
     .k-panel {
         .k-link:hover {
-            color: $panelbar-color;
-            background: $hover-background;
+            background-color: $hover-background;
         }
     }
 }
