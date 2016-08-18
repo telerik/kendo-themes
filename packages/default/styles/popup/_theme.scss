@@ -11,48 +11,48 @@ $list-item-focused-box-shadow: inset 0 0 0 1px darken($base, 10%) !default;
 $list-item-focused-border: darken($base, 10%) !default;
 
 @include exports('popup/theme') {
-.popup {
+.k-popup {
     box-shadow: $list-container-box-shadow;
 
-    .list-container {
+    .k-list-container {
         background-color: $list-container-background;
         border-color: $list-container-border;
 
-        &.state-border-up {
+        &.k-state-border-up {
             border-radius: 0 0 $border-radius $border-radius;
         }
 
-        &.state-border-down {
+        &.k-state-border-down {
             border-radius: $border-radius $border-radius 0 0;
         }
 
-        .item,
-        .list-optionlabel {
-            &.state-selected {
+        .k-item,
+        .k-list-optionlabel {
+            &.k-state-selected {
                 box-shadow: none;
             }
         }
 
-        .item:hover,
-        .list-optionlabel:hover {
+        .k-item:hover,
+        .k-list-optionlabel:hover {
             color: $hover-text-color;
             background-color: $hover-background;
 
-            &.state-selected {
+            &.k-state-selected {
                 background-color: blend-multiply($selected-background, $hover-background);
                 color: $selected-text-color;
             }
         }
 
-        .item.state-focused {
+        .k-item.k-state-focused {
             border-color: $list-item-focused-border;
             box-shadow: $list-item-focused-box-shadow;
         }
     }
 }
 
-.popup,
-.list-container {
+.k-popup,
+.k-list-container {
     border-radius: $border-radius;
 }
 }

@@ -4,7 +4,7 @@ $button-padding: .375em !default;
 
 @include exports('button/layout') {
 
-.button {
+.k-button {
     border-radius: $border-radius;
     border-style: solid;
     border-width: 1px;
@@ -27,60 +27,60 @@ $button-padding: .375em !default;
         padding: 0;
     }
 
-    .icon {
+    .k-icon {
         vertical-align: text-bottom;
     }
 
-    > .image {
+    > .k-image {
         vertical-align: middle;
     }
 
-    .icon,
-    > .image {
+    .k-icon,
+    > .k-image {
         margin-right: (2 * $button-padding) / 3;
     }
 }
 
-.button-icon {
+.k-button-icon {
     padding: $button-padding;
     line-height: 1em;
 
-    .icon {
+    .k-icon {
         margin-right: 0;
     }
 }
 
-.button-icon > span {
+.k-button-icon > span {
     width: 1em;
 }
 
-.button-icontext {
+.k-button-icontext {
     overflow: visible; // IE9
 
-    .icon,
-    .image,
-    .sprite {
+    .k-icon,
+    .k-image,
+    .k-sprite {
         margin-left: -3px;
         margin-right: 3px;
     }
 
-    .icon,
-    .image {
+    .k-icon,
+    .k-image {
         vertical-align: text-top;
     }
 }
 
-.button-bare {
+.k-button-bare {
     border-width: 0;
     color: inherit;
 }
 
-.button-group {
+.k-button-group {
     display: inline-block;
     border-width: 1px;
     border-style: solid;
 
-    .button {
+    .k-button {
         border-width: 0;
         position: relative;
         margin-left: 1px;
@@ -95,7 +95,7 @@ $button-padding: .375em !default;
             margin-left: -1px;
         }
 
-        &.group-start {
+        &.k-group-start {
             margin-left: 0;
 
             &::before {

@@ -6,7 +6,7 @@ $window-titlebar-size: 3em;
 $window-padding: .93em;
 $window-z-index: 10001;
 
-.window {
+.k-window {
     border-width: 0;
     display: inline-block;
     padding-top: $window-titlebar-size;
@@ -15,7 +15,7 @@ $window-z-index: 10001;
     min-width: 450px;
     max-width: 100%;
 
-    &.window-titleless {
+    &.k-window-titleless {
         padding-top: 0;
     }
 }
@@ -24,7 +24,7 @@ $icon-sizing-factor: (.875 / .6);
 $icon-size: .6em;
 $icon-width: 1em * $icon-sizing-factor;
 
-.window-titlebar {
+.k-window-titlebar {
     display: block;
     height: $window-titlebar-size;
     line-height: $window-titlebar-size;
@@ -34,7 +34,7 @@ $icon-width: 1em * $icon-sizing-factor;
     white-space: nowrap;
     width: 100%;
 
-    .window-actions {
+    .k-window-actions {
         line-height: $window-titlebar-size;
         position: absolute;
         right: .4em;
@@ -42,7 +42,7 @@ $icon-width: 1em * $icon-sizing-factor;
         white-space: nowrap;
     }
 
-    .window-action {
+    .k-window-action {
         cursor: pointer;
         display: inline-block;
         border: 0;
@@ -53,7 +53,7 @@ $icon-width: 1em * $icon-sizing-factor;
         text-align: center;
         vertical-align: middle;
 
-        .icon {
+        .k-icon {
             margin: 0;
             vertical-align: top;
         }
@@ -67,7 +67,7 @@ $icon-width: 1em * $icon-sizing-factor;
     }
 }
 
-.window-title {
+.k-window-title {
     cursor: default;
     left: $window-padding;
     overflow: hidden;
@@ -75,13 +75,13 @@ $icon-width: 1em * $icon-sizing-factor;
     right: $window-padding;
     text-overflow: ellipsis;
 
-    .image {
+    .k-image {
         margin: 0 5px 0 0;
         vertical-align: middle;
     }
 }
 
-.window-content {
+.k-window-content {
     height: 100%;
     outline: 0;
     overflow: auto;
@@ -89,12 +89,12 @@ $icon-width: 1em * $icon-sizing-factor;
     position: relative;
 }
 
-.window-iframecontent {
+.k-window-iframecontent {
     overflow: visible;
     padding: 0;
 }
 
-.window > .resize-handle {
+.k-window > .k-resize-handle {
     background-color: $background;
     filter: alpha(opacity=0);
     font-size: 0;
@@ -109,7 +109,7 @@ $icon-width: 1em * $icon-sizing-factor;
 $resizer-size: 6px;
 $resizer-offset: -$resizer-size / 2;
 
-.resize-n {
+.k-resize-n {
     cursor: n-resize;
     height: $resizer-size;
     left: 0;
@@ -117,7 +117,7 @@ $resizer-offset: -$resizer-size / 2;
     width: 100%;
 }
 
-.resize-e {
+.k-resize-e {
     cursor: e-resize;
     height: 100%;
     right: $resizer-offset;
@@ -125,7 +125,7 @@ $resizer-offset: -$resizer-size / 2;
     width: $resizer-size;
 }
 
-.resize-s {
+.k-resize-s {
     bottom: $resizer-offset;
     cursor: s-resize;
     height: $resizer-size;
@@ -133,7 +133,7 @@ $resizer-offset: -$resizer-size / 2;
     width: 100%;
 }
 
-.resize-w {
+.k-resize-w {
     cursor: w-resize;
     height: 100%;
     left: $resizer-offset;
@@ -141,7 +141,7 @@ $resizer-offset: -$resizer-size / 2;
     width: $resizer-size;
 }
 
-.resize-se {
+.k-resize-se {
     bottom: $resizer-offset;
     cursor: se-resize;
     height: 1em;
@@ -149,7 +149,7 @@ $resizer-offset: -$resizer-size / 2;
     width: 1em;
 }
 
-.resize-sw {
+.k-resize-sw {
     bottom: $resizer-offset;
     cursor: sw-resize;
     height: $resizer-size;
@@ -157,7 +157,7 @@ $resizer-offset: -$resizer-size / 2;
     width: $resizer-size;
 }
 
-.resize-ne {
+.k-resize-ne {
     cursor: ne-resize;
     height: $resizer-size;
     right: $resizer-offset;
@@ -165,7 +165,7 @@ $resizer-offset: -$resizer-size / 2;
     width: $resizer-size;
 }
 
-.resize-nw {
+.k-resize-nw {
     cursor: nw-resize;
     height: $resizer-size;
     left: $resizer-offset;
@@ -173,10 +173,10 @@ $resizer-offset: -$resizer-size / 2;
     width: $resizer-size;
 }
 
-.overlay,
-.dialog-wrapper,
-.dialog-wrapper > .animation-container,
-.dialog-wrapper > .animation-container > div {
+.k-overlay,
+.k-dialog-wrapper,
+.k-dialog-wrapper > .k-animation-container,
+.k-dialog-wrapper > .k-animation-container > div {
     top: 0;
     left: 0;
     position: fixed;
@@ -184,17 +184,17 @@ $resizer-offset: -$resizer-size / 2;
     width: 100%;
 }
 
-.dialog-wrapper > .animation-container {
+.k-dialog-wrapper > .k-animation-container {
     z-index: $window-z-index;
 }
 
-.overlay {
+.k-overlay {
     background-color: invert($background);
     opacity: .5;
     z-index: $window-z-index;
 }
 
-.window .overlay {
+.k-window .k-overlay {
     background-color: $background;
     height: 100%;
     opacity: 0;
@@ -202,7 +202,7 @@ $resizer-offset: -$resizer-size / 2;
     width: 100%;
 }
 
-.action-buttons {
+.k-action-buttons {
     clear: both;
     display: block;
     border-top-width: 1px;
@@ -210,7 +210,7 @@ $resizer-offset: -$resizer-size / 2;
     margin: (2 * $window-padding) (-$window-padding) (-$window-padding);
     padding: $window-padding 0;
 
-    .button {
+    .k-button {
         width: 50%;
         float: left;
         margin: -$window-padding 0;
@@ -219,7 +219,7 @@ $resizer-offset: -$resizer-size / 2;
         border-radius: 0;
     }
 
-    .primary::before {
+    .k-primary::before {
         content: '';
         display: block;
         position: absolute;

@@ -23,27 +23,27 @@ $slider-button-focused-box-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 
 @include exports('slider/theme') {
 
-.slider {
-    .slider-track,
-    .slider-selection {
+.k-slider {
+    .k-slider-track,
+    .k-slider-selection {
         border-radius: $border-radius;
     }
 
-   .slider-track {
+   .k-slider-track {
         background-color: $slider-trackbackground-color;
     }
 
-    .slider-selection {
+    .k-slider-selection {
         background-color: $slider-selection-background-color;
     }
 
-    .draghandle {
+    .k-draghandle {
         background-color: $slider-draghandle-background-color;
         border-color: $slider-draghandle-border-color;
         border-radius: 50%;
 
         &:hover,
-        &.pressed {
+        &.k-pressed {
             background-color: darken($accent, 4%);
         }
 
@@ -52,7 +52,7 @@ $slider-button-focused-box-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
         }
 
         &:active,
-        &.pressed {
+        &.k-pressed {
             box-shadow: $slider-draghandle-active-box-shadow;
         }
 
@@ -61,7 +61,7 @@ $slider-button-focused-box-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
         }
     }
 
-    .button {
+    .k-button {
         border-radius: 50%;
 
         &:active {
@@ -70,8 +70,8 @@ $slider-button-focused-box-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
         }
     }
 
-    &.state-disabled .button,
-    &.state-disabled .draghandle {
+    &.k-state-disabled .k-button,
+    &.k-state-disabled .k-draghandle {
         &:hover,
         &:focus,
         &:active {
@@ -83,11 +83,11 @@ $slider-button-focused-box-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
     }
 }
 
-.slider-horizontal .tick {
+.k-slider-horizontal .k-tick {
     background-image: url('./../slider/images/slider-h.gif');
 }
 
-.slider-vertical .tick {
+.k-slider-vertical .k-tick {
     background-image: url('./../slider/images/slider-v.gif');
 }
 }

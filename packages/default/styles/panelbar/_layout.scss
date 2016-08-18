@@ -3,14 +3,14 @@
 
 @include exports('panelbar/layout') {
 
-.panelbar {
+.k-panelbar {
     border-style: solid;
     border-width: 1px;
     display: block;
 }
 
-.panelbar > .item,
-.panel > .item {
+.k-panelbar > .k-item,
+.k-panel > .k-item {
     border-radius: 0;
     border-width: 0;
     display: block;
@@ -18,16 +18,16 @@
     margin: 0;
 }
 
-.panelbar .link > .image,
-.panelbar .link > .sprite {
+.k-panelbar .k-link > .k-image,
+.k-panelbar .k-link > .k-sprite {
     float: left;
     margin-right: 5px;
     margin-top: 4px;
     vertical-align: middle;
 }
 
-.panelbar > .item > .link,
-.panel > .item > .link {
+.k-panelbar > .k-item > .k-link,
+.k-panel > .k-item > .k-link {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     display: block;
@@ -37,24 +37,24 @@
     text-decoration: none;
 }
 
-.panelbar > .item > .link {
+.k-panelbar > .k-item > .k-link {
     padding: .214em 2em .214em .714em;
 }
 
-.panelbar > .item:last-child > .link {
+.k-panelbar > .k-item:last-child > .k-link {
     border-bottom: 0;
 }
 
-.panelbar-expand,
-.panelbar-collapse {
+.k-panelbar-expand,
+.k-panelbar-collapse {
     margin-top: -8px;
     position: absolute;
     right: 4px;
     top: 50%;
 }
 
-.panelbar .panel,
-.panelbar .content {
+.k-panelbar .k-panel,
+.k-panelbar .k-content {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     margin: 0;
@@ -62,21 +62,21 @@
     position: relative;
 }
 
-.panel > .item > .link {
+.k-panel > .k-item > .k-link {
     border-bottom: 0;
     font-size: .95em;
     line-height: 2.3;
 }
 
-.panel .panel > .item > .link {
+.k-panel .k-panel > .k-item > .k-link {
     padding-left: 2em;
 }
 
-.panelbar .i-seee .link {
+.k-panelbar .k-i-seee .k-link {
     border-bottom: 0;
 }
 
-.panel .panel {
+.k-panel .k-panel {
     border-bottom: 0;
 }
 }

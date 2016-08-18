@@ -14,42 +14,42 @@ $grid-active-color: $accent !default;
 
 
 @include exports('grid/theme') {
-    .grid-header,
-    .grid-header-wrap,
-    .grid td,
-    .grid-content-locked,
-    .grid-footer-locked,
-    .grid-header-locked {
+    .k-grid-header,
+    .k-grid-header-wrap,
+    .k-grid td,
+    .k-grid-content-locked,
+    .k-grid-footer-locked,
+    .k-grid-header-locked {
         border-color: $grid-border-color;
     }
 
-    .grid-header,
-    .pager-wrap {
+    .k-grid-header,
+    .k-pager-wrap {
         background-color: $grid-background;
     }
 
-    .grid {
-        .alt {
+    .k-grid {
+        .k-alt {
             background-color: $grid-alt-background;
         }
 
-        tr.state-selected {
+        tr.k-state-selected {
             background-color: $selected-background;
             color: $selected-text-color;
         }
     }
 
     /* Pager */
-    .pager-numbers {
-        .link,
-        .link:link {
+    .k-pager-numbers {
+        .k-link,
+        .k-link:link {
             color: $grid-active-color;
         }
 
-        .state-selected {
+        .k-state-selected {
             background: transparent;
 
-            .link {
+            .k-link {
                 color: $grid-color;
             }
         }

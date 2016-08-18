@@ -3,14 +3,14 @@
 @import '../dialog/main';
 
 @include exports('grid/layout') {
-    .grid {
+    .k-grid {
         display: block;
         position: relative;
         border-width: 1px;
         border-style: solid;
     }
 
-    .grid table {
+    .k-grid table {
         width: 100%;
         margin: 0; /* override CSS libraries */
         max-width: none;
@@ -21,31 +21,31 @@
         outline: none;
     }
 
-    .grid-toolbar {
+    .k-grid-toolbar {
         display: block;
         padding: .643em;
         border-width: 0 0 1px;
         border-style: solid;
     }
 
-    .grid-header {
+    .k-grid-header {
         border-bottom-style: solid;
         border-bottom-width: 1px;
 
-        th>.link>.icon {
+        th>.k-link>.k-icon {
             vertical-align: text-bottom;
         }
     }
 
-    .grid-content table,
-    .grid-content-locked>table,
-    .grid-footer table,
-    .grid-header table {
+    .k-grid-content table,
+    .k-grid-content-locked>table,
+    .k-grid-footer table,
+    .k-grid-header table {
         table-layout: fixed;
     }
 
-    .grid-header th.header,
-    .filter-row th {
+    .k-grid-header th.k-header,
+    .k-filter-row th {
         overflow: hidden;
         border-style: solid;
         border-width: 0 0 0 1px;
@@ -57,7 +57,7 @@
         line-height: 2em;
     }
 
-    .grid-header th.header>.link {
+    .k-grid-header th.k-header>.k-link {
         display: block;
         line-height: 2em;
         padding: .643em;
@@ -66,7 +66,7 @@
         text-overflow: ellipsis;
     }
 
-    .grid-content {
+    .k-grid-content {
         position: relative;
         overflow: auto;
         overflow-x: auto;
@@ -74,7 +74,7 @@
         min-height: 0%; /* IE9 bug workaround - expanding Grid on hover */
     }
 
-    .grid td {
+    .k-grid td {
         border-style: solid;
         border-width: 0 0 0 1px;
         padding: .5em .643em;
@@ -84,18 +84,18 @@
         text-overflow: ellipsis;
     }
 
-    .grid tbody td:first-child,
-    .grid tfoot td:first-child,
-    .grid-header th.header:first-child {
+    .k-grid tbody td:first-child,
+    .k-grid tfoot td:first-child,
+    .k-grid-header th.k-header:first-child {
         border-left-width: 0;
     }
 
-    .grid-content tr:last-child td {
+    .k-grid-content tr:last-child td {
         border-bottom-width: 0;
     }
 
-    .grid-footer-wrap,
-    .grid-header-wrap {
+    .k-grid-footer-wrap,
+    .k-grid-header-wrap {
         position: relative;
         width: 100%;
         overflow: hidden;
@@ -103,19 +103,19 @@
         border-width: 0 1px 0 0;
     }
 
-    .grid .group-col,
-    .grid .hierarchy-col {
+    .k-grid .k-group-col,
+    .k-grid .k-hierarchy-col {
         width: 18px;
     }
 
-    .hierarchy-cell {
+    .k-hierarchy-cell {
         text-align: center;
     }
 
     /* Locked columns */
-    .grid-content-locked,
-    .grid-footer-locked,
-    .grid-header-locked {
+    .k-grid-content-locked,
+    .k-grid-footer-locked,
+    .k-grid-header-locked {
         display: inline-block;
         vertical-align: top;
         overflow: hidden;
@@ -124,22 +124,22 @@
         border-width: 0 1px 0 0;
     }
 
-    .grid-content-locked+.grid-content,
-    .grid-footer-locked+.grid-footer-wrap,
-    .grid-header-locked+.grid-header-wrap {
+    .k-grid-content-locked+.k-grid-content,
+    .k-grid-footer-locked+.k-grid-footer-wrap,
+    .k-grid-header-locked+.k-grid-header-wrap {
         display: inline-block;
         vertical-align: top;
     }
 
     /* Pager */
-    .grid .pager-numbers,
-    .pager-numbers .link,
-    .pager-numbers .state-selected {
+    .k-grid .k-pager-numbers,
+    .k-pager-numbers .k-link,
+    .k-pager-numbers .k-state-selected {
         display: inline-block;
         vertical-align: top;
     }
 
-    .pager-wrap {
+    .k-pager-wrap {
         clear: both;
         overflow: hidden;
         position: relative;
@@ -149,36 +149,36 @@
         padding: .571em;
     }
 
-    .pager-numbers .current-page {
+    .k-pager-numbers .k-current-page {
         display: none;
     }
 
-    .pager-numbers li,
-    .pager-input {
+    .k-pager-numbers li,
+    .k-pager-input {
         float: left;
     }
 
-    .grid .pager-numbers {
+    .k-grid .k-pager-numbers {
         float: left;
         cursor: default;
     }
 
-    .pager-info {
+    .k-pager-info {
         float: right;
         margin-top: 1px;
     }
 
-    .pager-numbers .link {
+    .k-pager-numbers .k-link {
         text-decoration: none;
     }
 
-    .pager-wrap > .link,
-    .pager-numbers .link,
-    .pager-numbers .state-selected {
+    .k-pager-wrap > .k-link,
+    .k-pager-numbers .k-link,
+    .k-pager-numbers .k-state-selected {
         min-width: 2em;
     }
 
-    .pager-wrap>.link {
+    .k-pager-wrap>.k-link {
         float: left;
         height: 2em;/*IE7*/
         line-height: 2em;/*IE7*/
@@ -189,12 +189,12 @@
         border-color: transparent;
     }
 
-    .pager-wrap>a.state-disabled:hover {
+    .k-pager-wrap>a.k-state-disabled:hover {
         background: none;
         cursor: default;
     }
 
-    .pager-numbers .link {
+    .k-pager-numbers .k-link {
         text-align: center;
         line-height: 2em;
         border-width: 1px;
@@ -202,48 +202,48 @@
         border-color: transparent;
     }
 
-    .pager-wrap .pager-refresh {
+    .k-pager-wrap .k-pager-refresh {
         float: right;
         margin-right: .5em;
         border-width: 0;
         border-radius: 0;
     }
 
-    .pager-numbers .state-selected {
+    .k-pager-numbers .k-state-selected {
         text-align: center;
     }
 
-    .pager-wrap .textbox {
+    .k-pager-wrap .k-textbox {
         width: 3.333em;
         height: 2em;
         padding: 0;
         text-indent: .5em;
     }
 
-    .pager-wrap .dropdown {
+    .k-pager-wrap .k-dropdown {
         width: 4.5em;
     }
 
-    .pager-refresh {
+    .k-pager-refresh {
         float: right;
     }
 
-    .pager-input,
-    .pager-sizes {
+    .k-pager-input,
+    .k-pager-sizes {
         padding: 0 1.4166em;
     }
 
-    .pager-sizes {
+    .k-pager-sizes {
         display: inline-block;
         padding-top: 1px;
     }
 
-    .pager-sizes .widget.dropdown {
+    .k-pager-sizes .k-widget.k-dropdown {
         margin-top: -2px;
     }
 
-    .pager-wrap .textbox,
-    .pager-wrap .widget {
+    .k-pager-wrap .k-textbox,
+    .k-pager-wrap .k-widget {
         margin: 0 .4em;
     }
 }

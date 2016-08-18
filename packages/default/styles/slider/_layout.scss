@@ -14,12 +14,12 @@ $button-spacing: ($slider-button-size + $slider-button-offset);
 $transition-speed: .3s;
 $transition-function: ease-out;
 
-.slider {
+.k-slider {
     background-color: transparent;
     border-width: 0;
     position: relative;
 
-    .button {
+    .k-button {
         height: $slider-button-size;
         line-height: $slider-button-size;
         margin: 0;
@@ -29,35 +29,35 @@ $transition-function: ease-out;
         position: absolute;
         width: $slider-button-size;
 
-        .icon {
+        .k-icon {
             vertical-align: baseline;
             line-height: $slider-button-size;
             margin-right: 0;
         }
     }
 
-    .button-increase {
+    .k-button-increase {
         right: 0;
         top: 0;
     }
 
-    .button-decrease {
+    .k-button-decrease {
         left: 0;
         top: 0;
     }
 
-    .label {
+    .k-label {
         font-size: .92em;
         position: absolute;
         white-space: nowrap;
     }
 
-    .tick,
-    .slider-track {
+    .k-tick,
+    .k-slider-track {
         cursor: pointer;
     }
 
-    .tick {
+    .k-tick {
         background-color: transparent;
         background-position: center center;
         background-repeat: no-repeat;
@@ -67,156 +67,156 @@ $transition-function: ease-out;
     }
 
 
-    &.state-disabled {
-        .tick,
-        .slider-track,
-        .draghandle {
+    &.k-state-disabled {
+        .k-tick,
+        .k-slider-track,
+        .k-draghandle {
             cursor: default;
         }
     }
 }
 
-.slider-vertical {
+.k-slider-vertical {
     height: $slider-size;
     width: $slider-alt-size;
 
-    .button-decrease {
+    .k-button-decrease {
         bottom: 0;
         top: auto;
     }
 
-    .tick {
+    .k-tick {
         text-align: right;
         margin-left: 2px;
     }
 
-    .slider-topleft .tick {
+    .k-slider-topleft .k-tick {
         text-align: left;
     }
 
     // ticks
 
-    .tick { background-position: -92px center; }
-    .slider-topleft .tick { background-position: -122px center; }
-    .slider-bottomright .tick { background-position: -152px center; }
+    .k-tick { background-position: -92px center; }
+    .k-slider-topleft .k-tick { background-position: -122px center; }
+    .k-slider-bottomright .k-tick { background-position: -152px center; }
 
-    .ticlarge { background-position: -2px center; }
-    .slider-topleft .ticlarge { background-position: -32px center; }
-    .slider-bottomright .ticlarge { background-position: -62px center; }
+    .k-ticlarge { background-position: -2px center; }
+    .k-slider-topleft .k-ticlarge { background-position: -32px center; }
+    .k-slider-bottomright .k-ticlarge { background-position: -62px center; }
 
-    .first { background-position: -92px 100%; }
-    .ticlarge.first { background-position: -2px 100%; }
-    .slider-topleft .first { background-position: -122px 100%; }
-    .slider-topleft .ticlarge.first { background-position: -32px 100%; }
-    .slider-bottomright .first { background-position: -152px 100%; }
-    .slider-bottomright .ticlarge.first { background-position: -62px 100%; }
+    .k-first { background-position: -92px 100%; }
+    .k-ticlarge.k-first { background-position: -2px 100%; }
+    .k-slider-topleft .k-first { background-position: -122px 100%; }
+    .k-slider-topleft .k-ticlarge.k-first { background-position: -32px 100%; }
+    .k-slider-bottomright .k-first { background-position: -152px 100%; }
+    .k-slider-bottomright .k-ticlarge.k-first { background-position: -62px 100%; }
 
-    .last { background-position: -92px 0; }
-    .ticlarge.last { background-position: -2px 0; }
-    .slider-topleft .last { background-position: -122px 0; }
-    .slider-topleft .ticlarge.last { background-position: -32px 0; }
-    .slider-bottomright .last { background-position: -152px 0; }
-    .slider-bottomright .ticlarge.last { background-position: -62px 0; }
+    .k-last { background-position: -92px 0; }
+    .k-ticlarge.k-last { background-position: -2px 0; }
+    .k-slider-topleft .k-last { background-position: -122px 0; }
+    .k-slider-topleft .k-ticlarge.k-last { background-position: -32px 0; }
+    .k-slider-bottomright .k-last { background-position: -152px 0; }
+    .k-slider-bottomright .k-ticlarge.k-last { background-position: -62px 0; }
 
     // labels
 
-    .label {
+    .k-label {
         display: block;
         left: 120%;
         text-align: left;
     }
 
-    .last .label {
+    .k-last .k-label {
         top: -.5em;
     }
 
-    .first .label {
+    .k-first .k-label {
         bottom: -.5em;
     }
 
-    .slider-topleft .label {
+    .k-slider-topleft .k-label {
         left: auto;
         right: 120%;
     }
 }
 
-.slider-horizontal {
+.k-slider-horizontal {
     display: inline-block;
     height: $slider-alt-size;
     width: $slider-size;
 
     // ticks
-    .tick {
+    .k-tick {
         float: left;
         height: 100%;
         text-align: center;
         margin-top: 2px;
     }
 
-    .tick { background-position: center -92px; }
-    .slider-topleft .tick { background-position: center -122px; }
-    .slider-bottomright .tick { background-position: center -152px; }
+    .k-tick { background-position: center -92px; }
+    .k-slider-topleft .k-tick { background-position: center -122px; }
+    .k-slider-bottomright .k-tick { background-position: center -152px; }
 
-    .ticlarge { background-position: center -2px; }
-    .slider-topleft .ticlarge { background-position: center -32px; }
-    .slider-bottomright .ticlarge { background-position: center -62px; }
+    .k-ticlarge { background-position: center -2px; }
+    .k-slider-topleft .k-ticlarge { background-position: center -32px; }
+    .k-slider-bottomright .k-ticlarge { background-position: center -62px; }
 
-    .first { background-position: 0 -92px; }
-    .ticlarge.first { background-position: 0 -2px; }
-    .slider-topleft .first { background-position: 0 -122px; }
-    .slider-topleft .ticlarge.first { background-position: 0 -32px; }
-    .slider-bottomright .first { background-position: 0 -152px; }
-    .slider-bottomright .ticlarge.first { background-position: 0 -62px; }
+    .k-first { background-position: 0 -92px; }
+    .k-ticlarge.k-first { background-position: 0 -2px; }
+    .k-slider-topleft .k-first { background-position: 0 -122px; }
+    .k-slider-topleft .k-ticlarge.k-first { background-position: 0 -32px; }
+    .k-slider-bottomright .k-first { background-position: 0 -152px; }
+    .k-slider-bottomright .k-ticlarge.k-first { background-position: 0 -62px; }
 
-    .last { background-position: 100% -92px; }
-    .ticlarge.last { background-position: 100% -2px; }
-    .slider-topleft .last { background-position: 100% -122px; }
-    .slider-topleft .ticlarge.last { background-position: 100% -32px; }
-    .slider-bottomright .last { background-position: 100% -152px; }
-    .slider-bottomright .ticlarge.last { background-position: 100% -62px; }
+    .k-last { background-position: 100% -92px; }
+    .k-ticlarge.k-last { background-position: 100% -2px; }
+    .k-slider-topleft .k-last { background-position: 100% -122px; }
+    .k-slider-topleft .k-ticlarge.k-last { background-position: 100% -32px; }
+    .k-slider-bottomright .k-last { background-position: 100% -152px; }
+    .k-slider-bottomright .k-ticlarge.k-last { background-position: 100% -62px; }
 
     // labels
 
-    .label {
+    .k-label {
         left: 0;
         bottom: -1.2em;
         line-height: 1;
         width: 100%;
     }
 
-    .first .label {
+    .k-first .k-label {
         left: -50%;
     }
 
-    .last .label {
+    .k-last .k-label {
         left: auto;
         right: -50%;
     }
 
-    .slider-topleft .label {
+    .k-slider-topleft .k-label {
         top: -1.2em;
     }
 }
 
-.slider-wrap {
+.k-slider-wrap {
     height: 100%;
     width: 100%;
 }
 
-.slider-track,
-.slider-selection {
+.k-slider-track,
+.k-slider-selection {
     margin: 0;
     padding: 0;
     position: absolute;
 
-    .slider-horizontal & {
+    .k-slider-horizontal & {
         height: $slider-track-thickness;
         left: 0;
         margin-top: -($slider-track-thickness / 2);
         top: 50%;
     }
 
-    .slider-vertical & {
+    .k-slider-vertical & {
         bottom: 0;
         left: 50%;
         margin-left: -($slider-track-thickness / 2);
@@ -224,18 +224,18 @@ $transition-function: ease-out;
     }
 }
 
-.slider-buttons .slider-track {
-    .slider-horizontal & {
+.k-slider-buttons .k-slider-track {
+    .k-slider-horizontal & {
         left: $button-spacing;
     }
 
-    .slider-vertical & {
+    .k-slider-vertical & {
         bottom: $button-spacing;
     }
 }
 
 
-.draghandle {
+.k-draghandle {
     background-color: transparent;
     background-repeat: no-repeat;
     border-style: solid;
@@ -247,60 +247,60 @@ $transition-function: ease-out;
     text-decoration: none;
     text-indent: -3333px;
 
-    .slider-horizontal & {
+    .k-slider-horizontal & {
         height: 14px;
         top: -6px;
         width: 14px;
         transition: left $transition-speed $transition-function;
     }
 
-    .slider-vertical & {
+    .k-slider-vertical & {
         height: 14px;
         left: -6px;
         width: 14px;
         transition: bottom $transition-speed $transition-function;
     }
 
-    &.pressed {
+    &.k-pressed {
         transition: none;
     }
 }
 
-.slider-selection {
-    .slider-horizontal & {
+.k-slider-selection {
+    .k-slider-horizontal & {
         transition: width $transition-speed $transition-function;
     }
 
-    .slider-vertical & {
+    .k-slider-vertical & {
         transition: height $transition-speed $transition-function;
     }
 
-    &.pressed {
+    &.k-pressed {
         transition: none;
     }
 }
 
 
-.slider-items {
+.k-slider-items {
     user-select: none;
 
-    .slider-buttons & {
+    .k-slider-buttons & {
         margin-left: $button-spacing;
     }
 
-    .slider-horizontal & {
+    .k-slider-horizontal & {
         height: 100%;
     }
 
-    .slider-vertical & {
+    .k-slider-vertical & {
         padding-top: 1px;
     }
 
-    .slider-horizontal .slider-buttons & {
+    .k-slider-horizontal .k-slider-buttons & {
         padding-top: 0;
     }
 
-    .slider-vertical .slider-buttons & {
+    .k-slider-vertical .k-slider-buttons & {
         margin: 0;
         padding-top: 35px;
     }

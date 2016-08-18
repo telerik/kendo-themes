@@ -29,39 +29,39 @@ $dialog-primary-active-gradient: linear-gradient(desaturate($accent, 3%), adjust
 
 @include exports('dialog/theme') {
 
-.window {
+.k-window {
     border-color: $window-border-color;
     box-shadow: $window-shadow;
 
-    >.header {
+    >.k-header {
         color: $window-header-color;
         background-color: $accent;
 
-        .window-action {
+        .k-window-action {
             color: inherit;
             background: transparent;
         }
     }
 
-    &.state-focused {
+    &.k-state-focused {
         box-shadow: $window-focused-box-shadow;
     }
 
-    .window-action {
+    .k-window-action {
         &:active {
             box-shadow: none;
         }
     }
 }
 
-.window-content {
+.k-window-content {
     overflow: hidden;
 }
 
-.action-buttons {
+.k-action-buttons {
     border-top-color: $window-border-color;
 
-    .button {
+    .k-button {
         position: relative;
         background-color: $dialog-button-background;
         background-image: none;
@@ -82,7 +82,7 @@ $dialog-primary-active-gradient: linear-gradient(desaturate($accent, 3%), adjust
         }
     }
 
-    .primary {
+    .k-primary {
         color: $dialog-primary-color;
 
         &:hover {

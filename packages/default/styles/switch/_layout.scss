@@ -4,7 +4,7 @@ $switch-handle-size: (.8 * $switch-size) !default;
 @include exports('switch/layout') {
     $switch-border-width: 1px;
 
-    .switch {
+    .k-switch {
         cursor: pointer;
         display: inline-block;
         font-size: .75em;
@@ -21,23 +21,23 @@ $switch-handle-size: (.8 * $switch-size) !default;
         }
     }
 
-    .switch,
-    .switch-wrapper,
-    .switch-container,
-    .switch-handle {
+    .k-switch,
+    .k-switch-wrapper,
+    .k-switch-container,
+    .k-switch-handle {
         box-sizing: border-box;
     }
 
-    .switch-wrapper {
+    .k-switch-wrapper {
         display: none; // TODO: do not render
     }
 
-    .switch .switch-background {
+    .k-switch .k-switch-background {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
     }
 
-    .switch-container {
+    .k-switch-container {
         padding: (2 * $switch-border-width) 0;
         display: block;
         width: 100%;
@@ -47,7 +47,7 @@ $switch-handle-size: (.8 * $switch-size) !default;
         transform: translateZ(0);
     }
 
-    .switch-handle {
+    .k-switch-handle {
         position: relative;
         width: $switch-handle-size;
         height: $switch-handle-size;
@@ -60,17 +60,17 @@ $switch-handle-size: (.8 * $switch-size) !default;
         vertical-align: middle;
     }
 
-    .switch-label-off {
+    .k-switch-label-off {
         left: $switch-handle-size;
         margin-left: 2px;
     }
 
-    .switch-label-on {
+    .k-switch-label-on {
         left: -$switch-handle-size;
     }
 
-    .switch-label-on,
-    .switch-label-off {
+    .k-switch-label-on,
+    .k-switch-label-off {
         top: -$switch-border-width;
         display: block;
         text-align: center;
@@ -81,8 +81,8 @@ $switch-handle-size: (.8 * $switch-size) !default;
         vertical-align: middle;
     }
 
-    .switch-container,
-    .switch-wrapper {
+    .k-switch-container,
+    .k-switch-wrapper {
         border-width: $switch-border-width;
         border-style: solid;
         background-clip: content-box;

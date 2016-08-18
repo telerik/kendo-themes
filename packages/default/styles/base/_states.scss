@@ -7,81 +7,81 @@ $focused-item-shadow: inset 0 0 3px 1px darken($base, 10%) !default;
 
 @include exports('base/states') {
 
-.widget,
-.content,
-.input,
-.textbox {
+.k-widget,
+.k-content,
+.k-input,
+.k-textbox {
     background-color: $background;
     border-color: $widget-border-color;
     color: $normal-text-color;
     border-radius: $border-radius;
 }
 
-.header {
+.k-header {
     background-color: $header-background;
     border-color: $widget-border-color;
 }
 
-.link,
-.icon {
+.k-link,
+.k-icon {
     color: $normal-text-color;
 }
 
-.centered {
+.k-centered {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 // states
-.state-default {
+.k-state-default {
     border-color: $widget-border-color;
 }
 
-.state-selected {
+.k-state-selected {
     background-color: $selected-background;
     border-color: $selected-border-color;
     color: $selected-text-color;
 }
 
-.state-active {
+.k-state-active {
     background-color: $background;
 }
 
-.textbox:focus,
-.state-focused {
+.k-textbox:focus,
+.k-state-focused {
     box-shadow: $focused-item-shadow;
 }
 
-.state-hover,
-.state-hover:hover {
+.k-state-hover,
+.k-state-hover:hover {
     background-color: $hover-background;
     border-color: $hover-border-color;
     color: $hover-text-color;
 }
 
-.state-disabled,
-.state-disabled .link,
-.state-disabled .button {
+.k-state-disabled,
+.k-state-disabled .k-link,
+.k-state-disabled .k-button {
     border-color: $disabled-border-color;
     color: $disabled-border-color;
     cursor: default;
     outline: 0;
 }
 
-.state-disabled {
+.k-state-disabled {
     opacity: .7;
 }
 
-.state-error {
+.k-state-error {
     border-style: ridge;
 }
 
-.state-empty {
+.k-state-empty {
     font-style: italic;
 }
 
-.state-highlight {
+.k-state-highlight {
     background-color: saturate($base, 4%);
     border-color: $accent;
 }
@@ -117,7 +117,7 @@ $focused-item-shadow: inset 0 0 3px 1px darken($base, 10%) !default;
     @each $name, $value in $exported {
         $type: type-of($value);
 
-        .var--#{$name} {
+        .k-var--#{$name} {
             @if $type == 'color' {
                 // background-color can store any color
                 background-color: $value;

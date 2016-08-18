@@ -6,10 +6,10 @@
 $input-height: 1.65em;
 $input-indent: .33em;
 
-.autocomplete,
-.combobox,
-.dropdown,
-.textbox {
+.k-autocomplete,
+.k-combobox,
+.k-dropdown,
+.k-textbox {
     position: relative;
     display: inline-block;
     width: 12.4em;
@@ -18,26 +18,26 @@ $input-indent: .33em;
     vertical-align: middle;
 }
 
-.autocomplete,
-.combobox,
-.dropdown {
+.k-autocomplete,
+.k-combobox,
+.k-dropdown {
     white-space: nowrap;
 
-    .popup {
+    .k-popup {
         width: 100%;
     }
 }
 
-.autocomplete {
+.k-autocomplete {
     position: relative;
     cursor: default;
 }
 
-.dropdown-wrap {
+.k-dropdown-wrap {
     display: block;
     position: relative;
 
-   .select {
+   .k-select {
         position: absolute; /* icon positioning */
         top: 0;
         right: 0;
@@ -52,91 +52,91 @@ $input-indent: .33em;
         padding: 0;
     }
 
-    .icon {
+    .k-icon {
         line-height: 2.004em;
     }
 }
 
-.list-scroller {
+.k-list-scroller {
     position: relative;
     overflow: auto;
 }
 
-.list-container.state-border-down,
-.autocomplete.state-border-down,
-.dropdown-wrap.state-border-down,
-.picker-wrap.state-border-down {
+.k-list-container.k-state-border-down,
+.k-autocomplete.k-state-border-down,
+.k-dropdown-wrap.k-state-border-down,
+.k-picker-wrap.k-state-border-down {
     border-bottom-width: 0;
     padding-bottom: 1px;
 }
 
-.textbox,
-.autocomplete,
-.dropdown-wrap {
+.k-textbox,
+.k-autocomplete,
+.k-dropdown-wrap {
     border-width: 1px;
     border-style: solid;
     padding: 0 1.9em 0 0;
 }
 
-.textbox,
-.autocomplete {
+.k-textbox,
+.k-autocomplete {
     padding: 0;
 }
 
-.space-left .icon {
+.k-space-left .k-icon {
     left: 3px;
 }
 
-.space-right .icon {
+.k-space-right .k-icon {
     right: 3px;
 }
 
 /*prevent missing bottom border at some zoom levels*/
-.textbox::after {
+.k-textbox::after {
   content: '\a0';
   display: block;
   height: .4px;
   overflow: hidden;
 }
 
-.textbox > input,
-.combobox .input {
+.k-textbox > input,
+.k-combobox .k-input {
     width: 100%;
     vertical-align: top;
 }
 
-.dropdown-wrap .input,
-.selectbox .input {
+.k-dropdown-wrap .k-input,
+.k-selectbox .k-input {
     font-family: inherit;
     border-width: 0;
     outline: 0;
 }
 
-.dropdown .input,
-.selectbox .input {
+.k-dropdown .k-input,
+.k-selectbox .k-input {
     background: transparent;
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.combobox .select {
+.k-combobox .k-select {
     border-style: solid;
     border-width: 0;
     border-color: inherit;
 }
 
-.textbox > input,
-.autocomplete .input {
+.k-textbox > input,
+.k-autocomplete .k-input {
     display: block;
 }
 
-.autocomplete .input {
+.k-autocomplete .k-input {
     width: 100%;
 }
 
-.dropdown .select,
-.selectbox .select {
+.k-dropdown .k-select,
+.k-selectbox .k-select {
     overflow: hidden;
     border: 0;
     text-decoration: none;
@@ -144,10 +144,10 @@ $input-indent: .33em;
     color: inherit;
 }
 
-.textbox > input,
-.autocomplete .input,
-.dropdown-wrap .input,
-.selectbox .input {
+.k-textbox > input,
+.k-autocomplete .k-input,
+.k-dropdown-wrap .k-input,
+.k-selectbox .k-input {
     height: $input-height;
     line-height: $input-height;
     padding: .177em 0;
@@ -156,8 +156,8 @@ $input-indent: .33em;
     margin: 0;
 }
 
-.combobox {
-    .dropdown-wrap::before {
+.k-combobox {
+    .k-dropdown-wrap::before {
         content: '\a0';
         display: inline-block;
         width: 0;
@@ -165,26 +165,26 @@ $input-indent: .33em;
         padding-bottom: .3em;
     }
 
-    .input {
+    .k-input {
         display: inline;
     }
 }
 
 /* fix missing bottom border on browser zoom in Chrome */
-.webkit .combobox .dropdown-wrap::before {
+.k-webkit .k-combobox .k-dropdown-wrap::before {
     padding-bottom: .38em;
 }
 
-.combobox .icon,
-.dropdown,
-.selectbox .icon {
+.k-combobox .k-icon,
+.k-dropdown,
+.k-selectbox .k-icon {
     cursor: pointer;
 }
 
 
-.popup {
-    &.list-container,
-    &.calendar-container {
+.k-popup {
+    &.k-list-container,
+    &.k-calendar-container {
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: transparent;
         padding: 2px;
@@ -192,41 +192,41 @@ $input-indent: .33em;
         border-style: solid;
     }
 
-    > .group-header,
-    > .virtual-wrap > .group-header {
+    > .k-group-header,
+    > .k-virtual-wrap > .k-group-header {
         padding-right: 22px;
     }
 }
 
-.popup .item,
-.list-optionlabel {
+.k-popup .k-item,
+.k-list-optionlabel {
     cursor: default;
 }
 
-.list {
+.k-list {
     height: auto;
 }
 
-.popup .list .state-hover,
-.popup .list .state-focused,
-.popup .list .state-selected,
-.list-optionlabel.state-focused,
-.list-optionlabel.state-selected {
+.k-popup .k-list .k-state-hover,
+.k-popup .k-list .k-state-focused,
+.k-popup .k-list .k-state-selected,
+.k-list-optionlabel.k-state-focused,
+.k-list-optionlabel.k-state-selected {
     padding: 0 4px;
     border-width: 1px;
     border-style: solid;
 }
 
-.list-filter {
+.k-list-filter {
     position: relative;
     margin-bottom: 2px;
 
-    > .textbox {
+    > .k-textbox {
         padding-right: 20px;
         width: 100%;
     }
 
-    > .icon {
+    > .k-icon {
         position: absolute;
         right: 6px;
         top: 50%;
@@ -235,14 +235,14 @@ $input-indent: .33em;
 }
 
 /* MultiSelect */
-.multiselect-wrap {
+.k-multiselect-wrap {
     position: relative;
     border-width: 0;
     border-style: solid;
     border-radius: 4px;
     min-height: 2.04em;
 
-    .input {
+    .k-input {
         background-color: transparent;
         height: 1.31em;
         line-height: 1.31em;
@@ -253,7 +253,7 @@ $input-indent: .33em;
         float: left;
     }
 
-    .input::-ms-clear {
+    .k-input::-ms-clear {
         display: none;
     }
 
@@ -265,7 +265,7 @@ $input-indent: .33em;
         position: relative;
     }
 
-    .select {
+    .k-select {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -274,31 +274,31 @@ $input-indent: .33em;
     }
 }
 
-.autocomplete .loading,
-.multiselect .loading {
+.k-autocomplete .k-loading,
+.k-multiselect .k-loading {
     position: absolute;
     right: 3px;
     bottom: 4px;
 }
 
-.multiselect .loading-hidden {
+.k-multiselect .k-loading-hidden {
     visibility: hidden;
 }
 
-.textbox {
+.k-textbox {
     display: inline-block;
     vertical-align: middle;
     outline: 0;
 
-    &.space-left {
+    &.k-space-left {
         padding-left: 1.9em;
     }
 
-    &.space-right {
+    &.k-space-right {
         padding-right: 1.9em;
     }
 
-    .icon {
+    .k-icon {
         top: 50%;
         margin: -8px 0 0;
         position: absolute;
@@ -306,36 +306,36 @@ $input-indent: .33em;
 }
 
 /* inputs */
-.input {
+.k-input {
     padding: .25em 0;
 }
 
-.input,
-.textbox > input {
+.k-input,
+.k-textbox > input {
     outline: 0;
     -webkit-tap-highlight-color: transparent;
 }
 
-input.textbox,
-textarea.textbox {
+input.k-textbox,
+textarea.k-textbox {
     padding: 2px .3em;
 }
 
-input.textbox {
+input.k-textbox {
     height: ($input-height + .35em);
     text-indent: $input-indent;
     line-height: 2em;
 }
 
-.ie input.textbox {
+.k-ie input.k-textbox {
     text-indent: ($input-indent / 2);
 }
 
-.ff input.textbox {
+.k-ff input.k-textbox {
     height: 2.17em;
 }
 
-textarea.textbox {
+textarea.k-textbox {
     height: auto;
 }
 }

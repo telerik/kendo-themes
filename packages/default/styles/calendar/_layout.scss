@@ -3,7 +3,7 @@
 
 @include exports('calendar/layout') {
 
-.calendar {
+.k-calendar {
     position: relative;
     display: inline-block;
     width: 16.917em;
@@ -12,32 +12,32 @@
     border-style: solid;
 
     td,
-    .link {
+    .k-link {
         text-decoration: none;
     }
 
-    .action-link {
+    .k-action-link {
         text-decoration: underline;
     }
 
-    .header,
-    .footer {
+    .k-header,
+    .k-footer {
         position: relative;
         text-align: center;
     }
 
-    .nav-prev,
-    .nav-next {
+    .k-nav-prev,
+    .k-nav-next {
         position: absolute;
         top: .16666em;
         line-height: 1.8333em;
         height: 1.8333em;
     }
 
-    .nav-prev { left: 1%; }
-    .nav-next { right: 1%; }
+    .k-nav-prev { left: 1%; }
+    .k-nav-next { right: 1%; }
 
-    .content {
+    .k-content {
         border-spacing: 0;
         width: 100%;
         height: 14.167em;
@@ -47,16 +47,16 @@
         outline: 0;
     }
 
-    .content,
-    .content th {
+    .k-content,
+    .k-content th {
         text-align: right;
     }
 
-    .animation-container .content {
+    .k-animation-container .k-content {
         height: 100%;
     }
 
-    .nav-fast {
+    .k-nav-fast {
         display: inline-block;
         width: 75%;
         height: 1.8333em;
@@ -64,13 +64,13 @@
         margin: .16666em -.08333em .3333em 0;
     }
 
-    .header {
-        .icon {
+    .k-header {
+        .k-icon {
             vertical-align: middle;
         }
 
-        .link.nav-prev,
-        .link.nav-next {
+        .k-link.k-nav-prev,
+        .k-link.k-nav-next {
             height: 1.8333em;
             width: 1.8333em;
         }
@@ -89,13 +89,13 @@
         cursor: pointer;
     }
 
-    .state-focus {
+    .k-state-focus {
         border-style: dotted;
         border-width: .08333em;
         padding: 0;
     }
 
-    .content .link {
+    .k-content .k-link {
         display: block;
         overflow: hidden;
         min-height: 1.8333em;
@@ -103,23 +103,23 @@
         padding: 0 .45em 0 .1em;
     }
 
-    .meta-view .link {
+    .k-meta-view .k-link {
         padding: .25em 0 .3em;
         text-align: center;
     }
 
-    .footer {
+    .k-footer {
         clear: both;
 
-        .nav-today,
-        > .state-disabled {
+        .k-nav-today,
+        > .k-state-disabled {
             display: block;
             height: 100%;
             padding: .5em 0;
         }
     }
 
-    .nav-today:hover {
+    .k-nav-today:hover {
         text-decoration: underline;
     }
 }

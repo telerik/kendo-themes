@@ -1,51 +1,51 @@
 @include exports('popup/layout') {
-.popup {
+.k-popup {
     position: absolute;
     z-index: 100;
 
-    .list-container,
-    .calendar-container {
+    .k-list-container,
+    .k-calendar-container {
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: transparent;
         border-width: 1px;
         border-style: solid;
     }
 
-    > .group-header,
-    > .virtual-wrap > .group-header {
+    > .k-group-header,
+    > .k-virtual-wrap > .k-group-header {
         padding-right: 22px;
     }
 
-    .item,
-    .list-optionlabel {
+    .k-item,
+    .k-list-optionlabel {
         cursor: default;
     }
 
-    .list {
+    .k-list {
         height: auto;
     }
 
-    .list .item,
-    .list-optionlabel,
-    > .group-header,
-    > .virtual-wrap > .group-header {
+    .k-list .k-item,
+    .k-list-optionlabel,
+    > .k-group-header,
+    > .k-virtual-wrap > .k-group-header {
         padding: 1px 5px;
         line-height: 2em;
         min-height: 2em;
     }
 
-    .list-filter {
+    .k-list-filter {
         position: relative;
         margin-bottom: 2px;
 
-        > .textbox {
+        > .k-textbox {
             padding-right: 20px;
             width: 100%;
             border-width: 0 0 1px;
             height: 2.143em; // $input-height + padding + border
         }
 
-        > .icon {
+        > .k-icon {
             position: absolute;
             right: 6px;
             top: 50%;

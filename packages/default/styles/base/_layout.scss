@@ -3,7 +3,7 @@ html {
     font-family: sans-serif;
 }
 
-.reset {
+.k-reset {
     border: 0;
     font-size: 100%;
     list-style: none;
@@ -13,10 +13,10 @@ html {
     text-decoration: none;
 }
 
-.textbox > input,
-.input,
-.textbox,
-.button {
+.k-textbox > input,
+.k-input,
+.k-textbox,
+.k-button {
     font-size: 100%;
     font-family: inherit;
     border-style: solid;
@@ -24,11 +24,11 @@ html {
     -webkit-appearance: none;
 }
 
-.textbox {
+.k-textbox {
     outline: 0;
 }
 
-.floatwrap::after {
+.k-floatwrap::after {
     clear: both;
     content: '';
     display: block;
@@ -37,7 +37,7 @@ html {
     visibility: hidden;
 }
 
-.link {
+.k-link {
     cursor: pointer;
     outline: 0;
     text-decoration: none;
@@ -49,19 +49,19 @@ html {
 
 // override box sizing for grid layout framework integration
 // (Bootstrap 3, Foundation 4)
-.widget,
-.widget *,
-.widget *::before {
+.k-widget,
+.k-widget *,
+.k-widget *::before {
     box-sizing: content-box;
 }
 
-.autocomplete,
-.block,
-.edit-cell .widget,
-.grid-edit-row .widget,
-.grid-edit-row .text-box
-.textbox,
-.list-filter .textbox {
+.k-autocomplete,
+.k-block,
+.k-edit-cell .k-widget,
+.k-grid-edit-row .k-widget,
+.k-grid-edit-row .k-text-box
+.k-textbox,
+.k-list-filter .k-textbox {
     box-sizing: border-box;
 }
 }

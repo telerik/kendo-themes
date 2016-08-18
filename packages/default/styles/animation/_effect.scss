@@ -1,5 +1,5 @@
 @include exports('animation/effect') {
-    .push-right {
+    .k-push-right {
         &-enter,
         &-appear {
             transform: translate(-100%, 0);
@@ -26,7 +26,7 @@
         }
     }
 
-    .push-left {
+    .k-push-left {
         &-enter,
         &-appear {
             transform: translate(100%, 0);
@@ -53,7 +53,7 @@
         }
     }
 
-    .push-down {
+    .k-push-down {
         &-enter,
         &-appear {
             transform: translate(0, -100%);
@@ -75,7 +75,7 @@
         }
     }
 
-    .push-up {
+    .k-push-up {
         &-enter,
         &-appear {
             transform: translate(0, 100%);
@@ -97,13 +97,13 @@
         }
     }
 
-    .expand {
-        .child-animation-container {
+    .k-expand {
+        .k-child-animation-container {
             overflow: hidden;
         }
     }
 
-    .fade {
+    .k-fade {
         &-enter {
             opacity: 0;
         }
@@ -128,7 +128,7 @@
         }
     }
 
-    .zoom-in {
+    .k-zoom-in {
         &-enter,
         &-appear {
             opacity: 0;
@@ -150,7 +150,7 @@
         }
     }
 
-    .zoom-out {
+    .k-zoom-out {
         &-enter,
         &-appear {
             transform: scale(0);
@@ -173,12 +173,12 @@
         }
     }
 
-    .slide-in {
+    .k-slide-in {
         &-appear {
             opacity: .1;
             transform: translate(0, -3em);
 
-            .centered {
+            .k-centered {
                 transform: translate(-50%, -60%);
             }
         }
@@ -188,13 +188,13 @@
             transform: translate(0, 0);
             transition: transform .3s cubic-bezier(.2, .6, .4, 1), opacity .3s cubic-bezier(.2, 1, .2, 1);
 
-            .centered {
+            .k-centered {
                 transform: translate(-50%, -50%);
             }
         }
     }
 
-    .slide-down {
+    .k-slide-down {
         &-enter {
             transform: translateY(-100%);
         }
@@ -214,7 +214,7 @@
         }
     }
 
-    .slide-up {
+    .k-slide-up {
         &-enter {
             transform: translateY(100%);
         }
@@ -234,7 +234,7 @@
         }
     }
 
-    .slide-right {
+    .k-slide-right {
         &-enter {
             transform: translateX(-100%);
         }
@@ -254,7 +254,7 @@
         }
     }
 
-    .slide-left {
+    .k-slide-left {
         &-enter {
             transform: translateX(100%);
         }

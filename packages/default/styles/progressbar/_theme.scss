@@ -7,23 +7,23 @@ $progressbar-active-border: darken($accent, 4%) !default;
 
 @include exports('progressbar/theme') {
 
-    .progressbar {
+    .k-progressbar {
         background-color: $progressbar-base;
 
-        .progress-status-wrap {
+        .k-progress-status-wrap {
             border-color: $progressbar-border;
         }
 
-        .state-selected {
+        .k-state-selected {
             border-color: $progressbar-active-border;
         }
     }
 
-    .progressbar-indeterminate {
+    .k-progressbar-indeterminate {
         background: url('./../progressbar/images/indeterminate.gif');
 
-        .progress-status-wrap,
-        .state-selected {
+        .k-progress-status-wrap,
+        .k-state-selected {
             display: none;
         }
     }

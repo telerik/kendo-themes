@@ -34,7 +34,7 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
 
 @include exports('button/theme') {
 
-.button {
+.k-button {
     color: $normal-text-color;
     background-color: $button-background;
     background-image: $button-gradient;
@@ -47,33 +47,33 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
     }
 
     &:focus,
-    &.state-focused {
+    &.k-state-focused {
         border-color: $button-hover-border;
         box-shadow: $button-focused-box-shadow;
         outline: 0;
     }
 
     &:active,
-    &.state-active {
+    &.k-state-active {
         background-image: $button-active-gradient;
         border-color: $button-active-border;
         box-shadow: $button-active-box-shadow;
     }
 
     &:active:focus,
-    &.state-active:focus,
-    &.state-focused:active,
-    &.state-active.state-focused {
+    &.k-state-active:focus,
+    &.k-state-focused:active,
+    &.k-state-active.k-state-focused {
         box-shadow: $button-active-focused-box-shadow;
     }
 
     &[disabled],
-    &.state-disabled,
-    &.state-disabled:hover,
-    &.state-disabled:active,
+    &.k-state-disabled,
+    &.k-state-disabled:hover,
+    &.k-state-disabled:active,
     [disabled] &,
-    &.state-disabled:hover,
-    &.state-disabled:active {
+    &.k-state-disabled:hover,
+    &.k-state-disabled:active {
         color: $normal-text-color;
         background-image: $button-gradient;
         border-color: $button-disabled-border;
@@ -84,7 +84,7 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
     }
 }
 
-.primary {
+.k-primary {
     color: $selected-text-color;
     background-color: $primary-background;
     background-image: $primary-gradient;
@@ -96,7 +96,7 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
     }
 
     &:focus,
-    &.state-focused {
+    &.k-state-focused {
         box-shadow: $primary-focused-box-shadow;
     }
 
@@ -106,14 +106,14 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
     }
 
     &:active:focus,
-    &.state-active:focus {
+    &.k-state-active:focus {
         box-shadow: $primary-active-focused-box-shadow;
     }
 
-    &.state-disabled,
-    &.state-disabled:hover,
-    .state-disabled:focus,
-    .state-disabled:active {
+    &.k-state-disabled,
+    &.k-state-disabled:hover,
+    .k-state-disabled:focus,
+    .k-state-disabled:active {
         color: $selected-text-color;
         background-color: $primary-disabled-background;
         background-image: $primary-disabled-gradient;
@@ -124,11 +124,11 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
 
 $inner-border-radius: 1px; /* $border-radius - 1 */
 
-.button-group {
+.k-button-group {
     border-color: $button-border;
     border-radius: 2px; /* $border-radius */
 
-    .button {
+    .k-button {
         border-radius: 0;
 
         &::before {
@@ -139,7 +139,7 @@ $inner-border-radius: 1px; /* $border-radius - 1 */
             box-shadow: $buttongroup-button-focused-box-shadow;
         }
 
-        &.state-active {
+        &.k-state-active {
             color: $selected-text-color;
             background-color: $primary-background;
             background-image: $primary-gradient;
@@ -155,27 +155,27 @@ $inner-border-radius: 1px; /* $border-radius - 1 */
                 border-color: $primary-border;
             }
 
-            &.state-active::before,
-            &.state-active + .button::before {
+            &.k-state-active::before,
+            &.k-state-active + .k-button::before {
                 background: $primary-border;
             }
         }
 
-        &.group-start {
+        &.k-group-start {
             border-radius: $inner-border-radius 0 0 $inner-border-radius;
         }
 
-        &.group-end {
+        &.k-group-end {
             border-radius: 0 $inner-border-radius $inner-border-radius 0;
         }
 
-        &.group-start:last-child {
+        &.k-group-start:last-child {
             border-radius: $border-radius;
         }
     }
 
-    &.state-disabled {
-        .button {
+    &.k-state-disabled {
+        .k-button {
             &:focus {
                 box-shadow: none;
             }

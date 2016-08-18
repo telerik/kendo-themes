@@ -25,13 +25,13 @@ $dropdowns-invalid-color: $selected-text-color !default;
 
 @include exports('dropdowns/theme') {
 
-.combobox,
-.dropdown,
-.dropdown-wrap {
+.k-combobox,
+.k-dropdown,
+.k-dropdown-wrap {
     border-radius: $border-radius;
 }
 
-.dropdown-wrap {
+.k-dropdown-wrap {
     background-color: $dropdowns-background-color;
     background-image: $dropdowns-gradient;
     border-color: $dropdowns-border-color;
@@ -41,53 +41,53 @@ $dropdowns-invalid-color: $selected-text-color !default;
         background-image: $dropdowns-hover-gradient;
         border-color: $dropdowns-hover-border-color;
 
-        .select {
+        .k-select {
             background-color: $hover-background;
             background-image: $dropdowns-hover-gradient;
             border-color: $dropdowns-hover-border-color;
         }
     }
 
-    &.state-focused {
+    &.k-state-focused {
         border-color: $dropdowns-focused-border-color;
         box-shadow: $dropdowns-focused-box-shadow;
         outline: 0;
     }
 
-    &.state-disabled:hover,
-    &.state-disabled.state-focused {
+    &.k-state-disabled:hover,
+    &.k-state-disabled.k-state-focused {
         box-shadow: none;
         background-color: $dropdowns-background-color;
         background-position: 50% 50%;
         border-color: $dropdowns-border-color;
     }
 
-    &.state-invalid {
+    &.k-state-invalid {
         color: $dropdowns-invalid-color;
         background-color: $dropdowns-invalid-background;
         background-image: none;
 
-        >.input {
+        >.k-input {
             color: $dropdowns-invalid-color;
         }
     }
 
-    .input {
+    .k-input {
         border-radius: $border-radius 0 0 $border-radius;
     }
 
-    > .select {
+    > .k-select {
         border-radius: 0 $border-radius $border-radius 0;
     }
 }
 
-.combobox {
-    .dropdown-wrap.state-invalid {
-        >.input {
+.k-combobox {
+    .k-dropdown-wrap.k-state-invalid {
+        >.k-input {
             color: $normal-text-color;
         }
 
-        .select {
+        .k-select {
             color: $dropdowns-invalid-color;
             background-color: $dropdowns-invalid-background;
             background-image: none;
@@ -95,7 +95,7 @@ $dropdowns-invalid-color: $selected-text-color !default;
     }
 }
 
-.textbox {
+.k-textbox {
     border-color: $dropdowns-border-color;
     border-radius: $border-radius;
 
@@ -104,7 +104,7 @@ $dropdowns-invalid-color: $selected-text-color !default;
     }
 }
 
-.dropdown-wrap.state-border-down {
+.k-dropdown-wrap.k-state-border-down {
     border-radius: $border-radius $border-radius 0 0;
 }
 }

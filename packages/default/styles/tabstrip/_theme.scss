@@ -13,75 +13,75 @@ $tabstrip-disabled-color: darken($background, 27%) !default;
 
 @include exports('tabstrip/theme') {
 
-.tabstrip {
+.k-tabstrip {
     background-color: transparent;
 
-    .item {
+    .k-item {
         border-color: transparent;
         border-radius: $border-radius $border-radius 0 0;
 
-        .link {
+        .k-link {
             color: $tabstrip-tabs-color;
         }
 
         &:hover {
-            .link {
+            .k-link {
                 color: $tabstrip-hover-color;
             }
         }
 
-        &.state-active {
+        &.k-state-active {
             border-color: $tabstrip-border-color;
 
-            .link {
+            .k-link {
                 color: $tabstrip-active-color;
             }
         }
 
-        &.state-disabled {
-            .link {
+        &.k-state-disabled {
+            .k-link {
                 color: $tabstrip-disabled-color;
             }
         }
     }
 
-    .content {
+    .k-content {
         color: $tabstrip-active-color;
         border-color: $tabstrip-border-color;
         border-radius: 0 0 $border-radius $border-radius;
     }
 
-    > .state-active,
-    .tabstrip-items .state-active {
+    > .k-state-active,
+    .k-tabstrip-items .k-state-active {
         background-color: $tabstrip-active-background-color;
     }
 
-    &.tabstrip-right {
-        .content {
+    &.k-tabstrip-right {
+        .k-content {
             border-radius: $border-radius 0 0 $border-radius;
         }
 
-        .item {
+        .k-item {
             border-radius: 0 $border-radius $border-radius 0;
         }
     }
 
-    &.tabstrip-left {
-        .content {
+    &.k-tabstrip-left {
+        .k-content {
             border-radius: 0 $border-radius $border-radius 0;
         }
 
-        .item {
+        .k-item {
             border-radius: $border-radius 0 0 $border-radius;
         }
     }
 
-    &.tabstrip-bottom {
-        .content {
+    &.k-tabstrip-bottom {
+        .k-content {
             border-radius: $border-radius $border-radius 0 0;
         }
 
-        .item {
+        .k-item {
             border-radius: 0 0 $border-radius $border-radius;
         }
     }
