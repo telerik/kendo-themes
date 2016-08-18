@@ -1,7 +1,7 @@
 @include exports("button/layout") {
 
 	// Button
-	.button {
+	.k-button {
 		padding: $button-padding-y $button-padding-x;
 		border-width: 1px;
 		border-style: solid;
@@ -23,14 +23,14 @@
 			text-decoration: none;
 		}
 
-		.icon {
+		.k-icon {
 			align-self: center;
 		}
 
 
 		// Button variants
 		&-icontext {
-			.icon {
+			.k-icon {
 				margin: 0 ($button-padding-x/2) 0 (-$button-padding-x/2);
 			}
 		}
@@ -39,7 +39,7 @@
 			padding: $button-padding-y;
 			justify-content: center;
 		}
-		&.button-bare {
+		&.k-button-bare {
 			border-width: 0;
 			color: inherit;
 			background: none !important;
@@ -54,7 +54,7 @@
 			font-size: $font-size-sm;
 
 			&-icontext {
-				.icon {
+				.k-icon {
 					margin: 0 ($button-padding-x-sm/2) 0 (-$button-padding-x-sm/2);
 				}
 			}
@@ -67,20 +67,20 @@
 
 
 	// Toggle button
-	.toggle-button {}
+	.k-toggle-button {}
 
 
 	// Split button
-	.split-button {
+	.k-split-button {
 
-		.split-button-arrow {
+		.k-split-button-arrow {
 			margin-left: -1px;
 			padding: $button-padding-y;
 		}
 
 
 		@include compact {
-			.split-button-arrow {
+			.k-split-button-arrow {
 				padding: $button-padding-y-sm;
 			}
 		}
@@ -88,23 +88,23 @@
 
 
 	// Button group
-	.button-group {
+	.k-button-group {
 		white-space: nowrap;
 		display: inline-flex;
 		flex-direction: row;
 		vertical-align: middle;
 		position: relative;
 
-		.button {
+		.k-button {
 			position: relative;
 		}
-		.button + .button {
+		.k-button + .k-button {
 			margin-left: -1px;
 		}
 
-		.button:hover,
-		.button.state-hover,
-		.button.state-active {
+		.k-button:hover,
+		.k-button.k-state-hover,
+		.k-button.k-state-active {
 			z-index: 2;
 		}
 	}

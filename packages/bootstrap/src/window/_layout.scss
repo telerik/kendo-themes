@@ -1,6 +1,6 @@
 @include exports("window/layout") {
 
-	.window {
+	.k-window {
 		padding-top: 2em;
 		border-style: solid;
 		border-width: 1px;
@@ -15,18 +15,18 @@
 		// Compact
 		@include compact {
 
-			.window-titlebar {
+			.k-window-titlebar {
 				padding: $padding-y-sm $padding-x-sm;
 				line-height: $line-height;
 			}
-			.window-content {
+			.k-window-content {
 				padding: $padding-x-sm;
 			}
 		}
 	}
 
 	// Title bar
-	.window-titlebar {
+	.k-window-titlebar {
 		padding: $modal-title-padding;
 		min-height: 16px;
 		border-width: 0 0 1px;
@@ -36,7 +36,7 @@
 		flex-direction: row;
 		align-items: center;
 	}
-	.window-title {
+	.k-window-title {
 		margin: 0;
 		line-height: $modal-title-line-height;
 		text-overflow: ellipsis;
@@ -46,18 +46,18 @@
 	}
 
 	// Actions
-	.window-actions {
+	.k-window-actions {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 	}
-	.window-action {
+	.k-window-action {
 		padding: 2px;
 		color: inherit;
 		text-decoration: none;
 		opacity: .2;
 
-		&.state-hover {
+		&.k-state-hover {
 			color: inherit;
 			text-decoration: none;
 			opacity: .5;
@@ -65,7 +65,7 @@
 	}
 
 	// Content
-	.window-content {
+	.k-window-content {
 		padding: $modal-inner-padding;
 		outline: 0;
 		overflow: auto;
@@ -73,7 +73,7 @@
 		flex: 1;
 	}
 
-	.overlay {
+	.k-overlay {
 		width: 100%;
 		height: 100%;
 		background-color: #000;

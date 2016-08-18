@@ -1,24 +1,24 @@
 @include exports("upload/layout") {
 
-	.upload {
+	.k-upload {
 
 
 		// Compact
 		@include compact {
 
-			&.upload-sync .upload-button {
+			&.k-upload-sync .k-upload-button {
 				margin: $padding-y-sm $padding-x-sm;
 			}
-			.dropzone {
+			.k-dropzone {
 				padding: $padding-y-sm $padding-x-sm;
 			}
 
-			.upload-files {
+			.k-upload-files {
 
-				.file {
+				.k-file {
 					padding: ($padding-y-sm / 2) $padding-x-sm;
 				}
-				.filename {
+				.k-filename {
 					margin-left: $spacer-x/2;
 				}
 			}
@@ -26,16 +26,16 @@
 	}
 
 	// Upload button
-	.upload-button {
+	.k-upload-button {
 		position: relative;
 		overflow: hidden;
 		direction: ltr;
 
-		.upload-sync & {
+		.k-upload-sync & {
 			margin: $padding-y $padding-x;
 		}
 	}
-	.upload-button input {
+	.k-upload-button input {
 		margin: 0;
 		padding: 0;
 		font: 170px monospace!important;
@@ -50,7 +50,7 @@
 
 
 	// Drop zone
-	.dropzone {
+	.k-dropzone {
 		padding: $padding-y $padding-x;
 		display: flex;
 		align-items: center;
@@ -65,17 +65,17 @@
 			white-space: nowrap;
 			position: relative;
 		}
-		.upload-status-total {
+		.k-upload-status-total {
 			display: flex;
 			align-items: center;
 			position: relative;
 
-			.icon {
+			.k-icon {
 				margin-left: $spacer-x / 2;
 			}
 		}
 	}
-	.dropzone-active {
+	.k-dropzone-active {
 
 		em {
 			opacity: 1;
@@ -84,13 +84,13 @@
 
 
 	// Upload files list
-	.upload-files {
+	.k-upload-files {
 		padding-bottom: $padding-y;
 		border-width: 1px 0 0;
 		border-style: solid;
 		border-color: inherit;
 
-		.file {
+		.k-file {
 			padding: 3px $dropdown-item-padding-x;
 			border-width: 0 0 1px;
 			border-style: solid;
@@ -99,17 +99,17 @@
 			align-items: center;
 			position: relative;
 
-			> .icon {
+			> .k-icon {
 				position: relative;
 			}
 		}
-		.progress {
+		.k-progress {
 			position: absolute;
 			top: 0;
 			bottom: 0;
 			left: 0;
 		}
-		.filename {
+		.k-filename {
 			margin-left: $spacer-x;
 			flex: 1;
 			overflow: hidden;
@@ -117,17 +117,17 @@
 			white-space: nowrap;
 			position: relative;
 		}
-		.upload-status {
+		.k-upload-status {
 			display: flex;
 			align-items: center;
 			position: relative;
 
-			.button {
+			.k-button {
 				margin-left: $spacer-x / 2;
 			}
 		}
 
-		.button {
+		.k-button {
 			padding: 0;
 		}
 

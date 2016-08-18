@@ -1,6 +1,6 @@
 @include exports("validator/theme") {
 
-	.tooltip-validation {
+	.k-tooltip-validation {
 		border-color: $alert-warning-border;
 		color: $alert-warning-text;
 		background-color: $alert-warning-bg;

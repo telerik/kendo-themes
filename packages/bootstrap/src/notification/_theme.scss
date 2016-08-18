@@ -1,25 +1,25 @@
 @include exports("notification/theme") {
 
 	// Theme
-	.notification {
+	.k-notification {
 		@include border-radius( $border-radius );
 	}
-	.notification-info {
+	.k-notification-info {
 		border-color: $alert-info-border;
 		color: $alert-info-text;
 		background-color: $alert-info-bg;
 	}
-	.notification-success {
+	.k-notification-success {
 		border-color: $alert-success-border;
 		color: $alert-success-text;
 		background-color: $alert-success-bg;
 	}
-	.notification-warning {
+	.k-notification-warning {
 		border-color: $alert-warning-border;
 		color: $alert-warning-text;
 		background-color: $alert-warning-bg;
 	}
-	.notification-error {
+	.k-notification-error {
 		border-color: $alert-danger-border;
 		color: $alert-danger-text;
 		background-color: $alert-danger-bg;

@@ -1,7 +1,7 @@
 @include exports("datetime/layout") {
 
 	// Shared
-	.picker-wrap {
+	.k-picker-wrap {
 		padding: 0;
 		border-width: 1px;
 		border-style: solid;
@@ -11,7 +11,7 @@
 		position: relative;
 		cursor: default;
 
-		.input {
+		.k-input {
 			padding: $input-padding-y $input-padding-x;
 			border: 0;
 			outline: 0;
@@ -21,7 +21,7 @@
 			flex: 1;
 		}
 
-		.select {
+		.k-select {
 			padding: $button-padding-y;
 			border-width: 0 0 0 1px;
 			border-style: solid;
@@ -31,7 +31,7 @@
 	}
 
 	// Datepicker
-	.datepicker {
+	.k-datepicker {
 		border-width: 0;
 		line-height: $form-line-height;
 		display: inline-block;
@@ -41,18 +41,18 @@
 		// Compact
 		@include compact {
 
-			.input {
+			.k-input {
 				padding: $input-padding-y-sm $input-padding-x-sm;
 			}
 
-			.select {
+			.k-select {
 				padding: $button-padding-y-sm;
 			}
 		}
 	}
 
 	// Timepicker
-	.timepicker {
+	.k-timepicker {
 		border-width: 0;
 		line-height: $form-line-height;
 		display: inline-block;
@@ -62,28 +62,28 @@
 		// Compact
 		@include compact {
 
-			.input {
+			.k-input {
 				padding: $input-padding-y-sm $input-padding-x-sm;
 			}
 
-			.select {
+			.k-select {
 				padding: $button-padding-y-sm;
 			}
 		}
 	}
 
 	// Datetimepicker
-	.datetimepicker {
+	.k-datetimepicker {
 		border-width: 0;
 		line-height: $form-line-height;
 		display: inline-block;
 		vertical-align: middle;
 
 
-		.select {
+		.k-select {
 			padding: 0;
 
-			.link {
+			.k-link {
 				padding: $button-padding-y;
 			}
 		}
@@ -92,11 +92,11 @@
 		// Compact
 		@include compact {
 
-			.input {
+			.k-input {
 				padding: $input-padding-y-sm $input-padding-x-sm;
 			}
 
-			.select .link {
+			.k-select .k-link {
 				padding: $button-padding-y-sm;
 			}
 		}

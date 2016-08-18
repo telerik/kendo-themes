@@ -1,11 +1,11 @@
 @include exports("autocomplete/theme") {
 
-	.autocomplete {
+	.k-autocomplete {
 		@include appearance( input );
 		@include border-radius( $border-radius );
 
-		&.state-hover { @include appearance( hovered-input ); }
-		&.state-focused { @include appearance( focused-input ); }
+		&.k-state-hover { @include appearance( hovered-input ); }
+		&.k-state-focused { @include appearance( focused-input ); }
 	}
 
 }

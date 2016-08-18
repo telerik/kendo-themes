@@ -1,13 +1,13 @@
 @include exports("slider/layout") {
 
-	.slider {
+	.k-slider {
 		border-width: 0;
 		background-color: transparent;
 		display: inline-block;
 		position: relative;
 		user-select: none;
 
-		.slider-wrap {
+		.k-slider-wrap {
 			width: 100%;
 			height: 100%;
 			box-sizing: border-box;
@@ -20,7 +20,7 @@
 
 
 		// Buttons
-		.button {
+		.k-button {
 			margin: 0;
 			padding: $btn-padding-y-sm;
 			width: $form-line-height * 1em;
@@ -36,15 +36,15 @@
 
 
 		// Ticks
-		.slider-items,
-		.slider-track {
+		.k-slider-items,
+		.k-slider-track {
 			display: flex;
 			order: 0;
 			flex: 1;
 			position: relative;
 		}
 
-		.tick {
+		.k-tick {
 			margin: 0;
 			padding: 0;
 			display: block;
@@ -55,11 +55,11 @@
 			flex: 2;
 			cursor: pointer;
 		}
-		.tick.first,
-		.tick.last {
+		.k-tick.k-first,
+		.k-tick.k-last {
 			flex: 1;
 		}
-		.label {
+		.k-label {
 			font-size: .875em;
 			line-height: 1;
 			white-space: nowrap;
@@ -68,21 +68,21 @@
 
 
 		// Track
-		.slider-track,
-		.slider-selection {
+		.k-slider-track,
+		.k-slider-selection {
 			margin: 0;
 			padding: 0;
 			cursor: pointer;
 		}
-		.slider-selection,
-		.slider-items + .slider-track {
+		.k-slider-selection,
+		.k-slider-items + .k-slider-track {
 			display: block;
 			position: absolute;
 		}
 
 
 		// Drag handle
-		.draghandle {
+		.k-draghandle {
 			width: $form-line-height * .75em;
 			height: $form-line-height * .75em;
 			border-width: 1px;
@@ -101,128 +101,128 @@
 
 
 	// Slider variants
-	.slider-horizontal {
+	.k-slider-horizontal {
 
 		// Buttons
-		.slider-buttons {}
-		.slider-buttons .slider-items {
+		.k-slider-buttons {}
+		.k-slider-buttons .k-slider-items {
 			margin: 0 10px;
 		}
 
-		.button-decrease { order: -1; }
-		.button-increase { order: 1; }
+		.k-button-decrease { order: -1; }
+		.k-button-increase { order: 1; }
 
 
 		// Ticks
-		.slider-items {
+		.k-slider-items {
 			flex-direction: row;
 		}
-		.tick {
+		.k-tick {
 			text-align: center;
 			// width: auto !important;
 		}
-		.label {
+		.k-label {
 			width: 100%;
 			bottom: -1.25em;
 			left: 0;
 		}
-		.first .label {
+		.k-first .k-label {
 			left: -50%;
 			right: auto;
 		}
-		.last .label {
+		.k-last .k-label {
 			left: auto;
 			right: -50%;
 		}
 
 
 		// Track
-		.slider-track {
+		.k-slider-track {
 			height: .5em;
 			background-repeat: repeat-x;
 		}
-		.slider-selection {
+		.k-slider-selection {
 			top: 0;
 			bottom: 0;
 			left: 0;
 			background-repeat: repeat-x;
 		}
-		.slider-items + .slider-track {
+		.k-slider-items + .k-slider-track {
 			margin-top: -.25em;
 			top: 50%;
 		}
-		.slider-buttons .slider-items + .slider-track {
+		.k-slider-buttons .k-slider-items + .k-slider-track {
 			left: 40px;
 			right: 40px;
 		}
 
 
 		// Drag handle
-		.draghandle {
+		.k-draghandle {
 			top: -4px;
 		}
 
 	}
-	.slider-vertical {
+	.k-slider-vertical {
 
-		.slider-wrap {
+		.k-slider-wrap {
 			flex-direction: column;
 		}
 
 		// Buttons
-		.slider-buttons {}
-		.slider-buttons .slider-items {
+		.k-slider-buttons {}
+		.k-slider-buttons .k-slider-items {
 			margin: 10px 0;
 		}
-		.button-decrease { order: 1; }
-		.button-increase { order: -1; }
+		.k-button-decrease { order: 1; }
+		.k-button-increase { order: -1; }
 
 
 		// Ticks
-		.slider-items {
+		.k-slider-items {
 			width: 1em;
 			flex-direction: column;
 		}
-		.tick {
+		.k-tick {
 			text-align: center;
 			// height: auto !important;
 		}
-		.label {
+		.k-label {
 			text-align: left;
 			display: block;
 			left: 120%;
 		}
-		.first .label {
+		.k-first .k-label {
 			bottom: -.5em;
 		}
-		.last .label {
+		.k-last .k-label {
 			top: -.5em;
 		}
 
 
 		// Track
-		.slider-track {
+		.k-slider-track {
 			width: .5em;
 			background-repeat: repeat-y;
 		}
-		.slider-selection {
+		.k-slider-selection {
 			bottom: 0;
 			right: 0;
 			left: 0;
 			background-repeat: repeat-y;
 		}
-		.slider-items + .slider-track {
+		.k-slider-items + .k-slider-track {
 			margin-left: -.25em;
 			left: 50%;
 		}
-		.slider-buttons .slider-items + .slider-track {
+		.k-slider-buttons .k-slider-items + .k-slider-track {
 			top: 40px;
 			bottom: 40px;
 		}
 
 
 		// Drag handle
-		.draghandle {
+		.k-draghandle {
 			left: -4px;
 		}
 
@@ -234,10 +234,10 @@
 
 @include exports("slider/tooltip") {
 
-	.slider-tooltip {}
-	.slider-tooltip .callout-n,
-	.slider-tooltip .callout-s { margin-left: -5px; }
-	.slider-tooltip .callout-w,
-	.slider-tooltip .callout-e { margin-top: -5px; }
+	.k-slider-tooltip {}
+	.k-slider-tooltip .k-callout-n,
+	.k-slider-tooltip .k-callout-s { margin-left: -5px; }
+	.k-slider-tooltip .k-callout-w,
+	.k-slider-tooltip .k-callout-e { margin-top: -5px; }
 
 }

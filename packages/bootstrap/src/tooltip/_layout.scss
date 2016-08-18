@@ -1,6 +1,6 @@
 @include exports("tooltip/layout") {
 
-	.tooltip {
+	.k-tooltip {
 		padding: $tooltip-padding-y $tooltip-padding-x;
 		border-width: 0;
 		background-repeat: repeat-x;
@@ -19,7 +19,7 @@
 
 
 	// Callout
-	.callout {
+	.k-callout {
 		width: 0;
 		height: 0;
 		border-width: $tooltip-arrow-width;
@@ -27,19 +27,19 @@
 		border-color: transparent;
 		position: absolute;
 	}
-	.callout-s {
+	.k-callout-s {
 		left: 50%;
 		bottom: -$tooltip-arrow-width * 2;
 	}
-	.callout-n {
+	.k-callout-n {
 		left: 50%;
 		top: -$tooltip-arrow-width * 2;
 	}
-	.callout-w {
+	.k-callout-w {
 		top: 50%;
 		left: -$tooltip-arrow-width * 2;
 	}
-	.callout-e {
+	.k-callout-e {
 		top: 50%;
 		right: -$tooltip-arrow-width * 2;
 	}

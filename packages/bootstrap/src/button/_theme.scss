@@ -1,43 +1,43 @@
 @include exports("button/theme") {
 
 	// Appearance
-	.button {
+	.k-button {
 		@include appearance( button );
 		@include border-radius( $border-radius );
 
 		&:hover,
-		&.state-hover { @include appearance( hovered-button ); }
+		&.k-state-hover { @include appearance( hovered-button ); }
 		&:active,
-		&.state-active { @include appearance( active-button ); }
+		&.k-state-active { @include appearance( active-button ); }
 	}
 
-	.button.primary {
+	.k-button.k-primary {
 		@include appearance( primary-button );
 
 		&:hover,
-		&.state-hover { @include appearance( hovered-primary-button ); }
+		&.k-state-hover { @include appearance( hovered-primary-button ); }
 		&:active,
-		&.state-active { @include appearance( active-primary-button ); }
+		&.k-state-active { @include appearance( active-primary-button ); }
 	}
 
 
 	// Button group
-	.button-group {
+	.k-button-group {
 
-		.button {
+		.k-button {
 			border-radius: 0;
 		}
 
-		.group-start,
-		.button:first-child {
+		.k-group-start,
+		.k-button:first-child {
 			@include border-radius( $border-radius 0 0 $border-radius );
 		}
-		.group-end,
-		.button:last-child {
+		.k-group-end,
+		.k-button:last-child {
 			@include border-radius( 0 $border-radius $border-radius 0 );
 		}
-		.group-start.group-end,
-		.button:first-child:last-child {
+		.k-group-start.k-group-end,
+		.k-button:first-child:last-child {
 			@include border-radius( $border-radius );
 		}
 

@@ -1,15 +1,15 @@
 @include exports("pager/layout") {
 
 	// Pager
-	.pager-wrap {
+	.k-pager-wrap {
 		padding: $padding-y;
 		border-width: 1px;
 		line-height: $form-line-height;
 		display: flex;
 		align-items: center;
 
-		.link,
-		.state-selected {
+		.k-link,
+		.k-state-selected {
 			padding: $button-padding-y;
 			width: $form-line-height-rem;
 			height: $form-line-height-rem;
@@ -19,22 +19,22 @@
 			position: relative;
 			z-index: 1;
 		}
-		.link:hover,
-		.state-selected {
+		.k-link:hover,
+		.k-state-selected {
 			z-index: 2;
 		}
-		.link + .link,
-		.link + .pager-numbers,
-		.pager-numbers + .link {
+		.k-link + .k-link,
+		.k-link + .k-pager-numbers,
+		.k-pager-numbers + .k-link {
 			margin-left: -1px;
 		}
 
 
-		> .pager-nav {}
-		> .pager-nav + .pager-nav {}
+		> .k-pager-nav {}
+		> .k-pager-nav + .k-pager-nav {}
 
 
-		.pager-numbers {
+		.k-pager-numbers {
 			display: inline-flex;
 			flex-direction: row;
 
@@ -45,37 +45,37 @@
 				margin-left: -1px;
 			}
 
-			.current-page {
+			.k-current-page {
 				display: none;
 			}
-			.current-page + li {
+			.k-current-page + li {
 				margin-left: 0;
 			}
 		}
 
 
-		.label {
+		.k-label {
 			margin: 0 $spacer-x;
 			display: inline-block;
 		}
-		.pager-input {
+		.k-pager-input {
 
-			.textbox {
+			.k-textbox {
 				margin: 0 1ex;
 				width: 3em;
 			}
 		}
-		.pager-sizes {
+		.k-pager-sizes {
 			margin: 0 ( 2 * $spacer-x );
 
-			.dropdown {
+			.k-dropdown {
 				margin-right: 1ex;
 			}
 		}
-		.pager-refresh {
+		.k-pager-refresh {
 			order: 10;
 		}
-		.pager-info {
+		.k-pager-info {
 			flex: 1;
 			text-align: right;
 		}

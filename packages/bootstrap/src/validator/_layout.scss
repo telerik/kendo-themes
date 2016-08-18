@@ -1,15 +1,15 @@
 @include exports("validator/layout") {
 
-	.tooltip-validation {
+	.k-tooltip-validation {
 		border-width: 1px;
 		display: inline-flex;
 		align-items: center;
 
-		> .icon {
+		> .k-icon {
 			margin-right: .4ex;
 		}
 
-		.callout {
+		.k-callout {
 			display: none;
 		}
 	}

@@ -1,11 +1,11 @@
 @include exports("chart/theme") {
 
 	// Chart
-	.chart {}
-	.chart-tooltip {
+	.k-chart {}
+	.k-chart-tooltip {
 		color: $panel-bg;
 	}
-	.chart-tooltip-inverse {
+	.k-chart-tooltip-inverse {
 		color: $panel-color;
 	}
 

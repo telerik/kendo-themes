@@ -1,13 +1,13 @@
 @include exports("treemap/layout") {
 
 	// Base
-	.treemap {
+	.k-treemap {
 		height: 400px;
 		overflow: hidden;
 
 
 		// Tile
-		.treemap-tile {
+		.k-treemap-tile {
 			margin: -1px 0 0 -1px;
 			height: 100%;
 			box-sizing: border-box;
@@ -18,19 +18,19 @@
 			overflow: hidden;
 			position: absolute;
 		}
-		> .treemap-tile {
+		> .k-treemap-tile {
 			position: relative;
 		}
 
 		// Title
-		.treemap-title {
+		.k-treemap-title {
 			padding: $padding-y-sm $padding-x-sm;
 			border-width: 0 0 1px;
 			border-style: solid;
 			background-position: 0 0;
 			background-repeat: repeat-x;
 		}
-		.treemap-title-vertical {
+		.k-treemap-title-vertical {
 			padding: $padding-x-sm $padding-y-sm;
 			width: $line-height-em;
 			white-space: nowrap;
@@ -51,7 +51,7 @@
 
 
 		// Wrap
-		.treemap-wrap {
+		.k-treemap-wrap {
 			border-color: inherit;
 			color: inherit;
 			background-color: inherit;
@@ -61,16 +61,16 @@
 			bottom: 0;
 			right: 0;
 		}
-		.treemap-title + .treemap-wrap {
+		.k-treemap-title + .k-treemap-wrap {
 			top: calc( #{($padding-y-sm*2) + $line-height} + 1px);
 		}
-		.treemap-title-vertical + .treemap-wrap {
+		.k-treemap-title-vertical + .k-treemap-wrap {
 			left: calc( #{($padding-y-sm*2) + $line-height} + 1px);
 		}
 
 
 		// Leaf
-		.leaf {
+		.k-leaf {
 			padding: $padding-x-sm;
 		}
 	}

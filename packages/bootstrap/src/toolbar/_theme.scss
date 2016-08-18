@@ -1,14 +1,14 @@
 @include exports("toolbar/theme") {
 
 	// Theme
-	.toolbar {
+	.k-toolbar {
 
 		// Split button
-		.split-button {
-			.button {
+		.k-split-button {
+			.k-button {
 				@include border-radius( $border-radius 0 0 $border-radius );
 			}
-			.split-button-arrow {
+			.k-split-button-arrow {
 				@include border-radius( 0 $border-radius $border-radius 0 );
 			}
 		}

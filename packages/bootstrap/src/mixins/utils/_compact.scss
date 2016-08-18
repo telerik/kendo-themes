@@ -1,6 +1,6 @@
 @mixin compact {
-	.compact &,
-	&.compact {
+	.k-compact &,
+	&.k-compact {
 		@content;
 	}
 }

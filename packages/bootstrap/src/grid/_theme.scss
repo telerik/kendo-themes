@@ -1,32 +1,32 @@
 @include exports("grid/theme") {
 
 	// Theme
-	.grid {
+	.k-grid {
 
-		.alt {
+		.k-alt {
 			background-color: $table-alt-bg;
 		}
 	}
 
 
 	// Toolbar
-	.grid-toolbar {
+	.k-grid-toolbar {
 		@include appearance( header );
 	}
 
 
 	// Grouping header
-	.grouping-header {
+	.k-grouping-header {
 		@include appearance( header );
 	}
-	.grouping-header .group-indicator {
+	.k-grouping-header .k-group-indicator {
 		@include appearance( button );
 		@include border-radius( $border-radius );
 	}
 
 
 	// Header
-	.grid-header {
+	.k-grid-header {
 		@include appearance( header );
 	}
 

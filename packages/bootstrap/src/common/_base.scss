@@ -1,7 +1,7 @@
 @include exports( "common/reset" ) {
 
 	// Layout
-	.reset {
+	.k-reset {
 		margin: 0;
 		padding: 0;
 		border-width: 0;
@@ -13,22 +13,22 @@
 
 
 	// Box sizing
-	.animation-container,
-	.animation-container *,
-	.animation-container :after,
-	.block .header,
-	.list-container,
-	.widget,
-	.widget *,
-	.widget :before {
+	.k-animation-container,
+	.k-animation-container *,
+	.k-animation-container :after,
+	.k-block .k-header,
+	.k-list-container,
+	.k-widget,
+	.k-widget *,
+	.k-widget :before {
 		@extend %content-box;
 	}
 
 
 	// Float wrap
-	.floatwrap:after,
-	.grid-toolbar:after,
-	.slider-items:after {
+	.k-floatwrap:after,
+	.k-grid-toolbar:after,
+	.k-slider-items:after {
 		content: "";
 		display: block;
 		clear: both;
@@ -36,8 +36,8 @@
 
 
 	// Links
-	.link,
-	.link:hover {
+	.k-link,
+	.k-link:hover {
 		text-decoration: none;
 	}
 
@@ -47,7 +47,7 @@
 @include exports( "common/widget" ) {
 
 	// Layout
-	.widget {
+	.k-widget {
 		border-width: 1px;
 		border-style: solid;
 		font-size: $font-size;
@@ -65,7 +65,7 @@
 
 
 	// Theme
-	.widget {
+	.k-widget {
 		@include appearance( panel );
 	}
 
@@ -75,8 +75,8 @@
 @include exports( "common/states" ) {
 
 	// Disabled
-	.disabled,
-	.state-disabled {
+	.k-disabled,
+	.k-state-disabled {
 		@include disabled;
 	}
 

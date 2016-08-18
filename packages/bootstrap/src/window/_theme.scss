@@ -1,11 +1,11 @@
 @include exports("window/theme") {
 
-	.window {
+	.k-window {
 		@include border-radius( $border-radius );
 		background-color: $modal-content-bg;
 		@include box-shadow($modal-content-xs-box-shadow);
 	}
-	.window-titlebar {
+	.k-window-titlebar {
 		border-color: $modal-header-border-color;
 	}
 

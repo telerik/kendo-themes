@@ -1,9 +1,9 @@
 @include exports("scrollview/layout") {
 
-	.scrollview {}
+	.k-scrollview {}
 
 
-	.scrollview {
+	.k-scrollview {
 		margin-collapse: separate;
 		user-select: none;
 	}

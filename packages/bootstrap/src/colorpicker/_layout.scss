@@ -1,6 +1,6 @@
 @include exports("colorpicker/layout") {
 
-	.colorpicker {
+	.k-colorpicker {
 		border-width: 0;
 		line-height: $form-line-height;
 		white-space: normal;
@@ -9,7 +9,7 @@
 		overflow: visible;
 		position: relative;
 
-		.picker-wrap {
+		.k-picker-wrap {
 			padding: 0;
 			border-width: 1px;
 			border-style: solid;
@@ -20,21 +20,21 @@
 			overflow: hidden;
 		}
 
-		.selected-color {
+		.k-selected-color {
 			padding: $input-padding-y;
 			width: $form-line-height * 1em;
 			height: $form-line-height * 1em;
 			line-height: 0;
 		}
 
-		.select {
+		.k-select {
 			padding: $button-padding-y;
 			border-width: 0 0 0 1px;
 			border-style: solid;
 			display: flex;
 			align-items: center;
 
-			.icon {}
+			.k-icon {}
 		}
 
 
@@ -43,10 +43,10 @@
 		// Compact
 		@include compact {
 
-			.selected-color {
+			.k-selected-color {
 				padding: $input-padding-y-sm;
 			}
-			.select {
+			.k-select {
 				padding: $button-padding-y-sm;
 			}
 		}
@@ -57,17 +57,17 @@
 
 @include exports( "flatcolorpicker/layout" ) {
 
-	.flatcolorpicker {
+	.k-flatcolorpicker {
 		padding: 0;
 		width: 250px;
 
-		.selected-color {
+		.k-selected-color {
 			// not available?
 			//background-image: url( "textures/transtexture.png" );
 			background-position: 50% 50%;
 			text-align: right;
 		}
-		.color-value {
+		.k-color-value {
 			padding: $input-padding-y-sm $input-padding-x-sm;
 			width: 70%;
 			border: 0;
@@ -75,7 +75,7 @@
 			line-height: $form-line-height;
 		}
 
-		.hsv-rectangle {
+		.k-hsv-rectangle {
 			position: relative;
 			-webkit-user-select: none;
 			-moz-user-select: none;
@@ -83,7 +83,7 @@
 			user-select: none;
 			-ms-touch-action: pinch-zoom double-tap-zoom;
 
-			.draghandle {
+			.k-draghandle {
 				margin: -5px 0 0 -5px;
 				width: 8px;
 				height: 8px;
@@ -97,7 +97,7 @@
 				top: 50%;
 			}
 		}
-		.hsv-gradient {
+		.k-hsv-gradient {
 			margin-bottom: 5px;
 			height: 180px;
 			background: linear-gradient( to bottom, rgba( black, 0 ), black ),
@@ -105,34 +105,34 @@
 		}
 
 		// Sliders
-		.hue-slider,
-		.transparency-slider {
+		.k-hue-slider,
+		.k-transparency-slider {
 			display: block;
 
-			.draghandle {
+			.k-draghandle {
 				border-width: 3px;
 				border-color: rgba( white, .9);
 				border-radius: 100%;
 				box-shadow: 0 1px 4px rgba( black, .9);
 				background-color: transparent;
 			}
-			.draghandle:hover,
-			.draghandle:focus {
+			.k-draghandle:hover,
+			.k-draghandle:focus {
 				border-color: white;
 				box-shadow: 0 1px 4px black;
 				background-color: transparent;
 			}
 		}
-		.hue-slider {
-			.slider-track {
+		.k-hue-slider {
+			.k-slider-track {
 				background: linear-gradient( to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00 );
 			}
-			.slider-selection {
+			.k-slider-selection {
 				background: none;
 				opacity: 0;
 			}
 		}
-		.slider-horizontal {
+		.k-slider-horizontal {
 			margin: 0 5%;
 			width: 90%;
 			height: 20px;
@@ -145,31 +145,31 @@
 
 @include exports( "colorpalette/layout" ) {
 
-	.colorpalette {
+	.k-colorpalette {
 		border-width: 0;
 		line-height: 0;
 		display: inline-block;
 		position: relative;
 
-		.palette {
+		.k-palette {
 			width: 100%;
 			height: 100%;
 			border-collapse: collapse;
 			position: relative;
 		}
-		.item {
+		.k-item {
 			width: 14px;
 			height: 14px;
 			overflow: hidden;
 			-ms-high-contrast-adjust: none;
 		}
-		.item:hover {
+		.k-item:hover {
 			box-shadow: 0 1px 3px 1px rgba( black,.5 ), inset 0 0 0 1px rgba( white,.3 );
 			position: relative;
 			z-index: 101;
 		}
-		.item.state-selected,
-		.item.state-selected:hover {
+		.k-item.k-state-selected,
+		.k-item.k-state-selected:hover {
 			box-shadow: 0 1px 3px 1px rgba( black,.7 ), inset 0 0 0 1px rgba( white,.45 );
 			position: relative;
 			z-index: 100;

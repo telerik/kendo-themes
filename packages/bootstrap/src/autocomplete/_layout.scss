@@ -1,7 +1,7 @@
 @include exports("autocomplete/layout") {
 
 	// Layout
-	.autocomplete {
+	.k-autocomplete {
 		line-height: $form-line-height;
 		box-sizing: border-box;
 		display: inline-flex;
@@ -9,7 +9,7 @@
 		vertical-align: middle;
 		position: relative;
 
-		.input {
+		.k-input {
 			width: auto !important;
 			padding: $input-padding-y $input-padding-x;
 			border: 0;
@@ -21,15 +21,15 @@
 			flex: 1;
 		}
 
-		.icon {
+		.k-icon {
 			display: none;
 			align-self: center;
 			position: absolute;
 			top: $input-padding-y;
 			right: $input-padding-y;
 		}
-		&.state-hover .i-close,
-		&.state-focused .i-close {
+		&.k-state-hover .k-i-close,
+		&.k-state-focused .k-i-close {
 			display: block;
 		}
 
@@ -37,14 +37,14 @@
 
 
 		// Compact
-		.compact &,
-		&.compact {
+		.k-compact &,
+		&.k-compact {
 
-			.input {
+			.k-input {
 				padding: $input-padding-y-sm $input-padding-x-sm;
 			}
 
-			.icon {
+			.k-icon {
 				top: $input-padding-y-sm;
 				right: $input-padding-y-sm;
 			}

@@ -1,27 +1,27 @@
 @include exports("map/layout") {
 
 	// Layout
-	.map {
+	.k-map {
 		height: 600px;
 
 		// Scroll wrap
-		.scroll-wrapper {
+		.k-scroll-wrapper {
 			width: 100%;
 			height: 100%;
 			user-select: none;
 			position: absolute;
 		}
-		.touch-scrollbar { display: none; }
+		.k-touch-scrollbar { display: none; }
 
 		// Layers
-		.layer {
+		.k-layer {
 			position: absolute;
 			left: 0;
 			top: 0;
 		}
 
 		// Marker
-		.marker {
+		.k-marker {
 			margin: -40px 0 0 -14px;
 			width: 28px;
 			height: 40px;
@@ -32,7 +32,7 @@
 
 
 		// Attribution
-		.attribution {
+		.k-attribution {
 			padding: $padding-y-sm $padding-x-sm;
 			font-size: $font-size-sm * .75;
 			background-color: rgba( $panel-bg, .8);
@@ -43,26 +43,26 @@
 
 
 	// Controls
-	.map-controls {
+	.k-map-controls {
 		position: absolute;
 		display: flex;
 		align-items: center;
 	}
-	.pos-top { top: 0; }
-	.pos-bottom { bottom: 0; }
-	.pos-left { left: 0; }
-	.pos-right { right: 0; }
+	.k-pos-top { top: 0; }
+	.k-pos-bottom { bottom: 0; }
+	.k-pos-left { left: 0; }
+	.k-pos-right { right: 0; }
 
 
 	// Navigator
-	.navigator {
+	.k-navigator {
 		margin: $spacer-x;
 		width: 3.25em;
 		height: 3.25em;
 		border-radius: 80px;
 		position: relative;
 
-		.pdf-export & { display: none; }
+		.k-pdf-export & { display: none; }
 
 
 		// Buttons
@@ -70,29 +70,29 @@
 			border-color: transparent;
 			background: none;
 		}
-		.button {
+		.k-button {
 			margin: 0;
 			padding: 0;
 			border-radius: 100%;
 			line-height: 1;
 			position: absolute;
 		}
-		.navigator-n {
+		.k-navigator-n {
 			margin-left: calc( -#{$font-size/2} - 1px);
 			top: 2px;
 			left: 50%;
 		}
-		.navigator-e {
+		.k-navigator-e {
 			margin-top: calc( -#{$font-size/2} - 1px);
 			right: 2px;
 			top: 50%;
 		}
-		.navigator-s  {
+		.k-navigator-s  {
 			margin-left: calc( -#{$font-size/2} - 1px);
 			bottom: 2px;
 			left: 50%;
 		}
-		.navigator-w {
+		.k-navigator-w {
 			margin-top: calc( -#{$font-size/2} - 1px);
 			left: 2px;
 			top: 50%;
@@ -101,22 +101,22 @@
 
 
 	// Zoom control
-	.zoom-control {
+	.k-zoom-control {
 		margin: $spacer-x;
 		border: 0;
 		background: none;
 		display: flex;
 
-		.pdf-export & { display: none; }
+		.k-pdf-export & { display: none; }
 
 
 		// Buttons
-		.button {
+		.k-button {
 			padding: $button-padding-y;
 		}
 	}
-	.buttons-horizontal {}
-	.buttons-vertical {
+	.k-buttons-horizontal {}
+	.k-buttons-vertical {
 		flex-direction: vertical;
 	}
 

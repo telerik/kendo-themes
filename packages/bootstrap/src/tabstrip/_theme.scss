@@ -1,16 +1,16 @@
 @include exports("tabstrip/theme") {
 
-	.tabstrip {
+	.k-tabstrip {
 
-		.tabstrip-items {
+		.k-tabstrip-items {
 			border-color: $nav-tabs-border-color;
 		}
 
-		.item {}
-		.item.state-hover {
+		.k-item {}
+		.k-item.k-state-hover {
 			border-color: $nav-tabs-link-hover-border-color;
 		}
-		.item.state-active {
+		.k-item.k-state-active {
 			color: $nav-tabs-active-link-hover-color;
 			background-color: $nav-tabs-active-link-hover-bg;
 			border-color: $nav-tabs-active-link-hover-border-color;
@@ -19,51 +19,51 @@
 
 
 	// Tabstrip variants
-	.tabstrip-top {
+	.k-tabstrip-top {
 
-		.item {
+		.k-item {
 			@include border-radius( $border-radius $border-radius 0 0 );
 		}
-		.item.state-hover {
+		.k-item.k-state-hover {
 			border-bottom-color: $nav-tabs-border-color;
 		}
-		.item.state-active {
+		.k-item.k-state-active {
 			border-bottom-color: transparent;
 		}
 	}
-	.tabstrip-bottom {
+	.k-tabstrip-bottom {
 
-		.item {
+		.k-item {
 			@include border-radius( 0 0 $border-radius $border-radius );
 		}
-		.item.state-hover {
+		.k-item.k-state-hover {
 			border-top-color: $nav-tabs-border-color;
 		}
-		.item.state-active {
+		.k-item.k-state-active {
 			border-top-color: transparent;
 		}
 	}
-	.tabstrip-left {
+	.k-tabstrip-left {
 
-		.item {
+		.k-item {
 			@include border-radius( $border-radius 0 0 $border-radius );
 		}
-		.item.state-hover {
+		.k-item.k-state-hover {
 			border-right-color: $nav-tabs-border-color;
 		}
-		.item.state-active {
+		.k-item.k-state-active {
 			border-right-color: transparent;
 		}
 	}
-	.tabstrip-right {
+	.k-tabstrip-right {
 
-		.item {
+		.k-item {
 			@include border-radius( 0 $border-radius $border-radius 0 );
 		}
-		.item.state-hover {
+		.k-item.k-state-hover {
 			border-left-color: $nav-tabs-border-color;
 		}
-		.item.state-active {
+		.k-item.k-state-active {
 			border-left-color: transparent;
 		}
 	}

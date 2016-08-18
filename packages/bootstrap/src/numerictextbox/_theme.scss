@@ -1,30 +1,30 @@
 @include exports("numerictextbox/theme") {
 
 	// Numeric
-	.numerictextbox {
+	.k-numerictextbox {
 
 		// Normal state
-		.numeric-wrap {
+		.k-numeric-wrap {
 			@include appearance( input );
 			@include border-radius( $border-radius );
 		}
-		.select {
+		.k-select {
 			@include appearance( button );
 			@include border-radius(  0 $border-radius $border-radius 0 );
 		}
 
 		// Hovered state
-		.state-hover {
+		.k-state-hover {
 			@include appearance( hovered-input );
 
-			.select { @include appearance( hovered-button ); }
+			.k-select { @include appearance( hovered-button ); }
 		}
 
 		// Selected state
-		.state-active {
+		.k-state-active {
 			@include appearance( focused-input );
 
-			.select { @include appearance( active-button ); }
+			.k-select { @include appearance( active-button ); }
 		}
 
 	}

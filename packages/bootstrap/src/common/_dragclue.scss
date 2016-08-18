@@ -1,7 +1,7 @@
 @include exports( "common/dragclue" ) {
 
 	// Layout
-	.drag-clue {
+	.k-drag-clue {
 		padding: $padding-y-sm $padding-x-sm;
 		border-width: 1px;
 		border-style: solid;
@@ -10,13 +10,13 @@
 		overflow: hidden;
 		cursor: default;
 	}
-	.drag-status {
+	.k-drag-status {
 		margin-right: .4ex;
 	}
 
 
 	// Theme
-	.drag-clue {
+	.k-drag-clue {
 		@include appearance( selected-node );
 	}
 

@@ -1,9 +1,9 @@
 @include exports("tabstrip/layout") {
 
-	.tabstrip {
+	.k-tabstrip {
 		border-width: 0;
 
-		.tabstrip-items {
+		.k-tabstrip-items {
 			border-width: 0;
 			border-style: solid;
 			display: flex;
@@ -11,31 +11,31 @@
 			position: relative;
 		}
 
-		.item {
+		.k-item {
 			margin: 0;
 			padding: 0;
 			border: 1px solid transparent;
 			position: relative;
 		}
-		.item.tab-on-top {
+		.k-item.k-tab-on-top {
 			z-index: 1;
 		}
-		.item .link {
+		.k-item .k-link {
 			padding: $nav-link-padding;
 			cursor: pointer;
 			display: block;
 		}
 
-		.content {
+		.k-content {
 			display: none;
 			overflow: auto;
 		}
 
 
 		// Scrolling
-		&.tabstrip-scrollable {
+		&.k-tabstrip-scrollable {
 
-			.tabstrip-items {
+			.k-tabstrip-items {
 				white-space: nowrap;
 				overflow: hidden;
 			}
@@ -47,7 +47,7 @@
 		// Compact
 		@include compact {
 
-			.item .link {
+			.k-item .k-link {
 				padding: $padding-y-sm $padding-x-sm;
 			}
 
@@ -56,60 +56,60 @@
 
 
 	// Tabstrip variants
-	.tabstrip-top {
+	.k-tabstrip-top {
 
-		.tabstrip-items {
+		.k-tabstrip-items {
 			border-bottom-width: 1px;
 		}
 
-		.item {
+		.k-item {
 			margin-bottom: -1px;
 		}
-		.item + .item {
+		.k-item + .k-item {
 			margin-left: $nav-item-margin;
 		}
 
 	}
-	.tabstrip-bottom {
+	.k-tabstrip-bottom {
 
-		.tabstrip-items {
+		.k-tabstrip-items {
 			border-top-width: 1px;
 		}
 
-		.item {
+		.k-item {
 			margin-top: -1px;
 		}
-		.item + .item {
+		.k-item + .k-item {
 			margin-left: $nav-item-margin;
 		}
 
 	}
-	.tabstrip-left {
+	.k-tabstrip-left {
 
-		.tabstrip-items {
+		.k-tabstrip-items {
 			border-right-width: 1px;
 			flex-direction: column;
 		}
 
-		.item {
+		.k-item {
 			margin-right: -1px;
 		}
-		.item + .item {
+		.k-item + .k-item {
 			margin-top: $nav-item-margin;
 		}
 
 	}
-	.tabstrip-right {
+	.k-tabstrip-right {
 
-		.tabstrip-items {
+		.k-tabstrip-items {
 			border-left-width: 1px;
 			flex-direction: column;
 		}
 
-		.item {
+		.k-item {
 			margin-left: -1px;
 		}
-		.item + .item {
+		.k-item + .k-item {
 			margin-top: $nav-item-margin;
 		}
 

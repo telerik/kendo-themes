@@ -1,33 +1,33 @@
 @include exports("colorpicker/theme") {
 
 	// Theme
-	.colorpicker {
+	.k-colorpicker {
 
 		// Normal state
-		.picker-wrap {
+		.k-picker-wrap {
 			@include appearance( input );
 			@include border-radius( $border-radius );
 		}
-		.select {
+		.k-select {
 			@include appearance( button );
 			border-color: inherit;
 		}
 
 		// Hovered state
-		.state-hover {
+		.k-state-hover {
 			@include appearance( hovered-input );
 
-			.select {
+			.k-select {
 				@include appearance( hovered-button );
 				border-color: inherit;
 			}
 		}
 
 		// Selected state
-		.state-active {
+		.k-state-active {
 			@include appearance( focused-input );
 
-			.select {
+			.k-select {
 				@include appearance( active-button );
 				border-color: inherit;
 			}

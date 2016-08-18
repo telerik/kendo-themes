@@ -1,14 +1,14 @@
 @include exports("menu/layout") {
 
 	// Base
-	.menu {
+	.k-menu {
 		cursor: default;
 		display: flex;
 		flex-direction: row;
 		position: relative;
 
 		// Item
-		.item {
+		.k-item {
 			border-width: 0 1px 0 0;
 			border-style: solid;
 			border-color: inherit;
@@ -18,15 +18,15 @@
 		}
 
 		// Link
-		.link {
+		.k-link {
 			padding: $nav-link-padding;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
 			position: relative;
 
-			.icon {}
-			.i-arrow-e {
+			.k-icon {}
+			.k-i-arrow-e {
 				position: absolute;
 				top: 50%;
 				margin-top: -.5em;
@@ -35,7 +35,7 @@
 		}
 
 		// Sub
-		.menu-group {
+		.k-menu-group {
 			margin: 0;
 			padding: $dropdown-padding-y 0;
 			white-space: nowrap;
@@ -43,22 +43,22 @@
 			display: none;
 			position: absolute;
 		}
-		.menu-group .menu-group {
+		.k-menu-group .k-menu-group {
 			padding: 0;
 		}
-		.menu-group .item {
+		.k-menu-group .k-item {
 			border-width: 0;
 		}
-		.menu-group .item > .link {
+		.k-menu-group .k-item > .k-link {
 			padding: 3px $dropdown-item-padding-x;
 		}
-		.menu-group .item > .link > .image {
+		.k-menu-group .k-item > .k-link > .k-image {
 			margin: 0 0 0 (-$dropdown-item-padding-x/2);
 		}
 
 		// Images
-		.image,
-		.menu .sprite {}
+		.k-image,
+		.k-menu .k-sprite {}
 
 
 
@@ -66,11 +66,11 @@
 		// Compact
 		@include compact {
 
-			.link {
+			.k-link {
 				padding: $padding-y-sm $padding-x-sm;
 			}
 
-			.menu-group .item > .link {
+			.k-menu-group .k-item > .k-link {
 				padding: ($padding-y-sm / 2) $padding-x-sm;
 			}
 		}
@@ -79,11 +79,11 @@
 
 
 	// Orientation
-	.menu-horizontal {}
-	.menu-vertical {
+	.k-menu-horizontal {}
+	.k-menu-vertical {
 		flex-direction: column;
 
-		.item {
+		.k-item {
 			border-width: 0;
 		}
 	}

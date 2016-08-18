@@ -16,7 +16,7 @@
   "author": "Progress",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@telerik/kendo-common-tasks": "^1.8.2",
+    "@telerik/kendo-common-tasks": "^2.0.0",
     "bootstrap": "git://github.com/twbs/bootstrap.git#v4-dev",
     "browser-sync": "^2.13.0",
     "webpack-dev-server": "^1.14.1"

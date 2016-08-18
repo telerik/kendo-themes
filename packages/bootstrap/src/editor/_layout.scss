@@ -1,14 +1,14 @@
 @include exports("editor/layout") {
 
 	// Base
-	.editor {
+	.k-editor {
 		border-collapse: separate;
 		border-spacing: 4px;
 		vertical-align: top;
 		position: relative;
 		table-layout: fixed;
 
-		.content {
+		.k-content {
 			margin: 0;
 			padding: 0;
 			width: 100%;
@@ -18,7 +18,7 @@
 			display: block;
 		}
 	}
-	.editor-inline {
+	.k-editor-inline {
 		border-width: 2px;
 		padding: $padding-y-sm $padding-x-sm;
 		word-wrap: break-word;
@@ -27,31 +27,31 @@
 
 
 	// Toolbar
-	.keditor-toolbar-wrap {}
-	.editor-toolbar {
+	.k-keditor-toolbar-wrap {}
+	.k-editor-toolbar {
 
 
 		// Group
-		.tool-group {}
-		.tool-group .state-disabled {
+		.k-tool-group {}
+		.k-tool-group .k-state-disabled {
 			display: none;
 		}
 
 
 		// Tools
-		.tool {
+		.k-tool {
 			padding: $button-padding-y;
 		}
 
 
-		.tool-text {
+		.k-tool-text {
 			display: none;
 		}
 	}
 
 
 	// Editable area
-	.editable-area {
+	.k-editable-area {
 		padding: $input-padding-y;
 		width: 100%;
 		height: 100%;
@@ -62,11 +62,11 @@
 
 
 	// Insert table
-	.ct-popup {
+	.k-ct-popup {
 		padding: $padding-y-sm;
 		width: (1rem + $padding-y-sm) * 8;
 	}
-	.ct-cell {
+	.k-ct-cell {
 		margin: $padding-y-sm / 2;
 		width: 1rem;
 		height: 1rem;
@@ -81,31 +81,31 @@
 
 
 	// Editor dialog
-	.editor-dialog {
+	.k-editor-dialog {
 		padding: $padding-y;
 		width: 400px;
 		border-color: inherit;
 
-		.edit-label {
+		.k-edit-label {
 			padding-bottom: $padding-y;
 			width: 25%;
 			text-align: right;
 			float: left;
 			clear: both;
 		}
-		.edit-field {
+		.k-edit-field {
 			padding-bottom: $padding-y;
 			width: 66%;
 			float: right;
 			clear: right;
 
-			.textbox {
+			.k-textbox {
 				width: 100%;
 				box-sizing: border-box;
 			}
 		}
 
-		.edit-buttons {
+		.k-edit-buttons {
 			margin: $padding-y (-$padding-y) (-$padding-y);
 			padding: $padding-y;
 			border-top: 1px solid;
@@ -113,7 +113,7 @@
 			text-align: right;
 			clear: both;
 
-			.button + .button {
+			.k-button + .k-button {
 				margin-left: $padding-y;
 			}
 		}

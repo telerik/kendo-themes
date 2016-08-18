@@ -1,7 +1,7 @@
 @include exports("switch/layout") {
 
 	// Layout
-	.switch {
+	.k-switch {
 		width: 5em;
 		height: 2em;
 		display: inline-block;
@@ -13,14 +13,14 @@
 		input[type="checkbox"] { display: none; }
 
 		// Switch wrapper
-		.switch-wrapper {
+		.k-switch-wrapper {
 			width: 100%;
 			height: 100%;
 			border-width: 1px;
 			border-style: solid;
 			display: block;
 		}
-		.switch-background {
+		.k-switch-background {
 			width: 100%;
 			height: 100%;
 			display: block;
@@ -29,7 +29,7 @@
 		}
 
 		// Switch container
-		.switch-container {
+		.k-switch-container {
 			width: 100%;
 			height: 100%;
 			border-width: 1px;
@@ -40,23 +40,23 @@
 			top: 0;
 			left: 0;
 		}
-		.switch-handle {
+		.k-switch-handle {
 			width: 2em;
 			height: 100%;
 			display: inline-block;
 		}
-		.switch-label-on,
-		.switch-label-off {
+		.k-switch-label-on,
+		.k-switch-label-off {
 			padding: $padding-y-sm $padding-x-sm;
 			text-transform: uppercase;
 			display: block;
 			position: absolute;
 			top: 0;
 		}
-		.switch-label-on {
+		.k-switch-label-on {
 			right: 100%;
 		}
-		.switch-label-off {
+		.k-switch-label-off {
 			left: 100%;
 		}
 

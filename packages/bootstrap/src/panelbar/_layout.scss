@@ -1,10 +1,10 @@
 @include exports("panelbar/layout") {
 
 	// Base
-	.panelbar {
+	.k-panelbar {
 
-		.panel,
-		.content {
+		.k-panel,
+		.k-content {
 			margin: 0;
 			padding: 0;
 			border-bottom: 1px solid;
@@ -14,8 +14,8 @@
 		}
 
 		// Items
-		> .item,
-		.panel > .item {
+		> .k-item,
+		.k-panel > .k-item {
 			margin: 0;
 			border-width: 0;
 			border-color: inherit;
@@ -24,7 +24,7 @@
 		}
 
 		// Links
-		> .item > .link {
+		> .k-item > .k-link {
 			padding: $header-padding-y $header-padding-x;
 			border-bottom-width: 1px;
 			border-bottom-style: solid;
@@ -32,7 +32,7 @@
 			display: block;
 			position: relative;
 		}
-		.panel > .item > .link {
+		.k-panel > .k-item > .k-link {
 			padding: 3px $dropdown-item-padding-x;
 			text-decoration: none;
 			display: block;
@@ -40,7 +40,7 @@
 		}
 
 		// Expand collapse
-		.panelbar-collapse, .panelbar-expand {
+		.k-panelbar-collapse, .k-panelbar-expand {
 			margin-top: -.5em;
 			position: absolute;
 			top: 50%;
@@ -54,15 +54,15 @@
 		@include compact {
 
 			// Links
-			> .item > .link {
+			> .k-item > .k-link {
 				padding: $padding-y-sm $padding-x-sm;
 			}
-			.panel > .item > .link {
+			.k-panel > .k-item > .k-link {
 				padding: ($padding-y-sm / 2) $padding-x-sm;
 			}
 
 			// Expand collapse
-			.panelbar-collapse, .panelbar-expand {
+			.k-panelbar-collapse, .k-panelbar-expand {
 				right: $padding-y-sm / 2;
 			}
 		}

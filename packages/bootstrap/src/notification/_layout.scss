@@ -1,20 +1,20 @@
 @include exports("notification/layout") {
 
 	// Base
-	.notification {}
-	.notification-wrap {
+	.k-notification {}
+	.k-notification-wrap {
 		padding: $alert-padding;
 		white-space: nowrap;
 		cursor: default;
 		position: relative;
 
-		> .i-close {
+		> .k-i-close {
 			position: absolute;
 			top: $alert-padding * 1.25;
 			right: $alert-padding / 2;
 			display: none;
 		}
-		.notification-button & .i-close {
+		.k-notification-button & .k-i-close {
 			display: block;
 		}
 	}
