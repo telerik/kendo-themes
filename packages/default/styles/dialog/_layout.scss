@@ -2,8 +2,8 @@
 
 @include exports('dialog/layout') {
 
-$window-titlebar-size: 3em;
-$window-padding: .93em;
+$window-titlebar-size: 2.667em;
+$window-padding: 1.143em;
 $window-z-index: 10001;
 
 .k-window {
@@ -25,6 +25,7 @@ $icon-size: .6em;
 $icon-width: 1em * $icon-sizing-factor;
 
 .k-window-titlebar {
+    font-size: 1.286em;
     display: block;
     height: $window-titlebar-size;
     line-height: $window-titlebar-size;
@@ -69,7 +70,7 @@ $icon-width: 1em * $icon-sizing-factor;
 
 .k-window-title {
     cursor: default;
-    left: $window-padding;
+    left: $window-padding - .278em;
     overflow: hidden;
     position: absolute;
     right: $window-padding;
@@ -203,30 +204,33 @@ $resizer-offset: -$resizer-size / 2;
 }
 
 .k-action-buttons {
-    clear: both;
-    display: block;
+    display: flex;
+    margin: (2 * $window-padding) 0 (-$window-padding);
+    padding: $window-padding 0;
     border-top-width: 1px;
     border-top-style: solid;
-    margin: (2 * $window-padding) (-$window-padding) (-$window-padding);
-    padding: $window-padding 0;
 
     .k-button {
-        width: 50%;
-        float: left;
+        flex: 1;
+        font-size: 1em;
         margin: -$window-padding 0;
         padding: $window-padding 0;
-        line-height: 2em;
+        line-height: 1.2em;
         border-radius: 0;
-    }
 
-    .k-primary::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 1px;
-        height: 100%;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1px;
+            height: 100%;
+        }
+
+        &:first-child::before {
+            display: none;
+        }
     }
 
     &::after {

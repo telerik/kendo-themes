@@ -80,6 +80,10 @@ $dialog-primary-active-gradient: linear-gradient(desaturate($accent, 3%), adjust
             background-image: $dialog-button-active-gradient;
             box-shadow: $dialog-button-active-box-shadow;
         }
+
+        &::before {
+            background-color: $window-border-color;
+        }
     }
 
     .k-primary {
@@ -98,25 +102,12 @@ $dialog-primary-active-gradient: linear-gradient(desaturate($accent, 3%), adjust
             box-shadow: $dialog-primary-focus-box-shadow;
         }
 
-        &:focus::before {
-            background-color: $dialog-primary-focus-before-background;
-        }
-
         &:focus:hover {
             box-shadow: $dialog-primary-focus-hover-box-shadow;
         }
 
-        &:focus:hover::before {
-            background-color: $dialog-primary-hover-focus-before-background;
-        }
-
-        &:active,
-        &:active::before {
+        &:active {
             background-image: $dialog-primary-active-gradient;
-        }
-
-        &::before {
-            background-color: $window-border-color;
         }
     }
 }
