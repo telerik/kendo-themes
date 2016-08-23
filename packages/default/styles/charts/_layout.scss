@@ -1,0 +1,136 @@
+@import '../base/layout';
+
+@include exports('charts/layout') {
+    .k-chart,
+    .k-sparkline,
+    .k-stockchart
+    {
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .k-chart,
+    .k-stockchart
+    {
+        height: 400px;
+    }
+
+    .k-chart-tooltip table {
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+
+    .k-chart-tooltip th {
+        width: auto;
+        text-align: center;
+        padding: 1px;
+    }
+
+    .k-chart-tooltip td {
+        width: auto;
+        text-align: left;
+        padding: .1em .2em;
+    }
+
+    /* Selection */
+    .k-selector {
+        position: absolute;
+        -webkit-transform: translateZ(0);
+    }
+
+    .k-selection {
+        position: absolute;
+        height: 100%;
+    }
+
+    .k-selection-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.01);
+    }
+
+    .k-handle {
+        width: 7px;
+        height: 26px;
+        z-index: 1;
+        border-radius: 6px;
+        position: absolute;
+    }
+
+    .k-handle div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .k-leftHandle {
+        left: -4px;
+    }
+
+    .k-rightHandle {
+        right: -4px;
+    }
+
+    .k-leftHandle div {
+        margin: -20px 0 0 -15px;
+        padding: 40px 30px 0 0;
+    }
+
+    .k-leftHandle.k-handle-active div {
+        margin-left: -40px;
+        padding-right: 55px;
+    }
+
+    .k-rightHandle div {
+        margin: -20px 0 0 -15px;
+        padding: 40px 0 0 30px;
+    }
+
+    .k-rightHandle.k-handle-active div {
+        padding-left: 55px;
+    }
+
+    .k-mask {
+        position: absolute;
+        height: 100%;
+    }
+
+    .k-border {
+        width: 1px;
+        height: 100%;
+        position: absolute;
+    }
+
+    /* Navigator hint */
+    .k-navigator-hint {
+    }
+
+    .k-navigator-hint div {
+        position: absolute;
+    }
+
+    .k-navigator-hint .k-scroll {
+        position: absolute;
+        height: 4px;
+    }
+
+    .k-navigator-hint .k-tooltip {
+        margin-top: 20px;
+        min-width: 160px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    /* Sparklines */
+    .k-sparkline,
+    .k-sparkline span {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .k-sparkline span {
+        height: 100%;
+        width: 100%;
+    }
+}
+

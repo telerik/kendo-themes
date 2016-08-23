@@ -1,0 +1,106 @@
+@import '../base/states';
+@import './layout';
+
+$chart-inactive: $disabled-border-color !default;
+$chart-major-lines: darken($base, 30%) !default;
+$chart-minor-lines: darken($base, 20%) !default;
+
+$chart-font-size-s: 11px !default;
+$chart-font-size-m: 12px !default;
+$chart-font-size-l: 16px !default;
+
+$chart-area-opacity: 0.8 !default;
+
+@include exports('charts/theme') {
+    // Exported variables
+    .k-var--chart-font-s {
+        font-size: $chart-font-size-s;
+    }
+
+    .k-var--chart-font-m {
+        font-size: $chart-font-size-m;
+    }
+
+    .k-var--chart-font-l {
+        font-size: $chart-font-size-l;
+    }
+
+    .k-var--chart-inactive {
+        background-color: $chart-inactive;
+    }
+
+    .k-var--chart-major-lines {
+        background-color: $chart-major-lines;
+    }
+
+    .k-var--chart-minor-lines {
+        background-color: $chart-minor-lines;
+    }
+
+    .k-var--chart-area-opacity {
+        opacity: $chart-area-opacity;
+    }
+
+    // Elements
+    .k-chart,
+    .k-sparkline,
+    .k-stockchart
+    {
+        background-color: transparent;
+    }
+
+    .k-chart-tooltip {
+        background-repeat: repeat-x;
+        background-position: 0 0;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNJREFUeNpi/P//vwMDFQELEP8beQb+HTWQYgP/DHoD/466cAR4edRAyg38P6hLbIAAAwCnWhhVsxvdCAAAAABJRU5ErkJggg==);
+        color: #fff;
+    }
+
+    .k-chart-tooltip-inverse {
+        color: #000;
+    }
+
+    .k-selection {
+        border-bottom: 0;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $disabled-border-color;
+        border-bottom: 0;
+    }
+
+    .k-selection-bg {
+        background-color: #fff;
+    }
+
+    .k-handle {
+        background: $disabled-border-color;
+        cursor: e-resize;
+    }
+
+    .k-handle div {
+        background-color: transparent;
+    }
+
+    .k-mask {
+        background-color: #fff;
+        filter: alpha(opacity=80);
+        opacity: 0.80;
+    }
+
+    .k-border {
+        background: $disabled-border-color;
+    }
+
+    // Navigator hint
+    .k-navigator-hint .k-scroll {
+        border-radius: $border-radius;
+        background: $disabled-border-color;
+    }
+
+    .k-navigator-hint .k-tooltip {
+        border: 0;
+        box-shadow: 0 1px 2px rgba(0,0,0,.5);
+        background: #fff;
+    }
+}
+
