@@ -9,7 +9,7 @@ $chart-font-size-s: 11px !default;
 $chart-font-size-m: 12px !default;
 $chart-font-size-l: 16px !default;
 
-$chart-area-opacity: 0.8 !default;
+$chart-area-opacity: .8 !default;
 
 @include exports('charts/theme') {
     // Exported variables
@@ -44,20 +44,19 @@ $chart-area-opacity: 0.8 !default;
     // Elements
     .k-chart,
     .k-sparkline,
-    .k-stockchart
-    {
+    .k-stockchart {
         background-color: transparent;
     }
 
     .k-chart-tooltip {
         background-repeat: repeat-x;
         background-position: 0 0;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNJREFUeNpi/P//vwMDFQELEP8beQb+HTWQYgP/DHoD/466cAR4edRAyg38P6hLbIAAAwCnWhhVsxvdCAAAAABJRU5ErkJggg==);
-        color: #fff;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNJREFUeNpi/P//vwMDFQELEP8beQb+HTWQYgP/DHoD/466cAR4edRAyg38P6hLbIAAAwCnWhhVsxvdCAAAAABJRU5ErkJggg==');
+        color: $background;
     }
 
     .k-chart-tooltip-inverse {
-        color: #000;
+        color: invert($background);
     }
 
     .k-selection {
@@ -65,11 +64,10 @@ $chart-area-opacity: 0.8 !default;
         border-width: 1px;
         border-style: solid;
         border-color: $disabled-border-color;
-        border-bottom: 0;
     }
 
     .k-selection-bg {
-        background-color: #fff;
+        background-color: $background;
     }
 
     .k-handle {
@@ -82,9 +80,9 @@ $chart-area-opacity: 0.8 !default;
     }
 
     .k-mask {
-        background-color: #fff;
+        background-color: $background;
         filter: alpha(opacity=80);
-        opacity: 0.80;
+        opacity: .8;
     }
 
     .k-border {
@@ -99,8 +97,7 @@ $chart-area-opacity: 0.8 !default;
 
     .k-navigator-hint .k-tooltip {
         border: 0;
-        box-shadow: 0 1px 2px rgba(0,0,0,.5);
-        background: #fff;
+        background: $background;
     }
 }
 

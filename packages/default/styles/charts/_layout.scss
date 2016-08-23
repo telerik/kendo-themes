@@ -1,17 +1,18 @@
 @import '../base/layout';
 
+$chart-tap-highlight-color: rgba(0, 0, 0, 0);
+$chart-selection-background: rgba(255, 255, 255, .01);
+
 @include exports('charts/layout') {
     .k-chart,
     .k-sparkline,
-    .k-stockchart
-    {
+    .k-stockchart {
         -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: $chart-tap-highlight-color;
     }
 
     .k-chart,
-    .k-stockchart
-    {
+    .k-stockchart {
         height: 400px;
     }
 
@@ -47,7 +48,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 255, 255, 0.01);
+        background-color: $chart-selection-background;
     }
 
     .k-handle {
@@ -102,9 +103,6 @@
     }
 
     /* Navigator hint */
-    .k-navigator-hint {
-    }
-
     .k-navigator-hint div {
         position: absolute;
     }

@@ -6,7 +6,6 @@ files:
     ignore:
         - 'styles/mixins/*.scss'
 
-
 rules:
     no-ids: 2
     property-sort-order: 0
