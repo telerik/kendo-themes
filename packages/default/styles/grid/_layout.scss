@@ -44,6 +44,19 @@
         table-layout: fixed;
     }
 
+    .k-grid-virtual {
+        .k-grid-content {
+            > table {
+                position: absolute;
+                z-index: 1;
+            }
+
+            > .k-height-container {
+                position: relative;
+            }
+        }
+    }
+
     .k-grid-header th.k-header,
     .k-filter-row th {
         overflow: hidden;
