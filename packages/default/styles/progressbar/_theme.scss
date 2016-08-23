@@ -2,15 +2,16 @@
 @import './../base/states';
 
 $progressbar-base: $base !default;
-$progressbar-border: darken($base, 3%) !default;
+$progressbar-border: rgba(0, 0, 0, .08) !default;
 $progressbar-active-border: darken($accent, 4%) !default;
 
 @include exports('progressbar/theme') {
 
     .k-progressbar {
         background-color: $progressbar-base;
+        border-color: $progressbar-border;
 
-        .k-progress-status-wrap {
+        .k-item {
             border-color: $progressbar-border;
         }
 

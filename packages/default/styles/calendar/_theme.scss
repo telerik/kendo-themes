@@ -1,102 +1,82 @@
 @import '../base/states';
 @import '../animation/main';
 @import './layout';
+@import '../mixins/blend-modes';
 
 @include exports('calendar/theme') {
 
-$dateinputs-background-color: $base;
-$dateinputs-border-color: darken($base, 7%);
-
-$dateinputs-focused-background-color: saturate($hover-background, 1%);
-$dateinputs-focused-border-color: darken($base, 7%);
-$dateinputs-focused-box-shadow: 0 0 4px 0 $base;
-
+$calendar-background-color: $background !default;
+$calendar-border-color: rgba(0, 0, 0, .08) !default;
+$calendar-accent-color: $accent !default;
+$calendar-other-month-color: darken($background, 27%) !default;
+$calendar-hover-background: $hover-background !default;
+$calendar-focused-box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .08) !default;
+$calendar-selected-hover-background: blend-multiply($accent, darken($background, 8%)) !default;
 $calendar-header-background-color: $base;
 
-.k-datepicker,
-.k-timepicker,
-.k-datetimepicker,
-.k-picker-wrap,
-.k-calendar td,
-.k-calendar .k-link {
-    border-radius: $border-radius;
-}
-
-.k-picker-wrap {
-    border-radius: $border-radius;
-    background-color: $dateinputs-background-color;
-    background-position: 50% 50%;
-    border-color: $dateinputs-border-color;
-
-    &.k-state-hover {
-        background-color: saturate($hover-background, 1%);
-    }
-
-    &.k-state-focused {
-        background-color: $dateinputs-focused-background-color;
-        background-position: 50% 50%;
-        border-color: $dateinputs-focused-border-color;
-        box-shadow: $dateinputs-focused-box-shadow;
-    }
-
-    .k-input {
-        border-radius: ($border-radius - 1) 0 0 ($border-radius - 1);
-    }
-}
-
 .k-calendar {
-    background-color: $background;
-    border-color: $dateinputs-border-color;
+    background-color: $calendar-background-color;
+    border-color: $calendar-border-color;
 
     th {
         background-color: $calendar-header-background-color;
-        border-color: $dateinputs-border-color;
+        border-color: $calendar-border-color;
     }
 
     .k-other-month,
     .k-other-month .k-link {
-        color: $base;
-
-        &.k-state-hover .k-link {
-            color: $hover-text-color;
-        }
+        color: $calendar-other-month-color;
     }
 
     td {
-        & .k-state-focused {
-            box-shadow: $dateinputs-focused-box-shadow;
+        border-radius: $border-radius;
+
+        &:hover {
+            background-color: $calendar-hover-background;
+        }
+
+        &.k-state-focused {
+            box-shadow: $calendar-focused-box-shadow;
         }
 
         &.k-state-selected .k-link {
             color: $selected-text-color;
         }
 
-        &.k-state-selected.k-state-hover {
-            background-color: saturate($selected-background, 7%);
+        &.k-state-selected:hover {
+            background-color: $calendar-selected-hover-background;
         }
 
+        &.k-state-disabled,
+        &.k-state-disabled:hover,
+        &.k-state-disabled:active {
+            color: $normal-text-color;
+            background: none;
+            opacity: .7;
+            box-shadow: none;
+            cursor: default;
+            outline: 0;
+        }
     }
 
-    .k-today {
-        box-shadow: inset 0 0 0 1px $accent;
+    td.k-today {
+        box-shadow: none;
 
         .k-link {
-            color: $dateinputs-background-color;
-            font-weight: bold;
+            color: $calendar-accent-color;
         }
 
-        &.k-state-hover {
-            box-shadow: none;
+        &.k-state-focused {
+            box-shadow: $calendar-focused-box-shadow;
         }
 
-        &.k-state-hover .k-link {
-            color: $hover-text-color;
-        }
-
-        &.k-state-selected:hover .k-link {
+        &.k-state-selected .k-link {
             color: $selected-text-color;
         }
     }
-}
 
+    .k-nav-today {
+        color: $calendar-accent-color;
+    }
+}
 }

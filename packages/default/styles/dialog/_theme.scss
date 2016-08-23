@@ -4,7 +4,7 @@
 @import './layout';
 
 $window-header-color: $selected-text-color !default;
-$window-border-color: darken($background, 10%) !default;
+$window-border-color: rgba(0, 0, 0, .08) !default;
 $window-shadow-color: rgba(0, 0, 0, .3) !default;
 $window-shadow: 0 3px 3px 0 rgba(0, 0, 0, .06) !default;
 $window-focused-box-shadow: 1px 1px 7px 1px $window-shadow-color !default;

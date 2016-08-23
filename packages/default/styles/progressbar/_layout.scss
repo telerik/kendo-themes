@@ -6,6 +6,8 @@
         display: inline-block;
         position: relative;
         vertical-align: middle;
+        border-width: 1px;
+        border-style: solid;
         border-radius: $border-radius;
 
         > .k-state-selected {
@@ -135,10 +137,6 @@
         border-bottom-left-radius: $border-radius;
         border-bottom-right-radius: $border-radius;
         border-bottom-width: 1px;
-    }
-
-    .k-progressbar-vertical.k-progressbar-reverse .k-item {
-        border-width: 0 1px 1px;
     }
 
     .k-progressbar-vertical.k-progressbar-reverse .k-first {

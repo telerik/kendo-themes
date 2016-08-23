@@ -3,7 +3,7 @@
 
 $button-border: rgba(0, 0, 0, .08) !default;
 $button-background: $background !default;
-$button-hover-border: darken($button-border, 7%) !default;
+$button-hover-border: rgba(0, 0, 0, .15) !default;
 $button-active-border: rgba(0, 0, 0, .1) !default;
 $button-disabled-border: $button-border;
 
@@ -13,7 +13,6 @@ $button-active-gradient: linear-gradient(darken($base, 2%), $base) !default;
 
 $button-focused-box-shadow: 0 0 0 2px darken($background, 6%) !default;
 $button-active-box-shadow: inset 0 3px 5px darken($background, 9%) !default;
-$button-active-focused-box-shadow: inset 0 3px 5px darken($background, 9%), 0 0 0 2px darken($background, 6%) !default;
 
 $primary-background: $accent !default;
 $primary-border: $accent !default;
@@ -21,7 +20,6 @@ $primary-focused-box-shadow: 0 0 0 2px lighten($primary-background, 23%) !defaul
 $primary-active-background: $primary-background !default;
 $primary-active-box-shadow: inset 0 3px 5px desaturate($primary-background, 3%) !default;
 $primary-disabled-background: $primary-background !default;
-$primary-active-focused-box-shadow: inset 0 3px 5px desaturate($primary-background, 3%), 0 0 0 2px lighten($primary-background, 23%) !default;
 
 $primary-gradient: linear-gradient(adjust-hue($primary-background, 3), $primary-background) !default;
 $primary-hover-gradient: linear-gradient(adjust-hue($primary-background, 6), adjust-hue($primary-background, 3)) !default;
@@ -57,13 +55,6 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
         background-image: $button-active-gradient;
         border-color: $button-active-border;
         box-shadow: $button-active-box-shadow;
-    }
-
-    &:active:focus,
-    &.k-state-active:focus,
-    &.k-state-focused:active,
-    &.k-state-active.k-state-focused {
-        box-shadow: $button-active-focused-box-shadow;
     }
 
     &[disabled],
@@ -102,11 +93,6 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
     &:active {
         background-image: $primary-active-gradient;
         box-shadow: $primary-active-box-shadow;
-    }
-
-    &:active:focus,
-    &.k-state-active:focus {
-        box-shadow: $primary-active-focused-box-shadow;
     }
 
     &.k-state-disabled,
@@ -179,7 +165,6 @@ $inner-border-radius: 1px; /* $border-radius - 1 */
                 box-shadow: none;
             }
         }
-
     }
 }
 }

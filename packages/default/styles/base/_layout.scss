@@ -3,6 +3,10 @@ html {
     font-family: sans-serif;
 }
 
+.k-widget * {
+    outline: none;
+}
+
 .k-reset {
     border: 0;
     font-size: 100%;
