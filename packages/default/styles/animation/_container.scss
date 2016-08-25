@@ -1,5 +1,7 @@
 @include exports('animation/container') {
 .k-animation-container {
+    position: absolute;
     overflow: hidden;
+    z-index: 100;
 }
 }

@@ -1,8 +1,5 @@
 @include exports('popup/layout') {
 .k-popup {
-    position: absolute;
-    z-index: 100;
-
     .k-list-container,
     .k-calendar-container {
         -webkit-touch-callout: none;
