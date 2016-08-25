@@ -1,6 +1,7 @@
 @import '../button/layout';
+@import '../action-buttons/layout';
 
-@include exports('dialog/layout') {
+@include exports('action-buttons/layout') {
 
 $window-titlebar-size: 2.667em;
 $window-padding: 1.143em;
@@ -201,42 +202,5 @@ $resizer-offset: -$resizer-size / 2;
     opacity: 0;
     position: absolute;
     width: 100%;
-}
-
-.k-action-buttons {
-    display: flex;
-    margin: (2 * $window-padding) 0 (-$window-padding);
-    padding: $window-padding 0;
-    border-top-width: 1px;
-    border-top-style: solid;
-
-    .k-button {
-        flex: 1;
-        font-size: 1em;
-        margin: -$window-padding 0;
-        padding: $window-padding 0;
-        line-height: 1.2em;
-        border-radius: 0;
-
-        &::before {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 1px;
-            height: 100%;
-        }
-
-        &:first-child::before {
-            display: none;
-        }
-    }
-
-    &::after {
-        display: block;
-        content: '';
-        clear: both;
-    }
 }
 }
