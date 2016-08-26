@@ -2,7 +2,7 @@
 
 	$row-height: $line-height + (2 * $cell-padding);
 
-	.gantt {
+	.k-gantt {
 		position: relative;
 		white-space: nowrap;
 
@@ -13,14 +13,14 @@
 			white-space: nowrap;
 			vertical-align: top;
 		}
-		.grid-header tr,
-		.grid-content tr {
+		.k-grid-header tr,
+		.k-grid-content tr {
 			height: $row-height;
 		}
 
 
 		// Layout
-		.gantt-layout {
+		.k-gantt-layout {
 			white-space: normal;
 			vertical-align: top;
 			display: inline-block;
@@ -28,7 +28,7 @@
 
 
 		// Splitbar
-		.splitbar {
+		.k-splitbar {
 			width: 5px;
 			border-width: 0 1px;
 			cursor: e-resize;
@@ -39,40 +39,40 @@
 
 
 	// Toolbar
-	.gantt-toolbar {
+	.k-gantt-toolbar {
 		padding: $padding-y;
 		border-width: 0 0 1px;
 		border-style: solid;
 		border-color: inherit;
 
-		.gantt-layout + & {
+		.k-gantt-layout + & {
 			border-width: 1px 0 0;
 		}
 	}
-	.gantt-actions {
+	.k-gantt-actions {
 		float: left;
 	}
-	.gantt-views {
+	.k-gantt-views {
 		float: right;
 		display: inline-flex;
 	}
 
 
 	// Treelist
-	.gantt-treelist {
+	.k-gantt-treelist {
 
-		.treelist {
+		.k-treelist {
 			height: 100%;
 			border-width: 0;
 		}
-		.grid-header {
+		.k-grid-header {
 			padding: 0 !important;
 		}
-		.grid-header tr {
+		.k-grid-header tr {
 			height: calc( #{2 * $row-height} + 2px );
 			vertical-align: bottom;
 		}
-		.grid-content {
+		.k-grid-content {
 			overflow: hidden;
 			overflow-x: scroll;
 		}
@@ -80,37 +80,37 @@
 
 
 	// Timeline
-	.gantt-timeline {
+	.k-gantt-timeline {
 
-		.timeline {
+		.k-timeline {
 			height: 100%;
 			border-width: 0;
 		}
-		.grid-header {}
-		.grid-content {
+		.k-grid-header {}
+		.k-grid-content {
 			overflow-x: scroll;
 		}
 	}
 
 
 	// Tables
-	.gantt-tables {
+	.k-gantt-tables {
 		position: relative;
 		border-color: inherit;
 	}
-	.gantt-rows,
-	.gantt-columns {
+	.k-gantt-rows,
+	.k-gantt-columns {
 		border-color: inherit;
 		position: absolute;
 		z-index: 0;
 		top: 0;
 		left: 0;
 	}
-	.gantt-rows {}
+	.k-gantt-rows {}
 
 
 	// Deps,
-	.gantt-dependencies {
+	.k-gantt-dependencies {
 		opacity: .7;
 		position: absolute;
 		top: 0;
@@ -119,12 +119,12 @@
 
 
 	// Tasks
-	.gantt-tasks {
+	.k-gantt-tasks {
 		position: relative;
 
 		td:after { content: "\a0"; }
 	}
-	.task-wrap {
+	.k-task-wrap {
 		margin: -1px -1.5em 0;
 		padding: 0 0 5px;
 		display: flex;
@@ -133,11 +133,11 @@
 		position: absolute;
 		z-index: 2;
 	}
-	.task {
+	.k-task {
 		position: relative;
 		flex: 1;
 	}
-	.task-dot {
+	.k-task-dot {
 		padding: 0 .25em;
 		width: 1em;
 		height: 1em;
@@ -148,10 +148,10 @@
 		align-items: center;
 		justify-content: center;
 	}
-	.task-wrap:hover .task-dot {
+	.k-task-wrap:hover .k-task-dot {
 		visibility: visible;
 	}
-	.task-dot:before {
+	.k-task-dot:before {
 		content: "";
 		width: .5em;
 		height: .5em;
@@ -163,9 +163,9 @@
 	.task-dot:hover:before {
 		border-width: 1px;
 	}
-	.task-start { order: -1; }
-	.task-end {}
-	.task-draghandle {
+	.k-task-start { order: -1; }
+	.k-task-end {}
+	.k-task-draghandle {
 		margin-left: 20px;
 		width: 0;
 		height: 0;
@@ -179,10 +179,10 @@
 
 
 	// Milestone
-	.milestone-wrap {
+	.k-milestone-wrap {
 		margin: 0 -2em;
 	}
-	.task-milestone {
+	.k-task-milestone {
 		margin-top: 3px;
 		width: 1em;
 		height: 1em;
@@ -193,14 +193,14 @@
 
 
 	// Summary
-	.task-summary {
+	.k-task-summary {
 		margin-top: 3px;
 		height: 10px;
 		display: inline-block;
 		vertical-align: top;
 	}
-	.task-summary,
-	.task-summary-complete {
+	.k-task-summary,
+	.k-task-summary-complete {
 		&:before,
 		&:after {
 			content: "";
@@ -220,48 +220,48 @@
 			right: 0;
 		}
 	}
-	.task-summary-complete {
+	.k-task-summary-complete {
 		height: 10px;
 		position: relative;
 		z-index: 2;
 	}
-	.task-summary-progress {
+	.k-task-summary-progress {
 		height: 15px;
 		overflow: hidden;
 	}
 
 
 	// Single task
-	.task-single {
+	.k-task-single {
 		border-width: 1px;
 		border-style: solid;
 		cursor: default;
 
-		.resize-handle {
+		.k-resize-handle {
 			opacity: .5;
 			z-index: 2;
 			// visibility: hidden;
 		}
-		.resize-handle:before {
+		.k-resize-handle:before {
 			top: 2px;
 			bottom: 2px;
 		}
-		.resize-w { left: 0; }
-		.resize-w:before {
+		.k-resize-w { left: 0; }
+		.k-resize-w:before {
 			left: 2px;
 			border-left-width: 1px;
 		}
-		.resize-e { right: 0; }
-		.resize-e:before {
+		.k-resize-e { right: 0; }
+		.k-resize-e:before {
 			right: 2px;
 			border-left-width: 1px;
 		}
 
-		&:hover .resize-handle {
+		&:hover .k-resize-handle {
 			visibility: visible;
 		}
 	}
-	.task-complete {
+	.k-task-complete {
 		width: 20%;
 		position: absolute;
 		z-index: 1;
@@ -269,20 +269,20 @@
 		bottom: 0;
 		left: 0;
 	}
-	.task-content {
+	.k-task-content {
 		position: relative;
 		z-index: 2;
 		display: flex;
 		flex-direction: row;
 		align-children: center;
 	}
-	.task-template {
+	.k-task-template {
 		padding: ( $cell-padding / 8 ) $padding-x-sm;
 		flex: 1;
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
-	.task-actions {
+	.k-task-actions {
 		padding: $padding-y-sm;
 		white-space: nowrap;
 		display: flex;
