@@ -1,0 +1,76 @@
+@include exports("gantt/theme") {
+
+	// Theme
+	.gantt {}
+
+
+	.gantt-dependencies {}
+	.line {
+		color: mix( $panel-color, $panel-bg );
+		background-color: mix( $panel-color, $panel-bg );
+	}
+	.line.state-selected {
+		color: $header-selected-bg;
+		background-color: $header-selected-bg;
+	}
+
+	.task-dot {}
+	.task-dot:before {
+		background-color: $panel-color;
+	}
+	.task-dot:hover:before {
+		border-color: $panel-color;
+		background-color: $panel-bg;
+	}
+
+
+	// Milestone
+	.task-milestone {
+		border-color: darken( $header-border, 10 );
+		background-color: $header-border;
+	}
+	.task-milestone.state-selected {
+		border-color: darken( $header-selected-border, 10 );
+		background-color: $header-selected-border;
+	}
+
+
+	// Summary
+	.task-summary {
+		border-color: mix( $panel-color, $panel-bg );
+		color: mix( $panel-color, $panel-bg );
+		background-color: mix( $panel-color, $panel-bg );
+	}
+	.task-summary-complete {
+		border-color: $panel-color;
+		color: $panel-color;
+		background-color: $panel-color;
+	}
+	.task-summary.state-selected {
+		border-color: mix( $header-selected-bg, $panel-bg );
+		color: mix( $header-selected-bg, $panel-bg );
+		background-color: mix( $header-selected-bg, $panel-bg );
+
+		.task-summary-complete {
+			border-color: $header-selected-bg;
+			color: $header-selected-bg;
+			background-color: $header-selected-bg;
+		}
+	}
+
+
+	// Tasks
+	.task-single {
+		@include appearance( button );
+		@include border-radius( $border-radius );
+
+		.task-complete {
+			background: $button-color;
+			opacity: .25;
+		}
+	}
+	.task-single.state-selected {
+		@include appearance( active-button );
+	}
+
+}

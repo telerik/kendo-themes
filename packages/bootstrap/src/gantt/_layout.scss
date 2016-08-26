@@ -1,0 +1,293 @@
+@include exports("gantt/layout") {
+
+	$row-height: $line-height + (2 * $cell-padding);
+
+	.gantt {
+		position: relative;
+		white-space: nowrap;
+
+
+		// other
+		td {
+			overflow: hidden;
+			white-space: nowrap;
+			vertical-align: top;
+		}
+		.grid-header tr,
+		.grid-content tr {
+			height: $row-height;
+		}
+
+
+		// Layout
+		.gantt-layout {
+			white-space: normal;
+			vertical-align: top;
+			display: inline-block;
+		}
+
+
+		// Splitbar
+		.splitbar {
+			width: 5px;
+			border-width: 0 1px;
+			cursor: e-resize;
+			position: relative;
+		}
+
+	}
+
+
+	// Toolbar
+	.gantt-toolbar {
+		padding: $padding-y;
+		border-width: 0 0 1px;
+		border-style: solid;
+		border-color: inherit;
+
+		.gantt-layout + & {
+			border-width: 1px 0 0;
+		}
+	}
+	.gantt-actions {
+		float: left;
+	}
+	.gantt-views {
+		float: right;
+		display: inline-flex;
+	}
+
+
+	// Treelist
+	.gantt-treelist {
+
+		.treelist {
+			height: 100%;
+			border-width: 0;
+		}
+		.grid-header {
+			padding: 0 !important;
+		}
+		.grid-header tr {
+			height: calc( #{2 * $row-height} + 2px );
+			vertical-align: bottom;
+		}
+		.grid-content {
+			overflow: hidden;
+			overflow-x: scroll;
+		}
+	}
+
+
+	// Timeline
+	.gantt-timeline {
+
+		.timeline {
+			height: 100%;
+			border-width: 0;
+		}
+		.grid-header {}
+		.grid-content {
+			overflow-x: scroll;
+		}
+	}
+
+
+	// Tables
+	.gantt-tables {
+		position: relative;
+		border-color: inherit;
+	}
+	.gantt-rows,
+	.gantt-columns {
+		border-color: inherit;
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		left: 0;
+	}
+	.gantt-rows {}
+
+
+	// Deps,
+	.gantt-dependencies {
+		opacity: .7;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+
+	// Tasks
+	.gantt-tasks {
+		position: relative;
+
+		td:after { content: "\a0"; }
+	}
+	.task-wrap {
+		margin: -1px -1.5em 0;
+		padding: 0 0 5px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		position: absolute;
+		z-index: 2;
+	}
+	.task {
+		position: relative;
+		flex: 1;
+	}
+	.task-dot {
+		padding: 0 .25em;
+		width: 1em;
+		height: 1em;
+		line-height: 1;
+		visibility: hidden;
+		cursor: pointer;
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+	}
+	.task-wrap:hover .task-dot {
+		visibility: visible;
+	}
+	.task-dot:before {
+		content: "";
+		width: .5em;
+		height: .5em;
+		border-width: 0;
+		border-style: solid;
+		border-radius: 100%;
+		background: green;
+	}
+	.task-dot:hover:before {
+		border-width: 1px;
+	}
+	.task-start { order: -1; }
+	.task-end {}
+	.task-draghandle {
+		margin-left: 20px;
+		width: 0;
+		height: 0;
+		border: 5px solid transparent;
+		border-bottom-color: inherit;
+		position: absolute;
+		bottom: 0;
+		// display: none;
+		cursor: e-resize;
+	}
+
+
+	// Milestone
+	.milestone-wrap {
+		margin: 0 -2em;
+	}
+	.task-milestone {
+		margin-top: 3px;
+		width: 1em;
+		height: 1em;
+		border-width: 1px;
+		border-style: solid;
+		transform: rotate(45deg);
+	}
+
+
+	// Summary
+	.task-summary {
+		margin-top: 3px;
+		height: 10px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.task-summary,
+	.task-summary-complete {
+		&:before,
+		&:after {
+			content: "";
+			width: 0;
+			height: 0;
+			border: 8px solid transparent;
+			position: absolute;
+			top: 0;
+		}
+
+		&:before {
+			border-left-color: inherit;
+			left: 0;
+		}
+		&:after {
+			border-right-color: inherit;
+			right: 0;
+		}
+	}
+	.task-summary-complete {
+		height: 10px;
+		position: relative;
+		z-index: 2;
+	}
+	.task-summary-progress {
+		height: 15px;
+		overflow: hidden;
+	}
+
+
+	// Single task
+	.task-single {
+		border-width: 1px;
+		border-style: solid;
+		cursor: default;
+
+		.resize-handle {
+			opacity: .5;
+			z-index: 2;
+			// visibility: hidden;
+		}
+		.resize-handle:before {
+			top: 2px;
+			bottom: 2px;
+		}
+		.resize-w { left: 0; }
+		.resize-w:before {
+			left: 2px;
+			border-left-width: 1px;
+		}
+		.resize-e { right: 0; }
+		.resize-e:before {
+			right: 2px;
+			border-left-width: 1px;
+		}
+
+		&:hover .resize-handle {
+			visibility: visible;
+		}
+	}
+	.task-complete {
+		width: 20%;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+	}
+	.task-content {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		flex-direction: row;
+		align-children: center;
+	}
+	.task-template {
+		padding: ( $cell-padding / 8 ) $padding-x-sm;
+		flex: 1;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.task-actions {
+		padding: $padding-y-sm;
+		white-space: nowrap;
+		display: flex;
+		flex-direction: row;
+		align-children: center;
+	}
+
+}

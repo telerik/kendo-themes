@@ -3,6 +3,7 @@
 	.k-grid {
 		display: flex;
 		flex-direction: column;
+		position: relative;
 
 		table {
 			margin: 0;
@@ -141,13 +142,15 @@
 		.k-header {
 			position: relative;
 		}
+
+
 		.k-header > .k-link {
 			margin: -$cell-padding;
 			padding: $cell-padding;
 			display: flex;
 			align-items: center;
 		}
-		th.k-header > .k-link > .k-icon {
+		.k-header > .k-link > .k-icon {
 			margin: 0 .4ex;
 			position: static;
 		}
@@ -223,6 +226,15 @@
 			margin-top: -$input-padding-y;
 			margin-bottom: -$input-padding-y;
 		}
+	}
+
+
+	// Resize handle
+	.k-grid > .k-resize-handle,
+	.k-grid-header .k-resize-handle {
+		cursor: col-resize;
+		position: absolute;
+		z-index: 2;
 	}
 
 
