@@ -74,6 +74,20 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
     }
 }
 
+.k-state-disabled {
+    .k-button,
+    .k-button:hover,
+    .k-button:active {
+        color: $normal-text-color;
+        background-image: $button-gradient;
+        border-color: $button-disabled-border;
+        opacity: .7;
+        box-shadow: none;
+        cursor: default;
+        outline: 0;
+    }
+}
+
 .k-primary {
     color: $selected-text-color;
     background-color: $primary-background;
