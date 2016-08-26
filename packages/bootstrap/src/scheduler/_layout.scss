@@ -1,0 +1,28 @@
+@include exports("scheduler/layout") {
+
+	// Layout
+	.k-scheduler {
+		display: flex;
+		flex-direction: column;
+	}
+
+
+	// Header and footer
+	.k-scheduler-toolbar,
+	.k-scheduler-footer {
+		padding: $padding-y-sm $padding-x-sm;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+
+	// Scheduler navigation
+	.k-scheduler-navigation {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+}
