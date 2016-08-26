@@ -51,9 +51,10 @@
 				height: 540,
 				filterable: true,
 				sortable: true,
+				resizable: true,
+				editable: { move: true },
 				columns: [
-					{ field: "FirstName", title: "First Name", width: 280,
-					  template: $("#photo-template").html() },
+					{ field: "FirstName", title: "First Name", width: 280 },
 					{ field: "LastName", title: "Last Name", width: 160 },
 					{ field: "Position" },
 					{ field: "Phone", width: 200 },
