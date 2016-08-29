@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/telerik/kendo-theme-default.svg?branch=master)](https://travis-ci.org/telerik/kendo-theme-default)
+[![npm version](https://badge.fury.io/js/%40telerik%2Fkendo-theme-default.svg)](https://badge.fury.io/js/%40telerik%2Fkendo-theme-default)
+
+
 # Default theme for Kendo UI
 
 A SCSS-based theme for Kendo UI components. Currently available for **Kendo UI for React** and **Kendo UI for Angular 2**.
