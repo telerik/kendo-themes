@@ -24,7 +24,12 @@ html {
     -webkit-appearance: none;
 }
 
-.k-textbox {
+.k-textbox,
+.k-content,
+.k-grid,
+.k-panelbar,
+.k-slider,
+.k-widget {
     outline: 0;
 }
 
