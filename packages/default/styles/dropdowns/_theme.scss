@@ -4,15 +4,11 @@
 @import './layout';
 
 $dropdowns-background-color: lighten($base, 4%) !default;
-$dropdowns-border-color: rgba(0, 0, 0, .08) !default;;
+$dropdowns-border-color: rgba(0, 0, 0, .08) !default;
 
 $dropdowns-gradient: linear-gradient($base, darken($base, 2%)) !default;
-
 $dropdowns-hover-gradient: linear-gradient(darken($hover-background, 1%), darken($hover-background, 2%)) !default;
-
-
 $dropdowns-active-gradient: linear-gradient(darken($base, 2%), $base) !default;
-
 
 $dropdowns-hover-border-color: rgba(0, 0, 0, .15) !default;
 
@@ -48,6 +44,7 @@ $dropdowns-invalid-color: $selected-text-color !default;
         }
     }
 
+    &:focus,
     &.k-state-focused {
         border-color: $dropdowns-focused-border-color;
         box-shadow: $dropdowns-focused-box-shadow;

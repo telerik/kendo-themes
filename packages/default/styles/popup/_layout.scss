@@ -1,53 +1,38 @@
 @include exports('popup/layout') {
 .k-popup {
-    .k-list-container,
-    .k-calendar-container {
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: transparent;
-        border-width: 1px;
-        border-style: solid;
-    }
-
-    > .k-group-header,
-    > .k-virtual-wrap > .k-group-header {
-        padding-right: 22px;
-    }
-
-    .k-item,
-    .k-list-optionlabel {
-        cursor: default;
-    }
-
-    .k-list {
-        height: auto;
-    }
-
     .k-list .k-item,
-    .k-list-optionlabel,
-    > .k-group-header,
-    > .k-virtual-wrap > .k-group-header {
-        padding: 1px 5px;
+    .k-list-optionlabel {
+        padding: 1px 17px 1px 8px;
         line-height: 2em;
         min-height: 2em;
     }
+}
 
-    .k-list-filter {
-        position: relative;
-        margin-bottom: 2px;
+.k-list-container.k-animation-container {
+    border-width: 1px;
+    border-style: solid;
+}
 
-        > .k-textbox {
-            padding-right: 20px;
-            width: 100%;
-            border-width: 0 0 1px;
-            height: 2.143em; // $input-height + padding + border
-        }
+.k-list-optionlabel {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
 
-        > .k-icon {
-            position: absolute;
-            right: 6px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
+.k-list-filter {
+    display: block;
+    position: relative;
+    margin: 8px;
+
+    > .k-textbox {
+        padding-right: 20px;
+        width: 100%;
+    }
+
+    > .k-icon {
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 }
