@@ -13,7 +13,12 @@ $chart-selection-background: rgba(255, 255, 255, .01);
 
     .k-chart,
     .k-stockchart {
+        display: block;
         height: 400px;
+    }
+
+    .k-chart-surface {
+        height: 100%;
     }
 
     .k-chart-tooltip table {
