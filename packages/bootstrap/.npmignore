@@ -1,0 +1,8 @@
+.tmp/
+.travis.yml
+dist/*.js
+sass-lint.yml
+demo/
+*.tgz
+webpack.config.js
+
