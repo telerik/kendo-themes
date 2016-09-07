@@ -1,5 +1,6 @@
 @import '../base/states';
 @import './layout';
+@import '../mixins/blend-modes';
 
 $grid-header-color: $accent !default;
 $grid-color: $normal-text-color !default;
@@ -10,6 +11,12 @@ $grid-background: $base !default;
 $grid-alt-background: $base !default;
 $grid-active-color: $accent !default;
 
+$pager-focused-box-shadow: inset 0 0 0 2px darken($base, 8%) !default;
+$pager-selected-focused-box-shadow: inset 0 0 0 2px blend-multiply($accent, darken($background, 8%)) !default;
+$pager-hover-background: $hover-background !default;
+$pager-selected-background: $selected-background !default;
+$pager-selected-color: $selected-text-color !default;
+$pager-selected-hover-background: blend-multiply($accent, darken($background, 8%)) !default;
 
 @include exports('grid/theme') {
     .k-grid-header,
@@ -38,17 +45,38 @@ $grid-active-color: $accent !default;
     }
 
     /* Pager */
-    .k-pager-numbers {
+    .k-grid-pager {
         .k-link,
         .k-link:link {
             color: $grid-active-color;
+
+            &:focus {
+                box-shadow: $pager-focused-box-shadow;
+            }
+
+            &:hover {
+                background-color: $pager-hover-background;
+            }
+
+            &.k-state-disabled {
+                box-shadow: none;
+                background-color: transparent;
+            }
         }
 
         .k-state-selected {
-            background: transparent;
+            background: $pager-selected-background;
 
             .k-link {
-                color: $grid-color;
+                color: $pager-selected-color;
+
+                &:focus {
+                    box-shadow: $pager-selected-focused-box-shadow;
+                }
+
+                &:hover {
+                    background-color: $pager-selected-hover-background;
+                }
             }
         }
     }

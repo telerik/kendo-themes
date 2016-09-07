@@ -67,12 +67,12 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         text-align: left;
-        line-height: 2em;
+        line-height: 1.286em;
     }
 
     .k-grid-header th.k-header>.k-link {
         display: block;
-        line-height: 2em;
+        line-height: 1.286em;
         padding: 1em;
         margin: -1em;
         overflow: hidden;
@@ -167,8 +167,9 @@
         position: relative;
         border-style: solid;
         border-width: 1px 0 0;
-        line-height: 2em;
+        line-height: 2.143em;
         padding: .571em;
+        border-radius: 0;
     }
 
     .k-pager-numbers .k-current-page {
@@ -187,7 +188,6 @@
 
     .k-pager-info {
         float: right;
-        margin-top: 1px;
     }
 
     .k-pager-numbers .k-link {
@@ -197,18 +197,15 @@
     .k-pager-wrap > .k-link,
     .k-pager-numbers .k-link,
     .k-pager-numbers .k-state-selected {
-        min-width: 2em;
+        min-width: 2.143em;
     }
 
     .k-pager-wrap>.k-link {
         float: left;
-        height: 2em;/*IE7*/
-        line-height: 2em;/*IE7*/
+        height: 2.143em;/*IE7*/
+        line-height: 2.143em;/*IE7*/
         cursor: pointer;
         text-align: center;
-        border-width: 1px;
-        border-style: solid;
-        border-color: transparent;
     }
 
     .k-pager-wrap>a.k-state-disabled:hover {
@@ -218,10 +215,7 @@
 
     .k-pager-numbers .k-link {
         text-align: center;
-        line-height: 2em;
-        border-width: 1px;
-        border-style: solid;
-        border-color: transparent;
+        line-height: 2.143em;
     }
 
     .k-pager-wrap .k-pager-refresh {
@@ -237,7 +231,7 @@
 
     .k-pager-wrap .k-textbox {
         width: 3.333em;
-        height: 2em;
+        height: 2.143em;
         padding: 0;
         text-indent: .5em;
     }
@@ -257,7 +251,6 @@
 
     .k-pager-sizes {
         display: inline-block;
-        padding-top: 1px;
     }
 
     .k-pager-sizes .k-widget.k-dropdown {
