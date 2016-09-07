@@ -118,11 +118,20 @@
 
     .k-grid .k-group-col,
     .k-grid .k-hierarchy-col {
-        width: 3em;
+        width: 30px;
     }
 
-    .k-hierarchy-cell {
+    td.k-hierarchy-cell {
         text-align: center;
+        padding: 0;
+
+        > .k-icon {
+            width: 100%;
+            display: inline-block;
+            padding: .5em 0;
+            line-height: 1.6em;
+            outline: 0;
+        }
     }
 
     /* Locked columns */
