@@ -23,8 +23,11 @@ $focused-item-shadow: inset 0 0 3px 1px darken($base, 10%) !default;
 }
 
 .k-link,
-.k-icon {
+.k-icon,
+.k-icon:hover,
+.k-icon:focus {
     color: $normal-text-color;
+    text-decoration: none;
 }
 
 .k-centered {
