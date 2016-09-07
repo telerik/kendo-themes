@@ -79,6 +79,7 @@ $transition-function: ease-out;
 .k-slider-vertical {
     height: $slider-size;
     width: $slider-alt-size;
+    outline: 0;
 
     .k-button-decrease {
         bottom: 0;
@@ -144,6 +145,7 @@ $transition-function: ease-out;
     display: inline-block;
     height: $slider-alt-size;
     width: $slider-size;
+    outline: 0;
 
     // ticks
     .k-tick {
