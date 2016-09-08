@@ -148,20 +148,6 @@ $input-indent: .33em;
     margin: 0;
 }
 
-.k-combobox {
-    .k-dropdown-wrap::before {
-        content: '\a0';
-        display: inline-block;
-        width: 0;
-        height: $input-height;
-        padding-bottom: .3em;
-    }
-
-    .k-input {
-        display: inline;
-    }
-}
-
 /* fix missing bottom border on browser zoom in Chrome */
 .k-webkit .k-combobox .k-dropdown-wrap::before {
     padding-bottom: .38em;
