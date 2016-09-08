@@ -37,6 +37,11 @@
         }
     }
 
+    .k-grid-footer {
+        border-width: 1px 0 0;
+        border-style: solid;
+    }
+
     .k-grid-content table,
     .k-grid-content-locked>table,
     .k-grid-footer table,

@@ -22,6 +22,8 @@ $pager-selected-hover-background: blend-multiply($accent, darken($background, 8%
     .k-grid-header,
     .k-grid-header-wrap,
     .k-grid td,
+    .k-grid-footer,
+    .k-grid-footer-wrap,
     .k-grid-content-locked,
     .k-grid-footer-locked,
     .k-grid-header-locked {
@@ -29,6 +31,7 @@ $pager-selected-hover-background: blend-multiply($accent, darken($background, 8%
     }
 
     .k-grid-header,
+    .k-grid-footer,
     .k-pager-wrap {
         background-color: $grid-background;
     }
