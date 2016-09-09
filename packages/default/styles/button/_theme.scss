@@ -30,7 +30,6 @@ $buttongroup-button-focused-box-shadow: inset 0 0 0 2px darken($base, 5%) !defau
 $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary-background, 2%) !default;
 
 @include exports('button/theme') {
-
 .k-button {
     color: $normal-text-color;
     background-color: $button-background;
@@ -45,6 +44,8 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
 
     &:focus,
     &.k-state-focused {
+        background-color: $button-background;
+        background-image: $button-gradient;
         border-color: $button-hover-border;
         box-shadow: $button-focused-box-shadow;
         outline: 0;
@@ -101,10 +102,13 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
 
     &:focus,
     &.k-state-focused {
+        background-color: $primary-background;
+        background-image: $primary-gradient;
         box-shadow: $primary-focused-box-shadow;
     }
 
-    &:active {
+    &:active,
+    &.k-state-active {
         background-image: $primary-active-gradient;
         box-shadow: $primary-active-box-shadow;
     }
