@@ -3,7 +3,7 @@ $widget-border-color: darken($base, 8%) !default;
 $header-background: saturate($base, 4%) !default;
 $hover-border-color: darken($base, 20%) !default;
 $selected-border-color: lighten($accent, 1%) !default;
-$focused-item-shadow: inset 0 0 3px 1px darken($base, 10%) !default;
+$focused-item-shadow: 0 0 0 2px darken($background, 6%) !default;
 
 @include exports('base/states') {
 
