@@ -135,5 +135,12 @@ $chart-selection-background: rgba(255, 255, 255, .01);
         height: 100%;
         width: 100%;
     }
+
+    .k-chart-dragging {
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
 }
 
