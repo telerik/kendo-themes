@@ -30,6 +30,7 @@ $panelbar-selected-focused-hover-box-shadow: inset 0 0 0 2px blend-multiply($acc
     .k-item {
         .k-link {
             color: $panelbar-color;
+            transition: $transition;
 
             &.k-state-selected {
                 background-color: $selected-background;
@@ -62,7 +63,6 @@ $panelbar-selected-focused-hover-box-shadow: inset 0 0 0 2px blend-multiply($acc
     >.k-item>.k-header {
         color: $panelbar-header-color;
         background-color: $panelbar-header-background;
-        background-image: none;
 
         &:hover {
             color: $panelbar-header-hover-color;

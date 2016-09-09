@@ -22,6 +22,8 @@ $list-item-selected-focused-box-shadow: inset 0 0 0 1px blend-multiply($accent, 
     box-shadow: $list-container-box-shadow;
 
     .k-item {
+        transition: $transition;
+
         &.k-state-selected {
             box-shadow: none;
         }

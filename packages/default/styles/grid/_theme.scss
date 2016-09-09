@@ -52,6 +52,7 @@ $pager-selected-hover-background: blend-multiply($accent, darken($background, 8%
         .k-link,
         .k-link:link {
             color: $grid-active-color;
+            transition: $transition;
 
             &:focus {
                 box-shadow: $pager-focused-box-shadow;
