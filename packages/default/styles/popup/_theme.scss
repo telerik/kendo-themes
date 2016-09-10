@@ -15,11 +15,9 @@ $list-item-focused-border: rgba(0, 0, 0, .1) !default;
 $list-item-selected-focused-box-shadow: inset 0 0 0 1px blend-multiply($accent, darken($background, 8%)) !default;
 
 @include exports('popup/theme') {
-.k-list-container.k-animation-container {
+.k-popup.k-list-container {
     background-color: $list-container-background;
     border-color: $list-container-border;
-    border-radius: 0 0 $border-radius $border-radius;
-    box-shadow: $list-container-box-shadow;
 
     .k-item {
         transition: $transition;
@@ -51,5 +49,10 @@ $list-item-selected-focused-box-shadow: inset 0 0 0 1px blend-multiply($accent, 
         border-bottom-color: $list-container-border;
         box-shadow: $list-container-box-shadow;
     }
+}
+
+.k-animation-container {
+    border-radius: 0 0 $border-radius $border-radius;
+    box-shadow: $list-container-box-shadow;
 }
 }

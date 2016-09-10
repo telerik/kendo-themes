@@ -7,11 +7,11 @@
         min-height: 2em;
         white-space: normal;
     }
-}
 
-.k-list-container.k-animation-container {
-    border-width: 1px;
-    border-style: solid;
+    &.k-list-container {
+        border-width: 1px;
+        border-style: solid;
+    }
 }
 
 .k-list-optionlabel {
