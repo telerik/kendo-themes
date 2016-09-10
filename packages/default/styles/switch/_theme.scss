@@ -20,6 +20,7 @@ $switch-focus-box-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
     .k-switch-wrapper,
     .k-switch-container {
         border-radius: $switch-border-radius;
+        outline: 0;
     }
 
     .k-switch-container,
