@@ -3,7 +3,7 @@
 
 @include exports('scrollview/layout') {
     $scrollview-page-button-size: 8px;
-    $scrollview-arrow-icon-size: 4em;
+    $scrollview-arrow-icon-size: 4.5em;
 
     .k-scrollview-wrap {
         position: relative;
@@ -94,7 +94,7 @@
         padding: 0;
         vertical-align: middle;
         font-size: $scrollview-arrow-icon-size;
-        font-weight: bolder;
+        font-weight: normal;
     }
 
     .k-scrollview-elements {
