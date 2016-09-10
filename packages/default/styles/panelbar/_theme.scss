@@ -58,6 +58,12 @@ $panelbar-selected-focused-hover-box-shadow: inset 0 0 0 2px blend-multiply($acc
                 box-shadow: $panelbar-focused-box-shadow;
             }
         }
+
+        &.k-state-disabled {
+            >.k-link.k-header {
+                color: $panelbar-header-color;
+            }
+        }
     }
 
     >.k-item>.k-header {
