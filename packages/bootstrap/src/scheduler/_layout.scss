@@ -4,6 +4,38 @@
 	.k-scheduler {
 		display: flex;
 		flex-direction: column;
+
+		table,
+		th,
+		td {
+			border-color: inherit;
+		}
+	}
+
+
+	// Commmon
+	.k-scheduler-table {
+		width: 100%;
+		max-width: none;
+		border-collapse: separate;
+		border-spacing: 0;
+		table-layout: fixed;
+
+		td,
+		th {
+			padding: $cell-padding / 2;
+			height: $line-height-em;
+			border-style: solid;
+			border-width: 0 0 1px 1px;
+			vertical-align: top;
+		}
+		td:first-child,
+		th:first-child {
+			border-left-width: 0;
+		}
+		.k-middle-row td {
+			border-bottom-style: dotted;
+		}
 	}
 
 
@@ -11,11 +43,16 @@
 	.k-scheduler-toolbar,
 	.k-scheduler-footer {
 		padding: $padding-y-sm $padding-x-sm;
+		border-width: 0;
+		border-style: solid;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		flex-shrink: 0;
 	}
+	.k-scheduler-toolbar { border-bottom-width: 1px; }
+	.k-scheduler-footer { border-top-width: 1px; }
 
 
 	// Scheduler navigation
@@ -23,6 +60,71 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+	}
+
+
+	// View switcher
+	.k-scheduler-views {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+
+	// Layout
+	.k-scheduler-layout {
+		width: 100%;
+		border-collapse: separate;
+		border-spacing: 0;
+		flex: 1;
+
+		> tbody > tr > td {
+			padding: 0;
+		}
+	}
+	.k-scheduler-header,
+	.k-scheduler-header-wrap,
+	.k-scheduler-header-wrap > div {
+		border-color: inherit;
+	}
+	.k-scheduler-header-wrap {
+		border-width: 0 1px 0 0;
+		border-style: solid;
+	}
+	.k-scheduler-times {
+		border-color: inherit;
+		position: relative;
+		overflow: hidden;
+
+		.k-scheduler-table { table-layout: auto; }
+
+		th {
+			border-width: 0 1px 1px 0;
+			border-bottom-color: transparent;
+			text-align: right;
+			white-space: nowrap;
+		}
+		.k-slot-cell,
+		.k-scheduler-times-all-day {
+			border-bottom-color: inherit;
+		}
+	}
+
+
+	// Scheduler content
+	.k-scheduler-content {
+		border-color: inherit;
+		position: relative;
+		overflow: auto;
+	}
+	.k-event {
+		min-height: $line-height-em;
+		border-width: 1px;
+		border-style: solid;
+		text-align: left;
+		cursor: default;
+		position: absolute;
+		overflow: hidden;
 	}
 
 }

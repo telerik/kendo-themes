@@ -3,4 +3,11 @@
 	// Appearance
 	.k-scheduler {}
 
+
+	// Header and footer
+	.k-scheduler-toolbar,
+	.k-scheduler-footer {
+		@include appearance( header );
+	}
+
 }
