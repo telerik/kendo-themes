@@ -32,6 +32,10 @@
             color: $scrollview-navigation-color;
             opacity: $scrollview-navigation-hover-opacity;
         }
+
+        .k-icon:focus {
+            color: $scrollview-navigation-color;
+        }
     }
 
     .k-scrollview-animation {
