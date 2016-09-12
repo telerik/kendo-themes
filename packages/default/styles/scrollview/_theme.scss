@@ -2,10 +2,12 @@
 @import '../animation/effect';
 @import './layout';
 
- $scrollview-arrow-icon-color: $selected-text-color !default;
- $scrollview-arrow-icon-shadow: rgba(0, 0, 0, .3) 0 0 15px !default;
+ $scrollview-navigation-color: $selected-text-color !default;
+ $scrollview-navigation-icon-shadow: rgba(0, 0, 0, .3) 0 0 15px !default;
  $scrollview-pagebutton-shadow: 0 0 2px rgba(0, 0, 0, .08) !default;
  $scrollview-navigation-background: rgba(0, 0, 0, 0) !default;
+ $scrollview-navigation-default-opacity: .7 !default;
+ $scrollview-navigation-hover-opacity: 1 !default;
  $webkit-highlight-color: rgba(0, 0, 0, 0) !default;
 
 @include exports('scrollview/theme') {
@@ -19,12 +21,17 @@
         background: $scrollview-navigation-background;
         outline-width: 0;
         -webkit-tap-highlight-color: $webkit-highlight-color;
-    }
 
-    .k-scrollview-next span,
-    .k-scrollview-prev span {
-        text-shadow: $scrollview-arrow-icon-shadow;
-        color: $scrollview-arrow-icon-color;
+        span {
+            text-shadow: $scrollview-navigation-icon-shadow;
+            color: $scrollview-navigation-color;
+            opacity: $scrollview-navigation-default-opacity;
+        }
+
+        &:hover span {
+            color: $scrollview-navigation-color;
+            opacity: $scrollview-navigation-hover-opacity;
+        }
     }
 
     .k-scrollview-animation {
