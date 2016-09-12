@@ -13,7 +13,7 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "main": "styles/packages/all.scss",
-  "author": "Telerik",
+  "author": "Progress",
   "license": "Apache-2.0",
   "devDependencies": {
     "@telerik/kendo-common-tasks": "^2.0.0",
