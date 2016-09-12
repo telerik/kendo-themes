@@ -1,7 +1,7 @@
 {
   "name": "@telerik/kendo-theme-bootstrap",
   "description": "Bootstrap v4 theme for Kendo UI",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "Kendo UI",
     "Bootstrap",
@@ -10,8 +10,11 @@
   "main": "src/packages/all.scss",
   "typings": "src/packages/all.d.ts",
   "scripts": {
+    "lint": "echo 'TODO: add lint'",
     "start": "webpack-dev-server --hot --inline",
-    "build": "webpack --optimize-minimize"
+    "build": "webpack --optimize-minimize",
+    "test": "webpack --optimize-minimize",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -19,10 +22,40 @@
   },
   "author": "Progress",
   "license": "Apache-2.0",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run test",
+      "commit-msg": "validate-commit-msg"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert"
+      ],
+      "warnOnFail": false,
+      "maxSubjectLength": 100
+    }
+  },
   "devDependencies": {
     "@telerik/kendo-common-tasks": "^2.0.0",
+    "cz-conventional-changelog": "^1.1.5",
+    "ghooks": "^1.0.3",
     "bootstrap": "git://github.com/twbs/bootstrap.git#v4-dev",
     "browser-sync": "^2.13.0",
-    "webpack-dev-server": "^1.14.1"
+    "semantic-release": "^4.3.5",
+    "validate-commit-msg": "^1.1.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack": "^1.13.1"
   }
 }
