@@ -44,6 +44,10 @@ $pager-selected-hover-background: blend-multiply($accent, darken($background, 8%
         tr.k-state-selected {
             background-color: $selected-background;
             color: $selected-text-color;
+
+            .k-hierarchy-cell > .k-icon {
+                color: $selected-text-color;
+            }
         }
     }
 
