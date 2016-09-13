@@ -10,7 +10,7 @@ $list-container-background: $base !default;
 $list-item-hover-background: $hover-background !default;
 $list-item-selected-color: $selected-text-color !default;
 $list-item-selected-background: blend-multiply($selected-background, $hover-background) !default;
-$list-item-focused-box-shadow: inset 0 0 0 1px darken($base, 9%) !default;
+$list-item-focused-box-shadow: inset 0 0 0 2px darken($base, 9%) !default;
 $list-item-focused-border: rgba(0, 0, 0, .1) !default;
 $list-item-selected-focused-box-shadow: inset 0 0 0 1px blend-multiply($accent, darken($background, 8%)) !default;
 
@@ -53,6 +53,5 @@ $list-item-selected-focused-box-shadow: inset 0 0 0 1px blend-multiply($accent, 
 
 .k-animation-container {
     border-radius: 0 0 $border-radius $border-radius;
-    box-shadow: $list-container-box-shadow;
 }
 }
