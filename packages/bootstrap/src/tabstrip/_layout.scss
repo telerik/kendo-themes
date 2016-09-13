@@ -30,6 +30,9 @@
 			display: none;
 			overflow: auto;
 		}
+		> .k-content.k-state-active {
+			display: block;
+		}
 
 
 		// Scrolling
