@@ -1,0 +1,75 @@
+@include exports("dialog/layout") {
+
+	.k-dialog {
+		padding-top: 0;
+		max-width: 100%;
+		position: fixed;
+
+
+		// Centered
+		&.k-dialog-centered {
+			transform: translate(-50%,-50%);
+			top: 50%;
+			left: 50%;
+		}
+	}
+
+
+	// Title bar
+	.k-dialog .k-window-title-bar {}
+	.k-dialog .k-dialog-title {
+		margin: 0;
+		line-height: $modal-title-line-height;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		cursor: default;
+		flex: 1;
+	}
+
+	// Actions
+	.k-dialog-action {
+		padding: 2px;
+		color: inherit;
+		text-decoration: none;
+		opacity: .2;
+
+		&:hover,
+		&.k-state-hover {
+			color: inherit;
+			text-decoration: none;
+			opacity: .5;
+		}
+	}
+
+
+	// Content
+	.k-dialog .k-content {
+		padding: $modal-inner-padding;
+		outline: 0;
+		overflow: auto;
+		position: relative;
+		flex: 1;
+	}
+
+
+	// Buttons
+	.k-dialog-buttongroup {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+
+		.k-button {
+			width: auto !important;
+			white-space: normal;
+			display: flex;
+			justify-content: center;
+			flex: 1;
+		}
+	}
+	.k-dialog-button-layout-stretched {
+		flex-direction: row;
+		align-items: stretch;
+	}
+
+}
