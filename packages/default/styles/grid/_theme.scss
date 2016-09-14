@@ -66,16 +66,7 @@ $pager-selected-hover-background: blend-multiply($accent, darken($background, 8%
                 background-color: $pager-hover-background;
             }
 
-            &.k-state-disabled {
-                box-shadow: none;
-                background-color: transparent;
-            }
-        }
-
-        .k-state-selected {
-            background: $pager-selected-background;
-
-            .k-link {
+            &.k-state-selected {
                 color: $pager-selected-color;
 
                 &:focus {
@@ -85,6 +76,11 @@ $pager-selected-hover-background: blend-multiply($accent, darken($background, 8%
                 &:hover {
                     background-color: $pager-selected-hover-background;
                 }
+            }
+
+            &.k-state-disabled {
+                box-shadow: none;
+                background-color: transparent;
             }
         }
     }
