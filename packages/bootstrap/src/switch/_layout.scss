@@ -13,6 +13,10 @@
 
 		// Hide input
 		input[type="checkbox"] { display: none; }
+
+		// ng
+		border-width: 0;
+		&, & * { box-sizing: border-box; }
 	}
 
 	// Switch wrapper
@@ -30,7 +34,13 @@
 		height: 100%;
 		display: block;
 		position: relative;
-		left: -98%
+		left: -98%;
+		transition: all .2s ease-out;
+	}
+	.k-switch-on .k-switch-background,
+	.km-switch-on .km-switch-background {
+		margin: 0 !important;
+		left: 0;
 	}
 
 	// Switch container
@@ -51,6 +61,7 @@
 		width: 2em;
 		height: 100%;
 		display: inline-block;
+		transition: all .2s ease-out;
 	}
 	.k-switch-label-on,
 	.km-switch-label-on,
