@@ -1,31 +1,37 @@
 @include exports("switch/theme") {
 
 	// Theme
-	.k-switch {
+	.k-switch,
+	.km-switch {
 		@include border-radius( $border-radius );
 	}
 
 	// Switch wrapper
-	.k-switch-wrapper {
+	.k-switch-wrapper,
+	.km-switch-wrapper {
 		@include appearance( button );
 		@include border-radius( $border-radius );
 	}
-	.k-switch-background {
+	.k-switch-background,
+	.km-switch-background {
 		@include appearance( primary-button );
 	}
 
 	// Switch container
-	.k-switch-container {
+	.k-switch-container,
+	.km-switch-container {
 		@include border-radius( $border-radius );
 		border-color: $button-border;
 		color: $button-color;
 	}
-	.k-switch-handle {
+	.k-switch-handle,
+	.km-switch-handle {
 		@include border-radius( $border-radius );
 		background-color: $button-bg;
 		box-shadow: 0 1px 0 1px $button-border, 0 -1px 0 1px $button-border;
 	}
-	.k-switch-label-on {
+	.k-switch-label-on,
+	.km-switch-label-on {
 		color: $primary-button-color;
 	}
 

@@ -1,66 +1,74 @@
 @include exports("switch/layout") {
 
 	// Layout
-	.k-switch {
+	.k-switch,
+	.km-switch {
 		width: 5em;
 		height: 2em;
 		display: inline-block;
 		position: relative;
 		overflow: hidden;
 		user-select: none;
+		cursor: default;
 
 		// Hide input
 		input[type="checkbox"] { display: none; }
+	}
 
-		// Switch wrapper
-		.k-switch-wrapper {
-			width: 100%;
-			height: 100%;
-			border-width: 1px;
-			border-style: solid;
-			display: block;
-		}
-		.k-switch-background {
-			width: 100%;
-			height: 100%;
-			display: block;
-			position: relative;
-			left: -98%
-		}
+	// Switch wrapper
+	.k-switch-wrapper,
+	.km-switch-wrapper {
+		width: 100%;
+		height: 100%;
+		border-width: 1px;
+		border-style: solid;
+		display: block;
+	}
+	.k-switch-background,
+	.km-switch-background {
+		width: 100%;
+		height: 100%;
+		display: block;
+		position: relative;
+		left: -98%
+	}
 
-		// Switch container
-		.k-switch-container {
-			width: 100%;
-			height: 100%;
-			border-width: 1px;
-			border-style: solid;
-			display: block;
-			overflow: hidden;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-		.k-switch-handle {
-			width: 2em;
-			height: 100%;
-			display: inline-block;
-		}
-		.k-switch-label-on,
-		.k-switch-label-off {
-			padding: $padding-y-sm $padding-x-sm;
-			text-transform: uppercase;
-			display: block;
-			position: absolute;
-			top: 0;
-		}
-		.k-switch-label-on {
-			right: 100%;
-		}
-		.k-switch-label-off {
-			left: 100%;
-		}
-
-
+	// Switch container
+	.k-switch-container,
+	.km-switch-container {
+		width: 100%;
+		height: 100%;
+		border-width: 1px;
+		border-style: solid;
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.k-switch-handle,
+	.km-switch-handle {
+		width: 2em;
+		height: 100%;
+		display: inline-block;
+	}
+	.k-switch-label-on,
+	.km-switch-label-on,
+	.k-switch-label-off,
+	.km-switch-label-off {
+		padding: $padding-y-sm $padding-x-sm;
+		text-transform: uppercase;
+		display: block;
+		position: absolute;
+		top: 0;
+	}
+	.k-switch-label-on,
+	.km-switch-label-on {
+		right: 100%;
+	}
+	.k-switch-label-off,
+	.km-switch-label-off {
+		left: 100%;
 	}
 
 }
