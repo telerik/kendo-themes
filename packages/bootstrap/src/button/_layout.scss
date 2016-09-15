@@ -12,6 +12,7 @@
 		display: inline-flex;
 		align-items: center;
 		vertical-align: middle;
+		user-select: none;
 		cursor: pointer;
 
 		&[disabled] {
@@ -84,6 +85,13 @@
 				padding: $button-padding-y-sm;
 			}
 		}
+	}
+
+
+	// Bare button
+	.k-button-bare {
+		user-select: none;
+		text-decoration: none;
 	}
 
 

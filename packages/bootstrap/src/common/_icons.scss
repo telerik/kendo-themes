@@ -63,7 +63,7 @@
 	.k-i-arrowhead-s::before { content: '\e61a'; }
 	.k-i-arrowhead-w::before { content: '\e61b'; }
 	.k-i-pencil::before { content: '\e61c'; }
-	.k-i-x::before, .k-i-close::before, .k-i-group-delete::before { content: '\e61d'; }
+	.k-i-x::before, .k-i-close::before, .k-i-group-delete::before, .k-si-close::before { content: '\e61d'; }
 	.k-i-checkmark::before { content: '\e61e'; }
 	.k-i-deny::before, .k-i-denied::before, .k-i-cancel::before { content: '\e61f'; }
 	.k-i-trash::before { content: '\e620'; }
@@ -204,7 +204,8 @@
 	.k-i-add,
 	.k-i-denied,
 	.k-i-group-delete,
-	.k-i-cancel {
+	.k-i-cancel,
+	.k-si-close {
 		background-color: red;
 	}
 

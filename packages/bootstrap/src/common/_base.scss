@@ -74,38 +74,48 @@
 	.k-resize-handle,
 	.k-resize-hint {
 		position: absolute;
+		border-color: inherit;
+	}
+	.k-resize-handle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	.k-resize-handle:before {
 		content: "";
 		border: 0 solid;
-		position: absolute;
+		border-color: inherit;
 	}
 	.k-resize-n {
+		width: 100%;
+		height: 6px;
+		flex-direction: row;
 		left: 0;
 		top: -3px;
-		height: 6px;
-		width: 100%;
 		cursor: n-resize;
 	}
 	.k-resize-s {
+		width: 100%;
+		height: 6px;
+		flex-direction: row;
 		left: 0;
 		bottom: -3px;
-		height: 6px;
-		width: 100%;
 		cursor: s-resize;
 	}
 	.k-resize-w {
-		top: 0;
-		left: -3px;
 		width: 6px;
 		height: 100%;
+		flex-direction: col;
+		top: 0;
+		left: -3px;
 		cursor: w-resize;
 	}
 	.k-resize-e {
-		top: 0;
-		right: -3px;
 		width: 6px;
 		height: 100%;
+		flex-direction: col;
+		top: 0;
+		right: -3px;
 		cursor: w-resize;
 	}
 
@@ -169,5 +179,8 @@
 	.k-marquee-color {
 		@include appearance( primary-button );
 		opacity: .6;
+	}
+	.k-marquee-text {
+		color: $primary-button-color;
 	}
 }
