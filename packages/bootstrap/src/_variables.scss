@@ -62,6 +62,23 @@ $cell-padding-sm: get-bootstrap-var( cell-padding-sm );
 
 
 
+// Chart
+$series-a: #ff6358;
+$series-b: #ffd246;
+$series-c: #78d237;
+$series-d: #28b4c8;
+$series-e: #2d73f5;
+$series-f: #aa46be;
+
+
+// Interactive states
+$brand-primary: get-bootstrap-var( brand-primary );
+$brand-success: get-bootstrap-var( brand-success );
+$brand-info: get-bootstrap-var( brand-info );
+$brand-warning: get-bootstrap-var( brand-warning );
+$brand-error: get-bootstrap-var( brand-error );
+
+
 // Panel
 $panel-color: get-bootstrap-var( panel-color );
 $panel-bg: get-bootstrap-var( panel-bg );

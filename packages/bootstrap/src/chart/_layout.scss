@@ -13,7 +13,11 @@
 	// Charts
 	.k-chart,
 	.k-stockchart {
+		display: block;
 		height: 400px;
+	}
+	.k-chart-surface {
+		height: 100%;
 	}
 
 
@@ -38,7 +42,7 @@
 	// Stockchart selector
 	.k-selector {
 		position: absolute;
-		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
 	}
 
 	.k-selection {
@@ -110,14 +114,11 @@
 
 	// Tooltip
 	.k-chart-tooltip {
-		border-radius: 4px;
 		padding: 6px;
+		border-radius: 4px;
+		line-height: normal;
 		white-space: nowrap;
 		z-index: 12000;
-		line-height: normal;
-	}
-	.k-chart-tooltip-inverse {
-		color: #000;
 	}
 
 	.k-chart-tooltip table {
@@ -135,4 +136,52 @@
 		text-align: left;
 	}
 
+}
+
+
+
+
+@include exports("chart/variables") {
+
+	// export variables to allow use in scripts
+	$exported: (
+		accent: $brand-primary,
+		base: $header-bg,
+		background: $panel-bg,
+
+		border-radius: $border-radius,
+
+		normal-background: $node-bg,
+		normal-text-color: $node-color,
+		hover-background: $node-hovered-bg,
+		hover-text-color: $node-hovered-color,
+		selected-background: $node-selected-bg,
+		selected-text-color: $node-selected-color,
+
+		success: $brand-success,
+		info: $brand-info,
+		warning: $brand-warning,
+		error: $brand-error,
+
+		series-a: $series-a,
+		series-b: $series-b,
+		series-c: $series-c,
+		series-d: $series-d,
+		series-e: $series-e,
+		series-f: $series-f
+	);
+
+	@each $name, $value in $exported {
+		$type: type-of($value);
+
+		.k-var--#{$name} {
+			@if $type == 'color' {
+				// background-color can store any color
+				background-color: $value;
+			} @else if $type == 'number' {
+				// margin-top can store positive & negative values
+				margin-top: $value;
+			}
+		}
+	}
 }
