@@ -184,4 +184,16 @@
 			}
 		}
 	}
+
+
+	.k-var--chart-font-s { font-size: $chart-font-size-sm; }
+	.k-var--chart-font-m { font-size: $chart-font-size-md; }
+	.k-var--chart-font-l { font-size: $chart-font-size-lg; }
+
+
+	.k-var--chart-inactive { background-color: $chart-inactive; }
+	.k-var--chart-major-lines { background-color: $chart-major-lines; }
+	.k-var--chart-minor-lines { background-color: $chart-minor-lines; }
+	.k-var--chart-area-opacity { opacity: $chart-area-opacity; }
+
 }
