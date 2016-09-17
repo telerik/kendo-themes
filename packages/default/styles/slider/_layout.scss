@@ -28,6 +28,7 @@ $transition-function: ease-out;
         padding: 0;
         position: absolute;
         width: $slider-button-size;
+        box-sizing: content-box;
 
         .k-icon {
             vertical-align: baseline;
@@ -248,6 +249,7 @@ $transition-function: ease-out;
     text-align: center;
     text-decoration: none;
     text-indent: -3333px;
+    box-sizing: content-box;
 
     .k-slider-horizontal & {
         height: 14px;

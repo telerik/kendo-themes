@@ -83,21 +83,9 @@ html {
     }
 }
 
-// override box sizing for grid layout framework integration
-// (Bootstrap 3, Foundation 4)
 .k-widget,
-.k-widget *,
-.k-widget *::before {
-    box-sizing: content-box;
-}
-
-.k-autocomplete,
 .k-block,
-.k-edit-cell .k-widget,
-.k-grid-edit-row .k-widget,
-.k-grid-edit-row .k-text-box
-.k-textbox,
-.k-list-filter .k-textbox {
+.k-textbox {
     box-sizing: border-box;
 }
 }

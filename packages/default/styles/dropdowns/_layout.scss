@@ -10,6 +10,7 @@ $input-indent: .33em;
 .k-combobox,
 .k-dropdown,
 .k-textbox {
+    box-sizing: border-box;
     position: relative;
     display: inline-block;
     width: 12.4em;

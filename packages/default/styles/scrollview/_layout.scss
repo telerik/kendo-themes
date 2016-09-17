@@ -54,6 +54,7 @@
         pointer-events: none;
 
         & > li.k-button {
+            box-sizing: content-box;
             vertical-align: middle;
             display: inline-block;
             border-radius: 10px;
