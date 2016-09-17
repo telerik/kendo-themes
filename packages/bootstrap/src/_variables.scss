@@ -73,9 +73,11 @@ $chart-font-size-sm: 11px;
 $chart-font-size-md: 12px;
 $chart-font-size-lg: 16px;
 
-$chart-inactive: rgba( $panel-border, .5 );
-$chart-major-lines: darken( $header-bg, 30% );
-$chart-minor-lines: darken( $header-bg, 20% );
+$chart-inactive: rgba( get-bootstrap-var( panel-border ), .5 );
+$chart-major-lines: darken( get-bootstrap-var( header-bg ), 30% );
+$chart-minor-lines: darken( get-bootstrap-var( header-bg ), 20% );
+
+$chart-area-opacity: .8;
 
 
 // Interactive states
