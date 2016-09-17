@@ -41,7 +41,6 @@ $slider-button-focused-box-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
         background-color: $slider-draghandle-background-color;
         border-color: $slider-draghandle-border-color;
         border-radius: 50%;
-        transition: $transition;
 
         &:hover,
         &.k-pressed {
