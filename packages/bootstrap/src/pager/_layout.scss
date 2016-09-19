@@ -23,6 +23,10 @@
 		.k-state-selected {
 			z-index: 2;
 		}
+		.k-link:focus,
+		.k-state-selected {
+			text-decoration: none;
+		}
 		.k-link + .k-link,
 		.k-link + .k-pager-numbers,
 		.k-pager-numbers + .k-link {
