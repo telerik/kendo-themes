@@ -150,6 +150,9 @@
 			display: flex;
 			align-items: center;
 		}
+		.k-header > .k-link:focus {
+			text-decoration: none;
+		}
 		.k-header > .k-link > .k-icon {
 			margin: 0 .4ex;
 			position: static;
