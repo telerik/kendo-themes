@@ -27,6 +27,7 @@
 		border-width: 1px;
 		border-style: solid;
 		display: block;
+		overflow: hidden;
 	}
 	.k-switch-background,
 	.km-switch-background {
@@ -71,7 +72,7 @@
 		text-transform: uppercase;
 		display: block;
 		position: absolute;
-		top: 0;
+		top: -2px;
 	}
 	.k-switch-label-on,
 	.km-switch-label-on {
