@@ -16,6 +16,7 @@
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
+    font-size: 16px;
     line-height: 1;
     speak: none;
     text-transform: none;
@@ -24,6 +25,14 @@
     &::before {
         vertical-align: baseline;
     }
+}
+
+.k-icon-md {
+    font-size: 32px;
+}
+
+.k-icon-lg {
+    font-size: 48px;
 }
 
 .k-i-arrow-n::before { content: '\e600'; }
