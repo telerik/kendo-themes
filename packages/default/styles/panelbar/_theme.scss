@@ -28,6 +28,10 @@ $panelbar-selected-focused-hover-box-shadow: inset 0 0 0 2px blend-multiply($acc
     }
 
     .k-item {
+        > .k-header {
+            user-select: none;
+        }
+
         .k-link {
             color: $panelbar-color;
             transition: $transition;
