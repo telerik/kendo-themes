@@ -37,7 +37,7 @@ $button-padding: 6px !default;
 
     .k-icon,
     > .k-image {
-        margin-right: (2 * $button-padding) / 3;
+        margin-right: $button-padding;
     }
 }
 
@@ -56,18 +56,6 @@ $button-padding: 6px !default;
 
 .k-button-icontext {
     overflow: visible; // IE9
-
-    .k-icon,
-    .k-image,
-    .k-sprite {
-        margin-left: -3px;
-        margin-right: 3px;
-    }
-
-    .k-icon,
-    .k-image {
-        vertical-align: text-top;
-    }
 }
 
 .k-button-bare {

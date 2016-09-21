@@ -37,6 +37,10 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
     border-color: $button-border;
     user-select: none;
 
+    > .k-icon {
+       color: inherit;
+    }
+
     &:hover {
         background-image: $button-hover-gradient;
         border-color: $button-hover-border;
