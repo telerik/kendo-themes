@@ -26,6 +26,7 @@
 			width: $form-line-height * 1em;
 			height: $form-line-height * 1em;
 			min-width: 0;
+			box-sizing: content-box;
 			border-radius: 100%;
 			display: flex;
 			flex-direction: row;
