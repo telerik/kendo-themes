@@ -24,6 +24,7 @@
 			padding: $input-padding-y;
 			width: $form-line-height * 1em;
 			height: $form-line-height * 1em;
+			box-sizing: content-box;
 			line-height: 0;
 		}
 
