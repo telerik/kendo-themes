@@ -13,16 +13,16 @@
 
 
 	// Box sizing
-	.k-animation-container,
-	.k-animation-container *,
-	.k-animation-container :after,
-	.k-block .k-header,
-	.k-list-container,
-	.k-widget,
-	.k-widget *,
-	.k-widget :before {
-		@extend %content-box;
-	}
+	// .k-animation-container,
+	// .k-animation-container *,
+	// .k-animation-container :after,
+	// .k-block .k-header,
+	// .k-list-container,
+	// .k-widget,
+	// .k-widget *,
+	// .k-widget :before {
+	// 	@extend %content-box;
+	// }
 
 
 	// Float wrap
@@ -50,6 +50,7 @@
 	.k-widget {
 		border-width: 1px;
 		border-style: solid;
+		box-sizing: border-box;
 		font-size: $font-size;
 		line-height: $line-height;
 
