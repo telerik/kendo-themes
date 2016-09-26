@@ -49,33 +49,4 @@
 		}
 	}
 
-	@include exports("dropdownwrap/layout") {
-
-		.k-dropdown-wrap {
-			padding: 0;
-			border-width: 1px;
-			border-style: solid;
-			box-sizing: border-box;
-			display: flex;
-			flex-direction: row;
-			position: relative;
-			cursor: default;
-
-			.k-input {
-				padding: $input-padding-y $input-padding-x;
-				flex: 1;
-				overflow: hidden;
-				text-overflow: ellipsis;
-			}
-
-			.k-select {
-				padding: $button-padding-y;
-				display: flex;
-				align-items: center;
-
-				.k-icon {}
-			}
-		}
-	}
-
 }
