@@ -13,6 +13,7 @@
 			padding: $button-padding-y;
 			width: $form-line-height-rem;
 			height: $form-line-height-rem;
+			box-sizing: content-box;
 			border-width: 1px;
 			border-style: solid;
 			display: inline-block;
