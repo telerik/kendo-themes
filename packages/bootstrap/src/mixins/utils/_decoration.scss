@@ -1,5 +1,4 @@
 @mixin linear-gradient( $gradient ) {
-
 	@if $gradient {
 		@if $gradient == none {
 			background-image: none
@@ -8,26 +7,39 @@
 			background-image: linear-gradient( $gradient );
 		}
 	}
-
 }
 @mixin box-shadow( $shadow ) {
-
 	@if $shadow {
 		box-shadow: $shadow;
 	}
-
 }
 @mixin border-radius( $radius ) {
 	@if $radius {
 		border-radius: $radius;
 	}
 }
+@mixin fill( $color: null, $bg: null, $border: null, $gradient: null ) {
+	color: $color;
+	background-color: $bg;
+	border-color: $border;
+	@include linear-gradient( $gradient );
+}
+@mixin outline( $color: null ) {
+	color: $color;
+	background-color: transparent;
+	background-image: none;
+	border-color: $color;
+}
+
+
+
+
+// Disabled
 @mixin disabled {
 	cursor: $cursor-disabled;
 	opacity: .65;
 	pointer-events: none;
 }
-
 
 $_disabled-imported: false !default;
 
