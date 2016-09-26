@@ -1,6 +1,7 @@
-@include exports("dropdownwrap/layout") {
+@include exports("forms/layout") {
 
-	.k-dropdown-wrap {
+	.k-dropdown-wrap,
+	.k-picker-wrap {
 		padding: 0;
 		border-width: 1px;
 		border-style: solid;
@@ -8,10 +9,16 @@
 		display: flex;
 		flex-direction: row;
 		position: relative;
+		overflow: hidden;
 		cursor: default;
 
 		.k-input {
 			padding: $input-padding-y $input-padding-x;
+			border: 0;
+			outline: 0;
+			color: inherit;
+			background: none;
+			font: inherit;
 			flex: 1;
 			overflow: hidden;
 			text-overflow: ellipsis;
@@ -19,11 +26,21 @@
 
 		.k-select {
 			padding: $button-padding-y;
+			border-width: 0 0 0 1px;
+			border-style: solid;
 			display: flex;
 			align-items: center;
 
 			.k-icon {}
 		}
+	}
+
+
+	%form-control {
+		border-width: 0;
+		line-height: $form-line-height;
+		display: inline-block;
+		vertical-align: middle;
 	}
 
 }

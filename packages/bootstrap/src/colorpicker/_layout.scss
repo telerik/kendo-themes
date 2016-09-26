@@ -9,16 +9,7 @@
 		overflow: visible;
 		position: relative;
 
-		.k-picker-wrap {
-			padding: 0;
-			border-width: 1px;
-			border-style: solid;
-			box-sizing: border-box;
-			display: flex;
-			flex-direction: row;
-			position: relative;
-			overflow: hidden;
-		}
+		.k-picker-wrap {}
 
 		.k-selected-color {
 			padding: $input-padding-y;
@@ -29,11 +20,6 @@
 		}
 
 		.k-select {
-			padding: $button-padding-y;
-			border-width: 0 0 0 1px;
-			border-style: solid;
-			display: flex;
-			align-items: center;
 
 			.k-icon {}
 		}

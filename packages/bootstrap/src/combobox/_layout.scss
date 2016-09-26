@@ -7,13 +7,8 @@
 		display: inline-block;
 		vertical-align: middle;
 
-		.k-input {
-			border: 0;
-			outline: 0;
-			color: inherit;
-			background: none;
-			font: inherit;
-		}
+
+		.k-input {}
 
 		.k-i-close {
 			display: none;
@@ -28,10 +23,7 @@
 			display: block;
 		}
 
-		.k-select {
-			border-width: 0 0 0 1px;
-			border-style: solid;
-		}
+		.k-select {}
 
 
 
