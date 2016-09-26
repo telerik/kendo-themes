@@ -36,8 +36,7 @@
 
 
 		// Compact
-		.k-compact &,
-		&.k-compact {
+		@include compact {
 
 			.k-input {
 				padding: $input-padding-y-sm $input-padding-x-sm;
