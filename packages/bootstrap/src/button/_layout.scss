@@ -37,7 +37,9 @@
 		}
 		&-icon {
 			width: $form-line-height * 1em;
+			height: $form-line-height * 1em;
 			padding: $button-padding-y;
+			box-sizing: content-box;
 			justify-content: center;
 		}
 		&.k-button-bare {

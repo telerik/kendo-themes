@@ -58,6 +58,39 @@
 	}
 
 
+	// View switcher
+	.k-gantt-views {
+		@extend %ul-button-group;
+
+		.k-current-view { display: none; }
+		.k-current-view .k-link::after {
+			content: "";
+			margin: 0 0 0 1ex;
+			border: .25em solid transparent;
+			border-top: .5em solid currentColor;
+			border-bottom-width: 0;
+			display: inline-block;
+		}
+
+		@media (max-width: 1024px) {
+			flex-direction: column;
+			align-items: stretch;
+			position: absolute;
+			right: $padding-x-sm;
+			top: $padding-y-sm;
+			z-index: 1000;
+
+			li { display: none; }
+			.k-current-view { display: block; }
+
+
+			&.k-state-expanded {
+				li { display: block; }
+			}
+		}
+	}
+
+
 	// Treelist
 	.k-gantt-treelist {
 
@@ -122,57 +155,69 @@
 	.k-gantt-tasks {
 		position: relative;
 
+		td {
+			padding: 0;
+			position: relative;
+			vertical-align: middle;
+		}
 		td:after { content: "\a0"; }
 	}
 	.k-task-wrap {
-		margin: -1px -1.5em 0;
-		padding: 0 0 5px;
-		display: flex;
+		margin: 0 -1.5em;
+		padding: 0 25px;
+		display: inline-flex;
 		flex-direction: row;
 		align-items: center;
-		position: absolute;
+		position: relative;
 		z-index: 2;
+	}
+	.k-task-wrap.k-drag-hint {
+		position: absolute;
 	}
 	.k-task {
 		position: relative;
 		flex: 1;
 	}
 	.k-task-dot {
-		padding: 0 .25em;
-		width: 1em;
-		height: 1em;
+		width: 16px;
+		height: 16px;
 		line-height: 1;
-		visibility: hidden;
 		cursor: pointer;
-		display: flex !important;
-		align-items: center;
-		justify-content: center;
+		display: none;
+		position: absolute;
 	}
-	.k-task-wrap:hover .k-task-dot {
-		visibility: visible;
+	.k-task-wrap:hover .k-task-dot,
+	.k-task-wrap.k-origin .k-task-dot {
+		display: block;
 	}
 	.k-task-dot:before {
 		content: "";
-		width: .5em;
-		height: .5em;
+		margin: -4px 0 0 -4px;
+		width: 8px;
+		height: 8px;
 		border-width: 0;
 		border-style: solid;
 		border-radius: 100%;
-		background: green;
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
 	}
-	.task-dot:hover:before {
+	.k-task-dot:hover:before,
+	.k-task-dot.k-state-hover:before {
 		border-width: 1px;
 	}
-	.k-task-start { order: -1; }
-	.k-task-end {}
+	.k-task-start { left: 0; }
+	.k-task-end { right: 0; }
 	.k-task-draghandle {
 		margin-left: 20px;
 		width: 0;
 		height: 0;
 		border: 5px solid transparent;
+		border-top-width: 0;
 		border-bottom-color: inherit;
 		position: absolute;
-		bottom: 0;
+		top: 100%;
 		// display: none;
 		cursor: e-resize;
 	}
@@ -183,7 +228,6 @@
 		margin: 0 -2em;
 	}
 	.k-task-milestone {
-		margin-top: 3px;
 		width: 1em;
 		height: 1em;
 		border-width: 1px;
@@ -193,8 +237,8 @@
 
 
 	// Summary
+	.k-summary-wrap {}
 	.k-task-summary {
-		margin-top: 3px;
 		height: 10px;
 		display: inline-block;
 		vertical-align: top;
@@ -232,6 +276,7 @@
 
 
 	// Single task
+	.k-single-wrap {}
 	.k-task-single {
 		border-width: 1px;
 		border-style: solid;
@@ -240,9 +285,10 @@
 		.k-resize-handle {
 			opacity: .5;
 			z-index: 2;
-			// visibility: hidden;
+			visibility: hidden;
 		}
 		.k-resize-handle:before {
+			position: absolute;
 			top: 2px;
 			bottom: 2px;
 		}
@@ -270,6 +316,7 @@
 		left: 0;
 	}
 	.k-task-content {
+		font-size: .875em;
 		position: relative;
 		z-index: 2;
 		display: flex;
@@ -277,7 +324,8 @@
 		align-children: center;
 	}
 	.k-task-template {
-		padding: ( $cell-padding / 8 ) $padding-x-sm;
+		padding: $padding-y-sm $padding-x-sm;
+		line-height: normal;
 		flex: 1;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -288,6 +336,24 @@
 		display: flex;
 		flex-direction: row;
 		align-children: center;
+	}
+
+}
+
+
+
+
+
+@include exports("gantt-edit-form/layout") {
+
+
+	.k-gantt-edit-form {}
+
+	.k-gantt-edit-form .k-edit-buttons {}
+	.k-gantt-edit-form .k-gantt-update {}
+	.k-gantt-edit-form .k-gantt-cancel {}
+	.k-gantt-edit-form .k-gantt-delete {
+		float: left;
 	}
 
 }

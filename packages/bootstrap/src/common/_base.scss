@@ -185,3 +185,34 @@
 		color: $primary-button-color;
 	}
 }
+
+
+@include exports( "common/loadingmask" ) {
+
+	.k-loading-mask,
+	.k-loading-image,
+	.k-loading-color {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.k-loading-mask {
+		z-index: 100;
+	}
+	.k-loading-text {
+		text-indent: -4000px;
+		text-align: center;
+		position: absolute;
+	}
+	.k-loading-image {
+		z-index: 2;
+	}
+	.k-loading-color {
+		background-color: $panel-bg;
+		opacity: .3;
+	}
+
+}
