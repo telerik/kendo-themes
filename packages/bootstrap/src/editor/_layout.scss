@@ -19,10 +19,29 @@
 		}
 	}
 	.k-editor-inline {
-		border-width: 2px;
+		border-width: 0;
 		padding: $padding-y-sm $padding-x-sm;
 		word-wrap: break-word;
 		overflow: auto;
+		border-radius: $border-radius;
+		background: none;
+	}
+	.k-editor-inline.k-state-active {
+		padding: calc(#{$padding-y-sm} - 1px) calc(#{$padding-x-sm} - 1px);
+		border-width: 1px;
+	}
+	.k-editortoolbar-dragHandle {
+		float: left;
+		cursor: move;
+		padding: $button-padding-y-sm $button-padding-x-sm;
+	}
+	.k-editor-widget {
+		padding-top: 0;
+	}
+	.editorToolbarWindow {
+		display: flex;
+		align-items: center;
+		padding: $padding-y-sm $padding-x-sm;
 	}
 
 
