@@ -3,6 +3,11 @@
 $chart-tap-highlight-color: rgba(0, 0, 0, 0);
 $chart-selection-background: rgba(255, 255, 255, .01);
 
+$chart-font-size: 1em !default;
+$chart-tooltip-font-size: .929em !default;
+$chart-label-font-size: .857em !default;
+$chart-title-font-size: 1.143em !default;
+
 @include exports('charts/layout') {
     .k-chart,
     .k-sparkline,
@@ -26,6 +31,12 @@ $chart-selection-background: rgba(255, 255, 255, .01);
         border-collapse: collapse;
     }
 
+    .k-chart-tooltip {
+        font-size: $chart-tooltip-font-size;
+        line-height: 1.154em;
+        padding: .308em .692em;
+    }
+
     .k-chart-tooltip th {
         width: auto;
         text-align: center;
@@ -35,7 +46,27 @@ $chart-selection-background: rgba(255, 255, 255, .01);
     .k-chart-tooltip td {
         width: auto;
         text-align: left;
-        padding: .1em .2em;
+        padding: .1em .308em;
+        line-height: 1.538em;
+        vertical-align: middle;
+    }
+
+    .k-chart-crosshair-tooltip,
+    .k-chart-shared-tooltip {
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .k-chart-shared-tooltip {
+        padding: 1em;
+        line-height: 1.538em;
+    }
+
+    .k-chart-shared-tooltip-marker {
+        display: inline-block;
+        width: 15px;
+        height: 3px;
+        vertical-align: middle;
     }
 
     /* Selection */

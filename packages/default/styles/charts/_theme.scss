@@ -12,6 +12,10 @@ $chart-font-size-l: 16px !default;
 
 $chart-area-opacity: .8 !default;
 
+$chart-crosshair-shared-tooltip-color: $normal-text-color !default;
+$chart-crosshair-shared-tooltip-background: $base !default;
+$chart-crosshair-shared-tooltip-border: rgba(0, 0, 0, .08) !default;
+
 @include exports('charts/theme') {
     // Exported variables
     .k-var--chart-font-s {
@@ -50,14 +54,19 @@ $chart-area-opacity: .8 !default;
     }
 
     .k-chart-tooltip {
-        background-repeat: repeat-x;
-        background-position: 0 0;
-        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNJREFUeNpi/P//vwMDFQELEP8beQb+HTWQYgP/DHoD/466cAR4edRAyg38P6hLbIAAAwCnWhhVsxvdCAAAAABJRU5ErkJggg==');
         color: $background;
+        border-radius: $border-radius;
     }
 
     .k-chart-tooltip-inverse {
         color: invert($background);
+    }
+
+    .k-chart-crosshair-tooltip,
+    .k-chart-shared-tooltip {
+        color: $chart-crosshair-shared-tooltip-color;
+        background-color: $chart-crosshair-shared-tooltip-background;
+        border-color: $chart-crosshair-shared-tooltip-border;
     }
 
     .k-selection {
