@@ -19,16 +19,12 @@
 		}
 	}
 	.k-editor-inline {
-		border-width: 0;
+		border-width: 2px;
 		padding: $padding-y-sm $padding-x-sm;
 		word-wrap: break-word;
 		overflow: auto;
 		border-radius: $border-radius;
 		background: none;
-	}
-	.k-editor-inline.k-state-active {
-		padding: calc(#{$padding-y-sm} - 1px) calc(#{$padding-x-sm} - 1px);
-		border-width: 1px;
 	}
 	.k-editortoolbar-dragHandle {
 		float: left;
