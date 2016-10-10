@@ -10,15 +10,17 @@ A SCSS-based theme for Kendo UI components. Currently available for **Kendo UI f
 
 ### As a pre-built theme
 
-Clone the repo and build it via `npm run build`. This will output CSS files in the `dist/` folder. The file `dist/packages/all.css` will contain the complete theme, which can be used in your project.
+This approach is recommended for a simple setup.
+
+Clone the repo and build it via `npm run build`. The file `dist/all.css` will contain the complete theme, which can be used in your project.
 
 ### Via webpack
 
-The `webpackThemeConfig` function from the [@telerik/kendo-common-tasks module](https://github.com/telerik/kendo-common-tasks) embeds the recommended theme configuration options in a given webpack config. See a preconfigured [webpack.config.js for React](examples/react/webpack.config.js).
+For a runnable example of how to load the theme, see the [angular dashboard demo application](https://github.com/telerik/ng2-dashboard).
 
 ### With Kendo UI jQuery
 
-Use with the jQuery widgets is currently **not supported**, as this theme is focused on the React / Angular 2 offering, and requires changes in order to work with the jQuery widgets.
+Use with the jQuery widgets is **currently not supported**, as this theme is focused on the React / Angular 2 offering, and requires changes in order to work with the jQuery widgets.
 
 ## Customization
 
@@ -30,4 +32,4 @@ Styles are split into components, and dependencies are managed by the [`import-o
 
 During development, the SCSS files are linted on every `commit` and built at `push`. The theme package can be tested against a component by linking the theme in the components package.
 
-Class names are prefixed with `k-` during builds. Browser-specific properties are generated via [PostCSS autoprefixer](https://github.com/postcss/autoprefixer).
+Upon build, browser-specific properties are generated via [PostCSS autoprefixer](https://github.com/postcss/autoprefixer).
