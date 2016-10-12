@@ -3,12 +3,22 @@
 $chart-tap-highlight-color: rgba(0, 0, 0, 0);
 $chart-selection-background: rgba(255, 255, 255, .01);
 
-$chart-font-size: 1em !default;
+$chart-font-size: $base-font-size !default;
 $chart-tooltip-font-size: .929em !default;
 $chart-label-font-size: .857em !default;
 $chart-title-font-size: 1.143em !default;
 
 @include exports('charts/layout') {
+    // Exported variables
+    .k-var--chart-title-font {
+        font-size: $chart-title-font-size;
+    }
+
+    .k-var--chart-label-font {
+        font-size: $chart-label-font-size;
+    }
+
+    // Elements
     .k-chart,
     .k-sparkline,
     .k-stockchart {
@@ -18,6 +28,8 @@ $chart-title-font-size: 1.143em !default;
 
     .k-chart,
     .k-stockchart {
+        font-size: $chart-font-size;
+        font-family: $base-font-family;
         display: block;
         height: 400px;
     }

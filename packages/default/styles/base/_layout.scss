@@ -14,8 +14,8 @@ html {
 }
 
 .k-widget {
-    font-size: 14px;
-    font-family: inherit;
+    font-size: $base-font-size;
+    font-family: $base-font-family;
 }
 
 .k-textbox > input,

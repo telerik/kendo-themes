@@ -3,8 +3,8 @@
 @import './layout';
 
 $chart-inactive: $disabled-border-color !default;
-$chart-major-lines: darken($base, 30%) !default;
-$chart-minor-lines: darken($base, 20%) !default;
+$chart-major-lines: rgba(0, 0, 0, .08) !default;
+$chart-minor-lines: rgba(0, 0, 0, .08) !default;
 
 $chart-font-size-s: 11px !default;
 $chart-font-size-m: 12px !default;
