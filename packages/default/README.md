@@ -8,23 +8,19 @@ A SCSS-based theme for Kendo UI components. Currently available for **Kendo UI f
 
 ## Usage
 
-### As a pre-built theme
+### With Kendo UI for Angular 2 / React
 
-This approach is recommended for a simple setup.
-
-Clone the repo and build it via `npm run build`. The file `dist/all.css` will contain the complete theme, which can be used in your project.
-
-### Via webpack
-
-For a runnable example of how to load the theme, see the [angular dashboard demo application](https://github.com/telerik/ng2-dashboard).
+See [`docs/index.md`](docs/index.md) for more information.
 
 ### With Kendo UI jQuery
 
-Use with the jQuery widgets is **currently not supported**, as this theme is focused on the React / Angular 2 offering, and requires changes in order to work with the jQuery widgets.
+Use with the jQuery widgets is **currently not supported**, but is planned for future versions of the theme.
 
 ## Customization
 
 The theme can be customized in one swoop via the colors defined in the [`styles/_variables.scss` file](styles/_variables.scss). Any change in this file is propagated to every component. To style specific components, use the variables used in their specific scss file.
+
+The theme can be built via `npm run build`. The file `dist/all.css` will contain the complete theme, which can be used in your project.
 
 ## Development
 
