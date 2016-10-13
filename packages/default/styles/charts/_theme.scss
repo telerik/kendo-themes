@@ -22,6 +22,8 @@ $chart-notes-background: rgba(0, 0, 0, .5) !default;
 $chart-notes-border: rgba(0, 0, 0, .5) !default;
 $chart-notes-lines: rgba(0, 0, 0, .5) !default;
 
+$error-bars-background: rgba(0, 0, 0, .5) !default;
+
 @include exports('charts/theme') {
     // Exported variables
     .k-var--chart-font-s {
@@ -70,6 +72,10 @@ $chart-notes-lines: rgba(0, 0, 0, .5) !default;
 
     .k-var--chart-crosshair-background {
         background-color: $chart-crosshair-background;
+    }
+
+    .k-var--chart-error-bars-background {
+        background-color: $error-bars-background;
     }
 
     // Elements
