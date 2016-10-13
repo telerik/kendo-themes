@@ -10,6 +10,10 @@ $chart-title-font-size: 1.143em !default;
 
 @include exports('charts/layout') {
     // Exported variables
+    .k-var--chart-font {
+        font-size: $chart-font-size;
+    }
+
     .k-var--chart-title-font {
         font-size: $chart-title-font-size;
     }
