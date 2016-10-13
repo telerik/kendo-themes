@@ -22,8 +22,6 @@ $window-z-index: 10001;
 }
 
 $icon-sizing-factor: (.875 / .6);
-$icon-size: .6em;
-$icon-width: 1em * $icon-sizing-factor;
 
 .k-window-titlebar {
     font-size: 1.286em;
@@ -39,7 +37,7 @@ $icon-width: 1em * $icon-sizing-factor;
     .k-window-actions {
         line-height: $window-titlebar-size;
         position: absolute;
-        right: .4em;
+        right: 0;
         top: 0;
         white-space: nowrap;
     }
@@ -48,23 +46,24 @@ $icon-width: 1em * $icon-sizing-factor;
         cursor: pointer;
         display: inline-block;
         border: 0;
-        padding: 1em;
-        font-size: $icon-size;
-        width: $icon-width;
         text-decoration: none;
         text-align: center;
         vertical-align: middle;
+        box-sizing: border-box;
+        padding: 0;
+        width: $window-titlebar-size;
+        line-height: inherit;
 
         .k-icon {
             margin: 0;
-            vertical-align: top;
+            vertical-align: middle;
         }
 
         &:hover,
         &:focus {
-            padding: (1em / $icon-sizing-factor);
-            font-size: ($icon-size * $icon-sizing-factor);
-            width: ($icon-width / $icon-sizing-factor);
+            .k-icon {
+                font-size: ($icon-size * $icon-sizing-factor);
+            }
         }
     }
 }
