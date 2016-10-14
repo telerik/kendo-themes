@@ -1,11 +1,13 @@
 ---
 title: Overview
-description: "Use themes to style your project with Kendo UI for Angular 2."
+description: "Use themes to style the appearance of your project with Kendo UI for Angular 2."
+slug: themesandstyles_kendouiforangular
+position: 1
 ---
 
 # Themes & Styling
 
-Kendo UI for Angular 2 provides two main options to include the Kendo UI theme in your project. You can either use a precompiled theme that styles all components or load the theme source files through Webpack to modify and customize its styles.
+Kendo UI for Angular 2 provides two main options to include the Kendo UI theme in your project. You can either use a precompiled theme that styles all components, or load the theme source files through Webpack to modify and customize its styles.
 
 ## Install Themes
 
@@ -102,4 +104,3 @@ For a working demo that shows this approach, see the [ng2-dashboard sample app](
 
 * [Get Started with Kendo UI for Angular 2]({% slug getting_started_kendouiforangular %})
 * [Browse the Components](http://www.telerik.com/kendo-angular-ui/components)
-
