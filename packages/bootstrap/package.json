@@ -47,6 +47,9 @@
       "maxSubjectLength": 100
     }
   },
+  "dependencies": {
+    "@telerik/kendo-theme-default": "git://github.com/telerik/kendo-theme-default.git#v2"
+  },
   "devDependencies": {
     "@telerik/kendo-common-tasks": "^2.0.0",
     "cz-conventional-changelog": "^1.1.5",
