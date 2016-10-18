@@ -1,0 +1,14 @@
+@include exports("mediaplayer/theme") {
+
+	// Theme
+	.k-mediaplayer {}
+
+
+	// Title bar
+	.k-mediaplayer-titlebar {
+		color: $panel-bg;
+		background-image: linear-gradient( rgba( $panel-color, .7 ), rgba( $panel-color, 0 ) );
+		// text-shadow: 0 0 1px $panel-color;
+	}
+
+}
