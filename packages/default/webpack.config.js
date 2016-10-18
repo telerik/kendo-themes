@@ -33,7 +33,7 @@ var entries =
             return entries;
         }, {});
 
-const port = process.env.PORT || 3000;
+const port = parseInt(process.env.PORT || 3000);
 const devServerPort = port + 1;
 
 /*
