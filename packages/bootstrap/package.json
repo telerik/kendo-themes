@@ -47,6 +47,9 @@
       "maxSubjectLength": 100
     }
   },
+  "peerDependencies": {
+    "bootstrap": "git://github.com/twbs/bootstrap.git#v4-dev"
+  },
   "dependencies": {
     "@telerik/kendo-theme-default": "git://github.com/telerik/kendo-theme-default.git#v2"
   },
