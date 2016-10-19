@@ -1,3 +1,12 @@
-@import "utils/all";
-@import "helpers/all";
-@import "appearance/all";
+// Core
+@import "../../node_modules/@telerik/kendo-theme-default/src/mixins/import-once";
+@import "../../node_modules/@telerik/kendo-theme-default/src/mixins/placeholder-selectors";
+
+
+// Utils
+@import "../../node_modules/@telerik/kendo-theme-default/src/mixins/decoration";
+@import "../../node_modules/@telerik/kendo-theme-default/src/mixins/compact";
+
+
+// Appearance
+@import "../../node_modules/@telerik/kendo-theme-default/src/mixins/all";
