@@ -10,8 +10,8 @@
 
 		> .k-i-close {
 			position: absolute;
-			top: $alert-padding-y;
-			right: $alert-padding-x;
+			top: $alert-padding-y * 1.25;
+			right: $alert-padding-x * .75;
 			display: none;
 		}
 		.k-notification-button & .k-i-close {
