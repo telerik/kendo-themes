@@ -1,5 +1,6 @@
 @import '../mixins/import-once';
-$icon-size: 16px;
+$icon-size: 16px !default;
+$icon-font-dir: './../icons/font/' !default;
 
 @include exports('icons') {
 
@@ -7,7 +8,7 @@ $icon-size: 16px;
     font-family: 'KendoUIGlyphs';
     font-style: normal;
     font-weight: normal;
-    src: url('./../icons/font/KendoUIGlyphs.woff') format('woff');
+    src: url('#{$icon-font-dir}KendoUIGlyphs.woff') format('woff');
 }
 
 .k-icon {
