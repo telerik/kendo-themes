@@ -17,7 +17,6 @@ $chart-crosshair-shared-tooltip-color: $normal-text-color !default;
 $chart-crosshair-shared-tooltip-background: $base !default;
 $chart-crosshair-shared-tooltip-border: rgba(0, 0, 0, .08) !default;
 
-$chart-notes-color: $background !default;
 $chart-notes-background: rgba(0, 0, 0, .5) !default;
 $chart-notes-border: rgba(0, 0, 0, .5) !default;
 $chart-notes-lines: rgba(0, 0, 0, .5) !default;
@@ -52,10 +51,6 @@ $error-bars-background: rgba(0, 0, 0, .5) !default;
 
     .k-var--chart-area-opacity {
         opacity: $chart-area-opacity;
-    }
-
-    .k-var--chart-notes-color {
-        background-color: $chart-notes-color;
     }
 
     .k-var--chart-notes-background {
