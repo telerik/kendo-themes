@@ -6,10 +6,6 @@ $chart-inactive: $disabled-border-color !default;
 $chart-major-lines: rgba(0, 0, 0, .08) !default;
 $chart-minor-lines: rgba(0, 0, 0, .08) !default;
 
-$chart-font-size-s: 11px !default;
-$chart-font-size-m: 12px !default;
-$chart-font-size-l: 16px !default;
-
 $chart-area-opacity: .8 !default;
 
 $chart-crosshair-background: rgba(0, 0, 0, .5) !default;
@@ -25,18 +21,6 @@ $error-bars-background: rgba(0, 0, 0, .5) !default;
 
 @include exports('charts/theme') {
     // Exported variables
-    .k-var--chart-font-s {
-        font-size: $chart-font-size-s;
-    }
-
-    .k-var--chart-font-m {
-        font-size: $chart-font-size-m;
-    }
-
-    .k-var--chart-font-l {
-        font-size: $chart-font-size-l;
-    }
-
     .k-var--chart-inactive {
         background-color: $chart-inactive;
     }
