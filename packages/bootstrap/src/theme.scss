@@ -3,6 +3,9 @@
 @import "variables";
 @import "mixins/all";
 
+// Use variable defaults from Default theme, if undefined
+@import "../node_modules/@telerik/kendo-theme-default/src/variables";
+
 // Dependencies
 @import "common/base";
 @import "common/icons";
