@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "sass-lint -v -c ./sass-lint.yml",
     "start": "webpack-dev-server",
-    "build": "webpack",
+    "build": "webpack --optimize-minimize --bail",
     "test": "npm run lint && npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
