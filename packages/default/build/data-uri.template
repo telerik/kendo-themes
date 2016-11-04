@@ -1,0 +1,7 @@
+@import '../../mixins/import-once';
+@import '../../mixins/data-uri';
+
+@include exports('<FILENAME>') {
+  @include register-data-uri('<FILENAME>', 'data:<MIME>;base64,<BASE64>')
+}
+

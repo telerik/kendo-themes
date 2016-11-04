@@ -1,6 +1,8 @@
 @import '../base/states';
 @import '../button/theme';
 @import './layout';
+@import './images/slider-h';
+@import './images/slider-v';
 
 $slider-trackbackground-color: darken($background, 10%) !default;
 $slider-selection-background-color: $accent !default;
@@ -84,10 +86,10 @@ $slider-button-focused-box-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 }
 
 .k-slider-horizontal .k-tick {
-    background-image: url('./../slider/images/slider-h.gif');
+    background-image: embed-url('slider-h.gif');
 }
 
 .k-slider-vertical .k-tick {
-    background-image: url('./../slider/images/slider-v.gif');
+    background-image: embed-url('slider-v.gif');
 }
 }

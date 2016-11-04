@@ -1,5 +1,6 @@
 @import './layout';
 @import './../base/states';
+@import './images/indeterminate';
 
 $progressbar-base: $base !default;
 $progressbar-border: rgba(0, 0, 0, .08) !default;
@@ -21,7 +22,7 @@ $progressbar-active-border: darken($accent, 4%) !default;
     }
 
     .k-progressbar-indeterminate {
-        background: url('./../progressbar/images/indeterminate.gif');
+        background: embed-url('indeterminate.gif');
 
         .k-progress-status-wrap,
         .k-state-selected {

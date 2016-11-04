@@ -1,0 +1,29 @@
+$data-uris: () !default;
+
+/// Mixin register-data-uri
+/// This mixin registers a data URI that can be used instead of a file reference
+/// @access public
+/// @param {String} $name - The name of the resource
+/// @param {String} $content - The data URI of the resource
+/// @require $data-uris
+@mixin register-data-uri($name, $content) {
+    @if (map-has-key($data-uris, $name)) {
+        @warn "Attempt to redefine data URI of file `#{$name}`.";
+    }
+
+    $data-uris: map-merge($data-uris, ($name: $content)) !global;
+}
+
+/// Function embed-url
+/// This function outputs the url() to a data URI for a file registered via the `register-data-uri` mixin
+/// @access public
+/// @param {String} $name - The name of the resource
+/// @require $data-uris
+@function embed-url($name) {
+    @if (map-has-key($data-uris, $name)) {
+
+      @return url(map-get($data-uris, $name));
+    } @else {
+      @error "Data URI for file `#{$name}` does not exist. Perhaps you need to run `npm run embed-assets`?";
+    }
+}

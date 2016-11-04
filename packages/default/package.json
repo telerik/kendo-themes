@@ -10,6 +10,7 @@
     "lint": "sass-lint -v -c ./sass-lint.yml",
     "start": "webpack-dev-server",
     "build": "webpack --optimize-minimize --bail",
+    "embed-assets": "node build/embed-assets.js",
     "test": "npm run lint && npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -21,6 +22,7 @@
     "cz-conventional-changelog": "^1.1.5",
     "ghooks": "^1.0.3",
     "glob": "^7.0.5",
+    "mime": "^1.3.4",
     "sass-lint": "^1.7.0",
     "semantic-release": "^4.3.5",
     "validate-commit-msg": "^1.1.1",
