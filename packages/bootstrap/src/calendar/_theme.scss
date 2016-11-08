@@ -33,6 +33,12 @@
             @include appearance( header );
         }
         .k-content td {}
+        .k-content .k-today {
+            color: $accent;
+        }
+        .k-content .k-weekend {
+            background: darken( $widget-bg, 5 );
+        }
         .k-content .k-state-hover {
             @include appearance( hovered-node );
         }
