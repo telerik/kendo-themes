@@ -1,235 +1,230 @@
+// Font size
+$font-size: $font-size-base !default;
+$font-size-xs: $font-size-xs !default;
+$font-size-sm: $font-size-sm !default;
+$font-size-lg: $font-size-lg !default;
+
+$line-height: $line-height-base !default;
+$line-height-sm: $line-height-sm !default;
+$line-height-lg: $line-height-lg !default;
+$line-height-em: $line-height * 1em !default;
+$line-height-rem: $line-height * 1rem !default;
+
+
 // Metrics
-$spacer: get-bootstrap-var( spacer );
-$spacer-x: get-bootstrap-var( spacer-x );
-$spacer-y: get-bootstrap-var( spacer-y );
+$spacer: $spacer !default;
+$spacer-x: $spacer-x !default;
+$spacer-y: $spacer-y !default;
 
-$padding-x: $spacer;
-$padding-y: $spacer / 2;
-$padding-x-sm: $padding-x / 2;
-$padding-y-sm: $padding-y / 2;
-$padding-x-lg: $padding-x * 1.5;
-$padding-y-lg: $padding-y * 1.5;
+$padding-x: $spacer !default;
+$padding-y: $spacer / 2 !default;
+$padding-x-sm: $padding-x / 2 !default;
+$padding-y-sm: $padding-y / 2 !default;
+$padding-x-lg: $padding-x * 1.5 !default;
+$padding-y-lg: $padding-y * 1.5 !default;
 
-$border-radius: get-bootstrap-var( border-radius );
-$border-radius-sm: get-bootstrap-var( border-radius-sm );
-$border-radius-lg: get-bootstrap-var( border-radius-lg );
+$border-radius: $border-radius !default;
+$border-radius-sm: $border-radius-sm !default;
+$border-radius-lg: $border-radius-lg !default;
 
-$font-size: get-bootstrap-var( font-size );
-$font-size-xs: get-bootstrap-var( font-size-xs );
-$font-size-sm: get-bootstrap-var( font-size-sm );
-$font-size-lg: get-bootstrap-var( font-size-lg );
+$panel-padding-x: $card-spacer-x !default;
+$panel-padding-y: $card-spacer-y !default;
 
-$line-height: get-bootstrap-var( line-height );
-$line-height-sm: get-bootstrap-var( line-height-sm );
-$line-height-lg: get-bootstrap-var( line-height-lg );
-$line-height-em: $line-height * 1em;
-$line-height-rem: $line-height * 1rem;
+$popup-padding-x: null !default;
+$popup-padding-y: $dropdown-padding-y !default;
 
-$panel-padding-x: get-bootstrap-var( panel-padding-x );
-$panel-padding-y: get-bootstrap-var( panel-padding-y );
+$header-padding-x: $card-spacer-x !default;
+$header-padding-y: $card-spacer-y !default;
 
-$popup-padding-x: get-bootstrap-var( popup-padding-x );
-$popup-padding-y: get-bootstrap-var( popup-padding-y );
+$form-line-height: $btn-line-height !default;
+$form-line-height-em: $form-line-height * 1em !default;
+$form-line-height-rem: $form-line-height * 1rem !default;
 
-$header-padding-x: get-bootstrap-var( header-padding-x );
-$header-padding-y: get-bootstrap-var( header-padding-y );
+$button-padding-x: $btn-padding-x !default;
+$button-padding-y: $btn-padding-y !default;
+$button-padding-x-sm: $btn-padding-x-sm !default;
+$button-padding-y-sm: $btn-padding-y-sm !default;
 
-$form-line-height: get-bootstrap-var( form-line-height );
-$form-line-height-em: $form-line-height * 1em;
-$form-line-height-rem: $form-line-height * 1rem;
+$input-padding-x: $input-padding-x !default;
+$input-padding-y: $input-padding-y !default;
+$input-padding-x-sm: $input-padding-x-sm !default;
+$input-padding-y-sm: $input-padding-y-sm !default;
 
-$button-padding-x: get-bootstrap-var( button-padding-x );
-$button-padding-y: get-bootstrap-var( button-padding-y );
-$button-padding-x-sm: get-bootstrap-var( button-padding-x-sm );
-$button-padding-y-sm: get-bootstrap-var( button-padding-y-sm );
+$table-alt-bg: $table-bg-accent !default;
+$table-hover-bg: $table-bg-hover !default;
+$table-active-bg: $table-bg-active !default;
 
-$input-padding-x: get-bootstrap-var( input-padding-x );
-$input-padding-y: get-bootstrap-var( input-padding-y );
-$input-padding-x-sm: get-bootstrap-var( input-padding-x-sm );
-$input-padding-y-sm: get-bootstrap-var( input-padding-y-sm );
-
-$table-alt-bg: get-bootstrap-var( table-alt-bg );
-$table-hover-bg: get-bootstrap-var( table-hover-bg );
-$table-active-bg: get-bootstrap-var( table-active-bg );
-
-$cell-padding-x: $padding-x-sm;
-$cell-padding-y: $padding-y-sm;
-$cell-padding: get-bootstrap-var( cell-padding );
-$cell-padding-sm: get-bootstrap-var( cell-padding-sm );
+$cell-padding-x: $padding-x-sm !default;
+$cell-padding-y: $padding-y-sm !default;
+$cell-padding: $table-cell-padding !default;
+$cell-padding-sm: $table-sm-cell-padding !default;
 
 
+// Theme colors
+$accent: $component-active-bg !default;
+$accent-contrast: $component-active-color !default;
+
+$text-color: $body-color !default;
+$bg-color: $body-bg !default;
+$border-color: darken( $bg-color, 12% ) !default;
+
+$base-text: $btn-secondary-color !default;
+$base-bg: $btn-secondary-bg !default;
+$base-border: darken( $base-bg, 12% ) !default;
+
+$hovered-text: $base-text !default;
+$hovered-bg: darken( $base-bg, 10% ) !default;
+$hovered-border: darken( $base-border, 12% ) !default;
+
+$selected-text: $accent-contrast !default;
+$selected-bg: $accent !default;
+$selected-border: darken( $selected-bg, 12% ) !default;
+
+$transition: background-color .2s ease !default;
+
+$success: $brand-success !default;
+$info: $brand-info !default;
+$warning: $brand-warning !default;
+$error: $brand-danger !default;
 
 
-// Chart
-$series-a: #ff6358;
-$series-b: #ffd246;
-$series-c: #78d237;
-$series-d: #28b4c8;
-$series-e: #2d73f5;
-$series-f: #aa46be;
-$chart-font-size-sm: 11px;
-$chart-font-size-md: 12px;
-$chart-font-size-lg: 16px;
-
-$chart-inactive: rgba( get-bootstrap-var( panel-border ), .5 );
-$chart-major-lines: darken( get-bootstrap-var( header-bg ), 30% );
-$chart-minor-lines: darken( get-bootstrap-var( header-bg ), 20% );
-
-$chart-area-opacity: .8;
 
 
-// Interactive states
-$brand-primary: get-bootstrap-var( brand-primary );
-$brand-success: get-bootstrap-var( brand-success );
-$brand-info: get-bootstrap-var( brand-info );
-$brand-warning: get-bootstrap-var( brand-warning );
-$brand-error: get-bootstrap-var( brand-error );
+// Widget
+$widget-text: $text-color !default;
+$widget-bg: $bg-color !default;
+$widget-border: $border-color !default;
 
 
 // Panel
-$panel-color: get-bootstrap-var( panel-color );
-$panel-bg: get-bootstrap-var( panel-bg );
-$panel-border: get-bootstrap-var( panel-border );
+$panel-text: $widget-text !default;
+$panel-bg: $widget-bg !default;
+$panel-border: $widget-border !default;
 
 // Popup
-$popup-color: get-bootstrap-var( popup-color );
-$popup-bg: get-bootstrap-var( popup-bg );
-$popup-border: get-bootstrap-var( popup-border );
+$popup-text: $panel-text !default;
+$popup-bg: $panel-bg !default;
+$popup-border: $panel-border !default;
 
 
 // Header
-$header-color: get-bootstrap-var( header-color );
-$header-bg: get-bootstrap-var( header-bg );
-$header-border: get-bootstrap-var( header-border );
-$header-gradient: null;
+$header-text: $body-color !default;
+$header-bg: $card-cap-bg !default;
+$header-border: $card-border-color !default;
+$header-gradient: null !default;
 
 	// Hovered header
-	$header-hovered-color: get-bootstrap-var( header-hovered-color );
-	$header-hovered-bg: get-bootstrap-var( header-hovered-bg );
-	$header-hovered-border: get-bootstrap-var( header-hovered-border );
-	$header-hovered-gradient: null;
+	$header-hovered-text: $header-text !default;
+	$header-hovered-bg: darken( $header-bg, 10% ) !default;
+	$header-hovered-border: darken( $header-border, 12 ) !default;
+	$header-hovered-gradient: null !default;
 
 	// Selected header
-	$header-selected-color: get-bootstrap-var( header-selected-color );
-	$header-selected-bg: get-bootstrap-var( header-selected-bg );
-	$header-selected-border: get-bootstrap-var( header-selected-border );
-	$header-selected-gradient: null;
-
-	// Disabled header
-	$header-disabled-color: get-bootstrap-var( header-disabled-color );
-	$header-disabled-bg: get-bootstrap-var( header-disabled-bg );
-	$header-disabled-border: get-bootstrap-var( header-disabled-border );
-	$header-disabled-gradient: null;
+	$header-selected-text: $selected-text !default;
+	$header-selected-bg: $selected-bg !default;
+	$header-selected-border: $selected-border !default;
+	$header-selected-gradient: null !default;
 
 
 // Button
-$button-color: get-bootstrap-var( button-color );
-$button-bg: get-bootstrap-var( button-bg );
-$button-border: get-bootstrap-var( button-border );
-$button-gradient: null;
+$button-text: $base-text !default;
+$button-bg: $base-bg !default;
+$button-border: $base-border !default;
+$button-gradient: null !default;
 
 	// Hovered button
-	$button-hovered-color: get-bootstrap-var( button-hovered-color );
-	$button-hovered-bg: get-bootstrap-var( button-hovered-bg );
-	$button-hovered-border: get-bootstrap-var( button-hovered-border );
-	$button-hovered-gradient: null;
+	$button-hovered-text: $button-text !default;
+	$button-hovered-bg: darken( $button-bg, 10% ) !default;
+	$button-hovered-border: darken( $button-border, 12% ) !default;
+	$button-hovered-gradient: null !default;
 
-	// Active button
-	$button-active-color: get-bootstrap-var( button-active-color );
-	$button-active-bg: get-bootstrap-var( button-active-bg );
-	$button-active-border: get-bootstrap-var( button-active-border );
-	$button-active-gradient: null;
-
-	// Disabled button
-	$button-disabled-color: get-bootstrap-var( button-disabled-color );
-	$button-disabled-bg: get-bootstrap-var( button-disabled-bg );
-	$button-disabled-border: get-bootstrap-var( button-disabled-border );
-	$button-disabled-gradient: null;
+	// Pressed button
+	$button-pressed-text: $button-text !default;
+	$button-pressed-bg: darken( $button-bg, 17% ) !default;
+	$button-pressed-border: darken( $button-border, 25% ) !default;
+	$button-pressed-gradient: null !default;
 
 
 // Primary button
-$primary-button-color: get-bootstrap-var( primary-button-color );
-$primary-button-bg: get-bootstrap-var( primary-button-bg );
-$primary-button-border: get-bootstrap-var( primary-button-border );
-$primary-button-gradient: null;
+$primary-button-text: $component-active-color !default;
+$primary-button-bg: $component-active-bg !default;
+$primary-button-border: $primary-button-bg !default;
+$primary-button-gradient: null !default;
 
 	// Primary hovered button
-	$primary-button-hovered-color: get-bootstrap-var( primary-button-hovered-color );
-	$primary-button-hovered-bg: get-bootstrap-var( primary-button-hovered-bg );
-	$primary-button-hovered-border: get-bootstrap-var( primary-button-hovered-border );
-	$primary-button-hovered-gradient: null;
+	$primary-button-hovered-text: $primary-button-text !default;
+	$primary-button-hovered-bg: darken( $primary-button-bg, 10% ) !default;
+	$primary-button-hovered-border: darken( $primary-button-border, 12% ) !default;
+	$primary-button-hovered-gradient: null !default;
 
-	// Primary active button
-	$primary-button-active-color: get-bootstrap-var( primary-button-active-color );
-	$primary-button-active-bg: get-bootstrap-var( primary-button-active-bg );
-	$primary-button-active-border: get-bootstrap-var( primary-button-active-border );
-	$primary-button-active-gradient: null;
-
-	// Primary disabled button
-	$primary-button-disabled-color: get-bootstrap-var( primary-button-disabled-color );
-	$primary-button-disabled-bg: get-bootstrap-var( primary-button-disabled-bg );
-	$primary-button-disabled-border: get-bootstrap-var( primary-button-disabled-border );
-	$primary-button-disabled-gradient: null;
+	// Primary pressed button
+	$primary-button-pressed-text: $primary-button-text !default;
+	$primary-button-pressed-bg: darken( $primary-button-bg, 17% ) !default;
+	$primary-button-pressed-border: darken( $primary-button-border, 25% ) !default;
+	$primary-button-pressed-gradient: null !default;
 
 
 // Input
-$input-color: get-bootstrap-var( input-color );
-$input-bg: get-bootstrap-var( input-bg );
-$input-border: get-bootstrap-var( input-border );
+$input-text: $gray !default;
+$input-bg: $body-bg !default;
+$input-border: $button-border !default;
 
 	// Hovered input
-	$input-hovered-color: get-bootstrap-var( input-hovered-color );
-	$input-hovered-bg: get-bootstrap-var( input-hovered-bg );
-	$input-hovered-border: get-bootstrap-var( input-hovered-border );
+	$input-hovered-text: $input-text !default;
+	$input-hovered-bg: $input-bg !default;
+	$input-hovered-border: $hovered-border !default;
 
-	// Active input
-	$input-active-color: get-bootstrap-var( input-active-color );
-	$input-active-bg: get-bootstrap-var( input-active-bg );
-	$input-active-border: get-bootstrap-var( input-active-border );
-
-	// Disabled input
-	$input-disabled-color: get-bootstrap-var( input-disabled-color );
-	$input-disabled-bg: get-bootstrap-var( input-disabled-bg );
-	$input-disabled-border: get-bootstrap-var( input-disabled-border );
+	// Focused input
+	$input-focused-text: $input-text !default;
+	$input-focused-bg: $input-bg !default;
+	$input-focused-border: $selected-border !default;
 
 
 // Node
-$node-color: get-bootstrap-var( node-color );
-$node-bg: get-bootstrap-var( node-bg );
-$node-border: get-bootstrap-var( node-border );
-$node-gradient: null;
+$node-text: $base-text !default;
+$node-bg: $base-bg !default;
+$node-border: $base-border !default;
+$node-gradient: null !default;
 
 	// Hovered node
-	$node-hovered-color: get-bootstrap-var( node-hovered-color );
-	$node-hovered-bg: get-bootstrap-var( node-hovered-bg );
-	$node-hovered-border: get-bootstrap-var( node-hovered-border );
-	$node-hovered-gradient: null;
+	$node-hovered-text: $hovered-text !default;
+	$node-hovered-bg: $hovered-bg !default;
+	$node-hovered-border: $hovered-border !default;
+	$node-hovered-gradient: null !default;
 
 	// Selected node
-	$node-selected-color: get-bootstrap-var( node-selected-color );
-	$node-selected-bg: get-bootstrap-var( node-selected-bg );
-	$node-selected-border: get-bootstrap-var( node-selected-border );
-	$node-selected-gradient: null;
-
-	// Disabled node
-	$node-disabled-color: get-bootstrap-var( node-disabled-color );
-	$node-disabled-bg: get-bootstrap-var( node-disabled-bg );
-	$node-disabled-border: get-bootstrap-var( node-disabled-border );
-	$node-disabled-gradient: null;
+	$node-selected-text: $selected-text !default;
+	$node-selected-bg: $selected-bg !default;
+	$node-selected-border: $selected-border !default;
+	$node-selected-gradient: null !default;
 
 
 // List item
-$list-item-color: get-bootstrap-var( list-item-color );
-$list-item-bg: get-bootstrap-var( list-item-bg );
+$list-item-text: $node-text !default;
+$list-item-bg: $node-bg !default;
 
 	// Hovered list item
-	$list-item-hovered-color: get-bootstrap-var( list-item-hovered-color );
-	$list-item-hovered-bg: get-bootstrap-var( list-item-hovered-bg );
+	$list-item-hovered-text: $node-hovered-text !default;
+	$list-item-hovered-bg: $node-hovered-bg !default;
 
 	// Selected list item
-	$list-item-selected-color: get-bootstrap-var( list-item-selected-color );
-	$list-item-selected-bg: get-bootstrap-var( list-item-selected-bg );
+	$list-item-selected-text: $node-selected-text !default;
+	$list-item-selected-bg: $node-selected-bg !default;
 
-	// Disabled list item
-	$list-item-disabled-color: get-bootstrap-var( list-item-disabled-color );
-	$list-item-disabled-bg: get-bootstrap-var( list-item-disabled-bg );
+
+// Chart
+$series-a: #ff6358 !default;
+$series-b: #ffd246 !default;
+$series-c: #78d237 !default;
+$series-d: #28b4c8 !default;
+$series-e: #2d73f5 !default;
+$series-f: #aa46be !default;
+$chart-font-size-sm: 11px !default;
+$chart-font-size-md: 12px !default;
+$chart-font-size-lg: 16px !default;
+
+$chart-inactive: rgba( $widget-bg, .5 ) !default;
+$chart-major-lines: darken( $widget-border, 30% ) !default;
+$chart-minor-lines: darken( $widget-border, 20% ) !default;
+
+$chart-area-opacity: .8 !default;

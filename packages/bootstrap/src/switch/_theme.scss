@@ -22,7 +22,7 @@
 	.km-switch-container {
 		@include border-radius( $border-radius );
 		border-color: $button-border;
-		color: $button-color;
+		color: $button-text;
 	}
 	.k-switch-handle,
 	.km-switch-handle {
@@ -32,7 +32,7 @@
 	}
 	.k-switch-label-on,
 	.km-switch-label-on {
-		color: $primary-button-color;
+		color: $primary-button-text;
 	}
 
 }

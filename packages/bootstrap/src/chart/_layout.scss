@@ -145,23 +145,23 @@
 
 	// export variables to allow use in scripts
 	$exported: (
-		accent: $brand-primary,
-		base: $header-bg,
-		background: $panel-bg,
+		accent: $accent,
+		base: $base-bg,
+		background: $widget-bg,
 
 		border-radius: $border-radius,
 
-		normal-background: $node-bg,
-		normal-text-color: $node-color,
-		hover-background: $node-hovered-bg,
-		hover-text-color: $node-hovered-color,
-		selected-background: $node-selected-bg,
-		selected-text-color: $node-selected-color,
+		normal-background: $base-bg,
+		normal-text-color: $base-text,
+		hover-background: $hovered-bg,
+		hover-text-color: $hovered-text,
+		selected-background: $selected-bg,
+		selected-text-color: $selected-text,
 
-		success: $brand-success,
-		info: $brand-info,
-		warning: $brand-warning,
-		error: $brand-error,
+		success: $success,
+		info: $info,
+		warning: $warning,
+		error: $error,
 
 		series-a: $series-a,
 		series-b: $series-b,
