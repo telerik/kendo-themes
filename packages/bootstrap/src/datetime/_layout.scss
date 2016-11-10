@@ -1,75 +1,75 @@
 @include exports("datetime/layout") {
 
-	// Datepicker
-	.k-datepicker {
-		border-width: 0;
-		line-height: $form-line-height;
-		display: inline-block;
-		vertical-align: middle;
+    // Datepicker
+    .k-datepicker {
+        border-width: 0;
+        line-height: $form-line-height;
+        display: inline-block;
+        vertical-align: middle;
 
 
-		// Compact
-		@include compact {
+        // Compact
+        @include compact {
 
-			.k-input {
-				padding: $input-padding-y-sm $input-padding-x-sm;
-			}
+            .k-input {
+                padding: $input-padding-y-sm $input-padding-x-sm;
+            }
 
-			.k-select {
-				padding: $button-padding-y-sm;
-			}
-		}
-	}
+            .k-select {
+                padding: $button-padding-y-sm;
+            }
+        }
+    }
 
-	// Timepicker
-	.k-timepicker {
-		border-width: 0;
-		line-height: $form-line-height;
-		display: inline-block;
-		vertical-align: middle;
-
-
-		// Compact
-		@include compact {
-
-			.k-input {
-				padding: $input-padding-y-sm $input-padding-x-sm;
-			}
-
-			.k-select {
-				padding: $button-padding-y-sm;
-			}
-		}
-	}
-
-	// Datetimepicker
-	.k-datetimepicker {
-		border-width: 0;
-		line-height: $form-line-height;
-		display: inline-block;
-		vertical-align: middle;
+    // Timepicker
+    .k-timepicker {
+        border-width: 0;
+        line-height: $form-line-height;
+        display: inline-block;
+        vertical-align: middle;
 
 
-		.k-select {
-			padding: 0;
+        // Compact
+        @include compact {
 
-			.k-link {
-				padding: $button-padding-y;
-			}
-		}
+            .k-input {
+                padding: $input-padding-y-sm $input-padding-x-sm;
+            }
+
+            .k-select {
+                padding: $button-padding-y-sm;
+            }
+        }
+    }
+
+    // Datetimepicker
+    .k-datetimepicker {
+        border-width: 0;
+        line-height: $form-line-height;
+        display: inline-block;
+        vertical-align: middle;
 
 
-		// Compact
-		@include compact {
+        .k-select {
+            padding: 0;
 
-			.k-input {
-				padding: $input-padding-y-sm $input-padding-x-sm;
-			}
+            .k-link {
+                padding: $button-padding-y;
+            }
+        }
 
-			.k-select .k-link {
-				padding: $button-padding-y-sm;
-			}
-		}
-	}
+
+        // Compact
+        @include compact {
+
+            .k-input {
+                padding: $input-padding-y-sm $input-padding-x-sm;
+            }
+
+            .k-select .k-link {
+                padding: $button-padding-y-sm;
+            }
+        }
+    }
 
 }

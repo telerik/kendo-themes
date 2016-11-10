@@ -1,33 +1,33 @@
 @include exports("dropdownlist/layout") {
 
-	// Dropdown
-	.k-dropdown {
-		border-width: 0;
-		line-height: $form-line-height;
-		display: inline-block;
-		vertical-align: middle;
+    // Dropdown
+    .k-dropdown {
+        border-width: 0;
+        line-height: $form-line-height;
+        display: inline-block;
+        vertical-align: middle;
 
 
-		.k-input {}
+        .k-input {}
 
-		.k-select {
-			border-width: 0;
-		}
-
-
+        .k-select {
+            border-width: 0;
+        }
 
 
-		// Compact
-		@include compact {
 
-			.k-input {
-				padding: $input-padding-y-sm $input-padding-x-sm;
-			}
 
-			.k-select {
-				padding: $button-padding-y-sm;
-			}
-		}
-	}
+        // Compact
+        @include compact {
+
+            .k-input {
+                padding: $input-padding-y-sm $input-padding-x-sm;
+            }
+
+            .k-select {
+                padding: $button-padding-y-sm;
+            }
+        }
+    }
 
 }

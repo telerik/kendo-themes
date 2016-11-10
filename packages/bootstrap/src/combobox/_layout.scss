@@ -1,44 +1,44 @@
 @include exports("combobox/layout") {
 
-	// Base
-	.k-combobox {
-		border-width: 0;
-		line-height: $form-line-height;
-		display: inline-block;
-		vertical-align: middle;
+    // Base
+    .k-combobox {
+        border-width: 0;
+        line-height: $form-line-height;
+        display: inline-block;
+        vertical-align: middle;
 
 
-		.k-input {}
+        .k-input {}
 
-		.k-i-close {
-			display: none;
-			align-self: center;
-			position: absolute;
-			// TODO: position [x] correctly
-			top: $input-padding-y;
-			right: $input-padding-y;
-		}
-		.k-state-hover .k-i-close,
-		.k-state-focused .k-i-close {
-			display: block;
-		}
+        .k-i-close {
+            display: none;
+            align-self: center;
+            position: absolute;
+            // TODO: position [x] correctly
+            top: $input-padding-y;
+            right: $input-padding-y;
+        }
+        .k-state-hover .k-i-close,
+        .k-state-focused .k-i-close {
+            display: block;
+        }
 
-		.k-select {}
-
-
+        .k-select {}
 
 
-		// Compact
-		@include compact {
 
-			.k-input {
-				padding: $input-padding-y-sm $input-padding-x-sm;
-			}
 
-			.k-select {
-				padding: $button-padding-y-sm;
-			}
-		}
-	}
+        // Compact
+        @include compact {
+
+            .k-input {
+                padding: $input-padding-y-sm $input-padding-x-sm;
+            }
+
+            .k-select {
+                padding: $button-padding-y-sm;
+            }
+        }
+    }
 
 }

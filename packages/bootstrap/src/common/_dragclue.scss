@@ -1,23 +1,23 @@
 @include exports( "common/dragclue" ) {
 
-	// Layout
-	.k-drag-clue {
-		padding: $padding-y-sm $padding-x-sm;
-		border-width: 1px;
-		border-style: solid;
-		font-size: $font-size-sm;
-		white-space: nowrap;
-		overflow: hidden;
-		cursor: default;
-	}
-	.k-drag-status {
-		margin-right: .4ex;
-	}
+    // Layout
+    .k-drag-clue {
+        padding: $padding-y-sm $padding-x-sm;
+        border-width: 1px;
+        border-style: solid;
+        font-size: $font-size-sm;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: default;
+    }
+    .k-drag-status {
+        margin-right: .4ex;
+    }
 
 
-	// Theme
-	.k-drag-clue {
-		@include appearance( selected-node );
-	}
+    // Theme
+    .k-drag-clue {
+        @include appearance( selected-node );
+    }
 
 }
