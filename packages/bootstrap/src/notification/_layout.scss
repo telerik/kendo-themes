@@ -3,15 +3,15 @@
 	// Base
 	.k-notification {}
 	.k-notification-wrap {
-		padding: $alert-padding;
+		padding: $alert-padding-y $alert-padding-x;
 		white-space: nowrap;
 		cursor: default;
 		position: relative;
 
 		> .k-i-close {
 			position: absolute;
-			top: $alert-padding * 1.25;
-			right: $alert-padding / 2;
+			top: $alert-padding-y;
+			right: $alert-padding-x;
 			display: none;
 		}
 		.k-notification-button & .k-i-close {
