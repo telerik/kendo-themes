@@ -1,0 +1,28 @@
+@include exports("diagram/layout") {
+
+    .k-diagram {
+        height: 600px;
+    }
+
+    .k-diagram .km-scroll-wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .k-diagram .km-scroll-wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .k-canvas-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* IE8- */
+    .k-diagram img {
+        box-sizing: content-box;
+    }
+}
