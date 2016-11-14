@@ -1,7 +1,6 @@
 @import '../base/layout';
 
 $chart-tap-highlight-color: rgba(0, 0, 0, 0);
-$chart-selection-background: rgba(255, 255, 255, .01);
 
 $chart-font-size: $base-font-size !default;
 $chart-tooltip-font-size: .929em !default;
@@ -9,6 +8,9 @@ $chart-label-font-size: .857em !default;
 $chart-title-font-size: 1.143em !default;
 
 @include exports('charts/layout') {
+
+    $selection-handle-size: 22px !default;
+
     // Exported variables
     .k-var--chart-font {
         font-size: $chart-font-size;
@@ -94,20 +96,24 @@ $chart-title-font-size: 1.143em !default;
     .k-selection {
         position: absolute;
         height: 100%;
+        border-width: 1px;
+        border-style: solid;
+        border-bottom: 0;
     }
 
     .k-selection-bg {
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: $chart-selection-background;
     }
 
     .k-handle {
-        width: 7px;
-        height: 26px;
+        width: $selection-handle-size;
+        height: $selection-handle-size;
+        border-width: 1px;
+        border-style: solid;
         z-index: 1;
-        border-radius: 6px;
+        border-radius: 50%;
         position: absolute;
     }
 
@@ -117,11 +123,11 @@ $chart-title-font-size: 1.143em !default;
     }
 
     .k-leftHandle {
-        left: -4px;
+        left: -($selection-handle-size / 2);
     }
 
     .k-rightHandle {
-        right: -4px;
+        right: -($selection-handle-size / 2);
     }
 
     .k-leftHandle div {
@@ -152,6 +158,20 @@ $chart-title-font-size: 1.143em !default;
         width: 1px;
         height: 100%;
         position: absolute;
+    }
+
+    .k-marquee {
+        position: absolute;
+        z-index: 100000;
+    }
+
+    .k-marquee-color,
+    .k-marquee-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     /* Navigator hint */

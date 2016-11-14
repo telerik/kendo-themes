@@ -19,6 +19,14 @@ $chart-notes-lines: rgba(0, 0, 0, .5) !default;
 
 $error-bars-background: rgba(0, 0, 0, .5) !default;
 
+$chart-selection-background: rgba(255, 255, 255, .01);
+$chart-selection-marque-background: $series-a !default;
+
+$selection-handle-background: $background !default;
+$selection-handle-gradient: linear-gradient($base, darken($base, 2%)) !default;
+$selection-border-color: rgba(0, 0, 0, .08) !default;
+$selection-box-shadow: inset 0 1px 7px rgba(0, 0, 0, .15) !default;
+
 @include exports('charts/theme') {
     // Exported variables
     .k-var--chart-inactive {
@@ -81,33 +89,40 @@ $error-bars-background: rgba(0, 0, 0, .5) !default;
     }
 
     .k-selection {
-        border-bottom: 0;
-        border-width: 1px;
-        border-style: solid;
-        border-color: $disabled-border-color;
+        border-color: $selection-border-color;
+        box-shadow: $selection-box-shadow;
     }
 
     .k-selection-bg {
-        background-color: $background;
+        background-color: transparent;
     }
 
     .k-handle {
-        background: $disabled-border-color;
+        background-color: $selection-handle-background;
+        background-image: $selection-handle-gradient;
         cursor: e-resize;
+        border-color: $selection-border-color;
     }
 
     .k-handle div {
-        background-color: transparent;
+        background-color: $chart-selection-background;
     }
 
     .k-mask {
         background-color: $background;
-        filter: alpha(opacity=80);
         opacity: .8;
     }
 
     .k-border {
         background: $disabled-border-color;
+    }
+
+    .k-marquee-color {
+        background-color: $chart-selection-marque-background;
+    }
+
+    .k-marquee-color {
+        opacity: .6;
     }
 
     // Navigator hint
