@@ -1,3 +1,11 @@
+// TODO: dropdown item padding
+$dropdown-item-padding-x: 1em;
+$dropdown-item-padding-y: .5em;
+
+// TODO: popup padding
+$popup-padding-x: 2px;
+$popup-padding-y: 2px;
+
 @include exports( "common/popup" ) {
 
     // Layout
@@ -53,6 +61,9 @@
     }
     .k-list .k-state-focused {
         border-color: $node-selected-border;
+        // TODO: consider extracting focused shadow to variable
+        // sass-lint:disable no-color-literals
         box-shadow: inset 0 0 5px rgba( $node-selected-border, .5 );
+        // sass-lint:disable no-color-literals
     }
 }

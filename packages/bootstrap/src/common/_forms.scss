@@ -1,3 +1,7 @@
+// TODO: input padding
+$input-padding-x: 1em;
+$input-padding-y: .5em;
+
 @include exports("forms/layout") {
 
     .k-dropdown-wrap,

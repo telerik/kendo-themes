@@ -1,4 +1,16 @@
-@include exports( "common/reset" ) {
+// TODO: font-size-sm
+$font-size-sm: 12px;
+
+// TODO: dropdown item padding
+$dropdown-item-padding-x: 1em;
+$dropdown-item-padding-y: .5em;
+
+// TODO: popup padding
+$popup-padding-x: 2px;
+$popup-padding-y: 2px;
+
+
+@include exports( "common/layout" ) {
 
     // Layout
     .k-reset {
@@ -12,27 +24,6 @@
     }
 
 
-    // Float wrap
-    .k-floatwrap:after,
-    .k-grid-toolbar:after,
-    .k-slider-items:after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-
-
-    // Links
-    .k-link,
-    .k-link:hover {
-        text-decoration: none;
-    }
-
-}
-
-
-@include exports( "common/widget" ) {
-
     // Layout
     .k-widget {
         border-width: 1px;
@@ -42,7 +33,9 @@
         font-size: $font-size;
         line-height: $line-height;
         -webkit-touch-callout: none;
+        // sass-lint:disable no-color-literals
         -webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
+        // sass-lint:enable no-color-literals
 
         &:disabled,
         &[disabled] {
@@ -55,9 +48,79 @@
     }
 
 
-    // Theme
+    // Float wrap
+    .k-floatwrap::after,
+    .k-grid-toolbar::after,
+    .k-slider-items::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+
+    // Links
+    .k-link,
+    .k-link:hover {
+        text-decoration: none;
+    }
+
+
+    // Form controls
+    .k-textbox > input,
+    .k-input,
+    .k-textbox,
+    .k-button {
+        border-width: 1px;
+        border-style: solid;
+        font-size: inherit;
+        -webkit-appearance: none;
+    }
+    .k-input,
+    .k-textbox {
+        @include border-radius( $border-radius );
+    }
+    .k-textbox:focus {
+        // box-shadow: $focused-item-shadow;
+    }
+
+
+    // Outline
+    .k-textbox,
+    .k-content {
+        outline: 0;
+    }
+
+
+    // Box sizing
+    .k-block,
+    .k-textbox {
+        box-sizing: border-box;
+    }
+
+
+    // Centering
+    .k-centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+
+@include exports( "common/theme" ) {
+
+
+    // Widget
     .k-widget {
         @include appearance( widget );
+    }
+
+
+    // Panels
+    .k-content {
+        @include appearance( panel );
     }
 
 
@@ -65,7 +128,104 @@
     .k-header {
         @include appearance( header );
     }
+    .k-header.k-state-hover {
+        @include appearance( hovered-header );
+    }
+    .k-header.k-state-selected {
+        @include appearance( selected-header );
+    }
 
+
+    // TODO: do we need default state?
+    // Default state
+    // .k-state-default {
+    //     border-color: $widget-border;
+    // }
+
+
+    // Input
+    .k-input,
+    .k-textbox {
+        @include appearance( "input" );
+    }
+
+
+    // Link
+    .k-link
+    .k-icon:hover {
+        color: $normal-text-color;
+    }
+
+
+    // Hover state
+    .k-state-hover,
+    .k-state-hover:hover {
+        // background-color: $hover-background;
+        // border-color: $hover-border-color;
+        // color: $hover-text-color;
+    }
+
+
+    // Selected state
+    .k-state-selected {
+        color: $selected-text;
+        background-color: $selected-bg;
+        border-color: $selected-border;
+    }
+
+
+    // TODO: focused state
+    // Focused focused state
+    .k-state-focused {
+        // box-shadow: $focused-item-shadow;
+    }
+
+
+    // TODO: what is highlight state?
+    // Highlight state
+    .k-state-highlight {
+        background-color: saturate($base, 4%);
+        border-color: $accent;
+    }
+
+
+    // TODO: what is active state?
+    // Active state
+    .k-state-active {
+        background-color: $background;
+    }
+
+
+    // Disabled state
+    .k-disabled,
+    .k-state-disabled {
+        @include disabled;
+
+
+        .k-link,
+        .k-button {
+            cursor: default;
+            outline: 0;
+        }
+    }
+
+
+    // Error-state
+    .k-state-error {
+        border-style: ridge;
+    }
+
+
+    // TODO: what is smpty state?
+    // Empty state
+    .k-state-empty {
+        font-style: italic;
+    }
+
+}
+
+
+@include exports( "common/resize" ) {
 
     // Resize handle
     .k-resize-handle,
@@ -78,7 +238,7 @@
         align-items: center;
         justify-content: center;
     }
-    .k-resize-handle:before {
+    .k-resize-handle::before {
         content: "";
         border: 0 solid;
         border-color: inherit;
@@ -116,6 +276,10 @@
         cursor: w-resize;
     }
 
+}
+
+
+@include exports( "common/lines" ) {
 
     // Lines
     .k-line {}
@@ -125,6 +289,9 @@
     }
     .k-line-h { height: 2px; }
     .k-line-v { width: 2px; }
+
+
+    // Arrows
     .k-arrow-e,
     .k-arrow-w {
         width: 0;
@@ -143,24 +310,6 @@
     .k-arrow-w {
         border-left-color: transparent;
         left: -6px;
-    }
-
-}
-
-
-@include exports( "common/states" ) {
-
-    // Selected
-    .k-state-selected {
-        color: $selected-text;
-        background-color: $selected-bg;
-        border-color: $selected-border;
-    }
-
-    // Disabled
-    .k-disabled,
-    .k-state-disabled {
-        @include disabled;
     }
 
 }
@@ -189,11 +338,41 @@
     .k-marquee-text {
         color: $selected-text;
     }
+
 }
 
 
-@include exports( "common/loadingmask" ) {
+@include exports( "common/loading" ) {
 
+    // Loading indicator
+    .k-loading {
+        width: 64px;
+        height: 64px;
+        display: block;
+
+        .animate {
+            animation: loading 2s infinite linear;
+        }
+    }
+
+    @keyframes loading {
+        0% {
+            stroke-dasharray: 0 251;
+            stroke-dashoffset: 502;
+        }
+
+        50% {
+            stroke-dasharray: 250 1;
+        }
+
+        100% {
+            stroke-dasharray: 0 251;
+            stroke-dashoffset: 0;
+        }
+    }
+
+
+    // Loading mask
     .k-loading-mask,
     .k-loading-image,
     .k-loading-color {
@@ -220,4 +399,92 @@
         opacity: .3;
     }
 
+}
+
+
+@include exports( "common/dragclue" ) {
+
+    // Layout
+    .k-drag-clue {
+        padding: $padding-y-sm $padding-x-sm;
+        border-width: 1px;
+        border-style: solid;
+        font-size: $font-size-sm;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: default;
+    }
+    .k-drag-status {
+        margin-right: .4ex;
+    }
+
+
+    // Theme
+    .k-drag-clue {
+        @include appearance( selected-node );
+    }
+
+}
+
+
+@include exports( "common/popup" ) {
+
+    // Layout
+    .k-popup {
+        margin: 0;
+        padding: $popup-padding-y 0;
+        border-width: 1px;
+        border-style: solid;
+        font-size: $font-size;
+        line-height: $line-height;
+
+        .k-item {
+            cursor: default;
+        }
+    }
+    .k-animation-container {
+        .k-popup {
+            position: relative;
+        }
+    }
+
+
+    // Theme
+    .k-popup {
+        @include appearance( popup );
+    }
+
+}
+
+
+@include exports( "common/list" ) {
+
+    // Layout
+    .k-list-scroller {
+        position: relative;
+        overflow: auto;
+    }
+    .k-list {
+        height: auto;
+    }
+    .k-list .k-item {
+        padding: 3px $dropdown-item-padding-x;
+    }
+
+
+    // Theme
+    .k-list {}
+    .k-list .k-state-hover {
+        @include appearance( hovered-list-item );
+    }
+    .k-list .k-state-selected {
+        @include appearance( selected-list-item );
+    }
+    .k-list .k-state-focused {
+        border-color: $node-selected-border;
+        // TODO: consider extracting focused shadow to variable
+        // sass-lint:disable no-color-literals
+        box-shadow: inset 0 0 5px rgba( $node-selected-border, .5 );
+        // sass-lint:disable no-color-literals
+    }
 }

@@ -7,9 +7,7 @@
 @import "../node_modules/@telerik/kendo-theme-default/src/variables";
 
 // Dependencies
-@import "common/base";
-@import "common/icons";
-@import "common/popup";
+@import "common/all";
 
 
 // Data management
@@ -38,14 +36,8 @@
 @import "switch/switch";
 
 
-// Charts
-@import "chart/chart";
-@import "treemap/treemap";
-
-
-// Diagrams and map
-@import "diagram/diagram";
-@import "map/map";
+// Dataviz
+@import "dataviz/dataviz";
 
 
 // Scheduling

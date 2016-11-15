@@ -1,22 +1,30 @@
+@import "font/glyphs";
+
+
 @include exports( "common/icons" ) {
 
+    $icon-size: $font-size;
+
     @font-face {
-        font-family: "KendoUIGlyphs";
+        font-family: "WebComponentsGlyphs";
         font-style: normal;
         font-weight: normal;
-        src: url( "./../common/font/kendo-glyphs.woff" ) format( "woff" );
+        src: url(map-get( $data-uris, 'WebComponentsGlyphs.woff' )) format( "woff" );
     }
 
     .k-icon {
+        width: 1em;
+        height: 1em;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
-        font-family: 'KendoUIGlyphs';
+        font-family: 'WebComponentsGlyphs';
         font-style: normal;
         font-variant: normal;
         font-weight: normal;
         line-height: 1;
         speak: none;
         text-transform: none;
+        display: inline-block;
 
         &::before {
             vertical-align: baseline;
@@ -28,12 +36,19 @@
         }
     }
 
-    .k-i-none {
-        width: 1em;
-        height: 1em;
-        display: inline-block;
+    .k-i-none {}
+    .k-i-none::before {
+        content: "";
+        display: none;
     }
 
+    .k-icon-xs { font-size: ( $icon-size * .5 ); }
+    .k-icon-sm { font-size: ( $icon-size * .75 ); }
+    .k-icon-md { font-size: ( $icon-size * 2 ); }
+    .k-icon-lg { font-size: ( $icon-size * 3 ); }
+    .k-icon-xl { font-size: ( $icon-size * 4 ); }
+
+    // sass-lint:disable single-line-per-selector
     .k-i-arrow-n::before { content: '\e600'; }
     .k-i-arrow-e::before { content: '\e601'; }
     .k-i-arrow-s::before { content: '\e602'; }
@@ -216,6 +231,7 @@
 
     .k-plus::before { content: '\e621'; }
     .k-minus::before { content: '\e623'; }
+    // sass-lint:enable single-line-per-selector
 
 
     // Fix those
