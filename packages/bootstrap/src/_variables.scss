@@ -1,6 +1,7 @@
-// Font size
+// Fonts
 $font-size: $font-size-base !default;
 $font-size-xs: $font-size-xs !default;
+
 $font-size-sm: $font-size-sm !default;
 $font-size-lg: $font-size-lg !default;
 
@@ -37,7 +38,6 @@ $header-padding-y: $card-spacer-y !default;
 
 $form-line-height: $btn-line-height !default;
 $form-line-height-em: $form-line-height * 1em !default;
-$form-line-height-rem: $form-line-height * 1rem !default;
 
 $button-padding-x: $btn-padding-x !default;
 $button-padding-y: $btn-padding-y !default;
@@ -57,6 +57,8 @@ $cell-padding-x: $padding-x-sm !default;
 $cell-padding-y: $padding-y-sm !default;
 $cell-padding: $table-cell-padding !default;
 $cell-padding-sm: $table-sm-cell-padding !default;
+
+$rgba-transparent: rgba( 0, 0, 0, 0 );
 
 
 // Theme colors
@@ -107,6 +109,7 @@ $panel-text: $widget-text !default;
 $panel-bg: $widget-bg !default;
 $panel-border: $widget-border !default;
 
+
 // Popup
 $popup-text: $panel-text !default;
 $popup-bg: $panel-bg !default;
@@ -119,17 +122,15 @@ $header-bg: $card-cap-bg !default;
 $header-border: $card-border-color !default;
 $header-gradient: null !default;
 
-    // Hovered header
-    $header-hovered-text: $header-text !default;
-    $header-hovered-bg: darken( $header-bg, 10% ) !default;
-    $header-hovered-border: darken( $header-border, 12 ) !default;
-    $header-hovered-gradient: null !default;
+$header-hovered-text: $header-text !default;
+$header-hovered-bg: darken( $header-bg, 10% ) !default;
+$header-hovered-border: darken( $header-border, 12 ) !default;
+$header-hovered-gradient: null !default;
 
-    // Selected header
-    $header-selected-text: $selected-text !default;
-    $header-selected-bg: $selected-bg !default;
-    $header-selected-border: $selected-border !default;
-    $header-selected-gradient: null !default;
+$header-selected-text: $selected-text !default;
+$header-selected-bg: $selected-bg !default;
+$header-selected-border: $selected-border !default;
+$header-selected-gradient: null !default;
 
 
 // Button
@@ -138,17 +139,15 @@ $button-bg: $base-bg !default;
 $button-border: $base-border !default;
 $button-gradient: null !default;
 
-    // Hovered button
-    $button-hovered-text: $button-text !default;
-    $button-hovered-bg: darken( $button-bg, 10% ) !default;
-    $button-hovered-border: darken( $button-border, 12% ) !default;
-    $button-hovered-gradient: null !default;
+$button-hovered-text: $button-text !default;
+$button-hovered-bg: darken( $button-bg, 10% ) !default;
+$button-hovered-border: darken( $button-border, 12% ) !default;
+$button-hovered-gradient: null !default;
 
-    // Pressed button
-    $button-pressed-text: $button-text !default;
-    $button-pressed-bg: darken( $button-bg, 17% ) !default;
-    $button-pressed-border: darken( $button-border, 25% ) !default;
-    $button-pressed-gradient: null !default;
+$button-pressed-text: $button-text !default;
+$button-pressed-bg: darken( $button-bg, 17% ) !default;
+$button-pressed-border: darken( $button-border, 25% ) !default;
+$button-pressed-gradient: null !default;
 
 
 // Primary button
@@ -157,17 +156,15 @@ $primary-button-bg: $component-active-bg !default;
 $primary-button-border: $primary-button-bg !default;
 $primary-button-gradient: null !default;
 
-    // Primary hovered button
-    $primary-button-hovered-text: $primary-button-text !default;
-    $primary-button-hovered-bg: darken( $primary-button-bg, 10% ) !default;
-    $primary-button-hovered-border: darken( $primary-button-border, 12% ) !default;
-    $primary-button-hovered-gradient: null !default;
+$primary-button-hovered-text: $primary-button-text !default;
+$primary-button-hovered-bg: darken( $primary-button-bg, 10% ) !default;
+$primary-button-hovered-border: darken( $primary-button-border, 12% ) !default;
+$primary-button-hovered-gradient: null !default;
 
-    // Primary pressed button
-    $primary-button-pressed-text: $primary-button-text !default;
-    $primary-button-pressed-bg: darken( $primary-button-bg, 17% ) !default;
-    $primary-button-pressed-border: darken( $primary-button-border, 25% ) !default;
-    $primary-button-pressed-gradient: null !default;
+$primary-button-pressed-text: $primary-button-text !default;
+$primary-button-pressed-bg: darken( $primary-button-bg, 17% ) !default;
+$primary-button-pressed-border: darken( $primary-button-border, 25% ) !default;
+$primary-button-pressed-gradient: null !default;
 
 
 // Input
@@ -175,15 +172,13 @@ $input-text: $gray !default;
 $input-bg: $body-bg !default;
 $input-border: $button-border !default;
 
-    // Hovered input
-    $input-hovered-text: $input-text !default;
-    $input-hovered-bg: $input-bg !default;
-    $input-hovered-border: $hovered-border !default;
+$input-hovered-text: $input-text !default;
+$input-hovered-bg: $input-bg !default;
+$input-hovered-border: $hovered-border !default;
 
-    // Focused input
-    $input-focused-text: $input-text !default;
-    $input-focused-bg: $input-bg !default;
-    $input-focused-border: $selected-border !default;
+$input-focused-text: $input-text !default;
+$input-focused-bg: $input-bg !default;
+$input-focused-border: $selected-border !default;
 
 
 // Node
@@ -192,30 +187,26 @@ $node-bg: $base-bg !default;
 $node-border: $base-border !default;
 $node-gradient: null !default;
 
-    // Hovered node
-    $node-hovered-text: $hovered-text !default;
-    $node-hovered-bg: $hovered-bg !default;
-    $node-hovered-border: $hovered-border !default;
-    $node-hovered-gradient: null !default;
+$node-hovered-text: $hovered-text !default;
+$node-hovered-bg: $hovered-bg !default;
+$node-hovered-border: $hovered-border !default;
+$node-hovered-gradient: null !default;
 
-    // Selected node
-    $node-selected-text: $selected-text !default;
-    $node-selected-bg: $selected-bg !default;
-    $node-selected-border: $selected-border !default;
-    $node-selected-gradient: null !default;
+$node-selected-text: $selected-text !default;
+$node-selected-bg: $selected-bg !default;
+$node-selected-border: $selected-border !default;
+$node-selected-gradient: null !default;
 
 
 // List item
 $list-item-text: $node-text !default;
 $list-item-bg: $node-bg !default;
 
-    // Hovered list item
-    $list-item-hovered-text: $node-hovered-text !default;
-    $list-item-hovered-bg: $node-hovered-bg !default;
+$list-item-hovered-text: $node-hovered-text !default;
+$list-item-hovered-bg: $node-hovered-bg !default;
 
-    // Selected list item
-    $list-item-selected-text: $node-selected-text !default;
-    $list-item-selected-bg: $node-selected-bg !default;
+$list-item-selected-text: $node-selected-text !default;
+$list-item-selected-bg: $node-selected-bg !default;
 
 
 // Chart
@@ -225,6 +216,8 @@ $series-c: #78d237 !default;
 $series-d: #28b4c8 !default;
 $series-e: #2d73f5 !default;
 $series-f: #aa46be !default;
+
+$chart-font-size: $font-size !default;
 $chart-font-size-sm: 11px !default;
 $chart-font-size-md: 12px !default;
 $chart-font-size-lg: 16px !default;
