@@ -153,7 +153,7 @@ $popup-padding-y: 2px;
     // Link
     .k-link
     .k-icon:hover {
-        color: $normal-text-color;
+        color: $base-text;
     }
 
 
@@ -184,7 +184,7 @@ $popup-padding-y: 2px;
     // TODO: what is highlight state?
     // Highlight state
     .k-state-highlight {
-        background-color: saturate($base, 4%);
+        background-color: saturate($base-bg, 4%);
         border-color: $accent;
     }
 
@@ -192,7 +192,7 @@ $popup-padding-y: 2px;
     // TODO: what is active state?
     // Active state
     .k-state-active {
-        background-color: $background;
+        background-color: $widget-bg;
     }
 
 

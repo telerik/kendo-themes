@@ -8,7 +8,6 @@ $line-height: $line-height-base !default;
 $line-height-sm: $line-height-sm !default;
 $line-height-lg: $line-height-lg !default;
 $line-height-em: $line-height * 1em !default;
-$line-height-rem: $line-height * 1rem !default;
 
 
 // Metrics
@@ -86,6 +85,13 @@ $success: $brand-success !default;
 $info: $brand-info !default;
 $warning: $brand-warning !default;
 $error: $brand-danger !default;
+
+$gradient-transparent-to-black: rgba( black, 0), black;
+$gradient-transparent-to-white: rgba( white, 0), white;
+$gradient-black-to-transparent: black, rgba( black, 0);
+$gradient-white-to-transparent: white, rgba( white, 0);
+
+$gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
 
 

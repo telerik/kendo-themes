@@ -8,8 +8,8 @@ $chart-minor-lines: rgba(0, 0, 0, .08) !default;
 $chart-area-opacity: .8 !default;
 
 $chart-crosshair-background: rgba(0, 0, 0, .5) !default;
-$chart-crosshair-shared-tooltip-color: $normal-text-color !default;
-$chart-crosshair-shared-tooltip-background: $base !default;
+$chart-crosshair-shared-tooltip-color: $base-text !default;
+$chart-crosshair-shared-tooltip-background: $base-bg !default;
 $chart-crosshair-shared-tooltip-border: rgba(0, 0, 0, .08) !default;
 
 $chart-notes-background: rgba(0, 0, 0, .5) !default;
@@ -19,42 +19,6 @@ $chart-notes-lines: rgba(0, 0, 0, .5) !default;
 $error-bars-background: rgba(0, 0, 0, .5) !default;
 
 @include exports('dataviz/charts/theme') {
-    // Exported variables
-    .k-var--chart-inactive {
-        background-color: $chart-inactive;
-    }
-
-    .k-var--chart-major-lines {
-        background-color: $chart-major-lines;
-    }
-
-    .k-var--chart-minor-lines {
-        background-color: $chart-minor-lines;
-    }
-
-    .k-var--chart-area-opacity {
-        opacity: $chart-area-opacity;
-    }
-
-    .k-var--chart-notes-background {
-        background-color: $chart-notes-background;
-    }
-
-    .k-var--chart-notes-border {
-        background-color: $chart-notes-border;
-    }
-
-    .k-var--chart-notes-lines {
-        background-color: $chart-notes-lines;
-    }
-
-    .k-var--chart-crosshair-background {
-        background-color: $chart-crosshair-background;
-    }
-
-    .k-var--chart-error-bars-background {
-        background-color: $error-bars-background;
-    }
 
     // Elements
     .k-chart,
@@ -64,12 +28,12 @@ $error-bars-background: rgba(0, 0, 0, .5) !default;
     }
 
     .k-chart-tooltip {
-        color: $background;
+        color: $widget-bg;
         border-radius: $border-radius;
     }
 
     .k-chart-tooltip-inverse {
-        color: invert($background);
+        color: invert($widget-bg);
     }
 
     .k-chart-crosshair-tooltip,
@@ -87,7 +51,7 @@ $error-bars-background: rgba(0, 0, 0, .5) !default;
     }
 
     .k-selection-bg {
-        background-color: $background;
+        background-color: $widget-bg;
     }
 
     .k-handle {
@@ -100,7 +64,7 @@ $error-bars-background: rgba(0, 0, 0, .5) !default;
     }
 
     .k-mask {
-        background-color: $background;
+        background-color: $widget-bg;
         filter: alpha(opacity=80);
         opacity: .8;
     }
@@ -117,7 +81,7 @@ $error-bars-background: rgba(0, 0, 0, .5) !default;
 
     .k-navigator-hint .k-tooltip {
         border: 0;
-        background: $background;
+        background: $widget-bg;
     }
 }
 
