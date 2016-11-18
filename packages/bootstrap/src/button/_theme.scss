@@ -1,46 +1,41 @@
 @include exports("button/theme") {
 
-    // Appearance
+    // Default button
     .k-button {
         @include appearance( button );
         @include border-radius( $border-radius );
 
+        // Hovoer state
         &:hover,
         &.k-state-hover { @include appearance( hovered-button ); }
+
+        // Active state
         &:active,
         &.k-state-active { @include appearance( active-button ); }
+
+        // TODO: add focused state
+
     }
 
+
+    // Primary button
     .k-button.k-primary {
         @include appearance( primary-button );
 
+        // Hovoer state
         &:hover,
         &.k-state-hover { @include appearance( hovered-primary-button ); }
+
+        // Active state
         &:active,
         &.k-state-active { @include appearance( active-primary-button ); }
+
+        // TODO: add focused state
+
     }
 
 
     // Button group
-    .k-button-group {
-
-        .k-button {
-            border-radius: 0;
-        }
-
-        .k-group-start,
-        .k-button:first-child {
-            @include border-radius( $border-radius 0 0 $border-radius );
-        }
-        .k-group-end,
-        .k-button:last-child {
-            @include border-radius( 0 $border-radius $border-radius 0 );
-        }
-        .k-group-start.k-group-end,
-        .k-button:first-child:last-child {
-            @include border-radius( $border-radius );
-        }
-
-    }
+    .k-button-group {}
 
 }

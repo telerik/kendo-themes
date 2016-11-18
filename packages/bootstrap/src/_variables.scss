@@ -30,7 +30,7 @@ $border-radius-lg: $border-radius-lg !default;
 $panel-padding-x: $card-spacer-x !default;
 $panel-padding-y: $card-spacer-y !default;
 
-$popup-padding-x: null !default;
+$popup-padding-x: 0 !default;
 $popup-padding-y: $dropdown-padding-y !default;
 
 $header-padding-x: $card-spacer-x !default;
@@ -48,6 +48,9 @@ $input-padding-x: $input-padding-x !default;
 $input-padding-y: $input-padding-y !default;
 $input-padding-x-sm: $input-padding-x-sm !default;
 $input-padding-y-sm: $input-padding-y-sm !default;
+
+$list-item-padding-x: $dropdown-item-padding-x !default;
+$list-item-padding-y: 0 !default;
 
 $table-alt-bg: $table-bg-accent !default;
 $table-hover-bg: $table-bg-hover !default;
@@ -72,14 +75,17 @@ $border-color: darken( $bg-color, 12% ) !default;
 $base-text: $btn-secondary-color !default;
 $base-bg: $btn-secondary-bg !default;
 $base-border: darken( $base-bg, 12% ) !default;
+$base-gradient: null !default;
 
 $hovered-text: $base-text !default;
 $hovered-bg: darken( $base-bg, 10% ) !default;
 $hovered-border: darken( $base-border, 12% ) !default;
+$hovered-gradient: null !default;
 
 $selected-text: $accent-contrast !default;
 $selected-bg: $accent !default;
 $selected-border: darken( $selected-bg, 12% ) !default;
+$selected-gradient: null !default;
 
 $transition: background-color .2s ease !default;
 
@@ -165,6 +171,13 @@ $primary-button-pressed-text: $primary-button-text !default;
 $primary-button-pressed-bg: darken( $primary-button-bg, 17% ) !default;
 $primary-button-pressed-border: darken( $primary-button-border, 25% ) !default;
 $primary-button-pressed-gradient: null !default;
+
+
+// Toolbar
+$toolbar-text: $button-text !default;
+$toolbar-bg: $button-bg !default;
+$toolbar-border: $button-border !default;
+$toolbar-gradient: null !default;
 
 
 // Input
