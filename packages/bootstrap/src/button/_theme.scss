@@ -3,7 +3,6 @@
     // Default button
     .k-button {
         @include appearance( button );
-        @include border-radius( $border-radius );
 
         // Hovoer state
         &:hover,
@@ -11,7 +10,7 @@
 
         // Active state
         &:active,
-        &.k-state-active { @include appearance( active-button ); }
+        &.k-state-active { @include appearance( pressed-button ); }
 
         // TODO: add focused state
 
@@ -28,7 +27,7 @@
 
         // Active state
         &:active,
-        &.k-state-active { @include appearance( active-primary-button ); }
+        &.k-state-active { @include appearance( pressed-primary-button ); }
 
         // TODO: add focused state
 
