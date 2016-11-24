@@ -1,72 +1,72 @@
 @include exports("numerictextbox/layout") {
 
-	// Base
-	.k-numerictextbox {
-		border-width: 0;
-		line-height: $form-line-height;
-		display: inline-block;
-		vertical-align: middle;
+    // Base
+    .k-numerictextbox {
+        border-width: 0;
+        line-height: $form-line-height;
+        display: inline-block;
+        vertical-align: middle;
 
-		.k-input {
-			border: 0;
-			outline: 0;
-			color: inherit;
-			background: none;
-			font: inherit;
-		}
+        .k-input {
+            border: 0;
+            outline: 0;
+            color: inherit;
+            background: none;
+            font: inherit;
+        }
 
-		.k-select {
-			border-width: 0 0 0 1px;
-			border-style: solid;
-		}
-
-
+        .k-select {
+            border-width: 0 0 0 1px;
+            border-style: solid;
+        }
 
 
-		// Compact
-		@include compact {
 
-			.k-input {
-				padding: $input-padding-y-sm $input-padding-x-sm;
-			}
 
-			.k-select {
-				.k-link { padding: 0 $button-padding-y-sm }
-			}
-		}
-	}
+        // Compact
+        @include compact {
 
-	@include exports("numericwrap/layout") {
+            .k-input {
+                padding: $input-padding-y-sm $input-padding-x-sm;
+            }
 
-		.k-numeric-wrap {
-			padding: 0;
-			border-width: 1px;
-			border-style: solid;
-			box-sizing: border-box;
-			display: flex;
-			flex-direction: row;
-			position: relative;
+            .k-select {
+                .k-link { padding: 0 $button-padding-y-sm }
+            }
+        }
+    }
 
-			.k-input {
-				padding: $input-padding-y $input-padding-x;
-				width: 100%;
-				flex: 1;
-				display: flex;
-				align-items: center;
-			}
+    @include exports("numericwrap/layout") {
 
-			.k-select {
-				display: flex;
-				flex-direction: column;
+        .k-numeric-wrap {
+            padding: 0;
+            border-width: 1px;
+            border-style: solid;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            position: relative;
 
-				.k-link {
-					padding: 0 $button-padding-y;
-				}
+            .k-input {
+                padding: $input-padding-y $input-padding-x;
+                width: 100%;
+                flex: 1;
+                display: flex;
+                align-items: center;
+            }
 
-				.k-icon {}
+            .k-select {
+                display: flex;
+                flex-direction: column;
 
-			}
-		}
-	}
+                .k-link {
+                    padding: 0 $button-padding-y;
+                }
+
+                .k-icon {}
+
+            }
+        }
+    }
 
 }
