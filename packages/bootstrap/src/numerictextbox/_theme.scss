@@ -6,11 +6,9 @@
 		// Normal state
 		.k-numeric-wrap {
 			@include appearance( input );
-			@include border-radius( $border-radius );
 		}
 		.k-select {
 			@include appearance( button );
-			@include border-radius(  0 $border-radius $border-radius 0 );
 		}
 
 		// Hovered state
