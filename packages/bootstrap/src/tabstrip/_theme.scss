@@ -1,71 +1,59 @@
 @include exports("tabstrip/theme") {
 
-	.k-tabstrip {
+    .k-tabstrip {
 
-		.k-tabstrip-items {
-			border-color: $nav-tabs-border-color;
-		}
+        .k-tabstrip-items {
+            border-color: $nav-tabs-border-color;
+        }
 
-		.k-item {}
-		.k-item.k-state-hover {
-			border-color: $nav-tabs-link-hover-border-color;
-		}
-		.k-item.k-state-active {
-			color: $nav-tabs-active-link-hover-color;
-			background-color: $nav-tabs-active-link-hover-bg;
-			border-color: $nav-tabs-active-link-hover-border-color;
-		}
-	}
+        .k-item {}
+        .k-item.k-state-hover {
+            border-color: $nav-tabs-link-hover-border-color;
+        }
+        .k-item.k-state-active {
+            color: $nav-tabs-active-link-hover-color;
+            background-color: $nav-tabs-active-link-hover-bg;
+            border-color: $nav-tabs-active-link-hover-border-color;
+        }
+    }
 
 
-	// Tabstrip variants
-	.k-tabstrip-top {
+    // Tabstrip variants
+    .k-tabstrip-top {
 
-		.k-item {
-			@include border-radius( $border-radius $border-radius 0 0 );
-		}
-		.k-item.k-state-hover {
-			border-bottom-color: $nav-tabs-border-color;
-		}
-		.k-item.k-state-active {
-			border-bottom-color: transparent;
-		}
-	}
-	.k-tabstrip-bottom {
+        .k-item.k-state-hover {
+            border-bottom-color: $nav-tabs-border-color;
+        }
+        .k-item.k-state-active {
+            border-bottom-color: transparent;
+        }
+    }
+    .k-tabstrip-bottom {
 
-		.k-item {
-			@include border-radius( 0 0 $border-radius $border-radius );
-		}
-		.k-item.k-state-hover {
-			border-top-color: $nav-tabs-border-color;
-		}
-		.k-item.k-state-active {
-			border-top-color: transparent;
-		}
-	}
-	.k-tabstrip-left {
+        .k-item.k-state-hover {
+            border-top-color: $nav-tabs-border-color;
+        }
+        .k-item.k-state-active {
+            border-top-color: transparent;
+        }
+    }
+    .k-tabstrip-left {
 
-		.k-item {
-			@include border-radius( $border-radius 0 0 $border-radius );
-		}
-		.k-item.k-state-hover {
-			border-right-color: $nav-tabs-border-color;
-		}
-		.k-item.k-state-active {
-			border-right-color: transparent;
-		}
-	}
-	.k-tabstrip-right {
+        .k-item.k-state-hover {
+            border-right-color: $nav-tabs-border-color;
+        }
+        .k-item.k-state-active {
+            border-right-color: transparent;
+        }
+    }
+    .k-tabstrip-right {
 
-		.k-item {
-			@include border-radius( 0 $border-radius $border-radius 0 );
-		}
-		.k-item.k-state-hover {
-			border-left-color: $nav-tabs-border-color;
-		}
-		.k-item.k-state-active {
-			border-left-color: transparent;
-		}
-	}
+        .k-item.k-state-hover {
+            border-left-color: $nav-tabs-border-color;
+        }
+        .k-item.k-state-active {
+            border-left-color: transparent;
+        }
+    }
 
 }
