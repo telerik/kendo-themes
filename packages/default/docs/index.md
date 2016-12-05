@@ -88,8 +88,8 @@ Projects that are not built using ng-cli require additional Webpack configuratio
 ```json-no-run
 { test: /\.scss$/,
   loaders: [
-    'css?sourceMap',
-    'sass?sourceMap'
+    'css-loader?sourceMap',
+    'sass-loader?sourceMap'
   ]
 },
 {
