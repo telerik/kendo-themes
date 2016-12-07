@@ -7,9 +7,11 @@ position: 1
 
 # Themes & Styling
 
-Kendo UI for Angular 2 provides two main options to include the Kendo UI theme in your project. You can either use a precompiled theme that styles all components, or load the theme source files through Webpack to modify and customize its styles.
+Kendo UI for Angular 2 provides two main options to include the Kendo UI theme in your project.
 
-## Install Themes
+You can either use a precompiled theme that styles all components or load the theme source files through Webpack to modify and customize its styles.
+
+## Installation
 
 To start using a theme, install it through npm.
 
@@ -81,9 +83,7 @@ $accent: #ff69b4;
 @import "~@telerik/kendo-theme-default/styles/packages/all";
 ```
 
-The basic set of variables is located in the [`\_variables.scss` file](https://github.com/telerik/kendo-theme-default/blob/master/styles/_variables.scss).
-
-Projects that are not built using ng-cli require additional Webpack configuration to process SCSS files:
+The basic set of variables is located in the [`\_variables.scss` file](https://github.com/telerik/kendo-theme-default/blob/master/styles/_variables.scss). Projects that are not built using the Angular CLI Tool require additional Webpack configuration to process SCSS files.
 
 ```json-no-run
 { test: /\.scss$/,
@@ -98,7 +98,7 @@ Projects that are not built using ng-cli require additional Webpack configuratio
 }
 ```
 
-For a working demo that shows this approach, see the [ng2-dashboard sample app](https://github.com/telerik/ng2-dashboard).
+For a working demo that demonstrates this approach, refer to the [ng2-dashboard sample application](https://github.com/telerik/ng2-dashboard).
 
 ## Suggested Links
 
