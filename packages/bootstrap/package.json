@@ -1,5 +1,5 @@
 {
-  "name": "@telerik/kendo-theme-bootstrap",
+  "name": "@progress/kendo-theme-bootstrap",
   "description": "Bootstrap v4 theme for Kendo UI",
   "version": "0.1.1",
   "keywords": [
@@ -51,7 +51,7 @@
     "bootstrap": "git://github.com/twbs/bootstrap.git#v4-dev"
   },
   "dependencies": {
-    "@telerik/kendo-theme-default": "git://github.com/telerik/kendo-theme-default.git#v2"
+    "@progress/kendo-theme-default": "git://github.com/telerik/kendo-theme-default.git#v2"
   },
   "devDependencies": {
     "@telerik/kendo-common-tasks": "^2.0.0",
