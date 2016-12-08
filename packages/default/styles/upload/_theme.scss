@@ -95,5 +95,9 @@ $upload-disabled-color: darken($background, 27%) !default;
     .k-file-validation-message {
         color: $upload-disabled-color;
     }
+
+    .k-dropzone-hovered {
+        background-color: $hover-background;
+    }
 }
 }
