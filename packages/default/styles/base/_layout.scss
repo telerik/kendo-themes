@@ -88,4 +88,15 @@ html {
 .k-textbox {
     box-sizing: border-box;
 }
+
+.k-drag-clue {
+    position: absolute;
+    z-index: 10003;
+    border-style: solid;
+    border-width: 1px;
+    font-size: .9em;
+    padding: .2em .4em;
+    white-space: nowrap;
+    cursor: default;
+}
 }

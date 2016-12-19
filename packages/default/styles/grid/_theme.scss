@@ -11,6 +11,8 @@ $grid-background: $base !default;
 $grid-alt-background: $base !default;
 $grid-active-color: $accent !default;
 
+$grid-grouping-row-background: darken($normal-background, 7%) !default;
+
 $pager-focused-box-shadow: inset 0 0 0 2px darken($base, 8%) !default;
 $pager-selected-focused-box-shadow: inset 0 0 0 2px blend-multiply($accent, darken($background, 8%)) !default;
 $pager-hover-background: $hover-background !default;
@@ -26,14 +28,24 @@ $pager-selected-hover-background: blend-multiply($accent, darken($background, 8%
     .k-grid-footer-wrap,
     .k-grid-content-locked,
     .k-grid-footer-locked,
-    .k-grid-header-locked {
+    .k-grid-header-locked,
+    .k-grouping-header,
+    .k-grouping-header .k-group-indicator {
         border-color: $grid-border-color;
     }
 
     .k-grid-header,
     .k-grid-footer,
-    .k-pager-wrap {
+    .k-pager-wrap,
+    .k-group-footer,
+    .k-grouping-header {
         background-color: $grid-background;
+    }
+
+    .k-grid-footer td,
+    .k-group-footer td,
+    .k-grouping-row td {
+        font-weight: bold;
     }
 
     .k-grid {
@@ -47,6 +59,16 @@ $pager-selected-hover-background: blend-multiply($accent, darken($background, 8%
 
             .k-hierarchy-cell > .k-icon {
                 color: $selected-text-color;
+            }
+        }
+
+        .k-grouping-row {
+            background-color: $grid-grouping-row-background;
+        }
+
+        .k-grouping-dropclue {
+            &::before {
+                border-color: $grid-color transparent transparent;
             }
         }
     }
