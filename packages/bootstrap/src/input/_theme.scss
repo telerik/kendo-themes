@@ -1,7 +1,6 @@
-@include exports("input/theme") {
+@include exports('input/theme') {
 
-	
-$textbox-invalid-border-color: rgba($error, .5) !default;
+    $textbox-invalid-border-color: rgba($error, .5) !default;
 
     $radio-border: $input-border !default;
     $radio-hovered-border: $input-hovered-border !default;
@@ -19,32 +18,47 @@ $textbox-invalid-border-color: rgba($error, .5) !default;
     $focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
     $focused-checked-shadow: 0 0 0 2px rgba($accent, .3) !default;
 
-	.k-input,
-	.k-textbox {
-		@include appearance( input );
-		@include border-radius( $border-radius );
+    .k-input,
+    .k-textbox {
+        @include appearance( "input" );
 
-		&:hover,
-		&.k-state-hover { @include appearance( hovered-input ); }
-		&:focus,
-		&.k-state-focus { @include appearance( focused-input ); }
-		&:disabled,
-		&[disabled],
-		&.k-disabled { @include appearance( disabled-input ); }
+        &:hover,
+        &.k-state-hover {
+            border-color: $input-hovered-border;
+        }
+
+        &:focus,
+        &.k-state-focus {
+            color: $input-focused-text;
+            border-color: $input-focused-border;
+        }
+
         &:invalid,
         &.k-state-invalid,
         &.ng-invalid {
             color: $error;
             border-color: $textbox-invalid-border-color;
         }
-	}
 
-    .k-radio-label {
+        &::-moz-selection {
+            background-color: $accent;
+            color: $accent-contrast;
+        }
+
+        &::selection {
+            background-color: $accent;
+            color: $accent-contrast;
+        }
+    }
+
+    .k-radio + .k-radio-label {
         &::before {
             border-color: $radio-border;
             background-color: $radio-bg;
         }
+    }
 
+    .k-radio:not(:disabled) + .k-radio-label {
         &:hover::before {
             border-color: $radio-hovered-border;
         }
@@ -60,7 +74,9 @@ $textbox-invalid-border-color: rgba($error, .5) !default;
         &::after {
             background-color: $radio-checked-text;
         }
+    }
 
+    .k-radio:not(:disabled):checked + .k-radio-label {
         &:hover::before {
             background-color: $radio-checked-text;
             border-color: $radio-hovered-border;
@@ -77,7 +93,7 @@ $textbox-invalid-border-color: rgba($error, .5) !default;
         border-color: $checkbox-border;
     }
 
-    .k-checkbox-label:hover::before {
+    .k-checkbox:not(:disabled) + .k-checkbox-label:hover::before {
         border-color: $checkbox-hovered-border;
     }
 
@@ -87,7 +103,7 @@ $textbox-invalid-border-color: rgba($error, .5) !default;
         color: $checkbox-checked-text;
     }
 
-    .k-checkbox:checked + .k-checkbox-label:hover::before {
+    .k-checkbox:not(:disabled):checked + .k-checkbox-label:hover::before {
         background-color: $checkbox-bg;
         border-color: $checkbox-hovered-border;
         color: $checkbox-checked-bg;
@@ -108,5 +124,13 @@ $textbox-invalid-border-color: rgba($error, .5) !default;
     .k-radio:focus:checked + .k-radio-label::before {
         box-shadow: $focused-checked-shadow;
         border-color: $accent;
+    }
+
+    fieldset {
+        border-color: $input-border;
+    }
+
+    fieldset legend {
+        color: $header-text;
     }
 }
