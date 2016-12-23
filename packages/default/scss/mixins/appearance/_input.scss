@@ -1,0 +1,29 @@
+$_input-imported: false !default;
+
+@if ( $_input-imported == false ) {
+
+    %appearance_input {
+        color: $input-text;
+        background-color: $input-bg;
+        border-color: $input-border;
+    }
+    %appearance_hovered-input {
+        color: $input-hovered-text;
+        background-color: $input-hovered-bg;
+        border-color: $input-hovered-border;
+    }
+    %appearance_focused-input {
+        color: $input-focused-text;
+        background-color: $input-focused-bg;
+        border-color: $input-focused-border;
+        box-shadow:  0 0 0 2px darken($input-bg, 6%);
+    }
+
+    $_input-imported: true;
+
+}
+
+
+@mixin appearance_input { @extend %appearance_input; }
+@mixin appearance_hovered-input { @extend %appearance_hovered-input; }
+@mixin appearance_focused-input { @extend %appearance_focused-input; }

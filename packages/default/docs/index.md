@@ -16,15 +16,15 @@ You can either use a precompiled theme that styles all components or load the th
 To start using a theme, install it through npm.
 
 ```sh
-npm install --save @telerik/kendo-theme-default
+npm install --save @progress/kendo-theme-default
 ```
 
 ## Styling Options
 
 Currently, the available themes are:
 
-- Default ([@telerik/kendo-theme-default](https://www.npmjs.com/package/@telerik/kendo-theme-default))
-- Bootstrap ([@telerik/kendo-theme-bootstrap](https://www.npmjs.com/package/@telerik/kendo-theme-bootstrap))
+- Default ([@progress/kendo-theme-default](https://www.npmjs.com/package/@progress/kendo-theme-default))
+- Bootstrap ([@progress/kendo-theme-bootstrap](https://www.npmjs.com/package/@progress/kendo-theme-bootstrap))
 
 After its installation, the theme needs to be referenced in the project.
 
@@ -37,7 +37,7 @@ The example below demonstrates how to include the complete CSS of the default th
     selector: 'my-app',
     styleUrls: [
         // load the default theme (use correct path to modules)
-        'node_modules/@telerik/kendo-theme-default/dist/all.css'
+        'node_modules/@progress/kendo-theme-default/dist/all.css'
     ],
     template: `
         <h1>My First Kendo UI Angular 2 App</h1>
@@ -72,7 +72,7 @@ To change the theme colors or sizes, build a custom theme from its SCSS sources.
 export class AppComponent { }
 ```
 ```scss
-@import "~@telerik/kendo-theme-default/styles/packages/all";
+@import "~@progress/kendo-theme-default/styles/packages/all";
 ```
 
 The setup described above allows for the theme variables to be changed directly in your application. To style the button in a lovely pink color, change the `$accent` variable before importing the theme.
@@ -80,7 +80,7 @@ The setup described above allows for the theme variables to be changed directly 
 ```scss
 $accent: #ff69b4;
 
-@import "~@telerik/kendo-theme-default/styles/packages/all";
+@import "~@progress/kendo-theme-default/styles/packages/all";
 ```
 
 The basic set of variables is located in the [`\_variables.scss` file](https://github.com/telerik/kendo-theme-default/blob/master/styles/_variables.scss). Projects that are not built using the Angular CLI Tool require additional Webpack configuration to process SCSS files.

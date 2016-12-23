@@ -1,0 +1,51 @@
+@include exports("autocomplete/layout") {
+
+    // Layout
+    .k-autocomplete {
+        border-width: 1px;
+        border-style: solid;
+
+        @include border-radius( $border-radius );
+
+        .k-input {
+            height: $line-height-em;
+            line-height: $line-height;
+            padding:  $padding-y $padding-x;
+            border: 0;
+            outline: 0;
+            color: inherit;
+            background: none;
+            font: inherit;
+            flex: 1;
+        }
+
+        .k-i-close {
+            display: none;
+            align-self: center;
+        }
+
+        &.k-state-hover,
+        &.k-state-focused {
+            .k-i-close {
+                display: flex;
+                margin-right: $padding-y;
+                outline: 0;
+            }
+        }
+
+        // Compact
+        @include compact {
+
+            .k-input {
+                padding: $input-padding-y-sm $input-padding-x-sm;
+            }
+
+            .k-icon {
+                top: $input-padding-y-sm;
+                right: $input-padding-y-sm;
+            }
+        }
+
+    }
+
+}

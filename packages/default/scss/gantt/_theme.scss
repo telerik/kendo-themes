@@ -1,0 +1,118 @@
+@include exports("gantt/theme") {
+
+    // Theme
+    .k-gantt {}
+
+
+    // Header and footer
+    .k-gantt-toolbar {
+        @include appearance( header );
+    }
+
+
+    // View switcher
+    .k-gantt-views {
+
+        li {
+            @include appearance( button );
+
+            &.k-state-hover { @include appearance( hovered-button ); }
+            &.k-state-selected { @include appearance( active-button ); }
+        }
+        li:first-child { @include border-radius( $border-radius ); }
+        li:first-child + li { @include border-radius( $border-radius 0 0 $border-radius ); }
+        li:last-child { @include border-radius( 0 $border-radius $border-radius 0 ); }
+
+
+        &.k-state-expanded {
+            li {
+                margin: 0;
+                border-radius: 0;
+            }
+            li + li { margin-top: -1px; }
+            li:first-child { @include border-radius( $border-radius $border-radius 0 0 ); }
+            li:first-child + li { border-radius: 0; }
+            li:last-child { @include border-radius( 0 0 $border-radius $border-radius ); }
+        }
+    }
+
+
+    // Rows and colls
+    .k-gantt-rows {}
+    .k-gantt-columns {}
+    .k-gantt-columns .k-nonwork-hour {
+        background-color: rgba( $panel-text, .025 );
+    }
+
+
+    .k-gantt-dependencies {}
+    .k-line {
+        color: mix( $panel-text, $panel-bg );
+        background-color: mix( $panel-text, $panel-bg );
+    }
+    .k-line.k-state-selected {
+        color: $header-selected-bg;
+        background-color: $header-selected-bg;
+    }
+
+    .k-task-dot {}
+    .k-task-dot::before {
+        background-color: $panel-text;
+    }
+    .k-task-dot:hover::before,
+    .k-task-dot.k-state-hover::before {
+        border-color: $panel-text;
+        background-color: $panel-bg;
+    }
+
+
+    // Milestone
+    .k-task-milestone {
+        border-color: darken( $header-border, 10 );
+        background-color: $header-border;
+    }
+    .k-task-milestone.k-state-selected {
+        border-color: darken( $header-selected-border, 10 );
+        background-color: $header-selected-border;
+    }
+
+
+    // Summary
+    .k-task-summary {
+        border-color: mix( $panel-text, $panel-bg );
+        color: mix( $panel-text, $panel-bg );
+        background-color: mix( $panel-text, $panel-bg );
+    }
+    .k-task-summary-complete {
+        border-color: $panel-text;
+        color: $panel-text;
+        background-color: $panel-text;
+    }
+    .k-task-summary.state-selected {
+        border-color: mix( $header-selected-bg, $panel-bg );
+        color: mix( $header-selected-bg, $panel-bg );
+        background-color: mix( $header-selected-bg, $panel-bg );
+
+        .k-task-summary-complete {
+            border-color: $header-selected-bg;
+            color: $header-selected-bg;
+            background-color: $header-selected-bg;
+        }
+    }
+
+
+    // Tasks
+    .k-task-single {
+        @include appearance( button );
+        @include border-radius( $border-radius );
+
+        .k-task-complete {
+            background: $button-text;
+            opacity: .25;
+        }
+    }
+    .k-task-single.k-state-selected {
+        @include appearance( active-button );
+    }
+
+}

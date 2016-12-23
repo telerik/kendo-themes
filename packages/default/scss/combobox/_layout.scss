@@ -1,0 +1,22 @@
+@include exports("combobox/layout") {
+
+    .k-combobox {
+
+        .k-input {}
+
+        .k-select {}
+
+        // Compact
+        @include compact {
+
+            .k-input {
+                padding: $input-padding-y-sm $input-padding-x-sm;
+            }
+
+            .k-select {
+                padding: $button-padding-y-sm;
+            }
+        }
+    }
+
+}

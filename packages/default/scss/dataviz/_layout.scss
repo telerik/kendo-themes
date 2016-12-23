@@ -1,0 +1,486 @@
+// TODO: chart variables
+$chart-tap-highlight-color: rgba(0, 0, 0, 0);
+
+$chart-font-size: $base-font-size !default;
+$chart-tooltip-font-size: .929em !default;
+$chart-label-font-size: .857em !default;
+$chart-title-font-size: 1.143em !default;
+
+@include exports('dataviz/charts/layout') {
+
+    $selection-handle-size: 22px !default;
+
+    // Exported variables
+    .k-var--chart-font {
+        font-size: $chart-font-size;
+    }
+
+    .k-var--chart-title-font {
+        font-size: $chart-title-font-size;
+    }
+
+    .k-var--chart-label-font {
+        font-size: $chart-label-font-size;
+    }
+
+    // Elements
+    .k-chart,
+    .k-sparkline,
+    .k-stockchart {
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $chart-tap-highlight-color;
+        border-width: 0;
+    }
+
+    .k-chart,
+    .k-stockchart {
+        font-size: $chart-font-size;
+        font-family: $font-family;
+        display: block;
+        height: 400px;
+    }
+
+    .k-chart-surface {
+        height: 100%;
+    }
+
+    .k-chart-tooltip table {
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+
+    .k-chart-tooltip {
+        font-size: $chart-tooltip-font-size;
+        line-height: 1.154em;
+        padding: .308em .692em;
+    }
+
+    .k-chart-tooltip th {
+        width: auto;
+        text-align: center;
+        padding: 1px;
+    }
+
+    .k-chart-tooltip td {
+        width: auto;
+        text-align: left;
+        padding: .1em .308em;
+        line-height: 1.538em;
+        vertical-align: middle;
+    }
+
+    .k-chart-crosshair-tooltip,
+    .k-chart-shared-tooltip {
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .k-chart-shared-tooltip {
+        padding: 1em;
+        line-height: 1.538em;
+    }
+
+    .k-chart-shared-tooltip-marker {
+        display: block;
+        width: 15px;
+        height: 3px;
+        vertical-align: middle;
+    }
+
+    /* Selection */
+    .k-selector {
+        position: absolute;
+        -webkit-transform: translateZ(0);
+    }
+
+    .k-selection {
+        position: absolute;
+        height: 100%;
+        border-width: 1px;
+        border-style: solid;
+        border-bottom: 0;
+    }
+
+    .k-selection-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .k-handle {
+        width: $selection-handle-size;
+        height: $selection-handle-size;
+        border-width: 1px;
+        border-style: solid;
+        z-index: 1;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .k-handle div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .k-left-handle {
+        left: -($selection-handle-size / 2);
+    }
+
+    .k-right-handle {
+        right: -($selection-handle-size / 2);
+    }
+
+    .k-left-handle div {
+        margin: -20px 0 0 -15px;
+        padding: 40px 30px 0 0;
+    }
+
+    .k-right-handle div {
+        margin: -20px 0 0 -15px;
+        padding: 40px 0 0 30px;
+    }
+
+    .k-mask {
+        position: absolute;
+        height: 100%;
+    }
+
+    .k-border {
+        width: 1px;
+        height: 100%;
+        position: absolute;
+    }
+
+    .k-marquee {
+        position: absolute;
+        z-index: 100000;
+    }
+
+    .k-marquee-color,
+    .k-marquee-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Navigator hint */
+    .k-navigator-hint div {
+        position: absolute;
+    }
+
+    .k-navigator-hint .k-scroll {
+        position: absolute;
+        height: 4px;
+    }
+
+    .k-navigator-hint .k-tooltip {
+        margin-top: 20px;
+        min-width: 160px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    /* Sparklines */
+    .k-sparkline,
+    .k-sparkline span {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .k-sparkline span {
+        height: 100%;
+        width: 100%;
+    }
+
+    .k-chart-dragging {
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+}
+
+
+@include exports("dataviz/diagram/layout") {
+
+    .k-diagram {
+        height: 600px;
+    }
+
+    .k-diagram .km-scroll-wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .k-diagram .km-scroll-wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .k-canvas-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* IE8- */
+    .k-diagram img {
+        box-sizing: content-box;
+    }
+}
+
+
+@include exports("dataviz/map/layout") {
+
+    // Layout
+    .k-map {
+        height: 600px;
+
+        // Scroll wrap
+        .k-scroll-wrapper {
+            width: 100%;
+            height: 100%;
+            user-select: none;
+            position: absolute;
+        }
+        .k-touch-scrollbar { display: none; }
+
+        // Layers
+        .k-layer {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        // Marker
+        .k-marker {
+            margin: -40px 0 0 -14px;
+            width: 28px;
+            height: 40px;
+            cursor: pointer;
+            position: absolute;
+            // TODO: remove once we have icon
+            background: green;
+        }
+
+
+        // TODO: see attribuion
+        // Attribution
+        .k-attribution {
+            padding: $padding-y-sm $padding-x-sm;
+            font-size: $font-size-sm * .75;
+            background-color: rgba( $panel-bg, .8);
+            z-index: 1000;
+        }
+
+    }
+
+
+    // Controls
+    .k-map-controls {
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+    .k-pos-top { top: 0; }
+    .k-pos-bottom { bottom: 0; }
+    .k-pos-left { left: 0; }
+    .k-pos-right { right: 0; }
+
+
+    // Navigator
+    .k-navigator {
+        margin: $spacer-x;
+        width: 3.25em;
+        height: 3.25em;
+        border-radius: 80px;
+        position: relative;
+
+        .k-pdf-export & { display: none; }
+
+
+        // Buttons
+        button {
+            border-color: transparent;
+            background: none;
+        }
+        .k-button {
+            margin: 0;
+            padding: 0;
+            border-radius: 100%;
+            line-height: 1;
+            position: absolute;
+        }
+        .k-navigator-n {
+            margin-left: calc( -#{$font-size/2} - 1px);
+            top: 2px;
+            left: 50%;
+        }
+        .k-navigator-e {
+            margin-top: calc( -#{$font-size/2} - 1px);
+            right: 2px;
+            top: 50%;
+        }
+        .k-navigator-s  {
+            margin-left: calc( -#{$font-size/2} - 1px);
+            bottom: 2px;
+            left: 50%;
+        }
+        .k-navigator-w {
+            margin-top: calc( -#{$font-size/2} - 1px);
+            left: 2px;
+            top: 50%;
+        }
+    }
+
+
+    // Zoom control
+    .k-zoom-control {
+        margin: $spacer-x;
+        border: 0;
+        background: none;
+        display: flex;
+
+        .k-pdf-export & { display: none; }
+
+
+        // Buttons
+        .k-button {
+            padding: $button-padding-y;
+        }
+    }
+    .k-buttons-horizontal {}
+    .k-buttons-vertical {
+        flex-direction: vertical;
+    }
+
+}
+
+
+@include exports("dataviz/treemap/layout") {
+
+    // Base
+    .k-treemap {
+        height: 400px;
+        overflow: hidden;
+
+
+        // Tile
+        .k-treemap-tile {
+            margin: -1px 0 0 -1px;
+            height: 100%;
+            box-sizing: border-box;
+            border: 1px solid;
+            border-color: inherit;
+            color: inherit;
+            background-color: inherit;
+            overflow: hidden;
+            position: absolute;
+        }
+        > .k-treemap-tile {
+            position: relative;
+        }
+
+        // Title
+        .k-treemap-title {
+            padding: $padding-y-sm $padding-x-sm;
+            border-width: 0 0 1px;
+            border-style: solid;
+            background-position: 0 0;
+            background-repeat: repeat-x;
+        }
+        .k-treemap-title-vertical {
+            padding: $padding-x-sm $padding-y-sm;
+            width: $line-height-em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+
+            > div {
+                transform-origin: right;
+                transform: rotate(-90deg);
+                position: absolute;
+                top: 0;
+                right: 1em;
+            }
+        }
+
+
+        // Wrap
+        .k-treemap-wrap {
+            border-color: inherit;
+            color: inherit;
+            background-color: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+        .k-treemap-title + .k-treemap-wrap {
+            top: calc( #{($padding-y-sm*2) + $line-height} + 1px);
+        }
+        .k-treemap-title-vertical + .k-treemap-wrap {
+            left: calc( #{($padding-y-sm*2) + $line-height} + 1px);
+        }
+
+
+        // Leaf
+        .k-leaf {
+            padding: $padding-x-sm;
+        }
+    }
+
+}
+
+
+@include exports("chart/variables") {
+
+    // export variables to allow use in scripts
+    $exported: (
+        accent: $accent,
+        base: $base-bg,
+        background: $widget-bg,
+
+        border-radius: $border-radius,
+
+        normal-background: $base-bg,
+        normal-text-color: $base-text,
+        hover-background: $hover-bg,
+        hover-text-color: $hover-text,
+        selected-background: $selected-bg,
+        selected-text-color: $selected-text,
+
+        success: $success,
+        info: $info,
+        warning: $warning,
+        error: $error,
+
+        series-a: $series-a,
+        series-b: $series-b,
+        series-c: $series-c,
+        series-d: $series-d,
+        series-e: $series-e,
+        series-f: $series-f
+    );
+
+    @each $name, $value in $exported {
+        $type: type-of($value);
+
+        .k-var--#{$name} {
+            @if $type == 'color' {
+                // background-color can store any color
+                background-color: $value;
+            } @else if $type == 'number' {
+                // margin-top can store positive & negative values
+                margin-top: $value;
+            }
+        }
+    }
+}

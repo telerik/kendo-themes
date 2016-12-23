@@ -1,0 +1,14 @@
+// Core
+@import "core/import-once";
+@import "core/placeholder-selectors";
+@import "core/data-uri";
+
+
+// Utils
+@import "utils/decoration";
+@import "utils/compact";
+@import "utils/blend-modes";
+
+
+// Appearance
+@import "appearance/all";

@@ -2,15 +2,18 @@ options:
     verbose: true
 
 files:
-    include: 'styles/**/*.scss'
+    include: 'src/**/*.scss'
     ignore:
-        - 'styles/mixins/*.scss'
+        - 'src/mixins/**/*.scss'
 
 rules:
     no-ids: 2
     property-sort-order: 0
 
-    indentation: 0
+    indentation:
+        - 2
+        -
+          size: 4
 
     force-element-nesting: 0
     force-pseudo-nesting: 0
@@ -18,6 +21,21 @@ rules:
     no-vendor-prefixes: 0
 
     no-css-comments: 0
+    no-color-keywords: 0
+    no-color-literals: 0
+    hex-length: 0
     no-misspelled-properties: 0
     no-trailing-whitespace: 2
     no-qualifying-elements: 0
+
+    pseudo-element: 2
+
+
+
+
+    final-newline: 0
+    empty-line-between-blocks: 0
+    placeholder-in-extend: 0
+    quotes: 0
+    space-between-parens: 0
+    no-empty-rulesets: 0

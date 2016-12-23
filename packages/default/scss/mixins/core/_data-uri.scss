@@ -1,0 +1,16 @@
+$data-uris: () !default;
+
+/// register-data-uri mixin
+/// This mixin registers a data URI that can be used instead of a file reference
+/// @access public
+/// @param {String} $name - The name of the resource
+/// @param {String} $content - The data URI of the resource
+/// @require $data-uris
+@mixin register-data-uri($name, $content) {
+    @if (map-has-key($data-uris, $name)) {
+        @warn "Attempt to redefine data URI of file `#{$name}`.";
+    }
+
+    $data-uris: map-merge($data-uris, ($name: $content)) !global;
+}
+

@@ -4,34 +4,9 @@
  * This script creates a webpack entry for each of the packages,
  * and passes it through the kendo-common-tasks theme config.
  */
-var glob = require('glob');
-var path = require('path');
-var fs = require('fs');
-
-var FILES = '{src,styles}/packages/*.scss';
-
-var tmpDir = './.tmp/';
-var createTmpDir = true;
-try {
-    createTmpDir = !fs.statSync(tmpDir).isDirectory();
-} catch(e) {}
-
-if (createTmpDir) {
-    fs.mkdirSync(tmpDir);
-}
-
-var entries =
-    glob.sync(FILES)
-        .reduce(function(entries, filename) {
-            var name = path.basename(filename, '.scss');
-            var entry = tmpDir + name + '.js';
-
-            fs.writeFileSync(entry, 'require("./../' + filename + '")');
-
-            entries[name] = entry;
-
-            return entries;
-        }, {});
+const glob = require('glob');
+const path = require('path');
+const fs = require('fs');
 
 const port = parseInt(process.env.PORT || 3000);
 const devServerPort = port + 1;
@@ -51,7 +26,7 @@ function BrowserSync() {
 BrowserSync.prototype = {
     apply: function(compiler) {
         compiler.plugin("emit", (compilation, callback) => {
-            this.bs.reload("all.css");
+            this.bs.reload("dist.css");
             callback();
         });
     }
@@ -66,10 +41,12 @@ module.exports = require('@telerik/kendo-common-tasks')
             port: devServerPort
         },
         module: { loaders: [] },
-        entry: entries,
+        entry: {
+            'all': './build/all.js'
+        },
         plugins: inDevelopment ? [ new BrowserSync() ] : [],
         output: {
-            path: path.resolve(__dirname, 'dist'),
+            path: path.join(__dirname, 'dist'),
             publicPath: '/dist/',
             filename: '[name].js'
         }

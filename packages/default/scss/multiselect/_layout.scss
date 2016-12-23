@@ -1,0 +1,99 @@
+@include exports("multiselect/layout") {
+
+    // Base
+    .k-multiselect {
+        width: auto;
+        display: flex;
+
+
+        // Compact
+        @include compact {
+            padding: ($input-padding-y / 4);
+        }
+
+    }
+
+
+    .k-multiselect-wrap {
+        min-height: calc( #{$input-calc-height} );
+
+        > .k-i-close {
+            display: none;
+            align-self: center;
+            margin-left: auto;
+            margin-right: $padding-y;
+            outline: 0;
+        }
+
+
+        // Token list
+        ul {
+            vertical-align: top;
+        }
+        li.k-button {
+            float: left;
+        }
+
+
+        // Token
+        .k-button {
+            padding: ($padding-y-lg / 2) ($button-padding-x / 2);
+            margin: $padding-y-sm 0 $padding-y-sm $padding-y-sm;
+            cursor: pointer;
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            line-height: inherit;
+
+            .k-select {
+                display: flex;
+
+                .k-i-close {
+                    margin-right: 0;
+                    margin-left: $padding-y * 2;
+                }
+            }
+        }
+
+
+        // Searchbar
+        .k-searchbar {
+            float: left;
+        }
+        .k-input {
+            width: 25px;
+            margin: $padding-y-sm ($padding-y-sm / 2);
+            border: 0;
+            outline: 0;
+            color: inherit;
+            background: none;
+            font: inherit;
+            float: left;
+        }
+
+
+        // Icons
+        .k-i-loading {
+            position: absolute;
+            right: $padding-y-sm;
+            top: $padding-y-sm;
+        }
+
+
+        // TODO: clear icon must be displayed when valur is present
+        &:hover,
+        .k-state-hover > &,
+        .k-state-focused > & {
+            .k-multiselect-wrap {
+                > .k-i-close {
+                    display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+
+}

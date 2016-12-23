@@ -1,0 +1,97 @@
+// TODO: button variables
+$button-focused-box-shadow: 0 0 0 2px darken($widget-bg, 6%) !default;
+$button-active-box-shadow: inset 0 3px 5px darken($widget-bg, 9%) !default;
+
+$primary-focused-box-shadow: 0 0 0 2px lighten($primary-button-bg, 23%) !default;
+$primary-active-box-shadow: inset 0 3px 5px desaturate($primary-button-bg, 3%) !default;
+
+$buttongroup-button-focused-box-shadow: inset 0 0 0 2px darken($base-bg, 5%) !default;
+$buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary-button-bg, 2%) !default;
+
+@include exports('button/theme') {
+
+    // Default button
+    .k-button {
+        @include appearance( button );
+
+        // Hover state
+        &:hover,
+        &.k-state-hover {
+            @include appearance( hovered-button );
+        }
+
+        // Pressed state
+        &:active,
+        &.k-state-active {
+            @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
+        }
+
+        // Focused state
+        &:focus,
+        &.k-state-focused {
+            box-shadow: $button-focused-box-shadow;
+        }
+
+    }
+
+
+    // Primary button
+    .k-primary {
+        @include appearance( primary-button );
+
+        // Hovoer state
+        &:hover,
+        &.k-state-hover {
+            @include appearance( hovered-primary-button );
+        }
+
+        // Active state
+        &:active,
+        &.k-state-active {
+            @include appearance( active-primary-button );
+        }
+
+        // Focused state
+        &:focus,
+        &.k-state-focused {
+            box-shadow: $primary-focused-box-shadow;
+        }
+
+    }
+
+    //DropDown Button
+    kendo-dropdownbutton.k-state-focused > .k-button,
+    kendo-dropdownbutton:focus > .k-button {
+        box-shadow: $button-focused-box-shadow;
+    }
+
+    // Button group
+    .k-button-group {
+
+        // Active state
+        .k-button:active,
+        .k-button.k-state-active {
+            @include appearance( pressed-button );
+        }
+
+        // Focused state
+        .k-button:focus,
+        .k-button.k-state-focused {
+            // TODO: check with design
+            box-shadow: inset $button-focused-box-shadow;
+        }
+
+    }
+
+    //SplitButton
+    //TODO: Wait for final design + revise
+    kendo-splitbutton.k-state-focused {
+        box-shadow: $button-focused-box-shadow;
+    }
+    kendo-splitbutton.k-button-group .k-button {
+        &:active,
+        &.k-state-active {
+            @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
+        }
+    }
+}

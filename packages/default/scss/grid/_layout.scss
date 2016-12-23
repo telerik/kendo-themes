@@ -1,0 +1,340 @@
+@include exports('grid/layout') {
+    $header-padding: $spacer !default;
+
+    .k-grid {
+        display: block;
+        position: relative;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .k-grid table {
+        width: 100%;
+        margin: 0; /* override CSS libraries */
+        max-width: none;
+        border-collapse: separate;
+        border-spacing: 0;
+        empty-cells: show;
+        border-width: 0;
+        outline: none;
+    }
+
+    .k-grid-toolbar,
+    .k-grouping-header {
+        display: block;
+        border-width: 0 0 1px;
+        border-style: solid;
+    }
+
+    .k-grid-header {
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+
+        th>.k-link>.k-icon {
+            vertical-align: text-bottom;
+        }
+    }
+
+    .k-grid-footer {
+        border-width: 1px 0 0;
+        border-style: solid;
+    }
+
+    .k-grid-content table,
+    .k-grid-content-locked>table,
+    .k-grid-footer table,
+    .k-grid-header table {
+        table-layout: fixed;
+    }
+
+    .k-grid-virtual {
+        .k-grid-content {
+            > table {
+                position: absolute;
+                z-index: 1;
+            }
+
+            > .k-height-container {
+                position: relative;
+            }
+        }
+    }
+
+    .k-grid-header th.k-header,
+    .k-filter-row th {
+        overflow: hidden;
+        border-style: solid;
+        border-width: 0 0 1px 1px;
+        padding: $padding-x;
+        font-weight: normal;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: left;
+        line-height: 2.143em;
+    }
+
+    .k-grid-header th.k-header>.k-link {
+        margin: -$header-padding;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .k-grid-content {
+        position: relative;
+        overflow: auto;
+        overflow-x: auto;
+        overflow-y: scroll;
+        min-height: 0%; /* IE9 bug workaround - expanding Grid on hover */
+    }
+
+    .k-grouping-header,
+    .k-filter-row th {
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+
+    .k-filter-row th {
+        padding: .5em;
+    }
+
+    .k-grid-header th.k-header>.k-link {
+        margin: -$header-padding;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .k-filter-row th,
+    .k-grid-toolbar,
+    .k-grouping-header,
+    .k-grid-header th.k-header>.k-link    {
+        padding: $header-padding;
+    }
+
+    .k-grid-content {
+        position: relative;
+        overflow: auto;
+        overflow-x: auto;
+        overflow-y: scroll;
+        min-height: 0%; /* IE9 bug workaround - expanding Grid on hover */
+    }
+
+    .k-grid td {
+        border-style: solid;
+        border-width: 0 0 0 1px;
+        line-height: $line-height;
+        padding: $padding-x;
+        overflow: hidden;
+        vertical-align: middle;
+        text-overflow: ellipsis;
+    }
+
+    .k-grid tbody td:first-child,
+    .k-grid tfoot td:first-child,
+    .k-grid-header th.k-header:first-child,
+    .k-filter-row > th:first-child {
+        border-left-width: 0;
+    }
+
+    .k-grid-content tr:last-child td {
+        border-bottom-width: 0;
+    }
+
+    .k-grid-footer-wrap,
+    .k-grid-header-wrap {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border-style: solid;
+        border-width: 0 1px 0 0;
+        box-sizing: content-box;
+    }
+
+    .k-grid .k-group-col,
+    .k-grid .k-hierarchy-col {
+        width: 30px;
+    }
+
+    td.k-hierarchy-cell {
+        text-align: center;
+        padding: 0;
+
+        > .k-icon {
+            width: 100%;
+            display: inline-block;
+            padding: .5em 0;
+            line-height: 1.6em;
+            outline: 0;
+        }
+    }
+
+    .k-header > .k-grid-filter,
+    .k-header > .k-header-column-menu {
+        float: right;
+        margin: (-$header-padding / 2) (-$header-padding / 2) (-$header-padding / 2) 0;
+        padding: ($header-padding / 2) ($header-padding / 5);
+        position: relative;
+        z-index: 1;
+    }
+
+    .k-grid-pager {
+        border-width: 1px 0 0;
+    }
+
+    /* Editing */
+    .k-edit-cell>.k-textbox,
+    .k-edit-cell>.k-widget,
+    .k-grid-edit-row>td>.k-textbox,
+    .k-grid-edit-row>td>.k-widget,
+    .k-grid-edit-row>td>.text-box {
+        width: 100%;
+    }
+
+    /* Locked columns */
+    .k-grid-content-locked,
+    .k-grid-footer-locked,
+    .k-grid-header-locked {
+        display: inline-block;
+        vertical-align: top;
+        overflow: hidden;
+        position: relative;
+        border-style: solid;
+        border-width: 0 1px 0 0;
+    }
+
+    .k-grid-content-locked+.k-grid-content,
+    .k-grid-footer-locked+.k-grid-footer-wrap,
+    .k-grid-header-locked+.k-grid-header-wrap {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .k-grid-header-locked>table,
+    .k-grid-header-wrap>table {
+        margin-bottom: -1px;
+    }
+
+    .k-grid-header .k-resize-handle,
+    .k-grid > .k-resize-handle {
+        position: absolute;
+        height: 25px;
+        cursor: col-resize;
+        z-index: 2;
+    }
+
+    /* Grid grouping */
+    .k-grid .k-grouping-row td,
+    .k-grid .k-hierarchy-cell {
+        overflow: visible;
+    }
+
+    .k-grid-edit-row td {
+        text-overflow: clip;
+    }
+
+    .k-grouping-header+.k-grid-toolbar {
+        border-width: 0 0 1px;
+    }
+
+    .k-group-footer td {
+        border-style: solid;
+        border-width: 1px 0;
+    }
+
+    .k-group-footer .k-group-cell + td {
+        border-left-width: 1px;
+    }
+
+    .k-grouping-row p {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .k-grouping-row + tr td {
+        border-top-width: 1px;
+    }
+
+    .k-grouping-row .k-group-cell,
+    .k-grouping-row+tr .k-group-cell {
+        text-overflow: none;
+    }
+
+    .k-grid .k-hierarchy-cell+td {
+        border-left-width: 0;
+    }
+
+    .k-grouping-header {
+        line-height: 2;
+        padding: $padding-x $padding-y-lg;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+
+    .k-header.k-drag-clue {
+        position: absolute;
+        z-index: 10003;
+        border-style: solid;
+        border-width: 1px;
+        font-size: .9em;
+        padding: $padding-y-lg $padding-x;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: default;
+        line-height: 1em;
+        border-radius: $border-radius;
+    }
+
+    .k-grouping-dropclue {
+        position: absolute;
+        width: 12px;
+        height: 30px;
+
+        &::before {
+            display: inline-block;
+            content: ' ';
+            width: 12px;
+            height: 12px;
+            border-width: 6px;
+            border-style: solid;
+            box-sizing: border-box;
+        }
+    }
+
+    .k-grouping-header .k-group-indicator {
+        display: inline-block;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: $border-radius;
+        margin: 0 0 0 $padding-y;
+        padding: $padding-y-lg $padding-x;
+        line-height: 1em;
+    }
+
+    .k-grouping-header .k-link {
+        display: inline-block;
+        border-width: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .k-grouping-header .k-button {
+        border: 0;
+        padding: 0;
+        background: transparent;
+        line-height: 1;
+        vertical-align: middle;
+    }
+
+    .k-grouping-header .k-link .k-icon {
+        vertical-align: middle;
+    }
+
+    .k-grouping-header .k-button-icon {
+        width: 1.143em;
+        height: 1.143em;
+    }
+
+    .k-grouping-header a,
+    .k-grouping-header .k-button {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,159 @@
+@include exports("toolbar/layout") {
+
+    // Base
+    .k-toolbar {
+        padding: $padding-x;
+        line-height: $form-line-height;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
+
+        > * {
+            display: inline-flex;
+            vertical-align: middle;
+        }
+        > * + * {
+            margin-left: $padding-x;
+        }
+        > .k-overflow-anchor + * {
+            margin-left: 0;
+        }
+
+        .k-button,
+        .k-button-group,
+        .k-separator,
+        .k-split-button,
+        .k-textbox,
+        .k-widget,
+        label {
+            vertical-align: middle;
+        }
+
+
+        // All buttons
+        .k-button:not(:hover, .k-state-hover, :active, .k-state-active) {
+            border-color: transparent;
+            color: inherit;
+            background-color: transparent;
+            background-image: none;
+        }
+
+
+        // Button
+        .k-button {
+            border-radius: 0;
+        }
+
+        // Toggle button
+        .k-toggle-button {}
+
+        // Split button
+        .k-split-button {}
+
+        // Button group
+        .k-button-group {}
+        .k-button-group .k-group-start,
+        .k-button-group .k-button:first-child,
+        .k-button-group .k-group-end,
+        .k-button-group .k-button:last-child {
+            border-radius: 0;
+        }
+
+
+        // Overflow anchor
+        .k-overflow-anchor {
+            width: $form-line-height * 1em;
+            height: $form-line-height * 1em;
+            padding: $button-padding-y * 3;
+            box-sizing: content-box;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        // Separator
+        .k-separator {
+            width: 0;
+            margin-top: -8px;
+            margin-bottom: -8px;
+            border-width: 0 0 0 1px;
+            border-style: solid;
+            border-color: inherit;
+        }
+
+
+
+
+        // Compact
+        @include compact {
+
+
+            // Button
+            .k-button {}
+
+            // Toggle button
+            .k-toggle-button {}
+
+            // Split button
+            .k-split-button {}
+
+            // Button group
+            .k-button-group {}
+
+            // Overflow anchor
+            .k-overflow-anchor {
+                padding: $button-padding-y-sm;
+            }
+
+            // Separator
+            .k-separator {}
+
+        }
+    }
+
+
+    .k-overflow-container {
+
+        // Group
+        .k-overflow-group {
+            padding-bottom: $spacer-y / 2;
+            margin-bottom: $spacer-y / 2;
+            border-width: 0 0 1px;
+            border-style: solid;
+            border-color: inherit;
+            flex-direction: column;
+
+            .k-button {
+                margin: 0;
+                border-radius: 0;
+            }
+        }
+
+        // Items
+        .k-overflow-button {
+            padding: $list-item-padding-y $list-item-padding-x;
+            border-width: 0;
+            border-radius: 0;
+            display: flex;
+        }
+
+        // Hidden items
+        .k-overflow-hidden {
+            display: none;
+        }
+    }
+    .k-split-container {
+
+        // Items
+        .k-button {
+            padding: $list-item-padding-y $list-item-padding-x;
+            border-width: 0;
+            border-radius: 0;
+            display: flex;
+        }
+
+    }
+
+}

@@ -1,0 +1,139 @@
+@include exports("splitter/layout") {
+    $splitter-resize-icon-size: 10px !default;
+    $splitter-drag-handle-length: 20px !default;
+    $splitter-drag-handle-thickness: 2px !default;
+    $splitter-drag-icon-margin: 7px !default;
+
+    // Base
+    .k-splitter {
+        height: 300px;
+        position: relative;
+
+        // Pane
+        .k-pane {
+            overflow: hidden;
+        }
+        .k-scrollabele {
+            overflow: auto;
+        }
+        .k-splitter-resizing {
+            overflow: hidden;
+        }
+
+        // Nested
+        .k-pane > & {
+            border-width: 0;
+            overflow: hidden;
+        }
+
+        // Loading
+        .k-pane-loading {
+            position: static;
+            top: 50%;
+            left: 50%;
+        }
+
+    }
+
+
+    // Splitbar
+    .k-ghost-splitbar,
+    .k-splitbar {
+        border-style: solid;
+        outline: 0;
+        position: absolute;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .k-splitbar-draggable-horizontal { cursor: w-resize; }
+    .k-splitbar-draggable-vertical { cursor: n-resize; }
+
+    .k-ghost-splitbar-horizontal,
+    .k-splitbar-horizontal {
+        width: 8px;
+        border-width: 0;
+        background-repeat: repeat-y;
+        flex-direction: column;
+        top: 0;
+    }
+    .k-ghost-splitbar-vertical,
+    .k-splitbar-vertical {
+        height: 8px;
+        border-width: 0;
+        background-repeat: repeat-x;
+        flex-direction: row;
+        left: 0;
+    }
+
+    .k-splitbar-static-horizontal { width: 1px; }
+    .k-splitbar-static-vertical { height: 1px; }
+
+    .k-splitbar.k-splitbar-horizontal.k-splitbar-draggable-horizontal,
+    .k-splitbar.k-splitbar-vertical.k-splitbar-draggable-vertical {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .k-icon {
+            display: block;
+        }
+    }
+    .k-splitbar.k-splitbar-horizontal.k-splitbar-draggable-horizontal {
+        flex-direction: column;
+    }
+
+    .k-splitbar.k-splitbar-vertical.k-splitbar-draggable-vertical {
+        flex-direction: row;
+    }
+
+    .k-splitbar-draggable-horizontal .k-resize-handle {
+        position: static;
+        width: $splitter-drag-handle-thickness;
+        height: $splitter-drag-handle-length;
+    }
+
+    .k-splitbar-horizontal,
+    .k-splitbar-vertical {
+        .k-icon {
+            font-size: $splitter-resize-icon-size;
+        }
+
+        .k-resize-handle {
+            display: none;
+        }
+    }
+
+
+    .k-splitbar-horizontal .k-i-arrow-60-left {
+        margin-bottom: $splitter-drag-icon-margin;
+    }
+
+    .k-splitbar-horizontal .k-i-arrow-60-right {
+        margin-top: $splitter-drag-icon-margin;
+    }
+
+    .k-splitbar-vertical .k-i-arrow-60-up {
+        margin-right: $splitter-drag-icon-margin;
+    }
+
+    .k-splitbar-vertical .k-i-arrow-60-down {
+        margin-left: $splitter-drag-icon-margin;
+    }
+
+    .k-splitbar-draggable-vertical .k-resize-handle {
+        position: static;
+        width: $splitter-drag-handle-length;
+        height: $splitter-drag-handle-thickness;
+    }
+
+    .k-pane > .k-splitter-overlay {
+        opacity: 0;
+        position: absolute;
+    }
+}

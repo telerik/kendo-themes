@@ -1,0 +1,33 @@
+@include exports("menu/theme") {
+
+    // Theme
+    .k-menu {
+        border-width: 0;
+        color: inherit;
+        background-color: transparent;
+
+        .k-item {
+            border-width: 0;
+        }
+
+        .k-link {}
+        .k-item.k-state-hover > .k-link {}
+        .k-link.k-state-active {
+            color: $widget-text;
+        }
+
+    }
+    .k-menu-group {
+
+        .k-link {}
+
+        .k-item.k-state-hover > .k-link {
+            @include appearance( hovered-list-item );
+        }
+        .k-link.k-state-active {
+            @include appearance( selected-list-item );
+        }
+
+    }
+
+}

@@ -1,6 +1,7 @@
 node_modules/
 dist/
+/dist.*
 npm-debug.log
-{examples,tests}/**/build/
+examples/**/build/
 .tmp/
 yarn.lock

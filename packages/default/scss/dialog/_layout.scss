@@ -1,0 +1,282 @@
+// TODO: extract or remove modal variables
+$modal-title-padding: 1em !default;
+$modal-title-line-height: 1.2em !default;
+$modal-inner-padding: .5em !default;
+
+@import '../button/layout';
+@import '../action-buttons/layout';
+
+@include exports('action-buttons/layout') {
+
+    .k-dialog {
+        padding-top: 0;
+        min-width: 450px;
+        max-width: 100%;
+        position: fixed;
+        border-width: 0;
+    }
+
+
+    // Title bar
+    .k-dialog .k-window-title-bar {}
+    .k-dialog .k-dialog-title {
+        margin: 0;
+        line-height: $modal-title-line-height;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        cursor: default;
+        flex: 1;
+    }
+
+    // Actions
+    .k-dialog-action {
+        padding: 2px;
+        color: inherit;
+        text-decoration: none;
+        opacity: .2;
+
+        &:hover,
+        &.k-state-hover {
+            color: inherit;
+            text-decoration: none;
+            opacity: .5;
+        }
+    }
+
+
+    // Content
+    .k-dialog .k-content {
+        padding: $modal-inner-padding;
+        outline: 0;
+        overflow: auto;
+        position: relative;
+        flex: 1;
+    }
+
+
+    // Buttons
+    .k-dialog-buttongroup {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+
+        .k-button {
+            // sass-lint:disable no-important
+            width: auto !important;
+            // sass-lint:enable no-important
+            white-space: normal;
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+    }
+    .k-dialog-button-layout-stretched {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+}
+
+// TODO: examine old styles for characteristic styling
+
+// $window-titlebar-size: 2.667em;
+// $window-padding: 1.143em;
+// $window-z-index: 10001;
+
+// .k-window {
+//     border-width: 0;
+//     display: inline-block;
+//     padding-top: $window-titlebar-size;
+//     position: absolute;
+//     z-index: $window-z-index;
+//     min-width: 450px;
+//     max-width: 100%;
+
+//     &.k-window-titleless {
+//         padding-top: 0;
+//     }
+// }
+
+// $icon-sizing-factor: (.875 / .6);
+
+// .k-window-titlebar {
+//     font-size: 1.286em;
+//     display: block;
+//     height: $window-titlebar-size;
+//     line-height: $window-titlebar-size;
+//     margin-top: -$window-titlebar-size;
+//     min-height: 1em;
+//     position: absolute;
+//     white-space: nowrap;
+//     width: 100%;
+
+//     .k-window-actions {
+//         line-height: $window-titlebar-size;
+//         position: absolute;
+//         right: 0;
+//         top: 0;
+//         white-space: nowrap;
+//     }
+
+//     .k-window-action {
+//         cursor: pointer;
+//         display: inline-block;
+//         border: 0;
+//         text-decoration: none;
+//         text-align: center;
+//         vertical-align: middle;
+//         box-sizing: border-box;
+//         padding: 0;
+//         width: $window-titlebar-size;
+//         line-height: inherit;
+
+//         .k-icon {
+//             margin: 0;
+//             vertical-align: middle;
+//         }
+
+//         &:hover,
+//         &:focus {
+//             .k-icon {
+//                 font-size: ($icon-size * $icon-sizing-factor);
+//             }
+//         }
+//     }
+// }
+
+// .k-window-title {
+//     cursor: default;
+//     left: $window-padding - .278em;
+//     overflow: hidden;
+//     position: absolute;
+//     right: $window-padding;
+//     text-overflow: ellipsis;
+
+//     .k-image {
+//         margin: 0 5px 0 0;
+//         vertical-align: middle;
+//     }
+// }
+
+// .k-window-content {
+//     height: 100%;
+//     outline: 0;
+//     overflow: auto;
+//     padding: $window-padding;
+//     position: relative;
+// }
+
+// .k-window-iframecontent {
+//     overflow: visible;
+//     padding: 0;
+// }
+
+// .k-window > .k-resize-handle {
+//     background-color: $widget-bg;
+//     filter: alpha(opacity=0);
+//     font-size: 0;
+//     line-height: 6px;
+//     opacity: 0;
+//     position: absolute;
+//     z-index: 1;
+//     zoom: 1;
+// }
+
+// // resize handles
+// $resizer-size: 6px;
+// $resizer-offset: -$resizer-size / 2;
+
+// .k-resize-n {
+//     cursor: n-resize;
+//     height: $resizer-size;
+//     left: 0;
+//     top: $resizer-offset;
+//     width: 100%;
+// }
+
+// .k-resize-e {
+//     cursor: e-resize;
+//     height: 100%;
+//     right: $resizer-offset;
+//     top: 0;
+//     width: $resizer-size;
+// }
+
+// .k-resize-s {
+//     bottom: $resizer-offset;
+//     cursor: s-resize;
+//     height: $resizer-size;
+//     left: 0;
+//     width: 100%;
+// }
+
+// .k-resize-w {
+//     cursor: w-resize;
+//     height: 100%;
+//     left: $resizer-offset;
+//     top: 0;
+//     width: $resizer-size;
+// }
+
+// .k-resize-se {
+//     bottom: $resizer-offset;
+//     cursor: se-resize;
+//     height: 1em;
+//     right: $resizer-offset;
+//     width: 1em;
+// }
+
+// .k-resize-sw {
+//     bottom: $resizer-offset;
+//     cursor: sw-resize;
+//     height: $resizer-size;
+//     left: $resizer-offset;
+//     width: $resizer-size;
+// }
+
+// .k-resize-ne {
+//     cursor: ne-resize;
+//     height: $resizer-size;
+//     right: $resizer-offset;
+//     top: $resizer-offset;
+//     width: $resizer-size;
+// }
+
+// .k-resize-nw {
+//     cursor: nw-resize;
+//     height: $resizer-size;
+//     left: $resizer-offset;
+//     top: $resizer-offset;
+//     width: $resizer-size;
+// }
+
+// .k-overlay,
+// .k-dialog-wrapper,
+// .k-dialog-wrapper > .k-animation-container,
+// .k-dialog-wrapper > .k-animation-container > div {
+//     top: 0;
+//     left: 0;
+//     position: fixed;
+//     height: 100%;
+//     width: 100%;
+// }
+
+// .k-dialog-wrapper > .k-animation-container {
+//     z-index: $window-z-index;
+// }
+
+// .k-overlay {
+//     background-color: invert($widget-bg);
+//     opacity: .5;
+//     z-index: $window-z-index;
+// }
+
+// .k-window .k-overlay {
+//     background-color: $widget-bg;
+//     height: 100%;
+//     opacity: 0;
+//     position: absolute;
+//     width: 100%;
+// }
+// }

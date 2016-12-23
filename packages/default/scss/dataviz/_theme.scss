@@ -1,0 +1,164 @@
+// TODO: chart variables
+
+$chart-crosshair-background: rgba(0, 0, 0, .5) !default;
+$chart-crosshair-shared-tooltip-color: $base-text !default;
+$chart-crosshair-shared-tooltip-background: $base-bg !default;
+$chart-crosshair-shared-tooltip-border: rgba(0, 0, 0, .08) !default;
+
+$chart-notes-background: rgba(0, 0, 0, .5) !default;
+$chart-notes-border: rgba(0, 0, 0, .5) !default;
+$chart-notes-lines: rgba(0, 0, 0, .5) !default;
+
+$error-bars-background: rgba(0, 0, 0, .5) !default;
+
+$chart-selection-marque-background: $series-a !default;
+$selection-border-color: rgba(0, 0, 0, .08) !default;
+$selection-box-shadow: inset 0 1px 7px rgba(0, 0, 0, .15) !default;
+
+@include exports('dataviz/charts/theme') {
+    // Exported variables
+    .k-var--chart-inactive {
+        background-color: $chart-inactive;
+    }
+
+    .k-var--chart-major-lines {
+        background-color: $chart-major-lines;
+    }
+
+    .k-var--chart-minor-lines {
+        background-color: $chart-minor-lines;
+    }
+
+    .k-var--chart-area-opacity {
+        opacity: $chart-area-opacity;
+    }
+
+    .k-var--chart-notes-background {
+        background-color: $chart-notes-background;
+    }
+
+    .k-var--chart-notes-border {
+        background-color: $chart-notes-border;
+    }
+
+    .k-var--chart-notes-lines {
+        background-color: $chart-notes-lines;
+    }
+
+    .k-var--chart-crosshair-background {
+        background-color: $chart-crosshair-background;
+    }
+
+    .k-var--chart-error-bars-background {
+        background-color: $error-bars-background;
+    }
+
+    // Elements
+    .k-chart,
+    .k-sparkline,
+    .k-stockchart {
+        background-color: transparent;
+    }
+
+    .k-chart-tooltip {
+        color: $widget-bg;
+        border-radius: $border-radius;
+    }
+
+    .k-chart-tooltip-inverse {
+        color: invert($widget-bg);
+    }
+
+    .k-chart-crosshair-tooltip,
+    .k-chart-shared-tooltip {
+        color: $chart-crosshair-shared-tooltip-color;
+        background-color: $chart-crosshair-shared-tooltip-background;
+        border-color: $chart-crosshair-shared-tooltip-border;
+    }
+
+    .k-selection {
+        border-color: $selection-border-color;
+        box-shadow: $selection-box-shadow;
+    }
+
+    .k-selection-bg {
+        background-color: transparent;
+    }
+
+    .k-handle {
+        cursor: e-resize;
+        @include appearance( button );
+
+        &:hover {
+            @include appearance( hovered-button );
+        }
+    }
+
+    .k-handle div {
+        background-color: transparent;
+    }
+
+    .k-mask {
+        background-color: $widget-bg;
+        opacity: .8;
+    }
+
+    .k-marquee-color {
+        background-color: $chart-selection-marque-background;
+    }
+
+    .k-marquee-color {
+        opacity: .6;
+    }
+
+    // Navigator hint
+    .k-navigator-hint .k-scroll {
+        border-radius: $border-radius;
+    }
+
+    .k-navigator-hint .k-tooltip {
+        border: 0;
+        background: $widget-bg;
+    }
+}
+
+
+
+@include exports("dataviz/treemap/theme") {
+
+    // Treemap
+    .k-treemap {
+
+        // Title
+        .k-treemap-title {
+            @include appearance( header );
+        }
+
+        // Leaf
+        .k-leaf {
+            color: $panel-bg;
+        }
+        .k-leaf.k-inverse {
+            color: $panel-text;
+        }
+        .k-leaf.k-state-hover {
+            box-shadow: inset 0 0 0 3px $panel-border;
+        }
+    }
+
+}
+
+
+// TODO: merge with above
+@include exports("chart/theme") {
+
+    // Chart
+    .k-chart {}
+    .k-chart-tooltip {
+        color: $panel-bg;
+    }
+    .k-chart-tooltip-inverse {
+        color: $panel-text;
+    }
+
+}

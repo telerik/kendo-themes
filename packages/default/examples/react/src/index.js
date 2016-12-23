@@ -4,8 +4,8 @@ import ReactDOM from 'react-dom'
 import { Slider } from '@telerik/kendo-react-inputs';
 import { Dialog } from '@telerik/kendo-react-dialog';
 import { Button } from '@telerik/kendo-react-buttons';
-import '@telerik/kendo-theme-default/styles/slider/main.scss';
-import '@telerik/kendo-theme-default/styles/dialog/main.scss';
+import '@progress/kendo-theme-default/styles/slider/main.scss';
+import '@progress/kendo-theme-default/styles/dialog/main.scss';
 
 class Container extends React.Component {
     constructor(props) {

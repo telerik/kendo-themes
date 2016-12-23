@@ -1,0 +1,30 @@
+@include exports('progressbar/theme') {
+
+    $progressbar-bg: $base-bg !default;
+    $progressbar-border: rgba(0, 0, 0, .08) !default;
+    $progressbar-active-border: darken($accent, 4%) !default;
+    $progressbar-chunk-border: $bg-color !default;
+
+    .k-progressbar {
+        background-color: $progressbar-bg;
+        border-color: $progressbar-border;
+
+        .k-state-selected {
+            border-color: $progressbar-active-border;
+
+        }
+
+        .k-item {
+            border-color: $progressbar-chunk-border;
+        }
+    }
+
+    .k-progressbar-indeterminate {
+        background: url(map-get($data-uris, 'indeterminate.gif'));
+
+        .k-progress-status-wrap,
+        .k-state-selected {
+            display: none;
+        }
+    }
+}

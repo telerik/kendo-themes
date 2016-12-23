@@ -1,0 +1,102 @@
+@include exports('upload/theme') {
+
+    $upload-bg: $widget-bg !default;
+    $upload-border: $border-color !default;
+    $upload-progress-text: $base-text !default;
+    $upload-progress-bg: $info !default;
+    $upload-error-text: $error !default;
+    $upload-error-bg: $error !default;
+    $upload-error-border: lighten($error, 29%) !default;
+    $upload-success-text: $success !default;
+    $upload-success-bg: $success !default;
+    $upload-disabled-text: darken($widget-bg, 27%) !default;
+    $upload-disabled-border: darken($widget-bg, 27%) !default;
+
+    .k-upload {
+        border-radius: $border-radius;
+        border-color: $upload-border;
+
+        .k-upload-files {
+            border-color: $upload-border;
+        }
+
+        .k-file {
+            background-color: $upload-bg;
+            border-color: $upload-border;
+        }
+
+        .k-file-progress {
+            color: $upload-progress-text;
+        }
+
+        .k-file-progress .k-progress {
+            background-color: $upload-progress-bg;
+        }
+
+        .k-file-success {
+            color: $upload-success-text;
+        }
+
+        .k-file-success .k-progress {
+            background-color: $upload-success-bg;
+        }
+
+        .k-file-error {
+            color: $upload-error-text;
+        }
+
+        .k-file-error .k-progress,
+        .k-file-invalid .k-progress {
+            background-color: $upload-error-bg;
+        }
+
+        .k-file-extension-wrapper,
+        .k-multiple-files-extension-wrapper {
+            color: $upload-disabled-text;
+            border-color: $upload-disabled-border;
+        }
+
+        .k-file-invalid .k-file-name-invalid {
+            color: $upload-error-text;
+        }
+
+        .k-file-invalid-extension-wrapper,
+        .k-multiple-files-invalid-extension-wrapper {
+            color: $upload-error-text;
+            border-color: $upload-error-border;
+        }
+
+        .k-file-extension-wrapper::before,
+        .k-multiple-files-extension-wrapper::before {
+            background-color: $upload-bg;
+            border-color: transparent transparent $upload-disabled-border $upload-disabled-border;
+        }
+
+        .k-file-invalid-extension-wrapper::before,
+        .k-multiple-files-invalid-extension-wrapper::before {
+            background-color: $upload-bg;
+            border-color: transparent transparent $upload-error-border $upload-error-border;
+        }
+
+        .k-multiple-files-extension-wrapper::after {
+            border-top-color: $upload-disabled-border;
+            border-left-color: $upload-disabled-border;
+        }
+
+        .k-multiple-files-invalid-extension-wrapper::after {
+            border-top-color: $upload-error-border;
+            border-left-color: $upload-error-border;
+        }
+
+        .k-file-size,
+        .k-file-information,
+        .k-file-validation-message {
+            color: $upload-disabled-text;
+        }
+
+    }
+
+    .k-dropzone-hovered {
+        background-color: $hover-bg;
+    }
+}

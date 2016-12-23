@@ -1,0 +1,42 @@
+// TODO: extract or remove alert color variables
+$alert-info-border: $info !default;
+$alert-info-text: $accent-contrast !default;
+$alert-info-bg: $info !default;
+$alert-success-border: $success !default;
+$alert-success-text: $accent-contrast !default;
+$alert-success-bg: $success !default;
+$alert-warning-border: $warning !default;
+$alert-warning-text: $validator-warning-text !default;
+$alert-warning-bg: $warning !default;
+$alert-error-border: $error !default;
+$alert-error-text: $accent-contrast !default;
+$alert-error-bg: $error !default;
+
+@include exports("notification/theme") {
+
+    // Theme
+    .k-notification {
+        @include border-radius( $border-radius );
+    }
+    .k-notification-info {
+        border-color: $alert-info-border;
+        color: $alert-info-text;
+        background-color: $alert-info-bg;
+    }
+    .k-notification-success {
+        border-color: $alert-success-border;
+        color: $alert-success-text;
+        background-color: $alert-success-bg;
+    }
+    .k-notification-warning {
+        border-color: $alert-warning-border;
+        color: $alert-warning-text;
+        background-color: $alert-warning-bg;
+    }
+    .k-notification-error {
+        border-color: $alert-error-border;
+        color: $alert-error-text;
+        background-color: $alert-error-bg;
+    }
+
+}

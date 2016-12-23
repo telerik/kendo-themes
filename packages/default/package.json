@@ -1,7 +1,7 @@
 {
-  "name": "@telerik/kendo-theme-default",
+  "name": "@progress/kendo-theme-default",
   "description": "SASS resources for the default Kendo UI theme",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "keywords": [
     "Kendo UI",
     "Theme"
@@ -10,11 +10,12 @@
     "lint": "sass-lint -v -c ./sass-lint.yml",
     "start": "webpack-dev-server",
     "build": "webpack --optimize-minimize --bail",
+    "watch": "webpack --watch",
     "embed-assets": "node build/embed-assets.js",
     "test": "npm run lint && npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "main": "styles/packages/all.scss",
+  "main": "dist.css",
   "author": "Progress",
   "license": "Apache-2.0",
   "devDependencies": {
@@ -27,6 +28,9 @@
     "semantic-release": "^4.3.5",
     "validate-commit-msg": "^1.1.1",
     "webpack": "^1.13.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npm.telerik.com"
   },
   "config": {
     "commitizen": {

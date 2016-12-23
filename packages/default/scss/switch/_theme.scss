@@ -1,0 +1,109 @@
+$switch-on-color: $accent !default;
+$switch-off-color: $text-color !default;
+$switch-border-color: $border-color !default;
+$switch-border-radius: ($switch-size / 2) !default;
+$switch-hover-border-color: $hover-border !default;
+$switch-handle-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .06) !default;
+$switch-focus-box-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
+
+@include exports('switch/theme') {
+    .k-switch,
+    .k-switch-wrapper,
+    .k-switch-container {
+        border-radius: $switch-border-radius;
+        outline: 0;
+    }
+
+    .k-switch-container,
+    .k-switch-wrapper {
+        border-color: $switch-border-color;
+
+        &:hover {
+            border-color: $switch-hover-border-color;
+        }
+    }
+
+    .k-switch-wrapper {
+        background-color: $widget-bg;
+    }
+
+    .k-switch-background {
+        background-position: 4.3em 0;
+        background-repeat: no-repeat;
+    }
+
+    .k-switch-handle {
+        @include appearance( button );
+        box-shadow: $switch-handle-box-shadow;
+        border-radius: 50%;
+    }
+
+    .k-switch-on {
+        .k-switch-handle {
+            @include appearance( primary-button );
+
+            &:active {
+                @include appearance( active-primary-button );
+            }
+        }
+
+        &:hover {
+            .k-switch-handle {
+                @include appearance( hovered-primary-button );
+            }
+        }
+    }
+
+    .k-switch-off {
+        &:hover {
+            .k-switch-handle {
+                @include appearance( hovered-button );
+            }
+        }
+
+        &:action {
+            @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
+        }
+    }
+
+    .k-switch-label-on {
+        color: $switch-on-color;
+        background-color: transparent;
+    }
+
+    .k-switch-label-off {
+        color: $switch-off-color;
+    }
+
+    .k-switch {
+        &:active {
+            box-shadow: $switch-focus-box-shadow;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &.k-state-disabled {
+            cursor: auto;
+
+            .k-switch-container,
+            .k-switch-wrapper {
+                border-color: $switch-border-color;
+                box-shadow: none;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &.k-switch-on {
+                .k-switch-handle {
+                    background: $accent;
+                    border-color: $accent;
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}

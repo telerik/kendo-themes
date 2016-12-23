@@ -1,0 +1,27 @@
+// TODO: extract or remove tooltip padding variables
+$tooltip-padding-y: 1em !default;
+$tooltip-padding-x: .5em !default;
+
+@include exports("tooltip/layout") {
+
+    .k-tooltip {
+        padding: $tooltip-padding-x;
+        border-width: 0;
+        background-repeat: repeat-x;
+        text-align: center;
+        position: absolute;
+        z-index: 12000;
+
+        // Compact
+        // sass-lint:disable mixins-before-declarations
+        @include compact {
+            padding: ($padding-y-sm / 2) $padding-x-sm;
+        }
+        // sass-lint:enable mixins-before-declarations
+    }
+
+    // Callout
+    .k-callout {
+        display: none;
+    }
+}

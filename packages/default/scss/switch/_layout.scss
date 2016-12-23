@@ -1,0 +1,92 @@
+$switch-size: 3em !default;
+$switch-handle-size: (.8 * $switch-size) !default;
+
+@include exports('switch/layout') {
+    $switch-border-width: 1px;
+
+    .k-switch {
+        cursor: pointer;
+        border: 0;
+        display: inline-block;
+        font-size: .714 * $font-size;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+        user-select: none;
+        vertical-align: middle;
+        width: (2 * $switch-size);
+        outline: 0;
+
+        [type='checkbox'] {
+            display: none;
+        }
+    }
+
+    .k-switch,
+    .k-switch-wrapper,
+    .k-switch-container,
+    .k-switch-handle {
+        box-sizing: border-box;
+    }
+
+    .k-switch-wrapper {
+        display: none; // TODO: do not render
+    }
+
+    .k-switch .k-switch-background {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .k-switch-container {
+        padding: (2 * $switch-border-width) 0;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        background: transparent;
+        border-width: 0;
+        transform: translateZ(0);
+    }
+
+    .k-switch-handle {
+        position: relative;
+        width: $switch-handle-size;
+        height: $switch-handle-size;
+        display: inline-block;
+        margin: 0 6px 0 3px;
+        border-width: $switch-border-width;
+        border-style: solid;
+        background-clip: padding-box;
+        vertical-align: middle;
+    }
+
+    .k-switch-label-off {
+        left: $switch-handle-size;
+        margin-left: $padding-y - 1px;
+    }
+
+    .k-switch-label-on {
+        left: -$switch-handle-size;
+        margin-left: -$padding-y / 2;
+    }
+
+    .k-switch-label-on,
+    .k-switch-label-off {
+        top: -$switch-border-width;
+        display: block;
+        text-align: center;
+        position: absolute;
+        text-transform: uppercase;
+        text-shadow: none;
+        line-height: $switch-handle-size;
+        vertical-align: middle;
+    }
+
+    .k-switch-container,
+    .k-switch-wrapper {
+        border-width: $switch-border-width;
+        border-style: solid;
+        background-clip: content-box;
+    }
+}
+

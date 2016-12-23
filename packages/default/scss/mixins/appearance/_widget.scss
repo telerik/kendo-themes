@@ -1,0 +1,52 @@
+$_widget-imported: false !default;
+
+@if ( $_widget-imported == false ) {
+
+    %appearance_widget {
+        color: $widget-text;
+        background-color: $widget-bg;
+        border-color: $widget-border;
+    }
+
+    %appearance_panel {
+        color: $panel-text;
+        background-color: $panel-bg;
+        border-color: $panel-border;
+    }
+    %appearance_popup {
+        color: $popup-text;
+        background-color: $popup-bg;
+        border-color: $popup-border;
+    }
+
+    %appearance_header {
+        color: $header-text;
+        background-color: $header-bg;
+        border-color: $header-border;
+        @include linear-gradient( $header-gradient );
+    }
+    %appearance_hovered-header {
+        color: $header-hovered-text;
+        background-color: $header-hovered-bg;
+        border-color: $header-hovered-border;
+        @include linear-gradient( $header-hovered-gradient );
+    }
+    %appearance_selected-header {
+        color: $header-selected-text;
+        background-color: $header-selected-bg;
+        border-color: $header-selected-border;
+        @include linear-gradient( $header-selected-gradient );
+    }
+
+    $_widget-imported: true;
+
+}
+
+@mixin appearance_widget { @extend %appearance_widget; }
+
+@mixin appearance_panel { @extend %appearance_panel; }
+@mixin appearance_popup { @extend %appearance_popup; }
+
+@mixin appearance_header { @extend %appearance_header };
+@mixin appearance_hovered-header { @extend %appearance_hovered-header };
+@mixin appearance_selected-header { @extend %appearance_selected-header };

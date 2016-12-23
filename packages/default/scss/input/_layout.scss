@@ -1,0 +1,177 @@
+@include exports( 'input/layout' ) {
+
+    $checkbox-radius: $border-radius !default;
+    $radio-radius: 50% !default;
+    $textbox-shadow: 0 2px 2px 1px rgba(0, 0, 0, .06) !default;
+    $fieldset-margin: 30px;
+
+    .k-textbox > input,
+    .k-input,
+    .k-textbox {
+        border-width: 1px;
+        border-style: solid;
+        font-size: inherit;
+        -webkit-appearance: none;
+    }
+
+    .k-input,
+    .k-textbox {
+        @include border-radius( $border-radius );
+        font: inherit;
+        outline: none;
+        padding: $input-padding-y $input-padding-x;
+
+        > input {
+            font: inherit;
+        }
+    }
+
+    .k-textbox {
+        outline: 0;
+        box-sizing: border-box;
+    }
+
+    .k-textbox:focus {
+        box-shadow: $textbox-shadow;
+    }
+
+    .k-input,
+    .k-textbox {
+        &:disabled,
+        &[disabled],
+        &.k-state-disabled {
+            @include disabled;
+        }
+    }
+
+    .k-checkbox,
+    .k-radio {
+        position: absolute;
+        display: inline;
+        opacity: 0;
+        margin: 0;
+        -webkit-appearance: none;
+        overflow: hidden;
+    }
+
+    .k-radio:disabled + .k-radio-label,
+    .k-checkbox:disabled + .k-checkbox-label {
+        @include disabled;
+    }
+
+    .k-checkbox-label,
+    .k-radio-label {
+        position: relative;
+        padding-left: $spacer-x * 1.5;
+        vertical-align: text-top;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: baseline;
+        line-height: 1;
+    }
+
+    .k-checkbox-label::before,
+    .k-radio-label::before {
+        font-family: "WebComponentsIcons";
+        box-sizing: border-box;
+    }
+
+    .k-checkbox-label::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $icon-size;
+        height: $icon-size;
+        text-align: center;
+        font-size: $font-size-sm + 2px;
+        line-height: $line-height * .8;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: $checkbox-radius;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .k-checkbox:indeterminate + .k-checkbox-label::after {
+        box-sizing: border-box;
+        content: "";
+        position: absolute;
+        width: $icon-size / 2;
+        height: $icon-size / 2;
+        top: $icon-size / 4;
+        left: $icon-size / 4;
+    }
+
+    .k-checkbox:indeterminate:disabled + .k-checkbox-label::after {
+        opacity: .5;
+    }
+
+    .k-checkbox:disabled + .k-checkbox-label,
+    .k-checkbox:checked:disabled + .k-checkbox-label {
+        cursor: default;
+    }
+
+    .k-checkbox:checked + .k-checkbox-label::before {
+        content: "\e118";
+    }
+
+    .k-checkbox:checked:disabled + .k-checkbox-label::before {
+        content: "\e118";
+        opacity: .5;
+    }
+
+    .k-checkbox:disabled + .k-checkbox-label:hover::before {
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .k-radio-label::before {
+        content: "";
+        width: $icon-size;
+        height: $icon-size;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: $radio-radius;
+        border-width: 1px;
+        border-style: solid;
+        padding: 0;
+    }
+
+    .k-radio:checked + .k-radio-label::after {
+        content: "";
+        position: absolute;
+        width: $icon-size / 2;
+        height: $icon-size / 2;
+        top: $icon-size / 4;
+        left: $icon-size / 4;
+        border-radius: 50%;
+    }
+
+    .k-radio:disabled + .k-radio-label {
+        cursor: auto;
+    }
+
+    .k-radio:disabled + .k-radio-label,
+    .k-radio:checked:disabled + .k-radio-label {
+        cursor: default;
+    }
+
+    .k-radio:checked:disabled + .k-radio-label::before {
+        opacity: .5;
+    }
+
+    fieldset {
+        margin: $fieldset-margin;
+        border-width: 1px 0 0;
+        border-style: solid;
+        padding: 25px 0 0;
+    }
+
+    fieldset legend {
+        margin-left: 0;
+        padding: 0 8px 0 0;
+        text-transform: uppercase;
+    }
+}

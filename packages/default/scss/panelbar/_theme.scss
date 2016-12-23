@@ -1,0 +1,83 @@
+@include exports('panelbar/theme') {
+    $panelbar-text: $widget-text !default;
+    $panelbar-border: $widget-border;
+    $panelbar-header-text: $accent !default;
+    $panelbar-header-bg: $widget-bg !default;
+    $panelbar-header-hover-text: darken(desaturate(adjust-hue($accent, -.056), 20.6186), 5.2941) !default;
+    $panelbar-expanded-bg: darken(saturate(adjust-hue($widget-bg, 0), 0), 2.3529) !default;
+    $panelbar-selected-hover-bg: blend-multiply($accent, darken($widget-bg, 8%)) !default;
+    $panelbar-focused-box-shadow: inset 0 0 0 2px darken($base-bg, 8%) !default;
+    $panelbar-selected-focused-box-shadow: inset 0 0 0 2px blend-multiply($accent, darken($widget-bg, 8%)) !default;
+    $panelbar-selected-focused-hover-box-shadow: inset 0 0 0 2px blend-multiply($accent, darken($widget-bg, 14%)) !default;
+
+    .k-panelbar {
+        &.k-header,
+        .k-item,
+        .k-panel,
+        .k-content,
+        > .k-item > .k-link {
+            border-color: $panelbar-border;
+        }
+
+        .k-content,
+        .k-state-expanded {
+            background: $panelbar-expanded-bg;
+        }
+
+        .k-item {
+            > .k-header {
+                user-select: none;
+            }
+
+            &:first-child {
+                border-color: $panelbar-border;
+            }
+
+            .k-link {
+                color: $panelbar-text;
+                transition: $transition;
+
+                &.k-state-selected {
+                    background-color: $panelbar-header-text;
+                    color: $selected-text;
+
+                    >.k-icon {
+                        color: $selected-text;
+                    }
+
+                    &.k-state-focused {
+                        box-shadow: $panelbar-selected-focused-box-shadow;
+
+                        &:hover {
+                            box-shadow: $panelbar-selected-focused-hover-box-shadow;
+                        }
+                    }
+
+                    &:hover {
+                        color: $selected-text;
+                        background-color: $accent;
+                    }
+                }
+
+                &.k-state-focused {
+                    box-shadow: $panelbar-focused-box-shadow;
+                }
+            }
+        }
+
+        >.k-item>.k-header {
+            color: $panelbar-header-text;
+            background-color: $panelbar-header-bg;
+
+            &:hover {
+                color: $panelbar-header-hover-text;
+            }
+        }
+
+        .k-panel {
+            .k-link:hover {
+                background-color: $hover-bg;
+            }
+        }
+    }
+}

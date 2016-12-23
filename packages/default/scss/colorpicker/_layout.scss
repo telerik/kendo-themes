@@ -1,0 +1,167 @@
+@include exports("colorpicker/layout") {
+    .k-colorpicker {
+        position: relative;
+        display: inline-block;
+        width: auto;
+        overflow: visible;
+        border-width: 0;
+
+        .k-selected-color {
+            padding: $padding-y;
+            width: $form-line-height-em;
+            height: $form-line-height-em;
+            line-height: 0;
+        }
+
+        .k-select {
+            .k-icon {}
+        }
+
+        // Compact
+        @include compact {
+            .k-selected-color {
+                padding: $input-padding-y-sm;
+            }
+
+            .k-select {
+                padding: $button-padding-y-sm;
+            }
+        }
+    }
+}
+
+@include exports( "flatcolorpicker/layout" ) {
+    .k-flatcolorpicker {
+        padding: 0 0 $spacer;
+        width: 250px;
+        border-radius: $border-radius;
+
+        > .k-slider {
+            margin: 1em auto 0;
+        }
+
+        .k-draghandle {
+            width: $spacer;
+            height: $spacer;
+            border: 1px solid rgba(255, 255, 255, .8);
+            border-radius: 50%;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .21);
+            box-sizing: border-box;
+        }
+
+        .k-selected-color {
+            background-position: 50% 50%;
+            text-align: right;
+        }
+
+        .k-color-value {
+            padding: $input-padding-y $input-padding-x-sm;
+            width: 70%;
+            border: 0;
+            font-family: Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace;
+            line-height: $form-line-height;
+        }
+
+        .k-hsv-rectangle {
+            position: relative;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -ms-touch-action: pinch-zoom double-tap-zoom;
+
+            .k-draghandle {
+                margin: -7px 0 0 -7px;
+                cursor: pointer;
+                position: absolute;
+                z-index: 10;
+                left: 50%;
+                top: 50%;
+            }
+        }
+
+        .k-hsv-gradient {
+            margin-bottom: 5px;
+            height: 180px;
+            background: linear-gradient( to bottom, $gradient-transparent-to-black ), linear-gradient( to right, $gradient-white-to-transparent );
+        }
+
+        // Sliders
+        .k-hue-slider,
+        .k-transparency-slider {
+            display: block;
+
+            .k-draghandle {
+                border-width: 3px;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, .9);
+                // sass-lint:enable no-color-literals no-color-keywords
+                background-color: transparent;
+            }
+
+            .k-draghandle:hover,
+            .k-draghandle:focus {
+                // sass-lint:disable no-color-literals no-color-keywords
+                border-color: white;
+                box-shadow: 0 1px 4px black;
+                // sass-lint:enable no-color-literals no-color-keywords
+                background-color: transparent;
+            }
+        }
+        .k-hue-slider {
+            width: $spacer;
+            height: $spacer;
+
+            .k-slider-track {
+                background: linear-gradient( to right, $gradient-rainbow );
+            }
+
+            .k-slider-selection {
+                background: none;
+                opacity: 0;
+            }
+        }
+
+        .k-slider-horizontal {
+            width: 90%;
+            height: 20px;
+        }
+    }
+}
+
+
+@include exports( "colorpalette/layout" ) {
+    .k-colorpalette {
+        border-width: 0;
+        line-height: 0;
+        display: inline-block;
+        position: relative;
+
+        .k-palette {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+            position: relative;
+        }
+        .k-item {
+            width: 14px;
+            height: 14px;
+            overflow: hidden;
+            -ms-high-contrast-adjust: none;
+        }
+        // TODO: consider extrangting variables
+        // sass-lint:disable no-color-literals no-color-keywords
+        .k-item:hover {
+            box-shadow: 0 1px 3px 1px rgba( black, .5 ), inset 0 0 0 1px rgba( white, .3 );
+            position: relative;
+            z-index: 101;
+        }
+        .k-item.k-state-selected,
+        .k-item.k-state-selected:hover {
+            box-shadow: 0 1px 3px 1px rgba( black, .7 ), inset 0 0 0 1px rgba( white, .45 );
+            position: relative;
+            z-index: 100;
+        }
+        // sass-lint:enable no-color-literals no-color-keywords
+    }
+
+}

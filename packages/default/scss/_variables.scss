@@ -1,0 +1,256 @@
+// Fonts
+$font-size: 14px !default;
+$font-family: inherit !default;
+
+$font-size-sm: 12px !default; // .85em?
+$font-size-lg: 16px !default;
+
+$line-height: (20 / 14) !default;
+$line-height-em: $line-height * 1em;
+$form-line-height: $line-height !default;
+$form-line-height-em: $form-line-height * 1em;
+
+
+// Metrics
+$spacer: 1em !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+
+$padding-x: 8px !default;
+$padding-y: 4px !default;
+$padding-x-sm: $padding-x / 2 !default;
+$padding-y-sm: $padding-y / 2 !default;
+$padding-x-lg: $padding-x * 1.5 !default;
+$padding-y-lg: $padding-y * 1.5 !default;
+
+$border-radius: 2px !default;
+$border-radius-sm: 1px !default;
+$border-radius-lg: 4px !default;
+
+$panel-padding-x: $padding-x !default;
+$panel-padding-y: $padding-y !default;
+
+$popup-padding-x: 0 !default;
+$popup-padding-y: 0 !default;
+
+$header-padding-x: $padding-x !default;
+$header-padding-y: $padding-y !default;
+
+$form-line-height: $btn-line-height !default;
+$form-line-height-em: $form-line-height * 1em !default;
+
+$button-padding-x: $padding-x !default;
+$button-padding-y: $padding-y !default;
+$button-padding-x-sm: $button-padding-x / 2 !default;
+$button-padding-y-sm: $button-padding-y / 2 !default;
+$button-calc-height: #{$form-line-height-em} + #{$button-padding-y * 2};
+
+$input-padding-x: $padding-x !default;
+$input-padding-y: $padding-y !default;
+$input-padding-x-sm: $input-padding-x / 2 !default;
+$input-padding-y-sm: $input-padding-y / 2 !default;
+$input-calc-height: #{$form-line-height-em} + #{$input-padding-y * 2};
+
+$list-item-padding-x: $padding-x !default;
+$list-item-padding-y: $padding-y !default;
+
+// $table-alt-bg: $table-bg-accent !default;
+// $table-hover-bg: $table-bg-hover !default;
+// $table-active-bg: $table-bg-active !default;
+
+// $cell-padding-x: $padding-x-sm !default;
+// $cell-padding-y: $padding-y-sm !default;
+// $cell-padding: $table-cell-padding !default;
+// $cell-padding-sm: $table-sm-cell-padding !default;
+
+$window-padding-x: $padding-x;
+$window-padding-y: $padding-y;
+$window-titlebar-padding-x: $padding-x;
+$window-titlebar-padding-y: $padding-x;
+
+$zindex-popup: 1;
+$zindex-window: 2;
+
+$rgba-transparent: rgba( 0, 0, 0, 0 );
+
+
+// Theme colors
+$accent: #ff6358 !default;
+$accent-contrast: #ffffff !default;
+
+$text-color: #656565 !default;
+$bg-color: #ffffff !default;
+$border-color: rgba( black, .08 ) !default;
+
+$base-text: #656565 !default;
+$base-bg: #f6f6f6 !default;
+$base-border: rgba( black, .08 ) !default;
+$base-gradient: $base-bg, darken( $base-bg, 2% ) !default;
+
+$hover-text: #656565 !default;
+$hover-bg: #ededed !default;
+$hover-border: rgba( black, .15 ) !default;
+$hover-gradient: $hover-bg, darken( $hover-bg, 2% ) !default;
+
+$selected-text: $accent-contrast !default;
+$selected-bg: $accent !default;
+$selected-border: rgba( black, .1 ) !default;
+$selected-gradient: none !default;
+
+$transition: background-color .2s ease !default;
+
+$error: #f5503e !default;
+$warning: #fdce3e !default;
+$success: #5ec232 !default;
+$info: #3e80ed !default;
+
+$gradient-transparent-to-black: rgba( black, 0), black;
+$gradient-transparent-to-white: rgba( white, 0), white;
+$gradient-black-to-transparent: black, rgba( black, 0);
+$gradient-white-to-transparent: white, rgba( white, 0);
+
+$gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
+
+
+
+
+// Widget
+$widget-text: $text-color !default;
+$widget-bg: $bg-color !default;
+$widget-border: rgba( black, .08 ) !default;
+
+
+// Panel
+$panel-text: $widget-text !default;
+$panel-bg: $widget-bg !default;
+$panel-border: rgba( black, .08 ) !default;
+
+
+// Popup
+$popup-text: $widget-text !default;
+$popup-bg: $base-bg !default;
+$popup-border: rgba( black, .08 ) !default;
+
+
+// Header
+$header-text: $base-text !default;
+$header-bg: saturate( $base-bg, 4 ) !default;
+$header-border: darken( $header-bg, 2 ) !default;
+$header-gradient: null !default;
+
+$header-hovered-text: $hover-text !default;
+$header-hovered-bg: $hover-bg !default;
+$header-hovered-border: darken( $header-hovered-bg, 2 ) !default;
+$header-hovered-gradient: null !default;
+
+$header-selected-text: $selected-text !default;
+$header-selected-bg: $selected-bg !default;
+$header-selected-border: darken( $header-selected-bg, 2 ) !default;
+$header-selected-gradient: null !default;
+
+
+// Button
+$button-text: $base-text !default;
+$button-bg: $base-bg !default;
+$button-border: $base-border !default;
+$button-gradient: $base-gradient !default;
+
+$button-hovered-text: $hover-text !default;
+$button-hovered-bg: $hover-bg !default;
+$button-hovered-border: $hover-border !default;
+$button-hovered-gradient: $hover-gradient !default;
+
+$button-pressed-text: $selected-text !default;
+$button-pressed-bg: $selected-bg !default;
+$button-pressed-border: $selected-border !default;
+$button-pressed-gradient: none !default;
+
+
+// Primary button
+$primary-button-text: $accent-contrast !default;
+$primary-button-bg: $accent !default;
+$primary-button-border: $accent !default;
+$primary-button-gradient: adjust-hue( $primary-button-bg, 3), $primary-button-bg !default;
+
+$primary-button-hovered-text: $primary-button-text !default;
+$primary-button-hovered-bg: adjust-hue( $primary-button-bg, 3) !default;
+$primary-button-hovered-border: $primary-button-border !default;
+$primary-button-hovered-gradient: adjust-hue( $primary-button-hovered-bg, 3 ), $primary-button-hovered-bg !default;
+
+$primary-button-pressed-text: $primary-button-text !default;
+$primary-button-pressed-bg: $primary-button-bg !default;
+$primary-button-pressed-border: $primary-button-border !default;
+$primary-button-pressed-gradient: $primary-button-gradient !default;
+
+
+// Toolbar
+$toolbar-text: $button-text !default;
+$toolbar-bg: $button-bg !default;
+$toolbar-border: $button-border !default;
+$toolbar-gradient: null !default;
+
+
+// Input
+$input-text: $panel-text !default;
+$input-bg: $panel-bg !default;
+$input-border: $button-border !default;
+
+$input-hovered-text: $input-text !default;
+$input-hovered-bg: $input-bg !default;
+$input-hovered-border: $button-hovered-border !default;
+
+$input-focused-text: $input-text !default;
+$input-focused-bg: $input-bg !default;
+$input-focused-border: $button-pressed-border !default;
+
+
+// Node
+$node-text: $base-text !default;
+$node-bg: $base-bg !default;
+$node-border: $base-border !default;
+$node-gradient: null !default;
+
+$node-hovered-text: $hover-text !default;
+$node-hovered-bg: $hover-bg !default;
+$node-hovered-border: $hover-border !default;
+$node-hovered-gradient: null !default;
+
+$node-selected-text: $selected-text !default;
+$node-selected-bg: $selected-bg !default;
+$node-selected-border: $selected-border !default;
+$node-selected-gradient: null !default;
+
+
+// List
+$list-item-text: $text-color !default;
+$list-item-bg: $bg-color !default;
+
+$list-item-hovered-text: $hover-text !default;
+$list-item-hovered-bg: $hover-bg !default;
+
+$list-item-selected-text: $selected-text !default;
+$list-item-selected-bg: $selected-bg !default;
+
+
+// Chart
+$series-a: #ff6358 !default;
+$series-b: #ffd246 !default;
+$series-c: #78d237 !default;
+$series-d: #28b4c8 !default;
+$series-e: #2d73f5 !default;
+$series-f: #aa46be !default;
+
+$chart-font-size: $font-size !default;
+$chart-font-size-sm: 11px !default;
+$chart-font-size-md: 12px !default;
+$chart-font-size-lg: 16px !default;
+
+$chart-inactive: rgba( $widget-bg, .5 ) !default;
+$chart-major-lines: rgba(0, 0, 0, .04) !default;
+$chart-minor-lines: rgba(0, 0, 0, .08) !default;
+
+$chart-area-opacity: .8 !default;
+
+//Icons
+$icon-size: 16px;
+$icon-size-lg: 32px;

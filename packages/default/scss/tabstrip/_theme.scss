@@ -1,0 +1,55 @@
+$tabstrip-tabs-color: $accent !default;
+$tabstrip-border-color: rgba(0, 0, 0, .08) !default;
+$tabstrip-hover-color: blend-multiply($accent, darken($widget-bg, 8%)) !default;
+$tabstrip-active-color: $base-text !default;
+$tabstrip-active-background-color: desaturate($widget-bg, 1%) !default;
+$tabstrip-disabled-color: darken($widget-bg, 27%) !default;
+
+@include exports('tabstrip/theme') {
+
+    .k-tabstrip {
+        background-color: transparent;
+
+        .k-item {
+            border-color: transparent;
+
+            .k-link {
+                color: $tabstrip-tabs-color;
+            }
+
+            &:hover {
+                .k-link {
+                    color: $tabstrip-hover-color;
+                }
+            }
+
+            &.k-state-active {
+                border-color: $tabstrip-border-color;
+                border-bottom-color: transparent;
+
+                .k-link {
+                    color: $tabstrip-active-color;
+                }
+            }
+
+            &.k-state-disabled {
+                .k-link {
+                    color: $tabstrip-disabled-color;
+                }
+            }
+        }
+
+        .k-content {
+            color: $tabstrip-active-color;
+            border-color: $tabstrip-border-color;
+        }
+
+        > .k-state-active,
+        .k-tabstrip-items .k-state-active {
+            background-color: $tabstrip-active-background-color;
+        }
+    }
+
+
+    // Tabstrip variants
+}

@@ -1,0 +1,15 @@
+@include exports("mediaplayer/theme") {
+
+    // Theme
+    .k-mediaplayer {}
+
+
+    // Title bar
+    // TODO: should title bar always appear the same?
+    .k-mediaplayer-titlebar {
+        color: $panel-bg;
+        background-image: linear-gradient( rgba( $panel-text, .7 ), rgba( $panel-text, 0 ) );
+        // text-shadow: 0 0 1px $panel-text;
+    }
+
+}

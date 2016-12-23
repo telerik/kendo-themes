@@ -1,0 +1,17 @@
+@include exports("validator/layout") {
+
+    .k-tooltip-validation {
+        border-width: 1px;
+        display: inline-flex;
+        align-items: center;
+
+        > .k-icon {
+            margin-right: .4ex;
+        }
+
+        .k-callout {
+            display: none;
+        }
+    }
+
+}

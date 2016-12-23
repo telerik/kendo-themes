@@ -1,0 +1,14 @@
+@include exports("autocomplete/theme") {
+    $autocomplete-focused-shadow: 0 0 0 2px #f0f0f0 !default;
+
+    .k-autocomplete {
+        @include appearance( input );
+
+        &.k-state-hover { @include appearance( hovered-input ); }
+        &.k-state-focused {
+            @include appearance( focused-input );
+            box-shadow: $autocomplete-focused-shadow;
+        }
+    }
+
+}

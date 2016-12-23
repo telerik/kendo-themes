@@ -1,0 +1,358 @@
+@include exports('upload/layout') {
+
+    html .k-upload {
+        position: relative;
+    }
+
+    .k-upload {
+        border-width: 1px;
+        border-style: solid;
+
+        .k-action-buttons {
+            margin: -6px 0 0;
+        }
+
+        @include compact {
+
+            &.k-upload-sync .k-upload-button {
+                margin: $padding-y-sm $padding-x-sm;
+            }
+            .k-dropzone {
+                padding: $padding-y-sm $padding-x-sm;
+            }
+
+            .k-upload-files {
+
+                .k-file {
+                    padding: ($padding-y-sm / 2) $padding-x-sm;
+                }
+                .k-filename {
+                    margin-left: $spacer-x / 2;
+                }
+            }
+        }
+        .k-upload-button {
+            min-width: 7.167em;
+        }
+        .k-fail {}
+    }
+
+
+    // Upload button
+    .k-upload-button {
+        position: relative;
+        overflow: hidden;
+        direction: ltr;
+        vertical-align: middle;
+
+        .k-upload-sync & {
+            margin: $padding-y $padding-x;
+        }
+    }
+    .k-upload-button input {
+        margin: 0;
+        padding: 0;
+        font: 170px monospace !important;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+
+    // Drop zone
+    .k-dropzone {
+        padding: $padding-y $padding-x;
+        display: flex;
+        align-items: center;
+        position: relative;
+        border-style: solid;
+        border-width: 0;
+        background-color: transparent;
+
+        em {
+            margin-left: $spacer-x;
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            opacity: 0;
+            white-space: nowrap;
+            position: relative;
+            vertical-align: middle;
+            visibility: hidden;
+        }
+        .k-upload-status-total {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .k-icon {
+                display: inline-block;
+                margin-left: $spacer-x / 2;
+            }
+        }
+        .k-dropzone-active {
+
+            em {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    // Upload files list
+    .k-upload-files {
+        line-height: 2.66;
+        padding-bottom: $padding-y;
+        border-width: 1px 0 0;
+        border-style: solid;
+        border-color: inherit;
+        margin: 0;
+
+        .k-file {
+            padding: $list-item-padding-y;
+            border-width: 0 0 1px;
+            border-style: solid;
+            border-color: inherit;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            > .k-icon {
+                position: relative;
+            }
+        }
+        .k-progress {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .k-filename {
+            margin-left: $spacer-x;
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            position: relative;
+        }
+        .k-upload-status {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-left: auto;
+
+            .k-button {
+                margin-left: $spacer-x / 2;
+            }
+
+            .k-warning {
+                display: none;
+            }
+        }
+
+        .k-button {
+            padding: 0;
+        }
+    }
+
+
+    //TODO: Revise and remove old styles
+
+    // .k-file {
+    //     border-style: solid;
+    //     border-width: 0 0 1px;
+    //     padding: .65em .17em .65em 1em;
+    //     list-style: none;
+    // }
+
+    // .k-file .k-icon {
+    //     position: relative;
+    // }
+
+    .k-file-extension-wrapper,
+    .k-file-name-size-wrapper,
+    .k-multiple-files-extension-wrapper,
+    .k-file-invalid-extension-wrapper,
+    .k-multiple-files-invalid-extension-wrapper {
+        display: inline-block;
+    }
+
+    .k-file-extension-wrapper,
+    .k-multiple-files-extension-wrapper,
+    .k-file-invalid-extension-wrapper,
+    .k-multiple-files-invalid-extension-wrapper {
+        position: relative;
+        width: 28px;
+        height: 38px;
+        border-width: 2px;
+        border-style: solid;
+        vertical-align: top;
+        font-size: .57em;
+        text-transform: uppercase;
+    }
+
+    .k-file-invalid-extension-wrapper,
+    .k-multiple-files-invalid-extension-wrapper {
+        font-size: 1.2em;
+    }
+
+    .k-multiple-files-extension-wrapper,
+    .k-multiple-files-invalid-extension-wrapper {
+        margin-top: 4px;
+    }
+
+    .k-file-state {
+        visibility: hidden;
+    }
+
+    .k-file-name-size-wrapper {
+        vertical-align: middle;
+        margin-left: 1em;
+    }
+
+    .k-file-extension-wrapper::before,
+    .k-multiple-files-extension-wrapper::before,
+    .k-multiple-files-extension-wrapper::after,
+    .k-file-invalid-extension-wrapper::before,
+    .k-multiple-files-invalid-extension-wrapper::before,
+    .k-multiple-files-invalid-extension-wrapper::after {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        border-style: solid;
+    }
+
+    .k-file-extension-wrapper::before,
+    .k-multiple-files-extension-wrapper::before,
+    .k-file-invalid-extension-wrapper::before,
+    .k-multiple-files-invalid-extension-wrapper::before {
+        top: -1px;
+        right: -1px;
+        width: 0;
+        height: 0;
+        border-width: 6px;
+        margin-top: -1px;
+        margin-right: -1px;
+    }
+
+    .k-multiple-files-extension-wrapper::after,
+    .k-multiple-files-invalid-extension-wrapper::after {
+        top: -6px;
+        left: -6px;
+        width: 15px;
+        height: 35px;
+        border-width: 2px 0 0 2px;
+    }
+
+    .k-file-extension,
+    .k-file-invalid-icon {
+        position: absolute;
+        bottom: 0;
+        line-height: normal;
+    }
+
+    .k-file-extension {
+        margin-left: .4em;
+        margin-bottom: .3em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
+
+    .k-file-invalid-icon {
+        margin-left: 5px;
+    }
+
+    .k-file-name,
+    .k-file-size,
+    .k-file-validation-message,
+    .k-file-information {
+        display: block;
+    }
+
+    .k-file-name {
+        position: relative;
+        min-width: 10em;
+        max-width: 16.667em;
+        vertical-align: middle;
+        line-height: 1.2em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .k-file-size,
+    .k-file-information,
+    .k-file-validation-message {
+        font-size: .78em;
+        line-height: 1.5em;
+    }
+
+    .k-file-information,
+    .k-file-validation-message {
+        line-height: 1.5em;
+    }
+
+    .k-file-size {
+        line-height: 1.2em;
+    }
+
+    .k-upload-status {
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+
+    .k-upload-status .k-button {
+        vertical-align: text-bottom;
+    }
+
+    .k-dropzone .k-upload-status {
+        line-height: 2.4;
+    }
+
+    .k-upload-pct {
+        margin-right: .75em;
+    }
+
+    .k-ie8 .k-upload-status-total {
+        line-height: 29px;
+    }
+
+    .k-ie8,
+    .k-ie9 {
+        .k-upload-status-total {
+            top: 1.5em;
+
+            > .k-icon {
+                margin-top: -3px;
+            }
+        }
+        .k-upload-button {
+            margin: $padding-y-sm $padding-x-sm;
+        }
+    }
+
+    .k-upload-action {
+        line-height: normal;
+    }
+
+    .k-progress {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+    }
+
+    .k-file-invalid > .k-progress {
+        width: 100%;
+    }
+
+    .k-rtl .k-file-extension-wrapper {
+        margin-left: 14px;
+    }
+}

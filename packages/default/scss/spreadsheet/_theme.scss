@@ -1,0 +1,30 @@
+@include exports("sreadsheet/theme") {
+
+    // Spreadsheet
+    .k-spreadsheet {}
+
+
+    // Row / column headers
+    .k-spreadsheet-top-corner {
+        @include appearance( header );
+    }
+    .k-spreadsheet-row-header,
+    .k-spreadsheet-column-header {
+        @include appearance( header );
+    }
+
+
+    // Selection
+    .k-spreadsheet .k-selection-full,
+    .k-spreadsheet .k-selection-partial {
+        // TODO: consider extracting variables
+        border-color: rgba( $header-selected-border, .25 );
+        background-color: rgba( $header-selected-bg, .25 );
+    }
+    .k-spreadsheet-selection {
+        border-color: $header-selected-border;
+        background-color: rgba( $header-selected-bg, .25 );
+        box-shadow: inset 0 0 0 1px $panel-bg, 0 0 0 1px $header-selected-border;
+    }
+
+}

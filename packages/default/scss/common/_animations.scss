@@ -1,0 +1,293 @@
+@include exports('animation/container') {
+
+    .k-animation-container {
+        position: absolute;
+        overflow: hidden;
+        z-index: 100;
+
+        &-fixed {
+            position: fixed;
+        }
+    }
+
+}
+
+
+@include exports('animation/effect') {
+
+    .k-push-right {
+        &-enter,
+        &-appear {
+            transform: translate(-100%, 0);
+        }
+
+        &-enter-active,
+        &-appear-active {
+            transform: translate(0, 0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translate(0, -100%);
+        }
+
+        &-leave-active {
+            transform: translate(100%, -100%);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave-active + &-leave-active,
+        &-enter-active + &-enter-active {
+            display: none;
+        }
+    }
+
+    .k-push-left {
+        &-enter,
+        &-appear {
+            transform: translate(100%, 0);
+        }
+
+        &-enter-active,
+        &-appear-active {
+            transform: translate(0, 0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translate(0, -100%);
+        }
+
+        &-leave-active {
+            transform: translate(-100%, -100%);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave-active + &-leave-active,
+        &-enter-active + &-enter-active {
+            display: none;
+        }
+    }
+
+    .k-push-down {
+        &-enter,
+        &-appear {
+            transform: translate(0, -100%);
+        }
+
+        &-enter-active,
+        &-appear-active {
+            transform: translate(0, 0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translate(0, -100%);
+        }
+
+        &-leave-active {
+            transform: translate(0, 0);
+            transition: transform 300ms ease-in-out;
+        }
+    }
+
+    .k-push-up {
+        &-enter,
+        &-appear {
+            transform: translate(0, 100%);
+        }
+
+        &-enter-active,
+        &-appear-active {
+            transform: translate(0, 0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translate(0, -100%);
+        }
+
+        &-leave-active {
+            transform: translate(0, -200%);
+            transition: transform 300ms ease-in-out;
+        }
+    }
+
+    .k-expand {
+        .k-child-animation-container {
+            overflow: hidden;
+        }
+    }
+
+    .k-fade {
+        &-enter {
+            opacity: 0;
+        }
+
+        &-enter-active {
+            opacity: 1;
+            transition: opacity 500ms ease-in-out;
+        }
+
+        &-leave {
+            opacity: 1;
+        }
+
+        &-leave-active {
+            opacity: 0;
+            transition: opacity 500ms ease-in-out;
+        }
+
+        &-leave-active + &-leave-active,
+        &-enter-active + &-enter-active {
+            display: none;
+        }
+    }
+
+    .k-zoom-in {
+        &-enter,
+        &-appear {
+            opacity: 0;
+        }
+
+        &-enter-active,
+        &-appear-active {
+            opacity: 1;
+            transition: opacity 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translate(0, -100%) scale(1);
+        }
+
+        &-leave-active {
+            transform: translate(0, -100%) scale(0);
+            transition: transform 300ms ease-in-out;
+        }
+    }
+
+    .k-zoom-out {
+        &-enter,
+        &-appear {
+            transform: scale(0);
+        }
+
+        &-enter-active,
+        &-appear-active {
+            transform: scale(1);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            opacity: 1;
+            transform: translate(0, -100%);
+        }
+
+        &-leave-active {
+            opacity: 0;
+            transition: opacity 300ms ease-in-out;
+        }
+    }
+
+    .k-slide-in {
+        &-appear {
+            opacity: .1;
+            transform: translate(0, -3em);
+
+            .k-centered {
+                transform: translate(-50%, -60%);
+            }
+        }
+
+        &-appear-active {
+            opacity: 1;
+            transform: translate(0, 0);
+            transition: transform .3s cubic-bezier(.2, .6, .4, 1), opacity .3s cubic-bezier(.2, 1, .2, 1);
+
+            .k-centered {
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    .k-slide-down {
+        &-enter {
+            transform: translateY(-100%);
+        }
+
+        &-enter-active {
+            transform: translateY(0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translateY(0);
+        }
+
+        &-leave-active {
+            transform: translateY(-100%);
+            transition: transform 300ms ease-in-out;
+        }
+    }
+
+    .k-slide-up {
+        &-enter {
+            transform: translateY(100%);
+        }
+
+        &-enter-active {
+            transform: translateY(0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translateY(0);
+        }
+
+        &-leave-active {
+            transform: translateY(100%);
+            transition: transform 300ms ease-in-out;
+        }
+    }
+
+    .k-slide-right {
+        &-enter {
+            transform: translateX(-100%);
+        }
+
+        &-enter-active {
+            transform: translateX(0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translateX(0);
+        }
+
+        &-leave-active {
+            transform: translateX(-100%);
+            transition: transform 300ms ease-in-out;
+        }
+    }
+
+    .k-slide-left {
+        &-enter {
+            transform: translateX(100%);
+        }
+
+        &-enter-active {
+            transform: translateX(0);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-leave {
+            transform: translateX(0);
+        }
+
+        &-leave-active {
+            transform: translateX(100%);
+            transition: transform 300ms ease-in-out;
+        }
+    }
+
+}

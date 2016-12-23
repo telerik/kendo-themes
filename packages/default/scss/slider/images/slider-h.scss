@@ -1,0 +1,6 @@
+@import '../../mixins/core/all';
+
+@include exports('slider-h.gif') {
+    @include register-data-uri('slider-h.gif', 'data:image/gif;base64,R0lGODlhAQC0AIABALi4uAAAACH5BAEAAAEALAAAAAABALQAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7')
+}
+

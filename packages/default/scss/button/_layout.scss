@@ -1,0 +1,196 @@
+@include exports('button/layout') {
+
+    // Button
+    .k-button {
+        @include border-radius( $border-radius );
+        padding: $button-padding-y $button-padding-x;
+        border-width: 1px;
+        border-style: solid;
+        font-size: $font-size;
+        line-height: $form-line-height;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        user-select: none;
+        cursor: pointer;
+        outline: none;
+
+        // TODO: extend disabled selector
+        &[disabled],
+        &.k-state-disabled:hover,
+        &.k-state-disabled:focus,
+        [disabled] & {
+            @extend %disabled;
+        }
+
+        &::-moz-focus-inner {
+            border: 0;
+            padding: 0;
+        }
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+
+        .k-icon,
+        .k-image {
+            color: inherit;
+            align-self: center;
+        }
+
+
+        // Button variants
+        &-icontext {
+            overflow: visible; // IE9
+
+            .k-icon,
+            .k-image {
+                margin: 0 ($button-padding-x / 2) 0 (-$button-padding-x / 2);
+            }
+        }
+        &-icon {
+            width: $form-line-height-em;
+            height: $form-line-height-em;
+            padding: $button-padding-y;
+            box-sizing: content-box;
+            justify-content: center;
+        }
+        &-bare {
+            // sass-lint:disable no-important
+            border-width: 0 !important;
+            color: inherit;
+            background: none !important;
+            box-shadow: none !important;
+            // sass-lint:enable no-important
+        }
+
+
+
+
+        // Compact
+        @include compact {
+            padding: $button-padding-y-sm $button-padding-x-sm;
+            font-size: $font-size-sm;
+
+            &-icontext {
+                .k-icon {
+                    margin: 0 ($button-padding-x-sm / 2) 0 (-$button-padding-x-sm / 2);
+                }
+            }
+            &-icon {
+                padding: $button-padding-y-sm;
+            }
+        }
+
+    }
+
+
+    // Toggle button
+    .k-toggle-button {}
+
+
+    // Split button
+    .k-split-button {
+        .k-button {
+            @include border-radius( $border-radius 0 0 $border-radius );
+        }
+        .k-split-button-arrow {
+            @include border-radius( 0 $border-radius $border-radius 0 );
+            margin-left: -1px;
+            padding: $button-padding-y;
+        }
+
+
+        @include compact {
+            .k-split-button-arrow {
+                padding: $button-padding-y-sm;
+            }
+        }
+
+        .k-widget {
+            border: 0;
+        }
+    }
+
+    //DropDown Button
+    kendo-dropdownbutton.k-state-focused,
+    kendo-dropdownbutton:focus {
+        outline: 0;
+    }
+
+    // Bare button
+    .k-button-bare {
+        user-select: none;
+        text-decoration: none;
+    }
+
+
+    // Button group
+    .k-button-group {
+        white-space: nowrap;
+        display: inline-flex;
+        flex-direction: row;
+        vertical-align: middle;
+        position: relative;
+
+        .k-button {
+            position: relative;
+            border-radius: 0;
+        }
+        .k-button + .k-button {
+            margin-left: -1px;
+        }
+
+        .k-button:hover,
+        .k-button.k-state-hover,
+        .k-button.k-state-active {
+            z-index: 2;
+        }
+
+        .k-group-start,
+        .k-button:first-child {
+            @include border-radius( $border-radius 0 0 $border-radius );
+        }
+        .k-group-end,
+        .k-button:last-child {
+            @include border-radius( 0 $border-radius $border-radius 0 );
+        }
+        .k-group-start.k-group-end,
+        .k-button:first-child:last-child {
+            @include border-radius( $border-radius );
+        }
+
+        .k-button-icon {
+            height: auto;
+        }
+    }
+
+    //SplitButton
+    //TODO: Wait for final design + revise
+    kendo-splitbutton.k-button-group.k-state-focused {
+        border-radius: $border-radius;
+    }
+
+    kendo-splitbutton.k-widget {
+        border-width: 0;
+    }
+
+    kendo-splitbutton.k-button-group .k-button {
+        &:first-child {
+            border-top-left-radius: $border-radius;
+            border-bottom-left-radius: $border-radius;
+        }
+
+        &:last-child {
+            border-top-right-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+        }
+        // $border-radius
+    }
+
+}

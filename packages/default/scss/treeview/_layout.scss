@@ -1,0 +1,79 @@
+@include exports("treeview/layout") {
+
+    // Base
+    .k-treeview {
+        border-width: 0;
+        background: none;
+        cursor: default;
+        overflow: auto;
+        white-space: nowrap;
+
+        .k-content,
+        > .k-group,
+        .k-item > .k-group {
+            margin: 0;
+            padding: 0;
+            background: none;
+            list-style: none;
+            position: relative;
+        }
+
+        // Items
+        .k-item {
+            margin: 0;
+            padding: 0 0 0 $spacer-x;
+            border-width: 0;
+            display: block;
+        }
+
+        // Link
+        .k-in {
+            margin: 0;
+            padding: $padding-y $padding-x;
+            border: 1px solid;
+            border-color: transparent;
+            text-decoration: none;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        // Collapse expand
+        .k-minus,
+        .k-minus-disabled,
+        .k-plus,
+        .k-plus-disabled {
+            margin-left: -$spacer-x;
+            cursor: pointer;
+        }
+
+        // Other content
+        .k-checkbox,
+        .k-icon,
+        .k-image,
+        .k-sprite {
+            display: inline-block;
+            vertical-align: top;
+        }
+        .k-icon {
+            vertical-align: middle;
+        }
+        .k-image,
+        .k-sprite {
+            margin-right: 3px;
+        }
+
+
+
+
+        // Compact
+        @include compact {
+
+            // Link
+            .k-in {
+                padding: $padding-y-sm $padding-x-sm;
+            }
+
+        }
+    }
+
+}

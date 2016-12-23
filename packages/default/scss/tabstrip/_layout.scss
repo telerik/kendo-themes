@@ -1,0 +1,177 @@
+// TODO: nav link variables
+$nav-link-padding: 1em;
+$nav-item-margin: 2px;
+
+@include exports("tabstrip/layout") {
+
+    .k-tabstrip {
+        border-width: 0;
+        background-color: transparent;
+        display: block;
+
+        .k-tabstrip-items {
+            border: 0 solid transparent;
+            border-color: inherit;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+        }
+
+        .k-item {
+            margin: 0;
+            padding: 0;
+            border: 1px solid transparent;
+            position: relative;
+        }
+        .k-item.k-tab-on-top {
+            z-index: 1;
+        }
+        .k-item .k-link {
+            padding: $nav-link-padding;
+            cursor: pointer;
+            display: block;
+        }
+
+        .k-content {
+            padding: $padding-y $padding-x;
+            border-width: 1px;
+            border-style: solid;
+            border-color: inherit;
+            display: none;
+            overflow: auto;
+        }
+        > .k-content.k-state-active {
+            display: block;
+        }
+
+
+        // Loading
+        .k-tabstrip-items .k-loading {
+            width: 20%;
+            height: 0;
+            border: 0;
+            border-top: 1px solid transparent;
+            border-color: inherit;
+            background: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: width .2s linear;
+        }
+        .k-tabstrip-items .k-loading.k-complete {
+            width: 100%;
+            border-top-width: 0;
+        }
+
+
+        // Scrolling
+        &.k-tabstrip-scrollable {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+
+            .k-tabstrip-items {
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            .k-tabstrip-prev {
+                position: absolute;
+                left: 0;
+            }
+            .k-tabstrip-next {
+                position: absolute;
+                right: 0;
+            }
+        }
+
+
+
+
+        // Compact
+        @include compact {
+
+            .k-item .k-link {
+                padding: $padding-y-sm $padding-x-sm;
+            }
+
+        }
+    }
+
+
+    // Tabstrip variants
+    .k-tabstrip-top {
+        .k-content {
+            @include border-radius( 0 0 $border-radius $border-radius);
+        }
+
+        .k-item {
+            @include border-radius( $border-radius $border-radius 0 0 );
+            margin-bottom: -1px;
+        }
+        .k-item + .k-item {
+            margin-left: $nav-item-margin;
+        }
+
+    }
+    .k-tabstrip-bottom {
+
+        .k-tabstrip-items {
+            border-top-width: 1px;
+        }
+
+        .k-content {
+            @include border-radius( $border-radius $border-radius 0 0 );
+        }
+
+        .k-item {
+            @include border-radius( 0 0 $border-radius $border-radius );
+            margin-top: -1px;
+        }
+        .k-item + .k-item {
+            margin-left: $nav-item-margin;
+        }
+
+    }
+    .k-tabstrip-left {
+
+        .k-tabstrip-items {
+            border-right-width: 1px;
+            flex-direction: column;
+        }
+
+        .k-content {
+            @include border-radius(0 $border-radius $border-radius 0);
+        }
+
+        .k-item {
+            @include border-radius( $border-radius 0 0 $border-radius );
+            margin-right: -1px;
+        }
+        .k-item + .k-item {
+            margin-top: $nav-item-margin;
+        }
+
+    }
+    .k-tabstrip-right {
+
+        .k-tabstrip-items {
+            border-left-width: 1px;
+            flex-direction: column;
+        }
+
+        .k-content {
+            @include border-radius($border-radius 0 0 $border-radius);
+        }
+
+        .k-item {
+            @include border-radius( 0 $border-radius $border-radius 0 );
+            margin-left: -1px;
+        }
+        .k-item + .k-item {
+            margin-top: $nav-item-margin;
+        }
+
+    }
+
+}

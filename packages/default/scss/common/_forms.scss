@@ -1,0 +1,114 @@
+@include exports("forms/layout") {
+
+    // Widgets
+    .k-autocomplete,
+    .k-combobox,
+    .k-datepicker,
+    .k-datetimepicker,
+    .k-dropdown,
+    .k-multiselect,
+    .k-numerictextbox,
+    .k-timepicker {
+        width: 12.4em;
+        border-width: 0;
+        line-height: $form-line-height;
+        text-align: left;
+        white-space: nowrap;
+        display: inline-flex;
+        vertical-align: middle;
+        position: relative;
+    }
+
+    .k-nodata {
+        min-height: 138px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+
+    // Searchbar
+    .k-searchbar {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    // Wrappers
+    .k-dropdown-wrap,
+    .k-picker-wrap,
+    .k-multiselect-wrap,
+    .k-numeric-wrap {
+        @include border-radius( $border-radius );
+        padding: 0;
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        // TODO: improve wrapper overflow
+        //overflow: hidden;
+        cursor: default;
+    }
+
+
+    // Other common
+    .k-dropdown-wrap,
+    .k-picker-wrap,
+    .k-numeric-wrap {
+
+        .k-input {
+            padding: $input-padding-y $input-padding-x;
+            width: 100%;
+            height: $line-height-em;
+            border: 0;
+            outline: 0;
+            color: inherit;
+            background: none;
+            font: inherit;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .k-select {
+            @include border-radius( 0 $border-radius $border-radius 0 );
+            border-width: 0;
+            border-style: solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 $padding-y-lg;
+            text-align: center;
+            cursor: pointer;
+
+            .k-icon {}
+        }
+
+
+        // Clear icon
+        .k-i-close {
+            display: none;
+            align-self: center;
+        }
+
+        &.k-state-hover,
+        &.k-state-focused {
+            .k-i-close {
+                display: flex;
+                margin-right: $padding-y;
+                outline: 0;
+            }
+        }
+    }
+
+}

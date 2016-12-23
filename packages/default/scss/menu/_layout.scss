@@ -1,0 +1,89 @@
+@include exports("menu/layout") {
+
+    // Base
+    .k-menu {
+        cursor: default;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        // Item
+        .k-item {
+            border-width: 0 1px 0 0;
+            border-style: solid;
+            border-color: inherit;
+            display: block;
+            position: relative;
+            user-select: none;
+        }
+
+        // Link
+        .k-link {
+            padding: $padding-y $padding-x;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+
+            .k-icon {}
+            .k-i-arrow-e {
+                margin: 0 (-$list-item-padding-x / 2) 0 $list-item-padding-x;
+                float: right;
+            }
+        }
+
+        // Sub
+        .k-menu-group {
+            margin: 0;
+            padding: $popup-padding-y $popup-padding-x;
+            white-space: nowrap;
+            list-style: none;
+            display: none;
+            position: absolute;
+        }
+        .k-menu-group .k-menu-group {
+            padding: 0;
+        }
+        .k-menu-group .k-item {
+            border-width: 0;
+        }
+        .k-menu-group .k-item > .k-link {
+            padding: $list-item-padding-y $list-item-padding-x;
+        }
+        .k-menu-group .k-item > .k-link > .k-image {
+            margin: 0 0 0 (-$list-item-padding-x / 2);
+        }
+
+        // Images
+        .k-image,
+        .k-menu .k-sprite {}
+
+
+
+
+        // Compact
+        @include compact {
+
+            .k-link {
+                padding: $padding-y-sm $padding-x-sm;
+            }
+
+            .k-menu-group .k-item > .k-link {
+                padding: ($padding-y-sm / 2) $padding-x-sm;
+            }
+        }
+
+    }
+
+
+    // Orientation
+    .k-menu-horizontal {}
+    .k-menu-vertical {
+        flex-direction: column;
+
+        .k-item {
+            border-width: 0;
+        }
+    }
+
+}
