@@ -2,9 +2,9 @@ options:
     verbose: true
 
 files:
-    include: 'src/**/*.scss'
+    include: 'scss/**/*.scss'
     ignore:
-        - 'src/mixins/**/*.scss'
+        - 'scss/mixins/**/*.scss'
 
 rules:
     no-ids: 2
