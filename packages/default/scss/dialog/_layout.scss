@@ -6,7 +6,7 @@ $modal-inner-padding: .5em !default;
 @import '../button/layout';
 @import '../action-buttons/layout';
 
-@include exports('action-buttons/layout') {
+@include exports('dialog/layout') {
 
     .k-dialog {
         padding-top: 0;
