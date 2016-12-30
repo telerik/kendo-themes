@@ -596,8 +596,8 @@
     .k-i-sarrow-e::before { @extend .k-i-arrow-60-right; }
     .k-i-sarrow-s::before { @extend .k-i-arrow-60-down; }
     .k-i-sarrow-w::before { @extend .k-i-arrow-60-left; }
-    .k-i-collapse::before { @extend .k-i-arrow-60-right; }
-    .k-i-expand::before { @extend .k-i-arrow-60-down; }
+    .k-i-collapse::before { @extend .k-i-arrow-60-down; }
+    .k-i-expand::before { @extend .k-i-arrow-60-right; }
     .k-i-expand-n::before { @extend .k-i-arrow-60-up; }
     .k-i-expand-e::before { @extend .k-i-arrow-60-right; }
     .k-i-expand-s::before { @extend .k-i-arrow-60-down; }
