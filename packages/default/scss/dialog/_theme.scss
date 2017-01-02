@@ -30,7 +30,9 @@
             box-shadow: $window-focused-box-shadow;
         }
 
-        .k-window-action {
+        .k-dialog-action {
+            border-color: transparent;
+
             &:active {
                 box-shadow: none;
             }
