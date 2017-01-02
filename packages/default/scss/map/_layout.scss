@@ -1,14 +1,11 @@
 @include exports("map/layout") {
 
-    $map-attribution-bg: rgba( $panel-bg, .8) !default;
-    $map-marker-bg: #008000 !default;
-
     // Layout
     .k-map {
         height: 600px;
 
         // Scroll wrap
-        .k-scroll-wrapper {
+        .km-scroll-wrapper {
             width: 100%;
             height: 100%;
             user-select: none;
@@ -30,15 +27,16 @@
             height: 40px;
             cursor: pointer;
             position: absolute;
-            background: $map-marker-bg;
+            background: url(map-get($data-uris, 'markers.png'));
         }
 
 
+        // TODO: see attribuion
         // Attribution
         .k-attribution {
             padding: $padding-y-sm $padding-x-sm;
             font-size: $font-size-sm * .75;
-            background-color: $map-attribution-bg;
+            background-color: rgba( $panel-bg, .8);
             z-index: 1000;
         }
 
@@ -60,42 +58,40 @@
     // Navigator
     .k-navigator {
         margin: $spacer-x;
-        width: 3.25em;
-        height: 3.25em;
-        border-radius: 80px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
         position: relative;
 
         .k-pdf-export & { display: none; }
 
 
         // Buttons
-        button {
+        .k-button {
             border-color: transparent;
             background: none;
-        }
-        .k-button {
             margin: 0;
             padding: 0;
             border-radius: 100%;
             line-height: 1;
             position: absolute;
         }
-        .k-navigator-n {
+        .k-navigator-up {
             margin-left: calc( -#{$font-size/2} - 1px);
             top: 2px;
             left: 50%;
         }
-        .k-navigator-e {
+        .k-navigator-right {
             margin-top: calc( -#{$font-size/2} - 1px);
             right: 2px;
             top: 50%;
         }
-        .k-navigator-s  {
+        .k-navigator-down  {
             margin-left: calc( -#{$font-size/2} - 1px);
             bottom: 2px;
             left: 50%;
         }
-        .k-navigator-w {
+        .k-navigator-left {
             margin-top: calc( -#{$font-size/2} - 1px);
             left: 2px;
             top: 50%;
@@ -124,3 +120,6 @@
     }
 
 }
+
+
+

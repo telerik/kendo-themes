@@ -33,8 +33,9 @@
 
 // Dataviz
 @import "dataviz";
+@import "map";
 
-//Barcodes
+// Barcodes
 @import "barcode";
 @import "qrcode";
 
@@ -68,4 +69,4 @@
 
 // Interactivity & UX
 @import "progressbar";
-// @import "scroller";
+@import "scroller";
