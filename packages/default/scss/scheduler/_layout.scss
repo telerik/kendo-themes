@@ -300,10 +300,10 @@ $modal-inner-padding: 1em;
 
         // Hover
         &:hover {
-
             .k-event-actions,
-            .k-resize-handle { visibility: visible; }
-
+            .k-resize-handle {
+                visibility: visible;
+            }
         }
     }
 
@@ -339,9 +339,13 @@ $modal-inner-padding: 1em;
         .k-event-actions,
         .k-event-top-actions,
         .k-event-bottom-actions,
-        .k-resize-handle { display: none; }
+        .k-resize-handle {
+            display: none;
+        }
 
-        .k-event-time { display: block; }
+        .k-event-time {
+            display: block;
+        }
     }
 
 
@@ -496,7 +500,7 @@ $modal-inner-padding: 1em;
     .k-edit-field .k-textbox {
         width: 98%;
     }
-    .k-edit-field input[type="radio"] {
+    .k-edit-field [type="radio"] {
         margin-right: .4ex;
     }
     span.k-recur-interval,

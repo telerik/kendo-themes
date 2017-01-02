@@ -19,10 +19,9 @@
             display: none;
         }
 
-        &.k-treelist-dragging {
-            &, .k-state-hover {
-                cursor: default;
-            }
+        .k-treelist-dragging,
+        .k-treelist-dragging .k-state-hover {
+            cursor: default;
         }
 
         .k-drop-hint {

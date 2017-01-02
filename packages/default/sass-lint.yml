@@ -9,6 +9,7 @@ files:
 rules:
     no-ids: 2
     property-sort-order: 0
+    mixins-before-declarations: 0
 
     indentation:
         - 2
@@ -29,9 +30,6 @@ rules:
     no-qualifying-elements: 0
 
     pseudo-element: 2
-
-
-
 
     final-newline: 0
     empty-line-between-blocks: 0

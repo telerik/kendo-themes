@@ -63,18 +63,24 @@
 
 
         // Tools
-        .k-button[data-tool="backgroundColor"],
-        .k-button[data-tool="textColor"],
-        .k-button[data-tool="borders"],
-        .k-button[data-tool="alignment"],
-        .k-button[data-tool="merge"],
-        .k-button[data-tool="freeze"] {
+        [data-tool="backgroundColor"],
+        [data-tool="textColor"],
+        [data-tool="borders"],
+        [data-tool="alignment"],
+        [data-tool="merge"],
+        [data-tool="freeze"] {
             width: auto;
             min-width: $form-line-height * 1em;
         }
-        .k-widget[data-tool="fontSize"] { width: 5 * $spacer; }
-        .k-widget[data-tool="fontFamily"] { width: 6 * $spacer; }
-        .k-widget[data-tool="format"] { width: 4 * $spacer; }
+        [data-tool="fontSize"] {
+            width: 5 * $spacer;
+        }
+        [data-tool="fontFamily"] {
+            width: 6 * $spacer;
+        }
+        [data-tool="format"] {
+            width: 4 * $spacer;
+        }
     }
 
 
