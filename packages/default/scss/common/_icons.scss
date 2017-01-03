@@ -24,6 +24,7 @@
         line-height: 1;
         speak: none;
         text-transform: none;
+        text-decoration: none;
         display: inline-block;
 
         &::before {
@@ -608,7 +609,9 @@
     .k-i-arrowhead-s::before { @extend .k-i-arrow-chevron-down; }
     .k-i-arrowhead-w::before { @extend .k-i-arrow-chevron-left; }
     .k-i-deny::before { @extend .k-i-cancel-outline; }
+    .k-plus::before { @extend .k-i-plus; }
     .k-i-splus::before { @extend .k-i-plus-sm; }
+    .k-minus::before { @extend .k-i-minus; }
     .k-i-sminus::before { @extend .k-i-minus-sm; }
     .k-i-refresh-clear::before { @extend .k-i-non-recurrence; }
     .k-i-restore::before { @extend .k-i-window-restore; }
