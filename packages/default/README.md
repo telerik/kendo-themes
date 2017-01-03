@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/telerik/kendo-theme-default.svg?branch=master)](https://travis-ci.org/telerik/kendo-theme-default)
-[![npm version](https://badge.fury.io/js/%40telerik%2Fkendo-theme-default.svg)](https://badge.fury.io/js/%40telerik%2Fkendo-theme-default)
 
 
 # Kendo UI Default Theme
