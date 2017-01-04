@@ -1,42 +1,45 @@
 @include exports('upload/layout') {
+    $line-height-sm: (20 / 12) !default;
+    $uploaded-image-width: 24px !default;
+    $uploaded-image-height: 34px !default;
+    $uploaded-image-border: 2px !default;
 
     html .k-upload {
         position: relative;
     }
 
     .k-upload {
-        border-width: 1px;
-        border-style: solid;
+        .k-upload-button {
+            min-width: 7em;
+            margin-right: $padding-x;
+        }
+
+        .k-clear-selected,
+        .k-upload-selected {
+            display: inline-block;
+            width: 50%;
+            margin: 0;
+            line-height: $line-height;
+            padding: $spacer 0;
+        }
+
+        .k-clear-selected {
+            border-radius: 0 0 0 $border-radius;
+        }
+
+        .k-upload-selected {
+            border-left-width: 1px;
+            border-left-style: solid;
+            margin-left: -1px;
+            border-radius: 0 0 $border-radius;
+        }
 
         .k-action-buttons {
-            margin: -6px 0 0;
+            margin: -$padding-y 0 0;
+            padding: 0;
+            border-top: 0;
         }
-
-        @include compact {
-
-            &.k-upload-sync .k-upload-button {
-                margin: $padding-y-sm $padding-x-sm;
-            }
-            .k-dropzone {
-                padding: $padding-y-sm $padding-x-sm;
-            }
-
-            .k-upload-files {
-
-                .k-file {
-                    padding: ($padding-y-sm / 2) $padding-x-sm;
-                }
-                .k-filename {
-                    margin-left: $spacer-x / 2;
-                }
-            }
-        }
-        .k-upload-button {
-            min-width: 7.167em;
-        }
-        .k-fail {}
     }
-
 
     // Upload button
     .k-upload-button {
@@ -50,9 +53,10 @@
         }
     }
     .k-upload-button input {
+        // font should not depend on outside styles, otherwise upload may break
+        font: 170px monospace !important; // sass-lint:disable-block no-important
         margin: 0;
         padding: 0;
-        font: 170px monospace !important;
         filter: alpha(opacity=0);
         opacity: 0;
         cursor: pointer;
@@ -62,10 +66,9 @@
         z-index: 1;
     }
 
-
     // Drop zone
     .k-dropzone {
-        padding: $padding-y $padding-x;
+        padding: $padding-x;
         display: flex;
         align-items: center;
         position: relative;
@@ -83,22 +86,27 @@
             position: relative;
             vertical-align: middle;
             visibility: hidden;
+            display: none;
         }
-        .k-upload-status-total {
+
+        .k-upload-status {
             display: flex;
             align-items: center;
             position: relative;
-
-            .k-icon {
-                display: inline-block;
-                margin-left: $spacer-x / 2;
-            }
+            padding: $button-padding-y $button-padding-x;
+            font-size: $font-size;
+            line-height: $form-line-height;
         }
-        .k-dropzone-active {
 
+        &.k-dropzone-active {
             em {
+                display: block;
                 visibility: visible;
                 opacity: 1;
+            }
+
+            .k-upload-status {
+                display: none;
             }
         }
     }
@@ -112,25 +120,29 @@
         border-color: inherit;
         margin: 0;
 
+        .k-file-multiple,
+        .k-file-single {
+            display: block;
+            width: 100%;
+        }
+
         .k-file {
-            padding: $list-item-padding-y;
+            padding: $padding-x;
             border-width: 0 0 1px;
             border-style: solid;
             border-color: inherit;
             display: flex;
             align-items: center;
             position: relative;
-
-            > .k-icon {
-                position: relative;
-            }
+            line-height: $line-height;
         }
+
         .k-progress {
             position: absolute;
-            top: 0;
             bottom: 0;
             left: 0;
         }
+
         .k-filename {
             margin-left: $spacer-x;
             flex: 1;
@@ -139,60 +151,58 @@
             white-space: nowrap;
             position: relative;
         }
+
         .k-upload-status {
-            display: flex;
-            align-items: center;
-            position: relative;
-            margin-left: auto;
+            position: absolute;
+            line-height: 1em;
+            right: $padding-x;
+            top: $padding-y * 3;
 
             .k-button {
-                margin-left: $spacer-x / 2;
-            }
-
-            .k-warning {
-                display: none;
+                padding: $padding-y-sm;
+                border-radius: 50%;
             }
         }
 
-        .k-button {
-            padding: 0;
+        .k-upload-pct {
+            margin-right: $padding-x;
         }
     }
 
-
-    //TODO: Revise and remove old styles
-
-    // .k-file {
-    //     border-style: solid;
-    //     border-width: 0 0 1px;
-    //     padding: .65em .17em .65em 1em;
-    //     list-style: none;
-    // }
-
-    // .k-file .k-icon {
-    //     position: relative;
-    // }
-
-    .k-file-extension-wrapper,
-    .k-file-name-size-wrapper,
-    .k-multiple-files-extension-wrapper,
-    .k-file-invalid-extension-wrapper,
-    .k-multiple-files-invalid-extension-wrapper {
-        display: inline-block;
+    .k-file-name,
+    .k-file-size,
+    .k-file-validation-message,
+    .k-file-information {
+        display: block;
     }
 
-    .k-file-extension-wrapper,
-    .k-multiple-files-extension-wrapper,
-    .k-file-invalid-extension-wrapper,
-    .k-multiple-files-invalid-extension-wrapper {
+    .k-file-name {
         position: relative;
-        width: 28px;
-        height: 38px;
-        border-width: 2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .k-file-size,
+    .k-file-information,
+    .k-file-validation-message {
+        font-size: $font-size-sm;
+        line-height: $line-height-sm;
+    }
+
+    .k-file-extension-wrapper,
+    .k-multiple-files-extension-wrapper,
+    .k-file-invalid-extension-wrapper,
+    .k-multiple-files-invalid-extension-wrapper {
+        position: absolute;
+        width: $uploaded-image-width;
+        height: $uploaded-image-height;
+        border-width: $uploaded-image-border;
         border-style: solid;
         vertical-align: top;
         font-size: .57em;
         text-transform: uppercase;
+        margin: ($uploaded-image-border / 2) $padding-y-lg;
     }
 
     .k-file-invalid-extension-wrapper,
@@ -210,8 +220,9 @@
     }
 
     .k-file-name-size-wrapper {
-        vertical-align: middle;
-        margin-left: 1em;
+        display: block;
+        margin-left: calc(#{$padding-x} + #{$uploaded-image-width} + #{$padding-x * 2});
+        margin-right: calc(#{$padding-x} + #{$icon-size} + #{$padding-x-sm});
     }
 
     .k-file-extension-wrapper::before,
@@ -267,63 +278,6 @@
         margin-left: 5px;
     }
 
-    .k-file-name,
-    .k-file-size,
-    .k-file-validation-message,
-    .k-file-information {
-        display: block;
-    }
-
-    .k-file-name {
-        position: relative;
-        min-width: 10em;
-        max-width: 16.667em;
-        vertical-align: middle;
-        line-height: 1.2em;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    .k-file-size,
-    .k-file-information,
-    .k-file-validation-message {
-        font-size: .78em;
-        line-height: 1.5em;
-    }
-
-    .k-file-information,
-    .k-file-validation-message {
-        line-height: 1.5em;
-    }
-
-    .k-file-size {
-        line-height: 1.2em;
-    }
-
-    .k-upload-status {
-        position: absolute;
-        right: 10px;
-        top: 0;
-    }
-
-    .k-upload-status .k-button {
-        vertical-align: text-bottom;
-    }
-
-    .k-dropzone .k-upload-status {
-        line-height: 2.4;
-    }
-
-    .k-upload-pct {
-        margin-right: .75em;
-    }
-
-    .k-ie8 .k-upload-status-total {
-        line-height: 29px;
-    }
-
-    .k-ie8,
     .k-ie9 {
         .k-upload-status-total {
             top: 1.5em;
@@ -350,9 +304,5 @@
 
     .k-file-invalid > .k-progress {
         width: 100%;
-    }
-
-    .k-rtl .k-file-extension-wrapper {
-        margin-left: 14px;
     }
 }

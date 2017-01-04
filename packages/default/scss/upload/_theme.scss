@@ -11,18 +11,35 @@
     $upload-success-bg: $success !default;
     $upload-disabled-text: darken($widget-bg, 27%) !default;
     $upload-disabled-border: darken($widget-bg, 27%) !default;
+    $upload-focused-status-box-shadow: 0 0 0 2px darken($input-bg, 6%) !default;
 
     .k-upload {
         border-radius: $border-radius;
         border-color: $upload-border;
 
-        .k-upload-files {
+        .k-upload-files,
+        .k-upload-selected {
             border-color: $upload-border;
         }
 
         .k-file {
             background-color: $upload-bg;
             border-color: $upload-border;
+
+            .k-upload-action {
+                opacity: .6;
+                background: none;
+                border-width: 0;
+                box-shadow: none;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                &.k-state-focused {
+                    box-shadow: $upload-focused-status-box-shadow;
+                }
+            }
         }
 
         .k-file-progress {
@@ -33,7 +50,7 @@
             background-color: $upload-progress-bg;
         }
 
-        .k-file-success {
+        .k-file-success .k-file-name {
             color: $upload-success-text;
         }
 
@@ -41,7 +58,7 @@
             background-color: $upload-success-bg;
         }
 
-        .k-file-error {
+        .k-file-error .k-file-name {
             color: $upload-error-text;
         }
 
