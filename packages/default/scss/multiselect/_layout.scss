@@ -4,7 +4,8 @@
     .k-multiselect {
         width: auto;
         display: flex;
-
+        border-width: 1px;
+        border-style: solid;
 
         // Compact
         @include compact {
@@ -16,6 +17,7 @@
 
     .k-multiselect-wrap {
         min-height: calc( #{$input-calc-height} );
+        border-width: 0;
 
         > .k-i-close {
             display: none;
@@ -61,7 +63,6 @@
             float: left;
         }
         .k-input {
-            width: 25px;
             margin: $padding-y-sm ($padding-y-sm / 2);
             border: 0;
             outline: 0;
