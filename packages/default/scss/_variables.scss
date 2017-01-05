@@ -164,8 +164,9 @@ $button-pressed-text: $selected-text !default;
 $button-pressed-bg: $selected-bg !default;
 $button-pressed-border: $selected-border !default;
 $button-pressed-gradient: none !default;
+$button-pressed-shadow: inset 0 0 0 2px rgba(0, 0, 0, .1) !default;
 
-$button-focused-shadow: inset 0 0 0 2px darken($base-bg, 10%) !default;
+$button-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .1) !default;
 
 // Primary button
 $primary-button-text: $accent-contrast !default;

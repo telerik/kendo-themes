@@ -19,6 +19,7 @@ $_button-imported: false !default;
         background-color: $button-pressed-bg;
         border-color: $button-pressed-border;
         @include linear-gradient( $button-pressed-gradient );
+        @include box-shadow( $button-pressed-shadow );
     }
     %appearance_focused-button {
         @include box-shadow( $button-focused-shadow );

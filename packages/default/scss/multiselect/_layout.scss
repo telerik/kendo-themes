@@ -39,8 +39,8 @@
 
         // Token
         .k-button {
-            padding: ($padding-y-lg / 2) ($button-padding-x / 2);
-            margin: $padding-y-sm 0 $padding-y-sm $padding-y-sm;
+            padding: ($button-padding-y / 2) ($button-padding-x / 2);
+            margin: $padding-y-sm ($padding-y-sm / 2);
             cursor: pointer;
             display: inline-flex;
             flex-direction: row;
@@ -63,7 +63,6 @@
             float: left;
         }
         .k-input {
-            margin: $padding-y-sm ($padding-y-sm / 2);
             border: 0;
             outline: 0;
             color: inherit;
