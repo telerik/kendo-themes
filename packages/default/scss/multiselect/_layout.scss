@@ -41,7 +41,7 @@
         .k-button {
             padding: ($button-padding-y / 2) ($button-padding-x / 2);
             margin: $padding-y-sm ($padding-y-sm / 2);
-            cursor: pointer;
+            cursor: default;
             display: inline-flex;
             flex-direction: row;
             align-items: center;
@@ -49,6 +49,7 @@
 
             .k-select {
                 display: flex;
+                cursor: pointer;
 
                 .k-i-close {
                     margin-right: 0;
