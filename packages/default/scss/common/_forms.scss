@@ -17,6 +17,10 @@
         display: inline-flex;
         vertical-align: middle;
         position: relative;
+
+        &[dir='rtl'] {
+            text-align: right;
+        }
     }
 
     .k-nodata {
