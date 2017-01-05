@@ -41,6 +41,9 @@
     @if ( $what == pressed-button ) {
         @include appearance_pressed-button;
     }
+    @if ( $what == focused-button ) {
+        @include appearance_focused-button;
+    }
 
 
     // Primary button

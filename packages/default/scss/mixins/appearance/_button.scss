@@ -20,6 +20,9 @@ $_button-imported: false !default;
         border-color: $button-pressed-border;
         @include linear-gradient( $button-pressed-gradient );
     }
+    %appearance_focused-button {
+        @include box-shadow( $button-focused-shadow );
+    }
 
     %appearance_primary-button {
         color: $primary-button-text;
@@ -55,6 +58,7 @@ $_button-imported: false !default;
 @mixin appearance_button { @extend %appearance_button };
 @mixin appearance_hovered-button { @extend %appearance_hovered-button };
 @mixin appearance_pressed-button { @extend %appearance_pressed-button };
+@mixin appearance_focused-button { @extend %appearance_focused-button };
 
 @mixin appearance_primary-button { @extend %appearance_primary-button };
 @mixin appearance_hovered-primary-button { @extend %appearance_hovered-primary-button };
