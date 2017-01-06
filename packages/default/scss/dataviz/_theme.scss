@@ -58,6 +58,10 @@ $selection-box-shadow: inset 0 1px 7px rgba(0, 0, 0, .15) !default;
     .k-sparkline,
     .k-stockchart {
         background-color: transparent;
+
+        .k-popup {
+            background: transparent;
+        }
     }
 
     .k-chart-tooltip {
@@ -144,21 +148,6 @@ $selection-box-shadow: inset 0 1px 7px rgba(0, 0, 0, .15) !default;
         .k-leaf.k-state-hover {
             box-shadow: inset 0 0 0 3px $panel-border;
         }
-    }
-
-}
-
-
-// TODO: merge with above
-@include exports("chart/theme") {
-
-    // Chart
-    .k-chart {}
-    .k-chart-tooltip {
-        color: $panel-bg;
-    }
-    .k-chart-tooltip-inverse {
-        color: $panel-text;
     }
 
 }

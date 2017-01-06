@@ -44,6 +44,10 @@ $chart-title-font-size: 1.143em !default;
         height: 100%;
     }
 
+    .k-chart .k-popup {
+        border-width: 0;
+    }
+
     .k-chart-tooltip table {
         border-spacing: 0;
         border-collapse: collapse;
