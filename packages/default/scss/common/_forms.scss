@@ -54,19 +54,18 @@
         border-width: 1px;
         border-style: solid;
         box-sizing: border-box;
-        display: flex;
-        flex-direction: row;
         position: relative;
         // TODO: improve wrapper overflow
         //overflow: hidden;
         cursor: default;
     }
 
-
     // Other common
     .k-dropdown-wrap,
     .k-picker-wrap,
     .k-numeric-wrap {
+        display: flex;
+        flex-direction: row;
 
         .k-input {
             padding: $input-padding-y $input-padding-x;
