@@ -96,6 +96,10 @@
             padding: $button-padding-y $button-padding-x;
             font-size: $font-size;
             line-height: $form-line-height;
+
+            >.k-icon {
+                margin-right: $padding-y-lg;
+            }
         }
 
         &.k-dropzone-active {
