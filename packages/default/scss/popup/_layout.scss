@@ -7,7 +7,7 @@
         border-style: solid;
         font-size: $font-size;
         line-height: $line-height;
-        box-sizing: border-box;
+        box-sizing: content-box;
 
         .k-item {
             cursor: pointer;
