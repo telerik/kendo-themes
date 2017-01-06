@@ -135,13 +135,22 @@ $chart-title-font-size: 1.143em !default;
     }
 
     .k-left-handle div {
-        margin: -20px 0 0 -15px;
-        padding: 40px 30px 0 0;
+        margin: -($selection-handle-size) 0 0 (-($selection-handle-size / 1.5));
+        padding: ($selection-handle-size * 2) (($selection-handle-size / 1.5) * 2) 0 0;
     }
 
     .k-right-handle div {
-        margin: -20px 0 0 -15px;
-        padding: 40px 0 0 30px;
+        margin: -($selection-handle-size) 0 0 (-($selection-handle-size / 1.5));
+        padding: ($selection-handle-size * 2) 0 0 (($selection-handle-size / 1.5) * 2);
+    }
+
+    .k-left-handle.k-handle-active div {
+        margin-left: -($selection-handle-size * 2);
+        padding-right: ($selection-handle-size * 2) + ($selection-handle-size / 1.5);
+    }
+
+    .k-right-handle.k-handle-active div {
+        padding-left: ($selection-handle-size * 2) + ($selection-handle-size / 1.5);
     }
 
     .k-mask {
