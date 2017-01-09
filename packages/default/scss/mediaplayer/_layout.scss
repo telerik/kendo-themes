@@ -22,7 +22,9 @@
         left: 0;
         right: 0;
 
+        // sass-lint:disable no-important
         display: block !important;
+        // sass-lint:enable no-important
     }
 
 
@@ -38,11 +40,13 @@
         left: 0;
         right: 0;
 
+        // sass-lint:disable no-important
         display: flex !important;
 
         > * {
             border: 1px solid red !important;
         }
+        // sass-lint:enable no-important
     }
     .k-mediaplayer-time-wrap {
         flex: 1;
@@ -58,7 +62,9 @@
     }
     .k-slider.k-mediaplayer-seekbar {
         width: 100%;
+        // sass-lint:disable no-important
         display: block !important;
+        // sass-lint:enable no-important
     }
 
 }

@@ -168,9 +168,11 @@
         margin-top: -1px;
         flex: 1;
 
+        // sass-lint:disable no-important
         .k-tabstrip-items {
             margin: 0 !important;
         }
+        // sass-lint:enable no-important
         .k-item {
             display: flex;
             flex-direction: row;
@@ -185,6 +187,7 @@
 
 
     // Spreadsheet view
+    // sass-lint:disable no-important
     .k-spreadsheet-view {
         height: auto !important;
         border-color: inherit;
@@ -193,6 +196,7 @@
         flex: 1;
         position: relative;
     }
+    // sass-lint:enable no-important
     .k-spreadsheet-fixed-container {
         width: 100%;
         height: 100%;
