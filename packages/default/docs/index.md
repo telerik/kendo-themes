@@ -83,7 +83,7 @@ $accent: #ff69b4;
 @import "~@progress/kendo-theme-default/styles/packages/all";
 ```
 
-The basic set of variables is located in the [`\_variables.scss` file](https://github.com/telerik/kendo-theme-default/blob/master/styles/_variables.scss). Projects that are not built using the Angular CLI Tool require additional Webpack configuration to process SCSS files.
+The basic set of variables is located in the [`_variables.scss` file](https://github.com/telerik/kendo-theme-default/blob/master/styles/_variables.scss). Projects that are not built using the Angular CLI Tool require additional Webpack configuration to process SCSS files.
 
 ```json-no-run
 { test: /\.scss$/,
