@@ -331,7 +331,6 @@
 
 
 @include exports( "common/loading" ) {
-
     // Loading indicator
     .k-loading {
         width: 64px;
@@ -387,6 +386,55 @@
         opacity: .3;
     }
 
+    $loading-stroke-width: 2px !default;
+    $loading-size: ($icon-size - (2 * $loading-stroke-width)) !default;
+    $loading-speed: 2s !default;
+    $loading-color: $accent;
+    $loading-outer-size: ($loading-size + ($loading-stroke-width * 2));
+    $loading-half-size: ($loading-outer-size / 2) !default;
+
+    .k-icon.k-i-loading {
+        position: relative;
+        width: $loading-size;
+        height: $loading-size;
+        border: 2px solid $bg-color;
+        box-shadow: inset 0 0 0 $loading-stroke-width $loading-color;
+        border-radius: 50%;
+    }
+
+    .k-i-loading::before,
+    .k-i-loading::after {
+        position: absolute;
+        content: '';
+        width:  $loading-half-size;
+        height: $loading-outer-size;
+        background: $bg-color;
+    }
+
+    .k-i-loading::before {
+        border-radius: $loading-outer-size 0 0 $loading-outer-size;
+        top: -($loading-stroke-width);
+        left: -($loading-stroke-width);
+        transform-origin: $loading-half-size $loading-half-size;
+        animation: k-loading-animation $loading-speed infinite ease 1.5s;
+    }
+
+    .k-i-loading::after {
+        border-radius: 0 $loading-outer-size $loading-outer-size 0;
+        top: -($loading-stroke-width);
+        left: ($loading-size / 2);
+        transform-origin: 0 $loading-half-size;
+        animation: k-loading-animation $loading-speed infinite ease;
+    }
+
+    @keyframes k-loading-animation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 }
 
 

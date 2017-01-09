@@ -110,7 +110,17 @@
         .k-file-validation-message {
             color: $upload-disabled-text;
         }
+    }
 
+    .k-dropzone {
+        .k-i-loading {
+            border-color: $header-bg;
+        }
+
+        .k-i-loading::before,
+        .k-i-loading::after {
+            background-color: $header-bg;
+        }
     }
 
     .k-dropzone-hovered {
