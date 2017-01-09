@@ -49,6 +49,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        .k-icon {
+            font-size: $splitter-resize-icon-size;
+            display: block;
+        }
     }
 
     .k-splitbar-draggable-horizontal { cursor: w-resize; }
@@ -74,24 +79,6 @@
     .k-splitbar-static-horizontal { width: 1px; }
     .k-splitbar-static-vertical { height: 1px; }
 
-    .k-splitbar.k-splitbar-horizontal.k-splitbar-draggable-horizontal,
-    .k-splitbar.k-splitbar-vertical.k-splitbar-draggable-vertical {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .k-icon {
-            display: block;
-        }
-    }
-    .k-splitbar.k-splitbar-horizontal.k-splitbar-draggable-horizontal {
-        flex-direction: column;
-    }
-
-    .k-splitbar.k-splitbar-vertical.k-splitbar-draggable-vertical {
-        flex-direction: row;
-    }
-
     .k-splitbar-draggable-horizontal .k-resize-handle {
         position: static;
         width: $splitter-drag-handle-thickness;
@@ -100,9 +87,6 @@
 
     .k-splitbar-horizontal,
     .k-splitbar-vertical {
-        .k-icon {
-            font-size: $splitter-resize-icon-size;
-        }
 
         .k-resize-handle {
             display: none;
