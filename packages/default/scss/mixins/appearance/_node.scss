@@ -29,6 +29,11 @@ $_node-imported: false !default;
         color: $list-item-hovered-text;
         background-color: $list-item-hovered-bg;
     }
+    %appearance_focused-list-item {
+        color: $list-item-text;
+        background-color: $list-item-bg;
+        box-shadow: $list-item-focused-shadow;
+    }
     %appearance_selected-list-item {
         color: $list-item-selected-text;
         background-color: $list-item-selected-bg;
@@ -45,4 +50,5 @@ $_node-imported: false !default;
 
 @mixin appearance_list-item { @extend %appearance_list-item };
 @mixin appearance_hovered-list-item { @extend %appearance_hovered-list-item };
+@mixin appearance_focused-list-item { @extend %appearance_focused-list-item };
 @mixin appearance_selected-list-item { @extend %appearance_selected-list-item };

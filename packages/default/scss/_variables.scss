@@ -225,13 +225,15 @@ $node-selected-gradient: null !default;
 
 // List
 $list-item-text: $text-color !default;
-$list-item-bg: $bg-color !default;
+$list-item-bg: $popup-bg !default;
 
 $list-item-hovered-text: $hover-text !default;
 $list-item-hovered-bg: $hover-bg !default;
 
 $list-item-selected-text: $selected-text !default;
 $list-item-selected-bg: $selected-bg !default;
+
+$list-item-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .1) !default;
 
 
 // Chart

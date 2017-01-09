@@ -98,5 +98,8 @@
     @if ( $what == selected-list-item ) {
         @include appearance_selected-list-item;
     }
+    @if ( $what == focused-list-item ) {
+        @include appearance_focused-list-item;
+    }
 
 }

@@ -1,10 +1,5 @@
 // TODO: list item variables
-$list-container-border: rgba(0, 0, 0, .08) !default;
 $list-container-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
-
-$list-item-focused-box-shadow: inset 0 0 0 2px $base-border !default;
-$list-item-focused-border: rgba(0, 0, 0, .1) !default;
-$list-item-selected-focused-box-shadow: inset 0 0 0 1px blend-multiply($accent, darken($widget-bg, 8%)) !default;
 
 $popup-text: $normal-text-color !default;
 
@@ -44,19 +39,13 @@ $popup-text: $normal-text-color !default;
             background-color: blend-multiply( $list-item-selected-bg, $list-item-hovered-bg );
         }
     }
-    .k-list .k-item.k-state-selected {
-        @include appearance( selected-list-item );
-    }
+
     .k-list .k-item:focus,
     .k-list .k-item.k-state-focused {
-        box-shadow: $list-item-focused-box-shadow;
-
-        &.k-state-selected {
-            box-shadow: $list-item-selected-focused-box-shadow;
-        }
+        @include appearance( focused-list-item );
     }
 
-    .k-list .k-item:active {
+    .k-list .k-item.k-state-selected {
         @include appearance( selected-list-item );
     }
 
