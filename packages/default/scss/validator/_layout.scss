@@ -1,6 +1,7 @@
 @include exports("validator/layout") {
 
     .k-tooltip-validation {
+        position: static;
         border-width: 1px;
         display: inline-flex;
         align-items: center;
