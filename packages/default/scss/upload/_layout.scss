@@ -227,6 +227,7 @@
         display: block;
         margin-left: calc(#{$padding-x} + #{$uploaded-image-width} + #{$padding-x * 2});
         margin-right: calc(#{$padding-x} + #{$icon-size} + #{$padding-x-sm});
+        overflow: hidden;
     }
 
     .k-file-extension-wrapper::before,
