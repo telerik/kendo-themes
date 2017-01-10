@@ -18,7 +18,6 @@
     $focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
     $focused-checked-shadow: 0 0 0 2px rgba($accent, .3) !default;
 
-    .k-input,
     .k-textbox {
         @include appearance( "input" );
 

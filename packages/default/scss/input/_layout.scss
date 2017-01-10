@@ -5,38 +5,47 @@
     $textbox-shadow: 0 2px 2px 1px rgba(0, 0, 0, .06) !default;
     $fieldset-margin: 30px;
 
-    .k-textbox > input,
-    .k-input,
-    .k-textbox {
+    .k-textbox,
+    .k-maskedtextbox {
+        @include border-radius( $border-radius );
+        padding: $input-padding-y $input-padding-x;
+        width: 12.4em;
+        box-sizing: border-box;
         border-width: 1px;
         border-style: solid;
-        font-size: inherit;
+        outline: 0;
+        font: inherit;
+        line-height: $form-line-height;
+        display: inline-flex;
+        vertical-align: middle;
+        position: relative;
+        -webkit-appearance: none;
+    }
+    .k-input,
+    .k-textbox > input {
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+        border: 0;
+        outline: 0;
+        color: inherit;
+        background: transparent;
+        font: inherit;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
         -webkit-appearance: none;
     }
 
-    .k-input,
-    .k-textbox {
-        @include border-radius( $border-radius );
-        font: inherit;
-        outline: none;
-        padding: $input-padding-y $input-padding-x;
-
-        > input {
-            font: inherit;
-        }
-    }
-
-    .k-textbox {
-        outline: 0;
-        box-sizing: border-box;
-    }
-
-    .k-textbox:focus {
+    .k-textbox:focus,
+    .k-maskedtextbox:focus {
         box-shadow: $textbox-shadow;
     }
 
-    .k-input,
-    .k-textbox {
+    .k-textbox,
+    .k-maskedtextbox {
         &:disabled,
         &[disabled],
         &.k-state-disabled {
