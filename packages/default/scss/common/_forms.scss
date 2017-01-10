@@ -97,22 +97,25 @@
 
             .k-icon {}
         }
+    }
 
-
-        // Clear icon
+    .k-autocomplete,
+    .k-dropdown-wrap,
+    .k-multiselect {
         .k-i-close {
             display: none;
-            align-self: center;
+            position: absolute;
+            right: $padding-x;
+            top: $padding-y-lg;
         }
 
+        &.k-state-focused,
         &.k-state-hover,
-        &.k-state-focused {
+        &:hover {
             .k-i-close {
-                display: flex;
-                margin-right: $padding-y;
+                display: inline-block;
                 outline: 0;
             }
         }
     }
-
 }

@@ -19,15 +19,6 @@
         min-height: calc( #{$input-calc-height} );
         border-width: 0;
 
-        > .k-i-close {
-            display: none;
-            align-self: center;
-            margin-left: auto;
-            margin-right: $padding-y;
-            outline: 0;
-        }
-
-
         // Token list
         ul {
             vertical-align: top;
@@ -50,11 +41,6 @@
             .k-select {
                 display: flex;
                 cursor: pointer;
-
-                .k-i-close {
-                    margin-right: 0;
-                    margin-left: $padding-y * 2;
-                }
             }
         }
 
@@ -79,22 +65,5 @@
             right: $padding-y-sm;
             top: $padding-y-sm;
         }
-
-
-        // TODO: clear icon must be displayed when valur is present
-        &:hover,
-        .k-state-hover > &,
-        .k-state-focused > & {
-            .k-multiselect-wrap {
-                > .k-i-close {
-                    display: inline-block;
-                    position: absolute;
-                    right: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-            }
-        }
     }
-
 }

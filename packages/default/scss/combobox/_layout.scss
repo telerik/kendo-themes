@@ -17,6 +17,11 @@
                 padding: $button-padding-y-sm;
             }
         }
-    }
 
+        >.k-dropdown-wrap {
+            > .k-i-close {
+                right: ($icon-size + ($padding-y-lg * 3));
+            }
+        }
+    }
 }
