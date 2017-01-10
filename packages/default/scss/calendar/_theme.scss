@@ -30,7 +30,7 @@
         // Content
         .k-content {}
 
-        .k-content th {
+        .k-content thead {
             @include appearance( header );
         }
         .k-content td {}
@@ -41,7 +41,7 @@
                 color: $accent-contrast;
             }
         }
-        .k-content .k-weekend {
+        .k-weekend {
             background: darken( $widget-bg, 5 );
         }
         .k-content .k-state-hover {
@@ -55,6 +55,17 @@
             // sass-lint:disable no-color-literals
             box-shadow: inset 0 0 0 2px rgba( $widget-text, .08);
             // sass-lint:enable no-color-literals
+        }
+
+
+
+
+        // Monthview
+        .k-calendar-monthview {
+
+            thead {
+                @include appearance( header );
+            }
         }
     }
 

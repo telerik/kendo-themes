@@ -22,17 +22,31 @@ $calendar-line-height: 1.25 !default;
             display: block;
         }
 
+        table {
+            margin: 0;
+            width: 100%;
+            border-width: 0;
+            border-color: inherit;
+            border-spacing: 0;
+            border-collapse: separate;
+            table-layout: fixed;
+            outline: 0;
+        }
+        td,
+        th {
+            padding: 0;
+            border-style: solid;
+            border-color: inherit;
+            font-weight: normal;
+            text-align: inherit;
+        }
         th {
             border-width: 0 0 1px;
-            border-style: solid;
             padding: $calendar-cell-padding-y $calendar-cell-padding-x;
-            font-weight: normal;
             cursor: default;
         }
-
         td {
             border-width: 1px;
-            border-style: solid;
             cursor: pointer;
         }
 
@@ -97,17 +111,8 @@ $calendar-line-height: 1.25 !default;
                 margin: 0;
                 width: 100%;
                 height: 14.167em;
-                border-width: 0;
-                border-spacing: 0;
-                border-collapse: separate;
-                table-layout: fixed;
-                float: left;
-                outline: 0;
-            }
-
-            .k-content,
-            .k-content th {
                 text-align: right;
+                float: left;
             }
 
             .k-content td {
@@ -152,6 +157,44 @@ $calendar-line-height: 1.25 !default;
         .k-calendar {
             border-width: 0;
         }
+    }
+
+
+
+
+    // Monthview
+    .k-calendar-monthview {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        thead {}
+
+        .k-content {
+            //flex: 1;
+            height: calc( #{ 9 * $calendar-line-height * 1em } + #{ 9 * $calendar-cell-padding-y } );
+            float: none;
+            position: relative;
+
+            > table {
+                position: relative;
+                z-index: 1;
+            }
+
+            th {
+                border: 0;
+                text-align: left;
+            }
+        }
+
+        .k-scrollable {
+            overflow-y: auto;
+        }
+        .k-scrollable-placeholder {
+            position: relative;
+            z-index: -1;
+        }
+
     }
 
 }
