@@ -87,12 +87,6 @@
         min-height: 0%; /* IE9 bug workaround - expanding Grid on hover */
     }
 
-    .k-grouping-header,
-    .k-filter-row th {
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-    }
-
     .k-filter-row th {
         padding: .5em;
     }
@@ -126,6 +120,13 @@
         overflow: hidden;
         vertical-align: middle;
         text-overflow: ellipsis;
+    }
+
+    .k-grouping-header,
+    .k-filter-row th,
+    .k-grid-add-row td {
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
     }
 
     .k-grid tbody td:first-child,
