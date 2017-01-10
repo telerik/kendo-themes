@@ -1,9 +1,11 @@
 @include exports("editor/layout") {
 
+    $ct-cell-side-length: 20px !default;
+
     // Base
     .k-editor {
         border-collapse: separate;
-        border-spacing: 4px;
+        border-spacing: 0;
         vertical-align: top;
         position: relative;
         table-layout: fixed;
@@ -54,7 +56,7 @@
     .k-keditor-toolbar-wrap {}
     .k-editor-toolbar {
         margin: 0;
-        padding: .1em 0;
+        padding: 0;
         list-style-type: none;
         line-height: 1.3em;
         cursor: default;
@@ -66,7 +68,21 @@
         }
 
         // Group
-        .k-tool-group {}
+        .k-tool-group {
+            padding: 8px;
+            border-width: 0;
+            border-style: solid;
+
+            &:not(:first-child) {
+                border-left-width: 1px;
+            }
+
+            .k-tool.k-group-start,
+            .k-tool.k-group-end {
+                border-radius: 0;
+            }
+        }
+
         .k-tool-group .k-state-disabled {
             display: none;
         }
@@ -74,7 +90,8 @@
 
         // Tools
         .k-tool {
-            padding: $button-padding-y;
+            padding: $button-padding-x;
+            display: inline-flex;
         }
 
 
@@ -89,7 +106,7 @@
         padding: $input-padding-y;
         width: 100%;
         height: 100%;
-        border-width: 1px;
+        border-width: 1px 0 0;
         border-style: solid;
         outline: 0;
     }
@@ -97,21 +114,30 @@
 
     // Insert table
     .k-ct-popup {
-        padding: $padding-y-sm;
-        // TODO: improve width calculation
-        // width: (1rem + $padding-y-sm) * 8;
-    }
-    .k-ct-cell {
-        margin: $padding-y-sm / 2;
-        width: 1rem;
-        height: 1rem;
         box-sizing: border-box;
-        border: 1px solid;
-        border-color: inherit;
-        display: inline-block;
-        vertical-align: top;
-        overflow: hidden;
-        opacity: .7;
+        width: $ct-cell-side-length * 10 - ($ct-cell-side-length / 2);
+        padding: $ct-cell-side-length / 4;
+
+        .k-editor-toolbar {
+            text-align: center;
+
+            .k-tool-text {
+                display: inline;
+            }
+        }
+
+        .k-ct-cell {
+            margin: $padding-y-sm / 2;
+            width: $ct-cell-side-length;
+            height: $ct-cell-side-length;
+            box-sizing: border-box;
+            border: 1px solid;
+            border-color: inherit;
+            display: inline-block;
+            vertical-align: top;
+            overflow: hidden;
+            opacity: .7;
+        }
     }
 
 
@@ -128,6 +154,7 @@
             float: left;
             clear: both;
         }
+
         .k-edit-field {
             padding-bottom: $padding-y;
             width: 66%;
@@ -153,10 +180,66 @@
             }
         }
     }
-    // TODO: verify that this needs to be here
-    // #editor-image-width,
-    // #editor-image-height {
-    //    width: 5em;
-    // }
 
+    .k-editor .k-resize-handle {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 13px 13px;
+        cursor: se-resize;
+
+        .k-i-arrow-45-down-right {
+            display: none;
+        }
+    }
+
+    .k-editor .k-overlay {
+        position: absolute;
+        background-color: #fff;
+        opacity: 0;
+    }
+
+    .k-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10001;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .5;
+    }
+
+    .k-editor-widget .k-colorpicker {
+        display: inline-flex;
+
+        .k-picker-wrap {
+            align-items: center;
+
+            .k-tool-icon {
+                padding: ($button-padding-x - 2px);
+            }
+        }
+
+        .k-select {
+            padding: ($button-padding-x - 2px);
+        }
+    }
+
+    .k-editor-toolbar .k-colorpicker .k-selected-color {
+        padding: 0;
+        width: 0;
+        height: 0;
+    }
+    .k-rtl .k-editor .k-editor-widget .k-dropdown-wrap {
+        padding-left: 0;
+
+        .k-select {
+            border-width: 0;
+        }
+    }
 }
