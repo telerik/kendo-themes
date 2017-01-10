@@ -72,7 +72,7 @@ To change the theme colors or sizes, build a custom theme from its SCSS sources.
 export class AppComponent { }
 ```
 ```scss
-@import "~@progress/kendo-theme-default/styles/packages/all";
+@import "~@progress/kendo-theme-default/scss/all";
 ```
 
 The setup described above allows for the theme variables to be changed directly in your application. To style the button in a lovely pink color, change the `$accent` variable before importing the theme.
@@ -80,10 +80,10 @@ The setup described above allows for the theme variables to be changed directly 
 ```scss
 $accent: #ff69b4;
 
-@import "~@progress/kendo-theme-default/styles/packages/all";
+@import "~@progress/kendo-theme-default/scss/all";
 ```
 
-The basic set of variables is located in the [`_variables.scss` file](https://github.com/telerik/kendo-theme-default/blob/master/styles/_variables.scss). Projects that are not built using the Angular CLI Tool require additional Webpack configuration to process SCSS files.
+The basic set of variables is located in the [`_variables.scss` file](https://github.com/telerik/kendo-theme-default/blob/master/scss/_variables.scss). Projects that are not built using the Angular CLI Tool require additional Webpack configuration to process SCSS files.
 
 ```json-no-run
 { test: /\.scss$/,
