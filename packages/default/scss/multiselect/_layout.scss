@@ -18,6 +18,7 @@
     .k-multiselect-wrap {
         min-height: calc( #{$input-calc-height} );
         border-width: 0;
+        padding-right: ($padding-x * 3);
 
         // Token list
         ul {
@@ -50,11 +51,6 @@
             float: left;
         }
         .k-input {
-            border: 0;
-            outline: 0;
-            color: inherit;
-            background: none;
-            font: inherit;
             float: left;
         }
 
