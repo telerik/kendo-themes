@@ -102,7 +102,7 @@
     .k-autocomplete,
     .k-dropdown-wrap,
     .k-multiselect {
-        .k-i-close {
+        .k-clear-value {
             display: none;
             position: absolute;
             right: $padding-x;
@@ -112,7 +112,7 @@
         &.k-state-focused,
         &.k-state-hover,
         &:hover {
-            .k-i-close {
+            .k-clear-value {
                 display: inline-block;
                 outline: 0;
             }
