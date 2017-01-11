@@ -118,9 +118,21 @@
     }
 
     //DropDown Button
-    kendo-dropdownbutton.k-state-focused,
-    kendo-dropdownbutton:focus {
-        outline: 0;
+    .k-dropdown-button {
+        &.k-state-focused,
+        &:focus {
+            outline: 0;
+
+            & > .k-button,
+            & > .k-button {
+                box-shadow: $button-focused-box-shadow;
+            }
+        }
+
+        &.k-widget {
+            border-width: 0;
+            display: inline-block;
+        }
     }
 
     // Bare button
@@ -171,26 +183,23 @@
     }
 
     //SplitButton
-    //TODO: Wait for final design + revise
-    kendo-splitbutton.k-button-group.k-state-focused {
+    .k-split-button.k-button-group.k-state-focused {
         border-radius: $border-radius;
     }
 
-    kendo-splitbutton.k-widget {
+    .k-split-button.k-widget {
         border-width: 0;
     }
 
-    kendo-splitbutton.k-button-group .k-button {
+    .k-split-button.k-button-group .k-button {
         &:first-child {
             border-top-left-radius: $border-radius;
             border-bottom-left-radius: $border-radius;
         }
 
-        &:last-child {
+        &:nth-child(2) {
             border-top-right-radius: $border-radius;
             border-bottom-right-radius: $border-radius;
         }
-        // $border-radius
     }
-
 }

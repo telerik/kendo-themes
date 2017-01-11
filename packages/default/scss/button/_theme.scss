@@ -1,9 +1,8 @@
 // TODO: button variables
-$button-focused-box-shadow: 0 0 0 2px darken($widget-bg, 6%) !default;
-$button-active-box-shadow: inset 0 3px 5px darken($widget-bg, 9%) !default;
+$button-focused-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
+$button-active-box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
 
-$primary-focused-box-shadow: 0 0 0 2px lighten($primary-button-bg, 23%) !default;
-$primary-active-box-shadow: inset 0 3px 5px desaturate($primary-button-bg, 3%) !default;
+$primary-focused-box-shadow: 0 3px 4px 0 rgba($accent, .06) !default;
 
 $buttongroup-button-focused-box-shadow: inset 0 0 0 2px darken($base-bg, 5%) !default;
 $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary-button-bg, 2%) !default;
@@ -24,6 +23,7 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
         &:active,
         &.k-state-active {
             @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
+            box-shadow: $button-active-box-shadow;
         }
 
         // Focused state
@@ -31,7 +31,6 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
         &.k-state-focused {
             box-shadow: $button-focused-box-shadow;
         }
-
     }
 
 
@@ -60,9 +59,21 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
     }
 
     //DropDown Button
-    kendo-dropdownbutton.k-state-focused > .k-button,
-    kendo-dropdownbutton:focus > .k-button {
-        box-shadow: $button-focused-box-shadow;
+    .k-dropdown-button {
+        &:focus > .k-button,
+        &.k-state-focused > .k-button {
+            box-shadow: $button-focused-box-shadow;
+        }
+
+        &:active > .k-button:not(:disabled),
+        &.k-state-active > .k-button:not(:disabled) {
+            box-shadow: $button-active-box-shadow;
+        }
+
+        .k-widget {
+            border-width: 0;
+            display: inline-block;
+        }
     }
 
     // Button group
@@ -83,14 +94,15 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
     }
 
     //SplitButton
-    //TODO: Wait for final design + revise
-    kendo-splitbutton.k-state-focused {
+    .k-split-button.k-state-focused {
         box-shadow: $button-focused-box-shadow;
     }
-    kendo-splitbutton.k-button-group .k-button {
+
+    .k-split-button.k-button-group .k-button {
         &:active,
         &.k-state-active {
             @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
+            box-shadow: $button-active-box-shadow;
         }
     }
 }
