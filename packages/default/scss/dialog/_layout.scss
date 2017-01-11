@@ -1,7 +1,7 @@
 // TODO: extract or remove modal variables
 $modal-title-padding: 1em !default;
 $modal-title-line-height: 1.2em !default;
-$modal-inner-padding: .5em !default;
+$modal-inner-padding: $modal-title-padding !default;
 
 @import '../button/layout';
 @import '../action-buttons/layout';
