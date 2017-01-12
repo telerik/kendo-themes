@@ -610,6 +610,7 @@
     .k-i-arrowhead-w::before { @extend .k-i-arrow-chevron-left; }
     .k-i-deny::before { @extend .k-i-cancel-outline; }
     .k-plus::before { @extend .k-i-plus; }
+    .k-i-add::before { @extend .k-i-plus; }
     .k-i-splus::before { @extend .k-i-plus-sm; }
     .k-minus::before { @extend .k-i-minus; }
     .k-i-sminus::before { @extend .k-i-minus-sm; }
