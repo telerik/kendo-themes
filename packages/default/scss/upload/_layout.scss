@@ -49,7 +49,7 @@
         vertical-align: middle;
 
         .k-upload-sync & {
-            margin: $padding-y $padding-x;
+            margin: $padding-x;
         }
     }
     .k-upload-button input {
@@ -99,6 +99,7 @@
 
             >.k-icon {
                 margin-right: $padding-y-lg;
+                box-sizing: content-box;
             }
         }
 
@@ -158,18 +159,21 @@
 
         .k-upload-status {
             position: absolute;
-            line-height: 1em;
             right: $padding-x;
-            top: $padding-y * 3;
+            top: $padding-x;
 
             .k-button {
-                padding: $padding-y-sm;
+                padding: 0;
                 border-radius: 50%;
+            }
+
+            .k-icon {
+                vertical-align: middle;
             }
         }
 
         .k-upload-pct {
-            margin-right: $padding-x;
+            margin-right: $padding-x-sm;
         }
     }
 
@@ -226,7 +230,7 @@
     .k-file-name-size-wrapper {
         display: block;
         margin-left: calc(#{$padding-x} + #{$uploaded-image-width} + #{$padding-x * 2});
-        margin-right: calc(#{$padding-x} + #{$icon-size} + #{$padding-x-sm});
+        margin-right: calc(#{$padding-x * 6} + #{$icon-size} + #{$padding-x-sm});
         overflow: hidden;
     }
 
@@ -298,6 +302,7 @@
 
     .k-upload-action {
         line-height: normal;
+        margin-left: $padding-x-sm;
     }
 
     .k-progress {
