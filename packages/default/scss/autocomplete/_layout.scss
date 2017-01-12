@@ -8,6 +8,7 @@
         @include border-radius( $border-radius );
 
         .k-input {
+            box-sizing: content-box;
             height: $line-height-em;
             line-height: $line-height;
             padding:  $padding-y $padding-x;
