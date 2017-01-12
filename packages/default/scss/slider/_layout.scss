@@ -255,13 +255,19 @@ $slider-track-thickness: 4px !default;
             height: 14px;
             top: -6px;
             width: 14px;
-            transition: left $transition-speed $transition-function, background-color $transition-speed $transition-function;
         }
 
         .k-slider-vertical & {
             height: 14px;
             left: -6px;
             width: 14px;
+        }
+
+        .k-slider-transitions.k-slider-horizontal & {
+            transition: left $transition-speed $transition-function, background-color $transition-speed $transition-function;
+        }
+
+        .k-slider-transitions.k-slider-vertical & {
             transition: bottom  $transition-speed $transition-function, background-color $transition-speed $transition-function;
         }
 
@@ -271,11 +277,11 @@ $slider-track-thickness: 4px !default;
     }
 
     .k-slider-selection {
-        .k-slider-horizontal & {
+        .k-slider-transitions.k-slider-horizontal & {
             transition: width $transition-speed $transition-function;
         }
 
-        .k-slider-vertical & {
+        .k-slider-transitions.k-slider-vertical & {
             transition: height $transition-speed $transition-function;
         }
 
