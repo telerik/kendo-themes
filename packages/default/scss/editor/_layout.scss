@@ -142,6 +142,7 @@
 
 
     // Editor dialog
+
     .k-editor-dialog {
         padding: $padding-y;
         width: 400px;
@@ -177,6 +178,29 @@
 
             .k-button + .k-button {
                 margin-left: $padding-y;
+            }
+        }
+    }
+
+    .k-editor-table-wizard-dialog {
+        .k-content {
+            padding: $padding-y-lg $padding-x 0;
+        }
+
+        .k-edit-field {
+            .k-numerictextbox {
+                & + .k-dropdown {
+                    width: 4em;
+                }
+
+                & + .k-colorpicker,
+                & + .k-dropdown {
+                    margin-left: $padding-x-sm;
+                }
+            }
+
+            .k-colorpicker {
+                vertical-align: middle;
             }
         }
     }
