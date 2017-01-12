@@ -61,7 +61,7 @@ $modal-overlay-color: #000 !default;
     }
     .k-window-title {
         margin: 0;
-        line-height: $modal-title-line-height;
+        line-height: 1;
         text-overflow: ellipsis;
         overflow: hidden;
         cursor: default;
@@ -73,7 +73,10 @@ $modal-overlay-color: #000 !default;
         display: flex;
         flex-direction: row;
         align-items: center;
+        line-height: 1;
+        vertical-align: top;
     }
+
     .k-window-action {
         padding: 2px;
         color: inherit;

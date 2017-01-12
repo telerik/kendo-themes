@@ -1,7 +1,7 @@
 // TODO: extract or remove modal variables
 $modal-content-bg: $widget-bg !default;
 $modal-content-xs-box-shadow: 0 3px 9px rgba( 0, 0, 0, .5 ) !default;
-$modal-header-border-color: $border-color !default;
+$modal-header-border-color: transparent !default;
 
 @include exports("window/theme") {
 
