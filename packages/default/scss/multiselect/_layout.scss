@@ -4,12 +4,16 @@
     .k-multiselect {
         border-width: 1px;
         border-style: solid;
+        width: 100%;
 
         // Compact
         @include compact {
             padding: ($input-padding-y / 4);
         }
 
+        .k-loading-hidden {
+            visibility: hidden;
+        }
     }
 
 
@@ -40,6 +44,7 @@
             .k-select {
                 display: flex;
                 cursor: pointer;
+                margin-left: $padding-x;
             }
         }
 
@@ -56,8 +61,8 @@
         // Icons
         .k-i-loading {
             position: absolute;
-            right: $padding-y-sm;
-            top: $padding-y-sm;
+            right: $padding-x;
+            top: $padding-y-lg;
         }
     }
 }
