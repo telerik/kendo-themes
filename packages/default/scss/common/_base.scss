@@ -36,6 +36,10 @@
     }
     table.k-widget { display: table; }
 
+    .k-rtl {
+        direction: rtl;
+    }
+
 
     // Float wrap
     .k-floatwrap::after,
