@@ -271,32 +271,35 @@
     }
 
     .k-header.k-drag-clue {
-        position: absolute;
-        z-index: 10003;
-        border-style: solid;
-        border-width: 1px;
-        font-size: .9em;
-        padding: $padding-y-lg $padding-x;
-        white-space: nowrap;
         overflow: hidden;
-        cursor: default;
-        line-height: 1em;
-        border-radius: $border-radius;
     }
+
+    $group-dropclue-size: 6px;
+    $group-dropclue-line-size: $group-dropclue-size / 3;
 
     .k-grouping-dropclue {
         position: absolute;
-        width: 12px;
-        height: 30px;
+        width: ($group-dropclue-size * 2);
+        height: calc( #{$button-calc-height} + 2px);
+
+        &::before,
+        &::after {
+            display: inline-block;
+            content: '';
+            position: absolute;
+        }
 
         &::before {
-            display: inline-block;
-            content: ' ';
-            width: 12px;
-            height: 12px;
-            border-width: 6px;
+            border-width: $group-dropclue-size;
             border-style: solid;
-            box-sizing: border-box;
+            top: 0;
+        }
+
+        &::after {
+            width: $group-dropclue-line-size;
+            height: calc(100% - #{$group-dropclue-size});
+            top: $group-dropclue-size;
+            left: calc(#{$group-dropclue-size} - (#{$group-dropclue-line-size} / 2));
         }
     }
 
@@ -306,8 +309,9 @@
         border-width: 1px;
         border-radius: $border-radius;
         margin: 0 0 0 $padding-y;
-        padding: $padding-y-lg $padding-x;
-        line-height: 1em;
+        padding: $button-padding-y $button-padding-x;
+        font-size: $font-size;
+        line-height: $form-line-height;
     }
 
     .k-grouping-header .k-link {

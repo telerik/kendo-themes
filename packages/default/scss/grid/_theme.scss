@@ -79,6 +79,10 @@
             &::before {
                 border-color: $grid-chrome-text transparent transparent;
             }
+
+            &::after {
+                background-color: $grid-chrome-text;
+            }
         }
     }
 }
