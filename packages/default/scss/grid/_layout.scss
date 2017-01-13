@@ -24,6 +24,11 @@
         border-style: solid;
     }
 
+    .k-grid-toolbar .k-button {
+        vertical-align: middle;
+        margin: 0 .16em;
+    }
+
     .k-grid-header {
         border-bottom-style: solid;
         border-bottom-width: 1px;
@@ -170,6 +175,10 @@
         padding: ($header-padding-x / 2) ($header-padding-x / 5);
         position: relative;
         z-index: 1;
+    }
+
+    .k-grid-filter .k-icon {
+        vertical-align: middle;
     }
 
     .k-grid-pager {
@@ -386,5 +395,58 @@
     .k-grouping-header .k-button {
         display: inline-block;
         vertical-align: middle;
+    }
+
+    .k-filter-menu {
+        padding: .5em;
+
+        .k-widget,
+        .k-textbox {
+            display: block;
+            width: 100%;
+            margin: .19em 0 0;
+        }
+
+        .k-textbox {
+            margin-bottom: 3px;
+        }
+
+
+        .k-widget.k-filter-and {
+            width: 6em;
+            margin: .5em 0;
+        }
+
+        .k-filter-selected-items {
+            font-weight: bold;
+            line-height: normal;
+            white-space: nowrap;
+            margin: 1em 0 .3em;
+        }
+
+        .k-button {
+            width: 48%;
+            margin: .5em 4% 0 0;
+
+            + .k-button {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .k-multicheck-wrap {
+        overflow: auto;
+        overflow-x: hidden;
+        white-space: nowrap;
+        max-height: 300px;
+
+        .k-item {
+            line-height: 2.2em;
+        }
+
+        .k-label {
+            display: block;
+            cursor: pointer;
+        }
     }
 }

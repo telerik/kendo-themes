@@ -136,4 +136,27 @@
             white-space: nowrap;
         }
     }
+
+    // Style helpers
+    .k-textbox.k-space-left {
+        padding-left: 1.9em;
+    }
+
+    .k-textbox.k-space-right {
+        padding-right: 1.9em;
+    }
+
+    .k-textbox .k-icon {
+        top: 50%;
+        margin: -8px 0 0;
+        position: absolute;
+    }
+
+    .k-space-left .k-icon {
+        left: 3px;
+    }
+
+    .k-space-right .k-icon {
+        right: 3px;
+    }
 }
