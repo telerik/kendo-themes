@@ -1,40 +1,23 @@
 @include exports('action-buttons/layout') {
 
-    $window-padding: 1.143em;
-
     .k-action-buttons {
-        display: flex;
-        padding: $window-padding 0;
         border-top-width: 1px;
         border-top-style: solid;
+        border-color: inherit;
+        display: flex;
+        flex-direction: row;
 
         .k-button {
-            flex: 1;
-            font-size: 1em;
-            margin: -$window-padding 0;
-            padding: $window-padding 0;
-            line-height: 1.2em;
+            padding: $padding-x-lg;
+            border-width: 0;
+            border-color: inherit;
             border-radius: 0;
-
-            &::before {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 1px;
-                height: 100%;
-            }
-
-            &:first-child::before {
-                display: none;
-            }
+            background: none;
+            flex: 1;
         }
-
-        &::after {
-            display: block;
-            content: '';
-            clear: both;
+        .k-button + .k-button {
+            border-left-width: 1px;
         }
     }
+
 }
