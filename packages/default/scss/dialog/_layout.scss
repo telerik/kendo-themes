@@ -69,11 +69,23 @@ $modal-inner-padding: $modal-title-padding !default;
             display: flex;
             justify-content: center;
             flex: 1;
+            line-height: 1;
+            padding: $padding-x * 2;
+            border-radius: 0;
+            border-width: 1px 0 0;
+
+            &:not(:last-child) {
+                border-right-width: 1px;
+            }
         }
     }
     .k-dialog-button-layout-stretched {
         flex-direction: row;
         align-items: stretch;
+    }
+
+    .k-window-content {
+        overflow: hidden;
     }
 
 }
