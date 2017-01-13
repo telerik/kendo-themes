@@ -37,6 +37,8 @@
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-appearance: none;
+
+        &::-ms-clear { display: none; }
     }
 
     .k-textbox:focus,
