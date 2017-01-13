@@ -1,6 +1,4 @@
 @include exports('grid/layout') {
-    $header-padding: $spacer !default;
-
     .k-grid {
         display: block;
         position: relative;
@@ -74,7 +72,7 @@
     }
 
     .k-grid-header th.k-header>.k-link {
-        margin: -$header-padding;
+        margin: -$header-padding-x;
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -87,12 +85,8 @@
         min-height: 0%; /* IE9 bug workaround - expanding Grid on hover */
     }
 
-    .k-filter-row th {
-        padding: .5em;
-    }
-
     .k-grid-header th.k-header>.k-link {
-        margin: -$header-padding;
+        margin: -$header-padding-x;
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -101,7 +95,7 @@
     .k-grid-toolbar,
     .k-grouping-header,
     .k-grid-header th.k-header>.k-link    {
-        padding: $header-padding;
+        padding: $header-padding-x;
     }
 
     .k-grid-content {
@@ -172,14 +166,64 @@
     .k-header > .k-grid-filter,
     .k-header > .k-header-column-menu {
         float: right;
-        margin: (-$header-padding / 2) (-$header-padding / 2) (-$header-padding / 2) 0;
-        padding: ($header-padding / 2) ($header-padding / 5);
+        margin: (-$header-padding-x / 2) (-$header-padding-x / 2) (-$header-padding-x / 2) 0;
+        padding: ($header-padding-x / 2) ($header-padding-x / 5);
         position: relative;
         z-index: 1;
     }
 
     .k-grid-pager {
         border-width: 1px 0 0;
+    }
+
+    /* Filter row */
+    $input-border-width: 1px;
+    $filter-rows-span-size: calc( #{$line-height-em} + #{$input-padding-y * 2} + #{$input-border-width * 2}) !default;
+
+
+    .k-filtercell,
+    .k-filtercell > span,
+    .k-filtercell .k-widget {
+        display: block;
+        width: auto;
+    }
+
+    .k-filtercell > span {
+        padding-right: calc( #{$filter-rows-span-size} + #{$padding-x});
+        position: relative;
+        height: $filter-rows-span-size;
+        line-height: $form-line-height;
+    }
+
+    .k-filtercell > .k-operator-hidden {
+        padding-right: $padding-x * 4;
+    }
+
+    .k-filtercell > span > .k-button,
+    .k-filter-row .k-dropdown-operator {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .k-filter-row .k-dropdown-operator {
+        width: $filter-rows-span-size;
+    }
+
+    .k-filtercell > span > label {
+        vertical-align: middle;
+    }
+
+    .k-filtercell {
+        .k-autocomplete .k-input,
+        .k-dropdown-wrap .k-input,
+        .k-numeric-wrap .k-input,
+        .k-picker-wrap .k-input,
+        .k-selectbox .k-input,
+        .k-textbox>input {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 
     /* Editing */
@@ -264,7 +308,7 @@
     }
 
     .k-grouping-header {
-        line-height: 2;
+        line-height: 2.143em;
         padding: $padding-x $padding-y-lg;
         border-bottom-style: solid;
         border-bottom-width: 1px;
