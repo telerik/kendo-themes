@@ -6,6 +6,10 @@
         display: inline-flex;
         align-items: center;
 
+        &[hidden] {
+            display: none;
+        }
+
         > .k-icon {
             margin-right: .4ex;
         }
