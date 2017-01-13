@@ -7,4 +7,20 @@ $tooltip-bg: $accent !default;
         background-color: $tooltip-bg;
         @include border-radius($border-radius);
     }
+
+    .k-callout-n {
+        border-bottom-color: $tooltip-bg;
+    }
+
+    .k-callout-e {
+        border-left-color: $tooltip-bg;
+    }
+
+    .k-callout-s {
+        border-top-color: $tooltip-bg;
+    }
+
+    .k-callout-w {
+        border-right-color: $tooltip-bg;
+    }
 }

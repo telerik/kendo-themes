@@ -1,4 +1,5 @@
 @import '../button/layout';
+@import '../tooltip/layout';
 @import '../common/icons';
 
 $slider-size: 200px !default;
@@ -316,6 +317,17 @@ $slider-track-thickness: 4px !default;
         }
     }
 
+    .k-slider-tooltip {
+        .k-callout-n,
+        .k-callout-s {
+            margin-left: -$tooltip-callout-size / 2;
+        }
+
+        .k-callout-w,
+        .k-callout-e {
+            margin-top: -$tooltip-callout-size / 2;
+        }
+    }
 }
 
 
