@@ -93,7 +93,8 @@
 
         > .k-textbox {
             padding-right: 20px;
-            width: 100%;
+            /* remove the !important declaration when https://github.com/telerik/kendo-ui-core/issues/2617 is fixed */
+            width: 100% !important; // sass-lint:disable-block no-important
             box-sizing: border-box;
         }
 
