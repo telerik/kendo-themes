@@ -1,5 +1,4 @@
 @include exports( "common/layout" ) {
-    $link-color: $text-color !default;
 
     // Layout
     .k-reset {
@@ -53,7 +52,7 @@
 
     // Links
     .k-link {
-        color: $link-color;
+        color: inherit;
     }
     .k-link,
     .k-link:hover {
@@ -62,7 +61,6 @@
 
 
     // Form controls
-
     .k-button {
         border-width: 1px;
         border-style: solid;
@@ -115,13 +113,13 @@
 
     // Header
     .k-header {
-        @include appearance( header );
+        // @include appearance( header );
     }
     .k-header.k-state-hover {
-        @include appearance( hovered-header );
+        // @include appearance( hovered-header );
     }
     .k-header.k-state-selected {
-        @include appearance( selected-header );
+        // @include appearance( selected-header );
     }
 
 
@@ -134,9 +132,9 @@
 
 
     // Link
-    .k-link
-    .k-icon:hover {
-        color: $base-text;
+    .k-link,
+    .k-link:hover {
+        // color: $base-text;
     }
 
 
@@ -151,9 +149,9 @@
 
     // Selected state
     .k-state-selected {
-        color: $selected-text;
-        background-color: $selected-bg;
-        border-color: $selected-border;
+        // color: $selected-text;
+        // background-color: $selected-bg;
+        // border-color: $selected-border;
     }
 
 
@@ -167,15 +165,15 @@
     // TODO: what is highlight state?
     // Highlight state
     .k-state-highlight {
-        background-color: saturate($base-bg, 4%);
-        border-color: $accent;
+        // background-color: saturate($base-bg, 4%);
+        // border-color: $accent;
     }
 
 
     // TODO: what is active state?
     // Active state
     .k-state-active {
-        background-color: $widget-bg;
+        // background-color: $widget-bg;
     }
 
 
@@ -335,6 +333,7 @@
 
 
 @include exports( "common/loading" ) {
+
     // Loading indicator
     .k-loading {
         width: 64px;
