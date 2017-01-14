@@ -67,9 +67,6 @@
 
         // Scrolling
         &.k-tabstrip-scrollable {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
             position: relative;
 
             .k-tabstrip-items {
