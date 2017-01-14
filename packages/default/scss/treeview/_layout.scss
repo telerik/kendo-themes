@@ -1,5 +1,7 @@
 @include exports("treeview/layout") {
 
+    $treeview-indent: 16px;
+
     // Base
     .k-treeview {
         border-width: 0;
@@ -21,7 +23,7 @@
         // Items
         .k-item {
             margin: 0;
-            padding: 0 0 0 $spacer-x;
+            padding: 0 0 0 $treeview-indent;
             border-width: 0;
             display: block;
         }
@@ -37,12 +39,10 @@
             vertical-align: middle;
         }
 
-        // Collapse expand
-        .k-minus,
-        .k-minus-disabled,
-        .k-plus,
-        .k-plus-disabled {
-            margin-left: -$spacer-x;
+        // Expand / collapse
+        .k-i-expand,
+        .k-i-collapse {
+            margin-left: -$treeview-indent;
             cursor: pointer;
         }
 
