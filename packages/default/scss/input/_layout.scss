@@ -6,7 +6,8 @@
     $fieldset-margin: 30px;
 
     .k-textbox,
-    .k-maskedtextbox {
+    .k-maskedtextbox,
+    .k-input.k-textbox {
         @include border-radius( $border-radius );
         padding: $input-padding-y $input-padding-x;
         width: 12.4em;
@@ -29,7 +30,7 @@
         border: 0;
         outline: 0;
         color: inherit;
-        background: transparent;
+        background: none;
         font: inherit;
         flex: 1;
         display: flex;
