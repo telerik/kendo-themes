@@ -6,6 +6,7 @@
         border-color: inherit;
         display: flex;
         flex-direction: row;
+        clear: both;
 
         .k-button {
             padding: $padding-x-lg;
