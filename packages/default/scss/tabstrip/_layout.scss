@@ -1,13 +1,10 @@
-// TODO: nav link variables
-$nav-link-padding: 1em;
-$nav-item-margin: 2px;
-
 @include exports("tabstrip/layout") {
 
     .k-tabstrip {
         border-width: 0;
         background-color: transparent;
-        display: block;
+        display: flex;
+        flex-direction: column;
 
         .k-tabstrip-items {
             border: 0 solid transparent;
@@ -27,9 +24,13 @@ $nav-item-margin: 2px;
             z-index: 1;
         }
         .k-item .k-link {
-            padding: $nav-link-padding;
+            padding: $nav-item-padding-y $nav-item-padding-x;
+            color: inherit;
             cursor: pointer;
-            display: block;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
         }
 
         .k-content {
@@ -101,8 +102,15 @@ $nav-item-margin: 2px;
 
     // Tabstrip variants
     .k-tabstrip-top {
+
+        .k-tabstrip-items {
+            border-bottom-width: 1px;
+        }
+
         .k-content {
             @include border-radius( 0 0 $border-radius $border-radius);
+            margin-top: -1px;
+            border-top-width: 0;
         }
 
         .k-item {
@@ -112,16 +120,21 @@ $nav-item-margin: 2px;
         .k-item + .k-item {
             margin-left: $nav-item-margin;
         }
+        .k-item.k-state-active {
+            border-bottom-color: transparent;
+        }
 
     }
     .k-tabstrip-bottom {
 
         .k-tabstrip-items {
             border-top-width: 1px;
+            margin-top: -1px;
         }
 
         .k-content {
             @include border-radius( $border-radius $border-radius 0 0 );
+            border-bottom-width: 0;
         }
 
         .k-item {
@@ -131,17 +144,26 @@ $nav-item-margin: 2px;
         .k-item + .k-item {
             margin-left: $nav-item-margin;
         }
+        .k-item.k-state-active {
+            border-top-color: transparent;
+        }
 
     }
     .k-tabstrip-left {
+        flex-direction: row;
 
         .k-tabstrip-items {
             border-right-width: 1px;
+            display: inline-flex;
             flex-direction: column;
         }
 
         .k-content {
             @include border-radius(0 $border-radius $border-radius 0);
+            // sass-lint:disable no-important
+            margin: 0 -1px 0 0 !important;
+            // sass-lint:enable no-important
+            border-left-width: 0;
         }
 
         .k-item {
@@ -151,17 +173,26 @@ $nav-item-margin: 2px;
         .k-item + .k-item {
             margin-top: $nav-item-margin;
         }
+        .k-item.k-state-active {
+            border-right-color: transparent;
+        }
 
     }
     .k-tabstrip-right {
+        flex-direction: row-reverse;
 
         .k-tabstrip-items {
             border-left-width: 1px;
+            display: inline-flex;
             flex-direction: column;
         }
 
         .k-content {
             @include border-radius($border-radius 0 0 $border-radius);
+            // sass-lint:disable no-important
+            margin: 0 0 0 -1px !important;
+            // sass-lint:enable no-important
+            border-right-width: 0;
         }
 
         .k-item {
@@ -170,6 +201,9 @@ $nav-item-margin: 2px;
         }
         .k-item + .k-item {
             margin-top: $nav-item-margin;
+        }
+        .k-item.k-state-active {
+            border-left-color: transparent;
         }
 
     }
