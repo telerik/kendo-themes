@@ -2,16 +2,16 @@
 
     // Base
     .k-menu {
-        cursor: default;
+        border-width: 0;
+        background: none;
         display: flex;
         flex-direction: row;
         position: relative;
+        cursor: default;
 
         // Item
         .k-item {
-            border-width: 0 1px 0 0;
-            border-style: solid;
-            border-color: inherit;
+            border: 1px solid transparent;
             display: block;
             position: relative;
             user-select: none;
@@ -19,7 +19,8 @@
 
         // Link
         .k-link {
-            padding: $padding-y $padding-x;
+            padding: $nav-item-padding-y $nav-item-padding-x;
+            color: inherit;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -46,12 +47,6 @@
         }
         .k-menu-group .k-item {
             border-width: 0;
-        }
-        .k-menu-group .k-item > .k-link {
-            padding: $list-item-padding-y $list-item-padding-x;
-        }
-        .k-menu-group .k-item > .k-link > .k-image {
-            margin: 0 0 0 (-$list-item-padding-x / 2);
         }
 
         // Compact
