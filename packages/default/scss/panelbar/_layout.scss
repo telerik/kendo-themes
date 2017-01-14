@@ -2,65 +2,66 @@
 
     // Base
     .k-panelbar {
-        &.k-widget {
-            border-style: none;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+
+        // Root
+        > .k-item {
+            border-width: 0;
+            border-style: solid;
+            border-color: inherit;
+            display: block;
+
+            > .k-link {
+                padding: $header-padding-x;
+                color: inherit;
+                background: none;
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                align-content: center;
+                position: relative;
+                user-select: none;
+                cursor: default;
+                transition: $transition;
+            }
+        }
+        > .k-item + .k-item {
+            border-top-width: 1px;
         }
 
-        .k-header {
-            border-right: 1px solid;
-            border-left: 1px solid;
-        }
 
-        .k-panel,
-        .k-content {
+        // Sub
+        .k-group {
             margin: 0;
             padding: 0;
-            border-bottom: 1px solid;
-            border-right: 1px solid;
-            border-left: 1px solid;
-            border-color: inherit;
             list-style: none;
-            position: relative;
         }
-
-        .k-panel .k-panel {
-            border-right-width: 0;
-            border-left-width: 0;
-        }
-
-        // Items
-        > .k-item,
-        .k-panel > .k-item {
-            margin: 0;
-            border-width: 0;
-            border-color: inherit;
-            border-radius: 0;
+        .k-group > .k-item {
             display: block;
+
+            > .k-link {
+                padding: $list-item-padding-y $list-item-padding-x;
+                color: inherit;
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                align-content: center;
+                position: relative;
+                user-select: none;
+                cursor: default;
+                transition: $transition;
+            }
         }
 
-        .k-item:first-child {
-            border-top: 1px solid;
-        }
-
-        // Links
-        > .k-item > .k-link {
-            padding: $header-padding-y $header-padding-x;
-            border-bottom-width: 1px;
-            border-bottom-style: solid;
-            text-decoration: none;
-            display: block;
-            position: relative;
-        }
-        .k-panel > .k-item > .k-link {
-            padding: $list-item-padding-y $list-item-padding-x;
-            text-decoration: none;
-            display: block;
-            position: relative;
-        }
 
         // Expand collapse
-        .k-panelbar-collapse,
-        .k-panelbar-expand {
+        .k-panelbar-expand,
+        .k-panelbar-collapse {
             margin-top: -.5em;
             position: absolute;
             top: 50%;
