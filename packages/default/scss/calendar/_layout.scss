@@ -8,8 +8,6 @@ $calendar-line-height: 1.25 !default;
     .k-calendar {
         width: 16.917em;
         position: relative;
-        display: inline-flex;
-        flex-direction: column;
         overflow: hidden;
 
 
@@ -49,6 +47,10 @@ $calendar-line-height: 1.25 !default;
         td {
             border-width: 1px;
             cursor: pointer;
+        }
+
+        .k-alt {
+            cursor: default;
         }
 
 
@@ -114,11 +116,19 @@ $calendar-line-height: 1.25 !default;
                 height: 14.167em;
                 text-align: right;
                 float: left;
-            }
 
-            .k-content td {
-                @include border-radius( $border-radius );
-                border-color: transparent;
+                td {
+                    border-color: transparent;
+                }
+
+                .k-link {
+                    line-height: 1.5;
+                    @include border-radius( $border-radius );
+                }
+
+                &.k-meta-view .k-link {
+                    line-height: 4;
+                }
             }
 
             .k-animation-container .k-content {
@@ -129,9 +139,14 @@ $calendar-line-height: 1.25 !default;
                 overflow: hidden;
             }
 
+            .k-alt,
             .k-weekend,
             .k-other-month {
                 opacity: .6;
+            }
+
+            .k-alt {
+                text-align: center;
             }
 
             .k-state-hover,
@@ -146,6 +161,12 @@ $calendar-line-height: 1.25 !default;
             text-align: center;
         }
 
+        .k-rtl & {
+            .k-nav-prev .k-icon,
+            .k-nav-next .k-icon {
+                transform: scaleX(-1);
+            }
+        }
     }
 
 
@@ -197,5 +218,4 @@ $calendar-line-height: 1.25 !default;
         }
 
     }
-
 }

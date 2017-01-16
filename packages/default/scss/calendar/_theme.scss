@@ -41,16 +41,23 @@
                 color: $accent-contrast;
             }
         }
+
+        .k-alt,
         .k-weekend {
             background: darken( $widget-bg, 5 );
         }
-        .k-content .k-state-hover {
+
+        .k-content .k-alt {
+            border-right-color: $widget-border;
+        }
+
+        .k-state-hover .k-link {
             @include appearance( hovered-node );
         }
-        .k-content .k-state-selected {
+        .k-state-selected .k-link {
             @include appearance( selected-node );
         }
-        .k-content .k-state-focused {
+        .k-state-focused .k-link {
             // TODO: consider extracting focused state to variable
             // sass-lint:disable no-color-literals
             box-shadow: inset 0 0 0 2px rgba( $widget-text, .08);
