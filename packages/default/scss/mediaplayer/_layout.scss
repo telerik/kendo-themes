@@ -74,4 +74,15 @@
         left: 0;
     }
 
+    .k-mediaplayer-fullscreen {
+        z-index: 10000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        // sass-lint:disable no-important
+        width: 100% !important;
+        height: 100% !important;
+        // sass-lint:enable no-important
+    }
+
 }
