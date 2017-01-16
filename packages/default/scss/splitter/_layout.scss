@@ -59,6 +59,13 @@
     .k-splitbar-draggable-horizontal { cursor: w-resize; }
     .k-splitbar-draggable-vertical { cursor: n-resize; }
 
+    .k-collapse-next,
+    .k-collapse-prev,
+    .k-expand-next,
+    .k-expand-prev {
+        cursor: pointer;
+    }
+
     .k-ghost-splitbar-horizontal,
     .k-splitbar-horizontal {
         width: 8px;
@@ -85,14 +92,17 @@
         height: $splitter-drag-handle-length;
     }
 
-    .k-splitbar-horizontal,
-    .k-splitbar-vertical {
-
-        .k-resize-handle {
-            display: none;
-        }
+    .k-splitter .k-resize-handle {
+        display: none;
     }
 
+    .k-splitbar-draggable-horizontal,
+    .k-splitbar-draggable-vertical {
+
+        .k-resize-handle {
+            display: block;
+        }
+    }
 
     .k-splitbar-horizontal .k-i-arrow-60-left {
         margin-bottom: $splitter-drag-icon-margin;
