@@ -4,6 +4,7 @@
     $progressbar-border: rgba(0, 0, 0, .08) !default;
     $progressbar-active-border: darken($accent, 4%) !default;
     $progressbar-chunk-border: $bg-color !default;
+    $progressbar-selected-bg: $accent !default;
 
     .k-progressbar {
         background-color: $progressbar-bg;
@@ -11,7 +12,7 @@
 
         .k-state-selected {
             border-color: $progressbar-active-border;
-
+            background-color: $progressbar-selected-bg;
         }
 
         .k-item {
