@@ -372,6 +372,21 @@
         align-children: center;
     }
 
+    .k-resources-wrap {
+        position: absolute;
+        display: inline-block;
+        z-index: 2;
+        margin-left: 20px;
+        margin-top: -2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        .k-resource {
+            margin: 0 5px;
+        }
+    }
+
 }
 
 
