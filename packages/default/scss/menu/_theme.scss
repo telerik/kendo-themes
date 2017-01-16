@@ -12,6 +12,10 @@
             &.k-state-active {
                 color: inherit;
             }
+
+            &.k-state-selected {
+                color: $list-item-selected-text;
+            }
         }
 
         &.k-context-menu {

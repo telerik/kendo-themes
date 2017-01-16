@@ -21,10 +21,6 @@
             .k-item {
                 width: auto;
             }
-
-            .k-separator {
-                display: none;
-            }
         }
 
         // Item
@@ -46,16 +42,11 @@
             align-items: center;
             position: relative;
 
-            .k-icon {
+            .k-i-arrow-60-right {
                 position: absolute;
                 top: 50%;
                 margin-top: -$padding-x;
                 right: $padding-x;
-            }
-
-            .k-i-arrow-e {
-                margin: 0 (-$list-item-padding-x / 2) 0 $list-item-padding-x;
-                float: right;
             }
         }
 
@@ -73,6 +64,10 @@
         }
         .k-menu-group .k-item {
             border-width: 0;
+        }
+
+        .k-separator {
+            display: none;
         }
 
         // Compact
