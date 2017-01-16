@@ -9,24 +9,50 @@
         position: relative;
         cursor: default;
 
+        &.k-context-menu {
+            margin: 0;
+            padding: $popup-padding-y $popup-padding-x;
+            border-width: 1px;
+            border-style: solid;
+            font-size: $font-size;
+            line-height: $line-height;
+            box-sizing: content-box;
+
+            .k-item {
+                width: auto;
+            }
+
+            .k-separator {
+                display: none;
+            }
+        }
+
         // Item
         .k-item {
             border: 1px solid transparent;
             display: block;
             position: relative;
             user-select: none;
+            float: left;
+            width: 100%;
         }
 
         // Link
         .k-link {
-            padding: $nav-item-padding-y $nav-item-padding-x;
+            padding: $nav-item-padding-y ($nav-item-padding-x + $icon-size) $nav-item-padding-y $nav-item-padding-x;
             color: inherit;
             display: flex;
             flex-direction: row;
             align-items: center;
             position: relative;
 
-            .k-icon {}
+            .k-icon {
+                position: absolute;
+                top: 50%;
+                margin-top: -$padding-x;
+                right: $padding-x;
+            }
+
             .k-i-arrow-e {
                 margin: 0 (-$list-item-padding-x / 2) 0 $list-item-padding-x;
                 float: right;

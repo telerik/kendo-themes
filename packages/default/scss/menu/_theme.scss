@@ -2,29 +2,36 @@
 
     // Theme
     .k-menu {
-
         .k-item {
             color: $link-text;
+
+            &.k-state-hover {
+                color: $link-hover-text;
+            }
+
+            &.k-state-active {
+                color: inherit;
+            }
         }
-        .k-item.k-state-hover {
-            color: $link-hover-text;
-        }
-        .k-item.k-state-active {
-            color: inherit;
+
+        &.k-context-menu {
+            @include appearance( popup );
         }
     }
-    .k-menu-group {
 
+    .k-menu-group,
+    .k-menu.k-context-menu {
         .k-item {
             color: inherit;
-        }
-        .k-item.k-state-hover {
-            @include appearance( hovered-list-item );
-        }
-        .k-item.k-state-active {
-            @include appearance( selected-list-item );
-        }
 
+            &.k-state-hover {
+                @include appearance( hovered-list-item );
+                color: $list-item-hovered-text;
+            }
+
+            &.k-state-active {
+                @include appearance( selected-list-item );
+            }
+        }
     }
-
 }
