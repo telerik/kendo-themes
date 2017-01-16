@@ -1,9 +1,6 @@
-// TODO: cell variables
-$cell-padding: 4px;
-
 @include exports("gantt/layout") {
 
-    $row-height: $line-height + (2 * $cell-padding);
+    $row-height: #{$line-height-em} + #{2 * $cell-padding};
 
     .k-gantt {
         position: relative;
@@ -18,7 +15,13 @@ $cell-padding: 4px;
         }
         .k-grid-header tr,
         .k-grid-content tr {
-            height: $row-height;
+            height: calc( #{$row-height} );
+            line-height: inherit;
+
+            td,
+            th {
+                line-height: inherit;
+            }
         }
 
 
@@ -44,7 +47,7 @@ $cell-padding: 4px;
 
     // Toolbar
     .k-gantt-toolbar {
-        padding: $padding-y;
+        padding: $padding-x;
         border-width: 0 0 1px;
         border-style: solid;
         border-color: inherit;
@@ -59,6 +62,30 @@ $cell-padding: 4px;
     .k-gantt-views {
         float: right;
         display: inline-flex;
+    }
+    .k-gantt-toggle {
+        margin-right: .5em;
+        display: none;
+        float: left;
+    }
+    @media only screen and (max-width: 480px) {
+        .k-gantt-toggle {
+            display: inline-flex;
+        }
+        .k-gantt-pdf,
+        .k-gantt-create {
+            padding: $button-padding-y;
+            width: $line-height-em;
+            height: $line-height-em;
+            box-sizing: content-box;
+
+            .k-icon {
+                margin: 0;
+            }
+            span + span {
+                display: none;
+            }
+        }
     }
 
 
@@ -75,13 +102,14 @@ $cell-padding: 4px;
             border-bottom-width: 0;
             display: inline-block;
         }
-
-        @media (max-width: 1024px) {
+    }
+    @media (max-width: 1024px) {
+        ul.k-gantt-views {
             flex-direction: column;
             align-items: stretch;
             position: absolute;
-            right: $padding-x-sm;
-            top: $padding-y-sm;
+            right: $padding-x;
+            top: $padding-x;
             z-index: 1000;
 
             li { display: none; }
@@ -108,7 +136,7 @@ $cell-padding: 4px;
             // sass-lint:enable no-important
         }
         .k-grid-header tr {
-            height: calc( #{2 * $row-height} + 2px );
+            height: calc( 2 * ( #{$row-height} ) );
             vertical-align: bottom;
         }
         .k-grid-content {

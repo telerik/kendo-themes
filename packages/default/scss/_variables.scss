@@ -62,9 +62,9 @@ $nav-item-padding-y: $padding-y-lg !default;
 // $table-hover-bg: $table-bg-hover !default;
 // $table-active-bg: $table-bg-active !default;
 
-// $cell-padding-x: $padding-x-sm !default;
-// $cell-padding-y: $padding-y-sm !default;
-// $cell-padding: $table-cell-padding !default;
+$cell-padding-x: $padding-x-sm !default;
+$cell-padding-y: $padding-y-sm !default;
+$cell-padding: 8px !default;
 // $cell-padding-sm: $table-sm-cell-padding !default;
 
 $window-padding-x: $padding-x;
