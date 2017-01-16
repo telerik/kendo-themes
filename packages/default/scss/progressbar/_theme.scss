@@ -1,17 +1,17 @@
 @include exports('progressbar/theme') {
 
     $progressbar-bg: $base-bg !default;
-    $progressbar-border: rgba(0, 0, 0, .08) !default;
-    $progressbar-active-border: darken($accent, 4%) !default;
+    $progressbar-border: $base-border !default;
     $progressbar-chunk-border: $bg-color !default;
     $progressbar-selected-bg: $accent !default;
+    $progressbar-selected-border: darken($accent, 4%) !default;
 
     .k-progressbar {
         background-color: $progressbar-bg;
         border-color: $progressbar-border;
 
         .k-state-selected {
-            border-color: $progressbar-active-border;
+            border-color: $progressbar-selected-border;
             background-color: $progressbar-selected-bg;
         }
 
