@@ -21,32 +21,41 @@
         top: 0;
         left: 0;
         right: 0;
-
-        // sass-lint:disable no-important
-        display: block !important;
-        // sass-lint:enable no-important
     }
 
 
     // Toolbar
-    .k-mediaplayer-toolbar {
-        padding: 0;
-        border-width: 0;
-        align-items: center;
-        flex-flow: row wrap;
+    .k-mediaplayer-toolbar-wrap {
         position: absolute;
         z-index: 2;
         bottom: 0;
         left: 0;
         right: 0;
-
+    }
+    .k-mediaplayer-toolbar {
+        padding: $padding-x;
+        border-width: 0;
         // sass-lint:disable no-important
-        display: flex !important;
+        width: 100% !important;
+        // sass-lint:enable no-important
+
 
         > * {
-            border: 1px solid red !important;
+            align-items: center;
+            align-content: center;
         }
-        // sass-lint:enable no-important
+
+        .k-toolbar-spacer {
+            margin-top: 0;
+            margin-bottom: 0;
+            border-width: 0;
+            flex: 1;
+        }
+
+        .k-align-right {
+            * + * { margin-left: $padding-x; }
+        }
+
     }
     .k-mediaplayer-time-wrap {
         flex: 1;
@@ -57,14 +66,12 @@
 
 
     // Seekbar
-    .k-mediaplayer-seekbar-wrap {
-        width: 100%;
-    }
     .k-slider.k-mediaplayer-seekbar {
         width: 100%;
-        // sass-lint:disable no-important
-        display: block !important;
-        // sass-lint:enable no-important
+        position: absolute;
+        z-index: 3;
+        top: -17px;
+        left: 0;
     }
 
 }
