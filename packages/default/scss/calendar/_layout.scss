@@ -20,6 +20,7 @@ $calendar-line-height: 1.25 !default;
             line-height: $calendar-line-height;
             text-decoration: none;
             display: block;
+            outline: 0;
         }
 
         table {
