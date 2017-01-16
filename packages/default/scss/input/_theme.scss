@@ -3,14 +3,12 @@
     $textbox-invalid-border-color: rgba($error, .5) !default;
 
     $radio-border: $input-border !default;
-    $radio-hovered-border: $input-hovered-border !default;
     $radio-bg: $input-bg !default;
     $radio-checked-bg: $accent !default;
     $radio-checked-text: $accent-contrast !default;
 
     $checkbox-bg: $input-bg !default;
     $checkbox-border: $input-border !default;
-    $checkbox-hovered-border: $input-hovered-border !default;
     $checkbox-checked-bg: $accent !default;
     $checkbox-checked-border: $accent !default;
     $checkbox-checked-text: $accent-contrast !default;
@@ -58,12 +56,6 @@
         }
     }
 
-    .k-radio:not(:disabled) + .k-radio-label {
-        &:hover::before {
-            border-color: $radio-hovered-border;
-        }
-    }
-
     .k-radio:checked + .k-radio-label {
         &::before {
             background-color: $radio-checked-bg;
@@ -76,37 +68,15 @@
         }
     }
 
-    .k-radio:not(:disabled):checked + .k-radio-label {
-        &:hover::before {
-            background-color: $radio-checked-text;
-            border-color: $radio-hovered-border;
-            box-shadow: 0 0 1px 0 $radio-bg inset;
-        }
-
-        &:hover::after {
-            background-color: $radio-checked-bg;
-        }
-    }
-
     .k-checkbox-label::before {
         background-color: $checkbox-bg;
         border-color: $checkbox-border;
-    }
-
-    .k-checkbox:not(:disabled) + .k-checkbox-label:hover::before {
-        border-color: $checkbox-hovered-border;
     }
 
     .k-checkbox:checked + .k-checkbox-label::before {
         background-color: $checkbox-checked-bg;
         border-color: $checkbox-checked-border;
         color: $checkbox-checked-text;
-    }
-
-    .k-checkbox:not(:disabled):checked + .k-checkbox-label:hover::before {
-        background-color: $checkbox-bg;
-        border-color: $checkbox-hovered-border;
-        color: $checkbox-checked-bg;
     }
 
     .k-checkbox:indeterminate + .k-checkbox-label::after {
