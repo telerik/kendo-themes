@@ -37,7 +37,7 @@ $modal-header-border-color: #cccccc;
             @include appearance( button );
 
             &.k-state-hover { @include appearance( hovered-button ); }
-            &.k-state-selected { @include appearance( active-button ); }
+            &.k-state-selected { @include appearance( pressed-button ); }
         }
         li:first-child { @include border-radius( $border-radius ); }
         li:first-child + li { @include border-radius( $border-radius 0 0 $border-radius ); }
@@ -79,6 +79,8 @@ $modal-header-border-color: #cccccc;
     // Appointments
     .k-event {
         @include border-radius( $border-radius );
+
+        @include appearance( selected-node );
     }
     .k-event-inverse {
         color: $panel-bg;
@@ -95,6 +97,46 @@ $modal-header-border-color: #cccccc;
     .k-scheduler-marquee::after {
         border-color: $primary-button-border;
     }
+
+}
+
+
+
+
+@include exports("scheduler-views/theme") {
+
+    // Day view
+    .k-scheduler-dayview {}
+
+
+    // Workweek view
+    // sass-lint:disable class-name-format
+    .k-scheduler-workWeekview {}
+    // sass-lint:enable class-name-format
+
+
+    // Week view
+    .k-scheduler-weekview {}
+
+
+    // Month view
+    .k-scheduler-monthview {}
+
+
+    // Agenda view
+    .k-scheduler-agendaview {
+
+        tr.k-state-hover {
+            @include appearance( hovered-node );
+        }
+        tr.k-state-hover .k-scheduler-datecolumn {
+            @include appearance( panel );
+        }
+    }
+
+
+    // Timeline view
+    .k-scheduler-timelineview {}
 
 }
 

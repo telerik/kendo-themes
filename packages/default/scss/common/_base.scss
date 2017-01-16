@@ -93,6 +93,13 @@
         transform: translate(-50%, -50%);
     }
 
+    // Off-screen container used during PDF export
+    .k-pdf-export-shadow {
+        position: absolute;
+        overflow: hidden;
+        left: -15000px;
+        width: 14400px;
+    }
 }
 
 
