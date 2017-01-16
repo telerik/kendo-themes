@@ -1,6 +1,7 @@
 @include exports('upload/theme') {
 
-    $upload-bg: $widget-bg !default;
+    $upload-bg: $header-bg !default;
+    $upload-files-bg: $widget-bg !default;
     $upload-border: $border-color !default;
     $upload-progress-text: $base-text !default;
     $upload-progress-bg: $info !default;
@@ -14,6 +15,7 @@
     $upload-focused-status-box-shadow: 0 0 0 2px darken($input-bg, 6%) !default;
 
     .k-upload {
+        background-color: $upload-bg;
         border-radius: $border-radius;
         border-color: $upload-border;
 
@@ -23,7 +25,7 @@
         }
 
         .k-file {
-            background-color: $upload-bg;
+            background-color: $upload-files-bg;
             border-color: $upload-border;
 
             .k-upload-action {
@@ -85,13 +87,13 @@
 
         .k-file-extension-wrapper::before,
         .k-multiple-files-extension-wrapper::before {
-            background-color: $upload-bg;
+            background-color: $upload-files-bg;
             border-color: transparent transparent $upload-disabled-border $upload-disabled-border;
         }
 
         .k-file-invalid-extension-wrapper::before,
         .k-multiple-files-invalid-extension-wrapper::before {
-            background-color: $upload-bg;
+            background-color: $upload-files-bg;
             border-color: transparent transparent $upload-error-border $upload-error-border;
         }
 
