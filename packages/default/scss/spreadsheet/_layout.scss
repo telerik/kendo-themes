@@ -34,7 +34,7 @@
 
     // Quick access toolbar
     .k-spreadsheet-quick-access-toolbar {
-        padding: $padding-y-sm;
+        padding: $padding-y;
         display: inline-flex;
         flex-direction: row;
         position: absolute;
@@ -53,7 +53,15 @@
 
     // Tabstrip
     .k-spreadsheet-tabstrip {
-        padding-top: $padding-y-sm;
+        padding-top: $padding-y;
+    }
+    .k-spreadsheet-tabstrip .k-loading {
+        display: none;
+    }
+    .k-spreadsheet-tabstrip .k-content {
+        padding: 0;
+        border-width: 0;
+        overflow: hidden;
     }
 
 
@@ -121,12 +129,12 @@
         align-items: center;
 
         &::before {
-            content: "\e659";
+            @extend .k-i-formula-fx;
+
             padding: 0 $padding-y;
             border-width: 0 1px 0 0;
             border-style: solid;
             border-color: inherit;
-            font: 1rem/1 KendoUIGlyphs;
         }
 
         .k-spreadsheet-formula-input {
@@ -146,7 +154,7 @@
 
     // Sheets bar
     .k-spreadsheet-sheets-bar {
-        padding: 0 $padding-y-sm $padding-y-sm;
+        padding: 0 $padding-y $padding-y;
         border-width: 1px 0 0;
         border-style: solid;
         border-color: inherit;
@@ -156,32 +164,38 @@
         position: relative;
     }
     .k-spreadsheet-sheets-bar-add {
-        margin-right: $padding-y-sm;
+        margin-right: $padding-y;
 
         &:not(:hover) {
             border-color: transparent;
             color: inherit;
-            background-color: transparent;
+            background: none;
         }
     }
     .k-spreadsheet-sheets-items {
         margin-top: -1px;
         flex: 1;
+        overflow: hidden;
 
         // sass-lint:disable no-important
         .k-tabstrip-items {
             margin: 0 !important;
+            border-width: 0;
         }
         // sass-lint:enable no-important
-        .k-item {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-        .k-link.k-spreadsheet-sheets-remove {
-            margin-right: $spacer / 2;
-            margin-left: -$spacer / 2;
-            padding: 0;
+
+        .k-item  {
+            .k-link {
+                display: inline-block;
+            }
+
+            .k-spreadsheet-sheets-remove {
+                margin-right: $spacer / 2;
+                margin-left: -$spacer / 2;
+                padding: 0;
+                line-height: 1;
+                vertical-align: middle;
+            }
         }
     }
 
@@ -306,12 +320,6 @@
     }
 
 
-    // Filter
-    .k-spreadsheet .k-filter-wrapper {
-        position: relative;
-    }
-
-
     // Selection
     .k-spreadsheet .k-selection-wrapper {
         position: relative;
@@ -335,8 +343,115 @@
 
 
 
+@include exports( "spreadsheet/filter/layout" ) {
 
-@include exports( "spreadsheet/tools" ) {
+    $filter-menu-padding-left: calc( #{$icon-size} + #{2 * $padding-y} );
+
+    // Filter button
+    .k-spreadsheet .k-filter-wrapper {
+        position: relative;
+    }
+    .k-spreadsheet .k-filter-range {
+        border-width: 1px;
+        border-style: solid;
+        position: absolute;
+        box-sizing: border-box;
+    }
+    .k-spreadsheet-filter {
+        @include border-radius( $border-radius );
+        line-height: 1;
+        position: absolute;
+        cursor: pointer;
+
+        .k-icon { vertical-align: middle; }
+    }
+
+
+    // Filter menu
+    .k-spreadsheet-filter-menu {
+        width: 280px;
+
+        .k-animation-container {
+            position: relative;
+        }
+
+        > .k-menu {
+            border-width: 0;
+
+            .k-item {
+                color: inherit;
+            }
+            .k-link {
+                padding-left: $filter-menu-padding-left;
+            }
+            .k-icon {
+                margin-left: calc(-1 * ( #{$icon-size} + #{$padding-y} ) );
+                margin-right: $padding-y;
+            }
+
+        }
+
+        .k-spreadsheet-value-treeview-wrapper {
+            height: 200px;
+            border-width: 1px;
+            border-style: solid;
+            overflow-y: scroll;
+            overflow-x: auto;
+
+            .k-treeview {
+                padding: $padding-y;
+                overflow: visible;
+            }
+        }
+
+        // Details
+        .k-details {
+            padding: 0;
+            border-width: 1px 0 0;
+            border-style: solid;
+            border-color: inherit;
+        }
+        .k-details-summary {
+            padding: $padding-y;
+            cursor: pointer;
+
+            > .k-icon {
+                margin-right: $padding-y;
+            }
+        }
+        .k-details-content {
+            padding: $padding-y $padding-x $padding-y $filter-menu-padding-left;
+
+            > .k-textbox,
+            > .k-widget {
+                width: 100%;
+                margin-bottom: 3px;
+            }
+
+            .k-space-right {
+                background-image: none;
+            }
+
+            .k-filter-and {
+                width: 75px;
+                margin: 8px 0;
+            }
+        }
+
+
+        // Action buttons
+        .k-action-buttons {
+            margin: $spacer 0 0;
+        }
+
+    }
+
+}
+
+
+
+
+@include exports( "spreadsheet/tools/layout" ) {
 
     .k-spreadsheet-popup {
         padding: 0;
@@ -362,13 +477,19 @@
             align-content: space-around;
             justify-content: space-around;
         }
+
+    }
+
+    .k-spreadsheet-sample {
+        float: right;
+        opacity: .7;
     }
 }
 
 
 
 
-@include exports( "spreadsheet/clipboard" ) {
+@include exports( "spreadsheet/clipboard/layout" ) {
 
     .k-spreadsheet-clipboard,
     .k-spreadsheet-clipboard-paste {
@@ -382,6 +503,23 @@
         top: 0;
         left: 0;
         overflow: hidden;
+    }
+
+}
+
+
+
+
+@include exports( "spreadsheet/window/layout" ) {
+
+    .k-spreadsheet-window {}
+    .k-spreadsheet-window .k-edit-form-container {
+        width: auto;
+        border-color: inherit;
+    }
+    .k-spreadsheet-window .k-action-buttons {
+        margin: 1em -.5em -.5em;
+        border-color: rgba(0, 0, 0, .1);
     }
 
 }
