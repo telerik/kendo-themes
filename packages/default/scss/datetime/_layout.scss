@@ -1,6 +1,6 @@
-@import '../common/forms';
-
 @include exports("datetime/layout") {
+
+    // Datepicker
     .k-datepicker {
         overflow: visible;
 
@@ -82,6 +82,41 @@
             }
         }
         // sass-lint:enable mixins-before-declarations
+    }
+
+
+    // Dateinput
+    .k-dateinput {
+
+        .k-input {}
+
+        .k-select {
+            padding: 0;
+            width: calc( #{$button-calc-height} );
+            border-width: 0 0 0 1px;
+            border-style: solid;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .k-link {
+            padding: 0 $button-padding-y;
+            height: calc( (#{$button-calc-height}) / 2 );
+        }
+
+
+
+
+        // Compact
+        @include compact {
+
+            .k-input {
+                padding: $input-padding-y-sm $input-padding-x-sm;
+            }
+
+            .k-select {
+                .k-link { padding: 0 $button-padding-y-sm; }
+            }
+        }
     }
 
 }
