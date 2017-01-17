@@ -35,7 +35,7 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
 
 
     // Primary button
-    .k-primary {
+    .k-button.k-primary {
         @include appearance( primary-button );
 
         // Hovoer state
@@ -47,7 +47,7 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
         // Active state
         &:active,
         &.k-state-active {
-            @include appearance( active-primary-button );
+            @include appearance( pressed-primary-button );
         }
 
         // Focused state
