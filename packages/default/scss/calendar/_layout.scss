@@ -193,7 +193,6 @@ $calendar-line-height: 1.25 !default;
         thead {}
 
         .k-content {
-            //flex: 1;
             height: calc( #{ 9 * $calendar-line-height * 1em } + #{ 9 * $calendar-cell-padding-y } );
             float: none;
             position: relative;
@@ -213,9 +212,78 @@ $calendar-line-height: 1.25 !default;
             overflow-y: auto;
         }
         .k-scrollable-placeholder {
-            position: relative;
+            position: absolute;
             z-index: -1;
+            width: 1px;
+            top: 0;
+            right: 0;
         }
 
+    }
+
+    $calendar-cell-size: ((30px / 14px) * 1em);
+
+    .k-calendar.k-calendar-infinite {
+        box-sizing: content-box;
+        padding: 0 10px;
+
+        &,
+        table {
+            width: ($calendar-cell-size * 7);
+        }
+
+        .k-calendar-weekdays {
+            thead {
+                @include disabled;
+
+                background-color: $bg-color;
+                font-weight: bold;
+                font-size: 10px;
+            }
+
+            th {
+                text-align: center;
+                border-width: 0;
+                line-height: 3em;
+            }
+        }
+
+        // month names
+        .k-content {
+            &.k-scrollable {
+                padding-right: 17px; // TODO: js?
+                box-sizing: content-box;
+                overflow-x: hidden;
+            }
+
+            th {
+                font-weight: bold;
+                text-align: left;
+            }
+
+            td {
+                cursor: default;
+                text-align: center;
+                height: $calendar-cell-size;
+                border-width: 0;
+            }
+
+            td,
+            .k-link {
+                border-radius: $calendar-cell-size / 2;
+            }
+
+            .k-link {
+                cursor: pointer;
+                width: $calendar-cell-size;
+                height: $calendar-cell-size;
+                line-height: $calendar-cell-size;
+                padding: 0;
+            }
+
+            .k-weekend {
+                background: none;
+            }
+        }
     }
 }

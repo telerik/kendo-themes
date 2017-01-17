@@ -51,6 +51,7 @@
             border-right-color: $widget-border;
         }
 
+        .k-link:hover,
         .k-state-hover .k-link {
             @include appearance( hovered-node );
         }
@@ -59,9 +60,11 @@
         }
         .k-state-focused .k-link {
             // TODO: consider extracting focused state to variable
-            // sass-lint:disable no-color-literals
-            box-shadow: inset 0 0 0 2px rgba( $widget-text, .08);
-            // sass-lint:enable no-color-literals
+            box-shadow: inset 0 0 0 2px darken($base-bg, 5%);
+        }
+
+        .k-state-selected.k-state-focused .k-link {
+            box-shadow: inset 0 0 0 2px darken($primary-button-bg, 2%);
         }
 
 
