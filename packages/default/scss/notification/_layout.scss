@@ -1,14 +1,12 @@
-// TODO: extract or remove alert padding variables
-$alert-padding-y: 1em !default;
-$alert-padding-x: 1em !default;
-
 @include exports("notification/layout") {
 
+    $alert-padding-y: 1em !default;
+    $alert-padding-x: 1em !default;
+
     // Base
-    .k-notification {}
     .k-notification-wrap {
         font-size: $font-size;
-        padding: $alert-padding-y $alert-padding-x;
+        padding: $alert-padding-y $alert-padding-x * 2 $alert-padding-y $alert-padding-x;
         white-space: nowrap;
         cursor: default;
         position: relative;
@@ -20,14 +18,19 @@ $alert-padding-x: 1em !default;
         }
 
         > .k-i-close {
-            position: absolute;
-            top: $alert-padding-y * 1.25;
-            right: $alert-padding-x * .75;
-            display: none;
-        }
-        .k-notification-button & .k-i-close {
             display: block;
+            position: absolute;
+            top: $spacer-y;
+            right: $padding-x-sm;
         }
     }
 
+    .k-rtl .k-notification-wrap {
+        padding: $alert-padding-y $alert-padding-x $alert-padding-y $alert-padding-x * 2;
+
+        & > .k-i-close {
+            right: auto;
+            left: $padding-x-sm;
+        }
+    }
 }
