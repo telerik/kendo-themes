@@ -17,6 +17,22 @@
             .k-icon {}
         }
 
+        .k-tool-icon {
+            padding: 3px 3px 2px;
+            width: $form-line-height-em;
+            height: $form-line-height-em;
+            text-align: center;
+
+            .k-selected-color {
+                display: inline-block;
+                padding: 0;
+                margin-bottom: 12px;
+                width: 14px;
+                height: 3px;
+                line-height: 0;
+            }
+        }
+
         // Compact
         @include compact {
             .k-selected-color {
