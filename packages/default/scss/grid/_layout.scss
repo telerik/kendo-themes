@@ -78,6 +78,7 @@
     }
 
     .k-grid-header th.k-header>.k-link {
+        display: block;
         margin: -$header-padding-x;
         overflow: hidden;
         text-overflow: ellipsis;
