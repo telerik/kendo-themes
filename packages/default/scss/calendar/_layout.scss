@@ -185,6 +185,9 @@ $calendar-line-height: 1.25 !default;
 
 
     // Monthview
+    $calendar-cell-size: ((30px / 14px) * 1em);
+    $calendar-header-height: ((23px / 14px) * 1em);
+
     .k-calendar-monthview {
         display: flex;
         flex-direction: column;
@@ -193,7 +196,7 @@ $calendar-line-height: 1.25 !default;
         thead {}
 
         .k-content {
-            height: calc( #{ 9 * $calendar-line-height * 1em } + #{ 9 * $calendar-cell-padding-y } );
+            height: 7 * $calendar-cell-size + 2 * $calendar-header-height;
             float: none;
             position: relative;
 
@@ -220,8 +223,6 @@ $calendar-line-height: 1.25 !default;
         }
 
     }
-
-    $calendar-cell-size: ((30px / 14px) * 1em);
 
     .k-calendar.k-calendar-infinite {
         box-sizing: content-box;
