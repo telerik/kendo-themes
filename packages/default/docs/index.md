@@ -23,8 +23,7 @@ npm install --save @progress/kendo-theme-default
 
 Currently, the available themes are:
 
-- Default ([@progress/kendo-theme-default](https://www.npmjs.com/package/@progress/kendo-theme-default))
-- Bootstrap ([@progress/kendo-theme-bootstrap](https://www.npmjs.com/package/@progress/kendo-theme-bootstrap))
+- Default - `@progress/kendo-theme-default`
 
 After its installation, the theme needs to be referenced in the project.
 
