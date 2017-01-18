@@ -101,5 +101,6 @@ For a working demo that demonstrates this approach, refer to the [ng2-dashboard 
 
 ## Suggested Links
 
+* [Web Font Icons in Kendo UI for Angular 2]({% slug icons_kendouiforangular %})
 * [Get Started with Kendo UI for Angular 2]({% slug getting_started_kendouiforangular %})
 * [Browse the Components](http://www.telerik.com/kendo-angular-ui/components)
