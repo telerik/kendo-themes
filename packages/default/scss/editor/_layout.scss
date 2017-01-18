@@ -246,6 +246,8 @@
 
             .k-tool-icon {
                 padding: ($button-padding-x - 2px);
+                width: 1em;
+                height: 1em;
             }
         }
 
@@ -254,11 +256,6 @@
         }
     }
 
-    .k-editor-toolbar .k-colorpicker .k-selected-color {
-        padding: 0;
-        width: 0;
-        height: 0;
-    }
     .k-rtl .k-editor .k-editor-widget .k-dropdown-wrap {
         padding-left: 0;
 
