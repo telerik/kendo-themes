@@ -174,16 +174,16 @@
         opacity: .5;
     }
 
-    fieldset {
+    .k-fieldset {
         margin: $fieldset-margin;
         border-width: 1px 0 0;
         border-style: solid;
         padding: 25px 0 0;
-    }
 
-    fieldset legend {
-        margin-left: 0;
-        padding: 0 8px 0 0;
-        text-transform: uppercase;
+        > legend {
+            margin-left: 0;
+            padding: 0 $padding-x 0 0;
+            text-transform: uppercase;
+        }
     }
 }
