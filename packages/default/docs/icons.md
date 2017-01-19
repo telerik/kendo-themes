@@ -56,8 +56,13 @@ You can directly use the web font icons in your project by assigning any of the 
         width: 160px;
         height: 80px;
         font-size: 12px;
+        line-height: 1em;
         font-weight: 300;
         color: #999;
+    }
+
+    .WebComponentsIcons li:before {
+        display: none;
     }
 
     .WebComponentsIcons .k-icon {
@@ -99,80 +104,80 @@ You can directly use the web font icons in your project by assigning any of the 
 
 </style>
 
- <ul class="WebComponentsIcons">
-     <li><span class="k-icon k-i-undo"></span> .k-i-undo</li>
-     <li><span class="k-icon k-i-redo"></span> .k-i-redo</li>
-     <li><span class="k-icon k-i-reset"></span> .k-i-reset</li>
-     <li><span class="k-icon k-i-reload"></span> .k-i-reload<br /> .k-i-refresh</li>
-     <li><span class="k-icon k-i-non-recurrence"></span> .k-i-non-recurrence</li>
-     <li><span class="k-icon k-i-reset-sm"></span> .k-i-reset-sm</li>
-     <li><span class="k-icon k-i-reload-sm"></span> .k-i-reload-sm<br /> .k-i-refresh-sm</li>
-     <li><span class="k-icon k-i-clock"></span> .k-i-clock</li>
-     <li><span class="k-icon k-i-calendar"></span> .k-i-calendar</li>
-     <li><span class="k-icon k-i-save"></span> .k-i-save<br /> .k-i-floppy</li>
-     <li><span class="k-icon k-i-print"></span> .k-i-print<br /> .k-i-printer</li>
-     <li><span class="k-icon k-i-edit"></span> .k-i-edit<br /> .k-i-pencil</li>
-     <li><span class="k-icon k-i-delete"></span> .k-i-delete<br /> .k-i-trash</li>
-     <li><span class="k-icon k-i-attachment"></span> .k-i-attachment<br /> .k-i-clip</li>
-     <li><span class="k-icon k-i-attachment-45"></span> .k-i-attachment-45<br /> .k-i-clip-45</li>
-     <li><span class="k-icon k-i-link-horizontal"></span> .k-i-link-horizontal<br /> .k-i-hyperlink</li>
-     <li><span class="k-icon k-i-unlink-horizontal"></span> .k-i-unlink-horizontal<br /> .k-i-hyperlink-remove</li>
-     <li><span class="k-icon k-i-link-vertical"></span> .k-i-link-vertical</li>
-     <li><span class="k-icon k-i-unlink-vertical"></span> .k-i-unlink-vertical</li>
-     <li><span class="k-icon k-i-lock"></span> .k-i-lock</li>
-     <li><span class="k-icon k-i-unlock"></span> .k-i-unlock</li>
-     <li><span class="k-icon k-i-cancel"></span> .k-i-cancel</li>
-     <li><span class="k-icon k-i-cancel-outline"></span> .k-i-cancel-outline</li>
-     <li><span class="k-icon k-i-cancel-circle"></span> .k-i-cancel-circle</li>
-     <li><span class="k-icon k-i-check"></span> .k-i-check<br /> .k-i-checkmark</li>
-     <li><span class="k-icon k-i-check-outline"></span> .k-i-check-outline<br /> .k-i-checkmark-outline</li>
-     <li><span class="k-icon k-i-check-circle"></span> .k-i-check-circle<br /> .k-i-checkmark-circle</li>
-     <li><span class="k-icon k-i-close"></span> .k-i-close<br /> .k-i-x</li>
-     <li><span class="k-icon k-i-close-outline"></span> .k-i-close-outline<br /> .k-i-x-outline</li>
-     <li><span class="k-icon k-i-close-circle"></span> .k-i-close-circle<br /> .k-i-x-circle</li>
-     <li><span class="k-icon k-i-plus"></span> .k-i-plus</li>
-     <li><span class="k-icon k-i-plus-outline"></span> .k-i-plus-outline</li>
-     <li><span class="k-icon k-i-plus-circle"></span> .k-i-plus-circle</li>
-     <li><span class="k-icon k-i-minus"></span> .k-i-minus</li>
-     <li><span class="k-icon k-i-minus-outline"></span> .k-i-minus-outline</li>
-     <li><span class="k-icon k-i-minus-circle"></span> .k-i-minus-circle</li>
-     <li><span class="k-icon k-i-sort-asc"></span> .k-i-sort-asc</li>
-     <li><span class="k-icon k-i-sort-desc"></span> .k-i-sort-desc</li>
-     <li><span class="k-icon k-i-unsort"></span> .k-i-unsort</li>
-     <li><span class="k-icon k-i-sort-clear"></span> .k-i-sort-clear</li>
-     <li><span class="k-icon k-i-sort-asc-sm"></span> .k-i-sort-asc-sm</li>
-     <li><span class="k-icon k-i-sort-desc-sm"></span> .k-i-sort-desc-sm</li>
-     <li><span class="k-icon k-i-filter"></span> .k-i-filter</li>
-     <li><span class="k-icon k-i-filter-clear"></span> .k-i-filter-clear</li>
-     <li><span class="k-icon k-i-filter-sm"></span> .k-i-filter-sm</li>
-     <li><span class="k-icon k-i-filter-sort-asc-sm"></span> .k-i-filter-sort-asc-sm</li>
-     <li><span class="k-icon k-i-filter-sort-desc-sm"></span> .k-i-filter-sort-desc-sm</li>
-     <li><span class="k-icon k-i-filter-add-expression"></span> .k-i-filter-add-expression</li>
-     <li><span class="k-icon k-i-filter-add-group"></span> .k-i-filter-add-group</li>
-     <li><span class="k-icon k-i-login"></span> .k-i-login</li>
-     <li><span class="k-icon k-i-logout"></span> .k-i-logout</li>
-     <li><span class="k-icon k-i-download"></span> .k-i-download</li>
-     <li><span class="k-icon k-i-upload"></span> .k-i-upload</li>
-     <li><span class="k-icon k-i-hyperlink-open"></span> .k-i-hyperlink-open</li>
-     <li><span class="k-icon k-i-hyperlink-open-sm"></span> .k-i-hyperlink-open-sm</li>
-     <li><span class="k-icon k-i-launch"></span> .k-i-launch</li>
-     <li><span class="k-icon k-i-window"></span> .k-i-window<br /> .k-i-window-maximize</li>
-     <li><span class="k-icon k-i-windows"></span> .k-i-windows<br /> .k-i-window-restore<br /> .k-i-tiles</li>
-     <li><span class="k-icon k-i-window-minimize"></span> .k-i-window-minimize</li>
-     <li><span class="k-icon k-i-gear"></span> .k-i-gear<br /> .k-i-cog<br /> .k-i-custom</li>
-     <li><span class="k-icon k-i-gears"></span> .k-i-gears<br /> .k-i-cogs</li>
-     <li><span class="k-icon k-i-wrench"></span> .k-i-wrench<br /> .k-i-settings</li>
-     <li><span class="k-icon k-i-preview"></span> .k-i-preview<br /> .k-i-eye</li>
-     <li><span class="k-icon k-i-zoom"></span> .k-i-zoom<br /> .k-i-search</li>
-     <li><span class="k-icon k-i-zoom-in"></span> .k-i-zoom-in</li>
-     <li><span class="k-icon k-i-zoom-out"></span> .k-i-zoom-out</li>
-     <li><span class="k-icon k-i-pan"></span> .k-i-pan<br /> .k-i-move</li>
-     <li><span class="k-icon k-i-calculator"></span> .k-i-calculator</li>
-     <li><span class="k-icon k-i-cart"></span> .k-i-cart<br /> .k-i-shopping-cart</li>
-     <li><span class="k-icon k-i-connector"></span> .k-i-connector</li>
-     <li><span class="k-icon k-i-plus-sm"></span> .k-i-plus-sm</li>
-     <li><span class="k-icon k-i-minus-sm"></span> .k-i-minus-sm</li>
- </ul>
+<ul class="WebComponentsIcons">
+    <li><span class="k-icon k-i-undo"></span> .k-i-undo</li>
+    <li><span class="k-icon k-i-redo"></span> .k-i-redo</li>
+    <li><span class="k-icon k-i-reset"></span> .k-i-reset</li>
+    <li><span class="k-icon k-i-reload"></span> .k-i-reload<br /> .k-i-refresh</li>
+    <li><span class="k-icon k-i-non-recurrence"></span> .k-i-non-recurrence</li>
+    <li><span class="k-icon k-i-reset-sm"></span> .k-i-reset-sm</li>
+    <li><span class="k-icon k-i-reload-sm"></span> .k-i-reload-sm<br /> .k-i-refresh-sm</li>
+    <li><span class="k-icon k-i-clock"></span> .k-i-clock</li>
+    <li><span class="k-icon k-i-calendar"></span> .k-i-calendar</li>
+    <li><span class="k-icon k-i-save"></span> .k-i-save<br /> .k-i-floppy</li>
+    <li><span class="k-icon k-i-print"></span> .k-i-print<br /> .k-i-printer</li>
+    <li><span class="k-icon k-i-edit"></span> .k-i-edit<br /> .k-i-pencil</li>
+    <li><span class="k-icon k-i-delete"></span> .k-i-delete<br /> .k-i-trash</li>
+    <li><span class="k-icon k-i-attachment"></span> .k-i-attachment<br /> .k-i-clip</li>
+    <li><span class="k-icon k-i-attachment-45"></span> .k-i-attachment-45<br /> .k-i-clip-45</li>
+    <li><span class="k-icon k-i-link-horizontal"></span> .k-i-link-horizontal<br /> .k-i-hyperlink</li>
+    <li><span class="k-icon k-i-unlink-horizontal"></span> .k-i-unlink-horizontal<br /> .k-i-hyperlink-remove</li>
+    <li><span class="k-icon k-i-link-vertical"></span> .k-i-link-vertical</li>
+    <li><span class="k-icon k-i-unlink-vertical"></span> .k-i-unlink-vertical</li>
+    <li><span class="k-icon k-i-lock"></span> .k-i-lock</li>
+    <li><span class="k-icon k-i-unlock"></span> .k-i-unlock</li>
+    <li><span class="k-icon k-i-cancel"></span> .k-i-cancel</li>
+    <li><span class="k-icon k-i-cancel-outline"></span> .k-i-cancel-outline</li>
+    <li><span class="k-icon k-i-cancel-circle"></span> .k-i-cancel-circle</li>
+    <li><span class="k-icon k-i-check"></span> .k-i-check<br /> .k-i-checkmark</li>
+    <li><span class="k-icon k-i-check-outline"></span> .k-i-check-outline<br /> .k-i-checkmark-outline</li>
+    <li><span class="k-icon k-i-check-circle"></span> .k-i-check-circle<br /> .k-i-checkmark-circle</li>
+    <li><span class="k-icon k-i-close"></span> .k-i-close<br /> .k-i-x</li>
+    <li><span class="k-icon k-i-close-outline"></span> .k-i-close-outline<br /> .k-i-x-outline</li>
+    <li><span class="k-icon k-i-close-circle"></span> .k-i-close-circle<br /> .k-i-x-circle</li>
+    <li><span class="k-icon k-i-plus"></span> .k-i-plus</li>
+    <li><span class="k-icon k-i-plus-outline"></span> .k-i-plus-outline</li>
+    <li><span class="k-icon k-i-plus-circle"></span> .k-i-plus-circle</li>
+    <li><span class="k-icon k-i-minus"></span> .k-i-minus</li>
+    <li><span class="k-icon k-i-minus-outline"></span> .k-i-minus-outline</li>
+    <li><span class="k-icon k-i-minus-circle"></span> .k-i-minus-circle</li>
+    <li><span class="k-icon k-i-sort-asc"></span> .k-i-sort-asc</li>
+    <li><span class="k-icon k-i-sort-desc"></span> .k-i-sort-desc</li>
+    <li><span class="k-icon k-i-unsort"></span> .k-i-unsort</li>
+    <li><span class="k-icon k-i-sort-clear"></span> .k-i-sort-clear</li>
+    <li><span class="k-icon k-i-sort-asc-sm"></span> .k-i-sort-asc-sm</li>
+    <li><span class="k-icon k-i-sort-desc-sm"></span> .k-i-sort-desc-sm</li>
+    <li><span class="k-icon k-i-filter"></span> .k-i-filter</li>
+    <li><span class="k-icon k-i-filter-clear"></span> .k-i-filter-clear</li>
+    <li><span class="k-icon k-i-filter-sm"></span> .k-i-filter-sm</li>
+    <li><span class="k-icon k-i-filter-sort-asc-sm"></span> .k-i-filter-sort-asc-sm</li>
+    <li><span class="k-icon k-i-filter-sort-desc-sm"></span> .k-i-filter-sort-desc-sm</li>
+    <li><span class="k-icon k-i-filter-add-expression"></span> .k-i-filter-add-expression</li>
+    <li><span class="k-icon k-i-filter-add-group"></span> .k-i-filter-add-group</li>
+    <li><span class="k-icon k-i-login"></span> .k-i-login</li>
+    <li><span class="k-icon k-i-logout"></span> .k-i-logout</li>
+    <li><span class="k-icon k-i-download"></span> .k-i-download</li>
+    <li><span class="k-icon k-i-upload"></span> .k-i-upload</li>
+    <li><span class="k-icon k-i-hyperlink-open"></span> .k-i-hyperlink-open</li>
+    <li><span class="k-icon k-i-hyperlink-open-sm"></span> .k-i-hyperlink-open-sm</li>
+    <li><span class="k-icon k-i-launch"></span> .k-i-launch</li>
+    <li><span class="k-icon k-i-window"></span> .k-i-window<br /> .k-i-window-maximize</li>
+    <li><span class="k-icon k-i-windows"></span> .k-i-windows<br /> .k-i-window-restore<br /> .k-i-tiles</li>
+    <li><span class="k-icon k-i-window-minimize"></span> .k-i-window-minimize</li>
+    <li><span class="k-icon k-i-gear"></span> .k-i-gear<br /> .k-i-cog<br /> .k-i-custom</li>
+    <li><span class="k-icon k-i-gears"></span> .k-i-gears<br /> .k-i-cogs</li>
+    <li><span class="k-icon k-i-wrench"></span> .k-i-wrench<br /> .k-i-settings</li>
+    <li><span class="k-icon k-i-preview"></span> .k-i-preview<br /> .k-i-eye</li>
+    <li><span class="k-icon k-i-zoom"></span> .k-i-zoom<br /> .k-i-search</li>
+    <li><span class="k-icon k-i-zoom-in"></span> .k-i-zoom-in</li>
+    <li><span class="k-icon k-i-zoom-out"></span> .k-i-zoom-out</li>
+    <li><span class="k-icon k-i-pan"></span> .k-i-pan<br /> .k-i-move</li>
+    <li><span class="k-icon k-i-calculator"></span> .k-i-calculator</li>
+    <li><span class="k-icon k-i-cart"></span> .k-i-cart<br /> .k-i-shopping-cart</li>
+    <li><span class="k-icon k-i-connector"></span> .k-i-connector</li>
+    <li><span class="k-icon k-i-plus-sm"></span> .k-i-plus-sm</li>
+    <li><span class="k-icon k-i-minus-sm"></span> .k-i-minus-sm</li>
+</ul>
 
 ### Alerts and Notifications
 
