@@ -211,6 +211,7 @@
         font-size: .57em;
         text-transform: uppercase;
         margin: ($uploaded-image-border / 2) $padding-y-lg;
+        box-sizing: content-box;
     }
 
     .k-file-invalid-extension-wrapper,
