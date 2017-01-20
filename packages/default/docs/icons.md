@@ -7,7 +7,7 @@ position: 2
 
 # Web Font Icons
 
-The Kendo UI for Angular 2 suite delivers more than 400 integrated font icons for its [components](http://www.telerik.com/kendo-angular-ui/components).
+The Kendo UI suite for Angular 2 delivers more than 400 integrated font icons for its [components](http://www.telerik.com/kendo-angular-ui/components).
 
 ## Overview
 

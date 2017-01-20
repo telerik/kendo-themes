@@ -27,7 +27,7 @@ Currently, the available themes are:
 
 After its installation, the theme needs to be referenced in the project.
 
-### Use Precompiled Themes
+### Precompiled Themes
 
 The example below demonstrates how to include the complete CSS of the default theme by using `styleUrls`. This configuration includes the styles for all components in Kendo UI for Angular 2.
 
@@ -49,7 +49,7 @@ The example below demonstrates how to include the complete CSS of the default th
 export class AppComponent { }
 ```
 
-### Build Custom Themes
+### Custom Themes
 
 To change the theme colors or sizes, build a custom theme from its SCSS sources. To achieve this result, use a build system such as Webpack.
 
@@ -98,6 +98,16 @@ The basic set of variables is located in the [`_variables.scss` file](https://gi
 ```
 
 For a working demo that demonstrates this approach, refer to the [ng2-dashboard sample application](https://github.com/telerik/ng2-dashboard).
+
+### Only What You Need
+
+Depending on the requirements of your project, you might need to skip some of the components styles. To include only what you need, execute the following command inside the `kendo-theme-default` repository:
+
+```
+COMPONENTS='panelbar,grid' npm run build
+```
+
+The snippet demonstrates an example on how to add only the Grid and PanelBar to your project. As a result, the `dist/custom.css` file is generated and it includes only the specified components.
 
 ## Suggested Links
 
