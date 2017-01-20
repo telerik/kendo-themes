@@ -1,3 +1,4 @@
+"use strict";
 /*
  * Build CSS out of SCSS files using webpack, reusing the
  * configuration already in place for react / ng2 components.
@@ -32,6 +33,19 @@ BrowserSync.prototype = {
     }
 };
 
+let entry = { 'all': './build/all.js' };
+
+const components = process.env.COMPONENTS || null;
+if (components) {
+    // custom build
+    const fs = require('fs');
+    const path = require('path');
+    const imports = components.split(',')
+        .map(c => `require("./../scss/${c}.scss");`).join('\n')
+    fs.writeFileSync(path.join('build', 'custom.js'), imports);
+    entry = { 'custom': './build/custom.js' };
+}
+
 const inDevelopment = process.argv.find(v => v.includes('webpack-dev-server'))
 module.exports = require('@telerik/kendo-common-tasks')
     .webpackThemeConfig({ extract: true }, {
@@ -41,9 +55,7 @@ module.exports = require('@telerik/kendo-common-tasks')
             port: devServerPort
         },
         module: { loaders: [] },
-        entry: {
-            'all': './build/all.js'
-        },
+        entry: entry,
         plugins: inDevelopment ? [ new BrowserSync() ] : [],
         output: {
             path: path.join(__dirname, 'dist'),
