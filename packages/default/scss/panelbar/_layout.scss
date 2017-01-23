@@ -93,6 +93,14 @@
                 right: $padding-y-sm / 2;
             }
         }
+
+        &[dir='rtl'] {
+            .k-panelbar-expand,
+            .k-panelbar-collapse {
+                right: auto;
+                left: 4px;
+            }
+        }
     }
 
 }
