@@ -18,10 +18,10 @@
         }
 
         > .k-i-close {
-            display: block;
             position: absolute;
             top: $spacer-y;
-            right: $padding-x-sm;
+            right: $alert-padding-x / 2;
+            margin-right: 0;
         }
     }
 
