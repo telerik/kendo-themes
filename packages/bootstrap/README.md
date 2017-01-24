@@ -10,7 +10,7 @@ Install the build dependencies via `npm install`. Run `npm run build` to build t
 
 ## Customizing
 
-All variable handling happens in [_bootstrap-map.scss](src/_bootstrap-map.scss) and it loads Bootstrap variables from the default location, e.g. `node_modules/bootstrap/scss/_variables.scss`.
+All variable handling happens in [_bootstrap-map.scss](scss/_bootstrap-map.scss) and it loads Bootstrap variables from the default location, e.g. `node_modules/bootstrap/scss/_variables.scss`.
 
 If you have a customized version of Bootstrap, you need to specify the location in _bootstrap-map.scss. Then, build as usual.
 
@@ -24,6 +24,6 @@ In any case, you can open an issue.
 
 ## Under the Hood
 
-To ensure some sort of compatibility, Bootstrap variables are mapped locally. Further more, this enables us to use an ad-hoc micro framework based on primitive widgets, e.g. [button](src/mixins/appearance/_button.scss), [input](src/mixins/appearance/_input.scss), [node](src/mixins/appearance/_node.scss) etc.
+To ensure some sort of compatibility, Bootstrap variables are mapped locally. Further more, this enables us to use an ad-hoc micro framework based on primitive widgets, e.g. [button](scss/mixins/appearance/_button.scss), [input](src/mixins/appearance/_input.scss), [node](src/mixins/appearance/_node.scss) etc.
 
 Not all variables are mapped though. Some, like `$tooltip-arrow-width`, used in the tooltip, are referenced explictly, because they don't fit within the aforementioned framework.

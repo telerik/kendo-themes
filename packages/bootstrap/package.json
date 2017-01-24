@@ -7,8 +7,7 @@
     "Bootstrap",
     "Theme"
   ],
-  "main": "src/packages/all.scss",
-  "typings": "src/packages/all.d.ts",
+  "main": "scss/all.scss",
   "scripts": {
     "lint": "echo 'TODO: add lint'",
     "start": "webpack-dev-server --hot --inline",
@@ -51,7 +50,7 @@
     "bootstrap": "git://github.com/twbs/bootstrap.git#v4-dev"
   },
   "dependencies": {
-    "@progress/kendo-theme-default": "git://github.com/telerik/kendo-theme-default.git#v2"
+    "@progress/kendo-theme-default": "^2.0.0"
   },
   "devDependencies": {
     "@telerik/kendo-common-tasks": "^2.0.0",
