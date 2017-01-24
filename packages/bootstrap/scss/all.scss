@@ -1,12 +1,12 @@
 @import "custom";
 @import "vendor/bootstrap-map";
 @import "variables";
-@import "mixins/all";
 
 // Use variable defaults from Default theme, if undefined
 @import "../node_modules/@progress/kendo-theme-default/scss/variables";
 
 // Dependencies
+@import "mixins/all";
 @import "common/all";
 
 
