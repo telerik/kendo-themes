@@ -35,7 +35,7 @@
 
         // Link
         .k-link {
-            padding: $nav-item-padding-y ($nav-item-padding-x + $icon-size) $nav-item-padding-y $nav-item-padding-x;
+            padding: $nav-item-padding-y calc(#{$nav-item-padding-x} + $icon-size) $nav-item-padding-y $nav-item-padding-x;
             color: inherit;
             display: flex;
             flex-direction: row;

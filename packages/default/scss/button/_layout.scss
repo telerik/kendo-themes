@@ -122,11 +122,6 @@
         &.k-state-focused,
         &:focus {
             outline: 0;
-
-            & > .k-button,
-            & > .k-button {
-                box-shadow: $button-focused-box-shadow;
-            }
         }
 
         &.k-widget {

@@ -20,7 +20,7 @@
 
         >.k-dropdown-wrap {
             > .k-i-close {
-                right: ($icon-size + ($padding-y-lg * 3));
+                right: calc(#{$icon-size} + ($padding-y-lg * 3));
             }
         }
     }

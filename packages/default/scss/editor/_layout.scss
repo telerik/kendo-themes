@@ -245,14 +245,14 @@
             align-items: center;
 
             .k-tool-icon {
-                padding: ($button-padding-x - 2px);
+                padding: calc(#{$button-padding-x} - 2px);
                 width: 1em;
                 height: 1em;
             }
         }
 
         .k-select {
-            padding: ($button-padding-x - 2px);
+            padding: calc(#{$button-padding-x} - 2px);
         }
     }
 
