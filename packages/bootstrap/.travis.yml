@@ -20,6 +20,8 @@ addons:
       - g++-4.8
 before_install:
   - npm i -g npm@^3.8.0
+  - echo "@progress:registry=https://$PROGRESS_REGISTRY_HOST/" > .npmrc
+  - echo "//$PROGRESS_REGISTRY_HOST/:_authToken=\"$PROGRESS_REGISTRY_TOKEN\"" >> .npmrc
 before_script:
   - npm prune
 after_success:
