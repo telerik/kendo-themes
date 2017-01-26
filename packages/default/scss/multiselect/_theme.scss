@@ -8,6 +8,17 @@
         li {
             @include border-radius( $border-radius * .75 );
 
+            .k-icon {
+                opacity: .5;
+                cursor: pointer;
+            }
+
+            &.k-button:hover {
+                .k-icon {
+                    opacity: 1;
+                }
+            }
+
             &.k-button:active,
             &.k-button.k-state-active {
                 @include appearance( pressed-button );
@@ -17,6 +28,10 @@
             &:focus,
             &.k-state-focused {
                 @include appearance( focused-button );
+
+                .k-icon {
+                    opacity: 1;
+                }
             }
         }
 
