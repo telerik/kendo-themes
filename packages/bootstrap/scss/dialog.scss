@@ -1,13 +1,12 @@
-@import "../variables";
-@import "../mixins/all";
+@import "variables";
+@import "mixins/all";
 
 
 // Dependencies
-@import "../common/all";
-@import "../window/window";
+@import "common/all";
+@import "window";
 
 
 // Component
-// @import "layout";
-@import "../../node_modules/@progress/kendo-theme-default/scss/dialog/layout";
-@import "theme";
+@import "../node_modules/@progress/kendo-theme-default/scss/dialog/layout";
+@import "dialog/theme";

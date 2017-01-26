@@ -1,11 +1,11 @@
-@import "../variables";
-@import "../mixins/all";
+@import "variables";
+@import "mixins/all";
 
 
 // Dependencies
-@import "../common/all";
+@import "common/all";
 
 
 // Component
-@import "../../node_modules/@progress/kendo-theme-default/scss/progressbar/layout";
-@import "theme";
+@import "../node_modules/@progress/kendo-theme-default/scss/progressbar/layout";
+@import "progressbar/theme";

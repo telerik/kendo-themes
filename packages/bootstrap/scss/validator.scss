@@ -1,13 +1,12 @@
-@import "../variables";
-@import "../mixins/all";
+@import "variables";
+@import "mixins/all";
 
 
 // Dependencies
-@import "../common/all";
-@import "../tooltip/tooltip";
+@import "common/all";
+@import "tooltip";
 
 
 // Component
-//@import "layout";
-@import "../../node_modules/@progress/kendo-theme-default/scss/validator/layout";
-@import "theme";
+@import "../node_modules/@progress/kendo-theme-default/scss/validator/layout";
+@import "validator/theme";

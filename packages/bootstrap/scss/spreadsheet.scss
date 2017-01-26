@@ -1,14 +1,14 @@
-@import "../variables";
-@import "../mixins/all";
+@import "variables";
+@import "mixins/all";
 
 
 // Dependencies
-@import "../common/all";
-@import "../button/button";
-@import "../tabstrip/tabstrip";
-@import "../toolbar/toolbar";
+@import "common/all";
+@import "button";
+@import "tabstrip";
+@import "toolbar";
 
 
 // Component
-@import "../../node_modules/@progress/kendo-theme-default/scss/spreadsheet/layout";
-@import "theme";
+@import "../node_modules/@progress/kendo-theme-default/scss/spreadsheet/layout";
+@import "spreadsheet/theme";

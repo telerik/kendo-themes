@@ -1,13 +1,12 @@
-@import "../variables";
-@import "../mixins/all";
+@import "variables";
+@import "mixins/all";
 
 
 // Dependencies
-@import "../common/all";
-@import "../button/button";
+@import "common/all";
+@import "button";
 
 
 // Component
-//@import "layout";
-@import "../../node_modules/@progress/kendo-theme-default/scss/multiselect/layout";
-@import "theme";
+@import "../node_modules/@progress/kendo-theme-default/scss/multiselect/layout";
+@import "multiselect/theme";

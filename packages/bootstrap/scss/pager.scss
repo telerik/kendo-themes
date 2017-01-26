@@ -1,12 +1,12 @@
-@import "../variables";
-@import "../mixins/all";
+@import "variables";
+@import "mixins/all";
 
 
 // Dependencies
-@import "../common/all";
-@import "../dropdownlist/dropdownlist";
+@import "common/all";
+@import "dropdownlist";
 
 
 // Component
-@import "../../node_modules/@progress/kendo-theme-default/scss/pager/layout";
-@import "theme";
+@import "../node_modules/@progress/kendo-theme-default/scss/pager/layout";
+@import "pager/theme";

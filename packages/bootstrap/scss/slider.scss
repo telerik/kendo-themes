@@ -1,14 +1,13 @@
-@import "../variables";
-@import "../mixins/all";
+@import "variables";
+@import "mixins/all";
 
 
 // Dependencies
-@import "../common/all";
-@import "../button/button";
-@import "../tooltip/tooltip";
+@import "common/all";
+@import "button";
+@import "tooltip";
 
 
 // Component
-//@import "layout";
-@import "../../node_modules/@progress/kendo-theme-default/scss/slider/layout";
-@import "theme";
+@import "../node_modules/@progress/kendo-theme-default/scss/slider/layout";
+@import "slider/theme";

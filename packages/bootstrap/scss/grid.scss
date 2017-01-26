@@ -1,13 +1,13 @@
-@import "../variables";
-@import "../mixins/all";
+@import "variables";
+@import "mixins/all";
 
 
 // Dependencies
-@import "../common/all";
-@import "../button/button";
-@import "../pager/pager";
+@import "common/all";
+@import "button";
+@import "pager";
 
 
 // Component
-@import "layout";
-@import "theme";
+@import "grid/layout";
+@import "grid/theme";

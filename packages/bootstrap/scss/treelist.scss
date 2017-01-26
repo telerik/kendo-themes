@@ -1,13 +1,13 @@
-@import "../variables";
-@import "../mixins/all";
+@import "variables";
+@import "mixins/all";
 
 
 // Dependencies
-@import "../common/all";
-@import "../grid/grid";
+@import "common/all";
+@import "grid";
 
 
 // Component
-@import "../../node_modules/@progress/kendo-theme-default/scss/treelist/layout";
+@import "../node_modules/@progress/kendo-theme-default/scss/treelist/layout";
 // TODO: does treelist have own skin?
-// @import "theme";
+// @import "treelist/theme";

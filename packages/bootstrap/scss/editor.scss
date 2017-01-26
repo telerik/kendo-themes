@@ -1,15 +1,14 @@
-@import "../variables";
-@import "../mixins/all";
+@import "variables";
+@import "mixins/all";
 
 
 // Dependencies
-@import "../common/all";
-@import "../button/button";
-@import "../toolbar/toolbar";
-@import "../window/window";
+@import "common/all";
+@import "button";
+@import "toolbar";
+@import "window";
 
 
 // Component
-// @import "layout";
-@import "../../node_modules/@progress/kendo-theme-default/scss/editor/layout";
-@import "theme";
+@import "../node_modules/@progress/kendo-theme-default/scss/editor/layout";
+@import "editor/theme";

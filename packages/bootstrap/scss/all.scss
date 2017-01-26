@@ -11,63 +11,63 @@
 
 
 // Data management
-@import "pager/pager";
-@import "grid/grid";
-@import "spreadsheet/spreadsheet";
+@import "pager";
+@import "grid";
+@import "spreadsheet";
 // @import "listview/listview";
 // @import "pivotgrid/pivotgrid";
-@import "treelist/treelist";
+@import "treelist";
 // @import "scrollview/scrollview";
 
 
 // Editors
-@import "autocomplete/autocomplete";
-@import "colorpicker/colorpicker";
-@import "combobox/combobox";
-@import "datetime/datetime";
-@import "dropdownlist/dropdownlist";
-@import "editor/editor";
-@import "input/input";
-@import "multiselect/multiselect";
-@import "numerictextbox/numerictextbox";
-@import "slider/slider";
-@import "upload/upload";
-@import "validator/validator";
-@import "switch/switch";
+@import "autocomplete";
+@import "colorpicker";
+@import "combobox";
+@import "datetime";
+@import "dropdownlist";
+@import "editor";
+@import "input";
+@import "multiselect";
+@import "numerictextbox";
+@import "slider";
+@import "upload";
+@import "validator";
+@import "switch";
 
 
 // Dataviz
-@import "dataviz/dataviz";
+@import "dataviz";
 
 
 // Scheduling
-@import "calendar/calendar";
-@import "gantt/gantt";
-@import "scheduler/scheduler";
+@import "calendar";
+@import "gantt";
+@import "scheduler";
 
 
 // Media
-@import "mediaplayer/mediaplayer";
+@import "mediaplayer";
 
 
 // Layout
-@import "dialog/dialog";
-@import "notification/notification";
-@import "responsivepanel/responsivepanel";
-@import "splitter/splitter";
-@import "tooltip/tooltip";
-@import "window/window";
+@import "dialog";
+@import "notification";
+@import "responsivepanel";
+@import "splitter";
+@import "tooltip";
+@import "window";
 
 
 // Navigation
-@import "button/button";
-@import "menu/menu";
-@import "panelbar/panelbar";
-@import "tabstrip/tabstrip";
-@import "toolbar/toolbar";
-@import "treeview/treeview";
+@import "button";
+@import "menu";
+@import "panelbar";
+@import "tabstrip";
+@import "toolbar";
+@import "treeview";
 
 
 // Interactivity & UX
-@import "progressbar/progressbar";
-@import "scroller/scroller";
+@import "progressbar";
+@import "scroller";
