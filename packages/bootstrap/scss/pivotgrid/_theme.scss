@@ -1,4 +1,4 @@
-@include exports('pivotgrid/theme') {
+@include exports("pivotgrid/theme") {
     $pivotgrid-alt-bg: $header-bg !default;
     $pivotgrid-chrome-border: $border-color !default;
 

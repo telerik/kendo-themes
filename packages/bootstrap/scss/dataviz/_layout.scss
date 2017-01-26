@@ -10,7 +10,7 @@ $chart-label-font-size: .857em !default;
 $chart-title-font-size: 1.143em !default;
 
 
-@include exports('dataviz/charts/layout') {
+@include exports("dataviz/charts/layout") {
     // Exported variables
     .k-var--chart-font {
         font-size: $chart-font-size;
@@ -338,10 +338,10 @@ $exported: (
     $type: type-of($value);
 
     .k-var--#{$name} {
-        @if $type == 'color' {
+        @if $type == "color" {
             // background-color can store any color
             background-color: $value;
-        } @else if $type == 'number' {
+        } @else if $type == "number" {
             // margin-top can store positive & negative values
             margin-top: $value;
         }

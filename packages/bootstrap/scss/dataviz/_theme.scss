@@ -18,7 +18,7 @@ $chart-notes-lines: rgba(0, 0, 0, .5) !default;
 
 $error-bars-background: rgba(0, 0, 0, .5) !default;
 
-@include exports('dataviz/charts/theme') {
+@include exports("dataviz/charts/theme") {
 
     // Elements
     .k-chart,
