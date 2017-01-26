@@ -1,26 +1,26 @@
 @include exports("slider/theme") {
 
-	.k-slider {
+    .k-slider {
 
-		.k-slider-track {
-			background: $header-bg;
-		}
-		.k-slider-selection {
-			background: $header-selected-bg;
-		}
+        .k-slider-track {
+            background: $header-bg;
+        }
+        .k-slider-selection {
+            background: $header-selected-bg;
+        }
 
 
-		// Drag handle
-		.k-draghandle {
-			@include appearance( button );
-		}
-		.k-draghandle:hover {
-			@include appearance( hovered-button );
-		}
-		.k-draghandle.k-state-active {
-			@include appearance( active-button );
-		}
+        // Drag handle
+        .k-draghandle {
+            @include appearance( button );
+        }
+        .k-draghandle:hover {
+            @include appearance( hovered-button );
+        }
+        .k-draghandle.k-state-active {
+            @include appearance( active-button );
+        }
 
-	}
+    }
 
 }

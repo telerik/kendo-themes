@@ -1,28 +1,28 @@
 @include exports("progressbar/theme") {
 
-	// Theme
-	.k-progressbar {
-		@include border-radius( $border-radius );
-		background-color: $progress-bg;
+    // Theme
+    .k-progressbar {
+        @include border-radius( $border-radius );
+        background-color: $progress-bg;
 
-		// Status
-		.k-progress-status-wrap {
-			@include border-radius( $border-radius );
-		}
+        // Status
+        .k-progress-status-wrap {
+            @include border-radius( $border-radius );
+        }
 
-		// Progress
-		> .k-state-selected {
-			@include border-radius( $border-radius );
-		}
-		.k-state-selected {
-			color: $body-bg;
-			background-color: $progress-bar-color;
-		}
+        // Progress
+        > .k-state-selected {
+            @include border-radius( $border-radius );
+        }
+        .k-state-selected {
+            color: $body-bg;
+            background-color: $progress-bar-color;
+        }
 
-		// Chunks
-		> ul {}
-		.k-item {
-			border-color: $body-bg;
-		}
-	}
+        // Chunks
+        > ul {}
+        .k-item {
+            border-color: $body-bg;
+        }
+    }
 }

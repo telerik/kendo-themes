@@ -1,41 +1,41 @@
 @include exports("grid/theme") {
 
-	// Theme
-	.k-grid {
+    // Theme
+    .k-grid {
 
-		.k-alt {
-			background-color: $table-alt-bg;
-		}
+        .k-alt {
+            background-color: $table-alt-bg;
+        }
 
-	}
-
-
-	// Toolbar
-	.k-grid-toolbar {
-		@include appearance( header );
-	}
+    }
 
 
-	// Grouping header
-	.k-grouping-header {
-		@include appearance( header );
-	}
-	.k-grouping-header .k-group-indicator {
-		@include appearance( button );
-		@include border-radius( $border-radius );
-	}
+    // Toolbar
+    .k-grid-toolbar {
+        @include appearance( header );
+    }
 
 
-	// Header
-	.k-grid-header {
-		@include appearance( header );
-	}
+    // Grouping header
+    .k-grouping-header {
+        @include appearance( header );
+    }
+    .k-grouping-header .k-group-indicator {
+        @include appearance( button );
+        @include border-radius( $border-radius );
+    }
 
 
-	// Grouping
-	.k-grouping-row,
-	.k-group-cell {
-		@include appearance( header );
-	}
+    // Header
+    .k-grid-header {
+        @include appearance( header );
+    }
+
+
+    // Grouping
+    .k-grouping-row,
+    .k-group-cell {
+        @include appearance( header );
+    }
 
 }

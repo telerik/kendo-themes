@@ -1,36 +1,36 @@
 @include exports("panelbar/theme") {
 
-	// Appearance
-	.k-panelbar {
-		@include appearance( panel );
+    // Appearance
+    .k-panelbar {
+        @include appearance( panel );
 
-		// Root
-		> .k-item > .k-link {
-			@include appearance( header );
-		}
-		> .k-item > .k-link.k-state-hover {
-			@include appearance( hovered-header );
-		}
-		> .k-item > .k-link.k-state-selected {
-			@include appearance( selected-header );
-		}
-		> .k-item > .k-link.k-state-focused {
-			border-color: $header-selected-border;
-			box-shadow: inset 0 0 5px $header-selected-border;
-		}
+        // Root
+        > .k-item > .k-link {
+            @include appearance( header );
+        }
+        > .k-item > .k-link.k-state-hover {
+            @include appearance( hovered-header );
+        }
+        > .k-item > .k-link.k-state-selected {
+            @include appearance( selected-header );
+        }
+        > .k-item > .k-link.k-state-focused {
+            border-color: $header-selected-border;
+            box-shadow: inset 0 0 5px $header-selected-border;
+        }
 
-		// Child
-		.k-panel > .k-item > .k-link {}
-		.k-panel > .k-item > .k-link.k-state-hover {
-			@include appearance( hovered-node );
-		}
-		.k-panel > .k-item > .k-link.k-state-selected {
-			@include appearance( selected-node );
-		}
-		.k-panel > .k-item > .k-link.k-state-focused {
-			border-color: $node-selected-border;
-			box-shadow: inset 0 0 5px $node-selected-border;
-		}
-	}
+        // Child
+        .k-panel > .k-item > .k-link {}
+        .k-panel > .k-item > .k-link.k-state-hover {
+            @include appearance( hovered-node );
+        }
+        .k-panel > .k-item > .k-link.k-state-selected {
+            @include appearance( selected-node );
+        }
+        .k-panel > .k-item > .k-link.k-state-focused {
+            border-color: $node-selected-border;
+            box-shadow: inset 0 0 5px $node-selected-border;
+        }
+    }
 
 }

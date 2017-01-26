@@ -1,76 +1,76 @@
 @include exports("multiselect/layout") {
 
-	// Base
-	.k-multiselect {
-		padding: $input-padding-y/2;
-		line-height: $form-line-height;
-		display: inline-block;
-		vertical-align: middle;
-		box-sizing: border-box;
-		position: relative;
+    // Base
+    .k-multiselect {
+        padding: $input-padding-y/2;
+        line-height: $form-line-height;
+        display: inline-block;
+        vertical-align: middle;
+        box-sizing: border-box;
+        position: relative;
 
-		.k-multiselect-wrap {
-			margin: (-$input-padding-y/4) 0;
-		}
+        .k-multiselect-wrap {
+            margin: (-$input-padding-y/4) 0;
+        }
 
-		ul {
-			vertical-align: top;
-		}
-		li {
-			margin: $input-padding-y/4 $input-padding-x/4;
-			float: left;
-		}
+        ul {
+            vertical-align: top;
+        }
+        li {
+            margin: $input-padding-y/4 $input-padding-x/4;
+            float: left;
+        }
 
-		.k-button {
-			padding: $button-padding-y/4 $button-padding-x/2;
-			line-height: inherit;
-			cursor: pointer;
-			display: inline-flex;
-			flex-direction: row;
-			align-items: center;
+        .k-button {
+            padding: $button-padding-y/4 $button-padding-x/2;
+            line-height: inherit;
+            cursor: pointer;
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
 
-			.k-select {
-				margin-left: .4ex;
-				margin-right: -.4ex;
-				display: inline-flex;
-				flex-direction: row;
-				align-items: center;
-			}
-		}
+            .k-select {
+                margin-left: .4ex;
+                margin-right: -.4ex;
+                display: inline-flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
 
-		.k-input {
-			padding: 0;
-			margin: $input-padding-y/2 $input-padding-x/4;
-			width: auto;
-			border: 0;
-			outline: 0;
-			color: inherit;
-			background: none;
-			font: inherit;
-			display: inline-block;
-			float: left;
-		}
-
-
-		// Icons
-		.k-i-loading {
-			position: absolute;
-			right: $padding-y-sm;
-			top: $padding-y-sm;
-		}
-		.k-multiselect-wrap > .k-i-close {
-			position: absolute;
-			right: $padding-y-sm * 2 + 1rem;
-			top: $padding-y-sm;
-		}
+        .k-input {
+            padding: 0;
+            margin: $input-padding-y/2 $input-padding-x/4;
+            width: auto;
+            border: 0;
+            outline: 0;
+            color: inherit;
+            background: none;
+            font: inherit;
+            display: inline-block;
+            float: left;
+        }
 
 
+        // Icons
+        .k-i-loading {
+            position: absolute;
+            right: $padding-y-sm;
+            top: $padding-y-sm;
+        }
+        .k-multiselect-wrap > .k-i-close {
+            position: absolute;
+            right: $padding-y-sm * 2 + 1rem;
+            top: $padding-y-sm;
+        }
 
 
-		// Compact
-		@include compact {
-			padding: $input-padding-y/4;
-		}
-	}
+
+
+        // Compact
+        @include compact {
+            padding: $input-padding-y/4;
+        }
+    }
 
 }

@@ -1,18 +1,18 @@
 @include exports("splitter/theme") {
 
-	.k-splitter {}
+    .k-splitter {}
 
 
-	// Splitbar
-	.k-splitbar {
-		@include appearance( button );
-	}
-	.k-splitbar-horizontal-hover,
-	.k-splitbar-vertical-hover {
-		@include appearance( hovered-button );
-	}
-	.k-ghost-splitbar {
-		@include appearance( active-button );
-	}
+    // Splitbar
+    .k-splitbar {
+        @include appearance( button );
+    }
+    .k-splitbar-horizontal-hover,
+    .k-splitbar-vertical-hover {
+        @include appearance( hovered-button );
+    }
+    .k-ghost-splitbar {
+        @include appearance( active-button );
+    }
 
 }

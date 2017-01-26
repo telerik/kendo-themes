@@ -1,98 +1,98 @@
 @include exports("scheduler/theme") {
 
-	// Appearance
-	.k-scheduler {}
+    // Appearance
+    .k-scheduler {}
 
 
-	// Header and footer
-	.k-scheduler-toolbar,
-	.k-scheduler-footer {
-		@include appearance( header );
-	}
+    // Header and footer
+    .k-scheduler-toolbar,
+    .k-scheduler-footer {
+        @include appearance( header );
+    }
 
 
-	//Scheduler navigation
-	.k-scheduler-navigation {
+    //Scheduler navigation
+    .k-scheduler-navigation {
 
-		.k-nav-today,
-		.k-nav-prev,
-		.k-nav-next {
-			@include appearance( button );
+        .k-nav-today,
+        .k-nav-prev,
+        .k-nav-next {
+            @include appearance( button );
 
-			&.k-state-hover { @include appearance( hovered-button ); }
-		}
-		.k-nav-today { @include border-radius( $border-radius 0 0 $border-radius ); }
-		.k-nav-next { @include border-radius( 0 $border-radius $border-radius 0 ); }
-	}
-
-
-	// View switcher
-	.k-scheduler-views {
-
-		li {
-			@include appearance( button );
-
-			&.k-state-hover { @include appearance( hovered-button ); }
-			&.k-state-selected { @include appearance( active-button ); }
-		}
-		li:first-child { @include border-radius( $border-radius ); }
-		li:first-child + li { @include border-radius( $border-radius 0 0 $border-radius ); }
-		li:last-child{ @include border-radius( 0 $border-radius $border-radius 0 ); }
+            &.k-state-hover { @include appearance( hovered-button ); }
+        }
+        .k-nav-today { @include border-radius( $border-radius 0 0 $border-radius ); }
+        .k-nav-next { @include border-radius( 0 $border-radius $border-radius 0 ); }
+    }
 
 
-		&.k-state-expanded {
-			li {
-				margin: 0;
-				border-radius: 0;
-			}
-			li + li { margin-top: -1px; }
-			li:first-child { @include border-radius( $border-radius $border-radius 0 0 ); }
-			li:first-child + li { border-radius: 0; }
-			li:last-child { @include border-radius( 0 0 $border-radius $border-radius ); }
-		}
-	}
+    // View switcher
+    .k-scheduler-views {
+
+        li {
+            @include appearance( button );
+
+            &.k-state-hover { @include appearance( hovered-button ); }
+            &.k-state-selected { @include appearance( active-button ); }
+        }
+        li:first-child { @include border-radius( $border-radius ); }
+        li:first-child + li { @include border-radius( $border-radius 0 0 $border-radius ); }
+        li:last-child{ @include border-radius( 0 $border-radius $border-radius 0 ); }
 
 
-	// Scheduler footer
-	.k-scheduler-footer {
-
-		li {
-			@include appearance( button );
-			@include border-radius( $border-radius );
-
-			&.k-state-hover { @include appearance( hovered-button ); }
-		}
-	}
-
-
-	// Scheduler content
-	.k-scheduler-content {}
-	.k-nonwork-hour {
-		background-color: mix( $panel-text, $panel-bg, 3% );
-	}
+        &.k-state-expanded {
+            li {
+                margin: 0;
+                border-radius: 0;
+            }
+            li + li { margin-top: -1px; }
+            li:first-child { @include border-radius( $border-radius $border-radius 0 0 ); }
+            li:first-child + li { border-radius: 0; }
+            li:last-child { @include border-radius( 0 0 $border-radius $border-radius ); }
+        }
+    }
 
 
-	// Appointments
-	.k-event {
-		@include border-radius( $border-radius );
-	}
-	.k-event-inverse {
-		color: $panel-bg;
-	}
+    // Scheduler footer
+    .k-scheduler-footer {
+
+        li {
+            @include appearance( button );
+            @include border-radius( $border-radius );
+
+            &.k-state-hover { @include appearance( hovered-button ); }
+        }
+    }
 
 
-	// Drag hint
-	.k-event-drag-hint {}
+    // Scheduler content
+    .k-scheduler-content {}
+    .k-nonwork-hour {
+        background-color: mix( $panel-text, $panel-bg, 3% );
+    }
 
 
-	// Resizing
-	.k-scheduler-marquee {
+    // Appointments
+    .k-event {
+        @include border-radius( $border-radius );
+    }
+    .k-event-inverse {
+        color: $panel-bg;
+    }
 
-	}
-	.k-scheduler-marquee::before,
-	.k-scheduler-marquee::after {
-		border-color: $primary-button-border;
-	}
+
+    // Drag hint
+    .k-event-drag-hint {}
+
+
+    // Resizing
+    .k-scheduler-marquee {
+
+    }
+    .k-scheduler-marquee::before,
+    .k-scheduler-marquee::after {
+        border-color: $primary-button-border;
+    }
 
 }
 
@@ -103,12 +103,12 @@
 @include exports("scheduler-edit-form/theme") {
 
 
-	.k-popup-edit-form {}
+    .k-popup-edit-form {}
 
 
-	.k-popup-edit-form .k-edit-buttons {
-		border-color: $modal-header-border-color;
-	}
-	.k-popup-edit-form .k-edit-buttons .k-button {}
-	.k-popup-edit-form .k-edit-buttons .k-button {}
+    .k-popup-edit-form .k-edit-buttons {
+        border-color: $modal-header-border-color;
+    }
+    .k-popup-edit-form .k-edit-buttons .k-button {}
+    .k-popup-edit-form .k-edit-buttons .k-button {}
 }

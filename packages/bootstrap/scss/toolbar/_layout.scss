@@ -1,138 +1,138 @@
 @include exports("toolbar/layout") {
 
-	// Base
-	.k-toolbar {
-		padding: $padding-y-sm;
-		line-height: $form-line-height;
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		position: relative;
+    // Base
+    .k-toolbar {
+        padding: $padding-y-sm;
+        line-height: $form-line-height;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
 
-		> * {
-			display: inline-flex;
-		}
-		> * + * {
-			margin-left: $padding-y-sm;
-		}
-		> .k-overflow-anchor + * {
-			margin-left: 0;
-		}
+        > * {
+            display: inline-flex;
+        }
+        > * + * {
+            margin-left: $padding-y-sm;
+        }
+        > .k-overflow-anchor + * {
+            margin-left: 0;
+        }
 
-		.k-button,
-		.k-button-group,
-		.k-separator,
-		.k-split-button,
-		.k-textbox,
-		.k-widget,
-		label {
-			vertical-align: middle;
-		}
-
-
-		// Button
-		.k-button {}
-
-		// Toggle button
-		.k-toggle-button {}
-
-		// Split button
-		.k-split-button {}
-
-		// Button group
-		.k-button-group {}
-
-		// Overflow anchor
-		.k-overflow-anchor {
-			width: $form-line-height * 1em;
-			height: $form-line-height * 1em;
-			padding: $button-padding-y;
-			box-sizing: content-box;
-			justify-content: center;
-			position: absolute;
-			top: $padding-y-sm;
-			right: $padding-y-sm;
-		}
-
-		// Separator
-		.k-separator {
-			width: 0;
-			border-width: 0 0 0 1px;
-			border-style: solid;
-			border-color: inherit;
-		}
+        .k-button,
+        .k-button-group,
+        .k-separator,
+        .k-split-button,
+        .k-textbox,
+        .k-widget,
+        label {
+            vertical-align: middle;
+        }
 
 
+        // Button
+        .k-button {}
+
+        // Toggle button
+        .k-toggle-button {}
+
+        // Split button
+        .k-split-button {}
+
+        // Button group
+        .k-button-group {}
+
+        // Overflow anchor
+        .k-overflow-anchor {
+            width: $form-line-height * 1em;
+            height: $form-line-height * 1em;
+            padding: $button-padding-y;
+            box-sizing: content-box;
+            justify-content: center;
+            position: absolute;
+            top: $padding-y-sm;
+            right: $padding-y-sm;
+        }
+
+        // Separator
+        .k-separator {
+            width: 0;
+            border-width: 0 0 0 1px;
+            border-style: solid;
+            border-color: inherit;
+        }
 
 
-		// Compact
-		@include compact {
 
 
-			// Button
-			.k-button {}
-
-			// Toggle button
-			.k-toggle-button {}
-
-			// Split button
-			.k-split-button {}
-
-			// Button group
-			.k-button-group {}
-
-			// Overflow anchor
-			.k-overflow-anchor {
-				padding: $button-padding-y-sm;
-			}
-
-			// Separator
-			.k-separator {}
-
-		}
-	}
+        // Compact
+        @include compact {
 
 
-	.k-overflow-container {
+            // Button
+            .k-button {}
 
-		// Group
-		.k-overflow-group {
-			padding-bottom: $spacer-y / 2;
-			margin-bottom: $spacer-y / 2;
-			border-width: 0 0 1px;
-			border-style: solid;
-			border-color: inherit;
-			flex-direction: column;
+            // Toggle button
+            .k-toggle-button {}
 
-			.k-button {
-				margin: 0;
-				border-radius: 0;
-			}
-		}
+            // Split button
+            .k-split-button {}
 
-		// Items
-		.k-overflow-button {
-			padding: 3px $dropdown-item-padding-x;
-			border-width: 0;
-			border-radius: 0;
-			display: flex;
-		}
+            // Button group
+            .k-button-group {}
 
-		// Hidden items
-		.k-overflow-hidden {
-			display: none;
-		}
-	}
-	.k-split-container {
+            // Overflow anchor
+            .k-overflow-anchor {
+                padding: $button-padding-y-sm;
+            }
 
-		// Items
-		.k-button {
-			padding: 3px $dropdown-item-padding-x;
-			border-width: 0;
-			border-radius: 0;
-			display: flex;
-		}
+            // Separator
+            .k-separator {}
 
-	}
+        }
+    }
+
+
+    .k-overflow-container {
+
+        // Group
+        .k-overflow-group {
+            padding-bottom: $spacer-y / 2;
+            margin-bottom: $spacer-y / 2;
+            border-width: 0 0 1px;
+            border-style: solid;
+            border-color: inherit;
+            flex-direction: column;
+
+            .k-button {
+                margin: 0;
+                border-radius: 0;
+            }
+        }
+
+        // Items
+        .k-overflow-button {
+            padding: 3px $dropdown-item-padding-x;
+            border-width: 0;
+            border-radius: 0;
+            display: flex;
+        }
+
+        // Hidden items
+        .k-overflow-hidden {
+            display: none;
+        }
+    }
+    .k-split-container {
+
+        // Items
+        .k-button {
+            padding: 3px $dropdown-item-padding-x;
+            border-width: 0;
+            border-radius: 0;
+            display: flex;
+        }
+
+    }
 
 }

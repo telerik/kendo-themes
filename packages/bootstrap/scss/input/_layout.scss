@@ -1,29 +1,29 @@
 @include exports("input/layout") {
 
-	// Base
-	.k-textbox {
-		padding: $input-padding-y $input-padding-x;
-		border-width: 1px;
-		border-style: solid;
-		font-size: $font-size;
-		line-height: $form-line-height;
-		display: inline-block;
-		vertical-align: middle;
+    // Base
+    .k-textbox {
+        padding: $input-padding-y $input-padding-x;
+        border-width: 1px;
+        border-style: solid;
+        font-size: $font-size;
+        line-height: $form-line-height;
+        display: inline-block;
+        vertical-align: middle;
 
-		&:disabled,
-		&[disabled],
-		&.k-disabled {
-			@extend %disabled;
-		}
-
-
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            @extend %disabled;
+        }
 
 
-		// Compact
-		@include compact {
-			font-size: $font-size-sm;
-			padding: $input-padding-y-sm $input-padding-x-sm;
-		}
-	}
+
+
+        // Compact
+        @include compact {
+            font-size: $font-size-sm;
+            padding: $input-padding-y-sm $input-padding-x-sm;
+        }
+    }
 
 }

@@ -1,11 +1,11 @@
 @include exports("scrollview/layout") {
 
-	.k-scrollview {}
+    .k-scrollview {}
 
 
-	.k-scrollview {
-		margin-collapse: separate;
-		user-select: none;
-	}
+    .k-scrollview {
+        margin-collapse: separate;
+        user-select: none;
+    }
 
 }

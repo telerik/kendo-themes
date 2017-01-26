@@ -1,22 +1,22 @@
 @include exports("notification/layout") {
 
-	// Base
-	.k-notification {}
-	.k-notification-wrap {
-		padding: $alert-padding-y $alert-padding-x;
-		white-space: nowrap;
-		cursor: default;
-		position: relative;
+    // Base
+    .k-notification {}
+    .k-notification-wrap {
+        padding: $alert-padding-y $alert-padding-x;
+        white-space: nowrap;
+        cursor: default;
+        position: relative;
 
-		> .k-i-close {
-			position: absolute;
-			top: $alert-padding-y * 1.25;
-			right: $alert-padding-x * .75;
-			display: none;
-		}
-		.k-notification-button & .k-i-close {
-			display: block;
-		}
-	}
+        > .k-i-close {
+            position: absolute;
+            top: $alert-padding-y * 1.25;
+            right: $alert-padding-x * .75;
+            display: none;
+        }
+        .k-notification-button & .k-i-close {
+            display: block;
+        }
+    }
 
 }

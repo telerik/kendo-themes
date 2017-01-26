@@ -1,77 +1,77 @@
 @include exports("splitter/layout") {
 
-	// Base
-	.k-splitter {
-		height: 300px;
-		position: relative;
+    // Base
+    .k-splitter {
+        height: 300px;
+        position: relative;
 
-		// Pane
-		.k-pane {
-			overflow: hidden;
-		}
-		.k-scrollabele {
-			overflow: auto;
-		}
-		.k-splitter-resizing {
-			overflow: hidden;
-		}
+        // Pane
+        .k-pane {
+            overflow: hidden;
+        }
+        .k-scrollabele {
+            overflow: auto;
+        }
+        .k-splitter-resizing {
+            overflow: hidden;
+        }
 
-		// Nested
-		.k-pane > & {
-			border-width: 0;
-			overflow: hidden;
-		}
+        // Nested
+        .k-pane > & {
+            border-width: 0;
+            overflow: hidden;
+        }
 
-		// Loading
-		.k-pane-loading {
-			position: static;
-			top: 50%;
-			left: 50%;
-		}
+        // Loading
+        .k-pane-loading {
+            position: static;
+            top: 50%;
+            left: 50%;
+        }
 
-	}
-
-
-	// Splitbar
-	.k-ghost-splitbar,
-	.k-splitbar {
-		border-style: solid;
-		outline: 0;
-		position: absolute;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.k-splitbar-draggable-horizontal { cursor: w-resize; }
-	.k-splitbar-draggable-vertical { cursor: n-resize; }
-
-	.k-ghost-splitbar-horizontal,
-	.k-splitbar-horizontal {
-		width: 5px;
-		border-width: 0 1px;
-		background-repeat: repeat-y;
-		flex-direction: column;
-		top: 0;
-	}
-	.k-ghost-splitbar-vertical,
-	.k-splitbar-vertical {
-		height: 5px;
-		border-width: 1px 0;
-		background-repeat: repeat-x;
-		flex-direction: row;
-		left: 0;
-	}
-
-	.k-splitbar-static-horizontal { width: 1px; }
-	.k-splitbar-static-vertical { height: 1px; }
+    }
 
 
-	// Icons
-	.k-splitbar .k-icon {}
+    // Splitbar
+    .k-ghost-splitbar,
+    .k-splitbar {
+        border-style: solid;
+        outline: 0;
+        position: absolute;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .k-splitbar-draggable-horizontal { cursor: w-resize; }
+    .k-splitbar-draggable-vertical { cursor: n-resize; }
+
+    .k-ghost-splitbar-horizontal,
+    .k-splitbar-horizontal {
+        width: 5px;
+        border-width: 0 1px;
+        background-repeat: repeat-y;
+        flex-direction: column;
+        top: 0;
+    }
+    .k-ghost-splitbar-vertical,
+    .k-splitbar-vertical {
+        height: 5px;
+        border-width: 1px 0;
+        background-repeat: repeat-x;
+        flex-direction: row;
+        left: 0;
+    }
+
+    .k-splitbar-static-horizontal { width: 1px; }
+    .k-splitbar-static-vertical { height: 1px; }
+
+
+    // Icons
+    .k-splitbar .k-icon {}
 
 }

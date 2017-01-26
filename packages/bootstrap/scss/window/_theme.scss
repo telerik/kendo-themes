@@ -1,12 +1,12 @@
 @include exports("window/theme") {
 
-	.k-window {
-		@include border-radius( $border-radius );
-		background-color: $modal-content-bg;
-		@include box-shadow($modal-content-xs-box-shadow);
-	}
-	.k-window-titlebar {
-		border-color: $modal-header-border-color;
-	}
+    .k-window {
+        @include border-radius( $border-radius );
+        background-color: $modal-content-bg;
+        @include box-shadow($modal-content-xs-box-shadow);
+    }
+    .k-window-titlebar {
+        border-color: $modal-header-border-color;
+    }
 
 }
