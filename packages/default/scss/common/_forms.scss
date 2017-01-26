@@ -18,6 +18,7 @@
         display: inline-flex;
         vertical-align: middle;
         position: relative;
+        transition: background .2s ease;
 
         &[dir='rtl'] {
             text-align: right;
@@ -76,6 +77,11 @@
             align-items: center;
             overflow: hidden;
             text-overflow: ellipsis;
+
+            &::selection {
+                color: $selected-text;
+                background: $selected-bg;
+            }
         }
     }
 
@@ -122,6 +128,12 @@
             .k-clear-value {
                 display: inline-block;
                 outline: 0;
+                opacity: .5;
+
+                &:hover {
+                    opacity: 1;
+                    cursor: pointer;
+                }
             }
         }
     }

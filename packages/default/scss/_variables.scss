@@ -132,7 +132,7 @@ $panel-border: rgba( black, .08 ) !default;
 
 // Popup
 $popup-text: $widget-text !default;
-$popup-bg: $base-bg !default;
+$popup-bg: lighten($base-bg, 1%) !default;
 $popup-border: rgba( black, .08 ) !default;
 $popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
@@ -207,7 +207,8 @@ $input-hovered-border: $button-hovered-border !default;
 
 $input-focused-text: $input-text !default;
 $input-focused-bg: $input-bg !default;
-$input-focused-border: $button-pressed-border !default;
+$input-focused-border: $input-hovered-border !default;
+$input-focused-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
 
 // Node
@@ -237,7 +238,7 @@ $list-item-hovered-bg: $hover-bg !default;
 $list-item-selected-text: $selected-text !default;
 $list-item-selected-bg: $selected-bg !default;
 
-$list-item-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .1) !default;
+$list-item-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 
 // Link

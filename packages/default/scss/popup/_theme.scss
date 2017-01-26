@@ -29,7 +29,10 @@ $popup-text: $normal-text-color !default;
 
     .k-list {}
 
-    .k-list .k-item {}
+    .k-list .k-item {
+        transition: background .2s ease;
+    }
+
     .k-list .k-item:hover,
     .k-list .k-item.k-state-hover {
         @include appearance( hovered-list-item );
@@ -58,7 +61,12 @@ $popup-text: $normal-text-color !default;
         border-radius: 0 0 $border-radius $border-radius;
     }
 
-    .k-animation-container-shown {
+    .k-animation-container-shown,
+    .k-animation-container > .k-popup {
         box-shadow: $popup-shadow;
+    }
+
+    .k-animation-container-fixed > .k-popup {
+        box-shadow: none;
     }
 }

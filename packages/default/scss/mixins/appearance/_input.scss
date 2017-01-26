@@ -16,7 +16,7 @@ $_input-imported: false !default;
         color: $input-focused-text;
         background-color: $input-focused-bg;
         border-color: $input-focused-border;
-        box-shadow:  0 0 0 2px darken($input-bg, 6%);
+        box-shadow: $input-focused-shadow;
     }
 
     $_input-imported: true;
