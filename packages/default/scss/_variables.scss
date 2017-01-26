@@ -134,7 +134,7 @@ $panel-border: rgba( black, .08 ) !default;
 $popup-text: $widget-text !default;
 $popup-bg: $base-bg !default;
 $popup-border: rgba( black, .08 ) !default;
-
+$popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
 // Header
 $header-text: $base-text !default;
