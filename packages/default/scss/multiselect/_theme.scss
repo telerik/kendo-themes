@@ -13,10 +13,8 @@
                 cursor: pointer;
             }
 
-            &.k-button:hover {
-                .k-icon {
-                    opacity: 1;
-                }
+            .k-icon:hover {
+                opacity: 1;
             }
 
             &.k-button:active,

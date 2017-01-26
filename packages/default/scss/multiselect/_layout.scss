@@ -34,7 +34,7 @@
         // Token
         .k-button {
             padding: ($button-padding-y / 2) ($button-padding-x / 2);
-            margin: $padding-y-sm ($padding-y-sm / 2);
+            margin: $padding-y-sm 0 0 $padding-y-sm;
             cursor: default;
             display: inline-flex;
             flex-direction: row;
@@ -45,6 +45,10 @@
                 display: flex;
                 cursor: pointer;
                 margin-left: $padding-x;
+            }
+
+            &:last-child {
+                margin-bottom: $padding-y-sm;
             }
         }
 
