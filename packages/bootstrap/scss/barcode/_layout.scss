@@ -1,7 +1,1 @@
-@include exports("barcode/layout") {
-
-    .k-barcode {
-        display: inline-block;
-    }
-
-}
+@import "../../node_modules/@progress/kendo-theme-default/scss/barcode/layout";
