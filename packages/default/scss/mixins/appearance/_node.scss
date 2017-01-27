@@ -25,14 +25,14 @@ $_node-imported: false !default;
         color: $list-item-text;
         background-color: $list-item-bg;
     }
-    %appearance_hovered-list-item {
-        color: $list-item-hovered-text;
-        background-color: $list-item-hovered-bg;
-    }
     %appearance_focused-list-item {
         color: $list-item-text;
         background-color: $list-item-bg;
         box-shadow: $list-item-focused-shadow;
+    }
+    %appearance_hovered-list-item {
+        color: $list-item-hovered-text;
+        background-color: $list-item-hovered-bg;
     }
     %appearance_selected-list-item {
         color: $list-item-selected-text;
