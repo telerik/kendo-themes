@@ -51,8 +51,17 @@
             .k-icon,
             .k-image {
                 margin: 0 ($button-padding-x / 2) 0 (-$button-padding-x / 2);
+
+            }
+
+            &[dir='rtl'] {
+                .k-icon,
+                .k-image {
+                    margin: 0 (-$button-padding-x / 2) 0 ($button-padding-x / 2);
+                }
             }
         }
+
         &-icon {
             width: $form-line-height-em;
             height: $form-line-height-em;
