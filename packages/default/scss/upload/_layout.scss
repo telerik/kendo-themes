@@ -95,6 +95,7 @@
             position: relative;
             padding: $button-padding-y $button-padding-x;
             font-size: $font-size;
+            font-weight: normal;
             line-height: $form-line-height;
 
             >.k-icon {
@@ -160,7 +161,8 @@
         .k-upload-status {
             position: absolute;
             right: $padding-x;
-            top: $padding-x;
+            top: $padding-y * 2;
+            margin-top: $padding-y;
 
             .k-button {
                 padding: 0;
@@ -174,6 +176,19 @@
 
         .k-upload-pct {
             margin-right: $padding-x-sm;
+            font-weight: normal;
+        }
+
+        ~.k-clear-selected,
+        ~.k-upload-selected {
+            margin-top: -$padding-y;
+            border: 0;
+        }
+
+        ~.k-upload-selected {
+            border-left-width: 1px;
+            border-left-style: solid;
+            margin-left: -1px;
         }
     }
 
@@ -189,13 +204,18 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        margin-top: $padding-y;
     }
 
     .k-file-size,
     .k-file-information,
     .k-file-validation-message {
-        font-size: $font-size-sm;
-        line-height: $line-height-sm;
+        font-size: $font-size-sm * .786;
+        line-height: 1em;
+    }
+
+    .k-file-information {
+        text-indent: 1px;
     }
 
     .k-file-extension-wrapper,
@@ -203,6 +223,7 @@
     .k-file-invalid-extension-wrapper,
     .k-multiple-files-invalid-extension-wrapper {
         position: absolute;
+        top: $padding-x;
         width: $uploaded-image-width;
         height: $uploaded-image-height;
         border-width: $uploaded-image-border;
@@ -233,6 +254,7 @@
         margin-left: calc(#{$padding-x} + #{$uploaded-image-width} + #{$padding-x * 2});
         margin-right: calc(#{$padding-x * 6} + #{$icon-size} + #{$padding-x-sm});
         overflow: hidden;
+        min-height: $uploaded-image-height + ($uploaded-image-border * 2);
     }
 
     .k-file-extension-wrapper::before,

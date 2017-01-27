@@ -12,7 +12,7 @@
     $upload-success-bg: $success !default;
     $upload-disabled-text: darken($widget-bg, 27%) !default;
     $upload-disabled-border: darken($widget-bg, 27%) !default;
-    $upload-focused-status-box-shadow: 0 0 0 2px darken($input-bg, 6%) !default;
+    $upload-focused-status-box-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
     .k-upload {
         background-color: $upload-bg;
@@ -42,6 +42,11 @@
                     box-shadow: $upload-focused-status-box-shadow;
                 }
             }
+
+            .k-upload-pct {
+                opacity: .65;
+            }
+
         }
 
         .k-file-progress {
