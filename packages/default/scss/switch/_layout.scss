@@ -62,7 +62,7 @@ $switch-handle-size: (.8 * $switch-size) !default;
 
     .k-switch-label-off {
         left: $switch-handle-size;
-        margin-left: calc($padding-y - 1px);
+        margin-left: calc(#{$padding-y} - 1px);
     }
 
     .k-switch-label-on {
