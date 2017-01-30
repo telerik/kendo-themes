@@ -58,7 +58,7 @@ module.exports = require('@telerik/kendo-common-tasks')
         entry: entry,
         plugins: inDevelopment ? [ new BrowserSync() ] : [],
         output: {
-            path: path.join(__dirname, 'dist'),
+            path: 'dist',
             publicPath: '/dist/',
             filename: '[name].js'
         }
