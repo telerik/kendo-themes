@@ -74,7 +74,7 @@
             padding: $input-padding-y $input-padding-x-sm;
             width: 70%;
             border: 0;
-            font-family: Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace;
+            font-family: $font-family-monospace;
             line-height: $form-line-height;
         }
 
