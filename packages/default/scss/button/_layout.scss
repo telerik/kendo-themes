@@ -28,8 +28,9 @@
         }
 
         &::-moz-focus-inner {
-            border: 0;
             padding: 0;
+            border: 0;
+            outline: 0;
         }
 
         &:hover,
@@ -38,7 +39,8 @@
         }
 
         .k-icon,
-        .k-image {
+        .k-image,
+        .k-sprite {
             color: inherit;
             align-self: center;
         }
@@ -49,14 +51,16 @@
             overflow: visible; // IE9
 
             .k-icon,
-            .k-image {
+            .k-image,
+            .k-sprite {
                 margin: 0 ($button-padding-x / 2) 0 (-$button-padding-x / 2);
 
             }
 
             &[dir='rtl'] {
                 .k-icon,
-                .k-image {
+                .k-image,
+                .k-sprite {
                     margin: 0 (-$button-padding-x / 2) 0 ($button-padding-x / 2);
                 }
             }
@@ -126,6 +130,7 @@
         }
     }
 
+
     //DropDown Button
     .k-dropdown-button {
         &.k-state-focused,
@@ -137,12 +142,6 @@
             border-width: 0;
             display: inline-block;
         }
-    }
-
-    // Bare button
-    .k-button-bare {
-        user-select: none;
-        text-decoration: none;
     }
 
 
@@ -185,6 +184,7 @@
             height: auto;
         }
     }
+
 
     //SplitButton
     .k-split-button.k-button-group.k-state-focused {
