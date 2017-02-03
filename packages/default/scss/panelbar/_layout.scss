@@ -94,7 +94,8 @@
             }
         }
 
-        &[dir='rtl'] {
+        &[dir='rtl'],
+        .k-rtl & {
             .k-panelbar-expand,
             .k-panelbar-collapse {
                 right: auto;
