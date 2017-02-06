@@ -3,7 +3,8 @@ $font-size: 14px !default;
 $font-family: inherit !default;
 $font-family-monospace:  Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
 
-$font-size-sm: 12px !default; // .85em?
+$font-size-xs: 10px !default;
+$font-size-sm: 12px !default;
 $font-size-lg: 16px !default;
 
 $line-height: (20 / 14) !default;
@@ -58,10 +59,6 @@ $list-item-padding-y: $padding-y !default;
 $nav-item-margin: 2px !default;
 $nav-item-padding-x: $padding-x-lg !default;
 $nav-item-padding-y: $padding-y-lg !default;
-
-// $table-alt-bg: $table-bg-accent !default;
-// $table-hover-bg: $table-bg-hover !default;
-// $table-active-bg: $table-bg-active !default;
 
 $cell-padding-x: $padding-x-sm !default;
 $cell-padding-y: $padding-y-sm !default;
@@ -159,11 +156,13 @@ $button-text: $base-text !default;
 $button-bg: $base-bg !default;
 $button-border: $base-border !default;
 $button-gradient: $base-gradient !default;
+$button-shadow: null !default;
 
 $button-hovered-text: $hover-text !default;
 $button-hovered-bg: $hover-bg !default;
 $button-hovered-border: $hover-border !default;
 $button-hovered-gradient: $hover-gradient !default;
+$button-hovered-shadow: null !default;
 
 $button-pressed-text: $selected-text !default;
 $button-pressed-bg: $selected-bg !default;
@@ -172,6 +171,7 @@ $button-pressed-gradient: none !default;
 $button-pressed-shadow: inset 0 0 0 2px rgba(0, 0, 0, .1) !default;
 
 $button-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .1) !default;
+
 
 // Primary button
 $primary-button-text: $accent-contrast !default;
@@ -201,10 +201,12 @@ $toolbar-gradient: null !default;
 $input-text: $panel-text !default;
 $input-bg: $panel-bg !default;
 $input-border: $button-border !default;
+$input-shadow: null !default;
 
 $input-hovered-text: $input-text !default;
 $input-hovered-bg: $input-bg !default;
 $input-hovered-border: $button-hovered-border !default;
+$input-hovered-shadow: null !default;
 
 $input-focused-text: $input-text !default;
 $input-focused-bg: $input-bg !default;
