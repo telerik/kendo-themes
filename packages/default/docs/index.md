@@ -36,7 +36,7 @@ The example below demonstrates how to include the complete CSS of the default th
     selector: 'my-app',
     styleUrls: [
         // load the default theme (use correct path to modules)
-        'node_modules/@progress/kendo-theme-default/dist/all.css'
+        '../../node_modules/@progress/kendo-theme-default/dist/all.css'
     ],
     template: `
         <h1>My First Kendo UI Angular 2 App</h1>
