@@ -1,14 +1,16 @@
 // Fonts
 $font-size: $font-size-base !default;
-$font-size-xs: $font-size-xs !default;
+$font-family: $font-family-base !default;
+$font-family-monospace:  $font-family-monospace !default;
 
+$font-size-xs: $font-size-xs !default;
 $font-size-sm: $font-size-sm !default;
 $font-size-lg: $font-size-lg !default;
 
 $line-height: $line-height-base !default;
 $line-height-sm: $line-height-sm !default;
 $line-height-lg: $line-height-lg !default;
-$line-height-em: $line-height * 1em !default;
+$line-height-em: $line-height * 1em;
 
 
 // Metrics
@@ -43,23 +45,33 @@ $button-padding-x: $btn-padding-x !default;
 $button-padding-y: $btn-padding-y !default;
 $button-padding-x-sm: $btn-padding-x-sm !default;
 $button-padding-y-sm: $btn-padding-y-sm !default;
+$button-calc-height: #{$form-line-height-em} + #{$button-padding-y * 2};
 
 $input-padding-x: $input-padding-x !default;
 $input-padding-y: $input-padding-y !default;
 $input-padding-x-sm: $input-padding-x-sm !default;
 $input-padding-y-sm: $input-padding-y-sm !default;
+$input-calc-height: #{$form-line-height-em} + #{$input-padding-y * 2};
 
 $list-item-padding-x: $dropdown-item-padding-x !default;
 $list-item-padding-y: 0 !default;
 
-$table-alt-bg: $table-bg-accent !default;
-$table-hover-bg: $table-bg-hover !default;
-$table-active-bg: $table-bg-active !default;
+$nav-item-margin: 0 !default;
+$nav-item-padding-x: $padding-x-lg !default;
+$nav-item-padding-y: $padding-y-lg !default;
 
 $cell-padding-x: $padding-x-sm !default;
 $cell-padding-y: $padding-y-sm !default;
 $cell-padding: $table-cell-padding !default;
 $cell-padding-sm: $table-sm-cell-padding !default;
+
+$window-padding-x: $modal-inner-padding !default;
+$window-padding-y: $modal-inner-padding !default;
+$window-titlebar-padding-x: $modal-header-padding !default;
+$window-titlebar-padding-y: $modal-header-padding !default;
+
+$zindex-popup: 1;
+$zindex-window: 2;
 
 $rgba-transparent: rgba( 0, 0, 0, 0 );
 
@@ -144,16 +156,21 @@ $button-text: $base-text !default;
 $button-bg: $base-bg !default;
 $button-border: $base-border !default;
 $button-gradient: null !default;
+$button-shadow: $btn-box-shadow !default;
 
 $button-hovered-text: $button-text !default;
 $button-hovered-bg: darken( $button-bg, 10% ) !default;
 $button-hovered-border: darken( $button-border, 12% ) !default;
 $button-hovered-gradient: null !default;
+$button-hovered-shadow: $btn-box-shadow !default;
 
 $button-pressed-text: $button-text !default;
 $button-pressed-bg: darken( $button-bg, 17% ) !default;
 $button-pressed-border: darken( $button-border, 25% ) !default;
 $button-pressed-gradient: null !default;
+$button-pressed-shadow: $btn-active-box-shadow !default;
+
+$button-focused-shadow: $btn-focus-box-shadow !default;
 
 
 // Primary button
@@ -184,14 +201,17 @@ $toolbar-gradient: null !default;
 $input-text: $gray !default;
 $input-bg: $body-bg !default;
 $input-border: $button-border !default;
+$input-shadow: null !default;
 
 $input-hovered-text: $input-text !default;
 $input-hovered-bg: $input-bg !default;
 $input-hovered-border: $hovered-border !default;
+$input-hovered-shadow: null !default;
 
 $input-focused-text: $input-text !default;
 $input-focused-bg: $input-bg !default;
 $input-focused-border: $selected-border !default;
+$input-focused-shadow: $input-box-shadow-focus !default;
 
 
 // Node
@@ -220,6 +240,13 @@ $list-item-hovered-bg: $node-hovered-bg !default;
 
 $list-item-selected-text: $node-selected-text !default;
 $list-item-selected-bg: $node-selected-bg !default;
+
+$list-item-focused-shadow: null;
+
+
+// Link
+$link-text: $link-color !default;
+$link-hover-text: $link-hover-color !default;
 
 
 // Chart
