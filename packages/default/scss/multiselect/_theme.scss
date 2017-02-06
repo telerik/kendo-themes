@@ -9,7 +9,7 @@
             @include border-radius( $border-radius * .75 );
 
             .k-icon {
-                opacity: .5;
+                opacity: .6;
                 cursor: pointer;
             }
 
@@ -43,6 +43,12 @@
 
         .k-i-loading {
             background-color: $input-bg;
+        }
+    }
+
+    .k-multiselect-wrap {
+        > .k-readonly {
+            opacity: .6;
         }
     }
 
