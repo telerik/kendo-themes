@@ -1,11 +1,1 @@
-@include exports("scrollview/layout") {
-
-    .k-scrollview {}
-
-
-    .k-scrollview {
-        margin-collapse: separate;
-        user-select: none;
-    }
-
-}
+@import "../../node_modules/@progress/kendo-theme-default/scss/scrollview/layout";
