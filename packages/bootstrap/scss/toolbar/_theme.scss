@@ -1,17 +1,1 @@
-@include exports("toolbar/theme") {
-
-    // Theme
-    .k-toolbar {
-
-        // Split button
-        .k-split-button {
-            .k-button {
-                @include border-radius( $border-radius 0 0 $border-radius );
-            }
-            .k-split-button-arrow {
-                @include border-radius( 0 $border-radius $border-radius 0 );
-            }
-        }
-
-    }
-}
+@import "../node_modules/@progress/kendo-theme-default/scss/toolbar/theme";
