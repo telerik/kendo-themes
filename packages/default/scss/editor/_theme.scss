@@ -30,6 +30,7 @@
         a.k-tool {
             @include appearance( button );
             background-image: none;
+            background-color: transparent;
 
             &:hover,
             &.k-state-hover {

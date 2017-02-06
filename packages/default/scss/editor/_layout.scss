@@ -1,7 +1,5 @@
 @include exports("editor/layout") {
 
-    $ct-cell-side-length: 20px !default;
-
     // Base
     .k-editor {
         border-collapse: separate;
@@ -112,11 +110,13 @@
     }
 
 
+    $ct-cell-size: 20px;
+
     // Insert table
     .k-ct-popup {
         box-sizing: border-box;
-        width: $ct-cell-side-length * 10 - ($ct-cell-side-length / 2);
-        padding: $ct-cell-side-length / 4;
+        width: $ct-cell-size * 10 - ($ct-cell-size / 2);
+        padding: $ct-cell-size / 4;
 
         .k-editor-toolbar {
             text-align: center;
@@ -127,9 +127,9 @@
         }
 
         .k-ct-cell {
-            margin: $padding-y-sm / 2;
-            width: $ct-cell-side-length;
-            height: $ct-cell-side-length;
+            margin: 1px;
+            width: $ct-cell-size;
+            height: $ct-cell-size;
             box-sizing: border-box;
             border: 1px solid;
             border-color: inherit;

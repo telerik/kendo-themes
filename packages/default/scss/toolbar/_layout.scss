@@ -117,35 +117,32 @@
     .k-overflow-container {
 
         // Group
-        .k-overflow-group {
-            padding-bottom: $spacer-y / 2;
-            margin-bottom: $spacer-y / 2;
-            border-width: 0 0 1px;
-            border-style: solid;
-            border-color: inherit;
-            flex-direction: column;
-
-            .k-button {
-                margin: 0;
-                border-radius: 0;
-            }
+        .k-overflow-tool-group {
+            display: block;
         }
 
         // Items
         .k-overflow-button {
-            padding: $list-item-padding-y $list-item-padding-x;
+            padding: $list-item-padding-y ($list-item-padding-x * 4) $list-item-padding-y ($list-item-padding-x / 2);
             border-width: 0;
             border-radius: 0;
-            display: flex;
+            display: block;
+            margin: 0;
+            text-align: left;
+
+            .k-icon {
+                margin: 0 $spacer-y / 2;
+            }
         }
 
         // Hidden items
+        .k-tool.k-state-disabled,
         .k-overflow-hidden {
             display: none;
         }
     }
-    .k-split-container {
 
+    .k-split-container {
         // Items
         .k-button {
             padding: $list-item-padding-y $list-item-padding-x;
