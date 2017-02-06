@@ -5,7 +5,6 @@
 
         .k-dropdown-wrap {
             @include appearance( button );
-            @include border-radius( $border-radius );
         }
         .k-state-hover { @include appearance( hovered-button ); }
         .k-state-active { @include appearance( active-button ); }
