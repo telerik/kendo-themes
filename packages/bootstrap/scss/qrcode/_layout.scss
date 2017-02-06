@@ -1,7 +1,1 @@
-@include exports("qrcode/layout") {
-
-    .k-qrcode {
-        display: inline-block;
-    }
-
-}
+@import "../../node_modules/@progress/kendo-theme-default/scss/qrcode/layout";
