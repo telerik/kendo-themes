@@ -65,7 +65,7 @@
             margin-top: -.5em;
             position: absolute;
             top: 50%;
-            right: $header-padding-x / 2;
+            right: $header-padding-x;
         }
 
         .k-link > .k-image,
@@ -99,7 +99,7 @@
             .k-panelbar-expand,
             .k-panelbar-collapse {
                 right: auto;
-                left: 4px;
+                left: $header-padding-x;
             }
         }
     }

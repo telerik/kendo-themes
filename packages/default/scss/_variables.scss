@@ -99,6 +99,9 @@ $selected-bg: $accent !default;
 $selected-border: rgba( black, .1 ) !default;
 $selected-gradient: none !default;
 
+$selected-hover-color: $selected-text !default;
+$selected-hover-bg: mix( $selected-bg, black, 92) !default;
+
 $transition: background-color .2s ease !default;
 
 $error: #f5503e !default;
@@ -248,7 +251,7 @@ $list-item-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 // Link
 $link-text: $accent !default;
-$link-hover-text: darken($accent, 10) !default;
+$link-hover-text: desaturate(darken($accent, 5), 25) !default;
 
 
 // Chart

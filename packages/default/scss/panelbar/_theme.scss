@@ -1,52 +1,66 @@
 @include exports('panelbar/theme') {
-    $panelbar-text: $widget-text !default;
-    $panelbar-border: $widget-border;
-    $panelbar-header-text: $accent !default;
-    $panelbar-header-bg: $widget-bg !default;
-    $panelbar-header-hover-text: darken(desaturate(adjust-hue($accent, -.056), 20.6186), 5.2941) !default;
-    $panelbar-expanded-bg: darken(saturate(adjust-hue($widget-bg, 0), 0), 2.3529) !default;
-    $panelbar-selected-hover-bg: blend-multiply($accent, darken($widget-bg, 8%)) !default;
-    $panelbar-focused-box-shadow: inset 0 0 0 2px darken($base-bg, 8%) !default;
-    $panelbar-selected-focused-box-shadow: inset 0 0 0 2px blend-multiply($accent, darken($widget-bg, 8%)) !default;
-    $panelbar-selected-focused-hover-box-shadow: inset 0 0 0 2px blend-multiply($accent, darken($widget-bg, 14%)) !default;
+    $panelbar-root-hover-bg: darken($widget-bg, 5%);
 
     .k-panelbar {
-        //@include appearance( panel );
         border-color: $panel-border;
         color: $panel-text;
         background-color: $panel-bg;
-
 
         .k-content {
             color: $base-text;
             background-color: $base-bg;
         }
 
-
         // Root
         > .k-item {
-
             > .k-link {
                 color: $link-text;
+
+                .k-icon {
+                    color: $base-text;
+                }
             }
 
             > .k-link:hover,
             > .k-link.k-state-hover {
                 color: $link-hover-text;
+                background-color: $panelbar-root-hover-bg;
             }
 
-            > .k-link.k-state-selected,
+            > .k-link.k-state-selected:not(.k-state-expanded),
+            > .k-link.k-state-selected:not(.k-state-active) {
+                @include appearance( selected-node );
+
+                .k-icon {
+                    color: $selected-text;
+                }
+
+                &:hover,
+                &.k-state-hover {
+                    color: $selected-hover-color;
+                    background-color: $selected-hover-bg;
+                }
+            }
+
+            &.k-state-expanded > .k-link,
             &.k-state-active > .k-link {
-                color: $base-text;
-                background-color: $base-bg;
+                @include appearance( node );
+                font-weight: 500;
+
+                .k-icon {
+                    color: $base-text;
+                }
+
+                &:hover,
+                &.k-state-hover {
+                    @include appearance( hovered-node );
+                }
             }
 
             > .k-link.k-state-focused {
-                box-shadow: inset 0 0 0 2px $widget-border;
+                box-shadow: $list-item-focused-shadow;
             }
-
         }
-
 
         // Sub
         .k-group {
@@ -56,14 +70,19 @@
             > .k-item > .k-link:hover,
             > .k-item > .k-link.k-state-hover {
                 @include appearance( hovered-node );
+
+                &.k-state-selected {
+                    color: $selected-hover-color;
+                    background-color: $selected-hover-bg;
+                }
             }
 
             > .k-item > .k-link.k-state-selected {
-                @include appearance( hovered-node );
+                @include appearance( selected-node );
             }
 
             > .k-item > .k-link.k-state-focused {
-                box-shadow: inset 0 0 0 2px $widget-border;
+                box-shadow: $list-item-focused-shadow;
             }
 
         }
