@@ -61,6 +61,12 @@
                 color: $selected-text;
             }
         }
+
+        td.k-state-focused,
+        th.k-state-focused {
+            box-shadow: $list-item-focused-shadow;
+        }
+
         .k-grid-filter,
         .k-header-column-menu,
         .k-hierarchy-cell .k-icon {
