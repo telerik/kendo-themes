@@ -1,6 +1,24 @@
 @include exports("scroller/layout") {
-    // Pull to refresh
 
+    // Layout
+    .km-scrollview,
+    .km-scroll-container {
+        user-select: none;
+        margin-collapse: separate;
+    }
+    .km-scroll-wrapper {
+        position: relative;
+    }
+    .km-scroll-header {
+        position: absolute;
+        z-index: 1001;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+
+    // Pull to refresh
     .km-scroller-pull {
         width: 100%;
         display: block;
@@ -10,13 +28,11 @@
         text-align: center;
         transform: translate3d(0, -3em, 0);
     }
-
     .km-scroller-pull .km-template {
         display: inline-block;
         min-width: 200px;
         text-align: left;
     }
-
     .km-load-more .km-icon,
     .km-widget .km-scroller-pull .km-icon {
         display: inline-block;
@@ -28,17 +44,15 @@
         transform: rotate(0deg);
         transition: transform 300ms linear;
     }
-
     .km-widget .km-scroller-release .km-icon {
         transform: rotate(180deg);
     }
-
     .km-widget .km-scroller-refresh .km-icon {
         transition: none;
     }
 
-    // Scroller
 
+    // Scrollbar
     .km-touch-scrollbar {
         position: absolute;
         visibility: hidden;
@@ -50,34 +64,15 @@
         transform-origin: 0 0;
         transition: opacity .3s linear;
     }
-
     .km-vertical-scrollbar {
         height: 100%;
         right: 2px;
         top: 0;
     }
-
     .km-horizontal-scrollbar {
         width: 100%;
         left: 0;
         bottom: 2px;
     }
 
-    .km-scrollview,
-    .km-scroll-container {
-        user-select: none;
-        margin-collapse: separate;
-    }
-
-    .km-scroll-wrapper {
-        position: relative;
-    }
-
-    .km-scroll-header {
-        position: absolute;
-        z-index: 1001;
-        width: 100%;
-        top: 0;
-        left: 0;
-    }
 }
