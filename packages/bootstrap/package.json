@@ -12,6 +12,7 @@
     "lint": "echo 'TODO: add lint'",
     "start": "webpack-dev-server --hot --inline",
     "build": "webpack --optimize-minimize --bail",
+    "watch": "webpack --watch",
     "test": "npm run lint && npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },

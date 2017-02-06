@@ -4,4 +4,5 @@ dist/*
 tmp
 .tmp
 .DS_Store
-yarn.lock
+yarn.locknpm-debug.log
+npm-debug.log
