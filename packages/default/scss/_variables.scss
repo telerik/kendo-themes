@@ -8,9 +8,9 @@ $font-size-sm: 12px !default;
 $font-size-lg: 16px !default;
 
 $line-height: (20 / 14) !default;
+$line-height-sm: $line-height-sm !default;
+$line-height-lg: $line-height-lg !default;
 $line-height-em: $line-height * 1em;
-$form-line-height: $line-height !default;
-$form-line-height-em: $form-line-height * 1em;
 
 
 // Metrics
@@ -38,7 +38,7 @@ $popup-padding-y: 0 !default;
 $header-padding-x: $padding-x !default;
 $header-padding-y: $padding-y !default;
 
-$form-line-height: $btn-line-height !default;
+$form-line-height: $line-height !default;
 $form-line-height-em: $form-line-height * 1em !default;
 
 $button-padding-x: $padding-x !default;
