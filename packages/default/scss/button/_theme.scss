@@ -2,7 +2,7 @@
 $button-focused-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
 $button-active-box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
 
-$primary-focused-box-shadow: 0 3px 4px 0 rgba($accent, .06) !default;
+$primary-focused-box-shadow: 0 3px 4px 0 rgba($accent, .4) !default;
 
 $buttongroup-button-focused-box-shadow: inset 0 0 0 2px darken($base-bg, 5%) !default;
 $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary-button-bg, 2%) !default;
@@ -12,6 +12,7 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
     // Default button
     .k-button {
         @include appearance( button );
+        background-clip: padding-box;
 
         // Hover state
         &:hover,
