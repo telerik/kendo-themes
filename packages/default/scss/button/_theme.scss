@@ -1,12 +1,3 @@
-// TODO: button variables
-$button-focused-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
-$button-active-box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
-
-$primary-focused-box-shadow: 0 3px 4px 0 rgba($accent, .4) !default;
-
-$buttongroup-button-focused-box-shadow: inset 0 0 0 2px darken($base-bg, 5%) !default;
-$buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary-button-bg, 2%) !default;
-
 @include exports('button/theme') {
 
     // Default button
@@ -24,13 +15,13 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
         &:active,
         &.k-state-active {
             @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
-            box-shadow: $button-active-box-shadow;
+            box-shadow: inset $button-pressed-shadow;
         }
 
         // Focused state
         &:focus,
         &.k-state-focused {
-            box-shadow: $button-focused-box-shadow;
+            box-shadow: $button-focused-shadow;
         }
     }
 
@@ -54,7 +45,7 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
         // Focused state
         &:focus,
         &.k-state-focused {
-            box-shadow: $primary-focused-box-shadow;
+            box-shadow: $primary-button-focused-shadow;
         }
 
     }
@@ -63,12 +54,12 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
     .k-dropdown-button {
         &:focus > .k-button,
         &.k-state-focused > .k-button {
-            box-shadow: $button-focused-box-shadow;
+            box-shadow: $button-focused-shadow;
         }
 
         &:active > .k-button:not(:disabled),
         &.k-state-active > .k-button:not(:disabled) {
-            box-shadow: $button-active-box-shadow;
+            box-shadow: inset $button-pressed-shadow;
         }
 
         .k-widget {
@@ -96,14 +87,14 @@ $buttongroup-selected-button-focused-box-shadow: inset 0 0 0 2px darken($primary
 
     //SplitButton
     .k-split-button.k-state-focused {
-        box-shadow: $button-focused-box-shadow;
+        box-shadow: $button-focused-shadow;
     }
 
     .k-split-button.k-button-group .k-button {
         &:active,
         &.k-state-active {
             @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
-            box-shadow: $button-active-box-shadow;
+            box-shadow: inset $button-pressed-shadow;
         }
     }
 }

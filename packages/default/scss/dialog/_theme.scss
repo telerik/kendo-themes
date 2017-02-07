@@ -59,7 +59,7 @@
             }
 
             &:active {
-                box-shadow: $button-active-box-shadow;
+                box-shadow: $button-pressed-shadow;
             }
 
             &:not(.k-primary) {

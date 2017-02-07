@@ -4,7 +4,7 @@ $dialog-button-background: $widget-bg !default;
 $dialog-button-hover-background: $button-hovered-bg !default;
 $dialog-button-focus-box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .1) !default;
 $dialog-button-active-gradient: $button-pressed-gradient;
-$dialog-button-active-box-shadow: $button-active-box-shadow;
+$dialog-button-active-box-shadow: $button-pressed-shadow;
 
 $dialog-primary-color: $accent !default;
 $dialog-primary-hover-color: $selected-text !default;
