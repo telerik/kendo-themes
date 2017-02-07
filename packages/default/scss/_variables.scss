@@ -262,11 +262,22 @@ $link-hover-text: desaturate(darken($accent, 5), 25) !default;
 
 
 // Chart
+/// First color of chart series
 $series-a: #ff6358 !default;
+
+/// Second color of chart series
 $series-b: #ffd246 !default;
+
+/// Third color of chart series
 $series-c: #78d237 !default;
+
+/// Fourth color of chart series
 $series-d: #28b4c8 !default;
+
+/// Fifth color of chart series
 $series-e: #2d73f5 !default;
+
+/// Sixth color of chart series
 $series-f: #aa46be !default;
 
 $chart-font-size: $font-size !default;

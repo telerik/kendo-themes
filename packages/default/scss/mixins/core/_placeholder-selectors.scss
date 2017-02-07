@@ -1,142 +1,142 @@
 @include exports( "placeholder-selectors" ) {
 
-    /// Box sizing `border-box`
+    // Box sizing `border-box`
     %border-box {
         box-sizing: border-box;
     }
 
-    /// Box sizing `content-box`
+    // Box sizing `content-box`
     %content-box {
         box-sizing: content-box;
     }
 
-    /// Display `none`
+    // Display `none`
     %display-none {
         display: none;
     }
 
-    /// Display `block`
+    // Display `block`
     %display-block {
         display: block;
     }
 
-    /// Display `inline-block`
+    // Display `inline-block`
     %display-inline-block {
         display: inline-block;
     }
 
-    /// Display `inline`
+    // Display `inline`
     %display-inline {
         display: inline;
     }
 
-    /// Display `flex`
+    // Display `flex`
     %display-flex {
         display: flex;
     }
 
-    /// Display `inline-flex`
+    // Display `inline-flex`
     %display-flex {
         display: inline-flex;
     }
 
-    /// Position `static`
+    // Position `static`
     %position-static {
         position: static;
     }
 
-    /// Position `relative`
+    // Position `relative`
     %position-relative {
         position: relative;
     }
 
-    /// Position `absolute`
+    // Position `absolute`
     %position-absolute {
         position: absolute;
     }
 
-    /// Position `fixed`
+    // Position `fixed`
     %position-fixed {
         position: fixed;
     }
 
-    /// Overflow `hidden`
+    // Overflow `hidden`
     %overflow-hidden {
         overflow: hidden;
     }
 
-    /// Overflow `auto`
+    // Overflow `auto`
     %overflow-auto {
         overflow: auto;
     }
 
-    /// Overflow `scroll`
+    // Overflow `scroll`
     %overflow-scroll {
         overflow: scroll;
     }
 
-    /// Overflow X `auto`
+    // Overflow X `auto`
     %overflow-x-auto {
         @extend %overflow-hidden;
         overflow-x: auto;
     }
 
-    /// Overflow Y `auto`
+    // Overflow Y `auto`
     %overflow-y-auto {
         @extend %overflow-hidden;
         overflow-y: auto;
     }
 
-    /// Text align `left`
+    // Text align `left`
     %text-align-left,
     %text-left {
         text-align: left;
     }
 
-    /// Text align `center`
+    // Text align `center`
     %text-align-center,
     %text-center {
         text-align: center;
     }
 
-    /// Text align `right`
+    // Text align `right`
     %text-align-right,
     %text-right {
         text-align: right;
     }
 
-    /// Text align `justify`
+    // Text align `justify`
     %text-align-justify,
     %text-justify {
         text-align: justify;
     }
 
-    /// Float `left`
+    // Float `left`
     %float-left {
         float: left;
     }
 
-    /// Float `right`
+    // Float `right`
     %float-right {
         float: right;
     }
 
-    /// Vertical align `middle`
+    // Vertical align `middle`
     %vertical-align-middle {
         vertical-align: middle;
     }
 
-    /// Cursor `pointer`
+    // Cursor `pointer`
     %cursor-pointer {
         cursor: pointer;
     }
 
-    /// Cursor `default`
+    // Cursor `default`
     %cursor-default {
         cursor: default;
     }
 
-    /// Text Decoration
+    // Text Decoration
     %text-decoration-none {
         text-decoration: none;
     }
@@ -145,17 +145,17 @@
         text-decoration: underline;
     }
 
-    /// Font weight `normal`
+    // Font weight `normal`
     %font-weight-normal {
         font-weight: normal;
     }
 
-    /// Font weight `bold`
+    // Font weight `bold`
     %font-weight-bold {
         font-weight: bold;
     }
 
-    /// Text overflow
+    // Text overflow
     %ellipsis {
         overflow: hidden;
         text-overflow: ellipsis;
@@ -163,7 +163,7 @@
         word-wrap: break-word;
     }
 
-    /// Poiter events
+    // Poiter events
     %pointer-events-none {
         pointer-events: none;
     }
