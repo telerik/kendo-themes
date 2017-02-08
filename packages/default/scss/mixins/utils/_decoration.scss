@@ -1,4 +1,4 @@
-/// Linear gradient
+// Linear gradient
 @mixin linear-gradient( $gradient: null ) {
     @if $gradient {
         @if $gradient == none {
@@ -10,7 +10,7 @@
     }
 }
 
-/// Box shadow
+// Box shadow
 @mixin box-shadow( $shadow: null ) {
     @if $shadow {
         box-shadow: $shadow;

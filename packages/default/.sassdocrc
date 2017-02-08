@@ -1,4 +1,4 @@
 {
-    "dest": "docs",
+    "dest": ".tmp",
     "theme": "build/sassdoc-theme.js"
 }

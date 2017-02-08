@@ -286,12 +286,16 @@ $chart-font-size-md: 12px !default;
 $chart-font-size-lg: 16px !default;
 
 $chart-inactive: rgba( $text-color, .5 ) !default;
+/// The color of the chart grid lines (major)
+/// @group charts
 $chart-major-lines: rgba(0, 0, 0, .08) !default;
+/// The color of the chart grid lines (minor)
+/// @group charts
 $chart-minor-lines: rgba(0, 0, 0, .04) !default;
 
 $chart-area-opacity: .8 !default;
 
-//Icons
+// Icons
 $icon-size: 16px;
 $icon-size-lg: 32px;
 $icon-spacing: 4px !default;
