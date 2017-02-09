@@ -42,6 +42,7 @@
     .k-datetimepicker {
         .k-select {
             //width: $line-height-em * 2;
+            // TODO: use calc or theme
             width: 57px; /* (4*$padding-y) + 1px(separator) + 32px  (2*icons-width) */
             box-sizing: border-box;
             padding: 0 $padding-y-lg;
