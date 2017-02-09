@@ -1,12 +1,19 @@
 // Fonts
+
+/// Font size across all components
 $font-size: 14px !default;
+
+/// Font family across all components
 $font-family: inherit !default;
+
+/// Font family for monospaced text, used in code snippets
 $font-family-monospace:  Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
 
 $font-size-xs: 10px !default;
 $font-size-sm: 12px !default;
 $font-size-lg: 16px !default;
 
+/// Line height used along with $font-size
 $line-height: (20 / 14) !default;
 $line-height-sm: 1.2 !default;
 $line-height-lg: 1.5 !default;
@@ -25,6 +32,7 @@ $padding-y-sm: $padding-y / 2 !default;
 $padding-x-lg: $padding-x * 1.5 !default;
 $padding-y-lg: $padding-y * 1.5 !default;
 
+/// Border radius for all components
 $border-radius: 2px !default;
 $border-radius-sm: 1px !default;
 $border-radius-lg: 4px !default;
@@ -84,16 +92,25 @@ $rgba-transparent: rgba( 0, 0, 0, 0 );
 
 
 // Theme colors
+/// Color that focuses the user attention
+/// Used for primary buttons and across the theme
 $accent: #ff6358 !default;
+
+/// Color used along with the accent color denoted by $accent.
+/// Used to provide contrast between the background and foreground color
 $accent-contrast: #ffffff !default;
 
 $text-color: #656565 !default;
 $bg-color: #ffffff !default;
 $border-color: rgba( black, .08 ) !default;
 
+/// Text color of components' chrome area
 $base-text: #656565 !default;
+/// Color of chrome area of components
 $base-bg: #f6f6f6 !default;
+/// Color of borders of the components' chrome area
 $base-border: rgba( black, .08 ) !default;
+/// Gradient of components' chrome area
 $base-gradient: $base-bg, darken( $base-bg, 2% ) !default;
 
 $hovered-text: #656565 !default;

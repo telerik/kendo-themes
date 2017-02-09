@@ -3,7 +3,7 @@
 $imported-modules: () !default;
 
 /// Outputs a module once, no matter how many times it is included.
-/// @access private
+/// @access public
 /// @param {String} $name - Name of exported module
 /// @require $imported-modules
 @mixin exports($name) {

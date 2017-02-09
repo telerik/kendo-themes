@@ -1,4 +1,8 @@
 {
     "dest": ".tmp",
-    "theme": "build/sassdoc-theme.js"
+    "theme": "build/sassdoc-theme.js",
+    "groups": {
+        "charts": "Charts",
+        "undefined": "Common"
+    }
 }
