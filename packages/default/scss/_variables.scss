@@ -93,7 +93,7 @@ $rgba-transparent: rgba( 0, 0, 0, 0 );
 
 // Theme colors
 /// Color that focuses the user attention
-/// Used for primary buttons and across the theme
+/// Used for primary buttons and for elements of primary importance across the theme
 $accent: #ff6358 !default;
 
 /// Color used along with the accent color denoted by $accent.
@@ -326,27 +326,27 @@ $link-hover-text: desaturate(darken($accent, 5), 25) !default;
 
 
 // Chart
-/// First color of chart series
+/// Color of first series
 /// @group charts
 $series-a: #ff6358 !default;
 
-/// Second color of chart series
+/// Color of second series
 /// @group charts
 $series-b: #ffd246 !default;
 
-/// Third color of chart series
+/// Color of third series
 /// @group charts
 $series-c: #78d237 !default;
 
-/// Fourth color of chart series
+/// Color of fourth series
 /// @group charts
 $series-d: #28b4c8 !default;
 
-/// Fifth color of chart series
+/// Color of fifth series
 /// @group charts
 $series-e: #2d73f5 !default;
 
-/// Sixth color of chart series
+/// Color of sixth series
 /// @group charts
 $series-f: #aa46be !default;
 
