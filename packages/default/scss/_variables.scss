@@ -89,10 +89,10 @@ $base-bg: #f6f6f6 !default;
 $base-border: rgba( black, .08 ) !default;
 $base-gradient: $base-bg, darken( $base-bg, 2% ) !default;
 
-$hover-text: #656565 !default;
-$hover-bg: #ededed !default;
-$hover-border: rgba( black, .15 ) !default;
-$hover-gradient: $hover-bg, darken( $hover-bg, 2% ) !default;
+$hovered-text: #656565 !default;
+$hovered-bg: #ededed !default;
+$hovered-border: rgba( black, .15 ) !default;
+$hovered-gradient: $hovered-bg, darken( $hovered-bg, 2% ) !default;
 
 $selected-text: $accent-contrast !default;
 $selected-bg: $accent !default;
@@ -143,8 +143,8 @@ $header-bg: saturate( $base-bg, 4 ) !default;
 $header-border: darken( $header-bg, 2 ) !default;
 $header-gradient: null !default;
 
-$header-hovered-text: $hover-text !default;
-$header-hovered-bg: $hover-bg !default;
+$header-hovered-text: $hovered-text !default;
+$header-hovered-bg: $hovered-bg !default;
 $header-hovered-border: darken( $header-hovered-bg, 2 ) !default;
 $header-hovered-gradient: null !default;
 
@@ -161,10 +161,10 @@ $button-border: $base-border !default;
 $button-gradient: $base-gradient !default;
 $button-shadow: null !default;
 
-$button-hovered-text: $hover-text !default;
-$button-hovered-bg: $hover-bg !default;
-$button-hovered-border: $hover-border !default;
-$button-hovered-gradient: $hover-gradient !default;
+$button-hovered-text: $hovered-text !default;
+$button-hovered-bg: $hovered-bg !default;
+$button-hovered-border: $hovered-border !default;
+$button-hovered-gradient: $hovered-gradient !default;
 $button-hovered-shadow: null !default;
 
 $button-pressed-text: $selected-text !default;
@@ -225,9 +225,9 @@ $node-bg: $base-bg !default;
 $node-border: $base-border !default;
 $node-gradient: null !default;
 
-$node-hovered-text: $hover-text !default;
-$node-hovered-bg: $hover-bg !default;
-$node-hovered-border: $hover-border !default;
+$node-hovered-text: $hovered-text !default;
+$node-hovered-bg: $hovered-bg !default;
+$node-hovered-border: $hovered-border !default;
 $node-hovered-gradient: null !default;
 
 $node-selected-text: $selected-text !default;
@@ -240,8 +240,8 @@ $node-selected-gradient: null !default;
 $list-item-text: $text-color !default;
 $list-item-bg: $popup-bg !default;
 
-$list-item-hovered-text: $hover-text !default;
-$list-item-hovered-bg: $hover-bg !default;
+$list-item-hovered-text: $hovered-text !default;
+$list-item-hovered-bg: $hovered-bg !default;
 
 $list-item-selected-text: $selected-text !default;
 $list-item-selected-bg: $selected-bg !default;

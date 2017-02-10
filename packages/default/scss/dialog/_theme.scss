@@ -12,7 +12,7 @@
     $window-focused-box-shadow: 1px 1px 7px 1px $window-shadow-color !default;
 
     $dialog-normal-button-bg: $bg-color !default;
-    $dialog-normal-button-hover-bg: $hover-bg !default;
+    $dialog-normal-button-hover-bg: $hovered-bg !default;
     $dialog-primary-button-focus: rgba( $accent, .3 ) !default;
     $dialog-normal-button-focus-box-shadow: inset 0 0 0 2px $button-border !default;
     $dialog-primary-button-bg: $accent-contrast !default;

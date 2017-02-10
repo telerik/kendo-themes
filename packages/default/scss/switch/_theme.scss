@@ -2,7 +2,7 @@ $switch-on-color: $accent !default;
 $switch-off-color: $text-color !default;
 $switch-border-color: $border-color !default;
 $switch-border-radius: ($switch-size / 2) !default;
-$switch-hover-border-color: $hover-border !default;
+$switch-hover-border-color: $hovered-border !default;
 $switch-handle-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .06) !default;
 $switch-focus-box-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 
