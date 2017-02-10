@@ -1,12 +1,12 @@
 // TODO: extract or remove tooltip padding variables
-$tooltip-padding-y: 1em !default;
-$tooltip-padding-x: .5em !default;
+$tooltip-padding-y: $padding-y !default;
+$tooltip-padding-x: $padding-x !default;
 $tooltip-callout-size: 12px !default;
 
 @include exports("tooltip/layout") {
 
     .k-tooltip {
-        padding: $tooltip-padding-x;
+        padding: $tooltip-padding-y $tooltip-padding-x;
         border-width: 0;
         background-repeat: repeat-x;
         text-align: center;
@@ -19,6 +19,10 @@ $tooltip-callout-size: 12px !default;
             padding: ($padding-y-sm / 2) $padding-x-sm;
         }
         // sass-lint:enable mixins-before-declarations
+    }
+
+    .k-tooltip-closable {
+        padding: ($padding-y-lg * 2) ($padding-x * 2);
     }
 
     .k-tooltip-closable .k-tooltip-content {

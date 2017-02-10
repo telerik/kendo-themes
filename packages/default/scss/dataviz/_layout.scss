@@ -2,7 +2,7 @@
 $chart-tap-highlight-color: rgba(0, 0, 0, 0);
 
 $chart-font-size: $base-font-size !default;
-$chart-tooltip-font-size: .929em !default;
+$chart-tooltip-font-size: ($font-size * .929) !default;
 $chart-label-font-size: .857em !default;
 $chart-title-font-size: 1.143em !default;
 
@@ -55,8 +55,8 @@ $chart-title-font-size: 1.143em !default;
 
     .k-chart-tooltip {
         font-size: $chart-tooltip-font-size;
-        line-height: 1.154em;
-        padding: .308em .692em;
+        line-height: $line-height;
+        padding: $padding-y $padding-x;
     }
 
     .k-chart-tooltip th {
@@ -68,8 +68,8 @@ $chart-title-font-size: 1.143em !default;
     .k-chart-tooltip td {
         width: auto;
         text-align: left;
-        padding: .1em .308em;
-        line-height: 1.538em;
+        padding: $padding-y-sm $padding-x-sm;
+        line-height: $line-height;
         vertical-align: middle;
     }
 
@@ -77,11 +77,6 @@ $chart-title-font-size: 1.143em !default;
     .k-chart-shared-tooltip {
         border-width: 1px;
         border-style: solid;
-    }
-
-    .k-chart-shared-tooltip {
-        padding: 1em;
-        line-height: 1.538em;
     }
 
     .k-chart-shared-tooltip-marker {
