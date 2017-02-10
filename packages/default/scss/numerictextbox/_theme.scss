@@ -9,6 +9,10 @@
         }
         .k-select {
             @include appearance( button );
+
+            > .k-state-selected {
+                color: $selected-text;
+            }
         }
 
         // Hovered state

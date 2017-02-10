@@ -16,9 +16,17 @@
         .k-link {
             padding: 0 $button-padding-y;
             height: calc( (#{$button-calc-height}) / 2 );
+            overflow: hidden;
+
+            > .k-icon {
+                height: 100%;
+                overflow: hidden;
+
+                &.k-i-arrow-60-down {
+                    transform: translateY(-$padding-y);
+                }
+            }
         }
-
-
 
 
         // Compact
