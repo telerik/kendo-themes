@@ -1,116 +1,16 @@
 ---
-title: Overview
+title: Preview
 description: "Use themes to style the appearance of your project with Kendo UI for Angular 2."
-slug: themesandstyles_kendouiforangular
+slug: preview_kendothemedefault_kendouiforangular
 position: 1
 ---
 
-# Themes & Styling
+# Preview
 
-Kendo UI for Angular 2 provides two main options to include the Kendo UI theme in your project.
+Components styled with the Default theme for Kendo UI for Angular.
 
-You can either use a precompiled theme that styles all components or load the theme source files through Webpack to modify and customize its styles.
+<style>
+.demo-embed .runner { height: 1000px; }
+</style>
 
-## Installation
-
-To start using a theme, install it through npm.
-
-```sh
-npm install --save @progress/kendo-theme-default
-```
-
-## Styling Options
-
-Currently, the available themes are:
-
-- Default - `@progress/kendo-theme-default`
-
-After its installation, the theme needs to be referenced in the project.
-
-### Precompiled Themes
-
-The example below demonstrates how to include the complete CSS of the default theme by using `styleUrls`. This configuration includes the styles for all components in Kendo UI for Angular 2.
-
-```ts-no-run
-@Component({
-    selector: 'my-app',
-    styleUrls: [
-        // load the default theme (use correct path to modules)
-        '../../node_modules/@progress/kendo-theme-default/dist/all.css'
-    ],
-    template: `
-        <h1>My First Kendo UI Angular 2 App</h1>
-        <button kendoButton [primary]=true>
-            My Kendo UI Button
-        </button>
-    `,
-
-})
-export class AppComponent { }
-```
-
-### Custom Themes
-
-To change the theme colors or sizes, build a custom theme from its SCSS sources. To achieve this result, use a build system such as Webpack.
-
-```ts-no-run
-@Component({
-    selector: 'my-app',
-    styleUrls: [
-        // load the default theme (use correct path to modules)
-        'styles.scss'
-    ],
-    template: `
-        <h1>My First Kendo UI Angular 2 App</h1>
-        <button kendoButton [primary]=true>
-            My Kendo UI Button
-        </button>
-    `,
-
-})
-export class AppComponent { }
-```
-```scss
-@import "~@progress/kendo-theme-default/scss/all";
-```
-
-The setup described above allows for the theme variables to be changed directly in your application. To style the button in a lovely pink color, change the `$accent` variable before importing the theme.
-
-```scss
-$accent: #ff69b4;
-
-@import "~@progress/kendo-theme-default/scss/all";
-```
-
-The basic set of variables is located in the [`_variables.scss` file](https://github.com/telerik/kendo-theme-default/blob/master/scss/_variables.scss). Projects that are not built using the Angular CLI Tool require additional Webpack configuration to process SCSS files.
-
-```json-no-run
-{ test: /\.scss$/,
-  loaders: [
-    'css-loader?sourceMap',
-    'sass-loader?sourceMap'
-  ]
-},
-{
-  test: /\.(gif|png|woff|woff2|eot|ttf|svg)$/,
-  loader: 'url-loader?limit=100000'
-}
-```
-
-For a working demo that demonstrates this approach, refer to the [ng2-dashboard sample application](https://github.com/telerik/ng2-dashboard).
-
-### Only What You Need
-
-Depending on the requirements of your project, you might need to skip some of the components styles. To include only what you need, execute the following command inside the `kendo-theme-default` repository:
-
-```
-COMPONENTS='panelbar,grid' npm run build
-```
-
-The snippet demonstrates an example on how to add only the Grid and PanelBar to your project. As a result, the `dist/custom.css` file is generated and it includes only the specified components.
-
-## Suggested Links
-
-* [Web Font Icons in Kendo UI for Angular 2]({% slug icons_kendouiforangular %})
-* [Get Started with Kendo UI for Angular 2]({% slug getting_started_kendouiforangular %})
-* [Browse the Components](http://www.telerik.com/kendo-angular-ui/components)
+{% embed_demo ../preview-app/ %}
