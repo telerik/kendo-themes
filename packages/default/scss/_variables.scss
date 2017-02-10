@@ -1,12 +1,12 @@
 // Fonts
 
-/// Font size across all components
+/// Base font size across all components
 $font-size: 14px !default;
 
 /// Font family across all components
 $font-family: inherit !default;
 
-/// Font family for monospaced text, used in code snippets
+/// Font family for monospaced text, used for styling code
 $font-family-monospace:  Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
 
 $font-size-xs: 10px !default;
@@ -106,21 +106,29 @@ $border-color: rgba( black, .08 ) !default;
 
 /// Text color of components' chrome area
 $base-text: #656565 !default;
-/// Color of chrome area of components
+/// Background of chrome area of components
 $base-bg: #f6f6f6 !default;
-/// Color of borders of the components' chrome area
+/// Border color of the components' chrome area
 $base-border: rgba( black, .08 ) !default;
-/// Gradient of components' chrome area
+/// Gradient background of components' chrome area
 $base-gradient: $base-bg, darken( $base-bg, 2% ) !default;
 
+/// Text color of hovered items
 $hovered-text: #656565 !default;
+/// Background of hovered items
 $hovered-bg: #ededed !default;
+/// Border color of hovered items
 $hovered-border: rgba( black, .15 ) !default;
+/// Gradient background of hovered items
 $hovered-gradient: $hovered-bg, darken( $hovered-bg, 2% ) !default;
 
+/// Text color of selected items
 $selected-text: $accent-contrast !default;
+/// Background of selected items
 $selected-bg: $accent !default;
+/// Border color of selected items
 $selected-border: rgba( black, .1 ) !default;
+/// Gradient background of selected items
 $selected-gradient: none !default;
 
 $selected-hover-color: $selected-text !default;
@@ -128,9 +136,13 @@ $selected-hover-bg: mix( $selected-bg, black, 92) !default;
 
 $transition: background-color .2s ease !default;
 
+/// Color for error messages and states
 $error: #f5503e !default;
+/// Color for warning messages and states
 $warning: #fdce3e !default;
+/// Color for success messages and states
 $success: #5ec232 !default;
+/// Color for informational messages and states
 $info: #3e80ed !default;
 
 $gradient-transparent-to-black: rgba( black, 0), black;
@@ -179,24 +191,59 @@ $header-selected-gradient: null !default;
 
 
 // Button
+/// The text color of the buttons
+/// @group buttons
 $button-text: $base-text !default;
+
+/// The background of the buttons
+/// @group buttons
 $button-bg: $base-bg !default;
+
+/// The border color of the buttons
+/// @group buttons
 $button-border: $base-border !default;
+
+/// The background gradient of the buttons
+/// @group buttons
 $button-gradient: $base-gradient !default;
 $button-shadow: null !default;
 
+/// The text color of hovered buttons
+/// @group buttons
 $button-hovered-text: $hovered-text !default;
+
+/// The background of hovered buttons
+/// @group buttons
 $button-hovered-bg: $hovered-bg !default;
+
+/// The border color of hovered buttons
+/// @group buttons
 $button-hovered-border: $hovered-border !default;
+
+/// The background gradient of hovered buttons
+/// @group buttons
 $button-hovered-gradient: $hovered-gradient !default;
 $button-hovered-shadow: null !default;
 
+/// The text color of pressed buttons
+/// @group buttons
 $button-pressed-text: $selected-text !default;
+
+/// The background color of pressed buttons
+/// @group buttons
 $button-pressed-bg: $selected-bg !default;
+
+/// The border color of pressed buttons
+/// @group buttons
 $button-pressed-border: $selected-border !default;
+
+/// The background gradient of pressed buttons
+/// @group buttons
 $button-pressed-gradient: none !default;
 $button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
 
+/// The shadow of focused buttons
+/// @group buttons
 $button-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
 
 
@@ -280,21 +327,27 @@ $link-hover-text: desaturate(darken($accent, 5), 25) !default;
 
 // Chart
 /// First color of chart series
+/// @group charts
 $series-a: #ff6358 !default;
 
 /// Second color of chart series
+/// @group charts
 $series-b: #ffd246 !default;
 
 /// Third color of chart series
+/// @group charts
 $series-c: #78d237 !default;
 
 /// Fourth color of chart series
+/// @group charts
 $series-d: #28b4c8 !default;
 
 /// Fifth color of chart series
+/// @group charts
 $series-e: #2d73f5 !default;
 
 /// Sixth color of chart series
+/// @group charts
 $series-f: #aa46be !default;
 
 $chart-font-size: $font-size !default;

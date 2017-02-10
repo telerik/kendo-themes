@@ -21,7 +21,7 @@ position: 9
 
 {{#each variable}}
 
-### {{@key}}
+### {{ title }}
 
 <table>
 <colgroup>
@@ -34,7 +34,7 @@ position: 9
 <th>Default value</th>
 <th>Description</th>
 </tr>
-{{#each this}}
+{{#each variables}}
 <tr>
 <td>${{context.name}}</td>
 <td>
