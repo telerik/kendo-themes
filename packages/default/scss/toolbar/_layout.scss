@@ -2,7 +2,7 @@
 
     // Base
     .k-toolbar {
-        padding: $padding-x;
+        padding: $toolbar-padding-y $toolbar-padding-x;
         line-height: $form-line-height;
         display: flex;
         flex-direction: row;
@@ -14,7 +14,7 @@
             vertical-align: middle;
         }
         > * + * {
-            margin-left: $padding-x;
+            margin-left: $toolbar-padding-x;
         }
         > .k-overflow-anchor + * {
             margin-left: 0;
@@ -31,19 +31,8 @@
         }
 
 
-        // All buttons
-        .k-button:not(:hover, .k-state-hover, :active, .k-state-active) {
-            border-color: transparent;
-            color: inherit;
-            background-color: transparent;
-            background-image: none;
-        }
-
-
         // Button
-        .k-button {
-            border-radius: 0;
-        }
+        .k-button {}
 
         // Toggle button
         .k-toggle-button {}
@@ -51,21 +40,12 @@
         // Split button
         .k-split-button {}
 
-        // Button group
-        .k-button-group {}
-        .k-button-group .k-group-start,
-        .k-button-group .k-button:first-child,
-        .k-button-group .k-group-end,
-        .k-button-group .k-button:last-child {
-            border-radius: 0;
-        }
-
 
         // Overflow anchor
         .k-overflow-anchor {
-            width: $form-line-height * 1em;
-            height: $form-line-height * 1em;
-            padding: $button-padding-y * 3;
+            padding: 0;
+            width: calc( #{$button-calc-height} + #{$toolbar-padding-x * 2} );
+            height: calc( #{$button-calc-height} + #{$toolbar-padding-x * 2} );
             box-sizing: content-box;
             justify-content: center;
             position: absolute;
@@ -73,11 +53,12 @@
             right: 0;
         }
 
+
         // Separator
         .k-separator {
             width: 0;
-            margin-top: -8px;
-            margin-bottom: -8px;
+            margin-top: -$toolbar-padding-y;
+            margin-bottom: -$toolbar-padding-y;
             border-width: 0 0 0 1px;
             border-style: solid;
             border-color: inherit;

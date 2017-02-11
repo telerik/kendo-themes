@@ -5,30 +5,54 @@
         @include appearance( toolbar );
 
 
-        // Normal state
+        // Button normal state
         .k-button {
-            background-image: none;
+            border-color: transparent;
+            border-radius: 0;
+            color: inherit;
+            background: none;
         }
 
 
-        // Focus state
+        // Button hover state
+        .k-button:hover,
+        .k-button.k-state-hover {
+            @include appearance( hovered-button );
+        }
+
+
+        // Button focus state
         .k-button:focus,
         .k-button.k-state-focused {
             border-color: $button-pressed-border;
             box-shadow: inset 0 0 0 1px $button-pressed-border;
         }
 
-        // Active state
+        // Button pressed state
         .k-button:active,
         .k-button.k-state-active {
             @include appearance( pressed-button );
             box-shadow: none;
         }
+
+
+        // Button group
+        .k-button-group {}
+        .k-button-group .k-group-start,
+        .k-button-group .k-button:first-child,
+        .k-button-group .k-group-end,
+        .k-button-group .k-button:last-child {
+            border-radius: 0;
+        }
+
     }
 
+
+    // Overflow container
     .k-overflow-container {
         .k-overflow-button {
             background-image: none;
         }
     }
+
 }
