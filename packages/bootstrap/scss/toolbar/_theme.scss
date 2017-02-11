@@ -1,1 +1,31 @@
-@import "../node_modules/@progress/kendo-theme-default/scss/toolbar/theme";
+@include exports("toolbar/theme") {
+
+    // Theme
+    .k-toolbar {
+        @include appearance( toolbar );
+
+
+        // Button normal state
+        .k-button {}
+
+
+        // Button hover state
+        .k-button:hover,
+        .k-button.k-state-hover {}
+
+
+        // Button focus state
+        .k-button:focus,
+        .k-button.k-state-focused {}
+
+        // Button pressed state
+        .k-button:active,
+        .k-button.k-state-active {}
+
+    }
+
+
+    // Overflow container
+    .k-overflow-container {}
+
+}
