@@ -4,8 +4,17 @@ description: "The available variables for customization of the Kendo UI theme."
 position: 9
 ---
 
+# Customization
+
+Description of the theme variables which are available for adjustment.
+
 <style>
-.colorPreview {
+.theme-variables th,
+.theme-variables td {
+  vertical-align: top;
+}
+
+.color-preview {
   border-radius: 50%;
   width: 1em;
   height: 1em;
@@ -15,17 +24,15 @@ position: 9
 }
 </style>
 
-# Customization
-
 ## Variables
 
 
 ### Common
 
-<table>
+<table class="theme-variables">
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
-<col style="width: 300px" />
+<col style="width: 250px" />
 <col />
 </colgroup>
 <tr>
@@ -81,17 +88,17 @@ position: 9
 <tr>
 <td>$accent</td>
 <td>
-    <span class="colorPreview" style="background-color: #ff6358"></span>
+    <span class="color-preview" style="background-color: #ff6358"></span>
     #ff6358
 </td>
 <td>Color that focuses the user attention<br/>
-Used for primary buttons and across the theme
+Used for primary buttons and for elements of primary importance across the theme
 </td>
 </tr>
 <tr>
 <td>$accent-contrast</td>
 <td>
-    <span class="colorPreview" style="background-color: #ffffff"></span>
+    <span class="color-preview" style="background-color: #ffffff"></span>
     #ffffff
 </td>
 <td>Color used along with the accent color denoted by $accent.<br/>
@@ -101,7 +108,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$base-text</td>
 <td>
-    <span class="colorPreview" style="background-color: #656565"></span>
+    <span class="color-preview" style="background-color: #656565"></span>
     #656565
 </td>
 <td>Text color of components' chrome area
@@ -110,7 +117,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$base-bg</td>
 <td>
-    <span class="colorPreview" style="background-color: #f6f6f6"></span>
+    <span class="color-preview" style="background-color: #f6f6f6"></span>
     #f6f6f6
 </td>
 <td>Background of chrome area of components
@@ -137,7 +144,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$hovered-text</td>
 <td>
-    <span class="colorPreview" style="background-color: #656565"></span>
+    <span class="color-preview" style="background-color: #656565"></span>
     #656565
 </td>
 <td>Text color of hovered items
@@ -146,7 +153,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$hovered-bg</td>
 <td>
-    <span class="colorPreview" style="background-color: #ededed"></span>
+    <span class="color-preview" style="background-color: #ededed"></span>
     #ededed
 </td>
 <td>Background of hovered items
@@ -209,7 +216,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$error</td>
 <td>
-    <span class="colorPreview" style="background-color: #f5503e"></span>
+    <span class="color-preview" style="background-color: #f5503e"></span>
     #f5503e
 </td>
 <td>Color for error messages and states
@@ -218,7 +225,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$warning</td>
 <td>
-    <span class="colorPreview" style="background-color: #fdce3e"></span>
+    <span class="color-preview" style="background-color: #fdce3e"></span>
     #fdce3e
 </td>
 <td>Color for warning messages and states
@@ -227,7 +234,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$success</td>
 <td>
-    <span class="colorPreview" style="background-color: #5ec232"></span>
+    <span class="color-preview" style="background-color: #5ec232"></span>
     #5ec232
 </td>
 <td>Color for success messages and states
@@ -236,7 +243,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$info</td>
 <td>
-    <span class="colorPreview" style="background-color: #3e80ed"></span>
+    <span class="color-preview" style="background-color: #3e80ed"></span>
     #3e80ed
 </td>
 <td>Color for informational messages and states
@@ -247,10 +254,10 @@ Used to provide contrast between the background and foreground color
 
 ### Buttons
 
-<table>
+<table class="theme-variables">
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
-<col style="width: 300px" />
+<col style="width: 250px" />
 <col />
 </colgroup>
 <tr>
@@ -380,10 +387,10 @@ Used to provide contrast between the background and foreground color
 
 ### Charts
 
-<table>
+<table class="theme-variables">
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
-<col style="width: 300px" />
+<col style="width: 250px" />
 <col />
 </colgroup>
 <tr>
@@ -394,55 +401,55 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$series-a</td>
 <td>
-    <span class="colorPreview" style="background-color: #ff6358"></span>
+    <span class="color-preview" style="background-color: #ff6358"></span>
     #ff6358
 </td>
-<td>First color of chart series
+<td>Color of first series
 </td>
 </tr>
 <tr>
 <td>$series-b</td>
 <td>
-    <span class="colorPreview" style="background-color: #ffd246"></span>
+    <span class="color-preview" style="background-color: #ffd246"></span>
     #ffd246
 </td>
-<td>Second color of chart series
+<td>Color of second series
 </td>
 </tr>
 <tr>
 <td>$series-c</td>
 <td>
-    <span class="colorPreview" style="background-color: #78d237"></span>
+    <span class="color-preview" style="background-color: #78d237"></span>
     #78d237
 </td>
-<td>Third color of chart series
+<td>Color of third series
 </td>
 </tr>
 <tr>
 <td>$series-d</td>
 <td>
-    <span class="colorPreview" style="background-color: #28b4c8"></span>
+    <span class="color-preview" style="background-color: #28b4c8"></span>
     #28b4c8
 </td>
-<td>Fourth color of chart series
+<td>Color of fourth series
 </td>
 </tr>
 <tr>
 <td>$series-e</td>
 <td>
-    <span class="colorPreview" style="background-color: #2d73f5"></span>
+    <span class="color-preview" style="background-color: #2d73f5"></span>
     #2d73f5
 </td>
-<td>Fifth color of chart series
+<td>Color of fifth series
 </td>
 </tr>
 <tr>
 <td>$series-f</td>
 <td>
-    <span class="colorPreview" style="background-color: #aa46be"></span>
+    <span class="color-preview" style="background-color: #aa46be"></span>
     #aa46be
 </td>
-<td>Sixth color of chart series
+<td>Color of sixth series
 </td>
 </tr>
 <tr>
@@ -461,6 +468,40 @@ Used to provide contrast between the background and foreground color
     rgba(0, 0, 0, .04)
 </td>
 <td>The color of the chart grid lines (minor)
+</td>
+</tr>
+</table>
+
+
+### Toolbar
+
+<table class="theme-variables">
+<colgroup>
+<col style="white-space:nowrap; width: 200px" />
+<col style="width: 250px" />
+<col />
+</colgroup>
+<tr>
+<th>Name</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>$toolbar-padding-x</td>
+<td>
+    
+    $padding-x
+</td>
+<td>Horizontal padding of container
+</td>
+</tr>
+<tr>
+<td>$toolbar-padding-y</td>
+<td>
+    
+    $padding-x
+</td>
+<td>Vertical padding of container
 </td>
 </tr>
 </table>
