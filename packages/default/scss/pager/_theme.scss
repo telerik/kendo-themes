@@ -1,34 +1,32 @@
 @include exports("pager/theme") {
-    $pager-text: $text-color !default;
-    $pager-bg: lighten($base-bg, 1%) !default;
-    $pager-hover-bg: $list-item-hovered-bg !default;
-    $pager-focused-box-shadow: inset 0 0 0 2px darken($base-bg, 10%) !default;
-    $pager-selected-hover-background: blend-multiply($accent, darken($bg-color, 8%)) !default;
-    $pager-selected-focused-box-shadow: inset 0 0 0 2px blend-multiply($accent, darken($bg-color, 8%)) !default;
+    $pager-text: $header-text !default;
+    $pager-bg: $header-bg !default;
+    $pager-items-hover-bg: $list-item-hovered-bg !default;
     $pager-numbers-text: $accent !default;
     $pager-numbers-selected-text: $accent-contrast !default;
 
     .k-pager-wrap {
         color: $pager-text;
         background-color: $pager-bg;
+
         .k-link,
         .k-pager-nav {
-            border-color: transparent;
             &:focus {
-                box-shadow: $pager-focused-box-shadow;
+                box-shadow: $list-item-focused-shadow;
             }
             &:hover {
-                background-color: $pager-hover-bg;
+                background-color: $pager-items-hover-bg;
             }
         }
 
         .k-state-selected {
-            @include appearance( active-button );
             &:focus {
-                box-shadow: $pager-selected-focused-box-shadow;
+                box-shadow: none;
             }
             &:hover {
-                background-color: $pager-selected-hover-background;
+                color: $selected-text;
+                background-color: $selected-bg;
+                cursor: default;
             }
         }
     }

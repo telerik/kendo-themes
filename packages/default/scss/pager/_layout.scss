@@ -1,23 +1,30 @@
 @include exports("pager/layout") {
+    $pager-buttons-size: calc(#{$form-line-height-em} + 2px) !default; /// icon button size + 2px border (top and bottom)
+
     .k-pager-wrap {
         padding: $padding-x;
         border-width: 1px;
         line-height: $form-line-height;
         display: flex;
         align-items: center;
+        overflow: hidden;
 
         .k-link,
         .k-state-selected {
             padding: $button-padding-y;
-            width: $form-line-height-em;
-            height: $form-line-height-em;
+            width: $pager-buttons-size;
+            height: $pager-buttons-size;
+            line-height: $pager-buttons-size;
             box-sizing: content-box;
-            border-width: 1px;
-            border-style: solid;
             display: inline-block;
             position: relative;
             text-align: center;
             z-index: 1;
+
+            > .k-icon {
+                vertical-align: middle;
+            }
+
         }
         .k-link:hover,
         .k-state-selected {
@@ -26,6 +33,7 @@
         .k-link:focus,
         .k-state-selected {
             text-decoration: none;
+            outline: none;
         }
         > .k-pager-nav {}
         > .k-pager-nav + .k-pager-nav {}
@@ -59,9 +67,10 @@
             }
         }
         .k-pager-sizes {
-            .k-dropdown {
+            .k-dropdown,
+            > select {
                 width: 5.2em;
-                margin-right: $padding-x;
+                margin: 0 $padding-x;
             }
         }
         .k-pager-refresh {
