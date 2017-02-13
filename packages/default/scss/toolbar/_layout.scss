@@ -43,10 +43,11 @@
 
         // Overflow anchor
         .k-overflow-anchor {
-            padding: 0;
-            width: calc( #{$button-calc-height} + #{$toolbar-padding-x * 2} );
-            height: calc( #{$button-calc-height} + #{$toolbar-padding-x * 2} );
-            box-sizing: content-box;
+            padding: $toolbar-padding-y;
+            width: calc( #{$toolbar-inner-calc-size} );
+            height: calc( #{$toolbar-inner-calc-size} );
+            border-width: 0 0 0 1px;
+            box-sizing: border-box;
             justify-content: center;
             position: absolute;
             top: 0;

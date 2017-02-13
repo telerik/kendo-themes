@@ -336,7 +336,7 @@
     .k-grouping-dropclue {
         position: absolute;
         width: ($group-dropclue-size * 2);
-        height: calc( #{$button-calc-height} + 2px);
+        height: calc( #{$button-calc-size} );
 
         &::before,
         &::after {

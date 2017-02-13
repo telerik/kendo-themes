@@ -18,7 +18,7 @@
 
 
     .k-multiselect-wrap {
-        min-height: calc( #{$input-calc-height} );
+        min-height: calc( #{$input-inner-calc-size} );
         border-width: 0;
         padding-right: ($padding-x * 3);
 

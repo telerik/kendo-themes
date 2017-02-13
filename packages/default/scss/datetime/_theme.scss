@@ -63,6 +63,7 @@
         }
         .k-select {
             @include appearance( button );
+            background-clip: padding-box;
         }
 
         // Hovered state

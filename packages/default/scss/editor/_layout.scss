@@ -93,9 +93,13 @@
         // Tools
         .k-tool {
             padding: $button-padding-y;
-            width: $form-line-height-em;
+            width: calc( #{$button-calc-size} );
+            height: calc( #{$button-calc-size} );
+            box-sizing: border-box;
             display: inline-flex;
             flex-direction: row;
+            align-items: center;
+            align-content: center;
             justify-content: center;
         }
         .k-tool-text {

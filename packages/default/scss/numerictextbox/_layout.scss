@@ -7,7 +7,7 @@
 
         .k-select {
             padding: 0;
-            width: calc( #{$button-calc-height} );
+            width: calc( #{$button-inner-calc-size} );
             border-width: 0 0 0 1px;
             border-style: solid;
             flex-direction: column;
@@ -15,7 +15,7 @@
         }
         .k-link {
             padding: 0 $button-padding-y;
-            height: calc( (#{$button-calc-height}) / 2 );
+            height: calc( (#{$button-inner-calc-size}) / 2 );
             overflow: hidden;
 
             > .k-icon {
