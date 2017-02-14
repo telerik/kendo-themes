@@ -396,7 +396,7 @@
     }
 
     $loading-stroke-width: 2px !default;
-    $loading-size: ($icon-size - (2 * $loading-stroke-width)) !default;
+    $loading-size: $icon-size - $loading-stroke-width !default;
     $loading-speed: 2s !default;
     $loading-color: $accent;
     $loading-outer-size: ($loading-size + ($loading-stroke-width * 2));
@@ -409,6 +409,7 @@
         border: 2px solid $bg-color;
         box-shadow: inset 0 0 0 $loading-stroke-width $loading-color;
         border-radius: 50%;
+        box-sizing: content-box;
 
         &::before,
         &::after {

@@ -1,6 +1,13 @@
 @include exports("combobox/layout") {
 
     .k-combobox {
+        .k-dropdown-wrap {
+            > .k-i-loading {
+                top: 50%;
+                transform: translateY(-50%);
+                margin-right: $padding-x;
+            }
+        }
 
         .k-input {}
 
