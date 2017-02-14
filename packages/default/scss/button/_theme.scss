@@ -25,7 +25,6 @@
         }
     }
 
-
     // Primary button
     .k-button.k-primary {
         @include appearance( primary-button );
@@ -97,4 +96,116 @@
             box-shadow: inset $button-pressed-shadow;
         }
     }
+
+
+    // Flat button
+    .k-button.k-flat {
+
+        // Hover state
+        &:hover,
+        &.k-state-hover {
+            @include appearance( hovered-button );
+        }
+
+        // Pressed state
+        &:active,
+        &.k-state-active {
+            @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
+            box-shadow: $button-pressed-shadow;
+        }
+
+        // Focused state
+        &:focus,
+        &.k-state-focused {
+            box-shadow: $button-focused-shadow;
+        }
+    }
+    .k-button.k-primary.k-flat {
+        color: $accent;
+
+        // Hover state
+        &:hover,
+        &.k-state-hover {
+            @include appearance( hovered-primary-button );
+        }
+
+        // Pressed state
+        &:active,
+        &.k-state-active {
+            @include appearance( pressed-primary-button );
+        }
+
+        // Focused state
+        &:focus,
+        &.k-state-focused {
+            box-shadow: $primary-button-focused-shadow;
+        }
+    }
+
+
+    // Outline button
+    .k-button.k-outline {
+        border-color: $button-text;
+        color: $button-text;
+        background: none;
+        box-shadow: none;
+
+        // Hover state
+        &:hover,
+        &.k-state-hover {
+            border-color: $button-hovered-text;
+            color: $button-hovered-bg;
+            background: $button-hovered-text;
+        }
+
+        // Pressed state
+        &:active,
+        &.k-state-active {
+            border-color: $button-pressed-text;
+            color: $button-pressed-bg;
+            background: $button-pressed-text;
+        }
+
+        // Focused state
+        &:focus,
+        &.k-state-focused {
+            box-shadow: $button-focused-shadow;
+        }
+    }
+    .k-button.k-primary.k-outline {
+        border-color: $primary-button-text;
+        color: $primary-button-text;
+        background: none;
+        box-shadow: none;
+
+        // Hover state
+        &:hover,
+        &.k-state-hover {
+            border-color: $primary-button-hovered-text;
+            color: $primary-button-hovered-bg;
+            background: $primary-button-hovered-text;
+        }
+
+        // Pressed state
+        &:active,
+        &.k-state-active {
+            border-color: $primary-button-pressed-text;
+            color: $primary-button-pressed-bg;
+            background: $primary-button-pressed-text;
+        }
+
+        // Focused state
+        &:focus,
+        &.k-state-focused {
+            box-shadow: $primary-button-focused-shadow;
+        }
+    }
+
+
+    // Bare button
+    .k-button.k-bare {}
+    .k-button.k-primary.k-bare {
+        color: $accent;
+    }
+
 }
