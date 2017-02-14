@@ -10,6 +10,10 @@
         .k-select {
             @include appearance( button );
             background-clip: padding-box;
+
+            > .k-state-selected {
+                @include appearance( pressed-button );
+            }
         }
 
         // Hovered state
