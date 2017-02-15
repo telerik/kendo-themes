@@ -59,18 +59,6 @@
         text-decoration: none;
     }
 
-    // Form controls
-    .k-button {
-        border-width: 1px;
-        border-style: solid;
-        font-size: inherit;
-        -webkit-appearance: none;
-    }
-
-    .k-textbox:focus {
-        // box-shadow: $focused-item-shadow;
-    }
-
 
     // Outline
     .k-content {
@@ -104,7 +92,6 @@
 
 @include exports( "common/theme" ) {
 
-
     // Widget
     .k-widget {
         @include appearance( widget );
@@ -127,14 +114,6 @@
     .k-header.k-state-selected {
         // @include appearance( selected-header );
     }
-
-
-    // TODO: do we need default state?
-    // Default state
-    // .k-state-default {
-    //     border-color: $widget-border;
-    // }
-
 
 
     // Link
@@ -424,7 +403,6 @@
         height: $loading-outer-size;
         background: $bg-color;
     }
-
     .k-i-loading::before {
         border-radius: $loading-outer-size 0 0 $loading-outer-size;
         top: -($loading-stroke-width);
@@ -432,7 +410,6 @@
         transform-origin: $loading-half-size $loading-half-size;
         animation: k-loading-animation $loading-speed infinite ease 1.5s;
     }
-
     .k-i-loading::after {
         border-radius: 0 $loading-outer-size $loading-outer-size 0;
         top: -($loading-stroke-width);
@@ -449,6 +426,7 @@
             transform: rotate(360deg);
         }
     }
+
 }
 
 
