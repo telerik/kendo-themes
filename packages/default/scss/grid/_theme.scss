@@ -3,7 +3,7 @@
     $grid-chrome-text: $header-text !default;
     $grid-chrome-bg: $header-bg !default;
     $grid-chrome-border: $border-color !default;
-    $grid-alt-bg: $grid-chrome-bg !default;
+    $grid-alt-bg: darken( $panel-bg, 4 ) !default;
 
     $grid-selected-text: $selected-text !default;
     $grid-selected-bg: $selected-bg !default;
