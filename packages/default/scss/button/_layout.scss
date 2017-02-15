@@ -18,6 +18,7 @@
         user-select: none;
         cursor: pointer;
         outline: none;
+        -webkit-appearance: none;
 
         // TODO: extend disabled selector
         &[disabled],
