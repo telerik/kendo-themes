@@ -52,15 +52,12 @@
             }
         }
 
-
-        // Searchbar
-        .k-searchbar {
-            float: left;
-        }
+        .k-searchbar
         .k-input {
+            display: inline-block;
+            width: auto;
             float: left;
         }
-
 
         // Icons
         .k-i-loading {
