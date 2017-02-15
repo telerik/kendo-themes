@@ -310,8 +310,8 @@
     }
 
     .k-grouping-row p {
-        display: inline-block;
-        vertical-align: middle;
+        display: flex;
+        align-content: center;
     }
 
     .k-grouping-row + tr td {
