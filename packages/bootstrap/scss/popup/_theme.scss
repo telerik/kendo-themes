@@ -1,0 +1,34 @@
+@include exports('popup/theme') {
+
+    .k-popup {
+        @include appearance( popup );
+    }
+    .k-popup > .k-group-header,
+    .k-popup > .k-virtual-wrap > .k-group-header {
+        border-bottom-color: $border-color;
+    }
+}
+
+@include exports( "list/theme" ) {
+
+    .k-list {}
+
+    .k-list .k-item {
+        transition: all .2s ease; // sass-lint:disable-block no-transition-all
+    }
+
+    .k-list .k-item:hover,
+    .k-list .k-item.k-state-hover {
+        @include appearance( hovered-list-item );
+    }
+
+    .k-list .k-item:focus,
+    .k-list .k-item.k-state-focused {
+        @include appearance( focused-list-item );
+    }
+
+    .k-list .k-item.k-state-selected {
+        @include appearance( selected-list-item );
+    }
+
+}

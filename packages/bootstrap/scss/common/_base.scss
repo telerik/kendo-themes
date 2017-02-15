@@ -1,15 +1,3 @@
-// TODO: font-size-sm
-$font-size-sm: 12px;
-
-// TODO: dropdown item padding
-$dropdown-item-padding-x: 1em;
-$dropdown-item-padding-y: .5em;
-
-// TODO: popup padding
-$popup-padding-x: 2px;
-$popup-padding-y: 2px;
-
-
 @include exports( "common/layout" ) {
 
     // Layout
@@ -32,10 +20,9 @@ $popup-padding-y: 2px;
         outline: 0;
         font-size: $font-size;
         line-height: $line-height;
+        display: block;
         -webkit-touch-callout: none;
-        // sass-lint:disable no-color-literals
-        -webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
-        // sass-lint:enable no-color-literals
+        -webkit-tap-highlight-color: $rgba-transparent;
 
         &:disabled,
         &[disabled] {
@@ -45,6 +32,13 @@ $popup-padding-y: 2px;
         @include compact {
             font-size: $font-size-sm;
         }
+    }
+    table.k-widget { display: table; }
+
+
+    // RTL
+    .k-rtl {
+        direction: rtl;
     }
 
 
@@ -65,35 +59,14 @@ $popup-padding-y: 2px;
     }
 
 
-    // Form controls
-    .k-textbox > input,
-    .k-input,
-    .k-textbox,
-    .k-button {
-        border-width: 1px;
-        border-style: solid;
-        font-size: inherit;
-        -webkit-appearance: none;
-    }
-    .k-input,
-    .k-textbox {
-        @include border-radius( $border-radius );
-    }
-    .k-textbox:focus {
-        // box-shadow: $focused-item-shadow;
-    }
-
-
     // Outline
-    .k-textbox,
     .k-content {
         outline: 0;
     }
 
 
     // Box sizing
-    .k-block,
-    .k-textbox {
+    .k-block {
         box-sizing: border-box;
     }
 
@@ -106,11 +79,18 @@ $popup-padding-y: 2px;
         transform: translate(-50%, -50%);
     }
 
+    // Off-screen container used during PDF export
+    .k-pdf-export-shadow {
+        position: absolute;
+        overflow: hidden;
+        left: -15000px;
+        width: 14400px;
+    }
+
 }
 
 
 @include exports( "common/theme" ) {
-
 
     // Widget
     .k-widget {
@@ -126,34 +106,20 @@ $popup-padding-y: 2px;
 
     // Header
     .k-header {
-        @include appearance( header );
+        // @include appearance( header );
     }
     .k-header.k-state-hover {
-        @include appearance( hovered-header );
+        // @include appearance( hovered-header );
     }
     .k-header.k-state-selected {
-        @include appearance( selected-header );
-    }
-
-
-    // TODO: do we need default state?
-    // Default state
-    // .k-state-default {
-    //     border-color: $widget-border;
-    // }
-
-
-    // Input
-    .k-input,
-    .k-textbox {
-        @include appearance( "input" );
+        // @include appearance( selected-header );
     }
 
 
     // Link
     .k-link
     .k-icon:hover {
-        color: $base-text;
+        // color: $base-text;
     }
 
 
@@ -184,15 +150,15 @@ $popup-padding-y: 2px;
     // TODO: what is highlight state?
     // Highlight state
     .k-state-highlight {
-        background-color: saturate($base-bg, 4%);
-        border-color: $accent;
+        // background-color: saturate($base-bg, 4%);
+        // border-color: $accent;
     }
 
 
     // TODO: what is active state?
     // Active state
     .k-state-active {
-        background-color: $widget-bg;
+        // background-color: $widget-bg;
     }
 
 
@@ -206,6 +172,15 @@ $popup-padding-y: 2px;
         .k-button {
             cursor: default;
             outline: 0;
+        }
+
+
+        // Nested disabled
+        [disabled],
+        .k-disabled,
+        .k-state-disabled {
+            opacity: 1;
+            filter: grayscale(0);
         }
     }
 
@@ -399,6 +374,58 @@ $popup-padding-y: 2px;
         opacity: .3;
     }
 
+    $loading-stroke-width: 2px !default;
+    $loading-size: ($icon-size - (2 * $loading-stroke-width)) !default;
+    $loading-speed: 2s !default;
+    $loading-color: $accent;
+    $loading-outer-size: ($loading-size + ($loading-stroke-width * 2));
+    $loading-half-size: ($loading-outer-size / 2) !default;
+
+    .k-icon.k-i-loading {
+        position: relative;
+        width: $loading-size;
+        height: $loading-size;
+        border: 2px solid $bg-color;
+        box-shadow: inset 0 0 0 $loading-stroke-width $loading-color;
+        border-radius: 50%;
+
+        &::before,
+        &::after {
+            content: "";
+        }
+    }
+
+    .k-i-loading::before,
+    .k-i-loading::after {
+        position: absolute;
+        width:  $loading-half-size;
+        height: $loading-outer-size;
+        background: $bg-color;
+    }
+    .k-i-loading::before {
+        border-radius: $loading-outer-size 0 0 $loading-outer-size;
+        top: -($loading-stroke-width);
+        left: -($loading-stroke-width);
+        transform-origin: $loading-half-size $loading-half-size;
+        animation: k-loading-animation $loading-speed infinite ease 1.5s;
+    }
+    .k-i-loading::after {
+        border-radius: 0 $loading-outer-size $loading-outer-size 0;
+        top: -($loading-stroke-width);
+        left: ($loading-size / 2);
+        transform-origin: 0 $loading-half-size;
+        animation: k-loading-animation $loading-speed infinite ease;
+    }
+
+    @keyframes k-loading-animation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
 }
 
 
@@ -424,67 +451,4 @@ $popup-padding-y: 2px;
         @include appearance( selected-node );
     }
 
-}
-
-
-@include exports( "common/popup" ) {
-
-    // Layout
-    .k-popup {
-        margin: 0;
-        padding: $popup-padding-y 0;
-        border-width: 1px;
-        border-style: solid;
-        font-size: $font-size;
-        line-height: $line-height;
-
-        .k-item {
-            cursor: default;
-        }
-    }
-    .k-animation-container {
-        .k-popup {
-            position: relative;
-        }
-    }
-
-
-    // Theme
-    .k-popup {
-        @include appearance( popup );
-    }
-
-}
-
-
-@include exports( "common/list" ) {
-
-    // Layout
-    .k-list-scroller {
-        position: relative;
-        overflow: auto;
-    }
-    .k-list {
-        height: auto;
-    }
-    .k-list .k-item {
-        padding: 3px $dropdown-item-padding-x;
-    }
-
-
-    // Theme
-    .k-list {}
-    .k-list .k-state-hover {
-        @include appearance( hovered-list-item );
-    }
-    .k-list .k-state-selected {
-        @include appearance( selected-list-item );
-    }
-    .k-list .k-state-focused {
-        border-color: $node-selected-border;
-        // TODO: consider extracting focused shadow to variable
-        // sass-lint:disable no-color-literals
-        box-shadow: inset 0 0 5px rgba( $node-selected-border, .5 );
-        // sass-lint:disable no-color-literals
-    }
 }
