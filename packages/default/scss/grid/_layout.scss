@@ -124,6 +124,13 @@
         text-overflow: ellipsis;
     }
 
+    .k-grid td,
+    .k-grid th {
+        &:focus {
+            outline: none;
+        }
+    }
+
     .k-grouping-header,
     .k-filter-row th,
     .k-grid-add-row td {
