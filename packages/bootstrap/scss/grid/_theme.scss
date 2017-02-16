@@ -4,8 +4,7 @@
     .k-grid {
 
         .k-alt {
-            // TODO
-            // background-color: $table-alt-bg;
+            background-color: rgba( black, .03 );
         }
 
     }
@@ -13,7 +12,7 @@
 
     // Toolbar
     .k-grid-toolbar {
-        @include appearance( header );
+        @include appearance( toolbar );
     }
 
 
@@ -29,6 +28,15 @@
 
     // Header
     .k-grid-header {
+        @include appearance( header );
+    }
+    .k-grid-footer {
+        @include appearance( header );
+    }
+
+
+    // Pager
+    .k-grid-pager {
         @include appearance( header );
     }
 
