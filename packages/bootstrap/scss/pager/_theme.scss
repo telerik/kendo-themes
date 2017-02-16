@@ -20,10 +20,27 @@
             }
         }
 
+        .k-pager-refresh {
+            @include border-radius( $border-radius );
+        }
+
+    }
+    .k-pager-numbers {
+
         .k-state-selected {
-            @include appearance( active-button );
+            @include fill( $selected-text, $selected-bg, $selected-border, $selected-gradient );
             z-index: 2;
         }
+
+    }
+
+
+    // Spacing
+    .k-pager-nav + .k-pager-nav,
+    .k-pager-nav + .k-pager-numbers,
+    .k-pager-numbers + .k-pager-nav,
+    .k-pager-numbers .k-current-page ~ li + li {
+        margin-left: -1px;
     }
 
 }
