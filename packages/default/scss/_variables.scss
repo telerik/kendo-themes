@@ -197,8 +197,8 @@ $primary-button-hovered-gradient: adjust-hue( $primary-button-hovered-bg, 3 ), $
 $primary-button-pressed-text: $primary-button-text !default;
 $primary-button-pressed-bg: $primary-button-bg !default;
 $primary-button-pressed-border: $primary-button-border !default;
-$primary-button-pressed-gradient: $primary-button-gradient !default;
-$primary-button-pressed-shadow: null !default;
+$primary-button-pressed-gradient: $primary-button-bg, adjust-hue( $primary-button-bg, 3) !default;
+$primary-button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
 
 $primary-button-focused-shadow: 0 3px 4px 0 rgba($accent, .4) !default;
 
