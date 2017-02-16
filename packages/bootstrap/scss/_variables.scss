@@ -142,9 +142,9 @@ $popup-border: $panel-border !default;
 
 
 // Header
-$header-text: $body-color !default;
-$header-bg: $card-cap-bg !default;
-$header-border: $card-border-color !default;
+$header-text: $base-text !default;
+$header-bg: darken( $base-bg, 3 ) !default;
+$header-border: $base-border !default;
 $header-gradient: null !default;
 
 $header-hovered-text: $header-text !default;
@@ -198,9 +198,9 @@ $primary-button-pressed-gradient: null !default;
 
 
 // Toolbar
-$toolbar-text: $button-text !default;
-$toolbar-bg: $button-bg !default;
-$toolbar-border: $button-border !default;
+$toolbar-text: $header-text !default;
+$toolbar-bg: $header-bg !default;
+$toolbar-border: $header-border !default;
 $toolbar-gradient: null !default;
 
 
