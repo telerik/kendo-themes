@@ -4,6 +4,7 @@
     .k-button {
         @include border-radius( $border-radius );
         padding: $button-padding-y $button-padding-x;
+        box-sizing: border-box;
         border-width: 1px;
         border-style: solid;
         font-size: $font-size;
