@@ -14,6 +14,18 @@
     }
 
 
+    // Formula bar
+    .k-spreadsheet-formula-list {}
+    .k-syntax-ref { color: #ff8822; }
+    .k-syntax-num { color: #0099ff; }
+    .k-syntax-func { font-weight: bold; }
+    .k-syntax-str { color: #38b714; }
+    .k-syntax-error { color: red; }
+    .k-syntax-bool { color: #a9169c; }
+    .k-syntax-startexp { font-weight: bold; }
+    .k-syntax-paren-match { background-color: #caf200; }
+
+
     // Selection
     .k-spreadsheet .k-selection-full,
     .k-spreadsheet .k-selection-partial {
@@ -21,9 +33,9 @@
         background-color: rgba( $header-selected-bg, .25 );
     }
     .k-spreadsheet-selection {
-        border-color: $header-selected-border;
-        background-color: rgba( $header-selected-bg, .25 );
-        box-shadow: inset 0 0 0 1px $panel-bg, 0 0 0 1px $header-selected-border;
+        border-color: $selected-bg;
+        background-color: rgba( $selected-bg, .25 );
+        box-shadow: inset 0 0 0 1px $panel-bg, 0 0 0 1px $selected-bg;
     }
 
 }
