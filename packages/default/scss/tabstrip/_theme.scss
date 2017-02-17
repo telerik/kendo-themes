@@ -6,20 +6,20 @@ $tabstrip-active-background-color: desaturate($widget-bg, 1%) !default;
 $tabstrip-disabled-color: darken($widget-bg, 27%) !default;
 
 @include exports('tabstrip/theme') {
-
     .k-tabstrip {
-
         .k-item {
             color: $link-text;
-        }
-        .k-item:hover,
-        .k-state-hover {
-            color: $link-hover-text;
-        }
-        .k-state-active {
-            border-color: $panel-border;
-            color: $panel-text;
-            background-color: $panel-bg;
+
+            &:hover,
+            &.k-state-hover {
+                color: $link-hover-text;
+            }
+
+            &.k-state-active {
+                border-color: $panel-border;
+                color: $panel-text;
+                background-color: $panel-bg;
+            }
         }
     }
 
