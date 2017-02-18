@@ -2,6 +2,10 @@
 
     // Theme
     .k-menu {
+        border-width: 0;
+        color: inherit;
+        background: none;
+
         .k-item {
             color: $link-text;
 
@@ -17,10 +21,9 @@
                 color: $list-item-selected-text;
             }
         }
-
-        &.k-context-menu {
-            @include appearance( popup );
-        }
+    }
+    .k-menu.k-context-menu {
+        @include appearance( popup );
     }
 
     .k-menu-group,
@@ -30,7 +33,6 @@
 
             &.k-state-hover {
                 @include appearance( hovered-list-item );
-                color: $list-item-hovered-text;
             }
 
             &.k-state-active {

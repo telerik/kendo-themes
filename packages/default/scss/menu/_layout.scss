@@ -2,68 +2,50 @@
 
     // Base
     .k-menu {
-        border-width: 0;
-        background: none;
         display: flex;
         flex-direction: row;
+        align-items: stretch;
         position: relative;
         cursor: default;
 
-        &.k-context-menu {
-            margin: 0;
-            padding: $popup-padding-y $popup-padding-x;
-            border-width: 1px;
-            border-style: solid;
-            font-size: $font-size;
-            line-height: $line-height;
-            box-sizing: content-box;
-
-            .k-item {
-                width: auto;
-            }
-        }
-
         // Item
         .k-item {
-            border: 1px solid transparent;
-            display: block;
+            border-width: 0;
+            border-style: solid;
+            border-color: inherit;
+            display: flex;
+            align-items: stretch;
             position: relative;
             user-select: none;
-            float: left;
-            width: 100%;
         }
 
         // Link
         .k-link {
-            padding: $nav-item-padding-y calc(#{$nav-item-padding-x} + #{$icon-size}) $nav-item-padding-y $nav-item-padding-x;
+            padding: $nav-item-padding-y $nav-item-padding-x;
             color: inherit;
             display: flex;
             flex-direction: row;
             align-items: center;
             position: relative;
 
+            .k-i-arrow-60-down {
+                margin-left: $icon-spacing;
+                margin-right: -$icon-spacing;
+            }
+
             .k-i-arrow-60-right {
+                margin: (-$icon-size / 2) 0 0;
                 position: absolute;
                 top: 50%;
-                margin-top: -$padding-x;
-                right: $padding-x;
+                right: $icon-spacing;
             }
         }
 
-        // Sub
-        .k-menu-group {
-            margin: 0;
-            padding: $popup-padding-y $popup-padding-x;
-            white-space: nowrap;
-            list-style: none;
-            display: none;
-            position: absolute;
-        }
-        .k-menu-group .k-menu-group {
-            padding: 0;
-        }
-        .k-menu-group .k-item {
-            border-width: 0;
+        // Images
+        .k-icon,
+        .k-image,
+        .k-sprite {
+            margin-right: $icon-spacing;
         }
 
         .k-separator {
@@ -85,13 +67,46 @@
     }
 
 
+    // Sub
+    .k-menu-group {
+        margin: 0;
+        padding: $popup-padding-y $popup-padding-x;
+        white-space: nowrap;
+        list-style: none;
+        display: none;
+        position: absolute;
+    }
+    .k-menu-group .k-menu-group {
+        padding: 0;
+    }
+
+
+    // Context menu
+    .k-menu.k-context-menu {
+        margin: 0;
+        padding: $popup-padding-y $popup-padding-x;
+        border-width: 1px;
+        border-style: solid;
+        box-sizing: content-box;
+    }
+
+
     // Orientation
-    .k-menu-horizontal {}
+    .k-menu-horizontal {
+
+        > .k-item {}
+    }
+    .k-menu-group,
     .k-menu-vertical {
         flex-direction: column;
 
         .k-item {
-            border-width: 0;
+            display: block;
+        }
+
+        .k-link {
+            padding: $list-item-padding-y $list-item-padding-x;
+            padding-right: addTwo( (2 * $list-item-padding-x), $icon-size);
         }
     }
 
