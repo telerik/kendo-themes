@@ -61,7 +61,7 @@ $toolbar-calc-size: #{$button-calc-size} + #{$toolbar-padding-y * 2} + 2px;
 $toolbar-inner-calc-size: #{$button-calc-size} + #{$toolbar-padding-y * 2};
 
 $list-item-padding-x: $dropdown-item-padding-x !default;
-$list-item-padding-y: 0 !default;
+$list-item-padding-y: 3px !default;
 
 $nav-item-margin: 0 !default;
 $nav-item-padding-x: $padding-x-lg !default;
@@ -278,3 +278,4 @@ $chart-area-opacity: .8 !default;
 //Icons
 $icon-size: 16px;
 $icon-size-lg: 32px;
+$icon-spacing: ($spacer / 2) !default;

@@ -2,13 +2,17 @@
 
     // Theme
     .k-menu {
-        border-color: $gray-lightest;
-        color: $navbar-light-color;
-        background-color: $gray-lightest;
+        padding: $padding-y $padding-x;
+        border-width: 0;
+        color: rgba( $header-text, .5 );
+        background-color: $header-bg;
 
-        .k-link {}
+        .k-item {}
+        .k-link {
+            padding: $padding-y;
+        }
         .k-item.k-state-hover > .k-link {
-            color: $navbar-light-hover-color;
+            color: rgba( $header-text, .7 );
         }
 
     }
@@ -24,6 +28,20 @@
             @include appearance( selected-list-item );
         }
 
+    }
+
+
+    // Orientation
+    .k-menu-horizontal {
+        .k-item {}
+    }
+    .k-menu-group,
+    .k-menu-vertical {
+        padding: $popup-padding-y $popup-padding-x;
+
+        .k-link {
+            padding: $list-item-padding-y $list-item-padding-x;
+        }
     }
 
 }
