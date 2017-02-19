@@ -139,25 +139,25 @@ $panel-border: rgba( black, .08 ) !default;
 
 
 // Popup
-$popup-text: $widget-text !default;
+$popup-text: $base-text !default;
 $popup-bg: lighten($base-bg, 1%) !default;
-$popup-border: rgba( black, .08 ) !default;
+$popup-border: $base-border !default;
 $popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
 // Header
 $header-text: $base-text !default;
 $header-bg: $base-bg !default;
-$header-border: darken( $header-bg, 2 ) !default;
+$header-border: $base-border !default;
 $header-gradient: null !default;
 
 $header-hovered-text: $hovered-text !default;
 $header-hovered-bg: $hovered-bg !default;
-$header-hovered-border: darken( $header-hovered-bg, 2 ) !default;
+$header-hovered-border: $hovered-border !default;
 $header-hovered-gradient: null !default;
 
 $header-selected-text: $selected-text !default;
 $header-selected-bg: $selected-bg !default;
-$header-selected-border: darken( $header-selected-bg, 2 ) !default;
+$header-selected-border: $selected-border !default;
 $header-selected-gradient: null !default;
 
 
