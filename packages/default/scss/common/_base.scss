@@ -80,6 +80,7 @@
         transform: translate(-50%, -50%);
     }
 
+
     // Off-screen container used during PDF export
     .k-pdf-export-shadow {
         position: absolute;
@@ -87,6 +88,12 @@
         left: -15000px;
         width: 14400px;
     }
+
+
+    // Flipping
+    .k-flip-h { transform: scaleX(-1); }
+    .k-flip-v { transform: scaleY(-1); }
+
 }
 
 

@@ -2,8 +2,6 @@
 
 @include exports( "common/icons" ) {
 
-    $icon-size: $font-size;
-
     @font-face {
         font-family: 'WebComponentsIcons';
         font-style: normal;
@@ -16,7 +14,7 @@
         height: 1em;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
-        font-size: 16px;
+        font-size: $icon-size;
         font-family: 'WebComponentsIcons';
         font-style: normal;
         font-variant: normal;
