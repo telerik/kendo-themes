@@ -45,14 +45,12 @@
             border-radius: 0;
         }
 
-    }
 
-
-    // Overflow container
-    .k-overflow-container {
-        .k-overflow-button {
-            background-image: none;
+        // Overflow anchor
+        .k-overflow-anchor {
+            border-width: 0;
         }
+
     }
 
 }

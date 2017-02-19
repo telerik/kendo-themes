@@ -119,4 +119,32 @@
             outline: none;
         }
     }
+
+}
+
+
+
+
+@include exports( "listcontainer/layout" ) {
+
+    .k-list-container {
+
+        .k-button {
+            padding: $list-item-padding-y $list-item-padding-x;
+            border-width: 0;
+            border-radius: 0;
+            color: inherit;
+            background-color: transparent;
+            background-image: none;
+            line-height: inherit;
+            display: flex;
+            justify-content: flex-start;
+
+            .k-icon {
+                margin: 0 $icon-spacing 0 0;
+            }
+        }
+
+    }
+
 }

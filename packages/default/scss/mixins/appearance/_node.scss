@@ -26,8 +26,6 @@ $_node-imported: false !default;
         background-color: $list-item-bg;
     }
     %appearance_focused-list-item {
-        color: $list-item-text;
-        background-color: $list-item-bg;
         box-shadow: $list-item-focused-shadow;
     }
     %appearance_hovered-list-item {

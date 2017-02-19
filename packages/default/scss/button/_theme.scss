@@ -1,4 +1,4 @@
-@include exports('button/theme') {
+@include exports( "button/theme" ) {
 
     // Default button
     .k-button {
@@ -13,9 +13,7 @@
 
         // Pressed state
         &:active,
-        &.k-state-active,
-        &:active:focus,
-        &.k-state-active.k-state-focused {
+        &.k-state-active {
             @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
             box-shadow: inset $button-pressed-shadow;
         }
@@ -25,6 +23,7 @@
         &.k-state-focused {
             box-shadow: $button-focused-shadow;
         }
+
     }
 
     // Primary button
@@ -39,9 +38,7 @@
 
         // Active state
         &:active,
-        &.k-state-active,
-        &:active:focus,
-        &.k-state-active.k-state-focused {
+        &.k-state-active {
             @include appearance( pressed-primary-button );
             box-shadow: inset $primary-button-pressed-shadow;
         }
@@ -56,14 +53,15 @@
 
     //DropDown Button
     .k-dropdown-button {
-        &:focus > .k-button,
-        &.k-state-focused > .k-button {
-            box-shadow: $button-focused-shadow;
-        }
 
         &:active > .k-button:not(:disabled),
         &.k-state-active > .k-button:not(:disabled) {
             box-shadow: inset $button-pressed-shadow;
+        }
+
+        &:focus > .k-button,
+        &.k-state-focused > .k-button {
+            box-shadow: $button-focused-shadow;
         }
 
         .k-widget {

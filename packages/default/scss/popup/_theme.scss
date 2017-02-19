@@ -70,3 +70,42 @@ $popup-text: $normal-text-color !default;
         box-shadow: none;
     }
 }
+
+
+
+
+@include exports( "listcontainer/theme" ) {
+
+
+    .k-list-container {
+
+        // Button normal state
+        .k-button {
+            box-shadow: none;
+        }
+
+
+        // Button hover state
+        .k-button:hover,
+        .k-button.k-state-hover {
+            @include appearance( hovered-list-item );
+            background-image: none;
+        }
+
+        // Button pressed state
+        .k-button:active,
+        .k-button.k-state-active {
+            @include appearance( selected-list-item );
+            background-image: none;
+        }
+
+
+        // Button focus state
+        .k-button:focus,
+        .k-button.k-state-focused {
+            box-shadow: $list-item-focused-shadow;
+        }
+
+    }
+
+}
