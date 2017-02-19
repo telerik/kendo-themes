@@ -8,7 +8,7 @@
         overflow: visible;
 
         .k-selected-color {
-            padding: $padding-y;
+            padding: $button-padding-y;
             width: $form-line-height-em;
             height: $form-line-height-em;
             line-height: 0;
@@ -30,15 +30,21 @@
             }
         }
 
-        .k-select {
-            .k-icon {}
-        }
-
         .k-tool-icon {
-            padding: 3px 3px 2px;
-            width: $form-line-height-em;
-            height: $form-line-height-em;
+            padding: $button-padding-y;
+            width: button-inner-size();
+            height: button-inner-size();
+            border-width: 0 1px 0 0;
+            border-style: solid;
+            border-color: inherit;
+            box-sizing: border-box;
+            font-size: inherit;
             text-align: center;
+
+            &::before {
+                font-size: $icon-size;
+                line-height: 1;
+            }
 
             .k-selected-color {
                 display: inline-block;
@@ -50,17 +56,21 @@
             }
         }
 
+        .k-select {
+            .k-icon {}
+        }
+
+
         // Compact
         @include compact {
-            .k-selected-color {
-                padding: $input-padding-y-sm;
-            }
-
+            .k-selected-color,
+            .k-tool-icon,
             .k-select {
                 padding: $button-padding-y-sm;
             }
         }
     }
+
 }
 
 @include exports( "flatcolorpicker/layout" ) {
