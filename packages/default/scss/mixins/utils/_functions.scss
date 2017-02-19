@@ -50,7 +50,7 @@
 }
 
 
-@function button-inner-size( $multiplier: 1 ){
+@function button-inner-size( $multiplier: 1 ) {
     $_unit-padding: unit($button-padding-y);
     $_unit-line-height: unit($form-line-height-em);
 
