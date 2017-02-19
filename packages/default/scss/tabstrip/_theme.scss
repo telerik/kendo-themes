@@ -8,8 +8,10 @@ $tabstrip-disabled-color: darken($widget-bg, 27%) !default;
 @include exports('tabstrip/theme') {
 
     .k-tabstrip {
+
         .k-item {
             color: $link-text;
+            background-clip: padding-box;
 
             &:hover,
             &.k-state-hover {
@@ -21,6 +23,10 @@ $tabstrip-disabled-color: darken($widget-bg, 27%) !default;
                 color: $panel-text;
                 background-color: $panel-bg;
             }
+        }
+
+        > .k-content {
+            background-clip: padding-box;
         }
     }
 
