@@ -9,16 +9,16 @@
     $window-border: rgba(0, 0, 0, .08) !default;
     $window-shadow-color: rgba(0, 0, 0, .3) !default; // remove the -color part
     $window-shadow: 0 3px 3px 0 rgba(0, 0, 0, .06) !default;
-    $window-focused-box-shadow: 1px 1px 7px 1px $window-shadow-color !default;
+    $window-focused-shadow: 1px 1px 7px 1px $window-shadow-color !default;
 
     $dialog-normal-button-bg: $bg-color !default;
     $dialog-normal-button-hover-bg: $hovered-bg !default;
     $dialog-primary-button-focus: rgba( $accent, .3 ) !default;
-    $dialog-normal-button-focus-box-shadow: inset 0 0 0 2px $button-border !default;
+    $dialog-normal-button-focus-shadow: inset 0 0 0 2px $button-border !default;
     $dialog-primary-button-bg: $accent-contrast !default;
     $dialog-primary-button-text: $accent !default;
-    $dialog-primary-button-focus-box-shadow: inset 0 0 0 2px $dialog-primary-button-focus !default;
-    $dialog-primary-button-hover-focus-box-shadow: inset 0 0 0 2px $button-border !default;
+    $dialog-primary-button-focus-shadow: inset 0 0 0 2px $dialog-primary-button-focus !default;
+    $dialog-primary-button-hover-focus-shadow: inset 0 0 0 2px $button-border !default;
 
     .k-window {
         border-color: $window-border;
@@ -36,7 +36,7 @@
         }
 
         &.k-state-focused {
-            box-shadow: $window-focused-box-shadow;
+            box-shadow: $window-focused-shadow;
         }
 
         .k-dialog-action {
@@ -73,7 +73,7 @@
 
                 &:focus,
                 &.k-state-focused {
-                    box-shadow: $dialog-normal-button-focus-box-shadow;
+                    box-shadow: $dialog-normal-button-focus-shadow;
                 }
             }
 
@@ -89,7 +89,7 @@
 
                     &:focus,
                     &.k-state-focused {
-                        box-shadow: $dialog-primary-button-hover-focus-box-shadow;
+                        box-shadow: $dialog-primary-button-hover-focus-shadow;
                     }
                 }
 
@@ -100,7 +100,7 @@
 
                 &:focus,
                 &.k-state-focused {
-                    box-shadow: $dialog-primary-button-focus-box-shadow;
+                    box-shadow: $dialog-primary-button-focus-shadow;
                 }
             }
         }

@@ -13,7 +13,7 @@ $error-bars-background: rgba(0, 0, 0, .5) !default;
 
 $chart-selection-marque-background: $series-a !default;
 $selection-border-color: rgba(0, 0, 0, .08) !default;
-$selection-box-shadow: inset 0 1px 7px rgba(0, 0, 0, .15) !default;
+$selection-shadow: inset 0 1px 7px rgba(0, 0, 0, .15) !default;
 
 @include exports('dataviz/charts/theme') {
     // Exported variables
@@ -82,7 +82,7 @@ $selection-box-shadow: inset 0 1px 7px rgba(0, 0, 0, .15) !default;
 
     .k-selection {
         border-color: $selection-border-color;
-        box-shadow: $selection-box-shadow;
+        box-shadow: $selection-shadow;
     }
 
     .k-selection-bg {

@@ -1,5 +1,5 @@
 // TODO: list item variables
-$list-container-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
+$list-container-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
 
 $popup-text: $normal-text-color !default;
 
@@ -11,7 +11,7 @@ $popup-text: $normal-text-color !default;
     .k-popup > .k-group-header,
     .k-popup > .k-virtual-wrap > .k-group-header {
         border-bottom-color: $border-color;
-        box-shadow: $list-container-box-shadow;
+        box-shadow: $list-container-shadow;
     }
     .k-popup .k-list .k-item > .k-group {
         background: $text-color;
@@ -54,7 +54,7 @@ $popup-text: $normal-text-color !default;
 
     .k-list-optionlabel {
         border-color: $popup-border;
-        box-shadow: $list-container-box-shadow;
+        box-shadow: $list-container-shadow;
     }
 
     .k-animation-container {

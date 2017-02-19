@@ -3,8 +3,8 @@ $switch-off-color: $text-color !default;
 $switch-border-color: $border-color !default;
 $switch-border-radius: ($switch-size / 2) !default;
 $switch-hover-border-color: $hovered-border !default;
-$switch-handle-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .06) !default;
-$switch-focus-box-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
+$switch-handle-shadow: 0 2px 4px 0 rgba(0, 0, 0, .06) !default;
+$switch-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 
 @include exports('switch/theme') {
     .k-switch,
@@ -34,7 +34,7 @@ $switch-focus-box-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 
     .k-switch-handle {
         @include appearance( button );
-        box-shadow: $switch-handle-box-shadow;
+        box-shadow: $switch-handle-shadow;
         border-radius: 50%;
     }
 
@@ -77,7 +77,7 @@ $switch-focus-box-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 
     .k-switch {
         &:active {
-            box-shadow: $switch-focus-box-shadow;
+            box-shadow: $switch-focus-shadow;
         }
 
         &:focus {

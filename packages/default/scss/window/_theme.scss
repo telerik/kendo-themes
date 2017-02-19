@@ -1,12 +1,12 @@
 // TODO: extract or remove modal variables
 $modal-content-bg: $widget-bg !default;
-$modal-content-xs-box-shadow: 0 3px 9px rgba( 0, 0, 0, .5 ) !default;
+$modal-content-xs-shadow: 0 3px 9px rgba( 0, 0, 0, .5 ) !default;
 $modal-header-border-color: transparent !default;
 
 @include exports("window/theme") {
 
     .k-window {
-        @include box-shadow($modal-content-xs-box-shadow);
+        @include box-shadow($modal-content-xs-shadow);
         background-color: $modal-content-bg;
 
         .k-window-action {
