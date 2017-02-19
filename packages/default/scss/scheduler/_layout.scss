@@ -115,6 +115,8 @@ $modal-inner-padding: 1em;
             border: 0;
             margin-left: 0;
         }
+        .k-nav-today { @include border-radius( $border-radius 0 0 $border-radius ); }
+        .k-nav-next { @include border-radius( 0 $border-radius $border-radius 0 ); }
 
         .k-rtl & {
             .k-i-arrow-60-left,
@@ -153,6 +155,21 @@ $modal-inner-padding: 1em;
     .k-scheduler-views {
         @extend %ul-button-group;
 
+        li:first-child { @include border-radius( $border-radius ); }
+        li:first-child + li { @include border-radius( $border-radius 0 0 $border-radius ); }
+        li:last-child { @include border-radius( 0 $border-radius $border-radius 0 ); }
+
+        &.k-state-expanded {
+            li {
+                margin: 0;
+                border-radius: 0;
+            }
+            li + li { margin-top: -1px; }
+            li:first-child { @include border-radius( $border-radius $border-radius 0 0 ); }
+            li:first-child + li { border-radius: 0; }
+            li:last-child { @include border-radius( 0 0 $border-radius $border-radius ); }
+        }
+
         .k-current-view { display: none; }
         .k-current-view .k-link::after {
             content: "";
@@ -185,6 +202,10 @@ $modal-inner-padding: 1em;
     // Scheduler footer
     .k-scheduler-footer {
         @extend %ul-button-group;
+
+        li {
+            @include border-radius( $border-radius );
+        }
     }
 
 
@@ -251,6 +272,7 @@ $modal-inner-padding: 1em;
 
     // Appointments
     .k-event {
+        @include border-radius( $border-radius );
         min-height: $line-height-em;
         border-width: 1px;
         border-style: solid;

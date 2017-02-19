@@ -25,8 +25,6 @@ $modal-header-border-color: #cccccc;
 
             &.k-state-hover { @include appearance( hovered-button ); }
         }
-        .k-nav-today { @include border-radius( $border-radius 0 0 $border-radius ); }
-        .k-nav-next { @include border-radius( 0 $border-radius $border-radius 0 ); }
     }
 
 
@@ -39,21 +37,6 @@ $modal-header-border-color: #cccccc;
             &.k-state-hover { @include appearance( hovered-button ); }
             &.k-state-selected { @include appearance( pressed-button ); }
         }
-        li:first-child { @include border-radius( $border-radius ); }
-        li:first-child + li { @include border-radius( $border-radius 0 0 $border-radius ); }
-        li:last-child { @include border-radius( 0 $border-radius $border-radius 0 ); }
-
-
-        &.k-state-expanded {
-            li {
-                margin: 0;
-                border-radius: 0;
-            }
-            li + li { margin-top: -1px; }
-            li:first-child { @include border-radius( $border-radius $border-radius 0 0 ); }
-            li:first-child + li { border-radius: 0; }
-            li:last-child { @include border-radius( 0 0 $border-radius $border-radius ); }
-        }
     }
 
 
@@ -62,7 +45,6 @@ $modal-header-border-color: #cccccc;
 
         li {
             @include appearance( button );
-            @include border-radius( $border-radius );
 
             &.k-state-hover { @include appearance( hovered-button ); }
         }
@@ -78,8 +60,6 @@ $modal-header-border-color: #cccccc;
 
     // Appointments
     .k-event {
-        @include border-radius( $border-radius );
-
         @include appearance( selected-node );
     }
     .k-event-inverse {
