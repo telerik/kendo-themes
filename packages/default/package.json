@@ -2,10 +2,20 @@
   "name": "@progress/kendo-theme-default",
   "description": "SASS resources for the default Kendo UI theme",
   "version": "2.0.0",
+  "author": "Progress",
+  "license": "Apache-2.0",
   "keywords": [
     "Kendo UI",
     "Theme"
   ],
+  "main": "dist.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telerik/kendo-theme-default.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npm.telerik.com"
+  },
   "scripts": {
     "lint": "sass-lint -v -c ./sass-lint.yml",
     "start": "webpack-dev-server",
@@ -15,9 +25,6 @@
     "test": "npm run lint && npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "main": "dist.css",
-  "author": "Progress",
-  "license": "Apache-2.0",
   "devDependencies": {
     "@telerik/kendo-common-tasks": "^2.0.0",
     "cz-conventional-changelog": "^1.1.5",
@@ -28,9 +35,6 @@
     "semantic-release": "^4.3.5",
     "validate-commit-msg": "^1.1.1",
     "webpack": "^1.13.1"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npm.telerik.com"
   },
   "config": {
     "commitizen": {
@@ -56,9 +60,5 @@
       "warnOnFail": false,
       "maxSubjectLength": 100
     }
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/telerik/kendo-theme-default.git"
   }
 }
