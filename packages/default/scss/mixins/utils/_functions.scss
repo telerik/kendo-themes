@@ -1,0 +1,48 @@
+@function button-inner-size( $multiplier: 1 ){
+    $_unit-padding: unit($button-padding-y);
+    $_unit-line-height: unit($form-line-height-em);
+
+    $_padding: $multiplier * (2 * $button-padding-y);
+    $_line-height: $multiplier * $form-line-height-em;
+
+    // if all units are same type
+    @if $_unit-padding == $_unit-line-height {
+        @return $_padding + $_line-height;
+    }
+
+    // Fall back to calc
+    @return calc( #{$_padding} + #{$_line-height} );
+}
+
+
+@function button-size( $multiplier: 1 ) {
+    $_unit-border: unit(1px);
+    $_unit-padding: unit($button-padding-y);
+    $_unit-line-height: unit($form-line-height-em);
+
+    $_border: $multiplier * ( 2 * 1px );
+    $_padding: $multiplier * (2 * $button-padding-y);
+    $_line-height: $multiplier * $form-line-height-em;
+
+    // if all units are same type
+    @if $_unit-border == $_unit-padding == $_unit-line-height {
+        @return $_border + $_padding + $_line-height;
+    }
+
+    // if border and padding are same type
+    @if $_unit-border == $_unit-padding {
+        @return calc( #{$_border + $_padding} + #{$_line-height} );
+    }
+
+    // if border and line-height are same type
+    @if $_unit-border == $_unit-line-height {
+        @return calc( #{$_border + $_line-height} + #{$_padding} );
+    }
+
+    @if $_unit-padding == $_unit-line-height {
+        @return calc( #{$_border} + #{$_padding + $_line-height} );
+    }
+
+    // Fall back to calc
+    @return calc( #{$_border} + #{$_padding} + #{$_line-height} );
+}
