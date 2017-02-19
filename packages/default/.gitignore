@@ -6,3 +6,4 @@ examples/**/build/
 .tmp/
 yarn.lock
 build/custom.js
+.vscode/
