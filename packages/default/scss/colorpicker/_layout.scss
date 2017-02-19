@@ -1,16 +1,33 @@
 @include exports("colorpicker/layout") {
+
     .k-colorpicker {
-        position: relative;
-        display: inline-block;
         width: auto;
-        overflow: visible;
         border-width: 0;
+        display: inline-block;
+        position: relative;
+        overflow: visible;
 
         .k-selected-color {
             padding: $padding-y;
             width: $form-line-height-em;
             height: $form-line-height-em;
             line-height: 0;
+            position: relative;
+            overflow: hidden;
+
+            .k-i-line {
+                border-top: 1px solid $error;
+                width: 200%;
+                height: 200%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-33%, -33%) rotateZ(45deg);
+                transform-origin: 0 0;
+            }
+            .k-i-line::before {
+                display: none;
+            }
         }
 
         .k-select {
@@ -47,14 +64,14 @@
 }
 
 @include exports( "flatcolorpicker/layout" ) {
+
     .k-flatcolorpicker {
         padding: 0 0 $spacer;
         width: 250px;
         border-radius: $border-radius;
-
-        > .k-slider {
-            margin: 1em auto 0;
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
 
         .k-draghandle {
             width: $spacer;
@@ -65,17 +82,41 @@
             box-sizing: border-box;
         }
 
+        // Selected color
         .k-selected-color {
+            border-width: 0 0 1px;
+            border-style: solid;
+            border-color: inherit;
             background-position: 50% 50%;
-            text-align: right;
         }
-
+        .k-color-input {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+        }
         .k-color-value {
-            padding: $input-padding-y $input-padding-x-sm;
-            width: 70%;
+            margin: 0 0 0 button-inner-size(2);
+            padding: $input-padding-y $input-padding-x;
+            width: 100%;
             border: 0;
-            font-family: $font-family-monospace;
+            box-sizing: border-box;
+            font-size: inherit;
             line-height: $form-line-height;
+            font-family: $font-family-monospace;
+            flex: 1;
+        }
+        .k-clear-color-container {
+            display: flex;
+            flex-direction: row;
+        }
+        .k-clear-color {
+            flex: 1;
+        }
+        .k-color-value + .k-clear-color {
+            flex: none;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
 
         .k-hsv-rectangle {
@@ -103,6 +144,9 @@
         }
 
         // Sliders
+        > .k-slider {
+            margin: $spacer $spacer 0;
+        }
         .k-hue-slider,
         .k-transparency-slider {
             display: block;
@@ -140,6 +184,13 @@
         .k-slider-horizontal {
             width: 90%;
             height: 20px;
+        }
+
+
+        // Buttons
+        .k-controls {
+            margin: $spacer $spacer 0;
+            text-align: center;
         }
     }
 }
