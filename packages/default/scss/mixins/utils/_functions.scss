@@ -73,3 +73,10 @@
     }
     @return $result;
 }
+
+
+@function contrast($in, $black: #000000, $white: #ffffff) {
+    $gray: red(grayscale($in));
+    $out: if($gray > 128, $black, $white);
+    @return $out;
+}
