@@ -6,6 +6,7 @@ $tabstrip-active-background-color: desaturate($widget-bg, 1%) !default;
 $tabstrip-disabled-color: darken($widget-bg, 27%) !default;
 
 @include exports('tabstrip/theme') {
+
     .k-tabstrip {
         .k-item {
             color: $link-text;
@@ -19,6 +20,37 @@ $tabstrip-disabled-color: darken($widget-bg, 27%) !default;
                 border-color: $panel-border;
                 color: $panel-text;
                 background-color: $panel-bg;
+            }
+        }
+    }
+
+
+    // Tabstrip variants
+    .k-tabstrip-top {
+        > .k-tabstrip-items {
+            .k-item.k-state-active {
+                border-bottom-color: $panel-bg;
+            }
+        }
+    }
+    .k-tabstrip-bottom {
+        > .k-tabstrip-items {
+            .k-item.k-state-active {
+                border-top-color: $panel-bg;
+            }
+        }
+    }
+    .k-tabstrip-left {
+        > .k-tabstrip-items {
+            .k-item.k-state-active {
+                border-right-color: $panel-bg;
+            }
+        }
+    }
+    .k-tabstrip-right {
+        > .k-tabstrip-items {
+            .k-item.k-state-active {
+                border-left-color: $panel-bg;
             }
         }
     }

@@ -71,7 +71,12 @@
         &.k-tabstrip-scrollable {
             position: relative;
 
+            > .k-content {
+                border-width: 1px;
+            }
+
             > .k-tabstrip-items {
+                border-width: 0;
                 white-space: nowrap;
                 overflow: hidden;
             }
@@ -95,6 +100,7 @@
         }
     }
 
+
     // Tabstrip variants
     .k-tabstrip-top {
         > .k-tabstrip-items {
@@ -116,15 +122,12 @@
 
         > .k-content {
             @include border-radius( 0 0 $border-radius $border-radius);
-            margin-top: -1px;
             border-top-width: 0;
         }
     }
-
     .k-tabstrip-bottom {
         > .k-tabstrip-items {
             border-top-width: 1px;
-            margin-top: -1px;
 
             .k-item {
                 @include border-radius( 0 0 $border-radius $border-radius );
@@ -145,7 +148,6 @@
             border-bottom-width: 0;
         }
     }
-
     .k-tabstrip-left {
         flex-direction: row;
 
@@ -171,13 +173,12 @@
         > .k-content {
             @include border-radius(0 $border-radius $border-radius 0);
             // sass-lint:disable no-important
-            margin: 0 -1px 0 0 !important;
+            margin: 0 !important;
             // sass-lint:enable no-important
             border-left-width: 0;
         }
 
     }
-
     .k-tabstrip-right {
         flex-direction: row-reverse;
 
@@ -203,7 +204,7 @@
         > .k-content {
             @include border-radius($border-radius 0 0 $border-radius);
             // sass-lint:disable no-important
-            margin: 0 0 0 -1px !important;
+            margin: 0 !important;
             // sass-lint:enable no-important
             border-right-width: 0;
         }
