@@ -1,5 +1,14 @@
 @include exports('grid/layout') {
 
+    $input-border-width: 1px;
+    $filter-rows-span-size: calc( #{$line-height-em} + #{$input-padding-y * 2} + #{$input-border-width * 2}) !default;
+
+    $group-dropclue-size: 6px;
+    $group-dropclue-line-size: $group-dropclue-size / 3;
+
+    $button-border-width: 1px;
+    $footer-cells-height: calc(#{$line-height-em} + #{$button-padding-y * 2} + #{$button-border-width * 2}) !default;
+
     .k-grid {
         display: block;
         position: relative;
@@ -46,9 +55,6 @@
     }
 
     // Footer height
-    $button-border-width: 1px;
-    $footer-cells-height: calc(#{$line-height-em} + #{$button-padding-y * 2} + #{$button-border-width * 2}) !default;
-
     .k-footer-template td {
         height: $footer-cells-height;
     }
@@ -204,9 +210,6 @@
     }
 
     /* Filter row */
-    $input-border-width: 1px;
-    $filter-rows-span-size: calc( #{$line-height-em} + #{$input-padding-y * 2} + #{$input-border-width * 2}) !default;
-
     .k-filtercell,
     .k-filtercell > span,
     .k-filtercell .k-widget {
@@ -345,9 +348,6 @@
     .k-header.k-drag-clue {
         overflow: hidden;
     }
-
-    $group-dropclue-size: 6px;
-    $group-dropclue-line-size: $group-dropclue-size / 3;
 
     .k-grouping-dropclue {
         position: absolute;
