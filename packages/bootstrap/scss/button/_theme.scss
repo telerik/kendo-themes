@@ -3,16 +3,24 @@
     // Default button
     .k-button {
         @include appearance( button );
+        transition: $transition;
 
         // Hovoer state
         &:hover,
         &.k-state-hover { @include appearance( hovered-button ); }
 
+        // Focused
+        &:focus,
+        &.k-state-focus {
+            box-shadow: $button-focused-shadow;
+        }
+
         // Active state
         &:active,
-        &.k-state-active { @include appearance( pressed-button ); }
-
-        // TODO: add focused state
+        &.k-state-active {
+            @include appearance( pressed-button );
+            box-shadow: $button-focused-shadow, $button-pressed-shadow;
+        }
 
     }
 
@@ -25,11 +33,18 @@
         &:hover,
         &.k-state-hover { @include appearance( hovered-primary-button ); }
 
+        // Focused
+        &:focus,
+        &.k-state-focus {
+            box-shadow: $primary-button-focused-shadow;
+        }
+
         // Active state
         &:active,
-        &.k-state-active { @include appearance( pressed-primary-button ); }
-
-        // TODO: add focused state
+        &.k-state-active {
+            @include appearance( pressed-primary-button );
+            box-shadow: $primary-button-focused-shadow, $button-pressed-shadow;
+        }
 
     }
 

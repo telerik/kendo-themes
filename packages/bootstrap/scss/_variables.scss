@@ -106,7 +106,7 @@ $selected-bg: $accent !default;
 $selected-border: darken( $selected-bg, 12% ) !default;
 $selected-gradient: null !default;
 
-$transition: background-color .2s ease !default;
+$transition: all .2s ease !default;
 
 $success: $brand-success !default;
 $info: $brand-info !default;
@@ -177,7 +177,7 @@ $button-pressed-border: darken( $button-border, 25% ) !default;
 $button-pressed-gradient: null !default;
 $button-pressed-shadow: $btn-active-box-shadow !default;
 
-$button-focused-shadow: $btn-focus-box-shadow !default;
+$button-focused-shadow: 0 0 0 2px rgba($button-border, .5) !default;
 
 
 // Primary button
@@ -195,6 +195,8 @@ $primary-button-pressed-text: $primary-button-text !default;
 $primary-button-pressed-bg: darken( $primary-button-bg, 17% ) !default;
 $primary-button-pressed-border: darken( $primary-button-border, 25% ) !default;
 $primary-button-pressed-gradient: null !default;
+
+$primary-button-focused-shadow: 0 0 0 2px rgba($primary-button-border, .5);
 
 
 // Toolbar
