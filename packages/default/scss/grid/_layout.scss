@@ -415,6 +415,12 @@
         display: inline-block;
         vertical-align: middle;
     }
+}
+
+
+
+
+@include exports( "filtermenu/layout" ) {
 
     .k-filter-menu {
         padding: .5em;
@@ -468,4 +474,5 @@
             cursor: pointer;
         }
     }
+
 }
