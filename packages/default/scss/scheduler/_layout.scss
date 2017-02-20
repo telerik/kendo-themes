@@ -97,7 +97,6 @@ $modal-inner-padding: 1em;
 
         li .k-link {
             box-sizing: border-box;
-            height: calc( #{$button-inner-calc-size} );
         }
 
         // Prev / next
@@ -105,7 +104,8 @@ $modal-inner-padding: 1em;
         .k-nav-next {
             .k-link {
                 padding: $button-padding-y;
-                width: calc( #{$button-inner-calc-size} );
+                width: button-inner-size();
+                height: button-inner-size();
             }
         }
 
