@@ -4,6 +4,14 @@
     .k-spreadsheet {}
 
 
+    // Header
+    .k-spreadsheet .k-tabstrip-wrapper {}
+
+
+    // Quick access toolbar
+    .k-spreadsheet-quick-access-toolbar {}
+
+
     // Row / column headers
     .k-spreadsheet-top-corner {
         @include appearance( header );
@@ -34,9 +42,9 @@
         background-color: rgba( $header-selected-bg, .25 );
     }
     .k-spreadsheet-selection {
-        border-color: $accent;
-        background-color: rgba( $accent, .25 );
-        box-shadow: inset 0 0 0 1px $panel-bg, 0 0 0 1px $accent;
+        border-color: $selected-bg;
+        background-color: rgba( $selected-bg, .25 );
+        box-shadow: inset 0 0 0 1px $panel-bg, 0 0 0 1px $selected-bg;
     }
 
 }

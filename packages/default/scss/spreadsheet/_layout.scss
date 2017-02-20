@@ -34,7 +34,7 @@
 
     // Quick access toolbar
     .k-spreadsheet-quick-access-toolbar {
-        padding: $padding-y;
+        padding: $toolbar-padding-y;
         display: inline-flex;
         flex-direction: row;
         position: absolute;
@@ -47,13 +47,14 @@
             border-color: transparent;
             color: inherit;
             background-color: transparent;
+            background-image: none;
         }
     }
 
 
     // Tabstrip
     .k-spreadsheet-tabstrip {
-        padding-top: $padding-y;
+        padding-top: $toolbar-padding-y;
     }
     .k-spreadsheet-tabstrip .k-loading {
         display: none;
