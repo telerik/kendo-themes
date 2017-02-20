@@ -75,9 +75,8 @@
         .k-gantt-pdf,
         .k-gantt-create {
             padding: $button-padding-y;
-            width: $line-height-em;
-            height: $line-height-em;
-            box-sizing: content-box;
+            width: button-size();
+            height: button-size();
 
             .k-icon {
                 margin: 0;
