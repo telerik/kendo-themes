@@ -423,13 +423,13 @@
 @include exports( "filtermenu/layout" ) {
 
     .k-filter-menu {
-        padding: .5em;
+        padding: $padding-y-sm;
 
         .k-widget,
         .k-textbox {
-            display: block;
+            margin: ( $spacer-y / 2 ) 0 0;
             width: 100%;
-            margin: .19em 0 0;
+            display: block;
         }
 
         .k-textbox {
