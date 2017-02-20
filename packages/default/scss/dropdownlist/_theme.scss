@@ -1,9 +1,13 @@
-@include exports("dropdownlist/theme") {
+@include exports( "dropdownlist/theme" ) {
 
     .k-dropdown {
+
         .k-dropdown-wrap {
             @include appearance( button );
-            @include border-radius( $border-radius );
+        }
+        .k-select {
+            padding: 0;
+            width: button-inner-size();
         }
 
         > :hover,
@@ -11,11 +15,10 @@
             @include appearance( hovered-button );
         }
 
-        .k-state-active { @include appearance( active-button ); }
+        .k-state-active {}
 
-        .k-state-focused {
-            @include appearance( focused-input );
-        }
+        .k-state-focused {}
+
     }
 
 }
