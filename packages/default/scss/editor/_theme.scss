@@ -29,6 +29,7 @@
     .editorToolbarWindow.k-header.k-window-content {
         a.k-tool {
             @include appearance( button );
+            border-width: 0;
             background-image: none;
             background-color: transparent;
 

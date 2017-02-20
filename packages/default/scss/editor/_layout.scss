@@ -93,8 +93,10 @@
         // Tools
         .k-tool {
             padding: $button-padding-y;
-            width: calc( #{$button-calc-size} );
-            height: calc( #{$button-calc-size} );
+            width: button-size();
+            height: button-size();
+            border-width: 1px;
+            border-style: solid;
             box-sizing: border-box;
             display: inline-flex;
             flex-direction: row;
