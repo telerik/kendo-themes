@@ -425,6 +425,13 @@
     .k-filter-menu {
         padding: $padding-y-sm;
 
+        .k-button {
+            margin: ( $spacer-y / 2 ) 1% 0;
+            width: 48%;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+
         .k-widget,
         .k-textbox {
             margin: ( $spacer-y / 2 ) 0 0;
@@ -447,15 +454,6 @@
             line-height: normal;
             white-space: nowrap;
             margin: 1em 0 .3em;
-        }
-
-        .k-button {
-            width: 48%;
-            margin: .5em 4% 0 0;
-
-            + .k-button {
-                margin-right: 0;
-            }
         }
     }
     .k-multicheck-wrap {
