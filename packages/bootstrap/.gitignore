@@ -6,3 +6,5 @@ tmp
 .DS_Store
 yarn.locknpm-debug.log
 npm-debug.log
+.vscode/
+debug.log
