@@ -458,20 +458,26 @@
             }
         }
     }
-
     .k-multicheck-wrap {
+        max-height: 300px;
         overflow: auto;
         overflow-x: hidden;
         white-space: nowrap;
-        max-height: 300px;
 
-        .k-item {
-            line-height: 2.2em;
+        .k-item {}
+        .k-item + .k-item {
+            margin-top: ($spacer-y / 2);
         }
 
         .k-label {
-            display: block;
+            margin: 0;
+            display: flex;
+            align-items: center;
             cursor: pointer;
+
+            input {
+                margin: 0 ($spacer-y / 4);
+            }
         }
     }
 
