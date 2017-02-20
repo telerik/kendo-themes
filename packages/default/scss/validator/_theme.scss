@@ -2,10 +2,12 @@ $validator-warning-bg: $warning !default;
 $validator-warning-text: darken($text-color, 40%) !default;
 $validator-warning-border: $validator-warning-bg !default;
 
-@include exports("validator/theme") {
+@include exports( "validator/theme" ) {
+
     .k-tooltip-validation {
-        border-color: $validator-warning-border;
-        color: $validator-warning-text;
-        background-color: $validator-warning-bg;
+        border-color: transparent;
+        color: $error;
+        background-color: transparent;
     }
+
 }
