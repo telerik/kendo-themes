@@ -161,7 +161,7 @@ $header-selected-gradient: null !default;
 // Button
 $button-text: $base-text !default;
 $button-bg: $base-bg !default;
-$button-border: $base-border !default;
+$button-border: darken( $base-border, 8 ) !default;
 $button-gradient: null !default;
 $button-shadow: $btn-box-shadow !default;
 
@@ -214,12 +214,12 @@ $input-shadow: null !default;
 
 $input-hovered-text: $input-text !default;
 $input-hovered-bg: $input-bg !default;
-$input-hovered-border: $hovered-border !default;
+$input-hovered-border: $input-border !default;
 $input-hovered-shadow: null !default;
 
 $input-focused-text: $input-text !default;
 $input-focused-bg: $input-bg !default;
-$input-focused-border: $selected-border !default;
+$input-focused-border: lighten( $accent, 25 ) !default;
 $input-focused-shadow: $input-box-shadow-focus !default;
 
 

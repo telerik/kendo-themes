@@ -21,6 +21,7 @@
     .k-input,
     .k-textbox {
         @include appearance( "input" );
+        transition: $transition;
 
         &:hover,
         &.k-state-hover {
@@ -29,7 +30,6 @@
 
         &:focus,
         &.k-state-focus {
-            color: $input-focused-text;
             border-color: $input-focused-border;
         }
 

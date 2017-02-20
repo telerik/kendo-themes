@@ -3,15 +3,17 @@
     // Appearance
     .k-multiselect {
         @include appearance( input );
-        @include border-radius( $border-radius );
+        transition: $transition;
 
-        li {
-            @include border-radius( $border-radius * .75 );
+        &.k-state-hover {
+            @include appearance( hovered-input );
         }
 
-        &.k-state-hover { @include appearance( hovered-input ); }
-        &.k-state-focus { @include appearance( focused-input ); }
-        &.k-disabled { @include appearance( disabled-input ); }
+        &.k-state-focused {
+            @include appearance( focused-input );
+            box-shadow: $button-focused-shadow;
+        }
+
     }
 
 }

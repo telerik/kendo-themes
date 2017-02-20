@@ -5,7 +5,7 @@
         @include appearance( button );
         transition: $transition;
 
-        // Hovoer state
+        // Hover state
         &:hover,
         &.k-state-hover { @include appearance( hovered-button ); }
 
@@ -29,7 +29,7 @@
     .k-button.k-primary {
         @include appearance( primary-button );
 
-        // Hovoer state
+        // Hover state
         &:hover,
         &.k-state-hover { @include appearance( hovered-primary-button ); }
 

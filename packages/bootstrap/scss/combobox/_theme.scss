@@ -6,12 +6,12 @@
         // Normal state
         .k-dropdown-wrap {
             @include appearance( input );
-            @include border-radius( $border-radius );
+            transition: $transition;
         }
         .k-select {
             @include appearance( button );
-            @include border-radius( 0 $border-radius $border-radius 0 );
             border-color: inherit;
+            transition: $transition;
         }
 
         // Hovered state
@@ -24,13 +24,18 @@
             }
         }
 
+        // Focused state
+        .k-state-focused {
+            @include appearance( focused-input );
+            box-shadow: $button-focused-shadow;
+        }
+
         // Selected state
-        .k-state-focused,
         .k-state-active {
             @include appearance( focused-input );
 
             .k-select {
-                @include appearance( active-button );
+                @include appearance( pressed-button );
                 border-color: inherit;
             }
         }

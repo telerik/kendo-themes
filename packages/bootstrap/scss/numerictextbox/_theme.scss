@@ -6,23 +6,22 @@
         // Normal state
         .k-numeric-wrap {
             @include appearance( input );
+            transition: $transition;
         }
         .k-select {
             @include appearance( button );
+            border-color: inherit;
         }
 
         // Hovered state
         .k-state-hover {
             @include appearance( hovered-input );
-
-            .k-select { @include appearance( hovered-button ); }
         }
 
-        // Selected state
-        .k-state-active {
+        // Focused state
+        .k-state-focused {
             @include appearance( focused-input );
-
-            .k-select { @include appearance( active-button ); }
+            box-shadow: $button-focused-shadow;
         }
 
     }
