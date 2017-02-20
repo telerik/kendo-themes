@@ -194,15 +194,20 @@
 
     .k-header > .k-grid-filter,
     .k-header > .k-header-column-menu {
+        padding: $button-padding-y;
+        width: button-size();
+        height: button-size();
+        border-width: 1px;
+        border-style: solid;
+        box-sizing: border-box;
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
         float: right;
-        margin: (-$header-padding-x / 2) (-$header-padding-x / 2) (-$header-padding-x / 2) 0;
-        padding: ($header-padding-x / 2) ($header-padding-x / 5);
         position: relative;
         z-index: 1;
-    }
-
-    .k-grid-filter .k-icon {
-        vertical-align: middle;
     }
 
     .k-grid-pager {
@@ -236,7 +241,7 @@
     }
 
     .k-filter-row .k-dropdown-operator {
-        width: $filter-rows-span-size;
+        width: button-size();
         right: calc(#{$form-line-height-em} + #{$icon-size});
     }
 
