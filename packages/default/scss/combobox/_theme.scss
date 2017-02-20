@@ -1,16 +1,17 @@
 @include exports("combobox/theme") {
 
     .k-combobox {
+
         // Normal state
         .k-dropdown-wrap {
             @include appearance( input );
-            @include border-radius( $border-radius );
         }
 
         .k-select {
             @include appearance( button );
-            @include border-radius( 0 $border-radius $border-radius 0 );
-            border-color: inherit;
+            padding: 0;
+            width: button-inner-size();
+            border-width: 0;
         }
 
         // Hovered state
@@ -20,7 +21,6 @@
 
             .k-select {
                 @include appearance( hovered-button );
-                border-color: inherit;
             }
         }
 
@@ -29,10 +29,7 @@
         .k-state-active {
             @include appearance( focused-input );
 
-            .k-select {
-                @include appearance( active-button );
-                border-color: inherit;
-            }
+            .k-select {}
         }
 
     }
