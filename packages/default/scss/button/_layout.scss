@@ -67,13 +67,10 @@
                 }
             }
         }
-
         &-icon {
-            width: $form-line-height-em;
-            height: $form-line-height-em;
+            width: button-size();
+            height: button-size();
             padding: $button-padding-y;
-            box-sizing: content-box;
-            justify-content: center;
         }
 
 
@@ -174,9 +171,6 @@
             @include border-radius( $border-radius );
         }
 
-        .k-button-icon {
-            height: auto;
-        }
     }
 
 
