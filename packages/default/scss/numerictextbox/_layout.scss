@@ -3,42 +3,13 @@
     // Base
     .k-numerictextbox {
 
-        .k-input {}
-
-        .k-select {
-            padding: 0;
-            width: calc( #{$button-inner-calc-size} );
-            border-width: 0 0 0 1px;
-            border-style: solid;
-            flex-direction: column;
-            align-items: stretch;
-        }
-        .k-link {
-            display: block;
-            padding: 0 $button-padding-y;
-            height: calc( (#{$button-inner-calc-size}) / 2 );
-            overflow: hidden;
-
-            > .k-icon {
-                height: 100%;
-                overflow: hidden;
-
-                &.k-i-arrow-60-down {
-                    transform: translateY(-$padding-y);
-                }
-            }
-        }
-
-
         // Compact
         @include compact {
-
             .k-input {
                 padding: $input-padding-y-sm $input-padding-x-sm;
             }
-
-            .k-select {
-                .k-link { padding: 0 $button-padding-y-sm; }
+            .k-link {
+                padding: 0 $button-padding-y-sm;
             }
         }
     }
