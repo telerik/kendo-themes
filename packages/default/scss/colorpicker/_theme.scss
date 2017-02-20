@@ -7,7 +7,9 @@
             @include appearance( button );
         }
         .k-select {
-            border-color: inherit;
+            padding: 0;
+            width: button-inner-size();
+            border-width: 0;
         }
 
         // Hovered state

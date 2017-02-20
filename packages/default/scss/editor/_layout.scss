@@ -248,23 +248,7 @@
         opacity: .5;
     }
 
-    .k-editor-widget .k-colorpicker {
-        display: inline-flex;
-
-        .k-picker-wrap {
-            align-items: center;
-
-            .k-tool-icon {
-                padding: calc(#{$button-padding-x} - 2px);
-                width: 1em;
-                height: 1em;
-            }
-        }
-
-        .k-select {
-            padding: calc(#{$button-padding-x} - 2px);
-        }
-    }
+    .k-editor-widget .k-colorpicker {}
 
     .k-rtl .k-editor .k-editor-widget .k-dropdown-wrap {
         padding-left: 0;
