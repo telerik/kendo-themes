@@ -2,122 +2,73 @@
 
     // Datepicker
     .k-datepicker {
-        overflow: visible;
 
         // Compact
-        // sass-lint:disable mixins-before-declarations
         @include compact {
-
             .k-input {
                 padding: $input-padding-y-sm $input-padding-x-sm;
             }
-
             .k-select {
                 padding: $button-padding-y-sm;
             }
-        }
-        // sass-lint:enable mixins-before-declarations
-    }
-
-    .k-picker-wrap {
-        .k-input {
-            width: 100%;
-            border-radius: $border-radius 0 0 $border-radius;
         }
     }
 
     // Timepicker
     .k-timepicker {
+
         // Compact
-        // sass-lint:disable mixins-before-declarations
         @include compact {
             .k-input {
                 padding: $input-padding-y-sm $input-padding-x-sm;
             }
         }
-        // sass-lint:enable mixins-before-declarations
     }
 
     // Datetimepicker
     .k-datetimepicker {
+
         .k-select {
-            //width: $line-height-em * 2;
-            // TODO: use calc or theme
-            width: 57px; /* (4*$padding-y) + 1px(separator) + 32px  (2*icons-width) */
-            box-sizing: border-box;
-            padding: 0 $padding-y-lg;
-            justify-content: space-between;
+            padding: 0;
+            border-left-width: 0;
             align-items: stretch;
-
-            .k-link {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .k-link:last-child {
-                &::before {
-                    content: '';
-                    width: 1px;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    margin-left: -7px; /* -($padding-y-lg + 1px); */
-                }
-            }
+        }
+        .k-link {
+            padding: $button-padding-y;
+            border-width: 0 0 0 1px;
+            border-style: solid;
+            border-color: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-
         // Compact
-        // sass-lint:disable mixins-before-declarations
         @include compact {
-
             .k-input {
                 padding: $input-padding-y-sm $input-padding-x-sm;
             }
-
-            .k-select .k-link {
+            .k-link {
                 padding: $button-padding-y-sm;
             }
         }
-        // sass-lint:enable mixins-before-declarations
+
     }
 
 
     // Dateinput
     .k-dateinput {
 
-        .k-input {}
-
-        .k-select {
-            padding: 0;
-            width: calc( #{$button-inner-calc-size} );
-            border-width: 0 0 0 1px;
-            border-style: solid;
-            flex-direction: column;
-            align-items: stretch;
-        }
-        .k-link {
-            padding: 0 $button-padding-y;
-            height: calc( (#{$button-inner-calc-size}) / 2 );
-        }
-
-
-
-
         // Compact
         @include compact {
-
             .k-input {
                 padding: $input-padding-y-sm $input-padding-x-sm;
             }
-
-            .k-select {
-                .k-link { padding: 0 $button-padding-y-sm; }
+            .k-link {
+                padding: 0 $button-padding-y-sm;
             }
         }
+
     }
 
 }

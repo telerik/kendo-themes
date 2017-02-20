@@ -4,16 +4,17 @@
     .k-datepicker,
     .k-timepicker,
     .k-datetimepicker {
+
         // Normal state
         .k-picker-wrap {
             @include appearance( input );
-            @include border-radius( $border-radius );
         }
 
         .k-select {
             @include appearance( button );
-            @include border-radius(  0 $border-radius $border-radius 0 );
-            border-color: inherit;
+            padding: 0;
+            width: button-inner-size();
+            border-width: 0;
         }
 
         // Hovered state
@@ -47,10 +48,14 @@
 
     // Datetimepicker
     .k-datetimepicker {
-        .k-select .k-link:last-child {
-            &::before {
-                background-color: $border-color;
-            }
+
+        .k-select {
+            width: auto;
+        }
+        .k-link {
+            padding: 0;
+            width: button-inner-size();
+            border-width: 0;
         }
     }
 
@@ -63,7 +68,9 @@
         }
         .k-select {
             @include appearance( button );
-            background-clip: padding-box;
+            padding: 0;
+            width: button-inner-size();
+            border-width: 0;
         }
 
         // Hovered state
