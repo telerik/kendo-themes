@@ -94,17 +94,17 @@ $border-color: darken( $bg-color, 12% ) !default;
 $base-text: $btn-secondary-color !default;
 $base-bg: $btn-secondary-bg !default;
 $base-border: darken( $base-bg, 12% ) !default;
-$base-gradient: null !default;
+$base-gradient: none !default;
 
 $hovered-text: $base-text !default;
 $hovered-bg: darken( $base-bg, 10% ) !default;
 $hovered-border: darken( $base-border, 12% ) !default;
-$hovered-gradient: null !default;
+$hovered-gradient: none !default;
 
 $selected-text: $accent-contrast !default;
 $selected-bg: $accent !default;
 $selected-border: darken( $selected-bg, 12% ) !default;
-$selected-gradient: null !default;
+$selected-gradient: none !default;
 
 $transition: all .2s ease !default;
 
@@ -145,36 +145,36 @@ $popup-border: $panel-border !default;
 $header-text: $base-text !default;
 $header-bg: darken( $base-bg, 3 ) !default;
 $header-border: $base-border !default;
-$header-gradient: null !default;
+$header-gradient: none !default;
 
 $header-hovered-text: $header-text !default;
 $header-hovered-bg: darken( $header-bg, 10% ) !default;
 $header-hovered-border: darken( $header-border, 12 ) !default;
-$header-hovered-gradient: null !default;
+$header-hovered-gradient: none !default;
 
 $header-selected-text: $selected-text !default;
 $header-selected-bg: $selected-bg !default;
 $header-selected-border: $selected-border !default;
-$header-selected-gradient: null !default;
+$header-selected-gradient: none !default;
 
 
 // Button
 $button-text: $base-text !default;
 $button-bg: $base-bg !default;
 $button-border: darken( $base-border, 8 ) !default;
-$button-gradient: null !default;
+$button-gradient: none !default;
 $button-shadow: $btn-box-shadow !default;
 
 $button-hovered-text: $button-text !default;
 $button-hovered-bg: darken( $button-bg, 10% ) !default;
 $button-hovered-border: darken( $button-border, 12% ) !default;
-$button-hovered-gradient: null !default;
+$button-hovered-gradient: none !default;
 $button-hovered-shadow: $btn-box-shadow !default;
 
 $button-pressed-text: $button-text !default;
 $button-pressed-bg: darken( $button-bg, 17% ) !default;
 $button-pressed-border: darken( $button-border, 25% ) !default;
-$button-pressed-gradient: null !default;
+$button-pressed-gradient: none !default;
 $button-pressed-shadow: $btn-active-box-shadow !default;
 
 $button-focused-shadow: 0 0 0 2px rgba($button-border, .5) !default;
@@ -184,17 +184,17 @@ $button-focused-shadow: 0 0 0 2px rgba($button-border, .5) !default;
 $primary-button-text: $component-active-color !default;
 $primary-button-bg: $component-active-bg !default;
 $primary-button-border: $primary-button-bg !default;
-$primary-button-gradient: null !default;
+$primary-button-gradient: none !default;
 
 $primary-button-hovered-text: $primary-button-text !default;
 $primary-button-hovered-bg: darken( $primary-button-bg, 10% ) !default;
 $primary-button-hovered-border: darken( $primary-button-border, 12% ) !default;
-$primary-button-hovered-gradient: null !default;
+$primary-button-hovered-gradient: none !default;
 
 $primary-button-pressed-text: $primary-button-text !default;
 $primary-button-pressed-bg: darken( $primary-button-bg, 17% ) !default;
 $primary-button-pressed-border: darken( $primary-button-border, 25% ) !default;
-$primary-button-pressed-gradient: null !default;
+$primary-button-pressed-gradient: none !default;
 
 $primary-button-focused-shadow: 0 0 0 2px rgba($primary-button-border, .5);
 
@@ -203,19 +203,19 @@ $primary-button-focused-shadow: 0 0 0 2px rgba($primary-button-border, .5);
 $toolbar-text: $header-text !default;
 $toolbar-bg: $header-bg !default;
 $toolbar-border: $header-border !default;
-$toolbar-gradient: null !default;
+$toolbar-gradient: none !default;
 
 
 // Input
 $input-text: $gray !default;
 $input-bg: $body-bg !default;
 $input-border: $button-border !default;
-$input-shadow: null !default;
+$input-shadow: none !default;
 
 $input-hovered-text: $input-text !default;
 $input-hovered-bg: $input-bg !default;
 $input-hovered-border: $input-border !default;
-$input-hovered-shadow: null !default;
+$input-hovered-shadow: none !default;
 
 $input-focused-text: $input-text !default;
 $input-focused-bg: $input-bg !default;
@@ -227,17 +227,17 @@ $input-focused-shadow: $input-box-shadow-focus !default;
 $node-text: $base-text !default;
 $node-bg: $base-bg !default;
 $node-border: $base-border !default;
-$node-gradient: null !default;
+$node-gradient: none !default;
 
 $node-hovered-text: $hovered-text !default;
 $node-hovered-bg: $hovered-bg !default;
 $node-hovered-border: $hovered-border !default;
-$node-hovered-gradient: null !default;
+$node-hovered-gradient: none !default;
 
 $node-selected-text: $selected-text !default;
 $node-selected-bg: $selected-bg !default;
 $node-selected-border: $selected-border !default;
-$node-selected-gradient: null !default;
+$node-selected-gradient: none !default;
 
 
 // List item
@@ -250,7 +250,7 @@ $list-item-hovered-bg: $node-hovered-bg !default;
 $list-item-selected-text: $node-selected-text !default;
 $list-item-selected-bg: $node-selected-bg !default;
 
-$list-item-focused-shadow: null;
+$list-item-focused-shadow: none;
 
 
 // Link
