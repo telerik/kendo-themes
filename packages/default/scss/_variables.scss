@@ -1,19 +1,19 @@
 // Fonts
 
-/// Base font size across all components
+/// Base font size across all components.
 $font-size: 14px !default;
 
-/// Font family across all components
+/// Font family across all components.
 $font-family: inherit !default;
 
-/// Font family for monospaced text, used for styling code
+/// Font family for monospaced text. Used for styling the code.
 $font-family-monospace:  Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
 
 $font-size-xs: 10px !default;
 $font-size-sm: 12px !default;
 $font-size-lg: 16px !default;
 
-/// Line height used along with $font-size
+/// Line height used along with $font-size.
 $line-height: (20 / 14) !default;
 $line-height-sm: 1.2 !default;
 $line-height-lg: 1.5 !default;
@@ -32,7 +32,7 @@ $padding-y-sm: $padding-y / 2 !default;
 $padding-x-lg: $padding-x * 1.5 !default;
 $padding-y-lg: $padding-y * 1.5 !default;
 
-/// Border radius for all components
+/// Border radius for all components.
 $border-radius: 2px !default;
 $border-radius-sm: 1px !default;
 $border-radius-lg: 4px !default;
@@ -63,11 +63,11 @@ $input-padding-y-sm: $input-padding-y / 2 !default;
 $input-calc-size: #{$form-line-height-em} + #{$input-padding-y * 2} + 2px;
 $input-inner-calc-size: #{$form-line-height-em} + #{$input-padding-y * 2};
 
-/// Horizontal padding of container
+/// The horizontal padding of the container.
 /// @group toolbar
 $toolbar-padding-x: $padding-x !default;
 
-/// Vertical padding of container
+/// The vertical padding of the container.
 /// @group toolbar
 $toolbar-padding-y: $padding-x !default;
 $toolbar-calc-size: #{$button-calc-size} + #{$toolbar-padding-y * 2} + 2px;
@@ -97,43 +97,43 @@ $rgba-transparent: rgba( 0, 0, 0, 0 );
 
 
 // Theme colors
-/// Color that focuses the user attention
-/// Used for primary buttons and for elements of primary importance across the theme
+/// The color that focuses the user attention.
+/// Used for primary buttons and for elements of primary importance across the theme.
 $accent: #ff6358 !default;
 
-/// Color used along with the accent color denoted by $accent.
-/// Used to provide contrast between the background and foreground color
+/// The color used along with the accent color denoted by $accent.
+/// Used to provide contrast between the background and foreground colors.
 $accent-contrast: #ffffff !default;
 
 $text-color: #656565 !default;
 $bg-color: #ffffff !default;
 $border-color: rgba( black, .08 ) !default;
 
-/// Text color of components' chrome area
+/// The text color of the components' chrome area.
 $base-text: #656565 !default;
-/// Background of chrome area of components
+/// The background of the components' chrome area.
 $base-bg: #f6f6f6 !default;
-/// Border color of the components' chrome area
+/// The border color of the components' chrome area.
 $base-border: rgba( black, .08 ) !default;
-/// Gradient background of components' chrome area
+/// The gradient background of the components' chrome area.
 $base-gradient: $base-bg, darken( $base-bg, 2% ) !default;
 
-/// Text color of hovered items
+/// The text color of hovered items.
 $hovered-text: #656565 !default;
-/// Background of hovered items
+/// The background of hovered items.
 $hovered-bg: #ededed !default;
-/// Border color of hovered items
+/// The border color of hovered items.
 $hovered-border: rgba( black, .15 ) !default;
-/// Gradient background of hovered items
+/// The gradient background of hovered items.
 $hovered-gradient: $hovered-bg, darken( $hovered-bg, 2% ) !default;
 
-/// Text color of selected items
+/// The text color of selected items.
 $selected-text: $accent-contrast !default;
-/// Background of selected items
+/// The background of selected items.
 $selected-bg: $accent !default;
-/// Border color of selected items
+/// The border color of selected items.
 $selected-border: rgba( black, .1 ) !default;
-/// Gradient background of selected items
+/// The gradient background of selected items.
 $selected-gradient: none !default;
 
 $selected-hover-color: $selected-text !default;
@@ -141,13 +141,13 @@ $selected-hover-bg: mix( $selected-bg, black, 92) !default;
 
 $transition: background-color .2s ease !default;
 
-/// Color for error messages and states
+/// The color for error messages and states.
 $error: #f5503e !default;
-/// Color for warning messages and states
+/// The color for warning messages and states.
 $warning: #fdce3e !default;
-/// Color for success messages and states
+/// The color for success messages and states.
 $success: #5ec232 !default;
-/// Color for informational messages and states
+/// The color for informational messages and states.
 $info: #3e80ed !default;
 
 $gradient-transparent-to-black: rgba( black, 0), black;
@@ -196,58 +196,58 @@ $header-selected-gradient: null !default;
 
 
 // Button
-/// The text color of the buttons
+/// The text color of the buttons.
 /// @group buttons
 $button-text: $base-text !default;
 
-/// The background of the buttons
+/// The background of the buttons.
 /// @group buttons
 $button-bg: $base-bg !default;
 
-/// The border color of the buttons
+/// The border color of the buttons.
 /// @group buttons
 $button-border: $base-border !default;
 
-/// The background gradient of the buttons
+/// The background gradient of the buttons.
 /// @group buttons
 $button-gradient: $base-gradient !default;
 $button-shadow: null !default;
 
-/// The text color of hovered buttons
+/// The text color of hovered buttons.
 /// @group buttons
 $button-hovered-text: $hovered-text !default;
 
-/// The background of hovered buttons
+/// The background of hovered buttons.
 /// @group buttons
 $button-hovered-bg: $hovered-bg !default;
 
-/// The border color of hovered buttons
+/// The border color of hovered buttons.
 /// @group buttons
 $button-hovered-border: $hovered-border !default;
 
-/// The background gradient of hovered buttons
+/// The background gradient of hovered buttons.
 /// @group buttons
 $button-hovered-gradient: $hovered-gradient !default;
 $button-hovered-shadow: null !default;
 
-/// The text color of pressed buttons
+/// The text color of pressed buttons.
 /// @group buttons
 $button-pressed-text: $selected-text !default;
 
-/// The background color of pressed buttons
+/// The background color of pressed buttons.
 /// @group buttons
 $button-pressed-bg: $selected-bg !default;
 
-/// The border color of pressed buttons
+/// The border color of pressed buttons.
 /// @group buttons
 $button-pressed-border: $selected-border !default;
 
-/// The background gradient of pressed buttons
+/// The background gradient of pressed buttons.
 /// @group buttons
 $button-pressed-gradient: none !default;
 $button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
 
-/// The shadow of focused buttons
+/// The shadow of focused buttons.
 /// @group buttons
 $button-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
 
@@ -331,27 +331,27 @@ $link-hover-text: desaturate(darken($accent, 5), 25) !default;
 
 
 // Chart
-/// Color of first series
+/// The color of the first series.
 /// @group charts
 $series-a: #ff6358 !default;
 
-/// Color of second series
+/// The clor of the second series.
 /// @group charts
 $series-b: #ffd246 !default;
 
-/// Color of third series
+/// The color of the third series.
 /// @group charts
 $series-c: #78d237 !default;
 
-/// Color of fourth series
+/// The color of the fourth series.
 /// @group charts
 $series-d: #28b4c8 !default;
 
-/// Color of fifth series
+/// The color of the fifth series.
 /// @group charts
 $series-e: #2d73f5 !default;
 
-/// Color of sixth series
+/// The color of the sixth series.
 /// @group charts
 $series-f: #aa46be !default;
 
@@ -361,10 +361,10 @@ $chart-font-size-md: 12px !default;
 $chart-font-size-lg: 16px !default;
 
 $chart-inactive: rgba( $text-color, .5 ) !default;
-/// The color of the chart grid lines (major)
+/// The color of the Chart grid lines (major).
 /// @group charts
 $chart-major-lines: rgba(0, 0, 0, .08) !default;
-/// The color of the chart grid lines (minor)
+/// The color of the Chart grid lines (minor).
 /// @group charts
 $chart-minor-lines: rgba(0, 0, 0, .04) !default;
 

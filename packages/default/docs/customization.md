@@ -1,12 +1,13 @@
 ---
 title: Customization
-description: "The available variables for customization of the Kendo UI theme."
+description: "Refer to the list of the Kendo UI Default theme variables available for customization."
+slug: variables_kendothemedefault_kendouiforangular
 position: 9
 ---
 
 # Customization
 
-Description of the theme variables which are available for adjustment.
+The following list describes the theme variables available for adjustment in the Kendo UI Default theme for Angular.
 
 <style>
 .theme-variables th,
@@ -43,7 +44,7 @@ Description of the theme variables which are available for adjustment.
 <tr>
 <td>$font-size</td>
 <td>
-    
+
     14px
 </td>
 <td>Base font size across all components
@@ -52,7 +53,7 @@ Description of the theme variables which are available for adjustment.
 <tr>
 <td>$font-family</td>
 <td>
-    
+
     inherit
 </td>
 <td>Font family across all components
@@ -61,7 +62,7 @@ Description of the theme variables which are available for adjustment.
 <tr>
 <td>$font-family-monospace</td>
 <td>
-    
+
     Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace
 </td>
 <td>Font family for monospaced text, used for styling code
@@ -70,7 +71,7 @@ Description of the theme variables which are available for adjustment.
 <tr>
 <td>$line-height</td>
 <td>
-    
+
     (20 / 14)
 </td>
 <td>Line height used along with $font-size
@@ -79,7 +80,7 @@ Description of the theme variables which are available for adjustment.
 <tr>
 <td>$border-radius</td>
 <td>
-    
+
     2px
 </td>
 <td>Border radius for all components
@@ -126,7 +127,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$base-border</td>
 <td>
-    
+
     rgba( black, .08 )
 </td>
 <td>Border color of the components' chrome area
@@ -135,7 +136,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$base-gradient</td>
 <td>
-    
+
     $base-bg, darken( $base-bg, 2% )
 </td>
 <td>Gradient background of components' chrome area
@@ -162,7 +163,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$hovered-border</td>
 <td>
-    
+
     rgba( black, .15 )
 </td>
 <td>Border color of hovered items
@@ -171,7 +172,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$hovered-gradient</td>
 <td>
-    
+
     $hovered-bg, darken( $hovered-bg, 2% )
 </td>
 <td>Gradient background of hovered items
@@ -180,7 +181,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$selected-text</td>
 <td>
-    
+
     $accent-contrast
 </td>
 <td>Text color of selected items
@@ -189,7 +190,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$selected-bg</td>
 <td>
-    
+
     $accent
 </td>
 <td>Background of selected items
@@ -198,7 +199,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$selected-border</td>
 <td>
-    
+
     rgba( black, .1 )
 </td>
 <td>Border color of selected items
@@ -207,7 +208,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$selected-gradient</td>
 <td>
-    
+
     none
 </td>
 <td>Gradient background of selected items
@@ -268,7 +269,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$button-text</td>
 <td>
-    
+
     $base-text
 </td>
 <td>The text color of the buttons
@@ -277,7 +278,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$button-bg</td>
 <td>
-    
+
     $base-bg
 </td>
 <td>The background of the buttons
@@ -286,7 +287,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$button-border</td>
 <td>
-    
+
     $base-border
 </td>
 <td>The border color of the buttons
@@ -295,7 +296,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$button-gradient</td>
 <td>
-    
+
     $base-gradient
 </td>
 <td>The background gradient of the buttons
@@ -304,7 +305,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$button-hovered-text</td>
 <td>
-    
+
     $hovered-text
 </td>
 <td>The text color of hovered buttons
@@ -313,7 +314,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$button-hovered-bg</td>
 <td>
-    
+
     $hovered-bg
 </td>
 <td>The background of hovered buttons
@@ -322,7 +323,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$button-hovered-border</td>
 <td>
-    
+
     $hovered-border
 </td>
 <td>The border color of hovered buttons
@@ -331,7 +332,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$button-hovered-gradient</td>
 <td>
-    
+
     $hovered-gradient
 </td>
 <td>The background gradient of hovered buttons
@@ -340,7 +341,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$button-pressed-text</td>
 <td>
-    
+
     $selected-text
 </td>
 <td>The text color of pressed buttons
@@ -349,7 +350,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$button-pressed-bg</td>
 <td>
-    
+
     $selected-bg
 </td>
 <td>The background color of pressed buttons
@@ -358,7 +359,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$button-pressed-border</td>
 <td>
-    
+
     $selected-border
 </td>
 <td>The border color of pressed buttons
@@ -367,7 +368,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$button-pressed-gradient</td>
 <td>
-    
+
     none
 </td>
 <td>The background gradient of pressed buttons
@@ -376,7 +377,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$button-focused-shadow</td>
 <td>
-    
+
     0 3px 4px 0 rgba(0, 0, 0, .06)
 </td>
 <td>The shadow of focused buttons
@@ -455,7 +456,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$chart-major-lines</td>
 <td>
-    
+
     rgba(0, 0, 0, .08)
 </td>
 <td>The color of the chart grid lines (major)
@@ -464,7 +465,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$chart-minor-lines</td>
 <td>
-    
+
     rgba(0, 0, 0, .04)
 </td>
 <td>The color of the chart grid lines (minor)
@@ -489,7 +490,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$toolbar-padding-x</td>
 <td>
-    
+
     $padding-x
 </td>
 <td>Horizontal padding of container
@@ -498,7 +499,7 @@ Used to provide contrast between the background and foreground color
 <tr>
 <td>$toolbar-padding-y</td>
 <td>
-    
+
     $padding-x
 </td>
 <td>Vertical padding of container
@@ -515,4 +516,3 @@ Outputs a module once, no matter how many times it is included.
 
 #### Parameters
 - name : `String` - Name of exported module
-
