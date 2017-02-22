@@ -37,25 +37,28 @@ During development, the SCSS files are linted on every `commit` and built on eve
 
 Upon build, browser-specific properties are generated through the [PostCSS autoprefixer](https://github.com/postcss/autoprefixer).
 
-### Embedding resources
+### Embedding Resources
 
-When updating resources (images or fonts), run the `npm run embed-assets` task. This will generate a file with the same name, which registers a base64-encoded version in the `$data-uris` SCSS map. For example, the font file `foo.woff` will receive a `foo.scss` file, which can later be imported via `@import './font/foo';`. Then the base64 version can be inlined via `map-get( $data-uris, 'WebComponentsIcons.woff' )`. This is done in order to workaround problems with hosting resources when consuming the theme. See [issue #41](https://github.com/telerik/kendo-theme-default/issues/41#issuecomment-258472183) for more details.
+When you update resources (images or fonts), run the `npm run embed-assets` task. The task generates a file with the same name, which registers a base64-encoded version in the `$data-uris` SCSS map. For example, the `foo.woff` font file will receive a `foo.scss` file, which can later be imported through `@import './font/foo';`. Then, inline the base64 version through `map-get( $data-uris, 'WebComponentsIcons.woff' )`. The embedding of resources avoids issues related with their hosting when your project consumes the theme. For more details, refer to [issue #41](https://github.com/telerik/kendo-theme-default/issues/41#issuecomment-258472183).
 
-### Writing API docs
+### Documenting Variables
 
-The `docs/customization.md` help topic lists the theme variables that can be used for customization.
-Running `npm run api` will generate this topic from theme variables source, rendering them via the `build/customization.md.hbs` template.
+The variables for customizing the Default theme are listed in the `docs/customization.md` article which is auto-generated.
 
-Document variables with triple-slash comments (`///`):
+To change its layout or the front meter of the text in the table, you need to:
+
+1. Implement the changes in the `build/customization.md.hbs` source file.
+1. Run the `npm run api` command to populate the `docs/customization.md` file.
+
+Note that the building process checks whether the content of the source files and the documentation correspond to each other, so make sure you commit the changes from both locations.
+
+To implement the description of the variables, use triple-slash comments (`///`).
 
     /// Variable description
     $foo: 42 !default;
 
-You can group variables with the `@group` directive:
+To group the variables, use the `@group` directive.
 
     /// Variable description
     /// @group random
     $foo: 42 !default;
-
-The build process checks if the documentation is up-to-date, so make sure to commit documentation changes along with source files.
-
