@@ -43,14 +43,14 @@ When you update resources (images or fonts), run the `npm run embed-assets` task
 
 ### Documenting Variables
 
-The variables for customizing the Default theme are listed in the `docs/customization.md` article. This article is generated from the SCSS source files through the `npm run api` script.
+The variables for customizing the Default theme are listed in the `docs/customization.md` article. It is generated from the SCSS source files by running the `npm run api` command.  
 
 To document a variable, use triple-slash comments (`///`) before its definition.
 
     /// Variable description
     $foo: 42 !default;
 
-To group variables together, use the `@group` directive.
+To group variables, use the `@group` directive.
 
     /// Variable description
     /// @group random
@@ -60,7 +60,4 @@ To group variables together, use the `@group` directive.
     /// @group random
     $bar: 1024 !default;
 
-After making changes to the documentation, generate the help topic with `npm run api` and commit it.
-
-To change the layout or the front meter of generated help topic, change the `build/customization.md.hbs` source file and run `npm run api` to generate the `docs/customization.md` file.
-
+To change the layout or the front meter of generated help topic, change the `build/customization.md.hbs` source file. 
