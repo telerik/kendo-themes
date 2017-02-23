@@ -6,8 +6,6 @@
         @include border-radius( $border-radius );
 
         li {
-            @include border-radius( $border-radius * .75 );
-
             .k-icon {
                 opacity: .6;
                 cursor: pointer;
