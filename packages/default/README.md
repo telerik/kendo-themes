@@ -55,9 +55,9 @@ To group variables, use the `@group` directive.
     /// Variable description
     /// @group random
     $foo: 42 !default;
-    
+
     /// Another variable description
     /// @group random
     $bar: 1024 !default;
 
-To change the layout or the front meter of generated help topic, change the `build/customization.md.hbs` source file. 
+To change the layout or the front meter of the generated help topic, change the `build/customization.md.hbs` source file. 

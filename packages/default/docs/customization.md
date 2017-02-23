@@ -515,7 +515,7 @@ Outputs a module once, no matter how many times it is included.
 
 
 #### Parameters
-- name : `String` - Name of exported module
+- name : `String` - The name of the exported module.
 
 
 ## Suggested Links

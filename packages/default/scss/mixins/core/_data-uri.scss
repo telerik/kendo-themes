@@ -2,10 +2,10 @@
 /// @access private
 $data-uris: () !default;
 
-/// Saves a data URI that can be used from the $data-uris map instead of a file reference
+/// Saves a data URI that can be used from the $data-uris map instead of a file reference.
 /// @access private
-/// @param {String} $name - The name of the resource
-/// @param {String} $content - The data URI of the resource
+/// @param {String} $name - The name of the resource.
+/// @param {String} $content - The data URI of the resource.
 /// @require $data-uris
 @mixin register-data-uri($name, $content) {
     @if (map-has-key($data-uris, $name)) {
@@ -14,4 +14,3 @@ $data-uris: () !default;
 
     $data-uris: map-merge($data-uris, ($name: $content)) !global;
 }
-
