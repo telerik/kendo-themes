@@ -34,6 +34,10 @@
             .k-select { @include appearance( active-button ); }
         }
 
+        .k-state-focused {
+            @include appearance( focused-input );
+        }
+
     }
 
 }
