@@ -4,8 +4,8 @@
     $grid-chrome-border: $border-color !default;
     $grid-alt-bg: darken( $panel-bg, 4 ) !default;
 
-    $grid-selected-text: $selected-text !default;
-    $grid-selected-bg: $selected-bg !default;
+    $grid-selected-text: $grid-chrome-text !default;
+    $grid-selected-bg: rgba($selected-bg, .25) !default;
     $grid-grouping-row-text: $text-color !default;
     $grid-grouping-row-bg: darken($bg-color, 7%) !default;
 
@@ -49,11 +49,8 @@
     }
 
     .k-grid {
-        .k-alt {
-            background-color: $grid-alt-bg;
-        }
-
-        tr.k-state-selected {
+        tr.k-state-selected,
+        td.k-state-selected {
             color: $grid-selected-text;
             background-color: $grid-selected-bg;
 
@@ -61,6 +58,16 @@
                 color: $selected-text;
             }
         }
+
+        tr.k-alt {
+            background-color: $grid-alt-bg;
+
+            &.k-state-selected td {
+                color: $grid-selected-text;
+                background-color: $grid-selected-bg;
+            }
+        }
+
 
         td.k-state-focused,
         th.k-state-focused {
