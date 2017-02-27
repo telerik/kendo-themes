@@ -36,7 +36,8 @@
 
     .k-grid-footer td,
     .k-group-footer td,
-    .k-grouping-row td {
+    .k-grouping-row td,
+    tbody .k-group-cell {
         color: $grid-grouping-row-text;
         background-color: $grid-grouping-row-bg;
     }
@@ -92,4 +93,24 @@
             }
         }
     }
+
+
+    // Grid header / footer
+    .k-grid-header {
+
+
+        .k-grid-filter {}
+        .k-grid-filter:hover {
+            color: $button-hovered-text;
+            background-color: $button-hovered-bg;
+        }
+        .k-grid-filter:focus {
+            box-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .1 );
+        }
+        .k-grid-filter.k-state-active {
+            color: $selected-text;
+            background-color: $selected-bg;
+        }
+    }
+
 }

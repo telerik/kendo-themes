@@ -12,58 +12,430 @@
     .k-grid {
         display: block;
         position: relative;
-        border-width: 1px;
-        border-style: solid;
+
+        table {
+            margin: 0;
+            width: 100%;
+            max-width: none;
+            border-width: 0;
+            border-color: inherit;
+            border-collapse: separate;
+            border-spacing: 0;
+            empty-cells: show;
+            outline: 0;
+        }
+        thead,
+        tbody,
+        tfoot {
+            text-align: left;
+            border-color: inherit;
+        }
+        tr {
+            border-color: inherit;
+        }
+        th,
+        td {
+            padding: $cell-padding-y $cell-padding-x;
+            border-style: solid;
+            border-color: inherit;
+            outline: 0;
+            font-weight: inherit;
+            text-align: inherit;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &:first-child {
+                border-left-width: 0;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+        th {
+            border-width: 0 0 1px 1px;
+            white-space: nowrap;
+        }
+        td {
+            border-width: 0 0 0 1px;
+            vertical-align: middle;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+
+
+        // Grouping and hierarcy
+        .k-group-col,
+        .k-hierarchy-col {
+            padding: 0;
+            width: 30px;
+        }
+
+        .k-grouping-row p {
+            display: flex;
+            align-items: center;
+            align-content: center;
+        }
+        .k-grouping-row td {
+            overflow: visible;
+        }
+        .k-grouping-row + tr td {
+            border-top-width: 1px;
+        }
+        .k-grouping-row .k-group-cell,
+        .k-grouping-row + tr .k-group-cell {
+            border-top-width: 0;
+            text-overflow: none;
+        }
+
+        .k-group-footer td {
+            border-style: solid;
+            border-width: 1px 0;
+        }
+        .k-group-footer .k-group-cell + td {
+            border-left-width: 1px;
+        }
+
+        .k-hierarchy-cell {
+            text-align: center;
+            padding: 0;
+            overflow: visible;
+
+            > .k-icon {
+                padding: $cell-padding-y 0;
+                width: 100%;
+                height: 100%;
+                line-height: $line-height;
+                display: inline-block;
+                outline: 0;
+            }
+        }
+        .k-hierarchy-cell + td {
+            border-left-width: 0;
+        }
+        .k-detail-cell {}
+        .k-master-row {}
+        .k-detail-row {}
+
     }
 
-    .k-grid table {
-        width: 100%;
-        margin: 0; /* override CSS libraries */
-        max-width: none;
-        border-collapse: separate;
-        border-spacing: 0;
-        empty-cells: show;
-        border-width: 0;
-        outline: none;
-    }
 
-    .k-grid-toolbar,
-    .k-grouping-header {
-        display: block;
+    // Toolbar
+    .k-grid-toolbar {
+        padding: $cell-padding-y;
         border-width: 0 0 1px;
         border-style: solid;
+        border-color: inherit;
+        text-overflow: clip;
+        cursor: default;
+        display: block;
+
+        .k-button {
+            vertical-align: middle;
+        }
+        .k-button + .k-button {
+            margin-left: ($cell-padding / 2);
+        }
     }
 
-    .k-grid-content .k-button,
-    .k-grid-toolbar .k-button {
-        vertical-align: middle;
-        margin: 0 .16em;
+
+    // Grouping header
+    $delete-group-offset: calc(#{-$button-padding-y} - 1px) !default;
+
+    .k-grouping-header {
+        display: block;
+        padding: $cell-padding-y;
+        border-width: 0 0 1px;
+        border-style: solid;
+        border-color: inherit;
+        line-height: button-size();
+    }
+    .k-group-indicator,
+    .k-drag-clue {
+        @include border-radius( $border-radius );
+        margin: 0;
+        padding: $button-padding-y $button-padding-x;
+        border-width: 1px;
+        border-style: solid;
+        line-height: $form-line-height;
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        vertical-align: top;
+
+        .k-link,
+        .k-button.k-bare {
+            border-width: 0;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .k-button.k-bare {
+            margin: $delete-group-offset auto $delete-group-offset $button-padding-x;
+        }
+
+        .k-link .k-icon {
+            margin-right: $button-padding-y;
+        }
+    }
+    .k-group-indicator + .k-group-indicator {
+        margin-left: $cell-padding-y;
+    }
+
+    .k-grouping-dropclue {
+        position: absolute;
+        width: ($group-dropclue-size * 2);
+        height: calc( #{$button-calc-size} );
+
+        &::before,
+        &::after {
+            display: inline-block;
+            content: '';
+            position: absolute;
+        }
+
+        &::before {
+            border-width: $group-dropclue-size;
+            border-style: solid;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            top: 0;
+        }
+
+        &::after {
+            width: $group-dropclue-line-size;
+            height: calc(100% - #{$group-dropclue-size});
+            top: $group-dropclue-size;
+            left: calc(#{$group-dropclue-size} - (#{$group-dropclue-line-size} / 2));
+        }
+    }
+
+
+    // Grid header / footer
+    .k-grid-header-wrap,
+    .k-grid-footer-wrap {
+        width: 100%;
+        border-width: 0 1px 0 0;
+        border-style: solid;
+        border-color: inherit;
+        position: relative;
+        overflow: hidden;
+    }
+    .k-grid-header,
+    .k-grid-footer {
+        padding-right: 17px;
+        border-width: 0;
+        border-style: solid;
+        border-color: inherit;
+
+        table {
+            table-layout: fixed;
+        }
     }
 
     .k-grid-header {
-        border-bottom-style: solid;
         border-bottom-width: 1px;
 
-        th>.k-link>.k-icon {
-            vertical-align: text-bottom;
+        table {
+            margin-bottom: -1px;
         }
+
+
+        .k-header {
+            height: button-size();
+            position: relative;
+        }
+
+
+        .k-header > .k-link {
+            margin: (-$cell-padding-y) (-$cell-padding-x);
+            padding: $cell-padding-y $cell-padding-x;
+            line-height: button-size();
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .k-header > .k-link:focus {
+            text-decoration: none;
+        }
+        .k-header > .k-link > .k-icon {
+            margin: 0 .4ex;
+            position: static;
+        }
+
+
+        .k-header > .k-grid-filter,
+        .k-header > .k-header-column-menu {
+            padding: $button-padding-y;
+            width: button-size();
+            height: button-size();
+            box-sizing: border-box;
+            outline: 0;
+            line-height: $form-line-height;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            float: right;
+            position: relative;
+            z-index: 1;
+        }
+        .k-header > .k-grid-filter {
+            margin: -($cell-padding-y / 2) 0;
+        }
+        .k-header > .k-header-column-menu {
+            margin: 0;
+        }
+
     }
 
     .k-grid-footer {
         border-width: 1px 0 0;
-        border-style: solid;
     }
-
-    // Footer height
     .k-footer-template td {
-        height: $footer-cells-height;
+        height: button-size();
     }
 
-    .k-grid-content table,
-    .k-grid-content-locked>table,
-    .k-grid-footer table,
-    .k-grid-header table {
-        table-layout: fixed;
+
+    // Filter row
+    .k-filter-row {
+        line-height: $form-line-height;
+    }
+    .k-filter-row th {
+        padding: $cell-padding-y;
+    }
+    .k-filtercell {
+        width: auto;
+        display: block;
+
+        > span {
+            padding-right: calc( 2 * (#{$button-calc-size} + #{$cell-padding-y / 2}));
+            height: calc( #{$button-calc-size} );
+            display: block;
+            position: relative;
+
+            > .k-button {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            > label {
+                vertical-align: middle;
+            }
+
+        }
+        > .k-operator-hidden {
+            padding-right: calc( #{$button-calc-size} + #{$cell-padding-y / 2});
+        }
+
+        .k-widget {
+            display: flex;
+            width: auto;
+            flex: 1;
+        }
+        .k-autocomplete .k-input,
+        .k-dropdown-wrap .k-input,
+        .k-numeric-wrap .k-input,
+        .k-picker-wrap .k-input,
+        .k-selectbox .k-input,
+        .k-textbox > input {
+            // TODO: do we need this?
+            padding-left: 0;
+            padding-right: 0;
+            text-indent: $padding-x;
+        }
+
+        .k-dropdown-operator {
+            width: calc( #{$button-calc-size} );
+            flex: none;
+            position: absolute;
+            top: 0;
+            right: calc( #{$button-calc-size} + #{$cell-padding-y / 2} );
+        }
+        .k-dropdown-operator .k-input {
+            padding: 0;
+            width: 0;
+            overflow: hidden;
+        }
+    }
+
+
+    // Grid content
+    .k-grid-content,
+    .k-grid-content-locked {
+        border-color: inherit;
+
+        table {
+            table-layout: fixed;
+        }
+        tr:last-child td {
+            border-bottom-width: 0;
+        }
+    }
+    .k-grid-content {
+        width: 100%;
+        min-height: 0;
+        overflow: auto;
+        overflow-x: auto;
+        overflow-y: scroll;
+        position: relative;
+        flex: 1;
+
+        .k-button {
+            vertical-align: middle;
+            margin: 0 .16em;
+        }
+
+    }
+
+
+    // Edit row
+    .k-grid-edit-row {
+
+        td {
+            text-overflow: clip;
+        }
+
+        .k-widget,
+        .k-button,
+        .k-textbox {
+            margin-top: -$input-padding-y;
+            margin-bottom: -$input-padding-y;
+            width: 100%;
+        }
+    }
+    .k-edit-cell {
+        .k-widget,
+        .k-textbox {
+            width: 100%;
+        }
+    }
+
+
+    // Resize handle
+    .k-grid > .k-resize-handle,
+    .k-grid-header .k-resize-handle {
+        height: 25px;
+        cursor: col-resize;
+        position: absolute;
+        z-index: 2;
+    }
+
+
+    // Pager
+    .k-grid-pager {
+        padding: $cell-padding-y;
+        border-width: 1px 0 0;
+        border-color: inherit;
     }
 
     .k-grid-virtual {
@@ -79,197 +451,11 @@
         }
     }
 
-    .k-grid-header th.k-header,
-    .k-filter-row th {
-        overflow: hidden;
-        border-style: solid;
-        border-width: 0 0 1px 1px;
-        padding: $padding-x;
-        font-weight: normal;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        text-align: left;
-        line-height: 2.143em;
-    }
-
-    .k-grid-header th.k-header>.k-link {
-        display: block;
-        margin: -$header-padding-x;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .k-grid-content {
-        position: relative;
-        overflow: auto;
-        overflow-x: auto;
-        overflow-y: scroll;
-        min-height: 0%; /* IE9 bug workaround - expanding Grid on hover */
-    }
-
-    .k-grid-header th.k-header>.k-link {
-        margin: -$header-padding-x;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .k-filter-row th,
-    .k-grid-toolbar,
-    .k-grouping-header,
-    .k-grid-header th.k-header>.k-link    {
-        padding: $header-padding-x;
-    }
-
-    .k-grid-content {
-        position: relative;
-        overflow: auto;
-        overflow-x: auto;
-        overflow-y: scroll;
-        min-height: 0%; /* IE9 bug workaround - expanding Grid on hover */
-    }
-
-    .k-grid td {
-        border-style: solid;
-        border-width: 0 0 0 1px;
-        line-height: $line-height;
-        padding: $padding-x;
-        overflow: hidden;
-        vertical-align: middle;
-        text-overflow: ellipsis;
-    }
-
-    .k-grid td,
-    .k-grid th {
-        &:focus {
-            outline: none;
-        }
-    }
-
-    .k-grouping-header,
-    .k-filter-row th,
     .k-grid-add-row td {
         border-bottom-style: solid;
         border-bottom-width: 1px;
     }
 
-    .k-grid tbody td:first-child,
-    .k-grid tfoot td:first-child,
-    .k-grid-header th.k-header:first-child,
-    .k-filter-row > th:first-child {
-        border-left-width: 0;
-    }
-
-    .k-grid-content tr:last-child td {
-        border-bottom-width: 0;
-    }
-
-    .k-grid-footer-wrap,
-    .k-grid-header-wrap {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-        border-style: solid;
-        border-width: 0 1px 0 0;
-        box-sizing: content-box;
-    }
-
-    .k-grid .k-group-col,
-    .k-grid .k-hierarchy-col {
-        width: 30px;
-    }
-
-    td.k-hierarchy-cell {
-        text-align: center;
-        padding: 0;
-
-        > .k-icon {
-            width: 100%;
-            height: 100%;
-            line-height: $line-height;
-            display: inline-block;
-            padding: $padding-x 0;
-            outline: 0;
-        }
-    }
-
-    .k-header > .k-grid-filter,
-    .k-header > .k-header-column-menu {
-        padding: $button-padding-y;
-        width: button-size();
-        height: button-size();
-        border-width: 1px;
-        border-style: solid;
-        box-sizing: border-box;
-        display: inline-flex;
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        float: right;
-        position: relative;
-        z-index: 1;
-    }
-
-    .k-grid-pager {
-        border-width: 1px 0 0;
-    }
-
-    /* Filter row */
-    .k-filtercell,
-    .k-filtercell > span,
-    .k-filtercell .k-widget {
-        display: block;
-        width: auto;
-    }
-
-    .k-filtercell > span {
-        padding-right: calc( #{$filter-rows-span-size} + #{$padding-x * 3} + #{$icon-size});
-        position: relative;
-        height: $filter-rows-span-size;
-        line-height: $form-line-height;
-    }
-
-    .k-filtercell > .k-operator-hidden {
-        padding-right: $padding-x * 4;
-    }
-
-    .k-filtercell > span > .k-button,
-    .k-filter-row .k-dropdown-operator {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    .k-filter-row .k-dropdown-operator {
-        width: button-size();
-        right: calc(#{$form-line-height-em} + #{$icon-size});
-    }
-
-    .k-filtercell > span > label {
-        vertical-align: middle;
-    }
-
-    .k-filtercell {
-        .k-autocomplete .k-input,
-        .k-dropdown-wrap .k-input,
-        .k-numeric-wrap .k-input,
-        .k-picker-wrap .k-input,
-        .k-selectbox .k-input,
-        .k-textbox>input {
-            padding-left: 0;
-            padding-right: 0;
-            text-indent: $padding-x;
-        }
-    }
-
-    /* Editing */
-    .k-edit-cell>.k-textbox,
-    .k-edit-cell>.k-widget,
-    .k-grid-edit-row>td>.k-textbox,
-    .k-grid-edit-row>td>.k-widget,
-    .k-grid-edit-row>td>.text-box {
-        width: 100%;
-    }
 
     /* Locked columns */
     .k-grid-content-locked,
@@ -294,132 +480,10 @@
         margin-bottom: -1px;
     }
 
-    .k-grid-header .k-resize-handle,
-    .k-grid > .k-resize-handle {
-        position: absolute;
-        height: 25px;
-        cursor: col-resize;
-        z-index: 2;
-    }
-
-    /* Grid grouping */
-    .k-grid .k-grouping-row td,
-    .k-grid .k-hierarchy-cell {
-        overflow: visible;
-    }
-
-    .k-grid-edit-row td {
-        text-overflow: clip;
-    }
-
-    .k-grouping-header+.k-grid-toolbar {
-        border-width: 0 0 1px;
-    }
-
-    .k-group-footer td {
-        border-style: solid;
-        border-width: 1px 0;
-    }
-
-    .k-group-footer .k-group-cell + td {
-        border-left-width: 1px;
-    }
-
-    .k-grouping-row p {
-        display: flex;
-        align-content: center;
-    }
-
-    .k-grouping-row + tr td {
-        border-top-width: 1px;
-    }
-
-    .k-grouping-row .k-group-cell,
-    .k-grouping-row+tr .k-group-cell {
-        text-overflow: none;
-    }
-
-    .k-grid .k-hierarchy-cell+td {
-        border-left-width: 0;
-    }
-
-    .k-grouping-header {
-        line-height: 2.143em;
-        padding: $padding-x $padding-y-lg;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-    }
-
     .k-header.k-drag-clue {
         overflow: hidden;
     }
 
-    .k-grouping-dropclue {
-        position: absolute;
-        width: ($group-dropclue-size * 2);
-        height: calc( #{$button-calc-size} );
-
-        &::before,
-        &::after {
-            display: inline-block;
-            content: '';
-            position: absolute;
-        }
-
-        &::before {
-            border-width: $group-dropclue-size;
-            border-style: solid;
-            top: 0;
-        }
-
-        &::after {
-            width: $group-dropclue-line-size;
-            height: calc(100% - #{$group-dropclue-size});
-            top: $group-dropclue-size;
-            left: calc(#{$group-dropclue-size} - (#{$group-dropclue-line-size} / 2));
-        }
-    }
-
-    .k-grouping-header .k-group-indicator {
-        display: inline-block;
-        border-style: solid;
-        border-width: 1px;
-        border-radius: $border-radius;
-        margin: 0 0 0 $padding-y;
-        padding: $button-padding-y $button-padding-x;
-        font-size: $font-size;
-        line-height: $form-line-height;
-    }
-
-    .k-grouping-header .k-link {
-        display: inline-block;
-        border-width: 0;
-        padding: 0;
-        text-decoration: none;
-    }
-
-    .k-grouping-header .k-button {
-        border: 0;
-        padding: 0;
-        background: transparent;
-        line-height: 1;
-        vertical-align: middle;
-    }
-
-    .k-grouping-header .k-link .k-icon {
-        vertical-align: middle;
-    }
-
-    .k-grouping-header .k-button-icon {
-        width: 1.143em;
-        height: 1.143em;
-    }
-
-    .k-grouping-header a,
-    .k-grouping-header .k-button {
-        display: inline-block;
-        vertical-align: middle;
-    }
 }
 
 
@@ -443,7 +507,6 @@
             width: 100%;
             display: block;
         }
-
         .k-textbox {
             margin-bottom: 3px;
         }
@@ -452,13 +515,6 @@
         .k-widget.k-filter-and {
             width: 6em;
             margin: .5em 0;
-        }
-
-        .k-filter-selected-items {
-            font-weight: bold;
-            line-height: normal;
-            white-space: nowrap;
-            margin: 1em 0 .3em;
         }
     }
     .k-multicheck-wrap {
@@ -482,6 +538,12 @@
                 margin: 0 ($spacer-y / 4);
             }
         }
+    }
+    .k-filter-selected-items {
+        font-weight: bold;
+        line-height: normal;
+        white-space: nowrap;
+        margin: $spacer-y 0 ($spacer / 2);
     }
 
 }
