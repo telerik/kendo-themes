@@ -48,6 +48,10 @@ $chart-title-font-size: 1.143em !default;
         border-width: 0;
     }
 
+    .k-chart-tooltip-wrapper .k-animation-container-shown {
+        transition: left ease-in 150ms, top ease-in 150ms;
+    }
+
     .k-chart-tooltip table {
         border-spacing: 0;
         border-collapse: collapse;
