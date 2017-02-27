@@ -19,6 +19,16 @@
         .k-button + .k-button {
             border-left-width: 1px;
         }
+
+        .k-rtl &,
+        [dir="rtl"] & {
+            .k-button + .k-button {
+                border-left-width: 0;
+                border-right-width: 1px;
+                border-right-style: solid;
+                margin-left: 0;
+            }
+        }
     }
 
 }

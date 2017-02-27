@@ -11,9 +11,272 @@
     .k-upload {
         .k-upload-button {
             min-width: 7em;
-            margin-right: $padding-x;
+            position: relative;
+            overflow: hidden;
+            direction: ltr;
+            margin: $padding-x;
+
+            input {
+                // font should not depend on outside styles, otherwise upload may break
+                font: 170px monospace !important; // sass-lint:disable-block no-important
+                margin: 0;
+                padding: 0;
+                filter: alpha(opacity=0);
+                opacity: 0;
+                cursor: pointer;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 1;
+            }
         }
 
+        // Drop zone
+        .k-dropzone {
+            display: flex;
+            align-items: center;
+            position: relative;
+            border-width: 0;
+            background-color: transparent;
+
+            em {
+                margin-left: $spacer-x;
+                flex: 1;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                opacity: 0;
+                white-space: nowrap;
+                position: relative;
+                vertical-align: middle;
+                visibility: hidden;
+                display: none;
+            }
+
+            .k-upload-status {
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding: $button-padding-y $button-padding-x;
+                font-size: $font-size;
+                font-weight: normal;
+                line-height: $form-line-height;
+
+                >.k-icon {
+                    margin-right: $padding-y-lg;
+                    box-sizing: content-box;
+                }
+            }
+
+            &.k-dropzone-active {
+                em {
+                    display: block;
+                    visibility: visible;
+                    opacity: 1;
+                }
+
+                .k-upload-status {
+                    display: none;
+                }
+            }
+        }
+
+        // Upload files list
+        .k-upload-files {
+            padding-bottom: $padding-y;
+            border-width: 1px 0 0;
+            border-style: solid;
+            border-color: inherit;
+            margin: 0;
+
+            .k-file-multiple,
+            .k-file-single {
+                display: block;
+                width: 100%;
+            }
+
+            .k-file {
+                padding: $padding-x;
+                border-width: 0 0 1px;
+                border-style: solid;
+                border-color: inherit;
+                display: flex;
+                align-items: center;
+                position: relative;
+                line-height: $line-height;
+            }
+
+            .k-progress {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
+            .k-filename {
+                margin-left: $spacer-x;
+                flex: 1;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                position: relative;
+            }
+
+            .k-upload-status {
+                position: absolute;
+                right: $padding-x;
+                top: $padding-y * 2;
+                margin-top: $padding-y;
+
+                .k-button {
+                    padding: 0;
+                    border-radius: 50%;
+                }
+
+                .k-icon {
+                    vertical-align: middle;
+                }
+            }
+
+            .k-upload-pct {
+                margin-right: $padding-x-sm;
+                font-weight: normal;
+            }
+
+            ~.k-clear-selected,
+            ~.k-upload-selected {
+                margin-top: -$padding-y;
+                border-width: 0;
+            }
+
+            ~.k-upload-selected {
+                border-left-width: 1px;
+                border-left-style: solid;
+                margin-left: -1px;
+            }
+
+            .k-file-name,
+            .k-file-size,
+            .k-file-validation-message,
+            .k-file-information {
+                display: block;
+            }
+
+            .k-file-name {
+                position: relative;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin-top: $padding-y;
+            }
+
+            .k-file-size,
+            .k-file-information,
+            .k-file-validation-message {
+                font-size: $font-size-sm * .786;
+            }
+
+            .k-file-information {
+                text-indent: 1px;
+            }
+
+            .k-file-extension-wrapper,
+            .k-multiple-files-extension-wrapper,
+            .k-file-invalid-extension-wrapper,
+            .k-multiple-files-invalid-extension-wrapper {
+                position: absolute;
+                top: $padding-x;
+                width: $uploaded-image-width;
+                height: $uploaded-image-height;
+                border-width: $uploaded-image-border;
+                border-style: solid;
+                vertical-align: top;
+                font-size: $font-size * .57;
+                text-transform: uppercase;
+                margin: ($uploaded-image-border / 2) $padding-y-lg;
+                box-sizing: content-box;
+            }
+
+            .k-file-invalid-extension-wrapper,
+            .k-multiple-files-invalid-extension-wrapper {
+                font-size: 1.2em;
+            }
+
+            .k-multiple-files-extension-wrapper,
+            .k-multiple-files-invalid-extension-wrapper {
+                margin-top: $padding-y;
+            }
+
+            .k-file-state {
+                visibility: hidden;
+            }
+
+            .k-file-name-size-wrapper {
+                display: block;
+                margin-left: calc(#{$padding-x} + #{$uploaded-image-width} + #{$padding-x * 2});
+                margin-right: calc(#{$padding-x * 6} + #{$icon-size} + #{$padding-x-sm});
+                overflow: hidden;
+                min-height: $uploaded-image-height + ($uploaded-image-border * 2);
+            }
+
+            .k-file-extension-wrapper::before,
+            .k-multiple-files-extension-wrapper::before,
+            .k-multiple-files-extension-wrapper::after,
+            .k-file-invalid-extension-wrapper::before,
+            .k-multiple-files-invalid-extension-wrapper::before,
+            .k-multiple-files-invalid-extension-wrapper::after {
+                position: absolute;
+                content: '';
+                display: inline-block;
+                border-style: solid;
+            }
+
+            .k-file-extension-wrapper::before,
+            .k-multiple-files-extension-wrapper::before,
+            .k-file-invalid-extension-wrapper::before,
+            .k-multiple-files-invalid-extension-wrapper::before {
+                top: -1px;
+                right: -1px;
+                width: 0;
+                height: 0;
+                border-width: 6px;
+                margin-top: -1px;
+                margin-right: -1px;
+            }
+
+            .k-multiple-files-extension-wrapper::after,
+            .k-multiple-files-invalid-extension-wrapper::after {
+                top: -6px;
+                left: -6px;
+                width: 15px;
+                height: 35px;
+                border-width: 2px 0 0 2px;
+            }
+
+            .k-file-extension,
+            .k-file-invalid-icon {
+                position: absolute;
+                bottom: 0;
+                line-height: normal;
+            }
+
+            .k-file-extension {
+                margin-left: .4em;
+                margin-bottom: .3em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 100%;
+                left: 0;
+            }
+
+            .k-file-invalid-icon {
+                margin-left: $padding-x-sm;
+            }
+
+            .k-upload-action {
+                margin-left: $padding-x-sm;
+            }
+        }
+
+        // Upload and Clear buttons when autoUpload: false
         .k-clear-selected,
         .k-upload-selected {
             display: inline-block;
@@ -23,15 +286,10 @@
             padding: $spacer 0;
         }
 
-        .k-clear-selected {
-            border-radius: 0 0 0 $border-radius;
-        }
-
         .k-upload-selected {
             border-left-width: 1px;
             border-left-style: solid;
             margin-left: -1px;
-            border-radius: 0 0 $border-radius;
         }
 
         .k-action-buttons {
@@ -39,275 +297,62 @@
             padding: 0;
             border-top: 0;
         }
-    }
-
-    // Upload button
-    .k-upload-button {
-        position: relative;
-        overflow: hidden;
-        direction: ltr;
-        vertical-align: middle;
-
-        .k-upload-sync & {
-            margin: $padding-x;
-        }
-    }
-    .k-upload-button input {
-        // font should not depend on outside styles, otherwise upload may break
-        font: 170px monospace !important; // sass-lint:disable-block no-important
-        margin: 0;
-        padding: 0;
-        filter: alpha(opacity=0);
-        opacity: 0;
-        cursor: pointer;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-    }
-
-    // Drop zone
-    .k-dropzone {
-        padding: $padding-x;
-        display: flex;
-        align-items: center;
-        position: relative;
-        border-style: solid;
-        border-width: 0;
-        background-color: transparent;
-
-        em {
-            margin-left: $spacer-x;
-            flex: 1;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            opacity: 0;
-            white-space: nowrap;
-            position: relative;
-            vertical-align: middle;
-            visibility: hidden;
-            display: none;
-        }
-
-        .k-upload-status {
-            display: flex;
-            align-items: center;
-            position: relative;
-            padding: $button-padding-y $button-padding-x;
-            font-size: $font-size;
-            font-weight: normal;
-            line-height: $form-line-height;
-
-            >.k-icon {
-                margin-right: $padding-y-lg;
-                box-sizing: content-box;
-            }
-        }
-
-        &.k-dropzone-active {
-            em {
-                display: block;
-                visibility: visible;
-                opacity: 1;
-            }
-
-            .k-upload-status {
-                display: none;
-            }
-        }
-    }
-
-    // Upload files list
-    .k-upload-files {
-        line-height: 2.66;
-        padding-bottom: $padding-y;
-        border-width: 1px 0 0;
-        border-style: solid;
-        border-color: inherit;
-        margin: 0;
-
-        .k-file-multiple,
-        .k-file-single {
-            display: block;
-            width: 100%;
-        }
-
-        .k-file {
-            padding: $padding-x;
-            border-width: 0 0 1px;
-            border-style: solid;
-            border-color: inherit;
-            display: flex;
-            align-items: center;
-            position: relative;
-            line-height: $line-height;
-        }
 
         .k-progress {
             position: absolute;
             bottom: 0;
             left: 0;
+            height: 2px;
         }
 
-        .k-filename {
-            margin-left: $spacer-x;
-            flex: 1;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            position: relative;
+        .k-file-invalid > .k-progress {
+            width: 100%;
         }
 
-        .k-upload-status {
-            position: absolute;
-            right: $padding-x;
-            top: $padding-y * 2;
-            margin-top: $padding-y;
-
-            .k-button {
-                padding: 0;
-                border-radius: 50%;
+        // RTL styles
+        &[dir = "rtl"],
+        .k-rtl & {
+            .k-dropzone .k-upload-status > .k-icon {
+                margin-left: $padding-y-lg;
+                margin-right: 0;
             }
 
-            .k-icon {
-                vertical-align: middle;
+            .k-upload-files {
+                .k-upload-status {
+                    right: auto;
+                    left: $padding-x;
+                }
+
+                ~.k-upload-selected {
+                    border-left-width: 0;
+                    border-right-width: 1px;
+                    border-right-style: solid;
+                    margin-left: 0;
+                }
+
+                .k-file-invalid-icon {
+                    margin-left: 0;
+                    left: $padding-x-sm;
+                }
+            }
+
+            .k-file-name-size-wrapper {
+                margin-right: calc(#{$padding-x} + #{$uploaded-image-width} + #{$padding-x * 2});
+                margin-left: calc(#{$padding-x * 6} + #{$icon-size} + #{$padding-x-sm});
+            }
+
+            .k-file-extension {
+                right: 0;
+                left: auto;
+                margin-right: .4em;
+                margin-left: 0;
+            }
+
+            .k-upload-action {
+                margin-left: 0;
+                margin-right: $padding-x-sm;
             }
         }
-
-        .k-upload-pct {
-            margin-right: $padding-x-sm;
-            font-weight: normal;
-        }
-
-        ~.k-clear-selected,
-        ~.k-upload-selected {
-            margin-top: -$padding-y;
-            border: 0;
-        }
-
-        ~.k-upload-selected {
-            border-left-width: 1px;
-            border-left-style: solid;
-            margin-left: -1px;
-        }
-    }
-
-    .k-file-name,
-    .k-file-size,
-    .k-file-validation-message,
-    .k-file-information {
-        display: block;
-    }
-
-    .k-file-name {
-        position: relative;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        margin-top: $padding-y;
-    }
-
-    .k-file-size,
-    .k-file-information,
-    .k-file-validation-message {
-        font-size: $font-size-sm * .786;
-        line-height: 1em;
-    }
-
-    .k-file-information {
-        text-indent: 1px;
-    }
-
-    .k-file-extension-wrapper,
-    .k-multiple-files-extension-wrapper,
-    .k-file-invalid-extension-wrapper,
-    .k-multiple-files-invalid-extension-wrapper {
-        position: absolute;
-        top: $padding-x;
-        width: $uploaded-image-width;
-        height: $uploaded-image-height;
-        border-width: $uploaded-image-border;
-        border-style: solid;
-        vertical-align: top;
-        font-size: .57em;
-        text-transform: uppercase;
-        margin: ($uploaded-image-border / 2) $padding-y-lg;
-        box-sizing: content-box;
-    }
-
-    .k-file-invalid-extension-wrapper,
-    .k-multiple-files-invalid-extension-wrapper {
-        font-size: 1.2em;
-    }
-
-    .k-multiple-files-extension-wrapper,
-    .k-multiple-files-invalid-extension-wrapper {
-        margin-top: 4px;
-    }
-
-    .k-file-state {
-        visibility: hidden;
-    }
-
-    .k-file-name-size-wrapper {
-        display: block;
-        margin-left: calc(#{$padding-x} + #{$uploaded-image-width} + #{$padding-x * 2});
-        margin-right: calc(#{$padding-x * 6} + #{$icon-size} + #{$padding-x-sm});
-        overflow: hidden;
-        min-height: $uploaded-image-height + ($uploaded-image-border * 2);
-    }
-
-    .k-file-extension-wrapper::before,
-    .k-multiple-files-extension-wrapper::before,
-    .k-multiple-files-extension-wrapper::after,
-    .k-file-invalid-extension-wrapper::before,
-    .k-multiple-files-invalid-extension-wrapper::before,
-    .k-multiple-files-invalid-extension-wrapper::after {
-        position: absolute;
-        content: '';
-        display: inline-block;
-        border-style: solid;
-    }
-
-    .k-file-extension-wrapper::before,
-    .k-multiple-files-extension-wrapper::before,
-    .k-file-invalid-extension-wrapper::before,
-    .k-multiple-files-invalid-extension-wrapper::before {
-        top: -1px;
-        right: -1px;
-        width: 0;
-        height: 0;
-        border-width: 6px;
-        margin-top: -1px;
-        margin-right: -1px;
-    }
-
-    .k-multiple-files-extension-wrapper::after,
-    .k-multiple-files-invalid-extension-wrapper::after {
-        top: -6px;
-        left: -6px;
-        width: 15px;
-        height: 35px;
-        border-width: 2px 0 0 2px;
-    }
-
-    .k-file-extension,
-    .k-file-invalid-icon {
-        position: absolute;
-        bottom: 0;
-        line-height: normal;
-    }
-
-    .k-file-extension {
-        margin-left: .4em;
-        margin-bottom: .3em;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 100%;
-    }
-
-    .k-file-invalid-icon {
-        margin-left: 5px;
     }
 
     .k-ie9 {
@@ -323,19 +368,4 @@
         }
     }
 
-    .k-upload-action {
-        line-height: normal;
-        margin-left: $padding-x-sm;
-    }
-
-    .k-progress {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-    }
-
-    .k-file-invalid > .k-progress {
-        width: 100%;
-    }
 }
