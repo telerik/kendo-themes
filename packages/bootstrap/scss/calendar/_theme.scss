@@ -33,19 +33,22 @@
             @include appearance( header );
         }
         .k-content td {}
-        .k-content .k-today {
-            color: $accent;
+        .k-content .k-link {
+            border-radius: 50%;
+        }
+        .k-content .k-today .k-link {
+            box-shadow: inset 0 0 0 1px $accent;
         }
         .k-content .k-weekend {
             background: darken( $widget-bg, 5 );
         }
-        .k-content .k-state-hover {
+        .k-content .k-state-hover .k-link{
             @include appearance( hovered-node );
         }
-        .k-content .k-state-selected {
+        .k-content .k-state-selected .k-link{
             @include appearance( selected-node );
         }
-        .k-content .k-state-focused {
+        .k-content .k-state-focused .k-link {
             border-color: $node-selected-border;
             box-shadow: inset 0 0 5px $node-selected-border;
         }
