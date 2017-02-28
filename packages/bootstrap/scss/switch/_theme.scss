@@ -20,19 +20,24 @@
     // Switch container
     .k-switch-container,
     .km-switch-container {
-        @include border-radius( $border-radius );
+        border-radius: ($switch-size / 2);
         border-color: $button-border;
         color: $button-text;
     }
     .k-switch-handle,
     .km-switch-handle {
-        @include border-radius( $border-radius );
-        background-color: $button-bg;
-        box-shadow: 0 1px 0 1px $button-border, 0 -1px 0 1px $button-border;
+        @include appearance( button );
+        border-radius: 50%;
+        box-shadow: $button-shadow;
     }
     .k-switch-label-on,
     .km-switch-label-on {
-        color: $primary-button-text;
+        color: $primary-button-bg;
+    }
+
+    .k-switch-on .m-switch-handle,
+    .km-switch-on .km-switch-handle {
+        @include appearance( primary-button );
     }
 
 }
