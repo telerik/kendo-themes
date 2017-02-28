@@ -25,6 +25,7 @@ before_install:
 before_script:
   - npm prune
 after_success:
+  - npm update @progress/kendo-theme-default
   - npm run semantic-release
 branches:
   except:
