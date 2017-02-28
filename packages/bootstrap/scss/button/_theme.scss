@@ -50,6 +50,22 @@
 
 
     // Button group
-    .k-button-group {}
+    .k-button-group {
+        border: 0;
+
+        // Default button
+        .k-button {
+
+            // Active
+            &:active,
+            &.k-state-active {
+
+                & + .k-button:hover,
+                & + .k-button.k-state-hover {
+                    border-left-color: $button-pressed-border;
+                }
+            }
+        }
+    }
 
 }
