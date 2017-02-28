@@ -2,6 +2,10 @@
 
     .k-slider {
 
+        .k-button {
+            border-radius: 50%;
+        }
+
         .k-slider-track {
             background: $header-bg;
         }
@@ -13,12 +17,10 @@
         // Drag handle
         .k-draghandle {
             @include appearance( button );
+            border-radius: 50%;
         }
         .k-draghandle:hover {
             @include appearance( hovered-button );
-        }
-        .k-draghandle.k-state-active {
-            @include appearance( active-button );
         }
 
     }
