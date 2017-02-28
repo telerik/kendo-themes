@@ -1,3 +1,5 @@
+$splitter-bg: darken($button-bg, 5) !default;
+
 @include exports("splitter/theme") {
 
     .k-splitter {}
@@ -6,6 +8,21 @@
     // Splitbar
     .k-splitbar {
         @include appearance( button );
+        background: $splitter-bg;
+
+        &:active,
+        &.k-state-focused {
+            color: $selected-text;
+            background: $selected-bg;
+
+            .k-resize-handle {
+                background-color: $selected-text;
+            }
+        }
+
+        .k-resize-handle {
+            background-color: $button-text;
+        }
     }
     .k-splitbar-horizontal-hover,
     .k-splitbar-vertical-hover {
@@ -13,6 +30,10 @@
     }
     .k-ghost-splitbar {
         @include appearance( active-button );
+    }
+
+    .k-ghost-splitbar {
+        @include appearance( hovered-button );
     }
 
 }
