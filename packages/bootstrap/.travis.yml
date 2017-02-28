@@ -22,10 +22,10 @@ before_install:
   - npm i -g npm@^3.8.0
   - echo "@progress:registry=https://$PROGRESS_REGISTRY_HOST/" > .npmrc
   - echo "//$PROGRESS_REGISTRY_HOST/:_authToken=\"$PROGRESS_REGISTRY_TOKEN\"" >> .npmrc
+  - npm update @progress/kendo-theme-default
 before_script:
   - npm prune
 after_success:
-  - npm update @progress/kendo-theme-default
   - npm run semantic-release
 branches:
   except:
