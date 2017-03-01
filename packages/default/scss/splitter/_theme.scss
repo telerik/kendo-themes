@@ -18,7 +18,8 @@
 
         &:active,
         &.k-state-focused {
-            @include appearance( pressed-button );
+            color: $selected-text;
+            background: $selected-bg;
 
             .k-icon {
                 color: $button-pressed-text;
