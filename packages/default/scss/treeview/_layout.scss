@@ -6,6 +6,7 @@
     .k-treeview {
         border-width: 0;
         background: none;
+        line-height: $form-line-height;
         cursor: default;
         overflow: auto;
         white-space: nowrap;
@@ -31,12 +32,15 @@
         // Link
         .k-in {
             margin: 0;
-            padding: $padding-y $padding-x;
+            padding: $button-padding-y;
             border: 1px solid;
             border-color: transparent;
             text-decoration: none;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            align-content: center;
             vertical-align: middle;
+            position: relative;
         }
 
         // Expand / collapse
@@ -59,7 +63,7 @@
         }
         .k-image,
         .k-sprite {
-            margin-right: 3px;
+            margin-right: $icon-spacing;
         }
 
 
@@ -70,7 +74,7 @@
 
             // Link
             .k-in {
-                padding: $padding-y-sm $padding-x-sm;
+                padding: $button-padding-y-sm;
             }
 
         }
