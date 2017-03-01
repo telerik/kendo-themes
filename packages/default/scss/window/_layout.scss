@@ -93,7 +93,7 @@ $modal-overlay-color: #000 !default;
 
     // Content
     .k-window-content {
-        padding: $modal-inner-padding;
+        padding: $window-padding-y $window-padding-x;
         outline: 0;
         overflow: auto;
         position: relative;

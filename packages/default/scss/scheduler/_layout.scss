@@ -62,6 +62,7 @@ $modal-inner-padding: 1em;
 
         .k-link {
             padding: $button-padding-y $button-padding-x;
+            box-sizing: border-box;
             color: inherit;
             text-decoration: none;
             display: flex;
@@ -76,7 +77,7 @@ $modal-inner-padding: 1em;
     // Header and footer
     .k-scheduler-toolbar,
     .k-scheduler-footer {
-        padding: $padding-x;
+        padding: $toolbar-padding-y $toolbar-padding-x;
         border-width: 0;
         border-style: solid;
         display: flex;
@@ -85,6 +86,12 @@ $modal-inner-padding: 1em;
         justify-content: space-between;
         flex-shrink: 0;
         position: relative;
+        white-space: nowrap;
+
+        li .k-link {
+            height: button-inner-size();
+            box-sizing: border-box;
+        }
     }
     .k-scheduler-toolbar { border-bottom-width: 1px; }
     .k-scheduler-footer { border-top-width: 1px; }
@@ -95,9 +102,6 @@ $modal-inner-padding: 1em;
         @extend %ul-button-group;
         flex: 1;
 
-        li .k-link {
-            box-sizing: border-box;
-        }
 
         // Prev / next
         .k-nav-prev,
@@ -184,8 +188,8 @@ $modal-inner-padding: 1em;
             flex-direction: column;
             align-items: stretch;
             position: absolute;
-            right: $padding-x-sm;
-            top: $padding-y-sm;
+            right: $toolbar-padding-x;
+            top: $toolbar-padding-y;
             z-index: 1000;
 
             li { display: none; }
@@ -668,8 +672,8 @@ $modal-inner-padding: 1em;
 
 
     .k-edit-form-container .k-edit-buttons {
-        margin: $spacer (-$modal-inner-padding) (-$modal-inner-padding);
-        padding: $modal-inner-padding;
+        margin: $spacer (-$window-padding-x) (-$window-padding-y);
+        padding: $window-padding-x;
         border-width: 1px 0 0;
         border-style: solid;
         text-align: right;
