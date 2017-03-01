@@ -1,5 +1,7 @@
 @include exports("map/layout") {
 
+    $map-navigator-padding: 2px !default;
+
     // Layout
     .k-map {
         height: 600px;
@@ -58,8 +60,9 @@
     // Navigator
     .k-navigator {
         margin: $spacer-x;
-        width: 50px;
-        height: 50px;
+        width: addTwo( (3 * $icon-size), $map-navigator-padding );
+        height: addTwo( (3 * $icon-size), $map-navigator-padding );
+        box-sizing: content-box;
         border-radius: 50%;
         position: relative;
 
@@ -68,32 +71,35 @@
 
         // Buttons
         .k-button {
-            border-color: transparent;
-            background: none;
             margin: 0;
             padding: 0;
             border-radius: 100%;
             line-height: 1;
             position: absolute;
+
+            &:not(:hover) {
+                border-color: transparent;
+                background: none;
+            }
         }
         .k-navigator-up {
-            margin-left: calc( -#{$font-size/2} - 1px);
-            top: 2px;
+            transform: translateX(-50%);
+            top: $map-navigator-padding;
             left: 50%;
         }
         .k-navigator-right {
-            margin-top: calc( -#{$font-size/2} - 1px);
-            right: 2px;
+            transform: translateY(-50%);
+            right: $map-navigator-padding;
             top: 50%;
         }
         .k-navigator-down  {
-            margin-left: calc( -#{$font-size/2} - 1px);
-            bottom: 2px;
+            transform: translateX(-50%);
+            bottom: $map-navigator-padding;
             left: 50%;
         }
         .k-navigator-left {
-            margin-top: calc( -#{$font-size/2} - 1px);
-            left: 2px;
+            transform: translateY(-50%);
+            left: $map-navigator-padding;
             top: 50%;
         }
     }
@@ -120,6 +126,3 @@
     }
 
 }
-
-
-
