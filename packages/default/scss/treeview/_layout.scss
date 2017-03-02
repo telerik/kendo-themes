@@ -21,6 +21,16 @@
             position: relative;
         }
 
+        // Wrappers
+        .k-top,
+        .k-mid,
+        .k-bot {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-content: center;
+        }
+
         // Items
         .k-item {
             margin: 0;
@@ -33,8 +43,7 @@
         .k-in {
             margin: 0;
             padding: $button-padding-y;
-            border: 1px solid;
-            border-color: transparent;
+            border: 1px solid transparent;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
@@ -51,18 +60,12 @@
         }
 
         // Other content
-        .k-checkbox,
-        .k-icon,
-        .k-image,
-        .k-sprite {
-            display: inline-block;
-            vertical-align: top;
+        .k-checkbox-wrapper {
+            margin-right: $icon-spacing;
         }
-        .k-icon {
-            vertical-align: middle;
-        }
-        .k-image,
-        .k-sprite {
+        .k-in .k-icon,
+        .k-in .k-image,
+        .k-in .k-sprite {
             margin-right: $icon-spacing;
         }
 

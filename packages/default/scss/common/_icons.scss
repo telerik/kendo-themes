@@ -689,5 +689,8 @@
         text-align: center;
         -ms-high-contrast-adjust: none;
     }
+    .k-image {
+        display: inline-block;
+    }
     // sass-lint:enable single-line-per-selector
 }
