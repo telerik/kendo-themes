@@ -1,31 +1,15 @@
-// TODO: extract or remove modal variables
-$modal-title-padding: 1em !default;
-$modal-title-line-height: 1.2em !default;
-$modal-inner-padding: $modal-title-padding !default;
-$modal-overlay-color: #000 !default;
-
 @include exports("window/layout") {
 
-    .k-overlay {
-        width: 100%;
-        height: 100%;
-        background-color: $modal-overlay-color;
-        opacity: .5;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 10001;
-    }
-
     .k-window {
-        @include border-radius( $border-radius );
-        padding-top: 2em;
-        border-style: solid;
+        padding: 0;
+        max-width: 98vw;
+        max-height: 98vh;
         border-width: 1px;
+        border-style: solid;
         display: inline-flex;
         flex-direction: column;
         position: absolute;
-        z-index: 10001;
+        z-index: 10002;
 
         // overlay during dragging
         .k-overlay {
@@ -48,19 +32,22 @@ $modal-overlay-color: #000 !default;
         // sass-lint:enable mixins-before-declarations
     }
 
+
     // Title bar
     .k-window-titlebar {
-        padding: $modal-title-padding;
+        padding: $window-titlebar-padding-y $window-titlebar-padding-x;
         min-height: 16px;
         border-width: 0 0 1px;
         border-style: solid;
         white-space: nowrap;
         display: flex;
         flex-direction: row;
+        flex-shrink: 0;
         align-items: center;
     }
     .k-window-title {
         margin: 0;
+        font-size: $font-size-lg;
         line-height: 1;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -68,35 +55,25 @@ $modal-overlay-color: #000 !default;
         flex: 1;
     }
 
+
     // Actions
     .k-window-actions {
-        flex-shrink: 0;
+        line-height: 1;
         display: flex;
         flex-direction: row;
+        flex-shrink: 0;
         align-items: center;
-        line-height: 1;
         vertical-align: top;
     }
 
-    .k-window-action {
-        padding: 2px;
-        color: inherit;
-        text-decoration: none;
-        opacity: .2;
-
-        &.k-state-hover {
-            color: inherit;
-            text-decoration: none;
-            opacity: .5;
-        }
-    }
 
     // Content
     .k-window-content {
-        padding: $window-padding-y $window-padding-x;
+        padding: $window-inner-padding-y $window-inner-padding-x;
         outline: 0;
         overflow: auto;
         position: relative;
-        flex: 1;
+        flex: 1 1 auto;
     }
+
 }

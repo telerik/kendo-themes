@@ -11,7 +11,7 @@ $font-family-monospace:  Consolas, "Ubuntu Mono", "Lucida Console", "Courier New
 
 $font-size-xs: 10px !default;
 $font-size-sm: 12px !default;
-$font-size-lg: 16px !default;
+$font-size-lg: 19px !default;
 
 /// Line height used along with $font-size.
 $line-height: (20 / 14) !default;
@@ -85,10 +85,10 @@ $cell-padding-y: 8px !default;
 $cell-padding: 8px !default;
 // $cell-padding-sm: $table-sm-cell-padding !default;
 
-$window-padding-x: $padding-x;
-$window-padding-y: $padding-y;
-$window-titlebar-padding-x: $padding-x;
-$window-titlebar-padding-y: $padding-x;
+$window-inner-padding-x: 16px !default;
+$window-inner-padding-y: 16px !default;
+$window-titlebar-padding-x: 16px !default;
+$window-titlebar-padding-y: 16px !default;
 
 $zindex-popup: 1;
 $zindex-window: 2;

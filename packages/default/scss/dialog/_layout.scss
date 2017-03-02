@@ -1,81 +1,54 @@
-// TODO: extract or remove modal variables
-$modal-title-padding: 1em !default;
-$modal-title-line-height: 1.2em !default;
-$modal-inner-padding: $modal-title-padding !default;
-
-@import '../button/layout';
-@import '../action-buttons/layout';
-
 @include exports('dialog/layout') {
 
     .k-dialog {
-        padding-top: 0;
+        padding: 0;
         min-width: 450px;
-        max-width: 100%;
-        max-height: 98vh;
         position: fixed;
-        border-width: 0;
-    }
 
-    // Title bar
-    .k-dialog .k-window-titlebar {
-        flex-shrink: 0;
-    }
 
-    .k-dialog .k-dialog-title {
-        margin: 0;
-        line-height: 1;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        cursor: default;
-    }
-
-    // Actions
-    .k-dialog-action {
-        color: inherit;
-        text-decoration: none;
-        opacity: .2;
-        line-height: 1;
-
-        &:hover,
-        &.k-state-hover {
-            color: inherit;
-            text-decoration: none;
-            opacity: .5;
+        // Centered
+        &.k-dialog-centered {
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
         }
     }
 
+
+    // Titlebar
+    .k-dialog-titlebar {}
+    .k-dialog-title {}
+
+
+    // Actions
+    .k-dialog-actions {}
+    .k-dialog-action {}
+
+
     // Content
-    .k-dialog .k-content {
-        padding: $modal-inner-padding;
-        outline: 0;
-        overflow: auto;
-        position: relative;
-    }
+    .k-dialog-content {}
+
 
     // Buttons
     .k-dialog-buttongroup {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+        border-width: 1px 0 0;
+        border-style: solid;
+        border-color: inherit;
+        background-color: transparent;
         display: flex;
 
         .k-button {
             // sass-lint:disable no-important
             width: auto !important;
-            // sass-lint:enable no-important
+            border-width: 0;
+            border-color: inherit;
             white-space: normal;
-            display: flex;
-            justify-content: center;
             flex: 1;
-            line-height: 1;
-            padding: $padding-x * 2;
-            border-radius: 0;
-            border-width: 1px 0 0;
-
-            &:not(:last-child) {
-                border-right-width: 1px;
-            }
+            // sass-lint:enable no-important
+        }
+        .k-button + .k-button {
+            margin: 0;
+            border-left-width: 1px;
         }
     }
     .k-dialog-button-layout-stretched {
@@ -83,7 +56,4 @@ $modal-inner-padding: $modal-title-padding !default;
         align-items: stretch;
     }
 
-    .k-window-content {
-        overflow: hidden;
-    }
 }

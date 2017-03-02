@@ -38,6 +38,7 @@
         &:hover,
         &:focus {
             text-decoration: none;
+            outline: 0;
         }
 
         .k-icon,
@@ -138,6 +139,9 @@
 
     // Button group
     .k-button-group {
+        margin: 0;
+        padding: 0;
+        list-style: none;
         white-space: nowrap;
         display: inline-flex;
         flex-direction: row;
@@ -236,7 +240,7 @@
             transition: opacity .2s ease-in-out;
             pointer-events: none;
             position: absolute;
-            z-index: -1;
+            z-index: 0;
             top: -1px;
             left: -1px;
             right: -1px;
@@ -249,7 +253,7 @@
             opacity: 0;
             pointer-events: none;
             position: absolute;
-            z-index: -1;
+            z-index: 0;
             top: -1px;
             left: -1px;
             right: -1px;
@@ -259,18 +263,21 @@
         // Hover state
         &:hover,
         &.k-state-hover {
+            color: inherit;
             &::before { opacity: .07; }
         }
 
         // Pressed state
         &:active,
         &.k-state-active {
+            color: inherit;
             &::before { opacity: .08; }
         }
 
         // Focused state
         &:focus,
         &.k-state-focused {
+            color: inherit;
             &::after { opacity: .13; }
         }
 

@@ -1,108 +1,66 @@
-@import '../button/theme';
-@import '../action-buttons/theme';
-@import './layout';
+@include exports("dialog/theme") {
 
-@include exports('dialog/theme') {
 
-    $window-header-text: $selected-text !default;
-    $window-header-bg: $accent !default;
-    $window-border: rgba(0, 0, 0, .08) !default;
-    $window-shadow-color: rgba(0, 0, 0, .3) !default; // remove the -color part
-    $window-shadow: 0 3px 3px 0 rgba(0, 0, 0, .06) !default;
-    $window-focused-shadow: 1px 1px 7px 1px $window-shadow-color !default;
+    .k-dialog {}
 
-    $dialog-normal-button-bg: $bg-color !default;
-    $dialog-normal-button-hover-bg: $hovered-bg !default;
-    $dialog-primary-button-focus: rgba( $accent, .3 ) !default;
-    $dialog-normal-button-focus-shadow: inset 0 0 0 2px $button-border !default;
-    $dialog-primary-button-bg: $accent-contrast !default;
-    $dialog-primary-button-text: $accent !default;
-    $dialog-primary-button-focus-shadow: inset 0 0 0 2px $dialog-primary-button-focus !default;
-    $dialog-primary-button-hover-focus-shadow: inset 0 0 0 2px $button-border !default;
 
-    .k-window {
-        border-color: $window-border;
-        box-shadow: $window-shadow;
-
-        >.k-header {
-            color: $window-header-text;
-            background-color: $window-header-bg;
-
-            .k-window-action {
-                color: inherit;
-                background: transparent;
-                border-color: transparent;
-            }
-        }
-
-        &.k-state-focused {
-            box-shadow: $window-focused-shadow;
-        }
-
-        .k-dialog-action {
-            border-color: transparent;
-
-            &:active {
-                box-shadow: none;
-            }
-        }
+    // Titlebar
+    .k-dialog-titlebar {
+        color: $accent-contrast;
+        background-color: $accent;
+        background-image: none;
     }
+
 
     .k-dialog-buttongroup {
-        background-color: $dialog-normal-button-bg;
 
         .k-button {
-            border-color: $button-border;
+            padding: $padding-x * 2;
+            color: inherit;
+            background: none;
+            background-clip: padding-box;
+            line-height: 1;
+        }
+        .k-button:hover,
+        .k-button.k-state-hover {
+            @include appearance( hovered-button );
+            border-color: inherit;
+        }
+        .k-button:active,
+        .k-button.k-state-active {
+            @include appearance( pressed-button );
+            border-color: inherit;
+        }
+        .k-button:focus,
+        .k-button.k-state-focused {
+            box-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .1);
+        }
 
-            &:hover {
-                border-color: $button-border;
-            }
 
-            &:active {
-                box-shadow: $button-pressed-shadow;
-            }
+        .k-button.k-primary {
+            color: $accent;
+            background: none;
+        }
+        .k-button.k-primary:hover,
+        .k-button.k-primary.k-state-hover {
+            @include appearance( hovered-primary-button );
+            border-color: inherit;
 
-            &:not(.k-primary) {
-                background-color: $dialog-normal-button-bg;
-                background-image: none;
-
-                &:hover,
-                &.k-state-hover {
-                    background-color: $dialog-normal-button-hover-bg;
-                }
-
-                &:focus,
-                &.k-state-focused {
-                    box-shadow: $dialog-normal-button-focus-shadow;
-                }
-            }
-
-            &.k-primary {
-                background-image: none;
-                background-color: $dialog-primary-button-bg;
-                color: $dialog-primary-button-text;
-
-                &:hover,
-                &.k-state-hover {
-                    background-color: $dialog-primary-button-text;
-                    color: $dialog-primary-button-bg;
-
-                    &:focus,
-                    &.k-state-focused {
-                        box-shadow: $dialog-primary-button-hover-focus-shadow;
-                    }
-                }
-
-                &:active {
-                    background-color: $dialog-primary-button-text;
-                    color: $dialog-primary-button-bg;
-                }
-
-                &:focus,
-                &.k-state-focused {
-                    box-shadow: $dialog-primary-button-focus-shadow;
-                }
+            &:focus,
+            &.k-state-focused {
+                box-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .1);
             }
         }
+        .k-button.k-primary:active,
+        .k-button.k-primary.k-state-active {
+            @include appearance( pressed-primary-button );
+            border-color: inherit;
+        }
+        .k-button.k-primary:focus,
+        .k-button.k-primary.k-state-focused {
+            box-shadow: inset 0 0 0 2px rgba( $button-hovered-bg, .3);
+        }
+
     }
+
 }

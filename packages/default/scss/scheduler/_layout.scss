@@ -672,8 +672,8 @@ $modal-inner-padding: 1em;
 
 
     .k-edit-form-container .k-edit-buttons {
-        margin: $spacer (-$window-padding-x) (-$window-padding-y);
-        padding: $window-padding-x;
+        margin: $spacer (-$window-inner-padding-x) (-$window-inner-padding-y);
+        padding: $window-inner-padding-x;
         border-width: 1px 0 0;
         border-style: solid;
         text-align: right;
