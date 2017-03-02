@@ -53,11 +53,11 @@
             }
         }
 
-        .k-searchbar
-        .k-input {
-            display: inline-block;
-            width: auto;
+        .k-searchbar {
+            // search bar must be floated to align after any selected tags
+            // (or align below them, if space is not available)
             float: left;
+            width: auto;
         }
 
         // Icons
