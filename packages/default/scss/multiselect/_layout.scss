@@ -21,6 +21,7 @@
         min-height: calc( #{$input-inner-calc-size} );
         border-width: 0;
         padding-right: ($padding-x * 3);
+        cursor: text;
 
         // Token list
         ul {
