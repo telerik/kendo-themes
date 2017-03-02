@@ -101,18 +101,20 @@
     .k-list-filter {
         display: block;
         position: relative;
-        margin: 8px;
+        padding: $padding-x;
+        height: addThree(4 * $padding-y, $form-line-height-em, 2 * $button-padding-y);
+        box-sizing: border-box;
 
         > .k-textbox {
-            padding-right: 20px;
-            /* remove the !important declaration when https://github.com/telerik/kendo-ui-core/issues/2617 is fixed */
-            width: 100% !important; // sass-lint:disable-block no-important
+            position: absolute;
+            // remove the !important declaration when https://github.com/telerik/kendo-ui-core/issues/2617 is fixed
+            width: calc( 100% - #{ $padding-x * 2} ) !important; // sass-lint:disable-block no-important
             box-sizing: border-box;
         }
 
         > .k-icon {
             position: absolute;
-            right: 6px;
+            right: $padding-x * 2;
             top: 50%;
             transform: translateY(-50%);
         }
