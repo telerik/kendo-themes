@@ -317,38 +317,53 @@
         width: auto;
         display: block;
 
-        > span {
+        > span,
+        .k-filtercell-wrapper {
             padding-right: calc( 2 * (#{$button-calc-size} + #{$cell-padding-y / 2}));
             height: calc( #{$button-calc-size} );
             display: block;
             position: relative;
 
-            > .k-button {
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
             > label {
                 vertical-align: middle;
             }
 
         }
+
+        > span,
+        .k-filtercell-operator {
+            > .k-button {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+
+
         > .k-operator-hidden {
             padding-right: calc( #{$button-calc-size} + #{$cell-padding-y / 2});
         }
 
-        .k-widget {
+        .k-widget,
+        .k-filtercell-wrapper > .k-textbox {
             display: flex;
-            width: auto;
             flex: 1;
         }
+
+        .k-widget {
+            width: auto;
+        }
+
+        .k-filtercell-wrapper > .k-textbox {
+            width: 100%;
+        }
+
         .k-autocomplete .k-input,
         .k-dropdown-wrap .k-input,
         .k-numeric-wrap .k-input,
         .k-picker-wrap .k-input,
         .k-selectbox .k-input,
         .k-textbox > input {
-            // TODO: do we need this?
             padding-left: 0;
             padding-right: 0;
             text-indent: $padding-x;
@@ -361,6 +376,7 @@
             top: 0;
             right: calc( #{$button-calc-size} + #{$cell-padding-y / 2} );
         }
+
         .k-dropdown-operator .k-input {
             padding: 0;
             width: 0;
