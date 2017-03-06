@@ -6,8 +6,11 @@
             border-color: $nav-tabs-border-color;
         }
 
-        .k-item {}
+        .k-item {
+            color: $link-text;
+        }
         .k-item.k-state-hover {
+            color: $link-hover-text;
             border-color: $nav-tabs-link-hover-border-color;
         }
         .k-item.k-state-active {

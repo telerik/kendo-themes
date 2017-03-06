@@ -131,8 +131,8 @@ $widget-border: $border-color !default;
 
 // Panel
 $panel-text: $widget-text !default;
-$panel-bg: $widget-bg !default;
-$panel-border: $widget-border !default;
+$panel-bg: $card-bg !default;
+$panel-border: $card-border-color !default;
 
 
 // Popup
@@ -143,13 +143,13 @@ $popup-border: $panel-border !default;
 
 // Header
 $header-text: $base-text !default;
-$header-bg: darken( $base-bg, 3 ) !default;
-$header-border: $base-border !default;
+$header-bg: $card-cap-bg !default;
+$header-border: $card-border-color !default;
 $header-gradient: none !default;
 
 $header-hovered-text: $header-text !default;
 $header-hovered-bg: darken( $header-bg, 10% ) !default;
-$header-hovered-border: darken( $header-border, 12 ) !default;
+$header-hovered-border: $header-border !default;
 $header-hovered-gradient: none !default;
 
 $header-selected-text: $selected-text !default;
@@ -163,19 +163,19 @@ $button-text: $base-text !default;
 $button-bg: $base-bg !default;
 $button-border: darken( $base-border, 8 ) !default;
 $button-gradient: none !default;
-$button-shadow: $btn-box-shadow !default;
+$button-shadow: none !default;
 
 $button-hovered-text: $button-text !default;
 $button-hovered-bg: darken( $button-bg, 10% ) !default;
 $button-hovered-border: darken( $button-border, 12% ) !default;
 $button-hovered-gradient: none !default;
-$button-hovered-shadow: $btn-box-shadow !default;
+$button-hovered-shadow: none !default;
 
-$button-pressed-text: $button-text !default;
-$button-pressed-bg: darken( $button-bg, 17% ) !default;
-$button-pressed-border: darken( $button-border, 25% ) !default;
+$button-pressed-text: $button-hovered-text !default;
+$button-pressed-bg: $button-hovered-bg !default;
+$button-pressed-border: $button-hovered-border !default;
 $button-pressed-gradient: none !default;
-$button-pressed-shadow: $btn-active-box-shadow !default;
+$button-pressed-shadow: none !default;
 
 $button-focused-shadow: 0 0 0 2px rgba($button-border, .5) !default;
 
@@ -191,9 +191,9 @@ $primary-button-hovered-bg: darken( $primary-button-bg, 10% ) !default;
 $primary-button-hovered-border: darken( $primary-button-border, 12% ) !default;
 $primary-button-hovered-gradient: none !default;
 
-$primary-button-pressed-text: $primary-button-text !default;
-$primary-button-pressed-bg: darken( $primary-button-bg, 17% ) !default;
-$primary-button-pressed-border: darken( $primary-button-border, 25% ) !default;
+$primary-button-pressed-text: $primary-button-hovered-text !default;
+$primary-button-pressed-bg: $primary-button-hovered-bg !default;
+$primary-button-pressed-border: $primary-button-hovered-border !default;
 $primary-button-pressed-gradient: none !default;
 
 $primary-button-focused-shadow: 0 0 0 2px rgba($primary-button-border, .5);
@@ -244,11 +244,11 @@ $node-selected-gradient: none !default;
 $list-item-text: $node-text !default;
 $list-item-bg: $node-bg !default;
 
-$list-item-hovered-text: $node-hovered-text !default;
-$list-item-hovered-bg: $node-hovered-bg !default;
+$list-item-hovered-text: $dropdown-link-hover-color !default;
+$list-item-hovered-bg: $dropdown-link-hover-bg !default;
 
-$list-item-selected-text: $node-selected-text !default;
-$list-item-selected-bg: $node-selected-bg !default;
+$list-item-selected-text: $dropdown-link-active-color !default;
+$list-item-selected-bg: $dropdown-link-active-bg !default;
 
 $list-item-focused-shadow: none;
 

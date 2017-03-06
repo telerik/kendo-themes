@@ -19,7 +19,6 @@
         &:active,
         &.k-state-active {
             @include appearance( pressed-button );
-            box-shadow: $button-focused-shadow, $button-pressed-shadow;
         }
 
     }
@@ -43,7 +42,6 @@
         &:active,
         &.k-state-active {
             @include appearance( pressed-primary-button );
-            box-shadow: $primary-button-focused-shadow, $button-pressed-shadow;
         }
 
     }
@@ -56,6 +54,11 @@
         // Default button
         .k-button {
 
+            &:focus,
+            &.k-state-focus {
+                z-index: 2;
+            }
+
             // Active
             &:active,
             &.k-state-active {
@@ -66,6 +69,7 @@
                 }
             }
         }
+
     }
 
 }

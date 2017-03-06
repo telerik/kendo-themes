@@ -3,7 +3,7 @@
     .k-popup {
         @include appearance( popup );
         @include border-radius( $border-radius );
-        margin-top: $dropdown-margin-top;
+        margin: $dropdown-margin-top 0 0 0;
 
         .k-header,
         .k-group-header {
