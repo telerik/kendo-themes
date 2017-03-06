@@ -1,21 +1,5 @@
 $slider-trackbackground-color: darken($widget-bg, 10%) !default;
 $slider-selection-background-color: $accent !default;
-$slider-draghandle-background-color: $accent !default;
-$slider-draghandle-border-color: rgba(0, 0, 0, .08) !default;
-$slider-draghandle-hover-border-color: rgba(0, 0, 0, .15) !default;
-
-$slider-draghandle-gradient: linear-gradient(adjust-hue($accent, 3), $accent) !default;
-$slider-draghandle-hover-gradient: linear-gradient(adjust-hue($accent, 6), adjust-hue($accent, 3)) !default;
-$slider-draghandle-active-gradient: linear-gradient($accent, adjust-hue($accent, 3)) !default;
-
-$slider-draghandle-selected-background-color: $accent !default;
-$slider-draghandle-selected-border-color: $accent !default;
-$slider-draghandle-selected-shadow: inset 0 0 3px 1px darken($accent, 9%) !default;
-
-$slider-draghandle-focus-shadow: 0 0 2px 2px rgba(0, 0, 0, .06) !default;
-$slider-draghandle-active-shadow: inset 0 2px 3px 1px rgba(0, 0, 0, .06) !default;
-
-$slider-button-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 
 @include exports('slider/theme') {
 
@@ -33,48 +17,26 @@ $slider-button-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
             background-color: $slider-selection-background-color;
         }
 
+        .k-button {
+            border-radius: 50%;
+        }
+
         .k-draghandle {
-            background-color: $slider-draghandle-background-color;
-            border-color: $slider-draghandle-border-color;
+            @include appearance( primary-button );
             border-radius: 50%;
 
-            &:hover,
-            &.k-pressed {
-                background-color: darken($accent, 4%);
-            }
-
-            &:focus {
-                box-shadow: $slider-draghandle-focus-shadow;
+            &:hover {
+                @include appearance( hovered-primary-button );
             }
 
             &:active,
             &.k-pressed {
-                box-shadow: $slider-draghandle-active-shadow;
+                @include appearance( pressed-primary-button );
+                box-shadow: inset $primary-button-pressed-shadow;
             }
 
-            &:hover {
-                border-color: $slider-draghandle-hover-border-color;
-            }
-        }
-
-        .k-button {
-            border-radius: 50%;
-
-            &:active {
-                color: $base-text;
-                box-shadow: $slider-button-focused-shadow;
-            }
-        }
-
-        &.k-state-disabled .k-button,
-        &.k-state-disabled .k-draghandle {
-            &:hover,
-            &:focus,
-            &:active {
-                color: lighten($base-text, 60%);
-                background-color: $slider-draghandle-background-color;
-                border-color: $slider-draghandle-border-color;
-                box-shadow: none;
+            &:focus {
+                box-shadow: $primary-button-focused-shadow;
             }
         }
     }
