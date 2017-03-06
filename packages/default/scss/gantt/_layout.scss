@@ -47,7 +47,7 @@
 
     // Toolbar
     .k-gantt-toolbar {
-        padding: $padding-x;
+        padding: $toolbar-padding-y $toolbar-padding-x;
         border-width: 0 0 1px;
         border-style: solid;
         border-color: inherit;
