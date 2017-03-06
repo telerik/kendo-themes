@@ -27,7 +27,6 @@
         // Focused state
         .k-state-focused {
             @include appearance( focused-input );
-            box-shadow: $button-focused-shadow;
         }
 
         // Selected state
