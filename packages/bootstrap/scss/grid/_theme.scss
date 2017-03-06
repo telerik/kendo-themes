@@ -4,7 +4,12 @@
     .k-grid {
 
         .k-alt {
-            background-color: rgba( black, .03 );
+            background-color: $grid-alt-bg;
+        }
+        .k-state-selected {
+            border-color: $selected-border;
+            color: $selected-text;
+            background-color: $selected-bg;
         }
 
     }

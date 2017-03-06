@@ -253,6 +253,20 @@ $list-item-selected-bg: $dropdown-link-active-bg !default;
 $list-item-focused-shadow: none;
 
 
+// Grid
+$grid-text: inherit !default;
+$grid-bg: $table-bg !default;
+$grid-border: $table-border-color !default;
+
+$grid-alt-text: $grid-text !default;
+$grid-alt-bg: $table-bg-accent !default;
+$grid-alt-border: $grid-border;
+
+$grid-hovered-text: $grid-text !default;
+$grid-hovered-bg: $table-bg-hover !default;
+$grid-hovered-border: $grid-border !default;
+
+
 // Link
 $link-text: $link-color !default;
 $link-hover-text: $link-hover-color !default;
