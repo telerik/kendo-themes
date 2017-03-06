@@ -33,7 +33,7 @@
         right: 0;
     }
     .k-mediaplayer-toolbar {
-        padding: $padding-x;
+        padding: $toolbar-padding-y $toolbar-padding-x;
         border-width: 0;
         // sass-lint:disable no-important
         width: 100% !important;
