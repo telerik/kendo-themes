@@ -144,7 +144,6 @@
         }
     }
 
-
     // Grouping header
     $delete-group-offset: calc(#{-$button-padding-y} - 1px) !default;
 
@@ -253,6 +252,7 @@
         .k-header {
             height: button-size();
             position: relative;
+            vertical-align: bottom;
         }
 
 
