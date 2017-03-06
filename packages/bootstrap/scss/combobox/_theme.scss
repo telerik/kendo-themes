@@ -10,7 +10,6 @@
         }
         .k-select {
             @include appearance( button );
-            border-color: inherit;
             transition: $transition;
         }
 
@@ -20,7 +19,7 @@
 
             .k-select {
                 @include appearance( hovered-button );
-                border-color: inherit;
+                border-color: $button-hovered-border;
             }
         }
 
@@ -35,7 +34,7 @@
 
             .k-select {
                 @include appearance( pressed-button );
-                border-color: inherit;
+                border-color: $button-pressed-border;
             }
         }
 
