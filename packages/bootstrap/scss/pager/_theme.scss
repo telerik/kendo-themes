@@ -12,11 +12,22 @@
 
         .k-link,
         .k-pager-nav {
+            border-width: 1px;
+            border-style: solid;
             @include appearance( button );
 
             &:hover {
                 @include appearance( hovered-button );
                 z-index: 2;
+            }
+        }
+
+        .k-pager-nav,
+        .k-pager-numbers .k-link {
+            color: $link-text;
+
+            &:hover {
+                color: $link-hover-text;
             }
         }
 
@@ -28,6 +39,8 @@
     .k-pager-numbers {
 
         .k-state-selected {
+            border-width: 1px;
+            border-style: solid;
             @include fill( $selected-text, $selected-bg, $selected-border, $selected-gradient );
             z-index: 2;
         }
