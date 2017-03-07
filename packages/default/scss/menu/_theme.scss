@@ -35,7 +35,8 @@
                 @include appearance( hovered-list-item );
             }
 
-            &.k-state-active {
+            &.k-state-active,
+            &.k-state-selected {
                 @include appearance( selected-list-item );
             }
         }

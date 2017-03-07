@@ -49,7 +49,9 @@
         }
 
         .k-separator {
-            display: none;
+            line-height: 0;
+            border-width: 1px 0 0;
+            border-style: solid;
         }
 
         // Compact
@@ -95,6 +97,11 @@
     .k-menu-horizontal {
 
         > .k-item {}
+
+        > .k-separator {
+            line-height: inherit;
+            border-width: 0 1px 0 0;
+        }
     }
     .k-menu-group,
     .k-menu-vertical {
