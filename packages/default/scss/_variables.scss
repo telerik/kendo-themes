@@ -44,7 +44,7 @@ $popup-padding-x: 0 !default;
 $popup-padding-y: 0 !default;
 
 $header-padding-x: $padding-x !default;
-$header-padding-y: $padding-y !default;
+$header-padding-y: $padding-y * 2 !default;
 
 $form-line-height: $line-height !default;
 $form-line-height-em: $form-line-height * 1em !default;

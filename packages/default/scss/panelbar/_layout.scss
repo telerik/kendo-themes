@@ -16,7 +16,7 @@
             display: block;
 
             > .k-link {
-                padding: $header-padding-x;
+                padding: $header-padding-y $header-padding-x;
                 color: inherit;
                 background: none;
                 text-decoration: none;
