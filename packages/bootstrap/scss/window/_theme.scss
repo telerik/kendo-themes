@@ -8,5 +8,11 @@
     .k-window-titlebar {
         border-color: $modal-header-border-color;
     }
+    .k-window-action {
+        padding: 0;
+        width: 1em;
+        height: 1em;
+        border-width: 0;
+    }
 
 }
