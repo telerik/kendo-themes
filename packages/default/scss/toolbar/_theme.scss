@@ -8,9 +8,14 @@
         // Button normal state
         .k-button {
             border-color: transparent;
-            border-radius: 0;
             color: inherit;
             background: none;
+        }
+
+
+        // Split button
+        .k-split-button .k-button {
+            @include appearance( button );
         }
 
 
@@ -18,6 +23,9 @@
         .k-button:hover,
         .k-button.k-state-hover {
             @include appearance( hovered-button );
+        }
+        .k-split-button .k-button:hover + .k-button {
+            border-left-color: $button-hovered-border;
         }
 
 
