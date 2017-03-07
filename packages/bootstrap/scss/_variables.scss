@@ -223,6 +223,11 @@ $input-focused-border: lighten( $accent, 25 ) !default;
 $input-focused-shadow: $input-box-shadow-focus !default;
 
 
+// Link
+$link-text: $link-color !default;
+$link-hover-text: $link-hover-color !default;
+
+
 // Node
 $node-text: $base-text !default;
 $node-bg: $base-bg !default;
@@ -253,6 +258,20 @@ $list-item-selected-bg: $dropdown-link-active-bg !default;
 $list-item-focused-shadow: none;
 
 
+// Tab
+$tab-item-text: $link-text !default;
+$tab-item-bg: transparent !default;
+$tab-item-border: $nav-tabs-border-color !default;
+
+$tab-item-hovered-text: $link-hover-text !default;
+$tab-item-hovered-bg: transparent !default;
+$tab-item-hovered-border: $nav-tabs-link-hover-border-color !default;
+
+$tab-item-selected-text: $nav-tabs-active-link-color !default;
+$tab-item-selected-bg: $nav-tabs-active-link-bg !default;
+$tab-item-selected-border: $nav-tabs-active-link-border-color !default;
+
+
 // Grid
 $grid-text: inherit !default;
 $grid-bg: $table-bg !default;
@@ -265,11 +284,6 @@ $grid-alt-border: $grid-border;
 $grid-hovered-text: $grid-text !default;
 $grid-hovered-bg: $table-bg-hover !default;
 $grid-hovered-border: $grid-border !default;
-
-
-// Link
-$link-text: $link-color !default;
-$link-hover-text: $link-hover-color !default;
 
 
 // Chart

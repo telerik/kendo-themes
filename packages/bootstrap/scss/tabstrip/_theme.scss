@@ -3,20 +3,20 @@
     .k-tabstrip {
 
         .k-tabstrip-items {
-            border-color: $nav-tabs-border-color;
+            border-color: $tab-item-border;
         }
 
         .k-item {
-            color: $link-text;
+            color: $tab-item-text;
         }
         .k-item.k-state-hover {
-            color: $link-hover-text;
-            border-color: $nav-tabs-link-hover-border-color;
+            color: $tab-item-hovered-text;
+            border-color: $tab-item-hovered-border;
         }
         .k-item.k-state-active {
-            color: $nav-tabs-active-link-color;
-            background-color: $nav-tabs-active-link-bg;
-            border-color: $nav-tabs-active-link-border-color;
+            color: $tab-item-selected-text;
+            background-color: $tab-item-selected-bg;
+            border-color: $tab-item-selected-border;
         }
     }
 
@@ -25,7 +25,7 @@
     .k-tabstrip-top {
 
         .k-item.k-state-hover {
-            border-bottom-color: $nav-tabs-border-color;
+            border-bottom-color: $tab-item-border;
         }
         .k-item.k-state-active {
             border-bottom-color: transparent;
@@ -34,7 +34,7 @@
     .k-tabstrip-bottom {
 
         .k-item.k-state-hover {
-            border-top-color: $nav-tabs-border-color;
+            border-top-color: $tab-item-border;
         }
         .k-item.k-state-active {
             border-top-color: transparent;
@@ -43,7 +43,7 @@
     .k-tabstrip-left {
 
         .k-item.k-state-hover {
-            border-right-color: $nav-tabs-border-color;
+            border-right-color: $tab-item-border;
         }
         .k-item.k-state-active {
             border-right-color: transparent;
@@ -52,7 +52,7 @@
     .k-tabstrip-right {
 
         .k-item.k-state-hover {
-            border-left-color: $nav-tabs-border-color;
+            border-left-color: $tab-item-border;
         }
         .k-item.k-state-active {
             border-left-color: transparent;
