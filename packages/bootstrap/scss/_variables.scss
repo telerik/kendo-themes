@@ -220,7 +220,7 @@ $input-hovered-shadow: none !default;
 $input-focused-text: $input-text !default;
 $input-focused-bg: $input-bg !default;
 $input-focused-border: lighten( $accent, 25 ) !default;
-$input-focused-shadow: $input-box-shadow-focus !default;
+$input-focused-shadow: none !default;
 
 
 // Link

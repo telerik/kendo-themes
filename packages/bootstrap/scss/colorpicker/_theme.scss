@@ -18,14 +18,11 @@
         }
 
         // Focused state
-        .k-state-focused {
-            box-shadow: $button-focused-shadow;
-        }
+        .k-state-focused {}
 
         // Active state
         .k-state-active {
             @include appearance( pressed-button );
-            box-shadow: $button-focused-shadow, $button-pressed-shadow;
         }
 
     }
