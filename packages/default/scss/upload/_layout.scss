@@ -62,7 +62,6 @@
                 line-height: $form-line-height;
 
                 >.k-icon {
-                    margin-right: $padding-y-lg;
                     box-sizing: content-box;
                 }
             }
@@ -102,7 +101,7 @@
                 display: flex;
                 align-items: center;
                 position: relative;
-                line-height: $line-height;
+                line-height: $form-line-height;
             }
 
             .k-progress {
@@ -124,7 +123,6 @@
                 position: absolute;
                 right: $padding-x;
                 top: $padding-y * 2;
-                margin-top: $padding-y;
 
                 .k-button {
                     padding: 0;
@@ -165,7 +163,6 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
-                margin-top: $padding-y;
             }
 
             .k-file-size,
@@ -265,10 +262,6 @@
                 text-overflow: ellipsis;
                 max-width: 100%;
                 left: 0;
-            }
-
-            .k-file-invalid-icon {
-                margin-left: $padding-x-sm;
             }
 
             .k-upload-action {

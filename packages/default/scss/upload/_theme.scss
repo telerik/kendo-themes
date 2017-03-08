@@ -132,4 +132,27 @@
     .k-dropzone-hovered {
         background-color: $hovered-bg;
     }
+
+    // Metrics
+    .k-dropzone {
+        .k-upload-status {
+            >.k-icon {
+                margin-right: $padding-x-lg / 2;
+            }
+        }
+    }
+
+    .k-upload-files {
+        .k-upload-status {
+            margin-top: $padding-y;
+        }
+
+        .k-file-invalid-icon {
+            margin-left: $padding-x-sm;
+        }
+    }
+
+    .k-file-name {
+        margin-top: $padding-y;
+    }
 }
