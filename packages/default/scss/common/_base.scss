@@ -105,6 +105,7 @@
     // Flipping
     .k-flip-h { transform: scaleX(-1); }
     .k-flip-v { transform: scaleY(-1); }
+    .k-flip-h.k-flip-v { transform: scale(-1, -1); }
 
 }
 
