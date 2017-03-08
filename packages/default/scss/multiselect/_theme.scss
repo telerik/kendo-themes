@@ -3,7 +3,6 @@
     // Appearance
     .k-multiselect {
         @include appearance( input );
-        @include border-radius( $border-radius );
 
         li {
             .k-icon {
