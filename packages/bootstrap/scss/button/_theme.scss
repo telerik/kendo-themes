@@ -72,4 +72,9 @@
 
     }
 
+    // Bare button
+    .k-button.k-bare {}
+    .k-button.k-primary.k-bare {
+        color: $accent;
+    }
 }

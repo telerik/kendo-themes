@@ -35,7 +35,7 @@
         color: $primary-button-bg;
     }
 
-    .k-switch-on .m-switch-handle,
+    .k-switch-on .k-switch-handle,
     .km-switch-on .km-switch-handle {
         @include appearance( primary-button );
     }

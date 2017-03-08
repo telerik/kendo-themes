@@ -11,6 +11,7 @@
             color: $header-text;
             background-color: $header-bg;
         }
+        > .k-item > .k-link:hover,
         > .k-item > .k-link.k-state-hover {
             @include appearance( hovered-header );
         }
@@ -26,6 +27,8 @@
 
         // Child
         .k-panel > .k-item > .k-link {}
+
+        .k-panel > .k-item > .k-link:hover,
         .k-panel > .k-item > .k-link.k-state-hover {
             @include appearance( hovered-node );
         }

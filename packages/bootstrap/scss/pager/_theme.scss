@@ -38,11 +38,15 @@
     }
     .k-pager-numbers {
 
-        .k-state-selected {
+        .k-link.k-state-selected {
             border-width: 1px;
             border-style: solid;
             @include fill( $selected-text, $selected-bg, $selected-border, $selected-gradient );
             z-index: 2;
+
+            &:hover {
+                color: $selected-text;
+            }
         }
 
     }

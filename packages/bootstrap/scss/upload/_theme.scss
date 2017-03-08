@@ -12,19 +12,78 @@
         @include appearance( panel );
     }
     .k-upload-files .k-file-progress {
-        color: $alert-info-text;
+        color: $info;
 
-        .k-progress { background-color: $alert-info-bg; }
+        .k-progress { background-color: $info; }
     }
     .k-upload-files .k-file-success {
-        color: $alert-success-text;
+        color: $success;
 
-        .k-progress { background-color: $alert-success-bg; }
+        .k-progress { background-color: $success; }
     }
     .k-upload-files .k-file-error {
-        color: $alert-danger-text;
+        color: $error;
 
-        .k-progress { background-color: $alert-danger-bg; }
+        .k-progress { background-color: $error; }
+    }
+
+    .k-file-success .k-file-name {
+        color: inherit;
+    }
+
+    .k-file-error .k-progress,
+    .k-file-invalid .k-progress {
+        background-color: $error;
+    }
+
+    .k-file-invalid .k-file-name-invalid {
+        color: $error;
+    }
+
+    .k-file-invalid-extension-wrapper,
+    .k-multiple-files-invalid-extension-wrapper {
+        color: $error;
+        border-color: $error;
+    }
+
+    .k-file-extension-wrapper,
+    .k-multiple-files-extension-wrapper {
+        color: $button-border;
+        border-color: $button-border;
+    }
+
+    .k-file-extension-wrapper::before,
+    .k-multiple-files-extension-wrapper::before {
+        background-color: $bg-color;
+        border-color: transparent transparent $button-border $button-border;
+    }
+
+    .k-file-invalid-extension-wrapper::before,
+    .k-multiple-files-invalid-extension-wrapper::before {
+        background-color: $bg-color;
+        border-color: transparent transparent  $error  $error;
+    }
+
+    .k-multiple-files-extension-wrapper::after {
+        border-top-color: $button-border;
+        border-left-color: $button-border;
+    }
+
+    .k-multiple-files-invalid-extension-wrapper::after {
+        border-top-color:  $error;
+        border-left-color:  $error;
+    }
+
+    .k-dropzone {
+        .k-upload-status {
+            >.k-icon {
+                margin-right: $padding-y;
+            }
+        }
+    }
+
+    .k-file-invalid-icon {
+        margin-left: $padding-x-sm / 2;
     }
 
 }

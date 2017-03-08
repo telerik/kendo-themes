@@ -31,6 +31,7 @@
 
         .k-content th {
             @include appearance( header );
+            background: none;
         }
         .k-content td {}
         .k-content .k-link {
@@ -42,10 +43,11 @@
         .k-content .k-weekend {
             background: darken( $widget-bg, 5 );
         }
-        .k-content .k-state-hover .k-link{
+        .k-content td:hover .k-link,
+        .k-content .k-state-hover .k-link {
             @include appearance( hovered-node );
         }
-        .k-content .k-state-selected .k-link{
+        .k-content td.k-state-selected .k-link{
             @include appearance( selected-node );
         }
         .k-content .k-state-focused .k-link {

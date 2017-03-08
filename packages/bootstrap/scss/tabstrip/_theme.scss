@@ -9,6 +9,7 @@
         .k-item {
             color: $tab-item-text;
         }
+        .k-item:hover,
         .k-item.k-state-hover {
             color: $tab-item-hovered-text;
             border-color: $tab-item-hovered-border;
