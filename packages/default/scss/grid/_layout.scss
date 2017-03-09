@@ -255,6 +255,7 @@
 
         .k-header {
             height: button-size();
+            line-height: button-size();
             position: relative;
             vertical-align: bottom;
         }
@@ -263,7 +264,7 @@
         .k-header > .k-link {
             margin: (-$cell-padding-y) (-$cell-padding-x);
             padding: $cell-padding-y $cell-padding-x;
-            line-height: button-size();
+            line-height: inherit;
             display: block;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -274,6 +275,7 @@
         .k-header > .k-link > .k-icon {
             margin: 0 .4ex;
             position: static;
+            vertical-align: middle;
         }
 
 
