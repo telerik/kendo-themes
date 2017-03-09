@@ -309,10 +309,16 @@
     // Filter row
     .k-filter-row {
         line-height: $form-line-height;
+
+        th {
+            padding: $cell-padding-y;
+        }
+
+        .k-multiselect {
+            height: auto;
+        }
     }
-    .k-filter-row th {
-        padding: $cell-padding-y;
-    }
+
     .k-filtercell {
         width: auto;
         display: block;
