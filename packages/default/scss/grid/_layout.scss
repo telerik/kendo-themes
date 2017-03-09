@@ -69,6 +69,10 @@
             text-decoration: none;
         }
 
+        table,
+        .k-grid-header-wrap {
+            box-sizing: content-box;
+        }
 
         // Grouping and hierarcy
         .k-group-col,
