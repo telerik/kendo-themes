@@ -84,7 +84,8 @@
         }
 
         .k-file-invalid-extension-wrapper,
-        .k-multiple-files-invalid-extension-wrapper {
+        .k-multiple-files-invalid-extension-wrapper,
+        .k-file-error .k-file-extension-wrapper {
             color: $upload-error-text;
             border-color: $upload-error-border;
         }
@@ -96,7 +97,8 @@
         }
 
         .k-file-invalid-extension-wrapper::before,
-        .k-multiple-files-invalid-extension-wrapper::before {
+        .k-multiple-files-invalid-extension-wrapper::before,
+        .k-file-error .k-file-extension-wrapper::before {
             background-color: $upload-files-bg;
             border-color: transparent transparent $upload-error-border $upload-error-border;
         }
