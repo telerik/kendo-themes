@@ -4,6 +4,11 @@
     $uploaded-image-height: 34px !default;
     $uploaded-image-border: 2px !default;
 
+    $dropzone-upload-status-icon-margin: $padding-x-lg / 2 !default;
+    $upload-status-margin: $padding-y !default;
+    $file-name-margin: $padding-y !default;
+    $invalid-icon-margin: $padding-x-sm !default;
+
     html .k-upload {
         position: relative;
     }
@@ -63,6 +68,7 @@
 
                 >.k-icon {
                     box-sizing: content-box;
+                    margin-right: $dropzone-upload-status-icon-margin;
                 }
             }
 
@@ -123,6 +129,7 @@
                 position: absolute;
                 right: $padding-x;
                 top: $padding-y * 2;
+                margin-top: $upload-status-margin;
 
                 .k-button {
                     padding: 0;
@@ -163,6 +170,7 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
+                margin-top: $file-name-margin;
             }
 
             .k-file-size,
@@ -253,6 +261,10 @@
                 position: absolute;
                 bottom: 0;
                 line-height: normal;
+            }
+
+            .k-file-invalid-icon {
+                margin-left: $invalid-icon-margin;
             }
 
             .k-file-extension {
