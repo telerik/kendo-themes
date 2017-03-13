@@ -177,6 +177,21 @@
 
     }
 
+    .k-button-group-stretched {
+        display: flex;
+
+        > .k-button {
+            display: inline-block;
+            flex: 1 1 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            > .k-icon {
+                vertical-align: text-bottom;
+            }
+        }
+    }
+
 
     //SplitButton
     .k-split-button.k-button-group.k-state-focused {
