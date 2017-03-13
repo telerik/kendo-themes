@@ -264,20 +264,37 @@
         &:hover,
         &.k-state-hover {
             color: inherit;
-            &::before { opacity: .07; }
+
+            &::before {
+                opacity: .07;
+                z-index: initial;
+            }
         }
 
         // Pressed state
         &:active,
         &.k-state-active {
             color: inherit;
-            &::before { opacity: .08; }
+
+            &::before {
+                opacity: .08;
+            }
+
+            &::after {
+                opacity: .13;
+            }
+
+            &::before,
+            &::after {
+                z-index: initial;
+            }
         }
 
         // Focused state
         &:focus,
         &.k-state-focused {
             color: inherit;
+
             &::after { opacity: .13; }
         }
 
