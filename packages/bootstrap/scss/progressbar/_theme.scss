@@ -3,6 +3,7 @@
     // Theme
     .k-progressbar {
         @include border-radius( $border-radius );
+        color: $progress-text;
         background-color: $progress-bg;
 
         // Status
@@ -15,8 +16,8 @@
             @include border-radius( $border-radius );
         }
         .k-state-selected {
-            color: $body-bg;
-            background-color: $progress-bar-color;
+            color: $progress-fill-text;
+            background-color: $progress-fill-bg;
         }
 
         // Chunks

@@ -286,6 +286,18 @@ $grid-hovered-bg: $table-bg-hover !default;
 $grid-hovered-border: $grid-border !default;
 
 
+// Progress
+$progress-text: $body-color !default;
+$progress-bg: $progress-bg !default;
+$progress-border: transparent !default;
+$progress-gradient: none !default;
+
+$progress-fill-text: $progress-bar-color !default;
+$progress-fill-bg:  $progress-bar-bg !default;
+$progress-fill-border: transparent !default;
+$progress-fill-gradient: none !default;
+
+
 // Chart
 $series-a: #0275d8 !default;
 $series-b: #5bc0de !default;
