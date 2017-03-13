@@ -41,7 +41,12 @@
         .k-toggle-button {}
 
         // Split button
-        .k-split-button {}
+        .k-split-button {
+
+            &:focus {
+                outline: none;
+            }
+        }
 
 
         // Overflow anchor
