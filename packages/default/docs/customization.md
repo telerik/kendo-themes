@@ -342,7 +342,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-pressed-text</td>
 <td>
     
-    $selected-text
+    $button-text
 </td>
 <td>The text color of pressed buttons.
 </td>
@@ -351,7 +351,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-pressed-bg</td>
 <td>
     
-    $selected-bg
+    $button-bg
 </td>
 <td>The background color of pressed buttons.
 </td>
@@ -360,7 +360,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-pressed-border</td>
 <td>
     
-    $selected-border
+    $button-border
 </td>
 <td>The border color of pressed buttons.
 </td>
