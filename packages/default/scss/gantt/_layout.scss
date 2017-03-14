@@ -339,7 +339,8 @@
             border-left-width: 1px;
         }
 
-        &:hover .k-resize-handle {
+        &:hover .k-resize-handle,
+        &:hover .k-task-actions {
             visibility: visible;
         }
     }
@@ -357,7 +358,7 @@
         z-index: 2;
         display: flex;
         flex-direction: row;
-        align-children: center;
+        align-items: center;
     }
     .k-task-template {
         padding: $padding-y-sm $padding-x-sm;
@@ -371,7 +372,11 @@
         white-space: nowrap;
         display: flex;
         flex-direction: row;
-        align-children: center;
+        align-items: center;
+        visibility: hidden;
+    }
+    .k-task-actions > .k-link {
+        display: inline-flex;
     }
 
     .k-resources-wrap {
