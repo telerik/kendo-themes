@@ -46,7 +46,7 @@
             }
 
             &.k-state-selected {
-                @include appearance( pressed-button );
+                @include fill( $selected-text, $selected-bg, $selected-border, none );
             }
         }
         .k-tool-group {
