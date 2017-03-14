@@ -196,7 +196,7 @@
     }
     .k-task-wrap {
         margin: 0 -1.5em;
-        padding: 0 25px;
+        padding: 5px 25px;
         display: inline-flex;
         flex-direction: row;
         align-items: center;
@@ -249,9 +249,13 @@
         border-top-width: 0;
         border-bottom-color: inherit;
         position: absolute;
-        top: 100%;
+        bottom: 0;
         // display: none;
         cursor: e-resize;
+        visibility: hidden;
+    }
+    .k-task-wrap:hover .k-task-draghandle {
+        visibility: visible;
     }
 
 
