@@ -1,7 +1,15 @@
 @include exports("gantt/theme") {
 
+    $_gantt-header-height: button-size() + #{$cell-padding-y * 2} + 1px;
+
     // Theme
-    .k-gantt {}
+    .k-gantt {
+
+        .k-grid-header tr {
+            height: calc( #{$_gantt-header-height} );
+        }
+
+    }
 
 
     // Header and footer
@@ -34,6 +42,16 @@
             li:first-child + li { border-radius: 0; }
             li:last-child { @include border-radius( 0 0 $border-radius $border-radius ); }
         }
+    }
+
+
+    // Treelist
+    .k-gantt-treelist {
+
+        .k-grid-header tr {
+            height: calc( (#{$_gantt-header-height}) * 2 );
+        }
+
     }
 
 

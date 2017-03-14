@@ -13,9 +13,11 @@
             white-space: nowrap;
             vertical-align: top;
         }
-        .k-grid-header tr,
+        .k-grid-header tr {
+            height: addThree( $line-height-em, 2 * $cell-padding-y, 1px );
+        }
         .k-grid-content tr {
-            height: calc( #{$row-height} );
+            height: addTwo( $line-height-em, 2 * $cell-padding-y );
         }
 
 
@@ -129,7 +131,7 @@
             // sass-lint:enable no-important
         }
         .k-grid-header tr {
-            height: calc( 2 * ( #{$row-height} ) );
+            height: addThree( 2 * $line-height-em, 4 * $cell-padding-y, 2px );
             vertical-align: bottom;
         }
         .k-grid-content {
