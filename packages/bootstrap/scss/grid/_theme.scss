@@ -6,7 +6,9 @@
         .k-alt {
             background-color: $grid-alt-bg;
         }
-        .k-state-selected {
+        tr.k-state-selected,
+        th.k-state-selected,
+        td.k-state-selected {
             border-color: inherit;
             color: inherit;
             background-color: rgba( $selected-bg, .25 );
