@@ -16,12 +16,6 @@
         .k-grid-header tr,
         .k-grid-content tr {
             height: calc( #{$row-height} );
-            line-height: inherit;
-
-            td,
-            th {
-                line-height: inherit;
-            }
         }
 
 
