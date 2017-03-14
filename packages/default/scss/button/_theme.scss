@@ -73,16 +73,16 @@
     // Button group
     .k-button-group {
 
-        // Active state
-        .k-button:active,
-        .k-button.k-state-active {
-            @include appearance( pressed-button );
-        }
-
         // Focused state
         .k-button:focus,
         .k-button.k-state-focused {
             @include appearance( focused-button );
+        }
+
+        // Active state
+        .k-button:active,
+        .k-button.k-state-active {
+            @include appearance( pressed-button );
         }
 
     }
