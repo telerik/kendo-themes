@@ -24,6 +24,7 @@
         text-transform: none;
         text-decoration: none;
         display: inline-block;
+        vertical-align: middle;
 
         &::before {
             vertical-align: baseline;
