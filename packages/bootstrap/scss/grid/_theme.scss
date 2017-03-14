@@ -12,6 +12,12 @@
             background-color: rgba( $selected-bg, .25 );
         }
 
+
+        td.k-state-focused,
+        th.k-state-focused {
+            box-shadow: $list-item-focused-shadow;
+        }
+
     }
 
 
