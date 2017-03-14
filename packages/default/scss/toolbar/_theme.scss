@@ -31,7 +31,7 @@
         // Button pressed state
         .k-button:active,
         .k-button.k-state-active {
-            @include appearance( pressed-button );
+            @include fill( $selected-text, $selected-bg, $selected-border, none );
             box-shadow: none;
         }
 

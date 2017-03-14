@@ -35,7 +35,7 @@ $modal-header-border-color: #cccccc;
             @include appearance( button );
 
             &.k-state-hover { @include appearance( hovered-button ); }
-            &.k-state-selected { @include appearance( pressed-button ); }
+            &.k-state-selected { @include fill( $selected-text, $selected-bg, $selected-border, none ); }
         }
     }
 
