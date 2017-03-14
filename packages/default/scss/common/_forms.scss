@@ -11,7 +11,6 @@
     .k-numerictextbox,
     .k-timepicker {
         width: 12.4em;
-        border-width: 0;
         line-height: $form-line-height;
         text-align: left;
         white-space: nowrap;
@@ -22,6 +21,17 @@
         &[dir='rtl'] {
             text-align: right;
         }
+    }
+    .k-colorpicker,
+    .k-combobox,
+    .k-dateinput,
+    .k-datepicker,
+    .k-datetimepicker,
+    .k-dropdown,
+    .k-numerictextbox,
+    .k-timepicker {
+        border-width: 0;
+        background-color: transparent;
     }
 
     .k-nodata {

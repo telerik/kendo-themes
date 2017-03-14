@@ -3,7 +3,6 @@
     // Layout
     .k-autocomplete {
         @include border-radius( $border-radius );
-        border-width: 1px;
 
         .k-input {
             box-sizing: content-box;
