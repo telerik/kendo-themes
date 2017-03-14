@@ -7,9 +7,9 @@
             background-color: $grid-alt-bg;
         }
         .k-state-selected {
-            border-color: $selected-border;
-            color: $selected-text;
-            background-color: $selected-bg;
+            border-color: inherit;
+            color: inherit;
+            background-color: rgba( $selected-bg, .25 );
         }
 
     }
