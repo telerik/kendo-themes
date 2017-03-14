@@ -14,7 +14,7 @@
         // Pressed state
         &:active,
         &.k-state-active {
-            @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
+            @include appearance( pressed-button );
             box-shadow: inset $button-pressed-shadow;
         }
 
@@ -101,7 +101,7 @@
     .k-split-button.k-button-group .k-button {
         &:active,
         &.k-state-active {
-            @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
+            @include appearance( pressed-button );
             box-shadow: inset $button-pressed-shadow;
         }
     }
@@ -119,7 +119,7 @@
         // Pressed state
         &:active,
         &.k-state-active {
-            @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
+            @include appearance( pressed-button );
             box-shadow: $button-pressed-shadow;
         }
 
