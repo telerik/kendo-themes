@@ -281,6 +281,8 @@
     }
     .k-task-summary,
     .k-task-summary-complete {
+        background-color: currentColor;
+
         &::before,
         &::after {
             content: "";
@@ -292,11 +294,11 @@
         }
 
         &::before {
-            border-left-color: inherit;
+            border-left-color: currentColor;
             left: 0;
         }
         &::after {
-            border-right-color: inherit;
+            border-right-color: currentColor;
             right: 0;
         }
     }

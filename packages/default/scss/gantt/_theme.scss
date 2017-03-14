@@ -97,25 +97,23 @@
 
     // Summary
     .k-task-summary {
-        border-color: mix( $panel-text, $panel-bg );
-        color: mix( $panel-text, $panel-bg );
-        background-color: mix( $panel-text, $panel-bg );
+        color: mix( $panel-text, $panel-bg, 95 );
     }
     .k-task-summary-complete {
-        border-color: $panel-text;
-        color: $panel-text;
-        background-color: $panel-text;
+        color: darken( $panel-text, 20 );
     }
-    .k-task-summary.state-selected {
-        border-color: mix( $header-selected-bg, $panel-bg );
-        color: mix( $header-selected-bg, $panel-bg );
-        background-color: mix( $header-selected-bg, $panel-bg );
+    .k-task-summary.k-state-selected {
+        color: mix( $selected-bg, $panel-bg );
 
         .k-task-summary-complete {
-            border-color: $header-selected-bg;
-            color: $header-selected-bg;
-            background-color: $header-selected-bg;
+            color: $selected-bg;
         }
+    }
+    .k-task-summary::before,
+    .k-task-summary::after,
+    .k-task-summary-complete::before,
+    .k-task-summary-complete::after {
+        display: none;
     }
 
 
