@@ -232,15 +232,15 @@ $button-hovered-shadow: null !default;
 
 /// The text color of pressed buttons.
 /// @group buttons
-$button-pressed-text: $selected-text !default;
+$button-pressed-text: $button-text !default;
 
 /// The background color of pressed buttons.
 /// @group buttons
-$button-pressed-bg: $selected-bg !default;
+$button-pressed-bg: $button-bg !default;
 
 /// The border color of pressed buttons.
 /// @group buttons
-$button-pressed-border: $selected-border !default;
+$button-pressed-border: $button-border !default;
 
 /// The background gradient of pressed buttons.
 /// @group buttons
