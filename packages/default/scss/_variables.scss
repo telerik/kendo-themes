@@ -255,18 +255,18 @@ $button-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
 // Primary button
 $primary-button-text: $accent-contrast !default;
 $primary-button-bg: $accent !default;
-$primary-button-border: $accent !default;
-$primary-button-gradient: adjust-hue( $primary-button-bg, 3), $primary-button-bg !default;
+$primary-button-border: $primary-button-bg !default;
+$primary-button-gradient: rgba( adjust-hue( $primary-button-bg, 14), 0 ), rgba( adjust-hue( $primary-button-bg, 14), .2 ) !default;
 
 $primary-button-hovered-text: $primary-button-text !default;
 $primary-button-hovered-bg: adjust-hue( $primary-button-bg, 3) !default;
-$primary-button-hovered-border: $primary-button-border !default;
-$primary-button-hovered-gradient: adjust-hue( $primary-button-hovered-bg, 3 ), $primary-button-hovered-bg !default;
+$primary-button-hovered-border: $primary-button-hovered-bg !default;
+$primary-button-hovered-gradient: rgba( adjust-hue( $primary-button-hovered-bg, 14), 0 ), rgba( adjust-hue( $primary-button-hovered-bg, 14), .2 ) !default;
 
 $primary-button-pressed-text: $primary-button-text !default;
 $primary-button-pressed-bg: $primary-button-bg !default;
-$primary-button-pressed-border: $primary-button-border !default;
-$primary-button-pressed-gradient: $primary-button-bg, adjust-hue( $primary-button-bg, 3) !default;
+$primary-button-pressed-border: $primary-button-pressed-bg !default;
+$primary-button-pressed-gradient: rgba( adjust-hue( $primary-button-pressed-bg, 14), .2 ), rgba( adjust-hue( $primary-button-pressed-bg, 14), 0 ) !default;
 $primary-button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
 
 $primary-button-focused-shadow: 0 3px 4px 0 rgba($accent, .4) !default;
