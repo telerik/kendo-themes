@@ -119,16 +119,22 @@
 
     // Tasks
     .k-task-single {
-        @include appearance( button );
-        @include border-radius( $border-radius );
+        border-color: $panel-border;
+        color: $panel-bg;
+        background: mix( $panel-text, $panel-bg, 70 );
 
         .k-task-complete {
-            background: $button-text;
-            opacity: .25;
+            background: $panel-text;
         }
     }
     .k-task-single.k-state-selected {
-        @include appearance( active-button );
+        border-color: $selected-border;
+        color: $selected-text;
+        background: mix( $selected-bg, $panel-bg );
+
+        .k-task-complete {
+            background: $selected-bg;
+        }
     }
 
 }
