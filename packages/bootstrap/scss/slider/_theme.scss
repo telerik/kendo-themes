@@ -7,22 +7,34 @@
         }
 
         .k-slider-track {
-            background: $header-bg;
+            border-radius: $border-radius;
+            background: darken( $widget-bg, 10% );
         }
         .k-slider-selection {
-            background: $header-selected-bg;
+            border-radius: $border-radius;
+            background: $selected-bg;
         }
 
 
         // Drag handle
         .k-draghandle {
-            @include appearance( button );
+            @include appearance( primary-button );
             border-radius: 50%;
         }
         .k-draghandle:hover {
-            @include appearance( hovered-button );
+            @include appearance( hovered-primary-button );
+        }
+        .k-draghandle.k-state-selected {
+            @include appearance( pressed-primary-button );
         }
 
+    }
+
+    .k-slider-horizontal .k-tick {
+        background-image: url(map-get($data-uris, 'slider-h.gif'));
+    }
+    .k-slider-vertical .k-tick {
+        background-image: url(map-get($data-uris, 'slider-v.gif'));
     }
 
 }
