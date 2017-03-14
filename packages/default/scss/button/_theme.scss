@@ -76,13 +76,19 @@
         // Focused state
         .k-button:focus,
         .k-button.k-state-focused {
-            @include appearance( focused-button );
+            box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13);
         }
 
-        // Active state
+        // Selected state
         .k-button:active,
         .k-button.k-state-active {
-            @include appearance( pressed-button );
+            @include fill( $selected-text, $selected-bg, $selected-border, none );
+        }
+
+        // Selected hover state
+        .k-button:active:hover,
+        .k-button.k-state-active:hover {
+            @include fill( $selected-text, $selected-bg, $selected-border, none );
         }
 
     }
