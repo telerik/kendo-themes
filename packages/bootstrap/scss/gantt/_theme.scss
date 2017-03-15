@@ -6,7 +6,8 @@
 
     // Header and footer
     .k-gantt-toolbar {
-        @include appearance( header );
+        @include appearance( toolbar );
+        line-height: $form-line-height;
     }
 
 
