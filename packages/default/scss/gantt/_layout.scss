@@ -394,6 +394,24 @@
         }
     }
 
+
+    // Task tooltip
+    .k-task-details {
+        padding: $padding-y $padding-x;
+
+        strong {
+            font-size: $font-size-lg;
+            font-weight: normal;
+            display: block;
+        }
+        .k-task-pct {
+            font-size: $icon-size-lg;
+        }
+        ul {
+            line-height: normal;
+        }
+    }
+
 }
 
 
