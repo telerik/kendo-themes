@@ -36,8 +36,6 @@
 
         li > * {
             user-select: none;
-            -webkit-user-drag: none;
-            -khtml-user-drag: none;
             pointer-events: none;
         }
     }
@@ -76,8 +74,6 @@
         top: 20%;
         text-decoration: none;
         user-select: none;
-        -webkit-user-drag: none;
-        -khtml-user-drag: none;
         cursor: pointer;
         overflow: hidden;
     }
