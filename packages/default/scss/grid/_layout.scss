@@ -6,9 +6,6 @@
     $group-dropclue-size: 6px;
     $group-dropclue-line-size: $group-dropclue-size / 3;
 
-    $button-border-width: 1px;
-    $footer-cells-height: calc(#{$line-height-em} + #{$button-padding-y * 2} + #{$button-border-width * 2}) !default;
-
     $edit-cell-input-space: calc(-#{$cell-padding} - #{$input-border-width}) !default;
 
     .k-grid {
@@ -150,9 +147,8 @@
         }
     }
 
-    // Grouping header
-    $delete-group-offset: calc(#{-$button-padding-y} - 1px) !default;
 
+    // Grouping header
     .k-grouping-header {
         display: block;
         padding: $cell-padding-y;
@@ -177,18 +173,23 @@
 
         .k-link,
         .k-button.k-bare {
-            border-width: 0;
             padding: 0;
+            border-width: 0;
             display: inline-flex;
             align-items: center;
         }
 
-        .k-button.k-bare {
-            margin: $delete-group-offset auto $delete-group-offset $button-padding-x;
+        .k-link .k-icon {
+            margin-left: -( $icon-spacing / 2);
+            margin-right: $icon-spacing;
         }
 
-        .k-link .k-icon {
-            margin-right: $button-padding-y;
+        .k-button.k-bare {
+            margin-left: ( 2 * $icon-spacing );
+            margin-right: -( $icon-spacing / 2 );
+            padding: 0;
+            width: auto;
+            height: auto;
         }
     }
     .k-group-indicator + .k-group-indicator {
@@ -196,9 +197,9 @@
     }
 
     .k-grouping-dropclue {
-        position: absolute;
         width: ($group-dropclue-size * 2);
-        height: calc( #{$button-calc-size} );
+        height: button-size();
+        position: absolute;
 
         &::before,
         &::after {
@@ -256,8 +257,6 @@
 
 
         .k-header {
-            height: button-size();
-            line-height: button-size();
             position: relative;
             vertical-align: bottom;
         }
@@ -281,8 +280,8 @@
         }
 
 
-        .k-header > .k-grid-filter,
-        .k-header > .k-header-column-menu {
+        .k-grid-filter,
+        .k-header-column-menu {
             padding: $button-padding-y;
             width: button-size();
             height: button-size();
@@ -297,10 +296,10 @@
             position: relative;
             z-index: 1;
         }
-        .k-header > .k-grid-filter {
+        .k-grid-filter {
             margin: -($cell-padding-y / 2) 0;
         }
-        .k-header > .k-header-column-menu {
+        .k-header-column-menu {
             margin: 0;
         }
 
@@ -308,9 +307,6 @@
 
     .k-grid-footer {
         border-width: 1px 0 0;
-    }
-    .k-footer-template td {
-        height: button-size();
     }
 
 
@@ -334,7 +330,6 @@
         > span,
         .k-filtercell-wrapper {
             padding-right: calc( 2 * (#{$button-calc-size} + #{$cell-padding-y / 2}));
-            height: calc( #{$button-calc-size} );
             display: block;
             position: relative;
 
@@ -384,7 +379,7 @@
         }
 
         .k-dropdown-operator {
-            width: calc( #{$button-calc-size} );
+            width: button-size();
             flex: none;
             position: absolute;
             top: 0;
