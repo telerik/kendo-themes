@@ -49,25 +49,16 @@
     }
 
     .k-grid {
-        tr.k-state-selected,
-        td.k-state-selected {
-            color: $grid-selected-text;
-            background-color: $grid-selected-bg;
-
-            .k-hierarchy-cell > .k-icon {
-                color: $selected-text;
-            }
-        }
 
         tr.k-alt {
             background-color: $grid-alt-bg;
-
-            &.k-state-selected td {
-                color: $grid-selected-text;
-                background-color: $grid-selected-bg;
-            }
         }
 
+        tr.k-state-selected,
+        td.k-state-selected {
+            color: inherit;
+            background-color: $grid-selected-bg;
+        }
 
         td.k-state-focused,
         th.k-state-focused {
