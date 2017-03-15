@@ -1,23 +1,26 @@
 @include exports("menu/theme") {
 
     // Theme
-    .k-menu {
-        padding: $padding-y $padding-x;
+    .k-menu:not(.k-context-menu) {
         border-width: 0;
         color: rgba( $header-text, .5 );
         background-color: $header-bg;
 
         .k-item {}
-        .k-link {
-            padding: $padding-y;
-        }
-        .k-item.k-state-hover > .k-link {
+        > .k-item.k-state-hover > .k-link {
             color: rgba( $header-text, .7 );
         }
 
     }
-    .k-menu-group {
-        color: $dropdown-link-color;
+    .k-menu.k-menu-horizontal:not(.k-context-menu) {
+        padding: $padding-y $padding-x;
+
+        > .k-item > .k-link {
+            padding: $padding-y;
+        }
+    }
+    .k-menu-group,
+    .k-context-menu {
 
         .k-link {}
 
@@ -35,12 +38,15 @@
     .k-menu-horizontal {
         .k-item {}
     }
+    .k-context-menu.k-menu-horizontal {
+        padding: $popup-padding-x $popup-padding-y;
+    }
     .k-menu-group,
     .k-menu-vertical {
         padding: $popup-padding-y $popup-padding-x;
 
-        .k-link {
-            padding: $list-item-padding-y $list-item-padding-x;
+        .k-separator {
+            margin: ($spacer / 2) 0;
         }
     }
 
