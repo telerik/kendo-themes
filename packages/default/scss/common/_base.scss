@@ -277,7 +277,10 @@
 @include exports( "common/lines" ) {
 
     // Lines
-    .k-line {}
+    .k-line {
+        background-color: currentColor;
+        border-color: currentColor;
+    }
     .k-line-h,
     .k-line-v {
         position: absolute;
@@ -291,19 +294,16 @@
     .k-arrow-w {
         width: 0;
         height: 0;
-        border-width: 5px;
-        border-style: solid;
-        border-top-color: transparent;
-        border-bottom-color: transparent;
+        border: 5px solid transparent;
         position: absolute;
         top: -4px;
     }
     .k-arrow-e {
-        border-right-color: transparent;
+        border-left-color: currentColor;
         right: -6px;
     }
     .k-arrow-w {
-        border-left-color: transparent;
+        border-right-color: currentColor;
         left: -6px;
     }
 
