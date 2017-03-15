@@ -47,9 +47,24 @@
 
     // Treelist
     .k-gantt-treelist {
+        background-color: darken( $panel-bg, 2 );
+
+        .k-treelist {
+            background-color: transparent;
+        }
 
         .k-grid-header tr {
             height: calc( (#{$_gantt-header-height}) * 2 );
+        }
+
+        tr.k-alt {
+            background-color: darken( $panel-bg, 6 );
+        }
+
+        tr.k-state-selected,
+        td.k-state-selected {
+            color: inherit;
+            background-color: rgba($selected-bg, .25);
         }
 
     }
@@ -65,12 +80,10 @@
 
     .k-gantt-dependencies {}
     .k-line {
-        color: mix( $panel-text, $panel-bg );
-        background-color: mix( $panel-text, $panel-bg );
+        color: darken( $panel-text, 40 );
     }
     .k-line.k-state-selected {
-        color: $header-selected-bg;
-        background-color: $header-selected-bg;
+        color: $selected-bg;
     }
 
     .k-task-dot {}
@@ -100,13 +113,13 @@
         color: mix( $panel-text, $panel-bg, 95 );
     }
     .k-task-summary-complete {
-        color: darken( $panel-text, 20 );
+        color: darken( $panel-text, 40 );
     }
     .k-task-summary.k-state-selected {
-        color: mix( $selected-bg, $panel-bg );
+        color: mix( $selected-bg, $panel-bg, 80 );
 
         .k-task-summary-complete {
-            color: $selected-bg;
+            color: mix( $selected-bg, black, 92 );
         }
     }
     .k-task-summary::before,
@@ -119,18 +132,24 @@
 
     // Tasks
     .k-task-single {
+        border-width: 0;
         border-color: $panel-border;
         color: $panel-bg;
-        background: mix( $panel-text, $panel-bg, 70 );
+        background: mix( $panel-text, $panel-bg, 80 );
 
         .k-task-complete {
             background: $panel-text;
+        }
+
+        .k-task-template {
+            padding-top: $padding-y;
+            padding-bottom: $padding-y;
         }
     }
     .k-task-single.k-state-selected {
         border-color: $selected-border;
         color: $selected-text;
-        background: mix( $selected-bg, $panel-bg );
+        background: mix( $selected-bg, $panel-bg, 70 );
 
         .k-task-complete {
             background: $selected-bg;
