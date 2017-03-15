@@ -10,6 +10,9 @@
     .k-pivot-layout > tbody > tr:first-child > td:first-child {
         background-color: $pivotgrid-alt-bg;
     }
+    .k-pivot-toolbar {
+        padding: $toolbar-padding-y;
+    }
 
     .k-fieldselector .k-list-container {
         background-color: $pivotgrid-container-bg;
@@ -41,7 +44,7 @@
         // Pressed state
         &:active,
         &.k-state-active {
-            @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
+            @include appearance( pressed-button );
             box-shadow: $button-pressed-shadow;
         }
 
