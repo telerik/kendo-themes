@@ -1,12 +1,19 @@
 // Fonts
+
+/// Base font size across all components.
 $font-size: $font-size-base !default;
+
+/// Font family across all components.
 $font-family: $font-family-base !default;
+
+/// Font family for monospaced text. Used for styling the code.
 $font-family-monospace:  $font-family-monospace !default;
 
 $font-size-xs: $font-size-xs !default;
 $font-size-sm: $font-size-sm !default;
 $font-size-lg: $font-size-lg !default;
 
+/// Line height used along with $font-size.
 $line-height: $line-height-base !default;
 $line-height-sm: $line-height-sm !default;
 $line-height-lg: $line-height-lg !default;
@@ -25,6 +32,7 @@ $padding-y-sm: $padding-y / 2 !default;
 $padding-x-lg: $padding-x * 1.5 !default;
 $padding-y-lg: $padding-y * 1.5 !default;
 
+/// Border radius for all components.
 $border-radius: $border-radius !default;
 $border-radius-sm: $border-radius-sm !default;
 $border-radius-lg: $border-radius-lg !default;
@@ -55,7 +63,12 @@ $input-padding-y-sm: $input-padding-y-sm !default;
 $input-calc-size: #{$form-line-height-em} + #{$input-padding-y * 2} + 2px;
 $input-inner-calc-size: #{$form-line-height-em} + #{$input-padding-y * 2};
 
+/// The horizontal padding of the container.
+/// @group toolbar
 $toolbar-padding-x: $table-cell-padding !default;
+
+/// The vertical padding of the container.
+/// @group toolbar
 $toolbar-padding-y: $table-cell-padding !default;
 $toolbar-calc-size: #{$button-calc-size} + #{$toolbar-padding-y * 2} + 2px;
 $toolbar-inner-calc-size: #{$button-calc-size} + #{$toolbar-padding-y * 2};
@@ -84,33 +97,54 @@ $rgba-transparent: rgba( 0, 0, 0, 0 );
 
 
 // Theme colors
+/// The color that focuses the user attention.
+/// Used for primary buttons and for elements of primary importance across the theme.
 $accent: $component-active-bg !default;
+
+/// The color used along with the accent color denoted by $accent.
+/// Used to provide contrast between the background and foreground colors.
 $accent-contrast: $component-active-color !default;
 
 $text-color: $body-color !default;
 $bg-color: $body-bg !default;
 $border-color: darken( $bg-color, 12% ) !default;
 
+/// The text color of the components' chrome area.
 $base-text: $btn-secondary-color !default;
+/// The background of the components' chrome area.
 $base-bg: $btn-secondary-bg !default;
+/// The border color of the components' chrome area.
 $base-border: darken( $base-bg, 12% ) !default;
+/// The gradient background of the components' chrome area.
 $base-gradient: none !default;
 
+/// The text color of hovered items.
 $hovered-text: $base-text !default;
+/// The background of hovered items.
 $hovered-bg: darken( $base-bg, 3% ) !default;
+/// The border color of hovered items.
 $hovered-border: darken( $base-border, 12% ) !default;
+/// The gradient background of hovered items.
 $hovered-gradient: none !default;
 
+/// The text color of selected items.
 $selected-text: $accent-contrast !default;
+/// The background of selected items.
 $selected-bg: $accent !default;
+/// The border color of selected items.
 $selected-border: darken( $selected-bg, 12% ) !default;
+/// The gradient background of selected items.
 $selected-gradient: none !default;
 
 $transition: all .2s ease !default;
 
+/// The color for error messages and states.
 $success: $brand-success !default;
+/// The color for warning messages and states.
 $info: $brand-info !default;
+/// The color for success messages and states.
 $warning: $brand-warning !default;
+/// The color for informational messages and states.
 $error: $brand-danger !default;
 
 $gradient-transparent-to-black: rgba( black, 0), black;
@@ -159,24 +193,59 @@ $header-selected-gradient: none !default;
 
 
 // Button
+/// The text color of the buttons.
+/// @group buttons
 $button-text: $base-text !default;
+
+/// The background of the buttons.
+/// @group buttons
 $button-bg: $base-bg !default;
+
+/// The border color of the buttons.
+/// @group buttons
 $button-border: darken( $base-border, 8 ) !default;
+
+/// The background gradient of the buttons.
+/// @group buttons
 $button-gradient: none !default;
 $button-shadow: none !default;
 
+/// The text color of hovered buttons.
+/// @group buttons
 $button-hovered-text: $button-text !default;
+
+/// The background of hovered buttons.
+/// @group buttons
 $button-hovered-bg: darken( $button-bg, 10% ) !default;
+
+/// The border color of hovered buttons.
+/// @group buttons
 $button-hovered-border: darken( $button-border, 12% ) !default;
+
+/// The background gradient of hovered buttons.
+/// @group buttons
 $button-hovered-gradient: none !default;
 $button-hovered-shadow: none !default;
 
+/// The text color of pressed buttons.
+/// @group buttons
 $button-pressed-text: $button-hovered-text !default;
+
+/// The background color of pressed buttons.
+/// @group buttons
 $button-pressed-bg: $button-hovered-bg !default;
+
+/// The border color of pressed buttons.
+/// @group buttons
 $button-pressed-border: $button-hovered-border !default;
+
+/// The background gradient of pressed buttons.
+/// @group buttons
 $button-pressed-gradient: none !default;
 $button-pressed-shadow: none !default;
 
+/// The shadow of focused buttons.
+/// @group buttons
 $button-focused-shadow: 0 0 0 2px rgba($button-border, .5) !default;
 
 
@@ -299,11 +368,28 @@ $progress-fill-gradient: none !default;
 
 
 // Chart
+/// The color of the first series.
+/// @group charts
 $series-a: #0275d8 !default;
+
+/// The color of the second series.
+/// @group charts
 $series-b: #5bc0de !default;
+
+/// The color of the third series.
+/// @group charts
 $series-c: #5cb85c !default;
+
+/// The color of the fourth series.
+/// @group charts
 $series-d: #f0ad4e !default;
+
+/// The color of the fifth series.
+/// @group charts
 $series-e: #e67d4a !default;
+
+/// The color of the sixth series.
+/// @group charts
 $series-f: #d9534f !default;
 
 $chart-font-size: $font-size !default;
@@ -312,7 +398,13 @@ $chart-font-size-md: 12px !default;
 $chart-font-size-lg: 16px !default;
 
 $chart-inactive: rgba( $widget-bg, .5 ) !default;
+
+/// The color of the Chart grid lines (major).
+/// @group charts
 $chart-major-lines: darken( $widget-border, 30% ) !default;
+
+/// The color of the Chart grid lines (minor).
+/// @group charts
 $chart-minor-lines: darken( $widget-border, 20% ) !default;
 
 $chart-area-opacity: .8 !default;

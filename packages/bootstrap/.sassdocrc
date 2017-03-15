@@ -1,0 +1,8 @@
+{
+    "dest": ".tmp",
+    "theme": "node_modules/@progress/kendo-theme-default/build/sassdoc-theme.js",
+    "groups": {
+        "charts": "Charts",
+        "undefined": "Common"
+    }
+}

@@ -19,10 +19,12 @@
   },
   "scripts": {
     "lint": "echo 'TODO: add lint'",
+    "api": "sassdoc ./scss/",
+    "api-check": "npm run api && git diff --exit-code --quiet -- docs/ || (echo -e '\\033[0;31mERROR: API docs are out of date' && exit 1)",
     "start": "webpack-dev-server --hot --inline",
     "build": "webpack --optimize-minimize --bail",
     "watch": "webpack --watch",
-    "test": "npm run lint && npm run build",
+    "test": "npm run lint && npm run build && npm run api-check",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "config": {
