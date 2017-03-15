@@ -26,12 +26,14 @@
     // Toolbar
     .k-grid-toolbar {
         @include appearance( toolbar );
+        padding: $toolbar-padding-y;
     }
 
 
     // Grouping header
     .k-grouping-header {
         @include appearance( header );
+        padding: $toolbar-padding-y;
     }
     .k-grouping-header .k-group-indicator {
         @include appearance( button );
@@ -51,6 +53,7 @@
     // Pager
     .k-grid-pager {
         @include appearance( header );
+        padding: $toolbar-padding-y;
     }
 
 
