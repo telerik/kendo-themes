@@ -52,6 +52,8 @@ module.exports = function(dest, context) {
     });
 
     return new Promise(function(done, error) {
-        fs.writeFile(path.join('docs', 'customization.md'), template(data));
+        let output = template(data);
+        output = output.replace(/\r?\n/g, '\n');
+        fs.writeFile(path.join('docs', 'customization.md'), output);
     });
 };
