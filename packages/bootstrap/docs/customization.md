@@ -457,7 +457,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$chart-major-lines</td>
 <td>
     
-    darken( $widget-border, 30% )
+    rgba(0, 0, 0, .08)
 </td>
 <td>The color of the Chart grid lines (major).
 </td>
@@ -466,7 +466,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$chart-minor-lines</td>
 <td>
     
-    darken( $widget-border, 20% )
+    rgba(0, 0, 0, .04)
 </td>
 <td>The color of the Chart grid lines (minor).
 </td>
