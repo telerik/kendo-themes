@@ -1,6 +1,10 @@
 {
     "dest": ".tmp",
     "theme": "build/sassdoc-theme.js",
+    "meta": {
+        "name": "default",
+        "friendlyName": "Default",
+    },
     "groups": {
         "charts": "Charts",
         "undefined": "Common"
