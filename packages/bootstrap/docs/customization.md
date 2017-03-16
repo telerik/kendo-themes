@@ -491,7 +491,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$toolbar-padding-x</td>
 <td>
     
-    $table-cell-padding
+    $table-cell-padding / 2
 </td>
 <td>The horizontal padding of the container.
 </td>
@@ -500,7 +500,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$toolbar-padding-y</td>
 <td>
     
-    $table-cell-padding
+    $table-cell-padding / 2
 </td>
 <td>The vertical padding of the container.
 </td>
