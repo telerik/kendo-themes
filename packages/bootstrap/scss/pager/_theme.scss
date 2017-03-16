@@ -38,13 +38,15 @@
     }
     .k-pager-numbers {
 
-        .k-state-selected {
+        .k-state-selected,
+        .k-state-selected:hover {
             border-width: 1px;
             border-style: solid;
             @include fill( $selected-text, $selected-bg, $selected-border, none );
             z-index: 2;
+            cursor: default;
 
-            &:hover {
+            &.k-link {
                 color: $selected-text;
             }
         }
