@@ -1,10 +1,13 @@
 [![Build Status](https://travis-ci.org/telerik/kendo-theme-default.svg?branch=master)](https://travis-ci.org/telerik/kendo-theme-default)
 
-
 # Kendo UI Default Theme
 
 * [Overview](https://github.com/telerik/kendo-default-theme#overview)
 * [Basic Usage](https://github.com/telerik/kendo-default-theme#basic-usage)
+* [Customization](https://github.com/telerik/kendo-default-theme#customization)
+* [Development](https://github.com/telerik/kendo-default-theme#development)
+    * [Embedding Resources](https://github.com/telerik/kendo-default-theme#embedding-resources)
+    * [Documenting Variables](https://github.com/telerik/kendo-default-theme#documenting-variables)
 
 ## Overview
 
@@ -13,9 +16,8 @@ The Kendo UI Default Theme is a SCSS-based theme for the Kendo UI components.
 Currently, it is available for the following suites:  
 
 * Kendo UI for React.
-* Kendo UI for Angular 2.
-
-We are working on providing support for the Default Theme in Kendo UI jQuery suite too.
+* Kendo UI for Angular.
+* Kendo UI for jQuery.
 
 ## Basic Usage
 
@@ -60,4 +62,4 @@ To group variables, use the `@group` directive.
     /// @group random
     $bar: 1024 !default;
 
-To change the layout or the front meter of the generated help topic, change the `build/customization.md.hbs` source file. 
+To change the layout or the front meter of the generated help topic, change the `build/customization.md.hbs` source file.
