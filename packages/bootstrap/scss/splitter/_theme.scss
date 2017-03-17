@@ -7,8 +7,7 @@ $splitter-bg: darken($button-bg, 5) !default;
 
     // Splitbar
     .k-splitbar {
-        @include appearance( button );
-        background: $splitter-bg;
+        @include fill( $button-text, $splitter-bg, none, none );
 
         &:active,
         &.k-state-focused {
@@ -26,7 +25,7 @@ $splitter-bg: darken($button-bg, 5) !default;
     }
     .k-splitbar-horizontal-hover,
     .k-splitbar-vertical-hover {
-        @include appearance( hovered-button );
+        @include fill( $button-hovered-text, $button-hovered-bg, none, none );
     }
     .k-ghost-splitbar {
         @include appearance( active-button );
