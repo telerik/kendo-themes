@@ -259,6 +259,14 @@
         .k-header {
             position: relative;
             vertical-align: bottom;
+
+            &:first-child {
+                border-left-width: 0;
+            }
+
+            &.k-first {
+                border-left-width: 1px;
+            }
         }
 
 
