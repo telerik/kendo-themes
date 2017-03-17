@@ -243,10 +243,9 @@
     // Outline button
     .k-button.k-outline {
         // sass-lint:disable no-important
-        border-width: 0 !important;
         color: inherit;
-        background: none !important;
-        box-shadow: none !important;
+        background: none;
+        box-shadow: none;
         // sass-lint:enable no-important
     }
 
