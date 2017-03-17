@@ -114,4 +114,43 @@
     .k-button.k-primary.k-bare {
         color: $accent;
     }
+
+    // Flat default button
+    .k-button.k-flat {
+
+        // Hover state
+        &:hover,
+        &.k-state-hover { @include appearance( hovered-button ); }
+
+        // Focused
+        &:focus,
+        &.k-state-focus {
+            border-color: $button-border;
+            box-shadow: $button-focused-shadow;
+        }
+
+        // Active state
+        &:active,
+        &.k-state-active {
+            @include appearance( pressed-button );
+        }
+    }
+
+    // Flat primary button
+    .k-button.k-flat.k-primary {
+        color: $primary-button-bg;
+
+        // Hover state
+        &:hover,
+        &.k-state-hover {
+            color: $primary-button-hovered-text;
+        }
+
+        // Focused
+        &:focus,
+        &.k-state-focus {
+            border-color: $primary-button-border;
+            box-shadow: $primary-button-focused-shadow;
+        }
+    }
 }
