@@ -95,7 +95,22 @@
     }
 
     // Bare button
-    .k-button.k-bare {}
+    .k-button.k-bare {
+
+        &:before {
+            border-radius: $border-radius;
+        }
+        &:after {
+            border-radius: addTwo($border-radius, 2px);
+        }
+
+        &:after {
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+        }
+    }
     .k-button.k-primary.k-bare {
         color: $accent;
     }
