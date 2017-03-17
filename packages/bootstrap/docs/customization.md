@@ -1,13 +1,13 @@
 ---
 title: Customization
-description: "Refer to the list of the Kendo UI Bootstrap theme variables available for customization."
-slug: variables_kendothemebootstrap_kendouiforangular
+description: "Refer to the list of the Kendo UI Default theme variables available for customization."
+slug: variables_kendothemedefault_kendouiforangular
 position: 9
 ---
 
 # Customization
 
-The following list describes the theme variables available for adjustment in the Kendo UI Bootstrap theme for Angular.
+The following list describes the theme variables available for adjustment in the Kendo UI Default theme for Angular.
 
 <style>
 .theme-variables th,
