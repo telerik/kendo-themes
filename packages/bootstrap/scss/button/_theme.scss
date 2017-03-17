@@ -46,6 +46,28 @@
 
     }
 
+    // Outline default button
+    .k-button.k-outline {
+        color: $button-border;
+
+        // Hover state
+        &:hover,
+        &.k-state-hover {
+            @include fill( $button-bg, $button-border, $button-border, none );
+        }
+    }
+
+    // Outline primary button
+    .k-button.k-outline.k-primary {
+        color: $primary-button-border;
+
+        // Hover state
+        &:hover,
+        &.k-state-hover {
+            @include fill( $primary-button-text, $primary-button-border, $primary-button-bg, none );
+        }
+    }
+
 
     // Button group
     .k-button-group {
