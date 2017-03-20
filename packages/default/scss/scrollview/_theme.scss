@@ -14,22 +14,15 @@ $webkit-highlight-color: rgba(0, 0, 0, 0) !default;
 
     .k-scrollview-next,
     .k-scrollview-prev {
+        color: $scrollview-navigation-color;
         background: $scrollview-navigation-background;
+        text-shadow: $scrollview-navigation-icon-shadow;
+        opacity: $scrollview-navigation-default-opacity;
         outline-width: 0;
 
-        span {
-            text-shadow: $scrollview-navigation-icon-shadow;
-            color: $scrollview-navigation-color;
-            opacity: $scrollview-navigation-default-opacity;
-        }
-
-        &:hover span {
+        &:hover {
             color: $scrollview-navigation-color;
             opacity: $scrollview-navigation-hover-opacity;
-        }
-
-        .k-icon:focus {
-            color: $scrollview-navigation-color;
         }
     }
 
