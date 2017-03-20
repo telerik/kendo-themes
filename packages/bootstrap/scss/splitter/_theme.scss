@@ -1,34 +1,28 @@
-$splitter-bg: darken($button-bg, 5) !default;
-
 @include exports("splitter/theme") {
+
+    $splitter-text: $button-text;
+    $splitter-bg: darken($button-bg, 5) !default;
+    $splitter-hovered-text: $button-hovered-text;
+    $splitter-hovered-bg: darken($button-hovered-bg, 5) !default;
 
     .k-splitter {}
 
 
     // Splitbar
      .k-splitbar {
-        @include fill( $button-text, $splitter-bg, none, none );
+        color: $splitter-text;
+        background-color: $splitter-bg;
 
         &:active,
         &.k-state-focused {
             color: $selected-text;
             background: $selected-bg;
-
-            .k-resize-handle {
-                background-color: $selected-text;
-            }
-        }
-
-        .k-resize-handle {
-            background-color: $button-text;
         }
     }
     .k-splitbar-horizontal-hover,
     .k-splitbar-vertical-hover {
-        @include fill( $button-hovered-text, $button-hovered-bg, none, none );
-    }
-    .k-ghost-splitbar {
-        @include appearance( active-button );
+        color: $splitter-hovered-text;
+        background-color: $splitter-hovered-bg;
     }
 
     .k-ghost-splitbar {
