@@ -6,7 +6,7 @@ $splitter-bg: darken($button-bg, 5) !default;
 
 
     // Splitbar
-    .k-splitbar {
+     .k-splitbar {
         @include fill( $button-text, $splitter-bg, none, none );
 
         &:active,
