@@ -2,9 +2,9 @@
 
     $textbox-invalid-border-color: rgba($error, .5) !default;
 
-    $radio-border: $input-border !default;
+    $radio-bg: lighten($input-border, 6.7) !default;
+    $radio-border: $radio-bg !default;
     $radio-hovered-border: $input-hovered-border !default;
-    $radio-bg: $input-bg !default;
     $radio-checked-bg: $accent !default;
     $radio-checked-text: $accent-contrast !default;
 
@@ -64,11 +64,7 @@
     .k-radio {
 
         // Hover
-        &:not(:disabled) + .k-radio-label {
-            &:hover::before {
-                border-color: $radio-hovered-border;
-            }
-        }
+        &:not(:disabled) + .k-radio-label {}
 
         // Checked
         &:checked + .k-radio-label {
@@ -84,20 +80,10 @@
         }
 
         // Checked && Hovered
-        &:not(:disabled):checked + .k-radio-label {
-            &:hover::before {
-                border-color: $radio-hovered-border;
-                background-color: $radio-checked-text;
-                box-shadow: 0 0 1px 0 $radio-bg inset;
-            }
-
-            &:hover::after {
-                background-color: $radio-checked-bg;
-            }
-        }
+        &:not(:disabled):checked + .k-radio-label:hover {}
 
         // Focused
-        &:focus + .k-checkbox-label::before {
+        &:focus + .k-radio-label::before {
             box-shadow: $focused-checked-shadow;
         }
     }
@@ -127,7 +113,7 @@
 
         // Focused
         &:focus + .k-checkbox-label::before {
-            box-shadow: $custom-control-focus-indicator-box-shadow;
+            box-shadow: $focused-checked-shadow;
         }
 
     }
