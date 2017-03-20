@@ -16,7 +16,6 @@ $webkit-highlight-color: rgba(0, 0, 0, 0) !default;
     .k-scrollview-prev {
         background: $scrollview-navigation-background;
         outline-width: 0;
-        -webkit-tap-highlight-color: $webkit-highlight-color;
 
         span {
             text-shadow: $scrollview-navigation-icon-shadow;
