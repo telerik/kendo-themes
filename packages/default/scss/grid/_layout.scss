@@ -190,6 +190,16 @@
             padding: 0;
             width: auto;
             height: auto;
+            opacity: .5;
+
+            &::before,
+            &::after {
+                display: none;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
         }
     }
     .k-group-indicator + .k-group-indicator {
