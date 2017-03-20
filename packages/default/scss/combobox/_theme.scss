@@ -25,7 +25,7 @@
         }
 
         // Selected state
-        .k-state-focused,
+        > .k-state-focused,
         .k-state-active {
             @include appearance( focused-input );
 
