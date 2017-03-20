@@ -430,6 +430,13 @@
 
     }
 
+    // Virtualization
+    .k-virtual-scrollable-wrap {
+        height: 100%;
+        overflow-y: hidden;
+        position: relative;
+    }
+
 
     // Edit row
     .k-grid-edit-row {
