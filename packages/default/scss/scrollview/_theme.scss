@@ -7,9 +7,21 @@ $scrollview-navigation-hover-opacity: 1 !default;
 $webkit-highlight-color: rgba(0, 0, 0, 0) !default;
 
 @include exports('scrollview/theme') {
+
+    .k-pages > li,
     .k-scrollview-pageable > li.k-button {
         background-image: none;
         box-shadow: $scrollview-pagebutton-shadow;
+    }
+    .k-pages > li {
+        border-color: $button-border;
+        color: $button-text;
+        background-color: $button-bg;
+    }
+    .k-pages > li.k-current-page {
+        border-color: $selected-border;
+        color: $selected-text;
+        background-color: $selected-bg;
     }
 
     .k-scrollview-next,
