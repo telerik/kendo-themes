@@ -54,7 +54,7 @@
     }
     .k-editor-toolbar {
         margin: 0;
-        padding: 0;
+        padding: $toolbar-padding-y $toolbar-padding-y;
         border-color: inherit;
         list-style-type: none;
         line-height: $form-line-height;
@@ -73,15 +73,10 @@
 
         // Group
         .k-tool-group {
-            padding: $toolbar-padding-y $toolbar-padding-x;
+            padding: 0;
             border-width: 0;
             border-style: solid;
             border-color: inherit;
-
-            .k-tool.k-group-start,
-            .k-tool.k-group-end {
-                border-radius: 0;
-            }
 
             .k-widget {}
             .k-widget + .k-widget {
@@ -89,7 +84,7 @@
             }
         }
         .k-tool-group + .k-tool-group {
-            border-left-width: 1px;
+            margin-left: $toolbar-padding-x;
         }
         .k-tool-group .k-state-disabled {
             display: none;

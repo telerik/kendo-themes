@@ -15,6 +15,27 @@
         background-color: $editor-overlay-background;
     }
 
+
+    // Editor toolbar
+    .k-editor-toolbar {
+        padding: 0;
+
+
+        // Group
+        .k-tool-group {
+            padding: $toolbar-padding-y $toolbar-padding-x;
+
+            .k-tool.k-group-start,
+            .k-tool.k-group-end {
+                border-radius: 0;
+            }
+        }
+        .k-tool-group + .k-tool-group {
+            margin: 0;
+            border-left-width: 1px;
+        }
+    }
+
     // sass-lint:disable class-name-format
     .editorToolbarWindow.k-header.k-window-content {
         @include appearance( header );
