@@ -63,6 +63,7 @@
         box-sizing: content-box;
         vertical-align: middle;
         display: inline-block;
+        flex: 1 0 $scrollview-page-button-size;
         border-radius: 50%;
         cursor: pointer;
         pointer-events: all;
