@@ -161,6 +161,13 @@
             }
         }
 
+        .k-nodata {
+            .k-button {
+                display: inline-flex;
+                border-width: 1px;
+                @include appearance( button );
+            }
+        }
     }
 
 }
