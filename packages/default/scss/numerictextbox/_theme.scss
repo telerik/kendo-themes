@@ -1,7 +1,5 @@
 @include exports("numerictextbox/theme") {
 
-    $input-validation-error: $error !default;
-
     // Numeric
     .k-numerictextbox {
 
@@ -43,15 +41,8 @@
     }
 
     .k-numeric-wrap.k-state-invalid {
-        border-color: $input-validation-error;
-
-        .k-i-warning {
-            color: $input-validation-error;
-        }
-
-        input {
-            color: $input-validation-error;
-        }
+        border-color: $error;
+        color: $error;
     }
 
 }
