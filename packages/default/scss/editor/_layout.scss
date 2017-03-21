@@ -31,21 +31,19 @@
         border-radius: $border-radius;
         background: none;
     }
-    // sass-lint:disable class-name-format
-    .k-editortoolbar-dragHandle {
-        float: left;
-        cursor: move;
-        padding: $button-padding-y-sm $button-padding-x-sm;
-    }
-    // sass-lint:enable class-name-format
     .k-editor-widget {
-        padding-top: 0;
+        padding: 0;
     }
     // sass-lint:disable class-name-format
     .editorToolbarWindow {
+        padding: 0;
         display: flex;
-        align-items: center;
-        padding: $padding-y-sm $padding-x-sm;
+        align-items: stretch;
+    }
+    .k-editortoolbar-dragHandle {
+        margin: $toolbar-padding-y;
+        padding: 0;
+        cursor: move;
     }
     // sass-lint:enable class-name-format
 
