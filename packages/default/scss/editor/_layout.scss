@@ -212,6 +212,8 @@
         height: 0;
         border-style: solid;
         border-width: 0 0 13px 13px;
+        border-color: transparent;
+        border-bottom-color: inherit;
         cursor: se-resize;
 
         .k-i-arrow-45-down-right {
