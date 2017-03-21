@@ -88,5 +88,15 @@
             order: 9;
             justify-content: flex-end;
         }
+
+        [dir = "rtl"] &,
+        .k-rtl & {
+            .k-i-arrow-e,
+            .k-i-arrow-w,
+            .k-i-seek-e,
+            .k-i-seek-w {
+                transform: scaleX(-1);
+            }
+        }
     }
 }

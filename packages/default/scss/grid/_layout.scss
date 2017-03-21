@@ -131,8 +131,71 @@
         .k-master-row {}
         .k-detail-row {}
 
-    }
+        &[dir = "rtl"],
+        .k-rtl & {
+            thead,
+            tbody,
+            tfoot {
+                text-align: right;
+            }
 
+            th {
+                white-space: nowrap;
+            }
+
+            .k-grid-header-wrap {
+                border-width: 0 0 0 1px;
+            }
+
+            .k-group-indicator,
+            .k-drag-clue {
+                .k-button.k-bare {
+                    margin-left: -( $icon-spacing / 2 );
+                    margin-right: ( 2 * $icon-spacing );
+                }
+
+                .k-link .k-icon {
+                    margin-left: $icon-spacing;
+                    margin-right: -( $icon-spacing / 2);
+                }
+            }
+
+            .k-group-indicator + .k-group-indicator {
+                margin-left: 0;
+                margin-right: $cell-padding-y;
+            }
+
+            .k-grid-content-locked,
+            .k-grid-footer-locked,
+            .k-grid-header-locked {
+                border-left-width: 1px;
+                border-right-width: 0;
+            }
+
+            th,
+            td {
+                &:first-child {
+                    border-left-width: 1px;
+                }
+
+                &:last-child {
+                    border-left-width: 0;
+                }
+            }
+
+            td.k-hierarchy-cell {
+                border-left-width: 0;
+            }
+
+            .k-grid-header {
+                .k-header {
+                    &:first-child {
+                        border-right-width: 0;
+                    }
+                }
+            }
+        }
+    }
 
     // Toolbar
     .k-grid-toolbar {
