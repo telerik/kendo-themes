@@ -17,7 +17,9 @@
             height: $pager-buttons-size;
             line-height: $pager-buttons-size;
             box-sizing: content-box;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             position: relative;
             text-align: center;
             z-index: 1;
