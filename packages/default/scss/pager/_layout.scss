@@ -38,6 +38,9 @@
             text-decoration: none;
             outline: none;
         }
+        .k-link.k-state-disabled {
+            color: inherit;
+        }
         > .k-pager-nav {}
         > .k-pager-nav + .k-pager-nav {}
 
