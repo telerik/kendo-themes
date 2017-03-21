@@ -4,6 +4,13 @@
     .k-treeview {
         padding: 2px;
 
+        .k-top,
+        .k-mid,
+        .k-bot {
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+
         // Link
         .k-in {
             @include border-radius( $border-radius );
