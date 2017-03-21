@@ -2,6 +2,7 @@
 
     // Theme
     .k-pager-wrap {
+        @include appearance( header );
 
         .k-pager-first {
             @include border-radius( $border-radius 0 0 $border-radius );
