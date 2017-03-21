@@ -3,11 +3,12 @@
     $editor-overlay-background: #000 !default;
 
     .k-editor {
-        @include appearance( header );
+        @include appearance( panel );
 
-        .k-editable-area {
-            @include appearance( input );
+        .k-editor-toolbar {
+            @include appearance( toolbar );
         }
+        .k-editable-area {}
     }
 
     .k-overlay {
