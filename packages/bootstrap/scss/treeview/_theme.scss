@@ -6,6 +6,7 @@
 
         // Link
         .k-in {
+            @include border-radius( $border-radius );
             transition: $transition;
         }
         .k-in.k-state-hover {
