@@ -51,10 +51,13 @@
 
 
     // Toolbar
-    .k-keditor-toolbar-wrap {}
+    .k-keditor-toolbar-wrap {
+        border-color: inherit;
+    }
     .k-editor-toolbar {
         margin: 0;
         padding: 0;
+        border-color: inherit;
         list-style-type: none;
         line-height: $form-line-height;
         cursor: default;
@@ -125,6 +128,7 @@
         height: 100%;
         border-width: 1px 0 0;
         border-style: solid;
+        border-color: inherit;
         outline: 0;
     }
 
