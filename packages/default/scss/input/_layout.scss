@@ -27,6 +27,24 @@
         border-width: 0;
     }
 
+    /* Delete the following rule when maskedtextbox-refactoring is merged */
+    .k-maskedtextbox {
+        @include border-radius( $border-radius );
+        padding: $input-padding-y $input-padding-x;
+        width: 12.4em;
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid;
+        outline: 0;
+        font: inherit;
+        line-height: $form-line-height;
+        display: inline-flex;
+        vertical-align: middle;
+        position: relative;
+        -webkit-appearance: none;
+    }
+    /* Delete the rule above when maskedtextbox-refactoring is merged */
+
     .k-input,
     .k-textbox > input {
         padding: 0;
