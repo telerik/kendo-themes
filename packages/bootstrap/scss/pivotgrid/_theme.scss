@@ -1,9 +1,10 @@
 @include exports("pivotgrid/theme") {
+
     $pivotgrid-alt-bg: $header-bg !default;
     $pivotgrid-chrome-border: $border-color !default;
 
-    $pivotgrid-container-bg: $bg-color !default;
-    $pivotgrid-row-headers-bg: darken($bg-color, 7%) !default;
+    $pivotgrid-container-bg: $header-bg !default;
+    $pivotgrid-row-headers-bg: darken( $header-bg, 3 ) !default;
 
     //.k-alt,
     .k-pivot-toolbar,
@@ -14,8 +15,11 @@
         padding: $toolbar-padding-y;
     }
 
-    .k-fieldselector .k-list-container {
+    .k-fieldselector {
         background-color: $pivotgrid-container-bg;
+    }
+    .k-fieldselector .k-list-container {
+        background-color: $panel-bg;
     }
 
     .k-pivot-toolbar,
