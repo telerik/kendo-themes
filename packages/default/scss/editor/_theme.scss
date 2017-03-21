@@ -54,13 +54,11 @@
             &:hover,
             &.k-state-hover {
                 @include appearance( hovered-button );
-                text-decoration: none;
             }
 
             &:active,
             &.k-state-active {
                 @include appearance( pressed-button );
-                text-decoration: none;
             }
 
             &.k-state-selected {
