@@ -82,6 +82,11 @@
             .k-tool.k-group-end {
                 border-radius: 0;
             }
+
+            .k-widget {}
+            .k-widget + .k-widget {
+                margin-left: $toolbar-padding-x;
+            }
         }
         .k-tool-group + .k-tool-group {
             border-left-width: 1px;
