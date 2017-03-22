@@ -628,15 +628,16 @@ $modal-inner-padding: 1em;
         .k-scheduler-delete {
             float: left;
         }
-    }
 
 
-    span.k-recur-interval,
-    span.k-recur-count {
-        width: 5em;
-    }
-    span.k-recur-until {
-        width: 9em;
+        .k-widget.k-recur-interval,
+        .k-widget.k-recur-count {
+            width: 5em;
+        }
+        .k-widget.k-recur-until {
+            width: 9em;
+        }
+
     }
 }
 
