@@ -225,18 +225,4 @@
         }
     }
 
-    .k-window .k-popup-edit-form .k-edit-field {
-        input.k-checkbox {
-            margin-left: 1px;
-            margin-top: .7em;
-            width: 14px;
-            height: 15px;
-            z-index: 1;
-
-            + label.k-checkbox-label {
-                margin-top: .5em;
-                cursor: default;
-            }
-        }
-    }
 }
