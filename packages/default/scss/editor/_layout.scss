@@ -163,42 +163,17 @@
     // Editor dialog
 
     .k-editor-dialog {
-        padding: $padding-y;
-        width: 400px;
         border-color: inherit;
 
         .k-edit-label {
-            padding-bottom: $padding-y;
             width: 25%;
-            text-align: right;
-            float: left;
-            clear: both;
         }
 
         .k-edit-field {
-            padding-bottom: $padding-y;
             width: 66%;
-            float: right;
-            clear: right;
-
-            .k-textbox {
-                width: 100%;
-                box-sizing: border-box;
-            }
         }
 
-        .k-edit-buttons {
-            margin: $padding-y (-$padding-y) (-$padding-y);
-            padding: $padding-y;
-            border-top: 1px solid;
-            border-color: inherit;
-            text-align: right;
-            clear: both;
-
-            .k-button + .k-button {
-                margin-left: $padding-y;
-            }
-        }
+        .k-edit-buttons {}
     }
 
     .k-editor-table-wizard-dialog {
