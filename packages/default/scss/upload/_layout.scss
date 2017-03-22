@@ -19,7 +19,7 @@
             position: relative;
             overflow: hidden;
             direction: ltr;
-            margin: $padding-x;
+            margin: $toolbar-padding-x;
 
             input {
                 // font should not depend on outside styles, otherwise upload may break
