@@ -147,6 +147,12 @@
         .k-editor-toolbar {
             text-align: center;
 
+            .k-tool {
+                @include border-radius( $border-radius );
+                width: 100%;
+                height: auto;
+                display: flex;
+            }
             .k-tool-text {
                 display: inline;
             }
