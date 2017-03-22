@@ -247,6 +247,7 @@
 
     .k-editor-table-wizard-dialog {
 
+        // Generic widgets
         .k-numerictextbox {
             width: 10em;
 
@@ -263,6 +264,36 @@
         .k-colorpicker {
             vertical-align: middle;
         }
+
+
+        // Align
+        .k-dropdown.k-align {
+            width: auto;
+        }
+    }
+
+
+    .k-popup.k-align {
+
+        .k-list {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .k-list .k-item {
+            padding: $button-padding-y;
+            height: button-size();
+            box-sizing: border-box;
+            justify-content: center;
+            flex: 1 0 33%;
+
+            .k-icon {
+                margin: 0;
+            }
+        }
+        .k-list .k-item:last-child {
+            flex: 1 0 100%;
+        }
+
     }
 
 }
