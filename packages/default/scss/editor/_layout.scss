@@ -251,6 +251,8 @@
         }
 
         .k-numerictextbox {
+            width: 10em;
+
             & + .k-dropdown {
                 width: 4em;
             }
