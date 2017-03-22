@@ -100,7 +100,7 @@
             }
 
             .k-file {
-                padding: $padding-x;
+                padding: $cell-padding;
                 border-width: 0 0 1px;
                 border-style: solid;
                 border-color: inherit;
@@ -127,9 +127,9 @@
 
             .k-upload-status {
                 position: absolute;
-                right: $padding-x;
-                top: $padding-y * 2;
-                margin-top: $upload-status-spacing;
+                right: $cell-padding;
+                top: 50%;
+                margin-top: -0.5*$line-height-em;
 
                 .k-button {
                     padding: 0;
@@ -142,8 +142,8 @@
             }
 
             .k-upload-pct {
-                margin-right: $padding-x-sm;
                 font-weight: normal;
+                vertical-align: middle;
             }
 
             ~.k-clear-selected,
@@ -188,7 +188,7 @@
             .k-file-invalid-extension-wrapper,
             .k-multiple-files-invalid-extension-wrapper {
                 position: absolute;
-                top: $padding-x;
+                top: $cell-padding;
                 width: $uploaded-image-width;
                 height: $uploaded-image-height;
                 border-width: $uploaded-image-border;
@@ -196,7 +196,7 @@
                 vertical-align: top;
                 font-size: $font-size * .57;
                 text-transform: uppercase;
-                margin: ($uploaded-image-border / 2) $padding-y-lg;
+                margin: ($uploaded-image-border / 2) 0;
                 box-sizing: content-box;
             }
 
@@ -216,8 +216,8 @@
 
             .k-file-name-size-wrapper {
                 display: block;
-                margin-left: calc(#{$padding-x} + #{$uploaded-image-width} + #{$padding-x * 2});
-                margin-right: calc(#{$padding-x * 6} + #{$icon-size} + #{$padding-x-sm});
+                margin-left: calc(#{$uploaded-image-width} + #{$spacer-x});
+                margin-right: calc(#{$icon-size} + #{$cell-padding});
                 overflow: hidden;
                 min-height: $uploaded-image-height + ($uploaded-image-border * 2);
             }
@@ -277,7 +277,7 @@
             }
 
             .k-upload-action {
-                margin-left: $padding-x-sm;
+                margin-left: $cell-padding;
             }
         }
 
@@ -342,8 +342,8 @@
             }
 
             .k-file-name-size-wrapper {
-                margin-right: calc(#{$padding-x} + #{$uploaded-image-width} + #{$padding-x * 2});
-                margin-left: calc(#{$padding-x * 6} + #{$icon-size} + #{$padding-x-sm});
+                margin-right: calc(#{$uploaded-image-width} + #{$padding-x});
+                margin-left: calc(#{$icon-size} + #{$cell-padding});
             }
 
             .k-file-extension {
@@ -355,7 +355,7 @@
 
             .k-upload-action {
                 margin-left: 0;
-                margin-right: $padding-x-sm;
+                margin-right: $cell-padding;
             }
         }
     }
