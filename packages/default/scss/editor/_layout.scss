@@ -189,29 +189,6 @@
         .k-edit-buttons {}
     }
 
-    .k-editor-table-wizard-dialog {
-        .k-content {
-            padding: $padding-y-lg $padding-x 0;
-        }
-
-        .k-edit-field {
-            .k-numerictextbox {
-                & + .k-dropdown {
-                    width: 4em;
-                }
-
-                & + .k-colorpicker,
-                & + .k-dropdown {
-                    margin-left: $padding-x-sm;
-                }
-            }
-
-            .k-colorpicker {
-                vertical-align: middle;
-            }
-        }
-    }
-
     .k-editor .k-resize-handle {
         position: absolute;
         right: 0;
@@ -256,4 +233,34 @@
             border-width: 0;
         }
     }
+}
+
+
+
+
+@include exports( "editor/table-wizard/layout" ) {
+
+    .k-editor-table-wizard-dialog {
+        .k-content {
+            padding: $padding-y-lg $padding-x 0;
+        }
+
+        .k-edit-field {
+            .k-numerictextbox {
+                & + .k-dropdown {
+                    width: 4em;
+                }
+
+                & + .k-colorpicker,
+                & + .k-dropdown {
+                    margin-left: $padding-x-sm;
+                }
+            }
+
+            .k-colorpicker {
+                vertical-align: middle;
+            }
+        }
+    }
+
 }
