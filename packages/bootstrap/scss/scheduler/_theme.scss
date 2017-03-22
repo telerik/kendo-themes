@@ -102,13 +102,9 @@
 
 @include exports("scheduler-edit-form/theme") {
 
-
     .k-popup-edit-form {}
-
-
-    .k-popup-edit-form .k-edit-buttons {
-        border-color: $modal-header-border-color;
-    }
+    .k-popup-edit-form .k-edit-buttons {}
     .k-popup-edit-form .k-edit-buttons .k-button {}
     .k-popup-edit-form .k-edit-buttons .k-button {}
+
 }
