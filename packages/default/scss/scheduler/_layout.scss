@@ -619,49 +619,18 @@ $modal-inner-padding: 1em;
 @include exports("scheduler-edit-form/layout") {
 
 
-    .k-popup-edit-form {}
-
-
-    .k-edit-form-container {
-        width: 400px;
-        position: relative;
-    }
-    .k-scheduler-edit-form .k-edit-form-container,
-    .k-scheduler-timezones .k-edit-form-container {
-        width: 620px;
-    }
-
-
-    .k-edit-label {
-        margin-left: 2%;
-        padding: .4em 0 1em;
-        text-align: right;
-        width: 30%;
-        float: left;
-        clear: both;
-    }
-    .k-edit-field {
-        margin-right: 2%;
-        padding: 0 0 .6em;
-        width: 60%;
-        float: right;
-        clear: right;
-    }
     .k-scheduler-edit-form {
+
+        .k-edit-form-container { width: 620px; }
         .k-edit-label { width: 17%; }
         .k-edit-field { width: 77%; }
+
+        .k-scheduler-delete {
+            float: left;
+        }
     }
 
 
-    .k-edit-field .k-reset .k-widget {
-        margin: 0 .4ex 0 1ex;
-    }
-    .k-edit-field .k-textbox {
-        width: 98%;
-    }
-    .k-edit-field [type="radio"] {
-        margin-right: .4ex;
-    }
     span.k-recur-interval,
     span.k-recur-count {
         width: 5em;
@@ -669,22 +638,12 @@ $modal-inner-padding: 1em;
     span.k-recur-until {
         width: 9em;
     }
+}
 
 
-    .k-edit-form-container .k-edit-buttons {
-        margin: $spacer (-$window-inner-padding-x) (-$window-inner-padding-y);
-        padding: $window-inner-padding-x;
-        border-width: 1px 0 0;
-        border-style: solid;
-        text-align: right;
-        clear: both;
-    }
-    .k-edit-form-container .k-button {
-        margin: 0 .2ex;
-    }
-    .k-edit-form-container .k-scheduler-delete {
-        float: left;
-    }
+
+
+@include export("scheduler/rtl") {
 
     .k-rtl {
         .k-scheduler-header th,
@@ -698,4 +657,5 @@ $modal-inner-padding: 1em;
             border-left-width: 1px;
         }
     }
+
 }
