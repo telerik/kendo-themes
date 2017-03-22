@@ -15,6 +15,7 @@ $slider-track-background-color: darken($header-bg, 7%) !default;
 
 
     .k-mediaplayer-toolbar {
+        background-color: rgba($toolbar-bg, 0.85);
 
         .k-slider-track {
             background: $slider-track-background-color;
