@@ -73,6 +73,10 @@
         top: -17px;
         left: 0;
     }
+    .k-mediaplayer-seekbar .k-slider-track {
+        width: 100% !important;
+        border-radius: 0;
+    }
 
     .k-mediaplayer-fullscreen {
         z-index: 10000;
