@@ -109,6 +109,9 @@
         .k-tool-text {
             display: none;
         }
+        .k-tool + .k-tool {
+            margin-left: -1px;
+        }
 
         // Overflow tools
         .k-overflow-tools {
