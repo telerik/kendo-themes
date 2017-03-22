@@ -250,21 +250,19 @@
             padding: $padding-y-lg $padding-x 0;
         }
 
-        .k-edit-field {
-            .k-numerictextbox {
-                & + .k-dropdown {
-                    width: 4em;
-                }
-
-                & + .k-colorpicker,
-                & + .k-dropdown {
-                    margin-left: $padding-x-sm;
-                }
+        .k-numerictextbox {
+            & + .k-dropdown {
+                width: 4em;
             }
 
-            .k-colorpicker {
-                vertical-align: middle;
+            & + .k-colorpicker,
+            & + .k-dropdown {
+                margin-left: $padding-x-sm;
             }
+        }
+
+        .k-colorpicker {
+            vertical-align: middle;
         }
     }
 
