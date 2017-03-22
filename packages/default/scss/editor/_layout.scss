@@ -246,9 +246,6 @@
 @include exports( "editor/table-wizard/layout" ) {
 
     .k-editor-table-wizard-dialog {
-        .k-content {
-            padding: $padding-y-lg $padding-x 0;
-        }
 
         .k-numerictextbox {
             width: 10em;
