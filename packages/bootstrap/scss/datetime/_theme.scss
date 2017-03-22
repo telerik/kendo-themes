@@ -29,6 +29,15 @@
         // Focused state
         .k-state-focused {
             @include appearance( focused-input );
+
+            .k-select {
+                border-left-color: $button-border;
+            }
+
+            // Focused & Hovered
+            &.k-state-hovered {
+                border-left-color: $button-hovered-border;
+            }
         }
 
         // Selected state
@@ -37,7 +46,6 @@
 
             .k-select {
                 @include appearance( pressed-button );
-                border-color: inherit;
             }
         }
 
