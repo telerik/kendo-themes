@@ -172,23 +172,6 @@
         }
     }
 
-
-    // Editor dialog
-
-    .k-editor-dialog {
-        border-color: inherit;
-
-        .k-edit-label {
-            width: 25%;
-        }
-
-        .k-edit-field {
-            width: 66%;
-        }
-
-        .k-edit-buttons {}
-    }
-
     .k-editor .k-resize-handle {
         position: absolute;
         right: 0;
@@ -233,6 +216,28 @@
             border-width: 0;
         }
     }
+}
+
+
+
+
+@include exports( "editor/dialog/layout" ) {
+
+
+    .k-editor-dialog {
+        border-color: inherit;
+
+        .k-edit-label {
+            width: 25%;
+        }
+
+        .k-edit-field {
+            width: 66%;
+        }
+
+        .k-edit-buttons {}
+    }
+
 }
 
 
