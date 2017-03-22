@@ -511,6 +511,19 @@
     }
 
 
+    // Tabstrip
+    .k-edit-form-container .k-tabstrip {
+        margin: (-$window-inner-padding-y) (-$window-inner-padding-x);
+    }
+    .k-edit-form-container .k-tabstrip .k-tabstrip-items {
+        padding: $window-inner-padding-y $window-inner-padding-x 0;
+    }
+    .k-edit-form-container .k-tabstrip .k-content {
+        padding: $window-inner-padding-y $window-inner-padding-x;
+        border-width: 0;
+    }
+
+
     // Buttons
     .k-edit-buttons {
         padding: $toolbar-padding-y $toolbar-padding-x;
