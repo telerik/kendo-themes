@@ -53,7 +53,7 @@
         }
 
         .k-align-right {
-            * + * { margin-left: $padding-x; }
+            & > * + * { margin-left: $padding-x; }
         }
 
     }
