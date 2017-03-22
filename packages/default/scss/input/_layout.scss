@@ -147,6 +147,7 @@
 
     .k-checkbox:checked + .k-checkbox-label::before {
         content: "\e118";
+        border-width: 0;
     }
 
     .k-checkbox:checked:disabled + .k-checkbox-label::before {
