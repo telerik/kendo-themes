@@ -27,6 +27,9 @@
         .k-draghandle.k-state-selected {
             @include appearance( pressed-primary-button );
         }
+        .k-draghandle.k-state-focused {
+            box-shadow: $button-focused-shadow;
+        }
 
     }
 
