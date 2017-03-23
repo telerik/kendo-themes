@@ -157,6 +157,13 @@
             display: none;
         }
     }
+    .k-spreadsheet-formula-list {
+        min-width: 100px;
+
+        .k-item {
+            padding: $list-item-padding-y $list-item-padding-x;
+        }
+    }
 
 
     // Sheets bar
@@ -333,6 +340,12 @@
         cursor: cell;
     }
     .k-spreadsheet .k-spreadsheet-selection {
+        border-width: 1px;
+        border-style: solid;
+        box-sizing: border-box;
+        position: absolute;
+    }
+    .k-spreadsheet .k-spreadsheet-selection-highlight {
         border-width: 1px;
         border-style: solid;
         box-sizing: border-box;
