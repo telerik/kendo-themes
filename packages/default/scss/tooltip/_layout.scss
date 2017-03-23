@@ -29,12 +29,13 @@ $tooltip-callout-size: 12px !default;
     }
 
     .k-tooltip-button {
-        text-align: right;
         height: 0;
+        text-align: right;
         margin-right: -2px;
 
         .k-icon {
             color: inherit;
+            vertical-align: top;
         }
     }
 
