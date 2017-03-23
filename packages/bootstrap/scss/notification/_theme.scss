@@ -4,6 +4,9 @@
     .k-notification {
         @include border-radius( $border-radius );
     }
+    .k-notification-wrap {
+        font-size: $font-size-sm;
+    }
     .k-notification-info {
         border-color: $alert-info-border;
         color: $alert-info-text;
