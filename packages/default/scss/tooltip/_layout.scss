@@ -21,7 +21,7 @@ $tooltip-callout-size: 12px !default;
     }
 
     .k-tooltip-closable {
-        padding: ($padding-y-lg * 2) ($padding-x * 2);
+        padding: $padding-y $padding-x;
     }
 
     .k-tooltip-closable .k-tooltip-content {
