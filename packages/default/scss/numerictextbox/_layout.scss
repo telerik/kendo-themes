@@ -15,7 +15,7 @@
     }
 
     .k-numeric-wrap .k-i-warning {
-        position: absolute;
-        right: $spacer-x * 2;
+        align-self: center;
+        margin-right: $spacer-x / 2;
     }
 }
