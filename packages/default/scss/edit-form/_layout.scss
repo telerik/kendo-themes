@@ -23,7 +23,7 @@
     }
 
 
-    // Buttons
+    // Edit buttons
     .k-edit-buttons {
         padding: $toolbar-padding-y $toolbar-padding-x;
         border-width: 1px 0 0;
@@ -39,6 +39,13 @@
     .k-edit-form-container .k-edit-buttons {
         margin: $spacer (-$window-inner-padding-x) (-$window-inner-padding-y);
         padding: $window-inner-padding-y $window-inner-padding-x;
+    }
+
+
+    // Action buttons
+    .k-action-buttons {}
+    .k-edit-form-container .k-action-buttons {
+        margin: $spacer (-$window-inner-padding-x) (-$window-inner-padding-y);
     }
 
 
