@@ -183,7 +183,7 @@ $header-border: $card-border-color !default;
 $header-gradient: none !default;
 
 $header-hovered-text: $header-text !default;
-$header-hovered-bg: darken( $header-bg, 10% ) !default;
+$header-hovered-bg: darken( $header-bg, 3 ) !default;
 $header-hovered-border: $header-border !default;
 $header-hovered-gradient: none !default;
 
