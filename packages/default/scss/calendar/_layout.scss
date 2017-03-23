@@ -184,19 +184,86 @@ $calendar-line-height: 1.25 !default;
 
 
 
-    // Monthview
-    $calendar-cell-size: ((30px / 14px) * 1em);
-    $calendar-header-height: ((23px / 14px) * 1em);
+    // Infinite calendar
+    $calendar-cell-size: ( 34px / 14px ) * 1em;
+    $calendar-header-height: 2em;
+    $calendar-weekdays-height: ( 29px / 14px ) * 1em;
+    $calendar-navigation-item-height: 2em;
+    $calendar-navigation-width: 5em;
+
+    @mixin hide-scrollbar($margin-offset: 0, $dir: 'right') {
+        // anything larger than the scrollbar width will do
+        $max-scrollbar: 100px;
+        $margin: -$max-scrollbar - $margin-offset;
+
+        @if ($dir == 'right') {
+            padding-right: $max-scrollbar;
+            margin-right: $margin;
+        } @else {
+            padding-left: $max-scrollbar;
+            margin-left: $margin;
+        }
+    }
+
+    .k-calendar.k-calendar-infinite {
+        box-sizing: content-box;
+        width: auto;
+        display: inline-flex;
+        vertical-align: bottom;
+    }
+
+    .k-calendar .k-content.k-scrollable {
+        box-sizing: content-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        @include hide-scrollbar(17px);
+    }
+
+    // scoped in calendar until it is used elsewhere
+    .k-calendar .k-scrollable-placeholder {
+        position: absolute;
+        z-index: -1;
+        width: 1px;
+        top: 0;
+        right: 0;
+    }
+
+    .k-calendar-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 2 * $padding-y;
+        line-height: $calendar-header-height;
+
+        .k-title {
+            font-weight: bold;
+        }
+
+        .k-today {
+            // link button
+            cursor: pointer;
+            color: $link-text;
+
+            &:hover,
+            &:focus {
+                color: $link-hover-text;
+            }
+        }
+    }
 
     .k-calendar-monthview {
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        margin: 0 $spacer-x;
 
-        thead {}
+        table {
+            width: ($calendar-cell-size * 7);
+        }
 
         .k-content {
-            height: 7 * $calendar-cell-size + 2 * $calendar-header-height;
+            height: 7 * $calendar-cell-size + $calendar-header-height;
             float: none;
             position: relative;
 
@@ -208,58 +275,8 @@ $calendar-line-height: 1.25 !default;
             th {
                 border: 0;
                 text-align: left;
-            }
-        }
-
-        .k-scrollable {
-            overflow-y: auto;
-        }
-        .k-scrollable-placeholder {
-            position: absolute;
-            z-index: -1;
-            width: 1px;
-            top: 0;
-            right: 0;
-        }
-
-    }
-
-    .k-calendar.k-calendar-infinite {
-        box-sizing: content-box;
-        padding: 0 10px;
-
-        &,
-        table {
-            width: ($calendar-cell-size * 7);
-        }
-
-        .k-calendar-weekdays {
-            thead {
-                @include disabled;
-
-                background-color: $bg-color;
                 font-weight: bold;
-                font-size: 10px;
-            }
-
-            th {
-                text-align: center;
-                border-width: 0;
-                line-height: 3em;
-            }
-        }
-
-        // month names
-        .k-content {
-            &.k-scrollable {
-                padding-right: 17px; // TODO: js?
-                box-sizing: content-box;
-                overflow-x: hidden;
-            }
-
-            th {
-                font-weight: bold;
-                text-align: left;
+                opacity: .5;
             }
 
             td {
@@ -285,6 +302,62 @@ $calendar-line-height: 1.25 !default;
             .k-weekend {
                 background: none;
             }
+        }
+
+        .k-calendar-weekdays {
+            thead {
+                @include disabled;
+
+                font-weight: bold;
+                font-size: 10px;
+            }
+
+            th {
+                text-align: center;
+                border-width: 0;
+                padding: 0;
+                line-height: $calendar-weekdays-height;
+            }
+        }
+    }
+
+    .k-calendar-navigation {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        width: $calendar-navigation-width;
+
+        .k-content {
+            background: transparent;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+            > ul > li {
+                height: $calendar-navigation-item-height;
+                line-height: $calendar-navigation-item-height;
+                cursor: pointer;
+                @include hide-scrollbar();
+            }
+        }
+
+        .k-calendar-navigation-marker {
+            font-weight: bold;
+        }
+
+        .k-calendar-navigation-highlight {
+            position: absolute;
+            top: 50%;
+            margin-top: -($calendar-navigation-item-height / 2);
+            right: 0;
+            width: 100%;
+            height: $calendar-navigation-item-height;
+            box-sizing: border-box;
+            border-width: 1px 0;
+            border-style: solid;
         }
     }
 }

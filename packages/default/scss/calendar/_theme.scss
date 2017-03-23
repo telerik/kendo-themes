@@ -70,12 +70,30 @@
 
 
 
-        // Monthview
+        // Infinite calendar
         .k-calendar-monthview {
-
             thead {
                 @include appearance( header );
             }
+        }
+
+        .k-calendar-navigation {
+            // border underneath highlight
+            box-shadow: inset -1px 0 $base-border;
+            background-color: $base-bg;
+
+            .k-content > ul > li:hover {
+                color: $link-hover-text;
+            }
+        }
+
+        .k-calendar-navigation-highlight {
+            border-color: $base-border;
+            background-color: $bg-color;
+        }
+
+        .k-calendar-weekdays thead {
+            background-color: $bg-color;
         }
     }
 
