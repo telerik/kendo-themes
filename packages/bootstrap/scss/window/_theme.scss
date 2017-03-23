@@ -21,3 +21,14 @@
     }
 
 }
+
+
+
+
+@include exports("popup-edit-form/layout") {
+
+    .k-popup-edit-form .k-edit-buttons {
+        border-color: $modal-header-border-color;
+    }
+
+}
