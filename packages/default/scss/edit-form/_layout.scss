@@ -1,0 +1,95 @@
+@include exports("edit-form/layout") {
+
+
+    // Edit form
+    .k-popup-edit-form {}
+    .k-edit-form-container {
+        width: 400px;
+        border-color: inherit;
+        position: relative;
+    }
+
+
+    // Tabstrip
+    .k-edit-form-container .k-tabstrip {
+        margin: (-$window-inner-padding-y) (-$window-inner-padding-x);
+    }
+    .k-edit-form-container .k-tabstrip .k-tabstrip-items {
+        padding: $window-inner-padding-y $window-inner-padding-x 0;
+    }
+    .k-edit-form-container .k-tabstrip .k-content {
+        padding: $window-inner-padding-y $window-inner-padding-x;
+        border-width: 0;
+    }
+
+
+    // Buttons
+    .k-edit-buttons {
+        padding: $toolbar-padding-y $toolbar-padding-x;
+        border-width: 1px 0 0;
+        border-style: solid;
+        border-color: inherit;
+        text-align: right;
+        clear: both;
+    }
+    .k-edit-buttons .k-button {}
+    .k-edit-buttons .k-button + .k-button {
+        margin-left: ( $spacer-x / 2 );
+    }
+    .k-edit-form-container .k-edit-buttons {
+        margin: $spacer (-$window-inner-padding-x) (-$window-inner-padding-y);
+        padding: $window-inner-padding-y $window-inner-padding-x;
+    }
+
+
+    .k-edit-label {
+        padding: 0 0 $spacer-y 0;
+        width: 30%;
+        text-align: right;
+        float: left;
+        clear: both;
+    }
+    .k-edit-field {
+        padding: 0 0 $spacer-y 0;
+        width: 60%;
+        float: right;
+        clear: right;
+    }
+
+    .k-edit-field {
+
+        > .k-widget,
+        > .k-textbox,
+        > .k-input.k-textbox {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .k-radio,
+        .k-checkbox {
+            margin-left: 1px;
+            margin-top: .7em;
+            width: 14px;
+            height: 15px;
+            z-index: 1;
+        }
+        [type="radio"] {
+            margin-right: .4ex;
+        }
+
+        .k-radio-label,
+        .k-checkbox-label {
+            margin-top: ($spacer / 2);
+            margin-right: ($spacer);
+            cursor: default;
+        }
+
+        .k-reset > li + li {
+            margin-top: ($spacer / 2);
+        }
+        .k-reset .k-widget {
+            margin: 0 .4ex 0 1ex;
+        }
+    }
+
+}
