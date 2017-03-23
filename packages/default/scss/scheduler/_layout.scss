@@ -154,6 +154,12 @@ $modal-inner-padding: 1em;
         }
     }
 
+    .k-scheduler-fullday {
+        .k-icon {
+            margin-right: $icon-spacing;
+        }
+    }
+
 
     // View switcher
     .k-scheduler-views {
