@@ -163,6 +163,13 @@
         > .k-syntax-num.k-syntax-at-point {
             text-decoration: underline;
         }
+
+        > .k-series-a,
+        > .k-series-b,
+        > .k-series-c,
+        > .k-series-d {
+            background-color: transparent;
+        }
     }
     .k-spreadsheet-formula-list {
         min-width: 100px;
