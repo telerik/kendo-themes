@@ -561,8 +561,11 @@
         }
 
         .k-list-scroller {
-            height: 210px;
             margin-top: ($spacer / 2);
+            height: 210px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: inherit;
         }
 
         .k-tabstrip-top  {

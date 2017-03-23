@@ -14,6 +14,9 @@
     .k-edit-form-container .k-tabstrip {
         margin: (-$window-inner-padding-y) (-$window-inner-padding-x);
     }
+    .k-edit-form-container .k-tabstrip.k-root-tabs {
+        margin-bottom: $window-inner-padding-y;
+    }
     .k-edit-form-container .k-tabstrip .k-tabstrip-items {
         padding: $window-inner-padding-y $window-inner-padding-x 0;
     }
