@@ -2,14 +2,14 @@
 
     // Base
     .k-progressbar {
-        position: relative;
-        display: inline-flex;
-        font-size: $spacer-y * .75;
-        line-height: $spacer-y;
-        vertical-align: middle;
-        overflow: hidden;
         border-width: 0;
         border-radius: $border-radius;
+        font-size: $spacer-y * .75;
+        line-height: $spacer-y;
+        display: inline-flex;
+        vertical-align: middle;
+        position: relative;
+        overflow: hidden;
 
         // Status
         .k-progress-status-wrap {
