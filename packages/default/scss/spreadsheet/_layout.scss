@@ -546,9 +546,7 @@
 
 @include exports( "spreadsheet/window/layout" ) {
 
-    .k-spreadsheet-window {
-        padding: ($spacer / 2);
-    }
+    .k-spreadsheet-window {}
     .k-spreadsheet-window .k-edit-form-container {
         width: auto;
         border-color: inherit;
