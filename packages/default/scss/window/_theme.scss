@@ -1,5 +1,6 @@
 @include exports("window/theme") {
 
+    $window-border-color: rgba(0, 0, 0, .08) !default;
     $window-shadow: 0 3px 3px 0 rgba(0, 0, 0, .06) !default;
     $window-focused-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
 
