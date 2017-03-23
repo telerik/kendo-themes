@@ -2,7 +2,9 @@
 
     .k-window {
         @include border-radius( $border-radius );
+        border-color: $modal-content-border-color;
         background-color: $modal-content-bg;
+        background-clip: padding-box;
     }
     .k-window-titlebar {
         border-color: $modal-header-border-color;
