@@ -113,5 +113,11 @@
     .k-task-single.k-state-selected {
         @include appearance( active-button );
     }
+    .k-task-single .k-resize-handle {
+        width:  ($spacer-x / 2 );
+    }
+    .k-task-single:hover .k-resize-handle {
+        opacity: 0;
+    }
 
 }
