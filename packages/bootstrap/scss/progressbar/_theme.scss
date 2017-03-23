@@ -2,19 +2,14 @@
 
     // Theme
     .k-progressbar {
-        @include border-radius( $border-radius );
         color: $progress-text;
         background-color: $progress-bg;
 
         // Status
-        .k-progress-status-wrap {
-            @include border-radius( $border-radius );
-        }
+        .k-progress-status-wrap {}
 
         // Progress
-        > .k-state-selected {
-            @include border-radius( $border-radius );
-        }
+        > .k-state-selected {}
         .k-state-selected {
             color: $progress-fill-text;
             background-color: $progress-fill-bg;
