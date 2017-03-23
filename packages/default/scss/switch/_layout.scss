@@ -21,6 +21,18 @@ $switch-handle-size: (.8 * $switch-size) !default;
         [type='checkbox'] {
             display: none;
         }
+
+        &[dir='rtl'] {
+            .k-switch-label-off {
+                left: -2.4em;
+                margin-left: -2px;
+            }
+
+            .k-switch-label-on {
+                left: 2.4em;
+                margin-left: 3px;
+            }
+        }
     }
 
     .k-switch,
