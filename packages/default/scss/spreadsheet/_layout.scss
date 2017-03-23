@@ -144,17 +144,24 @@
             border-color: inherit;
         }
 
-        .k-spreadsheet-formula-input {
-            margin: 0 $padding-y;
-            outline: 0;
-            white-space: pre;
-            flex: 1;
-        }
-
         .k-tooltip,
         .k-group-header,
         .k-list-scroller {
             display: none;
+        }
+    }
+    .k-spreadsheet-formula-input {
+        margin: 0 $padding-y;
+        outline: 0;
+        white-space: pre;
+        flex: 1;
+
+        > .k-syntax-func.k-syntax-at-point,
+        > .k-syntax-bool.k-syntax-at-point,
+        > .k-syntax-ref.k-syntax-at-point,
+        > .k-syntax-str.k-syntax-at-point,
+        > .k-syntax-num.k-syntax-at-point {
+            text-decoration: underline;
         }
     }
     .k-spreadsheet-formula-list {
