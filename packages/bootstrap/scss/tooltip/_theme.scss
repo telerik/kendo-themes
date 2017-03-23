@@ -6,6 +6,10 @@
         @include border-radius($border-radius);
     }
 
+    .k-tooltip-closable {
+        padding: $padding-y $padding-x;
+    }
+
 
     .k-callout-n { border-bottom-color: $tooltip-arrow-color; }
     .k-callout-e { border-left-color: $tooltip-arrow-color; }
