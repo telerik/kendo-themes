@@ -21,7 +21,7 @@ $tooltip-callout-size: 12px !default;
     }
 
     .k-tooltip-closable {
-        padding: $padding-y $padding-x;
+        padding: ($padding-y*3) ($padding-x*2);
     }
 
     .k-tooltip-closable .k-tooltip-content {
@@ -31,6 +31,7 @@ $tooltip-callout-size: 12px !default;
     .k-tooltip-button {
         text-align: right;
         height: 0;
+        margin-right: -2px;
 
         .k-icon {
             color: inherit;
