@@ -15,6 +15,29 @@
         background-color: $editor-overlay-background;
     }
 
+
+    // Editor toolbar
+    .k-editor-toolbar {
+
+        a.k-tool {
+            @include appearance( button );
+
+            &:hover,
+            &.k-state-hover {
+                @include appearance( hovered-button );
+            }
+
+            &:active,
+            &.k-state-active {
+                @include appearance( pressed-button );
+            }
+
+            &.k-state-selected {
+                @include fill( $selected-text, $selected-bg, $selected-border, none );
+            }
+        }
+    }
+
     // sass-lint:disable class-name-format
     .editorToolbarWindow.k-header.k-window-content {
         @include appearance( header );
@@ -24,28 +47,6 @@
     .k-editor .k-editor-toolbar-wrap,
     .k-ct-popup .k-editor-toolbar,
     .editorToolbarWindow.k-header.k-window-content {
-        a.k-tool {
-            @include appearance( button );
-            border-width: 0;
-            background-image: none;
-            background-color: transparent;
-
-            &:hover,
-            &.k-state-hover {
-                @include appearance( hovered-button );
-                text-decoration: none;
-            }
-
-            &:active,
-            &.k-state-active {
-                @include appearance( pressed-button );
-                text-decoration: none;
-            }
-
-            &.k-state-selected {
-                @include fill( $selected-text, $selected-bg, $selected-border, none );
-            }
-        }
         .k-tool-group {
             border-color: $border-color;
         }
