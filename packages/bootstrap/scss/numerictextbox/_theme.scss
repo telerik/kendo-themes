@@ -33,5 +33,9 @@
 
         .k-link-increase > .k-icon { transform: translateY($button-padding-y / 4); }
 
+        .k-numeric-wrap.k-state-invalid {
+            border-color: $error;
+            color: $error;
+        }
     }
 }
