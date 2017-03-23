@@ -6,15 +6,31 @@
         background-color: $modal-content-bg;
         background-clip: padding-box;
     }
+
+    // Titlebar
     .k-window-titlebar {
         border-color: $modal-header-border-color;
     }
+
+    // Window actions
     .k-window-action {
         padding: 0;
         width: 1em;
         height: 1em;
         border-width: 0;
+        opacity: .5;
     }
+    .k-window-action:hover {
+        opacity: 1;
+    }
+    .k-button.k-window-action {
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+
+    // Content
     .k-window-content {
         border-color: inherit;
         background: none;
