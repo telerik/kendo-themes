@@ -16,24 +16,7 @@
     .k-upload {
         .k-upload-button {
             min-width: 7em;
-            position: relative;
-            overflow: hidden;
-            direction: ltr;
             margin: $toolbar-padding-x;
-
-            input {
-                // font should not depend on outside styles, otherwise upload may break
-                font: 170px monospace !important; // sass-lint:disable-block no-important
-                margin: 0;
-                padding: 0;
-                filter: alpha(opacity=0);
-                opacity: 0;
-                cursor: pointer;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                z-index: 1;
-            }
         }
 
         // Drop zone
@@ -357,6 +340,26 @@
                 margin-left: 0;
                 margin-right: $cell-padding;
             }
+        }
+    }
+
+    .k-upload-button {
+        position: relative;
+        overflow: hidden;
+        direction: ltr;
+
+        input {
+            // font should not depend on outside styles, otherwise upload may break
+            font: 170px monospace !important; // sass-lint:disable-block no-important
+            margin: 0;
+            padding: 0;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
         }
     }
 
