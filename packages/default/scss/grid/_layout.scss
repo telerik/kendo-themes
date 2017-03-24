@@ -564,16 +564,15 @@
         border-color: inherit;
     }
 
-    .k-grid-virtual {
-        .k-grid-content {
-            > table {
-                position: absolute;
-                z-index: 1;
-            }
+    .k-virtual-content {
+        > table {
+            position: absolute;
+            z-index: 2;
+        }
 
-            > .k-height-container {
-                position: relative;
-            }
+        > .k-height-container {
+            position: relative;
+            z-index: 1;
         }
     }
 
