@@ -24,12 +24,10 @@
 
         // Marker
         .k-marker {
-            margin: -40px 0 0 -14px;
-            width: 28px;
-            height: 40px;
+            margin: -32px 0 0 -16px;
+            font-size: $font-size*2;
             cursor: pointer;
             position: absolute;
-            background: url(map-get($data-uris, 'markers.png'));
         }
 
 
