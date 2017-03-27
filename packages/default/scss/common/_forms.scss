@@ -9,6 +9,7 @@
     .k-dropdown,
     .k-multiselect,
     .k-numerictextbox,
+    .k-maskedtextbox,
     .k-timepicker {
         width: 12.4em;
         line-height: $form-line-height;
@@ -29,6 +30,7 @@
     .k-datetimepicker,
     .k-dropdown,
     .k-numerictextbox,
+    .k-maskedtextbox,
     .k-timepicker {
         border-width: 0;
         background-color: transparent;

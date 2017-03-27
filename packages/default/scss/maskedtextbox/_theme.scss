@@ -1,0 +1,5 @@
+@include exports("maskedtextbox/theme") {
+    .k-maskedtextbox .k-state-invalid + .k-i-warning {
+        color: $error;
+    }
+}

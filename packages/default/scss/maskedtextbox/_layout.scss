@@ -1,0 +1,17 @@
+@include exports("maskedtextbox/layout") {
+    .k-widget.k-maskedtextbox {
+        display: inline-flex;
+
+        ::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .k-i-warning {
+            align-self: center;
+            position: absolute;
+            right: $padding-x;
+        }
+    }
+}
