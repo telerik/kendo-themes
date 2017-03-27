@@ -133,4 +133,8 @@
     fieldset legend {
         color: $header-text;
     }
+
+    .k-maskedtextbox .k-state-invalid + .k-i-warning{
+        color: $error;
+    }
 }
