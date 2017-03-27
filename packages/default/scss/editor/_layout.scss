@@ -227,6 +227,10 @@
     .k-editor-dialog {
         border-color: inherit;
 
+        .k-edit-form-container {
+            width: auto;
+        }
+
         .k-edit-label {
             width: 25%;
         }
