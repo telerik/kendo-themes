@@ -22,6 +22,11 @@
         -webkit-appearance: none;
     }
 
+    .k-maskedtextbox {
+        display: inline-flex;
+        border-width: 0;
+    }
+
     .k-input,
     .k-textbox > input {
         padding: 0;
