@@ -36,7 +36,7 @@
 
     .k-list .k-item:focus,
     .k-list .k-item.k-state-focused {
-        @include appearance( focused-list-item );
+        box-shadow: inset $button-focused-shadow;
     }
 
     .k-list .k-item.k-state-selected {

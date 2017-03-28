@@ -16,11 +16,13 @@
         .k-state-hover { @include appearance( hovered-button ); }
 
         // Focused state
-        .k-state-focused {}
+        .k-state-focused {
+            box-shadow: $button-focused-shadow;
+        }
 
         // Active state
         .k-state-active {
-            @include appearance( active-button );
+            @include appearance( pressed-button );
         }
 
     }
