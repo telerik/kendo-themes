@@ -22,6 +22,10 @@
         &[dir='rtl'] {
             text-align: right;
         }
+
+        ::-ms-clear {
+            display: none;
+        }
     }
     .k-colorpicker,
     .k-combobox,
