@@ -477,8 +477,13 @@
             width: 0;
             overflow: hidden;
         }
-    }
 
+        &.k-filtercell-boolean {
+            .k-filtercell-wrapper {
+                padding-right: calc(#{$button-calc-size} + #{$cell-padding-y / 2});
+            }
+        }
+    }
 
     // Grid content
     .k-grid-content,
