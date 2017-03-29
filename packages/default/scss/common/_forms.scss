@@ -168,10 +168,12 @@
             .k-icon {
                 height: 100%;
                 overflow: hidden;
-                vertical-align: baseline;
+                vertical-align: top;
             }
         }
 
+        .k-link-increase > .k-icon { transform: translateY($padding-y-sm / 2); }
+        .k-link-decrease > .k-icon { transform: translateY(-$padding-y-lg / 2); }
     }
 
     .k-virtual-content {

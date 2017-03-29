@@ -17,8 +17,6 @@
                 @include appearance( pressed-button );
             }
         }
-        .k-link-increase > .k-icon {}
-        .k-link-decrease > .k-icon { transform: translateY(-$padding-y); }
 
         // Hovered state
         .k-state-hover {
