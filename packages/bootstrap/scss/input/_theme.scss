@@ -137,4 +137,15 @@
     .k-maskedtextbox .k-state-invalid + .k-i-warning{
         color: $error;
     }
+
+    .k-dateinput.k-state-invalid {
+        .k-textbox {
+            color: $error;
+            border-color: $error;
+        }
+
+        .k-i-warning {
+            color: $error;
+        }
+    }
 }
