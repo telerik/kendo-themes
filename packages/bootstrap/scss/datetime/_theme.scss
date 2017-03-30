@@ -63,7 +63,21 @@
     }
 
     // Datepicker
-    .k-datepicker {}
+    .k-datepicker {
+        .k-picker-wrap {
+
+            .k-i-warning {
+                color: $error;
+                right: $spacer * 2.5;
+            }
+            
+            &.k-state-invalid {
+                transition: none;
+                color: $error;
+                border-color: $error;
+            }
+        }
+    }
 
     // Timepicker
     .k-timepicker {}
