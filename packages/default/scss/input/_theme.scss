@@ -106,15 +106,4 @@
     fieldset legend {
         color: $header-text;
     }
-
-    .k-dateinput.k-state-invalid {
-        .k-textbox {
-            color: $error;
-            border-color: $error;
-        }
-
-        .k-i-warning {
-            color: $error;
-        }
-    }
 }

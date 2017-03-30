@@ -87,6 +87,17 @@
             .k-select { @include appearance( active-button ); }
         }
 
+        // Invalid state
+        .k-dateinput.k-state-invalid {
+            .k-textbox {
+                color: $error;
+                border-color: $error;
+            }
+
+            .k-i-warning {
+                color: $error;
+            }
+        }
     }
 
 }
