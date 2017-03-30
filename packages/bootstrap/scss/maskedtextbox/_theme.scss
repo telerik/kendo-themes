@@ -1,6 +1,7 @@
 @include exports("maskedtextbox/theme") {
     .k-maskedtextbox {
-        &.k-state-invalid .k-textbox {
+        .k-textbox.k-state-invalid {
+            transition: none;
             border-color: $error;
         }
 
