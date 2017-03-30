@@ -12,6 +12,24 @@
                 padding: $button-padding-y-sm;
             }
         }
+
+
+        .k-picker-wrap {
+            .k-i-warning {
+                display: none;
+                position: absolute;
+                right: $spacer * 2;
+                top: 50%;
+                transform: translateY(-50%);
+                overflow: visible;
+            }
+
+            &.k-state-invalid {
+                .k-i-warning {
+                    display: inline-block;
+                }
+            }
+        }
     }
 
     // Timepicker
