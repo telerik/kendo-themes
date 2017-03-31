@@ -1,10 +1,17 @@
 @include exports("maskedtextbox/layout") {
     .k-maskedtextbox {
         .k-i-warning {
+            display: none;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
             right: $padding-x;
+        }
+
+        &.k-state-invalid {
+            .k-i-warning {
+                display: inline-block;
+            }
         }
     }
 }

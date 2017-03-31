@@ -1,5 +1,14 @@
 @include exports("maskedtextbox/theme") {
-    .k-maskedtextbox .k-i-warning {
-        color: $error;
+    .k-maskedtextbox {
+        .k-i-warning {
+            color: $error;
+        }
+
+        &.k-state-invalid {
+            .k-textbox {
+                color: $error;
+                border-color: $error;
+            }
+        }
     }
 }
