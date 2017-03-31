@@ -24,9 +24,13 @@ $webkit-highlight-color: rgba(0, 0, 0, 0) !default;
         background-color: $selected-bg;
     }
 
+    .k-scrollview-elements {
+        color: $scrollview-navigation-color;
+    }
+
     .k-scrollview-next,
     .k-scrollview-prev {
-        color: $scrollview-navigation-color;
+        color: inherit;
         background: $scrollview-navigation-background;
         text-shadow: $scrollview-navigation-icon-shadow;
         opacity: $scrollview-navigation-default-opacity;
