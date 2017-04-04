@@ -470,6 +470,10 @@
         border-bottom-color: transparent;
         background-color: transparent;
     }
+    .k-icon.k-i-loading::before,
+    .k-icon.k-i-loading::after {
+        content: "";
+    }
 
     .k-i-loading::before {
         margin-top: -.5em;
