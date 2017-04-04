@@ -225,7 +225,6 @@
 
 
     .k-editor-dialog {
-        border-color: inherit;
 
         .k-edit-form-container {
             width: auto;
@@ -275,6 +274,16 @@
         .k-search-wrap {
             margin: 0 0 0 $spacer-x;
             width: 150px;
+            display: flex;
+            align-items: center;
+
+            .k-input {
+                flex: 1;
+            }
+            .k-icon {
+                margin: 0;
+                position: static;
+            }
         }
 
         // Filebrowser toolbar
