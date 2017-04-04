@@ -2,14 +2,15 @@
 
     .k-window {
         @include border-radius( $border-radius );
-        border-color: $modal-content-border-color;
-        background-color: $modal-content-bg;
+        border-color: $window-border;
+        color: $window-text;
+        background-color: $window-bg;
         background-clip: padding-box;
     }
 
     // Titlebar
     .k-window-titlebar {
-        border-color: $modal-header-border-color;
+        border-color: $window-titlebar-border;
     }
 
     // Window actions
@@ -45,7 +46,7 @@
 @include exports("popup-edit-form/layout") {
 
     .k-popup-edit-form .k-edit-buttons {
-        border-color: $modal-header-border-color;
+        border-color: $window-titlebar-border;
     }
 
 }

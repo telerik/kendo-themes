@@ -167,7 +167,7 @@ $widget-border: $border-color !default;
 
 
 // Panel
-$panel-text: $widget-text !default;
+$panel-text: $body-color !default;
 $panel-bg: $card-bg !default;
 $panel-border: $card-border-color !default;
 
@@ -356,6 +356,16 @@ $grid-alt-border: $grid-border;
 $grid-hovered-text: $grid-text !default;
 $grid-hovered-bg: $table-bg-hover !default;
 $grid-hovered-border: $grid-border !default;
+
+
+// Window
+$window-text: $body-color !default;
+$window-bg: $modal-content-bg !default;
+$window-border: $modal-content-border-color !default;
+
+$window-titlebar-text: $window-text !default;
+$window-titlebar-bg: $window-bg !default;
+$window-titlebar-border: $modal-header-border-color !default;
 
 
 // Progress
