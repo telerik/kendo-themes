@@ -49,13 +49,6 @@
         z-index: 10001;
     }
 
-    // hidden
-    .k-hidden {
-        // sass-lint:disable no-important
-        display: none !important;
-        // sass-lint:enable no-important
-    }
-
 
     // RTL
     .k-rtl {
@@ -127,6 +120,12 @@
         position: absolute;
         top: 0;
         right: 0;
+    }
+
+
+    // Hiding
+    .k-hidden {
+        display: none !important; // sass-lint:disable-block no-important
     }
 
 }
