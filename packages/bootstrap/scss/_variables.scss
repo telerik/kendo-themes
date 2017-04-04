@@ -253,9 +253,9 @@ $button-focused-shadow: 0 0 0 2px rgba($button-border, .5) !default;
 
 
 // Primary button
-$primary-button-text: $component-active-color !default;
-$primary-button-bg: $component-active-bg !default;
-$primary-button-border: $primary-button-bg !default;
+$primary-button-text: $btn-primary-color !default;
+$primary-button-bg: $btn-primary-bg !default;
+$primary-button-border: $btn-primary-border !default;
 $primary-button-gradient: none !default;
 
 $primary-button-hovered-text: $primary-button-text !default;
