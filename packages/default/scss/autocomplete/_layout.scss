@@ -4,32 +4,7 @@
     .k-autocomplete {
         @include border-radius();
 
-        .k-input {
-            padding:  $input-padding-y $input-padding-x;
-            height: $form-line-height-em;
-            box-sizing: content-box;
-            border: 0;
-            outline: 0;
-            color: inherit;
-            background: none;
-            font: inherit;
-            line-height: $form-line-height;
-            display: inline-block;
-            flex: 1;
-        }
-
-        .k-i-close {
-            display: none;
-            align-self: center;
-        }
-
-        &.k-state-hover,
-        &.k-state-focused {
-            .k-i-close {
-                display: flex;
-                outline: 0;
-            }
-        }
+        .k-input {}
 
     }
 
