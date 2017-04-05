@@ -89,6 +89,7 @@
         // TODO: improve wrapper overflow
         //overflow: hidden;
         cursor: default;
+        outline: 0;
 
         .k-input {
             padding: $input-padding-y $input-padding-x;
