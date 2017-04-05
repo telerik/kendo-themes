@@ -136,46 +136,6 @@
         }
     }
 
-    .k-autocomplete,
-    .k-dropdown-wrap,
-    .k-multiselect {
-
-        .k-clear-value,
-        .k-i-loading {
-            position: absolute;
-            right: $input-padding-x;
-        }
-
-        .k-clear-value {
-            height: ($form-line-height * $font-size );
-            outline: 0;
-            opacity: .5;
-            cursor: pointer;
-            display: none;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            top: $input-padding-y;
-        }
-
-        .k-i-loading {
-            top: 50%;
-            margin-top: -.5em;
-        }
-
-        &.k-state-focused,
-        &.k-state-hover,
-        &:hover {
-            .k-clear-value {
-                display: inline-flex;
-
-                &:hover {
-                    opacity: 1;
-                }
-            }
-        }
-    }
-
     .k-dateinput,
     .k-numerictextbox {
 
@@ -223,6 +183,35 @@
             box-sizing: border-box;
             overflow: hidden;
             white-space: nowrap;
+        }
+    }
+
+
+    // Clear value
+    .k-autocomplete,
+    .k-dropdown-wrap,
+    .k-multiselect {
+        .k-clear-value {
+            display: none;
+            position: absolute;
+            right: $padding-x;
+            top: 50%;
+            margin-top: -.5em;
+        }
+
+        &.k-state-focused,
+        &.k-state-hover,
+        &:hover {
+            .k-clear-value {
+                display: inline-block;
+                outline: 0;
+                opacity: .5;
+
+                &:hover {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
         }
     }
 
