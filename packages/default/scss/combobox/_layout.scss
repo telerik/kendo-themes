@@ -1,12 +1,6 @@
 @include exports("combobox/layout") {
 
     .k-combobox {
-        .k-dropdown-wrap {
-            > .k-i-close {
-                right: calc(#{$icon-size} + #{$padding-y-lg * 3});
-            }
-        }
-
         .k-input {}
 
         .k-select {}
@@ -35,4 +29,5 @@
             }
         }
     }
+
 }
