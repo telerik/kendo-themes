@@ -209,6 +209,14 @@
 
         .k-clear-value {
             padding: $input-padding-y;
+            visibility: hidden;
+        }
+
+        &.k-state-hover,
+        &.k-state-focused {
+            .k-clear-value {
+                visibility: visible;
+            }
         }
     }
 
