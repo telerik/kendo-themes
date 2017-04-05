@@ -73,6 +73,7 @@
 
 
     // Wrappers
+    .k-autocomplete,
     .k-dateinput-wrap,
     .k-dropdown-wrap,
     .k-picker-wrap,
@@ -188,30 +189,26 @@
 
 
     // Clear value
+    .k-clear-value {
+        outline: 0;
+        display: inline-block;
+        align-self: center;
+        cursor: pointer;
+        opacity: .5;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .k-clear-value.k-loading-hidden {
+        display: none;
+    }
     .k-autocomplete,
     .k-dropdown-wrap,
     .k-multiselect {
+
         .k-clear-value {
-            display: none;
-            position: absolute;
-            right: $padding-x;
-            top: 50%;
-            margin-top: -.5em;
-        }
-
-        &.k-state-focused,
-        &.k-state-hover,
-        &:hover {
-            .k-clear-value {
-                display: inline-block;
-                outline: 0;
-                opacity: .5;
-
-                &:hover {
-                    opacity: 1;
-                    cursor: pointer;
-                }
-            }
+            padding: $input-padding-y;
         }
     }
 
