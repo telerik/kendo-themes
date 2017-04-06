@@ -15,6 +15,31 @@
         .k-loading-hidden {
             visibility: hidden;
         }
+
+        &[dir='rtl'],
+        .k-rtl & {
+            li.k-button {
+                float: right;
+            }
+
+            .k-multiselect-wrap {
+                padding-left: ($padding-x * 3);
+                padding-right: 0;
+
+                .k-searchbar {
+                    float: right;
+                }
+
+                .k-button {
+                    margin: $padding-y-sm $padding-y-sm 0 0;
+                }
+
+                .k-i-loading {
+                    left: $padding-x;
+                    right: auto;
+                }
+            }
+        }
     }
 
 
@@ -35,7 +60,7 @@
 
         // Token
         .k-button {
-            padding: ($button-padding-y / 2) ($button-padding-x / 2);
+            padding: ($button-padding-y-sm / 2) ($button-padding-x / 2);
             margin: $padding-y-sm 0 0 $padding-y-sm;
             cursor: default;
             display: inline-flex;

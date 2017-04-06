@@ -19,8 +19,14 @@
         vertical-align: middle;
         position: relative;
 
-        &[dir='rtl'] {
+        &[dir='rtl'],
+        .k-rtl & {
             text-align: right;
+
+            .k-clear-value {
+                left: $padding-x;
+                right: auto;
+            }
         }
 
         ::-ms-clear {

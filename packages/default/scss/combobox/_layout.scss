@@ -13,6 +13,15 @@
 
         .k-select {}
 
+        &[dir='rtl'] {
+            > .k-dropdown-wrap {
+                > .k-i-close {
+                    left: calc(#{$icon-size} + #{$padding-y-lg * 3});
+                    right: auto;
+                }
+            }
+        }
+
         // Compact
         @include compact {
 

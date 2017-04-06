@@ -13,6 +13,15 @@
             cursor: pointer;
             outline: none;
         }
+
+        [dir='rtl'] & {
+            .k-list-filter {
+                > .k-icon {
+                    left: $padding-x * 2;
+                    right: auto;
+                }
+            }
+        }
     }
     .k-animation-container {
         @include border-radius( 0 0 $border-radius $border-radius );
