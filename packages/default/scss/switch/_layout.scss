@@ -55,9 +55,7 @@ $switch-handle-size: (.8 * $switch-size) !default;
         padding: $switch-padding 0;
         display: block;
         width: 100%;
-        overflow: hidden;
         background: transparent;
-        border-width: 0;
         transform: translateZ(0);
         outline: 0;
     }
