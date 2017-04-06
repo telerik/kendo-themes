@@ -45,6 +45,13 @@
             white-space: normal;
             flex: 1;
             // sass-lint:enable no-important
+
+            &::before,
+            &::after {
+                // center stretched button content for Safari 10
+                content: '';
+                flex: 1 0 auto;
+            }
         }
         .k-button + .k-button {
             margin: 0;
