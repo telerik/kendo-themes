@@ -1,0 +1,10 @@
+@include exports('listbox/theme') {
+    .k-listbox {
+        background-color: transparent;
+
+        .k-list-scroller {
+            background-color: $widget-bg;
+            border-color: $widget-border;
+        }
+    }
+}
