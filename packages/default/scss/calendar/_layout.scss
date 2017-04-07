@@ -336,11 +336,15 @@ $calendar-line-height: 1.25 !default;
             bottom: 0;
             right: 0;
 
-            > ul > li {
+            ul {
+                width: $calendar-navigation-width;
+            }
+
+            li {
                 height: $calendar-navigation-item-height;
                 line-height: $calendar-navigation-item-height;
                 cursor: pointer;
-                @include hide-scrollbar();
+                padding: 0 $padding-x;
             }
         }
 
