@@ -1,82 +1,73 @@
 @include exports( 'listbox/layout' ) {
-    $listbox-toolbar-margin: $padding-x !default;
-    $listbox-default-width: 12.4em !default;
-    $listbox-default-height: 200px;
+    $listbox-margin: $padding-x !default;
+    $listbox-width: 12.4em !default;
+    $listbox-default-height: 200px !default;
 
     .k-listbox {
-        width: $listbox-default-width;
+        width: $listbox-width;
         height: $listbox-default-height;
-        display: flex;
+        background-color: transparent;
         border-width: 0;
+        display: flex;
+
+        .k-listbox-toolbar ul {
+            display: flex;
+        }
+
+        &.k-listbox-toolbar-left,
+        &.k-listbox-toolbar-right {
+            .k-listbox-toolbar ul {
+                flex-direction: column;
+            }
+
+            .k-listbox-toolbar li + li {
+                margin-top: $listbox-margin;
+            }
+        }
 
         &.k-listbox-toolbar-left {
             flex-direction: row;
 
             .k-listbox-toolbar {
-                margin-right: $listbox-toolbar-margin;
-            }
-
-            .k-listbox-toolbar ul li {
-                display: flex;
-                margin-bottom: $listbox-toolbar-margin;
-            }
-
-            .k-list-scroller {
-                width: 100%;
+                margin-right: $listbox-margin;
             }
         }
 
         &.k-listbox-toolbar-right {
-            flex-direction: row;
+            flex-direction: row-reverse;
 
             .k-listbox-toolbar {
-                margin-left: $listbox-toolbar-margin;
-                order: 2;
+                margin-left: $listbox-margin;
+            }
+        }
+
+        &.k-listbox-toolbar-top,
+        &.k-listbox-toolbar-bottom {
+            flex-direction: column;
+
+            .k-listbox-toolbar ul {
+                flex-direction: row;
             }
 
-            .k-listbox-toolbarul li {
-                display: flex;
-                margin-bottom: $listbox-toolbar-margin;
-            }
-
-            .k-list-scroller {
-                order: 1;
-                width: 100%;
+            .k-listbox-toolbar li + li {
+                margin-left: $listbox-margin;
             }
         }
 
         &.k-listbox-toolbar-top {
-            flex-direction: column;
             .k-listbox-toolbar {
-                padding: $listbox-toolbar-margin 0;
-            }
-
-            .k-listbox-toolbar ul li {
-                display: inline-flex;
-                margin-right: calc($listbox-toolbar-margin - 2px);
+                margin-bottom: $listbox-margin;
             }
         }
 
         &.k-listbox-toolbar-bottom {
-            flex-direction: column;
-
             .k-listbox-toolbar {
-                padding: $listbox-toolbar-margin 0;
-                order: 2;
-
-            }
-
-            .k-listbox-toolbar ul li {
-                display: inline-flex;
-                margin-right: calc($listbox-toolbar-margin - 2px);
-            }
-
-            .k-list-scroller {
-                order: 1;
+                margin-top: $listbox-margin;
             }
         }
 
         .k-list-scroller {
+            width: 100%;
             border-width: 1px;
             border-style: solid;
         }
