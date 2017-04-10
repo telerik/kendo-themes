@@ -330,6 +330,7 @@ $chart-title-font-size: 1.143em !default;
     // export variables to allow use in scripts
     $exported: (
         accent: $accent,
+        accent-contrast: $accent-contrast,
         base: $base-bg,
         background: $widget-bg,
 
