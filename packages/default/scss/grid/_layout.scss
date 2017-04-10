@@ -573,6 +573,17 @@
         border-color: inherit;
     }
 
+    .k-grid-virtual .k-grid-content {
+        > table {
+            position: absolute;
+            z-index: 1;
+        }
+
+        > .k-height-container {
+            position: relative;
+        }
+    }
+
     .k-grid-add-row td {
         border-bottom-style: solid;
         border-bottom-width: 1px;
