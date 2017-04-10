@@ -344,7 +344,7 @@ $calendar-line-height: 1.25 !default;
                 height: $calendar-navigation-item-height;
                 line-height: $calendar-navigation-item-height;
                 cursor: pointer;
-                padding: 0 $padding-x;
+                padding: 0 (2 * $padding-x);
             }
         }
 
