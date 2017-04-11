@@ -95,6 +95,11 @@
     // Grid header / footer
     .k-grid-header {
 
+        .k-i-sort-asc-sm,
+        .k-i-sort-desc-sm,
+        .k-sort-order {
+            color: $accent;
+        }
 
         .k-grid-filter {}
         .k-grid-filter:hover {
