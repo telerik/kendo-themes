@@ -1,8 +1,10 @@
+$tooltip-text: darken($widget-bg, 16);
+
 @include exports("tooltip/theme") {
 
     .k-tooltip {
-        color: $tooltip-color;
-        background-color: $tooltip-bg;
+        color: $tooltip-bg;
+        background-color: $widget-text;
         @include border-radius($border-radius);
     }
 
