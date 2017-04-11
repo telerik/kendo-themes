@@ -44,6 +44,12 @@
     // Header
     .k-grid-header {
         @include appearance( header );
+
+        .k-i-sort-asc-sm,
+        .k-i-sort-desc-sm,
+        .k-sort-order {
+            color: $accent;
+        }
     }
     .k-grid-footer {
         @include appearance( header );
