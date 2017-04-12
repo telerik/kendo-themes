@@ -1,10 +1,13 @@
-$tooltip-text: darken($widget-bg, 16);
+$is-light: lightness($bg-color) > 50;
+
+$resolved-tooltip-text: if($is-light, $tooltip-color, $tooltip-bg);
+$resolved-tooltip-bg: if($is-light, $tooltip-bg, $tooltip-color);
 
 @include exports("tooltip/theme") {
 
     .k-tooltip {
-        color: $tooltip-bg;
-        background-color: $widget-text;
+        color: $resolved-tooltip-text;
+        background-color: $resolved-tooltip-bg;
         @include border-radius($border-radius);
     }
 
