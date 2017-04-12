@@ -110,8 +110,7 @@
             .k-upload-status {
                 position: absolute;
                 right: $cell-padding;
-                top: 50%;
-                margin-top: -0.5*$line-height-em;
+                top: $cell-padding;
 
                 .k-button {
                     padding: 0;
