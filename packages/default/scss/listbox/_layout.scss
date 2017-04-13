@@ -8,7 +8,7 @@
         height: $listbox-default-height;
         background-color: transparent;
         border-width: 0;
-        display: flex;
+        display: inline-flex;
 
         .k-listbox-toolbar ul {
             display: flex;
@@ -71,5 +71,22 @@
             border-width: 1px;
             border-style: solid;
         }
+
+        .k-drop-hint {
+            border-top-width: 1px;
+            border-top-style: solid;
+        }
+
+        .k-ghost {
+            opacity: .5;
+        }
+    }
+
+    .k-item.k-drag-clue {
+        border-width: 0;
+        border-radius: 0;
+        font-size: $font-size;
+        padding: $list-item-padding-y $list-item-padding-x;
+        line-height: $line-height-em;
     }
 }

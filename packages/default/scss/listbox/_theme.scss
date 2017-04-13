@@ -5,5 +5,13 @@
             border-color: $widget-border;
             color: $widget-text;
         }
+        .k-drop-hint {
+            border-top-color: $accent;
+        }
+    }
+
+    .k-item.k-drag-clue {
+        color: $list-item-selected-text;
+        background-color: $list-item-selected-bg;
     }
 }
