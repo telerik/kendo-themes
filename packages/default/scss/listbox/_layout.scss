@@ -83,10 +83,10 @@
     }
 
     .k-item.k-drag-clue {
-        border-width: 0;
-        border-radius: 0;
-        font-size: $font-size;
         padding: $list-item-padding-y $list-item-padding-x;
         line-height: $line-height-em;
+        font-size: $font-size;
+        border-width: 0;
+        border-radius: 0;
     }
 }
