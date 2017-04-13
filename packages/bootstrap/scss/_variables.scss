@@ -306,9 +306,9 @@ $node-bg: $base-bg !default;
 $node-border: $base-border !default;
 $node-gradient: none !default;
 
-$node-hovered-text: $hovered-text !default;
-$node-hovered-bg: $hovered-bg !default;
-$node-hovered-border: $hovered-border !default;
+$node-hovered-text: $button-hovered-text !default;
+$node-hovered-bg: $button-hovered-bg !default;
+$node-hovered-border: $button-hovered-border !default;
 $node-hovered-gradient: none !default;
 
 $node-selected-text: $selected-text !default;
@@ -318,8 +318,8 @@ $node-selected-gradient: none !default;
 
 
 // List item
-$list-item-text: $node-text !default;
-$list-item-bg: $node-bg !default;
+$list-item-text: $panel-text !default;
+$list-item-bg: $panel-bg !default;
 
 $list-item-hovered-text: $dropdown-link-hover-color !default;
 $list-item-hovered-bg: $dropdown-link-hover-bg !default;
