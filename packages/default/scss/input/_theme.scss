@@ -50,6 +50,13 @@
             background-color: $accent;
             color: $accent-contrast;
         }
+
+        .k-state-disabled & {
+            &::selection {
+                color: $input-text;
+                background-color: transparent;
+            }
+        }
     }
 
     .k-radio + .k-radio-label {

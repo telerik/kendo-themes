@@ -22,21 +22,22 @@
             // Focused state
             &:focus,
             &.k-state-focused {
-                @include appearance( focused-button );
-
                 .k-icon {
                     opacity: 1;
                 }
             }
         }
 
-        &:hover,
-        &.k-state-hover {
-            @include appearance( hovered-input );
+        &.k-state-focused {
+            .k-multiselect-wrap {
+                @include appearance( focused-input );
+            }
         }
-
-        &.k-state-focused { @include appearance( focused-input ); }
-        &.k-disabled { @include appearance( disabled-input ); }
+        &.k-disabled {
+            .k-multiselect-wrap {
+                @include appearance( disabled-input );
+            }
+        }
 
         .k-i-loading {
             background-color: $input-bg;
@@ -44,8 +45,14 @@
     }
 
     .k-multiselect-wrap {
+        @include appearance( input );
+
         > .k-readonly {
             opacity: .6;
+        }
+
+        &:hover {
+            @include appearance( hovered-input );
         }
     }
 

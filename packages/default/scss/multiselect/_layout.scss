@@ -3,8 +3,6 @@
     // Base
     .k-multiselect {
         @include border-radius( $border-radius );
-        border-width: 1px;
-        border-style: solid;
         width: 100%;
 
         // Compact
@@ -42,10 +40,8 @@
         }
     }
 
-
     .k-multiselect-wrap {
         min-height: calc( #{$input-inner-calc-size} );
-        border-width: 0;
         padding-right: ($padding-x * 3);
         cursor: text;
 
