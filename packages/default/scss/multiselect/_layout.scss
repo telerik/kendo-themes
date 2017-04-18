@@ -30,6 +30,11 @@
 
                 .k-button {
                     margin: $padding-y-sm $padding-y-sm 0 0;
+
+                    .k-select {
+                        margin-left: 0;
+                        margin-right: $padding-x;
+                    }
                 }
 
                 .k-i-loading {
