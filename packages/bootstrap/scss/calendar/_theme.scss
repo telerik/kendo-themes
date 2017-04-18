@@ -25,6 +25,16 @@
             }
         }
 
+        .k-state-selected {
+            color: inherit;
+            background: transparent;
+            border-color: transparent;
+        }
+
+        .k-weekend {
+            background: darken( $widget-bg, 5 );
+        }
+
 
         // Content
         .k-content {}
@@ -40,9 +50,9 @@
         .k-content .k-today .k-link {
             box-shadow: inset 0 0 0 1px $accent;
         }
-        .k-content .k-weekend {
-            background: darken( $widget-bg, 5 );
-        }
+            .k-content .k-today.k-state-focused .k-link {
+                box-shadow: inset 0 0 0 1px $accent, inset $button-focused-shadow;
+            }
         .k-content td:hover .k-link,
         .k-content .k-state-hover .k-link {
             @include appearance( hovered-node );
@@ -51,8 +61,17 @@
             @include appearance( selected-node );
         }
         .k-content .k-state-focused .k-link {
-            border-color: $node-selected-border;
-            box-shadow: inset 0 0 5px $node-selected-border;
+            box-shadow: inset $button-focused-shadow;
+        }
+            .k-content .k-state-selected.k-state-focused .k-link {
+                box-shadow: inset 0 0 0 2px rgba($primary-button-pressed-border, 0.5);
+            }
+
+        // Infinite calendar
+        .k-calendar-monthview {
+            thead {
+                @include appearance( header );
+            }
         }
 
         // Infinite calendar
@@ -69,7 +88,7 @@
         .k-calendar-navigation {
             // border underneath highlight
             box-shadow: inset -1px 0 $base-border;
-            background-color: $header-bg;
+            background-color: $base-bg;
 
             .k-content > ul > li:hover {
                 color: $link-hover-text;
@@ -84,6 +103,7 @@
         .k-calendar-weekdays thead {
             background-color: $bg-color;
         }
+
     }
 
 }
