@@ -45,7 +45,7 @@
         }
 
         &[dir='rtl'] .k-input {
-            padding-left: $icon-size + $padding-x;
+            padding-left: addTwo($icon-size, $padding-x);
             padding-right: $input-padding-x;
         }
     }
