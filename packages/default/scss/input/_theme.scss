@@ -17,7 +17,8 @@
     $focused-checked-shadow: 0 0 0 2px rgba($accent, .3) !default;
 
     .k-textbox,
-    .k-input.k-textbox {
+    .k-input.k-textbox,
+    .k-textarea {
         @include appearance( "input" );
 
         &:hover,
@@ -42,10 +43,15 @@
             background-color: $accent;
             color: $accent-contrast;
         }
+
+        &::placeholder {
+            color: rgba($input-text, .5);
+        }
     }
 
     .k-textbox,
-    .k-input {
+    .k-input,
+    .k-textarea {
         &::selection {
             background-color: $accent;
             color: $accent-contrast;
@@ -112,5 +118,31 @@
 
     fieldset legend {
         color: $header-text;
+    }
+
+    $form-fieldset-legend-text: darken($text-color, 13%) !default;
+
+    .k-form,
+    .k-form-inline {
+        color: $text-color;
+
+        fieldset {
+            legend {
+                color: $form-fieldset-legend-text;
+            }
+        }
+
+        .k-field-info {
+            color: lighten($text-color, 33%);
+        }
+
+        .k-alert-error {
+            color: $error;
+        }
+    }
+
+    .k-required,
+    .k-required.k-field-info {
+        color: $accent;
     }
 }
