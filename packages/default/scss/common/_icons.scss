@@ -223,6 +223,9 @@
     .k-i-subtitles::before {content: "\e209";}
     .k-i-playlist::before {content: "\e20a";}
     .k-i-audio::before {content: "\e20b";}
+    .k-i-play-sm::before {content: "\e20c";}
+    .k-i-pause-sm::before {content: "\e20d";}
+    .k-i-stop-sm::before {content: "\e20e";}
     .k-i-heart-outline::before {content: "\e300";}
     .k-i-fav-outline::before {content: "\e300";}
     .k-i-favorite-outline::before {content: "\e300";}
@@ -679,6 +682,7 @@
     .k-i-volume-low::before { @extend .k-i-volume-down; }
     .k-i-volume-high::before { @extend .k-i-volume-up; }
     .k-i-volume-mute::before { @extend .k-i-volume-off; }
+    .k-i-forward-sm::before { @extend .k-i-arrow-double-60-right; }
 
     .k-sprite {
         display: inline-block;
