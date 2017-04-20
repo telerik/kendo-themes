@@ -9,8 +9,15 @@
     $edit-cell-input-space: calc(-#{$cell-padding} - #{$input-border-width}) !default;
 
     .k-grid {
-        display: block;
+        display: flex;
+        flex-direction: column;
         position: relative;
+
+        .k-grid-container {
+            display: flex;
+            flex: 1 1 auto;
+            overflow: hidden;
+        }
 
         table {
             margin: 0;
