@@ -43,10 +43,6 @@
             background-color: $accent;
             color: $accent-contrast;
         }
-
-        &::placeholder {
-            color: rgba($input-text, .5);
-        }
     }
 
     .k-textbox,
@@ -62,6 +58,15 @@
                 color: $input-text;
                 background-color: transparent;
             }
+        }
+    }
+
+    .k-textbox,
+    .k-input,
+    .k-input.k-textbox,
+    .k-textarea {
+        &::placeholder {
+            color: rgba($input-text, .5);
         }
     }
 
