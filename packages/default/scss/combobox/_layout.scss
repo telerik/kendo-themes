@@ -41,7 +41,7 @@
 
     .k-combobox-clearable {
         .k-input {
-            padding-right: $icon-size + $padding-x;
+            padding-right: addTwo($icon-size, $padding-x);
         }
 
         &[dir='rtl'] .k-input {
