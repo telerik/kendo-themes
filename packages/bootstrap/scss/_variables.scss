@@ -139,7 +139,7 @@ $selected-border: darken( $selected-bg, 12% ) !default;
 /// The gradient background of selected items.
 $selected-gradient: none !default;
 
-$transition: all .2s ease !default;
+$transition: color .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease !default;
 
 /// The color for error messages and states.
 $success: $brand-success !default;
