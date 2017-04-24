@@ -6,6 +6,7 @@
     .k-listbox {
         width: $listbox-width;
         height: $listbox-default-height;
+        vertical-align: top;
         background-color: transparent;
         border-width: 0;
         display: inline-flex;
