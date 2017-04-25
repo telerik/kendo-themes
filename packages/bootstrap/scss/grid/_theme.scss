@@ -2,7 +2,13 @@
 
     // Theme
     .k-grid {
-
+        td,
+        .k-header,
+        .k-grid-content,
+        .k-grid-header-locked,
+        .k-grid-content-locked {
+            border-color: $grid-border;
+        }
         .k-alt {
             background-color: $grid-alt-bg;
         }
