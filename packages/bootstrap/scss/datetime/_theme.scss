@@ -70,7 +70,7 @@
                 color: $error;
                 right: $spacer * 2.5;
             }
-            
+
             &.k-state-invalid {
                 transition: none;
                 color: $error;
@@ -85,4 +85,25 @@
     // Datetimepicker
     .k-datetimepicker {}
 
+    // Dateinput
+    .k-dateinput {
+        // Normal state
+        .k-dateinput-wrap {
+            @include appearance( input );
+        }
+
+        .k-select {
+            @include appearance( button );
+
+            &:hover {
+                @include appearance( hovered-button );
+                border-color: $input-hovered-border;
+            }
+        }
+
+        // Focused state
+        .k-state-focused {
+            @include appearance( focused-input );
+        }
+    }
 }
