@@ -46,6 +46,12 @@ if (components) {
     entry = { 'custom': './build/custom.js' };
 }
 
+const compat = process.argv.indexOf('--env.twbs-compat') > -1;
+
+if (compat) {
+    entry = { 'twbs-compat': './build/twbs-compat.js' };
+}
+
 const inDevelopment = process.argv.find(v => v.includes('webpack-dev-server'))
 module.exports = require('@telerik/kendo-common-tasks')
     .webpackThemeConfig({ extract: true }, {

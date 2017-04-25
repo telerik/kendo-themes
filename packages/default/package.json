@@ -24,7 +24,8 @@
     "build": "webpack --optimize-minimize --bail",
     "watch": "webpack --watch",
     "embed-assets": "node build/embed-assets.js",
-    "test": "npm run lint && npm run build && npm run api-check",
+    "test": "npm run lint && npm run build && npm run api-check && npm run twbs-compat",
+    "twbs-compat": "webpack --env.twbs-compat",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "config": {
@@ -53,6 +54,7 @@
     }
   },
   "devDependencies": {
+    "bootstrap": "git://github.com/twbs/bootstrap.git#95f37e4c402df37db16781995ffa1592032df9c8",
     "@telerik/kendo-common-tasks": "^2.0.0",
     "cz-conventional-changelog": "^1.1.5",
     "ghooks": "^1.0.3",
