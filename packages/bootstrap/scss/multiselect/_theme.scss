@@ -10,9 +10,14 @@
         }
 
         &.k-state-focused {
-            @include appearance( focused-input );
+            .k-multiselect-wrap {
+                @include appearance( focused-input );
+            }
         }
 
     }
 
+    .k-multiselect-wrap {
+        @include appearance( input );
+    }
 }
