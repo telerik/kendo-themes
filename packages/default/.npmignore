@@ -1,7 +1,8 @@
 *.tgz
 .tmp/
 .travis.yml
-dist/*.js
+dist/*.*
+!dist/all.css
 examples
 sass-lint.yml
 tests
