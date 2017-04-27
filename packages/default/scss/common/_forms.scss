@@ -23,6 +23,10 @@
         .k-rtl & {
             text-align: right;
 
+            .k-select {
+                @include border-radius( $border-radius 0 0 $border-radius );
+            }
+
             .k-clear-value {
                 left: $padding-x;
                 right: auto;
