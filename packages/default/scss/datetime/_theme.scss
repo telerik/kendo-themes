@@ -18,6 +18,7 @@
         }
 
         // Hovered state
+        &:hover,
         .k-state-hover {
             @include appearance( hovered-input );
 

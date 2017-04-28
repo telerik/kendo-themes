@@ -30,6 +30,14 @@
                 }
             }
         }
+
+        .k-dateinput {
+            width: calc(100% - #{button-inner-size()});
+        }
+
+        .k-dateinput-wrap {
+            border: 0;
+        }
     }
 
     // Timepicker
