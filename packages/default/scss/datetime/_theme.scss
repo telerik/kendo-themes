@@ -84,6 +84,17 @@
             padding: 0;
             width: button-inner-size();
             border-width: 0;
+
+            &:hover {
+                @include appearance( hovered-button );
+            }
+
+            > .k-state-selected,
+            > .k-state-active {
+                color: darken($text-color, 25%);
+                @include appearance( hovered-button );
+                box-shadow: inset $button-focused-shadow;
+            }
         }
 
         // Hovered state
@@ -93,8 +104,8 @@
             .k-select { @include appearance( hovered-button ); }
         }
 
-        // Selected state
-        .k-state-active {
+        // Focused state
+        .k-state-focused {
             @include appearance( focused-input );
 
             .k-select { @include appearance( active-button ); }
