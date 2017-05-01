@@ -9,13 +9,16 @@
         left: 0;
         width: 100%;
         height: 100%;
+
+        .k-dialog {
+            position: relative;
+        }
     }
 
     .k-dialog {
         padding: 0;
         min-width: 450px;
         position: fixed;
-
 
         // Centered
         &.k-dialog-centered {
