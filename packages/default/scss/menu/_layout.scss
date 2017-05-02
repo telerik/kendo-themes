@@ -55,18 +55,6 @@
             overflow: hidden;
         }
 
-        // Compact
-        @include compact {
-
-            .k-link {
-                padding: $padding-y-sm $padding-x-sm;
-            }
-
-            .k-menu-group .k-item > .k-link {
-                padding: ($padding-y-sm / 2) $padding-x-sm;
-            }
-        }
-
     }
 
 
