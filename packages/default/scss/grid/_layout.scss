@@ -546,12 +546,13 @@
             text-overflow: clip;
         }
 
-        .k-widget,
-        .k-button,
-        .k-textbox {
-            margin-top: -$input-padding-y;
-            margin-bottom: -$input-padding-y;
-        }
+        // Commented in wait for a better approach
+        // .k-widget,
+        // .k-button,
+        // .k-textbox {
+        //     margin-top: -$input-padding-y;
+        //     margin-bottom: -$input-padding-y;
+        // }
     }
     .k-grid-edit-row,
     .k-edit-cell {
