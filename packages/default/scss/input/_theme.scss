@@ -32,7 +32,7 @@
             border-color: $input-focused-border;
         }
 
-        &:invalid,
+        &:invalid:not(.ng-valid),
         &.k-state-invalid,
         &.ng-invalid {
             color: $error;
