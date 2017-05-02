@@ -679,6 +679,40 @@ $modal-inner-padding: 1em;
             }
         }
 
+        .k-scheduler-views {
+            li:first-child + li { @include border-radius( 0 $border-radius $border-radius 0 ); }
+            li:last-child { @include border-radius( $border-radius 0 0 $border-radius ); }
+        }
+
+        .k-scheduler-navigation  {
+
+            .k-nav-today {
+                @include border-radius( 0 $border-radius $border-radius 0 );
+            }
+
+            .k-nav-next {
+                @include border-radius( $border-radius 0 0 $border-radius );
+            }
+
+            li + li {
+                margin-left: 0;
+                margin-right: -1px;
+            }
+        }
+
+        .k-nav-current .k-icon {
+            margin-right: 0;
+            margin-left: .4ex;
+        }
+
+
+        .k-scheduler-fullday {
+            .k-icon {
+                margin-right: 0;
+                margin-left: $icon-spacing;
+            }
+        }
+
         .k-scheduler-marquee .k-label-top {
             left: auto;
             right: 4px;
@@ -687,6 +721,10 @@ $modal-inner-padding: 1em;
         .k-scheduler-marquee .k-label-bottom {
             left: 4px;
             right: auto;
+        }
+
+        .k-scheduler-edit-form .k-scheduler-delete {
+            float: right;
         }
     }
 
