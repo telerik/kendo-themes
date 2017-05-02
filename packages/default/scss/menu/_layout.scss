@@ -33,11 +33,17 @@
                 margin-right: -$icon-spacing;
             }
 
+            .k-i-arrow-60-left,
             .k-i-arrow-60-right {
                 margin: (-$icon-size / 2) 0 0;
                 position: absolute;
                 top: 50%;
+            }
+            .k-i-arrow-60-right {
                 right: $icon-spacing;
+            }
+            .k-i-arrow-60-left {
+                left: $icon-spacing;
             }
         }
 
@@ -107,6 +113,28 @@
         .k-link {
             padding: $list-item-padding-y $list-item-padding-x;
             padding-right: addTwo( (2 * $list-item-padding-x), $icon-size);
+        }
+    }
+
+
+    // RTL
+    .k-rtl {
+
+        .k-menu .k-link {
+
+            .k-i-arrow-60-down {
+                margin-left: -$icon-spacing;
+                margin-right: $icon-spacing;
+            }
+        }
+
+        .k-menu-group,
+        .k-menu-vertical {
+
+            .k-link {
+                padding-right: $list-item-padding-x;
+                padding-left: addTwo( (2 * $list-item-padding-x), $icon-size);
+            }
         }
     }
 
