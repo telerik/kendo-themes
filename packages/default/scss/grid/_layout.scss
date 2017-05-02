@@ -13,6 +13,10 @@
         flex-direction: column;
         position: relative;
 
+        &.k-display-block {
+            display: block;
+        }
+
         .k-grid-container {
             display: flex;
             flex: 1 1 auto;
