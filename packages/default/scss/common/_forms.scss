@@ -138,12 +138,16 @@
     .k-autocomplete,
     .k-dropdown-wrap,
     .k-multiselect {
-        .k-clear-value {
-            display: none;
+        .k-clear-value,
+        .k-i-loading {
             position: absolute;
             right: $padding-x;
             top: 50%;
             margin-top: -.5em;
+        }
+
+        .k-clear-value {
+            display: none;
         }
 
         &.k-state-focused,
