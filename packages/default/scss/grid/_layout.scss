@@ -737,4 +737,21 @@
         margin: $spacer-y 0 ($spacer / 2);
     }
 
+    // autofitting requires automatic table layout to measure sizes
+    .k-autofitting {
+        // sass-lint:disable-block no-important
+
+        width: auto !important;
+        table-layout: auto !important;
+
+        th.k-header,
+        td {
+            white-space: nowrap !important;
+        }
+
+        .k-detail-row {
+            display: none !important;
+        }
+    }
+
 }
