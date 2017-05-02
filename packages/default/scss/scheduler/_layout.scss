@@ -677,6 +677,15 @@ $modal-inner-padding: 1em;
                 right: auto;
                 left: 0;
             }
+
+            .k-event-actions {
+                right: auto;
+                left: 2px;
+            }
+
+            .k-event-actions:first-child {
+                float: right;
+            }
         }
 
         .k-scheduler-views {
