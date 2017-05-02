@@ -8,6 +8,14 @@
             right: $padding-x;
         }
 
+        .k-rtl &,
+        &[dir='rtl'] {
+            .k-i-warning {
+                right: auto;
+                left: $padding-x;
+            }
+        }
+
         &.k-state-invalid {
             .k-i-warning {
                 display: inline-block;
