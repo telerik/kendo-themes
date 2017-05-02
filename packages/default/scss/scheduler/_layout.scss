@@ -224,7 +224,7 @@ $modal-inner-padding: 1em;
         width: 100%;
         border-collapse: separate;
         border-spacing: 0;
-        flex: 1;
+        flex: 1 1 auto;
 
         > tbody > tr > td {
             padding: 0;
