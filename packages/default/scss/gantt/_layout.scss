@@ -431,3 +431,18 @@
     }
 
 }
+
+
+@include exports("gantt/rtl") {
+
+    .k-rtl {
+
+        .k-gantt-views {
+            float: left;
+        }
+
+        .k-gantt-actions {
+            float: right;
+        }
+    }
+}

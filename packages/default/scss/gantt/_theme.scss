@@ -145,3 +145,13 @@
     }
 
 }
+
+
+@include exports("gantt/theme-rtl") {
+
+    // View switcher
+    .k-gantt-views {
+        li:first-child + li { @include border-radius( 0 $border-radius $border-radius 0 ); }
+        li:last-child { @include border-radius( $border-radius 0 0 $border-radius ); }
+    }
+}
