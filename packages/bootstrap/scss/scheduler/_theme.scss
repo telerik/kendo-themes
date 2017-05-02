@@ -74,6 +74,7 @@
 
     // Appointments
     .k-event {
+        @include appearance( selected-node );
         @include border-radius( $border-radius );
     }
     .k-event-inverse {
