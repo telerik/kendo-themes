@@ -18,17 +18,23 @@
         }
 
         > .k-i-close {
+            margin: 0;
             position: absolute;
             top: $spacer-y;
             right: $alert-padding-x / 2;
-            margin-right: 0;
         }
     }
 
     .k-rtl .k-notification-wrap {
         padding: $alert-padding-y $alert-padding-x $alert-padding-y $alert-padding-x * 2;
 
-        & > .k-i-close {
+        > .k-icon {
+            margin-right: 0;
+            margin-left: $padding-x;
+        }
+
+        > .k-i-close {
+            margin: 0;
             right: auto;
             left: $padding-x-sm;
         }
