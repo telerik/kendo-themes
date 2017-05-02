@@ -71,4 +71,37 @@
 
     }
 
+
+
+
+    // RTL
+    .k-rtl .k-treeview {
+
+        // Items
+        .k-item {
+            padding-left: 0;
+            padding-right: $treeview-indent;
+        }
+
+        // Expand / collapse
+        .k-i-expand,
+        .k-i-collapse {
+            margin-left: 0;
+            margin-right: -$treeview-indent;
+        }
+
+        // Other content
+        .k-checkbox-wrapper {
+            margin-left: $icon-spacing;
+            margin-right: 0;
+        }
+        .k-in .k-icon,
+        .k-in .k-image,
+        .k-in .k-sprite {
+            margin-left: $icon-spacing;
+            margin-right: 0;
+        }
+
+    }
+
 }
