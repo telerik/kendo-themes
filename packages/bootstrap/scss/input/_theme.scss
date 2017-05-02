@@ -32,7 +32,7 @@
 
         // Focused
         &:focus,
-        &.k-state-focus {
+        &.k-state-focused {
             border-color: $input-focused-border;
             box-shadow: none;
         }

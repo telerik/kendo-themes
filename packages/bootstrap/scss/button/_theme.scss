@@ -11,7 +11,7 @@
 
         // Focused
         &:focus,
-        &.k-state-focus {
+        &.k-state-focused {
             box-shadow: $button-focused-shadow;
         }
 
@@ -34,7 +34,7 @@
 
         // Focused
         &:focus,
-        &.k-state-focus {
+        &.k-state-focused {
             box-shadow: $primary-button-focused-shadow;
         }
 
@@ -77,7 +77,7 @@
         .k-button {
 
             &:focus,
-            &.k-state-focus {
+            &.k-state-focused {
                 z-index: 2;
             }
 
@@ -124,7 +124,7 @@
 
         // Focused
         &:focus,
-        &.k-state-focus {
+        &.k-state-focused {
             border-color: $button-border;
             box-shadow: $button-focused-shadow;
         }
@@ -148,7 +148,7 @@
 
         // Focused
         &:focus,
-        &.k-state-focus {
+        &.k-state-focused {
             border-color: $primary-button-border;
             box-shadow: $primary-button-focused-shadow;
         }
