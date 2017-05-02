@@ -68,12 +68,16 @@
 
 
     // Content
-    .k-window-content {
+    .k-window-content,
+    .k-prompt-container {
         padding: $window-inner-padding-y $window-inner-padding-x;
         outline: 0;
         overflow: auto;
         position: relative;
         flex: 1 1 auto;
+    }
+    .k-window-content + .k-prompt-container {
+        margin-top: -($window-inner-padding-y / 2);
     }
 
 }
