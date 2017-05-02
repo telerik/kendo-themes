@@ -546,13 +546,20 @@
             text-overflow: clip;
         }
 
-        // Commented in wait for a better approach
-        // .k-widget,
-        // .k-button,
-        // .k-textbox {
-        //     margin-top: -$input-padding-y;
-        //     margin-bottom: -$input-padding-y;
-        // }
+        .k-widget,
+        .k-button,
+        .k-textbox,
+        .k-input.k-textbox {
+            height: auto;
+            // Commented out pending a better approach
+            //     margin-top: -$input-padding-y;
+            //     margin-bottom: -$input-padding-y;
+        }
+
+        .k-edit-cell {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
     }
     .k-grid-edit-row,
     .k-edit-cell {
