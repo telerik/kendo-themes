@@ -28,10 +28,15 @@
                 padding: $nav-item-padding-y $nav-item-padding-x;
                 color: inherit;
                 cursor: pointer;
-                display: flex;
+                display: inline-flex;
+                flex: 1 1 0;
                 flex-direction: row;
                 align-content: center;
                 align-items: center;
+            }
+            .k-item .k-link[data-type="remove"] {
+                padding: $nav-item-padding-y;
+                flex: none;
             }
         }
 
