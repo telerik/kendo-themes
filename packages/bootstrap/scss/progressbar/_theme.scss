@@ -1,4 +1,12 @@
+@mixin gradient-striped($color: rgba(255,255,255,.15), $angle: 45deg) {
+    background-image: linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
+}
 @include exports("progressbar/theme") {
+
+    @keyframes progress-bar-stripes {
+        from { background-position: $progress-height 0; }
+        to { background-position: 0 0; }
+    }
 
     // Theme
     .k-progressbar {
@@ -19,6 +27,18 @@
         > ul {}
         .k-item {
             border-color: $body-bg;
+        }
+    }
+
+    .k-progressbar-indeterminate {
+        @include gradient-striped();
+        background-color: $progress-fill-bg;
+        background-size: $progress-height $progress-height;
+        animation: progress-bar-stripes $progress-bar-animation-timing;
+
+        .k-progress-status-wrap,
+        .k-state-selected {
+            display: none;
         }
     }
 }
