@@ -83,6 +83,10 @@
         }
     }
 
+    .k-item {
+        cursor: default;
+    }
+
     .k-item.k-drag-clue {
         padding: $list-item-padding-y $list-item-padding-x;
         line-height: $line-height-em;
