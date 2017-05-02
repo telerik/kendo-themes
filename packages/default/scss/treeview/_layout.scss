@@ -69,18 +69,6 @@
             margin-right: $icon-spacing;
         }
 
-
-
-
-        // Compact
-        @include compact {
-
-            // Link
-            .k-in {
-                padding: $button-padding-y-sm;
-            }
-
-        }
     }
 
 }
