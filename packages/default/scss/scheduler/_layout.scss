@@ -664,6 +664,30 @@ $modal-inner-padding: 1em;
             border-right-width: 0;
             border-left-width: 1px;
         }
+
+        .k-event {
+            text-align: right;
+
+            .k-resize-w {
+                left: auto;
+                right: 0;
+            }
+
+            .k-resize-e {
+                right: auto;
+                left: 0;
+            }
+        }
+
+        .k-scheduler-marquee .k-label-top {
+            left: auto;
+            right: 4px;
+        }
+
+        .k-scheduler-marquee .k-label-bottom {
+            left: 4px;
+            right: auto;
+        }
     }
 
 }
