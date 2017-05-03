@@ -87,3 +87,27 @@
     }
 
 }
+
+
+
+
+@include exports( "spreadsheet/tools/theme" ) {
+
+    .k-spreadsheet-popup {
+
+        // Buttons
+        .k-button {}
+
+        .k-button:hover,
+        .k-button.k-state-hover {
+            @include appearance( hovered-list-item );
+        }
+        .k-button:active,
+        .k-button.k-state-active,
+        .k-button.k-state-selected {
+            @include appearance( selected-list-item );
+        }
+
+    }
+
+}
