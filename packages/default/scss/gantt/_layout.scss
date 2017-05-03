@@ -193,7 +193,7 @@
     }
     .k-task-wrap {
         margin: 0 -1.5em;
-        padding: 5px 25px;
+        padding: 5px 21px;
         display: inline-flex;
         flex-direction: row;
         align-items: center;
@@ -205,7 +205,7 @@
     }
     .k-task {
         position: relative;
-        flex: 1;
+        flex: 1 1 auto;
     }
     .k-task-dot {
         width: 16px;
@@ -452,7 +452,7 @@
         }
 
         .k-task-wrap {
-            margin: 0 -2.1em;
+            margin: 0 -1.9em;
         }
 
         .k-gantt-dependencies {
