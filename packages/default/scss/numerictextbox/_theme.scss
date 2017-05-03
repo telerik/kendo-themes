@@ -42,6 +42,11 @@
     .k-numeric-wrap.k-state-invalid {
         border-color: $error;
         color: $error;
+
+        .k-i-arrow-60-down,
+        .k-i-arrow-60-up {
+            color: $error;
+        }
     }
 
 }
