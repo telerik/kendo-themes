@@ -454,12 +454,6 @@
         .k-task-wrap {
             margin: 0 -1.9em;
         }
-
-        .k-gantt-dependencies {
-            left: auto;
-            right: 0;
-        }
-
         .k-timeline .k-gantt-tasks tbody {
             text-align: left;
         }
@@ -467,6 +461,22 @@
         .k-task-content {
             text-align: right;
         }
+
+        .k-task-complete {
+            left: auto;
+            right: 0;
+        }
+
+        .k-task-draghandle {
+            margin-left: 0;
+            margin-right: 16px;
+        }
+
+        .k-gantt-dependencies {
+            left: auto;
+            right: 0;
+        }
+
 
         .k-grid-header .k-header {
             position: static;
