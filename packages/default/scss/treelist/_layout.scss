@@ -5,6 +5,10 @@
 
     // Base
     .k-treelist {
+        &.k-display-block.k-grid-lockedcolumns {
+            display: block;
+        }
+
         .k-status {
             padding: .4em .6em;
             line-height: 1.6em;
