@@ -2,9 +2,6 @@
 
     // Base
     .k-numerictextbox {
-
-        .k-link-decrease > .k-icon { transform: translateY(-$padding-y / 2); }
-
         // Compact
         @include compact {
             .k-input {

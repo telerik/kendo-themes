@@ -25,6 +25,8 @@
             }
         }
 
+        .k-link-decrease > .k-icon { transform: translateY(-$padding-y / 2); }
+
         // Hovered state
         .k-state-hover {
             @include appearance( hovered-input );
