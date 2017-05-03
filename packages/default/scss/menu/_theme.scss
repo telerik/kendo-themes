@@ -41,4 +41,35 @@
             }
         }
     }
+
+
+    // Scrolling
+    .k-menu-scroll-button {
+        border-color: $widget-border;
+        color: $link-text;
+        background: $bg-color;
+
+        &:hover {
+            border-color: $widget-border;
+            color: $link-hover-text;
+            background: $bg-color;
+        }
+
+        &.k-scroll-left {
+            width: 16px;
+            border-right-width: 1px;
+        }
+        &.k-scroll-right {
+            width: 16px;
+            border-left-width: 1px;
+        }
+        &.k-scroll-up {
+            height: 16px;
+            border-bottom-width: 1px;
+        }
+        &.k-scroll-down {
+            height: 16px;
+            border-top-width: 1px;
+        }
+    }
 }

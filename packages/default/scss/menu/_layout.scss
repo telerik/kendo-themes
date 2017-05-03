@@ -113,6 +113,54 @@
         .k-link {
             padding: $list-item-padding-y $list-item-padding-x;
             padding-right: addTwo( (2 * $list-item-padding-x), $icon-size);
+            color: inherit;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+        }
+    }
+
+
+    // Scrolling
+    .k-menu-scroll-wrapper {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        position: relative;
+
+        .k-menu {
+            overflow: hidden;
+        }
+    }
+    .k-menu-scroll-button {
+        position: absolute;
+        border-width: 0;
+        border-radius: 0;
+        border-color: inherit;
+        background: inherit;
+        background-clip: border-box;
+        color: inherit;
+
+        &.k-scroll-left {
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+        &.k-scroll-right {
+            top: 0;
+            right: 0;
+            height: 100%;
+        }
+        &.k-scroll-up {
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        &.k-scroll-down {
+            bottom: 0;
+            left: 0;
+            width: 100%;
         }
     }
 
