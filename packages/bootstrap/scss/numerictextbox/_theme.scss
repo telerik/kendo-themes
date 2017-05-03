@@ -31,7 +31,9 @@
             @include appearance( pressed-button );
         }
 
-        .k-link-increase > .k-icon { transform: translateY($button-padding-y / 4); }
+
+        .k-link-increase > .k-icon { transform: translateY($button-padding-y / 2); }
+        .k-link-decrease > .k-icon { transform: translateY(-$padding-y / 4); }
 
         .k-numeric-wrap.k-state-invalid {
             border-color: $error;
