@@ -373,6 +373,11 @@
     }
     .k-spreadsheet .k-selection-wrapper .k-spreadsheet-editor-button {
         position: absolute;
+        padding: 0;
+    }
+
+    .k-spreadsheet .k-auto-fill {
+        position: absolute;
     }
 
 
