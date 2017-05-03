@@ -1,5 +1,5 @@
 // Add two
-@function addTwo( $one, $two, $multiplier: 1 ) {
+@function add-two( $one, $two, $multiplier: 1 ) {
     $_unit-1: unit($one);
     $_unit-2: unit($two);
 
@@ -16,7 +16,7 @@
 }
 
 
-@function addThree( $one, $two, $three, $multiplier: 1 ) {
+@function add-three( $one, $two, $three, $multiplier: 1 ) {
     $_unit-1: unit($one);
     $_unit-2: unit($two);
     $_unit-3: unit($three);

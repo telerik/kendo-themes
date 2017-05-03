@@ -113,7 +113,7 @@
 
         .k-link {
             padding: $list-item-padding-y $list-item-padding-x;
-            padding-right: addTwo( (2 * $list-item-padding-x), $icon-size);
+            padding-right: add-two( (2 * $list-item-padding-x), $icon-size);
             color: inherit;
             display: flex;
             flex-direction: row;
@@ -183,7 +183,7 @@
 
             .k-link {
                 padding-right: $list-item-padding-x;
-                padding-left: addTwo( (2 * $list-item-padding-x), $icon-size);
+                padding-left: add-two( (2 * $list-item-padding-x), $icon-size);
             }
         }
     }

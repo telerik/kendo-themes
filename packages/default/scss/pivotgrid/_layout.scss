@@ -14,7 +14,7 @@
     .k-fieldselector .k-list li.k-item {
         @include border-radius( $border-radius );
         padding: $button-padding-y $button-padding-x;
-        padding-right: addTwo( ($button-padding-x * 2), ($icon-size * 2) );
+        padding-right: add-two( ($button-padding-x * 2), ($icon-size * 2) );
         font-size: $font-size;
         line-height: $form-line-height;
         text-align: left;

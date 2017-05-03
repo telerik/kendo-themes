@@ -88,7 +88,7 @@
         .k-group-col,
         .k-hierarchy-col {
             padding: 0;
-            width: $icon-size*2;
+            width: ($icon-size * 2);
         }
 
         .k-grouping-row p {
@@ -109,8 +109,8 @@
         }
 
         .k-grouping-row .k-icon {
-            margin-left: addTwo(-1*$cell-padding-x, $icon-size/2);
-            margin-right: $icon-size/2;
+            margin-left: add-two(-1 * $cell-padding-x, $icon-size / 2);
+            margin-right: $icon-size / 2;
         }
 
         .k-group-footer td {

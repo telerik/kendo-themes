@@ -112,7 +112,7 @@
         display: block;
         position: relative;
         padding: $padding-x;
-        height: addThree(4 * $padding-y, $form-line-height-em, 2 * $button-padding-y);
+        height: add-three(4 * $padding-y, $form-line-height-em, 2 * $button-padding-y);
         box-sizing: border-box;
 
         > .k-textbox {

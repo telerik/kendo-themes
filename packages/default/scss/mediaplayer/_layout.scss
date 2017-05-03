@@ -74,7 +74,9 @@
         left: 0;
     }
     .k-mediaplayer-seekbar .k-slider-track {
+        // sass-lint:disable no-important
         width: 100% !important;
+        // sass-lint:enable no-important
         border-radius: 0;
     }
 
