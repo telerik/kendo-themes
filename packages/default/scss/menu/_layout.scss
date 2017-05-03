@@ -135,13 +135,14 @@
         }
     }
     .k-menu-scroll-button {
-        position: absolute;
+        padding: 0;
         border-width: 0;
         border-radius: 0;
         border-color: inherit;
+        color: inherit;
         background: inherit;
         background-clip: border-box;
-        color: inherit;
+        position: absolute;
 
         &.k-scroll-left {
             top: 0;
