@@ -687,6 +687,10 @@ $modal-inner-padding: 1em;
                 float: right;
             }
         }
+        .k-scheduler-agendaview .k-task > .k-event-delete {
+            left: 2px;
+            right: auto;
+        }
 
         .k-scheduler-views {
             li:first-child + li { @include border-radius( 0 $border-radius $border-radius 0 ); }
