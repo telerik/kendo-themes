@@ -9,6 +9,6 @@ position: 1
 
 The following application demonstrates how the Kendo UI components for Angular look like when styled with the Kendo UI Bootstrap theme for Angular.
 
-{% meta height:2300 %}
+{% meta height:2300 theme:bootstrap %}
 {% embed_demo ../preview-app/ %}
 {% endmeta %}
