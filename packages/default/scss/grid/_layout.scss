@@ -218,7 +218,7 @@
             position: absolute;
             width: auto;
             padding: $padding-y $padding-x;
-            @include border-radius($border-radius);
+            border-radius: $border-radius;
 
             .k-callout {
                 display: block;

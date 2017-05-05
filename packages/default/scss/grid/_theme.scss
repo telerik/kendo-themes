@@ -96,7 +96,6 @@
         .k-tooltip.k-tooltip-validation {
             color: $tooltip-color;
             background-color: $tooltip-bg;
-            @include border-radius($border-radius);
 
             .k-callout-n {
                 border-bottom-color: $tooltip-bg;
