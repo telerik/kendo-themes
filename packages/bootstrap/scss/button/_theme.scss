@@ -101,7 +101,7 @@
             border-radius: $border-radius;
         }
         &:after {
-            border-radius: addTwo($border-radius, 2px);
+            border-radius: add-two($border-radius, 2px);
         }
 
         &:after {
