@@ -9,6 +9,9 @@
     $grid-grouping-row-text: $text-color !default;
     $grid-grouping-row-bg: darken($bg-color, 7%) !default;
 
+    $tooltip-color: $accent-contrast !default;
+    $tooltip-bg: $accent !default;
+
     .k-grid-header,
     .k-header,
     .k-grid-header-wrap,
@@ -87,6 +90,28 @@
 
             &::after {
                 background-color: $grid-chrome-text;
+            }
+        }
+
+        .k-tooltip.k-tooltip-validation {
+            color: $tooltip-color;
+            background-color: $tooltip-bg;
+            @include border-radius($border-radius);
+
+            .k-callout-n {
+                border-bottom-color: $tooltip-bg;
+            }
+
+            .k-callout-e {
+                border-left-color: $tooltip-bg;
+            }
+
+            .k-callout-s {
+                border-top-color: $tooltip-bg;
+            }
+
+            .k-callout-w {
+                border-right-color: $tooltip-bg;
             }
         }
     }

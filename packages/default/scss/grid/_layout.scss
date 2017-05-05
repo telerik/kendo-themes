@@ -212,6 +212,18 @@
                 }
             }
         }
+        
+        .k-tooltip.k-tooltip-validation {
+            display: block;
+            position: absolute;
+            width: auto;
+            padding: $padding-y $padding-x;
+            border-radius: $border-radius;
+
+            .k-callout {
+                display: block;
+            }
+        }
     }
 
     // Toolbar
