@@ -214,11 +214,11 @@
         }
 
         .k-tooltip.k-tooltip-validation {
-            display: block;
+            display: flex;
             position: absolute;
             width: auto;
             padding: $padding-y $padding-x;
-            border-radius: $border-radius;
+            @include border-radius($border-radius);
 
             .k-callout {
                 display: block;
