@@ -148,7 +148,7 @@
         opacity: .5;
     }
 
-    .k-checkbox:disabled + .k-checkbox-label:hover::before {
+    .k-checkbox:disabled + .k-checkbox-label::before {
         border-width: 1px;
         border-style: solid;
     }

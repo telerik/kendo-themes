@@ -42,6 +42,9 @@
 
         // Split button
         .k-split-button {
+            .k-button:hover {
+                z-index: 2;
+            }
 
             &:focus {
                 outline: none;

@@ -69,17 +69,10 @@
             }
         }
         .k-split-button {
-
             .k-button:hover,
             .k-button.k-state-hover {
                 @include appearance( hovered-button );
             }
-            .k-button:hover + .k-button {
-                border-left-color: $button-hovered-border;
-            }
-        }
-        .k-split-button .k-button:hover + .k-button {
-            border-left-color: $button-hovered-border;
         }
 
 
