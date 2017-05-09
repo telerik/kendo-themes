@@ -226,3 +226,83 @@
     }
 
 }
+
+@include exports("forms/integration-with-bootstrap-forms") {
+    $twbs-font-size-base: 1rem !default;
+    $twbs-input-padding-x: .75rem !default;
+    $twbs-input-padding-y: .5rem !default;
+    $twbs-input-line-height: 1.25 !default;
+
+    .k-widget.form-control {
+        padding: 0;
+    }
+
+    .k-widget.form-control,
+    .k-maskedtextbox.form-control .k-textbox,
+    .k-textbox.form-control {
+        width: 100%;
+    }
+
+    .k-autocomplete.form-control .k-input {
+        box-sizing: border-box;
+    }
+
+    .input-group {
+        .k-dateinput-wrap,
+        .k-dropdown-wrap,
+        .k-multiselect-wrap,
+        .k-numeric-wrap,
+        .k-picker-wrap,
+        .k-maskedtextbox .k-textbox {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+
+            .k-select {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+
+        .k-widget.form-control:not(:first-child):not(:last-child) {
+            .k-dateinput-wrap,
+            .k-dropdown-wrap,
+            .k-multiselect-wrap,
+            .k-numeric-wrap,
+            .k-picker-wrap,
+            > .k-textbox {
+                border-radius: 0;
+            }
+        }
+    }
+
+    .input-group-addon + .k-widget.form-control {
+        .k-dateinput-wrap,
+        .k-dropdown-wrap,
+        .k-multiselect-wrap,
+        .k-numeric-wrap,
+        .k-picker-wrap,
+        > .k-textbox {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+        }
+    }
+
+    .k-widget.form-control .k-input,
+    .k-maskedtextbox.form-control .k-textbox,
+    .k-textbox.form-control {
+        padding: $twbs-input-padding-y $twbs-input-padding-x;
+    }
+
+    $bootstrap-integration-input-height: ($twbs-input-padding-y * 2) + ($twbs-font-size-base * $twbs-input-line-height) !default;
+
+    .k-widget.form-control .k-input {
+        height: $bootstrap-integration-input-height;
+    }
+
+    .k-maskedtextbox.form-control .k-textbox,
+    .k-textbox.form-control {
+        height: calc(#{$bootstrap-integration-input-height} + 2px);
+    }
+}
