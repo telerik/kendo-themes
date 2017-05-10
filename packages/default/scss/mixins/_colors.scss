@@ -42,8 +42,17 @@
 }
 
 
-@function contrast($in, $black: #000000, $white: #ffffff) {
-    $gray: red(grayscale($in));
-    $out: if($gray > 128, $black, $white);
+@function yiq($color) {
+    $r: red($color);
+    $g: green($color);
+    $b: blue($color);
+
+    $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+    @return $yiq;
+}
+@function contrast($color, $dark: #000000, $light: #ffffff) {
+    $yiq: yiq($color);
+    $out: if($yiq >= 128, $dark, $light);
     @return $out;
 }
