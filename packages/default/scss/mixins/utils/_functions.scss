@@ -98,37 +98,3 @@
     // Fall back to calc
     @return calc( #{$_border} + #{$_padding} + #{$_line-height} );
 }
-
-
-
-
-@function try-darken( $color, $amount, $threshold: black ) {
-    $amount: if(unitless($amount), $amount, ($amount / 1%));
-
-    $result: darken( $color, $amount );
-    $alt-result: darken( $color, ($amount - 1) );
-
-    @if ($result == $threshold) and ($alt-result == $threshold) {
-        @return lighten( $color, $amount );
-    }
-    @return $result;
-}
-
-@function try-lighten( $color, $amount, $threshold: white ) {
-    $amount: if(unitless($amount), $amount, ($amount / 1%));
-
-    $result: lighten( $color, $amount );
-    $alt-result: lighten( $color, ($amount - 1) );
-
-    @if ($result == $threshold) and ($alt-result == $threshold) {
-        @return darken( $color, $amount );
-    }
-    @return $result;
-}
-
-
-@function contrast($in, $black: #000000, $white: #ffffff) {
-    $gray: red(grayscale($in));
-    $out: if($gray > 128, $black, $white);
-    @return $out;
-}
