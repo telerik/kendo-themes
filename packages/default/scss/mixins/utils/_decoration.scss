@@ -11,22 +11,3 @@
     background-color: transparent;
     background-image: none;
 }
-
-
-
-
-// Disabled
-@mixin disabled {
-    outline: none;
-    cursor: default;
-    opacity: .6;
-    filter: grayscale(.1);
-    pointer-events: none;
-}
-@include exports("placeholder/disabled") {
-    %disabled {
-        @if ( mixin-exists( disabled ) ) {
-            @include disabled;
-        }
-    }
-}
