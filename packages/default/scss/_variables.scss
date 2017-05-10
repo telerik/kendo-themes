@@ -1,6 +1,13 @@
 @import "mixins/colors";
 
 
+// Options
+$enable-rounded: true !default;
+$enable-shadows: true !default;
+$enable-gradients: true !default;
+$enable-transitions: true !default;
+
+
 // Fonts
 
 /// Base font size across all components.
