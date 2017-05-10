@@ -1,4 +1,5 @@
 @include exports("grid/theme") {
+    $grid-cell-focused-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .08) !default;
 
     // Theme
     .k-grid {
@@ -23,7 +24,7 @@
 
         td.k-state-focused,
         th.k-state-focused {
-            box-shadow: $list-item-focused-shadow;
+            box-shadow: $grid-cell-focused-shadow;
         }
 
         .k-tooltip.k-tooltip-validation {
