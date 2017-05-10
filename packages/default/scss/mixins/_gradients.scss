@@ -1,6 +1,5 @@
-// Linear gradient
 @mixin linear-gradient( $gradient: null ) {
-    @if $gradient {
+    @if $gradient and $enable-gradients {
         @if $gradient == none {
             background-image: none
         }
