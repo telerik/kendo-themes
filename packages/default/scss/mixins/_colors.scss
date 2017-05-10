@@ -1,3 +1,22 @@
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint( $color, $percentage: 10 ) {
+    @return mix( white, $color, $percentage );
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade( $color, $percentage: 10 ) {
+    @return mix( black, $color, $percentage );
+}
+
+
 @function try-darken( $color, $amount, $threshold: black ) {
     $amount: if(unitless($amount), $amount, ($amount / 1%));
 
