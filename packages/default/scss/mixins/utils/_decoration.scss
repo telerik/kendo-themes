@@ -11,14 +11,6 @@
 }
 
 
-// Border radius
-@mixin border-radius( $radius: null ) {
-    @if $radius {
-        border-radius: $radius;
-    }
-}
-
-
 // Fill and outline
 @mixin fill( $color: null, $bg: null, $border: null, $gradient: null ) {
     border-color: $border;
