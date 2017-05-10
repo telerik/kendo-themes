@@ -1,0 +1,51 @@
+// Add two
+@function add-two( $one, $two, $multiplier: 1 ) {
+    $_unit-1: unit($one);
+    $_unit-2: unit($two);
+
+    $_one: $multiplier * $one;
+    $_two: $multiplier * $two;
+
+    // if all units are same type
+    @if $_unit-1 == $_unit-2 {
+        @return $_one + $_two;
+    }
+
+    // Fall back to calc
+    @return calc( #{$_one} + #{$_two} );
+}
+
+
+// Add three
+@function add-three( $one, $two, $three, $multiplier: 1 ) {
+    $_unit-1: unit($one);
+    $_unit-2: unit($two);
+    $_unit-3: unit($three);
+
+    $_one: $multiplier * $one;
+    $_two: $multiplier * $two;
+    $_three: $multiplier * $three;
+
+    // if all units are same type
+    @if $_unit-1 == $_unit-2 == $_unit-3 {
+        @return $_one + $_two + $_three;
+    }
+
+    // if $_unit-1 and $_unit-2 are same type
+    @if $_unit-1 == $_unit-2 {
+        @return calc( #{$_one + $_two} + #{$_three} );
+    }
+
+    // if $_unit-1 and $_unit-3 are same type
+    @if $_unit-1 == $_unit-3 {
+        @return calc( #{$_one + $_three} + #{$_two} );
+    }
+
+    // if $_unit-2 and $_unit-3 are same type
+    @if $_unit-2 == $_unit-3 {
+        @return calc( #{$_one} + #{$_two + $_three} );
+    }
+
+    // Fall back to calc
+    @return calc( #{$_one} + #{$_two} + #{$_three} );
+}
