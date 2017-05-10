@@ -1,0 +1,11 @@
+// Linear gradient
+@mixin linear-gradient( $gradient: null ) {
+    @if $gradient {
+        @if $gradient == none {
+            background-image: none
+        }
+        @else {
+            background-image: linear-gradient( $gradient );
+        }
+    }
+}
