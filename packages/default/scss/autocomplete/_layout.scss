@@ -31,19 +31,6 @@
             }
         }
 
-        // Compact
-        @include compact {
-
-            .k-input {
-                padding: $input-padding-y-sm $input-padding-x-sm;
-            }
-
-            .k-icon {
-                top: $input-padding-y-sm;
-                right: $input-padding-y-sm;
-            }
-        }
-
     }
 
 }

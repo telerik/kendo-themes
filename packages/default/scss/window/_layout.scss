@@ -16,20 +16,6 @@
             position: absolute;
             opacity: 0;
         }
-
-        // Compact
-        // sass-lint:disable mixins-before-declarations
-        @include compact {
-
-            .k-window-titlebar {
-                padding: $padding-y-sm $padding-x-sm;
-                line-height: $line-height;
-            }
-            .k-window-content {
-                padding: $padding-x-sm;
-            }
-        }
-        // sass-lint:enable mixins-before-declarations
     }
 
 

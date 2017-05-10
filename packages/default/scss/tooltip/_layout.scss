@@ -11,13 +11,6 @@ $tooltip-callout-size: 12px !default;
         background-repeat: repeat-x;
         position: absolute;
         z-index: 12000;
-
-        // Compact
-        // sass-lint:disable mixins-before-declarations
-        @include compact {
-            padding: ($padding-y-sm / 2) $padding-x-sm;
-        }
-        // sass-lint:enable mixins-before-declarations
     }
 
     .k-tooltip-closable {

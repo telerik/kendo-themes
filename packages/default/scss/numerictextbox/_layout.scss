@@ -2,15 +2,6 @@
 
     // Base
     .k-numerictextbox {
-        // Compact
-        @include compact {
-            .k-input {
-                padding: $input-padding-y-sm $input-padding-x-sm;
-            }
-            .k-link {
-                padding: 0 $button-padding-y-sm;
-            }
-        }
 
         .k-rtl &,
         &[dir='rtl'] {

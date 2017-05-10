@@ -28,10 +28,6 @@
         &[disabled] {
             @include disabled;
         }
-
-        @include compact {
-            font-size: $font-size-sm;
-        }
     }
     table.k-widget { display: table; }
 

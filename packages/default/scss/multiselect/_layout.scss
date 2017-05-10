@@ -5,11 +5,6 @@
         @include border-radius( $border-radius );
         width: 100%;
 
-        // Compact
-        @include compact {
-            padding: ($input-padding-y / 4);
-        }
-
         .k-loading-hidden {
             visibility: hidden;
         }

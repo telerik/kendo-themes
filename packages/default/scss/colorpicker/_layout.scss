@@ -56,19 +56,6 @@
             }
         }
 
-        .k-select {
-            .k-icon {}
-        }
-
-
-        // Compact
-        @include compact {
-            .k-selected-color,
-            .k-tool-icon,
-            .k-select {
-                padding: $button-padding-y-sm;
-            }
-        }
     }
 
 }

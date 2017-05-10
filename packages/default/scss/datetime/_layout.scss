@@ -3,17 +3,6 @@
     // Datepicker
     .k-datepicker {
 
-        // Compact
-        @include compact {
-            .k-input {
-                padding: $input-padding-y-sm $input-padding-x-sm;
-            }
-            .k-select {
-                padding: $button-padding-y-sm;
-            }
-        }
-
-
         .k-picker-wrap {
             .k-i-warning {
                 display: none;
@@ -41,15 +30,7 @@
     }
 
     // Timepicker
-    .k-timepicker {
-
-        // Compact
-        @include compact {
-            .k-input {
-                padding: $input-padding-y-sm $input-padding-x-sm;
-            }
-        }
-    }
+    .k-timepicker {}
 
     // Datetimepicker
     .k-datetimepicker {
@@ -67,16 +48,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        // Compact
-        @include compact {
-            .k-input {
-                padding: $input-padding-y-sm $input-padding-x-sm;
-            }
-            .k-link {
-                padding: $button-padding-y-sm;
-            }
         }
 
     }
@@ -105,16 +76,6 @@
             .k-i-warning {
                 left: $padding-x;
                 right: auto;
-            }
-        }
-
-        // Compact
-        @include compact {
-            .k-input {
-                padding: $input-padding-y-sm $input-padding-x-sm;
-            }
-            .k-link {
-                padding: 0 $button-padding-y-sm;
             }
         }
 

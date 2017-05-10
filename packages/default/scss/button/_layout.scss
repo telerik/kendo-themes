@@ -75,24 +75,6 @@
             padding: $button-padding-y;
         }
 
-
-
-
-        // Compact
-        @include compact {
-            padding: $button-padding-y-sm $button-padding-x-sm;
-            font-size: $font-size-sm;
-
-            &-icontext {
-                .k-icon {
-                    margin: 0 ($button-padding-x-sm / 2) 0 (-$button-padding-x-sm / 2);
-                }
-            }
-            &-icon {
-                padding: $button-padding-y-sm;
-            }
-        }
-
     }
 
 
@@ -109,13 +91,6 @@
             @include border-radius( 0 $border-radius $border-radius 0 );
             margin-left: -1px;
             padding: $button-padding-y;
-        }
-
-
-        @include compact {
-            .k-split-button-arrow {
-                padding: $button-padding-y-sm;
-            }
         }
 
         .k-widget {

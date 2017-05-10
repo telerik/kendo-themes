@@ -76,25 +76,6 @@
             margin-right: 5px;
         }
 
-
-        // Compact
-        @include compact {
-
-            // Links
-            > .k-item > .k-link {
-                padding: $padding-y-sm $padding-x-sm;
-            }
-            .k-panel > .k-item > .k-link {
-                padding: ($padding-y-sm / 2) $padding-x-sm;
-            }
-
-            // Expand collapse
-            .k-panelbar-collapse,
-            .k-panelbar-expand {
-                right: $padding-y-sm / 2;
-            }
-        }
-
         &[dir='rtl'],
         .k-rtl & {
             .k-panelbar-expand,

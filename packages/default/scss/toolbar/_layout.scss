@@ -79,35 +79,6 @@
             border-color: inherit;
             align-self: stretch;
         }
-
-
-
-
-        // Compact
-        @include compact {
-
-
-            // Button
-            .k-button {}
-
-            // Toggle button
-            .k-toggle-button {}
-
-            // Split button
-            .k-split-button {}
-
-            // Button group
-            .k-button-group {}
-
-            // Overflow anchor
-            .k-overflow-anchor {
-                padding: $button-padding-y-sm;
-            }
-
-            // Separator
-            .k-separator {}
-
-        }
     }
 
 
