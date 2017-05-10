@@ -1,0 +1,14 @@
+// Core
+@import "mixins/core/import-once";
+@import "mixins/core/placeholder-selectors";
+@import "mixins/core/data-uri";
+
+
+// Utils
+@import "mixins/utils/decoration";
+@import "mixins/utils/blend-modes";
+@import "mixins/utils/functions";
+
+
+// Appearance
+@import "mixins/appearance/all";
