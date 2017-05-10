@@ -16,6 +16,17 @@
   "publishConfig": {
     "registry": "https://registry.npm.telerik.com"
   },
+  "release": {
+    "branchTags": {
+      "develop": "dev"
+    },
+    "fallbackTags": {
+      "dev": "latest"
+    },
+    "verifyConditions": "./build/sr-verifyConditions",
+    "analyzeCommits": "./build/sr-analyzeCommits",
+    "verifyRelease": "./build/sr-verifyRelease"
+  },
   "scripts": {
     "lint": "sass-lint -v -c ./sass-lint.yml",
     "api": "sassdoc ./scss/",
