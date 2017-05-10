@@ -10,13 +10,6 @@
     }
 }
 
-// Box shadow
-@mixin box-shadow( $shadow: null ) {
-    @if $shadow {
-        box-shadow: $shadow;
-    }
-}
-
 
 // Border radius
 @mixin border-radius( $radius: null ) {
