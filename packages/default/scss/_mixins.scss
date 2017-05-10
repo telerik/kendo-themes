@@ -17,4 +17,8 @@
 
 
 // Appearance
-@import "mixins/appearance/all";
+@import "mixins/appearance";
+@import "mixins/widget";
+@import "mixins/button";
+@import "mixins/input";
+@import "mixins/node";
