@@ -5,6 +5,7 @@
         border-width: 0;
         color: inherit;
         background: none;
+        background-clip: padding-box;
 
         .k-item {
             color: $link-text;
