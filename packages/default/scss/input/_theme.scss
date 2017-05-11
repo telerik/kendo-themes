@@ -20,6 +20,7 @@
     .k-input.k-textbox,
     .k-textarea {
         @include appearance( "input" );
+        background-clip: padding-box;
 
         &:hover,
         &.k-state-hover {
