@@ -8,6 +8,7 @@
         // Normal state
         .k-picker-wrap {
             @include appearance( input );
+            background-clip: padding-box;
         }
 
         .k-select {
@@ -79,6 +80,7 @@
         // Normal state
         .k-dateinput-wrap {
             @include appearance( input );
+            background-clip: padding-box;
         }
         .k-select {
             @include appearance( button );
