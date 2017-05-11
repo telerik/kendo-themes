@@ -5,6 +5,12 @@
         @include appearance( toolbar );
         background-clip: padding-box;
 
+        .k-ie11 &,
+        .k-edge12 &,
+        .k-edge13 & {
+            background-clip: border-box;
+        }
+
 
         // Button normal state
         .k-button {
@@ -12,6 +18,12 @@
             color: inherit;
             background: none;
             background-clip: padding-box;
+
+            .k-ie11 &,
+            .k-edge12 &,
+            .k-edge13 & {
+                background-clip: border-box;
+            }
 
             &:not(.k-overflow-anchor) {
                 position: relative;

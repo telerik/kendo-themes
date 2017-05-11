@@ -4,12 +4,24 @@
 
     .k-splitter {
         background-clip: padding-box;
+
+        .k-ie11 &,
+        .k-edge12 &,
+        .k-edge13 & {
+            background-clip: border-box;
+        }
     }
 
     // Splitbar
     .k-splitbar {
         @include appearance( button );
         background-clip: padding-box;
+
+        .k-ie11 &,
+        .k-edge12 &,
+        .k-edge13 & {
+            background-clip: border-box;
+        }
 
         &:active,
         &.k-state-focused {

@@ -19,6 +19,12 @@ $switch-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
         border-color: $switch-border-color;
         background-clip: padding-box;
 
+        .k-ie11 &,
+        .k-edge12 &,
+        .k-edge13 & {
+            background-clip: border-box;
+        }
+
         &:hover {
             border-color: $switch-hover-border-color;
         }
@@ -38,6 +44,12 @@ $switch-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
         border-radius: 50%;
         background-clip: padding-box;
         box-shadow: $switch-handle-shadow;
+
+        .k-ie11 &,
+        .k-edge12 &,
+        .k-edge13 & {
+            background-clip: border-box;
+        }
     }
 
     .k-switch-on {

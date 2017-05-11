@@ -5,6 +5,12 @@
         @include appearance( button );
         background-clip: padding-box;
 
+        .k-ie11 &,
+        .k-edge12 &,
+        .k-edge13 & {
+            background-clip: border-box;
+        }
+
         // Hover state
         &:hover,
         &.k-state-hover {
@@ -73,6 +79,12 @@
     // Button group
     .k-button-group {
         background-clip: padding-box;
+
+        .k-ie11 &,
+        .k-edge12 &,
+        .k-edge13 & {
+            background-clip: border-box;
+        }
 
         // Focused state
         .k-button:focus,

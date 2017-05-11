@@ -11,6 +11,12 @@
         border-color: $progressbar-border;
         background-clip: padding-box;
 
+        .k-ie11 &,
+        .k-edge12 &,
+        .k-edge13 & {
+            background-clip: border-box;
+        }
+
         .k-state-selected {
             border-color: $progressbar-selected-border;
             background-color: $progressbar-selected-bg;

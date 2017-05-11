@@ -20,6 +20,12 @@
             background: none;
             background-clip: padding-box;
             line-height: 1;
+
+            .k-ie11 &,
+            .k-edge12 &,
+            .k-edge13 & {
+                background-clip: border-box;
+            }
         }
         .k-button:hover,
         .k-button.k-state-hover {

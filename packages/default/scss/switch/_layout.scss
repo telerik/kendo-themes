@@ -97,6 +97,5 @@ $switch-handle-size: (.8 * $switch-size) !default;
     .k-switch-wrapper {
         border-width: $switch-border-width;
         border-style: solid;
-        background-clip: content-box;
     }
 }

@@ -7,6 +7,12 @@
         background-color: $panel-bg;
         background-clip: padding-box;
 
+        .k-ie11 &,
+        .k-edge12 &,
+        .k-edge13 & {
+            background-clip: border-box;
+        }
+
         .k-content {
             color: $base-text;
             background-color: $base-bg;
@@ -15,6 +21,12 @@
         // Root
         > .k-item {
             background-clip: padding-box;
+
+            .k-ie11 &,
+            .k-edge12 &,
+            .k-edge13 & {
+                background-clip: border-box;
+            }
 
             > .k-link {
                 color: $link-text;

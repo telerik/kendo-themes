@@ -7,6 +7,12 @@
         background: none;
         background-clip: padding-box;
 
+        .k-ie11 &,
+        .k-edge12 &,
+        .k-edge13 & {
+            background-clip: border-box;
+        }
+
         .k-item {
             color: $link-text;
 

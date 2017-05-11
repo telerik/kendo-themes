@@ -5,6 +5,12 @@
             border-color: $widget-border;
             color: $widget-text;
             background-clip: padding-box;
+
+            .k-ie11 &,
+            .k-edge12 &,
+            .k-edge13 & {
+                background-clip: border-box;
+            }
         }
         .k-drop-hint {
             border-top-color: $accent;

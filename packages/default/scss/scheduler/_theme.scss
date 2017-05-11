@@ -7,6 +7,12 @@ $modal-header-border-color: #cccccc;
     // Appearance
     .k-scheduler {
         background-clip: padding-box;
+
+        .k-ie11 &,
+        .k-edge12 &,
+        .k-edge13 & {
+            background-clip: border-box;
+        }
     }
 
 
@@ -15,6 +21,12 @@ $modal-header-border-color: #cccccc;
     .k-scheduler-footer {
         @include appearance( header );
         background-clip: padding-box;
+
+        .k-ie11 &,
+        .k-edge12 &,
+        .k-edge13 & {
+            background-clip: border-box;
+        }
     }
 
 
@@ -23,6 +35,12 @@ $modal-header-border-color: #cccccc;
 
         li {
             background-clip: padding-box;
+
+            .k-ie11 &,
+            .k-edge12 &,
+            .k-edge13 & {
+                background-clip: border-box;
+            }
         }
 
         .k-nav-today,
@@ -42,6 +60,12 @@ $modal-header-border-color: #cccccc;
             @include appearance( button );
             background-clip: padding-box;
 
+            .k-ie11 &,
+            .k-edge12 &,
+            .k-edge13 & {
+                background-clip: border-box;
+            }
+
             &.k-state-hover { @include appearance( hovered-button ); }
             &.k-state-selected { @include fill( $selected-text, $selected-bg, $selected-border, none ); }
         }
@@ -54,6 +78,12 @@ $modal-header-border-color: #cccccc;
         li {
             @include appearance( button );
             background-clip: padding-box;
+
+            .k-ie11 &,
+            .k-edge12 &,
+            .k-edge13 & {
+                background-clip: border-box;
+            }
 
             &.k-state-hover { @include appearance( hovered-button ); }
         }

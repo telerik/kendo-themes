@@ -10,6 +10,12 @@ $list-container-no-data-text: rgba( $text-color, .5 ) !default;
     .k-popup {
         @include appearance( popup );
         background-clip: padding-box;
+
+        .k-ie11 &,
+        .k-edge12 &,
+        .k-edge13 & {
+            background-clip: border-box;
+        }
     }
     .k-popup > .k-group-header,
     .k-popup > .k-virtual-wrap > .k-group-header {

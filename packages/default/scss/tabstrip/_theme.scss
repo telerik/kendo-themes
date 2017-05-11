@@ -13,6 +13,12 @@ $tabstrip-disabled-color: darken($widget-bg, 27%) !default;
             color: $link-text;
             background-clip: padding-box;
 
+            .k-ie11 &,
+            .k-edge12 &,
+            .k-edge13 & {
+                background-clip: border-box;
+            }
+
             &:hover,
             &.k-state-hover {
                 color: $link-hover-text;
@@ -27,6 +33,12 @@ $tabstrip-disabled-color: darken($widget-bg, 27%) !default;
 
         > .k-content {
             background-clip: padding-box;
+
+            .k-ie11 &,
+            .k-edge12 &,
+            .k-edge13 & {
+                background-clip: border-box;
+            }
         }
     }
 

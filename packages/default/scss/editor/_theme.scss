@@ -8,6 +8,12 @@
 
         .k-editor-toolbar {}
         .k-editable-area {}
+
+        .k-ie11 &,
+        .k-edge12 &,
+        .k-edge13 & {
+            background-clip: border-box;
+        }
     }
 
     .k-overlay {
