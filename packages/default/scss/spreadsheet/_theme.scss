@@ -1,7 +1,9 @@
 @include exports("sreadsheet/theme") {
 
     // Spreadsheet
-    .k-spreadsheet {}
+    .k-spreadsheet {
+        background-clip: padding-box;
+    }
 
 
     // Header
