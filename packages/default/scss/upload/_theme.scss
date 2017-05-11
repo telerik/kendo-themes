@@ -17,6 +17,7 @@
     .k-upload {
         background-color: $upload-bg;
         border-color: $upload-border;
+        background-clip: padding-box;
 
         .k-upload-files,
         .k-upload-selected {
