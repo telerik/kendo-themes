@@ -4,6 +4,7 @@
             background-color: $widget-bg;
             border-color: $widget-border;
             color: $widget-text;
+            background-clip: padding-box;
         }
         .k-drop-hint {
             border-top-color: $accent;
