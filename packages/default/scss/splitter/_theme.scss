@@ -2,11 +2,14 @@
 
     $splitter-text: $widget-text;
 
-    .k-splitter {}
+    .k-splitter {
+        background-clip: padding-box;
+    }
 
     // Splitbar
     .k-splitbar {
         @include appearance( button );
+        background-clip: padding-box;
 
         &:active,
         &.k-state-focused {
