@@ -3,8 +3,11 @@
     // Appearance
     .k-multiselect {
         @include appearance( input );
+        background-clip: padding-box;
 
         li {
+            background-clip: padding-box;
+
             .k-icon {
                 opacity: .6;
                 cursor: pointer;
