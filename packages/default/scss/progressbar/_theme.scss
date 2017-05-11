@@ -9,6 +9,7 @@
     .k-progressbar {
         background-color: $progressbar-bg;
         border-color: $progressbar-border;
+        background-clip: padding-box;
 
         .k-state-selected {
             border-color: $progressbar-selected-border;
