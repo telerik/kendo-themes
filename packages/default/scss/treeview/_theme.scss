@@ -7,6 +7,7 @@
         // Link
         .k-in {
             @include border-radius( $border-radius );
+            background-clip: padding-box;
         }
         .k-in.k-state-hover {
             @include appearance( hovered-node );
