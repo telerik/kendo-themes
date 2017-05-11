@@ -1,7 +1,9 @@
 @include exports("mediaplayer/theme") {
 
     // Theme
-    .k-mediaplayer {}
+    .k-mediaplayer {
+        background-clip: padding-box;
+    }
 
 
     // Title bar
