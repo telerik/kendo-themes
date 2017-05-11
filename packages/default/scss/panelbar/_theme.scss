@@ -5,6 +5,7 @@
         border-color: $panel-border;
         color: $panel-text;
         background-color: $panel-bg;
+        background-clip: padding-box;
 
         .k-content {
             color: $base-text;
@@ -13,6 +14,8 @@
 
         // Root
         > .k-item {
+            background-clip: padding-box;
+
             > .k-link {
                 color: $link-text;
 
