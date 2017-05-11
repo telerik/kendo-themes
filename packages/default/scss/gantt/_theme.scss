@@ -1,7 +1,9 @@
 @include exports("gantt/theme") {
 
     // Theme
-    .k-gantt {}
+    .k-gantt {
+        background-clip: padding-box;
+    }
 
 
     // Header and footer
