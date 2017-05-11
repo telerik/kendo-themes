@@ -17,6 +17,7 @@ $switch-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
     .k-switch-container,
     .k-switch-wrapper {
         border-color: $switch-border-color;
+        background-clip: padding-box;
 
         &:hover {
             border-color: $switch-hover-border-color;
@@ -34,8 +35,9 @@ $switch-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 
     .k-switch-handle {
         @include appearance( button );
-        box-shadow: $switch-handle-shadow;
         border-radius: 50%;
+        background-clip: padding-box;
+        box-shadow: $switch-handle-shadow;
     }
 
     .k-switch-on {
