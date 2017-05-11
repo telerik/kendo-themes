@@ -51,6 +51,7 @@
     }
 
     .k-grid {
+        background-clip: padding-box;
 
         tr.k-alt {
             background-color: $grid-alt-bg;
