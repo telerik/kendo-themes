@@ -5,6 +5,7 @@
         // Normal state
         .k-dropdown-wrap {
             @include appearance( input );
+            background-clip: padding-box;
         }
 
         .k-select {
