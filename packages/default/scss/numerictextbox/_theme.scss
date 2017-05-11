@@ -6,6 +6,7 @@
         // Normal state
         .k-numeric-wrap {
             @include appearance( input );
+            background-clip: padding-box;
         }
         .k-select {
             @include appearance( button );
