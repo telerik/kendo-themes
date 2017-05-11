@@ -72,6 +72,7 @@
 
     // Button group
     .k-button-group {
+        background-clip: padding-box;
 
         // Focused state
         .k-button:focus,
