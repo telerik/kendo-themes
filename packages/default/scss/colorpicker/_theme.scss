@@ -5,6 +5,7 @@
         // Normal state
         .k-picker-wrap {
             @include appearance( button );
+            background-clip: padding-box;
         }
         .k-select {
             padding: 0;
