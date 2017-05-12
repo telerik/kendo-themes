@@ -1,6 +1,13 @@
 @import "~bootstrap/scss/variables";
 
 
+// Options
+$enable-rounded: $enable-rounded !default;
+$enable-shadows: $enable-shadows !default;
+$enable-gradients: $enable-gradients !default;
+$enable-transitions: $enable-transitions !default;
+
+
 // Fonts
 
 /// Base font size across all components.
