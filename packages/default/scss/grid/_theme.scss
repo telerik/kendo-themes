@@ -2,7 +2,7 @@
     $grid-chrome-text: $header-text !default;
     $grid-chrome-bg: $header-bg !default;
     $grid-chrome-border: $border-color !default;
-    $grid-alt-bg: darken( $panel-bg, 4 ) !default;
+    $grid-alt-bg: rgba( contrast( $panel-bg ), .04) !default;
 
     $grid-selected-text: $grid-chrome-text !default;
     $grid-selected-bg: rgba($selected-bg, .25) !default;
@@ -122,6 +122,10 @@
         }
     }
 
+    col.k-sorted,
+    th.k-sorted {
+        background-color: rgba( contrast( $panel-bg ), .02 );
+    }
 
     // Grid header / footer
     .k-grid-header {
