@@ -210,6 +210,10 @@ $calendar-line-height: 1.25 !default;
         width: auto;
         display: inline-flex;
         vertical-align: bottom;
+
+        .k-content {
+            text-align: center;
+        }
     }
 
     .k-calendar .k-content.k-scrollable {
