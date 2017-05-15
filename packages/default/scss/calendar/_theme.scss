@@ -102,6 +102,13 @@
         .k-calendar-weekdays thead {
             background-color: $bg-color;
         }
+
+        &[dir='rtl'],
+        .k-rtl & {
+            .k-calendar-navigation {
+                box-shadow: inset 1px 0 $base-border;
+            }
+        }
     }
 
 }

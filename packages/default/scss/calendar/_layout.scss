@@ -191,16 +191,20 @@ $calendar-line-height: 1.25 !default;
     $calendar-navigation-item-height: 2em;
     $calendar-navigation-width: 5em;
 
-    @mixin hide-scrollbar($margin-offset: 0, $dir: 'right') {
+    @mixin hide-scrollbar($dir: 'right') {
         // anything larger than the scrollbar width will do
         $max-scrollbar: 100px;
-        $margin: -$max-scrollbar - $margin-offset;
+        $scrollbar-size: 17px;
+        $margin: -$max-scrollbar - $scrollbar-size;
+
+        padding-right: $max-scrollbar;
+        padding-left: $max-scrollbar;
+        margin-left: -$max-scrollbar;
+        margin-right: -$max-scrollbar;
 
         @if ($dir == 'right') {
-            padding-right: $max-scrollbar;
             margin-right: $margin;
         } @else {
-            padding-left: $max-scrollbar;
             margin-left: $margin;
         }
     }
@@ -221,7 +225,20 @@ $calendar-line-height: 1.25 !default;
         overflow-x: hidden;
         overflow-y: auto;
 
-        @include hide-scrollbar(17px);
+        @include hide-scrollbar('right');
+    }
+
+    .k-calendar {
+        &[dir='rtl'],
+        .k-rtl & {
+            .k-content.k-scrollable {
+                @include hide-scrollbar('left');
+            }
+
+            .k-calendar-monthview .k-content th {
+                text-align: right;
+            }
+        }
     }
 
     // scoped in calendar until it is used elsewhere
