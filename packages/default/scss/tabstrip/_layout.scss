@@ -11,6 +11,7 @@
             border-color: inherit;
             display: flex;
             flex-direction: row;
+            flex: 0 0 auto;
             position: relative;
 
             .k-item {
@@ -48,6 +49,7 @@
             border-color: inherit;
             display: none;
             overflow: auto;
+            flex: 1 1 auto;
 
             &.k-state-active {
                 display: block;
