@@ -319,6 +319,19 @@ $calendar-line-height: 1.25 !default;
                 line-height: $calendar-weekdays-height;
             }
         }
+
+        &::after {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            content: " ";
+            height: 0;
+            line-height: 0;
+            z-index: 1;
+            width: 150%;
+            left: -25%;
+            box-shadow: 0 0 $calendar-cell-size ($calendar-cell-size / 2) $bg-color;
+        }
     }
 
     .k-calendar-navigation {
@@ -326,6 +339,24 @@ $calendar-line-height: 1.25 !default;
         display: block;
         overflow: hidden;
         width: $calendar-navigation-width;
+        z-index: 2;
+
+        &::before,
+        &::after {
+            display: block;
+            position: absolute;
+            content: " ";
+            height: 0;
+            line-height: 0;
+            z-index: 1;
+            width: 200%;
+            left: -50%;
+            $shadow-size: 3 * $calendar-navigation-item-height;
+            box-shadow: 0 0 $shadow-size ($shadow-size / 2) $base-bg;
+        }
+
+        &::before { top: 0; }
+        &::after { bottom: 0; }
 
         .k-content {
             background: transparent;
