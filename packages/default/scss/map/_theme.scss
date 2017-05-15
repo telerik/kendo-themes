@@ -1,0 +1,7 @@
+@include exports("map/theme") {
+    .k-map {
+        .k-marker {
+            color: $accent;
+        }
+    }
+}
