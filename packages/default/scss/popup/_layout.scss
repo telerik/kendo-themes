@@ -21,6 +21,10 @@
                     right: auto;
                 }
             }
+
+            .k-list-optionlabel {
+                text-align: right;
+            }
         }
     }
     .k-animation-container {
@@ -116,9 +120,8 @@
         box-sizing: border-box;
 
         > .k-textbox {
-            position: absolute;
             // remove the !important declaration when https://github.com/telerik/kendo-ui-core/issues/2617 is fixed
-            width: calc( 100% - #{ $padding-x * 2} ) !important; // sass-lint:disable-block no-important
+            width: 100% !important; // sass-lint:disable-block no-important
             box-sizing: border-box;
         }
 
