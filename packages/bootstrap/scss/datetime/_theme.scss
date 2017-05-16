@@ -63,18 +63,23 @@
     }
 
     // Datepicker
-    .k-datepicker {
-        .k-picker-wrap {
+    .k-datepicker,
+    .k-timepicker {
+        .k-i-warning {
+            color: $error;
+            right: $spacer * 2.5;
+        }
 
+        .k-state-invalid {
+            transition: none;
+            color: $error;
+            border-color: $error;
+        }
+
+        .k-rtl &,
+        &[dir='rtl'] {
             .k-i-warning {
-                color: $error;
-                right: $spacer * 2.5;
-            }
-
-            &.k-state-invalid {
-                transition: none;
-                color: $error;
-                border-color: $error;
+                left: $spacer * 2.5;
             }
         }
     }
