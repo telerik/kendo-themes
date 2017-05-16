@@ -2,12 +2,12 @@
 
     // Datepicker
     .k-datepicker,
+    .k-datetimepicker,
     .k-timepicker {
 
         .k-i-warning {
             display: none;
             position: absolute;
-            right: $spacer * 2;
             top: 50%;
             transform: translateY(-50%);
             overflow: visible;
@@ -30,8 +30,36 @@
         .k-rtl &,
         &[dir='rtl'] {
             .k-i-warning {
-                left: $spacer * 2;
                 right: auto;
+            }
+        }
+    }
+
+    .k-datepicker,
+    .k-timepicker {
+
+        .k-i-warning {
+            right: $spacer * 2;
+        }
+
+        .k-rtl &,
+        &[dir='rtl'] {
+            .k-i-warning {
+                left: $spacer * 2;
+            }
+        }
+    }
+
+    .k-datetimepicker {
+
+        .k-i-warning {
+            right: $spacer * 4;
+        }
+
+        .k-rtl &,
+        &[dir='rtl'] {
+            .k-i-warning {
+                left: $spacer * 4;
             }
         }
     }
