@@ -1,7 +1,8 @@
 @include exports("datetime/layout") {
 
     // Datepicker
-    .k-datepicker {
+    .k-datepicker,
+    .k-timepicker {
 
         .k-picker-wrap {
             .k-i-warning {
@@ -26,6 +27,14 @@
 
         .k-dateinput-wrap {
             border: 0;
+        }
+
+        .k-rtl &,
+        &[dir='rtl'] {
+            .k-i-warning {
+                left: $spacer * 2;
+                right: auto;
+            }
         }
     }
 
