@@ -4,20 +4,18 @@
     .k-datepicker,
     .k-timepicker {
 
-        .k-picker-wrap {
-            .k-i-warning {
-                display: none;
-                position: absolute;
-                right: $spacer * 2;
-                top: 50%;
-                transform: translateY(-50%);
-                overflow: visible;
-            }
+        .k-i-warning {
+            display: none;
+            position: absolute;
+            right: $spacer * 2;
+            top: 50%;
+            transform: translateY(-50%);
+            overflow: visible;
+        }
 
-            &.k-state-invalid {
-                .k-i-warning {
-                    display: inline-block;
-                }
+        .k-state-invalid {
+            .k-i-warning {
+                display: inline-block;
             }
         }
 
