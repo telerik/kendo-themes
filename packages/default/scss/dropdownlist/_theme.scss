@@ -1,5 +1,7 @@
 @include exports( "dropdownlist/theme" ) {
 
+    $invalid-border-color: rgba($error, .5) !default;
+
     .k-dropdown {
 
         .k-dropdown-wrap {
@@ -28,6 +30,14 @@
             @include appearance( focused-input );
         }
 
+    }
+
+    &:invalid:not(.ng-valid),
+    &.ng-invalid {
+        .k-dropdown-wrap {
+            color: $error;
+            border-color: $invalid-border-color;
+        }
     }
 
 }

@@ -1,5 +1,7 @@
 @include exports("numerictextbox/theme") {
 
+    $invalid-border-color: rgba($error, .5) !default;
+
     // Numeric
     .k-numerictextbox {
 
@@ -46,15 +48,15 @@
             @include appearance( focused-input );
         }
 
-    }
-
-    .k-numeric-wrap.k-state-invalid {
-        border-color: $error;
-        color: $error;
-
-        .k-i-arrow-60-down,
-        .k-i-arrow-60-up {
+        &:invalid:not(.ng-valid) .k-numeric-wrap,
+        &.ng-invalid .k-numeric-wrap,
+        .k-numeric-wrap.k-state-invalid {
             color: $error;
+            border-color: $invalid-border-color;
+
+            .k-select {
+                color: $error;
+            }
         }
     }
 

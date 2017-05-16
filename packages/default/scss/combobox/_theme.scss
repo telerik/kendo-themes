@@ -1,5 +1,7 @@
 @include exports("combobox/theme") {
 
+    $invalid-border-color: rgba($error, .5) !default;
+
     .k-combobox {
 
         // Normal state
@@ -39,6 +41,17 @@
             .k-select {}
         }
 
+        &:invalid:not(.ng-valid),
+        &.ng-invalid {
+            .k-dropdown-wrap {
+                color: $error;
+                border-color: $invalid-border-color;
+
+                .k-select {
+                    color: $error;
+                }
+            }
+        }
     }
 
 }
