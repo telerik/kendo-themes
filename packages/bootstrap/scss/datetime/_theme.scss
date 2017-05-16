@@ -84,6 +84,26 @@
         }
     }
 
+    .k-datetimepicker {
+        .k-i-warning {
+            color: $error;
+            right: $spacer * 4.8;
+        }
+
+        .k-state-invalid {
+            transition: none;
+            color: $error;
+            border-color: $error;
+        }
+
+        .k-rtl &,
+        &[dir='rtl'] {
+            .k-i-warning {
+                left: $spacer * 4.8;
+            }
+        }
+    }
+
     // Timepicker
     .k-timepicker {}
 
