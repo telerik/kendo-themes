@@ -17,6 +17,17 @@
   "publishConfig": {
     "registry": "https://registry.npm.telerik.com"
   },
+  "release": {
+    "branchTags": {
+      "develop": "dev"
+    },
+    "fallbackTags": {
+      "dev": "latest"
+    },
+    "verifyConditions": "@progress/kendo-theme-default/build/sr-verifyConditions",
+    "analyzeCommits": "@progress/kendo-theme-default/build/sr-analyzeCommits",
+    "verifyRelease": "@progress/kendo-theme-default/build/sr-verifyRelease"
+  },
   "scripts": {
     "lint": "echo 'TODO: add lint'",
     "api": "sassdoc ./scss/",
@@ -25,7 +36,7 @@
     "build": "webpack --optimize-minimize --bail",
     "watch": "webpack --watch",
     "test": "npm run lint && npm run build && npm run api-check",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && node_modules/@progress/kendo-theme-default/build/npm-publish.js && semantic-release post"
   },
   "config": {
     "commitizen": {
@@ -56,7 +67,7 @@
     "bootstrap": "git://github.com/twbs/bootstrap.git#95f37e4c402df37db16781995ffa1592032df9c8"
   },
   "dependencies": {
-    "@progress/kendo-theme-default": "^2.0.0"
+    "@progress/kendo-theme-default": "dev"
   },
   "devDependencies": {
     "bootstrap": "git://github.com/twbs/bootstrap.git#95f37e4c402df37db16781995ffa1592032df9c8",
