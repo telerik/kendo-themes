@@ -163,6 +163,8 @@ $success: #37b400 !default;
 /// The color for informational messages and states.
 $info: #0058e9 !default;
 
+$invalid-border-color: rgba($error, .5) !default;
+
 $gradient-transparent-to-black: rgba( black, 0), black;
 $gradient-transparent-to-white: rgba( white, 0), white;
 $gradient-black-to-transparent: black, rgba( black, 0);

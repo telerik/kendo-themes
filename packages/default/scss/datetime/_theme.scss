@@ -1,7 +1,5 @@
 @include exports("datetime/theme") {
 
-    $invalid-border-color: rgba($error, .5) !default;
-
     // Shared
     .k-datepicker,
     .k-timepicker,
@@ -47,19 +45,6 @@
                 border-color: inherit;
             }
         }
-
-        &:invalid:not(.ng-valid),
-        &.ng-invalid {
-            .k-picker-wrap {
-                color: $error;
-                border-color: $invalid-border-color;
-
-                .k-select {
-                    color: $error;
-                }
-            }
-        }
-
     }
 
     // Datepicker
@@ -151,18 +136,6 @@
 
             .k-i-warning {
                 color: $error;
-            }
-        }
-
-        &:invalid:not(.ng-valid),
-        &.ng-invalid {
-            .k-dateinput-wrap {
-                color: $error;
-                border-color: $invalid-border-color;
-
-                .k-select {
-                    color: $error;
-                }
             }
         }
     }

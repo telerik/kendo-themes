@@ -225,6 +225,20 @@
         right: 3px;
     }
 
+    .k-widget.ng-invalid {
+        .k-dateinput-wrap,
+        .k-dropdown-wrap,
+        .k-numeric-wrap,
+        .k-picker-wrap {
+            color: $error;
+            border-color: $invalid-border-color;
+
+            .k-select {
+                color: $error;
+            }
+        }
+    }
+
 }
 
 @include exports("forms/integration-with-bootstrap-forms") {

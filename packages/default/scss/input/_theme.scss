@@ -1,7 +1,5 @@
 @include exports('input/theme') {
 
-    $textbox-invalid-border-color: rgba($error, .5) !default;
-
     $radio-border: $input-border !default;
     $radio-bg: $input-bg !default;
     $radio-checked-bg: $accent !default;
@@ -39,11 +37,10 @@
             border-color: $input-focused-border;
         }
 
-        &:invalid:not(.ng-valid),
         &.k-state-invalid,
         &.ng-invalid {
             color: $error;
-            border-color: $textbox-invalid-border-color;
+            border-color: $invalid-border-color;
         }
 
         &::-moz-selection {
