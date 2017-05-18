@@ -418,8 +418,16 @@
             margin: 0;
         }
 
+        .k-header > .k-link > .k-icon {
+            &.k-i-sort-desc-sm,
+            &.k-i-sort-asc-sm {
+                vertical-align: text-top;
+            }
+        }
+
         .k-sort-order {
             font-size: $font-size-sm;
+            margin-left: -.5em;
         }
     }
 
