@@ -161,6 +161,8 @@ $warning: $brand-warning !default;
 /// The color for informational messages and states.
 $error: $brand-danger !default;
 
+$invalid-border-color: $error !default;
+
 $gradient-transparent-to-black: rgba( black, 0), black;
 $gradient-transparent-to-white: rgba( white, 0), white;
 $gradient-black-to-transparent: black, rgba( black, 0);
