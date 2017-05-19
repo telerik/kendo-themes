@@ -18,15 +18,17 @@
     "registry": "https://registry.npm.telerik.com"
   },
   "release": {
+    "debug": false,
     "branchTags": {
       "develop": "dev"
     },
     "fallbackTags": {
       "dev": "latest"
     },
-    "verifyConditions": "@progress/kendo-theme-default/build/sr-verifyConditions",
-    "analyzeCommits": "@progress/kendo-theme-default/build/sr-analyzeCommits",
-    "verifyRelease": "@progress/kendo-theme-default/build/sr-verifyRelease"
+    "analyzeCommits": "@telerik/semantic-prerelease/analyzeCommits",
+    "getLastRelease": "@telerik/semantic-prerelease/getLastRelease",
+    "verifyConditions": "@telerik/semantic-prerelease/verifyConditions",
+    "verifyRelease": "@telerik/semantic-prerelease/verifyRelease"
   },
   "scripts": {
     "lint": "echo 'TODO: add lint'",
@@ -36,7 +38,7 @@
     "build": "webpack --optimize-minimize --bail",
     "watch": "webpack --watch",
     "test": "npm run lint && npm run build && npm run api-check",
-    "semantic-release": "semantic-release pre && node_modules/@progress/kendo-theme-default/build/npm-publish.js && semantic-release post"
+    "semantic-release": "semantic-release pre && semantic-prerelease publish && semantic-release post"
   },
   "config": {
     "commitizen": {
@@ -72,6 +74,7 @@
   "devDependencies": {
     "bootstrap": "git://github.com/twbs/bootstrap.git#95f37e4c402df37db16781995ffa1592032df9c8",
     "@telerik/kendo-common-tasks": "^2.0.0",
+    "@telerik/semantic-prerelease": "^0.1.2",
     "cz-conventional-changelog": "^1.1.5",
     "ghooks": "^1.0.3",
     "glob": "^7.0.5",
