@@ -69,7 +69,7 @@
     "bootstrap": "git://github.com/twbs/bootstrap.git#95f37e4c402df37db16781995ffa1592032df9c8"
   },
   "dependencies": {
-    "@progress/kendo-theme-default": "dev"
+    "@progress/kendo-theme-default": "^2.0.0"
   },
   "devDependencies": {
     "bootstrap": "git://github.com/twbs/bootstrap.git#95f37e4c402df37db16781995ffa1592032df9c8",
