@@ -2,7 +2,7 @@
 
 * [Overview](#overview)
 * [Installation](#installation)
-* [Custom builds](#custom-builds)
+* [Custom Builds](#custom-builds)
 * [Troubleshooting](#troubleshooting)
 * [Under the Hood](#under-the-hood)
 
@@ -23,11 +23,14 @@ Currently, the Bootstrap theme is available for the following suites:
 1. Run the `npm install` command to install the build dependencies.
 1. Run the `npm run build` command to build the CSS.
 
-## Custom builds
+## Custom Builds
 
 The handling of all variables happens in the [`_bootstrap-map.scss`](src/_bootstrap-map.scss) file. It loads the Bootstrap variables from the default location. For example, `node_modules/bootstrap/scss/_variables.scss`.
 
-If you have a customized version of Bootstrap, specify the location in `_bootstrap-map.scss`. Then, build as usual.
+If you have a customized version of Bootstrap:
+
+1. Specify the location in `_bootstrap-map.scss`.
+1. Build as usual.
 
 ## Troubleshooting
 
