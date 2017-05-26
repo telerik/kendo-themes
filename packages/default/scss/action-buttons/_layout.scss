@@ -9,10 +9,10 @@
         clear: both;
 
         .k-button {
+            @include border-radius( 0 );
             padding: ($window-inner-padding-x * .75) $window-inner-padding-x;
             border-width: 0;
             border-color: inherit;
-            border-radius: 0;
             background: none;
             flex: 1;
         }

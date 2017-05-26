@@ -147,14 +147,13 @@
         .k-button-group .k-button:first-child,
         .k-button-group .k-group-end,
         .k-button-group .k-button:last-child {
-            border-radius: 0;
+            @include border-radius( 0 );
         }
 
 
         // Overflow anchor
         .k-overflow-anchor {
             border-width: 0;
-            border-radius: 0;
         }
 
     }

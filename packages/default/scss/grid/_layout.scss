@@ -218,7 +218,6 @@
             position: absolute;
             width: auto;
             padding: $padding-y $padding-x;
-            border-radius: $border-radius;
 
             .k-callout {
                 display: block;
@@ -256,7 +255,7 @@
     }
     .k-group-indicator,
     .k-drag-clue {
-        @include border-radius( $border-radius );
+        @include border-radius();
         margin: 0;
         padding: $button-padding-y $button-padding-x;
         border-width: 1px;

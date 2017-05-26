@@ -119,8 +119,8 @@ $modal-inner-padding: 1em;
             border: 0;
             margin-left: 0;
         }
-        .k-nav-today { @include border-radius( $border-radius 0 0 $border-radius ); }
-        .k-nav-next { @include border-radius( 0 $border-radius $border-radius 0 ); }
+        .k-nav-today { @include border-left-radius-only(); }
+        .k-nav-next { @include border-right-radius-only(); }
 
         .k-rtl & {
             .k-i-arrow-60-left,
@@ -165,19 +165,19 @@ $modal-inner-padding: 1em;
     .k-scheduler-views {
         @extend %ul-button-group;
 
-        li:first-child { @include border-radius( $border-radius ); }
-        li:first-child + li { @include border-radius( $border-radius 0 0 $border-radius ); }
-        li:last-child { @include border-radius( 0 $border-radius $border-radius 0 ); }
+        li:first-child { @include border-radius(); }
+        li:first-child + li { @include border-left-radius-only(); }
+        li:last-child { @include border-right-radius-only(); }
 
         &.k-state-expanded {
             li {
+                @include border-radius( 0 );
                 margin: 0;
-                border-radius: 0;
             }
             li + li { margin-top: -1px; }
-            li:first-child { @include border-radius( $border-radius $border-radius 0 0 ); }
-            li:first-child + li { border-radius: 0; }
-            li:last-child { @include border-radius( 0 0 $border-radius $border-radius ); }
+            li:first-child { @include border-top-radius-only(); }
+            li:first-child + li { @include border-radius( 0 ); }
+            li:last-child { @include border-bottom-radius-only(); }
         }
 
         .k-current-view { display: none; }
@@ -214,7 +214,7 @@ $modal-inner-padding: 1em;
         @extend %ul-button-group;
 
         li {
-            @include border-radius( $border-radius );
+            @include border-radius();
         }
     }
 
@@ -282,7 +282,7 @@ $modal-inner-padding: 1em;
 
     // Appointments
     .k-event {
-        @include border-radius( $border-radius );
+        @include border-radius();
         min-height: $line-height-em;
         border-width: 1px;
         border-style: solid;
@@ -691,18 +691,18 @@ $modal-inner-padding: 1em;
         }
 
         .k-scheduler-views {
-            li:first-child + li { @include border-radius( 0 $border-radius $border-radius 0 ); }
-            li:last-child { @include border-radius( $border-radius 0 0 $border-radius ); }
+            li:first-child + li { @include border-right-radius-only(); }
+            li:last-child { @include border-left-radius-only(); }
         }
 
         .k-scheduler-navigation  {
 
             .k-nav-today {
-                @include border-radius( 0 $border-radius $border-radius 0 );
+                @include border-right-radius-only();
             }
 
             .k-nav-next {
-                @include border-radius( $border-radius 0 0 $border-radius );
+                @include border-left-radius-only();
             }
 
             li + li {

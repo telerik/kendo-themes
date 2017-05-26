@@ -109,7 +109,7 @@
             border-bottom-width: 1px;
 
             .k-item {
-                @include border-radius( $border-radius $border-radius 0 0 );
+                @include border-top-radius();
                 margin-bottom: -1px;
             }
 
@@ -123,7 +123,7 @@
         }
 
         > .k-content {
-            @include border-radius( 0 0 $border-radius $border-radius);
+            @include border-bottom-radius();
             border-top-width: 0;
         }
     }
@@ -132,7 +132,7 @@
             border-top-width: 1px;
 
             .k-item {
-                @include border-radius( 0 0 $border-radius $border-radius );
+                @include border-bottom-radius();
                 margin-top: -1px;
             }
 
@@ -146,7 +146,7 @@
         }
 
         > .k-content {
-            @include border-radius( $border-radius $border-radius 0 0 );
+            @include border-top-radius();
             border-bottom-width: 0;
         }
     }
@@ -159,7 +159,7 @@
             flex-direction: column;
 
             .k-item {
-                @include border-radius( $border-radius 0 0 $border-radius );
+                @include border-left-radius();
                 margin-right: -1px;
             }
 
@@ -173,7 +173,7 @@
         }
 
         > .k-content {
-            @include border-radius(0 $border-radius $border-radius 0);
+            @include border-right-radius();
             // sass-lint:disable no-important
             margin: 0 !important;
             // sass-lint:enable no-important
@@ -190,7 +190,7 @@
             flex-direction: column;
 
             .k-item {
-                @include border-radius( 0 $border-radius $border-radius 0 );
+                @include border-right-radius();
                 margin-left: -1px;
             }
 
@@ -204,7 +204,7 @@
         }
 
         > .k-content {
-            @include border-radius($border-radius 0 0 $border-radius);
+            @include border-left-radius();
             // sass-lint:disable no-important
             margin: 0 !important;
             // sass-lint:enable no-important

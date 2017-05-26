@@ -135,9 +135,9 @@
         }
     }
     .k-menu-scroll-button {
+        @include border-radius( 0 );
         padding: 0;
         border-width: 0;
-        border-radius: 0;
         border-color: inherit;
         color: inherit;
         background: inherit;

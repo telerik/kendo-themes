@@ -28,7 +28,7 @@
         }
     }
     .k-animation-container {
-        @include border-radius( 0 0 $border-radius $border-radius );
+        @include border-bottom-radius-only();
 
         .k-popup {}
     }
@@ -158,9 +158,9 @@
     .k-list-container {
 
         .k-button {
+            @include border-radius( 0 );
             padding: $list-item-padding-y $list-item-padding-x;
             border-width: 0;
-            border-radius: 0;
             color: inherit;
             background-color: transparent;
             background-image: none;

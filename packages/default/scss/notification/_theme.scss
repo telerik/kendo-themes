@@ -16,7 +16,7 @@ $alert-error-bg: $error !default;
 
     // Theme
     .k-notification {
-        @include border-radius( $border-radius );
+        @include border-radius();
     }
     .k-notification-info {
         border-color: $alert-info-border;

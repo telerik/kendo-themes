@@ -5,7 +5,6 @@ $tooltip-bg: $accent !default;
     .k-tooltip {
         color: $tooltip-color;
         background-color: $tooltip-bg;
-        @include border-radius($border-radius);
     }
 
     .k-callout-n {

@@ -63,18 +63,18 @@
 @include exports( "flatcolorpicker/layout" ) {
 
     .k-flatcolorpicker {
+        @include border-radius();
         padding: 0 0 $spacer;
         width: 250px;
-        border-radius: $border-radius;
         display: flex;
         flex-direction: column;
         align-items: stretch;
 
         .k-draghandle {
+            @include border-radius( 50% );
             width: $spacer;
             height: $spacer;
             border: 1px solid rgba(255, 255, 255, .8);
-            border-radius: 50%;
             box-shadow: 0 1px 4px rgba(0, 0, 0, .21);
             box-sizing: border-box;
         }

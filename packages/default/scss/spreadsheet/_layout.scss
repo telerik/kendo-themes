@@ -115,11 +115,11 @@
             font-size: inherit;
         }
         .k-combobox .k-dropdown-wrap {
+            @include border-radius( 0 );
             border-width: 0;
-            border-radius: 0;
         }
         .k-combobox .k-select {
-            border-radius: 0;
+            @include border-radius( 0 );
         }
     }
     .k-spreadsheet-formula-bar {
@@ -406,7 +406,7 @@
         box-sizing: border-box;
     }
     .k-spreadsheet-filter {
-        @include border-radius( $border-radius );
+        @include border-radius();
         line-height: 1;
         position: absolute;
         cursor: pointer;
@@ -509,8 +509,8 @@
         }
 
         .k-button {
+            @include border-radius( 0 );
             border-width: 0;
-            border-radius: 0;
             color: inherit;
             background: none;
         }
@@ -521,9 +521,9 @@
 
         .k-reset-color,
         .k-custom-color {
+            @include border-radius( 0 );
             width: 100%;
             border-width: 0;
-            border-radius: 0;
             box-sizing: border-box;
             display: flex;
         }

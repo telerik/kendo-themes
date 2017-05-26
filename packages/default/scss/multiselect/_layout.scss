@@ -2,7 +2,7 @@
 
     // Base
     .k-multiselect {
-        @include border-radius( $border-radius );
+        @include border-radius();
         width: 100%;
 
         .k-loading-hidden {

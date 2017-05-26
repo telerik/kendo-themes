@@ -111,12 +111,12 @@ $chart-title-font-size: 1.143em !default;
     }
 
     .k-handle {
+        @include border-radius( 50% );
         width: $selection-handle-size;
         height: $selection-handle-size;
         border-width: 1px;
         border-style: solid;
         z-index: 1;
-        border-radius: 50%;
         position: absolute;
     }
 

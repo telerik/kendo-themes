@@ -2,7 +2,7 @@
 
     // Layout
     .k-autocomplete {
-        @include border-radius( $border-radius );
+        @include border-radius();
 
         .k-input {
             box-sizing: content-box;

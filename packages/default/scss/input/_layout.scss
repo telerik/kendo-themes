@@ -8,7 +8,7 @@
     .k-textbox,
     .k-input.k-textbox,
     .k-textarea {
-        @include border-radius( $border-radius );
+        @include border-radius();
         padding: $input-padding-y $input-padding-x;
         width: 12.4em;
         box-sizing: border-box;
@@ -103,6 +103,7 @@
     }
 
     .k-checkbox-label::before {
+        @include border-radius( $checkbox-radius );
         content: "";
         position: absolute;
         top: 0;
@@ -114,7 +115,6 @@
         line-height: $line-height * .8;
         border-width: 1px;
         border-style: solid;
-        border-radius: $checkbox-radius;
         display: inline-flex;
         align-items: center;
     }

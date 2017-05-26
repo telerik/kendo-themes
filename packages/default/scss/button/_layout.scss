@@ -2,7 +2,7 @@
 
     // Button
     .k-button {
-        @include border-radius( $border-radius );
+        @include border-radius();
         padding: $button-padding-y $button-padding-x;
         box-sizing: border-box;
         border-width: 1px;
@@ -85,10 +85,10 @@
     // Split button
     .k-split-button {
         .k-button {
-            @include border-radius( $border-radius 0 0 $border-radius );
+            @include border-left-radius-only();
         }
         .k-split-button-arrow {
-            @include border-radius( 0 $border-radius $border-radius 0 );
+            @include border-right-radius-only();
             margin-left: -1px;
             padding: $button-padding-y;
         }
@@ -125,8 +125,8 @@
         position: relative;
 
         .k-button {
+            @include border-radius( 0 );
             position: relative;
-            border-radius: 0;
         }
         .k-button + .k-button {
             margin-left: -1px;
@@ -140,15 +140,15 @@
 
         .k-group-start,
         .k-button:first-child {
-            @include border-radius( $border-radius 0 0 $border-radius );
+            @include border-left-radius();
         }
         .k-group-end,
         .k-button:last-child {
-            @include border-radius( 0 $border-radius $border-radius 0 );
+            @include border-right-radius();
         }
         .k-group-start.k-group-end,
         .k-button:first-child:last-child {
-            @include border-radius( $border-radius );
+            @include border-radius();
         }
 
     }
@@ -186,7 +186,7 @@
 
     //SplitButton
     .k-split-button.k-button-group.k-state-focused {
-        border-radius: $border-radius;
+        @include border-radius();
     }
 
     .k-split-button.k-widget {
@@ -195,13 +195,11 @@
 
     .k-split-button.k-button-group .k-button {
         &:first-child {
-            border-top-left-radius: $border-radius;
-            border-bottom-left-radius: $border-radius;
+            @include border-left-radius();
         }
 
         &:nth-child(2) {
-            border-top-right-radius: $border-radius;
-            border-bottom-right-radius: $border-radius;
+            @include border-right-radius();
         }
     }
 

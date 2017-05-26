@@ -41,6 +41,7 @@
 
         // Link
         .k-in {
+            @include border-radius();
             margin: 0;
             padding: $button-padding-y;
             border: 1px solid transparent;

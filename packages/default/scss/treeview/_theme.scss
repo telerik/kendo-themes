@@ -6,7 +6,6 @@
 
         // Link
         .k-in {
-            @include border-radius( $border-radius );
             background-clip: padding-box;
 
             .k-ie11 &,

@@ -24,11 +24,11 @@
     }
 
     .k-editor-inline {
-        border-width: 2px;
+        @include border-radius();
         padding: $padding-y-sm $padding-x-sm;
+        border-width: 2px;
         word-wrap: break-word;
         overflow: auto;
-        border-radius: $border-radius;
         background: none;
     }
     .k-window.k-editor-widget {
@@ -148,7 +148,7 @@
             text-align: center;
 
             .k-tool {
-                @include border-radius( $border-radius );
+                @include border-radius();
                 width: 100%;
                 height: auto;
                 display: flex;

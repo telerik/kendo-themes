@@ -24,7 +24,7 @@
             text-align: right;
 
             .k-select {
-                @include border-radius( $border-radius 0 0 $border-radius );
+                @include border-right-radius-only();
             }
 
             .k-clear-value {
@@ -78,7 +78,7 @@
     .k-picker-wrap,
     .k-multiselect-wrap,
     .k-numeric-wrap {
-        @include border-radius( $border-radius );
+        @include border-radius();
         padding: 0;
         width: 100%;
         border-width: 1px;
@@ -120,7 +120,7 @@
         }
 
         .k-select {
-            @include border-radius( 0 $border-radius $border-radius 0 );
+            @include border-right-radius-only();
             padding: $button-padding-y;
             border-width: 0 0 0 1px;
             box-sizing: border-box;

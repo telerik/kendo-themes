@@ -6,6 +6,7 @@ $tooltip-callout-size: 12px !default;
 @include exports("tooltip/layout") {
 
     .k-tooltip {
+        @include border-radius();
         padding: $tooltip-padding-y $tooltip-padding-x;
         border-width: 0;
         background-repeat: repeat-x;

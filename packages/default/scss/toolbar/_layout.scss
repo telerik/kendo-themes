@@ -54,13 +54,13 @@
 
         // Overflow anchor
         .k-overflow-anchor {
+            @include border-radius( 0 );
             padding: $toolbar-padding-y;
             width: calc( #{$toolbar-inner-calc-size} );
             height: calc( #{$toolbar-inner-calc-size} );
             border-width: 0 0 0 1px;
             border-color: inherit;
             background-clip: padding-box;
-            border-radius: 0;
             box-sizing: border-box;
             justify-content: center;
             position: absolute;

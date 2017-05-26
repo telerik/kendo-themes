@@ -1,6 +1,12 @@
 $calendar-cell-padding-y: .25rem !default;
 $calendar-cell-padding-x: .25rem !default;
 $calendar-line-height: 1.25 !default;
+$calendar-cell-size: ( 34px / 14px ) * 1em;
+$calendar-cell-border-radius: ( $calendar-cell-size / 2 );
+$calendar-header-height: 2em;
+$calendar-weekdays-height: ( 29px / 14px ) * 1em;
+$calendar-navigation-item-height: 2em;
+$calendar-navigation-width: 5em;
 
 @include exports('calendar/layout') {
 
@@ -66,7 +72,7 @@ $calendar-line-height: 1.25 !default;
                 position: relative;
 
                 .k-link {
-                    @include border-radius( $border-radius );
+                    @include border-radius();
                     display: flex;
                     flex-direction: row;
                     align-items: center;
@@ -122,8 +128,8 @@ $calendar-line-height: 1.25 !default;
                 }
 
                 .k-link {
+                    @include border-radius();
                     line-height: 1.5;
-                    @include border-radius( $border-radius );
                 }
 
                 &.k-meta-view .k-link {
@@ -185,12 +191,6 @@ $calendar-line-height: 1.25 !default;
 
 
     // Infinite calendar
-    $calendar-cell-size: ( 34px / 14px ) * 1em;
-    $calendar-header-height: 2em;
-    $calendar-weekdays-height: ( 29px / 14px ) * 1em;
-    $calendar-navigation-item-height: 2em;
-    $calendar-navigation-width: 5em;
-
     @mixin hide-scrollbar($dir: 'right') {
         // anything larger than the scrollbar width will do
         $max-scrollbar: 100px;
@@ -309,7 +309,7 @@ $calendar-line-height: 1.25 !default;
 
             td,
             .k-link {
-                border-radius: $calendar-cell-size / 2;
+                @include border-radius( $calendar-cell-border-radius );
             }
 
             .k-link {

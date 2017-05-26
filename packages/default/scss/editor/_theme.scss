@@ -33,7 +33,7 @@
 
             .k-tool.k-group-start,
             .k-tool.k-group-end {
-                border-radius: 0;
+                @include border-radius( 0 );
             }
         }
         .k-tool-group + .k-tool-group {

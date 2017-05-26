@@ -6,7 +6,7 @@ $slider-selection-background-color: $accent !default;
     .k-slider {
         .k-slider-track,
         .k-slider-selection {
-            border-radius: $border-radius;
+            @include border-radius();
         }
 
         .k-slider-track {
@@ -18,12 +18,12 @@ $slider-selection-background-color: $accent !default;
         }
 
         .k-button {
-            border-radius: 50%;
+            @include border-radius( 50% );
         }
 
         .k-draghandle {
             @include appearance( primary-button );
-            border-radius: 50%;
+            @include border-radius( 50% );
 
             &:hover {
                 @include appearance( hovered-primary-button );

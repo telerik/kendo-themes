@@ -67,7 +67,7 @@ $list-container-no-data-text: rgba( $text-color, .5 ) !default;
     }
 
     .k-animation-container {
-        border-radius: 0 0 $border-radius $border-radius;
+        @include border-bottom-radius-only();
     }
 
     .k-animation-container-shown,

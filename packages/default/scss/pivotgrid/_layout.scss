@@ -12,7 +12,7 @@
 
     .k-pivot-toolbar .k-button,
     .k-fieldselector .k-list li.k-item {
-        @include border-radius( $border-radius );
+        @include border-radius();
         padding: $button-padding-y $button-padding-x;
         padding-right: add-two( ($button-padding-x * 2), ($icon-size * 2) );
         font-size: $font-size;

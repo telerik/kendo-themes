@@ -313,7 +313,7 @@
     // Single task
     .k-single-wrap {}
     .k-task-single {
-        @include border-radius( $border-radius );
+        @include border-radius();
         border-width: 1px;
         border-style: solid;
         cursor: default;
@@ -345,7 +345,7 @@
         }
     }
     .k-task-complete {
-        @include border-radius( $border-radius );
+        @include border-radius();
         width: 20%;
         position: absolute;
         z-index: 1;
