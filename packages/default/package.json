@@ -25,6 +25,7 @@
       "dev": "latest"
     },
     "analyzeCommits": "@telerik/semantic-prerelease/analyzeCommits",
+    "generateNotes": "@telerik/semantic-prerelease/generateNotes",
     "getLastRelease": "@telerik/semantic-prerelease/getLastRelease",
     "verifyConditions": "@telerik/semantic-prerelease/verifyConditions",
     "verifyRelease": "@telerik/semantic-prerelease/verifyRelease"
