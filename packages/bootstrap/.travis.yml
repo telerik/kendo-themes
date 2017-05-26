@@ -24,6 +24,7 @@ before_install:
   - echo "//$PROGRESS_REGISTRY_HOST/:_authToken=\"$PROGRESS_REGISTRY_TOKEN\"" >> .npmrc
   - npm update @progress/kendo-theme-default
 before_script:
+  - git fetch --unshallow origin refs/heads/master:refs/remotes/origin/master
   - npm prune
 after_success:
   - npm run semantic-release
