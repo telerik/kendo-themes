@@ -23,6 +23,7 @@ before_install:
   - echo "@progress:registry=https://$PROGRESS_REGISTRY_HOST/" > .npmrc
   - echo "//$PROGRESS_REGISTRY_HOST/:_authToken=\"$PROGRESS_REGISTRY_TOKEN\"" >> .npmrc
 before_script:
+  - git fetch --unshallow origin refs/heads/master:refs/remotes/origin/master
   - npm prune
 after_success:
   - npm run semantic-release
