@@ -185,12 +185,18 @@
 
             th,
             td {
+                position: relative;
+                
                 &:first-child {
                     border-left-width: 1px;
                 }
 
                 &:last-child {
                     border-left-width: 0;
+                }
+
+                .k-checkbox {
+                    margin-right: 7px;
                 }
             }
 
