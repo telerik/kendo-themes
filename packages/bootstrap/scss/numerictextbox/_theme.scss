@@ -1,4 +1,5 @@
 @include exports("numerictextbox/theme") {
+    $numerictextbox-icon-offset: 1px !default;
 
     // Numeric
     .k-numerictextbox {
@@ -10,6 +11,11 @@
         }
         .k-select {
             @include appearance( button );
+
+            > .k-state-selected,
+            > .k-state-active {
+                box-shadow: inset $button-focused-shadow;
+            }
         }
 
         // Hovered state
@@ -31,9 +37,13 @@
             @include appearance( pressed-button );
         }
 
+        .k-link-increase > .k-icon {
+            bottom: -$numerictextbox-icon-offset;
+        }
 
-        .k-link-increase > .k-icon { transform: translateY($button-padding-y / 2); }
-        .k-link-decrease > .k-icon { transform: translateY(-$padding-y / 4); }
+        .k-link-decrease > .k-icon {
+            top: -$numerictextbox-icon-offset;
+        }
 
         .k-numeric-wrap.k-state-invalid {
             border-color: $error;
