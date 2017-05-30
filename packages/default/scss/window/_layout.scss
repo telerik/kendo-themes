@@ -66,4 +66,15 @@
         margin-top: -($window-inner-padding-y / 2);
     }
 
+    .k-window-iframecontent {
+        padding: 0;
+        overflow: visible;
+
+        .k-content-frame {
+            vertical-align: top;
+            border: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
