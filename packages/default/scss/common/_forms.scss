@@ -225,7 +225,8 @@
         right: 3px;
     }
 
-    .k-widget.ng-invalid {
+    .k-widget.ng-invalid.ng-touched,
+    .k-widget.ng-invalid.ng-dirty {
         .k-dateinput-wrap,
         .k-dropdown-wrap,
         .k-numeric-wrap,
