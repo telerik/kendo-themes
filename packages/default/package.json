@@ -69,7 +69,7 @@
   },
   "devDependencies": {
     "@telerik/kendo-common-tasks": "^2.0.0",
-    "@telerik/semantic-prerelease": "^0.1.1",
+    "@telerik/semantic-prerelease": "^1.0.0",
     "bootstrap": "git://github.com/twbs/bootstrap.git#95f37e4c402df37db16781995ffa1592032df9c8",
     "cz-conventional-changelog": "^1.1.5",
     "ghooks": "^1.0.3",
