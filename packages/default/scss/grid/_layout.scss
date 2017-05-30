@@ -196,7 +196,7 @@
                 }
 
                 .k-checkbox {
-                    margin-right: 7px;
+                    margin-right: calc(#{$padding-x-lg/ 2} + 1px);
                 }
             }
 
