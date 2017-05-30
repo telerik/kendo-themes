@@ -37,4 +37,5 @@ rules:
     placeholder-in-extend: 0
     quotes: 0
     space-between-parens: 0
+    shorthand-values: 0
     no-empty-rulesets: 0
