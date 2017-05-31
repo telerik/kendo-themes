@@ -39,7 +39,7 @@
     "build": "webpack --optimize-minimize --bail",
     "watch": "webpack --watch",
     "test": "npm run lint && npm run build && npm run api-check",
-    "prepublishOnly": "build/embed-dependencies.js",
+    "prepublishOnly": "build/embed-dependencies.sh",
     "semantic-release": "semantic-release pre && semantic-prerelease publish && semantic-release post"
   },
   "config": {

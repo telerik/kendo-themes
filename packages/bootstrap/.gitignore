@@ -8,3 +8,4 @@ yarn.locknpm-debug.log
 npm-debug.log
 .vscode/
 debug.log
+modules/
