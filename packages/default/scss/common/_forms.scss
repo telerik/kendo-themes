@@ -24,7 +24,7 @@
             text-align: right;
 
             .k-select {
-                @include border-right-radius-only();
+                @include border-left-radius-only();
             }
 
             .k-clear-value {

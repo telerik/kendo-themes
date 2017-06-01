@@ -39,13 +39,13 @@
     .k-timepicker {
 
         .k-i-warning {
-            right: $spacer * 2;
+            right: calc( #{ button-inner-size( 1 ) } + #{ $input-padding-x-sm });
         }
 
         .k-rtl &,
         &[dir='rtl'] {
             .k-i-warning {
-                left: $spacer * 2;
+                left: calc( #{ button-inner-size( 1 ) } + #{ $input-padding-x-sm });
             }
         }
     }
