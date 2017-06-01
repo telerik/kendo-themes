@@ -17,6 +17,7 @@ glob('scss/**/*.{png,gif,woff}', function(err, files) {
       ].join(' '), function(err, stdout, stderr) {
         if (err) {
           console.error(stderr)
+          process.exit(1);
         }
       });
     });
