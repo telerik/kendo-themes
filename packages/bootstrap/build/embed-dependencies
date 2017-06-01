@@ -1,6 +1,6 @@
-#!/usr/bin/bash
+#!/bin/bash
 
-# Usage: embed-dependnecies.sh [module-name]...
+# Usage: embed-dependencies [module-name]...
 
 mkdir -p modules
 

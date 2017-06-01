@@ -39,8 +39,8 @@
     "build": "webpack --optimize-minimize --bail",
     "watch": "webpack --watch",
     "test": "npm run lint && npm run build && npm run api-check",
-    "prepublishOnly": "./build/embed-dependencies.sh bootstrap '@progress/kendo-theme-default' && npm run build",
-    "semantic-release": "semantic-release pre && semantic-prerelease publish && semantic-release post"
+    "embed-assets": "bash ./build/embed-dependencies 'bootstrap' '@progress/kendo-theme-default' && npm run build",
+    "semantic-release": "semantic-release pre && npm run embed-assets && semantic-prerelease publish && semantic-release post"
   },
   "config": {
     "commitizen": {
