@@ -54,7 +54,11 @@
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-appearance: none;
+    }
 
+    .k-input,
+    .k-textbox > input,
+    .k-textbox {
         &::-ms-clear { display: none; }
     }
 
