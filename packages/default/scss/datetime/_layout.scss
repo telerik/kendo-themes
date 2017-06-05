@@ -20,11 +20,13 @@
         }
 
         .k-dateinput {
-            width: calc(100% - #{button-inner-size()});
+            width: 100%;
+            flex: 1;
         }
 
         .k-dateinput-wrap {
             border: 0;
+            @include border-left-radius-only();
         }
 
         .k-rtl &,
