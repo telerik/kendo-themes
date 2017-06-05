@@ -427,12 +427,15 @@
             &.k-i-sort-desc-sm,
             &.k-i-sort-asc-sm {
                 vertical-align: text-top;
+                margin-left: calc($padding-x -1px);
             }
         }
 
         .k-sort-order {
+            display: inline-block;
             font-size: $font-size-sm;
-            margin-left: -.5em;
+            height: $icon-size;
+            margin-left: -$icon-spacing;
         }
     }
 
