@@ -54,6 +54,14 @@
             background-color: $grid-sorted-bg;
         }
 
+        .k-rtl & {
+            th,
+            td {
+                .k-checkbox {
+                    margin-right: 7px;
+                }
+            }
+        }
     }
 
 
@@ -84,6 +92,14 @@
         .k-sort-order {
             color: $accent;
         }
+
+        .k-sort-order {
+            margin-left: -4px;
+            line-height: 1;
+            vertical-align: text-top;
+            margin-top: 2px;
+        }
+
     }
     .k-grid-footer {
         @include appearance( header );
