@@ -436,6 +436,8 @@
             font-size: $font-size-sm;
             height: $icon-size;
             margin-left: -$icon-spacing;
+            vertical-align: top;
+            margin-top: 2px;
         }
     }
 
