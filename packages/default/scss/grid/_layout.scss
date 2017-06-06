@@ -427,7 +427,7 @@
             &.k-i-sort-desc-sm,
             &.k-i-sort-asc-sm {
                 vertical-align: text-top;
-                margin-left: calc($padding-x -1px);
+                margin-left: calc( #{$padding-x} - 1px);
             }
         }
 
