@@ -19,5 +19,9 @@
 
     .k-multiselect-wrap {
         @include appearance( input );
+
+        .k-button {
+            padding: add-two(($button-padding-y-sm / 2), 1px) ($button-padding-x / 2);
+        }
     }
 }
