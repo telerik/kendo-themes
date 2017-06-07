@@ -53,15 +53,6 @@
         th.k-sorted {
             background-color: $grid-sorted-bg;
         }
-
-        .k-rtl & {
-            th,
-            td {
-                .k-checkbox {
-                    margin-right: 7px;
-                }
-            }
-        }
     }
 
 
