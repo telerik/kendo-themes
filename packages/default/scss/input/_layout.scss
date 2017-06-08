@@ -232,6 +232,7 @@
 
         legend {
             font-size: $font-size-sm;
+            text-align: left;
             font-weight: 600;
             line-height: 1;
             margin-bottom: $padding-y-lg * 2;
@@ -242,6 +243,7 @@
 
         .k-form-field {
             display: block;
+            text-align: left;
             margin-bottom: $padding-y-lg * 2;
 
             > span {
@@ -260,13 +262,15 @@
 
         .k-field-info {
             display: inline-block;
-            font-size: .7142857em;
+            font-size: $font-size-xs;
+            line-height: 1;
             margin: 0 $padding-x;
         }
 
         .k-checkbox-label,
         .k-radio-label {
             margin-right: $padding-x * 2;
+            align-self: center;
         }
     }
 
@@ -309,6 +313,11 @@
 
             > input {
                 flex: 1 1 auto;
+            }
+
+            .k-field-info {
+                display: block;
+                margin: 0;
             }
         }
     }
