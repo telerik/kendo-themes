@@ -125,6 +125,65 @@
     //     box-shadow: $custom-control-focus-indicator-box-shadow;
     // }
 
+    // Forms
+    .k-form,
+    .k-form-inline {
+        legend {
+            font-size: $font-size * 1.5;
+            font-weight: normal;
+            line-height: $line-height;
+            text-transform: none;
+        }
+
+        fieldset {
+            border-width: 0;
+            margin: 0;
+        }
+
+        .k-form-field,
+        .k-form-field:last-child {
+            margin-bottom: $spacer;
+        }
+
+        .k-field-info {
+            opacity: .7;
+        }
+    }
+
+    .k-form {
+        legend {
+            margin-bottom: $padding-y;
+        }
+        .k-form-field {
+            > span:not(.k-widget) {
+                padding: 0;
+                margin: 0 0 $padding-y;
+            }
+        }
+
+        .k-field-info {
+            margin: 0 $padding-x / 2;
+        }
+    }
+
+    .k-form-inline {
+        legend {
+            margin-bottom: 0;
+        }
+
+        .k-form-field {
+            > span:not(.k-widget),
+            > label:not(.k-checkbox-label):not(.k-radio-label) {
+                padding: add-two($padding-y, -$input-border-width) 0;
+                padding-right: $padding-x;
+            }
+        }
+    }
+
+    .k-required,
+    .k-required.k-field-info {
+        color: $accent;
+    }
 
     fieldset {
         border-color: $input-border;
