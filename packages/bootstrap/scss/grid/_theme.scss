@@ -53,6 +53,10 @@
         th.k-sorted {
             background-color: $grid-sorted-bg;
         }
+
+        .k-dirty {
+            border-color: currentColor transparent transparent currentColor;
+        }
     }
 
 
