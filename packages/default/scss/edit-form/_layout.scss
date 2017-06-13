@@ -54,7 +54,7 @@
 
 
     .k-edit-label {
-        padding: 0 0 $spacer-y 0;
+        padding: add-two($padding-y, $input-border-width) 0;
         width: 30%;
         text-align: right;
         float: left;
