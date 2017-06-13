@@ -60,4 +60,10 @@
         width: calc( #{$toolbar-inner-calc-size} );
         height: calc( #{$toolbar-inner-calc-size} );
     }
+
+    .k-editor-dialog {
+        .k-edit-label {
+            padding: add-two($padding-y, -$input-border-width) 0;
+        }
+    }
 }
