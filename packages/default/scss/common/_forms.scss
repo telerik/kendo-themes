@@ -173,17 +173,31 @@
             padding: 0;
             flex-direction: column;
             align-items: stretch;
+            width: button-inner-size();
         }
         .k-link {
             display: block;
-            padding: 0 $button-padding-y;
             height: button-inner-size(.5);
             overflow: hidden;
+            position: relative;
+            width: 100%;
 
             .k-icon {
-                height: 100%;
-                overflow: hidden;
-                vertical-align: top;
+                position: absolute;
+                right: 50%;
+                transform: translateX(50%);
+            }
+        }
+
+        .k-link-increase {
+            .k-icon {
+                bottom: 0;
+            }
+        }
+
+        .k-link-decrease {
+            .k-icon {
+                top: 0;
             }
         }
     }

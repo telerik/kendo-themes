@@ -13,8 +13,14 @@
         }
     }
 
-    .k-numeric-wrap .k-i-warning {
-        align-self: center;
-        margin-right: $spacer-x / 2;
+    .k-numeric-wrap {
+        .k-i-warning {
+            align-self: center;
+            margin-right: $spacer-x / 2;
+        }
+
+        > .k-input {
+            flex: 1;
+        }
     }
 }

@@ -1,4 +1,5 @@
 @include exports("numerictextbox/theme") {
+    $numerictextbox-icon-offset: 2px !default;
 
     // Numeric
     .k-numerictextbox {
@@ -32,7 +33,13 @@
             }
         }
 
-        .k-link-decrease > .k-icon { transform: translateY(-$padding-y / 2); }
+        .k-link-increase > .k-icon {
+            bottom: -$numerictextbox-icon-offset;
+        }
+
+        .k-link-decrease > .k-icon {
+            top: -$numerictextbox-icon-offset;
+        }
 
         // Hovered state
         .k-state-hover {
