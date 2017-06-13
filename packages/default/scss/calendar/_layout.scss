@@ -8,6 +8,25 @@ $calendar-weekdays-height: ( 29px / 14px ) * 1em;
 $calendar-navigation-item-height: 2em;
 $calendar-navigation-width: 5em;
 
+// Infinite calendar
+@mixin hide-scrollbar($dir: 'right') {
+    // anything larger than the scrollbar width will do
+    $max-scrollbar: 100px;
+    $scrollbar-size: 17px;
+    $margin: -$max-scrollbar - $scrollbar-size;
+
+    padding-right: $max-scrollbar;
+    padding-left: $max-scrollbar;
+    margin-left: -$max-scrollbar;
+    margin-right: -$max-scrollbar;
+
+    @if ($dir == 'right') {
+        margin-right: $margin;
+    } @else {
+        margin-left: $margin;
+    }
+}
+
 @include exports('calendar/layout') {
 
     // Base
@@ -189,25 +208,6 @@ $calendar-navigation-width: 5em;
 
 
 
-
-    // Infinite calendar
-    @mixin hide-scrollbar($dir: 'right') {
-        // anything larger than the scrollbar width will do
-        $max-scrollbar: 100px;
-        $scrollbar-size: 17px;
-        $margin: -$max-scrollbar - $scrollbar-size;
-
-        padding-right: $max-scrollbar;
-        padding-left: $max-scrollbar;
-        margin-left: -$max-scrollbar;
-        margin-right: -$max-scrollbar;
-
-        @if ($dir == 'right') {
-            margin-right: $margin;
-        } @else {
-            margin-left: $margin;
-        }
-    }
 
     .k-calendar.k-calendar-infinite {
         box-sizing: content-box;
