@@ -123,7 +123,7 @@
         }
 
         .k-dirty {
-            border-color: $text-color transparent transparent $text-color;
+            border-color: currentColor transparent transparent currentColor;
         }
     }
 
