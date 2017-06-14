@@ -1,0 +1,87 @@
+{
+  "name": "@progress/kendo-theme-material",
+  "description": "Material theme for Kendo UI",
+  "version": "0.0.0-semantically-released",
+  "author": "Progress",
+  "license": "Apache-2.0",
+  "keywords": [
+    "Kendo UI",
+    "Material",
+    "Material design",
+    "Theme"
+  ],
+  "main": "scss/all.scss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telerik/kendo-theme-material.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npm.telerik.com"
+  },
+  "release": {
+    "debug": false,
+    "branchTags": {
+      "develop": "dev"
+    },
+    "fallbackTags": {
+      "dev": "latest"
+    },
+    "analyzeCommits": "@telerik/semantic-prerelease/analyzeCommits",
+    "generateNotes": "@telerik/semantic-prerelease/generateNotes",
+    "getLastRelease": "@telerik/semantic-prerelease/getLastRelease",
+    "verifyConditions": "@telerik/semantic-prerelease/verifyConditions",
+    "verifyRelease": "@telerik/semantic-prerelease/verifyRelease"
+  },
+  "scripts": {
+    "lint": "sass-lint -v -c ./sass-lint.yml",
+    "api": "sassdoc ./scss/",
+    "api-check": "npm run api && git diff --exit-code --quiet -- docs/ || (echo -e '\\033[0;31mERROR: API docs are out of date' && exit 1)",
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack --optimize-minimize --bail",
+    "watch": "webpack --watch",
+    "test": "npm run lint && npm run build && npm run api-check",
+    "embed-assets": "bash ./build/embed-dependencies '@progress/kendo-theme-default' && npm run build",
+    "semantic-release": "semantic-release pre && npm run embed-assets && semantic-prerelease publish && semantic-release post"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run test",
+      "commit-msg": "validate-commit-msg"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert"
+      ],
+      "warnOnFail": false,
+      "maxSubjectLength": 100
+    }
+  },
+  "dependencies": {
+    "@progress/kendo-theme-default": "^2.0.0"
+  },
+  "devDependencies": {
+    "@telerik/kendo-common-tasks": "^2.0.0",
+    "@telerik/semantic-prerelease": "^1.0.0",
+    "cz-conventional-changelog": "^1.1.5",
+    "ghooks": "^1.0.3",
+    "glob": "^7.0.5",
+    "mime": "^1.3.4",
+    "sass-lint": "^1.7.0",
+    "sassdoc": "^2.1.20",
+    "semantic-release": "^4.3.5",
+    "validate-commit-msg": "^1.1.1",
+    "webpack": "^1.13.1"
+  }
+}
