@@ -1,0 +1,12 @@
+{
+    "dest": ".tmp",
+    "theme": "node_modules/@progress/kendo-theme-default/build/sassdoc-theme.js",
+    "meta": {
+        "name": "material",
+        "friendlyName": "Material",
+    },
+    "groups": {
+        "charts": "Charts",
+        "undefined": "Common"
+    }
+}
