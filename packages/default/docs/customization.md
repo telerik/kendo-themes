@@ -99,8 +99,8 @@ Used for primary buttons and for elements of primary importance across the theme
 <tr>
 <td>$accent-contrast</td>
 <td>
-    <span class="color-preview" style="background-color: #ffffff"></span>
-    #ffffff
+    
+    contrast-wcag( $accent )
 </td>
 <td>The color used along with the accent color denoted by $accent.<br/>
 Used to provide contrast between the background and foreground colors.
@@ -179,21 +179,21 @@ Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
-<td>$selected-text</td>
-<td>
-    
-    $accent-contrast
-</td>
-<td>The text color of selected items.
-</td>
-</tr>
-<tr>
 <td>$selected-bg</td>
 <td>
     
     $accent
 </td>
 <td>The background of selected items.
+</td>
+</tr>
+<tr>
+<td>$selected-text</td>
+<td>
+    
+    contrast-wcag( $selected-bg )
+</td>
+<td>The text color of selected items.
 </td>
 </tr>
 <tr>
