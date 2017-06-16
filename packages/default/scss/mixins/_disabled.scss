@@ -2,8 +2,8 @@
 @mixin disabled {
     outline: none;
     cursor: default;
-    opacity: .6;
-    filter: grayscale(.1);
+    opacity: $disabled-opacity;
+    filter: $disabled-filter;
     pointer-events: none;
 }
 @include exports("placeholder/disabled") {

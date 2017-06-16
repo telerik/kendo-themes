@@ -390,3 +390,7 @@ $chart-area-opacity: .8 !default;
 $icon-size: 16px;
 $icon-size-lg: 32px;
 $icon-spacing: 4px !default;
+
+// Disabled mixin variables
+$disabled-filter: grayscale(.1) !default;
+$disabled-opacity: .6 !default;
