@@ -1,16 +1,16 @@
 // TODO: extract or remove alert color variables
 $alert-info-border: $info !default;
-$alert-info-text: $accent-contrast !default;
 $alert-info-bg: $info !default;
+$alert-info-text: contrast-wcag( $alert-info-bg ) !default;
 $alert-success-border: $success !default;
-$alert-success-text: $accent-contrast !default;
 $alert-success-bg: $success !default;
+$alert-success-text: contrast-wcag( $alert-success-bg ) !default;
 $alert-warning-border: $warning !default;
-$alert-warning-text: $validator-warning-text !default;
 $alert-warning-bg: $warning !default;
+$alert-warning-text: contrast-wcag( $alert-warning-bg ) !default;
 $alert-error-border: $error !default;
-$alert-error-text: $accent-contrast !default;
 $alert-error-bg: $error !default;
+$alert-error-text: contrast-wcag( $alert-error-bg ) !default;
 
 @include exports("notification/theme") {
 
