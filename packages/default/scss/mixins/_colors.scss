@@ -1,3 +1,7 @@
+@import "vendor/color-helpers/math";
+@import "vendor/color-helpers/contrast";
+
+
 @function tint( $color, $percentage: 10 ) {
     @return mix( white, $color, $percentage );
 }
@@ -44,5 +48,17 @@
 @function contrast($color, $dark: #000000, $light: #ffffff) {
     $yiq: yiq($color);
     $out: if($yiq >= 128, $dark, $light);
+    @return $out;
+}
+@function contrast-yiq($color, $dark: #000000, $light: #ffffff) {
+    $yiq: yiq($color);
+    $out: if($yiq >= 128, $dark, $light);
+    // @debug yiq;
+    @return $out;
+}
+@function contrast-wcag($color, $dark: #000000, $light: #ffffff) {
+    $luma: ch-color-luminance($color);
+    $out: if($luma < .5, $light, $dark);
+    // @debug $luma;
     @return $out;
 }
