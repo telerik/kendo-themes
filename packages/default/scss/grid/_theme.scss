@@ -2,13 +2,13 @@
     $grid-chrome-text: $header-text !default;
     $grid-chrome-bg: $header-bg !default;
     $grid-chrome-border: $border-color !default;
-    $grid-alt-bg: rgba( contrast( $panel-bg ), .04) !default;
+    $grid-alt-bg: rgba( contrast-wcag( $panel-bg ), .04) !default;
 
     $grid-selected-text: $grid-chrome-text !default;
     $grid-selected-bg: rgba($selected-bg, .25) !default;
     $grid-grouping-row-text: $text-color !default;
     $grid-grouping-row-bg: darken($bg-color, 7%) !default;
-    $grid-sorted-bg: rgba( contrast( $panel-bg ), .02 ) !default;
+    $grid-sorted-bg: rgba( contrast-wcag( $panel-bg ), .02 ) !default;
 
     $tooltip-color: $accent-contrast !default;
     $tooltip-bg: $accent !default;

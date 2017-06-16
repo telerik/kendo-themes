@@ -45,11 +45,6 @@
 
     @return $yiq;
 }
-@function contrast($color, $dark: #000000, $light: #ffffff) {
-    $yiq: yiq($color);
-    $out: if($yiq >= 128, $dark, $light);
-    @return $out;
-}
 @function contrast-yiq($color, $dark: #000000, $light: #ffffff) {
     $yiq: yiq($color);
     $out: if($yiq >= 128, $dark, $light);

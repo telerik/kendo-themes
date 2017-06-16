@@ -116,7 +116,7 @@ $accent: #ff6358 !default;
 
 /// The color used along with the accent color denoted by $accent.
 /// Used to provide contrast between the background and foreground colors.
-$accent-contrast: #ffffff !default;
+$accent-contrast: contrast-wcag( $accent ) !default;
 
 $text-color: #656565 !default;
 $bg-color: #ffffff !default;
@@ -140,10 +140,10 @@ $hovered-border: rgba( black, .15 ) !default;
 /// The gradient background of hovered items.
 $hovered-gradient: $hovered-bg, darken( $hovered-bg, 2% ) !default;
 
-/// The text color of selected items.
-$selected-text: $accent-contrast !default;
 /// The background of selected items.
 $selected-bg: $accent !default;
+/// The text color of selected items.
+$selected-text: contrast-wcag( $selected-bg ) !default;
 /// The border color of selected items.
 $selected-border: rgba( black, .1 ) !default;
 /// The gradient background of selected items.
