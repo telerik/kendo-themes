@@ -16,11 +16,11 @@
 
 
 @function button-size( $multiplier: 1 ) {
-    $_unit-border: unit(1px);
+    $_unit-border: unit($button-border-width);
     $_unit-padding: unit($button-padding-y);
     $_unit-line-height: unit($form-line-height-em);
 
-    $_border: $multiplier * ( 2 * 1px );
+    $_border: $multiplier * ( 2 * $button-border-width );
     $_padding: $multiplier * (2 * $button-padding-y);
     $_line-height: $multiplier * $form-line-height-em;
 

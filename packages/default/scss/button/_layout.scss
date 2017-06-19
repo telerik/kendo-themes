@@ -5,7 +5,7 @@
         @include border-radius();
         padding: $button-padding-y $button-padding-x;
         box-sizing: border-box;
-        border-width: 1px;
+        border-width: $button-border-width;
         border-style: solid;
         font-size: $font-size;
         line-height: $form-line-height;
