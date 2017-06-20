@@ -125,7 +125,7 @@ $bg-color: #ffffff !default;
 $border-color: rgba( black, .08 ) !default;
 
 /// The text color of the components' chrome area.
-$base-text: rgba(0, 0, 0, .87) !default;
+$base-text: rgb(0, 0, 0) !default;
 /// The background of the components' chrome area.
 $base-bg: #fff !default;
 
@@ -228,7 +228,7 @@ $button-border: $base-border !default;
 /// The background gradient of the buttons.
 /// @group buttons
 $button-gradient: $base-gradient !default;
-$button-shadow: null !default;
+$button-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !default;
 
 /// The text color of hovered buttons.
 /// @group buttons
@@ -236,7 +236,7 @@ $button-hovered-text: $hovered-text !default;
 
 /// The background of hovered buttons.
 /// @group buttons
-$button-hovered-bg: $hovered-bg !default;
+$button-hovered-bg: rgba(0, 0, 0, .12) !default;
 
 /// The border color of hovered buttons.
 /// @group buttons
@@ -262,15 +262,15 @@ $button-pressed-border: $button-border !default;
 /// The background gradient of pressed buttons.
 /// @group buttons
 $button-pressed-gradient: none !default;
-$button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
+$button-pressed-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12) !default;
 
 /// The shadow of focused buttons.
 /// @group buttons
-$button-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
+$button-focused-shadow: $button-shadow !default;
 
 
 // Primary button
-$primary-button-text: $accent-contrast !default;
+$primary-button-text: rgba(255, 255, 255, .87) !default;
 $primary-button-bg: $accent !default;
 $primary-button-border: $primary-button-bg !default;
 $primary-button-gradient: rgba( adjust-hue( $primary-button-bg, 14), 0 ), rgba( adjust-hue( $primary-button-bg, 14), .2 ) !default;

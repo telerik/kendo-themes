@@ -1,1 +1,5 @@
 @import "~@progress/kendo-theme-default/scss/button/layout";
+
+.k-button:not(.k-button-icon) {
+    min-width: 88px;
+}

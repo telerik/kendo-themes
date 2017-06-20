@@ -110,7 +110,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$base-text</td>
 <td>
     
-    rgba(0, 0, 0, .87)
+    rgb(0, 0, 0)
 </td>
 <td>The text color of the components' chrome area.
 </td>
@@ -306,7 +306,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-hovered-bg</td>
 <td>
     
-    $hovered-bg
+    rgba(0, 0, 0, .12)
 </td>
 <td>The background of hovered buttons.
 </td>
@@ -369,7 +369,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-focused-shadow</td>
 <td>
     
-    0 3px 4px 0 rgba(0, 0, 0, .06)
+    $button-shadow
 </td>
 <td>The shadow of focused buttons.
 </td>
