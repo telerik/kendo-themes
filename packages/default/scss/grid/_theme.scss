@@ -125,6 +125,13 @@
         .k-dirty {
             border-color: currentColor transparent transparent currentColor;
         }
+
+        &[dir = "rtl"],
+        .k-rtl & {
+            .k-dirty {
+                border-color: currentColor currentColor transparent transparent;
+            }
+        }
     }
 
     col.k-sorted,
