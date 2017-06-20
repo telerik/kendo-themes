@@ -1,6 +1,6 @@
 @include exports("grid/theme") {
     $grid-cell-focused-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .08) !default;
-    $grid-sorted-bg: rgba( contrast( $base-bg ), .02 ) !default;
+    $grid-sorted-bg: rgba( contrast-wcag( $base-bg ), .02 ) !default;
 
     // Theme
     .k-grid {
