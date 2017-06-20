@@ -234,14 +234,20 @@
             height: $icon-size;
         }
 
-        .k-dirty {
-            position: absolute;
-            width: 0;
-            height: 0;
-            padding: 0;
-            margin: (-$cell-padding-y) 0 0 (-$cell-padding-x);
-            border-style: solid;
-            border-width: 5px;
+        .k-dirty-cell {
+            position: relative;
+
+            .k-dirty {
+                width: 0;
+                height: 0;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-style: solid;
+                border-width: 5px;
+            }
         }
     }
 
