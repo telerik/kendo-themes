@@ -72,7 +72,8 @@
             @include appearance( hovered-node );
         }
 
-        .k-state-selected {
+        .k-state-selected,
+        .k-weekend.k-state-selected {
             @include appearance( selected-node );
 
             &.k-state-hover {

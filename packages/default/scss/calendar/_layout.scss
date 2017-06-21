@@ -60,6 +60,7 @@ $calendar-navigation-width: 5em;
         th {
             border-width: 0;
             padding: 0;
+            text-align: center;
             border-style: solid;
             border-color: inherit;
             font-weight: normal;
@@ -68,7 +69,6 @@ $calendar-navigation-width: 5em;
             padding: $calendar-cell-padding-y $calendar-cell-padding-x;
             font-size: $font-size-sm;
             font-weight: bold;
-            text-align: center;
             cursor: default;
         }
         td {
