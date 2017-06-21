@@ -232,6 +232,10 @@
             }
         }
 
+        .k-animation-container-fixed .k-tooltip.k-tooltip-validation {
+            position: static;
+        }
+
         .k-no-text {
             padding: 0;
             display: inline-block;
