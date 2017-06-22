@@ -9,6 +9,10 @@ $modal-inner-padding: 1em;
         flex-direction: column;
 
         table,
+        thead,
+        tfoot,
+        tbody,
+        tr,
         th,
         td {
             border-color: inherit;
