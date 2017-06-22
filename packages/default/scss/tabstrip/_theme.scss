@@ -1,16 +1,26 @@
-$tabstrip-tabs-color: $accent !default;
-$tabstrip-border-color: rgba(0, 0, 0, .08) !default;
-$tabstrip-hover-color: blend-multiply($accent, darken($widget-bg, 8%)) !default;
-$tabstrip-active-color: $base-text !default;
-$tabstrip-active-background-color: desaturate($widget-bg, 1%) !default;
-$tabstrip-disabled-color: darken($widget-bg, 27%) !default;
+$tabstrip-border: rgba(0, 0, 0, .08) !default;
+$tabstrip-item-text: $link-text !default;
+$tabstrip-item-bg: transparent !default;
+$tabstrip-item-border: transparent !default;
+$tabstrip-item-hovered-text: $link-hover-text !default;
+$tabstrip-item-hovered-bg: transparent !default;
+$tabstrip-item-hovered-border: transparent !default;
+$tabstrip-item-selected-text: $base-text !default;
+$tabstrip-item-selected-bg: $panel-bg !default;
+$tabstrip-item-selected-border: $panel-border !default;
+$tabstrip-content-text: $panel-text !default;
+$tabstrip-content-bg: $panel-bg !default;
+$tabstrip-content-border: $panel-bg !default;
 
 @include exports('tabstrip/theme') {
 
     .k-tabstrip {
+        //border-color: $tabstrip-border;
 
         .k-item {
-            color: $link-text;
+            // border-color: $tabstrip-item-border;
+            color: $tabstrip-item-text;
+            //background-color: $tabstrip-item-bg;
             background-clip: padding-box;
 
             .k-ie11 &,
@@ -21,17 +31,22 @@ $tabstrip-disabled-color: darken($widget-bg, 27%) !default;
 
             &:hover,
             &.k-state-hover {
-                color: $link-hover-text;
+                // border-color: $tabstrip-item-hovered-border;
+                color: $tabstrip-item-hovered-text;
+                // background-color: $tabstrip-item-hovered-border;
             }
 
             &.k-state-active {
-                border-color: $panel-border;
-                color: $panel-text;
-                background-color: $panel-bg;
+                border-color: $tabstrip-item-selected-border;
+                color: $tabstrip-item-selected-text;
+                background-color: $tabstrip-item-selected-bg;
             }
         }
 
         > .k-content {
+            // border-color: $tabstrip-content-border;
+            // color: $tabstrip-content-text;
+            // background-color: $tabstrip-content-bg;
             background-clip: padding-box;
 
             .k-ie11 &,
@@ -47,28 +62,28 @@ $tabstrip-disabled-color: darken($widget-bg, 27%) !default;
     .k-tabstrip-top {
         > .k-tabstrip-items {
             .k-item.k-state-active {
-                border-bottom-color: $panel-bg;
+                border-bottom-color: $tabstrip-item-selected-bg;
             }
         }
     }
     .k-tabstrip-bottom {
         > .k-tabstrip-items {
             .k-item.k-state-active {
-                border-top-color: $panel-bg;
+                border-top-color: $tabstrip-item-selected-bg;
             }
         }
     }
     .k-tabstrip-left {
         > .k-tabstrip-items {
             .k-item.k-state-active {
-                border-right-color: $panel-bg;
+                border-right-color: $tabstrip-item-selected-bg;
             }
         }
     }
     .k-tabstrip-right {
         > .k-tabstrip-items {
             .k-item.k-state-active {
-                border-left-color: $panel-bg;
+                border-left-color: $tabstrip-item-selected-bg;
             }
         }
     }
