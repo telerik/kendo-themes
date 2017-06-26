@@ -10,5 +10,9 @@
 
     .k-dropdown-wrap {
         outline: 0;
+
+        > .k-input {
+            flex: 1;
+        }
     }
 }
