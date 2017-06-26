@@ -60,7 +60,7 @@
         }
 
         .k-alt,
-        .k-weekend {
+        .k-weekend:not(.k-calendar-infinite .k-weekend) {
             background: darken( $widget-bg, 5 );
         }
 
