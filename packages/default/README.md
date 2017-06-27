@@ -1,7 +1,6 @@
-[![Build Status](https://travis-ci.org/telerik/kendo-theme-default.svg?branch=master)](https://travis-ci.org/telerik/kendo-theme-default)
-
 # Kendo UI Default Theme
 
+* [License](#license)
 * [Overview](#overview)
 * [Basic Usage](#basic-usage)
 * [Customization](#customization)
@@ -9,15 +8,24 @@
     * [Embedding Resources](#embedding-resources)
     * [Documenting Variables](#documenting-variables)
 
+## License
+
+This package is part of the following suites:
+
+* [Kendo UI for Angular](http://www.telerik.com/kendo-angular-ui/)
+* [Kendo UI for jQuery](http://www.telerik.com/kendo-ui)
+* [UI for ASP.NET MVC](http://www.telerik.com/aspnet-mvc)
+* [UI for ASP.NET Core](http://www.telerik.com/aspnet-core-ui)
+
+All available Kendo UI commercial licenses may be obtained at http://www.telerik.com/purchase/kendo-ui.
+
+If you do not own a commercial license, the usage of this software shall be governed by the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
+*Copyright © 2017 Telerik AD. All rights reserved.*
+
 ## Overview
 
 The Kendo UI Default Theme is a SCSS-based theme for the Kendo UI components.
-
-Currently, it is available for the following suites:  
-
-* Kendo UI for React
-* Kendo UI for Angular
-* Kendo UI for jQuery
 
 ## Basic Usage
 
