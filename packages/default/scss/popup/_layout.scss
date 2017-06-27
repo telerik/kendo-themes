@@ -123,6 +123,7 @@
             // remove the !important declaration when https://github.com/telerik/kendo-ui-core/issues/2617 is fixed
             width: 100% !important; // sass-lint:disable-block no-important
             box-sizing: border-box;
+            padding-right: add-two($icon-size, $padding-x);
         }
 
         > .k-icon {
