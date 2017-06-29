@@ -47,7 +47,7 @@
 }
 @function contrast-yiq($color, $dark: #000000, $light: #ffffff) {
     $yiq: yiq($color);
-    $out: if($yiq >= 128, $dark, $light);
+    $out: if($yiq >= 150, $dark, $light);
     // @debug yiq;
     @return $out;
 }
