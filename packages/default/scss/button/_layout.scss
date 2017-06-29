@@ -128,7 +128,7 @@
             @include border-radius( 0 );
             position: relative;
         }
-        .k-button + .k-button {
+        .k-button ~ .k-button {
             margin-left: -1px;
         }
 
@@ -149,6 +149,17 @@
         .k-group-start.k-group-end,
         .k-button:first-child:last-child {
             @include border-radius();
+        }
+
+        > input[type=radio],
+        > input[type=checkbox],
+        label input[type=radio],
+        label input[type=checkbox] {
+            margin: 0;
+            padding: 0;
+            clip: rect(0, 0, 0, 0);
+            position: absolute;
+            pointer-events: none;
         }
 
     }
