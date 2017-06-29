@@ -58,6 +58,10 @@
         border-color: $panel-bg;
         background-color: $selected-bg;
     }
+    .k-spreadsheet-active-cell {
+        border-color: $selected-bg;
+        background-color: $panel-bg;
+    }
 
     .k-spreadsheet .k-auto-fill {
         border-color: $selected-bg;
