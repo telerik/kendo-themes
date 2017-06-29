@@ -352,6 +352,9 @@
     .k-spreadsheet-merged-cell {
         background-color: $panel-bg;
     }
+    .k-spreadsheet-merged-cells-wrapers {
+        position: relative;
+    }
 
 
     // Selection
@@ -376,8 +379,19 @@
         padding: 0;
     }
 
-    .k-spreadsheet .k-auto-fill {
+    .k-spreadsheet .k-auto-fill-wrapper {
+        position: relative;
+    }
+    .k-spreadsheet .k-auto-fill,
+    .k-spreadsheet .k-auto-fill-punch,
+    .k-spreadsheet .k-auto-fill-br-hint {
+        box-sizing: border-box;
         position: absolute;
+    }
+    .k-spreadsheet .k-auto-fill {
+        border-width: 1px;
+        border-style: solid;
+        cursor: crosshair;
     }
 
     .k-spreadsheet .k-single-selection {}

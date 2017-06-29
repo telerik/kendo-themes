@@ -59,6 +59,15 @@
         background-color: $selected-bg;
     }
 
+    .k-spreadsheet .k-auto-fill {
+        border-color: $selected-bg;
+        background-color: rgba( $selected-bg, .25 );
+        box-shadow: inset 0 0 0 1px $panel-bg, 0 0 0 1px $selected-bg;
+    }
+    .k-spreadsheet .k-auto-fill-punch {
+        background-color: rgba( $panel-bg, .5 );
+    }
+
 }
 
 
