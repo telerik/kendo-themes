@@ -587,6 +587,10 @@
     .k-i-cloud::before {content: "\e921";}
     .k-i-file-horizontal::before {content: "\e922";}
 
+    // Aliases
+    .k-i-page-portrait { @extend .k-i-file-vertical; }
+    .k-i-page-landscape { @extend .k-i-file-horizontal; }
+
     // backwards compatibility
     .k-i-arrow-s::before { @extend .k-i-arrow-60-down; }
     .k-i-arrow-e::before { @extend .k-i-arrow-60-right; }
