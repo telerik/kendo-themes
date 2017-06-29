@@ -54,6 +54,10 @@
         background-color: rgba( $selected-bg, .25 );
         box-shadow: inset 0 0 0 1px $panel-bg, 0 0 0 1px $selected-bg;
     }
+    .k-spreadsheet .k-single-selection::after {
+        border-color: $panel-bg;
+        background-color: $selected-bg;
+    }
 
 }
 

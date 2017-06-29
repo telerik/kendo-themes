@@ -380,6 +380,24 @@
         position: absolute;
     }
 
+    .k-spreadsheet .k-single-selection {}
+    .k-spreadsheet .k-single-selection::after {
+        content: "";
+        margin-bottom: -5px;
+        margin-right: -5px;
+        width: 6px;
+        height: 6px;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 100;
+        cursor: crosshair;
+    }
+
 
     // Autofill
     .k-spreadsheet .k-autofill-wrapper {
