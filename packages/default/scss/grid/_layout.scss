@@ -220,6 +220,11 @@
                 }
             }
 
+            .k-filtercell-operator {
+                margin-left: 0;
+                margin-right: $cell-padding-y / 2;
+            }
+
             .k-dirty {
                 left: auto;
                 right: 0;
@@ -515,13 +520,12 @@
 
     .k-filtercell {
         width: auto;
-        display: block;
+        display: flex;
 
         > span,
         .k-filtercell-wrapper {
-            padding-right: calc( 2 * (#{$button-calc-size} + #{$cell-padding-y / 2}));
-            display: block;
-            position: relative;
+            display: flex;
+            flex: 1;
 
             > label {
                 vertical-align: middle;
@@ -531,16 +535,18 @@
 
         > span,
         .k-filtercell-operator {
-            > .k-button {
-                position: absolute;
-                top: 0;
-                right: 0;
+            > .k-button.k-clear-button-visible {
+                visibility: visible;
+            }
+
+            > .k-button:not(.k-clear-button-visible) {
+                visibility: hidden;
+                pointer-events: none;
             }
         }
 
-
-        > .k-operator-hidden {
-            padding-right: calc( #{$button-calc-size} + #{$cell-padding-y / 2});
+        .k-filtercell-operator {
+            margin-left: $cell-padding-y / 2;
         }
 
         .k-widget,
@@ -570,10 +576,8 @@
 
         .k-dropdown-operator {
             width: button-size();
+            display: inline-flex;
             flex: none;
-            position: absolute;
-            top: 0;
-            right: calc( #{$button-calc-size} + #{$cell-padding-y / 2} );
         }
 
         .k-dropdown-operator .k-input {
