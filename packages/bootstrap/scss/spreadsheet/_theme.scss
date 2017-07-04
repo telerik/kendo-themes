@@ -26,6 +26,13 @@
     .k-syntax-paren-match { background-color: #caf200; }
 
 
+    // Cell editor
+    .k-spreadsheet-cell-editor {
+        color: $panel-text;
+        background-color: $panel-bg;
+    }
+
+
     // Selection
     .k-spreadsheet .k-selection-full,
     .k-spreadsheet .k-selection-partial {
@@ -36,6 +43,24 @@
         border-color: $selected-bg;
         background-color: rgba( $selected-bg, .25 );
         box-shadow: inset 0 0 0 1px $panel-bg, 0 0 0 1px $selected-bg;
+    }
+
+    .k-spreadsheet .k-single-selection::after {
+        border-color: $panel-bg;
+        background-color: $selected-bg;
+    }
+    .k-spreadsheet-active-cell {
+        border-color: $selected-bg;
+        background-color: $panel-bg;
+    }
+
+    .k-spreadsheet .k-auto-fill {
+        border-color: $selected-bg;
+        background-color: rgba( $selected-bg, .25 );
+        box-shadow: inset 0 0 0 1px $panel-bg, 0 0 0 1px $selected-bg;
+    }
+    .k-spreadsheet .k-auto-fill-punch {
+        background-color: rgba( $panel-bg, .5 );
     }
 
 }
