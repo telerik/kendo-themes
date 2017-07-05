@@ -16,6 +16,7 @@
         @include appearance( button );
         box-shadow: $button-shadow;
         font-weight: 500;
+        transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
 
         // Focused state
         &:not(.k-no-focus):focus,
