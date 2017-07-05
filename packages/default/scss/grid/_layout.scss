@@ -259,6 +259,11 @@
                 border-width: 5px;
             }
         }
+
+        .k-grid-edit-row td > .k-textbox,
+        .k-edit-cell > .k-textbox {
+            width: 100%;
+        }
     }
 
     // Toolbar
