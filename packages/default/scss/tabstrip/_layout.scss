@@ -99,6 +99,14 @@
                 position: absolute;
                 right: 0;
             }
+
+            // Fixes kendo-theme-default#476
+            .k-ie11 & {
+                > .k-tabstrip-prev,
+                > .k-tabstrip-next {
+                    top: 0;
+                }
+            }
         }
 
     }
