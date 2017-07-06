@@ -160,6 +160,11 @@
     // Widget
     .k-widget {
         @include appearance( widget );
+
+        ::selection {
+            background-color: $accent;
+            color: $accent-contrast;
+        }
     }
 
 
