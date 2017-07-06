@@ -1,6 +1,11 @@
 @include exports("splitter/theme") {
 
-    $splitter-text: $widget-text;
+    $splitter-bg: rgba( try-darken( $panel-bg, 8 ), .8 );
+    $splitter-text: $panel-text;
+    $splitter-hovered-bg: try-darken( $panel-bg, 8 );
+    $splitter-hovered-text: $panel-text;
+    $splitter-selected-bg: $selected-bg;
+    $splitter-selected-text: contrast-wcag( $splitter-selected-bg );
 
     .k-splitter {
         background-clip: padding-box;
@@ -14,28 +19,23 @@
 
     // Splitbar
     .k-splitbar {
-        @include appearance( button );
-        background-clip: padding-box;
-
-        .k-ie11 &,
-        .k-edge12 &,
-        .k-edge13 & {
-            background-clip: border-box;
-        }
+        color: $splitter-text;
+        background-color: $splitter-bg;
 
         &:active,
         &.k-state-focused {
-            color: $selected-text;
-            background: $selected-bg;
+            color: $splitter-selected-text;
+            background: $splitter-selected-bg;
         }
     }
     .k-splitbar-horizontal-hover,
     .k-splitbar-vertical-hover {
-        @include appearance( hovered-button );
+        color: $splitter-hovered-text;
+        background-color: $splitter-hovered-bg;
     }
 
     .k-ghost-splitbar {
-        @include appearance( hovered-button );
+        background-color: $splitter-hovered-bg;
     }
 
 }
