@@ -153,6 +153,8 @@ $selected-gradient: none !default;
 $selected-hover-color: $selected-text !default;
 $selected-hover-bg: mix( $selected-bg, black, 92) !default;
 
+$focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
+
 $transition: background-color .2s ease !default;
 
 /// The color for error messages and states.
@@ -314,17 +316,17 @@ $input-focused-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0,
 // Node
 $node-text: $base-text !default;
 $node-bg: $base-bg !default;
-$node-border: $base-border !default;
+$node-border: $node-bg !default;
 $node-gradient: null !default;
 
 $node-hovered-text: $hovered-text !default;
 $node-hovered-bg: $hovered-bg !default;
-$node-hovered-border: $hovered-border !default;
+$node-hovered-border: $node-hovered-bg !default;
 $node-hovered-gradient: null !default;
 
 $node-selected-text: $selected-text !default;
 $node-selected-bg: $selected-bg !default;
-$node-selected-border: $selected-border !default;
+$node-selected-border: $node-selected-bg !default;
 $node-selected-gradient: null !default;
 
 

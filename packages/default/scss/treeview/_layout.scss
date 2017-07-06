@@ -43,7 +43,7 @@
         .k-in {
             @include border-radius();
             margin: 0;
-            padding: $button-padding-y;
+            padding: $button-padding-y $button-padding-x;
             border: 1px solid transparent;
             text-decoration: none;
             display: inline-flex;
