@@ -250,18 +250,11 @@
 
         .k-dirty-cell {
             position: relative;
-
-            .k-dirty {
-                width: 0;
-                height: 0;
-                padding: 0;
-                margin: 0;
-                position: absolute;
-                top: 0;
-                left: 0;
-                border-style: solid;
-                border-width: 5px;
-            }
+        }
+        .k-dirty {
+            border-width: 5px;
+            left: 0;
+            right: auto;
         }
 
         .k-grid-edit-row td > .k-textbox,

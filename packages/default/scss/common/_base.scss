@@ -115,6 +115,20 @@
     .k-flip-v { transform: scaleY(-1); }
     .k-flip-h.k-flip-v { transform: scale(-1, -1); }
 
+
+    // Dirty indicator
+    .k-dirty {
+        margin: 0;
+        padding: 0;
+        width: 0;
+        height: 0;
+        border-width: 3px;
+        border-style: solid;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
 }
 
 
@@ -247,6 +261,12 @@
     // Empty state
     .k-state-empty {
         font-style: italic;
+    }
+
+
+    // Dirty indicator
+    .k-dirty {
+        border-color: $error $error transparent transparent;
     }
 
 }
