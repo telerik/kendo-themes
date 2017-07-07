@@ -688,6 +688,11 @@
     .k-i-volume-mute::before { @extend .k-i-volume-off; }
     .k-i-forward-sm::before { @extend .k-i-arrow-double-60-right; }
 
+
+    // RTL icons
+    .k-rtl .k-i-indent-increase,
+    .k-rtl .k-i-indent-decrease { transform: scaleX(-1); }
+
     .k-sprite {
         display: inline-block;
         width: 16px;
