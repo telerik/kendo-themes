@@ -483,6 +483,13 @@
         }
     }
 
+    .k-grid-content,
+    .k-grid-header-wrap {
+        > table {
+            min-width: 100%;
+        }
+    }
+
     .k-grid-footer {
         border-width: 1px 0 0;
 
