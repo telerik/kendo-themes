@@ -283,6 +283,7 @@ $calendar-navigation-width: 5em;
 
     .k-calendar-monthview {
         display: flex;
+        flex: 1 0 auto;
         flex-direction: column;
         overflow: hidden;
         margin: 0 $spacer-x;
@@ -293,7 +294,6 @@ $calendar-navigation-width: 5em;
 
         .k-content {
             height: 7 * $calendar-cell-size + $calendar-header-height;
-            float: none;
             position: relative;
 
             > table {
