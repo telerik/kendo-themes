@@ -21,7 +21,7 @@
         }
 
         // Link
-        .k-link {
+        .k-item > .k-link {
             padding: $nav-item-padding-y $nav-item-padding-x;
             color: inherit;
             display: flex;
@@ -46,13 +46,13 @@
             .k-i-arrow-60-left {
                 left: $icon-spacing;
             }
-        }
 
-        // Images
-        .k-icon,
-        .k-image,
-        .k-sprite {
-            margin-right: $icon-spacing;
+            // Images
+            > .k-icon,
+            > .k-image,
+            > .k-sprite {
+                margin-right: $icon-spacing;
+            }
         }
 
         .k-separator {
@@ -111,7 +111,7 @@
             display: block;
         }
 
-        .k-link {
+        .k-item > .k-link {
             padding: $list-item-padding-y $list-item-padding-x;
             padding-right: add-two( (2 * $list-item-padding-x), $icon-size);
             color: inherit;
