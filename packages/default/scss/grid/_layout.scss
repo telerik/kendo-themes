@@ -485,6 +485,7 @@
 
     .k-grid-content,
     .k-grid-header-wrap {
+        .k-grid-table,
         > table {
             min-width: 100%;
         }
@@ -681,6 +682,7 @@
     }
 
     .k-grid-virtual .k-grid-content {
+        .k-grid-table,
         > table {
             position: absolute;
             z-index: 1;
