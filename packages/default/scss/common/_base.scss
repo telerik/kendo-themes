@@ -172,6 +172,48 @@
     .k-content {
         @include appearance( panel );
     }
+    .k-block {
+        @extend .k-widget;
+        @include border-radius();
+        padding: $panel-padding-y $panel-padding-x;
+
+        > .k-header {
+            @include appearance( header );
+            margin: #{-$panel-padding-y} #{-$panel-padding-x} $panel-padding-y;
+            padding: $header-padding-y $popup-padding-x;
+        }
+
+        ::selection {
+            background-color: $accent;
+            color: $accent-contrast;
+        }
+    }
+
+    html .k-info-colored {
+        color: #50607f;
+        border-color: #d0d9df;
+        background-color: #f0f9ff;
+    }
+
+    html .k-success-colored {
+        color: #507f50;
+        border-color: #d0dfd0;
+        background-color: #f0fff0;
+    }
+
+    .k-error-colored {
+        color: #7f5050;
+        border-color: #dfd0d0;
+        background-color: #fff0f0;
+    }
+
+    .k-shadow {
+        box-shadow: $popup-shadow;
+    }
+
+    .k-inset {
+        box-shadow: inset $popup-shadow inset;
+    }
 
 
     // Header
