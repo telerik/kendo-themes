@@ -36,6 +36,11 @@
     .k-maskedtextbox {
         display: inline-flex;
         border-width: 0;
+
+        .k-textbox {
+            flex: 1 0 0;
+            min-width: 0;
+        }
     }
 
     .k-input,
