@@ -4,7 +4,8 @@
     $progressbar-border: $base-border !default;
     $progressbar-chunk-border: $bg-color !default;
     $progressbar-selected-bg: $accent !default;
-    $progressbar-selected-border: darken($accent, 4%) !default;
+    $progressbar-selected-border: darken( $progressbar-selected-bg, 4%) !default;
+    $progressbar-selected-gradient: rgba( adjust-hue( $progressbar-selected-bg, 14), 0 ), rgba( adjust-hue( $progressbar-selected-bg, 14), .2 ) !default;
 
     .k-progressbar {
         background-color: $progressbar-bg;
@@ -20,6 +21,7 @@
         .k-state-selected {
             border-color: $progressbar-selected-border;
             background-color: $progressbar-selected-bg;
+            @include linear-gradient( $progressbar-selected-gradient );
         }
 
         .k-item {
