@@ -281,6 +281,7 @@
 
             .k-input {
                 flex: 1;
+                width: 100px; // fix width for Edge
             }
             .k-icon {
                 margin: 0;
@@ -315,14 +316,67 @@
             .k-upload-button {
                 margin: 0;
             }
+
+            .k-upload-status {
+                display: none;
+            }
         }
 
+        .k-upload-files {
+            display: block;
+        }
+
+        // Tiles
         .k-tiles {
             height: 390px;
             margin: 0 0 $spacer-y 0;
             padding: $padding-y $padding-x;
             border-top-width: 0;
             overflow: auto;
+        }
+
+        .k-tile {
+            float: left;
+            width: 33%;
+            height: 90px;
+            padding: $padding-y $padding-x;
+            box-sizing: border-box;
+            white-space: nowrap;
+            overflow: hidden;
+            cursor: pointer;
+            @include border-radius();
+
+            .k-i-file,
+            .k-i-folder {
+                font-size: 4em;
+            }
+
+            input {
+                width: 100px;
+            }
+
+            strong {
+                display: block;
+                font-weight: 400;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .k-thumb {
+            float: left;
+            margin-right: $padding-x-sm;
+        }
+
+        .k-breadcrumbs-wrap {
+            position: absolute;
+            left: $input-padding-x;
+            top: $input-padding-y;
+
+            .k-icon {
+                position: static;
+                margin-top: 0;
+            }
         }
     }
 
