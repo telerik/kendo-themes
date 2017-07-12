@@ -51,6 +51,10 @@
     }
     .k-gantt-actions {
         float: left;
+
+        .k-button + .k-button {
+            margin-left: $toolbar-padding-x;
+        }
     }
     .k-gantt-views {
         float: right;
@@ -442,6 +446,11 @@
 
         .k-gantt-actions {
             float: right;
+
+            .k-button + .k-button {
+                margin-left: 0;
+                margin-right: $toolbar-padding-x;
+            }
         }
 
         .k-gantt-rows,
