@@ -1,0 +1,13 @@
+// We need this before we update to the latest version
+// Modified from https://github.com/twbs/bootstrap/blob/v4-dev/scss/_functions.scss
+$theme-color-interval: 8% !default;
+@function theme-color-level($color, $level: 0) {
+    $color-base: if($level > 0, #000, #fff);
+
+    @if $level < 0 {
+        // Lighter values need a quick double negative for the Sass math to work
+        @return mix($color-base, $color, $level * -1 * $theme-color-interval);
+    } @else {
+        @return mix($color-base, $color, $level * $theme-color-interval);
+    }
+}

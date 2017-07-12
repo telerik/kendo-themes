@@ -1,5 +1,6 @@
 @import "vendor/color-helpers/math";
 @import "vendor/color-helpers/contrast";
+@import "vendor/bootstrap/functions";
 
 
 @function tint( $color, $percentage: 10 ) {

@@ -4,8 +4,11 @@
     $alert-padding-x: 1em !default;
 
     // Base
+    .k-notification {
+        @include border-radius();
+    }
     .k-notification-wrap {
-        font-size: $font-size;
+        font-size: $font-size-sm;
         padding: $alert-padding-y $alert-padding-x * 2 $alert-padding-y $alert-padding-x;
         white-space: nowrap;
         cursor: default;

@@ -313,6 +313,11 @@ $input-focused-border: $input-hovered-border !default;
 $input-focused-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
 
+// Link
+$link-text: $accent !default;
+$link-hover-text: desaturate(darken($accent, 5), 25) !default;
+
+
 // Node
 $node-text: $base-text !default;
 $node-bg: $base-bg !default;
@@ -343,9 +348,19 @@ $list-item-selected-bg: $selected-bg !default;
 $list-item-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 
-// Link
-$link-text: $accent !default;
-$link-hover-text: desaturate(darken($accent, 5), 25) !default;
+// Notification
+$notification-info-border: $info !default;
+$notification-info-bg: $info !default;
+$notification-info-text: contrast-wcag( $notification-info-bg ) !default;
+$notification-success-border: $success !default;
+$notification-success-bg: $success !default;
+$notification-success-text: contrast-wcag( $notification-success-bg ) !default;
+$notification-warning-border: $warning !default;
+$notification-warning-bg: $warning !default;
+$notification-warning-text: contrast-wcag( $notification-warning-bg ) !default;
+$notification-error-border: $error !default;
+$notification-error-bg: $error !default;
+$notification-error-text: contrast-wcag( $notification-error-bg ) !default;
 
 
 // Chart
