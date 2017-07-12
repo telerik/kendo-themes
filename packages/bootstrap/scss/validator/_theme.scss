@@ -1,9 +1,9 @@
 @include exports("validator/theme") {
 
     .k-tooltip-validation {
-        border-color: $alert-warning-border;
-        color: $alert-warning-text;
-        background-color: $alert-warning-bg;
+        border-color: $notification-warning-border;
+        color: $notification-warning-text;
+        background-color: $notification-warning-bg;
     }
 
 }

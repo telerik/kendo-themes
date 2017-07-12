@@ -2,28 +2,27 @@
 
     // Theme
     .k-notification {
-        @include border-radius( $border-radius );
         @include appearance( panel );
     }
     .k-notification-info {
-        border-color: $alert-info-border;
-        color: $alert-info-text;
-        background-color: $alert-info-bg;
+        border-color: $notification-info-border;
+        color: $notification-info-text;
+        background-color: $notification-info-bg;
     }
     .k-notification-success {
-        border-color: $alert-success-border;
-        color: $alert-success-text;
-        background-color: $alert-success-bg;
+        border-color: $notification-success-border;
+        color: $notification-success-text;
+        background-color: $notification-success-bg;
     }
     .k-notification-warning {
-        border-color: $alert-warning-border;
-        color: $alert-warning-text;
-        background-color: $alert-warning-bg;
+        border-color: $notification-warning-border;
+        color: $notification-warning-text;
+        background-color: $notification-warning-bg;
     }
     .k-notification-error {
-        border-color: $alert-danger-border;
-        color: $alert-danger-text;
-        background-color: $alert-danger-bg;
+        border-color: $notification-error-border;
+        color: $notification-error-text;
+        background-color: $notification-error-bg;
     }
 
 }
