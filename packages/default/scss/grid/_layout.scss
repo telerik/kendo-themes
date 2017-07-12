@@ -470,6 +470,11 @@
             margin: 0;
             margin-top: calc(#{$grid-form-component-offset} * -1);
             margin-bottom: calc(#{$grid-form-component-offset} * -1);
+            margin-right: (-$cell-padding-x);
+
+            & + .k-link {
+                margin-right: calc(#{$button-calc-size} - #{$cell-padding-x}); // .k-header-column-menu width
+            }
         }
 
         .k-header > .k-link > .k-icon {
