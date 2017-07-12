@@ -580,6 +580,7 @@
             width: button-size();
             display: inline-flex;
             flex: none;
+            align-content: center;
         }
 
         .k-dropdown-operator .k-input {
@@ -758,6 +759,15 @@
         top: 50%;
         left: 50%;
         font-size: 64px;
+    }
+
+    .k-loading-pdf-progress {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
 }
