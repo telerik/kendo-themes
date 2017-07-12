@@ -123,11 +123,11 @@
         }
     }
     .k-spreadsheet-formula-bar {
-        flex: 1;
         border-color: inherit;
         display: flex;
         flex-direction: row;
         align-items: center;
+        flex: 1;
 
         &::before {
             @extend .k-i-formula-fx;
@@ -149,12 +149,17 @@
         .k-list-scroller {
             display: none;
         }
+
+        .k-spreadsheet-formula-input {
+            padding: $input-padding-y $input-padding-x;
+            line-height: $form-line-height;
+        }
     }
     .k-spreadsheet-formula-input {
-        margin: 0 $padding-y;
         outline: 0;
         white-space: pre;
         flex: 1;
+        box-sizing: border-box;
 
         > .k-syntax-func.k-syntax-at-point,
         > .k-syntax-bool.k-syntax-at-point,
@@ -177,6 +182,17 @@
         .k-item {
             padding: $list-item-padding-y $list-item-padding-x;
         }
+    }
+
+
+    // Cell editor
+    .k-spreadsheet-cell-editor {
+        padding: 0 3px;
+        line-height: 20px;
+        display: none;
+        overflow: hidden;
+        position: absolute;
+        z-index: 2000;
     }
 
 
@@ -587,8 +603,11 @@
 
     }
 
+    .k-spreadsheet-format-popup {
+        .k-item { justify-content: space-between; }
+        .k-spreadsheet-sample { order: 1; }
+    }
     .k-spreadsheet-sample {
-        float: right;
         opacity: .7;
     }
 }
@@ -640,15 +659,6 @@
             border-width: 1px;
             border-style: solid;
             border-color: inherit;
-        }
-
-        .k-tabstrip-top  {
-            margin-left: ($spacer / -2);
-            margin-right: ($spacer / -2);
-
-            & > .k-tabstrip-items {
-                padding: 0 $padding-x;
-            }
         }
     }
 

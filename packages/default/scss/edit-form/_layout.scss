@@ -48,6 +48,7 @@
 
     // Action buttons
     .k-action-buttons {}
+    .k-popup-edit-form > .k-action-buttons,
     .k-edit-form-container .k-action-buttons {
         margin: $spacer (-$window-inner-padding-x) (-$window-inner-padding-y);
     }

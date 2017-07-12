@@ -42,6 +42,13 @@
     .k-syntax-paren-match { background-color: #caf200; }
 
 
+    // Cell editor
+    .k-spreadsheet-cell-editor {
+        color: $panel-text;
+        background-color: $panel-bg;
+    }
+
+
     // Selection
     .k-spreadsheet .k-selection-full,
     .k-spreadsheet .k-selection-partial {

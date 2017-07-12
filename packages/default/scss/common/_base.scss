@@ -128,6 +128,19 @@
         display: none !important; // sass-lint:disable-line no-important
     }
 
+
+    // Horizontal rule
+    .k-hr {
+        margin: ($spacer-y / 2) auto;
+        padding: 0;
+        height: 0;
+        border-width: 1px 0 0;
+        border-style: solid;
+        display: block;
+        float: none;
+        clear: both;
+    }
+
 }
 
 
@@ -313,6 +326,12 @@
     // Dirty indicator
     .k-dirty {
         border-color: $error $error transparent transparent;
+    }
+
+
+    // Horizontal rule
+    .k-hr {
+        border-color: $panel-border;
     }
 
 }
