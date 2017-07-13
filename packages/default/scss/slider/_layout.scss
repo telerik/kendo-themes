@@ -228,7 +228,7 @@ $slider-track-thickness: 4px !default;
         }
 
         .k-slider-vertical & {
-            top: 0;
+            bottom: 0;
             left: 50%;
             margin-left: -($slider-track-thickness / 2);
             width: $slider-track-thickness;
@@ -241,7 +241,7 @@ $slider-track-thickness: 4px !default;
         }
 
         .k-slider-vertical & {
-            top: $button-spacing;
+            bottom: $button-spacing;
         }
     }
 
