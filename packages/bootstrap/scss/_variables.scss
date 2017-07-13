@@ -454,3 +454,6 @@ $chart-area-opacity: .8 !default;
 $icon-size: 16px;
 $icon-size-lg: 32px;
 $icon-spacing: ($spacer / 2) !default;
+
+// import any default values from kendo-theme-default
+@import "~@progress/kendo-theme-default/scss/variables";

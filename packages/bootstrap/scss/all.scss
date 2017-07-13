@@ -1,9 +1,6 @@
 @import "custom";
 @import "variables";
 
-// Use variable defaults from Default theme, if undefined
-@import "~@progress/kendo-theme-default/scss/variables";
-
 // Dependencies
 @import "mixins";
 @import "common/all";
