@@ -23,7 +23,6 @@ addons:
 before_install:
   - npm i -g npm@^3.8.0
 before_script:
-  - git --version
   - git fetch --unshallow origin refs/heads/master:refs/remotes/origin/master
   - npm prune
 after_success:
