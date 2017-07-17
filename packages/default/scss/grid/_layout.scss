@@ -545,14 +545,10 @@
             margin-left: $cell-padding-y / 2;
         }
 
-        .k-widget,
+        .k-widget:not(.k-dropdown-operator),
         .k-filtercell-wrapper > .k-textbox {
             display: flex;
             flex: 1;
-        }
-
-        .k-widget {
-            width: auto;
         }
 
         .k-filtercell-wrapper > .k-textbox {
@@ -568,18 +564,6 @@
             padding-left: 0;
             padding-right: 0;
             text-indent: $padding-x;
-        }
-
-        .k-dropdown-operator {
-            width: button-size();
-            display: inline-flex;
-            flex: none;
-        }
-
-        .k-dropdown-operator .k-input {
-            padding: 0;
-            width: 0;
-            overflow: hidden;
         }
 
         &.k-filtercell-boolean {

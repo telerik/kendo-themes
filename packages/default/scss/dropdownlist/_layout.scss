@@ -15,4 +15,17 @@
             flex: 1;
         }
     }
+
+    .k-dropdown-operator {
+        width: auto;
+
+        .k-input {
+            display: none;
+        }
+
+        .k-select {
+            width: button-inner-size();
+        }
+    }
+
 }
