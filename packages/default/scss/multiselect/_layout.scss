@@ -9,6 +9,11 @@
             visibility: hidden;
         }
 
+        .k-clear-value {
+            top: $padding-x-lg / 2;
+            margin-top: 0;
+        }
+
         &[dir='rtl'],
         .k-rtl & {
             li.k-button {
