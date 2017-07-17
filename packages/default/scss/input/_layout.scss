@@ -94,10 +94,12 @@
         @include disabled;
     }
 
+    $checkbox-size: $icon-size !default;
+
     .k-checkbox-label,
     .k-radio-label {
         position: relative;
-        padding-left: add-two($icon-size, ($padding-x-lg / 2));
+        padding-left: add-two($checkbox-size, ($padding-x-lg / 2));
         vertical-align: text-top;
         cursor: pointer;
         display: inline-flex;
@@ -117,10 +119,10 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: $icon-size;
-        height: $icon-size;
+        width: $checkbox-size;
+        height: $checkbox-size;
         text-align: center;
-        font-size: $icon-size;
+        font-size: $checkbox-size;
         line-height: $line-height * .8;
         border-width: 1px;
         border-style: solid;
@@ -132,10 +134,10 @@
         box-sizing: border-box;
         content: "";
         position: absolute;
-        width: $icon-size / 2;
-        height: $icon-size / 2;
-        top: $icon-size / 4;
-        left: $icon-size / 4;
+        width: $checkbox-size / 2;
+        height: $checkbox-size / 2;
+        top: $checkbox-size / 4;
+        left: $checkbox-size / 4;
     }
 
     .k-checkbox:indeterminate:disabled + .k-checkbox-label::after {
@@ -164,8 +166,8 @@
 
     .k-radio-label::before {
         content: "";
-        width: $icon-size;
-        height: $icon-size;
+        width: $checkbox-size;
+        height: $checkbox-size;
         position: absolute;
         left: 0;
         top: 0;
@@ -178,10 +180,10 @@
     .k-radio:checked + .k-radio-label::after {
         content: "";
         position: absolute;
-        width: $icon-size / 2;
-        height: $icon-size / 2;
-        top: $icon-size / 4;
-        left: $icon-size / 4;
+        width: $checkbox-size / 2;
+        height: $checkbox-size / 2;
+        top: $checkbox-size / 4;
+        left: $checkbox-size / 4;
         border-radius: 50%;
     }
 
