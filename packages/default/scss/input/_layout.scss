@@ -95,6 +95,8 @@
     }
 
     $checkbox-size: $icon-size !default;
+    $checkbox-border-width: 1px !default;
+    $checkbox-line-height: 1 !default;
 
     .k-checkbox-label,
     .k-radio-label {
@@ -124,7 +126,7 @@
         text-align: center;
         font-size: $checkbox-size;
         line-height: $line-height * .8;
-        border-width: 1px;
+        border-width: $checkbox-border-width;
         border-style: solid;
         display: inline-flex;
         align-items: center;
@@ -160,7 +162,7 @@
     }
 
     .k-checkbox:disabled + .k-checkbox-label::before {
-        border-width: 1px;
+        border-width: $checkbox-border-width;
         border-style: solid;
     }
 
@@ -172,7 +174,7 @@
         left: 0;
         top: 0;
         border-radius: $radio-radius;
-        border-width: 1px;
+        border-width: $checkbox-border-width;
         border-style: solid;
         padding: 0;
     }
