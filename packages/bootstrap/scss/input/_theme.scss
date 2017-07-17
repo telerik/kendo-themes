@@ -1,7 +1,5 @@
 @include exports("input/theme") {
 
-    $textbox-invalid-border-color: rgba($error, .5) !default;
-
     $radio-bg: lighten($input-border, 6.7) !default;
     $radio-border: $radio-bg !default;
     $radio-hovered-border: $input-hovered-border !default;
@@ -42,7 +40,7 @@
         &.k-state-invalid,
         &.ng-invalid {
             color: $error;
-            border-color: $textbox-invalid-border-color;
+            border-color: $invalid-border-color;
         }
 
         // Selection
