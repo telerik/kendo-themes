@@ -41,7 +41,7 @@
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
             color: $error;
-            border-color: $invalid-border-color;
+            border-color: $invalid-border;
         }
 
         &::-moz-selection {
