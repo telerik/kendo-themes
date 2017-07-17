@@ -660,6 +660,10 @@
             padding-top: 0;
             padding-bottom: 0;
         }
+
+        .k-dirty-cell {
+            position: static;
+        }
     }
     .k-grid-edit-row,
     .k-edit-cell {
