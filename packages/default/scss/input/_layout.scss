@@ -106,7 +106,26 @@
         cursor: pointer;
         display: inline-flex;
         align-items: baseline;
-        line-height: 1;
+        line-height: $checkbox-line-height;
+
+        .k-ripple {
+            top: $checkbox-size / 2;
+            left: $checkbox-size / 2;
+            right: auto;
+            bottom: auto;
+            width: $checkbox-size * 2;
+            height: $checkbox-size * 2;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+
+        .k-ripple-blob {
+            // TODO: enhance ripple to yield positioning logic instead of using !important
+            top: 50% !important;
+            left: 50% !important;
+            width: 200% !important;
+            height: 200% !important;
+        }
     }
 
     .k-checkbox-label::before,
