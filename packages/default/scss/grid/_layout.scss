@@ -265,22 +265,6 @@
             right: auto;
         }
 
-        .k-grid-edit-row td > .k-textbox,
-        .k-grid-edit-row td > .k-widget,
-        .k-edit-cell > .k-textbox,
-        .k-edit-cell > .k-widget {
-            width: $edit-cell-textbox-width;
-        }
-
-        .k-grid-edit-row td > .k-textbox,
-        .k-grid-edit-row td > .k-widget,
-        .k-command-cell > .k-button,
-        .k-edit-cell > .k-textbox,
-        .k-edit-cell > .k-widget {
-            margin-top: $grid-form-component-offset;
-            margin-bottom: $grid-form-component-offset;
-            vertical-align: top;
-        }
     }
 
     // Toolbar
@@ -675,6 +659,23 @@
         > .text-box {
             margin-left: $edit-cell-input-space;
         }
+    }
+
+    .k-grid-edit-row td > .k-textbox,
+    .k-grid-edit-row td > .k-widget,
+    .k-edit-cell > .k-textbox,
+    .k-edit-cell > .k-widget {
+        width: $edit-cell-textbox-width;
+    }
+
+    .k-grid-edit-row td > .k-textbox,
+    .k-grid-edit-row td > .k-widget,
+    .k-command-cell > .k-button,
+    .k-edit-cell > .k-textbox,
+    .k-edit-cell > .k-widget {
+        margin-top: $grid-form-component-offset;
+        margin-bottom: $grid-form-component-offset;
+        vertical-align: top;
     }
 
     // Resize handle
