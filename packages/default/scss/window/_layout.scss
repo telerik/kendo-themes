@@ -1,5 +1,8 @@
 @include exports("window/layout") {
 
+    $window-titlebar-border-width: 0 0 1px !default;
+    $window-titlebar-border-style: solid !default;
+
     .k-window {
         padding: 0;
         max-width: 98vw;
@@ -18,19 +21,19 @@
         }
     }
 
-
     // Title bar
     .k-window-titlebar {
         padding: $window-titlebar-padding-y $window-titlebar-padding-x;
-        min-height: 16px;
-        border-width: 0 0 1px;
-        border-style: solid;
+        border-width: $window-titlebar-border-width;
+        border-style: $window-titlebar-border-style;
         white-space: nowrap;
         display: flex;
         flex-direction: row;
         flex-shrink: 0;
         align-items: center;
     }
+
+    // Title bar title text
     .k-window-title {
         margin: 0;
         font-size: $font-size-lg;

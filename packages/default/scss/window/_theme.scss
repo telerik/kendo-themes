@@ -4,6 +4,9 @@
     $window-shadow: 0 3px 3px 0 rgba(0, 0, 0, .06) !default;
     $window-focused-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
 
+    $window-titlebar-border-color: inherit !default;
+    $window-titlebar-bg: $header-bg !default;
+    $window-titlebar-text: $header-text !default;
 
     .k-window {
         @include appearance( panel );
@@ -17,8 +20,7 @@
 
     // Titlebar
     .k-window-titlebar {
-        @include appearance( header );
-        border-color: inherit;
+        @include fill( $window-titlebar-text, $window-titlebar-bg, $window-titlebar-border-color );
         background-clip: padding-box;
 
         .k-ie11 &,
@@ -26,6 +28,7 @@
         .k-edge13 & {
             background-clip: border-box;
         }
+
     }
 
 }

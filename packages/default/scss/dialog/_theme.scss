@@ -1,19 +1,19 @@
 @include exports("dialog/theme") {
 
+    $dialog-titlebar-border-color: inherit !default;
+    $dialog-titlebar-bg: $header-bg !default;
+    $dialog-titlebar-text: $header-text !default;
 
     .k-dialog {}
 
 
     // Titlebar
     .k-dialog-titlebar {
-        color: $accent-contrast;
-        background-color: $accent;
-        background-image: none;
+        @include fill( $dialog-titlebar-text, $dialog-titlebar-bg, $dialog-titlebar-border-color );
     }
 
 
     .k-dialog-buttongroup {
-
         .k-button {
             padding: $padding-x * 2;
             color: inherit;
