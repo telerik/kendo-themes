@@ -1,19 +1,5 @@
 @include exports('input/theme') {
 
-    $radio-border: $input-border !default;
-    $radio-bg: $input-bg !default;
-    $radio-checked-bg: $accent !default;
-    $radio-checked-text: $accent-contrast !default;
-
-    $checkbox-bg: $input-bg !default;
-    $checkbox-border: $input-border !default;
-    $checkbox-checked-bg: $accent !default;
-    $checkbox-checked-border: $accent !default;
-    $checkbox-checked-text: $accent-contrast !default;
-
-    $focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
-    $focused-checked-shadow: 0 0 0 2px rgba($accent, .3) !default;
-
     .k-textbox,
     .k-input.k-textbox,
     .k-textarea {
@@ -74,6 +60,24 @@
             color: rgba($input-text, .5);
         }
     }
+
+}
+
+@include exports('input/checkbox-radiobutton') {
+
+    $radio-border: $input-border !default;
+    $radio-bg: $input-bg !default;
+    $radio-checked-bg: $accent !default;
+    $radio-checked-text: $accent-contrast !default;
+
+    $checkbox-bg: $input-bg !default;
+    $checkbox-border: $input-border !default;
+    $checkbox-checked-bg: $accent !default;
+    $checkbox-checked-border: $accent !default;
+    $checkbox-checked-text: $accent-contrast !default;
+
+    $focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
+    $focused-checked-shadow: 0 0 0 2px rgba($accent, .3) !default;
 
     .k-radio + .k-radio-label {
         &::before {
