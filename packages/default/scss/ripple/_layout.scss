@@ -1,0 +1,28 @@
+@include exports( 'ripple/layout' ) {
+
+    .k-ripple {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+    .k-ripple-blob {
+        pointer-events: none;
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0;
+        padding: 0;
+        transform: translate(-50%, -50%) scale(0);
+        transition: opacity 100ms linear, transform 500ms cubic-bezier(.4, 0, .2, 1);
+        background-color: rgba(0, 0, 0, .1);
+
+        .k-primary & {
+            background-color: rgba(255, 255, 255, .2);
+        }
+    }
+
+}
