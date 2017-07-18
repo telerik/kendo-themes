@@ -7,6 +7,9 @@ $slider-alt-size: 30px !default;
 $slider-button-offset: 10px !default;
 $slider-button-size: ($slider-alt-size - 2) !default;
 $slider-track-thickness: 4px !default;
+$slider-draghandle-size: 14px !default;
+$slider-draghandle-border-width: 1px !default;
+$slider-draghandle-active-size: $slider-draghandle-size !default;
 
 @include exports('slider/layout') {
 
@@ -250,7 +253,7 @@ $slider-track-thickness: 4px !default;
         background-color: transparent;
         background-repeat: no-repeat;
         border-style: solid;
-        border-width: 1px;
+        border-width: $slider-draghandle-border-width;
         outline: 0;
         overflow: hidden;
         position: absolute;
@@ -258,17 +261,29 @@ $slider-track-thickness: 4px !default;
         text-decoration: none;
         text-indent: -3333px;
         box-sizing: content-box;
+        width: $slider-draghandle-size;
+        height: $slider-draghandle-size;
+
+        $slider-draghandle-offset: -(($slider-draghandle-size - ($slider-track-thickness / 2)) / 2) !default;
+        $slider-draghandle-active-offset: -(($slider-draghandle-active-size - ($slider-track-thickness / 2)) / 2) !default;
 
         .k-slider-horizontal & {
-            height: 14px;
-            top: -6px;
-            width: 14px;
+            top: $slider-draghandle-offset;
+
+
+            &:active,
+            &.k-pressed {
+                top: $slider-draghandle-active-offset;
+            }
         }
 
         .k-slider-vertical & {
-            height: 14px;
-            left: -6px;
-            width: 14px;
+            left: $slider-draghandle-offset;
+
+            &:active,
+            &.k-pressed {
+                left: $slider-draghandle-active-offset;
+            }
         }
 
         .k-slider-transitions.k-slider-horizontal & {
@@ -277,6 +292,12 @@ $slider-track-thickness: 4px !default;
 
         .k-slider-transitions.k-slider-vertical & {
             transition: bottom  $transition-speed $transition-function, background-color $transition-speed $transition-function;
+        }
+
+        &:active,
+        &.k-pressed {
+            width: $slider-draghandle-active-size;
+            height: $slider-draghandle-active-size;
         }
 
         &.k-pressed {
