@@ -63,11 +63,12 @@
 
 }
 
-@include exports('input/checkbox-radiobutton') {
+@include exports('input/theme/checkbox-radiobutton') {
 
     $radio-border: $input-border !default;
     $radio-bg: $input-bg !default;
     $radio-checked-bg: $accent !default;
+    $radio-checked-border: transparent !default;
     $radio-checked-text: $accent-contrast !default;
 
     $checkbox-bg: $input-bg !default;
@@ -76,8 +77,10 @@
     $checkbox-checked-border: $accent !default;
     $checkbox-checked-text: $accent-contrast !default;
 
-    $focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
-    $focused-checked-shadow: 0 0 0 2px rgba($accent, .3) !default;
+    $checkbox-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
+    $checkbox-focused-checked-shadow: 0 0 0 2px rgba($accent, .3) !default;
+    $checkbox-focused-border: $input-hovered-border;
+    $checkbox-focused-checked-border: $accent;
 
     .k-radio + .k-radio-label {
         &::before {
@@ -89,7 +92,7 @@
     .k-radio:checked + .k-radio-label {
         &::before {
             background-color: $radio-checked-bg;
-            border-color: transparent;
+            border-color: $radio-checked-border;
             box-shadow: 0 0 1px 0 $radio-checked-bg inset;
         }
 
@@ -116,15 +119,21 @@
 
     .k-checkbox:focus + .k-checkbox-label::before,
     .k-radio:focus + .k-radio-label::before {
-        box-shadow: $focused-shadow;
-        border-color: $input-hovered-border;
+        box-shadow: $checkbox-focused-shadow;
+        border-color: $checkbox-focused-border;
     }
 
     .k-checkbox:focus:checked + .k-checkbox-label::before,
     .k-radio:focus:checked + .k-radio-label::before {
-        box-shadow: $focused-checked-shadow;
-        border-color: $accent;
+        box-shadow: $checkbox-focused-checked-shadow;
+        border-color: $checkbox-focused-checked-border;
     }
+
+}
+
+@include exports('input/theme/form-styles') {
+
+    $form-fieldset-legend-text: darken($text-color, 13%) !default;
 
     fieldset {
         border-color: $input-border;
@@ -133,8 +142,6 @@
     fieldset legend {
         color: $header-text;
     }
-
-    $form-fieldset-legend-text: darken($text-color, 13%) !default;
 
     .k-form,
     .k-form-inline {
