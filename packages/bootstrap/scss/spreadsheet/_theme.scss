@@ -68,6 +68,39 @@
 
 
 
+@include exports( "spreadsheet/filter/theme" ) {
+
+    // Filter button
+    .k-spreadsheet .k-filter-range {
+        border-color: $accent;
+    }
+    .k-spreadsheet-filter {
+        @include appearance( button );
+        box-shadow: inset 0 0 0 1px $button-border;
+
+        &.k-state-active {
+            @include appearance( pressed-button );
+        }
+
+        &:hover {
+            @include appearance( hovered-button );
+        }
+    }
+
+
+    // Filter menu
+    .k-spreadsheet-filter-menu {
+
+        .k-spreadsheet-value-treeview-wrapper {
+            @include appearance( panel );
+        }
+    }
+
+}
+
+
+
+
 @include exports( "spreadsheet/tools/theme" ) {
 
     .k-spreadsheet-popup {
