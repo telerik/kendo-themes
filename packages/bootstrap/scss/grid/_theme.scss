@@ -103,6 +103,19 @@
             margin-top: 2px;
         }
 
+        .k-grid-filter {}
+        .k-grid-filter:hover {
+            color: $button-hovered-text;
+            background-color: $button-hovered-bg;
+        }
+        .k-grid-filter:focus {
+            box-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .1 );
+        }
+        .k-grid-filter.k-state-active {
+            color: $selected-text;
+            background-color: $selected-bg;
+        }
+
     }
     .k-grid-footer {
         @include appearance( header );
