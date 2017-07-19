@@ -9,13 +9,16 @@ $slider-button-size: ($slider-alt-size - 2) !default;
 $slider-track-thickness: 4px !default;
 $slider-draghandle-size: 14px !default;
 $slider-draghandle-border-width: 1px !default;
-$slider-draghandle-active-size: $slider-draghandle-size !default;
+$slider-draghandle-active-scale: 1 !default;
 
 @include exports('slider/layout') {
 
     $button-spacing: ($slider-button-size + $slider-button-offset);
     $transition-speed: .3s;
     $transition-function: ease-out;
+
+    $draghandle-transition-speed: .4s;
+    $draghandle-transition-function: cubic-bezier(.25, .8, .25, 1);
 
     .k-slider {
         background-color: transparent;
@@ -283,40 +286,32 @@ $slider-draghandle-active-size: $slider-draghandle-size !default;
         width: $slider-draghandle-size;
         height: $slider-draghandle-size;
 
-        $slider-draghandle-offset: -(($slider-draghandle-size - ($slider-track-thickness / 2)) / 2) !default;
-        $slider-draghandle-active-offset: -(($slider-draghandle-active-size - ($slider-track-thickness / 2)) / 2) !default;
-
         .k-slider-horizontal & {
-            top: $slider-draghandle-offset;
-
+            top: 50%;
+            transform: translateY(-50%);
 
             &:active,
             &.k-pressed {
-                top: $slider-draghandle-active-offset;
+                transform: translateY(-50%) scale($slider-draghandle-active-scale);
             }
         }
 
         .k-slider-vertical & {
-            left: $slider-draghandle-offset;
+            left: 50%;
+            transform: translateX(-50%);
 
             &:active,
             &.k-pressed {
-                left: $slider-draghandle-active-offset;
+                transform: translateX(-50%) scale($slider-draghandle-active-scale);
             }
         }
 
         .k-slider-transitions.k-slider-horizontal & {
-            transition: left $transition-speed $transition-function, background-color $transition-speed $transition-function;
+            transition: left $transition-speed $transition-function, background-color $transition-speed $transition-function, transform $draghandle-transition-speed $draghandle-transition-function;
         }
 
         .k-slider-transitions.k-slider-vertical & {
-            transition: bottom  $transition-speed $transition-function, background-color $transition-speed $transition-function;
-        }
-
-        &:active,
-        &.k-pressed {
-            width: $slider-draghandle-active-size;
-            height: $slider-draghandle-active-size;
+            transition: bottom  $transition-speed $transition-function, background-color $transition-speed $transition-function, transform $draghandle-transition-speed $draghandle-transition-function;
         }
 
         &.k-pressed {
