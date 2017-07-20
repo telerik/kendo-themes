@@ -390,30 +390,6 @@
 @include exports( "editor/table-wizard/layout" ) {
 
     .k-editor-table-wizard-dialog {
-        display: flex;
-
-        // Edit form
-        .k-edit-form-container {
-            display: flex;
-            flex-direction: column;
-            flex: 1 1 auto;
-        }
-
-        // Tabstrip wrapper
-        .k-tabstrip-wrapper {
-            display: flex;
-            flex: 1 1 auto;
-            overflow: auto;
-
-            .k-tabstrip.k-root-tabs {
-                flex: 1 1 auto;
-                margin-bottom: 0;
-            }
-        }
-
-        .k-edit-field > .k-checkbox {
-            position: relative; // fix scrolling
-        }
 
         // Generic widgets
         .k-numerictextbox {
@@ -431,10 +407,6 @@
 
         .k-colorpicker {
             vertical-align: middle;
-        }
-
-        .k-edit-field > .k-checkbox {
-            position: relative; // fix scrolling
         }
 
 
