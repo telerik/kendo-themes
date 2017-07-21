@@ -252,6 +252,20 @@
 
 
     .k-filebrowser-dialog {
+        display: flex;
+
+        .k-edit-form-container {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+
+        }
+
+        .k-edit-form-content {
+            overflow: auto;
+            margin: (-$window-inner-padding-y) (-$window-inner-padding-x);
+            padding: $window-inner-padding-y $window-inner-padding-x;
+        }
 
         .k-edit-label {
             width: 18%;
@@ -263,6 +277,7 @@
     }
 
     .k-filebrowser {
+        max-width: 100%;
 
         // Breadcrumbs and search
         .k-floatwrap {
@@ -332,6 +347,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             height: 390px;
+            max-height: 50vh;
             margin: 0 0 $spacer-y 0;
             padding: $padding-y $padding-x;
             border-top-width: 0;
