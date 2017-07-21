@@ -113,23 +113,23 @@ $slider-draghandle-active-size: $slider-draghandle-size !default;
         .k-slider-topleft .k-tick { background-position: -122px center; }
         .k-slider-bottomright .k-tick { background-position: -152px center; }
 
-        .k-ticlarge { background-position: -2px center; }
-        .k-slider-topleft .k-ticlarge { background-position: -32px center; }
-        .k-slider-bottomright .k-ticlarge { background-position: -62px center; }
+        .k-tick-large { background-position: -2px center; }
+        .k-slider-topleft .k-tick-large { background-position: -32px center; }
+        .k-slider-bottomright .k-tick-large { background-position: -62px center; }
 
         .k-first { background-position: -92px 100%; }
-        .k-ticlarge.k-first { background-position: -2px 100%; }
+        .k-tick-large.k-first { background-position: -2px 100%; }
         .k-slider-topleft .k-first { background-position: -122px 100%; }
-        .k-slider-topleft .k-ticlarge.k-first { background-position: -32px 100%; }
+        .k-slider-topleft .k-tick-large.k-first { background-position: -32px 100%; }
         .k-slider-bottomright .k-first { background-position: -152px 100%; }
-        .k-slider-bottomright .k-ticlarge.k-first { background-position: -62px 100%; }
+        .k-slider-bottomright .k-tick-large.k-first { background-position: -62px 100%; }
 
         .k-last { background-position: -92px 0; }
-        .k-ticlarge.k-last { background-position: -2px 0; }
+        .k-tick-large.k-last { background-position: -2px 0; }
         .k-slider-topleft .k-last { background-position: -122px 0; }
-        .k-slider-topleft .k-ticlarge.k-last { background-position: -32px 0; }
+        .k-slider-topleft .k-tick-large.k-last { background-position: -32px 0; }
         .k-slider-bottomright .k-last { background-position: -152px 0; }
-        .k-slider-bottomright .k-ticlarge.k-last { background-position: -62px 0; }
+        .k-slider-bottomright .k-tick-large.k-last { background-position: -62px 0; }
 
         // labels
 
@@ -171,23 +171,23 @@ $slider-draghandle-active-size: $slider-draghandle-size !default;
         .k-slider-topleft .k-tick { background-position: center -122px; }
         .k-slider-bottomright .k-tick { background-position: center -152px; }
 
-        .k-ticlarge { background-position: center -2px; }
-        .k-slider-topleft .k-ticlarge { background-position: center -32px; }
-        .k-slider-bottomright .k-ticlarge { background-position: center -62px; }
+        .k-tick-large { background-position: center -2px; }
+        .k-slider-topleft .k-tick-large { background-position: center -32px; }
+        .k-slider-bottomright .k-tick-large { background-position: center -62px; }
 
         .k-first { background-position: 0 -92px; }
-        .k-ticlarge.k-first { background-position: 0 -2px; }
+        .k-tick-large.k-first { background-position: 0 -2px; }
         .k-slider-topleft .k-first { background-position: 0 -122px; }
-        .k-slider-topleft .k-ticlarge.k-first { background-position: 0 -32px; }
+        .k-slider-topleft .k-tick-large.k-first { background-position: 0 -32px; }
         .k-slider-bottomright .k-first { background-position: 0 -152px; }
-        .k-slider-bottomright .k-ticlarge.k-first { background-position: 0 -62px; }
+        .k-slider-bottomright .k-tick-large.k-first { background-position: 0 -62px; }
 
         .k-last { background-position: 100% -92px; }
-        .k-ticlarge.k-last { background-position: 100% -2px; }
+        .k-tick-large.k-last { background-position: 100% -2px; }
         .k-slider-topleft .k-last { background-position: 100% -122px; }
-        .k-slider-topleft .k-ticlarge.k-last { background-position: 100% -32px; }
+        .k-slider-topleft .k-tick-large.k-last { background-position: 100% -32px; }
         .k-slider-bottomright .k-last { background-position: 100% -152px; }
-        .k-slider-bottomright .k-ticlarge.k-last { background-position: 100% -62px; }
+        .k-slider-bottomright .k-tick-large.k-last { background-position: 100% -62px; }
 
         // labels
 
