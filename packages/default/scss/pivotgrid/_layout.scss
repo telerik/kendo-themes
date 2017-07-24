@@ -2,6 +2,10 @@
 
     .k-pivot {
         position: relative;
+
+        .k-grid td {
+            white-space: nowrap;
+      }
     }
 
     .k-pivot-toolbar {
