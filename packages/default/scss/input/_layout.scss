@@ -97,6 +97,7 @@
     $checkbox-size: $icon-size !default;
     $checkbox-border-width: 1px !default;
     $checkbox-line-height: 1 !default;
+    $checkbox-indeterminate-style: square !default;
 
     .k-checkbox-label,
     .k-radio-label {
@@ -155,10 +156,20 @@
         box-sizing: border-box;
         content: "";
         position: absolute;
-        width: $checkbox-size / 2;
-        height: $checkbox-size / 2;
-        top: $checkbox-size / 4;
-        left: $checkbox-size / 4;
+
+        @if $checkbox-indeterminate-style == 'dash' {
+            $height: $checkbox-size / 10;
+            height: $height;
+            top: ( ( $checkbox-size - $height ) / 2 );
+
+            width: $checkbox-size - 2 * $checkbox-border-width;
+            left: $checkbox-border-width;
+        } @else {
+            width: $checkbox-size / 2;
+            height: $checkbox-size / 2;
+            top: $checkbox-size / 4;
+            left: $checkbox-size / 4;
+        }
     }
 
     .k-checkbox:indeterminate:disabled + .k-checkbox-label::after {
