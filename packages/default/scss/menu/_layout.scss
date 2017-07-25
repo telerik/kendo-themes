@@ -28,6 +28,7 @@
             flex-direction: row;
             align-items: center;
             position: relative;
+            white-space: nowrap;
 
             .k-i-arrow-60-down {
                 margin-left: $icon-spacing;
