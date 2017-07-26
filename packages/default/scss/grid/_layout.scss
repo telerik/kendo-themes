@@ -211,7 +211,6 @@
             .k-grid-footer {
                 padding-left: 17px;
                 padding-right: 0;
-                flex: 0 0 auto;
             }
 
             .k-grid-header {
@@ -386,6 +385,7 @@
     }
     .k-grid-header,
     .k-grid-footer {
+        flex: 0 0 auto;
         padding-right: 17px;
         border-width: 0;
         border-style: solid;
