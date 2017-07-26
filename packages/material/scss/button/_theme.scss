@@ -11,6 +11,8 @@
 
     $flat-primary-active-bg: rgba(63, 81, 181, .12) !default;
 
+    $outline-size: inset 0 0 0 2px currentColor !default;
+
     // Default button
     .k-button {
         @include appearance( button );
@@ -108,6 +110,49 @@
         &.k-state-disabled {
             background-color: transparent;
             color: $button-disabled-text;
+        }
+    }
+
+    // Outline button
+    .k-button.k-outline {
+        box-shadow: $outline-size;
+
+        // Hover and focus states
+        &:hover,
+        &.k-state-hover,
+        &:focus {
+            box-shadow: $outline-size;
+
+            &::before {
+                background-color: currentColor;
+                opacity: .12;
+            }
+        }
+
+        &:focus {
+            background-color: transparent;
+        }
+
+        &.k-state-disabled {
+            background-color: transparent;
+            color: currentColor;
+            opacity: .38;
+        }
+    }
+
+    .k-button.k-primary.k-outline {
+        color: $accent;
+
+        // Pressed state
+        &:active,
+        &.k-state-active {
+            background-color: transparent;
+        }
+
+        // Focused state
+        &:focus {
+            color: $accent;
+            background-color: transparent;
         }
     }
 }
