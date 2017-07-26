@@ -386,6 +386,7 @@
     .k-grid-header,
     .k-grid-footer {
         flex: 0 0 auto;
+        display: flex;
         padding-right: 17px;
         border-width: 0;
         border-style: solid;
@@ -711,6 +712,7 @@
     .k-grid-content-locked,
     .k-grid-footer-locked,
     .k-grid-header-locked {
+        flex: 1 0 auto;
         display: inline-block;
         vertical-align: top;
         overflow: hidden;
@@ -719,9 +721,10 @@
         border-width: 0 1px 0 0;
     }
 
-    .k-grid-content-locked+.k-grid-content,
-    .k-grid-footer-locked+.k-grid-footer-wrap,
-    .k-grid-header-locked+.k-grid-header-wrap {
+    .k-grid-content,
+    .k-grid-footer-wrap,
+    .k-grid-header-wrap {
+        flex: 1 1 auto;
         display: inline-block;
         vertical-align: top;
     }
