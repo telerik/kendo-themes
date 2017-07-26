@@ -102,6 +102,12 @@
         width: 14400px;
     }
 
+    //PDF export icons fix
+    .kendo-pdf-hide-pseudo-elements::before,
+    .kendo-pdf-hide-pseudo-elements::after {
+        // sass-lint:disable-block no-important
+        display: none !important;
+    }
 
     // Flipping
     .k-flip-h { transform: scaleX(-1); }
