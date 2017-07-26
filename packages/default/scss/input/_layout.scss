@@ -114,8 +114,8 @@
             left: $checkbox-size / 2;
             right: auto;
             bottom: auto;
-            width: $checkbox-size * 2;
-            height: $checkbox-size * 2;
+            width: $checkbox-size * 5 / 2;
+            height: $checkbox-size * 5 / 2;
             transform: translate(-50%, -50%);
             border-radius: 50%;
         }
