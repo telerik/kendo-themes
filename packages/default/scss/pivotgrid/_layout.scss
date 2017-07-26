@@ -7,11 +7,7 @@
             white-space: nowrap;
       }
         .k-grid-content {
-            flex: none;
-        }
-
-        .k-grid-content .k-grid-footer td {
-            border-bottom-width: 1px;
+            flex: 1 1 auto;
         }
     }
 
