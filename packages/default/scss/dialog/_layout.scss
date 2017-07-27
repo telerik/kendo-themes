@@ -51,6 +51,7 @@
         border-color: inherit;
         background-color: transparent;
         display: flex;
+        flex: 0 0 auto;
 
         .k-button {
             // sass-lint:disable no-important
