@@ -1,0 +1,17 @@
+// Infinite calendar and timepicker
+@mixin hide-scrollbar($dir: 'right', $max-scrollbar: 100px) {
+    // anything larger than the scrollbar width will do
+    $scrollbar-size: 17px;
+    $margin: -$max-scrollbar - $scrollbar-size;
+
+    padding-right: $max-scrollbar;
+    padding-left: $max-scrollbar;
+    margin-left: -$max-scrollbar;
+    margin-right: -$max-scrollbar;
+
+    @if ($dir == 'right') {
+        margin-right: $margin;
+    } @else {
+        margin-left: $margin;
+    }
+}
