@@ -85,6 +85,16 @@ $slider-draghandle-active-size: $slider-draghandle-size !default;
                 left: auto;
                 right: 0;
             }
+
+            .k-button-increase {
+                left: 0;
+                right: auto;
+            }
+
+            .k-button-decrease {
+                right: 0;
+                left: auto;
+            }
         }
     }
 
@@ -209,6 +219,15 @@ $slider-draghandle-active-size: $slider-draghandle-size !default;
 
         .k-slider-topleft .k-label {
             top: -1.2em;
+        }
+
+        &[dir='rtl'] {
+            .k-button-increase,
+            .k-button-decrease {
+                .k-icon {
+                    transform: rotate(180deg);
+                }
+            }
         }
     }
 
