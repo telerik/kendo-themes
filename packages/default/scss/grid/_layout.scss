@@ -383,10 +383,10 @@
         position: relative;
         overflow: hidden;
     }
+
     .k-grid-header,
     .k-grid-footer {
         flex: 0 0 auto;
-        display: flex;
         padding-right: 17px;
         border-width: 0;
         border-style: solid;
@@ -395,6 +395,11 @@
         table {
             table-layout: fixed;
         }
+    }
+
+    div.k-grid-header,
+    div.k-grid-footer {
+        display: flex;
     }
 
     .k-grid-header {
