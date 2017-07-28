@@ -238,10 +238,10 @@
             pointer-events: none;
             position: absolute;
             z-index: 0;
-            top: -1px;
-            left: -1px;
-            right: -1px;
-            bottom: -1px;
+            top: -$button-border-width;
+            left: -$button-border-width;
+            right: -$button-border-width;
+            bottom: -$button-border-width;
         }
         &::after {
             content: "";
@@ -251,10 +251,10 @@
             pointer-events: none;
             position: absolute;
             z-index: 0;
-            top: -1px;
-            left: -1px;
-            right: -1px;
-            bottom: -1px;
+            top: -$button-border-width;
+            left: -$button-border-width;
+            right: -$button-border-width;
+            bottom: -$button-border-width;
         }
 
         // Hover state
