@@ -135,6 +135,9 @@
         border-color: inherit;
         outline: 0;
     }
+    &.k-resizable .k-editable-area {
+        padding: $input-padding-y $input-padding-y 16px;
+    }
 
 
     $ct-cell-size: 20px;
