@@ -209,14 +209,19 @@
         padding: 0;
     }
 
-    .k-radio:checked + .k-radio-label::after {
+    .k-radio-label::after {
         content: "";
         position: absolute;
+        border-radius: 50%;
         width: $checkbox-size / 2;
         height: $checkbox-size / 2;
         top: $checkbox-size / 4;
         left: $checkbox-size / 4;
-        border-radius: 50%;
+        transform: scale(0);
+    }
+
+    .k-radio:checked + .k-radio-label::after {
+        transform: scale(1);
     }
 
     .k-radio:disabled + .k-radio-label {
