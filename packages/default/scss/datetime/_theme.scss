@@ -1,6 +1,7 @@
 @include exports("datetime/theme") {
     $date-focus-shadow: $list-item-focused-shadow !default;
     $time-highlight-shadow: inset 0 0 0 1px rgba(0, 0, 0, .13) !default;
+    $time-list-focus-color: rgba(0, 0, 0, .13) !default;
 
     // Shared
     .k-datepicker,
@@ -94,6 +95,13 @@
 
         .k-title {
             @include appearance( header );
+        }
+
+        &.k-state-focused {
+            &::before,
+            &::after {
+                border-color: $time-list-focus-color;
+            }
         }
     }
 

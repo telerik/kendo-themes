@@ -135,6 +135,7 @@
     }
 
     $time-list-wrapper-padding: $padding-y * 8;
+    $time-list-focus-size: 2px;
 
     // Content
     .k-time-list-wrapper {
@@ -157,8 +158,34 @@
             min-width: 100%;
             height: 1.5em;
             line-height: 1.5em;
-            margin-top: -$time-list-wrapper-padding;
+            margin-top: calc(-50% + 1em);
 
+        }
+
+        &.k-state-focused {
+            &::before,
+            &::after {
+                display: block;
+                content: " ";
+                position: absolute;
+                width: 100%;
+                left: 0;
+                z-index: 11;
+                pointer-events: none;
+                height: calc(50% - 1em);
+                box-sizing: border-box;
+                border-style: solid;
+            }
+
+            &::before {
+                top: 0;
+                border-width: $time-list-focus-size $time-list-focus-size 0;
+            }
+
+            &::after {
+                bottom: 0;
+                border-width: 0 $time-list-focus-size $time-list-focus-size;
+            }
         }
     }
 
@@ -171,6 +198,11 @@
         height: 200px;
         line-height: $line-height;
         justify-content: center;
+
+        > ul {
+            height: auto;
+            position: absolute;
+        }
 
         .k-content {
             height: auto;
