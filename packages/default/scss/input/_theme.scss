@@ -79,8 +79,8 @@
 
     $checkbox-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
     $checkbox-focused-checked-shadow: 0 0 0 2px rgba($accent, .3) !default;
-    $checkbox-focused-border: $input-hovered-border;
-    $checkbox-focused-checked-border: $accent;
+    $checkbox-focused-border: $input-hovered-border !default;
+    $checkbox-focused-checked-border: $accent !default;
 
     .k-radio + .k-radio-label {
         &::before {
