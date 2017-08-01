@@ -1,4 +1,5 @@
 @include exports('button/layout') {
+    $bare-button-hover-opacity: .07 !default;
 
     // Button
     .k-button {
@@ -232,6 +233,7 @@
         &::before {
             content: "";
             background-color: currentColor;
+            @include border-radius();
             display: block;
             opacity: 0;
             transition: opacity .2s ease-in-out;
@@ -246,6 +248,7 @@
         &::after {
             content: "";
             border: 2px solid currentColor;
+            @include border-radius();
             display: block;
             opacity: 0;
             pointer-events: none;
@@ -263,7 +266,7 @@
             color: inherit;
 
             &::before {
-                opacity: .07;
+                opacity: $bare-button-hover-opacity;
                 z-index: initial;
             }
         }

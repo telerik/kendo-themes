@@ -231,7 +231,13 @@
 
 
     // Bare button
-    .k-button.k-bare {}
+    .k-button.k-bare {
+        &::before,
+        &::after {
+            border-radius: 0;
+        }
+    }
+
     .k-button.k-primary.k-bare {
         color: $accent;
     }
