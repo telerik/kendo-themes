@@ -7,12 +7,15 @@
 
     $checkbox-bg: $input-bg !default;
     $checkbox-border: $input-border !default;
+    $checkbox-hovered-bg: $input-bg !default;
+    $checkbox-hovered-border: $input-hovered-border !default;
+    $checkbox-hovered-text: $accent !default;
     $checkbox-checked-bg: $accent !default;
     $checkbox-checked-border: $accent !default;
     $checkbox-checked-text: $accent-contrast !default;
 
-    $focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
-    $focused-checked-shadow: 0 0 0 2px rgba($accent, .3) !default;
+    $focused-checkbox-shadow: 0 3px 3px 1px rgba(0, 0, 0, .06) !default;
+    $focused-checked-shadow: 0 3px 4px rgba($accent, .3) !default;
 
     .k-textbox,
     .k-input.k-textbox,
@@ -99,10 +102,21 @@
         border-color: $checkbox-border;
     }
 
+    .k-checkbox-label:hover::before {
+        border-color: $checkbox-hovered-border;
+    }
+
     .k-checkbox:checked + .k-checkbox-label::before {
         background-color: $checkbox-checked-bg;
         border-color: $checkbox-checked-border;
         color: $checkbox-checked-text;
+    }
+
+    .k-checkbox-label:hover::before,
+    .k-checkbox:checked + .k-checkbox-label:hover::before {
+        background-color: $checkbox-hovered-bg;
+        border-color: $checkbox-hovered-border;
+        color: $checkbox-hovered-text;
     }
 
     .k-checkbox:indeterminate + .k-checkbox-label::after {
@@ -112,7 +126,7 @@
 
     .k-checkbox:focus + .k-checkbox-label::before,
     .k-radio:focus + .k-radio-label::before {
-        box-shadow: $focused-shadow;
+        box-shadow: $focused-checkbox-shadow;
         border-color: $input-hovered-border;
     }
 
