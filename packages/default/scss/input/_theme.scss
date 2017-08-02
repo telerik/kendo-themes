@@ -104,14 +104,18 @@
     .k-checkbox-label::before {
         background-color: $checkbox-bg;
         border-color: $checkbox-border;
+
+        .k-checkbox:checked + & {
+            background-color: $checkbox-checked-bg;
+            border-color: $checkbox-checked-border;
+        }
     }
 
-    .k-checkbox:checked + .k-checkbox-label::before {
-        background-color: $checkbox-checked-bg;
-        border-color: $checkbox-checked-border;
+    .k-checkbox-label::after {
         color: $checkbox-checked-text;
     }
 
+    .k-checkbox:checked + .k-checkbox-label::after,
     .k-checkbox:indeterminate + .k-checkbox-label::after {
         background-color: $checkbox-checked-bg;
         border-color: $checkbox-checked-border;

@@ -130,7 +130,9 @@
     }
 
     .k-checkbox-label::before,
-    .k-radio-label::before {
+    .k-checkbox-label::after,
+    .k-radio-label::before,
+    .k-radio-label::after {
         font-family: "WebComponentsIcons";
         box-sizing: border-box;
     }
@@ -150,91 +152,95 @@
         border-style: solid;
         display: inline-flex;
         align-items: center;
+
+        .k-checkbox:disabled + & {
+            border-width: $checkbox-border-width;
+            border-style: solid;
+        }
     }
 
-    .k-checkbox:indeterminate + .k-checkbox-label::after {
-        box-sizing: border-box;
-        content: "";
+    .k-checkbox-label::after {
+        content: "\e118";
         position: absolute;
+        top: 0;
+        left: 0;
+        width: $checkbox-size;
+        height: $checkbox-size;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        border: $checkbox-border-width solid transparent;
+        overflow: hidden;
+        max-width: 0;
 
-        @if $checkbox-indeterminate-style == 'dash' {
-            $height: $checkbox-size / 10;
-            height: $height;
-            top: ( ( $checkbox-size - $height ) / 2 );
+        .k-checkbox:checked + & {
+            max-width: $checkbox-size;
+        }
 
-            width: $checkbox-size - 2 * $checkbox-border-width;
-            left: $checkbox-border-width;
-        } @else {
+        .k-checkbox:indeterminate + & {
+            max-width: $checkbox-size;
+            box-sizing: border-box;
+            content: "";
+            position: absolute;
+
+            @if $checkbox-indeterminate-style == 'dash' {
+                $height: $checkbox-size / 10;
+                border-width: 0;
+                height: $height;
+                top: ( ( $checkbox-size - $height ) / 2 );
+                width: $checkbox-size - 2 * $checkbox-border-width;
+                left: $checkbox-border-width;
+            } @else {
+                width: $checkbox-size / 2;
+                height: $checkbox-size / 2;
+                top: $checkbox-size / 4;
+                left: $checkbox-size / 4;
+            }
+        }
+
+        .k-checkbox:disabled + & {
+            cursor: default;
+            opacity: .5;
+        }
+    }
+
+    .k-radio-label {
+        &::before {
+            content: "";
+            width: $checkbox-size;
+            height: $checkbox-size;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: $radio-radius;
+            border-width: $checkbox-border-width;
+            border-style: solid;
+            padding: 0;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
             width: $checkbox-size / 2;
             height: $checkbox-size / 2;
             top: $checkbox-size / 4;
             left: $checkbox-size / 4;
+            transform: scale(0);
+
+            .k-radio:checked + & {
+                transform: scale(1);
+            }
+
+            .k-radio:disabled + & {
+                opacity: .5;
+            }
         }
-    }
 
-    .k-checkbox:indeterminate:disabled + .k-checkbox-label::after {
-        opacity: .5;
-    }
-
-    .k-checkbox:disabled + .k-checkbox-label,
-    .k-checkbox:checked:disabled + .k-checkbox-label {
-        cursor: default;
-    }
-
-    .k-checkbox:checked + .k-checkbox-label::before {
-        content: "\e118";
-        border-width: 0;
-    }
-
-    .k-checkbox:checked:disabled + .k-checkbox-label::before {
-        content: "\e118";
-        opacity: .5;
-    }
-
-    .k-checkbox:disabled + .k-checkbox-label::before {
-        border-width: $checkbox-border-width;
-        border-style: solid;
-    }
-
-    .k-radio-label::before {
-        content: "";
-        width: $checkbox-size;
-        height: $checkbox-size;
-        position: absolute;
-        left: 0;
-        top: 0;
-        border-radius: $radio-radius;
-        border-width: $checkbox-border-width;
-        border-style: solid;
-        padding: 0;
-    }
-
-    .k-radio-label::after {
-        content: "";
-        position: absolute;
-        border-radius: 50%;
-        width: $checkbox-size / 2;
-        height: $checkbox-size / 2;
-        top: $checkbox-size / 4;
-        left: $checkbox-size / 4;
-        transform: scale(0);
-    }
-
-    .k-radio:checked + .k-radio-label::after {
-        transform: scale(1);
-    }
-
-    .k-radio:disabled + .k-radio-label {
-        cursor: auto;
-    }
-
-    .k-radio:disabled + .k-radio-label,
-    .k-radio:checked:disabled + .k-radio-label {
-        cursor: default;
-    }
-
-    .k-radio:checked:disabled + .k-radio-label::before {
-        opacity: .5;
+        .k-radio:disabled + &,
+        .k-radio:checked:disabled + & {
+            cursor: default;
+        }
     }
 
     .k-fieldset {
