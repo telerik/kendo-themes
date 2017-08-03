@@ -5,12 +5,15 @@
     $textbox-shadow: 0 2px 2px 1px rgba(0, 0, 0, .06) !default;
     $fieldset-margin: 30px;
 
+    // TODO: legacy, consider switching to 100%
+    $textbox-default-width: 12.4em !default;
+
     .k-textbox,
     .k-input.k-textbox,
     .k-textarea {
         @include border-radius();
         padding: $input-padding-y $input-padding-x;
-        width: 12.4em;
+        width: $textbox-default-width;
         box-sizing: border-box;
         border-width: $input-border-width;
         border-style: solid;
@@ -21,6 +24,31 @@
         vertical-align: middle;
         position: relative;
         -webkit-appearance: none;
+
+        + .k-input-bar {
+            position: relative;
+            display: block;
+            width: $textbox-default-width;
+            z-index: 2;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 2 * $input-border-width;
+                margin: auto;
+                opacity: 0;
+                transform: scaleX(.5);
+                transition: transform .3s;
+            }
+        }
+
+        &:focus + .k-input-bar::after {
+            opacity: 1;
+            transform: scaleX(1);
+        }
     }
 
     .k-textbox,
@@ -79,6 +107,39 @@
         }
     }
 
+
+    // input container / floating label
+    $floating-label-padding: 7px !default;
+
+    .k-input-container {
+        position: relative;
+        padding-top: $floating-label-padding * 2;
+        display: inline-flex;
+        flex-direction: column;
+
+        > label {
+            position: absolute;
+            left: add-two($input-padding-x, $input-border-width);
+            top: add-three($floating-label-padding, $input-padding-y, $input-border-width);
+            line-height: $form-line-height;
+            transition: all .2s ease;
+        }
+
+        > .k-textbox:focus ~ label,
+        > .k-textbox:valid ~ label {
+            font-size: 12px;
+            top: 0;
+            left: 0;
+        }
+    }
+
+
+    // checkbox / radio button
+    $checkbox-size: $icon-size !default;
+    $checkbox-border-width: 1px !default;
+    $checkbox-line-height: 1 !default;
+    $checkbox-indeterminate-style: square !default;
+
     .k-checkbox,
     .k-radio {
         position: absolute;
@@ -93,11 +154,6 @@
     .k-checkbox:disabled + .k-checkbox-label {
         @include disabled;
     }
-
-    $checkbox-size: $icon-size !default;
-    $checkbox-border-width: 1px !default;
-    $checkbox-line-height: 1 !default;
-    $checkbox-indeterminate-style: square !default;
 
     .k-checkbox-label,
     .k-radio-label {
