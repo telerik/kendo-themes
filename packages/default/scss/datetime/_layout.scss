@@ -1,5 +1,6 @@
 @include exports("datetime/layout") {
     $timepicker-header-height: 2em;
+    $time-highlight-size: 1px;
 
     // Datepicker
     .k-datepicker,
@@ -134,7 +135,7 @@
         }
     }
 
-    $time-list-wrapper-padding: $padding-y * 8;
+    $time-list-wrapper-padding: $padding-y * 5;
     $time-list-focus-size: 2px;
 
     // Content
@@ -147,6 +148,7 @@
         overflow-y: auto;
         position: relative;
         padding: $time-list-wrapper-padding 0;
+        text-align: center;
 
         .k-title {
             display: block;
@@ -158,7 +160,8 @@
             min-width: 100%;
             height: 1.5em;
             line-height: 1.5em;
-            margin-top: calc(-50% + 1em);
+            margin-top: -$time-list-wrapper-padding;
+            background: transparent;
 
         }
 
@@ -170,7 +173,6 @@
                 position: absolute;
                 width: 100%;
                 left: 0;
-                z-index: 11;
                 pointer-events: none;
                 height: calc(50% - 1em);
                 box-sizing: border-box;
@@ -191,17 +193,17 @@
 
     .k-time-container {
         position: relative;
-        display: flex;
+        display: block;
         overflow-x: hidden;
         overflow-y: auto;
         width: 6em;
         height: 200px;
         line-height: $line-height;
-        justify-content: center;
 
         > ul {
             height: auto;
             position: absolute;
+            width: 100%;
         }
 
         .k-content {
@@ -216,9 +218,7 @@
 
     .k-time-list-container {
         display: flex;
-        flex: 1 0 auto;
         position: relative;
-        padding: 0 $padding-y;
     }
 
     .k-time-list {
@@ -238,12 +238,10 @@
             z-index: 1;
             width: 200%;
             left: -50%;
-            $shadow-size: 3 * $timepicker-header-height;
-            box-shadow: 0 0 $shadow-size ($shadow-size / 2) $base-bg;
         }
 
-        &::before { top: $padding-y * 5; }
-        &::after { bottom: 0; }
+        &::before { top: 0; }
+        &::after { bottom: 0;}
     }
 
     .k-time-list .k-item {
@@ -255,11 +253,15 @@
     .k-time-highlight {
         position: absolute;
         top: 50%;
+        left: 0;
         right: 0;
         transform: translateY(-50%);
         width: 100%;
-        height: button-size();
+        height: button-inner-size();
         z-index: 1;
+        border-width: $time-highlight-size 0;
+        border-style: solid;
+        border-radius: .1px; // workaround for https://bugs.webkit.org/show_bug.cgi?id=175117
     }
 
     .k-time-container .k-scrollable-placeholder {

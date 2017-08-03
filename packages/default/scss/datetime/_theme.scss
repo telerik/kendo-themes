@@ -1,7 +1,7 @@
 @include exports("datetime/theme") {
-    $date-focus-shadow: $list-item-focused-shadow !default;
-    $time-highlight-shadow: inset 0 0 0 1px rgba(0, 0, 0, .13) !default;
-    $time-list-focus-color: rgba(0, 0, 0, .13) !default;
+    $time-list-highlight-color: rgba(0, 0, 0, .13) !default;
+    $time-list-focused-bg: rgba(0, 0, 0, .04);
+    $time-list-title-focus: #000 !default;
 
     // Shared
     .k-datepicker,
@@ -95,13 +95,32 @@
 
         .k-title {
             @include appearance( header );
+            z-index: 12;
+            background: $popup-bg;
         }
 
         &.k-state-focused {
+            .k-title {
+                color: $time-list-title-focus;
+            }
+
             &::before,
             &::after {
-                border-color: $time-list-focus-color;
+                background-color: $time-list-focused-bg;
+                border-width: 0;
             }
+        }
+    }
+
+    .k-time-list {
+        &::before,
+        &::after {
+            $shadow-size: 5em;
+            box-shadow: 0 0 $shadow-size ($shadow-size / 2) $popup-bg;
+        }
+
+        .k-item:hover {
+            color: $accent;
         }
     }
 
@@ -111,7 +130,7 @@
 
     .k-time-highlight {
         background-color: $bg-color;
-        box-shadow: $time-highlight-shadow;
+        border-color: $time-list-highlight-color;
     }
 
     // Datetimepicker
