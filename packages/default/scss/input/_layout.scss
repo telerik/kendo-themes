@@ -109,27 +109,30 @@
 
 
     // input container / floating label
-    $floating-label-padding: 7px !default;
+    $floating-label-height: 24px !default;
+    $floating-label-transition: .4s ease !default;
 
     .k-input-container {
         position: relative;
-        padding-top: $floating-label-padding * 2;
+        padding-top: $floating-label-height;
         display: inline-flex;
         flex-direction: column;
 
         > label {
             position: absolute;
+            top: add-two($floating-label-height, $input-border-width);
             left: add-two($input-padding-x, $input-border-width);
-            top: add-three($floating-label-padding, $input-padding-y, $input-border-width);
-            line-height: $form-line-height;
-            transition: all .2s ease;
+            line-height: add-two($form-line-height-em, $input-padding-y * 2);
+            cursor: text;
+            transition: transform $floating-label-transition, color $floating-label-transition;
         }
 
         > .k-textbox:focus ~ label,
         > .k-textbox:valid ~ label {
-            font-size: 12px;
-            top: 0;
-            left: 0;
+            $scale: .75;
+            $top-offset: add-two($floating-label-height, $input-border-width, -1);
+            $left-scale: add-three($input-padding-x, $input-border-width, ((1 - $scale) * 100% / 2), -1);
+            transform: translate( $left-scale, $top-offset ) scale($scale);
         }
     }
 
