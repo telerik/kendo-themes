@@ -6,6 +6,15 @@
     $_one: $multiplier * $one;
     $_two: $multiplier * $two;
 
+    // if either is zero
+    @if $_one == 0 {
+        @return $_two;
+    }
+
+    @if $_two == 0 {
+        @return $_one;
+    }
+
     // if all units are same type
     @if $_unit-1 == $_unit-2 {
         @return $_one + $_two;
@@ -25,6 +34,20 @@
     $_one: $multiplier * $one;
     $_two: $multiplier * $two;
     $_three: $multiplier * $three;
+
+    // pass to add-two if any component is zero
+    @if $_one == 0 {
+        @return add-two($two, $three, $multiplier);
+    }
+
+    @if $_two == 0 {
+        @return add-two($one, $three, $multiplier);
+    }
+
+    @if $_three == 0 {
+        @return add-two($one, $two, $multiplier);
+    }
+
 
     // if all units are same type
     @if $_unit-1 == $_unit-2 == $_unit-3 {
