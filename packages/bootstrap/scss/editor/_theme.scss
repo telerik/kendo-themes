@@ -8,7 +8,9 @@
         .k-editor-toolbar {
             @include appearance( toolbar );
         }
-        .k-editable-area {}
+        .k-editable-area {
+            border-color: $header-border;
+        }
     }
 
     .k-overlay {
