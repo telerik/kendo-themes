@@ -139,6 +139,13 @@
         padding: $input-padding-y $input-padding-y 16px;
     }
 
+    .k-edit-form-content {
+        flex: 1 1 auto;
+        overflow: auto;
+        margin: (-$window-inner-padding-y) (-$window-inner-padding-x);
+        padding: $window-inner-padding-y $window-inner-padding-x;
+    }
+
 
     $ct-cell-size: 20px;
 
@@ -229,6 +236,7 @@
 
 
     .k-editor-dialog {
+        box-sizing: border-box;
 
         .k-edit-form-container {
             width: auto;
@@ -262,12 +270,6 @@
             flex-direction: column;
             flex: 1 1 auto;
 
-        }
-
-        .k-edit-form-content {
-            overflow: auto;
-            margin: (-$window-inner-padding-y) (-$window-inner-padding-x);
-            padding: $window-inner-padding-y $window-inner-padding-x;
         }
 
         .k-edit-label {
