@@ -73,6 +73,9 @@
 
     $checkbox-bg: $input-bg !default;
     $checkbox-border: $input-border !default;
+
+    $checkbox-hovered-border: $input-hovered-border !default;
+
     $checkbox-checked-bg: $accent !default;
     $checkbox-checked-border: $accent !default;
     $checkbox-checked-text: $accent-contrast !default;
@@ -113,6 +116,11 @@
 
     .k-checkbox-label::after {
         color: $checkbox-checked-text;
+    }
+
+    .k-checkbox-label:hover::before,
+    .k-checkbox:checked + .k-checkbox-label:hover::before {
+        border-color: $checkbox-hovered-border;
     }
 
     .k-checkbox:checked + .k-checkbox-label::after,

@@ -201,6 +201,7 @@
         box-sizing: border-box;
     }
 
+    // container box
     .k-checkbox-label::before {
         @include border-radius( $checkbox-radius );
         content: "";
@@ -223,6 +224,7 @@
         }
     }
 
+    // tick or indeterminate state
     .k-checkbox-label::after {
         content: "\e118";
         position: absolute;
@@ -269,6 +271,7 @@
     }
 
     .k-radio-label {
+        // container circle
         &::before {
             content: "";
             width: $checkbox-size;
@@ -282,6 +285,7 @@
             padding: 0;
         }
 
+        // checked state
         &::after {
             content: "";
             position: absolute;
