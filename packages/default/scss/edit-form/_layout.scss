@@ -41,7 +41,7 @@
         margin-left: ( $spacer-x / 2 );
     }
     .k-edit-form-container .k-edit-buttons {
-        margin: $spacer (-$window-inner-padding-x) (-$window-inner-padding-y);
+        margin: $window-inner-padding-y (-$window-inner-padding-x) (-$window-inner-padding-y);
         padding: $window-inner-padding-y $window-inner-padding-x;
     }
 
