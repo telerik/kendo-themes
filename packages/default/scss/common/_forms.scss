@@ -290,7 +290,6 @@
 
     $bootstrap-integration-input-height-lg: ($twbs-input-padding-y-lg * 2) + ($twbs-font-size-base-lg * $twbs-input-line-height-lg) !default;
 
-    $double-input-border-width: $input-border-width * 2;
     $numerictextbox-icon-offset-sm: 2px !default;
 
     .k-widget.form-control {
@@ -400,13 +399,13 @@
     .k-maskedtextbox {
         &.form-control {
             .k-textbox {
-                height: add-two($bootstrap-integration-input-height, $double-input-border-width);
+                height: add-two($bootstrap-integration-input-height, 2 * $input-border-width);
                 padding: $twbs-input-padding-y $twbs-input-padding-x;
             }
 
             &-sm {
                 .k-textbox {
-                    height: add-two($bootstrap-integration-input-height-sm, $double-input-border-width);
+                    height: add-two($bootstrap-integration-input-height-sm, 2 * $input-border-width);
                     padding: $twbs-input-padding-y-sm $twbs-input-padding-x-sm;
                     line-height: $twbs-input-line-height-sm;
                 }
@@ -414,7 +413,7 @@
 
             &-lg {
                 .k-textbox {
-                    height: add-two($bootstrap-integration-input-height-lg, $double-input-border-width);
+                    height: add-two($bootstrap-integration-input-height-lg, 2 * $input-border-width);
                     padding: $twbs-input-padding-y-lg $twbs-input-padding-x-lg;
                     line-height: $twbs-input-line-height-lg;
                 }
@@ -424,17 +423,17 @@
 
     .k-textbox {
         &.form-control {
-            height: add-two($bootstrap-integration-input-height, $double-input-border-width);
+            height: add-two($bootstrap-integration-input-height, 2 * $input-border-width);
             padding: $twbs-input-padding-y $twbs-input-padding-x;
 
             &-sm {
-                height: add-two($bootstrap-integration-input-height-sm, $double-input-border-width);
+                height: add-two($bootstrap-integration-input-height-sm, 2 * $input-border-width);
                 padding: $twbs-input-padding-y-sm $twbs-input-padding-x-sm;
                 line-height: $twbs-input-line-height-sm;
             }
 
             &-lg {
-                height: add-two($bootstrap-integration-input-height-lg, $double-input-border-width);
+                height: add-two($bootstrap-integration-input-height-lg, 2 * $input-border-width);
                 padding: $twbs-input-padding-y-lg $twbs-input-padding-x-lg;
                 line-height: $twbs-input-line-height-lg;
             }
