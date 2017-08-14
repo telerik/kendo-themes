@@ -39,6 +39,12 @@ $slider-selection-background-color: $accent !default;
                 box-shadow: $primary-button-focused-shadow;
             }
         }
+
+        &.k-state-focused {
+            .k-draghandle {
+                box-shadow: $primary-button-focused-shadow;
+            }
+        }
     }
 
     .k-slider-horizontal .k-tick {

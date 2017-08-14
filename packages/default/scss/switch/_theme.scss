@@ -4,7 +4,8 @@ $switch-border-color: $border-color !default;
 $switch-border-radius: ($switch-size / 2) !default;
 $switch-hover-border-color: $hovered-border !default;
 $switch-handle-shadow: 0 2px 4px 0 rgba(0, 0, 0, .06) !default;
-$switch-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
+$switch-focus-shadow: inset 0 0 0 3px rgba(0, 0, 0, .06) !default;
+$switch-active-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 
 @include exports('switch/theme') {
     .k-switch,
@@ -90,12 +91,14 @@ $switch-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
     }
 
     .k-switch {
-        &:active {
+        &:focus,
+        &.k-state-focused {
+            outline: none;
             box-shadow: $switch-focus-shadow;
         }
 
-        &:focus {
-            outline: none;
+        &:active {
+            box-shadow: $switch-active-shadow;
         }
 
         &.k-state-disabled {
