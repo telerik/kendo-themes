@@ -1,0 +1,106 @@
+@include exports("input/theme") {
+    $floating-label-color: rgba(0, 0, 0, .38) !default;
+
+    .k-textbox,
+    .k-input.k-textbox,
+    .k-textarea {
+        border: 0;
+        border-radius: 0;
+        box-shadow: inset 0 #{-$input-border-width} 0 0 $border-color;
+
+        &:focus {
+            box-shadow: inset 0 -2px 0 0 $accent;
+
+            + .k-input-bar::after {
+                background: $accent;
+            }
+        }
+
+        &.k-textbox-no-border:focus {
+            box-shadow: none;
+        }
+    }
+
+    // Floating label
+    .k-input-container {
+        > label {
+            color: $floating-label-color;
+        }
+
+        > .k-textbox:focus ~ label,
+        > .k-textbox:valid ~ label {
+            color: $accent;
+        }
+
+        > .k-textbox:not(:focus) ~ label {
+            color: $floating-label-color;
+        }
+    }
+}
+
+$checkbox-border: rgba(0, 0, 0, .54) !default;
+$checkbox-checked-bg: $primary !default;
+$checkbox-checked-border: $checkbox-checked-bg !default;
+$checkbox-checked-text: $primary-contrast !default;
+$checkbox-hovered-border: $checkbox-border !default;
+$checkbox-focused-border: $checkbox-border !default;
+$checkbox-focused-shadow: none !default;
+$checkbox-focused-checked-shadow: none !default;
+$checkbox-focused-checked-border: $primary !default;
+$checkbox-disabled-bg: #b0b0b0 !default;
+
+$radio-border: $checkbox-border !default;
+$radio-checked-bg: $primary-contrast !default;
+$radio-checked-border: $primary !default;
+$radio-checked-text: $radio-checked-border !default;
+
+@import "~@progress/kendo-theme-default/scss/input/theme";
+
+@include exports('input/theme/checkbox-radiobutton/material') {
+
+    .k-checkbox-label {
+        &::before {
+            .k-checkbox:indeterminate + & {
+                background-color: $checkbox-checked-bg;
+                border-color: $checkbox-checked-bg;
+            }
+
+            .k-checkbox:disabled:checked + &,
+            .k-checkbox:disabled:indeterminate + & {
+                background-color: $checkbox-disabled-bg;
+                border-color: $checkbox-disabled-bg;
+            }
+        }
+
+        &::after {
+            transition: max-width linear 280ms;
+
+            .k-checkbox:indeterminate + & {
+                background-color: $checkbox-checked-text;
+            }
+
+            .k-checkbox:disabled:indeterminate + & {
+                opacity: 1;
+            }
+
+            .k-checkbox:disabled:checked + & {
+                opacity: 1;
+                background-color: $checkbox-disabled-bg;
+                border-color: $checkbox-disabled-bg;
+            }
+        }
+    }
+
+    .k-radio-label::after {
+        background-color: $checkbox-checked-bg;
+        transition: transform linear 280ms;
+    }
+
+    .k-ripple-blob {
+        .k-checkbox-label &,
+        .k-radio-label & {
+            opacity: .2;
+            background-color: $checkbox-checked-bg;
+        }
+    }
+}

@@ -59,8 +59,7 @@ $header-padding-y: $padding-y * 2 !default;
 $form-line-height: $line-height !default;
 $form-line-height-em: $form-line-height * 1em !default;
 
-// add-N does not behave well with unitless values
-$button-border-width: 0px !default; // sass-lint:disable-line zero-unit
+$button-border-width: 0 !default;
 $button-padding-x: $padding-x !default;
 $button-padding-y: $padding-y !default;
 $button-padding-x-sm: $button-padding-x / 2 !default;
@@ -69,8 +68,8 @@ $button-calc-size: #{$form-line-height-em} + #{$button-padding-y * 2} + 2px;
 $button-inner-calc-size: #{$form-line-height-em} + #{$button-padding-y * 2};
 
 $input-border-width: 1px !default;
-$input-padding-x: $padding-x !default;
-$input-padding-y: $padding-y !default;
+$input-padding-x: 0 !default;
+$input-padding-y: 7px !default;
 $input-padding-x-sm: $input-padding-x / 2 !default;
 $input-padding-y-sm: $input-padding-y / 2 !default;
 $input-calc-size: #{$form-line-height-em} + #{$input-padding-y * 2} + 2px;
@@ -114,15 +113,24 @@ $rgba-transparent: rgba( 0, 0, 0, 0 );
 // Theme colors
 /// The color that focuses the user attention.
 /// Used for primary buttons and for elements of primary importance across the theme.
-$accent: #3f51b5 !default;
+$primary: #3f51b5 !default;
+$accent: $primary;
 
-/// The color used along with the accent color denoted by $accent.
+/// The color used along with the primary color denoted by $primary.
 /// Used to provide contrast between the background and foreground colors.
-$accent-contrast: #ffffff !default;
+$primary-contrast: #ffffff !default;
+$accent-contrast: $primary-contrast;
+
+/// The secondary (accent) color of the theme.
+$secondary: #ff4081 !default;
+
+/// The color used along with the secondary color denoted by $secondary.
+/// Used to provide contrast between the background and foreground colors.
+$secondary-contrast: #ffffff !default;
 
 $text-color: #656565 !default;
 $bg-color: #ffffff !default;
-$border-color: rgba( black, .08 ) !default;
+$border-color: rgba( black, .12 ) !default;
 
 /// The text color of the components' chrome area.
 $base-text: rgb(0, 0, 0) !default;
@@ -388,7 +396,7 @@ $chart-minor-lines: rgba(0, 0, 0, .04) !default;
 $chart-area-opacity: .8 !default;
 
 // Icons
-$icon-size: 16px;
+$icon-size: 24px;
 $icon-size-lg: 32px;
 $icon-spacing: 4px !default;
 

@@ -87,7 +87,7 @@ The following list describes the theme variables available for adjustment in the
 </td>
 </tr>
 <tr>
-<td>$accent</td>
+<td>$primary</td>
 <td>
     <span class="color-preview" style="background-color: #3f51b5"></span>
     #3f51b5
@@ -97,12 +97,31 @@ Used for primary buttons and for elements of primary importance across the theme
 </td>
 </tr>
 <tr>
-<td>$accent-contrast</td>
+<td>$primary-contrast</td>
 <td>
     <span class="color-preview" style="background-color: #ffffff"></span>
     #ffffff
 </td>
-<td>The color used along with the accent color denoted by $accent.<br/>
+<td>The color used along with the primary color denoted by $primary.<br/>
+Used to provide contrast between the background and foreground colors.
+</td>
+</tr>
+<tr>
+<td>$secondary</td>
+<td>
+    <span class="color-preview" style="background-color: #ff4081"></span>
+    #ff4081
+</td>
+<td>The secondary (accent) color of the theme.
+</td>
+</tr>
+<tr>
+<td>$secondary-contrast</td>
+<td>
+    <span class="color-preview" style="background-color: #ffffff"></span>
+    #ffffff
+</td>
+<td>The color used along with the secondary color denoted by $secondary.<br/>
 Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
