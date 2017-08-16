@@ -45,6 +45,12 @@ $slider-selection-background-color: $accent !default;
                 box-shadow: $primary-button-focused-shadow;
             }
         }
+
+        .k-slider-wrap {
+            &:focus {
+                outline: none;
+            }
+        }
     }
 
     .k-slider-horizontal .k-tick {
