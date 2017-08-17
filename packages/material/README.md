@@ -1,4 +1,4 @@
-# Kendo UI Material Theme
+# Kendo UI Material Theme -- PREVIEW, subject to breaking changes without notice
 
 * [Overview](#overview)
 * [Installation](#installation)
