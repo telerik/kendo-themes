@@ -135,20 +135,23 @@
         }
     }
 
-    $time-list-wrapper-padding: $padding-y * 5;
+    $time-list-padding: $padding-y * 5;
     $time-list-focus-size: 2px;
+    $time-list-width: 5em !default;
+    $time-list-height: 200px !default;
 
     // Content
     .k-time-list-wrapper {
-        display: flex;
-        flex-direction: column;
+        display: inline-block;
         overflow: hidden;
         box-sizing: content-box;
         overflow-x: hidden;
         overflow-y: auto;
         position: relative;
-        padding: $time-list-wrapper-padding 0;
+        padding: $time-list-padding 0;
         text-align: center;
+        width: $time-list-width;
+        height: $time-list-height;
 
         .k-title {
             display: block;
@@ -160,9 +163,8 @@
             min-width: 100%;
             height: 1.5em;
             line-height: 1.5em;
-            margin-top: -$time-list-wrapper-padding;
+            margin-top: -$time-list-padding;
             background: transparent;
-
         }
 
         &.k-state-focused {
@@ -192,27 +194,21 @@
     }
 
     .k-time-container {
-        position: relative;
+        position: absolute;
         display: block;
         overflow-x: hidden;
-        overflow-y: auto;
-        width: 6em;
-        height: 200px;
+        overflow-y: scroll;
         line-height: $line-height;
+        left: 0;
+        right: 0;
+        top: $time-list-padding;
+        bottom: $time-list-padding;
+
+        @include hide-scrollbar('right');
 
         > ul {
             height: auto;
-            position: absolute;
-            width: 100%;
-        }
-
-        .k-content {
-            height: auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
+            width: $time-list-width;
         }
     }
 
@@ -222,11 +218,14 @@
     }
 
     .k-time-list {
-        position: relative;
+        position: absolute;
         display: flex;
         z-index: 10;
         outline: 0;
-        @include hide-scrollbar('right');
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
 
         &::before,
         &::after {
