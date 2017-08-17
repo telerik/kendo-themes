@@ -155,7 +155,7 @@ $calendar-navigation-width: 5em;
             .k-alt,
             .k-weekend,
             .k-other-month {
-                opacity: .6;
+                opacity: $disabled-opacity;
             }
 
             .k-alt {
@@ -286,7 +286,7 @@ $calendar-navigation-width: 5em;
                 border: 0;
                 text-align: left;
                 font-weight: bold;
-                opacity: .5;
+                opacity: $disabled-opacity;
             }
 
             td {

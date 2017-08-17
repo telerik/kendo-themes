@@ -97,11 +97,13 @@
             @include appearance( header );
             z-index: 12;
             background: $popup-bg;
+            opacity: $disabled-opacity;
         }
 
         &.k-state-focused {
             .k-title {
                 color: $time-list-title-focus;
+                opacity: 1;
             }
 
             &::before,
@@ -115,7 +117,7 @@
     .k-time-list {
         &::before,
         &::after {
-            $shadow-size: 5em;
+            $shadow-size: 3em;
             box-shadow: 0 0 $shadow-size ($shadow-size / 2) $popup-bg;
         }
 

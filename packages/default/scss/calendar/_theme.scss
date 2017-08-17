@@ -91,6 +91,11 @@
             thead {
                 @include appearance( header );
             }
+
+            thead th,
+            .k-weekend .k-link {
+                opacity: $disabled-opacity;
+            }
         }
 
         .k-calendar-navigation {
