@@ -29,7 +29,7 @@ before_script:
   - git fetch --unshallow origin refs/heads/master:refs/remotes/origin/master
   - npm prune
 after_success:
-  #- npm run semantic-release
+  - npm run semantic-release
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+(\\-.*)?$/"
