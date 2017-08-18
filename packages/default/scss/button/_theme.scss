@@ -1,4 +1,6 @@
 @include exports( "button/theme" ) {
+    $outline-primary-button-text: $accent !default;
+    $outline-primary-button-border: $accent !default;
 
     // Default button
     .k-button {
@@ -201,25 +203,17 @@
         }
     }
     .k-button.k-primary.k-outline {
-        border-color: $primary-button-text;
-        color: $primary-button-text;
+        border-color: $outline-primary-button-border;
+        color: $outline-primary-button-text;
         background: none;
         box-shadow: none;
 
         // Hover state
         &:hover,
         &.k-state-hover {
-            border-color: $primary-button-hovered-text;
-            color: $primary-button-hovered-bg;
-            background: $primary-button-hovered-text;
-        }
-
-        // Pressed state
-        &:active,
-        &.k-state-active {
-            border-color: $primary-button-pressed-text;
-            color: $primary-button-pressed-bg;
-            background: $primary-button-pressed-text;
+            border-color: $primary-button-bg;
+            color: $primary-button-hovered-text;
+            background: $primary-button-bg;
         }
 
         // Focused state
