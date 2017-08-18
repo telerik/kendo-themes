@@ -110,11 +110,11 @@
 
 
     // input container / floating label
-    $floating-label-transition: .4s ease !default;
+    $floating-label-transition: .2s ease-out !default;
     $floating-label-scale: .75 !default;
     $floating-label-height: $textbox-line-height * $floating-label-scale;
 
-    .k-input-container {
+    .k-textbox-container {
         position: relative;
         padding-top: $floating-label-height;
         display: inline-flex;
@@ -122,18 +122,27 @@
 
         > .k-label {
             position: absolute;
-            top: add-three($floating-label-height, $input-border-width, $input-padding-y);
-            left: add-two($input-padding-x, $input-border-width);
             line-height: $textbox-line-height;
             cursor: text;
-            transition: transform $floating-label-transition, color $floating-label-transition, line-height $floating-label-transition;
+            top: add-three($floating-label-height, $input-border-width, $input-padding-y);
+            left: add-two($input-padding-x, $input-border-width);
+            transition: transform $floating-label-transition, color $floating-label-transition;
         }
 
+        &.k-state-empty {
+            font-style: normal;
+
+            > .k-label {
+                transform: translate( 0, 0 ) scale( 1 );
+            }
+        }
+
+        > .k-label,
         &.k-state-focused > .k-label {
             // persist alignment after scaling
             $half-scale-percent: ((1 - $floating-label-scale) * 100% / 2);
 
-            // transform position to top-left corner of input-container
+            // transform position to top-left corner of the textbox-container
             $top-offset: add-three($textbox-line-height, $input-padding-y, $half-scale-percent, -$floating-label-scale);
             $left-scale: add-three($input-padding-x, $input-border-width, $half-scale-percent, -1);
             transform: translate( $left-scale, $top-offset ) scale($floating-label-scale);
