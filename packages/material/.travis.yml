@@ -24,7 +24,6 @@ before_install:
   - npm i -g npm@^3.8.0
   - npm update @progress/kendo-theme-default
 before_script:
-  - git fetch --unshallow origin refs/heads/master:refs/remotes/origin/master
   - npm prune
 after_success:
   - npm run semantic-release
