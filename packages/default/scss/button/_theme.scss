@@ -1,6 +1,5 @@
 @include exports( "button/theme" ) {
     $outline-primary-button-text: $accent !default;
-    $outline-primary-button-border: $accent !default;
 
     // Default button
     .k-button {
@@ -203,7 +202,7 @@
         }
     }
     .k-button.k-primary.k-outline {
-        border-color: $outline-primary-button-border;
+        border-color: currentColor;
         color: $outline-primary-button-text;
         background: none;
         box-shadow: none;
