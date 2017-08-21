@@ -546,6 +546,7 @@
         .k-filtercell-operator {
             > .k-button.k-clear-button-visible {
                 visibility: visible;
+                height: button-size();
             }
 
             > .k-button:not(.k-clear-button-visible) {
@@ -582,6 +583,7 @@
         &.k-filtercell-boolean {
             .k-filtercell-wrapper {
                 padding-right: calc(#{$button-calc-size} + #{$cell-padding-y / 2});
+                overflow: hidden;
             }
         }
     }
