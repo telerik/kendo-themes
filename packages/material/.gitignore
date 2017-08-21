@@ -9,3 +9,4 @@ npm-debug.log
 .vscode/
 debug.log
 modules/
+package-lock.json

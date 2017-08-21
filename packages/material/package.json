@@ -15,9 +15,6 @@
     "type": "git",
     "url": "https://github.com/telerik/kendo-theme-material.git"
   },
-  "publishConfig": {
-    "registry": "https://registry.npm.telerik.com"
-  },
   "release": {
     "debug": false,
     "branchTags": {
@@ -73,7 +70,7 @@
   },
   "devDependencies": {
     "@telerik/kendo-common-tasks": "^2.0.0",
-    "@telerik/semantic-prerelease": "^1.0.0",
+    "@telerik/semantic-prerelease": "^1.2.0",
     "cz-conventional-changelog": "^1.1.5",
     "ghooks": "^1.0.3",
     "glob": "^7.0.5",
