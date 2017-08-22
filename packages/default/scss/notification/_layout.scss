@@ -5,6 +5,7 @@
 
     // Base
     .k-notification {
+        padding: 0;
         @include border-radius();
     }
     .k-notification-wrap {
@@ -21,9 +22,9 @@
         }
 
         > .k-i-close {
-            margin: 0;
+            margin: -$icon-size/2 0 0 0;
             position: absolute;
-            top: $spacer-y;
+            top: 50%;
             right: $alert-padding-x / 2;
         }
     }
