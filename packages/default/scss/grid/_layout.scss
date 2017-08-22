@@ -423,7 +423,6 @@
             }
         }
 
-
         .k-header > .k-link {
             margin: (-$cell-padding-y) (-$cell-padding-x);
             padding: $cell-padding-y $cell-padding-x;
@@ -432,6 +431,11 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
+
+        .k-header.k-filterable > .k-link {
+            margin-right: button-size();
+        }
+
         .k-header > .k-link:focus {
             text-decoration: none;
         }
