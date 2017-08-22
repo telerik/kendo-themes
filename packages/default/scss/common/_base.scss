@@ -503,6 +503,12 @@
 
     .k-loading-mask {
         z-index: 100;
+
+        &.k-opaque {
+            .k-loading-color {
+                opacity: 1;
+            }
+        }
     }
     .k-loading-text {
         text-indent: -4000px;
