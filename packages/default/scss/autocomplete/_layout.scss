@@ -5,17 +5,17 @@
         @include border-radius();
 
         .k-input {
-            box-sizing: content-box;
-            height: $form-line-height-em;
-            line-height: $form-line-height;
             padding:  $padding-y $padding-x;
+            height: $form-line-height-em;
+            box-sizing: content-box;
             border: 0;
             outline: 0;
             color: inherit;
             background: none;
             font: inherit;
-            flex: 1;
+            line-height: $form-line-height;
             display: inline-block;
+            flex: 1;
         }
 
         .k-i-close {
