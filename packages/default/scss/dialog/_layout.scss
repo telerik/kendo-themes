@@ -55,9 +55,11 @@
 
         .k-button {
             // sass-lint:disable no-important
+            padding: ($window-inner-padding-x * .75) $window-inner-padding-x;
             width: auto !important;
             border-width: 0;
             border-color: inherit;
+            background: none;
             white-space: normal;
             flex: 1;
             // sass-lint:enable no-important
@@ -68,6 +70,13 @@
                 content: '';
                 flex: 1 0 auto;
             }
+        }
+        .k-button,
+        .k-button:first-child,
+        .k-button:last-child,
+        .k-group-start,
+        .k-group-end {
+            @include border-radius( 0 );
         }
         .k-button + .k-button {
             margin: 0;
