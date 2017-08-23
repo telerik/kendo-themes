@@ -5,7 +5,7 @@
         @include border-radius();
 
         .k-input {
-            padding:  $padding-y $padding-x;
+            padding:  $input-padding-y $input-padding-x;
             height: $form-line-height-em;
             box-sizing: content-box;
             border: 0;
