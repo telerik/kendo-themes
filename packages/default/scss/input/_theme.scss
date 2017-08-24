@@ -137,41 +137,58 @@
         }
     }
 
-    .k-checkbox-label::before {
+
+    // Checkbox
+    .k-checkbox-label {
         background-color: $checkbox-bg;
         border-color: $checkbox-border;
 
-        .k-checkbox:checked + & {
-            background-color: $checkbox-checked-bg;
-            border-color: $checkbox-checked-border;
+        // Normal state
+        &::before {
+            background-color: $checkbox-bg;
+            border-color: $checkbox-border;
         }
-    }
 
-    .k-checkbox-label::after {
-        color: $checkbox-checked-text;
-    }
+        // Indeterminate
+        .k-checkbox:indeterminate + & {
+            &::after {
+                background-color: $checkbox-checked-bg;
+            }
+        }
 
-    .k-checkbox-label:hover::before,
-    .k-checkbox:checked + .k-checkbox-label:hover::before {
-        border-color: $checkbox-hovered-border;
-    }
+        // Focus state
+        .k-checkbox:focus + & {
+            &::before {
+                box-shadow: $checkbox-focused-shadow;
+            }
+        }
 
-    .k-checkbox:checked + .k-checkbox-label::after,
-    .k-checkbox:indeterminate + .k-checkbox-label::after {
-        background-color: $checkbox-checked-bg;
-        border-color: $checkbox-checked-border;
-    }
+        // Checked
+        .k-checkbox:checked + & {
+            &::before {
+                border-color: $checkbox-checked-border;
+                background-color: $checkbox-checked-bg;
+            }
+            &::after {
+                color: $checkbox-checked-text;
+            }
+        }
+        .k-checkbox:checked:focus + & {
+            &::before {
+                box-shadow: $checkbox-focused-checked-shadow;
+            }
+        }
 
-    .k-checkbox:focus + .k-checkbox-label::before,
-    .k-radio:focus + .k-radio-label::before {
-        box-shadow: $checkbox-focused-shadow;
-        border-color: $checkbox-focused-border;
-    }
-
-    .k-checkbox:focus:checked + .k-checkbox-label::before,
-    .k-radio:focus:checked + .k-radio-label::before {
-        box-shadow: $checkbox-focused-checked-shadow;
-        border-color: $checkbox-focused-checked-border;
+        // Hover
+        .k-checkbox:hover + & {
+            &::before {
+                border-color: $checkbox-hovered-border;
+                background-color: $checkbox-hovered-bg;
+            }
+            &::after {
+                color: $checkbox-hovered-text;
+            }
+        }
     }
 
 }
