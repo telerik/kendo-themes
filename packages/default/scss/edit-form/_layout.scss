@@ -55,15 +55,17 @@
 
 
     .k-edit-label {
-        padding: add-two($padding-y, $input-border-width) 0;
+        margin: 0 0 $spacer-y 0;
+        padding: add-two($input-padding-y, $input-border-width) 0;
         width: 30%;
+        line-height: $form-line-height;
         text-align: right;
         float: left;
         clear: both;
     }
     .k-edit-field {
-        padding: 0 0 $spacer-y 0;
-        width: 60%;
+        margin: 0 0 $spacer-y 0;
+        width: 65%;
         float: right;
         clear: right;
     }
@@ -80,23 +82,14 @@
             width: auto;
         }
 
-        .k-radio,
-        .k-checkbox {
-            margin-left: 1px;
-            margin-top: .7em;
-            width: 14px;
-            height: 15px;
-            z-index: 1;
-        }
-        [type="radio"] {
+        input[type="radio"]:not(.k-radio),
+        input[type="checkbox"]:not(.k-checkbox) {
             margin-right: .4ex;
         }
 
         .k-radio-label,
         .k-checkbox-label {
-            margin-top: ($spacer / 2);
             margin-right: ($spacer);
-            cursor: default;
         }
 
         .k-reset > li + li {
