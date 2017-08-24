@@ -662,4 +662,34 @@
         }
     }
 
+
+    // Export dialog
+    .k-export-config {
+        clear: both;
+        position: relative;
+
+        &::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+
+        .k-edit-field {
+            margin-left: 10%;
+            width: 40%;
+            float: left;
+        }
+
+        .k-page-orientation {
+            position: absolute;
+            right: 0;
+            top: ($spacer-y / 2);
+
+            .k-icon {
+                font-size: 6em;
+            }
+        }
+    }
+
 }
