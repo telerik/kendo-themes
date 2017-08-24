@@ -210,8 +210,32 @@
     .k-checkbox-label::after,
     .k-radio-label::before,
     .k-radio-label::after {
-        font-family: "WebComponentsIcons";
+        font: $icon-size/1 "WebComponentsIcons", monospace;
         box-sizing: border-box;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    // Container box
+    .k-checkbox-label::before,
+    .k-radio-label::before {
+        content: "";
+        width: $checkbox-size;
+        height: $checkbox-size;
+        border-width: $checkbox-border-width;
+        border-style: solid;
+    }
+    .k-checkbox-label::before {
+        @include border-radius( $checkbox-radius );
+    }
+    .k-radio-label::before {
+        border-radius: $radio-radius;
     }
 
     // container box
