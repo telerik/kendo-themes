@@ -65,23 +65,31 @@
 
 @include exports('input/theme/checkbox-radiobutton') {
 
-    $radio-border: $input-border !default;
-    $radio-bg: $input-bg !default;
-    $radio-checked-bg: $accent !default;
-    $radio-checked-border: transparent !default;
-    $radio-checked-text: $accent-contrast !default;
-
     $checkbox-bg: $input-bg !default;
+    $checkbox-text: $input-text !default;
     $checkbox-border: $input-border !default;
-
+    $checkbox-hovered-bg: $checkbox-bg !default;
+    $checkbox-hovered-text: $accent !default;
     $checkbox-hovered-border: $input-hovered-border !default;
-
     $checkbox-checked-bg: $accent !default;
-    $checkbox-checked-border: $accent !default;
     $checkbox-checked-text: $accent-contrast !default;
-
+    $checkbox-checked-border: $accent !default;
     $checkbox-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
     $checkbox-focused-checked-shadow: 0 0 0 2px rgba($accent, .3) !default;
+
+    $radio-bg: $checkbox-bg !default;
+    $radio-text: $checkbox-text !default;
+    $radio-border: $checkbox-border !default;
+    $radio-hovered-bg: $checkbox-hovered-bg !default;
+    $radio-hovered-text: $checkbox-hovered-text !default;
+    $radio-hovered-border: $checkbox-hovered-border !default;
+    $radio-checked-bg: $checkbox-checked-bg !default;
+    $radio-checked-text: $checkbox-checked-text !default;
+    $radio-checked-border: $checkbox-checked-border !default;
+    $radio-focused-shadow: $checkbox-focused-shadow !default;
+    $radio-focused-checked-shadow: $checkbox-focused-checked-shadow !default;
+
+    // OBSOLETE
     $checkbox-focused-border: $input-hovered-border !default;
     $checkbox-focused-checked-border: $accent !default;
 
