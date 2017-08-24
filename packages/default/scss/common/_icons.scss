@@ -61,8 +61,10 @@
     .k-i-collapse-nw::before { content: "\e003"; }
     .k-i-resize-new::before { content: "\e003"; }
     .k-i-arrow-60-up::before { content: "\e004"; }
+    .k-i-kpi-trend-increase::before { content: "\e004"; }
     .k-i-arrow-60-right::before { content: "\e005"; }
     .k-i-arrow-60-down::before { content: "\e006"; }
+    .k-i-kpi-trend-decrease::before { content: "\e006"; }
     .k-i-arrow-60-left::before { content: "\e007"; }
     .k-i-arrow-end-up::before { content: "\e008"; }
     .k-i-arrow-end-right::before { content: "\e009"; }
@@ -72,9 +74,12 @@
     .k-i-arrow-seek-up::before { content: "\e00c"; }
     .k-i-arrow-double-60-right::before { content: "\e00d"; }
     .k-i-arrow-seek-right::before { content: "\e00d"; }
+    .k-i-forward-sm::before { content: "\e00d"; }
     .k-i-arrow-double-60-down::before { content: "\e00e"; }
     .k-i-arrow-seek-down::before { content: "\e00e"; }
     .k-i-arrow-double-60-left::before { content: "\e00f"; }
+    .k-i-arrow-seek-left::before { content: "\e00f"; }
+    .k-i-rewind-sm::before { content: "\e00f"; }
     .k-i-arrows-kpi::before { content: "\e010"; }
     .k-i-kpi::before { content: "\e010"; }
     .k-i-arrows-no-change::before { content: "\e011"; }
@@ -116,10 +121,12 @@
     .k-i-reset::before { content: "\e102"; }
     .k-i-reload::before { content: "\e103"; }
     .k-i-refresh::before { content: "\e103"; }
+    .k-i-recurrence::before { content: "\e103"; }
     .k-i-non-recurrence::before { content: "\e104"; }
     .k-i-reset-sm::before { content: "\e105"; }
     .k-i-reload-sm::before { content: "\e106"; }
     .k-i-refresh-sm::before { content: "\e106"; }
+    .k-i-recurrence-sm::before { content: "\e106"; }
     .k-i-clock::before { content: "\e107"; }
     .k-i-calendar::before { content: "\e108"; }
     .k-i-save::before { content: "\e109"; }
@@ -156,12 +163,14 @@
     .k-i-x::before { content: "\e11b"; }
     .k-i-close-outline::before { content: "\e11c"; }
     .k-i-x-outline::before { content: "\e11c"; }
+    .k-i-error::before { content: "\e11c"; }
     .k-i-close-circle::before { content: "\e11d"; }
     .k-i-x-circle::before { content: "\e11d"; }
     .k-i-plus::before { content: "\e11e"; }
     .k-i-plus-outline::before { content: "\e11f"; }
     .k-i-plus-circle::before { content: "\e120"; }
     .k-i-minus::before { content: "\e121"; }
+    .k-i-kpi-trend-equal::before { content: "\e121"; }
     .k-i-minus-outline::before { content: "\e122"; }
     .k-i-minus-circle::before { content: "\e123"; }
     .k-i-sort-asc::before { content: "\e124"; }
@@ -211,6 +220,9 @@
     .k-i-connector::before { content: "\e144"; }
     .k-i-plus-sm::before { content: "\e145"; }
     .k-i-minus-sm::before { content: "\e146"; }
+    .k-i-kpi-status-deny::before { content: "\e147"; }
+    .k-i-kpi-status-hold::before { content: "\e148"; }
+    .k-i-kpi-status-open::before { content: "\e149"; }
     .k-i-play::before { content: "\e200"; }
     .k-i-pause::before { content: "\e201"; }
     .k-i-stop::before { content: "\e202"; }
@@ -253,7 +265,6 @@
     .k-i-help::before { content: "\e402"; }
     .k-i-warning::before { content: "\e403"; }
     .k-i-exception::before { content: "\e403"; }
-    .k-i-error::before { content: "\e403"; }
     .k-i-photo-camera::before { content: "\e500"; }
     .k-i-image::before { content: "\e501"; }
     .k-i-photo::before { content: "\e501"; }
@@ -440,6 +451,7 @@
     .k-i-table-insert::before { content: "\e676"; }
     .k-i-table::before { content: "\e677"; }
     .k-i-table-properties::before { content: "\e678"; }
+    .k-i-table-wizard::before { content: "\e678"; }
     .k-i-table-cell::before { content: "\e679"; }
     .k-i-table-cell-properties::before { content: "\e67a"; }
     .k-i-table-column-insert-left::before { content: "\e67b"; }
@@ -686,7 +698,6 @@
     .k-i-volume-low::before { @extend .k-i-volume-down; }
     .k-i-volume-high::before { @extend .k-i-volume-up; }
     .k-i-volume-mute::before { @extend .k-i-volume-off; }
-    .k-i-forward-sm::before { @extend .k-i-arrow-double-60-right; }
 
 
     // RTL icons
