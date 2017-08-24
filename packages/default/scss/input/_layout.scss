@@ -175,15 +175,16 @@
         @include disabled;
     }
 
+
     .k-checkbox-label,
     .k-radio-label {
-        position: relative;
-        padding-left: add-two($checkbox-size, ($padding-x-lg / 2));
-        vertical-align: text-top;
-        cursor: pointer;
-        display: inline-flex;
-        align-items: baseline;
+        padding-left: ($icon-size + $icon-spacing);
         line-height: $checkbox-line-height;
+        vertical-align: middle;
+        display: inline-flex;
+        align-items: flex-start;
+        position: relative;
+        cursor: pointer;
 
         .k-ripple {
             top: $checkbox-size / 2;
