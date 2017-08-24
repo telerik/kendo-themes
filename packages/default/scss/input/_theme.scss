@@ -93,22 +93,47 @@
     $checkbox-focused-border: $input-hovered-border !default;
     $checkbox-focused-checked-border: $accent !default;
 
-    .k-radio + .k-radio-label {
+    // Radio
+    .k-radio-label {
+
+        // Normal state
         &::before {
             border-color: $radio-border;
             background-color: $radio-bg;
         }
-    }
 
-    .k-radio:checked + .k-radio-label {
-        &::before {
-            background-color: $radio-checked-bg;
-            border-color: $radio-checked-border;
-            box-shadow: 0 0 1px 0 $radio-checked-bg inset;
+        // Focus state
+        .k-radio:focus + & {
+            &::before {
+                box-shadow: $radio-focused-shadow;
+            }
         }
 
-        &::after {
-            background-color: $radio-checked-text;
+        // Checked
+        .k-radio:checked + & {
+            &::before {
+                border-color: $radio-checked-border;
+                background-color: $radio-checked-bg;
+            }
+            &::after {
+                background-color: $radio-checked-text;
+            }
+        }
+        .k-radio:checked:focus + & {
+            &::before {
+                box-shadow: $radio-focused-checked-shadow;
+            }
+        }
+
+        // Hover
+        .k-radio:hover + & {
+            &::before {
+                border-color: $radio-hovered-border;
+                background-color: $radio-hovered-bg;
+            }
+            &::after {
+                background-color: $radio-hovered-text;
+            }
         }
     }
 
