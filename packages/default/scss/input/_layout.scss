@@ -238,71 +238,31 @@
         border-radius: $radio-radius;
     }
 
-    // container box
-    .k-checkbox-label::before {
-        @include border-radius( $checkbox-radius );
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: $checkbox-size;
-        height: $checkbox-size;
-        text-align: center;
-        font-size: $checkbox-size;
-        line-height: $line-height * .8;
-        border-width: $checkbox-border-width;
-        border-style: solid;
-        display: inline-flex;
-        align-items: center;
-
-        .k-checkbox:disabled + & {
-            border-width: $checkbox-border-width;
-            border-style: solid;
-        }
-    }
-
-    // tick or indeterminate state
+    // Checkbox
     .k-checkbox-label::after {
         content: "\e118";
-        position: absolute;
-        top: 0;
-        left: 0;
         width: $checkbox-size;
         height: $checkbox-size;
-        text-align: center;
-        display: inline-flex;
-        align-items: center;
-        border: $checkbox-border-width solid transparent;
-        overflow: hidden;
-        max-width: 0;
+        transform: scale(0);
+    }
+    .k-checkbox:checked + .k-checkbox-label::after {
+        @include border-radius( $checkbox-radius );
+        transform: scale(1);
+    }
+    .k-checkbox:indeterminate + .k-checkbox-label::after {
+        content: "";
+        transform: scale(1);
 
-        .k-checkbox:checked + & {
-            max-width: $checkbox-size;
-        }
-
-        .k-checkbox:indeterminate + & {
-            max-width: $checkbox-size;
-            box-sizing: border-box;
-            content: "";
-            position: absolute;
-
-            @if $checkbox-indeterminate-style == 'dash' {
-                $height: $checkbox-size / 10;
-                border-width: 0;
-                height: $height;
-                top: ( ( $checkbox-size - $height ) / 2 );
-                width: $checkbox-size - 2 * $checkbox-border-width;
-                left: $checkbox-border-width;
-            } @else {
-                width: $checkbox-size / 2;
-                height: $checkbox-size / 2;
-                top: $checkbox-size / 4;
-                left: $checkbox-size / 4;
-            }
-        }
-
-        .k-checkbox:disabled + & {
-            cursor: default;
+        @if $checkbox-indeterminate-style == 'dash' {
+            width: $checkbox-dash-width;
+            height: $checkbox-dash-height;
+            top: $checkbox-dash-offset-y;
+            left: $checkbox-dash-offset-x;
+        } @else {
+            width: $checkbox-size / 2;
+            height: $checkbox-size / 2;
+            top: $checkbox-size / 4;
+            left: $checkbox-size / 4;
         }
     }
 
