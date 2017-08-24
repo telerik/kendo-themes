@@ -4,6 +4,14 @@
     $radio-radius: 50% !default;
     $textbox-shadow: 0 2px 2px 1px rgba(0, 0, 0, .06) !default;
     $fieldset-margin: 30px;
+    $checkbox-size: $icon-size !default;
+    $checkbox-border-width: 1px !default;
+    $checkbox-line-height: 1 !default;
+    $checkbox-indeterminate-style: square !default;
+    $checkbox-dash-height: $checkbox-size / 10 !default;
+    $checkbox-dash-width: $checkbox-size - ( $checkbox-border-width * 4 ) !default;
+    $checkbox-dash-offset-x: $checkbox-border-width * 2 !default;
+    $checkbox-dash-offset-y: ( $checkbox-size - $checkbox-dash-height ) / 2 !default;
 
     $textbox-line-height: $form-line-height-em !default;
     // TODO: legacy, consider switching to 100%
@@ -151,11 +159,6 @@
 
 
     // checkbox / radio button
-    $checkbox-size: $icon-size !default;
-    $checkbox-border-width: 1px !default;
-    $checkbox-line-height: 1 !default;
-    $checkbox-indeterminate-style: square !default;
-
     .k-checkbox,
     .k-radio {
         position: absolute;
