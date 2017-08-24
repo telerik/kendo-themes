@@ -103,6 +103,26 @@
         max-height: 600px;
     }
 
+
+    // KPI icons
+    .k-i-kpi-trend-increase,
+    .k-i-kpi-trend-decrease,
+    .k-i-kpi-trend-equal {
+        color: inherit;
+    }
+
+    .k-i-kpi-status-hold {
+        color: $warning;
+    }
+
+    .k-i-kpi-status-deny {
+        color: $error;
+    }
+
+    .k-i-kpi-status-open {
+        color: $success;
+    }
+
 }
 
 
