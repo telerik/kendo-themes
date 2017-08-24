@@ -266,45 +266,19 @@
         }
     }
 
-    .k-radio-label {
-        // container circle
-        &::before {
-            content: "";
-            width: $checkbox-size;
-            height: $checkbox-size;
-            position: absolute;
-            left: 0;
-            top: 0;
-            border-radius: $radio-radius;
-            border-width: $checkbox-border-width;
-            border-style: solid;
-            padding: 0;
-        }
-
-        // checked state
-        &::after {
-            content: "";
-            position: absolute;
-            border-radius: 50%;
-            width: $checkbox-size / 2;
-            height: $checkbox-size / 2;
-            top: $checkbox-size / 4;
-            left: $checkbox-size / 4;
-            transform: scale(0);
-
-            .k-radio:checked + & {
-                transform: scale(1);
-            }
-
-            .k-radio:disabled + & {
-                opacity: .5;
-            }
-        }
-
-        .k-radio:disabled + &,
-        .k-radio:checked:disabled + & {
-            cursor: default;
-        }
+    // Radio
+    .k-radio-label::after {
+        content: "";
+        width: $checkbox-size / 2;
+        height: $checkbox-size / 2;
+        border-radius: 50%;
+        position: absolute;
+        top: $checkbox-size / 4;
+        left: $checkbox-size / 4;
+        transform: scale(0);
+    }
+    .k-radio:checked + .k-radio-label::after {
+        transform: scale(1);
     }
 
     .k-fieldset {
