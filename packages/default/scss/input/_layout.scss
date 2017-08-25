@@ -178,7 +178,7 @@
 
     .k-checkbox-label,
     .k-radio-label {
-        padding-left: ($icon-size + $icon-spacing);
+        padding-left: add-two($icon-size, $icon-spacing);
         line-height: $checkbox-line-height;
         vertical-align: middle;
         display: inline-flex;
