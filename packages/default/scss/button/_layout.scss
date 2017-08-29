@@ -129,7 +129,7 @@
             @include border-radius( 0 );
         }
         .k-button ~ .k-button {
-            margin-left: -1px;
+            margin-left: -$button-border-width;
         }
 
         .k-button:hover,
