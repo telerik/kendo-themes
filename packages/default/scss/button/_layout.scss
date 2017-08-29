@@ -21,6 +21,7 @@
         cursor: pointer;
         outline: none;
         -webkit-appearance: none;
+        position: relative;
 
         // TODO: extend disabled selector
         &[disabled],
@@ -132,7 +133,6 @@
 
         .k-button {
             @include border-radius( 0 );
-            position: relative;
         }
         .k-button ~ .k-button {
             margin-left: -1px;
