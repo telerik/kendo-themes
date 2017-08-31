@@ -155,4 +155,20 @@
             background-color: transparent;
         }
     }
+
+    // Bare button
+    .k-button.k-bare {
+        &::after {
+            border-width: 0;
+        }
+
+        &.k-state-disabled {
+            color: inherit;
+            opacity: .38;
+        }
+
+        &.k-primary {
+            color: $accent;
+        }
+    }
 }
