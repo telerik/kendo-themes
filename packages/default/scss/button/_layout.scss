@@ -79,12 +79,6 @@
 
     }
 
-    // Icon button
-    .k-button-icon {
-        height: add-two($form-line-height*1em, (2*$button-padding-y)); // fix vertical icon align for IE
-    }
-
-
     // Toggle button
     .k-toggle-button {}
 
