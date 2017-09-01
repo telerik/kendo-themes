@@ -400,6 +400,8 @@
     div.k-grid-header,
     div.k-grid-footer {
         display: flex;
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .k-grid-header {
