@@ -1,6 +1,7 @@
 @include exports('popup/layout') {
 
     .k-popup {
+        display: flex;
         margin: 0;
         padding: $popup-padding-y $popup-padding-x;
         border-width: 1px;
