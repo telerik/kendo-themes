@@ -28,7 +28,7 @@
     "verifyRelease": "@telerik/semantic-prerelease/verifyRelease"
   },
   "scripts": {
-    "lint": "editorconfig-tools check scss/**/*.scss && sass-lint -v -c ./sass-lint.yml",
+    "lint": "sass-lint -v -c ./sass-lint.yml",
     "api": "sassdoc ./scss/",
     "api-check": "npm run api && git diff --exit-code --quiet -- docs/ || (echo -e '\\033[0;31mERROR: API docs are out of date' && exit 1)",
     "start": "webpack-dev-server",
