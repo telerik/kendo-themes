@@ -178,9 +178,11 @@
 
     .k-checkbox-label,
     .k-radio-label {
+        margin: 0;
         padding-left: add-two($icon-size, $icon-spacing);
+        min-height: $icon-size;
         line-height: $checkbox-line-height;
-        vertical-align: middle;
+        vertical-align: text-top;
         display: inline-flex;
         align-items: flex-start;
         position: relative;
@@ -203,6 +205,14 @@
             left: 50% !important;
             width: 200% !important;
             height: 200% !important;
+        }
+
+        // With no text
+        &.k-no-text {
+            padding: 0;
+            width: $icon-size;
+            height: $icon-size;
+            display: inline-block;
         }
     }
 
@@ -411,16 +421,8 @@
     }
 
     .k-grid {
-        input.k-checkbox {
-            margin-left: 1px;
-            margin-top: 3px;
-            width: 14px;
-            height: 15px;
-            z-index: 1;
-
-            + label.k-checkbox-label {
-                cursor: default;
-            }
+        .k-checkbox-label {
+            cursor: default;
         }
     }
 }
