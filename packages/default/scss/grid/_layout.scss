@@ -537,7 +537,18 @@
             width: 100%;
         }
 
-        > span,
+        > span {
+            .k-button {
+                visibility: visible;
+                pointer-events: all;
+            }
+
+            .k-button,
+            .k-dropdown-operator {
+                margin-left: $cell-padding-y / 2;
+            }
+        }
+
         .k-filtercell-operator {
             > .k-button.k-clear-button-visible {
                 visibility: visible;
