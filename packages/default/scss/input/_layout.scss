@@ -127,6 +127,7 @@
         padding-top: $floating-label-height;
         display: inline-flex;
         flex-direction: column;
+        justify-content: stretch;
 
         > .k-label {
             position: absolute;
@@ -135,6 +136,12 @@
             top: add-three($floating-label-height, $input-border-width, $input-padding-y);
             left: add-two($input-padding-x, $input-border-width);
             transition: transform $floating-label-transition, color $floating-label-transition;
+        }
+
+        > .k-textbox,
+        > .k-input-bar {
+            flex: 1 1 auto;
+            width: auto;
         }
 
         &.k-state-empty {
