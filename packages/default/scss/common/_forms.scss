@@ -183,7 +183,7 @@
             padding: 0;
             flex-direction: column;
             align-items: stretch;
-            width: button-inner-size();
+            width: add-three( $button-border-width, $icon-size, $button-padding-y * 2 );
         }
         .k-link {
             display: block;
