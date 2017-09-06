@@ -38,25 +38,77 @@
     }
 }
 
+$checkbox-bg: $input-bg !default;
 $checkbox-border: rgba(0, 0, 0, .54) !default;
 $checkbox-checked-bg: $primary !default;
 $checkbox-checked-border: $checkbox-checked-bg !default;
 $checkbox-checked-text: $primary-contrast !default;
-$checkbox-hovered-border: $checkbox-border !default;
+
 $checkbox-focused-border: $checkbox-border !default;
 $checkbox-focused-shadow: none !default;
 $checkbox-focused-checked-shadow: none !default;
 $checkbox-focused-checked-border: $primary !default;
 $checkbox-disabled-bg: #b0b0b0 !default;
 
+$radio-bg: $input-bg !default;
 $radio-border: $checkbox-border !default;
 $radio-checked-bg: $primary-contrast !default;
 $radio-checked-border: $primary !default;
 $radio-checked-text: $radio-checked-border !default;
 
-@import "~@progress/kendo-theme-default/scss/input/theme";
+@include exports('input/theme/checkbox-radiobutton') {
 
-@include exports('input/theme/checkbox-radiobutton/material') {
+    .k-radio + .k-radio-label {
+        &::before {
+            border-color: $radio-border;
+            background-color: $radio-bg;
+        }
+    }
+
+    .k-radio:checked + .k-radio-label {
+        &::before {
+            background-color: $radio-checked-bg;
+            border-color: $radio-checked-border;
+            box-shadow: 0 0 1px 0 $radio-checked-bg inset;
+        }
+
+        &::after {
+            background-color: $radio-checked-text;
+        }
+    }
+
+    .k-checkbox-label::before {
+        background-color: $checkbox-bg;
+        border-color: $checkbox-border;
+
+        .k-checkbox:checked + & {
+            background-color: $checkbox-checked-bg;
+            border-color: $checkbox-checked-border;
+        }
+    }
+
+    .k-checkbox-label::after {
+        color: $checkbox-checked-text;
+    }
+
+    .k-checkbox:checked + .k-checkbox-label::after,
+    .k-checkbox:indeterminate + .k-checkbox-label::after {
+        background-color: $checkbox-checked-bg;
+        border-color: $checkbox-checked-border;
+    }
+
+    .k-checkbox:focus + .k-checkbox-label::before,
+    .k-radio:focus + .k-radio-label::before {
+        box-shadow: $checkbox-focused-shadow;
+        border-color: $checkbox-focused-border;
+    }
+
+    .k-checkbox:focus:checked + .k-checkbox-label::before,
+    .k-radio:focus:checked + .k-radio-label::before {
+        box-shadow: $checkbox-focused-checked-shadow;
+        border-color: $checkbox-focused-checked-border;
+    }
+
 
     .k-checkbox-label {
         &::before {
@@ -73,8 +125,6 @@ $radio-checked-text: $radio-checked-border !default;
         }
 
         &::after {
-            transition: max-width linear 280ms;
-
             .k-checkbox:indeterminate + & {
                 background-color: $checkbox-checked-text;
             }
@@ -104,3 +154,6 @@ $radio-checked-text: $radio-checked-border !default;
         }
     }
 }
+
+@import "~@progress/kendo-theme-default/scss/input/theme";
+

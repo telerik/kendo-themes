@@ -6,3 +6,20 @@ $textbox-line-height: 1.2em !default;
 $floating-label-transition: .4s cubic-bezier(.25, .8, .25, 1) !default;
 
 @import "~@progress/kendo-theme-default/scss/input/layout";
+
+@include exports('input/theme/checkbox-radiobutton/material') {
+    // animation
+    .k-checkbox-label::after {
+        $check-icon-size: (2 * $icon-size) / 3;
+        font-size: $check-icon-size;
+        transition: max-width linear 280ms;
+        max-width: 0;
+        justify-content: flex-start;
+        text-indent: (($checkbox-size - $check-icon-size) / 2);
+
+        .k-checkbox:checked + &,
+        .k-checkbox:indeterminate + & {
+            max-width: $checkbox-size;
+        }
+    }
+}
