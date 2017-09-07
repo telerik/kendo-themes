@@ -1,0 +1,18 @@
+# what's this?
+# - http://editorconfig.org
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+max_line_length = off
+
+[*.scss]
+indent_style = space
+indent_size = 4
+
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2
