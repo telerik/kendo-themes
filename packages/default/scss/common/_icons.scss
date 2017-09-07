@@ -702,7 +702,9 @@
 
     // RTL icons
     .k-rtl .k-i-indent-increase,
-    .k-rtl .k-i-indent-decrease { transform: scaleX(-1); }
+    .k-rtl .k-i-indent-decrease {
+        transform: scaleX(-1);
+    }
 
     .k-sprite {
         display: inline-block;

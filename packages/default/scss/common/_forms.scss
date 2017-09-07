@@ -449,6 +449,14 @@
     .k-numerictextbox {
         &.form-control {
             &-sm {
+                .k-link-increase > .k-icon {
+                    bottom: -$numerictextbox-icon-offset-sm;
+                }
+
+                .k-link-decrease > .k-icon {
+                    top: -$numerictextbox-icon-offset-sm;
+                }
+
                 .k-link {
                     height: $bootstrap-integration-input-height-sm / 2;
                 }
@@ -457,21 +465,6 @@
             &-lg {
                 .k-link {
                     height: $bootstrap-integration-input-height-lg / 2;
-                }
-            }
-        }
-    }
-
-    .k-numerictextbox,
-    .k-dateinput {
-        &.form-control {
-            &-sm {
-                .k-link-increase > .k-icon {
-                    bottom: -$numerictextbox-icon-offset-sm;
-                }
-
-                .k-link-decrease > .k-icon {
-                    top: -$numerictextbox-icon-offset-sm;
                 }
             }
         }
