@@ -1,7 +1,8 @@
 # Kendo UI Default Theme
 
+The Kendo UI Default Theme is a SCSS-based theme for the Kendo UI components.
+
 * [License](#license)
-* [Overview](#overview)
 * [Basic Usage](#basic-usage)
 * [Customization](#customization)
 * [Development](#development)
@@ -23,37 +24,41 @@ If you do not own a commercial license, the usage of this software shall be gove
 
 *Copyright © 2017 Telerik AD. All rights reserved.*
 
-## Overview
-
-The Kendo UI Default Theme is a SCSS-based theme for the Kendo UI components.
-
 ## Basic Usage
 
-For more information on how to use the Default Theme in Angular 2 and React projects, refer to [its introductory topic](docs/index.md).
+For more information on how to implement the Default theme in your project, refer to the following articles:
+
+* [Using the Default Theme in Angular Projects](http://www.telerik.com/kendo-angular-ui/components/styling/)
+* [Using the Default Theme in jQuery Projects](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
 
 ## Customization
 
-To customize the Default Theme in one swoop, use the colors defined in the [`scss/_variables.scss`](scss/_variables.scss) file. Any change in this file is propagated to every component.
+To customize the Default Theme in one swoop, use the colors which are defined in the [`scss/_variables.scss`](scss/_variables.scss) file. Any change you make to the content of this file is propagated to every component.
 
-To style a specific component, use the variables used in its specific `.scss` file.
+To style a specific component, apply the variables which are used in its specific `.scss` file.
 
-The theme is built by running `npm run build`. The `dist/all.css` file contains the complete theme that you can use in your project.
+After you build the theme by running the `npm run build` command, the complete theme that you can use in your project will be available in the `dist/all.css` file.
 
 ## Development
 
-Styles are split into components and the dependencies are managed by the [`import-once`](scss/mixins/core/_import-once.scss) mixin. When configuring the styles, define them within an `import-once` block so that they are bundled once when required from multiple files.
+The styles are split into components and the dependencies are managed by the [`import-once`](scss/mixins/core/_import-once.scss) mixin. When you configure the styles, define them within an `import-once` block. In this way, when required from multiple files, they are bundled once.
 
-During development, the SCSS files are linted on every `commit` and built on every `push` command. The theme package can be tested against a component by linking the theme in the components package.
+During development, the SCSS files are linted on every `commit` and built on every `push` command. To test the theme package against a component, link the theme in the components package.
 
-Upon build, browser-specific properties are generated through the [PostCSS autoprefixer](https://github.com/postcss/autoprefixer).
+Browser-specific properties are generated at build-time through the [PostCSS autoprefixer](https://github.com/postcss/autoprefixer).
 
 ### Embedding Resources
 
-When you update resources (images or fonts), run the `npm run embed-assets` task. The task generates a file with the same name, which registers a base64-encoded version in the `$data-uris` SCSS map. For example, the `foo.woff` font file will receive a `foo.scss` file, which can later be imported through `@import './font/foo';`. Then, inline the base64 version through `map-get( $data-uris, 'WebComponentsIcons.woff' )`. The embedding of resources avoids issues related with their hosting when your project consumes the theme. For more details, refer to [issue #41](https://github.com/telerik/kendo-theme-default/issues/41#issuecomment-258472183).
+The embedding of resources, such as images or fonts, avoids hosting-related issues when your project consumes the theme. For more details, refer to [issue #41](https://github.com/telerik/kendo-theme-default/issues/41#issuecomment-258472183).
+
+To update the embedded resources in your project:
+
+1. Run the `npm run embed-assets` task. As a result, the task generates a file with the same name, which registers a Base64-encoded version in the `$data-uris` SCSS map. For example, the `foo.woff` font file will receive a `foo.scss` file, which can later be imported through `@import './font/foo';`.
+1. Inline the Base64 version through `map-get( $data-uris, 'WebComponentsIcons.woff' )`.
 
 ### Documenting Variables
 
-The variables for customizing the Default theme are listed in the `docs/customization.md` article. It is generated from the SCSS source files by running the `npm run api` command.  
+The available variables for customizing the Default theme are listed in the article on [Default variables](https://github.com/telerik/kendo-theme-default/blob/develop/docs/customization.md). The file is generated from the SCSS source files by running the `npm run api` command.
 
 To document a variable, use triple-slash comments (`///`) before its definition.
 
@@ -70,4 +75,4 @@ To group variables, use the `@group` directive.
     /// @group random
     $bar: 1024 !default;
 
-To change the layout or the front meter of the generated help topic, change the `build/customization.md.hbs` source file.
+To change the layout or the front meter of the generated help topic, change the [`build/customization.md.hbs`](/build/customization.md.hbs) source file.

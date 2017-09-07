@@ -7,7 +7,7 @@ position: 9
 
 # Customization
 
-The following list describes the theme variables available for adjustment in the Kendo UI Default theme for Angular.
+The following table lists the available variables for customizing the Default theme.
 
 <style>
 .theme-variables th,
