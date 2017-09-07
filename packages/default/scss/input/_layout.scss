@@ -17,6 +17,30 @@
     // TODO: legacy, consider switching to 100%
     $textbox-default-width: 12.4em !default;
 
+    .k-input-bar {
+        position: relative;
+        display: none;
+        z-index: 2;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2 * $input-border-width;
+            margin: auto;
+            opacity: 0;
+            transform: scaleX(.5);
+            transition: transform .3s;
+
+            .k-state-focused & {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+        }
+    }
+
     .k-textbox,
     .k-input.k-textbox,
     .k-textarea {
@@ -33,31 +57,6 @@
         vertical-align: middle;
         position: relative;
         -webkit-appearance: none;
-
-        + .k-input-bar {
-            position: relative;
-            display: block;
-            width: $textbox-default-width;
-            z-index: 2;
-
-            &::after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                height: 2 * $input-border-width;
-                margin: auto;
-                opacity: 0;
-                transform: scaleX(.5);
-                transition: transform .3s;
-            }
-        }
-
-        &:focus + .k-input-bar::after {
-            opacity: 1;
-            transform: scaleX(1);
-        }
     }
 
     .k-textbox,
