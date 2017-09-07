@@ -298,14 +298,12 @@
 
         // Button group with flat buttons
         &.k-button-group-flat {
-            &.k-state-disabled {
-                .k-button {
-                    background-color: transparent;
+            &.k-state-disabled .k-button {
+                background-color: transparent;
 
-                    &:active,
-                    &.k-state-active {
-                        background-color: $button-focused-bg;
-                    }
+                &:active,
+                &.k-state-active {
+                    background-color: $button-focused-bg;
                 }
             }
 
