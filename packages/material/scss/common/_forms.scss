@@ -1,1 +1,30 @@
 @import "~@progress/kendo-theme-default/scss/common/forms";
+
+@include exports('common/forms/material') {
+    .k-dateinput-wrap,
+    .k-dropdown-wrap,
+    .k-picker-wrap,
+    .k-multiselect-wrap,
+    .k-numeric-wrap {
+        border-radius: 0;
+        border-width: 0;
+        box-shadow: inset 0 #{-$input-border-width} 0 0 $border-color;
+
+        .k-input-bar {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: block;
+        }
+
+        &.k-state-focused {
+            .k-input-bar::after {
+                background: $accent;
+            }
+        }
+
+        .k-select {
+            border-width: 0;
+        }
+    }
+}
