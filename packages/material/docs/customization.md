@@ -89,8 +89,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
 <td>$primary</td>
 <td>
-    <span class="color-preview" style="background-color: #3f51b5"></span>
-    #3f51b5
+    <span class="color-preview" style="background-color: #43a047"></span>
+    #43a047
 </td>
 <td>The color that focuses the user attention.<br/>
 Used for primary buttons and for elements of primary importance across the theme.
@@ -109,8 +109,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$secondary</td>
 <td>
-    <span class="color-preview" style="background-color: #ff4081"></span>
-    #ff4081
+    <span class="color-preview" style="background-color: #3193ee"></span>
+    #3193ee
 </td>
 <td>The secondary (accent) color of the theme.
 </td>
