@@ -1,1 +1,25 @@
 @import "~@progress/kendo-theme-default/scss/mixins";
+
+@mixin input-ripple() {
+    &::after {
+        display: block;
+        z-index: 2;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2 * $input-border-width;
+        margin: auto;
+        opacity: 0;
+        transform: scaleX(.5);
+        transition: transform .3s;
+        background-color: $accent;
+    }
+
+    &.k-state-focused::after,
+    .k-state-focused &::after {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}

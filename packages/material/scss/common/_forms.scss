@@ -2,9 +2,7 @@
 
 @include exports('common/forms/material') {
     .k-textbox-container {
-        .k-input-bar {
-            display: block;
-        }
+        @include input-ripple();
     }
 
     .k-dateinput-wrap,
@@ -16,31 +14,14 @@
         border-width: 0;
         box-shadow: inset 0 #{-$input-border-width} 0 0 $border-color;
 
-        .k-input-bar {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            display: block;
-        }
-
-        &.k-state-focused {
-            .k-input-bar::after {
-                background: $accent;
-            }
-        }
+        @include input-ripple();
 
         .k-select {
             border-width: 0;
         }
     }
 
-    .k-picker-wrap {
-        .k-dateinput-wrap {
-            box-shadow: none;
-
-            .k-input-bar {
-                display: none;
-            }
-        }
+    .k-picker-wrap .k-dateinput-wrap {
+        box-shadow: none;
     }
 }

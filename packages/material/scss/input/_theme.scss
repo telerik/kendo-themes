@@ -10,10 +10,6 @@
 
         &:focus {
             box-shadow: inset 0 -2px 0 0 $accent;
-
-            + .k-input-bar::after {
-                background: $accent;
-            }
         }
 
         &.k-textbox-no-border:focus {
@@ -23,17 +19,12 @@
 
     // Floating label
     .k-input-container {
-        > label {
+        > .k-label {
             color: $floating-label-color;
         }
 
-        > .k-textbox:focus ~ label,
-        > .k-textbox:valid ~ label {
+        &.k-state-focused > .k-label {
             color: $accent;
-        }
-
-        > .k-textbox:not(:focus) ~ label {
-            color: $floating-label-color;
         }
     }
 }
