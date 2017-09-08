@@ -1,6 +1,12 @@
 @import "~@progress/kendo-theme-default/scss/common/forms";
 
 @include exports('common/forms/material') {
+    .k-textbox-container {
+        .k-input-bar {
+            display: block;
+        }
+    }
+
     .k-dateinput-wrap,
     .k-dropdown-wrap,
     .k-picker-wrap,
