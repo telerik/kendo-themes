@@ -27,16 +27,16 @@
             transition: transform 300ms ease-in-out;
         }
 
-        &-leave {
+        &-exit {
             transform: translate(0, -100%);
         }
 
-        &-leave-active {
+        &-exit-active {
             transform: translate(100%, -100%);
             transition: transform 300ms ease-in-out;
         }
 
-        &-leave-active + &-leave-active,
+        &-exit-active + &-exit-active,
         &-enter-active + &-enter-active {
             display: none;
         }
@@ -54,16 +54,16 @@
             transition: transform 300ms ease-in-out;
         }
 
-        &-leave {
+        &-exit {
             transform: translate(0, -100%);
         }
 
-        &-leave-active {
+        &-exit-active {
             transform: translate(-100%, -100%);
             transition: transform 300ms ease-in-out;
         }
 
-        &-leave-active + &-leave-active,
+        &-exit-active + &-exit-active,
         &-enter-active + &-enter-active {
             display: none;
         }
@@ -81,11 +81,11 @@
             transition: transform 300ms ease-in-out;
         }
 
-        &-leave {
+        &-exit {
             transform: translate(0, -100%);
         }
 
-        &-leave-active {
+        &-exit-active {
             transform: translate(0, 0);
             transition: transform 300ms ease-in-out;
         }
@@ -103,11 +103,11 @@
             transition: transform 300ms ease-in-out;
         }
 
-        &-leave {
+        &-exit {
             transform: translate(0, -100%);
         }
 
-        &-leave-active {
+        &-exit-active {
             transform: translate(0, -200%);
             transition: transform 300ms ease-in-out;
         }
@@ -129,16 +129,16 @@
             transition: opacity 500ms ease-in-out;
         }
 
-        &-leave {
+        &-exit {
             opacity: 1;
         }
 
-        &-leave-active {
+        &-exit-active {
             opacity: 0;
             transition: opacity 500ms ease-in-out;
         }
 
-        &-leave-active + &-leave-active,
+        &-exit-active + &-exit-active,
         &-enter-active + &-enter-active {
             display: none;
         }
@@ -156,11 +156,11 @@
             transition: opacity 300ms ease-in-out;
         }
 
-        &-leave {
+        &-exit {
             transform: translate(0, -100%) scale(1);
         }
 
-        &-leave-active {
+        &-exit-active {
             transform: translate(0, -100%) scale(0);
             transition: transform 300ms ease-in-out;
         }
@@ -178,12 +178,12 @@
             transition: transform 300ms ease-in-out;
         }
 
-        &-leave {
+        &-exit {
             opacity: 1;
             transform: translate(0, -100%);
         }
 
-        &-leave-active {
+        &-exit-active {
             opacity: 0;
             transition: opacity 300ms ease-in-out;
         }
@@ -220,11 +220,11 @@
             transition: transform 300ms ease-in-out;
         }
 
-        &-leave {
+        &-exit {
             transform: translateY(0);
         }
 
-        &-leave-active {
+        &-exit-active {
             transform: translateY(-100%);
             transition: transform 300ms ease-in-out;
         }
@@ -240,11 +240,11 @@
             transition: transform 300ms ease-in-out;
         }
 
-        &-leave {
+        &-exit {
             transform: translateY(0);
         }
 
-        &-leave-active {
+        &-exit-active {
             transform: translateY(100%);
             transition: transform 300ms ease-in-out;
         }
@@ -260,11 +260,11 @@
             transition: transform 300ms ease-in-out;
         }
 
-        &-leave {
+        &-exit {
             transform: translateX(0);
         }
 
-        &-leave-active {
+        &-exit-active {
             transform: translateX(-100%);
             transition: transform 300ms ease-in-out;
         }
@@ -280,11 +280,11 @@
             transition: transform 300ms ease-in-out;
         }
 
-        &-leave {
+        &-exit {
             transform: translateX(0);
         }
 
-        &-leave-active {
+        &-exit-active {
             transform: translateX(100%);
             transition: transform 300ms ease-in-out;
         }
