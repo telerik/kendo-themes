@@ -27,4 +27,14 @@
             border-width: 0;
         }
     }
+
+    .k-picker-wrap {
+        .k-dateinput-wrap {
+            box-shadow: none;
+
+            .k-input-bar {
+                display: none;
+            }
+        }
+    }
 }
