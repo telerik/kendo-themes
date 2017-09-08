@@ -358,27 +358,27 @@ $link-hover-text: desaturate(darken($accent, 5), 25) !default;
 // Chart
 /// The color of the first series.
 /// @group charts
-$series-a: #ff6358 !default;
+$series-a: #499f50 !default;
 
 /// The clor of the second series.
 /// @group charts
-$series-b: #ffd246 !default;
+$series-b: #3193ee !default;
 
 /// The color of the third series.
 /// @group charts
-$series-c: #78d237 !default;
+$series-c: #673ab1 !default;
 
 /// The color of the fourth series.
 /// @group charts
-$series-d: #28b4c8 !default;
+$series-d: #e52864 !default;
 
 /// The color of the fifth series.
 /// @group charts
-$series-e: #2d73f5 !default;
+$series-e: #fc5a33 !default;
 
 /// The color of the sixth series.
 /// @group charts
-$series-f: #aa46be !default;
+$series-f: #fdc139 !default;
 
 $chart-font-size: $font-size !default;
 $chart-font-size-sm: 11px !default;

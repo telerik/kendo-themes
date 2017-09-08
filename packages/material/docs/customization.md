@@ -412,8 +412,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$series-a</td>
 <td>
-    <span class="color-preview" style="background-color: #ff6358"></span>
-    #ff6358
+    <span class="color-preview" style="background-color: #499f50"></span>
+    #499f50
 </td>
 <td>The color of the first series.
 </td>
@@ -421,8 +421,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$series-b</td>
 <td>
-    <span class="color-preview" style="background-color: #ffd246"></span>
-    #ffd246
+    <span class="color-preview" style="background-color: #3193ee"></span>
+    #3193ee
 </td>
 <td>The clor of the second series.
 </td>
@@ -430,8 +430,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$series-c</td>
 <td>
-    <span class="color-preview" style="background-color: #78d237"></span>
-    #78d237
+    <span class="color-preview" style="background-color: #673ab1"></span>
+    #673ab1
 </td>
 <td>The color of the third series.
 </td>
@@ -439,8 +439,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$series-d</td>
 <td>
-    <span class="color-preview" style="background-color: #28b4c8"></span>
-    #28b4c8
+    <span class="color-preview" style="background-color: #e52864"></span>
+    #e52864
 </td>
 <td>The color of the fourth series.
 </td>
@@ -448,8 +448,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$series-e</td>
 <td>
-    <span class="color-preview" style="background-color: #2d73f5"></span>
-    #2d73f5
+    <span class="color-preview" style="background-color: #fc5a33"></span>
+    #fc5a33
 </td>
 <td>The color of the fifth series.
 </td>
@@ -457,8 +457,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$series-f</td>
 <td>
-    <span class="color-preview" style="background-color: #aa46be"></span>
-    #aa46be
+    <span class="color-preview" style="background-color: #fdc139"></span>
+    #fdc139
 </td>
 <td>The color of the sixth series.
 </td>
