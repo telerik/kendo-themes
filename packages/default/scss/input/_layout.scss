@@ -106,6 +106,7 @@
         justify-content: stretch;
 
         > .k-label {
+            pointer-events: none;
             position: absolute;
             line-height: $textbox-line-height;
             cursor: text;
