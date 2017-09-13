@@ -50,4 +50,10 @@
         background-image: url(map-get($data-uris, 'slider-v.gif'));
     }
 
+    .k-slider-wrap {
+        &:focus {
+            outline: none;
+        }
+    }
+
 }
