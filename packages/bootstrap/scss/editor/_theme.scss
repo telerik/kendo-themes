@@ -35,7 +35,7 @@
             }
 
             &.k-state-selected {
-                @include fill( $selected-text, $selected-bg, $selected-border, none );
+                @include appearance( pressed-button );
             }
         }
     }

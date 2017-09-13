@@ -16,12 +16,16 @@
 
         .k-link,
         .k-pager-nav {
+            color: $pager-text;
+            background-color: $pager-bg;
+            border-color: $pager-border;
             border-width: 1px;
             border-style: solid;
-            @include appearance( button );
 
             &:hover {
-                @include appearance( hovered-button );
+                color: $pager-hover-text;
+                background-color: $pager-hover-bg;
+                border-color: $pager-hover-border;
                 z-index: 2;
             }
         }
@@ -47,6 +51,15 @@
             line-height: $pager-buttons-size;
         }
 
+        .k-dropdown .k-dropdown-wrap {
+            color: $body-color;
+            background-color: $pager-bg;
+            border-color: $pager-border;
+
+            &.k-state-hover {
+                background-color: $pager-hover-bg;
+            }
+        }
     }
     .k-pager-numbers {
 
@@ -54,12 +67,13 @@
         .k-state-selected:hover {
             border-width: 1px;
             border-style: solid;
-            @include fill( $selected-text, $selected-bg, $selected-border, none );
+            background-color: $pager-selected-bg;
+            border-color: $pager-selected-border;
             z-index: 2;
             cursor: default;
 
             &.k-link {
-                color: $selected-text;
+                color: $pager-selected-text;
             }
         }
 

@@ -19,7 +19,16 @@
             @include appearance( selected-header );
         }
         > .k-item > .k-link.k-state-focused {
-            box-shadow: inset $button-focused-shadow;
+            box-shadow: inset 0 0 0 3px try-darken( $header-bg, 7 );
+
+            &:hover,
+            &.k-state-hover {
+                box-shadow: inset 0 0 0 3px try-darken( $header-hovered-bg, 7 );
+            }
+
+            &.k-state-selected {
+                box-shadow: inset 0 0 0 3px try-darken( $header-selected-bg , 7 );
+            }
         }
 
         // Child
@@ -33,7 +42,16 @@
             @include appearance( selected-node );
         }
         .k-panel > .k-item > .k-link.k-state-focused {
-            box-shadow: inset $button-focused-shadow;
+            box-shadow: inset 0 0 0 3px try-darken( $node-bg, 7 );
+
+            &:hover,
+            &.k-state-hover {
+                box-shadow: inset 0 0 0 3px try-darken( $node-hovered-bg , 7 );
+            }
+
+            &.k-state-selected {
+                box-shadow: inset 0 0 0 3px try-darken( $node-selected-bg , 7 );
+            }
         }
 
     }

@@ -1,0 +1,18 @@
+$enable-bootstrap-overrides: true !default;
+// $theme-colors: () !default;
+
+@if $enable-bootstrap-overrides {
+    // $theme-colors: map-merge((
+    //     secondary: #dee2e6,
+    // ), $theme-colors);
+    $theme-colors: (
+        primary: $blue,
+        secondary: #e4e7eb,
+        success: $green,
+        info: $cyan,
+        warning: $yellow,
+        danger: $red,
+        light: $gray-100,
+        dark: $gray-800
+    );
+}

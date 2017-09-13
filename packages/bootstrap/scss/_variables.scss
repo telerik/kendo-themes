@@ -1,5 +1,7 @@
 @import "~@progress/kendo-theme-default/scss/mixins/colors";
+@import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
+@import "bootstrap-overrides";
 
 
 // Options
@@ -20,7 +22,6 @@ $font-family: $font-family-base !default;
 /// Font family for monospaced text. Used for styling the code.
 $font-family-monospace:  $font-family-monospace !default;
 
-$font-size-xs: $font-size-xs !default;
 $font-size-sm: $font-size-sm !default;
 $font-size-lg: $font-size-lg !default;
 
@@ -28,7 +29,7 @@ $font-size-lg: $font-size-lg !default;
 $line-height: $line-height-base !default;
 $line-height-sm: $line-height-sm !default;
 $line-height-lg: $line-height-lg !default;
-$line-height-em: $line-height * 1rem;
+$line-height-em: $line-height * 1em;
 
 
 // Metrics
@@ -57,20 +58,20 @@ $popup-padding-y: $dropdown-padding-y !default;
 $header-padding-x: $card-spacer-x !default;
 $header-padding-y: $card-spacer-y !default;
 
-$form-line-height: $btn-line-height !default;
-$form-line-height-em: $form-line-height * 1rem !default;
+$form-line-height: $input-btn-line-height !default;
+$form-line-height-em: $form-line-height * 1em !default;
 
-$button-padding-x: $btn-padding-x !default;
-$button-padding-y: $btn-padding-y !default;
-$button-padding-x-sm: $btn-padding-x-sm !default;
-$button-padding-y-sm: $btn-padding-y-sm !default;
+$button-padding-x: $input-btn-padding-x !default;
+$button-padding-y: $input-btn-padding-y !default;
+$button-padding-x-sm: $input-btn-padding-x-sm !default;
+$button-padding-y-sm: $input-btn-padding-y-sm !default;
 $button-calc-size: #{$form-line-height-em} + #{$button-padding-y * 2} + 2px;
 $button-inner-calc-size: #{$form-line-height-em} + #{$button-padding-y * 2};
 
-$input-padding-x: $input-padding-x !default;
-$input-padding-y: $input-padding-y !default;
-$input-padding-x-sm: $input-padding-x-sm !default;
-$input-padding-y-sm: $input-padding-y-sm !default;
+$input-padding-x: $input-btn-padding-x !default;
+$input-padding-y: $input-btn-padding-y !default;
+$input-padding-x-sm: $input-btn-padding-x-sm !default;
+$input-padding-y-sm: $input-btn-padding-y-sm !default;
 $input-calc-size: #{$form-line-height-em} + #{$input-padding-y * 2} + 2px;
 $input-inner-calc-size: #{$form-line-height-em} + #{$input-padding-y * 2};
 
@@ -95,14 +96,14 @@ $nav-item-padding-y: $padding-y !default;
 $cell-padding-x: $table-cell-padding !default;
 $cell-padding-y: $table-cell-padding !default;
 $cell-padding: $table-cell-padding !default;
-$cell-padding-sm: $table-sm-cell-padding !default;
+$cell-padding-sm: $table-cell-padding-sm !default;
 
 $window-inner-padding-x: $modal-inner-padding !default;
 $window-inner-padding-y: $modal-inner-padding !default;
 $window-titlebar-padding-x: $modal-header-padding !default;
 $window-titlebar-padding-y: $modal-header-padding !default;
 
-$progressbar-height: $progress-height;
+$progressbar-height: $progress-height !default;
 
 $zindex-popup: 1;
 $zindex-window: 2;
@@ -113,38 +114,38 @@ $rgba-transparent: rgba( 0, 0, 0, 0 );
 // Theme colors
 /// The color that focuses the user attention.
 /// Used for primary buttons and for elements of primary importance across the theme.
-$accent: $component-active-bg !default;
+$accent: theme-color("primary") !default;
 
 /// The color used along with the accent color denoted by $accent.
 /// Used to provide contrast between the background and foreground colors.
-$accent-contrast: $component-active-color !default;
+$accent-contrast: contrast-wcag( $accent ) !default;
 
 $text-color: $body-color !default;
 $bg-color: $body-bg !default;
 $border-color: darken( $bg-color, 12% ) !default;
 
-/// The text color of the components' chrome area.
-$base-text: $btn-secondary-color !default;
 /// The background of the components' chrome area.
-$base-bg: $btn-secondary-bg !default;
+$base-bg: darken( $body-bg, 3% ) !default;
+/// The text color of the components' chrome area.
+$base-text: $body-color !default;
 /// The border color of the components' chrome area.
-$base-border: darken( $base-bg, 12% ) !default;
+$base-border: darken( $base-bg, 3% ) !default;
 /// The gradient background of the components' chrome area.
 $base-gradient: none !default;
 
-/// The text color of hovered items.
-$hovered-text: $base-text !default;
 /// The background of hovered items.
 $hovered-bg: darken( $base-bg, 3% ) !default;
+/// The text color of hovered items.
+$hovered-text: $base-text !default;
 /// The border color of hovered items.
 $hovered-border: darken( $base-border, 12% ) !default;
 /// The gradient background of hovered items.
 $hovered-gradient: none !default;
 
-/// The text color of selected items.
-$selected-text: $accent-contrast !default;
 /// The background of selected items.
 $selected-bg: $accent !default;
+/// The text color of selected items.
+$selected-text: contrast-wcag( $selected-bg ) !default;
 /// The border color of selected items.
 $selected-border: darken( $selected-bg, 12% ) !default;
 /// The gradient background of selected items.
@@ -153,13 +154,13 @@ $selected-gradient: none !default;
 $transition: color .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease !default;
 
 /// The color for error messages and states.
-$success: $brand-success !default;
+$success: theme-color("success") !default;
 /// The color for warning messages and states.
-$info: $brand-info !default;
+$info: theme-color("info") !default;
 /// The color for success messages and states.
-$warning: $brand-warning !default;
+$warning: theme-color("warning") !default;
 /// The color for informational messages and states.
-$error: $brand-danger !default;
+$error: theme-color("danger") !default;
 
 $invalid-border: $error !default;
 
@@ -193,8 +194,8 @@ $popup-border: $dropdown-border-color !default;
 
 // Header
 $header-text: $base-text !default;
-$header-bg: $card-cap-bg !default;
-$header-border: $card-border-color !default;
+$header-bg: $gray-100 !default;
+$header-border: darken( $header-bg, 9 ) !default;
 $header-gradient: none !default;
 
 $header-hovered-text: $header-text !default;
@@ -209,47 +210,48 @@ $header-selected-gradient: none !default;
 
 
 // Button
-/// The text color of the buttons.
-/// @group buttons
-$button-text: $base-text !default;
 
 /// The background of the buttons.
 /// @group buttons
-$button-bg: $base-bg !default;
+$button-bg: theme-color("secondary") !default;
+
+/// The text color of the buttons.
+/// @group buttons
+$button-text: contrast-wcag( $button-bg ) !default;
 
 /// The border color of the buttons.
 /// @group buttons
-$button-border: darken( $base-border, 8 ) !default;
+$button-border: $button-bg !default;
 
 /// The background gradient of the buttons.
 /// @group buttons
 $button-gradient: none !default;
 $button-shadow: none !default;
 
-/// The text color of hovered buttons.
-/// @group buttons
-$button-hovered-text: $button-text !default;
-
 /// The background of hovered buttons.
 /// @group buttons
-$button-hovered-bg: darken( $button-bg, 10% ) !default;
+$button-hovered-bg: darken( $button-bg, 7.5% ) !default;
+
+/// The text color of hovered buttons.
+/// @group buttons
+$button-hovered-text: contrast-wcag( $button-hovered-bg ) !default;
 
 /// The border color of hovered buttons.
 /// @group buttons
-$button-hovered-border: darken( $button-border, 12% ) !default;
+$button-hovered-border: darken( $button-border, 10% ) !default;
 
 /// The background gradient of hovered buttons.
 /// @group buttons
 $button-hovered-gradient: none !default;
 $button-hovered-shadow: none !default;
 
-/// The text color of pressed buttons.
-/// @group buttons
-$button-pressed-text: $button-hovered-text !default;
-
 /// The background color of pressed buttons.
 /// @group buttons
 $button-pressed-bg: $button-hovered-bg !default;
+
+/// The text color of pressed buttons.
+/// @group buttons
+$button-pressed-text: $button-hovered-text !default;
 
 /// The border color of pressed buttons.
 /// @group buttons
@@ -262,26 +264,26 @@ $button-pressed-shadow: none !default;
 
 /// The shadow of focused buttons.
 /// @group buttons
-$button-focused-shadow: 0 0 0 2px rgba($button-border, .5) !default;
+$button-focused-shadow: 0 0 0 3px rgba($button-border, .5) !default;
 
 
 // Primary button
-$primary-button-text: $btn-primary-color !default;
-$primary-button-bg: $btn-primary-bg !default;
-$primary-button-border: $btn-primary-border !default;
+$primary-button-bg: $accent !default;
+$primary-button-text: contrast-wcag( $primary-button-bg ) !default;
+$primary-button-border: $primary-button-bg !default;
 $primary-button-gradient: none !default;
 
-$primary-button-hovered-text: $primary-button-text !default;
-$primary-button-hovered-bg: darken( $primary-button-bg, 10% ) !default;
-$primary-button-hovered-border: darken( $primary-button-border, 12% ) !default;
+$primary-button-hovered-bg: darken( $primary-button-bg, 7.5% ) !default;
+$primary-button-hovered-text: contrast-wcag( $primary-button-hovered-bg ) !default;
+$primary-button-hovered-border: darken( $primary-button-border, 10% ) !default;
 $primary-button-hovered-gradient: none !default;
 
-$primary-button-pressed-text: $primary-button-hovered-text !default;
 $primary-button-pressed-bg: $primary-button-hovered-bg !default;
+$primary-button-pressed-text: $primary-button-hovered-text !default;
 $primary-button-pressed-border: $primary-button-hovered-border !default;
 $primary-button-pressed-gradient: none !default;
 
-$primary-button-focused-shadow: 0 0 0 2px rgba($primary-button-border, .5);
+$primary-button-focused-shadow: 0 0 0 3px rgba($primary-button-border, .5);
 
 
 // Toolbar
@@ -292,9 +294,9 @@ $toolbar-gradient: none !default;
 
 
 // Input
-$input-text: $gray !default;
-$input-bg: $body-bg !default;
-$input-border: $button-border !default;
+$input-text: $input-color !default;
+$input-bg: $input-bg !default;
+$input-border: $input-border-color !default;
 $input-shadow: none !default;
 
 $input-hovered-text: $input-text !default;
@@ -319,9 +321,9 @@ $node-bg: $base-bg !default;
 $node-border: $base-border !default;
 $node-gradient: none !default;
 
-$node-hovered-text: $button-hovered-text !default;
-$node-hovered-bg: $button-hovered-bg !default;
-$node-hovered-border: $button-hovered-border !default;
+$node-hovered-text: $list-group-action-hover-color !default;
+$node-hovered-bg: $list-group-hover-bg !default;
+$node-hovered-border: $node-hovered-bg !default;
 $node-hovered-gradient: none !default;
 
 $node-selected-text: $selected-text !default;
@@ -352,38 +354,50 @@ $tab-item-hovered-text: $link-hover-text !default;
 $tab-item-hovered-bg: transparent !default;
 $tab-item-hovered-border: $nav-tabs-link-hover-border-color !default;
 
-$tab-item-selected-text: $nav-tabs-active-link-color !default;
-$tab-item-selected-bg: $nav-tabs-active-link-bg !default;
-$tab-item-selected-border: $nav-tabs-active-link-border-color !default;
+$tab-item-selected-text: $nav-tabs-link-active-color !default;
+$tab-item-selected-bg: $nav-tabs-link-active-bg !default;
+$tab-item-selected-border: $nav-tabs-link-active-border-color !default;
 
 
 // Grid
-$grid-text: inherit !default;
-$grid-bg: $table-bg !default;
+$grid-bg: $panel-bg !default;
+$grid-text: contrast-wcag( $grid-bg, $gray-900 ) !default;
 $grid-border: $table-border-color !default;
 
 $grid-alt-text: $grid-text !default;
-$grid-alt-bg: $table-bg-accent !default;
+$grid-alt-bg: rgba( $grid-alt-text, .03) !default;
 $grid-alt-border: $grid-border;
 
 $grid-hovered-text: $grid-text !default;
-$grid-hovered-bg: $table-bg-hover !default;
+$grid-hovered-bg: rgba( $grid-hovered-text, .065) !default;
 $grid-hovered-border: $grid-border !default;
 
+//Pager
+$pager-text: $pagination-color !default;
+$pager-bg: $pagination-bg !default;
+$pager-border: $pagination-border-color !default;
+
+$pager-hover-text: $pagination-hover-color !default;
+$pager-hover-bg: $pagination-hover-bg !default;
+$pager-hover-border: $pagination-hover-border-color !default;
+
+$pager-selected-text: $pagination-active-color !default;
+$pager-selected-bg: $pagination-active-bg !default;
+$pager-selected-border: $pagination-active-border-color !default;
 
 // Notification
-$notification-info-bg: theme-color-level($info, -10) !default;
-$notification-info-text: theme-color-level($info, 6) !default;
-$notification-info-border: theme-color-level($info, -9) !default;
-$notification-success-bg: theme-color-level($success, -10) !default;
-$notification-success-text: theme-color-level($success, 6) !default;
-$notification-success-border: theme-color-level($success, -9) !default;
-$notification-warning-bg: theme-color-level($warning, -10) !default;
-$notification-warning-text: theme-color-level($warning, 6) !default;
-$notification-warning-border: theme-color-level($warning, -9) !default;
-$notification-error-bg: theme-color-level($error, -10) !default;
-$notification-error-text: theme-color-level($error, 6) !default;
-$notification-error-border: theme-color-level($error, -9) !default;
+$notification-info-bg: theme-color-level("info", -10) !default;
+$notification-info-text: theme-color-level("info", 6) !default;
+$notification-info-border: theme-color-level("info", -9) !default;
+$notification-success-bg: theme-color-level("success", -10) !default;
+$notification-success-text: theme-color-level("success", 6) !default;
+$notification-success-border: theme-color-level("success", -9) !default;
+$notification-warning-bg: theme-color-level("warning", -10) !default;
+$notification-warning-text: theme-color-level("warning", 6) !default;
+$notification-warning-border: theme-color-level("warning", -9) !default;
+$notification-error-bg: theme-color-level("danger", -10) !default;
+$notification-error-text: theme-color-level("danger", 6) !default;
+$notification-error-border: theme-color-level("danger", -9) !default;
 
 
 // Window
@@ -454,6 +468,8 @@ $chart-area-opacity: .8 !default;
 $icon-size: 16px;
 $icon-size-lg: 32px;
 $icon-spacing: ($spacer / 2) !default;
+
+$disabled-opacity: .65 !default;
 
 // import any default values from kendo-theme-default
 @import "~@progress/kendo-theme-default/scss/variables";

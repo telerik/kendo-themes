@@ -4,6 +4,10 @@
 
     // Theme
     .k-grid {
+        border-color: $grid-border;
+        color: $grid-text;
+        background-color: $grid-bg;
+
         td,
         .k-header,
         .k-grid-content,
@@ -11,9 +15,20 @@
         .k-grid-content-locked {
             border-color: $grid-border;
         }
+
+        // Alt row
         .k-alt {
+            color: $grid-alt-text;
             background-color: $grid-alt-bg;
         }
+
+        // Hover state
+        tbody tr:hover {
+            color: $grid-hovered-text;
+            background-color: $grid-hovered-bg;
+        }
+
+        // Selected state
         tr.k-state-selected,
         th.k-state-selected,
         td.k-state-selected {
@@ -22,7 +37,7 @@
             background-color: rgba( $selected-bg, .25 );
         }
 
-
+        // Focused state
         td.k-state-focused,
         th.k-state-focused {
             box-shadow: $grid-cell-focused-shadow;
@@ -62,6 +77,14 @@
         .k-rtl & {
             .k-dirty {
                 border-color: currentColor currentColor transparent transparent;
+            }
+        }
+
+        .k-button {
+            @include appearance( button );
+
+            &:hover {
+               @include appearance( hovered-button );
             }
         }
     }
@@ -104,10 +127,6 @@
         }
 
         .k-grid-filter {}
-        .k-grid-filter:hover {
-            color: $button-hovered-text;
-            background-color: $button-hovered-bg;
-        }
         .k-grid-filter:focus {
             box-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .1 );
         }

@@ -15,6 +15,8 @@
 
     $focused-checked-shadow: 0 0 0 1px $panel-bg, 0 0 0 3px $accent !default;
 
+    $fieldset-font-size: $h4-font-size;
+
     // Input, Textbox, Textarea
     .k-input,
     .k-textbox,
@@ -98,10 +100,15 @@
         &:not(:disabled) + .k-checkbox-label:hover::before {}
 
         // Checked
-        &:checked + .k-checkbox-label::before {
-            color: $checkbox-checked-text;
-            border-color: $checkbox-checked-border;
-            background-color: $checkbox-checked-bg;
+        &:checked + .k-checkbox-label {
+            &::before {
+                border-color: $checkbox-checked-border;
+                background-color: $checkbox-checked-bg;
+            }
+
+            &:after {
+                color: $checkbox-checked-text;
+            }
         }
 
         // Indeterminate
@@ -131,11 +138,6 @@
             font-weight: normal;
             line-height: $line-height;
             text-transform: none;
-        }
-
-        fieldset {
-            border-width: 0;
-            margin: 0;
         }
 
         .k-form-field,
@@ -184,11 +186,14 @@
     }
 
     fieldset {
-        border-color: $input-border;
+        border-width: 0;
+        margin: 0;
+        padding: 0;
     }
 
     fieldset legend {
         color: $header-text;
+        font-size: $fieldset-font-size;
     }
 
     .k-maskedtextbox .k-state-invalid + .k-i-warning{

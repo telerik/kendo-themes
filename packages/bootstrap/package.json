@@ -65,13 +65,13 @@
     }
   },
   "peerDependencies": {
-    "bootstrap": "git://github.com/twbs/bootstrap.git#95f37e4c402df37db16781995ffa1592032df9c8"
+    "bootstrap": "4.0.0-beta"
   },
   "dependencies": {
     "@progress/kendo-theme-default": "^2.0.0"
   },
   "devDependencies": {
-    "bootstrap": "git://github.com/twbs/bootstrap.git#95f37e4c402df37db16781995ffa1592032df9c8",
+    "bootstrap": "4.0.0-beta",
     "@telerik/kendo-common-tasks": "^2.0.0",
     "@telerik/semantic-prerelease": "^1.0.0",
     "cz-conventional-changelog": "^1.1.5",

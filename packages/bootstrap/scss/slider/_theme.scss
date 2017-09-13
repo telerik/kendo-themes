@@ -4,6 +4,11 @@
 
         .k-button {
             border-radius: 50%;
+
+            &:active,
+            &.k-state-active {
+                box-shadow: $button-focused-shadow;
+            }
         }
 
         .k-slider-track {
@@ -20,17 +25,22 @@
         .k-draghandle {
             @include appearance( primary-button );
             border-radius: 50%;
-        }
-        .k-draghandle:hover {
-            @include appearance( hovered-primary-button );
-        }
-        .k-draghandle.k-state-selected {
-            @include appearance( pressed-primary-button );
-        }
-        .k-draghandle.k-state-focused {
-            box-shadow: $button-focused-shadow;
-        }
 
+            &:hover {
+                @include appearance( hovered-primary-button );
+            }
+
+            &:active,
+            &.k-pressed {
+                @include appearance( pressed-primary-button );
+                box-shadow: $primary-button-pressed-shadow;
+            }
+
+            &:focus,
+            &.k-state-focused {
+                box-shadow: $primary-button-focused-shadow;
+            }
+        }
     }
 
     .k-slider-horizontal .k-tick {

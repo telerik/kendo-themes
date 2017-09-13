@@ -24,7 +24,7 @@
             @include appearance( selected-node );
         }
         .k-in.k-state-focused {
-            box-shadow: 0 0 0 2px rgba( $node-border, .5 );
+            box-shadow: 0 0 0 2px $node-border;
             z-index: 1;
         }
         .k-in.k-state-selected.k-state-focused {

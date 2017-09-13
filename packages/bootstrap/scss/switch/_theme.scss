@@ -27,6 +27,7 @@
     .k-switch-handle,
     .km-switch-handle {
         @include appearance( button );
+        color: $button-border;
         border-radius: 50%;
         box-shadow: $button-shadow;
     }

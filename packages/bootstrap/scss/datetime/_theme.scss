@@ -12,7 +12,6 @@
         }
         .k-select {
             @include appearance( button );
-            border-color: inherit;
             transition: $transition;
         }
 
@@ -22,22 +21,12 @@
 
             .k-select {
                 @include appearance( hovered-button );
-                border-color: inherit;
             }
         }
 
         // Focused state
         .k-state-focused {
             @include appearance( focused-input );
-
-            .k-select {
-                border-left-color: $button-border;
-            }
-
-            // Focused & Hovered
-            &.k-state-hovered {
-                border-left-color: $button-hovered-border;
-            }
         }
 
         // Selected state
@@ -48,7 +37,6 @@
                 @include appearance( pressed-button );
             }
         }
-
     }
 
     .k-dateinput.k-state-invalid {
@@ -84,7 +72,20 @@
         }
     }
 
+    // Timepicker
+    .k-timepicker {}
+
+    // Datetimepicker
     .k-datetimepicker {
+
+        .k-select {
+            width: auto;
+        }
+        .k-link {
+            padding: 0;
+            width: add-three( $button-border-width, $icon-size, $button-padding-y * 2 );
+        }
+
         .k-i-warning {
             color: $error;
             right: calc( #{ button-inner-size( 2 ) } + #{ $input-padding-x-sm });
@@ -104,25 +105,18 @@
         }
     }
 
-    // Timepicker
-    .k-timepicker {}
-
-    // Datetimepicker
-    .k-datetimepicker {}
-
     // Dateinput
     .k-dateinput {
+
         // Normal state
         .k-dateinput-wrap {
             @include appearance( input );
         }
-
         .k-select {
             @include appearance( button );
 
             &:hover {
                 @include appearance( hovered-button );
-                border-color: $input-hovered-border;
             }
         }
 
