@@ -1,5 +1,5 @@
 @include exports( 'listview/theme' ) {
-    .k-listview .k-state-focused {
+    .k-listview > .k-state-focused {
         box-shadow: $focused-shadow;
     }
 }
