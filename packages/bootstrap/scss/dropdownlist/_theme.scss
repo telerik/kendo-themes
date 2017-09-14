@@ -2,10 +2,6 @@
 
     // Dropdown
     .k-dropdown {
-        .k-list-optionlabel {
-            border-bottom-color: $input-border;
-        }
-
         .k-dropdown-wrap {
             @include appearance( button );
             transition: $transition;
