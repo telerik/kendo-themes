@@ -1,0 +1,70 @@
+.k-no-flexbox {
+    .k-calendar-infinite {
+        height: 330px;
+
+        .k-calendar-navigation,
+        .k-calendar-monthview {
+            height: 100%;
+            float: left;
+        }
+
+        .k-calendar-header {
+            display: block;
+
+            .k-today {
+                float: right;
+            }
+        }
+    }
+
+    .k-dateinput-wrap,
+    .k-dropdown-wrap,
+    .k-numeric-wrap,
+    .k-picker-wrap {
+        $k-select-width: 2em;
+        display: block;
+
+        .k-input {
+            width: calc(100% - #{$k-select-width});
+        }
+        .k-input,
+        .k-select {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    .k-timepicker,
+    .k-datepicker {
+        display: inline-block;
+
+        .k-dateinput-wrap {
+            display: inline-block;
+        }
+
+        .k-select {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    .k-time-list-wrapper,
+    .k-time-separator {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .k-grid {
+        $grid-chrome-height: 37px !default;
+        .k-grid-container {
+            height: calc( 100% - #{$grid-chrome-height} );
+            display: block;
+        }
+
+        .k-grid-content {
+            height: 100%;
+        }
+    }
+}
