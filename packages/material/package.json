@@ -10,7 +10,8 @@
     "Material design",
     "Theme"
   ],
-  "main": "scss/all.scss",
+  "main": "dist/all.css",
+  "sass": "scss/all.scss",
   "repository": {
     "type": "git",
     "url": "https://github.com/telerik/kendo-theme-material.git"
