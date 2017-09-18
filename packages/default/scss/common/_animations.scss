@@ -103,9 +103,47 @@
         }
     }
 
-    .k-expand {
-        .k-child-animation-container {
-            overflow: hidden;
+    .k-expand-vertical {
+        &-enter,
+        &-appear {
+            transform: scaleY(0);
+        }
+
+        &-enter-active,
+        &-appear-active {
+            transform: scaleY(1);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-exit {
+            transform: scaleY(1);
+        }
+
+        &-exit-active {
+            transform: scaleY(0);
+            transition: transform 300ms ease-in-out;
+        }
+    }
+
+    .k-expand-horizontal {
+        &-enter,
+        &-appear {
+            transform: scaleX(0);
+        }
+
+        &-enter-active,
+        &-appear-active {
+            transform: scaleX(1);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &-exit {
+            transform: scaleX(1);
+        }
+
+        &-exit-active {
+            transform: scaleX(0);
+            transition: transform 300ms ease-in-out;
         }
     }
 
