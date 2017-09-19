@@ -207,9 +207,9 @@
 
         &-enter-active,
         &-appear-active {
-            transition: transform, opacity 300ms ease-in-out;
             opacity: 1;
             transform: scale(1);
+            transition: transform, opacity 300ms ease-in-out;
         }
 
         &-exit {
@@ -325,4 +325,45 @@
         }
     }
 
+    .k-reveal-vertical {
+        &-enter,
+        &-appear {
+            max-height: 0;
+        }
+
+        &-enter-active,
+        &-appear-active {
+            transition: max-height 300ms ease-in-out;
+        }
+
+        &-exit {
+            max-height: 100%;
+        }
+
+        &-exit-active {
+            max-height: 0;
+            transition: max-height 300ms ease-in-out;
+        }
+    }
+
+    .k-reveal-horizontal {
+        &-enter,
+        &-appear {
+            max-width: 0;
+        }
+
+        &-enter-active,
+        &-appear-active {
+            transition: max-width 300ms ease-in-out;
+        }
+
+        &-exit {
+            max-width: 100%;
+        }
+
+        &-exit-active {
+            max-width: 0;
+            transition: max-width 300ms ease-in-out;
+        }
+    }
 }
