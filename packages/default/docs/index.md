@@ -7,7 +7,7 @@ position: 1
 
 # Preview
 
-The following example previews Kendo UI components for Angular styled with the Default theme.
+The following example previews Kendo UI components which are styled with the Default theme.
 
 {% theme_preview theme:default %}
 <script async src="{% asset_path theme-preview.js %}"></script>
