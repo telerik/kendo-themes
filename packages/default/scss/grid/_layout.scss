@@ -572,7 +572,7 @@
         .k-widget:not(.k-dropdown-operator),
         .k-filtercell-wrapper > .k-textbox {
             display: flex;
-            flex: 1;
+            flex: 1 1 auto;
         }
 
         .k-filtercell-wrapper > .k-textbox {
