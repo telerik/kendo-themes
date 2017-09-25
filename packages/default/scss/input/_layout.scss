@@ -133,10 +133,15 @@
             // persist alignment after scaling
             $half-scale-percent: ((1 - $floating-label-scale) * 100% / 2);
 
+            // sass-lint:disable indentation
             // transform position to top-left corner of the textbox-container
-            $top-offset: add-three($textbox-line-height, $input-padding-y, $half-scale-percent, -$floating-label-scale);
-            $left-scale: add-three($input-padding-x, $input-border-width, $half-scale-percent, -1);
-            transform: translate( $left-scale, $top-offset ) scale($floating-label-scale);
+            // do not use single translate + calc() because of IE10/11
+            $fls: -$floating-label-scale;
+            transform: translate(-$input-padding-x,    $fls * $input-padding-y)
+                       translate(-$input-border-width, $fls * $textbox-line-height)
+                       translate(-$half-scale-percent, $fls * $half-scale-percent)
+                       scale($floating-label-scale);
+            // sass-lint:enable indentation
         }
     }
 
