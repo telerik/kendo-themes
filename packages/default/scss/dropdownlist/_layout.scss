@@ -15,6 +15,9 @@
             flex: 1;
         }
     }
+    .k-edge .k-dropdown-wrap > .k-input {
+        min-width: 0;
+    }
 
     .k-dropdown-operator {
         width: auto;
