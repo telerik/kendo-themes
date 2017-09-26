@@ -343,7 +343,7 @@
         }
 
         .k-upload-files {
-            display: block;
+            display: none;
         }
 
         // Tiles
@@ -383,6 +383,24 @@
                 font-weight: 400;
                 overflow: hidden;
                 text-overflow: ellipsis;
+            }
+        }
+
+        .k-tile-empty {
+            display: block;
+            margin: auto;
+
+            &.k-state-selected {
+                color: inherit;
+                border-width: 0;
+                background-image: none;
+                background-color: transparent;
+            }
+
+            strong {
+                opacity: 0.5;
+                font-size: 3em;
+                font-weight: 400;
             }
         }
 
