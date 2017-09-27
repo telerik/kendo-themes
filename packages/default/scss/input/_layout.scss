@@ -409,18 +409,9 @@
     }
 
     .k-grid {
-        input.k-checkbox {
-            margin-left: 1px;
-            margin-top: 3px;
-            width: 14px;
-            height: 15px;
-            z-index: 1;
-            clip: auto;
-            pointer-events: all;
-        }
-
         .k-checkbox-label {
             cursor: default;
+            outline: 0;
         }
     }
 }
