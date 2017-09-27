@@ -577,6 +577,7 @@
 
         .k-filtercell-wrapper > .k-textbox {
             width: 100%;
+            min-width: 0;
         }
 
         .k-autocomplete .k-input,
