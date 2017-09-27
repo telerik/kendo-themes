@@ -9,8 +9,9 @@
 
         .k-selected-color {
             padding: $button-padding-y;
-            width: $form-line-height-em;
-            height: $form-line-height-em;
+            width: button-inner-size();
+            height: button-inner-size();
+            box-sizing: border-box;
             line-height: 0;
             position: relative;
             overflow: hidden;
