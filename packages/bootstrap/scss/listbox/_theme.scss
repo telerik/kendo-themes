@@ -1,9 +1,9 @@
-@include exports('listbox/theme') {
+@include exports("listbox/theme") {
+
     .k-listbox {
+
         .k-list-scroller {
-            background-color: $widget-bg;
-            border-color: $widget-border;
-            color: $widget-text;
+            @include appearance( panel );
         }
         .k-drop-hint {
             border-top-color: $accent;
@@ -14,4 +14,5 @@
         background-color: $list-item-selected-bg;
         color: $list-item-selected-text;
     }
+
 }
