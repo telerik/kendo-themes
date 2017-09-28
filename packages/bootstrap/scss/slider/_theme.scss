@@ -1,5 +1,8 @@
 @include exports("slider/theme") {
 
+    $slider-bg: $progress-bg !default;
+    $slider-selected-bg: $progress-fill-bg !default;
+
     .k-slider {
 
         .k-button {
@@ -12,12 +15,12 @@
         }
 
         .k-slider-track {
-            border-radius: $border-radius;
-            background: darken( $widget-bg, 10% );
+            @include border-radius();
+            background-color: $slider-bg;
         }
         .k-slider-selection {
-            border-radius: $border-radius;
-            background: $selected-bg;
+            @include border-radius();
+            background-color: $slider-selected-bg;
         }
 
 
