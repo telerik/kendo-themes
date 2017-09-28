@@ -50,6 +50,12 @@
             background-color: $accent;
             color: $accent-contrast;
         }
+
+        // Placeholder
+        &::placeholder {
+            color: inherit;
+            opacity: .7;
+        }
     }
 
     // Radio
