@@ -5,6 +5,9 @@
         @include appearance( panel );
 
         // Root
+        > .k-item {
+            border-color: $header-border;
+        }
         > .k-item > .k-link {
             // @include appearance( header );
             border-color: $header-border;
