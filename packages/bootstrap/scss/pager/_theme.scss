@@ -8,10 +8,10 @@
         @include appearance( header );
 
         .k-pager-first {
-            @include border-radius( $border-radius 0 0 $border-radius );
+            @include border-left-radius-only();
         }
         .k-pager-last {
-            @include border-radius( 0 $border-radius $border-radius 0 );
+            @include border-right-radius-only();
         }
 
         .k-link,
