@@ -46,11 +46,6 @@
         }
 
         // Selection
-        &::-moz-selection {
-            background-color: $accent;
-            color: $accent-contrast;
-        }
-
         &::selection {
             background-color: $accent;
             color: $accent-contrast;
