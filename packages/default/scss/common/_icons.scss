@@ -705,6 +705,7 @@
     .k-rtl .k-i-indent-decrease {
         transform: scaleX(-1);
     }
+    .k-rtl .k-i-expand::before { content: "\e007"; }
 
     .k-sprite {
         display: inline-block;
