@@ -9,7 +9,6 @@
         background-color: $grid-bg;
 
         td,
-        .k-header,
         .k-grid-content,
         .k-grid-header-locked,
         .k-grid-content-locked {
@@ -99,7 +98,7 @@
 
     // Grouping header
     .k-grouping-header {
-        @include appearance( header );
+        @include fill( $grid-header-text, $grid-header-bg, $grid-header-border );
         padding: $toolbar-padding-y;
     }
     .k-grouping-header .k-group-indicator {
@@ -110,7 +109,7 @@
 
     // Header
     .k-grid-header {
-        @include appearance( header );
+        @include fill( $grid-header-text, $grid-header-bg, $grid-header-border );
 
         .k-i-sort-asc-sm,
         .k-i-sort-desc-sm,
@@ -137,7 +136,7 @@
 
     }
     .k-grid-footer {
-        @include appearance( header );
+        @include fill( $grid-header-text, $grid-header-bg, $grid-header-border );
 
         .k-grid-footer-locked {
             border-color: inherit;
@@ -147,7 +146,7 @@
 
     // Pager
     .k-grid-pager {
-        @include appearance( header );
+        @include fill( $grid-header-text, $grid-header-bg, $grid-header-border );
         padding: $toolbar-padding-y;
     }
 
@@ -155,7 +154,7 @@
     // Grouping
     .k-grouping-row,
     .k-group-cell {
-        @include appearance( header );
+        @include fill( $grid-header-text, $grid-header-bg, $grid-header-border );
     }
 
 }
