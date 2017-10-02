@@ -137,7 +137,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$base-gradient</td>
 <td>
     
-    none
+    false
 </td>
 <td>The gradient background of the components' chrome area.
 </td>
@@ -173,7 +173,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$hovered-gradient</td>
 <td>
     
-    none
+    false
 </td>
 <td>The gradient background of hovered items.
 </td>
@@ -209,7 +209,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$selected-gradient</td>
 <td>
     
-    none
+    false
 </td>
 <td>The gradient background of selected items.
 </td>
@@ -297,7 +297,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-gradient</td>
 <td>
     
-    none
+    false
 </td>
 <td>The background gradient of the buttons.
 </td>
@@ -333,7 +333,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-hovered-gradient</td>
 <td>
     
-    none
+    false
 </td>
 <td>The background gradient of hovered buttons.
 </td>
@@ -369,7 +369,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-pressed-gradient</td>
 <td>
     
-    none
+    false
 </td>
 <td>The background gradient of pressed buttons.
 </td>
