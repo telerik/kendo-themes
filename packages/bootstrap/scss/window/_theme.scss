@@ -1,16 +1,17 @@
 @include exports("window/theme") {
 
     .k-window {
-        @include border-radius( $border-radius );
+        @include border-radius();
         border-color: $window-border;
         color: $window-text;
         background-color: $window-bg;
-        background-clip: padding-box;
     }
 
     // Titlebar
     .k-window-titlebar {
         border-color: $window-titlebar-border;
+        color: $window-titlebar-text;
+        background-color: $window-titlebar-bg;
     }
 
     // Window actions
