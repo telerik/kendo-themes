@@ -1,7 +1,7 @@
 @import "~@progress/kendo-theme-default/scss/mixins/colors";
 @import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
 @import "bootstrap-overrides";
+@import "~bootstrap/scss/variables";
 
 
 // Options
@@ -131,7 +131,7 @@ $base-text: $body-color !default;
 /// The border color of the components' chrome area.
 $base-border: darken( $base-bg, 3% ) !default;
 /// The gradient background of the components' chrome area.
-$base-gradient: none !default;
+$base-gradient: false !default;
 
 /// The background of hovered items.
 $hovered-bg: darken( $base-bg, 3% ) !default;
@@ -140,7 +140,7 @@ $hovered-text: $base-text !default;
 /// The border color of hovered items.
 $hovered-border: darken( $base-border, 12% ) !default;
 /// The gradient background of hovered items.
-$hovered-gradient: none !default;
+$hovered-gradient: false !default;
 
 /// The background of selected items.
 $selected-bg: $accent !default;
@@ -149,7 +149,7 @@ $selected-text: contrast-wcag( $selected-bg ) !default;
 /// The border color of selected items.
 $selected-border: darken( $selected-bg, 12% ) !default;
 /// The gradient background of selected items.
-$selected-gradient: none !default;
+$selected-gradient: false !default;
 
 $transition: color .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease !default;
 
@@ -174,14 +174,20 @@ $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000
 
 
 
+// Component
+$componet-bg: $component-bg !default;
+$componet-text: $component-color !default;
+$componet-border: $component-border-color !default;
+
+
 // Widget
-$widget-text: $text-color !default;
-$widget-bg: $bg-color !default;
-$widget-border: $border-color !default;
+$widget-bg: $component-bg !default;
+$widget-text: $component-color !default;
+$widget-border: $component-border-color !default;
 
 
 // Panel
-$panel-text: $body-color !default;
+$panel-text: $card-color !default;
 $panel-bg: $card-bg !default;
 $panel-border: $card-border-color !default;
 
@@ -193,20 +199,20 @@ $popup-border: $dropdown-border-color !default;
 
 
 // Header
-$header-text: $base-text !default;
-$header-bg: $gray-100 !default;
-$header-border: darken( $header-bg, 9 ) !default;
-$header-gradient: none !default;
+$header-text: $card-cap-color !default;
+$header-bg: $card-cap-bg !default;
+$header-border: try-darken( $header-bg, 9 ) !default;
+$header-gradient: false !default;
 
 $header-hovered-text: $header-text !default;
-$header-hovered-bg: darken( $header-bg, 3 ) !default;
+$header-hovered-bg: try-darken( $header-bg, 3 ) !default;
 $header-hovered-border: $header-border !default;
-$header-hovered-gradient: none !default;
+$header-hovered-gradient: false !default;
 
 $header-selected-text: $selected-text !default;
 $header-selected-bg: $selected-bg !default;
 $header-selected-border: $selected-border !default;
-$header-selected-gradient: none !default;
+$header-selected-gradient: false !default;
 
 
 // Button
@@ -225,8 +231,8 @@ $button-border: $button-bg !default;
 
 /// The background gradient of the buttons.
 /// @group buttons
-$button-gradient: none !default;
-$button-shadow: none !default;
+$button-gradient: false !default;
+$button-shadow: false !default;
 
 /// The background of hovered buttons.
 /// @group buttons
@@ -242,8 +248,8 @@ $button-hovered-border: darken( $button-border, 10% ) !default;
 
 /// The background gradient of hovered buttons.
 /// @group buttons
-$button-hovered-gradient: none !default;
-$button-hovered-shadow: none !default;
+$button-hovered-gradient: false !default;
+$button-hovered-shadow: false !default;
 
 /// The background color of pressed buttons.
 /// @group buttons
@@ -259,8 +265,8 @@ $button-pressed-border: $button-hovered-border !default;
 
 /// The background gradient of pressed buttons.
 /// @group buttons
-$button-pressed-gradient: none !default;
-$button-pressed-shadow: none !default;
+$button-pressed-gradient: false !default;
+$button-pressed-shadow: false !default;
 
 /// The shadow of focused buttons.
 /// @group buttons
@@ -271,17 +277,17 @@ $button-focused-shadow: 0 0 0 3px rgba($button-border, .5) !default;
 $primary-button-bg: $accent !default;
 $primary-button-text: contrast-wcag( $primary-button-bg ) !default;
 $primary-button-border: $primary-button-bg !default;
-$primary-button-gradient: none !default;
+$primary-button-gradient: false !default;
 
 $primary-button-hovered-bg: darken( $primary-button-bg, 7.5% ) !default;
 $primary-button-hovered-text: contrast-wcag( $primary-button-hovered-bg ) !default;
 $primary-button-hovered-border: darken( $primary-button-border, 10% ) !default;
-$primary-button-hovered-gradient: none !default;
+$primary-button-hovered-gradient: false !default;
 
 $primary-button-pressed-bg: $primary-button-hovered-bg !default;
 $primary-button-pressed-text: $primary-button-hovered-text !default;
 $primary-button-pressed-border: $primary-button-hovered-border !default;
-$primary-button-pressed-gradient: none !default;
+$primary-button-pressed-gradient: false !default;
 
 $primary-button-focused-shadow: 0 0 0 3px rgba($primary-button-border, .5);
 
@@ -290,7 +296,7 @@ $primary-button-focused-shadow: 0 0 0 3px rgba($primary-button-border, .5);
 $toolbar-text: $header-text !default;
 $toolbar-bg: $header-bg !default;
 $toolbar-border: $header-border !default;
-$toolbar-gradient: none !default;
+$toolbar-gradient: false !default;
 
 
 // Input
@@ -319,17 +325,17 @@ $link-hover-text: $link-hover-color !default;
 $node-text: $base-text !default;
 $node-bg: $base-bg !default;
 $node-border: $base-border !default;
-$node-gradient: none !default;
+$node-gradient: false !default;
 
 $node-hovered-text: $list-group-action-hover-color !default;
 $node-hovered-bg: $list-group-hover-bg !default;
 $node-hovered-border: $node-hovered-bg !default;
-$node-hovered-gradient: none !default;
+$node-hovered-gradient: false !default;
 
 $node-selected-text: $selected-text !default;
 $node-selected-bg: $selected-bg !default;
 $node-selected-border: $selected-border !default;
-$node-selected-gradient: none !default;
+$node-selected-gradient: false !default;
 
 
 // List item
@@ -360,8 +366,8 @@ $tab-item-selected-border: $nav-tabs-link-active-border-color !default;
 
 
 // Grid
-$grid-bg: $panel-bg !default;
-$grid-text: contrast-wcag( $grid-bg, $gray-900 ) !default;
+$grid-bg: $table-bg !default;
+$grid-text: $table-color !default;
 $grid-border: $table-border-color !default;
 
 $grid-alt-text: $grid-text !default;
@@ -371,6 +377,11 @@ $grid-alt-border: $grid-border;
 $grid-hovered-text: $grid-text !default;
 $grid-hovered-bg: rgba( $grid-hovered-text, .065) !default;
 $grid-hovered-border: $grid-border !default;
+
+$grid-header-bg: $header-bg !default;
+$grid-header-text: $header-text !default;
+$grid-header-border: $header-border !default;
+
 
 //Pager
 $pager-text: $pagination-color !default;
@@ -401,25 +412,25 @@ $notification-error-border: theme-color-level("danger", -9) !default;
 
 
 // Window
-$window-text: $body-color !default;
+$window-text: $modal-content-color !default;
 $window-bg: $modal-content-bg !default;
 $window-border: $modal-content-border-color !default;
 
-$window-titlebar-text: $window-text !default;
-$window-titlebar-bg: $window-bg !default;
+$window-titlebar-text: $modal-header-color !default;
+$window-titlebar-bg: $modal-header-bg !default;
 $window-titlebar-border: $modal-header-border-color !default;
 
 
 // Progress
-$progress-text: $body-color !default;
 $progress-bg: $progress-bg !default;
+$progress-text: $progress-color !default;
 $progress-border: transparent !default;
-$progress-gradient: none !default;
+$progress-gradient: false !default;
 
-$progress-fill-text: $progress-bar-color !default;
 $progress-fill-bg:  $progress-bar-bg !default;
+$progress-fill-text: $progress-bar-color !default;
 $progress-fill-border: transparent !default;
-$progress-fill-gradient: none !default;
+$progress-fill-gradient: false !default;
 
 
 // Chart
