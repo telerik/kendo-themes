@@ -22,7 +22,9 @@
         background-color: $panel-bg;
     }
 
-    .k-pivot-toolbar,
+    .k-pivot-toolbar {
+        border-color: $grid-header-border;
+    }
     .k-pivot-table,
     .k-fieldselector .k-list-container,
     .k-fieldselector .k-columns > div,
@@ -59,7 +61,7 @@
         }
     }
 
-    /* Loading indicator */
+    // Loading indicator
     .k-fieldselector {
         .k-i-loading {
             border-color: $header-bg;
