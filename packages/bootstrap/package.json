@@ -73,7 +73,7 @@
   },
   "devDependencies": {
     "bootstrap": "4.0.0-beta",
-    "@telerik/kendo-common-tasks": "^2.0.0",
+    "@telerik/kendo-common-tasks": "^3.0.0",
     "@telerik/semantic-prerelease": "^1.0.0",
     "cz-conventional-changelog": "^1.1.5",
     "ghooks": "^1.0.3",
