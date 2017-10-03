@@ -336,12 +336,8 @@
             transition: max-height 300ms ease-in-out;
         }
 
-        &-exit {
-            max-height: 100%;
-        }
-
         &-exit-active {
-            max-height: 0;
+            max-height: 0 !important;
             transition: max-height 300ms ease-in-out;
         }
     }
@@ -357,12 +353,8 @@
             transition: max-width 300ms ease-in-out;
         }
 
-        &-exit {
-            max-width: 100%;
-        }
-
         &-exit-active {
-            max-width: 0;
+            max-width: 0 !important;
             transition: max-width 300ms ease-in-out;
         }
     }
