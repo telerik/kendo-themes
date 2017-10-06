@@ -57,8 +57,8 @@
         }
     }
 
-    .k-splitbar-draggable-horizontal { cursor: w-resize; }
-    .k-splitbar-draggable-vertical { cursor: n-resize; }
+    .k-splitbar-draggable-horizontal { cursor: col-resize; }
+    .k-splitbar-draggable-vertical { cursor: row-resize; }
 
     .k-collapse-next,
     .k-collapse-prev,
