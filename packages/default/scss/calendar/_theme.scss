@@ -87,14 +87,9 @@
         }
 
         // Infinite calendar
-        .k-calendar-monthview {
+        .k-calendar-view {
             thead {
                 @include appearance( header );
-            }
-
-            thead th,
-            .k-weekend .k-link {
-                opacity: $disabled-opacity;
             }
         }
 

@@ -7,6 +7,8 @@ $calendar-header-height: 2em;
 $calendar-weekdays-height: ( 29px / 14px ) * 1em;
 $calendar-navigation-item-height: 2em;
 $calendar-navigation-width: 5em;
+$calendar-view-width: 7 * $calendar-cell-size;
+$calendar-view-height: 7 * $calendar-cell-size + $calendar-header-height + $calendar-weekdays-height;
 
 @include exports('calendar/layout') {
 
@@ -224,7 +226,7 @@ $calendar-navigation-width: 5em;
                 @include hide-scrollbar('left');
             }
 
-            .k-calendar-monthview .k-content th {
+            .k-calendar-view .k-content th {
                 text-align: right;
             }
         }
@@ -262,24 +264,36 @@ $calendar-navigation-width: 5em;
         }
     }
 
-    .k-calendar-monthview {
+    .k-calendar-view {
         display: flex;
         flex: 1 0 auto;
         flex-direction: column;
         overflow: hidden;
-        margin: 0 $spacer-x;
+        padding: 0 $spacer-x;
+        // setting width / height prevents layout changes in meta views
+        width: $calendar-view-width;
+        height: $calendar-view-height;
 
-        table {
-            width: ($calendar-cell-size * 7);
+        .k-calendar-header {
+            flex: 0 0 auto;
+
+            // align fast navigation button with content
+            margin-left: -$button-padding-x;
+            padding-left: $button-padding-x;
+
+            .k-title {
+                margin-left: -$button-padding-x;
+            }
         }
 
         .k-content {
-            height: 7 * $calendar-cell-size + $calendar-header-height;
             position: relative;
+            flex: 1 0 auto;
 
             > table {
                 position: relative;
                 z-index: 1;
+                width: auto;
             }
 
             th {
@@ -310,22 +324,6 @@ $calendar-navigation-width: 5em;
             }
         }
 
-        .k-calendar-weekdays {
-            thead {
-                @include disabled;
-
-                font-weight: bold;
-                font-size: 10px;
-            }
-
-            th {
-                text-align: center;
-                border-width: 0;
-                padding: 0;
-                line-height: $calendar-weekdays-height;
-            }
-        }
-
         &::after {
             display: block;
             position: absolute;
@@ -337,6 +335,55 @@ $calendar-navigation-width: 5em;
             width: 150%;
             left: -25%;
             box-shadow: 0 0 $calendar-cell-size ($calendar-cell-size / 2) $bg-color;
+        }
+    }
+
+    .k-calendar-monthview {
+        .k-content {
+            height: 7 * $calendar-cell-size + $calendar-header-height;
+        }
+
+        .k-calendar-weekdays {
+            thead {
+                @include disabled;
+
+                font-weight: bold;
+            }
+
+            th {
+                text-align: center;
+                border-width: 0;
+                padding: 0;
+                line-height: $calendar-weekdays-height;
+            }
+        }
+    }
+
+    .k-calendar-yearview,
+    .k-calendar-decadeview,
+    .k-calendar-centuryview {
+        .k-content {
+            table {
+                table-layout: auto;
+            }
+
+            th {
+                font-size: inherit;
+                height: $calendar-header-height;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            $cell-size: $calendar-view-width / 5;
+            td {
+                border-radius: $cell-size / 2;
+            }
+
+            .k-link {
+                width: $cell-size;
+                height: $cell-size;
+                line-height: $cell-size;
+            }
         }
     }
 

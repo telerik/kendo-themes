@@ -37,7 +37,7 @@
     "watch": "webpack --watch",
     "embed-assets": "node build/embed-assets.js",
     "test": "npm run lint && npm run build && npm run api-check && npm run twbs-compat",
-    "twbs-compat": "webpack --env.twbs-compat",
+    "twbs-compat": "webpack --env.twbs-compat --bail",
     "semantic-release": "semantic-release pre && semantic-prerelease publish && semantic-release post"
   },
   "config": {
