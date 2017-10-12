@@ -270,6 +270,7 @@ $calendar-view-height: 7 * $calendar-cell-size + $calendar-header-height + $cale
         flex: 1 0 auto;
         flex-direction: column;
         overflow: hidden;
+        box-sizing: content-box;
         padding: 0 $spacer-x;
         // setting width / height prevents layout changes in meta views
         width: $calendar-view-width;
