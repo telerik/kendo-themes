@@ -264,6 +264,7 @@ $calendar-view-height: 7 * $calendar-cell-size + $calendar-header-height + $cale
         }
     }
 
+    .k-calendar-monthview, // <- BACKCOMPAT: ensures backwards compatibility for previous versions of kendo-angular-dateinputs
     .k-calendar-view {
         display: flex;
         flex: 1 0 auto;
