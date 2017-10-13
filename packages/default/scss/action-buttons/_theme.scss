@@ -1,6 +1,7 @@
 @include exports('action-buttons/theme') {
 
     .k-action-buttons {
+        border-color: $popup-border;
 
         .k-button {
             color: inherit;
@@ -13,7 +14,7 @@
 
             &:focus,
             &.k-state-focused {
-                box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13);
+                box-shadow: $focused-shadow;
             }
 
             &:active,
@@ -33,7 +34,7 @@
 
                 &:focus,
                 &.k-state-focused {
-                    box-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .13);
+                    box-shadow: $focused-shadow;
                 }
             }
 

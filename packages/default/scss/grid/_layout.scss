@@ -803,10 +803,16 @@
 @include exports( "filtermenu/layout" ) {
 
     .k-filter-menu {
-        padding: $padding-y-sm;
+        $item-spacing: $spacer-y / 2;
+        $form-padding: $spacer-y;
+
+        > div {
+            padding: ($form-padding - $item-spacing) $form-padding;
+        }
 
         .k-button {
-            margin: ( $spacer-y / 2 ) 1% 0;
+            // BACKCOMPAT: remove when buttons div gets .k-action-buttons.k-button-group
+            margin: $item-spacing 1% 0;
             width: 48%;
             box-sizing: border-box;
             display: inline-block;
@@ -814,20 +820,26 @@
 
         .k-widget,
         .k-textbox {
-            margin: ( $spacer-y / 2 ) 0 0;
+            margin: $item-spacing 0;
             width: 100%;
             display: block;
         }
-        .k-textbox {
-            margin-bottom: 3px;
-        }
-
 
         .k-widget.k-filter-and {
             width: 6em;
-            margin: .5em 0;
+            margin: (2 * $item-spacing) 0;
+        }
+
+        .k-action-buttons {
+            margin: -$form-padding;
+            margin-top: $form-padding;
+
+            .k-button {
+                margin: 0; // <- BACKCOMPAT: remove when buttons div gets .k-action-buttons.k-button-group
+            }
         }
     }
+
     .k-multicheck-wrap {
         max-height: 300px;
         overflow: auto;
