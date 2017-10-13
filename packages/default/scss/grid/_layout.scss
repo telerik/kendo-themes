@@ -805,9 +805,10 @@
     .k-filter-menu {
         $item-spacing: $spacer-y / 2;
         $form-padding: $spacer-y;
+        $form-padding-y: $form-padding - $spacer-y;
 
         > div {
-            padding: ($form-padding - $item-spacing) $form-padding;
+            padding: $form-padding-y $form-padding;
         }
 
         .k-button {
@@ -831,8 +832,7 @@
         }
 
         .k-action-buttons {
-            margin: -$form-padding;
-            margin-top: $form-padding;
+            margin: $form-padding (-$form-padding) (-$form-padding-y);
 
             .k-button {
                 margin: 0; // <- BACKCOMPAT: remove when buttons div gets .k-action-buttons.k-button-group
