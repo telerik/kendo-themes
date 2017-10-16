@@ -805,13 +805,14 @@
     .k-filter-menu {
         $item-spacing: $spacer-y / 2;
         $form-padding: $spacer-y;
-        $form-padding-y: $form-padding - $spacer-y;
+        $form-padding-y: $form-padding - $item-spacing;
 
-        > div {
+        > div:not(.k-animation-container), // BACKCOMPAT: remove when below class is added to container
+        .k-filter-menu-container {
             padding: $form-padding-y $form-padding;
         }
 
-        .k-button {
+        > div > div > .k-button {
             // BACKCOMPAT: remove when buttons div gets .k-action-buttons.k-button-group
             margin: $item-spacing 1% 0;
             width: 48%;
@@ -820,6 +821,7 @@
         }
 
         .k-widget,
+        .k-radio-list,
         .k-textbox {
             margin: $item-spacing 0;
             width: 100%;
