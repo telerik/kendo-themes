@@ -125,9 +125,9 @@ $bg-color: $body-bg !default;
 $border-color: darken( $bg-color, 12% ) !default;
 
 /// The background of the components' chrome area.
-$base-bg: darken( $body-bg, 3% ) !default;
+$base-bg: darken( $component-bg, 3% ) !default;
 /// The text color of the components' chrome area.
-$base-text: $body-color !default;
+$base-text: $component-color !default;
 /// The border color of the components' chrome area.
 $base-border: darken( $base-bg, 3% ) !default;
 /// The gradient background of the components' chrome area.
