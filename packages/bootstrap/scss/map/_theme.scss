@@ -5,6 +5,10 @@
         .k-marker {
             color: $accent;
         }
+
+        .k-navigator {
+            @include appearance( button );
+        }
     }
 
 }
