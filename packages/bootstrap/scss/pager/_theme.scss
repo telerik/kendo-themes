@@ -79,6 +79,11 @@
 
     }
 
+    .k-link.k-pager-nav.k-state-disabled {
+        border-color: transparent;
+        background-color: transparent;
+    }
+
 
     // Spacing
     .k-pager-nav + .k-pager-nav,
