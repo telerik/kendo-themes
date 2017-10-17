@@ -81,6 +81,12 @@
 
 
     // Context menu
+    .k-popups-wrapper {
+        position: relative;
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
     .k-menu.k-context-menu {
         margin: 0;
         padding: $popup-padding-y $popup-padding-x;
