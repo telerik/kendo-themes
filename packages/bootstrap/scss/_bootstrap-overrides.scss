@@ -63,12 +63,18 @@ $theme-colors: () !default;
     $input-color: $component-color !default;
     $input-border-color: rgba(contrast-yiq($input-bg, $gray-900), .15) !default;
 
+    $list-group-bg: $component-bg !default;
+    $list-group-color: $component-color !default;
+    $list-group-hover-bg: try-darken( $list-group-bg, 5% ) !default;
+    $list-group-hover-color: $list-group-color !default;
+
     $dropdown-bg: $component-bg !default;
     $dropdown-color: $component-color !default;
     $dropdown-border-color: rgba(contrast-yiq($dropdown-bg, $gray-900), .15) !default;
 
     $dropdown-link-color: contrast-yiq($dropdown-bg, $gray-900) !default;
-    $dropdown-link-hover-color: darken($dropdown-link-color, 5%) !default;
+    $dropdown-link-hover-color: try-darken($dropdown-link-color, 5%) !default;
+    $dropdown-link-hover-bg: try-darken( $dropdown-bg, 5% ) !default;
 
     $nav-tabs-border-color: $component-border-color !default;
     $nav-tabs-link-active-bg: $component-bg !default;
