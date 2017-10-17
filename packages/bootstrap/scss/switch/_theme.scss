@@ -24,14 +24,13 @@
     .k-switch-container,
     .km-switch-container {
         @include border-radius( $switch-border-radius );
-        border-color: $button-border;
-        color: $button-text;
+        @include appearance( panel );
     }
     .k-switch-handle,
     .km-switch-handle {
         @include appearance( button );
+        @include border-radius( 50% );
         color: $button-border;
-        border-radius: 50%;
         box-shadow: $button-shadow;
     }
     .k-switch-label-on,
