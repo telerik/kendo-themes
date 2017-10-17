@@ -110,7 +110,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$base-bg</td>
 <td>
     
-    darken( $body-bg, 3% )
+    darken( $component-bg, 3% )
 </td>
 <td>The background of the components' chrome area.
 </td>
@@ -119,7 +119,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$base-text</td>
 <td>
     
-    $body-color
+    $component-color
 </td>
 <td>The text color of the components' chrome area.
 </td>
