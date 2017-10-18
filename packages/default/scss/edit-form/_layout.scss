@@ -92,6 +92,10 @@
             margin-right: ($spacer);
         }
 
+        .k-checkbox-label {
+            margin-top: $input-padding-y;
+        }
+
         .k-reset > li + li {
             margin-top: ($spacer / 2);
         }
