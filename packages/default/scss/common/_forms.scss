@@ -121,8 +121,6 @@
             justify-content: center;
             text-align: center;
             cursor: pointer;
-
-            .k-icon {}
         }
     }
 
@@ -189,23 +187,12 @@
             opacity: 1;
         }
     }
-    .k-clear-value.k-loading-hidden {
-        display: none;
-    }
     .k-autocomplete,
     .k-dropdown-wrap,
     .k-multiselect {
 
         .k-clear-value {
             padding: $input-padding-y;
-            visibility: hidden;
-        }
-
-        &.k-state-hover,
-        &.k-state-focused {
-            .k-clear-value {
-                visibility: visible;
-            }
         }
     }
 
