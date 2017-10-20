@@ -12,6 +12,8 @@
     .k-maskedtextbox,
     .k-timepicker {
         width: $input-default-width;
+        border-width: 0;
+        background-color: transparent;
         line-height: $form-line-height;
         text-align: left;
         white-space: nowrap;
@@ -36,19 +38,6 @@
         ::-ms-clear {
             display: none;
         }
-    }
-    .k-colorpicker,
-    .k-combobox,
-    .k-dateinput,
-    .k-datepicker,
-    .k-datetimepicker,
-    .k-dropdown,
-    .k-multiselect,
-    .k-numerictextbox,
-    .k-maskedtextbox,
-    .k-timepicker {
-        border-width: 0;
-        background-color: transparent;
     }
 
     .k-nodata {
