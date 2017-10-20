@@ -6,6 +6,12 @@
 
         .k-input {}
 
+        .k-i-loading {
+            padding: $input-padding-y;
+            align-self: center;
+            box-sizing: content-box;
+        }
+
     }
 
 }
