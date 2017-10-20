@@ -2,42 +2,7 @@
 
     .k-combobox {
         .k-input {}
-
         .k-select {}
-
-        &[dir='rtl'],
-        .k-rtl & {
-            > .k-dropdown-wrap {
-                > .k-i-close {
-                    left: calc(#{$icon-size} + #{$padding-y-lg * 3});
-                    right: auto;
-                }
-            }
-        }
     }
 
-    .k-combobox-clearable {
-        .k-input {
-            padding-right: add-two($icon-size, $padding-x);
-        }
-
-        &[dir='rtl'],
-        .k-rtl & {
-            .k-input {
-                padding-left: add-two($icon-size, $padding-x);
-                padding-right: $input-padding-x;
-            }
-        }
-    }
-
-    .k-combobox-clearable {
-        .k-input {
-            padding-left: calc( #{$icon-size} + #{$padding-x} );
-        }
-
-        &[dir='rtl'] .k-input {
-            padding-left: calc( #{$icon-size} + #{$padding-x} );
-            padding-right: $input-padding-x;
-        }
-    }
 }
