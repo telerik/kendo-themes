@@ -62,6 +62,7 @@
     .k-textbox > input {
         padding: 0;
         width: 100%;
+        min-width: 0;
         box-sizing: border-box;
         border: 0;
         outline: 0;
@@ -69,7 +70,7 @@
         background: none;
         font: inherit;
         font-size: $textbox-font-size;
-        flex: 1;
+        flex: 1 1 auto;
         display: flex;
         align-items: center;
         overflow: hidden;
