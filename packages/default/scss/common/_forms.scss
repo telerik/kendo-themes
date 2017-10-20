@@ -28,11 +28,6 @@
             .k-select {
                 @include border-left-radius-only();
             }
-
-            .k-clear-value {
-                left: $input-padding-x;
-                right: auto;
-            }
         }
 
         ::-ms-clear {
@@ -55,7 +50,7 @@
 
     // Searchbar
     .k-searchbar {
-        flex: 1;
+        flex: 1 1 auto;
         display: flex;
         flex-direction: row;
     }
@@ -188,8 +183,7 @@
         }
     }
     .k-autocomplete,
-    .k-dropdown-wrap,
-    .k-multiselect {
+    .k-dropdown-wrap {
 
         .k-clear-value {
             padding: $input-padding-y;
