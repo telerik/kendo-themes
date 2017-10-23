@@ -1,6 +1,6 @@
 @import "~@progress/kendo-theme-default/scss/mixins/colors";
-@import "~bootstrap/scss/functions";
 @import "bootstrap-overrides";
+@import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 
 
@@ -9,6 +9,8 @@ $enable-rounded: $enable-rounded !default;
 $enable-shadows: $enable-shadows !default;
 $enable-gradients: $enable-gradients !default;
 $enable-transitions: $enable-transitions !default;
+
+$color-level-step: $theme-color-interval !default;
 
 
 // Fonts
@@ -122,23 +124,23 @@ $accent-contrast: contrast-wcag( $accent ) !default;
 
 $text-color: $body-color !default;
 $bg-color: $body-bg !default;
-$border-color: darken( $bg-color, 12% ) !default;
+$border-color: try-darken( $bg-color, 12% ) !default;
 
 /// The background of the components' chrome area.
-$base-bg: darken( $component-bg, 3% ) !default;
+$base-bg: try-darken( $component-bg, 3% ) !default;
 /// The text color of the components' chrome area.
 $base-text: $component-color !default;
 /// The border color of the components' chrome area.
-$base-border: darken( $base-bg, 3% ) !default;
+$base-border: try-darken( $base-bg, 3% ) !default;
 /// The gradient background of the components' chrome area.
 $base-gradient: false !default;
 
 /// The background of hovered items.
-$hovered-bg: darken( $base-bg, 3% ) !default;
+$hovered-bg: try-darken( $base-bg, 3% ) !default;
 /// The text color of hovered items.
 $hovered-text: $base-text !default;
 /// The border color of hovered items.
-$hovered-border: darken( $base-border, 12% ) !default;
+$hovered-border: try-darken( $base-border, 12% ) !default;
 /// The gradient background of hovered items.
 $hovered-gradient: false !default;
 
@@ -147,7 +149,7 @@ $selected-bg: $accent !default;
 /// The text color of selected items.
 $selected-text: contrast-wcag( $selected-bg ) !default;
 /// The border color of selected items.
-$selected-border: darken( $selected-bg, 12% ) !default;
+$selected-border: try-darken( $selected-bg, 12% ) !default;
 /// The gradient background of selected items.
 $selected-gradient: false !default;
 
@@ -236,7 +238,7 @@ $button-shadow: false !default;
 
 /// The background of hovered buttons.
 /// @group buttons
-$button-hovered-bg: darken( $button-bg, 7.5% ) !default;
+$button-hovered-bg: try-darken( $button-bg, 7.5% ) !default;
 
 /// The text color of hovered buttons.
 /// @group buttons
@@ -244,7 +246,7 @@ $button-hovered-text: contrast-wcag( $button-hovered-bg ) !default;
 
 /// The border color of hovered buttons.
 /// @group buttons
-$button-hovered-border: darken( $button-border, 10% ) !default;
+$button-hovered-border: try-darken( $button-border, 10% ) !default;
 
 /// The background gradient of hovered buttons.
 /// @group buttons
@@ -279,9 +281,9 @@ $primary-button-text: contrast-wcag( $primary-button-bg ) !default;
 $primary-button-border: $primary-button-bg !default;
 $primary-button-gradient: false !default;
 
-$primary-button-hovered-bg: darken( $primary-button-bg, 7.5% ) !default;
+$primary-button-hovered-bg: try-darken( $primary-button-bg, 7.5% ) !default;
 $primary-button-hovered-text: contrast-wcag( $primary-button-hovered-bg ) !default;
-$primary-button-hovered-border: darken( $primary-button-border, 10% ) !default;
+$primary-button-hovered-border: try-darken( $primary-button-border, 10% ) !default;
 $primary-button-hovered-gradient: false !default;
 
 $primary-button-pressed-bg: $primary-button-hovered-bg !default;
@@ -312,7 +314,7 @@ $input-hovered-shadow: none !default;
 
 $input-focused-text: $input-text !default;
 $input-focused-bg: $input-bg !default;
-$input-focused-border: lighten( $accent, 25 ) !default;
+$input-focused-border: try-lighten( $accent, 25 ) !default;
 $input-focused-shadow: none !default;
 
 
@@ -397,18 +399,18 @@ $pager-selected-bg: $pagination-active-bg !default;
 $pager-selected-border: $pagination-active-border-color !default;
 
 // Notification
-$notification-info-bg: theme-color-level("info", -10) !default;
-$notification-info-text: theme-color-level("info", 6) !default;
-$notification-info-border: theme-color-level("info", -9) !default;
-$notification-success-bg: theme-color-level("success", -10) !default;
-$notification-success-text: theme-color-level("success", 6) !default;
-$notification-success-border: theme-color-level("success", -9) !default;
-$notification-warning-bg: theme-color-level("warning", -10) !default;
-$notification-warning-text: theme-color-level("warning", 6) !default;
-$notification-warning-border: theme-color-level("warning", -9) !default;
-$notification-error-bg: theme-color-level("danger", -10) !default;
-$notification-error-text: theme-color-level("danger", 6) !default;
-$notification-error-border: theme-color-level("danger", -9) !default;
+$notification-info-bg: color-level($info, 10) !default;
+$notification-info-text: color-level($info, -6) !default;
+$notification-info-border: color-level($info, 9) !default;
+$notification-success-bg: color-level($success, 10) !default;
+$notification-success-text: color-level($success, -6) !default;
+$notification-success-border: color-level($success, 9) !default;
+$notification-warning-bg: color-level($warning, 10) !default;
+$notification-warning-text: color-level($warning, -6) !default;
+$notification-warning-border: color-level($warning, 9) !default;
+$notification-error-bg: color-level($error, 10) !default;
+$notification-error-text: color-level($error, -6) !default;
+$notification-error-border: color-level($error, 9) !default;
 
 
 // Window
