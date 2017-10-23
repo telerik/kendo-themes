@@ -6,42 +6,31 @@ $theme-colors: () !default;
     $white:    #ffffff !default;
     $gray-100: #f8f9fa !default;
     $gray-200: #e9ecef !default;
-    $gray-300: #dee2e6 !default;
-    $gray-400: #ced4da !default;
-    $gray-500: #adb5bd !default;
-    $gray-600: #868e96 !default;
-    $gray-700: #495057 !default;
-    $gray-800: #343a40 !default;
     $gray-900: #212529 !default;
     $black:    #000000 !default;
 
     $blue:     #007bff !default;
-    $indigo:   #6610f2 !default;
-    $purple:   #6f42c1 !default;
-    $pink:     #e83e8c !default;
-    $red:      #dc3545 !default;
-    $orange:   #fd7e14 !default;
-    $yellow:   #ffc107 !default;
-    $green:    #28a745 !default;
-    $teal:     #20c997 !default;
     $cyan:     #17a2b8 !default;
+    $green:    #28a745 !default;
+    $yellow:   #ffc107 !default;
+    $red:      #dc3545 !default;
 
     $accent: $blue !default;
+    $primary: $accent !default;
     $secondary: #e4e7eb !default;
     $info: $cyan !default;
     $success: $green !default;
     $warning: $yellow !default;
     $error: $red !default;
+    $danger: $error !default;
 
     $theme-colors: map-merge((
-        primary: $accent,
-        secondary: $secondary,
-        success: $success,
-        info: $info,
-        warning: $warning,
-        danger: $error,
-        light: $gray-100,
-        dark: $gray-800
+        "primary": $primary,
+        "secondary": $secondary,
+        "info": $info,
+        "success": $success,
+        "warning": $warning,
+        "danger": $danger
     ), $theme-colors);
 
     $body-bg: $white !default;
@@ -50,7 +39,7 @@ $theme-colors: () !default;
     $component-bg: $body-bg !default;
     $component-color: contrast-yiq($component-bg, $gray-900) !default;
     $component-border-color: rgba(contrast-yiq($component-bg, $gray-900), .125) !default;
-    $component-active-bg: theme-color("primary") !default;
+    $component-active-bg: $primary !default;
     $component-active-color: contrast-yiq($component-active-bg);
 
     $card-bg: $component-bg !default;
@@ -92,7 +81,7 @@ $theme-colors: () !default;
     $pagination-active-border-color: $pagination-active-bg !default;
 
     $pagination-disabled-bg: $pagination-bg !default;
-    $pagination-disabled-color: contrast-yiq($pagination-disabled-bg, $gray-600) !default;
+    $pagination-disabled-color: inherit !default;
 
     $table-bg: $component-bg !default;
     $table-color: $component-color !default;
@@ -109,6 +98,6 @@ $theme-colors: () !default;
 
     $progress-bg: $gray-200 !default;
     $progress-color: contrast-yiq($progress-bg, $gray-900) !default;
-    $progress-bar-bg: theme-color("primary") !default;
+    $progress-bar-bg: $primary !default;
     $progress-bar-color: contrast-yiq($progress-bar-bg, $gray-900) !default;
 // }

@@ -114,7 +114,7 @@ $rgba-transparent: rgba( 0, 0, 0, 0 );
 // Theme colors
 /// The color that focuses the user attention.
 /// Used for primary buttons and for elements of primary importance across the theme.
-$accent: theme-color("primary") !default;
+$accent: $primary !default;
 
 /// The color used along with the accent color denoted by $accent.
 /// Used to provide contrast between the background and foreground colors.
@@ -154,13 +154,13 @@ $selected-gradient: false !default;
 $transition: color .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease !default;
 
 /// The color for error messages and states.
-$success: theme-color("success") !default;
+$success: $success !default;
 /// The color for warning messages and states.
-$info: theme-color("info") !default;
+$info: $info !default;
 /// The color for success messages and states.
-$warning: theme-color("warning") !default;
+$warning: $warning !default;
 /// The color for informational messages and states.
-$error: theme-color("danger") !default;
+$error: $danger !default;
 
 $invalid-border: $error !default;
 
@@ -219,7 +219,7 @@ $header-selected-gradient: false !default;
 
 /// The background of the buttons.
 /// @group buttons
-$button-bg: theme-color("secondary") !default;
+$button-bg: $secondary !default;
 
 /// The text color of the buttons.
 /// @group buttons
