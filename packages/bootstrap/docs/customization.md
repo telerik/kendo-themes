@@ -90,7 +90,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>$accent</td>
 <td>
     
-    theme-color("primary")
+    $primary
 </td>
 <td>The color that focuses the user attention.<br/>
 Used for primary buttons and for elements of primary importance across the theme.
@@ -107,10 +107,46 @@ Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
+<td>$success</td>
+<td>
+    
+    $success
+</td>
+<td>The color for error messages and states.
+</td>
+</tr>
+<tr>
+<td>$info</td>
+<td>
+    
+    $info
+</td>
+<td>The color for warning messages and states.
+</td>
+</tr>
+<tr>
+<td>$warning</td>
+<td>
+    
+    $warning
+</td>
+<td>The color for success messages and states.
+</td>
+</tr>
+<tr>
+<td>$error</td>
+<td>
+    
+    $danger
+</td>
+<td>The color for informational messages and states.
+</td>
+</tr>
+<tr>
 <td>$base-bg</td>
 <td>
     
-    darken( $component-bg, 3% )
+    try-darken( $component-bg, 3% )
 </td>
 <td>The background of the components' chrome area.
 </td>
@@ -128,7 +164,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$base-border</td>
 <td>
     
-    darken( $base-bg, 3% )
+    try-darken( $base-bg, 3% )
 </td>
 <td>The border color of the components' chrome area.
 </td>
@@ -146,7 +182,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$hovered-bg</td>
 <td>
     
-    darken( $base-bg, 3% )
+    try-darken( $base-bg, 3% )
 </td>
 <td>The background of hovered items.
 </td>
@@ -164,7 +200,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$hovered-border</td>
 <td>
     
-    darken( $base-border, 12% )
+    try-darken( $base-border, 12% )
 </td>
 <td>The border color of hovered items.
 </td>
@@ -200,7 +236,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$selected-border</td>
 <td>
     
-    darken( $selected-bg, 12% )
+    try-darken( $selected-bg, 12% )
 </td>
 <td>The border color of selected items.
 </td>
@@ -212,42 +248,6 @@ Used to provide contrast between the background and foreground colors.
     false
 </td>
 <td>The gradient background of selected items.
-</td>
-</tr>
-<tr>
-<td>$success</td>
-<td>
-    
-    theme-color("success")
-</td>
-<td>The color for error messages and states.
-</td>
-</tr>
-<tr>
-<td>$info</td>
-<td>
-    
-    theme-color("info")
-</td>
-<td>The color for warning messages and states.
-</td>
-</tr>
-<tr>
-<td>$warning</td>
-<td>
-    
-    theme-color("warning")
-</td>
-<td>The color for success messages and states.
-</td>
-</tr>
-<tr>
-<td>$error</td>
-<td>
-    
-    theme-color("danger")
-</td>
-<td>The color for informational messages and states.
 </td>
 </tr>
 </table>
@@ -270,7 +270,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-bg</td>
 <td>
     
-    theme-color("secondary")
+    $secondary
 </td>
 <td>The background of the buttons.
 </td>
@@ -306,7 +306,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-hovered-bg</td>
 <td>
     
-    darken( $button-bg, 7.5% )
+    try-darken( $button-bg, 7.5% )
 </td>
 <td>The background of hovered buttons.
 </td>
@@ -324,7 +324,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-hovered-border</td>
 <td>
     
-    darken( $button-border, 10% )
+    try-darken( $button-border, 10% )
 </td>
 <td>The border color of hovered buttons.
 </td>
@@ -342,7 +342,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-pressed-bg</td>
 <td>
     
-    $button-hovered-bg
+    try-darken( $button-bg, 10% )
 </td>
 <td>The background color of pressed buttons.
 </td>
@@ -351,7 +351,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-pressed-text</td>
 <td>
     
-    $button-hovered-text
+    contrast-wcag( $button-pressed-bg )
 </td>
 <td>The text color of pressed buttons.
 </td>
@@ -360,7 +360,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-pressed-border</td>
 <td>
     
-    $button-hovered-border
+    try-darken( $button-border, 12.5% )
 </td>
 <td>The border color of pressed buttons.
 </td>
