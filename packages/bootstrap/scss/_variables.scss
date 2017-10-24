@@ -10,8 +10,6 @@ $enable-shadows: $enable-shadows !default;
 $enable-gradients: $enable-gradients !default;
 $enable-transitions: $enable-transitions !default;
 
-$color-level-step: $theme-color-interval !default;
-
 
 // Fonts
 
@@ -122,6 +120,17 @@ $accent: $primary !default;
 /// Used to provide contrast between the background and foreground colors.
 $accent-contrast: contrast-wcag( $accent ) !default;
 
+/// The color for error messages and states.
+$success: $success !default;
+/// The color for warning messages and states.
+$info: $info !default;
+/// The color for success messages and states.
+$warning: $warning !default;
+/// The color for informational messages and states.
+$error: $danger !default;
+
+$color-level-step: $theme-color-interval !default;
+
 $text-color: $body-color !default;
 $bg-color: $body-bg !default;
 $border-color: try-darken( $bg-color, 12% ) !default;
@@ -154,15 +163,6 @@ $selected-border: try-darken( $selected-bg, 12% ) !default;
 $selected-gradient: false !default;
 
 $transition: color .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease !default;
-
-/// The color for error messages and states.
-$success: $success !default;
-/// The color for warning messages and states.
-$info: $info !default;
-/// The color for success messages and states.
-$warning: $warning !default;
-/// The color for informational messages and states.
-$error: $danger !default;
 
 $invalid-border: $error !default;
 
