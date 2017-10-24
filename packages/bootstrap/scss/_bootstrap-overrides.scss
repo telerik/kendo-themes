@@ -29,13 +29,14 @@ $theme-colors: () !default;
     $accent: $blue !default;
     $secondary: #e4e7eb !default;
     $info: $cyan !default;
+    $success: $green !default;
     $warning: $yellow !default;
     $error: $red !default;
 
     $theme-colors: map-merge((
         primary: $accent,
         secondary: $secondary,
-        success: $green,
+        success: $success,
         info: $info,
         warning: $warning,
         danger: $error,
@@ -81,7 +82,11 @@ $theme-colors: () !default;
     $nav-tabs-link-active-color: $component-color !default;
     $nav-tabs-link-active-border-color: $component-border-color !default;
 
-    $pagination-bg: $body-bg !default;
+    $pagination-bg: $component-bg !default;
+    $pagination-color: $accent !default;
+    $pagination-border-color: $component-border-color !default;
+    $pagination-hover-bg: darken($pagination-bg, 8%) !default;
+    $pagination-hover-border-color: $pagination-border-color !default;
     $pagination-active-color: $component-active-color !default;
     $pagination-active-bg: $component-active-bg !default;
     $pagination-active-border-color: $pagination-active-bg !default;
