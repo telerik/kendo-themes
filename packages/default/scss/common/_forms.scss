@@ -259,6 +259,7 @@
 
     .ng-invalid.ng-touched,
     .ng-invalid.ng-dirty {
+        &.k-autocomplete,
         &.k-maskedtextbox > .k-textbox {
             color: $error;
             border-color: $invalid-border;
