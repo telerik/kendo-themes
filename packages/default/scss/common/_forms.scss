@@ -173,6 +173,7 @@
 
     // Clear value
     .k-clear-value {
+        box-sizing: content-box;
         outline: 0;
         display: inline-block;
         align-self: center;
