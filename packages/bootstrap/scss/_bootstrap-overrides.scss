@@ -81,7 +81,7 @@ $theme-colors: () !default;
     $pagination-active-border-color: $pagination-active-bg !default;
 
     $pagination-disabled-bg: $pagination-bg !default;
-    $pagination-disabled-color: inherit !default;
+    $pagination-disabled-color: grayscale($pagination-color) !default;
 
     $table-bg: $component-bg !default;
     $table-color: $component-color !default;
