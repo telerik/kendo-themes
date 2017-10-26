@@ -346,6 +346,21 @@ $chart-title-font-size: 1.143em !default;
             padding: $padding-x-sm;
         }
     }
+}
+
+
+@include exports("dataviz/gauge/layout") {
+
+    .k-arcgauge {
+        display: inline-block;
+    }
+
+    .k-arcgauge-label {
+        position: absolute;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
 
 }
 
@@ -378,7 +393,10 @@ $chart-title-font-size: 1.143em !default;
         series-c: $series-c,
         series-d: $series-d,
         series-e: $series-e,
-        series-f: $series-f
+        series-f: $series-f,
+
+        gauge-pointer: $accent,
+        gauge-track: darken($widget-bg, 10%)
     );
 
     @each $name, $value in $exported {
