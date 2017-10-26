@@ -702,10 +702,11 @@
 
     // RTL icons
     .k-rtl .k-i-indent-increase,
-    .k-rtl .k-i-indent-decrease {
+    .k-rtl .k-i-indent-decrease,
+    .k-rtl .k-i-expand,
+    .k-rtl .k-i-collapse {
         transform: scaleX(-1);
     }
-    .k-rtl .k-i-expand::before { content: "\e007"; }
 
     .k-sprite {
         display: inline-block;
