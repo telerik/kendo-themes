@@ -119,6 +119,17 @@ $accent: #ff6358 !default;
 /// Used to provide contrast between the background and foreground colors.
 $accent-contrast: contrast-wcag( $accent ) !default;
 
+/// The color for informational messages and states.
+$info: #0058e9 !default;
+/// The color for success messages and states.
+$success: #37b400 !default;
+/// The color for warning messages and states.
+$warning: #ffc000 !default;
+/// The color for error messages and states.
+$error: #f31700 !default;
+
+$color-level-step: 8% !default;
+
 $text-color: #656565 !default;
 $bg-color: #ffffff !default;
 $border-color: rgba( black, .08 ) !default;
@@ -151,20 +162,11 @@ $selected-border: rgba( black, .1 ) !default;
 $selected-gradient: none !default;
 
 $selected-hover-color: $selected-text !default;
-$selected-hover-bg: mix( $selected-bg, black, 92) !default;
+$selected-hover-bg: shade( $selected-bg ) !default;
 
 $focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 $transition: background-color .2s ease !default;
-
-/// The color for error messages and states.
-$error: #f31700 !default;
-/// The color for warning messages and states.
-$warning: #ffc000 !default;
-/// The color for success messages and states.
-$success: #37b400 !default;
-/// The color for informational messages and states.
-$info: #0058e9 !default;
 
 $invalid-border: rgba($error, .5) !default;
 

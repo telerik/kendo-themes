@@ -1,14 +1,28 @@
 @import "vendor/color-helpers/math";
 @import "vendor/color-helpers/contrast";
-@import "vendor/bootstrap/functions";
 
+@function color-level($color, $level: 0) {
 
-@function tint( $color, $percentage: 10 ) {
-    @return mix( white, $color, $percentage );
+    @if ($level == 0) {
+        @return $color;
+    }
+
+    $base: if($level > 0, #ffffff, #000000);
+    $level: abs($level);
+
+    @if ( unit($level) == "%" ) {
+        @return mix( $base, $color, $level );
+    }
+
+    @return mix($base, $color, $level * $color-level-step);
 }
 
-@function shade( $color, $percentage: 10 ) {
-    @return mix( black, $color, $percentage );
+@function tint( $color, $level: 1 ) {
+    @return color-level( $color, $level );
+}
+
+@function shade( $color, $level: 1 ) {
+    @return color-level( $color, - $level );
 }
 
 

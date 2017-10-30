@@ -115,7 +115,7 @@
         color: mix( $selected-bg, $panel-bg, 80 );
 
         .k-task-summary-complete {
-            color: mix( $selected-bg, black, 92 );
+            color: shade( $selected-bg );
         }
     }
     .k-task-summary::before,
