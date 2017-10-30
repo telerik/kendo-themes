@@ -15,9 +15,13 @@
     }
 
     // Window actions
+    .k-window-actions {
+        margin-top: -$window-titlebar-padding-y;
+        margin-bottom: -$window-titlebar-padding-y;
+    }
     .k-window-action {
         margin: 0 0 0 ( $spacer / 2 );
-        padding: 0;
+        padding: $window-titlebar-padding-y $window-titlebar-padding-x;
         width: 1em;
         height: 1em;
         border-width: 0;
