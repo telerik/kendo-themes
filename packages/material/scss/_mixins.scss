@@ -22,4 +22,10 @@
         opacity: 1;
         transform: scaleX(1);
     }
+
+    &.k-state-invalid::after,
+    .k-state-invalid &::after {
+        background-color: $error;
+        transition: none;
+    }
 }
