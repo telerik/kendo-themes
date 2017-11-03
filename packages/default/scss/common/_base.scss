@@ -315,20 +315,6 @@
         }
     }
 
-
-    // Error-state
-    .k-state-error {
-        border-style: ridge;
-    }
-
-
-    // TODO: what is smpty state?
-    // Empty state
-    .k-state-empty {
-        font-style: italic;
-    }
-
-
     // Dirty indicator
     .k-dirty {
         border-color: $error $error transparent transparent;
