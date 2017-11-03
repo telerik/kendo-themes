@@ -232,6 +232,15 @@
                 left: auto;
                 right: 0;
             }
+
+            .k-edit-cell,
+            .k-grid-edit-row > td {
+                >.k-textbox,
+                >.k-widget,
+                > .text-box {
+                    margin-right: $edit-cell-input-space;
+                }
+            }
         }
 
         .k-tooltip.k-tooltip-validation {
