@@ -438,6 +438,11 @@
             display: block;
             overflow: hidden;
             text-overflow: ellipsis;
+
+            .k-ff & {
+                margin-inline-start: 0;
+                padding-inline-start: 0;
+            }
         }
 
         .k-header.k-filterable > .k-link {
