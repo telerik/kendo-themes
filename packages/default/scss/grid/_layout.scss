@@ -762,7 +762,12 @@
         flex: 1 1 auto;
         display: inline-block;
         vertical-align: top;
+
+        &.k-auto-scrollable {
+            display:block;
+        }
     }
+
     .k-grid-header-locked>table,
     .k-grid-header-wrap>table {
         margin-bottom: -1px;
