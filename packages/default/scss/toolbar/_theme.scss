@@ -140,6 +140,14 @@
             box-shadow: inset $button-pressed-shadow;
         }
 
+        // Button disabled state
+        .k-button.k-state-disabled {
+
+            &::after {
+                opacity: 0;
+            }
+        }
+
 
         // Button group
         .k-button-group {}

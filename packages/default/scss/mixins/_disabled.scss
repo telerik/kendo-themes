@@ -5,6 +5,7 @@
     opacity: $disabled-opacity;
     filter: $disabled-filter;
     pointer-events: none;
+    box-shadow: none;
 }
 @include exports("placeholder/disabled") {
     %disabled {
