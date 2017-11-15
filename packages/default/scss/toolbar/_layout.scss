@@ -21,8 +21,6 @@
             align-items: stretch;
             align-content: center;
             vertical-align: middle;
-        }
-        > *:not(.k-overflow-anchor) {
             margin: 0 $toolbar-padding-x/2;
         }
 
@@ -61,6 +59,7 @@
             padding: $toolbar-padding-y;
             width: calc( #{$toolbar-inner-calc-size} );
             height: calc( #{$toolbar-inner-calc-size} );
+            margin: 0;
             border-width: 0 0 0 1px;
             border-color: inherit;
             background-clip: padding-box;
