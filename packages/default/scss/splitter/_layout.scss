@@ -153,6 +153,10 @@
             flex-shrink: 0;
         }
 
+        .k-pane-flex {
+            display: flex;
+        }
+
         .k-splitbar {
             position: static;
             flex: 0 0 auto;
