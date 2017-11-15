@@ -2,13 +2,19 @@
 
     // Base
     .k-toolbar {
-        padding: $toolbar-padding-y $toolbar-padding-x;
+        padding: $toolbar-padding-y $toolbar-padding-x/2;
         line-height: $form-line-height;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: flex-start;
         position: relative;
+        overflow: hidden;
+
+        &.k-toolbar-resizable {
+            flex-wrap: nowrap;
+        }
 
         > * {
             display: inline-flex;
@@ -16,11 +22,8 @@
             align-content: center;
             vertical-align: middle;
         }
-        > * + * {
-            margin-left: $toolbar-padding-x;
-        }
-        > .k-overflow-anchor + * {
-            margin-left: 0;
+        > *:not(.k-overflow-anchor) {
+            margin: 0 $toolbar-padding-x/2;
         }
 
         .k-button,
