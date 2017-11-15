@@ -165,7 +165,7 @@
         &.k-splitter-horizontal {
             flex-direction: row;
 
-            &[dir=rtl] {
+            &[dir = "rtl"] {
                 flex-direction: row-reverse;
             }
         }
