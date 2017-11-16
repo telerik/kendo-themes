@@ -37,7 +37,7 @@
     .k-window-title {
         margin: 0;
         font-size: $font-size-lg;
-        line-height: 20px / $font-size-lg;
+        line-height: 1;
         text-overflow: ellipsis;
         overflow: hidden;
         cursor: default;
@@ -55,11 +55,8 @@
         vertical-align: top;
 
         .k-button {
-            margin: -1*($button-padding-y + 1px) 0;
-
-            &:last-child {
-                margin-right: -1*($button-padding-y + 1px);
-            }
+            margin-top: calc(#{-1*$button-padding-y} - 1px);
+            margin-bottom: calc(#{-1*$button-padding-y} - 1px);
         }
     }
 
