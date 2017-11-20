@@ -62,6 +62,7 @@
 
         // Token
         .k-button {
+            min-height: calc(#{$form-line-height}*1em + #{$button-padding-y-sm} + 2px);
             padding: ($button-padding-y-sm / 2) ($button-padding-x / 2);
             margin: $padding-y-sm 0 0 $padding-y-sm;
             cursor: default;
