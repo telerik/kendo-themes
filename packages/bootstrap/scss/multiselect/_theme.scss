@@ -21,6 +21,7 @@
         @include appearance( input );
 
         .k-button {
+            min-height: calc(#{$form-line-height}*1em + #{$button-padding-y-sm} + 2px + 2px);
             padding: add-two(($button-padding-y-sm / 2), 1px) ($button-padding-x / 2);
         }
     }
