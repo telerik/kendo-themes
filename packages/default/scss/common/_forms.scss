@@ -265,7 +265,8 @@
             border-color: $invalid-border;
         }
 
-        .k-dateinput-wrap, // dateinput is nested deeper in datepicker
+        > .k-picker-wrap .k-dateinput-wrap,
+        > .k-dateinput-wrap,
         > .k-dropdown-wrap,
         > .k-numeric-wrap,
         > .k-picker-wrap {
