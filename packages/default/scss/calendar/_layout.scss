@@ -309,6 +309,7 @@ $calendar-view-height: 7 * $calendar-cell-size + $calendar-header-height + $cale
                 cursor: default;
                 text-align: center;
                 height: $calendar-cell-size;
+                width: $calendar-cell-size;
                 border-width: 0;
             }
 
