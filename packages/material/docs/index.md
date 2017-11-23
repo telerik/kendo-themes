@@ -1,7 +1,7 @@
 ---
 title: Preview
 description: "Preview the way the Kendo UI components for Angular look like when styled with the Kendo UI Material theme for Angular."
-slug: preview_kendothemematerial_kendouiforangular
+slug: preview_kendothemematerial
 position: 1
 ---
 

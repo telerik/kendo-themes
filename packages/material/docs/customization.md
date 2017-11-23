@@ -1,7 +1,7 @@
 ---
 title: Customization
 description: "Refer to the list of the Kendo UI Material theme variables available for customization."
-slug: variables_kendothemematerial_kendouiforangular
+slug: variables_kendothemematerial
 position: 9
 ---
 
@@ -523,6 +523,6 @@ Used to provide contrast between the background and foreground colors.
 
 ## Suggested Links
 
-* [Styling Overview]({% slug themesandstyles_kendouiforangular %})
-* [Web Font Icons]({% slug icons_kendouiforangular %})
-* [Preview of the Themed Components]({% slug preview_kendothemedefault_kendouiforangular %})
+* [Styling Overview]({% slug themesandstyles %})
+* [Web Font Icons]({% slug icons %})
+* [Preview of the Themed Components]({% slug preview_kendothemedefault %})
