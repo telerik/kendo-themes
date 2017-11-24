@@ -515,4 +515,4 @@ Used to provide contrast between the background and foreground colors.
 
 * [Styling Overview]({% slug themesandstyles %})
 * [Web Font Icons]({% slug icons %})
-* [Preview of the Themed Components]({% slug preview_kendothemedefault %})
+* [Preview of the Themed Components](../)
