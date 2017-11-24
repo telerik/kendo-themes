@@ -111,6 +111,8 @@
         .k-title {
             z-index: 12;
             opacity: $disabled-opacity;
+            font-size: $font-size-xs;
+            color: $header-text;
         }
 
         &.k-state-focused {

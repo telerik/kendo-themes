@@ -4,7 +4,6 @@
     $calendar-text: $panel-text !default;
     $calendar-border: $panel-border !default;
 
-
     // Calendar
     .k-calendar {
         @include fill( $calendar-text, $calendar-bg, $calendar-border );
@@ -74,6 +73,11 @@
         .k-calendar-monthview {
             .k-weekend {
                 background: none;
+            }
+
+            th {
+                font-size: $font-size-xs;
+                color: $header-text;
             }
         }
 
