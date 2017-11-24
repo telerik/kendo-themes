@@ -198,7 +198,7 @@
             .k-file-name-size-wrapper {
                 display: block;
                 margin-left: calc(#{$uploaded-image-width} + #{$spacer-x});
-                margin-right: calc(#{$icon-size} + #{$cell-padding});
+                margin-right: calc(#{$icon-size}*2 + 3.5em);
                 overflow: hidden;
                 min-height: $uploaded-image-height + ($uploaded-image-border * 2);
             }
