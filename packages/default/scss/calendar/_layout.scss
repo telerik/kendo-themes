@@ -50,7 +50,7 @@ $calendar-view-height: 7 * $calendar-cell-size + $calendar-header-height + $cale
         }
         th {
             padding: $calendar-cell-padding-y $calendar-cell-padding-x;
-            font-size: $font-size-sm;
+            font-size: $font-size-xs;
             font-weight: bold;
             cursor: default;
         }
@@ -302,6 +302,7 @@ $calendar-view-height: 7 * $calendar-cell-size + $calendar-header-height + $cale
                 border: 0;
                 text-align: left;
                 font-weight: bold;
+                font-size: $font-size;
                 opacity: $disabled-opacity;
             }
 
