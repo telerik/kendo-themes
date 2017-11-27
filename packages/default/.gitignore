@@ -7,3 +7,4 @@ examples/**/build/
 yarn.lock
 build/custom.js
 .vscode/
+tests/**/*.js
