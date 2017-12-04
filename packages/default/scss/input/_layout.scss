@@ -15,7 +15,8 @@
 
     $textbox-line-height: $form-line-height-em !default;
     // TODO: legacy, consider switching to 100%
-    $textbox-default-width: 12.4em !default;
+    $textbox-default-width: $input-default-width !default;
+    $textarea-default-width: 18em !default;
 
     .k-textbox,
     .k-input.k-textbox,
@@ -41,7 +42,7 @@
     }
 
     .k-textarea {
-        width: 18em;
+        width: $textarea-default-width;
         min-height: calc((#{$line-height-em} * 4) + (#{$input-padding-y} * 2));
     }
 
@@ -115,7 +116,8 @@
             transition: transform $floating-label-transition, color $floating-label-transition;
         }
 
-        > .k-textbox {
+        > .k-textbox,
+        > .k-widget {
             flex: 1 1 auto;
             width: auto;
         }

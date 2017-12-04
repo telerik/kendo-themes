@@ -11,7 +11,7 @@
     .k-numerictextbox,
     .k-maskedtextbox,
     .k-timepicker {
-        width: 12.4em;
+        width: $input-default-width;
         line-height: $form-line-height;
         text-align: left;
         white-space: nowrap;
