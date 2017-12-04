@@ -3,12 +3,15 @@ $checkbox-border-width: 2px !default;
 $checkbox-line-height: 24px !default;
 $checkbox-indeterminate-style: dash !default;
 $textbox-line-height: 1.2em !default;
+$textbox-shadow: none !default;
 $floating-label-transition: .4s cubic-bezier(.25, .8, .25, 1) !default;
 
 @import "~@progress/kendo-theme-default/scss/input/layout";
 
 @include exports('input/layout/checkbox-radiobutton/material') {
-    // animation
+
+    // animate tick mark with max-width transition
+
     .k-checkbox-label::after {
         $check-icon-size: (2 * $icon-size) / 3;
         font-size: $check-icon-size;

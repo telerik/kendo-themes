@@ -1,15 +1,17 @@
 @import "~@progress/kendo-theme-default/scss/mixins";
 
 @mixin input-ripple() {
+    $height: 2 * $input-border-width;
+
     &::after {
         display: block;
         z-index: 2;
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: add-two(-$height, 1px);
         left: 0;
         right: 0;
-        height: 2 * $input-border-width;
+        height: $height;
         margin: auto;
         opacity: 0;
         transform: scaleX(.5);
@@ -22,6 +24,7 @@
         opacity: 1;
         transform: scaleX(1);
     }
+
 
     &.k-state-invalid::after,
     .k-state-invalid &::after {

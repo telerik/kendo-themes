@@ -3,8 +3,8 @@
 @include exports("numerictextbox/theme/material") {
     .k-numerictextbox {
         .k-numeric-wrap {
+            background-color: transparent;
             border-radius: 0;
-            box-shadow: inset 0 #{-$input-border-width} 0 0 $border-color;
         }
 
         .k-select {
@@ -14,7 +14,7 @@
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
             .k-numeric-wrap {
-                box-shadow: inset 0 -2px 0 0 $error;
+                //box-shadow: inset 0 -2px 0 0 $error;
             }
         }
     }

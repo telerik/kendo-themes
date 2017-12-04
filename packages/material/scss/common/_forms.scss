@@ -11,10 +11,10 @@
     .k-multiselect-wrap,
     .k-numeric-wrap {
         border-radius: 0;
-        border-width: 0;
-        box-shadow: inset 0 #{-$input-border-width} 0 0 $border-color;
-
-        @include input-ripple();
+        border-width: 0 0 $input-border-width;
+        border-style: solid;
+        border-color: $border-color;
+        background-color: transparent;
 
         .k-select {
             border-width: 0;

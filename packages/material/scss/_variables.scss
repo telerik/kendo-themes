@@ -67,7 +67,7 @@ $button-padding-y-sm: $button-padding-y / 2 !default;
 $button-calc-size: #{$form-line-height-em} + #{$button-padding-y * 2} + 2px;
 $button-inner-calc-size: #{$form-line-height-em} + #{$button-padding-y * 2};
 
-$input-default-width: 100% !default;
+$input-default-width: 200px !default;
 
 $input-border-width: 1px !default;
 $input-padding-x: 0 !default;
@@ -319,7 +319,7 @@ $input-hovered-shadow: null !default;
 $input-focused-text: $input-text !default;
 $input-focused-bg: $input-bg !default;
 $input-focused-border: $input-hovered-border !default;
-$input-focused-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
+$input-focused-shadow: none !default;
 
 
 // Node
