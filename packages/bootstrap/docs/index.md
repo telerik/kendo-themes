@@ -1,13 +1,13 @@
 ---
 title: Overview
-description: "Preview and install the Kendo UI Bootstrap theme and style the Kendo UI components in Angular projects."
+description: "Preview and install the Kendo UI Bootstrap theme and style the Kendo UI components in Angular and React projects."
 slug: preview_kendothemebootstrap
 position: 1
 ---
 
 # Preview
 
-The Kendo UI Bootstrap theme for Angular is available through the @progress/kendo-theme-bootstrap NPM module.
+The Kendo UI Bootstrap theme is available through the @progress/kendo-theme-bootstrap NPM module.
 
 ## Installation
 
@@ -23,10 +23,18 @@ The Kendo UI Bootstrap theme for Angular is available through the @progress/kend
 
 The following example previews Kendo UI components which are styled with the Bootstrap theme.
 
+{% platform_content angular %}
 {% theme_preview theme:bootstrap %}
 <script async src="{% asset_path theme-preview.js %}"></script>
+{% endplatform_content %}
+
+{% platform_content react %}
+{% meta height:700 theme:bootstrap %}
+{% embed_file theme-preview/main.jsx preview %}
+{% endmeta %}
+{% endplatform_content %}
 
 ## Suggested Links
 
-* [Styling the Kendo UI Components for Angular]({% slug themesandstyles %})
+* [Styling the Kendo UI Components]({% slug themesandstyles %})
 * [Kendo UI Font Icons]({% slug icons %})
