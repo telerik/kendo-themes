@@ -1,13 +1,13 @@
 ---
 title: Overview
-description: "Preview and install the Kendo UI Default theme and style the Kendo UI components in Angular projects."
+description: "Preview and install the Kendo UI Default theme and style the Kendo UI components in Angular and React projects."
 slug: preview_kendothemedefault
 position: 1
 ---
 
 # Overview
 
-The Kendo UI Default theme for Angular is available through the @progress/kendo-theme-default NPM module.
+The Kendo UI Default theme is available through the @progress/kendo-theme-default NPM module.
 
 ## Installation
 
@@ -23,10 +23,18 @@ The Kendo UI Default theme for Angular is available through the @progress/kendo-
 
 The following example previews Kendo UI components which are styled with the Default theme.
 
+{% platform_content angular %}
 {% theme_preview theme:default %}
 <script async src="{% asset_path theme-preview.js %}"></script>
+{% endplatform_content %}
+
+{% platform_content react %}
+{% meta height:700 theme:default %}
+{% embed_file theme-preview/main.jsx preview %}
+{% endmeta %}
+{% endplatform_content %}
 
 ## Suggested Links
 
-* [Styling the Kendo UI Components for Angular]({% slug themesandstyles %})
+* [Styling the Kendo UI Components]({% slug themesandstyles %})
 * [Kendo UI Font Icons]({% slug icons %})
