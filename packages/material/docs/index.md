@@ -1,12 +1,13 @@
 ---
 title: Overview
-description: "Preview and install the Kendo UI Material theme and style the Kendo UI components in Angular projects."
+description: "Preview and install the Kendo UI Material theme and style the Kendo UI components in Angular and React projects."
 slug: preview_kendothemematerial
 position: 1
 ---
 
 # Overview
 
+{% platform_content angular %}
 > The Material theme is under active development and is not supported by the whole suite. All components which are available for styling with the Material theme are included in the preview.
 
 ## Installation
@@ -38,3 +39,8 @@ The following example previews Kendo UI components which are styled with the Mat
 * [Material Design Guidelines](https://https://material.io/guidelines/)
 * [Kendo UI Ripple for Angular]({% slug overview_ripple %})
 * [Kendo UI TextBox for Angular]({% slug overview_textbox %})
+{% endplatform_content %}
+
+{% platform_content react %}
+> The Material theme is under active development and is not yet supported by the Kendo UI suite for React. Once the Material theme becomes available, this article will be updated accordingly.
+{% endplatform_content %}
