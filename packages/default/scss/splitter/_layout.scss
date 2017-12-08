@@ -164,10 +164,6 @@
 
         &.k-splitter-horizontal {
             flex-direction: row;
-
-            &[dir = "rtl"] {
-                flex-direction: row-reverse;
-            }
         }
         &.k-splitter-vertical {
             flex-direction: column;
