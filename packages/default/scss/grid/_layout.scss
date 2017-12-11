@@ -242,6 +242,15 @@
                     margin-right: $edit-cell-input-space;
                 }
             }
+
+            .k-grid-header-wrap.k-auto-scrollable {
+                margin-left: -1px;
+                margin-right: 0;
+            }
+
+            .k-grid-header-locked + .k-grid-header-wrap.k-auto-scrollable {
+                margin-left: 0;
+            }
         }
 
         .k-tooltip.k-tooltip-validation {
@@ -392,6 +401,14 @@
         border-color: inherit;
         position: relative;
         overflow: hidden;
+    }
+
+    .k-grid-header-wrap.k-auto-scrollable {
+        margin-right: -1px;
+    }
+
+    .k-grid-header-locked + .k-grid-header-wrap.k-auto-scrollable {
+        margin-right: 0;
     }
 
     .k-grid-header,
