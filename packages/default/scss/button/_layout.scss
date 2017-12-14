@@ -108,6 +108,7 @@
         }
 
         &.k-widget {
+            border-radius: $border-radius;
             border-width: 0;
             display: inline-block;
         }
@@ -186,6 +187,7 @@
     }
 
     .k-split-button.k-widget {
+        border-radius: $border-radius;
         border-width: 0;
     }
 
