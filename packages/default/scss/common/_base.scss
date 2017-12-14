@@ -380,6 +380,35 @@
         cursor: w-resize;
     }
 
+    .k-resize-sw,
+    .k-resize-se,
+    .k-resize-nw,
+    .k-resize-ne {
+        width: 5px;
+        height: 5px;
+    }
+
+    .k-resize-sw {
+        cursor: sw-resize;
+        bottom: 0;
+        left: 0;
+    }
+    .k-resize-se {
+        cursor: se-resize;
+        bottom: 0;
+        right: 0;
+    }
+    .k-resize-nw {
+        cursor: nw-resize;
+        top: 0;
+        left: 0;
+    }
+    .k-resize-ne {
+        cursor: ne-resize;
+        top: 0;
+        right: 0;
+    }
+
 }
 
 
