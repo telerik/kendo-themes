@@ -8,7 +8,26 @@
         }
 
         .k-select {
+            width: $icon-size;
+            color: inherit;
+        }
+
+        .k-select,
+        .k-select:hover {
             background-color: transparent;
+        }
+
+        .k-link {
+            opacity: .54;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &.k-state-active {
+                background-color: transparent;
+                box-shadow: none;
+            }
         }
     }
 }

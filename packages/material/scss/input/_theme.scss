@@ -13,10 +13,16 @@
         &.ng-invalid.ng-dirty {
             border-color: $error;
         }
+
+        &.k-state-disabled {
+            border-bottom-style: dotted;
+        }
     }
 
     // Floating label
     .k-textbox-container {
+        vertical-align: top;
+
         > .k-label {
             color: $floating-label-color;
         }
