@@ -9,6 +9,9 @@ $calendar-navigation-item-height: 2em;
 $calendar-navigation-width: 5em;
 $calendar-view-width: 7 * $calendar-cell-size;
 $calendar-view-height: 7 * $calendar-cell-size + $calendar-header-height + $calendar-weekdays-height;
+$calendar-header-cell-padding-x: 8px !default;
+$calendar-header-cell-padding-y: 8px !default;
+
 
 @include exports('calendar/layout') {
 
@@ -49,10 +52,11 @@ $calendar-view-height: 7 * $calendar-cell-size + $calendar-header-height + $cale
             font-weight: normal;
         }
         th {
-            padding: $calendar-cell-padding-y $calendar-cell-padding-x;
+            padding: $calendar-header-cell-padding-y 0;
             font-size: $font-size-xs;
             font-weight: bold;
             cursor: default;
+            opacity: $disabled-opacity;
         }
         td {
             cursor: pointer;
@@ -155,8 +159,8 @@ $calendar-view-height: 7 * $calendar-cell-size + $calendar-header-height + $cale
             }
 
             .k-alt,
-            .k-weekend,
-            .k-other-month {
+            // .k-weekend,
+            .k-other-month .k-link {
                 opacity: $disabled-opacity;
             }
 

@@ -59,8 +59,7 @@
             }
         }
 
-        .k-alt,
-        .k-weekend:not(.k-calendar-infinite .k-weekend) {
+        .k-alt {
             background: darken( $widget-bg, 5 );
         }
 
@@ -116,6 +115,27 @@
         .k-rtl & {
             .k-calendar-navigation {
                 box-shadow: inset 1px 0 $base-border;
+            }
+        }
+
+        &:not(.k-infinite) {
+            .k-weekend {
+                background-color: darken($widget-bg, 2.35);
+            }
+
+            .k-state-hover {
+                background-color: $node-hovered-bg;
+            }
+
+            .k-content {
+                .k-state-selected,
+                .k-weekend .k-state-selected {
+                    @include appearance( selected-node );
+
+                    &.k-state-hover {
+                        background-color: blend-multiply( $list-item-selected-bg, $list-item-hovered-bg );
+                    }
+                }
             }
         }
     }
