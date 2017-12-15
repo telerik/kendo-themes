@@ -148,11 +148,13 @@
     }
 
     .k-fade {
-        &-enter {
+        &-enter,
+        &-appear {
             opacity: 0;
         }
 
-        &-enter-active {
+        &-enter-active,
+        &-appear-active {
             opacity: 1;
             transition: opacity 500ms ease-in-out;
         }
@@ -246,11 +248,13 @@
     }
 
     .k-slide-down {
-        &-enter {
+        &-enter,
+        &-appear {
             transform: translateY(-100%);
         }
 
-        &-enter-active {
+        &-enter-active,
+        &-appear-active {
             transform: translateY(0);
             transition: transform 300ms ease-in-out;
         }
@@ -266,11 +270,13 @@
     }
 
     .k-slide-up {
-        &-enter {
+        &-enter,
+        &-appear {
             transform: translateY(100%);
         }
 
-        &-enter-active {
+        &-enter-active,
+        &-appear-active {
             transform: translateY(0);
             transition: transform 300ms ease-in-out;
         }
@@ -286,11 +292,13 @@
     }
 
     .k-slide-right {
-        &-enter {
+        &-enter,
+        &-appear {
             transform: translateX(-100%);
         }
 
-        &-enter-active {
+        &-enter-active,
+        &-appear-active {
             transform: translateX(0);
             transition: transform 300ms ease-in-out;
         }
@@ -306,11 +314,13 @@
     }
 
     .k-slide-left {
-        &-enter {
+        &-enter,
+        &-appear {
             transform: translateX(100%);
         }
 
-        &-enter-active {
+        &-enter-active,
+        &-appear-active {
             transform: translateX(0);
             transition: transform 300ms ease-in-out;
         }
