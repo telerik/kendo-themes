@@ -406,6 +406,10 @@
         padding: 0;
     }
 
+    .k-spreadsheet-active-cell {
+        outline-color: transparent !important;
+    }
+
     .k-spreadsheet .k-auto-fill-wrapper {
         position: relative;
     }
@@ -437,11 +441,6 @@
         right: 0;
         z-index: 100;
         cursor: crosshair;
-    }
-    .k-spreadsheet-selection.k-right::after,
-    .k-spreadsheet-selection.k-bottom::after {
-        margin-right: -2px;
-        margin-bottom: -2px;
     }
 
 
