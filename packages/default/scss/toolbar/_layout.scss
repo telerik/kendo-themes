@@ -98,4 +98,14 @@
         }
     }
 
+    // RTL
+    .k-rtl .k-toolbar {
+
+        .k-overflow-anchor {
+            right: auto;
+            left: 0;
+            border-width: 0 1px 0 0;
+        }
+    }
+
 }
