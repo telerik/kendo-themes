@@ -23,15 +23,12 @@ The Kendo UI Bootstrap theme is available through the @progress/kendo-theme-boot
 
 The following example previews Kendo UI components which are styled with the Bootstrap theme.
 
-{% platform_content angular %}
 {% theme_preview theme:bootstrap %}
+{% platform_content angular %}
 <script async src="{% asset_path theme-preview.js %}"></script>
 {% endplatform_content %}
-
 {% platform_content react %}
-{% meta height:700 theme:bootstrap %}
-{% embed_file theme-preview/main.jsx preview %}
-{% endmeta %}
+<script async src="{% asset_path react-theme-preview.js %}"></script>
 {% endplatform_content %}
 
 ## Suggested Links
