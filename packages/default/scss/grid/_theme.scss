@@ -51,6 +51,16 @@
         font-weight: bold;
     }
 
+    .k-grouping-dropclue {
+        &::before {
+            border-color: $grid-chrome-text transparent transparent;
+        }
+
+        &::after {
+            background-color: $grid-chrome-text;
+        }
+    }
+
     .k-grid {
         background-clip: padding-box;
 
@@ -88,16 +98,6 @@
             .k-icon {
                 color: $grid-chrome-text;
                 text-decoration: none;
-            }
-        }
-
-        .k-grouping-dropclue {
-            &::before {
-                border-color: $grid-chrome-text transparent transparent;
-            }
-
-            &::after {
-                background-color: $grid-chrome-text;
             }
         }
 

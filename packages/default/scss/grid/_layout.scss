@@ -308,6 +308,23 @@
         border-color: inherit;
         line-height: button-size();
     }
+
+    .k-grouping-header-flex {
+        display: flex;
+        flex-shrink: 0;
+        padding: 0;
+
+        > .k-indicator-container {
+            display: inline-flex;
+            margin: 0;
+            padding: $padding-y 0 $padding-y $padding-x;
+
+            &:last-child {
+                flex-grow: 1;
+            }
+        }
+    }
+
     .k-group-indicator,
     .k-drag-clue {
         @include border-radius();
