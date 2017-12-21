@@ -36,6 +36,19 @@
         }
     }
 
+    .k-icon-with-modifier {
+        position: relative;
+        margin: .25em;
+    }
+
+    .k-icon-modifier {
+        position: absolute;
+        font-size: .5em;
+        bottom: 0;
+        right: 0;
+        margin: 0 -.5em -.5em 0;
+    }
+
     .k-i-none::before {
         content: "";
         display: none;
