@@ -1,0 +1,10 @@
+@include exports("autocomplete/theme") {
+    .k-autocomplete {
+        border-width: 0 0 $input-border-width;
+
+        &.k-state-focused {
+            border-color: $input-focused-border;
+        }
+    }
+}
+
