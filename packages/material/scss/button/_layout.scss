@@ -4,10 +4,6 @@ $outline-button-border-width: 2px;
 
 @import "~@progress/kendo-theme-default/scss/button/layout";
 
-.k-button:not(.k-button-icon) {
-    min-width: 88px;
-}
-
 .k-button.k-outline {
     &::before {
         content: "";

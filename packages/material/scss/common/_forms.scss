@@ -9,6 +9,7 @@
         border: 0;
     }
 
+    .k-autocomplete,
     .k-dateinput-wrap,
     .k-dropdown-wrap,
     .k-picker-wrap,
@@ -22,6 +23,21 @@
 
         .k-select {
             border-width: 0;
+        }
+    }
+
+    .k-autocomplete,
+    .k-dropdown-wrap {
+        .k-clear-value,
+        .k-i-loading {
+            top: 4px;
+            width: 24px;
+        }
+    }
+
+    .k-dropdown-wrap {
+        .k-clear-value {
+            right: 24px;
         }
     }
 

@@ -1,0 +1,48 @@
+@include exports("multiselect/theme") {
+    $multiselect-item-bg: rgba( $base-text, .07 ) !default;
+    $multiselect-item-disabled-text: rgba( $base-text, .42 ) !default;
+    $item-spacing: 5px;
+
+    .k-multiselect {
+        .k-multiselect-wrap {
+            min-height: 0;
+            padding-right: $icon-size;
+        }
+
+        .k-clear-value {
+            top: 4px;
+            width: 24px;
+        }
+
+        .k-button {
+            box-shadow: none;
+            background-color: $multiselect-item-bg;
+            font-size: .857em;
+            border-radius: 1em;
+            line-height: $line-height;
+            margin: $item-spacing $item-spacing 0 0;
+
+            &.k-state-disabled {
+                color: $multiselect-item-disabled-text;
+            }
+
+            .k-select {
+                border-radius: 50%;
+                background-color: #aaa;
+                color: #ddd;
+                margin-left: .5em;
+
+                .k-icon {
+                    font-size: $font-size-sm;
+                    padding: add-two($font-size, -$font-size-sm);
+                }
+
+                &:hover {
+                    background-color: rgba( $base-text, .54 );
+                    color: $base-bg;
+                }
+            }
+        }
+    }
+
+}

@@ -1,6 +1,8 @@
 @include exports("autocomplete/theme") {
     .k-autocomplete {
-        border-width: 0 0 $input-border-width;
+        .k-input {
+            height: 1.643em;
+        }
 
         &.k-state-focused {
             border-color: $input-focused-border;
