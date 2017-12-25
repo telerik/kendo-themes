@@ -5,6 +5,10 @@
         @include input-ripple();
     }
 
+    .k-picker-wrap .k-dateinput-wrap {
+        border: none;
+    }
+
     .k-dateinput-wrap,
     .k-dropdown-wrap,
     .k-picker-wrap,

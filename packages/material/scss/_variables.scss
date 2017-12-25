@@ -318,7 +318,7 @@ $input-hovered-shadow: null !default;
 
 $input-focused-text: $input-text !default;
 $input-focused-bg: $input-bg !default;
-$input-focused-border: $input-hovered-border !default;
+$input-focused-border: rgba( $hovered-border, .48 ) !default;
 $input-focused-shadow: none !default;
 
 

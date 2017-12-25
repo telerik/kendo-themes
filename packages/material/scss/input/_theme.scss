@@ -5,9 +5,18 @@
     .k-input.k-textbox,
     .k-textarea {
         background-color: transparent;
+        border-color: $border-color;
         border-width: 0 0 $input-border-width;
         border-radius: 0;
         box-shadow: none;
+
+        &:focus {
+            border-color: $input-focused-border;
+        }
+
+        &:disabled {
+            border-style: dashed;
+        }
 
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
@@ -22,6 +31,11 @@
     // Floating label
     .k-textbox-container {
         vertical-align: top;
+
+        > .k-widget {
+            flex: 1 1 auto;
+            width: auto;
+        }
 
         > .k-label {
             color: $floating-label-color;
