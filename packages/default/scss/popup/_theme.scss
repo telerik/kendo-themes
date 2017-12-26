@@ -47,7 +47,7 @@ $list-container-no-data-text: rgba( $text-color, .5 ) !default;
         @include appearance( hovered-list-item );
 
         &.k-state-selected {
-            color: $selected-text;
+            color: $list-item-selected-text;
             background-color: blend-multiply( $list-item-selected-bg, $list-item-hovered-bg );
         }
     }
