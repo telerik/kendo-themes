@@ -43,7 +43,8 @@ $list-container-no-data-text: rgba( $text-color, .5 ) !default;
     }
 
     .k-list .k-item:hover,
-    .k-list .k-item.k-state-hover {
+    .k-list .k-item.k-state-hover,
+    .k-list-optionlabel:hover {
         @include appearance( hovered-list-item );
 
         &.k-state-selected {
@@ -57,13 +58,9 @@ $list-container-no-data-text: rgba( $text-color, .5 ) !default;
         @include appearance( focused-list-item );
     }
 
-    .k-list .k-item.k-state-selected {
+    .k-list .k-item.k-state-selected,
+    .k-list-optionlabel.k-state-selected {
         @include appearance( selected-list-item );
-    }
-
-    .k-list-optionlabel {
-        border-color: $popup-border;
-        box-shadow: $list-container-shadow;
     }
 
     .k-animation-container {
