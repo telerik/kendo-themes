@@ -22,6 +22,11 @@
         background-color: transparent;
         font-size: $font-size-lg;
 
+        &.k-state-focused,
+        .k-state-focused > & {
+            border-color: $input-focused-border;
+        }
+
         .k-input {
             // matches button-inner-height, due to font-size-lg
             height: add-two( 2 * $button-padding-y, 1.75em );
