@@ -3,6 +3,7 @@
         .k-input {
             // compensates for font-size-lg on inputs
             height: 1.5em;
+            color: $input-text;
         }
 
         &.k-state-focused {

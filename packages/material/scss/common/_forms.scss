@@ -25,6 +25,7 @@
         .k-input {
             // matches button-inner-height, due to font-size-lg
             height: add-two( 2 * $button-padding-y, 1.75em );
+            color: $input-text;
         }
 
         .k-select {
