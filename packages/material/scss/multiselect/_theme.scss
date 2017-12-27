@@ -1,6 +1,10 @@
 @include exports("multiselect/theme") {
     $multiselect-item-bg: rgba( $base-text, .07 ) !default;
     $multiselect-item-disabled-text: rgba( $base-text, .42 ) !default;
+    $multiselect-remove-bg: rgba( $base-text, .3 ) !default;
+    $multiselect-remove-color: $base-bg !default;
+    $multiselect-remove-hover-bg: rgba( $base-text, .4 ) !default;
+    $multiselect-remove-hover-color: $multiselect-remove-color !default;
 
     .k-multiselect {
         .k-multiselect-wrap {
@@ -27,8 +31,8 @@
 
             .k-select {
                 border-radius: 50%;
-                background-color: #aaa;
-                color: #ddd;
+                background-color: $multiselect-remove-bg;
+                color: $multiselect-remove-color;
                 margin-left: .5em;
 
                 .k-icon {
@@ -38,8 +42,8 @@
                 }
 
                 &:hover {
-                    background-color: rgba( $base-text, .54 );
-                    color: $base-bg;
+                    background-color: $multiselect-remove-hover-bg;
+                    color: $multiselect-remove-hover-color;
                 }
             }
         }
