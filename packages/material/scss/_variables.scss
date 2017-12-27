@@ -21,7 +21,7 @@ $font-family-monospace: Consolas, "Ubuntu Mono", "Lucida Console", "Courier New"
 
 $font-size-xs: 10px !default;
 $font-size-sm: 12px !default;
-$font-size-lg: 19px !default;
+$font-size-lg: 16px !default;
 
 /// Line height used along with $font-size.
 $line-height: (28 / 14) !default;
@@ -71,7 +71,7 @@ $input-default-width: 200px !default;
 
 $input-border-width: 1px !default;
 $input-padding-x: 0 !default;
-$input-padding-y: 7px !default;
+$input-padding-y: 6px !default;
 $input-padding-x-sm: $input-padding-x / 2 !default;
 $input-padding-y-sm: $input-padding-y / 2 !default;
 $input-calc-size: #{$form-line-height-em} + #{$input-padding-y * 2} + 2px;

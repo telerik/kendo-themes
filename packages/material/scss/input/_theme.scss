@@ -9,6 +9,7 @@
         border-width: 0 0 $input-border-width;
         border-radius: 0;
         box-shadow: none;
+        font-size: $font-size-lg;
 
         &:focus {
             border-color: $input-focused-border;

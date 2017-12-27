@@ -1,7 +1,8 @@
 @include exports("autocomplete/theme") {
     .k-autocomplete {
         .k-input {
-            height: 1.643em;
+            // compensates for font-size-lg on inputs
+            height: 1.5em;
         }
 
         &.k-state-focused {

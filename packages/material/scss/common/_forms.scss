@@ -20,24 +20,35 @@
         border-style: solid;
         border-color: $border-color;
         background-color: transparent;
+        font-size: $font-size-lg;
+
+        .k-input {
+            // matches button-inner-height, due to font-size-lg
+            height: add-two( 2 * $button-padding-y, 1.75em );
+        }
 
         .k-select {
             border-width: 0;
+            font-size: $font-size;
         }
+    }
+
+    .k-autocomplete .k-input {
+        height: 1.5em;
     }
 
     .k-autocomplete,
     .k-dropdown-wrap {
         .k-clear-value,
         .k-i-loading {
-            top: 4px;
-            width: 24px;
+            top: $padding-y;
+            width: $padding-x-lg;
         }
     }
 
     .k-dropdown-wrap {
         .k-clear-value {
-            right: 24px;
+            right: $padding-x-lg;
         }
     }
 
