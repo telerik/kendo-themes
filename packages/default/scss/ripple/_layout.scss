@@ -1,4 +1,7 @@
 @include exports( 'ripple/layout' ) {
+    .k-ripple-target {
+        position: relative;
+    }
 
     .k-ripple {
         position: absolute;
