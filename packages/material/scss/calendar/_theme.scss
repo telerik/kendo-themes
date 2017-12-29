@@ -1,1 +1,12 @@
 @import "~@progress/kendo-theme-default/scss/calendar/theme";
+
+@include exports('calendar/theme/material') {
+    .k-calendar-view {
+        .k-calendar-header {
+            .k-today {
+                font-weight: bold;
+                padding: 0;
+            }
+        }
+    }
+}

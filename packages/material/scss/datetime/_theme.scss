@@ -1,0 +1,105 @@
+@include exports("datetime/theme") {
+    $dateinput-text: $panel-text !default;
+    $uppercase-text: uppercase;
+
+    .k-textbox-container {
+        @include input-ripple();
+    }
+
+    // Shared
+    .k-datepicker,
+    .k-timepicker,
+    .k-datetimepicker {
+        .k-picker-wrap {
+
+            &.k-state-focused {
+                border-color: $input-focused-border;
+            }
+        }
+    }
+
+    // Timepicker
+    .k-timepicker {}
+
+    .k-timeselector {
+        border-color: inherit;
+    }
+
+    .k-timeselector {
+        .k-time-header {
+            padding: $padding-x-sm add-two($padding-x, 2px);
+
+            .k-title {
+                font-weight: bold;
+                color: $dateinput-text;
+            }
+
+            .k-time-now {
+                color: $action-button-text;
+                cursor: pointer;
+                text-transform: $uppercase-text;
+                font-weight: bold;
+                padding: 0;
+                min-width: auto;
+
+                &:hover,
+                &:focus {
+                    color: $link-hover-text;
+                }
+
+                &::before {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .k-time-list-wrapper {
+            .k-title {
+                color: $dateinput-text;
+                text-transform: $uppercase-text;
+                opacity: .3;
+                z-index: 99;
+            }
+
+            &.k-state-focused {
+                .k-title {
+                    color: $dateinput-text;
+                    opacity: 1;
+                }
+
+                &::before,
+                &::after {
+                    border-width: 0;
+                }
+            }
+
+            .k-time-list {
+                .k-item:hover {
+                    @include appearance( hovered-node );
+                }
+
+                &::before,
+                &::after {
+                    $shadow-size: 3em;
+                    box-shadow: 0 0 $shadow-size ($shadow-size) $popup-bg;
+                }
+            }
+        }
+
+        .k-time-list-container {
+            .k-time-separator {
+                display: none;
+            }
+        }
+    }
+
+    .k-time-container {
+        background: transparent;
+    }
+
+    .k-time-highlight {
+        background-color: $bg-color;
+        border-color: $widget-border;
+    }
+}
+
