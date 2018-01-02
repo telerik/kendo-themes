@@ -563,7 +563,10 @@
     .k-filter-row {
         line-height: $form-line-height;
 
+        td,
         th {
+            border-width: 0 0 1px 1px;
+            white-space: nowrap;
             padding: $cell-padding-y;
         }
 
