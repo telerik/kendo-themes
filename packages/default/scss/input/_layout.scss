@@ -236,7 +236,8 @@
     .k-checkbox-label::after,
     .k-radio-label::before,
     .k-radio-label::after {
-        font: $icon-size/1 "WebComponentsIcons", monospace;
+        font-size: $icon-size;
+        font-family: "WebComponentsIcons", monospace;
         box-sizing: border-box;
         text-align: center;
         display: inline-flex;

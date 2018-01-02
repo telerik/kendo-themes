@@ -2,7 +2,7 @@
 
     // Base
     .k-toolbar {
-        padding: $toolbar-padding-y $toolbar-padding-x/2;
+        padding: $toolbar-padding-y ($toolbar-padding-x / 2);
         line-height: $form-line-height;
         display: flex;
         flex-direction: row;
@@ -21,7 +21,7 @@
             align-items: stretch;
             align-content: center;
             vertical-align: middle;
-            margin: 0 $toolbar-padding-x/2;
+            margin: 0 ($toolbar-padding-x / 2);
         }
 
         .k-button,
