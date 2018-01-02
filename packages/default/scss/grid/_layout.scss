@@ -383,6 +383,7 @@
         width: ($group-dropclue-size * 2);
         height: button-size();
         position: absolute;
+        box-sizing: content-box;
 
         &::before,
         &::after {
