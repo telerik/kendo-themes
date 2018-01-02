@@ -318,6 +318,7 @@
             display: inline-flex;
             margin: 0;
             padding: $padding-y 0 $padding-y $padding-x;
+            line-height: 1.5 * $form-line-height-em;
 
             &:last-child {
                 flex-grow: 1;
