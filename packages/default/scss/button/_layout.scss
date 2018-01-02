@@ -301,4 +301,47 @@
 
     }
 
+    // RTL
+    .k-rtl {
+        // Button group
+        .k-button-group {
+
+            .k-button ~ .k-button {
+                margin-right: -$button-border-width;
+                margin-left: 0;
+            }
+
+            .k-button {
+                @include border-radius( 0 );
+            }
+
+            .k-group-start,
+            .k-button:first-child {
+                @include border-right-radius();
+            }
+            .k-group-end,
+            .k-button:last-child {
+                @include border-left-radius();
+            }
+            .k-group-start.k-group-end,
+            .k-button:first-child:last-child {
+                @include border-radius();
+            }
+
+        }
+
+        // Split button
+        .k-split-button {
+
+            .k-button {
+                @include border-right-radius-only();
+            }
+            .k-split-button-arrow {
+                @include border-left-radius-only();
+                margin-left: 0;
+                margin-right: -1px;
+            }
+        }
+    }
+
 }
