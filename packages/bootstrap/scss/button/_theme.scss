@@ -177,4 +177,11 @@
             box-shadow: $primary-button-focused-shadow;
         }
     }
+
+
+    // Badge
+    .k-badge {
+        background-color: $accent;
+        color: $accent-contrast;
+    }
 }
