@@ -115,6 +115,24 @@
     .k-flip-h.k-flip-v { transform: scale(-1, -1); }
 
 
+    // Badge
+    .k-badge {
+        height: 2em;
+        min-width: .9em;
+        position: absolute;
+        top: -1em;
+        right: -1em;
+        font-size: .6rem;
+        line-height: 2em;
+        margin-left: .5em;
+        padding: 0 .55em;
+        border-radius: 5em;
+        text-align: center;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+
     // Dirty indicator
     .k-dirty {
         margin: 0;

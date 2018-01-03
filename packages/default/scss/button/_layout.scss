@@ -126,11 +126,15 @@
         vertical-align: middle;
         position: relative;
 
+        .k-item {
+            position: relative;
+        }
+        .k-item ~ .k-item {
+            margin-left: -$button-border-width;
+        }
+
         .k-button {
             @include border-radius( 0 );
-        }
-        .k-button ~ .k-button {
-            margin-left: -$button-border-width;
         }
 
         .k-button:hover,
@@ -140,15 +144,15 @@
         }
 
         .k-group-start,
-        .k-button:first-child {
+        .k-item:first-child .k-button {
             @include border-left-radius();
         }
         .k-group-end,
-        .k-button:last-child {
+        .k-item:last-child .k-button {
             @include border-right-radius();
         }
         .k-group-start.k-group-end,
-        .k-button:first-child:last-child {
+        .k-item:first-child:last-child .k-button {
             @include border-radius();
         }
 
@@ -168,7 +172,7 @@
     .k-button-group-stretched {
         display: flex;
 
-        > .k-button {
+        .k-item > .k-button {
             display: inline-block;
             flex: 1 1 0;
             overflow: hidden;
