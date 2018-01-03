@@ -143,6 +143,34 @@
                        scale($floating-label-scale);
             // sass-lint:enable indentation
         }
+
+        .k-rtl &,
+        &[dir='rtl'] {
+
+            > .k-label {
+                left: auto;
+                right: add-two($input-padding-x, $input-border-width);
+            }
+
+            &.k-state-empty {
+                > .k-label {
+                    transform: translate( 0, 0 ) scale( 1 );
+                }
+            }
+
+            > .k-label,
+            &.k-state-focused > .k-label {
+                $half-scale-percent: ((1 - $floating-label-scale) * 100% / 2);
+
+                // sass-lint:disable indentation
+                $fls: -$floating-label-scale;
+                transform: translate($input-padding-x,    $fls * $input-padding-y)
+                            translate($input-border-width, $fls * $textbox-line-height)
+                            translate($half-scale-percent, $fls * $half-scale-percent)
+                            scale($floating-label-scale);
+                // sass-lint:enable indentation
+            }
+        }
     }
 
 
