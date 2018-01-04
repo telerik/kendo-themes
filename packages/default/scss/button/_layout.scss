@@ -310,25 +310,25 @@
         // Button group
         .k-button-group {
 
-            .k-button ~ .k-button {
+            .k-item ~ .k-item {
                 margin-right: -$button-border-width;
                 margin-left: 0;
             }
 
-            .k-button {
+            .k-item .k-button {
                 @include border-radius( 0 );
             }
 
             .k-group-start,
-            .k-button:first-child {
+            .k-item:first-child  .k-button {
                 @include border-right-radius();
             }
             .k-group-end,
-            .k-button:last-child {
+            .k-item:last-child .k-button {
                 @include border-left-radius();
             }
             .k-group-start.k-group-end,
-            .k-button:first-child:last-child {
+            .k-item:first-child:last-child .k-button {
                 @include border-radius();
             }
 
