@@ -30,6 +30,12 @@
             flex: 1 1 auto;
             overflow: hidden;
         }
+        
+        .k-grid-aria-root {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
 
         table {
             margin: 0;
