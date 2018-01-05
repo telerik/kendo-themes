@@ -117,7 +117,8 @@
 
     // Badge
     .k-badge {
-        min-width: 1em*$line-height-lg;
+        min-width: 1.5em*$line-height-lg;
+        max-width: 100%;
         line-height: $line-height-lg;
         font-size: $font-size-xs;
         position: absolute;
@@ -129,6 +130,7 @@
         color: $accent-contrast;
         text-align: center;
         overflow: hidden;
+        text-overflow: ellipsis;
         box-sizing: border-box;
         z-index: 5;
     }
