@@ -144,7 +144,10 @@
         }
 
         &.k-state-disabled .k-button,
-        .k-state-disabled {
+        [disabled],
+        .k-state-disabled,
+        .k-state-disabled:hover,
+        .k-state-disabled:focus {
             pointer-events: auto;
         }
 
