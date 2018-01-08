@@ -105,10 +105,20 @@
 
         // Selected hover state
         .k-button:active:hover,
-        .k-button.k-state-active:hover
+        .k-button.k-state-active:hover,
         > input[type="radio"]:hover + .k-button,
         > input[type="checkbox"]:hover + .k-button {
             @include fill( $selected-text, $selected-bg, $selected-border, none );
+        }
+
+        // Disabled state
+        &.k-state-disabled .k-button,
+        .k-state-disabled {
+
+            &:not(.k-state-active),
+            &:not(.k-state-active):hover {
+                @include fill( $button-text, $button-bg, $button-border, $button-gradient );
+            }
         }
 
     }

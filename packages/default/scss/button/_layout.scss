@@ -143,6 +143,11 @@
             z-index: 2;
         }
 
+        &.k-state-disabled .k-button,
+        .k-state-disabled {
+            pointer-events: auto;
+        }
+
         .k-group-start,
         .k-item:first-child .k-button {
             @include border-left-radius();
