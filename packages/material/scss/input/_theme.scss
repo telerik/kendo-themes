@@ -29,6 +29,13 @@
         }
     }
 
+    // Textarea
+    .k-textarea {
+        border-width: $input-border-width;
+        border-radius: $border-radius;
+        padding: $textarea-indent-padding;
+    }
+
     // Floating label
     .k-textbox-container {
         vertical-align: top;
@@ -49,6 +56,37 @@
         .ng-invalid.ng-touched + .k-label,
         .ng-invalid.ng-dirty + .k-label {
             color: $error;
+        }
+
+        // Textarea Floating label
+        &.k-textarea-wrapper {
+            .k-textarea {
+                padding-top: 2 *  $textarea-indent-padding;
+
+                &:focus {
+                    border-color: $accent;
+                    border-width: $input-border-width;
+                }
+            }
+
+            .k-label {
+                padding: $textarea-label-padding 0 0 $textarea-label-padding;
+            }
+
+            &.k-state-empty {
+                .k-label {
+                    padding-top: $textarea-indent-padding;
+                }
+            }
+
+            .k-label,
+            &.k-state-focused > .k-label {
+                padding-top: $textarea-floating-label-padding;
+            }
+
+            &::after {
+                display: none;
+            }
         }
     }
 }
