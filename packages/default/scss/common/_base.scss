@@ -117,15 +117,11 @@
 
     // Badge
     .k-badge {
-        min-width: 1.5em*$line-height-lg;
-        max-width: 100%;
         line-height: $line-height-lg;
         font-size: $font-size-xs;
-        position: absolute;
-        top: -0.5em*$line-height-lg;
-        right: -0.5em*$line-height-lg;
+        margin-left: $padding-x-sm;
         padding: 0 $padding-x-sm;
-        border-radius: 0.5em*$line-height-lg;
+        border-radius: $border-radius;
         background-color: $accent;
         color: $accent-contrast;
         text-align: center;
