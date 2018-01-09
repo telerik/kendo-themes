@@ -126,15 +126,12 @@
         vertical-align: middle;
         position: relative;
 
-        .k-item {
-            position: relative;
-        }
-        .k-item ~ .k-item {
-            margin-left: -$button-border-width;
-        }
-
         .k-button {
             @include border-radius( 0 );
+            position: relative;
+        }
+        .k-button ~ .k-button {
+            margin-left: -$button-border-width;
         }
 
         .k-button:hover,
