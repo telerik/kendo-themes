@@ -149,15 +149,15 @@
         }
 
         .k-group-start,
-        .k-item:first-child .k-button {
+        .k-button:first-child {
             @include border-left-radius();
         }
         .k-group-end,
-        .k-item:last-child .k-button {
+        .k-button:last-child {
             @include border-right-radius();
         }
         .k-group-start.k-group-end,
-        .k-item:first-child:last-child .k-button {
+        .k-button:first-child:last-child {
             @include border-radius();
         }
 
@@ -177,7 +177,7 @@
     .k-button-group-stretched {
         display: flex;
 
-        .k-item > .k-button {
+        .k-button {
             display: inline-block;
             flex: 1 1 0;
             overflow: hidden;
@@ -315,25 +315,25 @@
         // Button group
         .k-button-group {
 
-            .k-item ~ .k-item {
+            .k-button ~ .k-button {
                 margin-right: -$button-border-width;
                 margin-left: 0;
             }
 
-            .k-item .k-button {
+            .k-button {
                 @include border-radius( 0 );
             }
 
             .k-group-start,
-            .k-item:first-child  .k-button {
+            .k-button:first-child {
                 @include border-right-radius();
             }
             .k-group-end,
-            .k-item:last-child .k-button {
+            .k-button:last-child {
                 @include border-left-radius();
             }
             .k-group-start.k-group-end,
-            .k-item:first-child:last-child .k-button {
+            .k-button:first-child:last-child {
                 @include border-radius();
             }
 
