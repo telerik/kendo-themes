@@ -61,7 +61,7 @@
         // Textarea Floating label
         &.k-textarea-wrapper {
             .k-textarea {
-                padding-top: 2 *  $textarea-indent-padding;
+                padding-top: 2 * $textarea-indent-padding;
 
                 &:focus {
                     border-color: $accent;
@@ -86,6 +86,33 @@
 
             &::after {
                 display: none;
+            }
+        }
+
+        .k-rtl &,
+        &[dir='rtl'] {
+
+            &.k-textarea-wrapper {
+                .k-textarea {
+                    padding-top: 2 * $textarea-indent-padding;
+                }
+
+                &.k-state-empty {
+                    .k-label {
+                        padding-right: $textarea-floating-label-padding;
+                    }
+                }
+
+                > .k-label {
+                    left: auto;
+                    right: - add-two($textarea-indent-padding, $input-border-width);
+                    padding-right: $textarea-label-padding;
+                }
+
+                > .k-label,
+                &.k-state-focused > .k-label {
+                    padding-right: 0;
+                }
             }
         }
     }
