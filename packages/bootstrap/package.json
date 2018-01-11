@@ -66,13 +66,13 @@
     }
   },
   "peerDependencies": {
-    "bootstrap": "4.0.0-beta.2"
+    "bootstrap": "4.0.0"
   },
   "dependencies": {
     "@progress/kendo-theme-default": "^2.0.0"
   },
   "devDependencies": {
-    "bootstrap": "4.0.0-beta.2",
+    "bootstrap": "4.0.0",
     "@telerik/kendo-common-tasks": "^3.0.0",
     "@telerik/semantic-prerelease": "^1.0.0",
     "cz-conventional-changelog": "^1.1.5",
