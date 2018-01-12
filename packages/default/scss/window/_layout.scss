@@ -55,11 +55,6 @@
         flex-shrink: 0;
         align-items: center;
         vertical-align: top;
-
-        .k-button {
-            margin-top: calc(#{-1*$button-padding-y} - 1px);
-            margin-bottom: calc(#{-1*$button-padding-y} - 1px);
-        }
     }
 
 
