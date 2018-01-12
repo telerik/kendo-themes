@@ -26,6 +26,8 @@ before_install:
 before_script:
   - git fetch --unshallow origin refs/heads/master:refs/remotes/origin/master
   - npm prune
+  - "sudo chown root /opt/google/chrome/chrome-sandbox"
+  - "sudo chmod 4755 /opt/google/chrome/chrome-sandbox"
 after_success:
   - npm run semantic-release
 branches:
@@ -33,6 +35,3 @@ branches:
     - "/^v\\d+\\.\\d+\\.\\d+(\\-.*)?$/"
 # Work around Travis failures
 dist: trusty
-before_script:
-  - "sudo chown root /opt/google/chrome/chrome-sandbox"
-  - "sudo chmod 4755 /opt/google/chrome/chrome-sandbox"
