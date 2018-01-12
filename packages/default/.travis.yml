@@ -1,4 +1,4 @@
-sudo: false
+sudo: required
 language: node_js
 cache:
   directories:
@@ -20,6 +20,7 @@ addons:
     packages:
       - g++-4.8
       - git
+  chrome: stable
 before_install:
   - npm i -g npm@^3.8.0
 before_script:
@@ -30,3 +31,8 @@ after_success:
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+(\\-.*)?$/"
+# Work around Travis failures
+dist: trusty
+before_script:
+  - "sudo chown root /opt/google/chrome/chrome-sandbox"
+  - "sudo chmod 4755 /opt/google/chrome/chrome-sandbox"
