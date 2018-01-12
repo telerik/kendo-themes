@@ -47,17 +47,14 @@
 
     // Actions
     .k-window-actions {
+        margin-top: add-two(-$button-padding-y, -$button-border-width);
+        margin-bottom: add-two(-$button-padding-y, -$button-border-width);
         line-height: 1;
         display: flex;
         flex-direction: row;
         flex-shrink: 0;
         align-items: center;
         vertical-align: top;
-
-        .k-button {
-            margin-top: calc(#{-1*$button-padding-y} - 1px);
-            margin-bottom: calc(#{-1*$button-padding-y} - 1px);
-        }
     }
 
 
