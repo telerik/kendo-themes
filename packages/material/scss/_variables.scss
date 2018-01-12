@@ -130,7 +130,7 @@ $secondary: #3193ee !default;
 /// Used to provide contrast between the background and foreground colors.
 $secondary-contrast: #ffffff !default;
 
-$text-color: rgba(black, .4) !default; // TODO: use opaque color
+$text-color: #999999 !default;
 $bg-color: #ffffff !default;
 $border-color: rgba( black, .12 ) !default;
 
@@ -300,8 +300,9 @@ $primary-button-focused-shadow: 0 3px 4px 0 rgba($accent, .4) !default;
 
 // Action buttons
 $action-button-text: rgba( $accent, .87 );
-$action-button-hovered-bg: rgba( $accent, .12 );
-$action-button-pressed-bg: rgba( $accent, .16 );
+$action-button-hovered-bg: rgba( $accent, 0.12 );
+$action-button-pressed-bg: rgba( $accent, 0.16 );
+$action-button-cancel-bg: rgba( black, 0.12 );
 
 // Toolbar
 $toolbar-text: $button-text !default;

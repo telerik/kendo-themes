@@ -1,24 +1,6 @@
 @include exports('action-buttons/theme') {
     .k-action-buttons {
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: center;
-        align-content: flex-end;
-        padding: $padding-y * 2 $padding-x 0;
-
-        .k-button:first-child { margin-right: $padding-x-sm; }
-
         .k-button {
-            border-radius: $border-radius;
-            color: $action-button-text;
-            text-transform: uppercase;
-            font-weight: bold;
-            flex: 0 1 auto;
-            align-self: center;
-            border-style: none;
-            box-shadow: none;
-            min-width: auto;
-            padding: 0 $padding-x-sm;
 
             &:hover {
                 background-color: $action-button-hovered-bg;
