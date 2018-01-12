@@ -1,4 +1,4 @@
-sudo: false
+sudo: required
 language: node_js
 cache:
   directories:
@@ -20,6 +20,7 @@ addons:
     packages:
       - g++-4.8
       - git
+  chrome: stable
 before_install:
   - npm i -g npm@^3.8.0
   - npm update @progress/kendo-theme-default
@@ -27,8 +28,12 @@ before_script:
   - git fetch --unshallow origin refs/heads/master:refs/remotes/origin/master
   - npm update
   - npm prune
+  - "sudo chown root /opt/google/chrome/chrome-sandbox"
+  - "sudo chmod 4755 /opt/google/chrome/chrome-sandbox"
 after_success:
   - npm run semantic-release
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+(\\-.*)?$/"
+# Work around Travis failures
+dist: trusty
