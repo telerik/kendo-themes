@@ -30,6 +30,9 @@ The following example previews Kendo UI components which are styled with the Boo
 {% platform_content react %}
 <script async src="{% asset_path react-theme-preview.js %}"></script>
 {% endplatform_content %}
+{% platform_content vue %}
+<script async src="{% asset_path vue-theme-preview.js %}"></script>
+{% endplatform_content %}
 
 ## Suggested Links
 
