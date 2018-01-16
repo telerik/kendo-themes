@@ -1,0 +1,96 @@
+@include exports("dialog/theme") {
+    $dialog-content-padding: 24px !default;
+    $dialog-text-opacity: .4 !default;
+
+    $dialog-button-width: $dialog-content-padding !default;
+
+    .k-dialog-wrapper {
+        .k-dialog {
+            // TODO
+            z-index: 10003;
+            border: none;
+            border-radius: $border-radius;
+        }
+
+        .k-dialog-titlebar {
+            .k-dialog-title {
+                padding: $dialog-content-padding;
+                font-weight: bold;
+                color: $base-text;
+            }
+        }
+
+        .k-dialog-actions {
+            position: absolute;
+            top: $dialog-content-padding;
+            right: $dialog-content-padding;
+
+            > .k-button-icon {
+                color: rgba($base-text, $dialog-text-opacity);
+                width: $dialog-button-width;
+                height: $dialog-button-width;
+
+                &:hover {
+                    color: $base-text;
+                }
+
+                &::before {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .k-content.k-dialog-content {
+            color: rgba($base-text, $dialog-text-opacity);
+            padding: 0 $dialog-content-padding $dialog-content-padding;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .k-dialog-buttongroup,
+        .k-dialog-buttongroup > .k-button {
+            border: none;
+            box-shadow: none;
+        }
+
+        .k-dialog-buttongroup {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            align-content: flex-end;
+            padding: $padding-y * 2;
+
+            .k-button {
+                border-radius: $border-radius;
+                color: rgba($base-text, $dialog-text-opacity);
+                flex: 0 1 auto;
+                align-self: center;
+                padding: 0 $padding-x;
+
+                &:first-child {
+                    margin-right: $padding-y * 2;
+                }
+
+                &:hover {
+                    background-color: $base-border;
+                }
+            }
+
+            .k-button.k-primary {
+                color: $accent;
+
+                &:hover {
+                    background-color: $action-button-hovered-bg;
+                }
+
+                &:active {
+                    color: $action-button-text;
+                    background-color: $action-button-pressed-bg;
+                }
+            }
+        }
+    }
+}
