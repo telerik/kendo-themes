@@ -485,5 +485,9 @@ $icon-spacing: ($spacer / 2) !default;
 
 $disabled-opacity: .65 !default;
 
+// Pager
+$pager-padding-x: $toolbar-padding-x !default;
+$pager-padding-y: $toolbar-padding-y !default;
+
 // import any default values from kendo-theme-default
 @import "~@progress/kendo-theme-default/scss/variables";
