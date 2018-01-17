@@ -415,3 +415,7 @@ $icon-spacing: 4px !default;
 // Disabled mixin variables
 $disabled-filter: grayscale(.1) !default;
 $disabled-opacity: .6 !default;
+
+// Pager
+$pager-padding-x: $toolbar-padding-x !default;
+$pager-padding-y: $toolbar-padding-y !default;

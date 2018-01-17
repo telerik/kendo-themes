@@ -2,7 +2,7 @@
     $pager-buttons-size: calc(#{$form-line-height-em} + 2px) !default; /// icon button size + 2px border (top and bottom)
 
     .k-pager-wrap {
-        padding: $toolbar-padding-y $toolbar-padding-x;
+        padding: $pager-padding-y $pager-padding-x;
         border-width: 1px;
         line-height: $form-line-height;
         display: flex;
