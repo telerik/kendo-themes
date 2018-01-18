@@ -164,6 +164,15 @@
 
         &.k-splitter-horizontal {
             flex-direction: row;
+
+            &[dir="rtl"] {
+                > .k-splitbar {
+                    > .k-collapse-next,
+                    > .k-collapse-prev {
+                        transform: scaleX(-1);
+                    }
+                }
+            }
         }
         &.k-splitter-vertical {
             flex-direction: column;
