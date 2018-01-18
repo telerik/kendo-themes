@@ -1,20 +1,20 @@
-@include exports("pager/theme") {
+    @include exports("pager/theme") {
     $pager-text: $header-text !default;
     $pager-bg: $header-bg !default;
     $pager-items-hover-bg: $list-item-hovered-bg !default;
     $pager-numbers-text: $accent !default;
-    $pager-numbers-selected-text: $accent-contrast !default;
+    $pager-labels-text: rgba(0, 0, 0, .54) !default;
 
     .k-pager-wrap {
-        color: $pager-text;
+        color: $pager-labels-text;
         background-color: $pager-bg;
-        padding: $toolbar-padding-x / 2;
 
         .k-link,
         .k-pager-nav {
             &:focus {
                 box-shadow: $list-item-focused-shadow;
             }
+
             &:hover {
                 background-color: $pager-items-hover-bg;
             }
@@ -24,6 +24,7 @@
             &:focus {
                 box-shadow: none;
             }
+
             &:hover {
                 color: $selected-text;
                 background-color: $selected-bg;
@@ -31,22 +32,18 @@
             }
         }
 
+        .k-pager-nav,
         .k-pager-numbers .k-link,
         .k-pager-numbers .k-state-selected,
-        .k-pager-nav,
         > .k-link {
             border-radius: 50%;
         }
 
-        .k-pager-numbers,
-        .k-pager-sizes {
-            margin: 0 $padding-x / 2 0 $padding-x / 2;
-        }
-
-        .k-pager-nav {
-            opacity: .54;
+        .k-i-reload {
+            color: $pager-labels-text;
         }
     }
+
     .k-pager-numbers {
         .k-link,
         .k-link:link {
@@ -55,6 +52,52 @@
             &.k-state-selected {
                 color: $accent-contrast;
             }
+        }
+    }
+}
+
+$pager-nav-padding: 6px !default;
+$pager-elements-margin: 8px !default;
+$pager-elements-margin-lg: 32px !default;
+$pager-page-link-size: 36px !default;
+
+@include exports ('input/layout/pager/material') {
+    .k-pager-wrap {
+        padding: $pager-padding-y $pager-padding-x;
+
+        .k-icon {
+            width: $icon-size;
+            height: $icon-size;
+            line-height: $line-height-lg;
+        }
+
+        .k-pager-nav {
+            padding: $pager-nav-padding;
+            width: auto;
+            height: auto;
+        }
+
+        .k-pager-input,
+        .k-pager-numbers,
+        .k-pager-sizes {
+            margin: 0 $pager-elements-margin;
+        }
+
+        .k-pager-sizes > .k-dropdown {
+            margin: 0 $pager-elements-margin 0 0;
+        }
+
+        .k-pager-info {
+            margin: 0 $pager-elements-margin-lg;
+        }
+    }
+
+    .k-pager-numbers {
+        .k-link,
+        .k-state-selected {
+            padding: 0;
+            width: $pager-page-link-size;
+            height: $pager-page-link-size;
         }
     }
 }
