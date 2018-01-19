@@ -5,9 +5,10 @@
 
 // Dependencies
 @import "common/all";
-@import "window";
+@import "button";
+// @import "edit-form";
 
 
 // Component
-@import "dialog/layout";
-@import "dialog/theme";
+@import "window/layout";
+@import "window/theme";

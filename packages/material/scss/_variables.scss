@@ -130,7 +130,7 @@ $secondary: #3193ee !default;
 /// Used to provide contrast between the background and foreground colors.
 $secondary-contrast: #ffffff !default;
 
-$text-color: #656565 !default;
+$text-color: rgba(black, .4) !default; // TODO: use opaque color
 $bg-color: #ffffff !default;
 $border-color: rgba( black, .12 ) !default;
 
