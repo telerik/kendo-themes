@@ -581,6 +581,10 @@
         .k-multiselect {
             height: auto;
         }
+
+        .k-filtercell .k-widget.k-sized-input {
+            flex: 0 1 auto;
+        }
     }
 
     .k-filtercell {
