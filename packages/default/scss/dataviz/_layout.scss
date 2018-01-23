@@ -53,6 +53,10 @@ $chart-title-font-size: 1.143em !default;
         transition: left ease-in 80ms, top ease-in 80ms;
     }
 
+    .k-chart-tooltip-wrapper > .k-popup {
+        padding: 0;
+    }
+
     .k-chart-tooltip table {
         border-spacing: 0;
         border-collapse: collapse;
