@@ -28,14 +28,11 @@
                 border-color: $pager-hover-border;
                 z-index: 2;
             }
-        }
 
-        .k-pager-nav,
-        .k-pager-numbers .k-link {
-            color: $link-text;
-
-            &:hover {
-                color: $link-hover-text;
+            &:focus {
+                box-shadow: $pagination-focus-box-shadow;
+                outline: 0;
+                z-index: 2;
             }
         }
 
