@@ -14,47 +14,63 @@ $enable-transitions: $enable-transitions !default;
 // Theme colors
 /// The color that focuses the user attention.
 /// Used for primary buttons and for elements of primary importance across the theme.
+/// @group color-system
 $accent: $primary !default;
 
 /// The color used along with the accent color denoted by $accent.
 /// Used to provide contrast between the background and foreground colors.
+/// @group color-system
 $accent-contrast: contrast-wcag( $accent ) !default;
 
 /// The color for error messages and states.
+/// @group color-system
 $success: $success !default;
 
 /// The color for warning messages and states.
+/// @group color-system
 $info: $info !default;
 
 /// The color for success messages and states.
+/// @group color-system
 $warning: $warning !default;
 
 /// The color for informational messages and states.
+/// @group color-system
 $error: $danger !default;
 
-$rgba-transparent: rgba( 0, 0, 0, 0 );
-
+/// Set a specific jump point for requesting color jumps
+/// @group color-system
 $color-level-step: $theme-color-interval !default;
+
+$rgba-transparent: rgba( 0, 0, 0, 0 );
 
 
 // Contrast
 /// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+/// @group color-system
 $yiq-threshold: $yiq-contrasted-threshold !default;
+
 /// Dark color for use in YIQ color contrast function.
+/// @group color-system
 $yiq-dark: $yiq-text-dark !default;
+
 /// Light color for use in YIQ color contrast function.
+/// @group color-system
 $yiq-light: $yiq-text-light !default;
 
 
 // Fonts
 
 /// Base font size across all components.
+/// @group fonts
 $font-size: $font-size-base !default;
 
 /// Font family across all components.
+/// @group fonts
 $font-family: $font-family-base !default;
 
 /// Font family for monospaced text. Used for styling the code.
+/// @group fonts
 $font-family-monospace:  $font-family-monospace !default;
 
 $font-size-xs: 0.75 * $font-size-base !default;
@@ -62,6 +78,7 @@ $font-size-sm: $font-size-sm !default;
 $font-size-lg: $font-size-lg !default;
 
 /// Line height used along with $font-size.
+/// @group fonts
 $line-height: $line-height-base !default;
 $line-height-sm: $line-height-sm !default;
 $line-height-lg: $line-height-lg !default;

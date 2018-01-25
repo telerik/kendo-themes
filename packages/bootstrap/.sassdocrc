@@ -6,6 +6,8 @@
         "friendlyName": "Bootstrap",
     },
     "groups": {
+        "color-system": "Color System",
+        "fonts": "Fonts",
         "charts": "Charts",
         "undefined": "Common"
     }
