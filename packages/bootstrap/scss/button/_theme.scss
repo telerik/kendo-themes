@@ -58,23 +58,25 @@
 
     // Outline default button
     .k-button.k-outline {
-        color: $button-border;
+        color: try-darken($button-bg, 20);
+        border-color: try-darken($button-bg, 20);
 
         // Hover state
         &:hover,
         &.k-state-hover {
-            @include fill( $button-bg, $button-border, $button-border, none );
+            @include fill( $button-text, $button-bg, $button-bg, none );
         }
     }
 
     // Outline primary button
     .k-button.k-outline.k-primary {
-        color: $primary-button-border;
+        color: $primary-button-bg;
+        border-color: $primary-button-bg;
 
         // Hover state
         &:hover,
         &.k-state-hover {
-            @include fill( $primary-button-text, $primary-button-border, $primary-button-bg, none );
+            @include fill( $primary-button-text, $primary-button-bg, $primary-button-bg, none );
         }
     }
 
