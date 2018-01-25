@@ -1,6 +1,7 @@
 @include exports("tooltip/theme") {
 
     .k-tooltip {
+        font-size: $tooltip-font-size;
         color: contrast-wcag($tooltip-bg);
         background-color: $tooltip-bg;
         @include border-radius($border-radius);
