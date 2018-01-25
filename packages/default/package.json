@@ -71,7 +71,7 @@
   "devDependencies": {
     "@telerik/kendo-common-tasks": "^3.0.0",
     "@telerik/semantic-prerelease": "^1.0.0",
-    "bootstrap": "4.0.0-beta.2",
+    "bootstrap": "4.0.0",
     "cz-conventional-changelog": "^1.1.5",
     "editorconfig-tools": "^0.1.1",
     "ghooks": "^1.0.3",
