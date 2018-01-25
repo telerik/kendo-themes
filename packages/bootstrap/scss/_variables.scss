@@ -11,6 +11,32 @@ $enable-gradients: $enable-gradients !default;
 $enable-transitions: $enable-transitions !default;
 
 
+// Theme colors
+/// The color that focuses the user attention.
+/// Used for primary buttons and for elements of primary importance across the theme.
+$accent: $primary !default;
+
+/// The color used along with the accent color denoted by $accent.
+/// Used to provide contrast between the background and foreground colors.
+$accent-contrast: contrast-wcag( $accent ) !default;
+
+/// The color for error messages and states.
+$success: $success !default;
+
+/// The color for warning messages and states.
+$info: $info !default;
+
+/// The color for success messages and states.
+$warning: $warning !default;
+
+/// The color for informational messages and states.
+$error: $danger !default;
+
+$rgba-transparent: rgba( 0, 0, 0, 0 );
+
+$color-level-step: $theme-color-interval !default;
+
+
 // Contrast
 /// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 $yiq-threshold: $yiq-contrasted-threshold !default;
@@ -117,29 +143,6 @@ $progressbar-height: $progress-height !default;
 
 $zindex-popup: 1;
 $zindex-window: 2;
-
-$rgba-transparent: rgba( 0, 0, 0, 0 );
-
-
-// Theme colors
-/// The color that focuses the user attention.
-/// Used for primary buttons and for elements of primary importance across the theme.
-$accent: $primary !default;
-
-/// The color used along with the accent color denoted by $accent.
-/// Used to provide contrast between the background and foreground colors.
-$accent-contrast: contrast-wcag( $accent ) !default;
-
-/// The color for error messages and states.
-$success: $success !default;
-/// The color for warning messages and states.
-$info: $info !default;
-/// The color for success messages and states.
-$warning: $warning !default;
-/// The color for informational messages and states.
-$error: $danger !default;
-
-$color-level-step: $theme-color-interval !default;
 
 $text-color: $body-color !default;
 $bg-color: $body-bg !default;
