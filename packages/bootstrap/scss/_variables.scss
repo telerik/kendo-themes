@@ -11,6 +11,15 @@ $enable-gradients: $enable-gradients !default;
 $enable-transitions: $enable-transitions !default;
 
 
+// Contrast
+/// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-threshold: $yiq-contrasted-threshold !default;
+/// Dark color for use in YIQ color contrast function.
+$yiq-dark: $yiq-text-dark !default;
+/// Light color for use in YIQ color contrast function.
+$yiq-light: $yiq-text-light !default;
+
+
 // Fonts
 
 /// Base font size across all components.
