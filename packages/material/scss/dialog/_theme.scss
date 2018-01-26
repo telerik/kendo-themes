@@ -1,24 +1,7 @@
 @include exports("dialog/theme") {
     .k-dialog-buttongroup {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: center;
-        align-content: flex-end;
-        box-shadow: none;
-        border: none;
-        padding: $window-content-padding;
-
         .k-button {
-            border-radius: $border-radius;
             color: $text-color;
-            flex: 0 1 auto;
-            align-self: center;
-            padding: 0 $padding-x;
-
-            &:first-child {
-                margin-right: $window-content-padding;
-            }
 
             &:hover {
                 background-color: $base-border;
@@ -26,7 +9,6 @@
         }
 
         .k-button.k-primary {
-            border: none;
             color: $accent;
 
             &:hover {

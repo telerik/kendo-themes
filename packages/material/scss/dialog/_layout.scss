@@ -1,1 +1,27 @@
 @import "~@progress/kendo-theme-default/scss/dialog/layout";
+
+@include exports("dialog/layout/material") {
+    .k-dialog-buttongroup {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: flex-end;
+        box-shadow: none;
+        border: none;
+        padding: $window-content-padding;
+
+        .k-button {
+            border-radius: $border-radius;
+            flex: 0 1 auto;
+            align-self: center;
+            padding: 0 $padding-x;
+            border: none;
+            transition: none;
+
+            &:first-child {
+                margin-right: $window-content-padding;
+            }
+        }
+    }
+}
