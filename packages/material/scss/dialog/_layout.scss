@@ -8,7 +8,7 @@
         align-items: center;
         align-content: flex-end;
         box-shadow: none;
-        border: none;
+        border-width: 0;
         padding: $window-content-padding;
 
         .k-button {
@@ -16,7 +16,7 @@
             flex: 0 1 auto;
             align-self: center;
             padding: 0 $padding-x;
-            border: none;
+            border-width: 0;
             transition: none;
 
             &:first-child {

@@ -7,7 +7,7 @@ $window-content-padding: $padding-y * 2 !default;
         border-radius: $border-radius;
 
         .k-window-titlebar {
-            border-bottom: none;
+            border-bottom-width: 0;
             padding: $window-button-width $window-button-width $window-content-padding * 2;
 
             .k-window-title {
@@ -42,7 +42,7 @@ $window-content-padding: $padding-y * 2 !default;
 
         .k-window-buttongroup,
         .k-window-buttongroup > .k-button {
-            border: none;
+            border-width: 0;
             box-shadow: none;
         }
     }
