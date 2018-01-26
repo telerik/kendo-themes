@@ -54,18 +54,12 @@
         .k-icon {
             font-size: $splitter-resize-icon-size;
             display: block;
+            cursor: pointer;
         }
     }
 
     .k-splitbar-draggable-horizontal { cursor: col-resize; }
     .k-splitbar-draggable-vertical { cursor: row-resize; }
-
-    .k-collapse-next,
-    .k-collapse-prev,
-    .k-expand-next,
-    .k-expand-prev {
-        cursor: pointer;
-    }
 
     .k-ghost-splitbar-horizontal,
     .k-splitbar-horizontal {
