@@ -28,7 +28,6 @@ For more information on how to implement the Material theme in your project, ref
 * [Using the Material Theme in jQuery Projects](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
 * [Customizing the Material Theme](https://github.com/telerik/kendo-theme-default/blob/13713a572b392806ca7c2950f77f9b033f87d8ea/README.md)
 
-*Copyright © 2017 Progress Software Corporation and/or its subsidiaries or affiliates. All Rights Reserved.*
+*Copyright © 2018 Progress Software Corporation and/or its subsidiaries or affiliates. All Rights Reserved.*
 
 *Progress, Telerik, and certain product names used herein are trademarks or registered trademarks of Progress Software Corporation and/or one of its subsidiaries or affiliates in the U.S. and/or other countries.*
-
