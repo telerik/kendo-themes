@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <title>Window</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/base/dist/all.css" />
+    <style>
+        body {
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="test-area">
+
+        <div class="k-widget k-window" data-role="draggable" style="padding-top: 45px; min-width: 90px; min-height: 50px;">
+            <div class="k-window-titlebar k-header" style="margin-top: -45px;">
+                <span class="k-window-title" id="window_wnd_title">Window Title</span>
+                <div class="k-window-actions">
+                    <a role="button" href="#" class="k-button k-bare k-button-icon k-window-action" aria-label="window-Minimize"><span class="k-icon k-i-window-minimize"></span></a>
+                    <a role="button" href="#" class="k-button k-bare k-button-icon k-window-action" aria-label="window-Maximize"><span class="k-icon k-i-window-maximize"></span></a>
+                </div>
+            </div>
+            <div id="window" data-role="window" class="k-window-content k-content" tabindex="0" role="dialog" aria-labelledby="window_wnd_title">
+                <p>Window content</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
