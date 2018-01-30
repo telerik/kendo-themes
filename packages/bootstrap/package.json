@@ -40,31 +40,6 @@
     "embed-assets": "bash ./build/embed-dependencies 'bootstrap' '@progress/kendo-theme-default' && npm run build",
     "semantic-release": "semantic-release pre && npm run embed-assets && semantic-prerelease publish && semantic-release post"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    },
-    "ghooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run test",
-      "commit-msg": "validate-commit-msg"
-    },
-    "validate-commit-msg": {
-      "types": [
-        "feat",
-        "fix",
-        "docs",
-        "style",
-        "refactor",
-        "perf",
-        "test",
-        "chore",
-        "revert"
-      ],
-      "warnOnFail": false,
-      "maxSubjectLength": 100
-    }
-  },
   "peerDependencies": {
     "bootstrap": "4.0.0"
   },
@@ -73,16 +48,10 @@
   },
   "devDependencies": {
     "bootstrap": "4.0.0",
-    "@telerik/kendo-common-tasks": "^3.0.0",
-    "@telerik/semantic-prerelease": "^1.0.0",
-    "cz-conventional-changelog": "^1.1.5",
-    "ghooks": "^1.0.3",
     "glob": "^7.0.5",
     "mime": "^1.3.4",
     "sass-lint": "^1.7.0",
     "sassdoc": "^2.1.20",
-    "semantic-release": "^4.3.5",
-    "validate-commit-msg": "^1.1.1",
     "webpack": "^1.13.1"
   }
 }
