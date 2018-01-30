@@ -79,6 +79,53 @@ var TestHelper = (function(){
         TestHelper.removeFixture();
     });
 
+
+    // Custom assertions
+    QUnit.assert.gt = function(a, b, message) {
+        var actual = a > b;
+        var expected = true;
+
+        this.pushResult({
+            result: actual === expected,
+            actual: actual,
+            expected: expected,
+            message: message || `${a} is not gt ${b}`
+        });
+    };
+    QUnit.assert.gte = function(a, b, message) {
+        var actual = a >= b;
+        var expected = true;
+
+        this.pushResult({
+            result: actual === expected,
+            actual: actual,
+            expected: expected,
+            message: message || `${a} is not gte ${b}`
+        });
+    };
+    QUnit.assert.lt = function(a, b, message) {
+        var actual = a < b;
+        var expected = true;
+
+        this.pushResult({
+            result: actual === expected,
+            actual: actual,
+            expected: expected,
+            message: message || `${a} is not lt ${b}`
+        });
+    };
+    QUnit.assert.lte = function(a, b, message) {
+        var actual = a <= b;
+        var expected = true;
+
+        this.pushResult({
+            result: actual === expected,
+            actual: actual,
+            expected: expected,
+            message: message || `${a} is not lte ${b}`
+        });
+    };
+
 })();
 
 

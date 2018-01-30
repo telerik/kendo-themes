@@ -1,4 +1,4 @@
-QUnit.module("Button size", {
+QUnit.module("Button", {
     beforeEach: function() {
         TestHelper.loadFixture( "/base/tests/fixtures/button.html" );
     },
@@ -8,15 +8,15 @@ QUnit.module("Button size", {
 });
 
 QUnit.test("Generic button height should be 30", function( assert ) {
-    var button = $("#button");
-    var buttonHeight = getHeight( button );
+    var $button = $("#button");
+    var buttonHeight = getHeight( $button );
 
     assert.equal( buttonHeight, metrics.button.height );
 });
 
 QUnit.test("Icon button size should be 30:30", function( assert ) {
-    var iconButton = $("#icon-button");
-    var iconButtonSize = getSize( iconButton );
+    var $iconButton = $("#icon-button");
+    var iconButtonSize = getSize( $iconButton );
 
     assert.equal( iconButtonSize.width, metrics.iconButton.width );
     assert.equal( iconButtonSize.height, metrics.iconButton.height );

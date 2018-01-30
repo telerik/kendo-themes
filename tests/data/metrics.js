@@ -53,7 +53,8 @@ var metrics = {
     "upload": {
         "height": 48,
         "button": {
-            "height": 30
+            "height": 30,
+            "minWIdth": 98
         }
     },
     "switch": {
