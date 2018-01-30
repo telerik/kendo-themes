@@ -24,7 +24,11 @@ var metrics = {
         "height": 30
     },
     "dropdown": {
-        "height": 30
+        "height": 30,
+        "select": {
+            "width": 28,
+            "height": 28
+        }
     },
     "maskedtextbox": {
         "height": 30
