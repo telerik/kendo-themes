@@ -33,7 +33,11 @@ var metrics = {
         }
     },
     "datetime": {
-        "height": 30
+        "height": 30,
+        "select": {
+            "width": 28,
+            "height": 28
+        }
     },
     "dropdown": {
         "height": 30,
