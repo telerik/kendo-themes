@@ -15,7 +15,15 @@ var metrics = {
     },
     "colorpicker": {
         "width": 58,
-        "height": 30
+        "height": 30,
+        "select": {
+            "width": 28,
+            "height": 28
+        },
+        "preview": {
+            "width": 28,
+            "height": 28
+        }
     },
     "combobox": {
         "height": 30,
