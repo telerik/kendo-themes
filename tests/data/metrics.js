@@ -47,6 +47,9 @@ var metrics = {
         "handle": {
             "width": 16,
             "height": 16
+        },
+        "track": {
+            "height": 4
         }
     },
     "listbox": {},

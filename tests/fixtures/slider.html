@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Slider</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/base/dist/all.css" />
+    <style>
+        .k-slider-horizontal {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="test-area">
+        <div id="slider-horizontal" class="k-widget k-slider k-slider-horizontal k-state-default">
+            <div class="k-slider-wrap k-slider-buttons">
+                <a class="k-button k-button-increase" title="Right" aria-label="Right"><span class="k-icon k-i-arrow-60-right"></span></a>
+                <a class="k-button k-button-decrease" title="Left" aria-label="Left"><span class="k-icon k-i-arrow-60-left"></span></a>
+                <ul class="k-reset k-slider-items">
+                    <li class="k-tick k-first" role="presentation" style="width: 16px;" title="-10">&nbsp;</li>
+                    <li class="k-tick" role="presentation" style="width: 33px;" title="-8">&nbsp;</li>
+                    <li class="k-tick" role="presentation" style="width: 32px;" title="-6">&nbsp;</li>
+                    <li class="k-tick" role="presentation" style="width: 32px;" title="-4">&nbsp;</li>
+                    <li class="k-tick" role="presentation" style="width: 32px;" title="-2">&nbsp;</li>
+                    <li class="k-tick" role="presentation" style="width: 32px;" title="0">&nbsp;</li>
+                    <li class="k-tick" role="presentation" style="width: 33px;" title="2">&nbsp;</li>
+                    <li class="k-tick" role="presentation" style="width: 32px;" title="4">&nbsp;</li>
+                    <li class="k-tick" role="presentation" style="width: 32px;" title="6">&nbsp;</li>
+                    <li class="k-tick" role="presentation" style="width: 32px;" title="8">&nbsp;</li>
+                    <li class="k-tick k-last" role="presentation" title="10" style="width: 17px;">&nbsp;</li>
+                </ul>
+                <div class="k-slider-track" style="width: 322px;">
+                    <div class="k-slider-selection" style="width: 161px;"><!-- --></div>
+                    <a href="#" class="k-draghandle" title="drag" role="slider" aria-valuemin="-10" aria-valuemax="10" aria-valuenow="-10" tabindex="0" data-role="draggable" style="left: 153px;">Drag</a>
+                </div>
+                <input value="0" type="text" style="display: none;" />
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
