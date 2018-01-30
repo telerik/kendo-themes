@@ -14,20 +14,6 @@
     "type": "git",
     "url": "https://github.com/telerik/kendo-theme-default.git"
   },
-  "release": {
-    "debug": false,
-    "branchTags": {
-      "develop": "dev"
-    },
-    "fallbackTags": {
-      "dev": "latest"
-    },
-    "analyzeCommits": "@telerik/semantic-prerelease/analyzeCommits",
-    "generateNotes": "@telerik/semantic-prerelease/generateNotes",
-    "getLastRelease": "@telerik/semantic-prerelease/getLastRelease",
-    "verifyConditions": "@telerik/semantic-prerelease/verifyConditions",
-    "verifyRelease": "@telerik/semantic-prerelease/verifyRelease"
-  },
   "scripts": {
     "lint": "sass-lint -v -c ./sass-lint.yml",
     "api": "sassdoc ./scss/",
@@ -43,36 +29,10 @@
     "karma-watch": "karma start --auto-watch --no-single-run",
     "karma-single": "karma start --no-auto-watch --single-run --browsers ChromeHeadless"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    },
-    "ghooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run test",
-      "commit-msg": "validate-commit-msg"
-    },
-    "validate-commit-msg": {
-      "types": [
-        "feat",
-        "fix",
-        "docs",
-        "style",
-        "refactor",
-        "perf",
-        "test",
-        "chore",
-        "revert"
-      ],
-      "warnOnFail": false,
-      "maxSubjectLength": 100
-    }
-  },
   "devDependencies": {
+    "@semantic-release/npm": "^2.6.0",
     "@telerik/kendo-common-tasks": "^3.0.0",
-    "@telerik/semantic-prerelease": "^1.0.0",
     "bootstrap": "4.0.0",
-    "cz-conventional-changelog": "^1.1.5",
     "editorconfig-tools": "^0.1.1",
     "ghooks": "^1.0.3",
     "glob": "^7.0.5",
@@ -85,8 +45,8 @@
     "qunitjs": "^2.4.1",
     "sass-lint": "^1.7.0",
     "sassdoc": "^2.1.20",
-    "semantic-release": "^6.3.6",
-    "validate-commit-msg": "^1.1.1",
+    "semantic-release": "^12.4.1",
+    "semantic-release-monorepo": "^4.2.1",
     "webpack": "^1.13.1"
   }
 }

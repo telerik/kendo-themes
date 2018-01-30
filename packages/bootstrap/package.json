@@ -15,20 +15,6 @@
     "type": "git",
     "url": "https://github.com/telerik/kendo-theme-bootstrap.git"
   },
-  "release": {
-    "debug": false,
-    "branchTags": {
-      "develop": "dev"
-    },
-    "fallbackTags": {
-      "dev": "latest"
-    },
-    "analyzeCommits": "@telerik/semantic-prerelease/analyzeCommits",
-    "generateNotes": "@telerik/semantic-prerelease/generateNotes",
-    "getLastRelease": "@telerik/semantic-prerelease/getLastRelease",
-    "verifyConditions": "@telerik/semantic-prerelease/verifyConditions",
-    "verifyRelease": "@telerik/semantic-prerelease/verifyRelease"
-  },
   "scripts": {
     "lint": "echo 'TODO: add lint'",
     "api": "sassdoc ./scss/",
@@ -47,11 +33,14 @@
     "@progress/kendo-theme-default": "^2.47.3"
   },
   "devDependencies": {
+    "@semantic-release/npm": "^2.6.0",
     "bootstrap": "4.0.0",
     "glob": "^7.0.5",
     "mime": "^1.3.4",
     "sass-lint": "^1.7.0",
     "sassdoc": "^2.1.20",
+    "semantic-release": "^12.4.1",
+    "semantic-release-monorepo": "^4.2.1",
     "webpack": "^1.13.1"
   }
 }

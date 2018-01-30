@@ -1,10 +1,12 @@
 {
   "devDependencies": {
+    "@semantic-release/npm": "^2.6.0",
     "@telerik/kendo-common-tasks": "^3.0.0",
     "cz-conventional-changelog": "^1.1.5",
     "ghooks": "^1.0.3",
     "lerna": "^2.4.0",
     "semantic-release": "^4.3.5",
+    "semantic-release-monorepo": "^4.2.1",
     "validate-commit-msg": "^1.1.1"
   },
   "scripts": {
