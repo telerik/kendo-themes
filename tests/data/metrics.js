@@ -18,7 +18,11 @@ var metrics = {
         "height": 30
     },
     "combobox": {
-        "height": 30
+        "height": 30,
+        "select": {
+            "width": 28,
+            "height": 28
+        }
     },
     "datetime": {
         "height": 30
