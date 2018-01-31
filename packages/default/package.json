@@ -24,13 +24,12 @@
     "embed-assets": "node build/embed-assets.js",
     "test": "npm run lint && npm run build && npm run api-check && npm run twbs-compat && npm run karma-single",
     "twbs-compat": "webpack --env.twbs-compat --bail",
-    "semantic-release": "semantic-release pre && semantic-prerelease publish && semantic-release post",
+    "semantic-release": "npm run embed-assets && semantic-release",
     "watch-test": "npm run karma-watch",
     "karma-watch": "karma start --auto-watch --no-single-run",
     "karma-single": "karma start --no-auto-watch --single-run --browsers ChromeHeadless"
   },
   "devDependencies": {
-    "@semantic-release/npm": "^2.6.0",
     "@telerik/kendo-common-tasks": "^3.0.0",
     "bootstrap": "4.0.0",
     "editorconfig-tools": "^0.1.1",
@@ -45,8 +44,7 @@
     "qunitjs": "^2.4.1",
     "sass-lint": "^1.7.0",
     "sassdoc": "^2.1.20",
-    "semantic-release": "^12.4.1",
-    "semantic-release-monorepo": "^4.2.1",
     "webpack": "^1.13.1"
-  }
+  },
+  "dependencies": {}
 }
