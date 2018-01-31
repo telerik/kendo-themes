@@ -19,7 +19,6 @@
     },
     "ghooks": {
       "pre-commit": "npm run lint",
-      "pre-push": "npm run test",
       "commit-msg": "validate-commit-msg"
     },
     "validate-commit-msg": {
