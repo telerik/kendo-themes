@@ -11,7 +11,8 @@
   },
   "scripts": {
     "build": "lerna run build",
-    "lint": "lerna run lint"
+    "lint": "lerna run lint",
+    "test": "npm run lint"
   },
   "config": {
     "commitizen": {
