@@ -24,12 +24,12 @@ fi
 git config user.name "Travis CI"
 git config user.email "travis"
 
-npx lerna publish --message "chore(release): update changelogs" --skip-npm --skip-git --conventional-commits --loglevel=verbose --yes
+npx lerna publish --message "chore(release): update changelogs" --skip-npm --conventional-commits --loglevel=verbose --yes
 
 echo "Push lerna commit to Github..."
-echo git push origin master --tags --quiet > /dev/null 2>&1
+git push origin master --tags --quiet --dry-run > /dev/null 2>&1
 
 echo "Rewind develop branch on top of master..."
-echo git checkout develop
-echo git merge --ff-only master
-echo git push origin develop
+git checkout develop
+git merge --ff-only master
+git push origin develop --dry-run
