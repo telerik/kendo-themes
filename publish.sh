@@ -13,7 +13,7 @@ fi
 
 if [[ $TRAVIS_BRANCH == 'develop' ]]
 then
-  lerna publish --skip-npm --canary=dev --npm-tag=dev --allow-branch=develop --loglevel=verbose --yes
+  npx lerna publish --skip-npm --canary=dev --npm-tag=dev --allow-branch=develop --loglevel=verbose --yes
   exit 0
 elif [[ $TRAVIS_BRANCH != 'master' ]]
 then
@@ -24,7 +24,7 @@ fi
 git config user.name "Travis CI"
 git config user.email "travis"
 
-lerna publish --message "chore: release packages, update changelog" --skip-npm --conventional-commits --loglevel=verbose --yes
+npx lerna publish --message "chore: release packages, update changelog" --skip-npm --skip-git --conventional-commits --loglevel=verbose --yes
 
 echo "Push lerna commit to Github..."
 echo git push origin master --tags --quiet > /dev/null 2>&1
