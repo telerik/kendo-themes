@@ -15,7 +15,7 @@ if [[ $TRAVIS_BRANCH == 'develop' ]]
 then
   # Publish development (canary) release
 
-  npx lerna publish --skip-npm --canary=dev --npm-tag=dev --allow-branch=develop --loglevel=verbose --yes
+  npx lerna publish --canary=dev --npm-tag=dev --allow-branch=develop --loglevel=verbose --yes
 
 elif [[ $TRAVIS_BRANCH == 'master' ]]
 then
