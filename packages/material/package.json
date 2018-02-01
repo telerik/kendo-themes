@@ -16,6 +16,9 @@
     "type": "git",
     "url": "https://github.com/telerik/kendo-theme-material.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint": "sass-lint -v -c ./sass-lint.yml",
     "api": "sassdoc ./scss/",
