@@ -10,6 +10,9 @@ notifications:
 node_js:
   - '8'
 
+before_script:
+  - lerna bootstrap --concurrency=1
+
 after_success:
   - ./publish.sh
 
