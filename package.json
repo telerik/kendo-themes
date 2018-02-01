@@ -12,7 +12,7 @@
   "scripts": {
     "build": "lerna run build",
     "lint": "lerna run lint",
-    "test": "npm run lint"
+    "test": "lerna run test"
   },
   "config": {
     "commitizen": {

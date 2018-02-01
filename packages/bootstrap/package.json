@@ -23,8 +23,7 @@
     "build": "webpack --optimize-minimize --bail",
     "watch": "webpack --watch",
     "test": "npm run lint && npm run build && npm run api-check",
-    "embed-assets": "bash ./build/embed-dependencies 'bootstrap' '@progress/kendo-theme-default' && npm run build",
-    "semantic-release": "npm run embed-assets && semantic-release"
+    "prepublish": "bash ./build/embed-dependencies 'bootstrap' '@progress/kendo-theme-default' && npm run build"
   },
   "peerDependencies": {
     "bootstrap": "4.0.0"
