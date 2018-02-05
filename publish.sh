@@ -33,9 +33,11 @@ then
 
   git checkout --force master
 
-  git pull --rebase
+  npx lerna publish --skip-npm --conventional-commits --concurrency=1 --loglevel=verbose --yes --message "chore(release): update changelogs"
 
-  npx lerna publish --message "chore(release): update changelogs" --skip-npm --conventional-commits --concurrency=1 --loglevel=verbose --yes
+  # Revert embedding of assets from prepublish task
+  git reset --hard origin/master -- packages/*/{scss,modules}
+  git commit --amend --no-edit --no-verify
 
   echo "Push lerna commit to Github..."
   git push origin master --tags --quiet --dry-run > /dev/null 2>&1
