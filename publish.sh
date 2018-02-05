@@ -2,9 +2,6 @@
 
 set -e
 
-echo $(printf "TRAVIS_BRANCH %s" $TRAVIS_BRANCH)
-echo $(printf "TRAVIS_PULL_REQUEST %s" $TRAVIS_PULL_REQUEST)
-
 # Do not publish pull requests
 if [[ $TRAVIS_PULL_REQUEST != 'false' ]]
 then
@@ -34,7 +31,7 @@ then
   git config user.name "Travis CI"
   git config user.email "travis"
 
-  git checkout master
+  git checkout --force master
 
   git pull --rebase
 
