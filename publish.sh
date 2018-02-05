@@ -5,9 +5,19 @@ set -e
 echo $(printf "TRAVIS_BRANCH %s" $TRAVIS_BRANCH)
 echo $(printf "TRAVIS_PULL_REQUEST %s" $TRAVIS_PULL_REQUEST)
 
+# Do not publish pull requests
 if [[ $TRAVIS_PULL_REQUEST != 'false' ]]
 then
   echo "Pull requests do not publish to NPM."
+  exit 0
+fi
+
+TAGS=$(git tag -l --points-at HEAD)
+
+# Do not publish recursively
+if [[ $TAGS ]]
+then
+  echo "This commit is already published, skipping publish step."
   exit 0
 fi
 
@@ -26,7 +36,9 @@ then
 
   git checkout master
 
-  npx lerna publish --message "chore(release): update changelogs" --skip-npm --conventional-commits --loglevel=verbose --yes
+  git pull --rebase
+
+  npx lerna publish --message "chore(release): update changelogs" --skip-npm --conventional-commits --concurrency=1 --loglevel=verbose --yes
 
   echo "Push lerna commit to Github..."
   git push origin master --tags --quiet --dry-run > /dev/null 2>&1
