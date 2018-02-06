@@ -41,7 +41,7 @@ then
   git push origin master --tags --quiet > /dev/null 2>&1
 
   echo "Rewind develop branch on top of master..."
-  git checkout develop
+  git checkout -B develop origin/develop
   git merge --ff-only master
   git push origin develop
 
