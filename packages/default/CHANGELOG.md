@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.47.6"></a>
+## [2.47.6](https://github.com/telerik/kendo-theme-default/compare/@progress/kendo-theme-default@2.47.5...@progress/kendo-theme-default@2.47.6) (2018-02-06)
+
+
+### Bug Fixes
+
+* **grid:** rule breaks grunt builds of theme ([a47312f](https://github.com/telerik/kendo-theme-default/commit/a47312f)), closes [#1](https://github.com/telerik/kendo-theme-default/issues/1)
+
+
+
+
 <a name="2.47.5"></a>
 ## [2.47.5](https://github.com/telerik/kendo-theme-default/compare/@progress/kendo-theme-default@2.47.4...@progress/kendo-theme-default@2.47.5) (2018-02-06)
 

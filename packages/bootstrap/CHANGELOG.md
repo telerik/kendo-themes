@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.11.4"></a>
+## [2.11.4](https://github.com/telerik/kendo-theme-bootstrap/compare/@progress/kendo-theme-bootstrap@2.11.3...@progress/kendo-theme-bootstrap@2.11.4) (2018-02-06)
+
+
+### Bug Fixes
+
+* **package:** reduce npm package size for derived themes ([d4a2ad9](https://github.com/telerik/kendo-theme-bootstrap/commit/d4a2ad9))
+
+
+
+
 <a name="2.11.3"></a>
 ## [2.11.3](https://github.com/telerik/kendo-theme-bootstrap/compare/@progress/kendo-theme-bootstrap@2.11.2...@progress/kendo-theme-bootstrap@2.11.3) (2018-02-06)
 
