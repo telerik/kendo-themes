@@ -31,6 +31,8 @@ then
   git config user.name "Travis CI"
   git config user.email "travis"
 
+  git remote set-url origin https://${GH_TOKEN}@github.com/telerik/kendo-themes.git > /dev/null 2>&1
+
   git checkout --force master
 
   npx lerna publish --message "chore(release): update changelogs" --conventional-commits --concurrency=1 --loglevel=verbose --yes
