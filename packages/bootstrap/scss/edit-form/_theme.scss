@@ -1,5 +1,5 @@
 @include exports("edit-form/theme") {
-	.k-edit-label {
-		padding: add-two($padding-y, -$input-border-width) 0;
-	}
+    .k-edit-label {
+        padding: add-two($padding-y, -$input-border-width) 0;
+    }
 }

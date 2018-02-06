@@ -7,7 +7,9 @@
 
         // Hover state
         &:hover,
-        &.k-state-hover { @include appearance( hovered-button ); }
+        &.k-state-hover {
+            @include appearance( hovered-button );
+        }
 
         // Focused
         &:focus,
@@ -35,7 +37,9 @@
 
         // Hover state
         &:hover,
-        &.k-state-hover { @include appearance( hovered-primary-button ); }
+        &.k-state-hover {
+            @include appearance( hovered-primary-button );
+        }
 
         // Focused
         &:focus,
@@ -133,14 +137,14 @@
     // Bare button
     .k-button.k-bare {
 
-        &:before {
+        &::before {
             border-radius: $border-radius;
         }
-        &:after {
+        &::after {
             border-radius: add-two($border-radius, 2px);
         }
 
-        &:after {
+        &::after {
             top: -3px;
             left: -3px;
             right: -3px;
@@ -156,7 +160,9 @@
 
         // Hover state
         &:hover,
-        &.k-state-hover { @include appearance( hovered-button ); }
+        &.k-state-hover {
+            @include appearance( hovered-button );
+        }
 
         // Focused
         &:focus,

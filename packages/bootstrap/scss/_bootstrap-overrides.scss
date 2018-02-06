@@ -1,6 +1,7 @@
 $enable-bootstrap-overrides: true !default;
 $theme-colors: () !default;
 
+// sass-lint:disable indentation
 // @if $enable-bootstrap-overrides {
 
     $white:    #ffffff !default;
@@ -101,3 +102,4 @@ $theme-colors: () !default;
     $progress-bar-bg: $primary !default;
     $progress-bar-color: contrast-yiq($progress-bar-bg, $gray-900) !default;
 // }
+// sass-lint:enable indentation

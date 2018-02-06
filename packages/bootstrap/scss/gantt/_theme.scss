@@ -22,7 +22,7 @@
         }
         li:first-child { @include border-radius( $border-radius ); }
         li:first-child + li { @include border-radius( $border-radius 0 0 $border-radius ); }
-        li:last-child{ @include border-radius( 0 $border-radius $border-radius 0 ); }
+        li:last-child { @include border-radius( 0 $border-radius $border-radius 0 ); }
 
 
         &.k-state-expanded {
@@ -57,11 +57,11 @@
     }
 
     .k-task-dot {}
-    .k-task-dot:before {
+    .k-task-dot::before {
         background-color: $panel-text;
     }
-    .k-task-dot:hover:before,
-    .k-task-dot.k-state-hover:before {
+    .k-task-dot:hover::before,
+    .k-task-dot.k-state-hover::before {
         border-color: $panel-text;
         background-color: $panel-bg;
     }

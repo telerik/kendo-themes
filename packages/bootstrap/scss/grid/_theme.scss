@@ -83,7 +83,7 @@
             @include appearance( button );
 
             &:hover {
-               @include appearance( hovered-button );
+                @include appearance( hovered-button );
             }
         }
     }

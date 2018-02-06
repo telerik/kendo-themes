@@ -19,7 +19,7 @@
     "access": "public"
   },
   "scripts": {
-    "lint": "echo 'TODO: add lint'",
+    "lint": "sass-lint -v -c ./sass-lint.yml",
     "api": "sassdoc ./scss/",
     "api-check": "npm run api && git diff --exit-code --quiet -- docs/ || (echo -e '\\033[0;31mERROR: API docs are out of date' && exit 1)",
     "start": "webpack-dev-server --hot --inline",

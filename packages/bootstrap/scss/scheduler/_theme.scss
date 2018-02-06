@@ -37,7 +37,7 @@
         }
         li:first-child { @include border-radius( $border-radius ); }
         li:first-child + li { @include border-radius( $border-radius 0 0 $border-radius ); }
-        li:last-child{ @include border-radius( 0 $border-radius $border-radius 0 ); }
+        li:last-child { @include border-radius( 0 $border-radius $border-radius 0 ); }
 
 
         &.k-state-expanded {

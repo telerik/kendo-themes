@@ -1,6 +1,6 @@
 @include exports("datetime/theme") {
     $time-list-highlight-color: $border-color !default;
-    $time-list-focused-bg: rgba(0, 0, 0, 0.02);
+    $time-list-focused-bg: rgba(0, 0, 0, .02);
     $time-list-title-focus: #000 !default;
 
     // TODO: move to theme default. Issue: https://github.com/telerik/kendo-theme-default/issues/796

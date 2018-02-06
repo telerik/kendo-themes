@@ -9,7 +9,9 @@
 
         // Hover state
         > :hover,
-        .k-state-hover { @include appearance( hovered-button ); }
+        .k-state-hover {
+            @include appearance( hovered-button );
+        }
 
         // Focused state
         .k-state-focused {

@@ -10,12 +10,11 @@ $slider-track-background-color: darken($header-bg, 7%) !default;
     .k-mediaplayer-titlebar {
         color: $panel-bg;
         background-image: linear-gradient( rgba( $panel-text, .7 ), rgba( $panel-text, 0 ) );
-        // text-shadow: 0 0 1px $panel-text;
     }
 
 
     .k-mediaplayer-toolbar {
-        background-color: rgba($toolbar-bg, 0.85);
+        background-color: rgba($toolbar-bg, .85);
 
         .k-slider-track {
             background: $slider-track-background-color;

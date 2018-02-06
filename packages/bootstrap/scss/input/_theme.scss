@@ -107,7 +107,7 @@
                 background-color: $checkbox-checked-bg;
             }
 
-            &:after {
+            &::after {
                 color: $checkbox-checked-text;
             }
         }
@@ -197,7 +197,7 @@
         font-size: $fieldset-font-size;
     }
 
-    .k-maskedtextbox .k-state-invalid + .k-i-warning{
+    .k-maskedtextbox .k-state-invalid + .k-i-warning {
         color: $error;
     }
 }

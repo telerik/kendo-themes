@@ -39,7 +39,7 @@
 
         &[dir='rtl'],
         .k-rtl & {
-            .k-select{
+            .k-select {
                 @include border-radius( $border-radius 0 0 $border-radius );
                 border-width: 0 1px 0 0;
             }

@@ -58,14 +58,14 @@
         .k-content .k-state-hover .k-link {
             @include appearance( hovered-node );
         }
-        .k-content td.k-state-selected .k-link{
+        .k-content td.k-state-selected .k-link {
             @include appearance( selected-node );
         }
         .k-content .k-state-focused .k-link {
             box-shadow: inset $button-focused-shadow;
         }
         .k-content .k-state-selected.k-state-focused .k-link {
-            box-shadow: inset 0 0 0 2px rgba($primary-button-pressed-border, 0.5);
+            box-shadow: inset 0 0 0 2px rgba($primary-button-pressed-border, .5);
         }
 
 

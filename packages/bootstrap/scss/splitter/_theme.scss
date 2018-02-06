@@ -5,11 +5,8 @@
     $splitter-hovered-text: $button-hovered-text;
     $splitter-hovered-bg: darken($button-hovered-bg, 5) !default;
 
-    .k-splitter {}
-
-
     // Splitbar
-     .k-splitbar {
+    .k-splitbar {
         color: $splitter-text;
         background-color: $splitter-bg;
 
@@ -19,6 +16,7 @@
             background: $selected-bg;
         }
     }
+
     .k-splitbar-horizontal-hover,
     .k-splitbar-vertical-hover {
         color: $splitter-hovered-text;
