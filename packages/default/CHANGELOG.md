@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.47.7"></a>
+## [2.47.7](https://github.com/telerik/kendo-theme-default/compare/@progress/kendo-theme-default@2.47.6...@progress/kendo-theme-default@2.47.7) (2018-02-06)
+
+
+### Bug Fixes
+
+* **charts:** chart tooltip is hidden behind dialog ([7dd0b16](https://github.com/telerik/kendo-theme-default/commit/7dd0b16))
+
+
+
+
 <a name="2.47.6"></a>
 ## [2.47.6](https://github.com/telerik/kendo-theme-default/compare/@progress/kendo-theme-default@2.47.5...@progress/kendo-theme-default@2.47.6) (2018-02-06)
 
