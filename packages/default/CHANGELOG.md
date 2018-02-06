@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.47.5"></a>
+## [2.47.5](https://github.com/telerik/kendo-theme-default/compare/@progress/kendo-theme-default@2.47.4...@progress/kendo-theme-default@2.47.5) (2018-02-06)
+
+
+### Bug Fixes
+
+* **splitter:** allow overriding of component colors ([65facaa](https://github.com/telerik/kendo-theme-default/commit/65facaa))
+* **treeview:** allow horizontal scroll of node text ([f67f414](https://github.com/telerik/kendo-theme-default/commit/f67f414))
+
+
+
+
 <a name="2.48.0"></a>
 # 2.48.0 (2018-01-30)
 
