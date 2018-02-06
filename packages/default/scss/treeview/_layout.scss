@@ -19,7 +19,10 @@
             background: none;
             list-style: none;
             position: relative;
-            overflow: hidden;
+
+            &.ng-animating {
+                overflow: hidden;
+            }
         }
 
         // Wrappers
