@@ -33,15 +33,15 @@ then
 
   git checkout --force master
 
-  npx lerna publish --skip-npm --conventional-commits --concurrency=1 --loglevel=verbose --yes --message "chore(release): update changelogs"
+  npx lerna publish --message "chore(release): update changelogs" --conventional-commits --concurrency=1 --loglevel=verbose --yes
 
   echo "Push lerna commit to Github..."
-  git push origin master --tags --quiet --dry-run > /dev/null 2>&1
+  git push origin master --tags --quiet > /dev/null 2>&1
 
   echo "Rewind develop branch on top of master..."
   git checkout develop
   git merge --ff-only master
-  git push origin develop --dry-run
+  git push origin develop
 
 else
   echo "Publishing is enabled only for the master and develop branches"
