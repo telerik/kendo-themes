@@ -300,10 +300,8 @@ $primary-button-focused-shadow: 0 3px 4px 0 rgba($accent, .4) !default;
 
 // Action buttons
 $action-button-text: rgba( $accent, .87 );
-
-$action-button-hovered-bg: rgba( $accent, 0.12 );
-
-$action-button-pressed-bg: rgba( $accent, 0.16 );
+$action-button-hovered-bg: rgba( $accent, .12 );
+$action-button-pressed-bg: rgba( $accent, .16 );
 
 // Toolbar
 $toolbar-text: $button-text !default;
