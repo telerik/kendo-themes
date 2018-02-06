@@ -1,11 +1,11 @@
 @include exports("splitter/theme") {
 
-    $splitter-bg: rgba( try-darken( $panel-bg, 8 ), .8 );
-    $splitter-text: $panel-text;
-    $splitter-hovered-bg: try-darken( $panel-bg, 8 );
-    $splitter-hovered-text: $panel-text;
-    $splitter-selected-bg: $selected-bg;
-    $splitter-selected-text: contrast-wcag( $splitter-selected-bg );
+    $splitter-bg: rgba( try-darken( $panel-bg, 8 ), .8 ) !default;
+    $splitter-text: $panel-text !default;
+    $splitter-hovered-bg: try-darken( $panel-bg, 8 ) !default;
+    $splitter-hovered-text: $panel-text !default;
+    $splitter-selected-bg: $selected-bg !default;
+    $splitter-selected-text: contrast-wcag( $splitter-selected-bg ) !default;
 
     .k-splitter {
         background-clip: padding-box;
