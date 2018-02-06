@@ -27,7 +27,7 @@
             border-width: 0;
             background-color: transparent;
 
-            em {
+            .k-dropzone-hint {
                 margin-left: $spacer-x;
                 flex: 1;
                 overflow: hidden;
@@ -37,6 +37,7 @@
                 position: relative;
                 vertical-align: middle;
                 visibility: hidden;
+                font-style: italic;
                 display: none;
             }
 
@@ -55,7 +56,7 @@
             }
 
             &.k-dropzone-active {
-                em {
+                .k-dropzone-hint {
                     display: block;
                     visibility: visible;
                     opacity: 1;
