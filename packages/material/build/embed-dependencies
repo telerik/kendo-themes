@@ -9,7 +9,7 @@ do
   # copy dependencies from node_modules/ to modules/ subdir
   echo "Copy $module dependency"
   mkdir -p modules/$module
-  rsync -avc --delete --include "**.scss" node_modules/$module/ modules/$module/
+  rsync -avc --delete --exclude={node_modules,tests,dist,examples,docs,build,*.md,*.js} --include "**.scss" node_modules/$module/ modules/$module/
 done
 
 # replace references to modules with relative paths
