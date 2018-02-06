@@ -35,10 +35,6 @@ then
 
   npx lerna publish --skip-npm --conventional-commits --concurrency=1 --loglevel=verbose --yes --message "chore(release): update changelogs"
 
-  # Revert embedding of assets from prepublish task
-  git reset origin/master -- packages/*/{scss,modules}
-  git commit --amend --no-edit --no-verify
-
   echo "Push lerna commit to Github..."
   git push origin master --tags --quiet --dry-run > /dev/null 2>&1
 
