@@ -1,0 +1,189 @@
+<html>
+<head>
+    <title>KendoUI Form Components</title>
+    <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default/dist/all.css" />
+    <script src="https://kendo.cdn.telerik.com/2018.1.117/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2018.1.117/js/kendo.all.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body hbox wrap items-start data-child-cols="auto">
+
+    <div vbox items-start class="test-case k-panel w300"
+        data-wrap-children="true">
+        <input type="text" placeholder="Select..." class="k-textbox" />
+        <input type="text" value="Normal" class="k-textbox" />
+        <input type="text" value="Hover" class="k-textbox k-state-hover" />
+        <input type="text" value="Focus" class="k-textbox k-state-focus" />
+        <input type="text" value="Disabled" class="k-textbox" disabled="disabled" />
+    </div>
+
+    <div vbox items-start class="test-case k-panel w300"
+        data-wrap-children="true" data-child-cols="auto">
+        <input id="ac" type="text" placeholder="Select..." />
+        <input id="ac-normal" type="text" value="Normal" />
+        <input id="ac-hover" type="text" value="Hover" />
+        <input id="ac-focus" type="text" value="Focus" />
+        <input id="ac-active" type="text" value="Active" />
+        <input id="ac-disabled" type="text" value="Disabled" disabled="disabled" />
+        <input id="ac-expanded" type="text" value="Expanded" />
+    </div>
+
+    <div vbox items-start class="test-case k-panel w300"
+        data-wrap-children="true" data-child-cols="auto">
+        <input id="cb" type="text" placeholder="Select..." />
+        <input id="cb-normal" type="text" value="Normal" />
+        <input id="cb-hover" type="text" value="Hover" />
+        <input id="cb-focus" type="text" value="Focus" />
+        <input id="cb-active" type="text" value="Active" />
+        <input id="cb-disabled" type="text" value="Disabled" disabled="disabled" />
+        <input id="cb-expanded" type="text" value="Expanded" />
+    </div>
+
+    <div vbox items-start class="test-case k-panel w300"
+        data-wrap-children="true" data-child-cols="auto">
+        <input id="ddl" type="text" placeholder="Select..." />
+        <input id="ddl-normal" type="text" value="Normal" />
+        <input id="ddl-hover" type="text" value="Hover" />
+        <input id="ddl-focus" type="text" value="Focus" />
+        <input id="ddl-active" type="text" value="Active" />
+        <input id="ddl-disabled" type="text" value="Disabled" disabled="disabled" />
+        <input id="ddl-expanded" type="text" value="Expanded" />
+    </div>
+
+
+    <hr class="flex-separator" />
+
+    <div>
+        <input type="text" data-role="combobox" />
+        <input type="text" data-role="dropdown" />
+        <input type="text" data-role="numerictextbox" />
+        <input type="text" data-role="datepicker" />
+        <input type="text" data-role="dateinput" />
+        <input type="text" data-role="combobox" />
+
+        <span class="k-button k-state-hover">Hover</span>
+        <span class="k-button k-primary k-state-hover">Hover</span>
+
+        <span class="k-button k-state-active">Active</span>
+        <span class="k-button k-primary k-state-active">Active</span>
+
+        <span class="k-button k-state-disabled">Disabled</span>
+        <span class="k-button k-primary k-state-disabled">Disabled</span>
+    </div>
+
+    <div class="test-case k-panel k-rtl w300"
+        data-wrap-children="true" data-child-cols="2">
+        <span class="k-button">Normal</span>
+        <span class="k-button k-primary">Normal</span>
+
+        <span class="k-button k-state-hover">Hover</span>
+        <span class="k-button k-primary k-state-hover">Hover</span>
+
+        <span class="k-button k-state-active">Active</span>
+        <span class="k-button k-primary k-state-active">Active</span>
+
+        <span class="k-button k-state-disabled">Disabled</span>
+        <span class="k-button k-primary k-state-disabled">Disabled</span>
+    </div>
+
+
+    <script>
+        (function() {
+
+            jQuery.fn.state = function(states) {
+                states = states.split(" ");
+
+                if (states.length == 0) {
+                    return this;
+                }
+
+                var classNames = $.map(states, function(state) {
+                    return `k-state-${state}`;
+                })
+
+                return this.addClass(classNames.join(" "));
+            }
+
+            function stopEvent(e) {
+                e.preventDefault();
+                return false;
+            }
+
+            $("[hbox]").addClass("h-box");
+            $("[vbox]").addClass("v-box");
+            $("[wrap]").addClass("flex-wrap");
+            $("[items-start]").addClass("items-start");
+
+            $("[data-wrap-children=true]").children(":not(.cell), :not(.flex-separator)").wrap("<div class='cell' />");
+            $("[data-child-cols]").each(function() {
+                var $this = $(this);
+                var cols = $this.data("child-cols");
+                var selector = `:nth-child(${cols}n)`;
+
+                if ( cols == "auto" || cols == undefined ) {
+                    return;
+                }
+
+                $this.children(selector).after("<hr class='flex-separator' />")
+
+            });
+
+
+            // Autocomplete
+            var ac = $("#ac").kendoAutoComplete().data("kendoAutoComplete");
+            var acNormal = $("#ac-normal").kendoAutoComplete().data("kendoAutoComplete");
+            var acHover = $("#ac-hover").kendoAutoComplete().data("kendoAutoComplete");
+            var acFocus = $("#ac-focus").kendoAutoComplete().data("kendoAutoComplete");
+            var acActive = $("#ac-active").kendoAutoComplete().data("kendoAutoComplete");
+            var acDisabled = $("#ac-disabled").kendoAutoComplete().data("kendoAutoComplete");
+            var acExpanded = $("#ac-expanded").kendoAutoComplete().data("kendoAutoComplete");
+
+            acHover.wrapper.state("hover");
+            acFocus.wrapper.state("focused");
+            acActive.wrapper.state("focused active");
+
+            acExpanded.bind("close", stopEvent);
+            acExpanded.search();
+
+
+            // Combobox
+            var cb = $("#cb").kendoComboBox().data("kendoComboBox");
+            var cbNormal = $("#cb-normal").kendoComboBox().data("kendoComboBox");
+            var cbHover = $("#cb-hover").kendoComboBox().data("kendoComboBox");
+            var cbFocus = $("#cb-focus").kendoComboBox().data("kendoComboBox");
+            var cbActive = $("#cb-active").kendoComboBox().data("kendoComboBox");
+            var cbDisabled = $("#cb-disabled").kendoComboBox().data("kendoComboBox");
+            var cbExpanded = $("#cb-expanded").kendoComboBox().data("kendoComboBox");
+
+            cbHover._inputWrapper.state("hover");
+            cbFocus._inputWrapper.state("focused");
+            cbActive._inputWrapper.state("focused active");
+
+            cbExpanded.bind("close", stopEvent);
+            cbExpanded.open();
+
+
+            // Dropdownlist
+            var ddl = $("#ddl").kendoDropDownList().data("kendoDropDownList");
+            var ddlNormal = $("#ddl-normal").kendoDropDownList().data("kendoDropDownList");
+            var ddlHover = $("#ddl-hover").kendoDropDownList().data("kendoDropDownList");
+            var ddlFocus = $("#ddl-focus").kendoDropDownList().data("kendoDropDownList");
+            var ddlActive = $("#ddl-active").kendoDropDownList().data("kendoDropDownList");
+            var ddlDisabled = $("#ddl-disabled").kendoDropDownList().data("kendoDropDownList");
+            var ddlExpanded = $("#ddl-expanded").kendoDropDownList().data("kendoDropDownList");
+
+            ddlHover._inputWrapper.state("hover");
+            ddlFocus._inputWrapper.state("focused");
+            ddlActive._inputWrapper.state("focused active");
+
+            ddlExpanded.bind("close", stopEvent);
+            ddlExpanded.open();
+
+
+
+        })()
+    </script>
+
+</body>
+</html>
