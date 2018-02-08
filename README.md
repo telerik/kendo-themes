@@ -28,6 +28,8 @@ If you do not own a commercial license, the usage of this software shall be gove
 For more information on how to add one of the themes in your project, refer to the following articles:
 
 * [Using the Kendo UI themes in Angular Projects](http://www.telerik.com/kendo-angular-ui/components/styling/)
+* [Using the Kendo UI themes in React Projects](http://www.telerik.com/kendo-react-ui/components/styling/)
+* [Using the Kendo UI themes in Vue Projects](http://www.telerik.com/kendo-vue-ui/components/styling/)
 * [Using the Kendo UI themes in jQuery Projects](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
 
 ## Development
