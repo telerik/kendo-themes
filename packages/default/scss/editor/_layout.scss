@@ -66,6 +66,12 @@
         flex-wrap: wrap;
         position: relative;
 
+        &.k-toolbar-resizable {
+            flex-wrap: nowrap;
+            overflow: hidden;
+            flex: 1;
+        }
+
         li {
             display: inline-flex;
             align-items: center;
@@ -120,6 +126,7 @@
             position: absolute;
             top: 0;
             right: 0;
+            visibility: hidden;
         }
 
     }
