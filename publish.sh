@@ -41,10 +41,7 @@ then
   git push origin master --tags --quiet > /dev/null 2>&1
 
   echo "Rewind develop branch on top of master..."
-  git fetch --quiet
-  git checkout -B develop origin/develop
-  git merge --ff-only master
-  git push origin develop
+  git push origin master:develop --quiet > /dev/null 2>&1
 
 else
   echo "Publishing is enabled only for the master and develop branches"
