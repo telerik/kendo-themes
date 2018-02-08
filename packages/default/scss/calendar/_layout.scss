@@ -352,6 +352,8 @@ $calendar-header-cell-padding-y: 8px !default;
         }
 
         .k-calendar-weekdays {
+            flex: 0 0 auto;
+
             thead {
                 @include disabled;
 
