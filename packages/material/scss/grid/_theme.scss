@@ -1,0 +1,127 @@
+@include exports ('grid/theme') {
+    //Theme
+    $grid-text: rgba(0, 0, 0, .87) !default;
+    $grid-header-text: rgba(0, 0, 0, .54) !default;
+    $grid-border: rgba(0, 0, 0, .12) !default;
+    $grid-alt-bg: rgba(0, 0, 0, .02) !default;
+    $grid-sorted-column-bg: rgba(0, 0, 0, .04) !default;
+    $grid-selected-row-bg: rgba(0, 0, 0, .04) !default;
+    $grid-selected-cell-bg: rgba(0, 0, 0, .04) !default;
+    $grid-focused-cell-bg: rgba(0, 0, 0, .07) !default;
+    $grid-row-hover-bg: rgba(0, 0, 0, .07) !default;
+    $grid-filter-button-focus: rgba(0, 0, 0, .12) !default;
+    $grid-text-dark: rgba(0, 0, 0, 1) !default;
+    $grid-locked-column-shadow: inset 18px 0 5px -15px rgba(0, 0, 0, .14) !default;
+    $grid-edit-cell-border: rgba(0, 0, 0, .12) !default;
+    $grid-edit-cell-bg: #f5f5f5 !default;
+    $grid-edit-cell-shadow: 0 0 5px 3px rgba(0, 0, 0, .12) !default;
+    $grid-grouping-indicator-bg: rgba(0, 0, 0, .07) !default;
+
+    .k-grid {
+        color: $grid-text;
+
+        td,
+        th {
+            border-bottom-color: $grid-border;
+        }
+
+        .k-state-selected {
+            color: $grid-text;
+            background-color: $grid-selected-cell-bg;
+        }
+
+        .k-state-focused {
+            background-color: $grid-focused-cell-bg;
+        }
+
+        .k-grid-header .k-sorted,
+        col.k-sorted {
+            background-color: $grid-sorted-column-bg;
+        }
+
+        table {
+            color: $grid-text;
+
+            tr:hover,
+            tr:focus {
+                background-color: $grid-row-hover-bg;
+            }
+
+            tr:focus {
+                background-color: $grid-row-hover-bg;
+            }
+
+            tr.k-state-selected {
+                color: $grid-text-dark;
+                background-color: $grid-selected-row-bg;
+            }
+
+            tr.k-state-selected:hover {
+                background-color: $grid-row-hover-bg;
+            }
+        }
+
+        .k-edit-cell {
+            border-bottom: $grid-edit-cell-border;
+            background-color: $grid-edit-cell-bg;
+            box-shadow: $grid-edit-cell-shadow;
+        }
+    }
+
+    .k-grid-lockedcolumns {
+        .k-grid-header-locked {
+            border-right-color: $grid-border;
+        }
+
+        .k-grid-content,
+        .k-grid-header-wrap {
+            box-shadow: $grid-locked-column-shadow;
+        }
+    }
+
+    .k-grid-header {
+        color: $grid-header-text;
+        border-color: $grid-border;
+
+        .k-sorted {
+            color: $grid-text;
+        }
+
+        .k-sort-order {
+            margin: 0;
+            height: auto;
+        }
+
+        th:hover {
+            color: $grid-text;
+
+            .k-link>.k-icon.k-i-sort-asc-sm,
+            .k-link>.k-icon.k-i-sort-desc-sm,
+            .k-sort-order,
+            .k-i-filter {
+                color: $grid-header-text;
+            }
+        }
+
+        .k-grid-filter {
+            &:hover {
+                color: $grid-text;
+                background-color: transparent;
+            }
+
+            &:focus {
+                background-color: $grid-filter-button-focus;
+                box-shadow: none;
+            }
+        }
+
+        .k-header-column-menu.k-state-border-down {
+            background-color: $grid-filter-button-focus;
+            box-shadow: none;
+        }
+    }
+
+    .k-grouping-header .k-group-indicator {
+        background-color: $grid-grouping-indicator-bg;
+    }
+}

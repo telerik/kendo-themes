@@ -1,0 +1,112 @@
+@import "~@progress/kendo-theme-default/scss/grid/layout";
+
+@include exports ('grid/layout/material') {
+    $grid-header-font-size: 12px !default;
+    $grid-filter-button-offset: -10px !default;
+    $grid-filter-button-size: 36px !default;
+    $grid-header-line-height: 16px !default;
+    $grid-cell-padding-y: 20px !default;
+    $grid-cell-padding-x: 24px !default;
+    $grid-header-padding-right: 14px !default; //check if this is right with designer
+    $grid-form-component-offset: -12px !default;
+    $grid-hierarchy-col-width: 8px !default;
+    $grid-grouping-header-padding-y: 16px !default;
+    $grid-group-indicator-margin: 8px !default;
+
+    .k-grid {
+        line-height: 1;
+
+        td,
+        th {
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            background-clip: padding-box;
+        }
+
+        tr {
+            background-clip: padding-box;
+        }
+
+        th.k-header {
+            font-size: $grid-header-font-size;
+            line-height: $grid-header-line-height;
+        }
+
+        tr {
+            border-bottom-width: 0;
+        }
+
+        .k-grid-header-wrap .k-header,
+        .k-grid-header-locked .k-header {
+            padding: $grid-cell-padding-y $grid-header-padding-right $grid-cell-padding-x $grid-cell-padding-x;
+        }
+
+        .k-grid-content {
+            line-height: 1;
+
+            td {
+                border-width: 0;
+                border-bottom-width: 1px;
+                padding: $grid-cell-padding-y $grid-cell-padding-x;
+            }
+        }
+
+        .k-grid-edit-row td>.k-textbox,
+        .k-grid-edit-row td>.k-widget,
+        .k-command-cell>.k-button,
+        .k-edit-cell>.k-textbox,
+        .k-edit-cell>.k-widget {
+            margin-top: $grid-form-component-offset;
+            margin-bottom: $grid-form-component-offset;
+        }
+
+        .k-group-col,
+        .k-hierarchy-col {
+            width: $grid-hierarchy-col-width;
+        }
+    }
+
+    .k-grid-header {
+        border-width: 0 0 1px 0;
+
+        th {
+            border-width: 0;
+        }
+
+        .k-sorted {
+            font-weight: 700;
+        }
+
+        .k-grid-filter,
+        .k-header-column-menu {
+            margin: $grid-filter-button-offset 0;
+            width: $grid-filter-button-size;
+            height: $grid-filter-button-size;
+        }
+
+        .k-grid-filter {
+            border-radius: 50%;
+        }
+
+        .k-header .k-link>.k-icon.k-i-sort-asc-sm,
+        .k-header .k-link>.k-icon.k-i-sort-desc-sm {
+            margin-left: 8px;
+            margin-right: 4px;
+            vertical-align: bottom;
+        }
+
+        .k-header-column-menu {
+            border-radius: 50%;
+        }
+    }
+
+    .k-grouping-header {
+        padding: $grid-grouping-header-padding-y $grid-header-padding-right;
+
+        .k-group-indicator {
+            border-width: 0;
+            border-radius: 10% / 50%;
+            margin-right: $grid-group-indicator-margin;
+        }
+    }
+}
