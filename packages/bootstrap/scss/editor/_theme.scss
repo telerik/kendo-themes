@@ -13,6 +13,16 @@
         }
     }
 
+    // Inline Editor
+    .k-editor-inline {
+
+        // Hover & Actve state
+        &:hover,
+        &.k-state-active {
+            border-color: $panel-border;
+        }
+    }
+
     .k-overlay {
         background-color: $editor-overlay-background;
     }

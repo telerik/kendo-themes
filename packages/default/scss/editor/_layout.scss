@@ -26,10 +26,11 @@
     .k-editor-inline {
         @include border-radius();
         padding: $padding-y-sm $padding-x-sm;
-        border-width: 2px;
+        border: 1px solid transparent;
         word-wrap: break-word;
         overflow: auto;
         background: none;
+        transition: border-color 0.3s;
     }
     .k-window.k-editor-widget {
         padding: 0;
