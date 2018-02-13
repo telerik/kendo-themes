@@ -140,6 +140,7 @@
             max-width: 100%;
             min-height: 0;
             max-height: 100%;
+            height: 100%; // allows nested elements to use height: 100%
         }
 
         .k-pane-static {
