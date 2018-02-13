@@ -1,5 +1,6 @@
 @include exports("pager/layout") {
     $pager-buttons-size: calc(#{$form-line-height-em} + 2px) !default; /// icon button size + 2px border (top and bottom)
+    $pager-buttons-padding: $button-padding-y !default;
 
     .k-pager-wrap {
         padding: $pager-padding-y $pager-padding-x;
@@ -13,7 +14,7 @@
 
         .k-link,
         .k-state-selected {
-            padding: $button-padding-y;
+            padding: $pager-buttons-padding;
             width: $pager-buttons-size;
             height: $pager-buttons-size;
             line-height: $pager-buttons-size;
