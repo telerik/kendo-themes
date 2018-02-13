@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.11.6"></a>
+## [2.11.6](https://github.com/telerik/kendo-theme-bootstrap/compare/@progress/kendo-theme-bootstrap@2.11.5...@progress/kendo-theme-bootstrap@2.11.6) (2018-02-13)
+
+
+
+
+**Note:** Version bump only for package @progress/kendo-theme-bootstrap
+
 <a name="2.11.5"></a>
 ## [2.11.5](https://github.com/telerik/kendo-theme-bootstrap/compare/@progress/kendo-theme-bootstrap@2.11.4...@progress/kendo-theme-bootstrap@2.11.5) (2018-02-06)
 
