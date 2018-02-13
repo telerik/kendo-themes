@@ -1,46 +1,14 @@
-    @include exports("pager/theme") {
-    $pager-text: $header-text !default;
-    $pager-bg: $header-bg !default;
-    $pager-items-hover-bg: $list-item-hovered-bg !default;
-    $pager-numbers-text: $accent !default;
-    $pager-labels-text: rgba(0, 0, 0, .54) !default;
+@include exports("pager/theme") {
+    $pager-text: rgba(0, 0, 0, .54) !default;
 
     .k-pager-wrap {
-        color: $pager-labels-text;
-        background-color: $pager-bg;
-
-        .k-link,
-        .k-pager-nav {
-            &:focus {
-                box-shadow: $list-item-focused-shadow;
-            }
-
-            &:hover {
-                background-color: $pager-items-hover-bg;
-            }
-        }
-
-        .k-state-selected {
-            &:focus {
-                box-shadow: none;
-            }
-
-            &:hover {
-                color: $selected-text;
-                background-color: $selected-bg;
-                cursor: default;
-            }
-        }
+        color: $pager-text;
 
         .k-pager-nav,
         .k-pager-numbers .k-link,
         .k-pager-numbers .k-state-selected,
-        > .k-link {
+        >.k-link {
             border-radius: 50%;
-        }
-
-        .k-i-reload {
-            color: $pager-labels-text;
         }
     }
 

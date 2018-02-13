@@ -408,7 +408,7 @@ $icon-size-lg: 32px;
 $icon-spacing: 4px !default;
 
 // Pager
-$pager-padding-x: ( $toolbar-padding-x / 2 ) !default;
-$pager-padding-y: ( $toolbar-padding-y / 2 ) !default;
+$pager-padding-x: 8px !default;
+$pager-padding-y: 10px !default;
 
 @import "~@progress/kendo-theme-default/scss/variables";
