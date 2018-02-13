@@ -1,0 +1,25 @@
+$pager-buttons-size: 36px !default;
+$pager-buttons-padding: 0 !default;
+
+@import "~@progress/kendo-theme-default/scss/pager/layout";
+
+@include exports ('pager/layout/material') {
+    $pager-elements-margin: 8px !default;
+    $pager-elements-margin-lg: 32px !default;
+
+    .k-pager-wrap {
+        .k-pager-input,
+        .k-pager-numbers,
+        .k-pager-sizes {
+            margin: 0 $pager-elements-margin;
+        }
+
+        .k-pager-sizes>.k-dropdown {
+            margin: 0 $pager-elements-margin 0 0;
+        }
+
+        .k-pager-info {
+            margin: 0 $pager-elements-margin-lg;
+        }
+    }
+}
