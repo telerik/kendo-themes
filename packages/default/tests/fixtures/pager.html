@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Pager</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TODO: determine way to include the theme and font conditionally, to allow cross-theme tests -->
+    <link rel="stylesheet" href="/packages/material/dist/all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        body {
+            font-size: 14px;
+            font-family: Roboto, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="test-area">
+
+        <div class="k-pager-wrap k-widget k-floatwrap" data-role="pager">
+            <a href="#" title="Go to the first page" class="k-link k-pager-nav k-pager-first k-state-disabled" tabindex="-1"><span class="k-icon k-i-arrow-end-left"></span></a>
+            <a href="#" title="Go to the previous page" class="k-link k-pager-nav k-state-disabled" tabindex="-1"><span class="k-icon k-i-arrow-60-left"></span></a>
+
+            <ul class="k-pager-numbers k-reset">
+                <li class="k-current-page"><span class="k-link k-pager-nav">1</span></li>
+                <li><span class="k-state-selected">1</span></li>
+                <li><a tabindex="-1" href="#" class="k-link">2</a></li>
+                <li><a tabindex="-1" href="#" class="k-link">3</a></li>
+                <li><a tabindex="-1" href="#" class="k-link">4</a></li>
+                <li><a tabindex="-1" href="#" class="k-link">5</a></li>
+            </ul>
+
+            <a href="#" title="Go to the next page" class="k-link k-pager-nav" tabindex="-1"><span class="k-icon k-i-arrow-60-right"></span></a>
+
+            <a href="#" title="Go to the last page" class="k-link k-pager-nav k-pager-last" tabindex="-1"><span class="k-icon k-i-arrow-end-right"></span></a>
+
+            <span class="k-pager-sizes k-label">
+                <!-- dropdown -->
+                <span class="k-widget k-dropdown k-header" unselectable="on" tabindex="0">
+                    <span unselectable="on" class="k-dropdown-wrap k-state-default">
+                        <span unselectable="on" class="k-input">20</span>
+                        <span unselectable="on" class="k-select" aria-label="select">
+                            <span class="k-icon k-i-arrow-60-down"></span>
+                        </span>
+                    </span>
+                </span>
+                items per page
+            </span>
+
+            <a href="#" class="k-pager-refresh k-link" title="Refresh"><span class="k-icon k-i-reload"></span></a>
+
+            <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
