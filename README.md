@@ -28,6 +28,8 @@ If you do not own a commercial license, the usage of this software shall be gove
 For more information on how to add one of the themes in your project, refer to the following articles:
 
 * [Using the Kendo UI themes in Angular Projects](http://www.telerik.com/kendo-angular-ui/components/styling/)
+* [Using the Kendo UI themes in React Projects](http://www.telerik.com/kendo-react-ui/components/styling/)
+* [Using the Kendo UI themes in Vue Projects](http://www.telerik.com/kendo-vue-ui/components/styling/)
 * [Using the Kendo UI themes in jQuery Projects](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
 
 ## Development
@@ -38,14 +40,52 @@ During development, the SCSS files are linted on every `commit` and built on eve
 
 Browser-specific properties are generated at build-time through the [PostCSS autoprefixer](https://github.com/postcss/autoprefixer).
 
+### Working with the themes monorepo
+
+The repository uses [lerna](https://github.com/lerna/lerna/) to ship the multiple theme packages from a single git repository. For details why this is a good idea for the themes, see [this issue](https://github.com/telerik/kendo-theme-default/issues/720).
+
+To set up the repository and cross-link the theme packages, run the following commands:
+
+```bash
+# install root-level dependencies
+npm install
+
+# installs theme dependencies and cross-links theme packages
+npx lerna bootstrap
+```
+
+> `npx` runs packages from `./node_modules/.bin`, without requiring a global install
+
+After running these, you can use the following commands in the root of the repository:
+
+```bash
+# runs linting over all themes
+npx lerna run lint
+
+# builds all themes
+npx lerna run build
+
+# runs tests (lint + js tests + build)
+npm test
+```
+
+Changes in the `develop` branch will release a new package version on the `dev` channel, in the format `(version)-dev.(hash)`. The latest development version of a given theme can be installed with `npm install (themename)@dev`, for example `npm install @progress/kendo-theme-default@dev`.
+
 ### Embedding Resources
 
-The embedding of resources, such as images or fonts, avoids hosting-related issues when your project consumes the theme. For more details, refer to [this issue](https://github.com/telerik/kendo-theme-default/issues/41#issuecomment-258472183).
+To avoid hosting-related issues in projects that use the themes, we embed resources by encoding them in the output CSS. For more details, refer to [this issue](https://github.com/telerik/kendo-theme-default/issues/41#issuecomment-258472183).
 
-To update the embedded resources in your project:
+To embed the latest resources in a given theme:
 
-1. Run the `npm run embed-assets` task. As a result, the task generates a file with the same name, which registers a Base64-encoded version in the `$data-uris` SCSS map. For example, the `foo.woff` font file will receive a `foo.scss` file, which can later be imported through `@import './font/foo';`.
-1. Inline the Base64 version through `map-get( $data-uris, 'WebComponentsIcons.woff' )`.
+1. Run the `npm run embed-assets` task in the theme subfolder. The task generates a file with the same name, which registers a Base64-encoded version in the `$data-uris` SCSS map. For example, the `foo.woff` font file will be encoded in a `foo.scss` file, which can later be imported through `@import './font/foo';`.
+1. Inline the encoded file inside the CSS through `map-get( $data-uris, 'foo.woff' )`. For example:
+
+    ```scss
+    @font-face {
+        font-family: 'WebComponentsIcons';
+        src: url(map-get( $data-uris, 'WebComponentsIcons.woff' )) format( "woff" );
+    }
+    ```
 
 ### Documenting Variables
 

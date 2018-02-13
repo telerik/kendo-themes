@@ -335,6 +335,12 @@
             }
         }
 
+        .k-widget.form-control,
+        .k-maskedtextbox.form-control .k-textbox,
+        .k-textbox.form-control {
+            width: auto;
+        }
+
         .k-widget.form-control:not(:first-child):not(:last-child) {
             .k-dateinput-wrap,
             .k-dropdown-wrap,
@@ -347,7 +353,7 @@
         }
     }
 
-    .input-group-addon + .k-widget.form-control {
+    .input-group-prepend + .k-widget.form-control {
         .k-dateinput-wrap,
         .k-dropdown-wrap,
         .k-multiselect-wrap,
