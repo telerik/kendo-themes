@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.47.8"></a>
+## [2.47.8](https://github.com/telerik/kendo-theme-default/compare/@progress/kendo-theme-default@2.47.7...@progress/kendo-theme-default@2.47.8) (2018-02-13)
+
+
+### Bug Fixes
+
+* **calendar:** weekdays are not rendered in Edge ([6914a61](https://github.com/telerik/kendo-theme-default/commit/6914a61)), closes [telerik/kendo-themes#5](https://github.com/telerik/kendo-themes/issues/5)
+* **splitter:** allow pane children to use 100% height (Angular) ([5720b52](https://github.com/telerik/kendo-theme-default/commit/5720b52))
+* bootstrap 4 input groups styling ([0fcc32f](https://github.com/telerik/kendo-theme-default/commit/0fcc32f))
+
+
+
+
 <a name="2.47.7"></a>
 ## [2.47.7](https://github.com/telerik/kendo-theme-default/compare/@progress/kendo-theme-default@2.47.6...@progress/kendo-theme-default@2.47.7) (2018-02-06)
 
