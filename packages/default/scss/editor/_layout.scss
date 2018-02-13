@@ -95,7 +95,8 @@
         .k-tool-group + .k-tool-group {
             margin-left: $toolbar-padding-x;
         }
-        .k-tool-group .k-state-disabled {
+        .k-tool-group .k-state-disabled,
+        .k-tool-group.k-state-disabled {
             display: none;
         }
 
