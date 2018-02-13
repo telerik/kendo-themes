@@ -1,4 +1,5 @@
 $pager-buttons-size: 36px !default;
+$pager-buttons-padding: 0 !default;
 
 @import "~@progress/kendo-theme-default/scss/pager/layout";
 
@@ -7,11 +8,6 @@ $pager-buttons-size: 36px !default;
     $pager-elements-margin-lg: 32px !default;
 
     .k-pager-wrap {
-        .k-link,
-        .k-state-selected {
-            padding: 0;
-        }
-
         .k-pager-input,
         .k-pager-numbers,
         .k-pager-sizes {
