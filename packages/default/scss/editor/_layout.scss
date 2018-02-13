@@ -508,4 +508,21 @@
 
     }
 
+    .k-editor-inline .k-table {
+        width: 100%;
+        border-spacing: 0;
+        margin: 0 0 1em;
+
+        &,
+        & td {
+            outline: 0;
+            border: 1px dotted #ccc;
+        }
+
+        td {
+            min-width: 1px;
+            padding: $padding-y-sm $padding-x-sm;
+        }
+    }
+
 }
