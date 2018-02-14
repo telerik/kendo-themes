@@ -135,6 +135,7 @@
         height: auto;
 
         .k-pane {
+            position: relative;
             flex: 1 1 auto;
             min-width: 0;
             max-width: 100%;
