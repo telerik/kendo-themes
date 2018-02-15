@@ -228,6 +228,26 @@
 
 
 
+
+@include exports("card/layout/rtl") {
+
+    .k-rtl,
+    [dir="rtl"] {
+
+        // Deck
+        .k-card-deck {
+            .k-card + .k-card {
+                margin-left: 0;
+                margin-right: $card-deck-gap;
+            }
+        }
+    }
+
+}
+
+
+
+
 @include exports("card/layout/ie11") {
 
     .k-ie11 {
