@@ -34,6 +34,10 @@
     .k-dialog-titlebar {}
     .k-dialog-title {}
 
+    .k-dialog-close {
+        align-self: flex-end;
+    }
+
 
     // Actions
     .k-dialog-actions {}
