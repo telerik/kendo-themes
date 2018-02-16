@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@0.3.6...@progress/kendo-theme-material@0.4.0) (2018-02-16)
+
+
+### Features
+
+* add pager styles for material ([#10](https://github.com/telerik/kendo-themes/issues/10)) ([12e13f4](https://github.com/telerik/kendo-themes/commit/12e13f4))
+
+
+
+
 <a name="0.3.6"></a>
 ## [0.3.6](https://github.com/telerik/kendo-theme-material/compare/@progress/kendo-theme-material@0.3.5...@progress/kendo-theme-material@0.3.6) (2018-02-13)
 
