@@ -6,7 +6,7 @@
         font-family: 'WebComponentsIcons';
         font-style: normal;
         font-weight: normal;
-        src: url(map-get( $data-uris, 'WebComponentsIcons.woff' )) format( "woff" );
+        src: url(map-get( $data-uris, 'WebComponentsIcons.ttf' )) format( "truetype" );
     }
 
     .k-icon {
