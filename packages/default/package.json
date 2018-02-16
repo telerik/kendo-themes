@@ -12,7 +12,7 @@
   "sass": "scss/all.scss",
   "repository": {
     "type": "git",
-    "url": "https://github.com/telerik/kendo-theme-default.git"
+    "url": "https://github.com/telerik/kendo-themes.git"
   },
   "publishConfig": {
     "access": "public"

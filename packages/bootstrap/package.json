@@ -13,7 +13,7 @@
   "sass": "scss/all.scss",
   "repository": {
     "type": "git",
-    "url": "https://github.com/telerik/kendo-theme-bootstrap.git"
+    "url": "https://github.com/telerik/kendo-themes.git"
   },
   "publishConfig": {
     "access": "public"

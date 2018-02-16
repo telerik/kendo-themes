@@ -14,7 +14,7 @@
   "sass": "scss/all.scss",
   "repository": {
     "type": "git",
-    "url": "https://github.com/telerik/kendo-theme-material.git"
+    "url": "https://github.com/telerik/kendo-themes.git"
   },
   "publishConfig": {
     "access": "public"
