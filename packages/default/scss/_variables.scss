@@ -19,8 +19,10 @@ $font-family: inherit !default;
 /// Font family for monospaced text. Used for styling the code.
 $font-family-monospace:  Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
 
-/// Location map of registered fonts for PDF exports
+/// Base location of fonts used during PDF export
 $pdf-export-fonts-location: 'https://kendo.cdn.telerik.com/2018.1.117/styles/fonts/DejaVu/' !default;
+
+/// List of fonts used during PDF export
 $pdf-export-fonts: (
     ( name: 'DejaVu Sans',  url: $pdf-export-fonts-location + 'DejaVuSans.ttf' ),
     ( name: 'DejaVu Sans',  url: $pdf-export-fonts-location + 'DejaVuSans-Bold.ttf', weight: bold ),
