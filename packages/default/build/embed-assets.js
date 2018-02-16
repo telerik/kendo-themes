@@ -4,7 +4,7 @@ var glob = require('glob');
 var exec = require('child_process').exec;
 var path = require('path');
 
-glob('scss/**/*.{png,gif,woff}', function(err, files) {
+glob('scss/**/*.{png,gif,ttf,woff}', function(err, files) {
   if (err) {
     console.error(err);
   } else {
