@@ -20,6 +20,7 @@
     .k-dialog {
         padding: 0;
         position: fixed;
+        box-sizing: border-box;
 
         // Centered
         &.k-dialog-centered {
@@ -59,13 +60,15 @@
 
         .k-button {
             // sass-lint:disable no-important
+            display: inline-block; // needed for ellipsis overflow
             padding: ($window-inner-padding-x * .75) $window-inner-padding-x;
             width: auto !important;
             border-width: 0;
             border-color: inherit;
             background: none;
-            white-space: normal;
-            flex: 1;
+            flex: 1 0 0%;
+            overflow: hidden;
+            text-overflow: ellipsis;
             // sass-lint:enable no-important
 
             &::before,
