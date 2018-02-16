@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.48.0"></a>
+# [2.48.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.47.8...@progress/kendo-theme-default@2.48.0) (2018-02-16)
+
+
+### Bug Fixes
+
+* **dialog:** fix close button position in titleless dialog telerik/kendo-ui-core[#3603](https://github.com/telerik/kendo-themes/issues/3603) ([6686860](https://github.com/telerik/kendo-themes/commit/6686860))
+* **dialog:** improve close button alignment telerik/kendo[#8156](https://github.com/telerik/kendo-themes/issues/8156) ([35ebde2](https://github.com/telerik/kendo-themes/commit/35ebde2))
+* **dialog:** improve dialog buttons overflow telerik/kendo[#7497](https://github.com/telerik/kendo-themes/issues/7497) ([a481460](https://github.com/telerik/kendo-themes/commit/a481460))
+* **editor:** add styles for editor table telerik/kendo[#8213](https://github.com/telerik/kendo-themes/issues/8213) ([5cec16a](https://github.com/telerik/kendo-themes/commit/5cec16a))
+* **editor:** hide toolbar buttons groups with all items disabled telerik/kendo[#8212](https://github.com/telerik/kendo-themes/issues/8212) ([5d37cc4](https://github.com/telerik/kendo-themes/commit/5d37cc4))
+* **editor:** prevent hiding and flickering icon in inline editor [#8211](https://github.com/telerik/kendo-themes/issues/8211) ([c5fa45a](https://github.com/telerik/kendo-themes/commit/c5fa45a))
+* **splitter:** prevent pane overlay from overlaying splitbars ([231e329](https://github.com/telerik/kendo-themes/commit/231e329))
+* **spreadsheet:** improve edit buttons position for rtl telerik/kendo[#7476](https://github.com/telerik/kendo-themes/issues/7476) ([3739523](https://github.com/telerik/kendo-themes/commit/3739523))
+
+
+### Features
+
+* add pager styles for material ([#10](https://github.com/telerik/kendo-themes/issues/10)) ([12e13f4](https://github.com/telerik/kendo-themes/commit/12e13f4))
+
+
+
+
 <a name="2.47.8"></a>
 ## [2.47.8](https://github.com/telerik/kendo-theme-default/compare/@progress/kendo-theme-default@2.47.7...@progress/kendo-theme-default@2.47.8) (2018-02-13)
 
