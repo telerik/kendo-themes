@@ -1,33 +1,27 @@
+$scrollview-navigation-color: $base-text;
+
 @import "~@progress/kendo-theme-default/scss/scrollview/theme";
 
 @include exports("scrollview/theme/material") {
     $scrollview-text-opacity: .4 !default;
-    $scrollview-padding-y: 10px !default;
-    $scrollview-padding-x: $padding-y !default;
+    $scrollview-bottom: $scrollview-pager-spacing-x * 2;
 
-    .k-scrollview-next,
-    .k-scrollview-prev {
-        span {
-            color: $base-text;
-
-            &:hover {
-
-                &::before {
-                    background: rgba($base-bg, $scrollview-text-opacity);
-                }
-            }
+    .k-scrollview-next:hover,
+    .k-scrollview-prev:hover {
+        &::before {
+            background-color: rgba($base-bg, $scrollview-text-opacity);
         }
     }
 
     .k-scrollview-pageable {
-        bottom: $scrollview-padding-y * 2;
+        bottom: $scrollview-bottom;
 
         li.k-button {
-            background: rgba(black, $scrollview-text-opacity);
-            margin: $scrollview-padding-y $scrollview-padding-x;
+            background-color: rgba(black, $scrollview-text-opacity);
+            margin: $scrollview-pager-spacing-y $scrollview-pager-spacing-x;
 
             &.k-primary {
-                background: $primary;
+                background-color: $primary;
             }
         }
     }
