@@ -25,7 +25,8 @@
             border-bottom-color: $grid-border;
         }
 
-        .k-state-selected {
+        tr.k-state-selected,
+        tr.k-state-selected {
             color: $grid-text;
             background-color: $grid-selected-cell-bg;
         }
@@ -123,5 +124,10 @@
 
     .k-grouping-header .k-group-indicator {
         background-color: $grid-grouping-indicator-bg;
+    }
+
+    .k-grid-drag-clue {
+        background-color: $grid-grouping-indicator-bg;
+        color: inherit;
     }
 }

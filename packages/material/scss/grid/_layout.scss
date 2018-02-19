@@ -12,6 +12,7 @@
     $grid-hierarchy-col-width: 8px !default;
     $grid-grouping-header-padding-y: 16px !default;
     $grid-group-indicator-margin: 8px !default;
+    $grid-grouping-indicator-border-radius: calc( #{$font-size} + #{$button-padding-y}) !default;
 
     .k-grid {
         line-height: 1;
@@ -105,8 +106,18 @@
 
         .k-group-indicator {
             border-width: 0;
-            border-radius: 10% / 50%;
+            border-radius: $grid-grouping-indicator-border-radius;
             margin-right: $grid-group-indicator-margin;
         }
+    }
+
+    .k-grid-drag-clue {
+        padding: $button-padding-y $button-padding-x !important;
+        border-width: 0 !important;
+        width: auto !important;
+        line-height: 2 !important;
+        border-width: 0;
+        border-radius: $grid-grouping-indicator-border-radius;
+        font-size: $font-size;
     }
 }
