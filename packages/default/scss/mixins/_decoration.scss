@@ -1,9 +1,17 @@
 // Fill and outline
 @mixin fill( $color: null, $bg: null, $border: null, $gradient: null ) {
-    border-color: $border;
-    color: $color;
-    background-color: $bg;
-    @include linear-gradient( $gradient );
+    @if $border {
+        border-color: $border;
+    }
+    @if $color {
+        color: $color;
+    }
+    @if $bg {
+        background-color: $bg;
+    }
+    @if $gradient {
+        @include linear-gradient( $gradient );
+    }
 }
 @mixin outline( $color: null ) {
     border-color: $color;

@@ -548,16 +548,49 @@ $chart-minor-lines: rgba(0, 0, 0, .04) !default;
 
 $chart-area-opacity: .8 !default;
 
-//Icons
+// Icons
 $icon-size: 16px;
 $icon-size-lg: 32px;
 $icon-spacing: ($spacer / 2) !default;
 
+// Disabled mixin variables
+$disabled-filter: grayscale(.1) !default;
 $disabled-opacity: .65 !default;
 
 // Pager
 $pager-padding-x: $toolbar-padding-x !default;
 $pager-padding-y: $toolbar-padding-y !default;
+
+
+// Card
+$card-padding-x: $card-spacer-x !default;
+$card-padding-y: $card-spacer-y !default;
+$card-border-width: 1px !default;
+$card-border-radius: $card-border-radius !default;
+$card-box-shadow: false !default;
+
+$card-deck-gap: $card-deck-margin !default;
+
+$card-bg: $card-bg !default;
+$card-text: $panel-text !default;
+$card-border: $card-border-color !default;
+
+$card-header-padding-x: $card-padding-x !default;
+$card-header-padding-y: $card-padding-y !default;
+$card-header-border-width: $card-border-width !default;
+$card-header-bg: $card-cap-bg !default;
+$card-header-text: $card-text !default;
+$card-header-border: $card-border-color !default;
+
+$card-body-padding-x: $card-padding-x !default;
+$card-body-padding-y: $card-padding-y !default;
+
+$card-title-margin-bottom: $h5-margin-bottom !default;
+$card-subtitle-margin-bottom: $h6-margin-bottom !default;
+
+$card-actions-padding-x: $card-padding-x !default;
+$card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
+$card-actions-border-width: 1px !default;
 
 
 // Config maps
@@ -575,6 +608,10 @@ $typography-config: map-merge((
     h5: font-map($h5-font-size, normal, $headings-font-family, $headings-font-family),
     h6: font-map($h6-font-size, normal, $headings-font-family, $headings-font-family),
     body: font-map($font-size-base, $line-height-base, $font-weight-base, $font-family-base)
+), $typography-config);
+$typography-config: map-merge((
+    card-title: map-get($typography-config, h5),
+    card-subtitle: map-get($typography-config, h6)
 ), $typography-config);
 // sass-lint:enable indentation
 

@@ -148,7 +148,7 @@ $widget-border-width: 1px !default;
 
     // Horizontal rule
     .k-hr {
-        margin: ($spacer-y / 2) auto;
+        margin: $spacer-y auto;
         padding: 0;
         height: 0;
         border-width: 1px 0 0;
@@ -157,6 +157,21 @@ $widget-border-width: 1px !default;
         display: block;
         float: none;
         clear: both;
+    }
+    .k-hbox > .k-hr {
+        margin: 0;
+        width: auto;
+        height: auto;
+        border-width: 0 0 0 1px;
+        flex: 0 0 auto;
+    }
+    .k-vbox > .k-hr {
+        margin: 0;
+        flex: 0 0 auto;
+    }
+
+    .k-separator {
+        @extend .k-hr;
     }
 
 }
