@@ -437,6 +437,10 @@
 
     .k-grid-header-locked + .k-grid-header-wrap.k-auto-scrollable {
         margin-right: 0;
+
+        .k-ie & {
+            display: inline-block;
+        }
     }
 
     .k-grid-header,
