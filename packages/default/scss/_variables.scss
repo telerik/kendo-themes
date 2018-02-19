@@ -489,6 +489,37 @@ $pager-padding-x: $toolbar-padding-x !default;
 $pager-padding-y: $toolbar-padding-y !default;
 
 
+// Card
+$card-padding-x: 16px !default;
+$card-padding-y: 12px !default;
+$card-border-width: 1px !default;
+$card-border-radius: 4px !default;
+$card-box-shadow: false !default;
+
+$card-deck-gap: 16px !default;
+
+$card-bg: $panel-bg !default;
+$card-text: $panel-text !default;
+$card-border: $panel-border !default;
+
+$card-header-padding-x: $card-padding-x !default;
+$card-header-padding-y: $card-padding-y !default;
+$card-header-border-width: 1px !default;
+$card-header-bg: $header-bg !default;
+$card-header-text: $header-text !default;
+$card-header-border: $header-border !default;
+
+$card-body-padding-x: $card-padding-x !default;
+$card-body-padding-y: $card-padding-y !default;
+
+$card-title-margin-bottom: $h2-margin-bottom !default;
+$card-subtitle-margin-bottom: $h6-margin-bottom !default;
+
+$card-actions-padding-x: $card-padding-x !default;
+$card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
+$card-actions-border-width: 1px !default;
+
+
 // Config maps
 $typography-config: () !default;
 // sass-lint:disable indentation
@@ -504,5 +535,9 @@ $typography-config: map-merge((
     h5: font-map($h5-font-size, normal, $font-weight-normal, inherit),
     h6: font-map($h6-font-size, normal, $font-weight-normal, inherit),
     body: font-map($font-size, $line-height, $font-weight-normal, inherit)
+), $typography-config);
+$typography-config: map-merge((
+    card-title: map-get($typography-config, h2),
+    card-subtitle: map-get($typography-config, h6)
 ), $typography-config);
 // sass-lint:enable indentation
