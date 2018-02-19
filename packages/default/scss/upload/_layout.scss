@@ -27,6 +27,7 @@
             border-width: 0;
             background-color: transparent;
 
+            em, // BACKCOMPAT: ensures backwards compatibility for KendoUI jQuery, remove when rendering changes
             .k-dropzone-hint {
                 margin-left: $spacer-x;
                 flex: 1;
