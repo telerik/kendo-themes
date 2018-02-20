@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-default",
   "description": "SASS resources for the default Kendo UI theme",
-  "version": "2.48.0",
+  "version": "2.48.1",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
