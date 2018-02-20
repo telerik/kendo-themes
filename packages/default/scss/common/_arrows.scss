@@ -1,0 +1,21 @@
+@include exports( "common/arrows" ) {
+
+    // Arrows
+    .k-arrow-e,
+    .k-arrow-w {
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        position: absolute;
+        top: -4px;
+    }
+    .k-arrow-e {
+        border-left-color: currentColor;
+        right: -6px;
+    }
+    .k-arrow-w {
+        border-right-color: currentColor;
+        left: -6px;
+    }
+
+}
