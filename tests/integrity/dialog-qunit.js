@@ -1,6 +1,6 @@
 QUnit.module("Dialog", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/base/tests/integrity/fixtures/dialog.html" );
+        TestHelper.loadFixture( "/fixtures/dialog.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();

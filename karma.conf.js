@@ -14,7 +14,7 @@ module.exports = function(config) {
         files: [
             "node_modules/jquery/dist/jquery.js",
             "tests/integrity/lib/helpers.js",
-            "packages/default/dist/all.css",
+            "packages/*/dist/all.css",
             "tests/integrity/fixtures/**/*.html",
             "tests/integrity/data/metrics.js",
             "tests/integrity/**/*-qunit.js"
@@ -69,6 +69,14 @@ module.exports = function(config) {
         // Concurrency level
         // how many browser should be started simultaneous
         concurrency: Infinity,
+
+
+        // Proxies
+        proxies: {
+            "/tests/": "/base/tests/",
+            "/fixtures/": "/base/tests/integrity/fixtures/",
+            "/theme/": (function() {return `/base/packages/${config.theme || "default"}/dist/` })()
+        },
 
 
 

@@ -1,6 +1,6 @@
 QUnit.module("Upload", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/base/tests/integrity/fixtures/upload.html" );
+        TestHelper.loadFixture( "/fixtures/upload.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();

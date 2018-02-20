@@ -1,6 +1,6 @@
 QUnit.module("Slider", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/base/tests/integrity/fixtures/slider.html" );
+        TestHelper.loadFixture( "/fixtures/slider.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();

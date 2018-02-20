@@ -1,6 +1,6 @@
 QUnit.module("Dateinput", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/base/tests/integrity/fixtures/datetime.html" );
+        TestHelper.loadFixture( "/fixtures/datetime.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();
@@ -29,7 +29,7 @@ QUnit.test("Dateinput select size should be 28:28", function( assert ) {
 
 QUnit.module("Datepicker", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/base/tests/integrity/fixtures/datetime.html" );
+        TestHelper.loadFixture( "/fixtures/datetime.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();
@@ -58,7 +58,7 @@ QUnit.test("Datepicker select size should be 28:28", function( assert ) {
 
 QUnit.module("Timepicker", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/base/tests/integrity/fixtures/datetime.html" );
+        TestHelper.loadFixture( "/fixtures/datetime.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();
@@ -87,7 +87,7 @@ QUnit.test("Timepicker select size should be 28:28", function( assert ) {
 
 QUnit.module("DateTimepicker", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/base/tests/integrity/fixtures/datetime.html" );
+        TestHelper.loadFixture( "/fixtures/datetime.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();
