@@ -2,7 +2,7 @@ module.exports = function(config) {
     config.set({
 
         // base path that will be used to resolve all patterns (eg. files, exclude)
-        basePath: './../',
+        basePath: './',
 
 
         // frameworks to use
@@ -13,11 +13,11 @@ module.exports = function(config) {
         // list of files / patterns to load in the browser
         files: [
             "node_modules/jquery/dist/jquery.js",
-            "tests/lib/helpers.js",
-            "dist/all.css",
-            "tests/fixtures/**/*.html",
-            "tests/data/metrics.js",
-            "tests/**/*-qunit.js"
+            "tests/integrity/lib/helpers.js",
+            "packages/default/dist/all.css",
+            "tests/integrity/fixtures/**/*.html",
+            "tests/integrity/data/metrics.js",
+            "tests/integrity/**/*-qunit.js"
         ],
 
 

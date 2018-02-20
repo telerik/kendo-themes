@@ -1,6 +1,6 @@
 QUnit.module("Autocomplete", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/base/tests/fixtures/autocomplete.html" );
+        TestHelper.loadFixture( "/base/tests/integrity/fixtures/autocomplete.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();

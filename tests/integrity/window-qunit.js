@@ -1,6 +1,6 @@
 QUnit.module("Window", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/base/tests/fixtures/window.html" );
+        TestHelper.loadFixture( "/base/tests/integrity/fixtures/window.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();
