@@ -63,12 +63,6 @@
     }
 
 
-    // Box sizing
-    .k-block {
-        box-sizing: border-box;
-    }
-
-
     // Centering
     .k-centered {
         position: absolute;
@@ -139,22 +133,6 @@
     // Panels
     .k-content {
         @include appearance( panel );
-    }
-    .k-block {
-        @extend .k-widget;
-        @include border-radius();
-        padding: $panel-padding-y $panel-padding-x;
-
-        > .k-header {
-            @include appearance( header );
-            margin: #{-$panel-padding-y} #{-$panel-padding-x} $panel-padding-y;
-            padding: $header-padding-y $popup-padding-x;
-        }
-
-        ::selection {
-            background-color: $accent;
-            color: $accent-contrast;
-        }
     }
 
     .k-info-colored {
