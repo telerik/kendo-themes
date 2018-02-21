@@ -31,8 +31,7 @@
     }
     table.k-widget { display: table; }
 
-    kendo-sortable,
-    .k-display-block {
+    kendo-sortable {
         display: block;
     }
 
@@ -132,12 +131,6 @@
         position: absolute;
         top: 0;
         right: 0;
-    }
-
-
-    // Hiding
-    .k-hidden {
-        display: none !important; // sass-lint:disable-line no-important
     }
 
 
