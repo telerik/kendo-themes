@@ -57,6 +57,7 @@
             }
 
             &.k-dropzone-active {
+                em, // BACKCOMPAT: ensures backwards compatibility for KendoUI jQuery, remove when rendering changes
                 .k-dropzone-hint {
                     display: block;
                     visibility: visible;
