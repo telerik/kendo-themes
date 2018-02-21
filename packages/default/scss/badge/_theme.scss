@@ -1,0 +1,9 @@
+@include exports( "badge/theme" ) {
+
+    // Badge
+    .k-badge {
+        color: $accent-contrast;
+        background-color: $accent;
+    }
+
+}
