@@ -2,7 +2,7 @@ module.exports = function(config) {
     config.set({
 
         // base path that will be used to resolve all patterns (eg. files, exclude)
-        basePath: './../',
+        basePath: './',
 
 
         // frameworks to use
@@ -13,11 +13,11 @@ module.exports = function(config) {
         // list of files / patterns to load in the browser
         files: [
             "node_modules/jquery/dist/jquery.js",
-            "tests/lib/helpers.js",
-            "dist/all.css",
-            "tests/fixtures/**/*.html",
-            "tests/data/metrics.js",
-            "tests/**/*-qunit.js"
+            "tests/integrity/lib/helpers.js",
+            `packages/${config.theme || "default"}/dist/all.css`,
+            "tests/integrity/fixtures/**/*.html",
+            "tests/integrity/data/metrics.js",
+            "tests/integrity/**/*-qunit.js"
         ],
 
 
@@ -69,6 +69,14 @@ module.exports = function(config) {
         // Concurrency level
         // how many browser should be started simultaneous
         concurrency: Infinity,
+
+
+        // Proxies
+        proxies: {
+            "/tests/": "/base/tests/",
+            "/fixtures/": "/base/tests/integrity/fixtures/",
+            "/theme/": `/base/packages/${config.theme || "default"}/dist/`
+        },
 
 
 
