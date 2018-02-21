@@ -135,32 +135,6 @@
         @include appearance( panel );
     }
 
-    .k-info-colored {
-        color: #50607f;
-        border-color: #d0d9df;
-        background-color: #f0f9ff;
-    }
-
-    .k-success-colored {
-        color: #507f50;
-        border-color: #d0dfd0;
-        background-color: #f0fff0;
-    }
-
-    .k-error-colored {
-        color: #7f5050;
-        border-color: #dfd0d0;
-        background-color: #fff0f0;
-    }
-
-    .k-shadow {
-        box-shadow: $popup-shadow;
-    }
-
-    .k-inset {
-        box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .03), inset 0 4px 5px 0 rgba(0, 0, 0, .04);
-    }
-
 
     // Header
     .k-header {

@@ -1,0 +1,72 @@
+@include exports( "common/decoration/color" ) {
+
+    // sass-lint:disable-block no-important
+
+    .k-text-primary     { color: $accent !important; }
+    .k-text-info        { color: $info !important; }
+    .k-text-success     { color: $success !important; }
+    .k-text-warning     { color: $warning !important; }
+    .k-text-erorr       { color: $error !important; }
+
+}
+
+
+@include exports( "common/decoration/background" ) {
+
+    // sass-lint:disable-block no-important
+
+    .k-bg-primary       { background-color: $accent !important; }
+    .k-bg-info          { background-color: $info !important; }
+    .k-bg-success       { background-color: $success !important; }
+    .k-bg-warning       { background-color: $warning !important; }
+    .k-bg-erorr         { background-color: $error !important; }
+
+}
+
+
+@include exports( "common/decoration/variant" ) {
+
+    @mixin variant( $base ) {
+        background-color: color-level($base, 10);
+        color: color-level($base, -6);
+        border-color: color-level($base, 9);
+    }
+
+    .k-state-primary    { @include variant( $accent ); }
+    .k-state-info       { @include variant( $info ); }
+    .k-state-success    { @include variant( $success ); }
+    .k-state-warning    { @include variant( $warning ); }
+    .k-state-erorr      { @include variant( $error ); }
+
+}
+
+
+@include exports( "common/decoration/legacy" ) {
+
+    .k-info-colored {
+        color: #50607f;
+        border-color: #d0d9df;
+        background-color: #f0f9ff;
+    }
+
+    .k-success-colored {
+        color: #507f50;
+        border-color: #d0dfd0;
+        background-color: #f0fff0;
+    }
+
+    .k-error-colored {
+        color: #7f5050;
+        border-color: #dfd0d0;
+        background-color: #fff0f0;
+    }
+
+    .k-shadow {
+        box-shadow: $popup-shadow;
+    }
+
+    .k-inset {
+        box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .03), inset 0 4px 5px 0 rgba(0, 0, 0, .04);
+    }
+
+}
