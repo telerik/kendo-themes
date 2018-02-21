@@ -87,33 +87,6 @@
         display: none !important;
     }
 
-
-    // Dirty indicator
-    .k-dirty {
-        margin: 0;
-        padding: 0;
-        width: 0;
-        height: 0;
-        border-width: 3px;
-        border-style: solid;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-
-    // Horizontal rule
-    .k-hr {
-        margin: ($spacer-y / 2) auto;
-        padding: 0;
-        height: 0;
-        border-width: 1px 0 0;
-        border-style: solid;
-        display: block;
-        float: none;
-        clear: both;
-    }
-
 }
 
 
@@ -193,18 +166,6 @@
         // background-color: $widget-bg;
     }
 
-
-    // Dirty indicator
-    .k-dirty {
-        border-color: $error $error transparent transparent;
-    }
-
-
-    // Horizontal rule
-    .k-hr {
-        border-color: $panel-border;
-    }
-
 }
 
 
@@ -232,6 +193,43 @@
             opacity: 1;
             filter: grayscale(0);
         }
+    }
+
+}
+
+
+@include exports( "common/misc/hr" ) {
+
+    // Horizontal rule
+    .k-hr {
+        margin: ($spacer-y / 2) auto;
+        padding: 0;
+        height: 0;
+        border-width: 1px 0 0;
+        border-style: solid;
+        border-color: $panel-border;
+        display: block;
+        float: none;
+        clear: both;
+    }
+
+}
+
+
+@include exports( "common/misc/dirty" ) {
+
+    // Dirty indicator
+    .k-dirty {
+        margin: 0;
+        padding: 0;
+        width: 0;
+        height: 0;
+        border-width: 3px;
+        border-style: solid;
+        border-color: $error $error transparent transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
 }
