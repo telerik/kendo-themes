@@ -1,0 +1,27 @@
+@include exports( "common/scrollbar" ) {
+
+    // virtual scrollbar
+    .k-scrollbar {
+        position: absolute;
+        overflow: scroll;
+    }
+
+    .k-scrollbar-vertical {
+        top: 0;
+        right: 0;
+        width: 17px; /* scrollbar width */
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .k-touch-scrollbar {
+        display: none;
+        position: absolute;
+        z-index: 200000;
+        height: 8px;
+        width: 8px;
+        border: 1px solid #8a8a8a;
+        background-color: #858585;
+    }
+
+}
