@@ -23,11 +23,6 @@
         display: block;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
-
-        &:disabled,
-        &[disabled] {
-            @include disabled;
-        }
     }
     table.k-widget { display: table; }
 
@@ -271,9 +266,27 @@
     }
 
 
+    // Dirty indicator
+    .k-dirty {
+        border-color: $error $error transparent transparent;
+    }
+
+
+    // Horizontal rule
+    .k-hr {
+        border-color: $panel-border;
+    }
+
+}
+
+
+@include exports( "common/disabled" ) {
+
     // Disabled state
     .k-disabled,
-    .k-state-disabled {
+    .k-state-disabled,
+    .k-widget:disabled,
+    .k-widget[disabled] {
         @include disabled;
 
 
@@ -291,17 +304,6 @@
             opacity: 1;
             filter: grayscale(0);
         }
-    }
-
-    // Dirty indicator
-    .k-dirty {
-        border-color: $error $error transparent transparent;
-    }
-
-
-    // Horizontal rule
-    .k-hr {
-        border-color: $panel-border;
     }
 
 }
