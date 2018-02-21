@@ -95,11 +95,7 @@
     // Widget
     .k-widget {
         @include appearance( widget );
-
-        ::selection {
-            background-color: $accent;
-            color: $accent-contrast;
-        }
+        @extend %text-selection;
     }
 
 
@@ -109,61 +105,11 @@
     }
 
 
-    // Header
-    .k-header {
-        // @include appearance( header );
-    }
-    .k-header.k-state-hover {
-        // @include appearance( hovered-header );
-    }
-    .k-header.k-state-selected {
-        // @include appearance( selected-header );
-    }
-
-
-    // Link
-    .k-link,
-    .k-link:hover {
-        // color: $base-text;
-    }
-
-
-    // Hover state
-    .k-state-hover,
-    .k-state-hover:hover {
-        // background-color: $hovered-bg;
-        // border-color: $hovered-border;
-        // color: $hovered-text;
-    }
-
-
     // Selected state
     .k-state-selected {
         color: $selected-text;
         background-color: $selected-bg;
         border-color: $selected-border;
-    }
-
-
-    // TODO: focused state
-    // Focused focused state
-    .k-state-focused {
-        // box-shadow: $focused-item-shadow;
-    }
-
-
-    // TODO: what is highlight state?
-    // Highlight state
-    .k-state-highlight {
-        // background-color: saturate($base-bg, 4%);
-        // border-color: $accent;
-    }
-
-
-    // TODO: what is active state?
-    // Active state
-    .k-state-active {
-        // background-color: $widget-bg;
     }
 
 }
