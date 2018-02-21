@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.48.1"></a>
+## [2.48.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.48.0...@progress/kendo-theme-default@2.48.1) (2018-02-20)
+
+
+### Bug Fixes
+
+* **grid:** fix misaligned locked columns header in IE ([a14a49a](https://github.com/telerik/kendo-themes/commit/a14a49a))
+
+
+
+
 <a name="2.48.0"></a>
 # [2.48.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.47.8...@progress/kendo-theme-default@2.48.0) (2018-02-16)
 
