@@ -56,16 +56,6 @@
     }
 
 
-    // Float wrap
-    .k-floatwrap::after,
-    .k-grid-toolbar::after,
-    .k-slider-items::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-
-
     // Links
     .k-link,
     .k-link:hover {

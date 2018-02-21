@@ -1,0 +1,9 @@
+@include exports( "common/utils/float" ) {
+
+    // sass-lint:disable-block no-important
+
+    .k-float-left  { float: left !important; }
+    .k-float-right { float: right !important; }
+    .k-float-none  { float: none !important; }
+
+}
