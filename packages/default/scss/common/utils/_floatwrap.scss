@@ -1,0 +1,12 @@
+@include exports( "common/utils/floatwrap" ) {
+
+    // Float wrap
+    .k-floatwrap::after,
+    .k-grid-toolbar::after,
+    .k-slider-items::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+}

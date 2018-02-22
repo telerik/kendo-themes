@@ -1,0 +1,22 @@
+@include exports( "common/panel" ) {
+
+    .k-block,
+    .k-panel {
+        @include appearance( widget );
+        @include border-radius();
+        @extend %text-selection;
+        padding: $panel-padding-y $panel-padding-x;
+        border-width: 1px;
+        border-style: solid;
+        box-sizing: border-box;
+
+        > .k-header {
+            @include appearance( header );
+            @include border-top-radius();
+            margin: #{-$panel-padding-y} #{-$panel-padding-x} $panel-padding-y;
+            padding: $header-padding-y $header-padding-x;
+        }
+
+    }
+
+}

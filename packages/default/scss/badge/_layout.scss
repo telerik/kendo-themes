@@ -1,0 +1,32 @@
+@include exports( "badge/layout" ) {
+
+    // Badge
+    .k-badge {
+        @include border-radius();
+        padding: 0 $padding-x-sm;
+        box-sizing: border-box;
+        font-size: $font-size-xs;
+        line-height: $line-height-lg;
+        text-align: center;
+        white-space: nowrap;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+    // Badge in button
+    .k-button .k-badge {
+        margin-left: $padding-x-sm;
+        position: relative;
+        z-index: 5;
+    }
+
+
+    // RTL
+    .k-rtl .k-badge {
+        right: auto;
+        left: -.5em * $line-height-lg;
+    }
+
+}
