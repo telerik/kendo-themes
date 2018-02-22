@@ -33,17 +33,11 @@
     .k-textarea {
         border-width: $input-border-width;
         border-radius: $border-radius;
-        padding: $textarea-padding-x;
     }
 
     // Floating label
     .k-textbox-container {
         vertical-align: top;
-
-        > .k-widget {
-            flex: 1 1 auto;
-            width: auto;
-        }
 
         > .k-label {
             color: $floating-label-color;
@@ -57,64 +51,10 @@
         .ng-invalid.ng-dirty + .k-label {
             color: $error;
         }
+    }
 
-        // Textarea Floating label
-        &.k-textarea-wrapper {
-            .k-textarea {
-                padding-top: $textarea-padding-y;
-
-                &:focus {
-                    border-color: $accent;
-                    border-width: $input-border-width;
-                }
-            }
-
-            .k-label {
-                padding: $textarea-padding-y $textarea-padding-y 0 $textarea-padding-y;
-            }
-
-            &.k-state-empty {
-                .k-label {
-                    padding-top: $textarea-padding-x;
-                }
-            }
-
-            .k-label,
-            &.k-state-focused > .k-label {
-                padding-top: $textarea-padding-x * 2;
-            }
-
-            &::after {
-                display: none;
-            }
-        }
-
-        .k-rtl &,
-        &[dir='rtl'] {
-
-            &.k-textarea-wrapper {
-                .k-textarea {
-                    padding-top: 2 * $textarea-padding-x;
-                }
-
-                &.k-state-empty {
-                    .k-label {
-                        padding-right: $textarea-floating-label-padding;
-                    }
-                }
-
-                > .k-label {
-                    left: auto;
-                    right: add-two($textarea-padding-x, $input-border-width, -1);
-                    padding-right: $textarea-padding-y;
-                }
-
-                > .k-label,
-                &.k-state-focused > .k-label {
-                    padding-right: 0;
-                }
-            }
-        }
+    .k-textarea-wrapper .k-textarea:focus {
+        border-color: $accent;
     }
 }
 
