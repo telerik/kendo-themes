@@ -1,0 +1,163 @@
+@include exports('upload/theme') {
+    $upload-text: $panel-text !default;
+    $upload-padding: 14px !default;
+
+    $upload-padding-sm: $popup-padding-y !default;
+
+    $upload-button-bg: rgba(0, 0, 0, 0.12) !default;
+    $upload-button-active-bg: rgba(0, 0, 0, 0.28) !default;
+
+    $upload-border-color: rgba(0, 0, 0, .08) !default;
+
+    .k-upload {
+        .k-dropzone {
+            border-width: $input-border-width;
+            border-color: $upload-border-color;
+            padding: $upload-padding;
+
+            .k-upload-status {
+                padding: $padding-y $padding-y * 3;
+
+                > .k-icon {
+                    margin-right: $upload-padding-sm;
+                }
+            }
+
+            .k-dropzone-hint {
+                margin-left: $upload-padding;
+            }
+        }
+
+        .k-upload-files {
+            .k-file {
+                padding: $upload-padding $upload-padding $upload-padding $input-padding-y * 3;
+
+                &.k-state-focused {
+                    outline-color: $accent;
+                }
+
+                &.k-file-success {
+                    .k-progress {
+                        background: $upload-progress-success;
+                    }
+                }
+
+                &.k-file-error {
+                    .k-progress {
+                        background: $upload-progress-error;
+                    }
+                }
+            }
+
+            .k-file-name {
+                margin-top: 0;
+                padding-right: $upload-padding * 3;
+                color: $base-text;
+                line-height: 1.3em;
+            }
+
+            .k-file-name-size-wrapper {
+                margin-left: $icon-size * 2;
+            }
+
+            .k-file-extension-wrapper,
+            .k-multiple-files-extension-wrapper {
+                top: $upload-padding;
+            }
+
+            .k-file-invalid-extension-wrapper,
+            .k-file-name-invalid,
+            .k-file-validation-message {
+                color: $upload-progress-error;
+            }
+
+            .k-file-invalid-extension-wrapper {
+                .k-file-invalid-icon {
+                    margin-left: .2rem;
+                }
+            }
+
+            .k-upload-status {
+                right: $upload-padding;
+                top: $upload-padding;
+            }
+
+            .k-upload-action {
+                .k-icon {
+                    width: 2rem;
+                    height: 2rem;
+                    line-height: 2;
+                    border-radius: 50%;
+
+                    &:hover {
+                        background-color: $upload-button-bg;
+                    }
+                }
+            }
+        }
+
+        > .k-action-buttons {
+            padding: $upload-padding-sm $upload-padding;
+        }
+
+        .k-button {
+            box-shadow: none;
+
+            &.k-clear-selected,
+            &.k-upload-selected {
+                padding: 0 $padding-x-sm;
+            }
+
+            &.k-upload-button {
+                margin: 0;
+                text-transform: uppercase;
+                background-color: $upload-button-bg;
+
+                &:active,
+                &.k-state-active {
+                    background-color: $upload-button-active-bg;
+                }
+            }
+
+            &.k-upload-selected {
+                border-left-width: 0;
+            }
+
+            &.k-clear-selected {
+                color: $upload-text;
+                opacity: .4;
+
+                &:hover {
+                    color: $base-text;
+                    opacity: .5;
+                }
+
+                &:hover,
+                &:active {
+                    background-color: $action-button-cancel-bg;
+                }
+
+                &:active {
+                    color: $base-text;
+                    opacity: .7;
+                }
+            }
+
+            &.k-clear-selected,
+            &.k-upload-selected {
+                width: auto;
+                font-size: $font-size-sm;
+            }
+
+            &.k-state-focused {
+                box-shadow: none;
+            }
+        }
+
+        .k-progress {
+            background-color: $upload-progress-info;
+            height: 3px;
+        }
+    }
+}
+

@@ -182,6 +182,10 @@ $success: #37b400 !default;
 /// The color for informational messages and states.
 $info: #0058e9 !default;
 
+$upload-progress-error: #ff1744 !default;
+$upload-progress-success: $success !default;
+$upload-progress-info: $secondary !default;
+
 $invalid-border-color: rgba($error, .5) !default;
 
 $gradient-transparent-to-black: rgba( black, 0), black;
