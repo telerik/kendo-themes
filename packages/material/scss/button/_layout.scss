@@ -3,6 +3,21 @@ $outline-button-border-width: 2px;
 @import "~@progress/kendo-theme-default/scss/button/layout";
 
 @include exports("button/layout/material") {
+
+    .k-button {
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: currentColor;
+            opacity: 0;
+        }
+    }
+
     .k-button.k-outline {
         &::before {
             content: "";

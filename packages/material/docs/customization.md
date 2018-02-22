@@ -316,7 +316,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-hovered-text</td>
 <td>
     
-    $hovered-text
+    $button-text
 </td>
 <td>The text color of hovered buttons.
 </td>
@@ -325,7 +325,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-hovered-bg</td>
 <td>
     
-    rgba(0, 0, 0, .12)
+    mix( $button-text, $button-bg, 12%)
 </td>
 <td>The background of hovered buttons.
 </td>
@@ -361,7 +361,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-pressed-bg</td>
 <td>
     
-    $button-bg
+    mix( $button-text, $button-bg, 12%)
 </td>
 <td>The background color of pressed buttons.
 </td>
@@ -370,7 +370,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-pressed-border</td>
 <td>
     
-    $button-border
+    $button-pressed-bg
 </td>
 <td>The border color of pressed buttons.
 </td>
