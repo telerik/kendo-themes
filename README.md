@@ -52,10 +52,10 @@ To set up the monorepo:
 
   > The `npx` command runs packages from `./node_modules/.bin` without requiring a global install.
 
-1. After running these commands and in the root of the repository:
-  1. Run `npx lerna run lint` to run the linting over all the themes.
-  1. Run `npx lerna run build` to build all the themes.
-  1. Run `npm test` to run the tests (lint, JS tests, and build).
+After running these commands and in the root of the repository:
+1. Run `npx lerna run lint` to run the linting over all the themes.
+1. Run `npx lerna run build` to build all the themes.
+1. Run `npm test` to run the tests (lint, JS tests, and build).
 
 Changes in the `develop` branch release a new package version on the `dev` channel and in the `(version)-dev.(hash)` format. To install the latest development version of a given theme, run `npm install (themename)@dev`&mdash;for example, `npm install @progress/kendo-theme-default@dev`.
 
