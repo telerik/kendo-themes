@@ -119,7 +119,7 @@ $rgba-transparent: rgba( 0, 0, 0, 0 );
 // Theme colors
 /// The color that focuses the user attention.
 /// Used for primary buttons and for elements of primary importance across the theme.
-$primary: #43a047 !default;
+$primary: #3f51b5 !default;
 $accent: $primary;
 
 /// The color used along with the primary color denoted by $primary.
@@ -128,7 +128,7 @@ $primary-contrast: #ffffff !default;
 $accent-contrast: $primary-contrast;
 
 /// The secondary (accent) color of the theme.
-$secondary: #3193ee !default;
+$secondary: #ff4081 !default;
 
 /// The color used along with the secondary color denoted by $secondary.
 /// Used to provide contrast between the background and foreground colors.
