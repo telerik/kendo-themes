@@ -25,4 +25,36 @@ $floating-label-transition: .4s cubic-bezier(.25, .8, .25, 1) !default;
             max-width: $checkbox-size;
         }
     }
+
+    // Textarea Floating label
+    .k-textarea-wrapper {
+        padding-top: 0;
+
+        .k-textarea {
+            padding: $textarea-padding-y $textarea-padding-x;
+
+            &:focus {
+                border-width: $input-border-width;
+            }
+        }
+
+        > .k-label {
+            left: add-two($textarea-padding-x, $input-border-width);
+        }
+
+        &::after {
+            // disable input ripple
+            display: none;
+        }
+
+        .k-rtl &,
+        &[dir='rtl'] {
+            &.k-textarea-wrapper {
+                > .k-label {
+                    left: auto;
+                    right: add-two($textarea-padding-x, $input-border-width);
+                }
+            }
+        }
+    }
 }
