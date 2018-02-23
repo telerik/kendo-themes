@@ -1,10 +1,11 @@
 # Kendo UI Themes Monorepo
 
-Theis is a monorepo that holds the SCSS-based themes for the Kendo UI components.
+This is a monorepo that holds the SCSS-based themes for the Kendo UI components.
 
 * [License](#license)
 * [Basic Usage](#basic-usage)
 * [Development](#development)
+    * [Working with This Monorepo](#working-with-this-monorepo)
     * [Embedding Resources](#embedding-resources)
     * [Documenting Variables](#documenting-variables)
 
@@ -40,44 +41,31 @@ During development, the SCSS files are linted on every `commit` and built on eve
 
 Browser-specific properties are generated at build-time through the [PostCSS autoprefixer](https://github.com/postcss/autoprefixer).
 
-### Working with the themes monorepo
+### Working with This Monorepo
 
-The repository uses [lerna](https://github.com/lerna/lerna/) to ship the multiple theme packages from a single git repository. For details why this is a good idea for the themes, see [this issue](https://github.com/telerik/kendo-theme-default/issues/720).
+The repository uses [lerna](https://github.com/lerna/lerna/) to ship the multiple theme packages from a single Git repository. For details why this is a good idea for the themes, see [this issue](https://github.com/telerik/kendo-theme-default/issues/720).
 
-To set up the repository and cross-link the theme packages, run the following commands:
+To set up the monorepo:
 
-```bash
-# install root-level dependencies
-npm install
+1. Run `npm install` to install the root-level dependencies.
+1. Run `npx lerna bootstrap` to install the theme dependencies and cross-link the theme packages.
 
-# installs theme dependencies and cross-links theme packages
-npx lerna bootstrap
-```
+  > The `npx` command runs packages from `./node_modules/.bin` without requiring a global install.
 
-> `npx` runs packages from `./node_modules/.bin`, without requiring a global install
+1. After running these commands and in the root of the repository:
+  1. Run `npx lerna run lint` to run the linting over all the themes.
+  1. Run `npx lerna run build` to build all the themes.
+  1. Run `npm test` to run the tests (lint, JS tests, and build).
 
-After running these, you can use the following commands in the root of the repository:
-
-```bash
-# runs linting over all themes
-npx lerna run lint
-
-# builds all themes
-npx lerna run build
-
-# runs tests (lint + js tests + build)
-npm test
-```
-
-Changes in the `develop` branch will release a new package version on the `dev` channel, in the format `(version)-dev.(hash)`. The latest development version of a given theme can be installed with `npm install (themename)@dev`, for example `npm install @progress/kendo-theme-default@dev`.
+Changes in the `develop` branch release a new package version on the `dev` channel and in the `(version)-dev.(hash)` format. To install the latest development version of a given theme, run `npm install (themename)@dev`&mdash;for example, `npm install @progress/kendo-theme-default@dev`.
 
 ### Embedding Resources
 
-To avoid hosting-related issues in projects that use the themes, we embed resources by encoding them in the output CSS. For more details, refer to [this issue](https://github.com/telerik/kendo-theme-default/issues/41#issuecomment-258472183).
+To avoid hosting-related issues in projects that use the themes, the resources are embedded by encoding them in the output CSS. For more details, refer to [this issue](https://github.com/telerik/kendo-theme-default/issues/41#issuecomment-258472183).
 
 To embed the latest resources in a given theme:
 
-1. Run the `npm run embed-assets` task in the theme subfolder. The task generates a file with the same name, which registers a Base64-encoded version in the `$data-uris` SCSS map. For example, the `foo.woff` font file will be encoded in a `foo.scss` file, which can later be imported through `@import './font/foo';`.
+1. Run the `npm run embed-assets` task in the theme subfolder. The task generates a file with the same name which registers a Base64-encoded version in the `$data-uris` SCSS map. For example, the `foo.woff` font file will be encoded in a `foo.scss` file which can later be imported through `@import './font/foo';`.
 1. Inline the encoded file inside the CSS through `map-get( $data-uris, 'foo.woff' )`. For example:
 
     ```scss
