@@ -1,7 +1,8 @@
+<!doctype html>
 <html>
 <head>
     <title>KendoUI Icons</title>
-    <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default/dist/all.css" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
 
     <script src="assets/js/utils.js"></script>
     <style>
@@ -481,9 +482,9 @@
         var iconSize = 16;
 
 
-        icons.forEach( iconName => {
+        icons.forEach( function(iconName) {
             var icon = iconName.split("|")[0];
-            var html = `<span class="k-icon k-i-${icon}"></span>`;
+            var html = "<span class='k-icon k-i-" + icon + "'></span>";
             iconsHTML.push(html);
 
         });

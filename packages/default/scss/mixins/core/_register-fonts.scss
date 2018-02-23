@@ -1,0 +1,20 @@
+/// Registers a list of fonts with @font-face directives
+/// @access private
+/// @param {Map} $font-map - A map in the form `('FontName': ( 'url': '', style?: val, weight?: val ) [, ...])`, describing the fonts to be registered.
+@mixin register-fonts($font-map) {
+    @each $font in $font-map {
+        @font-face {
+            font-family: quote(map-get($font, 'name'));
+
+            src: url(map-get($font, 'url')) format("truetype");
+
+            @if (map-has-key($font, 'weight')) {
+                font-weight: map-get($font, 'weight');
+            }
+
+            @if (map-has-key($font, 'style')) {
+                font-style: map-get($font, 'style');
+            }
+        }
+    }
+}
