@@ -36,7 +36,7 @@ The following example previews Kendo UI components which are styled with the Mat
 
 ## Suggested Links
 
-* [Material Design Guidelines](https://https://material.io/guidelines/)
+* [Material Design Guidelines](https://material.io/guidelines/)
 * [Kendo UI Ripple for Angular]({% slug overview_ripple %})
 * [Kendo UI TextBox for Angular]({% slug overview_textbox %})
 {% endplatform_content %}
