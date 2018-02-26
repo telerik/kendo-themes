@@ -1,27 +1,51 @@
 @import "~@progress/kendo-theme-default/scss/dialog/layout";
 
 @include exports("dialog/layout/material") {
+
+    .k-dialog {
+
+        .k-content.k-scroll {
+            border-width: 1px 0;
+            border-style: solid;
+        }
+
+    }
+
     .k-dialog-buttongroup {
         display: flex;
+        padding: $popup-padding-y;
         flex-wrap: nowrap;
         justify-content: flex-end;
         align-items: center;
         align-content: flex-end;
         box-shadow: none;
         border-width: 0;
-        padding: $window-content-padding;
 
         .k-button {
+            margin-right: $popup-padding-y;
             border-radius: $border-radius;
             flex: 0 1 auto;
             align-self: center;
-            padding: 0 $padding-x;
+            padding: $button-padding-y $button-padding-x;
             border-width: 0;
             transition: none;
 
-            &:first-child {
-                margin-right: $window-content-padding;
+            &:last-child {
+                margin-right: 0;
             }
+
+            & + .k-button {
+                border-width: 0;
+            }
+        }
+    }
+
+    // RTL
+    .k-rtl,
+    [dir='rtl'] {
+
+        .k-dialog-buttongroup .k-button + .k-button {
+            border-width: 0;
         }
     }
 }

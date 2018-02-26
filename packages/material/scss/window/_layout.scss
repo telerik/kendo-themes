@@ -1,1 +1,32 @@
 @import "~@progress/kendo-theme-default/scss/window/layout";
+
+@include exports("window/layout/material") {
+
+    .k-window-titlebar {
+        border-bottom-width: 0;
+        padding: $header-padding-y $header-padding-x;
+    }
+
+    .k-window-title {
+        line-height: 1.2;
+        font-size: $chart-font-size-lg * 1.25;
+    }
+
+    .k-window-actions {
+
+        > .k-button-icon {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .k-content.k-window-content {
+        padding: $header-padding-x;
+    }
+
+    .k-window-buttongroup,
+    .k-window-buttongroup > .k-button {
+        border-width: 0;
+        box-shadow: none;
+    }
+}

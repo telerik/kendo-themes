@@ -86,7 +86,6 @@
             @include border-radius( 0 );
         }
         .k-button + .k-button {
-            margin: 0;
             border-left-width: 1px;
 
             .k-rtl &,
@@ -95,6 +94,12 @@
                 border-right-width: 1px;
             }
         }
+    }
+    .k-dialog-button-layout-normal {
+        .k-button:first-child {
+            margin: 0;
+        }
+
     }
     .k-dialog-button-layout-stretched {
         flex-direction: row;

@@ -1,29 +1,21 @@
 $window-content-padding: $padding-y * 2 !default;
 
 @include exports("window/theme") {
-    $window-button-width: $window-content-padding * 3 !default;
 
     .k-widget.k-window {
         border-radius: $border-radius;
 
         .k-window-titlebar {
-            border-bottom-width: 0;
-            padding: $window-button-width $window-button-width $window-content-padding * 2;
 
             .k-window-title {
-                font-weight: bold;
                 color: $base-text;
             }
         }
 
         .k-window-actions {
-            position: absolute;
-            right: $window-button-width;
 
             > .k-button-icon {
                 color: $text-color;
-                width: $window-button-width;
-                height: $window-button-width;
 
                 &:hover {
                     color: $base-text;
@@ -37,13 +29,6 @@ $window-content-padding: $padding-y * 2 !default;
 
         .k-content.k-window-content {
             color: $text-color;
-            padding: 0 $window-button-width;
-        }
-
-        .k-window-buttongroup,
-        .k-window-buttongroup > .k-button {
-            border-width: 0;
-            box-shadow: none;
         }
     }
 }
