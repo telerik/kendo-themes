@@ -31,7 +31,7 @@ The following additional modules are optional and are required by projects which
 {% platform_content react %}
 * [Ripple effect]({% slug overview_ripple %})&mdash;Available through the `Ripple` component from the `@progress/kendo-react-ripple` NPM module. The `Ripple` component provides the [Material ink ripple effect](https://material.io/guidelines/motion/choreography.html#choreography-radial-reaction) for the Kendo UI components for React and is fully compatible with all available Kendo UI themes.
 
-> In accordance with the [Material Design Guidelines](https://material.io/guidelines/components/text-fields.html#text-fields-layout), the Kendo UI [Inputs]({% slug overview_inputs %}) and [DropDowns]({% slug overview_dropdowns %}) components for React provide floating labels out of the box.
+> The Kendo UI [Inputs]({% slug overview_inputs %}) and [DropDowns]({% slug overview_dropdowns %}) components for React comply with the [Material Design Guidelines](https://material.io/guidelines/components/text-fields.html#text-fields-layout) and provide floating labels out of the box.
 {% endplatform_content %}
 
 ## Preview
