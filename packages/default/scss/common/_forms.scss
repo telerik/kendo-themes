@@ -177,14 +177,20 @@
         }
     }
 
+    $spinner-width: button-inner-size() !default;
+    $spinner-icon-offset: 2px !default;
+
     .k-dateinput,
     .k-numerictextbox {
 
         .k-select {
+            border-width: 0;
             padding: 0;
+            width: $spinner-width;
             flex-direction: column;
             align-items: stretch;
         }
+
         .k-link {
             display: block;
             height: button-inner-size(.5);
@@ -199,16 +205,12 @@
             }
         }
 
-        .k-link-increase {
-            .k-icon {
-                bottom: 0;
-            }
+        .k-link-increase .k-icon {
+            bottom: -$spinner-icon-offset;
         }
 
-        .k-link-decrease {
-            .k-icon {
-                top: 0;
-            }
+        .k-link-decrease .k-icon {
+            top: -$spinner-icon-offset;
         }
     }
 

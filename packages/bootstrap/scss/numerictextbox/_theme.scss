@@ -1,6 +1,4 @@
 @include exports("numerictextbox/theme") {
-    $numerictextbox-icon-offset: 1px !default;
-
     // Numeric
     .k-numerictextbox {
 
@@ -31,14 +29,6 @@
         // Selected state
         .k-link.k-state-selected {
             @include appearance( pressed-button );
-        }
-
-        .k-link-increase > .k-icon {
-            bottom: -$numerictextbox-icon-offset;
-        }
-
-        .k-link-decrease > .k-icon {
-            top: -$numerictextbox-icon-offset;
         }
 
         .k-numeric-wrap.k-state-invalid {
