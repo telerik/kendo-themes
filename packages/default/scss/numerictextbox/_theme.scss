@@ -1,5 +1,4 @@
 @include exports("numerictextbox/theme") {
-    $numerictextbox-icon-offset: 2px !default;
 
     // Numeric
     .k-numerictextbox {
@@ -17,9 +16,6 @@
         }
         .k-select {
             @include appearance( button );
-            padding: 0;
-            width: button-inner-size();
-            border-width: 0;
 
             &:hover {
                 @include appearance( hovered-button );
@@ -31,14 +27,6 @@
                 @include appearance( hovered-button );
                 box-shadow: inset $button-focused-shadow;
             }
-        }
-
-        .k-link-increase > .k-icon {
-            bottom: -$numerictextbox-icon-offset;
-        }
-
-        .k-link-decrease > .k-icon {
-            top: -$numerictextbox-icon-offset;
         }
 
         // Hovered state
