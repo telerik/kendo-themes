@@ -286,6 +286,9 @@
             right: auto;
         }
 
+        .k-grid-content-locked + .k-grid-content {
+            box-sizing: content-box;
+        }
     }
 
     // Toolbar
