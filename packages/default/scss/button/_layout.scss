@@ -1,5 +1,4 @@
 @include exports('button/layout') {
-    $bare-button-hover-opacity: .07 !default;
 
     // Button
     .k-button {
@@ -25,9 +24,13 @@
 
         // TODO: extend disabled selector
         &[disabled],
-        &.k-state-disabled:hover,
-        &.k-state-disabled:focus,
         [disabled] & {
+            @extend %disabled;
+        }
+        .k-ie9 &.k-state-disabled:hover,
+        .k-ie9 &.k-state-disabled:focus,
+        .k-ie10 &.k-state-disabled:hover,
+        .k-ie10 &.k-state-disabled:focus {
             @extend %disabled;
         }
 
@@ -79,9 +82,6 @@
 
     }
 
-    // Toggle button
-    .k-toggle-button {}
-
 
     // Split button
     .k-split-button {
@@ -128,7 +128,6 @@
 
         .k-button {
             @include border-radius( 0 );
-            position: relative;
         }
         .k-button ~ .k-button {
             margin-left: -$button-border-width;
@@ -140,11 +139,9 @@
             z-index: 2;
         }
 
-        &.k-state-disabled .k-button,
+        .k-button,
         [disabled],
-        .k-state-disabled,
-        .k-state-disabled:hover,
-        .k-state-disabled:focus {
+        .k-state-disabled {
             pointer-events: auto;
         }
 
@@ -211,13 +208,18 @@
     }
 
 
-    // Flat button
-    .k-button.k-flat {
-        border-color: transparent;
+    // Flat button and bare
+    .k-button.k-flat,
+    .k-button.k-bare {
+        border-color: transparent !important; // sass-lint:disable-line no-important
         color: inherit;
-        background-color: transparent;
-        background-image: none;
-        box-shadow: none;
+        background: none !important; // sass-lint:disable-line no-important
+        box-shadow: none !important; // sass-lint:disable-line no-important
+        transition: color .2s ease-in-out;
+
+        &::before {
+            display: block;
+        }
     }
 
 
@@ -229,89 +231,9 @@
     }
 
 
-    // Bare button
-    .k-button.k-bare {
-        // sass-lint:disable no-important
-        border-color: transparent !important;
-        color: inherit;
-        background: none !important;
-        box-shadow: none !important;
-        position: relative;
-        transition: color .2s ease-in-out;
-        // sass-lint:enable no-important
-
-        &::before {
-            content: "";
-            background-color: currentColor;
-            @include border-radius();
-            display: block;
-            opacity: 0;
-            transition: opacity .2s ease-in-out;
-            pointer-events: none;
-            position: absolute;
-            z-index: 0;
-            top: -$button-border-width;
-            left: -$button-border-width;
-            right: -$button-border-width;
-            bottom: -$button-border-width;
-        }
-        &::after {
-            content: "";
-            border: 2px solid currentColor;
-            @include border-radius();
-            display: block;
-            opacity: 0;
-            pointer-events: none;
-            position: absolute;
-            z-index: 0;
-            top: -$button-border-width;
-            left: -$button-border-width;
-            right: -$button-border-width;
-            bottom: -$button-border-width;
-        }
-
-        // Hover state
-        &:hover,
-        &.k-state-hover {
-            color: inherit;
-
-            &::before {
-                opacity: $bare-button-hover-opacity;
-                z-index: initial;
-            }
-        }
-
-        // Pressed state
-        &:active,
-        &.k-state-active {
-            color: inherit;
-
-            &::before {
-                opacity: .08;
-            }
-
-            &::after {
-                opacity: .13;
-            }
-
-            &::before,
-            &::after {
-                z-index: initial;
-            }
-        }
-
-        // Focused state
-        &:focus,
-        &.k-state-focused {
-            color: inherit;
-
-            &::after { opacity: .13; }
-        }
-
-    }
-
     // RTL
     .k-rtl {
+
         // Button group
         .k-button-group {
 
@@ -349,6 +271,72 @@
                 @include border-left-radius-only();
                 margin-left: 0;
                 margin-right: -1px;
+            }
+        }
+    }
+
+}
+
+
+
+@include exports( "button/layout/thin-background" ) {
+    $flat-button-hover-opacity: .08 !default;
+    $flat-button-focused-opacity: .12 !default;
+    $flat-button-active-opacity: .16 !default;
+    $flat-button-selected-opacity: .20 !default;
+
+    // Thin background
+    .k-button {
+
+        &::before {
+            content: "";
+            background: currentColor;
+            opacity: 0;
+            display: none;
+            pointer-events: none;
+            position: absolute;
+            left: -$button-border-width;
+            right: -$button-border-width;
+            top: -$button-border-width;
+            bottom: -$button-border-width;
+            z-index: 0;
+            transition: opacity .2s ease-in-out;
+        }
+
+        // Hovered state
+        &:hover,
+        &.k-state-hover {
+            &::before {
+                opacity: $flat-button-hover-opacity;
+            }
+        }
+
+        // Focused state
+        &:focus,
+        &.k-state-focused {
+            &::before {
+                opacity: $flat-button-focused-opacity;
+            }
+        }
+        &.k-no-focus:not(:hover),
+        &.k-no-focus:not(.k-state-hover) {
+            &::before {
+                opacity: 0;
+            }
+        }
+
+        // Pressed state
+        &:active,
+        &.k-state-active {
+            &::before {
+                opacity: $flat-button-active-opacity;
+            }
+        }
+
+        // Selected state
+        &.k-state-selected {
+            &::before {
+                opacity: $flat-button-selected-opacity;
             }
         }
     }

@@ -1,24 +1,10 @@
 @include exports("button/theme") {
-    $button-focused-bg: mix( #000, $button-bg, 12%) !default;
 
-    $button-disabled-text: rgba(0, 0, 0, .38) !default;
     $button-disabled-bg: rgba(0, 0, 0, .12) !default;
+    $button-disabled-text: rgba(0, 0, 0, .38) !default;
 
-    $primary-button-focused-bg: mix( $primary-button-text, $primary-button-bg, 12%) !default;
+    $not-button-selector: ".k-flat, .k-bare, .k-outline";
 
-    $flat-button-hovered-bg: rgba($button-text, .12);
-    $flat-button-focused-bg: rgba($button-text, .12);
-
-    $flat-primary-hovered-bg: rgba($primary-button-bg, .12) !default;
-    $flat-primary-focused-bg: rgba($primary-button-bg, .12) !default;
-    $flat-primary-active-bg: rgba($primary-button-bg, .16) !default;
-
-    $button-group-disabled-active-bg: rgba(0, 0, 0, .22) !default;
-
-    $outline-size: inset 0 0 0 2px currentColor !default;
-
-    $button-active-opacity: .22 !default;
-    $button-disabled-opacity: .38 !default;
 
     // Default button
     .k-button {
@@ -26,238 +12,64 @@
         box-shadow: $button-shadow;
         font-weight: 500;
         transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
-
-        &::before {
-            transition: opacity 280ms cubic-bezier(.4, 0, .2, 1);
-        }
-
-        // Hovered state
-        &:hover,
-        &.k-state-hover {
-            &::before {
-                opacity: .12;
-            }
-        }
-
-        // Focused state
-        &:focus,
-        &.k-state-focused {
-            &::before {
-                opacity: .12;
-            }
-        }
-        &.k-no-focus:not(:hover) {
-            &::before {
-                opacity: 0;
-            }
-        }
-
-        // Pressed state
-        &:active,
-        &.k-state-active {
-            box-shadow: $button-pressed-shadow;
-
-            &::before {
-                opacity: .16;
-            }
-        }
-
-        // Disabled state
-        &.k-state-disabled {
-            color: $button-disabled-text;
-            background-color: $button-disabled-bg;
-            opacity: 1;
-            box-shadow: none;
-        }
     }
+    .k-button.k-state-disabled {
+        color: $button-disabled-text;
+        opacity: 1;
+    }
+    .k-button:not(#{$not-button-selector}).k-state-disabled {
+        background-color: $button-disabled-bg;
+        box-shadow: none !important; // sass-lint:disable-line no-important
+    }
+
 
     // Primary button
     .k-button.k-primary {
         @include appearance( primary-button );
     }
 
-    // Flat & Bare button
-    .k-button.k-flat,
-    .k-button.k-bare {
-        box-shadow: none;
 
-        &::after {
-            border-width: 0;
-        }
-    }
-
-    // Flat & Bare Primary button
-    .k-button.k-primary.k-flat,
-    .k-button.k-primary.k-bare {
+    // Variant buttons
+    .k-button.k-flat.k-primary,
+    .k-button.k-bare.k-primary,
+    .k-button.k-outline.k-primary {
         color: $primary-button-bg;
-    }
 
-    .k-button.k-flat,
-    .k-button.k-primary.k-flat {
         &.k-state-disabled {
-            background-color: transparent;
             color: $button-disabled-text;
         }
     }
 
-    // Outline button
-    .k-button.k-outline {
-        background: transparent;
-        box-shadow: $outline-size;
-        opacity: .87;
-    }
-
-    // Outline Primary button
-    .k-button.k-primary.k-outline {
-        color: $primary-button-bg;
-    }
 
     // Button group
     .k-button-group {
-        background-clip: padding-box;
         box-shadow: $button-shadow;
-
-        .k-ie11 &,
-        .k-edge12 &,
-        .k-edge13 & {
-            background-clip: border-box;
-        }
 
         .k-button {
             box-shadow: none;
         }
+    }
+    .k-button-group.k-toggled {
+        box-shadow: $button-shadow;
+    }
+    .k-button-group.k-state-disabled {
+        box-shadow: none;
+        opacity: 1;
 
-        // Selected state
-        .k-button:active,
-        .k-button.k-state-active,
-        > input[type="radio"]:checked + .k-button,
-        > input[type="checkbox"]:checked + .k-button {
-            background-color: $flat-button-focused-bg;
+        .k-button {
+            color: $button-disabled-text;
         }
-
-        .k-primary:active,
-        .k-primary.k-state-active,
-        > input[type="radio"]:checked + .k-primary,
-        > input[type="checkbox"]:checked + .k-primary {
-            background-color: $flat-primary-active-bg;
-        }
-
-        .k-primary {
-            &:active,
-            &.k-state-active {
-                background-color: $primary-button-focused-bg;
-            }
-        }
-
-        &.k-state-disabled {
-            box-shadow: none;
-            opacity: 1;
-
-            .k-button {
-                color: $button-disabled-text;
-                background-color: $button-disabled-bg;
-            }
-
-            > .k-state-active {
-                background-color: $button-group-disabled-active-bg;
-            }
-        }
-
-        &.k-button-group-bare,
-        &.k-button-group-flat,
-        &.k-button-group-outline {
-            box-shadow: none;
-
-            &.k-state-disabled {
-                background-color: transparent;
-            }
-        }
-
-        &.k-toggled {
-            box-shadow: $button-shadow;
-        }
-
-        // Button group with flat buttons
-        &.k-button-group-flat {
-            &.k-state-disabled .k-button {
-                background-color: transparent;
-
-                &:active,
-                &.k-state-active {
-                    background-color: $flat-button-focused-bg;
-                }
-            }
-
-            .k-primary {
-                &:active,
-                &.k-state-active {
-                    background-color: $flat-primary-active-bg;
-                }
-            }
-        }
-
-        // Button group with bare buttons
-        &.k-button-group-bare {
-            &.k-state-disabled {
-                .k-button {
-                    color: inherit;
-                    opacity: .38;
-                }
-            }
-
-            .k-button {
-                &::before,
-                &::after {
-                    border-radius: 0;
-                }
-
-                &:active,
-                &.k-state-active {
-                    &::before {
-                        opacity: $button-active-opacity;
-                    }
-                }
-
-                &.k-primary {
-                    color: $accent;
-                }
-            }
-        }
-
-        // Button group with outline buttons
-        &.k-button-group-outline {
-            &.k-state-disabled {
-                .k-button {
-                    background-color: transparent;
-                    color: inherit;
-                    opacity: $button-disabled-opacity;
-                }
-
-                .k-primary {
-                    color: $accent;
-                }
-            }
-
-            .k-button {
-                box-shadow: none;
-                border-color: currentColor;
-
-                &:hover,
-                &.k-state-hover,
-                &:focus {
-                    box-shadow: none;
-                }
-
-                &:active,
-                &.k-state-active {
-                    background-color: transparent;
-
-                    &::before {
-                        background-color: currentColor;
-                        opacity: $button-active-opacity;
-                    }
-                }
-            }
+        .k-button:not(#{$not-button-selector}) {
+            background-color: $button-disabled-bg;
         }
     }
+
+
+    // Variant button group
+    .k-button-group-flat,
+    .k-button-group-bare,
+    .k-button-group-outline {
+        box-shadow: none;
+    }
+
 }

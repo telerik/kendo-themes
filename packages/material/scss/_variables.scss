@@ -302,6 +302,11 @@ $primary-button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
 
 $primary-button-focused-shadow: 0 3px 4px 0 rgba($accent, .4) !default;
 
+$flat-button-hover-opacity: .08 !default;
+$flat-button-focused-opacity: .12 !default;
+$flat-button-active-opacity: .16 !default;
+$flat-button-selected-opacity: .20 !default;
+
 // Action buttons
 $action-button-text: rgba( $accent, .87 );
 $action-button-hovered-bg: rgba( $accent, 0.12 );
