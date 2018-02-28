@@ -17,14 +17,23 @@
     .k-numeric-wrap {
         border-radius: 0;
         border-width: 0 0 $input-border-width;
-        border-style: solid;
-        border-color: $border-color;
+        border-color: $input-border;
         background-color: transparent;
         font-size: $font-size-lg;
+        position: relative;
 
-        &.k-state-focused,
-        .k-state-focused > & {
-            border-color: $input-focused-border;
+        &:after {
+            content: "";
+            position: absolute;
+            height: $input-border-width;
+            width: 100%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            transform: scaleX(0);
+            transition: transform 180ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 180ms cubic-bezier(0.4, 0, 0.2, 1);
+            background: $input-focused-border;
         }
 
         .k-input {
@@ -34,8 +43,34 @@
         }
 
         .k-select {
+            color: $icon-color;
             border-width: 0;
             font-size: $font-size;
+        }
+
+        // Hover
+        &:hover,
+        &.k-state-hover {
+            border-color: $input-hovered-border;
+
+            .k-select {
+                color: $icon-hovered-color;
+            }
+        }
+
+        // Focused
+        &.k-state-focused,
+        .k-state-focused > & {
+            border-color: $input-focused-border;
+
+            .k-select {
+                color: $icon-focused-color;
+            }
+
+            &:after {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
     }
 

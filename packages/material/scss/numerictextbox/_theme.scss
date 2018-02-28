@@ -13,21 +13,26 @@
         }
 
         .k-select,
-        .k-select:hover {
+        .k-select:hover,
+        .k-state-hover .k-select {
             background-color: transparent;
         }
 
         .k-link {
-            opacity: .54;
+            color: $icon-color;
 
+            // Hover state
             &:hover {
-                opacity: 1;
+                color: $icon-hovered-color;
             }
 
-            &.k-state-active {
+            // Selected state
+            &.k-state-selected {
                 background-color: transparent;
                 box-shadow: none;
             }
         }
+
+
     }
 }

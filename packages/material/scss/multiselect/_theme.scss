@@ -18,12 +18,15 @@
         }
 
         .k-button {
-            box-shadow: none;
-            background-color: $multiselect-item-bg;
+            min-height: $form-line-height-em;
+            margin: $input-padding-y;
+            margin-left: 0;
+            padding-top: 0;
+            padding-bottom: 0;
             font-size: .75em;
-            border-radius: 1em;
-            line-height: $line-height;
-            margin: $input-padding-y $input-padding-y 0 0;
+            border-radius: $form-line-height-em;
+            background-color: $multiselect-item-bg;
+            box-shadow: none;
 
             &.k-state-disabled {
                 color: $multiselect-item-disabled-text;
