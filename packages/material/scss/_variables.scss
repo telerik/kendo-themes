@@ -134,7 +134,7 @@ $secondary: #ff4081 !default;
 /// Used to provide contrast between the background and foreground colors.
 $secondary-contrast: #ffffff !default;
 
-$text-color: #999999 !default;
+$text-color: rgba(black, .87) !default;
 $bg-color: #ffffff !default;
 $border-color: rgba( black, .12 ) !default;
 
@@ -314,21 +314,25 @@ $toolbar-bg: $button-bg !default;
 $toolbar-border: $button-border !default;
 $toolbar-gradient: null !default;
 
+// Icon
+$icon-color: rgba($base-text, 0.54);
+$icon-hovered-color: rgba($base-text, 0.87);
+$icon-focused-color: rgba($base-text, 0.87);
 
 // Input
-$input-text: #000000 !default;
+$input-text: $panel-text !default;
 $input-bg: $panel-bg !default;
-$input-border: $button-border !default;
+$input-border: rgba( black, .42 ) !default;
 $input-shadow: null !default;
 
 $input-hovered-text: $input-text !default;
 $input-hovered-bg: $input-bg !default;
-$input-hovered-border: $button-hovered-border !default;
+$input-hovered-border: rgba( black, .87 )!default;
 $input-hovered-shadow: null !default;
 
 $input-focused-text: $input-text !default;
 $input-focused-bg: $input-bg !default;
-$input-focused-border: rgba( $hovered-border, .48 ) !default;
+$input-focused-border: $accent !default;
 $input-focused-shadow: none !default;
 
 
