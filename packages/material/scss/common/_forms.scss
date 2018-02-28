@@ -22,7 +22,7 @@
         font-size: $font-size-lg;
         position: relative;
 
-        &:after {
+        &::after {
             content: "";
             position: absolute;
             height: $input-border-width;
@@ -67,7 +67,7 @@
                 color: $icon-focused-color;
             }
 
-            &:after {
+            &::after {
                 transform: scale(1);
                 opacity: 1;
             }
