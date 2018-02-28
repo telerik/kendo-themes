@@ -1,0 +1,38 @@
+$splitter-bg: rgba($base-text, .12);
+$splitter-hovered-bg: rgba($base-text, .22);
+
+@include exports("splitter/theme") {
+    .k-splitbar {
+        color: $base-text;
+        background: $splitter-bg;
+
+        & > .k-icon {
+            opacity: .54;
+        }
+    }
+
+    // Ghost
+    .k-ghost-splitbar {
+        background-color: $splitter-bg;
+    }
+
+    // Hover state
+    .k-splitbar-horizontal-hover,
+    .k-splitbar-vertical-hover {
+        background-color: $splitter-hovered-bg;
+
+        & > .k-icon {
+            opacity: 1;
+        }
+    }
+
+    // Focused state
+    .k-state-focused {
+        color: $selected-text;
+        background-color: $selected-bg;
+
+        & > .k-icon {
+            opacity: 1;
+        }
+    }
+}
