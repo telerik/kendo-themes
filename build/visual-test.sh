@@ -11,3 +11,5 @@ find tests/visual -name '*.html' -exec sed -i 's#packages/bootstrap/dist#package
 npx pastshots --output tests/visual/output/material --serve 'tests/visual/*.html' --port 8081
 
 find tests/visual -name '*.html' -exec sed -i 's#packages/material/dist#packages/default/dist#' {} \;
+
+git diff --exit-code --quiet -- tests/visual/output/ || (echo -e '\\033[0;31mERROR: Visual tests failed, see updated screenshots in tests/visual/output' && exit 1)
