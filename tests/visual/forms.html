@@ -1,7 +1,8 @@
 <html>
 <head>
-    <title>KendoUI Form Components</title>
-    <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default/dist/all.css" />
+    <title>Form Components</title>
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+
     <script src="https://kendo.cdn.telerik.com/2018.1.117/js/jquery.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2018.1.117/js/kendo.all.min.js"></script>
 
@@ -52,44 +53,10 @@
     </div>
 
 
-    <hr class="flex-separator" />
-
-    <div>
-        <input type="text" data-role="combobox" />
-        <input type="text" data-role="dropdown" />
-        <input type="text" data-role="numerictextbox" />
-        <input type="text" data-role="datepicker" />
-        <input type="text" data-role="dateinput" />
-        <input type="text" data-role="combobox" />
-
-        <span class="k-button k-state-hover">Hover</span>
-        <span class="k-button k-primary k-state-hover">Hover</span>
-
-        <span class="k-button k-state-active">Active</span>
-        <span class="k-button k-primary k-state-active">Active</span>
-
-        <span class="k-button k-state-disabled">Disabled</span>
-        <span class="k-button k-primary k-state-disabled">Disabled</span>
-    </div>
-
-    <div class="test-case k-panel k-rtl w300"
-        data-wrap-children="true" data-child-cols="2">
-        <span class="k-button">Normal</span>
-        <span class="k-button k-primary">Normal</span>
-
-        <span class="k-button k-state-hover">Hover</span>
-        <span class="k-button k-primary k-state-hover">Hover</span>
-
-        <span class="k-button k-state-active">Active</span>
-        <span class="k-button k-primary k-state-active">Active</span>
-
-        <span class="k-button k-state-disabled">Disabled</span>
-        <span class="k-button k-primary k-state-disabled">Disabled</span>
-    </div>
-
-
     <script>
         (function() {
+
+            kendo.effects.disable();
 
             jQuery.fn.state = function(states) {
                 states = states.split(" ");
@@ -179,8 +146,6 @@
 
             ddlExpanded.bind("close", stopEvent);
             ddlExpanded.open();
-
-
 
         })()
     </script>

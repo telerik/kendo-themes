@@ -9,7 +9,7 @@
     "karma-chrome-launcher": "^2.2.0",
     "karma-qunit": "^1.2.1",
     "lerna": "^2.4.0",
-    "pastshots": "*",
+    "pastshots": "^1.0.0",
     "qunitjs": "^2.4.1",
     "semantic-release": "^12.4.1",
     "semantic-release-monorepo": "^4.2.1",
@@ -19,7 +19,7 @@
     "build": "lerna run build",
     "lint": "lerna run lint",
     "test": "lerna run test && npm run karma-single",
-    "visual-test": "pastshots --output tests/visual/output --serve 'tests/visual/*.html' --port 8081",
+    "visual-test": "./build/visual-test.sh",
     "watch-test": "npm run karma-watch",
     "karma-watch": "karma start --auto-watch --no-single-run",
     "karma-single": "karma start --no-auto-watch --single-run --browsers ChromeHeadless"

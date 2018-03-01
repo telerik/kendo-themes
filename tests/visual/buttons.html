@@ -1,67 +1,36 @@
 <html>
 <head>
-    <title>KendoUI Buttons</title>
-    <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default/dist/all.css" />
-    <script src="https://kendo.cdn.telerik.com/2018.1.117/js/jquery.min.js"></script>
-    <script src="https://kendo.cdn.telerik.com/2018.1.117/js/kendo.all.min.js"></script>
-
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Buttons</title>
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
 </head>
-<body class="">
+<body>
 
-    <div id="test-case-1" class="test-case k-panel w300"
-        data-wrap-children="true" data-child-cols="2">
-        <span class="k-button">Normal</span>
-        <span class="k-button k-primary">Normal</span>
+    <div>
+        <button class="k-button">Normal</button>
+        <button class="k-button k-primary">Normal</button>
 
-        <span class="k-button k-state-hover">Hover</span>
-        <span class="k-button k-primary k-state-hover">Hover</span>
+        <button class="k-button k-state-hover">Hover</button>
+        <button class="k-button k-primary k-state-hover">Hover</button>
 
-        <span class="k-button k-state-active">Active</span>
-        <span class="k-button k-primary k-state-active">Active</span>
+        <button class="k-button k-state-active">Active</button>
+        <button class="k-button k-primary k-state-active">Active</button>
 
-        <span class="k-button k-state-disabled">Disabled</span>
-        <span class="k-button k-primary k-state-disabled">Disabled</span>
+        <button class="k-button k-state-disabled">Disabled</button>
+        <button class="k-button k-primary k-state-disabled">Disabled</button>
     </div>
 
-    <div id="test-case-2" class="test-case k-panel k-rtl w300"
-        data-wrap-children="true" data-child-cols="2">
-        <span class="k-button">Normal</span>
-        <span class="k-button k-primary">Normal</span>
+    <div>
+        <button class="k-button">Normal</button>
+        <button class="k-button k-primary">Normal</button>
 
-        <span class="k-button k-state-hover">Hover</span>
-        <span class="k-button k-primary k-state-hover">Hover</span>
+        <button class="k-button k-state-hover">Hover</button>
+        <button class="k-button k-primary k-state-hover">Hover</button>
 
-        <span class="k-button k-state-active">Active</span>
-        <span class="k-button k-primary k-state-active">Active</span>
+        <button class="k-button k-state-active">Active</button>
+        <button class="k-button k-primary k-state-active">Active</button>
 
-        <span class="k-button k-state-disabled">Disabled</span>
-        <span class="k-button k-primary k-state-disabled">Disabled</span>
+        <button class="k-button k-state-disabled">Disabled</button>
+        <button class="k-button k-primary k-state-disabled">Disabled</button>
     </div>
-
-
-    <hr class="flex-separator" />
-
-
-    <script>
-        (function() {
-
-            $("[data-wrap-children=true]").children(":not(.cell), :not(.flex-separator)").wrap("<div class='cell' />");
-            $("[data-child-cols]").each(function() {
-                var $this = $(this);
-                var cols = $this.data("child-cols");
-                var selector = `:nth-child(${cols}n)`;
-
-                $this.addClass("h-box flex-wrap");
-
-                $this.children(selector).after("<hr class='flex-separator' />")
-
-            });
-
-
-
-        })()
-    </script>
-
 </body>
 </html>
