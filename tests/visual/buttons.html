@@ -2,10 +2,17 @@
 <head>
     <title>Buttons</title>
     <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+
+    <style>
+        button {
+          margin: .5em;
+        }
+    </style>
 </head>
 <body>
 
-    <div>
+    <div class="test-area">
         <button class="k-button">Normal</button>
         <button class="k-button k-primary">Normal</button>
 
@@ -19,7 +26,7 @@
         <button class="k-button k-primary k-state-disabled">Disabled</button>
     </div>
 
-    <div>
+    <div class="test-area">
         <button class="k-button">Normal</button>
         <button class="k-button k-primary">Normal</button>
 
@@ -31,6 +38,21 @@
 
         <button class="k-button k-state-disabled">Disabled</button>
         <button class="k-button k-primary k-state-disabled">Disabled</button>
+    </div>
+
+    <div class="test-area">
+        <button class="k-button k-button-icon"><span class="k-icon k-i-add"></span></button>
+
+        <button class="k-button k-button-icon k-primary"><span class="k-icon k-i-add"></span></button>
+
+        <button class="k-button k-button-icon k-state-hover"><span class="k-icon k-i-add"></span></button>
+        <button class="k-button k-button-icon k-primary k-state-hover"><span class="k-icon k-i-add"></span></button>
+
+        <button class="k-button k-button-icon k-state-active"><span class="k-icon k-i-add"></span></button>
+        <button class="k-button k-button-icon k-primary k-state-active"><span class="k-icon k-i-add"></span></button>
+
+        <button class="k-button k-button-icon k-state-disabled"><span class="k-icon k-i-add"></span></button>
+        <button class="k-button k-button-icon k-primary k-state-disabled"><span class="k-icon k-i-add"></span></button>
     </div>
 </body>
 </html>
