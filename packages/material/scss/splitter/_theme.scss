@@ -1,38 +1,10 @@
-$splitter-bg: rgba($base-text, .12);
+$splitter-text: rgba($base-text, .54) !default;
+$splitter-bg: rgba($base-text, .12) !default;
+$splitter-hovered-text: $base-text !default;
 $splitter-hovered-bg: rgba($base-text, .22);
+$splitter-selected-text: $selected-text !default;
+$splitter-selected-bg: $selected-bg !default;
 
-@include exports("splitter/theme") {
-    .k-splitbar {
-        color: $base-text;
-        background: $splitter-bg;
+@import "~@progress/kendo-theme-default/scss/splitter/theme";
 
-        & > .k-icon {
-            opacity: .54;
-        }
-    }
-
-    // Ghost
-    .k-ghost-splitbar {
-        background-color: $splitter-bg;
-    }
-
-    // Hover state
-    .k-splitbar-horizontal-hover,
-    .k-splitbar-vertical-hover {
-        background-color: $splitter-hovered-bg;
-
-        & > .k-icon {
-            opacity: 1;
-        }
-    }
-
-    // Focused state
-    .k-state-focused {
-        color: $selected-text;
-        background-color: $selected-bg;
-
-        & > .k-icon {
-            opacity: 1;
-        }
-    }
-}
+@include exports("splitter/theme") {}
