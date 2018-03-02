@@ -18,7 +18,7 @@
   "scripts": {
     "build": "lerna run build",
     "lint": "lerna run lint",
-    "test": "lerna run test && npm run karma-single",
+    "test": "lerna run test && npm run karma-single && npm run visual-test",
     "visual-test": "./build/visual-test.sh",
     "watch-test": "npm run karma-watch",
     "karma-watch": "karma start --auto-watch --no-single-run",
