@@ -1,15 +1,34 @@
-#!/usr/bin/bash
+#!/bin/bash
 
-npx pastshots --output tests/visual/output/default --serve 'tests/visual/*.html' --port 8081
+# sed on OSX and Linux differs, see https://stackoverflow.com/a/38595160/25427
+sedi () {
+    sed --version >/dev/null 2>&1 && sed -i -- "$@" || sed -i "" "$@"
+}
 
-find tests/visual -name '*.html' -exec sed -i 's#packages/default/dist#packages/bootstrap/dist#' {} \;
+export -f sedi
 
-npx pastshots --output tests/visual/output/bootstrap --serve 'tests/visual/*.html' --port 8081
+capture_with_theme() {
+    theme=$1
+    # replace theme reference
+    find tests/visual -name '*.html' | while read file; do sedi "s#packages/default/dist#packages/$theme/dist#" "$file"; done
 
-find tests/visual -name '*.html' -exec sed -i 's#packages/bootstrap/dist#packages/material/dist#' {} \;
+    # capture screenshots
+    npx pastshots --output tests/visual/output/$theme --serve 'tests/visual/*.html' --port 8081 --browser chrome
 
-npx pastshots --output tests/visual/output/material --serve 'tests/visual/*.html' --port 8081
+    # revert theme reference
+    find tests/visual -name '*.html' | while read file; do sedi "s#packages/$theme/dist#packages/default/dist#" "$file"; done
 
-find tests/visual -name '*.html' -exec sed -i 's#packages/material/dist#packages/default/dist#' {} \;
+}
 
-git diff --exit-code --quiet -- tests/visual/output/ || (echo -e '\\033[0;31mERROR: Visual tests failed, see updated screenshots in tests/visual/output' && exit 1)
+fail() {
+    red='\\033[0;31m'
+    echo -e "$red ERROR: Visual tests failed, see updated screenshots in tests/visual/output"
+    exit 1
+}
+
+capture_with_theme 'default'
+capture_with_theme 'bootstrap'
+capture_with_theme 'material'
+
+# if there are captured differences, fail the build
+git diff --exit-code --quiet -- tests/visual/output/ || fail
