@@ -1,3 +1,8 @@
+body {
+    font-size: 14px;
+    font-family: Arial;
+}
+
 .test-area {
-  margin: 1em;
+    margin: 1em;
 }
