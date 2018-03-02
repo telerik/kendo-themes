@@ -13,7 +13,7 @@ capture_with_theme() {
     find tests/visual -name '*.html' | while read file; do sedi "s#packages/default/dist#packages/$theme/dist#" "$file"; done
 
     # capture screenshots
-    npx pastshots --output tests/visual/output/$theme --serve 'tests/visual/*.html' --port 8081 --browser chrome
+    npx pastshots --output tests/visual/output/$theme --serve 'tests/visual/*.html' --port 8081
 
     # revert theme reference
     find tests/visual -name '*.html' | while read file; do sedi "s#packages/$theme/dist#packages/default/dist#" "$file"; done

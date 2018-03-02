@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <div id="output" class="test-area"></div>
+    <div id="test-area"></div>
 
     <script>
     (function() {
@@ -477,7 +477,7 @@
             "file-horizontal|page-landscape"
         ];
 
-        document.getElementById("output").innerHTML = icons.map( function(iconName) {
+        document.getElementById("test-area").innerHTML = icons.map( function(iconName) {
           return iconName.split("|").map( function(icon) {
             return "<span class='k-icon k-i-" + icon + "'></span>";
           }).join("");

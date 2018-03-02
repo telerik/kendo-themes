@@ -3,6 +3,10 @@ body {
     font-family: Arial;
 }
 
-.test-area {
+#test-area {
+    padding: 1em;
+}
+
+.section {
     margin: 1em;
 }
