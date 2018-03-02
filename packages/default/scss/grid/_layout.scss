@@ -587,6 +587,10 @@
             padding: $cell-padding-y;
         }
 
+        td:first-child {
+            border-left: 0px;
+        }
+
         .k-multiselect {
             height: auto;
         }
