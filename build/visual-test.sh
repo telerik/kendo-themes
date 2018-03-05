@@ -21,8 +21,9 @@ capture_with_theme() {
 }
 
 fail() {
-    red='\\033[0;31m'
-    echo -e "$red ERROR: Visual tests failed, see updated screenshots in tests/visual/output"
+    RED='\033[0;31m'
+    NC='\033[0m'
+    echo -e "${RED} ERROR: Visual tests failed, see updated screenshots in tests/visual/output ${NC}"
     exit 1
 }
 
