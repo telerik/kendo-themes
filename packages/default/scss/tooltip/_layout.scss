@@ -10,8 +10,9 @@ $tooltip-callout-size: 12px !default;
         padding: $tooltip-padding-y $tooltip-padding-x;
         border-width: 0;
         background-repeat: repeat-x;
-        position: absolute;
         z-index: 12000;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .k-tooltip-closable {
