@@ -39,6 +39,11 @@
         background-color: $grid-chrome-bg;
     }
 
+    .k-grid-content {
+        // setting this background color resolves glitches in iOS
+        background-color: $bg-color;
+    }
+
     .k-group-footer td,
     .k-grouping-row td,
     tbody .k-group-cell {
