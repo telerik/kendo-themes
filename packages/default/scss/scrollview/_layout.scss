@@ -21,8 +21,7 @@
         height: 100%;
         cursor: default;
 
-        img,
-        li {
+        img {
             user-select: none;
         }
 
@@ -32,11 +31,6 @@
             position: absolute;
             top: 0;
             left: 0;
-        }
-
-        li > * {
-            user-select: none;
-            pointer-events: none;
         }
     }
 
