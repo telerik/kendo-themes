@@ -10,13 +10,21 @@ $tooltip-callout-size: 12px !default;
         padding: $tooltip-padding-y $tooltip-padding-x;
         border-width: 0;
         background-repeat: repeat-x;
+        position: absolute;
         z-index: 12000;
-        overflow: hidden;
-        text-overflow: ellipsis;
+    }
+
+    .k-ng-tooltip {
+        border-width: 0;
     }
 
     .k-tooltip-closable {
         padding: ($padding-y * 3) ($padding-x * 2);
+    }
+
+    .k-tooltip-content {
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .k-tooltip-closable .k-tooltip-content {
