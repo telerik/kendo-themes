@@ -32,6 +32,10 @@ $list-container-no-data-text: rgba( $text-color, .5 ) !default;
     .k-group-header+div > .k-list > .k-item.k-first::before {
         border-color: $border-color;
     }
+    .k-popup-transparent {
+        border-width: 0;
+        background-color: transparent;
+    }
 }
 
 @include exports( "list/theme" ) {

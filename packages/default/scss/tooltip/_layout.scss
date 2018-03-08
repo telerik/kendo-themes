@@ -4,6 +4,7 @@ $tooltip-padding-x: $padding-x !default;
 $tooltip-callout-size: 12px !default;
 
 @include exports("tooltip/layout") {
+    $callout-half-size: $tooltip-callout-size / 2;
 
     .k-tooltip {
         @include border-radius();
@@ -12,10 +13,6 @@ $tooltip-callout-size: 12px !default;
         background-repeat: repeat-x;
         position: absolute;
         z-index: 12000;
-    }
-
-    .k-ng-tooltip {
-        border-width: 0;
     }
 
     .k-tooltip-closable {
@@ -48,31 +45,35 @@ $tooltip-callout-size: 12px !default;
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 6px;
+        border-width: $callout-half-size;
         border-color: transparent;
         pointer-events: none;
     }
 
     .k-callout-n {
-        top: -$tooltip-callout-size;
         left: 50%;
+        margin-left: -$callout-half-size;
+        top: -$tooltip-callout-size;
         pointer-events: none;
     }
 
     .k-callout-w {
         top: 50%;
+        margin-top: -$callout-half-size;
         left: -$tooltip-callout-size;
         pointer-events: none;
     }
 
     .k-callout-s {
         left: 50%;
+        margin-left: -$callout-half-size;
         bottom: -$tooltip-callout-size;
         pointer-events: none;
     }
 
     .k-callout-e {
         top: 50%;
+        margin-top: -$callout-half-size;
         right: -$tooltip-callout-size;
         pointer-events: none;
     }
