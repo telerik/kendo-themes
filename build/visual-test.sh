@@ -2,13 +2,13 @@
 
 if [[ $TRAVIS_PULL_REQUEST == 'false' ]]
 then
-  echo 'Visual tests run only on pull requests ($TRAVIS_PULL_REQUEST)'
+  echo "Visual tests run only on pull requests (\$TRAVIS_PULL_REQUEST=$TRAVIS_PULL_REQUEST)"
   exit 0
 fi
 
 if [[ $TRAVIS_BRANCH == '' ]]
 then
-  echo 'Visual tests must know which branch is building ($TRAVIS_BRANCH)'
+  echo "Visual tests must know which branch is building (\$TRAVIS_BRANCH=$TRAVIS_BRANCH)"
   exit 0
 fi
 
