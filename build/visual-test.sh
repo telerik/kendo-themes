@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $TRAVIS_PULL_REQUEST != 'false' ]]
+if [[ $TRAVIS_PULL_REQUEST == 'false' ]]
 then
   echo 'Visual tests run only on pull requests ($TRAVIS_PULL_REQUEST)'
   exit 0
