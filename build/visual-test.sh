@@ -6,18 +6,18 @@ then
   exit 0
 fi
 
-if [[ $TRAVIS_BRANCH == '' ]]
+if [[ $TRAVIS_PULL_REQUEST_BRANCH == '' ]]
 then
-  echo "Visual tests must know which branch is building (\$TRAVIS_BRANCH=$TRAVIS_BRANCH)"
+  echo "Visual tests must know which branch is building (\$TRAVIS_PULL_REQUEST_BRANCH=$TRAVIS_PULL_REQUEST_BRANCH)"
   exit 0
 fi
 
-if [[ $TRAVIS_BRANCH == 'develop' || $TRAVIS_BRANCH == 'master' ]]
+if [[ $TRAVIS_PULL_REQUEST_BRANCH == 'develop' || $TRAVIS_PULL_REQUEST_BRANCH == 'master' ]]
 then
   echo 'Refusing to push to the master or develop branches'
 fi
 
-git checkout --force $TRAVIS_BRANCH
+git checkout --force $TRAVIS_PULL_REQUEST_BRANCH
 
 # sed on OSX and Linux differs, see https://stackoverflow.com/a/38595160/25427
 sedi () {
@@ -57,7 +57,7 @@ commit_changes() {
     git commit -m "chore: update visual previews"
 
     echo "  Pushing new commit..."
-    git push origin $TRAVIS_BRANCH --quiet > /dev/null 2>&1
+    git push origin $TRAVIS_PULL_REQUEST_BRANCH --quiet > /dev/null 2>&1
 }
 
 capture_with_theme 'default'
