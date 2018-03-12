@@ -18,6 +18,7 @@
     "build": "lerna run build",
     "lint": "lerna run lint",
     "test": "lerna run test && npm run karma-single",
+    "bootstrap": "lerna clean --yes && lerna bootstrap",
     "watch-test": "npm run karma-watch",
     "karma-watch": "karma start --auto-watch --no-single-run",
     "karma-single": "karma start --no-auto-watch --single-run --browsers ChromeHeadless"
