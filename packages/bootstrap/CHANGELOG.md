@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.11.9"></a>
+## [2.11.9](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.11.8...@progress/kendo-theme-bootstrap@2.11.9) (2018-03-12)
+
+
+### Bug Fixes
+
+* **input:** show angular invalid state on touch/dirty ([a7dbc4d](https://github.com/telerik/kendo-themes/commit/a7dbc4d)), closes [telerik/kendo-theme-bootstrap#369](https://github.com/telerik/kendo-theme-bootstrap/issues/369)
+
+
+
+
 <a name="2.11.8"></a>
 ## [2.11.8](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.11.7...@progress/kendo-theme-bootstrap@2.11.8) (2018-02-20)
 
