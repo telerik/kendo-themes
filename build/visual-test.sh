@@ -17,6 +17,13 @@ then
   echo 'Refusing to push to the master or develop branches'
 fi
 
+# enable push access
+git remote set-url origin https://${GH_TOKEN}@github.com/telerik/kendo-themes.git > /dev/null 2>&1
+
+# fetch branch info
+git fetch origin > /dev/null 2>&1
+
+# move git HEAD to branch
 git checkout --force $TRAVIS_PULL_REQUEST_BRANCH
 
 # sed on OSX and Linux differs, see https://stackoverflow.com/a/38595160/25427
@@ -49,8 +56,6 @@ commit_changes() {
     echo "  Configuring git..."
     git config user.name "Travis CI"
     git config user.email "travis"
-
-    git remote set-url origin https://${GH_TOKEN}@github.com/telerik/kendo-themes.git > /dev/null 2>&1
 
     echo "  Creating commit..."
     git add tests/visual/output
