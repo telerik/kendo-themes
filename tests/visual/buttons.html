@@ -1,67 +1,112 @@
 <html>
 <head>
-    <title>KendoUI Buttons</title>
-    <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default/dist/all.css" />
-    <script src="https://kendo.cdn.telerik.com/2018.1.117/js/jquery.min.js"></script>
-    <script src="https://kendo.cdn.telerik.com/2018.1.117/js/kendo.all.min.js"></script>
+    <title>Buttons</title>
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
 
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+        button {
+          margin: .5em;
+        }
+    </style>
 </head>
-<body class="">
+<body>
 
-    <div id="test-case-1" class="test-case k-panel w300"
-        data-wrap-children="true" data-child-cols="2">
-        <span class="k-button">Normal</span>
-        <span class="k-button k-primary">Normal</span>
+    <div id="test-area">
 
-        <span class="k-button k-state-hover">Hover</span>
-        <span class="k-button k-primary k-state-hover">Hover</span>
+        <!-- text buttons -->
+        <div class="section">
+            <button class="k-button">Normal</button>
+            <button class="k-button k-primary">Normal</button>
+            <button class="k-button k-flat">Normal</button>
+            <button class="k-button k-flat k-primary">Normal</button>
+            <button class="k-button k-outline">Normal</button>
+            <button class="k-button k-outline k-primary">Normal</button>
+        </div>
 
-        <span class="k-button k-state-active">Active</span>
-        <span class="k-button k-primary k-state-active">Active</span>
+        <div class="section">
+            <button class="k-button k-state-hover">Hover</button>
+            <button class="k-button k-primary k-state-hover">Hover</button>
+            <button class="k-button k-flat k-state-hover">Hover</button>
+            <button class="k-button k-flat k-primary k-state-hover">Hover</button>
+            <button class="k-button k-outline k-state-hover">Hover</button>
+            <button class="k-button k-outline k-primary k-state-hover">Hover</button>
+        </div>
 
-        <span class="k-button k-state-disabled">Disabled</span>
-        <span class="k-button k-primary k-state-disabled">Disabled</span>
+        <div class="section">
+            <button class="k-button k-state-active">Active</button>
+            <button class="k-button k-primary k-state-active">Active</button>
+            <button class="k-button k-flat k-state-active">Active</button>
+            <button class="k-button k-flat k-primary k-state-active">Active</button>
+            <button class="k-button k-outline k-state-active">Active</button>
+            <button class="k-button k-outline k-primary k-state-active">Active</button>
+        </div>
+
+        <div class="section">
+            <button class="k-button k-state-focused">Focused</button>
+            <button class="k-button k-primary k-state-focused">Focused</button>
+            <button class="k-button k-flat k-state-focused">Focused</button>
+            <button class="k-button k-flat k-primary k-state-focused">Focused</button>
+            <button class="k-button k-outline k-state-focused">Focused</button>
+            <button class="k-button k-outline k-primary k-state-focused">Focused</button>
+        </div>
+
+        <div class="section">
+            <button class="k-button k-state-disabled">Disabled</button>
+            <button class="k-button k-primary k-state-disabled">Disabled</button>
+            <button class="k-button k-flat k-state-disabled">Disabled</button>
+            <button class="k-button k-flat k-primary k-state-disabled">Disabled</button>
+            <button class="k-button k-outline k-state-disabled">Disabled</button>
+            <button class="k-button k-outline k-primary k-state-disabled">Disabled</button>
+        </div>
+
+        <!-- icon buttons -->
+        <div class="section">
+            <button class="k-button k-button-icon"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-primary"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-flat"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-flat k-primary"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-outline"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-outline k-primary"><span class="k-icon k-i-add"></span></button>
+        </div>
+
+        <div class="section">
+            <button class="k-button k-button-icon k-state-hover"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-primary k-state-hover"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-flat k-state-hover"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-flat k-primary k-state-hover"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-outline k-state-hover"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-outline k-primary k-state-hover"><span class="k-icon k-i-add"></span></button>
+        </div>
+
+        <div class="section">
+            <button class="k-button k-button-icon k-state-active"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-primary k-state-active"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-flat k-state-active"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-flat k-primary k-state-active"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-outline k-state-active"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-outline k-primary k-state-active"><span class="k-icon k-i-add"></span></button>
+        </div>
+
+        <div class="section">
+            <button class="k-button k-button-icon k-state-focused"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-primary k-state-focused"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-flat k-state-focused"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-flat k-primary k-state-focused"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-outline k-state-focused"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-outline k-primary k-state-focused"><span class="k-icon k-i-add"></span></button>
+        </div>
+
+        <div class="section">
+            <button class="k-button k-button-icon k-state-disabled"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-primary k-state-disabled"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-flat k-state-disabled"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-flat k-primary k-state-disabled"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-outline k-state-disabled"><span class="k-icon k-i-add"></span></button>
+            <button class="k-button k-button-icon k-outline k-primary k-state-disabled"><span class="k-icon k-i-add"></span></button>
+        </div>
+
     </div>
-
-    <div id="test-case-2" class="test-case k-panel k-rtl w300"
-        data-wrap-children="true" data-child-cols="2">
-        <span class="k-button">Normal</span>
-        <span class="k-button k-primary">Normal</span>
-
-        <span class="k-button k-state-hover">Hover</span>
-        <span class="k-button k-primary k-state-hover">Hover</span>
-
-        <span class="k-button k-state-active">Active</span>
-        <span class="k-button k-primary k-state-active">Active</span>
-
-        <span class="k-button k-state-disabled">Disabled</span>
-        <span class="k-button k-primary k-state-disabled">Disabled</span>
-    </div>
-
-
-    <hr class="flex-separator" />
-
-
-    <script>
-        (function() {
-
-            $("[data-wrap-children=true]").children(":not(.cell), :not(.flex-separator)").wrap("<div class='cell' />");
-            $("[data-child-cols]").each(function() {
-                var $this = $(this);
-                var cols = $this.data("child-cols");
-                var selector = `:nth-child(${cols}n)`;
-
-                $this.addClass("h-box flex-wrap");
-
-                $this.children(selector).after("<hr class='flex-separator' />")
-
-            });
-
-
-
-        })()
-    </script>
 
 </body>
 </html>

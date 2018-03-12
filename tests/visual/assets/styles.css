@@ -1,0 +1,12 @@
+body {
+    font-size: 14px;
+    font-family: Arial;
+}
+
+#test-area {
+    padding: 1em;
+}
+
+.section {
+    margin: 1em;
+}
