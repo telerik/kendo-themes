@@ -140,7 +140,7 @@
 
         > .k-icon {
             position: absolute;
-            right: $padding-x * 2;
+            right: add-two($input-padding-x, $padding-x);
             top: 50%;
             transform: translateY(-50%);
         }
