@@ -256,7 +256,7 @@
         right: 3px;
     }
 
-    .k-state-invalid,
+    .k-widget.k-state-invalid,
     .ng-invalid.ng-touched,
     .ng-invalid.ng-dirty {
         &.k-autocomplete,
@@ -265,14 +265,13 @@
             border-color: $invalid-border;
         }
 
-        > .k-picker-wrap .k-dateinput-wrap,
-        > .k-dateinput-wrap,
-        > .k-dropdown-wrap,
-        > .k-numeric-wrap,
-        > .k-picker-wrap {
+        > [class*="-wrap"] {
             color: $error;
             border-color: $invalid-border;
+        }
 
+        > .k-dropdown-wrap,
+        > .k-numeric-wrap {
             .k-select {
                 color: inherit;
             }
