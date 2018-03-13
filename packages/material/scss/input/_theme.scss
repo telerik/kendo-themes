@@ -6,9 +6,14 @@
     .k-textarea {
         background-color: transparent;
         border-width: 0 0 $input-border-width;
+        border-color: $input-border;
         border-radius: 0;
         box-shadow: none;
         font-size: $font-size-lg;
+
+        &:hover {
+            border-color: $input-hovered-border;
+        }
 
         &:focus {
             border-color: $input-focused-border;
@@ -26,12 +31,6 @@
         &.k-state-disabled {
             border-bottom-style: dotted;
         }
-    }
-
-    // Textbox
-    .k-textbox,
-    .k-input.k-textbox {
-        border-color: $input-border;
     }
 
     // Textarea

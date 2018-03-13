@@ -1,2 +1,11 @@
 $popup-border-width: 0;
 @import "~@progress/kendo-theme-default/scss/popup/layout";
+
+@include exports('popup/layout/material') {
+    .k-list-filter {
+
+        & > .k-icon {
+            transform: none;
+        }
+    }
+}
