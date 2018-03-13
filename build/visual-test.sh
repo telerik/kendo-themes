@@ -32,6 +32,9 @@ sedi () {
     sed --version >/dev/null 2>&1 && sed -i -- "$@" || sed -i "" "$@"
 }
 
+BOLD='\033[1;37m'
+NC='\033[0m'
+
 export -f sedi
 
 capture_with_theme() {
@@ -48,12 +51,8 @@ capture_with_theme() {
 }
 
 commit_changes() {
-    BOLD='\033[1;37m'
-    RED='\033[0;33m'
-    NC='\033[0m'
     echo -e "${BOLD} Found updated screenshots, pushing commit to repository ${NC}"
 
-    # TODO: reduce repetition with publish.sh
     echo "  Configuring git..."
     git config user.name "Travis CI"
     git config user.email "travis"
@@ -70,5 +69,15 @@ capture_with_theme 'default'
 capture_with_theme 'bootstrap'
 capture_with_theme 'material'
 
-# if there are captured differences, push the new images
-git diff --exit-code --quiet -- tests/visual/output/ || commit_changes
+has_changes=0
+has_untracked=0
+git diff --exit-code --quiet -- tests/visual/output/ || has_changes=1
+[[ $(git ls-files --others --exclude-standard tests/visual/output) ]] && has_untracked=1
+
+if [ $has_changes -eq 0  -a  $has_untracked -eq 0 ]
+then
+    echo -e "${BOLD} Visual tests have detected no changes. Skipping commit. ${NC}"
+else
+    # push new screenshots to branch
+    commit_changes
+fi
