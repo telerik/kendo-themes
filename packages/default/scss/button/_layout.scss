@@ -55,11 +55,13 @@
         &-icontext {
             overflow: visible; // IE9
 
+            $icon-spacing-before: -$button-padding-x / 4;
+            $icon-spacing-after: $button-padding-x - $icon-spacing-before;
+
             .k-icon,
             .k-image,
             .k-sprite {
-                margin: 0 ($button-padding-x / 2) 0 (-$button-padding-x / 2);
-
+                margin: 0 $icon-spacing-after 0 $icon-spacing-before;
             }
 
             .k-rtl &,
@@ -67,10 +69,11 @@
                 .k-icon,
                 .k-image,
                 .k-sprite {
-                    margin: 0 (-$button-padding-x / 2) 0 ($button-padding-x / 2);
+                    margin: 0 $icon-spacing-before 0 $icon-spacing-after;
                 }
             }
         }
+
         &-icon {
             width: button-size();
             height: button-size();
