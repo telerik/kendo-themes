@@ -26,7 +26,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-
 <a name="2.48.1"></a>
 ## [2.48.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.48.0...@progress/kendo-theme-default@2.48.1) (2018-02-20)
 

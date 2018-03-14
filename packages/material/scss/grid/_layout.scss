@@ -1,0 +1,177 @@
+@import "~@progress/kendo-theme-default/scss/grid/layout";
+
+@include exports ('grid/layout/material') {
+    $grid-header-font-size: 12px !default;
+    $grid-filter-button-offset: -10px !default;
+    $grid-filter-button-size: 36px !default;
+    $grid-header-line-height: 16px !default;
+    $grid-header-cell-padding-y: 20px !default;
+    $grid-cell-padding-x: 24px !default;
+    $grid-cell-padding-y: 10px !default;
+    $grid-header-padding-right: 14px !default;
+    $grid-hierarchy-col-width: 8px !default;
+    $grid-grouping-header-padding-y: 16px !default;
+    $grid-group-indicator-margin: 8px !default;
+    $grid-grouping-indicator-border-radius: calc( #{$font-size} + #{$button-padding-y}) !default;
+    $grouping-dropclue-height: calc( ( 2 * #{$font-size}) + (2 * #{$padding-y})) !default;
+    $grouping-dropclue-margin-top: calc( #{$grid-header-padding-right} - 1px) !default;
+    $grid-filter-row-padding-y: 13px !default;
+
+    .k-grid {
+        th {
+            border-bottom-width: 1px;
+        }
+
+        th.k-header {
+            font-size: $grid-header-font-size;
+            line-height: $grid-header-line-height;
+        }
+
+        .k-grid-header-wrap th.k-header,
+        .k-grid-header-locked th.k-header {
+            padding: $grid-header-cell-padding-y $grid-header-padding-right $grid-header-cell-padding-y $grid-cell-padding-x;
+        }
+
+        .k-grid-header .k-filter-row {
+            td,
+            th {
+                padding: $grid-filter-row-padding-y $grid-cell-padding-x;
+            }
+        }
+
+        &,
+        .k-grid-content,
+        .k-grid-content-locked {
+            td {
+                border-width: 0 0 1px;
+                padding: $grid-cell-padding-y $grid-cell-padding-x;
+            }
+
+            .k-hierarchy-cell {
+                padding: 0;
+            }
+        }
+
+        .k-grid-edit-row td>.k-textbox,
+        .k-grid-edit-row td>.k-widget,
+        .k-command-cell>.k-button,
+        .k-edit-cell>.k-textbox,
+        .k-edit-cell>.k-widget {
+            vertical-align: bottom;
+        }
+
+        .k-group-col,
+        .k-hierarchy-col {
+            width: $grid-hierarchy-col-width;
+        }
+
+        .k-grouping-row+tr td {
+            border-top-width: 0;
+        }
+
+        .k-checkbox-label,
+        .k-radio-label {
+            line-height: normal;
+        }
+
+        .k-group-footer .k-group-cell+td {
+            border-left-width: 0;
+        }
+
+        .k-edit-cell .k-input {
+            font-size: $font-size;
+        }
+    }
+
+    .k-grid-header {
+        border-width: 0 0 1px;
+
+        th {
+            border-left-width: 0;
+            font-weight: 700;
+        }
+
+        .k-header.k-first {
+            border-left-width: 0;
+        }
+
+        .k-grid-filter,
+        .k-header-column-menu {
+            margin: $grid-filter-button-offset 0;
+            width: $grid-filter-button-size;
+            height: $grid-filter-button-size;
+        }
+
+        .k-grid-filter {
+            border-radius: 50%;
+        }
+
+        .k-header .k-link>.k-icon.k-i-sort-asc-sm,
+        .k-header .k-link>.k-icon.k-i-sort-desc-sm {
+            margin-left: 8px;
+            margin-right: 4px;
+            vertical-align: bottom;
+        }
+
+        .k-sort-order {
+            margin-top: 0;
+        }
+
+        .k-header-column-menu {
+            border-radius: 50%;
+        }
+
+        .k-resizable-columns th:not(.k-group-cell) {
+            border-right-width: 1px;
+            border-right-style: solid;
+        }
+
+        .k-resizable-columns .k-resize-handle .k-resize-handle-inner {
+            width: 1px;
+            height: 100%;
+            cursor: col-resize;
+        }
+    }
+
+    .k-grouping-header {
+        padding: $grid-grouping-header-padding-y $grid-header-padding-right;
+
+        .k-group-indicator {
+            border-width: 0;
+            border-radius: $grid-grouping-indicator-border-radius;
+            margin-right: $grid-group-indicator-margin;
+        }
+    }
+
+    .k-grid-drag-clue {
+        padding: $padding-y $padding-x !important;
+        border-width: 0 !important;
+        width: auto !important;
+        line-height: 2 !important;
+        border-width: 0;
+        border-radius: $grid-grouping-indicator-border-radius;
+        font-size: $font-size;
+    }
+
+    .k-grouping-dropclue {
+        margin-top: $grouping-dropclue-margin-top;
+        width: 0;
+        border-style: solid;
+        border-width: 0 2px 0 0;
+        height: $grouping-dropclue-height;
+
+        &:before {
+            border-width: 0;
+        }
+    }
+
+    .k-resize-handle:hover .k-resize-handle-inner {
+        width: 1px;
+        height: 100%;
+    }
+
+    .k-reorder-cue {
+        margin-left: -1px;
+        width: 2px;
+    }
+}
