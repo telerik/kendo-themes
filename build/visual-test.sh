@@ -27,28 +27,8 @@ git fetch origin > /dev/null 2>&1
 # move git HEAD to branch
 git checkout --force $TRAVIS_BRANCH
 
-# sed on OSX and Linux differs, see https://stackoverflow.com/a/38595160/25427
-sedi () {
-    sed --version >/dev/null 2>&1 && sed -i -- "$@" || sed -i "" "$@"
-}
-
 BOLD='\033[1;37m'
 NC='\033[0m'
-
-export -f sedi
-
-capture_with_theme() {
-    theme=$1
-    # replace theme reference
-    find tests/visual -name '*.html' | while read file; do sedi "s#packages/default/dist#packages/$theme/dist#" "$file"; done
-
-    # capture screenshots
-    npx pastshots --output tests/visual/output/$theme --serve 'tests/visual/*.html' --port 8081
-
-    # revert theme reference
-    find tests/visual -name '*.html' | while read file; do sedi "s#packages/$theme/dist#packages/default/dist#" "$file"; done
-
-}
 
 commit_changes() {
     echo -e "${BOLD} Found updated screenshots, pushing commit to repository ${NC}"
@@ -65,9 +45,9 @@ commit_changes() {
     git push origin $TRAVIS_BRANCH --quiet > /dev/null 2>&1
 }
 
-capture_with_theme 'default'
-capture_with_theme 'bootstrap'
-capture_with_theme 'material'
+./build/create-screenshots.sh default
+./build/create-screenshots.sh bootstrap
+./build/create-screenshots.sh material
 
 has_changes=0
 has_untracked=0
