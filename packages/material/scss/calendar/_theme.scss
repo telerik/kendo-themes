@@ -1,6 +1,40 @@
+$header-shadow: none !default;
+
 @import "~@progress/kendo-theme-default/scss/calendar/theme";
 
 @include exports('calendar/theme/material') {
+
+    $calendar-pale-text: rgba(0, 0, 0, .38) !default;
+
+    .k-calendar:not(.k-infinite) {
+        .k-content {
+            .k-state-selected,
+            .k-state-hover,
+            .k-state-selected.k-state-hover,
+            .k-weekend,
+            .k-alt {
+                background-color: transparent;
+            }
+
+            .k-state-hover .k-link {
+                background-color: $hovered-bg;
+            }
+
+            .k-state-selected .k-link {
+                background-color: $accent;
+            }
+        }
+
+        th,
+        .k-alt {
+            color: $calendar-pale-text;
+        }
+
+        .k-link:active {
+            box-shadow: none;
+        }
+    }
+
     .k-calendar-view {
         .k-calendar-header {
             .k-today {
