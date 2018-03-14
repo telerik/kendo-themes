@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-bootstrap",
   "description": "Bootstrap v4 theme for Kendo UI",
-  "version": "2.11.8",
+  "version": "2.11.9",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -33,7 +33,7 @@
     "bootstrap": "4.0.0"
   },
   "dependencies": {
-    "@progress/kendo-theme-default": "^2.48.1"
+    "@progress/kendo-theme-default": "^2.49.0"
   },
   "devDependencies": {
     "bootstrap": "4.0.0",

@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.49.0"></a>
+# [2.49.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.48.1...@progress/kendo-theme-default@2.49.0) (2018-03-12)
+
+
+### Bug Fixes
+
+* **grid:** explicitly declare box sizing to non-locked Grid content ([17bfd17](https://github.com/telerik/kendo-themes/commit/17bfd17))
+* **grid:** filter row has double border ([#52](https://github.com/telerik/kendo-themes/issues/52)) ([79d4f0d](https://github.com/telerik/kendo-themes/commit/79d4f0d))
+* **grid:** improve layout calculation in hidden containers ([8857e56](https://github.com/telerik/kendo-themes/commit/8857e56))
+* **grid:** locked column data is hidden in iOS ([b9aafec](https://github.com/telerik/kendo-themes/commit/b9aafec))
+* **icons:** symbols shown in exported PDF ([017584b](https://github.com/telerik/kendo-themes/commit/017584b))
+* **pdf-export:** register DejaVu fonts ([795307c](https://github.com/telerik/kendo-themes/commit/795307c))
+* **scrollview:** allow interaction in templates ([370d720](https://github.com/telerik/kendo-themes/commit/370d720)), closes [#32](https://github.com/telerik/kendo-themes/issues/32) [telerik/kendo-angular#493](https://github.com/telerik/kendo-angular/issues/493) [telerik/kendo-angular#1311](https://github.com/telerik/kendo-angular/issues/1311)
+* add compatibility with node-sass 4.8 ([5192b38](https://github.com/telerik/kendo-themes/commit/5192b38))
+
+
+### Features
+
+* add floating label for material textarea ([#9](https://github.com/telerik/kendo-themes/issues/9)) ([b059e30](https://github.com/telerik/kendo-themes/commit/b059e30))
+* **dropdowns:** add Material theme for dropdowns and inputs ([618c73d](https://github.com/telerik/kendo-themes/commit/618c73d)), closes [#40](https://github.com/telerik/kendo-themes/issues/40) [#43](https://github.com/telerik/kendo-themes/issues/43) [#44](https://github.com/telerik/kendo-themes/issues/44) [#45](https://github.com/telerik/kendo-themes/issues/45)
+
+
+
+
 <a name="2.48.1"></a>
 ## [2.48.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.48.0...@progress/kendo-theme-default@2.48.1) (2018-02-20)
 

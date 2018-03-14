@@ -1,13 +1,13 @@
 <!doctype html>
 <html>
 <head>
-    <title>KendoUI Icons</title>
+    <title>Icons</title>
     <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
 
-    <script src="assets/js/utils.js"></script>
     <style>
-        .test-case {
-            width: 256px;
+        #output {
+            width: 512px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -16,9 +16,7 @@
 </head>
 <body>
 
-    <div id="test-case-1" class="test-case">
-    </div>
-
+    <div id="test-area"></div>
 
     <script>
     (function() {
@@ -478,21 +476,12 @@
             "cloud",
             "file-horizontal|page-landscape"
         ];
-        var iconsHTML = [];
-        var iconSize = 16;
 
-
-        icons.forEach( function(iconName) {
-            var icon = iconName.split("|")[0];
-            var html = "<span class='k-icon k-i-" + icon + "'></span>";
-            iconsHTML.push(html);
-
-        });
-
-
-        $("#test-case-1").innerHTML = iconsHTML.join("");
-
-
+        document.getElementById("test-area").innerHTML = icons.map( function(iconName) {
+          return iconName.split("|").map( function(icon) {
+            return "<span class='k-icon k-i-" + icon + "'></span>";
+          }).join("");
+        }).join("");
     })();
     </script>
 
