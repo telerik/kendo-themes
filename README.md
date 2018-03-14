@@ -6,6 +6,7 @@ This is a monorepo that holds the SCSS-based themes for the Kendo UI components.
 * [Basic Usage](#basic-usage)
 * [Development](#development)
     * [Working with This Monorepo](#working-with-this-monorepo)
+    * [Visual tests](#visual-tests)
     * [Embedding Resources](#embedding-resources)
     * [Documenting Variables](#documenting-variables)
 
@@ -54,11 +55,27 @@ To set up the monorepo:
 
 The following commands have to be run in the root of the repository and help you check if various tasks are accomplished successfully:
 
-* To lint over all the themes, run `npx lerna run lint`.
-* To build all the themes, run `npx lerna run build`.
+* To lint over all the themes, run `npm run lint`.
+* To build all the themes, run `npm run build`.
 * To run the lint, JS, and build tests, run `npm test`.
+* To run builds on every file change of a specific theme:
+
+  * Change the working directory in the terminal to the specific theme. For example, `cd packages/bootstrap` will change to the bootstrap theme.
+  * Run `npm run watch`. This will start a process that will listen for changes and build the theme, whenever a file is changed.
 
 Changes in the `develop` branch release a new package version on the `dev` channel and in the `(version)-dev.(hash)` format. To install the latest development version of a given theme, run `npm install (themename)@dev`&mdash;for example, `npm install @progress/kendo-theme-default@dev`.
+
+### Visual tests
+
+To guard against regressions and make pull request reviews easier, the CI build makes screenshots of the sample pages in `tests/visual/*.html`. This happens automatically for all feature branches. The sample pages contain static HTML that is the recommended rendering for components that use the theme.
+
+To generate screenshots for a specific theme:
+
+1. Build the theme with `npm run build`
+1. Run `npm run create-screenshots <theme>`, substituting `<theme>` with a theme name.
+
+These steps will create new screenshots in `tests/output`. Note that due to platform differences, all of the files will be marked as changed.
+
 
 ### Embedding Resources
 
