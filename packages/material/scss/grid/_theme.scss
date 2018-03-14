@@ -1,0 +1,129 @@
+$grid-alt-bg: transparent !default;
+$grid-chrome-text: rgba(0, 0, 0, .54) !default;
+$grid-sorted-bg: rgba(0, 0, 0, .04) !default;
+$grid-text: rgba(0, 0, 0, .87) !default;
+$grid-sorting-indicator-text: $grid-chrome-text !default;
+$grid-selected-bg: rgba(0, 0, 0, .07) !default;
+$grid-grouping-row-bg: transparent !default;
+$grid-selected-text: #000 !default;
+$grid-selected-cell-text: $grid-selected-text !default;
+$grid-selected-cell-bg: $grid-sorted-bg !default;
+
+@import "~@progress/kendo-theme-default/scss/grid/theme";
+
+@include exports ('grid/theme/material') {
+    $grid-border: rgba(0, 0, 0, .12) !default;
+    $grid-filter-button-focus: rgba(0, 0, 0, .12) !default;
+    $grid-edit-cell-border: rgba(0, 0, 0, .12) !default;
+    $grid-edit-cell-bg: #f5f5f5 !default;
+    $grid-edit-cell-shadow: 0 0 5px 3px rgba(0, 0, 0, .12) !default;
+    $grid-locked-column-shadow: inset 18px 0 5px -15px rgba(0, 0, 0, .14) !default;
+    $grid-hovered-bg: rgba(0, 0, 0, .07) !default;
+
+    .k-grid {
+        color: $grid-text;
+
+        .k-edit-cell {
+            border-bottom: $grid-edit-cell-border;
+            background-color: $grid-edit-cell-bg;
+            box-shadow: $grid-edit-cell-shadow;
+        }
+
+        tr:hover,
+        tr.k-state-selected:hover {
+            background-color: $grid-hovered-bg;
+        }
+
+        tr.k-state-selected:hover {
+            color: $grid-selected-text;
+        }
+    }
+
+    .k-grid-header {
+        tr:hover {
+            background-color: transparent;
+        }
+
+        .k-sorted {
+            color: $grid-text;
+        }
+
+        .k-link:hover {
+            .k-i-sort-asc-sm,
+            .k-i-sort-desc-sm,
+            .k-sort-order {
+                color: $grid-text;
+            }
+        }
+
+        th:hover {
+            color: $grid-text;
+        }
+
+        .k-grid-filter,
+        .k-header-column-menu,
+        .k-hierarchy-cell .k-icon {
+            &:hover {
+                color: $grid-text;
+                background-color: transparent;
+            }
+
+            &:focus,
+            &.k-state-border-down {
+                color: $grid-text;
+                background-color: $grid-filter-button-focus;
+                box-shadow: none;
+            }
+        }
+    }
+    .k-grouping-header .k-group-indicator {
+        background-color: $grid-selected-bg;
+
+        .k-link {
+            color: $grid-text;
+
+            .k-icon {
+                color: $grid-chrome-text;
+            }
+        }
+    }
+
+    .k-grid-drag-clue {
+        background-color: $grid-selected-bg;
+        color: $grid-text;
+        box-shadow: $popup-shadow;
+    }
+
+    .k-grouping-dropclue,
+    .k-reorder-cue {
+        border-color: $accent;
+
+        &::before {
+            border-color: transparent;
+        }
+
+        &::after {
+            border-color: transparent;
+            background-color: transparent;
+        }
+    }
+
+    .k-resize-handle:hover .k-resize-handle-inner {
+        background-color: $accent;
+    }
+
+    .k-reorder-cue {
+        background-color: $accent;
+    }
+
+    .k-grid-lockedcolumns {
+        .k-grid-header-locked {
+            border-right-color: $grid-border;
+        }
+
+        .k-grid-content,
+        .k-grid-header-wrap {
+            box-shadow: $grid-locked-column-shadow;
+        }
+    }
+}
