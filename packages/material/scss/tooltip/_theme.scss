@@ -3,9 +3,3 @@ $tooltip-bg: rgba(lighten($base-text, 38), .9) !default;
 
 @import "~@progress/kendo-theme-default/scss/tooltip/theme";
 
-@include exports("tooltip/theme/material") {
-
-    .k-callout {
-        border-color: transparent;
-    }
-}
