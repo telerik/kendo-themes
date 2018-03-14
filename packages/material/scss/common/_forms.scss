@@ -25,7 +25,6 @@
         &::after {
             content: "";
             position: absolute;
-            height: $input-border-width;
             width: 100%;
             left: 0;
             right: 0;
@@ -33,7 +32,9 @@
             opacity: 0;
             transform: scaleX(0);
             transition: transform 180ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 180ms cubic-bezier(0.4, 0, 0.2, 1);
-            background: $input-focused-border;
+            border-bottom-width: $input-border-width;
+            border-bottom-style: solid;
+            border-bottom-color: inherit;
         }
 
         .k-input {
@@ -56,6 +57,11 @@
             .k-select {
                 color: $icon-hovered-color;
             }
+
+            &::after {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
 
         // Focused
@@ -72,6 +78,11 @@
                 opacity: 1;
             }
         }
+
+        // Disabled
+        &.k-state-disabled {
+            border-bottom-style: dashed;
+        }
     }
 
     .k-autocomplete .k-input {
@@ -82,7 +93,6 @@
     .k-dropdown-wrap {
         .k-clear-value,
         .k-i-loading {
-            top: $padding-y;
             width: $padding-x-lg;
         }
     }
@@ -93,5 +103,53 @@
 
     .k-picker-wrap .k-dateinput-wrap {
         box-shadow: none;
+    }
+
+    .k-state-border-down .k-i-arrow-60-down::before {
+        content: "\E004";
+    }
+
+    .k-state-invalid,
+    .ng-invalid.ng-touched,
+    .ng-invalid.ng-dirty {
+        &.k-autocomplete,
+        &.k-maskedtextbox > .k-textbox {
+            color: $error;
+            border-color: $invalid-border;
+        }
+
+        > .k-picker-wrap .k-dateinput-wrap,
+        > .k-dateinput-wrap,
+        > .k-dropdown-wrap,
+        > .k-numeric-wrap,
+        > .k-picker-wrap {
+
+            &,
+            &.k-state-hover,
+            &:hover,
+            &.k-state-focused,
+            &:focus {
+                color: $error;
+                border-color: $invalid-border;
+
+                .k-select {
+                    color: inherit;
+                }
+            }
+        }
+
+
+        &.k-autocomplete,
+        > .k-dateinput-wrap,
+        > .k-dropdown-wrap,
+        > .k-picker-wrap,
+        > .k-multiselect-wrap,
+        > .k-numeric-wrap {
+
+            &::after {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
     }
 }

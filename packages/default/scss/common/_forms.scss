@@ -270,11 +270,18 @@
         > .k-dropdown-wrap,
         > .k-numeric-wrap,
         > .k-picker-wrap {
-            color: $error;
-            border-color: $invalid-border;
 
-            .k-select {
-                color: inherit;
+            &,
+            &.k-state-hover,
+            &:hover,
+            &.k-state-focused,
+            &:focus {
+                color: $error;
+                border-color: $invalid-border;
+
+                .k-select {
+                    color: inherit;
+                }
             }
         }
     }
