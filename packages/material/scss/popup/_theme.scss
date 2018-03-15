@@ -1,1 +1,14 @@
 @import "~@progress/kendo-theme-default/scss/popup/theme";
+
+@include exports('popup/theme/material') {
+
+    .k-list .k-item {
+
+        // Focused state
+        &:focus,
+        &.k-state-focused {
+            background: $list-item-hovered-bg;
+        }
+
+    }
+}
