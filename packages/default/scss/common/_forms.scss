@@ -78,7 +78,7 @@
     .k-picker-wrap,
     .k-multiselect-wrap,
     .k-numeric-wrap {
-        @include border-radius();
+        @include border-radius($input-border-radius);
         padding: 0;
         width: 100%;
         border-width: 1px;
