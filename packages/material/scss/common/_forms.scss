@@ -55,6 +55,7 @@
         }
 
         // Disabled
+        .k-state-disabled > &,
         &.k-state-disabled {
             border-bottom-style: dashed;
         }
