@@ -26,8 +26,7 @@
             min-height: $form-line-height-em;
             margin: $input-padding-y;
             margin-left: 0;
-            padding-top: 0;
-            padding-bottom: 0;
+            padding: 0 ($button-padding-x / 3);
             font-size: .75em;
             box-shadow: none;
             border-radius: $form-line-height-em;
@@ -77,6 +76,15 @@
                 }
             }
         }
+    }
+
+    // Fix vertical centering icon
+    .k-multiselect .k-button .k-icon.k-i-arrow-60-down {
+        line-height: 1.2;
+    }
+    .k-edge .k-multiselect .k-button .k-icon.k-i-arrow-60-down,
+    .k-multiselect.k-state-border-down .k-icon.k-i-arrow-60-down{
+        line-height: initial;
     }
 
 }
