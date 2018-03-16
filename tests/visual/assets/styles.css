@@ -7,6 +7,12 @@ body {
     padding: 1em;
 }
 
+#test-area::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 .section {
     margin: 1em;
 }
