@@ -2,7 +2,7 @@
 
 set -e
 
-theme=$1
+theme=${1-default}
 
 # sed on OSX and Linux differs, see https://stackoverflow.com/a/38595160/25427
 sedi () {
