@@ -143,9 +143,10 @@
         border-style: solid;
         border-color: inherit;
         outline: 0;
-    }
-    &.k-resizable .k-editable-area {
-        padding: $input-padding-y $input-padding-y 16px;
+
+        .k-resizable & {
+            padding: $input-padding-y $input-padding-y 16px;
+        }
     }
 
     .k-edit-form-content {

@@ -22,7 +22,7 @@ before_script:
   - lerna bootstrap --concurrency=1
 
 after_success:
-  - ./publish.sh
+  - ./build/publish.sh
 
 branches:
   except:

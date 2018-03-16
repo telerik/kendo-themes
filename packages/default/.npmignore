@@ -1,8 +1,10 @@
 *.tgz
-.tmp/
-.travis.yml
-dist/*.*
-!dist/all.css
-examples
+.*
+CODEOWNERS.md
+CONTRIBUTING.md
+build
+demo
+dist/*.js
+docs
 sass-lint.yml
-tests
+webpack.config.js

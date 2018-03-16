@@ -40,7 +40,8 @@
         // Invalid
         &:invalid,
         &.k-state-invalid,
-        &.ng-invalid {
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
             color: $error;
             border-color: $invalid-border;
         }

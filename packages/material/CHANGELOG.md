@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@0.4.1...@progress/kendo-theme-material@0.5.0) (2018-03-12)
+
+
+### Features
+
+* add floating label for material textarea ([#9](https://github.com/telerik/kendo-themes/issues/9)) ([b059e30](https://github.com/telerik/kendo-themes/commit/b059e30))
+* update default primary / secondary colors ([2937857](https://github.com/telerik/kendo-themes/commit/2937857))
+* **dropdowns:** add Material theme for dropdowns and inputs ([618c73d](https://github.com/telerik/kendo-themes/commit/618c73d)), closes [#40](https://github.com/telerik/kendo-themes/issues/40) [#43](https://github.com/telerik/kendo-themes/issues/43) [#44](https://github.com/telerik/kendo-themes/issues/44) [#45](https://github.com/telerik/kendo-themes/issues/45)
+* **splitter:** add Material skin for Splitter ([17c1115](https://github.com/telerik/kendo-themes/commit/17c1115)), closes [#47](https://github.com/telerik/kendo-themes/issues/47)
+* **splitter:** inherit Default theme ([80a233a](https://github.com/telerik/kendo-themes/commit/80a233a)), closes [#48](https://github.com/telerik/kendo-themes/issues/48)
+
+
+
+
 <a name="0.4.1"></a>
 ## [0.4.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@0.4.0...@progress/kendo-theme-material@0.4.1) (2018-02-20)
 
