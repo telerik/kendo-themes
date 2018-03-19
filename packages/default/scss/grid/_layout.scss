@@ -857,43 +857,44 @@
     }
 }
 
-// PDF export
-.k-loading-pdf-mask {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 100;
-
-    > .k-i-loading {
+@include exports( "grid/pdf-export" ) {
+    // PDF export
+    .k-loading-pdf-mask {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        font-size: 64px;
-    }
-
-    .k-loading-pdf-progress {
-        margin: auto;
-        position: absolute;
+        width: 100%;
+        height: 100%;
         top: 0;
-        bottom: 0;
         left: 0;
-        right: 0;
+        z-index: 100;
+
+        > .k-i-loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 64px;
+        }
+
+        .k-loading-pdf-progress {
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
     }
 
-}
+    .k-grid-pdf-export-element {
+        position: absolute;
+        left: -10000px;
+        top: -10000px;
 
-.k-grid-pdf-export-element {
-    position: absolute;
-    left: -10000px;
-    top: -10000px;
-
-    .k-filter-row {
-        display: none;
+        .k-filter-row {
+            display: none;
+        }
     }
 }
-
 
 @include exports( "filtermenu/layout" ) {
 

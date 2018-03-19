@@ -98,54 +98,54 @@
     .k-scrollview-elements {
         width: 100%;
     }
-}
 
-@supports (-webkit-user-select: none) {
-    div.k-scrollview-wrap ul.k-scrollview li > *  {
-        pointer-events: auto;
-    }
-}
-
-@supports (not (-webkit-user-select: none)) {
-    div.k-scrollview-wrap ul.k-scrollview li > *  {
-        pointer-events: none;
-    }
-}
-
-//Mobile version
-.km-scrollview {
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-
-    & > div > * {
-        -webkit-transform: translatez(0);
+    @supports (-webkit-user-select: none) {
+        div.k-scrollview-wrap ul.k-scrollview li > *  {
+            pointer-events: auto;
+        }
     }
 
-    & > div > [data-role="page"] {
-        vertical-align: top;
-        display: inline-block;
-        min-height: 1px;
+    @supports (not (-webkit-user-select: none)) {
+        div.k-scrollview-wrap ul.k-scrollview li > *  {
+            pointer-events: none;
+        }
     }
 
-    .km-virtual-page {
-        min-height: 1px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: inline-block;
+    //Mobile version
+    .km-scrollview {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        & > div > * {
+            -webkit-transform: translatez(0);
+        }
+
+        & > div > [data-role="page"] {
+            vertical-align: top;
+            display: inline-block;
+            min-height: 1px;
+        }
+
+        .km-virtual-page {
+            min-height: 1px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+        }
     }
-}
 
-.k-ff18 .km-scrollview > div,
-.k-ff19 .km-scrollview > div,
-.k-ff20 .km-scrollview > div,
-.k-ff21 .km-scrollview > div {
-    width: 0;
-}
+    .k-ff18 .km-scrollview > div,
+    .k-ff19 .km-scrollview > div,
+    .k-ff20 .km-scrollview > div,
+    .k-ff21 .km-scrollview > div {
+        width: 0;
+    }
 
-.km-pages {
-    padding: $padding-y 0 0 0;
-    position: static;
+    .km-pages {
+        padding: $padding-y 0 0 0;
+        position: static;
+    }
 }
