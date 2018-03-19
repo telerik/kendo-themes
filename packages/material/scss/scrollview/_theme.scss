@@ -1,10 +1,10 @@
 $scrollview-navigation-color: $base-text;
+$scrollview-spacing: $scrollview-pager-spacing-x * 2;
 
 @import "~@progress/kendo-theme-default/scss/scrollview/theme";
 
 @include exports("scrollview/theme/material") {
     $scrollview-text-opacity: .4 !default;
-    $scrollview-bottom: $scrollview-pager-spacing-x * 2;
 
     .k-scrollview-next:hover,
     .k-scrollview-prev:hover {
@@ -14,7 +14,7 @@ $scrollview-navigation-color: $base-text;
     }
 
     .k-scrollview-pageable {
-        bottom: $scrollview-bottom;
+        bottom: $scrollview-spacing;
 
         li.k-button {
             background-color: rgba(black, $scrollview-text-opacity);

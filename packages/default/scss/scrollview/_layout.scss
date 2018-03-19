@@ -4,6 +4,7 @@
 @include exports('scrollview/layout') {
     $scrollview-page-button-size: 8px;
     $scrollview-arrow-icon-size: 4.5em;
+    $scrollview-spacing: 10px;
 
     .k-scrollview-wrap {
         position: relative;
@@ -45,12 +46,12 @@
         list-style: none;
         position: absolute;
         left: 0;
-        bottom: 10px;
+        bottom: $scrollview-spacing;
         pointer-events: none;
     }
     .k-pages > li,
     .k-scrollview-pageable > li.k-button {
-        margin: 10px;
+        margin: $scrollview-spacing;
         padding: 0;
         width: $scrollview-page-button-size;
         height: $scrollview-page-button-size;
