@@ -440,3 +440,7 @@ $disabled-opacity: .6 !default;
 // Pager
 $pager-padding-x: $toolbar-padding-x !default;
 $pager-padding-y: $toolbar-padding-y !default;
+
+// Scrollview
+$scrollview-pager-spacing-x: $padding-y !default;
+$scrollview-pager-spacing-y: 10px !default;
