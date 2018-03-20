@@ -1,2 +1,0 @@
-* @gyoshev @joneff
-docs/* @dmihaylo

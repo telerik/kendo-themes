@@ -1,2 +1,2 @@
 * @gyoshev @joneff
-docs/* @dmihaylo
+docs/ @dmihaylo
