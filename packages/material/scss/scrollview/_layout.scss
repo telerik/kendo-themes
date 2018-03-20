@@ -1,9 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/scrollview/layout";
-
-$scrollview-pager-spacing-x: $padding-y * 2;
-
-@include exports('scrollview/layout/material') {
-    .k-scrollview-pageable {
-        bottom: $scrollview-pager-spacing-x;
-    }
-}
