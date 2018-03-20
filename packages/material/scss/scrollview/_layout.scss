@@ -1,1 +1,13 @@
+$scrollview-pager-item-spacing: 8px !default;
+
 @import "~@progress/kendo-theme-default/scss/scrollview/layout";
+
+@include exports ('scrollview/layout/material') {
+    .k-scrollview-pageable {
+        bottom: $scrollview-pager-offset * 2;
+
+        > li.k-button {
+            margin: $scrollview-pager-offset $scrollview-pager-item-spacing;
+        }
+    }
+}
