@@ -1,12 +1,12 @@
 @import '../common/icons';
 @import '../button/layout';
 
+$scrollview-pager-spacing-y: 10px !default;
+$scrollview-pager-spacing-x: $scrollview-pager-spacing-y !default;
+
 @include exports('scrollview/layout') {
     $scrollview-page-button-size: 8px;
     $scrollview-arrow-icon-size: 4.5em;
-
-    $scrollview-pager-spacing-x: $padding-y !default;
-    $scrollview-pager-spacing-y: 10px !default;
 
     .k-scrollview-wrap {
         position: relative;
@@ -53,7 +53,7 @@
     }
     .k-pages > li,
     .k-scrollview-pageable > li.k-button {
-        margin: $scrollview-pager-spacing-y;
+        margin: $scrollview-pager-spacing-y $scrollview-pager-spacing-x;
         padding: 0;
         width: $scrollview-page-button-size;
         height: $scrollview-page-button-size;
