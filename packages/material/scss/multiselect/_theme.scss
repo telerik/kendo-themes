@@ -26,7 +26,9 @@
             min-height: $form-line-height-em;
             margin: $input-padding-y;
             margin-left: 0;
-            padding: 0 ($button-padding-x / 3);
+            // padding: 0 ($button-padding-x / 3);
+            padding-top: 0;
+            padding-bottom: 0;
             font-size: .75em;
             box-shadow: none;
             border-radius: $form-line-height-em;
@@ -63,6 +65,7 @@
                 background-color: $multiselect-remove-bg;
                 color: $multiselect-remove-color;
                 margin-left: .5em;
+                margin-right: -.2em;
 
                 .k-icon {
                     font-size: $font-size-sm;
@@ -85,6 +88,18 @@
     .k-edge .k-multiselect .k-button .k-icon.k-i-arrow-60-down,
     .k-multiselect.k-state-border-down .k-icon.k-i-arrow-60-down{
         line-height: initial;
+    }
+
+    // RTL
+    .k-rtl {
+        .k-multiselect {
+            .k-button {
+                .k-select {
+                    margin-left: -.2em;
+                    margin-right: .5em;
+                }
+            }
+        }
     }
 
 }
