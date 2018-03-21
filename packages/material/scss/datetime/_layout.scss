@@ -1,7 +1,3 @@
-@import "~@progress/kendo-theme-default/scss/datetime/layout";
+$datetimepicker-button-border-width: 0 !default;
 
-@include exports ('datetime/layout/material') {
-    .k-datetimepicker .k-link {
-        border-width: 0;
-    }
-}
+@import "~@progress/kendo-theme-default/scss/datetime/layout";
