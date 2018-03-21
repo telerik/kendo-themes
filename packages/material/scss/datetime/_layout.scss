@@ -1,1 +1,7 @@
 @import "~@progress/kendo-theme-default/scss/datetime/layout";
+
+@include exports ('datetime/layout/material') {
+    .k-datetimepicker .k-link {
+        border-width: 0;
+    }
+}
