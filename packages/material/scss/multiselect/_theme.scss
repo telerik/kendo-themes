@@ -1,10 +1,15 @@
 @include exports("multiselect/theme") {
-    $multiselect-item-bg: rgba( $base-text, .07 ) !default;
-    $multiselect-item-disabled-text: rgba( $base-text, .42 ) !default;
-    $multiselect-remove-bg: rgba( $base-text, .3 ) !default;
+    $multiselect-token-opacity: .07 !default;
+    $multiselect-token-focused-opacity: .46 !default;
+    $multiselect-token-focused-text: $base-bg !default;
+    $multiselect-token-focused-bg: $base-text !default;
+    $multiselect-token-disabled-text: rgba( $base-text, .42 ) !default;
     $multiselect-remove-color: $base-bg !default;
-    $multiselect-remove-hover-bg: rgba( $base-text, .4 ) !default;
+    $multiselect-remove-bg: rgba( $base-text, .4 ) !default;
     $multiselect-remove-hover-color: $multiselect-remove-color !default;
+    $multiselect-remove-hover-bg: rgba( $base-text, .54 ) !default;
+    $multiselect-remove-focused-color: rgba( $base-text, .54 ) !default;
+    $multiselect-remove-focused-bg: rgba($base-bg, 0.93) !default;
 
     .k-multiselect {
         .k-multiselect-wrap {
@@ -24,12 +29,34 @@
             padding-top: 0;
             padding-bottom: 0;
             font-size: .75em;
-            border-radius: $form-line-height-em;
-            background-color: $multiselect-item-bg;
             box-shadow: none;
+            border-radius: $form-line-height-em;
+            background: transparent;
 
+            &::before {
+                border-radius: $form-line-height-em;
+                opacity: $multiselect-token-opacity;
+            }
+
+            // focused state
+            &.k-state-focused,
+            &:focus {
+                color: $multiselect-token-focused-text;
+                background: $multiselect-token-focused-bg;
+
+                &::before {
+                    opacity: $multiselect-token-focused-opacity;
+                }
+
+                .k-select {
+                    color: $multiselect-remove-focused-color;
+                    background: $multiselect-remove-focused-bg;
+                }
+            }
+
+            // Disabled state
             &.k-state-disabled {
-                color: $multiselect-item-disabled-text;
+                color: $multiselect-token-disabled-text;
             }
 
             .k-select {
