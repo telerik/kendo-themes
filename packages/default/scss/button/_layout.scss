@@ -55,7 +55,8 @@
         &-icontext {
             overflow: visible; // IE9
 
-            $icon-spacing-before: -$icon-spacing / 2;
+            // align padding with that of icon button
+            $icon-spacing-before: add-three($button-padding-y - $button-padding-x, $form-line-height-em / 2, -$icon-size / 2);
             $icon-spacing-after: $icon-spacing;
 
             .k-icon,
