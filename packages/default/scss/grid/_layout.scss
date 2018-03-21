@@ -792,12 +792,20 @@
     .k-grid-virtual .k-grid-content {
         .k-grid-table,
         > table {
-            position: absolute;
+            position: relative;
+            float: left;
             z-index: 1;
         }
 
         > .k-height-container {
             position: relative;
+            float: left;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            clear: both;
         }
     }
 
