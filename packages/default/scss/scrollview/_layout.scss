@@ -1,6 +1,9 @@
 @import '../common/icons';
 @import '../button/layout';
 
+$scrollview-pager-offset: 20px !default;
+$scrollview-pager-item-spacing: 20px !default;
+
 @include exports('scrollview/layout') {
     $scrollview-page-button-size: 8px;
     $scrollview-arrow-icon-size: 4.5em;
@@ -45,12 +48,12 @@
         list-style: none;
         position: absolute;
         left: 0;
-        bottom: 10px;
+        bottom: $scrollview-pager-offset;
         pointer-events: none;
     }
     .k-pages > li,
     .k-scrollview-pageable > li.k-button {
-        margin: 10px;
+        margin: 0 $scrollview-pager-item-spacing;
         padding: 0;
         width: $scrollview-page-button-size;
         height: $scrollview-page-button-size;
