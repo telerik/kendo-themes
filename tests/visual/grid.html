@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <title>Grid</title>
+
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+    <div id="test-area">
+
+        <kendo-grid class="k-widget k-grid k-grid-no-scrollbar" style="width: 480px;">
+            <div class="k-grid-aria-root" role="grid" aria-rowcount="4" aria-colcount="2">
+                <div class="k-grid-header" role="presentation"> <!-- add padding-left or -right for scrollbar width-->
+                    <div class="k-grid-header-wrap" role="presentation">
+                        <table role="presentation">
+                            <colgroup role="presentation">
+                                <col style="width: 100px;" />
+                                <col />
+                            </colgroup>
+                            <thead role="presentation" _nghost-c1="">
+                                <tr role="row" aria-rowindex="1">
+                                    <th aria-readonly="true" aria-selected="false" role="columnheader" class="k-header" aria-colindex="1">
+                                        100px
+                                    </th>
+                                    <th aria-readonly="true" aria-selected="false" role="columnheader" class="k-header" aria-colindex="2">
+                                        no width
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+
+                <kendo-grid-list class="k-grid-container" role="presentation">
+                    <div class="k-grid-content k-virtual-content" role="presentation" tabindex="-1">
+                        <div role="presentation">
+                            <table class="k-grid-table" role="presentation">
+                                <colgroup role="presentation">
+                                    <col style="width: 100px;" />
+                                    <col />
+                                </colgroup>
+                                <tbody role="presentation">
+                                    <tr role="row" aria-rowindex="2">
+                                        <td aria-selected="false" role="gridcell" colspan="1" aria-colindex="1">
+                                            1
+                                        </td>
+                                        <td aria-selected="false" role="gridcell" colspan="1" aria-colindex="2">
+                                            Row
+                                        </td>
+                                    </tr>
+                                    <tr class="k-alt" role="row" aria-rowindex="3">
+                                        <td aria-selected="false"role="gridcell" colspan="1" aria-colindex="1">
+                                            2
+                                        </td>
+                                        <td aria-selected="false" role="gridcell" colspan="1" aria-colindex="2">
+                                            Alt row
+                                        </td>
+                                    </tr>
+                                    <tr role="row" aria-rowindex="4">
+                                        <td aria-selected="false" role="gridcell" colspan="1" aria-colindex="1">
+                                            3
+                                        </td>
+                                        <td aria-selected="false" role="gridcell" colspan="1" aria-colindex="2">
+                                            This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-height-container" role="presentation">
+                            <div style="height: 0px;"></div> <!-- set height to scroll height (virtual scrolling) -->
+                        </div>
+                    </div>
+                </kendo-grid-list>
+            </div>
+        </kendo-grid>
+
+    </div>
+
+</body>
+</html>
