@@ -12,6 +12,16 @@
         box-shadow: $button-shadow;
         font-weight: 500;
         transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+
+        &:hover,
+        &.k-state-hover {
+            box-shadow: $button-hovered-shadow;
+        }
+
+        &:active,
+        &.k-state-active {
+            box-shadow: $button-pressed-shadow;
+        }
     }
     .k-button.k-state-disabled {
         color: $button-disabled-text;

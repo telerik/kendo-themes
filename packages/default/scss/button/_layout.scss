@@ -51,6 +51,7 @@
         .k-sprite {
             color: inherit;
             align-self: center;
+            position: relative;
         }
 
 
@@ -279,16 +280,14 @@
 
 
 
+
 @include exports( "button/layout/thin-background" ) {
-    $flat-button-hover-opacity: .08 !default;
-    $flat-button-focused-opacity: .12 !default;
-    $flat-button-active-opacity: .16 !default;
-    $flat-button-selected-opacity: .20 !default;
 
     // Thin background
     .k-button {
 
         &::before {
+            @include border-radius();
             content: "";
             background: currentColor;
             opacity: 0;
@@ -307,7 +306,7 @@
         &:hover,
         &.k-state-hover {
             &::before {
-                opacity: $flat-button-hover-opacity;
+                @include opacity( $flat-button-hover-opacity );
             }
         }
 
@@ -315,13 +314,13 @@
         &:focus,
         &.k-state-focused {
             &::before {
-                opacity: $flat-button-focused-opacity;
+                @include opacity( $flat-button-focused-opacity );
             }
         }
         &.k-no-focus:not(:hover),
         &.k-no-focus:not(.k-state-hover) {
             &::before {
-                opacity: 0;
+                @include opacity( 0 );
             }
         }
 
@@ -329,16 +328,40 @@
         &:active,
         &.k-state-active {
             &::before {
-                opacity: $flat-button-active-opacity;
+                @include opacity( $flat-button-active-opacity );
             }
         }
 
         // Selected state
         &.k-state-selected {
             &::before {
-                opacity: $flat-button-selected-opacity;
+                @include opacity( $flat-button-selected-opacity );
             }
         }
     }
 
+}
+
+
+
+
+@include exports( "button/layout/focus-ring" ) {
+
+    .k-button {
+
+        &::after {
+            @include border-radius();
+            content: "";
+            opacity: 0;
+            display: none;
+            pointer-events: none;
+            position: absolute;
+            left: -$button-border-width;
+            right: -$button-border-width;
+            top: -$button-border-width;
+            bottom: -$button-border-width;
+            z-index: 0;
+            transition: opacity .2s ease-in-out;
+        }
+    }
 }
