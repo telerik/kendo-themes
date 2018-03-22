@@ -1,0 +1,5 @@
+@mixin opacity( $opacity ) {
+    @if $opacity {
+        opacity: $opacity;
+    }
+}
