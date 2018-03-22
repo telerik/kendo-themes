@@ -17,4 +17,29 @@ $nav-selected-text: $base-text !default;
             }
         }
     }
+
+    // Scrolling
+    .k-menu-scroll-wrapper {
+
+        .k-menu-scroll-button {
+            color: inherit;
+
+            &:hover {
+                border-color: transparent;
+            }
+
+            .k-i-arrow-60-up::before {
+                content: "\e013";
+            }
+            .k-i-arrow-60-right::before {
+                content: "\e014";
+            }
+            .k-i-arrow-60-down::before {
+                content: "\e015";
+            }
+            .k-i-arrow-60-left::before {
+                content: "\e016";
+            }
+        }
+    }
 }
