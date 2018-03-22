@@ -55,4 +55,13 @@ $item-selected-opacity: .16 !default;
             }
         }
     }
+
+    // Scrolling
+    .k-menu-scroll-wrapper {
+
+        .k-menu-scroll-button {
+            padding: $button-padding-x;
+            box-shadow: none;
+        }
+    }
 }
