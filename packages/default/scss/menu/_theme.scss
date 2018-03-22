@@ -32,6 +32,10 @@
             &.k-state-selected > .k-link {
                 color: $list-item-selected-text;
             }
+
+            &.k-state-focused > .k-link {
+                box-shadow: $list-item-focused-shadow;
+            }
         }
     }
     .k-menu.k-context-menu {
@@ -49,6 +53,10 @@
             .k-state-active.k-link,
             .k-state-selected.k-link {
                 @include appearance( selected-list-item );
+            }
+
+            &.k-state-focused > .k-link {
+                @include appearance( focused-list-item );
             }
         }
     }
