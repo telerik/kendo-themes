@@ -23,6 +23,7 @@
         // Link
         .k-item > .k-link {
             padding: $nav-item-padding-y $nav-item-padding-x;
+            line-height: $line-height;
             color: inherit;
             display: flex;
             flex-direction: row;
@@ -46,13 +47,6 @@
             }
             .k-i-arrow-60-left {
                 left: $icon-spacing;
-            }
-
-            // Images
-            > .k-icon,
-            > .k-image,
-            > .k-sprite {
-                margin-right: $icon-spacing;
             }
         }
 
@@ -104,11 +98,22 @@
 
         > .k-item {}
 
+        > .k-item + .k-item {
+            margin-left: $nav-item-margin;
+        }
+
         > .k-separator {
             width: 0;
             border-width: 0 1px 0 0;
             line-height: inherit;
         }
+    }
+    .k-menu-vertical {
+
+        & > .k-item + .k-item {
+            margin-top: $nav-item-margin;
+        }
+
     }
     .k-menu-group,
     .k-menu-vertical {
@@ -126,6 +131,13 @@
             flex-direction: row;
             align-items: center;
             position: relative;
+
+            // Images
+            > .k-icon,
+            > .k-image,
+            > .k-sprite {
+                margin-right: $icon-spacing;
+            }
         }
     }
 
@@ -182,6 +194,13 @@
             .k-i-arrow-60-down {
                 margin-left: -$icon-spacing;
                 margin-right: $icon-spacing;
+            }
+        }
+        .k-menu-horizontal {
+
+            & > .k-item + .k-item {
+                margin-right: $nav-item-margin;
+                margin-left: 0;
             }
         }
 

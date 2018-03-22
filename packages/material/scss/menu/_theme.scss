@@ -1,1 +1,20 @@
+
+$nav-text: $base-text !default;
+$nav-hover-text: $base-text !default;
+$nav-selected-text: $base-text !default;
+
 @import "~@progress/kendo-theme-default/scss/menu/theme";
+
+@include exports("multiselect/theme/material") {
+    .k-menu-group,
+    .k-menu.k-context-menu {
+        .k-item {
+
+            // Hovered && Selected subitem
+            &.k-state-hover > .k-state-active.k-link,
+            &.k-state-hover > .k-state-selected.k-link {
+                background: $list-item-hovered-bg;
+            }
+        }
+    }
+}

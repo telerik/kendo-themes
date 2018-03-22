@@ -1,4 +1,7 @@
 @include exports("menu/theme") {
+    $nav-text: $link-text !default;
+    $nav-hover-text: $link-hover-text !default;
+    $nav-selected-text: inherit !default;
 
     // Theme
     .k-menu {
@@ -13,18 +16,20 @@
             background-clip: border-box;
         }
 
-        .k-item {
-            color: $link-text;
-
-            &.k-state-hover {
-                color: $link-hover-text;
+        & > .k-item {
+            & > .k-link {
+                color: $nav-text;
             }
 
-            &.k-state-active {
-                color: inherit;
+            &.k-state-hover > .k-link {
+                color: $nav-hover-text;
             }
 
-            &.k-state-selected {
+            & > .k-state-active.k-link {
+                color: $nav-selected-text;
+            }
+
+            &.k-state-selected > .k-link {
                 color: $list-item-selected-text;
             }
         }
@@ -36,14 +41,13 @@
     .k-menu-group,
     .k-menu.k-context-menu {
         .k-item {
-            color: inherit;
 
-            &.k-state-hover {
+            &.k-state-hover > .k-link {
                 @include appearance( hovered-list-item );
             }
 
-            &.k-state-active,
-            &.k-state-selected {
+            .k-state-active.k-link,
+            .k-state-selected.k-link {
                 @include appearance( selected-list-item );
             }
         }
