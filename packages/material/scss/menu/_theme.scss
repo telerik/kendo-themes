@@ -6,6 +6,8 @@ $nav-selected-text: $base-text !default;
 @import "~@progress/kendo-theme-default/scss/menu/theme";
 
 @include exports("multiselect/theme/material") {
+
+    // Subitems
     .k-menu-group,
     .k-menu.k-context-menu {
         .k-item {
@@ -13,6 +15,11 @@ $nav-selected-text: $base-text !default;
             // Hovered && Selected subitem
             &.k-state-hover > .k-state-active.k-link,
             &.k-state-hover > .k-state-selected.k-link {
+                background: $list-item-hovered-bg;
+            }
+
+            // Focused
+            &.k-state-focused {
                 background: $list-item-hovered-bg;
             }
         }
