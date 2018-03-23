@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Dialog</title>
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+
+    <style>
+        /* ensure test area size, due to fixed element */
+        html, body, #test-area, .k-dialog-wrapper {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area">
+        <!-- Angular -->
+        <kendo-dialog class="k-dialog-wrapper" dir="ltr" tabindex="0">
+            <div class="k-overlay"></div>
+
+            <div class="k-widget k-window k-dialog" role="dialog" aria-labelledby="titlebar-id">
+                <kendo-dialog-titlebar class="k-window-titlebar k-dialog-titlebar k-header">
+                    <div class="k-window-title k-dialog-title">
+                        Title
+                    </div>
+                    <div class="k-window-actions k-dialog-actions">
+                        <a aria-label="Close" class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close" href="#" role="button">
+                            <span class="k-icon k-i-x"></span>
+                        </a>
+                    </div>
+                </kendo-dialog-titlebar>
+
+                <div class="k-content k-window-content k-dialog-content">
+                    <!-- template -->
+                    Dialog content template
+                </div>
+
+                <kendo-dialog-actions class="k-button-group k-dialog-buttongroup k-dialog-button-layout-stretched">
+                    <button class="k-button">
+                        Action
+                    </button>
+                    <button class="k-button k-primary" dir="ltr">
+                        Primary
+                    </button>
+                </kendo-dialog-actions>
+            </div>
+        </kendo-dialog>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Dialog</title>
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+
+    <style>
+        /* test page overrides */
+        .k-dialog {
+            position: relative;
+            width: 300px;
+            float: left;
+            margin: 1em;
+        }
+
+        .k-dialog:nth-child(2n+1) {
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area">
+        <!-- jQuery -->
+        <div class="k-widget k-window k-dialog"
+             role="dialog"
+             aria-labelledby="titlebar-id">
+
+            <div class="k-window-titlebar k-dialog-titlebar k-header" id="titlebar-id">
+                <span class="k-window-title k-dialog-title">Title</span>
+                <div class="k-window-actions k-dialog-actions">
+                    <a role="button" href="#" class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close" title="Close" aria-label="Close" tabindex="0">
+                        <span class="k-icon k-i-close"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div data-role="dialog" class="k-content k-window-content k-dialog-content" tabindex="0">
+                <!-- template -->
+                Dialog content template
+            </div>
+
+            <div class="k-button-group k-dialog-buttongroup k-dialog-button-layout-stretched" role="toolbar">
+                <button type="button" class="k-button k-state-focused" tabindex="0">
+                    Action (focused)
+                </button>
+                <button type="button" class="k-button k-primary" tabindex="0">
+                    Primary
+                </button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog"
+             role="dialog"
+             aria-labelledby="titlebar-id">
+
+            <div class="k-window-titlebar k-dialog-titlebar k-header" id="titlebar-id">
+                <span class="k-window-title k-dialog-title">Title</span>
+                <div class="k-window-actions k-dialog-actions"></div>
+            </div>
+
+            <div data-role="dialog" class="k-content k-window-content k-dialog-content" tabindex="0">
+                <!-- template -->
+                Dialog without titlebar action buttons
+            </div>
+
+            <div class="k-button-group k-dialog-buttongroup k-dialog-button-layout-stretched" role="toolbar">
+                <button type="button" class="k-button" tabindex="0">
+                    Action
+                </button>
+                <button type="button" class="k-button k-primary k-state-focused" tabindex="0">
+                    Primary (focused)
+                </button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog"
+             role="dialog"
+             aria-labelledby="titlebar-id">
+
+            <div class="k-window-titlebar k-dialog-titlebar k-header" id="titlebar-id">
+                <span class="k-window-title k-dialog-title">Title</span>
+                <div class="k-window-actions k-dialog-actions">
+                    <a role="button" href="#" class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close" title="Close" aria-label="Close" tabindex="0">
+                        <span class="k-icon k-i-close"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div data-role="dialog" class="k-content k-window-content k-dialog-content" tabindex="0">
+                <!-- template -->
+                Dialog without action buttons
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog"
+             role="dialog"
+             aria-labelledby="titlebar-id">
+
+            <div data-role="dialog" class="k-content k-window-content k-dialog-content" tabindex="0">
+                <!-- template -->
+                Dialog without title
+            </div>
+
+            <div class="k-button-group k-dialog-buttongroup k-dialog-button-layout-stretched" role="toolbar">
+                <button type="button" class="k-button" tabindex="0">
+                    Action
+                </button>
+                <button type="button" class="k-button" tabindex="0">
+                    Action
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
