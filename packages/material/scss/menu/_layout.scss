@@ -6,7 +6,7 @@ $item-selected-opacity: .16 !default;
 
 @include exports("menu/layout/material") {
 
-    .k-menu {
+    .k-menu:not(.k-menu.k-context-menu) {
 
         // Root items
         & > .k-item {
