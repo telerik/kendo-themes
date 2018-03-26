@@ -24,13 +24,13 @@
 }
 
 
-@include exports( "common/decoration/variant" ) {
+@mixin variant( $base ) {
+    background-color: color-level($base, 10);
+    color: color-level($base, -6);
+    border-color: color-level($base, 9);
+}
 
-    @mixin variant( $base ) {
-        background-color: color-level($base, 10);
-        color: color-level($base, -6);
-        border-color: color-level($base, 9);
-    }
+@include exports( "common/decoration/variant" ) {
 
     .k-state-primary    { @include variant( $accent ); }
     .k-state-info       { @include variant( $info ); }
