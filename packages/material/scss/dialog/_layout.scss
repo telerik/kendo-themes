@@ -44,8 +44,14 @@
     .k-rtl,
     [dir='rtl'] {
 
-        .k-dialog-buttongroup .k-button + .k-button {
-            border-width: 0;
+        .k-dialog-buttongroup .k-button {
+
+            &:not(:last-child) {
+                margin-left: $popup-padding-y;
+            }
+            & + .k-button {
+                border-width: 0;
+            }
         }
     }
 }
