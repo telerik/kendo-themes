@@ -6,12 +6,12 @@ $item-selected-opacity: .16 !default;
 
 @include exports("menu/layout/material") {
 
-    .k-menu:not(.k-menu.k-context-menu) {
+    .k-menu:not(.k-context-menu) {
 
         // Root items
         & > .k-item {
 
-            & > .k-link > span {
+            & > .k-link > span:not(.k-menu-expand-arrow) {
                 position: relative; // prevent overlaping by the pseudo element
             }
 
