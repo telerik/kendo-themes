@@ -22,6 +22,7 @@
 
         // Link
         .k-item > .k-link {
+            cursor: pointer;
             padding: $nav-item-padding-y $nav-item-padding-x;
             line-height: $line-height;
             color: inherit;
@@ -68,6 +69,11 @@
         list-style: none;
         display: none;
         position: absolute;
+
+        kendo-menu & {
+            position: relative;
+            display: block;
+        }
     }
     .k-menu-group .k-menu-group {
         padding: 0;
@@ -126,7 +132,6 @@
         .k-item > .k-link {
             padding: $list-item-padding-y $list-item-padding-x;
             padding-right: add-two( (2 * $list-item-padding-x), $icon-size);
-            color: inherit;
             display: flex;
             flex-direction: row;
             align-items: center;
