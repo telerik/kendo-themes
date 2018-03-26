@@ -1,7 +1,7 @@
 @include exports("menu/theme") {
     $nav-text: $link-text !default;
     $nav-hover-text: $link-hover-text !default;
-    $nav-selected-text: inherit !default;
+    $nav-selected-text: $base-text !default;
 
     // Theme
     .k-menu {
@@ -16,25 +16,24 @@
             background-clip: border-box;
         }
 
-        & > .k-item {
-            & > .k-link {
-                color: $nav-text;
-            }
+        > .k-item {
+            color: $nav-text;
 
-            &.k-state-hover > .k-link {
+            &.k-state-hover {
                 color: $nav-hover-text;
             }
 
-            & > .k-state-active.k-link {
+            > .k-state-active {
                 color: $nav-selected-text;
             }
 
-            &.k-state-selected > .k-link {
+            &.k-state-selected {
                 color: $list-item-selected-text;
             }
 
-            &.k-state-focused > .k-link {
+            &.k-state-focused {
                 box-shadow: $list-item-focused-shadow;
+                outline: 0;
             }
         }
     }
@@ -44,18 +43,22 @@
 
     .k-menu-group,
     .k-menu.k-context-menu {
-        .k-item {
 
-            &.k-state-hover > .k-link {
+        .k-item {
+            &.k-state-hover {
                 @include appearance( hovered-list-item );
             }
 
-            .k-state-active.k-link,
-            .k-state-selected.k-link {
+            > .k-state-active {
+                color: $list-item-selected-text;
+                background-color: $list-item-selected-bg;
+            }
+
+            &.k-state-selected {
                 @include appearance( selected-list-item );
             }
 
-            &.k-state-focused > .k-link {
+            &.k-state-focused {
                 @include appearance( focused-list-item );
             }
         }
