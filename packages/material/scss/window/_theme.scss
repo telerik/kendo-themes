@@ -15,10 +15,10 @@ $window-content-padding: $padding-y * 2 !default;
         .k-window-actions {
 
             > .k-button-icon {
-                color: $text-color;
+                color: $icon-color;
 
                 &:hover {
-                    color: $base-text;
+                    color: $icon-hovered-color;
                 }
 
                 &::before {
