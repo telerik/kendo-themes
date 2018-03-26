@@ -20,8 +20,12 @@
         }
     }
 
-    .k-content.k-window-content {
+    .k-window-content {
         padding: $header-padding-x;
+
+        & + .k-window-titlebar {
+            padding: 0 $header-padding-x $header-padding-x;
+        }
     }
 
     .k-window-buttongroup,
