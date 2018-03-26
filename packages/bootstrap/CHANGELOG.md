@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.11.10"></a>
+## [2.11.10](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.11.9...@progress/kendo-theme-bootstrap@2.11.10) (2018-03-26)
+
+
+### Bug Fixes
+
+* **button:** improve styles for flat and bare look ([e2e8b7a](https://github.com/telerik/kendo-themes/commit/e2e8b7a))
+
+
+
+
 <a name="2.11.9"></a>
 ## [2.11.9](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.11.8...@progress/kendo-theme-bootstrap@2.11.9) (2018-03-12)
 

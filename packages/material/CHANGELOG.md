@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@0.5.0...@progress/kendo-theme-material@0.6.0) (2018-03-26)
+
+
+### Bug Fixes
+
+* **button:** improve Material styles ([f001c10](https://github.com/telerik/kendo-themes/commit/f001c10))
+* **button:** improve styles for flat and bare look ([e2e8b7a](https://github.com/telerik/kendo-themes/commit/e2e8b7a))
+* **datetimepicker:** remove button borders in Material ([#81](https://github.com/telerik/kendo-themes/issues/81)) ([c50325a](https://github.com/telerik/kendo-themes/commit/c50325a))
+* **multiselect:** add focused token styles ([a2358df](https://github.com/telerik/kendo-themes/commit/a2358df))
+
+
+### Features
+
+* **tooltip:** add Material skin for Tooltip ([e5f0c96](https://github.com/telerik/kendo-themes/commit/e5f0c96))
+* **tooltip:** hardcode tooltip colors by Material guidelines ([086ca32](https://github.com/telerik/kendo-themes/commit/086ca32)), closes [#50](https://github.com/telerik/kendo-themes/issues/50)
+* **tooltip:** remove hiding tooltip callout ([7b3c4b2](https://github.com/telerik/kendo-themes/commit/7b3c4b2)), closes [#50](https://github.com/telerik/kendo-themes/issues/50)
+* **tooltip:** remove redundant imports ([fe41e0d](https://github.com/telerik/kendo-themes/commit/fe41e0d)), closes [#50](https://github.com/telerik/kendo-themes/issues/50)
+* add styling for scrollview component ([f9675e4](https://github.com/telerik/kendo-themes/commit/f9675e4))
+
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@0.4.1...@progress/kendo-theme-material@0.5.0) (2018-03-12)
 

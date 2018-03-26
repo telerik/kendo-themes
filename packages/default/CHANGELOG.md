@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.49.1"></a>
+## [2.49.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.49.0...@progress/kendo-theme-default@2.49.1) (2018-03-26)
+
+
+### Bug Fixes
+
+* **button:** improve Material styles ([f001c10](https://github.com/telerik/kendo-themes/commit/f001c10))
+* **button:** improve styles for flat and bare look ([e2e8b7a](https://github.com/telerik/kendo-themes/commit/e2e8b7a))
+* **datetimepicker:** remove button borders in Material ([#81](https://github.com/telerik/kendo-themes/issues/81)) ([c50325a](https://github.com/telerik/kendo-themes/commit/c50325a))
+* **grid:** ensure filter popup width in IE ([#75](https://github.com/telerik/kendo-themes/issues/75)) ([7095e66](https://github.com/telerik/kendo-themes/commit/7095e66))
+* **grid:** misaligned borders after resizing browser (IE) ([#77](https://github.com/telerik/kendo-themes/issues/77)) ([8422a14](https://github.com/telerik/kendo-themes/commit/8422a14))
+* **multiselect:** style custom item ([#69](https://github.com/telerik/kendo-themes/issues/69)) ([d706e69](https://github.com/telerik/kendo-themes/commit/d706e69)), closes [telerik/kendo-theme-default#53](https://github.com/telerik/kendo-theme-default/issues/53)
+* **tooltip:** add styles for Angular ([#59](https://github.com/telerik/kendo-themes/issues/59)) ([d1afde4](https://github.com/telerik/kendo-themes/commit/d1afde4))
+* move mixin outside control structure ([053ca5f](https://github.com/telerik/kendo-themes/commit/053ca5f))
+
+
+
+
 <a name="2.49.0"></a>
 # [2.49.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.48.1...@progress/kendo-theme-default@2.49.0) (2018-03-12)
 
