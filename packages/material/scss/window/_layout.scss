@@ -2,14 +2,16 @@
 
 @include exports("window/layout/material") {
 
-    .k-window-titlebar {
-        border-bottom-width: 0;
-        padding: $header-padding-y $header-padding-x;
-    }
+    $window-title-font-size: 20px !default;
+    $window-title-line-height: 1.4 !default;
 
+    .k-window-titlebar {
+        border-width: 0;
+    }
     .k-window-title {
-        line-height: 1.2;
-        font-size: $chart-font-size-lg * 1.25;
+        margin: -.2em 0;
+        font-size: $window-title-font-size;
+        line-height: $window-title-line-height;
     }
 
     .k-window-actions {
@@ -21,16 +23,12 @@
     }
 
     .k-window-content {
-        padding: $header-padding-x;
+        line-height: 1.25;
 
-        & + .k-window-titlebar {
-            padding: 0 $header-padding-x $header-padding-x;
+        .k-window-titlebar + & {
+            margin-top: -.5em;
+            padding-top: 0;
         }
     }
 
-    .k-window-buttongroup,
-    .k-window-buttongroup > .k-button {
-        border-width: 0;
-        box-shadow: none;
-    }
 }
