@@ -1,6 +1,9 @@
-$nav-text: $base-text !default;
-$nav-hover-text: $base-text !default;
-$nav-selected-text: $base-text !default;
+$menu-text: $base-text !default;
+$menu-hover-text: $base-text !default;
+$menu-selected-text: $base-text !default;
+
+$menu-scrolling-icon: inherit !default;
+
 
 @import "~@progress/kendo-theme-default/scss/menu/theme";
 
@@ -28,8 +31,6 @@ $nav-selected-text: $base-text !default;
     .k-menu-scroll-wrapper {
 
         .k-menu-scroll-button {
-            color: inherit;
-
             &:hover {
                 border-color: transparent;
             }
