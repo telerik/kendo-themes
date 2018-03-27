@@ -1,13 +1,20 @@
-@include exports("menu/theme") {
-    $nav-text: $link-text !default;
-    $nav-hover-text: $link-hover-text !default;
-    $nav-selected-text: $base-text !default;
+$menu-bg: none !default;
+$menu-text: $link-text !default;
+$menu-hover-text: $link-hover-text !default;
+$menu-expanded-text: $base-text !default;
+$menu-selected-text: $list-item-selected-text !default;
+$menu-focused-shadow: $list-item-focused-shadow !default;
 
-    // Theme
-    .k-menu {
+$menu-scrolling-bg: $bg-color !default;
+$menu-scrolling-border: $widget-border !default;
+$menu-scrolling-icon: $link-text !default;
+$menu-scrolling-icon-hover: $link-hover-text !default;
+
+@include exports("menu/theme") {
+
+    .k-menu:not(.k-context-menu) {
         border-width: 0;
-        color: inherit;
-        background: none;
+        background: $menu-bg;
         background-clip: padding-box;
 
         .k-ie11 &,
@@ -17,22 +24,22 @@
         }
 
         > .k-item {
-            color: $nav-text;
+            color: $menu-text;
 
             &.k-state-hover {
-                color: $nav-hover-text;
+                color: $menu-hover-text;
             }
 
             > .k-state-active {
-                color: $nav-selected-text;
+                color: $menu-expanded-text;
             }
 
             &.k-state-selected {
-                color: $list-item-selected-text;
+                color: $menu-selected-text;
             }
 
             &.k-state-focused {
-                box-shadow: $list-item-focused-shadow;
+                box-shadow: $menu-focused-shadow;
                 outline: 0;
             }
         }
@@ -59,7 +66,7 @@
             }
 
             &.k-state-focused {
-                @include appearance( focused-list-item );
+                box-shadow: $menu-focused-shadow;
             }
         }
     }
@@ -67,31 +74,14 @@
 
     // Scrolling
     .k-menu-scroll-button {
-        border-color: $widget-border;
-        color: $link-text;
-        background: $bg-color;
+        border-color: $menu-scrolling-border;
+        color: $menu-scrolling-icon;
+        background: $menu-scrolling-bg;
 
         &:hover {
-            border-color: $widget-border;
-            color: $link-hover-text;
-            background: $bg-color;
-        }
-
-        &.k-scroll-left {
-            width: 16px;
-            border-right-width: 1px;
-        }
-        &.k-scroll-right {
-            width: 16px;
-            border-left-width: 1px;
-        }
-        &.k-scroll-up {
-            height: 16px;
-            border-bottom-width: 1px;
-        }
-        &.k-scroll-down {
-            height: 16px;
-            border-top-width: 1px;
+            border-color: $menu-scrolling-border;
+            color: $menu-scrolling-icon-hover;
+            background: $menu-scrolling-bg;
         }
     }
 }

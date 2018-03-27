@@ -1,105 +1,12 @@
-@include exports("menu/theme") {
+$menu-bg: $header-bg !default;
+$menu-text: rgba( $header-text, .5 ) !default;
+$menu-hover-text: rgba( $header-text, .7 ) !default;
+$menu-expanded-text: rgba( $header-text, .9 ) !default;
+$menu-focused-shadow: inset 0 0 0 3px rgba( $header-text, .15 ) !default;
 
-    // Theme
-    .k-menu:not(.k-context-menu) {
-        border-width: 0;
-        color: rgba( $header-text, .5 );
-        background-color: $header-bg;
+$menu-scrolling-bg: $header-bg !default;
+$menu-scrolling-border: $header-border !default;
+$menu-scrolling-icon: rgba( $header-text, .5 ) !default;
+$menu-scrolling-icon-hover: rgba( $header-text, .7 ) !default;
 
-        > .k-item {
-            &.k-state-hover {
-                color: rgba( $header-text, .7 );
-            }
-
-            .k-state-active {
-                color: rgba( $header-text, .9 );
-            }
-
-            &.k-state-focused {
-                box-shadow: inset 0 0 0 3px rgba( $header-text, .15 );
-            }
-        }
-    }
-
-    .k-menu.k-menu-horizontal:not(.k-context-menu) {
-        padding: $padding-y $padding-x;
-
-        > .k-item > .k-link {
-            padding: $padding-y;
-        }
-    }
-
-    .k-menu .k-menu-group,
-    .k-context-menu {
-
-        .k-item {
-            &.k-state-hover {
-                @include appearance( hovered-list-item );
-            }
-
-            .k-state-active {
-                color: $list-item-selected-text;
-                background-color: $list-item-selected-bg;
-            }
-
-            &.k-state-focused {
-                box-shadow: inset 0 0 0 3px rgba( $list-item-text, .15 );
-
-                &.k-state-hover {
-                    box-shadow: inset 0 0 0 3px rgba($list-item-hovered-text, .15);
-                }
-
-                & > .k-state-active {
-                    box-shadow: inset 0 0 0 3px rgba($list-item-selected-text, .15);
-                }
-            }
-        }
-
-    }
-
-
-    // Orientation
-    .k-context-menu.k-menu-horizontal {
-        padding: $popup-padding-x $popup-padding-y;
-    }
-    .k-menu-group,
-    .k-menu-vertical {
-        padding: $popup-padding-y $popup-padding-x;
-
-        .k-separator {
-            margin: ($spacer / 2) 0;
-        }
-    }
-
-
-    // Scrolling
-    .k-menu-scroll-button {
-        border-color: $header-border;
-        color: rgba( $header-text, .5 );
-        background-color: $header-bg;
-
-        &:hover {
-            border-color: $header-border;
-            color: rgba( $header-text, .7 );
-            background: $header-bg;
-        }
-
-        &.k-scroll-left {
-            width: 16px;
-            border-right-width: 1px;
-        }
-        &.k-scroll-right {
-            width: 16px;
-            border-left-width: 1px;
-        }
-        &.k-scroll-up {
-            height: 16px;
-            border-bottom-width: 1px;
-        }
-        &.k-scroll-down {
-            height: 16px;
-            border-top-width: 1px;
-        }
-    }
-
-}
+@import "~@progress/kendo-theme-default/scss/menu/theme";
