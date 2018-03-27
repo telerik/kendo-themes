@@ -1,0 +1,32 @@
+$listbox-margin: 12px !default;
+$listbox-button-margin: 8px !default;
+
+@import "~@progress/kendo-theme-default/scss/listbox/layout";
+
+@include exports( 'listbox/layout/material' ) {
+    $listbox-item-padding: $padding-x !default;
+    $listbox-drop-hint-border-width: 2px !default;
+    $drag-clue-border-radius: calc( #{$font-size} + #{$padding-y} ) !default;
+    $drag-clue-opacity: .9 !default;
+
+    .k-listbox {
+        .k-item {
+            padding: 0 $listbox-item-padding;
+        }
+
+        .k-drop-hint {
+            border-width: $listbox-drop-hint-border-width;
+        }
+    }
+
+    li.k-item.k-drag-clue {
+        /* sass-lint:disable no-important */
+        padding: $padding-y $padding-x !important;
+        width: auto !important;
+        line-height: $line-height !important;
+        border-width: 0 !important;
+        /* sass-lint:enable no-important */
+        border-radius: $drag-clue-border-radius;
+        opacity: $drag-clue-opacity;
+    }
+}
