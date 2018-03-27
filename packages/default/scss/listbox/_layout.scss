@@ -1,5 +1,6 @@
 @include exports( 'listbox/layout' ) {
     $listbox-margin: $padding-x !default;
+    $listbox-button-margin: $padding-x !default;
     $listbox-width: 12.4em !default;
     $listbox-default-height: 200px !default;
 
@@ -22,7 +23,7 @@
             }
 
             .k-listbox-toolbar li + li {
-                margin-top: $listbox-margin;
+                margin-top: $listbox-button-margin;
             }
         }
 
@@ -51,7 +52,7 @@
             }
 
             .k-listbox-toolbar li + li {
-                margin-left: $listbox-margin;
+                margin-left: $listbox-button-margin;
             }
         }
 
