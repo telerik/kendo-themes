@@ -1,1 +1,25 @@
 @import "~@progress/kendo-theme-default/scss/menu/layout";
+
+@include exports("menu/layout/bootstrap") {
+
+    .k-menu.k-menu-horizontal:not(.k-context-menu) {
+        padding: $padding-y $padding-x;
+
+        > .k-item > .k-link {
+            padding: $padding-y;
+        }
+    }
+
+    .k-context-menu.k-menu-horizontal {
+        padding: $popup-padding-x $popup-padding-y;
+    }
+
+    .k-menu-group,
+    .k-menu-vertical {
+        padding: $popup-padding-y $popup-padding-x;
+
+        .k-separator {
+            margin: ($spacer / 2) 0;
+        }
+    }
+}
