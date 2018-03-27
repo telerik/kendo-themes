@@ -1,0 +1,25 @@
+@import "~@progress/kendo-theme-default/scss/listbox/theme";
+
+@include exports( 'listbox/theme/material') {
+    $listbox-item-focused-bg: rgba(0, 0, 0, .07) !default;
+
+    .k-listbox {
+        .k-list .k-item {
+            color: $base-text;
+
+            &.k-state-focused {
+                background-color: $listbox-item-focused-bg;
+            }
+
+            &.k-state-selected {
+                color: $secondary;
+            }
+        }
+    }
+
+    li.k-item.k-drag-clue {
+        background-color: $hovered-bg;
+        box-shadow: $popup-shadow;
+        color: $base-text;
+    }
+}
