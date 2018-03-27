@@ -1,1 +1,35 @@
 @import "~@progress/kendo-theme-default/scss/dialog/layout";
+
+@include exports("dialog/layout/bootstrap") {
+
+    $dialog-button-spacing: .5rem !default;
+
+    .k-dialog-buttongroup {
+        padding: $window-inner-padding-y $window-inner-padding-x;
+        justify-content: flex-end;
+
+        .k-button {
+            @include border-radius( $border-radius );
+            flex: 0 0 auto;
+        }
+
+        .k-button ~ .k-button {
+            margin-left: $dialog-button-spacing;
+        }
+    }
+
+    // RTL
+    .k-rtl,
+    [dir='rtl'] {
+
+        .k-dialog-buttongroup {
+
+            .k-button ~ .k-button {
+                margin-left: 0;
+                margin-right: $dialog-button-spacing;
+            }
+
+        }
+    }
+
+}

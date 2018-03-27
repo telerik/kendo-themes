@@ -1,34 +1,11 @@
 @include exports("dialog/theme") {
 
-    .k-dialog {
+    .k-dialog {}
 
-        .k-content.k-scroll {
-            border-color: $widget-border;
-        }
 
+    // Content scroll border
+    .k-dialog-content.k-scroll {
+        border-color: $widget-border;
     }
 
-    .k-dialog-buttongroup {
-        .k-button {
-            color: $text-color;
-
-            &:hover {
-                background-color: $base-border;
-            }
-        }
-
-        .k-button.k-primary {
-            color: $accent;
-            box-shadow: none;
-
-            &:hover {
-                background-color: $action-button-hovered-bg;
-            }
-
-            &:active {
-                color: $action-button-text;
-                background-color: $action-button-pressed-bg;
-            }
-        }
-    }
 }

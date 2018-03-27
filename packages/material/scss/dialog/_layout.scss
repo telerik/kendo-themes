@@ -2,41 +2,36 @@
 
 @include exports("dialog/layout/material") {
 
-    .k-dialog {
+    $dialog-button-padding-x: 8px !default;
+    $dialog-button-padding-y: $button-padding-y !default;
+    $dialog-button-spacing: $dialog-button-padding-x !default;
 
-        .k-content.k-scroll {
-            border-width: 1px 0;
-            border-style: solid;
-        }
+    .k-dialog {}
 
+    .k-dialog-content.k-scroll {
+        border-width: 1px 0;
+        border-style: solid;
     }
 
     .k-dialog-buttongroup {
-        display: flex;
-        padding: $popup-padding-y;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: center;
-        align-content: flex-end;
-        box-shadow: none;
+        padding: $dialog-button-padding-x;
         border-width: 0;
+        justify-content: flex-end;
+        box-shadow: none;
 
         .k-button {
-            margin-right: $popup-padding-y;
-            border-radius: $border-radius;
-            flex: 0 1 auto;
-            align-self: center;
-            padding: $button-padding-y $button-padding-x;
-            border-width: 0;
-            transition: none;
+            @extend .k-button.k-flat;
+            @include border-radius( $border-radius );
+            padding: $dialog-button-padding-y $dialog-button-padding-x;
+            min-width: 64px;
+            flex: 0 0 auto;
+        }
+        .k-primary {
+            @extend .k-button.k-primary.k-flat;
+        }
 
-            &:last-child {
-                margin-right: 0;
-            }
-
-            & + .k-button {
-                border-width: 0;
-            }
+        .k-button ~ .k-button {
+            margin-left: $dialog-button-spacing;
         }
     }
 
@@ -44,14 +39,13 @@
     .k-rtl,
     [dir='rtl'] {
 
-        .k-dialog-buttongroup .k-button {
+        .k-dialog-buttongroup {
 
-            &:not(:last-child) {
-                margin-left: $popup-padding-y;
+            .k-button ~ .k-button {
+                margin-left: 0;
+                margin-right: $dialog-button-spacing;
             }
-            & + .k-button {
-                border-width: 0;
-            }
+
         }
     }
 }
