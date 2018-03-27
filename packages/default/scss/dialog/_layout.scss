@@ -54,56 +54,18 @@
         border-width: 1px 0 0;
         border-style: solid;
         border-color: inherit;
-        background-color: transparent;
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
         flex: 0 0 auto;
 
         .k-button {
-            // sass-lint:disable no-important
+            width: auto !important; // sass-lint:disable-line no-important; kendo-jquery sets inline-width
             display: inline-block; // needed for ellipsis overflow
-            padding: ($window-inner-padding-x * .75) $window-inner-padding-x;
-            width: auto !important;
-            border-width: 0;
-            border-color: inherit;
-            background: none;
-            flex: 1 0 0%;
             overflow: hidden;
             text-overflow: ellipsis;
-            // sass-lint:enable no-important
-
-            &::before,
-            &::after {
-                // center stretched button content for Safari 10
-                content: '';
-                flex: 1 0 auto;
-            }
         }
-        .k-button,
-        .k-button:first-child,
-        .k-button:last-child,
-        .k-group-start,
-        .k-group-end {
-            @include border-radius( 0 );
-        }
-        .k-button + .k-button {
-            border-left-width: 1px;
-
-            .k-rtl &,
-            [dir='rtl'] & {
-                border-left-width: 0;
-                border-right-width: 1px;
-            }
-        }
-    }
-    .k-dialog-button-layout-normal {
-        .k-button:first-child {
-            margin: 0;
-        }
-
-    }
-    .k-dialog-button-layout-stretched {
-        flex-direction: row;
-        align-items: stretch;
     }
 
 }

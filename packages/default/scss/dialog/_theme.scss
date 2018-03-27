@@ -3,6 +3,7 @@
     $dialog-titlebar-border-color: inherit !default;
     $dialog-titlebar-bg: $accent !default;
     $dialog-titlebar-text: $accent-contrast !default;
+    $hover-active-selector: ":hover, .k-state-hover, :active, .k-state-active";
 
     .k-dialog {}
 
@@ -14,53 +15,43 @@
 
 
     .k-dialog-buttongroup {
+        border-top-width: 1px;
+        align-items: stretch;
 
         .k-button {
-            color: inherit;
+            padding: ($window-inner-padding-x * .75) $window-inner-padding-x;
+            border-width: 0;
+            border-color: inherit;
+            flex: 1 0 0;
+        }
+        .k-button + .k-button {
+            border-left-width: 1px;
 
-            &:hover,
-            &.k-state-hover {
-                @include appearance( hovered-button );
-                border-color: inherit;
-            }
-
-            &:focus,
-            &.k-state-focused {
-                box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13);
-            }
-
-            &:active,
-            &.k-state-active {
-                @include appearance( pressed-button );
-                border-color: inherit;
+            .k-rtl &,
+            [dir='rtl'] & {
+                border-left-width: 0;
+                border-right-width: 1px;
             }
         }
 
 
-        .k-primary {
+        // Normal state
+        .k-button:not(:hover):not(.k-state-hover):not(:active):not(.k-state-eactive) {
+            color: inherit;
+            background: none;
+        }
+        .k-primary:not(:hover):not(.k-state-hover):not(:active):not(.k-state-eactive) {
             color: $accent;
+        }
 
-            &:hover,
-            &.k-state-hvoer {
-                @include appearance( hovered-primary-button );
-                border-color: inherit;
 
-                &:focus,
-                &.k-state-focused {
-                    box-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .13);
-                }
-            }
-
-            &:focus,
-            &.k-state-focused {
-                box-shadow: inset 0 0 0 2px rgba( $button-hovered-bg, .3);
-            }
-
-            &:active,
-            &.k-state-active {
-                @include appearance( pressed-primary-button );
-                border-color: inherit;
-            }
+        // Border radius
+        .k-button,
+        .k-button:first-child,
+        .k-button:last-child,
+        .k-group-start,
+        .k-group-end {
+            @include border-radius( 0 );
         }
 
     }
