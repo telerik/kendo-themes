@@ -3,6 +3,10 @@
     $listbox-button-margin: $padding-x !default;
     $listbox-width: 12.4em !default;
     $listbox-default-height: 200px !default;
+    $listbox-drop-hint-width: 1px !default;
+    $listbox-drag-clue-padding-y: $list-item-padding-y !default;
+    $listbox-drag-clue-padding-x: $list-item-padding-x !default;
+    $listbox-drag-clue-line-height: $line-height-em !default;
 
     .k-listbox {
         width: $listbox-width;
@@ -75,7 +79,7 @@
         }
 
         .k-drop-hint {
-            border-top-width: 1px;
+            border-top-width: $listbox-drop-hint-width;
             border-top-style: solid;
         }
 
@@ -90,9 +94,9 @@
 
     .k-item.k-drag-clue {
         @include border-radius( 0 );
-        padding: $list-item-padding-y $list-item-padding-x;
+        padding: $listbox-drag-clue-padding-y $listbox-drag-clue-padding-x;
+        line-height: $listbox-drag-clue-line-height;
         border-width: 0;
         font-size: $font-size;
-        line-height: $line-height-em;
     }
 }

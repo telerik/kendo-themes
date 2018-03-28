@@ -1,4 +1,7 @@
 @include exports('listbox/theme') {
+    $listbox-drag-clue-bg: $list-item-selected-bg !default;
+    $listbox-text: $list-item-selected-text !default;
+
     .k-listbox {
         .k-list-scroller {
             background-color: $widget-bg;
@@ -18,7 +21,7 @@
     }
 
     li.k-item.k-drag-clue {
-        background-color: $list-item-selected-bg;
-        color: $list-item-selected-text;
+        background-color: $listbox-drag-clue-bg;
+        color: $listbox-text;
     }
 }
