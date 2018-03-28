@@ -6,8 +6,9 @@ $listbox-button-margin: 8px !default;
 @include exports( 'listbox/layout/material' ) {
     $listbox-item-padding: $padding-x !default;
     $listbox-drop-hint-border-width: 2px !default;
-    $drag-clue-border-radius: calc( #{$font-size} + #{$padding-y} ) !default;
     $drag-clue-opacity: .9 !default;
+    $drag-clue-line-height: $line-height !default;
+    $drag-clue-border-radius: calc( ( #{$drag-clue-line-height} * ( #{$font-size} + #{$padding-y} ) ) / 2 ) !default;
 
     .k-listbox {
         .k-item {
@@ -20,13 +21,13 @@ $listbox-button-margin: 8px !default;
     }
 
     li.k-item.k-drag-clue {
-        /* sass-lint:disable no-important */
+        // sass-lint:disable no-important
         padding: $padding-y $padding-x !important;
         width: auto !important;
-        line-height: $line-height !important;
+        line-height: $drag-clue-line-height !important;
         border-width: 0 !important;
-        /* sass-lint:enable no-important */
-        border-radius: $drag-clue-border-radius;
+        // sass-lint:enable no-important
         opacity: $drag-clue-opacity;
+        @include border-radius( $drag-clue-border-radius );
     }
 }
