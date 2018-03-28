@@ -1,5 +1,9 @@
 $listbox-margin: 12px !default;
 $listbox-button-margin: 8px !default;
+$listbox-drop-hint-width: 2px !default;
+$listbox-drag-clue-padding-y: $padding-y !default;
+$listbox-drag-clue-padding-x: $padding-x !default;
+$listbox-drag-clue-line-height: $line-height !default;
 
 @import "~@progress/kendo-theme-default/scss/listbox/layout";
 
@@ -14,18 +18,11 @@ $listbox-button-margin: 8px !default;
         .k-item {
             padding: 0 $listbox-item-padding;
         }
-
-        .k-drop-hint {
-            border-width: $listbox-drop-hint-border-width;
-        }
     }
 
-    li.k-item.k-drag-clue {
+    .k-item.k-drag-clue {
         // sass-lint:disable no-important
-        padding: $padding-y $padding-x !important;
         width: auto !important;
-        line-height: $drag-clue-line-height !important;
-        border-width: 0 !important;
         // sass-lint:enable no-important
         opacity: $drag-clue-opacity;
         @include border-radius( $drag-clue-border-radius );
