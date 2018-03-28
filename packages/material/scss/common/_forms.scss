@@ -60,6 +60,11 @@
         }
     }
 
+    // Expanded
+    .k-state-border-down .k-select .k-icon {
+        transform: rotate(180deg);
+    }
+
     .k-autocomplete .k-input {
         height: 1.5em;
     }
