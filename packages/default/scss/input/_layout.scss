@@ -220,7 +220,8 @@
         }
 
         .k-ripple-blob {
-            // TODO: enhance ripple to yield positioning logic instead of using !important
+            // sass-lint:disable-block no-important
+            // use !important until ripple can apply these styles from the script
             top: 50% !important;
             left: 50% !important;
             width: 200% !important;
