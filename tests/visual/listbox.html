@@ -12,29 +12,29 @@
 
     <div id="test-area">
 
-        <div class="k-widget k-listbox k-listbox-toolbar-right" deselectable="on" title="" style="">
+        <div class="k-widget k-listbox k-listbox-toolbar-right" deselectable="on">
             <div class="k-listbox-toolbar">
                 <ul class="k-reset">
                     <li>
-                        <a href="#" class="k-button k-button-icon" data-command="moveUp" title="Move Up" aria-label="Move Up"
+                        <a href="#" class="k-button k-button-icon k-state-hover" data-command="moveUp" title="Move Up" aria-label="Move Up"
                             role="button">
                             <span class="k-icon k-i-arrow-60-up"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="k-button k-button-icon" data-command="moveDown" title="Move Down" aria-label="Move Down"
+                        <a href="#" class="k-button k-button-icon k-state-focused" data-command="moveDown" title="Move Down" aria-label="Move Down"
                             role="button">
                             <span class="k-icon k-i-arrow-60-down"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="k-button k-button-icon" data-command="transferTo" title="Transfer To" aria-label="Transfer To"
+                        <a href="#" class="k-button k-button-icon k-state-active" data-command="transferTo" title="Transfer To" aria-label="Transfer To"
                             role="button">
                             <span class="k-icon k-i-arrow-60-right"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="k-button k-button-icon" data-command="transferFrom" title="Transfer From" aria-label="Transfer From"
+                        <a href="#" class="k-button k-button-icon k-state-disabled" data-command="transferFrom" title="Transfer From" aria-label="Transfer From"
                             role="button">
                             <span class="k-icon k-i-arrow-60-left"></span>
                         </a>
@@ -63,11 +63,16 @@
                     <li class="k-item" role="option" aria-selected="false" data-uid="6bd99714-38a2-4053-80c4-48494c8f6afb">Item</li>
                     <li class="k-item k-state-selected" role="option" aria-selected="false" data-uid="19d76c92-35e9-4e0a-9135-f03d49dfe159">Selected</li>
                     <li class="k-item k-state-focused" role="option" aria-selected="false" data-uid="a5a173ed-8c8e-488c-b297-faa2f68518f0">Focused</li>
+                    <li class="k-item k-state-hover" role="option" aria-selected="false" data-uid="a5a173ed-8c8e-488c-b297-faa2f68518f0">Hovered</li>
+                    <li class="k-item k-state-hover k-state-selected" role="option" aria-selected="false" data-uid="a5a173ed-8c8e-488c-b297-faa2f68518f0">Hovered selected</li>
+                    <li class="k-item k-state-disabled" role="option" aria-selected="false" data-uid="a5a173ed-8c8e-488c-b297-faa2f68518f0">Disabled</li>
                 </ul>
             </div>
         </div>
 
-
+        <div style="margin-top: 80px">
+            <li class="k-item k-drag-clue">Drag clue</li>
+        </div>
     </div>
 
 </body>
