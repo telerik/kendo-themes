@@ -30,7 +30,7 @@
         word-wrap: break-word;
         overflow: auto;
         background: none;
-        transition: border-color 0.3s;
+        transition: border-color .3s;
     }
     .k-window.k-editor-widget {
         padding: 0;
@@ -599,7 +599,7 @@
                     margin: 0 auto;
                     background-color: #00b0ff;
                     display: none;
-                    opacity: 0.8;
+                    opacity: .8;
                 }
             }
         }
@@ -633,7 +633,7 @@
                 width: 100%;
                 height: 2px;
                 background-color: #00b0ff;
-                opacity: 0.8;
+                opacity: .8;
             }
         }
     }
