@@ -9,7 +9,7 @@
     $multiselect-remove-hover-color: $multiselect-remove-color !default;
     $multiselect-remove-hover-bg: rgba( $base-text, .54 ) !default;
     $multiselect-remove-focused-color: rgba( $base-text, .54 ) !default;
-    $multiselect-remove-focused-bg: rgba($base-bg, 0.93) !default;
+    $multiselect-remove-focused-bg: rgba($base-bg, .93) !default;
 
     .k-multiselect {
         .k-multiselect-wrap {
@@ -85,19 +85,15 @@
         line-height: 1.2;
     }
     .k-edge .k-multiselect .k-button .k-icon.k-i-arrow-60-down,
-    .k-multiselect.k-state-border-down .k-icon.k-i-arrow-60-down{
+    .k-multiselect.k-state-border-down .k-icon.k-i-arrow-60-down {
         line-height: initial;
     }
 
     // RTL
     .k-rtl {
-        .k-multiselect {
-            .k-button {
-                .k-select {
-                    margin-left: -.2em;
-                    margin-right: .5em;
-                }
-            }
+        .k-multiselect .k-button .k-select {
+            margin-left: -.2em;
+            margin-right: .5em;
         }
     }
 

@@ -95,8 +95,8 @@
 
     // Widget
     .k-widget {
-        @include appearance( widget );
         @extend %text-selection;
+        @include appearance( widget );
     }
 
 

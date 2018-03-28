@@ -407,6 +407,8 @@
     }
 
     .k-spreadsheet-active-cell {
+        // sass-lint:disable-block no-important
+        // always show exact active cell border, regardless of inline cell styles
         outline-color: transparent !important;
     }
 

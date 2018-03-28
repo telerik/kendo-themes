@@ -306,13 +306,13 @@ $primary-button-focused-shadow: 0 3px 4px 0 rgba($accent, .4) !default;
 $flat-button-hover-opacity: .08 !default;
 $flat-button-focused-opacity: .12 !default;
 $flat-button-active-opacity: .16 !default;
-$flat-button-selected-opacity: .20 !default;
+$flat-button-selected-opacity: .2 !default;
 
 // Action buttons
-$action-button-text: rgba( $accent, .87 );
-$action-button-hovered-bg: rgba( $accent, 0.12 );
-$action-button-pressed-bg: rgba( $accent, 0.16 );
-$action-button-cancel-bg: rgba( black, 0.12 );
+$action-button-text: rgba( $accent, .87 ) !default;
+$action-button-hovered-bg: rgba( $accent, .12 ) !default;
+$action-button-pressed-bg: rgba( $accent, .16 ) !default;
+$action-button-cancel-bg: rgba( black, .12 ) !default;
 
 // Toolbar
 $toolbar-text: $button-text !default;
@@ -321,9 +321,9 @@ $toolbar-border: $button-border !default;
 $toolbar-gradient: null !default;
 
 // Icon
-$icon-color: rgba($base-text, 0.54);
-$icon-hovered-color: rgba($base-text, 0.87);
-$icon-focused-color: rgba($base-text, 0.87);
+$icon-color: rgba($base-text, .54) !default;
+$icon-hovered-color: rgba($base-text, .87) !default;
+$icon-focused-color: rgba($base-text, .87) !default;
 
 // Input
 $input-text: $panel-text !default;
@@ -333,7 +333,7 @@ $input-shadow: null !default;
 
 $input-hovered-text: $input-text !default;
 $input-hovered-bg: $input-bg !default;
-$input-hovered-border: rgba( black, .87 )!default;
+$input-hovered-border: rgba( black, .87 ) !default;
 $input-hovered-shadow: null !default;
 
 $input-focused-text: $input-text !default;
