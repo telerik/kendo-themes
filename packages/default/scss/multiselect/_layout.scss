@@ -30,7 +30,8 @@
 
                 .k-button {
                     width: auto;
-                    margin: $padding-y-sm $padding-y-sm 0 0;
+                    margin-right: $padding-y-sm;
+                    margin-left: 0;
 
                     .k-select {
                         margin-left: 0;

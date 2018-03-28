@@ -64,6 +64,7 @@
                 background-color: $multiselect-remove-bg;
                 color: $multiselect-remove-color;
                 margin-left: .5em;
+                margin-right: -.2em;
 
                 .k-icon {
                     font-size: $font-size-sm;
@@ -74,6 +75,27 @@
                 &:hover {
                     background-color: $multiselect-remove-hover-bg;
                     color: $multiselect-remove-hover-color;
+                }
+            }
+        }
+    }
+
+    // Fix vertical centering icon
+    .k-multiselect .k-button .k-icon.k-i-arrow-60-down {
+        line-height: 1.2;
+    }
+    .k-edge .k-multiselect .k-button .k-icon.k-i-arrow-60-down,
+    .k-multiselect.k-state-border-down .k-icon.k-i-arrow-60-down{
+        line-height: initial;
+    }
+
+    // RTL
+    .k-rtl {
+        .k-multiselect {
+            .k-button {
+                .k-select {
+                    margin-left: -.2em;
+                    margin-right: .5em;
                 }
             }
         }
