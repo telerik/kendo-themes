@@ -1,5 +1,3 @@
-$calendar-cell-padding-y: .25rem !default;
-$calendar-cell-padding-x: .25rem !default;
 $calendar-line-height: 1.25 !default;
 $calendar-cell-size: ( 34px / 14px ) * 1em;
 $calendar-cell-border-radius: ( $calendar-cell-size / 2 );
@@ -14,10 +12,19 @@ $calendar-header-cell-padding-y: 8px !default;
 
 
 @include exports('calendar/layout') {
+    $calendar-width: 16.917em !default;
+    $calendar-header-border: 1px !default;
+    $calendar-cell-padding-y: .25rem !default;
+    $calendar-cell-padding-x: .25rem !default;
+    $calendar-header-padding-x: $calendar-cell-padding-y !default;
+    $calendar-header-padding-y: $calendar-cell-padding-y !default;
+    $calendar-other-month-opacity: $disabled-opacity !default;
+    $calendar-century-view-line-height: 1.5 !default;
+    $calendar-century-view-text-align: left !default;
 
     // Base
     .k-calendar {
-        width: 16.917em;
+        width: $calendar-width;
         position: relative;
         overflow: hidden;
         display: inline-block;
@@ -72,7 +79,7 @@ $calendar-header-cell-padding-y: 8px !default;
 
             .k-header,
             .k-footer {
-                padding: $calendar-cell-padding-y;
+                padding: $calendar-header-padding-y $calendar-header-padding-x;
                 text-align: center;
                 display: flex;
                 flex-direction: row;
@@ -88,7 +95,7 @@ $calendar-header-cell-padding-y: 8px !default;
             }
 
             .k-header {
-                border-bottom-width: 1px;
+                border-bottom-width: $calendar-header-border;
                 border-bottom-style: solid;
                 z-index: 1;
             }
@@ -145,8 +152,8 @@ $calendar-header-cell-padding-y: 8px !default;
                 }
 
                 &.k-meta-view.k-century .k-link {
-                    line-height: 1.5;
-                    text-align: left;
+                    line-height: $calendar-century-view-line-height;
+                    text-align: $calendar-century-view-text-align;
                 }
             }
 
@@ -161,7 +168,7 @@ $calendar-header-cell-padding-y: 8px !default;
             .k-alt,
             // .k-weekend,
             .k-other-month .k-link {
-                opacity: $disabled-opacity;
+                opacity: $calendar-other-month-opacity;
             }
 
             .k-alt {

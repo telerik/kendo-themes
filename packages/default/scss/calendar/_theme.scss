@@ -118,7 +118,7 @@
             }
         }
 
-        &:not(.k-infinite) {
+        &:not(.k-calendar-infinite) {
             .k-weekend {
                 background-color: darken($widget-bg, 2.35);
             }
