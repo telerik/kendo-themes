@@ -137,6 +137,7 @@
         .k-pane {
             position: relative;
             flex: 1 1 auto;
+            display: block; // ie10 + flex
             min-width: 0;
             max-width: 100%;
             min-height: 0;
