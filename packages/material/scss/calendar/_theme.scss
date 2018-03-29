@@ -6,7 +6,7 @@ $header-shadow: none !default;
 
     $calendar-pale-text: rgba(0, 0, 0, .38) !default;
 
-    .k-calendar:not(.k-infinite) {
+    .k-calendar:not(.k-calendar-infinite) {
         .k-content {
             .k-state-selected,
             .k-state-hover,
@@ -24,6 +24,12 @@ $header-shadow: none !default;
                 background-color: $accent;
             }
         }
+
+        .k-header .k-link.k-state-hover,
+        .k-header .k-link:hover {
+                background-color: transparent;
+                color: inherit;
+            }
 
         th,
         .k-alt {
