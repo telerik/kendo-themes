@@ -5,6 +5,7 @@ $header-shadow: none !default;
 @include exports('calendar/theme/material') {
 
     $calendar-pale-text: rgba(0, 0, 0, .38) !default;
+    $calendar-hover-bg: rgba(0, 0, 0, .07) !default;
 
     .k-calendar:not(.k-calendar-infinite) {
         .k-content {
@@ -16,8 +17,9 @@ $header-shadow: none !default;
                 background-color: transparent;
             }
 
-            .k-state-hover .k-link {
-                background-color: $hovered-bg;
+            .k-state-hover .k-link,
+            .k-state-focused .k-link {
+                background-color: $calendar-hover-bg;
             }
 
             .k-state-selected .k-link {
@@ -27,9 +29,9 @@ $header-shadow: none !default;
 
         .k-header .k-link.k-state-hover,
         .k-header .k-link:hover {
-                background-color: transparent;
-                color: inherit;
-            }
+            background-color: transparent;
+            color: inherit;
+        }
 
         th,
         .k-alt {
