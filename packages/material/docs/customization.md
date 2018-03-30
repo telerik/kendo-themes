@@ -421,8 +421,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$series-b</td>
 <td>
-    <span class="color-preview" style="background-color: #e91e63"></span>
-    #e91e63
+    <span class="color-preview" style="background-color: #2196f3"></span>
+    #2196f3
 </td>
 <td>The clor of the second series.
 </td>
@@ -430,8 +430,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$series-c</td>
 <td>
-    <span class="color-preview" style="background-color: #2196f3"></span>
-    #2196f3
+    <span class="color-preview" style="background-color: #43a047"></span>
+    #43a047
 </td>
 <td>The color of the third series.
 </td>
@@ -439,8 +439,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$series-d</td>
 <td>
-    <span class="color-preview" style="background-color: #43a047"></span>
-    #43a047
+    <span class="color-preview" style="background-color: #ffc107"></span>
+    #ffc107
 </td>
 <td>The color of the fourth series.
 </td>
@@ -448,8 +448,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$series-e</td>
 <td>
-    <span class="color-preview" style="background-color: #fc5a33"></span>
-    #fc5a33
+    <span class="color-preview" style="background-color: #ff5722"></span>
+    #ff5722
 </td>
 <td>The color of the fifth series.
 </td>
@@ -457,8 +457,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$series-f</td>
 <td>
-    <span class="color-preview" style="background-color: #fdc139"></span>
-    #fdc139
+    <span class="color-preview" style="background-color: #e91e63"></span>
+    #e91e63
 </td>
 <td>The color of the sixth series.
 </td>
