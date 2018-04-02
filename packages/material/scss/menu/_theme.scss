@@ -1,0 +1,53 @@
+$menu-text: $base-text !default;
+$menu-hover-text: $base-text !default;
+$menu-selected-text: $base-text !default;
+
+$menu-scrolling-icon: inherit !default;
+$menu-scrolling-icon-hover: inherit !default;
+
+
+@import "~@progress/kendo-theme-default/scss/menu/theme";
+
+@include exports("multiselect/theme/material") {
+
+    // Subitems
+    .k-menu-group,
+    .k-menu.k-context-menu {
+        .k-item {
+
+            // Hovered && Selected subitem
+            &.k-state-hover > .k-state-active.k-link,
+            &.k-state-hover > .k-state-selected.k-link {
+                background: $list-item-hovered-bg;
+            }
+
+            // Focused
+            &.k-state-focused {
+                background: $list-item-hovered-bg;
+            }
+        }
+    }
+
+    // Scrolling
+    .k-menu-scroll-wrapper {
+
+        .k-menu-scroll-button {
+            &:hover {
+                border-color: transparent;
+            }
+
+            .k-i-arrow-60-up::before {
+                content: "\e013";
+            }
+            .k-i-arrow-60-right::before {
+                content: "\e014";
+            }
+            .k-i-arrow-60-down::before {
+                content: "\e015";
+            }
+            .k-i-arrow-60-left::before {
+                content: "\e016";
+            }
+        }
+    }
+}

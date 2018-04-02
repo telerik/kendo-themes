@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body>
+
+    <div id="test-area">
+
+        <!-- horizontal menu -->
+        <div class="section">
+            <ul id="menu" data-role="menu" class="k-widget k-reset k-header k-menu k-menu-horizontal">
+                <li class="k-item k-state-disabled k-first">
+                    <span class="k-link"> Disabled</span>
+                </li>
+                <li class="k-item k-state-default">
+                    <span class="k-link">Normal</span>
+                </li>
+                <li class="k-item k-state-default k-state-hover">
+                    <span class="k-link">
+                        Hover
+                        <span class="k-icon k-i-arrow-60-down k-menu-expand-arrow"></span>
+                    </span>
+                </li>
+                <li aria-haspopup="true" class="k-item k-state-default">
+                    <span class="k-link k-state-active">
+                        Active
+                        <span class="k-icon k-i-arrow-60-down k-menu-expand-arrow"></span>
+                    </span>
+                    <div class="k-animation-container" style="width: 144px; height: 144px; overflow: visible; display: block; position: absolute; z-index: 10002; top: 33.8438px; left: 0px;">
+                        <ul class="k-group k-menu-group k-popup k-reset k-state-border-up" style="display: block; position: absolute; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-stretch: 100%; font-style: normal; font-weight: 400; line-height: normal; transform: translateY(0px);">
+                            <li aria-haspopup="true" class="k-item k-state-default k-state-disabled k-first" role="menuitem">
+                                <span class="k-link">Disabled</span>
+                            </li>
+                            <li aria-haspopup="true" class="k-item k-state-default" role="menuitem">
+                                <span class="k-link">Normal</span>
+                            </li>
+                            <li aria-haspopup="true" class="k-item k-state-default k-state-hover" role="menuitem">
+                                <span class="k-link">
+                                    Hover
+                                    <span class="k-icon k-i-arrow-60-right k-menu-expand-arrow"></span>
+                                </span>
+                            </li>
+                            <li class="k-item k-state-default k-state-border-right" style="z-index: 101;">
+                                <span class="k-link k-state-active k-state-border-right">
+                                    Active
+                                    <span class="k-icon k-i-arrow-60-right k-menu-expand-arrow"></span>
+                                </span>
+                            </li>
+                            <li aria-haspopup="true" class="k-item k-state-default k-state-focused k-last" role="menuitem">
+                                <span class="k-link">Focus</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="k-item k-state-default k-state-focused k-last">
+                    <span class="k-link">Focus</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- vertical menu -->
+        <div class="section" style="margin-top: 150px; width: 200px">
+            <ul id="menu" data-role="menu" class="k-widget k-reset k-header k-menu k-menu-vertical">
+                <li class="k-item k-state-disabled k-first">
+                    <span class="k-link">Disabled</span>
+                </li>
+                <li class="k-item k-state-default">
+                    <span class="k-link">Normal</span>
+                </li>
+                <li class="k-item k-state-default k-state-hover">
+                    <span class="k-link">
+                        Hover
+                        <span class="k-icon k-i-arrow-60-right k-menu-expand-arrow"></span>
+                    </span>
+                </li>
+                <li aria-haspopup="true" class="k-item k-state-default">
+                    <span class="k-link k-state-active">
+                        Active
+                        <span class="k-icon k-i-arrow-60-right k-menu-expand-arrow"></span>
+                    </span>
+                </li>
+                <li class="k-item k-state-default k-state-focused k-last">
+                    <span class="k-link">Focus</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- horizontal scrolling menu -->
+        <div class="section" style="margin-top: 50px;">
+            <div class="k-menu-scroll-wrapper horizontal" style="width: 300px;">
+                <ul id="menu" data-role="menu" class="k-widget k-reset k-header k-menu k-menu-horizontal">
+                    <li class="k-item k-state-default k-first">
+                        <span class="k-link">Item 1</span>
+                    </li>
+                    <li class="k-item k-state-default">
+                        <span class="k-link">Item 2</span>
+                    </li>
+                    <li class="k-item k-state-default">
+                        <span class="k-link">Item 3</span>
+                    </li>
+                    <li class="k-item k-state-default">
+                        <span class="k-link">Item 4</span>
+                    </li>
+                    <li class="k-item k-state-default k-last">
+                        <span class="k-link">Item 5</span>
+                    </li>
+                    <li class="k-item k-state-default k-last">
+                        <span class="k-link">Item 6</span>
+                    </li>
+                </ul>
+                <span class="k-button k-button-icon k-menu-scroll-button k-scroll-left" unselectable="on"><span class="k-icon k-i-arrow-60-left"></span></span>
+                <span class="k-button k-button-icon k-menu-scroll-button k-scroll-right" unselectable="on"><span class="k-icon k-i-arrow-60-right"></span></span>
+            </div>
+        </div>
+
+        <!-- vertical scrolling menu -->
+        <div class="section" style="margin-top: 50px; width: 200px">
+            <div class="k-menu-scroll-wrapper vertical">
+                <ul id="menu" data-role="menu" class="k-widget k-reset k-header k-menu k-menu-vertical" style="height: 150px">
+                    <li class="k-item k-state-default k-first">
+                        <span class="k-link">Item 1</span>
+                    </li>
+                    <li class="k-item k-state-default">
+                        <span class="k-link">Item 2</span>
+                    </li>
+                    <li class="k-item k-state-default">
+                        <span class="k-link">Item 3</span>
+                    </li>
+                    <li class="k-item k-state-default">
+                        <span class="k-link">Item 4</span>
+                    </li>
+                    <li class="k-item k-state-default k-last">
+                        <span class="k-link">Item 5</span>
+                    </li>
+                    <li class="k-item k-state-default k-last">
+                        <span class="k-link">Item 6</span>
+                    </li>
+                </ul>
+                <span class="k-button k-button-icon k-menu-scroll-button k-scroll-up" unselectable="on"><span class="k-icon k-i-arrow-60-up"></span></span>
+                <span class="k-button k-button-icon k-menu-scroll-button k-scroll-down" unselectable="on"><span class="k-icon k-i-arrow-60-down"></span></span>
+            </div>
+        </div>
+
+</body>
+
+</html>
