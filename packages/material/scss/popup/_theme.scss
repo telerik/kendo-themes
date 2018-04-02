@@ -16,4 +16,17 @@ $grouping-border: $grouping-header-bg !default;
         }
 
     }
+
+    .k-list-container {
+
+        .k-button {
+
+            // Focus state
+            &:focus,
+            &.k-state-focus {
+                @include appearance( hovered-list-item );
+            }
+
+        }
+    }
 }
