@@ -19,6 +19,12 @@ $toolbar-button-spacer: 1px !default;
             }
         }
 
+        // Icon button
+        .k-button-icon {
+            height: calc( #{$toolbar-calc-size} );
+            width: calc( #{$toolbar-calc-size} );
+        }
+
         // Dropdowns and Inputs
         & > * > .k-widget {
             // TODO unselect if necessary after the design for inputs in toolbar is completed
