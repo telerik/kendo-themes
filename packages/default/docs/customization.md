@@ -458,7 +458,7 @@ Used to provide contrast between the background and foreground colors.
     <span class="color-preview" style="background-color: #ffd246"></span>
     #ffd246
 </td>
-<td>The clor of the second series.
+<td>The color of the second series.
 </td>
 </tr>
 <tr>
