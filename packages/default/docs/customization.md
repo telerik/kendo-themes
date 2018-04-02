@@ -283,6 +283,17 @@ Used to provide contrast between the background and foreground colors.
 <td>The gradient background of selected items.
 </td>
 </tr>
+<tr>
+<td>$grid-alt-bg</td>
+<td>
+    
+    rgba( contrast-wcag( $panel-bg ), .04)
+</td>
+<td>The background of alternating rows.<br/>
+    Set to transparent to remove the row stripes.<br/>
+    @group grid
+</td>
+</tr>
 </table>
 
 
@@ -447,7 +458,7 @@ Used to provide contrast between the background and foreground colors.
     <span class="color-preview" style="background-color: #ffd246"></span>
     #ffd246
 </td>
-<td>The clor of the second series.
+<td>The color of the second series.
 </td>
 </tr>
 <tr>
