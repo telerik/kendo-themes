@@ -2,6 +2,10 @@
     $grid-chrome-text: $header-text !default;
     $grid-chrome-bg: $header-bg !default;
     $grid-chrome-border: $border-color !default;
+
+    /// The background of alternating rows.
+    /// Set to transparent to remove the row stripes.
+    /// @group grid
     $grid-alt-bg: rgba( contrast-wcag( $panel-bg ), .04) !default;
 
     $grid-selected-text: $grid-chrome-text !default;
