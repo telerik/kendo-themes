@@ -283,6 +283,17 @@ Used to provide contrast between the background and foreground colors.
 <td>The gradient background of selected items.
 </td>
 </tr>
+<tr>
+<td>$grid-alt-bg</td>
+<td>
+    
+    rgba( contrast-wcag( $panel-bg ), .04)
+</td>
+<td>The background of alternating rows.<br/>
+    Set to transparent to remove the row stripes.<br/>
+    @group grid
+</td>
+</tr>
 </table>
 
 
