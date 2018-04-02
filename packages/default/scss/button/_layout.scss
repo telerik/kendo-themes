@@ -89,14 +89,41 @@
         .k-button {
             @include border-left-radius-only();
         }
-        .k-split-button-arrow {
+        .k-button.k-split-button-arrow {
             @include border-right-radius-only();
             margin-left: -1px;
-            padding: $button-padding-y;
+            padding: $button-padding-x-sm;
         }
 
         .k-widget {
             border: 0;
+        }
+
+        // Hover
+        &:hover,
+        &.k-state-hover {
+            & > .k-button {
+                &::before {
+                    @include opacity( $flat-button-hover-opacity );
+                }
+            }
+        }
+
+        // Focused state
+        &:focus {
+            & > .k-button {
+                &::before {
+                    @include opacity( $flat-button-focused-opacity );
+                }
+            }
+        }
+
+        // Pressed state
+        .k-button:active,
+        .k-button.k-state-active {
+            &::before {
+                @include opacity( $flat-button-active-opacity );
+            }
         }
     }
 

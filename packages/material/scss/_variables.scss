@@ -84,13 +84,16 @@ $textarea-floating-label-padding: 25px !default;
 
 /// The horizontal padding of the container.
 /// @group toolbar
-$toolbar-padding-x: $padding-x !default;
+$toolbar-padding-x: 0 !default;
 
 /// The vertical padding of the container.
 /// @group toolbar
-$toolbar-padding-y: $padding-x !default;
-$toolbar-calc-size: #{$button-calc-size} + #{$toolbar-padding-y * 2} + 2px;
-$toolbar-inner-calc-size: #{$button-calc-size} + #{$toolbar-padding-y * 2};
+$toolbar-padding-y: 0 !default;
+$toolbar-button-padding-x: $button-padding-x !default;
+$toolbar-button-padding-y: $padding-y*2.5 !default;
+$toolbar-button-calc-size: #{$form-line-height-em} + #{$toolbar-button-padding-y * 2} + 2px;
+$toolbar-calc-size: #{$toolbar-button-calc-size} + #{$toolbar-padding-y * 2} + 2px !default;
+$toolbar-inner-calc-size: #{$toolbar-button-calc-size} + #{$toolbar-padding-y * 2} !default;
 
 $list-item-padding-x: $padding-x * 1.5 !default;
 $list-item-padding-y: $padding-y / 2 !default;
@@ -149,7 +152,7 @@ $base-border: rgba( black, .08 ) !default;
 $base-gradient: $base-bg, darken( $base-bg, 2% ) !default;
 
 /// The text color of hovered items.
-$hovered-text: #656565 !default;
+$hovered-text: $base-text !default;
 /// The background of hovered items.
 $hovered-bg: #ededed !default;
 /// The border color of hovered items.
@@ -316,14 +319,14 @@ $action-button-cancel-bg: rgba( black, .12 ) !default;
 
 // Toolbar
 $toolbar-text: $button-text !default;
-$toolbar-bg: $button-bg !default;
-$toolbar-border: $button-border !default;
+$toolbar-bg: darken($button-bg, 4) !default;
+$toolbar-border: $toolbar-bg !default;
 $toolbar-gradient: null !default;
 
 // Icon
-$icon-color: rgba($base-text, .54) !default;
-$icon-hovered-color: rgba($base-text, .87) !default;
-$icon-focused-color: rgba($base-text, .87) !default;
+$icon-opacity: .54;
+$icon-hovered-opacity: .87;
+$icon-focused-opacity: .87;
 
 // Input
 $input-text: $panel-text !default;

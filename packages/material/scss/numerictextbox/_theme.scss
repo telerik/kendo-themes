@@ -19,11 +19,11 @@
         }
 
         .k-link {
-            color: $icon-color;
+            opacity: $icon-opacity;
 
             // Hover state
             &:hover {
-                color: $icon-hovered-color;
+                opacity: $icon-hovered-opacity;
             }
 
             // Selected state

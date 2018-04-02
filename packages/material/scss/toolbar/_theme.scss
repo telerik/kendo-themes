@@ -1,0 +1,43 @@
+//@import "~@progress/kendo-theme-default/scss/toolbar/theme";
+
+@include exports("toolbar/theme/material") {
+
+    .k-toolbar {
+        @include appearance( toolbar );
+
+        // Dropdowns and Inputs
+        & > * > .k-widget {
+
+            // TODO unselect if necessary after the design for inputs in toolbar is completed
+            // .k-autocomplete,
+            // .k-dateinput-wrap,
+            // .k-picker-wrap,
+            // .k-multiselect-wrap,
+            // .k-numeric-wrap,
+            .k-dropdown-wrap {
+                color: $button-text;
+
+                // Hovered state
+                &.k-state-hovered {
+
+                }
+            }
+        }
+
+        .k-button {
+            background: transparent;
+        }
+
+        // Expanded state
+        .k-state-border-up,
+        .k-state-border-down {
+            background: $popup-bg;
+
+            &::before,
+            .k-button::before {
+                opacity: 0;
+            }
+        }
+    }
+
+}

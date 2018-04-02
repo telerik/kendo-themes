@@ -138,8 +138,10 @@ $toolbar-padding-x: $table-cell-padding / 2 !default;
 /// @group toolbar
 $toolbar-padding-y: $table-cell-padding / 2 !default;
 
-$toolbar-calc-size: #{$button-calc-size} + #{$toolbar-padding-y * 2} + 2px;
-$toolbar-inner-calc-size: #{$button-calc-size} + #{$toolbar-padding-y * 2};
+$toolbar-button-padding-x: $button-padding-x !default;
+$toolbar-button-padding-y: $button-padding-y !default;
+$toolbar-calc-size: #{$button-calc-size} + #{$toolbar-padding-y * 2} + 2px !default;
+$toolbar-inner-calc-size: #{$button-calc-size} + #{$toolbar-padding-y * 2} !default;
 
 $list-item-padding-x: $dropdown-item-padding-x !default;
 $list-item-padding-y: 3px !default;
