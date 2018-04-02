@@ -104,8 +104,11 @@ $toolbar-padding-x: $padding-x !default;
 /// The vertical padding of the container.
 /// @group toolbar
 $toolbar-padding-y: $padding-x !default;
-$toolbar-calc-size: #{$button-calc-size} + #{$toolbar-padding-y * 2} + 2px;
-$toolbar-inner-calc-size: #{$button-calc-size} + #{$toolbar-padding-y * 2};
+$toolbar-button-padding-x: $button-padding-x !default;
+$toolbar-button-padding-y: $button-padding-y !default;
+$toolbar-button-calc-size: #{$form-line-height-em} + #{$toolbar-button-padding-y * 2} + 2px;
+$toolbar-calc-size: #{$toolbar-button-calc-size} + #{$toolbar-padding-y * 2} + 2px !default;
+$toolbar-inner-calc-size: #{$toolbar-button-calc-size} + #{$toolbar-padding-y * 2} !default;
 
 $list-item-padding-x: $padding-x !default;
 $list-item-padding-y: $padding-y !default;

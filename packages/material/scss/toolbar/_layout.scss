@@ -1,0 +1,47 @@
+$toolbar-button-spacer: 1px !default;
+// $toolbar-button-arrow-width: calc($icon-size + 2 * $padding-x-sm);
+
+@import "~@progress/kendo-theme-default/scss/toolbar/layout";
+
+@include exports("toolbar/layout/material") {
+
+    .k-toolbar {
+
+        .k-button,
+        .k-button-group {
+            box-shadow: none;
+        }
+
+        // Button
+        .k-button {
+            &::before {
+                display: block;
+            }
+        }
+
+        // Dropdowns and Inputs
+        & > * > .k-widget {
+            // TODO unselect if necessary after the design for inputs in toolbar is completed
+            //.k-autocomplete,
+            //.k-dateinput-wrap,
+            //.k-picker-wrap,
+            //.k-multiselect-wrap,
+            //.k-numeric-wrap
+            .k-dropdown-wrap {
+                border-width: 0;
+                font-size: inherit;
+                text-transform: uppercase;
+
+                .k-input {
+                    height: auto;
+                    padding: $toolbar-button-padding-y $toolbar-button-padding-x;
+                }
+
+                .k-select {
+                    padding: $button-padding-x-sm;
+                    opacity: $icon-opacity;
+                }
+            }
+        }
+    }
+}

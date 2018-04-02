@@ -30,7 +30,7 @@ $forms-invalid-color: inherit !default;
         }
 
         .k-select {
-            color: $icon-color;
+            opacity: $icon-opacity;
             border-width: 0;
             font-size: $font-size;
         }
@@ -41,7 +41,7 @@ $forms-invalid-color: inherit !default;
             border-color: $input-hovered-border;
 
             .k-select {
-                color: $icon-hovered-color;
+                opacity: $icon-hovered-opacity;
             }
         }
 
@@ -51,7 +51,7 @@ $forms-invalid-color: inherit !default;
             border-color: $input-focused-border;
 
             .k-select {
-                color: $icon-focused-color;
+                opacity: $icon-focused-opacity;
             }
         }
 
