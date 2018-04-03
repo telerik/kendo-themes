@@ -8,7 +8,8 @@ $listbox-drag-clue-line-height: $line-height !default;
 @import "~@progress/kendo-theme-default/scss/listbox/layout";
 
 @include exports( 'listbox/layout/material' ) {
-    $listbox-item-padding: $padding-x !default;
+    $listbox-item-padding-x: 24px !default;
+    $listbox-item-padding-y: 2px !default;
     $listbox-drop-hint-border-width: 2px !default;
     $drag-clue-opacity: .9 !default;
     $drag-clue-line-height: $line-height !default;
@@ -16,7 +17,7 @@ $listbox-drag-clue-line-height: $line-height !default;
 
     .k-listbox {
         .k-item {
-            padding: 0 $listbox-item-padding;
+            padding: $listbox-item-padding-y $listbox-item-padding-x;
         }
     }
 
