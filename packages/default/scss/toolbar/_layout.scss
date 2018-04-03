@@ -1,4 +1,5 @@
 $toolbar-button-spacer: 0 !default;
+$toolbar-shadow: none !default;
 
 @include exports("toolbar/layout") {
 
@@ -13,6 +14,7 @@ $toolbar-button-spacer: 0 !default;
         justify-content: flex-start;
         position: relative;
         overflow: hidden;
+        box-shadow: $toolbar-shadow;
 
         &.k-toolbar-resizable {
             flex-wrap: nowrap;
@@ -53,14 +55,16 @@ $toolbar-button-spacer: 0 !default;
 
 
         // Dropdowns and Inputs
-        & > * > .k-widget {
-            // TODO unselect if necessary after the design for inputs in toolbar is completed
-            //.k-autocomplete,
-            //.k-dateinput-wrap,
-            //.k-picker-wrap,
-            //.k-multiselect-wrap,
-            //.k-numeric-wrap
-            .k-dropdown-wrap::before {
+        // TODO unselect if necessary after the design for inputs in toolbar is completed
+        //.k-autocomplete,
+        //.k-dateinput-wrap,
+        //.k-picker-wrap,
+        //.k-multiselect-wrap,
+        //.k-numeric-wrap,
+        .k-picker-wrap,
+        .k-dropdown-wrap {
+
+            &::before {
                 @extend .k-button::before;
             }
         }
@@ -93,7 +97,6 @@ $toolbar-button-spacer: 0 !default;
             width: 0;
             border-width: 0 0 0 1px;
             border-style: solid;
-            border-color: inherit;
             align-self: stretch;
         }
     }
