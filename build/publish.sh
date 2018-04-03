@@ -40,9 +40,15 @@ then
   echo "Push lerna commit to Github..."
   git push origin master --tags --quiet > /dev/null 2>&1
 
-  echo "Rewind develop branch on top of master..."
-  git push origin master:develop --quiet > /dev/null 2>&1
+  # Set successful build status, in order to allow pushing to develop
+  commit=$(git rev-parse --short HEAD)
+  repo="https://api.github.com/repos/telerik/kendo-themes/commits/$commit/statuses"
+  auth="Authorization: token ${GH_TOKEN}"
+  curl -s -H "$auth" -d '{"state": "success", "context": "continuous-integration/travis-ci"}' $repo > /dev/null 2>&1
+  curl -s -H "$auth" -H "Accept: application/json" -H "Content-Type: application/json" -X GET $repo > /dev/null 2>&1
 
+  # Push to develop
+  git push origin master:develop --quiet > /dev/null 2>&1
 else
   echo "Publishing is enabled only for the master and develop branches"
 fi
