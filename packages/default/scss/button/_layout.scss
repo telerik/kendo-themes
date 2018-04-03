@@ -84,50 +84,6 @@
     }
 
 
-    // Split button
-    .k-split-button {
-        .k-button {
-            @include border-left-radius-only();
-        }
-        .k-button.k-split-button-arrow {
-            @include border-right-radius-only();
-            margin-left: -1px;
-            padding: $button-padding-x-sm;
-        }
-
-        .k-widget {
-            border: 0;
-        }
-
-        // Hover
-        &:hover,
-        &.k-state-hover {
-            & > .k-button {
-                &::before {
-                    @include opacity( $flat-button-hover-opacity );
-                }
-            }
-        }
-
-        // Focused state
-        &:focus {
-            & > .k-button {
-                &::before {
-                    @include opacity( $flat-button-focused-opacity );
-                }
-            }
-        }
-
-        // Pressed state
-        .k-button:active,
-        .k-button.k-state-active {
-            &::before {
-                @include opacity( $flat-button-active-opacity );
-            }
-        }
-    }
-
-
     //DropDown Button
     .k-dropdown-button {
         &.k-state-focused,
@@ -244,6 +200,15 @@
         background: none !important; // sass-lint:disable-line no-important
         box-shadow: none !important; // sass-lint:disable-line no-important
         transition: color .2s ease-in-out;
+
+        &:hover,
+        &.k-state-hover,
+        &:active,
+        &.k-state-active,
+        &:hover:active,
+        &:hover.k-state-active {
+            color: inherit;
+        }
 
         &::before {
             display: block;

@@ -44,39 +44,4 @@ $split-button-arrow-border-width: 1px;
             border-right-width: 0;
         }
     }
-
-    // Split button
-    .k-split-button {
-
-        .k-split-button-arrow {
-            border-left-width: $split-button-arrow-border-width;
-            border-color: transparent;
-
-            &::before {
-                left: -$split-button-arrow-border-width;
-            }
-        }
-
-        .k-icon {
-            opacity: $icon-opacity;
-        }
-
-        // States
-        &:hover,
-        &:focus,
-        &.k-state-border-up,
-        &.k-state-border-down {
-
-            .k-split-button-arrow {
-                border-left-color: $button-border;
-            }
-        }
-
-        // Expanded state
-        &.k-state-border-up,
-        &.k-state-border-down {
-
-
-        }
-    }
 }

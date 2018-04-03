@@ -1,4 +1,5 @@
 $toolbar-button-spacer: 1px !default;
+$toolbar-shadow: $button-shadow !default;
 // $toolbar-button-arrow-width: calc($icon-size + 2 * $padding-x-sm);
 
 @import "~@progress/kendo-theme-default/scss/toolbar/layout";
@@ -21,33 +22,64 @@ $toolbar-button-spacer: 1px !default;
 
         // Icon button
         .k-button-icon {
-            height: calc( #{$toolbar-calc-size} );
-            width: calc( #{$toolbar-calc-size} );
+            height: calc( #{$toolbar-inner-calc-size} );
+            width: calc( #{$toolbar-inner-calc-size} );
+        }
+
+        // Split button
+        .k-split-button {
+
+            .k-button {
+                background: transparent;
+            }
+
+
+            .k-split-button-arrow {
+                border-left-width: $split-button-arrow-border-width;
+                border-color: transparent;
+
+                &::before {
+                    left: -$split-button-arrow-border-width;
+                }
+            }
+
+            .k-icon {
+                opacity: $icon-opacity;
+            }
+
+            // Expanded state
+            &.k-state-border-down {
+                .k-i-arrow-60-down {
+                    transform: rotate(180deg);
+                }
+            }
         }
 
         // Dropdowns and Inputs
-        & > * > .k-widget {
-            // TODO unselect if necessary after the design for inputs in toolbar is completed
-            //.k-autocomplete,
-            //.k-dateinput-wrap,
-            //.k-picker-wrap,
-            //.k-multiselect-wrap,
-            //.k-numeric-wrap
-            .k-dropdown-wrap {
-                border-width: 0;
-                font-size: inherit;
-                text-transform: uppercase;
+        // TODO unselect if necessary after the design for inputs in toolbar is completed
+        //.k-autocomplete,
+        //.k-dateinput-wrap,
+        //.k-multiselect-wrap,
+        //.k-numeric-wrap,
+        .k-picker-wrap,
+        .k-dropdown-wrap {
+            border-width: 0;
+            font-size: inherit;
+            text-transform: uppercase;
 
-                .k-input {
-                    height: auto;
-                    padding: $toolbar-button-padding-y $toolbar-button-padding-x;
-                }
-
-                .k-select {
-                    padding: $button-padding-x-sm;
-                    opacity: $icon-opacity;
-                }
+            .k-input {
+                height: auto;
+                padding: $toolbar-button-padding-y $toolbar-button-padding-x;
             }
+
+            .k-select {
+                padding: $button-padding-x-sm;
+                opacity: $icon-opacity;
+            }
+        }
+
+        .k-picker-wrap {
+            height: calc(#{$toolbar-inner-calc-size});
         }
     }
 }

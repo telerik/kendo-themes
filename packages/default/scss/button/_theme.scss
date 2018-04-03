@@ -1,8 +1,3 @@
-$split-button-text: $button-text !default;
-$split-button-bg: $button-bg !default;
-$split-button-border: $button-border !default;
-$split-button-active-shadow: inset $button-pressed-shadow !default;
-
 @include exports( "button/theme" ) {
     $outline-primary-button-text: $accent !default;
 
