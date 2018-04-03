@@ -1,3 +1,11 @@
+$toolbar-separator-border: inherit !default;
+$toolbar-button-expanded-bg: transparent !default;
+$toolbar-button-expanded-shadow: none !default;
+$toolbar-button-hovered-opacity: .05 !default;
+$toolbar-button-active-opacity: .22 !default;
+$toolbar-button-focused-opacity: 0 !default;
+$toolbar-button-focused-outline-opacity: .08 !default;
+
 @include exports("toolbar/theme") {
 
     // Theme
@@ -29,6 +37,10 @@
                 position: relative;
             }
 
+            &::before {
+                display: block;
+            }
+
             &::after {
                 display: block;
                 opacity: 0;
@@ -47,10 +59,43 @@
             }
         }
 
+        //SplitButton
+        .k-split-button {
 
-        // Split button
-        .k-split-button .k-button {
-            @include appearance( button );
+            .k-button {
+                color: $split-button-text;
+                background: $split-button-bg;
+                border-color: $split-button-border;
+            }
+
+            // Hovered state
+            .k-button:hover,
+            .k-button.k-state-hover {
+                @include appearance( hovered-button );
+            }
+
+            // Focused state
+            &:focus,
+            .k-state-focused {
+                box-shadow: $button-focused-shadow;
+            }
+            .k-button:focus,
+            .k-button.k-state-focused {
+                border-color: $button-pressed-border;
+                box-shadow: inset 0 0 0 1px $button-pressed-border;
+            }
+
+            // Active state
+            .k-button:active,
+            .k-button.k-state-active {
+                @include appearance( pressed-button );
+                box-shadow: none;
+            }
+
+            // Expanded state
+            .k-state-border-down .k-split-button-arrow {
+                box-shadow: $split-button-active-shadow;
+            }
         }
 
 
@@ -59,14 +104,8 @@
         .k-button.k-state-hover {
 
             &::before {
-                opacity: .07;
+                opacity: $toolbar-button-hovered-opacity;
                 z-index: 1;
-            }
-        }
-        .k-split-button {
-            .k-button:hover,
-            .k-button.k-state-hover {
-                @include appearance( hovered-button );
             }
         }
 
@@ -76,49 +115,45 @@
         .k-button.k-state-focused {
             box-shadow: none;
 
-            &::after {
-                opacity: .08;
-                z-index: 1;
-            }
-        }
-
-        .k-split-button {
-            .k-button:focus,
-            .k-button.k-state-focused {
-                border-color: $button-pressed-border;
-                box-shadow: inset 0 0 0 1px $button-pressed-border;
-            }
-        }
-        .k-split-button:focus {
-            box-shadow: $button-focused-shadow;
-        }
-
-        // Button pressed state
-        .k-button:active,
-        .k-button.k-state-active {
-
             &::before,
             &::after {
                 z-index: 1;
             }
 
             &::before {
-                opacity: .07;
+                opacity: $toolbar-button-focused-opacity;
             }
-            &::after {
-                opacity: .13;
-            }
-        }
-        .k-split-button {
 
-            .k-button:active,
-            .k-button.k-state-active {
-                @include appearance( pressed-button );
-                box-shadow: none;
+            &::after {
+                opacity: $toolbar-button-focused-outline-opacity;
             }
         }
-        .k-state-border-down .k-split-button-arrow {
-            box-shadow: inset $button-pressed-shadow;
+
+        // Button pressed state
+        .k-button:active,
+        .k-button.k-state-active {
+
+            &::before {
+                opacity: $toolbar-button-active-opacity;
+                z-index: 1;
+            }
+        }
+
+        // Expanded state
+        .k-state-border-up,
+        .k-state-border-down {
+            background: $toolbar-button-expanded-bg;
+            box-shadow: $toolbar-button-expanded-shadow;
+
+            &::before,
+            .k-button::before {
+                opacity: 0;
+            }
+        }
+
+        // Separator
+        .k-separator {
+            border-color: $toolbar-separator-border;
         }
 
         // Button disabled state

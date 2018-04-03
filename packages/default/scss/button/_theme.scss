@@ -1,3 +1,8 @@
+$split-button-text: $button-text !default;
+$split-button-bg: $button-bg !default;
+$split-button-border: $button-border !default;
+$split-button-active-shadow: inset $button-pressed-shadow !default;
+
 @include exports( "button/theme" ) {
     $outline-primary-button-text: $accent !default;
 
@@ -122,25 +127,6 @@
         }
 
     }
-
-    //SplitButton
-    .k-split-button {
-
-        // Focused state
-        .k-state-focused {
-            box-shadow: $button-focused-shadow;
-        }
-
-        // Button Group
-        .k-button-group .k-button {
-            &:active,
-            &.k-state-active {
-                @include appearance( pressed-button );
-                box-shadow: inset $button-pressed-shadow;
-            }
-        }
-    }
-
 
     // Flat button
     .k-button.k-flat,
