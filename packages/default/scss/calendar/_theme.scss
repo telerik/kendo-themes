@@ -1,6 +1,10 @@
+$calendar-header-shadow: 0 1px 3px 1px rgba(black, .1) !default;
+$calendar-weekend-bg: darken($widget-bg, 2.35) !default;
+$calendar-week-number-bg: darken( $widget-bg, 5 ) !default;
+$calendar-week-number-text: $node-text !default;
+
 @include exports('calendar/theme') {
     $date-focus-shadow: $list-item-focused-shadow !default;
-    $header-shadow: 0 1px 3px 1px rgba(black, .1) !default;
 
     .k-calendar {
         background-clip: padding-box;
@@ -38,8 +42,6 @@
 
 
         // Content
-        .k-content {}
-
         .k-content thead {
             @include appearance( header );
             background-color: transparent;
@@ -47,10 +49,9 @@
 
         .k-header {
             border-bottom-color: $panel-border;
-            box-shadow: $header-shadow;
+            box-shadow: $calendar-header-shadow;
         }
 
-        .k-content td {}
         .k-content .k-today {
             color: $accent;
 
@@ -60,7 +61,8 @@
         }
 
         .k-alt {
-            background: darken( $widget-bg, 5 );
+            background-color: $calendar-week-number-bg;
+            color: $calendar-week-number-text;
         }
 
         .k-content .k-alt {
@@ -120,7 +122,7 @@
 
         &:not(.k-calendar-infinite) {
             .k-weekend {
-                background-color: darken($widget-bg, 2.35);
+                background-color: $calendar-weekend-bg;
             }
 
             .k-state-hover {

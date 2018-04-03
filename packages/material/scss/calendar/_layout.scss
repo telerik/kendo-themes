@@ -1,10 +1,11 @@
 $calendar-width: 350px !default;
-$calendar-header-border: 0;
-$calendar-header-padding-x: 10px !default;
+$calendar-line-height: 3 !default;
+$calendar-header-border: 0 !default;
+$calendar-header-padding-x: 0 !default;
 $calendar-header-padding-y: 0 !default;
 $calendar-cell-padding-y: 0 !default;
 $calendar-cell-padding-x: 0 !default;
-$calendar-other-month-opacity: 0 !default;
+$calendar-other-month-opacity: 1 !default;
 $calendar-year-view-cell-size: 80px !default;
 $calendar-century-view-line-height: $calendar-year-view-cell-size !default;
 $calendar-century-view-text-align: center !default;
@@ -13,32 +14,23 @@ $calendar-century-view-text-align: center !default;
 
 @include exports ('calendar/layout/material') {
     $calendar-month-cell-size: 40px !default;
-    $calendar-padding-x: 14px !default;
-    $calendar-padding-top: 20px !default;
-    $calendar-header-padding-x: 5px !default;
-    $calendar-header-margin: 10px !default;
     $calendar-footer-height: 40px !default;
 
     .k-calendar:not(.k-calendar-infinite) {
         font-weight: 700;
         font-size: $font-size-sm;
-        padding: $calendar-padding-top $calendar-padding-x 0;
-
-        .k-header {
-            margin-bottom: $calendar-header-margin;
-
-            .k-link {
-                padding: 0;
-            }
-        }
+        padding: 10px 10px 0;
 
         .k-content {
             .k-link {
                 width: $calendar-month-cell-size;
                 height: $calendar-month-cell-size;
                 line-height: $calendar-month-cell-size;
-                margin: 0 auto;
-                border-radius: ( $calendar-month-cell-size / 2);
+            }
+
+            td,
+            .k-link {
+                @include border-radius( $calendar-month-cell-size / 2 );
             }
         }
 
@@ -47,13 +39,12 @@ $calendar-century-view-text-align: center !default;
                 width: $calendar-year-view-cell-size;
                 height: $calendar-year-view-cell-size;
                 line-height: $calendar-year-view-cell-size;
-                border-radius: calc( #{$calendar-year-view-cell-size} / 2);
             }
-        }
 
-        td,
-        th {
-            opacity: 1;
+            td,
+            .k-link {
+                @include border-radius( $calendar-year-view-cell-size / 2 );
+            }
         }
 
         th {
@@ -61,17 +52,8 @@ $calendar-century-view-text-align: center !default;
             text-transform: uppercase;
         }
 
-        .k-alt {
-            opacity: 1;
-        }
-
         .k-footer {
             height: $calendar-footer-height;
-            padding: 0;
-        }
-
-        .k-other-month {
-            pointer-events: none;
         }
     }
 }
