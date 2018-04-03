@@ -155,8 +155,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$hovered-text</td>
 <td>
-    <span class="color-preview" style="background-color: #656565"></span>
-    #656565
+    
+    $base-text
 </td>
 <td>The text color of hovered items.
 </td>
@@ -501,7 +501,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$toolbar-padding-x</td>
 <td>
     
-    $padding-x
+    0
 </td>
 <td>The horizontal padding of the container.
 </td>
@@ -510,7 +510,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$toolbar-padding-y</td>
 <td>
     
-    $padding-x
+    0
 </td>
 <td>The vertical padding of the container.
 </td>
