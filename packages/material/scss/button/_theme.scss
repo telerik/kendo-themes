@@ -1,3 +1,8 @@
+$split-button-text: inherit !default;
+$split-button-bg: transparent !default;
+$split-button-border: transparent !default;
+$split-button-active-shadow: none !default;
+
 @include exports("button/theme") {
 
     $button-disabled-bg: rgba(0, 0, 0, .12) !default;

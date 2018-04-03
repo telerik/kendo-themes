@@ -1,5 +1,6 @@
 $toolbar-button-spacer: 0 !default;
 $toolbar-shadow: none !default;
+$toolbar-button-border-radius: 0 !default;
 
 @include exports("toolbar/layout") {
 
@@ -53,12 +54,31 @@ $toolbar-shadow: none !default;
         .k-toggle-button {}
 
 
+        // Button group
+        .k-button-group {}
+        .k-button-group .k-group-start,
+        .k-button-group .k-button:first-child,
+        .k-button-group .k-group-end,
+        .k-button-group .k-button:last-child {
+            @include border-radius( $toolbar-button-border-radius );
+        }
+
+        // Split button
+        .k-split-button {
+            .k-button {
+                @include border-left-radius-only();
+            }
+            .k-button.k-split-button-arrow {
+                @include border-right-radius-only();
+                margin-left: -1px;
+                padding: $button-padding-x-sm;
+            }
+        }
 
         // Dropdowns and Inputs
         // TODO unselect if necessary after the design for inputs in toolbar is completed
         //.k-autocomplete,
         //.k-dateinput-wrap,
-        //.k-picker-wrap,
         //.k-multiselect-wrap,
         //.k-numeric-wrap,
         .k-picker-wrap,
