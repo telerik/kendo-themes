@@ -48,6 +48,10 @@ $toolbar-button-border-radius: 0 !default;
             &:last-child {
                 margin-right: 0;
             }
+
+            &::before {
+                @include border-radius( $toolbar-button-border-radius );
+            }
         }
 
         // Toggle button
