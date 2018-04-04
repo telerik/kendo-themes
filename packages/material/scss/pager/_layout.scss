@@ -8,10 +8,18 @@ $pager-buttons-padding: 0 !default;
     $pager-elements-margin-lg: 32px !default;
 
     .k-pager-wrap {
-        .k-pager-input,
-        .k-pager-numbers,
-        .k-pager-sizes {
+        .k-pager-numbers {
             margin: 0 $pager-elements-margin;
+        }
+
+        .k-pager-input,
+        .k-pager-sizes {
+            margin: 0 $pager-elements-margin 0 $pager-elements-margin-lg;
+        }
+
+        .k-input,
+        .k-textbox {
+            font-size: $font-size;
         }
 
         .k-pager-sizes>.k-dropdown {
