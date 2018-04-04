@@ -18,6 +18,7 @@
             position: relative;
             user-select: none;
             flex-shrink: 0;
+            outline: 0;
         }
 
         // Link
@@ -70,7 +71,7 @@
         display: none;
         position: absolute;
 
-        kendo-menu & {
+        .k-menu-popup & {
             position: relative;
             display: block;
         }
