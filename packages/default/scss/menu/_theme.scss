@@ -26,6 +26,7 @@ $menu-scrolling-icon-hover: $link-hover-text !default;
         > .k-item {
             color: $menu-text;
 
+            &:hover,
             &.k-state-hover {
                 color: $menu-hover-text;
             }
@@ -38,20 +39,20 @@ $menu-scrolling-icon-hover: $link-hover-text !default;
                 color: $menu-selected-text;
             }
 
+            &:focus,
             &.k-state-focused {
                 box-shadow: $menu-focused-shadow;
                 outline: 0;
             }
         }
     }
-    .k-menu.k-context-menu {
-        @include appearance( popup );
-    }
 
     .k-menu-group,
     .k-menu.k-context-menu {
+        @include appearance( popup );
 
         .k-item {
+            &:hover,
             &.k-state-hover {
                 @include appearance( hovered-list-item );
             }
@@ -65,8 +66,10 @@ $menu-scrolling-icon-hover: $link-hover-text !default;
                 @include appearance( selected-list-item );
             }
 
+            &:focus,
             &.k-state-focused {
                 box-shadow: $menu-focused-shadow;
+                outline: 0;
             }
         }
     }
