@@ -79,7 +79,12 @@ $toolbar-shadow: $button-shadow !default;
         }
 
         .k-picker-wrap {
-            height: calc(#{$toolbar-inner-calc-size});
+
+            .k-selected-color {
+                padding: 0 $button-padding-x-sm;
+                height: calc(#{$toolbar-inner-calc-size});
+                line-height: calc(#{$toolbar-inner-calc-size});
+            }
         }
     }
 }
