@@ -4,7 +4,7 @@ $list-container-no-data-text: rgba( $text-color, .5 ) !default;
 $popup-text: $normal-text-color !default;
 $grouping-header-text: $bg-color !default;
 $grouping-header-bg: $text-color !default;
-$grouping-border: $grouping-header-bg !default;
+$grouping-border: $border-color !default;
 
 @include exports('popup/theme') {
 

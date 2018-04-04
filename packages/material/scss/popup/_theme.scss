@@ -1,6 +1,7 @@
 
 $grouping-header-text: $icon-color !default;
 $grouping-header-bg: $widget-border !default;
+$grouping-border: $grouping-header-bg !default;
 
 @import "~@progress/kendo-theme-default/scss/popup/theme";
 
