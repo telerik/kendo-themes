@@ -1,9 +1,10 @@
 // TODO: list item variables
 $list-container-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
-
-$popup-text: $normal-text-color !default;
-
 $list-container-no-data-text: rgba( $text-color, .5 ) !default;
+$popup-text: $normal-text-color !default;
+$grouping-header-text: $bg-color !default;
+$grouping-header-bg: $text-color !default;
+$grouping-border: $border-color !default;
 
 @include exports('popup/theme') {
 
@@ -23,14 +24,14 @@ $list-container-no-data-text: rgba( $text-color, .5 ) !default;
         box-shadow: $list-container-shadow;
     }
     .k-popup .k-list .k-item > .k-group {
-        background: $text-color;
-        color: $bg-color;
+        color: $grouping-header-text;
+        background: $grouping-header-bg;
     }
     .k-popup .k-list .k-item > .k-group::before {
-        border-color: $text-color $text-color transparent transparent;
+        border-color: $grouping-header-bg $grouping-header-bg transparent transparent;
     }
     .k-group-header+div > .k-list > .k-item.k-first::before {
-        border-color: $border-color;
+        border-color: $grouping-border;
     }
     .k-popup-transparent {
         border-width: 0;
