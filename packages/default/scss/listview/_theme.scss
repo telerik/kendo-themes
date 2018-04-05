@@ -1,5 +1,16 @@
-@include exports( 'listview/theme' ) {
-    .k-listview > .k-state-focused {
-        box-shadow: $focused-shadow;
+@include exports( "listview/theme" ) {
+
+    .k-listview {
+
+        > .k-state-focused {
+            box-shadow: $list-item-focused-shadow;
+        }
+
+        > .k-state-selected {
+            color: inherit;
+            background-color: rgba( $selected-bg, .25 );
+        }
+
     }
+
 }
