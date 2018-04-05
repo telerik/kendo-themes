@@ -8,6 +8,7 @@
         }
 
         .k-select {
+            opacity: 1;
             width: $icon-size;
             color: inherit;
         }
@@ -28,6 +29,7 @@
 
             // Selected state
             &.k-state-selected {
+                opacity: $icon-focused-opacity;
                 background-color: transparent;
                 box-shadow: none;
             }
