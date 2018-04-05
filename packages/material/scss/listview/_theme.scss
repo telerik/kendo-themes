@@ -1,1 +1,19 @@
-@import "~@progress/kendo-theme-default/scss/listview/theme";
+@include exports( "listview/theme" ) {
+
+    .k-listview {
+
+        > .k-state-focused {
+            background-color: rgba(0, 0, 0, .07);
+        }
+
+        > .k-state-selected {
+            color: inherit;
+            background-color: rgba(0, 0, 0, .04);
+        }
+        > .k-state-selected.k-state-focused {
+            background-color: rgba(0, 0, 0, .12);
+        }
+
+    }
+
+}
