@@ -154,7 +154,7 @@ $base-gradient: $base-bg, darken( $base-bg, 2% ) !default;
 /// The text color of hovered items.
 $hovered-text: $base-text !default;
 /// The background of hovered items.
-$hovered-bg: #ededed !default;
+$hovered-bg: rgba( black, .07) !default;
 /// The border color of hovered items.
 $hovered-border: rgba( black, .15 ) !default;
 /// The gradient background of hovered items.

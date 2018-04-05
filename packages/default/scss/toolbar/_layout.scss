@@ -60,11 +60,16 @@ $toolbar-button-border-radius: 0 !default;
 
         // Button group
         .k-button-group {}
+        .k-button-group .k-button {
+            border-radius: 0;
+        }
         .k-button-group .k-group-start,
-        .k-button-group .k-button:first-child,
+        .k-button-group .k-button:first-child {
+            @include border-radius( $toolbar-button-border-radius 0 0 $toolbar-button-border-radius );
+        }
         .k-button-group .k-group-end,
         .k-button-group .k-button:last-child {
-            @include border-radius( $toolbar-button-border-radius );
+            @include border-radius( 0 $toolbar-button-border-radius $toolbar-button-border-radius 0 );
         }
 
         // Split button
@@ -131,6 +136,12 @@ $toolbar-button-border-radius: 0 !default;
         // Group
         .k-overflow-tool-group {
             display: block;
+        }
+
+        // Button group
+        .k-button-group {
+            display: flex;
+            flex-direction: column;
         }
 
         // Hidden items
