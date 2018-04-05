@@ -5,6 +5,7 @@ $popup-text: $normal-text-color !default;
 $grouping-header-text: $bg-color !default;
 $grouping-header-bg: $text-color !default;
 $grouping-border: $border-color !default;
+$list-item-hovered-selected-bg: blend-multiply( $list-item-selected-bg, $list-item-hovered-bg ) !default;
 
 @include exports('popup/theme') {
 
@@ -54,7 +55,7 @@ $grouping-border: $border-color !default;
 
         &.k-state-selected {
             color: $list-item-selected-text;
-            background-color: blend-multiply( $list-item-selected-bg, $list-item-hovered-bg );
+            background-color: $list-item-hovered-selected-bg;
         }
     }
 
