@@ -164,8 +164,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$hovered-bg</td>
 <td>
-    <span class="color-preview" style="background-color: #ededed"></span>
-    #ededed
+    
+    rgba( black, .07)
 </td>
 <td>The background of hovered items.
 </td>
