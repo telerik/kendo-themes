@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Listview</title>
+
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+
+    <style>
+        #test-area {
+            max-width: 1024px;
+        }
+        .k-listview {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .k-listview > .k-widget {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="test-area">
+
+        <div class="k-widget k-listview">
+            <div class="k-widget">Listview cell</div>
+            <div class="k-widget k-state-focused">Listview focused cell</div>
+            <div class="k-widget k-state-selected">Listview selected cell</div>
+            <div class="k-widget k-state-selected k-state-focused">Listview selected-focused cell</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
