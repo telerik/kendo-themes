@@ -1,5 +1,1 @@
-@include exports("responsivepanel/theme") {
-
-    .k-rpanel {}
-
-}
+@import "~@progress/kendo-theme-default/scss/responsivepanel/theme";
