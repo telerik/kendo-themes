@@ -43,6 +43,14 @@
 
     }
 
+    .k-menu-link {
+        > .k-icon,
+        > .k-image,
+        > .k-sprite {
+            margin-right: $icon-spacing;
+        }
+    }
+
     .k-menu-expand-arrow {
         &.k-i-arrow-60-down {
             margin-left: $icon-spacing;
@@ -137,12 +145,6 @@
             flex-direction: row;
             align-items: center;
             position: relative;
-
-            > .k-icon,
-            > .k-image,
-            > .k-sprite {
-                margin-right: $icon-spacing;
-            }
         }
     }
 
@@ -201,6 +203,14 @@
 
     // RTL
     .k-rtl {
+        .k-menu-link {
+            > .k-icon,
+            > .k-image,
+            > .k-sprite {
+                margin-left: $icon-spacing;
+                margin-right: 0;
+            }
+        }
 
         .k-menu-expand-arrow {
             &.k-i-arrow-60-down {
