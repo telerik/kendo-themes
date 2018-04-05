@@ -2,6 +2,7 @@
 $grouping-header-text: rgba($base-text, .54) !default;
 $grouping-header-bg: $widget-border !default;
 $grouping-border: $grouping-header-bg !default;
+$list-item-hovered-selected-bg: $list-item-hovered-bg !default;
 
 @import "~@progress/kendo-theme-default/scss/popup/theme";
 
