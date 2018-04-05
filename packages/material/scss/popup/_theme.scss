@@ -23,8 +23,14 @@ $grouping-border: $grouping-header-bg !default;
 
             // Focus state
             &:focus,
-            &.k-state-focus {
+            &.k-state-focused {
                 @include appearance( hovered-list-item );
+            }
+
+            // Active state
+            &:active,
+            &.k-state-active {
+                box-shadow: none;
             }
 
         }

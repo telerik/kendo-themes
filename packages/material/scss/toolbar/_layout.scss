@@ -87,4 +87,11 @@ $toolbar-shadow: $button-shadow !default;
             }
         }
     }
+
+    .k-overflow-container {
+
+        .k-button-group {
+            box-shadow: none;
+        }
+    }
 }
