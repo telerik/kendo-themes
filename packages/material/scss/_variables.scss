@@ -9,33 +9,68 @@ $enable-gradients: false !default;
 $enable-transitions: true !default;
 
 
+// Spacer
+$spacer: 1em !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+
+
 // Fonts
 
 /// Base font size across all components.
+/// @group fonts
 $font-size: 14px !default;
+$font-size-xs: 10px !default;
+$font-size-sm: 12px !default;
+$font-size-lg: 16px !default;
 
 /// Font family across all components.
+/// @group fonts
 $font-family: Roboto, "Helvetica Neue", sans-serif !default;
 
 /// Font family for monospaced text. Used for styling the code.
 $font-family-monospace: Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
 
-$font-size-xs: 10px !default;
-$font-size-sm: 12px !default;
-$font-size-lg: 16px !default;
-
 /// Line height used along with $font-size.
+/// @group fonts
 $line-height: (28 / 14) !default;
 $line-height-sm: 1.2 !default;
 $line-height-lg: 1.5 !default;
 $line-height-em: $line-height * 1em;
 
 
-// Metrics
-$spacer: 1em !default;
-$spacer-x: $spacer !default;
-$spacer-y: $spacer !default;
+// Font weight
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 500 !default;
 
+
+// Headings
+$h1-font-size: 24px !default;
+$h2-font-size: 20px !default;
+$h3-font-size: 16px !default;
+$h4-font-size: 15px !default;
+$h5-font-size: ($font-size * .83) !default;
+$h6-font-size: ($font-size * .67) !default;
+
+// Display
+$display1-font-size: 112px !default;
+$display2-font-size: 56px !default;
+$display3-font-size: 45px !default;
+$display4-font-size: 34px !default;
+
+$h1-margin-bottom: 16px !default;
+$h2-margin-bottom: 16px !default;
+$h3-margin-bottom: 16px !default;
+$h4-margin-bottom: 16px !default;
+$h5-margin-bottom: 12px !default;
+$h6-margin-bottom: 12px !default;
+
+// Paragraph
+$paragraph-margin-bottom: 12px !default;
+
+
+// Metrics
 $padding-x: 16px !default;
 $padding-y: 4px !default;
 $padding-x-sm: $padding-x / 2 !default;
@@ -428,5 +463,24 @@ $icon-spacing: 4px !default;
 // Pager
 $pager-padding-x: 8px !default;
 $pager-padding-y: 10px !default;
+
+
+// Config maps
+$typography-config: () !default;
+// sass-lint:disable indentation
+$typography-config: map-merge((
+    display-1: font-map($display1-font-size, 112px, $font-weight-light, $font-family, -.05em),
+    display-2: font-map($display2-font-size, 56px, $font-weight-normal, $font-family, -.02em),
+    display-3: font-map($display3-font-size, 48px, $font-weight-normal, $font-family, -.005em),
+    display-4: font-map($display4-font-size, 40px, $font-weight-normal, $font-family),
+    h1: font-map($h1-font-size, 32px, $font-weight-normal, $font-family),
+    h2: font-map($h2-font-size, 32px, $font-weight-bold, $font-family),
+    h3: font-map($h3-font-size, 28px, $font-weight-normal, $font-family),
+    h4: font-map($h4-font-size, 24px, $font-weight-normal, $font-family),
+    h5: font-map($h5-font-size, $line-height, $font-weight-normal, $font-family),
+    h6: font-map($h6-font-size, $line-height, $font-weight-normal, $font-family),
+    body: font-map($font-size, $line-height, $font-weight-normal, $font-family)
+), $typography-config);
+// sass-lint:enable indentation
 
 @import "~@progress/kendo-theme-default/scss/variables";
