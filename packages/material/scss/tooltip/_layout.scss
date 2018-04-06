@@ -1,14 +1,6 @@
+$tooltip-padding-y: $padding-y !default;
+$tooltip-padding-x: $padding-x !default;
+$tooltip-closable-padding: (2 * $tooltip-padding-y) $tooltip-padding-x !default;
+
 @import "~@progress/kendo-theme-default/scss/tooltip/layout";
 
-@include exports("tooltip/layout/material") {
-    .k-tooltip-button .k-icon {
-        margin-right: -$padding-x;
-    }
-
-    .k-rtl {
-        .k-tooltip-button .k-icon {
-            margin-right: 0;
-            margin-left: -$padding-x;
-        }
-    }
-}

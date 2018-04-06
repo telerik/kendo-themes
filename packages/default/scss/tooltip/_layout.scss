@@ -1,6 +1,6 @@
-// TODO: extract or remove tooltip padding variables
 $tooltip-padding-y: $padding-y !default;
 $tooltip-padding-x: $padding-x !default;
+$tooltip-closable-padding: (3 * $tooltip-padding-y) (2 * $tooltip-padding-x) !default;
 $tooltip-callout-size: 12px !default;
 
 @include exports("tooltip/layout") {
@@ -13,10 +13,9 @@ $tooltip-callout-size: 12px !default;
         background-repeat: repeat-x;
         position: absolute;
         z-index: 12000;
-    }
 
-    .k-tooltip-closable {
-        padding: ($padding-y * 3) ($padding-x * 2);
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .k-tooltip-content {
@@ -24,17 +23,21 @@ $tooltip-callout-size: 12px !default;
         text-overflow: ellipsis;
     }
 
-    .k-tooltip-closable .k-tooltip-content {
-        padding-right: (5 * $icon-size) / 4;
+    .k-tooltip-closable {
+        padding: $tooltip-closable-padding;
     }
 
     .k-tooltip-button {
-        height: 0;
-        text-align: right;
-        margin-right: -2px;
+        margin-left: $tooltip-padding-x;
 
         .k-icon {
             color: inherit;
+        }
+
+        .k-rtl &,
+        [dir-rtl] & {
+            margin-left: 0;
+            margin-right: $tooltip-padding-x;
         }
     }
 
