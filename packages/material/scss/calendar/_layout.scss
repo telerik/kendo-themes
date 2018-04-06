@@ -6,15 +6,17 @@ $calendar-header-padding-y: 0 !default;
 $calendar-cell-padding-y: 0 !default;
 $calendar-cell-padding-x: 0 !default;
 $calendar-other-month-opacity: 1 !default;
-$calendar-year-view-cell-size: 80px !default;
-$calendar-century-view-line-height: $calendar-year-view-cell-size !default;
+$calendar-cell-size: 40px !default;
+$calendar-month-cell-size: 40px !default;
+$calendar-meta-cell-size: 80px !default;
+$calendar-weekdays-height: $calendar-month-cell-size !default;
+$calendar-century-view-line-height: $calendar-meta-cell-size !default;
 $calendar-century-view-text-align: center !default;
+$calendar-footer-height: $calendar-month-cell-size !default;
 
 @import "~@progress/kendo-theme-default/scss/calendar/layout";
 
 @include exports ('calendar/layout/material') {
-    $calendar-month-cell-size: 40px !default;
-    $calendar-footer-height: 40px !default;
 
     .k-calendar:not(.k-calendar-infinite) {
         font-weight: 700;
@@ -35,25 +37,31 @@ $calendar-century-view-text-align: center !default;
         }
 
         .k-meta-view {
+            // height differences between the default and meta views
+            // cause unpleasant changes during view changes
+            $height-difference: add-three(
+                6 * $calendar-month-cell-size,
+                $calendar-weekdays-height,
+                -3 * $calendar-meta-cell-size,
+                .5
+            );
+            padding: $height-difference 0;
+
             .k-link {
-                width: $calendar-year-view-cell-size;
-                height: $calendar-year-view-cell-size;
-                line-height: $calendar-year-view-cell-size;
+                width: $calendar-meta-cell-size;
+                height: $calendar-meta-cell-size;
+                line-height: $calendar-meta-cell-size;
             }
 
             td,
             .k-link {
-                @include border-radius( $calendar-year-view-cell-size / 2 );
+                @include border-radius( $calendar-meta-cell-size / 2 );
             }
         }
 
         th {
             font-weight: 700;
             text-transform: uppercase;
-        }
-
-        .k-footer {
-            height: $calendar-footer-height;
         }
     }
 }
