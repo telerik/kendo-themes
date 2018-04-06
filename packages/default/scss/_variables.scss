@@ -9,21 +9,35 @@ $enable-gradients: true !default;
 $enable-transitions: true !default;
 
 
+// Spacing
+$spacer: 1em !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+
+
 // Fonts
 
 /// Base font size across all components.
+/// @group fonts
 $font-size: 14px !default;
+$font-size-xs: 10px !default;
+$font-size-sm: 12px !default;
+$font-size-lg: 19px !default;
 
 /// Font family across all components.
+/// @group fonts
 $font-family: inherit !default;
 
 /// Font family for monospaced text. Used for styling the code.
-$font-family-monospace:  Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
+/// @group fonts
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
 
 /// Base location of fonts used during PDF export
+/// @group fonts
 $pdf-export-fonts-location: 'https://kendo.cdn.telerik.com/2018.1.117/styles/fonts/DejaVu/' !default;
 
 /// List of fonts used during PDF export
+/// @group fonts
 $pdf-export-fonts: (
     ( name: 'DejaVu Sans',  url: $pdf-export-fonts-location + 'DejaVuSans.ttf' ),
     ( name: 'DejaVu Sans',  url: $pdf-export-fonts-location + 'DejaVuSans-Bold.ttf', weight: bold ),
@@ -41,22 +55,46 @@ $pdf-export-fonts: (
     ( name: 'DejaVu Mono',  url: $pdf-export-fonts-location + 'DejaVuSansMono-BoldOblique.ttf', style: italic, weight: bold  )
 ) !default;
 
-$font-size-xs: 10px !default;
-$font-size-sm: 12px !default;
-$font-size-lg: 19px !default;
-
 /// Line height used along with $font-size.
+/// @group fonts
 $line-height: (20 / 14) !default;
 $line-height-sm: 1.2 !default;
 $line-height-lg: 1.5 !default;
 $line-height-em: $line-height * 1em;
 
 
-// Metrics
-$spacer: 1em !default;
-$spacer-x: $spacer !default;
-$spacer-y: $spacer !default;
+// Font weight
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
 
+
+// Headings
+$h1-font-size: ($font-size * 2) !default;
+$h2-font-size: $font-size-lg !default;
+$h3-font-size: $font-size !default;
+$h4-font-size: $font-size-sm !default;
+$h5-font-size: $font-size-sm !default;
+$h6-font-size: $font-size-sm !default;
+
+$h1-margin-bottom: $font-size !default;
+$h2-margin-bottom: $font-size !default;
+$h3-margin-bottom: $font-size !default;
+$h4-margin-bottom: $font-size !default;
+$h5-margin-bottom: $font-size !default;
+$h6-margin-bottom: $font-size !default;
+
+// Display
+$display1-font-size: ($font-size * 6) !default;
+$display2-font-size: ($font-size * 5) !default;
+$display3-font-size: ($font-size * 4) !default;
+$display4-font-size: ($font-size * 3) !default;
+
+// Paragraph
+$paragraph-margin-bottom: $font-size !default;
+
+
+// Metrics
 $padding-x: 8px !default;
 $padding-y: 4px !default;
 $padding-x-sm: $padding-x / 2 !default;
@@ -449,3 +487,22 @@ $disabled-opacity: .6 !default;
 // Pager
 $pager-padding-x: $toolbar-padding-x !default;
 $pager-padding-y: $toolbar-padding-y !default;
+
+
+// Config maps
+$typography-config: () !default;
+// sass-lint:disable indentation
+$typography-config: map-merge((
+    display-1: font-map($display1-font-size, 1.2, $font-weight-light, inherit),
+    display-2: font-map($display2-font-size, 1.2, $font-weight-light, inherit),
+    display-3: font-map($display3-font-size, 1.2, $font-weight-light, inherit),
+    display-4: font-map($display4-font-size, 1.2, $font-weight-light, inherit),
+    h1: font-map($h1-font-size, normal, $font-weight-light, inherit),
+    h2: font-map($h2-font-size, normal, $font-weight-normal, inherit),
+    h3: font-map($h3-font-size, normal, $font-weight-bold, inherit),
+    h4: font-map($h4-font-size, normal, $font-weight-bold, inherit),
+    h5: font-map($h5-font-size, normal, $font-weight-normal, inherit),
+    h6: font-map($h6-font-size, normal, $font-weight-normal, inherit),
+    body: font-map($font-size, $line-height, $font-weight-normal, inherit)
+), $typography-config);
+// sass-lint:enable indentation

@@ -1,0 +1,25 @@
+@include exports( "common/utils/text" ) {
+
+    $text-align: ( left, right, center, justify ) !default;
+    $text-transform: ( lowercase, uppercase, capitalize ) !default;
+
+    // Wrapping
+    .k-text-nowrap                  { white-space: nowrap !important; } // sass-lint:disable-line no-important
+    .k-text-ellipsis                { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } // sass-lint:disable-line one-declaration-per-line
+
+    // Align
+    @each $align in $text-align {
+        .k-text-#{$align}           { text-align: $align !important; } // sass-lint:disable-line no-important
+    }
+
+    // Transform
+    @each $transform in $text-transform {
+        .k-text-#{$transform}       { text-transform: $transform !important; } // sass-lint:disable-line no-important
+    }
+
+    // Named font-weight
+    .k-font-weight-light            { font-weight: $font-weight-light !important; } // sass-lint:disable-line no-important
+    .k-font-weight-normal           { font-weight: $font-weight-normal !important; } // sass-lint:disable-line no-important
+    .k-font-weight-bold             { font-weight: $font-weight-bold !important; } // sass-lint:disable-line no-important
+
+}

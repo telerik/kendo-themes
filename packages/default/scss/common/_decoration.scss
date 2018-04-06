@@ -6,7 +6,7 @@
     .k-text-info        { color: $info !important; }
     .k-text-success     { color: $success !important; }
     .k-text-warning     { color: $warning !important; }
-    .k-text-erorr       { color: $error !important; }
+    .k-text-error       { color: $error !important; }
 
 }
 
@@ -19,7 +19,7 @@
     .k-bg-info          { background-color: $info !important; }
     .k-bg-success       { background-color: $success !important; }
     .k-bg-warning       { background-color: $warning !important; }
-    .k-bg-erorr         { background-color: $error !important; }
+    .k-bg-error         { background-color: $error !important; }
 
 }
 
@@ -36,7 +36,7 @@
     .k-state-info       { @include variant( $info ); }
     .k-state-success    { @include variant( $success ); }
     .k-state-warning    { @include variant( $warning ); }
-    .k-state-erorr      { @include variant( $error ); }
+    .k-state-error      { @include variant( $error ); }
 
 }
 
