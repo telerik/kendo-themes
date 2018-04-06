@@ -27,12 +27,6 @@
         [disabled] & {
             @extend %disabled;
         }
-        .k-ie9 &.k-state-disabled:hover,
-        .k-ie9 &.k-state-disabled:focus,
-        .k-ie10 &.k-state-disabled:hover,
-        .k-ie10 &.k-state-disabled:focus {
-            @extend %disabled;
-        }
 
         &::-moz-focus-inner {
             padding: 0;
@@ -119,11 +113,11 @@
 
         .k-button:hover,
         .k-button.k-state-hover,
+        .k-button:active,
         .k-button.k-state-active {
             z-index: 2;
         }
 
-        .k-button,
         [disabled],
         .k-state-disabled {
             pointer-events: auto;
@@ -279,7 +273,7 @@
     .k-button {
 
         &::before {
-            @include border-radius();
+            @include border-radius(inherit);
             content: "";
             background: currentColor;
             opacity: 0;
@@ -356,4 +350,23 @@
             transition: opacity .2s ease-in-out;
         }
     }
+}
+
+
+
+
+@include exports( "button/ie-compat" ) {
+
+    .k-ie9,
+    .k-ie10 {
+
+        .k-button[disabled]:hover,
+        .k-button[disabled]:focus,
+        .k-button.k-state-disabled:hover,
+        .k-button.k-state-disabled:focus {
+            @include disabled-legacy-ie;
+        }
+
+    }
+
 }

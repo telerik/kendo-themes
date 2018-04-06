@@ -258,7 +258,7 @@ $button-bg: $secondary !default;
 
 /// The text color of the buttons.
 /// @group buttons
-$button-text: contrast-wcag( $button-bg ) !default;
+$button-text: contrast-wcag( $button-bg, $gray-900 ) !default;
 
 /// The border color of the buttons.
 /// @group buttons
@@ -275,7 +275,7 @@ $button-hovered-bg: try-darken( $button-bg, 7.5% ) !default;
 
 /// The text color of hovered buttons.
 /// @group buttons
-$button-hovered-text: contrast-wcag( $button-hovered-bg ) !default;
+$button-hovered-text: contrast-wcag( $button-hovered-bg, $gray-900 ) !default;
 
 /// The border color of hovered buttons.
 /// @group buttons
@@ -292,7 +292,7 @@ $button-pressed-bg:  try-darken( $button-bg, 10% ) !default;
 
 /// The text color of pressed buttons.
 /// @group buttons
-$button-pressed-text: contrast-wcag( $button-pressed-bg ) !default;
+$button-pressed-text: contrast-wcag( $button-pressed-bg, $gray-900 ) !default;
 
 /// The border color of pressed buttons.
 /// @group buttons
