@@ -1,12 +1,16 @@
 $calendar-line-height: 1.25 !default;
-$calendar-cell-size: ( 34px / 14px ) * 1em;
+$calendar-cell-size: ( 34px / 14px ) * 1em !default;
 $calendar-cell-border-radius: ( $calendar-cell-size / 2 );
 $calendar-header-height: 2em;
-$calendar-weekdays-height: ( 29px / 14px ) * 1em;
+$calendar-weekdays-height: ( 29px / 14px ) * 1em !default;
 $calendar-navigation-item-height: 2em;
 $calendar-navigation-width: 5em;
 $calendar-view-width: 7 * $calendar-cell-size;
-$calendar-view-height: 7 * $calendar-cell-size + $calendar-header-height + $calendar-weekdays-height;
+$calendar-view-height: add-three(
+    7 * $calendar-cell-size,
+    $calendar-header-height,
+    $calendar-weekdays-height
+);
 $calendar-header-cell-padding-y: 8px !default;
 
 
@@ -353,7 +357,10 @@ $calendar-header-cell-padding-y: 8px !default;
 
     .k-calendar-monthview {
         .k-content {
-            height: 7 * $calendar-cell-size + $calendar-header-height;
+            height: add-two(
+                7 * $calendar-cell-size,
+                $calendar-header-height
+            );
         }
 
         .k-calendar-weekdays {
@@ -443,7 +450,7 @@ $calendar-header-cell-padding-y: 8px !default;
                 height: $calendar-navigation-item-height;
                 line-height: $calendar-navigation-item-height;
                 cursor: pointer;
-                padding: 0 (2 * $padding-x);
+                padding: 0 1em;
             }
         }
 
