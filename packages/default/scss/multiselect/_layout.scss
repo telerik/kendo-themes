@@ -26,6 +26,11 @@
 
                 .k-searchbar {
                     float: right;
+
+                    .k-input {
+                        padding-left: 0;
+                        padding-right: $input-padding-x;
+                    }
                 }
 
                 .k-button {
@@ -89,6 +94,10 @@
             // (or align below them, if space is not available)
             float: left;
             width: auto;
+
+            .k-input {
+                padding-right: 0;
+            }
         }
     }
 }
