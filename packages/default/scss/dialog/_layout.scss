@@ -62,6 +62,7 @@
 
         .k-button {
             width: auto !important; // sass-lint:disable-line no-important; kendo-jquery sets inline-width
+            max-width: 100%;
             display: inline-block; // needed for ellipsis overflow
             overflow: hidden;
             text-overflow: ellipsis;
