@@ -29,6 +29,7 @@
             display: flex;
             flex: 1 1 auto;
             overflow: hidden;
+            position: relative;
         }
 
         .k-grid-aria-root {
@@ -790,8 +791,12 @@
     }
 
     .k-grid-virtual .k-grid-content {
-        .k-grid-table,
-        > table {
+        .k-grid-table-wrap {
+            float: left;
+            width: 100%;
+        }
+
+        .k-grid-table {
             position: relative;
             float: left;
             z-index: 1;
