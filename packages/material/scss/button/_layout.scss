@@ -18,11 +18,14 @@ $outline-button-border-width: 2px !default;
 
     // Outline button
     .k-button.k-outline {
-        padding-top: add-two( $button-padding-y, -$outline-button-border-width );
-        padding-bottom: add-two( $button-padding-y, -$outline-button-border-width );
-        padding-left: add-two( $button-padding-x, -$outline-button-border-width );
-        padding-right: add-two( $button-padding-x, -$outline-button-border-width );
         border: $outline-button-border-width solid currentColor;
+
+        &:not(.k-button-icon) {
+            padding-top: add-two( $button-padding-y, -$outline-button-border-width );
+            padding-bottom: add-two( $button-padding-y, -$outline-button-border-width );
+            padding-left: add-two( $button-padding-x, -$outline-button-border-width );
+            padding-right: add-two( $button-padding-x, -$outline-button-border-width );
+        }
     }
 
 
