@@ -46,10 +46,10 @@
                                 </colgroup>
                                 <tbody role="presentation">
                                     <tr role="row">
-                                        <td role="gridcell" colspan="1">
+                                        <td role="gridcell">
                                             1
                                         </td>
-                                        <td role="gridcell" colspan="1">
+                                        <td role="gridcell">
                                             Row
                                         </td>
                                     </tr>
@@ -214,24 +214,24 @@
                                     </colgroup>
                                     <tbody role="presentation">
                                         <tr class="k-state-selected" role="row">
-                                            <td role="gridcell" colspan="1">
+                                            <td role="gridcell">
                                                 <input class="k-checkbox" id="k-grid0-checkbox0" type="checkbox" checked>
                                                 <label class="k-checkbox-label" for="k-grid0-checkbox0"></label>
-                                            </td><td role="gridcell" colspan="1">
+                                            </td><td role="gridcell">
                                                 Chai
-                                            </td><td role="gridcell" colspan="1">
-                                            </td><td role="gridcell" colspan="1">
+                                            </td><td role="gridcell">
+                                            </td><td role="gridcell">
                                                 $18.00
                                             </td>
                                         </tr>
                                         <tr class="k-state-selected k-alt" role="row">
-                                            <td role="gridcell" colspan="1">
+                                            <td role="gridcell">
                                                 <input class="k-checkbox" id="k-grid0-checkbox1" type="checkbox" checked>
                                                 <label class="k-checkbox-label" for="k-grid0-checkbox1"></label>
-                                            </td><td role="gridcell" colspan="1">
+                                            </td><td role="gridcell">
                                                 Chang
-                                            </td><td role="gridcell" colspan="1">
-                                            </td><td role="gridcell" colspan="1">
+                                            </td><td role="gridcell">
+                                            </td><td role="gridcell">
                                                 $19.00
                                             </td>
                                         </tr>
@@ -240,6 +240,128 @@
                             </div>
                             <div class="k-height-container" role="presentation">
                                 <div style="height: 0px;"></div>
+                            </div>
+                        </div>
+                    </kendo-grid-list>
+                </div>
+            </kendo-grid>
+        </div>
+
+        <div class="section">
+            <!-- fixed height, hierarchy, filter menu, sort icon -->
+            <kendo-grid style="height: 250px; width: 800px;" class="k-widget k-grid">
+                <div class="k-grid-aria-root" role="grid">
+                    <div class="k-grid-header" role="presentation" style="padding: 0px 11px 0px 0px;">
+                        <div class="k-grid-header-wrap" role="presentation">
+                            <table role="presentation">
+                                <colgroup role="presentation">
+                                    <col class="k-hierarchy-col">
+                                    <col><col><col><col>
+                                </colgroup>
+                                <thead role="presentation" _nghost-c1="">
+                                    <tr role="row">
+                                        <th role="presentation" class="k-hierarchy-cell k-header">
+                                        </th>
+                                        <th role="columnheader" class="k-header k-filterable">
+                                            <kendo-grid-filter-menu>
+                                                <a href="#" class="k-grid-filter" title="Filter">
+                                                    <span class="k-icon k-i-filter"></span>
+                                                </a>
+                                            </kendo-grid-filter-menu>
+                                            <a class="k-link" href="#" tabindex="-1">
+                                                Default
+                                                <span></span>
+                                            </a>
+                                        </th>
+                                        <th role="columnheader" class="k-header k-filterable">
+                                            <kendo-grid-filter-menu>
+                                                <a href="#" class="k-grid-filter" title="Filter">
+                                                    <span class="k-icon k-i-filter"></span>
+                                                </a>
+                                            </kendo-grid-filter-menu>
+                                            <a class="k-link" href="#" tabindex="-1">
+                                                Hover
+                                                <span></span>
+                                            </a>
+                                        </th>
+                                        <th role="columnheader" class="k-header k-filterable">
+                                            <kendo-grid-filter-menu>
+                                                <a href="#" class="k-grid-filter" title="Filter">
+                                                    <span class="k-icon k-i-filter"></span>
+                                                </a>
+                                            </kendo-grid-filter-menu>
+                                            <a class="k-link" href="#" tabindex="-1">
+                                                Focus
+                                                <span></span>
+                                            </a>
+                                        </th>
+                                        <th role="columnheader" class="k-header k-filterable">
+                                            <kendo-grid-filter-menu>
+                                                <a href="#" class="k-grid-filter" title="Filter">
+                                                    <span class="k-icon k-i-filter"></span>
+                                                </a>
+                                            </kendo-grid-filter-menu>
+                                            <a class="k-link" href="#" tabindex="-1" style="">
+                                                Sorted
+                                                <span class="k-icon k-i-sort-asc-sm"></span>
+                                            </a>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <kendo-grid-list class="k-grid-container" role="presentation">
+                        <div class="k-grid-content k-virtual-content" role="presentation" tabindex="-1">
+                            <div role="presentation">
+                                <table class="k-grid-table" role="presentation" style="transform: translateY(0px);">
+                                    <colgroup role="presentation">
+                                        <col class="k-hierarchy-col">
+                                        <col><col><col><col>
+                                    </colgroup>
+                                    <tbody role="presentation">
+                                        <tr class="k-master-row" role="row">
+                                            <td class="k-hierarchy-cell">
+                                                <a class="k-icon k-minus" href="#" tabindex="-1"></a>
+                                            </td>
+                                            <td role="gridcell">
+                                                1
+                                            </td><td role="gridcell">
+                                                Text
+                                            </td><td role="gridcell">
+                                                Text
+                                            </td><td role="gridcell">
+                                                Text
+                                            </td>
+                                        </tr>
+                                        <tr class="k-detail-row">
+                                            <td class="k-hierarchy-cell"></td>
+                                            <td class="k-detail-cell" colspan="4">
+                                                <!-- hierarchy child content -->
+                                                <div style="background: #ccc; padding: 1em;">
+                                                    Nested content
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-alt k-master-row" role="row">
+                                            <td class="k-hierarchy-cell">
+                                                <a class="k-icon k-plus" href="#" tabindex="-1"></a>
+                                            </td>
+                                            <td role="gridcell">
+                                                2
+                                            </td><td role="gridcell">
+                                                Text
+                                            </td><td role="gridcell">
+                                                Text
+                                            </td><td role="gridcell">
+                                                Text
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="k-height-container" role="presentation">
+                                <div style=""></div>
                             </div>
                         </div>
                     </kendo-grid-list>
