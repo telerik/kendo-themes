@@ -1,6 +1,6 @@
 $toolbar-button-spacer: 1px !default;
 $toolbar-shadow: $button-shadow !default;
-// $toolbar-button-arrow-width: calc($icon-size + 2 * $padding-x-sm);
+$toolbar-border-width: 0 !default;
 
 @import "~@progress/kendo-theme-default/scss/toolbar/layout";
 
