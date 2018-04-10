@@ -3,7 +3,7 @@
 
 <head>
     <title>Buttons</title>
-    <link rel="stylesheet" href="../../packages/bootstrap/dist/all.css" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
@@ -352,55 +352,41 @@
                 </div>
                 <div class="k-separator">&nbsp;</div>
             </div>
-        </div>
 
-        <!-- Owerflow popup -->
-        <div id="overflowPopup" class="k-animation-container k-overflow-wrapper" style="position: absolute; top: 0; overflow: visible">
-            <ul class="k-overflow-container k-list-container k-popup k-group k-reset k-state-border-up">
-                <li class="k-item k-state-default">
-                    <a href="" tabindex="0" class="k-overflow-button k-button">
-                        <span class="k-text">Normal Button</span>
-                    </a>
-                </li>
-                <li class="k-item k-state-default">
-                    <a href="" tabindex="0" class="k-overflow-button k-button k-state-hover">
-                        <span class="k-text">Hovered Button</span>
-                    </a>
-                </li>
-                <li class="k-item k-state-default">
-                    <a href="" tabindex="0" class="k-overflow-button k-button k-state-focused">
-                        <span class="k-text">Focused Button</span>
-                    </a>
-                </li>
-                <li class="k-item k-state-default">
-                    <a href="" tabindex="0" class="k-overflow-button k-button k-state-active">
-                        <span class="k-text">Selected Button</span>
-                    </a>
-                </li>
-                <li class="k-item k-state-default k-state-disabled">
-                    <a href="" tabindex="0" class="k-overflow-button k-button">
-                        <span class="k-text">Disabled Button</span>
-                    </a>
-                </li>
-            </ul>
+            <!-- Owerflow popup -->
+            <div style="text-align: right">
+                <div id="overflowPopup" class="k-animation-container k-overflow-wrapper" style="overflow: visible; display: inline-block; position: static">
+                    <ul class="k-overflow-container k-list-container k-popup k-group k-reset k-state-border-up">
+                        <li class="k-item k-state-default">
+                            <a href="" tabindex="0" class="k-overflow-button k-button">
+                                <span class="k-text">Normal Button</span>
+                            </a>
+                        </li>
+                        <li class="k-item k-state-default">
+                            <a href="" tabindex="0" class="k-overflow-button k-button k-state-hover">
+                                <span class="k-text">Hovered Button</span>
+                            </a>
+                        </li>
+                        <li class="k-item k-state-default">
+                            <a href="" tabindex="0" class="k-overflow-button k-button k-state-focused">
+                                <span class="k-text">Focused Button</span>
+                            </a>
+                        </li>
+                        <li class="k-item k-state-default">
+                            <a href="" tabindex="0" class="k-overflow-button k-button k-state-active">
+                                <span class="k-text">Selected Button</span>
+                            </a>
+                        </li>
+                        <li class="k-item k-state-default k-state-disabled">
+                            <a href="" tabindex="0" class="k-overflow-button k-button">
+                                <span class="k-text">Disabled Button</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- Popup positioning -->
-    <script>
-        var toolbar = $(".k-overflow-anchor.k-button.k-state-border-down").parent();
-        var overflowPopup = $("#overflowPopup");
-        var expandedOverflowPosition = toolbar.offset();
-        var toolbarWidth = toolbar.outerWidth();
-        var toolbarHeight = toolbar.outerHeight();
-        var overflowPopupWidth = overflowPopup.outerWidth();
-
-
-        var offsetX = expandedOverflowPosition.left + toolbarWidth - overflowPopupWidth;
-        var offsetY = expandedOverflowPosition.top + toolbarHeight;
-
-        overflowPopup.offset({ top: offsetY, left: offsetX });
-    </script>
 </body>
 
 </html>

@@ -80,7 +80,7 @@ $calendar-week-day-text: $header-text !default;
             @include appearance( selected-node );
 
             &.k-state-hover {
-                background-color: blend-multiply( $node-selected-bg, $node-hovered-bg );
+                background-color: blend-multiply( $node-hovered-bg, $node-selected-bg );
             }
         }
 
