@@ -1,3 +1,4 @@
+
 @include exports("multiselect/layout") {
 
     // Base
@@ -9,6 +10,7 @@
             visibility: hidden;
         }
 
+        .k-i-loading,
         .k-clear-value {
             top: $input-padding-y;
             margin-top: 0;
@@ -19,6 +21,11 @@
         min-height: calc( #{$input-inner-calc-size} );
         padding-right: ($padding-x * 3);
         cursor: text;
+
+        // Input
+        .k-input {
+            float: left;
+        }
 
         // Token list
         ul {

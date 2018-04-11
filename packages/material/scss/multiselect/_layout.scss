@@ -1,2 +1,29 @@
 @import "~@progress/kendo-theme-default/scss/multiselect/layout";
 
+@include exports("multiselect/layout/material") {
+
+    .k-multiselect {
+
+        .k-clear-value {
+            top: $padding-y;
+        }
+
+        &[dir='rtl'],
+        .k-rtl & {
+
+            .k-multiselect-wrap {
+
+                .k-button {
+                    margin-left: $input-padding-y;
+                    margin-right: 0;
+
+                    .k-select {
+                        margin-left: -.2em;
+                        margin-right: .5em;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,5 +1,9 @@
+$popup-border-width: 1px !default;
+$popup-header-padding: $list-item-padding-y $list-item-padding-x !default;
+$popup-header-font-size: null !default;
+$popup-header-text: null !default;
+
 @include exports('popup/layout') {
-    $popup-border-width: 1px !default;
 
     .k-popup {
         display: flex;
@@ -42,12 +46,17 @@
     }
     .k-popup > .k-group-header,
     .k-popup > .k-virtual-wrap > .k-group-header {
-        padding: $list-item-padding-y $list-item-padding-x;
+        padding: $popup-header-padding;
         min-height: $line-height-em;
+        font-size: $popup-header-font-size;
+        color: $popup-header-text;
         white-space: normal;
         transition: $transition;
         border-bottom-width: 1px;
         border-bottom-style: solid;
+    }
+    .k-popup > .k-group-header {
+        margin-top: -$popup-padding-y;
     }
     .k-popup .k-list .k-item > .k-group {
         position: absolute;
@@ -57,6 +66,12 @@
         font-size: $font-size * .714;
         line-height: 1.5;
         text-transform: uppercase;
+
+        .k-rtl &,
+        [dir="rtl"] & {
+            right: auto;
+            left: 0;
+        }
     }
     .k-popup .k-list .k-item > .k-group::before {
         display: block;
@@ -66,6 +81,12 @@
         position: absolute;
         left: -14px;
         bottom: 0;
+
+        .k-rtl &,
+        [dir="rtl"] & {
+            right: -14px;
+            left: auto;
+        }
     }
     .k-group-header+div>.k-list>.k-item.k-first::before {
         content: " ";
