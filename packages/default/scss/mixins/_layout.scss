@@ -1,0 +1,42 @@
+// Short hand
+@function margin($name, $config: $layout-config) {
+    @return config-prop( $config, $name, margin );
+}
+@function padding($name, $config: $layout-config) {
+    @return config-prop( $config, $name, padding );
+}
+@function border($name, $config: $layout-config) {
+    @return config-prop( $config, $name, border );
+}
+@function gap($name, $config: $layout-config) {
+    @return config-prop( $config, $name, gap );
+}
+
+// TRBL
+@function margin-top($name, $config: $layout-config) {
+    @return config-prop( $config, $name, margin-top );
+}
+@function margin-right($name, $config: $layout-config) {
+    @return config-prop( $config, $name, margin-right );
+}
+@function margin-bottom($name, $config: $layout-config) {
+    @return config-prop( $config, $name, margin-bottom );
+}
+@function margin-left($name, $config: $layout-config) {
+    @return config-prop( $config, $name, margin-left );
+}
+
+
+// Mixins
+@mixin layout-shorthand( $margin: null, $padding: null, $border: null ) {
+    @include _props(
+        (margin, $margin),
+        (padding, $padding),
+        (border, $border)
+    );
+}
+@mixin layout-styles($name, $config: $layout-config) {
+    @include layout-shorthand(
+        margin( $name, $config )
+    );
+}

@@ -4,6 +4,8 @@
 @import "mixins/core/data-uri";
 @import "mixins/core/math";
 @import "mixins/core/register-fonts";
+@import "mixins/core/props";
+@import "mixins/core/config-maps";
 
 
 // Utils
@@ -17,6 +19,8 @@
 @import "mixins/gradients";
 @import "mixins/hide-scrollbar";
 @import "mixins/opacity";
+@import "mixins/layout";
+@import "mixins/typography";
 
 
 // Appearance
