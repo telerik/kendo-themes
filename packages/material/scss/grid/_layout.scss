@@ -1,8 +1,10 @@
 $grid-hierarchy-col-width: 32px !default;
 $grid-form-component-vertical-align: bottom !default;
 $grid-td-border-width: 0 0 1px !default;
+// TODO: perhaps these should be the values for cell-padding-x/-y
 $grid-cell-padding-x: 24px !default;
 $grid-cell-padding-y: 10px !default;
+$grid-header-cell-padding-y: 2 * $grid-cell-padding-y !default;
 $grid-grouping-row-border-top: 0 !default;
 $grid-group-footer-border-y: 0 !default;
 $grid-group-footer-second-cell-border: 0 !default;
@@ -17,7 +19,6 @@ $grid-sorted-icon-margin-left: 8px !default;
     $grid-header-font-size: 12px !default;
     $grid-filter-button-size: 36px !default;
     $grid-header-line-height: 16px !default;
-    $grid-header-cell-padding-y: 20px !default;
     $grid-grouping-header-padding-x: 14px !default;
     $grid-grouping-header-padding-y: 16px !default;
     $grid-group-indicator-margin: 8px !default;
@@ -50,7 +51,6 @@ $grid-sorted-icon-margin-left: 8px !default;
         .k-header:not(.k-widget) {
             font-size: $grid-header-font-size;
             line-height: $grid-header-line-height;
-            padding: $grid-header-cell-padding-y $grid-cell-padding-x;
         }
 
         .k-grid-filter,

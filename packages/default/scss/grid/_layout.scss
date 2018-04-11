@@ -21,6 +21,8 @@
     $grid-td-border-width: 0 0 0 1px !default;
     $grid-cell-padding-x: $cell-padding-x !default;
     $grid-cell-padding-y: $cell-padding-y !default;
+    // $grid-header-cell-padding-x does not make sense - header and cell content needs to be aligned
+    $grid-header-cell-padding-y: $grid-cell-padding-y !default;
     $grid-grouping-row-border-top: 1px !default;
     $grid-group-footer-border-y: 1px !default;
     $grid-group-footer-second-cell-border: 1px !default;
@@ -92,6 +94,7 @@
             }
         }
         th {
+            padding: $grid-header-cell-padding-y $grid-cell-padding-x;
             border-width: 0 0 0 1px;
             white-space: nowrap;
         }
@@ -505,8 +508,8 @@
         }
 
         .k-header > .k-link {
-            margin: (-$cell-padding-y) (-$cell-padding-x);
-            padding: $cell-padding-y $cell-padding-x;
+            margin: (-$grid-header-cell-padding-y) (-$grid-cell-padding-x);
+            padding: $grid-header-cell-padding-y $grid-cell-padding-x;
             line-height: inherit;
             display: block;
             overflow: hidden;
@@ -549,16 +552,16 @@
             z-index: 1;
         }
         .k-grid-filter {
-            margin: -($cell-padding-y / 2) 0;
+            margin: -($grid-header-cell-padding-y / 2) 0;
         }
         .k-header-column-menu {
             margin: 0;
             margin-top: $grid-form-component-offset;
             margin-bottom: $grid-form-component-offset;
-            margin-right: (-$cell-padding-x);
+            margin-right: (-$grid-cell-padding-x);
 
             & + .k-link {
-                margin-right: calc(#{$button-calc-size} - #{$cell-padding-x}); // .k-header-column-menu width
+                margin-right: calc(#{$button-calc-size} - #{$grid-cell-padding-x}); // .k-header-column-menu width
             }
         }
 
@@ -600,7 +603,7 @@
         th {
             border-width: 0 0 1px 1px;
             white-space: nowrap;
-            padding: $cell-padding-y;
+            padding: $grid-cell-padding-y;
         }
 
         td:first-child {
@@ -642,7 +645,7 @@
 
             .k-button,
             .k-dropdown-operator {
-                margin-left: $cell-padding-y / 2;
+                margin-left: $grid-cell-padding-y / 2;
             }
 
             .k-numerictextbox {
@@ -663,7 +666,7 @@
         }
 
         .k-filtercell-operator {
-            margin-left: $cell-padding-y / 2;
+            margin-left: $grid-cell-padding-y / 2;
         }
 
         .k-widget:not(.k-dropdown-operator),
@@ -690,7 +693,7 @@
 
         &.k-filtercell-boolean {
             .k-filtercell-wrapper {
-                padding-right: calc(#{$button-calc-size} + #{$cell-padding-y / 2});
+                padding-right: calc(#{$button-calc-size} + #{$grid-cell-padding-y / 2});
                 overflow: hidden;
             }
         }
@@ -797,7 +800,7 @@
 
     // Pager
     .k-grid-pager {
-        padding: $cell-padding-y;
+        padding: $grid-cell-padding-y;
         border-width: 1px 0 0;
         border-color: inherit;
     }
