@@ -1,3 +1,5 @@
+$forms-invalid-color: inherit !default;
+
 @import "~@progress/kendo-theme-default/scss/common/forms";
 
 @include exports('common/forms/material') {

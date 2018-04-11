@@ -1,3 +1,5 @@
+$forms-invalid-color: $error !default;
+
 @include exports("forms/layout") {
 
     // Widgets
@@ -263,20 +265,13 @@
     .ng-invalid.ng-dirty {
         &.k-autocomplete,
         &.k-maskedtextbox > .k-textbox {
-            color: $error;
+            color: $forms-invalid-color;
             border-color: $invalid-border;
         }
 
         > [class*="-wrap"] {
-            color: $error;
+            color: $forms-invalid-color;
             border-color: $invalid-border;
-        }
-
-        > .k-dropdown-wrap,
-        > .k-numeric-wrap {
-            .k-select {
-                color: inherit;
-            }
         }
     }
 
