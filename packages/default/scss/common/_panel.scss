@@ -2,7 +2,7 @@
 
     .k-block,
     .k-panel {
-        @extend %text-selection;
+        @extend %text-selection !optional;
         @include appearance( widget );
         @include border-radius();
         padding: $panel-padding-y $panel-padding-x;
