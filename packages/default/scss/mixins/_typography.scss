@@ -1,0 +1,34 @@
+@function font-size($name, $config: $typography-config) {
+    @return config-prop( $config, $name, font-size );
+}
+@function line-height($name, $config: $typography-config) {
+    @return config-prop( $config, $name, line-height );
+}
+@function font-weight($name, $config: $typography-config) {
+    @return config-prop( $config, $name, font-weight );
+}
+@function font-family($name, $config: $typography-config) {
+    @return config-prop( $config, $name, font-family );
+}
+@function letter-spacing($name, $config: $typography-config) {
+    @return config-prop( $config, $name, letter-spacing );
+}
+
+@mixin typography-font-shorthand( $font-size: null, $line-height: null, $font-weight: null, $font-family: null, $letter-spacing: null ) {
+    @include _props(
+        (font-family, $font-family),
+        (font-size, $font-size),
+        (line-height, $line-height),
+        (font-weight, $font-weight),
+        (letter-spacing, $letter-spacing)
+    );
+}
+@mixin typography-styles($name, $config: $typography-config) {
+    @include typography-font-shorthand(
+        font-size( $name, $config ),
+        line-height( $name, $config ),
+        font-weight( $name, $config ),
+        font-family( $name, $config ),
+        letter-spacing( $name, $config )
+    );
+}
