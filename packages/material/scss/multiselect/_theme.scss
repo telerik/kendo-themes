@@ -17,15 +17,9 @@
             padding-right: $icon-size;
         }
 
-        .k-clear-value {
-            top: $padding-y;
-            width: $padding-x-lg;
-        }
-
         .k-button {
             min-height: $form-line-height-em;
-            margin: $input-padding-y;
-            margin-left: 0;
+            margin: $input-padding-y $input-padding-y 0 0;
             padding-top: 0;
             padding-bottom: 0;
             font-size: .75em;
@@ -88,13 +82,4 @@
     .k-multiselect.k-state-border-down .k-icon.k-i-arrow-60-down {
         line-height: initial;
     }
-
-    // RTL
-    .k-rtl {
-        .k-multiselect .k-button .k-select {
-            margin-left: -.2em;
-            margin-right: .5em;
-        }
-    }
-
 }
