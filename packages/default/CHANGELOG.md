@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.50.0"></a>
+# 2.50.0 (2018-04-11)
+
+
+### Bug Fixes
+
+* **dateinput:** improve spinner layout to match numeric ([d8d0842](https://github.com/telerik/kendo-themes/commit/d8d0842))
+* **grid:** add styles for loading overlay ([4c0b5dd](https://github.com/telerik/kendo-themes/commit/4c0b5dd))
+* **grid:** empty space after virtual content (Angular) ([c8b32b6](https://github.com/telerik/kendo-themes/commit/c8b32b6))
+* **listview:** Improve focused and selected state appearance of listview in accordance with design ([4225503](https://github.com/telerik/kendo-themes/commit/4225503))
+* **menu:** add angular menu styles ([5b44672](https://github.com/telerik/kendo-themes/commit/5b44672))
+* **menu:** improve icon positioning ([4518725](https://github.com/telerik/kendo-themes/commit/4518725))
+* **tooltip:** improve close button position ([aab93ae](https://github.com/telerik/kendo-themes/commit/aab93ae))
+
+
+### Features
+
+* **listbox:** Implement Material skin for ListBox ([1341e86](https://github.com/telerik/kendo-themes/commit/1341e86))
+
+
+
+
 <a name="2.49.1"></a>
 ## [2.49.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.49.0...@progress/kendo-theme-default@2.49.1) (2018-03-26)
 

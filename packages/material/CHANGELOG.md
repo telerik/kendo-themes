@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.0"></a>
+# 0.7.0 (2018-04-11)
+
+
+### Bug Fixes
+
+* **listview:** Improve focused and selected state appearance of listview in accordance with design ([4225503](https://github.com/telerik/kendo-themes/commit/4225503))
+* **tooltip:** improve close button position ([aab93ae](https://github.com/telerik/kendo-themes/commit/aab93ae))
+
+
+### Features
+
+* **calendar:** Implement Material theme for Kendo-jQuery Calendar ([2c60b56](https://github.com/telerik/kendo-themes/commit/2c60b56))
+* **listbox:** Implement Material skin for ListBox ([1341e86](https://github.com/telerik/kendo-themes/commit/1341e86))
+* **responsive-panel:** add material theme ([#113](https://github.com/telerik/kendo-themes/issues/113)) ([25f7294](https://github.com/telerik/kendo-themes/commit/25f7294))
+
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@0.5.0...@progress/kendo-theme-material@0.6.0) (2018-03-26)
 

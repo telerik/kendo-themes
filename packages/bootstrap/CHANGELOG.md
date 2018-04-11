@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.11.11"></a>
+## 2.11.11 (2018-04-11)
+
+
+### Bug Fixes
+
+* **dateinput:** improve spinner layout to match numeric ([d8d0842](https://github.com/telerik/kendo-themes/commit/d8d0842))
+* **listview:** Improve focused and selected state appearance of listview in accordance with design ([4225503](https://github.com/telerik/kendo-themes/commit/4225503))
+
+
+
+
 <a name="2.11.10"></a>
 ## [2.11.10](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.11.9...@progress/kendo-theme-bootstrap@2.11.10) (2018-03-26)
 
