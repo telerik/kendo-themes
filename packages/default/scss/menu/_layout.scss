@@ -232,7 +232,7 @@ $menu-separator-spacer: 2px !default;
     .k-rtl,
     [dir="rtl"] {
 
-        .k-menu {
+        .k-menu:not(.k-menu-vertical) {
             flex-direction: row-reverse;
         }
 
