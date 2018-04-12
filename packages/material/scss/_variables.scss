@@ -92,7 +92,6 @@ $toolbar-padding-y: 0 !default;
 $toolbar-button-padding-x: $button-padding-x !default;
 $toolbar-button-padding-y: $padding-y*2.5 !default;
 $toolbar-button-calc-size: #{$form-line-height-em} + #{$toolbar-button-padding-y * 2} + #{$button-border-width * 2};
-$toolbar-calc-size: #{$toolbar-button-calc-size} + #{$toolbar-padding-y * 2} !default;
 $toolbar-inner-calc-size: #{$toolbar-button-calc-size} + #{$toolbar-padding-y * 2} !default;
 
 $list-item-padding-x: $padding-x * 1.5 !default;

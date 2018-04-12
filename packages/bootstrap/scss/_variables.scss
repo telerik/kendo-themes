@@ -140,7 +140,6 @@ $toolbar-padding-y: $table-cell-padding / 2 !default;
 
 $toolbar-button-padding-x: $button-padding-x !default;
 $toolbar-button-padding-y: $button-padding-y !default;
-$toolbar-calc-size: #{$button-calc-size} + #{$toolbar-padding-y * 2} + 2px !default;
 $toolbar-inner-calc-size: #{$button-calc-size} + #{$toolbar-padding-y * 2} !default;
 
 $list-item-padding-x: $dropdown-item-padding-x !default;
