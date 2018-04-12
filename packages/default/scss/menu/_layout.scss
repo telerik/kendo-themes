@@ -3,7 +3,8 @@ $menu-separator-spacer: 2px !default;
 @include exports("menu/layout") {
 
     // Base
-    .k-menu {
+    .k-menu,
+    .k-menu-scroll-wrapper {
         display: flex;
         flex-direction: row;
         align-items: stretch;
@@ -113,11 +114,6 @@ $menu-separator-spacer: 2px !default;
             margin-top: $nav-item-margin;
         }
 
-
-        > .k-separator {
-            margin: $menu-separator-spacer 0;
-        }
-
     }
     .k-menu-group,
     .k-menu-vertical {
@@ -134,6 +130,21 @@ $menu-separator-spacer: 2px !default;
             flex-direction: row;
             align-items: center;
             position: relative;
+
+            & > .k-image,
+            & > .k-sprite {
+                margin-right: $padding-x;
+
+                .k-rtl &,
+                [dir="rtl"] & {
+                    margin-left: $padding-x;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .k-separator {
+            margin: $menu-separator-spacer 0;
         }
     }
 
