@@ -294,6 +294,19 @@ Used to provide contrast between the background and foreground colors.
     @group grid
 </td>
 </tr>
+<tr>
+<td>$toolbar-button-mode</td>
+<td>
+    
+    flat
+</td>
+<td>Toolbar button types<br/>
+null - default buttons type<br/>
+thin - flat buttons appearance in the normal state and normal buttons appearance in other states<br/>
+flat - flat buttons type<br/>
+outline - outline buttons type
+</td>
+</tr>
 </table>
 
 

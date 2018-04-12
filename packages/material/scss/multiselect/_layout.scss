@@ -8,6 +8,10 @@
             top: $padding-y;
         }
 
+        .k-button {
+            text-transform: none;
+        }
+
         &[dir='rtl'],
         .k-rtl & {
 
@@ -24,10 +28,7 @@
                 }
             }
         }
-
-        .k-button {
-            text-transform: none;
-        }
     }
+
 }
 
