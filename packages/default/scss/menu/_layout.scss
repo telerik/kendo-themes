@@ -1,3 +1,5 @@
+$menu-separator-spacer: 2px !default;
+
 @include exports("menu/layout") {
 
     // Base
@@ -91,29 +93,10 @@
     }
 
 
-    // Context menu
-    .k-popups-wrapper {
-        position: relative;
-        border: 0;
-        margin: 0;
-        padding: 0;
-    }
-    .k-menu.k-context-menu {
-        margin: 0;
-        padding: $popup-padding-y $popup-padding-x;
-        border-width: 1px;
-        border-style: solid;
-        box-sizing: content-box;
-    }
-    .k-animation-container .k-context-menu.k-menu-horizontal {
-        display: flex !important; // sass-lint:disable-line no-important
-    }
-
-
     // Orientation
     .k-menu-horizontal {
 
-        > .k-item + .k-item {
+        > .k-item + .k-item:not(.k-separator) {
             margin-left: $nav-item-margin;
         }
 
@@ -121,12 +104,18 @@
             width: 0;
             border-width: 0 1px 0 0;
             line-height: inherit;
+            margin: 0 $menu-separator-spacer;
         }
     }
     .k-menu-vertical {
 
-        & > .k-item + .k-item {
+        > .k-item + .k-item:not(.k-separator) {
             margin-top: $nav-item-margin;
+        }
+
+
+        > .k-separator {
+            margin: $menu-separator-spacer 0;
         }
 
     }
@@ -146,6 +135,32 @@
             align-items: center;
             position: relative;
         }
+    }
+
+
+    // Context menu
+    .k-popups-wrapper {
+        position: relative;
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .k-context-menu {
+        margin: 0;
+        border-width: 1px;
+        border-style: solid;
+        box-sizing: content-box;
+
+        &.k-menu-horizontal {
+            padding: $popup-padding-x $popup-padding-y;
+        }
+
+        & > .k-item + .k-item:not(.k-separator) {
+            margin-left: 0;
+        }
+    }
+    .k-animation-container .k-context-menu.k-menu-horizontal {
+        display: flex !important; // sass-lint:disable-line no-important
     }
 
 
@@ -202,7 +217,14 @@
 
 
     // RTL
-    .k-rtl {
+
+    .k-rtl,
+    [dir="rtl"] {
+
+        .k-menu {
+            flex-direction: row-reverse;
+        }
+
         .k-menu-link {
             > .k-icon,
             > .k-image,
@@ -221,7 +243,7 @@
 
         .k-menu-horizontal {
 
-            & > .k-item + .k-item {
+            & > .k-item + .k-item:not(.k-separator) {
                 margin-right: $nav-item-margin;
                 margin-left: 0;
             }
