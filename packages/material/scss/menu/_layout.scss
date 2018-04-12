@@ -61,7 +61,7 @@ $menu-separator-spacer: $popup-padding-y !default;
     .k-menu-scroll-wrapper {
 
         .k-menu-scroll-button {
-            padding: $button-padding-x;
+            width: calc( #{$line-height-em} + #{$nav-item-padding-y});
             box-shadow: none;
         }
     }
