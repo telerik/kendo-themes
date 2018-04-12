@@ -7,11 +7,11 @@ $toolbar-button-active-opacity: .22 !default;
 $toolbar-button-focused-opacity: 0 !default;
 $toolbar-button-focused-outline-opacity: .08 !default;
 
-/// Toolbar button types
-/// null - default buttons type
-/// thin - flat buttons appearance in the normal state and normal buttons appearance in other states
-/// flat - flat buttons type
-/// outline - outline buttons type
+// Toolbar button types
+// null - default buttons type
+// thin - flat buttons appearance in the normal state and normal buttons appearance in other states
+// flat - flat buttons type
+// outline - outline buttons type
 $toolbar-button-mode: flat !default;
 
 @include exports("toolbar/theme") {

@@ -10,8 +10,15 @@ $toolbar-button-focused-outline-opacity: 0 !default;
 
     .k-toolbar {
 
-        .k-button::after {
-            display: none;
+        .k-button {
+
+            &::after {
+                display: none;
+            }
+
+            &.k-state-disabled {
+                color: $button-disabled-text;
+            }
         }
 
         // Split button
