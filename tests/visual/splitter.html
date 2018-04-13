@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Splitter</title>
+
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+</head>
+<body>
+
+    <div id="test-area">
+
+        <kendo-splitter style="height: 280px; width: 800px" class="k-widget k-splitter k-splitter-flex k-splitter-vertical" role="splitter">
+            <kendo-splitter-pane style="order: 0;" class="k-pane-flex k-pane">
+                <kendo-splitter class="k-widget k-splitter k-splitter-flex k-splitter-horizontal" dir="ltr" role="splitter">
+                    <kendo-splitter-pane style="flex-basis: 20%; order: 0;" class="k-pane-static k-pane k-scrollable">
+                        <p>Collapsible pane<br />Size = 20%</p>
+                    </kendo-splitter-pane>
+                    <kendo-splitter-pane style="order: 2;" class="k-pane k-scrollable">
+                        <p>Fluid, scollable pane</p>
+                        <p>Content</p>
+                        <p>Content</p>
+                        <p>Content</p>
+                        <p>Content</p>
+                        <p>Content</p>
+                        <p>Content</p>
+                    </kendo-splitter-pane>
+                    <kendo-splitter-pane style="flex-basis: 30%; order: 4;" class="k-pane-static k-pane">
+                        <p>Collapsible pane<br />Size = 30%</p>
+                    </kendo-splitter-pane>
+                    <kendo-splitter-pane style="flex-basis: 10px; order: 6;" class="k-pane-static k-pane">
+                    </kendo-splitter-pane>
+                    <kendo-splitter-pane style="flex-basis: 10px; order: 8;" class="k-pane-static k-pane">
+                    </kendo-splitter-pane>
+                    <kendo-splitter-pane style="flex-basis: 10px; order: 10;" class="k-pane-static k-pane">
+                    </kendo-splitter-pane>
+                    <kendo-splitter-bar role="separator" tabindex="0" class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" style="order: 1;">
+                        <div class="k-icon k-collapse-prev k-i-arrow-60-left"></div>
+                        <div class="k-resize-handle"></div>
+                        <div class="k-icon k-hidden"></div>
+                    </kendo-splitter-bar>
+                    <kendo-splitter-bar role="separator" tabindex="0" class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" style="order: 3;">
+                        <div class="k-icon k-hidden"></div>
+                        <div class="k-resize-handle"></div>
+                        <div class="k-icon k-collapse-next k-i-arrow-60-right"></div>
+                    </kendo-splitter-bar>
+                    <kendo-splitter-bar role="separator" tabindex="0" class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" style="order: 5;">
+                        <div class="k-icon k-collapse-prev k-i-arrow-60-left"></div>
+                        <div class="k-resize-handle"></div>
+                        <div class="k-icon k-collapse-next k-i-arrow-60-right"></div>
+                    </kendo-splitter-bar>
+                    <kendo-splitter-bar role="separator" tabindex="0" class="k-splitbar k-state-hover k-splitbar-horizontal k-splitbar-draggable-horizontal" style="order: 7;">
+                        <div class="k-icon k-collapse-prev k-i-arrow-60-left"></div>
+                        <div class="k-resize-handle"></div>
+                        <div class="k-icon k-collapse-next k-i-arrow-60-right"></div>
+                    </kendo-splitter-bar>
+                    <kendo-splitter-bar role="separator" tabindex="0" class="k-splitbar k-state-focused k-splitbar-horizontal k-splitbar-draggable-horizontal" style="order: 9;">
+                        <div class="k-icon k-collapse-prev k-i-arrow-60-left"></div>
+                        <div class="k-resize-handle"></div>
+                        <div class="k-icon k-collapse-next k-i-arrow-60-right"></div>
+                    </kendo-splitter-bar>
+                </kendo-splitter>
+            </kendo-splitter-pane>
+            <kendo-splitter-pane style="flex-basis: 80px; order: 2;" class="k-pane-static k-pane k-scrollable">
+                <p>Pane size: 80px</p>
+            </kendo-splitter-pane>
+            <kendo-splitter-pane style="flex-basis: 80px; order: 4;" class="k-pane-static k-pane k-scrollable">
+                <p>Static pane<br />Size = 80px</p>
+            </kendo-splitter-pane>
+            <kendo-splitter-pane style="order: 6;" class="k-pane-static k-pane k-scrollable" hidden>
+                <h2>Hidden pane, should be invisible!</h2>
+            </kendo-splitter-pane>
+            <kendo-splitter-bar role="separator" tabindex="0" class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical" style="order: 1;">
+                <div class="k-icon k-hidden"></div>
+                <div class="k-resize-handle"></div>
+                <div class="k-icon k-hidden"></div>
+            </kendo-splitter-bar>
+            <kendo-splitter-bar role="separator" tabindex="-1" class="k-splitbar k-splitbar-vertical k-splitbar-static-vertical" style="order: 3;">
+                <div class="k-icon k-hidden"></div>
+                <div class="k-resize-handle"></div>
+                <div class="k-icon k-hidden"></div>
+            </kendo-splitter-bar>
+        </kendo-splitter>
+
+    </div>
+
+</body>
+</html>
