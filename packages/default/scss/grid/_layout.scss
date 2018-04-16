@@ -27,6 +27,7 @@
     // a more sensible default would be $grid-cell-padding-x, but default theme uses a smaller filter row padding-x
     $grid-filter-cell-padding-x: $cell-padding !default;
     $grid-filter-cell-padding-y: $grid-cell-padding-y !default;
+    $grid-filter-input-text-indent: $padding-x !default;
     $grid-grouping-row-border-top: 1px !default;
     $grid-group-footer-border-y: 1px !default;
     $grid-group-footer-second-cell-border: 1px !default;
@@ -688,7 +689,7 @@
         .k-textbox > input {
             padding-left: 0;
             padding-right: 0;
-            text-indent: $padding-x;
+            text-indent: $grid-filter-input-text-indent;
         }
 
         &.k-filtercell-boolean {
