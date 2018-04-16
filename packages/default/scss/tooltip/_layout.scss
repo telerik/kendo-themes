@@ -4,6 +4,7 @@ $tooltip-closable-padding-x: $window-titlebar-padding-x !default;
 $tooltip-closable-padding-y: $window-titlebar-padding-y !default;
 $tooltip-closable-content-padding: $icon-size * 1.5 !default;
 $tooltip-font-size: $font-size !default;
+$tooltip-line-height: $line-height !default;
 $tooltip-callout-size: 12px !default;
 
 @include exports("tooltip/layout") {
@@ -11,6 +12,7 @@ $tooltip-callout-size: 12px !default;
 
     .k-tooltip {
         @include border-radius();
+        line-height: $tooltip-line-height;
         padding: $tooltip-padding-y $tooltip-padding-x;
         border-width: 0;
         background-repeat: repeat-x;
