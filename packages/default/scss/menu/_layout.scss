@@ -1,4 +1,5 @@
 $menu-separator-spacer: 2px !default;
+$image-spacing: 8px !default;
 
 @include exports("menu/layout") {
 
@@ -50,7 +51,7 @@ $menu-separator-spacer: 2px !default;
         > .k-icon,
         > .k-image,
         > .k-sprite {
-            margin-right: $icon-spacing;
+            margin-right: $image-spacing;
         }
     }
 
@@ -130,17 +131,6 @@ $menu-separator-spacer: 2px !default;
             flex-direction: row;
             align-items: center;
             position: relative;
-
-            & > .k-image,
-            & > .k-sprite {
-                margin-right: $padding-x;
-
-                .k-rtl &,
-                [dir="rtl"] & {
-                    margin-left: $padding-x;
-                    margin-right: 0;
-                }
-            }
         }
 
         .k-separator {
@@ -240,7 +230,7 @@ $menu-separator-spacer: 2px !default;
             > .k-icon,
             > .k-image,
             > .k-sprite {
-                margin-left: $icon-spacing;
+                margin-left: $image-spacing;
                 margin-right: 0;
             }
         }
