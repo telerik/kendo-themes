@@ -1,8 +1,14 @@
+$toolbar-button-spacer: 0 !default;
+$toolbar-shadow: none !default;
+$toolbar-button-border-radius: 0 !default;
+$toolbar-border-width: 1px !default;
+
 @include exports("toolbar/layout") {
 
     // Base
     .k-toolbar {
         padding: $toolbar-padding-y ($toolbar-padding-x / 2);
+        border-width: $toolbar-border-width;
         line-height: $form-line-height;
         display: flex;
         flex-direction: row;
@@ -11,6 +17,7 @@
         justify-content: flex-start;
         position: relative;
         overflow: hidden;
+        box-shadow: $toolbar-shadow;
 
         &.k-toolbar-resizable {
             flex-wrap: nowrap;
@@ -36,19 +43,60 @@
 
 
         // Button
-        .k-button {}
+        .k-button {
+            padding: $toolbar-button-padding-y $toolbar-button-padding-x;
+            margin-right: $toolbar-button-spacer;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &::before {
+                @include border-radius( $toolbar-button-border-radius );
+            }
+        }
 
         // Toggle button
         .k-toggle-button {}
 
+
+        // Button group
+        .k-button-group {}
+        .k-button-group .k-button {
+            border-radius: 0;
+        }
+        .k-button-group .k-group-start,
+        .k-button-group .k-button:first-child {
+            @include border-radius( $toolbar-button-border-radius 0 0 $toolbar-button-border-radius );
+        }
+        .k-button-group .k-group-end,
+        .k-button-group .k-button:last-child {
+            @include border-radius( 0 $toolbar-button-border-radius $toolbar-button-border-radius 0 );
+        }
+
         // Split button
         .k-split-button {
-            .k-button:hover {
-                z-index: 2;
+            .k-button {
+                @include border-left-radius-only();
             }
+            .k-button.k-split-button-arrow {
+                @include border-right-radius-only();
+                margin-left: -1px;
+                padding: $button-padding-x-sm;
+            }
+        }
 
-            &:focus {
-                outline: none;
+        // Dropdowns and Inputs
+        // TODO unselect if necessary after the design for inputs in toolbar is completed
+        //.k-autocomplete,
+        //.k-dateinput-wrap,
+        //.k-multiselect-wrap,
+        //.k-numeric-wrap,
+        .k-picker-wrap,
+        .k-dropdown-wrap {
+
+            &::before {
+                @extend .k-button::before;
             }
         }
 
@@ -58,7 +106,7 @@
             @include border-radius( 0 );
             padding: $toolbar-padding-y;
             width: calc( #{$toolbar-inner-calc-size} );
-            height: calc( #{$toolbar-inner-calc-size} );
+            height: 100%;
             margin: 0;
             border-width: 0 0 0 1px;
             border-color: inherit;
@@ -68,17 +116,18 @@
             position: absolute;
             top: 0;
             right: 0;
+
+            &::before {
+                display: block;
+            }
         }
 
 
         // Separator
         .k-separator {
             width: 0;
-            margin-top: -$toolbar-padding-y;
-            margin-bottom: -$toolbar-padding-y;
             border-width: 0 0 0 1px;
             border-style: solid;
-            border-color: inherit;
             align-self: stretch;
         }
     }
@@ -89,6 +138,12 @@
         // Group
         .k-overflow-tool-group {
             display: block;
+        }
+
+        // Button group
+        .k-button-group {
+            display: flex;
+            flex-direction: column;
         }
 
         // Hidden items

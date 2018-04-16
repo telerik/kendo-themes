@@ -1,5 +1,5 @@
 
-$grouping-header-text: $icon-color !default;
+$grouping-header-text: rgba($base-text, .54) !default;
 $grouping-header-bg: $widget-border !default;
 $grouping-border: $grouping-header-bg !default;
 
@@ -15,5 +15,24 @@ $grouping-border: $grouping-header-bg !default;
             background: $list-item-hovered-bg;
         }
 
+    }
+
+    .k-list-container {
+
+        .k-button {
+
+            // Focus state
+            &:focus,
+            &.k-state-focused {
+                @include appearance( hovered-list-item );
+            }
+
+            // Active state
+            &:active,
+            &.k-state-active {
+                box-shadow: none;
+            }
+
+        }
     }
 }

@@ -84,23 +84,6 @@
     }
 
 
-    // Split button
-    .k-split-button {
-        .k-button {
-            @include border-left-radius-only();
-        }
-        .k-split-button-arrow {
-            @include border-right-radius-only();
-            margin-left: -1px;
-            padding: $button-padding-y;
-        }
-
-        .k-widget {
-            border: 0;
-        }
-    }
-
-
     //DropDown Button
     .k-dropdown-button {
         &.k-state-focused,
@@ -217,6 +200,15 @@
         background: none !important; // sass-lint:disable-line no-important
         box-shadow: none !important; // sass-lint:disable-line no-important
         transition: color .2s ease-in-out;
+
+        &:hover,
+        &.k-state-hover,
+        &:active,
+        &.k-state-active,
+        &:hover:active,
+        &:hover.k-state-active {
+            color: inherit;
+        }
 
         &::before {
             display: block;

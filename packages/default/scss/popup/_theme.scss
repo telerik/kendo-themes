@@ -54,7 +54,7 @@ $grouping-border: $border-color !default;
 
         &.k-state-selected {
             color: $list-item-selected-text;
-            background-color: blend-multiply( $list-item-selected-bg, $list-item-hovered-bg );
+            background-color: blend-multiply( $list-item-hovered-bg, $list-item-selected-bg );
         }
     }
 

@@ -164,7 +164,8 @@ $forms-invalid-color: $error !default;
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            top: $input-padding-y;
+            top: 50%;
+            margin-top: -($form-line-height * $font-size / 2);
         }
 
         .k-i-loading {

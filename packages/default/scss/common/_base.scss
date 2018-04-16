@@ -1,3 +1,5 @@
+$widget-border-width: 1px !default;
+
 @include exports( "common/layout" ) {
 
     // Layout
@@ -14,7 +16,7 @@
 
     // Layout
     .k-widget {
-        border-width: 1px;
+        border-width: $widget-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;

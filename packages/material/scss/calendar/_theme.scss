@@ -3,5 +3,6 @@ $calendar-weekend-bg: transparent !default;
 $calendar-week-number-bg: transparent !default;
 $calendar-week-number-text: rgba(0, 0, 0, .38) !default;
 $calendar-week-day-text: $calendar-week-number-text !default;
+$node-hovered-selected-bg: $node-selected-bg !default;
 
 @import "~@progress/kendo-theme-default/scss/calendar/theme";

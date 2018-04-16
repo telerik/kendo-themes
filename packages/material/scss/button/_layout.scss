@@ -3,12 +3,15 @@ $flat-button-focused-opacity: .12 !default;
 $flat-button-active-opacity: .16 !default;
 $flat-button-selected-opacity: .16 !default;
 $outline-button-border-width: 2px !default;
+$split-button-arrow-border-width: 1px;
 
 @import "~@progress/kendo-theme-default/scss/button/layout";
 
 @include exports("button/layout/material") {
 
     .k-button {
+        text-transform: uppercase;
+
         &::before {
             display: block;
             transition: opacity .4s cubic-bezier(.25, .8, .25, 1);

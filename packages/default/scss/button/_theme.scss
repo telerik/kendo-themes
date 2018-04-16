@@ -123,20 +123,6 @@
 
     }
 
-    //SplitButton
-    .k-split-button.k-state-focused {
-        box-shadow: $button-focused-shadow;
-    }
-
-    .k-split-button.k-button-group .k-button {
-        &:active,
-        &.k-state-active {
-            @include appearance( pressed-button );
-            box-shadow: inset $button-pressed-shadow;
-        }
-    }
-
-
     // Flat button
     .k-button.k-flat,
     .k-button.k-bare {

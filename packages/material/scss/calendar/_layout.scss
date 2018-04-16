@@ -18,6 +18,12 @@ $calendar-footer-height: $calendar-month-cell-size !default;
 
 @include exports ('calendar/layout/material') {
 
+    .k-calendar {
+        .k-title {
+            text-transform: none;
+        }
+    }
+
     .k-calendar:not(.k-calendar-infinite) {
         font-weight: 700;
         font-size: $font-size-sm;

@@ -1,0 +1,81 @@
+$toolbar-separator-border: $widget-border !default;
+$toolbar-button-expanded-bg: $popup-bg !default;
+$toolbar-button-expanded-shadow: $button-focused-shadow !default;
+
+@import "~@progress/kendo-theme-default/scss/toolbar/theme";
+
+@include exports("toolbar/theme/material") {
+
+    .k-toolbar {
+
+        .k-button {
+
+            &::after {
+                display: none;
+            }
+
+            &.k-state-disabled {
+                color: $button-disabled-text;
+            }
+        }
+
+        // Split button
+        .k-split-button {
+
+            // States
+            &:hover,
+            &:focus {
+
+                &,
+                & .k-button {
+                    background: transparent;
+                }
+            }
+            &:hover,
+            &:focus,
+            &.k-state-border-up,
+            &.k-state-border-down {
+
+                .k-split-button-arrow {
+                    border-left-color: $button-border;
+                }
+            }
+
+            // Hover state
+            &:hover,
+            &.k-state-hover {
+                .k-button::before {
+                    @include opacity( $flat-button-hover-opacity );
+                }
+            }
+
+            // Focused state
+            &:focus,
+            &.k-state-focused {
+                .k-button::before {
+                    @include opacity( $flat-button-focused-opacity );
+                }
+            }
+
+            // Expanded state
+            &.k-state-border-down,
+            &.k-state-border-up {
+                .k-button::before {
+                    opacity: 0;
+                }
+            }
+        }
+
+        // Dropdowns and Inputs
+        // TODO unselect if necessary after the design for inputs in toolbar is completed
+        // .k-autocomplete,
+        // .k-dateinput-wrap,
+        // .k-multiselect-wrap,
+        // .k-numeric-wrap,
+        .k-picker-wrap,
+        .k-dropdown-wrap {
+            color: $button-text;
+        }
+    }
+
+}

@@ -8,6 +8,7 @@
         }
 
         .k-select {
+            opacity: 1;
             width: $icon-size;
             color: inherit;
         }
@@ -19,15 +20,16 @@
         }
 
         .k-link {
-            color: $icon-color;
+            opacity: $icon-opacity;
 
             // Hover state
             &:hover {
-                color: $icon-hovered-color;
+                opacity: $icon-hovered-opacity;
             }
 
             // Selected state
             &.k-state-selected {
+                opacity: $icon-focused-opacity;
                 background-color: transparent;
                 box-shadow: none;
             }

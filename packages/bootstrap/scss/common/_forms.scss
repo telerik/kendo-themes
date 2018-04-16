@@ -1,3 +1,18 @@
 $spinner-icon-offset: 1px !default;
 
+$twbs-font-size-base: $font-size-base !default;
+$twbs-input-padding-x: $input-btn-padding-x !default;
+$twbs-input-padding-y: $input-btn-padding-y !default;
+$twbs-input-line-height: $line-height-base !default;
+
+$twbs-font-size-base-sm: $font-size-sm !default;
+$twbs-input-padding-x-sm: $input-padding-x-sm !default;
+$twbs-input-padding-y-sm: $input-padding-y-sm !default;
+$twbs-input-line-height-sm: $input-line-height-sm !default;
+
+$twbs-font-size-base-lg: $font-size-lg !default;
+$twbs-input-padding-x-lg: $input-padding-x-lg !default;
+$twbs-input-padding-y-lg: $input-padding-y-lg !default;
+$twbs-input-line-height-lg: $input-line-height-lg !default;
+
 @import "~@progress/kendo-theme-default/scss/common/forms";
