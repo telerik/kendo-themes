@@ -98,11 +98,11 @@ $image-spacing: 8px !default;
     // Orientation
     .k-menu-horizontal {
 
-        > .k-item + .k-item:not(.k-separator) {
+        > .k-item + .k-item {
             margin-left: $nav-item-margin;
         }
 
-        > .k-separator {
+        > .k-item.k-separator {
             width: 0;
             border-width: 0 1px 0 0;
             line-height: inherit;
@@ -111,7 +111,7 @@ $image-spacing: 8px !default;
     }
     .k-menu-vertical {
 
-        > .k-item + .k-item:not(.k-separator) {
+        > .k-item + .k-item {
             margin-top: $nav-item-margin;
         }
 
@@ -133,7 +133,7 @@ $image-spacing: 8px !default;
             position: relative;
         }
 
-        .k-separator {
+        .k-item.k-separator {
             margin: $menu-separator-spacer 0;
         }
     }
