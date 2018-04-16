@@ -25,11 +25,14 @@ $toolbar-button-mode: flat !default;
 
         // Button normal state
         @if $toolbar-button-mode == thin {
-            > .k-button:not(:hover):not(.k-state-hover):not(:active):not(.k-state-active),
-            > .k-button-group > .k-button:not(:hover):not(.k-state-hover):not(:active):not(.k-state-active) {
-                color: inherit;
-                border-color: transparent;
-                background: none;
+            > .k-button,
+            > .k-button-group > .k-button {
+
+                &:not(:hover):not(.k-state-hover):not(:active):not(.k-state-active) {
+                    color: inherit;
+                    border-color: transparent;
+                    background: none;
+                }
             }
 
         }
