@@ -18,8 +18,6 @@ $tooltip-callout-size: 12px !default;
         background-repeat: repeat-x;
         position: absolute;
         z-index: 12000;
-        display: flex;
-        flex-direction: row-reverse;
 
         &:not(.k-tooltip-closable) {
             font-size: $tooltip-font-size;
