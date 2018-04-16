@@ -1,8 +1,8 @@
 <!doctype html>
-<html>
-
+<html lang="en" class="k-typography">
 <head>
     <title>Menu</title>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts.js"></script>
@@ -10,8 +10,8 @@
     <style>
         #test-area {
             display: grid;
-            grid-gap: 1em 1em;
-            grid-template-columns: auto auto;
+            grid-gap: 20px 20px;
+            grid-template-columns: 1fr 1fr;
             max-width: 1024px;
         }
 
@@ -21,13 +21,12 @@
         }
     </style>
 </head>
-
 <body>
 
     <div id="test-area">
 
         <!-- horizontal menu -->
-        <div class="section">
+        <section>
             <ul id="menu" data-role="menu" class="k-widget k-reset k-header k-menu k-menu-horizontal">
                 <li class="k-item k-state-disabled k-first">
                     <span class="k-link k-menu-link"> Disabled</span>
@@ -82,10 +81,10 @@
                     </span>
                 </li>
             </ul>
-        </div>
+        </section>
 
         <!-- vertical menu -->
-        <div class="section">
+        <section>
             <ul id="menu" data-role="menu" class="k-widget k-reset k-header k-menu k-menu-vertical">
                 <li class="k-item k-state-disabled k-first">
                     <span class="k-link k-menu-link">Disabled</span>
@@ -137,10 +136,10 @@
                     </span>
                 </li>
             </ul>
-        </div>
+        </section>
 
         <!-- horizontal scrolling menu -->
-        <div class="section">
+        <section>
             <div class="k-menu-scroll-wrapper horizontal" style="width: 300px;">
                 <ul id="menu" data-role="menu" class="k-widget k-reset k-header k-menu k-menu-horizontal">
                     <li class="k-item k-state-default k-first">
@@ -165,10 +164,10 @@
                 <span class="k-button k-button-icon k-menu-scroll-button k-scroll-left" unselectable="on"><span class="k-icon k-i-arrow-60-left"></span></span>
                 <span class="k-button k-button-icon k-menu-scroll-button k-scroll-right" unselectable="on"><span class="k-icon k-i-arrow-60-right"></span></span>
             </div>
-        </div>
+        </section>
 
         <!-- vertical scrolling menu -->
-        <div class="section">
+        <section>
             <div class="k-menu-scroll-wrapper vertical">
                 <ul id="menu" data-role="menu" class="k-widget k-reset k-header k-menu k-menu-vertical" style="height: 150px">
                     <li class="k-item k-state-default k-first">
@@ -193,10 +192,10 @@
                 <span class="k-button k-button-icon k-menu-scroll-button k-scroll-up" unselectable="on"><span class="k-icon k-i-arrow-60-up"></span></span>
                 <span class="k-button k-button-icon k-menu-scroll-button k-scroll-down" unselectable="on"><span class="k-icon k-i-arrow-60-down"></span></span>
             </div>
-        </div>
+        </section>
 
         <!-- detached menu popup (Angular) -->
-        <div class="section">
+        <section>
             <kendo-popup class="k-animation-container k-animation-container-shown">
                 <div class="k-popup k-menu-popup">
                     <ul class="k-group k-menu-group k-reset">
@@ -268,10 +267,10 @@
 
                 </div>
             </kendo-popup>
-        </div>
+        </section>
 
         <!-- detached menu popup (Angular, RTL) -->
-        <div class="section">
+        <section>
             <kendo-popup class="k-animation-container k-rtl k-animation-container-shown">
                 <div class="k-popup k-menu-popup">
                     <ul class="k-group k-menu-group k-reset">
@@ -343,7 +342,9 @@
 
                 </div>
             </kendo-popup>
-        </div>
-</body>
+        </section>
 
+    </div>
+
+</body>
 </html>
