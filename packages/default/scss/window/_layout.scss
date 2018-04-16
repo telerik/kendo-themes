@@ -20,6 +20,11 @@
             opacity: 0;
         }
     }
+    .k-window.k-window-maximized {
+        max-width: 100vw;
+        max-height: 100vh;
+        box-shadow: none;
+    }
 
     // Title bar
     .k-window-titlebar {
