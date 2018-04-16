@@ -147,6 +147,12 @@ $forms-invalid-color: $error !default;
         .k-i-loading {
             position: absolute;
             right: $input-padding-x;
+
+            .k-rtl &,
+            [dir="rtl"] & {
+                right: auto;
+                left: $input-padding-x;
+            }
         }
 
         .k-clear-value {
