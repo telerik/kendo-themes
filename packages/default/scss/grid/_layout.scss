@@ -23,6 +23,10 @@
     $grid-cell-padding-y: $cell-padding-y !default;
     // $grid-header-cell-padding-x does not make sense - header and cell content needs to be aligned
     $grid-header-cell-padding-y: $grid-cell-padding-y !default;
+
+    // a more sensible default would be $grid-cell-padding-x, but default theme uses a smaller filter row padding-x
+    $grid-filter-cell-padding-x: $cell-padding !default;
+    $grid-filter-cell-padding-y: $grid-cell-padding-y !default;
     $grid-grouping-row-border-top: 1px !default;
     $grid-group-footer-border-y: 1px !default;
     $grid-group-footer-second-cell-border: 1px !default;
@@ -599,7 +603,7 @@
         th {
             border-width: 0 0 1px 1px;
             white-space: nowrap;
-            padding: $grid-cell-padding-y;
+            padding: $grid-filter-cell-padding-y $grid-filter-cell-padding-x;
         }
 
         td:first-child {
@@ -886,6 +890,10 @@
 
         .k-grid-header-wrap {
             border-width: 0;
+        }
+
+        .k-grid-content {
+            overflow-y: auto;
         }
     }
 }

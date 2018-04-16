@@ -8,6 +8,8 @@ $grid-grouping-row-bg: transparent !default;
 $grid-selected-text: #000 !default;
 $grid-selected-cell-text: $grid-selected-text !default;
 $grid-selected-cell-bg: $grid-sorted-bg !default;
+$grid-filter-cell-padding-x: $grid-cell-padding-x !default;
+$grid-filter-cell-padding-y: $grid-cell-padding-y !default;
 
 @import "~@progress/kendo-theme-default/scss/grid/theme";
 
@@ -28,36 +30,16 @@ $grid-selected-cell-bg: $grid-sorted-bg !default;
             background-color: $grid-edit-cell-bg;
             box-shadow: $grid-edit-cell-shadow;
         }
-
-        tr:hover,
-        tr.k-state-selected:hover {
-            background-color: $grid-hovered-bg;
-        }
-
-        tr.k-state-selected:hover {
-            color: $grid-selected-text;
-        }
     }
 
     .k-grid-header {
-        tr:hover {
-            background-color: transparent;
-        }
-
-        .k-sorted {
-            color: $grid-text;
-        }
-
+        .k-sorted,
         .k-link:hover {
-            .k-i-sort-asc-sm,
-            .k-i-sort-desc-sm,
-            .k-sort-order {
-                color: $grid-text;
-            }
-        }
-
-        th:hover {
             color: $grid-text;
+
+            > .k-icon {
+                color: inherit;
+            }
         }
 
         .k-grid-filter,
