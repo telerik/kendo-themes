@@ -2,7 +2,7 @@ $tooltip-padding-y: $padding-y !default;
 $tooltip-padding-x: $padding-x !default;
 $tooltip-closable-padding-x: $window-titlebar-padding-x !default;
 $tooltip-closable-padding-y: $window-titlebar-padding-y !default;
-$tooltip-closable-content-padding: $icon-size * 1.5 !default;
+$tooltip-closable-content-padding: $icon-size + $icon-spacing !default;
 $tooltip-font-size: $font-size !default;
 $tooltip-line-height: $line-height !default;
 $tooltip-callout-size: 12px !default;
