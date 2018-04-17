@@ -1,6 +1,8 @@
 $item-hovered-opacity: .12 !default;
 $item-focused-opacity: .16 !default;
 $item-selected-opacity: .16 !default;
+$menu-separator-spacer: $popup-padding-y !default;
+$menu-scrolling-border: transparent !default;
 
 @import "~@progress/kendo-theme-default/scss/menu/layout";
 
@@ -60,8 +62,15 @@ $item-selected-opacity: .16 !default;
     .k-menu-scroll-wrapper {
 
         .k-menu-scroll-button {
-            padding: $button-padding-x;
             box-shadow: none;
+        }
+
+        &.horizontal .k-menu-scroll-button {
+            width: calc( #{$line-height-em} + #{$nav-item-padding-y});
+        }
+
+        &.vertical .k-menu-scroll-button {
+            height: calc( #{$line-height-em} + #{$nav-item-padding-y});
         }
     }
 }

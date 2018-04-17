@@ -1,4 +1,15 @@
+$menu-separator-spacer: 2px !default;
+$image-spacing: 8px !default;
+
 @include exports("menu/layout") {
+
+    // Separator
+    %separator {
+        border-width: 1px 0 0;
+        border-style: solid;
+        line-height: 0;
+        overflow: hidden;
+    }
 
     // Base
     .k-menu {
@@ -35,19 +46,16 @@
         }
 
         .k-separator {
-            border-width: 1px 0 0;
-            border-style: solid;
-            line-height: 0;
-            overflow: hidden;
+            @extend %separator;
         }
-
     }
 
     .k-menu-link {
+
         > .k-icon,
         > .k-image,
         > .k-sprite {
-            margin-right: $icon-spacing;
+            margin-right: $image-spacing;
         }
     }
 
@@ -91,25 +99,6 @@
     }
 
 
-    // Context menu
-    .k-popups-wrapper {
-        position: relative;
-        border: 0;
-        margin: 0;
-        padding: 0;
-    }
-    .k-menu.k-context-menu {
-        margin: 0;
-        padding: $popup-padding-y $popup-padding-x;
-        border-width: 1px;
-        border-style: solid;
-        box-sizing: content-box;
-    }
-    .k-animation-container .k-context-menu.k-menu-horizontal {
-        display: flex !important; // sass-lint:disable-line no-important
-    }
-
-
     // Orientation
     .k-menu-horizontal {
 
@@ -117,15 +106,16 @@
             margin-left: $nav-item-margin;
         }
 
-        > .k-separator {
+        > .k-item.k-separator {
             width: 0;
             border-width: 0 1px 0 0;
             line-height: inherit;
+            margin: 0 $menu-separator-spacer;
         }
     }
     .k-menu-vertical {
 
-        & > .k-item + .k-item {
+        > .k-item + .k-item {
             margin-top: $nav-item-margin;
         }
 
@@ -136,9 +126,11 @@
 
         .k-item {
             display: block;
+            border-color: inherit;
         }
 
         .k-item > .k-link {
+            line-height: $line-height;
             padding: $list-item-padding-y $list-item-padding-x;
             padding-right: add-two( (2 * $list-item-padding-x), $icon-size);
             display: flex;
@@ -146,6 +138,38 @@
             align-items: center;
             position: relative;
         }
+
+        .k-item.k-separator {
+            @extend %separator;
+            margin: $menu-separator-spacer 0;
+        }
+    }
+
+
+    // Context menu
+    .k-popups-wrapper {
+        position: relative;
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .k-context-menu {
+        margin: 0;
+        border-width: 1px;
+        border-style: solid;
+        box-sizing: content-box;
+
+        &.k-menu-horizontal {
+            padding: $popup-padding-x $popup-padding-y;
+        }
+
+        & > .k-item + .k-item:not(.k-separator) {
+            margin-left: 0;
+        }
+    }
+    .k-animation-container .k-context-menu.k-menu-horizontal {
+        // kendo-jquery adds `display: block` via js and we need to override it.
+        display: flex !important; // sass-lint:disable-line no-important
     }
 
 
@@ -202,13 +226,20 @@
 
 
     // RTL
-    .k-rtl {
+
+    .k-rtl,
+    [dir="rtl"] {
+
         .k-menu-link {
             > .k-icon,
             > .k-image,
             > .k-sprite {
-                margin-left: $icon-spacing;
+                margin-left: $image-spacing;
                 margin-right: 0;
+            }
+
+            .k-icon.k-menu-expand-arrow {
+                margin-left: 0;
             }
         }
 
@@ -221,7 +252,7 @@
 
         .k-menu-horizontal {
 
-            & > .k-item + .k-item {
+            & > .k-item + .k-item:not(.k-separator) {
                 margin-right: $nav-item-margin;
                 margin-left: 0;
             }
