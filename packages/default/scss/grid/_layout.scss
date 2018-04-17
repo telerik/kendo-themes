@@ -36,6 +36,10 @@
     $grid-header-menu-icon-spacing: $icon-spacing !default;
     $grid-sorted-icon-margin-left: calc( #{$padding-x} - 1px) !default;
 
+    // helper variables
+    $grid-filterable-icon-spacing: calc(#{ button-size() } + #{ $grid-header-menu-icon-spacing });
+    $default-scrollbar-width: 17px;
+
     .k-grid {
         display: flex;
         flex-direction: column;
@@ -242,7 +246,7 @@
 
             .k-grid-header,
             .k-grid-footer {
-                padding-left: 17px;
+                padding-left: $default-scrollbar-width;
                 padding-right: 0;
             }
 
@@ -251,6 +255,17 @@
                     &:first-child {
                         border-right-width: 0;
                     }
+                }
+
+                .k-filterable > .k-link {
+                    padding-left: $grid-filterable-icon-spacing;
+                    padding-right: $grid-cell-padding-x;
+                }
+
+                .k-grid-filter,
+                .k-header-column-menu {
+                    right: auto;
+                    left: $grid-header-menu-icon-spacing;
                 }
             }
 
@@ -471,7 +486,7 @@
     .k-grid-header,
     .k-grid-footer {
         flex: 0 0 auto;
-        padding-right: 17px;
+        padding-right: $default-scrollbar-width;
         border-width: 0;
         border-style: solid;
         border-color: inherit;
@@ -521,21 +536,16 @@
             overflow: hidden;
             text-overflow: ellipsis;
             width: 100%;
+            box-sizing: border-box;
         }
 
         .k-filterable > .k-link {
-            width: calc( 100% -  (#{ button-size() }) );
+            padding-right: $grid-filterable-icon-spacing;
         }
 
         .k-header > .k-link:focus {
             text-decoration: none;
         }
-        .k-header > .k-link > .k-icon {
-            margin: 0 .4ex;
-            position: static;
-            vertical-align: middle;
-        }
-
 
         .k-grid-filter,
         .k-header-column-menu {
@@ -560,10 +570,6 @@
             margin-top: $grid-form-component-offset;
             margin-bottom: $grid-form-component-offset;
             margin-right: (-$grid-cell-padding-x);
-
-            & + .k-link {
-                margin-right: calc(#{$button-calc-size} - #{$grid-cell-padding-x}); // .k-header-column-menu width
-            }
         }
 
         .k-header > .k-link > .k-icon {
