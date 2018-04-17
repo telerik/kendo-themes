@@ -85,6 +85,10 @@ $menu-scrolling-icon-hover: $link-hover-text !default;
             border-color: $menu-scrolling-border;
             color: $menu-scrolling-icon-hover;
             background: $menu-scrolling-bg;
+
+            &::before {
+                opacity: 0;
+            }
         }
     }
 }

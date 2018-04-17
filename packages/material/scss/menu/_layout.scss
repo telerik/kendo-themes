@@ -2,6 +2,7 @@ $item-hovered-opacity: .12 !default;
 $item-focused-opacity: .16 !default;
 $item-selected-opacity: .16 !default;
 $menu-separator-spacer: $popup-padding-y !default;
+$menu-scrolling-border: transparent !default;
 
 @import "~@progress/kendo-theme-default/scss/menu/layout";
 
@@ -64,8 +65,12 @@ $menu-separator-spacer: $popup-padding-y !default;
             box-shadow: none;
         }
 
-        &:not(.vertical) .k-menu-scroll-button {
+        &.horizontal .k-menu-scroll-button {
             width: calc( #{$line-height-em} + #{$nav-item-padding-y});
+        }
+
+        &.vertical .k-menu-scroll-button {
+            height: calc( #{$line-height-em} + #{$nav-item-padding-y});
         }
     }
 }
