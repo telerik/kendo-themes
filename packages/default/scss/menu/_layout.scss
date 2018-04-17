@@ -4,11 +4,14 @@ $image-spacing: 8px !default;
 @include exports("menu/layout") {
 
     // Base
-    .k-menu,
-    .k-menu-scroll-wrapper {
+    .k-menu {
         display: flex;
         flex-direction: row;
         align-items: stretch;
+    }
+
+    .k-menu,
+    .k-menu-scroll-wrapper {
         position: relative;
         cursor: default;
 
@@ -223,16 +226,16 @@ $image-spacing: 8px !default;
     .k-rtl,
     [dir="rtl"] {
 
-        .k-menu:not(.k-menu-vertical) {
-            flex-direction: row-reverse;
-        }
-
         .k-menu-link {
             > .k-icon,
             > .k-image,
             > .k-sprite {
                 margin-left: $image-spacing;
                 margin-right: 0;
+            }
+
+            .k-icon.k-menu-expand-arrow {
+                margin-left: 0;
             }
         }
 
