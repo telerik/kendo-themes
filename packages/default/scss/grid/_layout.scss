@@ -18,7 +18,7 @@
 
     $grid-form-component-vertical-align: middle !default;
     $grid-hierarchy-col-width: ($icon-size * 2) !default;
-    $grid-td-border-width: 0 0 0 1px !default;
+    $grid-cell-border-width: 0 0 0 1px !default;
     $grid-cell-padding-x: $cell-padding-x !default;
     $grid-cell-padding-y: $cell-padding-y !default;
     // $grid-header-cell-padding-x does not make sense - header and cell content needs to be aligned
@@ -105,7 +105,7 @@
             white-space: nowrap;
         }
         td {
-            border-width: $grid-td-border-width;
+            border-width: $grid-cell-border-width;
             vertical-align: middle;
         }
 
