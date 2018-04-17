@@ -32,8 +32,13 @@ $menu-scrolling-icon-hover: inherit !default;
     .k-menu-scroll-wrapper {
 
         .k-menu-scroll-button {
-            &:hover {
-                border-color: transparent;
+
+            .k-icon {
+                opacity: $icon-opacity;
+            }
+
+            &:hover .k-icon {
+                opacity: $icon-hovered-opacity;
             }
 
             .k-i-arrow-60-up::before {
