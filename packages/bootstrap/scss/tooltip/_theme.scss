@@ -7,10 +7,6 @@
         @include border-radius($border-radius);
     }
 
-    .k-tooltip-closable {
-        padding: $padding-y $padding-x;
-    }
-
 
     .k-callout-n { border-bottom-color: $tooltip-bg; }
     .k-callout-e { border-left-color: $tooltip-bg; }

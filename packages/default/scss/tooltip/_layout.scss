@@ -1,6 +1,10 @@
 $tooltip-padding-y: $padding-y !default;
 $tooltip-padding-x: $padding-x !default;
-$tooltip-closable-padding: (3 * $tooltip-padding-y) (2 * $tooltip-padding-x) !default;
+$tooltip-closable-padding-x: $window-titlebar-padding-x !default;
+$tooltip-closable-padding-y: $window-titlebar-padding-y !default;
+$tooltip-closable-content-padding: calc(#{$icon-size} + #{$icon-spacing}) !default;
+$tooltip-font-size: $font-size !default;
+$tooltip-line-height: $line-height !default;
 $tooltip-callout-size: 12px !default;
 
 @include exports("tooltip/layout") {
@@ -8,14 +12,16 @@ $tooltip-callout-size: 12px !default;
 
     .k-tooltip {
         @include border-radius();
+        line-height: $tooltip-line-height;
         padding: $tooltip-padding-y $tooltip-padding-x;
         border-width: 0;
         background-repeat: repeat-x;
         position: absolute;
         z-index: 12000;
 
-        display: flex;
-        flex-direction: row-reverse;
+        &:not(.k-tooltip-closable) {
+            font-size: $tooltip-font-size;
+        }
     }
 
     .k-tooltip-content {
@@ -24,11 +30,24 @@ $tooltip-callout-size: 12px !default;
     }
 
     .k-tooltip-closable {
-        padding: $tooltip-closable-padding;
+        padding: $tooltip-closable-padding-y $tooltip-closable-padding-x;
+        line-height: normal;
+
+        .k-tooltip-content {
+            padding-right: $tooltip-closable-content-padding;
+
+            .k-rtl &,
+            [dir-rtl] & {
+                padding-left: $tooltip-closable-content-padding;
+                padding-right: 0;
+            }
+        }
     }
 
     .k-tooltip-button {
-        margin-left: $tooltip-padding-x;
+        position: absolute;
+        top: $tooltip-closable-padding-y;
+        right: $tooltip-closable-padding-x;
 
         .k-icon {
             color: inherit;
@@ -36,8 +55,8 @@ $tooltip-callout-size: 12px !default;
 
         .k-rtl &,
         [dir-rtl] & {
-            margin-left: 0;
-            margin-right: $tooltip-padding-x;
+            left: $tooltip-closable-padding-x;
+            right: auto;
         }
     }
 

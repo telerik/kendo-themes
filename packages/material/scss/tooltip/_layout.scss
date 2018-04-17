@@ -1,6 +1,9 @@
-$tooltip-padding-y: $padding-y !default;
-$tooltip-padding-x: $padding-x !default;
-$tooltip-closable-padding: (2 * $tooltip-padding-y) $tooltip-padding-x !default;
+$tooltip-padding-y: 0 !default;
+$tooltip-padding-x: $padding-x / 2 !default;
+$tooltip-closable-padding-x: $padding-x !default;
+$tooltip-closable-padding-y: ($padding-y * 3) !default;
+$tooltip-font-size: $font-size-xs !default;
+$tooltip-line-height: $tooltip-font-size * 2.2 !default;
 
 @import "~@progress/kendo-theme-default/scss/tooltip/layout";
 
