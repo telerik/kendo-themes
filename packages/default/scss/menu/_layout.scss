@@ -3,15 +3,19 @@ $image-spacing: 8px !default;
 
 @include exports("menu/layout") {
 
+    // Separator
+    %separator {
+        border-width: 1px 0 0;
+        border-style: solid;
+        line-height: 0;
+        overflow: hidden;
+    }
+
     // Base
     .k-menu {
         display: flex;
         flex-direction: row;
         align-items: stretch;
-    }
-
-    .k-menu,
-    .k-menu-scroll-wrapper {
         position: relative;
         cursor: default;
 
@@ -42,15 +46,12 @@ $image-spacing: 8px !default;
         }
 
         .k-separator {
-            border-width: 1px 0 0;
-            border-style: solid;
-            line-height: 0;
-            overflow: hidden;
+            @extend %separator;
         }
-
     }
 
     .k-menu-link {
+
         > .k-icon,
         > .k-image,
         > .k-sprite {
@@ -125,9 +126,11 @@ $image-spacing: 8px !default;
 
         .k-item {
             display: block;
+            border-color: inherit;
         }
 
         .k-item > .k-link {
+            line-height: $line-height;
             padding: $list-item-padding-y $list-item-padding-x;
             padding-right: add-two( (2 * $list-item-padding-x), $icon-size);
             display: flex;
@@ -137,6 +140,7 @@ $image-spacing: 8px !default;
         }
 
         .k-item.k-separator {
+            @extend %separator;
             margin: $menu-separator-spacer 0;
         }
     }
