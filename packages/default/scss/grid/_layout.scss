@@ -18,7 +18,8 @@
 
     $grid-form-component-vertical-align: middle !default;
     $grid-hierarchy-col-width: ($icon-size * 2) !default;
-    $grid-cell-border-width: 0 0 0 1px !default;
+    $grid-cell-horizontal-border-width: 0 !default;
+    $grid-cell-vertical-border-width: 1px !default;
     $grid-cell-padding-x: $cell-padding-x !default;
     $grid-cell-padding-y: $cell-padding-y !default;
     // $grid-header-cell-padding-x does not make sense - header and cell content needs to be aligned
@@ -31,7 +32,6 @@
     $grid-grouping-row-border-top: 1px !default;
     $grid-group-footer-border-y: 1px !default;
     $grid-group-footer-second-cell-border: 1px !default;
-    $grid-header-wrap-border: 1px !default;
     $grid-header-first-border: 1px !default;
     $grid-header-menu-icon-spacing: $icon-spacing !default;
     $grid-sorted-icon-margin-left: calc( #{$padding-x} - 1px) !default;
@@ -109,7 +109,7 @@
             white-space: nowrap;
         }
         td {
-            border-width: $grid-cell-border-width;
+            border-width: 0 0 $grid-cell-horizontal-border-width $grid-cell-vertical-border-width;
             vertical-align: middle;
         }
 
@@ -197,7 +197,7 @@
             }
 
             .k-grid-header-wrap {
-                border-width: 0 0 0 $grid-header-wrap-border;
+                border-width: 0 0 0 $grid-cell-vertical-border-width;
             }
 
             .k-group-indicator,
@@ -224,14 +224,14 @@
             .k-grid-content-locked,
             .k-grid-footer-locked,
             .k-grid-header-locked {
-                border-left-width: 1px;
+                border-left-width: $grid-cell-vertical-border-width;
                 border-right-width: 0;
             }
 
             th,
             td {
                 &:first-child {
-                    border-left-width: 1px;
+                    border-left-width: $grid-cell-vertical-border-width;
                 }
 
                 &:last-child {
@@ -890,7 +890,7 @@
         overflow: hidden;
     }
 
-    .k-grid-no-scrollbar {
+    .k-grid.k-grid-no-scrollbar {
         .k-grid-header {
             padding: 0;
         }
