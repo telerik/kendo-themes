@@ -243,6 +243,9 @@
             td.k-hierarchy-cell {
                 border-left-width: 0;
             }
+            .k-hierarchy-cell + td {
+                border-left-width: $grid-cell-vertical-border-width;
+            }
 
             .k-grid-header,
             .k-grid-footer {
@@ -266,6 +269,16 @@
                 .k-header-column-menu {
                     right: auto;
                     left: $grid-header-menu-icon-spacing;
+                }
+            }
+
+            .k-filter-row td {
+                &:first-child {
+                    border-left-width: $grid-cell-vertical-border-width;
+                }
+
+                &:last-child {
+                    border-left-width: 0;
                 }
             }
 
@@ -608,13 +621,13 @@
 
         td,
         th {
-            border-width: 0 0 1px 1px;
+            border-width: 0 0 1px $grid-cell-vertical-border-width;
             white-space: nowrap;
             padding: $grid-filter-cell-padding-y $grid-filter-cell-padding-x;
         }
 
         td:first-child {
-            border-left: 0;
+            border-left-width: 0;
         }
 
         .k-multiselect {
@@ -633,7 +646,7 @@
         > span,
         .k-filtercell-wrapper {
             display: flex;
-            flex: 1;
+            flex: 1 1 0;
 
             > label {
                 vertical-align: middle;
