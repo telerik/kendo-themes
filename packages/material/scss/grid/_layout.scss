@@ -26,7 +26,6 @@ $grid-group-indicator-gap: 8px !default;
 @include exports ('grid/layout/material') {
     $grid-header-font-size: 12px !default;
     $grouping-dropclue-height: add-two( 2 * $font-size, 2 * $padding-y) !default;
-    $grouping-dropclue-margin-top: add-two( $grid-grouping-header-padding-x, (-1px)) !default;
 
     .k-grid {
         .k-checkbox-label,
@@ -107,7 +106,6 @@ $grid-group-indicator-gap: 8px !default;
     }
 
     .k-grouping-dropclue {
-        margin-top: $grouping-dropclue-margin-top;
         width: 0;
         height: $grouping-dropclue-height;
         border-style: solid;
