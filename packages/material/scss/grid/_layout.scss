@@ -123,6 +123,13 @@ $grid-group-indicator-gap: 8px !default;
         height: 100%;
     }
 
+    .k-column-resizer:hover::after {
+        display: block;
+        content: "";
+        height: 100%;
+        border-right: 2px solid currentColor;
+    }
+
     .k-reorder-cue {
         margin-left: -1px;
         width: 2px;

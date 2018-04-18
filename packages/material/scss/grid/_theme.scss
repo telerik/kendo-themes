@@ -94,6 +94,10 @@ $grid-filter-cell-padding-y: $grid-cell-padding-y !default;
         background-color: $accent;
     }
 
+    .k-column-resizer:hover {
+        color: $accent;
+    }
+
     .k-reorder-cue {
         background-color: $accent;
     }
