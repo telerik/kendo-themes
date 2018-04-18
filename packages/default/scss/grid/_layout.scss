@@ -3,8 +3,8 @@
     $input-border-width: 1px;
     $filter-rows-span-size: calc( #{$line-height-em} + #{$input-padding-y * 2} + #{$input-border-width * 2}) !default;
 
-    $group-dropclue-size: 6px;
-    $group-dropclue-line-size: $group-dropclue-size / 3;
+    $grid-group-dropclue-size: 6px;
+    $grid-group-dropclue-line-size: $grid-group-dropclue-size / 3;
 
     $edit-cell-input-space: calc(-#{$cell-padding} - #{$input-border-width}) !default;
 
@@ -449,7 +449,7 @@
     }
 
     .k-grouping-dropclue {
-        width: ($group-dropclue-size * 2);
+        width: ($grid-group-dropclue-size * 2);
         height: button-size();
         position: absolute;
         box-sizing: content-box;
@@ -462,7 +462,7 @@
         }
 
         &::before {
-            border-width: $group-dropclue-size;
+            border-width: $grid-group-dropclue-size;
             border-style: solid;
             border-left-color: transparent;
             border-right-color: transparent;
@@ -471,10 +471,10 @@
         }
 
         &::after {
-            width: $group-dropclue-line-size;
-            height: calc(100% - #{$group-dropclue-size});
-            top: $group-dropclue-size;
-            left: calc(#{$group-dropclue-size} - (#{$group-dropclue-line-size} / 2));
+            width: $grid-group-dropclue-line-size;
+            height: calc(100% - #{$grid-group-dropclue-size});
+            top: $grid-group-dropclue-size;
+            left: calc(#{$grid-group-dropclue-size} - (#{$grid-group-dropclue-line-size} / 2));
         }
     }
 
