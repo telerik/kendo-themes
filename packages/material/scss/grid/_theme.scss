@@ -111,4 +111,39 @@ $grid-filter-cell-padding-y: $grid-cell-padding-y !default;
             box-shadow: $grid-locked-column-shadow;
         }
     }
+
+    // WIP: Material text field styles
+    .k-grid-edit-row > td {
+        $text-field-radius: 3px;
+        $text-field-padding: 16px;
+
+        > .k-textbox,
+        > .k-input.k-textbox,
+        > .k-textarea,
+        > .k-widget {
+            background-color: rgba(0, 0, 0, .07);
+            border-radius: $text-field-radius;
+            margin-left: -$text-field-padding;
+            margin-right: -$text-field-padding;
+        }
+
+        > .k-textbox,
+        > .k-textarea,
+        > .k-autocomplete,
+        > .k-dateinput-wrap,
+        > .k-dropdown-wrap,
+        > .k-picker-wrap,
+        > .k-multiselect-wrap,
+        > .k-numerictextbox > .k-numeric-wrap {
+            font-size: $font-size;
+            border-radius: $text-field-radius;
+            border-width: 0 0 2px;
+            padding-left: $text-field-padding;
+            padding-right: $text-field-padding;
+
+            .k-input {
+                padding-bottom: 0;
+            }
+        }
+    }
 }
