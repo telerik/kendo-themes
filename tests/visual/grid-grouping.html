@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
 </head>
 <body>
 
@@ -75,6 +82,53 @@
                     </kendo-grid-list>
                 </div>
             </kendo-grid>
+        </div>
+
+        <div class="section">
+            <div id="grid" data-role="grid" class="k-grid k-grid-no-scrollbar k-widget k-display-block" style="height: 250px;">
+                <div class="k-header k-grid-toolbar">
+                    <a role="button" class="k-button k-button-icontext k-grid-add" href="#">Add new</a>
+                </div>
+                <div class="k-grouping-header" data-role="droptarget">Drag a column header and drop it here to group by that column</div>
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table role="grid">
+                            <colgroup>
+                                <col style="width:240px">
+                                <col>
+                                <col>
+                                <col style="width:150px">
+                            </colgroup>
+                            <thead role="rowgroup">
+                                <tr role="row">
+                                    <th scope="col" role="columnheader" data-field="ContactName" aria-haspopup="true" rowspan="1" data-title="Contact Name" data-index="0" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Name</a></th>
+                                    <th scope="col" role="columnheader" data-field="ContactTitle" aria-haspopup="true" rowspan="1" data-title="Contact Title" data-index="1" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Price</a></th>
+                                    <th scope="col" role="columnheader" data-field="CompanyName" aria-haspopup="true" rowspan="1" data-title="Company Name" data-index="2" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Available</a></th>
+                                    <th scope="col" role="columnheader" data-field="Country" aria-haspopup="true" rowspan="1" data-index="3" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Units</a></th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="k-grid-content k-auto-scrollable" style="height: 417px;">
+                    <table role="grid" style="height: auto;">
+                        <colgroup>
+                            <col style="width:240px">
+                            <col>
+                            <col>
+                            <col style="width:150px">
+                        </colgroup>
+                        <tbody role="rowgroup">
+                            <tr data-uid="7419ffda-0917-492c-8e4b-baeac8031eb6" role="row">
+                                <td class="" role="gridcell">Chai</td>
+                                <td class="" role="gridcell">30</td>
+                                <td class="" role="gridcell">false</td>
+                                <td class="" role="gridcell">15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 
