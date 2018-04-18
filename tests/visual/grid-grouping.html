@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Grid Grouping</title>
+
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+</head>
+<body>
+
+    <div id="test-area">
+        <div class="section">
+            <kendo-grid class="k-widget k-grid k-grid-no-scrollbar" style="width: 480px;">
+                <kendo-grid-toolbar class="k-header k-grid-toolbar">
+                    <button class="k-button k-grid-add-command" dir="ltr">Add new</button>
+                </kendo-grid-toolbar>
+                <kendo-grid-group-panel class="k-grouping-header k-grouping-header-flex">
+                    <div class="k-indicator-container">
+                        Drag a column header and drop it here to group by that column
+                    </div>
+                </kendo-grid-group-panel>
+                <div class="k-grid-aria-root" role="grid" aria-rowcount="9" aria-colcount="4">
+                    <div class="k-grid-header" role="presentation" style="padding: 0px;">
+                        <div class="k-grid-header-wrap" role="presentation">
+                            <table role="presentation">
+                                <colgroup role="presentation">
+                                    <col><col><col><col>
+                                </colgroup>
+                                <thead role="presentation">
+                                    <tr role="row" aria-rowindex="1">
+                                        <th aria-readonly="true" aria-selected="false" role="columnheader" class="k-header" rowspan="1" colspan="1" aria-colindex="1">
+                                            Name
+                                        </th>
+                                        <th aria-readonly="true" aria-selected="false" role="columnheader" class="k-header" rowspan="1" colspan="1" aria-colindex="2">
+                                            Price
+                                        </th>
+                                        <th aria-readonly="true" aria-selected="false" role="columnheader" class="k-header" rowspan="1" colspan="1" aria-colindex="3">
+                                            Available
+                                        </th>
+                                        <th aria-readonly="true" aria-selected="false" role="columnheader" class="k-header" rowspan="1" colspan="1" aria-colindex="4">
+                                            Units
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <kendo-grid-list class="k-grid-container" role="presentation">
+                        <div class="k-grid-content k-virtual-content" role="presentation" tabindex="-1">
+                            <div role="presentation">
+                                <table class="k-grid-table" role="presentation" style="transform: translateY(0px);">
+                                    <colgroup role="presentation">
+                                        <col><col><col><col>
+                                    </colgroup>
+                                    <tbody role="presentation">
+                                        <tr data-kendo-grid-item-index="6" role="row" aria-rowindex="8">
+                                            <td aria-selected="false" role="gridcell" colspan="1" aria-colindex="1">
+                                                Chai
+                                            </td><td aria-selected="false" role="gridcell" colspan="1" aria-colindex="2">
+                                                30
+                                            </td><td aria-selected="false" role="gridcell" colspan="1" aria-colindex="3">
+                                                false
+                                            </td><td aria-selected="false" role="gridcell" colspan="1" aria-colindex="4">
+                                                15
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="k-height-container" role="presentation">
+                                <div style="height: 0px;"></div>
+                            </div>
+                        </div>
+                    </kendo-grid-list>
+                </div>
+            </kendo-grid>
+        </div>
+    </div>
+
+</body>
+</html>
