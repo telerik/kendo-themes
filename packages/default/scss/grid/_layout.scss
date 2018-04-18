@@ -40,7 +40,7 @@
     $grid-group-footer-second-cell-border: 1px !default;
     $grid-header-first-border: 1px !default;
     $grid-header-menu-icon-spacing: $icon-spacing !default;
-    $grid-sorted-icon-margin-left: calc( #{$padding-x} - 1px) !default;
+    $grid-sorted-icon-spacing: add-two($padding-x, -1px) !default;
 
     // helper variables
     $grid-filterable-icon-spacing: calc(#{ button-size() } + #{ $grid-header-menu-icon-spacing });
@@ -95,6 +95,7 @@
             padding: $grid-cell-padding-y $grid-cell-padding-x;
             border-style: solid;
             border-color: inherit;
+            border-width: 0 0 $grid-cell-horizontal-border-width $grid-cell-vertical-border-width;
             outline: 0;
             font-weight: inherit;
             text-align: inherit;
@@ -111,11 +112,9 @@
         }
         th {
             padding: $grid-header-cell-padding-y $grid-cell-padding-x;
-            border-width: 0 0 0 1px;
             white-space: nowrap;
         }
         td {
-            border-width: 0 0 $grid-cell-horizontal-border-width $grid-cell-vertical-border-width;
             vertical-align: middle;
         }
 
@@ -593,7 +592,7 @@
             &.k-i-sort-desc-sm,
             &.k-i-sort-asc-sm {
                 vertical-align: text-top;
-                margin-left: $grid-sorted-icon-margin-left;
+                margin-left: $grid-sorted-icon-spacing;
             }
         }
 

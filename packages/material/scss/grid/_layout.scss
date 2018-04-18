@@ -14,7 +14,7 @@ $grid-group-footer-border-y: 0 !default;
 $grid-group-footer-second-cell-border: 0 !default;
 $edit-cell-input-space: 0 !default;
 $grid-header-first-border: 0 !default;
-$grid-sorted-icon-margin-left: 8px !default;
+$grid-sorted-icon-spacing: 4px !default;
 $grid-header-menu-icon-spacing: 14px !default;
 $grid-grouping-header-padding-x: 14px !default;
 $grid-grouping-header-padding-y: 14px !default;
@@ -42,11 +42,6 @@ $grid-group-indicator-gap: 8px !default;
     }
 
     .k-grid-header {
-        th,
-        td {
-            border-width: 0 0 1px;
-        }
-
         th {
             font-weight: 700;
         }
@@ -60,18 +55,13 @@ $grid-group-indicator-gap: 8px !default;
         }
 
         .k-filter-row {
-            .k-header.k-dropdown-operator .k-dropdown-wrap {
+            .k-dropdown-operator .k-dropdown-wrap {
                 border-width: 0;
             }
 
             .k-button.k-button-icon {
                 box-shadow: none;
             }
-        }
-
-        .k-header .k-link>.k-icon.k-i-sort-asc-sm,
-        .k-header .k-link>.k-icon.k-i-sort-desc-sm {
-            margin-right: 4px;
         }
 
         .k-header-column-menu {
@@ -95,14 +85,6 @@ $grid-group-indicator-gap: 8px !default;
         .k-group-indicator {
             border-width: 0;
         }
-    }
-
-    .k-grid-drag-clue {
-        padding: $padding-y $padding-x !important; // sass-lint:disable-line no-important
-        width: auto !important; // sass-lint:disable-line no-important
-        border-width: 0 !important; // sass-lint:disable-line no-important
-        line-height: 2 !important; // sass-lint:disable-line no-important
-        font-size: $font-size;
     }
 
     .k-grouping-dropclue {
