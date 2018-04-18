@@ -133,9 +133,6 @@
 
         <div class="section">
             <kendo-grid height="500" dir="ltr" class="k-widget k-grid k-grid-no-scrollbar" style="">
-                <kendo-grid-toolbar class="k-header k-grid-toolbar">
-                    <button class="k-button k-grid-add-command" dir="ltr">Add new</button>
-                </kendo-grid-toolbar>
                 <kendo-grid-group-panel class="k-grouping-header k-grouping-header-flex">
                     <div class="k-indicator-container">
                         <div class="k-group-indicator">
@@ -240,20 +237,61 @@
         </div>
 
         <div class="section">
-            <div class="k-grouping-header" data-role="droptarget">
-                <div class="k-group-indicator">
-                    <a href="#" class="k-link">
-                        <span class="k-icon k-i-sort-asc-sm" title="(sorted ascending)"></span>
-                        Contact Name
-                    </a>
-                    <a class="k-button k-button-icon k-bare"><span class="k-icon k-i-close"></span></a>
+            <div id="grid" data-role="grid" class="k-grid k-grid-no-scrollbar k-widget k-display-block" style="height: 250px;">
+                <div class="k-grouping-header" data-role="droptarget">
+                    <div class="k-group-indicator">
+                        <a href="#" class="k-link">
+                            <span class="k-icon k-i-sort-asc-sm" title="(sorted ascending)"></span>
+                            Price
+                        </a>
+                        <a class="k-button k-button-icon k-bare"><span class="k-icon k-i-close"></span></a>
+                    </div>
+                    <div class="k-group-indicator">
+                        <a href="#" class="k-link">
+                            <span class="k-icon k-i-sort-desc-sm" title="(sorted descending)"></span>
+                            Name
+                        </a>
+                        <a class="k-button k-button-icon k-bare"><span class="k-icon k-i-close"></span></a>
+                    </div>
                 </div>
-                <div class="k-group-indicator">
-                    <a href="#" class="k-link">
-                        <span class="k-icon k-i-sort-desc-sm" title="(sorted descending)"></span>
-                        Contact Title
-                    </a>
-                    <a class="k-button k-button-icon k-bare"><span class="k-icon k-i-close"></span></a>
+
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table role="grid">
+                            <colgroup>
+                                <col style="width:240px">
+                                <col>
+                                <col>
+                                <col style="width:150px">
+                            </colgroup>
+                            <thead role="rowgroup">
+                                <tr role="row">
+                                    <th scope="col" role="columnheader" aria-haspopup="true" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Name</a></th>
+                                    <th scope="col" role="columnheader" aria-haspopup="true" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Price</a></th>
+                                    <th scope="col" role="columnheader" aria-haspopup="true" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Available</a></th>
+                                    <th scope="col" role="columnheader" aria-haspopup="true" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Units</a></th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="k-grid-content k-auto-scrollable">
+                    <table role="grid" style="height: auto;">
+                        <colgroup>
+                            <col style="width:240px">
+                            <col>
+                            <col>
+                            <col style="width:150px">
+                        </colgroup>
+                        <tbody role="rowgroup">
+                            <tr role="row">
+                                <td class="" role="gridcell">Chai</td>
+                                <td class="" role="gridcell">30</td>
+                                <td class="" role="gridcell">false</td>
+                                <td class="" role="gridcell">15</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
