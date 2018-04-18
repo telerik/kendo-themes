@@ -9,12 +9,6 @@
         .k-loading-hidden {
             visibility: hidden;
         }
-
-        .k-i-loading,
-        .k-clear-value {
-            top: $input-padding-y;
-            margin-top: 0;
-        }
     }
 
     .k-multiselect-wrap {
@@ -77,7 +71,8 @@
             padding-left: ($padding-x * 3);
             padding-right: 0;
 
-            li.k-button {
+            li.k-button,
+            .k-input {
                 float: right;
             }
 
@@ -99,11 +94,6 @@
                     margin-left: 0;
                     margin-right: $padding-x;
                 }
-            }
-
-            .k-i-loading {
-                left: $padding-x;
-                right: auto;
             }
         }
     }

@@ -30,6 +30,10 @@ $grouping-border: $border-color !default;
     .k-popup .k-list .k-item > .k-group::before {
         border-color: $grouping-header-bg $grouping-header-bg transparent transparent;
     }
+    .k-rtl.k-popup .k-list .k-item > .k-group::before,
+    [dir="rtl"] .k-popup .k-list .k-item > .k-group::before {
+        border-color: $grouping-header-bg transparent transparent $grouping-header-bg;
+    }
     .k-group-header+div > .k-list > .k-item.k-first::before {
         border-color: $grouping-border;
     }
