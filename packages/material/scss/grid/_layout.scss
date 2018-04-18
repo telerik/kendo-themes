@@ -16,15 +16,15 @@ $edit-cell-input-space: 0 !default;
 $grid-header-first-border: 0 !default;
 $grid-sorted-icon-margin-left: 8px !default;
 $grid-header-menu-icon-spacing: 14px !default;
+$grid-grouping-header-padding-x: 14px !default;
+$grid-grouping-header-padding-y: 14px !default;
+$grid-group-indicator-border-radius: add-two( $font-size, $button-padding-y) !default;
+$grid-group-indicator-gap: 8px !default;
 
 @import "~@progress/kendo-theme-default/scss/grid/layout";
 
 @include exports ('grid/layout/material') {
     $grid-header-font-size: 12px !default;
-    $grid-grouping-header-padding-x: 14px !default;
-    $grid-grouping-header-padding-y: 16px !default;
-    $grid-group-indicator-margin: 8px !default;
-    $grid-grouping-indicator-border-radius: add-two( $font-size, $button-padding-y) !default;
     $grouping-dropclue-height: add-two( 2 * $font-size, 2 * $padding-y) !default;
     $grouping-dropclue-margin-top: add-two( $grid-grouping-header-padding-x, (-1px)) !default;
 
@@ -92,12 +92,9 @@ $grid-header-menu-icon-spacing: 14px !default;
     }
 
     .k-grouping-header {
-        padding: $grid-grouping-header-padding-y $grid-grouping-header-padding-x;
 
         .k-group-indicator {
             border-width: 0;
-            border-radius: $grid-grouping-indicator-border-radius;
-            margin-right: $grid-group-indicator-margin;
         }
     }
 
@@ -106,7 +103,6 @@ $grid-header-menu-icon-spacing: 14px !default;
         width: auto !important; // sass-lint:disable-line no-important
         border-width: 0 !important; // sass-lint:disable-line no-important
         line-height: 2 !important; // sass-lint:disable-line no-important
-        border-radius: $grid-grouping-indicator-border-radius;
         font-size: $font-size;
     }
 

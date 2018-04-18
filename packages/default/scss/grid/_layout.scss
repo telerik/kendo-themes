@@ -29,6 +29,12 @@
     $grid-filter-cell-padding-x: $cell-padding !default;
     $grid-filter-cell-padding-y: $grid-cell-padding-y !default;
     $grid-filter-input-text-indent: $padding-x !default;
+
+    $grid-grouping-header-padding-x: $toolbar-padding-y !default;
+    $grid-grouping-header-padding-y: $toolbar-padding-y !default;
+    $grid-group-indicator-border-radius: $border-radius !default;
+    $grid-group-indicator-gap: $cell-padding-y !default;
+
     $grid-grouping-row-border-top: 1px !default;
     $grid-group-footer-border-y: 1px !default;
     $grid-group-footer-second-cell-border: 1px !default;
@@ -214,11 +220,11 @@
             }
             .k-group-indicator {
                 margin-right: 0;
-                margin-left: ( $cell-padding-y / 2 );
+                margin-left: ( $grid-group-indicator-gap / 2 );
             }
 
             .k-group-indicator + .k-group-indicator {
-                margin-right: ( $cell-padding-y / 2 );
+                margin-right: ( $grid-group-indicator-gap / 2 );
             }
 
             .k-grid-content-locked,
@@ -363,7 +369,7 @@
     // Grouping header
     .k-grouping-header {
         display: block;
-        padding: $cell-padding-y;
+        padding: $grid-grouping-header-padding-y $grid-grouping-header-padding-x;
         border-width: 0 0 1px;
         border-style: solid;
         border-color: inherit;
@@ -373,13 +379,13 @@
     .k-grouping-header-flex {
         display: flex;
         flex-shrink: 0;
+        // use item margin instead of padding, in order to position the reorder clue correctly
         padding: 0;
 
         > .k-indicator-container {
             display: inline-flex;
             margin: 0;
-            padding: $padding-y 0 $padding-y $padding-x;
-            line-height: 1.5 * $form-line-height-em;
+            padding: $grid-grouping-header-padding-y 0 $grid-grouping-header-padding-y $grid-grouping-header-padding-x;
 
             &:last-child {
                 flex-grow: 1;
@@ -389,7 +395,7 @@
 
     .k-group-indicator,
     .k-drag-clue {
-        @include border-radius();
+        @include border-radius( $grid-group-indicator-border-radius );
         margin: 0;
         padding: $button-padding-y $button-padding-x;
         border-width: 1px;
@@ -435,11 +441,11 @@
     }
 
     .k-group-indicator {
-        margin-right: ( $cell-padding-y / 2 );
+        margin-right: ( $grid-group-indicator-gap / 2 );
     }
 
     .k-group-indicator + .k-group-indicator {
-        margin-left: ( $cell-padding-y / 2 );
+        margin-left: ( $grid-group-indicator-gap / 2 );
     }
 
     .k-grouping-dropclue {
