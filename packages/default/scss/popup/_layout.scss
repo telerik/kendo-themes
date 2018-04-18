@@ -2,6 +2,7 @@ $popup-border-width: 1px !default;
 $popup-header-padding: $list-item-padding-y $list-item-padding-x !default;
 $popup-header-font-size: null !default;
 $popup-header-text: null !default;
+$popup-filter-padding-x: false !default;
 
 @include exports('popup/layout') {
 
@@ -22,14 +23,8 @@ $popup-header-text: null !default;
             outline: none;
         }
 
+        .k-rtl,
         [dir='rtl'] & {
-            .k-list-filter {
-                > .k-icon {
-                    left: $padding-x * 2;
-                    right: auto;
-                }
-            }
-
             .k-list-optionlabel {
                 text-align: right;
             }
@@ -154,6 +149,7 @@ $popup-header-text: null !default;
             // remove the !important declaration when https://github.com/telerik/kendo-ui-core/issues/2617 is fixed
             width: 100% !important; // sass-lint:disable-block no-important
             box-sizing: border-box;
+            padding-left: $popup-filter-padding-x;
             padding-right: add-two($icon-size, $padding-x);
         }
 
@@ -162,6 +158,21 @@ $popup-header-text: null !default;
             right: add-two($input-padding-x, $padding-x);
             top: 50%;
             transform: translateY(-50%);
+        }
+
+
+        .k-rtl &,
+        [dir='rtl'] & {
+
+            > .k-textbox {
+                padding-right: $popup-filter-padding-x;
+                padding-left: add-two($icon-size, $padding-x);
+            }
+            > .k-icon {
+                left: add-two($input-padding-x, $padding-x);
+                right: auto;
+            }
+
         }
     }
 
