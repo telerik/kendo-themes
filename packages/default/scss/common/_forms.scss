@@ -224,16 +224,16 @@ $forms-invalid-color: $error !default;
             border-width: 0;
             padding: 0;
             width: $spinner-width;
+            display: flex;
             flex-direction: column;
             align-items: stretch;
         }
 
         .k-link {
+            flex: 1 1 0;
             display: block;
-            height: button-inner-size(.5);
             overflow: hidden;
             position: relative;
-            width: 100%;
 
             .k-icon {
                 position: absolute;
