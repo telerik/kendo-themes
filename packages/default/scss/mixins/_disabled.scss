@@ -7,6 +7,12 @@
     pointer-events: none;
     box-shadow: none;
 }
+@mixin disabled-legacy-ie {
+    outline: none;
+    cursor: default;
+    opacity: $disabled-opacity;
+    box-shadow: none;
+}
 @include exports("placeholder/disabled") {
     %disabled {
         @if ( mixin-exists( disabled ) ) {

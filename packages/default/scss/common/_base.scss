@@ -121,9 +121,7 @@ $widget-border-width: 1px !default;
 @include exports( "common/disabled" ) {
 
     // Disabled state
-    .k-disabled,
     .k-state-disabled,
-    .k-widget:disabled,
     .k-widget[disabled] {
         @include disabled;
 
@@ -137,7 +135,6 @@ $widget-border-width: 1px !default;
 
         // Nested disabled
         [disabled],
-        .k-disabled,
         .k-state-disabled {
             opacity: 1;
             filter: grayscale(0);

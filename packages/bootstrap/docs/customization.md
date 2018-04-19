@@ -187,7 +187,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>$button-text</td>
 <td>
     
-    contrast-wcag( $button-bg )
+    contrast-wcag( $button-bg, $gray-900 )
 </td>
 <td>The text color of the buttons.
 </td>
@@ -223,7 +223,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>$button-hovered-text</td>
 <td>
     
-    contrast-wcag( $button-hovered-bg )
+    contrast-wcag( $button-hovered-bg, $gray-900 )
 </td>
 <td>The text color of hovered buttons.
 </td>
@@ -259,7 +259,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>$button-pressed-text</td>
 <td>
     
-    contrast-wcag( $button-pressed-bg )
+    contrast-wcag( $button-pressed-bg, $gray-900 )
 </td>
 <td>The text color of pressed buttons.
 </td>
