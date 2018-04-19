@@ -10,14 +10,11 @@ $close-icon-position-y: calc(#{$input-padding-x} + #{$button-padding-y} + #{$for
             }
         }
 
-        .k-select {
-            padding: 0;
-            width: button-inner-size();
-            border-width: 0;
-        }
-
         .k-i-loading {
+            position: relative;
             right: auto;
+            bottom: auto;
+            margin: 0;
         }
 
         &[dir='rtl'],
