@@ -39,6 +39,11 @@ $grid-group-indicator-gap: 8px !default;
                 font-size: $font-size;
             }
         }
+
+        .k-button,
+        .k-button:active {
+            box-shadow: none;
+        }
     }
 
     .k-grid-header {
