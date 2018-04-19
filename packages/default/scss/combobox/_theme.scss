@@ -16,6 +16,9 @@
 
         .k-select {
             @include appearance( button );
+            padding: 0;
+            width: button-inner-size();
+            border-width: 0;
         }
 
         // Hovered state
