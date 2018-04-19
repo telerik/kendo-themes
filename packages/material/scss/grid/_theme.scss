@@ -21,6 +21,8 @@ $grid-filter-cell-padding-y: $grid-cell-padding-y !default;
     $grid-edit-cell-shadow: 0 0 5px 3px rgba(0, 0, 0, .12) !default;
     $grid-locked-column-shadow: inset 18px 0 5px -15px rgba(0, 0, 0, .14) !default;
 
+    $text-field-bg: rgba(0, 0, 0, .07) !default;
+
     .k-grid {
         color: $grid-text;
 
@@ -112,16 +114,16 @@ $grid-filter-cell-padding-y: $grid-cell-padding-y !default;
         }
     }
 
-    // WIP: Material text field styles
     .k-grid-edit-row > td {
-        $text-field-radius: 3px;
-        $text-field-padding: 16px;
+        $text-field-border-width: 2px;
+        $text-field-radius: $text-field-border-width + 1px;
+        $text-field-padding: (2 * $grid-cell-padding-x / 3);
 
         > .k-textbox,
         > .k-input.k-textbox,
         > .k-textarea,
         > .k-widget {
-            background-color: rgba(0, 0, 0, .07);
+            background-color: $text-field-bg;
             border-radius: $text-field-radius;
             margin-left: -$text-field-padding;
             margin-right: -$text-field-padding;
@@ -137,7 +139,7 @@ $grid-filter-cell-padding-y: $grid-cell-padding-y !default;
         > .k-numerictextbox > .k-numeric-wrap {
             font-size: $font-size;
             border-radius: $text-field-radius;
-            border-width: 0 0 2px;
+            border-width: 0 0 $text-field-border-width;
             padding-left: $text-field-padding;
             padding-right: $text-field-padding;
         }
