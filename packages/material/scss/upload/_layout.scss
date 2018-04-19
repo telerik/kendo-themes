@@ -1,1 +1,50 @@
+$upload-padding: 14px !default;
+$upload-button-margin: $upload-padding !default;
+$upload-status-spacing: $padding-y $padding-x-sm $padding-y 0 !default;
+$upload-dropzone-status-icon-spacing: $padding-y * 2 !default;
+
 @import "~@progress/kendo-theme-default/scss/upload/layout";
+
+@include exports('upload/layout/material') {
+    .k-upload {
+        .k-upload-files {
+            .k-file {
+                padding: $upload-padding $padding-x-lg;
+                line-height: 1.4;
+                .k-file-name {
+                    margin-top: 0;
+                }
+            }
+
+            .k-file-extension-wrapper,
+            .k-file-invalid-extension-wrapper,
+            .k-upload-status {
+                top: $padding-x-lg / 2;
+            }
+
+            .k-upload-status {
+                .k-icon {
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                    line-height: 1.4;
+                    font-size: $padding-x-lg;
+                }
+            }
+        }
+
+        > .k-action-buttons {
+            padding: $padding-x-sm $upload-padding;
+        }
+
+        .k-clear-selected,
+        .k-upload-selected {
+            padding: 0 $padding-x-sm;
+            width: auto;
+        }
+
+        .k-progress {
+            height: 3px;
+        }
+    }
+}

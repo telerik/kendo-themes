@@ -3,9 +3,11 @@
     $uploaded-image-width: 24px !default;
     $uploaded-image-height: 34px !default;
     $uploaded-image-border: 2px !default;
+    $uploaded-file-spacing: $cell-padding !default;
 
+    $upload-button-margin: $toolbar-padding-x !default;
     $upload-dropzone-status-icon-spacing: $padding-x-lg / 2 !default;
-    $upload-status-spacing: $padding-y !default;
+    $upload-status-spacing: $button-padding-y $button-padding-x !default;
     $upload-file-name-spacing: $padding-y !default;
     $upload-invalid-icon-spacing: $padding-x-sm !default;
 
@@ -16,7 +18,7 @@
     .k-upload {
         .k-upload-button {
             min-width: 7em;
-            margin: $toolbar-padding-x;
+            margin: $upload-button-margin;
         }
 
         // Drop zone
@@ -26,8 +28,6 @@
             position: relative;
             border-width: 0;
             background-color: transparent;
-
-            em, // BACKCOMPAT: ensures backwards compatibility for KendoUI jQuery, remove when rendering changes
             .k-dropzone-hint {
                 margin-left: $spacer-x;
                 flex: 1;
@@ -46,7 +46,7 @@
                 display: flex;
                 align-items: center;
                 position: relative;
-                padding: $button-padding-y $button-padding-x;
+                padding: $upload-status-spacing;
                 font-size: $font-size;
                 font-weight: normal;
                 line-height: $form-line-height;
@@ -57,7 +57,6 @@
             }
 
             &.k-dropzone-active {
-                em, // BACKCOMPAT: ensures backwards compatibility for KendoUI jQuery, remove when rendering changes
                 .k-dropzone-hint {
                     display: block;
                     visibility: visible;
@@ -85,7 +84,7 @@
             }
 
             .k-file {
-                padding: $cell-padding;
+                padding: $uploaded-file-spacing;
                 border-width: 0 0 1px;
                 border-style: solid;
                 border-color: inherit;
@@ -112,8 +111,8 @@
 
             .k-upload-status {
                 position: absolute;
-                right: $cell-padding;
-                top: $cell-padding;
+                right: $uploaded-file-spacing;
+                top: $uploaded-file-spacing;
 
                 .k-button {
                     padding: 0;
@@ -172,7 +171,7 @@
             .k-file-invalid-extension-wrapper,
             .k-multiple-files-invalid-extension-wrapper {
                 position: absolute;
-                top: $cell-padding;
+                top: $uploaded-file-spacing;
                 width: $uploaded-image-width;
                 height: $uploaded-image-height;
                 border-width: $uploaded-image-border;
@@ -252,7 +251,7 @@
             }
 
             .k-file-extension {
-                margin-left: .4em;
+                margin-left: .2em;
                 margin-bottom: .3em;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -261,7 +260,7 @@
             }
 
             .k-upload-action {
-                margin-left: $cell-padding;
+                margin-left: $uploaded-file-spacing;
             }
         }
 
@@ -309,7 +308,7 @@
             .k-upload-files {
                 .k-upload-status {
                     right: auto;
-                    left: $cell-padding;
+                    left: $uploaded-file-spacing;
                 }
 
                 ~.k-upload-selected {
@@ -327,7 +326,7 @@
 
             .k-file-name-size-wrapper {
                 margin-right: calc(#{$uploaded-image-width} + #{$spacer-x});
-                margin-left: calc(#{$icon-size} + #{$cell-padding});
+                margin-left: calc(#{$icon-size} + #{$uploaded-file-spacing});
             }
 
             .k-file-extension {
@@ -339,7 +338,7 @@
 
             .k-upload-action {
                 margin-left: 0;
-                margin-right: $cell-padding;
+                margin-right: $uploaded-file-spacing;
             }
         }
     }
