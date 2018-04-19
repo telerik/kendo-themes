@@ -1,21 +1,30 @@
+// Button inner size should be calculated with the widget font-size instead of the icon-size
+$close-icon-position-y: calc(#{$input-padding-x} + #{$button-padding-y} + #{$form-line-height * $font-size}); // $input-padding-x + button-inner-size()
+
 @include exports("combobox/layout") {
 
     .k-combobox {
         .k-dropdown-wrap {
             > .k-i-close {
-                right: calc(#{$icon-size} + #{$padding-y-lg * 3});
+                right: $close-icon-position-y;
             }
         }
 
-        .k-input {}
+        .k-select {
+            padding: 0;
+            width: button-inner-size();
+            border-width: 0;
+        }
 
-        .k-select {}
+        .k-i-loading {
+            right: auto;
+        }
 
         &[dir='rtl'],
         .k-rtl & {
             > .k-dropdown-wrap {
                 > .k-i-close {
-                    left: calc(#{$icon-size} + #{$padding-y-lg * 3});
+                    left: $close-icon-position-y;
                     right: auto;
                 }
             }

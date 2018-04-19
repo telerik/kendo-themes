@@ -15,6 +15,11 @@
             width: 12.4em;
             display: inline-block;
         }
+
+        .k-widget .k-clear-value,
+        .k-i-loading {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -29,10 +34,10 @@
         </div>
 
         <div class="section">
-            <span class="k-widget k-autocomplete"><input type="text" class="k-input" value="Normal" /></span>
-            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Normal" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <span class="k-widget k-autocomplete"><input type="text" class="k-input" value="Normal" /><span unselectable="on" class="k-icon k-clear-value k-i-close"></span></span>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Normal" /><span unselectable="on" class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
             <span class="k-widget k-dropdown"><span class="k-dropdown-wrap"><span class="k-input">Normal</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
-            <div class="k-widget k-multiselect"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button"><span>Normal</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;"/></div></span></div>
+            <div class="k-widget k-multiselect"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button"><span>Normal</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;"/><span unselectable="on" class="k-icon k-clear-value k-i-close"></span></div></span></div>
         </div>
 
         <div class="section">
@@ -75,6 +80,19 @@
             <span class="k-widget k-combobox ng-invalid ng-touched"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="NG invalid" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
             <span class="k-widget k-dropdown ng-invalid ng-touched"><span class="k-dropdown-wrap"><span class="k-input">NG invalid</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
             <div class="k-widget k-multiselect ng-invalid ng-touched"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button"><span>NG invalid</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;"/></div></span></div>
+        </div>
+
+        <div class="section loading-icon">
+            <span class="k-widget k-autocomplete"><input type="text" class="k-input" value="Normal" /><span class="k-icon k-i-loading"></span></span>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Normal" /><span class="k-select"><span class="k-icon k-i-arrow-60-down k-i-loading"></span></span></span></span>
+            <span class="k-widget k-dropdown"><span class="k-dropdown-wrap"><span class="k-input">Normal</span><span class="k-select"><span class="k-icon k-i-arrow-60-down k-i-loading"></span></span></span></span>
+            <div class="k-widget k-multiselect"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button"><span>Normal</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;"/><span class="k-icon k-i-loading"></span></div></span></div>
+        </div>
+
+        <div class="section">
+            <!-- multirows multiselect -->
+            <div class="k-widget k-multiselect"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button"><span>Token 1</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li><li class="k-button"><span>Token 2</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;" /><span unselectable="on" class="k-icon k-clear-value k-i-close"></span></div></div>
+            <div class="k-widget k-multiselect"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button"><span>Token 1</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li><li class="k-button"><span>Token 2</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;" /><span class="k-icon k-i-loading"></span></div></div>
         </div>
 
         <div class="section">
