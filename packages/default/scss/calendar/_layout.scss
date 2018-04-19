@@ -24,6 +24,7 @@ $calendar-header-cell-padding-y: 8px !default;
     $calendar-other-month-opacity: $disabled-opacity !default;
     $calendar-century-view-line-height: 1.5 !default;
     $calendar-century-view-text-align: left !default;
+    $calendar-multi-view-gap: 1em !default;
 
     // Base
     .k-calendar {
@@ -339,6 +340,22 @@ $calendar-header-cell-padding-y: 8px !default;
                 line-height: $calendar-cell-size;
                 padding: 0;
             }
+
+            .k-range-start {
+                border-color: inherit;
+                border-radius: $calendar-cell-border-radius 0 0 $calendar-cell-border-radius;
+            }
+
+            .k-range-end {
+                border-color: inherit;
+                border-radius: 0 $calendar-cell-border-radius $calendar-cell-border-radius 0;
+            }
+
+            .k-range-start.k-range-end,
+            .k-range-mid {
+                border-color: inherit;
+                border-radius: 0;
+            }
         }
 
         &::after {
@@ -468,6 +485,21 @@ $calendar-header-cell-padding-y: 8px !default;
             box-sizing: border-box;
             border-width: 1px 0;
             border-style: solid;
+        }
+    }
+
+    .k-calendar.k-calendar-range {
+        .k-calendar-view {
+            width: auto;
+        }
+
+        table {
+            display: flex;
+            flex-direction: row;
+
+            > tbody {
+                padding: 0 $calendar-multi-view-gap;
+            }
         }
     }
 }
