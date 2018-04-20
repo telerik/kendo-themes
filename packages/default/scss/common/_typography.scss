@@ -1,0 +1,58 @@
+@include exports( "common/typography" ) {
+
+    .k-typography {
+        @include typography-font-shorthand(
+            font-size( body ),
+            line-height( body ),
+            font-weight( body ),
+            // handle html.k-typography with styles already present
+            if( font-family(body) == inherit, null, font-family( body ) ),
+            letter-spacing( body )
+        );
+
+        p {
+            margin: 0 0 $paragraph-margin-bottom;
+        }
+    }
+
+    // Headings
+    .k-h1 {
+        @include typography-styles( h1 );
+        margin: 0 0 $h1-margin-bottom;
+    }
+    .k-h2 {
+        @include typography-styles( h2 );
+        margin: 0 0 $h2-margin-bottom;
+    }
+    .k-h3 {
+        @include typography-styles( h3 );
+        margin: 0 0 $h3-margin-bottom;
+    }
+    .k-h4 {
+        @include typography-styles( h4 );
+        margin: 0 0 $h4-margin-bottom;
+    }
+    .k-h5 {
+        @include typography-styles( h5 );
+        margin: 0 0 $h5-margin-bottom;
+    }
+    .k-h6 {
+        @include typography-styles( h6 );
+        margin: 0 0 $h6-margin-bottom;
+    }
+
+    // Display
+    .k-display-1 {
+        @include typography-styles( display-1 );
+    }
+    .k-display-2 {
+        @include typography-styles( display-2 );
+    }
+    .k-display-3 {
+        @include typography-styles( display-3 );
+    }
+    .k-display-4 {
+        @include typography-styles( display-4 );
+    }
+
+}

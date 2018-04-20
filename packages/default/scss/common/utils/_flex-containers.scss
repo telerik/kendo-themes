@@ -1,0 +1,22 @@
+@include exports( "common/utils/flex-containers" ) {
+
+    // Horizonatal and vertical boxes
+    .k-hbox, .k-vbox    { display: flex; } // sass-lint:disable-line single-line-per-selector
+    .k-ihbox, .k-ivbox  { display: inline-flex; } // sass-lint:disable-line single-line-per-selector
+
+    .k-hbox, .k-ihbox   { flex-direction: row; } // sass-lint:disable-line single-line-per-selector
+    .k-vbox, .k-ivbox   { flex-direction: column; } // sass-lint:disable-line single-line-per-selector
+
+
+    // Columns
+    .k-column {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+
+    // Aliases
+    .k-rowset { @extend .k-vbox; }
+    .k-columnset { @extend .k-hbox; }
+
+}

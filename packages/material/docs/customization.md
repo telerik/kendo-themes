@@ -42,39 +42,12 @@ The following table lists the available variables for customizing the Material t
 <th>Description</th>
 </tr>
 <tr>
-<td>$font-size</td>
-<td>
-    
-    14px
-</td>
-<td>Base font size across all components.
-</td>
-</tr>
-<tr>
-<td>$font-family</td>
-<td>
-    
-    Roboto, "Helvetica Neue", sans-serif
-</td>
-<td>Font family across all components.
-</td>
-</tr>
-<tr>
 <td>$font-family-monospace</td>
 <td>
     
     Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace
 </td>
 <td>Font family for monospaced text. Used for styling the code.
-</td>
-</tr>
-<tr>
-<td>$line-height</td>
-<td>
-    
-    (28 / 14)
-</td>
-<td>Line height used along with $font-size.
 </td>
 </tr>
 <tr>
@@ -479,6 +452,115 @@ Used to provide contrast between the background and foreground colors.
     rgba(0, 0, 0, .04)
 </td>
 <td>The color of the Chart grid lines (minor).
+</td>
+</tr>
+</table>
+
+
+### Fonts
+
+<table class="theme-variables">
+<colgroup>
+<col style="white-space:nowrap; width: 200px" />
+<col style="width: 250px" />
+<col />
+</colgroup>
+<tr>
+<th>Name</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>$font-size</td>
+<td>
+    
+    14px
+</td>
+<td>Base font size across all components.
+</td>
+</tr>
+<tr>
+<td>$font-family</td>
+<td>
+    
+    Roboto, "Helvetica Neue", sans-serif
+</td>
+<td>Font family across all components.
+</td>
+</tr>
+<tr>
+<td>$line-height</td>
+<td>
+    
+    (28 / 14)
+</td>
+<td>Line height used along with $font-size.
+</td>
+</tr>
+</table>
+
+
+### Shadows
+
+<table class="theme-variables">
+<colgroup>
+<col style="white-space:nowrap; width: 200px" />
+<col style="width: 250px" />
+<col />
+</colgroup>
+<tr>
+<th>Name</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>$box-shadow-depth-1</td>
+<td>
+    
+    0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12)
+</td>
+<td>Shadow for switch.<br/>
+Equivalent to material elevation 1.
+</td>
+</tr>
+<tr>
+<td>$box-shadow-depth-2</td>
+<td>
+    
+    0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+</td>
+<td>Shadow for resting state of button, card and other widgets.<br/>
+Equivalent to material elevation 2.
+</td>
+</tr>
+<tr>
+<td>$box-shadow-depth-3</td>
+<td>
+    
+    0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12)
+</td>
+<td>Shadow for menu, popups and raised state of button and card.<br/>
+Equivalent to material elevation 8.
+</td>
+</tr>
+<tr>
+<td>$box-shadow-depth-4</td>
+<td>
+    
+    0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12)
+</td>
+<td>Shadow for drawers and other overlaying elements.<br/>
+Equivalent to material elevation 16.
+</td>
+</tr>
+<tr>
+<td>$box-shadow-depth-5</td>
+<td>
+    
+    0 11px 15px -7px rgba(0, 0, 0, .2), 0 24px 38px 3px rgba(0, 0, 0, .14), 0 9px 46px 8px rgba(0, 0, 0, .12)
+</td>
+<td>Shadow for window and dialog.<br/>
+Equivalent to material elevation 24.
 </td>
 </tr>
 </table>

@@ -1,0 +1,10 @@
+@mixin _prop($name, $value: null) {
+    @if $value {
+        #{$name}: $value;
+    }
+}
+@mixin _props($props...) {
+    @each $prop in $props {
+        @include _prop( nth($prop, 1), nth($prop, 2) );
+    }
+}

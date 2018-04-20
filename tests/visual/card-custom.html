@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Card custom layout</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            display: grid;
+            grid-gap: 1em 1em;
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 1024px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area">
+
+        <div class="k-card">
+            <div class="k-columnset k-flex-auto">
+                <div class="k-card-body">
+                    <h5 class="k-card-title">Card Title</h5>
+                    <h6 class="k-card-subtitle">Card Subtitle</h6>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <hr class="k-hr" />
+                <div class="k-card-actions k-card-actions-vertical">
+                    <span class="k-card-action"><span class="k-button k-flat k-primary">Action 1</span></span>
+                    <span class="k-card-action"><span class="k-button k-flat k-primary">Action 2</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="k-card">
+            <div class="k-columnset k-flex-auto">
+                <img class="k-card-image" src="http://via.placeholder.com/80x80" />
+                <div class="k-rowset k-column">
+                    <div class="k-card-body">
+                        <h5 class="k-card-title">Card Title</h5>
+                        <h6 class="k-card-subtitle">Card Subtitle</h6>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <hr class="k-hr" />
+                    <div class="k-card-actions k-card-actions-stretched">
+                        <span class="k-card-action"><span class="k-button k-flat k-primary">Action 1</span></span>
+                        <span class="k-card-action"><span class="k-button k-flat k-primary">Action 2</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="k-card">
+            <div class="k-columnset k-flex-auto">
+                <span class="k-card-image">
+                    <img src="http://via.placeholder.com/80x80" />
+                </span>
+                <hr class="k-hr" />
+                <div class="k-rowset k-column">
+                    <div class="k-card-body">
+                        <h5 class="k-card-title">Card Title</h5>
+                        <h6 class="k-card-subtitle">Card Subtitle</h6>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <hr class="k-hr" />
+                    <div class="k-card-actions k-card-actions-stretched">
+                        <span class="k-card-action"><span class="k-button k-flat k-primary">Action 1</span></span>
+                        <span class="k-card-action"><span class="k-button k-flat k-primary">Action 2</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="k-card">
+            <div class="k-card-body k-text-center">
+                <h5 class="k-card-title">Sofia</h5>
+                <div class="k-display-1">☀️</div>
+                <h6 class="k-card-subtitle">Sunny</h6>
+                <div class="k-display-2">2&deg;C</div>
+            </div>
+            <div class="k-card-actions k-card-actions-stretched">
+                <span class="k-card-action"><span class="k-button k-flat k-primary">Action 1</span></span>
+                <span class="k-card-action"><span class="k-button k-flat k-primary">Action 2</span></span>
+            </div>
+        </div>
+
+        <div class="k-card">
+            <div class="k-card-body">
+                <h5 class="k-card-title">Passenger</h5>
+                <h5 class="k-card-subtitle">GP, Gosho</h5>
+            </div>
+            <hr class="k-hr" />
+            <div class="k-card-body">
+                <div class="k-columnset">
+                    <div class="k-column k-text-left">Departure</div>
+                    <div class="k-column k-text-right">Arrival</div>
+                </div>
+                <div class="k-columnset">
+                    <div class="k-column k-text-left">
+                        <div class="k-display-4">SOF</div>
+                        <div>
+                            6 Dec 2017<br />
+                            10:30
+                        </div>
+                    </div>
+                    <div class="k-column k-display-4 k-text-center">
+                        ✈️
+                    </div>
+                    <div class="k-column k-text-right">
+                        <div class="k-display-4">LON</div>
+                        <div>
+                            6 Dec 2017<br />
+                            12:30
+                        </div>
+                    </div>
+                </div>
+                <hr class="k-hr" />
+                <div class="k-columnset">
+                    <div class="k-column k-text-left">
+                        <div class="k-display-4">LON</div>
+                        <div>
+                            12 Dec 2017<br />
+                            18:30
+                        </div>
+                    </div>
+                    <div class="k-column k-display-4 k-text-center">
+                        ✈️
+                    </div>
+                    <div class="k-column k-text-right">
+                        <div class="k-display-4">SOF</div>
+                        <div>
+                            12 Dec 2017<br />
+                            22:30
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="k-hr" />
+            <div class="k-card-body">
+                <div class="k-columnset">
+                    <div class="k-column k-text-left">Total</div>
+                    <div class="k-column k-text-right">BGN 234</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

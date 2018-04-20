@@ -1,3 +1,4 @@
+@import "~@progress/kendo-theme-default/scss/mixins/core/config-maps";
 @import "~@progress/kendo-theme-default/scss/mixins/colors";
 
 
@@ -8,33 +9,92 @@ $enable-gradients: false !default;
 $enable-transitions: true !default;
 
 
+// Spacer
+$spacer: 1em !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+
+
+// Shadows
+
+/// Shadow for switch.
+/// Equivalent to material elevation 1.
+/// @group shadows
+$box-shadow-depth-1: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12) !default;
+/// Shadow for resting state of button, card and other widgets.
+/// Equivalent to material elevation 2.
+/// @group shadows
+$box-shadow-depth-2: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !default;
+/// Shadow for menu, popups and raised state of button and card.
+/// Equivalent to material elevation 8.
+/// @group shadows
+$box-shadow-depth-3: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12) !default;
+/// Shadow for drawers and other overlaying elements.
+/// Equivalent to material elevation 16.
+/// @group shadows
+$box-shadow-depth-4: 0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12) !default;
+/// Shadow for window and dialog.
+/// Equivalent to material elevation 24.
+/// @group shadows
+$box-shadow-depth-5: 0 11px 15px -7px rgba(0, 0, 0, .2), 0 24px 38px 3px rgba(0, 0, 0, .14), 0 9px 46px 8px rgba(0, 0, 0, .12) !default;
+
+
 // Fonts
 
 /// Base font size across all components.
+/// @group fonts
 $font-size: 14px !default;
+$font-size-xs: 10px !default;
+$font-size-sm: 12px !default;
+$font-size-lg: 16px !default;
 
 /// Font family across all components.
+/// @group fonts
 $font-family: Roboto, "Helvetica Neue", sans-serif !default;
 
 /// Font family for monospaced text. Used for styling the code.
 $font-family-monospace: Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
 
-$font-size-xs: 10px !default;
-$font-size-sm: 12px !default;
-$font-size-lg: 16px !default;
-
 /// Line height used along with $font-size.
+/// @group fonts
 $line-height: (28 / 14) !default;
 $line-height-sm: 1.2 !default;
 $line-height-lg: 1.5 !default;
 $line-height-em: $line-height * 1em;
 
 
-// Metrics
-$spacer: 1em !default;
-$spacer-x: $spacer !default;
-$spacer-y: $spacer !default;
+// Font weight
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 500 !default;
 
+
+// Headings
+$h1-font-size: 24px !default;
+$h2-font-size: 20px !default;
+$h3-font-size: 16px !default;
+$h4-font-size: 15px !default;
+$h5-font-size: ($font-size * .83) !default;
+$h6-font-size: ($font-size * .67) !default;
+
+// Display
+$display1-font-size: 112px !default;
+$display2-font-size: 56px !default;
+$display3-font-size: 45px !default;
+$display4-font-size: 34px !default;
+
+$h1-margin-bottom: 16px !default;
+$h2-margin-bottom: 16px !default;
+$h3-margin-bottom: 16px !default;
+$h4-margin-bottom: 16px !default;
+$h5-margin-bottom: 12px !default;
+$h6-margin-bottom: 12px !default;
+
+// Paragraph
+$paragraph-margin-bottom: 12px !default;
+
+
+// Metrics
 $padding-x: 16px !default;
 $padding-y: 4px !default;
 $padding-x-sm: $padding-x / 2 !default;
@@ -421,8 +481,66 @@ $icon-size: 24px;
 $icon-size-lg: 32px;
 $icon-spacing: 4px !default;
 
+// Disabled mixin variables
+$disabled-filter: grayscale(.1) !default;
+$disabled-opacity: .6 !default;
+
 // Pager
 $pager-padding-x: 8px !default;
 $pager-padding-y: 10px !default;
+
+
+// Card
+$card-padding-x: 16px !default;
+$card-padding-y: 16px !default;
+$card-border-width: 0 !default;
+$card-border-radius: 2px !default;
+$card-box-shadow: $box-shadow-depth-2 !default;
+
+$card-deck-gap: 16px !default;
+
+$card-bg: $panel-bg !default;
+$card-text: $panel-text !default;
+$card-border: $panel-border !default;
+
+$card-header-padding-x: $card-padding-x !default;
+$card-header-padding-y: $card-padding-y !default;
+$card-header-border-width: 0 !default;
+$card-header-bg: false !default;
+$card-header-text: false !default;
+$card-header-border: false !default;
+
+$card-body-padding-x: $card-padding-x !default;
+$card-body-padding-y: $card-padding-y !default;
+
+$card-title-margin-bottom: $h1-margin-bottom !default;
+$card-subtitle-margin-bottom: $paragraph-margin-bottom !default;
+
+$card-actions-padding-x: $card-padding-x !default;
+$card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
+$card-actions-border-width: 0 !default;
+
+
+// Config maps
+$typography-config: () !default;
+// sass-lint:disable indentation
+$typography-config: map-merge((
+    display-1: font-map($display1-font-size, 112px, $font-weight-light, $font-family, -.05em),
+    display-2: font-map($display2-font-size, 56px, $font-weight-normal, $font-family, -.02em),
+    display-3: font-map($display3-font-size, 48px, $font-weight-normal, $font-family, -.005em),
+    display-4: font-map($display4-font-size, 40px, $font-weight-normal, $font-family),
+    h1: font-map($h1-font-size, 32px, $font-weight-normal, $font-family),
+    h2: font-map($h2-font-size, 32px, $font-weight-bold, $font-family),
+    h3: font-map($h3-font-size, 28px, $font-weight-normal, $font-family),
+    h4: font-map($h4-font-size, 24px, $font-weight-normal, $font-family),
+    h5: font-map($h5-font-size, $line-height, $font-weight-normal, $font-family),
+    h6: font-map($h6-font-size, $line-height, $font-weight-normal, $font-family),
+    body: font-map($font-size, $line-height, $font-weight-normal, $font-family)
+), $typography-config);
+$typography-config: map-merge((
+    card-title: map-get($typography-config, h1),
+    card-subtitle: map-get($typography-config, body)
+), $typography-config);
+// sass-lint:enable indentation
 
 @import "~@progress/kendo-theme-default/scss/variables";

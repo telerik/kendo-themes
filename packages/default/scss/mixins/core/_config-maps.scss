@@ -1,0 +1,92 @@
+@function font-map(
+    $font-size: null,
+    $line-height: null,
+    $font-weight: null,
+    $font-family: null,
+    $letter-spacing: null
+) {
+    @return (
+        font-size: $font-size,
+        line-height: $line-height,
+        font-weight: $font-weight,
+        font-family: $font-family,
+        letter-spacing: $letter-spacing
+    );
+}
+
+@function layout-map(
+    $margin: null,
+    $gap: null
+) {
+    $_expanded: _expand-trbl-prop(margin, $margin);
+
+    @return map-merge((
+        margin: $margin,
+        gap: $gap
+    ), $_expanded);
+}
+
+@function config-prop($config, $name, $prop) {
+    $key: fn-#{$prop}-#{$name};
+
+    @if has-config-prop($config, $name, $prop) {
+        @return map-get( map-get($config, $name), $prop );
+    }
+
+    @warn NO_SUCH_KEY $key;
+    @return null;
+}
+@function has-config-prop($config, $name, $prop) {
+    @if map-has-key($config, $name) {
+        @if map-has-key( map-get($config, $name), $prop ) {
+            @return true;
+        }
+    }
+
+    @return false;
+}
+
+@function _expand-trbl-prop($type, $value) {
+    $ret: null;
+
+    @if $type == margin {
+
+        $len: length( $value );
+
+        @if $len == 1 {
+            $ret: (
+                #{$type}-top: nth($value, 1),
+                #{$type}-right: nth($value, 1),
+                #{$type}-bottom: nth($value, 1),
+                #{$type}-left: nth($value, 1)
+            );
+        }
+        @else if $len == 2 {
+            $ret: (
+                #{$type}-top: nth($value, 1),
+                #{$type}-right: nth($value, 2),
+                #{$type}-bottom: nth($value, 1),
+                #{$type}-left: nth($value, 2)
+            );
+        }
+        @else if $len == 3 {
+            $ret: (
+                #{$type}-top: nth($value, 1),
+                #{$type}-right: nth($value, 2),
+                #{$type}-bottom: nth($value, 3),
+                #{$type}-left: nth($value, 2)
+            );
+        }
+        @else if $len == 4 {
+            $ret: (
+                #{$type}-top: nth($value, 1),
+                #{$type}-right: nth($value, 2),
+                #{$type}-bottom: nth($value, 3),
+                #{$type}-left: nth($value, 4)
+            );
+
+        }
+    }
+
+    @return $ret;
+}

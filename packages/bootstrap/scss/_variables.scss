@@ -1,3 +1,4 @@
+@import "~@progress/kendo-theme-default/scss/mixins/core/config-maps";
 @import "~@progress/kendo-theme-default/scss/mixins/colors";
 @import "bootstrap-overrides";
 @import "~bootstrap/scss/functions";
@@ -59,11 +60,20 @@ $yiq-dark: $yiq-text-dark !default;
 $yiq-light: $yiq-text-light !default;
 
 
+// Spacing
+$spacer: $spacer !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+
+
 // Fonts
 
 /// Base font size across all components.
 /// @group fonts
 $font-size: $font-size-base !default;
+$font-size-xs: .75 * $font-size-base !default;
+$font-size-sm: $font-size-sm !default;
+$font-size-lg: $font-size-lg !default;
 
 /// Font family across all components.
 /// @group fonts
@@ -71,11 +81,7 @@ $font-family: $font-family-base !default;
 
 /// Font family for monospaced text. Used for styling the code.
 /// @group fonts
-$font-family-monospace:  $font-family-monospace !default;
-
-$font-size-xs: .75 * $font-size-base !default;
-$font-size-sm: $font-size-sm !default;
-$font-size-lg: $font-size-lg !default;
+$font-family-monospace: $font-family-monospace !default;
 
 /// Line height used along with $font-size.
 /// @group fonts
@@ -85,11 +91,38 @@ $line-height-lg: $line-height-lg !default;
 $line-height-em: $line-height * 1em;
 
 
-// Metrics
-$spacer: $spacer !default;
-$spacer-x: $spacer !default;
-$spacer-y: $spacer !default;
+// Font weight
+$font-weight-light: $font-weight-light !default;
+$font-weight-normal: $font-weight-normal !default;
+$font-weight-bold: $font-weight-bold !default;
 
+
+// Headings
+$h1-font-size: $h1-font-size !default;
+$h2-font-size: $h2-font-size !default;
+$h3-font-size: $h3-font-size !default;
+$h4-font-size: $h4-font-size !default;
+$h5-font-size: $h5-font-size !default;
+$h6-font-size: $h6-font-size !default;
+
+$h1-margin-bottom: $headings-margin-bottom !default;
+$h2-margin-bottom: $headings-margin-bottom !default;
+$h3-margin-bottom: $headings-margin-bottom !default;
+$h4-margin-bottom: $headings-margin-bottom !default;
+$h5-margin-bottom: $headings-margin-bottom !default;
+$h6-margin-bottom: $headings-margin-bottom !default;
+
+// Display
+$display1-font-size: $display1-size !default;
+$display2-font-size: $display2-size !default;
+$display3-font-size: $display3-size !default;
+$display4-font-size: $display4-size !default;
+
+// Paragraph
+$paragraph-margin-bottom: $paragraph-margin-bottom !default;
+
+
+// Metrics
 $padding-x: $spacer !default;
 $padding-y: $spacer / 2 !default;
 $padding-x-sm: $padding-x / 2 !default;
@@ -515,16 +548,72 @@ $chart-minor-lines: rgba(0, 0, 0, .04) !default;
 
 $chart-area-opacity: .8 !default;
 
-//Icons
+// Icons
 $icon-size: 16px;
 $icon-size-lg: 32px;
 $icon-spacing: ($spacer / 2) !default;
 
+// Disabled mixin variables
+$disabled-filter: grayscale(.1) !default;
 $disabled-opacity: .65 !default;
 
 // Pager
 $pager-padding-x: $toolbar-padding-x !default;
 $pager-padding-y: $toolbar-padding-y !default;
+
+
+// Card
+$card-padding-x: $card-spacer-x !default;
+$card-padding-y: $card-spacer-y !default;
+$card-border-width: 1px !default;
+$card-border-radius: $card-border-radius !default;
+$card-box-shadow: false !default;
+
+$card-deck-gap: $card-deck-margin !default;
+
+$card-bg: $card-bg !default;
+$card-text: $panel-text !default;
+$card-border: $card-border-color !default;
+
+$card-header-padding-x: $card-padding-x !default;
+$card-header-padding-y: $card-padding-y !default;
+$card-header-border-width: $card-border-width !default;
+$card-header-bg: $card-cap-bg !default;
+$card-header-text: $card-text !default;
+$card-header-border: $card-border-color !default;
+
+$card-body-padding-x: $card-padding-x !default;
+$card-body-padding-y: $card-padding-y !default;
+
+$card-title-margin-bottom: $h5-margin-bottom !default;
+$card-subtitle-margin-bottom: $h6-margin-bottom !default;
+
+$card-actions-padding-x: $card-padding-x !default;
+$card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
+$card-actions-border-width: 1px !default;
+
+
+// Config maps
+$typography-config: () !default;
+// sass-lint:disable indentation
+$typography-config: map-merge((
+    display-1: font-map($display1-font-size, $display-line-height, $display1-weight, inherit),
+    display-2: font-map($display2-font-size, $display-line-height, $display2-weight, inherit),
+    display-3: font-map($display3-font-size, $display-line-height, $display3-weight, inherit),
+    display-4: font-map($display4-font-size, $display-line-height, $display4-weight, inherit),
+    h1: font-map($h1-font-size, normal, $headings-font-family, $headings-font-family),
+    h2: font-map($h2-font-size, normal, $headings-font-family, $headings-font-family),
+    h3: font-map($h3-font-size, normal, $headings-font-family, $headings-font-family),
+    h4: font-map($h4-font-size, normal, $headings-font-family, $headings-font-family),
+    h5: font-map($h5-font-size, normal, $headings-font-family, $headings-font-family),
+    h6: font-map($h6-font-size, normal, $headings-font-family, $headings-font-family),
+    body: font-map($font-size-base, $line-height-base, $font-weight-base, $font-family-base)
+), $typography-config);
+$typography-config: map-merge((
+    card-title: map-get($typography-config, h5),
+    card-subtitle: map-get($typography-config, h6)
+), $typography-config);
+// sass-lint:enable indentation
 
 // import any default values from kendo-theme-default
 @import "~@progress/kendo-theme-default/scss/variables";
