@@ -1,4 +1,4 @@
-@include exports("input/theme/material") {
+@include exports("input/theme") {
     $floating-label-color: rgba(0, 0, 0, .38) !default;
 
     .k-textbox,
