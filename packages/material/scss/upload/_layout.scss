@@ -25,11 +25,7 @@ $upload-progress-thickness: 3px !default;
 
             .k-upload-status {
                 .k-icon {
-                    width: 2rem;
-                    height: 2rem;
-                    border-radius: 50%;
-                    line-height: 1.4;
-                    font-size: $padding-x-lg;
+                    font-size: ($icon-size * 1.5);
                 }
             }
         }
