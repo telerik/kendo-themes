@@ -320,10 +320,27 @@
                     <input type="file" autocomplete="off" tabindex="-1" name="files" multiple="multiple" dir="ltr">
                     <span>Select files...</span>
                   </div>
-                  <div class="k-dropzone-hint">Drop files here to upload</em>
+                  <div class="k-dropzone-hint">Drop files here to upload</div>
               </div>
             </kendo-upload>
         </div>
+
+        <div class="section">
+          <!--
+              Drag and drop file text in the dropzone, legacy drop hint rendering
+              https://github.com/telerik/kendo/issues/8240
+          -->
+          <kendo-upload dir="ltr" class="k-widget k-upload k-header">
+              <div class="k-dropzone k-dropzone-active">
+                  <div role="button" class="k-button k-upload-button" id="964cf316-9bb0-4974-b9c1-07c0754becc6" aria-label="Select files..." tabindex="0">
+                    <input type="file" autocomplete="off" tabindex="-1" name="files" multiple="multiple" dir="ltr">
+                    <span>Select files...</span>
+                  </div>
+                  <em>Drop files here to upload</em>
+              </div>
+            </kendo-upload>
+        </div>
+    </div>
     </div>
 
 </body>
