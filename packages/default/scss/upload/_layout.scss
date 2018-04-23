@@ -71,6 +71,11 @@
             }
         }
 
+        .k-upload-status-total {
+            margin-left: $uploaded-file-spacing;
+            margin-right: $uploaded-file-spacing;
+        }
+
         // Upload files list
         .k-upload-files {
             padding-bottom: $padding-y;
