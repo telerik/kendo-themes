@@ -35,4 +35,13 @@ $grouping-border: $grouping-header-bg !default;
 
         }
     }
+
+
+
+    .k-list-filter {
+
+        & > .k-textbox {
+            @include appearance( hovered-node );
+        }
+    }
 }

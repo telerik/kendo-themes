@@ -2,6 +2,7 @@ $popup-border-width: 0;
 $popup-header-padding: $padding-y-lg $padding-x-lg !default;
 $popup-header-font-size: $font-size-sm !default;
 $popup-header-text: rgba($base-text, .54) !default;
+$popup-filter-padding-x: $padding-x;
 
 @import "~@progress/kendo-theme-default/scss/popup/layout";
 
@@ -27,8 +28,15 @@ $popup-header-text: rgba($base-text, .54) !default;
     }
 
     .k-list-filter {
+        height: auto;
+
+        & > .k-textbox {
+            border-width: 0 0 2px;
+            @include border-radius( $border-radius-lg );
+        }
 
         & > .k-icon {
+            margin-top: -0.5em;
             transform: none;
         }
     }

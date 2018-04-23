@@ -71,14 +71,6 @@ $forms-invalid-color: inherit !default;
         height: 1.5em;
     }
 
-    .k-autocomplete,
-    .k-dropdown-wrap {
-        .k-clear-value,
-        .k-i-loading {
-            width: $padding-x-lg;
-        }
-    }
-
     .k-picker-wrap > .k-dateinput {
         width: 100%;
     }
