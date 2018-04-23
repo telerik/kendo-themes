@@ -11,6 +11,8 @@
     $upload-file-name-spacing: $padding-y !default;
     $upload-invalid-icon-spacing: $padding-x-sm !default;
 
+    $upload-progress-thickness: 2px !default;
+
     html .k-upload {
         position: relative;
     }
@@ -290,7 +292,7 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            height: 2px;
+            height: $upload-progress-thickness;
         }
 
         .k-file-invalid > .k-progress {

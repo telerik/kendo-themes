@@ -2,6 +2,7 @@ $upload-padding: 14px !default;
 $upload-button-margin: $upload-padding !default;
 $upload-status-spacing: $padding-y $padding-x-sm $padding-y 0 !default;
 $upload-dropzone-status-icon-spacing: $padding-y * 2 !default;
+$upload-progress-thickness: 3px !default;
 
 @import "~@progress/kendo-theme-default/scss/upload/layout";
 
@@ -41,10 +42,6 @@ $upload-dropzone-status-icon-spacing: $padding-y * 2 !default;
         .k-upload-selected {
             padding: 0 $padding-x-sm;
             width: auto;
-        }
-
-        .k-progress {
-            height: 3px;
         }
     }
 }
