@@ -44,13 +44,6 @@ $upload-success-text: $text-color !default;
             }
         }
 
-        .k-clear-selected,
-        .k-upload-selected {
-            &.k-state-focused {
-                box-shadow: none;
-            }
-        }
-
         .k-clear-selected {
             color: $upload-disabled-text;
 
