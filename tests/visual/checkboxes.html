@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Checkboxes</title>
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        .k-checkbox-label,
+        .k-radio-label {
+            margin-right: 13em;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area">
+
+        <div class="section">
+            <input class="k-checkbox" id="checkbox1" type="checkbox">
+            <label class="k-checkbox-label k-no-focus" for="checkbox1">Android</label>
+
+            <input checked="true" class="k-checkbox" id="checkbox2" type="checkbox">
+            <label class="k-checkbox-label k-no-focus" for="checkbox2">iOS</label>
+
+            <input checked="true" class="k-checkbox" disabled="true" id="checkbox3" type="checkbox">
+            <label class="k-checkbox-label" for="checkbox3">Windows Phone</label>
+        </div>
+
+        <div class="section">
+            <input class="k-radio" id="radio1" name="radios" type="radio">
+            <label class="k-radio-label k-no-focus" for="radio1">Android</label>
+
+            <input checked="true" class="k-radio" id="radio2" name="radios" type="radio">
+            <label class="k-radio-label" for="radio2">iOS</label>
+
+            <input checked="true" disabled="true" class="k-radio" id="radio2" name="radios" type="radio">
+            <label class="k-radio-label" for="radio3">Windows Phone</label>
+        </div>
+    </div>
+
+</body>
+</html>
+
