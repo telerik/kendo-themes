@@ -26,8 +26,6 @@ $upload-success-text: $text-color !default;
                 }
             }
 
-            .k-file-invalid-extension-wrapper,
-            .k-file-name-invalid,
             .k-file-validation-message {
                 color: $upload-error-text;
             }
