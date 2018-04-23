@@ -18,12 +18,8 @@ $upload-success-text: $text-color !default;
         }
 
         .k-upload-files {
-            .k-upload-action {
-                &:hover {
-                    &::before {
-                        opacity: 0;
-                    }
-                }
+            .k-upload-action:hover::before {
+                opacity: 0;
             }
 
             .k-file-validation-message {
