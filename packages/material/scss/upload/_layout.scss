@@ -31,11 +31,5 @@ $upload-file-name-spacing: 0 !default;
         > .k-action-buttons {
             padding: $padding-x-sm $upload-padding;
         }
-
-        .k-clear-selected,
-        .k-upload-selected {
-            padding: 0 $padding-x-sm;
-            width: auto;
-        }
     }
 }

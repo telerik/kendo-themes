@@ -276,22 +276,6 @@
             }
         }
 
-        // Upload and Clear buttons when autoUpload: false
-        .k-clear-selected,
-        .k-upload-selected {
-            display: inline-block;
-            width: 50%;
-            margin: 0;
-            line-height: $line-height;
-            padding: $spacer 0;
-        }
-
-        .k-upload-selected {
-            border-left-width: 1px;
-            border-left-style: solid;
-            margin-left: -1px;
-        }
-
         .k-action-buttons {
             margin: -$padding-y 0 0;
             padding: 0;
