@@ -1,6 +1,7 @@
 @include exports('action-buttons/theme') {
     .k-action-buttons {
         .k-button {
+            color: $action-button-text;
 
             &:hover {
                 background-color: $action-button-hovered-bg;
