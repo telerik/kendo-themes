@@ -26,12 +26,6 @@ $upload-success-text: $text-color !default;
                 color: $upload-error-text;
             }
 
-            .k-file-invalid-extension-wrapper {
-                .k-file-invalid-icon {
-                    margin-left: $padding-y;
-                }
-            }
-
             .k-delete {
                 &:hover,
                 &.k-state-hover {

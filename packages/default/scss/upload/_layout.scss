@@ -9,7 +9,6 @@
     $upload-dropzone-status-icon-spacing: $padding-x-lg / 2 !default;
     $upload-status-spacing: $button-padding-y $button-padding-x !default;
     $upload-file-name-spacing: $padding-y !default;
-    $upload-invalid-icon-spacing: $padding-x-sm !default;
 
     $upload-progress-thickness: 2px !default;
 
@@ -259,7 +258,7 @@
             }
 
             .k-file-invalid-icon {
-                margin-left: $upload-invalid-icon-spacing;
+                margin-left: 4px;
             }
 
             .k-file-extension {
