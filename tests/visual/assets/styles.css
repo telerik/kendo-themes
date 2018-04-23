@@ -16,3 +16,8 @@ body {
 .section {
     margin: 1em;
 }
+
+.k-i-loading:before,
+.k-i-loading:after {
+    animation: none;
+}
