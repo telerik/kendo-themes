@@ -34,10 +34,10 @@ $upload-error-text: $error !default;
         .k-file {
             background-color: $upload-files-bg;
             border-color: $upload-border;
+            outline: none;
 
             &.k-state-focused {
                 box-shadow: inset $upload-focused-shadow;
-                outline: none;
             }
 
             .k-upload-action {

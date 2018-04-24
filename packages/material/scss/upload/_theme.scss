@@ -14,7 +14,6 @@ $upload-success-text: $text-color !default;
         .k-dropzone-hint {
             color: $upload-disabled-text;
             font-style: normal;
-            margin-left: 0;
         }
 
         .k-upload-files {
@@ -38,17 +37,13 @@ $upload-success-text: $text-color !default;
             color: $upload-disabled-text;
 
             &:hover {
-                background: white;
+                background-color: transparent;
             }
 
             &.k-state-focused,
             &:active {
                 color: $upload-disabled-text;
             }
-        }
-
-        .k-upload-selected {
-            border-left-width: 0;
         }
     }
 }
