@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Switch</title>
+
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        body {
+            background: #EEEEEE;
+        }
+        .dark { background-color: #333; }
+        .light { background-color: #EEEEEE; }
+    </style>
+</head>
+<body>
+    <div id="test-area">
+
+        <div class="section">
+            <h2>Normal switch --state On</h2>
+            <kendo-switch dir="ltr" class="k-widget k-switch ng-valid k-switch-on" aria-checked="true">
+                <span class="k-switch-wrapper">
+                    <span class="k-switch-background"></span>
+                </span>
+                <span class="k-switch-container" id="819bf999-dd93-f739-ef02-e19fb6323932" tabindex="0">
+                    <span class="k-switch-handle" style="transform: translateX(30px); transition: all 200ms ease-out;">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                </span>
+                <kendo-resize-sensor>
+                    <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                        <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
+                    </div>
+                    <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                        <div style="position: absolute; left: 0; top: 0; transition: 0s;width: 200%; height: 200%;"></div>
+                    </div>
+                </kendo-resize-sensor>
+            </kendo-switch>
+        </div>
+
+        <div class="section">
+            <h2>Normal switch --state Off</h2>
+            <kendo-switch dir="ltr" class="k-widget k-switch ng-valid k-switch-off">
+                <span class="k-switch-wrapper">
+                    <span class="k-switch-background"></span>
+                </span>
+                <span class="k-switch-container" id="9fb2a045-fc52-2ad1-8fe9-4e6c8f5692fb" tabindex="0">
+                    <span class="k-switch-handle" style="transform: translateX(0px); transition: all 200ms ease-out;">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                    </span>
+                </span>
+                <kendo-resize-sensor>
+                    <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                        <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
+                    </div>
+                    <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                        <div style="position: absolute; left: 0; top: 0; transition: 0s;width: 200%; height: 200%;"></div>
+                    </div>
+                </kendo-resize-sensor>
+            </kendo-switch>
+        </div>
+
+        <div class="section">
+            <h2>Disabled switch --state On</h2>
+            <kendo-switch dir="ltr" aria-disabled="true" class="k-widget k-switch k-state-disabled k-switch-on" aria-checked="true">
+                <span class="k-switch-wrapper">
+                    <span class="k-switch-background"></span>
+                </span>
+                <span class="k-switch-container" id="3b3f14d4-7098-f087-45ed-9ffb195e081a">
+                    <span class="k-switch-handle" style="transform: translateX(30px); transition: none;">
+                        <span class="k-switch-label-on">ON</span>
+                        <span class="k-switch-label-off">OFF</span>
+                    </span>
+                </span>
+                <kendo-resize-sensor>
+                    <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                        <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
+                    </div>
+                    <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                        <div style="position: absolute; left: 0; top: 0; transition: 0s;width: 200%; height: 200%;"></div>
+                    </div>
+                </kendo-resize-sensor>
+            </kendo-switch>
+        </div>
+
+        <div class="section">
+            <h2>Disabled switch --state Off</h2>
+            <kendo-switch dir="ltr" aria-disabled="true" class="k-widget k-switch k-switch-off k-state-disabled">
+                <span class="k-switch-wrapper">
+                    <span class="k-switch-background"></span>
+                </span>
+                <span class="k-switch-container" kendodraggable="" id="813024b1-0a63-a92c-affc-24895eb6965a">
+                    <span class="k-switch-handle" style="transform: translateX(0px); transition: none;">
+                        <span class="k-switch-label-on">ON</span>
+                        <span class="k-switch-label-off">OFF</span>
+                    </span>
+                </span>
+            </kendo-switch>
+        </div>
+
+        <div class="section">
+            <h2>Readonly switch --state On</h2>
+            <kendo-switch dir="ltr" aria-readonly="true" class="k-widget k-switch ng-pristine ng-valid k-switch-on" aria-checked="true">
+                <span class="k-switch-wrapper">
+                    <span class="k-switch-background"></span>
+                </span>
+                <span class="k-switch-container" kendodraggable="" id="a85610fd-a64d-6596-aadd-43181af16ff9" tabindex="0">
+                    <span class="k-switch-handle" style="transform: translateX(30px); transition: none;">
+                        <span class="k-switch-label-on">ON</span>
+                        <span class="k-switch-label-off">OFF</span>
+                    </span>
+                </span>
+                <kendo-resize-sensor>
+                    <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                        <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
+                    </div>
+                    <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                        <div style="position: absolute; left: 0; top: 0; transition: 0s;width: 200%; height: 200%;"></div>
+                    </div>
+                </kendo-resize-sensor>
+            </kendo-switch>
+        </div>
+
+        <div class="section">
+            <h2>Readonly switch --state Off</h2>
+            <kendo-switch dir="ltr" aria-readonly="true" class="k-widget k-switch k-switch-off">
+                    <span class="k-switch-wrapper">
+                        <span class="k-switch-background"></span>
+                    </span>
+                    <span class="k-switch-container" kendodraggable="" id="6ceddc6b-9a57-9a71-51e8-9f8361c12aee" tabindex="0">
+                        <span class="k-switch-handle" style="transform: translateX(0px); transition: none;">
+                            <span class="k-switch-label-on">ON</span>
+                            <span class="k-switch-label-off" style="">OFF</span>
+                        </span>
+                    </span>
+                    <kendo-resize-sensor>
+                        <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                            <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
+                        </div>
+                        <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                            <div style="position: absolute; left: 0; top: 0; transition: 0s;width: 200%; height: 200%;"></div>
+                        </div>
+                    </kendo-resize-sensor>
+              </kendo-switch>
+        </div>
+    </div>
+</body>
+</html>
