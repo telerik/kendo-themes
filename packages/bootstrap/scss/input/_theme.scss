@@ -20,6 +20,7 @@
     // Input, Textbox, Textarea
     .k-input,
     .k-textbox,
+    .k-textarea,
     .k-input.k-textbox {
         @include appearance( "input" );
         transition: $transition;
