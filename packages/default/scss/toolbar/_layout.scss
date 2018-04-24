@@ -129,6 +129,7 @@ $toolbar-border-width: 1px !default;
             border-width: 0 0 0 1px;
             border-style: solid;
             align-self: stretch;
+            margin: 0 $toolbar-padding-y;
         }
     }
 
