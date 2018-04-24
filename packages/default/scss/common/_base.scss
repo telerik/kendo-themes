@@ -172,6 +172,7 @@ $widget-border-width: 1px !default;
 
     .k-separator {
         @extend .k-hr;
+        height: auto;
     }
 
 }

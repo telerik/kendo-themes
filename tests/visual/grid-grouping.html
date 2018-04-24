@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Grid Grouping</title>
+
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area">
+        <div class="section">
+            <kendo-grid class="k-widget k-grid k-grid-no-scrollbar" style="width: 480px;">
+                <kendo-grid-toolbar class="k-header k-grid-toolbar">
+                    <button class="k-button k-grid-add-command" dir="ltr">Add new</button>
+                </kendo-grid-toolbar>
+                <kendo-grid-group-panel class="k-grouping-header k-grouping-header-flex">
+                    <div class="k-indicator-container">
+                        Drag a column header and drop it here to group by that column
+                    </div>
+                </kendo-grid-group-panel>
+                <div class="k-grid-aria-root" role="grid" aria-rowcount="9" aria-colcount="4">
+                    <div class="k-grid-header" role="presentation" style="padding: 0px;">
+                        <div class="k-grid-header-wrap" role="presentation">
+                            <table role="presentation">
+                                <colgroup role="presentation">
+                                    <col><col><col><col>
+                                </colgroup>
+                                <thead role="presentation">
+                                    <tr role="row" aria-rowindex="1">
+                                        <th aria-readonly="true" aria-selected="false" role="columnheader" class="k-header" aria-colindex="1">
+                                            Name
+                                        </th>
+                                        <th aria-readonly="true" aria-selected="false" role="columnheader" class="k-header" aria-colindex="2">
+                                            Price
+                                        </th>
+                                        <th aria-readonly="true" aria-selected="false" role="columnheader" class="k-header" aria-colindex="3">
+                                            Available
+                                        </th>
+                                        <th aria-readonly="true" aria-selected="false" role="columnheader" class="k-header" aria-colindex="4">
+                                            Units
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <kendo-grid-list class="k-grid-container" role="presentation">
+                        <div class="k-grid-content k-virtual-content" role="presentation" tabindex="-1">
+                            <div role="presentation">
+                                <table class="k-grid-table" role="presentation" style="transform: translateY(0px);">
+                                    <colgroup role="presentation">
+                                        <col><col><col><col>
+                                    </colgroup>
+                                    <tbody role="presentation">
+                                        <tr role="row" aria-rowindex="8">
+                                            <td aria-selected="false" role="gridcell" colspan="1" aria-colindex="1">
+                                                Chai
+                                            </td><td aria-selected="false" role="gridcell" colspan="1" aria-colindex="2">
+                                                30
+                                            </td><td aria-selected="false" role="gridcell" colspan="1" aria-colindex="3">
+                                                false
+                                            </td><td aria-selected="false" role="gridcell" colspan="1" aria-colindex="4">
+                                                15
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="k-height-container" role="presentation">
+                                <div style="height: 0px;"></div>
+                            </div>
+                        </div>
+                    </kendo-grid-list>
+                </div>
+            </kendo-grid>
+        </div>
+
+        <div class="section">
+            <div id="grid" data-role="grid" class="k-grid k-grid-no-scrollbar k-widget k-display-block" style="height: 250px;">
+                <div class="k-header k-grid-toolbar">
+                    <a role="button" class="k-button k-button-icontext k-grid-add" href="#">Add new</a>
+                </div>
+                <div class="k-grouping-header" data-role="droptarget">Drag a column header and drop it here to group by that column</div>
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table role="grid">
+                            <colgroup>
+                                <col style="width:240px">
+                                <col>
+                                <col>
+                                <col style="width:150px">
+                            </colgroup>
+                            <thead role="rowgroup">
+                                <tr role="row">
+                                    <th scope="col" role="columnheader" aria-haspopup="true" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Name</a></th>
+                                    <th scope="col" role="columnheader" aria-haspopup="true" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Price</a></th>
+                                    <th scope="col" role="columnheader" aria-haspopup="true" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Available</a></th>
+                                    <th scope="col" role="columnheader" aria-haspopup="true" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Units</a></th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="k-grid-content k-auto-scrollable">
+                    <table role="grid" style="height: auto;">
+                        <colgroup>
+                            <col style="width:240px">
+                            <col>
+                            <col>
+                            <col style="width:150px">
+                        </colgroup>
+                        <tbody role="rowgroup">
+                            <tr role="row">
+                                <td class="" role="gridcell">Chai</td>
+                                <td class="" role="gridcell">30</td>
+                                <td class="" role="gridcell">false</td>
+                                <td class="" role="gridcell">15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <kendo-grid height="500" dir="ltr" class="k-widget k-grid k-grid-no-scrollbar" style="">
+                <kendo-grid-group-panel class="k-grouping-header k-grouping-header-flex">
+                    <div class="k-indicator-container">
+                        <div class="k-group-indicator">
+                            <a class="k-link" href="#" tabindex="-1">
+                                <span class="k-icon k-i-sort-asc-sm"></span>
+                                Price</a>
+                            <a class="k-button k-button-icon k-bare" tabindex="-1">
+                                <span class="k-icon k-i-group-delete"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="k-indicator-container">
+                        <div class="k-group-indicator">
+                            <a class="k-link" href="#" tabindex="-1">
+                                <span class="k-icon k-i-sort-desc-sm"></span>
+                                Name</a>
+                            <a class="k-button k-button-icon k-bare" tabindex="-1">
+                                <span class="k-icon k-i-group-delete"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="k-indicator-container">&nbsp;</div>
+                </kendo-grid-group-panel>
+                <div class="k-grid-aria-root" role="grid" aria-rowcount="9" aria-colcount="4">
+                    <div class="k-grid-header" role="presentation" style="padding: 0px;">
+                        <div class="k-grid-header-wrap" role="presentation">
+                            <table role="presentation">
+                                <colgroup role="presentation">
+                                    <col class="k-group-col">
+                                    <col><col><col><col>
+                                </colgroup>
+                                <thead role="presentation">
+                                    <tr role="row" aria-rowindex="1">
+                                        <th role="presentation" class="k-group-cell k-header">
+                                        </th>
+                                        <th aria-readonly="true" aria-selected="false" role="columnheader" class="k-header" aria-colindex="1" style="">
+                                            Name
+                                        </th>
+                                        <th aria-readonly="true" aria-selected="false" role="columnheader" class="k-header" aria-colindex="2" style="">
+                                            Price
+                                        </th>
+                                        <th aria-readonly="true" aria-selected="false" role="columnheader" class="k-header" aria-colindex="3">
+                                            Discontinued
+                                        </th>
+                                        <th aria-readonly="true" aria-selected="false" role="columnheader" class="k-header" aria-colindex="4" style="">
+                                            Units
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <kendo-grid-list class="k-grid-container" role="presentation">
+                        <div class="k-grid-content k-virtual-content" role="presentation" tabindex="-1">
+                            <div role="presentation">
+                                <table class="k-grid-table" role="presentation" style="transform: translateY(0px);">
+                                    <colgroup role="presentation">
+                                        <col class="k-group-col">
+                                        <col><col><col><col>
+                                    </colgroup>
+                                    <tbody role="presentation">
+                                        <tr role="row" aria-rowindex="4" class="k-grouping-row">
+                                            <td colspan="5" aria-colindex="1">
+                                                <p class="k-reset">
+                                                    <a href="#" tabindex="-1" class="k-i-expand k-icon">
+                                                    </a>
+                                                    Price: 19
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" aria-rowindex="14" class="k-grouping-row">
+                                            <td colspan="5" aria-colindex="1">
+                                                <p class="k-reset">
+                                                    <a href="#" tabindex="-1" class="k-i-collapse k-icon">
+                                                    </a>
+                                                    Price: 30
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" aria-rowindex="15">
+                                            <td role="presentation" class="k-group-cell"></td>
+                                            <td aria-selected="false" role="gridcell" colspan="1" aria-colindex="1">
+                                                Chai
+                                            </td><td aria-selected="false" role="gridcell" colspan="1" aria-colindex="2">
+                                                30
+                                            </td><td aria-selected="false" role="gridcell" colspan="1" aria-colindex="3">
+                                                false
+                                            </td><td aria-selected="false" role="gridcell" colspan="1" aria-colindex="4">
+                                                15
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="k-height-container" role="presentation">
+                                <div style="height: 0px;"></div>
+                            </div>
+                        </div>
+                    </kendo-grid-list>
+                </div>
+            </kendo-grid>
+        </div>
+
+        <div class="section">
+            <div id="grid" data-role="grid" class="k-grid k-grid-no-scrollbar k-widget k-display-block" style="height: 250px;">
+                <div class="k-grouping-header" data-role="droptarget">
+                    <div class="k-group-indicator">
+                        <a href="#" class="k-link">
+                            <span class="k-icon k-i-sort-asc-sm" title="(sorted ascending)"></span>
+                            Price
+                        </a>
+                        <a class="k-button k-button-icon k-bare"><span class="k-icon k-i-close"></span></a>
+                    </div>
+                    <div class="k-group-indicator">
+                        <a href="#" class="k-link">
+                            <span class="k-icon k-i-sort-desc-sm" title="(sorted descending)"></span>
+                            Name
+                        </a>
+                        <a class="k-button k-button-icon k-bare"><span class="k-icon k-i-close"></span></a>
+                    </div>
+                </div>
+
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table role="grid">
+                            <colgroup>
+                                <col style="width:240px">
+                                <col>
+                                <col>
+                                <col style="width:150px">
+                            </colgroup>
+                            <thead role="rowgroup">
+                                <tr role="row">
+                                    <th scope="col" role="columnheader" aria-haspopup="true" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Name</a></th>
+                                    <th scope="col" role="columnheader" aria-haspopup="true" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Price</a></th>
+                                    <th scope="col" role="columnheader" aria-haspopup="true" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Available</a></th>
+                                    <th scope="col" role="columnheader" aria-haspopup="true" class="k-header" data-role="columnsorter"><a class="k-link" href="#">Units</a></th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="k-grid-content k-auto-scrollable">
+                    <table role="grid" style="height: auto;">
+                        <colgroup>
+                            <col style="width:240px">
+                            <col>
+                            <col>
+                            <col style="width:150px">
+                        </colgroup>
+                        <tbody role="rowgroup">
+                            <tr role="row">
+                                <td class="" role="gridcell">Chai</td>
+                                <td class="" role="gridcell">30</td>
+                                <td class="" role="gridcell">false</td>
+                                <td class="" role="gridcell">15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="k-header k-drag-clue"><span class="k-icon k-drag-status k-i-plus"></span>Drag clue</div>
+        </div>
+
+        <div class="section" style="height: 80px; position: relative; border: 1px solid #eee;">
+            <div class="k-grouping-dropclue" style="display: block; height: 50px; top: 0; left: 0;"></div>
+        </div>
+    </div>
+
+</body>
+</html>
