@@ -17,6 +17,10 @@
     $tooltip-color: $accent-contrast !default;
     $tooltip-bg: $accent !default;
 
+    $grid-selected-cell-text: inherit !default;
+    $grid-selected-cell-bg: $grid-selected-bg !default;
+    $grid-sorting-indicator-text: $accent !default;
+
     .k-grid-header,
     .k-header,
     .k-grid-header-wrap,
@@ -86,8 +90,8 @@
 
         tr.k-state-selected,
         td.k-state-selected {
-            color: inherit;
-            background-color: $grid-selected-bg;
+            color: $grid-selected-cell-text;
+            background-color: $grid-selected-cell-bg;
         }
 
         td.k-state-focused,
@@ -155,7 +159,7 @@
         .k-i-sort-asc-sm,
         .k-i-sort-desc-sm,
         .k-sort-order {
-            color: $accent;
+            color: $grid-sorting-indicator-text;
         }
 
         .k-grid-filter {}

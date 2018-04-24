@@ -1,6 +1,6 @@
 $calendar-line-height: 1.25 !default;
 $calendar-cell-size: ( 34px / 14px ) * 1em !default;
-$calendar-cell-border-radius: ( $calendar-cell-size / 2 );
+$calendar-cell-border-radius: ( $calendar-cell-size / 2 ) !default;
 $calendar-header-height: 2em;
 $calendar-weekdays-height: ( 29px / 14px ) * 1em !default;
 $calendar-navigation-item-height: 2em;

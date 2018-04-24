@@ -99,7 +99,6 @@
     // Grouping header
     .k-grouping-header {
         @include fill( $grid-header-text, $grid-header-bg, $grid-header-border );
-        padding: $toolbar-padding-y;
     }
     .k-grouping-header .k-group-indicator {
         @include appearance( button );

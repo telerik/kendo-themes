@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Grid Editing</title>
+
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        .section {
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area">
+
+        <div class="section">
+            <kendo-grid class="k-widget k-grid k-grid-no-scrollbar">
+                <kendo-grid-toolbar class="k-header k-grid-toolbar">
+                    <button class="k-button k-grid-add-command">Add new</button>
+                    <button class="k-button" disabled="">Save Changes</button>
+                    <button class="k-button" disabled="">Cancel Changes</button>
+                </kendo-grid-toolbar>
+                <div class="k-grid-aria-root" role="grid" aria-rowcount="78" aria-colcount="5">
+                    <div class="k-grid-header" role="presentation" style="padding: 0px;">
+                        <div class="k-grid-header-wrap" role="presentation">
+                            <table role="presentation">
+                                <colgroup role="presentation">
+                                    <col><col><col><col style="width: 300px;">
+                                </colgroup>
+                                <thead role="presentation">
+                                    <tr role="row" aria-rowindex="1">
+                                        <th aria-readonly="true" aria-selected="false" kendodroptarget="" role="columnheader" tabindex="-1" class="k-header" rowspan="1" colspan="1" aria-colindex="1">
+                                            <a class="k-link" href="#" tabindex="-1">
+                                                Name
+                                                <span></span>
+                                            </a>
+                                        </th>
+                                        <th aria-readonly="true" aria-selected="false" kendodroptarget="" role="columnheader" tabindex="-1" class="k-header" rowspan="1" colspan="1" aria-colindex="2">
+                                            <a class="k-link" href="#" tabindex="-1">
+                                                Price
+                                                <span></span>
+                                            </a>
+                                        </th>
+                                        <th aria-readonly="true" aria-selected="false" kendodroptarget="" role="columnheader" tabindex="-1" class="k-header" rowspan="1" colspan="1" aria-colindex="3">
+                                            <a class="k-link" href="#" tabindex="-1">
+                                                Available
+                                                <span></span>
+                                            </a>
+                                        </th>
+                                        <th aria-readonly="true" aria-selected="false" kendodroptarget="" role="columnheader" tabindex="-1" class="k-header" rowspan="1" colspan="1" aria-colindex="5">
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <kendo-grid-list class="k-grid-container" role="presentation">
+                        <div class="k-grid-content k-virtual-content" role="presentation" tabindex="-1">
+                            <div role="presentation">
+                                <table class="k-grid-table" role="presentation" style="transform: translateY(0px);">
+                                    <colgroup role="presentation">
+                                        <col><col><col><col style="width: 300px;">
+                                    </colgroup>
+                                    <tbody role="presentation">
+                                        <tr class="k-grid-add-row k-grid-edit-row" role="row" aria-rowindex="2">
+                                            <td role="gridcell" tabindex="0" colspan="1" aria-colindex="1">
+                                                <input class="k-textbox ng-pristine ng-valid ng-untouched" type="text">
+                                            </td><td role="gridcell" tabindex="-1" colspan="1" aria-colindex="2">
+                                                <kendo-numerictextbox class="k-widget k-numerictextbox ng-untouched ng-pristine ng-valid">
+                                                    <span class="k-numeric-wrap">
+                                                        <input autocomplete="off" autocorrect="off" class="k-input k-formatted-value" role="spinbutton" id="780e22a2-44c8-24c6-52bf-cbf4c50f299f" aria-valuenow="0" title="" value="42">
+                                                        <span class="k-select">
+                                                            <span class="k-link k-link-increase" aria-label="Increase value" title="Increase value">
+                                                                <span class="k-icon k-i-arrow-n"></span>
+                                                            </span>
+                                                            <span class="k-link k-link-decrease" aria-label="Decrease value" title="Decrease value">
+                                                                <span class="k-icon k-i-arrow-s"></span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </kendo-numerictextbox>
+                                            </td><td role="gridcell" tabindex="-1" colspan="1" aria-colindex="3">
+                                                <input class="ng-untouched ng-pristine ng-valid" type="checkbox" value="">
+                                            </td><td role="gridcell" tabindex="-1" colspan="1" aria-colindex="5" class="k-command-cell">
+                                                <button class="k-button k-grid-remove-command" style="display: none;" tabindex="-1">Remove</button>
+                                                <button class="k-button k-grid-save-command" tabindex="-1">Add</button>
+                                                <button class="k-button k-grid-cancel-command" tabindex="-1">Cancel</button>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" aria-rowindex="3">
+                                            <td aria-selected="false" role="gridcell" tabindex="-1" colspan="1" aria-colindex="1">
+                                                Chai
+                                            </td><td aria-selected="false" role="gridcell" tabindex="-1" colspan="1" aria-colindex="2">
+                                                18
+                                            </td><td aria-selected="false" role="gridcell" tabindex="-1" colspan="1" aria-colindex="3">
+                                                false
+                                            </td><td aria-selected="false" role="gridcell" tabindex="-1" colspan="1" aria-colindex="5" class="k-command-cell">
+                                                <button class="k-button k-grid-remove-command" tabindex="-1">Remove</button>
+                                                <button class="k-button k-grid-save-command" style="display: none;" tabindex="-1">Add</button>
+                                                <button class="k-button k-grid-cancel-command" style="display: none;" tabindex="-1">Cancel</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-alt" role="row" aria-rowindex="4">
+                                            <td aria-selected="false" role="gridcell" tabindex="-1" colspan="1" aria-colindex="1">
+                                                Chang
+                                            </td><td aria-selected="false" role="gridcell" tabindex="-1" colspan="1" aria-colindex="2">
+                                                19
+                                            </td><td aria-selected="false" role="gridcell" tabindex="-1" colspan="1" aria-colindex="3">
+                                                false
+                                            </td><td aria-selected="false" role="gridcell" tabindex="-1" colspan="1" aria-colindex="5" class="k-command-cell">
+                                                <button class="k-button k-grid-remove-command" tabindex="-1">Remove</button>
+                                                <button class="k-button k-grid-save-command" style="display: none;" tabindex="-1">Add</button>
+                                                <button class="k-button k-grid-cancel-command" style="display: none;" tabindex="-1">Cancel</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="k-height-container" role="presentation">
+                                <div style=""></div>
+                            </div>
+                        </div>
+                    </kendo-grid-list>
+                </div>
+            </kendo-grid>
+        </div>
+
+        <div class="section">
+            <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-editable k-grid-no-scrollbar">
+                <div class="k-header k-grid-toolbar"><a role="button" class="k-button k-button-icontext k-grid-add" href="#"><span class="k-icon k-i-plus"></span>Add new record</a></div>
+                <div class="k-grid-header" style="padding-right: 0px;">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table role="grid">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col style="width:300px">
+                            </colgroup>
+                            <thead role="rowgroup">
+                                <tr role="row">
+                                    <th scope="col" role="columnheader" aria-haspopup="true" rowspan="1" id="9afd2a13-97ec-4be3-9875-277278eda78b" class="k-header">Name</th>
+                                    <th scope="col" role="columnheader" aria-haspopup="true" rowspan="1" id="8c9ff6b0-8071-455c-925d-8096833c9e63" class="k-header">Price</th>
+                                    <th scope="col" role="columnheader" aria-haspopup="true" rowspan="1" id="8e406e5a-b75e-4ade-9aff-317c288fb948" class="k-header">Available</th>
+                                    <th scope="col" id="cafe7924-043c-44b0-ad82-200d214233b8" rowspan="1" class="k-header">&nbsp;</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="k-grid-content k-auto-scrollable">
+                    <table role="grid" style="height: auto;">
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col style="width:300px">
+                        </colgroup>
+                        <tbody role="rowgroup">
+                            <tr role="row" class="k-grid-edit-row">
+                                <td role="gridcell"><input class="k-input k-textbox" name="ProductName" required="required" type="text"></td>
+                                    <td role="gridcell" data-container-for="UnitsInStock"><span style="" class="k-widget k-numerictextbox"><span class="k-numeric-wrap k-state-default"><input class="k-formatted-value k-input" title="0.00" tabindex="0" style="display: inline;" role="spinbutton" aria-valuemin="0" aria-disabled="false" aria-valuenow="0" type="text" value="42"><input name="UnitsInStock" min="0" required="required" data-type="number" data-bind="value:UnitsInStock" data-role="numerictextbox" role="spinbutton" aria-valuemin="0" style="display: none;" class="k-input" aria-disabled="false" aria-valuenow="0" type="text"><span class="k-icon k-i-warning" style="display: none;"></span><span class="k-select"><span unselectable="on" class="k-link k-link-increase" aria-label="Increase value" title="Increase value" style="touch-action: none;"><span unselectable="on" class="k-icon k-i-arrow-60-up"></span></span><span unselectable="on" class="k-link k-link-decrease" aria-label="Decrease value" title="Decrease value" style="touch-action: none;"><span unselectable="on" class="k-icon k-i-arrow-60-down"></span></span>
+                                                </span>
+                                            </span>
+                                        </span><span data-for="UnitsInStock" class="k-invalid-msg" style="display: none;"></span></td>
+                                        <td role="gridcell" data-container-for="Discontinued"><input class="k-checkbox" id="e77452cd-b3b5-4dc9-8210-17007584b695" name="Discontinued" data-type="boolean" data-bind="checked:Discontinued" type="checkbox"><label class="k-checkbox-label" for="e77452cd-b3b5-4dc9-8210-17007584b695">​</label></td>
+                                        <td class="k-command-cell" role="gridcell"><a role="button" class="k-button k-button-icontext k-primary k-grid-update" href="#"><span class="k-icon k-i-check"></span>Update</a><a role="button" class="k-button k-button-icontext k-grid-cancel" href="#"><span class="k-icon k-i-cancel"></span>Cancel</a></td>
+                            </tr>
+                            <tr class="k-alt" role="row">
+                                <td role="gridcell">Chai</td>
+                                <td role="gridcell">18</td>
+                                <td role="gridcell">false</td>
+                                <td class="k-command-cell k-command-cell" role="gridcell"><a role="button" class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-i-edit"></span>Edit</a><a role="button" class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-i-close"></span>Delete</a></td>
+                            </tr>
+                            <tr role="row">
+                                <td role="gridcell">Chang</td>
+                                <td role="gridcell">19</td>
+                                <td role="gridcell">false</td>
+                                <td class="k-command-cell" role="gridcell"><a role="button" class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-i-edit"></span>Edit</a><a role="button" class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-i-close"></span>Delete</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
