@@ -1,0 +1,122 @@
+$grid-hierarchy-col-width: 32px !default;
+$grid-form-component-vertical-align: bottom !default;
+$grid-cell-horizontal-border-width: 1px !default;
+$grid-cell-vertical-border-width: 0 !default;
+// TODO: perhaps these should be the values for cell-padding-x/-y
+$grid-cell-padding-x: 24px !default;
+$grid-cell-padding-y: 10px !default;
+$grid-header-cell-padding-y: 16px !default;
+$grid-filter-cell-padding-x: $grid-cell-padding-x !default;
+$grid-filter-cell-padding-y: $grid-cell-padding-y !default;
+$grid-filter-input-text-indent: 0 !default;
+$grid-grouping-row-border-top: 0 !default;
+$grid-group-footer-border-y: 0 !default;
+$grid-group-footer-second-cell-border: 0 !default;
+$edit-cell-input-space: 0 !default;
+$grid-header-first-border: 0 !default;
+$grid-sorted-icon-spacing: 4px !default;
+$grid-header-menu-icon-spacing: 14px !default;
+$grid-grouping-header-padding-x: 14px !default;
+$grid-grouping-header-padding-y: 14px !default;
+$grid-group-indicator-border-radius: add-two( $font-size, $button-padding-y) !default;
+$grid-group-indicator-gap: 8px !default;
+
+@import "~@progress/kendo-theme-default/scss/grid/layout";
+
+@include exports ('grid/layout/material') {
+    $grid-header-font-size: 12px !default;
+    $grouping-dropclue-height: add-two( 2 * $font-size, 2 * $padding-y) !default;
+
+    .k-grid {
+        .k-checkbox-label,
+        .k-radio-label {
+            line-height: normal;
+        }
+
+        .k-edit-cell,
+        .k-grid-edit-row {
+            .k-input {
+                font-size: $font-size;
+            }
+        }
+
+        .k-button,
+        .k-button:active {
+            box-shadow: none;
+        }
+    }
+
+    .k-grid-header {
+        th {
+            font-weight: 700;
+        }
+
+        .k-header:not(.k-widget) {
+            font-size: $grid-header-font-size;
+        }
+
+        .k-grid-filter {
+            border-radius: 50%;
+        }
+
+        .k-filter-row {
+            .k-dropdown-operator .k-dropdown-wrap {
+                border-width: 0;
+            }
+
+            .k-button.k-button-icon {
+                box-shadow: none;
+            }
+        }
+
+        .k-header-column-menu {
+            border-radius: 50%;
+        }
+
+        .k-resizable-columns th:not(.k-group-cell) {
+            border-right-width: 1px;
+            border-right-style: solid;
+        }
+
+        .k-resizable-columns .k-resize-handle .k-resize-handle-inner {
+            width: 1px;
+            height: 100%;
+            cursor: col-resize;
+        }
+    }
+
+    .k-grouping-header {
+
+        .k-group-indicator {
+            border-width: 0;
+        }
+    }
+
+    .k-grouping-dropclue {
+        width: 0;
+        height: $grouping-dropclue-height;
+        border-style: solid;
+        border-width: 0 2px 0 0;
+
+        &::before {
+            border-width: 0;
+        }
+    }
+
+    .k-resize-handle:hover .k-resize-handle-inner {
+        width: 1px;
+        height: 100%;
+    }
+
+    .k-column-resizer:hover::after {
+        display: block;
+        content: "";
+        height: 100%;
+        border-right: 2px solid currentColor;
+    }
+
+    .k-reorder-cue {
+        margin-left: -1px;
+        width: 2px;
+    }
+}
