@@ -1,0 +1,50 @@
+$upload-success-text: $text-color !default;
+
+@import "~@progress/kendo-theme-default/scss/upload/theme";
+
+@include exports('upload/theme/material') {
+    .k-upload {
+        .k-upload-button {
+            box-shadow: none;
+            background: $base-border;
+        }
+        .k-upload-status {
+            color: lighten($text-color, 25%);
+        }
+        .k-dropzone-hint {
+            color: $upload-disabled-text;
+            font-style: normal;
+        }
+
+        .k-upload-files {
+            .k-upload-action:hover::before {
+                opacity: 0;
+            }
+
+            .k-file-validation-message {
+                color: $upload-error-text;
+            }
+
+            .k-delete {
+                &:hover,
+                &.k-state-hover {
+                    background: $base-border;
+                }
+            }
+        }
+
+        .k-clear-selected {
+            color: $upload-disabled-text;
+
+            &:hover {
+                background-color: transparent;
+            }
+
+            &.k-state-focused,
+            &:active {
+                color: $upload-disabled-text;
+            }
+        }
+    }
+}
+

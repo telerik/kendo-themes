@@ -1,16 +1,17 @@
+$upload-disabled-text: darken($widget-bg, 27%) !default;
+$upload-border: $border-color !default;
+$upload-error-text: $error !default;
+
 @include exports('upload/theme') {
 
     $upload-bg: $header-bg !default;
     $upload-files-bg: $widget-bg !default;
-    $upload-border: $border-color !default;
     $upload-progress-text: $base-text !default;
     $upload-progress-bg: $info !default;
-    $upload-error-text: $error !default;
     $upload-error-bg: $error !default;
     $upload-error-border: lighten($error, 29%) !default;
     $upload-success-text: $success !default;
     $upload-success-bg: $success !default;
-    $upload-disabled-text: darken($widget-bg, 27%) !default;
     $upload-disabled-border: darken($widget-bg, 27%) !default;
     $upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
@@ -33,10 +34,10 @@
         .k-file {
             background-color: $upload-files-bg;
             border-color: $upload-border;
+            outline: none;
 
             &.k-state-focused {
                 box-shadow: inset $upload-focused-shadow;
-                outline: none;
             }
 
             .k-upload-action {
