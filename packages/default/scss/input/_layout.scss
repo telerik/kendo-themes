@@ -6,7 +6,7 @@
     $fieldset-margin: 30px;
     $checkbox-size: $icon-size !default;
     $checkbox-border-width: 1px !default;
-    $checkbox-line-height: 1 !default;
+    $checkbox-line-height: $checkbox-size + $checkbox-border-width !default;
     $checkbox-indeterminate-style: square !default;
     $checkbox-dash-height: $checkbox-size / 10 !default;
     $checkbox-dash-width: $checkbox-size - ( $checkbox-border-width * 4 ) !default;
@@ -199,7 +199,7 @@
     .k-checkbox-label,
     .k-radio-label {
         margin: 0;
-        padding-left: add-two($icon-size, $icon-spacing);
+        padding-left: add-two($checkbox-size, $icon-spacing * 2);
         min-height: $icon-size;
         line-height: $checkbox-line-height;
         vertical-align: text-top;
