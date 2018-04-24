@@ -142,7 +142,7 @@ $switch-active-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
         }
 
         &.k-switch-on {
-            &[aria-readonly=true] {
+            &[aria-readonly="true"] {
                 &:hover {
                     .k-switch-handle {
                         background: $accent;

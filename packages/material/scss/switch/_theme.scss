@@ -6,11 +6,11 @@ $switch-hover-border-color: transparent !default;
 @import "~@progress/kendo-theme-default/scss/switch/theme";
 
 @include exports('switch/theme/material') {
-$switch-off-bg: rgba(black, .38) !default;
-$switch-hover-off-bg: rgba(black, .5) !default;
-$switch-handle-off-bg: rgb(250, 250, 250) !default;
+    $switch-off-bg: rgba(black, .38) !default;
+    $switch-hover-off-bg: rgba(black, .5) !default;
+    $switch-handle-off-bg: rgb(250, 250, 250) !default;
 
-$switch-disabled-color: rgb(189, 189, 189) !default;
+    $switch-disabled-color: rgb(189, 189, 189) !default;
 
     .k-switch {
         &.k-switch-on {
@@ -60,7 +60,7 @@ $switch-disabled-color: rgb(189, 189, 189) !default;
         }
 
         &.k-switch-off {
-            &[aria-readonly=true] {
+            &[aria-readonly="true"] {
                 &:hover {
                     .k-switch-container,
                     .k-switch-wrapper {
