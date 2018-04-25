@@ -3,7 +3,8 @@ $calendar-weekend-bg: darken($widget-bg, 2.35) !default;
 $calendar-week-number-bg: darken( $widget-bg, 5 ) !default;
 $calendar-week-number-text: $node-text !default;
 $calendar-week-day-text: $header-text !default;
-$calendar-range-selection: #ffd0cd;
+$calendar-range-selection: lighten($accent, 23%) !default;
+
 
 @include exports('calendar/theme') {
     $date-focus-shadow: $list-item-focused-shadow !default;
@@ -147,14 +148,43 @@ $calendar-range-selection: #ffd0cd;
 
     // Range Selection Calendar
     .k-calendar.k-calendar-range {
+        .k-prev-view,
+        .k-next-view {
+            border-radius: 0;
+        }
+
+        .k-prev-view {
+            border-width: 0 1px 0 0;
+        }
+
+        .k-next-view {
+            border-width: 0 0 0 1px;
+        }
+
         .k-calendar-view {
+            &::after {
+                display: none;
+            }
+
+            $calendar-range-gap: 2% !default;
+
             .k-range-start,
             .k-range-end,
             .k-range-mid {
-                background-color: $calendar-range-selection;
+                // sass-lint:disable-block indentation
+                background-image: linear-gradient(
+                    to bottom,
+                    $bg-color,
+                    $bg-color $calendar-range-gap,
+                    $calendar-range-selection $calendar-range-gap,
+                    $calendar-range-selection (100% - $calendar-range-gap),
+                    $bg-color (100% - $calendar-range-gap),
+                    $bg-color 100%
+                );
             }
 
             .k-range-start.k-range-end {
+                background-image: none;
                 background-color: transparent;
             }
 
@@ -172,31 +202,32 @@ $calendar-range-selection: #ffd0cd;
                 }
             }
 
+            $calendar-range-crossover-size: 5px !default;
+
             .k-range-split-start,
             .k-range-split-end {
                 position: relative;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: $calendar-range-gap;
+                    bottom: $calendar-range-gap;
+                    width: $calendar-range-crossover-size;
+                }
             }
 
             .k-range-split-start::after {
-                content: "";
-                display: block;
-                position: absolute;
-                top: 0;
-                left: -5px;
-                height: 100%;
-                width: 5px;
-                background-image: linear-gradient(to left, #ffd0cd, transparent 100%);
+                left: -$calendar-range-crossover-size;
+                right: auto;
+                background-image: linear-gradient(to left, $calendar-range-selection, transparent 100%);
             }
 
             .k-range-split-end::after {
-                content: "";
-                display: block;
-                position: absolute;
-                top: 0;
-                right: -5px;
-                height: 100%;
-                width: 5px;
-                background-image: linear-gradient(to right, #ffd0cd, transparent 100%);
+                right: -$calendar-range-crossover-size;
+                left: auto;
+                background-image: linear-gradient(to right, $calendar-range-selection, transparent 100%);
             }
         }
     }
