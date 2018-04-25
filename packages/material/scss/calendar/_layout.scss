@@ -13,6 +13,9 @@ $calendar-weekdays-height: $calendar-month-cell-size !default;
 $calendar-century-view-line-height: $calendar-meta-cell-size !default;
 $calendar-century-view-text-align: center !default;
 $calendar-footer-height: $calendar-month-cell-size !default;
+$calendar-multiview-button-style: detached !default;
+$calendar-multiview-button-size: 40px !default;
+$calendar-view-gap: 48px !default;
 
 @import "~@progress/kendo-theme-default/scss/calendar/layout";
 

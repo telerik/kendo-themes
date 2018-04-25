@@ -4,6 +4,10 @@ $calendar-week-number-bg: darken( $widget-bg, 5 ) !default;
 $calendar-week-number-text: $node-text !default;
 $calendar-week-day-text: $header-text !default;
 $calendar-range-selection: lighten($accent, 23%) !default;
+
+// Styling of today date
+// color - mark the today date with a different text color
+// box - instead of changing the text color, show a box around the date
 $calendar-today-style: color !default;
 $calendar-navigation-bg: $base-bg !default;
 $calendar-navigation-border: $base-border !default;
@@ -68,8 +72,7 @@ $calendar-selected-focus-shadow: $calendar-focus-shadow !default;
                 &.k-state-focused .k-link {
                     box-shadow: inset 0 0 0 1px $accent, inset $button-focused-shadow;
                 }
-            }
-            @else if $calendar-today-style == color {
+            } @else if $calendar-today-style == color {
                 color: $accent;
 
                 &.k-state-selected .k-link {
@@ -174,19 +177,6 @@ $calendar-selected-focus-shadow: $calendar-focus-shadow !default;
 
     // Range Selection Calendar
     .k-calendar.k-calendar-range {
-        .k-prev-view,
-        .k-next-view {
-            border-radius: 0;
-        }
-
-        .k-prev-view {
-            border-width: 0 1px 0 0;
-        }
-
-        .k-next-view {
-            border-width: 0 0 0 1px;
-        }
-
         .k-calendar-view {
             &::after {
                 display: none;
