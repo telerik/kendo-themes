@@ -3,6 +3,8 @@ $popup-header-padding: $list-item-padding-y $list-item-padding-x !default;
 $popup-header-font-size: null !default;
 $popup-header-text: null !default;
 $popup-filter-padding-x: false !default;
+$dropdowntree-popup-spacer-x: $padding-y-lg !default;
+$dropdowntree-popup-spacer-y: $padding-y-lg !default;
 
 @include exports('popup/layout') {
 
@@ -191,11 +193,6 @@ $popup-filter-padding-x: false !default;
         }
     }
 
-    // Dropdowntree popup
-    .k-multiple-selection {
-        padding: $padding-y-lg;
-    }
-
 }
 
 
@@ -226,6 +223,14 @@ $popup-filter-padding-x: false !default;
                 display: inline-flex;
                 border-width: 1px;
                 @include appearance( button );
+            }
+        }
+
+        & > .k-treeview {
+            margin: $dropdowntree-popup-spacer-y $dropdowntree-popup-spacer-x 0;
+
+            & + .k-treeview {
+                margin-top: 0;
             }
         }
     }
