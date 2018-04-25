@@ -4,11 +4,13 @@ $calendar-week-number-bg: darken( $widget-bg, 5 ) !default;
 $calendar-week-number-text: $node-text !default;
 $calendar-week-day-text: $header-text !default;
 $calendar-range-selection: lighten($accent, 23%) !default;
-
+$calendar-today-style: color !default;
+$calendar-navigation-bg: $base-bg !default;
+$calendar-navigation-border: $base-border !default;
+$calendar-focus-shadow: $list-item-focused-shadow !default;
+$calendar-selected-focus-shadow: $calendar-focus-shadow !default;
 
 @include exports('calendar/theme') {
-    $date-focus-shadow: $list-item-focused-shadow !default;
-
     .k-calendar {
         background-clip: padding-box;
 
@@ -27,20 +29,21 @@ $calendar-range-selection: lighten($accent, 23%) !default;
         .k-nav-prev,
         .k-nav-next,
         .k-nav-fast {
-
-            // Hover
             &:hover,
             &.k-state-hover {
-                @include appearance( hovered-button );
+                @include appearance( hovered-header );
             }
 
-            // Pressed
             &:active {
-                @include appearance( pressed-button );
+                @include appearance( selected-header );
             }
         }
         .k-footer .k-nav-today {
-            color: $accent;
+            color: $link-text;
+
+            &:hover {
+                color: $link-hover-text;
+            }
         }
 
 
@@ -57,10 +60,21 @@ $calendar-range-selection: lighten($accent, 23%) !default;
         }
 
         .k-content .k-today {
-            color: $accent;
+            @if $calendar-today-style == box {
+                .k-link {
+                    box-shadow: inset 0 0 0 1px $accent;
+                }
 
-            &.k-state-selected {
-                color: $accent-contrast;
+                &.k-state-focused .k-link {
+                    box-shadow: inset 0 0 0 1px $accent, inset $button-focused-shadow;
+                }
+            }
+            @else if $calendar-today-style == color {
+                color: $accent;
+
+                &.k-state-selected .k-link {
+                    color: $accent-contrast;
+                }
             }
         }
 
@@ -73,12 +87,19 @@ $calendar-range-selection: lighten($accent, 23%) !default;
             border-right-color: $widget-border;
         }
 
-        .k-state-hover {
+        .k-state-hover .k-link {
             @include appearance( hovered-node );
         }
 
-        .k-state-selected,
-        .k-weekend.k-state-selected {
+        // styles are applied to the k-link element inside
+        .k-state-selected {
+            color: inherit;
+            background: transparent;
+            border-color: transparent;
+        }
+
+        .k-state-selected .k-link,
+        .k-weekend.k-state-selected .k-link {
             @include appearance( selected-node );
 
             &.k-state-hover {
@@ -86,9 +107,12 @@ $calendar-range-selection: lighten($accent, 23%) !default;
             }
         }
 
-        .k-state-focused,
-        .k-state-selected.k-state-focused {
-            box-shadow: $date-focus-shadow;
+        .k-state-focused .k-link {
+            box-shadow: $calendar-focus-shadow;
+        }
+
+        .k-state-selected.k-state-focused .k-link {
+            box-shadow: $calendar-selected-focus-shadow;
         }
 
         // Infinite calendar
@@ -100,8 +124,8 @@ $calendar-range-selection: lighten($accent, 23%) !default;
 
         .k-calendar-navigation {
             // border underneath highlight
-            box-shadow: inset -1px 0 $base-border;
-            background-color: $base-bg;
+            box-shadow: inset -1px 0 $calendar-navigation-border;
+            background-color: $calendar-navigation-bg;
 
             .k-content > ul > li:hover {
                 color: $link-hover-text;
@@ -120,7 +144,7 @@ $calendar-range-selection: lighten($accent, 23%) !default;
         &[dir='rtl'],
         .k-rtl & {
             .k-calendar-navigation {
-                box-shadow: inset 1px 0 $base-border;
+                box-shadow: inset 1px 0 $calendar-navigation-border;
             }
         }
 
@@ -129,16 +153,18 @@ $calendar-range-selection: lighten($accent, 23%) !default;
                 background-color: $calendar-weekend-bg;
             }
 
-            .k-state-hover {
+            .k-state-hover .k-link {
                 background-color: $node-hovered-bg;
             }
 
             .k-content {
                 .k-state-selected,
                 .k-weekend .k-state-selected {
-                    @include appearance( selected-node );
+                    .k-link {
+                        @include appearance( selected-node );
+                    }
 
-                    &.k-state-hover {
+                    &.k-state-hover .k-link {
                         background-color: blend-multiply( $list-item-selected-bg, $list-item-hovered-bg );
                     }
                 }
