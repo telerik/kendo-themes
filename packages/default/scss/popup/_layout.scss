@@ -225,14 +225,6 @@ $dropdowntree-popup-spacer-y: $padding-y-lg !default;
                 @include appearance( button );
             }
         }
-
-        & > .k-treeview {
-            margin: $dropdowntree-popup-spacer-y $dropdowntree-popup-spacer-x 0;
-
-            & + .k-treeview {
-                margin-top: 0;
-            }
-        }
     }
 
 }

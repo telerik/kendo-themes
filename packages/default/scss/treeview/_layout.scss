@@ -1,6 +1,7 @@
-@include exports("treeview/layout") {
 
-    $treeview-indent: 16px;
+$treeview-indent: 16px;
+
+@include exports("treeview/layout") {
 
     // Base
     .k-treeview {
