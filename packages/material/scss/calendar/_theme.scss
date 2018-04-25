@@ -7,3 +7,9 @@ $node-hovered-selected-bg: $node-selected-bg !default;
 $calendar-range-selection: lighten($accent, 43%) !default;
 
 @import "~@progress/kendo-theme-default/scss/calendar/theme";
+
+@include exports('calendar/theme/material') {
+    .k-calendar-weekdays {
+        text-transform: uppercase;
+    }
+}
