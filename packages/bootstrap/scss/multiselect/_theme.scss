@@ -5,10 +5,12 @@
         @include appearance( input );
         transition: $transition;
 
+        &:hover,
         &.k-state-hover {
             @include appearance( hovered-input );
         }
 
+        &:focus,
         &.k-state-focused {
             .k-multiselect-wrap {
                 @include appearance( focused-input );

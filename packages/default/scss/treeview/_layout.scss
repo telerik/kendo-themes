@@ -1,5 +1,5 @@
 
-$treeview-indent: 16px;
+$treeview-indent: 16px !default;
 
 @include exports("treeview/layout") {
 
