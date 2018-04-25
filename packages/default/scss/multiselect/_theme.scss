@@ -1,7 +1,7 @@
 @include exports("multiselect/theme") {
 
     // Appearance
-    .k-multiselect {
+    .k-multiselect-wrap {
         @include appearance( input );
         background-clip: padding-box;
 
@@ -10,6 +10,11 @@
         .k-edge13 & {
             background-clip: border-box;
         }
+
+        > .k-readonly {
+            opacity: .6;
+        }
+
 
         li {
             background-clip: padding-box;
@@ -43,27 +48,21 @@
             }
         }
 
-        &.k-state-focused {
+        .k-i-loading {
+            background-color: $input-bg;
+        }
+
+
+        .k-state-focused > & {
             .k-multiselect-wrap {
                 @include appearance( focused-input );
             }
         }
-        &.k-disabled {
+
+        .k-disabled > & {
             .k-multiselect-wrap {
                 @include appearance( disabled-input );
             }
-        }
-
-        .k-i-loading {
-            background-color: $input-bg;
-        }
-    }
-
-    .k-multiselect-wrap {
-        @include appearance( input );
-
-        > .k-readonly {
-            opacity: .6;
         }
 
         &:hover {
