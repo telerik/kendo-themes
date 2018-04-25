@@ -1,0 +1,32 @@
+@include exports("dropdowntree/layout") {
+
+    // Dropdowntree popup
+    .k-popup {
+        .k-check-all,
+        & > .k-treeview {
+            margin: $dropdowntree-popup-spacer-y $dropdowntree-popup-spacer-x;
+        }
+        .k-check-all {
+            margin-bottom: 0;
+
+            & + .k-treeview {
+                margin-top: 0;
+            }
+        }
+
+        .k-check-all {
+            padding: $padding-x;
+            padding-left: $treeview-indent
+        }
+
+        &.k-rtl,
+        [dir='rtl'] & {
+
+            .k-check-all {
+                padding-right: $padding-x;
+                padding-left: $treeview-indent;
+            }
+
+        }
+    }
+}
