@@ -191,6 +191,11 @@ $popup-filter-padding-x: false !default;
         }
     }
 
+    // Dropdowntree popup
+    .k-multiple-selection {
+        padding: $padding-y-lg;
+    }
+
 }
 
 

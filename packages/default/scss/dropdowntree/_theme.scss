@@ -1,0 +1,6 @@
+@include exports("dropdowntree/theme") {
+
+    .k-dropdowntree {
+        @extend .k-dropdown;
+    }
+}

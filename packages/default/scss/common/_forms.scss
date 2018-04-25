@@ -12,7 +12,8 @@ $forms-invalid-color: $error !default;
     .k-multiselect,
     .k-numerictextbox,
     .k-maskedtextbox,
-    .k-timepicker {
+    .k-timepicker,
+    .k-dropdowntree {
         width: $input-default-width;
         line-height: $form-line-height;
         text-align: left;
@@ -48,7 +49,8 @@ $forms-invalid-color: $error !default;
     .k-multiselect,
     .k-numerictextbox,
     .k-maskedtextbox,
-    .k-timepicker {
+    .k-timepicker,
+    .k-dropdowntree {
         border-width: 0;
         background-color: transparent;
     }
@@ -141,7 +143,7 @@ $forms-invalid-color: $error !default;
 
     .k-autocomplete,
     .k-dropdown-wrap,
-    .k-multiselect {
+    .k-multiselect-wrap {
 
         .k-clear-value,
         .k-i-loading {
@@ -195,7 +197,7 @@ $forms-invalid-color: $error !default;
 
     }
 
-    .k-multiselect {
+    .k-multiselect-wrap {
 
         .k-i-loading,
         .k-clear-value {
