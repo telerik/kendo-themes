@@ -343,15 +343,16 @@ $calendar-header-cell-padding-y: 8px !default;
 
             .k-range-start {
                 border-color: inherit;
-                border-radius: $calendar-cell-border-radius 0 0 $calendar-cell-border-radius;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
             }
 
             .k-range-end {
                 border-color: inherit;
-                border-radius: 0 $calendar-cell-border-radius $calendar-cell-border-radius 0;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
             }
 
-            .k-range-start.k-range-end,
             .k-range-mid {
                 border-color: inherit;
                 border-radius: 0;
@@ -414,7 +415,9 @@ $calendar-header-cell-padding-y: 8px !default;
             }
 
             $cell-size: $calendar-view-width / 5;
-            td {
+
+            td,
+            .k-link {
                 border-radius: $cell-size / 2;
             }
 
