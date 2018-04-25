@@ -713,13 +713,6 @@
             padding-right: 0;
             text-indent: $grid-filter-input-text-indent;
         }
-
-        &.k-filtercell-boolean {
-            .k-filtercell-wrapper {
-                padding-right: calc(#{$button-calc-size} + #{$grid-cell-padding-y / 2});
-                overflow: hidden;
-            }
-        }
     }
 
     // Grid content
