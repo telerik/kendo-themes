@@ -13,6 +13,13 @@ $calendar-view-height: add-three(
 );
 $calendar-header-cell-padding-y: 8px !default;
 
+// Multi-view Calendar navigation button types
+// stretched - buttons are aligned on the sides of the calendar views, taking the complete height of the calendar
+// detached - buttons float in the middle of each side of the calendar
+$calendar-multiview-button-style: stretched !default;
+$calendar-multiview-button-size: 44px !default;
+$calendar-view-gap: 32px !default;
+
 
 @include exports('calendar/layout') {
     $calendar-width: 16.917em !default;
@@ -494,6 +501,7 @@ $calendar-header-cell-padding-y: 8px !default;
     .k-calendar.k-calendar-range {
         .k-calendar-view {
             width: auto;
+
         }
 
         table {
@@ -502,6 +510,49 @@ $calendar-header-cell-padding-y: 8px !default;
 
             > tbody {
                 padding: 0 $calendar-multi-view-gap;
+            }
+
+            > tbody:last-child {
+                margin-left: $calendar-view-gap;
+            }
+        }
+    }
+
+    @if $calendar-multiview-button-style == stretched {
+        .k-calendar.k-calendar-range {
+            > .k-button {
+                @extend .k-bare;
+                border-radius: 0;
+                width: $calendar-multiview-button-size;
+            }
+
+            > .k-calendar-view {
+                border-width: 0 1px;
+                border-style: solid;
+                border-color: inherit;
+            }
+        }
+    } @else if $calendar-multiview-button-style == detached {
+        .k-calendar.k-calendar-range {
+            background-color: transparent;
+            border-width: 0;
+            overflow: visible;
+
+            > .k-calendar-view {
+                $half-size: $calendar-multiview-button-size / 2;
+
+                border-width: $widget-border-width;
+                border-style: solid;
+                border-color: inherit;
+                padding: 0 add-two($half-size, $spacer-x);
+                margin: 0 (-$half-size);
+            }
+
+            > .k-button {
+                align-self: center;
+                width: $calendar-multiview-button-size;
+                height: $calendar-multiview-button-size;
+                border-radius: 50%;
             }
         }
     }
