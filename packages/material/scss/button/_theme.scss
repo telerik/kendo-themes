@@ -23,7 +23,8 @@ $button-disabled-text: rgba(0, 0, 0, .38) !default;
             box-shadow: $button-pressed-shadow;
         }
     }
-    .k-button.k-state-disabled {
+    .k-button.k-state-disabled,
+    .k-button.k-state-disabled:hover {
         color: $button-disabled-text;
         opacity: 1;
     }

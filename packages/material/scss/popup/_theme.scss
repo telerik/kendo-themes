@@ -22,8 +22,8 @@ $grouping-border: $grouping-header-bg !default;
         .k-button {
 
             // Focus state
-            &:focus,
-            &.k-state-focused {
+            &:focus:not(.k-state-disabled),
+            &.k-state-focused:not(.k-state-disabled) {
                 @include appearance( hovered-list-item );
             }
 
