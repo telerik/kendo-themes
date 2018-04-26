@@ -135,7 +135,9 @@
     }
 
     //SplitButton
+    .k-split-button:focus,
     .k-split-button.k-state-focused {
+        outline: none;
         box-shadow: $button-focused-shadow;
     }
 
