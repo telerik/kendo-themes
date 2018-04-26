@@ -11,15 +11,24 @@
         body {
             background: #EEEEEE;
         }
-        .dark { background-color: #333; }
-        .light { background-color: #EEEEEE; }
+
+        #test-area {
+            max-width: 600px;
+            display: grid;
+            grid-gap: 20px 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
     </style>
 </head>
 <body>
     <div id="test-area">
+        <span></span>
+        <span>On</span>
+        <span>Off</span>
 
-        <div class="section">
-            <h2>Normal switch --state On</h2>
+        <span>Normal</span>
+        <section>
             <kendo-switch dir="ltr" class="k-widget k-switch ng-valid k-switch-on" aria-checked="true">
                 <span class="k-switch-wrapper">
                     <span class="k-switch-background"></span>
@@ -39,10 +48,8 @@
                     </div>
                 </kendo-resize-sensor>
             </kendo-switch>
-        </div>
-
-        <div class="section">
-            <h2>Normal switch --state Off</h2>
+        </section>
+        <section>
             <kendo-switch dir="ltr" class="k-widget k-switch ng-valid k-switch-off">
                 <span class="k-switch-wrapper">
                     <span class="k-switch-background"></span>
@@ -62,10 +69,11 @@
                     </div>
                 </kendo-resize-sensor>
             </kendo-switch>
-        </div>
+        </section>
 
-        <div class="section">
-            <h2>Disabled switch --state On</h2>
+
+        <span>Disabled</span>
+        <section>
             <kendo-switch dir="ltr" aria-disabled="true" class="k-widget k-switch k-state-disabled k-switch-on" aria-checked="true">
                 <span class="k-switch-wrapper">
                     <span class="k-switch-background"></span>
@@ -85,10 +93,8 @@
                     </div>
                 </kendo-resize-sensor>
             </kendo-switch>
-        </div>
-
-        <div class="section">
-            <h2>Disabled switch --state Off</h2>
+        </section>
+        <section>
             <kendo-switch dir="ltr" aria-disabled="true" class="k-widget k-switch k-switch-off k-state-disabled">
                 <span class="k-switch-wrapper">
                     <span class="k-switch-background"></span>
@@ -100,10 +106,10 @@
                     </span>
                 </span>
             </kendo-switch>
-        </div>
+        </section>
 
-        <div class="section">
-            <h2>Readonly switch --state On</h2>
+        <span>Readonly</span>
+        <section>
             <kendo-switch dir="ltr" aria-readonly="true" class="k-widget k-switch ng-pristine ng-valid k-switch-on" aria-checked="true">
                 <span class="k-switch-wrapper">
                     <span class="k-switch-background"></span>
@@ -123,10 +129,8 @@
                     </div>
                 </kendo-resize-sensor>
             </kendo-switch>
-        </div>
-
-        <div class="section">
-            <h2>Readonly switch --state Off</h2>
+        </section>
+        <section>
             <kendo-switch dir="ltr" aria-readonly="true" class="k-widget k-switch k-switch-off">
                     <span class="k-switch-wrapper">
                         <span class="k-switch-background"></span>
@@ -134,7 +138,7 @@
                     <span class="k-switch-container" kendodraggable="" id="6ceddc6b-9a57-9a71-51e8-9f8361c12aee" tabindex="0">
                         <span class="k-switch-handle" style="transform: translateX(0px); transition: none;">
                             <span class="k-switch-label-on">ON</span>
-                            <span class="k-switch-label-off" style="">OFF</span>
+                            <span class="k-switch-label-off">OFF</span>
                         </span>
                     </span>
                     <kendo-resize-sensor>
@@ -146,7 +150,7 @@
                         </div>
                     </kendo-resize-sensor>
               </kendo-switch>
-        </div>
+        </section>
     </div>
 </body>
 </html>
