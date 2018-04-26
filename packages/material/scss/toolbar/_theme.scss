@@ -64,6 +64,17 @@ $toolbar-button-expanded-shadow: $button-focused-shadow !default;
                     opacity: 0;
                 }
             }
+
+            // Disables state
+            &.k-state-disabled {
+
+                .k-split-button-arrow {
+                    border-left-color: transparent;
+                }
+                .k-button::before {
+                    opacity: 0;
+                }
+            }
         }
 
         // Dropdowns and Inputs
