@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <title>Dropdowns</title>
-    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../packages/bootstrap/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts.js"></script>
 
     <style>
-        .k-widget {
-          margin: .5em;
+        .section > .k-widget {
+          margin-right: .3em;
+          width: 8.8em;
         }
 
-        .k-multiselect {
-            width: 12.4em;
+        .section > .k-multiselect,
+        .k-dropdowntree + .k-dropdowntree {
+            width: 11.4em;
             display: inline-block;
         }
 
@@ -24,7 +26,7 @@
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" style="width: 1008px; overflow: hidden; border: 1px solid red">
 
         <div class="section">
             <span class="k-widget k-autocomplete"><input type="text" class="k-input" placeholder="Autocomplete..." /></span>
