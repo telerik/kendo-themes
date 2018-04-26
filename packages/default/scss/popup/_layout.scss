@@ -223,6 +223,10 @@ $popup-filter-padding-x: false !default;
                 @include appearance( button );
             }
         }
+
+        .k-separator {
+            height: 0;
+        }
     }
 
 }
