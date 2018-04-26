@@ -129,6 +129,11 @@ $grouping-border: $border-color !default;
             color: $list-container-no-data-text;
         }
 
+        // Button disabled state
+        .k-button.k-state-disabled {
+            background: transparent;
+        }
+
     }
 
 }
