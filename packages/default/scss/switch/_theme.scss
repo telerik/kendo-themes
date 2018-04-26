@@ -9,14 +9,12 @@ $switch-active-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 
 @include exports('switch/theme') {
     .k-switch,
-    .k-switch-wrapper,
     .k-switch-container {
         @include border-radius( $switch-border-radius );
         outline: 0;
     }
 
-    .k-switch-container,
-    .k-switch-wrapper {
+    .k-switch-container {
         border-color: $switch-border-color;
         background-clip: padding-box;
 
@@ -29,10 +27,6 @@ $switch-active-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
         &:hover {
             border-color: $switch-hover-border-color;
         }
-    }
-
-    .k-switch-wrapper {
-        background-color: $widget-bg;
     }
 
     .k-switch-background {
@@ -75,10 +69,6 @@ $switch-active-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
                 @include appearance( hovered-button );
             }
         }
-
-        &:action {
-            @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
-        }
     }
 
     .k-switch-label-on {
@@ -104,8 +94,7 @@ $switch-active-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
         &.k-state-disabled {
             cursor: auto;
 
-            .k-switch-container,
-            .k-switch-wrapper {
+            .k-switch-container {
                 border-color: $switch-border-color;
                 box-shadow: none;
             }
@@ -123,32 +112,8 @@ $switch-active-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
             }
         }
 
-        &.k-switch-on,
-        &.k-switch-off {
-            &[aria-readonly=true] {
-                cursor: default;
-                .k-switch-container,
-                .k-switch-wrapper {
-                    &:hover {
-                        box-shadow: none;
-                    }
-                }
-                .k-switch-handle {
-                    &:hover {
-                        box-shadow: $switch-handle-shadow;
-                    }
-                }
-            }
-        }
-
-        &.k-switch-on {
-            &[aria-readonly="true"] {
-                &:hover {
-                    .k-switch-handle {
-                        background: $accent;
-                    }
-                }
-            }
+        &[aria-readonly="true"] {
+            pointer-events: none;
         }
     }
 }

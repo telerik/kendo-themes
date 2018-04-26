@@ -14,11 +14,13 @@ $switch-hover-border-color: transparent !default;
 
     .k-switch {
         &.k-switch-on {
-            .k-switch-container,
-            .k-switch-wrapper {
+            .k-switch-container {
                 background: lighten($switch-on-color, 25%);
             }
             &:hover {
+                .k-switch-container {
+                    background: lighten($switch-on-color, 20%);
+                }
                 .k-switch-handle {
                     background: $switch-on-color;
                 }
@@ -26,8 +28,7 @@ $switch-hover-border-color: transparent !default;
         }
 
         &.k-switch-off {
-            .k-switch-container,
-            .k-switch-wrapper {
+            .k-switch-container {
                 background: $switch-off-bg;
             }
             .k-switch-handle {
@@ -35,8 +36,7 @@ $switch-hover-border-color: transparent !default;
             }
 
             &:hover {
-                .k-switch-container,
-                .k-switch-wrapper {
+                .k-switch-container {
                     background: $switch-hover-off-bg;
                 }
                 .k-switch-handle {
@@ -46,26 +46,16 @@ $switch-hover-border-color: transparent !default;
         }
 
         &.k-state-disabled {
-            .k-switch-container,
-            .k-switch-wrapper {
+            .k-switch-container {
                 background: $hovered-border;
             }
+
             &.k-switch-on,
             &.k-switch-off {
                 .k-switch-handle {
+                    opacity: 1;
                     background: $switch-disabled-color;
                     border-color: $switch-disabled-color;
-                }
-            }
-        }
-
-        &.k-switch-off {
-            &[aria-readonly="true"] {
-                &:hover {
-                    .k-switch-container,
-                    .k-switch-wrapper {
-                        background: $switch-off-bg;
-                    }
                 }
             }
         }
