@@ -3,8 +3,7 @@ $button-disabled-text: rgba(0, 0, 0, .38) !default;
 
 @include exports("button/theme") {
 
-    $not-button-selector: ".k-flat, .k-bare, .k-outline, .k-split-button .k-button";
-
+    $not-button-selector: ".k-flat, .k-bare, .k-outline";
 
     // Default button
     .k-button {
@@ -31,6 +30,10 @@ $button-disabled-text: rgba(0, 0, 0, .38) !default;
     .k-button:not(#{$not-button-selector}).k-state-disabled {
         background-color: $button-disabled-bg;
         box-shadow: none !important; // sass-lint:disable-line no-important
+
+        .k-split-button & {
+            background: transparent;
+        }
     }
 
 
