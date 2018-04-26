@@ -512,8 +512,12 @@ $calendar-view-gap: 32px !default;
                 padding: 0 $calendar-multi-view-gap;
             }
 
-            > tbody:last-child {
+            > tbody+tbody {
                 margin-left: $calendar-view-gap;
+            }
+
+            > tbody:only-child {
+                margin-left: 0;
             }
         }
     }
