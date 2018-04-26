@@ -1,0 +1,28 @@
+$switch-size: 3em !default;
+$switch-handle-size: (.4 * $switch-size * 2) !default;
+
+@import "~@progress/kendo-theme-default/scss/switch/layout";
+
+@include exports('switch/layout/material') {
+    $switch-container-size: $switch-size / 2 !default;
+
+    .k-switch {
+        overflow: visible;
+
+        .k-switch-container {
+            height: $switch-container-size;
+        }
+
+        .k-switch-handle {
+            background-clip: border-box;
+            position: relative;
+            top: -$switch-container-size / 2;
+            left: -$switch-container-size;
+        }
+
+        .k-switch-label-on,
+        .k-switch-label-off {
+            display: none;
+        }
+    }
+}

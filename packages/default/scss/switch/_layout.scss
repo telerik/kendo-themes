@@ -1,5 +1,5 @@
-$switch-size: 3em !default;
-$switch-handle-size: (.8 * $switch-size) !default;
+$switch-size: 6em !default;
+$switch-handle-size: (.4 * $switch-size) !default;
 
 @include exports('switch/layout') {
     $switch-border-width: 1px;
@@ -15,7 +15,7 @@ $switch-handle-size: (.8 * $switch-size) !default;
         text-align: left;
         user-select: none;
         vertical-align: middle;
-        width: (2 * $switch-size);
+        width: $switch-size;
         outline: 0;
 
         [type='checkbox'] {
@@ -60,7 +60,7 @@ $switch-handle-size: (.8 * $switch-size) !default;
     }
 
     .k-switch-label-off {
-        left: $switch-size;
+        left: ($switch-size / 2);
     }
 
     .k-switch-label-on {
@@ -93,7 +93,7 @@ $switch-handle-size: (.8 * $switch-size) !default;
         }
 
         .k-switch-label-on {
-            left: $switch-size;
+            left: ($switch-size / 2);
         }
     }
 }
