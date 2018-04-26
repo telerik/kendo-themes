@@ -532,6 +532,10 @@
             margin-bottom: -1px;
         }
 
+        tr+tr th {
+            // multiline headers
+            border-top-width: 1px;
+        }
 
         .k-header {
             position: relative;
