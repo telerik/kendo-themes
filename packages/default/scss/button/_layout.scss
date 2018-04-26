@@ -167,6 +167,10 @@
 
 
     //SplitButton
+    .k-split-button:focus,
+    .k-split-button.k-state-focused {
+        outline: none;
+    }
     .k-split-button.k-button-group.k-state-focused {
         @include border-radius();
     }
