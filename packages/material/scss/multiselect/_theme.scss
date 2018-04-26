@@ -75,9 +75,10 @@
     // Fix vertical centering icon
     .k-multiselect-wrap .k-button .k-icon.k-i-arrow-60-down {
         line-height: 1.2;
-    }
-    .k-edge .k-multiselect-wrap .k-button .k-icon.k-i-arrow-60-down,
-    .k-state-border-down .k-multiselect-wrap .k-icon.k-i-arrow-60-down {
-        line-height: initial;
+
+        .k-edge &,
+        .k-state-border-down & {
+            line-height: initial;
+        }
     }
 }

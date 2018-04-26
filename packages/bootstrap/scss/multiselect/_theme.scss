@@ -6,15 +6,12 @@
         transition: $transition;
 
         &:hover,
-        &.k-state-hover {
+        .k-state-hover > & {
             @include appearance( hovered-input );
         }
 
-        &:focus,
-        &.k-state-focused {
-            .k-multiselect-wrap {
-                @include appearance( focused-input );
-            }
+        .k-state-focused & {
+            @include appearance( focused-input );
         }
 
         .k-button {
