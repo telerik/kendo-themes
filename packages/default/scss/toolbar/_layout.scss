@@ -125,11 +125,7 @@ $toolbar-border-width: 1px !default;
 
         // Separator
         .k-separator {
-            width: 0;
-            border-width: 0 0 0 1px;
-            border-style: solid;
-            align-self: stretch;
-            margin: 0 $toolbar-padding-y;
+            @extend %hr-vertical;
         }
     }
 

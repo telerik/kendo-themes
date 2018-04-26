@@ -146,33 +146,44 @@ $widget-border-width: 1px !default;
 
 @include exports( "common/misc/hr" ) {
 
-    // Horizontal rule
-    .k-hr {
+    %hr {
         margin: $spacer-y auto;
-        padding: 0;
         height: 0;
         border-width: 1px 0 0;
         border-style: solid;
         border-color: $panel-border;
         display: block;
-        float: none;
-        clear: both;
     }
-    .k-hbox > .k-hr {
+
+    %hr-vertical {
         margin: 0;
         width: auto;
         height: auto;
         border-width: 0 0 0 1px;
         flex: 0 0 auto;
     }
+
+    .k-hr {
+        @extend %hr;
+        padding: 0;
+        float: none;
+        clear: both;
+    }
+
+    // Horizontal rule
+    .k-hbox > .k-hr {
+        @extend %hr-vertical;
+    }
+
+    // Vertical rule
     .k-vbox > .k-hr {
         margin: 0;
         flex: 0 0 auto;
     }
 
+    // Separator
     .k-separator {
-        @extend .k-hr;
-        height: auto;
+        @extend %hr;
     }
 
 }

@@ -3,14 +3,6 @@ $image-spacing: 8px !default;
 
 @include exports("menu/layout") {
 
-    // Separator
-    %separator {
-        border-width: 1px 0 0;
-        border-style: solid;
-        line-height: 0;
-        overflow: hidden;
-    }
-
     // Base
     .k-menu {
         display: flex;
@@ -43,10 +35,6 @@ $image-spacing: 8px !default;
             align-items: center;
             position: relative;
             white-space: nowrap;
-        }
-
-        .k-separator {
-            @extend %separator;
         }
     }
 
@@ -104,10 +92,7 @@ $image-spacing: 8px !default;
         }
 
         > .k-item.k-separator {
-            width: 0;
-            border-width: 0 1px 0 0;
-            line-height: inherit;
-            margin: 0 $menu-separator-spacer;
+            @extend %hr-vertical;
         }
     }
     .k-menu-vertical {
@@ -137,7 +122,7 @@ $image-spacing: 8px !default;
         }
 
         .k-item.k-separator {
-            @extend %separator;
+            @extend %hr;
             margin: $menu-separator-spacer 0;
         }
     }
