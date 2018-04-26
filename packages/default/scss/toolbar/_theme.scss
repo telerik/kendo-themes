@@ -78,6 +78,14 @@ $toolbar-button-mode: flat !default;
                 @include appearance( pressed-button );
                 box-shadow: none;
             }
+
+            // Disabled state
+            &.k-state-disabled {
+                &,
+                & .k-button {
+                    box-shadow: none;
+                }
+            }
         }
 
         // Overflow anchor
