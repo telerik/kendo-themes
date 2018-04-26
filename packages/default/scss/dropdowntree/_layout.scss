@@ -1,3 +1,6 @@
+$dropdowntree-popup-spacer-x: $padding-y-lg !default;
+$dropdowntree-popup-spacer-y: $padding-y-lg !default;
+
 @include exports("dropdowntree/layout") {
 
     // Dropdowntree popup

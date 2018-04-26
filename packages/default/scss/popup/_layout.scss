@@ -3,8 +3,6 @@ $popup-header-padding: $list-item-padding-y $list-item-padding-x !default;
 $popup-header-font-size: null !default;
 $popup-header-text: null !default;
 $popup-filter-padding-x: false !default;
-$dropdowntree-popup-spacer-x: $padding-y-lg !default;
-$dropdowntree-popup-spacer-y: $padding-y-lg !default;
 
 @include exports('popup/layout') {
 
