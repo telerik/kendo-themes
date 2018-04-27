@@ -521,6 +521,50 @@ $card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
 $card-actions-border-width: 0 !default;
 
 
+// Chat
+$chat-padding-x: 16px !default;
+$chat-padding-y: 16px !default;
+
+$chat-item-spacing-x: 8px !default;
+$chat-item-spacing-y: 16px !default;
+
+$chat-message-list-padding-x: $chat-padding-x !default;
+$chat-message-list-padding-y: $chat-padding-y !default;
+$chat-message-list-spacing: $chat-item-spacing-y !default;
+
+$chat-bubble-padding-x: 12px !default;
+$chat-bubble-padding-y: 8px !default;
+$chat-bubble-spacing: 2px !default;
+$chat-bubble-line-height: 1.25 !default;
+
+$chat-bubble-border-radius: 12px !default;
+$chat-bubble-border-radius-sm: 2px !default;
+
+$chat-avatar-size: 32px !default;
+$chat-avatar-spacing: $chat-item-spacing-x !default;
+
+$chat-message-box-padding-x: $chat-padding-x !default;
+$chat-message-box-padding-y: 10px !default;
+
+$chat-quick-reply-padding-x: 12px !default;
+$chat-quick-reply-padding-y: 8px !default;
+$chat-quick-reply-spacing: 8px !default;
+$chat-quick-reply-line-height: $chat-bubble-line-height !default;
+
+
+$chat-bg: #f5f5f5 !default;
+$chat-text: $panel-text !default;
+$chat-border: $panel-border !default;
+
+$chat-bubble-bg: $panel-bg !default;
+$chat-bubble-text: $panel-text !default;
+$chat-bubble-border: $chat-bubble-bg !default;
+
+$chat-alt-bubble-bg: $accent !default;
+$chat-alt-bubble-text: $accent-contrast !default;
+$chat-alt-bubble-border: $chat-alt-bubble-bg !default;
+
+
 // Config maps
 $typography-config: () !default;
 // sass-lint:disable indentation
