@@ -1,0 +1,68 @@
+/// Active tab indicator color. Set to `currentColor` to use the text color
+/// @group tabstrip
+$tabstrip-indicator-color: $primary !default;
+
+/// Component background. Set to `transparent` to blend the component with the page.
+/// @group tabstrip
+$tabstrip-bg: transparent !default;
+
+/// Component text color. Set to `inherit` to blend the component with the page.
+/// @group tabstrip
+$tabstrip-color: inherit !default;
+
+$tabstrip-indicator-size: 2px !default;
+
+@include exports("tabstrip/theme") {
+    .k-tabstrip {
+        color: $tabstrip-color;
+        background-color: $tabstrip-bg;
+    }
+
+    .k-tabstrip-items {
+        text-transform: uppercase;
+
+        .k-tabstrip-left & {
+            text-align: right;
+        }
+
+        > .k-item:not(.k-state-active) {
+            opacity: .7;
+        }
+
+        > .k-item:not(.k-state-disabled):hover,
+        > .k-item.k-state-hover {
+            opacity: 1;
+        }
+
+        > .k-item.k-state-active {
+            .k-tabstrip & {
+                border-style: solid;
+                border-width: 0;
+                border-color: $tabstrip-indicator-color;
+            }
+
+            .k-tabstrip-top & {
+                border-bottom-width: $tabstrip-indicator-size;
+            }
+
+            .k-tabstrip-bottom & {
+                border-top-width: $tabstrip-indicator-size;
+            }
+
+            .k-tabstrip-left & {
+                border-right-width: $tabstrip-indicator-size;
+            }
+
+            .k-tabstrip-right & {
+                border-left-width: $tabstrip-indicator-size;
+            }
+        }
+    }
+
+    .k-tabstrip > .k-content {
+        background-color: transparent;
+        color: inherit;
+        border-width: 0;
+        padding: $tabstrip-tab-padding-y $tabstrip-tab-padding-x;
+    }
+}
