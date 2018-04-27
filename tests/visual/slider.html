@@ -15,8 +15,9 @@
         #test-area {
             max-width: 600px;
             display: grid;
-            grid-gap: 20px 55px;
-            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            grid-gap: 25px 70px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
         }
     </style>
@@ -24,9 +25,57 @@
 <body>
     <div id="test-area">
         <span></span>
-        <span>Horizontal</span>
+        <span>Empty</span>
+        <span>Not Empty</span>
+        <span>Full</span>
 
         <span>Normal</span>
+        <section>
+            <kendo-slider dir="ltr" class="k-slider-horizontal k-slider k-slider-transitions k-widget k-state-default" aria-valuemin="0" aria-valuemax="15" aria-valuenow="0" style="width: 226px;">
+                <div class="k-slider-wrap k-slider-buttons" id="92bce93d-a5ef-95a8-d1ef-d49182179669" tabindex="0" style="position: relative;">
+                    <a class="k-button k-button-decrease" title="decrement" aria-label="decrement">
+                    <span class="k-icon k-i-arrow-w">
+                    </span>
+                </a>
+                <a class="k-button k-button-increase" title="increment" aria-label="increment">
+                    <span class="k-icon k-i-arrow-e">
+                    </span>
+                </a>
+                <ul kendosliderticks="" class="k-reset k-slider-items">
+                    <li role="presentation" class="k-tick k-first" title="0" style="width: 5px;">
+                    </li><li role="presentation" class="k-tick" title="1" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="2" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="3" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="4" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="5" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="6" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="7" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="8" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="9" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="10" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="11" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="12" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="13" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="14" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick k-last" title="15" style="width: 5px;">
+                    </li>
+                </ul>
+                    <div class="k-slider-track" style="width: 150px;">
+                        <div class="k-slider-selection" style="width: 0px;">
+                        </div>
+                        <a kendodraggable="" class="k-draghandle" title="Drag" style="left: -8px;">Drag</a>
+                    </div>
+                    <kendo-resize-sensor>
+                        <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                            <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
+                        </div>
+                        <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                            <div style="position: absolute; left: 0; top: 0; transition: 0s;width: 200%; height: 200%;"></div>
+                        </div>
+                    </kendo-resize-sensor>
+                </div>
+            </kendo-slider>
+        </section>
         <section>
             <kendo-slider dir="ltr" class="k-slider-horizontal k-slider k-slider-transitions k-widget k-state-default" aria-valuemin="0" aria-valuemax="15" aria-valuenow="5" style="width: 226px;">
                 <div class="k-slider-wrap k-slider-buttons" id="fae40c22-b312-bb95-8052-cfa59846b269" tabindex="0" style="position: relative;">
@@ -71,37 +120,177 @@
                 </div>
             </kendo-slider>
         </section>
+        <section>
+            <kendo-slider dir="ltr" class="k-slider-horizontal k-slider k-slider-transitions k-widget k-state-default" aria-valuemin="0" aria-valuemax="15" aria-valuenow="15" style="width: 226px;">
+                <div class="k-slider-wrap k-slider-buttons" id="92bce93d-a5ef-95a8-d1ef-d49182179669" tabindex="0" style="position: relative;">
+                <a class="k-button k-button-decrease" title="decrement" aria-label="decrement">
+                    <span class="k-icon k-i-arrow-w"></span>
+                </a>
+                <a class="k-button k-button-increase" title="increment" aria-label="increment">
+                    <span class="k-icon k-i-arrow-e">
+                    </span>
+                </a>
+                    <ul kendosliderticks="" class="k-reset k-slider-items">
+                        <li role="presentation" class="k-tick k-first" title="0" style="width: 5px;">
+                        </li><li role="presentation" class="k-tick" title="1" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="2" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="3" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="4" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="5" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="6" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="7" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="8" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="9" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="10" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="11" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="12" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="13" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="14" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick k-last" title="15" style="width: 5px;">
+                        </li>
+                    </ul>
+                    <div class="k-slider-track" style="width: 150px;">
+                        <div class="k-slider-selection" style="width: 150px;">
+                        </div>
+                        <a kendodraggable="" class="k-draghandle" title="Drag" style="left: 142px;">Drag</a>
+                    </div>
+                    <kendo-resize-sensor>
+                        <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                            <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
+                        </div>
+                        <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                            <div style="position: absolute; left: 0; top: 0; transition: 0s;width: 200%; height: 200%;"></div>
+                        </div>
+                    </kendo-resize-sensor>
+                </div>
+            </kendo-slider>
+        </section>
 
 
         <span>Disabled</span>
         <section>
-                <kendo-slider dir="ltr" class="k-slider-horizontal k-slider k-slider-transitions k-widget k-state-default k-state-disabled ng-untouched ng-pristine" aria-disabled="true" aria-valuemin="0" aria-valuemax="10" aria-valuenow="5">
-                    <div class="k-slider-wrap k-slider-buttons" id="08f3d866-920e-ef4f-1691-cd9ba293395d" style="position: relative;">
-                        <a class="k-button k-button-decrease" title="decrement" aria-label="decrement">
-                            <span class="k-icon k-i-arrow-w">
-                            </span>
-                        </a>
-                        <a class="k-button k-button-increase" title="increment" aria-label="increment">
-                            <span class="k-icon k-i-arrow-e">
-                            </span>
-                        </a>
-                        <ul kendosliderticks="" class="k-reset k-slider-items">
-                        <li role="presentation" class="k-tick k-first" title="0" style="width: 6px;">
-                        </li><li role="presentation" class="k-tick" title="1" style="width: 13px;">
-                        </li><li role="presentation" class="k-tick" title="2" style="width: 12px;">
-                        </li><li role="presentation" class="k-tick" title="3" style="width: 12px;">
-                        </li><li role="presentation" class="k-tick" title="4" style="width: 13px;">
-                        </li><li role="presentation" class="k-tick" title="5" style="width: 12px;">
-                        </li><li role="presentation" class="k-tick" title="6" style="width: 13px;">
-                        </li><li role="presentation" class="k-tick" title="7" style="width: 12px;">
-                        </li><li role="presentation" class="k-tick" title="8" style="width: 12px;">
-                        </li><li role="presentation" class="k-tick" title="9" style="width: 13px;">
-                        </li><li role="presentation" class="k-tick k-last" title="10" style="width: 6px;">
-                        </li>
-                    <div class="k-slider-track" style="width: 124px;">
-                        <div class="k-slider-selection" style="width: 62px;">
+            <kendo-slider dir="ltr" class="k-slider-horizontal k-slider k-slider-transitions k-widget k-state-disabled" aria-valuemin="0" aria-valuemax="15" aria-valuenow="0" style="width: 226px;">
+                <div class="k-slider-wrap k-slider-buttons" id="92bce93d-a5ef-95a8-d1ef-d49182179669" tabindex="0" style="position: relative;">
+                    <a class="k-button k-button-decrease" title="decrement" aria-label="decrement">
+                    <span class="k-icon k-i-arrow-w">
+                    </span>
+                </a>
+                <a class="k-button k-button-increase" title="increment" aria-label="increment">
+                    <span class="k-icon k-i-arrow-e">
+                    </span>
+                </a>
+                <ul kendosliderticks="" class="k-reset k-slider-items">
+                    <li role="presentation" class="k-tick k-first" title="0" style="width: 5px;">
+                    </li><li role="presentation" class="k-tick" title="1" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="2" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="3" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="4" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="5" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="6" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="7" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="8" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="9" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="10" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="11" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="12" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="13" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="14" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick k-last" title="15" style="width: 5px;">
+                    </li>
+                </ul>
+                    <div class="k-slider-track" style="width: 150px;">
+                        <div class="k-slider-selection" style="width: 0px;">
                         </div>
-                            <a kendodraggable="" class="k-draghandle" title="Drag" style="left: 54px;">Drag</a>
+                        <a kendodraggable="" class="k-draghandle" title="Drag" style="left: -8px;">Drag</a>
+                    </div>
+                    <kendo-resize-sensor>
+                        <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                            <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
+                        </div>
+                        <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                            <div style="position: absolute; left: 0; top: 0; transition: 0s;width: 200%; height: 200%;"></div>
+                        </div>
+                    </kendo-resize-sensor>
+                </div>
+            </kendo-slider>
+        </section>
+        <section>
+            <kendo-slider dir="ltr" class="k-slider-horizontal k-slider k-slider-transitions k-widget k-state-disabled" aria-valuemin="0" aria-valuemax="15" aria-valuenow="5" style="width: 226px;">
+                <div class="k-slider-wrap k-slider-buttons" id="fae40c22-b312-bb95-8052-cfa59846b269" tabindex="0" style="position: relative;">
+                    <a class="k-button k-button-decrease" title="decrement" aria-label="decrement">
+                        <span class="k-icon k-i-arrow-w">
+                        </span>
+                    </a>
+                    <a class="k-button k-button-increase" title="increment" aria-label="increment">
+                        <span class="k-icon k-i-arrow-e">
+                        </span>
+                    </a>
+                    <ul kendosliderticks="" class="k-reset k-slider-items">
+                        <li role="presentation" class="k-tick k-first" title="0" style="width: 5px;">
+                        </li><li role="presentation" class="k-tick" title="1" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="2" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="3" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="4" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="5" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="6" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="7" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="8" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="9" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="10" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="11" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="12" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="13" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="14" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick k-last" title="15" style="width: 5px;"></li>
+                    </ul>
+                    <div class="k-slider-track" style="width: 150px;">
+                        <div class="k-slider-selection" style="width: 50px; transition: none;"></div>
+                        <a kendodraggable="" class="k-draghandle" title="Drag" style="left: 42px; transition: none;">Drag</a>
+                    </div>
+                    <kendo-resize-sensor>
+                        <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                            <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
+                        </div>
+                        <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                            <div style="position: absolute; left: 0; top: 0; transition: 0s;width: 200%; height: 200%;"></div>
+                        </div>
+                    </kendo-resize-sensor>
+                </div>
+            </kendo-slider>
+        </section>
+        <section>
+            <kendo-slider dir="ltr" class="k-slider-horizontal k-slider k-slider-transitions k-widget k-state-disabled" aria-valuemin="0" aria-valuemax="15" aria-valuenow="15" style="width: 226px;">
+                <div class="k-slider-wrap k-slider-buttons" id="92bce93d-a5ef-95a8-d1ef-d49182179669" tabindex="0" style="position: relative;">
+                <a class="k-button k-button-decrease" title="decrement" aria-label="decrement">
+                    <span class="k-icon k-i-arrow-w"></span>
+                </a>
+                <a class="k-button k-button-increase" title="increment" aria-label="increment">
+                    <span class="k-icon k-i-arrow-e">
+                    </span>
+                </a>
+                    <ul kendosliderticks="" class="k-reset k-slider-items">
+                        <li role="presentation" class="k-tick k-first" title="0" style="width: 5px;">
+                        </li><li role="presentation" class="k-tick" title="1" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="2" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="3" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="4" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="5" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="6" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="7" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="8" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="9" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="10" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="11" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="12" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="13" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="14" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick k-last" title="15" style="width: 5px;">
+                        </li>
+                    </ul>
+                    <div class="k-slider-track" style="width: 150px;">
+                        <div class="k-slider-selection" style="width: 150px;">
+                        </div>
+                        <a kendodraggable="" class="k-draghandle" title="Drag" style="left: 142px;">Drag</a>
                     </div>
                     <kendo-resize-sensor>
                         <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
@@ -117,35 +306,129 @@
 
         <span>Readonly</span>
         <section>
-                <kendo-slider dir="ltr" class="k-slider-horizontal k-slider k-slider-transitions k-widget k-state-default ng-pristine ng-valid ng-touched" aria-readonly="true" aria-valuemin="0" aria-valuemax="10" aria-valuenow="5">
-                        <div class="k-slider-wrap k-slider-buttons" id="e903d0a3-9922-82ae-5b13-555bb6e838b4" tabindex="0" style="position: relative;">
-                            <a class="k-button k-button-decrease" title="decrement" aria-label="decrement">
-                                <span class="k-icon k-i-arrow-w">
-                                </span>
-                            </a>
-                            <a class="k-button k-button-increase" title="increment" aria-label="increment">
-                                <span class="k-icon k-i-arrow-e">
-                                </span>
-                            </a>
-                            <ul kendosliderticks="" class="k-reset k-slider-items">
-                     <li role="presentation" class="k-tick k-first" title="0" style="width: 6px;">
-                     </li><li role="presentation" class="k-tick" title="1" style="width: 13px;">
-                     </li><li role="presentation" class="k-tick" title="2" style="width: 12px;">
-                     </li><li role="presentation" class="k-tick" title="3" style="width: 12px;">
-                     </li><li role="presentation" class="k-tick" title="4" style="width: 13px;">
-                     </li><li role="presentation" class="k-tick" title="5" style="width: 12px;">
-                     </li><li role="presentation" class="k-tick" title="6" style="width: 13px;">
-                     </li><li role="presentation" class="k-tick" title="7" style="width: 12px;">
-                     </li><li role="presentation" class="k-tick" title="8" style="width: 12px;">
-                     </li><li role="presentation" class="k-tick" title="9" style="width: 13px;">
-                     </li><li role="presentation" class="k-tick k-last" title="10" style="width: 6px;">
-                     </li>
-                  </ul>
-                    <div class="k-slider-track" style="width: 124px;">
-                        <div class="k-slider-selection" style="width: 62px;">
+            <kendo-slider dir="ltr" class="k-slider-horizontal k-slider k-slider-transitions k-widget k-state-disabled" aria-readonly="true" aria-valuemin="0" aria-valuemax="15" aria-valuenow="0" style="width: 226px;">
+                <div class="k-slider-wrap k-slider-buttons" id="92bce93d-a5ef-95a8-d1ef-d49182179669" tabindex="0" style="position: relative;">
+                    <a class="k-button k-button-decrease" title="decrement" aria-label="decrement">
+                    <span class="k-icon k-i-arrow-w">
+                    </span>
+                </a>
+                <a class="k-button k-button-increase" title="increment" aria-label="increment">
+                    <span class="k-icon k-i-arrow-e">
+                    </span>
+                </a>
+                <ul kendosliderticks="" class="k-reset k-slider-items">
+                    <li role="presentation" class="k-tick k-first" title="0" style="width: 5px;">
+                    </li><li role="presentation" class="k-tick" title="1" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="2" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="3" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="4" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="5" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="6" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="7" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="8" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="9" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="10" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="11" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="12" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="13" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick" title="14" style="width: 10px;">
+                    </li><li role="presentation" class="k-tick k-last" title="15" style="width: 5px;">
+                    </li>
+                </ul>
+                    <div class="k-slider-track" style="width: 150px;">
+                        <div class="k-slider-selection" style="width: 0px;">
                         </div>
-                            <a kendodraggable="" class="k-draghandle" title="Drag" style="left: 54px;">Drag</a>
+                        <a kendodraggable="" class="k-draghandle" title="Drag" style="left: -8px;">Drag</a>
+                    </div>
+                    <kendo-resize-sensor>
+                        <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                            <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
                         </div>
+                        <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                            <div style="position: absolute; left: 0; top: 0; transition: 0s;width: 200%; height: 200%;"></div>
+                        </div>
+                    </kendo-resize-sensor>
+                </div>
+            </kendo-slider>
+        </section>
+        <section>
+            <kendo-slider dir="ltr" class="k-slider-horizontal k-slider k-slider-transitions k-widget k-state-disabled" aria-readonly="true" aria-valuemin="0" aria-valuemax="15" aria-valuenow="5" style="width: 226px;">
+                <div class="k-slider-wrap k-slider-buttons" id="fae40c22-b312-bb95-8052-cfa59846b269" tabindex="0" style="position: relative;">
+                    <a class="k-button k-button-decrease" title="decrement" aria-label="decrement">
+                        <span class="k-icon k-i-arrow-w">
+                        </span>
+                    </a>
+                    <a class="k-button k-button-increase" title="increment" aria-label="increment">
+                        <span class="k-icon k-i-arrow-e">
+                        </span>
+                    </a>
+                    <ul kendosliderticks="" class="k-reset k-slider-items">
+                        <li role="presentation" class="k-tick k-first" title="0" style="width: 5px;">
+                        </li><li role="presentation" class="k-tick" title="1" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="2" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="3" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="4" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="5" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="6" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="7" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="8" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="9" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="10" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="11" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="12" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="13" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="14" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick k-last" title="15" style="width: 5px;"></li>
+                    </ul>
+                    <div class="k-slider-track" style="width: 150px;">
+                        <div class="k-slider-selection" style="width: 50px; transition: none;"></div>
+                        <a kendodraggable="" class="k-draghandle" title="Drag" style="left: 42px; transition: none;">Drag</a>
+                    </div>
+                    <kendo-resize-sensor>
+                        <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                            <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
+                        </div>
+                        <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                            <div style="position: absolute; left: 0; top: 0; transition: 0s;width: 200%; height: 200%;"></div>
+                        </div>
+                    </kendo-resize-sensor>
+                </div>
+            </kendo-slider>
+        </section>
+        <section>
+            <kendo-slider dir="ltr" class="k-slider-horizontal k-slider k-slider-transitions k-widget k-state-disabled" aria-readonly="true" aria-valuemin="0" aria-valuemax="15" aria-valuenow="15" style="width: 226px;">
+                <div class="k-slider-wrap k-slider-buttons" id="92bce93d-a5ef-95a8-d1ef-d49182179669" tabindex="0" style="position: relative;">
+                <a class="k-button k-button-decrease" title="decrement" aria-label="decrement">
+                    <span class="k-icon k-i-arrow-w"></span>
+                </a>
+                <a class="k-button k-button-increase" title="increment" aria-label="increment">
+                    <span class="k-icon k-i-arrow-e">
+                    </span>
+                </a>
+                    <ul kendosliderticks="" class="k-reset k-slider-items">
+                        <li role="presentation" class="k-tick k-first" title="0" style="width: 5px;">
+                        </li><li role="presentation" class="k-tick" title="1" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="2" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="3" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="4" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="5" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="6" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="7" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="8" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="9" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="10" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="11" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="12" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="13" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick" title="14" style="width: 10px;">
+                        </li><li role="presentation" class="k-tick k-last" title="15" style="width: 5px;">
+                        </li>
+                    </ul>
+                    <div class="k-slider-track" style="width: 150px;">
+                        <div class="k-slider-selection" style="width: 150px;">
+                        </div>
+                        <a kendodraggable="" class="k-draghandle" title="Drag" style="left: 142px;">Drag</a>
+                    </div>
                     <kendo-resize-sensor>
                         <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
                             <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
@@ -158,10 +441,10 @@
             </kendo-slider>
         </section>
 
-        <span>Predefined steps</span>
+        <span>Predefined steps: horizontal/vertical</span>
         <section>
-            <kendo-slider dir="ltr" class="k-slider-horizontal k-slider k-slider-transitions k-widget k-state-default" aria-valuemin="0" aria-valuemax="12" aria-valuenow="0">
-                <div class="k-slider-wrap k-slider-buttons" id="7997b638-e768-2666-fc9a-c508f40671a0" tabindex="0" style="position: relative;">
+                <kendo-slider dir="ltr" class="k-slider-horizontal k-slider k-slider-transitions k-widget k-state-default" aria-valuemin="0" aria-valuemax="12" aria-valuenow="0">
+                    <div class="k-slider-wrap k-slider-buttons" id="0f2c9cc9-e2be-d707-3f3e-2c5d8daa86ae" tabindex="0" style="position: relative;">
                     <a class="k-button k-button-decrease" title="decrement" aria-label="decrement">
                         <span class="k-icon k-i-arrow-w">
                         </span>
@@ -171,11 +454,15 @@
                         </span>
                     </a>
                     <ul kendosliderticks="" class="k-reset k-slider-items">
-                        <li role="presentation" class="k-tick k-first" title="0" style="width: 31px;">
-                        </li><li role="presentation" class="k-tick" title="6" style="width: 62px;">
-                        </li><li role="presentation" class="k-tick k-last" title="12" style="width: 31px;">
-                        </li>
-                    </ul>
+                     <li role="presentation" class="k-tick k-first" title="0" style="width: 10px;">
+                     </li><li role="presentation" class="k-tick" title="2" style="width: 21px;">
+                     </li><li role="presentation" class="k-tick" title="4" style="width: 21px;">
+                     </li><li role="presentation" class="k-tick" title="6" style="width: 20px;">
+                     </li><li role="presentation" class="k-tick" title="8" style="width: 21px;">
+                     </li><li role="presentation" class="k-tick" title="10" style="width: 21px;">
+                     </li><li role="presentation" class="k-tick k-last" title="12" style="width: 10px;">
+                     </li>
+                  </ul>
                     <div class="k-slider-track" style="width: 124px;">
                         <div class="k-slider-selection" style="transition: none; width: 0px;">
                         </div>
@@ -191,6 +478,51 @@
                     </kendo-resize-sensor>
                 </div>
             </kendo-slider>
+            <kendo-slider style="margin-top: 20px;" dir="ltr" class="k-slider-vertical k-slider k-slider-transitions k-widget k-state-default ng-pristine ng-valid ng-touched" aria-valuemin="0" aria-valuemax="10" aria-valuenow="5">
+                    <div class="k-slider-wrap k-slider-buttons" id="88f336d2-3548-ba34-8727-8f0b0a56d158" tabindex="0" style="position: relative;">
+                    <a class="k-button k-button-decrease" title="decrement" aria-label="decrement">
+                        <span class="k-icon k-i-arrow-s">
+                        </span>
+                    </a>
+                    <a class="k-button k-button-increase" title="increment" aria-label="increment">
+                        <span class="k-icon k-i-arrow-n">
+                        </span>
+                    </a>
+                    <ul kendosliderticks="" class="k-reset k-slider-items">
+                    <li role="presentation" class="k-tick k-last" title="10" style="height: 6px;">
+                     </li><li role="presentation" class="k-tick" title="9" style="height: 13px;">
+                     </li><li role="presentation" class="k-tick" title="8" style="height: 12px;">
+                     </li><li role="presentation" class="k-tick" title="7" style="height: 12px;">
+                     </li><li role="presentation" class="k-tick" title="6" style="height: 13px;">
+                     </li><li role="presentation" class="k-tick" title="5" style="height: 12px;">
+                     </li><li role="presentation" class="k-tick" title="4" style="height: 13px;">
+                     </li><li role="presentation" class="k-tick" title="3" style="height: 12px;">
+                     </li><li role="presentation" class="k-tick" title="2" style="height: 12px;">
+                     </li><li role="presentation" class="k-tick" title="1" style="height: 13px;">
+                     </li><li role="presentation" class="k-tick k-first" title="0" style="height: 6px;">
+                     </li>
+                  </ul>
+                        <div class="k-slider-track" style="height: 124px;">
+                            <div class="k-slider-selection" style="height: 62px;">
+                            </div>
+                                <a kendodraggable="" class="k-draghandle" title="Drag" style="bottom: 54px;">Drag</a>
+                            </div>
+                            <kendo-resize-sensor>
+                                <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                                    <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
+                                </div>
+                                <div style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">
+                                    <div style="position: absolute; left: 0; top: 0; transition: 0s;width: 200%; height: 200%;"></div>
+                                </div>
+                            </kendo-resize-sensor>
+                        </div>
+                  </kendo-slider>
+        </section>
+        <section>
+
+        </section>
+        <section>
+
         </section>
     </div>
 </body>
