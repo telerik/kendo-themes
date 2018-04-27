@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.51.0"></a>
+# 2.51.0 (2018-04-27)
+
+
+### Bug Fixes
+
+* **grid:** filter row borders are missing in RTL ([f939f8e](https://github.com/telerik/kendo-themes/commit/f939f8e))
+* **grid:** improve grouping header layout in Angular ([1df42eb](https://github.com/telerik/kendo-themes/commit/1df42eb))
+* do not apply color to all -wrap elements inside containers ([61843f9](https://github.com/telerik/kendo-themes/commit/61843f9))
+* **grid:** improve spacing of boolean filter row ([709d4c2](https://github.com/telerik/kendo-themes/commit/709d4c2))
+* **numerictextbox:** stretch buttons with input height ([8c0e8c6](https://github.com/telerik/kendo-themes/commit/8c0e8c6))
+
+
+### Features
+
+* **calendar:** add range selection styles ([6c8abf7](https://github.com/telerik/kendo-themes/commit/6c8abf7))
+* add styles for chat widget ([#146](https://github.com/telerik/kendo-themes/issues/146)) ([5729aec](https://github.com/telerik/kendo-themes/commit/5729aec))
+* add styles for Material Upload ([0a183f4](https://github.com/telerik/kendo-themes/commit/0a183f4))
+* switch styles for material theme ([277ca4f](https://github.com/telerik/kendo-themes/commit/277ca4f))
+
+
+
+
 <a name="2.50.0"></a>
 # 2.50.0 (2018-04-11)
 

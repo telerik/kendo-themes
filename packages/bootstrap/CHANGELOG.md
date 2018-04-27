@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.12.0"></a>
+# 2.12.0 (2018-04-27)
+
+
+### Bug Fixes
+
+* **grid:** improve grouping header layout in Angular ([1df42eb](https://github.com/telerik/kendo-themes/commit/1df42eb))
+* **textarea:** use input appearance ([af44caf](https://github.com/telerik/kendo-themes/commit/af44caf))
+
+
+### Features
+
+* add styles for chat widget ([#146](https://github.com/telerik/kendo-themes/issues/146)) ([5729aec](https://github.com/telerik/kendo-themes/commit/5729aec))
+* add styles for Material Upload ([0a183f4](https://github.com/telerik/kendo-themes/commit/0a183f4))
+
+
+
+
 <a name="2.11.11"></a>
 ## 2.11.11 (2018-04-11)
 
