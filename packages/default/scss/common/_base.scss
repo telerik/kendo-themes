@@ -177,6 +177,7 @@ $widget-border-width: 1px !default;
 
     // Vertical rule
     .k-vbox > .k-hr {
+        margin: 0;
         flex: 0 0 auto;
     }
 
