@@ -4,12 +4,11 @@ $slider-draghandle-active-size: 20px !default;
 $slider-button-size: 31px !default;
 $slider-draghandle-size: 19px !default;
 $slider-tick-size: 2px !default;
+$slider-button-offset: 22px !default;
 
 @import "~@progress/kendo-theme-default/scss/slider/layout";
 
 @include exports('slider/layout/material') {
-    $slider-button-spacing: 12px !default;
-
     .k-slider {
         .k-tick {
             margin: 0;
@@ -43,13 +42,6 @@ $slider-tick-size: 2px !default;
                 right: 0;
             }
         }
-
-        .k-button-decrease {
-            margin-left: -$slider-button-spacing;
-        }
-        .k-button-increase {
-            margin-right: -$slider-button-spacing;
-        }
     }
 
     .k-slider-vertical {
@@ -61,13 +53,6 @@ $slider-tick-size: 2px !default;
                 top: auto;
                 bottom: 0;
             }
-        }
-
-        .k-button-decrease {
-            margin-bottom: -$slider-button-spacing;
-        }
-        .k-button-increase {
-            margin-top: -$slider-button-spacing;
         }
     }
 }
