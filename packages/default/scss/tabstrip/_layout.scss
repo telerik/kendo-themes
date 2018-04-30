@@ -1,3 +1,7 @@
+$tabstrip-tab-padding-x: $nav-item-padding-x !default;
+$tabstrip-tab-padding-y: $nav-item-padding-y !default;
+$tabstrip-tab-gap: $nav-item-margin !default;
+
 @include exports("tabstrip/layout") {
 
     .k-tabstrip {
@@ -26,7 +30,7 @@
             }
 
             .k-item .k-link {
-                padding: $nav-item-padding-y $nav-item-padding-x;
+                padding: $tabstrip-tab-padding-y $tabstrip-tab-padding-x;
                 color: inherit;
                 cursor: pointer;
                 display: inline-flex;
@@ -123,7 +127,7 @@
             }
 
             .k-item + .k-item {
-                margin-left: $nav-item-margin;
+                margin-left: $tabstrip-tab-gap;
             }
 
             .k-item.k-state-active {
@@ -146,7 +150,7 @@
             }
 
             .k-item + .k-item {
-                margin-left: $nav-item-margin;
+                margin-left: $tabstrip-tab-gap;
             }
 
             .k-item.k-state-active {
@@ -173,7 +177,7 @@
             }
 
             .k-item + .k-item {
-                margin-top: $nav-item-margin;
+                margin-top: $tabstrip-tab-gap;
             }
 
             .k-item.k-state-active {
@@ -204,7 +208,7 @@
             }
 
             .k-item + .k-item {
-                margin-top: $nav-item-margin;
+                margin-top: $tabstrip-tab-gap;
             }
 
             .k-item.k-state-active {
