@@ -3,7 +3,7 @@ $slider-draghandle-border-width: 0 !default;
 $slider-draghandle-active-size: 20px !default;
 $slider-button-size: 31px !default;
 $slider-draghandle-size: 19px !default;
-$slider-tick-size: .12em !default;
+$slider-tick-size: 2px !default;
 
 @import "~@progress/kendo-theme-default/scss/slider/layout";
 
@@ -12,14 +12,22 @@ $slider-tick-size: .12em !default;
 
     .k-slider {
         .k-tick {
+            margin: 0;
+
             &::after {
+                $tick-offset: -$slider-tick-size / 2;
+
                 content: "";
                 position: absolute;
                 z-index: 1;
                 height: $slider-tick-size;
                 width: $slider-tick-size;
+                top: 50%;
+                left: 50%;
+                margin: $tick-offset 0 0 $tick-offset;
             }
         }
+
         .k-draghandle {
             z-index: 2;
         }
@@ -27,14 +35,15 @@ $slider-tick-size: .12em !default;
 
     .k-slider-horizontal {
         .k-tick {
-            &::after {
-                top: 50%;
+            &.k-first::after {
                 left: 0;
+            }
+            &.k-last::after {
+                left: auto;
                 right: 0;
-                transform: translateY(-50%);
-                margin-top: -$slider-tick-size;
             }
         }
+
         .k-button-decrease {
             margin-left: -$slider-button-spacing;
         }
@@ -45,14 +54,15 @@ $slider-tick-size: .12em !default;
 
     .k-slider-vertical {
         .k-tick {
-            &::after {
-                left: 50%;
+            &.k-last::after {
                 top: 0;
+            }
+            &.k-first::after {
+                top: auto;
                 bottom: 0;
-                transform: translateX(-50%);
-                margin-left: -$slider-tick-size / 2;
             }
         }
+
         .k-button-decrease {
             margin-bottom: -$slider-button-spacing;
         }

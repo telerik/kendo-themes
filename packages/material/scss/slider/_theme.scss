@@ -7,6 +7,7 @@ $slider-disabled-bg: $input-disabled-bg !default;
 
     .k-slider {
         cursor: pointer;
+
         .k-slider-track,
         .k-slider-selection {
             border-radius: 0;
@@ -18,14 +19,13 @@ $slider-disabled-bg: $input-disabled-bg !default;
         .k-slider-selection {
             background-color: $slider-selection-background-color;
         }
-        .k-tick {
-            &::after {
-                background: $base-text;
-            }
+        .k-tick::after {
+            background: $base-text;
         }
 
         .k-button {
             @include border-radius( 50% );
+
             &:hover,
             &.k-state-hover {
                 &::before {
@@ -38,9 +38,11 @@ $slider-disabled-bg: $input-disabled-bg !default;
             @include appearance( primary-button );
             @include border-radius( 50% );
             box-sizing: border-box;
+
             &:hover {
                 @include appearance( hovered-primary-button );
             }
+
             &:focus {
                 box-shadow: $draghandle-focus-shadow;
             }
@@ -48,6 +50,7 @@ $slider-disabled-bg: $input-disabled-bg !default;
 
         &.k-state-disabled {
             opacity: 1;
+
             .k-slider-track,
             .k-slider-selection,
             .k-draghandle {
