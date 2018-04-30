@@ -1,0 +1,31 @@
+
+@import "~@progress/kendo-theme-default/scss/treeview/theme";
+
+@include exports('treeview/theme/material') {
+    $treeview-icon-size: 24px !default;
+
+    .k-treeview {
+        .k-mid {
+            &:focus,
+            &:hover {
+                cursor: pointer;
+                background: $hovered-bg;
+            }
+            &:focus,
+            &:active {
+                outline: 0;
+                color: $accent;
+            }
+        }
+        .k-in {
+            &.k-state-selected {
+                color: $accent;
+                background-color: inherit;
+            }
+        }
+
+        .k-icon {
+            font-size: $treeview-icon-size;
+        }
+    }
+}

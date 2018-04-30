@@ -1,8 +1,6 @@
 
-$treeview-indent: 16px !default;
-
-@include exports("treeview/layout") {
-
+$treeview-item-padding-y: $button-padding-y !default;
+$treeview-item-padding-x: $button-padding-x !default;@include exports("treeview/layout") {
     // Base
     .k-treeview {
         border-width: 0;
@@ -49,7 +47,7 @@ $treeview-indent: 16px !default;
         .k-in {
             @include border-radius();
             margin: 0;
-            padding: $button-padding-y $button-padding-x;
+            padding: $treeview-item-padding-y $treeview-item-padding-x;
             border: 1px solid transparent;
             text-decoration: none;
             display: inline-flex;
@@ -80,8 +78,6 @@ $treeview-indent: 16px !default;
         }
 
     }
-
-
 
 
     // RTL
