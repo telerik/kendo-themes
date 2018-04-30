@@ -157,7 +157,7 @@ $widget-border-width: 1px !default;
 
     %hr-vertical {
         margin: 0;
-        width: auto;
+        width: 0;
         height: auto;
         border-width: 0 0 0 1px;
         flex: 0 0 auto;
@@ -177,7 +177,6 @@ $widget-border-width: 1px !default;
 
     // Vertical rule
     .k-vbox > .k-hr {
-        margin: 0;
         flex: 0 0 auto;
     }
 

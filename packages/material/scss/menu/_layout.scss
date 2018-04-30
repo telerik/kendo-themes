@@ -1,8 +1,8 @@
 $item-hovered-opacity: .12 !default;
 $item-focused-opacity: .16 !default;
 $item-selected-opacity: .16 !default;
-$menu-separator-spacer: $popup-padding-y !default;
 $menu-scrolling-border: transparent !default;
+$menu-separator-spacer-y: $popup-padding-y !default;
 
 @import "~@progress/kendo-theme-default/scss/menu/layout";
 

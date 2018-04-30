@@ -126,6 +126,7 @@ $toolbar-border-width: 1px !default;
         // Separator
         .k-separator {
             @extend %hr-vertical;
+            margin: 0 ($toolbar-padding-x / 2);
         }
     }
 
