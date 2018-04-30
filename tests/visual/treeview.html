@@ -9,7 +9,7 @@
 
     <style>
         #test-area {
-            max-width: 200px;
+            max-width: 600px;
             display: grid;
             grid-gap: 25px 25px;
             grid-template-columns: 1fr 1fr;
@@ -24,22 +24,22 @@
 
         <span>Normal</span>
         <section>
-            <kendo-treeview childrenfield="items" kendotreeviewexpandable="" kendotreeviewhierarchybinding="" kendotreeviewselectable="" textfield="text" class="k-widget k-treeview" role="tree" aria-multiselectable="false">
-                <ul class="k-treeview-lines ng-tns-c0-0 k-group" kendotreeviewgroup="" role="group">
-                    <li class="k-item ng-tns-c0-0 ng-star-inserted" kendotreeviewitem="" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="0" data-treeindex="0">
+            <kendo-treeview childrenfield="items" textfield="text" class="k-widget k-treeview" role="tree" aria-multiselectable="false">
+                <ul class="k-treeview-lines" role="group">
+                    <li class="k-item" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="0" data-treeindex="0">
                         <div class="k-mid">
-                            <span class="k-icon ng-tns-c0-0 k-i-expand ng-star-inserted">
+                            <span class="k-icon k-i-expand">
                             </span>
-                            <span class="k-in" kendotreeviewitemcontent="" data-treeindex="0">
+                            <span class="k-in" data-treeindex="0">
                                 Furniture
                             </span>
                         </div>
                     </li>
-                    <li class="k-item ng-tns-c0-0 ng-star-inserted" kendotreeviewitem="" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="1">
+                    <li class="k-item" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="1">
                         <div class="k-mid">
-                            <span class="k-icon ng-tns-c0-0 k-i-expand ng-star-inserted">
+                            <span class="k-icon k-i-expand">
                             </span>
-                            <span class="k-in" kendotreeviewitemcontent="" data-treeindex="1">
+                            <span class="k-in" data-treeindex="1">
                                         Decor
                             </span>
                         </div>
@@ -50,29 +50,29 @@
 
         <span>Expanded state</span>
         <section>
-                <kendo-treeview kendotreeviewexpandable="" textfield="text" class="k-widget k-treeview" role="tree">
-                    <ul class="k-treeview-lines ng-tns-c0-0 k-group" kendotreeviewgroup="" role="group">
-                        <li class="k-item ng-tns-c0-0 ng-star-inserted" kendotreeviewitem="" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="0" data-treeindex="0">
+                <kendo-treeview textfield="text" class="k-widget k-treeview" role="tree">
+                    <ul class="k-treeview-lines" role="group">
+                        <li class="k-item" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="0" data-treeindex="0">
                             <div class="k-mid">
-                                <span class="k-icon ng-tns-c0-0 k-i-expand ng-star-inserted">
+                                <span class="k-icon k-i-expand">
                                 </span>
-                                <span class="k-in" kendotreeviewitemcontent="" data-treeindex="0">
+                                <span class="k-in" data-treeindex="0">
                                     Furniture
                                 </span>
                             </div>
                         </li>
-                        <li class="k-item ng-tns-c0-0 ng-star-inserted" kendotreeviewitem="" aria-level="1" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="1">
+                        <li class="k-item" aria-level="1" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="1">
                             <div class="k-mid">
-                                <span class="k-icon ng-tns-c0-0 k-i-collapse ng-star-inserted">
+                                <span class="k-icon k-i-collapse">
                             </span>
-                            <span class="k-in" kendotreeviewitemcontent="" data-treeindex="1">
+                            <span class="k-in" data-treeindex="1">
                                 Decor
                             </span>
                         </div>
-                        <ul kendotreeviewgroup="" role="group" class="ng-tns-c0-1 ng-tns-c0-0 ng-trigger ng-trigger-toggle k-group ng-star-inserted">
-                            <li class="k-item ng-tns-c0-1 ng-star-inserted" kendotreeviewitem="" aria-level="2" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="1_0" style="">
+                        <ul role="group" class="k-group">
+                            <li class="k-item" aria-level="2" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="1_0">
                                 <div class="k-mid">
-                                    <span class="k-in" kendotreeviewitemcontent="" data-treeindex="1_0">
+                                    <span class="k-in" data-treeindex="1_0">
                                         Bed Linen
                                     </span>
                                 </div>
@@ -85,18 +85,18 @@
 
         <span>Disabled state</span>
         <section>
-                <kendo-treeview kendotreeviewdisable="" textfield="text" class="k-widget k-treeview" role="tree">
-                        <ul class="k-treeview-lines ng-tns-c0-0 k-group" kendotreeviewgroup="" role="group">
-                            <li class="k-item ng-tns-c0-0 ng-star-inserted" kendotreeviewitem="" aria-level="1" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="0" data-treeindex="0">
+                <kendo-treeview textfield="text" class="k-widget k-treeview" role="tree">
+                        <ul class="k-treeview-lines" role="group">
+                            <li class="k-item" aria-level="1" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="0" data-treeindex="0">
                                 <div class="k-mid">
-                                    <span class="k-in" kendotreeviewitemcontent="" data-treeindex="0">
+                                    <span class="k-in" data-treeindex="0">
                                         Furniture
                                     </span>
                                 </div>
-                            <ul kendotreeviewgroup="" role="group" class="ng-tns-c0-1 ng-tns-c0-0 ng-trigger ng-trigger-toggle k-group ng-star-inserted">
-                            <li class="k-item ng-tns-c0-1 k-state-disabled ng-star-inserted" kendotreeviewitem="" aria-level="2" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="0_2" style="">
+                            <ul role="group" class= k-group">
+                            <li class="k-item k-state-disabled" aria-level="2" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="0_2">
                                 <div class="k-mid">
-                                    <span class="k-in" kendotreeviewitemcontent="" data-treeindex="0_2">
+                                    <span class="k-in" data-treeindex="0_2">
                                         Occasional Furniture
                                     </span>
                                 </div>
@@ -111,24 +111,24 @@
 
         <span>Selection</span>
         <section>
-            <kendo-treeview kendotreeviewselectable="" textfield="text" class="k-widget k-treeview" role="tree" aria-multiselectable="false">
-                <ul class="k-treeview-lines ng-tns-c0-0 k-group" kendotreeviewgroup="" role="group">
-                    <li class="k-item ng-tns-c0-0 ng-star-inserted" kendotreeviewitem="" aria-level="1" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="0">
+            <kendo-treeview textfield="text" class="k-widget k-treeview" role="tree" aria-multiselectable="false">
+                <ul class="k-treeview-lines" role="group">
+                    <li class="k-item" aria-level="1" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="0">
                         <div class="k-mid">
-                            <span class="k-in" kendotreeviewitemcontent="" data-treeindex="0">
+                            <span class="k-in" data-treeindex="0">
                             Furniture
                         </span>
                     </div>
-                    <ul kendotreeviewgroup="" role="group" class="ng-tns-c0-1 ng-tns-c0-0 ng-trigger ng-trigger-toggle k-group ng-star-inserted">
-                    <li class="k-item ng-tns-c0-1 ng-star-inserted" kendotreeviewitem="" aria-level="2" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="0_1" style="">
+                    <ul role="group" class= k-group">
+                    <li class="k-item" aria-level="2" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="0_1">
                         <div class="k-mid">
-                            <span class="k-in" kendotreeviewitemcontent="" data-treeindex="0_1">
+                            <span class="k-in" data-treeindex="0_1">
                             Sofas
                         </span>
                         </div>
-                        </li><li class="k-item ng-tns-c0-1 ng-star-inserted" kendotreeviewitem="" aria-level="2" aria-expanded="true" aria-selected="true" aria-checked="false" tabindex="0" role="treeitem" data-treeindex="0_2" style="">
+                        </li><li class="k-item" aria-level="2" aria-expanded="true" aria-selected="true" aria-checked="false" tabindex="0" role="treeitem" data-treeindex="0_2">
                         <div class="k-mid">
-                            <span class="k-in k-state-selected" kendotreeviewitemcontent="" data-treeindex="0_2">
+                            <span class="k-in k-state-selected" data-treeindex="0_2">
                                 Occasional Furniture
                             </span>
                         </div>
@@ -142,25 +142,25 @@
         <span>Checkboxes checked</span>
         <section>
             <kendo-treeview textfield="text" class="k-widget k-treeview" role="tree">
-                <ul class="k-treeview-lines ng-tns-c1-0 k-group" kendotreeviewgroup="" role="group">
-                    <li class="k-item ng-tns-c1-0 ng-star-inserted" kendotreeviewitem="" aria-level="1" aria-expanded="true" aria-selected="false" aria-checked="true" role="treeitem" tabindex="0" data-treeindex="0">
+                <ul class="k-treeview-lines k-group" role="group">
+                    <li class="k-item" aria-level="1" aria-expanded="true" aria-selected="false" aria-checked="true" role="treeitem" tabindex="0" data-treeindex="0">
                         <div class="k-mid">
-                        <kendo-checkbox class="ng-tns-c1-0 k-checkbox-wrapper ng-star-inserted" aria-checked="true">
+                        <kendo-checkbox class= k-checkbox-wrapper" aria-checked="true">
                             <input class="k-checkbox" type="checkbox" id="_1d54c47f-dd40-4e68-ac87-8384d41d459b" tabindex="-1" checked>
                             <label class="k-checkbox-label" tabindex="-1" for="_1d54c47f-dd40-4e68-ac87-8384d41d459b"></label>
                         </kendo-checkbox>
-                            <span class="k-in" kendotreeviewitemcontent="" data-treeindex="0">
+                            <span class="k-in" data-treeindex="0">
                                 Furniture
                             </span>
                         </div>
-                        <ul kendotreeviewgroup="" role="group" class="ng-tns-c1-1 ng-tns-c1-0 ng-trigger ng-trigger-toggle k-group ng-star-inserted">
-                        <li class="k-item ng-tns-c1-1 ng-star-inserted" kendotreeviewitem="" aria-level="2" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="0_0" style="">
+                        <ul role="group" class="k-group">
+                        <li class="k-item  aria-level="2" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="0_0">
                         <div class="k-mid">
-                        <kendo-checkbox class="ng-tns-c1-1 k-checkbox-wrapper ng-star-inserted">
+                        <kendo-checkbox class="k-checkbox-wrapper">
                             <input class="k-checkbox" type="checkbox" id="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef46" tabindex="-1">
                             <label class="k-checkbox-label" tabindex="-1" for="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef46"></label>
                         </kendo-checkbox>
-                            <span class="k-in" kendotreeviewitemcontent="" data-treeindex="0_0">
+                            <span class="k-in" data-treeindex="0_0">
                                 Tables &amp; Chairs
                             </span>
                         </div>

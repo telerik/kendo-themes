@@ -1,6 +1,5 @@
-$treeview-indent: 24px !default;
-$treeview-item-space-y: 6px !default;
-$treeview-item-space-x: 8px !default;
+$treeview-item-padding-y: 6px !default;
+$treeview-item-padding-x: 8px !default;
 
 @import "~@progress/kendo-theme-default/scss/treeview/layout";
 

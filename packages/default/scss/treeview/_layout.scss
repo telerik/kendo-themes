@@ -1,6 +1,9 @@
 
+$treeview-indent: 16px !default;
 $treeview-item-padding-y: $button-padding-y !default;
-$treeview-item-padding-x: $button-padding-x !default;@include exports("treeview/layout") {
+$treeview-item-padding-x: $button-padding-x !default;
+
+@include exports("treeview/layout") {
     // Base
     .k-treeview {
         border-width: 0;
