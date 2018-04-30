@@ -51,7 +51,7 @@ $image-spacing: 8px !default;
     .k-menu-expand-arrow {
         &.k-i-arrow-60-down {
             margin-left: $icon-spacing;
-            margin-right: (-$nav-item-padding-x / 2);
+            margin-right: -$icon-spacing;
         }
 
         &.k-i-arrow-60-left,
@@ -233,7 +233,7 @@ $image-spacing: 8px !default;
 
         .k-menu-expand-arrow {
             &.k-i-arrow-60-down {
-                margin-left: (-$nav-item-padding-x / 2);
+                margin-left: -$icon-spacing;
                 margin-right: $icon-spacing;
             }
         }
