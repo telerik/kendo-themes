@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.12.1"></a>
+## [2.12.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.12.0...@progress/kendo-theme-bootstrap@2.12.1) (2018-04-30)
+
+
+### Bug Fixes
+
+* **chat:** resolve missing file error when building from source ([#148](https://github.com/telerik/kendo-themes/issues/148)) ([d72af65](https://github.com/telerik/kendo-themes/commit/d72af65))
+
+
+
+
 <a name="2.12.0"></a>
 # 2.12.0 (2018-04-27)
 
