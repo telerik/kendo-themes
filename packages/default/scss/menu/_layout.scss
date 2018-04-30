@@ -1,4 +1,5 @@
-$menu-separator-spacer: 2px !default;
+$menu-separator-spacer-x: 2px !default;
+$menu-separator-spacer-y: $menu-separator-spacer-x !default;
 $image-spacing: 8px !default;
 
 @include exports("menu/layout") {
@@ -50,7 +51,7 @@ $image-spacing: 8px !default;
     .k-menu-expand-arrow {
         &.k-i-arrow-60-down {
             margin-left: $icon-spacing;
-            margin-right: -$icon-spacing;
+            margin-right: (-$nav-item-padding-x / 2);
         }
 
         &.k-i-arrow-60-left,
@@ -87,12 +88,17 @@ $image-spacing: 8px !default;
     // Orientation
     .k-menu-horizontal {
 
-        > .k-item + .k-item {
-            margin-left: $nav-item-margin;
+        > .k-item {
+            margin: 0 ( $nav-item-margin /2 );
+
+            &:first-of-type {
+                margin-left: 0;
+            }
         }
 
         > .k-item.k-separator {
             @extend %hr-vertical;
+            margin: 0 $menu-separator-spacer-x;
         }
     }
     .k-menu-vertical {
@@ -123,7 +129,7 @@ $image-spacing: 8px !default;
 
         .k-item.k-separator {
             @extend %hr;
-            margin: $menu-separator-spacer 0;
+            margin: $menu-separator-spacer-y 0;
         }
     }
 
@@ -221,22 +227,22 @@ $image-spacing: 8px !default;
             }
 
             .k-icon.k-menu-expand-arrow {
-                margin-left: 0;
+                margin-left: (-$nav-item-padding-x / 2);
             }
         }
 
         .k-menu-expand-arrow {
             &.k-i-arrow-60-down {
-                margin-left: -$icon-spacing;
+                margin-left: (-$nav-item-padding-x / 2);
                 margin-right: $icon-spacing;
             }
         }
 
         .k-menu-horizontal {
 
-            & > .k-item + .k-item:not(.k-separator) {
-                margin-right: $nav-item-margin;
-                margin-left: 0;
+            & > .k-item:first-of-type {
+                margin-left: ( $nav-item-margin /2 );
+                margin-right: 0;
             }
         }
 
