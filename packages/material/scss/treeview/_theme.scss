@@ -1,0 +1,26 @@
+
+@import "~@progress/kendo-theme-default/scss/treeview/theme";
+
+@include exports('treeview/theme/material') {
+    .k-treeview {
+        .k-mid {
+            &:hover {
+                cursor: pointer;
+                background: $hovered-bg;
+            }
+
+            &:focus,
+            &:active {
+                outline: 0;
+                color: $accent;
+            }
+        }
+        .k-in {
+            &.k-state-selected {
+                color: $accent;
+                background-color: transparent;
+            }
+        }
+
+    }
+}
