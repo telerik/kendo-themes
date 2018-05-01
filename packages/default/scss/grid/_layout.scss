@@ -95,7 +95,6 @@
             padding: $grid-cell-padding-y $grid-cell-padding-x;
             border-style: solid;
             border-color: inherit;
-            border-width: 0 0 $grid-cell-horizontal-border-width $grid-cell-vertical-border-width;
             outline: 0;
             font-weight: inherit;
             text-align: inherit;
@@ -112,9 +111,11 @@
         }
         th {
             padding: $grid-header-cell-padding-y $grid-cell-padding-x;
+            border-width: 0 0 1px $grid-cell-vertical-border-width;
             white-space: nowrap;
         }
         td {
+            border-width: 0 0 $grid-cell-horizontal-border-width $grid-cell-vertical-border-width;
             vertical-align: middle;
         }
 
