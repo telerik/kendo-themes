@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Treeview</title>
+    <title>Panelbar</title>
 
     <link rel="stylesheet" href="../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
@@ -29,7 +29,24 @@
                     <span class="k-link k-header k-state-selected">
                         First Title
                     </span>
-                </kendo-panelbar-item><kendo-panelbar-item class="k-item k-state-default" role="treeitem" id="k-panelbar-0-item-default-1" aria-selected="false">
+                </kendo-panelbar-item>
+                <kendo-panelbar-item class="k-item k-state-default" role="treeitem" id="k-panelbar-0-item-default-1" aria-selected="false">
+                    <span class="k-link k-header">
+                        Second Title
+                    </span>
+                </kendo-panelbar-item>
+            </kendo-panelbar>
+        </section>
+
+        <span>Normal disabled</span>
+        <section>
+            <kendo-panelbar tabindex="0" role="tree" aria-activedescendant="" dir="ltr" class="k-widget k-panelbar" style="height: auto; overflow: visible;">
+                <kendo-panelbar-item class="k-item k-state-default" role="treeitem" id="k-panelbar-0-item-default-0" aria-selected="true">
+                    <span class="k-link k-header k-state-disabled">
+                        First Title
+                    </span>
+                </kendo-panelbar-item>
+                <kendo-panelbar-item class="k-item k-state-default" role="treeitem" id="k-panelbar-0-item-default-1" aria-selected="false">
                     <span class="k-link k-header">
                         Second Title
                     </span>
@@ -72,18 +89,20 @@
                         </kendo-panelbar-item>
                     </div>
                 </div>
-                <kendo-panelbar-item class="k-item k-state-default" role="treeitem" id="k-panelbar-0-item-default-17" aria-expanded="false" aria-selected="false">
-                    <span class="k-link k-header">
-                            Target Games First
-                        <span class="k-icon k-i-arrow-s k-panelbar-expand"></span>
-                    </span>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-default" role="treeitem" id="k-panelbar-0-item-default-17" aria-expanded="false" aria-selected="false">
-                    <span class="k-link k-header">
-                            Target Games Second
-                        <span class="k-icon k-i-arrow-s k-panelbar-expand"></span>
-                    </span>
-                </kendo-panelbar-item>
+                <div class="k-panel k-group " style="overflow: visible; height: auto;">
+                    <kendo-panelbar-item class="k-item k-state-default" role="treeitem" id="k-panelbar-0-item-default-17" aria-expanded="false" aria-selected="false">
+                            <span class="k-link k-header">
+                                Target Games First
+                                <span class="k-icon k-i-arrow-s k-panelbar-expand"></span>
+                            </span>
+                    </kendo-panelbar-item>
+                    <kendo-panelbar-item class="k-item k-state-default" role="treeitem" id="k-panelbar-0-item-default-17" aria-expanded="false" aria-selected="false">
+                        <span class="k-link k-header">
+                                Target Games Second
+                            <span class="k-icon k-i-arrow-s k-panelbar-expand"></span>
+                        </span>
+                    </kendo-panelbar-item>
+                </div>
             </kendo-panelbar>
         </section>
 

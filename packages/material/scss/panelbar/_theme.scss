@@ -1,0 +1,42 @@
+@import "~@progress/kendo-theme-default/scss/panelbar/theme";
+
+@include exports('panelbar/theme/material') {
+
+    .k-panelbar {
+
+        .k-group {
+            border-width: 1px 0;
+
+            &:last-of-type {
+                border-width: 1px 0 0 0;
+            }
+        }
+
+        .k-item {
+            > .k-link {
+                color: $base-text;
+
+                &:hover,
+                &.k-state-hover {
+                    color: $base-text;
+                }
+            }
+
+            > .k-link.k-state-selected:not(.k-state-expanded),
+            > .k-link.k-state-selected:not(.k-state-active) {
+                color: $accent;
+                background-color: transparent;
+
+                &:hover,
+                &.k-state-hover {
+                    color: $accent;
+                    background-color: $hovered-bg;
+                }
+
+                .k-icon {
+                    color: $base-text;
+                }
+            }
+        }
+    }
+}
