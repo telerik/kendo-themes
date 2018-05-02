@@ -35,6 +35,7 @@
             background: none;
             box-sizing: border-box;
             display: flex;
+            flex-shrink: 0;
             flex-direction: column;
             position: relative;
         }
@@ -192,6 +193,28 @@
 
     // Quick reply
     .k-quick-replies {
+        display: block;
+    }
+    .k-quick-reply {
+        @include border-radius( 100px );
+        margin-right: $chat-quick-reply-spacing;
+        margin-bottom: ($chat-quick-reply-spacing / 2);
+        padding: $chat-quick-reply-padding-y $chat-quick-reply-padding-x;
+        border-width: 1px;
+        border-style: solid;
+        line-height: $chat-quick-reply-line-height;
+        cursor: pointer;
+        user-select: none;
+        display: inline-block;
+        flex: 0 0 auto;
+        transition-property: color, background-color, border-color;
+        transition-duration: .2s;
+        transition-timing-function: ease-in-out;
+    }
+
+
+    // Scrollable quick replies
+    .k-scrollable-quick-replies {
         margin-left: -$chat-message-list-padding-y;
         margin-right: -$chat-message-list-padding-y;
         padding-left: $chat-message-list-padding-y;
@@ -206,22 +229,13 @@
         &::-webkit-scrollbar {
             display: none;
         }
-    }
-    .k-quick-reply {
-        @include border-radius( 100px );
-        padding: $chat-quick-reply-padding-y $chat-quick-reply-padding-x;
-        border-width: 1px;
-        border-style: solid;
-        line-height: $chat-quick-reply-line-height;
-        cursor: pointer;
-        user-select: none;
-        flex: 0 0 auto;
-        transition-property: color, background-color, border-color;
-        transition-duration: .2s;
-        transition-timing-function: ease-in-out;
-    }
-    .k-quick-reply + .k-quick-reply {
-        margin-left: $chat-quick-reply-spacing;
+
+        .k-quick-reply {
+            margin: 0;
+        }
+        .k-quick-reply + .k-quick-reply {
+            margin-left: $chat-quick-reply-spacing;
+        }
     }
 
 
@@ -252,6 +266,10 @@
 
 
 @include exports( "chat/cards/layout" ) {
+
+    .k-chat .k-card-list {
+        margin: $chat-bubble-spacing 0 0;
+    }
 
     .k-chat .k-card-deck {
         margin-left: -$chat-message-list-padding-y;
@@ -378,10 +396,14 @@
 
 
         // Quick replies
-        .k-quick-reply + .k-quick-reply {
-            margin-left: 0;
-            margin-right: $chat-quick-reply-spacing
+        .k-quick-reply {
+            margin-right: 0;
+            margin-left: $chat-quick-reply-spacing;
         }
+        // .k-quick-reply + .k-quick-reply {
+        //     margin-left: 0;
+        //     margin-right: $chat-quick-reply-spacing
+        // }
     }
 
 
