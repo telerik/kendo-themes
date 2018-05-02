@@ -1,5 +1,58 @@
 $slider-track-thickness: 2px !default;
 $slider-draghandle-border-width: 0 !default;
 $slider-draghandle-active-size: 20px !default;
+$slider-button-size: 31px !default;
+$slider-draghandle-size: 19px !default;
+$slider-tick-size: 2px !default;
+$slider-button-offset: 22px !default;
 
 @import "~@progress/kendo-theme-default/scss/slider/layout";
+
+@include exports('slider/layout/material') {
+    .k-slider {
+        .k-tick {
+            margin: 0;
+
+            &::after {
+                $tick-offset: -$slider-tick-size / 2;
+
+                content: "";
+                position: absolute;
+                z-index: 1;
+                height: $slider-tick-size;
+                width: $slider-tick-size;
+                top: 50%;
+                left: 50%;
+                margin: $tick-offset 0 0 $tick-offset;
+            }
+        }
+
+        .k-draghandle {
+            z-index: 2;
+        }
+    }
+
+    .k-slider-horizontal {
+        .k-tick {
+            &.k-first::after {
+                left: 0;
+            }
+            &.k-last::after {
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+
+    .k-slider-vertical {
+        .k-tick {
+            &.k-last::after {
+                top: 0;
+            }
+            &.k-first::after {
+                top: auto;
+                bottom: 0;
+            }
+        }
+    }
+}

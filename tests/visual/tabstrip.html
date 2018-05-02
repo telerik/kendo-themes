@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>TabStrip</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        body {
+            background: #fafafa;
+        }
+
+        #test-area {
+            width: 920px;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area">
+        <section>
+            <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-top">
+                <ul class="k-reset k-tabstrip-items" role="tablist" tabindex="0">
+                    <li role="tab" class="k-item k-state-active" id="k-tabstrip-tab-0" aria-selected="true">
+                        <span class="k-link">Active</span>
+                    </li><!--
+                    --><li role="tab" class="k-item">
+                        <span class="k-link">Normal</span>
+                    </li><!--
+                    --><li role="tab" class=" k-item k-state-hover">
+                        <span class="k-link">Hover</span>
+                    </li><!--
+                    --><li role="tab" class=" k-item k-state-disabled" aria-disabled="true">
+                        <span class="k-link">Disabled</span>
+                    </li>
+                </ul>
+                <div role="tabpanel" class="k-content k-state-active" aria-hidden="false" aria-expanded="true" aria-labelledby="k-tabstrip-tab-0">
+                    <div>Top orientation</div>
+                </div>
+            </kendo-tabstrip>
+        </section>
+
+        <section>
+            <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-bottom">
+                <div role="tabpanel" class="k-content k-state-active" aria-hidden="false" aria-expanded="true" aria-labelledby="k-tabstrip-tab-0">
+                    <div>Bottom orientation</div>
+                </div>
+                <ul class="k-reset k-tabstrip-items" role="tablist" tabindex="0">
+                    <li role="tab" class="k-item k-state-active" id="k-tabstrip-tab-0" aria-selected="true">
+                        <span class="k-link">Active</span>
+                    </li><!--
+                    --><li role="tab" class="k-item">
+                        <span class="k-link">Normal</span>
+                    </li><!--
+                    --><li role="tab" class=" k-item k-state-hover">
+                        <span class="k-link">Hover</span>
+                    </li><!--
+                    --><li role="tab" class=" k-item k-state-disabled" aria-disabled="true">
+                        <span class="k-link">Disabled</span>
+                    </li>
+                </ul>
+            </kendo-tabstrip>
+        </section>
+
+        <section>
+            <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-left">
+                <ul class="k-reset k-tabstrip-items" role="tablist" tabindex="0">
+                    <li role="tab" class="k-item k-state-active" id="k-tabstrip-tab-0" aria-selected="true">
+                        <span class="k-link">Active</span>
+                    </li><!--
+                    --><li role="tab" class="k-item">
+                        <span class="k-link">Normal</span>
+                    </li><!--
+                    --><li role="tab" class=" k-item k-state-hover">
+                        <span class="k-link">Hover</span>
+                    </li><!--
+                    --><li role="tab" class=" k-item k-state-disabled" aria-disabled="true">
+                        <span class="k-link">Disabled</span>
+                    </li>
+                </ul>
+                <div role="tabpanel" class="k-content k-state-active" aria-hidden="false" aria-expanded="true" aria-labelledby="k-tabstrip-tab-0">
+                    <div>Left orientation</div>
+                </div>
+            </kendo-tabstrip>
+        </section>
+
+        <section>
+            <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-right">
+                <ul class="k-reset k-tabstrip-items" role="tablist" tabindex="0">
+                    <li role="tab" class="k-item k-state-active" id="k-tabstrip-tab-0" aria-selected="true">
+                        <span class="k-link">Active</span>
+                    </li><!--
+                    --><li role="tab" class="k-item">
+                        <span class="k-link">Normal</span>
+                    </li><!--
+                    --><li role="tab" class=" k-item k-state-hover">
+                        <span class="k-link">Hover</span>
+                    </li><!--
+                    --><li role="tab" class=" k-item k-state-disabled" aria-disabled="true">
+                        <span class="k-link">Disabled</span>
+                    </li>
+                </ul>
+                <div role="tabpanel" class="k-content k-state-active" aria-hidden="false" aria-expanded="true" aria-labelledby="k-tabstrip-tab-0">
+                    <div>Right orientation</div>
+                </div>
+            </kendo-tabstrip>
+        </section>
+    </div>
+</body>
+</html>

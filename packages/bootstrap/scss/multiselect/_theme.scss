@@ -1,24 +1,18 @@
 @include exports("multiselect/theme") {
 
     // Appearance
-    .k-multiselect {
+    .k-multiselect-wrap {
         @include appearance( input );
         transition: $transition;
 
-        &.k-state-hover {
+        &:hover,
+        .k-state-hover > & {
             @include appearance( hovered-input );
         }
 
-        &.k-state-focused {
-            .k-multiselect-wrap {
-                @include appearance( focused-input );
-            }
+        .k-state-focused & {
+            @include appearance( focused-input );
         }
-
-    }
-
-    .k-multiselect-wrap {
-        @include appearance( input );
 
         .k-button {
             min-height: calc(#{$form-line-height}*1em + #{$button-padding-y-sm} + 2px + 2px);

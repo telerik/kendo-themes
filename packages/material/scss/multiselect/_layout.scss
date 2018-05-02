@@ -2,7 +2,7 @@
 
 @include exports("multiselect/layout/material") {
 
-    .k-multiselect {
+    .k-multiselect-wrap {
 
         .k-button {
             text-transform: none;
@@ -11,16 +11,13 @@
         &[dir='rtl'],
         .k-rtl & {
 
-            .k-multiselect-wrap {
+            .k-button {
+                margin-left: $input-padding-y;
+                margin-right: 0;
 
-                .k-button {
-                    margin-left: $input-padding-y;
-                    margin-right: 0;
-
-                    .k-select {
-                        margin-left: -.2em;
-                        margin-right: .5em;
-                    }
+                .k-select {
+                    margin-left: -.2em;
+                    margin-right: .5em;
                 }
             }
         }

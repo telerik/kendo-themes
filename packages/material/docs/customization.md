@@ -566,6 +566,49 @@ Equivalent to material elevation 24.
 </table>
 
 
+### Tabstrip
+
+<table class="theme-variables">
+<colgroup>
+<col style="white-space:nowrap; width: 200px" />
+<col style="width: 250px" />
+<col />
+</colgroup>
+<tr>
+<th>Name</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>$tabstrip-indicator-color</td>
+<td>
+    
+    $primary
+</td>
+<td>Active tab indicator color. Set to `currentColor` to use the text color
+</td>
+</tr>
+<tr>
+<td>$tabstrip-bg</td>
+<td>
+    
+    transparent
+</td>
+<td>Component background. Set to `transparent` to blend the component with the page.
+</td>
+</tr>
+<tr>
+<td>$tabstrip-color</td>
+<td>
+    
+    inherit
+</td>
+<td>Component text color. Set to `inherit` to blend the component with the page.
+</td>
+</tr>
+</table>
+
+
 ### Toolbar
 
 <table class="theme-variables">

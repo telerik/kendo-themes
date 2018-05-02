@@ -11,21 +11,22 @@
             .k-edge13 & {
                 background-clip: border-box;
             }
-        }
-        .k-select {
-            padding: 0;
-            width: button-inner-size();
-        }
 
-        > :hover,
-        .k-state-hover {
-            @include appearance( hovered-button );
-        }
+            .k-select {
+                padding: 0;
+                width: button-inner-size();
+            }
 
-        .k-state-active {}
+            &:hover,
+            &.k-state-hover {
+                @include appearance( hovered-button );
+            }
 
-        .k-state-focused {
-            @include appearance( focused-input );
+            &.k-state-active {}
+
+            &.k-state-focused {
+                @include appearance( focused-input );
+            }
         }
 
     }
