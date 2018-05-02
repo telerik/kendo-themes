@@ -404,7 +404,7 @@
     .k-form {
         input,
         label:not(.k-checkbox-label):not(.k-radio-label),
-        .k-widget {
+        .k-widget:not(.k-calendar) {
             display: block;
         }
 
