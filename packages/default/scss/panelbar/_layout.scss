@@ -1,3 +1,6 @@
+$panelbar-header-padding-x: $header-padding-x !default;
+$panelbar-header-padding-y: $header-padding-y !default;
+
 @include exports("panelbar/layout") {
 
     // Base
@@ -16,7 +19,7 @@
             display: block;
 
             > .k-link {
-                padding: $header-padding-y $header-padding-x;
+                padding: $panelbar-header-padding-y $panelbar-header-padding-x;
                 color: inherit;
                 background: none;
                 text-decoration: none;
@@ -66,7 +69,7 @@
             margin-top: -.5em;
             position: absolute;
             top: 50%;
-            right: $header-padding-x;
+            right: $panelbar-header-padding-x;
         }
 
         .k-link > .k-image,
@@ -81,7 +84,7 @@
             .k-panelbar-expand,
             .k-panelbar-collapse {
                 right: auto;
-                left: $header-padding-x;
+                left: $panelbar-header-padding-x;
             }
         }
     }
