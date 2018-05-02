@@ -7,8 +7,6 @@ position: 1
 
 # Overview
 
-> The Material theme is under active development and is not supported by the whole suite. All components which are available for styling with the Material theme are included in the preview.
-
 ## Installation
 
 1. Download and install the package of the Material theme.
@@ -17,7 +15,7 @@ position: 1
     npm install --save @progress/kendo-theme-material
     ```
 
-1. Apply the Material theme options according to the instructions in the article on [styling]({% slug themesandstyles %}).
+1. Include the Material theme in your application according to the instructions in the article on [styling]({% slug themesandstyles %}).
 
 ## Dependencies
 
