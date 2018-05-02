@@ -88,12 +88,12 @@ $image-spacing: 8px !default;
     // Orientation
     .k-menu-horizontal {
 
-        > .k-item {
-            margin: 0 ( $nav-item-margin /2 );
+        > .k-item  + .k-item {
+            margin-left: $nav-item-margin;
+        }
 
-            &:first-of-type {
-                margin-left: 0;
-            }
+        > .k-separator + .k-item {
+            margin-left: 0;
         }
 
         > .k-item.k-separator {
