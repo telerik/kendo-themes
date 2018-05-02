@@ -35,15 +35,13 @@ $toolbar-button-mode: flat !default;
                 }
             }
 
-        }
-        @else if $toolbar-button-mode == flat {
+        } @else if $toolbar-button-mode == flat {
             > .k-button:not(.k-overflow-anchor),
             > .k-button-group > .k-button {
                 @extend .k-button.k-flat;
                 margin-left: 0;
             }
-        }
-        @else if $toolbar-button-mode == outline {
+        } @else if $toolbar-button-mode == outline {
             > .k-button,
             > .k-button-group > .k-button {
                 @extend .k-button.k-outline;
