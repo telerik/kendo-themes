@@ -3,17 +3,9 @@
 
 @include exports('treeview/theme/material') {
     .k-treeview {
-        .k-mid {
-            &:focus,
-            &:active {
-                outline: 0;
-                color: $accent;
-            }
-        }
         .k-in {
             &:hover,
             &.k-state-hover {
-                cursor: pointer;
                 background: $hovered-bg;
             }
 
@@ -27,6 +19,5 @@
                 }
             }
         }
-
     }
 }
