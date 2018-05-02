@@ -1,10 +1,8 @@
 @include exports("treeview/theme") {
 
-
     $treeview-item-border-width: 0;
     $treeview-item-border-radius: 0;
     $treeview-item-focused-shadow: $focused-shadow;
-
 
     // Appearance
     .k-treeview {
@@ -23,7 +21,5 @@
         .k-in.k-state-focused {
             box-shadow: $treeview-item-focused-shadow;
         }
-        .k-in.k-state-disabled {}
     }
-
 }

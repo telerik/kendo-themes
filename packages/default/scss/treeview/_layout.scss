@@ -68,18 +68,11 @@ $treeview-item-padding-x: $button-padding-x !default;
         }
 
         // Other content
-        .k-checkbox-wrapper {
-            margin-right: $icon-spacing;
-        }
         .k-in .k-icon,
         .k-in .k-image,
         .k-in .k-sprite {
             margin-right: $icon-spacing;
         }
-        .k-checkbox-label {
-            padding-left: $icon-size;
-        }
-
     }
 
 
@@ -100,10 +93,6 @@ $treeview-item-padding-x: $button-padding-x !default;
         }
 
         // Other content
-        .k-checkbox-wrapper {
-            margin-left: $icon-spacing;
-            margin-right: 0;
-        }
         .k-in .k-icon,
         .k-in .k-image,
         .k-in .k-sprite {

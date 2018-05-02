@@ -2,11 +2,3 @@ $treeview-item-padding-y: 6px !default;
 $treeview-item-padding-x: 8px !default;
 
 @import "~@progress/kendo-theme-default/scss/treeview/layout";
-
-@include exports('treeview/layout/material') {
-    .k-treeview {
-        .k-checkbox-wrapper {
-            padding-left: $icon-spacing;
-        }
-    }
-}
