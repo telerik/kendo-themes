@@ -3,7 +3,7 @@ $button-disabled-text: rgba(0, 0, 0, .38) !default;
 
 @include exports("button/theme") {
 
-    $not-button-selector: ".k-flat, .k-bare, .k-outline";
+    $not-button-selector: ".k-flat, .k-bare, .k-outline, .k-overflow-button";
 
     // Default button
     .k-button {
