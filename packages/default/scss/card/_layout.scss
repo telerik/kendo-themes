@@ -161,6 +161,23 @@
     }
 
 
+    // List
+    .k-card-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        flex: 0 0 auto;
+
+        .k-card {
+            flex: 0 0 auto;
+        }
+        .k-card + .k-card {
+            margin-top: $card-deck-gap;
+        }
+    }
+
+
     // Deck
     .k-card-deck {
         display: flex;
