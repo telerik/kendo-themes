@@ -4,11 +4,6 @@
 @include exports('treeview/theme/material') {
     .k-treeview {
         .k-mid {
-            &:hover {
-                cursor: pointer;
-                background: $hovered-bg;
-            }
-
             &:focus,
             &:active {
                 outline: 0;
@@ -16,9 +11,20 @@
             }
         }
         .k-in {
+            &:hover,
+            &.k-state-hover {
+                cursor: pointer;
+                background: $hovered-bg;
+            }
+
             &.k-state-selected {
                 color: $accent;
                 background-color: transparent;
+
+                &:hover,
+                &.k-state-hover {
+                    background-color: $hovered-bg;
+                }
             }
         }
 
