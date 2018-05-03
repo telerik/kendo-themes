@@ -1,4 +1,4 @@
-
+$treeview-padding: 0 !default;
 $treeview-indent: 16px !default;
 $treeview-item-padding-y: $button-padding-y !default;
 $treeview-item-padding-x: $button-padding-x !default;
@@ -12,6 +12,7 @@ $treeview-item-padding-x: $button-padding-x !default;
         cursor: default;
         overflow: auto;
         white-space: nowrap;
+        padding: $treeview-padding;
 
         .k-content,
         > .k-group,
