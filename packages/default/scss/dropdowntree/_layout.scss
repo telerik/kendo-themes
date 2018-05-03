@@ -17,6 +17,15 @@ $dropdowntree-popup-spacer-y: $padding-y-lg !default;
             }
         }
 
+        .k-group {
+            padding-left: $treeview-indent;
+            .k-checkbox-wrapper {
+                .k-checkbox-label {
+                    padding-left: $treeview-indent;
+                }
+            }
+        }
+
         .k-check-all {
             padding: $padding-x;
             padding-left: $treeview-indent;
