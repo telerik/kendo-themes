@@ -5,38 +5,29 @@ $dropdowntree-popup-spacer-y: $padding-y-lg !default;
 
     // Dropdowntree popup
     .k-popup {
-        .k-check-all,
-        & > .k-treeview {
-            margin: $dropdowntree-popup-spacer-y $dropdowntree-popup-spacer-x;
-        }
         .k-check-all {
-            margin-bottom: 0;
-
-            & + .k-treeview {
-                margin-top: 0;
-            }
+            margin: $dropdowntree-popup-spacer-y $dropdowntree-popup-spacer-x 0;
+        }
+        .k-check-all + .k-treeview {
+            margin: 0 $dropdowntree-popup-spacer-x $dropdowntree-popup-spacer-y;
         }
 
-        .k-group {
-            padding-left: $treeview-indent;
-            .k-checkbox-wrapper {
-                .k-checkbox-label {
-                    padding-left: $treeview-indent;
-                }
-            }
-        }
+        $treeview-checkbox-padding: add-three($checkbox-size, $icon-spacing, $treeview-item-padding-x);
 
         .k-check-all {
-            padding: $padding-x;
-            padding-left: $treeview-indent;
+            padding: $padding-y add-two($treeview-padding, $treeview-indent);
+        }
+
+        .k-check-all .k-checkbox-label {
+            padding-left: $treeview-checkbox-padding;
         }
 
         &.k-rtl,
         [dir='rtl'] & {
 
-            .k-check-all {
-                padding-right: $padding-x;
-                padding-left: $treeview-indent;
+            .k-check-all .k-checkbox-label {
+                padding-left: 0;
+                padding-right: $treeview-checkbox-padding;
             }
 
         }
