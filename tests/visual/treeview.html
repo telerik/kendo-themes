@@ -8,36 +8,50 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-        #test-area {
-            max-width: 600px;
-            display: grid;
-            grid-gap: 25px 25px;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        section {
+            margin: 1em 0;
         }
     </style>
 </head>
 <body>
     <div id="test-area">
         <section>
-            <span>Normal and hovered item</span>
-            <kendo-treeview childrenfield="items" textfield="text" class="k-widget k-treeview" role="tree" aria-multiselectable="false">
-                <ul class="k-treeview-lines" role="group">
-                    <li class="k-item" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="0" data-treeindex="0">
-                        <div class="k-mid">
-                            <span class="k-icon k-i-expand">
-                            </span>
-                            <span class="k-in" data-treeindex="0">
-                                Furniture
-                            </span>
+            <kendo-treeview class="k-widget k-treeview" role="tree" aria-multiselectable="false">
+                <ul class="k-treeview-lines k-group" role="group">
+                    <li class="k-item" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="0">
+                        <div class="k-top">
+                            <span class="k-icon k-i-expand"></span>
+                            <span class="k-in">Normal</span>
                         </div>
                     </li>
-                    <li class="k-item" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="1">
+                    <li class="k-item" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1">
                         <div class="k-mid">
-                            <span class="k-icon k-i-expand">
-                            </span>
-                            <span class="k-in k-state-hover" data-treeindex="1">
-                                Decor
-                            </span>
+                            <span class="k-icon k-i-expand"></span>
+                            <span class="k-in k-state-hover">Hover</span>
+                        </div>
+                    </li>
+                    <li class="k-item" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1">
+                        <div class="k-mid">
+                            <span class="k-icon k-i-expand"></span>
+                            <span class="k-in k-state-focused">Focus</span>
+                        </div>
+                    </li>
+                    <li class="k-item" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1">
+                        <div class="k-mid">
+                            <span class="k-icon k-i-expand"></span>
+                            <span class="k-in k-state-selected">Selected</span>
+                        </div>
+                    </li>
+                    <li class="k-item" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1">
+                        <div class="k-mid">
+                            <span class="k-icon k-i-expand"></span>
+                            <span class="k-in k-state-selected k-state-focused">Selected &amp; Focused</span>
+                        </div>
+                    </li>
+                    <li class="k-item k-state-disabled" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1">
+                        <div class="k-bot">
+                            <span class="k-icon k-i-expand"></span>
+                            <span class="k-in">Disabled</span>
                         </div>
                     </li>
                 </ul>
@@ -45,99 +59,39 @@
         </section>
 
         <section>
-            <span>Expanded state</span>
-            <kendo-treeview textfield="text" class="k-widget k-treeview" role="tree">
-                <ul class="k-treeview-lines" role="group">
-                    <li class="k-item" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="0" data-treeindex="0">
-                        <div class="k-mid">
-                            <span class="k-icon k-i-expand">
-                            </span>
-                            <span class="k-in" data-treeindex="0">
-                                Furniture
-                            </span>
+            <kendo-treeview class="k-widget k-treeview" role="tree">
+                <ul class="k-treeview-lines k-group" role="group">
+                    <li class="k-item" aria-level="1" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="0">
+                        <div class="k-top">
+                            <span class="k-icon k-i-expand"></span>
+                            <span class="k-in">Collapsed</span>
                         </div>
                     </li>
-                    <li class="k-item" aria-level="1" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="1">
-                        <div class="k-mid">
-                            <span class="k-icon k-i-collapse">
-                        </span>
-                        <span class="k-in" data-treeindex="1">
-                            Decor
-                        </span>
-                    </div>
-                    <ul role="group" class="k-group">
-                        <li class="k-item" aria-level="2" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="1_0">
-                            <div class="k-mid">
-                                <span class="k-in" data-treeindex="1_0">
-                                    Bed Linen
-                                </span>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                </ul>
-            </kendo-treeview>
-        </section>
-
-        <section>
-            <span>Disabled state</span>
-                <kendo-treeview textfield="text" class="k-widget k-treeview" role="tree">
-                        <ul class="k-treeview-lines" role="group">
-                            <li class="k-item" aria-level="1" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="0" data-treeindex="0">
-                                <div class="k-mid">
-                                    <span class="k-in" data-treeindex="0">
-                                        Furniture
-                                    </span>
+                    <li class="k-item" aria-level="1" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1">
+                        <div class="k-bot">
+                            <span class="k-icon k-i-collapse"></span>
+                            <span class="k-in">Expanded</span>
+                        </div>
+                        <ul role="group" class="k-group">
+                            <li class="k-item" aria-level="2" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1">
+                                <div class="k-top">
+                                    <span class="k-icon k-i-expand"></span>
+                                    <span class="k-in">Child (collapsed)</span>
                                 </div>
-                            <ul role="group" class="k-group">
-                            <li class="k-item k-state-disabled" aria-level="2" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="0_2">
-                                <div class="k-mid">
-                                    <span class="k-in" data-treeindex="0_2">
-                                        Occasional Furniture
-                                    </span>
+                            </li>
+                            <li class="k-item" aria-level="2" aria-expanded="false" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1">
+                                <div class="k-bot">
+                                    <span class="k-in">Child</span>
                                 </div>
                             </li>
                         </ul>
                     </li>
                 </ul>
-                    </li>
-                </ul>
             </kendo-treeview>
         </section>
 
         <section>
-            <span>Selection</span>
-            <kendo-treeview textfield="text" class="k-widget k-treeview" role="tree" aria-multiselectable="false">
-                <ul class="k-treeview-lines" role="group">
-                    <li class="k-item" aria-level="1" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="0">
-                        <div class="k-mid">
-                            <span class="k-in" data-treeindex="0">
-                            Furniture
-                        </span>
-                    </div>
-                    <ul role="group" class="k-group">
-                    <li class="k-item" aria-level="2" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1" data-treeindex="0_1">
-                        <div class="k-mid">
-                            <span class="k-in" data-treeindex="0_1">
-                            Sofas
-                        </span>
-                        </div>
-                        </li><li class="k-item" aria-level="2" aria-expanded="true" aria-selected="true" aria-checked="false" tabindex="0" role="treeitem" data-treeindex="0_2">
-                        <div class="k-mid">
-                            <span class="k-in k-state-selected" data-treeindex="0_2">
-                                Occasional Furniture
-                            </span>
-                        </div>
-                        </li>
-                        </ul>
-                    </li>
-                </ul></li></ul>
-            </kendo-treeview>
-        </section>
-
-        <section>
-            <span>Checkboxes checked</span>
-            <kendo-treeview textfield="text" class="k-widget k-treeview" role="tree">
+            <kendo-treeview class="k-widget k-treeview" role="tree">
                 <ul class="k-treeview-lines k-group" role="group">
                     <li class="k-item" aria-level="1" aria-expanded="true" aria-selected="false" aria-checked="true" role="treeitem" tabindex="0">
                         <div class="k-mid">
@@ -145,9 +99,7 @@
                                 <input class="k-checkbox" type="checkbox" id="_1d54c47f-dd40-4e68-ac87-8384d41d459b" tabindex="-1" checked>
                                 <label class="k-checkbox-label" tabindex="-1" for="_1d54c47f-dd40-4e68-ac87-8384d41d459b"></label>
                             </kendo-checkbox>
-                            <span class="k-in" data-treeindex="0">
-                                Furniture
-                            </span>
+                            <span class="k-in">Checked</span>
                         </div>
                         <ul role="group" class="k-group">
                             <li class="k-item" aria-level="2" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1">
@@ -156,9 +108,7 @@
                                     <input class="k-checkbox" type="checkbox" id="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef46" tabindex="-1">
                                     <label class="k-checkbox-label" tabindex="-1" for="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef46"></label>
                                 </kendo-checkbox>
-                                    <span class="k-in" data-treeindex="0_0">
-                                        Normal
-                                    </span>
+                                    <span class="k-in">Normal</span>
                                 </div>
                             </li>
                             <li class="k-item" aria-level="2" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1">
@@ -167,9 +117,7 @@
                                     <input class="k-checkbox" type="checkbox" id="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef47" tabindex="-1">
                                     <label class="k-checkbox-label" tabindex="-1" for="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef47"></label>
                                 </kendo-checkbox>
-                                    <span class="k-in k-state-hover" data-treeindex="0_0">
-                                        Hover
-                                    </span>
+                                    <span class="k-in k-state-hover">Hover</span>
                                 </div>
                             </li>
                             <li class="k-item" aria-level="2" aria-expanded="true" aria-selected="false" aria-checked="false" role="treeitem" tabindex="-1">
@@ -178,9 +126,7 @@
                                     <input class="k-checkbox" type="checkbox" id="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef49" tabindex="-1">
                                     <label class="k-checkbox-label" tabindex="-1" for="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef49"></label>
                                 </kendo-checkbox>
-                                    <span class="k-in k-state-selected" data-treeindex="0_0">
-                                        Selected
-                                    </span>
+                                    <span class="k-in k-state-selected">Selected</span>
                                 </div>
                             </li>
                         </ul>
