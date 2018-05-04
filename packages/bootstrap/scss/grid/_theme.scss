@@ -156,4 +156,12 @@
         @include fill( $grid-header-text, $grid-header-bg, $grid-header-border );
     }
 
+    .k-column-list-item:hover,
+    .k-columnmenu-item:hover {
+        @include appearance( hovered-list-item );
+    }
+
+    .k-column-list-wrapper {
+        border-color: inherit;
+    }
 }
