@@ -258,6 +258,22 @@
             background: none;
             flex: 1 1 auto;
         }
+
+        .k-button {
+            padding: 0;
+
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: currentColor;
+                display: inline-block;
+            }
+
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
     }
 
 }
