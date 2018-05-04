@@ -66,6 +66,9 @@
             color: $input-text;
             background-color: $input-bg;
         }
+        .k-message-box .k-button:hover {
+            color: $accent;
+        }
 
     }
 
