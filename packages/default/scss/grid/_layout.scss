@@ -582,8 +582,7 @@
             justify-content: center;
             position: absolute;
             right: $grid-header-menu-icon-spacing;
-            top: 50%;
-            margin-top: calc( -.5 * #{ button-size() } );
+            bottom: calc( #{ $grid-header-cell-padding-y } + #{ $line-height-em / 2 } + (-1 * #{ button-inner-size(.5) } ) );
             z-index: 1;
         }
         .k-header-column-menu {
