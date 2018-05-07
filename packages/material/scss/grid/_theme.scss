@@ -144,4 +144,8 @@ $grid-filter-cell-padding-y: $grid-cell-padding-y !default;
             padding-right: $text-field-padding;
         }
     }
+
+    .k-columnmenu-actions .k-button {
+        box-shadow: none;
+    }
 }
