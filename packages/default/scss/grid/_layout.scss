@@ -1067,6 +1067,11 @@
         display: block;
         margin: 0;
         cursor: pointer;
+
+        .k-checkbox,
+        .k-checkbox-label {
+            vertical-align: middle;
+        }
     }
 
     .k-columnmenu-item {
