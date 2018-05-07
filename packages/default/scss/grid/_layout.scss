@@ -249,7 +249,7 @@
             td.k-hierarchy-cell {
                 border-left-width: 0;
             }
-            .k-hierarchy-cell + td {
+            .k-hierarchy-cell + td:not(:last-child) {
                 border-left-width: $grid-cell-vertical-border-width;
             }
 
