@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.52.0"></a>
+# 2.52.0 (2018-05-07)
+
+
+### Bug Fixes
+
+* add card-list layout ([d2ce25b](https://github.com/telerik/kendo-themes/commit/d2ce25b))
+* **calendar:** layout is broken inside k-form ([017accd](https://github.com/telerik/kendo-themes/commit/017accd))
+* **dropdowntree:** improve spacing of 'Check All' ([784e742](https://github.com/telerik/kendo-themes/commit/784e742))
+* **grid:** details row in RTL grid has extra borders ([0a199bb](https://github.com/telerik/kendo-themes/commit/0a199bb))
+* **grid:** filter menu icon is misaligned with multicolumn headers ([6e998a4](https://github.com/telerik/kendo-themes/commit/6e998a4))
+* **grid:** filter row has no top border ([abedf81](https://github.com/telerik/kendo-themes/commit/abedf81))
+* **splitter:** collapsed panes are not hidden in IE10 ([d463f5f](https://github.com/telerik/kendo-themes/commit/d463f5f))
+* **timepicker:** separators take no space ([43c5296](https://github.com/telerik/kendo-themes/commit/43c5296))
+
+
+### Features
+
+* add TabStrip styling ([a93d7cc](https://github.com/telerik/kendo-themes/commit/a93d7cc))
+* **grid:** add Angular column menu styling ([38d9486](https://github.com/telerik/kendo-themes/commit/38d9486))
+
+
+
+
 <a name="2.51.0"></a>
 # 2.51.0 (2018-04-27)
 

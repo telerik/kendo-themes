@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.0"></a>
+# 0.9.0 (2018-05-07)
+
+
+### Bug Fixes
+
+* **slider:** material theme slider draghandle and button sizes ([#158](https://github.com/telerik/kendo-themes/issues/158)) ([f0eb0d6](https://github.com/telerik/kendo-themes/commit/f0eb0d6))
+* **tabstrip:** tab text alignment changes on activation ([#160](https://github.com/telerik/kendo-themes/issues/160)) ([9df8847](https://github.com/telerik/kendo-themes/commit/9df8847))
+* **treeview:** hover takes complete row ([83b7ee6](https://github.com/telerik/kendo-themes/commit/83b7ee6))
+
+
+### Features
+
+* add TabStrip styling ([a93d7cc](https://github.com/telerik/kendo-themes/commit/a93d7cc))
+
+
+
+
 <a name="0.8.0"></a>
 # 0.8.0 (2018-04-27)
 

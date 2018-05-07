@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.13.0"></a>
+# 2.13.0 (2018-05-07)
+
+
+### Features
+
+* add TabStrip styling ([a93d7cc](https://github.com/telerik/kendo-themes/commit/a93d7cc))
+* **grid:** add Angular column menu styling ([38d9486](https://github.com/telerik/kendo-themes/commit/38d9486))
+
+
+
+
 <a name="2.12.1"></a>
 ## [2.12.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.12.0...@progress/kendo-theme-bootstrap@2.12.1) (2018-04-30)
 
