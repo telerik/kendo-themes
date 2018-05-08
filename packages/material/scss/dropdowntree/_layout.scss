@@ -1,5 +1,6 @@
 $treeview-indent: 16px !default; // Remove/Update after implementing Material for treeView
-$dropdowntree-popup-spacer-x: $popup-padding-y !default;
-$dropdowntree-popup-spacer-y: 0 !default;
+$dropdowntree-popup-spacer-x: $padding-x!default;
+$dropdowntree-filter-shadow: none !default;
+$dropdowntree-filter-spacer: 0 !default;
 
 @import "~@progress/kendo-theme-default/scss/dropdowntree/layout";
