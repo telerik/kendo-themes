@@ -241,7 +241,7 @@ $image-spacing: 8px !default;
         .k-menu-horizontal {
 
             & > .k-item:first-of-type {
-                margin-left: ( $nav-item-margin /2 );
+                margin-left: ( $nav-item-margin / 2 );
                 margin-right: 0;
             }
         }

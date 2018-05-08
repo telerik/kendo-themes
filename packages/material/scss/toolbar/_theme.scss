@@ -1,7 +1,7 @@
 $toolbar-separator-border: $widget-border !default;
 $toolbar-button-expanded-bg: $popup-bg !default;
 $toolbar-button-expanded-shadow: $button-focused-shadow !default;
-$toolbar-separator-padding-y: 0!default;
+$toolbar-separator-padding-y: 0 !default;
 
 @import "~@progress/kendo-theme-default/scss/toolbar/theme";
 
