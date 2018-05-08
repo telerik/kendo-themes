@@ -5,7 +5,7 @@ slug: preview_kendothemebootstrap
 position: 1
 ---
 
-# Preview
+# Overview
 
 The Kendo UI Bootstrap theme is available through the @progress/kendo-theme-bootstrap NPM module.
 
