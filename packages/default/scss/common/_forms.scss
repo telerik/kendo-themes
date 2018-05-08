@@ -173,7 +173,11 @@ $forms-invalid-color: $error !default;
             justify-content: center;
             margin-bottom: -($form-line-height * $font-size / 2);
         }
+    }
 
+    .k-autocomplete,
+    .k-dropdown-wrap,
+    .k-multiselect {
         &.k-state-focused,
         &.k-state-hover,
         &:hover {
