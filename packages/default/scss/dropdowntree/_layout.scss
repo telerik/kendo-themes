@@ -1,25 +1,33 @@
 $dropdowntree-popup-spacer-x: $padding-y-lg !default;
-$dropdowntree-popup-spacer-y: $padding-y-lg !default;
+$dropdowntree-popup-spacer-y: $dropdowntree-popup-spacer-x !default;
+$dropdowntree-filter-shadow: $popup-shadow !default;
+$dropdowntree-checkall-padding: add-three($checkbox-size, $icon-spacing, $treeview-item-padding-x) !default;
+$dropdowntree-filter-spacer: $dropdowntree-popup-spacer-y !default;
 
 @include exports("dropdowntree/layout") {
 
     // Dropdowntree popup
-    .k-popup {
-        .k-check-all {
-            margin: $dropdowntree-popup-spacer-y $dropdowntree-popup-spacer-x 0;
-        }
-        .k-check-all + .k-treeview {
-            margin: 0 $dropdowntree-popup-spacer-x $dropdowntree-popup-spacer-y;
-        }
+    .k-popup-dropdowntree {
+        padding: 0;
 
-        $treeview-checkbox-padding: add-three($checkbox-size, $icon-spacing, $treeview-item-padding-x);
-
-        .k-check-all {
-            padding: $padding-y add-two($treeview-padding, $treeview-indent);
+        .k-list-filter {
+            box-shadow: $dropdowntree-filter-shadow;
+            margin: 0 0 $dropdowntree-filter-spacer;
         }
 
         .k-check-all .k-checkbox-label {
-            padding-left: $treeview-checkbox-padding;
+            padding-left: $dropdowntree-checkall-padding;
+        }
+
+        .k-check-all {
+            padding: $dropdowntree-popup-spacer-y $dropdowntree-popup-spacer-x 0;
+        }
+        .k-list-filter .k-check-all {
+            padding-top: 0;
+        }
+
+        .k-treeview {
+            padding: $dropdowntree-popup-spacer-y $dropdowntree-popup-spacer-x;
         }
 
         &.k-rtl,
@@ -27,7 +35,7 @@ $dropdowntree-popup-spacer-y: $padding-y-lg !default;
 
             .k-check-all .k-checkbox-label {
                 padding-left: 0;
-                padding-right: $treeview-checkbox-padding;
+                padding-right: $dropdowntree-checkall-padding;
             }
 
         }

@@ -191,6 +191,19 @@ $forms-invalid-color: $error !default;
         }
     }
 
+    .k-dropdown-wrap {
+
+        .k-clear-value {
+            right: calc( #{button-inner-size()} );
+
+            .k-rtl &,
+            [dir="rtl"] & {
+                right: auto;
+                left: calc( #{button-inner-size()} );
+            }
+        }
+    }
+
     .k-autocomplete,
     .k-dropdown-wrap {
 
