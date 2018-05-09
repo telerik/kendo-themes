@@ -2,10 +2,6 @@
     $dateinput-text: $panel-text !default;
     $uppercase-text: uppercase;
 
-    .k-textbox-container {
-        @include input-ripple();
-    }
-
     // Shared
     .k-datepicker,
     .k-timepicker,

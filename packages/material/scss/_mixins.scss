@@ -19,15 +19,13 @@
         background-color: $accent;
     }
 
-    &.k-state-focused::after,
-    .k-state-focused &::after {
+    &.k-state-focused::after {
         opacity: 1;
         transform: scaleX(1);
     }
 
 
-    &.k-state-invalid::after,
-    .k-state-invalid &::after {
+    &.k-state-invalid::after {
         background-color: $error;
         transition: none;
     }
