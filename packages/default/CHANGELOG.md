@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.52.1"></a>
+## [2.52.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.52.0...@progress/kendo-theme-default@2.52.1) (2018-05-09)
+
+
+### Bug Fixes
+
+* **grid:** add min-width to prevent column menu reflow ([41195eb](https://github.com/telerik/kendo-themes/commit/41195eb))
+* **grid:** remove double-borders on multi-column headers ([83cb60b](https://github.com/telerik/kendo-themes/commit/83cb60b))
+* **multiselect:** clear icon is not visible on focus ([d33a8a8](https://github.com/telerik/kendo-themes/commit/d33a8a8))
+* **treelist:** align columnmenu icon ([b225d2d](https://github.com/telerik/kendo-themes/commit/b225d2d))
+
+
+
+
 <a name="2.52.0"></a>
 # 2.52.0 (2018-05-07)
 
