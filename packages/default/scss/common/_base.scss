@@ -88,8 +88,6 @@ $widget-border-width: 1px !default;
         // sass-lint:disable-block no-important
         display: none !important;
     }
-
-    @include register-fonts($pdf-export-fonts);
 }
 
 

@@ -490,39 +490,6 @@ Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
-<td>$pdf-export-fonts-location</td>
-<td>
-    
-    'https://kendo.cdn.telerik.com/2018.1.117/styles/fonts/DejaVu/'
-</td>
-<td>Base location of fonts used during PDF export
-</td>
-</tr>
-<tr>
-<td>$pdf-export-fonts</td>
-<td>
-    
-    (
-    ( name: 'DejaVu Sans',  url: $pdf-export-fonts-location + 'DejaVuSans.ttf' ),
-    ( name: 'DejaVu Sans',  url: $pdf-export-fonts-location + 'DejaVuSans-Bold.ttf', weight: bold ),
-    ( name: 'DejaVu Sans',  url: $pdf-export-fonts-location + 'DejaVuSans-Oblique.ttf', style: italic ),
-    ( name: 'DejaVu Sans',  url: $pdf-export-fonts-location + 'DejaVuSans-BoldOblique.ttf', style: italic, weight: bold ),
-
-    ( name: 'DejaVu Serif', url: $pdf-export-fonts-location + 'DejaVuSerif.ttf' ),
-    ( name: 'DejaVu Serif', url: $pdf-export-fonts-location + 'DejaVuSerif-Bold.ttf', weight: bold  ),
-    ( name: 'DejaVu Serif', url: $pdf-export-fonts-location + 'DejaVuSerif-Italic.ttf', style: italic  ),
-    ( name: 'DejaVu Serif', url: $pdf-export-fonts-location + 'DejaVuSerif-BoldItalic.ttf', style: italic, weight: bold  ),
-
-    ( name: 'DejaVu Mono',  url: $pdf-export-fonts-location + 'DejaVuSansMono.ttf' ),
-    ( name: 'DejaVu Mono',  url: $pdf-export-fonts-location + 'DejaVuSansMono-Bold.ttf', weight: bold  ),
-    ( name: 'DejaVu Mono',  url: $pdf-export-fonts-location + 'DejaVuSansMono-Oblique.ttf', style: italic  ),
-    ( name: 'DejaVu Mono',  url: $pdf-export-fonts-location + 'DejaVuSansMono-BoldOblique.ttf', style: italic, weight: bold  )
-)
-</td>
-<td>List of fonts used during PDF export
-</td>
-</tr>
-<tr>
 <td>$line-height</td>
 <td>
     
