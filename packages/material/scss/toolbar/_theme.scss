@@ -14,18 +14,18 @@ $toolbar-separator-padding-y: 0 !default;
             &::after {
                 display: none;
             }
+        }
 
-            &.k-state-disabled {
-                color: $button-disabled-text;
-            }
+        .k-button.k-state-disabled,
+        .k-state-disabled > .k-button {
+            color: $button-disabled-text;
         }
 
         // Split button
         .k-split-button {
 
             // States
-            &:hover,
-            &:focus {
+            &:hover {
 
                 &,
                 & .k-button {
@@ -68,12 +68,18 @@ $toolbar-separator-padding-y: 0 !default;
 
             // Disables state
             &.k-state-disabled {
+                opacity: 1;
 
                 .k-split-button-arrow {
                     border-left-color: transparent;
                 }
                 .k-button::before {
                     opacity: 0;
+                }
+
+                &:focus .k-button::before,
+                &.k-state-focused .k-button::before {
+                    @include opacity( $flat-button-focused-opacity );
                 }
             }
         }
