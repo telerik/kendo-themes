@@ -18,6 +18,10 @@ $popup-filter-padding-x: false !default;
         line-height: $line-height;
         box-sizing: content-box;
 
+        > .k-widget:only-child {
+            border-width: 0;
+        }
+
         .k-item {
             cursor: pointer;
             outline: none;
