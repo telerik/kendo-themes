@@ -1,7 +1,5 @@
 # Kendo UI Material Theme
 
-> The Kendo UI Material theme is in a preview stage. The current setup is subject to breaking changes without prior notice.
-
 The Kendo UI Material Theme is a SCSS-based theme for the Kendo UI components which is based on the [Material design guidelines](https://material.io/).
 
 * [License](#license)
