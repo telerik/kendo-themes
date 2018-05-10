@@ -7,6 +7,8 @@ position: 1
 
 # Overview
 
+The Kendo UI Material theme is available through the @progress/kendo-theme-material NPM module.
+
 ## Installation
 
 1. Download and install the package of the Material theme.
