@@ -295,6 +295,7 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
     .k-chat .k-card-deck {
         max-width: calc(125% + calc( #{$message-group-spacing / 4} ) + #{$chat-message-list-padding-y * 2}); // prevent overflowing in the parent element
         box-sizing: border-box;
+        margin-top: $chat-message-list-padding-y;
         margin-left: -$chat-message-list-padding-y;
         margin-right: -$chat-message-list-padding-y;
         padding-left: $chat-message-list-padding-y;
