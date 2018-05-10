@@ -205,7 +205,7 @@ $forms-invalid-color: $error !default;
 
         .k-i-loading,
         .k-clear-value {
-            bottom: calc(#{$button-padding-y + $form-line-height * $font-size / 2});
+            bottom: add-two($button-padding-y, $form-line-height * $font-size / 2);
         }
     }
 
