@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.2"></a>
+## [0.9.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@0.9.1...@progress/kendo-theme-material@0.9.2) (2018-05-10)
+
+
+### Bug Fixes
+
+* **textbox:** input ripple is shown in focused window ([6084df9](https://github.com/telerik/kendo-themes/commit/6084df9))
+* **toolbar:** focused disabled split button has no styles ([8f7f03f](https://github.com/telerik/kendo-themes/commit/8f7f03f))
+* **treeview:** move root source file to scss folder ([28f86c7](https://github.com/telerik/kendo-themes/commit/28f86c7))
+
+
+
+
 <a name="0.9.1"></a>
 ## [0.9.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@0.9.0...@progress/kendo-theme-material@0.9.1) (2018-05-09)
 

@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.52.2"></a>
+## [2.52.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.52.1...@progress/kendo-theme-default@2.52.2) (2018-05-10)
+
+
+### Bug Fixes
+
+* **fonts:** remove registration of DejaVu font ([2a566d3](https://github.com/telerik/kendo-themes/commit/2a566d3))
+* **popup:** remove border of nested component ([8b4bf84](https://github.com/telerik/kendo-themes/commit/8b4bf84))
+* **window:** resizing window to be larger than viewport triggers dragging ([7dc4da7](https://github.com/telerik/kendo-themes/commit/7dc4da7)), closes [/github.com/telerik/kendo-angular/issues/1508#issuecomment-386209573](https://github.com//github.com/telerik/kendo-angular/issues/1508/issues/issuecomment-386209573)
+* allow font-size to be set to rem units ([e320c59](https://github.com/telerik/kendo-themes/commit/e320c59)), closes [#169](https://github.com/telerik/kendo-themes/issues/169)
+
+
+
+
 <a name="2.52.1"></a>
 ## [2.52.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.52.0...@progress/kendo-theme-default@2.52.1) (2018-05-09)
 
