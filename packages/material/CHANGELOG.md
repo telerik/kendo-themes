@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@0.9.2...@progress/kendo-theme-material@1.0.0) (2018-05-10)
+
+
+### Features
+
+* add theme for Angular/React components ([9b25082](https://github.com/telerik/kendo-themes/commit/9b25082))
+
+
+### BREAKING CHANGES
+
+* No breaking changes. Publishing a 1.0 release.
+
+
+
+
 <a name="0.9.2"></a>
 ## [0.9.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@0.9.1...@progress/kendo-theme-material@0.9.2) (2018-05-10)
 
