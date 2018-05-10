@@ -166,10 +166,10 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
         }
     }
     .k-avatars {
-        .k-message-group:not(.k-alt) {
+        .k-message-group:not(.k-alt):not(.k-no-avatar) {
             padding-left: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
         }
-        .k-message-group.k-alt {
+        .k-message-group.k-alt:not(.k-no-avatar) {
             padding-right: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
         }
     }
