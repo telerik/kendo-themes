@@ -281,7 +281,7 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
 
             .k-rtl &,
             &[dir="rtl"] {
-                transform: rotate(180deg);
+                transform: scaleX(-1);
             }
         }
     }
