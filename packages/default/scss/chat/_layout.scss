@@ -305,6 +305,7 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
         margin-right: -$chat-message-list-padding-y;
         padding-left: $chat-message-list-padding-y;
         padding-right: $chat-message-list-padding-y;
+        padding-bottom: $chat-message-list-padding-x;
         overflow: hidden;
         overflow-x: auto;
 
@@ -322,6 +323,15 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
     }
 
 
+    .k-card-deck-scrollwrap {
+        margin-left: -$chat-message-list-padding-y;
+        margin-right: -$chat-message-list-padding-y;
+
+        > .k-card-deck {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
 
 
     // Deck
