@@ -236,6 +236,12 @@ $checkbox-size: $icon-size !default;
             height: $icon-size;
             display: inline-block;
         }
+
+        .k-rtl &,
+        [dir='rtl'] & {
+            padding-left: 0;
+            padding-right: add-two($checkbox-size, $icon-spacing);
+        }
     }
 
     .k-checkbox-label::before,
@@ -253,6 +259,12 @@ $checkbox-size: $icon-size !default;
         position: absolute;
         top: 0;
         left: 0;
+
+        .k-rtl &,
+        [dir='rtl'] &  {
+            left: auto;
+            right: 0;
+        }
     }
 
     // Container box
