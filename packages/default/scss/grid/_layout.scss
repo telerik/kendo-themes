@@ -959,6 +959,8 @@
         $form-padding: $spacer-y;
         $form-padding-y: $form-padding - $item-spacing;
 
+        // BACKCOMPAT styles can be removed once https://github.com/telerik/kendo/pull/8527 is merged
+
         > div:not(.k-animation-container), // BACKCOMPAT: remove when below class is added to container
         .k-filter-menu-container {
             padding: $form-padding-y $form-padding;
@@ -989,7 +991,9 @@
             margin: $form-padding (-$form-padding) (-$form-padding-y);
 
             .k-button {
-                margin: 0; // <- BACKCOMPAT: remove when buttons div gets .k-action-buttons.k-button-group
+                // BACKCOMPAT: remove these overrides when buttons div gets .k-action-buttons.k-button-group
+                margin: 0;
+                width: auto;
             }
         }
     }
