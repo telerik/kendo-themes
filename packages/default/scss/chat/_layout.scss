@@ -318,7 +318,7 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
     }
     .k-chat .k-card-deck .k-card,
     .k-chat .k-card-deck .k-card-wrap {
-        flex-basis: 200px;
+        width: 200px;
     }
 
 
@@ -437,11 +437,11 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
             left: 0;
         }
         .k-avatars {
-            .k-message-group:not(.k-alt) {
+            .k-message-group:not(.k-alt):not(.k-no-avatar) {
                 padding-left: 0;
                 padding-right: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
             }
-            .k-message-group.k-alt {
+            .k-message-group.k-alt:not(.k-no-avatar) {
                 padding-right: 0;
                 padding-left: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
             }
