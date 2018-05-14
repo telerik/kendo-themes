@@ -173,21 +173,29 @@ $forms-invalid-color: $error !default;
             justify-content: center;
             margin-bottom: -($form-line-height * $font-size / 2);
         }
+        .k-clear-value:hover {
+            opacity: 1;
+        }
     }
 
     .k-autocomplete,
-    .k-dropdown-wrap,
-    .k-multiselect {
+    .k-dropdown-wrap {
         &.k-state-focused,
         &.k-state-hover,
         &:hover {
             .k-clear-value {
                 display: inline-flex;
-
-                &:hover {
-                    opacity: 1;
-                }
             }
+        }
+    }
+    .k-multiselect-wrap:hover,
+    .k-multiselect-wrap.k-state-hover,
+    .k-state-hover > .k-multiselect-wrap,
+    .k-multiselect-wrap.k-state-focused,
+    .k-state-focused > .k-multiselect-wrap,
+    .k-multiselect-wrap:hover {
+        .k-clear-value {
+            display: inline-flex;
         }
     }
 
