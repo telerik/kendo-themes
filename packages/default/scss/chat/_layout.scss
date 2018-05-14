@@ -1,3 +1,5 @@
+$message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
+
 @include exports("chat/layout") {
 
     .k-chat {
@@ -86,6 +88,7 @@
 
         // Message
         .k-message {
+            max-width: 100%;
             margin: $chat-bubble-spacing 0 0;
             position: relative;
             transition: margin .2s ease-in-out;
@@ -123,6 +126,7 @@
             border-width: 1px;
             border-style: solid;
             line-height: $chat-bubble-line-height;
+            word-wrap: break-word;
         }
 
 
@@ -162,10 +166,10 @@
         }
     }
     .k-avatars {
-        .k-message-group:not(.k-alt) {
+        .k-message-group:not(.k-alt):not(.k-no-avatar) {
             padding-left: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
         }
-        .k-message-group.k-alt {
+        .k-message-group.k-alt:not(.k-no-avatar) {
             padding-right: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
         }
     }
@@ -194,6 +198,7 @@
     // Quick reply
     .k-quick-replies {
         display: block;
+        max-width: 100%; // IE fix
     }
     .k-quick-reply {
         @include border-radius( 100px );
@@ -273,6 +278,11 @@
             &::after {
                 display: none;
             }
+
+            .k-rtl &,
+            &[dir="rtl"] {
+                transform: scaleX(-1);
+            }
         }
     }
 
@@ -288,6 +298,9 @@
     }
 
     .k-chat .k-card-deck {
+        max-width: calc(125% + calc( #{$message-group-spacing / 4} ) + #{$chat-message-list-padding-y * 2}); // prevent overflowing in the parent element
+        box-sizing: border-box;
+        margin-top: $chat-message-list-padding-y;
         margin-left: -$chat-message-list-padding-y;
         margin-right: -$chat-message-list-padding-y;
         padding-left: $chat-message-list-padding-y;
