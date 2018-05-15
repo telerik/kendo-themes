@@ -118,6 +118,11 @@ $grouping-border: $border-color !default;
             background-image: none;
         }
 
+        // Button disabled state
+        .k-button.k-state-disabled {
+            background: transparent;
+        }
+
 
         // Button focus state
         .k-button:focus,
@@ -127,11 +132,6 @@ $grouping-border: $border-color !default;
 
         .k-nodata {
             color: $list-container-no-data-text;
-        }
-
-        // Button disabled state
-        .k-button.k-state-disabled {
-            background: transparent;
         }
 
     }

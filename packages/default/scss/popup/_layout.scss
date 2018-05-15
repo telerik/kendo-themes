@@ -220,6 +220,11 @@ $popup-filter-padding-x: $input-padding-x !default;
             }
         }
 
+        // Button disabled state
+        .k-button.k-state-disabled {
+            pointer-events: none;
+        }
+
         .k-nodata {
             .k-button {
                 display: inline-flex;
