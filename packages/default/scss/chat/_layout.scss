@@ -16,20 +16,32 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
 
         // Message list
         .k-message-list {
-            padding: $chat-message-list-padding-y $chat-message-list-padding-x;
             flex: 1 1 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
             overflow-x: hidden;
             overflow-y: auto;
             scroll-behavior: smooth;
+        }
+
+        .k-message-list-content {
+            margin: (-$chat-message-list-padding-y) (-$chat-message-list-padding-x);
+            position: relative;
+            flex: 0 0 auto;
+            width: calc( 100% + #{$chat-message-list-padding-x * 2} );
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .k-message-list,
+        .k-message-list-content {
+            padding: $chat-message-list-padding-y $chat-message-list-padding-x;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
 
             > * + * {
                 margin-top: $chat-message-list-spacing;
             }
         }
-
 
         // Message group
         .k-message-group {
