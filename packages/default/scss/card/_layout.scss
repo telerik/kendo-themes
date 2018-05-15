@@ -194,6 +194,30 @@
         }
     }
 
+    .k-card-deck-scrollwrap {
+        display: flex;
+        position: relative;
+        align-items: center;
+
+        > .k-button {
+            @include border-radius( $card-deck-scroll-button-radius );
+            flex: 0 0 auto;
+            position: absolute;
+
+            &:first-child {
+                left: $card-deck-scroll-button-offset;
+            }
+
+            &:last-child {
+                right: $card-deck-scroll-button-offset;
+            }
+        }
+
+        > .k-card-deck {
+            flex: 1 1 auto;
+        }
+    }
+
 
     // Group
     .k-card-group {

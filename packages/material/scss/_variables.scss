@@ -521,6 +521,8 @@ $card-actions-padding-x: $card-padding-x !default;
 $card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
 $card-actions-border-width: 0 !default;
 
+$card-deck-scroll-button-radius: 50% !default;
+$card-deck-scroll-button-offset: $card-deck-gap / 2 !default;
 
 // Chat
 $chat-padding-x: 16px !default;
