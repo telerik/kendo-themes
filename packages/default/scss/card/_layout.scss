@@ -30,8 +30,8 @@
 
     // Header
     .k-card-header {
-        @extend %top-rounded-child;
-        @extend %bottom-rounded-child;
+        @extend %top-rounded-child !optional;
+        @extend %bottom-rounded-child !optional;
         padding: $card-header-padding-y $card-header-padding-x;
         border-width: 0 0 $card-header-border-width;
         border-style: solid;
@@ -50,8 +50,8 @@
 
     // Body
     .k-card-body {
-        @extend %top-rounded-child;
-        @extend %bottom-rounded-child;
+        @extend %top-rounded-child !optional;
+        @extend %bottom-rounded-child !optional;
         padding: $card-body-padding-y $card-body-padding-x;
         flex: 1 1 0;
 
@@ -68,8 +68,8 @@
 
     // Card image
     .k-card-image {
-        @extend %top-rounded-child;
-        @extend %bottom-rounded-child;
+        @extend %top-rounded-child !optional;
+        @extend %bottom-rounded-child !optional;
         border: 0;
         max-width: 100%;
         overflow: hidden;
@@ -108,8 +108,8 @@
 
     // Card actions
     .k-card-actions {
-        @extend %top-rounded-child;
-        @extend %bottom-rounded-child;
+        @extend %top-rounded-child !optional;
+        @extend %bottom-rounded-child !optional;
         padding: $card-actions-padding-y $card-actions-padding-x;
         border-width: 0;
         border-style: solid;
