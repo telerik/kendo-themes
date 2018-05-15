@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.53.0"></a>
+# [2.53.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.52.2...@progress/kendo-theme-default@2.53.0) (2018-05-15)
+
+
+### Bug Fixes
+
+* **chat:** bad alignment when avatar is not set ([ea1c5b9](https://github.com/telerik/kendo-themes/commit/ea1c5b9))
+* **chat:** improve card deck spacing ([dcaa2c8](https://github.com/telerik/kendo-themes/commit/dcaa2c8))
+* **chat:** improve RTL send icon alignment ([3899d92](https://github.com/telerik/kendo-themes/commit/3899d92))
+* **chat:** prevent overflowing messages with long text ([77503ea](https://github.com/telerik/kendo-themes/commit/77503ea))
+* **checkbox:** align text on the left in RTL ([b7b6fcf](https://github.com/telerik/kendo-themes/commit/b7b6fcf))
+* **grid:** localized filter menu buttons do not expand ([28b8fe6](https://github.com/telerik/kendo-themes/commit/28b8fe6))
+* build error with enable-rounded:false ([fd62e47](https://github.com/telerik/kendo-themes/commit/fd62e47))
+
+
+### Features
+
+* **cards:** deck scroll buttons ([#177](https://github.com/telerik/kendo-themes/issues/177)) ([52e52c3](https://github.com/telerik/kendo-themes/commit/52e52c3))
+
+
+
+
 <a name="2.52.2"></a>
 ## [2.52.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.52.1...@progress/kendo-theme-default@2.52.2) (2018-05-10)
 
