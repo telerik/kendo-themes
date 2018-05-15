@@ -15,6 +15,7 @@ $tooltip-callout-size: 12px !default;
         line-height: $tooltip-line-height;
         padding: $tooltip-padding-y $tooltip-padding-x;
         border-width: 0;
+        box-sizing: border-box;
         background-repeat: repeat-x;
         position: absolute;
         z-index: 12000;
