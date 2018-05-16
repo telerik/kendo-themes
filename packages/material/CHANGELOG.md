@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.1.0...@progress/kendo-theme-material@1.1.1) (2018-05-16)
+
+
+
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.0.0...@progress/kendo-theme-material@1.1.0) (2018-05-15)
 
