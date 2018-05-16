@@ -227,8 +227,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$info</td>
 <td>
-    <span class="color-preview" style="background-color: #0058e9"></span>
-    #0058e9
+    <span class="color-preview" style="background-color: #3f51b5"></span>
+    #3f51b5
 </td>
 <td>The color for informational messages and states.
 </td>

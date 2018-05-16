@@ -3,12 +3,6 @@
     // Theme
     .k-notification {
         @include appearance( panel );
-
-        .k-i-close {
-            padding: $alert-padding-y $alert-padding-x;
-            top: 0;
-            right: 0;
-        }
     }
     .k-notification-info {
         border-color: $notification-info-border;
