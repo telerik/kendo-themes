@@ -112,7 +112,6 @@ $toolbar-button-mode: flat !default;
 
         // Button disabled state
         .k-button.k-state-disabled {
-
             &::after {
                 opacity: 0;
             }
@@ -120,8 +119,11 @@ $toolbar-button-mode: flat !default;
 
 
         // Button group
-        .k-button-group {}
-
+        .k-button-group {
+            .k-button.k-state-disabled {
+                pointer-events: none;
+            }
+        }
 
         // Overflow anchor
         .k-overflow-anchor {
