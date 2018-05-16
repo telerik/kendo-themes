@@ -119,11 +119,7 @@ $toolbar-button-mode: flat !default;
 
 
         // Button group
-        .k-button-group {
-            .k-button.k-state-disabled {
-                pointer-events: none;
-            }
-        }
+        .k-button-group {}
 
         // Overflow anchor
         .k-overflow-anchor {
