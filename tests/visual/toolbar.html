@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="k-typography">
 <head>
-    <title>Buttons</title>
+    <title>Toolbar</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
@@ -393,38 +393,72 @@
                     </a>
                 </div>
             </div>
+        </div>
 
-            <!-- Owerflow popup -->
-            <div style="text-align: right">
-                <div id="overflowPopup" class="k-animation-container k-overflow-wrapper" style="overflow: visible; display: inline-block; position: static">
-                    <ul class="k-overflow-container k-list-container k-popup k-group k-reset k-state-border-up">
-                        <li class="k-item k-state-default">
-                            <a href="" tabindex="0" class="k-overflow-button k-button">
-                                <span class="k-text">Normal Button</span>
-                            </a>
-                        </li>
-                        <li class="k-item k-state-default">
-                            <a href="" tabindex="0" class="k-overflow-button k-button k-state-hover">
-                                <span class="k-text">Hovered Button</span>
-                            </a>
-                        </li>
-                        <li class="k-item k-state-default">
-                            <a href="" tabindex="0" class="k-overflow-button k-button k-state-focused">
-                                <span class="k-text">Focused Button</span>
-                            </a>
-                        </li>
-                        <li class="k-item k-state-default">
-                            <a href="" tabindex="0" class="k-overflow-button k-button k-state-active">
-                                <span class="k-text">Selected Button</span>
-                            </a>
-                        </li>
-                        <li class="k-item k-state-default k-state-disabled">
-                            <a href="" tabindex="0" class="k-overflow-button k-button">
-                                <span class="k-text">Disabled Button</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <!-- Owerflow popup with normal buttons -->
+        <div class="section" style="float: left">
+            <div id="overflowPopup" class="k-animation-container k-overflow-wrapper" style="overflow: visible; display: inline-block; position: static">
+                <ul class="k-overflow-container k-list-container k-popup k-group k-reset k-state-border-up">
+                    <li class="k-item k-state-default">
+                        <a href="" tabindex="0" class="k-overflow-button k-button">
+                            <span class="k-text">Normal Button</span>
+                        </a>
+                    </li>
+                    <li class="k-item k-state-default">
+                        <a href="" tabindex="0" class="k-overflow-button k-button k-state-hover">
+                            <span class="k-text">Hovered Button</span>
+                        </a>
+                    </li>
+                    <li class="k-item k-state-default">
+                        <a href="" tabindex="0" class="k-overflow-button k-button k-state-focused">
+                            <span class="k-text">Focused Button</span>
+                        </a>
+                    </li>
+                    <li class="k-item k-state-default">
+                        <a href="" tabindex="0" class="k-overflow-button k-button k-state-active">
+                            <span class="k-text">Selected Button</span>
+                        </a>
+                    </li>
+                    <li class="k-item k-state-default k-state-disabled">
+                        <a href="" tabindex="0" class="k-overflow-button k-button">
+                            <span class="k-text">Disabled Button</span>
+                        </a>
+                    </li>
+                    <li class="k-item k-state-default k-state-disabled">
+                        <a href="" tabindex="0" class="k-overflow-button k-button k-state-focused">
+                            <span class="k-text">Disabled Focused Button</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Owerflow popup with button group -->
+        <div class="section" style="float: left">
+            <div id="overflowPopup" class="k-animation-container k-overflow-wrapper" style="overflow: visible; display: inline-block; position: static">
+                <ul class="k-overflow-container k-list-container k-popup k-group k-reset k-state-border-up">
+                    <li class="k-button-group k-overflow-group k-item k-state-default">
+                        <a href="" class="k-toggle-button k-button-icontext k-overflow-button k-button k-group-start">
+                            <span class="k-icon k-i-bold"></span>
+                            <span class="k-text">Normal</span>
+                        </a>
+                        <a href="" tabindex="0" class="k-toggle-button k-state-hover k-button-icontext k-overflow-button k-button">
+                            <span class="k-text">Hovered</span>
+                        </a>
+                        <a href="" tabindex="0" class="k-toggle-button k-state-focused k-button-icontext k-overflow-button k-button">
+                            <span class="k-text">Focused</span>
+                        </a>
+                        <a href="" tabindex="0" class="k-toggle-button k-state-active k-button-icontext k-overflow-button k-button">
+                            <span class="k-text">Selected</span>
+                        </a>
+                        <a href="" class="k-toggle-button k-button-icontext k-state-disabled k-overflow-button k-button">
+                            <span class="k-text">Disabled</span>
+                        </a>
+                        <a href="" class="k-toggle-button k-button-icontext k-state-disabled k-state-focused k-overflow-button k-button k-group-end">
+                            <span class="k-text">Disabled Focused</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
