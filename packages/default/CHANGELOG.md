@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.53.1"></a>
+## [2.53.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.53.0...@progress/kendo-theme-default@2.53.1) (2018-05-16)
+
+
+### Bug Fixes
+
+* **chat:** scrollable deck is hidden by other messages ([#185](https://github.com/telerik/kendo-themes/issues/185)) ([e5cf671](https://github.com/telerik/kendo-themes/commit/e5cf671))
+* **tooltip:** component is larger than specified size ([#187](https://github.com/telerik/kendo-themes/issues/187)) ([8f52bf0](https://github.com/telerik/kendo-themes/commit/8f52bf0))
+
+
+
+
 <a name="2.53.0"></a>
 # [2.53.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.52.2...@progress/kendo-theme-default@2.53.0) (2018-05-15)
 
