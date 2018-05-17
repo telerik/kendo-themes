@@ -230,13 +230,24 @@ $forms-invalid-color: $error !default;
         }
     }
 
-    .k-autocomplete,
+    $input-icon-padding: calc(#{$input-padding-x} + #{$icon-size});
+
     .k-multiselect-wrap {
-        padding-right: calc(#{$input-padding-x} + #{$icon-size});
+        padding-right: $input-icon-padding;
 
         .k-rtl &,
         [dir="rtl"] & {
-            padding-left: calc(#{$input-padding-x} + #{$icon-size});
+            padding-left: $input-icon-padding;
+            padding-right: $input-padding-x;
+        }
+    }
+
+    .k-autocomplete {
+        padding-right: $input-icon-padding;
+
+        .k-rtl &,
+        &[dir="rtl"] {
+            padding-left: $input-icon-padding;
             padding-right: $input-padding-x;
         }
     }
