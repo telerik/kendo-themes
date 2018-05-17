@@ -320,6 +320,7 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
         padding-bottom: $chat-message-list-padding-x;
         overflow: hidden;
         overflow-x: auto;
+        scroll-behavior: smooth;
 
         .k-card-wrap + .k-card-wrap {
             margin-left: $card-deck-gap;
