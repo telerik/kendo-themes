@@ -25,4 +25,14 @@
     .k-card.k-state-warning { @extend .k-state-warning !optional; }
     .k-card.k-state-error { @extend .k-state-error !optional; }
 
+
+    .k-card-wrap {
+        &.k-state-focused,
+        &.k-state-selected {
+            > .k-card {
+                box-shadow: $card-box-focused-shadow;
+            }
+        }
+    }
+
 }

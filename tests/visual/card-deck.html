@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Card deck</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 1024px;
+        }
+
+        .k-chat {
+            max-width: initial;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area">
+        <div class="k-widget k-chat">
+            <div class="k-message-list k-avatars">
+                <div class="k-message-list-content">
+                    <div class="k-card-deck">
+                        <div class="k-card-wrap">
+                            <div class="k-card">
+                                <div class="k-card-body">
+                                    Normal
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-card-wrap k-state-focused">
+                            <div class="k-card">
+                                <div class="k-card-body">
+                                    Focused
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-card-wrap k-state-selected">
+                            <div class="k-card">
+                                <div class="k-card-body">
+                                    Selected
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-card-wrap k-state-selected k-state-focused">
+                            <div class="k-card">
+                                <div class="k-card-body">
+                                    Focused Selected
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

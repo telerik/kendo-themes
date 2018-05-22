@@ -312,12 +312,9 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
     .k-chat .k-card-deck {
         max-width: calc(100% + #{$chat-message-list-padding-y * 2}); // prevent overflowing in the parent element
         box-sizing: border-box;
-        margin-top: $chat-message-list-padding-y;
         margin-left: -$chat-message-list-padding-y;
         margin-right: -$chat-message-list-padding-y;
-        padding-left: $chat-message-list-padding-y;
-        padding-right: $chat-message-list-padding-y;
-        padding-bottom: $chat-message-list-padding-x;
+        padding: $chat-message-list-padding-y $chat-message-list-padding-y $chat-message-list-padding-x;
         overflow: hidden;
         overflow-x: auto;
         scroll-behavior: smooth;
@@ -378,6 +375,10 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
         }
         .k-card + .k-card {
             margin-left: $card-deck-gap;
+        }
+
+        &.k-state-selected {
+            background: none;
         }
     }
 }
