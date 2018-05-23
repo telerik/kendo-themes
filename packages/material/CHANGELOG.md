@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.1.1...@progress/kendo-theme-material@1.1.2) (2018-05-23)
+
+
+### Bug Fixes
+
+* **card:** add card states ([0dbf579](https://github.com/telerik/kendo-themes/commit/0dbf579))
+* **notification:** add Material styles, improve close icon positioning ([5340230](https://github.com/telerik/kendo-themes/commit/5340230))
+* **toolbar:** button group in overflow popup is unstyled ([#179](https://github.com/telerik/kendo-themes/issues/179)) ([29e15f2](https://github.com/telerik/kendo-themes/commit/29e15f2))
+
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.1.0...@progress/kendo-theme-material@1.1.1) (2018-05-16)
 

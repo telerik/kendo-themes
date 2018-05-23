@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.53.2"></a>
+## [2.53.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.53.1...@progress/kendo-theme-default@2.53.2) (2018-05-23)
+
+
+### Bug Fixes
+
+* **autocomplete:** wrong indent in Angular RTL ([a2d05e3](https://github.com/telerik/kendo-themes/commit/a2d05e3))
+* **card:** add card states ([0dbf579](https://github.com/telerik/kendo-themes/commit/0dbf579))
+* **chat:** allow content size detection with ResizeObserver ([a9937ba](https://github.com/telerik/kendo-themes/commit/a9937ba))
+* **chat:** card decks expand beyond the chat container size ([a885344](https://github.com/telerik/kendo-themes/commit/a885344))
+* **chat:** smooth scroll for card deck ([ba708bd](https://github.com/telerik/kendo-themes/commit/ba708bd))
+* **notification:** add Material styles, improve close icon positioning ([5340230](https://github.com/telerik/kendo-themes/commit/5340230))
+* **toolbar:** button group in overflow popup is unstyled ([#179](https://github.com/telerik/kendo-themes/issues/179)) ([29e15f2](https://github.com/telerik/kendo-themes/commit/29e15f2))
+* **toolbar:** hover background on disabled button in button group ([88854c3](https://github.com/telerik/kendo-themes/commit/88854c3)), closes [telerik/kendo-themes#142](https://github.com/telerik/kendo-themes/issues/142)
+
+
+
+
 <a name="2.53.1"></a>
 ## [2.53.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.53.0...@progress/kendo-theme-default@2.53.1) (2018-05-16)
 

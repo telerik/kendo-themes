@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.13.5"></a>
+## [2.13.5](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.13.4...@progress/kendo-theme-bootstrap@2.13.5) (2018-05-23)
+
+
+### Bug Fixes
+
+* **notification:** add Material styles, improve close icon positioning ([5340230](https://github.com/telerik/kendo-themes/commit/5340230))
+
+
+
+
 <a name="2.13.4"></a>
 ## [2.13.4](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.13.3...@progress/kendo-theme-bootstrap@2.13.4) (2018-05-16)
 
