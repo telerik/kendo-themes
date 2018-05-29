@@ -37,10 +37,6 @@ $grouping-border: $border-color !default;
     .k-group-header+div > .k-list > .k-item.k-first::before {
         border-color: $grouping-border;
     }
-    .k-popup-transparent {
-        border-width: 0;
-        background-color: transparent;
-    }
 }
 
 @include exports( "list/theme" ) {
