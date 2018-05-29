@@ -1,25 +1,9 @@
-$tooltip-color: $accent-contrast !default;
-$tooltip-bg: $accent !default;
-
 @include exports("tooltip/theme") {
     .k-tooltip {
         color: $tooltip-color;
         background-color: $tooltip-bg;
     }
-
-    .k-callout-n {
-        border-bottom-color: $tooltip-bg;
-    }
-
-    .k-callout-e {
-        border-left-color: $tooltip-bg;
-    }
-
-    .k-callout-s {
-        border-top-color: $tooltip-bg;
-    }
-
-    .k-callout-w {
-        border-right-color: $tooltip-bg;
+    .k-callout {
+        color: $tooltip-bg;
     }
 }
