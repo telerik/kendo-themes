@@ -52,6 +52,7 @@ $tooltip-callout-size: 12px !default;
 
         .k-icon {
             color: inherit;
+            vertical-align: top;
         }
 
         .k-rtl &,
@@ -75,28 +76,32 @@ $tooltip-callout-size: 12px !default;
     .k-callout-n {
         left: 50%;
         margin-left: -$callout-half-size;
+        border-bottom-color: currentColor;
         top: -$tooltip-callout-size;
-        pointer-events: none;
-    }
-
-    .k-callout-w {
-        top: 50%;
-        margin-top: -$callout-half-size;
-        left: -$tooltip-callout-size;
-        pointer-events: none;
-    }
-
-    .k-callout-s {
-        left: 50%;
-        margin-left: -$callout-half-size;
-        bottom: -$tooltip-callout-size;
         pointer-events: none;
     }
 
     .k-callout-e {
         top: 50%;
         margin-top: -$callout-half-size;
+        border-left-color: currentColor;
         right: -$tooltip-callout-size;
+        pointer-events: none;
+    }
+
+    .k-callout-s {
+        left: 50%;
+        margin-left: -$callout-half-size;
+        border-top-color: currentColor;
+        bottom: -$tooltip-callout-size;
+        pointer-events: none;
+    }
+
+    .k-callout-w {
+        top: 50%;
+        margin-top: -$callout-half-size;
+        border-right-color: currentColor;
+        left: -$tooltip-callout-size;
         pointer-events: none;
     }
 }
