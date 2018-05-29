@@ -636,6 +636,10 @@ $chat-alt-bubble-bg: $accent !default;
 $chat-alt-bubble-text: $accent-contrast !default;
 $chat-alt-bubble-border: $chat-alt-bubble-bg !default;
 
+// Tooltip
+$tooltip-bg: $tooltip-bg !default;
+$tooltip-color: contrast-wcag($tooltip-bg) !default;
+
 
 // Config maps
 $typography-config: () !default;
