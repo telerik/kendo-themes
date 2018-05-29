@@ -95,6 +95,12 @@ $popup-filter-padding-x: $input-padding-x !default;
         left: 0;
         right: 0;
     }
+
+    // Transparent popup
+    .k-popup.k-popup-transparent {
+        border-width: 0;
+        background-color: transparent;
+    }
 }
 
 
