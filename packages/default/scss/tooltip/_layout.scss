@@ -4,6 +4,7 @@ $tooltip-closable-padding-x: $window-titlebar-padding-x !default;
 $tooltip-closable-padding-y: $window-titlebar-padding-y !default;
 $tooltip-closable-content-padding: calc(#{$icon-size} + #{$icon-spacing}) !default;
 $tooltip-font-size: $font-size !default;
+$tooltip-title-font-size: $font-size-lg !default;
 $tooltip-line-height: $line-height !default;
 $tooltip-callout-size: 12px !default;
 
@@ -25,6 +26,12 @@ $tooltip-callout-size: 12px !default;
         }
     }
 
+    .k-tooltip-title {
+        display: inline-flex;
+        padding: $tooltip-padding-y 0;
+        font-size: $tooltip-title-font-size;
+    }
+
     .k-tooltip-content {
         overflow: hidden;
         text-overflow: ellipsis;
@@ -33,6 +40,12 @@ $tooltip-callout-size: 12px !default;
     .k-tooltip-closable {
         padding: $tooltip-closable-padding-y $tooltip-closable-padding-x;
         line-height: normal;
+
+        .k-tooltip-title {
+            display: inline-flex;
+            padding: 0 ($tooltip-closable-content-padding) ($tooltip-closable-padding-y) 0;
+            line-height: 1;
+        }
 
         .k-tooltip-content {
             padding-right: $tooltip-closable-content-padding;
