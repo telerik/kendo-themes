@@ -19,10 +19,9 @@ $switch-disabled-bg: $input-disabled-bg !default;
             .k-switch-container {
                 background: lighten($switch-on-color, 25%);
             }
-            &:hover {
-                .k-switch-container {
-                    background: lighten($switch-on-color, 20%);
-                }
+            .k-switch-container:hover {
+                background: lighten($switch-on-color, 20%);
+
                 .k-switch-handle {
                     background: $switch-on-color;
                 }
@@ -37,10 +36,9 @@ $switch-disabled-bg: $input-disabled-bg !default;
                 background: $switch-handle-off-bg;
             }
 
-            &:hover {
-                .k-switch-container {
-                    background: $switch-hover-off-bg;
-                }
+            .k-switch-container:hover {
+                background: $switch-hover-off-bg;
+
                 .k-switch-handle {
                     background: $switch-handle-off-bg;
                 }

@@ -56,7 +56,7 @@ $switch-active-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
             }
         }
 
-        &:hover {
+        .k-switch-container:hover {
             .k-switch-handle {
                 @include appearance( hovered-primary-button );
             }
@@ -64,7 +64,7 @@ $switch-active-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
     }
 
     .k-switch-off {
-        &:hover {
+        .k-switch-container:hover {
             .k-switch-handle {
                 @include appearance( hovered-button );
             }
