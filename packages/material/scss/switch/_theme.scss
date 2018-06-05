@@ -1,4 +1,5 @@
 $switch-focus-shadow: none !default;
+$switch-active-shadow: none !default;
 $switch-handle-shadow: 0 0 6px 0 rgba(black, .5) !default;
 $switch-border-color: transparent !default;
 $switch-hover-border-color: transparent !default;
@@ -12,6 +13,8 @@ $switch-disabled-bg: $input-disabled-bg !default;
     $switch-handle-off-bg: rgb(250, 250, 250) !default;
 
     .k-switch {
+        background-color: transparent;
+
         &.k-switch-on {
             .k-switch-container {
                 background: lighten($switch-on-color, 25%);
