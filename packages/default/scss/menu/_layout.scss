@@ -8,6 +8,7 @@ $image-spacing: 8px !default;
     .k-menu {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: stretch;
         position: relative;
         cursor: default;
