@@ -19,7 +19,7 @@
 ## Current behavior
 <!--
   * Describe the current (faulty) behavior which is caused by the issue.
-  * In the latest package versions, check whether this behavior still represents an issue.
+  * Check whether this behavior still represents an issue in the latest package versions.
 -->
 
 ## Expected behavior
@@ -29,7 +29,7 @@
 <!--
 For bug reports, please provide the **STEPS TO REPRODUCE** and, if possible, a **MINIMAL DEMO** of the issue. You can use https://plnkr.co or share your project in a public repository.
 
-  1. Find an example in [the documentation](http://www.telerik.com/kendo-angular-ui/components/) that looks similar to your case.
+  1. Find an example from our documentation that looks similar to your case.
   2. Open it in Plunker by using the **OPEN AS PLUNKER** button.
   3. Modify the plunk, so that the issue is reproducible in it. Try to include the minimum possible amount of code.
   4. Save the plunk by using the blue **Save** button at the top.
@@ -40,6 +40,12 @@ For bug reports, please provide the **STEPS TO REPRODUCE** and, if possible, a *
 <!-- Describe the motivation or the concrete use case. -->
 
 ## Environment
+Product:
+<!--  Leave one of the following options. -->
+* Kendo Ui for jQuery
+* Kendo Ui for Angular
+* Kendo Ui for React
+* Kendo Ui for Vue
 
 Package versions:
 <!--
