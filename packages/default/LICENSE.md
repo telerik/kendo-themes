@@ -9,4 +9,4 @@ All available Kendo UI commercial licenses may be obtained at http://www.telerik
 
 If you do not own a commercial license, the usage of this software shall be governed by the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
-*Copyright © 2018 Telerik AD. All rights reserved.*
+*Copyright © 2018 Telerik EAD. All rights reserved.*
