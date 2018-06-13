@@ -16,27 +16,24 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
 
         // Message list
         .k-message-list {
+            display: flex;
             flex: 1 1 auto;
+            flex-direction: column;
+            align-items: flex-start;
             overflow-x: hidden;
             overflow-y: auto;
             scroll-behavior: smooth;
         }
-
-        .k-message-list-content {
-            margin: (-$chat-message-list-padding-y) (-$chat-message-list-padding-x);
-            position: relative;
-            flex: 0 0 auto;
-            width: calc( 100% + #{$chat-message-list-padding-x * 2} );
-            box-sizing: border-box;
-            overflow: hidden;
-        }
-
-        .k-message-list,
         .k-message-list-content {
             padding: $chat-message-list-padding-y $chat-message-list-padding-x;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            flex: 0 0 auto;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            overflow: hidden;
 
             > * + * {
                 margin-top: $chat-message-list-spacing;
@@ -343,21 +340,6 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
             $scrollbar-size: 20px;
             margin-bottom: -$scrollbar-size;
             padding-bottom: $scrollbar-size;
-        }
-    }
-
-    // Deck as part of message
-    .k-message-group > .k-card-deck-scrollwrap {
-        margin: 0;
-        // message group has a max-width of 80%, this sets it back to 100%
-        width: calc(125% - #{$message-group-spacing / 8});
-
-        > .k-button:first-child {
-            left: 0;
-        }
-
-        > .k-button:last-child {
-            right: 0;
         }
     }
 
