@@ -398,6 +398,10 @@ $list-item-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 
 // Notification
+$notification-padding-x: 8px !default;
+$notification-padding-y: 4px !default;
+$notification-border-width: 1px !default;
+
 $notification-info-border: $info !default;
 $notification-info-bg: $info !default;
 $notification-info-text: contrast-wcag( $notification-info-bg ) !default;
