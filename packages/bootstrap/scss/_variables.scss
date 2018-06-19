@@ -470,6 +470,10 @@ $pager-selected-bg: $pagination-active-bg !default;
 $pager-selected-border: $pagination-active-border-color !default;
 
 // Notification
+$notification-padding-x: $alert-padding-x !default;
+$notification-padding-y: $alert-padding-y !default;
+$notification-border-width: $alert-border-width !default;
+
 $notification-info-bg: color-level($info, 10) !default;
 $notification-info-text: color-level($info, -6) !default;
 $notification-info-border: color-level($info, 9) !default;

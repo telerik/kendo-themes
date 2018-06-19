@@ -1,16 +1,15 @@
 @include exports("notification/layout") {
 
-    $alert-padding-y: 1em !default;
-    $alert-padding-x: 1em !default;
-
     // Base
     .k-notification {
-        padding: 0;
         @include border-radius();
+        padding: 0;
     }
     .k-notification-wrap {
+        padding: $notification-padding-y calc(#{$notification-padding-x} + #{$icon-size} + #{$icon-spacing}) $notification-padding-y $notification-padding-x;
+        border-width: $notification-border-width;
+        border-style: solid;
         font-size: $font-size-sm;
-        padding: $alert-padding-y calc(#{$alert-padding-x} + #{$icon-size} + #{$icon-spacing}) $alert-padding-y $alert-padding-x;
         white-space: nowrap;
         cursor: default;
         position: relative;
@@ -24,8 +23,8 @@
         > .k-i-close {
             margin: 0;
             position: absolute;
-            top: $alert-padding-y;
-            right: $alert-padding-x;
+            top: $notification-padding-y;
+            right: $notification-padding-x;
             font-size: inherit;
             line-height: inherit;
 
@@ -36,7 +35,7 @@
     }
 
     .k-rtl .k-notification-wrap {
-        padding: $alert-padding-y $alert-padding-x $alert-padding-y calc(#{$alert-padding-x} + #{$icon-size} + #{$icon-spacing});
+        padding: $notification-padding-y $notification-padding-x $notification-padding-y calc(#{$notification-padding-x} + #{$icon-size} + #{$icon-spacing});
 
         > .k-icon {
             margin-right: 0;
@@ -46,7 +45,7 @@
         > .k-i-close {
             margin: 0;
             right: auto;
-            left: $alert-padding-x;
+            left: $notification-padding-x;
         }
     }
 }
