@@ -13,7 +13,7 @@ The Kendo UI Material theme is available through the @progress/kendo-theme-mater
 
 1. Download and install the package of the Material theme.
 
-    ```bash
+    ```sh
     npm install --save @progress/kendo-theme-material
     ```
 
