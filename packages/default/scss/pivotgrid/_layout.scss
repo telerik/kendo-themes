@@ -129,7 +129,7 @@
 
 
 
-@include exports("pivotgrid/configorator/layout") {
+@include exports("pivotgrid/configurator/layout") {
 
 
     .k-fieldselector {
@@ -202,6 +202,24 @@
             margin-top: ($spacer / 2);
         }
 
+    }
+
+}
+
+
+
+@include exports("pivotgrid/layout/ie11-fixes") {
+
+    // Pivotgrid is stretched beyond container in IE 11
+    // see https://github.com/telerik/kendo-theme-default/issues/647
+    .k-ie11 {
+        .k-pivot-layout {
+            width: 100%;
+            table-layout: fixed;
+        }
+        .k-pivot-layout > tbody > tr > td:first-child {
+            width: 280px;
+        }
     }
 
 }

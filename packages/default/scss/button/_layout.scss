@@ -74,6 +74,10 @@
             width: button-size();
             height: button-size();
             padding: $button-padding-y;
+
+            .k-text {
+                display: none;
+            }
         }
 
     }

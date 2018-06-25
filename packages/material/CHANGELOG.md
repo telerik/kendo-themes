@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.1.2...@progress/kendo-theme-material@1.1.3) (2018-06-18)
+
+
+### Bug Fixes
+
+* **switch:** do not overlay sibling elements ([f0c2f98](https://github.com/telerik/kendo-themes/commit/f0c2f98))
+* **tooltip:** align closable tooltip icon button ([69f2d09](https://github.com/telerik/kendo-themes/commit/69f2d09))
+
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.1.1...@progress/kendo-theme-material@1.1.2) (2018-05-23)
 

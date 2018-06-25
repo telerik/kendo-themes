@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.54.0"></a>
+# [2.54.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.53.2...@progress/kendo-theme-default@2.54.0) (2018-06-18)
+
+
+### Bug Fixes
+
+* **calendar:** error when compiling standalone calendar ([67aa44a](https://github.com/telerik/kendo-themes/commit/67aa44a))
+* **menu:** overflowing items do not wrap ([#206](https://github.com/telerik/kendo-themes/issues/206)) ([9944676](https://github.com/telerik/kendo-themes/commit/9944676))
+* **pivotgrid:** pivotgrid stretches beyond container in ie 11 ([d7d052b](https://github.com/telerik/kendo-themes/commit/d7d052b))
+* **tooltip:** align closable tooltip icon button ([69f2d09](https://github.com/telerik/kendo-themes/commit/69f2d09))
+* **tooltip:** move styles for transparent tooltip to layout ([1b150be](https://github.com/telerik/kendo-themes/commit/1b150be))
+
+
+### Features
+
+* **tooltip:** add tooltip title styles ([23be01a](https://github.com/telerik/kendo-themes/commit/23be01a))
+
+
+
+
 <a name="2.53.2"></a>
 ## [2.53.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.53.1...@progress/kendo-theme-default@2.53.2) (2018-05-23)
 
