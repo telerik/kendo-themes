@@ -19,6 +19,7 @@ $switch-handle-size: (.4 * $switch-size * 2) !default;
         .k-switch-handle {
             background-clip: border-box;
             position: relative;
+            margin: 0;
             top: -$switch-container-size / 2;
             left: -$switch-container-size;
         }
