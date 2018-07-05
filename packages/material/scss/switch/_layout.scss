@@ -9,9 +9,11 @@ $switch-handle-size: (.4 * $switch-size * 2) !default;
     .k-switch {
         padding: ($switch-container-size / 2) $switch-container-size;
         box-sizing: content-box;
+        overflow: visible;
 
         .k-switch-container {
             height: $switch-container-size;
+            overflow: visible;
         }
 
         .k-switch-handle {
