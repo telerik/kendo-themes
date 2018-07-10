@@ -13,7 +13,7 @@ The Kendo UI Default theme is available through the @progress/kendo-theme-defaul
 
 1. Download and install the package of the Default theme.
 
-    ```bash
+    ```sh
     npm install --save @progress/kendo-theme-default
     ```
 
