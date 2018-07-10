@@ -2,6 +2,7 @@
 
     $window-titlebar-border-width: 0 0 1px !default;
     $window-titlebar-border-style: solid !default;
+    $window-title-lineheight: 1.3em !default;
 
     .k-window {
         padding: 0;
@@ -38,9 +39,9 @@
 
     // Title bar title text
     .k-window-title {
-        margin: 0;
+        margin: (-$window-title-lineheight / 8) 0;
         font-size: $font-size-lg;
-        line-height: 1.3em;
+        line-height: $window-title-lineheight;
         text-overflow: ellipsis;
         overflow: hidden;
         cursor: default;
