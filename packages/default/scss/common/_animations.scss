@@ -8,6 +8,11 @@
         &-fixed {
             position: fixed;
         }
+
+        &-relative {
+            position: relative;
+            display: inline-block;
+        }
     }
 
 }
