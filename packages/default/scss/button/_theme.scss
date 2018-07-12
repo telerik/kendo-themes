@@ -99,12 +99,6 @@
             background-clip: border-box;
         }
 
-        // Hover state
-        > input[type="radio"]:hover + .k-button,
-        > input[type="checkbox"]:hover + .k-button {
-            @include appearance( hovered-button );
-        }
-
         // Focused state
         .k-button:focus,
         .k-button.k-state-focused,
