@@ -126,7 +126,9 @@
         }
 
         // Hover
-        .k-radio:hover + & {
+        // the hover styles must be placed on the label to prevent
+        // IE performance regressions with .foo:hover + .bar rules
+        &:hover {
             &::before {
                 border-color: $radio-hovered-border;
                 background-color: $radio-hovered-bg;
@@ -178,7 +180,9 @@
         }
 
         // Hover
-        .k-checkbox:hover + & {
+        // the hover styles must be placed on the label to prevent
+        // IE performance regressions with .foo:hover + .bar rules
+        &:hover {
             &::before {
                 border-color: $checkbox-hovered-border;
                 background-color: $checkbox-hovered-bg;
