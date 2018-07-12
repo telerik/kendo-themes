@@ -334,6 +334,7 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
         flex: 0 0 auto;
         width: 100%;
         box-sizing: content-box;
+        padding-bottom: 3px; // prevents trimming of card shadows on OSX (0-width scrollbar)
 
         > .k-card-deck {
             // hide scrollbar
@@ -351,6 +352,7 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
         flex-wrap: nowrap;
         align-items: stretch;
         flex: 0 0 auto;
+        padding-bottom: 5px; // accommodate for focused box shadow on OSX
 
         .k-card {
             flex: 0 0 auto;

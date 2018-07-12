@@ -350,6 +350,7 @@
     .k-spreadsheet-row-header,
     .k-spreadsheet-column-header {
         text-align: center;
+        z-index: 100;
     }
     .k-spreadsheet-row-header {
         position: relative;
@@ -410,6 +411,7 @@
         // sass-lint:disable-block no-important
         // always show exact active cell border, regardless of inline cell styles
         outline-color: transparent !important;
+        z-index: 10;
     }
 
     .k-spreadsheet .k-auto-fill-wrapper {
@@ -475,6 +477,7 @@
     // Filter button
     .k-spreadsheet .k-filter-wrapper {
         position: relative;
+        z-index: 50;
     }
     .k-spreadsheet .k-filter-range {
         border-width: 1px;
