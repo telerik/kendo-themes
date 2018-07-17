@@ -72,10 +72,6 @@ $grouping-border: $border-color !default;
         @include border-bottom-radius-only();
     }
 
-    .k-animation-container-shown {
-        overflow: visible;
-    }
-
     .k-animation-container-shown,
     .k-animation-container > .k-popup {
         box-shadow: $popup-shadow;

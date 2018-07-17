@@ -39,6 +39,10 @@ $popup-filter-padding-x: $input-padding-x !default;
 
         .k-popup {}
     }
+
+    .k-animation-container-shown {
+        overflow: visible;
+    }
     // Virtual list -> K1 - virtuallist.less
     .k-popup .k-item.k-first {
         position: relative;
