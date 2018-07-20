@@ -23,11 +23,11 @@ All available Kendo UI commercial licenses may be obtained at http://www.telerik
 
 ## Basic Usage
 
-For more information on how to implement the Material theme in your project, refer to the following articles:
+For more information on how to implement the Bootstrap theme in your project, refer to the following articles:
 
-* [Using the Bootstrap Theme in Angular Projects](http://gyoshevlnx:4000/components/styling/)
+* [Using the Bootstrap Theme in Angular Projects](https://www.telerik.com/kendo-angular-ui/components/styling/theme-bootstrap/)
 * [Using the Bootstrap Theme in jQuery Projects](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
-* [Customizing the Bootstrap Theme](https://github.com/telerik/kendo-theme-default/blob/13713a572b392806ca7c2950f77f9b033f87d8ea/README.md)
+* [Customizing the Bootstrap Theme](https://www.telerik.com/kendo-angular-ui/components/styling/theme-bootstrap/customization/)
 
 ## Running Custom Builds
 
