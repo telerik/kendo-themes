@@ -19,6 +19,8 @@ $tooltip-callout-size: 12px !default;
         box-sizing: border-box;
         background-repeat: repeat-x;
         position: absolute;
+        display: flex;
+        flex-direction: column;
         z-index: 12000;
 
         &:not(.k-tooltip-closable) {
