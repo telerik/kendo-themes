@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.4"></a>
+## [1.1.4](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.1.3...@progress/kendo-theme-material@1.1.4) (2018-07-24)
+
+
+### Bug Fixes
+
+* **switch:** incorrect layout calculation ([c806103](https://github.com/telerik/kendo-themes/commit/c806103))
+* **switch:** shadows are cropped ([fc11db4](https://github.com/telerik/kendo-themes/commit/fc11db4))
+
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.1.2...@progress/kendo-theme-material@1.1.3) (2018-06-18)
 
