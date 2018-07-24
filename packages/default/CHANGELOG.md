@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.54.1"></a>
+## [2.54.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.54.0...@progress/kendo-theme-default@2.54.1) (2018-07-24)
+
+
+### Bug Fixes
+
+* **chat:** selected card shadow is trimmed on OSX ([#215](https://github.com/telerik/kendo-themes/issues/215)) ([fc38a6c](https://github.com/telerik/kendo-themes/commit/fc38a6c))
+* **dialog:** dialog title cuts off letters ([1192d16](https://github.com/telerik/kendo-themes/commit/1192d16)), closes [telerik/kendo-theme-default#871](https://github.com/telerik/kendo-theme-default/issues/871)
+* **spreadsheet:** improve rendering of selected cell ([94d5dd0](https://github.com/telerik/kendo-themes/commit/94d5dd0))
+* improve performance in IE11 ([6ce81f1](https://github.com/telerik/kendo-themes/commit/6ce81f1)), closes [telerik/kendo-themes#227](https://github.com/telerik/kendo-themes/issues/227)
+
+
+
+
 <a name="2.54.0"></a>
 # [2.54.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.53.2...@progress/kendo-theme-default@2.54.0) (2018-06-18)
 
