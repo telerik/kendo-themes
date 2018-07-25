@@ -326,6 +326,13 @@ $checkbox-size: $icon-size !default;
         transform: scale(1);
     }
 
+    .k-rtl,
+    [dir='rtl'] {
+        .k-radio:checked + .k-radio-label::after {
+            right: $checkbox-size / 4;
+        }
+    }
+
     // Check / Radio list
     .k-radio-list {
         .k-radio-label {
