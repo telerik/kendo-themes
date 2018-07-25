@@ -54,6 +54,11 @@ $button-disabled-text: rgba(0, 0, 0, .38) !default;
         }
     }
 
+    // Outline buttons
+    .k-button.k-outline.k-state-active,
+    .k-button.k-outline:active {
+        box-shadow: none;
+    }
 
     // Button group
     .k-button-group {
