@@ -18,8 +18,13 @@
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 20px 20px;
         }
+
         #test-area > span {
-            text-align: center;
+            padding: 0 10px;
+        }
+
+        #test-area > span.rtl {
+            text-align: right;
         }
     </style>
 </head>
@@ -28,51 +33,63 @@
     <div id="test-area">
         <span>LTR Checkboxes</span>
         <span>LTR RadioButtons</span>
-        <span>RTL Checkboxes</span>
-        <span>RTL RadioButtons</span>
+        <span class="rtl">RTL Checkboxes</span>
+        <span class="rtl">RTL RadioButtons</span>
 
         <div class="section">
             <input type="checkbox" id="ch1" class="k-checkbox" checked />
-            <label class="k-checkbox-label" for="ch1">Checkbox 1</label>
+            <label class="k-checkbox-label" for="ch1">Checked</label>
 
-            <input type="checkbox" id="ch2" class="k-checkbox" checked disabled />
-            <label class="k-checkbox-label" for="ch2">Checkbox 2</label>
+            <input type="checkbox" id="ch2" class="k-checkbox">
+            <label class="k-checkbox-label" for="ch2">Unchecked</label>
 
-            <input type="checkbox" id="ch3" class="k-checkbox">
-            <label class="k-checkbox-label" for="ch3">Checkbox 3</label>
+            <input type="checkbox" id="ch3" class="k-checkbox" disabled checked />
+            <label class="k-checkbox-label" for="ch3">Disabled</label>
+
+            <input type="checkbox" id="ch4" class="k-checkbox" disabled />
+            <label class="k-checkbox-label" for="ch4">Disabled</label>
         </div>
 
         <div class="section">
             <input type="radio" name="group1" id="rad1" class="k-radio" checked/>
-            <label class="k-radio-label" for="rad1">RadioButton 1</label>
+            <label class="k-radio-label" for="rad1">Checked</label>
 
-            <input type="radio" name="group1" id="rad2" class="k-radio" disabled />
-            <label class="k-radio-label" for="rad2">RadioButton 2</label>
+            <input type="radio" name="group1" id="rad2" class="k-radio" />
+            <label class="k-radio-label" for="rad2">Unchecked</label>
 
-            <input type="radio" name="group1" id="rad3" class="k-radio" />
-            <label class="k-radio-label" for="rad3">RadioButton 3</label>
+            <input type="radio" name="group2" id="rad3" class="k-radio" disabled checked />
+            <label class="k-radio-label" for="rad3">Disabled</label>
+
+            <input type="radio" name="group2" id="rad4" class="k-radio" disabled />
+            <label class="k-radio-label" for="rad4">Disabled</label>
         </div>
 
         <div class="section" dir="rtl">
-            <input type="checkbox" id="ch4" class="k-checkbox" checked />
-            <label class="k-checkbox-label" for="ch4">Checkbox 4</label>
+            <input type="checkbox" id="ch5" class="k-checkbox" checked />
+            <label class="k-checkbox-label" for="ch5">Checked</label>
 
-            <input type="checkbox" id="ch5" class="k-checkbox" checked disabled />
-            <label class="k-checkbox-label" for="ch5">Checkbox 5</label>
+            <input type="checkbox" id="ch6" class="k-checkbox" />
+            <label class="k-checkbox-label" for="ch6">Unchecked</label>
 
-            <input type="checkbox" id="ch6" class="k-checkbox">
-            <label class="k-checkbox-label" for="ch6">Checkbox 6</label>
+            <input type="checkbox" id="ch7" class="k-checkbox" disabled checked />
+            <label class="k-checkbox-label" for="ch7">Disabled</label>
+
+            <input type="checkbox" id="ch8" class="k-checkbox" disabled />
+            <label class="k-checkbox-label" for="ch8">Disabled</label>
         </div>
 
         <div class="section" dir="rtl">
-            <input type="radio" name="group2" id="rad4" class="k-radio" checked />
-            <label class="k-radio-label" for="rad4">RadioButton 4</label>
+            <input type="radio" name="group3" id="rad5" class="k-radio" checked/>
+            <label class="k-radio-label" for="rad5">Checked</label>
 
-            <input type="radio" name="group2" id="rad5" class="k-radio" disabled />
-            <label class="k-radio-label" for="rad5">RadioButton 5</label>
+            <input type="radio" name="group3" id="rad6" class="k-radio" />
+            <label class="k-radio-label" for="rad6">Unchecked</label>
 
-            <input type="radio" name="group2" id="rad6" class="k-radio" />
-            <label class="k-radio-label" for="rad6">RadioButton 6</label>
+            <input type="radio" name="group4" id="rad7" class="k-radio" disabled checked />
+            <label class="k-radio-label" for="rad7">Disabled</label>
+
+            <input type="radio" name="group4" id="rad8" class="k-radio" disabled />
+            <label class="k-radio-label" for="rad8">Disabled</label>
         </div>
     </div>
 
