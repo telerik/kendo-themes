@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+
+<head>
+    <title>Map</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="test-area">
+
+        <div id="map" data-role="map" class="k-map" tabindex="0" style="position: relative;">
+            <div data-role="scroller" class="km-widget km-scroll-wrapper" style="overflow: hidden;">
+                <div class="km-scroll-header"></div>
+                <div class="km-scroll-container" style="transform-origin: left top 0px;">
+                    <div class="k-layer" style="z-index: 1000;">
+                        <span class="k-marker k-icon k-i-marker-pin-target" data-role="tooltip" style="z-index: 1000; left: 500px; top: 300px;"></span>
+                    </div>
+                    <div class="k-layer">
+                        <img style="position: absolute; display: block; width: 256px; height: 256px; top: -31px; left: -224px; visibility: visible;"
+                            alt="" src="http://a.tile.openstreetmap.org/3/7/2.png">
+                        <img style="position: absolute; display: block; width: 256px; height: 256px; top: 225px; left: -224px; visibility: visible;"
+                            alt="" src="http://b.tile.openstreetmap.org/3/7/3.png">
+                        <img style="position: absolute; display: block; width: 256px; height: 256px; top: 481px; left: -224px; visibility: visible;"
+                            alt="" src="http://c.tile.openstreetmap.org/3/7/4.png">
+                        <img style="position: absolute; display: block; width: 256px; height: 256px; top: -31px; left: 32px; visibility: visible;"
+                            alt="" src="http://a.tile.openstreetmap.org/3/0/2.png">
+                        <img style="position: absolute; display: block; width: 256px; height: 256px; top: 225px; left: 32px; visibility: visible;"
+                            alt="" src="http://b.tile.openstreetmap.org/3/0/3.png">
+                        <img style="position: absolute; display: block; width: 256px; height: 256px; top: 481px; left: 32px; visibility: visible;"
+                            alt="" src="http://c.tile.openstreetmap.org/3/0/4.png">
+                        <img style="position: absolute; display: block; width: 256px; height: 256px; top: -31px; left: 288px; visibility: visible;"
+                            alt="" src="http://a.tile.openstreetmap.org/3/1/2.png">
+                        <img style="position: absolute; display: block; width: 256px; height: 256px; top: 225px; left: 288px; visibility: visible;"
+                            alt="" src="http://b.tile.openstreetmap.org/3/1/3.png">
+                        <img style="position: absolute; display: block; width: 256px; height: 256px; top: 481px; left: 288px; visibility: visible;"
+                            alt="" src="http://c.tile.openstreetmap.org/3/1/4.png">
+                        <img style="position: absolute; display: block; width: 256px; height: 256px; top: -31px; left: 544px; visibility: visible;"
+                            alt="" src="http://a.tile.openstreetmap.org/3/2/2.png">
+                        <img style="position: absolute; display: block; width: 256px; height: 256px; top: 225px; left: 544px; visibility: visible;"
+                            alt="" src="http://b.tile.openstreetmap.org/3/2/3.png">
+                        <img style="position: absolute; display: block; width: 256px; height: 256px; top: 481px; left: 544px; visibility: visible;"
+                            alt="" src="http://c.tile.openstreetmap.org/3/2/4.png">
+                        <img style="position: absolute; display: block; width: 256px; height: 256px; top: -31px; left: 800px; visibility: visible;"
+                            alt="" src="http://a.tile.openstreetmap.org/3/3/2.png">
+                        <img style="position: absolute; display: block; width: 256px; height: 256px; top: 225px; left: 800px; visibility: visible;"
+                            alt="" src="http://b.tile.openstreetmap.org/3/3/3.png">
+                        <img style="position: absolute; display: block; width: 256px; height: 256px; top: 481px; left: 800px; visibility: visible;"
+                            alt="" src="http://c.tile.openstreetmap.org/3/3/4.png">
+                    </div>
+                </div>
+                <div class="km-touch-scrollbar km-horizontal-scrollbar" style="transform-origin: left top 0px; width: 24px;"></div>
+                <div class="km-touch-scrollbar km-vertical-scrollbar" style="transform-origin: left top 0px; height: 239px;"></div>
+            </div>
+            <div class="k-map-controls k-pos-bottom k-pos-right">
+                <div data-role="attribution" class="k-widget k-attribution" style="display: block;">©
+                    <a href="http://osm.org/copyright">OpenStreetMap contributors</a>
+                </div>
+            </div>
+            <div class="k-map-controls k-pos-top k-pos-left">
+                <div data-role="navigator" class="k-widget k-header k-shadow k-navigator">
+                    <button class="k-button k-navigator-up" aria-label="move up">
+                        <span class="k-icon k-i-arrow-60-up"></span>
+                    </button>
+                    <button class="k-button k-navigator-right" aria-label="move right">
+                        <span class="k-icon k-i-arrow-60-right"></span>
+                    </button>
+                    <button class="k-button k-navigator-down" aria-label="move down">
+                        <span class="k-icon k-i-arrow-60-down"></span>
+                    </button>
+                    <button class="k-button k-navigator-left" aria-label="move left">
+                        <span class="k-icon k-i-arrow-60-left"></span>
+                    </button>
+                </div>
+                <div data-role="zoomcontrol" class="k-widget k-zoom-control k-button-wrap k-buttons-horizontal k-button-group k-group-horizontal">
+                    <button class="k-button k-zoom-in" title="zoom-in" aria-label="zoom-in">
+                        <span class="k-icon k-i-plus"></span>
+                    </button>
+                    <button class="k-button k-zoom-out" title="zoom-out" aria-label="zoom-out">
+                        <span class="k-icon k-i-minus"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
