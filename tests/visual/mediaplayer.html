@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+
+<head>
+    <title>Media Player</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <script src="http://localhost/kendo/dist/js/jquery.min.js"></script>
+    <script src="http://localhost/kendo/dist/js/kendo.all.min.js"></script>
+</head>
+
+<body>
+
+    <div id="test-area">
+        <div id="mediaplayer" style="height:360px; width:640px"></div>
+    </div>
+
+    <script>
+        kendo.init($(".container"));
+
+        var mediaplayer = $("#mediaplayer").kendoMediaPlayer({
+            autoPlay: true,
+            loop: true,
+            navigatable: true,
+            mute: true,
+            media: {
+                title: "Recap of Progress Ringing The Bell at Nasdaq (2016)",
+                source: "https://www.youtube.com/watch?v=tc3xhD24iTU"
+            }
+        }).data("kendoMediaPlayer");
+    </script>
+
+</body>
+
+</html>
