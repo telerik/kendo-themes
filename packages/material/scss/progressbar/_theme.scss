@@ -1,0 +1,147 @@
+$progress-text: #3b3b3b !default;
+$progress-bg: #bdc2de !default;
+
+$progress-fill-bg: $primary !default;
+
+$progress-status-gap: -17px !default;
+$progress-status-font-size: 11px !default;
+$progress-status-line-height: 20px !default;
+
+$progress-animation-timing: 2s infinite !default;
+
+@mixin progress-indeterminate-common() {
+    content: "";
+    display: block;
+    position: absolute;
+    background: $progress-fill-bg;
+    width: 100%;
+    height: 100%;
+    transform-origin: 0 0;
+}
+
+@mixin progress-indeterminate-animation($primary-animation-name, $secondary-animation-name, $translate-axis, $scale-axis) {
+    @keyframes #{$primary-animation-name} {
+        0% {
+            transform: unquote("#{$translate-axis}(0)") unquote("#{$scale-axis}(0)");
+        }
+        20% {
+            transform: unquote("#{$translate-axis}(0)") unquote("#{$scale-axis}(.08)");
+            animation-timing-function: cubic-bezier(.4, .08, .75, .8);
+        }
+        60% {
+            transform: unquote("#{$translate-axis}(83%)") unquote("#{$scale-axis}(.75)");
+            animation-timing-function: cubic-bezier(.21, .25, .58, .98);
+        }
+        100% {
+            transform: unquote("#{$translate-axis}(250%)") unquote("#{$scale-axis}(.08)");
+        }
+    }
+
+    @keyframes #{$secondary-animation-name} {
+        0% {
+            transform: unquote("#{$translate-axis}(0)") unquote("#{$scale-axis}(.08)");
+            animation-timing-function: cubic-bezier(.18, 0, .54, .42);
+        }
+        22% {
+            transform: unquote("#{$translate-axis}(34%)") unquote("#{$scale-axis}(.45)");
+            animation-timing-function: cubic-bezier(.22, .25, .7, .9);
+        }
+        46% {
+            transform: unquote("#{$translate-axis}(82%)") unquote("#{$scale-axis}(.75)");
+            animation-timing-function: cubic-bezier(.33, .3, .4, 1.2);
+        }
+        100% {
+            transform: unquote("#{$translate-axis}(160%)") unquote("#{$scale-axis}(.08)");
+        }
+    }
+}
+
+@include exports("progressbar/theme") {
+
+    // Theme
+    .k-progressbar {
+        color: $progress-text;
+        background-color: $progress-bg;
+        overflow: visible;
+        border-radius: 0;
+
+        // Status
+        .k-progress-status-wrap {
+            top: $progress-status-gap;
+            font-size: $progress-status-font-size;
+            line-height: $progress-status-line-height;
+        }
+
+        // Progress
+        > .k-state-selected {}
+        .k-state-selected {
+            background-color: $progress-fill-bg;
+        }
+
+        // Chunks
+        > ul {}
+
+        .k-item {
+            border-color: $bg-color;
+        }
+    }
+
+    .k-progressbar.k-progressbar-vertical {
+
+        .k-progress-status-wrap {
+            top: 0;
+            left: $progress-status-gap;
+        }
+    }
+
+    .k-progressbar.k-progressbar-vertical.k-progressbar-reverse {
+
+        .k-progress-status-wrap {
+            left: 1px;
+        }
+    }
+
+    .k-progressbar.k-progressbar-indeterminate {
+
+        @include progress-indeterminate-animation(progress-primary-indeterminate-horizontal, progress-secondary-indeterminate-horizontal, translateX, scaleX);
+        @include progress-indeterminate-animation(progress-primary-indeterminate-vertical, progress-secondary-indeterminate-vertical, translateY, scaleY);
+        overflow: hidden;
+
+        .k-state-selected,
+        .k-progress-status-wrap {
+            display: none;
+        }
+    }
+
+    .k-progressbar.k-progressbar-horizontal.k-progressbar-indeterminate::before {
+
+        @include progress-indeterminate-common();
+        top: 0;
+        left: -150%;
+        animation: progress-primary-indeterminate-horizontal $progress-animation-timing;
+    }
+
+    .k-progressbar.k-progressbar-horizontal.k-progressbar-indeterminate::after {
+
+        @include progress-indeterminate-common();
+        top: 0;
+        left: -50%;
+        animation: progress-secondary-indeterminate-horizontal $progress-animation-timing;
+    }
+
+    .k-progressbar.k-progressbar-vertical.k-progressbar-indeterminate::before {
+
+        @include progress-indeterminate-common();
+        top: -150%;
+        left: 0;
+        animation: progress-primary-indeterminate-vertical $progress-animation-timing;
+    }
+
+    .k-progressbar.k-progressbar-vertical.k-progressbar-indeterminate::after {
+
+        @include progress-indeterminate-common();
+        top: -50%;
+        left: 0;
+        animation: progress-secondary-indeterminate-vertical $progress-animation-timing;
+    }
+}
