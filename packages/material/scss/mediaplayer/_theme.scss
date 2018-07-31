@@ -1,0 +1,26 @@
+@include exports("mediaplayer/theme") {
+
+    // Theme
+    .k-mediaplayer {}
+
+
+    // Title bar
+    .k-mediaplayer-titlebar {
+        color: $panel-bg;
+        background-image: linear-gradient( rgba( $panel-text, .7 ), rgba( $panel-text, 0 ) );
+    }
+
+
+    .k-mediaplayer-toolbar {
+        background-color: rgba($toolbar-bg, .85);
+
+        .k-mediaplayer-volume-wrap {
+            padding: 6px 0;
+        }
+
+        .k-mediaplayer-quality-wrap > .k-mediaplayer-quality {
+            padding: 0 16px;
+        }
+    }
+
+}
