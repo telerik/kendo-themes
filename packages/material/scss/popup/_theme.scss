@@ -49,7 +49,9 @@ $grouping-border: $grouping-header-bg !default;
 
     // Tooltip popup container padding
     .k-animation-container-shown.k-tooltip-wrapper {
-        padding: 0
+        .k-popup-transparent {
+            padding: 0
+        }
     }
 
     .k-list-filter {
