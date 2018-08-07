@@ -191,6 +191,10 @@
         .k-state-focused {
             @include appearance( focused-input );
 
+            .k-picker-wrap > & {
+                box-shadow: none;
+            }
+
             .k-select { @include appearance( active-button ); }
         }
 
