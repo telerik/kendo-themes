@@ -31,66 +31,163 @@
 <body>
 
     <div id="test-area">
-
+        <!-- angular tooltips -->
         <section class="dark">
-            <div class="k-animation-container">
-                <div role="tooltip" class="k-widget k-tooltip k-popup k-group k-reset">
-                    <div class="k-tooltip-content">
-                        <!-- template -->
-                        Tooltip content
-                    </div>
-                    <div class="k-callout k-callout-w"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="dark">
-            <div class="k-animation-container">
-                <div role="tooltip" class="k-widget k-tooltip k-popup k-group k-reset">
-                    <div class="k-tooltip-content">
-                        <!-- template -->
-                        Tooltip content
-                    </div>
-                    <div class="k-callout k-callout-e"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="dark">
-            <div class="k-animation-container">
-                <div role="tooltip" class="k-widget k-tooltip k-popup k-group k-reset">
-                    <span class="k-tooltip-title">Some title</span>
-                    <div class="k-tooltip-content">
-                        <!-- template -->
-                        Tooltip content content content
-                    </div>
-                    <div class="k-callout k-callout-e"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="dark">
-                <div class="k-animation-container">
-                    <div role="tooltip" class="k-widget k-tooltip k-tooltip-closable k-popup k-group k-reset">
-                        <span class="k-tooltip-title">Some title closable ggy</span>
-                        <div class="k-tooltip-button">
-                            <a href="#" class="k-icon k-i-close" title="Close"></a>
-                        </div>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown k-tooltip-wrapper">
+                <div class="k-popup k-popup-transparent">
+                    <div class="k-tooltip" styles="position: relative;">
                         <div class="k-tooltip-content">
+                                <!-- template -->
+                                Tooltip content
+                        </div>
+                        <div class="k-callout k-callout-w"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dark">
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown k-tooltip-wrapper">
+                <div class="k-popup k-popup-transparent">
+                    <div class="k-tooltip" styles="position: relative;">
+                        <div class="k-tooltip-content" style="width: 200px; height: 80px;">
                             <!-- template -->
-                            Tooltip content
+                            <p>Long Tooltip content is long and set width and height</p>
                         </div>
                         <div class="k-callout k-callout-e"></div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="dark">
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown k-tooltip-wrapper">
+                <div class="k-popup k-popup-transparent">
+                    <div class="k-tooltip" styles="position: relative;">
+                        <div class="k-tooltip-title">Some title</div>
+                        <div class="k-tooltip-content">
+                                <!-- template -->
+                                Tooltip content content content
+                        </div>
+                        <div class="k-callout k-callout-n"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dark">
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown k-tooltip-wrapper">
+                <div class="k-popup k-popup-transparent">
+                    <div class="k-tooltip k-tooltip-closable" styles="position: relative;">
+                        <div class="k-tooltip-button">
+                            <a class="k-icon k-i-close" href="#" title="Close"></a>
+                        </div>
+                        <div class="k-tooltip-title">
+                            Some title of the Tooltip
+                            <!-- descendants --> g y p
+                            <!-- ascendant --> t d l
+                        </div>
+                        <div class="k-tooltip-content">
+                                <!-- template -->
+                                Tooltip content
+                        </div>
+                        <div class="k-callout k-callout-w"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="light">
+                <div class="k-animation-container k-animation-container-fixed k-animation-container-shown k-tooltip-wrapper">
+                    <div class="k-popup k-popup-transparent">
+                        <div class="k-tooltip" styles="position: relative;">
+                            <div class="k-tooltip-content">
+                                    <!-- template -->
+                                    Tooltip content
+                            </div>
+                            <div class="k-callout k-callout-w"></div>
+                        </div>
+                    </div>
+                </div>
             </section>
+
+            <section class="light">
+                <div class="k-animation-container k-animation-container-fixed k-animation-container-shown k-tooltip-wrapper">
+                    <div class="k-popup k-popup-transparent">
+                        <div class="k-tooltip" styles="position: relative;">
+                            <div class="k-tooltip-content">
+                                    <!-- template -->
+                                    Tooltip content
+                            </div>
+                            <div class="k-callout k-callout-e"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="light">
+                <div class="k-animation-container k-animation-container-fixed k-animation-container-shown k-tooltip-wrapper">
+                    <div class="k-popup k-popup-transparent">
+                        <div class="k-tooltip" styles="position: relative;">
+                            <div class="k-tooltip-content">
+                                    <!-- template -->
+                                    Tooltip content
+                            </div>
+                            <div class="k-callout k-callout-n"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="light">
+                <div class="k-animation-container k-animation-container-fixed k-animation-container-shown k-tooltip-wrapper">
+                    <div class="k-popup k-popup-transparent">
+                        <div class="k-tooltip" styles="position: relative;">
+                            <div class="k-tooltip-content">
+                                    <!-- template -->
+                                    Tooltip content
+                            </div>
+                            <div class="k-callout k-callout-s"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- end of angular tooltips -->
+
+        <!-- jquery tooltips -->
+        <section class="dark">
+            <div class="k-animation-container">
+                <div role="tooltip" class="k-widget k-tooltip k-tooltip-closable k-popup k-group k-reset k-state-border-up" data-role="popup">
+                    <div class="k-tooltip-content">
+                        <!-- template -->
+                        jQuery Tooltip Content
+                    </div>
+                    <div class="k-callout k-callout-s"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dark">
+            <div class="k-animation-container" style="width: 200px; height: 80px;">
+                <div role="tooltip" class="k-widget k-tooltip k-tooltip-closable k-popup k-group k-reset k-state-border-up" data-role="popup" style="width: 200px; height: 80px;">
+                    <div class="k-tooltip-content">
+                        <!-- template -->
+                        jQuery Long Tooltip content is long and set width and height
+                    </div>
+                    <div class="k-callout k-callout-e"></div>
+                </div>
+            </div>
+        </section>
 
         <section class="dark">
             <div class="k-animation-container">
-                <div role="tooltip" class="k-widget k-tooltip k-popup k-group k-reset">
+                <div role="tooltip" class="k-widget k-tooltip k-tooltip-closable k-popup k-group k-reset k-state-border-up" data-role="popup">
+                    <div class="k-tooltip-title">
+                        Some Title
+                    </div>
                     <div class="k-tooltip-content">
                         <!-- template -->
-                        Tooltip content
+                        jQuery Tooltip content
                     </div>
                     <div class="k-callout k-callout-n"></div>
                 </div>
@@ -99,22 +196,18 @@
 
         <section class="dark">
             <div class="k-animation-container">
-                <div role="tooltip" class="k-widget k-tooltip k-popup k-group k-reset">
-                    <div class="k-tooltip-content">
-                        <!-- template -->
-                        Tooltip content
+                <div role="tooltip" class="k-widget k-tooltip k-tooltip-closable k-popup k-group k-reset k-state-border-up" data-role="popup">
+                    <div class="k-tooltip-button">
+                        <a href="#" class="k-icon k-i-close" title="Close"></a>
                     </div>
-                    <div class="k-callout k-callout-s"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="light">
-            <div class="k-animation-container">
-                <div role="tooltip" class="k-widget k-tooltip k-popup k-group k-reset">
+                    <div class="k-tooltip-title">
+                        Some title of the Tooltip
+                        <!-- descendants --> g y p
+                        <!-- ascendant --> t d l
+                    </div>
                     <div class="k-tooltip-content">
                         <!-- template -->
-                        Tooltip content
+                        jQuery Tooltip content
                     </div>
                     <div class="k-callout k-callout-w"></div>
                 </div>
@@ -123,10 +216,23 @@
 
         <section class="light">
             <div class="k-animation-container">
-                <div role="tooltip" class="k-widget k-tooltip k-popup k-group k-reset">
+                <div role="tooltip" class="k-widget k-tooltip k-tooltip-closable k-popup k-group k-reset k-state-border-up" data-role="popup">
                     <div class="k-tooltip-content">
                         <!-- template -->
-                        Tooltip content
+                        jQuery Tooltip Content
+                    </div>
+                    <div class="k-callout k-callout-w"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="light">
+            <div class="k-animation-container">
+                <div role="tooltip" class="k-widget k-tooltip k-tooltip-closable k-popup k-group k-reset k-state-border-up">
+                    <div class="k-tooltip-content">
+                        <div class="content-div"></div>
+                        <!-- template -->
+                        jQuery Tooltip Content
                     </div>
                     <div class="k-callout k-callout-e"></div>
                 </div>
@@ -135,10 +241,10 @@
 
         <section class="light">
             <div class="k-animation-container">
-                    <div role="tooltip" class="k-widget k-tooltip k-popup k-group k-reset">
+                <div role="tooltip" class="k-widget k-tooltip k-tooltip-closable k-popup k-group k-reset k-state-border-up" data-role="popup">
                     <div class="k-tooltip-content">
                         <!-- template -->
-                        Tooltip content
+                        jQuery Tooltip Content
                     </div>
                     <div class="k-callout k-callout-n"></div>
                 </div>
@@ -147,76 +253,17 @@
 
         <section class="light">
             <div class="k-animation-container">
-                <div role="tooltip" class="k-widget k-tooltip k-popup k-group k-reset">
+                <div role="tooltip" class="k-widget k-tooltip k-tooltip-closable k-popup k-group k-reset k-state-border-up">
                     <div class="k-tooltip-content">
+                        <div class="content-div"></div>
                         <!-- template -->
-                        Tooltip content
+                        jQuery Tooltip Content
                     </div>
                     <div class="k-callout k-callout-s"></div>
                 </div>
             </div>
         </section>
-
-        <section class="dark">
-            <div class="k-animation-container">
-                <div role="tooltip" class="k-widget k-tooltip k-tooltip-closable k-popup k-group k-reset">
-                    <div class="k-tooltip-button">
-                        <a href="#" class="k-icon k-i-close" title="Close"></a>
-                    </div>
-                    <div class="k-tooltip-content">
-                        <!-- template -->
-                        Tooltip content
-                    </div>
-                    <div class="k-callout k-callout-s"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="dark">
-            <div class="k-animation-container">
-                <div role="tooltip" class="k-widget k-tooltip k-tooltip-closable k-popup k-group k-reset">
-                    <div class="k-tooltip-button">
-                        <a href="#" class="k-icon k-i-close" title="Close"></a>
-                    </div>
-                    <div class="k-tooltip-content">
-                        <!-- template -->
-                        Long tooltip content is long and tautological.
-                    </div>
-                    <div class="k-callout k-callout-e"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="light">
-            <div class="k-animation-container">
-                <div role="tooltip" class="k-widget k-tooltip k-tooltip-closable k-popup k-group k-reset">
-                    <div class="k-tooltip-button">
-                        <a href="#" class="k-icon k-i-close" title="Close"></a>
-                    </div>
-                    <div class="k-tooltip-content">
-                        <!-- template -->
-                        Tooltip content
-                    </div>
-                    <div class="k-callout k-callout-s"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="light">
-            <div class="k-animation-container">
-                <div role="tooltip" class="k-widget k-tooltip k-tooltip-closable k-popup k-group k-reset">
-                    <div class="k-tooltip-button">
-                        <a href="#" class="k-icon k-i-close" title="Close"></a>
-                    </div>
-                    <div class="k-tooltip-content">
-                        <!-- template -->
-                        Long tooltip content is long and tautological.
-                    </div>
-                    <div class="k-callout k-callout-e"></div>
-                </div>
-            </div>
-        </section>
-
+        <!-- end of jquery tooltips -->
     </div>
 
 </body>
