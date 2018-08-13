@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+
+<head>
+    <title>PivotGrid</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        .section {
+            float: left;
+            max-width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="test-area">
+
+        <div class="section">
+            <div id="configurator" class="hidden-on-narrow k-widget k-fieldselector k-alt k-edit-form-container" data-role="pivotconfigurator"
+                style="height: 582px;">
+                <div class="k-columns k-state-default k-floatwrap">
+                    <div class="k-state-default" style="height: 579px;">
+                        <p class="k-reset">
+                            <span class="k-icon k-i-group"></span>Fields</p>
+                        <div data-role="treeview" class="k-widget k-treeview" tabindex="0">
+                            <ul class="k-group k-treeview-lines" role="tree">
+                                <li role="treeitem" class="k-item k-first" data-uid="5fa5b3d7-5b6b-4a19-afd0-72eb939af42e" aria-selected="false">
+                                    <div class="k-top k-top">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Account</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="1bde5cb7-da77-43d9-9b5d-957c687121ef" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Customer</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="1830876f-e76f-4eab-91ad-8645faafeb66" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Date</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="5ed6ccfb-dfc0-4b7a-b55d-b6649435c3be" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Delivery Date</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="a4d476bc-fd5d-4c43-bb86-b822febaf674" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Department</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="c8a6a2e0-c3eb-4e0f-819f-773d7e164d9e" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Destination Currency</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="e04b0a97-fcf1-47c4-89ab-16725fb35c90" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Employee</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="ba770691-11a9-4285-b1c1-27c405870f0b" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Geography</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="680a3959-c747-4e09-b03b-d31ec8e0b133" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Internet Sales Order Details</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="821fcecc-b53c-4431-919d-476fc95087ef" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-sum"></span>Measures</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="511adf90-20f4-475b-af52-588b2ae44184" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-kpi"></span>KPIs</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="5b1d553f-a688-40be-8fd0-f911cb2986bf" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Organization</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="9fe2b163-fcef-49da-8466-7951f1492ec2" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Product</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="3b77e95a-b05d-4a11-a49a-746a52142eb0" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Promotion</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="197ac171-6ee5-4dc2-9d2f-76e55fe16a95" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Reseller</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="a204d994-e590-417c-9350-904c4e32eb8d" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Reseller Sales Order Details</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="7c7aea9b-c50e-4228-8fc9-9b4487316718" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Sales Channel</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="37c19597-5979-4b1f-a75c-11386c894bcd" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Sales Reason</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="c751f56e-6ada-479c-bf26-fb30d7a5c743" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Sales Summary Order Details</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="853804e9-0586-4339-af60-636350f4e0ca" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Sales Territory</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="62d59314-bf3b-4db7-b417-97d88b616601" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Scenario</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item" data-uid="1d5833fa-7758-443a-b23c-581472ea2bb3" aria-selected="false">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Ship Date</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item k-last" data-uid="0548b6f5-04ad-4efb-8b77-96c2e48bf02c"
+                                    aria-selected="false">
+                                    <div class="k-bot">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">
+                                            <span class="k-icon k-i-arrows-dimensions"></span>Source Currency</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="k-state-default" style="height: 579px;">
+                        <p class="k-reset">
+                            <span class="k-icon k-i-columns"></span>Columns</p>
+                        <div class="k-list-container k-reset">
+                            <ul class="k-pivot-configurator-settings k-list k-reset k-pivot-setting" data-role="pivotsettingtarget">
+                                <li class="k-item k-header" data-name="[Date].[Calendar]">[Date].[Calendar]
+                                    <span class="k-field-actions">
+                                        <span class="k-icon k-i-more-vertical k-setting-fieldmenu"></span>
+                                        <span class="k-icon k-i-close k-setting-delete"></span>
+                                    </span>
+                                </li>
+                                <li class="k-item k-header" data-name="[Product].[Category]">[Product].[Category]
+                                    <span class="k-field-actions">
+                                        <span class="k-icon k-i-more-vertical k-setting-fieldmenu"></span>
+                                        <span class="k-icon k-i-close k-setting-delete"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="k-reset">
+                            <span class="k-icon k-i-rows"></span>Rows</p>
+                        <div class="k-list-container k-reset">
+                            <ul class="k-pivot-configurator-settings k-list k-reset k-pivot-setting" data-role="pivotsettingtarget">
+                                <li class="k-item k-header" data-name="[Geography].[City]">[Geography].[City]
+                                    <span class="k-field-actions">
+                                        <span class="k-icon k-i-more-vertical k-setting-fieldmenu"></span>
+                                        <span class="k-icon k-i-close k-setting-delete"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="k-reset">
+                            <span class="k-icon k-i-sum"></span>Measures</p>
+                        <div class="k-list-container k-reset">
+                            <ul class="k-pivot-configurator-settings k-list k-reset k-pivot-setting" data-role="pivotsettingtarget">
+                                <li class="k-item k-header" data-name="[Measures].[Reseller Freight Cost]">[Measures].[Reseller Freight Cost]
+                                    <span class="k-field-actions">
+                                        <span class="k-icon k-i-close k-setting-delete"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div id="pivotgrid" class="hidden-on-narrow k-widget k-pivot" data-role="pivotgrid" style="height: 580px;">
+                <table class="k-pivot-layout">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="k-pivot-rowheaders" style="width: 175px;">
+                                    <div class="k-pivot-toolbar k-header k-settings-measures k-pivot-setting" data-role="pivotsettingtarget"
+                                        style="height: 90px;">
+                                        <span tabindex="0" class="k-button" data-name="[Measures].[Reseller Freight Cost]">[Measures].[Reseller Freight Cost]
+                                            <span class="k-field-actions">
+                                                <span class="k-icon k-i-close k-setting-delete"></span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="k-pivot-toolbar k-header k-settings-rows k-pivot-setting" data-role="pivotsettingtarget"
+                                        style="height: 183px;">
+                                        <span tabindex="0" class="k-button" data-name="[Geography].[City]">[Geography].[City]
+                                            <span class="k-field-actions">
+                                                <span class="k-icon k-i-more-vertical k-setting-fieldmenu"></span>
+                                                <span class="k-icon k-i-close k-setting-delete"></span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="k-grid k-widget k-alt" style="height: 263px;">
+                                        <table>
+                                            <colgroup>
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="k-first">
+                                                        <span class="k-icon k-i-expand" data-path="[&quot;[Geography].[City].[All Geographies]&quot;]"></span>
+                                                        <span>All Geographies</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="k-pivot-table k-state-default">
+                                    <div class="k-pivot-toolbar k-header k-settings-columns k-pivot-setting" data-role="pivotsettingtarget"
+                                        style="height: 90px;">
+                                        <span tabindex="0" class="k-button" data-name="[Date].[Calendar]">[Date].[Calendar]
+                                            <span class="k-field-actions">
+                                                <span class="k-icon k-i-more-vertical k-setting-fieldmenu"></span>
+                                                <span class="k-icon k-i-close k-setting-delete"></span>
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="k-button" data-name="[Product].[Category]">[Product].[Category]
+                                            <span class="k-field-actions">
+                                                <span class="k-icon k-i-more-vertical k-setting-fieldmenu"></span>
+                                                <span class="k-icon k-i-close k-setting-delete"></span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="k-grid k-widget">
+                                        <div class="k-grid-header" style="padding-right: 17px;">
+                                            <div class="k-grid-header-wrap" style="height: 195px;">
+                                                <table style="width: 147%;">
+                                                    <colgroup>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="k-header" colspan="5">
+                                                                <span class="k-icon k-i-collapse" data-path="[&quot;[Date].[Calendar].[All Periods]&quot;]"></span>
+                                                                <span>All Periods</span>
+                                                            </th>
+                                                            <th class="k-header k-alt" colspan="1" rowspan="3">
+                                                                <span>All Periods</span>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="k-header" colspan="1">
+                                                                <span class="k-icon k-i-collapse" data-path="[&quot;[Date].[Calendar].[Calendar Year].&amp;[2005]&quot;]"></span>
+                                                                <span>CY 2005</span>
+                                                            </th>
+                                                            <th class="k-header k-alt" colspan="1" rowspan="2">
+                                                                <span>CY 2005</span>
+                                                            </th>
+                                                            <th class="k-header" rowspan="2">
+                                                                <span class="k-icon k-i-expand" data-path="[&quot;[Date].[Calendar].[Calendar Year].&amp;[2006]&quot;]"></span>
+                                                                <span>CY 2006</span>
+                                                            </th>
+                                                            <th class="k-header" rowspan="2">
+                                                                <span class="k-icon k-i-expand" data-path="[&quot;[Date].[Calendar].[Calendar Year].&amp;[2007]&quot;]"></span>
+                                                                <span>CY 2007</span>
+                                                            </th>
+                                                            <th class="k-header" rowspan="2">
+                                                                <span class="k-icon k-i-expand" data-path="[&quot;[Date].[Calendar].[Calendar Year].&amp;[2008]&quot;]"></span>
+                                                                <span>CY 2008</span>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="k-header">
+                                                                <span class="k-icon k-i-expand" data-path="[&quot;[Date].[Calendar].[Calendar Semester].&amp;[2005]&amp;[2]&quot;]"></span>
+                                                                <span>H2 CY 2005</span>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="k-header">
+                                                                <span class="k-icon k-i-expand" data-path="[&quot;[Date].[Calendar].[Calendar Semester].&amp;[2005]&amp;[2]&quot;,&quot;[Product].[Category].[All Products]&quot;]"></span>
+                                                                <span>All Products</span>
+                                                            </th>
+                                                            <th class="k-header">
+                                                                <span class="k-icon k-i-expand" data-path="[&quot;[Date].[Calendar].[Calendar Year].&amp;[2005]&quot;,&quot;[Product].[Category].[All Products]&quot;]"></span>
+                                                                <span>All Products</span>
+                                                            </th>
+                                                            <th class="k-header">
+                                                                <span class="k-icon k-i-expand" data-path="[&quot;[Date].[Calendar].[Calendar Year].&amp;[2006]&quot;,&quot;[Product].[Category].[All Products]&quot;]"></span>
+                                                                <span>All Products</span>
+                                                            </th>
+                                                            <th class="k-header">
+                                                                <span class="k-icon k-i-expand" data-path="[&quot;[Date].[Calendar].[Calendar Year].&amp;[2007]&quot;,&quot;[Product].[Category].[All Products]&quot;]"></span>
+                                                                <span>All Products</span>
+                                                            </th>
+                                                            <th class="k-header">
+                                                                <span class="k-icon k-i-expand" data-path="[&quot;[Date].[Calendar].[Calendar Year].&amp;[2008]&quot;,&quot;[Product].[Category].[All Products]&quot;]"></span>
+                                                                <span>All Products</span>
+                                                            </th>
+                                                            <th class="k-header">
+                                                                <span class="k-icon k-i-expand" data-path="[&quot;[Date].[Calendar].[All Periods]&quot;,&quot;[Product].[Category].[All Products]&quot;]"></span>
+                                                                <span>All Products</span>
+                                                            </th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="k-grid-content" style="height: 280px;">
+                                            <table style="width: 147%;">
+                                                <colgroup>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>$201,635.92</td>
+                                                        <td class="k-alt">$201,635.92</td>
+                                                        <td>$603,610.94</td>
+                                                        <td>$805,067.19</td>
+                                                        <td class="">$400,951.86</td>
+                                                        <td class="k-alt">$2,011,265.92</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
