@@ -457,6 +457,11 @@ $icon-size: 16px;
 $icon-size-lg: 32px;
 $icon-spacing: 4px !default;
 
+/// The URL to the icon font that will be used by the theme
+/// The default value of `null` embeds the package font with a `data:` URL
+/// @group icons
+$icon-font-url: null !default;
+
 // Disabled mixin variables
 $disabled-filter: grayscale(.1) !default;
 $disabled-opacity: .6 !default;
