@@ -1,7 +1,14 @@
 @include exports("map/theme") {
+
     .k-map {
+
+        .k-navigator {
+            @include appearance( button );
+        }
+
         .k-marker {
             color: $accent;
         }
     }
+
 }
