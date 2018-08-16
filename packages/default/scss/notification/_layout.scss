@@ -1,14 +1,17 @@
 @include exports("notification/layout") {
 
+    $notification-padding-end: calc(#{$notification-padding-x} + #{$icon-size} + #{$icon-spacing}) !default;
+
     // Base
     .k-notification {
         @include border-radius();
         padding: 0;
-    }
-    .k-notification-wrap {
-        padding: $notification-padding-y calc(#{$notification-padding-x} + #{$icon-size} + #{$icon-spacing}) $notification-padding-y $notification-padding-x;
         border-width: $notification-border-width;
         border-style: solid;
+    }
+    .k-notification-wrap {
+        padding: $notification-padding-y $notification-padding-x;
+        padding-right: $notification-padding-end;
         font-size: $font-size-sm;
         white-space: nowrap;
         cursor: default;
@@ -35,7 +38,8 @@
     }
 
     .k-rtl .k-notification-wrap {
-        padding: $notification-padding-y $notification-padding-x $notification-padding-y calc(#{$notification-padding-x} + #{$icon-size} + #{$icon-spacing});
+        padding-left: $notification-padding-end;
+        padding-right: $notification-padding-x;
 
         > .k-icon {
             margin-right: 0;
