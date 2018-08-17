@@ -496,18 +496,6 @@ $window-titlebar-bg: $modal-header-bg !default;
 $window-titlebar-border: $modal-header-border-color !default;
 
 
-// Progress
-$progress-bg: $progress-bg !default;
-$progress-text: $progress-color !default;
-$progress-border: transparent !default;
-$progress-gradient: false !default;
-
-$progress-fill-bg:  $progress-bar-bg !default;
-$progress-fill-text: $progress-bar-color !default;
-$progress-fill-border: transparent !default;
-$progress-fill-gradient: false !default;
-
-
 // Chart
 /// The color of the first series.
 /// @group charts
@@ -665,8 +653,9 @@ $tooltip-color: contrast-wcag($tooltip-bg) !default;
 
 // Progressbar
 $progressbar-height: $progress-height !default;
+$progressbar-animation-timing: $progress-bar-animation-timing !default;
 
-$progressbar-bg: $progressbar-bg !default;
+$progressbar-bg: $progress-bg !default;
 $progressbar-text: $progress-color !default;
 $progressbar-border: transparent !default;
 $progressbar-gradient: false !default;

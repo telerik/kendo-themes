@@ -578,6 +578,7 @@ $tooltip-color: contrast-wcag($tooltip-bg) !default;
 
 // Progressbar
 $progressbar-height: 22px !default;
+$progressbar-animation-timing: 1s linear infinite !default;
 
 $progressbar-bg: $base-bg !default;
 $progressbar-text: $base-text !default;
