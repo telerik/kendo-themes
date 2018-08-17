@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <title>Progressbar</title>
 
@@ -11,6 +10,12 @@
     <style>
         div[data-role='progressbar'] {
             margin: 10px;
+        }
+        .k-progressbar-indeterminate,
+        .k-progressbar-indeterminate::before,
+        .k-progressbar-indeterminate::after {
+            /* Comment if you need to preview the indeterminate animation */
+            animation: none !important;
         }
     </style>
 </head>
@@ -36,7 +41,7 @@
                 <li class="k-item k-state-default k-last" style="width: 20%;"></li>
             </ul>
         </div>
-        <br>
+        <br />
         <div id="pbr" data-role="progressbar" class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
             <span class="k-progress-status-wrap">
                 <span class="k-progress-status">10</span>
@@ -56,7 +61,7 @@
                 <li class="k-item k-last k-state-selected" style="width: 20%;"></li>
             </ul>
         </div>
-        <hr>
+        <hr />
         <div id="pbv" data-role="progressbar" class="k-widget k-progressbar k-progressbar-vertical">
             <span class="k-progress-status-wrap">
                 <span class="k-progress-status">20</span>
@@ -108,5 +113,4 @@
         </div>
     </div>
 </body>
-
 </html>
