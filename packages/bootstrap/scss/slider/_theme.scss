@@ -1,7 +1,7 @@
 @include exports("slider/theme") {
 
-    $slider-bg: $progress-bg !default;
-    $slider-selected-bg: $progress-fill-bg !default;
+    $slider-bg: $progressbar-bg !default;
+    $slider-selected-bg: $progressbar-fill-bg !default;
 
     .k-slider {
 
