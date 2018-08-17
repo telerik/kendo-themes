@@ -192,8 +192,6 @@ $window-inner-padding-y: $modal-inner-padding !default;
 $window-titlebar-padding-x: $modal-header-padding !default;
 $window-titlebar-padding-y: $modal-header-padding !default;
 
-$progressbar-height: $progress-height !default;
-
 $zindex-popup: 1;
 $zindex-window: 2;
 
@@ -663,6 +661,27 @@ $mediaplayer-toolbar-text: $toolbar-text !default;
 // Tooltip
 $tooltip-bg: $tooltip-bg !default;
 $tooltip-color: contrast-wcag($tooltip-bg) !default;
+
+
+// Progressbar
+$progressbar-height: $progress-height !default;
+
+$progressbar-bg: $progressbar-bg !default;
+$progressbar-text: $progress-color !default;
+$progressbar-border: transparent !default;
+$progressbar-gradient: false !default;
+
+$progressbar-fill-bg:  $progress-bar-bg !default;
+$progressbar-fill-text: $progress-bar-color !default;
+$progressbar-fill-border: transparent !default;
+$progressbar-fill-gradient: false !default;
+
+$progressbar-indeterminate-bg: $progressbar-bg !default;
+$progressbar-indeterminate-text: $progressbar-text !default;
+$progressbar-indeterminate-border: $progressbar-border !default;
+$progressbar-indeterminate-gradient: false !default;
+
+$progressbar-chunk-border: $bg-color !default;
 
 
 // Config maps
