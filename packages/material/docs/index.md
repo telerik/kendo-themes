@@ -21,17 +21,33 @@ The Kendo UI Material theme is available through the @progress/kendo-theme-mater
 
 ## Dependencies
 
-The following additional modules are optional and are required by projects which aim to implement the [Material Design Guidelines](https://material.io/guidelines/) style effects:
+For the Kendo UI Material theme to closely implement the [Material Design Guidelines](https://material.io/guidelines/), provide [the Roboto font family](#toc-fonts) and [configure additional modules](#toc-additional-configuration) in your application.
+
+### Fonts
+
+By default, the Material theme uses the Roboto font family but the font itself is not included in the theme package.
+
+You can add the font to the page from Google Fonts in the following way:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+<style>
+  body { font-family: Roboto, sans-serif; }
+</style>
+```
+
+### Additional Configuration
+
+The following additional configuration improves the look and feel of the theme in your application:
 
 {% platform_content angular %}
-* [Ripple effect]({% slug overview_ripple %})&mdash;Available through the `kendoRippleContainer` directive from the `@progress/kendo-angular-ripple` NPM module. The `Ripple` directive provides the [Material ink ripple effect](https://material.io/guidelines/motion/choreography.html#choreography-radial-reaction) for the Kendo UI components for Angular and is fully compatible with all available Kendo UI themes.
-* [Floating labels]({% slug overview_textbox %}#toc-implementing-floating-labels)&mdash;Available through the `kendo-textbox-container` component from the `@progress/kendo-angular-inputs` NPM module. The [TextBox]({% slug overview_textbox %}) enables you to style and provide a floating label functionality to `input` elements.
+* Use a [Ripple effect]({% slug overview_ripple %})&mdash;Available through the `kendoRippleContainer` directive from the `@progress/kendo-angular-ripple` NPM module. The `kendoRippleContainer` directive provides the [Material ink ripple effect](https://material.io/guidelines/motion/choreography.html#choreography-radial-reaction) for the Kendo UI components for Angular and is fully compatible with all available Kendo UI themes.
+* Use the [Floating labels]({% slug overview_textbox %}#toc-implementing-floating-labels)&mdash;Available through the `kendo-textbox-container` component from the `@progress/kendo-angular-inputs` NPM module. The [TextBox]({% slug overview_textbox %}) enables you to provide floating labels to `input` elements and Kendo UI components.
 {% endplatform_content %}
 
 {% platform_content react %}
-* [Ripple effect]({% slug overview_ripple %})&mdash;Available through the `Ripple` component from the `@progress/kendo-react-ripple` NPM module. The `Ripple` component provides the [Material ink ripple effect](https://material.io/guidelines/motion/choreography.html#choreography-radial-reaction) for the Kendo UI components for React and is fully compatible with all available Kendo UI themes.
-
-> The Kendo UI [Inputs]({% slug overview_inputs %}) and [DropDowns]({% slug overview_dropdowns %}) components for React comply with the [Material Design Guidelines](https://material.io/guidelines/components/text-fields.html#text-fields-layout) and provide floating labels out of the box.
+* Use a [Ripple effect]({% slug overview_ripple %})&mdash;Available through the `Ripple` component from the `@progress/kendo-react-ripple` NPM module. The `Ripple` component provides the [Material ink ripple effect](https://material.io/guidelines/motion/choreography.html#choreography-radial-reaction) for the Kendo UI components for React and is fully compatible with all available Kendo UI themes.
+* Use the `floatingLabel` property on components from the [Inputs]({% slug overview_inputs %}) and [DropDowns]({% slug overview_dropdowns %}) packages for React.
 {% endplatform_content %}
 
 ## Preview
