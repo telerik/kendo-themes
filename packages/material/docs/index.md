@@ -21,7 +21,7 @@ The Kendo UI Material theme is available through the @progress/kendo-theme-mater
 
 ## Dependencies
 
-For the Kendo UI Material theme to implement the [Material Design Guidelines](https://material.io/guidelines/) more closely, you need to provide [the Roboto font family](#toc-fonts) and [configure additional modules](#toc-additional-configuration) in your application. 
+For the Kendo UI Material theme to closely implement the [Material Design Guidelines](https://material.io/guidelines/), provide [the Roboto font family](#toc-fonts) and [configure additional modules](#toc-additional-configuration) in your application.
 
 ### Fonts
 
@@ -36,7 +36,7 @@ You can add the font to the page from Google Fonts in the following way:
 </style>
 ```
 
-### Additional configuration
+### Additional Configuration
 
 The following additional configuration improves the look and feel of the theme in your application:
 
