@@ -21,7 +21,20 @@ The Kendo UI Material theme is available through the @progress/kendo-theme-mater
 
 ## Dependencies
 
-The following additional modules are optional and are required by projects which aim to implement the [Material Design Guidelines](https://material.io/guidelines/) style effects:
+### Fonts
+
+By default, the Material theme uses the Roboto font family. The theme package does not include the font&mdash;to start using it, load the font into the page. An easy way to do this is to include the font from Google Fonts:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+<style>
+  body { font-family: Roboto, sans-serif; }
+</style>
+```
+
+### Components
+
+The following additional modules are optional and are required by projects which aim to implement the [Material Design Guidelines](https://material.io/guidelines/):
 
 {% platform_content angular %}
 * [Ripple effect]({% slug overview_ripple %})&mdash;Available through the `kendoRippleContainer` directive from the `@progress/kendo-angular-ripple` NPM module. The `Ripple` directive provides the [Material ink ripple effect](https://material.io/guidelines/motion/choreography.html#choreography-radial-reaction) for the Kendo UI components for Angular and is fully compatible with all available Kendo UI themes.
