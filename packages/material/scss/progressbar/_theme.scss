@@ -1,38 +1,46 @@
-$progress-animation-timing: 2s infinite !default;
+@mixin progressbar-indeterminate-animation($direction) {
+    $primary-animation-name: progressbar-primary-indeterminate-#{$direction};
+    $secondary-animation-name: progressbar-secondary-indeterminate-#{$direction};
 
-@mixin progress-indeterminate-animation($primary-animation-name, $secondary-animation-name, $translate-axis, $scale-axis) {
+    @function _translate($value) {
+        @return if($direction == horizontal, translateX($value), translateY($value));
+    }
+    @function _scale($value) {
+        @return if($direction == horizontal, scaleX($value), scaleY($value));
+    }
+
     @keyframes #{$primary-animation-name} {
         0% {
-            transform: unquote("#{$translate-axis}(0)") unquote("#{$scale-axis}(0)");
+            transform: _translate(0) _scale(0);
         }
         20% {
-            transform: unquote("#{$translate-axis}(0)") unquote("#{$scale-axis}(.08)");
+            transform: _translate(0) _scale(.08);
             animation-timing-function: cubic-bezier(.4, .08, .75, .8);
         }
         60% {
-            transform: unquote("#{$translate-axis}(83%)") unquote("#{$scale-axis}(.75)");
+            transform: _translate(83%) _scale(.75);
             animation-timing-function: cubic-bezier(.21, .25, .58, .98);
         }
         100% {
-            transform: unquote("#{$translate-axis}(250%)") unquote("#{$scale-axis}(.08)");
+            transform: _translate(250%) _scale(.08);
         }
     }
 
     @keyframes #{$secondary-animation-name} {
         0% {
-            transform: unquote("#{$translate-axis}(0)") unquote("#{$scale-axis}(.08)");
+            transform: _translate(0) _scale(.08);
             animation-timing-function: cubic-bezier(.18, 0, .54, .42);
         }
         22% {
-            transform: unquote("#{$translate-axis}(34%)") unquote("#{$scale-axis}(.45)");
+            transform: _translate(34%) _scale(.45);
             animation-timing-function: cubic-bezier(.22, .25, .7, .9);
         }
         46% {
-            transform: unquote("#{$translate-axis}(82%)") unquote("#{$scale-axis}(.75)");
+            transform: _translate(82%) _scale(.75);
             animation-timing-function: cubic-bezier(.33, .3, .4, 1.2);
         }
         100% {
-            transform: unquote("#{$translate-axis}(160%)") unquote("#{$scale-axis}(.08)");
+            transform: _translate(160%) _scale(.08);
         }
     }
 }
@@ -41,6 +49,10 @@ $progress-animation-timing: 2s infinite !default;
 
     $progressbar-status-offset: ($progressbar-height * 2) !default;
     $progressbar-status-font-size: 11px !default;
+    $progressbar-indeterminate-animation-timing: 2s infinite !default;
+
+    @include progressbar-indeterminate-animation(horizontal);
+    @include progressbar-indeterminate-animation(vertical);
 
     // Theme
     .k-progressbar {
@@ -79,8 +91,6 @@ $progress-animation-timing: 2s infinite !default;
     }
 
     .k-progressbar-indeterminate {
-        @include progress-indeterminate-animation(progress-primary-indeterminate-horizontal, progress-secondary-indeterminate-horizontal, translateX, scaleX);
-        @include progress-indeterminate-animation(progress-primary-indeterminate-vertical, progress-secondary-indeterminate-vertical, translateY, scaleY);
         overflow: hidden;
 
         &::before,
@@ -98,12 +108,12 @@ $progress-animation-timing: 2s infinite !default;
             &::before {
                 top: 0;
                 left: -150%;
-                animation: progress-primary-indeterminate-horizontal $progress-animation-timing;
+                animation: progressbar-primary-indeterminate-horizontal $progressbar-indeterminate-animation-timing;
             }
             &::after {
                 top: 0;
                 left: -50%;
-                animation: progress-secondary-indeterminate-horizontal $progress-animation-timing;
+                animation: progressbar-secondary-indeterminate-horizontal $progressbar-indeterminate-animation-timing;
             }
         }
 
@@ -111,12 +121,12 @@ $progress-animation-timing: 2s infinite !default;
             &::before {
                 top: -150%;
                 left: 0;
-                animation: progress-primary-indeterminate-vertical $progress-animation-timing;
+                animation: progressbar-primary-indeterminate-vertical $progressbar-indeterminate-animation-timing;
             }
             &::after {
                 top: -50%;
                 left: 0;
-                animation: progress-secondary-indeterminate-vertical $progress-animation-timing;
+                animation: progressbar-secondary-indeterminate-vertical $progressbar-indeterminate-animation-timing;
             }
         }
     }
