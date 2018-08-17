@@ -167,4 +167,13 @@
         }
     }
 
+
+    // Indeterminate
+    .k-progressbar-indeterminate {
+        .k-progress-status-wrap,
+        .k-state-selected {
+            display: none;
+        }
+    }
+
 }

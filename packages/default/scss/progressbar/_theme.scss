@@ -22,11 +22,6 @@
         @include striped-gradient( shade($progressbar-indeterminate-bg) );
         background-size: $progressbar-height $progressbar-height;
         animation: progressbar-indeterminate-animation $progressbar-animation-timing;
-
-        .k-progress-status-wrap,
-        .k-state-selected {
-            display: none;
-        }
     }
 
 }
