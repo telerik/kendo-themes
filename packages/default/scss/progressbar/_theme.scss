@@ -1,27 +1,15 @@
 @include exports('progressbar/theme') {
 
-    $progressbar-bg: $base-bg !default;
-    $progressbar-border: $base-border !default;
-    $progressbar-chunk-border: $bg-color !default;
-    $progressbar-selected-bg: $accent !default;
-    $progressbar-selected-border: darken( $progressbar-selected-bg, 4%) !default;
-    $progressbar-selected-gradient: rgba( adjust-hue( $progressbar-selected-bg, 14), 0 ), rgba( adjust-hue( $progressbar-selected-bg, 14), .2 ) !default;
+    @keyframes progressbar-indeterminate-animation {
+        from { background-position: 0 0; }
+        to { background-position: $progressbar-height 0; }
+    }
 
     .k-progressbar {
-        background-color: $progressbar-bg;
-        border-color: $progressbar-border;
-        background-clip: padding-box;
-
-        .k-ie11 &,
-        .k-edge12 &,
-        .k-edge13 & {
-            background-clip: border-box;
-        }
+        @include fill( $progressbar-text, $progressbar-bg, $progressbar-border, $progressbar-gradient );
 
         .k-state-selected {
-            border-color: $progressbar-selected-border;
-            background-color: $progressbar-selected-bg;
-            @include linear-gradient( $progressbar-selected-gradient );
+            @include fill( $progressbar-fill-text, $progressbar-fill-bg, $progressbar-fill-border, $progressbar-fill-gradient );
         }
 
         .k-item {
@@ -30,11 +18,15 @@
     }
 
     .k-progressbar-indeterminate {
-        background: url(map-get($data-uris, 'indeterminate.gif'));
+        @include fill( $progressbar-indeterminate-text, $progressbar-indeterminate-bg, $progressbar-indeterminate-border );
+        @include striped-gradient( shade($progressbar-indeterminate-bg) );
+        background-size: $progressbar-height $progressbar-height;
+        animation: progressbar-indeterminate-animation $progressbar-animation-timing;
 
         .k-progress-status-wrap,
         .k-state-selected {
             display: none;
         }
     }
+
 }
