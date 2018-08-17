@@ -21,9 +21,13 @@ The Kendo UI Material theme is available through the @progress/kendo-theme-mater
 
 ## Dependencies
 
+For the Kendo UI Material theme to render properly, you need to provide [the Roboto font family](#toc-fonts) and [an optional set of modules](#toc-components). 
+
 ### Fonts
 
-By default, the Material theme uses the Roboto font family. The theme package does not include the font&mdash;to start using it, load the font into the page. An easy way to do this is to include the font from Google Fonts:
+By default, the Material theme uses the Roboto font family but the font itself is not included in the theme package.
+
+You can add the font to the page from Google Fonts in the following way:
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
