@@ -1,23 +1,4 @@
-$progress-text: #3b3b3b !default;
-$progress-bg: #bdc2de !default;
-
-$progress-fill-bg: $primary !default;
-
-$progress-status-gap: -17px !default;
-$progress-status-font-size: 11px !default;
-$progress-status-line-height: 20px !default;
-
 $progress-animation-timing: 2s infinite !default;
-
-@mixin progress-indeterminate-common() {
-    content: "";
-    display: block;
-    position: absolute;
-    background: $progress-fill-bg;
-    width: 100%;
-    height: 100%;
-    transform-origin: 0 0;
-}
 
 @mixin progress-indeterminate-animation($primary-animation-name, $secondary-animation-name, $translate-axis, $scale-axis) {
     @keyframes #{$primary-animation-name} {
@@ -58,90 +39,86 @@ $progress-animation-timing: 2s infinite !default;
 
 @include exports("progressbar/theme") {
 
+    $progressbar-status-offset: ($progressbar-height * 2) !default;
+    $progressbar-status-font-size: 11px !default;
+
     // Theme
     .k-progressbar {
-        color: $progress-text;
-        background-color: $progress-bg;
+        @include border-radius( 0 );
+        @include fill( $progressbar-text, $progressbar-bg, $progressbar-border, $progressbar-gradient );
         overflow: visible;
-        border-radius: 0;
 
-        // Status
         .k-progress-status-wrap {
-            top: $progress-status-gap;
-            font-size: $progress-status-font-size;
-            line-height: $progress-status-line-height;
+            font-size: $progressbar-status-font-size;
         }
 
-        // Progress
-        > .k-state-selected {}
         .k-state-selected {
-            background-color: $progress-fill-bg;
+            @include fill( $progressbar-fill-text, $progressbar-fill-bg, $progressbar-fill-border, $progressbar-fill-gradient );
         }
-
-        // Chunks
-        > ul {}
 
         .k-item {
-            border-color: $bg-color;
+            border-color: $progressbar-chunk-border;
         }
     }
 
-    .k-progressbar.k-progressbar-vertical {
+    .k-progressbar-horizontal {
+        .k-progress-status-wrap {
+            top: -$progressbar-status-offset;
+        }
+    }
+
+    .k-progressbar-vertical {
 
         .k-progress-status-wrap {
             top: 0;
-            left: $progress-status-gap;
+            left: -$progressbar-status-offset;
+        }
+        &.k-progressbar-reverse .k-progress-status-wrap {
+            left: $progressbar-status-offset;
         }
     }
 
-    .k-progressbar.k-progressbar-vertical.k-progressbar-reverse {
-
-        .k-progress-status-wrap {
-            left: 1px;
-        }
-    }
-
-    .k-progressbar.k-progressbar-indeterminate {
-
+    .k-progressbar-indeterminate {
         @include progress-indeterminate-animation(progress-primary-indeterminate-horizontal, progress-secondary-indeterminate-horizontal, translateX, scaleX);
         @include progress-indeterminate-animation(progress-primary-indeterminate-vertical, progress-secondary-indeterminate-vertical, translateY, scaleY);
         overflow: hidden;
 
-        .k-state-selected,
-        .k-progress-status-wrap {
-            display: none;
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: $progressbar-fill-bg;
+            position: absolute;
+            transform-origin: 0 0;
+        }
+
+        &.k-progressbar-horizontal {
+            &::before {
+                top: 0;
+                left: -150%;
+                animation: progress-primary-indeterminate-horizontal $progress-animation-timing;
+            }
+            &::after {
+                top: 0;
+                left: -50%;
+                animation: progress-secondary-indeterminate-horizontal $progress-animation-timing;
+            }
+        }
+
+        &.k-progressbar-vertical {
+            &::before {
+                top: -150%;
+                left: 0;
+                animation: progress-primary-indeterminate-vertical $progress-animation-timing;
+            }
+            &::after {
+                top: -50%;
+                left: 0;
+                animation: progress-secondary-indeterminate-vertical $progress-animation-timing;
+            }
         }
     }
 
-    .k-progressbar.k-progressbar-horizontal.k-progressbar-indeterminate::before {
-
-        @include progress-indeterminate-common();
-        top: 0;
-        left: -150%;
-        animation: progress-primary-indeterminate-horizontal $progress-animation-timing;
-    }
-
-    .k-progressbar.k-progressbar-horizontal.k-progressbar-indeterminate::after {
-
-        @include progress-indeterminate-common();
-        top: 0;
-        left: -50%;
-        animation: progress-secondary-indeterminate-horizontal $progress-animation-timing;
-    }
-
-    .k-progressbar.k-progressbar-vertical.k-progressbar-indeterminate::before {
-
-        @include progress-indeterminate-common();
-        top: -150%;
-        left: 0;
-        animation: progress-primary-indeterminate-vertical $progress-animation-timing;
-    }
-
-    .k-progressbar.k-progressbar-vertical.k-progressbar-indeterminate::after {
-
-        @include progress-indeterminate-common();
-        top: -50%;
-        left: 0;
-        animation: progress-secondary-indeterminate-vertical $progress-animation-timing;
-    }
 }
