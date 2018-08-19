@@ -510,7 +510,6 @@ $card-deck-scroll-button-radius: 0 !default;
 $card-deck-scroll-button-offset: -$button-border-width !default;
 
 
-
 // Chat
 $chat-padding-x: 16px !default;
 $chat-padding-y: 16px !default;
@@ -553,6 +552,26 @@ $chat-bubble-border: $chat-bubble-bg !default;
 $chat-alt-bubble-bg: $accent !default;
 $chat-alt-bubble-text: $accent-contrast !default;
 $chat-alt-bubble-border: $chat-alt-bubble-bg !default;
+
+
+// Mediaplayer
+$mediaplayer-bg: $panel-bg !default;
+$mediaplayer-text: $panel-text !default;
+$mediaplayer-border: $panel-border !default;
+
+$mediaplayer-titlebar-padding-x: $header-padding-x !default;
+$mediaplayer-titlebar-padding-y: $header-padding-y !default;
+$mediaplayer-titlebar-bg: false !default;
+$mediaplayer-titlebar-text: $mediaplayer-bg !default;
+$mediaplayer-titlebar-border: false !default;
+$mediaplayer-titlebar-gradient: rgba( $mediaplayer-text, .7 ), rgba( $mediaplayer-text, 0 ) !default;
+
+$mediaplayer-toolbar-padding-x: $toolbar-padding-x !default;
+$mediaplayer-toolbar-padding-y: $toolbar-padding-y !default;
+$mediaplayer-toolbar-spacing: $padding-x !default;
+$mediaplayer-toolbar-bg: rgba( $toolbar-bg, .85 ) !default;
+$mediaplayer-toolbar-text: $toolbar-text !default;
+
 
 // Tooltip
 $tooltip-bg: $accent !default;

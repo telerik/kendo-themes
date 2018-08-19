@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Media Player</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            display: grid;
+            grid-gap: 20px 20px;
+            grid-template-columns: 1fr;
+            max-width: 1024px;
+        }
+        #test-area::after {
+            display: none;
+        }
+        .k-mediaplayer {
+            height: 360px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area">
+
+        <section>
+            <div class="k-mediaplayer k-widget">
+                <div class="k-mediaplayer-titlebar">Media player title</div>
+                <div class="k-mediaplayer-toolbar-wrap">
+                    <div class="k-widget k-slider k-slider-horizontal k-mediaplayer-seekbar k-state-default">
+                        <div class="k-slider-wrap">
+                            <div class="k-slider-track">
+                                <div class="k-slider-selection" style="width: 222px;"></div>
+                                <span class="k-draghandle" style="left: 215px;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="k-mediaplayer-toolbar k-toolbar k-widget">
+                        <span class="k-play-button k-button k-button-icon k-bare"><span class="k-icon k-i-play"></span></span>
+                        <div class="k-mediaplayer-currenttime-wrap">
+                            <span class="k-mediaplayer-currenttime">00:18</span> /
+                            <span class="k-mediaplayer-duration">00:55</span>
+                        </div>
+                        <div class="k-toolbar-spacer k-separator">&nbsp;</div>
+                        <div class="k-align-right">
+                            <span class="k-volume-button k-button k-button-icon k-bare">
+                                <span class="k-icon k-i-volume-up"></span>
+                            </span>
+                            <div class="k-mediaplayer-volume-wrap">
+                                <div class="k-widget k-slider k-slider-horizontal k-mediaplayer-volume k-state-default" style="width: 87px;">
+                                    <div class="k-slider-wrap">
+                                        <div class="k-slider-track">
+                                            <div class="k-slider-selection" style="width: 85px;"></div>
+                                            <span class="k-draghandle" style="left: 78px;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-mediaplayer-quality-wrap">
+                                <span class="k-widget k-dropdown k-header k-mediaplayer-quality">
+                                    <span class="k-dropdown-wrap k-state-default">
+                                        <span class="k-input">360p</span>
+                                        <span class="k-select"><span class="k-icon k-i-hd"></span></span>
+                                    </span>
+                                </span>
+                            </div>
+                            <span class="k-fullscreen-button k-button k-button-icon k-bare">
+                                <span class="k-icon k-i-full-screen"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-mediaplayer-overlay"></div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

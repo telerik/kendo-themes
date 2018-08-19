@@ -15,7 +15,7 @@
 
     // Title bar
     .k-mediaplayer-titlebar {
-        padding: $header-padding-y $header-padding-x;
+        padding: $mediaplayer-titlebar-padding-y $mediaplayer-titlebar-padding-x;
         position: absolute;
         z-index: 2;
         top: 0;
@@ -33,17 +33,20 @@
         right: 0;
     }
     .k-mediaplayer-toolbar {
-        padding: $toolbar-padding-y $toolbar-padding-x;
+        padding: $mediaplayer-toolbar-padding-y $mediaplayer-toolbar-padding-x;
         border-width: 0;
         // sass-lint:disable no-important
         width: 100% !important;
         // sass-lint:enable no-important
+        box-shadow: none;
 
 
         > * {
+            margin: 0;
             align-items: center;
             align-content: center;
         }
+        > * + * { margin-left: $mediaplayer-toolbar-spacing; }
 
         .k-toolbar-spacer {
             margin-top: 0;
@@ -53,7 +56,7 @@
         }
 
         .k-align-right {
-            & > * + * { margin-left: $padding-x; }
+            & > * + * { margin-left: $mediaplayer-toolbar-spacing; }
         }
 
     }
@@ -61,6 +64,8 @@
         flex: 1;
     }
     .k-mediaplayer-volume-wrap {
+        // TODO: When slider draghandle size is exposed, use it instead
+        padding: 0 (14px / 2);
         align-items: center;
     }
 
