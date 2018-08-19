@@ -21,6 +21,11 @@ body {
     margin: 10px;
 }
 
+.k-no-animations,
+.k-no-animations * {
+    animation: none !important;
+}
+
 /* Manually import Roboto font from https://fonts.googleapis.com/css?family=Roboto:300,400,500 */
 @font-face {
     font-family: 'Roboto';
