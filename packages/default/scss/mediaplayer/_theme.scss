@@ -2,27 +2,20 @@
 
     // Theme
     .k-mediaplayer {
-        background-clip: padding-box;
-
-        .k-ie11 &,
-        .k-edge12 &,
-        .k-edge13 & {
-            background-clip: border-box;
-        }
+        @include fill( $mediaplayer-text, $mediaplayer-bg, $mediaplayer-border );
     }
 
 
     // Title bar
-    // TODO: should title bar always appear the same?
     .k-mediaplayer-titlebar {
-        color: $panel-bg;
-        background-image: linear-gradient( rgba( $panel-text, .7 ), rgba( $panel-text, 0 ) );
-        // text-shadow: 0 0 1px $panel-text;
+        color: $mediaplayer-titlebar-text;
+        background-image: linear-gradient( $mediaplayer-titlebar-gradient );
+        text-shadow: 0 0 2px rgba( $mediaplayer-text, .5 );
     }
 
 
     .k-mediaplayer-toolbar {
-        background-color: rgba($toolbar-bg, .85);
+        @include fill( $mediaplayer-toolbar-text, $mediaplayer-toolbar-bg );
     }
 
 }
