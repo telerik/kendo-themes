@@ -28,8 +28,10 @@
             position: absolute;
             top: $notification-padding-y;
             right: $notification-padding-x;
+            cursor: pointer;
             font-size: inherit;
             line-height: inherit;
+            color: inherit;
 
             &::before {
                 font-size: $icon-size;
@@ -40,14 +42,6 @@
             display: inline-block;
             vertical-align: middle;
         }
-    }
-
-    .k-close-button {
-        position: absolute;
-        right: $notification-padding-x;
-        padding: 0;
-        width: $icon-size;
-        height: $icon-size;
     }
 
     .k-rtl .k-notification-wrap {
