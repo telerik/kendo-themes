@@ -31,7 +31,6 @@
             cursor: pointer;
             font-size: inherit;
             line-height: inherit;
-            color: inherit;
 
             &::before {
                 font-size: $icon-size;
@@ -55,11 +54,6 @@
 
         > .k-i-close {
             margin: 0;
-            right: auto;
-            left: $notification-padding-x;
-        }
-
-        > .k-close-button {
             right: auto;
             left: $notification-padding-x;
         }

@@ -4,6 +4,11 @@
     .k-notification {
         @include appearance( panel );
     }
+    .k-notification-wrap {
+        > .k-i-close {
+            color: inherit;
+        }
+    }
     .k-notification-info {
         border-color: $notification-info-border;
         color: $notification-info-text;
