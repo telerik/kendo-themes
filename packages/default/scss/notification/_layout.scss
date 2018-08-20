@@ -35,6 +35,19 @@
                 font-size: $icon-size;
             }
         }
+
+        > .k-notification-content {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    .k-close-button {
+        position: absolute;
+        right: $notification-padding-x;
+        padding: 0;
+        width: $icon-size;
+        height: $icon-size;
     }
 
     .k-rtl .k-notification-wrap {
@@ -48,6 +61,11 @@
 
         > .k-i-close {
             margin: 0;
+            right: auto;
+            left: $notification-padding-x;
+        }
+
+        > .k-close-button {
             right: auto;
             left: $notification-padding-x;
         }
