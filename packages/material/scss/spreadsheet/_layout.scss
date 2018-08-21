@@ -1,0 +1,75 @@
+@import "~@progress/kendo-theme-default/scss/spreadsheet/layout";
+
+@include exports( "spreadsheet/layout/material" ) {
+
+
+    // Quick access toolbar
+    .k-spreadsheet-quick-access-toolbar {
+        padding: 4px;
+
+        .k-button {
+            @extend .k-button.k-flat;
+            border-radius: 50%;
+
+            &::before {
+                display: block;
+            }
+        }
+
+    }
+
+
+    // Spreadsheet footer
+    .k-spreadsheet-sheets-bar {
+        padding: 0;
+
+        .k-button {
+            @extend .k-button.k-flat;
+            margin: 4px;
+            border-radius: 50%;
+
+            &::before {
+                display: block;
+            }
+        }
+
+    }
+
+}
+
+
+
+
+@include exports( "spreadsheet/window/layout/material" ) {
+
+    .k-spreadsheet-window {
+        width: auto;
+        box-sizing: border-box;
+
+        .k-edit-buttons,
+        .k-action-buttons {
+            margin: $spacer (-$window-inner-padding-x) (-$window-inner-padding-y);
+        }
+    }
+
+}
+
+
+
+
+@include exports( "spreadsheet/popup/layout/material" ) {
+
+    .k-spreadsheet-popup {
+
+        .k-button {
+            @extend .k-button.k-flat;
+
+            &::before {
+                display: block;
+            }
+        }
+        .k-separator {
+            margin: 0;
+        }
+    }
+}

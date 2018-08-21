@@ -53,8 +53,12 @@
     .k-spreadsheet .k-selection-full,
     .k-spreadsheet .k-selection-partial {
         // TODO: consider extracting variables
-        border-color: rgba( $header-selected-border, .25 );
+        // border-color: rgba( $header-selected-border, .25 );
         background-color: rgba( $header-selected-bg, .25 );
+
+        &::after {
+            display: none;
+        }
     }
     .k-spreadsheet-selection {
         border-color: $selected-bg;
@@ -89,6 +93,14 @@
     }
     .k-spreadsheet .k-auto-fill-punch {
         background-color: rgba( $panel-bg, .5 );
+    }
+
+
+    // Resize handle
+    .k-spreadsheet .k-resize-handle,
+    .k-spreadsheet .k-resize-hint-handle,
+    .k-spreadsheet .k-resize-hint-marker {
+        background-color: $accent;
     }
 
 }
