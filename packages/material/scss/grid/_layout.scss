@@ -10,11 +10,11 @@ $grid-sorted-icon-spacing: 4px !default;
 $grid-header-menu-icon-spacing: 14px !default;
 $grid-group-indicator-border-radius: add-two( $font-size, $button-padding-y) !default;
 $grid-group-indicator-gap: 8px !default;
+$grid-header-font-size: 12px !default;
 
 @import "~@progress/kendo-theme-default/scss/grid/layout";
 
 @include exports ('grid/layout/material') {
-    $grid-header-font-size: 12px !default;
     $grouping-dropclue-height: add-two( 2 * $font-size, 2 * $padding-y) !default;
 
     $text-field-border-width: 2px;
@@ -34,12 +34,10 @@ $grid-group-indicator-gap: 8px !default;
     }
 
     .k-grid-header {
+        font-size: $grid-header-font-size;
+
         th {
             font-weight: 700;
-        }
-
-        .k-header:not(.k-widget) {
-            font-size: $grid-header-font-size;
         }
 
         .k-grid-filter {
@@ -107,6 +105,7 @@ $grid-group-indicator-gap: 8px !default;
         width: 2px;
     }
 
+    .k-edit-cell,
     .k-grid-edit-row > td {
 
         > .k-textbox,
@@ -118,6 +117,7 @@ $grid-group-indicator-gap: 8px !default;
             margin-right: -$text-field-padding;
         }
     }
+    .k-edit-cell,
     .k-grid-edit-row {
 
         .k-autocomplete,
