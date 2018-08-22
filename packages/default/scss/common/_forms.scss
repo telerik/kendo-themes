@@ -248,7 +248,7 @@ $forms-invalid-color: $error !default;
         .k-rtl &,
         &[dir="rtl"] {
             padding-left: $input-icon-padding;
-            padding-right: $input-padding-x;
+            padding-right: 0;
         }
     }
 
