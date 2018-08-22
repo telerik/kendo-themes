@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.13.8"></a>
+## 2.13.8 (2018-08-22)
+
+
+### Bug Fixes
+
+* **buttons:** remove box-shadow of active outline buttons ([#238](https://github.com/telerik/kendo-themes/issues/238)) ([ff5708f](https://github.com/telerik/kendo-themes/commit/ff5708f)), closes [telerik/kendo-themes#237](https://github.com/telerik/kendo-themes/issues/237)
+* relax Bootstrap framework version requirement ([08a15b3](https://github.com/telerik/kendo-themes/commit/08a15b3))
+* **progressbar:** use repeating gradient for indeterminate state ([d16368c](https://github.com/telerik/kendo-themes/commit/d16368c))
+
+
+
+
 <a name="2.13.7"></a>
 ## [2.13.7](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.13.6...@progress/kendo-theme-bootstrap@2.13.7) (2018-07-24)
 

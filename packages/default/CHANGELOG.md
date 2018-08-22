@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.55.0"></a>
+# 2.55.0 (2018-08-22)
+
+
+### Bug Fixes
+
+* **buttons:** remove box-shadow of active outline buttons ([#238](https://github.com/telerik/kendo-themes/issues/238)) ([ff5708f](https://github.com/telerik/kendo-themes/commit/ff5708f)), closes [telerik/kendo-themes#237](https://github.com/telerik/kendo-themes/issues/237)
+* **dateinput:** remove double shadow in datepicker ([9f37318](https://github.com/telerik/kendo-themes/commit/9f37318))
+* **popup:** layout styles for bootstrap theme ([308d099](https://github.com/telerik/kendo-themes/commit/308d099))
+* **progressbar:** use repeating gradient for indeterminate state ([d16368c](https://github.com/telerik/kendo-themes/commit/d16368c))
+* **radiobuttons:** checked radio button is misaligned in RTL ([e53ec98](https://github.com/telerik/kendo-themes/commit/e53ec98))
+* **tooltip:** Angular tooltip not having box shadow ([e56e2b4](https://github.com/telerik/kendo-themes/commit/e56e2b4))
+* **tooltip:** content overflowing and not filling its space ([fe3cd28](https://github.com/telerik/kendo-themes/commit/fe3cd28))
+
+
+### Features
+
+* **icons:** allow icon font to be loaded from URL ([#250](https://github.com/telerik/kendo-themes/issues/250)) ([464cdcf](https://github.com/telerik/kendo-themes/commit/464cdcf))
+* **progressbar:** add Progressbar for Material theme ([1de6d19](https://github.com/telerik/kendo-themes/commit/1de6d19))
+
+
+
+
 <a name="2.54.1"></a>
 ## [2.54.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.54.0...@progress/kendo-theme-default@2.54.1) (2018-07-24)
 

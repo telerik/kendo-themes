@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# 1.2.0 (2018-08-22)
+
+
+### Bug Fixes
+
+* **buttons:** remove box-shadow of active outline buttons ([#238](https://github.com/telerik/kendo-themes/issues/238)) ([ff5708f](https://github.com/telerik/kendo-themes/commit/ff5708f)), closes [telerik/kendo-themes#237](https://github.com/telerik/kendo-themes/issues/237)
+* **tooltip:** Angular tooltip not having box shadow ([e56e2b4](https://github.com/telerik/kendo-themes/commit/e56e2b4))
+* **tooltip:** remove space between tooltip and shadow in Material theme ([07be026](https://github.com/telerik/kendo-themes/commit/07be026))
+
+
+### Features
+
+* **map:** add Map for Material theme ([081ac22](https://github.com/telerik/kendo-themes/commit/081ac22))
+* add QR and Barcode for Material theme ([fbcdb23](https://github.com/telerik/kendo-themes/commit/fbcdb23))
+* **mediaplayer:** add Media Player for Material theme ([50fa4ff](https://github.com/telerik/kendo-themes/commit/50fa4ff))
+* **progressbar:** add Progressbar for Material theme ([1de6d19](https://github.com/telerik/kendo-themes/commit/1de6d19))
+* **treelist:** add treelist for Material theme ([d4cf9c6](https://github.com/telerik/kendo-themes/commit/d4cf9c6))
+
+
+
+
 <a name="1.1.4"></a>
 ## [1.1.4](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.1.3...@progress/kendo-theme-material@1.1.4) (2018-07-24)
 
