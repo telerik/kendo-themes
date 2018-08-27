@@ -390,6 +390,7 @@
 
             &:last-child {
                 flex-grow: 1;
+                line-height: button-size();
             }
         }
     }
