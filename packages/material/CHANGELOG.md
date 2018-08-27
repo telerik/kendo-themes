@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.2.0...@progress/kendo-theme-material@1.2.1) (2018-08-27)
+
+
+### Bug Fixes
+
+* resolve build error due to function in mixin ([#266](https://github.com/telerik/kendo-themes/issues/266)) ([62821a4](https://github.com/telerik/kendo-themes/commit/62821a4))
+
+
+
+
 <a name="1.2.0"></a>
 # 1.2.0 (2018-08-22)
 
