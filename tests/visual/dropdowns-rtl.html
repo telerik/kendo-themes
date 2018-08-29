@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Dropdowns RTL</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        .section > .k-widget {
+          margin: .5em;
+        }
+
+        .k-multiselect {
+            width: 12.4em;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area">
+
+        <div class="section k-rtl">
+            <span class="k-widget k-autocomplete"><input type="text" class="k-input" placeholder="Autocomplete..." /></span>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" placeholder="Combo..." /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <span class="k-widget k-dropdown"><span class="k-dropdown-wrap"><span class="k-input">Dropdown...</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <div class="k-widget k-multiselect"><div class="k-multiselect-wrap k-floatwrap"><input class="k-input" type="text" placeholder="Multiselect..." /></div></span></div>
+        </div>
+
+        <div class="section k-rtl">
+            <span class="k-widget k-autocomplete"><input type="text" class="k-input" value="Normal" /><span unselectable="on" class="k-icon k-clear-value k-i-close"></span></span>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Normal" /><span unselectable="on" class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <span class="k-widget k-dropdown"><span class="k-dropdown-wrap"><span class="k-input">Normal</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <div class="k-widget k-multiselect"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button"><span>Normal</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;"/><span unselectable="on" class="k-icon k-clear-value k-i-close"></span></div></span></div>
+        </div>
+
+        <div class="section k-rtl">
+            <span class="k-widget k-autocomplete k-state-hover"><input type="text" class="k-input" value="Hover" /></span>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-hover"><input class="k-input" type="text" value="Hover" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <span class="k-widget k-dropdown"><span class="k-dropdown-wrap k-state-hover"><span class="k-input">Hover</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <div class="k-widget k-multiselect k-state-hover"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button k-state-hover"><span>Hover</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;"/><span unselectable="on" class="k-icon k-clear-value k-i-close"></span></div></span></div>
+        </div>
+
+        <div class="section k-rtl">
+            <span class="k-widget k-autocomplete k-state-active"><input type="text" class="k-input" value="Open" /></span>
+            <span class="k-widget k-combobox k-state-border-down"><span class="k-dropdown-wrap k-state-active"><input class="k-input" type="text" value="Open" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <span class="k-widget k-dropdown k-state-border-down"><span class="k-dropdown-wrap k-state-active"><span class="k-input">Open</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <div class="k-widget k-multiselect k-state-focused k-state-border-down"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button"><span>Open</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;"/></div></span></div>
+        </div>
+
+        <div class="section k-rtl">
+            <span class="k-widget k-autocomplete k-state-focused"><input type="text" class="k-input" value="Focused" /></span>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-focused"><input class="k-input" type="text" value="Focused" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <span class="k-widget k-dropdown"><span class="k-dropdown-wrap k-state-focused"><span class="k-input">Focused</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <div class="k-widget k-multiselect k-state-focused"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button k-state-focused"><span>Focused</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;"/><span unselectable="on" class="k-icon k-clear-value k-i-close"></span></div></span></div>
+        </div>
+
+        <div class="section k-rtl">
+            <span class="k-widget k-autocomplete k-state-disabled"><input type="text" class="k-input" value="Focused" /></span>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-disabled"><input class="k-input" type="text" value="Disabled" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <span class="k-widget k-dropdown"><span class="k-dropdown-wrap k-state-disabled"><span class="k-input">Disabled</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <div class="k-widget k-multiselect k-state-disabled"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button"><span>Disabled</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;"/></div></span></div>
+        </div>
+
+        <div class="section k-rtl">
+            <span class="k-widget k-autocomplete k-state-invalid"><input type="text" class="k-input" value="Invalid" /></span>
+            <span class="k-widget k-combobox k-state-invalid"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Invalid" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <span class="k-widget k-dropdown k-state-invalid"><span class="k-dropdown-wrap"><span class="k-input">Invalid</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <div class="k-widget k-multiselect k-state-invalid"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button"><span>Invalid</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;"/></div></span></div>
+        </div>
+
+        <!-- intentionally without k-rtl, to test angular alignment -->
+        <div class="section" style="direction: rtl">
+            <span class="k-widget k-autocomplete ng-invalid ng-touched" dir="rtl"><input type="text" class="k-input" value="NG invalid" /></span>
+            <span class="k-widget k-combobox ng-invalid ng-touched" dir="rtl"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="NG invalid" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <span class="k-widget k-dropdown ng-invalid ng-touched" dir="rtl"><span class="k-dropdown-wrap"><span class="k-input">NG invalid</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <div class="k-widget k-multiselect ng-invalid ng-touched" dir="rtl"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button"><span>NG invalid</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;"/></div></span></div>
+        </div>
+
+        <div class="section k-rtl">
+            <span class="k-widget k-autocomplete"><input type="text" class="k-input" value="Normal" /><span class="k-icon k-i-loading"></span></span>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Normal" /><span class="k-select"><span class="k-icon k-i-arrow-60-down k-i-loading"></span></span></span></span>
+            <span class="k-widget k-dropdown"><span class="k-dropdown-wrap"><span class="k-input">Normal</span><span class="k-select"><span class="k-icon k-i-arrow-60-down k-i-loading"></span></span></span></span>
+            <div class="k-widget k-multiselect"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button"><span>Normal</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;"/><span class="k-icon k-i-loading"></span></div></span></div>
+        </div>
+
+        <div class="section k-rtl">
+            <!-- multirows multiselect -->
+            <div class="k-widget k-multiselect"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button"><span>Token 1</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li><li class="k-button"><span>Token 2</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;" /><span unselectable="on" class="k-icon k-clear-value k-i-close"></span></div></div>
+            <div class="k-widget k-multiselect"><div class="k-multiselect-wrap k-floatwrap"><ul class="k-reset"><li class="k-button"><span>Token 1</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li><li class="k-button"><span>Token 2</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li></ul><input class="k-input" type="text" style="width: 25px;" /><span class="k-icon k-i-loading"></span></div></div>
+        </div>
+
+        <div class="section k-rtl">
+            <!-- multiselect popup -->
+
+            <div class="k-popup k-list-container k-reset">
+                <div class="k-list">
+                    <div class="k-item k-custom-item">
+                        Custom item
+                        <span class="k-icon k-i-plus"></span>
+                    </div>
+                </div>
+
+                <div class="k-list-scroller" style="max-height: 200px;">
+                    <ul role="listbox" class="k-list k-reset">
+                        <li role="option" class="k-item">
+                            Item
+                        </li><li role="option" class="k-item k-state-focused">
+                            Focused Item
+                        </li><li role="option" class="k-item k-state-hover">
+                            Hovered Item
+                        </li><li role="option" class="k-item k-state-selected" aria-selected="true">
+                            Selected Item
+                        </li><li role="option" class="k-item k-state-hover k-state-selected" aria-selected="true">
+                            Hovered Selected Item
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
