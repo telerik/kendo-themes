@@ -509,6 +509,7 @@ $calendar-view-gap: 32px !default;
             flex-direction: row;
 
             > tbody {
+                display: inline-block;
                 padding: 0 $calendar-multi-view-gap;
             }
 
