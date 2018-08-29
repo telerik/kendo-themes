@@ -9,6 +9,9 @@
             color: inherit;
         }
     }
+    .k-notification-animation-container > .k-notification {
+        box-shadow: $notification-shadow;
+    }
     .k-notification-info {
         border-color: $notification-info-border;
         color: $notification-info-text;
