@@ -554,6 +554,7 @@
             display: block;
             overflow: hidden;
             text-overflow: ellipsis;
+            outline: 0;
         }
 
         .k-with-icon > .k-link,
@@ -718,6 +719,7 @@
     .k-grid-content,
     .k-grid-content-locked {
         border-color: inherit;
+        outline: 0;
 
         table {
             table-layout: fixed;
