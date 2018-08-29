@@ -132,8 +132,8 @@ $forms-invalid-color: $error !default;
 
         .k-select {
             @include border-right-radius-only();
-            padding: $button-padding-y;
-            border-width: 0 0 0 1px;
+            padding: $picker-button-padding-y $picker-button-padding-x;
+            border-width: 0 0 0 $picker-button-border-width;
             box-sizing: border-box;
             border-style: solid;
             display: flex;
@@ -265,8 +265,8 @@ $forms-invalid-color: $error !default;
     .k-numerictextbox {
 
         .k-select {
-            border-width: 0;
             padding: 0;
+            border-width: 0;
             width: $spinner-width;
             display: flex;
             flex-direction: column;

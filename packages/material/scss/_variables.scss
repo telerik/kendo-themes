@@ -128,8 +128,8 @@ $button-border-width: 0 !default;
 $button-border-radius: $border-radius !default;
 
 $button-padding-x: $padding-x !default;
-$button-padding-y: $padding-y !default;
-$button-line-height: $form-line-height !default;
+$button-padding-y: 8px !default;
+$button-line-height: (20 / 14) !default;
 
 $button-padding-x-sm: $button-padding-x / 2 !default;
 $button-padding-y-sm: $button-padding-y / 2 !default;
@@ -162,6 +162,12 @@ $textarea-padding-y: 15px !default;
 $textarea-floating-label-padding: 25px !default;
 
 
+// Pickers
+$picker-button-border-width: 0 !default;
+$picker-button-padding-x: ($button-padding-y / 2) !default;
+$picker-button-padding-y: $button-padding-y !default;
+
+
 // Toolbar
 $toolbar-border-width: 0 !default;
 $toolbar-border-radius: 0 !default;
@@ -180,7 +186,7 @@ $toolbar-button-border-width: $button-border-width !default;
 $toolbar-button-border-radius: 0 !default;
 
 $toolbar-button-padding-x: $button-padding-x !default;
-$toolbar-button-padding-y: $padding-y * 2.5 !default;
+$toolbar-button-padding-y: 14px !default;
 $toolbar-button-line-height: $button-line-height !default;
 
 $toolbar-button-calc-size: #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} + #{$toolbar-button-border-width * 2} !default;
