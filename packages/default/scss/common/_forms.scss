@@ -15,7 +15,7 @@ $forms-invalid-color: $error !default;
     .k-timepicker,
     .k-dropdowntree {
         width: $input-default-width;
-        line-height: $form-line-height;
+        line-height: $input-line-height;
         text-align: left;
         white-space: nowrap;
         display: inline-flex;
@@ -82,7 +82,7 @@ $forms-invalid-color: $error !default;
     .k-picker-wrap,
     .k-multiselect-wrap,
     .k-numeric-wrap {
-        @include border-radius($input-border-radius);
+        @include border-radius( $input-border-radius );
         padding: 0;
         width: 100%;
         border-width: 1px;
@@ -162,8 +162,8 @@ $forms-invalid-color: $error !default;
         }
 
         .k-clear-value {
-            height: ($form-line-height * $font-size );
-            line-height: ($form-line-height * $font-size );
+            height: ($input-line-height * $font-size);
+            line-height: ($input-line-height * $font-size);
             outline: 0;
             opacity: .5;
             cursor: pointer;
@@ -171,7 +171,7 @@ $forms-invalid-color: $error !default;
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            margin-bottom: -($form-line-height * $font-size / 2);
+            margin-bottom: -($input-line-height * $font-size / 2);
         }
         .k-clear-value:hover {
             opacity: 1;
@@ -226,7 +226,7 @@ $forms-invalid-color: $error !default;
 
         .k-i-loading,
         .k-clear-value {
-            bottom: add-two($button-padding-y, $form-line-height * $font-size / 2);
+            bottom: add-two($button-padding-y, $input-line-height * $font-size / 2);
         }
     }
 
