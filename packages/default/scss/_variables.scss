@@ -133,6 +133,11 @@ $input-line-height-sm: $form-line-height-sm !default;
 $input-inner-calc-size: #{$input-line-height * 1em} + #{$input-padding-y * 2};
 $input-calc-size: #{$input-inner-calc-size} + 2px;
 
+
+// Toolbar
+$toolbar-border-width: 1px !default;
+$toolbar-border-radius: 0 !default;
+
 /// The horizontal padding of the container.
 /// @group toolbar
 $toolbar-padding-x: $padding-x !default;
@@ -140,9 +145,18 @@ $toolbar-padding-x: $padding-x !default;
 /// The vertical padding of the container.
 /// @group toolbar
 $toolbar-padding-y: $padding-x !default;
+$toolbar-line-height: $line-height !default;
+
+$toolbar-spacing: $toolbar-padding-x !default;
+
+$toolbar-button-border-width: $button-border-width !default;
+$toolbar-button-border-radius: 0 !default;
+
 $toolbar-button-padding-x: $button-padding-x !default;
 $toolbar-button-padding-y: $button-padding-y !default;
-$toolbar-button-calc-size: #{$form-line-height-em} + #{$toolbar-button-padding-y * 2} + #{$button-border-width * 2};
+$toolbar-button-line-height: $button-line-height !default;
+
+$toolbar-button-calc-size: #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} + #{$toolbar-button-border-width * 2} !default;
 $toolbar-inner-calc-size: #{$toolbar-button-calc-size} + #{$toolbar-padding-y * 2} !default;
 
 $list-item-padding-x: $padding-x !default;
@@ -362,8 +376,6 @@ $toolbar-gradient: null !default;
 
 
 // Input
-$input-default-width: 12.4em !default;
-
 $input-text: $panel-text !default;
 $input-bg: $panel-bg !default;
 $input-border: $button-border !default;

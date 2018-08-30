@@ -4,3 +4,11 @@
 @function button-inner-size( $multiplier: 1 ) {
     @return add-two( 2 * $button-padding-y, $button-line-height * 1em, $multiplier );
 }
+
+
+@function toolbar-button-size( $multiplier: 1 ) {
+    @return add-three( 2 * $toolbar-button-border-width, 2 * $toolbar-button-padding-y, $toolbar-button-line-height * 1em, $multiplier );
+}
+@function toolbar-button-inner-size( $multiplier: 1 ) {
+    @return add-two( 2 * $toolbar-button-padding-y, $toolbar-button-line-height * 1em, $multiplier );
+}
