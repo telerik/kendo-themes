@@ -115,14 +115,23 @@ $button-line-height-sm: $form-line-height-sm !default;
 $button-inner-calc-size: #{$button-line-height * 1em} + #{$button-padding-y * 2};
 $button-calc-size: #{$button-inner-calc-size} + 2px;
 
+
+// Inputs
+$input-default-width: 12.4em !default;
+
 $input-border-width: 1px !default;
 $input-border-radius: $border-radius !default;
+
 $input-padding-x: $padding-x !default;
 $input-padding-y: $padding-y !default;
+$input-line-height: $form-line-height !default;
+
 $input-padding-x-sm: $input-padding-x / 2 !default;
 $input-padding-y-sm: $input-padding-y / 2 !default;
-$input-calc-size: #{$form-line-height-em} + #{$input-padding-y * 2} + 2px;
-$input-inner-calc-size: #{$form-line-height-em} + #{$input-padding-y * 2};
+$input-line-height-sm: $form-line-height-sm !default;
+
+$input-inner-calc-size: #{$input-line-height * 1em} + #{$input-padding-y * 2};
+$input-calc-size: #{$input-inner-calc-size} + 2px;
 
 /// The horizontal padding of the container.
 /// @group toolbar
