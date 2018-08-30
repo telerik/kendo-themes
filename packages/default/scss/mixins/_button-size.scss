@@ -1,8 +1,6 @@
-@function button-inner-size( $multiplier: 1 ) {
-    @return add-two( 2 * $button-padding-y, $form-line-height-em, $multiplier );
-}
-
-
 @function button-size( $multiplier: 1 ) {
-    @return add-three( 2 * $button-border-width, 2 * $button-padding-y, $form-line-height-em, $multiplier );
+    @return add-three( 2 * $button-border-width, 2 * $button-padding-y, $button-line-height * 1em, $multiplier );
+}
+@function button-inner-size( $multiplier: 1 ) {
+    @return add-two( 2 * $button-padding-y, $button-line-height * 1em, $multiplier );
 }
