@@ -15,6 +15,7 @@ $forms-invalid-color: $error !default;
     .k-timepicker,
     .k-dropdowntree {
         width: $input-default-width;
+        font-size: $input-font-size;
         line-height: $input-line-height;
         text-align: left;
         white-space: nowrap;
@@ -77,6 +78,7 @@ $forms-invalid-color: $error !default;
 
 
     // Wrappers
+    .k-autocomplete,
     .k-dateinput-wrap,
     .k-dropdown-wrap,
     .k-picker-wrap,
@@ -97,7 +99,7 @@ $forms-invalid-color: $error !default;
 
         .k-input {
             padding: $input-padding-y $input-padding-x;
-            height: button-inner-size();
+            height: add-two( 2 * $input-padding-y, $input-line-height * 1em );
             box-sizing: border-box;
             border: 0;
             outline: 0;
@@ -110,6 +112,10 @@ $forms-invalid-color: $error !default;
             overflow: hidden;
             text-overflow: ellipsis;
         }
+    }
+    .k-autocomplete {
+        // Reset width to default input width
+        width: $input-default-width;
     }
 
     // Other common
