@@ -169,6 +169,7 @@ $button-calc-size: #{$button-inner-calc-size} + 2px;
 
 // Inputs
 $input-default-width: 12.4em !default;
+$input-font-size: $font-size !default;
 
 $input-border-width: $input-border-width !default;
 $input-border-radius: $input-border-radius !default;

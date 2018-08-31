@@ -17,10 +17,10 @@
 
         .k-button {
             min-height: $form-line-height-em;
-            margin: $input-padding-y $input-padding-y 0 0;
             padding-top: 0;
             padding-bottom: 0;
             font-size: .75em;
+            line-height: $form-line-height;
             box-shadow: none;
             border-radius: $form-line-height-em;
             background: transparent;
