@@ -68,8 +68,10 @@ $toolbar-border-width: 0 !default;
             text-transform: uppercase;
 
             .k-input {
-                height: auto;
                 padding: $toolbar-button-padding-y $toolbar-button-padding-x;
+                height: calc( #{$toolbar-inner-calc-size} );
+                font-size: $font-size;
+                line-height: $button-line-height;
             }
 
             .k-select {
