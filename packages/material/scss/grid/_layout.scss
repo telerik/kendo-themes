@@ -27,17 +27,14 @@ $grid-group-indicator-gap: 8px !default;
     $grid-header-font-size: 12px !default;
     $grouping-dropclue-height: add-two( 2 * $font-size, 2 * $padding-y) !default;
 
+    $text-field-border-width: 2px;
+    $text-field-radius: $text-field-border-width + 1px;
+    $text-field-padding: (2 * $grid-cell-padding-x / 3);
+
     .k-grid {
         .k-checkbox-label,
         .k-radio-label {
             line-height: normal;
-        }
-
-        .k-edit-cell,
-        .k-grid-edit-row {
-            .k-input {
-                font-size: $font-size;
-            }
         }
 
         .k-button,
@@ -118,5 +115,59 @@ $grid-group-indicator-gap: 8px !default;
     .k-reorder-cue {
         margin-left: -1px;
         width: 2px;
+    }
+
+    .k-grid-edit-row > td {
+
+        > .k-textbox,
+        > .k-input.k-textbox,
+        > .k-textarea,
+        > .k-widget {
+            border-radius: $text-field-radius;
+            margin-left: -$text-field-padding;
+            margin-right: -$text-field-padding;
+        }
+    }
+    .k-grid-edit-row {
+
+        .k-autocomplete,
+        .k-combobox,
+        .k-dateinput,
+        .k-datepicker,
+        .k-datetimepicker,
+        .k-dropdown,
+        .k-dropdowntree,
+        .k-maskedtextbox,
+        .k-multiselect,
+        .k-numerictextbox,
+        .k-timepicker,
+        .k-textbox,
+        .k-textbox.k-input {
+            font-size: $font-size;
+            line-height: $button-line-height;
+        }
+
+        .k-textbox,
+        .k-textbox.k-input,
+        .k-textarea,
+        .k-autocomplete,
+        .k-dateinput-wrap,
+        .k-dropdown-wrap,
+        .k-picker-wrap,
+        .k-multiselect-wrap,
+        .k-numeric-wrap {
+            border-radius: $text-field-radius;
+            border-width: 0 0 $text-field-border-width;
+            padding-left: $text-field-padding;
+            padding-right: $text-field-padding;
+
+            .k-input {
+                height: add-three( $button-line-height * 1em, $button-padding-y * 2, -$text-field-border-width );
+            }
+        }
+        .k-textbox,
+        .k-textbox.k-input, {
+            height: button-size();
+        }
     }
 }
