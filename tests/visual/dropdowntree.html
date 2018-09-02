@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <title>Dropdowns</title>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts.js"></script>
 
     <style>
         .section > .k-widget {
-            margin-right: .5em;
+            margin-right: 10px;
         }
 
         .k-widget .k-clear-value,
@@ -46,7 +47,7 @@
                     <ul class="k-reset">
                         <li class="k-button "><span><div>Normal</div></span><span class="k-select"><span class="k-icon k-i-close"></span></span>
                         </li>
-                    </ul><span class="k-icon k-clear-value k-i-close"></span></div>
+                    </ul><input class="k-input" type="text" style="width: 25px;" /><span class="k-icon k-clear-value k-i-close"></span></div>
             </div>
         </div>
 
@@ -60,8 +61,7 @@
                     <ul class="k-reset">
                         <li class="k-button k-state-hover"><span><div>Hover</div></span><span class="k-select"><span class="k-icon k-i-close"></span></span>
                         </li>
-                    </ul>
-                    </span>
+                    </ul><input class="k-input" type="text" style="width: 25px;" />
                 </div>
             </div>
         </div>
@@ -76,8 +76,7 @@
                     <ul class="k-reset">
                         <li class="k-button "><span><div>Open</div></span><span class="k-select"><span class="k-icon k-i-close"></span></span>
                         </li>
-                    </ul>
-                    </span>
+                    </ul><input class="k-input" type="text" style="width: 25px;" />
                 </div>
             </div>
         </div>
@@ -92,7 +91,7 @@
                     <ul class="k-reset">
                         <li class="k-button k-state-focused"><span><div>Focused</div></span><span class="k-select"><span class="k-icon k-i-close"></span></span>
                         </li>
-                    </ul>
+                    </ul><input class="k-input" type="text" style="width: 25px;" />
                 </div>
             </div>
         </div>
@@ -107,7 +106,7 @@
                     <ul class="k-reset">
                         <li class="k-button "><span><div>Disabled</div></span><span class="k-select"><span class="k-icon k-i-close"></span></span>
                         </li>
-                    </ul>
+                    </ul><input class="k-input" type="text" style="width: 25px;" />
                 </div>
             </div>
         </div>
@@ -122,7 +121,7 @@
                     <ul class="k-reset">
                         <li class="k-button "><span><div>Invalid</div></span><span class="k-select"><span class="k-icon k-i-close"></span></span>
                         </li>
-                    </ul>
+                    </ul><input class="k-input" type="text" style="width: 25px;" />
                 </div>
             </div>
         </div>
@@ -137,7 +136,7 @@
                     <ul class="k-reset">
                         <li class="k-button "><span><div>NG invalid</div></span><span class="k-select"><span class="k-icon k-i-close"></span></span>
                         </li>
-                    </ul>
+                    </ul><input class="k-input" type="text" style="width: 25px;" />
                 </div>
             </div>
         </div>
@@ -152,7 +151,7 @@
                     <ul class="k-reset">
                         <li class="k-button "><span><div>Normal</div></span><span class="k-select"><span class="k-icon k-i-close"></span></span>
                         </li>
-                    </ul><span class="k-icon k-i-loading"></span></div>
+                    </ul><input class="k-input" type="text" style="width: 25px;" /><span class="k-icon k-i-loading"></span></div>
             </div>
         </div>
 
@@ -266,7 +265,7 @@
             <div class="k-animation-container" style="overflow: visible">
                 <div class="k-list-container k-popup k-group k-reset k-multiple-selection k-popup-dropdowntree k-state-border-up" style="display: block;">
                     <span class="k-list-filter">
-                    <input class="k-textbox">
+                        <input class="k-textbox" value="Filter text" />
                     <span class="k-icon k-i-zoom"></span>
                     </span>
                     <div class="k-check-all">
