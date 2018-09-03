@@ -47,10 +47,8 @@ $grouping-border: $grouping-header-bg !default;
         }
     }
 
-    // Tooltip and Notification popup container padding
-    .k-animation-container-shown.k-tooltip-wrapper,
-    .k-animation-container-shown {
-        .k-notification &,
+    // Tooltip popup container padding
+    .k-animation-container-shown.k-tooltip-wrapper {
         .k-popup-transparent {
             padding: 0
         }
