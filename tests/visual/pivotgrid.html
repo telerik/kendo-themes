@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+
+<head>
+    <title>PivotGrid</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div id="test-area">
+
+        <div class="section">
+            <div id="pivotgrid" class="hidden-on-narrow k-widget k-pivot" data-role="pivotgrid" style="height: 580px;">
+                <table class="k-pivot-layout">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="k-pivot-rowheaders" style="width: 250px;">
+                                    <div class="k-pivot-toolbar k-header k-settings-measures k-pivot-setting">
+                                        <span tabindex="0" class="k-button">
+                                            Measure 1
+                                            <span class="k-field-actions">
+                                                <span class="k-icon k-i-close k-setting-delete"></span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="k-pivot-toolbar k-header k-settings-rows k-pivot-setting" style="height: 181px; box-sizing: border-box;">
+                                        <span tabindex="0" class="k-button">
+                                            Row 1
+                                            <span class="k-field-actions">
+                                                <span class="k-icon k-i-more-vertical k-setting-fieldmenu"></span>
+                                                <span class="k-icon k-i-close k-setting-delete"></span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="k-grid k-widget k-alt">
+                                        <table>
+                                            <colgroup>
+                                                <col /><col />
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="k-first" rowspan="5"><span class="k-icon k-i-collapse"></span><span>All Geographies</span></td>
+                                                    <td><span>Row 1</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>Row 2</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>Row 3</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>Row 4</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>Row 5</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="k-grid-footer k-first" colspan="2"><span>All Geographies</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="k-pivot-table k-state-default">
+                                    <div class="k-pivot-toolbar k-header k-settings-columns k-pivot-setting">
+                                        <span tabindex="0" class="k-button">
+                                            Column 1
+                                            <span class="k-field-actions">
+                                                <span class="k-icon k-i-more-vertical k-setting-fieldmenu"></span>
+                                                <span class="k-icon k-i-close k-setting-delete"></span>
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="k-button">
+                                            Column 2
+                                            <span class="k-field-actions">
+                                                <span class="k-icon k-i-more-vertical k-setting-fieldmenu"></span>
+                                                <span class="k-icon k-i-close k-setting-delete"></span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="k-grid k-widget">
+                                        <div class="k-grid-header" style="padding-right: 17px;">
+                                            <div class="k-grid-header-wrap" style="height: 180px;">
+                                                <table style="height: 181px">
+                                                    <colgroup>
+                                                        <col /><col /><col /><col /><col />
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="k-header" colspan="4"><span class="k-icon k-i-collapse"></span><span>All Periods</span></th>
+                                                            <th class="k-header k-alt" colspan="1" rowspan="2"><span>All Periods</span></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="k-header"><span class="k-icon k-i-expand"></span><span>CY 2005</span></th>
+                                                            <th class="k-header"><span class="k-icon k-i-expand"></span><span>CY 2006</span></th>
+                                                            <th class="k-header"><span class="k-icon k-i-expand"></span><span>CY 2007</span></th>
+                                                            <th class="k-header"><span class="k-icon k-i-expand"></span><span>CY 2008</span></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="k-header"><span class="k-icon k-i-expand"></span><span>All Products</span></th>
+                                                            <th class="k-header"><span class="k-icon k-i-expand"></span><span>All Products</span></th>
+                                                            <th class="k-header"><span class="k-icon k-i-expand"></span><span>All Products</span></th>
+                                                            <th class="k-header"><span class="k-icon k-i-expand"></span><span>All Products</span></th>
+                                                            <th class="k-header"><span class="k-icon k-i-expand"></span><span>All Products</span></th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="k-grid-content">
+                                            <table>
+                                                <colgroup>
+                                                    <col /><col /><col /><col /><col />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                        <td>&nbsp;</td>
+                                                        <td>$0.54</td>
+                                                        <td>$0.94</td>
+                                                        <td class="k-alt">$1.48</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                        <td>&nbsp;</td>
+                                                        <td>$80.12</td>
+                                                        <td>$178.76</td>
+                                                        <td class="k-alt">$258.88</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                        <td>$283.87</td>
+                                                        <td>$373.71</td>
+                                                        <td>$80.62</td>
+                                                        <td class="k-alt">$738.20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>$944.54</td>
+                                                        <td>$1,276.93</td>
+                                                        <td>$308.62</td>
+                                                        <td>&nbsp;</td>
+                                                        <td class="k-alt">$2,530.09</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>$15.09</td>
+                                                        <td>$10.49</td>
+                                                        <td>&nbsp;</td>
+                                                        <td>$0.93</td>
+                                                        <td class="k-alt">$26.50</td>
+                                                    </tr>
+                                                    <tr class="k-grid-footer">
+                                                        <td>$201,635.92</td>
+                                                        <td>$603,610.94</td>
+                                                        <td>$805,067.19</td>
+                                                        <td>$400,951.86</td>
+                                                        <td class="k-alt">$2,011,265.92</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

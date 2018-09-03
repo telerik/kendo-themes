@@ -1,0 +1,14 @@
+@import "~@progress/kendo-theme-default/scss/pivotgrid/layout";
+
+@include exports ('pivotgrid/layout/material') {
+
+    .k-pivot-toolbar .k-button,
+    .k-fieldselector .k-list li.k-item {
+        @include border-radius(16px);
+
+        .k-field-actions {
+            top: initial;
+        }
+    }
+
+}
