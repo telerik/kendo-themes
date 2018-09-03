@@ -1,8 +1,17 @@
 @include exports("notification/theme") {
+    $notification-shadow: $popup-shadow !default;
 
     // Theme
     .k-notification {
         @include appearance( panel );
+    }
+    .k-notification-wrap {
+        > .k-i-close {
+            color: inherit;
+        }
+    }
+    .k-notification-animation-container > .k-notification {
+        box-shadow: $notification-shadow;
     }
     .k-notification-info {
         border-color: $notification-info-border;

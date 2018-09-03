@@ -31,12 +31,11 @@
         white-space: normal;
     }
 
+    .k-settings-rows .k-button,
+    .k-settings-columns .k-button,
     .k-settings-measures .k-button {
+        margin-right: $cell-padding-y;
         margin-bottom: $button-padding-y-sm;
-    }
-
-    .k-settings-columns .k-button + .k-button {
-        margin-left: $cell-padding-y;
     }
 
     .k-field-actions {
@@ -82,6 +81,10 @@
     .k-pivot-table {
         border-left-width: 1px;
         border-left-style: solid;
+    }
+
+    .k-pivot-table .k-grid-header-wrap {
+        margin-right: -1px;
     }
 
     .k-pivot-table .k-grid-header-wrap > table {

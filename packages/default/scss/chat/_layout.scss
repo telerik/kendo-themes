@@ -414,6 +414,62 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
 
 
 
+@include exports( "chat/toolbar/layout" ) {
+
+    .k-chat .k-toolbar-box {
+        padding: $chat-toolbar-padding-y $chat-toolbar-padding-x;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        flex: 0 0 auto;
+
+        .k-button-list {
+            // Needed for native scrolling. Will uncoment when it's implemented.
+            // margin-bottom: -20px;
+            // padding-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            // overflow-x: auto;
+            scroll-behavior: smooth;
+
+            .k-button + .k-button {
+                margin-left: $chat-toolbar-spacing;
+                flex-shrink: 0;
+            }
+        }
+
+
+        .k-scroll-button {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .k-scroll-button-left {
+            left: 0;
+        }
+        .k-scroll-button-right {
+            right: 0;
+        }
+
+        .k-button {
+            border-width: 0;
+            color: inherit;
+            background: none;
+            flex-shrink: 0;
+        }
+
+
+    }
+
+}
+
+
+
+
 @include exports( "chat/layout/rtl" ) {
 
 

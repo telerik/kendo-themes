@@ -1,0 +1,150 @@
+@include exports('pivotgrid/theme') {
+    $pivotgrid-alt-bg: darken($bg-color, 4%) !default;
+    $pivotgrid-alt-color: darken($bg-color, 82%) !default;
+    $pivotgrid-chrome-border: $border-color !default;
+    $pivotgrid-container-bg: $bg-color !default;
+
+    $pivotgrid-button-bg: darken($bg-color, 7%) !default;
+    $pivotgrid-button-hover-bg: darken($bg-color, 57%) !default;
+    $pivotgrid-button-active-bg: darken($bg-color, 54%) !default;
+
+    $pivotgrid-remove-color: $pivotgrid-button-bg !default;
+    $pivotgrid-remove-bg: $pivotgrid-button-active-bg !default;
+    $pivotgrid-remove-hover-color: $pivotgrid-button-active-bg !default;
+    $pivotgrid-remove-hover-bg: $bg-color !default;
+
+    .k-alt,
+    .k-fieldselector,
+    .k-pivot-layout .k-grid-footer,
+    .k-pivot-layout > tbody > tr:first-child > td:first-child {
+        background-color: $pivotgrid-alt-bg;
+    }
+
+    .k-pivot-toolbar,
+    .k-header.k-alt,
+    .k-pivot-layout .k-grid.k-alt,
+    .k-pivot-rowheaders .k-alt .k-alt,
+    .k-fieldselector .k-list-container {
+        background-color: $pivotgrid-container-bg;
+    }
+
+    .k-pivot-toolbar,
+    .k-pivot-table,
+    .k-fieldselector .k-list-container,
+    .k-fieldselector .k-columns > div,
+    .k-pivot-rowheaders > .k-grid td:first-child,
+    .k-pivot-table .k-grid-header .k-header.k-first {
+        border-color: $pivotgrid-chrome-border;
+    }
+
+    .k-pivot-rowheaders > .k-grid td,
+    .k-pivot-rowheaders > .k-grid td:first-child {
+        border-bottom-color: transparent;
+        border-left-width: 1px;
+    }
+
+    .k-pivot-layout .k-grid .k-alt {
+        border-left-width: 1px;
+
+        + .k-alt {
+            border-left-color: transparent;
+        }
+    }
+
+    .k-fieldselector p,
+    .k-pivot-layout .k-button {
+        text-transform: none;
+    }
+
+    .k-pivot-layout .k-grid-footer,
+    .k-pivot-layout .k-grid .k-alt {
+        color: $pivotgrid-alt-color;
+        font-weight: bold;
+    }
+
+    .k-pivot-toolbar .k-button,
+    .k-fieldselector .k-list li.k-item {
+        @include appearance( button );
+        background-clip: padding-box;
+        background-color: $pivotgrid-button-bg;
+        box-shadow: unset;
+
+        .k-field-actions .k-setting-delete {
+            color: $pivotgrid-remove-color;
+            background-color: $pivotgrid-remove-bg;
+            border-radius: 50%;
+            padding: 2px;
+        }
+
+        .k-ie11 &,
+        .k-edge12 &,
+        .k-edge13 & {
+            background-clip: border-box;
+        }
+
+        &:hover,
+        &.k-state-hover {
+            @include appearance( hovered-button );
+            background-color: $pivotgrid-button-hover-bg;
+
+            .k-field-actions .k-setting-delete {
+                color: $pivotgrid-remove-hover-color;
+                background-color: $pivotgrid-remove-hover-bg;
+            }
+        }
+
+        // Pressed state
+        &:active,
+        &.k-state-active {
+            @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
+            box-shadow: $button-pressed-shadow;
+            background-color: $pivotgrid-button-active-bg;
+        }
+
+        // Focused state
+        &:focus,
+        &.k-state-focused {
+            box-shadow: $button-focused-shadow;
+        }
+
+        &.k-empty {
+            background-color: $pivotgrid-container-bg;
+            border: 0;
+        }
+    }
+
+    /* Loading indicator */
+    .k-fieldselector {
+        .k-i-loading {
+            border-color: $header-bg;
+        }
+
+        .k-i-loading::before,
+        .k-i-loading::after {
+            background-color: $header-bg;
+        }
+    }
+
+    .k-fieldselector,
+    .k-pivot {
+        .k-i-arrow-60-right,
+        .k-i-arrow-e,
+        .k-i-sarrow-e,
+        .k-i-expand,
+        .k-i-expand-e {
+            &::before {
+                content: "\E014";
+            }
+        }
+
+        .k-i-arrow-60-down,
+        .k-i-arrow-s,
+        .k-i-sarrow-s,
+        .k-i-collapse,
+        .k-i-expand-s {
+            &::before {
+                content: "\E015";
+            }
+        }
+    }
+}

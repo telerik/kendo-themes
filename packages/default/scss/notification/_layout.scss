@@ -3,6 +3,23 @@
     $notification-padding-end: calc(#{$notification-padding-x} + #{$icon-size} + #{$icon-spacing}) !default;
 
     // Base
+    .k-notification-container {
+        position: fixed;
+        display: inline-flex;
+        flex-wrap: wrap;
+        max-height: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .k-notification-animation-container {
+        display: inline-flex;
+        overflow: hidden;
+
+        > .k-notification {
+            align-self: flex-start;
+        }
+    }
+
     .k-notification {
         @include border-radius();
         padding: 0;
@@ -19,7 +36,7 @@
         line-height: $line-height-em;
 
         > .k-icon {
-            margin-right: $padding-x;
+            margin-right: $notification-padding-x;
             vertical-align: middle;
         }
 
@@ -28,6 +45,7 @@
             position: absolute;
             top: $notification-padding-y;
             right: $notification-padding-x;
+            cursor: pointer;
             font-size: inherit;
             line-height: inherit;
 
@@ -35,11 +53,22 @@
                 font-size: $icon-size;
             }
         }
+
+        > .k-notification-content {
+            display: inline-block;
+            padding-right: $notification-padding-end;
+            vertical-align: top;
+        }
     }
 
     .k-rtl .k-notification-wrap {
         padding-left: $notification-padding-end;
         padding-right: $notification-padding-x;
+
+        > .k-notification-content {
+            padding-left: $notification-padding-end;
+            padding-right: $notification-padding-x;
+        }
 
         > .k-icon {
             margin-right: 0;
