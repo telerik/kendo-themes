@@ -27,9 +27,9 @@ $forms-invalid-color: inherit !default;
         }
 
         .k-select {
-            opacity: $icon-opacity;
             border-width: 0;
             font-size: $font-size;
+            opacity: $icon-opacity;
         }
 
         // Hover
