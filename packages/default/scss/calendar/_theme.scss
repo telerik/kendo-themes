@@ -3,6 +3,7 @@ $calendar-weekend-bg: darken($widget-bg, 2.35) !default;
 $calendar-week-number-bg: darken( $widget-bg, 5 ) !default;
 $calendar-week-number-text: $node-text !default;
 $calendar-week-day-text: $header-text !default;
+$node-hovered-selected-bg: blend-multiply( $list-item-selected-bg, $list-item-hovered-bg ) !default;
 $calendar-range-selection: lighten($accent, 23%) !default;
 
 // Styling of today date
@@ -168,7 +169,7 @@ $calendar-selected-focus-shadow: $calendar-focus-shadow !default;
                     }
 
                     &.k-state-hover .k-link {
-                        background-color: blend-multiply( $list-item-selected-bg, $list-item-hovered-bg );
+                        background-color: $node-hovered-selected-bg;
                     }
                 }
             }

@@ -12,4 +12,11 @@ $calendar-range-selection: lighten($accent, 43%) !default;
     .k-calendar-weekdays {
         text-transform: uppercase;
     }
+
+    .k-calendar {
+
+        .k-state-focused .k-link {
+            @include appearance( hovered-node );
+        }
+    }
 }
