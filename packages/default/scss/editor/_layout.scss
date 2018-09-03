@@ -58,7 +58,7 @@
         padding: $toolbar-padding-y $toolbar-padding-y;
         border-color: inherit;
         list-style-type: none;
-        line-height: $form-line-height;
+        line-height: $toolbar-line-height;
         cursor: default;
         word-wrap: break-word; /* allow tools to wrap properly in IE */
         display: flex;
@@ -89,11 +89,11 @@
 
             .k-widget {}
             .k-widget + .k-widget {
-                margin-left: $toolbar-padding-x;
+                margin-left: $toolbar-spacing;
             }
         }
         .k-tool-group + .k-tool-group {
-            margin-left: $toolbar-padding-x;
+            margin-left: $toolbar-spacing;
         }
         .k-tool-group .k-state-disabled,
         .k-tool-group.k-state-disabled {
@@ -103,10 +103,10 @@
 
         // Tools
         .k-tool {
-            padding: $button-padding-y;
-            width: button-size();
-            height: button-size();
-            border-width: 1px;
+            padding: $toolbar-button-padding-y;
+            width: toolbar-button-size();
+            height: toolbar-button-size();
+            border-width: $toolbar-button-border-width;
             border-style: solid;
             box-sizing: border-box;
             text-decoration: none;
@@ -115,6 +115,7 @@
             align-items: center;
             align-content: center;
             justify-content: center;
+            position: relative;
         }
         .k-tool-text {
             display: none;
@@ -330,7 +331,7 @@
             display: flex;
 
             > * + * {
-                margin-left: $toolbar-padding-x;
+                margin-left: $toolbar-spacing;
             }
 
             .k-state-disabled {

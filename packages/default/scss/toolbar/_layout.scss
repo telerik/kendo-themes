@@ -1,7 +1,4 @@
-$toolbar-button-spacer: 0 !default;
 $toolbar-shadow: none !default;
-$toolbar-button-border-radius: 0 !default;
-$toolbar-border-width: 1px !default;
 $toolbar-separator-padding-y: $toolbar-button-padding-y !default;
 
 @include exports("toolbar/layout") {
@@ -10,7 +7,7 @@ $toolbar-separator-padding-y: $toolbar-button-padding-y !default;
     .k-toolbar {
         padding: $toolbar-padding-y $toolbar-padding-x;
         border-width: $toolbar-border-width;
-        line-height: $form-line-height;
+        line-height: $toolbar-line-height;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -29,7 +26,7 @@ $toolbar-separator-padding-y: $toolbar-button-padding-y !default;
             align-items: stretch;
             align-content: center;
             vertical-align: middle;
-            margin-left: $toolbar-padding-x;
+            margin-left: $toolbar-spacing;
         }
         .k-overflow-anchor + * {
             margin-left: 0;
@@ -49,14 +46,11 @@ $toolbar-separator-padding-y: $toolbar-button-padding-y !default;
         // Button
         .k-button {
             padding: $toolbar-button-padding-y $toolbar-button-padding-x;
+            line-height: $toolbar-button-line-height;
 
             &::before {
                 @include border-radius( $toolbar-button-border-radius );
             }
-        }
-
-        & > .k-button:not(.k-overflow-anchor) + .k-button {
-            margin-left: $toolbar-button-spacer;
         }
 
         // Toggle button
@@ -130,7 +124,7 @@ $toolbar-separator-padding-y: $toolbar-button-padding-y !default;
         .k-separator {
             @extend %hr-vertical;
             padding: $toolbar-separator-padding-y 0;
-            margin: 0 $toolbar-padding-x;
+            margin: 0 $toolbar-spacing;
 
             & + * {
                 margin-left: 0;
