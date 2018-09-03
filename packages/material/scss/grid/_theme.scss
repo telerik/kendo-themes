@@ -3,7 +3,8 @@ $grid-chrome-text: rgba(0, 0, 0, .54) !default;
 $grid-sorted-bg: rgba(0, 0, 0, .04) !default;
 $grid-text: rgba(0, 0, 0, .87) !default;
 $grid-sorting-indicator-text: $grid-chrome-text !default;
-$grid-selected-bg: rgba(0, 0, 0, .07) !default;
+$grid-selected-bg: rgba(0, 0, 0, .04) !default;
+$grid-hovered-bg: rgba(0, 0, 0, .07) !default;
 $grid-grouping-row-bg: transparent !default;
 $grid-selected-text: #000 !default;
 $grid-selected-cell-text: $grid-selected-text !default;
@@ -30,6 +31,13 @@ $grid-filter-cell-padding-y: $grid-cell-padding-y !default;
             border-bottom: $grid-edit-cell-border;
             background-color: $grid-edit-cell-bg;
             box-shadow: $grid-edit-cell-shadow;
+        }
+
+        // Hover, Focused state
+        tbody tr:hover,
+        td.k-state-focused,
+        th.k-state-focused {
+            background-color: $grid-hovered-bg;
         }
     }
 
