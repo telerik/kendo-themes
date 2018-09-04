@@ -25,6 +25,10 @@
     .k-window-content {
         line-height: 1.25;
 
+        .k-button {
+            @extend .k-button.k-flat;
+        }
+
         .k-window-titlebar + & {
             margin-top: -.5em;
             padding-top: 0;

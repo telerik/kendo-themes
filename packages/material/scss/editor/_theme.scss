@@ -1,0 +1,54 @@
+@include exports("editor/theme") {
+
+    .k-editor {
+        @include appearance( panel );
+
+        .k-editor-toolbar {}
+        .k-editable-area {
+            border-color: $panel-border;
+        }
+    }
+
+    // Inline Editor
+    .k-editor-inline {
+
+        // Hover & Actve state
+        &:hover,
+        &.k-state-active {
+            border-color: $panel-border;
+        }
+    }
+
+
+    // Editor toolbar
+    .k-editor-toolbar {
+        @include appearance( toolbar );
+
+        a.k-tool {
+            @extend .k-button.k-flat;
+            @include border-radius( 0 );
+
+            &::before {
+                @extend .k-button::before;
+            }
+        }
+
+        .k-tool-group.k-button-group {
+            box-shadow: none;
+        }
+    }
+
+
+    // Overflow anchor
+    .k-editor-toolbar .k-overflow-anchor {
+        padding: $toolbar-padding-y;
+        width: calc( #{$toolbar-inner-calc-size} );
+        height: calc( #{$toolbar-inner-calc-size} );
+    }
+
+    .k-editor-dialog {
+        .k-edit-label {
+            padding: add-two($padding-y, -$input-border-width) 0;
+        }
+    }
+}
