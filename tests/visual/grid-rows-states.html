@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+
+<head>
+    <title>Grid Rows States</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        .section {
+            max-width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="test-area">
+        <div class="section">
+
+            <div id="grid" data-role="grid" class="k-grid k-widget k-display-block" style="">
+                <div class="k-grid-header" style="padding-right: 17px;">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table role="grid">
+                            <colgroup>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead role="rowgroup">
+                                <tr role="row">
+                                    <th scope="col" role="columnheader" data-field="productName" aria-haspopup="true" rowspan="1"
+                                        data-index="0" class="k-header">productName</th>
+                                    <th scope="col" role="columnheader" data-field="category" aria-haspopup="true"
+                                        rowspan="1" data-index="1" class="k-header">class</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="k-grid-content k-auto-scrollable">
+                    <table role="grid" data-role="selectable" class="k-selectable">
+                        <colgroup>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <tbody role="rowgroup">
+                            <tr class="k-state-hover" role="row">
+                                <td role="gridcell">Tea</td>
+                                <td role="gridcell">k-state-hove</td>
+                            </tr>
+                            <tr class="k-state-selected" role="row" aria-selected="true">
+                                <td role="gridcell">Coffee</td>
+                                <td role="gridcell">k-state-selected</td>
+                            </tr>
+                            <tr class="k-state-focused" role="row">
+                                <td role="gridcell">Ham</td>
+                                <td role="gridcell">k-state-focused</td>
+                            </tr>
+                            <tr class="k-state-selected k-state-focused" role="row">
+                                <td role="gridcell">Bread</td>
+                                <td role="gridcell">k-state-selected k-state-focused</td>
+                            </tr>
+                            <tr class="k-state-hover k-state-focused" role="row">
+                                <td role="gridcell">Tea</td>
+                                <td role="gridcell">k-state-hover k-state-focused</td>
+                            </tr>
+                            <tr class="k-alt k-state-hover" role="row">
+                                <td role="gridcell">Coffee</td>
+                                <td role="gridcell">k-alt k-state-hover</td>
+                            </tr>
+                            <tr class="k-alt k-state-selected" role="row">
+                                <td role="gridcell">Ham</td>
+                                <td role="gridcell">k-alt k-state-selected</td>
+                            </tr>
+                            <tr class="k-alt k-state-focused" role="row">
+                                <td role="gridcell">Bread</td>
+                                <td role="gridcell">k-alt k-state-focused</td>
+                            </tr>
+                            <tr class="k-alt k-state-selected k-state-focused" role="row">
+                                <td role="gridcell">Ham</td>
+                                <td role="gridcell">k-alt k-state-selected k-state-focused</td>
+                            </tr>
+                            <tr class="k-alt k-state-hover k-state-focused" role="row">
+                                <td role="gridcell">Bread</td>
+                                <td role="gridcell">k-alt k-state-hover k-state-focused</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
