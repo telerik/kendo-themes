@@ -1,0 +1,101 @@
+@import "~@progress/kendo-theme-default/scss/editor/layout";
+
+@include exports("editor/layout/material") {
+
+    .k-editor-toolbar {
+
+        // Dropdowns and Inputs
+        .k-widget {
+            border-width: 0;
+            font: inherit;
+            text-transform: uppercase;
+        }
+        // TODO unselect if necessary after the design for inputs in toolbar is completed
+        //.k-autocomplete,
+        //.k-dateinput-wrap,
+        //.k-multiselect-wrap,
+        //.k-numeric-wrap,
+        .k-picker-wrap,
+        .k-dropdown-wrap {
+            border-width: 0;
+
+            .k-input {
+                padding: $toolbar-button-padding-y $toolbar-button-padding-x;
+                height: calc( #{$toolbar-inner-calc-size} );
+            }
+
+            .k-select {
+                padding: $button-padding-x-sm;
+                opacity: $icon-opacity;
+            }
+
+            &::before {
+                @extend .k-button::before;
+            }
+        }
+        .k-colorpicker .k-selected-color {
+            margin-top: $toolbar-button-padding-y;
+            margin-bottom: $toolbar-button-padding-y;
+        }
+        .k-colorpicker .k-tool-icon {
+            padding-top: $toolbar-button-padding-y;
+            padding-bottom: $toolbar-button-padding-y;
+            height: calc( #{$toolbar-inner-calc-size} );
+
+            .k-selected-color {
+                margin: 0 0 12px;
+            }
+        }
+    }
+
+    .k-overflow-container {
+
+        .k-button-group {
+            box-shadow: none;
+        }
+    }
+}
+
+
+
+
+@include exports( "editor/dialog/layout/material" ) {
+
+
+    .k-editor-dialog {
+        box-sizing: border-box;
+
+        .k-edit-form-container {
+            width: auto;
+        }
+
+        .k-edit-label {
+            padding: 0;
+            margin: 0 0 -.5em;
+            width: auto;
+            font-size: $font-size-sm;
+            line-height: 1;
+            text-align: inherit;
+            display: block;
+            float: none;
+        }
+
+        .k-edit-field {
+            width: auto;
+            display: block;
+            float: none;
+            display: flex;
+            flex-direction: row;
+
+            .k-numerictextbox,
+            .k-textbox,
+            .k-dropdown {
+                width: auto;
+                flex: 1 1 auto;
+            }
+        }
+
+        .k-edit-buttons {}
+    }
+
+}

@@ -88,7 +88,7 @@
             border-color: inherit;
 
             .k-widget {}
-            .k-widget + .k-widget {
+            .k-widget ~ .k-widget {
                 margin-left: $toolbar-spacing;
             }
         }
@@ -121,7 +121,10 @@
             display: none;
         }
         .k-tool + .k-tool {
-            margin-left: -1px;
+            margin-left: $toolbar-spacing;
+        }
+        .k-tool-group.k-button-group .k-tool {
+            margin: 0;
         }
 
         // Overflow tools
