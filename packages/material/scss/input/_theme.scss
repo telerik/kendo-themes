@@ -1,6 +1,12 @@
 @include exports("input/theme") {
     $floating-label-color: rgba(0, 0, 0, .38) !default;
 
+    .k-textbox {
+        &.k-state-invalid:focus {
+            border-color: $error;
+        }
+    }
+
     .k-textbox,
     .k-input.k-textbox,
     .k-textarea {
