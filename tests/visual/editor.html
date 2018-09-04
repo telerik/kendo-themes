@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Editor</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            max-width: 1024px;
+        }
+        #test-area::after { display: none; }
+
+        .k-editor-toolbar .k-overflow-tools {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area">
+
+        <table cellspacing="4" cellpadding="0" class="k-widget k-editor k-header k-editor-widget k-resizable" style="height: 200px;">
+            <tbody>
+                <tr>
+                    <td class="k-editor-toolbar-wrap">
+                        <ul class="k-editor-toolbar k-toolbar-resizable">
+                            <li class="k-tool-group k-button-group">
+                                <a class="k-tool k-group-start"><span class="k-tool-icon k-icon k-i-bold"></span><span class="k-tool-text">Bold</span></a>
+                                <a class="k-tool k-state-hover"><span class="k-tool-icon k-icon k-i-italic"></span><span class="k-tool-text">Italic</span></a>
+                                <a class="k-tool k-state-selected"><span class="k-tool-icon k-icon k-i-underline"></span><span class="k-tool-text">Underline</span></a>
+                                <a class="k-tool k-group-end"><span class="k-tool-icon k-icon k-i-strikethrough"></span><span class="k-tool-text">Strikethrough</span></a>
+                            </li>
+                            <li class="k-tool-group k-button-group">
+                                <a class="k-tool k-group-start"><span class="k-tool-icon k-icon k-i-align-left"></span><span class="k-tool-text">Align text left</span></a>
+                                <a class="k-tool"><span class="k-tool-icon k-icon k-i-align-center"></span><span class="k-tool-text">Center text</span></a>
+                                <a class="k-tool"><span class="k-tool-icon k-icon k-i-align-right"></span><span class="k-tool-text">Align text right</span></a>
+                                <a class="k-tool k-group-end"><span class="k-tool-icon k-icon k-i-align-justify"></span><span class="k-tool-text">Justify</span></a>
+                            </li>
+                            <li class="k-tool-group k-button-group">
+                                <a class="k-tool k-group-start"><span class="k-tool-icon k-icon k-i-sub-script"></span><span class="k-tool-text">Subscript</span></a>
+                                <a class="k-tool k-group-end"><span class="k-tool-icon k-icon k-i-sup-script"></span><span class="k-tool-text">Superscript</span></a>
+                            </li>
+                            <li class="k-tool-group k-button-group">
+                                <a class="k-tool k-group-start"><span class="k-tool-icon k-icon k-i-list-unordered"></span><span class="k-tool-text">Insert unordered list</span></a>
+                                <a class="k-tool"><span class="k-tool-icon k-icon k-i-list-ordered"></span><span class="k-tool-text">Insert ordered list</span></a>
+                                <a class="k-tool"><span class="k-tool-icon k-icon k-i-indent-increase"></span><span class="k-tool-text">Indent</span></a>
+                                <a class="k-tool k-group-end"><span class="k-tool-icon k-icon k-i-indent-decrease"></span><span class="k-tool-text">Outdent</span></a>
+                            </li>
+                            <li class="k-tool-group k-button-group">
+                                <a class="k-tool k-group-start"><span class="k-tool-icon k-icon k-i-link-horizontal"></span><span class="k-tool-text">Insert hyperlink</span></a>
+                                <a class="k-tool"><span class="k-tool-icon k-icon k-i-unlink-horizontal"></span><span class="k-tool-text">Remove hyperlink</span></a>
+                                <a class="k-tool"><span class="k-tool-icon k-icon k-i-image"></span><span class="k-tool-text">Insert image</span></a>
+                                <a class="k-tool k-group-end"><span class="k-tool-icon k-icon k-i-file-add"></span><span class="k-tool-text">Insert file</span></a>
+                            </li>
+                            <li class="k-overflow-tools k-button-group">
+                                <a class="k-tool k-overflow-anchor k-group-start k-group-end"><span class="k-icon k-i-more-vertical"></span><span class="k-tool-text">More tools</span></a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="k-editable-area">
+                        <iframe frameborder="0" class="k-content"></iframe>
+                        <textarea id="editor" rows="10" cols="30" style="display: none;" class="k-content k-raw-content"></textarea>
+                        <div class="k-resize-handle"><span class="k-icon k-i-arrow-45-down-right"></span></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table cellspacing="4" cellpadding="0" class="k-widget k-editor k-header k-editor-widget k-resizable" style="height: 200px;">
+            <tbody>
+                <tr>
+                    <td class="k-editor-toolbar-wrap">
+                        <ul class="k-editor-toolbar k-toolbar-resizable">
+                            <li class="k-tool-group k-button-group">
+                                <a class="k-tool k-group-start k-group-end"><span class="k-tool-icon k-icon k-i-table-properties"></span><span class="k-tool-text">Table Wizard</span></a>
+                            </li>
+                            <li class="k-tool-group k-button-group">
+                                <a class="k-tool k-group-start"><span class="k-tool-icon k-icon k-i-table-insert"></span><span class="k-tool-text">Create a table</span></a>
+                                <a class="k-tool"><span class="k-tool-icon k-icon k-i-table-column-insert-left"></span><span class="k-tool-text">Add column on the left</span></a>
+                                <a class="k-tool"><span class="k-tool-icon k-icon k-i-table-column-insert-right"></span><span class="k-tool-text">Add column on the right</span></a>
+                                <a class="k-tool"><span class="k-tool-icon k-icon k-i-table-row-insert-above"></span><span class="k-tool-text">Add row above</span></a>
+                                <a class="k-tool"><span class="k-tool-icon k-icon k-i-table-row-insert-below"></span><span class="k-tool-text">Add row below</span></a>
+                                <a class="k-tool"><span class="k-tool-icon k-icon k-i-table-row-delete"></span><span class="k-tool-text">Delete row</span></a>
+                                <a class="k-tool k-group-end"><span class="k-tool-icon k-icon k-i-table-column-delete"></span><span class="k-tool-text">Delete column</span></a>
+                            </li>
+                            <li class="k-tool-group k-button-group">
+                                <a class="k-tool k-group-start"><span class="k-tool-icon k-icon k-i-html"></span><span class="k-tool-text">View HTML</span></a>
+                                <a class="k-tool k-group-end"><span class="k-tool-icon k-icon k-i-print"></span><span class="k-tool-text">Print</span></a>
+                            </li>
+                            <li class="k-tool-group">
+                                <span class="k-widget k-colorpicker k-header k-editor-widget k-group-start"><span class="k-picker-wrap k-state-default"><span class="k-icon k-tool-icon k-icon k-i-foreground-color"><span class="k-selected-color" style="background: red;"></span></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+                                <span class="k-widget k-colorpicker k-header k-editor-widget k-group-end"><span class="k-picker-wrap k-state-default"><span class="k-icon k-tool-icon k-icon k-i-paint"><span class="k-selected-color" style="background: fuchsia;"></span></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="k-editable-area">
+                        <iframe frameborder="0" class="k-content"></iframe>
+                        <textarea id="editor" rows="10" cols="30" style="display: none;" class="k-content k-raw-content"></textarea>
+                        <div class="k-resize-handle"><span class="k-icon k-i-arrow-45-down-right"></span></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table cellspacing="4" cellpadding="0" class="k-widget k-editor k-header k-editor-widget k-resizable" style="height: 200px;">
+            <tbody>
+                <tr>
+                    <td class="k-editor-toolbar-wrap">
+                        <ul class="k-editor-toolbar k-toolbar-resizable">
+                            <li class="k-tool-group">
+                                <span class="k-editor-dropdown k-group-start k-group-end"><span class="k-widget k-dropdown k-header k-editor-widget"><span class="k-dropdown-wrap k-state-default"><span class="k-input">Format</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span><select class="k-formatting k-decorated" style="display: none;"></select></span></span>
+                            </li>
+                            <li class="k-tool-group">
+                                <span class="k-widget k-combobox k-header k-combobox-clearable k-editor-widget k-fontName k-group-start"><span class="k-dropdown-wrap k-state-default"><input class="k-input" type="text" value="Font family" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span><select style="display: none;"></select></span>
+                                <span class="k-widget k-combobox k-header k-combobox-clearable k-editor-widget k-fontSize k-group-end"><span class="k-dropdown-wrap k-state-default"><input class="k-input" type="text" value="Font size" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span><select style="display: none;"></select></span>
+                            </li>
+                            <li class="k-tool-group k-button-group">
+                                <a class="k-tool k-group-start k-group-end"><span class="k-tool-icon k-icon k-i-clear-css"></span><span class="k-tool-text">Clean formatting</span></a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="k-editable-area">
+                        <iframe frameborder="0" class="k-content"></iframe>
+                        <textarea id="editor" rows="10" cols="30" style="display: none;" class="k-content k-raw-content"></textarea>
+                        <div class="k-resize-handle"><span class="k-icon k-i-arrow-45-down-right"></span></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>
