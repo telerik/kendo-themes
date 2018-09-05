@@ -40,11 +40,11 @@
     .k-pivot-rowheaders > .k-grid td,
     .k-pivot-rowheaders > .k-grid td:first-child {
         border-bottom-color: transparent;
-        border-left-width: 1px;
+        border-left-color: $pivotgrid-chrome-border;
     }
 
     .k-pivot-layout .k-grid .k-alt {
-        border-left-width: 1px;
+        border-left-color: $pivotgrid-chrome-border;
 
         + .k-alt {
             border-left-color: transparent;
