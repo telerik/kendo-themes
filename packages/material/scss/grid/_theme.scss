@@ -39,6 +39,10 @@ $grid-filter-cell-padding-y: $grid-cell-padding-y !default;
         th.k-state-focused {
             background-color: $grid-hovered-bg;
         }
+        th,
+        td {
+            border-left-color: transparent;
+        }
     }
 
     .k-grid-header {
@@ -65,6 +69,10 @@ $grid-filter-cell-padding-y: $grid-cell-padding-y !default;
                 background-color: $grid-filter-button-focus;
                 box-shadow: none;
             }
+        }
+
+        thead > tr:not(:only-child) > th {
+            border-left-color: $grid-border;
         }
     }
     .k-grouping-header .k-group-indicator {
