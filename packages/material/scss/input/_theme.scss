@@ -23,6 +23,7 @@
             border-style: dashed;
         }
 
+        &.k-state-invalid:focus,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
             border-color: $error;
