@@ -37,7 +37,7 @@
     // Fields
     .k-edit-label {
         padding: 0;
-        margin: 0 0 -.5em;
+        margin: 0;
         width: auto;
         font-size: $font-size-sm;
         line-height: 1;
@@ -51,11 +51,19 @@
         float: none;
         display: flex;
         flex-direction: row;
+
         .k-numerictextbox,
         .k-textbox,
         .k-dropdown {
             width: auto;
             flex: 1 1 auto;
+        }
+
+        > div {
+            width: auto;
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: row;
         }
     }
 
