@@ -1,6 +1,9 @@
 // TODO: modal header variables
 $modal-header-border-color: #cccccc;
 
+$scheduler-event-bg: #848484 !default;
+$scheduler-event-text: #fff !default;
+
 
 @include exports("scheduler/theme") {
 
@@ -97,8 +100,12 @@ $modal-header-border-color: #cccccc;
     }
 
 
-    // Appointments
+    // Events
     .k-event {
+        background-color: $scheduler-event-bg;
+        color: $scheduler-event-text;
+    }
+    .k-event.k-state-selected {
         @include appearance( selected-node );
     }
     .k-event-inverse {

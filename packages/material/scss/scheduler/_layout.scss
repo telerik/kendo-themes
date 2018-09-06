@@ -1,0 +1,173 @@
+@import "~@progress/kendo-theme-default/scss/scheduler/layout";
+
+@include exports("scheduler/layout/material") {
+
+
+    .k-scheduler {
+        font-family: $font-family;
+    }
+
+
+    // Header and footer
+    .k-scheduler-toolbar,
+    .k-scheduler-footer {
+        line-height: $toolbar-line-height;
+        text-transform: uppercase;
+
+
+        li,
+        li.k-state-hover,
+        li.k-state-selected {
+            color: inherit;
+            background: none;
+        }
+
+        li a {
+            @extend .k-button.k-flat;
+            padding: $toolbar-button-padding-y $toolbar-button-padding-x;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        li a::before {
+            @extend .k-button::before;
+            display: block;
+        }
+        li.k-state-selected a::before {
+            @include opacity( $flat-button-selected-opacity );
+        }
+    }
+
+
+    //Scheduler navigation
+    .k-scheduler-navigation {}
+
+
+    // View switcher
+    .k-scheduler-views {
+
+        &.k-state-expanded {
+            li {
+                margin: 0;
+                border-radius: 0;
+            }
+            li + li {
+                margin: 0;
+            }
+            .k-current-view ~ li a {
+                padding-top: $list-item-padding-y;
+                padding-bottom: $list-item-padding-y;
+                line-height: 2;
+            }
+        }
+    }
+
+
+    // View header
+    .k-scheduler-header {
+        text-align: left;
+
+        th,
+        td {
+            font-size: $font-size-sm;
+        }
+    }
+
+
+    // Times header
+    .k-scheduler-times {
+        font-size: $font-size-sm;
+    }
+
+
+    $handle-size: 2px;
+    $handle-half-size: $handle-size / 2;
+    .k-event {
+        .k-event-delete {
+            border-radius: 50%;
+
+            .k-icon {
+                font-size: $font-size-sm;
+                padding: add-two($font-size, -$font-size-sm);
+                box-sizing: content-box;
+            }
+        }
+
+        .k-resize-handle {
+            opacity: 1;
+
+            &::before {
+                border-width: 0;
+            }
+        }
+
+        .k-resize-n::before {
+            height: $handle-size;
+            align-self: flex-start;
+            border-radius: 0 0 $handle-half-size $handle-half-size;
+        }
+        .k-resize-s::before {
+            height: $handle-size;
+            align-self: flex-end;
+            border-radius: $handle-half-size $handle-half-size 0 0;
+        }
+        .k-resize-e::before {
+            width: $handle-size;
+            align-self: flex-start;
+            border-radius: 0 $handle-half-size $handle-half-size 0;
+        }
+        .k-resize-w::before {
+            width: $handle-size;
+            align-self: flex-end;
+            border-radius: $handle-half-size 0 0 $handle-half-size;
+        }
+    }
+}
+
+
+
+
+@include exports("scheduler-edit-form/layout/material") {
+
+
+    .k-scheduler-edit-form {
+
+        .k-edit-form-container { width: 390px; }
+
+        .k-edit-label { width: auto; }
+        .k-edit-field { width: auto; }
+
+    }
+
+    .k-edit-field .k-reset {
+        width: 100%;
+    }
+    .k-edit-field .k-widget {
+        font-size: inherit;
+    }
+    .k-edit-field .k-reset .k-widget {
+        margin-right: 0;
+    }
+
+    .k-scheduler-timezones .k-edit-field > div {
+        width: 100%;
+    }
+    .k-scheduler-timezones .k-edit-field .k-widget {
+        width: 45%;
+    }
+
+
+    // Recurrence editor
+    .k-edit-field .k-recur-interval,
+    .k-edit-field .k-recur-count,
+    .k-edit-field .k-recur-month,
+    .k-edit-field .k-recur-monthday,
+    .k-edit-field .k-recur-weekday-offset,
+    .k-edit-field .k-recur-weekday {
+        width: 28%;
+    }
+    .k-edit-field .k-recur-until {
+        width: 66%;
+    }
+
+}

@@ -1,5 +1,6 @@
 // TODO: modal variables
 $modal-inner-padding: 1em;
+$scheduler-event-border-radius: 2px;
 
 @include exports("scheduler/layout") {
 
@@ -50,13 +51,13 @@ $modal-inner-padding: 1em;
         align-items: center;
 
         li {
-            border-width: 1px;
+            border-width: $button-border-width;
             border-style: solid;
             position: relative;
             z-index: 1;
         }
         li + li {
-            margin-left: -1px;
+            margin-left: -$button-border-width;
         }
         .k-state-hover,
         .k-state-selected {
@@ -93,7 +94,9 @@ $modal-inner-padding: 1em;
         white-space: nowrap;
 
         li .k-link {
-            height: button-inner-size();
+            padding: $toolbar-button-padding-y $toolbar-button-padding-x;
+            line-height: $toolbar-button-line-height;
+
             box-sizing: border-box;
         }
     }
@@ -111,9 +114,9 @@ $modal-inner-padding: 1em;
         .k-nav-prev,
         .k-nav-next {
             .k-link {
-                padding: $button-padding-y;
-                width: button-inner-size();
-                height: button-inner-size();
+                padding: $toolbar-button-padding-y;
+                width: toolbar-button-inner-size();
+                height: toolbar-button-inner-size();
             }
         }
 
@@ -290,6 +293,7 @@ $modal-inner-padding: 1em;
         min-height: $line-height-em;
         border-width: 1px;
         border-style: solid;
+        border-radius: $scheduler-event-border-radius;
         text-align: left;
         cursor: default;
         position: absolute;
