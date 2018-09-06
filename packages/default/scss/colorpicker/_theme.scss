@@ -37,7 +37,11 @@
     }
 
     .k-flatcolorpicker {
-        background-color: $base-bg;
+        @include appearance( panel );
+
+        .k-color-value {
+            @include appearance( input );
+        }
     }
 
 }
