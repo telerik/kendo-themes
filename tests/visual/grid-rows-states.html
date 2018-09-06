@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en" class="k-typography">
-
 <head>
     <title>Grid Rows States</title>
     <meta charset="utf-8" />
@@ -9,8 +8,8 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-        .section {
-            max-width: 800px;
+        #test-area {
+            max-width: 1024px;
         }
     </style>
 </head>
@@ -18,81 +17,97 @@
 <body>
 
     <div id="test-area">
-        <div class="section">
 
-            <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar">
-                <div class="k-grid-header">
-                    <div class="k-grid-header-wrap k-auto-scrollable">
-                        <table role="grid">
-                            <colgroup>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <thead role="rowgroup">
-                                <tr role="row">
-                                    <th scope="col" role="columnheader" data-field="productName" aria-haspopup="true" rowspan="1"
-                                        data-index="0" class="k-header">productName</th>
-                                    <th scope="col" role="columnheader" data-field="category" aria-haspopup="true"
-                                        rowspan="1" data-index="1" class="k-header">class</th>
-                                </tr>
-                            </thead>
-                        </table>
-                    </div>
-                </div>
-                <div class="k-grid-content k-auto-scrollable">
-                    <table role="grid" data-role="selectable" class="k-selectable">
+        <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar">
+            <div class="k-grid-header">
+                <div class="k-grid-header-wrap k-auto-scrollable">
+                    <table role="grid">
                         <colgroup>
-                            <col>
-                            <col>
+                            <col />
+                            <col />
+                            <col />
                         </colgroup>
-                        <tbody role="rowgroup">
-                            <tr class="k-state-hover" role="row">
-                                <td role="gridcell">Tea</td>
-                                <td role="gridcell">Hover</td>
+                        <thead role="rowgroup">
+                            <tr>
+                                <th class="k-header">Base</th>
+                                <th class="k-header">Focus</th>
+                                <th class="k-header">Selected</th>
                             </tr>
-                            <tr class="k-state-selected" role="row" aria-selected="true">
-                                <td role="gridcell">Coffee</td>
-                                <td role="gridcell">Selected</td>
-                            </tr>
-                            <tr role="row">
-                                <td role="gridcell">Ham</td>
-                                <td class="k-state-focused" role="gridcell">Focused</td>
-                            </tr>
-                            <tr class="k-state-selected" role="row">
-                                <td role="gridcell">Bread</td>
-                                <td class="k-state-focused" role="gridcell">Selected + Focused</td>
-                            </tr>
-                            <tr class="k-state-hover" role="row">
-                                <td role="gridcell">Tea</td>
-                                <td class="k-state-focused" role="gridcell">Hover + Focused</td>
-                            </tr>
-                            <tr class="k-alt k-state-hover" role="row">
-                                <td role="gridcell">Coffee</td>
-                                <td role="gridcell">Alt + Hover</td>
-                            </tr>
-                            <tr class="k-alt k-state-selected" role="row">
-                                <td role="gridcell">Ham</td>
-                                <td role="gridcell">Alt + Selected</td>
-                            </tr>
-                            <tr class="k-alt" role="row">
-                                <td role="gridcell">Bread</td>
-                                <td class="k-state-focused" role="gridcell">Alt + Focused</td>
-                            </tr>
-                            <tr class="k-alt k-state-selected" role="row">
-                                <td role="gridcell">Ham</td>
-                                <td class="k-state-focused" role="gridcell">Alt + Selected + Focused</td>
-                            </tr>
-                            <tr class="k-alt k-state-hover" role="row">
-                                <td role="gridcell">Bread</td>
-                                <td class="k-state-focused" role="gridcell">Alt + Hover + Focused</td>
-                            </tr>
-                        </tbody>
+                        </thead>
                     </table>
                 </div>
             </div>
-
+            <div class="k-grid-content k-auto-scrollable">
+                <table role="grid">
+                    <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>Normal row</td>
+                            <td class="k-state-focused">Focus</td>
+                            <td class="k-state-selected">Selected</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td>Alt row</td>
+                            <td class="k-state-focused">Alt + Focus</td>
+                            <td class="k-state-selected">Alt + Selected</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="k-state-hover">
+                            <td>Hovered row</td>
+                            <td class="k-state-focused">Hover + Focus</td>
+                            <td class="k-state-selected">Hover + Selected</td>
+                        </tr>
+                        <tr class="k-alt k-state-hover">
+                            <td>Alt hovered row</td>
+                            <td class="k-state-focused">Alt + Hover + Focus</td>
+                            <td class="k-state-selected">Alt + Hover + Selected</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="k-state-focused">
+                            <td>Focused row</td>
+                            <td>N/A</td>
+                            <td class="k-state-selected">Focus + Selected</td>
+                        </tr>
+                        <tr class="k-alt k-state-focused">
+                            <td>Alt focused row</td>
+                            <td>N/A</td>
+                            <td class="k-state-selected">Alt + Focus + Selected</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="k-state-selected">
+                            <td>Selected row</td>
+                            <td class="k-state-focused">Selected + Focus</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr class="k-alt k-state-selected">
+                            <td>Alt selected row</td>
+                            <td class="k-state-focused">Alt + Selected + Focus</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="k-state-hover k-state-selected">
+                            <td>Hover + Selected row</td>
+                            <td class="k-state-focused">Hover + Selected + Focus</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr class="k-alt k-state-hover k-state-selected">
+                            <td>Alt + Hover selected row</td>
+                            <td class="k-state-focused">Alt + Hover + Selected + Focus</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
+
     </div>
 </body>
-
 </html>
