@@ -99,8 +99,9 @@
             border: 0;
             box-sizing: border-box;
             font-size: inherit;
-            line-height: $form-line-height;
+            line-height: $input-line-height;
             font-family: $font-family-monospace;
+            outline: 0;
             flex: 1;
         }
         .k-clear-color-container {
