@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en" class="k-typography">
-
 <head>
     <title>ColorPicker</title>
     <meta charset="utf-8" />
@@ -9,8 +8,17 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-        .section {
-            max-width: 800px;
+        #test-area {
+            max-width: 1024px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+        #test-area::after { display: none; }
+
+        .k-colorpicker,
+        .k-colorpalette {
+            vertical-align: top;
         }
     </style>
 </head>
@@ -19,136 +27,154 @@
 
     <div id="test-area">
 
-        <div class="section">
-
-            <div id="basic" data-role="colorpalette" class="k-widget k-colorpalette" role="grid" aria-readonly="true" tabindex="0">
+        <section>
+            <div class="k-widget k-colorpalette">
                 <table class="k-palette k-reset" role="presentation">
                     <tbody>
                         <tr role="row">
-                            <td role="gridcell" unselectable="on" style="background-color:#000000" class="k-item" aria-label="#000000"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#7f7f7f" class="k-item" aria-label="#7f7f7f"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#880015" class="k-item" aria-label="#880015"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#ed1c24" class="k-item" aria-label="#ed1c24"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#ff7f27" class="k-item" aria-label="#ff7f27"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#fff200" class="k-item" aria-label="#fff200"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#22b14c" class="k-item" aria-label="#22b14c"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#00a2e8" class="k-item" aria-label="#00a2e8"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#3f48cc" class="k-item" aria-label="#3f48cc"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#a349a4" class="k-item" aria-label="#a349a4"></td>
-                        </tr>
-                        <tr role="row">
-                            <td role="gridcell" unselectable="on" style="background-color:#ffffff" class="k-item" aria-label="#ffffff"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#c3c3c3" class="k-item" aria-label="#c3c3c3"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#b97a57" class="k-item" aria-label="#b97a57"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#ffaec9" class="k-item" aria-label="#ffaec9"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#ffc90e" class="k-item" aria-label="#ffc90e"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#efe4b0" class="k-item" aria-label="#efe4b0"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#b5e61d" class="k-item" aria-label="#b5e61d"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#99d9ea" class="k-item" aria-label="#99d9ea"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#7092be" class="k-item" aria-label="#7092be"></td>
-                            <td role="gridcell" unselectable="on" style="background-color:#c8bfe7" class="k-item" aria-label="#c8bfe7"></td>
+                            <td class="k-item" style="background-color:#000000"></td>
+                            <td class="k-item k-state-hover" style="background-color:#1a1a1a"></td>
+                            <td class="k-item k-state-focused" style="background-color:#333333"></td>
+                            <td class="k-item k-state-selected" style="background-color:#4d4d4d"></td>
+                            <td class="k-item" style="background-color:#666666"></td>
+                            <td class="k-item" style="background-color:#808080"></td>
+                            <td class="k-item" style="background-color:#999999"></td>
+                            <td class="k-item" style="background-color:#b3b3b3"></td>
+                            <td class="k-item" style="background-color:#cccccc"></td>
+                            <td class="k-item" style="background-color:#e6e6e6"></td>
+                            <td class="k-item" style="background-color:#f2f2f2"></td>
+                            <td class="k-item" style="background-color:#ffffff"></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-        </div>
+        </section>
 
-        <div class="section">
+        <section>
+            <div class="k-widget k-colorpalette">
+                <table class="k-palette k-reset">
+                    <tbody>
+                        <tr role="row">
+                            <td class="k-item" style="background-color:#000000"></td>
+                            <td class="k-item" style="background-color:#7f7f7f"></td>
+                            <td class="k-item" style="background-color:#880015"></td>
+                            <td class="k-item" style="background-color:#ed1c24"></td>
+                            <td class="k-item" style="background-color:#ff7f27"></td>
+                            <td class="k-item" style="background-color:#fff200"></td>
+                            <td class="k-item" style="background-color:#22b14c"></td>
+                            <td class="k-item" style="background-color:#00a2e8"></td>
+                            <td class="k-item" style="background-color:#3f48cc"></td>
+                            <td class="k-item" style="background-color:#a349a4"></td>
+                        </tr>
+                        <tr role="row">
+                            <td class="k-item" style="background-color:#ffffff"></td>
+                            <td class="k-item" style="background-color:#c3c3c3"></td>
+                            <td class="k-item" style="background-color:#b97a57"></td>
+                            <td class="k-item" style="background-color:#ffaec9"></td>
+                            <td class="k-item" style="background-color:#ffc90e"></td>
+                            <td class="k-item" style="background-color:#efe4b0"></td>
+                            <td class="k-item" style="background-color:#b5e61d"></td>
+                            <td class="k-item" style="background-color:#99d9ea"></td>
+                            <td class="k-item" style="background-color:#7092be"></td>
+                            <td class="k-item" style="background-color:#c8bfe7"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-            <span role="textbox" aria-haspopup="true" class="k-widget k-colorpicker k-header k-state-border-down" aria-disabled="false"
-                tabindex="0" aria-label="Current selected color is #000000" aria-owns="7ee49f96-bda1-421e-89c1-e93add9e2015">
-                <span class="k-picker-wrap k-state-default k-state-active k-state-border-down k-state-focused">
-                    <span class="k-selected-color" style="background-color: rgb(0, 0, 0);">
+        <section>
+            <span class="k-widget k-colorpicker k-header">
+                <span class="k-picker-wrap k-state-default">
+                    <span class="k-selected-color" style="background-color: #000000;">
                         <span class="k-icon k-i-line" style="display: none;"></span>
                     </span>
-                    <span class="k-select" unselectable="on" aria-label="select">
+                    <span class="k-select">
                         <span class="k-icon k-i-arrow-60-down"></span>
                     </span>
                 </span>
-                <input id="colorpicker" type="color" data-role="colorpicker" style="display: none;">
+                <input type="color" style="display: none;" />
             </span>
+        </section>
 
-        </div>
+        <section>
+            <span class="k-widget k-colorpicker k-header">
+                <span class="k-picker-wrap k-state-default">
+                    <span class="k-selected-color" style="background-color: #ffffff;">
+                        <span class="k-icon k-i-line"></span>
+                    </span>
+                    <span class="k-select">
+                        <span class="k-icon k-i-arrow-60-down"></span>
+                    </span>
+                </span>
+                <input type="color" style="display: none;" />
+            </span>
+        </section>
 
-        <div class="section">
-
-            <div id="flatpicker" data-role="flatcolorpicker" class="k-widget k-flatcolorpicker">
+        <section>
+            <div class="k-widget k-flatcolorpicker">
                 <div class="k-selected-color">
-                    <div class="k-selected-color-display" style="background-color: rgba(94, 128, 78, 0.46);">
+                    <div class="k-selected-color-display" style="background-color: red;">
                         <div class="k-color-input">
-                            <input class="k-color-value" title="Color Hexadecimal Code">
+                            <input class="k-color-value" value="rgba(0, 0, 0, 0.53)" />
                         </div>
                     </div>
                 </div>
-                <div class="k-hsv-rectangle" style="background-color: rgb(81, 255, 0);">
+                <div class="k-hsv-rectangle" style="background-color: red;">
                     <div class="k-hsv-gradient"></div>
-                    <div class="k-draghandle" tabindex="0" style="left: 105px; top: 89.3438px;"></div>
+                    <div class="k-draghandle" style="left: 105px; top: 89.3438px;"></div>
                 </div>
                 <div class="k-widget k-slider k-slider-horizontal k-hue-slider k-state-default">
                     <div class="k-slider-wrap">
-                        <div class="k-slider-track" style="width: 237px;">
-                            <div class="k-slider-selection" style="width: 66px;">
-                                <!-- -->
-                            </div>
-                            <a href="#" class="k-draghandle" title="drag" role="slider" aria-valuemin="0" aria-valuemax="360"
-                                aria-valuenow="101" tabindex="0" data-role="draggable" aria-valuetext="101" style="left: 59px;">Drag</a>
+                        <div class="k-slider-track" style="width: 100%">
+                            <div class="k-slider-selection" style="width: 66px;"><!-- --></div>
+                            <a href="#" class="k-draghandle"style="left: 59px;">Drag</a>
                         </div>
-                        <input class="k-hue-slider" aria-label="hue saturation" type="text" data-role="slider" style="display: none;">
+                        <input class="k-hue-slider" style="display: none;" />
                     </div>
                 </div>
                 <div class="k-widget k-slider k-slider-horizontal k-transparency-slider k-state-default">
                     <div class="k-slider-wrap">
-                        <div class="k-slider-track" style="width: 237px;">
-                            <div class="k-slider-selection" style="width: 109px;">
-                                <!-- -->
-                            </div>
-                            <a href="#" class="k-draghandle" title="drag" role="slider" aria-valuemin="0" aria-valuemax="100"
-                                aria-valuenow="46" tabindex="0" data-role="draggable" aria-valuetext="46" style="left: 102px;">Drag</a>
+                        <div class="k-slider-track" style="width: 100%;">
+                            <div class="k-slider-selection" style="width: 66px;"><!-- --></div>
+                            <a href="#" class="k-draghandle"style="left: 59px;">Drag</a>
                         </div>
-                        <input class="k-transparency-slider" aria-label="opacity" type="text" data-role="slider" style="display: none;">
+                        <input class="k-transparency-slider" style="display: none;" />
                     </div>
                 </div>
             </div>
+        </section>
 
-        </div>
-
-        <div class="section">
-
-            <div class="k-animation-container" style="width: 267px; height: 291px; overflow: visible; display: block;" aria-hidden="false">
-                <div id="7ee49f96-bda1-421e-89c1-e93add9e2015" data-role="colorpicker" class="k-widget k-flatcolorpicker k-popup k-group k-reset k-state-border-up"
-                    aria-hidden="false" style="display: block; position: absolute; font-size: 16px; font-stretch: 100%; font-style: normal; font-weight: 400; line-height: normal; transform: translateY(0px);">
-                    <div class="k-selected-color">
-                        <div class="k-selected-color-display" style="background-color: rgb(106, 40, 40);">
-                            <div class="k-color-input">
-                                <input class="k-color-value" title="Color Hexadecimal Code">
-                            </div>
+        <section>
+            <div class="k-widget k-flatcolorpicker">
+                <div class="k-selected-color">
+                    <div class="k-selected-color-display" style="background-color: green">
+                        <div class="k-color-input">
+                            <input class="k-color-value" value="rgba(0, 0, 0, 0.53)" />
                         </div>
-                    </div>
-                    <div class="k-hsv-rectangle" style="background-color: rgb(255, 0, 0);">
-                        <div class="k-hsv-gradient"></div>
-                        <div class="k-draghandle" tabindex="0" style="left: 165px; top: 105.344px;"></div>
-                    </div>
-                    <div class="k-widget k-slider k-slider-horizontal k-hue-slider k-state-default">
-                        <div class="k-slider-wrap">
-                            <div class="k-slider-track" style="width: 237px;">
-                                <div class="k-slider-selection" style="width: 0px;">
-                                </div>
-                                <a href="#" class="k-draghandle" title="drag" role="slider" aria-valuemin="0" aria-valuemax="360" aria-valuenow="0" tabindex="0"
-                                    data-role="draggable" style="left: -7px;">Drag</a>
-                            </div>
-                            <input class="k-hue-slider" aria-label="hue saturation" type="text" data-role="slider" style="display: none;">
-                        </div>
-                    </div>
-                    <div unselectable="on" class="k-controls">
-                        <button class="k-button k-primary apply">Apply</button>
-                        <button class="k-button cancel">Cancel</button>
                     </div>
                 </div>
+                <div class="k-hsv-rectangle" style="background-color: green">
+                    <div class="k-hsv-gradient"></div>
+                    <div class="k-draghandle" style="left: 100px; top: 100px;"></div>
+                </div>
+                <div class="k-widget k-slider k-slider-horizontal k-hue-slider k-state-default">
+                    <div class="k-slider-wrap">
+                        <div class="k-slider-track" style="width: 100%;">
+                            <div class="k-slider-selection" style="width: 66px;"><!-- --></div>
+                            <a href="#" class="k-draghandle"style="left: 59px;">Drag</a>
+                        </div>
+                        <input class="k-hue-slider" style="display: none;" />
+                    </div>
+                </div>
+                <div class="k-controls">
+                    <button class="k-button k-primary apply">Apply</button>
+                    <button class="k-button cancel">Cancel</button>
+                </div>
             </div>
-
-        </div>
+        </section>
 
     </div>
-</body>
 
+</body>
 </html>
