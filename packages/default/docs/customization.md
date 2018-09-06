@@ -214,17 +214,6 @@ Used to provide contrast between the background and foreground colors.
 <td>The gradient background of selected items.
 </td>
 </tr>
-<tr>
-<td>$grid-alt-bg</td>
-<td>
-    
-    rgba( contrast-wcag( $panel-bg ), .04)
-</td>
-<td>The background of alternating rows.<br/>
-    Set to transparent to remove the row stripes.<br/>
-    @group grid
-</td>
-</tr>
 </table>
 
 
@@ -496,6 +485,32 @@ Used to provide contrast between the background and foreground colors.
     (20 / 14)
 </td>
 <td>Line height used along with $font-size.
+</td>
+</tr>
+</table>
+
+
+### Grid
+
+<table class="theme-variables">
+<colgroup>
+<col style="white-space:nowrap; width: 200px" />
+<col style="width: 250px" />
+<col />
+</colgroup>
+<tr>
+<th>Name</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>$grid-alt-bg</td>
+<td>
+    
+    rgba( contrast-wcag( $grid-bg ), .04 )
+</td>
+<td>The background of alternating rows.<br/>
+Set to transparent to remove the row stripes.
 </td>
 </tr>
 </table>

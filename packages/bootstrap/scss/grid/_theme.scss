@@ -1,12 +1,8 @@
 @include exports("grid/theme") {
-    $grid-cell-focused-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .08) !default;
-    $grid-sorted-bg: rgba( contrast-wcag( $base-bg ), .02 ) !default;
 
     // Theme
     .k-grid {
-        border-color: $grid-border;
-        color: $grid-text;
-        background-color: $grid-bg;
+        @include fill( $grid-text, $grid-bg, $grid-border );
 
         td,
         .k-grid-content,
@@ -31,19 +27,18 @@
         tr.k-state-selected,
         th.k-state-selected,
         td.k-state-selected {
-            border-color: inherit;
-            color: inherit;
-            background-color: rgba( $selected-bg, .25 );
+            color: $grid-selected-text;
+            background-color: $grid-selected-bg;
         }
 
         // Focused state
         td.k-state-focused,
         th.k-state-focused {
-            box-shadow: $grid-cell-focused-shadow;
+            box-shadow: $grid-focused-shadow;
         }
 
         .k-tooltip.k-tooltip-validation {
-            color: $tooltip-color;
+            color: $tooltip-text;
             background-color: $tooltip-bg;
 
             .k-callout-n {
@@ -66,25 +61,6 @@
         col.k-sorted,
         th.k-sorted {
             background-color: $grid-sorted-bg;
-        }
-
-        .k-dirty {
-            border-color: currentColor transparent transparent currentColor;
-        }
-
-        &[dir = "rtl"],
-        .k-rtl & {
-            .k-dirty {
-                border-color: currentColor currentColor transparent transparent;
-            }
-        }
-
-        .k-button {
-            @include appearance( button );
-
-            &:hover {
-                @include appearance( hovered-button );
-            }
         }
     }
 
@@ -113,7 +89,7 @@
         .k-i-sort-asc-sm,
         .k-i-sort-desc-sm,
         .k-sort-order {
-            color: $accent;
+            color: $grid-sorting-indicator-text;
         }
 
         .k-sort-order {
