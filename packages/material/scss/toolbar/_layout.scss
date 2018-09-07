@@ -17,6 +17,9 @@ $toolbar-shadow: $button-shadow !default;
             &::before {
                 display: block;
             }
+            &::after {
+                display: none;
+            }
         }
 
         // Icon button
@@ -55,6 +58,11 @@ $toolbar-shadow: $button-shadow !default;
         }
 
         // Dropdowns and Inputs
+        .k-widget {
+            border-width: 0;
+            font: inherit;
+            text-transform: uppercase;
+        }
         // TODO unselect if necessary after the design for inputs in toolbar is completed
         //.k-autocomplete,
         //.k-dateinput-wrap,
@@ -63,14 +71,10 @@ $toolbar-shadow: $button-shadow !default;
         .k-picker-wrap,
         .k-dropdown-wrap {
             border-width: 0;
-            font-size: inherit;
-            text-transform: uppercase;
 
             .k-input {
                 padding: $toolbar-button-padding-y $toolbar-button-padding-x;
                 height: calc( #{$toolbar-inner-calc-size} );
-                font-size: $font-size;
-                line-height: $button-line-height;
             }
 
             .k-select {
@@ -78,13 +82,17 @@ $toolbar-shadow: $button-shadow !default;
                 opacity: $icon-opacity;
             }
         }
-
-        .k-picker-wrap {
+        .k-colorpicker .k-selected-color {
+            margin-top: $toolbar-button-padding-y;
+            margin-bottom: $toolbar-button-padding-y;
+        }
+        .k-colorpicker .k-tool-icon {
+            padding-top: $toolbar-button-padding-y;
+            padding-bottom: $toolbar-button-padding-y;
+            height: calc( #{$toolbar-inner-calc-size} );
 
             .k-selected-color {
-                padding: 0 $button-padding-x-sm;
-                height: calc(#{$toolbar-inner-calc-size});
-                line-height: calc(#{$toolbar-inner-calc-size});
+                margin: 0 0 12px;
             }
         }
     }
