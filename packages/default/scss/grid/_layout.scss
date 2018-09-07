@@ -6,14 +6,13 @@
     $grid-group-dropclue-line-size: $grid-group-dropclue-size / 3;
 
     $edit-cell-input-space: calc(-#{$cell-padding} - #{$input-border-width}) !default;
-
     $edit-cell-textbox-width: calc(100% + ((#{$cell-padding} + #{$input-border-width}) * 2)) !default;
 
     $grid-row-inner-height: add-two( $line-height-em, $cell-padding-y * 2 );
     // $grid-row-half-inner-height: add-two( $line-height-em / 2, $cell-padding-y );
 
     // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
-    $grid-form-component-offset: calc( (#{$line-height-em} + (-1 * #{button-size()})) / 2 ) !default;
+    $grid-form-component-offset: calc( (#{$line-height-em} - #{button-size()}) / 2 ) !default;
 
     $grid-form-component-vertical-align: middle !default;
     $grid-hierarchy-col-width: ($icon-size * 2) !default;
