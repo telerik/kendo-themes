@@ -3,25 +3,21 @@
     $notification-padding-end: calc(#{$notification-padding-x} + #{$icon-size} + #{$icon-spacing}) !default;
 
     // Base
-    .k-notification-container {
+    .k-notification-group {
         position: fixed;
         display: inline-flex;
         flex-wrap: wrap;
         max-height: 100%;
         flex-direction: column-reverse;
-
-        > .k-notification-area {
-            margin: ($notification-padding-y / 2) 0;
-        }
     }
 
-    .k-notification-animation-container {
+    .k-notification-container {
+        margin: ($notification-padding-y / 2) 0;
         display: inline-flex;
-        overflow: hidden;
         vertical-align: top;
 
-        > .k-notification {
-            align-self: flex-start;
+        &-animating {
+            overflow: hidden;
         }
     }
 
@@ -67,7 +63,7 @@
     }
 
     // refactor when https://github.com/telerik/kendo-themes/issues/298 is done
-    .k-notification-container .k-notification-wrap {
+    .k-notification-group .k-notification-wrap {
         padding-right: $notification-padding-x;
     }
 
@@ -97,7 +93,7 @@
     }
 
     .k-rtl {
-        .k-notification-container .k-notification-wrap {
+        .k-notification-group .k-notification-wrap {
             padding-left: $notification-padding-x;
         }
 
