@@ -1,0 +1,74 @@
+@include exports("dropdowngrid/theme") {
+
+    // Dropdowngrid
+    .k-dropdowngrid-popup {
+        border-color: $grid-border;
+        color: $grid-text;
+        background-color: $grid-bg;
+    }
+
+
+    // Header
+    .k-dropdowngrid-popup .k-header {
+        border-color: $grid-header-border;
+        color: $grid-header-text;
+        background-color: $grid-header-bg;
+    }
+
+
+    // Footer
+    .k-dropdowngrid-popup .k-footer {
+        border-color: $grid-header-border;
+        color: $grid-header-text;
+        background-color: $grid-header-bg;
+    }
+
+
+    // Group header
+    .k-dropdowngrid-popup .k-group-header {
+        border-color: $grid-header-border;
+        color: $grid-header-text;
+        background-color: $grid-header-bg;
+    }
+
+
+    // Alt
+    .k-dropdowngrid-popup .k-item:nth-child(2n) {
+        background-color: $grid-alt-bg;
+    }
+
+
+    // Cells
+    .k-dropdowngrid-popup .k-cell {
+        border-color: $grid-border;
+    }
+
+
+    // Interactive states
+    .k-dropdowngrid-popup .k-item.k-state-hover {
+        border-color: $grid-hovered-border;
+        color: $grid-hovered-text;
+        background-color: $grid-hovered-bg;
+    }
+    .k-dropdowngrid-popup .k-item.k-state-selected {
+        border-color: $grid-selected-border;
+        color: $grid-selected-text;
+        background-color: $grid-selected-bg;
+    }
+    .k-dropdowngrid-popup .k-item.k-state-focused {
+        box-shadow: $grid-focused-shadow;
+    }
+
+
+    // Grouping
+    .k-dropdowngrid-popup .k-group-cell span {
+        background-color: $grid-text;
+        color: $grid-bg;
+    }
+    .k-grid-list > .k-item.k-last > .k-cell,
+    .k-grid-list > .k-item.k-last > .k-group-cell,
+    .k-grid-list > .k-item.k-last > .k-spacer-cell {
+        border-bottom-color: $grid-text;
+    }
+
+}

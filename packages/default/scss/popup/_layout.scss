@@ -105,6 +105,11 @@ $popup-filter-padding-x: $input-padding-x !default;
         border-width: 0;
         background-color: transparent;
     }
+
+    // Flush popup
+    .k-popup.k-popup-flush {
+        padding: 0;
+    }
 }
 
 
