@@ -31,6 +31,18 @@ $grid-header-font-size: 12px !default;
         .k-button:active {
             box-shadow: none;
         }
+
+        &[dir="rtl"],
+        .k-rtl & {
+
+            th {
+                border-width: 0 $grid-cell-vertical-border-width 1px 0;
+            }
+
+            td {
+                border-width: 0 $grid-cell-vertical-border-width $grid-cell-horizontal-border-width 0;
+            }
+        }
     }
 
     .k-grid-header {
