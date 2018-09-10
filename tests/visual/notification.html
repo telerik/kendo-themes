@@ -25,9 +25,14 @@
         .light { background-color: #eee; }
 
         .k-animation-container,
-        .k-notification-animation-container {
+        .k-notification-container {
             margin-bottom: 8px;
             position: relative;
+         }
+
+         .k-notification-group {
+             position: relative;
+             display: block;
          }
     </style>
 </head>
@@ -117,55 +122,65 @@
         </section>
 
         <section class="dark">
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-info">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-info"></span>
-                        <div class="k-notification-content">
-                            Info notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-info">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-info"></span>
+                            <div class="k-notification-content">
+                                Info notification in Angular
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-error">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-error"></span>
-                        <div class="k-notification-content">
-                            Error notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-error">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-error"></span>
+                            <div class="k-notification-content">
+                                Error notification in Angular
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-success">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-success"></span>
-                        <div class="k-notification-content">
-                            Success notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-success">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-success"></span>
+                            <div class="k-notification-content">
+                                Success notification in Angular
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-warning">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-warning"></span>
-                        <div class="k-notification-content">
-                            Warning notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-warning">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-warning"></span>
+                            <div class="k-notification-content">
+                                Warning notification in Angular
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification">
-                    <div class="k-notification-wrap">
-                        <div class="k-notification-content">
-                            Default notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification">
+                        <div class="k-notification-wrap">
+                            <div class="k-notification-content">
+                                Default notification in Angular
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -173,120 +188,141 @@
         </section>
 
         <section class="k-rtl light">
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-info">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-info"></span>
-                        <div class="k-notification-content">
-                            Info notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-info">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-info"></span>
+                            <div class="k-notification-content">
+                                Info notification in Angular
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-error">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-error"></span>
-                        <div class="k-notification-content">
-                            Error notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-error">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-error"></span>
+                            <div class="k-notification-content">
+                                Error notification in Angular
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-success">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-success"></span>
-                        <div class="k-notification-content">
-                            Success notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-success">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-success"></span>
+                            <div class="k-notification-content">
+                                Success notification in Angular
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-warning">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-warning"></span>
-                        <div class="k-notification-content">
-                            Warning notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-warning">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-warning"></span>
+                            <div class="k-notification-content">
+                                Warning notification in Angular
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification">
-                    <div class="k-notification-wrap">
-                        <div class="k-notification-content">
-                            Default notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification">
+                        <div class="k-notification-wrap">
+                            <div class="k-notification-content">
+                                Default notification in Angular
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </section>
 
         <section class="dark">
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-info k-notification-closable">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-info"></span>
-                        <div class="k-notification-content">
-                            Closable info notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-info k-notification-closable">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-info"></span>
+                            <div class="k-notification-content">
+                                Closable info notification in Angular
+                            </div>
+                            <a class="k-icon k-i-close" title="Close"></a>
                         </div>
-                        <a class="k-icon k-i-close" title="Close"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-error k-notification-closable">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-error"></span>
-                        <div class="k-notification-content">
-                            Closable error notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-error k-notification-closable">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-error"></span>
+                            <div class="k-notification-content">
+                                Closable error notification in Angular
+                            </div>
+                            <a class="k-icon k-i-close" title="Close"></a>
                         </div>
-                        <a class="k-icon k-i-close" title="Close"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-success k-notification-closable">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-success"></span>
-                        <div class="k-notification-content">
-                            Closable success notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-success k-notification-closable">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-success"></span>
+                            <div class="k-notification-content">
+                                Closable success notification in Angular
+                            </div>
+                            <a class="k-icon k-i-close" title="Close"></a>
                         </div>
-                        <a class="k-icon k-i-close" title="Close"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-warning k-notification-closable">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-warning"></span>
-                        <div class="k-notification-content">
-                            <div>Closable warning notification in Angular</div>
-                            <div>Closable warning notification in Angular</div>
-                            <div>Closable warning notification in Angular</div>
-                            <div>Closable warning notification in Angular</div>
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-warning k-notification-closable">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-warning"></span>
+                            <div class="k-notification-content">
+                                <div>Closable warning notification in Angular</div>
+                                <div>Closable warning notification in Angular</div>
+                                <div>Closable warning notification in Angular</div>
+                                <div>Closable warningnotification in Angular</div>
+                            </div>
+                            <a class="k-icon k-i-close" title="Close"></a>
                         </div>
-                        <a class="k-icon k-i-close" title="Close"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-closable">
-                    <div class="k-notification-wrap">
-                        <div class="k-notification-content">
-                            Closable default notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-closable">
+                        <div class="k-notification-wrap">
+                            <div class="k-notification-content">
+                                Closable default notification in Angular
+                            </div>
+                            <a class="k-icon k-i-close" title="Close"></a>
                         </div>
-                        <a class="k-icon k-i-close" title="Close"></a>
                     </div>
                 </div>
             </div>
@@ -294,67 +330,78 @@
         </section>
 
         <section class="k-rtl light">
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-info k-notification-closable">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-info"></span>
-                        <div class="k-notification-content">
-                            Closable info notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-info k-notification-closable">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-info"></span>
+                            <div class="k-notification-content">
+                                Closable info notification in Angular
+                            </div>
+                            <a class="k-icon k-i-close" title="Close"></a>
                         </div>
-                        <a class="k-icon k-i-close" title="Close"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-error k-notification-closable">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-error"></span>
-                        <div class="k-notification-content">
-                            Closable error notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-error k-notification-closable">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-error"></span>
+                            <div class="k-notification-content">
+                                Closable error notification in Angular
+                            </div>
+                            <a class="k-icon k-i-close" title="Close"></a>
                         </div>
-                        <a class="k-icon k-i-close" title="Close"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-success k-notification-closable">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-success"></span>
-                        <div class="k-notification-content">
-                            Closable success notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-success k-notification-closable">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-success"></span>
+                            <div class="k-notification-content">
+                                Closable success notification in Angular
+                            </div>
+                            <a class="k-icon k-i-close" title="Close"></a>
                         </div>
-                        <a class="k-icon k-i-close" title="Close"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-warning k-notification-closable">
-                    <div class="k-notification-wrap">
-                        <span class="k-icon k-i-warning"></span>
-                        <div class="k-notification-content">
-                            <div>Closable warning notification in Angular</div>
-                            <div>Closable warning notification in Angular</div>
-                            <div>Closable warning notification in Angular</div>
-                            <div>Closable warning notification in Angular</div>
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-warning k-notification-closable">
+                        <div class="k-notification-wrap">
+                            <span class="k-icon k-i-warning"></span>
+                            <div class="k-notification-content">
+                                <div>Closable warning notification in Angular</div>
+                                <div>Closable warning notification in Angular</div>
+                                <div>Closable warning notification in Angular</div>
+                                <div>Closable warning notification in Angular</div>
+                            </div>
+                            <a class="k-icon k-i-close" title="Close"></a>
                         </div>
-                        <a class="k-icon k-i-close" title="Close"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="k-notification-animation-container">
-                <div class="k-widget k-notification k-notification-closable">
-                    <div class="k-notification-wrap">
-                        <div class="k-notification-content">
-                            Closable default notification in Angular
+            <div class="k-notification-group">
+                <div class="k-notification-container">
+                    <div class="k-widget k-notification k-notification-closable">
+                        <div class="k-notification-wrap">
+                            <div class="k-notification-content">
+                                Closable default notification in Angular
+                            </div>
+                            <a class="k-icon k-i-close" title="Close"></a>
                         </div>
-                        <a class="k-icon k-i-close" title="Close"></a>
                     </div>
                 </div>
             </div>
+
         </section>
     </div>
 
