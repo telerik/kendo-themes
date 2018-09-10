@@ -23,7 +23,11 @@
 
 
     // Header
+    .k-dropdowngrid-popup .k-grid-header-wrap {
+        border-width: 0 $grid-cell-vertical-border-width 0 0;
+    }
     .k-dropdowngrid-popup .k-grid-header {
+        padding: 0;
         display: block;
     }
     .k-dropdowngrid-popup .k-grid-header table {
@@ -129,11 +133,20 @@
 
     // RTL
     .k-rtl {
-        .k-grid-list > .k-item > .k-cell {
+        &.k-dropdowngrid-popup .k-grid-header-wrap,
+        .k-dropdowngrid-popup .k-grid-header-wrap {
+            border-right-width: 0;
             border-left-width: $grid-cell-vertical-border-width;
+        }
+        &.k-dropdowngrid-popup .k-grid-header .k-header,
+        .k-dropdowngrid-popup .k-grid-header .k-header,
+        .k-grid-list > .k-item > .k-cell {
+            border-left-width: 0;
             border-right-width: $grid-cell-vertical-border-width;
             text-align: right;
         }
+        &.k-dropdowngrid-popup .k-grid-header .k-header:first-child,
+        .k-dropdowngrid-popup .k-grid-header .k-header:first-child,
         .k-grid-list > .k-item > .k-cell:first-child {
             border-right-width: 0;
         }
