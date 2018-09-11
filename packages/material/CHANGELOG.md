@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+# 1.3.0 (2018-09-11)
+
+
+### Bug Fixes
+
+* **colorpicker:** update colorpicker layout to better match material theme ([6181275](https://github.com/telerik/kendo-themes/commit/6181275))
+* **combobox:** incorrect styling when importing styles separately ([16da3d5](https://github.com/telerik/kendo-themes/commit/16da3d5))
+* **focus:** grid, treelist, and calendar focus styles ([01eb3f6](https://github.com/telerik/kendo-themes/commit/01eb3f6))
+* **forms:** icons changing orientation on click [#252](https://github.com/telerik/kendo-themes/issues/252) [#254](https://github.com/telerik/kendo-themes/issues/254) ([0a9a22d](https://github.com/telerik/kendo-themes/commit/0a9a22d))
+* **grid:** add left border color for multi-column headers ([9c5de5e](https://github.com/telerik/kendo-themes/commit/9c5de5e))
+* **grid:** Multi-column headers left border [#252](https://github.com/telerik/kendo-themes/issues/252) ([76b994a](https://github.com/telerik/kendo-themes/commit/76b994a))
+* **inputs:** style indication not shown when invalid/required input in Material ([6d3542d](https://github.com/telerik/kendo-themes/commit/6d3542d))
+* improve form variables in accordance to material design ([dcb5a44](https://github.com/telerik/kendo-themes/commit/dcb5a44))
+* **multiselect:** incorrect styling when importing styles separately ([e5ea1ed](https://github.com/telerik/kendo-themes/commit/e5ea1ed))
+* **pivotgrid:** left border styles ([5c86f8f](https://github.com/telerik/kendo-themes/commit/5c86f8f))
+* **toolbar:** improve colorpicker in toolbar to better match material theme ([0243039](https://github.com/telerik/kendo-themes/commit/0243039))
+* **tooltip:** incorrect styling when importing styles separately ([#304](https://github.com/telerik/kendo-themes/issues/304)) ([f78ff85](https://github.com/telerik/kendo-themes/commit/f78ff85))
+
+
+### Features
+
+* **colorpicker:** add ColorPicker for Material theme ([3c2e42d](https://github.com/telerik/kendo-themes/commit/3c2e42d))
+* **spreadsheet:** add Material theme ([#275](https://github.com/telerik/kendo-themes/issues/275)) ([043d7ed](https://github.com/telerik/kendo-themes/commit/043d7ed))
+* add Material theme for editor ([c4d6daa](https://github.com/telerik/kendo-themes/commit/c4d6daa))
+* add Material theme for gantt ([f38a7ad](https://github.com/telerik/kendo-themes/commit/f38a7ad))
+* add Material theme for scheduler ([2e0c352](https://github.com/telerik/kendo-themes/commit/2e0c352))
+* add themes for dropdowngrid ([d4171f0](https://github.com/telerik/kendo-themes/commit/d4171f0))
+
+
+
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.2.0...@progress/kendo-theme-material@1.2.1) (2018-08-27)
 
