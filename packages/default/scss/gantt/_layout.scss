@@ -1,6 +1,6 @@
 @include exports("gantt/layout") {
 
-    $row-height: #{$line-height-em} + #{2 * $cell-padding};
+    $row-height: #{$line-height-em} + #{2 * $cell-padding} + #{$grid-cell-horizontal-border-width};
 
     .k-gantt {
         position: relative;
@@ -14,10 +14,10 @@
             vertical-align: top;
         }
         .k-grid-header tr {
-            height: add-three( $line-height-em, 2 * $cell-padding-y, 1px );
+            height: add-three( $line-height-em, 2 * $grid-header-padding-y, 1px );
         }
         .k-grid-content tr {
-            height: add-two( $line-height-em, 2 * $cell-padding-y );
+            height: add-three( $line-height-em, 2 * $grid-cell-padding-y, $grid-cell-horizontal-border-width );
         }
 
 
@@ -44,6 +44,7 @@
         border-width: 0 0 1px;
         border-style: solid;
         border-color: inherit;
+        line-height: $toolbar-line-height;
 
         .k-gantt-layout + & {
             border-width: 1px 0 0;
@@ -87,7 +88,7 @@
 
     // View switcher
     .k-gantt-views {
-        @extend %ul-button-group;
+        @extend %ul-button-group !optional;
 
         .k-current-view { display: none; }
         .k-current-view .k-link::after {
@@ -104,8 +105,8 @@
             flex-direction: column;
             align-items: stretch;
             position: absolute;
-            right: $padding-x;
-            top: $padding-x;
+            top: $toolbar-padding-y;
+            right: $toolbar-padding-x;
             z-index: 1000;
 
             li { display: none; }
@@ -127,12 +128,10 @@
             border-width: 0;
         }
         .k-grid-header {
-            // sass-lint:disable no-important
-            padding: 0 !important;
-            // sass-lint:enable no-important
+            padding: 0 !important; // sass-lint:disable-line no-important
         }
         .k-grid-header tr {
-            height: add-three( 2 * $line-height-em, 4 * $cell-padding-y, 2px );
+            height: add-three( 2 * $line-height-em, 4 * $grid-header-padding-y, 2px );
             vertical-align: bottom;
         }
         .k-grid-content {
@@ -190,6 +189,7 @@
 
         td {
             padding: 0;
+            border-width: 0;
             position: relative;
             vertical-align: middle;
         }

@@ -1,0 +1,178 @@
+@include exports("sreadsheet/theme") {
+
+    // Spreadsheet
+    .k-spreadsheet {}
+
+
+    // Spreadsheet header
+    .k-spreadsheet > .k-tabstrip-wrapper {
+
+        .k-tabstrip-items {
+            color: $accent-contrast;
+            background-color: $accent;
+        }
+        .k-tabstrip-items .k-item.k-state-active {
+            border-color: $accent-contrast;
+        }
+    }
+
+
+    // Quick access toolbar
+    .k-spreadsheet-quick-access-toolbar {
+        color: $accent-contrast;
+        background-color: $accent;
+    }
+
+
+    // Spreadsheet footer
+    .k-spreadsheet-sheets-bar {
+        @include appearance( toolbar );
+
+        .k-tabstrip-items .k-item.k-state-active {
+            border-color: $secondary;
+        }
+    }
+
+
+    // Row / column headers
+    .k-spreadsheet-top-corner {
+        border-color: $panel-border;
+        background-color: darken( $panel-bg, 4 );
+    }
+    .k-spreadsheet-row-header,
+    .k-spreadsheet-column-header {
+        border-color: $panel-border;
+        background-color: darken( $panel-bg, 4 );
+    }
+
+
+    // Formula bar
+    .k-spreadsheet-formula-list {}
+    .k-syntax-ref { color: #ff8822; }
+    .k-syntax-num { color: #0099ff; }
+    .k-syntax-func { font-weight: bold; }
+    .k-syntax-str { color: #38b714; }
+    .k-syntax-error { color: red; }
+    .k-syntax-bool { color: #a9169c; }
+    .k-syntax-startexp { font-weight: bold; }
+    .k-syntax-paren-match { background-color: #caf200; }
+
+
+    // Cell editor
+    .k-spreadsheet-cell-editor {
+        color: $panel-text;
+        background-color: $panel-bg;
+    }
+
+
+    // Selection
+    .k-spreadsheet .k-selection-full,
+    .k-spreadsheet .k-selection-partial {
+        background-color: rgba( black, .04 );
+
+        &::after { border-color: $secondary; }
+    }
+
+
+    .k-spreadsheet-selection {
+        border-color: $accent;
+        background-color: rgba( $accent, .25 );
+        box-shadow: inset 0 0 0 1px $accent;
+    }
+
+    .k-spreadsheet .k-single-selection::after {
+        border-color: $panel-bg;
+        background-color: $accent;
+    }
+    .k-spreadsheet-active-cell {
+        box-shadow: inset 0 0 0 1px $accent;
+        background-color: $panel-bg;
+
+        &.k-right {
+            box-shadow: inset 0 0 0 1px $accent, inset -1px 0 0 1px $accent;
+        }
+
+        &.k-bottom {
+            box-shadow: inset 0 0 0 1px $accent, inset 0 -1px 0 1px $accent;
+        }
+
+        &.k-bottom.k-right {
+            box-shadow: inset 0 0 0 1px $accent, inset -1px -1px 0 1px $accent;
+        }
+    }
+
+    .k-spreadsheet .k-auto-fill {
+        border-color: $accent;
+        background-color: rgba( $accent, .25 );
+        box-shadow: inset 0 0 0 1px $accent;
+    }
+    .k-spreadsheet .k-auto-fill-punch {
+        background-color: rgba( $panel-bg, .5 );
+    }
+
+
+    // Resize handle
+    .k-spreadsheet .k-resize-handle,
+    .k-spreadsheet .k-resize-hint-handle,
+    .k-spreadsheet .k-resize-hint-marker {
+        background-color: $accent;
+    }
+
+}
+
+
+
+
+@include exports( "spreadsheet/filter/theme" ) {
+
+    // Filter button
+    .k-spreadsheet .k-filter-range {
+        border-color: $accent;
+    }
+    .k-spreadsheet-filter {
+        @include appearance( button );
+        box-shadow: inset 0 0 0 1px $button-border;
+
+        &.k-state-active {
+            @include appearance( pressed-button );
+        }
+
+        &:hover {
+            @include appearance( hovered-button );
+        }
+    }
+
+
+    // Filter menu
+    .k-spreadsheet-filter-menu {
+
+        .k-spreadsheet-value-treeview-wrapper {
+            @include appearance( panel );
+        }
+    }
+
+}
+
+
+
+
+@include exports( "spreadsheet/tools/theme" ) {
+
+    .k-spreadsheet-popup {
+
+        // Buttons
+        .k-button {}
+
+        .k-button:hover,
+        .k-button.k-state-hover {
+            @include appearance( hovered-list-item );
+        }
+        .k-button:active,
+        .k-button.k-state-active,
+        .k-button.k-state-selected {
+            @include appearance( selected-list-item );
+        }
+
+    }
+
+}

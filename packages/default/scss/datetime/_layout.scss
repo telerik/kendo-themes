@@ -1,7 +1,6 @@
 @include exports("datetime/layout") {
     $timepicker-header-height: 2em;
     $time-highlight-size: 1px;
-    $datetimepicker-button-border-width: $input-border-width !default;
 
     // Datepicker
     .k-datepicker,
@@ -82,8 +81,8 @@
             align-items: stretch;
         }
         .k-link {
-            padding: $button-padding-y;
-            border-width: 0 0 0 $datetimepicker-button-border-width;
+            padding: $picker-button-padding-y $picker-button-padding-x;
+            border-width: 0 0 0 $picker-button-border-width;
             border-style: solid;
             border-color: inherit;
             display: flex;

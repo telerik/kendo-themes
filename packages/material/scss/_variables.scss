@@ -128,8 +128,8 @@ $button-border-width: 0 !default;
 $button-border-radius: $border-radius !default;
 
 $button-padding-x: $padding-x !default;
-$button-padding-y: $padding-y !default;
-$button-line-height: $form-line-height !default;
+$button-padding-y: 8px !default;
+$button-line-height: (20 / 14) !default;
 
 $button-padding-x-sm: $button-padding-x / 2 !default;
 $button-padding-y-sm: $button-padding-y / 2 !default;
@@ -162,6 +162,12 @@ $textarea-padding-y: 15px !default;
 $textarea-floating-label-padding: 25px !default;
 
 
+// Pickers
+$picker-button-border-width: 0 !default;
+$picker-button-padding-x: ($button-padding-y / 2) !default;
+$picker-button-padding-y: $button-padding-y !default;
+
+
 // Toolbar
 $toolbar-border-width: 0 !default;
 $toolbar-border-radius: 0 !default;
@@ -180,7 +186,7 @@ $toolbar-button-border-width: $button-border-width !default;
 $toolbar-button-border-radius: 0 !default;
 
 $toolbar-button-padding-x: $button-padding-x !default;
-$toolbar-button-padding-y: $padding-y * 2.5 !default;
+$toolbar-button-padding-y: 14px !default;
 $toolbar-button-line-height: $button-line-height !default;
 
 $toolbar-button-calc-size: #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} + #{$toolbar-button-border-width * 2} !default;
@@ -193,8 +199,8 @@ $nav-item-margin: 2px !default;
 $nav-item-padding-x: $padding-x !default;
 $nav-item-padding-y: $padding-y !default;
 
-$cell-padding-x: 12px !default;
-$cell-padding-y: 8px !default;
+$cell-padding-x: 24px !default;
+$cell-padding-y: 10px !default;
 $cell-padding: 8px !default;
 // $cell-padding-sm: $table-sm-cell-padding !default;
 
@@ -464,6 +470,61 @@ $list-item-selected-bg: $list-item-bg !default;
 $list-item-focused-shadow: none !default;
 
 
+// Grid
+$grid-padding-x: $cell-padding-x !default;
+$grid-padding-y: $cell-padding-y !default;
+
+$grid-header-padding-x: $grid-padding-x !default;
+$grid-header-padding-y: 16px !default;
+
+$grid-footer-padding-x: $grid-header-padding-x !default;
+$grid-footer-padding-y: $grid-header-padding-y !default;
+
+$grid-grouping-header-padding-x: 14px !default;
+$grid-grouping-header-padding-y: $grid-grouping-header-padding-x !default;
+
+$grid-filter-cell-padding-x: $grid-padding-x !default;
+$grid-filter-cell-padding-y: $grid-padding-y !default;
+
+$grid-toolbar-padding-x: 14px !default;
+$grid-toolbar-padding-y: $grid-toolbar-padding-x !default;
+$grid-toolbar-button-spacing: 8px !default;
+
+$grid-cell-padding-x: $grid-padding-x !default;
+$grid-cell-padding-y: $grid-padding-y !default;
+$grid-cell-horizontal-border-width: 1px !default;
+$grid-cell-vertical-border-width: 1px !default;
+
+$grid-bg: $panel-bg !default;
+$grid-text: rgba(0, 0, 0, .87) !default;
+$grid-border: rgba( black, .12 ) !default;
+
+$grid-header-bg: $header-bg !default;
+$grid-header-text: rgba(0, 0, 0, .54) !default;
+$grid-header-border: $grid-border !default;
+$grid-header-gradient: $header-gradient !default;
+
+$grid-alt-bg: transparent !default;
+$grid-alt-text: $grid-text !default;
+$grid-alt-border: $grid-border !default;
+
+$grid-hovered-bg: rgba( contrast-wcag( $grid-bg ), .07 ) !default;
+$grid-hovered-text: $grid-text !default;
+$grid-hovered-border: $grid-border !default;
+
+$grid-selected-bg: rgba( contrast-wcag( $grid-bg ), .04 ) !default;
+$grid-selected-text: #000000 !default;
+$grid-selected-border: $grid-border !default;
+
+$grid-grouping-row-bg: transparent !default;
+$grid-grouping-row-text: $grid-text !default;
+
+$grid-sorted-bg: rgba( contrast-wcag( $grid-bg ), .04 ) !default;
+$grid-sorting-indicator-text: $grid-header-text !default;
+
+$grid-focused-shadow: $list-item-focused-shadow !default;
+
+
 // Notification
 $notification-padding-x: 16px !default;
 $notification-padding-y: 14px !default;
@@ -646,7 +707,7 @@ $mediaplayer-toolbar-text: $toolbar-text !default;
 
 // Tooltip
 $tooltip-bg: #616161 !default;
-$tooltip-color: contrast-wcag($tooltip-bg) !default;
+$tooltip-text: contrast-wcag($tooltip-bg) !default;
 
 
 // Progressbar

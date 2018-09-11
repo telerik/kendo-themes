@@ -23,8 +23,9 @@
         @include border-radius();
         padding: $button-padding-y $button-padding-x;
         padding-right: add-two( ($button-padding-x * 2), ($icon-size * 2) );
+        min-height: auto;
         font-size: $font-size;
-        line-height: $form-line-height;
+        line-height: $button-line-height;
         text-align: left;
         position: relative;
         cursor: move;

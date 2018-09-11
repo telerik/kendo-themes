@@ -1,1 +1,39 @@
 @import "~@progress/kendo-theme-default/scss/colorpicker/layout";
+
+@include exports( "colorpicker/layout/material" ) {
+
+    .k-colorpicker {
+
+        // Selected color
+        .k-selected-color {
+            margin: 8px;
+            padding: 0;
+            border: 1px solid rgba( 0,0,0, .08 );
+            width: ($button-line-height * 1em);
+            height: ($button-line-height * 1em);
+            overflow: visible;
+
+            .k-i-line {
+                width: 1em;
+                height: 1em;
+                border: 0;
+                font-size: 32px;
+                transform: translate(-50%, -50%);
+            }
+            .k-i-line::before {
+                content: "\e514";
+                display: inline;
+            }
+        }
+
+        .k-tool-icon {
+            .k-selected-color {
+                width: ($button-line-height * 1em);
+                height: 4px;
+                line-height: 0;
+                display: inline-block;
+            }
+        }
+
+    }
+}

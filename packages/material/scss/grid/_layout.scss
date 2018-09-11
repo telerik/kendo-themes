@@ -1,14 +1,6 @@
 $grid-hierarchy-col-width: 32px !default;
 $grid-form-component-vertical-align: bottom !default;
-$grid-cell-horizontal-border-width: 1px !default;
-$grid-cell-vertical-border-width: 1px !default;
 // TODO: perhaps these should be the values for cell-padding-x/-y
-$grid-cell-padding-x: 24px !default;
-$grid-cell-padding-y: 10px !default;
-$grid-header-cell-padding-y: 16px !default;
-$grid-filter-cell-padding-x: $grid-cell-padding-x !default;
-$grid-filter-cell-padding-y: $grid-cell-padding-y !default;
-$grid-filter-input-text-indent: 0 !default;
 $grid-grouping-row-border-top: 0 !default;
 $grid-group-footer-border-y: 0 !default;
 $grid-group-footer-second-cell-border: 0 !default;
@@ -16,15 +8,13 @@ $edit-cell-input-space: 0 !default;
 $grid-header-first-border: 1px !default;
 $grid-sorted-icon-spacing: 4px !default;
 $grid-header-menu-icon-spacing: 14px !default;
-$grid-grouping-header-padding-x: 14px !default;
-$grid-grouping-header-padding-y: 14px !default;
 $grid-group-indicator-border-radius: add-two( $font-size, $button-padding-y) !default;
 $grid-group-indicator-gap: 8px !default;
+$grid-header-font-size: 12px !default;
 
 @import "~@progress/kendo-theme-default/scss/grid/layout";
 
 @include exports ('grid/layout/material') {
-    $grid-header-font-size: 12px !default;
     $grouping-dropclue-height: add-two( 2 * $font-size, 2 * $padding-y) !default;
 
     $text-field-border-width: 2px;
@@ -44,12 +34,10 @@ $grid-group-indicator-gap: 8px !default;
     }
 
     .k-grid-header {
+        font-size: $grid-header-font-size;
+
         th {
             font-weight: 700;
-        }
-
-        .k-header:not(.k-widget) {
-            font-size: $grid-header-font-size;
         }
 
         .k-grid-filter {
@@ -117,6 +105,7 @@ $grid-group-indicator-gap: 8px !default;
         width: 2px;
     }
 
+    .k-edit-cell,
     .k-grid-edit-row > td {
 
         > .k-textbox,
@@ -128,6 +117,7 @@ $grid-group-indicator-gap: 8px !default;
             margin-right: -$text-field-padding;
         }
     }
+    .k-edit-cell,
     .k-grid-edit-row {
 
         .k-autocomplete,

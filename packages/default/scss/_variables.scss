@@ -135,6 +135,12 @@ $input-inner-calc-size: #{$input-line-height * 1em} + #{$input-padding-y * 2};
 $input-calc-size: #{$input-inner-calc-size} + 2px;
 
 
+// Pickers
+$picker-button-border-width: 0 !default;
+$picker-button-padding-x: $button-padding-y !default;
+$picker-button-padding-y: $button-padding-y !default;
+
+
 // Toolbar
 $toolbar-border-width: 1px !default;
 $toolbar-border-radius: 0 !default;
@@ -428,6 +434,64 @@ $list-item-selected-bg: $selected-bg !default;
 $list-item-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 
+// Grid
+$grid-padding-x: $cell-padding-x !default;
+$grid-padding-y: $cell-padding-y !default;
+
+$grid-header-padding-x: $grid-padding-x !default;
+$grid-header-padding-y: $grid-padding-y !default;
+
+$grid-footer-padding-x: $grid-header-padding-x !default;
+$grid-footer-padding-y: $grid-header-padding-y !default;
+
+$grid-grouping-header-padding-x: $grid-padding-y !default;
+$grid-grouping-header-padding-y: $grid-grouping-header-padding-x !default;
+
+$grid-filter-cell-padding-x: $grid-padding-y !default;
+$grid-filter-cell-padding-y: $grid-filter-cell-padding-x !default;
+
+$grid-toolbar-padding-x: $grid-padding-y !default;
+$grid-toolbar-padding-y: $grid-toolbar-padding-x !default;
+$grid-toolbar-button-spacing: ($grid-toolbar-padding-y / 2) !default;
+
+$grid-cell-padding-x: $grid-padding-x !default;
+$grid-cell-padding-y: $grid-padding-y !default;
+$grid-cell-horizontal-border-width: 0 !default;
+$grid-cell-vertical-border-width: 1px !default;
+
+$grid-bg: $panel-bg !default;
+$grid-text: $panel-text !default;
+$grid-border: $panel-border !default;
+
+$grid-header-bg: $header-bg !default;
+$grid-header-text: $header-text !default;
+$grid-header-border: $grid-border !default;
+$grid-header-gradient: $header-gradient !default;
+
+/// The background of alternating rows.
+/// Set to transparent to remove the row stripes.
+/// @group grid
+$grid-alt-bg: rgba( contrast-wcag( $grid-bg ), .04 ) !default;
+$grid-alt-text: $grid-text !default;
+$grid-alt-border: $grid-border !default;
+
+$grid-hovered-bg: darken($grid-bg, 7%) !default;
+$grid-hovered-text: $grid-text !default;
+$grid-hovered-border: $grid-border !default;
+
+$grid-selected-bg: rgba($selected-bg, .25) !default;
+$grid-selected-text: $grid-text !default;
+$grid-selected-border: $grid-border !default;
+
+$grid-grouping-row-bg: darken($grid-bg, 7%) !default;
+$grid-grouping-row-text: $grid-text !default;
+
+$grid-sorted-bg: rgba( contrast-wcag( $grid-bg ), .02 ) !default;
+$grid-sorting-indicator-text: $accent !default;
+
+$grid-focused-shadow: $list-item-focused-shadow !default;
+
+
 // Notification
 $notification-padding-x: 8px !default;
 $notification-padding-y: 4px !default;
@@ -633,7 +697,6 @@ $progressbar-indeterminate-border: $progressbar-border !default;
 $progressbar-indeterminate-gradient: false !default;
 
 $progressbar-chunk-border: $bg-color !default;
-
 
 
 // Config maps

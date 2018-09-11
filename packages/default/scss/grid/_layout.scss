@@ -1,37 +1,22 @@
 @include exports('grid/layout') {
 
-    $input-border-width: 1px;
     $filter-rows-span-size: calc( #{$line-height-em} + #{$input-padding-y * 2} + #{$input-border-width * 2}) !default;
 
     $grid-group-dropclue-size: 6px;
     $grid-group-dropclue-line-size: $grid-group-dropclue-size / 3;
 
     $edit-cell-input-space: calc(-#{$cell-padding} - #{$input-border-width}) !default;
-
     $edit-cell-textbox-width: calc(100% + ((#{$cell-padding} + #{$input-border-width}) * 2)) !default;
 
     $grid-row-inner-height: add-two( $line-height-em, $cell-padding-y * 2 );
     // $grid-row-half-inner-height: add-two( $line-height-em / 2, $cell-padding-y );
 
     // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
-    $grid-form-component-offset: calc( (#{$line-height-em} + (-1 * #{button-size()})) / 2 ) !default;
+    $grid-form-component-offset: calc( (#{$line-height-em} - #{button-size()}) / 2 ) !default;
 
     $grid-form-component-vertical-align: middle !default;
     $grid-hierarchy-col-width: ($icon-size * 2) !default;
-    $grid-cell-horizontal-border-width: 0 !default;
-    $grid-cell-vertical-border-width: 1px !default;
-    $grid-cell-padding-x: $cell-padding-x !default;
-    $grid-cell-padding-y: $cell-padding-y !default;
-    // $grid-header-cell-padding-x does not make sense - header and cell content needs to be aligned
-    $grid-header-cell-padding-y: $grid-cell-padding-y !default;
 
-    // a more sensible default would be $grid-cell-padding-x, but default theme uses a smaller filter row padding-x
-    $grid-filter-cell-padding-x: $cell-padding !default;
-    $grid-filter-cell-padding-y: $grid-cell-padding-y !default;
-    $grid-filter-input-text-indent: $padding-x !default;
-
-    $grid-grouping-header-padding-x: $toolbar-padding-y !default;
-    $grid-grouping-header-padding-y: $toolbar-padding-y !default;
     $grid-group-indicator-border-radius: $border-radius !default;
     $grid-group-indicator-gap: $cell-padding-y !default;
 
@@ -110,7 +95,7 @@
             }
         }
         th {
-            padding: $grid-header-cell-padding-y $grid-cell-padding-x;
+            padding: $grid-header-padding-y $grid-header-padding-x;
             border-width: 0 0 1px $grid-cell-vertical-border-width;
             white-space: nowrap;
         }
@@ -178,7 +163,9 @@
                 padding: $cell-padding-y 0;
                 width: 100%;
                 height: 100%;
-                line-height: $line-height;
+                // That causes an issue with grid material. Commenting it for now
+                // -- joneff
+                // line-height: $line-height;
                 display: inline-block;
                 outline: 0;
             }
@@ -295,6 +282,7 @@
             }
 
             .k-dirty {
+                border-color: currentColor currentColor transparent transparent;
                 left: auto;
                 right: 0;
             }
@@ -339,6 +327,7 @@
 
         .k-dirty {
             border-width: 5px;
+            border-color: currentColor transparent transparent currentColor;
             left: 0;
             right: auto;
         }
@@ -350,7 +339,7 @@
 
     // Toolbar
     .k-grid-toolbar {
-        padding: $cell-padding-y;
+        padding: $grid-toolbar-padding-y $grid-toolbar-padding-x;
         border-width: 0 0 1px;
         border-style: solid;
         border-color: inherit;
@@ -362,7 +351,7 @@
             vertical-align: middle;
         }
         .k-button + .k-button {
-            margin-left: ($cell-padding / 2);
+            margin-left: $grid-toolbar-button-spacing;
         }
     }
 
@@ -402,7 +391,7 @@
         padding: $button-padding-y $button-padding-x;
         border-width: 1px;
         border-style: solid;
-        line-height: $form-line-height;
+        line-height: $button-line-height;
         display: inline-flex;
         flex-direction: row;
         align-items: center;
@@ -549,8 +538,8 @@
         }
 
         .k-header > .k-link {
-            margin: (-$grid-header-cell-padding-y) (-$grid-cell-padding-x);
-            padding: $grid-header-cell-padding-y $grid-cell-padding-x;
+            margin: (-$grid-header-padding-y) (-$grid-header-padding-x);
+            padding: $grid-header-padding-y $grid-header-padding-x;
             line-height: inherit;
             display: block;
             overflow: hidden;
@@ -581,7 +570,7 @@
             justify-content: center;
             position: absolute;
             right: $grid-header-menu-icon-spacing;
-            bottom: calc( #{ $grid-header-cell-padding-y } + #{ $line-height-em / 2 } + (-1 * #{ button-inner-size(.5) } ) );
+            bottom: calc( #{ $grid-header-padding-y } + #{ $line-height-em / 2 } + (-1 * #{ button-inner-size(.5) } ) );
             z-index: 1;
         }
 
@@ -704,16 +693,6 @@
             min-width: 0;
         }
 
-        .k-autocomplete .k-input,
-        .k-dropdown-wrap .k-input,
-        .k-numeric-wrap .k-input,
-        .k-picker-wrap .k-input,
-        .k-selectbox .k-input,
-        .k-textbox > input {
-            padding-left: 0;
-            padding-right: 0;
-            text-indent: $grid-filter-input-text-indent;
-        }
     }
 
     // Grid content
@@ -782,8 +761,8 @@
 
     .k-edit-cell,
     .k-grid-edit-row > td {
-        >.k-textbox,
-        >.k-widget,
+        > .k-textbox,
+        > .k-widget,
         > .text-box {
             margin-left: $edit-cell-input-space;
         }

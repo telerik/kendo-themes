@@ -1,0 +1,162 @@
+@include exports("dropdowngrid/layout") {
+
+    .k-dropdowngrid-popup {
+        overflow: hidden;
+    }
+    .k-dropdowngrid-popup .k-virtual-wrap {
+        margin: 0;
+    }
+
+
+    // Grid list
+    .k-grid-list {
+        width: 100%;
+        max-width: none;
+        border-width: 0;
+        border-collapse: collapse;
+        border-spacing: 0;
+        table-layout: fixed;
+        empty-cells: show;
+        outline: none;
+        display: table;
+    }
+
+
+    // Header
+    .k-dropdowngrid-popup .k-grid-header-wrap {
+        border-width: 0 $grid-cell-vertical-border-width 0 0;
+    }
+    .k-dropdowngrid-popup .k-grid-header {
+        padding: 0;
+        display: block;
+    }
+    .k-dropdowngrid-popup .k-grid-header table {
+        width: 100%;
+        max-width: none;
+        border-width: 0;
+        border-collapse: collapse;
+        border-spacing: 0;
+        table-layout: fixed;
+        empty-cells: show;
+        outline: none;
+    }
+    .k-dropdowngrid-popup .k-grid-header .k-header {
+        padding: $grid-header-padding-y $grid-header-padding-x;
+        border-width: 0 0 0 $grid-cell-vertical-border-width;
+        border-style: solid;
+        font-weight: normal;
+        text-align: left;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        &:first-child {
+            border-left: 0;
+        }
+    }
+
+
+    // Rows
+    .k-grid-list > .k-item {
+        box-sizing: border-box;
+        display: table-row;
+        position: relative;
+    }
+    .k-grid-list > .k-item > .k-cell,
+    .k-grid-list > .k-item > .k-group,
+    .k-grid-list > .k-item > .k-spacer-group {
+        box-sizing: border-box;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .k-grid-list > .k-item:last-child > .k-cell,
+    .k-grid-list > .k-item:last-child > .k-group-cell,
+    .k-grid-list > .k-item:last-child > .k-spacer-cell {
+        border-bottom-width: 0;
+    }
+
+
+    // Cells
+    .k-grid-list > .k-item > .k-cell {
+        padding: $grid-cell-padding-y $grid-cell-padding-x;
+        border-width: 0 0 $grid-cell-horizontal-border-width $grid-cell-vertical-border-width;
+        border-style: solid;
+        text-align: left;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        &:first-child {
+            border-left: 0;
+        }
+    }
+
+
+    // Grouping
+    .k-dropdowngrid-popup .k-group-header {
+        margin: 0;
+        padding: $grid-header-padding-y $grid-header-padding-x;
+        min-height: auto;
+        text-align: left;
+    }
+    .k-grid-list > .k-item > .k-group-cell,
+    .k-grid-list > .k-item > .k-spacer-cell {
+        padding: 0;
+        width: 0;
+        border-left-width: 0;
+        border-right-width: 0;
+        overflow: visible;
+        position: relative;
+    }
+    .k-grid-list > .k-item > .k-group-cell > span {
+        padding: 0 ($grid-cell-padding-x / 2);
+        font-size: .875em;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+
+    // Footer
+    .k-dropdowngrid-popup .k-footer {
+        padding: $grid-footer-padding-y $grid-footer-padding-x;
+        border-width: 1px 0 0 0;
+        border-style: solid;
+        text-align: left;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+        flex-shrink: 0;
+    }
+
+
+    // RTL
+    .k-rtl {
+        &.k-dropdowngrid-popup .k-grid-header-wrap,
+        .k-dropdowngrid-popup .k-grid-header-wrap {
+            border-right-width: 0;
+            border-left-width: $grid-cell-vertical-border-width;
+        }
+        &.k-dropdowngrid-popup .k-grid-header .k-header,
+        .k-dropdowngrid-popup .k-grid-header .k-header,
+        .k-grid-list > .k-item > .k-cell {
+            border-left-width: 0;
+            border-right-width: $grid-cell-vertical-border-width;
+            text-align: right;
+        }
+        &.k-dropdowngrid-popup .k-grid-header .k-header:first-child,
+        .k-dropdowngrid-popup .k-grid-header .k-header:first-child,
+        .k-grid-list > .k-item > .k-cell:first-child {
+            border-right-width: 0;
+        }
+        div.k-dropdowngrid-popup .k-group-header {
+            text-align: right;
+        }
+        .k-grid-list > .k-item > .k-group-cell > span {
+            right: auto;
+            left: 0;
+        }
+    }
+
+}

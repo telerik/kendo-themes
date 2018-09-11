@@ -1,0 +1,122 @@
+@include exports("gantt/theme") {
+
+    // Theme
+    .k-gantt {
+        @include appearance( panel );
+    }
+
+
+    // Header and footer
+    .k-gantt-toolbar {
+        @include appearance( toolbar );
+    }
+
+
+    // View switcher
+    .k-gantt-views {
+
+        li {}
+
+
+        &.k-state-expanded {
+            @include appearance( popup );
+            box-shadow: $popup-shadow;
+
+            li {
+                margin: 0;
+                border-radius: 0;
+            }
+            li + li { margin: 0; }
+        }
+    }
+
+
+    // Rows and colls
+    .k-gantt-rows {}
+    .k-gantt-columns {}
+    .k-gantt-columns .k-nonwork-hour {
+        background-color: rgba( $panel-text, .025 );
+    }
+
+
+    .k-gantt-dependencies {}
+    .k-line {
+        color: mix( $panel-text, $panel-bg );
+        background-color: mix( $panel-text, $panel-bg );
+    }
+    .k-line.k-state-selected {
+        color: $header-selected-bg;
+        background-color: $header-selected-bg;
+    }
+
+    .k-task-dot {}
+    .k-task-dot::before {
+        background-color: $panel-text;
+    }
+    .k-task-dot:hover::before,
+    .k-task-dot.k-state-hover::before {
+        border-color: $panel-text;
+        background-color: $panel-bg;
+    }
+
+
+    // Milestone
+    .k-task-milestone {
+        border-color: $accent;
+        background-color: $accent;
+    }
+    .k-task-milestone.k-state-selected {
+        border-color: $secondary;
+        background-color: $secondary;
+    }
+
+
+    // Summary
+    .k-task-summary {
+        color: mix( $accent, $grid-bg, 54 );
+    }
+    .k-task-summary-complete {
+        color: $accent;
+    }
+    .k-task-summary.k-state-selected {
+        color: mix( $secondary, $grid-bg, 54 );
+
+        .k-task-summary-complete {
+            color: $secondary;
+        }
+    }
+    .k-task-summary::before,
+    .k-task-summary::after,
+    .k-task-summary-complete::before,
+    .k-task-summary-complete::after {
+        display: none;
+    }
+
+
+    // Tasks
+    .k-task-single {
+        @include border-radius( $border-radius );
+        color: $accent-contrast;
+        background-color: mix( $accent, $grid-bg, 54 );
+
+        .k-task-complete {
+            background: $accent;
+        }
+    }
+    .k-task-single.k-state-selected {
+        @include appearance( active-button );
+        color: $secondary-contrast;
+        background-color: mix( $secondary, $grid-bg, 54 );
+
+        .k-task-complete {
+            background: $secondary;
+        }
+    }
+    .k-task-single .k-resize-handle {
+        width:  ($spacer-x / 2 );
+    }
+    .k-task-single:hover .k-resize-handle {
+        opacity: 0;
+    }
+
+}

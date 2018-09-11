@@ -203,4 +203,13 @@ $widget-border-width: 1px !default;
         right: 0;
     }
 
+    [dir = "rtl"],
+    .k-rtl {
+        .k-dirty {
+            border-color: transparent transparent $error $error;
+            right: auto;
+            left: 0;
+        }
+    }
+
 }

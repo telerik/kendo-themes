@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.14.0"></a>
+# 2.14.0 (2018-09-11)
+
+
+### Bug Fixes
+
+* **combobox:** incorrect styling when importing styles separately ([16da3d5](https://github.com/telerik/kendo-themes/commit/16da3d5))
+* **multiselect:** incorrect styling when importing styles separately ([e5ea1ed](https://github.com/telerik/kendo-themes/commit/e5ea1ed))
+* **tooltip:** incorrect styling when importing styles separately ([#304](https://github.com/telerik/kendo-themes/issues/304)) ([f78ff85](https://github.com/telerik/kendo-themes/commit/f78ff85))
+* improve form variables in accordance to material design ([dcb5a44](https://github.com/telerik/kendo-themes/commit/dcb5a44))
+
+
+### Features
+
+* add themes for dropdowngrid ([d4171f0](https://github.com/telerik/kendo-themes/commit/d4171f0))
+* **spreadsheet:** add Material theme ([#275](https://github.com/telerik/kendo-themes/issues/275)) ([043d7ed](https://github.com/telerik/kendo-themes/commit/043d7ed))
+
+
+
+
 <a name="2.13.8"></a>
 ## 2.13.8 (2018-08-22)
 

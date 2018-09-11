@@ -10,7 +10,7 @@
 // Data management
 @import "pager";
 @import "grid";
-//@import "spreadsheet";
+@import "spreadsheet";
 @import "pivotgrid";
 @import "treelist";
 @import "scrollview";
@@ -22,9 +22,10 @@
 @import "colorpicker";
 @import "combobox";
 @import "datetime";
+@import "dropdowngrid";
 @import "dropdownlist";
 @import "dropdowntree";
-//@import "editor";
+@import "editor";
 @import "input";
 @import "multiselect";
 @import "numerictextbox";
@@ -46,8 +47,8 @@
 
 // Scheduling
 @import "calendar";
-//@import "gantt";
-//@import "scheduler";
+@import "gantt";
+@import "scheduler";
 
 
 // Media

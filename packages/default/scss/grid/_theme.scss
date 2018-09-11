@@ -1,25 +1,7 @@
 @include exports('grid/theme') {
-    $grid-chrome-text: $header-text !default;
-    $grid-chrome-bg: $header-bg !default;
-    $grid-chrome-border: $border-color !default;
 
-    /// The background of alternating rows.
-    /// Set to transparent to remove the row stripes.
-    /// @group grid
-    $grid-alt-bg: rgba( contrast-wcag( $panel-bg ), .04) !default;
-
-    $grid-selected-text: $grid-chrome-text !default;
-    $grid-selected-bg: rgba($selected-bg, .25) !default;
-    $grid-grouping-row-text: $text-color !default;
-    $grid-grouping-row-bg: darken($bg-color, 7%) !default;
-    $grid-sorted-bg: rgba( contrast-wcag( $panel-bg ), .02 ) !default;
-
-    $tooltip-color: $accent-contrast !default;
     $tooltip-bg: $accent !default;
-
-    $grid-selected-cell-text: inherit !default;
-    $grid-selected-cell-bg: $grid-selected-bg !default;
-    $grid-sorting-indicator-text: $accent !default;
+    $tooltip-text: contrast-wcag($accent) !default;
 
     .k-grid-header,
     .k-header,
@@ -34,7 +16,7 @@
     .k-grid-header-locked,
     .k-filter-row > td,
     .k-filter-row > th {
-        border-color: $grid-chrome-border;
+        border-color: $grid-header-border;
     }
 
     .k-grid-header,
@@ -43,8 +25,8 @@
     .k-grid-add-row,
     .k-grid-footer,
     .k-drag-clue {
-        color: $grid-chrome-text;
-        background-color: $grid-chrome-bg;
+        color: $grid-header-text;
+        background-color: $grid-header-bg;
     }
 
     .k-grid-content {
@@ -67,15 +49,16 @@
 
     .k-grouping-dropclue {
         &::before {
-            border-color: $grid-chrome-text transparent transparent;
+            border-color: $grid-header-text transparent transparent;
         }
 
         &::after {
-            background-color: $grid-chrome-text;
+            background-color: $grid-header-text;
         }
     }
 
     .k-grid {
+        @include fill( $grid-text, $grid-bg, $grid-border );
         background-clip: padding-box;
 
         .k-ie11 &,
@@ -90,33 +73,33 @@
 
         tr.k-state-selected,
         td.k-state-selected {
-            color: $grid-selected-cell-text;
-            background-color: $grid-selected-cell-bg;
+            color: $grid-selected-text;
+            background-color: $grid-selected-bg;
         }
 
         td.k-state-focused,
         th.k-state-focused {
-            box-shadow: $list-item-focused-shadow;
+            box-shadow: $grid-focused-shadow;
         }
 
         .k-grid-filter,
         .k-header-column-menu,
         .k-hierarchy-cell .k-icon {
             border-width: 0;
-            color: $grid-chrome-text;
+            color: $grid-header-text;
         }
 
         .k-grouping-row {
             background-color: $grid-grouping-row-bg;
 
             .k-icon {
-                color: $grid-chrome-text;
+                color: $grid-header-text;
                 text-decoration: none;
             }
         }
 
         .k-tooltip.k-tooltip-validation {
-            color: $tooltip-color;
+            color: $tooltip-text;
             background-color: $tooltip-bg;
 
             .k-callout-n {
@@ -133,17 +116,6 @@
 
             .k-callout-w {
                 border-right-color: $tooltip-bg;
-            }
-        }
-
-        .k-dirty {
-            border-color: currentColor transparent transparent currentColor;
-        }
-
-        &[dir = "rtl"],
-        .k-rtl & {
-            .k-dirty {
-                border-color: currentColor currentColor transparent transparent;
             }
         }
     }

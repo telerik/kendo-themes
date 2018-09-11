@@ -35,7 +35,7 @@
             padding: $button-padding-y;
             width: button-inner-size();
             height: button-inner-size();
-            border-width: 0 1px 0 0;
+            border-width: 0 $picker-button-border-width 0 0;
             border-style: solid;
             border-color: inherit;
             box-sizing: border-box;
@@ -48,12 +48,12 @@
             }
 
             .k-selected-color {
-                display: inline-block;
+                margin: 0 0 12px;
                 padding: 0;
-                margin-bottom: 12px;
                 width: 14px;
                 height: 3px;
                 line-height: 0;
+                display: inline-block;
             }
         }
 

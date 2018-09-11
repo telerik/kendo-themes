@@ -5,6 +5,7 @@
     .k-resize-hint {
         position: absolute;
         border-color: inherit;
+        z-index: 200;
     }
     .k-resize-handle {
         display: flex;
@@ -76,6 +77,48 @@
         cursor: ne-resize;
         top: 0;
         right: 0;
+    }
+
+    .k-vertical-resize {
+        cursor: row-resize;
+    }
+    .k-horizontal-resize {
+        cursor: col-resize;
+    }
+
+
+    .k-resize-hint {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .k-resize-hint-handle {
+            width: auto;
+            height: 20px;
+            align-self: stretch;
+        }
+        .k-resize-hint-marker {
+            width: 2px;
+            height: auto;
+            flex: 1 1 auto;
+        }
+    }
+    .k-resize-hint-vertical {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .k-resize-hint-handle {
+            width: 20px;
+            height: auto;
+            align-self: stretch;
+        }
+
+        .k-resize-hint-marker {
+            width: auto;
+            height: 2px;
+            flex: 1 1 auto;
+        }
     }
 
 }

@@ -1,0 +1,89 @@
+@import "~@progress/kendo-theme-default/scss/gantt/layout";
+
+@include exports("gantt/layout/material") {
+
+    .k-gantt {}
+
+
+    // Header and footer
+    .k-gantt-toolbar {
+
+        .k-button {
+            @extend .k-button.k-flat;
+            padding: $toolbar-button-padding-y $toolbar-button-padding-x;
+        }
+    }
+
+
+    // View switcher
+    .k-gantt-views {
+
+        li,
+        li.k-state-hover,
+        li.k-state-selected {
+            color: inherit;
+            background: none;
+        }
+        li a {
+            @extend .k-button.k-flat;
+            padding: $toolbar-button-padding-y $toolbar-button-padding-x;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        li a::before {
+            @extend .k-button::before;
+            display: block;
+        }
+        li.k-state-selected a::before {
+            @include opacity( $flat-button-selected-opacity );
+        }
+
+
+        &.k-state-expanded {
+            li {
+                margin: 0;
+                border-radius: 0;
+            }
+            li + li {
+                margin: 0;
+            }
+            .k-current-view ~ li a {
+                padding-top: $list-item-padding-y;
+                padding-bottom: $list-item-padding-y;
+                line-height: 2;
+            }
+        }
+    }
+
+
+    // Treelist
+    .k-gantt-treelist {}
+
+
+    // Milestone
+    .k-milestone-wrap {}
+    .k-task-milestone {}
+
+
+    // Summary
+    .k-summary-wrap {}
+    .k-task-summary {}
+    .k-task-summary-complete {}
+    .k-task-summary-progress {
+        height: 15px;
+        overflow: hidden;
+    }
+
+
+    // Single task
+    .k-single-wrap {}
+    .k-task-single {
+        border-width: 0;
+    }
+    .k-task-template {
+        padding: $button-padding-y-sm $button-padding-x-sm;
+        line-height: $button-line-height;
+    }
+
+}

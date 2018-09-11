@@ -9,12 +9,7 @@ $toolbar-separator-padding-y: 0 !default;
 
     .k-toolbar {
 
-        .k-button {
-
-            &::after {
-                display: none;
-            }
-        }
+        .k-button {}
 
         .k-button.k-state-disabled,
         .k-state-disabled > .k-button {

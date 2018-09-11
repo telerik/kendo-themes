@@ -1,17 +1,3 @@
-$grid-alt-bg: transparent !default;
-$grid-chrome-text: rgba(0, 0, 0, .54) !default;
-$grid-sorted-bg: rgba(0, 0, 0, .04) !default;
-$grid-text: rgba(0, 0, 0, .87) !default;
-$grid-sorting-indicator-text: $grid-chrome-text !default;
-$grid-selected-bg: rgba(0, 0, 0, .04) !default;
-$grid-hovered-bg: rgba(0, 0, 0, .07) !default;
-$grid-grouping-row-bg: transparent !default;
-$grid-selected-text: #000 !default;
-$grid-selected-cell-text: $grid-selected-text !default;
-$grid-selected-cell-bg: $grid-sorted-bg !default;
-$grid-filter-cell-padding-x: $grid-cell-padding-x !default;
-$grid-filter-cell-padding-y: $grid-cell-padding-y !default;
-
 @import "~@progress/kendo-theme-default/scss/grid/theme";
 
 @include exports ('grid/theme/material') {
@@ -82,7 +68,7 @@ $grid-filter-cell-padding-y: $grid-cell-padding-y !default;
             color: $grid-text;
 
             .k-icon {
-                color: $grid-chrome-text;
+                color: $grid-header-text;
             }
         }
     }
