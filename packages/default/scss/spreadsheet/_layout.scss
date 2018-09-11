@@ -153,7 +153,7 @@
 
         .k-spreadsheet-formula-input {
             padding: $input-padding-y $input-padding-x;
-            line-height: $form-line-height;
+            line-height: $input-line-height;
         }
     }
     .k-spreadsheet-formula-input {
@@ -300,6 +300,7 @@
     .k-spreadsheet-top-corner {
         border-width: 0 1px 1px 0;
         border-style: solid;
+        box-sizing: border-box;
         position: absolute;
         top: 0;
         left: 0;
@@ -351,12 +352,57 @@
     .k-spreadsheet-column-header {
         text-align: center;
         z-index: 100;
+
+        > div {
+            position: relative;
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: inherit;
+
+            &::after {
+                content: "";
+                border-width: 0;
+                border-style: solid;
+                border-color: inherit;
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
     }
     .k-spreadsheet-row-header {
         position: relative;
     }
     .k-spreadsheet-column-header {
         position: absolute;
+    }
+    .k-spreadsheet-row-header > div {
+        border-top-width: 1px;
+
+        &:first-child { border-top-width: 0; }
+    }
+    .k-spreadsheet-row-header > .k-selection-partial,
+    .k-spreadsheet-row-header > .k-selection-full {
+        &::after {
+            border-right-width: 2px;
+            display: block;
+        }
+    }
+    .k-spreadsheet-column-header > div {
+        border-left-width: 1px;
+
+        &:first-child { border-left-width: 0; }
+    }
+    .k-spreadsheet-column-header > .k-selection-partial,
+    .k-spreadsheet-column-header > .k-selection-full {
+        &::after {
+            border-bottom-width: 2px;
+            display: block;
+        }
     }
 
 
