@@ -72,6 +72,7 @@
     }
 
     // RTL
+    &[dir='rtl'] .k-notification-wrap,
     .k-rtl .k-notification-wrap {
         padding-left: $notification-padding-end;
         padding-right: $notification-padding-x;
@@ -92,14 +93,16 @@
         }
     }
 
-    .k-rtl {
-        .k-notification-group .k-notification-wrap {
-            padding-left: $notification-padding-x;
-        }
+    .k-notification-container {
+        &[dir='rtl'] {
+            .k-notification-wrap {
+                padding-left: $notification-padding-x;
+            }
 
-        .k-notification-closable > .k-notification-wrap {
-            padding-left: $notification-padding-end;
-            padding-right: $notification-padding-x;
+            .k-notification-closable > .k-notification-wrap {
+                padding-left: $notification-padding-end;
+                padding-right: $notification-padding-x;
+            }
         }
     }
 }
