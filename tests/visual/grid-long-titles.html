@@ -12,6 +12,10 @@
         .section {
             max-width: 400px;
         }
+
+        .sections-wrapper>.section {
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -19,59 +23,9 @@
 
     <div id="test-area">
 
-        <div class="section">
+        <div class="sections-wrapper">
 
-            <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar" style="height: 60px;">
-                <div class="k-grid-header">
-                    <div class="k-grid-header-wrap k-auto-scrollable">
-                        <table role="grid">
-                            <colgroup>
-                                <col>
-                            </colgroup>
-                            <thead role="rowgroup">
-                                <tr role="row">
-                                    <th scope="col" role="columnheader" class="k-header k-with-icon" data-role="columnmenu">
-                                        <a class="k-header-column-menu" href="#" title="Column Settings" aria-label="Column Settings">
-                                            <span class="k-icon k-i-more-vertical"></span>
-                                        </a>
-                                        Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit
-                                    </th>
-                                </tr>
-                            </thead>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="section">
-
-            <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar" style="height: 60px;">
-                <div class="k-grid-header">
-                    <div class="k-grid-header-wrap k-auto-scrollable">
-                        <table role="grid">
-                            <colgroup>
-                                <col>
-                            </colgroup>
-                            <thead role="rowgroup">
-                                <tr role="row">
-                                    <th scope="col" role="columnheader" class="k-header k-with-icon k-filterable" data-role="filtermenu">
-                                        <a class="k-grid-filter" href="#" title="Filter" aria-label="Filter">
-                                            <span class="k-icon k-i-filter"></span>
-                                        </a>
-                                        Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit
-                                    </th>
-                                </tr>
-                            </thead>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="section">
+            <div class="section">
 
                 <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar" style="height: 60px;">
                     <div class="k-grid-header">
@@ -86,7 +40,7 @@
                                             <a class="k-header-column-menu" href="#" title="Column Settings" aria-label="Column Settings">
                                                 <span class="k-icon k-i-more-vertical"></span>
                                             </a>
-                                            <a class="k-link" href="#">Sortable Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
+                                            Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit
                                         </th>
                                     </tr>
                                 </thead>
@@ -96,6 +50,36 @@
                 </div>
 
             </div>
+
+            <div class="section k-rtl">
+
+                <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar" style="height: 60px;">
+                    <div class="k-grid-header">
+                        <div class="k-grid-header-wrap k-auto-scrollable">
+                            <table role="grid">
+                                <colgroup>
+                                    <col>
+                                </colgroup>
+                                <thead role="rowgroup">
+                                    <tr role="row">
+                                        <th scope="col" role="columnheader" class="k-header k-with-icon" data-role="columnmenu">
+                                            <a class="k-header-column-menu" href="#" title="Column Settings" aria-label="Column Settings">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </a>
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Column Menu
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="sections-wrapper">
 
             <div class="section">
 
@@ -112,7 +96,7 @@
                                             <a class="k-grid-filter" href="#" title="Filter" aria-label="Filter">
                                                 <span class="k-icon k-i-filter"></span>
                                             </a>
-                                            <a class="k-link" href="#">Sortable Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
+                                            Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit
                                         </th>
                                     </tr>
                                 </thead>
@@ -122,6 +106,154 @@
                 </div>
 
             </div>
+
+            <div class="section k-rtl">
+
+                <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar" style="height: 60px;">
+                    <div class="k-grid-header">
+                        <div class="k-grid-header-wrap k-auto-scrollable">
+                            <table role="grid">
+                                <colgroup>
+                                    <col>
+                                </colgroup>
+                                <thead role="rowgroup">
+                                    <tr role="row">
+                                        <th scope="col" role="columnheader" class="k-header k-with-icon k-filterable" data-role="filtermenu">
+                                            <a class="k-grid-filter" href="#" title="Filter" aria-label="Filter">
+                                                <span class="k-icon k-i-filter"></span>
+                                            </a>
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Filterable
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="sections-wrapper">
+
+            <div class="section">
+
+                <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar" style="height: 60px;">
+                    <div class="k-grid-header">
+                        <div class="k-grid-header-wrap k-auto-scrollable">
+                            <table role="grid">
+                                <colgroup>
+                                    <col>
+                                </colgroup>
+                                <thead role="rowgroup">
+                                    <tr role="row">
+                                        <th scope="col" role="columnheader" class="k-header k-with-icon" data-role="columnmenu">
+                                            <a class="k-header-column-menu" href="#" title="Column Settings" aria-label="Column Settings">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </a>
+                                            <a class="k-link" href="#">
+                                                Sortable Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit
+                                            </a>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section k-rtl">
+
+                <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar" style="height: 60px;">
+                    <div class="k-grid-header">
+                        <div class="k-grid-header-wrap k-auto-scrollable">
+                            <table role="grid">
+                                <colgroup>
+                                    <col>
+                                </colgroup>
+                                <thead role="rowgroup">
+                                    <tr role="row">
+                                        <th scope="col" role="columnheader" class="k-header k-with-icon" data-role="columnmenu">
+                                            <a class="k-header-column-menu" href="#" title="Column Settings" aria-label="Column Settings">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </a>
+                                            <a class="k-link" href="#">
+                                                Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Sortable Column Menu
+                                            </a>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="sections-wrapper">
+
+            <div class="section">
+
+                <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar" style="height: 60px;">
+                    <div class="k-grid-header">
+                        <div class="k-grid-header-wrap k-auto-scrollable">
+                            <table role="grid">
+                                <colgroup>
+                                    <col>
+                                </colgroup>
+                                <thead role="rowgroup">
+                                    <tr role="row">
+                                        <th scope="col" role="columnheader" class="k-header k-with-icon k-filterable" data-role="filtermenu">
+                                            <a class="k-grid-filter" href="#" title="Filter" aria-label="Filter">
+                                                <span class="k-icon k-i-filter"></span>
+                                            </a>
+                                            <a class="k-link" href="#">
+                                                Sortable Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit
+                                            </a>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section k-rtl">
+
+                <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar" style="height: 60px;">
+                    <div class="k-grid-header">
+                        <div class="k-grid-header-wrap k-auto-scrollable">
+                            <table role="grid">
+                                <colgroup>
+                                    <col>
+                                </colgroup>
+                                <thead role="rowgroup">
+                                    <tr role="row">
+                                        <th scope="col" role="columnheader" class="k-header k-with-icon k-filterable" data-role="filtermenu">
+                                            <a class="k-grid-filter" href="#" title="Filter" aria-label="Filter">
+                                                <span class="k-icon k-i-filter"></span>
+                                            </a>
+                                            <a class="k-link" href="#">
+                                                Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Sortable Filterable
+                                            </a>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
