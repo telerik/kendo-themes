@@ -263,8 +263,8 @@
                     }
                 }
 
-                .k-with-icon > .k-link,
-                .k-filterable > .k-link {
+                .k-with-icon,
+                .k-filterable {
                     padding-left: $grid-filterable-icon-spacing;
                     padding-right: $grid-cell-padding-x;
                 }
@@ -581,8 +581,8 @@
             outline: 0;
         }
 
-        .k-with-icon > .k-link,
-        .k-filterable > .k-link {
+        .k-with-icon,
+        .k-filterable {
             padding-right: $grid-filterable-icon-spacing;
         }
 
