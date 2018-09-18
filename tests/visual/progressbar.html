@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-typography">
 <head>
     <title>Progressbar</title>
     <meta charset="utf-8" />
@@ -8,108 +8,275 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-        div[data-role='progressbar'] {
-            margin: 10px;
-        }
         .k-progressbar-indeterminate,
         .k-progressbar-indeterminate::before,
         .k-progressbar-indeterminate::after {
             /* Comment if you need to preview the indeterminate animation */
             animation: none !important;
         }
+        #test-area {
+            max-width: 1024px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        #test-area::after { display: none; }
+
+        .subgrid-horizontal {
+            display: grid;
+            grid-template-columns: auto 1fr 1fr;
+            grid-gap: 20px;
+        }
+        .subgrid-vertical {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+            justify-items: center;
+        }
     </style>
 </head>
 
 <body>
     <div id="test-area">
-        <div id="pb" data-role="progressbar" class="k-widget k-progressbar k-progressbar-horizontal">
-            <span class="k-progress-status-wrap">
-                <span class="k-progress-status">10</span>
-            </span>
-            <div class="k-state-selected" style="width: 10%;">
-                <span class="k-progress-status-wrap" style="width: 1000%;">
-                    <span class="k-progress-status">10</span>
+        <div class="subgrid-horizontal">
+            <span></span>
+            <span>Normal</span>
+            <span>Chunk</span>
+
+            <span>Partial</span>
+            <div class="k-widget k-progressbar k-progressbar-horizontal">
+                <span class="k-progress-status-wrap">
+                    <span class="k-progress-status">10%</span>
+                </span>
+                <div class="k-state-selected" style="width: 10%;">
+                    <span class="k-progress-status-wrap" style="width: 1000%;">
+                        <span class="k-progress-status">10%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="k-widget k-progressbar k-progressbar-horizontal">
+                <ul class="k-reset">
+                    <li class="k-item k-first k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-state-default" style="width: 20%;"></li>
+                    <li class="k-item k-state-default" style="width: 20%;"></li>
+                    <li class="k-item k-state-default k-last" style="width: 20%;"></li>
+                </ul>
+            </div>
+
+            <span>100%</span>
+            <div class="k-widget k-progressbar k-progressbar-horizontal">
+                <span class="k-progress-status-wrap">
+                    <span class="k-progress-status">100%</span>
+                </span>
+                <div class="k-state-selected k-complete" style="width: 100%;">
+                    <span class="k-progress-status-wrap" style="width: 100%;">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="k-widget k-progressbar k-progressbar-horizontal">
+                <ul class="k-reset">
+                    <li class="k-item k-first k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-state-selected k-last" style="width: 20%;"></li>
+                </ul>
+            </div>
+
+            <span>Reversed</span>
+            <div class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
+                <span class="k-progress-status-wrap">
+                    <span class="k-progress-status">10%</span>
+                </span>
+                <div class="k-state-selected" style="width: 10%;">
+                    <span class="k-progress-status-wrap" style="width: 1000%;">
+                        <span class="k-progress-status">10%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
+                <ul class="k-reset">
+                    <li class="k-item k-state-default k-first" style="width: 20%;"></li>
+                    <li class="k-item k-state-default" style="width: 20%;"></li>
+                    <li class="k-item k-state-default" style="width: 20%;"></li>
+                    <li class="k-item k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-last k-state-selected" style="width: 20%;"></li>
+                </ul>
+            </div>
+
+            <span>R 100%</span>
+            <div class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
+                <span class="k-progress-status-wrap">
+                    <span class="k-progress-status">100%</span>
+                </span>
+                <div class="k-state-selected k-complete" style="width: 100%;">
+                    <span class="k-progress-status-wrap" style="width: 100%;">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
+                <ul class="k-reset">
+                    <li class="k-item k-state-selected k-first" style="width: 20%;"></li>
+                    <li class="k-item k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-last k-state-selected" style="width: 20%;"></li>
+                </ul>
+            </div>
+
+            <span>RTL</span>
+            <div dir="rtl" class="k-widget k-progressbar k-progressbar-horizontal">
+                <span class="k-progress-status-wrap">
+                    <span class="k-progress-status">10%</span>
+                </span>
+                <div class="k-state-selected" style="width: 10%;">
+                    <span class="k-progress-status-wrap" style="width: 1000%;">
+                        <span class="k-progress-status">10%</span>
+                    </span>
+                </div>
+            </div>
+            <div dir="rtl" class="k-widget k-progressbar k-progressbar-horizontal">
+                <ul class="k-reset">
+                    <li class="k-item k-first k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-state-default" style="width: 20%;"></li>
+                    <li class="k-item k-state-default" style="width: 20%;"></li>
+                    <li class="k-item k-state-default k-last" style="width: 20%;"></li>
+                </ul>
+            </div>
+
+            <span>RTL 100%</span>
+            <div dir="rtl" class="k-widget k-progressbar k-progressbar-horizontal">
+                <span class="k-progress-status-wrap">
+                    <span class="k-progress-status">100%</span>
+                </span>
+                <div class="k-state-selected" style="width: 100%;">
+                    <span class="k-progress-status-wrap" style="width: 100%;">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
+            </div>
+            <div dir="rtl" class="k-widget k-progressbar k-progressbar-horizontal">
+                <ul class="k-reset">
+                    <li class="k-item k-first k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-state-selected" style="width: 20%;"></li>
+                    <li class="k-item k-state-selected k-last" style="width: 20%;"></li>
+                </ul>
+            </div>
+
+            <span></span>
+            <span>LTR</span>
+            <span>RTL</span>
+            <span>Indeterminate</span>
+            <div class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-indeterminate">
+                <span class="k-progress-status-wrap">
+                    <span class="k-progress-status">0</span>
+                </span>
+            </div>
+            <div dir="rtl" class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-indeterminate">
+                <span class="k-progress-status-wrap">
+                    <span class="k-progress-status">0</span>
                 </span>
             </div>
         </div>
-        <div id="pb-chunk" data-role="progressbar" class="k-widget k-progressbar k-progressbar-horizontal">
-            <ul class="k-reset">
-                <li class="k-item k-first k-state-selected" style="width: 20%;"></li>
-                <li class="k-item k-state-selected" style="width: 20%;"></li>
-                <li class="k-item k-state-default" style="width: 20%;"></li>
-                <li class="k-item k-state-default" style="width: 20%;"></li>
-                <li class="k-item k-state-default k-last" style="width: 20%;"></li>
-            </ul>
-        </div>
-        <br />
-        <div id="pbr" data-role="progressbar" class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
-            <span class="k-progress-status-wrap">
-                <span class="k-progress-status">10</span>
-            </span>
-            <div class="k-state-selected" style="width: 10%;">
-                <span class="k-progress-status-wrap" style="width: 1000%;">
-                    <span class="k-progress-status">10</span>
+
+        <div class="subgrid-vertical">
+            <span>Partial</span>
+            <span>100%</span>
+            <span>Chunk</span>
+            <span>Ch 100%</span>
+            <span>Reversed</span>
+            <span>R 100%</span>
+            <span>R ch</span>
+            <span>R ch 100%</span>
+            <span>Indeterminate</span>
+
+            <div class="k-widget k-progressbar k-progressbar-vertical">
+                <span class="k-progress-status-wrap">
+                    <span class="k-progress-status">20%</span>
+                </span>
+                <div class="k-state-selected" style="height: 20%;">
+                    <span class="k-progress-status-wrap" style="height: 500%;">
+                        <span class="k-progress-status">20%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="k-widget k-progressbar k-progressbar-vertical">
+                <span class="k-progress-status-wrap">
+                    <span class="k-progress-status">100%</span>
+                </span>
+                <div class="k-state-selected k-complete" style="height: 100%;">
+                    <span class="k-progress-status-wrap" style="height: 100%;">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="k-widget k-progressbar k-progressbar-vertical">
+                <ul class="k-reset">
+                    <li class="k-item k-state-default k-first" style="height: 20%;"></li>
+                    <li class="k-item k-state-default" style="height: 20%;"></li>
+                    <li class="k-item k-state-selected" style="height: 20%;"></li>
+                    <li class="k-item k-state-selected" style="height: 20%;"></li>
+                    <li class="k-item k-last k-state-selected" style="height: 20%;"></li>
+                </ul>
+            </div>
+            <div class="k-widget k-progressbar k-progressbar-vertical">
+                <ul class="k-reset">
+                    <li class="k-item k-state-selected k-first" style="height: 20%;"></li>
+                    <li class="k-item k-state-selected" style="height: 20%;"></li>
+                    <li class="k-item k-state-selected" style="height: 20%;"></li>
+                    <li class="k-item k-state-selected" style="height: 20%;"></li>
+                    <li class="k-item k-last k-state-selected" style="height: 20%;"></li>
+                </ul>
+            </div>
+            <div class="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse">
+                <span class="k-progress-status-wrap">
+                    <span class="k-progress-status">95%</span>
+                </span>
+                <div class="k-state-selected" style="height: 95%;">
+                    <span class="k-progress-status-wrap" style="height: 105.263%;">
+                        <span class="k-progress-status">95%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse">
+                <span class="k-progress-status-wrap">
+                    <span class="k-progress-status">100%</span>
+                </span>
+                <div class="k-state-selected k-complete" style="height: 100%;">
+                    <span class="k-progress-status-wrap" style="height: 100%;">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse">
+                <ul class="k-reset">
+                    <li class="k-item k-first k-state-selected" style="height: 20%;"></li>
+                    <li class="k-item k-state-selected" style="height: 20%;"></li>
+                    <li class="k-item k-state-selected" style="height: 20%;"></li>
+                    <li class="k-item k-state-default" style="height: 20%;"></li>
+                    <li class="k-item k-state-default k-last" style="height: 20%;"></li>
+                </ul>
+            </div>
+            <div class="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse">
+                <ul class="k-reset">
+                    <li class="k-item k-first k-state-selected" style="height: 20%;"></li>
+                    <li class="k-item k-state-selected" style="height: 20%;"></li>
+                    <li class="k-item k-state-selected" style="height: 20%;"></li>
+                    <li class="k-item k-state-selected" style="height: 20%;"></li>
+                    <li class="k-item k-state-selected k-last" style="height: 20%;"></li>
+                </ul>
+            </div>
+            <div class="k-widget k-progressbar k-progressbar-vertical k-progressbar-indeterminate">
+                <span class="k-progress-status-wrap">
+                    <span class="k-progress-status">0</span>
                 </span>
             </div>
-        </div>
-        <div id="pbr-chunk" data-role="progressbar" class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
-            <ul class="k-reset">
-                <li class="k-item k-state-default k-first" style="width: 20%;"></li>
-                <li class="k-item k-state-default" style="width: 20%;"></li>
-                <li class="k-item k-state-default" style="width: 20%;"></li>
-                <li class="k-item k-state-selected" style="width: 20%;"></li>
-                <li class="k-item k-last k-state-selected" style="width: 20%;"></li>
-            </ul>
-        </div>
-        <hr />
-        <div id="pbv" data-role="progressbar" class="k-widget k-progressbar k-progressbar-vertical">
-            <span class="k-progress-status-wrap">
-                <span class="k-progress-status">20</span>
-            </span>
-            <div class="k-state-selected" style="height: 20%;">
-                <span class="k-progress-status-wrap" style="height: 500%;">
-                    <span class="k-progress-status">20</span>
-                </span>
-            </div>
-        </div>
-        <div id="pbv-chunk" data-role="progressbar" class="k-widget k-progressbar k-progressbar-vertical">
-            <ul class="k-reset">
-                <li class="k-item k-state-default k-first" style="height: 20%;"></li>
-                <li class="k-item k-state-default" style="height: 20%;"></li>
-                <li class="k-item k-state-selected" style="height: 20%;"></li>
-                <li class="k-item k-state-selected" style="height: 20%;"></li>
-                <li class="k-item k-last k-state-selected" style="height: 20%;"></li>
-            </ul>
-        </div>
-        <div id="progressbar" data-role="progressbar" class="k-widget k-progressbar k-progressbar-vertical k-progressbar-indeterminate">
-            <span class="k-progress-status-wrap">
-                <span class="k-progress-status">0</span>
-            </span>
-        </div>
-        <div id="pbvr" data-role="progressbar" class="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse">
-            <span class="k-progress-status-wrap">
-                <span class="k-progress-status">98</span>
-            </span>
-            <div class="k-state-selected" style="height: 98%;">
-                <span class="k-progress-status-wrap" style="height: 102.041%;">
-                    <span class="k-progress-status">98</span>
-                </span>
-            </div>
-        </div>
-        <div id="pbvr-chunk" data-role="progressbar" class="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse">
-            <ul class="k-reset">
-                <li class="k-item k-first k-state-selected" style="height: 20%;"></li>
-                <li class="k-item k-state-selected" style="height: 20%;"></li>
-                <li class="k-item k-state-selected" style="height: 20%;"></li>
-                <li class="k-item k-state-default" style="height: 20%;"></li>
-                <li class="k-item k-state-default k-last" style="height: 20%;"></li>
-            </ul>
-        </div>
-        <hr />
-        <div id="progressBar" data-role="progressbar" class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-indeterminate">
-            <span class="k-progress-status-wrap">
-                <span class="k-progress-status">0</span>
-            </span>
         </div>
     </div>
 </body>
