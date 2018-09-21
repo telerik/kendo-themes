@@ -1,0 +1,57 @@
+@include exports("window/theme") {
+
+    .k-window {
+        @include border-radius();
+        border-color: $window-border;
+        color: $window-text;
+        background-color: $window-bg;
+    }
+
+    // Titlebar
+    .k-window-titlebar {
+        border-color: $window-titlebar-border;
+        color: $window-titlebar-text;
+        background-color: $window-titlebar-bg;
+    }
+
+    // Window actions
+    .k-window-actions {
+        margin-top: -$window-titlebar-padding-y;
+        margin-bottom: -$window-titlebar-padding-y;
+    }
+    .k-window-action {
+        margin: 0 0 0 ( $spacer / 2 );
+        padding: $window-titlebar-padding-y $window-titlebar-padding-x;
+        width: 1em;
+        height: 1em;
+        border-width: 0;
+        opacity: .5;
+    }
+    .k-window-action:hover {
+        opacity: .75;
+    }
+    .k-button.k-window-action {
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+
+    // Content
+    .k-window-content {
+        border-color: inherit;
+        background: none;
+    }
+
+}
+
+
+
+
+@include exports("popup-edit-form/layout") {
+
+    .k-popup-edit-form .k-edit-buttons {
+        border-color: $window-titlebar-border;
+    }
+
+}

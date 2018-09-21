@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Slider</title>
+
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="../dist/all.css" />
+
+	<script src="http://localhost/kendo/dist/js/jquery.min.js"></script>
+	<script src="http://localhost/kendo/dist/js/kendo.all.min.js"></script>
+	<style>
+	.slider-h {
+		width: 500px;
+	}
+	.slider-h .k-slider {
+		width: 100%;
+	}
+	.slider-v {
+		margin-top: 20px;
+		height: 240px;
+	}
+	.slider-v .k-slider {
+		height: 100%;
+	}
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Slider</legend>
+
+		<div class="slider-h">
+			<input id="slider" value="0" />
+		</div>
+
+		<div class="slider-v">
+			<input id="slider-v" value="0" />
+		</div>
+	</div>
+
+
+	<script>
+	$(document).ready(function() {
+
+		var slider = $("#slider").kendoSlider({
+			min: 0,
+			max: 10,
+			smallStep: 1,
+			largeStep: 2
+		}).data("kendoSlider");
+
+		var sliderv = $("#slider-v").kendoSlider({
+			orientation: "vertical",
+			min: 0,
+			max: 10,
+			smallStep: 1,
+			largeStep: 2
+		}).data("kendoSlider");
+
+		slider.wrapper.find( ".k-icon" ).html( "" );
+		sliderv.wrapper.find( ".k-icon" ).html( "" );
+
+	});
+	</script>
+
+
+</body>
+</html>

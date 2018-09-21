@@ -1,0 +1,62 @@
+@include exports("slider/theme") {
+
+    $slider-bg: $progressbar-bg !default;
+    $slider-selected-bg: $progressbar-fill-bg !default;
+
+    .k-slider {
+
+        .k-button {
+            border-radius: 50%;
+
+            &:active,
+            &.k-state-active {
+                box-shadow: $button-focused-shadow;
+            }
+        }
+
+        .k-slider-track {
+            @include border-radius();
+            background-color: $slider-bg;
+        }
+        .k-slider-selection {
+            @include border-radius();
+            background-color: $slider-selected-bg;
+        }
+
+
+        // Drag handle
+        .k-draghandle {
+            @include appearance( primary-button );
+            border-radius: 50%;
+
+            &:hover {
+                @include appearance( hovered-primary-button );
+            }
+
+            &:active,
+            &.k-pressed {
+                @include appearance( pressed-primary-button );
+                box-shadow: $primary-button-pressed-shadow;
+            }
+
+            &:focus,
+            &.k-state-focused {
+                box-shadow: $primary-button-focused-shadow;
+            }
+        }
+    }
+
+    .k-slider-horizontal .k-tick {
+        background-image: url(map-get($data-uris, 'slider-h.gif'));
+    }
+    .k-slider-vertical .k-tick {
+        background-image: url(map-get($data-uris, 'slider-v.gif'));
+    }
+
+    .k-slider-wrap {
+        &:focus {
+            outline: none;
+        }
+    }
+
+}

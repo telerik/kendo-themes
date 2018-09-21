@@ -1,0 +1,12 @@
+$menu-bg: $header-bg !default;
+$menu-text: rgba( $header-text, .5 ) !default;
+$menu-hover-text: rgba( $header-text, .7 ) !default;
+$menu-expanded-text: rgba( $header-text, .9 ) !default;
+$menu-focused-shadow: inset 0 0 0 3px rgba( $header-text, .15 ) !default;
+
+$menu-scrolling-bg: $header-bg !default;
+$menu-scrolling-border: $header-border !default;
+$menu-scrolling-icon: rgba( $header-text, .5 ) !default;
+$menu-scrolling-icon-hover: rgba( $header-text, .7 ) !default;
+
+@import "~@progress/kendo-theme-default/scss/menu/theme";

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Inputs</title>
+
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="../dist/all.css" />
+
+	<script src="http://localhost/kendo/dist/js/jquery.min.js"></script>
+	<script src="http://localhost/kendo/dist/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	.w20p { display: inline-block; width: 20%; }
+	.input-group.w20p { display: inline-table; }
+	.k-animation-container {
+		height: 200px;
+		position: relative;
+	}
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Input</legend>
+		<input type="text" class="w20p form-control" />
+		<input type="text" class="w20p form-control" />
+		<input type="text" class="w20p form-control focused" />
+		<input type="text" class="w20p form-control" disabled="disabled" />
+		<hr />
+		<input type="text" class="w20p k-textbox" />
+		<input type="text" class="w20p k-textbox k-state-hover" />
+		<input type="text" class="w20p k-textbox k-state-focus" />
+		<input type="text" class="w20p k-textbox k-disabled" />
+		<hr />
+		<input type="text" class="w20p k-textbox k-compact" />
+		<span class="k-compact"><input type="text" class="w20p k-textbox" /></span>
+		<hr />
+	</div>
+
+
+</body>
+</html>

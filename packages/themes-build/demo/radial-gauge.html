@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Radial gauge</title>
+
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="../dist/all.css" />
+
+	<script src="http://localhost/kendo/dist/js/jquery.min.js"></script>
+	<script src="http://localhost/kendo/dist/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Radial gauge</legend>
+
+		<div data-role="radialgauge"
+			data-pointer="{ value: 40 }"
+			></div>
+	</div>
+
+
+	<script>
+	kendo.init( $(".container") );
+	</script>
+
+
+</body>
+</html>

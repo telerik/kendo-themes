@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Dialog</title>
+
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width" />
+
+
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="../dist/all.css" />
+
+	<script src="http://localhost/kendo/dist/js/jquery.min.js"></script>
+	<script src="http://localhost/kendo/dist/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	/*.k-window {
+		width: 400px;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		top: 0 !important;
+		left: 0 !important;
+	}*/
+	</style>
+</head>
+<body>
+
+
+	<div class="container" id="window-container">
+		<legend>Window</legend>
+		<div class="modal" style="position: relative; display: block;">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+						<h4 class="modal-title">Modal title</h4>
+					</div>
+					<div class="modal-body">
+						<p>One fine body…</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+
+		<div id="dialog-target">
+			<p>Window content</p>
+		</div>
+		<!-- <div class="k-compact" data-role="dialog"
+			data-title="Dialog">
+			<p>Window content</p>
+		</div> -->
+	</div>
+
+
+	<script>
+
+	var dialog = $('#dialog-target').kendoDialog({
+		width: "600px",
+		height: "200px",
+		title: "Software Update",
+		closable: true,
+		modal: true,
+		content: "<p>A new version of <strong>Kendo UI</strong> is available. Would you like to download and install it now?<p>",
+		actions: [
+			{ text: 'Skip this version' },
+			{ text: 'Remind me later' },
+			{ text: 'Install update', primary: true }
+		],
+		close: function () {}
+	}).data("kendoDialog");
+
+	kendo.init( $(".container") );
+
+	// Massage
+	$(".k-font-icon").addClass("k-icon").html("");
+	</script>
+
+
+</body>
+</html>

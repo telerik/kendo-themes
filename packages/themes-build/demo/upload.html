@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Upload</title>
+
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="../dist/all.css" />
+
+	<script src="http://localhost/kendo/dist/js/jquery.min.js"></script>
+	<script src="http://localhost/kendo/dist/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	.k-window {
+		width: 400px;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		top: 0 !important;
+		left: 0 !important;
+	}
+	</style>
+</head>
+<body>
+
+
+	<div class="container" id="window-container">
+		<legend>Upload</legend>
+		<input type="file" data-role="upload" />
+		<input type="file" data-role="upload" data-async="{saveUrl:'save'}" />
+	</div>
+
+
+	<script>
+	kendo.init( $(".container") );
+
+	// Massage
+	$(".k-icon").html("");
+	$(".k-i-close").addClass("k-i-x");
+	</script>
+
+
+</body>
+</html>

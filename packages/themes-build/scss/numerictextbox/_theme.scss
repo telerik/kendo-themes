@@ -1,0 +1,39 @@
+@include exports("numerictextbox/theme") {
+    // Numeric
+    .k-numerictextbox {
+
+        // Normal state
+        .k-numeric-wrap {
+            @include appearance( input );
+            transition: $transition;
+        }
+        .k-select {
+            @include appearance( button );
+            transition: $transition;
+        }
+
+        // Hovered state
+        .k-state-hover {
+            @include appearance( hovered-input );
+
+            .k-select {
+                @include appearance( hovered-button );
+            }
+        }
+
+        // Focused state
+        .k-state-focused {
+            @include appearance( focused-input );
+        }
+
+        // Selected state
+        .k-link.k-state-selected {
+            @include appearance( pressed-button );
+        }
+
+        .k-numeric-wrap.k-state-invalid {
+            border-color: $error;
+            color: $error;
+        }
+    }
+}

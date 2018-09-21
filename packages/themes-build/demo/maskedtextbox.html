@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Masked textbox</title>
+
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="../dist/all.css" />
+
+	<script src="http://localhost/kendo/dist/js/jquery.min.js"></script>
+	<script src="http://localhost/kendo/dist/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Masked textbox</legend>
+		<input data-role="maskedtextbox" data-mask="(999) 000-0000" value="555 123 4567" />
+		<input data-role="maskedtextbox" data-mask="0000 0000 0000 0000" value="1234 1234 1234 1234" />
+		<input data-role="maskedtextbox" data-mask="000-00-0000" value="003-12-3456" />
+		<input data-role="maskedtextbox" data-mask="L0L 0LL" value="W1N 1AC"/>
+	</div>
+
+
+	<script>
+	kendo.init( $(".container") );
+	</script>
+
+
+</body>
+</html>

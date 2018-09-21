@@ -1,0 +1,43 @@
+{
+  "name": "@progress/kendo-theme-default",
+  "description": "Build utility for @progress/kendo-themes",
+  "version": "2.14.0",
+  "author": "Progress",
+  "license": "Apache-2.0",
+  "keywords": [
+    "Kendo UI",
+    "Build",
+    "Theme"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telerik/kendo-themes.git"
+  },
+  "publishConfig": {
+    "access": "private"
+  },
+  "scripts": {
+    "lint": "sass-lint -v -c ./sass-lint.yml",
+    "api": "sassdoc ./scss/",
+    "api-check": "npm run api && git diff --exit-code --quiet -- docs/ || (echo -e '\\033[0;31mERROR: API docs are out of date' && exit 1)",
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack --optimize-minimize --bail",
+    "watch": "webpack --watch",
+    "test": "npm run lint && npm run build && npm run api-check",
+    "prepublishOnly": "bash ./build/embed-dependencies 'bootstrap' '@progress/kendo-theme-default' && npm run build",
+    "postpublish": "rm -rf modules && git checkout scss"
+  },
+  "peerDependencies": {
+    "bootstrap": "^4.0.0"
+  },
+  "dependencies": {
+    "@progress/kendo-theme-default": "^2.56.0"
+  },
+  "devDependencies": {
+    "bootstrap": "4.0.0",
+    "sass-lint": "^1.7.0",
+    "sassdoc": "^2.1.20",
+    "webpack": "^1.13.1"
+  }
+}

@@ -1,0 +1,36 @@
+@include exports('action-buttons/theme') {
+
+    .k-action-buttons {
+
+        .k-button:first-child { @include border-radius( 0 0 0 $border-radius ); }
+        .k-button:last-child { @include border-radius( 0 0 $border-radius 0 ); }
+
+        .k-button {
+            color: inherit;
+
+            &:hover {
+                @include appearance( hovered-button );
+            }
+
+            &:active {
+                @include appearance( pressed-button );
+            }
+        }
+
+        .k-primary {
+            color: $accent;
+
+            &:hover {
+                @include appearance( hovered-primary-button );
+            }
+
+            &:active {
+                @include appearance( pressed-primary-button );
+            }
+        }
+    }
+
+    .k-popup .k-action-buttons {
+        margin-bottom: -$popup-padding-y;
+    }
+}

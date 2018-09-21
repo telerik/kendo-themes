@@ -1,0 +1,11 @@
+@include exports("dialog/theme") {
+
+    .k-dialog {}
+
+
+    // Buttons
+    .k-dialog-buttongroup {
+        border-color: $window-titlebar-border;
+    }
+
+}

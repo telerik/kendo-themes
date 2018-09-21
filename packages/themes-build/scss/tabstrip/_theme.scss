@@ -1,0 +1,55 @@
+@include exports("tabstrip/theme") {
+
+    .k-tabstrip {
+
+        .k-tabstrip-items {
+            border-color: $tab-item-border;
+        }
+
+        .k-item {
+            color: $tab-item-text;
+        }
+        .k-item:hover,
+        .k-item.k-state-hover {
+            color: $tab-item-hovered-text;
+            border-color: $tab-item-hovered-border;
+        }
+        .k-item.k-state-active {
+            color: $tab-item-selected-text;
+            background-color: $tab-item-selected-bg;
+            border-color: $tab-item-selected-border;
+        }
+    }
+
+
+    // Tabstrip variants
+    .k-tabstrip-top {
+
+        .k-item.k-state-hover,
+        .k-item.k-state-active {
+            border-bottom-color: transparent;
+        }
+    }
+    .k-tabstrip-bottom {
+
+        .k-item.k-state-hover,
+        .k-item.k-state-active {
+            border-top-color: transparent;
+        }
+    }
+    .k-tabstrip-left {
+
+        .k-item.k-state-hover,
+        .k-item.k-state-active {
+            border-right-color: transparent;
+        }
+    }
+    .k-tabstrip-right {
+
+        .k-item.k-state-hover,
+        .k-item.k-state-active {
+            border-left-color: transparent;
+        }
+    }
+
+}

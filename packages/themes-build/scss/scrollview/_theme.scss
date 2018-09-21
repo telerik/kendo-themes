@@ -1,0 +1,35 @@
+@include exports("scrollview/theme") {
+
+    .k-scrollview {}
+
+    .k-pages,
+    .k-scrollview-pageable {
+        margin-left: $carousel-control-width;
+        margin-right: $carousel-control-width;
+        width: auto;
+        left: 0;
+        right: 0;
+
+        > li {
+            margin-right: $carousel-indicator-spacer;
+            margin-left: $carousel-indicator-spacer;
+            padding: 0;
+            max-width: $carousel-indicator-width;
+            height: $carousel-indicator-height;
+            border-width: 0;
+            border-radius: 0;
+            flex: 1 0 auto;
+            position: relative;
+        }
+    }
+
+    .k-pages > li,
+    .k-scrollview-pageable > li.k-button {
+        background-image: none;
+        background-color: rgba($carousel-indicator-active-bg, .5);
+    }
+    .k-pages > li.k-current-page {
+        background-color: $carousel-indicator-active-bg;
+    }
+
+}

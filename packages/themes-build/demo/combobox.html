@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Combobox</title>
+
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="../dist/all.css" />
+
+	<script src="http://localhost/kendo/dist/js/jquery.min.js"></script>
+	<script src="http://localhost/kendo/dist/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	.w20p { display: inline-block; width: 20%; }
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Combobox</legend>
+
+		<select id="size" placeholder="Select..." data-role="combobox">
+			<option>X-Small</option>
+			<option>Small</option>
+			<option>Medium</option>
+			<option>Large</option>
+			<option>X-Large</option>
+			<option>2X-Large</option>
+		</select>
+
+		<span class="k-compact">
+			<select placeholder="Select..." data-role="combobox">
+				<option>X-Small</option>
+				<option>Small</option>
+				<option>Medium</option>
+				<option>Large</option>
+				<option>X-Large</option>
+				<option>2X-Large</option>
+			</select>
+		</span>
+	</div>
+
+
+	<script>
+	kendo.init( $(".container") );
+	$("#size").data("kendoComboBox").open();
+	</script>
+
+
+</body>
+</html>

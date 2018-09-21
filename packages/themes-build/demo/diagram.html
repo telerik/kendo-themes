@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Diagram</title>
+
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="../dist/all.css" />
+
+	<script src="http://localhost/kendo/dist/js/jquery.min.js"></script>
+	<script src="http://localhost/kendo/dist/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<legend>Diagram</legend>
+
+		<div id="diagram" data-role="diagram"></div>
+	</div>
+
+
+	<script>
+        function createDiagram() {
+                    var element = $("#diagram").kendoDiagram({});
+                    var diagram = element.data("kendoDiagram");
+                    var shape1 = diagram.addShape({x: 100, y: 100});
+                    var shape2 = diagram.addShape({ x: 300, y: 100 });
+                    diagram.connect(shape1, shape2);
+                }
+
+        $(document).ready(function () {
+            createDiagram();
+            var Point = kendo.dataviz.diagram.Point;
+            var diagram = $("#diagram").data("kendoDiagram");
+            var viewModel = kendo.observable({
+                newShapeX: 0,
+                newShapeY: 0,
+                fromShapeIndex: 0,
+                toShapeIndex: 0,
+                selectShapeIndex: 0,
+                zoom: 1,
+                panX: 0,
+                panY: 0,
+                addShape: function () {
+                    diagram.addShape({ x: this.get("newShapeX"), y: this.get("newShapeY") });
+                },
+                addConnection: function () {
+                    var shapes = diagram.shapes;
+                    var total = shapes.length;
+                    var fromIndex = this.get("fromShapeIndex");
+                    var toIndex = this.get("toShapeIndex");
+                    if (fromIndex < total && toIndex < total) {
+                        diagram.connect(shapes[fromIndex], shapes[toIndex]);
+                    }
+                },
+                remove: function () {
+                    diagram.remove(diagram.select());
+                },
+                select: function () {
+                    diagram.select(diagram.shapes[this.get("selectShapeIndex")]);
+                },
+                zoomDiagram: function () {
+                    diagram.zoom(this.get("zoom"));
+                },
+                pan: function () {
+                    diagram.pan(new Point(this.get("panX"), this.get("panY")));
+                }
+            });
+        });
+	</script>
+
+
+</body>
+
+</html>

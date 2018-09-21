@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Time picker</title>
+
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="../dist/all.css" />
+
+	<script src="http://localhost/kendo/dist/js/jquery.min.js"></script>
+	<script src="http://localhost/kendo/dist/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Time picker</legend>
+		<input type="date" value="10:00 AM" data-role="timepicker" />
+	</div>
+
+
+	<script>
+	kendo.init( $(".container") );
+
+	$( ".k-icon" ).html( "" );
+	</script>
+
+
+</body>
+</html>

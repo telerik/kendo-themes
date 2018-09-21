@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Pie charts</title>
+
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="../dist/all.css" />
+
+	<script src="http://localhost/kendo/dist/js/jquery.min.js"></script>
+	<script src="http://localhost/kendo/dist/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Pie charts</legend>
+
+		<div data-role="chart"
+			data-series-defaults="{
+				type: 'pie'
+			}"
+			data-series="[
+				{ data: [3.907, 7.943, 7.848, 9.284, 9.801, 3.890, 8.238, 9.552, 6.855] },
+				{ data: [-0.253, 0.362, -3.519, 1.799, 3.343, 0.843, 2.877, -5.416, 5.590] }
+			]"
+			data-tooltip="{
+				visible: true
+			}"
+			></div>
+	</div>
+
+
+	<script>
+	kendo.init( $(".container") );
+	</script>
+
+
+</body>
+</html>

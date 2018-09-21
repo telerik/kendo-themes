@@ -1,0 +1,105 @@
+$enable-bootstrap-overrides: true !default;
+$theme-colors: () !default;
+
+// sass-lint:disable indentation
+// @if $enable-bootstrap-overrides {
+
+    $white:    #ffffff !default;
+    $gray-100: #f8f9fa !default;
+    $gray-200: #e9ecef !default;
+    $gray-900: #212529 !default;
+    $black:    #000000 !default;
+
+    $blue:     #007bff !default;
+    $cyan:     #17a2b8 !default;
+    $green:    #28a745 !default;
+    $yellow:   #ffc107 !default;
+    $red:      #dc3545 !default;
+
+    $accent: $blue !default;
+    $primary: $accent !default;
+    $secondary: #e4e7eb !default;
+    $info: $cyan !default;
+    $success: $green !default;
+    $warning: $yellow !default;
+    $error: $red !default;
+    $danger: $error !default;
+
+    $theme-colors: map-merge((
+        "primary": $primary,
+        "secondary": $secondary,
+        "info": $info,
+        "success": $success,
+        "warning": $warning,
+        "danger": $danger
+    ), $theme-colors);
+
+    $body-bg: $white !default;
+    $body-color: contrast-yiq($body-bg, $gray-900) !default;
+
+    $component-bg: $body-bg !default;
+    $component-color: contrast-yiq($component-bg, $gray-900) !default;
+    $component-border-color: rgba(contrast-yiq($component-bg, $gray-900), .125) !default;
+    $component-active-bg: $primary !default;
+    $component-active-color: contrast-yiq($component-active-bg);
+
+    $card-bg: $component-bg !default;
+    $card-color: $component-color !default;
+    $card-border-color: rgba(contrast-yiq($card-bg, $gray-900), .125) !default;
+    $card-cap-bg: $gray-100 !default;
+    $card-cap-color: $card-color !default;
+    $card-cap-border-color: rgba(contrast-yiq($card-bg, $gray-900), .125) !default;
+
+    $input-bg: $component-bg !default;
+    $input-color: $component-color !default;
+    $input-border-color: rgba(contrast-yiq($input-bg, $gray-900), .15) !default;
+
+    $list-group-bg: $component-bg !default;
+    $list-group-color: $component-color !default;
+    $list-group-hover-bg: try-darken( $list-group-bg, 5% ) !default;
+    $list-group-hover-color: $list-group-color !default;
+
+    $dropdown-bg: $component-bg !default;
+    $dropdown-color: $component-color !default;
+    $dropdown-border-color: rgba(contrast-yiq($dropdown-bg, $gray-900), .15) !default;
+
+    $dropdown-link-color: contrast-yiq($dropdown-bg, $gray-900) !default;
+    $dropdown-link-hover-color: try-darken($dropdown-link-color, 5%) !default;
+    $dropdown-link-hover-bg: try-darken( $dropdown-bg, 5% ) !default;
+
+    $nav-tabs-border-color: $component-border-color !default;
+    $nav-tabs-link-active-bg: $component-bg !default;
+    $nav-tabs-link-active-color: $component-color !default;
+    $nav-tabs-link-active-border-color: $component-border-color !default;
+
+    $pagination-bg: $component-bg !default;
+    $pagination-color: $accent !default;
+    $pagination-border-color: $component-border-color !default;
+    $pagination-hover-bg: darken($pagination-bg, 8%) !default;
+    $pagination-hover-border-color: $pagination-border-color !default;
+    $pagination-active-color: $component-active-color !default;
+    $pagination-active-bg: $component-active-bg !default;
+    $pagination-active-border-color: $pagination-active-bg !default;
+
+    $pagination-disabled-bg: $pagination-bg !default;
+    $pagination-disabled-color: grayscale($pagination-color) !default;
+
+    $table-bg: $component-bg !default;
+    $table-color: $component-color !default;
+    $table-border-color: rgba(contrast-yiq($table-bg, $gray-900), .125) !default;
+
+    $modal-content-bg: $component-bg !default;
+    $modal-content-color: $component-color !default;
+    $modal-content-border-color: $component-border-color !default;
+    $modal-header-bg: $modal-content-bg !default;
+    $modal-header-color: $modal-content-color !default;
+    $modal-header-border-color: $component-border-color !default;
+
+    $custom-control-indicator-bg: try-lighten( $input-border-color, 6.7 ) !default;
+
+    $progress-bg: $gray-200 !default;
+    $progress-color: contrast-yiq($progress-bg, $gray-900) !default;
+    $progress-bar-bg: $primary !default;
+    $progress-bar-color: contrast-yiq($progress-bar-bg, $gray-900) !default;
+// }
+// sass-lint:enable indentation

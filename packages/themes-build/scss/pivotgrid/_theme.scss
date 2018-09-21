@@ -1,0 +1,75 @@
+@include exports("pivotgrid/theme") {
+
+    $pivotgrid-alt-bg: $header-bg !default;
+    $pivotgrid-chrome-border: $border-color !default;
+
+    $pivotgrid-container-bg: $header-bg !default;
+    $pivotgrid-row-headers-bg: darken( $header-bg, 3 ) !default;
+
+    //.k-alt,
+    .k-pivot-toolbar,
+    .k-pivot-layout > tbody > tr:first-child > td:first-child {
+        background-color: $pivotgrid-alt-bg;
+    }
+    .k-pivot-toolbar {
+        padding: $toolbar-padding-y;
+    }
+
+    .k-fieldselector {
+        background-color: $pivotgrid-container-bg;
+    }
+    .k-fieldselector .k-list-container {
+        background-color: $panel-bg;
+    }
+
+    .k-pivot-toolbar {
+        border-color: $grid-header-border;
+    }
+    .k-pivot-table,
+    .k-fieldselector .k-list-container,
+    .k-fieldselector .k-columns > div,
+    .k-pivot-rowheaders > .k-grid td:first-child,
+    .k-pivot-table .k-grid-header .k-header.k-first {
+        border-color: $pivotgrid-chrome-border;
+    }
+
+    .k-pivot-rowheaders .k-alt .k-alt,
+    .k-header.k-alt {
+        background-color: $pivotgrid-row-headers-bg;
+    }
+
+    .k-pivot-toolbar .k-button,
+    .k-fieldselector .k-list li.k-item {
+        @include appearance( button );
+
+        &:hover,
+        &.k-state-hover {
+            @include appearance( hovered-button );
+        }
+
+        // Pressed state
+        &:active,
+        &.k-state-active {
+            @include appearance( pressed-button );
+            box-shadow: $button-pressed-shadow;
+        }
+
+        // Focused state
+        &:focus,
+        &.k-state-focused {
+            box-shadow: $button-focused-shadow;
+        }
+    }
+
+    // Loading indicator
+    .k-fieldselector {
+        .k-i-loading {
+            border-color: $header-bg;
+        }
+
+        .k-i-loading::before,
+        .k-i-loading::after {
+            background-color: $header-bg;
+        }
+    }
+}

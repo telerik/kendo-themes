@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Splitter</title>
+
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="../dist/all.css" />
+
+	<script src="http://localhost/kendo/dist/js/jquery.min.js"></script>
+	<script src="http://localhost/kendo/dist/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	.w20p { display: inline-block; width: 20%; }
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Splitter</legend>
+
+		<div id="vertical">
+			<div id="top-pane">
+				<div id="horizontal" style="height: 100%; width: 100%;">
+					<div id="left-pane">
+						<div class="pane-content">
+							<h3>Inner splitter / left pane</h3>
+							<p>Resizable and collapsible.</p>
+						</div>
+					</div>
+					<div id="center-pane">
+						<div class="pane-content">
+							<h3>Inner splitter / center pane</h3>
+							<p>Resizable only.</p>
+						</div>
+					</div>
+					<div id="right-pane">
+						<div class="pane-content">
+							<h3>Inner splitter / right pane</h3>
+							<p>Resizable and collapsible.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="middle-pane">
+				<div class="pane-content">
+					<h3>Outer splitter / middle pane</h3>
+					<p>Resizable only.</p>
+				</div>
+			</div>
+			<div id="bottom-pane">
+				<div class="pane-content">
+					<h3>Outer splitter / bottom pane</h3>
+					<p>Non-resizable and non-collapsible.</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<script>
+	$("#vertical").kendoSplitter({
+		orientation: "vertical",
+		panes: [
+			{ collapsible: false },
+			{ collapsible: false, size: "100px" },
+			{ collapsible: false, resizable: false, size: "100px" }
+		]
+	});
+
+	$("#horizontal").kendoSplitter({
+		panes: [
+			{ collapsible: true },
+			{ collapsible: false },
+			{ collapsible: true}
+		]
+	});
+	</script>
+
+
+</body>
+</html>

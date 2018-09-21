@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Multiselect</title>
+
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="../dist/all.css" />
+
+	<script src="http://localhost/kendo/dist/js/jquery.min.js"></script>
+	<script src="http://localhost/kendo/dist/js/kendo.all.min.js"></script>
+
+	<style type="text/css">
+	.w20p { display: inline-block; width: 20%; }
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<legend>Multiselect</legend>
+
+		<hr />
+		<div class="w20p k-widget k-multiselect">
+			<div class="k-multiselect-wrap k-floatwrap">
+				<ul class="k-reset">
+					<li class="k-button"><span>Item</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+					<li class="k-button k-state-hover"><span>Item</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+				</ul>
+				<input style="width: 25px;" class="k-input" />
+				<span class="k-icon k-loading k-loading-hidden"></span>
+			</div>
+		</div>
+		<span class="w20p k-widget k-multiselect k-state-hover"><input type="text" class="k-input" /></span>
+		<span class="w20p k-widget k-multiselect k-state-focus"><input type="text" class="k-input" /></span>
+		<span class="w20p k-widget k-multiselect k-disabled"><input type="text" class="k-input" /></span>
+
+		<hr />
+
+		<select id="size" multiple="multiple" placeholder="Select size..." style="width: 500px">
+			<option>X-Small</option>
+			<option>Small</option>
+			<option selected="selected">Medium</option>
+			<option>Large</option>
+			<option disabled="disabled">X-Large</option>
+			<option>2X-Large</option>
+		</select>
+
+		<select id="size-compact" multiple="multiple" placeholder="Select..." style="width: 500px">
+			<option>X-Small</option>
+			<option>Small</option>
+			<option selected="selected">Medium</option>
+			<option>Large</option>
+			<option disabled="disabled">X-Large</option>
+			<option>2X-Large</option>
+		</select>
+	</div>
+
+
+	<script>
+	var multiselect = $("#size").kendoMultiSelect().data("kendoMultiSelect");
+
+	$("#size-compact").kendoMultiSelect().data("kendoMultiSelect").wrapper.addClass( "k-compact" );
+
+
+	// Prep
+	window.setTimeout(function() {
+
+		multiselect.wrapper.find( ".k-i-close" ).html("").addClass( "k-i-x" );
+
+		multiselect.open();
+
+		multiselect.list.find("li").eq(1).addClass( "k-state-hover" );
+		multiselect.list.find("li").eq(2).addClass( "k-state-selected" );
+		multiselect.list.find("li").eq(3).addClass( "k-state-focused" );
+		multiselect.list.find("li").eq(4).addClass( "k-state-disabled" );
+
+	}, 100);
+	</script>
+
+
+</body>
+</html>
