@@ -492,6 +492,36 @@ $grid-sorting-indicator-text: $accent !default;
 $grid-focused-shadow: $list-item-focused-shadow !default;
 
 
+// Treeview
+$treeview-padding-x: 0 !default;
+$treeview-padding-y: 0 !default;
+$treeview-line-height: $form-line-height !default;
+
+$treeview-indent: 16px !default;
+
+$treeview-item-padding-x: $button-padding-x !default;
+$treeview-item-padding-y: $button-padding-y !default;
+$treeview-item-border-width: 0 !default;
+$treeview-item-border-radius: 0 !default;
+
+$treeview-bg: null !default;
+$treeview-text: $widget-text;
+$treeview-border: null;
+
+$treeview-item-hovered-text: $hovered-text !default;
+$treeview-item-hovered-bg: $hovered-bg !default;
+$treeview-item-hovered-border: null !default;
+$treeview-item-hovered-gradient: null !default;
+
+$treeview-item-selected-text: $selected-text !default;
+$treeview-item-selected-bg: $selected-bg !default;
+$treeview-item-selected-border: null !default;
+$treeview-item-selected-gradient: null !default;
+
+$treeview-item-focused-shadow: $focused-shadow !default;
+$treeview-item-selected-focused-shadow: null !default;
+
+
 // Notification
 $notification-padding-x: 8px !default;
 $notification-padding-y: 4px !default;

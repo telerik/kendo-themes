@@ -1,5 +1,24 @@
-$treeview-padding: 2px;
-$treeview-item-padding-y: $button-padding-y !default;
-$treeview-item-padding-x: $button-padding-y !default;
-
 @import "~@progress/kendo-theme-default/scss/treeview/layout";
+
+
+@include exports( "treeview/layout/bootstrap" ) {
+
+    // Base
+    .k-treeview {
+
+        .k-top,
+        .k-mid,
+        .k-bot {
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+
+
+        // Item
+        .k-in {
+            transition: $transition;
+        }
+
+    }
+
+}
