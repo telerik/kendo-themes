@@ -1,23 +1,44 @@
+@include exports("treeview/theme") {
 
-@import "~@progress/kendo-theme-default/scss/treeview/theme";
-
-@include exports('treeview/theme/material') {
+    // Appearance
     .k-treeview {
-        .k-in {
-            &:hover,
-            &.k-state-hover {
-                background: $hovered-bg;
-            }
+        @include fill(
+            $treeview-text,
+            $treeview-bg,
+            $treeview-border
+        );
 
-            &.k-state-selected {
-                color: $accent;
-                background-color: transparent;
 
-                &:hover,
-                &.k-state-hover {
-                    background-color: $hovered-bg;
-                }
-            }
+        // Item
+        .k-in {}
+
+
+        // Interactive states
+        .k-in:hover,
+        .k-in.k-state-hover {
+            @include fill(
+                $treeview-item-hovered-text,
+                $treeview-item-hovered-bg,
+                $treeview-item-hovered-border,
+                $treeview-item-hovered-gradient
+            );
+        }
+        .k-in.k-state-selected {
+            @include fill(
+                $treeview-item-selected-text,
+                $treeview-item-selected-bg,
+                $treeview-item-selected-border,
+                $treeview-item-selected-gradient
+            );
+        }
+        .k-in.k-state-focused {
+            @include fill(
+                $treeview-item-hovered-text,
+                $treeview-item-hovered-bg,
+                $treeview-item-hovered-border,
+                $treeview-item-hovered-gradient
+            );
         }
     }
+
 }

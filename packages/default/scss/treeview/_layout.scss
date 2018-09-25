@@ -1,18 +1,14 @@
-$treeview-padding: 0 !default;
-$treeview-indent: 16px !default;
-$treeview-item-padding-y: $button-padding-y !default;
-$treeview-item-padding-x: $button-padding-x !default;
-
 @include exports("treeview/layout") {
+
     // Base
     .k-treeview {
+        padding: $treeview-padding-y $treeview-padding-x;
         border-width: 0;
         background: none;
-        line-height: $form-line-height;
+        line-height: $treeview-line-height;
         cursor: default;
         overflow: auto;
         white-space: nowrap;
-        padding: $treeview-padding;
 
         .k-content,
         > .k-group,
@@ -49,16 +45,19 @@ $treeview-item-padding-x: $button-padding-x !default;
 
         // Link
         .k-in {
-            @include border-radius();
+            @include border-radius( $treeview-item-border-radius );
             margin: 0;
             padding: $treeview-item-padding-y $treeview-item-padding-x;
-            border: 1px solid transparent;
+            border: $treeview-item-border-width solid transparent;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
             align-content: center;
             vertical-align: middle;
             position: relative;
+        }
+        .k-in.k-state-focused {
+            z-index: 1;
         }
 
         // Expand / collapse

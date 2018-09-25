@@ -4,6 +4,8 @@ $theme-colors: () !default;
 // sass-lint:disable indentation
 // @if $enable-bootstrap-overrides {
 
+    $enable-shadows: true !default;
+
     $white:    #ffffff !default;
     $gray-100: #f8f9fa !default;
     $gray-200: #e9ecef !default;

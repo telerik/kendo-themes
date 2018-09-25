@@ -533,6 +533,36 @@ $grid-sorting-indicator-text: $accent !default;
 $grid-focused-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .08) !default;
 
 
+// Treeview
+$treeview-padding-x: 2px !default;
+$treeview-padding-y: $treeview-padding-x !default;
+$treeview-line-height: $form-line-height !default;
+
+$treeview-indent: 16px !default;
+
+$treeview-item-padding-x: $button-padding-y !default;
+$treeview-item-padding-y: $treeview-item-padding-x !default;
+$treeview-item-border-width: 1px !default;
+$treeview-item-border-radius: $border-radius !default;
+
+$treeview-bg: null !default;
+$treeview-text: $widget-text;
+$treeview-border: null;
+
+$treeview-item-hovered-text: $list-group-hover-color !default;
+$treeview-item-hovered-bg: $list-group-hover-bg !default;
+$treeview-item-hovered-border: $node-hovered-bg !default;
+$treeview-item-hovered-gradient: null !default;
+
+$treeview-item-selected-text: $selected-text !default;
+$treeview-item-selected-bg: $selected-bg !default;
+$treeview-item-selected-border: $treeview-item-selected-bg !default;
+$treeview-item-selected-gradient: null !default;
+
+$treeview-item-focused-shadow: 0 0 0 2px $base-border !default;
+$treeview-item-selected-focused-shadow: 0 0 0 2px rgba( $node-selected-border, .5 ) !default;
+
+
 //Pager
 $pager-text: $pagination-color !default;
 $pager-bg: $pagination-bg !default;
@@ -545,6 +575,7 @@ $pager-hover-border: $pagination-hover-border-color !default;
 $pager-selected-text: $pagination-active-color !default;
 $pager-selected-bg: $pagination-active-bg !default;
 $pager-selected-border: $pagination-active-border-color !default;
+
 
 // Notification
 $notification-padding-x: $alert-padding-x !default;

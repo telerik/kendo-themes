@@ -1,25 +1,42 @@
 @include exports("treeview/theme") {
 
-    $treeview-item-border-width: 0;
-    $treeview-item-border-radius: 0;
-    $treeview-item-focused-shadow: $focused-shadow;
-
     // Appearance
     .k-treeview {
+        @include fill(
+            $treeview-text,
+            $treeview-bg,
+            $treeview-border
+        );
 
-        // Link
-        .k-in {
-            @include border-radius( $treeview-item-border-radius );
-            border-width: $treeview-item-border-width;
-        }
+
+        // Item
+        .k-in {}
+
+
+        // Interactive states
+        .k-in:hover,
         .k-in.k-state-hover {
-            @include appearance( hovered-node );
+            @include fill(
+                $treeview-item-hovered-text,
+                $treeview-item-hovered-bg,
+                $treeview-item-hovered-border,
+                $treeview-item-hovered-gradient
+            );
         }
         .k-in.k-state-selected {
-            @include appearance( selected-node );
+            @include fill(
+                $treeview-item-selected-text,
+                $treeview-item-selected-bg,
+                $treeview-item-selected-border,
+                $treeview-item-selected-gradient
+            );
         }
         .k-in.k-state-focused {
-            box-shadow: $treeview-item-focused-shadow;
+            @include box-shadow( $treeview-item-focused-shadow );
+        }
+        .k-in.k-state-selected.k-state-focused {
+            @include box-shadow( $treeview-item-selected-focused-shadow );
         }
     }
+
 }
