@@ -120,10 +120,12 @@
             justify-content: flex-start;
             left: 0;
             bottom: 0;
+            top: auto;
         }
         .k-progress-status {
             transform: rotate(-90deg) translateX(-100%);
             transform-origin: 0 0;
+            position: absolute;
         }
         > .k-state-selected {
             bottom: 0;
