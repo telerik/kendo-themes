@@ -538,8 +538,8 @@ $treeview-item-border-width: 0 !default;
 $treeview-item-border-radius: 0 !default;
 
 $treeview-bg: null !default;
-$treeview-text: $widget-text;
-$treeview-border: null;
+$treeview-text: $widget-text !default;
+$treeview-border: null !default;
 
 $treeview-item-hovered-text: null !default;
 $treeview-item-hovered-bg: rgba( $treeview-text, .07 ) !default;
@@ -553,6 +553,52 @@ $treeview-item-selected-gradient: null !default;
 
 $treeview-item-focused-shadow: null !default;
 $treeview-item-selected-focused-shadow: null !default;
+
+
+// Panelbar
+$panelbar-padding-x: 0 !default;
+$panelbar-padding-y: 0 !default;
+$panelbar-line-height: (20/14) !default;
+$panelbar-border-width: 1px !default;
+
+$panelbar-header-padding-x: 24px !default;
+$panelbar-header-padding-y: 12px !default;
+
+$panelbar-item-padding-x: $panelbar-header-padding-x !default;
+$panelbar-item-padding-y: 6px !default;
+
+$panelbar-bg: $panel-bg !default;
+$panelbar-text: $panel-text !default;
+$panelbar-border: $panel-border !default;
+
+$panelbar-header-bg: null !default;
+$panelbar-header-text: null !default;
+$panelbar-header-border: null !default;
+$panelbar-header-gradient: null !default;
+
+$panelbar-header-hovered-bg: shade($panelbar-bg) !default;
+$panelbar-header-hovered-text: null !default;
+$panelbar-header-hovered-border: null !default;
+$panelbar-header-hovered-gradient: null !default;
+
+$panelbar-header-selected-bg: null !default;
+$panelbar-header-selected-text: $secondary !default;
+$panelbar-header-selected-border: null !default;
+$panelbar-header-selected-gradient: null !default;
+
+$panelbar-header-focused-shadow: $list-item-focused-shadow !default;
+
+$panelbar-item-hovered-bg: shade($panelbar-bg) !default;
+$panelbar-item-hovered-text: null !default;
+$panelbar-item-hovered-border: null !default;
+$panelbar-item-hovered-gradient: null !default;
+
+$panelbar-item-selected-bg: null !default;
+$panelbar-item-selected-text: $secondary !default;
+$panelbar-item-selected-border: null !default;
+$panelbar-item-selected-gradient: null !default;
+
+$panelbar-item-focused-shadow: $list-item-focused-shadow !default;
 
 
 // Notification

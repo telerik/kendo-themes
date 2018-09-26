@@ -1,10 +1,11 @@
 @include exports('panelbar/theme') {
-    $panelbar-root-hover-bg: darken($widget-bg, 5%);
 
     .k-panelbar {
-        border-color: $panel-border;
-        color: $panel-text;
-        background-color: $panel-bg;
+        @include fill(
+            $panelbar-text,
+            $panelbar-bg,
+            $panelbar-border
+        );
         background-clip: padding-box;
 
         .k-ie11 &,
@@ -13,10 +14,6 @@
             background-clip: border-box;
         }
 
-        .k-content {
-            color: $base-text;
-            background-color: $base-bg;
-        }
 
         // Root
         > .k-item {
@@ -29,75 +26,88 @@
             }
 
             > .k-link {
-                color: $link-text;
+                @include fill(
+                    $panelbar-header-text,
+                    $panelbar-header-bg,
+                    $panelbar-header-border,
+                    $panelbar-header-gradient
+                );
 
                 .k-icon {
-                    color: $base-text;
+                    color: $panelbar-text;
                 }
+            }
+
+            &.k-state-active > .k-link,
+            &.k-state-expanded > .k-link {
+                color: inherit;
+                background-color: transparent;
+                font-weight: 500;
             }
 
             > .k-link:hover,
             > .k-link.k-state-hover {
-                color: $link-hover-text;
-                background-color: $panelbar-root-hover-bg;
+                @include fill(
+                    $panelbar-header-hovered-text,
+                    $panelbar-header-hovered-bg,
+                    $panelbar-header-hovered-border,
+                    $panelbar-header-hovered-gradient
+                );
             }
 
-            > .k-link.k-state-selected:not(.k-state-expanded),
-            > .k-link.k-state-selected:not(.k-state-active) {
-                @include appearance( selected-node );
+            > .k-link.k-state-selected {
+                @include fill(
+                    $panelbar-header-selected-text,
+                    $panelbar-header-selected-bg,
+                    $panelbar-header-selected-border,
+                    $panelbar-header-selected-gradient
+                );
 
                 .k-icon {
-                    color: $selected-text;
+                    color: inherit;
                 }
 
                 &:hover,
                 &.k-state-hover {
-                    color: $selected-hover-color;
-                    background-color: $selected-hover-bg;
-                }
-            }
-
-            &.k-state-expanded > .k-link,
-            &.k-state-active > .k-link {
-                @include appearance( node );
-                font-weight: 500;
-
-                .k-icon {
-                    color: $base-text;
-                }
-
-                &:hover,
-                &.k-state-hover {
-                    @include appearance( hovered-node );
+                    background-color: shade( $panelbar-header-selected-bg );
                 }
             }
 
             > .k-link.k-state-focused {
-                box-shadow: $list-item-focused-shadow;
+                box-shadow: $panelbar-header-focused-shadow;
             }
         }
 
+
         // Sub
         .k-group {
-            color: $base-text;
-            background-color: $base-bg;
 
             > .k-item > .k-link:hover,
             > .k-item > .k-link.k-state-hover {
-                @include appearance( hovered-node );
-
-                &.k-state-selected {
-                    color: $selected-hover-color;
-                    background-color: $selected-hover-bg;
-                }
+                @include fill(
+                    $panelbar-item-hovered-text,
+                    $panelbar-item-hovered-bg,
+                    $panelbar-item-hovered-border,
+                    $panelbar-item-hovered-gradient
+                );
             }
 
             > .k-item > .k-link.k-state-selected {
-                @include appearance( selected-node );
+                @include fill(
+                    $panelbar-item-selected-text,
+                    $panelbar-item-selected-bg,
+                    $panelbar-item-selected-border,
+                    $panelbar-item-selected-gradient
+                );
+
+                &:hover,
+                &.k-state-hover {
+                    background-color: shade( $panelbar-item-selected-bg );
+                }
             }
 
             > .k-item > .k-link.k-state-focused {
-                box-shadow: $list-item-focused-shadow;
+                box-shadow: $panelbar-item-focused-shadow;
             }
 
         }

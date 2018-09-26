@@ -546,8 +546,8 @@ $treeview-item-border-width: 1px !default;
 $treeview-item-border-radius: $border-radius !default;
 
 $treeview-bg: null !default;
-$treeview-text: $widget-text;
-$treeview-border: null;
+$treeview-text: $widget-text !default;
+$treeview-border: null !default;
 
 $treeview-item-hovered-text: $list-group-hover-color !default;
 $treeview-item-hovered-bg: $list-group-hover-bg !default;
@@ -561,6 +561,52 @@ $treeview-item-selected-gradient: null !default;
 
 $treeview-item-focused-shadow: 0 0 0 2px $base-border !default;
 $treeview-item-selected-focused-shadow: 0 0 0 2px rgba( $node-selected-border, .5 ) !default;
+
+
+// Panelbar
+$panelbar-padding-x: 0 !default;
+$panelbar-padding-y: 0 !default;
+$panelbar-line-height: $line-height !default;
+$panelbar-border-width: 1px !default;
+
+$panelbar-header-padding-x: $header-padding-x !default;
+$panelbar-header-padding-y: $header-padding-y !default;
+
+$panelbar-item-padding-x: $list-item-padding-x !default;
+$panelbar-item-padding-y: $list-item-padding-y !default;
+
+$panelbar-bg: $component-bg !default;
+$panelbar-text: $component-text !default;
+$panelbar-border: $component-border !default;
+
+$panelbar-header-bg: $header-bg !default;
+$panelbar-header-text: $header-text !default;
+$panelbar-header-border: $header-border !default;
+$panelbar-header-gradient: $header-gradient !default;
+
+$panelbar-header-hovered-bg: $header-hovered-bg !default;
+$panelbar-header-hovered-text: $header-hovered-text !default;
+$panelbar-header-hovered-border: $header-hovered-border !default;
+$panelbar-header-hovered-gradient: $header-hovered-gradient !default;
+
+$panelbar-header-selected-bg: $header-selected-bg !default;
+$panelbar-header-selected-text: $header-selected-text !default;
+$panelbar-header-selected-border: $header-selected-border !default;
+$panelbar-header-selected-gradient: $header-selected-gradient !default;
+
+$panelbar-header-focused-shadow: $list-item-focused-shadow !default;
+
+$panelbar-item-hovered-bg: shade($panelbar-bg) !default;
+$panelbar-item-hovered-text: null !default;
+$panelbar-item-hovered-border: null !default;
+$panelbar-item-hovered-gradient: null !default;
+
+$panelbar-item-selected-bg: $selected-bg !default;
+$panelbar-item-selected-text: $selected-text !default;
+$panelbar-item-selected-border: null !default;
+$panelbar-item-selected-gradient: null !default;
+
+$panelbar-item-focused-shadow: $list-item-focused-shadow !default;
 
 
 //Pager

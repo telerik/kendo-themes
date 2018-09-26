@@ -1,12 +1,12 @@
-$panelbar-header-padding-x: $header-padding-x !default;
-$panelbar-header-padding-y: $header-padding-y !default;
-
 @include exports("panelbar/layout") {
 
     // Base
     .k-panelbar {
         margin: 0;
         padding: 0;
+        border-width: $panelbar-border-width;
+        border-style: solid;
+        line-height: $panelbar-line-height;
         list-style: none;
 
 
@@ -42,13 +42,17 @@ $panelbar-header-padding-y: $header-padding-y !default;
         .k-group {
             margin: 0;
             padding: 0;
+            border-width: 0;
+            border-color: inherit;
+            color: inherit;
+            background-color: transparent;
             list-style: none;
         }
         .k-group > .k-item {
             display: block;
 
             > .k-link {
-                padding: $list-item-padding-y $list-item-padding-x;
+                padding: $panelbar-item-padding-y $panelbar-item-padding-x;
                 color: inherit;
                 text-decoration: none;
                 display: flex;
@@ -74,9 +78,7 @@ $panelbar-header-padding-y: $header-padding-y !default;
 
         .k-link > .k-image,
         .k-link > .k-sprite {
-            vertical-align: middle;
-            float: left;
-            margin-right: 5px;
+            margin-right: $icon-spacing;
         }
 
         &[dir='rtl'],
@@ -85,6 +87,12 @@ $panelbar-header-padding-y: $header-padding-y !default;
             .k-panelbar-collapse {
                 right: auto;
                 left: $panelbar-header-padding-x;
+            }
+
+            .k-link > .k-image,
+            .k-link > .k-sprite {
+                margin-left: $icon-spacing;
+                margin-right: 0;
             }
         }
     }
