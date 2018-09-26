@@ -81,7 +81,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>$base-gradient</td>
 <td>
     
-    false
+    null
 </td>
 <td>The gradient background of the components' chrome area.
 </td>
@@ -117,7 +117,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>$hovered-gradient</td>
 <td>
     
-    false
+    null
 </td>
 <td>The gradient background of hovered items.
 </td>
@@ -153,7 +153,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>$selected-gradient</td>
 <td>
     
-    false
+    null
 </td>
 <td>The gradient background of selected items.
 </td>
@@ -205,7 +205,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>$button-gradient</td>
 <td>
     
-    false
+    null
 </td>
 <td>The background gradient of the buttons.
 </td>
@@ -241,7 +241,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>$button-hovered-gradient</td>
 <td>
     
-    false
+    null
 </td>
 <td>The background gradient of hovered buttons.
 </td>
@@ -277,7 +277,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>$button-pressed-gradient</td>
 <td>
     
-    false
+    null
 </td>
 <td>The background gradient of pressed buttons.
 </td>
@@ -537,6 +537,32 @@ Used to provide contrast between the background and foreground colors.
     $line-height-base
 </td>
 <td>Line height used along with $font-size.
+</td>
+</tr>
+</table>
+
+
+### Icons
+
+<table class="theme-variables">
+<colgroup>
+<col style="white-space:nowrap; width: 200px" />
+<col style="width: 250px" />
+<col />
+</colgroup>
+<tr>
+<th>Name</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>$icon-font-url</td>
+<td>
+    
+    null
+</td>
+<td>The URL to the icon font that will be used by the theme<br/>
+The default value of `null` embeds the package font with a `data:` URL
 </td>
 </tr>
 </table>

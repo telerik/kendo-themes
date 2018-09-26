@@ -500,6 +500,32 @@ Used to provide contrast between the background and foreground colors.
 </table>
 
 
+### Icons
+
+<table class="theme-variables">
+<colgroup>
+<col style="white-space:nowrap; width: 200px" />
+<col style="width: 250px" />
+<col />
+</colgroup>
+<tr>
+<th>Name</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>$icon-font-url</td>
+<td>
+    
+    null
+</td>
+<td>The URL to the icon font that will be used by the theme<br/>
+The default value of `null` embeds the package font with a `data:` URL
+</td>
+</tr>
+</table>
+
+
 ### Shadows
 
 <table class="theme-variables">
