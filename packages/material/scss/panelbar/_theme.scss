@@ -1,42 +1,87 @@
-@import "~@progress/kendo-theme-default/scss/panelbar/theme";
-
-@include exports('panelbar/theme/material') {
+@include exports('panelbar/theme') {
 
     .k-panelbar {
+        @include fill(
+            $panelbar-text,
+            $panelbar-bg,
+            $panelbar-border
+        );
 
-        .k-group {
-            border-width: 1px 0;
 
-            &:last-of-type {
-                border-width: 1px 0 0 0;
-            }
+        // Root
+        > .k-item {
+            border-color: $header-border;
         }
 
-        .k-item {
-            > .k-link {
-                color: $base-text;
+        > .k-item > .k-link {
+            @include fill(
+                $panelbar-header-text,
+                $panelbar-header-bg,
+                $panelbar-header-border,
+                $panelbar-header-gradient
+            );
+        }
 
-                &:hover,
-                &.k-state-hover {
-                    color: $base-text;
-                }
+        > .k-item > .k-link:hover,
+        > .k-item > .k-link.k-state-hover {
+            @include fill(
+                $panelbar-header-hovered-text,
+                $panelbar-header-hovered-bg,
+                $panelbar-header-hovered-border,
+                $panelbar-header-hovered-gradient
+            );
+        }
+
+        > .k-item > .k-link.k-state-selected {
+            @include fill(
+                $panelbar-header-selected-text,
+                $panelbar-header-selected-bg,
+                $panelbar-header-selected-border,
+                $panelbar-header-selected-gradient
+            );
+        }
+
+        > .k-item > .k-link.k-state-focused {
+            @include fill(
+                $panelbar-header-hovered-text,
+                $panelbar-header-hovered-bg,
+                $panelbar-header-hovered-border,
+                $panelbar-header-hovered-gradient
+            );
+        }
+
+
+        // Sub
+        .k-group {
+
+            > .k-item > .k-link:hover,
+            > .k-item > .k-link.k-state-hover {
+                @include fill(
+                    $panelbar-item-hovered-text,
+                    $panelbar-item-hovered-bg,
+                    $panelbar-item-hovered-border,
+                    $panelbar-item-hovered-gradient
+                );
             }
 
-            > .k-link.k-state-selected:not(.k-state-expanded),
-            > .k-link.k-state-selected:not(.k-state-active) {
-                color: $accent;
-                background-color: transparent;
-
-                &:hover,
-                &.k-state-hover {
-                    color: $accent;
-                    background-color: $hovered-bg;
-                }
-
-                .k-icon {
-                    color: $base-text;
-                }
+            > .k-item > .k-link.k-state-selected {
+                @include fill(
+                    $panelbar-item-selected-text,
+                    $panelbar-item-selected-bg,
+                    $panelbar-item-selected-border,
+                    $panelbar-item-selected-gradient
+                );
             }
+
+            > .k-item > .k-link.k-state-focused {
+                @include fill(
+                    $panelbar-item-hovered-text,
+                    $panelbar-item-hovered-bg,
+                    $panelbar-item-hovered-border,
+                    $panelbar-item-hovered-gradient
+                );
+            }
+
         }
     }
 }

@@ -505,8 +505,8 @@ $treeview-item-border-width: 0 !default;
 $treeview-item-border-radius: 0 !default;
 
 $treeview-bg: null !default;
-$treeview-text: $widget-text;
-$treeview-border: null;
+$treeview-text: $widget-text !default;
+$treeview-border: null !default;
 
 $treeview-item-hovered-text: $hovered-text !default;
 $treeview-item-hovered-bg: $hovered-bg !default;
@@ -520,6 +520,52 @@ $treeview-item-selected-gradient: null !default;
 
 $treeview-item-focused-shadow: $focused-shadow !default;
 $treeview-item-selected-focused-shadow: null !default;
+
+
+// Panelbar
+$panelbar-padding-x: 0 !default;
+$panelbar-padding-y: 0 !default;
+$panelbar-line-height: $line-height !default;
+$panelbar-border-width: 1px !default;
+
+$panelbar-header-padding-x: $header-padding-x !default;
+$panelbar-header-padding-y: $header-padding-y !default;
+
+$panelbar-item-padding-x: $list-item-padding-x !default;
+$panelbar-item-padding-y: $list-item-padding-y !default;
+
+$panelbar-bg: $base-bg !default;
+$panelbar-text: $base-text !default;
+$panelbar-border: $base-border !default;
+
+$panelbar-header-bg: $panel-bg !default;
+$panelbar-header-text: $link-text !default;
+$panelbar-header-border: null !default;
+$panelbar-header-gradient: null !default;
+
+$panelbar-header-hovered-bg: shade($panelbar-header-bg) !default;
+$panelbar-header-hovered-text: $link-hover-text !default;
+$panelbar-header-hovered-border: null !default;
+$panelbar-header-hovered-gradient: null !default;
+
+$panelbar-header-selected-bg: $selected-bg !default;
+$panelbar-header-selected-text: $selected-text !default;
+$panelbar-header-selected-border: null !default;
+$panelbar-header-selected-gradient: null !default;
+
+$panelbar-header-focused-shadow: $list-item-focused-shadow !default;
+
+$panelbar-item-hovered-bg: shade($panelbar-bg) !default;
+$panelbar-item-hovered-text: null !default;
+$panelbar-item-hovered-border: null !default;
+$panelbar-item-hovered-gradient: null !default;
+
+$panelbar-item-selected-bg: $selected-bg !default;
+$panelbar-item-selected-text: $selected-text !default;
+$panelbar-item-selected-border: null !default;
+$panelbar-item-selected-gradient: null !default;
+
+$panelbar-item-focused-shadow: $list-item-focused-shadow !default;
 
 
 // Notification
