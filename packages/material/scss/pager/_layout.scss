@@ -29,5 +29,13 @@ $pager-buttons-padding: 0 !default;
         .k-pager-info {
             margin: 0 $pager-elements-margin-lg;
         }
+
+        // Border radius
+        .k-pager-nav,
+        .k-pager-numbers .k-link,
+        .k-pager-numbers .k-state-selected,
+        > .k-link {
+            border-radius: 50%;
+        }
     }
 }

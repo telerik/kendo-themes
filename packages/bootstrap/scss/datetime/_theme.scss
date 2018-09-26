@@ -186,11 +186,18 @@
         // Normal state
         .k-dateinput-wrap {
             @include appearance( input );
+            transition: $transition;
         }
         .k-select {
             @include appearance( button );
+            transition: $transition;
+        }
 
-            &:hover {
+        // Hovered state
+        .k-state-hover {
+            @include appearance( hovered-input );
+
+            .k-select {
                 @include appearance( hovered-button );
             }
         }
@@ -199,5 +206,11 @@
         .k-state-focused {
             @include appearance( focused-input );
         }
+
+        // Selected state
+        .k-link.k-state-selected {
+            @include appearance( pressed-button );
+        }
+
     }
 }

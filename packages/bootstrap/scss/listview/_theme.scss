@@ -1,1 +1,11 @@
 @import "~@progress/kendo-theme-default/scss/listview/theme";
+
+@include exports("listview/theme/bootstrap") {
+
+    .k-listview {
+        > .k-state-selected {
+            border-color: $selected-border;
+        }
+    }
+
+}
