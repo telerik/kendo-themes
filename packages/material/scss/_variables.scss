@@ -280,7 +280,7 @@ $info: #3f51b5 !default;
 
 $color-level-step: 8% !default;
 
-$invalid-border-color: rgba($error, .5) !default;
+$invalid-border: rgba($error, .5) !default;
 
 $gradient-transparent-to-black: rgba( black, 0), black;
 $gradient-transparent-to-white: rgba( white, 0), white;
@@ -666,9 +666,14 @@ $chart-minor-lines: rgba(0, 0, 0, .04) !default;
 $chart-area-opacity: .8 !default;
 
 // Icons
-$icon-size: 24px;
-$icon-size-lg: 32px;
+$icon-size: 16px !default;
+$icon-size-lg: 32px !default;
 $icon-spacing: 4px !default;
+
+/// The URL to the icon font that will be used by the theme
+/// The default value of `null` embeds the package font with a `data:` URL
+/// @group icons
+$icon-font-url: null !default;
 
 // Disabled mixin variables
 $disabled-filter: grayscale(.1) !default;
@@ -828,5 +833,3 @@ $typography-config: map-merge((
     card-subtitle: map-get($typography-config, body)
 ), $typography-config);
 // sass-lint:enable indentation
-
-@import "~@progress/kendo-theme-default/scss/variables";
