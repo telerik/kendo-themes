@@ -64,14 +64,11 @@
         .k-state-selected:hover {
             border-width: 1px;
             border-style: solid;
-            background-color: $pager-selected-bg;
             border-color: $pager-selected-border;
+            color: $pager-selected-text;
+            background-color: $pager-selected-bg;
             z-index: 2;
             cursor: default;
-
-            &.k-link {
-                color: $pager-selected-text;
-            }
         }
 
     }

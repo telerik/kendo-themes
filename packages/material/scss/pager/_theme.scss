@@ -2,14 +2,3 @@ $pager-text: rgba(0, 0, 0, .54) !default;
 $pager-numbers-text: $base-text !default;
 
 @import "~@progress/kendo-theme-default/scss/pager/theme";
-
-@include exports("pager/theme/material") {
-    .k-pager-wrap {
-        .k-pager-nav,
-        .k-pager-numbers .k-link,
-        .k-pager-numbers .k-state-selected,
-        >.k-link {
-            border-radius: 50%;
-        }
-    }
-}

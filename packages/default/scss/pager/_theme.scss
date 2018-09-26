@@ -20,6 +20,9 @@
         }
 
         .k-state-selected {
+            color: $selected-text;
+            background-color: $selected-bg;
+
             &:focus {
                 box-shadow: none;
             }
