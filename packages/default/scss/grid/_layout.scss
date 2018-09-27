@@ -335,6 +335,12 @@
         .k-grid-content-locked + .k-grid-content {
             box-sizing: content-box;
         }
+
+        .k-grid-content-expander {
+            position: absolute;
+            visibility: hidden;
+            height: 1px;
+        }
     }
 
     // Toolbar
