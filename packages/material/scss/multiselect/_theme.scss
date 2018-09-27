@@ -4,6 +4,8 @@
     $multiselect-token-focused-text: $base-bg !default;
     $multiselect-token-focused-bg: $base-text !default;
     $multiselect-token-disabled-text: rgba( $base-text, .42 ) !default;
+    $multiselect-token-hover-text: $base-bg !default;
+    $multiselect-token-hover-bg: rgba( $base-text, .54 ) !default;
     $multiselect-remove-color: $base-bg !default;
     $multiselect-remove-bg: rgba( $base-text, .4 ) !default;
     $multiselect-remove-hover-color: $multiselect-remove-color !default;
@@ -43,6 +45,18 @@
                 .k-select {
                     color: $multiselect-remove-focused-color;
                     background: $multiselect-remove-focused-bg;
+                }
+            }
+
+            // hover state
+            &.k-state-hover,
+            &:hover {
+                color: $multiselect-token-hover-text;
+                background-color: $multiselect-token-hover-bg;
+
+                .k-select {
+                    color: $multiselect-token-hover-bg;
+                    background: $multiselect-token-hover-text;
                 }
             }
 
