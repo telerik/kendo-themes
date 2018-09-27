@@ -248,7 +248,7 @@ $base-text: $component-color !default;
 /// The border color of the components' chrome area.
 $base-border: try-darken( $base-bg, 3% ) !default;
 /// The gradient background of the components' chrome area.
-$base-gradient: false !default;
+$base-gradient: null !default;
 
 /// The background of hovered items.
 $hovered-bg: try-darken( $base-bg, 3% ) !default;
@@ -257,7 +257,7 @@ $hovered-text: $base-text !default;
 /// The border color of hovered items.
 $hovered-border: try-darken( $base-border, 12% ) !default;
 /// The gradient background of hovered items.
-$hovered-gradient: false !default;
+$hovered-gradient: null !default;
 
 /// The background of selected items.
 $selected-bg: $accent !default;
@@ -266,7 +266,7 @@ $selected-text: contrast-wcag( $selected-bg ) !default;
 /// The border color of selected items.
 $selected-border: try-darken( $selected-bg, 12% ) !default;
 /// The gradient background of selected items.
-$selected-gradient: false !default;
+$selected-gradient: null !default;
 
 $transition: color .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease !default;
 
@@ -311,17 +311,17 @@ $popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !d
 $header-text: $card-cap-color !default;
 $header-bg: $card-cap-bg !default;
 $header-border: try-darken( $header-bg, 9 ) !default;
-$header-gradient: false !default;
+$header-gradient: null !default;
 
 $header-hovered-text: $header-text !default;
 $header-hovered-bg: try-darken( $header-bg, 3 ) !default;
 $header-hovered-border: $header-border !default;
-$header-hovered-gradient: false !default;
+$header-hovered-gradient: null !default;
 
 $header-selected-text: $selected-text !default;
 $header-selected-bg: $selected-bg !default;
 $header-selected-border: $selected-border !default;
-$header-selected-gradient: false !default;
+$header-selected-gradient: null !default;
 
 
 // Button
@@ -340,8 +340,8 @@ $button-border: $button-bg !default;
 
 /// The background gradient of the buttons.
 /// @group buttons
-$button-gradient: false !default;
-$button-shadow: false !default;
+$button-gradient: null !default;
+$button-shadow: null !default;
 
 /// The background of hovered buttons.
 /// @group buttons
@@ -357,8 +357,8 @@ $button-hovered-border: try-darken( $button-border, 10% ) !default;
 
 /// The background gradient of hovered buttons.
 /// @group buttons
-$button-hovered-gradient: false !default;
-$button-hovered-shadow: false !default;
+$button-hovered-gradient: null !default;
+$button-hovered-shadow: null !default;
 
 /// The background color of pressed buttons.
 /// @group buttons
@@ -374,8 +374,8 @@ $button-pressed-border: try-darken( $button-border, 12.5% ) !default;
 
 /// The background gradient of pressed buttons.
 /// @group buttons
-$button-pressed-gradient: false !default;
-$button-pressed-shadow: false !default;
+$button-pressed-gradient: null !default;
+$button-pressed-shadow: null !default;
 
 /// The shadow of focused buttons.
 /// @group buttons
@@ -386,23 +386,23 @@ $button-focused-shadow: 0 0 0 3px rgba($button-border, .5) !default;
 $primary-button-bg: $accent !default;
 $primary-button-text: contrast-wcag( $primary-button-bg ) !default;
 $primary-button-border: $primary-button-bg !default;
-$primary-button-gradient: false !default;
+$primary-button-gradient: null !default;
 
 $primary-button-hovered-bg: try-darken( $primary-button-bg, 7.5% ) !default;
 $primary-button-hovered-text: contrast-wcag( $primary-button-hovered-bg ) !default;
 $primary-button-hovered-border: try-darken( $primary-button-border, 10% ) !default;
-$primary-button-hovered-gradient: false !default;
+$primary-button-hovered-gradient: null !default;
 
 $primary-button-pressed-bg: try-darken( $primary-button-bg, 10% ) !default;
 $primary-button-pressed-text: contrast-wcag( $primary-button-pressed-bg ) !default;
 $primary-button-pressed-border: try-darken( $primary-button-border, 12.5% ) !default;
-$primary-button-pressed-gradient: false !default;
+$primary-button-pressed-gradient: null !default;
 $primary-button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
 
 $primary-button-focused-shadow: 0 0 0 3px rgba($primary-button-border, .5);
 
 $flat-button-hover-opacity: .08 !default;
-$flat-button-focused-opacity: false !default;
+$flat-button-focused-opacity: null !default;
 $flat-button-active-opacity: .16 !default;
 $flat-button-selected-opacity: .2 !default;
 
@@ -411,7 +411,7 @@ $flat-button-selected-opacity: .2 !default;
 $toolbar-text: $header-text !default;
 $toolbar-bg: $header-bg !default;
 $toolbar-border: $header-border !default;
-$toolbar-gradient: false !default;
+$toolbar-gradient: null !default;
 
 
 // Input
@@ -440,17 +440,17 @@ $link-hover-text: $link-hover-color !default;
 $node-text: $base-text !default;
 $node-bg: $base-bg !default;
 $node-border: $base-border !default;
-$node-gradient: false !default;
+$node-gradient: null !default;
 
 $node-hovered-text: $list-group-hover-color !default;
 $node-hovered-bg: $list-group-hover-bg !default;
 $node-hovered-border: $node-hovered-bg !default;
-$node-hovered-gradient: false !default;
+$node-hovered-gradient: null !default;
 
 $node-selected-text: $selected-text !default;
 $node-selected-bg: $selected-bg !default;
 $node-selected-border: $selected-border !default;
-$node-selected-gradient: false !default;
+$node-selected-gradient: null !default;
 
 
 // List item
@@ -720,7 +720,7 @@ $card-padding-x: $card-spacer-x !default;
 $card-padding-y: $card-spacer-y !default;
 $card-border-width: 1px !default;
 $card-border-radius: $card-border-radius !default;
-$card-box-shadow: false !default;
+$card-box-shadow: null !default;
 
 $card-deck-gap: $card-deck-margin !default;
 
@@ -801,9 +801,9 @@ $mediaplayer-border: $panel-border !default;
 
 $mediaplayer-titlebar-padding-x: $header-padding-x !default;
 $mediaplayer-titlebar-padding-y: $header-padding-y !default;
-$mediaplayer-titlebar-bg: false !default;
+$mediaplayer-titlebar-bg: null !default;
 $mediaplayer-titlebar-text: $mediaplayer-bg !default;
-$mediaplayer-titlebar-border: false !default;
+$mediaplayer-titlebar-border: null !default;
 $mediaplayer-titlebar-gradient: rgba( $mediaplayer-text, .7 ), rgba( $mediaplayer-text, 0 ) !default;
 
 $mediaplayer-toolbar-padding-x: $toolbar-padding-x !default;
@@ -825,17 +825,17 @@ $progressbar-animation-timing: $progress-bar-animation-timing !default;
 $progressbar-bg: $progress-bg !default;
 $progressbar-text: $progress-color !default;
 $progressbar-border: transparent !default;
-$progressbar-gradient: false !default;
+$progressbar-gradient: null !default;
 
 $progressbar-fill-bg:  $progress-bar-bg !default;
 $progressbar-fill-text: $progress-bar-color !default;
 $progressbar-fill-border: transparent !default;
-$progressbar-fill-gradient: false !default;
+$progressbar-fill-gradient: null !default;
 
 $progressbar-indeterminate-bg: $progressbar-bg !default;
 $progressbar-indeterminate-text: $progressbar-text !default;
 $progressbar-indeterminate-border: $progressbar-border !default;
-$progressbar-indeterminate-gradient: false !default;
+$progressbar-indeterminate-gradient: null !default;
 
 $progressbar-chunk-border: $bg-color !default;
 
