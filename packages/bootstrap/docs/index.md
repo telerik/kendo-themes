@@ -5,7 +5,7 @@ slug: preview_kendothemebootstrap
 position: 1
 ---
 
-# Overview
+# Bootstrap Theme Overview
 
 The Kendo UI Bootstrap theme is available through the @progress/kendo-theme-bootstrap NPM module.
 
@@ -28,7 +28,7 @@ The following example previews Kendo UI components which are styled with the Boo
 The following example previews Kendo UI components which are styled with the Bootstrap theme.
 {% endplatform_content %}
 {% platform_content react %}
-All of the components demos can be previewed with the `Bootstrap` theme by selecting the Bootstrap theme from the theme choose located on the top right of the page.
+You can apply the Bootstrap theme to all Kendo UI for React examples, which demonstrate the behavior of a component, by selecting the theme from the theme-chooser at the top-right corner of the current page.
 {% endplatform_content %}
 
 {% platform_content angular %}

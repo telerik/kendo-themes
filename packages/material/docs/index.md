@@ -5,7 +5,7 @@ slug: preview_kendothemematerial
 position: 1
 ---
 
-# Overview
+# Material Theme Overview
 
 The Kendo UI Material theme is available through the @progress/kendo-theme-material NPM module.
 
@@ -23,8 +23,6 @@ The Kendo UI Material theme is available through the @progress/kendo-theme-mater
 
 For the Kendo UI Material theme to closely implement the [Material Design Guidelines](https://material.io/guidelines/), provide [the Roboto font family](#toc-fonts) and [configure additional modules](#toc-additional-configuration) in your application.
 
-### Fonts
-
 By default, the Material theme uses the Roboto font family but the font itself is not included in the theme package.
 
 You can add the font to the page from Google Fonts in the following way:
@@ -36,16 +34,20 @@ You can add the font to the page from Google Fonts in the following way:
 </style>
 ```
 
+{% platform_content angular %}
 ### Additional Configuration
 
 The following additional configuration improves the look and feel of the theme in your application:
 
-{% platform_content angular %}
 * Use a [Ripple effect]({% slug overview_ripple %})&mdash;Available through the `kendoRippleContainer` directive from the `@progress/kendo-angular-ripple` NPM module. The `kendoRippleContainer` directive provides the [Material ink ripple effect](https://material.io/guidelines/motion/choreography.html#choreography-radial-reaction) for the Kendo UI components for Angular and is fully compatible with all available Kendo UI themes.
 * Use the [Floating labels]({% slug overview_textbox %}#toc-implementing-floating-labels)&mdash;Available through the `kendo-textbox-container` component from the `@progress/kendo-angular-inputs` NPM module. The [TextBox]({% slug overview_textbox %}) enables you to provide floating labels to `input` elements and Kendo UI components.
 {% endplatform_content %}
 
 {% platform_content react %}
+### Additional Configuration
+
+The following additional configuration improves the look and feel of the theme in your application:
+
 * Use a [Ripple effect]({% slug overview_ripple %})&mdash;Available through the `Ripple` component from the `@progress/kendo-react-ripple` NPM module. The `Ripple` component provides the [Material ink ripple effect](https://material.io/guidelines/motion/choreography.html#choreography-radial-reaction) for the Kendo UI components for React and is fully compatible with all available Kendo UI themes.
 * Use the `floatingLabel` property on components from the [Inputs]({% slug overview_inputs %}) and [DropDowns]({% slug overview_dropdowns %}) packages for React.
 {% endplatform_content %}
@@ -59,7 +61,7 @@ The following example previews Kendo UI components which are styled with the Mat
 The following example previews Kendo UI components which are styled with the Material theme.
 {% endplatform_content %}
 {% platform_content react %}
-All of the components demos can be previewed with the `Material` theme by selecting the Material theme from the theme choose located on the top right of the page.
+You can apply the Material theme to all Kendo UI for React examples, which demonstrate the behavior of a component, by selecting the theme from the theme-chooser at the top-right corner of the current page.
 {% endplatform_content %}
 
 {% platform_content angular %}
@@ -82,4 +84,9 @@ All of the components demos can be previewed with the `Material` theme by select
 {% platform_content react %}
 * [Material Design Guidelines](https://material.io/guidelines/)
 * [Kendo UI Ripple for React]({% slug overview_ripple %})
+{% endplatform_content %}
+
+{% platform_content vue %}
+* [Styling the Kendo UI Components]({% slug themesandstyles %})
+* [Kendo UI Font Icons]({% slug icons %})
 {% endplatform_content %}
