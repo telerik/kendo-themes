@@ -52,16 +52,22 @@ The following additional configuration improves the look and feel of the theme i
 
 ## Preview
 
-The following example previews Kendo UI components which are styled with the Material theme.
-
-{% theme_preview theme:material %}
 {% platform_content angular %}
-<script async src="{% asset_path theme-preview.js %}"></script>
-{% endplatform_content %}
-{% platform_content react %}
-<script async src="{% asset_path react-theme-preview.js %}"></script>
+The following example previews Kendo UI components which are styled with the Material theme.
 {% endplatform_content %}
 {% platform_content vue %}
+The following example previews Kendo UI components which are styled with the Material theme.
+{% endplatform_content %}
+{% platform_content react %}
+All of the components demos can be previewed with the `Material` theme by selecting the Material theme from the theme choose located on the top right of the page.
+{% endplatform_content %}
+
+{% platform_content angular %}
+{% theme_preview theme:material %}
+<script async src="{% asset_path theme-preview.js %}"></script>
+{% endplatform_content %}
+{% platform_content vue %}
+{% theme_preview theme:material %}
 <script async src="{% asset_path vue-theme-preview.js %}"></script>
 {% endplatform_content %}
 
