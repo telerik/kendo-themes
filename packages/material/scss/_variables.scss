@@ -701,9 +701,9 @@ $card-border: $panel-border !default;
 $card-header-padding-x: $card-padding-x !default;
 $card-header-padding-y: $card-padding-y !default;
 $card-header-border-width: 0 !default;
-$card-header-bg: false !default;
-$card-header-text: false !default;
-$card-header-border: false !default;
+$card-header-bg: null !default;
+$card-header-text: null !default;
+$card-header-border: null !default;
 
 $card-body-padding-x: $card-padding-x !default;
 $card-body-padding-y: $card-padding-y !default;
@@ -774,9 +774,9 @@ $mediaplayer-border: $panel-border !default;
 
 $mediaplayer-titlebar-padding-x: $header-padding-x !default;
 $mediaplayer-titlebar-padding-y: $header-padding-y !default;
-$mediaplayer-titlebar-bg: false !default;
+$mediaplayer-titlebar-bg: null !default;
 $mediaplayer-titlebar-text: $mediaplayer-bg !default;
-$mediaplayer-titlebar-border: false !default;
+$mediaplayer-titlebar-border: null !default;
 $mediaplayer-titlebar-gradient: rgba( $mediaplayer-text, .7 ), rgba( $mediaplayer-text, 0 ) !default;
 
 $mediaplayer-toolbar-padding-x: $toolbar-padding-x !default;
@@ -797,17 +797,17 @@ $progressbar-height: 5px !default;
 $progressbar-bg: color-level( $accent, 9 ) !default;
 $progressbar-text: $text-color !default;
 $progressbar-border: transparent !default;
-$progressbar-gradient: false !default;
+$progressbar-gradient: null !default;
 
 $progressbar-fill-bg:  $accent !default;
 $progressbar-fill-text: $progressbar-text !default;
 $progressbar-fill-border: transparent !default;
-$progressbar-fill-gradient: false !default;
+$progressbar-fill-gradient: null !default;
 
 $progressbar-indeterminate-bg: $progressbar-bg !default;
 $progressbar-indeterminate-text: $progressbar-text !default;
 $progressbar-indeterminate-border: $progressbar-border !default;
-$progressbar-indeterminate-gradient: false !default;
+$progressbar-indeterminate-gradient: null !default;
 
 $progressbar-chunk-border: $bg-color !default;
 

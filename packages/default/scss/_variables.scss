@@ -371,7 +371,7 @@ $primary-button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
 $primary-button-focused-shadow: 0 3px 4px 0 rgba($accent, .4) !default;
 
 $flat-button-hover-opacity: .08 !default;
-$flat-button-focused-opacity: false !default;
+$flat-button-focused-opacity: null !default;
 $flat-button-active-opacity: .16 !default;
 $flat-button-selected-opacity: .2 !default;
 
@@ -651,7 +651,7 @@ $card-padding-x: 16px !default;
 $card-padding-y: 12px !default;
 $card-border-width: 1px !default;
 $card-border-radius: 4px !default;
-$card-box-shadow: false !default;
+$card-box-shadow: null !default;
 $card-box-focused-shadow: 0 0 4px 0 rgba(0, 0, 0, .3) !default;
 
 $card-deck-gap: 16px !default;
@@ -736,9 +736,9 @@ $mediaplayer-border: $panel-border !default;
 
 $mediaplayer-titlebar-padding-x: $header-padding-x !default;
 $mediaplayer-titlebar-padding-y: $header-padding-y !default;
-$mediaplayer-titlebar-bg: false !default;
+$mediaplayer-titlebar-bg: null !default;
 $mediaplayer-titlebar-text: $mediaplayer-bg !default;
-$mediaplayer-titlebar-border: false !default;
+$mediaplayer-titlebar-border: null !default;
 $mediaplayer-titlebar-gradient: rgba( $mediaplayer-text, .7 ), rgba( $mediaplayer-text, 0 ) !default;
 
 $mediaplayer-toolbar-padding-x: $toolbar-padding-x !default;
@@ -760,7 +760,7 @@ $progressbar-animation-timing: 1s linear infinite !default;
 $progressbar-bg: $base-bg !default;
 $progressbar-text: $base-text !default;
 $progressbar-border: $base-border !default;
-$progressbar-gradient: false !default;
+$progressbar-gradient: null !default;
 
 $progressbar-fill-bg: $accent !default;
 $progressbar-fill-text: contrast-wcag( $progressbar-fill-bg ) !default;
@@ -770,7 +770,7 @@ $progressbar-fill-gradient: rgba( adjust-hue( $progressbar-fill-bg, 14), 0 ), rg
 $progressbar-indeterminate-bg: $progressbar-bg !default;
 $progressbar-indeterminate-text: $progressbar-text !default;
 $progressbar-indeterminate-border: $progressbar-border !default;
-$progressbar-indeterminate-gradient: false !default;
+$progressbar-indeterminate-gradient: null !default;
 
 $progressbar-chunk-border: $bg-color !default;
 
