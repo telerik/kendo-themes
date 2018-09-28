@@ -5,7 +5,7 @@ slug: preview_kendothemedefault
 position: 1
 ---
 
-# Overview
+# Default Theme Overview
 
 The Kendo UI Default theme is available through the @progress/kendo-theme-default NPM module.
 
@@ -21,16 +21,22 @@ The Kendo UI Default theme is available through the @progress/kendo-theme-defaul
 
 ## Preview
 
-The following example previews Kendo UI components which are styled with the Default theme.
-
-{% theme_preview theme:default %}
 {% platform_content angular %}
-<script async src="{% asset_path theme-preview.js %}"></script>
-{% endplatform_content %}
-{% platform_content react %}
-<script async src="{% asset_path react-theme-preview.js %}"></script>
+The following example previews Kendo UI components which are styled with the Default theme.
 {% endplatform_content %}
 {% platform_content vue %}
+The following example previews Kendo UI components which are styled with the Default theme.
+{% endplatform_content %}
+{% platform_content react %}
+You can apply the Default theme to all Kendo UI for React examples, which demonstrate the behavior of a component, by selecting the theme from the theme-chooser at the top-right corner of the page.
+{% endplatform_content %}
+
+{% platform_content angular %}
+{% theme_preview theme:default %}
+<script async src="{% asset_path theme-preview.js %}"></script>
+{% endplatform_content %}
+{% platform_content vue %}
+{% theme_preview theme:default %}
 <script async src="{% asset_path vue-theme-preview.js %}"></script>
 {% endplatform_content %}
 
