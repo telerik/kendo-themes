@@ -16,6 +16,7 @@ fi
 if [[ $TRAVIS_BRANCH == 'develop' || $TRAVIS_BRANCH == 'master' ]]
 then
   echo 'Refusing to build on (and possibly push to) the master or develop branches'
+  exit 0
 fi
 
 # enable push access
