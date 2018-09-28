@@ -221,23 +221,28 @@
                 border-right-width: 0;
             }
 
-            th,
-            td {
+            th {
+                border-width: 0 $grid-cell-vertical-border-width 1px 0;
+
                 &:first-child {
-                    border-left-width: $grid-cell-vertical-border-width;
+                    border-right-width: 0;
                 }
+            }
 
-                &:last-child {
-                    border-left-width: 0;
+            td {
+                border-width: 0 $grid-cell-vertical-border-width 0 0;
+
+                &:first-child {
+                    border-right-width: 0;
                 }
-
             }
 
             td.k-hierarchy-cell {
-                border-left-width: 0;
+                border-right-width: 0;
             }
-            .k-hierarchy-cell + td:not(:last-child) {
-                border-left-width: $grid-cell-vertical-border-width;
+
+            .k-hierarchy-cell + td {
+                border-right-width: 0;
             }
 
             .k-grid-header,
@@ -248,8 +253,9 @@
 
             .k-grid-header {
                 .k-header {
-                    &:first-child {
-                        border-right-width: 0;
+                    &.k-first {
+                        border-left-width: 0;
+                        border-right-width: $grid-cell-vertical-border-width;
                     }
                 }
 
@@ -263,16 +269,6 @@
                 .k-header-column-menu {
                     right: auto;
                     left: $grid-header-menu-icon-spacing;
-                }
-            }
-
-            .k-filter-row td {
-                &:first-child {
-                    border-left-width: $grid-cell-vertical-border-width;
-                }
-
-                &:last-child {
-                    border-left-width: 0;
                 }
             }
 
@@ -303,6 +299,25 @@
 
             .k-grid-header-locked + .k-grid-header-wrap.k-auto-scrollable {
                 margin-left: 0;
+            }
+
+            .k-group-footer td {
+                border-width: $grid-group-footer-border-y 0;
+            }
+            .k-group-footer .k-group-cell + td {
+                border-right-width: $grid-group-footer-second-cell-border;
+            }
+
+            .k-grid-toolbar {
+
+                .k-button + .k-button {
+                    margin: 0 $grid-toolbar-button-spacing 0 0;
+                }
+            }
+
+            .k-grouping-row .k-icon {
+                margin-left: $icon-size / 2;
+                margin-right: add-two(-1 * $cell-padding-x, $icon-size / 2);
             }
         }
 

@@ -29,6 +29,22 @@
         td {
             border-left-color: transparent;
         }
+
+        &[dir="rtl"],
+        .k-rtl & {
+
+            th,
+            td {
+                border-right-color: transparent;
+            }
+
+            .k-grid-header {
+
+                thead > tr:not(:only-child) > th {
+                    border-right-color: $grid-border;
+                }
+            }
+        }
     }
 
     .k-grid-header {
