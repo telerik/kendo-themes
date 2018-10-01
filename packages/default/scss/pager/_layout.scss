@@ -96,10 +96,10 @@
 
         [dir = "rtl"] &,
         .k-rtl & {
-            .k-i-arrow-e,
-            .k-i-arrow-w,
-            .k-i-seek-e,
-            .k-i-seek-w {
+            .k-i-arrow-end-left,
+            .k-i-arrow-60-left,
+            .k-i-arrow-60-right,
+            .k-i-arrow-end-right {
                 transform: scaleX(-1);
             }
         }
