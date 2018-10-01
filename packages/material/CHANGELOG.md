@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.1"></a>
+## [1.3.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.3.0...@progress/kendo-theme-material@1.3.1) (2018-10-01)
+
+
+### Bug Fixes
+
+* **grid:** Multi-column headers missing rtl border ([5efe3e8](https://github.com/telerik/kendo-themes/commit/5efe3e8))
+
+
+
+
 <a name="1.3.0"></a>
 # 1.3.0 (2018-09-11)
 
