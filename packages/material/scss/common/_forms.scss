@@ -46,6 +46,7 @@ $forms-invalid-color: inherit !default;
         &.k-state-focused,
         .k-state-focused > & {
             border-color: $input-focused-border;
+            border-bottom-width: 2 * $input-border-width;
 
             .k-select {
                 opacity: $icon-focused-opacity;

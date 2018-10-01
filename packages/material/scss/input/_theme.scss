@@ -17,6 +17,7 @@
 
         &:focus {
             border-color: $input-focused-border;
+            border-bottom-width: 2 * $input-border-width;
         }
 
         &:disabled {
