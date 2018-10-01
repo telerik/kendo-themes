@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.14.1"></a>
+## [2.14.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.14.0...@progress/kendo-theme-bootstrap@2.14.1) (2018-10-01)
+
+
+### Bug Fixes
+
+* correct a typo in variable name ([0b1938c](https://github.com/telerik/kendo-themes/commit/0b1938c))
+
+
+
+
 <a name="2.14.0"></a>
 # 2.14.0 (2018-09-11)
 

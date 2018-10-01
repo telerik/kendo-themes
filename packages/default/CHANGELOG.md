@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.57.0"></a>
+# [2.57.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.56.0...@progress/kendo-theme-default@2.57.0) (2018-10-01)
+
+
+### Bug Fixes
+
+* **grid:** Multi-column headers missing rtl border ([5efe3e8](https://github.com/telerik/kendo-themes/commit/5efe3e8))
+
+
+### Features
+
+* **notification:** add angular notification rtl styles ([126ccbe](https://github.com/telerik/kendo-themes/commit/126ccbe))
+
+
+
+
 <a name="2.56.0"></a>
 # 2.56.0 (2018-09-11)
 
