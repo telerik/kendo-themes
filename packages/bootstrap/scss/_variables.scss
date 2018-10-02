@@ -466,18 +466,52 @@ $list-item-selected-bg: $dropdown-link-active-bg !default;
 $list-item-focused-shadow: inset 0 0 0 3px rgba( $list-item-text, .15 );
 
 
-// Tab
-$tab-item-text: $link-text !default;
-$tab-item-bg: transparent !default;
-$tab-item-border: $nav-tabs-border-color !default;
+// Tabstrip
+$tabstrip-wrapper-padding-x: 0 !default;
+$tabstrip-wrapper-padding-y: 0 !default;
+$tabstrip-wrapper-border-width: 0 !default;
 
-$tab-item-hovered-text: $link-hover-text !default;
-$tab-item-hovered-bg: transparent !default;
-$tab-item-hovered-border: $nav-tabs-link-hover-border-color !default;
+$tabstrip-line-height: $line-height !default;
+$tabstrip-border-width: $nav-tabs-border-width !default;
 
-$tab-item-selected-text: $nav-tabs-link-active-color !default;
-$tab-item-selected-bg: $nav-tabs-link-active-bg !default;
-$tab-item-selected-border: $nav-tabs-link-active-border-color !default;
+$tabstrip-item-padding-x: $nav-item-padding-x !default;
+$tabstrip-item-padding-y: $nav-item-padding-y !default;
+$tabstrip-item-border-width: $nav-tabs-border-width !default;
+$tabstrip-item-border-radius: $nav-tabs-border-radius !default;
+$tabstrip-item-gap: $nav-item-margin !default;
+
+$tabstrip-content-padding-x: $tabstrip-item-padding-x !default;
+$tabstrip-content-padding-y: $tabstrip-item-padding-y !default;
+$tabstrip-content-border-width: $nav-tabs-border-width !default;
+
+$tabstrip-wrapper-bg: null !default;
+$tabstrip-wrapper-text: null !default;
+$tabstrip-wrapper-border: null !default;
+
+$tabstrip-bg: null !default;
+$tabstrip-text: $panel-text !default;
+$tabstrip-border: $nav-tabs-border-color !default;
+
+$tabstrip-item-bg: null !default;
+$tabstrip-item-text: $link-text !default;
+$tabstrip-item-border: null !default;
+
+$tabstrip-item-hovered-bg: null !default;
+$tabstrip-item-hovered-text: $link-hover-text !default;
+$tabstrip-item-hovered-border: $nav-tabs-link-hover-border-color !default;
+
+$tabstrip-item-selected-bg: $nav-tabs-link-active-bg !default;
+$tabstrip-item-selected-text: $nav-tabs-link-active-color !default;
+$tabstrip-item-selected-border: $nav-tabs-link-active-border-color !default;
+
+$tabstrip-item-focused-shadow: $list-item-focused-shadow !default;
+
+$tabstrip-content-bg: $panel-bg !default;
+$tabstrip-content-text: $panel-text !default;
+$tabstrip-content-border: $panel-border !default;
+
+$tabstrip-indicator-size: null !default;
+$tabstrip-indicator-color: null !default;
 
 
 // Grid

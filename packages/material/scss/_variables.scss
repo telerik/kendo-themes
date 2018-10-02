@@ -470,6 +470,60 @@ $list-item-selected-bg: $list-item-bg !default;
 $list-item-focused-shadow: none !default;
 
 
+// Tabstrip
+$tabstrip-wrapper-padding-x: 0 !default;
+$tabstrip-wrapper-padding-y: 0 !default;
+$tabstrip-wrapper-border-width: 0 !default;
+
+$tabstrip-line-height: (20 / 14) !default;
+$tabstrip-border-width: 1px !default;
+
+$tabstrip-item-padding-x: 24px !default;
+$tabstrip-item-padding-y: 14px !default;
+$tabstrip-item-border-width: 0 !default;
+$tabstrip-item-border-radius: 0 !default;
+$tabstrip-item-gap: 0 !default;
+
+$tabstrip-content-padding-x: $tabstrip-item-padding-x !default;
+$tabstrip-content-padding-y: $tabstrip-item-padding-y !default;
+$tabstrip-content-border-width: 0 !default;
+
+$tabstrip-wrapper-bg: null !default;
+$tabstrip-wrapper-text: null !default;
+$tabstrip-wrapper-border: null !default;
+
+/// Component background. Set to `transparent` to blend the component with the page.
+/// @group tabstrip
+$tabstrip-bg: null !default;
+/// Component text color. Set to `inherit` to blend the component with the page.
+/// @group tabstrip
+$tabstrip-text: inherit !default;
+$tabstrip-border: $panel-border !default;
+
+$tabstrip-item-bg: null !default;
+$tabstrip-item-text: inherit !default;
+$tabstrip-item-border: null !default;
+
+$tabstrip-item-hovered-bg: null !default;
+$tabstrip-item-hovered-text: inherit !default;
+$tabstrip-item-hovered-border: null !default;
+
+$tabstrip-item-selected-bg: null !default;
+$tabstrip-item-selected-text: inherit !default;
+$tabstrip-item-selected-border: null !default;
+
+$tabstrip-item-focused-shadow: $list-item-focused-shadow !default;
+
+$tabstrip-content-bg: transparent !default;
+$tabstrip-content-text: inherit !default;
+$tabstrip-content-border: transparent !default;
+
+$tabstrip-indicator-size: 2px !default;
+/// Active tab indicator color. Set to `currentColor` to use the text color
+/// @group tabstrip
+$tabstrip-indicator-color: $primary !default;
+
+
 // Grid
 $grid-padding-x: $cell-padding-x !default;
 $grid-padding-y: $cell-padding-y !default;

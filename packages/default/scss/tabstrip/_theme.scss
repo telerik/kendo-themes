@@ -1,89 +1,72 @@
-$tabstrip-border: $panel-border !default;
-$tabstrip-item-text: $link-text !default;
-$tabstrip-item-bg: transparent !default;
-$tabstrip-item-border: transparent !default;
-$tabstrip-item-hovered-text: $link-hover-text !default;
-$tabstrip-item-hovered-bg: transparent !default;
-$tabstrip-item-hovered-border: transparent !default;
-$tabstrip-item-selected-text: $base-text !default;
-$tabstrip-item-selected-bg: $panel-bg !default;
-$tabstrip-item-selected-border: $panel-border !default;
-$tabstrip-content-text: $panel-text !default;
-$tabstrip-content-bg: $panel-bg !default;
-$tabstrip-content-border: $panel-bg !default;
-
 @include exports('tabstrip/theme') {
 
-    .k-tabstrip {
-        border-color: $tabstrip-border;
+    // Wrapper
+    .k-tabstrip-wrapper {
+        @include fill(
+            $tabstrip-wrapper-text,
+            $tabstrip-wrapper-bg,
+            $tabstrip-wrapper-border
+        );
+    }
+
+
+    // Items
+    .k-tabstrip-items {
+        @include fill(
+            $tabstrip-text,
+            $tabstrip-bg,
+            $tabstrip-border
+        );
 
         .k-item {
-            border-color: $tabstrip-item-border;
-            color: $tabstrip-item-text;
-            background-color: $tabstrip-item-bg;
-            background-clip: padding-box;
-
-            .k-ie11 &,
-            .k-edge12 &,
-            .k-edge13 & {
-                background-clip: border-box;
-            }
+            @include fill(
+                $tabstrip-item-text,
+                $tabstrip-item-bg,
+                $tabstrip-item-border
+            );
 
             &:hover,
             &.k-state-hover {
-                border-color: $tabstrip-item-hovered-border;
-                color: $tabstrip-item-hovered-text;
-                background-color: $tabstrip-item-hovered-border;
+                @include fill(
+                    $tabstrip-item-hovered-text,
+                    $tabstrip-item-hovered-bg,
+                    $tabstrip-item-hovered-border
+                );
             }
 
-            &.k-state-active {
-                border-color: $tabstrip-item-selected-border;
-                color: $tabstrip-item-selected-text;
-                background-color: $tabstrip-item-selected-bg;
+            &.k-state-active,
+            &.k-state-selected {
+                @include fill(
+                    $tabstrip-item-selected-text,
+                    $tabstrip-item-selected-bg,
+                    $tabstrip-item-selected-border
+                );
             }
-        }
 
-        > .k-content {
-            border-color: $tabstrip-content-border;
-            color: $tabstrip-content-text;
-            background-color: $tabstrip-content-bg;
-            background-clip: padding-box;
-
-            .k-ie11 &,
-            .k-edge12 &,
-            .k-edge13 & {
-                background-clip: border-box;
+            &.k-state-focused {
+                @include box-shadow( $tabstrip-item-focused-shadow );
             }
         }
+
     }
 
 
-    // Tabstrip variants
-    .k-tabstrip-top {
-        > .k-tabstrip-items {
-            .k-item.k-state-active {
-                border-bottom-color: $tabstrip-item-selected-bg;
-            }
-        }
+    // Content
+    .k-tabstrip > .k-content {
+        @include fill(
+            $tabstrip-content-text,
+            $tabstrip-content-bg,
+            $tabstrip-content-border
+        );
     }
-    .k-tabstrip-bottom {
-        > .k-tabstrip-items {
-            .k-item.k-state-active {
-                border-top-color: $tabstrip-item-selected-bg;
-            }
-        }
-    }
-    .k-tabstrip-left {
-        > .k-tabstrip-items {
-            .k-item.k-state-active {
-                border-right-color: $tabstrip-item-selected-bg;
-            }
-        }
-    }
-    .k-tabstrip-right {
-        > .k-tabstrip-items {
-            .k-item.k-state-active {
-                border-left-color: $tabstrip-item-selected-bg;
+
+
+    // Selected indicator
+    @if ($tabstrip-indicator-size) {
+
+        .k-tabstrip-items {
+            .k-item.k-state-active::after {
+                border-color: $tabstrip-indicator-color;
             }
         }
     }
