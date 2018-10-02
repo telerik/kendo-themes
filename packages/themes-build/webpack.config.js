@@ -6,9 +6,25 @@
  * and passes it through the kendo-common-tasks theme config.
  */
 const glob = require('glob');
-const path = require('path');
 const fs = require('fs');
-
+const path = require('path');
+const _ = require('lodash');
+const merge = require('merge2');
+const named = require('vinyl-named');
+const webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
+const webpackStream = require('webpack-stream');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const cssLoaderPath = require.resolve('css-loader');
+const urlLoaderPath = require.resolve('url-loader');
+const styleLoaderPath = require.resolve('style-loader');
+const sassLoaderPath = require.resolve('sass-loader');
+const jsonLoaderPath = require.resolve('json-loader');
+const autoprefixer = require('autoprefixer');
+const calc = require('postcss-calc');
+const urlResolverPath = require.resolve('resolve-url-loader');
+const postCssLoaderPath = require.resolve('postcss-loader');
 const port = parseInt(process.env.PORT || 3000);
 const devServerPort = port + 1;
 
@@ -51,21 +67,92 @@ const compat = process.argv.indexOf('--env.twbs-compat') > -1;
 if (compat) {
     entry = { 'twbs-compat': './build/twbs-compat.js' };
 }
-
+exports.CDNSassLoader = {
+    test: /\.scss$/,
+    loader: ExtractTextPlugin.extract(styleLoaderPath, [
+        `${cssLoaderPath}?sourceMap`,
+        postCssLoaderPath,
+        sassLoaderPath
+    ])
+};
+const hashedName = "[name].[ext]?[hash]";
+const resourceLoaders = [
+    {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: urlLoaderPath,
+        query: {
+            name: hashedName,
+            limit: 10000
+        }
+    },
+    {
+        test: /\.(woff|woff2)$/,
+        loader: urlLoaderPath,
+        query: {
+            name: hashedName,
+            mimetype: "application/font-woff"
+        }
+    },
+    {
+        test: /\.json$/i,
+        loader: jsonLoaderPath
+    }
+];
+exports.resourceLoaders = resourceLoaders;
+exports.extractCssPlugin = () =>
+    new ExtractTextPlugin("[name].css");
+exports.inlineSassLoader = {
+    test: /\.scss$/,
+    loaders: [
+        styleLoaderPath,
+        cssLoaderPath,
+        postCssLoaderPath,
+        urlResolverPath,
+        `${sassLoaderPath}?sourceMap`
+    ]
+};
 const inDevelopment = process.argv.find(v => v.includes('webpack-dev-server'))
-module.exports = require('@telerik/kendo-common-tasks')
-    .webpackThemeConfig({ extract: true }, {
-        devServer: {
-            hot: true,
-            inline: true,
-            port: devServerPort
-        },
-        module: { loaders: [] },
-        entry: entry,
-        plugins: inDevelopment ? [ new BrowserSync() ] : [],
-        output: {
-            path: 'dist',
-            publicPath: '/dist/',
-            filename: '[name].js'
+const webpackThemeConfig = (_settings, _webpackConfig) => {
+    const options = _webpackConfig ? _settings : {};
+    const webpackConfig = _webpackConfig ? _webpackConfig : _settings;
+
+    const extract = options && options.extract;
+    const sassLoader = extract ? exports.CDNSassLoader : exports.inlineSassLoader;
+    const plugins = extract ? [ exports.extractCssPlugin() ] : [];
+    webpackConfig.plugins.push( new webpack.LoaderOptionsPlugin({
+            options: {
+                sassLoader: {
+                    precision: 10
+                }
+            }
+        })
+    );
+
+    return Object.assign({}, webpackConfig, {
+        plugins: plugins.concat(webpackConfig.plugins || []),
+
+        module: {
+            loaders: _.flatten([
+                webpackConfig.module && webpackConfig.module.loaders,
+                sassLoader,
+                options.stubResources ? stubLoader : resourceLoaders
+            ]),
+            noParse: (webpackConfig.module || {}).noParse
         }
     });
+};
+module.exports = webpackThemeConfig({ extract: true }, {
+    devServer: {
+        hot: true,
+        inline: true,
+        port: devServerPort
+    },
+    module: { loaders: [] },
+    entry: entry,
+    plugins: inDevelopment ? [ new BrowserSync() ] : [],
+    output: {
+        path: path.join(__dirname, './dist'),
+        publicPath: '/dist/',
+        filename: '[name].js'
+    }
+});
