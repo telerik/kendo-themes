@@ -606,30 +606,30 @@ Equivalent to material elevation 24.
 <th>Description</th>
 </tr>
 <tr>
+<td>$tabstrip-bg</td>
+<td>
+    
+    null
+</td>
+<td>Component background. Set to `transparent` to blend the component with the page.
+</td>
+</tr>
+<tr>
+<td>$tabstrip-text</td>
+<td>
+    
+    inherit
+</td>
+<td>Component text color. Set to `inherit` to blend the component with the page.
+</td>
+</tr>
+<tr>
 <td>$tabstrip-indicator-color</td>
 <td>
     
     $primary
 </td>
 <td>Active tab indicator color. Set to `currentColor` to use the text color
-</td>
-</tr>
-<tr>
-<td>$tabstrip-bg</td>
-<td>
-    
-    transparent
-</td>
-<td>Component background. Set to `transparent` to blend the component with the page.
-</td>
-</tr>
-<tr>
-<td>$tabstrip-color</td>
-<td>
-    
-    inherit
-</td>
-<td>Component text color. Set to `inherit` to blend the component with the page.
 </td>
 </tr>
 </table>
