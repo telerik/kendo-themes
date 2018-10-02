@@ -13,6 +13,7 @@ $tabstrip-tab-gap: $nav-item-margin !default;
         > .k-tabstrip-items {
             border: 0 solid transparent;
             border-color: inherit;
+            outline: 0;
             display: flex;
             flex-direction: row;
             flex: 0 0 auto;
