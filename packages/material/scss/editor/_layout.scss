@@ -82,7 +82,6 @@
 
         .k-edit-field {
             width: auto;
-            display: block;
             float: none;
             display: flex;
             flex-direction: row;
@@ -93,6 +92,9 @@
                 width: auto;
                 flex: 1 1 auto;
             }
+        }
+        .k-no-flexbox & .k-edit-field {
+            display: block;
         }
 
         .k-edit-buttons {}
