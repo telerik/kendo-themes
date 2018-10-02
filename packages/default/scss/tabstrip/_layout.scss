@@ -1,17 +1,28 @@
-$tabstrip-tab-padding-x: $nav-item-padding-x !default;
-$tabstrip-tab-padding-y: $nav-item-padding-y !default;
-$tabstrip-tab-gap: $nav-item-margin !default;
-
 @include exports("tabstrip/layout") {
+
+    .k-tabstrip-wrapper {
+        padding: $tabstrip-wrapper-padding-y $tabstrip-wrapper-padding-x;
+        border-width: $tabstrip-wrapper-border-width;
+        border-style: solid;
+        display: flex;
+        flex-direction: column;
+    }
 
     .k-tabstrip {
         border-width: 0;
+        border-color: transparent;
+        color: inherit;
         background-color: transparent;
         display: flex;
         flex-direction: column;
 
-        > .k-tabstrip-items {
-            border: 0 solid transparent;
+        .k-tabstrip-wrapper > & {
+            flex: 1 1 auto;
+        }
+
+        @at-root .k-tabstrip-items {
+            border-width: 0;
+            border-style: solid;
             border-color: inherit;
             outline: 0;
             display: flex;
@@ -22,16 +33,20 @@ $tabstrip-tab-gap: $nav-item-margin !default;
             .k-item {
                 margin: 0;
                 padding: 0;
-                border: 1px solid transparent;
+                border: $tabstrip-item-border-width solid transparent;
                 position: relative;
+                display: flex;
+                flex-direction: row;
+                align-items: stretch;
+                justify-items: stretch;
             }
 
-            .k-item.k-tab-on-top {
+            .k-tab-on-top {
                 z-index: 1;
             }
 
-            .k-item .k-link {
-                padding: $tabstrip-tab-padding-y $tabstrip-tab-padding-x;
+            .k-link {
+                padding: $tabstrip-item-padding-y $tabstrip-item-padding-x;
                 color: inherit;
                 cursor: pointer;
                 display: inline-flex;
@@ -42,15 +57,15 @@ $tabstrip-tab-gap: $nav-item-margin !default;
                 align-items: center;
 
                 &[data-type="remove"] {
-                    padding: $nav-item-padding-y;
+                    padding: $tabstrip-item-padding-y;
                     flex: none;
                 }
             }
         }
 
         > .k-content {
-            padding: $padding-y $padding-x;
-            border-width: 1px;
+            padding: $tabstrip-content-padding-y $tabstrip-content-padding-x;
+            border-width: $tabstrip-content-border-width;
             border-style: solid;
             border-color: inherit;
             display: none;
@@ -63,7 +78,7 @@ $tabstrip-tab-gap: $nav-item-margin !default;
         }
 
         // Loading
-        .k-tabstrip-items .k-loading {
+        @at-root .k-tabstrip-items .k-loading {
             width: 20%;
             height: 0;
             border: 0;
@@ -86,7 +101,7 @@ $tabstrip-tab-gap: $nav-item-margin !default;
             position: relative;
 
             > .k-content {
-                border-width: 1px;
+                border-width: $tabstrip-content-border-width;
             }
 
             > .k-tabstrip-items {
@@ -120,15 +135,15 @@ $tabstrip-tab-gap: $nav-item-margin !default;
     // Tabstrip variants
     .k-tabstrip-top {
         > .k-tabstrip-items {
-            border-bottom-width: 1px;
+            border-bottom-width: $tabstrip-border-width;
 
             .k-item {
-                @include border-top-radius();
-                margin-bottom: -1px;
+                @include border-top-radius( $tabstrip-item-border-radius );
+                margin-bottom: -$tabstrip-border-width;
             }
 
             .k-item + .k-item {
-                margin-left: $tabstrip-tab-gap;
+                margin-left: $tabstrip-item-gap;
             }
 
             .k-item.k-state-active {
@@ -137,21 +152,21 @@ $tabstrip-tab-gap: $nav-item-margin !default;
         }
 
         > .k-content {
-            @include border-bottom-radius();
+            @include border-bottom-radius( $tabstrip-item-border-radius );
             border-top-width: 0;
         }
     }
     .k-tabstrip-bottom {
         > .k-tabstrip-items {
-            border-top-width: 1px;
+            border-top-width: $tabstrip-border-width;
 
             .k-item {
-                @include border-bottom-radius();
-                margin-top: -1px;
+                @include border-bottom-radius( $tabstrip-item-border-radius );
+                margin-top: -$tabstrip-border-width;
             }
 
             .k-item + .k-item {
-                margin-left: $tabstrip-tab-gap;
+                margin-left: $tabstrip-item-gap;
             }
 
             .k-item.k-state-active {
@@ -160,7 +175,7 @@ $tabstrip-tab-gap: $nav-item-margin !default;
         }
 
         > .k-content {
-            @include border-top-radius();
+            @include border-top-radius( $tabstrip-item-border-radius );
             border-bottom-width: 0;
         }
     }
@@ -168,17 +183,17 @@ $tabstrip-tab-gap: $nav-item-margin !default;
         flex-direction: row;
 
         > .k-tabstrip-items {
-            border-right-width: 1px;
+            border-right-width: $tabstrip-border-width;
             display: inline-flex;
             flex-direction: column;
 
             .k-item {
-                @include border-left-radius();
-                margin-right: -1px;
+                @include border-left-radius( $tabstrip-item-border-radius );
+                margin-right: -$tabstrip-border-width;
             }
 
             .k-item + .k-item {
-                margin-top: $tabstrip-tab-gap;
+                margin-top: $tabstrip-item-gap;
             }
 
             .k-item.k-state-active {
@@ -187,7 +202,7 @@ $tabstrip-tab-gap: $nav-item-margin !default;
         }
 
         > .k-content {
-            @include border-right-radius();
+            @include border-right-radius( $tabstrip-item-border-radius );
             // sass-lint:disable no-important
             margin: 0 !important;
             // sass-lint:enable no-important
@@ -199,17 +214,17 @@ $tabstrip-tab-gap: $nav-item-margin !default;
         flex-direction: row-reverse;
 
         > .k-tabstrip-items {
-            border-left-width: 1px;
+            border-left-width: $tabstrip-border-width;
             display: inline-flex;
             flex-direction: column;
 
             .k-item {
-                @include border-right-radius();
-                margin-left: -1px;
+                @include border-right-radius( $tabstrip-item-border-radius );
+                margin-left: -$tabstrip-border-width;
             }
 
             .k-item + .k-item {
-                margin-top: $tabstrip-tab-gap;
+                margin-top: $tabstrip-item-gap;
             }
 
             .k-item.k-state-active {
@@ -218,12 +233,73 @@ $tabstrip-tab-gap: $nav-item-margin !default;
         }
 
         > .k-content {
-            @include border-left-radius();
+            @include border-left-radius( $tabstrip-item-border-radius );
             // sass-lint:disable no-important
             margin: 0 !important;
             // sass-lint:enable no-important
             border-right-width: 0;
         }
+    }
+
+
+    // Selected indicator
+    @if ($tabstrip-indicator-size) {
+
+        .k-tabstrip-items {
+
+            .k-item::after {
+                content: "";
+                border-width: 0;
+                border-style: solid;
+                display: none;
+                position: absolute;
+                z-index: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+
+                // Variants
+                .k-tabstrip-top & {
+                    border-bottom-width: $tabstrip-indicator-size;
+                }
+                .k-tabstrip-bottom & {
+                    border-top-width: $tabstrip-indicator-size;
+                }
+                .k-tabstrip-left & {
+                    border-right-width: $tabstrip-indicator-size;
+                }
+                .k-tabstrip-right & {
+                    border-left-width: $tabstrip-indicator-size;
+                }
+            }
+            .k-item.k-state-active::after {
+                display: block;
+            }
+
+            .k-item > .k-link {
+                z-index: 1;
+            }
+        }
+
+    }
+
+}
+
+
+
+
+@include exports("tabstrip/layout/rtl") {
+
+    .k-tabstrip-left,
+    .k-tabstrip-right {
+
+        .k-rtl &,
+        &[dir="rtl"] {
+            > .k-tabstrip-items { order: 1; }
+            > .k-content { order: 0; }
+        }
+
     }
 
 }
