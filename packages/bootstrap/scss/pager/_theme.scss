@@ -1,7 +1,4 @@
 @include exports("pager/theme") {
-    $pager-form-line-height-em: $form-line-height * 1em !default;
-    $pager-button-padding-y: .5em !default;
-    $pager-buttons-size: calc(#{$pager-form-line-height-em} + 2px) !default; /// icon button size + 2px border (top and bottom)
 
     // Theme
     .k-pager-wrap {
@@ -38,14 +35,6 @@
 
         .k-pager-refresh {
             @include border-radius( $border-radius );
-        }
-
-        .k-link,
-        .k-state-selected {
-            padding: $pager-button-padding-y;
-            width: $pager-buttons-size;
-            height: $pager-buttons-size;
-            line-height: $pager-buttons-size;
         }
 
         .k-dropdown .k-dropdown-wrap {
