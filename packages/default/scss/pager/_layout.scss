@@ -15,10 +15,9 @@
         .k-link,
         .k-state-selected {
             padding: $pager-buttons-padding;
-            width: $pager-buttons-size;
-            height: $pager-buttons-size;
-            line-height: $pager-buttons-size;
-            box-sizing: content-box;
+            width: button-size();
+            height: button-size();
+            box-sizing: border-box;
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -89,6 +88,10 @@
             text-align: right;
             order: 9;
             justify-content: flex-end;
+        }
+
+        .k-widget {
+            font-size: inherit;
         }
 
         [dir = "rtl"] &,
