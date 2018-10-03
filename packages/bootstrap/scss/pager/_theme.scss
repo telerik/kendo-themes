@@ -46,6 +46,26 @@
                 background-color: $pager-hover-bg;
             }
         }
+
+        .k-rtl &,
+        &[dir="rtl"],
+        [dir="rtl"] & {
+            .k-pager-first {
+                @include border-right-radius-only();
+            }
+            .k-pager-last {
+                @include border-left-radius-only();
+            }
+
+            // Spacing
+            .k-pager-nav + .k-pager-nav,
+            .k-pager-nav + .k-pager-numbers,
+            .k-pager-numbers + .k-pager-nav,
+            .k-pager-numbers .k-current-page ~ li + li {
+                margin-right: -1px;
+                margin-left: 0;
+            }
+        }
     }
     .k-pager-numbers {
 
