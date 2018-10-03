@@ -16,6 +16,10 @@
             width: 12.4em;
             display: inline-block;
         }
+        .k-popup {
+            width: 24.8em;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -112,6 +116,26 @@
                             Hovered Item
                         </li><li role="option" class="k-item k-state-selected" aria-selected="true">
                             Selected Item
+                        </li><li role="option" class="k-item k-state-hover k-state-selected" aria-selected="true">
+                            Hovered Selected Item
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="k-popup k-list-container k-reset">
+                <div class="k-group-header">Group</div>
+
+                <div class="k-list-scroller" style="max-height: 200px;">
+                    <ul role="listbox" class="k-list k-reset">
+                        <li role="option" class="k-item">
+                            Item
+                        </li><li role="option" class="k-item k-state-focused">
+                            Focused Item
+                        </li><li role="option" class="k-item k-state-hover">
+                            Hovered Item
+                        </li><li role="option" class="k-item k-state-selected k-first" aria-selected="true">
+                            Selected Item<div class="k-group">Second group</div>
                         </li><li role="option" class="k-item k-state-hover k-state-selected" aria-selected="true">
                             Hovered Selected Item
                         </li>
