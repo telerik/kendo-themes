@@ -1,8 +1,8 @@
 @include exports('input/theme') {
 
     .k-textbox,
-    .k-input.k-textbox,
-    .k-textarea {
+    .k-textarea,
+    .k-input.k-textbox {
         @include appearance( "input" );
         background-clip: padding-box;
 
@@ -12,17 +12,21 @@
             background-clip: border-box;
         }
 
+        // Hovered
         &:hover,
         &.k-state-hover {
             border-color: $input-hovered-border;
         }
 
+        // Focused
         &:focus,
         &.k-state-focus {
             color: $input-focused-text;
             border-color: $input-focused-border;
         }
 
+        // Invalid
+        &.k-invalid,
         &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
@@ -30,7 +34,8 @@
             border-color: $invalid-border;
         }
 
-        &::-moz-selection {
+        // Selection
+        &::selection {
             background-color: $accent;
             color: $accent-contrast;
         }
