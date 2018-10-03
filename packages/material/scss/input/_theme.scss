@@ -2,8 +2,8 @@
     $floating-label-color: rgba(0, 0, 0, .38) !default;
 
     .k-textbox,
-    .k-input.k-textbox,
-    .k-textarea {
+    .k-textarea,
+    .k-input.k-textbox {
         background-color: transparent;
         border-width: 0 0 $input-border-width;
         border-color: $input-border;
@@ -11,24 +11,29 @@
         box-shadow: none;
         font-size: $font-size-lg;
 
-        &:hover {
+        // Hovered
+        &:hover,
+        &.k-state-hover {
             border-color: $input-hovered-border;
         }
 
-        &:focus {
+        // Focused
+        &:focus,
+        &.k-state-focus  {
             border-color: $input-focused-border;
         }
 
-        &:disabled {
-            border-style: dashed;
-        }
-
-        &.k-state-invalid:focus,
+        // Invalid
+        &.k-invalid,
+        &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
             border-color: $error;
         }
 
+        &:disabled {
+            border-style: dashed;
+        }
         &.k-state-disabled {
             border-bottom-style: dotted;
         }

@@ -18,7 +18,6 @@
     $fieldset-font-size: $h4-font-size;
 
     // Input, Textbox, Textarea
-    .k-input,
     .k-textbox,
     .k-textarea,
     .k-input.k-textbox {
@@ -39,7 +38,7 @@
         }
 
         // Invalid
-        &:invalid,
+        &.k-invalid,
         &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
