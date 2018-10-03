@@ -6,46 +6,277 @@
     <link rel="stylesheet" href="../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 1024px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-gap: 20px;
+            align-items: center;
+        }
+        #test-area::after { display: none; }
+    </style>
 </head>
 <body>
 
     <div id="test-area">
 
-        <div class="k-pager-wrap k-widget k-floatwrap" data-role="pager">
-            <a href="#" title="Go to the first page" class="k-link k-pager-nav k-pager-first k-state-disabled" tabindex="-1"><span class="k-icon k-i-arrow-end-left"></span></a>
-            <a href="#" title="Go to the previous page" class="k-link k-pager-nav k-state-disabled" tabindex="-1"><span class="k-icon k-i-arrow-60-left"></span></a>
+        <span></span>
+        <span>LTR</span>
 
+        <span></span>
+        <div class="k-pager-wrap k-widget k-floatwrap">
+            <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
+            <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
             <ul class="k-pager-numbers k-reset">
                 <li class="k-current-page"><span class="k-link k-pager-nav">1</span></li>
                 <li><span class="k-state-selected">1</span></li>
-                <li><a tabindex="-1" href="#" class="k-link">2</a></li>
-                <li><a tabindex="-1" href="#" class="k-link">3</a></li>
-                <li><a tabindex="-1" href="#" class="k-link">4</a></li>
-                <li><a tabindex="-1" href="#" class="k-link">5</a></li>
+                <li><a class="k-link">2</a></li>
+                <li><a class="k-link">3</a></li>
+                <li><a class="k-link">4</a></li>
+                <li><a class="k-link">5</a></li>
             </ul>
-
-            <a href="#" title="Go to the next page" class="k-link k-pager-nav" tabindex="-1"><span class="k-icon k-i-arrow-60-right"></span></a>
-
-            <a href="#" title="Go to the last page" class="k-link k-pager-nav k-pager-last" tabindex="-1"><span class="k-icon k-i-arrow-end-right"></span></a>
+            <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
+            <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
 
             <span class="k-pager-sizes k-label">
-                <!-- dropdown -->
-                <span class="k-widget k-dropdown k-header" unselectable="on" tabindex="0">
-                    <span unselectable="on" class="k-dropdown-wrap k-state-default">
-                        <span unselectable="on" class="k-input">20</span>
-                        <span unselectable="on" class="k-select" aria-label="select">
-                            <span class="k-icon k-i-arrow-60-down"></span>
-                        </span>
-                    </span>
-                </span>
+                <span class="k-widget k-dropdown k-header"><span class="k-dropdown-wrap k-state-default"><span class="k-input">20</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
                 items per page
             </span>
 
-            <a href="#" class="k-pager-refresh k-link" title="Refresh"><span class="k-icon k-i-reload"></span></a>
+            <a class="k-pager-refresh k-link"><span class="k-icon k-i-reload"></span></a>
 
             <span class="k-pager-info k-label">1 - 20 of 91 items</span>
         </div>
 
+        <span>12px</span>
+        <div class="k-pager-wrap k-widget k-floatwrap" style="font-size: 12px;">
+            <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
+            <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
+            <ul class="k-pager-numbers k-reset">
+                <li class="k-current-page"><span class="k-link k-pager-nav">1</span></li>
+                <li><span class="k-state-selected">1</span></li>
+                <li><a class="k-link">2</a></li>
+                <li><a class="k-link">3</a></li>
+                <li><a class="k-link">4</a></li>
+                <li><a class="k-link">5</a></li>
+            </ul>
+            <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
+            <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
+
+            <span class="k-pager-sizes k-label">
+                <span class="k-widget k-dropdown k-header"><span class="k-dropdown-wrap k-state-default"><span class="k-input">20</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+                items per page
+            </span>
+
+            <a class="k-pager-refresh k-link"><span class="k-icon k-i-reload"></span></a>
+
+            <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+        </div>
+
+        <span>14px</span>
+        <div class="k-pager-wrap k-widget k-floatwrap" style="font-size: 14px;">
+            <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
+            <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
+            <ul class="k-pager-numbers k-reset">
+                <li class="k-current-page"><span class="k-link k-pager-nav">1</span></li>
+                <li><span class="k-state-selected">1</span></li>
+                <li><a class="k-link">2</a></li>
+                <li><a class="k-link">3</a></li>
+                <li><a class="k-link">4</a></li>
+                <li><a class="k-link">5</a></li>
+            </ul>
+            <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
+            <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
+
+            <span class="k-pager-sizes k-label">
+                <span class="k-widget k-dropdown k-header"><span class="k-dropdown-wrap k-state-default"><span class="k-input">20</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+                items per page
+            </span>
+
+            <a class="k-pager-refresh k-link"><span class="k-icon k-i-reload"></span></a>
+
+            <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+        </div>
+
+        <span>16px</span>
+        <div class="k-pager-wrap k-widget k-floatwrap" style="font-size: 16px;">
+            <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
+            <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
+            <ul class="k-pager-numbers k-reset">
+                <li class="k-current-page"><span class="k-link k-pager-nav">1</span></li>
+                <li><span class="k-state-selected">1</span></li>
+                <li><a class="k-link">2</a></li>
+                <li><a class="k-link">3</a></li>
+                <li><a class="k-link">4</a></li>
+                <li><a class="k-link">5</a></li>
+            </ul>
+            <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
+            <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
+
+            <span class="k-pager-sizes k-label">
+                <span class="k-widget k-dropdown k-header"><span class="k-dropdown-wrap k-state-default"><span class="k-input">20</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+                items per page
+            </span>
+
+            <a class="k-pager-refresh k-link"><span class="k-icon k-i-reload"></span></a>
+
+            <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+        </div>
+
+        <span>18px</span>
+        <div class="k-pager-wrap k-widget k-floatwrap" style="font-size: 18px;">
+            <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
+            <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
+            <ul class="k-pager-numbers k-reset">
+                <li class="k-current-page"><span class="k-link k-pager-nav">1</span></li>
+                <li><span class="k-state-selected">1</span></li>
+                <li><a class="k-link">2</a></li>
+                <li><a class="k-link">3</a></li>
+                <li><a class="k-link">4</a></li>
+                <li><a class="k-link">5</a></li>
+            </ul>
+            <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
+            <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
+
+            <span class="k-pager-sizes k-label">
+                <span class="k-widget k-dropdown k-header"><span class="k-dropdown-wrap k-state-default"><span class="k-input">20</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+                items per page
+            </span>
+
+            <a class="k-pager-refresh k-link"><span class="k-icon k-i-reload"></span></a>
+
+            <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+        </div>
+
+        <span></span>
+        <span>RTL</span>
+
+        <span></span>
+        <div class="k-pager-wrap k-widget k-floatwrap" dir="rtl">
+            <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
+            <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
+            <ul class="k-pager-numbers k-reset">
+                <li class="k-current-page"><span class="k-link k-pager-nav">1</span></li>
+                <li><span class="k-state-selected">1</span></li>
+                <li><a class="k-link">2</a></li>
+                <li><a class="k-link">3</a></li>
+                <li><a class="k-link">4</a></li>
+                <li><a class="k-link">5</a></li>
+            </ul>
+            <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
+            <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
+
+            <span class="k-pager-sizes k-label">
+                <span class="k-widget k-dropdown k-header"><span class="k-dropdown-wrap k-state-default"><span class="k-input">20</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+                items per page
+            </span>
+
+            <a class="k-pager-refresh k-link"><span class="k-icon k-i-reload"></span></a>
+
+            <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+        </div>
+
+        <span>12px</span>
+        <div class="k-pager-wrap k-widget k-floatwrap" dir="rtl" style="font-size: 12px;">
+            <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
+            <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
+            <ul class="k-pager-numbers k-reset">
+                <li class="k-current-page"><span class="k-link k-pager-nav">1</span></li>
+                <li><span class="k-state-selected">1</span></li>
+                <li><a class="k-link">2</a></li>
+                <li><a class="k-link">3</a></li>
+                <li><a class="k-link">4</a></li>
+                <li><a class="k-link">5</a></li>
+            </ul>
+            <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
+            <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
+
+            <span class="k-pager-sizes k-label">
+                <span class="k-widget k-dropdown k-header"><span class="k-dropdown-wrap k-state-default"><span class="k-input">20</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+                items per page
+            </span>
+
+            <a class="k-pager-refresh k-link"><span class="k-icon k-i-reload"></span></a>
+
+            <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+        </div>
+
+        <span>14px</span>
+        <div class="k-pager-wrap k-widget k-floatwrap" dir="rtl" style="font-size: 14px;">
+            <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
+            <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
+            <ul class="k-pager-numbers k-reset">
+                <li class="k-current-page"><span class="k-link k-pager-nav">1</span></li>
+                <li><span class="k-state-selected">1</span></li>
+                <li><a class="k-link">2</a></li>
+                <li><a class="k-link">3</a></li>
+                <li><a class="k-link">4</a></li>
+                <li><a class="k-link">5</a></li>
+            </ul>
+            <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
+            <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
+
+            <span class="k-pager-sizes k-label">
+                <span class="k-widget k-dropdown k-header"><span class="k-dropdown-wrap k-state-default"><span class="k-input">20</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+                items per page
+            </span>
+
+            <a class="k-pager-refresh k-link"><span class="k-icon k-i-reload"></span></a>
+
+            <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+        </div>
+
+        <span>16px</span>
+        <div class="k-pager-wrap k-widget k-floatwrap" dir="rtl" style="font-size: 16px;">
+            <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
+            <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
+            <ul class="k-pager-numbers k-reset">
+                <li class="k-current-page"><span class="k-link k-pager-nav">1</span></li>
+                <li><span class="k-state-selected">1</span></li>
+                <li><a class="k-link">2</a></li>
+                <li><a class="k-link">3</a></li>
+                <li><a class="k-link">4</a></li>
+                <li><a class="k-link">5</a></li>
+            </ul>
+            <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
+            <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
+
+            <span class="k-pager-sizes k-label">
+                <span class="k-widget k-dropdown k-header"><span class="k-dropdown-wrap k-state-default"><span class="k-input">20</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+                items per page
+            </span>
+
+            <a class="k-pager-refresh k-link"><span class="k-icon k-i-reload"></span></a>
+
+            <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+        </div>
+
+        <span>18px</span>
+        <div class="k-pager-wrap k-widget k-floatwrap" dir="rtl" style="font-size: 18px;">
+            <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
+            <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
+            <ul class="k-pager-numbers k-reset">
+                <li class="k-current-page"><span class="k-link k-pager-nav">1</span></li>
+                <li><span class="k-state-selected">1</span></li>
+                <li><a class="k-link">2</a></li>
+                <li><a class="k-link">3</a></li>
+                <li><a class="k-link">4</a></li>
+                <li><a class="k-link">5</a></li>
+            </ul>
+            <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
+            <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
+
+            <span class="k-pager-sizes k-label">
+                <span class="k-widget k-dropdown k-header"><span class="k-dropdown-wrap k-state-default"><span class="k-input">20</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+                items per page
+            </span>
+
+            <a class="k-pager-refresh k-link"><span class="k-icon k-i-reload"></span></a>
+
+            <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+        </div>
 
     </div>
 
