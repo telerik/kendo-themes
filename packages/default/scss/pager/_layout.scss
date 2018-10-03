@@ -76,8 +76,8 @@
         .k-pager-sizes {
             .k-dropdown,
             > select {
+                margin: 0 $padding-x 0 0;
                 width: 5.2em;
-                margin: 0 $padding-x;
             }
         }
         .k-pager-refresh {
@@ -94,13 +94,22 @@
             font-size: inherit;
         }
 
-        [dir = "rtl"] &,
-        .k-rtl & {
+        .k-rtl &,
+        &[dir="rtl"],
+        [dir="rtl"] & {
             .k-i-arrow-end-left,
             .k-i-arrow-60-left,
             .k-i-arrow-60-right,
             .k-i-arrow-end-right {
                 transform: scaleX(-1);
+            }
+
+            .k-pager-sizes {
+                .k-dropdown,
+                > select {
+                    margin-right: 0;
+                    margin-left: $padding-x;
+                }
             }
         }
     }
