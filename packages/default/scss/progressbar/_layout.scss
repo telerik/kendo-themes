@@ -179,3 +179,27 @@
     }
 
 }
+
+
+
+
+@include exports("progressbar/layout/rtl") {
+
+    .k-rtl .k-progressbar,
+    .k-progressbar[dir="rtl"] {
+        direction: ltr;
+    }
+
+    .k-progressbar-horizontal {
+        .k-rtl &,
+        &[dir="rtl"] {
+            transform: scaleX(-1);
+
+            .k-progress-status {
+                transform: scaleX(-1);
+                direction: rtl;
+            }
+        }
+    }
+
+}
