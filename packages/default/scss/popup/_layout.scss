@@ -66,17 +66,17 @@ $popup-filter-padding-x: $input-padding-x !default;
         top: 0;
         right: 0;
         padding: 0 .5em;
-        font-size: $font-size * .714;
-        line-height: 1.5;
+        font-size: ($font-size * .714);
+        line-height: $font-size;
         text-transform: uppercase;
     }
     .k-popup .k-list .k-item > .k-group::before {
         display: block;
         content: " ";
-        border-width: 7px;
+        border-width: ($font-size / 2);
         border-style: solid;
         position: absolute;
-        left: -14px;
+        left: -$font-size;
         bottom: 0;
     }
     .k-rtl.k-popup .k-list .k-item > .k-group,
