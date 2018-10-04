@@ -53,6 +53,7 @@
                 display: flex;
                 cursor: pointer;
                 margin-left: $padding-x;
+                align-self: stretch;
             }
 
             &:last-child {
