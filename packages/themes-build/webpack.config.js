@@ -125,18 +125,20 @@ const webpackThemeConfig = (_settings, _webpackConfig) => {
         }
     });
 };
-module.exports = webpackThemeConfig({ extract: true }, {
-    devServer: {
-        hot: true,
-        inline: true,
-        port: devServerPort
-    },
-    module: { loaders: [] },
-    entry: entry,
-    plugins: inDevelopment ? [ new BrowserSync() ] : [],
-    output: {
-        path: path.join(__dirname, './dist'),
-        publicPath: '/dist/',
-        filename: '[name].js'
-    }
-});
+module.exports = (dirname) => {
+    return webpackThemeConfig({ extract: true }, {
+        devServer: {
+            hot: true,
+            inline: true,
+            port: devServerPort
+        },
+        module: { loaders: [] },
+        entry: entry,
+        plugins: inDevelopment ? [ new BrowserSync() ] : [],
+        output: {
+            path: path.join(dirname, './dist'),
+            publicPath: '/dist/',
+            filename: '[name].js'
+        }
+    });
+}

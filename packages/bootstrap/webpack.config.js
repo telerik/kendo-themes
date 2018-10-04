@@ -1,1 +1,2 @@
-module.exports = require('@progress/kendo-themes-build/webpack.config.js');
+
+module.exports = require('@progress/kendo-themes-build/webpack.config.js')(__dirname);
