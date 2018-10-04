@@ -13,7 +13,11 @@
     "qunitjs": "^2.4.1",
     "semantic-release": "^12.4.1",
     "semantic-release-monorepo": "^4.2.1",
-    "validate-commit-msg": "^1.1.1"
+    "validate-commit-msg": "^1.1.1",
+    "postcss-calc": "^6.0.0",
+    "autoprefixer": "^6.3.6",
+    "sass-loader": "^4.0.0",
+    "node-sass": "4.6.1"
   },
   "scripts": {
     "build": "lerna run build",

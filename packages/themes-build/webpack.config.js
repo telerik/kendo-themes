@@ -5,16 +5,10 @@
  * This script creates a webpack entry for each of the packages,
  * and passes it through the kendo-common-tasks theme config.
  */
-const glob = require('glob');
 const fs = require('fs');
 const path = require('path');
 const _ = require('lodash');
-const merge = require('merge2');
-const named = require('vinyl-named');
 const webpack = require('webpack');
-const WebpackDevServer = require('webpack-dev-server');
-const webpackStream = require('webpack-stream');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const cssLoaderPath = require.resolve('css-loader');
 const urlLoaderPath = require.resolve('url-loader');
@@ -23,7 +17,6 @@ const sassLoaderPath = require.resolve('sass-loader');
 const jsonLoaderPath = require.resolve('json-loader');
 const autoprefixer = require('autoprefixer');
 const calc = require('postcss-calc');
-const urlResolverPath = require.resolve('resolve-url-loader');
 const postCssLoaderPath = require.resolve('postcss-loader');
 const port = parseInt(process.env.PORT || 3000);
 const devServerPort = port + 1;
@@ -67,13 +60,13 @@ const compat = process.argv.indexOf('--env.twbs-compat') > -1;
 if (compat) {
     entry = { 'twbs-compat': './build/twbs-compat.js' };
 }
-exports.CDNSassLoader = {
+const CDNSassLoader = {
     test: /\.scss$/,
-    loader: ExtractTextPlugin.extract(styleLoaderPath, [
+    loader: ExtractTextPlugin.extract({ 'fallback': styleLoaderPath, 'use': [
         `${cssLoaderPath}?sourceMap`,
         postCssLoaderPath,
         sassLoaderPath
-    ])
+    ] })
 };
 const hashedName = "[name].[ext]?[hash]";
 const resourceLoaders = [
@@ -98,38 +91,29 @@ const resourceLoaders = [
         loader: jsonLoaderPath
     }
 ];
-exports.resourceLoaders = resourceLoaders;
-exports.extractCssPlugin = () =>
+
+const extractCssPlugin = () =>
     new ExtractTextPlugin("[name].css");
-exports.inlineSassLoader = {
-    test: /\.scss$/,
-    loaders: [
-        styleLoaderPath,
-        cssLoaderPath,
-        postCssLoaderPath,
-        urlResolverPath,
-        `${sassLoaderPath}?sourceMap`
-    ]
-};
+
 const inDevelopment = process.argv.find(v => v.includes('webpack-dev-server'))
 const webpackThemeConfig = (_settings, _webpackConfig) => {
     const options = _webpackConfig ? _settings : {};
     const webpackConfig = _webpackConfig ? _webpackConfig : _settings;
 
     const extract = options && options.extract;
-    const sassLoader = extract ? exports.CDNSassLoader : exports.inlineSassLoader;
-    const plugins = extract ? [ exports.extractCssPlugin() ] : [];
+    const sassLoader = CDNSassLoader;
+    const plugins = extract ? [ extractCssPlugin() ] : [];
     webpackConfig.plugins.push( new webpack.LoaderOptionsPlugin({
             options: {
                 sassLoader: {
                     precision: 10
-                }
+                },
+                context: '/'
             }
         })
     );
-
     return Object.assign({}, webpackConfig, {
-        plugins: plugins.concat(webpackConfig.plugins || []),
+        plugins: plugins.concat(webpackConfig.plugins),
 
         module: {
             loaders: _.flatten([
