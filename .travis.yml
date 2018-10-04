@@ -4,10 +4,14 @@ language: node_js
 
 addons:
   chrome: stable
+  firefox: latest
 
 cache:
   directories:
     - node_modules
+    - packages/default/node_modules
+    - packages/bootstrap/node_modules
+    - packages/material/node_modules
 
 notifications:
   email: false
@@ -17,8 +21,6 @@ node_js:
 
 before_install:
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then printf "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> ~/.npmrc; fi'
-  - sudo apt-get update
-  - sudo apt-get install -y firefox
 
 before_script:
   - lerna bootstrap --concurrency=1
