@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style>
-        body {
-            font-size: 14px;
-            font-family: Roboto, Arial, sans-serif;
+        #test-area {
+            max-width: 1024px;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr;
         }
+        #test-area::after { display: none; }
     </style>
 </head>
 <body>
 
-    <div class="test-area">
+    <div id="test-area">
         <kendo-scrollview class="k-widget k-scrollview-wrap" style="width: 400px; height: 300px;">
             <ul class="k-scrollview">
                 <li style="height: 300px; transform: translateX(-100%); width: 100%;">
@@ -54,8 +56,6 @@
                 </kendo-scrollview-pager>
             </div>
         </kendo-scrollview>
-    </div>
-    <div class="test-area" style="margin-top: 25px;">
 
         <!-- TODO: the items do not need all the hard-coded sizes, can be handled by theme layout -->
         <!-- TODO: the hit area of the pager can be increased by using padding instead of margins and moving the circles in generated content-->
