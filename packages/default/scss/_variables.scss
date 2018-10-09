@@ -516,6 +516,9 @@ $grid-header-text: $header-text !default;
 $grid-header-border: $grid-border !default;
 $grid-header-gradient: $header-gradient !default;
 
+$grid-group-drag-clue-bg: $grid-header-bg !default;
+$grid-group-drag-clue-text: $grid-header-text !default;
+
 /// The background of alternating rows.
 /// Set to transparent to remove the row stripes.
 /// @group grid
