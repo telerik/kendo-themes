@@ -4,6 +4,9 @@
 
     $grid-group-dropclue-size: 6px;
     $grid-group-dropclue-line-size: $grid-group-dropclue-size / 3;
+    $grid-group-dropclue-height: button-size() !default;
+    $grid-group-dropclue-top: 3px !default;
+    $grid-group-drag-clue-opacity: 1 !default;
 
     $edit-cell-input-space: calc(-#{$cell-padding} - #{$input-border-width}) !default;
     $edit-cell-textbox-width: calc(100% + ((#{$cell-padding} + #{$input-border-width}) * 2)) !default;
@@ -419,7 +422,8 @@
         align-items: center;
         align-content: center;
         vertical-align: top;
-        box-sizing: content-box;
+        opacity: $grid-group-drag-clue-opacity;
+        box-sizing: border-box;
 
         .k-link,
         .k-button.k-bare {
@@ -463,8 +467,9 @@
 
     .k-grouping-dropclue {
         width: ($grid-group-dropclue-size * 2);
-        height: button-size();
+        height: $grid-group-dropclue-height;
         position: absolute;
+        top: $grid-group-dropclue-top;
         box-sizing: content-box;
 
         &::before,

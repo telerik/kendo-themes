@@ -89,9 +89,10 @@
         }
     }
 
+    .k-drag-clue,
     .k-grid-drag-clue {
-        background-color: $grid-selected-bg;
-        color: $grid-text;
+        background-color: $grid-group-drag-clue-bg;
+        color: $grid-group-drag-clue-text;
         box-shadow: $popup-shadow;
     }
 

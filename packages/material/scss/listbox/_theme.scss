@@ -1,4 +1,4 @@
-$listbox-drag-clue-bg: $hovered-bg !default;
+$listbox-drag-clue-bg: darken( $base-bg, 7% ) !default;
 $listbox-drag-clue-text: $base-text !default;
 
 @import "~@progress/kendo-theme-default/scss/listbox/theme";

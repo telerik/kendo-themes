@@ -578,6 +578,8 @@ $grid-sorting-indicator-text: $grid-header-text !default;
 
 $grid-focused-shadow: $list-item-focused-shadow !default;
 
+$grid-group-drag-clue-bg: darken( $base-bg, 7% ) !default;
+$grid-group-drag-clue-text: $base-text !default;
 
 // Treeview
 $treeview-padding-x: 0 !default;

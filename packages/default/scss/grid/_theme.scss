@@ -23,10 +23,14 @@
     .k-grid-toolbar,
     .k-grouping-header,
     .k-grid-add-row,
-    .k-grid-footer,
-    .k-drag-clue {
+    .k-grid-footer {
         color: $grid-header-text;
         background-color: $grid-header-bg;
+    }
+
+    .k-drag-clue {
+        color: $grid-group-drag-clue-text;
+        background-color: $grid-group-drag-clue-bg;
     }
 
     .k-grid-content {
