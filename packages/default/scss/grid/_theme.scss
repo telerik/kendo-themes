@@ -71,16 +71,26 @@
             background-clip: border-box;
         }
 
+        // Alt row
         tr.k-alt {
             background-color: $grid-alt-bg;
         }
 
+        // Hover state
+        tbody tr:hover,
+        tbody tr.k-state-hover {
+            color: $grid-hovered-text;
+            background-color: $grid-hovered-bg;
+        }
+
+        // Selected state
         tr.k-state-selected,
         td.k-state-selected {
             color: $grid-selected-text;
             background-color: $grid-selected-bg;
         }
 
+        // Focused state
         td.k-state-focused,
         th.k-state-focused {
             box-shadow: $grid-focused-shadow;
