@@ -18,7 +18,8 @@
         }
 
         // Hover state
-        tbody tr:hover {
+        tbody tr:hover,
+        tbody tr.k-state-hover {
             color: $grid-hovered-text;
             background-color: $grid-hovered-bg;
         }
