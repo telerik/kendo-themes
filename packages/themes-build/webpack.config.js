@@ -42,7 +42,7 @@ BrowserSync.prototype = {
     }
 };
 
-let entry = { 'all': './build/all.js' };
+let entry = { 'all': './build/all.js', 'twbs-compat': './build/twbs-compat.js' };
 
 const components = process.env.COMPONENTS || null;
 if (components) {
@@ -53,12 +53,6 @@ if (components) {
         .map(c => `require("./../scss/${c}.scss");`).join('\n')
     fs.writeFileSync(path.join('build', 'custom.js'), imports);
     entry = { 'custom': './build/custom.js' };
-}
-
-const compat = process.argv.indexOf('--env.twbs-compat') > -1;
-
-if (compat) {
-    entry = { 'twbs-compat': './build/twbs-compat.js' };
 }
 const CDNSassLoader = {
     test: /\.scss$/,
