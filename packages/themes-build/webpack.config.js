@@ -42,7 +42,11 @@ BrowserSync.prototype = {
     }
 };
 
-let entry = { 'all': './build/all.js', 'twbs-compat': './build/twbs-compat.js' };
+let entry = { 'all': './build/all.js' };
+
+if(process.env.npm_package_name == '@progress/kendo-theme-default') {
+    entry['twbs-compat'] = './build/twbs-compat.js';
+}
 
 const components = process.env.COMPONENTS || null;
 if (components) {

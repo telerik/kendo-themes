@@ -1,6 +1,1 @@
-module.exports = {
-    plugins: {
-        'postcss-calc': { precision : 10 },
-        'autoprefixer': {}
-    }
-};
+module.exports = require('../../themes-build/postcss.config.js');
