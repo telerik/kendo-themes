@@ -52,7 +52,7 @@ $calendar-view-gap: 48px !default;
                 6 * $calendar-month-cell-size,
                 $calendar-weekdays-height,
                 -3 * $calendar-meta-cell-size,
-                .5
+                .45
             );
             padding: $height-difference 0;
 
