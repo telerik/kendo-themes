@@ -47,7 +47,10 @@ let entry = { 'all': './build/all.js' };
 if(process.env.npm_package_name == '@progress/kendo-theme-default') {
     entry['twbs-compat'] = './build/twbs-compat.js';
 }
+if(process.env.npm_package_name == '@progress/kendo-theme-bootstrap') {
+    entry['swatches'] = './build/swatches.js';
 
+}
 const components = process.env.COMPONENTS || null;
 if (components) {
     // custom build
