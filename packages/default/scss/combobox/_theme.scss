@@ -6,6 +6,7 @@
         .k-dropdown-wrap {
             @include appearance( input );
             background-clip: padding-box;
+            cursor: initial;
 
             .k-ie11 &,
             .k-edge12 &,
