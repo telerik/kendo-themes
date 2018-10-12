@@ -44,13 +44,23 @@ BrowserSync.prototype = {
 
 let entry = { 'all': './build/all.js' };
 
+if(process.env.npm_package_name === undefined) {
+    throw new Error("no `process.env.npm_package_name` consider using another variable");
+}
 if(process.env.npm_package_name == '@progress/kendo-theme-default') {
     entry['twbs-compat'] = './build/twbs-compat.js';
 }
-if(process.env.npm_package_name == '@progress/kendo-theme-bootstrap') {
-    entry['swatches'] = './build/swatches.js';
+fs.existsSync('./scss/swatches/') && fs.readdirSync('./scss/swatches/').forEach(fileScss => {
+    const matches = fileScss.match(/^(.*)\.scss$/);
+    if(matches) {
+        const baseName = matches[1];
+        const fileJsPath = `./build/swatches/${baseName}.js`;
+        fs.existsSync(fileJsPath) && fs.unlinkSync(fileJsPath);
+        fs.writeFileSync(fileJsPath,`// entry point for webpack\nrequire("./../../scss/swatches/${fileScss}");`);
+        entry[baseName] = fileJsPath;
+    }
+});
 
-}
 const components = process.env.COMPONENTS || null;
 if (components) {
     // custom build
