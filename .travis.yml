@@ -12,6 +12,7 @@ cache:
     - packages/default/node_modules
     - packages/bootstrap/node_modules
     - packages/material/node_modules
+    - packages/theme-tasks/node_modules
 
 notifications:
   email: false

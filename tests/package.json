@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "serve": "./node_modules/.bin/http-server ./visual"
-  },
-  "devDependencies": {
-    "http-server": "^0.11.1"
-  }
-}
