@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 if [[ $TRAVIS_PULL_REQUEST != 'false' ]]
 then
   echo "Visual tests do not run on pull request builds (\$TRAVIS_PULL_REQUEST=$TRAVIS_PULL_REQUEST)"
@@ -46,9 +48,9 @@ commit_changes() {
     git push origin $TRAVIS_BRANCH --quiet > /dev/null 2>&1
 }
 
-./build/create-screenshots.sh default
-./build/create-screenshots.sh bootstrap
-./build/create-screenshots.sh material
+./packages/themes-build/create-screenshots.sh default
+./packages/themes-build/create-screenshots.sh bootstrap
+./packages/themes-build/create-screenshots.sh material
 
 has_changes=0
 has_untracked=0

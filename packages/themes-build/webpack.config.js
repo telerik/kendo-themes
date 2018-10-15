@@ -50,6 +50,7 @@ if(process.env.npm_package_name === undefined) {
 if(process.env.npm_package_name == '@progress/kendo-theme-default') {
     entry['twbs-compat'] = './build/twbs-compat.js';
 }
+//Create dynamicly webpac entry point , for every swatches/*.scss one  *.js  entry point
 fs.existsSync('./scss/swatches/') && fs.readdirSync('./scss/swatches/').forEach(fileScss => {
     const matches = fileScss.match(/^(.*)\.scss$/);
     if(matches) {
