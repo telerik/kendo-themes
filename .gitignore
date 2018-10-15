@@ -12,3 +12,6 @@ debug.log
 
 # System files
 .DS_Store
+
+# Lock files
+package-lock.json
