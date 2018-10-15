@@ -24,7 +24,7 @@ before_script:
   - lerna bootstrap --concurrency=1
 
 after_success:
-  - ./build/publish.sh
+  - ./packages/themes-build/publish.sh
 
 branches:
   except:
