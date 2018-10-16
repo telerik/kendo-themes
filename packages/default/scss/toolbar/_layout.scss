@@ -41,6 +41,9 @@ $toolbar-separator-padding-y: $toolbar-button-padding-y !default;
         label {
             align-self: center;
         }
+        .k-split-button > .k-button {
+            align-self: stretch;
+        }
 
 
         // Button
