@@ -53,7 +53,7 @@
         @extend %top-rounded-child !optional;
         @extend %bottom-rounded-child !optional;
         padding: $card-body-padding-y $card-body-padding-x;
-        flex: 1 1 0;
+        flex: 1 1 auto;
 
         p {
             margin: 0 0 $paragraph-margin-bottom;
