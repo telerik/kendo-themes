@@ -16,6 +16,9 @@
         .k-grid-header tr {
             height: add-three( $line-height-em, 2 * $grid-header-padding-y, 1px );
         }
+        .k-grid-header .k-header {
+            position: static;
+        }
         .k-grid-content tr {
             height: add-three( $line-height-em, 2 * $grid-cell-padding-y, $grid-cell-horizontal-border-width );
         }
