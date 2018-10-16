@@ -8,17 +8,16 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-        .section {
-            display: inline-block;
-            vertical-align: top;
+        #test-area {
+            grid-template-columns: repeat(3,  min-content);
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" class="grid">
 
-        <div class="section">
+        <section>
             <div class="k-widget k-calendar k-week-number">
                 <div class="k-header">
                     <a class="k-link k-nav-prev">
@@ -193,8 +192,9 @@
                     <a class="k-link k-nav-today">Thursday, March 29, 2018</a>
                 </div>
             </div>
-        </div>
-        <div class="section">
+        </section>
+
+        <section>
             <div class="k-widget k-calendar k-week-number">
                 <div class="k-header">
                     <a class="k-link k-nav-prev">
@@ -256,9 +256,9 @@
                     <a class="k-link k-nav-today">Thursday, March 29, 2018</a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section">
+        <section>
             <kendo-calendar class="k-widget k-calendar k-calendar-infinite">
                 <kendo-calendar-navigation class="k-calendar-navigation">
                     <span class="k-calendar-navigation-highlight"></span>
@@ -487,8 +487,9 @@
                     </kendo-virtualization>
                 </kendo-calendar-viewlist>
             </kendo-calendar>
-        </div>
-    </div>
-</body>
+        </section>
 
+    </div>
+
+</body>
 </html>

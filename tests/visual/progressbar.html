@@ -14,13 +14,6 @@
             /* Comment if you need to preview the indeterminate animation */
             animation: none !important;
         }
-        #test-area {
-            max-width: 1024px;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-gap: 20px;
-        }
-        #test-area::after { display: none; }
 
         .subgrid-horizontal {
             display: grid;
@@ -35,9 +28,8 @@
         }
     </style>
 </head>
-
 <body>
-    <div id="test-area">
+    <div id="test-area" class="grid">
         <div class="subgrid-horizontal">
             <span></span>
             <span>Normal</span>

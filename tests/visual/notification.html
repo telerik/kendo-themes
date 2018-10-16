@@ -9,18 +9,17 @@
 
     <style>
          #test-area {
-            max-width: 1024px;
-            display: grid;
-            grid-gap: 0 0;
             grid-template-columns: 1fr 1fr;
+            gap: 0;
         }
-        #test-area section {
+        #test-area > section {
             padding: 20px;
         }
-        .test-header {
-            text-align: center;
-            padding-bottom: 15px;
+        #test-area > span {
+            margin-bottom: 20px;
+            justify-self: center;
         }
+
         .dark { background-color: #333; }
         .light { background-color: #eee; }
 
@@ -28,17 +27,17 @@
         .k-notification-container {
             margin-bottom: 8px;
             position: relative;
-         }
+        }
 
-         .k-notification-group {
-             position: relative;
-             display: block;
-         }
+        .k-notification-group {
+            position: relative;
+            display: block;
+        }
     </style>
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" class="grid">
         <span class="test-header">LTR</span>
         <span class="test-header">RTL</span>
 

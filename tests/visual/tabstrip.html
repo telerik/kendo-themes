@@ -13,9 +13,6 @@
         }
 
         #test-area {
-            max-width: 1024px;
-            display: grid;
-            grid-gap: 20px;
             grid-template-columns: 1fr 1fr;
         }
         #test-area::after { display: none; }
@@ -43,7 +40,7 @@
     </style>
 </head>
 <body>
-    <div id="test-area">
+    <div id="test-area" class="grid">
 
         <section>
             <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-top">

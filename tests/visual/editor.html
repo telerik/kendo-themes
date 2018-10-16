@@ -9,12 +9,8 @@
 
     <style>
         #test-area {
-            display: grid;
             grid-template-columns: 1fr;
-            grid-gap: 20px;
-            max-width: 1024px;
         }
-        #test-area::after { display: none; }
 
         .k-editor-toolbar .k-overflow-tools {
             visibility: visible;
@@ -23,7 +19,7 @@
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" class="grid">
 
         <table cellspacing="4" cellpadding="0" class="k-widget k-editor k-header k-editor-widget k-resizable" style="height: 200px;">
             <tbody>
