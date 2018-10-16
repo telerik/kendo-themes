@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts.js"></script>
+
+    <style>
+    </style>
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" class="grid">
 
-        <div class="section">
+        <section>
             <kendo-grid class="k-widget k-grid k-grid-no-scrollbar" style="width: 480px;">
                 <div class="k-grid-aria-root">
                     <div class="k-grid-header"> <!-- add padding-left or -right for scrollbar width-->
@@ -78,9 +81,9 @@
                     </kendo-grid-list>
                 </div>
             </kendo-grid>
-        </div>
+        </section>
 
-        <div class="section">
+        <section>
             <!-- filter row, checkbox selection -->
             <kendo-grid class="k-widget k-grid k-grid-no-scrollbar" style="width: 800px;">
                 <div class="k-grid-aria-root">
@@ -245,9 +248,9 @@
                     </kendo-grid-list>
                 </div>
             </kendo-grid>
-        </div>
+        </section>
 
-        <div class="section">
+        <section>
             <!-- filter row, checkbox selection -->
             <kendo-grid class="k-widget k-grid k-grid-no-scrollbar" style="width: 800px;" dir="rtl">
                 <div class="k-grid-aria-root">
@@ -411,8 +414,9 @@
                     </kendo-grid-list>
                 </div>
             </kendo-grid>
-        </div>
-        <div class="section">
+        </section>
+
+        <section>
             <!-- fixed height, hierarchy, filter menu, sort icon -->
             <kendo-grid style="height: 250px; width: 800px;" class="k-widget k-grid k-grid-no-scrollbar">
                 <div class="k-grid-aria-root">
@@ -532,9 +536,9 @@
                     </kendo-grid-list>
                 </div>
             </kendo-grid>
-        </div>
+        </section>
 
-        <div class="section">
+        <section>
             <!-- RTL grid like the one above -->
             <kendo-grid style="height: 250px; width: 800px;" class="k-widget k-grid k-grid-no-scrollbar" dir="rtl">
                 <div class="k-grid-aria-root">
@@ -654,7 +658,8 @@
                     </kendo-grid-list>
                 </div>
             </kendo-grid>
-        </div>
+        </section>
+
     </div>
 
 </body>

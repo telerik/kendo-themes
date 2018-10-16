@@ -8,37 +8,26 @@
     <script src="assets/scripts.js"></script>
 
     <style>
+        #test-area {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
         .k-checkbox-label,
         .k-radio-label {
-            margin-bottom: 15px;
-        }
-
-        #test-area {
-            max-width: 1024px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-gap: 20px 20px;
-        }
-        #test-area::after { display: none; }
-
-        #test-area > span {
-            padding: 0 10px;
-        }
-
-        #test-area > span.rtl {
-            text-align: right;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" class="grid">
+
         <span>LTR Checkboxes</span>
         <span>LTR RadioButtons</span>
-        <span class="rtl">RTL Checkboxes</span>
-        <span class="rtl">RTL RadioButtons</span>
+        <span dir="rtl">RTL Checkboxes</span>
+        <span dir="rtl">RTL RadioButtons</span>
 
-        <div class="section">
+        <section>
             <input type="checkbox" id="ch1" class="k-checkbox" checked />
             <label class="k-checkbox-label" for="ch1">Checked</label>
             <br />
@@ -50,9 +39,9 @@
             <br />
             <input type="checkbox" id="ch4" class="k-checkbox" disabled />
             <label class="k-checkbox-label" for="ch4">Disabled</label>
-        </div>
+        </section>
 
-        <div class="section">
+        <section>
             <input type="radio" name="group1" id="rad1" class="k-radio" checked/>
             <label class="k-radio-label" for="rad1">Checked</label>
             <br />
@@ -64,9 +53,9 @@
             <br />
             <input type="radio" name="group2" id="rad4" class="k-radio" disabled />
             <label class="k-radio-label" for="rad4">Disabled</label>
-        </div>
+        </section>
 
-        <div class="section" dir="rtl">
+        <section dir="rtl">
             <input type="checkbox" id="ch5" class="k-checkbox" checked />
             <label class="k-checkbox-label" for="ch5">Checked</label>
             <br />
@@ -78,9 +67,9 @@
             <br />
             <input type="checkbox" id="ch8" class="k-checkbox" disabled />
             <label class="k-checkbox-label" for="ch8">Disabled</label>
-        </div>
+        </section>
 
-        <div class="section" dir="rtl">
+        <section dir="rtl">
             <input type="radio" name="group3" id="rad5" class="k-radio" checked/>
             <label class="k-radio-label" for="rad5">Checked</label>
             <br />
@@ -92,7 +81,8 @@
             <br />
             <input type="radio" name="group4" id="rad8" class="k-radio" disabled />
             <label class="k-radio-label" for="rad8">Disabled</label>
-        </div>
+        </section>
+
     </div>
 
 </body>

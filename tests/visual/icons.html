@@ -8,17 +8,16 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-        #output {
-            width: 512px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+        #test-area {
+            grid-template-columns: repeat(32, min-content);
+            gap: 10px;
+            align-items: top;
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area"></div>
+    <div id="test-area" class="grid"></div>
 
     <script>
     (function() {

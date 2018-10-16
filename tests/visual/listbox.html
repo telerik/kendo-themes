@@ -6,74 +6,49 @@
     <link rel="stylesheet" href="../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts.js"></script>
+
+    <style>
+        .k-listbox {
+            height: auto;
+            align-items: flex-start;
+        }
+    </style>
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" class="grid">
 
-        <div class="k-widget k-listbox k-listbox-toolbar-right">
-            <div class="k-listbox-toolbar">
-                <ul class="k-reset">
-                    <li>
-                        <a class="k-button k-button-icon k-state-hover"
-                           >
-                            <span class="k-icon k-i-arrow-60-up"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="k-button k-button-icon k-state-focused"
-                           >
-                            <span class="k-icon k-i-arrow-60-down"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="k-button k-button-icon k-state-active"
-                           >
-                            <span class="k-icon k-i-arrow-60-right"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="k-button k-button-icon k-state-disabled"
-                           >
-                            <span class="k-icon k-i-arrow-60-left"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="k-button k-button-icon"
-                           >
-                            <span class="k-icon k-i-arrow-double-60-right"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="k-button k-button-icon"
-                           >
-                            <span class="k-icon k-i-arrow-double-60-left"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="k-button k-button-icon">
-                            <span class="k-icon k-i-x"></span>
-                        </a>
-                    </li>
-                </ul>
+        <section>
+            <div class="k-widget k-listbox k-listbox-toolbar-right">
+                <div class="k-listbox-toolbar">
+                    <ul class="k-reset">
+                        <li><a class="k-button k-button-icon k-state-hover"><span class="k-icon k-i-arrow-60-up"></span></a></li>
+                        <li><a class="k-button k-button-icon k-state-focused"><span class="k-icon k-i-arrow-60-down"></span></a></li>
+                        <li><a class="k-button k-button-icon k-state-active"><span class="k-icon k-i-arrow-60-right"></span></a></li>
+                        <li><a class="k-button k-button-icon k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a></li>
+                        <li><a class="k-button k-button-icon"><span class="k-icon k-i-arrow-double-60-right"></span></a></li>
+                        <li><a class="k-button k-button-icon"><span class="k-icon k-i-arrow-double-60-left"></span></a></li>
+                        <li><a class="k-button k-button-icon"><span class="k-icon k-i-x"></span></a></li>
+                    </ul>
+                </div>
+                <div class="k-list-scroller k-selectable">
+                    <ul class="k-reset k-list">
+                        <li class="k-item">Item</li>
+                        <li class="k-item k-state-selected">Selected</li>
+                        <li class="k-item k-state-focused">Focused</li>
+                        <li class="k-item k-state-hover">Hovered</li>
+                        <li class="k-item k-state-hover k-state-selected">Hovered selected</li>
+                        <li class="k-item k-state-disabled">Disabled</li>
+                    </ul>
+                </div>
             </div>
-            <div class="k-list-scroller k-selectable">
-                <ul class="k-reset k-list">
-                    <li class="k-item">Item</li>
-                    <li class="k-item k-state-selected">Selected</li>
-                    <li class="k-item k-state-focused">Focused</li>
-                    <li class="k-item k-state-hover">Hovered</li>
-                    <li class="k-item k-state-hover k-state-selected">Hovered selected</li>
-                    <li class="k-item k-state-disabled">Disabled</li>
-                </ul>
-            </div>
-        </div>
+        </section>
 
-        <div style="margin-top: 80px">
-            <li class="k-item k-drag-clue">Drag clue</li>
-        </div>
+        <section>
+            <span class="k-item k-drag-clue">Drag clue</span>
+        </section>
+
     </div>
 
 </body>
-
 </html>

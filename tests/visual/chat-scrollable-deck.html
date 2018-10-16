@@ -9,16 +9,13 @@
 
     <style>
         #test-area {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 25px;
-            max-width: 1024px;
+            grid-template-columns: repeat(2, 1fr);
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" class="grid">
 
         <section>
             <div class="k-widget k-chat" style="height: 700px;">
@@ -78,6 +75,7 @@
                 </div>
             </div>
         </section>
+
     </div>
 
 </body>

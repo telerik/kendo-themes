@@ -8,64 +8,48 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-        .k-widget,
-        .k-textbox {
-          margin: 10px;
-          vertical-align: middle;
+        #test-area {
+            grid-template-columns: repeat(3, min-content);
+            align-items: start;
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" class="grid">
 
-        <div class="section">
             <input type="text" placeholder="Textbox..." class="k-textbox" />
             <span class="k-widget k-maskedtextbox"><input value="(___) ___-__-__-__" class="k-textbox"><span class="k-icon k-i-warning"></span></span>
             <span class="k-widget k-numerictextbox"><span class="k-numeric-wrap"><input type="text" class="k-input" placeholder="Numeric..." /><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-60-up"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-60-down"></span></span></span></span></span>
-        </div>
 
-        <div class="section">
             <input type="text" value="Normal" class="k-textbox" />
             <span class="k-widget k-maskedtextbox"><input value="555 123 4567" class="k-textbox"><span class="k-icon k-i-warning"></span></span>
             <span class="k-widget k-numerictextbox"><span class="k-numeric-wrap"><input type="text" class="k-input" value="Normal" /><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-60-up"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-60-down"></span></span></span></span></span>
-        </div>
 
-        <div class="section">
             <input type="text" value="Hover" class="k-textbox k-state-hover" />
             <span class="k-widget k-maskedtextbox"><input value="555 123 4567" class="k-textbox k-state-hover"><span class="k-icon k-i-warning"></span></span>
             <span class="k-widget k-numerictextbox"><span class="k-numeric-wrap k-state-hover"><input type="text" class="k-input" value="Hover" /><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-60-up"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-60-down"></span></span></span></span></span>
-        </div>
 
-        <div class="section">
             <input type="text" value="Active N/A" class="k-textbox" />
             <span class="k-widget k-maskedtextbox"><input value="555 123 4567" class="k-textbox"><span class="k-icon k-i-warning"></span></span>
             <span class="k-widget k-numerictextbox"><span class="k-numeric-wrap"><input type="text" class="k-input" value="Active N/A" /><span class="k-select"><span class="k-link k-link-increase k-state-selected"><span class="k-icon k-i-arrow-60-up"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-60-down"></span></span></span></span></span>
-        </div>
 
-        <div class="section">
             <input type="text" value="Focused" class="k-textbox k-state-focused" />
             <span class="k-widget k-maskedtextbox k-state-focused"><input value="555 123 4567" class="k-textbox"><span class="k-icon k-i-warning"></span></span>
             <span class="k-widget k-numerictextbox"><span class="k-numeric-wrap k-state-focused"><input type="text" class="k-input" value="Focused" /><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-60-up"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-60-down"></span></span></span></span></span>
-        </div>
 
-        <div class="section">
             <input type="text" value="Disabled" class="k-textbox" disabled="disabled" />
             <span class="k-widget k-maskedtextbox k-state-disabled"><input value="555 123 4567" class="k-textbox" disabled="disabled"><span class="k-icon k-i-warning"></span></span>
             <span class="k-widget k-numerictextbox k-state-disabled"><span class="k-numeric-wrap"><input type="text" class="k-input" value="Disabled" /><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-60-up"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-60-down"></span></span></span></span></span>
-        </div>
 
-        <div class="section">
             <input type="text" value="Invalid" class="k-textbox k-state-invalid" />
             <span class="k-widget k-maskedtextbox k-state-invalid"><input value="(___) ___-__-__-__" class="k-textbox"><span class="k-icon k-i-warning"></span></span>
             <span class="k-widget k-numerictextbox k-state-invalid"><span class="k-numeric-wrap"><input type="text" class="k-input" value="-1" /><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-60-up"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-60-down"></span></span></span></span></span>
-        </div>
 
-        <div class="section">
             <input type="text" value="NG invalid" class="k-textbox ng-invalid ng-touched" />
             <span class="k-widget k-maskedtextbox ng-invalid ng-touched"><input value="(___) ___-__-__-__" class="k-textbox"><span class="k-icon k-i-warning"></span></span>
             <span class="k-widget k-numerictextbox ng-invalid ng-touched"><span class="k-numeric-wrap"><input type="text" class="k-input" value="-1" /><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-60-up"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-60-down"></span></span></span></span></span>
-        </div>
+
     </div>
 
 </body>

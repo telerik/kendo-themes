@@ -9,10 +9,8 @@
 
     <style>
         #test-area {
-            max-width: 1024px;
-            display: grid;
-            grid-gap: 0 0;
             grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 0 0;
         }
         #test-area > section {
             padding: 20px;
@@ -30,7 +28,8 @@
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" class="grid">
+
         <!-- angular tooltips -->
         <section class="dark">
             <div class="k-animation-container k-animation-container-fixed k-animation-container-shown k-tooltip-wrapper">
@@ -264,6 +263,7 @@
             </div>
         </section>
         <!-- end of jquery tooltips -->
+
     </div>
 
 </body>

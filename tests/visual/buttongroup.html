@@ -9,22 +9,19 @@
 
     <style>
         #test-area {
-            max-width: 1024px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 20px 20px;
+            grid-template-columns: repeat(2, 1fr);
         }
         #test-area > section {
             padding: 20px;
             display: grid;
             grid-template-columns: 1fr;
-            grid-gap: 10px 10px;
+            gap: 10px;
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" class="grid">
 
         <section>
             <div>

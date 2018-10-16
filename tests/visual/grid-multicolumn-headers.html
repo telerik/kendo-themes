@@ -1,244 +1,207 @@
 <!doctype html>
 <html lang="en" class="k-typography k-no-animations">
-    <head>
-        <title>Grid Multi-Column Headers</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="../../packages/default/dist/all.css" />
-        <link rel="stylesheet" href="assets/styles.css" />
-        <script src="assets/scripts.js"></script>
+<head>
+    <title>Grid Multi-Column Headers</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
 
-        <style>
-            .section {
-                max-width: 1200px;
-            }
-        </style>
-    </head>
-    <body>
+    <style>
+    </style>
+</head>
+<body>
 
-        <div id="test-area">
+    <div id="test-area" class="grid">
 
-            <div class="section">
-
-                <kendo-grid style="height: 300px; width: 900px;" dir="ltr" class="k-widget k-grid k-grid-lockedcolumns k-grid-no-scrollbar">
-                    <div class="k-grid-aria-root">
-                        <div class="k-grid-header" style="padding: 0;">
-                            <div class="k-grid-header-locked" style="width: 300px;">
-                                <table>
-                                    <colgroup>
-                                        <col style="width: 300px;">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th class="k-header" rowspan="2" colspan="1">
-                                                Name
-                                            </th>
-                                        </tr><tr>
-                                        </tr>
-                                    </thead>
-                                </table>
-                            </div><div class="k-grid-header-wrap" style="width: 434px;">
-                                <table style="width: 900px;">
-                                    <colgroup>
-                                        <col style="width: 300px;"><col style="width: 300px;"><col style="width: 300px;">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th class="k-header" rowspan="1" colspan="3">
-                                                Availability
-                                            </th>
-                                        </tr><tr>
-                                            <th class="k-header" rowspan="1" colspan="1">
-                                                Units In Stock
-                                            </th>
-                                            <th class="k-header" rowspan="1" colspan="1">
-                                                Unit Price
-                                            </th>
-                                            <th class="k-header" rowspan="1" colspan="1">
-                                                Discontinued
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                </table>
-                            </div>
-                        </div>
-                        <kendo-grid-list class="k-grid-container">
-                            <div class="k-grid-content-locked" style="width: 300px; height: 272px;">
-                                <div class="k-grid-table-wrap" style="position: relative;">
-                                    <table class="k-grid-table">
-                                        <colgroup>
-                                            <col style="width: 300px;">
-                                        </colgroup>
-                                        <tbody>
-                                            <tr style="height: 37px;">
-                                                <td colspan="1">
-                                                    Chai
-                                                </td>
-                                            </tr>
-                                            <tr class="k-alt" style="height: 37px;">
-                                                <td colspan="1">
-                                                    Chang
-                                                </td>
-                                            </tr>
-                                            <tr style="height: 37px;">
-                                                <td colspan="1">
-                                                    Aniseed Syrup
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="k-height-container">
-                                    <div style="height: 0px;"></div>
-                                </div>
-                            </div><div class="k-grid-content k-virtual-content" style="width: 447px;">
-                                <div class="k-grid-table-wrap" style="position: relative;">
-                                    <table class="k-grid-table" style="transform: translateY(0px); width: 900px;">
-                                        <colgroup>
-                                            <col style="width: 300px;"><col style="width: 300px;"><col style="width: 300px;">
-                                        </colgroup>
-                                        <tbody>
-                                            <tr style="height: 37px;">
-                                                <td colspan="1">
-                                                    39
-                                                </td><td colspan="1">
-                                                    18
-                                                </td><td colspan="1">
-                                                    false
-                                                </td>
-                                            </tr>
-                                            <tr class="k-alt" style="height: 37px;">
-                                                <td colspan="1">
-                                                    17
-                                                </td><td colspan="1">
-                                                    19
-                                                </td><td colspan="1">
-                                                    false
-                                                </td>
-                                            </tr>
-                                            <tr style="height: 37px;">
-                                                <td colspan="1">
-                                                    13
-                                                </td><td colspan="1">
-                                                    10
-                                                </td><td colspan="1">
-                                                    false
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="k-height-container">
-                                    <div style="height: 0px;"></div>
-                                </div>
-                            </div>
-                        </kendo-grid-list>
+        <kendo-grid style="height: 300px;" dir="ltr" class="k-widget k-grid k-grid-lockedcolumns k-grid-no-scrollbar">
+            <div class="k-grid-aria-root">
+                <div class="k-grid-header" style="padding: 0;">
+                    <div class="k-grid-header-locked" style="width: 300px;">
+                        <table>
+                            <colgroup>
+                                <col style="width: 300px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="k-header" rowspan="2" colspan="1">
+                                        Name
+                                    </th>
+                                </tr><tr>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div><div class="k-grid-header-wrap" style="width: 434px;">
+                        <table style="width: 900px;">
+                            <colgroup>
+                                <col style="width: 300px;"><col style="width: 300px;"><col style="width: 300px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="k-header" rowspan="1" colspan="3">
+                                        Availability
+                                    </th>
+                                </tr><tr>
+                                    <th class="k-header" rowspan="1" colspan="1">
+                                        Units In Stock
+                                    </th>
+                                    <th class="k-header" rowspan="1" colspan="1">
+                                        Unit Price
+                                    </th>
+                                    <th class="k-header" rowspan="1" colspan="1">
+                                        Discontinued
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
                     </div>
-                </kendo-grid>
-
-            </div>
-
-            <div class="section k-rtl">
-
-                    <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-reorderable k-grid-no-scrollbar" style="height: 200px;">
-                        <div class="k-grid-header">
-                            <div class="k-grid-header-wrap k-auto-scrollable" data-role="resizable">
-                                <table role="grid">
-                                    <colgroup>
-                                        <col style="width:220px">
-                                        <col style="width:200px">
-                                        <col style="width:200px">
-                                        <col style="width:200px">
-                                        <col style="width:200px">
-                                        <col>
-                                    </colgroup>
-                                    <thead role="rowgroup">
-                                        <tr role="row">
-                                            <th scope="col" role="columnheader" data-field="CompanyName" aria-haspopup="true" rowspan="3"
-                                                data-title="Company Name" data-index="0" id="22a046c8-2a7d-47a2-9717-3923d24c2dc3" class="k-header k-with-icon"
-                                                data-role="columnsorter">
-                                                <a class="k-header-column-menu" href="#" title="Column Settings" aria-label="Column Settings"
-                                                    tabindex="-1">
-                                                    <span class="k-icon k-i-more-vertical"></span>
-                                                </a>
-                                                <a class="k-link" href="#">Company Name</a>
-                                            </th>
-                                            <th scope="col" role="columnheader" aria-haspopup="true" colspan="5" data-colspan="5"
-                                                data-title="Contact Info" id="d8384479-8304-4e40-96e9-9cfa80b44252" class="k-header"
-                                                data-role="droptarget">Contact Info</th>
-                                        </tr>
-                                        <tr role="row">
-                                            <th scope="col" role="columnheader" data-field="ContactTitle" aria-haspopup="true" rowspan="2"
-                                                data-title="Contact Title" data-index="1" id="dfa89567-499c-436c-9709-d2c111ac0a2c" class="k-header k-with-icon k-first"
-                                                data-role="columnsorter">
-                                                <a class="k-header-column-menu" href="#" title="Column Settings" aria-label="Column Settings"
-                                                    tabindex="-1">
-                                                    <span class="k-icon k-i-more-vertical"></span>
-                                                </a>
-                                                <a class="k-link" href="#">Contact Title</a>
-                                            </th>
-                                            <th scope="col" role="columnheader" data-field="ContactName" aria-haspopup="true" rowspan="2"
-                                                data-title="Contact Name" data-index="2" id="b1fa58ba-e9d6-41f2-b4fe-33bebf1111a1" class="k-header k-with-icon"
-                                                data-role="columnsorter">
-                                                <a class="k-header-column-menu" href="#" title="Column Settings" aria-label="Column Settings"
-                                                    tabindex="-1">
-                                                    <span class="k-icon k-i-more-vertical"></span>
-                                                </a>
-                                                <a class="k-link" href="#">Contact Name</a>
-                                            </th>
-                                            <th scope="col" role="columnheader" aria-haspopup="true" colspan="2" data-colspan="2"
-                                                data-title="Location" id="69bbb4de-36ab-403f-9c6d-3f5d32096479" class="k-header" data-role="droptarget">Location</th>
-                                            <th scope="col" role="columnheader" data-field="Phone" aria-haspopup="true"
-                                                rowspan="2" data-title="Phone" data-index="5" id="c8059f18-a27f-410d-9d7c-a67360492654"
-                                                class="k-header k-with-icon" data-role="columnsorter">
-                                                <a class="k-header-column-menu" href="#" title="Column Settings" aria-label="Column Settings"
-                                                    tabindex="-1">
-                                                    <span class="k-icon k-i-more-vertical"></span>
-                                                </a>
-                                                <a class="k-link" href="#">Phone</a>
-                                            </th>
-                                        </tr>
-                                        <tr role="row">
-                                            <th scope="col" role="columnheader" data-field="Country" aria-haspopup="true" data-index="3"
-                                                id="ddf3e51a-8fb9-4ca7-a859-4873aa49b68c" class="k-header k-with-icon k-first" data-role="columnsorter">
-                                                <a class="k-header-column-menu" href="#" title="Column Settings" aria-label="Column Settings"
-                                                    tabindex="-1">
-                                                    <span class="k-icon k-i-more-vertical"></span>
-                                                </a>
-                                                <a class="k-link" href="#">Country</a>
-                                            </th>
-                                            <th scope="col" role="columnheader" data-field="City" aria-haspopup="true" data-index="4"
-                                                id="cb9bb737-27d0-4e07-84e6-c7388317617e" class="k-header k-with-icon" data-role="columnsorter">
-                                                <a class="k-header-column-menu" href="#" title="Column Settings" aria-label="Column Settings"
-                                                    tabindex="-1">
-                                                    <span class="k-icon k-i-more-vertical"></span>
-                                                </a>
-                                                <a class="k-link" href="#">City</a>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                </table>
-                                <div class="k-resize-handle" style="top: 0px; left: 417px; height: 89px; width: 9px;">
-                                    <div class="k-resize-handle-inner"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="k-grid-content k-auto-scrollable">
-                            <table role="grid" style="height: auto;">
+                </div>
+                <kendo-grid-list class="k-grid-container">
+                    <div class="k-grid-content-locked" style="width: 300px; height: 272px;">
+                        <div class="k-grid-table-wrap" style="position: relative;">
+                            <table class="k-grid-table">
                                 <colgroup>
-                                    <col style="width:220px">
-                                    <col style="width:200px">
-                                    <col style="width:200px">
-                                    <col style="width:200px">
-                                    <col style="width:200px">
-                                    <col>
+                                    <col style="width: 300px;">
                                 </colgroup>
-                                <tbody role="rowgroup"></tbody>
+                                <tbody>
+                                    <tr style="height: 37px;">
+                                        <td colspan="1">
+                                            Chai
+                                        </td>
+                                    </tr>
+                                    <tr class="k-alt" style="height: 37px;">
+                                        <td colspan="1">
+                                            Chang
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 37px;">
+                                        <td colspan="1">
+                                            Aniseed Syrup
+                                        </td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
+                        <div class="k-height-container">
+                            <div style="height: 0px;"></div>
+                        </div>
+                    </div><div class="k-grid-content k-virtual-content" style="width: 447px;">
+                        <div class="k-grid-table-wrap" style="position: relative;">
+                            <table class="k-grid-table" style="transform: translateY(0px); width: 900px;">
+                                <colgroup>
+                                    <col style="width: 300px;"><col style="width: 300px;"><col style="width: 300px;">
+                                </colgroup>
+                                <tbody>
+                                    <tr style="height: 37px;">
+                                        <td colspan="1">
+                                            39
+                                        </td><td colspan="1">
+                                            18
+                                        </td><td colspan="1">
+                                            false
+                                        </td>
+                                    </tr>
+                                    <tr class="k-alt" style="height: 37px;">
+                                        <td colspan="1">
+                                            17
+                                        </td><td colspan="1">
+                                            19
+                                        </td><td colspan="1">
+                                            false
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 37px;">
+                                        <td colspan="1">
+                                            13
+                                        </td><td colspan="1">
+                                            10
+                                        </td><td colspan="1">
+                                            false
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-height-container">
+                            <div style="height: 0px;"></div>
+                        </div>
                     </div>
+                </kendo-grid-list>
+            </div>
+        </kendo-grid>
 
+
+        <div class="k-rtl">
+
+            <div class="k-widget k-grid k-grid-no-scrollbar" style="height: 200px;">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table role="grid">
+                            <colgroup>
+                                <col style="width:160px" />
+                                <col style="width:160px" />
+                                <col style="width:160px" />
+                                <col style="width:160px" />
+                                <col style="width:160px" />
+                                <col />
+                            </colgroup>
+                            <thead role="rowgroup">
+                                <tr role="row">
+                                    <th scope="col" rowspan="3" class="k-header k-with-icon">
+                                        <a class="k-header-column-menu"><span class="k-icon k-i-more-vertical"></span></a>
+                                        <a class="k-link" href="#">Company</a>
+                                    </th>
+                                    <th scope="col" colspan="5" class="k-header">Contact Info</th>
+                                </tr>
+                                <tr role="row">
+                                    <th scope="col" rowspan="2" class="k-header k-with-icon k-first">
+                                        <a class="k-header-column-menu"><span class="k-icon k-i-more-vertical"></span></a>
+                                        <a class="k-link" href="#">First Name</a>
+                                    </th>
+                                    <th scope="col" rowspan="2" class="k-header k-with-icon">
+                                        <a class="k-header-column-menu"><span class="k-icon k-i-more-vertical"></span></a>
+                                        <a class="k-link" href="#">Last Name</a>
+                                    </th>
+                                    <th scope="col" colspan="2" class="k-header">Location</th>
+                                    <th scope="col" rowspan="2" class="k-header k-with-icon">
+                                        <a class="k-header-column-menu"><span class="k-icon k-i-more-vertical"></span></a>
+                                        <a class="k-link" href="#">Phone</a>
+                                    </th>
+                                </tr>
+                                <tr role="row">
+                                    <th scope="col" class="k-header k-with-icon k-first">
+                                        <a class="k-header-column-menu"><span class="k-icon k-i-more-vertical"></span></a>
+                                        <a class="k-link" href="#">Country</a>
+                                    </th>
+                                    <th scope="col" class="k-header k-with-icon">
+                                        <a class="k-header-column-menu"><span class="k-icon k-i-more-vertical"></span></a>
+                                        <a class="k-link" href="#">City</a>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div class="k-resize-handle" style="top: 0px; left: 417px; height: 89px; width: 9px;">
+                            <div class="k-resize-handle-inner"></div>
+                        </div>
+                    </div>
                 </div>
+                <div class="k-grid-content k-auto-scrollable">
+                    <table role="grid" style="height: auto;">
+                        <colgroup>
+                            <col style="width:160px" />
+                            <col style="width:160px" />
+                            <col style="width:160px" />
+                            <col style="width:160px" />
+                            <col style="width:160px" />
+                            <col />
+                        </colgroup>
+                        <tbody role="rowgroup"></tbody>
+                    </table>
+                </div>
+            </div>
 
         </div>
-    </body>
+
+    </div>
+</body>
 </html>

@@ -8,39 +8,43 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-    .k-textbox-container {
-        width: 300px;
-        height: 200px;
-    }
+        #test-area {
+            grid-template-columns: repeat(2, min-content);
+            align-items: start;
+        }
+
+        .k-textbox-container {
+            width: 300px;
+            height: 200px;
+        }
     </style>
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" class="grid">
 
-        <div class="section">
-            <kendo-textbox-container floatinglabel="Normal" class="k-textbox-container k-textarea-wrapper k-state-empty" dir="ltr">
-                <textarea name="textarea" rows="5" id="textarea-normal" class="k-textarea" dir="ltr"></textarea>
-                <label class="k-label" for="textarea-normal">Textarea label</label>
-            </kendo-textbox-container>
+        <span>LTR</span>
+        <span>RTL</span>
 
-            <kendo-textbox-container floatinglabel="Focused" class="k-textbox-container k-textarea-wrapper k-state-empty k-state-focused" dir="ltr">
-                <textarea name="textarea" rows="5" id="textarea-focused" class="k-textarea" dir="ltr"></textarea>
-                <label class="k-label" for="textarea-focused">Textarea label</label>
-            </kendo-textbox-container>
-        </div>
+        <kendo-textbox-container class="k-textbox-container k-textarea-wrapper k-state-empty" dir="ltr">
+            <textarea name="textarea" rows="5" class="k-textarea" dir="ltr"></textarea>
+            <label class="k-label">Textarea label</label>
+        </kendo-textbox-container>
 
-        <div class="section">
-            <kendo-textbox-container floatinglabel="Normal" class="k-textbox-container k-textarea-wrapper k-state-empty" dir="rtl">
-                <textarea name="textarea" rows="5" id="textarea-normal" class="k-textarea" dir="rtl"></textarea>
-                <label class="k-label" for="textarea-normal">Textarea label</label>
-            </kendo-textbox-container>
+        <kendo-textbox-container class="k-textbox-container k-textarea-wrapper k-state-empty" dir="rtl">
+            <textarea name="textarea" rows="5" class="k-textarea" dir="rtl"></textarea>
+            <label class="k-label">Textarea label</label>
+        </kendo-textbox-container>
 
-            <kendo-textbox-container floatinglabel="Focused" class="k-textbox-container k-textarea-wrapper k-state-empty k-state-focused" dir="rtl">
-                <textarea name="textarea" rows="5" id="textarea-focused" class="k-textarea" dir="rtl"></textarea>
-                <label class="k-label" for="textarea-focused">Textarea label</label>
-            </kendo-textbox-container>
-        </div>
+        <kendo-textbox-container class="k-textbox-container k-textarea-wrapper k-state-empty k-state-focused" dir="ltr">
+            <textarea name="textarea" rows="5" class="k-textarea" dir="ltr"></textarea>
+            <label class="k-label">Textarea label</label>
+        </kendo-textbox-container>
+
+        <kendo-textbox-container class="k-textbox-container k-textarea-wrapper k-state-empty k-state-focused" dir="rtl">
+            <textarea name="textarea" rows="5" class="k-textarea" dir="rtl"></textarea>
+            <label class="k-label">Textarea label</label>
+        </kendo-textbox-container>
 
     </div>
 

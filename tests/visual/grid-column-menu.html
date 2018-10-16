@@ -9,10 +9,7 @@
 
     <style>
         #test-area {
-            display: grid;
-            grid-gap: 20px;
-            max-width: 900px;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
         }
 
         .k-animation-container,
@@ -23,7 +20,7 @@
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" class="grid">
 
         <div class="section">
             <kendo-popup class="k-animation-container k-animation-container-shown">
