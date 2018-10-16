@@ -131,13 +131,13 @@ $calendar-view-gap: 32px !default;
             // Fast navigation
             .k-nav-fast {
                 margin: 0 $calendar-cell-padding-y;
-                flex: 1 1 0%;
+                flex: 1 1 auto;
             }
 
 
             // Today
             .k-nav-today {
-                flex: 1 1 0%;
+                flex: 1 1 auto;
             }
 
         }

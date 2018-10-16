@@ -274,7 +274,7 @@ $forms-invalid-color: $error !default;
         }
 
         .k-link {
-            flex: 1 1 0;
+            flex: 1 1 auto;
             display: block;
             overflow: hidden;
             position: relative;
