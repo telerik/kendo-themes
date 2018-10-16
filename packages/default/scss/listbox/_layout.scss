@@ -86,6 +86,32 @@
         .k-ghost {
             opacity: .5;
         }
+
+        .k-rtl &,
+        &[dir="rtl"],
+        [dir="rtl"] & {
+
+            &.k-listbox-toolbar-left,
+            &.k-listbox-toolbar-right {
+                .k-listbox-toolbar {
+                    transform: scaleX(-1);
+                }
+            }
+
+            &.k-listbox-toolbar-left {
+                .k-listbox-toolbar {
+                    margin-right: 0;
+                    margin-left: $listbox-margin;
+                }
+            }
+
+            &.k-listbox-toolbar-right {
+                .k-listbox-toolbar {
+                    margin-right: $listbox-margin;
+                    margin-left: 0;
+                }
+            }
+        }
     }
 
     .k-item {
