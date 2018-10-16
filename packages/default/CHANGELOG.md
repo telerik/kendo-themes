@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.57.1"></a>
+## 2.57.1 (2018-10-16)
+
+
+### Bug Fixes
+
+* **dropdowns:** remove misleading cursor pointer on combobox border ([2877a87](https://github.com/telerik/kendo-themes/commit/2877a87)), closes [telerik/kendo-angular#1715](https://github.com/telerik/kendo-angular/issues/1715)
+* **gantt:** displaced tasks in RTL ([5371a65](https://github.com/telerik/kendo-themes/commit/5371a65))
+* **grid:** drag and drop clues improvements ([06c6dbe](https://github.com/telerik/kendo-themes/commit/06c6dbe))
+* **grid:** remove extra spacing inside grid grouping row ([213af46](https://github.com/telerik/kendo-themes/commit/213af46))
+* **inputs:** apply invalid state only trough class name instead of pseudo class ([4e0c8a2](https://github.com/telerik/kendo-themes/commit/4e0c8a2))
+* **multiselect:** increase close button hit area ([520d731](https://github.com/telerik/kendo-themes/commit/520d731))
+* **pager:** font-size and alignment corrections ([d44c8dd](https://github.com/telerik/kendo-themes/commit/d44c8dd))
+* **pager:** improve spacing between link and page size ([ab00b4f](https://github.com/telerik/kendo-themes/commit/ab00b4f))
+* **pager:** wrong RTL icons direction telerik/kendo-theme-default[#774](https://github.com/telerik/kendo-themes/issues/774) ([30ee750](https://github.com/telerik/kendo-themes/commit/30ee750))
+* **popup:** group label in dropdowns is squashed ([f1a6ec6](https://github.com/telerik/kendo-themes/commit/f1a6ec6))
+* **progressbar:** add rtl styles [#310](https://github.com/telerik/kendo-themes/issues/310) ([e944176](https://github.com/telerik/kendo-themes/commit/e944176))
+* **progressbar:** Vertical ProgressBar status position ([b6339d8](https://github.com/telerik/kendo-themes/commit/b6339d8))
+* switch from flex '1 1 0' to '1 1 auto' for ie 11 and edge ([ec6ada6](https://github.com/telerik/kendo-themes/commit/ec6ada6))
+* **tabstrip:** extract tabstrip variables and use correct values ([699be9c](https://github.com/telerik/kendo-themes/commit/699be9c))
+* **tabstrip:** ie11 squashes tabs ([bf05fa5](https://github.com/telerik/kendo-themes/commit/bf05fa5))
+* **toolbar:** align splitbutton parts ([979e7b3](https://github.com/telerik/kendo-themes/commit/979e7b3))
+* **toolbar:** templates items alignment ([804cbdf](https://github.com/telerik/kendo-themes/commit/804cbdf))
+
+
+
+
 <a name="2.57.0"></a>
 # [2.57.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.56.0...@progress/kendo-theme-default@2.57.0) (2018-10-01)
 

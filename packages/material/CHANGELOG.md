@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.2"></a>
+## 1.3.2 (2018-10-16)
+
+
+### Bug Fixes
+
+* **dropdowns:** misalignments in editable row of grid for Material Theme ([172bd3d](https://github.com/telerik/kendo-themes/commit/172bd3d)), closes [telerik/kendo-themes#351](https://github.com/telerik/kendo-themes/issues/351)
+* **grid:** drag and drop clues improvements ([06c6dbe](https://github.com/telerik/kendo-themes/commit/06c6dbe))
+* **inputs:** apply invalid state only trough class name instead of pseudo class ([4e0c8a2](https://github.com/telerik/kendo-themes/commit/4e0c8a2))
+* **multiselect:** increase close button hit area ([520d731](https://github.com/telerik/kendo-themes/commit/520d731))
+* **pager:** font-size and alignment corrections ([d44c8dd](https://github.com/telerik/kendo-themes/commit/d44c8dd))
+* **tabstrip:** extract tabstrip variables and use correct values ([699be9c](https://github.com/telerik/kendo-themes/commit/699be9c))
+
+
+
+
 <a name="1.3.1"></a>
 ## [1.3.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.3.0...@progress/kendo-theme-material@1.3.1) (2018-10-01)
 

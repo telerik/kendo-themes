@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.14.2"></a>
+## 2.14.2 (2018-10-16)
+
+
+### Bug Fixes
+
+* **inputs:** apply invalid state only trough class name instead of pseudo class ([4e0c8a2](https://github.com/telerik/kendo-themes/commit/4e0c8a2))
+* **pager:** font-size and alignment corrections ([d44c8dd](https://github.com/telerik/kendo-themes/commit/d44c8dd))
+* **pager:** use correct border radius in first / last links when in rtl ([ec3d97d](https://github.com/telerik/kendo-themes/commit/ec3d97d))
+* **tabstrip:** extract tabstrip variables and use correct values ([699be9c](https://github.com/telerik/kendo-themes/commit/699be9c))
+
+
+
+
 <a name="2.14.1"></a>
 ## [2.14.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.14.0...@progress/kendo-theme-bootstrap@2.14.1) (2018-10-01)
 
