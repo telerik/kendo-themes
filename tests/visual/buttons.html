@@ -9,21 +9,18 @@
 
     <style>
         #test-area {
-            max-width: 1024px;
-            display: grid;
-            grid-gap: 20px 20px;
             grid-template-columns: 1fr;
         }
         #test-area > section.buttons {
             display: grid;
-            grid-gap: 10px 10px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" class="grid">
 
         <section class="buttons">
             <span>Default</span>

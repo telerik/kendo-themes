@@ -9,13 +9,19 @@ body {
 
 #test-area {
     padding: 20px;
+    max-width: 1024px;
+    box-sizing: border-box;
+    gap: 20px;
 }
-
 #test-area::after {
     content: "";
     clear: both;
     display: block;
 }
+#test-area.grid {
+    display: grid;
+}
+#test-area.grid::after { display: none; }
 
 .section {
     margin: 10px;
@@ -53,3 +59,15 @@ body {
 .k-i-loading:after {
     animation: none;
 }
+
+
+
+/* Grid utilites */
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-5 { grid-column: span 5; }
+.col-6 { grid-column: span 6; }
+.col-7 { grid-column: span 7; }
+.col-8 { grid-column: span 8; }
+.col-all { grid-column: 1 / -1; }

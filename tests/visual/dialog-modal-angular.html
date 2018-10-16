@@ -9,19 +9,20 @@
 
     <style>
         /* ensure test area size, due to fixed element */
-        html, body, #test-area, .k-dialog-wrapper {
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-            width: 300px;
-            height: 300px;
+        #test-area {
+            width: 1024px;
+            height: 768px;
+            align-items: stretch;
+        }
+        .k-dialog-wrapper {
+            position: relative;
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area">
-        <!-- Angular -->
+    <div id="test-area" class="grid">
+
         <kendo-dialog class="k-dialog-wrapper" dir="ltr">
             <div class="k-overlay"></div>
 
@@ -52,8 +53,8 @@
                 </kendo-dialog-actions>
             </div>
         </kendo-dialog>
+
     </div>
 
 </body>
 </html>
-
