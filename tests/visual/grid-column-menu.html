@@ -9,7 +9,7 @@
 
     <style>
         #test-area {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .k-animation-container,
@@ -21,6 +21,77 @@
 <body>
 
     <div id="test-area" class="grid">
+
+        <div class="section">
+            <kendo-popup class="k-animation-container k-animation-container-shown">
+                <div class="k-popup">
+                    <span class="k-column-chooser-title">Columns</span>
+                    <kendo-grid-columnlist class="k-column-list-wrapper">
+                        <div class="k-column-list">
+                            <label class="k-column-list-item">
+                                <input class="k-checkbox" type="checkbox">
+                                <span class="k-checkbox-label">Column name</span>
+                            </label><label class="k-column-list-item">
+                                <input class="k-checkbox" type="checkbox">
+                                <span class="k-checkbox-label">Column name</span>
+                            </label><label class="k-column-list-item">
+                                <input class="k-checkbox" type="checkbox">
+                                <span class="k-checkbox-label">Column name</span>
+                            </label><label class="k-column-list-item">
+                                <input class="k-checkbox" type="checkbox">
+                                <span class="k-checkbox-label">Column name</span>
+                            </label>
+                        </div>
+                        <div class="k-action-buttons">
+                            <button class="k-button">Reset</button>
+                            <button class="k-button k-primary">Apply</button>
+                        </div>
+                    </kendo-grid-columnlist>
+                </div>
+            </kendo-popup>
+        </div>
+
+        <div class="section">
+            <div class="k-animation-container" style="overflow: visible; display: block;">
+                <form  class="k-filter-menu k-popup k-group k-reset k-state-border-up">
+                    <div>
+                        <div class="k-filter-help-text">Show items with value that:</div>
+                        <span class="k-widget k-dropdown k-header">
+                            <span class="k-dropdown-wrap k-state-default">
+                                <span class="k-input">Is equal to</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-60-down"></span>
+                                </span>
+                            </span>
+                        </span>
+                        <span class="k-widget k-numerictextbox">
+                            <span class="k-numeric-wrap k-state-default">
+                                <input type="text" class="k-formatted-value k-input">
+                                <span class="k-select">
+                                    <span class="k-link k-link-increase">
+                                        <span class="k-icon k-i-arrow-60-up"></span>
+                                    </span>
+                                    <span class="k-link k-link-decrease">
+                                        <span class="k-icon k-i-arrow-60-down"></span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                        <span class="k-widget k-dropdown k-header k-filter-and">
+                            <span class="k-dropdown-wrap k-state-default">
+                                <span class="k-input">And</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-60-down"></span>
+                                </span>
+                            </span>
+                        </span>
+                        <div>
+                            <button type="submit" class="k-button k-primary">Filter</button><button type="reset" class="k-button">Clear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
 
         <div class="section">
             <kendo-popup class="k-animation-container k-animation-container-shown">
@@ -201,34 +272,6 @@
             </kendo-popup>
         </div>
 
-        <div class="section">
-            <kendo-popup class="k-animation-container k-animation-container-shown">
-                <div class="k-popup">
-                    <span class="k-column-chooser-title">Columns</span>
-                    <kendo-grid-columnlist class="k-column-list-wrapper">
-                        <div class="k-column-list">
-                            <label class="k-column-list-item">
-                                <input class="k-checkbox" type="checkbox">
-                                <span class="k-checkbox-label">Column name</span>
-                            </label><label class="k-column-list-item">
-                                <input class="k-checkbox" type="checkbox">
-                                <span class="k-checkbox-label">Column name</span>
-                            </label><label class="k-column-list-item">
-                                <input class="k-checkbox" type="checkbox">
-                                <span class="k-checkbox-label">Column name</span>
-                            </label><label class="k-column-list-item">
-                                <input class="k-checkbox" type="checkbox">
-                                <span class="k-checkbox-label">Column name</span>
-                            </label>
-                        </div>
-                        <div class="k-action-buttons">
-                            <button class="k-button">Reset</button>
-                            <button class="k-button k-primary">Apply</button>
-                        </div>
-                    </kendo-grid-columnlist>
-                </div>
-            </kendo-popup>
-        </div>
     </div>
 
 </body>
