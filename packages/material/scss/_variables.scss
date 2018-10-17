@@ -246,7 +246,7 @@ $cell-padding: 8px !default;
 $zindex-popup: 1;
 $zindex-window: 2;
 
-$rgba-transparent: rgba( 0, 0, 0, 0 );
+$rgba-transparent: rgba( $black, 0 );
 
 
 // Theme colors
@@ -609,7 +609,7 @@ $grid-header-text: if($theme-type == dark, $light-secondary-text, $dark-secondar
 $grid-header-border: $grid-border !default;
 $grid-header-gradient: null !default;
 
-// ZHEKOV TODO: we need this, so k-alt won't override it. When we remove k-alt, we can make this null.
+// TODO(ZHEKOV): we need this, so k-alt won't override it. When we remove k-alt, we can make this null.
 $grid-alt-bg: transparent !default;
 $grid-alt-text: null !default;
 $grid-alt-border: null !default;
@@ -737,7 +737,7 @@ $notification-error-text: contrast-wcag( $notification-error-bg ) !default;
 
 // Link
 $link-text: $secondary !default;
-$link-hover-text: desaturate(darken($secondary, 5), 25) !default;
+$link-hover-text: $secondary-darker !default;
 
 
 // Chart
@@ -1016,7 +1016,7 @@ $mediaplayer-toolbar-text: $toolbar-text !default;
 
 // Tooltip
 $tooltip-bg: material-color( grey, 700, .9 ) !default;
-$tooltip-text: contrast-wcag( $tooltip-bg ) !default;
+$tooltip-text: get-base-contrast( grey, 700 ) !default;
 
 
 // Progressbar
@@ -1037,7 +1037,7 @@ $progressbar-indeterminate-text: $progressbar-text !default;
 $progressbar-indeterminate-border: $progressbar-border !default;
 $progressbar-indeterminate-gradient: null !default;
 
-$progressbar-chunk-border: $bg-color !default;
+$progressbar-chunk-border: $component-bg !default;
 
 
 
