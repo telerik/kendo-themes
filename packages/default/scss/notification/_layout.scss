@@ -72,37 +72,30 @@
     }
 
     // RTL
-    &[dir='rtl'] .k-notification-wrap,
-    .k-rtl .k-notification-wrap {
-        padding-left: $notification-padding-end;
-        padding-right: $notification-padding-x;
-
-        > .k-notification-content {
+    .k-notification-container[dir='rtl'],
+    .k-rtl .k-notification {
+        .k-notification-wrap {
             padding-right: $notification-padding-x;
-        }
 
-        > .k-icon {
-            margin-right: 0;
-            margin-left: $padding-x;
-        }
-
-        > .k-i-close {
-            margin: 0;
-            right: auto;
-            left: $notification-padding-x;
-        }
-    }
-
-    .k-notification-container {
-        &[dir='rtl'] {
-            .k-notification-wrap {
-                padding-left: $notification-padding-x;
-            }
-
-            .k-notification-closable > .k-notification-wrap {
-                padding-left: $notification-padding-end;
+            > .k-notification-content {
                 padding-right: $notification-padding-x;
             }
+
+            > .k-icon {
+                margin-right: 0;
+                margin-left: $padding-x;
+            }
+
+            > .k-i-close {
+                margin: 0;
+                right: auto;
+                left: $notification-padding-x;
+            }
+        }
+
+        .k-notification-closable > .k-notification-wrap {
+            padding-left: $notification-padding-end;
+            padding-right: $notification-padding-x;
         }
     }
 }
