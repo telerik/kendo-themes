@@ -52,7 +52,7 @@ $calendar-view-gap: 48px !default;
                 6 * $calendar-month-cell-size,
                 $calendar-weekdays-height,
                 -3 * $calendar-meta-cell-size,
-                .45
+                .5
             );
             padding: $height-difference 0;
 
@@ -69,6 +69,8 @@ $calendar-view-gap: 48px !default;
         }
 
         th {
+            height: $calendar-weekdays-height;
+            box-sizing: border-box;
             font-weight: 700;
             text-transform: uppercase;
         }

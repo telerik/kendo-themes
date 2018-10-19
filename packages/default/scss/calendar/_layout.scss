@@ -149,7 +149,7 @@ $calendar-view-gap: 32px !default;
             .k-content {
                 margin: 0;
                 width: 100%;
-                height: 15em;
+                min-height: 15em;
                 text-align: right;
                 float: left;
 
