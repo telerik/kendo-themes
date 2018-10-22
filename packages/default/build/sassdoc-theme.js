@@ -54,8 +54,14 @@ module.exports = function(dest, context) {
     data.meta = context.meta;
 
     return new Promise(function(done, error) {
-        let output = template(data);
-        output = output.replace(/\r?\n/g, '\n');
-        fs.writeFile(path.join('docs', 'customization.md'), output);
-    });
+            let output = template(data);
+            output = output.replace(/\r?\n/g, '\n');
+            fs.writeFile(path.join('docs', 'customization.md'), output, (err) => {
+                if (err) {
+                    error(err);
+                } else {
+                    done(output);
+                }
+            });
+        });
 };
