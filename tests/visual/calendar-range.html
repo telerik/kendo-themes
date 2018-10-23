@@ -11,162 +11,70 @@
 
     <div id="test-area" class="grid">
 
+        <span>kendo-jquery multiview month</span>
         <section>
-            <kendo-multiviewcalendar class="k-widget k-calendar k-calendar-infinite k-calendar-range">
-                <button class="k-button k-prev-view">
-                    <span class="k-icon k-i-arrow-chevron-left"></span>
-                </button>
-                <kendo-calendar-horizontal class="k-calendar-view k-calendar-monthview">
-                    <kendo-calendar-header class="k-calendar-header">
-                        <span class="k-button k-bare k-title">
-                            April 2018 - May 2018
-                        </span>
-                        <span class="k-today">TODAY</span>
-                    </kendo-calendar-header>
-                    <table class="k-content">
-                        <colgroup><col><col><col><col><col><col><col></colgroup>
-                        <tbody>
+            <div class="k-widget k-calendar k-calendar-range k-selectable">
+                <div class="k-calendar-header">
+                    <a class="k-button k-title">October 2018 - November 2018</a>
+                    <span class="k-calendar-nav">
+                        <a class="k-button k-button-icon k-prev-view"><span class="k-icon k-i-arrow-60-left"></span></a>
+                        <a class="k-button k-button-icon k-next-view"><span class="k-icon k-i-arrow-60-right"></span></a>
+                    </span>
+                </div>
+                <div class="k-calendar-view k-calendar-monthview">
+                    <table class="k-content k-month">
+                        <thead>
                             <tr>
                                 <th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th>
                             </tr>
+                        </thead>
+                        <tbody>
                             <tr>
-                                <td class="k-weekend">
-                                    <span class="k-link"> 1 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 2 </span>
-                                </td>
-
-                                <td class="k-today">
-                                    <span class="k-link"> 3 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 4 </span>
-                                </td>
-
-                                <td class="k-state-focused">
-                                    <span class="k-link"> 5 </span>
-                                </td>
-
-                                <td class="k-state-hover">
-                                    <span class="k-link"> 6 </span>
-                                </td>
-
-                                <td class="k-weekend">
-                                    <span class="k-link"> 7 </span>
-                                </td>
-
-                            </tr><tr>
-
-
-                                <td class="k-weekend">
-                                    <span class="k-link"> 8 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 9 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 10 </span>
-                                </td>
-
-                                <td class="k-state-selected">
-                                    <span class="k-link"> 11 </span>
-                                </td>
-
-                                <td class="k-state-selected k-state-focused">
-                                    <span class="k-link"> 12 </span>
-                                </td>
-
-                                <td class="k-state-selected k-state-hover">
-                                    <span class="k-link"> 13 </span>
-                                </td>
-
-                                <td class="k-weekend">
-                                    <span class="k-link"> 14 </span>
-                                </td>
-
-                            </tr><tr>
-
-
-                                <td class="k-weekend">
-                                    <span class="k-link"> 15 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 16 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 17 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 18 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 19 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 20 </span>
-                                </td>
-
-                                <td class="k-weekend">
-                                    <span class="k-link"> 21 </span>
-                                </td>
-
-                            </tr><tr>
-
-
-                                <td class="k-weekend">
-                                    <span class="k-link"> 22 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 23 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 24 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 25 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 26 </span>
-                                </td>
-
-                                <td class="k-range-start k-state-selected">
-                                    <span class="k-link"> 27 </span>
-                                </td>
-
-                                <td class="k-weekend k-range-mid">
-                                    <span class="k-link"> 28 </span>
-                                </td>
-
-                            </tr><tr>
-
-
-                                <td class="k-weekend k-range-mid">
-                                    <span class="k-link"> 29 </span>
-                                </td>
-
-                                <td class="k-range-mid k-range-split-end">
-                                    <span class="k-link"> 30 </span>
-                                </td>
+                                <td>&nbsp;</td>
+                                <td><a class="k-link"> 1 </a></td>
+                                <td><a class="k-link"> 2 </a></td>
+                                <td><a class="k-link"> 3 </a></td>
+                                <td><a class="k-link"> 4 </a></td>
+                                <td><a class="k-link"> 5 </a></td>
+                                <td class="k-weekend"><a class="k-link"> 6 </a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend"><a class="k-link"> 7 </a></td>
+                                <td><a class="k-link"> 8 </a></td>
+                                <td class="k-state-hover"><a class="k-link"> 9 </a></td>
+                                <td class="k-state-focused"><a class="k-link"> 10 </a></td>
+                                <td class="k-state-selected"><a class="k-link"> 11 </a></td>
+                                <td><a class="k-link"> 12 </a></td>
+                                <td class="k-weekend"><a class="k-link"> 13 </a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend"><a class="k-link"> 14 </a></td>
+                                <td><a class="k-link"> 15 </a></td>
+                                <td class="k-state-hover k-state-focused"><a class="k-link"> 16 </a></td>
+                                <td class="k-state-selected k-state-hover"><a class="k-link"> 17 </a></td>
+                                <td class="k-state-selected k-state-focused"><a class="k-link"> 18 </a></td>
+                                <td><a class="k-link"> 19 </a></td>
+                                <td class="k-weekend"><a class="k-link"> 20 </a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend"><a class="k-link"> 21 </a></td>
+                                <td><a class="k-link"> 22 </a></td>
+                                <td><a class="k-link"> 23 </a></td>
+                                <td><a class="k-link"> 24 </a></td>
+                                <td><a class="k-link"> 25 </a></td>
+                                <td><a class="k-link"> 26 </a></td>
+                                <td class="k-weekend"><a class="k-link"> 27 </a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend"><a class="k-link"> 28 </a></td>
+                                <td class="k-today"><a class="k-link"> 29 </a></td>
+                                <td><a class="k-link"> 30 </a></td>
+                                <td><a class="k-link"> 31 </a></td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr><tr>
+                            </tr>
+                            <tr>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
@@ -176,148 +84,263 @@
                                 <td>&nbsp;</td>
                             </tr>
                         </tbody>
+                    </table><!--
+                    --><table class="k-content k-month">
+                        <thead>
+                            <tr>
+                                <th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td><a class="k-link"> 1 </a></td>
+                                <td><a class="k-link"> 2 </a></td>
+                                <td class="k-weekend"><a class="k-link"> 3 </a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend"><a class="k-link"> 4 </a></td>
+                                <td><a class="k-link"> 5 </a></td>
+                                <td><a class="k-link"> 6 </a></td>
+                                <td><a class="k-link"> 7 </a></td>
+                                <td><a class="k-link"> 8 </a></td>
+                                <td><a class="k-link"> 9 </a></td>
+                                <td class="k-weekend"><a class="k-link"> 10 </a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend"><a class="k-link"> 11 </a></td>
+                                <td><a class="k-link"> 12 </a></td>
+                                <td><a class="k-link"> 13 </a></td>
+                                <td><a class="k-link"> 14 </a></td>
+                                <td><a class="k-link"> 15 </a></td>
+                                <td><a class="k-link"> 16 </a></td>
+                                <td class="k-weekend"><a class="k-link"> 17 </a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend"><a class="k-link"> 18 </a></td>
+                                <td><a class="k-link"> 19 </a></td>
+                                <td><a class="k-link"> 20 </a></td>
+                                <td><a class="k-link"> 21 </a></td>
+                                <td><a class="k-link"> 22 </a></td>
+                                <td><a class="k-link"> 23 </a></td>
+                                <td class="k-weekend"><a class="k-link"> 24 </a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend"><a class="k-link"> 25 </a></td>
+                                <td><a class="k-link"> 26 </a></td>
+                                <td><a class="k-link"> 27 </a></td>
+                                <td><a class="k-link"> 28 </a></td>
+                                <td><a class="k-link"> 29 </a></td>
+                                <td><a class="k-link"> 30 </a></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="k-footer">
+                    <a class="k-link k-nav-today">Monday, October 29, 2018</a>
+                </div>
+            </div>
+        </section>
+
+        <span>kendo-jquery multiview year</span>
+        <section>
+            <div class="k-widget k-calendar k-calendar-range k-selectable">
+                <div class="k-calendar-header">
+                    <a class="k-button k-title">2018 - 2019</a>
+                    <span class="k-calendar-nav">
+                        <a class="k-button k-button-icon k-prev-view"><span class="k-icon k-i-arrow-60-left"></span></a>
+                        <a class="k-button k-button-icon k-next-view"><span class="k-icon k-i-arrow-60-right"></span></a>
+                    </span>
+                </div>
+                <div class="k-calendar-view k-calendar-yearview">
+                    <table class="k-content k-meta-view k-year">
+                        <tbody>
+                            <tr>
+                                <td><a class="k-link"> Jan </a></td>
+                                <td class="k-state-hover"><a class="k-link"> Feb </a></td>
+                                <td class="k-state-focused"><a class="k-link"> Mar </a></td>
+                                <td class="k-state-selected"><a class="k-link"> Apr </a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="k-link"> May </a></td>
+                                <td class="k-today"><a class="k-link"> Jun </a></td>
+                                <td><a class="k-link"> Jul </a></td>
+                                <td><a class="k-link"> Aug </a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="k-link"> Sep </a></td>
+                                <td><a class="k-link"> Oct </a></td>
+                                <td><a class="k-link"> Nov </a></td>
+                                <td><a class="k-link"> Dec </a></td>
+                            </tr>
+                        </tbody>
+                    </table><!--
+                    --><table class="k-content k-meta-view k-year">
+                        <tbody>
+                            <tr>
+                                <td><a class="k-link"> Jan </a></td>
+                                <td><a class="k-link"> Feb </a></td>
+                                <td><a class="k-link"> Mar </a></td>
+                                <td><a class="k-link"> Apr </a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="k-link"> May </a></td>
+                                <td><a class="k-link"> Jun </a></td>
+                                <td><a class="k-link"> Jul </a></td>
+                                <td><a class="k-link"> Aug </a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="k-link"> Sep </a></td>
+                                <td><a class="k-link"> Oct </a></td>
+                                <td><a class="k-link"> Nov </a></td>
+                                <td><a class="k-link"> Dec </a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="k-footer">
+                    <a class="k-link k-nav-today">Monday, October 29, 2018</a>
+                </div>
+            </div>
+        </section>
+
+        <span>kendo-angular multiview month</span>
+        <section>
+            <kendo-multiviewcalendar class="k-widget k-calendar k-calendar-infinite k-calendar-range">
+                <button class="k-button k-prev-view">
+                    <span class="k-icon k-i-arrow-chevron-left"></span>
+                </button>
+                <kendo-calendar-horizontal class="k-calendar-view k-calendar-monthview">
+                    <kendo-calendar-header class="k-calendar-header">
+                        <span class="k-button k-bare k-title">April 2018 - May 2018</span>
+                        <span class="k-today">TODAY</span>
+                    </kendo-calendar-header>
+                    <table class="k-content">
+                        <colgroup>
+                            <col /><col /><col /><col /><col /><col /><col />
+                        </colgroup>
                         <tbody>
                             <tr>
                                 <th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th>
                             </tr>
                             <tr>
-                                <td class="k-weekend k-range-mid k-range-split-start">
-                                    <span class="k-link"> 1 </span>
-                                </td>
-
-                                <td class="k-range-mid">
-                                    <span class="k-link"> 2 </span>
-                                </td>
-
-                                <td class="k-today k-range-end k-state-selected">
-                                    <span class="k-link"> 3 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 4 </span>
-                                </td>
-
-                                <td class="">
-                                    <span class="k-link"> 5 </span>
-                                </td>
-
-                                <td class="">
-                                    <span class="k-link"> 6 </span>
-                                </td>
-
-                                <td class="k-weekend">
-                                    <span class="k-link"> 7 </span>
-                                </td>
-
-                            </tr><tr>
-
-
-                                <td class="k-weekend k-range-start k-state-selected k-state-active">
-                                    <span class="k-link"> 8 </span>
-                                </td>
-
-                                <td class="k-range-mid">
-                                    <span class="k-link"> 9 </span>
-                                </td>
-
-                                <td class="k-range-mid">
-                                    <span class="k-link"> 10 </span>
-                                </td>
-
-                                <td class="k-range-mid">
-                                    <span class="k-link"> 11 </span>
-                                </td>
-
-                                <td class="k-range-mid">
-                                    <span class="k-link"> 12 </span>
-                                </td>
-
-                                <td class="k-range-end k-state-selected">
-                                    <span class="k-link"> 13 </span>
-                                </td>
-
-                                <td class="k-weekend">
-                                    <span class="k-link"> 14 </span>
-                                </td>
-
-                            </tr><tr>
-
-
-                                <td class="k-weekend">
-                                    <span class="k-link"> 15 </span>
-                                </td>
-
-                                <td class="k-range-start k-state-selected">
-                                    <span class="k-link"> 16 </span>
-                                </td>
-
-                                <td class="k-range-mid">
-                                    <span class="k-link"> 17 </span>
-                                </td>
-
-                                <td class="k-range-mid">
-                                    <span class="k-link"> 18 </span>
-                                </td>
-
-                                <td class="k-range-mid">
-                                    <span class="k-link"> 19 </span>
-                                </td>
-
-                                <td class="k-range-mid">
-                                    <span class="k-link"> 20 </span>
-                                </td>
-
-                                <td class="k-weekend k-range-end k-state-selected k-state-active">
-                                    <span class="k-link"> 21 </span>
-                                </td>
-
-                            </tr><tr>
-
-
-                                <td class="k-weekend">
-                                    <span class="k-link"> 22 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 23 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 24 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 25 </span>
-                                </td>
-
-                                <td class="k-range-start k-range-end k-state-selected">
-                                    <span class="k-link"> 26 </span>
-                                </td>
-
-                                <td class="">
-                                    <span class="k-link"> 27 </span>
-                                </td>
-
-                                <td class="k-weekend k-range-start k-range-end k-state-selected k-state-active">
-                                    <span class="k-link"> 28 </span>
-                                </td>
-
-                            </tr><tr>
-
-
-                                <td class="k-weekend">
-                                    <span class="k-link"> 29 </span>
-                                </td>
-
-                                <td>
-                                    <span class="k-link"> 30 </span>
-                                </td>
+                                <td class="k-weekend"><span class="k-link"> 1 </span></td>
+                                <td><span class="k-link"> 2 </span></td>
+                                <td class="k-today"><span class="k-link"> 3 </span></td>
+                                <td><span class="k-link"> 4 </span></td>
+                                <td class="k-state-focused"><span class="k-link"> 5 </span></td>
+                                <td class="k-state-hover"><span class="k-link"> 6 </span></td>
+                                <td class="k-weekend"><span class="k-link"> 7 </span></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend"><span class="k-link"> 8 </span></td>
+                                <td><span class="k-link"> 9 </span></td>
+                                <td><span class="k-link"> 10 </span></td>
+                                <td class="k-state-selected"><span class="k-link"> 11 </span></td>
+                                <td class="k-state-selected k-state-focused"><span class="k-link"> 12 </span></td>
+                                <td class="k-state-selected k-state-hover"><span class="k-link"> 13 </span></td>
+                                <td class="k-weekend"><span class="k-link"> 14 </span></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend"><span class="k-link"> 15 </span></td>
+                                <td><span class="k-link"> 16 </span></td>
+                                <td><span class="k-link"> 17 </span></td>
+                                <td><span class="k-link"> 18 </span></td>
+                                <td><span class="k-link"> 19 </span></td>
+                                <td><span class="k-link"> 20 </span></td>
+                                <td class="k-weekend"><span class="k-link"> 21 </span></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend"><span class="k-link"> 22 </span></td>
+                                <td><span class="k-link"> 23 </span></td>
+                                <td><span class="k-link"> 24 </span></td>
+                                <td><span class="k-link"> 25 </span></td>
+                                <td><span class="k-link"> 26 </span></td>
+                                <td class="k-range-start k-state-selected"><span class="k-link"> 27 </span></td>
+                                <td class="k-weekend k-range-mid"><span class="k-link"> 28 </span></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend k-range-mid"><span class="k-link"> 29 </span></td>
+                                <td class="k-range-mid k-range-split-end"><span class="k-link"> 30 </span></td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
-                            </tr><tr>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody><!--
+                        --><tbody>
+                            <tr>
+                                <th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend k-range-mid k-range-split-start"><span class="k-link"> 1 </span></td>
+                                <td class="k-range-mid"><span class="k-link"> 2 </span></td>
+                                <td class="k-today k-range-end k-state-selected"><span class="k-link"> 3 </span></td>
+                                <td><span class="k-link"> 4 </span></td>
+                                <td><span class="k-link"> 5 </span></td>
+                                <td><span class="k-link"> 6 </span></td>
+                                <td class="k-weekend"><span class="k-link"> 7 </span></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend k-range-start k-state-selected k-state-active"><span class="k-link"> 8 </span></td>
+                                <td class="k-range-mid"><span class="k-link"> 9 </span></td>
+                                <td class="k-range-mid"><span class="k-link"> 10 </span></td>
+                                <td class="k-range-mid"><span class="k-link"> 11 </span></td>
+                                <td class="k-range-mid"><span class="k-link"> 12 </span></td>
+                                <td class="k-range-end k-state-selected"><span class="k-link"> 13 </span></td>
+                                <td class="k-weekend"><span class="k-link"> 14 </span></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend"><span class="k-link"> 15 </span></td>
+                                <td class="k-range-start k-state-selected"><span class="k-link"> 16 </span></td>
+                                <td class="k-range-mid"><span class="k-link"> 17 </span></td>
+                                <td class="k-range-mid"><span class="k-link"> 18 </span></td>
+                                <td class="k-range-mid"><span class="k-link"> 19 </span></td>
+                                <td class="k-range-mid"><span class="k-link"> 20 </span></td>
+                                <td class="k-weekend k-range-end k-state-selected k-state-active"><span class="k-link"> 21 </span></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend"><span class="k-link"> 22 </span></td>
+                                <td><span class="k-link"> 23 </span></td>
+                                <td><span class="k-link"> 24 </span></td>
+                                <td><span class="k-link"> 25 </span></td>
+                                <td class="k-range-start k-range-end k-state-selected"><span class="k-link"> 26 </span></td>
+                                <td><span class="k-link"> 27 </span></td>
+                                <td class="k-weekend k-range-start k-range-end k-state-selected k-state-active"><span class="k-link"> 28 </span></td>
+                            </tr>
+                            <tr>
+                                <td class="k-weekend"><span class="k-link"> 29 </span></td>
+                                <td><span class="k-link"> 30 </span></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
@@ -335,6 +358,7 @@
             </kendo-multiviewcalendar>
         </section>
 
+        <span>kendo-angular multiview year</span>
         <section>
             <kendo-multiviewcalendar class="k-widget k-calendar k-calendar-infinite k-calendar-range">
                 <button class="k-button k-prev-view">
@@ -348,56 +372,30 @@
                         <span class="k-today">TODAY</span>
                     </kendo-calendar-header>
                     <table class="k-content">
-                        <colgroup><col><col><col><col><col><col><col></colgroup>
+                        <colgroup>
+                            <col /><col /><col /><col /><col /><col /><col />
+                        </colgroup>
                         <tbody>
                             <tr>
-                                <td class="k-state-selected k-range-end k-range-split-start">
-                                    <span class="k-link">Jan</span>
-                                </td>
-                                <td>
-                                    <span class="k-link">Feb</span>
-                                </td>
-                                <td>
-                                    <span class="k-link">Mar</span>
-                                </td>
-                                <td>
-                                    <span class="k-link">Apr</span>
-                                </td>
-                                <td>
-                                    <span class="k-link">May</span>
-                                </td>
-                            </tr><tr>
-                                <td>
-                                    <span class="k-link">Jun</span>
-                                </td>
-                                <td>
-                                    <span class="k-link">Jul</span>
-                                </td>
-                                <td>
-                                    <span class="k-link">Aug</span>
-                                </td>
-                                <td>
-                                    <span class="k-link">Sep</span>
-                                </td>
-                                <td>
-                                    <span class="k-link">Oct</span>
-                                </td>
-                            </tr><tr>
-                                <td>
-                                    <span class="k-link">Nov</span>
-                                </td>
-                                <td class="k-range-start k-range-end k-state-selected">
-                                    <span class="k-link">Dec</span>
-                                </td>
-                                <td>
-                                    <span class="k-link">&nbsp;</span>
-                                </td>
-                                <td>
-                                    <span class="k-link">&nbsp;</span>
-                                </td>
-                                <td>
-                                    <span class="k-link">&nbsp;</span>
-                                </td>
+                                <td class="k-state-selected k-range-end k-range-split-start"><span class="k-link">Jan</span></td>
+                                <td><span class="k-link">Feb</span></td>
+                                <td><span class="k-link">Mar</span></td>
+                                <td><span class="k-link">Apr</span></td>
+                                <td><span class="k-link">May</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="k-link">Jun</span></td>
+                                <td><span class="k-link">Jul</span></td>
+                                <td><span class="k-link">Aug</span></td>
+                                <td><span class="k-link">Sep</span></td>
+                                <td><span class="k-link">Oct</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="k-link">Nov</span></td>
+                                <td class="k-range-start k-range-end k-state-selected"><span class="k-link">Dec</span></td>
+                                <td><span class="k-link">&nbsp;</span></td>
+                                <td><span class="k-link">&nbsp;</span></td>
+                                <td><span class="k-link">&nbsp;</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -407,6 +405,7 @@
                 </button>
             </kendo-multiviewcalendar>
         </section>
+
     </div>
 
 </body>
