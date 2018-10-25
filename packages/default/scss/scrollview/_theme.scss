@@ -9,9 +9,16 @@ $webkit-highlight-color: rgba(0, 0, 0, 0) !default;
 @include exports('scrollview/theme') {
 
     .k-pages > li,
-    .k-scrollview-pageable > li.k-button {
+    .k-scrollview-nav > li.k-link {
+        @include appearance( button );
+
         background-image: none;
         box-shadow: $scrollview-pagebutton-shadow;
+        background-clip: padding-box;
+
+        &.k-primary {
+            @include appearance( primary-button );
+        }
     }
     .k-pages > li {
         border-color: $button-border;
