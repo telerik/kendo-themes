@@ -12,14 +12,10 @@ $scrollview-navigation-color: $base-text;
         }
     }
 
-    .k-scrollview-pageable {
+    .k-scrollview-nav {
 
-        li.k-button {
+        li.k-link {
             background-color: rgba(black, $scrollview-text-opacity);
-
-            &.k-primary {
-                background-color: $primary;
-            }
         }
     }
 }

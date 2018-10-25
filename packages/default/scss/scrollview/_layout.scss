@@ -3,19 +3,20 @@
 
 $scrollview-pager-offset: 20px !default;
 $scrollview-pager-item-spacing: 20px !default;
+$scrollview-pager-item-border-width: 1px !default;
 
 @include exports('scrollview/layout') {
     $scrollview-page-button-size: 8px;
     $scrollview-arrow-icon-size: 4.5em;
 
-    .k-scrollview-wrap {
+    .k-scrollview {
         position: relative;
         overflow: hidden;
         outline: 0;
         display: block;
     }
 
-    .k-scrollview {
+    .k-scrollview-wrap {
         list-style-type: none;
         position: absolute;
         margin: 0;
@@ -38,7 +39,7 @@ $scrollview-pager-item-spacing: 20px !default;
     }
 
     .k-pages,
-    .k-scrollview-pageable {
+    .k-scrollview-nav {
         margin: 0 auto;
         padding: 0;
         width: 100%;
@@ -52,7 +53,7 @@ $scrollview-pager-item-spacing: 20px !default;
         pointer-events: none;
     }
     .k-pages > li,
-    .k-scrollview-pageable > li.k-button {
+    .k-scrollview-nav > li.k-link {
         margin: 0 $scrollview-pager-item-spacing;
         padding: 0;
         width: $scrollview-page-button-size;
@@ -61,6 +62,8 @@ $scrollview-pager-item-spacing: 20px !default;
         vertical-align: middle;
         display: inline-block;
         flex: 0 0 $scrollview-page-button-size;
+        border-width: $scrollview-pager-item-border-width;
+        border-style: solid;
         border-radius: 50%;
         cursor: pointer;
         pointer-events: all;
@@ -138,13 +141,6 @@ $scrollview-pager-item-spacing: 20px !default;
             left: 0;
             display: inline-block;
         }
-    }
-
-    .k-ff18 .km-scrollview > div,
-    .k-ff19 .km-scrollview > div,
-    .k-ff20 .km-scrollview > div,
-    .k-ff21 .km-scrollview > div {
-        width: 0;
     }
 
     .km-pages {

@@ -3,7 +3,7 @@
     .k-scrollview {}
 
     .k-pages,
-    .k-scrollview-pageable {
+    .k-scrollview-nav {
         margin-left: $carousel-control-width;
         margin-right: $carousel-control-width;
         width: auto;
@@ -24,7 +24,7 @@
     }
 
     .k-pages > li,
-    .k-scrollview-pageable > li.k-button {
+    .k-scrollview-nav > li.k-link {
         background-image: none;
         background-color: rgba($carousel-indicator-active-bg, .5);
     }
