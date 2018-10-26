@@ -1,76 +1,38 @@
-$calendar-width: 350px !default;
-$calendar-line-height: 3 !default;
-$calendar-header-border: 0 !default;
-$calendar-header-padding-x: 0 !default;
-$calendar-header-padding-y: 0 !default;
-$calendar-cell-padding-y: 0 !default;
-$calendar-cell-padding-x: 0 !default;
-$calendar-other-month-opacity: 1 !default;
-$calendar-cell-size: 40px !default;
-$calendar-month-cell-size: 40px !default;
-$calendar-meta-cell-size: 80px !default;
-$calendar-weekdays-height: $calendar-month-cell-size !default;
-$calendar-century-view-line-height: $calendar-meta-cell-size !default;
-$calendar-century-view-text-align: center !default;
-$calendar-footer-height: $calendar-month-cell-size !default;
-$calendar-multiview-button-style: detached !default;
-$calendar-multiview-button-size: 40px !default;
-$calendar-view-gap: 48px !default;
-
 @import "~@progress/kendo-theme-default/scss/calendar/layout";
 
-@include exports ('calendar/layout/material') {
+@include exports ("calendar/layout/material") {
 
     .k-calendar {
-        .k-title {
+        padding-left: $calendar-content-padding-x;
+        padding-right: $calendar-content-padding-x;
+
+        .k-header {
+            padding-bottom: 0;
+        }
+
+        .k-title,
+        .k-nav-fast,
+        .k-nav-today {
+            font-weight: 500;
             text-transform: none;
         }
-    }
-
-    .k-calendar:not(.k-calendar-infinite) {
-        font-weight: 700;
-        font-size: $font-size-sm;
-        padding: 10px 10px 0;
-
-        .k-content {
-            .k-link {
-                width: $calendar-month-cell-size;
-                height: $calendar-month-cell-size;
-                line-height: $calendar-month-cell-size;
-            }
-
-            td,
-            .k-link {
-                @include border-radius( $calendar-month-cell-size / 2 );
-            }
-        }
-
-        .k-meta-view {
-            // height differences between the default and meta views
-            // cause unpleasant changes during view changes
-            $height-difference: add-three(
-                6 * $calendar-month-cell-size,
-                $calendar-weekdays-height,
-                -3 * $calendar-meta-cell-size,
-                .5
-            );
-            padding: $height-difference 0;
-
-            .k-link {
-                width: $calendar-meta-cell-size;
-                height: $calendar-meta-cell-size;
-                line-height: $calendar-meta-cell-size;
-            }
-
-            td,
-            .k-link {
-                @include border-radius( $calendar-meta-cell-size / 2 );
-            }
-        }
-
         th {
+            font-weight: 500;
+        }
+        tbody th {
             font-weight: 700;
-            text-transform: uppercase;
+        }
+
+        .k-century,
+        .k-calendar-centuryview {
+            .k-link {
+                text-align: center;
+            }
         }
     }
+    .k-calendar-range,
+    .k-calendar-infinite {
+        padding: 0;
+    }
+
 }

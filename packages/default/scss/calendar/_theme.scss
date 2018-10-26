@@ -1,22 +1,16 @@
-$calendar-header-shadow: 0 1px 3px 1px rgba(black, .1) !default;
-$calendar-weekend-bg: darken($widget-bg, 2.35) !default;
-$calendar-week-number-bg: darken( $widget-bg, 5 ) !default;
-$calendar-week-number-text: $node-text !default;
-$calendar-week-day-text: $header-text !default;
-$node-hovered-selected-bg: blend-multiply( $list-item-selected-bg, $list-item-hovered-bg ) !default;
-$calendar-range-selection: lighten($accent, 23%) !default;
-
 // Styling of today date
 // color - mark the today date with a different text color
 // box - instead of changing the text color, show a box around the date
 $calendar-today-style: color !default;
-$calendar-navigation-bg: $base-bg !default;
-$calendar-navigation-border: $base-border !default;
-$calendar-focus-shadow: $list-item-focused-shadow !default;
-$calendar-selected-focus-shadow: $calendar-focus-shadow !default;
+$calendar-today-color: $accent;
 
 @include exports('calendar/theme') {
     .k-calendar {
+        @include fill(
+            $calendar-text,
+            $calendar-bg,
+            $calendar-border
+        );
         background-clip: padding-box;
 
         .k-ie11 &,
@@ -28,7 +22,13 @@ $calendar-selected-focus-shadow: $calendar-focus-shadow !default;
 
         // Header / footer
         .k-header {
-            @include appearance( header );
+            @include fill(
+                $calendar-header-text,
+                $calendar-header-bg,
+                inherit,
+                $calendar-header-gradient
+            );
+            @include box-shadow( $calendar-header-shadow );
         }
 
         .k-nav-prev,
@@ -36,114 +36,112 @@ $calendar-selected-focus-shadow: $calendar-focus-shadow !default;
         .k-nav-fast {
             &:hover,
             &.k-state-hover {
-                @include appearance( hovered-header );
+                @include appearance( hovered-button );
             }
 
             &:active {
-                @include appearance( selected-header );
-            }
-        }
-        .k-footer .k-nav-today {
-            color: $link-text;
-
-            &:hover {
-                color: $link-hover-text;
+                @include appearance( pressed-button );
             }
         }
 
 
-        // Content
-        .k-content thead {
-            @include appearance( header );
-            color: $calendar-week-day-text;
-            background-color: transparent;
+        .k-calendar-header {
+            .k-button { @extend .k-button.k-flat; }
         }
 
-        .k-header {
-            border-bottom-color: $panel-border;
-            box-shadow: $calendar-header-shadow;
+
+        // Today navigation
+        .k-footer .k-nav-today,
+        .k-calendar-header .k-today {
+            color: $calendar-today-nav-text;
+
+            &:hover,
+            &:focus {
+                color: $calendar-today-nav-hovered-text;
+            }
         }
 
+
+        // Header cells
+        .k-content th {
+            color: $calendar-header-cell-text;
+        }
+
+
+        // Special days
         .k-content .k-today {
             @if $calendar-today-style == box {
                 .k-link {
-                    box-shadow: inset 0 0 0 1px $accent;
+                    box-shadow: inset 0 0 0 1px $calendar-today-color;
                 }
-
                 &.k-state-focused .k-link {
-                    box-shadow: inset 0 0 0 1px $accent, inset $button-focused-shadow;
+                    box-shadow: inset 0 0 0 1px $calendar-today-color, $calendar-cell-focused-shadow;
                 }
             } @else if $calendar-today-style == color {
-                color: $accent;
-
-                &.k-state-selected .k-link {
-                    color: $accent-contrast;
-                }
+                color: $calendar-today-color;
             }
         }
-
+        .k-weekend {
+            @include fill(
+                $calendar-weekend-text,
+                $calendar-weekend-bg
+            );
+        }
         .k-alt {
-            background-color: $calendar-week-number-bg;
-            color: $calendar-week-number-text;
+            @include fill(
+                $calendar-week-number-text,
+                $calendar-week-number-bg
+            );
         }
 
-        .k-content .k-alt {
-            border-right-color: $widget-border;
-        }
 
+        // Interactive states
         .k-state-hover .k-link {
-            @include appearance( hovered-node );
+            @include fill(
+                $calendar-cell-hovered-text,
+                $calendar-cell-hovered-bg,
+                $calendar-cell-hovered-border
+            );
         }
-
-        // styles are applied to the k-link element inside
-        .k-state-selected {
-            color: inherit;
-            background: transparent;
-            border-color: transparent;
-        }
-
-        .k-state-selected .k-link,
-        .k-weekend.k-state-selected .k-link {
-            @include appearance( selected-node );
+        .k-state-selected .k-link {
+            @include fill(
+                $calendar-cell-selected-text,
+                $calendar-cell-selected-bg,
+                $calendar-cell-selected-border
+            );
 
             &.k-state-hover {
                 background-color: blend-multiply( $node-hovered-bg, $node-selected-bg );
             }
         }
-
         .k-state-focused .k-link {
-            box-shadow: $calendar-focus-shadow;
+            box-shadow: $calendar-cell-focused-shadow;
         }
-
         .k-state-selected.k-state-focused .k-link {
-            box-shadow: $calendar-selected-focus-shadow;
+            box-shadow: $calendar-cell-selected-focus-shadow;
         }
 
-        // Infinite calendar
-        .k-calendar-view {
-            thead {
-                @include appearance( header );
-            }
-        }
 
+        // Calendar navigation
         .k-calendar-navigation {
-            // border underneath highlight
+            @include fill(
+                $calendar-navigation-text,
+                $calendar-navigation-bg
+            );
             box-shadow: inset -1px 0 $calendar-navigation-border;
-            background-color: $calendar-navigation-bg;
 
-            .k-content > ul > li:hover {
-                color: $link-hover-text;
+            li:hover {
+                color: $calendar-today-nav-hovered-text;
             }
         }
-
         .k-calendar-navigation-highlight {
-            border-color: $base-border;
-            background-color: $bg-color;
+            @include fill(
+                $calendar-text,
+                $calendar-bg,
+                $calendar-border
+            );
         }
 
-        .k-calendar-weekdays thead {
-            background-color: $bg-color;
-        }
 
         &[dir='rtl'],
         .k-rtl & {
@@ -152,100 +150,77 @@ $calendar-selected-focus-shadow: $calendar-focus-shadow !default;
             }
         }
 
-        &:not(.k-calendar-infinite) {
-            .k-weekend {
-                background-color: $calendar-weekend-bg;
-            }
-
-            .k-state-hover .k-link {
-                background-color: $node-hovered-bg;
-            }
-
-            .k-content {
-                .k-state-selected,
-                .k-weekend .k-state-selected {
-                    .k-link {
-                        @include appearance( selected-node );
-                    }
-
-                    &.k-state-hover .k-link {
-                        background-color: $node-hovered-selected-bg;
-                    }
-                }
-            }
-        }
     }
 
-    // Range Selection Calendar
+}
+
+
+
+
+@include exports("multiviewcalendar/theme") {
+
     .k-calendar.k-calendar-range {
-        .k-calendar-view {
-            &::after {
-                display: none;
-            }
 
-            $calendar-range-gap: 2% !default;
+        $calendar-range-gap: 1px !default;
+        $calendar-range-bg: rgba( $selected-bg, .25 );
+        $calendar-range-split-size: 5px !default;
 
-            .k-range-start,
-            .k-range-end,
-            .k-range-mid {
-                // sass-lint:disable-block indentation
-                background-image: linear-gradient(
-                    to bottom,
-                    $bg-color,
-                    $bg-color $calendar-range-gap,
-                    $calendar-range-selection $calendar-range-gap,
-                    $calendar-range-selection (100% - $calendar-range-gap),
-                    $bg-color (100% - $calendar-range-gap),
-                    $bg-color 100%
-                );
-            }
+        .k-range-start,
+        .k-range-end,
+        .k-range-mid {
+            // sass-lint:disable-block indentation
+            background-image: linear-gradient(
+                transparent $calendar-range-gap,
+                $calendar-range-bg $calendar-range-gap,
+                $calendar-range-bg calc(100% - #{$calendar-range-gap}),
+                transparent calc(100% - #{$calendar-range-gap})
+            );
+        }
 
-            .k-range-start.k-range-end {
-                background-image: none;
-                background-color: transparent;
-            }
+        .k-range-start.k-range-end {
+            background-image: none;
+            background-color: transparent;
+        }
 
-            .k-range-start,
-            .k-range-end {
-                .k-link {
-                    background-color: $node-selected-bg;
-                }
-            }
-
-            .k-range-start.k-state-active,
-            .k-range-end.k-state-active {
-                .k-link {
-                    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, .2);
-                }
-            }
-
-            $calendar-range-crossover-size: 5px !default;
-
-            .k-range-split-start,
-            .k-range-split-end {
-                position: relative;
-
-                &::after {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    top: $calendar-range-gap;
-                    bottom: $calendar-range-gap;
-                    width: $calendar-range-crossover-size;
-                }
-            }
-
-            .k-range-split-start::after {
-                left: -$calendar-range-crossover-size;
-                right: auto;
-                background-image: linear-gradient(to left, $calendar-range-selection, transparent 100%);
-            }
-
-            .k-range-split-end::after {
-                right: -$calendar-range-crossover-size;
-                left: auto;
-                background-image: linear-gradient(to right, $calendar-range-selection, transparent 100%);
+        .k-range-start,
+        .k-range-end {
+            .k-link {
+                background-color: $node-selected-bg;
             }
         }
+
+        .k-range-start.k-state-active,
+        .k-range-end.k-state-active {
+            .k-link {
+                box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, .2);
+            }
+        }
+
+        .k-range-split-start,
+        .k-range-split-end {
+            position: relative;
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: $calendar-range-gap;
+                bottom: $calendar-range-gap;
+                width: $calendar-range-split-size;
+            }
+        }
+
+        .k-range-split-start::after {
+            left: -$calendar-range-split-size;
+            right: auto;
+            background-image: linear-gradient(to left, $calendar-range-bg, transparent 100%);
+        }
+
+        .k-range-split-end::after {
+            right: -$calendar-range-split-size;
+            left: auto;
+            background-image: linear-gradient(to right, $calendar-range-bg, transparent 100%);
+        }
     }
+
 }

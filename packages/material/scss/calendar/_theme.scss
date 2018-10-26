@@ -1,22 +1,23 @@
-$calendar-header-shadow: none !default;
-$calendar-weekend-bg: transparent !default;
-$calendar-week-number-bg: transparent !default;
-$calendar-week-number-text: rgba(0, 0, 0, .38) !default;
-$calendar-week-day-text: $calendar-week-number-text !default;
-$node-hovered-selected-bg: $node-selected-bg !default;
-$calendar-range-selection: lighten($accent, 43%) !default;
-
 @import "~@progress/kendo-theme-default/scss/calendar/theme";
 
-@include exports('calendar/theme/material') {
-    .k-calendar-weekdays {
-        text-transform: uppercase;
-    }
+@include exports("calendar/theme/material") {
 
     .k-calendar {
 
         .k-state-focused .k-link {
-            @include appearance( hovered-node );
+            @include fill(
+                $calendar-cell-hovered-text,
+                $calendar-cell-hovered-bg,
+                $calendar-cell-hovered-border
+            );
         }
+        .k-state-selected.k-state-focused .k-link {
+            @include fill(
+                $calendar-cell-selected-text,
+                tint($calendar-cell-selected-bg),
+                $calendar-cell-selected-border
+            );
+        }
+
     }
 }
