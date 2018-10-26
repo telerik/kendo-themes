@@ -1,4 +1,5 @@
 @import "~@progress/kendo-theme-default/scss/mixins/core/config-maps";
+@import "~@progress/kendo-theme-default/scss/mixins/core/math";
 @import "~@progress/kendo-theme-default/scss/mixins/colors";
 @import "bootstrap-overrides";
 @import "~bootstrap/scss/functions";
@@ -778,6 +779,96 @@ $card-subtitle-margin-bottom: $h6-margin-bottom !default;
 $card-actions-padding-x: $card-padding-x !default;
 $card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
 $card-actions-border-width: 1px !default;
+
+
+// Calendar
+$calendar-border-width: 1px !default;
+$calendar-font-size: $font-size !default;
+$calendar-line-height: $line-height !default;
+
+$calendar-header-padding-x: $padding-x !default;
+$calendar-header-padding-y: $padding-y !default;
+$calendar-header-padding-x-sm: ($calendar-header-padding-y / 2) !default;
+$calendar-header-padding-y-sm: $calendar-header-padding-x-sm !default;
+$calendar-header-border-width: 1px !default;
+
+$calendar-content-padding-x: $calendar-header-padding-x;
+$calendar-content-padding-y: $calendar-header-padding-y;
+
+$calendar-cell-padding-x: .5rem !default;
+$calendar-cell-padding-y: $calendar-cell-padding-x !default;
+$calendar-cell-line-height: $calendar-line-height !default;
+$calendar-cell-size-px: 40px !default;
+$calendar-cell-size: ($calendar-cell-size-px / $font-size) * 1rem !default;
+$calendar-cell-border-radius: $border-radius !default;
+
+$calendar-header-cell-padding-x: 0 !default;
+$calendar-header-cell-padding-y: ($calendar-cell-padding-y / 2) !default;
+$calendar-header-cell-font-size: $font-size-sm !default;
+$calendar-header-cell-line-height: 2 !default;
+
+$calendar-header-height: 2em !default;
+
+$calendar-navigation-width: 5em !default;
+$calendar-navigation-item-height: 2em !default;
+
+$calendar-view-width: 7 * $calendar-cell-size !default;
+$calendar-view-height: add-two(
+    8 * $calendar-cell-size,
+    $calendar-header-height
+) !default;
+
+$calendar-bg: $widget-bg !default;
+$calendar-text: $widget-text !default;
+$calendar-border: $widget-border !default;
+
+$calendar-header-bg: $header-bg !default;
+$calendar-header-text: $header-text !default;
+$calendar-header-border: $header-border !default;
+$calendar-header-gradient: $header-gradient !default;
+$calendar-header-shadow: none !default;
+
+$calendar-header-cell-text: $calendar-header-text !default;
+$calendar-header-cell-opacity: $disabled-opacity !default;
+
+$calendar-navigation-bg: $calendar-header-bg !default;
+$calendar-navigation-text: $calendar-header-text !default;
+$calendar-navigation-border: $calendar-header-border !default;
+
+$calendar-today-nav-text: $link-text !default;
+$calendar-today-nav-hovered-text: $link-hover-text !default;
+
+$calendar-weekend-text: inherit !default;
+$calendar-weekend-bg: transparent !default;
+$calendar-weekend-opacity: 1 !default;
+
+$calendar-today-style: box !default;
+$calendar-today-color: $accent;
+
+$calendar-week-number-bg: $calendar-header-bg !default;
+$calendar-week-number-text: $calendar-header-text !default;
+$calendar-week-number-opacity: $calendar-header-cell-opacity !default;
+
+$calendar-other-month-opacity: $calendar-header-cell-opacity !default;
+
+$calendar-cell-hovered-bg: $node-hovered-bg !default;
+$calendar-cell-hovered-text: $node-hovered-text !default;
+$calendar-cell-hovered-border: $node-hovered-border !default;
+
+$calendar-cell-selected-bg: $node-selected-bg !default;
+$calendar-cell-selected-text: $node-selected-text !default;
+$calendar-cell-selected-border: $node-selected-border !default;
+
+$calendar-cell-focused-shadow: inset $button-focused-shadow !default;
+$calendar-cell-selected-focus-shadow: inset 0 0 0 2px rgba($primary-button-pressed-border, .5) !default;
+
+
+// Multiview Calendar
+$multiviewcalendar-button-style: stretched !default;
+$multiviewcalendar-button-size: 50px !default;
+$multiviewcalendar-gap: ($calendar-content-padding-x * 2) !default;
+$multiviewcalendar-content-padding-x: ($multiviewcalendar-gap / 2);
+$multiviewcalendar-content-padding-y: $calendar-content-padding-y;
 
 
 // Chat
