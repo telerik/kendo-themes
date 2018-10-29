@@ -44,6 +44,7 @@ then
   commit=$(git rev-parse HEAD)
   repo="https://api.github.com/repos/telerik/kendo-themes/commits/$commit/statuses"
   auth="Authorization: token ${GH_TOKEN}"
+  curl -s -H "$auth" -d '{"state": "success", "context": "WIP"}' $repo > /dev/null 2>&1
   curl -s -H "$auth" -d '{"state": "success", "context": "continuous-integration/travis-ci"}' $repo > /dev/null 2>&1
   curl -s -H "$auth" -d '{"state": "success", "context": "continuous-integration/travis-ci/pr"}' $repo > /dev/null 2>&1
   curl -s -H "$auth" -d '{"state": "success", "context": "continuous-integration/travis-ci/push"}' $repo > /dev/null 2>&1
