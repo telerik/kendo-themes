@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.58.0"></a>
+# [2.58.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.57.1...@progress/kendo-theme-default@2.58.0) (2018-10-29)
+
+
+### Bug Fixes
+
+* **listbox:** add RTL styles ([05cf69f](https://github.com/telerik/kendo-themes/commit/05cf69f))
+* **notification:** base-level rules for RTL throwing SASS compiler error ([becc197](https://github.com/telerik/kendo-themes/commit/becc197))
+* promise is never resolved from npm run api ([054e6e1](https://github.com/telerik/kendo-themes/commit/054e6e1))
+* **notification:** notification content does not wrap on small screens ([c34c958](https://github.com/telerik/kendo-themes/commit/c34c958))
+
+
+### Features
+
+* **scheduler:** add angular scheduler layout styles ([0cafb0e](https://github.com/telerik/kendo-themes/commit/0cafb0e))
+
+
+
+
 <a name="2.57.1"></a>
 ## 2.57.1 (2018-10-16)
 

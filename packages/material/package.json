@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-material",
   "description": "Material theme for Kendo UI",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -31,7 +31,7 @@
     "postpublish": "rm -rf modules && git checkout scss"
   },
   "dependencies": {
-    "@progress/kendo-theme-default": "^2.57.1"
+    "@progress/kendo-theme-default": "^2.58.0"
   },
   "devDependencies": {
     "sass-lint": "^1.7.0",
