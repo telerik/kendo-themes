@@ -249,6 +249,13 @@ $scheduler-event-border-radius: 2px;
     .k-scheduler-layout.k-scheduler-flex-layout {
         display: flex;
         flex-direction: column;
+
+        &.k-scheduler-timelineview,
+        &.k-scheduler-timelineWeekview,
+        &.k-scheduler-timelineMonthview {
+
+            .k-scheduler-header-wrap { border-width: 0; }
+        }
     }
 
     .k-scheduler-header,
