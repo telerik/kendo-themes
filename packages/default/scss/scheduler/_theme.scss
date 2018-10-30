@@ -124,6 +124,13 @@ $scheduler-event-text: #fff !default;
         border-color: $primary-button-border;
     }
 
+    // Edit dialog
+    .k-scheduler-edit-dialog {
+        .k-dialog-buttongroup {
+            border-color: $border-color;
+        }
+    }
+
 }
 
 
