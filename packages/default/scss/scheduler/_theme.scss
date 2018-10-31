@@ -159,10 +159,14 @@ $scheduler-event-text: #fff !default;
     // Agenda view
     .k-scheduler-agendaview {
 
-        tr.k-state-hover {
+        tr.k-state-hover,
+        .k-scheduler-content tr:hover {
             @include appearance( hovered-node );
         }
-        tr.k-state-hover .k-scheduler-datecolumn {
+
+        tr.k-state-hover .k-scheduler-datecolumn,
+        tr:hover .k-scheduler-datecolumn,
+        tr:hover .k-scheduler-groupcolumn {
             @include appearance( panel );
         }
     }

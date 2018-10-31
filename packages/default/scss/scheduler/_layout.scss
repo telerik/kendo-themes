@@ -24,6 +24,10 @@ $scheduler-event-border-radius: 2px;
 
     kendo-scheduler.k-scheduler {
         overflow: hidden;
+
+        &.k-readonly-scheduler .k-event-delete {
+            display: none;
+        }
     }
 
     // Commmon
@@ -250,9 +254,9 @@ $scheduler-event-border-radius: 2px;
         display: flex;
         flex-direction: column;
 
-        &.k-scheduler-timelineview,
-        &.k-scheduler-timelineWeekview,
-        &.k-scheduler-timelineMonthview {
+        &.k-scheduler-timeline-view,
+        &.k-scheduler-timeline-week-view,
+        &.k-scheduler-timeline-month-view {
 
             .k-scheduler-header-wrap { border-width: 0; }
         }
@@ -628,7 +632,8 @@ $scheduler-event-border-radius: 2px;
             opacity: .5;
             visibility: hidden;
         }
-        .k-state-hover .k-task > .k-event-delete {
+        .k-state-hover .k-task > .k-event-delete,
+        .k-scheduler-content tr:hover .k-event-delete {
             visibility: visible;
         }
     }
