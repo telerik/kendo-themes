@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.59.0"></a>
+# [2.59.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.58.0...@progress/kendo-theme-default@2.59.0) (2018-10-31)
+
+
+### Bug Fixes
+
+* add asp-fallback-test class for use with mvc ([558d47a](https://github.com/telerik/kendo-themes/commit/558d47a)), closes [#393](https://github.com/telerik/kendo-themes/issues/393)
+* **scheduler:** buttongroup in edit dialog has wrong border color ([5b2c599](https://github.com/telerik/kendo-themes/commit/5b2c599))
+* **scheduler:** double border on scroll in timeline views ([aec6dd6](https://github.com/telerik/kendo-themes/commit/aec6dd6))
+
+
+### Features
+
+* **multiviewcalendar:** add multiviewcalendar for kendo-jquery ([9761e30](https://github.com/telerik/kendo-themes/commit/9761e30))
+
+
+
+
 <a name="2.58.0"></a>
 # [2.58.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.57.1...@progress/kendo-theme-default@2.58.0) (2018-10-29)
 

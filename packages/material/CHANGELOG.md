@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.3.3...@progress/kendo-theme-material@1.4.0) (2018-10-31)
+
+
+### Bug Fixes
+
+* **filtermenu:** scope arrow rotation on expanded ([0131da0](https://github.com/telerik/kendo-themes/commit/0131da0)), closes [#375](https://github.com/telerik/kendo-themes/issues/375)
+
+
+### Features
+
+* **multiviewcalendar:** add multiviewcalendar for kendo-jquery ([9761e30](https://github.com/telerik/kendo-themes/commit/9761e30))
+
+
+
+
 <a name="1.3.3"></a>
 ## [1.3.3](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.3.2...@progress/kendo-theme-material@1.3.3) (2018-10-29)
 

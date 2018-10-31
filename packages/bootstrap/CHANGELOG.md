@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.15.0"></a>
+# [2.15.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.14.3...@progress/kendo-theme-bootstrap@2.15.0) (2018-10-31)
+
+
+### Features
+
+* **multiviewcalendar:** add multiviewcalendar for kendo-jquery ([9761e30](https://github.com/telerik/kendo-themes/commit/9761e30))
+
+
+
+
 <a name="2.14.3"></a>
 ## [2.14.3](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.14.2...@progress/kendo-theme-bootstrap@2.14.3) (2018-10-29)
 
