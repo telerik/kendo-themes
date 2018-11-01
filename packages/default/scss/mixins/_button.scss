@@ -3,22 +3,28 @@ $_button-imported: false !default;
 @if ( $_button-imported == false ) {
 
     %appearance_button {
-        color: $button-text;
-        background-color: $button-bg;
-        border-color: $button-border;
-        @include linear-gradient( $button-gradient );
+        @include fill(
+            $button-text,
+            $button-bg,
+            $button-border,
+            $button-gradient
+        );
     }
     %appearance_hovered-button {
-        color: $button-hovered-text;
-        background-color: $button-hovered-bg;
-        border-color: $button-hovered-border;
-        @include linear-gradient( $button-hovered-gradient );
+        @include fill(
+            $button-hovered-text,
+            $button-hovered-bg,
+            $button-hovered-border,
+            $button-hovered-gradient
+        );
     }
     %appearance_pressed-button {
-        color: $button-pressed-text;
-        background-color: $button-pressed-bg;
-        border-color: $button-pressed-border;
-        @include linear-gradient( $button-pressed-gradient );
+        @include fill(
+            $button-pressed-text,
+            $button-pressed-bg,
+            $button-pressed-border,
+            $button-pressed-gradient
+        );
         @include box-shadow( $button-pressed-shadow );
     }
     %appearance_focused-button {
@@ -26,29 +32,37 @@ $_button-imported: false !default;
     }
 
     %appearance_primary-button {
-        color: $primary-button-text;
-        background-color: $primary-button-bg;
-        border-color: $primary-button-border;
-        @include linear-gradient( $primary-button-gradient );
+        @include fill(
+            $primary-button-text,
+            $primary-button-bg,
+            $primary-button-border,
+            $primary-button-gradient
+        );
     }
     %appearance_hovered-primary-button {
-        color: $primary-button-hovered-text;
-        background-color: $primary-button-hovered-bg;
-        border-color: $primary-button-hovered-border;
-        @include linear-gradient( $primary-button-hovered-gradient );
+        @include fill(
+            $primary-button-hovered-text,
+            $primary-button-hovered-bg,
+            $primary-button-hovered-border,
+            $primary-button-hovered-gradient
+        );
     }
     %appearance_pressed-primary-button {
-        color: $primary-button-pressed-text;
-        background-color: $primary-button-pressed-bg;
-        border-color: $primary-button-pressed-border;
-        @include linear-gradient( $primary-button-pressed-gradient );
+        @include fill(
+            $primary-button-pressed-text,
+            $primary-button-pressed-bg,
+            $primary-button-pressed-border,
+            $primary-button-pressed-gradient
+        );
     }
 
     %appearance_toolbar {
-        color: $toolbar-text;
-        background-color: $toolbar-bg;
-        border-color: $toolbar-border;
-        @include linear-gradient( $toolbar-gradient );
+        @include fill(
+            $toolbar-text,
+            $toolbar-bg,
+            $toolbar-border,
+            $toolbar-gradient
+        );
     }
 
     $_button-imported: true;
@@ -56,13 +70,13 @@ $_button-imported: false !default;
 }
 
 
-@mixin appearance_button { @extend %appearance_button };
-@mixin appearance_hovered-button { @extend %appearance_hovered-button };
-@mixin appearance_pressed-button { @extend %appearance_pressed-button };
-@mixin appearance_focused-button { @extend %appearance_focused-button };
+@mixin appearance_button { @extend %appearance_button !optional; }
+@mixin appearance_hovered-button { @extend %appearance_hovered-button !optional; }
+@mixin appearance_pressed-button { @extend %appearance_pressed-button !optional; }
+@mixin appearance_focused-button { @extend %appearance_focused-button !optional; }
 
-@mixin appearance_primary-button { @extend %appearance_primary-button };
-@mixin appearance_hovered-primary-button { @extend %appearance_hovered-primary-button };
-@mixin appearance_pressed-primary-button { @extend %appearance_pressed-primary-button };
+@mixin appearance_primary-button { @extend %appearance_primary-button !optional; }
+@mixin appearance_hovered-primary-button { @extend %appearance_hovered-primary-button !optional; }
+@mixin appearance_pressed-primary-button { @extend %appearance_pressed-primary-button !optional; }
 
-@mixin appearance_toolbar { @extend %appearance_toolbar };
+@mixin appearance_toolbar { @extend %appearance_toolbar !optional; }

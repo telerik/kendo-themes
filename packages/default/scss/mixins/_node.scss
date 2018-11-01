@@ -3,38 +3,50 @@ $_node-imported: false !default;
 @if ( $_node-imported == false ) {
 
     %appearance_node {
-        color: $node-text;
-        background-color: $node-bg;
-        border-color: $node-border;
-        @include linear-gradient( $node-gradient );
+        @include fill(
+            $node-text,
+            $node-bg,
+            $node-border,
+            $node-gradient
+        );
     }
     %appearance_hovered-node {
-        color: $node-hovered-text;
-        background-color: $node-hovered-bg;
-        border-color: $node-hovered-border;
-        @include linear-gradient( $node-hovered-gradient );
+        @include fill(
+            $node-hovered-text,
+            $node-hovered-bg,
+            $node-hovered-border,
+            $node-hovered-gradient
+        );
     }
     %appearance_selected-node {
-        color: $node-selected-text;
-        background-color: $node-selected-bg;
-        border-color: $node-selected-border;
-        @include linear-gradient( $node-selected-gradient );
+        @include fill(
+            $node-selected-text,
+            $node-selected-bg,
+            $node-selected-border,
+            $node-selected-gradient
+        );
     }
 
     %appearance_list-item {
-        color: $list-item-text;
-        background-color: $list-item-bg;
+        @include fill(
+            $list-item-text,
+            $list-item-bg
+        );
     }
     %appearance_focused-list-item {
-        box-shadow: $list-item-focused-shadow;
+        @include box-shadow( $list-item-focused-shadow );
     }
     %appearance_hovered-list-item {
-        color: $list-item-hovered-text;
-        background-color: $list-item-hovered-bg;
+        @include fill(
+            $list-item-hovered-text,
+            $list-item-hovered-bg
+        );
     }
     %appearance_selected-list-item {
-        color: $list-item-selected-text;
-        background-color: $list-item-selected-bg;
+        @include fill(
+            $list-item-selected-text,
+            $list-item-selected-bg
+        );
     }
 
     $_node-imported: true;
@@ -42,11 +54,11 @@ $_node-imported: false !default;
 }
 
 
-@mixin appearance_node { @extend %appearance_node };
-@mixin appearance_hovered-node { @extend %appearance_hovered-node };
-@mixin appearance_selected-node { @extend %appearance_selected-node };
+@mixin appearance_node { @extend %appearance_node !optional; }
+@mixin appearance_hovered-node { @extend %appearance_hovered-node !optional; }
+@mixin appearance_selected-node { @extend %appearance_selected-node !optional; }
 
-@mixin appearance_list-item { @extend %appearance_list-item };
-@mixin appearance_hovered-list-item { @extend %appearance_hovered-list-item };
-@mixin appearance_focused-list-item { @extend %appearance_focused-list-item };
-@mixin appearance_selected-list-item { @extend %appearance_selected-list-item };
+@mixin appearance_list-item { @extend %appearance_list-item !optional; }
+@mixin appearance_hovered-list-item { @extend %appearance_hovered-list-item !optional; }
+@mixin appearance_focused-list-item { @extend %appearance_focused-list-item !optional; }
+@mixin appearance_selected-list-item { @extend %appearance_selected-list-item !optional; }
