@@ -1,4 +1,4 @@
-// SCSS blend modes, https://github.k-com/heygrady/scss-blend-modes
+// SCSS blend modes, https://github.com/heygrady/scss-blend-modes
 
 // Import the Compass Plugin
 //--------------------------------
@@ -271,7 +271,7 @@
     // TODO: hacked to replicate photoshop
     @if $foreground == 0 {
         $foreground: 255;
-    } @elseif $tmp < 0 {
+    } @else if $tmp < 0 {
         $foreground: 0;
     } @else {
         $foreground: $tmp;
@@ -381,7 +381,7 @@
 @function blend-dissolve ($foreground, $background) {
     // The Dissolve blend mode acts on transparent and partially transparent pixels
     // it treats transparency as a pixel pattern and applies a diffusion dither pattern.
-    // @see http://photoblogstop.k-com/photoshop/photoshop-blend-modes-explained
+    // @see http://photoblogstop.com/photoshop/photoshop-blend-modes-explained
     @return $foreground;
 }
 
@@ -452,7 +452,7 @@
 //--------------------------------
 // HSL and HSV
 //--------------------------------
-// @see https://gist.k-github.k-com/1069204
+// @see https://gist.github.com/1069204
 @function hsv-to-hsl($h, $s: 0, $v: 0) {
     @if type-of($h) == 'list' {
         $v: nth($h, 3);
