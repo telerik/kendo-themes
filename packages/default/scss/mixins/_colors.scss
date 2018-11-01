@@ -25,6 +25,25 @@
     @return color-level( $color, - $level );
 }
 
+@function try-shade($color, $level: 1) {
+    $dark-theme: if(variable-exists(is-dark-theme), $is-dark-theme, false);
+
+    @if $dark-theme {
+        @return tint($color, $level);
+    }
+
+    @return shade($color, $level);
+}
+@function try-tint($color, $level: 1) {
+    $dark-theme: if(variable-exists(is-dark-theme), $is-dark-theme, false);
+
+    @if $dark-theme {
+        @return shade($color, $level);
+    }
+
+    @return tint($color, $level);
+}
+
 
 @function try-darken( $color, $amount, $threshold: black ) {
     $amount: if(unitless($amount), $amount, ($amount / 1%));
@@ -71,4 +90,8 @@
     $out: if($luma < .5, $light, $dark);
     // @debug $luma;
     @return $out;
+}
+
+@function true-mix($color1, $color2, $weight: 50%) {
+    @return mix(rgba($color1, 1), rgba($color2, 1), $weight);
 }
