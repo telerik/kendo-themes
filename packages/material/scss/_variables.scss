@@ -326,47 +326,47 @@ $header-selected-gradient: null !default;
 
 
 // Button
-/// The text color of the buttons.
-/// @group buttons
-$button-text: $base-text !default;
-
 /// The background of the buttons.
 /// @group buttons
 $button-bg: $base-bg !default;
 
+/// The text color of the buttons.
+/// @group buttons
+$button-text: $base-text !default;
+
 /// The border color of the buttons.
 /// @group buttons
-$button-border: $base-border !default;
+$button-border: $button-bg !default;
 
 /// The background gradient of the buttons.
 /// @group buttons
-$button-gradient: $base-gradient !default;
+$button-gradient: null !default;
 $button-shadow: $box-shadow-depth-2 !default;
-
-/// The text color of hovered buttons.
-/// @group buttons
-$button-hovered-text: $button-text !default;
 
 /// The background of hovered buttons.
 /// @group buttons
-$button-hovered-bg: mix( $button-text, $button-bg, 12%) !default;
+$button-hovered-bg: true-mix( $button-text, $button-bg, 12%) !default;
+
+/// The text color of hovered buttons.
+/// @group buttons
+$button-hovered-text: null !default;
 
 /// The border color of hovered buttons.
 /// @group buttons
-$button-hovered-border: $hovered-border !default;
+$button-hovered-border: $button-hovered-bg !default;
 
 /// The background gradient of hovered buttons.
 /// @group buttons
-$button-hovered-gradient: $hovered-gradient !default;
+$button-hovered-gradient: null !default;
 $button-hovered-shadow: null !default;
-
-/// The text color of pressed buttons.
-/// @group buttons
-$button-pressed-text: $button-text !default;
 
 /// The background color of pressed buttons.
 /// @group buttons
-$button-pressed-bg: mix( $button-text, $button-bg, 12%) !default;
+$button-pressed-bg: true-mix( $button-text, $button-bg, 12%) !default;
+
+/// The text color of pressed buttons.
+/// @group buttons
+$button-pressed-text: null !default;
 
 /// The border color of pressed buttons.
 /// @group buttons
@@ -374,7 +374,7 @@ $button-pressed-border: $button-pressed-bg !default;
 
 /// The background gradient of pressed buttons.
 /// @group buttons
-$button-pressed-gradient: none !default;
+$button-pressed-gradient: null !default;
 $button-pressed-shadow: $box-shadow-depth-3 !default;
 
 /// The shadow of focused buttons.
@@ -383,20 +383,20 @@ $button-focused-shadow: null !default;
 
 
 // Primary button
-$primary-button-text: rgba(255, 255, 255, .87) !default;
-$primary-button-bg: $accent !default;
+$primary-button-bg: $primary !default;
+$primary-button-text: $primary-contrast !default;
 $primary-button-border: $primary-button-bg !default;
-$primary-button-gradient: rgba( adjust-hue( $primary-button-bg, 14), 0 ), rgba( adjust-hue( $primary-button-bg, 14), .2 ) !default;
+$primary-button-gradient: null !default;
 
-$primary-button-hovered-text: $primary-button-text !default;
-$primary-button-hovered-bg: mix( $primary-button-text, $primary-button-bg, 12%) !default;
+$primary-button-hovered-bg: true-mix( $primary-button-text, $primary-button-bg, 12%) !default;
+$primary-button-hovered-text: null !default;
 $primary-button-hovered-border: $primary-button-hovered-bg !default;
-$primary-button-hovered-gradient: rgba( adjust-hue( $primary-button-hovered-bg, 14), 0 ), rgba( adjust-hue( $primary-button-hovered-bg, 14), .2 ) !default;
+$primary-button-hovered-gradient: null !default;
 
-$primary-button-pressed-text: $primary-button-text !default;
 $primary-button-pressed-bg: $primary-button-bg !default;
+$primary-button-pressed-text: null !default;
 $primary-button-pressed-border: $primary-button-pressed-bg !default;
-$primary-button-pressed-gradient: rgba( adjust-hue( $primary-button-pressed-bg, 14), .2 ), rgba( adjust-hue( $primary-button-pressed-bg, 14), 0 ) !default;
+$primary-button-pressed-gradient: null !default;
 $primary-button-pressed-shadow: null !default;
 
 $primary-button-focused-shadow: null !default;
