@@ -1,4 +1,4 @@
-@include exports('panelbar/theme') {
+@include exports("panelbar/theme") {
 
     .k-panelbar {
         @include fill(
@@ -10,7 +10,9 @@
 
         // Root
         > .k-item {
-            border-color: $header-border;
+            @include fill(
+                $border: $panelbar-header-border
+            );
         }
 
         > .k-item > .k-link {
@@ -23,7 +25,8 @@
         }
 
         > .k-item > .k-link:hover,
-        > .k-item > .k-link.k-state-hover {
+        > .k-item > .k-link.k-state-hover,
+        > .k-item > .k-link.k-state-focused {
             @include fill(
                 $panelbar-header-hovered-text,
                 $panelbar-header-hovered-bg,
@@ -41,21 +44,13 @@
             );
         }
 
-        > .k-item > .k-link.k-state-focused {
-            @include fill(
-                $panelbar-header-hovered-text,
-                $panelbar-header-hovered-bg,
-                $panelbar-header-hovered-border,
-                $panelbar-header-hovered-gradient
-            );
-        }
-
 
         // Sub
         .k-group {
 
             > .k-item > .k-link:hover,
-            > .k-item > .k-link.k-state-hover {
+            > .k-item > .k-link.k-state-hover,
+            > .k-item > .k-link.k-state-focused {
                 @include fill(
                     $panelbar-item-hovered-text,
                     $panelbar-item-hovered-bg,
@@ -73,15 +68,7 @@
                 );
             }
 
-            > .k-item > .k-link.k-state-focused {
-                @include fill(
-                    $panelbar-item-hovered-text,
-                    $panelbar-item-hovered-bg,
-                    $panelbar-item-hovered-border,
-                    $panelbar-item-hovered-gradient
-                );
-            }
-
         }
     }
+
 }
