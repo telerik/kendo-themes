@@ -234,6 +234,12 @@ $secondary: #ff4081 !default;
 /// Used to provide contrast between the background and foreground colors.
 $secondary-contrast: #ffffff !default;
 
+
+$component-bg: #ffffff;
+$component-text: rgba(black, .87);
+$component-border: rgba( black, .12 );
+
+
 $text-color: rgba(black, .87) !default;
 $bg-color: #ffffff !default;
 $border-color: rgba( black, .12 ) !default;
@@ -291,21 +297,21 @@ $gradient-white-to-transparent: white, rgba( white, 0);
 $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
 // Widget
-$widget-text: $text-color !default;
-$widget-bg: $bg-color !default;
-$widget-border: rgba( black, .08 ) !default;
+$widget-bg: $component-bg !default;
+$widget-text: $component-text !default;
+$widget-border: $component-border !default;
 
 
 // Panel
-$panel-text: $widget-text !default;
-$panel-bg: $widget-bg !default;
-$panel-border: rgba( black, .08 ) !default;
+$panel-bg: $component-bg !default;
+$panel-text: $component-text !default;
+$panel-border: $component-border !default;
 
 
 // Popup
-$popup-text: $base-text !default;
-$popup-bg: lighten($base-bg, 1%) !default;
-$popup-border: $base-border !default;
+$popup-bg: $component-bg !default;
+$popup-text: $component-text !default;
+$popup-border: $component-border !default;
 $popup-shadow: 0 3px 3px -2px rgba(0, 0, 0, .02), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12) !default;
 
 // Header
@@ -499,7 +505,7 @@ $tabstrip-bg: null !default;
 /// Component text color. Set to `inherit` to blend the component with the page.
 /// @group tabstrip
 $tabstrip-text: inherit !default;
-$tabstrip-border: $panel-border !default;
+$tabstrip-border: $component-border !default;
 
 $tabstrip-item-bg: null !default;
 $tabstrip-item-text: inherit !default;
@@ -550,9 +556,9 @@ $grid-cell-padding-y: $grid-padding-y !default;
 $grid-cell-horizontal-border-width: 1px !default;
 $grid-cell-vertical-border-width: 1px !default;
 
-$grid-bg: $panel-bg !default;
-$grid-text: rgba(0, 0, 0, .87) !default;
-$grid-border: rgba( black, .12 ) !default;
+$grid-bg: $component-bg !default;
+$grid-text: $component-text !default;
+$grid-border: $component-border !default;
 
 $grid-header-bg: $header-bg !default;
 $grid-header-text: rgba(0, 0, 0, .54) !default;
@@ -597,7 +603,7 @@ $treeview-item-border-width: 0 !default;
 $treeview-item-border-radius: 0 !default;
 
 $treeview-bg: null !default;
-$treeview-text: $widget-text !default;
+$treeview-text: $component-text !default;
 $treeview-border: null !default;
 
 $treeview-item-hovered-text: null !default;
@@ -626,16 +632,16 @@ $panelbar-header-padding-y: 12px !default;
 $panelbar-item-padding-x: $panelbar-header-padding-x !default;
 $panelbar-item-padding-y: 6px !default;
 
-$panelbar-bg: $panel-bg !default;
-$panelbar-text: $panel-text !default;
-$panelbar-border: $panel-border !default;
+$panelbar-bg: $component-bg !default;
+$panelbar-text: $component-text !default;
+$panelbar-border: $component-border !default;
 
 $panelbar-header-bg: null !default;
 $panelbar-header-text: null !default;
 $panelbar-header-border: null !default;
 $panelbar-header-gradient: null !default;
 
-$panelbar-header-hovered-bg: shade($panelbar-bg) !default;
+$panelbar-header-hovered-bg: try-shade($panelbar-bg) !default;
 $panelbar-header-hovered-text: null !default;
 $panelbar-header-hovered-border: null !default;
 $panelbar-header-hovered-gradient: null !default;
@@ -647,7 +653,7 @@ $panelbar-header-selected-gradient: null !default;
 
 $panelbar-header-focused-shadow: $list-item-focused-shadow !default;
 
-$panelbar-item-hovered-bg: shade($panelbar-bg) !default;
+$panelbar-item-hovered-bg: try-shade($panelbar-bg) !default;
 $panelbar-item-hovered-text: null !default;
 $panelbar-item-hovered-border: null !default;
 $panelbar-item-hovered-gradient: null !default;
@@ -714,7 +720,7 @@ $chart-font-size-sm: 11px !default;
 $chart-font-size-md: 12px !default;
 $chart-font-size-lg: 16px !default;
 
-$chart-inactive: rgba( $text-color, .5 ) !default;
+$chart-inactive: rgba( $component-text, .5 ) !default;
 /// The color of the Chart grid lines (major).
 /// @group charts
 $chart-major-lines: rgba(0, 0, 0, .08) !default;
@@ -753,9 +759,9 @@ $card-box-focused-shadow: $box-shadow-depth-3 !default;
 
 $card-deck-gap: 16px !default;
 
-$card-bg: $panel-bg !default;
-$card-text: $panel-text !default;
-$card-border: $panel-border !default;
+$card-bg: $component-bg !default;
+$card-text: $component-text !default;
+$card-border: $component-border !default;
 
 $card-header-padding-x: $card-padding-x !default;
 $card-header-padding-y: $card-padding-y !default;
@@ -815,9 +821,9 @@ $calendar-view-height: add-two(
     $calendar-header-height
 ) !default;
 
-$calendar-bg: $widget-bg !default;
-$calendar-text: $widget-text !default;
-$calendar-border: $widget-border !default;
+$calendar-bg: $component-bg !default;
+$calendar-text: $component-text !default;
+$calendar-border: $component-border !default;
 
 $calendar-header-bg: $header-bg !default;
 $calendar-header-text: $header-text !default;
@@ -904,8 +910,8 @@ $chat-bg: #f5f5f5 !default;
 $chat-text: $panel-text !default;
 $chat-border: $panel-border !default;
 
-$chat-bubble-bg: $panel-bg !default;
-$chat-bubble-text: $panel-text !default;
+$chat-bubble-bg: $component-bg !default;
+$chat-bubble-text: $component-text !default;
 $chat-bubble-border: $chat-bubble-bg !default;
 
 $chat-alt-bubble-bg: $accent !default;
@@ -914,9 +920,9 @@ $chat-alt-bubble-border: $chat-alt-bubble-bg !default;
 
 
 // Mediaplayer
-$mediaplayer-bg: $panel-bg !default;
-$mediaplayer-text: $panel-text !default;
-$mediaplayer-border: $panel-border !default;
+$mediaplayer-bg: $component-bg !default;
+$mediaplayer-text: $component-text !default;
+$mediaplayer-border: $component-border !default;
 
 $mediaplayer-titlebar-padding-x: $header-padding-x !default;
 $mediaplayer-titlebar-padding-y: $header-padding-y !default;
