@@ -3,20 +3,26 @@ $_input-imported: false !default;
 @if ( $_input-imported == false ) {
 
     %appearance_input {
-        color: $input-text;
-        background-color: $input-bg;
-        border-color: $input-border;
+        @include fill(
+            $input-text,
+            $input-bg,
+            $input-border
+        );
     }
     %appearance_hovered-input {
-        color: $input-hovered-text;
-        background-color: $input-hovered-bg;
-        border-color: $input-hovered-border;
+        @include fill(
+            $input-hovered-text,
+            $input-hovered-bg,
+            $input-hovered-border
+        );
     }
     %appearance_focused-input {
-        color: $input-focused-text;
-        background-color: $input-focused-bg;
-        border-color: $input-focused-border;
-        box-shadow: $input-focused-shadow;
+        @include fill(
+            $input-focused-text,
+            $input-focused-bg,
+            $input-focused-border
+        );
+        @include box-shadow($input-focused-shadow);
     }
 
     $_input-imported: true;
@@ -24,6 +30,6 @@ $_input-imported: false !default;
 }
 
 
-@mixin appearance_input { @extend %appearance_input; }
-@mixin appearance_hovered-input { @extend %appearance_hovered-input; }
-@mixin appearance_focused-input { @extend %appearance_focused-input; }
+@mixin appearance_input { @extend %appearance_input !optional; }
+@mixin appearance_hovered-input { @extend %appearance_hovered-input !optional; }
+@mixin appearance_focused-input { @extend %appearance_focused-input !optional; }
