@@ -341,7 +341,7 @@ $button-border: $base-border !default;
 /// The background gradient of the buttons.
 /// @group buttons
 $button-gradient: $base-gradient !default;
-$button-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !default;
+$button-shadow: $box-shadow-depth-2 !default;
 
 /// The text color of hovered buttons.
 /// @group buttons
@@ -375,11 +375,11 @@ $button-pressed-border: $button-pressed-bg !default;
 /// The background gradient of pressed buttons.
 /// @group buttons
 $button-pressed-gradient: none !default;
-$button-pressed-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12) !default;
+$button-pressed-shadow: $box-shadow-depth-3 !default;
 
 /// The shadow of focused buttons.
 /// @group buttons
-$button-focused-shadow: $button-shadow !default;
+$button-focused-shadow: null !default;
 
 
 // Primary button
@@ -397,9 +397,9 @@ $primary-button-pressed-text: $primary-button-text !default;
 $primary-button-pressed-bg: $primary-button-bg !default;
 $primary-button-pressed-border: $primary-button-pressed-bg !default;
 $primary-button-pressed-gradient: rgba( adjust-hue( $primary-button-pressed-bg, 14), .2 ), rgba( adjust-hue( $primary-button-pressed-bg, 14), 0 ) !default;
-$primary-button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
+$primary-button-pressed-shadow: null !default;
 
-$primary-button-focused-shadow: 0 3px 4px 0 rgba($accent, .4) !default;
+$primary-button-focused-shadow: null !default;
 
 $flat-button-hover-opacity: .12 !default;
 $flat-button-focused-opacity: .12 !default;
