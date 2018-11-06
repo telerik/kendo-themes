@@ -914,6 +914,26 @@ $progressbar-indeterminate-gradient: null !default;
 
 $progressbar-chunk-border: $bg-color !default;
 
+// Scrollview
+
+$scrollview-pager-offset: 20px !default;
+$scrollview-pager-item-spacing: 20px !default;
+$scrollview-pager-item-border-width: 1px !default;
+
+$scrollview-pagebutton-size: 8px !default;
+$scrollview-pagebutton-bg: $button-bg !default;
+$scrollview-pagebutton-border: $button-border !default;
+$scrollview-pagebutton-primary-bg: $primary-button-bg !default;
+$scrollview-pagebutton-primary-border: $primary-button-border !default;
+$scrollview-pagebutton-shadow: 0 0 2px rgba(0, 0, 0, .08) !default;
+
+$scrollview-navigation-size: 4.5em !default;
+$scrollview-navigation-color: $selected-text !default;
+$scrollview-navigation-icon-shadow: rgba(0, 0, 0, .3) 0 0 15px !default;
+$scrollview-navigation-background: rgba(0, 0, 0, 0) !default;
+$scrollview-navigation-default-opacity: .7 !default;
+$scrollview-navigation-hover-opacity: 1 !default;
+$scrollview-navigation-hover-span-bg: null !default;
 
 // Config maps
 $typography-config: () !default;

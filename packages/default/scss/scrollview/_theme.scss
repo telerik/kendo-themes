@@ -1,34 +1,20 @@
-$scrollview-navigation-color: $selected-text !default;
-$scrollview-navigation-icon-shadow: rgba(0, 0, 0, .3) 0 0 15px !default;
-$scrollview-pagebutton-shadow: 0 0 2px rgba(0, 0, 0, .08) !default;
-$scrollview-navigation-background: rgba(0, 0, 0, 0) !default;
-$scrollview-navigation-default-opacity: .7 !default;
-$scrollview-navigation-hover-opacity: 1 !default;
-$webkit-highlight-color: rgba(0, 0, 0, 0) !default;
-
 @include exports('scrollview/theme') {
 
-    .k-pages > li,
     .k-scrollview-nav > li.k-link {
-        @include appearance( button );
-
-        background-image: none;
-        box-shadow: $scrollview-pagebutton-shadow;
-        background-clip: padding-box;
+        @include fill(
+            $bg: $scrollview-pagebutton-bg,
+            $border: $scrollview-pagebutton-border
+        );
 
         &.k-primary {
-            @include appearance( primary-button );
+            @include fill(
+                $bg: $scrollview-pagebutton-primary-bg,
+                $border: $scrollview-pagebutton-primary-border
+            );
         }
-    }
-    .k-pages > li {
-        border-color: $button-border;
-        color: $button-text;
-        background-color: $button-bg;
-    }
-    .k-pages > li.k-current-page {
-        border-color: $selected-border;
-        color: $selected-text;
-        background-color: $selected-bg;
+
+        box-shadow: $scrollview-pagebutton-shadow;
+        background-clip: padding-box;
     }
 
     .k-scrollview-elements {
@@ -46,11 +32,11 @@ $webkit-highlight-color: rgba(0, 0, 0, 0) !default;
         &:hover {
             color: $scrollview-navigation-color;
             opacity: $scrollview-navigation-hover-opacity;
+
+            span::before {
+                background-color: $scrollview-navigation-hover-span-bg;
+            }
         }
     }
 
-    .k-scrollview-animation {
-        transition-duration: .3s;
-        transition-timing-function: ease-out;
-    }
 }
