@@ -1,13 +1,7 @@
 @import '../common/icons';
 @import '../button/layout';
 
-$scrollview-pager-offset: 20px !default;
-$scrollview-pager-item-spacing: 20px !default;
-$scrollview-pager-item-border-width: 1px !default;
-
 @include exports('scrollview/layout') {
-    $scrollview-page-button-size: 8px;
-    $scrollview-arrow-icon-size: 4.5em;
 
     .k-scrollview {
         position: relative;
@@ -38,7 +32,6 @@ $scrollview-pager-item-border-width: 1px !default;
         }
     }
 
-    .k-pages,
     .k-scrollview-nav {
         margin: 0 auto;
         padding: 0;
@@ -52,16 +45,16 @@ $scrollview-pager-item-border-width: 1px !default;
         bottom: $scrollview-pager-offset;
         pointer-events: none;
     }
-    .k-pages > li,
+
     .k-scrollview-nav > li.k-link {
         margin: 0 $scrollview-pager-item-spacing;
         padding: 0;
-        width: $scrollview-page-button-size;
-        height: $scrollview-page-button-size;
+        width: $scrollview-pagebutton-size;
+        height: $scrollview-pagebutton-size;
         box-sizing: content-box;
         vertical-align: middle;
         display: inline-block;
-        flex: 0 0 $scrollview-page-button-size;
+        flex: 0 0 $scrollview-pagebutton-size;
         border-width: $scrollview-pager-item-border-width;
         border-style: solid;
         border-radius: 50%;
@@ -97,7 +90,7 @@ $scrollview-pager-item-border-width: 1px !default;
         margin: 0;
         padding: 0;
         vertical-align: middle;
-        font-size: $scrollview-arrow-icon-size;
+        font-size: $scrollview-navigation-size;
         font-weight: normal;
     }
 
@@ -105,46 +98,21 @@ $scrollview-pager-item-border-width: 1px !default;
         width: 100%;
     }
 
+    .k-scrollview-animation {
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+    }
+
     @supports (-webkit-user-select: none) {
-        div.k-scrollview-wrap ul.k-scrollview li > *  {
+        div.k-scrollview ul.k-scrollview-wrap li > *  {
             pointer-events: auto;
         }
     }
 
     @supports (not (-webkit-user-select: none)) {
-        div.k-scrollview-wrap ul.k-scrollview li > *  {
+        div.k-scrollview ul.k-scrollview-wrap li > *  {
             pointer-events: none;
         }
     }
 
-    //Mobile version
-    .km-scrollview {
-        white-space: nowrap;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-
-        & > div > * {
-            -webkit-transform: translatez(0);
-        }
-
-        & > div > [data-role="page"] {
-            vertical-align: top;
-            display: inline-block;
-            min-height: 1px;
-        }
-
-        .km-virtual-page {
-            min-height: 1px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: inline-block;
-        }
-    }
-
-    .km-pages {
-        padding: $padding-y 0 0 0;
-        position: static;
-    }
 }
