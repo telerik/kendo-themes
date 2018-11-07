@@ -22,7 +22,7 @@ $scheduler-event-text: $primary-contrast !default;
 
     // View switcher
     .k-scheduler-views {
-        background-color: $base-bg;
+        &.k-state-expanded { background-color: $base-bg; }
     }
 
 
