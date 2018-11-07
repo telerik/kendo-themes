@@ -28,6 +28,7 @@
 
     // View switcher
     .k-scheduler-views {
+        background-color: $base-bg;
 
         li {
             @include appearance( button );
