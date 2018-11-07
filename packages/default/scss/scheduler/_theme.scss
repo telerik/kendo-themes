@@ -51,7 +51,7 @@ $scheduler-event-text: #fff !default;
         .k-nav-next {
             @include appearance( button );
 
-            &.k-state-hover { @include appearance( hovered-button ); }
+            &:hover { @include appearance( hovered-button ); }
         }
     }
 
@@ -69,7 +69,7 @@ $scheduler-event-text: #fff !default;
                 background-clip: border-box;
             }
 
-            &.k-state-hover { @include appearance( hovered-button ); }
+            &:hover { @include appearance( hovered-button ); }
             &.k-state-selected { @include fill( $selected-text, $selected-bg, $selected-border, none ); }
         }
     }
@@ -88,7 +88,7 @@ $scheduler-event-text: #fff !default;
                 background-clip: border-box;
             }
 
-            &.k-state-hover { @include appearance( hovered-button ); }
+            &:hover { @include appearance( hovered-button ); }
         }
     }
 
