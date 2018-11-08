@@ -245,7 +245,7 @@ $base-bg: #fff !default;
 
 $base-border: rgba( black, .08 ) !default;
 /// The gradient background of the components' chrome area.
-$base-gradient: $base-bg, darken( $base-bg, 2% ) !default;
+$base-gradient: null !default;
 
 /// The text color of hovered items.
 $hovered-text: $base-text !default;
@@ -254,7 +254,7 @@ $hovered-bg: rgba( black, .07) !default;
 /// The border color of hovered items.
 $hovered-border: rgba( black, .15 ) !default;
 /// The gradient background of hovered items.
-$hovered-gradient: $hovered-bg, darken( $hovered-bg, 2% ) !default;
+$hovered-gradient: null !default;
 
 /// The text color of selected items.
 $selected-text: $accent-contrast !default;
@@ -263,7 +263,7 @@ $selected-bg: $accent !default;
 /// The border color of selected items.
 $selected-border: rgba( black, .1 ) !default;
 /// The gradient background of selected items.
-$selected-gradient: none !default;
+$selected-gradient: null !default;
 
 $selected-hover-color: $selected-text !default;
 $selected-hover-bg: mix( $selected-bg, black, 92) !default;
@@ -326,47 +326,47 @@ $header-selected-gradient: null !default;
 
 
 // Button
-/// The text color of the buttons.
-/// @group buttons
-$button-text: $base-text !default;
-
 /// The background of the buttons.
 /// @group buttons
 $button-bg: $base-bg !default;
 
+/// The text color of the buttons.
+/// @group buttons
+$button-text: $base-text !default;
+
 /// The border color of the buttons.
 /// @group buttons
-$button-border: $base-border !default;
+$button-border: $button-bg !default;
 
 /// The background gradient of the buttons.
 /// @group buttons
-$button-gradient: $base-gradient !default;
-$button-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !default;
-
-/// The text color of hovered buttons.
-/// @group buttons
-$button-hovered-text: $button-text !default;
+$button-gradient: null !default;
+$button-shadow: $box-shadow-depth-2 !default;
 
 /// The background of hovered buttons.
 /// @group buttons
-$button-hovered-bg: mix( $button-text, $button-bg, 12%) !default;
+$button-hovered-bg: true-mix( $button-text, $button-bg, 12%) !default;
+
+/// The text color of hovered buttons.
+/// @group buttons
+$button-hovered-text: null !default;
 
 /// The border color of hovered buttons.
 /// @group buttons
-$button-hovered-border: $hovered-border !default;
+$button-hovered-border: $button-hovered-bg !default;
 
 /// The background gradient of hovered buttons.
 /// @group buttons
-$button-hovered-gradient: $hovered-gradient !default;
+$button-hovered-gradient: null !default;
 $button-hovered-shadow: null !default;
-
-/// The text color of pressed buttons.
-/// @group buttons
-$button-pressed-text: $button-text !default;
 
 /// The background color of pressed buttons.
 /// @group buttons
-$button-pressed-bg: mix( $button-text, $button-bg, 12%) !default;
+$button-pressed-bg: true-mix( $button-text, $button-bg, 12%) !default;
+
+/// The text color of pressed buttons.
+/// @group buttons
+$button-pressed-text: null !default;
 
 /// The border color of pressed buttons.
 /// @group buttons
@@ -374,32 +374,32 @@ $button-pressed-border: $button-pressed-bg !default;
 
 /// The background gradient of pressed buttons.
 /// @group buttons
-$button-pressed-gradient: none !default;
-$button-pressed-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12) !default;
+$button-pressed-gradient: null !default;
+$button-pressed-shadow: $box-shadow-depth-3 !default;
 
 /// The shadow of focused buttons.
 /// @group buttons
-$button-focused-shadow: $button-shadow !default;
+$button-focused-shadow: null !default;
 
 
 // Primary button
-$primary-button-text: rgba(255, 255, 255, .87) !default;
-$primary-button-bg: $accent !default;
+$primary-button-bg: $primary !default;
+$primary-button-text: $primary-contrast !default;
 $primary-button-border: $primary-button-bg !default;
-$primary-button-gradient: rgba( adjust-hue( $primary-button-bg, 14), 0 ), rgba( adjust-hue( $primary-button-bg, 14), .2 ) !default;
+$primary-button-gradient: null !default;
 
-$primary-button-hovered-text: $primary-button-text !default;
-$primary-button-hovered-bg: mix( $primary-button-text, $primary-button-bg, 12%) !default;
+$primary-button-hovered-bg: true-mix( $primary-button-text, $primary-button-bg, 12%) !default;
+$primary-button-hovered-text: null !default;
 $primary-button-hovered-border: $primary-button-hovered-bg !default;
-$primary-button-hovered-gradient: rgba( adjust-hue( $primary-button-hovered-bg, 14), 0 ), rgba( adjust-hue( $primary-button-hovered-bg, 14), .2 ) !default;
+$primary-button-hovered-gradient: null !default;
 
-$primary-button-pressed-text: $primary-button-text !default;
 $primary-button-pressed-bg: $primary-button-bg !default;
+$primary-button-pressed-text: null !default;
 $primary-button-pressed-border: $primary-button-pressed-bg !default;
-$primary-button-pressed-gradient: rgba( adjust-hue( $primary-button-pressed-bg, 14), .2 ), rgba( adjust-hue( $primary-button-pressed-bg, 14), 0 ) !default;
-$primary-button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
+$primary-button-pressed-gradient: null !default;
+$primary-button-pressed-shadow: null !default;
 
-$primary-button-focused-shadow: 0 3px 4px 0 rgba($accent, .4) !default;
+$primary-button-focused-shadow: null !default;
 
 $flat-button-hover-opacity: .12 !default;
 $flat-button-focused-opacity: .12 !default;
@@ -557,7 +557,7 @@ $grid-border: rgba( black, .12 ) !default;
 $grid-header-bg: $header-bg !default;
 $grid-header-text: rgba(0, 0, 0, .54) !default;
 $grid-header-border: $grid-border !default;
-$grid-header-gradient: $header-gradient !default;
+$grid-header-gradient: null !default;
 
 $grid-alt-bg: transparent !default;
 $grid-alt-text: $grid-text !default;
@@ -820,7 +820,7 @@ $calendar-border: $widget-border !default;
 $calendar-header-bg: $header-bg !default;
 $calendar-header-text: $header-text !default;
 $calendar-header-border: $header-border !default;
-$calendar-header-gradient: $header-gradient !default;
+$calendar-header-gradient: null !default;
 $calendar-header-shadow: none !default;
 
 $calendar-header-cell-text: $calendar-header-text !default;
