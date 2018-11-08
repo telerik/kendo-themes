@@ -394,13 +394,15 @@
     .k-grouping-header-flex {
         display: flex;
         flex-shrink: 0;
-        // use item margin instead of padding, in order to position the reorder clue correctly
-        padding: 0;
+        flex-wrap: wrap;
+        // use item padding instead of margin, in order to position the reorder clue correctly
+        $header-half-padding-y: $grid-grouping-header-padding-y / 2;
+        padding: $header-half-padding-y 0;
 
         > .k-indicator-container {
             display: inline-flex;
             margin: 0;
-            padding: $grid-grouping-header-padding-y 0 $grid-grouping-header-padding-y $grid-grouping-header-padding-x;
+            padding: $header-half-padding-y 0 $header-half-padding-y $grid-grouping-header-padding-x;
 
             &:last-child {
                 flex-grow: 1;
