@@ -120,7 +120,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$base-gradient</td>
 <td>
     
-    $base-bg, darken( $base-bg, 2% )
+    null
 </td>
 <td>The gradient background of the components' chrome area.
 </td>
@@ -156,7 +156,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$hovered-gradient</td>
 <td>
     
-    $hovered-bg, darken( $hovered-bg, 2% )
+    null
 </td>
 <td>The gradient background of hovered items.
 </td>
@@ -192,7 +192,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$selected-gradient</td>
 <td>
     
-    none
+    null
 </td>
 <td>The gradient background of selected items.
 </td>
@@ -250,15 +250,6 @@ Used to provide contrast between the background and foreground colors.
 <th>Description</th>
 </tr>
 <tr>
-<td>$button-text</td>
-<td>
-    
-    $base-text
-</td>
-<td>The text color of the buttons.
-</td>
-</tr>
-<tr>
 <td>$button-bg</td>
 <td>
     
@@ -268,10 +259,19 @@ Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
+<td>$button-text</td>
+<td>
+    
+    $base-text
+</td>
+<td>The text color of the buttons.
+</td>
+</tr>
+<tr>
 <td>$button-border</td>
 <td>
     
-    $base-border
+    $button-bg
 </td>
 <td>The border color of the buttons.
 </td>
@@ -280,34 +280,34 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-gradient</td>
 <td>
     
-    $base-gradient
+    null
 </td>
 <td>The background gradient of the buttons.
-</td>
-</tr>
-<tr>
-<td>$button-hovered-text</td>
-<td>
-    
-    $button-text
-</td>
-<td>The text color of hovered buttons.
 </td>
 </tr>
 <tr>
 <td>$button-hovered-bg</td>
 <td>
     
-    mix( $button-text, $button-bg, 12%)
+    true-mix( $button-text, $button-bg, 12%)
 </td>
 <td>The background of hovered buttons.
+</td>
+</tr>
+<tr>
+<td>$button-hovered-text</td>
+<td>
+    
+    null
+</td>
+<td>The text color of hovered buttons.
 </td>
 </tr>
 <tr>
 <td>$button-hovered-border</td>
 <td>
     
-    $hovered-border
+    $button-hovered-bg
 </td>
 <td>The border color of hovered buttons.
 </td>
@@ -316,27 +316,27 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-hovered-gradient</td>
 <td>
     
-    $hovered-gradient
+    null
 </td>
 <td>The background gradient of hovered buttons.
-</td>
-</tr>
-<tr>
-<td>$button-pressed-text</td>
-<td>
-    
-    $button-text
-</td>
-<td>The text color of pressed buttons.
 </td>
 </tr>
 <tr>
 <td>$button-pressed-bg</td>
 <td>
     
-    mix( $button-text, $button-bg, 12%)
+    true-mix( $button-text, $button-bg, 12%)
 </td>
 <td>The background color of pressed buttons.
+</td>
+</tr>
+<tr>
+<td>$button-pressed-text</td>
+<td>
+    
+    null
+</td>
+<td>The text color of pressed buttons.
 </td>
 </tr>
 <tr>
@@ -352,7 +352,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-pressed-gradient</td>
 <td>
     
-    none
+    null
 </td>
 <td>The background gradient of pressed buttons.
 </td>
@@ -361,7 +361,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$button-focused-shadow</td>
 <td>
     
-    $button-shadow
+    null
 </td>
 <td>The shadow of focused buttons.
 </td>

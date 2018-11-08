@@ -21,7 +21,9 @@ $scheduler-event-text: $primary-contrast !default;
 
 
     // View switcher
-    .k-scheduler-views {}
+    .k-scheduler-views {
+        &.k-state-expanded { background-color: $base-bg; }
+    }
 
 
     // Scheduler footer

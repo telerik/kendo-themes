@@ -58,6 +58,7 @@ $scheduler-event-text: #fff !default;
 
     // View switcher
     .k-scheduler-views {
+        &.k-state-expanded { background-color: $base-bg; }
 
         li {
             @include appearance( button );
