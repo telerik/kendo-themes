@@ -444,7 +444,7 @@
             width: auto;
         }
         table.k-content {
-            padding: 0 $multiviewcalendar-content-padding-x $multiviewcalendar-content-padding-y;
+            padding: $multiviewcalendar-content-padding-y $multiviewcalendar-content-padding-x;
         }
         table.k-meta-view {
             margin: 0 -1px;
