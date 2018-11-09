@@ -23,7 +23,7 @@
     "api-check": "npm run api && git diff --exit-code --quiet -- docs/ || (echo -e '\\033[0;31mERROR: API docs are out of date' && exit 1)",
     "build": "kendotheme build",
     "watch": "kendotheme build --watch",
-    "swatches": "kendotheme --swatches",
+    "swatches": "kendotheme build --swatches",
     "embed-assets": "kendotheme assets",
     "test": "npm run lint && npm run build && npm run api-check",
     "twbs-compat": "kendotheme build --file ./build/twbs-compat.scss"
