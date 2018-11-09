@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.16.0"></a>
+# [2.16.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.15.0...@progress/kendo-theme-bootstrap@2.16.0) (2018-11-09)
+
+
+### Bug Fixes
+
+* **scheduler:** adaptive view switcher background ([41bdb94](https://github.com/telerik/kendo-themes/commit/41bdb94))
+* **scheduler:** use :hover for buttons ([e296270](https://github.com/telerik/kendo-themes/commit/e296270))
+
+
+### Features
+
+* add kendo-theme-tasks ([61bda89](https://github.com/telerik/kendo-themes/commit/61bda89))
+
+
+
+
 <a name="2.15.0"></a>
 # [2.15.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.14.3...@progress/kendo-theme-bootstrap@2.15.0) (2018-10-31)
 

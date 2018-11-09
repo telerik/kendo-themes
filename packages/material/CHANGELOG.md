@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.4.0...@progress/kendo-theme-material@1.5.0) (2018-11-09)
+
+
+### Bug Fixes
+
+* **material:** use correct color for calendar selected-focused cell ([a170123](https://github.com/telerik/kendo-themes/commit/a170123))
+* **material:** use correct color for panelbar root item border ([ecb638e](https://github.com/telerik/kendo-themes/commit/ecb638e))
+* **material:** use correct colors for button ([caa7857](https://github.com/telerik/kendo-themes/commit/caa7857))
+* **material:** use correct shadows for button ([57e4116](https://github.com/telerik/kendo-themes/commit/57e4116))
+* **material:** use null value for gradients ([29e561c](https://github.com/telerik/kendo-themes/commit/29e561c))
+* **scheduler:** adaptive view switcher background ([41bdb94](https://github.com/telerik/kendo-themes/commit/41bdb94))
+
+
+### Features
+
+* add kendo-theme-tasks ([61bda89](https://github.com/telerik/kendo-themes/commit/61bda89))
+
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.3.3...@progress/kendo-theme-material@1.4.0) (2018-10-31)
 

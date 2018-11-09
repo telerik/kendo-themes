@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.60.0"></a>
+# [2.60.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.59.0...@progress/kendo-theme-default@2.60.0) (2018-11-09)
+
+
+### Bug Fixes
+
+* **grid:** grouping indicators overflowing ([a75dc9d](https://github.com/telerik/kendo-themes/commit/a75dc9d))
+* **scheduler:** adaptive view switcher background ([41bdb94](https://github.com/telerik/kendo-themes/commit/41bdb94))
+* **scheduler:** use :hover for buttons ([e296270](https://github.com/telerik/kendo-themes/commit/e296270))
+
+
+### Features
+
+* add kendo-theme-tasks ([61bda89](https://github.com/telerik/kendo-themes/commit/61bda89))
+* **framework:** add try-tint and try-shade functions ([f6bf4b8](https://github.com/telerik/kendo-themes/commit/f6bf4b8))
+* **framework:** improve appearance mixins to allow null values ([e3fe770](https://github.com/telerik/kendo-themes/commit/e3fe770))
+* **scheduler:** add angular scheduler agenda view styles ([822115b](https://github.com/telerik/kendo-themes/commit/822115b))
+
+
+
+
 <a name="2.59.0"></a>
 # [2.59.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.58.0...@progress/kendo-theme-default@2.59.0) (2018-10-31)
 

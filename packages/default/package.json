@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-default",
   "description": "SASS resources for the default Kendo UI theme",
-  "version": "2.59.0",
+  "version": "2.60.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -29,9 +29,8 @@
     "twbs-compat": "kendotheme build --file ./build/twbs-compat.scss"
   },
   "devDependencies": {
-    "@progress/kendo-theme-tasks": "^0.0.1",
+    "@progress/kendo-theme-tasks": "^0.1.0",
     "bootstrap": "4.0.0",
     "handlebars": "^4.0.10"
-  },
-  "dependencies": {}
+  }
 }
