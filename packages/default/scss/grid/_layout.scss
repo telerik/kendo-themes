@@ -564,6 +564,11 @@
             &.k-first {
                 border-left-width: $grid-header-first-border;
             }
+
+            &.k-grid-draggable-header th {
+                user-select: none;
+                touch-action: none;
+            }
         }
 
         .k-header > .k-link {
