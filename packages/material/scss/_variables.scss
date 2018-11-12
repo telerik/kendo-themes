@@ -830,8 +830,8 @@ $calendar-navigation-bg: mix( rgba($calendar-text, 1), $calendar-bg, 3) !default
 $calendar-navigation-text: $calendar-text !default;
 $calendar-navigation-border: $calendar-border !default;
 
-$calendar-today-nav-text: $link-text !default;
-$calendar-today-nav-hovered-text: $link-hover-text !default;
+$calendar-today-nav-text: $primary !default;
+$calendar-today-nav-hovered-text: $primary !default;
 
 $calendar-weekend-text: inherit !default;
 $calendar-weekend-bg: transparent !default;
