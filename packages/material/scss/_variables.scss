@@ -582,6 +582,8 @@ $grid-focused-shadow: $list-item-focused-shadow !default;
 $grid-group-drag-clue-bg: darken( $base-bg, 7% ) !default;
 $grid-group-drag-clue-text: $base-text !default;
 
+$grid-command-cell-button-spacing: .16em !default;
+
 // Treeview
 $treeview-padding-x: 0 !default;
 $treeview-padding-y: 0 !default;

@@ -750,12 +750,6 @@
         overflow-y: scroll;
         position: relative;
         flex: 1;
-
-        .k-button {
-            vertical-align: middle;
-            margin: 0 .16em;
-        }
-
     }
 
     // Virtualization
@@ -817,6 +811,11 @@
         margin-top: $grid-form-component-offset;
         margin-bottom: $grid-form-component-offset;
         vertical-align: $grid-form-component-vertical-align;
+    }
+
+    .k-command-cell > .k-button {
+        margin-left: $grid-command-cell-button-spacing;
+        margin-right: $grid-command-cell-button-spacing;
     }
 
     // Resize handle
