@@ -1,6 +1,9 @@
 @include exports('pivotgrid/theme') {
     $pivotgrid-alt-bg: $header-bg !default;
+    $pivotgrid-alt-color: black !default;
     $pivotgrid-chrome-border: $border-color !default;
+
+    $pivotgrid-setting-delete-color: darken($bg-color, 27%) !default;
 
     $pivotgrid-container-bg: $bg-color !default;
     $pivotgrid-row-headers-bg: darken($bg-color, 7%) !default;
@@ -57,6 +60,26 @@
         &.k-state-focused {
             box-shadow: $button-focused-shadow;
         }
+
+        &.k-empty {
+            color: $pivotgrid-setting-delete-color;
+        }
+
+        .k-setting-delete {
+            color: $pivotgrid-setting-delete-color;
+        }
+    }
+
+    .k-pivot-toolbar {
+        .k-empty {
+            color: $pivotgrid-setting-delete-color;
+        }
+    }
+
+    .k-pivot-layout .k-grid-footer,
+    .k-pivot-layout .k-grid .k-alt {
+        color: $pivotgrid-alt-color;
+        font-weight: bold;
     }
 
     /* Loading indicator */
