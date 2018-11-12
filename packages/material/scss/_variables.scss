@@ -1049,6 +1049,15 @@ $window-shadow: $box-shadow-depth-4 !default;
 $window-focused-shadow: $box-shadow-depth-5 !default;
 
 
+// DateTime
+
+$time-list-highlight-color: null !default;
+$time-list-focused-bg: null !default;
+$time-list-title-focus: null !default;
+
+$time-header-padding: null !default;
+
+
 // Config maps
 $typography-config: () !default;
 // sass-lint:disable indentation

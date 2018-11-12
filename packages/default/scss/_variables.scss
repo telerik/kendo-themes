@@ -962,6 +962,15 @@ $window-shadow: 0 3px 3px 0 rgba(0, 0, 0, .06) !default;
 $window-focused-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
 
 
+// DateTime
+
+$time-list-highlight-color: $border-color !default;
+$time-list-focused-bg: rgba(0, 0, 0, .04) !default;
+$time-list-title-focus: black !default;
+
+$time-header-padding: null !default;
+
+
 // Config maps
 $typography-config: () !default;
 // sass-lint:disable indentation
