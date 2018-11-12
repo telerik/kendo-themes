@@ -379,4 +379,14 @@
 
     }
 
+    .k-ie9,
+    .k-ie10,
+    .k-ie11 {
+
+        .k-button,
+        .k-button-group {
+            display: inline-block;
+        }
+    }
+
 }
