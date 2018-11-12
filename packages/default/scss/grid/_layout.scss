@@ -861,6 +861,13 @@
         }
     }
 
+    .k-grid-virtual[dir="rtl"],
+    .k-grid-virtual.k-rtl {
+        .k-grid-content .k-grid-table {
+            float: right;
+        }
+    }
+
     .k-grid-add-row td {
         border-bottom-style: solid;
         border-bottom-width: 1px;
