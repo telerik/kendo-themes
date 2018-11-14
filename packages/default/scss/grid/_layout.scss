@@ -553,6 +553,11 @@
             margin-bottom: -1px;
         }
 
+        &.k-grid-draggable-header {
+            user-select: none;
+            touch-action: none;
+        }
+
         .k-header {
             position: relative;
             vertical-align: bottom;
@@ -563,11 +568,6 @@
 
             &.k-first {
                 border-left-width: $grid-header-first-border;
-            }
-
-            &.k-grid-draggable-header th {
-                user-select: none;
-                touch-action: none;
             }
         }
 
