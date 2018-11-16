@@ -19,13 +19,25 @@
             box-shadow: $grid-edit-cell-shadow;
         }
 
-        // Hover, Focused state
-        tbody tr:hover,
-        tbody tr.k-state-hover,
-        td.k-state-focused,
-        th.k-state-focused {
-            background-color: $grid-hovered-bg;
+        // Selected state
+        td.k-state-selected,
+        tr.k-state-selected {
+            background-color: $grid-selected-bg;
         }
+        tr.k-state-selected > td {
+            background-color: transparent;
+        }
+
+        // Hover, Focused state
+        tbody {
+            tr:hover,
+            tr.k-state-hover,
+            td.k-state-focused,
+            th.k-state-focused {
+                background-color: $grid-hovered-bg;
+            }
+        }
+
         th,
         td {
             border-left-color: transparent;
