@@ -119,7 +119,8 @@
             text-align: center;
             clear: both;
         }
-        .k-nav-today {
+        .k-nav-today,
+        .k-footer > .k-state-disabled {
             padding: $calendar-header-padding-y $calendar-header-padding-x;
             display: block;
         }
