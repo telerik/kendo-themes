@@ -25,9 +25,9 @@
         }
 
         // Selected state
-        tr.k-state-selected,
         th.k-state-selected,
-        td.k-state-selected {
+        td.k-state-selected,
+        tr.k-state-selected > td {
             color: $grid-selected-text;
             background-color: $grid-selected-bg;
         }
