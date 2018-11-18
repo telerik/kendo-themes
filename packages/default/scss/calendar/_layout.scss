@@ -184,6 +184,9 @@
             .k-other-month .k-link {
                 opacity: $calendar-other-month-opacity;
             }
+            .k-state-disabled {
+                opacity: $disabled-opacity;
+            }
         }
         table.k-content {
             display: inline-table;
