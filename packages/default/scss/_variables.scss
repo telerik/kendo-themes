@@ -824,6 +824,17 @@ $calendar-header-border: $header-border !default;
 $calendar-header-gradient: $header-gradient !default;
 $calendar-header-shadow: 0 1px 3px 1px rgba(black, .1) !default;
 
+$calendar-header-button-hovered-bg: $button-hovered-bg !default;
+$calendar-header-button-hovered-text: $button-hovered-text !default;
+$calendar-header-button-hovered-border: $button-hovered-border !default;
+$calendar-header-button-hovered-gradient: $button-hovered-gradient !default;
+
+$calendar-header-button-pressed-bg: $button-pressed-bg !default;
+$calendar-header-button-pressed-text: $button-pressed-text !default;
+$calendar-header-button-pressed-border: $button-pressed-border !default;
+$calendar-header-button-pressed-gradient: $button-pressed-gradient !default;
+$calendar-header-button-pressed-shadow: $button-pressed-shadow !default;
+
 $calendar-header-cell-text: $calendar-header-text !default;
 $calendar-header-cell-opacity: $disabled-opacity !default;
 

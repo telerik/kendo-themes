@@ -36,11 +36,23 @@ $calendar-today-color: $accent;
         .k-nav-fast {
             &:hover,
             &.k-state-hover {
-                @include appearance( hovered-button );
+                @include fill(
+                    $calendar-header-button-hovered-text,
+                    $calendar-header-button-hovered-bg,
+                    $calendar-header-button-hovered-border,
+                    $calendar-header-button-hovered-gradient
+                );
             }
 
-            &:active {
-                @include appearance( pressed-button );
+            &:active,
+            &.k-state-active {
+                @include fill(
+                    $calendar-header-button-pressed-text,
+                    $calendar-header-button-pressed-bg,
+                    $calendar-header-button-pressed-border,
+                    $calendar-header-button-pressed-gradient
+                );
+                @include box-shadow( $calendar-header-button-pressed-shadow );
             }
         }
 
