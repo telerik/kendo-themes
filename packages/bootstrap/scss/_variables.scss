@@ -320,6 +320,17 @@ $header-selected-border: $selected-border !default;
 $header-selected-gradient: null !default;
 
 
+// Icons
+$icon-size: 16px !default;
+$icon-size-lg: ($icon-size * 2) !default;
+$icon-spacing: ($spacer / 2) !default;
+
+/// The URL to the icon font that will be used by the theme
+/// The default value of `null` embeds the package font with a `data:` URL
+/// @group icons
+$icon-font-url: null !default;
+
+
 // Button
 
 /// The background of the buttons.
@@ -561,6 +572,10 @@ $grid-grouping-row-text: $grid-text !default;
 
 $grid-sorted-bg: rgba( contrast-wcag( $grid-bg ), .02 ) !default;
 $grid-sorting-indicator-text: $accent !default;
+$grid-sorting-index-font-size: ($icon-size * .75);
+$grid-sorting-index-height: $icon-size !default;
+$grid-sorting-index-spacing-y: 2px;
+$grid-sorting-index-spacing-x: -$grid-sorting-index-spacing-y;
 
 $grid-focused-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .08) !default;
 
@@ -717,19 +732,11 @@ $chart-minor-lines: rgba(0, 0, 0, .04) !default;
 
 $chart-area-opacity: .8 !default;
 
-// Icons
-$icon-size: 16px !default;
-$icon-size-lg: 32px !default;
-$icon-spacing: ($spacer / 2) !default;
-
-/// The URL to the icon font that will be used by the theme
-/// The default value of `null` embeds the package font with a `data:` URL
-/// @group icons
-$icon-font-url: null !default;
 
 // Disabled mixin variables
 $disabled-filter: grayscale(.1) !default;
 $disabled-opacity: .65 !default;
+
 
 // Pager
 $pager-padding-x: $toolbar-padding-x !default;

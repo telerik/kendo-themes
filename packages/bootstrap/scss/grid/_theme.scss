@@ -93,14 +93,6 @@
             color: $grid-sorting-indicator-text;
         }
 
-        .k-sort-order {
-            font-size: ($icon-size * .75);
-            margin-left: -4px;
-            line-height: 1;
-            vertical-align: text-top;
-            margin-top: 2px;
-        }
-
         .k-grid-filter {}
         .k-grid-filter:focus {
             box-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .1 );

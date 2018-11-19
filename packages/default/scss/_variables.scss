@@ -273,6 +273,7 @@ $popup-bg: lighten($base-bg, 1%) !default;
 $popup-border: $base-border !default;
 $popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
+
 // Header
 $header-text: $base-text !default;
 $header-bg: $base-bg !default;
@@ -288,6 +289,17 @@ $header-selected-text: $selected-text !default;
 $header-selected-bg: $selected-bg !default;
 $header-selected-border: $selected-border !default;
 $header-selected-gradient: null !default;
+
+
+// Icons
+$icon-size: 16px !default;
+$icon-size-lg: ($icon-size * 2) !default;
+$icon-spacing: ($icon-size / 4) !default;
+
+/// The URL to the icon font that will be used by the theme
+/// The default value of `null` embeds the package font with a `data:` URL
+/// @group icons
+$icon-font-url: null !default;
 
 
 // Button
@@ -535,6 +547,11 @@ $grid-grouping-row-text: $grid-text !default;
 
 $grid-sorted-bg: rgba( contrast-wcag( $grid-bg ), .02 ) !default;
 $grid-sorting-indicator-text: $accent !default;
+$grid-sorting-index-font-size: $font-size-sm !default;
+$grid-sorting-index-height: $icon-size !default;
+$grid-sorting-index-spacing-y: $icon-spacing / 2;
+$grid-sorting-index-spacing-x: -$grid-sorting-index-spacing-y;
+
 
 $grid-focused-shadow: $list-item-focused-shadow !default;
 
@@ -675,19 +692,11 @@ $chart-minor-lines: rgba(0, 0, 0, .04) !default;
 
 $chart-area-opacity: .8 !default;
 
-// Icons
-$icon-size: 16px !default;
-$icon-size-lg: 32px !default;
-$icon-spacing: 4px !default;
-
-/// The URL to the icon font that will be used by the theme
-/// The default value of `null` embeds the package font with a `data:` URL
-/// @group icons
-$icon-font-url: null !default;
 
 // Disabled mixin variables
 $disabled-filter: grayscale(.1) !default;
 $disabled-opacity: .6 !default;
+
 
 // Pager
 $pager-padding-x: $toolbar-padding-x !default;
