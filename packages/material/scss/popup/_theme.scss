@@ -7,7 +7,8 @@ $grouping-border: $grouping-header-bg !default;
 
 @include exports('popup/theme/material') {
 
-    .k-list .k-item {
+    .k-list .k-item,
+    .k-list-optionlabel {
 
         // Focused state
         &:focus,
