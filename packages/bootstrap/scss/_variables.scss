@@ -1064,6 +1064,91 @@ $scrollview-navigation-hover-opacity: 1 !default;
 $scrollview-navigation-hover-span-bg: null !default;
 
 
+// Switch
+$switch-size: 5em !default;
+$switch-border-radius: $switch-size !default;
+
+$switch-track-size: null !default;
+$switch-container-border-width: 0 !default;
+$switch-container-padding-x: 3px !default;
+$switch-container-padding-y: $switch-container-padding-x !default;
+
+$switch-handle-size: (.4 * $switch-size) !default;
+$switch-handle-border-radius: $switch-size !default;
+$switch-handle-border-width: 0 !default;
+
+$switch-label-display: none !default;
+$switch-label-outer-spacing: 8px !default;
+$switch-label-inner-spacing: 2px !default;
+$switch-label-spacing: add-two($switch-label-outer-spacing, $switch-label-inner-spacing);
+$switch-label-occupied-space: add-three(-$switch-handle-size, -$switch-label-spacing, -$switch-container-padding-x);
+$switch-label-text-transform: null !default;
+
+$switch-label-position: add-two($switch-label-outer-spacing, -$switch-container-border-width);
+$switch-label-width: calc(100% + #{$switch-label-occupied-space});
+$switch-on-left-x: calc(100% - #{$switch-handle-size});
+
+$switch-container-shadow: null !default;
+$switch-container-hovered-shadow: null !default;
+$switch-container-focused-shadow: null !default;
+
+$switch-on-bg: $accent !default;
+$switch-on-text: white !default;
+$switch-on-border: null !default;
+$switch-on-gradient: null !default;
+$switch-on-shadow: null !default;
+$switch-on-focused-shadow: 0 0 1px 2px tint( $switch-on-bg, 6 ) !default;
+
+$switch-on-focused-bg: null !default;
+$switch-on-focused-text: null !default;
+$switch-on-focused-border: null !default;
+$switch-on-focused-gradient: null !default;
+
+$switch-on-hovered-bg: $primary-button-hovered-bg !default;
+$switch-on-hovered-text: $switch-on-text !default;
+$switch-on-hovered-border: null !default;
+$switch-on-hovered-gradient: null !default;
+
+$switch-on-handle-bg: white !default;
+$switch-on-handle-text: $switch-on-text !default;
+$switch-on-handle-border: null !default;
+$switch-on-handle-gradient: null !default;
+$switch-on-handle-shadow: null !default;
+
+$switch-on-handle-hovered-bg: $switch-on-handle-bg !default;
+$switch-on-handle-hovered-text: $switch-on-text !default;
+$switch-on-handle-hovered-border: null !default;
+$switch-on-handle-hovered-gradient: null !default;
+
+$switch-off-bg: $button-bg !default;
+$switch-off-text: black !default;
+$switch-off-border: null !default;
+$switch-off-gradient: null !default;
+$switch-off-shadow: null !default;
+$switch-off-focused-shadow: 0 0 1px 2px tint( $switch-off-bg, 6 ) !default;
+
+$switch-off-focused-bg: null !default;
+$switch-off-focused-text: null !default;
+$switch-off-focused-border: null !default;
+$switch-off-focused-gradient: null !default;
+
+$switch-off-hovered-bg: $button-hovered-bg !default;
+$switch-off-hovered-text: $switch-off-text !default;
+$switch-off-hovered-border: null !default;
+$switch-off-hovered-gradient: null !default;
+
+$switch-off-handle-bg: $switch-on-handle-bg !default;
+$switch-off-handle-text: $switch-off-text !default;
+$switch-off-handle-border: null !default;
+$switch-off-handle-gradient: null !default;
+$switch-off-handle-shadow: null !default;
+
+$switch-off-handle-hovered-bg: $switch-on-handle-hovered-bg !default;
+$switch-off-handle-hovered-text: $switch-off-text !default;
+$switch-off-handle-hovered-border: null !default;
+$switch-off-handle-hovered-gradient: null !default;
+
+
 // Config maps
 $typography-config: () !default;
 // sass-lint:disable indentation

@@ -1,22 +1,18 @@
-$switch-size: 6em !default;
-$switch-handle-size: (.4 * $switch-size) !default;
-
 @include exports('switch/layout') {
-    $switch-border-width: 1px;
-    $switch-padding: 2 * $switch-border-width;
 
     .k-switch {
+        @include border-radius( $switch-border-radius );
         cursor: pointer;
-        border: 0;
-        display: inline-block;
-        font-size: $font-size-xs;
-        overflow: hidden;
-        position: relative;
-        text-align: left;
-        user-select: none;
-        vertical-align: middle;
         width: $switch-size;
+        background: none;
+        border: 0;
         outline: 0;
+        display: inline-flex;
+        overflow: hidden;
+        vertical-align: middle;
+        font-size: $font-size-xs;
+        user-select: none;
+        text-align: left;
 
         [type='checkbox'] {
             display: none;
@@ -24,76 +20,110 @@ $switch-handle-size: (.4 * $switch-size) !default;
     }
 
     .k-switch,
-    .k-switch-wrapper,
     .k-switch-container,
     .k-switch-handle {
         box-sizing: border-box;
     }
 
-    .k-switch-wrapper {
-        display: none; // TODO: do not render
-    }
-
-    .k-switch .k-switch-background {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-
     .k-switch-container {
-        padding: $switch-padding 0;
-        display: block;
-        width: 100%;
-        background: transparent;
-        transform: translateZ(0);
+        @include border-radius( $switch-border-radius );
+        padding: $switch-container-padding-y $switch-container-padding-x;
+        border-width: $switch-container-border-width;
+        border-style: solid;
+        flex: 1 0 auto;
+        position: relative;
         outline: 0;
+        transition: background-color 200ms ease-out 0s;
     }
 
     .k-switch-handle {
-        position: relative;
+        @include border-radius( $switch-handle-border-radius );
         width: $switch-handle-size;
         height: $switch-handle-size;
-        display: inline-block;
-        margin: 0 ($switch-padding * 3) 0 $switch-padding;
-        border-width: $switch-border-width;
+        border-width: $switch-handle-border-width;
         border-style: solid;
+        display: inline-block;
         vertical-align: middle;
+        position: relative;
+        left: 0;
+        transition: left 200ms ease-out 0s;
+
+        .k-ie & {
+            display: block;
+        }
     }
 
-    .k-switch-label-off {
-        left: ($switch-size / 2);
+    .k-switch-on .k-switch-handle {
+        left: $switch-on-left-x;
+
+        .k-ie &,
+        .k-edge & {
+            left: 100%;
+            margin-left: -$switch-handle-size;
+        }
     }
 
-    .k-switch-label-on {
-        left: -$switch-handle-size;
+    .k-switch-off .k-switch-handle {
+        left: 0;
     }
 
     .k-switch-label-on,
     .k-switch-label-off {
-        top: -$switch-border-width;
-        display: block;
-        text-align: center;
+        display: $switch-label-display;
+        width: $switch-label-width;
         position: absolute;
-        text-transform: uppercase;
-        text-shadow: none;
+        top: 50%;
+        transform: translateY(-50%);
+        text-transform: $switch-label-text-transform;
         line-height: $switch-handle-size;
-        vertical-align: middle;
+        overflow: hidden;
     }
 
-    .k-switch-container,
-    .k-switch-wrapper {
-        border-width: $switch-border-width;
-        border-style: solid;
+    .k-switch-label-on {
+        text-align: left;
+        left: $switch-label-position;
     }
 
+    .k-switch-label-off {
+        text-align: right;
+        right: $switch-label-position;
+    }
 
+    @if $switch-track-size {
 
-    .k-switch[dir='rtl'] {
-        .k-switch-label-off {
-            left: -$switch-handle-size;
+        .k-switch {
+            overflow: visible;
         }
 
+        .k-switch-container {
+            height: $switch-track-size;
+        }
+
+        .k-switch-handle {
+            top: add-three($switch-track-size, -$switch-handle-size, -$switch-container-border-width*2, 0.5);
+        }
+
+    }
+
+    .k-rtl .k-switch,
+    .k-switch[dir = "rtl"] {
+        &.k-switch-on .k-switch-handle {
+            left: 0;
+        }
+
+        &.k-switch-off .k-switch-handle {
+            left: $switch-on-left-x;
+        }
         .k-switch-label-on {
-            left: ($switch-size / 2);
+            text-align: right;
+            left: initial;
+            right: $switch-label-position;
+        }
+        .k-switch-label-off {
+            text-align: left;
+            left: $switch-label-position;
+            right: initial;
         }
     }
+
 }
