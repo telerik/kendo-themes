@@ -43,13 +43,15 @@ $grouping-border: $border-color !default;
 
     .k-list {}
 
-    .k-list .k-item {
+    .k-list .k-item,
+    .k-list-optionlabel {
         transition: all .2s ease; // sass-lint:disable-block no-transition-all
     }
 
     .k-list .k-item:hover,
     .k-list .k-item.k-state-hover,
-    .k-list-optionlabel:hover {
+    .k-list-optionlabel:hover,
+    .k-list-optionlabel.k-state-hover {
         @include appearance( hovered-list-item );
 
         &.k-state-selected {
@@ -59,7 +61,9 @@ $grouping-border: $border-color !default;
     }
 
     .k-list .k-item:focus,
-    .k-list .k-item.k-state-focused {
+    .k-list .k-item.k-state-focused,
+    .k-list-optionlabel:focus,
+    .k-list-optionlabel.k-state-focused {
         @include appearance( focused-list-item );
     }
 
