@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.1"></a>
+## [1.5.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.5.0...@progress/kendo-theme-material@1.5.1) (2018-11-22)
+
+
+### Bug Fixes
+
+* **grid:** non-scrollable grid command buttons margins ([43e18ba](https://github.com/telerik/kendo-themes/commit/43e18ba)), closes [#426](https://github.com/telerik/kendo-themes/issues/426)
+
+
+
+
 <a name="1.5.0"></a>
 # [1.5.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.4.0...@progress/kendo-theme-material@1.5.0) (2018-11-09)
 
