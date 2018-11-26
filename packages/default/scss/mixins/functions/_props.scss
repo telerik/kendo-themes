@@ -1,0 +1,69 @@
+// Generic form
+@function directional-property($prop: null, $side: null, $multiplier: 1) {
+
+    @if (not type-of($prop) == number) or (not type-of($prop) == list) {
+        @warn "$prop is invalid type #{$prop, type-of($prop)}!";
+        @return false;
+    }
+
+    @if length($prop) == 1 {
+        @return $prop * $multiplier;
+    }
+
+    @if length($prop) == 1 {
+        @if $side == top or $side == bottom {
+            @return nth($prop, 1) * $multiplier;
+        }
+        @if $side == left or $side == right {
+            @return nth($prop, 2) * $multiplier;
+        }
+    }
+
+    @if length($prop) == 3 {
+        @if $side == top {
+            @return nth($prop, 1) * $multiplier;
+        }
+        @if $side == left or $side == right {
+            @return nth($prop, 2) * $multiplier;
+        }
+        @if $side == bottom {
+            @return nth($prop, 3) * $multiplier;
+        }
+    }
+
+    @if length($prop) == 4 {
+        @if $side == top {
+            @return nth($prop, 1) * $multiplier;
+        }
+        @if $side == left {
+            @return nth($prop, 2) * $multiplier;
+        }
+        @if $side == bottom {
+            @return nth($prop, 3) * $multiplier;
+        }
+        @if $side == right {
+            @return nth($prop, 4) * $multiplier;
+        }
+    }
+
+    @warn "$side is invalid: #{$side, type-of($side)}!";
+    @return false;
+
+}
+
+// Border width related
+@function border-width($border-width: null, $side: null, $multiplier: 1) {
+    @return directional-property($border-width, $side, $multiplier);
+}
+@function border-top-width($border-width: null, $multiplier: 1) {
+    @return border-width($border-width, top, $multiplier);
+}
+@function border-right-width($border-width: null, $multiplier: 1) {
+    @return border-width($border-width, right, $multiplier);
+}
+@function border-bottom-width($border-width: null, $multiplier: 1) {
+    @return border-width($border-width, bottom, $multiplier);
+}
+@function border-left-width($border-width: null, $multiplier: 1) {
+    @return border-width($border-width, left, $multiplier);
+}
