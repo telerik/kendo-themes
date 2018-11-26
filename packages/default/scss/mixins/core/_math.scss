@@ -1,22 +1,22 @@
 // Add two
 @function add-two( $one, $two, $multiplier: 1 ) {
-    $_unit-1: unit($one);
-    $_unit-2: unit($two);
 
     $_one: $multiplier * $one;
     $_two: $multiplier * $two;
 
     // if either is zero
-    @if $_one == 0 {
+    @if $multiplier == 0 {
+        @return 0;
+    }
+    @if $one == 0 {
         @return $_two;
     }
-
-    @if $_two == 0 {
+    @if $two == 0 {
         @return $_one;
     }
 
     // if all units are same type
-    @if $_unit-1 == $_unit-2 {
+    @if comparable($_one, $_two) {
         @return $_one + $_two;
     }
 
@@ -27,13 +27,14 @@
 
 // Add three
 @function add-three( $one, $two, $three, $multiplier: 1 ) {
-    $_unit-1: unit($one);
-    $_unit-2: unit($two);
-    $_unit-3: unit($three);
 
     $_one: $multiplier * $one;
     $_two: $multiplier * $two;
     $_three: $multiplier * $three;
+
+    @if $multiplier == 0 {
+        @return 0;
+    }
 
     // pass to add-two if any component is zero
     @if $_one == 0 {
@@ -50,22 +51,22 @@
 
 
     // if all units are same type
-    @if $_unit-1 == $_unit-2 == $_unit-3 {
+    @if comparable($_one, $_two ) and comparable($_one, $_three ) {
         @return $_one + $_two + $_three;
     }
 
     // if $_unit-1 and $_unit-2 are same type
-    @if $_unit-1 == $_unit-2 {
+    @if comparable($_one, $_two ) {
         @return calc( #{$_one + $_two} + #{$_three} );
     }
 
     // if $_unit-1 and $_unit-3 are same type
-    @if $_unit-1 == $_unit-3 {
+    @if comparable($_one, $_three ) {
         @return calc( #{$_one + $_three} + #{$_two} );
     }
 
     // if $_unit-2 and $_unit-3 are same type
-    @if $_unit-2 == $_unit-3 {
+    @if comparable($_two, $_three ) {
         @return calc( #{$_one} + #{$_two + $_three} );
     }
 
