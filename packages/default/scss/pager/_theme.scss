@@ -1,46 +1,61 @@
 @include exports("pager/theme") {
-    $pager-text: $header-text !default;
-    $pager-bg: $header-bg !default;
-    $pager-items-hover-bg: $list-item-hovered-bg !default;
-    $pager-numbers-text: $accent !default;
-    $pager-numbers-selected-text: $accent-contrast !default;
 
     .k-pager-wrap {
-        color: $pager-text;
-        background-color: $pager-bg;
+        @include fill(
+            $pager-text,
+            $pager-bg,
+            $pager-border
+        );
+    }
 
-        .k-link,
-        .k-pager-nav {
+    .k-pager-nav {
+        @include fill(
+            $pager-item-text,
+            $pager-item-bg,
+            $pager-item-border
+        );
+
+        &:hover {
+            @include fill(
+                $pager-number-hovered-text,
+                $pager-number-hovered-bg,
+                $pager-number-hovered-border
+            );
+        }
+
+        &:focus {
+            box-shadow: $list-item-focused-shadow;
+        }
+    }
+
+    .k-pager-numbers {
+        .k-link {
+            @include fill(
+                $pager-number-text,
+                $pager-number-bg,
+                $pager-number-border
+            );
+
+            &:hover {
+                @include fill(
+                    $pager-number-hovered-text,
+                    $pager-number-hovered-bg,
+                    $pager-number-hovered-border
+                );
+            }
+
             &:focus {
                 box-shadow: $list-item-focused-shadow;
-            }
-            &:hover {
-                background-color: $pager-items-hover-bg;
             }
         }
 
         .k-state-selected {
-            color: $selected-text;
-            background-color: $selected-bg;
-
-            &:focus {
-                box-shadow: none;
-            }
-            &:hover {
-                color: $selected-text;
-                background-color: $selected-bg;
-                cursor: default;
-            }
+            @include fill(
+                $pager-number-selected-text,
+                $pager-number-selected-bg,
+                $pager-number-selected-border
+            );
         }
     }
-    .k-pager-numbers {
-        .k-link,
-        .k-link:link {
-            color: $pager-numbers-text;
 
-            &.k-state-selected {
-                color: $accent-contrast;
-            }
-        }
-    }
 }
