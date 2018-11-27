@@ -599,9 +599,9 @@ $grid-header-text: rgba(0, 0, 0, .54) !default;
 $grid-header-border: $grid-border !default;
 $grid-header-gradient: null !default;
 
-$grid-alt-bg: transparent !default;
-$grid-alt-text: $grid-text !default;
-$grid-alt-border: $grid-border !default;
+$grid-alt-bg: null !default;
+$grid-alt-text: null !default;
+$grid-alt-border: null !default;
 
 $grid-hovered-bg: rgba( contrast-wcag( $grid-bg ), .07 ) !default;
 $grid-hovered-text: $grid-text !default;
