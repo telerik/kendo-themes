@@ -685,7 +685,7 @@ $panelbar-header-selected-text: $secondary !default;
 $panelbar-header-selected-border: null !default;
 $panelbar-header-selected-gradient: null !default;
 
-$panelbar-header-focused-shadow: $list-item-focused-shadow !default;
+$panelbar-header-focused-shadow: null !default;
 
 $panelbar-item-hovered-bg: try-shade($panelbar-bg) !default;
 $panelbar-item-hovered-text: null !default;
@@ -697,7 +697,7 @@ $panelbar-item-selected-text: $secondary !default;
 $panelbar-item-selected-border: null !default;
 $panelbar-item-selected-gradient: null !default;
 
-$panelbar-item-focused-shadow: $list-item-focused-shadow !default;
+$panelbar-item-focused-shadow: null !default;
 
 
 // Notification
