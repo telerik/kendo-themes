@@ -449,9 +449,9 @@ $flat-button-active-opacity: .16 !default;
 $flat-button-selected-opacity: .22 !default;
 
 // Action buttons
-$action-button-text: rgba( $accent, .87 ) !default;
-$action-button-hovered-bg: rgba( $accent, .12 ) !default;
-$action-button-pressed-bg: rgba( $accent, .16 ) !default;
+$action-button-text: rgba( $primary, .87 ) !default;
+$action-button-hovered-bg: rgba( $primary, .12 ) !default;
+$action-button-pressed-bg: rgba( $primary, .16 ) !default;
 $action-button-cancel-bg: rgba( black, .12 ) !default;
 
 // Toolbar
