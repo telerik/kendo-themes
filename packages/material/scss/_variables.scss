@@ -351,18 +351,18 @@ $popup-border: $component-border !default;
 $popup-shadow: 0 3px 3px -2px rgba(0, 0, 0, .02), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12) !default;
 
 // Header
-$header-text: $base-text !default;
 $header-bg: $base-bg !default;
+$header-text: $base-text !default;
 $header-border: $base-border !default;
 $header-gradient: null !default;
 
-$header-hovered-text: $hovered-text !default;
 $header-hovered-bg: $hovered-bg !default;
+$header-hovered-text: $hovered-text !default;
 $header-hovered-border: $hovered-border !default;
 $header-hovered-gradient: null !default;
 
-$header-selected-text: $selected-text !default;
 $header-selected-bg: $selected-bg !default;
+$header-selected-text: $selected-text !default;
 $header-selected-border: $selected-border !default;
 $header-selected-gradient: null !default;
 
