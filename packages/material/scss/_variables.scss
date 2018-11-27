@@ -868,7 +868,7 @@ $calendar-header-shadow: null !default;
 $calendar-header-cell-text: $calendar-header-text !default;
 $calendar-header-cell-opacity: .38 !default;
 
-$calendar-navigation-bg: mix( rgba($calendar-text, 1), $calendar-bg, 3) !default;
+$calendar-navigation-bg: true-mix( $calendar-text, $calendar-bg, 3) !default;
 $calendar-navigation-text: $calendar-text !default;
 $calendar-navigation-border: $calendar-border !default;
 
