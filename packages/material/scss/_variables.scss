@@ -482,18 +482,18 @@ $input-focused-shadow: none !default;
 $input-disabled-bg: rgb(189, 189, 189) !default;
 
 // Node
-$node-text: $base-text !default;
 $node-bg: $base-bg !default;
+$node-text: $base-text !default;
 $node-border: $base-border !default;
 $node-gradient: null !default;
 
-$node-hovered-text: $hovered-text !default;
 $node-hovered-bg: $hovered-bg !default;
+$node-hovered-text: $hovered-text !default;
 $node-hovered-border: $hovered-border !default;
 $node-hovered-gradient: null !default;
 
-$node-selected-text: $selected-text !default;
 $node-selected-bg: $selected-bg !default;
+$node-selected-text: $selected-text !default;
 $node-selected-border: $selected-border !default;
 $node-selected-gradient: null !default;
 
