@@ -43,7 +43,7 @@
 // hues (default, lighter, darker), or any of the aforementioned prefixed with "-contrast".
 @function material-color($palette, $hue: default, $opacity: null) {
 
-    @if (type-of($palette) == string) {
+    @if not (type-of($palette) == map) {
         $palette: get-base-palette($palette);
     }
 
