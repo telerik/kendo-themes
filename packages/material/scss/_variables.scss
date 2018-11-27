@@ -281,20 +281,20 @@ $bg-color: #ffffff !default;
 $border-color: rgba( black, .12 ) !default;
 
 /// The text color of the components' chrome area.
-$base-text: rgb(0, 0, 0) !default;
+$base-text: if($theme-type == dark, white, black) !default;
 /// The background of the components' chrome area.
-$base-bg: #fff !default;
+$base-bg: if($theme-type == dark, black, white) !default;
 
-$base-border: rgba( black, .08 ) !default;
+$base-border: rgba( if($theme-type == dark, white, black), .08 ) !default;
 /// The gradient background of the components' chrome area.
 $base-gradient: null !default;
 
 /// The text color of hovered items.
 $hovered-text: $base-text !default;
 /// The background of hovered items.
-$hovered-bg: rgba( black, .07) !default;
+$hovered-bg: rgba( if($theme-type == dark, white, black), .07) !default;
 /// The border color of hovered items.
-$hovered-border: rgba( black, .15 ) !default;
+$hovered-border: rgba( if($theme-type == dark, white, black), .15 ) !default;
 /// The gradient background of hovered items.
 $hovered-gradient: null !default;
 
@@ -303,7 +303,7 @@ $selected-text: $accent-contrast !default;
 /// The background of selected items.
 $selected-bg: $accent !default;
 /// The border color of selected items.
-$selected-border: rgba( black, .1 ) !default;
+$selected-border: rgba( if($theme-type == dark, white, black), .1 ) !default;
 /// The gradient background of selected items.
 $selected-gradient: null !default;
 
