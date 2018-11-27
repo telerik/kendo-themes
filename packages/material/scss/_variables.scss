@@ -940,16 +940,16 @@ $chat-quick-reply-spacing: 8px !default;
 $chat-quick-reply-line-height: $chat-bubble-line-height !default;
 
 
-$chat-bg: #f5f5f5 !default;
-$chat-text: $panel-text !default;
-$chat-border: $panel-border !default;
+$chat-bg: $app-bg !default;
+$chat-text: $component-text !default;
+$chat-border: $component-border !default;
 
 $chat-bubble-bg: $component-bg !default;
 $chat-bubble-text: $component-text !default;
 $chat-bubble-border: $chat-bubble-bg !default;
 
-$chat-alt-bubble-bg: $accent !default;
-$chat-alt-bubble-text: $accent-contrast !default;
+$chat-alt-bubble-bg: $primary !default;
+$chat-alt-bubble-text: $primary-contrast !default;
 $chat-alt-bubble-border: $chat-alt-bubble-bg !default;
 
 
