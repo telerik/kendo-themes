@@ -859,11 +859,11 @@ $calendar-bg: $component-bg !default;
 $calendar-text: $component-text !default;
 $calendar-border: $component-border !default;
 
-$calendar-header-bg: $header-bg !default;
+$calendar-header-bg: null !default;
 $calendar-header-text: $header-text !default;
 $calendar-header-border: $header-border !default;
 $calendar-header-gradient: null !default;
-$calendar-header-shadow: none !default;
+$calendar-header-shadow: null !default;
 
 $calendar-header-cell-text: $calendar-header-text !default;
 $calendar-header-cell-opacity: .38 !default;
