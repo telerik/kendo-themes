@@ -499,16 +499,16 @@ $node-selected-gradient: null !default;
 
 
 // List
-$list-item-text: $text-color !default;
 $list-item-bg: $popup-bg !default;
+$list-item-text: $popup-text !default;
 
-$list-item-hovered-text: $hovered-text !default;
 $list-item-hovered-bg: $hovered-bg !default;
+$list-item-hovered-text: $hovered-text !default;
 
-$list-item-selected-text: $secondary !default;
 $list-item-selected-bg: $list-item-bg !default;
+$list-item-selected-text: $secondary !default;
 
-$list-item-focused-shadow: none !default;
+$list-item-focused-shadow: null !default;
 
 
 // Tabstrip
