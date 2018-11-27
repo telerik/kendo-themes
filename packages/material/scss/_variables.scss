@@ -243,20 +243,26 @@ $rgba-transparent: rgba( 0, 0, 0, 0 );
 // Theme colors
 /// The color that focuses the user attention.
 /// Used for primary buttons and for elements of primary importance across the theme.
-$primary: #3f51b5 !default;
-$accent: $primary;
+$primary: material-color($primary-palette, default) !default;
+$primary-darker: material-color($primary-palette, darker) !default;
+$primary-lighter: material-color($primary-palette, lighter) !default;
 
 /// The color used along with the primary color denoted by $primary.
 /// Used to provide contrast between the background and foreground colors.
-$primary-contrast: #ffffff !default;
-$accent-contrast: $primary-contrast;
+$primary-contrast: material-color($primary-palette, default-contrast) !default;
 
-/// The secondary (accent) color of the theme.
-$secondary: #ff4081 !default;
+/// The secondary color of the theme.
+$secondary: material-color($secondary-palette, default) !default;
+$secondary-darker: material-color($secondary-palette, darker) !default;
+$secondary-lighter: material-color($secondary-palette, lighter) !default;
 
 /// The color used along with the secondary color denoted by $secondary.
 /// Used to provide contrast between the background and foreground colors.
-$secondary-contrast: #ffffff !default;
+$secondary-contrast: material-color($secondary-palette, default-contrast) !default;
+
+// Aliases for backwards compatibility
+$accent: $primary;
+$accent-contrast: $primary-contrast;
 
 
 $component-bg: #ffffff;
