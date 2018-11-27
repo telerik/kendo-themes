@@ -1008,14 +1008,14 @@ $tooltip-text: contrast-wcag( $tooltip-bg ) !default;
 // Progressbar
 $progressbar-height: 5px !default;
 
-$progressbar-bg: color-level( $accent, 9 ) !default;
-$progressbar-text: $text-color !default;
-$progressbar-border: transparent !default;
+$progressbar-bg: material-color( $primary-palette, lighter ) !default;
+$progressbar-text: material-contrast( $primary-palette, lighter ) !default;
+$progressbar-border: null !default;
 $progressbar-gradient: null !default;
 
-$progressbar-fill-bg:  $accent !default;
-$progressbar-fill-text: $progressbar-text !default;
-$progressbar-fill-border: transparent !default;
+$progressbar-fill-bg:  material-color( $primary-palette, default ) !default;
+$progressbar-fill-text: material-contrast( $primary-palette, default ) !default;
+$progressbar-fill-border: null !default;
 $progressbar-fill-gradient: null !default;
 
 $progressbar-indeterminate-bg: $progressbar-bg !default;
