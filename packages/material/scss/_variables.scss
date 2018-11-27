@@ -1,6 +1,7 @@
 @import "~@progress/kendo-theme-default/scss/mixins/core/config-maps";
 @import "~@progress/kendo-theme-default/scss/mixins/core/math";
 @import "~@progress/kendo-theme-default/scss/mixins/colors";
+@import "common/material/themeing";
 
 
 // Options
@@ -14,6 +15,26 @@ $enable-transitions: true !default;
 $spacer: 1em !default;
 $spacer-x: $spacer !default;
 $spacer-y: $spacer !default;
+
+
+// Apply material theme, as early as possible
+$primary-palette-name: indigo !default;
+$secondary-palette-name: pink !default;
+$theme-type: light !default; // light or dark
+
+$primary-palette: material-palette($primary-palette-name) !default;
+$secondary-palette: material-palette($secondary-palette-name, A200, A100, A400) !default;
+
+$theme: material-theme(
+    $primary-palette,
+    $secondary-palette,
+    $theme-type
+) !default;
+
+
+// Color settings
+$is-dark-theme: map-get($theme, is-dark);
+$color-level-step: 8% !default;
 
 
 // Shadows
