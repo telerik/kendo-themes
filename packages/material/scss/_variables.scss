@@ -455,8 +455,8 @@ $action-button-pressed-bg: rgba( $primary, .16 ) !default;
 $action-button-cancel-bg: rgba( black, .12 ) !default;
 
 // Toolbar
+$toolbar-bg: try-shade($button-bg, .5) !default;
 $toolbar-text: $button-text !default;
-$toolbar-bg: darken($button-bg, 4) !default;
 $toolbar-border: $toolbar-bg !default;
 $toolbar-gradient: null !default;
 
