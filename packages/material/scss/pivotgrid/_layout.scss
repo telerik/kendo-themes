@@ -9,6 +9,14 @@
         .k-field-actions {
             top: initial;
         }
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .k-fieldselector .k-list .k-item {
+        border-width: 0;
     }
 
 }

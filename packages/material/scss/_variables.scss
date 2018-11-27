@@ -595,7 +595,7 @@ $grid-text: $component-text !default;
 $grid-border: $component-border !default;
 
 $grid-header-bg: transparent !default;
-$grid-header-text: rgba(0, 0, 0, .54) !default;
+$grid-header-text: if($theme-type == dark, $light-secondary-text, $dark-secondary-text) !default;
 $grid-header-border: $grid-border !default;
 $grid-header-gradient: null !default;
 
