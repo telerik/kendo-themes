@@ -599,7 +599,8 @@ $grid-header-text: rgba(0, 0, 0, .54) !default;
 $grid-header-border: $grid-border !default;
 $grid-header-gradient: null !default;
 
-$grid-alt-bg: null !default;
+// ZHEKOV TODO: we need this, so k-alt won't override it. When we remove k-alt, we can make this null.
+$grid-alt-bg: transparent !default;
 $grid-alt-text: null !default;
 $grid-alt-border: null !default;
 
