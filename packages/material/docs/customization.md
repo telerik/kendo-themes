@@ -102,7 +102,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$base-text</td>
 <td>
     
-    rgb(0, 0, 0)
+    if($theme-type == dark, white, black)
 </td>
 <td>The text color of the components' chrome area.
 </td>
@@ -110,8 +110,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$base-bg</td>
 <td>
-    <span class="color-preview" style="background-color: #fff"></span>
-    #fff
+    
+    if($theme-type == dark, black, white)
 </td>
 <td>The background of the components' chrome area.
 </td>
@@ -138,7 +138,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$hovered-bg</td>
 <td>
     
-    rgba( black, .07)
+    rgba( if($theme-type == dark, white, black), .07)
 </td>
 <td>The background of hovered items.
 </td>
@@ -147,7 +147,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$hovered-border</td>
 <td>
     
-    rgba( black, .15 )
+    rgba( if($theme-type == dark, white, black), .15 )
 </td>
 <td>The border color of hovered items.
 </td>
@@ -183,7 +183,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$selected-border</td>
 <td>
     
-    rgba( black, .1 )
+    rgba( if($theme-type == dark, white, black), .1 )
 </td>
 <td>The border color of selected items.
 </td>
