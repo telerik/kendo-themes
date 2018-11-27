@@ -698,6 +698,30 @@ $disabled-opacity: .6 !default;
 $pager-padding-x: $toolbar-padding-x !default;
 $pager-padding-y: $toolbar-padding-y !default;
 
+$pager-bg: $header-bg !default;
+$pager-text: $header-text !default;
+$pager-border: null !default;
+
+$pager-item-bg: null !default;
+$pager-item-text: null !default;
+$pager-item-border: null !default;
+
+$pager-item-hovered-bg: $list-item-hovered-bg !default;
+$pager-item-hovered-text: $list-item-hovered-text !default;
+$pager-item-hovered-border: null !default;
+
+$pager-number-bg: null !default;
+$pager-number-text: $accent !default;
+$pager-number-border: null !default;
+
+$pager-number-hovered-bg: $list-item-hovered-text !default;
+$pager-number-hovered-text: $accent !default;
+$pager-number-hovered-border: null !default;
+
+$pager-number-selected-bg: $selected-bg !default;
+$pager-number-selected-text: $selected-text !default;
+$pager-number-selected-border: null !default;
+
 
 // Card
 $card-padding-x: 16px !default;

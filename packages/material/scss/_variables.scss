@@ -779,9 +779,36 @@ $icon-font-url: null !default;
 $disabled-filter: grayscale(.1) !default;
 $disabled-opacity: .6 !default;
 
+
 // Pager
 $pager-padding-x: 8px !default;
 $pager-padding-y: 10px !default;
+
+$pager-bg: $component-bg !default;
+$pager-text: if($theme-type == dark, $light-secondary-text, $dark-secondary-text) !default;
+$pager-border: null !default;
+
+$pager-item-bg: null !default;
+$pager-item-text: null !default;
+$pager-item-border: null !default;
+
+$pager-item-hovered-bg: $list-item-hovered-bg !default;
+$pager-item-hovered-text: $list-item-hovered-text !default;
+$pager-item-hovered-border: null !default;
+
+$pager-number-bg: null !default;
+$pager-number-text: $component-text !default;
+$pager-number-border: null !default;
+
+$pager-number-hovered-bg: $list-item-hovered-bg !default;
+$pager-number-hovered-text: $list-item-hovered-text !default;
+$pager-number-hovered-border: null !default;
+
+$pager-number-selected-bg: $selected-bg !default;
+$pager-number-selected-text: $selected-text !default;
+$pager-number-selected-border: null !default;
+
+
 
 
 // Card
