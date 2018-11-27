@@ -265,9 +265,15 @@ $accent: $primary;
 $accent-contrast: $primary-contrast;
 
 
-$component-bg: #ffffff;
-$component-text: rgba(black, .87);
-$component-border: rgba( black, .12 );
+$body-bg: map-get($theme, body-bg) !default;
+$body-text: map-get($theme, body-text) !default;
+$app-bg: $body-bg !default;
+$app-text: $body-text !default;
+
+
+$component-bg: map-get($theme, component-bg);
+$component-text: map-get($theme, component-text);
+$component-border: map-get($theme, component-border);
 
 
 $text-color: rgba(black, .87) !default;
