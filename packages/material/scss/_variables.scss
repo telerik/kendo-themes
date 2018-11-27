@@ -1001,8 +1001,8 @@ $mediaplayer-toolbar-text: $toolbar-text !default;
 
 
 // Tooltip
-$tooltip-bg: #616161 !default;
-$tooltip-text: contrast-wcag($tooltip-bg) !default;
+$tooltip-bg: material-color( grey, 700, .9 ) !default;
+$tooltip-text: contrast-wcag( $tooltip-bg ) !default;
 
 
 // Progressbar
