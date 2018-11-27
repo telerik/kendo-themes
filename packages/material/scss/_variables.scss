@@ -346,7 +346,7 @@ $panel-border: $component-border !default;
 $popup-bg: $component-bg !default;
 $popup-text: $component-text !default;
 $popup-border: $component-border !default;
-$popup-shadow: 0 3px 3px -2px rgba(0, 0, 0, .02), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12) !default;
+$popup-shadow: 0 2px 4px -1px rgba( $elevation, .2 ), 0 4px 5px 0 rgba( $elevation, .14 ), 0 1px 10px 0 rgba( $elevation , .12 ) !default;
 
 // Header
 $header-bg: $base-bg !default;
