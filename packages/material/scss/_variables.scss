@@ -464,20 +464,20 @@ $icon-hovered-opacity: .87;
 $icon-focused-opacity: .87;
 
 // Input
-$input-text: $panel-text !default;
-$input-bg: $panel-bg !default;
-$input-border: rgba( black, .42 ) !default;
+$input-bg: null !default;
+$input-text: $component-text !default;
+$input-border: rgba( $component-border, if($theme-type == dark, 0.7, 0.42) ) !default;
 $input-shadow: null !default;
 
-$input-hovered-text: $input-text !default;
-$input-hovered-bg: $input-bg !default;
-$input-hovered-border: rgba( black, .87 ) !default;
+$input-hovered-bg: null !default;
+$input-hovered-text: null !default;
+$input-hovered-border: $input-text !default;
 $input-hovered-shadow: null !default;
 
-$input-focused-text: $input-text !default;
-$input-focused-bg: $input-bg !default;
-$input-focused-border: $accent !default;
-$input-focused-shadow: none !default;
+$input-focused-bg: null !default;
+$input-focused-text: null !default;
+$input-focused-border: $primary !default;
+$input-focused-shadow: null !default;
 
 $input-disabled-bg: rgb(189, 189, 189) !default;
 
