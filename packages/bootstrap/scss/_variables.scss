@@ -230,11 +230,6 @@ $cell-padding-y: $table-cell-padding !default;
 $cell-padding: $table-cell-padding !default;
 $cell-padding-sm: $table-cell-padding-sm !default;
 
-$window-inner-padding-x: $modal-inner-padding !default;
-$window-inner-padding-y: $modal-inner-padding !default;
-$window-titlebar-padding-x: $modal-header-padding !default;
-$window-titlebar-padding-y: $modal-header-padding !default;
-
 $zindex-popup: 1;
 $zindex-window: 2;
 
@@ -680,16 +675,6 @@ $notification-error-text: color-level($error, -6) !default;
 $notification-error-border: color-level($error, 9) !default;
 
 
-// Window
-$window-text: $modal-content-color !default;
-$window-bg: $modal-content-bg !default;
-$window-border: $modal-content-border-color !default;
-
-$window-titlebar-text: $modal-header-color !default;
-$window-titlebar-bg: $modal-header-bg !default;
-$window-titlebar-border: $modal-header-border-color !default;
-
-
 // Chart
 /// The color of the first series.
 /// @group charts
@@ -985,6 +970,34 @@ $scrollview-navigation-background: rgba(0, 0, 0, 0) !default;
 $scrollview-navigation-default-opacity: .7 !default;
 $scrollview-navigation-hover-opacity: 1 !default;
 $scrollview-navigation-hover-span-bg: null !default;
+
+
+// Window
+$window-border-width: 1px !default;
+$window-border-radius: $border-radius !default;
+
+$window-inner-padding-x: $modal-inner-padding !default;
+$window-inner-padding-y: $modal-inner-padding !default;
+$window-titlebar-border-width: 0 0 1px !default;
+$window-titlebar-border-style: solid !default;
+
+$window-title-font-size: $font-size-lg !default;
+$window-title-line-height: 1.3 !default;
+
+$window-titlebar-padding-x: $modal-header-padding !default;
+$window-titlebar-padding-y: $modal-header-padding !default;
+
+$window-bg: $modal-content-bg !default;
+$window-text: $modal-content-color !default;
+$window-border: $modal-content-border-color !default;
+
+$window-titlebar-bg: $modal-header-bg !default;
+$window-titlebar-text: $modal-header-color !default;
+$window-titlebar-border: $modal-header-border-color !default;
+
+$window-shadow: null !default;
+$window-focused-shadow: null !default;
+
 
 // Config maps
 $typography-config: () !default;

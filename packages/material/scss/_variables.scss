@@ -229,11 +229,6 @@ $cell-padding-y: 10px !default;
 $cell-padding: 8px !default;
 // $cell-padding-sm: $table-sm-cell-padding !default;
 
-$window-inner-padding-x: 24px !default;
-$window-inner-padding-y: 24px !default;
-$window-titlebar-padding-x: 24px !default;
-$window-titlebar-padding-y: 24px !default;
-
 $zindex-popup: 1;
 $zindex-window: 2;
 
@@ -1045,6 +1040,34 @@ $scrollview-navigation-background: rgba(0, 0, 0, 0) !default;
 $scrollview-navigation-default-opacity: .7 !default;
 $scrollview-navigation-hover-opacity: 1 !default;
 $scrollview-navigation-hover-span-bg: rgba($base-bg, .4) !default;
+
+
+// Window
+$window-border-width: 0 !default;
+$window-border-radius: 4px !default;
+
+$window-titlebar-padding-x: 24px !default;
+$window-titlebar-padding-y: 24px !default;
+$window-titlebar-border-width: 0 !default;
+$window-titlebar-border-style: solid !default;
+
+$window-title-font-size: 20px !default;
+$window-title-line-height: 1.4 !default;
+
+$window-inner-padding-x: 24px !default;
+$window-inner-padding-y: 24px !default;
+
+$window-bg: $component-bg !default;
+$window-text: $component-text !default;
+$window-border: null !default;
+
+$window-titlebar-bg: null !default;
+$window-titlebar-text: null !default;
+$window-titlebar-border: null !default;
+
+$window-shadow: $box-shadow-depth-4 !default;
+$window-focused-shadow: $box-shadow-depth-5 !default;
+
 
 // Config maps
 $typography-config: () !default;
