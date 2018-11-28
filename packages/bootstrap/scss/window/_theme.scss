@@ -1,18 +1,6 @@
-@include exports("window/theme") {
+@import "~@progress/kendo-theme-default/scss/window/theme";
 
-    .k-window {
-        @include border-radius();
-        border-color: $window-border;
-        color: $window-text;
-        background-color: $window-bg;
-    }
-
-    // Titlebar
-    .k-window-titlebar {
-        border-color: $window-titlebar-border;
-        color: $window-titlebar-text;
-        background-color: $window-titlebar-bg;
-    }
+@include exports("window/theme/bootstrap") {
 
     // Window actions
     .k-window-actions {
@@ -35,12 +23,6 @@
         &::after {
             display: none;
         }
-    }
-
-    // Content
-    .k-window-content {
-        border-color: inherit;
-        background: none;
     }
 
 }

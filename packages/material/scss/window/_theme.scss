@@ -1,34 +1,20 @@
-$window-content-padding: $padding-y * 2 !default;
+@import "~@progress/kendo-theme-default/scss/window/theme";
 
-@include exports("window/theme") {
+@include exports("window/theme.material") {
 
-    .k-widget.k-window {
-        border-radius: $border-radius;
+    .k-window-actions {
 
-        .k-window-titlebar {
+        > .k-button-icon {
+            opacity: $icon-opacity;
 
-            .k-window-title {
-                color: $base-text;
+            &:hover {
+                opacity: $icon-hovered-opacity;
             }
-        }
 
-        .k-window-actions {
-
-            > .k-button-icon {
-                opacity: $icon-opacity;
-
-                &:hover {
-                    opacity: $icon-hovered-opacity;
-                }
-
-                &::before {
-                    background-color: transparent;
-                }
+            &::before {
+                background-color: transparent;
             }
-        }
-
-        .k-content.k-window-content {
-            color: $text-color;
         }
     }
+
 }
