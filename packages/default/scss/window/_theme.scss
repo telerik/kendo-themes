@@ -1,26 +1,26 @@
 @include exports("window/theme") {
 
-    $window-border-color: rgba(0, 0, 0, .08) !default;
-    $window-shadow: 0 3px 3px 0 rgba(0, 0, 0, .06) !default;
-    $window-focused-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
-
-    $window-titlebar-border-color: inherit !default;
-    $window-titlebar-bg: $header-bg !default;
-    $window-titlebar-text: $header-text !default;
-
+    // Window
     .k-window {
-        @include appearance( panel );
-        border-width: 0;
-        box-shadow: $window-shadow;
+        @include fill(
+            $window-text,
+            $window-bg,
+            $window-border
+        );
+        @include box-shadow( $window-shadow );
     }
     .k-window.k-state-focused {
-        box-shadow: $window-focused-shadow;
+        @include box-shadow( $window-focused-shadow );
     }
 
 
     // Titlebar
     .k-window-titlebar {
-        @include fill( $window-titlebar-text, $window-titlebar-bg, $window-titlebar-border-color );
+        @include fill(
+            $window-titlebar-text,
+            $window-titlebar-bg,
+            $window-titlebar-border
+        );
         background-clip: padding-box;
 
         .k-ie11 &,
