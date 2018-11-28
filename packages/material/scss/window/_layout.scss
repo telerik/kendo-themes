@@ -2,18 +2,6 @@
 
 @include exports("window/layout/material") {
 
-    $window-title-font-size: 20px !default;
-    $window-title-line-height: 1.4 !default;
-
-    .k-window-titlebar {
-        border-width: 0;
-    }
-    .k-window-title {
-        margin: -.2em 0;
-        font-size: $window-title-font-size;
-        line-height: $window-title-line-height;
-    }
-
     .k-window-actions {
 
         > .k-button-icon {

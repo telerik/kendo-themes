@@ -1,12 +1,9 @@
 @include exports("window/layout") {
 
-    $window-titlebar-border-width: 0 0 1px !default;
-    $window-titlebar-border-style: solid !default;
-    $window-title-line-height: 1.3em !default;
-
     .k-window {
+        @include border-radius( $window-border-radius );
         padding: 0;
-        border-width: 1px;
+        border-width: $window-border-width;
         border-style: solid;
         display: inline-flex;
         flex-direction: column;
@@ -40,7 +37,7 @@
     // Title bar title text
     .k-window-title {
         margin: -.15em 0;
-        font-size: $font-size-lg;
+        font-size: $window-title-font-size;
         line-height: $window-title-line-height;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -65,6 +62,9 @@
     .k-window-content,
     .k-prompt-container {
         padding: $window-inner-padding-y $window-inner-padding-x;
+        border: 0;
+        color: inherit;
+        background: none;
         outline: 0;
         overflow: auto;
         position: relative;
