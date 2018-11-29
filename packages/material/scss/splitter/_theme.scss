@@ -1,8 +1,8 @@
-$splitter-text: rgba($base-text, .54) !default;
 $splitter-bg: rgba($base-text, .12) !default;
-$splitter-hovered-text: $base-text !default;
+$splitter-text: rgba($base-text, .54) !default;
 $splitter-hovered-bg: rgba($base-text, .22);
-$splitter-selected-text: $selected-text !default;
-$splitter-selected-bg: $selected-bg !default;
+$splitter-hovered-text: $base-text !default;
+$splitter-selected-bg: $primary !default;
+$splitter-selected-text: $primary-contrast !default;
 
 @import "~@progress/kendo-theme-default/scss/splitter/theme";
