@@ -289,19 +289,19 @@ $text-color: rgba(black, .87) !default;
 $bg-color: #ffffff !default;
 $border-color: rgba( black, .12 ) !default;
 
-/// The text color of the components' chrome area.
-$base-text: if($theme-type == dark, white, black) !default;
 /// The background of the components' chrome area.
-$base-bg: if($theme-type == dark, black, white) !default;
-
+$base-bg: map-get( $theme, base-bg ) !default;
+/// The text color of the components' chrome area.
+$base-text: $component-text !default;
+/// The border of the components' chrome area.
 $base-border: rgba( if($theme-type == dark, white, black), .08 ) !default;
 /// The gradient background of the components' chrome area.
 $base-gradient: null !default;
 
+/// The background of hovered items.
+$hovered-bg: map-get( $theme, hover-bg ) !default;
 /// The text color of hovered items.
 $hovered-text: $base-text !default;
-/// The background of hovered items.
-$hovered-bg: rgba( if($theme-type == dark, white, black), .07) !default;
 /// The border color of hovered items.
 $hovered-border: rgba( if($theme-type == dark, white, black), .15 ) !default;
 /// The gradient background of hovered items.
