@@ -162,21 +162,21 @@ Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
-<td>$selected-text</td>
-<td>
-    
-    $accent-contrast
-</td>
-<td>The text color of selected items.
-</td>
-</tr>
-<tr>
 <td>$selected-bg</td>
 <td>
     
-    $accent
+    $secondary
 </td>
 <td>The background of selected items.
+</td>
+</tr>
+<tr>
+<td>$selected-text</td>
+<td>
+    
+    $secondary-contrast
+</td>
+<td>The text color of selected items.
 </td>
 </tr>
 <tr>

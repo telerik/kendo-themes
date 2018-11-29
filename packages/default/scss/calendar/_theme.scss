@@ -162,7 +162,7 @@ $calendar-today-color: $accent;
     .k-calendar.k-calendar-range {
 
         $calendar-range-gap: 1px !default;
-        $calendar-range-bg: rgba( $selected-bg, .25 );
+        $calendar-range-bg: rgba( $calendar-cell-selected-bg, .25 );
         $calendar-range-split-size: 5px !default;
 
         .k-range-start,
@@ -185,7 +185,7 @@ $calendar-today-color: $accent;
         .k-range-start,
         .k-range-end {
             .k-link {
-                background-color: $node-selected-bg;
+                background-color: $calendar-cell-selected-bg;
             }
         }
 

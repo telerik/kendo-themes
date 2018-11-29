@@ -293,17 +293,17 @@ $hovered-border: rgba( if($theme-type == dark, white, black), .15 ) !default;
 /// The gradient background of hovered items.
 $hovered-gradient: null !default;
 
-/// The text color of selected items.
-$selected-text: $accent-contrast !default;
 /// The background of selected items.
-$selected-bg: $accent !default;
+$selected-bg: $secondary !default;
+/// The text color of selected items.
+$selected-text: $secondary-contrast !default;
 /// The border color of selected items.
 $selected-border: rgba( if($theme-type == dark, white, black), .1 ) !default;
 /// The gradient background of selected items.
 $selected-gradient: null !default;
 
+$selected-hover-bg: try-shade( $selected-bg ) !default;
 $selected-hover-color: $selected-text !default;
-$selected-hover-bg: mix( $selected-bg, black, 92) !default;
 
 $transition: background-color .2s ease !default;
 
@@ -636,13 +636,13 @@ $treeview-bg: null !default;
 $treeview-text: $component-text !default;
 $treeview-border: null !default;
 
-$treeview-item-hovered-text: null !default;
 $treeview-item-hovered-bg: rgba( $treeview-text, .07 ) !default;
+$treeview-item-hovered-text: null !default;
 $treeview-item-hovered-border: null !default;
 $treeview-item-hovered-gradient: null !default;
 
-$treeview-item-selected-text: $secondary !default;
 $treeview-item-selected-bg: null !default;
+$treeview-item-selected-text: $selected-bg !default;
 $treeview-item-selected-border: null !default;
 $treeview-item-selected-gradient: null !default;
 
@@ -799,8 +799,8 @@ $pager-number-hovered-bg: $list-item-hovered-bg !default;
 $pager-number-hovered-text: $list-item-hovered-text !default;
 $pager-number-hovered-border: null !default;
 
-$pager-number-selected-bg: $selected-bg !default;
-$pager-number-selected-text: $selected-text !default;
+$pager-number-selected-bg: $primary !default;
+$pager-number-selected-text: $primary-contrast !default;
 $pager-number-selected-border: null !default;
 
 
@@ -912,9 +912,9 @@ $calendar-cell-hovered-bg: $node-hovered-bg !default;
 $calendar-cell-hovered-text: $node-hovered-text !default;
 $calendar-cell-hovered-border: $node-hovered-border !default;
 
-$calendar-cell-selected-bg: $node-selected-bg !default;
-$calendar-cell-selected-text: $node-selected-text !default;
-$calendar-cell-selected-border: $node-selected-border !default;
+$calendar-cell-selected-bg: $primary !default;
+$calendar-cell-selected-text: $primary-contrast !default;
+$calendar-cell-selected-border: $calendar-cell-selected-bg !default;
 
 $calendar-cell-focused-shadow: $list-item-focused-shadow !default;
 $calendar-cell-selected-focus-shadow: $calendar-cell-focused-shadow !default;
