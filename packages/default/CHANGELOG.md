@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.62.0"></a>
+# [2.62.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.61.0...@progress/kendo-theme-default@2.62.0) (2018-12-07)
+
+
+### Bug Fixes
+
+* **material:** improve grid, treelist and pivot appearance in dark themes ([95326fe](https://github.com/telerik/kendo-themes/commit/95326fe))
+* **material:** improve window appearance in dark themes ([ad56d1e](https://github.com/telerik/kendo-themes/commit/ad56d1e))
+* **pager:** expose and use pager variables ([a09f6f4](https://github.com/telerik/kendo-themes/commit/a09f6f4))
+* **scheduler:** add styles for slot selection ([e69ac94](https://github.com/telerik/kendo-themes/commit/e69ac94)), closes [#247](https://github.com/telerik/kendo-themes/issues/247)
+* **scrollview:** revert regression rendering changes ([398412c](https://github.com/telerik/kendo-themes/commit/398412c))
+
+
+### Features
+
+* **framework:** add functions to extract directional properties values ([ddfb798](https://github.com/telerik/kendo-themes/commit/ddfb798))
+
+
+
+
 <a name="2.61.0"></a>
 # [2.61.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.60.0...@progress/kendo-theme-default@2.61.0) (2018-11-22)
 
