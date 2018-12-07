@@ -13,6 +13,7 @@ The Kendo UI Bootstrap Theme is a theme for the Kendo UI components which is bas
 This package is part of the following suites:
 
 * [Kendo UI for Angular](http://www.telerik.com/kendo-angular-ui/)
+* [KendoReact](http://www.telerik.com/kendo-react-ui/)
 * [Kendo UI for jQuery](http://www.telerik.com/kendo-ui)
 * [UI for ASP.NET MVC](http://www.telerik.com/aspnet-mvc)
 * [UI for ASP.NET Core](http://www.telerik.com/aspnet-core-ui)
@@ -26,8 +27,8 @@ All available Kendo UI commercial licenses may be obtained at http://www.telerik
 For more information on how to implement the Bootstrap theme in your project, refer to the following articles:
 
 * [Using the Bootstrap Theme in Angular Projects](https://www.telerik.com/kendo-angular-ui/components/styling/theme-bootstrap/)
+* [Using the Bootstrap Theme in React Projects](https://www.telerik.com/kendo-react-ui/components/styling/theme-bootstrap/)
 * [Using the Bootstrap Theme in jQuery Projects](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
-* [Customizing the Bootstrap Theme](https://www.telerik.com/kendo-angular-ui/components/styling/theme-bootstrap/customization/)
 
 ## Running Custom Builds
 
