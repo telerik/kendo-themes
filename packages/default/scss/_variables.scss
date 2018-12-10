@@ -1014,6 +1014,29 @@ $dialog-stretched-button-padding-y: ($window-inner-padding-x * .75) !default;
 $dialog-stretched-button-border-width: 1px !default;
 
 
+// Scrollview
+$scrollview-pagebutton-size: 8px !default;
+$scrollview-pagebutton-bg: $button-bg !default;
+$scrollview-pagebutton-border: $button-border !default;
+$scrollview-pagebutton-primary-bg: $primary-button-bg !default;
+$scrollview-pagebutton-primary-border: $primary-button-border !default;
+$scrollview-pagebutton-shadow: 0 0 2px rgba(0, 0, 0, .08) !default;
+
+$scrollview-pager-offset: 20px !default;
+$scrollview-pager-item-spacing: 20px !default;
+$scrollview-pager-item-border-width: 1px !default;
+$scrollview-pager-height: add-three($scrollview-pagebutton-size, 2 * $scrollview-pager-item-border-width, $scrollview-pager-item-spacing / 2 ) !default;
+
+$scrollview-arrow-icon-size: 4.5em !default;
+$scrollview-arrow-tap-highlight-color: $rgba-transparent !default;
+$scrollview-navigation-color: $selected-text !default;
+$scrollview-navigation-icon-shadow: rgba(0, 0, 0, .3) 0 0 15px !default;
+$scrollview-navigation-background: rgba(0, 0, 0, 0) !default;
+$scrollview-navigation-default-opacity: .7 !default;
+$scrollview-navigation-hover-opacity: 1 !default;
+$scrollview-navigation-hover-span-bg: null !default;
+
+
 // Config maps
 $typography-config: () !default;
 // sass-lint:disable indentation

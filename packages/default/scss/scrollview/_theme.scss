@@ -1,49 +1,50 @@
-$scrollview-navigation-color: $selected-text !default;
-$scrollview-navigation-icon-shadow: rgba(0, 0, 0, .3) 0 0 15px !default;
-$scrollview-pagebutton-shadow: 0 0 2px rgba(0, 0, 0, .08) !default;
-$scrollview-navigation-background: rgba(0, 0, 0, 0) !default;
-$scrollview-navigation-default-opacity: .7 !default;
-$scrollview-navigation-hover-opacity: 1 !default;
-$webkit-highlight-color: rgba(0, 0, 0, 0) !default;
-
 @include exports('scrollview/theme') {
 
-    .k-pages > li,
-    .k-scrollview-pageable > li.k-button {
-        background-image: none;
-        box-shadow: $scrollview-pagebutton-shadow;
-    }
-    .k-pages > li {
-        border-color: $button-border;
-        color: $button-text;
-        background-color: $button-bg;
-    }
-    .k-pages > li.k-current-page {
-        border-color: $selected-border;
-        color: $selected-text;
-        background-color: $selected-bg;
-    }
+    //refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
+    kendo-scrollview.k-scrollview-wrap,
+    div.k-scrollview {
 
-    .k-scrollview-elements {
-        color: $scrollview-navigation-color;
-    }
+        //refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
+        .k-scrollview-pageable > li.k-button,
+        .k-scrollview-nav > li.k-link {
+            @include fill(
+                $bg: $scrollview-pagebutton-bg,
+                $border: $scrollview-pagebutton-border
+            );
 
-    .k-scrollview-next,
-    .k-scrollview-prev {
-        color: inherit;
-        background: $scrollview-navigation-background;
-        text-shadow: $scrollview-navigation-icon-shadow;
-        opacity: $scrollview-navigation-default-opacity;
-        outline-width: 0;
+            &.k-primary {
+                @include fill(
+                    $bg: $scrollview-pagebutton-primary-bg,
+                    $border: $scrollview-pagebutton-primary-border
+                );
+            }
 
-        &:hover {
-            color: $scrollview-navigation-color;
-            opacity: $scrollview-navigation-hover-opacity;
+            box-shadow: $scrollview-pagebutton-shadow;
+            background-clip: padding-box;
         }
+
+        .k-scrollview-elements {
+            color: $scrollview-navigation-color;
+        }
+
+        .k-scrollview-next,
+        .k-scrollview-prev {
+            color: inherit;
+            background: $scrollview-navigation-background;
+            text-shadow: $scrollview-navigation-icon-shadow;
+            opacity: $scrollview-navigation-default-opacity;
+            outline-width: 0;
+
+            &:hover {
+                color: $scrollview-navigation-color;
+                opacity: $scrollview-navigation-hover-opacity;
+
+                span::before {
+                    background-color: $scrollview-navigation-hover-span-bg;
+                }
+            }
+        }
+
     }
 
-    .k-scrollview-animation {
-        transition-duration: .3s;
-        transition-timing-function: ease-out;
-    }
 }
