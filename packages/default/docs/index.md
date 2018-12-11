@@ -21,7 +21,7 @@ The Kendo UI Default theme is available through the @progress/kendo-theme-defaul
 
 ## Preview
 
-To preview how this theme looks, use the theme chooser at the top-right corner of the page to apply apply the Default theme to any of the examples in this site.
+To preview the Default theme, use the theme chooser at the top-right corner of the page and apply the theme to any of the examples on this website.
 
 ## Suggested Links
 

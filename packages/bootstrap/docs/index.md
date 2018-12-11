@@ -21,7 +21,7 @@ The Kendo UI Bootstrap theme is available through the @progress/kendo-theme-boot
 
 ## Preview
 
-To preview how this theme looks, use the theme chooser at the top-right corner of the page to apply the theme to any of the examples in this site.
+To preview the Bootstrap theme, use the theme chooser at the top-right corner of the page and apply the theme to any of the examples on this website.
 
 ## Suggested Links
 
