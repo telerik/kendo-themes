@@ -51,23 +51,82 @@
 
     // Buttons
     .k-dialog-buttongroup {
-        border-width: 1px 0 0;
+        @include border-bottom-radius( $window-border-radius );
+        padding: $dialog-buttongroup-padding-y $dialog-buttongroup-padding-x;
+        border-width: $dialog-buttongroup-border-width 0 0;
         border-style: solid;
         border-color: inherit;
+        flex: 0 0 auto;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        justify-content: flex-end;
         align-items: center;
-        flex: 0 0 auto;
+        flex-wrap: wrap;
+        overflow: hidden;
 
         .k-button {
             // Kendo UI for jQuery sets inline width
             width: auto !important; // sass-lint:disable-line no-important
             max-width: 100%;
+        }
+
+        .k-button ~ .k-button {
+            margin-left: $dialog-button-gap;
+
+            .k-rtl &,
+            [dir='rtl'] & {
+                margin-left: 0;
+                margin-right: $dialog-button-gap;
+            }
+        }
+    }
+
+
+    // Needed for the jQuery buttonLayout configuration:
+    // https://docs.telerik.com/kendo-ui/api/javascript/ui/dialog/configuration/buttonlayout
+    .k-dialog-button-layout-stretched {
+        padding: 0;
+        align-items: stretch;
+
+        .k-button {
+            @include border-radius( 0 );
+            padding: $dialog-stretched-button-padding-y $dialog-stretched-button-padding-x;
+            border-width: 0;
+            text-overflow: ellipsis;
+            flex: 1 0 0;
             display: inline-block; // needed for ellipsis overflow
             overflow: hidden;
-            text-overflow: ellipsis;
         }
+
+        .k-button ~ .k-button {
+            margin: 0;
+            border-left-width: $dialog-stretched-button-border-width;
+
+            .k-rtl &,
+            [dir='rtl'] & {
+                border-left-width: 0;
+                border-right-width: $dialog-stretched-button-border-width;
+            }
+        }
+    }
+
+
+    // No flexbox variant for older browsers
+    .k-no-flexbox {
+
+        .k-dialog-buttongroup {
+            display: block;
+            text-align: right;
+        }
+
+        .k-rtl,
+        [dir='rtl'] {
+
+            .k-dialog-buttongroup {
+                text-align: left;
+            }
+        }
+
     }
 
 }
