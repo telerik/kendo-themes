@@ -295,6 +295,7 @@
             .k-calendar-weekdays {
                 width: 100%;
                 flex: 0 0 auto;
+                table-layout: auto;
             }
 
             .k-calendar-yearview,
