@@ -24,10 +24,11 @@
 
         // Marker
         .k-marker {
-            margin: -32px 0 0 -16px;
+            transform: translate(-50%, -100%);
             font-size: $font-size * 2;
             cursor: pointer;
             position: absolute;
+            overflow: visible;
         }
 
 
