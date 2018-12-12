@@ -3,55 +3,39 @@
     $dialog-titlebar-border-color: inherit !default;
     $dialog-titlebar-bg: $accent !default;
     $dialog-titlebar-text: $accent-contrast !default;
-    $hover-active-selector: ":hover, .k-state-hover, :active, .k-state-active";
-
-    .k-dialog {}
-
 
     // Titlebar
     .k-dialog-titlebar {
-        @include fill( $dialog-titlebar-text, $dialog-titlebar-bg, $dialog-titlebar-border-color );
+        @include fill(
+            $dialog-titlebar-text,
+            $dialog-titlebar-bg,
+            $dialog-titlebar-border-color
+        );
     }
 
-
-    .k-dialog-buttongroup {
-        border-top-width: 1px;
-        align-items: stretch;
+    .k-dialog-button-layout-stretched {
 
         .k-button {
-            padding: ($window-inner-padding-x * .75) $window-inner-padding-x;
-            border-width: 0;
             border-color: inherit;
-            flex: 1 0 0;
         }
-        .k-button + .k-button {
-            border-left-width: 1px;
-
-            .k-rtl &,
-            [dir='rtl'] & {
-                border-left-width: 0;
-                border-right-width: 1px;
-            }
-        }
-
 
         // Normal state
-        .k-button:not(:hover):not(.k-state-hover):not(:active):not(.k-state-eactive) {
+        .k-button:not(:hover):not(.k-state-hover):not(:active):not(.k-state-active) {
             color: inherit;
             background: none;
         }
-        .k-primary:not(:hover):not(.k-state-hover):not(:active):not(.k-state-eactive) {
+        .k-primary:not(:hover):not(.k-state-hover):not(:active):not(.k-state-active) {
             color: $accent;
         }
 
-
-        // Border radius
-        .k-button,
-        .k-button:first-child,
-        .k-button:last-child,
-        .k-group-start,
-        .k-group-end {
-            @include border-radius( 0 );
+        // Focused state
+        .k-button:focus,
+        .k-button.k-state-focused {
+            box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13);
+        }
+        .k-button.k-primary:focus,
+        .k-button.k-primary.k-state-focused {
+            box-shadow: inset 0 0 0 2px rgba($accent, .3);
         }
 
     }

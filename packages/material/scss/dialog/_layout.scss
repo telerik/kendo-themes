@@ -2,12 +2,6 @@
 
 @include exports("dialog/layout/material") {
 
-    $dialog-button-padding-x: 8px !default;
-    $dialog-button-padding-y: $button-padding-y !default;
-    $dialog-button-spacing: $dialog-button-padding-x !default;
-
-    .k-dialog {}
-
     .k-dialog-content.k-scroll {
         border-width: 1px 0;
         border-style: solid;
@@ -16,38 +10,15 @@
     }
 
     .k-dialog-buttongroup {
-        padding: $dialog-button-padding-x;
-        border-width: 0;
-        justify-content: flex-end;
-        box-shadow: none;
 
         .k-button {
             @extend .k-button.k-flat;
-            @include border-radius( $border-radius );
-            padding: $dialog-button-padding-y $dialog-button-padding-x;
+            padding: $dialog-stretched-button-padding-y $dialog-stretched-button-padding-x;
             min-width: 64px;
-            flex: 0 0 auto;
         }
-        .k-primary {
+        .k-button.k-primary {
             @extend .k-button.k-primary.k-flat;
         }
-
-        .k-button ~ .k-button {
-            margin-left: $dialog-button-spacing;
-        }
     }
 
-    // RTL
-    .k-rtl,
-    [dir='rtl'] {
-
-        .k-dialog-buttongroup {
-
-            .k-button ~ .k-button {
-                margin-left: 0;
-                margin-right: $dialog-button-spacing;
-            }
-
-        }
-    }
 }

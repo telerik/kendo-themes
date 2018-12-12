@@ -1066,6 +1066,18 @@ $time-list-title-focus: null !default;
 $time-header-padding: null !default;
 
 
+// Dialog
+$dialog-buttongroup-padding-x: 8px !default;
+$dialog-buttongroup-padding-y: 8px !default;
+$dialog-buttongroup-border-width: 0 !default;
+
+$dialog-button-gap: 8px !default;
+
+$dialog-stretched-button-padding-x: 8px !default;
+$dialog-stretched-button-padding-y: $button-padding-y !default;
+$dialog-stretched-button-border-width: null !default;
+
+
 // Config maps
 $typography-config: () !default;
 // sass-lint:disable indentation
