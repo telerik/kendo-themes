@@ -1,4 +1,4 @@
-# Contributing to the Kendo UI Themes
+# Contributing to the Kendo UI Theme Tasks
 
 Thank you for your interest in contributing to Kendo UI!
 
