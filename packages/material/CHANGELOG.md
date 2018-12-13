@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.2"></a>
+## [1.5.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.5.1...@progress/kendo-theme-material@1.5.2) (2018-12-07)
+
+
+### Bug Fixes
+
+* **material:** add body and app colors; use material colors for component variables ([3f0fe8a](https://github.com/telerik/kendo-themes/commit/3f0fe8a))
+* **material:** ensure button, toolbar and pager look ok in dark themes ([d885bc5](https://github.com/telerik/kendo-themes/commit/d885bc5))
+* **material:** improve grid, treelist and pivot appearance in dark themes ([95326fe](https://github.com/telerik/kendo-themes/commit/95326fe))
+* **material:** improve window appearance in dark themes ([ad56d1e](https://github.com/telerik/kendo-themes/commit/ad56d1e))
+* **material:** introduce component variables ([2848ebb](https://github.com/telerik/kendo-themes/commit/2848ebb))
+* **material:** material-color functions works quirkly with strings that are valid colors ([742d676](https://github.com/telerik/kendo-themes/commit/742d676))
+* **material:** use app- and component- variables for chat styling ([84d1f87](https://github.com/telerik/kendo-themes/commit/84d1f87))
+* **material:** use conditional lighter or darker background for toolbar ([23f821a](https://github.com/telerik/kendo-themes/commit/23f821a))
+* **material:** use conditional opacity for input border ([73a119e](https://github.com/telerik/kendo-themes/commit/73a119e))
+* **material:** use conditionally lighter or darker background for grid drag clue ([f14daef](https://github.com/telerik/kendo-themes/commit/f14daef))
+* **material:** use correct background color for tooltip ([4c8a4b9](https://github.com/telerik/kendo-themes/commit/4c8a4b9))
+* **material:** use correct colors for progressbar ([02e036a](https://github.com/telerik/kendo-themes/commit/02e036a))
+* **material:** use material elevation 4 for popup shadow ([2bfff0d](https://github.com/telerik/kendo-themes/commit/2bfff0d))
+* **material:** use material elevation variable to control shadows ([cc9cc73](https://github.com/telerik/kendo-themes/commit/cc9cc73))
+* **material:** use primary and secondary pallettes to populate primary and secondary color ([ab1de51](https://github.com/telerik/kendo-themes/commit/ab1de51))
+* **pager:** expose and use pager variables ([a09f6f4](https://github.com/telerik/kendo-themes/commit/a09f6f4))
+* **scrollview:** revert regression rendering changes ([398412c](https://github.com/telerik/kendo-themes/commit/398412c))
+
+
+### Reverts
+
+* **material:** use transpernt instead of null value for grid-bg to avoid cascade override ([eed58ba](https://github.com/telerik/kendo-themes/commit/eed58ba))
+
+
+
+
+<a name="1.5.1"></a>
+## [1.5.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.5.0...@progress/kendo-theme-material@1.5.1) (2018-11-22)
+
+
+### Bug Fixes
+
+* **grid:** non-scrollable grid command buttons margins ([43e18ba](https://github.com/telerik/kendo-themes/commit/43e18ba)), closes [#426](https://github.com/telerik/kendo-themes/issues/426)
+
+
+
+
 <a name="1.5.0"></a>
 # [1.5.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.4.0...@progress/kendo-theme-material@1.5.0) (2018-11-09)
 

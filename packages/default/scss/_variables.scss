@@ -179,11 +179,6 @@ $cell-padding-y: 8px !default;
 $cell-padding: 8px !default;
 // $cell-padding-sm: $table-sm-cell-padding !default;
 
-$window-inner-padding-x: 16px !default;
-$window-inner-padding-y: 16px !default;
-$window-titlebar-padding-x: 16px !default;
-$window-titlebar-padding-y: 12px !default;
-
 $zindex-popup: 1;
 $zindex-window: 2;
 
@@ -698,6 +693,30 @@ $disabled-opacity: .6 !default;
 $pager-padding-x: $toolbar-padding-x !default;
 $pager-padding-y: $toolbar-padding-y !default;
 
+$pager-bg: $header-bg !default;
+$pager-text: $header-text !default;
+$pager-border: null !default;
+
+$pager-item-bg: null !default;
+$pager-item-text: null !default;
+$pager-item-border: null !default;
+
+$pager-item-hovered-bg: $list-item-hovered-bg !default;
+$pager-item-hovered-text: $list-item-hovered-text !default;
+$pager-item-hovered-border: null !default;
+
+$pager-number-bg: null !default;
+$pager-number-text: $accent !default;
+$pager-number-border: null !default;
+
+$pager-number-hovered-bg: $list-item-hovered-text !default;
+$pager-number-hovered-text: $accent !default;
+$pager-number-hovered-border: null !default;
+
+$pager-number-selected-bg: $selected-bg !default;
+$pager-number-selected-text: $selected-text !default;
+$pager-number-selected-border: null !default;
+
 
 // Card
 $card-padding-x: 16px !default;
@@ -914,26 +933,34 @@ $progressbar-indeterminate-gradient: null !default;
 
 $progressbar-chunk-border: $bg-color !default;
 
-// Scrollview
 
-$scrollview-pager-offset: 20px !default;
-$scrollview-pager-item-spacing: 20px !default;
-$scrollview-pager-item-border-width: 1px !default;
 
-$scrollview-pagebutton-size: 8px !default;
-$scrollview-pagebutton-bg: $button-bg !default;
-$scrollview-pagebutton-border: $button-border !default;
-$scrollview-pagebutton-primary-bg: $primary-button-bg !default;
-$scrollview-pagebutton-primary-border: $primary-button-border !default;
-$scrollview-pagebutton-shadow: 0 0 2px rgba(0, 0, 0, .08) !default;
+// Window
+$window-border-width: 0 !default;
+$window-border-radius: 0 !default;
 
-$scrollview-navigation-size: 4.5em !default;
-$scrollview-navigation-color: $selected-text !default;
-$scrollview-navigation-icon-shadow: rgba(0, 0, 0, .3) 0 0 15px !default;
-$scrollview-navigation-background: rgba(0, 0, 0, 0) !default;
-$scrollview-navigation-default-opacity: .7 !default;
-$scrollview-navigation-hover-opacity: 1 !default;
-$scrollview-navigation-hover-span-bg: null !default;
+$window-titlebar-padding-x: 16px !default;
+$window-titlebar-padding-y: 12px !default;
+$window-titlebar-border-width: 0 0 1px !default;
+$window-titlebar-border-style: solid !default;
+
+$window-title-font-size: $font-size-lg !default;
+$window-title-line-height: 1.3 !default;
+
+$window-inner-padding-x: 16px !default;
+$window-inner-padding-y: 16px !default;
+
+$window-bg: $panel-bg !default;
+$window-text: $panel-text !default;
+$window-border: rgba(0, 0, 0, .08) !default;
+
+$window-titlebar-bg: $header-bg !default;
+$window-titlebar-text: $header-text !default;
+$window-titlebar-border: inherit !default;
+
+$window-shadow: 0 3px 3px 0 rgba(0, 0, 0, .06) !default;
+$window-focused-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
+
 
 // Config maps
 $typography-config: () !default;

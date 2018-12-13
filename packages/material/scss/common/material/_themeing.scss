@@ -1,0 +1,70 @@
+// Adapted from https://github.com/angular/material2/blob/master/src/lib/core/theming/_theming.scss
+
+@import "palettes";
+
+
+
+
+// For a given hue in a palette, return the contrast color from the map of contrast palettes.
+@function material-contrast($palette, $hue) {
+    @return map-get(map-get($palette, contrast), $hue);
+}
+
+// Creates a map of hues to colors for a theme. This is used to define a theme palette in terms
+// of the Material Design hues.
+@function material-palette($base-palette, $default: 500, $lighter: 100, $darker: 700) {
+
+    @if not (type-of($base-palette) == map) {
+        $base-palette: get-base-palette($base-palette);
+    }
+
+    $result: map_merge($base-palette, (
+        default: map-get($base-palette, $default),
+        lighter: map-get($base-palette, $lighter),
+        darker: map-get($base-palette, $darker),
+        default-contrast: material-contrast($base-palette, $default),
+        lighter-contrast: material-contrast($base-palette, $lighter),
+        darker-contrast: material-contrast($base-palette, $darker)
+    ));
+
+    // For each hue in the palette, add a "-contrast" color to the map.
+    @each $hue, $color in $base-palette {
+        $result: map_merge($result, (
+            '#{$hue}-contrast': material-contrast($base-palette, $hue)
+        ));
+    }
+
+    @return $result;
+}
+
+
+// Gets a color from a theme palette (the output of material-palette).
+// The hue can be one of the standard values (500, A400, etc.), one of the three preconfigured
+// hues (default, lighter, darker), or any of the aforementioned prefixed with "-contrast".
+@function material-color($palette, $hue: default, $opacity: null) {
+
+    @if not (type-of($palette) == map) {
+        $palette: get-base-palette($palette);
+    }
+
+    // If hueKey is a number between zero and one, then it actually contains an
+    // opacity value, so recall this function with the default hue and that given opacity.
+    @if type-of($hue) == number and $hue >= 0 and $hue <= 1 {
+        @return material-color($palette, default, $hue);
+    }
+
+    $color: map-get($palette, $hue);
+    $opacity: if($opacity == null, opacity($color), $opacity);
+
+    @return rgba($color, $opacity);
+}
+
+// Creates a container object for a light theme to be given to individual component theme mixins.
+@function material-theme($primary, $secondary, $theme-type, $warn: material-palette(red)) {
+    $complimentary: if($theme-type == dark, $material-dark-complimentary, $material-light-complimentary);
+    @return map-merge((
+        primary: $primary,
+        secondary: $secondary,
+        warn: $warn
+    ), $complimentary );
+}

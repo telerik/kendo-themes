@@ -15,7 +15,7 @@ This is a monorepo that holds the SCSS-based themes for the Kendo UI components.
 This package is part of the following suites:
 
 * [Kendo UI for Angular](http://www.telerik.com/kendo-angular-ui/)
-* [Kendo UI for React](http://www.telerik.com/kendo-react-ui/)
+* [KendoReact](http://www.telerik.com/kendo-react-ui/)
 * [Kendo UI for Vue](http://www.telerik.com/kendo-vue-ui/)
 * [Kendo UI for jQuery](http://www.telerik.com/kendo-ui)
 * [UI for ASP.NET MVC](http://www.telerik.com/aspnet-mvc)

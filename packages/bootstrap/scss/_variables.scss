@@ -230,11 +230,6 @@ $cell-padding-y: $table-cell-padding !default;
 $cell-padding: $table-cell-padding !default;
 $cell-padding-sm: $table-cell-padding-sm !default;
 
-$window-inner-padding-x: $modal-inner-padding !default;
-$window-inner-padding-y: $modal-inner-padding !default;
-$window-titlebar-padding-x: $modal-header-padding !default;
-$window-titlebar-padding-y: $modal-header-padding !default;
-
 $zindex-popup: 1;
 $zindex-window: 2;
 
@@ -648,16 +643,16 @@ $panelbar-item-focused-shadow: $list-item-focused-shadow !default;
 
 
 //Pager
-$pager-text: $pagination-color !default;
 $pager-bg: $pagination-bg !default;
+$pager-text: $pagination-color !default;
 $pager-border: $pagination-border-color !default;
 
-$pager-hover-text: $pagination-hover-color !default;
 $pager-hover-bg: $pagination-hover-bg !default;
+$pager-hover-text: $pagination-hover-color !default;
 $pager-hover-border: $pagination-hover-border-color !default;
 
-$pager-selected-text: $pagination-active-color !default;
 $pager-selected-bg: $pagination-active-bg !default;
+$pager-selected-text: $pagination-active-color !default;
 $pager-selected-border: $pagination-active-border-color !default;
 
 
@@ -678,16 +673,6 @@ $notification-warning-border: color-level($warning, 9) !default;
 $notification-error-bg: color-level($error, 10) !default;
 $notification-error-text: color-level($error, -6) !default;
 $notification-error-border: color-level($error, 9) !default;
-
-
-// Window
-$window-text: $modal-content-color !default;
-$window-bg: $modal-content-bg !default;
-$window-border: $modal-content-border-color !default;
-
-$window-titlebar-text: $modal-header-color !default;
-$window-titlebar-bg: $modal-header-bg !default;
-$window-titlebar-border: $modal-header-border-color !default;
 
 
 // Chart
@@ -965,26 +950,34 @@ $progressbar-indeterminate-gradient: null !default;
 
 $progressbar-chunk-border: $bg-color !default;
 
-// Scrollview
 
-$scrollview-pager-offset: 20px !default;
-$scrollview-pager-item-spacing: 20px !default;
-$scrollview-pager-item-border-width: 0 !default;
 
-$scrollview-pagebutton-size: 8px !default;
-$scrollview-pagebutton-bg: rgba($carousel-indicator-active-bg, .5) !default;
-$scrollview-pagebutton-border: null !default;
-$scrollview-pagebutton-primary-bg: null !default;
-$scrollview-pagebutton-primary-border: null !default;
-$scrollview-pagebutton-shadow: 0 0 2px rgba(0, 0, 0, .08) !default;
+// Window
+$window-border-width: 1px !default;
+$window-border-radius: $border-radius !default;
 
-$scrollview-navigation-size: 4.5em !default;
-$scrollview-navigation-color: $selected-text !default;
-$scrollview-navigation-icon-shadow: rgba(0, 0, 0, .3) 0 0 15px !default;
-$scrollview-navigation-background: rgba(0, 0, 0, 0) !default;
-$scrollview-navigation-default-opacity: .7 !default;
-$scrollview-navigation-hover-opacity: 1 !default;
-$scrollview-navigation-hover-span-bg: null !default;
+$window-inner-padding-x: $modal-inner-padding !default;
+$window-inner-padding-y: $modal-inner-padding !default;
+$window-titlebar-border-width: 0 0 1px !default;
+$window-titlebar-border-style: solid !default;
+
+$window-title-font-size: $font-size-lg !default;
+$window-title-line-height: 1.3 !default;
+
+$window-titlebar-padding-x: $modal-header-padding !default;
+$window-titlebar-padding-y: $modal-header-padding !default;
+
+$window-bg: $modal-content-bg !default;
+$window-text: $modal-content-color !default;
+$window-border: $modal-content-border-color !default;
+
+$window-titlebar-bg: $modal-header-bg !default;
+$window-titlebar-text: $modal-header-color !default;
+$window-titlebar-border: $modal-header-border-color !default;
+
+$window-shadow: null !default;
+$window-focused-shadow: null !default;
+
 
 // Config maps
 $typography-config: () !default;

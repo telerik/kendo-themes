@@ -62,8 +62,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
 <td>$primary</td>
 <td>
-    <span class="color-preview" style="background-color: #3f51b5"></span>
-    #3f51b5
+    
+    material-color($primary-palette, default)
 </td>
 <td>The color that focuses the user attention.<br/>
 Used for primary buttons and for elements of primary importance across the theme.
@@ -72,8 +72,8 @@ Used for primary buttons and for elements of primary importance across the theme
 <tr>
 <td>$primary-contrast</td>
 <td>
-    <span class="color-preview" style="background-color: #ffffff"></span>
-    #ffffff
+    
+    material-color($primary-palette, default-contrast)
 </td>
 <td>The color used along with the primary color denoted by $primary.<br/>
 Used to provide contrast between the background and foreground colors.
@@ -82,17 +82,17 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$secondary</td>
 <td>
-    <span class="color-preview" style="background-color: #ff4081"></span>
-    #ff4081
+    
+    material-color($secondary-palette, default)
 </td>
-<td>The secondary (accent) color of the theme.
+<td>The secondary color of the theme.
 </td>
 </tr>
 <tr>
 <td>$secondary-contrast</td>
 <td>
-    <span class="color-preview" style="background-color: #ffffff"></span>
-    #ffffff
+    
+    material-color($secondary-palette, default-contrast)
 </td>
 <td>The color used along with the secondary color denoted by $secondary.<br/>
 Used to provide contrast between the background and foreground colors.
@@ -102,7 +102,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$base-text</td>
 <td>
     
-    rgb(0, 0, 0)
+    if($theme-type == dark, white, black)
 </td>
 <td>The text color of the components' chrome area.
 </td>
@@ -110,8 +110,8 @@ Used to provide contrast between the background and foreground colors.
 <tr>
 <td>$base-bg</td>
 <td>
-    <span class="color-preview" style="background-color: #fff"></span>
-    #fff
+    
+    if($theme-type == dark, black, white)
 </td>
 <td>The background of the components' chrome area.
 </td>
@@ -138,7 +138,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$hovered-bg</td>
 <td>
     
-    rgba( black, .07)
+    rgba( if($theme-type == dark, white, black), .07)
 </td>
 <td>The background of hovered items.
 </td>
@@ -147,7 +147,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$hovered-border</td>
 <td>
     
-    rgba( black, .15 )
+    rgba( if($theme-type == dark, white, black), .15 )
 </td>
 <td>The border color of hovered items.
 </td>
@@ -162,28 +162,28 @@ Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
-<td>$selected-text</td>
-<td>
-    
-    $accent-contrast
-</td>
-<td>The text color of selected items.
-</td>
-</tr>
-<tr>
 <td>$selected-bg</td>
 <td>
     
-    $accent
+    $secondary
 </td>
 <td>The background of selected items.
+</td>
+</tr>
+<tr>
+<td>$selected-text</td>
+<td>
+    
+    $secondary-contrast
+</td>
+<td>The text color of selected items.
 </td>
 </tr>
 <tr>
 <td>$selected-border</td>
 <td>
     
-    rgba( black, .1 )
+    rgba( if($theme-type == dark, white, black), .1 )
 </td>
 <td>The border color of selected items.
 </td>
@@ -540,10 +540,19 @@ The default value of `null` embeds the package font with a `data:` URL
 <th>Description</th>
 </tr>
 <tr>
+<td>$elevation</td>
+<td>
+    
+    map-get( $theme, elevation )
+</td>
+<td>Color of shadows
+</td>
+</tr>
+<tr>
 <td>$box-shadow-depth-1</td>
 <td>
     
-    0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12)
+    0 2px 1px -1px rgba( $elevation, .2 ), 0 1px 1px 0 rgba( $elevation, .14 ), 0 1px 3px 0 rgba( $elevation, .12 )
 </td>
 <td>Shadow for switch.<br/>
 Equivalent to material elevation 1.
@@ -553,7 +562,7 @@ Equivalent to material elevation 1.
 <td>$box-shadow-depth-2</td>
 <td>
     
-    0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+    0 3px 1px -2px rgba( $elevation, .2 ), 0 2px 2px 0 rgba( $elevation, .14 ), 0 1px 5px 0 rgba( $elevation, .12 )
 </td>
 <td>Shadow for resting state of button, card and other widgets.<br/>
 Equivalent to material elevation 2.
@@ -563,7 +572,7 @@ Equivalent to material elevation 2.
 <td>$box-shadow-depth-3</td>
 <td>
     
-    0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12)
+    0 5px 5px -3px rgba( $elevation, .2 ), 0 8px 10px 1px rgba( $elevation, .14 ), 0 3px 14px 2px rgba( $elevation, .12 )
 </td>
 <td>Shadow for menu, popups and raised state of button and card.<br/>
 Equivalent to material elevation 8.
@@ -573,7 +582,7 @@ Equivalent to material elevation 8.
 <td>$box-shadow-depth-4</td>
 <td>
     
-    0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12)
+    0 8px 10px -5px rgba( $elevation, .2 ), 0 16px 24px 2px rgba( $elevation, .14 ), 0 6px 30px 5px rgba( $elevation, .12 )
 </td>
 <td>Shadow for drawers and other overlaying elements.<br/>
 Equivalent to material elevation 16.
@@ -583,7 +592,7 @@ Equivalent to material elevation 16.
 <td>$box-shadow-depth-5</td>
 <td>
     
-    0 11px 15px -7px rgba(0, 0, 0, .2), 0 24px 38px 3px rgba(0, 0, 0, .14), 0 9px 46px 8px rgba(0, 0, 0, .12)
+    0 11px 15px -7px rgba( $elevation, .2 ), 0 24px 38px 3px rgba( $elevation, .14 ), 0 9px 46px 8px rgba( $elevation, .12 )
 </td>
 <td>Shadow for window and dialog.<br/>
 Equivalent to material elevation 24.

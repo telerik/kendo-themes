@@ -44,14 +44,36 @@ then
   commit=$(git rev-parse HEAD)
   repo="https://api.github.com/repos/telerik/kendo-themes/commits/$commit/statuses"
   auth="Authorization: token ${GH_TOKEN}"
-  curl -s -H "$auth" -d '{"state": "success", "context": "WIP"}' $repo > /dev/null 2>&1
-  curl -s -H "$auth" -d '{"state": "success", "context": "continuous-integration/travis-ci"}' $repo > /dev/null 2>&1
-  curl -s -H "$auth" -d '{"state": "success", "context": "continuous-integration/travis-ci/pr"}' $repo > /dev/null 2>&1
-  curl -s -H "$auth" -d '{"state": "success", "context": "continuous-integration/travis-ci/push"}' $repo > /dev/null 2>&1
-  curl -s -H "$auth" -H "Accept: application/json" -H "Content-Type: application/json" -X GET $repo > /dev/null 2>&1
+
+  declare -a checks=(
+      "WIP"
+      "continuous-integration/travis-ci"
+      "continuous-integration/travis-ci/pr"
+      "continuous-integration/travis-ci/push"
+  )
+
+  for check in "${checks[@]}"
+  do
+    echo "Marking '$check' as successful..."
+
+    if ! (curl -s -H "$auth" -d "{\"state\": \"success\", \"context\": \"$check\"}" "$repo" > /dev/null 2>&1)
+    then
+      echo "Couldn't mark check '$check' as successful"
+    fi
+  done
+
+  sleep 1
+  curl -s -H "$auth" -H "Accept: application/json" -H "Content-Type: application/json" -X GET "$repo" > /dev/null 2>&1
 
   # Push to develop
-  git push origin master:develop --quiet > /dev/null 2>&1
+  if ! (git push origin master:develop --quiet > /dev/null 2>&1)
+  then
+      echo "Could not push changelog commit to develop. Push the changelog commit manually to the develop branch."
+      echo "If this commit is not pushed promptly, develop and master will diverge and will require a force push on the next release."
+
+      exit 1
+  fi
+
 else
   echo "Publishing is enabled only for the master and develop branches"
 fi

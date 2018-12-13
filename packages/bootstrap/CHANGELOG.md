@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.17.1"></a>
+## [2.17.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.17.0...@progress/kendo-theme-bootstrap@2.17.1) (2018-12-07)
+
+
+### Bug Fixes
+
+* **material:** improve window appearance in dark themes ([ad56d1e](https://github.com/telerik/kendo-themes/commit/ad56d1e))
+* **pager:** expose and use pager variables ([a09f6f4](https://github.com/telerik/kendo-themes/commit/a09f6f4))
+* **scrollview:** revert regression rendering changes ([398412c](https://github.com/telerik/kendo-themes/commit/398412c))
+
+
+
+
+<a name="2.17.0"></a>
+# [2.17.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.16.0...@progress/kendo-theme-bootstrap@2.17.0) (2018-11-22)
+
+
+### Bug Fixes
+
+* **grid:** non-scrollable grid command buttons margins ([43e18ba](https://github.com/telerik/kendo-themes/commit/43e18ba)), closes [#426](https://github.com/telerik/kendo-themes/issues/426)
+
+
+### Features
+
+* **grid:** add hover + selected rows styles ([7dde502](https://github.com/telerik/kendo-themes/commit/7dde502))
+
+
+
+
 <a name="2.16.0"></a>
 # [2.16.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.15.0...@progress/kendo-theme-bootstrap@2.16.0) (2018-11-09)
 
