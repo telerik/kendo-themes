@@ -1,6 +1,9 @@
 # Guidelines to Contribution
 
-We accept third-party contributions.
+Thank you for your interest in contributing to Kendo UI!
+
+* [Code Style Guidelines (Themes)](https://github.com/telerik/kendo-themes/wiki/Code-Style-Guidelines)
+* [Commit Message Guidelines (Themes)](https://github.com/telerik/kendo-themes/wiki/Commit-Message-Guidelines)
 
 ## Ways to Contribute
 
