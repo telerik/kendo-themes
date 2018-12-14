@@ -618,11 +618,11 @@
 
         .k-sort-order {
             display: inline-block;
-            font-size: $font-size-sm;
-            height: $icon-size;
-            margin-left: -$icon-spacing;
             vertical-align: top;
-            margin-top: 2px;
+            height: $icon-size;
+            font-size: $grid-sorting-index-font-size;
+            margin-top: $grid-sorting-index-spacing-y;
+            margin-left: $grid-sorting-index-spacing-x;
         }
     }
 
