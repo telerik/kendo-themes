@@ -30,21 +30,27 @@
 
     .k-list {}
 
-    .k-list .k-item {
+    .k-list .k-item,
+    .k-list-optionlabel {
         transition: all .2s ease; // sass-lint:disable-block no-transition-all
     }
 
     .k-list .k-item:hover,
-    .k-list .k-item.k-state-hover {
+    .k-list .k-item.k-state-hover,
+    .k-list-optionlabel:hover,
+    .k-list-optionlabel.k-state-hover {
         @include appearance( hovered-list-item );
     }
 
-    .k-list .k-item.k-state-selected {
+    .k-list .k-item.k-state-selected,
+    .k-list-optionlabel.k-state-selected {
         @include appearance( selected-list-item );
     }
 
     .k-list .k-item:focus,
-    .k-list .k-item.k-state-focused {
+    .k-list .k-item.k-state-focused,
+    .k-list-optionlabel:focus,
+    .k-list-optionlabel.k-state-focused {
         box-shadow: inset 0 0 0 3px rgba($list-item-text, .15);
 
         &:hover,
