@@ -36,6 +36,9 @@ $scheduler-event-text: $primary-contrast !default;
         background-color: mix( $panel-text, $panel-bg, 3% );
     }
 
+    .k-scheduler-layout td.k-state-selected {
+        background-color: rgba($selected-bg, .25);
+    }
 
     // Events
     .k-event {

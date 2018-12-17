@@ -65,11 +65,14 @@
         }
     }
 
-
     // Scheduler content
     .k-scheduler-content {}
     .k-nonwork-hour {
         background-color: mix( $panel-text, $panel-bg, ($color-level-step / 2) );
+    }
+
+    .k-scheduler-layout td.k-state-selected {
+        background-color: rgba($selected-bg, .25);
     }
 
 
