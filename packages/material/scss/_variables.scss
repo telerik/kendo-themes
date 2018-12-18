@@ -1056,6 +1056,13 @@ $window-titlebar-border: null !default;
 $window-shadow: $box-shadow-depth-4 !default;
 $window-focused-shadow: $box-shadow-depth-5 !default;
 
+$window-sizes: () !default;
+$window-sizes: map-merge((
+    sm: 300px,
+    md: 800px,
+    lg: 1200px
+), $window-sizes);
+
 
 // DateTime
 
@@ -1075,7 +1082,7 @@ $dialog-button-gap: 8px !default;
 
 $dialog-stretched-button-padding-x: 8px !default;
 $dialog-stretched-button-padding-y: $button-padding-y !default;
-$dialog-stretched-button-border-width: null !default;
+$dialog-stretched-button-border-width: 0 !default;
 
 
 // Config maps

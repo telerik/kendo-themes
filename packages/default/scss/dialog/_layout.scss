@@ -110,6 +110,27 @@
         }
     }
 
+    // Kendo UI for jQuery uses these styles
+    .k-window-sm .k-dialog-button-layout-stretched {
+        flex-direction: column;
+
+        .k-button {
+            flex: 0 0 auto;
+            padding: ($dialog-stretched-button-padding-x / 2) ($dialog-stretched-button-padding-x / 2);
+        }
+
+        .k-button ~ .k-button {
+            border-width: 0;
+            border-top-width: $dialog-stretched-button-border-width;
+        }
+    }
+    .k-window-md .k-dialog-button-layout-stretched {
+
+        .k-button {
+            padding: ($dialog-stretched-button-padding-x * .75) ($dialog-stretched-button-padding-x * .75);
+        }
+    }
+
 
     // No flexbox variant for older browsers
     .k-no-flexbox {
@@ -117,6 +138,12 @@
         .k-dialog-buttongroup {
             display: block;
             text-align: right;
+        }
+
+        .k-window-sm .k-dialog-button-layout-stretched {
+            .k-button {
+                display: block;
+            }
         }
 
         .k-rtl,

@@ -987,6 +987,13 @@ $window-titlebar-border: $modal-header-border-color !default;
 $window-shadow: null !default;
 $window-focused-shadow: null !default;
 
+$window-sizes: () !default;
+$window-sizes: map-merge((
+    sm: 300px,
+    md: 800px,
+    lg: 1200px
+), $window-sizes);
+
 
 // DateTime
 
@@ -1004,9 +1011,9 @@ $dialog-buttongroup-border-width: 1px !default;
 
 $dialog-button-gap: .5rem !default;
 
-$dialog-stretched-button-padding-x: null !default;
-$dialog-stretched-button-padding-y: null !default;
-$dialog-stretched-button-border-width: null !default;
+$dialog-stretched-button-padding-x: $button-padding-x !default;
+$dialog-stretched-button-padding-y: $button-padding-y !default;
+$dialog-stretched-button-border-width: $button-border-width !default;
 
 
 // Config maps
