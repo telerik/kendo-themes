@@ -975,31 +975,33 @@
     }
 
     // Remove Grid scrollbar during built-in export
-    .k-pdf-export-shadow .k-grid {
-        float: left;
-        width: auto !important;
-    }
+    .k-pdf-export-shadow {
+        .k-grid {
+            float: left;
+            width: auto !important;
+        }
 
-    // Remove all sizes and scrolling
-    .k-pdf-export-shadow .k-grid,
-    .k-pdf-export-shadow .k-grid-content,
-    .k-pdf-export-shadow .k-grid-content-locked {
-        height: auto !important;
-        overflow: visible;
-    }
+         // Remove all sizes and scrolling
+        .k-grid,
+        .k-grid-content,
+        .k-grid-content-locked {
+            height: auto !important;
+            overflow: visible;
+        }
 
-    .k-pdf-export-shadow .k-grid-header-locked + .k-grid-header-wrap,
-    .k-pdf-export-shadow .k-grid-content-locked + .k-grid-content,
-    .k-pdf-export-shadow .k-grid-footer-locked + .k-grid-footer-wrap {
-        width: auto !important;
-    }
+        .k-grid-header-locked {
+            & + .k-grid-header-wrap,
+            & + .k-grid-content,
+            & + .k-grid-footer-wrap {
+            width: auto !important;
+        }
 
-    // Remove empty space reserved above the scrollbar
-    .k-pdf-export-shadow .k-grid-header,
-    .k-pdf-export-shadow .k-grid[data-role="grid"] .k-grid-footer {
-        padding: 0 !important;
+        // Remove empty space reserved above the scrollbar
+        .k-grid-header,
+        .k-grid[data-role="grid"] .k-grid-footer {
+            padding: 0 !important;
+        }
     }
-
 }
 
 @include exports( "filtermenu/layout" ) {
