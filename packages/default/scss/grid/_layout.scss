@@ -993,7 +993,8 @@
             & + .k-grid-header-wrap,
             & + .k-grid-content,
             & + .k-grid-footer-wrap {
-            width: auto !important;
+                width: auto !important;
+            }
         }
 
         // Remove empty space reserved above the scrollbar
