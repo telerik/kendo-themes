@@ -13,21 +13,22 @@ The Kendo UI Bootstrap Theme is a theme for the Kendo UI components which is bas
 This package is part of the following suites:
 
 * [Kendo UI for Angular](http://www.telerik.com/kendo-angular-ui/)
+* [KendoReact](http://www.telerik.com/kendo-react-ui/)
 * [Kendo UI for jQuery](http://www.telerik.com/kendo-ui)
 * [UI for ASP.NET MVC](http://www.telerik.com/aspnet-mvc)
 * [UI for ASP.NET Core](http://www.telerik.com/aspnet-core-ui)
 
 All available Kendo UI commercial licenses may be obtained at http://www.telerik.com/purchase/kendo-ui.
 
--If you do not own a commercial license, the usage of this software shall be governed by the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+If you do not own a commercial license, the usage of this software shall be governed by the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
 ## Basic Usage
 
 For more information on how to implement the Bootstrap theme in your project, refer to the following articles:
 
 * [Using the Bootstrap Theme in Angular Projects](https://www.telerik.com/kendo-angular-ui/components/styling/theme-bootstrap/)
+* [Using the Bootstrap Theme in React Projects](https://www.telerik.com/kendo-react-ui/components/styling/theme-bootstrap/)
 * [Using the Bootstrap Theme in jQuery Projects](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
-* [Customizing the Bootstrap Theme](https://www.telerik.com/kendo-angular-ui/components/styling/theme-bootstrap/customization/)
 
 ## Running Custom Builds
 
@@ -48,6 +49,6 @@ However, some variables, such as `$tooltip-arrow-width` which is used in the too
 
 Because Bootstrap v4 is still in beta, its variables may change between releases. Make sure to use the Bootstrap version which is [specified in the peer dependencies](package.json) of the package.
 
-*Copyright © 2018 Progress Software Corporation and/or its subsidiaries or affiliates. All Rights Reserved.*
+*Copyright © 2019 Progress Software Corporation and/or its subsidiaries or affiliates. All Rights Reserved.*
 
 *Progress, Telerik, and certain product names used herein are trademarks or registered trademarks of Progress Software Corporation and/or one of its subsidiaries or affiliates in the U.S. and/or other countries.*

@@ -80,7 +80,6 @@ $toolbar-button-mode: flat !default;
 
             // Disabled state
             &.k-state-disabled {
-                &,
                 & .k-button {
                     box-shadow: none;
                 }

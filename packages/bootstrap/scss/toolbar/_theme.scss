@@ -10,6 +10,26 @@ $toolbar-separator-border: inherit !default;
         .k-separator {
             border-color: $toolbar-separator-border;
         }
+
+        // Split Button
+        .k-split-button {
+            @include border-radius( $toolbar-button-border-radius );
+
+            // Focused state
+            &:focus,
+            .k-state-focused {
+                box-shadow: $button-focused-shadow;
+            }
+
+            // Disabled state
+            &.k-state-disabled {
+                &:focus,
+                &.k-state-focused {
+                    box-shadow: $button-focused-shadow;
+                }
+            }
+        }
+
     }
 
 }

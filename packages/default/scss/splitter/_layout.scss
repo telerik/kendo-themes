@@ -165,7 +165,7 @@
             &[hidden] {
                 // sass-lint:disable-block no-important
                 // hidden panes need to be zero-width to allow pane animation
-                flex-basis: 0 !important;
+                flex: 0 1 0 !important;
                 overflow: hidden !important;
                 display: block !important;
             }

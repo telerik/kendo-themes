@@ -62,6 +62,15 @@ $upload-error-text: $error !default;
 
         }
 
+        .k-upload-button {
+            input {
+                &[disabled],
+                &.k-state-disabled {
+                    opacity: 0;
+                }
+            }
+        }
+
         .k-file-progress {
             color: $upload-progress-text;
         }

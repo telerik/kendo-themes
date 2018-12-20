@@ -247,8 +247,8 @@
 
     .k-time-list .k-item {
         padding: $list-item-padding-y $list-item-padding-x;
-        min-height: add-two($line-height-em, 2px);
-        line-height: add-two($line-height-em, 2px);
+        min-height: add-two(decimal-round($line-height-em, 2), 2px);
+        line-height: add-two(decimal-round($line-height-em, 2), 2px);
     }
 
     .k-time-highlight {

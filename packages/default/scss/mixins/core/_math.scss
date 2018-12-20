@@ -73,3 +73,25 @@
     // Fall back to calc
     @return calc( #{$_one} + #{$_two} + #{$_three} );
 }
+
+@function decimal-round($float, $digits: 2) {
+    $pow: pow(10, $digits);
+
+    @return round($float * $pow) / $pow;
+}
+
+@function pow($x, $n) {
+    $ret: 1;
+
+    @if $n >= 0 {
+        @for $i from 1 through $n {
+        $ret: $ret * $x;
+        }
+    } @else {
+        @for $i from $n to 0 {
+        $ret: $ret / $x;
+        }
+    }
+
+    @return $ret;
+}
