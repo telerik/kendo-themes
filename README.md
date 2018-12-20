@@ -114,6 +114,6 @@ To group variables, use the `@group` directive.
 
 To change the layout or the front meter of the generated help topic, change the `build/customization.md.hbs` source file.
 
-*Copyright © 2018 Progress Software Corporation and/or its subsidiaries or affiliates. All Rights Reserved.*
+*Copyright © 2019 Progress Software Corporation and/or its subsidiaries or affiliates. All Rights Reserved.*
 
 *Progress, Telerik, and certain product names used herein are trademarks or registered trademarks of Progress Software Corporation and/or one of its subsidiaries or affiliates in the U.S. and/or other countries.*
