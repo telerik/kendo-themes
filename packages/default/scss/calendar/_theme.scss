@@ -93,6 +93,10 @@ $calendar-today-color: $accent;
                 $calendar-week-number-bg
             );
         }
+        .k-out-of-range {
+            pointer-events: none;
+            visibility: hidden;
+        }
 
 
         // Interactive states
