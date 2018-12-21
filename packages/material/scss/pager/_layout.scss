@@ -37,5 +37,37 @@ $pager-buttons-padding: 0 !default;
         > .k-link {
             border-radius: 50%;
         }
+
+        &.k-pager-lg,
+        &.k-pager-md,
+        &.k-pager-sm {
+
+            .k-pager-numbers {
+                margin: 0;
+
+                .k-current-page {
+
+                    > span {
+                        border-style: solid;
+                        border-width: 0 0 $input-border-width;
+                    }
+                }
+
+                &.k-state-expanded {
+
+                    .k-current-page {
+
+                        > span {
+                            border-style: none;
+                        }
+                    }
+                }
+
+                .k-link,
+                .k-state-selected {
+                    border-radius: 0;
+                }
+            }
+        }
     }
 }

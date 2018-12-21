@@ -1,1 +1,50 @@
 @import "~@progress/kendo-theme-default/scss/pager/theme";
+
+@include exports("pager/theme/material") {
+
+    .k-pager-wrap {
+
+        &.k-pager-lg,
+        &.k-pager-md,
+        &.k-pager-sm {
+
+            .k-pager-numbers {
+
+                .k-current-page {
+
+                    > span {
+                        @include fill(
+                            $pager-number-text,
+                            $pager-bg,
+                            $input-border
+                        );
+
+                        &:hover,
+                        &.k-state-hover {
+                            @include fill(
+                                $pager-number-hovered-text,
+                                $pager-bg,
+                                $input-hovered-border
+                            );
+                        }
+                    }
+                }
+
+                &.k-state-expanded {
+                    box-shadow: $popup-shadow;
+
+                    .k-current-page {
+
+                        > span {
+                            @include fill(
+                                $pager-number-hovered-text,
+                                $pager-number-hovered-bg,
+                                $pager-number-hovered-border
+                            );
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
