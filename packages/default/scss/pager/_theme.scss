@@ -6,6 +6,23 @@
             $pager-bg,
             $pager-border
         );
+
+        &.k-pager-lg,
+        &.k-pager-md,
+        &.k-pager-sm {
+
+            .k-pager-numbers {
+                border-color: $button-border;
+                background-color: $pager-bg;
+
+                &.k-state-expanded {
+
+                    .k-current-page {
+                        border-color: $button-border;
+                    }
+                }
+            }
+        }
     }
 
     .k-pager-nav {

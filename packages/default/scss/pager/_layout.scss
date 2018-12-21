@@ -112,5 +112,108 @@
                 }
             }
         }
+
+        &.k-pager-lg,
+        &.k-pager-md,
+        &.k-pager-sm {
+            position: relative;
+            overflow: visible;
+
+            .k-pager-numbers {
+                @include border-radius();
+                position: absolute;
+                overflow: hidden;
+                left: $pager-numbers-position;
+                flex-direction: column-reverse;
+                height: auto;
+                bottom: 50%;
+                z-index: 3;
+                border-style: solid;
+                border-width: $button-border-width;
+                transform: translateY(calc((#{button-size()} / 2) + #{$button-border-width}));
+
+                li:not(.k-current-page) {
+                    display: none;
+                }
+
+                .k-current-page {
+                    display: inline-block;
+                    cursor: pointer;
+                }
+
+                .k-link,
+                .k-state-selected {
+                    border-width: 0;
+                    width: button-size(2);
+                }
+
+                &.k-state-expanded {
+
+                    li {
+                        display: inline-block;
+                    }
+
+                    .k-current-page {
+                        border-style: solid;
+                        border-width: $button-border-width 0 0;
+                    }
+                }
+
+                + .k-link,
+                + .k-pager-input {
+                    margin-left: $pager-numbers-margin;
+                }
+
+                &:first-child { // move left when previousNext: false
+                    left: 1em;
+                }
+            }
+
+            .k-rtl &,
+            &[dir="rtl"],
+            [dir="rtl"] & {
+
+                .k-pager-numbers {
+                    left: auto;
+                    right: $pager-numbers-position;
+
+                    + .k-link,
+                    + .k-pager-input {
+                        margin-left: 0;
+                        margin-right: $pager-numbers-margin;
+                    }
+
+                    &:first-child { // move right when previousNext: false
+                        right: 1em;
+                    }
+                }
+            }
+        }
+
+        &.k-pager-md,
+        &.k-pager-sm {
+            .k-pager-info {
+                display: none;
+            }
+            .k-pager-refresh {
+                margin-left: auto;
+            }
+
+            .k-rtl &,
+            &[dir="rtl"],
+            [dir="rtl"] & {
+
+                .k-pager-refresh {
+                    margin-left: 0;
+                    margin-right: auto;
+                }
+            }
+        }
+
+        &.k-pager-sm {
+            .k-pager-sizes {
+                display: none;
+            }
+        }
     }
 }

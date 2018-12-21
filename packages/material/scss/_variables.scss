@@ -813,7 +813,16 @@ $pager-number-selected-bg: $primary !default;
 $pager-number-selected-text: $primary-contrast !default;
 $pager-number-selected-border: null !default;
 
+$pager-numbers-position: calc(
+    #{add-three( 2 * $button-border-width, 2 * $button-padding-y, $button-line-height * 1em, 2)} +
+    #{1.5 * $pager-padding-x}
+) !default;
 
+$pager-numbers-margin: calc(
+    #{add-three( 2 * $button-border-width, 2 * $button-padding-y, $button-line-height * 1em, 2)} +
+    #{$pager-padding-x} +
+    #{2 * $button-border-width}
+) !default;
 
 
 // Card
