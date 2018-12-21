@@ -37,7 +37,6 @@ $switch-active-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
     .k-switch-handle {
         @include appearance( button );
         border-radius: 50%;
-        background-clip: padding-box;
         box-shadow: $switch-handle-shadow;
 
         .k-ie11 &,
@@ -49,6 +48,8 @@ $switch-active-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 
     .k-switch-on {
         .k-switch-handle {
+            background-clip: initial;
+
             @include appearance( primary-button );
 
             &:active {
@@ -64,6 +65,10 @@ $switch-active-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
     }
 
     .k-switch-off {
+        .k-switch-handle {
+            background-clip: padding-box;
+        }
+        
         &:hover {
             .k-switch-handle {
                 @include appearance( hovered-button );
