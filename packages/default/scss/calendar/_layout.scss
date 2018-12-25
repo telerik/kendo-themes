@@ -431,6 +431,8 @@
         width: auto;
 
         .k-calendar-view {
+            height: auto;
+            min-height: (7 * $calendar-cell-size);
             width: auto;
             white-space: nowrap;
 
