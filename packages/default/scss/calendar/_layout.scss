@@ -45,8 +45,7 @@
             padding: $calendar-header-cell-padding-y $calendar-header-cell-padding-x;
             font-size: $calendar-header-cell-font-size;
             line-height: $calendar-header-cell-line-height;
-            text-transform: lowercase;
-            font-variant: small-caps;
+            text-transform: uppercase;
             opacity: $calendar-header-cell-opacity;
         }
         tbody th {
@@ -447,6 +446,16 @@
         }
         table.k-meta-view {
             margin: 0 -1px;
+        }
+
+        .k-month-header {
+            margin: 0 $multiviewcalendar-content-padding-x;
+            padding: $calendar-header-cell-padding-y $button-padding-x;
+            font-size: $calendar-header-cell-font-size;
+            line-height: $calendar-header-cell-line-height;
+            text-align: left;
+            opacity: $calendar-header-cell-opacity;
+            cursor: default;
         }
 
         .k-range-start {
