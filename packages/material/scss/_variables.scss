@@ -871,7 +871,7 @@ $calendar-cell-border-radius: 100px !default;
 
 $calendar-header-cell-padding-x: 0 !default;
 $calendar-header-cell-padding-y: ($calendar-cell-padding-y / 2) !default;
-$calendar-header-cell-font-size: inherit !default;
+$calendar-header-cell-font-size: $font-size-sm !default;
 $calendar-header-cell-line-height: 2 !default;
 
 $calendar-header-height: 2em !default;

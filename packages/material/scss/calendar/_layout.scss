@@ -6,7 +6,8 @@
         padding-left: $calendar-content-padding-x;
         padding-right: $calendar-content-padding-x;
 
-        .k-header {
+        .k-header,
+        .k-calendar-header {
             padding-bottom: 0;
         }
 
@@ -16,7 +17,8 @@
             font-weight: 500;
             text-transform: none;
         }
-        th {
+        th,
+        .k-month-header {
             font-weight: 500;
         }
         tbody th {
