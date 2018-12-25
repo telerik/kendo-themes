@@ -684,7 +684,7 @@ $material-dark-complimentary: (
     component-text: get-base-contrast( grey, 800 ),
     component-border: $light-dividers,
     base-bg: get-base-hue( grey, 800 ),
-    hover-bg: rgba( $black, .04 ),
+    hover-bg: rgba( $white, .04 ),
     elevation: $black
 );
 
@@ -697,6 +697,6 @@ $material-light-complimentary: (
     component-text: $dark-primary-text,
     component-border: $dark-dividers,
     base-bg: $white,
-    hover-bg: rgba( $white, .04 ),
+    hover-bg: rgba( $black, .04 ),
     elevation: $black
 );
