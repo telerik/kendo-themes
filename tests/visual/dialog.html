@@ -9,13 +9,12 @@
 
     <style>
         #test-area {
-            grid-template-columns: repeat(2, min-content);
+            grid-template-columns: repeat(3, 1fr);
             align-items: start;
         }
         /* test page overrides */
         .k-dialog {
             position: relative;
-            width: 300px;
         }
     </style>
 </head>
@@ -25,7 +24,29 @@
 
         <div class="k-widget k-window k-dialog">
 
-            <div class="k-window-titlebar k-dialog-titlebar k-header">
+            <div class="k-window-titlebar k-dialog-titlebar">
+                <span class="k-window-title k-dialog-title">Title</span>
+                <div class="k-window-actions k-dialog-actions">
+                    <a class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close">
+                        <span class="k-icon k-i-close"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="k-content k-window-content k-dialog-content">
+                <!-- template -->
+                Dialog content template
+            </div>
+
+            <div class="k-dialog-buttongroup">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog">
+
+            <div class="k-window-titlebar k-dialog-titlebar">
                 <span class="k-window-title k-dialog-title">
                     Title
                     <!-- descendants --> g y p
@@ -40,23 +61,23 @@
 
             <div class="k-content k-window-content k-dialog-content">
                 <!-- template -->
-                Dialog content template
+                Dialog without titlebar action buttons
             </div>
 
-            <div class="k-dialog-buttongroup k-dialog-button-layout-stretched">
-                <button type="button" class="k-button k-state-focused">
-                    Action (focused)
-                </button>
-                <button type="button" class="k-button k-primary">
-                    Primary
-                </button>
+            <div class="k-dialog-buttongroup">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
             </div>
         </div>
 
         <div class="k-widget k-window k-dialog">
 
-            <div class="k-window-titlebar k-dialog-titlebar k-header">
-                <span class="k-window-title k-dialog-title">Title</span>
+            <div class="k-window-titlebar k-dialog-titlebar">
+                <span class="k-window-title k-dialog-title">
+                    Title
+                    <!-- descendants --> g y p
+                    <!-- ascendant --> t d l
+                </span>
                 <div class="k-window-actions k-dialog-actions"></div>
             </div>
 
@@ -65,19 +86,15 @@
                 Dialog without titlebar action buttons
             </div>
 
-            <div class="k-dialog-buttongroup k-dialog-button-layout-stretched">
-                <button type="button" class="k-button">
-                    Action
-                </button>
-                <button type="button" class="k-button k-primary k-state-focused">
-                    Primary (focused)
-                </button>
+            <div class="k-dialog-buttongroup">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
             </div>
         </div>
 
         <div class="k-widget k-window k-dialog">
 
-            <div class="k-window-titlebar k-dialog-titlebar k-header">
+            <div class="k-window-titlebar k-dialog-titlebar">
                 <span class="k-window-title k-dialog-title">Title</span>
                 <div class="k-window-actions k-dialog-actions">
                     <a class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close">
@@ -99,18 +116,14 @@
                 Dialog without title
             </div>
 
-            <div class="k-dialog-buttongroup k-dialog-button-layout-stretched">
-                <button type="button" class="k-button">
-                    Action
-                </button>
-                <button type="button" class="k-button">
-                    Action
-                </button>
+            <div class="k-dialog-buttongroup">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
             </div>
         </div>
 
         <div class="k-widget k-window k-dialog" style="height: 170px">
-            <div class="k-window-titlebar k-dialog-titlebar k-header">
+            <div class="k-window-titlebar k-dialog-titlebar">
                 <span class="k-window-title k-dialog-title">Title</span>
                 <div class="k-window-actions k-dialog-actions">
                     <a class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close">
@@ -124,13 +137,54 @@
                 Dialog content template with long text and vertical scrolling. Dialog content template with long text and vertical scrolling. Dialog content template with long text and vertical scrolling.
             </div>
 
+            <div class="k-dialog-buttongroup">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog col-3">
+            <div class="k-window-titlebar k-dialog-titlebar">
+                <span class="k-window-title k-dialog-title">Title</span>
+            </div>
+            <div class="k-content k-window-content k-dialog-content">
+                Normal buttons
+            </div>
+
+            <div class="k-dialog-buttongroup k-dialog-button-layout-normal">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
+
+                <button type="button" class="k-button k-state-hover">Hover</button>
+                <button type="button" class="k-button k-primary k-state-hover">Hover</button>
+
+                <button type="button" class="k-button k-state-focused">Focus</button>
+                <button type="button" class="k-button k-primary k-state-focused">Focus</button>
+
+                <button type="button" class="k-button k-state-active">Pressed</button>
+                <button type="button" class="k-button k-primary k-state-active">Pressed</button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog col-3">
+            <div class="k-window-titlebar k-dialog-titlebar">
+                <span class="k-window-title k-dialog-title">Title</span>
+            </div>
+            <div class="k-content k-window-content k-dialog-content">
+                Stretched buttons
+            </div>
             <div class="k-dialog-buttongroup k-dialog-button-layout-stretched">
-                <button type="button" class="k-button k-state-focused">
-                    Action (focused)
-                </button>
-                <button type="button" class="k-button k-primary">
-                    Primary
-                </button>
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
+
+                <button type="button" class="k-button k-state-hover">Hover</button>
+                <button type="button" class="k-button k-primary k-state-hover">Hover</button>
+
+                <button type="button" class="k-button k-state-focused">Focus</button>
+                <button type="button" class="k-button k-primary k-state-focused">Focus</button>
+
+                <button type="button" class="k-button k-state-active">Pressed</button>
+                <button type="button" class="k-button k-primary k-state-active">Pressed</button>
             </div>
         </div>
 
