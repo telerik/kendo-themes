@@ -46,6 +46,15 @@ $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
 
+// Icons
+$icon-size: 16px !default;
+$icon-size-lg: 32px !default;
+$icon-spacing: 4px !default;
+
+/// The URL to the icon font that will be used by the theme
+/// The default value of `null` embeds the package font with a `data:` URL
+/// @group icons
+$icon-font-url: null !default;
 
 // Headings
 $h1-font-size: ($font-size * 2) !default;
@@ -133,14 +142,18 @@ $input-padding-y-sm: $input-padding-y / 2 !default;
 $input-line-height-sm: $form-line-height-sm !default;
 
 $input-inner-calc-size: #{$input-line-height * 1em} + #{$input-padding-y * 2};
-$input-calc-size: #{$input-inner-calc-size} + 2px;
+$input-calc-size: #{$input-inner-calc-size} + #{$input-border-width * 2};
 
+$input-icon-offset: 6px !default;
 
 // Pickers
-$picker-button-border-width: 0 !default;
-$picker-button-padding-x: $button-padding-y !default;
-$picker-button-padding-y: $button-padding-y !default;
+$picker-select-border-width: 0 !default;
+$picker-select-padding-x: $button-padding-y !default;
+$picker-select-padding-y: $button-padding-y !default;
+$picker-select-line-height: $line-height !default;
 
+$picker-select-size: add-two($picker-select-line-height * 1em, $picker-select-padding-y * 2) !default;
+$picker-icon-offset: calc(#{$picker-select-size} + #{$input-icon-offset}) !default;
 
 // Toolbar
 $toolbar-border-width: 1px !default;
@@ -289,17 +302,6 @@ $header-selected-text: $selected-text !default;
 $header-selected-bg: $selected-bg !default;
 $header-selected-border: $selected-border !default;
 $header-selected-gradient: null !default;
-
-
-// Icons
-$icon-size: 16px !default;
-$icon-size-lg: ($icon-size * 2) !default;
-$icon-spacing: ($icon-size / 4) !default;
-
-/// The URL to the icon font that will be used by the theme
-/// The default value of `null` embeds the package font with a `data:` URL
-/// @group icons
-$icon-font-url: null !default;
 
 
 // Button
@@ -982,6 +984,13 @@ $window-titlebar-border: inherit !default;
 $window-shadow: 0 3px 3px 0 rgba(0, 0, 0, .06) !default;
 $window-focused-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
 
+$window-sizes: () !default;
+$window-sizes: map-merge((
+    sm: 300px,
+    md: 800px,
+    lg: 1200px
+), $window-sizes);
+
 
 // DateTime
 
@@ -990,6 +999,18 @@ $time-list-focused-bg: rgba(0, 0, 0, .04) !default;
 $time-list-title-focus: black !default;
 
 $time-header-padding: null !default;
+
+
+// Dialog
+$dialog-buttongroup-padding-x: ($window-inner-padding-x / 2) !default;
+$dialog-buttongroup-padding-y: ($window-inner-padding-y / 2) !default;
+$dialog-buttongroup-border-width: 1px !default;
+
+$dialog-button-gap: 8px !default;
+
+$dialog-stretched-button-padding-x: $window-inner-padding-x !default;
+$dialog-stretched-button-padding-y: ($window-inner-padding-x * .75) !default;
+$dialog-stretched-button-border-width: 1px !default;
 
 
 // Config maps

@@ -97,6 +97,15 @@ $font-weight-light: $font-weight-light !default;
 $font-weight-normal: $font-weight-normal !default;
 $font-weight-bold: $font-weight-bold !default;
 
+// Icons
+$icon-size: 16px !default;
+$icon-size-lg: 32px !default;
+$icon-spacing: ($spacer / 2) !default;
+
+/// The URL to the icon font that will be used by the theme
+/// The default value of `null` embeds the package font with a `data:` URL
+/// @group icons
+$icon-font-url: null !default;
 
 // Headings
 $h1-font-size: $h1-font-size !default;
@@ -165,7 +174,7 @@ $button-padding-y-sm: $btn-padding-y-sm !default;
 $button-line-height-sm: $btn-line-height-sm !default;
 
 $button-inner-calc-size: #{$button-line-height * 1em} + #{$button-padding-y * 2};
-$button-calc-size: #{$button-inner-calc-size} + 2px;
+$button-calc-size: #{$button-inner-calc-size} + #{$input-border-width * 2};
 
 
 // Inputs
@@ -184,14 +193,18 @@ $input-padding-y-sm: $input-padding-y-sm !default;
 $input-line-height-sm: $input-line-height-sm !default;
 
 $input-inner-calc-size: #{$input-line-height * 1em} + #{$input-padding-y * 2};
-$input-calc-size: #{$input-inner-calc-size} + 2px;
+$input-calc-size: #{$input-inner-calc-size} + #{$input-border-width * 2};
 
+$input-icon-offset: 6.5px !default;
 
 // Pickers
-$picker-button-border-width: 1px !default;
-$picker-button-padding-x: $button-padding-y !default;
-$picker-button-padding-y: $button-padding-y !default;
+$picker-select-border-width: 1px !default;
+$picker-select-padding-x: $button-padding-y !default;
+$picker-select-padding-y: $button-padding-y !default;
+$picker-select-line-height: $line-height !default;
 
+$picker-select-size: add-three($picker-select-padding-x * 2, $icon-size, $picker-select-border-width) !default;
+$picker-icon-offset: calc(#{$picker-select-size} + #{$input-icon-offset}) !default;
 
 // Toolbar
 $toolbar-border-width: 1px !default;
@@ -318,17 +331,6 @@ $header-selected-text: $selected-text !default;
 $header-selected-bg: $selected-bg !default;
 $header-selected-border: $selected-border !default;
 $header-selected-gradient: null !default;
-
-
-// Icons
-$icon-size: 16px !default;
-$icon-size-lg: ($icon-size * 2) !default;
-$icon-spacing: ($spacer / 2) !default;
-
-/// The URL to the icon font that will be used by the theme
-/// The default value of `null` embeds the package font with a `data:` URL
-/// @group icons
-$icon-font-url: null !default;
 
 
 // Button
@@ -998,6 +1000,13 @@ $window-titlebar-border: $modal-header-border-color !default;
 $window-shadow: null !default;
 $window-focused-shadow: null !default;
 
+$window-sizes: () !default;
+$window-sizes: map-merge((
+    sm: 300px,
+    md: 800px,
+    lg: 1200px
+), $window-sizes);
+
 
 // DateTime
 
@@ -1006,6 +1015,18 @@ $time-list-focused-bg: rgba(0, 0, 0, .02) !default;
 $time-list-title-focus: black !default;
 
 $time-header-padding: $padding-y $padding-x !default;
+
+
+// Dialog
+$dialog-buttongroup-padding-x: $window-inner-padding-x !default;
+$dialog-buttongroup-padding-y: $window-inner-padding-y !default;
+$dialog-buttongroup-border-width: 1px !default;
+
+$dialog-button-gap: .5rem !default;
+
+$dialog-stretched-button-padding-x: $button-padding-x !default;
+$dialog-stretched-button-padding-y: $button-padding-y !default;
+$dialog-stretched-button-border-width: $button-border-width !default;
 
 
 // Config maps
