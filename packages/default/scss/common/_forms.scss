@@ -30,11 +30,6 @@ $forms-invalid-color: $error !default;
             .k-select {
                 @include border-left-radius-only();
             }
-
-            .k-clear-value {
-                left: $input-padding-x;
-                right: auto;
-            }
         }
 
         ::-ms-clear {
@@ -132,8 +127,8 @@ $forms-invalid-color: $error !default;
 
         .k-select {
             @include border-right-radius-only();
-            padding: $picker-button-padding-y $picker-button-padding-x;
-            border-width: 0 0 0 $picker-button-border-width;
+            padding: $picker-select-padding-y $picker-select-padding-x;
+            border-width: 0 0 0 $picker-select-border-width;
             box-sizing: border-box;
             border-style: solid;
             display: flex;
@@ -147,37 +142,53 @@ $forms-invalid-color: $error !default;
         }
     }
 
+
+    // Loading
     .k-autocomplete,
-    .k-dropdown-wrap,
     .k-multiselect-wrap {
 
-        .k-clear-value,
         .k-i-loading {
+            height: ($input-line-height * $input-font-size);
+            line-height: ($input-line-height * $input-font-size);
             position: absolute;
-            right: $input-padding-x;
+            top: $input-padding-y;
+            right: $input-icon-offset;
+
 
             .k-rtl &,
             [dir="rtl"] & {
                 right: auto;
-                left: $input-padding-x;
+                left: $input-icon-offset;
             }
         }
+    }
 
-        .k-i-loading {
-            margin-bottom: -.5em;
-        }
+
+    // Clear value
+    .k-autocomplete,
+    .k-dropdown-wrap,
+    .k-multiselect-wrap {
 
         .k-clear-value {
-            height: ($input-line-height * $font-size);
-            line-height: ($input-line-height * $font-size);
+            height: ($input-line-height * $input-font-size);
+            line-height: ($input-line-height * $input-font-size);
             outline: 0;
-            opacity: .5;
             cursor: pointer;
             display: none;
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            margin-bottom: -($input-line-height * $font-size / 2);
+            opacity: .5;
+            position: absolute;
+            top: $input-padding-y;
+            right: $input-icon-offset;
+
+
+            .k-rtl &,
+            [dir="rtl"] & {
+                right: auto;
+                left: $input-icon-offset;
+            }
         }
         .k-clear-value:hover {
             opacity: 1;
@@ -208,52 +219,32 @@ $forms-invalid-color: $error !default;
     .k-dropdown-wrap {
 
         .k-clear-value {
-            right: calc( #{button-inner-size()} );
+            right: $picker-icon-offset;
 
             .k-rtl &,
             [dir="rtl"] & {
                 right: auto;
-                left: calc( #{button-inner-size()} );
+                left: $picker-icon-offset;
             }
         }
     }
 
-    .k-autocomplete,
-    .k-dropdown-wrap {
-
-        .k-i-loading,
-        .k-clear-value {
-            bottom: 50%;
-        }
-
-    }
-
     .k-multiselect-wrap {
-
-        .k-i-loading,
-        .k-clear-value {
-            bottom: add-two($button-padding-y, $input-line-height * $font-size / 2);
-        }
-    }
-
-    $input-icon-padding: calc(#{$input-padding-x} + #{$icon-size});
-
-    .k-multiselect-wrap {
-        padding-right: $input-icon-padding;
+        padding-right: calc( #{ $picker-select-size } );
 
         .k-rtl &,
         [dir="rtl"] & {
-            padding-left: $input-icon-padding;
+            padding-left: calc( #{ $picker-select-size } );
             padding-right: $input-padding-x;
         }
     }
 
     .k-autocomplete {
-        padding-right: $input-icon-padding;
+        padding-right: calc( #{ $picker-select-size } );
 
         .k-rtl &,
         &[dir="rtl"] {
-            padding-left: $input-icon-padding;
+            padding-left: calc( #{ $picker-select-size } );
             padding-right: 0;
         }
     }
