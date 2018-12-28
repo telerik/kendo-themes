@@ -1,4 +1,4 @@
-# Contributing to the Kendo UI Themes
+# Contributing to the Kendo UI Theme Tasks
 
 Thank you for your interest in contributing to Kendo UI!
 
@@ -25,7 +25,7 @@ To submit a pull request:
      git checkout -b my-fix-branch develop
      ```
 
-1. Add your contribution, following the [coding guidelines](#coding-guidelines) and [commit message guidelines](#commit-message-guidelines).
+1. Add your contribution, following the Kendo UI Themes [code style guidelines](https://github.com/telerik/kendo-themes/wiki/Code-Style-Guidelines) and [commit message guidelines](https://github.com/telerik/kendo-themes/wiki/Commit-Message-Guidelines).
 1. [Submit a Pull Request](https://help.github.com/articles/creating-a-pull-request/).
 1. Address any feedback to the Pull Request until the PR is approved.
 1. Rebase your PR onto the latest changes from the `develop` branch.

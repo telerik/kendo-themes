@@ -22,8 +22,16 @@
         box-shadow: none;
     }
 
+
+    // Window sizes
+    @each $size, $width in $window-sizes {
+        .k-window-#{$size} { width: $width; }
+    }
+
+
     // Title bar
     .k-window-titlebar {
+        @include border-top-radius( $window-border-radius );
         padding: $window-titlebar-padding-y $window-titlebar-padding-x;
         border-width: $window-titlebar-border-width;
         border-style: $window-titlebar-border-style;

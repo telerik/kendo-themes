@@ -418,7 +418,7 @@
         padding: $button-padding-y $button-padding-x;
         border-width: 1px;
         border-style: solid;
-        line-height: $button-line-height;
+        line-height: $grid-group-drag-clue-line-height;
         display: inline-flex;
         flex-direction: row;
         align-items: center;
@@ -971,6 +971,36 @@
 
         .k-filter-row {
             display: none;
+        }
+    }
+
+    // Remove Grid scrollbar during built-in export
+    .k-pdf-export-shadow {
+        .k-grid {
+            float: left;
+            width: auto !important; // sass-lint:disable-line no-important
+        }
+
+         // Remove all sizes and scrolling
+        .k-grid,
+        .k-grid-content,
+        .k-grid-content-locked {
+            height: auto !important; // sass-lint:disable-line no-important
+            overflow: visible;
+        }
+
+        .k-grid-header-locked {
+            & + .k-grid-header-wrap,
+            & + .k-grid-content,
+            & + .k-grid-footer-wrap {
+                width: auto !important; // sass-lint:disable-line no-important
+            }
+        }
+
+        // Remove empty space reserved above the scrollbar
+        .k-grid-header,
+        .k-grid[data-role="grid"] .k-grid-footer {
+            padding: 0 !important; // sass-lint:disable-line no-important
         }
     }
 }
