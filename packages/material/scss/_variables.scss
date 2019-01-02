@@ -909,6 +909,17 @@ $calendar-header-border: $header-border !default;
 $calendar-header-gradient: null !default;
 $calendar-header-shadow: null !default;
 
+$calendar-header-button-hovered-bg: $button-hovered-bg !default;
+$calendar-header-button-hovered-text: $button-hovered-text !default;
+$calendar-header-button-hovered-border: $button-hovered-border !default;
+$calendar-header-button-hovered-gradient: $button-hovered-gradient !default;
+
+$calendar-header-button-pressed-bg: true-mix( $button-text, $button-bg, 16%) !default;
+$calendar-header-button-pressed-text: $button-pressed-text !default;
+$calendar-header-button-pressed-border: $button-pressed-border !default;
+$calendar-header-button-pressed-gradient: $button-pressed-gradient !default;
+$calendar-header-button-pressed-shadow: null !default;
+
 $calendar-header-cell-text: $calendar-header-text !default;
 $calendar-header-cell-opacity: .38 !default;
 
@@ -946,7 +957,7 @@ $multiviewcalendar-button-style: detached !default;
 $multiviewcalendar-button-size: 40px !default;
 $multiviewcalendar-gap: ($calendar-content-padding-x * 2) !default;
 $multiviewcalendar-content-padding-x: ($multiviewcalendar-gap / 2);
-$multiviewcalendar-content-padding-y: $calendar-content-padding-y;
+$multiviewcalendar-content-padding-y: 0;
 
 
 // Chat
