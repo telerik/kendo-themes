@@ -1011,20 +1011,14 @@
         $item-spacing: $spacer-y / 2;
         $form-padding: $spacer-y;
         $form-padding-y: $form-padding - $item-spacing;
+        $action-buttons-margin-bottom: add-two(-$form-padding-y, -$popup-padding-y);
 
-        // BACKCOMPAT styles can be removed once https://github.com/telerik/kendo/pull/8527 is merged
-
-        > div:not(.k-animation-container), // BACKCOMPAT: remove when below class is added to container
         .k-filter-menu-container {
             padding: $form-padding-y $form-padding;
-        }
 
-        > div > div > .k-button {
-            // BACKCOMPAT: remove when buttons div gets .k-action-buttons.k-button-group
-            margin: $item-spacing 1% 0;
-            width: 48%;
-            box-sizing: border-box;
-            display: inline-block;
+            .k-action-buttons {
+                margin: $form-padding (-$form-padding) $action-buttons-margin-bottom;
+            }
         }
 
         .k-widget,
@@ -1038,16 +1032,6 @@
         .k-widget.k-filter-and {
             width: 6em;
             margin: (2 * $item-spacing) 0;
-        }
-
-        .k-action-buttons {
-            margin: $form-padding (-$form-padding) (-$form-padding-y);
-
-            .k-button {
-                // BACKCOMPAT: remove these overrides when buttons div gets .k-action-buttons.k-button-group
-                margin: 0;
-                width: auto;
-            }
         }
     }
 
