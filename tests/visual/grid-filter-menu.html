@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Grid Filter Menu</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .k-animation-container,
+        .k-popup {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <!-- Angular rendering -->
+        <div class="section">
+            <kendo-popup class="k-animation-container k-animation-container-shown" style="z-index: 2;">
+                <div class="k-popup k-grid-filter-popup">
+                    <kendo-grid-filter-menu-container >
+                        <form class="k-filter-menu k-group k-reset k-state-border-up ng-untouched ng-pristine ng-valid" novalidate="">
+                            <div class="k-filter-menu-container">
+                                <kendo-grid-date-filter-menu>
+                                    <kendo-grid-date-filter-menu-input>
+                                        <kendo-grid-filter-menu-input-wrapper>
+                                            <kendo-dropdownlist class="k-widget k-dropdown k-header" dir="ltr">
+                                                <span class="k-dropdown-wrap k-state-default">
+                                                    <span class="k-input" >Is after or equal to</span>
+                                                    <span class="k-select"><span class="k-i-arrow-s k-icon"></span></span>
+                                                </span>
+                                            </kendo-dropdownlist>
+                                            <kendo-datepicker class="k-widget k-datepicker k-header">
+                                                <span class="k-picker-wrap k-state-default">
+                                                    <kendo-dateinput class="k-widget k-dateinput">
+                                                        <span class="k-dateinput-wrap">
+                                                            <input class="k-input">
+                                                        </span>
+                                                    </kendo-dateinput>
+                                                    <span class="k-select" role="button"><span class="k-icon k-i-calendar"></span></span>
+                                                </span>
+                                            </kendo-datepicker>
+                                        </kendo-grid-filter-menu-input-wrapper>
+                                    </kendo-grid-date-filter-menu-input>
+                                    <kendo-dropdownlist class="k-filter-and k-widget k-dropdown k-header" dir="ltr">
+                                        <span class="k-dropdown-wrap k-state-default">
+                                            <span class="k-input">And</span>
+                                            <span class="k-select"><span class="k-i-arrow-s k-icon"></span></span>
+                                        </span>
+                                    </kendo-dropdownlist>
+                                    <kendo-grid-date-filter-menu-input>
+                                            <kendo-grid-filter-menu-input-wrapper>
+                                                <kendo-dropdownlist class="k-widget k-dropdown k-header" dir="ltr">
+                                                    <span class="k-dropdown-wrap k-state-default">
+                                                        <span class="k-input" >Is after or equal to</span>
+                                                        <span class="k-select"><span class="k-i-arrow-s k-icon"></span></span>
+                                                    </span>
+                                                </kendo-dropdownlist>
+                                                <kendo-datepicker class="k-widget k-datepicker k-header">
+                                                    <span class="k-picker-wrap k-state-default">
+                                                        <kendo-dateinput class="k-widget k-dateinput">
+                                                            <span class="k-dateinput-wrap">
+                                                                <input class="k-input">
+                                                            </span>
+                                                        </kendo-dateinput>
+                                                        <span class="k-select" role="button">
+                                                            <span class="k-icon k-i-calendar"></span>
+                                                        </span>
+                                                    </span>
+                                                </kendo-datepicker>
+                                            </kendo-grid-filter-menu-input-wrapper>
+                                        </kendo-grid-date-filter-menu-input>
+                                </kendo-grid-date-filter-menu>
+                                <div class="k-action-buttons k-button-group">
+                                    <button class="k-button" type="reset">Clear</button>
+                                    <button class="k-button k-primary" disabled="">Filter</button>
+                                </div>
+                            </div>
+                        </form>
+                    </kendo-grid-filter-menu-container>
+                </div>
+            </kendo-popup>
+        </div>
+
+        <!-- jQuery rendering -->
+        <div class="section">
+            <div class="k-animation-container" style="overflow: visible;">
+                <form class="k-filter-menu k-popup k-group k-reset k-state-border-up" style="display: block; position: absolute; font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-stretch: 100%; font-style: normal; font-weight: 700; line-height: 24px; transform: translateY(0px);">
+                    <div class="k-filter-menu-container">
+                        <div class="k-filter-help-text">Show items with value that:</div>
+                        <span class="k-widget k-dropdown">
+                            <span class="k-dropdown-wrap k-state-default">
+                                <span class="k-input">Is equal to</span>
+                                <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                            </span>
+                        </span>
+                        <span class="k-widget k-numerictextbox">
+                            <span class="k-numeric-wrap k-state-default">
+                                <input type="text" class="k-formatted-value k-input" style="display: inline-block;">
+                                <span class="k-select">
+                                    <span class="k-link k-link-increase">
+                                        <span class="k-icon k-i-arrow-60-up"></span>
+                                    </span>
+                                    <span class="k-link k-link-decrease">
+                                        <span class="k-icon k-i-arrow-60-down"></span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                        <span title="Filters logic" class="k-widget k-dropdown k-filter-and">
+                            <span class="k-dropdown-wrap k-state-default">
+                                <span class="k-input">And</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-60-down"></span>
+                                </span>
+                            </span>
+                        </span>
+                        <span class="k-widget k-dropdown">
+                            <span class="k-dropdown-wrap k-state-default">
+                                <span class="k-input">Is equal to</span>
+                                <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                            </span>
+                        </span>
+                        <span class="k-widget k-numerictextbox">
+                            <span class="k-numeric-wrap k-state-default">
+                                <input type="text" class="k-formatted-value k-input" style="display: inline-block;">
+                                <span class="k-select">
+                                    <span class="k-link k-link-increase">
+                                        <span class="k-icon k-i-arrow-60-up"></span>
+                                    </span>
+                                    <span class="k-link k-link-decrease">
+                                        <span class="k-icon k-i-arrow-60-down"></span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                        <div class="k-action-buttons">
+                            <button class="k-button k-primary">Filter</button>
+                            <button class="k-button">Clear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
