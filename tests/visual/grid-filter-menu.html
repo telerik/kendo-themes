@@ -22,6 +22,67 @@
 
     <div id="test-area" class="grid">
 
+        <!-- jQuery rendering -->
+        <div class="section">
+            <div class="k-animation-container" style="overflow: visible;">
+                <form class="k-filter-menu k-popup k-group k-reset k-state-border-up">
+                    <div class="k-filter-menu-container">
+                        <div class="k-filter-help-text">Show items with value that:</div>
+                        <span class="k-widget k-dropdown">
+                            <span class="k-dropdown-wrap k-state-default">
+                                <span class="k-input">Is equal to</span>
+                                <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                            </span>
+                        </span>
+                        <span class="k-widget k-numerictextbox">
+                            <span class="k-numeric-wrap k-state-default">
+                                <input type="text" class="k-formatted-value k-input" style="display: inline-block;">
+                                <span class="k-select">
+                                    <span class="k-link k-link-increase">
+                                        <span class="k-icon k-i-arrow-60-up"></span>
+                                    </span>
+                                    <span class="k-link k-link-decrease">
+                                        <span class="k-icon k-i-arrow-60-down"></span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                        <span title="Filters logic" class="k-widget k-dropdown k-filter-and">
+                            <span class="k-dropdown-wrap k-state-default">
+                                <span class="k-input">And</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-60-down"></span>
+                                </span>
+                            </span>
+                        </span>
+                        <span class="k-widget k-dropdown">
+                            <span class="k-dropdown-wrap k-state-default">
+                                <span class="k-input">Is equal to</span>
+                                <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                            </span>
+                        </span>
+                        <span class="k-widget k-numerictextbox">
+                            <span class="k-numeric-wrap k-state-default">
+                                <input type="text" class="k-formatted-value k-input" style="display: inline-block;">
+                                <span class="k-select">
+                                    <span class="k-link k-link-increase">
+                                        <span class="k-icon k-i-arrow-60-up"></span>
+                                    </span>
+                                    <span class="k-link k-link-decrease">
+                                        <span class="k-icon k-i-arrow-60-down"></span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                        <div class="k-action-buttons">
+                            <button class="k-button k-primary">Filter</button>
+                            <button class="k-button">Clear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
         <!-- Angular rendering -->
         <div class="section">
             <kendo-popup class="k-animation-container k-animation-container-shown" style="z-index: 2;">
@@ -88,67 +149,6 @@
                     </kendo-grid-filter-menu-container>
                 </div>
             </kendo-popup>
-        </div>
-
-        <!-- jQuery rendering -->
-        <div class="section">
-            <div class="k-animation-container" style="overflow: visible;">
-                <form class="k-filter-menu k-popup k-group k-reset k-state-border-up" style="display: block; position: absolute; font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-stretch: 100%; font-style: normal; font-weight: 700; line-height: 24px; transform: translateY(0px);">
-                    <div class="k-filter-menu-container">
-                        <div class="k-filter-help-text">Show items with value that:</div>
-                        <span class="k-widget k-dropdown">
-                            <span class="k-dropdown-wrap k-state-default">
-                                <span class="k-input">Is equal to</span>
-                                <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
-                            </span>
-                        </span>
-                        <span class="k-widget k-numerictextbox">
-                            <span class="k-numeric-wrap k-state-default">
-                                <input type="text" class="k-formatted-value k-input" style="display: inline-block;">
-                                <span class="k-select">
-                                    <span class="k-link k-link-increase">
-                                        <span class="k-icon k-i-arrow-60-up"></span>
-                                    </span>
-                                    <span class="k-link k-link-decrease">
-                                        <span class="k-icon k-i-arrow-60-down"></span>
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
-                        <span title="Filters logic" class="k-widget k-dropdown k-filter-and">
-                            <span class="k-dropdown-wrap k-state-default">
-                                <span class="k-input">And</span>
-                                <span class="k-select">
-                                    <span class="k-icon k-i-arrow-60-down"></span>
-                                </span>
-                            </span>
-                        </span>
-                        <span class="k-widget k-dropdown">
-                            <span class="k-dropdown-wrap k-state-default">
-                                <span class="k-input">Is equal to</span>
-                                <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
-                            </span>
-                        </span>
-                        <span class="k-widget k-numerictextbox">
-                            <span class="k-numeric-wrap k-state-default">
-                                <input type="text" class="k-formatted-value k-input" style="display: inline-block;">
-                                <span class="k-select">
-                                    <span class="k-link k-link-increase">
-                                        <span class="k-icon k-i-arrow-60-up"></span>
-                                    </span>
-                                    <span class="k-link k-link-decrease">
-                                        <span class="k-icon k-i-arrow-60-down"></span>
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
-                        <div class="k-action-buttons">
-                            <button class="k-button k-primary">Filter</button>
-                            <button class="k-button">Clear</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
         </div>
 
     </div>
