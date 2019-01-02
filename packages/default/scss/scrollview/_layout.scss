@@ -12,7 +12,7 @@
         display: block;
 
         .k-scrollview,
-        .k-scrollview-wrap {
+        ul.k-scrollview-wrap {
             list-style-type: none;
             position: absolute;
             margin: 0;
@@ -128,6 +128,16 @@
 
     //refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
     div.k-scrollview {
+
+        div.k-scrollview-wrap {
+            white-space: nowrap;
+
+            & > [data-role=page] {
+               vertical-align: top;
+               display: inline-block;
+               min-height: 1px;
+           }
+        }
 
         .k-scrollview-nav-wrap {
             position: absolute;
