@@ -3,7 +3,7 @@
 
 @include exports('scrollview/layout') {
 
-    //refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
+    // refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
     kendo-scrollview.k-scrollview-wrap,
     div.k-scrollview {
         position: relative;
@@ -77,7 +77,7 @@
             }
         }
 
-        //remove when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
+        // remove when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
         .k-scrollview-pageable > li.k-button::before {
             pointer-events: initial;
             border-radius: 0;
@@ -126,7 +126,7 @@
 
     }
 
-    //refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
+    // refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
     div.k-scrollview {
 
         div.k-scrollview-wrap {
