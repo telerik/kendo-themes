@@ -69,6 +69,11 @@
         display: table-cell;
         vertical-align: middle;
     }
+    .k-grid-list.k-virtual-list > .k-item > .k-cell,
+    .k-grid-list.k-virtual-list > .k-item > .k-group,
+    .k-grid-list.k-virtual-list > .k-item > .k-spacer-group {
+        display: inline-block;
+    }
     .k-grid-list > .k-item:last-child > .k-cell,
     .k-grid-list > .k-item:last-child > .k-group-cell,
     .k-grid-list > .k-item:last-child > .k-spacer-cell {
