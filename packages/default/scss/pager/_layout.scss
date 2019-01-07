@@ -130,14 +130,21 @@
                 z-index: 3;
                 border-style: solid;
                 border-width: $button-border-width;
-                transform: translateY(calc((#{button-size()} / 2) + #{$button-border-width}));
+
+                // sass-lint:disable indentation
+                // do not use single translate + calc() because of IE10/11
+                transform: translateY($button-border-width)
+                            translateY($button-padding-y)
+                            translateY((($button-line-height * 1em) / 2))
+                            translateY($button-border-width);
+                // sass-lint:enable indentation
 
                 li:not(.k-current-page) {
                     display: none;
                 }
 
                 .k-current-page {
-                    display: inline-block;
+                    display: inline-flex;
                     cursor: pointer;
                 }
 
@@ -150,7 +157,7 @@
                 &.k-state-expanded {
 
                     li {
-                        display: inline-block;
+                        display: inline-flex;
                     }
 
                     .k-current-page {
