@@ -14,6 +14,12 @@
         height: 1em;
         border-width: 0;
         opacity: .5;
+
+        // fix: IE 11 tends to displace the buttons, so we remove the padding
+        .k-ie & {
+            padding: 0;
+            line-height: 1;
+        }
     }
     .k-window-action:hover {
         opacity: .75;
