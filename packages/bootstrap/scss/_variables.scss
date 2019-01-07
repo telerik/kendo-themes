@@ -97,6 +97,15 @@ $font-weight-light: $font-weight-light !default;
 $font-weight-normal: $font-weight-normal !default;
 $font-weight-bold: $font-weight-bold !default;
 
+// Icons
+$icon-size: 16px !default;
+$icon-size-lg: 32px !default;
+$icon-spacing: ($spacer / 2) !default;
+
+/// The URL to the icon font that will be used by the theme
+/// The default value of `null` embeds the package font with a `data:` URL
+/// @group icons
+$icon-font-url: null !default;
 
 // Headings
 $h1-font-size: $h1-font-size !default;
@@ -165,7 +174,7 @@ $button-padding-y-sm: $btn-padding-y-sm !default;
 $button-line-height-sm: $btn-line-height-sm !default;
 
 $button-inner-calc-size: #{$button-line-height * 1em} + #{$button-padding-y * 2};
-$button-calc-size: #{$button-inner-calc-size} + 2px;
+$button-calc-size: #{$button-inner-calc-size} + #{$input-border-width * 2};
 
 
 // Inputs
@@ -184,14 +193,18 @@ $input-padding-y-sm: $input-padding-y-sm !default;
 $input-line-height-sm: $input-line-height-sm !default;
 
 $input-inner-calc-size: #{$input-line-height * 1em} + #{$input-padding-y * 2};
-$input-calc-size: #{$input-inner-calc-size} + 2px;
+$input-calc-size: #{$input-inner-calc-size} + #{$input-border-width * 2};
 
+$input-icon-offset: 6.5px !default;
 
 // Pickers
-$picker-button-border-width: 1px !default;
-$picker-button-padding-x: $button-padding-y !default;
-$picker-button-padding-y: $button-padding-y !default;
+$picker-select-border-width: 1px !default;
+$picker-select-padding-x: $button-padding-y !default;
+$picker-select-padding-y: $button-padding-y !default;
+$picker-select-line-height: $line-height !default;
 
+$picker-select-size: add-three($picker-select-padding-x * 2, $icon-size, $picker-select-border-width) !default;
+$picker-icon-offset: calc(#{$picker-select-size} + #{$input-icon-offset}) !default;
 
 // Toolbar
 $toolbar-border-width: 1px !default;
@@ -318,17 +331,6 @@ $header-selected-text: $selected-text !default;
 $header-selected-bg: $selected-bg !default;
 $header-selected-border: $selected-border !default;
 $header-selected-gradient: null !default;
-
-
-// Icons
-$icon-size: 16px !default;
-$icon-size-lg: ($icon-size * 2) !default;
-$icon-spacing: ($spacer / 2) !default;
-
-/// The URL to the icon font that will be used by the theme
-/// The default value of `null` embeds the package font with a `data:` URL
-/// @group icons
-$icon-font-url: null !default;
 
 
 // Button
@@ -734,6 +736,7 @@ $chart-minor-lines: rgba(0, 0, 0, .04) !default;
 
 $chart-area-opacity: .8 !default;
 
+$chart-bg: $widget-bg !default;
 
 // Disabled mixin variables
 $disabled-filter: grayscale(.1) !default;
@@ -743,6 +746,17 @@ $disabled-opacity: .65 !default;
 // Pager
 $pager-padding-x: $toolbar-padding-x !default;
 $pager-padding-y: $toolbar-padding-y !default;
+
+$pager-numbers-position: calc(
+    #{add-three( 2 * $button-border-width, 2 * $button-padding-y, $button-line-height * 1em, 2)} +
+    #{1.5 * $pager-padding-x}
+) !default;
+
+$pager-numbers-margin: calc(
+    #{add-three( 2 * $button-border-width, 2 * $button-padding-y, $button-line-height * 1em, 2)} +
+    #{$pager-padding-x} +
+    #{2 * $button-border-width}
+) !default;
 
 
 // Card
@@ -823,6 +837,17 @@ $calendar-header-border: $header-border !default;
 $calendar-header-gradient: $header-gradient !default;
 $calendar-header-shadow: none !default;
 
+$calendar-header-button-hovered-bg: $button-hovered-bg !default;
+$calendar-header-button-hovered-text: $button-hovered-text !default;
+$calendar-header-button-hovered-border: $button-hovered-border !default;
+$calendar-header-button-hovered-gradient: $button-hovered-gradient !default;
+
+$calendar-header-button-pressed-bg: $button-pressed-bg !default;
+$calendar-header-button-pressed-text: $button-pressed-text !default;
+$calendar-header-button-pressed-border: $button-pressed-border !default;
+$calendar-header-button-pressed-gradient: $button-pressed-gradient !default;
+$calendar-header-button-pressed-shadow: $button-pressed-shadow !default;
+
 $calendar-header-cell-text: $calendar-header-text !default;
 $calendar-header-cell-opacity: $disabled-opacity !default;
 
@@ -863,7 +888,7 @@ $multiviewcalendar-button-style: stretched !default;
 $multiviewcalendar-button-size: 50px !default;
 $multiviewcalendar-gap: ($calendar-content-padding-x * 2) !default;
 $multiviewcalendar-content-padding-x: ($multiviewcalendar-gap / 2);
-$multiviewcalendar-content-padding-y: $calendar-content-padding-y;
+$multiviewcalendar-content-padding-y: 0;
 
 
 // Chat
@@ -987,6 +1012,13 @@ $window-titlebar-border: $modal-header-border-color !default;
 $window-shadow: null !default;
 $window-focused-shadow: null !default;
 
+$window-sizes: () !default;
+$window-sizes: map-merge((
+    sm: 300px,
+    md: 800px,
+    lg: 1200px
+), $window-sizes);
+
 
 // DateTime
 
@@ -995,6 +1027,41 @@ $time-list-focused-bg: rgba(0, 0, 0, .02) !default;
 $time-list-title-focus: black !default;
 
 $time-header-padding: $padding-y $padding-x !default;
+
+
+// Dialog
+$dialog-buttongroup-padding-x: $window-inner-padding-x !default;
+$dialog-buttongroup-padding-y: $window-inner-padding-y !default;
+$dialog-buttongroup-border-width: 1px !default;
+
+$dialog-button-gap: .5rem !default;
+
+$dialog-stretched-button-padding-x: $button-padding-x !default;
+$dialog-stretched-button-padding-y: $button-padding-y !default;
+$dialog-stretched-button-border-width: $button-border-width !default;
+
+
+// Scrollview
+$scrollview-pagebutton-size: 8px !default;
+$scrollview-pagebutton-bg: rgba($carousel-indicator-active-bg, .5) !default;
+$scrollview-pagebutton-border: null !default;
+$scrollview-pagebutton-primary-bg: null !default;
+$scrollview-pagebutton-primary-border: null !default;
+$scrollview-pagebutton-shadow: 0 0 2px rgba(0, 0, 0, .08) !default;
+
+$scrollview-pager-offset: 20px !default;
+$scrollview-pager-item-spacing: 20px !default;
+$scrollview-pager-item-border-width: 0 !default;
+$scrollview-pager-height: add-three($scrollview-pagebutton-size, 2 * $scrollview-pager-item-border-width, $scrollview-pager-item-spacing / 2 ) !default;
+
+$scrollview-arrow-icon-size: 4.5em !default;
+$scrollview-arrow-tap-highlight-color: $rgba-transparent !default;
+$scrollview-navigation-color: $selected-text !default;
+$scrollview-navigation-icon-shadow: rgba(0, 0, 0, .3) 0 0 15px !default;
+$scrollview-navigation-background: rgba(0, 0, 0, 0) !default;
+$scrollview-navigation-default-opacity: .7 !default;
+$scrollview-navigation-hover-opacity: 1 !default;
+$scrollview-navigation-hover-span-bg: null !default;
 
 
 // Config maps

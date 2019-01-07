@@ -99,21 +99,30 @@ Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
+<td>$base-bg</td>
+<td>
+    
+    map-get( $theme, base-bg )
+</td>
+<td>The background of the components' chrome area.
+</td>
+</tr>
+<tr>
 <td>$base-text</td>
 <td>
     
-    if($theme-type == dark, white, black)
+    $component-text
 </td>
 <td>The text color of the components' chrome area.
 </td>
 </tr>
 <tr>
-<td>$base-bg</td>
+<td>$base-border</td>
 <td>
     
-    if($theme-type == dark, black, white)
+    rgba( if($theme-type == dark, white, black), .08 )
 </td>
-<td>The background of the components' chrome area.
+<td>The border of the components' chrome area.
 </td>
 </tr>
 <tr>
@@ -126,21 +135,21 @@ Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
+<td>$hovered-bg</td>
+<td>
+    
+    map-get( $theme, hover-bg )
+</td>
+<td>The background of hovered items.
+</td>
+</tr>
+<tr>
 <td>$hovered-text</td>
 <td>
     
     $base-text
 </td>
 <td>The text color of hovered items.
-</td>
-</tr>
-<tr>
-<td>$hovered-bg</td>
-<td>
-    
-    rgba( if($theme-type == dark, white, black), .07)
-</td>
-<td>The background of hovered items.
 </td>
 </tr>
 <tr>

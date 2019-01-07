@@ -383,7 +383,7 @@ $chart-title-font-size: 1.143em !default;
         accent: $accent,
         accent-contrast: $accent-contrast,
         base: $base-bg,
-        background: $widget-bg,
+        background: $chart-bg,
 
         border-radius: $border-radius,
 
@@ -407,7 +407,7 @@ $chart-title-font-size: 1.143em !default;
         series-f: $series-f,
 
         gauge-pointer: $accent,
-        gauge-track: darken($widget-bg, 10%)
+        gauge-track: darken($chart-bg, 10%)
     );
 
     @each $name, $value in $exported {
@@ -417,6 +417,10 @@ $chart-title-font-size: 1.143em !default;
             @if $type == 'color' {
                 // background-color can store any color
                 background-color: $value;
+
+                svg & {
+                    fill: $value;
+                }
             } @else if $type == 'number' {
                 // margin-top can store positive & negative values
                 margin-top: $value;

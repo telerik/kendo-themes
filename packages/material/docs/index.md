@@ -54,24 +54,7 @@ The following additional configuration improves the look and feel of the theme i
 
 ## Preview
 
-{% platform_content angular %}
-The following example previews Kendo UI components which are styled with the Material theme.
-{% endplatform_content %}
-{% platform_content vue %}
-The following example previews Kendo UI components which are styled with the Material theme.
-{% endplatform_content %}
-{% platform_content react %}
-You can apply the Material theme to all Kendo UI for React examples, which demonstrate the behavior of a component, by selecting the theme from the theme-chooser at the top-right corner of the page.
-{% endplatform_content %}
-
-{% platform_content angular %}
-{% theme_preview theme:material %}
-<script async src="{% asset_path theme-preview.js %}"></script>
-{% endplatform_content %}
-{% platform_content vue %}
-{% theme_preview theme:material %}
-<script async src="{% asset_path vue-theme-preview.js %}"></script>
-{% endplatform_content %}
+To preview the Material theme, use the theme chooser at the top-right corner of the page and apply the theme to any of the examples on this website.
 
 ## Suggested Links
 

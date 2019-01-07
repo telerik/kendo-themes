@@ -93,6 +93,15 @@ $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-bold: 500 !default;
 
+// Icons
+$icon-size: 16px !default;
+$icon-size-lg: 32px !default;
+$icon-spacing: 4px !default;
+
+/// The URL to the icon font that will be used by the theme
+/// The default value of `null` embeds the package font with a `data:` URL
+/// @group icons
+$icon-font-url: null !default;
 
 // Headings
 $h1-font-size: 24px !default;
@@ -180,7 +189,9 @@ $input-padding-y-sm: $input-padding-y / 2 !default;
 $input-line-height-sm: $form-line-height-sm !default;
 
 $input-inner-calc-size: #{$input-line-height * 1em} + #{$input-padding-y * 2};
-$input-calc-size: #{input-inner-calc-size} + 2px;
+$input-calc-size: #{$input-inner-calc-size} + #{$input-border-width * 2};
+
+$input-icon-offset: 4px !default;
 
 $textarea-padding-x: 10px !default;
 $textarea-padding-y: 15px !default;
@@ -188,10 +199,13 @@ $textarea-floating-label-padding: 25px !default;
 
 
 // Pickers
-$picker-button-border-width: 0 !default;
-$picker-button-padding-x: ($button-padding-y / 2) !default;
-$picker-button-padding-y: $button-padding-y !default;
+$picker-select-border-width: 0 !default;
+$picker-select-padding-x: ($button-padding-y / 2) !default;
+$picker-select-padding-y: $button-padding-y !default;
+$picker-select-line-height: $line-height !default;
 
+$picker-select-size: add-two($picker-select-padding-x * 2, $icon-size) !default;
+$picker-icon-offset: calc(#{$picker-select-size} + #{$input-icon-offset}) !default;
 
 // Toolbar
 $toolbar-border-width: 0 !default;
@@ -232,7 +246,7 @@ $cell-padding: 8px !default;
 $zindex-popup: 1;
 $zindex-window: 2;
 
-$rgba-transparent: rgba( 0, 0, 0, 0 );
+$rgba-transparent: rgba( $black, 0 );
 
 
 // Theme colors
@@ -275,19 +289,19 @@ $text-color: rgba(black, .87) !default;
 $bg-color: #ffffff !default;
 $border-color: rgba( black, .12 ) !default;
 
-/// The text color of the components' chrome area.
-$base-text: if($theme-type == dark, white, black) !default;
 /// The background of the components' chrome area.
-$base-bg: if($theme-type == dark, black, white) !default;
-
+$base-bg: map-get( $theme, base-bg ) !default;
+/// The text color of the components' chrome area.
+$base-text: $component-text !default;
+/// The border of the components' chrome area.
 $base-border: rgba( if($theme-type == dark, white, black), .08 ) !default;
 /// The gradient background of the components' chrome area.
 $base-gradient: null !default;
 
+/// The background of hovered items.
+$hovered-bg: map-get( $theme, hover-bg ) !default;
 /// The text color of hovered items.
 $hovered-text: $base-text !default;
-/// The background of hovered items.
-$hovered-bg: rgba( if($theme-type == dark, white, black), .07) !default;
 /// The border color of hovered items.
 $hovered-border: rgba( if($theme-type == dark, white, black), .15 ) !default;
 /// The gradient background of hovered items.
@@ -359,17 +373,6 @@ $header-selected-bg: $selected-bg !default;
 $header-selected-text: $selected-text !default;
 $header-selected-border: $selected-border !default;
 $header-selected-gradient: null !default;
-
-
-// Icons
-$icon-size: 16px !default;
-$icon-size-lg: ($icon-size * 2) !default;
-$icon-spacing: ($icon-size / 4) !default;
-
-/// The URL to the icon font that will be used by the theme
-/// The default value of `null` embeds the package font with a `data:` URL
-/// @group icons
-$icon-font-url: null !default;
 
 
 // Button
@@ -606,7 +609,7 @@ $grid-header-text: if($theme-type == dark, $light-secondary-text, $dark-secondar
 $grid-header-border: $grid-border !default;
 $grid-header-gradient: null !default;
 
-// ZHEKOV TODO: we need this, so k-alt won't override it. When we remove k-alt, we can make this null.
+// TODO(ZHEKOV): we need this, so k-alt won't override it. When we remove k-alt, we can make this null.
 $grid-alt-bg: transparent !default;
 $grid-alt-text: null !default;
 $grid-alt-border: null !default;
@@ -734,7 +737,7 @@ $notification-error-text: contrast-wcag( $notification-error-bg ) !default;
 
 // Link
 $link-text: $secondary !default;
-$link-hover-text: desaturate(darken($secondary, 5), 25) !default;
+$link-hover-text: $secondary-darker !default;
 
 
 // Chart
@@ -777,6 +780,7 @@ $chart-minor-lines: rgba(0, 0, 0, .04) !default;
 
 $chart-area-opacity: .8 !default;
 
+$chart-bg: $widget-bg !default;
 
 // Disabled mixin variables
 $disabled-filter: grayscale(.1) !default;
@@ -811,7 +815,16 @@ $pager-number-selected-bg: $primary !default;
 $pager-number-selected-text: $primary-contrast !default;
 $pager-number-selected-border: null !default;
 
+$pager-numbers-position: calc(
+    #{add-three( 2 * $button-border-width, 2 * $button-padding-y, $button-line-height * 1em, 2)} +
+    #{1.5 * $pager-padding-x}
+) !default;
 
+$pager-numbers-margin: calc(
+    #{add-three( 2 * $button-border-width, 2 * $button-padding-y, $button-line-height * 1em, 2)} +
+    #{$pager-padding-x} +
+    #{2 * $button-border-width}
+) !default;
 
 
 // Card
@@ -872,7 +885,7 @@ $calendar-cell-border-radius: 100px !default;
 
 $calendar-header-cell-padding-x: 0 !default;
 $calendar-header-cell-padding-y: ($calendar-cell-padding-y / 2) !default;
-$calendar-header-cell-font-size: inherit !default;
+$calendar-header-cell-font-size: $font-size-sm !default;
 $calendar-header-cell-line-height: 2 !default;
 
 $calendar-header-height: 2em !default;
@@ -895,6 +908,17 @@ $calendar-header-text: $header-text !default;
 $calendar-header-border: $header-border !default;
 $calendar-header-gradient: null !default;
 $calendar-header-shadow: null !default;
+
+$calendar-header-button-hovered-bg: $button-hovered-bg !default;
+$calendar-header-button-hovered-text: $button-hovered-text !default;
+$calendar-header-button-hovered-border: $button-hovered-border !default;
+$calendar-header-button-hovered-gradient: $button-hovered-gradient !default;
+
+$calendar-header-button-pressed-bg: true-mix( $button-text, $button-bg, 16%) !default;
+$calendar-header-button-pressed-text: $button-pressed-text !default;
+$calendar-header-button-pressed-border: $button-pressed-border !default;
+$calendar-header-button-pressed-gradient: $button-pressed-gradient !default;
+$calendar-header-button-pressed-shadow: null !default;
 
 $calendar-header-cell-text: $calendar-header-text !default;
 $calendar-header-cell-opacity: .38 !default;
@@ -933,7 +957,7 @@ $multiviewcalendar-button-style: detached !default;
 $multiviewcalendar-button-size: 40px !default;
 $multiviewcalendar-gap: ($calendar-content-padding-x * 2) !default;
 $multiviewcalendar-content-padding-x: ($multiviewcalendar-gap / 2);
-$multiviewcalendar-content-padding-y: $calendar-content-padding-y;
+$multiviewcalendar-content-padding-y: 0;
 
 
 // Chat
@@ -1005,7 +1029,7 @@ $mediaplayer-toolbar-text: $toolbar-text !default;
 
 // Tooltip
 $tooltip-bg: material-color( grey, 700, .9 ) !default;
-$tooltip-text: contrast-wcag( $tooltip-bg ) !default;
+$tooltip-text: get-base-contrast( grey, 700 ) !default;
 
 
 // Progressbar
@@ -1026,7 +1050,7 @@ $progressbar-indeterminate-text: $progressbar-text !default;
 $progressbar-indeterminate-border: $progressbar-border !default;
 $progressbar-indeterminate-gradient: null !default;
 
-$progressbar-chunk-border: $bg-color !default;
+$progressbar-chunk-border: $component-bg !default;
 
 
 
@@ -1056,6 +1080,13 @@ $window-titlebar-border: null !default;
 $window-shadow: $box-shadow-depth-4 !default;
 $window-focused-shadow: $box-shadow-depth-5 !default;
 
+$window-sizes: () !default;
+$window-sizes: map-merge((
+    sm: 300px,
+    md: 800px,
+    lg: 1200px
+), $window-sizes);
+
 
 // DateTime
 
@@ -1064,6 +1095,41 @@ $time-list-focused-bg: null !default;
 $time-list-title-focus: null !default;
 
 $time-header-padding: null !default;
+
+
+// Dialog
+$dialog-buttongroup-padding-x: 8px !default;
+$dialog-buttongroup-padding-y: 8px !default;
+$dialog-buttongroup-border-width: 0 !default;
+
+$dialog-button-gap: 8px !default;
+
+$dialog-stretched-button-padding-x: 8px !default;
+$dialog-stretched-button-padding-y: $button-padding-y !default;
+$dialog-stretched-button-border-width: 0 !default;
+
+
+// Scrollview
+$scrollview-pagebutton-size: 8px !default;
+$scrollview-pagebutton-bg: rgba(black, .4) !default;
+$scrollview-pagebutton-border: null !default;
+$scrollview-pagebutton-primary-bg: $primary-button-bg !default;
+$scrollview-pagebutton-primary-border: null !default;
+$scrollview-pagebutton-shadow: 0 0 2px rgba(0, 0, 0, .08) !default;
+
+$scrollview-pager-offset: 20px !default;
+$scrollview-pager-item-spacing: 8px !default;
+$scrollview-pager-item-border-width: 0 !default;
+$scrollview-pager-height: add-three($scrollview-pagebutton-size, 2 * $scrollview-pager-item-border-width, $scrollview-pager-item-spacing / 2 ) !default;
+
+$scrollview-arrow-icon-size: 4.5em !default;
+$scrollview-arrow-tap-highlight-color: $rgba-transparent !default;
+$scrollview-navigation-color: $base-text !default;
+$scrollview-navigation-icon-shadow: rgba(0, 0, 0, .3) 0 0 15px !default;
+$scrollview-navigation-background: rgba(0, 0, 0, 0) !default;
+$scrollview-navigation-default-opacity: .7 !default;
+$scrollview-navigation-hover-opacity: 1 !default;
+$scrollview-navigation-hover-span-bg: rgba($base-bg, .4) !default;
 
 
 // Config maps
