@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.18.0"></a>
+# 2.18.0 (2019-01-07)
+
+
+### Bug Fixes
+
+* improve clear icon position in dropdowns and pickers ([f83db0f](https://github.com/telerik/kendo-themes/commit/f83db0f))
+* **calendar:** remove material header buttons shadow ([1396eec](https://github.com/telerik/kendo-themes/commit/1396eec))
+* **dialog:** improve button layouts ([37c988d](https://github.com/telerik/kendo-themes/commit/37c988d))
+* **grid:** drag clue styles improvements [#252](https://github.com/telerik/kendo-themes/issues/252) ([780ff12](https://github.com/telerik/kendo-themes/commit/780ff12))
+* **grid:** filter menu buttons margin and borders ([471c5b2](https://github.com/telerik/kendo-themes/commit/471c5b2))
+* **scrollview:** trigger build ([a209ce2](https://github.com/telerik/kendo-themes/commit/a209ce2))
+* **window:** window actions are not properly aligned in IE ([c2f6f6b](https://github.com/telerik/kendo-themes/commit/c2f6f6b))
+
+
+### Features
+
+* add predefined widths for Window and Dialog ([18cab9c](https://github.com/telerik/kendo-themes/commit/18cab9c))
+* responsive pager jQuery ([9baeefc](https://github.com/telerik/kendo-themes/commit/9baeefc))
+
+
+
+
 <a name="2.17.1"></a>
 ## [2.17.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@2.17.0...@progress/kendo-theme-bootstrap@2.17.1) (2018-12-07)
 

@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.6.0"></a>
+# 1.6.0 (2019-01-07)
+
+
+### Bug Fixes
+
+* improve clear icon position in dropdowns and pickers ([f83db0f](https://github.com/telerik/kendo-themes/commit/f83db0f))
+* **calendar:** remove material header buttons shadow ([1396eec](https://github.com/telerik/kendo-themes/commit/1396eec))
+* **dialog:** improve button layouts ([37c988d](https://github.com/telerik/kendo-themes/commit/37c988d))
+* **grid:** drag clue styles improvements [#252](https://github.com/telerik/kendo-themes/issues/252) ([780ff12](https://github.com/telerik/kendo-themes/commit/780ff12))
+* **material:** dates in century view calendar are not aligned ([44c2883](https://github.com/telerik/kendo-themes/commit/44c2883))
+* **multiviewcalendar:** add styles for month headers ([a6b473a](https://github.com/telerik/kendo-themes/commit/a6b473a))
+
+
+### Features
+
+* add predefined widths for Window and Dialog ([18cab9c](https://github.com/telerik/kendo-themes/commit/18cab9c))
+* integrate material theme with themebuilder ([c4eac63](https://github.com/telerik/kendo-themes/commit/c4eac63))
+* responsive pager jQuery ([9baeefc](https://github.com/telerik/kendo-themes/commit/9baeefc))
+
+
+
+
 <a name="1.5.2"></a>
 ## [1.5.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.5.1...@progress/kendo-theme-material@1.5.2) (2018-12-07)
 
