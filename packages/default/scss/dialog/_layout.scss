@@ -104,6 +104,7 @@
 
             .k-rtl &,
             [dir='rtl'] & {
+                margin: 0;
                 border-left-width: 0;
                 border-right-width: $dialog-stretched-button-border-width;
             }
