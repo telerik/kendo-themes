@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.6.0...@progress/kendo-theme-material@2.0.0) (2019-01-08)
+
+
+### Features
+
+* **switch:** improvements based on the latest design ([2a1dcec](https://github.com/telerik/kendo-themes/commit/2a1dcec))
+
+
+### BREAKING CHANGES
+
+* **switch:** Improve switch rendering and remove javascript animations
+
+
+
+
 <a name="1.6.0"></a>
 # 1.6.0 (2019-01-07)
 
