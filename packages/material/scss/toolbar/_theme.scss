@@ -68,6 +68,12 @@ $toolbar-separator-padding-y: 0 !default;
                 .k-split-button-arrow {
                     border-left-color: transparent;
                 }
+
+                .k-button {
+                    @extend .k-button.k-flat;
+                    color: $button-disabled-text;
+                }
+
                 .k-button::before {
                     opacity: 0;
                 }
