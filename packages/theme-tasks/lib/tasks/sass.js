@@ -7,7 +7,7 @@ const path = require("path");
 const fs = require("fs");
 const mime = require("mime");
 const sass = require("gulp-sass");
-const nodeSassPackageImporter = require("../utils/nodesass-packageimporter");
+const { slowPackageImporter, fastPackageImporter } = require("../utils/nodesass-packageimporter");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const calc = require("postcss-calc");
@@ -21,10 +21,15 @@ const postcssPlugins = [
         browsers: browsers
     })
 ];
-const sassOptions = {
+const fastSassOptions = {
     precision: 10,
     outputStyle: "compressed",
-    importer: nodeSassPackageImporter
+    importer: fastPackageImporter
+};
+const slowSassOptions = {
+    precision: 10,
+    outputStyle: "compressed",
+    importer: slowPackageImporter
 };
 
 
@@ -33,7 +38,15 @@ function build(glob) {
     let _glob = glob || paths.sass.src;
 
     return gulp.src(_glob)
-        .pipe(sass(sassOptions).on("error", sass.logError))
+        .pipe(sass(fastSassOptions).on("error", sass.logError))
+        .pipe(postcss(postcssPlugins))
+        .pipe(gulp.dest(paths.sass.dist));
+}
+function buildSlow(glob) {
+    let _glob = glob || paths.sass.src;
+
+    return gulp.src(_glob)
+        .pipe(sass(slowSassOptions).on("error", sass.logError))
         .pipe(postcss(postcssPlugins))
         .pipe(gulp.dest(paths.sass.dist));
 }
@@ -48,10 +61,10 @@ function theme() {
     return build(paths.sass.theme);
 }
 function watchtheme() {
-    gulp.watch(paths.sass.src, theme);
+    gulp.watch(paths.sass.src, () => buildSlow(paths.sass.theme) );
 }
 function swatches() {
-    return build(paths.sass.swatches);
+    return buildSlow(paths.sass.swatches);
 }
 // #endregion
 
