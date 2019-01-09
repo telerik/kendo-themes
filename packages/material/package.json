@@ -27,7 +27,7 @@
     "watch": "kendotheme build --watch",
     "swatches": "kendotheme build --swatches",
     "test": "npm run lint && npm run build && npm run api-check",
-    "prepublishOnly": "bash ./build/embed-dependencies '@progress/kendo-theme-default' && npm run build",
+    "prepublishOnly": "bash ./build/embed-dependencies '@progress/kendo-theme-default' && npm run build && npm run swatches",
     "postpublish": "rm -rf modules && git checkout scss"
   },
   "dependencies": {

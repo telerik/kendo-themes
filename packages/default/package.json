@@ -26,7 +26,8 @@
     "swatches": "kendotheme build --swatches",
     "embed-assets": "kendotheme assets",
     "test": "npm run lint && npm run build && npm run api-check",
-    "twbs-compat": "kendotheme build --file ./build/twbs-compat.scss"
+    "twbs-compat": "kendotheme build --file ./build/twbs-compat.scss",
+    "prepublishOnly": "npm run build && npm run swatches"
   },
   "devDependencies": {
     "@progress/kendo-theme-tasks": "^0.1.1",
