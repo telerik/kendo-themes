@@ -2,30 +2,24 @@ const path = require("path");
 
 const EMPTY_IMPORT = {
     file: "",
-    contents: "",
+    contents: ""
 };
 
 const imported = new Set();
 
-module.exports = function(url, prev/*, done*/) {
+function fastPackageImporter(url) {
+
+    if (!url.startsWith("~")) {
+        return null;
+    }
+
     let file;
 
-    if (url.startsWith("~")) {
-        file = path.resolve(
-            path.join(
-                process.cwd(),
-                "node_modules/",
-                url.slice(1)
-            )
-        );
-    } else {
-        file = path.resolve(
-            path.join(
-                path.dirname(prev),
-                url
-            )
-        );
-    }
+    file = path.resolve( path.join(
+        process.cwd(),
+        "node_modules/",
+        url.slice(1)
+    ) );
 
     if (imported.has(file)) {
         return EMPTY_IMPORT;
@@ -37,4 +31,30 @@ module.exports = function(url, prev/*, done*/) {
         file: file
     };
 
+}
+
+function slowPackageImporter(url) {
+
+    if (!url.startsWith("~")) {
+        return null;
+    }
+
+    let file;
+
+    file = path.resolve( path.join(
+        process.cwd(),
+        "node_modules/",
+        url.slice(1)
+    ) );
+
+    return {
+        file: file
+    };
+
+}
+
+
+module.exports = {
+    slowPackageImporter,
+    fastPackageImporter
 };
