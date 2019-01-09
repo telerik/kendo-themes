@@ -11,7 +11,6 @@ const nodeSassPackageImporter = require("../utils/nodesass-packageimporter");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const calc = require("postcss-calc");
-const browserSync = require("browser-sync").create();
 const sassdoc = require('sassdoc');
 
 const postcssPlugins = [
@@ -27,12 +26,6 @@ const sassOptions = {
     outputStyle: "compressed",
     importer: nodeSassPackageImporter
 };
-const browserSyncOptions = {
-    server: {
-        baseDir: "./"
-    },
-    open: false
-};
 
 
 // #region core
@@ -42,8 +35,7 @@ function build(glob) {
     return gulp.src(_glob)
         .pipe(sass(sassOptions).on("error", sass.logError))
         .pipe(postcss(postcssPlugins))
-        .pipe(gulp.dest(paths.sass.dist))
-        .pipe(browserSync.stream({ match: "**/*.css" }));
+        .pipe(gulp.dest(paths.sass.dist));
 }
 function buildFile(file) {
     return build(file);
@@ -56,8 +48,6 @@ function theme() {
     return build(paths.sass.theme);
 }
 function watchtheme() {
-    browserSync.init(browserSyncOptions);
-
     gulp.watch(paths.sass.src, theme);
 }
 function swatches() {
