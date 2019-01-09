@@ -1012,6 +1012,13 @@ $time-list-title-focus: black !default;
 
 $time-header-padding: null !default;
 
+$time-list-padding: $padding-y * 5;
+$time-list-focus-size: 2px;
+$time-list-width: 5em !default;
+$time-list-height: 200px !default;
+
+$datetime-width: ((4 * $time-list-width) + 1em);
+
 
 // Dialog
 $dialog-buttongroup-padding-x: ($window-inner-padding-x / 2) !default;

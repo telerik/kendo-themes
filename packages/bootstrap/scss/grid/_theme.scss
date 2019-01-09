@@ -134,17 +134,3 @@
         border-color: inherit;
     }
 }
-
-@include exports( "filtermenu/theme" ) {
-
-    .k-filter-menu {
-
-        .k-filter-menu-container {
-
-            .k-action-buttons {
-                border-color: $popup-border;
-            }
-        }
-    }
-
-}
