@@ -17,11 +17,13 @@
     // Timepicker
     .k-timepicker {}
 
-    .k-timeselector {
+    .k-timeselector,
+    .k-datetime-wrap {
         border-color: inherit;
     }
 
-    .k-timeselector {
+    .k-timeselector,
+    .k-datetime-wrap {
         .k-time-header {
             padding: $padding-x-sm add-two($padding-x, 2px);
 

@@ -1096,6 +1096,13 @@ $time-list-title-focus: null !default;
 
 $time-header-padding: null !default;
 
+$time-list-padding: $padding-y * 5;
+$time-list-focus-size: 2px;
+$time-list-width: 5em !default;
+$time-list-height: 200px !default;
+
+$datetime-width: add-two($calendar-cell-size * 8, $calendar-content-padding-x * 2);
+
 
 // Dialog
 $dialog-buttongroup-padding-x: 8px !default;
