@@ -191,6 +191,12 @@ $calendar-today-color: $accent;
                 $calendar-range-bg calc(100% - #{$calendar-range-gap}),
                 transparent calc(100% - #{$calendar-range-gap})
             );
+
+            .k-ie &,
+            .k-edge & {
+                background-image: none;
+                background-color: $calendar-range-bg;
+            }
         }
 
         .k-range-start.k-range-end {
