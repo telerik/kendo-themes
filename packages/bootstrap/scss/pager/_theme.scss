@@ -19,7 +19,8 @@
             border-width: 1px;
             border-style: solid;
 
-            &:hover {
+            &:hover,
+            &.k-state-hover {
                 color: $pager-hover-text;
                 background-color: $pager-hover-bg;
                 border-color: $pager-hover-border;
