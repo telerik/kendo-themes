@@ -84,6 +84,11 @@
             }
         }
 
+        .k-grid-filter.k-state-active {
+            color: $accent-contrast;
+            background-color: $accent;
+        }
+
         thead > tr:not(:only-child) > th {
             border-left-color: $grid-border;
         }
