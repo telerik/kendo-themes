@@ -7,7 +7,7 @@ const path = require("path");
 const fs = require("fs");
 const mime = require("mime");
 const sass = require("gulp-sass");
-const { slowPackageImporter, fastPackageImporter } = require("../utils/nodesass-packageimporter");
+const packageImporterFactory = require("../utils/nodesass-packageimporter");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const calc = require("postcss-calc");
@@ -21,32 +21,21 @@ const postcssPlugins = [
         browsers: browsers
     })
 ];
-const fastSassOptions = {
+const quickSassOptions = {
     precision: 10,
     outputStyle: "compressed",
-    importer: fastPackageImporter
+    importer: packageImporterFactory({ cache: true })
 };
-const slowSassOptions = {
-    precision: 10,
-    outputStyle: "compressed",
-    importer: slowPackageImporter
+const fullSassOptions = {
+    ...quickSassOptions,
+    importer: packageImporterFactory({ cache: false })
 };
 
 
 // #region core
-function build(glob) {
-    let _glob = glob || paths.sass.src;
-
-    return gulp.src(_glob)
-        .pipe(sass(fastSassOptions).on("error", sass.logError))
-        .pipe(postcss(postcssPlugins))
-        .pipe(gulp.dest(paths.sass.dist));
-}
-function buildSlow(glob) {
-    let _glob = glob || paths.sass.src;
-
-    return gulp.src(_glob)
-        .pipe(sass(slowSassOptions).on("error", sass.logError))
+function build(fileGlob = paths.sass.src, options = quickSassOptions) {
+    return gulp.src(fileGlob)
+        .pipe(sass(options).on("error", sass.logError))
         .pipe(postcss(postcssPlugins))
         .pipe(gulp.dest(paths.sass.dist));
 }
@@ -61,10 +50,10 @@ function theme() {
     return build(paths.sass.theme);
 }
 function watchtheme() {
-    gulp.watch(paths.sass.src, () => buildSlow(paths.sass.theme) );
+    gulp.watch(paths.sass.src, () => build(paths.sass.theme, fullSassOptions) );
 }
 function swatches() {
-    return buildSlow(paths.sass.swatches);
+    return build(paths.sass.swatches, fullSassOptions);
 }
 // #endregion
 
@@ -113,7 +102,6 @@ function api() {
 
 
 module.exports = {
-    build,
     buildFile,
     theme,
     watchtheme,

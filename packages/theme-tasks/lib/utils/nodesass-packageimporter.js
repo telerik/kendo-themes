@@ -7,54 +7,27 @@ const EMPTY_IMPORT = {
 
 const imported = new Set();
 
-function fastPackageImporter(url) {
+function packageImporterFactory(options = { cache: false }) {
+    return function packageImporter(url) {
+        if (!url.startsWith("~")) {
+            return null;
+        }
 
-    if (!url.startsWith("~")) {
-        return null;
-    }
+        let file = path.resolve( path.join(
+            process.cwd(),
+            "node_modules/",
+            url.slice(1)
+        ) );
 
-    let file;
+        if (options.cache && imported.has(file)) {
+            return EMPTY_IMPORT;
+        }
 
-    file = path.resolve( path.join(
-        process.cwd(),
-        "node_modules/",
-        url.slice(1)
-    ) );
+        imported.add(file);
 
-    if (imported.has(file)) {
-        return EMPTY_IMPORT;
-    }
-
-    imported.add(file);
-
-    return {
-        file: file
+        return { file };
     };
-
-}
-
-function slowPackageImporter(url) {
-
-    if (!url.startsWith("~")) {
-        return null;
-    }
-
-    let file;
-
-    file = path.resolve( path.join(
-        process.cwd(),
-        "node_modules/",
-        url.slice(1)
-    ) );
-
-    return {
-        file: file
-    };
-
 }
 
 
-module.exports = {
-    slowPackageImporter,
-    fastPackageImporter
-};
+module.exports = packageImporterFactory;
