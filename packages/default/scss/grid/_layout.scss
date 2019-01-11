@@ -384,6 +384,7 @@
     // Grouping header
     .k-grouping-header {
         display: block;
+        position: relative;
         padding: $grid-grouping-header-padding-y $grid-grouping-header-padding-x;
         border-width: 0 0 1px;
         border-style: solid;
