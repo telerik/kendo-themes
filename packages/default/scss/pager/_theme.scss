@@ -53,7 +53,8 @@
                 $pager-number-border
             );
 
-            &:hover {
+            &:hover,
+            &.k-state-hover {
                 @include fill(
                     $pager-number-hovered-text,
                     $pager-number-hovered-bg,
