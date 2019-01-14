@@ -358,6 +358,12 @@ $popup-border: $component-border !default;
 $popup-shadow: 0 2px 4px -1px rgba( $elevation, .2 ), 0 4px 5px 0 rgba( $elevation, .14 ), 0 1px 10px 0 rgba( $elevation , .12 ) !default;
 
 
+// Grouping
+$grouping-header-text: rgba($base-text, .54) !default;
+$grouping-header-bg: $widget-border !default;
+$grouping-border: $grouping-header-bg !default;
+
+
 // Header
 $header-bg: $base-bg !default;
 $header-text: $base-text !default;
@@ -519,6 +525,9 @@ $list-item-selected-bg: $list-item-bg !default;
 $list-item-selected-text: $secondary !default;
 
 $list-item-focused-shadow: null !default;
+
+$list-container-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
+$list-container-no-data-text: rgba( $text-color, .5 ) !default;
 
 
 // Tabstrip
