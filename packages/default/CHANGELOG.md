@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@3.0.0...@progress/kendo-theme-default@3.1.0) (2019-01-14)
+
+
+### Bug Fixes
+
+* **grid:** Filter icon overlap header's text [#207](https://github.com/telerik/kendo-themes/issues/207) ([44b825c](https://github.com/telerik/kendo-themes/commit/44b825c))
+* **grid:** grouping header positioning ([43ea7e0](https://github.com/telerik/kendo-themes/commit/43ea7e0))
+* **multiviewcalendar:** background of range cells in IE and Edge ([8bf20fa](https://github.com/telerik/kendo-themes/commit/8bf20fa))
+* **pager:** hover bg color ([bda7b56](https://github.com/telerik/kendo-themes/commit/bda7b56))
+
+
+### Features
+
+* add prebuilt swatches to npm package ([5962540](https://github.com/telerik/kendo-themes/commit/5962540)), closes [#36](https://github.com/telerik/kendo-themes/issues/36)
+
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@2.63.0...@progress/kendo-theme-default@3.0.0) (2019-01-08)
 

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@2.0.0...@progress/kendo-theme-material@2.1.0) (2019-01-14)
+
+
+### Bug Fixes
+
+* **grid:** filter button active state color ([02e1697](https://github.com/telerik/kendo-themes/commit/02e1697))
+* **toolbar:** disabled splitbutton has unexpected background in material [#198](https://github.com/telerik/kendo-themes/issues/198) ([b2c1693](https://github.com/telerik/kendo-themes/commit/b2c1693))
+
+
+### Features
+
+* add prebuilt swatches to npm package ([5962540](https://github.com/telerik/kendo-themes/commit/5962540)), closes [#36](https://github.com/telerik/kendo-themes/issues/36)
+
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@1.6.0...@progress/kendo-theme-material@2.0.0) (2019-01-08)
 
