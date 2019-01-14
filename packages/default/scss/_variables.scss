@@ -287,6 +287,12 @@ $popup-border: $base-border !default;
 $popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
 
+// Grouping
+$grouping-header-text: $bg-color !default;
+$grouping-header-bg: $text-color !default;
+$grouping-border: $border-color !default;
+
+
 // Header
 $header-text: $base-text !default;
 $header-bg: $base-bg !default;
@@ -443,6 +449,8 @@ $list-item-selected-bg: $selected-bg !default;
 
 $list-item-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
+$list-container-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
+$list-container-no-data-text: rgba( $text-color, .5 ) !default;
 
 // Tabstrip
 $tabstrip-wrapper-padding-x: 0 !default;
