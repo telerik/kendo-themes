@@ -57,6 +57,7 @@ $scheduler-event-border-radius: 2px;
             border-bottom-style: dotted;
         }
     }
+
     %ul-button-group {
         display: flex;
         flex-direction: row;
@@ -115,6 +116,15 @@ $scheduler-event-border-radius: 2px;
     .k-scheduler-toolbar { border-bottom-width: 1px; }
     .k-scheduler-footer { border-top-width: 1px; }
 
+    // TODO: add this class to jQuery rendering
+    // after refactoring jQuery scheduler layout to be flex
+    .k-recurrence-editor {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    kendo-scheduler .k-recurrence-editor {
+        display: block;
+    }
 
     // Scheduler navigation
     .k-scheduler-navigation {
