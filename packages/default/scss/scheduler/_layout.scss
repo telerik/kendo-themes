@@ -260,6 +260,13 @@ $scheduler-event-border-radius: 2px;
 
             .k-scheduler-header-wrap { border-width: 0; }
         }
+
+        &.k-scheduler-weekview,
+        &.k-scheduler-dayview {
+            .k-scheduler-pane:first-child .k-scheduler-table {
+                table-layout: fixed;
+            }
+        }
     }
 
     .k-scheduler-header,
