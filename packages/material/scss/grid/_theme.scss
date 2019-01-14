@@ -162,4 +162,24 @@
     .k-columnmenu-actions .k-button {
         box-shadow: none;
     }
+
+    .k-column-menu .k-menu:not(.k-context-menu) {
+
+        .k-item {
+            & > .k-link::before {
+                content: none;
+            }
+
+            // Selected state
+            &.k-state-selected {
+                background: $list-item-hovered-bg;
+            }
+        }
+
+        &.k-menu-vertical {
+            & > .k-item + .k-item {
+                margin-top: 0;
+            }
+        }
+    }
 }
