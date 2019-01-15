@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@2.1.0...@progress/kendo-theme-material@2.2.0) (2019-01-15)
+
+
+### Bug Fixes
+
+* **popup:** group header styles ([7032efe](https://github.com/telerik/kendo-themes/commit/7032efe))
+
+
+### Features
+
+* **datetimepicker:** add styles for kendo-react ([1aea521](https://github.com/telerik/kendo-themes/commit/1aea521))
+
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@2.0.0...@progress/kendo-theme-material@2.1.0) (2019-01-14)
 
