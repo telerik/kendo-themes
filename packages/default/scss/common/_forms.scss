@@ -123,6 +123,10 @@ $forms-invalid-color: $error !default;
 
         .k-input {
             width: 100%;
+
+            .k-edge & {
+                min-width: 0;
+            }
         }
 
         .k-select {
