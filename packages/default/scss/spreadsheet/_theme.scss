@@ -131,7 +131,8 @@
     // Filter menu
     .k-spreadsheet-filter-menu {
 
-        > .k-menu {
+        > .k-menu,
+        > .k-menu:not(.k-context-menu) {
 
             .k-item.k-state-hover {
                 @include appearance( hovered-list-item );

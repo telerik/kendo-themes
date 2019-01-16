@@ -549,7 +549,8 @@
             position: relative;
         }
 
-        > .k-menu {
+        > .k-menu,
+        > .k-menu.k-menu-vertical {
             border-width: 0;
 
             .k-item {
