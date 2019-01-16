@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Spreadsheet</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <script src="https://kendo.cdn.telerik.com/2018.2.620/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2018.2.620/js/kendo.all.min.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .k-animation-container,
+        .k-popup {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area">
+
+        <div class="k-animation-container" style="overflow: visible;">
+            <div data-role="filtermenu" class="k-spreadsheet-filter-menu k-popup k-group k-reset k-state-border-up">
+                <ul data-role="menu" class="k-widget k-reset k-header k-menu k-menu-vertical" role="menubar">
+                    <li data-command="sort" data-dir="asc" class="k-item k-state-default k-first" role="menuitem">
+                        <span class="k-link k-menu-link"><span class="k-icon k-i-sort-asc"></span>Sort range A to Z</span>
+                    </li>
+                    <li data-command="sort" data-dir="desc" class="k-item k-state-default k-last k-state-hover" role="menuitem">
+                        <span class="k-link k-menu-link"><span class="k-icon k-i-sort-desc"></span>Sort range Z to A</span>
+                    </li>
+                </ul>
+                <div class="k-spreadsheet-condition-filter k-details" data-role="details">
+                    <div class="k-details-summary">
+                        <span class="k-icon k-i-arrow-60-right"></span>Filter by condition
+                    </div>
+                </div>
+                <div class="k-spreadsheet-value-filter k-details" data-role="details">
+                    <div class="k-details-summary">
+                        <span class="k-icon k-i-arrow-45-down-right"></span>Filter by value
+                    </div>
+                    <div class="k-animation-container">
+                        <div class="k-details-content">
+                            <div class="k-textbox k-space-right">
+                                <input placeholder="Search" data-bind="events: { input: filterValues }">
+                                <span class="k-icon k-i-zoom"></span>
+                            </div>
+                            <div class="k-spreadsheet-value-treeview-wrapper">
+                                <div data-role="treeview" data-checkboxes="{ checkChildren: true }" data-bind="source: valuesDataSource, events: { check: valuesChange, select: valueSelect }" class="k-widget k-treeview">
+                                    <ul class="k-group k-treeview-lines" role="tree">
+                                        <li role="treeitem" class="k-item k-first k-last">
+                                            <div class="k-top k-bot"><span class="k-icon k-i-collapse"></span>
+                                                <span class="k-checkbox-wrapper" role="presentation">
+                                                    <input type="checkbox" class="k-checkbox">
+                                                    <span class="k-checkbox-label checkbox-span"></span>
+                                                </span>
+                                                <span class="k-in">All</span>
+                                            </div>
+                                            <ul class="k-group" role="group" style="display: block;">
+                                                <li role="treeitem" class="k-item">
+                                                    <div class="k-top">
+                                                        <span class="k-checkbox-wrapper" role="presentation">
+                                                            <input type="checkbox" checked="" class="k-checkbox">
+                                                            <span class="k-checkbox-label checkbox-span"></span>
+                                                        </span>
+                                                        <span class="k-in">$14.87</span>
+                                                    </div>
+                                                </li>
+                                                <li role="treeitem" class="k-item">
+                                                    <div class="k-mid">
+                                                        <span class="k-checkbox-wrapper" role="presentation">
+                                                            <input type="checkbox" class="k-checkbox">
+                                                            <span class="k-checkbox-label checkbox-span"></span>
+                                                        </span>
+                                                        <span class="k-in">$21.10</span>
+                                                    </div>
+                                                </li>
+                                                <li role="treeitem" class="k-item">
+                                                    <div class="k-mid">
+                                                        <span class="k-checkbox-wrapper" role="presentation">
+                                                            <input type="checkbox" class="k-checkbox">
+                                                            <span class="k-checkbox-label checkbox-span"></span>
+                                                        </span>
+                                                        <span class="k-in">$16.79</span>
+                                                    </div>
+                                                </li>
+                                                <li role="treeitem" class="k-item">
+                                                    <div class="k-mid">
+                                                        <span class="k-checkbox-wrapper" role="presentation">
+                                                            <input type="checkbox" class="k-checkbox">
+                                                            <span class="k-checkbox-label checkbox-span"></span>
+                                                        </span>
+                                                        <span class="k-in">$11.39</span>
+                                                    </div>
+                                                </li>
+                                                <li role="treeitem" class="k-item">
+                                                    <div class="k-mid">
+                                                        <span class="k-checkbox-wrapper" role="presentation">
+                                                            <input type="checkbox" class="k-checkbox">
+                                                            <span class="k-checkbox-label checkbox-span"></span>
+                                                        </span>
+                                                        <span class="k-in">$41.36</span>
+                                                    </div>
+                                                </li>
+                                                <li role="treeitem" class="k-item">
+                                                    <div class="k-mid">
+                                                        <span class="k-checkbox-wrapper" role="presentation">
+                                                            <input type="checkbox" class="k-checkbox">
+                                                            <span class="k-checkbox-label checkbox-span"></span>
+                                                        </span>
+                                                        <span class="k-in">$13.19</span>
+                                                    </div>
+                                                </li>
+                                                <li role="treeitem" class="k-item">
+                                                    <div class="k-mid">
+                                                        <span class="k-checkbox-wrapper" role="presentation">
+                                                            <input type="checkbox" class="k-checkbox">
+                                                            <span class="k-checkbox-label checkbox-span"></span>
+                                                        </span>
+                                                        <span class="k-in">$41.94</span>
+                                                    </div>
+                                                </li>
+                                                <li role="treeitem" class="k-item">
+                                                    <div class="k-mid">
+                                                        <span class="k-checkbox-wrapper" role="presentation"><input type="checkbox"  class="k-checkbox">
+                                                            <span class="k-checkbox-label checkbox-span"></span>
+                                                        </span>
+                                                        <span class="k-in">$23.95</span>
+                                                    </div>
+                                                </li>
+                                                <li role="treeitem" class="k-item k-last">
+                                                    <div class="k-bot">
+                                                        <span class="k-checkbox-wrapper" role="presentation">
+                                                            <input type="checkbox" class="k-checkbox">
+                                                            <span class="k-checkbox-label checkbox-span"></span>
+                                                        </span>
+                                                        <span class="k-in">$16.16</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-action-buttons">
+                    <button data-bind="click: apply" class="k-button k-primary">Apply</button>
+                    <button data-bind="click: clear" class="k-button">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
