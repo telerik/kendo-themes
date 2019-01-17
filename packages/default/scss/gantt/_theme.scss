@@ -24,8 +24,15 @@
         li {
             @include appearance( button );
 
-            &.k-state-hover { @include appearance( hovered-button ); }
-            &.k-state-selected { @include fill( $selected-text, $selected-bg, $selected-border, none ); }
+            &.k-state-hover {
+                @include appearance( hovered-button );
+            }
+            &.k-state-selected {
+                @include fill( $selected-text, $selected-bg, $selected-border, none );
+            }
+            &.k-state-focused {
+                @include appearance( focused-list-item );
+            }
         }
         li:first-child { @include border-radius(); }
         li:first-child + li { @include border-left-radius-only(); }
