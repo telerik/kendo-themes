@@ -38,7 +38,9 @@
         li.k-state-selected a::before {
             @include opacity( $flat-button-selected-opacity );
         }
-
+        li.k-state-focused a::before {
+            @include opacity( $flat-button-focused-opacity );
+        }
 
         &.k-state-expanded {
             li {

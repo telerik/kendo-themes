@@ -70,8 +70,15 @@ $scheduler-event-text: #fff !default;
                 background-clip: border-box;
             }
 
-            &:hover { @include appearance( hovered-button ); }
-            &.k-state-selected { @include fill( $selected-text, $selected-bg, $selected-border, none ); }
+            &:hover {
+                @include appearance( hovered-button );
+            }
+            &.k-state-selected {
+                @include fill( $selected-text, $selected-bg, $selected-border, none );
+            }
+            &.k-state-focused {
+                @include appearance( focused-list-item );
+            }
         }
     }
 
