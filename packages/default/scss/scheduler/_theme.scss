@@ -1,10 +1,3 @@
-// TODO: modal header variables
-$modal-header-border-color: #cccccc;
-
-$scheduler-event-bg: #848484 !default;
-$scheduler-event-text: #fff !default;
-
-
 @include exports("scheduler/theme") {
 
     // Appearance
@@ -117,13 +110,27 @@ $scheduler-event-text: #fff !default;
 
 
     // Events
+    .k-scheduler .k-event,
     .k-event {
         background-color: $scheduler-event-bg;
         color: $scheduler-event-text;
+
+        &::before {
+            display: block;
+            left: 3px;
+            opacity: 0.35;
+            background-color: $scheduler-event-text;
+        }
+
+        &.k-state-selected {
+            box-shadow: $scheduler-event-selected-box-shadow;
+
+            &::before {
+                display: none;
+            }
+        }
     }
-    .k-event.k-state-selected {
-        @include appearance( selected-node );
-    }
+
     .k-event-inverse {
         color: $panel-text;
     }

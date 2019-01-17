@@ -1151,9 +1151,22 @@ $switch-off-handle-hovered-gradient: null !default;
 // Editor
 $editor-overlay-background: #000 !default;
 
+// Scheduler
+$scheduler-event-border-radius: $border-radius !default;
+
+$scheduler-event-border: $accent !default;
+$scheduler-event-bg: $selected-bg !default;
+$scheduler-event-text: $selected-text !default;
+
+$scheduler-event-selected-box-shadow: null !default;
+
 $scheduler-cell-height: $line-height-em;
 $scheduler-datecolumn-width: 12em;
 $scheduler-timecolumn-width: 11em;
+
+$modal-header-border-color: #cccccc;
+$modal-inner-padding: 1em;
+
 
 // Config maps
 $typography-config: () !default;

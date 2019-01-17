@@ -1,6 +1,3 @@
-$scheduler-event-bg: $primary !default;
-$scheduler-event-text: $primary-contrast !default;
-
 @include exports("scheduler/theme/material") {
 
     // Appearance
@@ -45,18 +42,35 @@ $scheduler-event-text: $primary-contrast !default;
         background-color: $scheduler-event-bg;
         color: $scheduler-event-text;
 
-        .k-event-actions .k-link {
-            color: $scheduler-event-bg;
-            background-color: $scheduler-event-text;
+        .k-event-template {
+            padding: $padding-y-sm $padding-x-sm;
+        }
+
+        .k-event-actions {
+            right: $padding-x-sm;
+
+            .k-link {
+                color: $scheduler-event-bg;
+                background-color: $scheduler-event-text;
+            }
         }
 
         .k-resize-handle::before {
             // TODO: $scheduler-content-area-bg
             background-color: $primary-contrast;
         }
-    }
-    .k-event.k-state-selected {
-        @include appearance( selected-node );
+
+        &.k-state-selected {
+            box-shadow: $scheduler-event-selected-box-shadow;
+
+            &::before {
+                display: block;
+                background-color: currentColor;
+                opacity: 0.12;
+            }
+        }
+
+
     }
     .k-event-inverse {
         color: $panel-text;
