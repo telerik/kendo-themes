@@ -1,7 +1,4 @@
 // TODO: modal variables
-$modal-inner-padding: 1em;
-$scheduler-event-border-radius: 2px;
-
 @include exports("scheduler/layout") {
 
     // Layout
@@ -346,18 +343,34 @@ $scheduler-event-border-radius: 2px;
         @include border-radius();
         min-height: $line-height-em;
         box-sizing: border-box;
-        border-width: 1px;
+        border-width: 0;
         border-style: solid;
         border-radius: $scheduler-event-border-radius;
         text-align: left;
         cursor: default;
         position: absolute;
         overflow: hidden;
+        padding-right: $padding-x;
 
+        &::before {
+            content: '';
+            position: absolute;
+            display: none;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        > div {
+            position: relative;
+            z-index: 2;
+        }
 
         // Template
         .k-event-template {
-            padding: $padding-y-sm $padding-x-sm;
+            padding: $padding-y $padding-x;
             // TODO: incompatible units
             // padding-right: $padding-x-sm + $spacer;
         }
@@ -374,9 +387,15 @@ $scheduler-event-border-radius: 2px;
             white-space: nowrap;
             position: absolute;
             top: $padding-y-sm;
-            right: $padding-y-sm;
+            right: $padding-x;
             opacity: .5;
             visibility: hidden;
+            z-index: 2;
+
+            &:hover,
+            &.k-state-hover {
+                opacity: 1;
+            }
 
             a { color: inherit; }
         }
@@ -385,8 +404,10 @@ $scheduler-event-border-radius: 2px;
         // Indicators
         .k-event-actions:first-child {
             margin: $padding-y-sm .4ex 0 $padding-x-sm;
+            top: 0;
+            right: 0;
             float: left;
-            position: static;
+            position: relative;
             opacity: 1;
             visibility: visible;
         }
@@ -428,7 +449,8 @@ $scheduler-event-border-radius: 2px;
 
 
         // Hover
-        &:hover {
+        &:hover,
+        &.k-state-hover {
             .k-event-actions,
             .k-resize-handle {
                 visibility: visible;

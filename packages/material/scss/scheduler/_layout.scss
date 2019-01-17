@@ -89,11 +89,15 @@
     .k-event {
         .k-event-delete {
             border-radius: 50%;
+            display: inline-block;
+            font-size: $font-size-sm;
+            line-height: normal;
 
             .k-icon {
                 font-size: $font-size-sm;
                 padding: add-two($font-size, -$font-size-sm);
                 box-sizing: content-box;
+                vertical-align: unset;
             }
         }
 
@@ -117,12 +121,10 @@
         }
         .k-resize-e::before {
             width: $handle-size;
-            align-self: flex-start;
             border-radius: 0 $handle-half-size $handle-half-size 0;
         }
         .k-resize-w::before {
             width: $handle-size;
-            align-self: flex-end;
             border-radius: $handle-half-size 0 0 $handle-half-size;
         }
     }
