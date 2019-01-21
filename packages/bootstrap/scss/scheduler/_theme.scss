@@ -23,6 +23,12 @@
         }
         .k-nav-today { @include border-radius( $border-radius 0 0 $border-radius ); }
         .k-nav-next { @include border-radius( 0 $border-radius $border-radius 0 ); }
+
+        li {
+            &.k-state-focused {
+                @include appearance( focused-button );
+            }
+        }
     }
 
 

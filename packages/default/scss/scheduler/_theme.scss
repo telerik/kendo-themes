@@ -44,6 +44,10 @@ $scheduler-event-text: #fff !default;
             .k-edge13 & {
                 background-clip: border-box;
             }
+
+            &.k-state-focused {
+                @include appearance( focused-list-item );
+            }
         }
 
         .k-nav-today,
