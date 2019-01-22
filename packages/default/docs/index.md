@@ -21,9 +21,10 @@ The Kendo UI Default theme is available through the @progress/kendo-theme-defaul
 
 ## Preview
 
-To preview the Default theme, use the theme chooser at the top-right corner of the page and apply the theme to any of the examples on this website.
+To apply the Default theme to any of the examples on this website, use the theme chooser at the top-right corner of the page. To simultaneously preview multiple components from different packages, to build your own theme, or to customize any of the available Kendo UI ones, use the capabilities of the [Kendo UI Theme Builder]({% slug https://themebuilder.telerik.com/ %}) web application.
 
 ## Suggested Links
 
 * [Styling the Kendo UI Components]({% slug themesandstyles %})
 * [Kendo UI Font Icons]({% slug icons %})
+* [Kendo UI Theme Builder](https://themebuilder.telerik.com/)
