@@ -54,7 +54,7 @@ The following additional configuration improves the look and feel of the theme i
 
 ## Preview
 
-To preview the Material theme, use the theme chooser at the top-right corner of the page and apply the theme to any of the examples on this website.
+To apply the Material theme to any of the examples on this website, use the theme chooser at the top-right corner of the page. To simultaneously preview multiple components from different packages, to build your own theme, or to customize any of the available Kendo UI ones, use the capabilities of the [Kendo UI Theme Builder]({% slug https://themebuilder.telerik.com/ %}) web application.
 
 ## Suggested Links
 
@@ -62,14 +62,21 @@ To preview the Material theme, use the theme chooser at the top-right corner of 
 * [Material Design Guidelines](https://material.io/guidelines/)
 * [Kendo UI Ripple for Angular]({% slug overview_ripple %})
 * [Kendo UI TextBox for Angular]({% slug overview_textbox %})
+* [Kendo UI Theme Builder](https://themebuilder.telerik.com/)
+* [Styling the Kendo UI Components]({% slug themesandstyles %})
+* [Kendo UI Font Icons]({% slug icons %})
 {% endplatform_content %}
 
 {% platform_content react %}
 * [Material Design Guidelines](https://material.io/guidelines/)
 * [Kendo UI Ripple for React]({% slug overview_ripple %})
+* [Kendo UI Theme Builder](https://themebuilder.telerik.com/)
+* [Styling the Kendo UI Components]({% slug themesandstyles %})
+* [Kendo UI Font Icons]({% slug icons %})
 {% endplatform_content %}
 
 {% platform_content vue %}
+* [Kendo UI Theme Builder](https://themebuilder.telerik.com/)
 * [Styling the Kendo UI Components]({% slug themesandstyles %})
 * [Kendo UI Font Icons]({% slug icons %})
 {% endplatform_content %}
