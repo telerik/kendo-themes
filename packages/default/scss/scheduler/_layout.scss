@@ -279,6 +279,10 @@ $scheduler-event-border-radius: 2px;
         }
     }
 
+    .k-scheduler-header th {
+        text-align: center;
+    }
+
     .k-scheduler-header,
     .k-scheduler-header-wrap,
     .k-scheduler-header-wrap > div {
