@@ -430,6 +430,10 @@ $scheduler-event-border-radius: 2px;
                 visibility: visible;
             }
         }
+
+        &.k-event-drag-hint .k-event-time {
+            display: block;
+        }
     }
 
 
