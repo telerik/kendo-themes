@@ -11,6 +11,10 @@ The Kendo UI Material theme is available through the @progress/kendo-theme-mater
 
 ## Installation
 
+{% platform_content angular %}
+> Due to recent changes in rendering, the Kendo UI Material theme package now requires a kendo-angular-inputs@^4.0.0 version. For more information, refer to [issue #2018](https://github.com/telerik/kendo-angular/issues/2018) on GitHub.
+{% endplatform_content %}
+
 1. Download and install the package of the Material theme.
 
     ```sh
