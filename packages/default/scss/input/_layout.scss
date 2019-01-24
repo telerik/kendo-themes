@@ -430,7 +430,7 @@ $checkbox-size: $icon-size !default;
     .k-form {
         input,
         label:not(.k-checkbox-label):not(.k-radio-label),
-        .k-widget:not(.k-calendar) {
+        .k-widget:not(.k-calendar):not(.k-switch) {
             display: block;
         }
 
