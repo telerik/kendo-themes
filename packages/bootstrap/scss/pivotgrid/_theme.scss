@@ -22,7 +22,8 @@
         background-color: $panel-bg;
     }
 
-    .k-pivot-toolbar {
+    .k-pivot-toolbar,
+    .k-fieldselector {
         border-color: $grid-header-border;
     }
     .k-pivot-table,

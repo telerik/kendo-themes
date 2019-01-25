@@ -19,6 +19,7 @@
     .k-pivot-layout .k-grid-footer,
     .k-pivot-layout > tbody > tr:first-child > td:first-child {
         background-color: $pivotgrid-alt-bg;
+        border-color: $pivotgrid-chrome-border;
     }
     .k-pivot-rowheaders .k-grid {
         background: none;
@@ -38,9 +39,20 @@
     }
 
     .k-pivot-rowheaders > .k-grid td,
-    .k-pivot-rowheaders > .k-grid td:first-child {
+    .k-pivot-rowheaders > .k-grid td:first-child:not(.k-first) {
         border-bottom-color: transparent;
         border-left-color: $pivotgrid-chrome-border;
+    }
+
+    .k-pivot-rowheaders > .k-grid tr {
+        &:last-child td:not(.k-grid-footer),
+        &:nth-last-child(2) td:not(.k-grid-footer) {
+            border-bottom-color: $pivotgrid-chrome-border;
+        }
+    }
+
+    .k-pivot-rowheaders .k-grid tr .k-grid-footer {
+       border-bottom-width: 0;
     }
 
     .k-pivot-layout .k-grid .k-alt {
