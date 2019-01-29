@@ -53,7 +53,7 @@ The following additional configuration improves the look and feel of the theme i
 The following additional configuration improves the look and feel of the theme in your application:
 
 * Use a [Ripple effect]({% slug overview_ripple %})&mdash;Available through the `Ripple` component from the `@progress/kendo-react-ripple` NPM module. The `Ripple` component provides the [Material ink ripple effect](https://material.io/guidelines/motion/choreography.html#choreography-radial-reaction) for the Kendo UI components for React and is fully compatible with all available Kendo UI themes.
-* Use the `floatingLabel` property on components from the [Inputs]({% slug overview_inputs %}) and [DropDowns]({% slug overview_dropdowns %}) packages for React.
+* Use the `floatingLabel` property on components from the [Inputs]({% slug overview_inputs %}) and [Drop Downs]({% slug overview_dropdowns %}) packages for React.
 {% endplatform_content %}
 
 ## Preview
