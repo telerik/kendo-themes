@@ -77,7 +77,8 @@
 
 
     // RTL
-    .k-rtl .k-treeview {
+    .k-rtl .k-treeview,
+    .k-treeview[dir=rtl] {
 
         // Items
         .k-item {
