@@ -511,7 +511,8 @@
         overflow: hidden;
     }
 
-    .k-grid-header-wrap.k-auto-scrollable {
+    .k-grid-header-wrap.k-auto-scrollable,
+    .k-grid-footer-wrap {
         margin-right: -1px;
     }
 
