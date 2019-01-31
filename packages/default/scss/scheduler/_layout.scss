@@ -47,7 +47,7 @@ $scheduler-event-border-radius: 2px;
             border-style: solid;
             border-width: 0 0 1px 1px;
             vertical-align: top;
-            box-sizing: initial;
+            box-sizing: content-box;
         }
         td:first-child,
         th:first-child {
