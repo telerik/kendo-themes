@@ -1,6 +1,5 @@
 @include exports("editor/theme") {
 
-    $editor-overlay-background: #000 !default;
 
     .k-editor {
         @include appearance( panel );
@@ -99,6 +98,10 @@
 
 
     // Insert table
-    .k-ct-popup {}
+    .k-ct-popup {
+        .k-state-selected {
+            @include fill( $selected-text, $selected-bg, $selected-border, none );
+        }
+    }
 
 }
