@@ -718,7 +718,8 @@
     .k-rtl .k-i-indent-increase,
     .k-rtl .k-i-indent-decrease,
     .k-rtl .k-i-expand,
-    .k-rtl .k-i-collapse {
+    .k-rtl .k-i-collapse,
+    .k-treeview[dir=rtl] {
         transform: scaleX(-1);
     }
 
