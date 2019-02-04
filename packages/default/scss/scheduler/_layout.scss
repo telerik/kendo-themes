@@ -41,7 +41,7 @@ $scheduler-event-border-radius: 2px;
         td,
         th {
             padding: $cell-padding;
-            height: $line-height-em;
+            height: $scheduler-cell-height;
             overflow: hidden;
             white-space: nowrap;
             border-style: solid;
@@ -324,10 +324,10 @@ $scheduler-event-border-radius: 2px;
     }
 
     .k-scheduler-datecolumn {
-        width: 12em;
+        width: $scheduler-datecolumn-width;
     }
     .k-scheduler-timecolumn {
-        width: 11em;
+        width: $scheduler-timecolumn-width;
         white-space: nowrap;
     }
 
