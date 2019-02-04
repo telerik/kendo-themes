@@ -77,8 +77,7 @@
 
 
     // RTL
-    .k-rtl .k-treeview,
-    .k-treeview[dir=rtl] {
+    .k-rtl .k-treeview {
 
         // Items
         .k-item {
@@ -91,7 +90,6 @@
         .k-i-collapse {
             margin-left: 0;
             margin-right: -$treeview-indent;
-            transform: scaleX(-1);
         }
 
         // Other content
