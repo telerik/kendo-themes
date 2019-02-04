@@ -59,7 +59,7 @@ $scheduler-event-text: $primary-contrast !default;
         @include appearance( selected-node );
     }
     .k-event-inverse {
-        color: $panel-bg;
+        color: $panel-text;
     }
 
 
