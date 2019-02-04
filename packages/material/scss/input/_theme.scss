@@ -48,7 +48,7 @@
 
     // Floating label
     .k-textbox-container {
-        vertical-align: 0;
+        vertical-align: baseline;
 
         > .k-label {
             color: $floating-label-color;
