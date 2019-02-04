@@ -91,6 +91,7 @@
         .k-i-collapse {
             margin-left: 0;
             margin-right: -$treeview-indent;
+            transform: scaleX(-1);
         }
 
         // Other content
