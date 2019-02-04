@@ -1165,6 +1165,9 @@ $switch-off-handle-hovered-gradient: null !default;
 // Editor
 $editor-overlay-background: #000 !default;
 
+$scheduler-cell-height: $line-height-em;
+$scheduler-datecolumn-width: 12em;
+$scheduler-timecolumn-width: 11em;
 
 // Config maps
 $typography-config: () !default;
