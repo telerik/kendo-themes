@@ -96,6 +96,17 @@
         vertical-align: top;
     }
 
+    .k-pivot .k-grid tr {
+        .k-grid-footer {
+            border-bottom-width: 0;
+        }
+        &:last-child:not(.k-grid-footer) {
+            td:not(.k-grid-footer) {
+                border-bottom-width: 1px;
+            }
+        }
+    }
+
     .k-pivot-layout .k-grid td {
         border-bottom-width: 1px;
     }

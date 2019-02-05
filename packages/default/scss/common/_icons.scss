@@ -718,7 +718,9 @@
     .k-rtl .k-i-indent-increase,
     .k-rtl .k-i-indent-decrease,
     .k-rtl .k-i-expand,
-    .k-rtl .k-i-collapse {
+    .k-rtl .k-i-collapse,
+    [dir=rtl] .k-i-expand,
+    [dir=rtl] .k-i-collapse {
         transform: scaleX(-1);
     }
 
