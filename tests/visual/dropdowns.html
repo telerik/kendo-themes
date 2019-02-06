@@ -139,10 +139,32 @@
             </div>
         </section>
 
-        <span class="col-2">Option label states</span>
-        <span class="col-2"></span>
+        <section class="col-2">
+            <span class="col-2">Angular Popup list with grouping</span>
+            <span class="col-2"></span>
+                <div class="k-popup k-list-container k-reset" >
+                    <kendo-list>
+                        <div class="k-outer-group-header"> <strong>GROUP 1</strong> </div>
+                        <div unselectable="on" class="k-list-scroller" style="max-height: 300px;">
+                            <ul class="k-list k-reset" role="listbox" id="7cd3c284-09ac-46bc-a247-9cb719c25e80" aria-hidden="false">
+                                <li kendodropdownsselectable="" role="option" class="k-item"  index="3"> Item </li>
+                                <li kendodropdownsselectable="" role="option" class="k-item k-state-focused"> Focused item </li>
+                                <li kendodropdownsselectable="" role="option" class="k-item k-state-hover"> Hovered item </li>
+                                <li kendodropdownsselectable="" role="option" class="k-item k-state-selected"> Selected item </li>
+                                <li kendodropdownsselectable="" role="option" class="k-item k-state-hover k-state-selected"> Hovered Selected item </li>
+                                <li kendodropdownsselectable="" role="option" class="k-item k-state-selected k-state-focused"> Focused Selected item </li>
+                                <li kendodropdownsselectable="" role="option" class="k-item k-state-disabled"> Disabled item </li>
+                                <li class="k-outer-group-header" role="group" > <strong> GROUP 2</strong> </li>
+                                <li kendodropdownsselectable="" role="option" class="k-item k-state-disabled k-state-selected"> Disabled Selected item </li>
+                            </ul>
+                        </div>
+                    </kendo-list>
+                </div>
+        </section>
 
         <section class="col-2">
+            <span class="col-2">Option label states</span>
+            <span class="col-2"></span>
             <div class="k-popup k-list-container k-reset">
                 <div class="k-list-optionlabel">Optionlabel</div>
                 <div class="k-list-optionlabel k-state-focused">Focused Optionlabel</div>
