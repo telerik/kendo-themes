@@ -125,7 +125,7 @@ $scheduler-event-text: #fff !default;
         @include appearance( selected-node );
     }
     .k-event-inverse {
-        color: $panel-bg;
+        color: $panel-text;
     }
 
 
