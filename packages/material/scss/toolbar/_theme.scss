@@ -9,7 +9,13 @@ $toolbar-separator-padding-y: 0 !default;
 
     .k-toolbar {
 
-        .k-button {}
+        background-color: $toolbar-bg;
+
+        .k-dropdown-button,
+        .k-split-button,
+        .k-button {
+            background-color: initial;
+        }
 
         .k-button.k-state-disabled,
         .k-state-disabled > .k-button {
