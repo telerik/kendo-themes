@@ -107,6 +107,16 @@ $forms-invalid-color: $error !default;
             overflow: hidden;
             text-overflow: ellipsis;
         }
+
+        // Invalid
+        &.k-invalid,
+        &.k-invalid:hover,
+        &.k-state-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            color: $error;
+            border-color: $invalid-border;
+        }
     }
     .k-autocomplete {
         // Reset width to default input width
