@@ -23,6 +23,12 @@
             border-color: $input-focused-border;
         }
 
+         // Selection
+         &::selection {
+            background-color: $accent;
+            color: $accent-contrast;
+        }
+
         // Invalid
         &.k-invalid,
         &.k-state-invalid,

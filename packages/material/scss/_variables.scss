@@ -482,7 +482,7 @@ $icon-focused-opacity: .87;
 // Input
 $input-bg: null !default;
 $input-text: $component-text !default;
-$input-border: rgba( $component-border, if($theme-type == dark, 0.7, 0.42) ) !default;
+$input-border: rgba( $component-border, if($theme-type == dark, .7, .42) ) !default;
 $input-shadow: null !default;
 
 $input-hovered-bg: null !default;
@@ -1091,9 +1091,9 @@ $window-focused-shadow: $box-shadow-depth-5 !default;
 
 $window-sizes: () !default;
 $window-sizes: map-merge((
-    sm: 300px,
-    md: 800px,
-    lg: 1200px
+        sm: 300px,
+        md: 800px,
+        lg: 1200px
 ), $window-sizes);
 
 

@@ -47,6 +47,7 @@ $popup-filter-padding-x: $input-padding-x !default;
     .k-popup .k-item.k-first {
         position: relative;
     }
+
     .k-popup > .k-group-header,
     .k-popup > .k-virtual-wrap > .k-group-header {
         padding: $popup-header-padding;
@@ -61,6 +62,15 @@ $popup-filter-padding-x: $input-padding-x !default;
     .k-popup > .k-group-header {
         margin-top: -$popup-padding-y;
     }
+
+    .k-popup .k-outer-group-header {
+        padding: $popup-header-padding;
+        min-height: $line-height-em;
+        font-size: $popup-header-font-size;
+        color: $popup-header-text;
+        white-space: normal;
+    }
+
     .k-popup .k-list .k-item > .k-group {
         position: absolute;
         top: 0;
@@ -100,6 +110,10 @@ $popup-filter-padding-x: $input-padding-x !default;
         right: 0;
     }
 
+    .k-popup .k-list > .k-outer-group-header {
+        border-top-width: 1px;
+        border-top-style: solid;
+    }
     // Transparent popup
     .k-popup.k-popup-transparent {
         border-width: 0;
