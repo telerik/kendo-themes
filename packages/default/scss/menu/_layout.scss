@@ -159,6 +159,7 @@ $image-spacing: 8px !default;
     .k-animation-container .k-context-menu.k-menu-horizontal {
         // kendo-jquery adds `display: block` via js and we need to override it.
         display: flex !important; // sass-lint:disable-line no-important
+        flex-wrap: nowrap;
     }
 
 
