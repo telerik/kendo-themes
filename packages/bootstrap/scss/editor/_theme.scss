@@ -1,6 +1,5 @@
 @include exports("editor/theme") {
 
-    $editor-overlay-background: #000 !default;
 
     .k-editor {
         @include appearance( panel );
@@ -76,6 +75,14 @@
     .k-editor-dialog {
         .k-edit-label {
             padding: add-two($padding-y, -$input-border-width) 0;
+        }
+    }
+
+
+    // Insert table
+    .k-ct-popup {
+        .k-state-selected {
+            @include fill( $selected-text, $selected-bg, $selected-border, none );
         }
     }
 }
