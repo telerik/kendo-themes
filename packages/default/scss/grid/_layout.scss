@@ -581,11 +581,22 @@
             overflow: hidden;
             text-overflow: ellipsis;
             outline: 0;
+
+            .k-ie &,
+            .k-edge & {
+                margin-right: calc( 1em + #{ $grid-header-menu-icon-spacing } + #{ $button-padding-y });
+            }
+
         }
 
         .k-with-icon,
         .k-filterable {
             padding-right: $grid-filterable-icon-spacing;
+
+            .k-ie &,
+            .k-edge & {
+                padding-right: $grid-header-padding-x;
+            }
         }
 
         .k-header > .k-link:focus {
@@ -608,6 +619,15 @@
             right: $grid-header-menu-icon-spacing;
             bottom: calc( #{ $grid-header-padding-y } + #{ $line-height-em / 2 } + (-1 * #{ button-inner-size(.5) } ) );
             z-index: 1;
+
+            .k-ie &,
+            .k-edge & {
+                position: static;
+                float: right;
+                width: auto;
+                height: auto;
+                padding: $button-padding-y-sm;
+            }
         }
 
         .k-header > .k-link > .k-icon {

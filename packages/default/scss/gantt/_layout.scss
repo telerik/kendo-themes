@@ -52,6 +52,12 @@
         .k-gantt-layout + & {
             border-width: 1px 0 0;
         }
+
+        .k-gantt-toggle {
+            margin-right: .5em;
+            display: none;
+            float: left;
+        }
     }
     .k-gantt-actions {
         float: left;
@@ -64,26 +70,24 @@
         float: right;
         display: inline-flex;
     }
-    .k-gantt-toggle {
-        margin-right: .5em;
-        display: none;
-        float: left;
-    }
-    @media only screen and (max-width: 480px) {
-        .k-gantt-toggle {
-            display: inline-flex;
-        }
-        .k-gantt-pdf,
-        .k-gantt-create {
-            padding: $button-padding-y;
-            width: button-size();
-            height: button-size();
 
-            .k-icon {
-                margin: 0;
+    @media only screen and (max-width: 480px) {
+        .k-gantt-toolbar {
+            .k-gantt-toggle {
+                display: inline-flex;
             }
-            span + span {
-                display: none;
+            .k-gantt-pdf,
+            .k-gantt-create {
+                padding: $button-padding-y;
+                width: button-size();
+                height: button-size();
+
+                .k-icon {
+                    margin: 0;
+                }
+                span + span {
+                    display: none;
+                }
             }
         }
     }
