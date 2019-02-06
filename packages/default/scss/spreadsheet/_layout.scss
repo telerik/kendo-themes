@@ -260,6 +260,11 @@
         font-family: Arial, Verdana, Sans-serif;
         flex: 1;
         position: relative;
+
+        // disabled cells in the Spreadsheet should allow navigation if link is used
+        .k-state-disabled {
+            pointer-events: auto;
+        }
     }
     // sass-lint:enable no-important
     .k-spreadsheet-fixed-container {
