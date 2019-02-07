@@ -58,6 +58,12 @@
 
     // Insert table
     .k-ct-popup {
+        line-height: normal;
+
+        .k-status {
+            line-height: $line-height;
+        }
+
         .k-state-selected {
             @include fill( $selected-text, $selected-bg, $selected-border, none );
         }
