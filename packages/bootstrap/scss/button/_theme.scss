@@ -201,7 +201,13 @@
     }
     .k-button.k-primary.k-flat,
     .k-button.k-primary.k-bare {
-        color: $accent;
+
+        &,
+        &:hover,
+        &.k-state-hover,
+        &.k-state-active {
+            color: $accent;
+        }
     }
 
 }

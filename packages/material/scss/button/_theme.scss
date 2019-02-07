@@ -47,7 +47,12 @@ $button-disabled-text: rgba(0, 0, 0, .38) !default;
     .k-button.k-flat.k-primary,
     .k-button.k-bare.k-primary,
     .k-button.k-outline.k-primary {
-        color: $primary-button-bg;
+
+        &,
+        &:hover,
+        &.k-state-hover {
+            color: $primary-button-bg;
+        }
 
         &.k-state-disabled {
             color: $button-disabled-text;

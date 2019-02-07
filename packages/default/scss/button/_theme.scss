@@ -248,6 +248,8 @@
 
         // Explicitly exclude flat button from button group styling
         &,
+        &:hover,
+        &.k-state-hover,
         .k-button-group & {
             color: $accent;
             background: none;
