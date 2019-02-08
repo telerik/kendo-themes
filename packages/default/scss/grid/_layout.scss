@@ -986,6 +986,10 @@
 
     }
 
+    .k-pdf-export .k-loading-pdf-mask {
+        display: none;
+    }
+
     .k-grid-pdf-export-element {
         position: absolute;
         left: -10000px;
