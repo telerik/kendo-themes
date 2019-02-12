@@ -23,7 +23,8 @@
             &.k-state-selected {
                 @include appearance( pressed-button );
             }
-            &.k-state-focused {
+            &.k-state-focused,
+            .k-state-focused {
                 @include appearance( focused-button );
             }
         }
