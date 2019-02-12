@@ -30,7 +30,8 @@
             &.k-state-selected {
                 @include fill( $selected-text, $selected-bg, $selected-border, none );
             }
-            &.k-state-focused {
+            &.k-state-focused,
+            .k-state-focused {
                 @include appearance( focused-list-item );
             }
         }
