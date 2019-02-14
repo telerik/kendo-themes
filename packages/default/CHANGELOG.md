@@ -3,6 +3,43 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.3.0"></a>
+# 3.3.0 (2019-02-14)
+
+
+### Bug Fixes
+
+* **dropdowns:** apply box-shadow only on first group header in angular ([e665b60](https://github.com/telerik/kendo-themes/commit/e665b60))
+* **editor:** selected table cells styles ([3e9bc58](https://github.com/telerik/kendo-themes/commit/3e9bc58))
+* **gantt:** toggle button is no longer visible on desktop in IE ([1bbd45e](https://github.com/telerik/kendo-themes/commit/1bbd45e))
+* **grid:** column menu icon position in IE and Edge ([936c12d](https://github.com/telerik/kendo-themes/commit/936c12d))
+* **grid:** footer misalignment when scroll is enabled ([2264ba1](https://github.com/telerik/kendo-themes/commit/2264ba1))
+* **grid:** improve styles for column settings menu ([6f5ba27](https://github.com/telerik/kendo-themes/commit/6f5ba27))
+* **input:** edge specific style for inputs in flex container ([2e80be3](https://github.com/telerik/kendo-themes/commit/2e80be3))
+* **pivotgrid:** bottom border on collapsed items ([23e00f5](https://github.com/telerik/kendo-themes/commit/23e00f5))
+* **scheduler:** cell box-sizing in IE ([21ce098](https://github.com/telerik/kendo-themes/commit/21ce098))
+* **scheduler:** columns layout in material theme ([20b31c9](https://github.com/telerik/kendo-themes/commit/20b31c9))
+* **scheduler:** drag hint time is not visible in angular ([395cf7d](https://github.com/telerik/kendo-themes/commit/395cf7d))
+* **scheduler:** header items focus state styles ([7516d9c](https://github.com/telerik/kendo-themes/commit/7516d9c))
+* **scheduler:** header text alignment when bootstrap is included ([102a152](https://github.com/telerik/kendo-themes/commit/102a152))
+* **scheduler:** incorrect inverse color for event title [#168](https://github.com/telerik/kendo-themes/issues/168) ([b2b2a81](https://github.com/telerik/kendo-themes/commit/b2b2a81))
+* **scheduler:** navigation focus state ([9e5b372](https://github.com/telerik/kendo-themes/commit/9e5b372))
+* **spreadsheet:** filter menu sort icons ([f9d09ab](https://github.com/telerik/kendo-themes/commit/f9d09ab))
+* **treemap:** display treemap title ([96b1896](https://github.com/telerik/kendo-themes/commit/96b1896))
+* **validator:** styles for invalid widget wrappers ([6788d79](https://github.com/telerik/kendo-themes/commit/6788d79))
+* disabled cell with link in Spreadsheet should navigate telerik/kendo-ui-core[#4824](https://github.com/telerik/kendo-themes/issues/4824) ([448a6a1](https://github.com/telerik/kendo-themes/commit/448a6a1))
+* Refactor CSS to solve "Compound selectors may longer be extended." error when compiling ([47d1675](https://github.com/telerik/kendo-themes/commit/47d1675))
+
+
+### Features
+
+* add support for RTL of Kendo Angular Treeview ([#581](https://github.com/telerik/kendo-themes/issues/581)) ([71eb0ad](https://github.com/telerik/kendo-themes/commit/71eb0ad))
+* **dropdowns:** add grouping for angular ([45b7601](https://github.com/telerik/kendo-themes/commit/45b7601))
+* **treeview:** add RTL for Angular TreeView ([904bfb6](https://github.com/telerik/kendo-themes/commit/904bfb6))
+
+
+
+
 <a name="3.2.0"></a>
 # [3.2.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@3.1.0...@progress/kendo-theme-default@3.2.0) (2019-01-15)
 
