@@ -1,6 +1,3 @@
-$toolbar-button-spacer: 1px !default;
-$toolbar-shadow: $button-shadow !default;
-
 @import "~@progress/kendo-theme-default/scss/toolbar/layout";
 
 @include exports("toolbar/layout/material") {
