@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.1"></a>
+## 3.2.1 (2019-02-14)
+
+
+### Bug Fixes
+
+* **editor:** selected table cells styles ([3e9bc58](https://github.com/telerik/kendo-themes/commit/3e9bc58))
+* **grid:** improve styles for column settings menu ([6f5ba27](https://github.com/telerik/kendo-themes/commit/6f5ba27))
+* **input:** edge specific style for inputs in flex container ([2e80be3](https://github.com/telerik/kendo-themes/commit/2e80be3))
+* **pivotgrid:** bottom border on collapsed items ([23e00f5](https://github.com/telerik/kendo-themes/commit/23e00f5))
+* **scheduler:** columns layout in material theme ([20b31c9](https://github.com/telerik/kendo-themes/commit/20b31c9))
+* **scheduler:** header items focus state styles ([7516d9c](https://github.com/telerik/kendo-themes/commit/7516d9c))
+* **scheduler:** incorrect inverse color for event title [#168](https://github.com/telerik/kendo-themes/issues/168) ([b2b2a81](https://github.com/telerik/kendo-themes/commit/b2b2a81))
+* **scheduler:** navigation focus state ([9e5b372](https://github.com/telerik/kendo-themes/commit/9e5b372))
+* **spreadsheet:** filter menu sort icons ([f9d09ab](https://github.com/telerik/kendo-themes/commit/f9d09ab))
+
+
+
+
 <a name="3.2.0"></a>
 # [3.2.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@3.1.0...@progress/kendo-theme-bootstrap@3.2.0) (2019-01-15)
 

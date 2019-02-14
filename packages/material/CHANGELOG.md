@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.3.0"></a>
+# 2.3.0 (2019-02-14)
+
+
+### Bug Fixes
+
+* vertical misaligned components within a kendo-textbox-container ([3dba163](https://github.com/telerik/kendo-themes/commit/3dba163))
+* **editor:** selected table cells styles ([3e9bc58](https://github.com/telerik/kendo-themes/commit/3e9bc58))
+* **grid:** improve styles for column settings menu ([6f5ba27](https://github.com/telerik/kendo-themes/commit/6f5ba27))
+* **input:** edge specific style for inputs in flex container ([2e80be3](https://github.com/telerik/kendo-themes/commit/2e80be3))
+* **pivotgrid:** bottom border on collapsed items ([23e00f5](https://github.com/telerik/kendo-themes/commit/23e00f5))
+* **scheduler:** columns layout in material theme ([20b31c9](https://github.com/telerik/kendo-themes/commit/20b31c9))
+* **scheduler:** header items focus state styles ([7516d9c](https://github.com/telerik/kendo-themes/commit/7516d9c))
+* **scheduler:** incorrect inverse color for event title [#168](https://github.com/telerik/kendo-themes/issues/168) ([b2b2a81](https://github.com/telerik/kendo-themes/commit/b2b2a81))
+* **textbox:** added textbox selection color in material theme ([4dddc16](https://github.com/telerik/kendo-themes/commit/4dddc16))
+* **toolbar:** inconsistent buttons background color in material theme ([bb9e286](https://github.com/telerik/kendo-themes/commit/bb9e286))
+
+
+### Features
+
+* add support for RTL of Kendo Angular Treeview ([#581](https://github.com/telerik/kendo-themes/issues/581)) ([71eb0ad](https://github.com/telerik/kendo-themes/commit/71eb0ad))
+
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@2.1.0...@progress/kendo-theme-material@2.2.0) (2019-01-15)
 
