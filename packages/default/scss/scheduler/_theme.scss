@@ -110,7 +110,7 @@
 
 
     // Events
-    .k-scheduler .k-event,
+    kendo-scheduler .k-event,
     .k-event {
         background-color: $scheduler-event-bg;
         color: $scheduler-event-text;
@@ -129,10 +129,10 @@
                 display: none;
             }
         }
-    }
 
-    .k-event-inverse {
-        color: $panel-text;
+        &.k-event-inverse {
+            color: $panel-text;
+        }
     }
 
 
