@@ -9,7 +9,8 @@
 
     <style>
         #test-area {
-            width: 1000px;
+            grid-template-columns: 1fr;
+            align-items: top;
         }
 
         th {
@@ -19,7 +20,7 @@
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" class="grid">
         <div class="k-widget k-scheduler" style="height: 400px;">
             <div class="k-header k-scheduler-toolbar">
                 <ul class="k-reset k-scheduler-navigation">
