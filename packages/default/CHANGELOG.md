@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.3.1"></a>
+## [3.3.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@3.3.0...@progress/kendo-theme-default@3.3.1) (2019-02-19)
+
+
+### Bug Fixes
+
+* **gantt:** improve focused toolbar item styles ([1c2d77f](https://github.com/telerik/kendo-themes/commit/1c2d77f))
+* **grid:** pdf export layout when pageSize is not set ([3c4a554](https://github.com/telerik/kendo-themes/commit/3c4a554))
+* **menu:** context menu horizontal layout ([444c949](https://github.com/telerik/kendo-themes/commit/444c949))
+* loading indicator was broken after refactoring ([09eb135](https://github.com/telerik/kendo-themes/commit/09eb135))
+* **scheduler:** current time arrow ([75062ee](https://github.com/telerik/kendo-themes/commit/75062ee))
+* **scheduler:** improve scheduler event styles ([a37e948](https://github.com/telerik/kendo-themes/commit/a37e948))
+* **scheduler:** improved css selectors ([9f878d0](https://github.com/telerik/kendo-themes/commit/9f878d0))
+
+
+
+
 <a name="3.3.0"></a>
 # 3.3.0 (2019-02-14)
 
