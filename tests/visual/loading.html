@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Loading indicators</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 100px 1fr;
+            align-items: start;
+        }
+        .loading-container {
+            height: 300px;
+            position: relative;
+        }
+        .k-loading-image::before,
+        .k-loading-image::after {
+            animation: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <span>icon</span>
+        <section><span class="k-icon k-i-loading"></span></section>
+
+        <span>loding image</span>
+        <section class="loading-container"><span class="k-loading-image"></span></section>
+    </div>
+
+</body>
+</html>
