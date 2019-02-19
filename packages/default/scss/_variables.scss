@@ -1154,9 +1154,10 @@ $editor-overlay-background: #000 !default;
 // Scheduler
 $scheduler-event-border-radius: $border-radius !default;
 
-$scheduler-event-border: $accent !default;
 $scheduler-event-bg: $selected-bg !default;
 $scheduler-event-text: $selected-text !default;
+$scheduler-event-min-height: 25px !default;
+$scheduler-event-line-height: calc(#{$scheduler-event-min-height} - (2 * #{$padding-y})) !default;
 
 $scheduler-event-selected-box-shadow: null !default;
 
