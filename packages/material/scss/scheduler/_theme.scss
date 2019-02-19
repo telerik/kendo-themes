@@ -83,7 +83,7 @@
             &::before {
                 display: block;
                 background-color: currentColor;
-                opacity: 0.12;
+                opacity: 0.24;
             }
         }
 
@@ -127,7 +127,11 @@
 
 
     // Month view
-    .k-scheduler-monthview {}
+    .k-scheduler-monthview {
+        .k-scheduler-table td {
+            height: 85px;
+        }
+    }
 
 
     // Agenda view
