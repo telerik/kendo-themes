@@ -113,10 +113,12 @@
 
         .k-event-template {
             padding: $padding-y-sm $padding-x-sm;
+            font-size: $font-size-sm;
         }
 
         .k-event-actions {
             right: $padding-x-sm;
+            font-size: $font-size-sm;
         }
 
         &.k-state-selected {

@@ -1178,6 +1178,8 @@ $scheduler-event-border-radius: $border-radius !default;
 
 $scheduler-event-bg: $selected-bg !default;
 $scheduler-event-text: $selected-text !default;
+$scheduler-event-min-height: 25px !default;
+$scheduler-event-line-height: calc(#{$scheduler-event-min-height} - (2 * #{$padding-y-sm})) !default;
 
 $scheduler-event-selected-box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.5) !default;
 
