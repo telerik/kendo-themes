@@ -11,6 +11,22 @@
         }
     }
 
+    // Current time
+    .k-current-time {
+        background: $scheduler-current-time-color;
+
+        &.k-current-time-arrow-left {
+            border-right-color: $scheduler-current-time-color;
+        }
+
+        &.k-current-time-arrow-right {
+            border-left-color: $scheduler-current-time-color;
+        }
+
+        &.k-current-time-arrow-down {
+            border-top-color: $scheduler-current-time-color;
+        }
+    }
 
     // Header and footer
     .k-scheduler-toolbar,
@@ -110,7 +126,7 @@
 
 
     // Events
-    .k-scheduler .k-event,
+    kendo-scheduler .k-event,
     .k-event {
         background-color: $scheduler-event-bg;
         color: $scheduler-event-text;
@@ -129,10 +145,10 @@
                 display: none;
             }
         }
-    }
 
-    .k-event-inverse {
-        color: $panel-text;
+        &.k-event-inverse {
+            color: $panel-text;
+        }
     }
 
 

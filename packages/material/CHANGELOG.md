@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.3.1"></a>
+## [2.3.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@2.3.0...@progress/kendo-theme-material@2.3.1) (2019-02-19)
+
+
+### Bug Fixes
+
+* **editor:** decreased table cells spacing in material theme ([ac0e956](https://github.com/telerik/kendo-themes/commit/ac0e956))
+* **gantt:** improve focused toolbar item styles ([1c2d77f](https://github.com/telerik/kendo-themes/commit/1c2d77f))
+* **grid:** focused state styles of items in grid header ([5d4d910](https://github.com/telerik/kendo-themes/commit/5d4d910))
+* **scheduler:** improve scheduler event styles ([a37e948](https://github.com/telerik/kendo-themes/commit/a37e948))
+
+
+
+
 <a name="2.3.0"></a>
 # 2.3.0 (2019-02-14)
 
