@@ -5,6 +5,23 @@
         @include appearance( panel );
     }
 
+    // Current time
+    .k-current-time {
+        background: $scheduler-current-time-color;
+
+        &.k-current-time-arrow-left {
+            border-right-color: $scheduler-current-time-color;
+        }
+
+        &.k-current-time-arrow-right {
+            border-left-color: $scheduler-current-time-color;
+        }
+
+        &.k-current-time-arrow-down {
+            border-top-color: $scheduler-current-time-color;
+        }
+    }
+
 
     // Header and footer
     .k-scheduler-toolbar,

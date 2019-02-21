@@ -54,7 +54,9 @@
     }
 
     .k-i-loading::before,
-    .k-i-loading::after {
+    .k-i-loading::after,
+    .k-loading-image::before,
+    .k-loading-image::after {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -95,6 +97,7 @@
 
     .k-loading-image::before,
     .k-loading-image::after {
+        content: "";
         border-width: .015em;
         font-size: 4em;
     }
