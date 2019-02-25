@@ -84,6 +84,12 @@ $widget-border-width: 1px !default;
     }
 
 
+    // Disable mouse events
+    .k-no-click {
+        pointer-events: none;
+    }
+
+
     // Off-screen container used during PDF export
     .k-pdf-export-shadow {
         position: absolute;
