@@ -147,13 +147,6 @@
         }
         .k-nav-today { @include border-left-radius-only(); }
         .k-nav-next { @include border-right-radius-only(); }
-
-        .k-rtl & {
-            .k-i-arrow-60-left,
-            .k-i-arrow-60-right {
-                transform: scaleX(-1);
-            }
-        }
     }
 
     .k-scheduler-tools {
@@ -831,6 +824,15 @@
 
         .k-scheduler-edit-form .k-scheduler-delete {
             float: right;
+        }
+
+        &.k-scheduler {
+            .k-i-arrow-60-left,
+            .k-i-arrow-60-right,
+            .k-current-time-arrow-right
+            {
+                transform: scaleX(-1);
+            }
         }
     }
 
