@@ -111,6 +111,10 @@
         }
         &:not(.k-calendar-infinite) .k-calendar-header {
             line-height: inherit;
+
+            .k-calendar-nav {
+                white-space: nowrap;
+            }
         }
 
 
@@ -485,7 +489,12 @@
         // jQuery
         &:not(.k-calendar-infinite) {
             .k-calendar-view {
+                display: flex;
                 flex-direction: row;
+
+                .k-animation-container-sm & {
+                    flex-direction: column;
+                }
             }
         }
 
