@@ -746,6 +746,8 @@
 
         .k-event {
             text-align: right;
+            padding-right: 0;
+            padding-left: $padding-x;
 
             .k-resize-w {
                 left: auto;
@@ -763,6 +765,7 @@
             }
 
             .k-event-actions:first-child {
+                margin: $padding-y-sm $padding-x-sm 0 .4ex;
                 float: right;
             }
         }
