@@ -342,7 +342,7 @@
     kendo-scheduler .k-event,
     .k-event {
         @include border-radius();
-        min-height: $line-height-em;
+        min-height: $scheduler-event-min-height;
         box-sizing: border-box;
         border-width: 0;
         border-style: solid;
@@ -371,6 +371,7 @@
 
         // Template
         .k-event-template {
+            line-height: $scheduler-event-line-height;
             padding: $padding-y $padding-x;
             // TODO: incompatible units
             // padding-right: $padding-x-sm + $spacer;
@@ -387,7 +388,8 @@
         .k-event-actions {
             white-space: nowrap;
             position: absolute;
-            top: $padding-y-sm;
+            top: 0;
+            bottom: 0;
             right: $padding-x;
             opacity: .5;
             visibility: hidden;
@@ -396,6 +398,11 @@
             &:hover,
             &.k-state-hover {
                 opacity: 1;
+            }
+
+            .k-icon {
+                line-height: normal;
+                font-size: inherit;
             }
 
             a { color: inherit; }
@@ -411,6 +418,7 @@
             position: relative;
             opacity: 1;
             visibility: visible;
+            line-height: normal;
         }
 
 
