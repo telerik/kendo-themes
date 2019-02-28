@@ -136,6 +136,11 @@
             left: 3px;
             opacity: 0.35;
             background-color: $scheduler-event-text;
+
+            .k-rtl & {
+                left: 0;
+                right: 3px;
+            }
         }
 
         &.k-state-selected {
