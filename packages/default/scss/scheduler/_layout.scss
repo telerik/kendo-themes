@@ -819,7 +819,9 @@
             float: right;
         }
 
-        &.k-scheduler {
+        .k-scheduler,
+        &.k-scheduler
+        {
             .k-i-arrow-60-left,
             .k-i-arrow-60-right,
             .k-current-time-arrow-right
