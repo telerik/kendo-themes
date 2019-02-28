@@ -254,13 +254,6 @@
         display: flex;
         flex-direction: column;
 
-        &.k-scheduler-timeline-view,
-        &.k-scheduler-timeline-week-view,
-        &.k-scheduler-timeline-month-view {
-
-            .k-scheduler-header-wrap { border-width: 0; }
-        }
-
         &.k-scheduler-weekview,
         &.k-scheduler-dayview {
             .k-scheduler-pane:first-child .k-scheduler-table {
@@ -832,6 +825,11 @@
             .k-current-time-arrow-right
             {
                 transform: scaleX(-1);
+            }
+
+            .k-scheduler-header-wrap {
+                border-right-width: 0;
+                border-left-width: 1px;
             }
         }
     }
