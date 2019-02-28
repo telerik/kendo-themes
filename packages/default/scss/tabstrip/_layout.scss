@@ -182,6 +182,17 @@
             @include border-top-radius( $tabstrip-item-border-radius );
             border-bottom-width: 0;
         }
+
+        &.k-tabstrip-scrollable {
+            .k-tabstrip-prev,
+            .k-tabstrip-next {
+                bottom: 0;
+
+                .k-ie11 & {
+                    top: auto;
+                }
+            }
+        }
     }
     .k-tabstrip-left {
         flex-direction: row;

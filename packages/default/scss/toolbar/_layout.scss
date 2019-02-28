@@ -1,6 +1,3 @@
-$toolbar-shadow: none !default;
-$toolbar-separator-padding-y: $toolbar-button-padding-y !default;
-
 @include exports("toolbar/layout") {
 
     // Base
@@ -16,6 +13,11 @@ $toolbar-separator-padding-y: $toolbar-button-padding-y !default;
         position: relative;
         overflow: hidden;
         box-shadow: $toolbar-shadow;
+
+        &:before {
+            content: '';
+            height: calc(#{$toolbar-button-calc-size});
+        }
 
         &.k-toolbar-resizable {
             flex-wrap: nowrap;
@@ -126,8 +128,8 @@ $toolbar-separator-padding-y: $toolbar-button-padding-y !default;
         // Separator
         .k-separator {
             @extend %hr-vertical;
-            padding: $toolbar-separator-padding-y 0;
             margin: 0 $toolbar-spacing;
+            height: $line-height-em;
 
             & + * {
                 margin-left: 0;

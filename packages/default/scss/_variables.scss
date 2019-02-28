@@ -180,6 +180,14 @@ $toolbar-button-line-height: $button-line-height !default;
 $toolbar-button-calc-size: #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} + #{$toolbar-button-border-width * 2} !default;
 $toolbar-inner-calc-size: #{$toolbar-button-calc-size} + #{$toolbar-padding-y * 2} !default;
 
+$toolbar-button-expanded-bg: null !default;
+$toolbar-button-expanded-shadow: none !default;
+
+$toolbar-shadow: none !default;
+$toolbar-separator-padding-y: $toolbar-button-padding-y !default;
+$toolbar-separator-border: inherit !default;
+
+
 $list-item-padding-x: $padding-x !default;
 $list-item-padding-y: $padding-y !default;
 
@@ -1154,9 +1162,10 @@ $editor-overlay-background: #000 !default;
 // Scheduler
 $scheduler-event-border-radius: $border-radius !default;
 
-$scheduler-event-border: $accent !default;
 $scheduler-event-bg: $selected-bg !default;
 $scheduler-event-text: $selected-text !default;
+$scheduler-event-min-height: 25px !default;
+$scheduler-event-line-height: calc(#{$scheduler-event-min-height} - (2 * #{$padding-y})) !default;
 
 $scheduler-event-selected-box-shadow: null !default;
 
