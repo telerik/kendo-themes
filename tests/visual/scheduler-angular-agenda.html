@@ -1,0 +1,1667 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Scheduler</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+</head>
+<body>
+    <kendo-scheduler style="width: 1200px; height: 600px; position: relative;" class="k-widget k-scheduler k-floatwrap" dir="ltr">
+        <!---->
+
+        <kendo-scheduler-toolbar class="k-scheduler-toolbar k-header k-floatwrap">
+        <!---->
+            <ul kendoschedulertoolbarnavigation="" class="k-scheduler-navigation k-reset">
+        <li class="k-state-default k-header k-nav-today">
+            <a class="k-link" href="#" role="button" title="Today">Today</a>
+        </li>
+        <li class="k-state-default k-header k-nav-prev">
+            <a class="k-link" href="#" role="button" title="Previous" aria-label="Previous">
+                <span class="k-icon k-i-arrow-60-left" style="pointer-events: none"></span>
+            </a>
+        </li>
+        <li class="k-state-default k-header k-nav-next">
+            <a class="k-link" href="#" role="button" title="Next" aria-label="Next">
+                <span class="k-icon k-i-arrow-60-right" style="pointer-events: none"></span>
+            </a>
+        </li>
+        <li class="k-state-default k-nav-current">
+            <a class="k-link" href="#" role="button">
+                <span class="k-icon k-i-calendar"></span>
+                <span class="k-sm-date-format">6/24/2013 - 7/1/2013</span>
+                <span class="k-lg-date-format">Monday, June 24, 2013 - Monday, July 1, 2013</span>
+            </a>
+        </li>
+
+        <!---->
+    </ul>
+            <ul kendoschedulertoolbarviewselector="" class="k-scheduler-views k-reset">
+        <li class="k-current-view">
+            <a class="k-link" href="#" role="button">
+                Agenda
+            </a>
+        </li>
+        <!----><li class="">
+            <a class="k-link" href="#" role="button">
+                Day
+            </a>
+        </li><li class="">
+            <a class="k-link" href="#" role="button">
+                Week
+            </a>
+        </li><li>
+            <a class="k-link" href="#" role="button">
+                Month
+            </a>
+        </li><li>
+            <a class="k-link" href="#" role="button">
+                Timeline
+            </a>
+        </li><li>
+            <a class="k-link" href="#" role="button">
+                Timeline Week
+            </a>
+        </li><li>
+            <a class="k-link" href="#" role="button">
+                Timeline Month
+            </a>
+        </li><li class="k-state-selected">
+            <a class="k-link" href="#" role="button">
+                Agenda
+            </a>
+        </li>
+    </ul>
+
+
+        <!---->
+    </kendo-scheduler-toolbar>
+
+        <!---->
+            <agenda-view-internal>
+        <table class="k-scheduler-layout k-scheduler-agendaview k-scheduler-agenda">
+            <tbody>
+                <tr>
+                    <td>
+                        <div kendoscheduleragendaheader="" class="k-scheduler-header k-state-default" style="padding-left: 0px; padding-right: 15px;">
+        <div class="k-scheduler-header-wrap">
+            <table class="k-scheduler-table">
+                <tbody>
+                    <tr>
+                        <!---->
+                        <th class="k-scheduler-datecolumn">Date</th>
+                        <th class="k-scheduler-timecolumn">Time</th>
+                        <th>Event</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div kendoscheduleragendalist="" class="k-scheduler-content" style="height: 514px;">
+        <table class="k-scheduler-table">
+            <tbody>
+                <!----><!---->
+                    <!----><tr>
+                        <!---->
+                        <!----><td class="k-scheduler-datecolumn" rowspan="17">
+        <!----><!---->
+            <strong class="k-scheduler-agendaday">24</strong>
+            <em class="k-scheduler-agendaweek">Monday</em>
+            <span class="k-scheduler-agendadate">Jun 2013</span>
+
+        <!---->
+    </td>
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!----><span class="k-icon k-i-arrow-60-left"></span>
+                                all day
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="0">
+        <div class="k-task" title="Attending HR Conference Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Attending HR Conference
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                8:30 AM-2:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="1">
+        <div class="k-task" title="Car Service Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Car Service
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                11:30 AM-12:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="2">
+        <div class="k-task" title="Breakfast with Tom Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Breakfast with Tom
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                11:30 AM-12:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="3">
+        <div class="k-task" title="Event 4 Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Event 4
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                11:30 AM-12:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="4">
+        <div class="k-task" title="Event 5 Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Event 5
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                11:30 AM-12:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="5">
+        <div class="k-task" title="Event 6 Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Event 6
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                11:30 AM-12:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="6">
+        <div class="k-task" title="Event 1 Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Event 1
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                11:30 AM-12:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="7">
+        <div class="k-task" title="Event 2 Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Event 2
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                11:30 AM-12:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="8">
+        <div class="k-task" title="Event 3 Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Event 3
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                12:30 PM-1:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="9">
+        <div class="k-task" title="Team planning meeting Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Team planning meeting
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                1:00 PM-2:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="10">
+        <div class="k-task" title="Replace the printer on the 1st floor Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Replace the printer on the 1st floor
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                3:00 PM-3:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="11">
+        <div class="k-task" title="Register new Access Cards Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Register new Access Cards
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                4:30 PM-5:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="12">
+        <div class="k-task" title="Job Interview - Bernard Atkins Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Job Interview - Bernard Atkins
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                4:30 PM-9:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="13">
+        <div class="k-task" title="Install new laptops in conference rooms Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Install new laptops in conference rooms
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                6:00 PM-8:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="14">
+        <div class="k-task" title="Review Job Applications Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Review Job Applications
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                7:00 PM-7:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="15">
+        <div class="k-task" title="Support Phone Call Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Support Phone Call
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                9:30 PM-11:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="16">
+        <div class="k-task" title="Dance Practice Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!----><span class="k-icon k-i-reload"></span>
+            <!---->
+            <!----><!---->
+                Dance Practice
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!----><td class="k-scheduler-datecolumn" rowspan="8">
+        <!----><!---->
+            <strong class="k-scheduler-agendaday">25</strong>
+            <em class="k-scheduler-agendaweek">Tuesday</em>
+            <span class="k-scheduler-agendadate">Jun 2013</span>
+
+        <!---->
+    </td>
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                12:00 PM-1:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="17">
+        <div class="k-task" title="Business breakfast with Caroline Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Business breakfast with Caroline
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                1:00 PM-3:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="18">
+        <div class="k-task" title="Software updates Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Software updates
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                2:00 PM-2:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="19">
+        <div class="k-task" title="Discuss preojects' deadlines Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Discuss preojects' deadlines
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                3:00 PM-4:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="20">
+        <div class="k-task" title="Business Lunch with Gregory Watkins Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Business Lunch with Gregory Watkins
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                6:00 PM-7:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="21">
+        <div class="k-task" title="Support Meeting Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Support Meeting
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                7:30 PM-9:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="22">
+        <div class="k-task" title="UPS maintenance Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                UPS maintenance
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                9:30 PM-11:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="23">
+        <div class="k-task" title="Dine with Mathew Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Dine with Mathew
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                10:00 PM-12:00 AM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="24">
+        <div class="k-task" title="HR Lecture Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!----><span class="k-icon k-i-reload"></span>
+            <!---->
+            <!----><!---->
+                HR Lecture
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!----><td class="k-scheduler-datecolumn" rowspan="7">
+        <!----><!---->
+            <strong class="k-scheduler-agendaday">26</strong>
+            <em class="k-scheduler-agendaweek">Wednesday</em>
+            <span class="k-scheduler-agendadate">Jun 2013</span>
+
+        <!---->
+    </td>
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                12:00 PM-1:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="25">
+        <div class="k-task" title="Banking Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Banking
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                2:30 PM-3:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="26">
+        <div class="k-task" title="Support Call Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Support Call
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                4:30 PM-5:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="27">
+        <div class="k-task" title="Phone Sync with NY office  Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Phone Sync with NY office
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                6:00 PM-7:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="28">
+        <div class="k-task" title="Phone Sync with Boston Office Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Phone Sync with Boston Office
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                6:00 PM-7:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="29">
+        <div class="k-task" title="Helpdesk weekly meeting Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!----><span class="k-icon k-i-reload"></span>
+            <!---->
+            <!----><!---->
+                Helpdesk weekly meeting
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                9:30 PM-11:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="30">
+        <div class="k-task" title="Dance Practice Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!----><span class="k-icon k-i-reload"></span>
+            <!---->
+            <!----><!---->
+                Dance Practice
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                9:30 PM
+                                <!----><span class="k-icon k-i-arrow-60-right"></span>
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="31">
+        <div class="k-task" title="Server maintenance Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Server maintenance
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!----><td class="k-scheduler-datecolumn" rowspan="13">
+        <!----><!---->
+            <strong class="k-scheduler-agendaday">27</strong>
+            <em class="k-scheduler-agendaweek">Thursday</em>
+            <span class="k-scheduler-agendadate">Jun 2013</span>
+
+        <!---->
+    </td>
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!----><span class="k-icon k-i-arrow-60-left"></span>
+                                12:00 AM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="32">
+        <div class="k-task" title="Server maintenance Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Server maintenance
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                10:30 AM-11:30 AM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="33">
+        <div class="k-task" title="Website upload Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!----><span class="k-icon k-i-reload"></span>
+            <!---->
+            <!----><!---->
+                Website upload
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                11:30 AM-12:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="34">
+        <div class="k-task" title="Breakfast with CFO and COO Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Breakfast with CFO and COO
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                1:00 PM-2:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="35">
+        <div class="k-task" title="Job Interview - Mathew Stevens Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Job Interview - Mathew Stevens
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                1:30 PM-2:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="36">
+        <div class="k-task" title="Helpdesk status meeting Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Helpdesk status meeting
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                2:00 PM-2:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="37">
+        <div class="k-task" title="Review CVs with Tim Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Review CVs with Tim
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                3:00 PM-4:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="38">
+        <div class="k-task" title="Business Lunch Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Business Lunch
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                3:00 PM-4:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="39">
+        <div class="k-task" title="Lunch with Monica Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Lunch with Monica
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                5:00 PM-6:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="40">
+        <div class="k-task" title="Job Interview - John Stewart Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Job Interview - John Stewart
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                5:00 PM-6:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="41">
+        <div class="k-task" title="Employee database update Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Employee database update
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                6:30 PM-7:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="42">
+        <div class="k-task" title="Job Interview - Mary Smith Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Job Interview - Mary Smith
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                8:00 PM-9:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="43">
+        <div class="k-task" title="Meeting with marketing guys Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Meeting with marketing guys
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                10:00 PM-12:00 AM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="44">
+        <div class="k-task" title="HR Lecture Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!----><span class="k-icon k-i-reload"></span>
+            <!---->
+            <!----><!---->
+                HR Lecture
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!----><td class="k-scheduler-datecolumn" rowspan="7">
+        <!----><!---->
+            <strong class="k-scheduler-agendaday">28</strong>
+            <em class="k-scheduler-agendaweek">Friday</em>
+            <span class="k-scheduler-agendadate">Jun 2013</span>
+
+        <!---->
+    </td>
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                10:30 AM-11:30 AM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="45">
+        <div class="k-task" title="Website upload Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!----><span class="k-icon k-i-reload"></span>
+            <!---->
+            <!----><!---->
+                Website upload
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                11:00 AM-12:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="46">
+        <div class="k-task" title="Dentist Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Dentist
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                12:30 PM-1:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="47">
+        <div class="k-task" title="Job Interview - Laura Bailey Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Job Interview - Laura Bailey
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                1:30 PM-2:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="48">
+        <div class="k-task" title="Meeting with Internet provider Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Meeting with Internet provider
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                2:00 PM-3:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="49">
+        <div class="k-task" title="Job Interview - Jenny Baxter Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Job Interview - Jenny Baxter
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                4:30 PM-6:30 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="50">
+        <div class="k-task" title="Status meeting Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Status meeting
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                5:00 PM-8:00 PM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="51">
+        <div class="k-task" title="Team building prep tasks Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Team building prep tasks
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!----><td class="k-scheduler-datecolumn" rowspan="3">
+        <!----><!---->
+            <strong class="k-scheduler-agendaday">29</strong>
+            <em class="k-scheduler-agendaweek">Saturday</em>
+            <span class="k-scheduler-agendadate">Jun 2013</span>
+
+        <!---->
+    </td>
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                10:30 AM-11:30 AM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="52">
+        <div class="k-task" title="Website upload Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!----><span class="k-icon k-i-reload"></span>
+            <!---->
+            <!----><!---->
+                Website upload
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                all day
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="53">
+        <div class="k-task" title="Bob's Birthday Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Bob's Birthday
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                11:00 PM
+                                <!----><span class="k-icon k-i-arrow-60-right"></span>
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="54">
+        <div class="k-task" title="Bob's Birthday Party Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Bob's Birthday Party
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!----><td class="k-scheduler-datecolumn" rowspan="2">
+        <!----><!---->
+            <strong class="k-scheduler-agendaday">30</strong>
+            <em class="k-scheduler-agendaweek">Sunday</em>
+            <span class="k-scheduler-agendadate">Jun 2013</span>
+
+        <!---->
+    </td>
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!----><span class="k-icon k-i-arrow-60-left"></span>
+                                12:00 AM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="55">
+        <div class="k-task" title="Bob's Birthday Party Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!---->
+            <!---->
+            <!----><!---->
+                Bob's Birthday Party
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr><tr>
+                        <!---->
+                        <!---->
+                        <td class="k-scheduler-timecolumn">
+                            <!----><div>
+                                <!---->
+                                10:30 AM-11:30 AM
+                                <!---->
+                            </div>
+                            <!---->
+                        </td>
+                        <td data-group-index="0" data-task-index="56">
+        <div class="k-task" title="Website upload Lecture">
+            <!----><span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+            <!----><span class="k-icon k-i-reload"></span>
+            <!---->
+            <!----><!---->
+                Website upload
+
+            <!---->
+
+            <!----><a class="k-link k-event-delete" href="#" title="Delete" aria-label="Delete">
+                <span class="k-icon k-i-close"></span>
+            </a>
+        </div>
+    </td>
+                    </tr>
+
+            </tbody>
+        </table>
+    </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </agenda-view-internal>
+
+
+        <!---->
+
+
+        <kendo-scheduler-edit-dialog>
+        <!---->
+    </kendo-scheduler-edit-dialog>
+
+        <kendo-resize-sensor _nghost-c0=""><div _ngcontent-c0="" style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">  <div _ngcontent-c0="" style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 100000px; height: 100000px;"></div></div><div _ngcontent-c0="" style="position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; z-index: -1;overflow: hidden; visibility: hidden;">  <div _ngcontent-c0="" style="position: absolute; left: 0; top: 0; transition: 0s;width: 200%; height: 200%;"></div></div></kendo-resize-sensor>
+
+        <div kendoschedulerloading="" class="k-loading-mask" style="display: none;">
+        <div class="k-loading-image"></div>
+        <div class="k-loading-color"></div>
+    </div>
+    </kendo-scheduler>
+</body>
+</html>
