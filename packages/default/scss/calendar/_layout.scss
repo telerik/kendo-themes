@@ -345,6 +345,7 @@
         box-sizing: content-box;
         overflow-x: hidden;
         overflow-y: auto;
+        display: block;
 
         @include hide-scrollbar('right');
     }
