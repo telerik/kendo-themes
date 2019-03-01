@@ -712,6 +712,8 @@
     .k-i-volume-low::before { @extend .k-i-volume-down; }
     .k-i-volume-high::before { @extend .k-i-volume-up; }
     .k-i-volume-mute::before { @extend .k-i-volume-off; }
+    .k-i-tick::before { @extend .k-i-check; }
+    .k-i-note::before { @extend .k-i-info; }
 
 
     // RTL icons
