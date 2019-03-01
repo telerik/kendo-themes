@@ -112,8 +112,12 @@
         color: $scheduler-event-text;
 
         .k-event-template {
-            padding: $padding-y-sm $padding-x-sm;
-            font-size: $font-size-sm;
+            // Angular fix for stronger selector and smaller padding
+            &,
+            kendo-scheduler & {
+                padding: $padding-y-sm $padding-x-sm;
+                font-size: $font-size-sm;
+            }
         }
 
         .k-event-actions {
