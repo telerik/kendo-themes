@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Form</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        section {
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <section>
+            <form class="k-form">
+                <fieldset>
+                    <legend>User Details</legend>
+
+                    <label class="k-form-field">
+                        <span>First Name</span>
+                        <input class="k-textbox" placeholder="Your Name">
+                    </label>
+                    <label class="k-form-field">
+                        <span>Last Name</span>
+                        <input class="k-textbox" placeholder="Your Last Name" value="Batista">
+                    </label>
+                    <div class="k-form-field">
+                        <span>Gender</span>
+
+                        <input class="k-radio" id="female" name="gender" type="radio">
+                        <label class="k-radio-label" for="female">Female</label>
+
+                        <input checked="checked" class="k-radio" id="male" name="gender" type="radio">
+                        <label class="k-radio-label" for="male">Male</label>
+                    </div>
+                    <label class="k-form-field">
+                        <span>Email <span class="k-required">*</span></span>
+                        <input class="k-textbox" placeholder="Your Email" type="email" value="bernardo.batista@progress.com">
+                    </label>
+                    <label class="k-form-field">
+                        <span>Company<span class="k-field-info">optional</span></span>
+                        <input class="k-textbox" placeholder="Your Company" autocomplete="off">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Credentials</legend>
+                    <label class="k-form-field">
+                        <span>Username</span>
+                        <input class="k-textbox" placeholder="Your username" value="bbatista">
+                    </label>
+                    <label class="k-form-field">
+                        <span>Password</span>
+                        <input class="k-textbox" placeholder="Your password" type="password" value="123456">
+                    </label>
+                    <label class="k-form-field">
+                        <input checked="checked" class="k-checkbox" id="auth-2fa" type="checkbox">
+                        <label class="k-checkbox-label" for="auth-2fa">Enable two-factor authentication</label>
+                    </label>
+                    <label class="k-form-field">
+                        <kendo-switch dir="ltr" class="k-widget k-switch k-switch-on">
+                            <span class="k-switch-container">
+                                <span class="k-switch-label-on">On</span>
+                                <span class="k-switch-label-off">Off</span>
+                                <span class="k-switch-handle"></span>
+                            </span>
+                        </kendo-switch>
+                        <kendo-switch dir="ltr" class="k-widget k-switch k-switch-off">
+                            <span class="k-switch-container">
+                                <span class="k-switch-label-on">On</span>
+                                <span class="k-switch-label-off">Off</span>
+                                <span class="k-switch-handle"></span>
+                            </span>
+                        </kendo-switch>
+                    </label>
+                </fieldset>
+
+                <div class="text-right">
+                    <button class="k-button" type="button">Cancel</button>
+                    <button class="k-button k-primary" type="button">Submit</button>
+                </div>
+            </form>
+        </section>
+
+    </div>
+
+</body>
+</html>
