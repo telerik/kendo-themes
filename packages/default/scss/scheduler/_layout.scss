@@ -777,6 +777,10 @@
         .k-scheduler-views {
             li:first-child + li { @include border-right-radius-only(); }
             li:last-child { @include border-left-radius-only(); }
+
+            .k-current-view .k-link::after {
+                margin: 0 1ex 0 0;
+            }
         }
 
         .k-scheduler-navigation  {
