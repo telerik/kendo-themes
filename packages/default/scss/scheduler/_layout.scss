@@ -147,13 +147,6 @@
         }
         .k-nav-today { @include border-left-radius-only(); }
         .k-nav-next { @include border-right-radius-only(); }
-
-        .k-rtl & {
-            .k-i-arrow-60-left,
-            .k-i-arrow-60-right {
-                transform: scaleX(-1);
-            }
-        }
     }
 
     .k-scheduler-tools {
@@ -260,13 +253,6 @@
     .k-scheduler-layout.k-scheduler-flex-layout {
         display: flex;
         flex-direction: column;
-
-        &.k-scheduler-timeline-view,
-        &.k-scheduler-timeline-week-view,
-        &.k-scheduler-timeline-month-view {
-
-            .k-scheduler-header-wrap { border-width: 0; }
-        }
 
         &.k-scheduler-weekview,
         &.k-scheduler-dayview {
@@ -760,6 +746,8 @@
 
         .k-event {
             text-align: right;
+            padding-right: 0;
+            padding-left: $padding-x;
 
             .k-resize-w {
                 left: auto;
@@ -777,6 +765,7 @@
             }
 
             .k-event-actions:first-child {
+                margin: $padding-y-sm $padding-x-sm 0 .4ex;
                 float: right;
             }
         }
@@ -832,6 +821,27 @@
         .k-scheduler-edit-form .k-scheduler-delete {
             float: right;
         }
-    }
 
+        .k-scheduler,
+        &.k-scheduler
+        {
+            .k-i-arrow-60-left,
+            .k-i-arrow-60-right,
+            .k-current-time-arrow-right
+            {
+                transform: scaleX(-1);
+            }
+
+            .k-scheduler-header-wrap {
+                border-right-width: 0;
+                border-left-width: 1px;
+            }
+
+            .k-scheduler-agendaday {
+                float: right;
+                margin: 0 0 0 .2em;
+            }
+        }
+    }
 }
+
