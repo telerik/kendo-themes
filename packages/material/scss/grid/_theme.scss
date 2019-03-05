@@ -82,11 +82,11 @@
                 background-color: $grid-filter-button-focus;
                 box-shadow: none;
             }
-        }
 
-        .k-grid-filter.k-state-active {
-            color: $accent-contrast;
-            background-color: $accent;
+            &.k-state-active {
+                color: $accent-contrast;
+                background-color: $accent;
+            }
         }
 
         thead > tr:not(:only-child) > th {
