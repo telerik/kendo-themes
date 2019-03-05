@@ -154,17 +154,20 @@
             color: $grid-sorting-indicator-text;
         }
 
-        .k-grid-filter {}
-        .k-grid-filter:hover {
-            color: $button-hovered-text;
-            background-color: $button-hovered-bg;
-        }
-        .k-grid-filter:focus {
-            box-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .1 );
-        }
-        .k-grid-filter.k-state-active {
-            color: $selected-text;
-            background-color: $selected-bg;
+        .k-grid-filter,
+        .k-header-column-menu,
+        .k-hierarchy-cell .k-icon {
+            &:hover {
+                color: $button-hovered-text;
+                background-color: $button-hovered-bg;
+            }
+            &:focus {
+                box-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .1 );
+            }
+            &.k-state-active {
+                color: $selected-text;
+                background-color: $selected-bg;
+            }
         }
     }
 
