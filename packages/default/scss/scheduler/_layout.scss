@@ -224,6 +224,11 @@
             &.k-state-expanded {
                 li { display: block; }
             }
+
+            .k-rtl & {
+                left: $toolbar-padding-x;
+                right: auto;
+            }
         }
     }
 
