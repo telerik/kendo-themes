@@ -21,12 +21,20 @@ $button-disabled-text: rgba(0, 0, 0, .38) !default;
         &.k-state-active {
             box-shadow: $button-pressed-shadow;
         }
+
+        &.k-state-disabled {
+
+            &,
+            &:hover,
+            &:focus,
+            &.k-state-focused {
+                color: $button-disabled-text;
+                opacity: 1;
+            }
+        }
+
     }
-    .k-button.k-state-disabled,
-    .k-button.k-state-disabled:hover {
-        color: $button-disabled-text;
-        opacity: 1;
-    }
+
     .k-button:not(#{$not-button-selector}).k-state-disabled {
         background-color: $button-disabled-bg;
         box-shadow: none !important; // sass-lint:disable-line no-important

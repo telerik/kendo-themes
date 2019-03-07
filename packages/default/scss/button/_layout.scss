@@ -25,8 +25,14 @@
 
         // TODO: extend disabled selector
         &[disabled],
-        [disabled] & {
-            @extend %disabled;
+        [disabled] &,
+        &.k-state-disabled {
+
+            &,
+            &:focus,
+            &.k-state-focused {
+                @extend %disabled;
+            }
         }
 
         &::-moz-focus-inner {
