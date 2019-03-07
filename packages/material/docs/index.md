@@ -21,6 +21,12 @@ The Kendo UI Material theme is available through the @progress/kendo-theme-mater
     npm install --save @progress/kendo-theme-material
     ```
 
+1. Import the CSS file from the package.
+
+    ```sh
+      import '@progress/kendo-theme-material/dist/all.css';
+    ```
+
 1. Include the Material theme in your application according to the instructions in the article on [styling]({% slug themesandstyles %}).
 
 ## Dependencies
