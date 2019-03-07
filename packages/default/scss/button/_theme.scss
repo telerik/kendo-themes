@@ -53,6 +53,13 @@
         &:focus,
         &.k-state-focused {
             box-shadow: $primary-button-focused-shadow;
+
+
+            &[disabled],
+            [disabled] &,
+            &.k-state-disabled {
+                box-shadow: none;
+            }
         }
 
         // Active state

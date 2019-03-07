@@ -28,7 +28,7 @@
             color: $accent;
 
             &:hover,
-            &.k-state-hvoer {
+            &.k-state-hover {
                 @include appearance( hovered-primary-button );
                 border-color: inherit;
 
