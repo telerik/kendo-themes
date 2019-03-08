@@ -31,7 +31,7 @@ The Kendo UI Bootstrap theme is available through the @progress/kendo-theme-boot
 
     If you include the Bootstrap framework from its source, you have to add `kendo-theme-bootstrap` and any variable customizations before you import the Bootstrap framework.
 
-    ```sh
+    ```css
       // Set the variables here.
       
       @import "~@progress/kendo-theme-bootstrap/scss/all";
