@@ -21,6 +21,12 @@ The Kendo UI Bootstrap theme is available through the @progress/kendo-theme-boot
     npm install --save @progress/kendo-theme-bootstrap
     ```
 
+1. Import the CSS file from the package.
+
+    ```sh
+      import '@progress/kendo-theme-bootstrap/dist/all.css';
+    ```
+
 1. Apply the Bootstrap theme options according to the instructions in the article on [styling]({% slug themesandstyles %}).
 
 ## Preview

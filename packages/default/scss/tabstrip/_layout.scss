@@ -305,14 +305,25 @@
 
 
 @include exports("tabstrip/layout/rtl") {
+    .k-rtl .k-tabstrip,
+    .k-tabstrip[dir="rtl"] {
 
-    .k-tabstrip-left,
-    .k-tabstrip-right {
-
-        .k-rtl &,
-        &[dir="rtl"] {
+        &.k-tabstrip-left,
+        &.k-tabstrip-right {
             > .k-tabstrip-items { order: 1; }
             > .k-content { order: 0; }
+        }
+
+        .k-tabstrip-prev {
+            left: auto;
+            right: 0;
+            transform: scaleX(-1);
+        }
+
+        .k-tabstrip-next {
+            left: 0;
+            right: auto;
+            transform: scaleX(-1);
         }
 
     }
