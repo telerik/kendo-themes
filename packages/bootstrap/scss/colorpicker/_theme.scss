@@ -14,6 +14,7 @@
         }
 
         // Hovered state
+        .k-picker-wrap:hover,
         .k-state-hover {
             @include appearance( hovered-button );
         }
