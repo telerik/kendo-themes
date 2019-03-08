@@ -56,6 +56,10 @@
             &::before {
                 @include border-radius( $toolbar-button-border-radius );
             }
+
+            .k-ie11 & {
+                display: inline-flex;
+            }
         }
 
         // Toggle button

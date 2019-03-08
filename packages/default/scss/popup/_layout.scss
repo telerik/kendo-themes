@@ -248,6 +248,10 @@ $popup-filter-padding-x: $input-padding-x !default;
             .k-icon {
                 margin: 0 $icon-spacing 0 0;
             }
+
+            .k-ie11 & {
+                display: flex;
+            }
         }
 
         // Button disabled state
