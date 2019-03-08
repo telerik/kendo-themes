@@ -417,7 +417,6 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
 @include exports( "chat/toolbar/layout" ) {
 
     .k-chat .k-toolbar-box {
-        padding: $chat-toolbar-padding-y $chat-toolbar-padding-x;
         width: 100%;
         box-sizing: border-box;
         overflow: hidden;
@@ -434,6 +433,13 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
             overflow: hidden;
             // overflow-x: auto;
             scroll-behavior: smooth;
+            padding: $chat-toolbar-padding-y $chat-toolbar-padding-x;
+
+            // fix for flex container disregarding the right padding
+            &:after {
+                content: '';
+                padding-right: $chat-toolbar-padding-x;
+            }
 
             .k-button + .k-button {
                 margin-left: $chat-toolbar-spacing;

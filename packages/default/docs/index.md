@@ -21,6 +21,12 @@ The Kendo UI Default theme is available through the @progress/kendo-theme-defaul
     npm install --save @progress/kendo-theme-default
     ```
 
+1. Import the CSS file from the package
+
+    ```sh
+      import '@progress/kendo-theme-default/dist/all.css';
+    ```
+
 1. Apply the Default theme options according to the instructions in the article on [styling]({% slug themesandstyles %}).
 
 ## Preview
