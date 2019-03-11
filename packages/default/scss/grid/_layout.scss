@@ -585,7 +585,8 @@
 
             .k-ie &,
             .k-edge & {
-                margin-right: calc( 1em + #{ $grid-header-menu-icon-spacing } + #{ $button-padding-y });
+                margin: 0;
+                padding: 0;
             }
 
         }
@@ -596,7 +597,7 @@
 
             .k-ie &,
             .k-edge & {
-                padding-right: $grid-header-padding-x;
+                padding-right: calc( #{ button-size() } + #{ $grid-header-menu-icon-spacing });
             }
         }
 
@@ -625,9 +626,9 @@
             .k-edge & {
                 position: static;
                 float: right;
-                width: auto;
-                height: auto;
-                padding: $button-padding-y-sm;
+                margin-top: calc( (#{ button-size() } - #{ $form-line-height * 1em}) / -2);
+                margin-bottom: calc( (#{ button-size() } - #{ $form-line-height * 1em}) / -2);
+                margin-right: calc( -1 * #{ button-size() });
             }
         }
 
