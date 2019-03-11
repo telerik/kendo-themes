@@ -67,6 +67,13 @@
             cursor: pointer;
         }
 
+        // Drag and Drop icon
+        .k-i-drag-and-drop {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+
         // Other content
         .k-in .k-icon,
         .k-in .k-image,
