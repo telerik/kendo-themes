@@ -44,7 +44,9 @@
 
     .k-list .k-item,
     .k-list-optionlabel {
-        transition: all .2s ease; // sass-lint:disable-block no-transition-all
+        transition-property: color, background-color, outline-color, box-shadow;
+        transition-duration: 200ms;
+        transition-timing-function: ease;
     }
 
     .k-list .k-item:hover,
