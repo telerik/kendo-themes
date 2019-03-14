@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.3.2"></a>
+## 2.3.2 (2019-03-14)
+
+
+### Bug Fixes
+
+* **buttons:** use correct color for .k-button.k-flat:hover.k-state-active ([eebad66](https://github.com/telerik/kendo-themes/commit/eebad66))
+* **grid:** added active styles for grid column menu ([dfd1bc6](https://github.com/telerik/kendo-themes/commit/dfd1bc6))
+* **grid:** grouping header text overflows with frozen columns ([779a216](https://github.com/telerik/kendo-themes/commit/779a216))
+* **scheduler:** angular material padding ([aca6886](https://github.com/telerik/kendo-themes/commit/aca6886))
+* **scheduler:** month view style improvements ([e3dc082](https://github.com/telerik/kendo-themes/commit/e3dc082))
+* **toolbar:** added min-height ([452f4c0](https://github.com/telerik/kendo-themes/commit/452f4c0))
+
+
+
+
 <a name="2.3.1"></a>
 ## [2.3.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@2.3.0...@progress/kendo-theme-material@2.3.1) (2019-02-19)
 

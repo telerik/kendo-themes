@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.3"></a>
+## 3.2.3 (2019-03-14)
+
+
+### Bug Fixes
+
+* upgrade theme dependency to bootstrap 4.3.1 ([eedd116](https://github.com/telerik/kendo-themes/commit/eedd116))
+* **buttons:** use correct color for .k-button.k-flat:hover.k-state-active ([eebad66](https://github.com/telerik/kendo-themes/commit/eebad66))
+* **colorpicker:** wrapper hover styles not applied ([0f5ea5e](https://github.com/telerik/kendo-themes/commit/0f5ea5e))
+* **dropdowns:** remove list items transform transitions ([71f3982](https://github.com/telerik/kendo-themes/commit/71f3982))
+* **grid:** added active styles for grid column menu ([dfd1bc6](https://github.com/telerik/kendo-themes/commit/dfd1bc6))
+* **grid:** grouping header text overflows with frozen columns ([779a216](https://github.com/telerik/kendo-themes/commit/779a216))
+* **scheduler:** decreasing bootstrap padding in angular ([8ad054c](https://github.com/telerik/kendo-themes/commit/8ad054c))
+* **scheduler:** month view style improvements ([e3dc082](https://github.com/telerik/kendo-themes/commit/e3dc082))
+* **toolbar:** added min-height ([452f4c0](https://github.com/telerik/kendo-themes/commit/452f4c0))
+
+
+
+
 <a name="3.2.2"></a>
 ## [3.2.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@3.2.1...@progress/kendo-theme-bootstrap@3.2.2) (2019-02-19)
 
