@@ -66,7 +66,7 @@ then
   curl -s -H "$auth" -H "Accept: application/json" -H "Content-Type: application/json" -X GET "$repo" > /dev/null 2>&1
 
   # Push to develop
-  if ! (git push origin master:develop --quiet > /dev/null 2>&1)
+  if ! (git push origin master:develop)
   then
       echo "Could not push changelog commit to develop. Push the changelog commit manually to the develop branch."
       echo "If this commit is not pushed promptly, develop and master will diverge and will require a force push on the next release."
