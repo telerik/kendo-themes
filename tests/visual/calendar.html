@@ -900,6 +900,125 @@
             </kendo-calendar>
         </section>
 
+        <span class="col-6">angular calendar empty cells</span>
+
+        <section class="col-6">
+            <kendo-calendar class="k-widget k-calendar k-calendar-infinite" tabindex="0">
+               <kendo-calendar-navigation class="k-calendar-navigation">
+                  <span class="k-calendar-navigation-highlight"></span>
+                  <kendo-virtualization class="k-content k-scrollable">
+                     <ul class="k-reset" style="transform: translateY(136px);">
+                        <li data-date-index="0">
+                           <span>
+                              2018
+                           </span>
+                        </li>
+                        <li data-date-index="1">
+                           <span>
+                              2019
+                           </span>
+                        </li>
+                     </ul>
+                     <div class="k-scrollable-placeholder" style="height: 328px;"></div>
+                  </kendo-virtualization>
+               </kendo-calendar-navigation>
+               <kendo-calendar-viewlist class="k-calendar-view k-calendar-yearview">
+                  <kendo-calendar-header class="k-calendar-header">
+                     <span class="k-button k-bare k-title">
+                            2019
+                     </span>
+                     <span class="k-today">
+                     TODAY
+                     </span>
+                  </kendo-calendar-header>
+                  <kendo-virtualization class="k-content k-scrollable">
+                     <table style="transform: translateY(-35px);">
+                        <colgroup>
+                           <col>
+                           <col>
+                           <col>
+                           <col>
+                           <col>
+                        </colgroup>
+                        <tbody>
+                           <tr>
+                              <th scope="col" colspan="5">2018</th>
+                           </tr>
+                           <tr>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td title="2018 Nov">
+                                <span class="k-link">
+                                    Nov
+                                </span>
+                              </td>
+                              <td title="2018 Dec">
+                                <span class="k-link">
+                                    Dec
+                                </span>
+                              </td>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                           </tr>
+                        </tbody>
+                        <tbody>
+                           <tr>
+                              <th scope="col" colspan="5">2019</th>
+                           </tr>
+                           <tr>
+                              <td title="2019 Jan">
+                                <span class="k-link">
+                                    Jan
+                                </span>
+                              </td>
+                              <td title="2019 Feb">
+                                 <span class="k-link">
+                                    Feb
+                                  </span>
+                              </td>
+                              <td class="k-today" title="2019 Mar">
+                                 <span class="k-link">
+                                    Mar
+                                  </span>
+                              </td>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                              <td class="k-empty">&nbsp;</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <div class="k-scrollable-placeholder" style="height: 435px;"></div>
+                  </kendo-virtualization>
+               </kendo-calendar-viewlist>
+            </kendo-calendar>
+        </section>
+
     </div>
 
 </body>
