@@ -2,10 +2,10 @@
 
     .k-tooltip-validation {
         margin: ($spacer / 2) 0 0;
-        padding: 0;
         position: static;
         border-width: 0;
         display: inline-flex;
+        flex-direction: row;
         align-items: center;
 
         &[hidden] {
