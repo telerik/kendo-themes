@@ -315,7 +315,8 @@
                         height: auto;
                     }
 
-                    .k-link {
+                    .k-link,
+                    td.k-empty {
                         width: $cell-size;
                         height: $cell-size;
                     }
