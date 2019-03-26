@@ -11,6 +11,14 @@
             .k-select {
                 align-self: unset;
             }
+
+            & + .k-button {
+                margin: ($input-padding-y / 2) 0 0 ($input-padding-y / 2);
+            }
+
+            &:last-child {
+                margin-bottom: $input-padding-y / 2;
+            }
         }
 
         &[dir='rtl'],

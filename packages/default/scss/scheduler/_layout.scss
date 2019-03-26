@@ -53,6 +53,10 @@
         .k-middle-row td {
             border-bottom-style: dotted;
         }
+
+        .k-link {
+            cursor: pointer;
+        }
     }
 
     %ul-button-group {
@@ -254,6 +258,22 @@
             padding: 0;
             vertical-align: top;
         }
+
+        /* Remove bottom border from first cell of hours cells spaning on two rows */
+        tr + tr,
+        .k-scheduler-pane + .k-scheduler-pane {
+            .k-scheduler-times tr {
+                th {
+                    border-bottom-color: transparent;
+                }
+
+                .k-slot-cell,
+                .k-scheduler-times-all-day,
+                &:last-child th {
+                    border-bottom-color: inherit;
+                }
+            }
+        }
     }
     .k-scheduler-layout.k-scheduler-flex-layout {
         display: flex;
@@ -278,7 +298,7 @@
         overflow: hidden;
     }
     .k-scheduler-header-wrap {
-        border-width: 0 1px 0 0;
+        border-width:  0;
         border-style: solid;
         position: relative;
     }
@@ -292,10 +312,6 @@
         th {
             border-width: 0 1px 1px 0;
             text-align: right;
-        }
-
-        tr+tr th {
-            border-bottom-color: transparent;
         }
 
         .k-slot-cell,
@@ -468,6 +484,7 @@
         width: 1em;
         height: 1em;
         display: inline-block;
+        vertical-align: middle;
     }
 
 
@@ -641,11 +658,15 @@
             vertical-align: middle;
         }
 
-        .k-scheduler-table td:first-child {
-            border-left-width: 1px;
-        }
-        .k-scheduler-table td.k-first {
-            border-left-width: 0;
+        .k-scheduler-table {
+            th:first-child,
+            td:first-child {
+                border-left-width: 1px;
+            }
+
+            td.k-first {
+                border-left-width: 0;
+            }
         }
 
         .k-task > .k-event-delete {
@@ -740,8 +761,20 @@
     .k-rtl {
         .k-scheduler-header th,
         .k-scheduler-table td {
-            border-left-width: 0;
-            border-right-width: 1px;
+            border-width: 0 1px 1px 0;
+        }
+
+        .k-scheduler-table {
+            td,
+            th {
+                &:first-child {
+                    border-right-width: 0;
+                }
+            }
+        }
+
+        .k-scheduler-times th {
+            border-width: 0 0 1px 1px;
         }
 
         .k-scheduler .k-scrollbar-v .k-scheduler-header-wrap {
@@ -832,23 +865,34 @@
         }
 
         .k-scheduler,
-        &.k-scheduler
-        {
+        &.k-scheduler {
             .k-i-arrow-60-left,
             .k-i-arrow-60-right,
-            .k-current-time-arrow-right
-            {
+            .k-current-time-arrow-right {
                 transform: scaleX(-1);
             }
 
             .k-scheduler-header-wrap {
                 border-right-width: 0;
-                border-left-width: 1px;
             }
 
             .k-scheduler-agendaday {
                 float: right;
                 margin: 0 0 0 .2em;
+            }
+
+            .k-scheduler-agendaview .k-scheduler-table {
+                td:first-child,
+                th:first-child {
+                    border-left-width: 0;
+                }
+
+                tr + tr {
+                    td:first-child,
+                    th:first-child {
+                        border-right-width: 1px;
+                    }
+                }
             }
         }
     }
