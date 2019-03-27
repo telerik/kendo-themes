@@ -37,7 +37,7 @@ By default, the Material theme uses the Roboto font family but the font itself i
 
 You can add the font to the page from Google Fonts in the following way:
 
-```html
+```html-no-run
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
 <style>
   body { font-family: Roboto, sans-serif; }
