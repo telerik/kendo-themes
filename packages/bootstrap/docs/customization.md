@@ -31,7 +31,6 @@ The following table lists the available variables for customizing the Bootstrap 
 ### Common
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -42,8 +41,6 @@ The following table lists the available variables for customizing the Bootstrap 
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$border-radius</td>
 <td>
@@ -161,14 +158,12 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>The gradient background of selected items.
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Buttons
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -179,8 +174,6 @@ The following table lists the available variables for customizing the Bootstrap 
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$button-bg</td>
 <td>
@@ -298,14 +291,12 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>The shadow of focused buttons.
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Charts
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -316,8 +307,6 @@ The following table lists the available variables for customizing the Bootstrap 
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$series-a</td>
 <td>
@@ -390,14 +379,12 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>The color of the Chart grid lines (minor).
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Color System
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -408,8 +395,6 @@ The following table lists the available variables for customizing the Bootstrap 
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$accent</td>
 <td>
@@ -502,14 +487,12 @@ Used to provide contrast between the background and foreground colors.
 <td>Light color for use in YIQ color contrast function.
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Fonts
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -520,8 +503,6 @@ Used to provide contrast between the background and foreground colors.
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$font-size</td>
 <td>
@@ -558,14 +539,12 @@ Used to provide contrast between the background and foreground colors.
 <td>Line height used along with $font-size.
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Icons
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -576,8 +555,6 @@ Used to provide contrast between the background and foreground colors.
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$icon-font-url</td>
 <td>
@@ -588,14 +565,12 @@ Used to provide contrast between the background and foreground colors.
 The default value of `null` embeds the package font with a `data:` URL
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Toolbar
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -606,8 +581,6 @@ The default value of `null` embeds the package font with a `data:` URL
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$toolbar-padding-x</td>
 <td>
@@ -626,7 +599,6 @@ The default value of `null` embeds the package font with a `data:` URL
 <td>The vertical padding of the container.
 </td>
 </tr>
-</tbody>
 </table>
 
 

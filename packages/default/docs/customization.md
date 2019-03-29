@@ -31,15 +31,12 @@ The following table lists the available variables for customizing the Default th
 ### Common
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
 <col />
 </colgroup>
 <tr>
-</thead>
-<tbody>
 <th>Name</th>
 <th>Default value</th>
 <th>Description</th>
@@ -217,14 +214,12 @@ Used to provide contrast between the background and foreground colors.
 <td>The gradient background of selected items.
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Buttons
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -235,8 +230,6 @@ Used to provide contrast between the background and foreground colors.
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$button-text</td>
 <td>
@@ -354,14 +347,12 @@ Used to provide contrast between the background and foreground colors.
 <td>The shadow of focused buttons.
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Charts
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -372,8 +363,6 @@ Used to provide contrast between the background and foreground colors.
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$series-a</td>
 <td>
@@ -446,14 +435,12 @@ Used to provide contrast between the background and foreground colors.
 <td>The color of the Chart grid lines (minor).
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Fonts
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -464,8 +451,6 @@ Used to provide contrast between the background and foreground colors.
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$font-size</td>
 <td>
@@ -502,14 +487,12 @@ Used to provide contrast between the background and foreground colors.
 <td>Line height used along with $font-size.
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Grid
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -520,8 +503,6 @@ Used to provide contrast between the background and foreground colors.
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<thbody>
 <tr>
 <td>$grid-alt-bg</td>
 <td>
@@ -532,14 +513,12 @@ Used to provide contrast between the background and foreground colors.
 Set to transparent to remove the row stripes.
 </td>
 </tr>
-<tbody>
 </table>
 
 
 ### Icons
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -550,8 +529,6 @@ Set to transparent to remove the row stripes.
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$icon-font-url</td>
 <td>
@@ -562,22 +539,18 @@ Set to transparent to remove the row stripes.
 The default value of `null` embeds the package font with a `data:` URL
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Toolbar
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
 <col />
 </colgroup>
 <tr>
-</thead>
-<tbody>
 <th>Name</th>
 <th>Default value</th>
 <th>Description</th>
@@ -600,7 +573,6 @@ The default value of `null` embeds the package font with a `data:` URL
 <td>The vertical padding of the container.
 </td>
 </tr>
-</tbody>
 </table>
 
 

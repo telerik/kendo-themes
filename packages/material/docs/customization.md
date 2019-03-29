@@ -31,7 +31,6 @@ The following table lists the available variables for customizing the Material t
 ### Common
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -42,8 +41,6 @@ The following table lists the available variables for customizing the Material t
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$font-family-monospace</td>
 <td>
@@ -245,14 +242,12 @@ Used to provide contrast between the background and foreground colors.
 <td>The color for informational messages and states.
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Buttons
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -263,8 +258,6 @@ Used to provide contrast between the background and foreground colors.
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$button-bg</td>
 <td>
@@ -382,14 +375,12 @@ Used to provide contrast between the background and foreground colors.
 <td>The shadow of focused buttons.
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Charts
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -400,8 +391,6 @@ Used to provide contrast between the background and foreground colors.
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$series-a</td>
 <td>
@@ -474,14 +463,12 @@ Used to provide contrast between the background and foreground colors.
 <td>The color of the Chart grid lines (minor).
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Fonts
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -492,8 +479,6 @@ Used to provide contrast between the background and foreground colors.
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$font-size</td>
 <td>
@@ -521,14 +506,12 @@ Used to provide contrast between the background and foreground colors.
 <td>Line height used along with $font-size.
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Icons
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -539,8 +522,6 @@ Used to provide contrast between the background and foreground colors.
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$icon-font-url</td>
 <td>
@@ -551,14 +532,12 @@ Used to provide contrast between the background and foreground colors.
 The default value of `null` embeds the package font with a `data:` URL
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Shadows
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -569,8 +548,6 @@ The default value of `null` embeds the package font with a `data:` URL
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$elevation</td>
 <td>
@@ -630,14 +607,12 @@ Equivalent to material elevation 16.
 Equivalent to material elevation 24.
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Tabstrip
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -648,8 +623,6 @@ Equivalent to material elevation 24.
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$tabstrip-bg</td>
 <td>
@@ -677,14 +650,12 @@ Equivalent to material elevation 24.
 <td>Active tab indicator color. Set to `currentColor` to use the text color
 </td>
 </tr>
-</tbody>
 </table>
 
 
 ### Toolbar
 
 <table class="theme-variables">
-<thead>
 <colgroup>
 <col style="white-space:nowrap; width: 200px" />
 <col style="width: 250px" />
@@ -695,8 +666,6 @@ Equivalent to material elevation 24.
 <th>Default value</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>$toolbar-padding-x</td>
 <td>
@@ -715,7 +684,6 @@ Equivalent to material elevation 24.
 <td>The vertical padding of the container.
 </td>
 </tr>
-</tbody>
 </table>
 
 
