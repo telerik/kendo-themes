@@ -889,6 +889,8 @@ $multiviewcalendar-button-size: 44px !default;
 $multiviewcalendar-gap: ($calendar-content-padding-x * 2) !default;
 $multiviewcalendar-content-padding-x: ($multiviewcalendar-gap / 2);
 $multiviewcalendar-content-padding-y: 0;
+$multiviewcalendar-navigation-margin-x: #{add-three( 2 * $calendar-header-padding-y, $calendar-header-height, 2 * $button-border-width) };
+$multiviewcalendar-navigation-margin-y: 0;
 
 
 // Chat
