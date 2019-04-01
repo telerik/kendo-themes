@@ -761,18 +761,6 @@ $disabled-opacity: .65 !default;
 $pager-padding-x: $toolbar-padding-x !default;
 $pager-padding-y: $toolbar-padding-y !default;
 
-$pager-numbers-position: calc(
-    #{add-three( 2 * $button-border-width, 2 * $button-padding-y, $button-line-height * 1em, 2)} +
-    #{1.5 * $pager-padding-x}
-) !default;
-
-$pager-numbers-margin: calc(
-    #{add-three( 2 * $button-border-width, 2 * $button-padding-y, $button-line-height * 1em, 2)} +
-    #{$pager-padding-x} +
-    #{2 * $button-border-width}
-) !default;
-
-
 // Card
 $card-padding-x: $card-spacer-x !default;
 $card-padding-y: $card-spacer-y !default;
