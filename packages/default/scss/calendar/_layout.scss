@@ -570,13 +570,14 @@
             > .k-button {
                 @extend .k-bare;
                 width: auto;
-                padding: 0;
                 height: auto;
                 opacity: 0.6;
                 transition: opacity .2s ease-in-out;
+                padding: 0;
                 margin: $multiviewcalendar-navigation-margin-x  $multiviewcalendar-navigation-margin-y;
 
-                &:hover {
+                &:hover,
+                &:active {
                     opacity: 1;
                     transition: opacity .2s ease-in-out;
 
