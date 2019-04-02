@@ -574,7 +574,7 @@
                 opacity: 0.6;
                 transition: opacity .2s ease-in-out;
                 padding: 0;
-                margin: $multiviewcalendar-navigation-margin-x  $multiviewcalendar-navigation-margin-y;
+                margin: $multiviewcalendar-navigation-margin-y $multiviewcalendar-navigation-margin-x;
 
                 &:hover,
                 &:active {
