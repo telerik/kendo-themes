@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@2.3.2...@progress/kendo-theme-material@2.4.0) (2019-04-08)
+
+
+### Bug Fixes
+
+* **buttons:** disabled focused buttons styles in mozilla ([961f592](https://github.com/telerik/kendo-themes/commit/961f592))
+
+
+### Features
+
+* **calendar:** add styles for Blazor calendar ([8987d65](https://github.com/telerik/kendo-themes/commit/8987d65))
+* **pager:** rendering changes and styles ([0a5642b](https://github.com/telerik/kendo-themes/commit/0a5642b))
+* **validator:** layout changes ([add9c9c](https://github.com/telerik/kendo-themes/commit/add9c9c))
+
+
+
+
 <a name="2.3.2"></a>
 ## 2.3.2 (2019-03-14)
 
