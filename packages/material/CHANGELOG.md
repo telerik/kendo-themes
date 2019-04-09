@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.4.1"></a>
+## [2.4.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@2.4.0...@progress/kendo-theme-material@2.4.1) (2019-04-09)
+
+
+### Bug Fixes
+
+* **toolbar:** wrong primary button appearance in Material ([21af366](https://github.com/telerik/kendo-themes/commit/21af366))
+
+
+
+
 <a name="2.4.0"></a>
 # [2.4.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@2.3.2...@progress/kendo-theme-material@2.4.0) (2019-04-08)
 

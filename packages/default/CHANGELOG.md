@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.5.1"></a>
+## [3.5.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@3.5.0...@progress/kendo-theme-default@3.5.1) (2019-04-09)
+
+
+### Bug Fixes
+
+* **splitter:** flex splitter does not collapse under IE 11 ([67cd949](https://github.com/telerik/kendo-themes/commit/67cd949))
+* **toolbar:** add styles for flexible spacer ([369fc6b](https://github.com/telerik/kendo-themes/commit/369fc6b))
+* **toolbar:** wrong primary button appearance in Material ([21af366](https://github.com/telerik/kendo-themes/commit/21af366))
+
+
+
+
 <a name="3.5.0"></a>
 # [3.5.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@3.4.0...@progress/kendo-theme-default@3.5.0) (2019-04-08)
 
