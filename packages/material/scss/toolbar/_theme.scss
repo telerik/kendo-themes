@@ -3,18 +3,20 @@
 @include exports("toolbar/theme/material") {
 
     .k-toolbar {
+        @include appearance( toolbar );
 
-        background-color: $toolbar-bg;
 
-        .k-dropdown-button,
-        .k-split-button,
-        .k-button {
+        .k-dropdown-button:not(.k-primary),
+        .k-split-button:not(.k-primary),
+        .k-button:not(.k-primary) {
             background-color: initial;
         }
 
         .k-button.k-state-disabled,
         .k-state-disabled > .k-button {
             color: $button-disabled-text;
+            // TODO: this we need to rework the buttons
+            background-color: transparent !important; // sass-lint:disable-line no-important
         }
 
         // Split button
