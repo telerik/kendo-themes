@@ -402,6 +402,7 @@
 
     .k-fx-hidden,
     .k-fx-hidden * {
+        // sass-lint:disable-block no-important
         visibility: hidden !important;
     }
 
@@ -417,6 +418,7 @@
 
     // Zoom
     .k-fx-zoom {
+        // sass-lint:disable-block no-important
         &.k-fx-start .k-fx-next {
             transform: scale(0) !important;
         }
