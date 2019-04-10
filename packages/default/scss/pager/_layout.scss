@@ -45,6 +45,12 @@
         > .k-pager-nav {}
         > .k-pager-nav + .k-pager-nav {}
 
+        .k-pager-numbers-wrap {
+            width: auto;
+            height: auto;
+            position: relative;
+            display: inline-flex;
+        }
 
         .k-pager-numbers {
             display: inline-flex;
@@ -119,25 +125,26 @@
             position: relative;
             overflow: visible;
 
+            .k-pager-nav + .k-pager-numbers-wrap {
+                width: button-size(2);
+                height: button-size();
+                box-sizing: border-box;
+                border-color: inherit;
+                margin: 0 $pager-padding-x;
+            }
+
             .k-pager-numbers {
                 @include border-radius();
                 position: absolute;
                 overflow: hidden;
-                left: $pager-numbers-position;
                 flex-direction: column-reverse;
-                height: auto;
-                bottom: 50%;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                bottom: 0;
                 z-index: 3;
                 border-style: solid;
                 border-width: $button-border-width;
-
-                // sass-lint:disable indentation
-                // do not use single translate + calc() because of IE10/11
-                transform: translateY($button-border-width)
-                            translateY($button-padding-y)
-                            translateY((($button-line-height * 1em) / 2))
-                            translateY($button-border-width);
-                // sass-lint:enable indentation
 
                 li:not(.k-current-page) {
                     display: none;
@@ -150,11 +157,14 @@
 
                 .k-link,
                 .k-state-selected {
+                    margin: 0;
                     border-width: 0;
                     width: button-size(2);
+                    height: button-size();
                 }
 
                 &.k-state-expanded {
+                    height: auto;
 
                     li {
                         display: inline-flex;
@@ -163,35 +173,6 @@
                     .k-current-page {
                         border-style: solid;
                         border-width: $button-border-width 0 0;
-                    }
-                }
-
-                + .k-link,
-                + .k-pager-input {
-                    margin-left: $pager-numbers-margin;
-                }
-
-                &:first-child { // move left when previousNext: false
-                    left: 1em;
-                }
-            }
-
-            .k-rtl &,
-            &[dir="rtl"],
-            [dir="rtl"] & {
-
-                .k-pager-numbers {
-                    left: auto;
-                    right: $pager-numbers-position;
-
-                    + .k-link,
-                    + .k-pager-input {
-                        margin-left: 0;
-                        margin-right: $pager-numbers-margin;
-                    }
-
-                    &:first-child { // move right when previousNext: false
-                        right: 1em;
                     }
                 }
             }

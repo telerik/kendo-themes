@@ -516,44 +516,92 @@
                 }
             }
 
-            @if $multiviewcalendar-button-style == stretched {
-                > .k-button {
-                    @extend .k-bare;
-                    border-radius: 0;
-                    width: $multiviewcalendar-button-size;
-                }
+            &:not(.k-calendar-minimal) {
+                @if $multiviewcalendar-button-style == stretched {
+                    > .k-button {
+                        @extend .k-bare;
+                        border-radius: 0;
+                        width: $multiviewcalendar-button-size;
+                    }
 
-                > .k-calendar-view {
-                    border-width: 0 1px;
-                    border-style: solid;
-                    border-color: inherit;
-                }
-            } @else if $multiviewcalendar-button-style == detached {
-                background-color: transparent;
-                border-width: 0;
-                overflow: visible;
+                    > .k-calendar-view {
+                        border-width: 0 1px;
+                        border-style: solid;
+                        border-color: inherit;
+                    }
+                } @else if $multiviewcalendar-button-style == detached {
+                    background-color: transparent;
+                    border-width: 0;
+                    overflow: visible;
 
-                > .k-calendar-view {
-                    $half-size: $multiviewcalendar-button-size / 2;
+                    > .k-calendar-view {
+                        $half-size: $multiviewcalendar-button-size / 2;
 
-                    border-width: $calendar-border-width;
-                    border-style: solid;
-                    border-color: inherit;
-                    padding: 0 add-two($half-size, $spacer-x);
-                    margin: 0 (-$half-size);
-                }
+                        border-width: $calendar-border-width;
+                        border-style: solid;
+                        border-color: inherit;
+                        padding: 0 add-two($half-size, $spacer-x);
+                        margin: 0 (-$half-size);
+                    }
 
-                > .k-button {
-                    align-self: center;
-                    width: $multiviewcalendar-button-size;
-                    height: $multiviewcalendar-button-size;
-                    border-radius: 50%;
+                    > .k-button {
+                        align-self: center;
+                        width: $multiviewcalendar-button-size;
+                        height: $multiviewcalendar-button-size;
+                        border-radius: 50%;
+                    }
                 }
             }
         }
-
     }
+}
 
+@include exports("multiviewcalendar/layout/minimal") {
+
+    .k-calendar.k-calendar-minimal {
+        &.k-calendar-infinite {
+            padding: 0 ($calendar-content-padding-x / 2);
+
+            .k-calendar-view,
+            .k-calendar-monthview {
+                padding: 0 ($calendar-content-padding-x / 2);
+            }
+
+            > .k-button {
+                @extend .k-bare;
+                width: auto;
+                height: auto;
+                opacity: 0.6;
+                transition: opacity .2s ease-in-out;
+                padding: 0;
+                margin: $multiviewcalendar-navigation-margin-y $multiviewcalendar-navigation-margin-x;
+
+                &:hover,
+                &:active {
+                    opacity: 1;
+                    transition: opacity .2s ease-in-out;
+
+                    &:before {
+                        opacity: 0;
+                    }
+                }
+
+                &:focus {
+                    &:after {
+                        opacity: 0;
+                    }
+                }
+
+                .k-icon {
+                    font-size: 1.5em;
+                }
+            }
+
+            > .k-calendar-view {
+                border-width: 0;
+            }
+        }
+    }
 }
 
 

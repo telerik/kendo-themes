@@ -1,10 +1,3 @@
-// Toolbar button types
-// null - default buttons type
-// thin - flat buttons appearance in the normal state and normal buttons appearance in other states
-// flat - flat buttons type
-// outline - outline buttons type
-$toolbar-button-mode: flat !default;
-
 @include exports("toolbar/theme") {
 
     // Theme
@@ -18,29 +11,6 @@ $toolbar-button-mode: flat !default;
             background-clip: border-box;
         }
 
-        // Button normal state
-        @if $toolbar-button-mode == thin {
-            > .k-button,
-            > .k-button-group > .k-button {
-
-                &:not(:hover):not(.k-state-hover):not(:active):not(.k-state-active) {
-                    color: inherit;
-                    border-color: transparent;
-                    background: none;
-                }
-            }
-
-        } @else if $toolbar-button-mode == flat {
-            > .k-button:not(.k-overflow-anchor),
-            > .k-button-group > .k-button {
-                @extend .k-button.k-flat;
-            }
-        } @else if $toolbar-button-mode == outline {
-            > .k-button,
-            > .k-button-group > .k-button {
-                @extend .k-button.k-outline;
-            }
-        }
 
         //SplitButton
         .k-split-button {
@@ -81,11 +51,14 @@ $toolbar-button-mode: flat !default;
             }
         }
 
+
         // Overflow anchor
         .k-overflow-anchor {
+            border-width: 0;
             color: inherit;
             background: transparent;
         }
+
 
         // Expanded state
         .k-state-border-up,
@@ -99,10 +72,12 @@ $toolbar-button-mode: flat !default;
             }
         }
 
+
         // Separator
         .k-separator {
             border-color: $toolbar-separator-border;
         }
+
 
         // Button disabled state
         .k-button.k-state-disabled {
@@ -114,11 +89,6 @@ $toolbar-button-mode: flat !default;
 
         // Button group
         .k-button-group {}
-
-        // Overflow anchor
-        .k-overflow-anchor {
-            border-width: 0;
-        }
 
     }
 

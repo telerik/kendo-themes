@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.5.1"></a>
+## [3.5.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@3.5.0...@progress/kendo-theme-default@3.5.1) (2019-04-09)
+
+
+### Bug Fixes
+
+* **splitter:** flex splitter does not collapse under IE 11 ([67cd949](https://github.com/telerik/kendo-themes/commit/67cd949))
+* **toolbar:** add styles for flexible spacer ([369fc6b](https://github.com/telerik/kendo-themes/commit/369fc6b))
+* **toolbar:** wrong primary button appearance in Material ([21af366](https://github.com/telerik/kendo-themes/commit/21af366))
+
+
+
+
+<a name="3.5.0"></a>
+# [3.5.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@3.4.0...@progress/kendo-theme-default@3.5.0) (2019-04-08)
+
+
+### Bug Fixes
+
+* **buttons:** disabled focused buttons styles in mozilla ([961f592](https://github.com/telerik/kendo-themes/commit/961f592))
+* **calendar:** improve empty cells size ([22c98fa](https://github.com/telerik/kendo-themes/commit/22c98fa))
+* **grid:** column menu icon layout in IE ([ea182ea](https://github.com/telerik/kendo-themes/commit/ea182ea))
+* **toolbar:** buttons in overflow menu in IE ([d193b84](https://github.com/telerik/kendo-themes/commit/d193b84))
+* **treeview:** dragging icon position ([4e63478](https://github.com/telerik/kendo-themes/commit/4e63478))
+
+
+### Features
+
+* **calendar:** add styles for Blazor calendar ([8987d65](https://github.com/telerik/kendo-themes/commit/8987d65))
+* **pager:** rendering changes and styles ([0a5642b](https://github.com/telerik/kendo-themes/commit/0a5642b))
+* **validator:** layout changes ([add9c9c](https://github.com/telerik/kendo-themes/commit/add9c9c))
+
+
+
+
 <a name="3.4.0"></a>
 # 3.4.0 (2019-03-14)
 

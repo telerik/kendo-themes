@@ -57,15 +57,6 @@
             .k-pager-last {
                 @include border-left-radius-only();
             }
-
-            // Spacing
-            .k-pager-nav + .k-pager-nav,
-            .k-pager-nav + .k-pager-numbers,
-            .k-pager-numbers + .k-pager-nav,
-            .k-pager-numbers .k-current-page ~ li + li {
-                margin-right: -1px;
-                margin-left: 0;
-            }
         }
 
         &.k-pager-lg,
@@ -106,9 +97,17 @@
     // Spacing
     .k-pager-nav + .k-pager-nav,
     .k-pager-nav + .k-pager-numbers,
+    .k-pager-nav + .k-pager-numbers-wrap,
     .k-pager-numbers + .k-pager-nav,
-    .k-pager-numbers .k-current-page ~ li + li {
+    .k-pager-numbers .k-current-page ~ li + li,
+    .k-pager-numbers-wrap + .k-pager-nav {
         margin-left: -1px;
+
+        .k-rtl &,
+        [dir="rtl"] & {
+            margin-right: -1px;
+            margin-left: 0;
+        }
     }
 
 }

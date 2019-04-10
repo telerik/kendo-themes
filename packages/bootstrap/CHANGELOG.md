@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.3.1"></a>
+## [3.3.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@3.3.0...@progress/kendo-theme-bootstrap@3.3.1) (2019-04-09)
+
+
+
+
+**Note:** Version bump only for package @progress/kendo-theme-bootstrap
+
+<a name="3.3.0"></a>
+# [3.3.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@3.2.3...@progress/kendo-theme-bootstrap@3.3.0) (2019-04-08)
+
+
+### Bug Fixes
+
+* **buttons:** disabled focused buttons styles in mozilla ([961f592](https://github.com/telerik/kendo-themes/commit/961f592))
+* **textbox:** placeholder color in IE ([cfd732a](https://github.com/telerik/kendo-themes/commit/cfd732a))
+
+
+### Features
+
+* **calendar:** add styles for Blazor calendar ([8987d65](https://github.com/telerik/kendo-themes/commit/8987d65))
+* **pager:** rendering changes and styles ([0a5642b](https://github.com/telerik/kendo-themes/commit/0a5642b))
+
+
+
+
 <a name="3.2.3"></a>
 ## 3.2.3 (2019-03-14)
 
