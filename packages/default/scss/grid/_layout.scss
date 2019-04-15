@@ -564,6 +564,7 @@
         .k-header {
             position: relative;
             vertical-align: bottom;
+            cursor: default;
 
             &:first-child {
                 border-left-width: 0;
