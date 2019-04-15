@@ -1,0 +1,38 @@
+@include exports("pdf-viewer/layout") {
+
+
+    .k-pdf-viewer {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        // Toolbar
+        .k-toolbar {
+            border-top-width: 0;
+            border-right-width: 0;
+            border-left-width: 0;
+            border-color: inherit;
+            flex: 0 0 auto;
+            z-index: 2;
+        }
+        .k-toolbar .k-pager-wrap {
+            padding: 0;
+            color: inherit;
+            background: none;
+        }
+
+
+        // Canvas
+        .k-list-scroller {
+            flex: 1 1 auto;
+        }
+
+
+        // Page
+        .k-page {
+            margin: $pdf-viewer-page-spacing auto;
+        }
+
+    }
+
+}

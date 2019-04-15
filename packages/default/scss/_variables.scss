@@ -975,7 +975,6 @@ $progressbar-indeterminate-gradient: null !default;
 $progressbar-chunk-border: $bg-color !default;
 
 
-
 // Window
 $window-border-width: 0 !default;
 $window-border-radius: 0 !default;
@@ -1011,7 +1010,6 @@ $window-sizes: map-merge((
 
 
 // DateTime
-
 $time-list-highlight-color: $border-color !default;
 $time-list-focused-bg: rgba(0, 0, 0, .04) !default;
 $time-list-title-focus: black !default;
@@ -1149,6 +1147,7 @@ $switch-off-handle-hovered-gradient: null !default;
 // Editor
 $editor-overlay-background: #000 !default;
 
+
 // Scheduler
 $scheduler-event-border-radius: $border-radius !default;
 
@@ -1167,6 +1166,24 @@ $modal-header-border-color: #cccccc;
 $modal-inner-padding: 1em;
 
 $scheduler-current-time-color: #f00;
+
+
+// PDF viewer
+$pdf-viewer-bg: null !default;
+$pdf-viewer-text: null !default;
+$pdf-viewer-border: null !default;
+
+$pdf-viewer-canvas-bg: $chat-bg !default;
+$pdf-viewer-canvas-text: null !default;
+$pdf-viewer-canvas-border: null !default;
+
+$pdf-viewer-page-spacing: 30px !default;
+
+$pdf-viewer-page-bg: $panel-bg !default;
+$pdf-viewer-page-text: $panel-text !default;
+$pdf-viewer-page-border: $panel-border !default;
+$pdf-viewer-page-shadow: 0 0 ($pdf-viewer-page-spacing / 2) $pdf-viewer-page-border !default;
+
 
 // Config maps
 $typography-config: () !default;
