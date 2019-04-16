@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Adaptive Scheduler Agenda</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div class="k-pane-wrapper k-widget" style="height: 600px;">
+            <div class="k-pane">
+                <div class="k-view k-widget">
+                    <div class="k-stretched-view k-content">
+                        <div id="scheduler" class="k-widget k-scheduler k-floatwrap k-scheduler-mobile" style="height: 600px;">
+                            <div class="k-header k-scheduler-toolbar">
+                                <ul class="k-reset k-scheduler-tools">
+                                    <li><a class="k-button k-pdf"><span class="k-icon k-i-file-pdf"></span></a></li>
+                                    <li><a class="k-button k-nav-calendar"><span class="k-icon k-i-calendar"></span></a></li>
+                                    <li><a class="k-button k-create-event"><span class="k-icon k-i-plus"></span></a></li>
+                                </ul>
+                                <select class="k-scheduler-mobile-views"><option class="k-state-default">Agenda</option></select>
+                            </div>
+                            <div class="k-header k-scheduler-toolbar">
+                                <ul class="k-reset k-header k-scheduler-navigation">
+                                    <li class="k-state-default k-nav-prev"><a class="k-link"><span class="k-icon k-i-arrow-chevron-left"></span></a></li>
+                                    <li class="k-state-default k-nav-current"><span class="k-m-date-format">Jun 13 - 20</span> <span class="k-y-date-format">2013</span></li>
+                                    <li class="k-state-default k-nav-next"><a class="k-link"><span class="k-icon k-i-arrow-chevron-right"></span></a></li>
+                                </ul>
+                            </div>
+                            <table class="k-scheduler-layout k-scheduler-agendaview k-scheduler-agenda k-scrollbar-v">
+                                <tbody>
+                                    <tr class="k-mobile-header">
+                                        <td>
+                                            <div class="k-scheduler-header k-state-default">
+                                                <div class="k-scheduler-header-wrap">
+                                                    <table class="k-scheduler-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="k-scheduler-timecolumn">Time</th>
+                                                                <th>Event</th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="k-scheduler-content" style="height: 463px;">
+                                                <table class="k-scheduler-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="k-scheduler-datecolumn k-first" colspan="2">
+                                                                <div class="k-scheduler-datecolumn-wrap">
+                                                                    <span class="k-mobile-scheduler-agendadate">
+                                                                        <span class="k-mobile-scheduler-agendaday">13</span>&nbsp;
+                                                                        <span class="k-mobile-scheduler-agendamonth">June</span>
+                                                                    </span>
+                                                                    <span class="k-mobile-scheduler-agendaweekday">Thursday</span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="k-scheduler-timecolumn k-first">
+                                                                <div>7:00 PM-9:00 PM</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="k-task">
+                                                                    <span class="k-scheduler-mark" style="background-color:#f8a398"></span>
+                                                                    <span class="k-icon k-i-reload"></span>
+                                                                    <span class="k-scheduler-task-text">HR Lecture</span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="k-scheduler-datecolumn k-first" colspan="2">
+                                                                <div class="k-scheduler-datecolumn-wrap">
+                                                                    <span class="k-mobile-scheduler-agendadate">
+                                                                        <span class="k-mobile-scheduler-agendaday">14</span>&nbsp;
+                                                                        <span class="k-mobile-scheduler-agendamonth">June</span>
+                                                                    </span>
+                                                                    <span class="k-mobile-scheduler-agendaweekday">Friday</span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="k-scheduler-timecolumn k-first">
+                                                                <div>all day</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="k-task">
+                                                                    <span class="k-scheduler-mark" style="background-color:#51a0ed"></span>
+                                                                    <span class="k-scheduler-task-text">Alex's Birthday</span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="k-header k-scheduler-footer">
+                                <span class="k-state-default k-scheduler-today"><a class="k-link">Today</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

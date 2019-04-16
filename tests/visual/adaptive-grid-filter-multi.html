@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Adaptive Grid Filter Multi</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div class="k-pane-wrapper k-widget" style="height: 550px;">
+            <div class="k-pane">
+                <div class="k-grid-filter-menu k-view k-widget">
+                    <div class="k-header">
+                        <a class="k-header-cancel k-link">
+                            <span class="k-icon k-i-arrow-chevron-left"></span>
+                        </a>
+                        Filter in Name
+                        <a class="k-header-done k-link">
+                            <span class="k-icon k-i-check"></span>
+                        </a>
+                    </div>
+                    <div class="k-stretched-view k-content">
+                        <form class="k-filter-menu k-mobile-list">
+                            <ul>
+                                <li class="k-textbox k-space-right">
+                                    <input placeholder="Search">
+                                    <span class="k-icon k-i-zoom"></span>
+                                </li>
+                                <li class="k-filter-tools"><span class="k-label k-select-all">Select All</span>
+                                    <span class="k-label k-clear-all">Clear All</span>
+                                </li>
+                                <li>
+                                    <div class="k-filter-selected-items">0 items selected</div>
+                                </li>
+                                <li>
+                                    <ul class="k-multicheck-wrap">
+                                        <li class="k-item"><label class="k-label">
+                                            <input type="checkbox" class="k-check">
+                                            <span class="k-item-title">Chai</span>
+                                        </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label">
+                                                <input type="checkbox" class="k-check">
+                                                <span class="k-item-title">Chang</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

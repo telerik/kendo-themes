@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Adaptive Grid Filter Bool</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div class="k-pane-wrapper k-widget" style="height: 550px;">
+            <div class="k-pane">
+                <div class="k-grid-filter-menu k-view k-widget">
+                    <div class="k-header">
+                        <a class="k-header-cancel k-link"><span class="k-icon k-i-arrow-chevron-left"></span></a>
+                        Filter in Discontinued
+                        <a class="k-header-done k-link"><span class="k-icon k-i-check"></span></a>
+                    </div>
+                    <div class="k-stretched-view k-content">
+                        <form class="k-filter-menu k-mobile-list">
+                            <ul>
+                                <li>
+                                    <span class="k-filter-help-text">Show items with value that:</span>
+                                    <ul class="k-multicheck-bool-wrap">
+                                        <li class="k-item">
+                                            <label class="k-label">
+                                                <input class="k-check" type="radio" checked>
+                                                <span class="k-item-title">is true</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label">
+                                                <input class="k-check" type="radio">
+                                                <span class="k-item-title">is false</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="k-item k-clear-wrap">
+                                    <span class="k-label k-clear">Clear</span>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
