@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Adaptive Grid Filter</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div class="k-pane-wrapper k-widget" style="height: 550px;">
+            <div class="k-pane">
+                <div class="k-grid-filter-menu k-view k-widget">
+                    <div class="k-header">
+                        <a class="k-header-cancel k-link"><span class="k-icon k-i-arrow-chevron-left"></span></a>
+                        Filter in ProductID
+                        <a class="k-header-done k-link"><span class="k-icon k-i-check"></span></a>
+                    </div>
+                    <div class="k-stretched-view k-content">
+                        <form class="k-filter-menu k-mobile-list">
+                            <ul>
+                                <li><span class="k-filter-help-text">Show items with value that:</span>
+                                    <ul>
+                                        <li class="k-item">
+                                            <label class="k-label">
+                                                <span class="k-filter-operator-text">Operator</span>
+                                                <select class="k-filter-operator">
+                                                    <option>Is equal to</option>
+                                                    <option>Is not equal to</option>
+                                                </select>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label">
+                                                <span class="k-filter-input-text">Value</span>
+                                                <input class="k-value-input" type="text">
+                                            </label>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li class="k-item">
+                                            <label class="k-label">
+                                                <span class="k-filter-logic-and-text">And</span>
+                                                <input checked type="radio" class="k-radio">
+                                                <label class="k-radio-label"></label>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label">
+                                                <span class="k-filter-logic-or-text">Or</span>
+                                                <input type="radio" class="k-radio">
+                                                <label class="k-radio-label"></label>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="k-item k-clear-wrap">
+                                    <span class="k-label k-clear">Clear</span>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Adaptive Grid Popup Edit</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div class="k-pane-wrapper k-widget" style="height: 550px;">
+            <div class="k-pane">
+                <div class="k-grid-edit-form k-view k-widget">
+                    <div class="k-header">
+                        <a class="k-header-cancel k-link"><span class="k-icon k-i-arrow-chevron-left"></span></a>
+                        Edit
+                        <a class="k-header-done k-link"><span class="k-icon k-i-check"></span></a>
+                    </div>
+                    <div class="k-content k-stretched-view">
+                        <div class="k-popup-edit-form k-mobile-list">
+                            <ul class="k-edit-form-container">
+                                <li class="k-item">
+                                    <label class="k-label k-no-click">
+                                        <span class="k-item-title">ProductID</span>
+                                        <span class="k-no-editor">1</span>
+                                    </label>
+                                </li>
+                                <li class="k-item">
+                                    <label class="k-label">
+                                        <span class="k-item-title">Discontinued</span>
+                                        <div>
+                                            <input type="checkbox">
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item">
+                                    <label class="k-label">
+                                        <span class="k-item-title">myText</span>
+                                        <div>
+                                            <input type="text">
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item">
+                                    <label class="k-label">
+                                        <span class="k-item-title">UnitsInStock</span>
+                                        <div>
+                                            <input type="number">
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item">
+                                    <label class="k-label">
+                                        <span class="k-item-title">myDate</span>
+                                        <div>
+                                            <input type="date">
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item">
+                                    <label class="k-label">
+                                        <span class="k-item-title">myID</span>
+                                        <div>
+                                            <select>
+                                                <option>Beverages</option>
+                                                <option>Condiments</option>
+                                            </select>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item">
+                                    <label class="k-label">
+                                        <span class="k-item-title">Unit Price</span>
+                                        <div>
+                                            <input type="number">
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

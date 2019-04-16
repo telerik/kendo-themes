@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Adaptive Scheduler Edit</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div class="k-pane-wrapper k-widget" style="height: 600px;">
+            <div class="k-pane">
+                <div class="k-popup-edit-form k-scheduler-edit-form k-mobile-list k-view k-widget">
+                    <div class="k-header">
+                        <a class="k-header-cancel k-link"> <span class="k-icon k-i-arrow-chevron-left"></span></a>
+                        Event
+                        <a class="k-header-done k-link"><span class="k-icon k-i-check"></span></a>
+                    </div>
+                    <div class="k-stretched-view k-content">
+                        <ul>
+                            <li class="k-item">
+                                <label class="k-label">
+                                    <span class="k-item-title">Title</span>
+                                    <div>
+                                        <input type="text" class="k-input k-textbox">
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="k-item">
+                                <label class="k-label">
+                                    <span class="k-item-title">Start</span>
+                                    <div>
+                                        <input type="datetime-local">
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="k-item">
+                                <label class="k-label">
+                                    <span class="k-item-title">End</span>
+                                    <div>
+                                        <input type="datetime-local">
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="k-item">
+                                <label class="k-label">
+                                    <span class="k-item-title">All day event</span>
+                                    <div>
+                                        <span class="k-switch k-widget k-switch-off">
+                                            <input type="checkbox">
+                                            <span class="k-switch-container">
+                                                <span class="k-switch-label-on">On</span>
+                                                <span class="k-switch-label-off">Off</span>
+                                                <span class="k-switch-handle"></span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="k-item">
+                                <label class="k-label">
+                                    <span class="k-item-title">Timezone</span>
+                                    <div>
+                                        <span class="k-timezone-label">No timezone</span>
+                                        <span class="k-icon k-i-arrow-chevron-right"></span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="k-item">
+                                <label class="k-label">
+                                    <span class="k-item-title">Repeat</span>
+                                    <div>
+                                        <div>
+                                            <span>Never</span>
+                                            <span class="k-icon k-i-arrow-chevron-right"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="k-item">
+                                <label class="k-label">
+                                    <span class="k-item-title">Description</span>
+                                    <div>
+                                        <textarea class="k-textbox"></textarea>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="k-item">
+                                <label class="k-label">
+                                    <span class="k-item-title">Owner</span>
+                                    <div>
+                                        <select>
+                                            <option>Alex</option>
+                                        </select>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="k-edit-buttons">
+                            <li class="k-item">
+                                <span class="k-scheduler-delete k-label">Delete</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

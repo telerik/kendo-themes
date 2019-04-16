@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Adaptive Scheduler Time Zones</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div class="k-pane-wrapper k-widget" style="height: 600px;">
+            <div class="k-pane">
+                <div class="k-popup-edit-form k-scheduler-edit-form k-mobile-list k-view k-widget">
+                    <div class="k-header">
+                        <a class="k-header-cancel k-link"> <span class="k-icon k-i-arrow-chevron-left"></span></a>
+                        Time zones
+                        <a class="k-header-done k-link"><span class="k-icon k-i-check"></span></a>
+                    </div>
+                    <div class="k-stretched-view k-content">
+                        <div class="k-popup-edit-form k-scheduler-edit-form k-scheduler-timezones">
+                            <ul>
+                                <li class="k-item">
+                                    <label class="k-label">
+                                        <span class="k-item-title">Use separate start and end time zones</span>
+                                        <span class="k-switch k-widget k-switch-on">
+                                            <input class="k-timezone-toggle" type="checkbox" checked="checked">
+                                            <span class="k-switch-container">
+                                                <span class="k-switch-label-on">On</span>
+                                                <span class="k-switch-label-off">Off</span>
+                                                <span class="k-switch-handle"></span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="k-item">
+                                    <label class="k-label">
+                                        <span class="k-item-title">Start timezone</span>
+                                        <div>
+                                            <div class="k-mobiletimezoneeditor">
+                                                <select>
+                                                    <option>No timezone</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item k-zonepicker">
+                                    <label class="k-label">
+                                        <span class="k-item-title"></span>
+                                        <div>
+                                            <select>
+                                                <option value="Europe/London">London</option>
+                                            </select>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item" style="display: flex;">
+                                    <label class="k-label">
+                                        <span class="k-item-title">End timezone</span>
+                                        <div>
+                                            <div class="k-mobiletimezoneeditor">
+                                                <select>
+                                                    <option>(GMT) Casablanca</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item k-zonepicker">
+                                    <label class="k-label">
+                                        <span class="k-item-title"></span>
+                                        <div>
+                                            <select>
+                                                <option value="Atlantic/Reykjavik">Reykjavik</option>
+                                            </select>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Adaptive Scheduler Month</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div class="k-pane-wrapper k-widget" style="height: 600px;">
+            <div class="k-pane">
+                <div class="k-view k-widget">
+                    <div class="k-stretched-view k-content">
+                        <div id="scheduler" class="k-widget k-scheduler k-floatwrap k-scheduler-mobile" style="height: 600px;">
+                            <div class="k-header k-scheduler-toolbar">
+                                <ul class="k-reset k-scheduler-tools">
+                                    <li><a class="k-button k-pdf"><span class="k-icon k-i-file-pdf"></span></a></li>
+                                    <li><a class="k-button k-nav-calendar"><span class="k-icon k-i-calendar"></span></a></li>
+                                    <li><a class="k-button k-create-event"><span class="k-icon k-i-plus"></span></a></li>
+                                </ul>
+                                <select class="k-scheduler-mobile-views"><option class="k-state-default">Month</option></select>
+                            </div>
+                            <div class="k-header k-scheduler-toolbar">
+                                <ul class="k-reset k-header k-scheduler-navigation">
+                                    <li class="k-state-default k-nav-prev"><a class="k-link"><span class="k-icon k-i-arrow-chevron-left"></span></a></li>
+                                    <li class="k-state-default k-nav-current"><span class="k-m-date-format">June</span> <span class="k-y-date-format">2013</span></li>
+                                    <li class="k-state-default k-nav-next"><a class="k-link"><span class="k-icon k-i-arrow-chevron-right"></span></a></li>
+                                </ul>
+                            </div>
+                            <table class="k-scheduler-layout k-scheduler-monthview">
+                                <tbody>
+                                    <tr class="k-mobile-header">
+                                        <td>
+                                            <div class="k-scheduler-header k-state-default">
+                                                <div class="k-scheduler-header-wrap">
+                                                    <table class="k-scheduler-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>S</th>
+                                                                <th>M</th>
+                                                                <th>T</th>
+                                                                <th>W</th>
+                                                                <th>T</th>
+                                                                <th>F</th>
+                                                                <th>S</th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="k-scheduler-content" style="height: 425px;">
+                                                <table class="k-scheduler-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class=" k-other-month"><span class="k-link k-nav-day">26</span></td>
+                                                            <td class=" k-other-month"><span class="k-link k-nav-day">27</span></td>
+                                                            <td class=" k-other-month"><span class="k-link k-nav-day">28</span></td>
+                                                            <td class=" k-other-month"><span class="k-link k-nav-day">29</span></td>
+                                                            <td class=" k-other-month"><span class="k-link k-nav-day">30</span></td>
+                                                            <td class=" k-other-month"><span class="k-link k-nav-day">31</span></td>
+                                                            <td><span class="k-link k-nav-day">01</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="k-link k-nav-day">02</span></td>
+                                                            <td><span class="k-link k-nav-day">03</span></td>
+                                                            <td><span class="k-link k-nav-day">04</span></td>
+                                                            <td><span class="k-link k-nav-day">05</span></td>
+                                                            <td><span class="k-link k-nav-day">06</span></td>
+                                                            <td><span class="k-link k-nav-day">07</span></td>
+                                                            <td><span class="k-link k-nav-day">08</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="k-link k-nav-day">09</span></td>
+                                                            <td><span class="k-link k-nav-day">10</span></td>
+                                                            <td><span class="k-link k-nav-day">11</span></td>
+                                                            <td><span class="k-link k-nav-day">12</span></td>
+                                                            <td><span class="k-link k-nav-day">13</span></td>
+                                                            <td><span class="k-link k-nav-day">14</span></td>
+                                                            <td><span class="k-link k-nav-day">15</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="k-link k-nav-day">16</span></td>
+                                                            <td><span class="k-link k-nav-day">17</span></td>
+                                                            <td><span class="k-link k-nav-day">18</span></td>
+                                                            <td><span class="k-link k-nav-day">19</span></td>
+                                                            <td><span class="k-link k-nav-day">20</span></td>
+                                                            <td><span class="k-link k-nav-day">21</span></td>
+                                                            <td><span class="k-link k-nav-day">22</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="k-link k-nav-day">23</span></td>
+                                                            <td><span class="k-link k-nav-day">24</span></td>
+                                                            <td><span class="k-link k-nav-day">25</span></td>
+                                                            <td><span class="k-link k-nav-day">26</span></td>
+                                                            <td><span class="k-link k-nav-day">27</span></td>
+                                                            <td><span class="k-link k-nav-day">28</span></td>
+                                                            <td><span class="k-link k-nav-day">29</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="k-link k-nav-day">30</span></td>
+                                                            <td class=" k-other-month"><span class="k-link k-nav-day">01</span></td>
+                                                            <td class=" k-other-month"><span class="k-link k-nav-day">02</span></td>
+                                                            <td class=" k-other-month"><span class="k-link k-nav-day">03</span></td>
+                                                            <td class=" k-other-month"><span class="k-link k-nav-day">04</span></td>
+                                                            <td class=" k-other-month"><span class="k-link k-nav-day">05</span></td>
+                                                            <td class=" k-other-month"><span class="k-link k-nav-day">06</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="k-events-container" style="top:97px;left:140px;width:140px">
+                                                    <div style="background-color:#51a0ed; border-color: #51a0ed" class="k-event">
+                                                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                                                        <div><div class="k-event-template">Dance Practice</div></div>
+                                                        <span class="k-event-actions"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="k-events-container" style="top:97px;left:280px;width:140px">
+                                                    <div style="background-color:#f8a398; border-color: #f8a398" class="k-event">
+                                                        <span class="k-event-actions"></span>
+                                                        <div><div class="k-event-template">Breakfast at Starbucks</div></div>
+                                                        <span class="k-event-actions"></span>
+                                                    </div>
+                                                    <div style="background-color:#56ca85; border-color: #56ca85" class="k-event">
+                                                        <span class="k-event-actions"></span>
+                                                        <div><div class="k-event-template">Software updates</div></div>
+                                                        <span class="k-event-actions"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="k-header k-scheduler-footer">
+                                <span class="k-state-default k-scheduler-today"><a class="k-link">Today</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

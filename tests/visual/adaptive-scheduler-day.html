@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Adaptive Scheduler Day</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div class="k-pane-wrapper k-widget" style="height: 600px;">
+            <div class="k-pane">
+                <div class="k-view k-widget">
+                    <div class="k-stretched-view k-content">
+                        <div id="scheduler" class="k-widget k-scheduler k-floatwrap k-scheduler-mobile" style="height: 600px;">
+                            <div class="k-header k-scheduler-toolbar">
+                                <ul class="k-reset k-scheduler-tools">
+                                    <li><a class="k-button k-pdf"><span class="k-icon k-i-file-pdf"></span></a></li>
+                                    <li><a class="k-button k-nav-calendar"><span class="k-icon k-i-calendar"></span></a></li>
+                                    <li><a class="k-button k-create-event"><span class="k-icon k-i-plus"></span></a></li>
+                                </ul>
+                                <select class="k-scheduler-mobile-views"><option class="k-state-default">Day</option></select>
+                            </div>
+                            <div class="k-header k-scheduler-toolbar">
+                                <ul class="k-reset k-header k-scheduler-navigation">
+                                    <li class="k-state-default k-nav-prev"><a class="k-link"><span class="k-icon k-i-arrow-chevron-left"></span></a></li>
+                                    <li class="k-state-default k-nav-current"><span class="k-m-date-format">Jun 13</span> <span class="k-y-date-format">2013</span></li>
+                                    <li class="k-state-default k-nav-next"><a class="k-link"><span class="k-icon k-i-arrow-chevron-right"></span></a></li>
+                                </ul>
+                            </div>
+                            <table class="k-scheduler-layout k-scheduler-dayview k-scrollbar-v">
+                                <tbody>
+                                    <tr class="k-mobile-header">
+                                        <td>
+                                            <div class="k-scheduler-times">
+                                                <table class="k-scheduler-table">
+                                                    <tbody>
+                                                        <tr style="height: 38px;">
+                                                            <th>​</th>
+                                                        </tr>
+                                                        <tr style="height: 37px;">
+                                                            <th class="k-scheduler-times-all-day">all day</th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="k-scheduler-header k-state-default"
+                                                style="padding-right: 16px;">
+                                                <div class="k-scheduler-header-wrap">
+                                                    <table class="k-scheduler-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th><span
+                                                                        class="k-link k-nav-day">T</span></th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div style="position:relative">
+                                                        <table class="k-scheduler-table k-scheduler-header-all-day">
+                                                            <tbody>
+                                                                <tr style="height: 37px;">
+                                                                    <td>
+                                                                        &nbsp;</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="k-scheduler-times" style="height: 425px;">
+                                                <table class="k-scheduler-table" style="height: 1530px;">
+                                                    <tbody>
+                                                        <tr><th><span class="k-time-text">7:00</span> <span class="k-time-period">AM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">8:00</span> <span class="k-time-period">AM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">9:00</span> <span class="k-time-period">AM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">10:00</span> <span class="k-time-period">AM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">11:00</span> <span class="k-time-period">AM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">12:00</span> <span class="k-time-period">PM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">1:00</span> <span class="k-time-period">PM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">2:00</span> <span class="k-time-period">PM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">3:00</span> <span class="k-time-period">PM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">4:00</span> <span class="k-time-period">PM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">5:00</span> <span class="k-time-period">PM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">6:00</span> <span class="k-time-period">PM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">7:00</span> <span class="k-time-period">PM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">8:00</span> <span class="k-time-period">PM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">9:00</span> <span class="k-time-period">PM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">10:00</span> <span class="k-time-period">PM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                        <tr><th><span class="k-time-text">11:00</span> <span class="k-time-period">PM</span></th></tr>
+                                                        <tr><th class="k-slot-cell">​</th></tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="k-scheduler-content" style="height: 425px; overflow: hidden;">
+                                                <table class="k-scheduler-table">
+                                                    <tbody>
+                                                        <tr class="k-middle-row"><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                        <tr><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td>&nbsp;</td></tr>
+                                                        <tr><td>&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td>&nbsp;</td></tr>
+                                                        <tr><td>&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td>&nbsp;</td></tr>
+                                                        <tr><td>&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td>&nbsp;</td></tr>
+                                                        <tr><td>&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td>&nbsp;</td></tr>
+                                                        <tr><td>&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td>&nbsp;</td></tr>
+                                                        <tr><td>&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td>&nbsp;</td></tr>
+                                                        <tr><td>&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td>&nbsp;</td></tr>
+                                                        <tr><td>&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td>&nbsp;</td></tr>
+                                                        <tr><td>&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                        <tr><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                        <tr><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                        <tr><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                        <tr><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                        <tr><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                        <tr><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                        <tr class="k-middle-row"><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                        <tr><td class=" k-nonwork-hour">&nbsp;</td></tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="background-color: rgb(248, 163, 152); border-color: rgb(248, 163, 152); top: 135px; height: 42px; width: 490.1px; left: 2px;"
+                                                    class="k-event k-event-inverse">
+                                                    <span class="k-event-actions"></span>
+                                                    <div title="(8:30 AM - 9:00 AM): Test">
+                                                        <div class="k-event-template k-event-time">8:30 AM - 9:00 AM</div>
+                                                        <div class="k-event-template">Test</div>
+                                                    </div>
+                                                    <span class="k-event-actions">
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </span>
+                                                    <span class="k-event-top-actions"></span>
+                                                    <span class="k-event-bottom-actions"></span>
+                                                    <span class="k-resize-handle k-resize-n"></span>
+                                                    <span class="k-resize-handle k-resize-s"></span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="k-header k-scheduler-footer">
+                                <span class="k-state-default k-scheduler-today"><a class="k-link">Today</a></span>
+                                <span class="k-state-default k-scheduler-fullday"><a class="k-link">Show business hours</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
