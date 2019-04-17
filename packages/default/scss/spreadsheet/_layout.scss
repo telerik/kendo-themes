@@ -505,6 +505,7 @@
         cursor: cell;
     }
 
+    
     // Border rendering
     .k-spreadsheet-vborder {
         position: absolute;
@@ -516,6 +517,25 @@
         position: absolute;
         border-top-style: solid;
         border-top-width: 1px;
+    }
+
+
+    // Comments
+    .k-spreadsheet-has-comment::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: auto;
+        border-width: 3px;
+        border-style: solid;
+    }
+
+    // Validation
+    .k-dirty {
+        left: 0;
+        right: auto;
     }
 }
 
@@ -762,6 +782,27 @@
                 font-size: 6em;
             }
         }
+    }
+
+}
+
+
+
+
+@include exports("spreadsheet/layout/rtl") {
+    .k-rtl .k-spreadsheet,
+    .k-spreadsheet[dir="rtl"] {
+
+        .k-dirty {
+            right: 0;
+            left: auto;
+        }
+
+        .k-spreadsheet-has-comment::after {
+            left: 0;
+            right: auto;
+        }
+
     }
 
 }
