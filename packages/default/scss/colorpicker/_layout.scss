@@ -68,16 +68,55 @@
 
     .k-flatcolorpicker {
         @include border-radius();
-        padding: 0 0 $spacer;
-        width: 250px;
+        padding: $colorpicker-rect-padding;
+        width: $colorpicker-width;
         display: flex;
         flex-direction: column;
         align-items: stretch;
 
+        .k-horizontal {
+            flex-direction: row;
+
+            &.k-gradient-values {
+                margin-top: $colorpicker-rect-padding * 2;
+                justify-content: space-between;
+                display: flex;
+
+                input,
+                div {
+                    width: 48px;
+                    text-align: center;
+                }
+                div {
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                .k-hex-value {
+                    width: 65px;
+                }
+
+                &:last-of-type {
+                    margin-top: $colorpicker-margin;
+                }
+            }
+        }
+        .k-vertical {
+            flex-direction: column;
+        }
+        .k-hsv-wrap {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            .k-hsv-rectangle {
+                flex: 0 0 250px;
+            }
+        }
+
         .k-draghandle {
             @include border-radius( 50% );
-            width: $spacer;
-            height: $spacer;
+            width: $colorpicker-draghandle-width;
+            height: $colorpicker-draghandle-height;
             border: 1px solid rgba(255, 255, 255, .8);
             box-shadow: 0 1px 4px rgba(0, 0, 0, .21);
             box-sizing: border-box;
@@ -140,7 +179,6 @@
         }
 
         .k-hsv-gradient {
-            margin-bottom: 5px;
             height: 180px;
             background: linear-gradient( to bottom, $gradient-transparent-to-black ), linear-gradient( to right, $gradient-white-to-transparent );
         }
@@ -148,6 +186,11 @@
         // Sliders
         > .k-slider {
             margin: $spacer $spacer 0;
+        }
+        .k-horizontal .k-hue-slider {
+            .k-slider-track {
+                background: linear-gradient( to top, $gradient-rainbow );
+            }
         }
         .k-hue-slider,
         .k-transparency-slider {
@@ -159,7 +202,6 @@
                 // sass-lint:enable no-color-literals no-color-keywords
                 background-color: transparent;
             }
-
             .k-draghandle:hover,
             .k-draghandle:focus {
                 // sass-lint:disable no-color-literals no-color-keywords
@@ -167,6 +209,28 @@
                 box-shadow: 0 1px 4px black;
                 // sass-lint:enable no-color-literals no-color-keywords
                 background-color: transparent;
+            }
+
+            &.k-slider-vertical {
+                margin-left: $colorpicker-margin;
+                height: 180px;
+                flex: 0 0 $colorpicker-slider-track-size;
+                width: $colorpicker-slider-track-size;
+                border-radius: $colorpicker-slider-border-radius;
+
+                .k-slider-track {
+                    width: $colorpicker-slider-track-size;
+                    border-radius: $colorpicker-slider-border-radius;
+                }
+            }
+            &.k-alpha-slider {
+                .k-slider-track {
+                    background: url('https://kendo.cdn.telerik.com/2019.1.220/styles/textures/transparency.png');
+                    background-position: center;
+                }
+                .k-slider-selection {
+                    display: none;
+                }
             }
         }
         .k-hue-slider {
@@ -180,6 +244,10 @@
             .k-slider-selection {
                 background: none;
                 opacity: 0;
+            }
+
+            &.k-slider-vertical {
+                margin-right: $colorpicker-margin / 2;
             }
         }
 
