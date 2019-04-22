@@ -193,14 +193,15 @@
 @include exports("spreadsheet/rtl/theme") {
 
     .k-rtl .k-spreadsheet,
-    .k-spreadsheet[dir="rtl"] {
-
-        .k-dirty {
-            border-color: $error $error transparent transparent;
-        }
+    .k-spreadsheet[dir="rtl"],
+    [dir="rtl"] .k-spreadsheet {
 
         .k-spreadsheet-has-comment::after {
             border-color: $accent transparent transparent $accent;
+        }
+
+        .k-dirty {
+            border-color: $error $error transparent transparent;
         }
 
     }
