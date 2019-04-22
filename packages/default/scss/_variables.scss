@@ -205,6 +205,15 @@ $zindex-window: 2;
 
 $rgba-transparent: rgba( 0, 0, 0, 0 );
 
+// ColorPicker
+$colorpicker-rect-padding: $padding-x !default;
+$colorpicker-margin: 8px !default;
+$colorpicker-width: 310px !default;
+$colorpicker-draghandle-width: 16px !default;
+$colorpicker-draghandle-height: 16px !default;
+$colorpicker-slider-track-size: 10px !default;
+$colorpicker-slider-border-radius: 10px !default;
+
 
 // Theme colors
 /// The color that focuses the user attention.
