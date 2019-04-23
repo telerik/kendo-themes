@@ -41,9 +41,11 @@
 @import "dataviz";
 @import "map";
 
+
 // Barcodes
 @import "barcode";
 @import "qrcode";
+
 
 // Scheduling
 @import "calendar";
@@ -86,3 +88,7 @@
 
 // Chat
 @import "chat";
+
+
+// PDF Viewer
+@import "pdf-viewer";

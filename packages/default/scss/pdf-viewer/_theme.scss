@@ -1,0 +1,38 @@
+@include exports("pdf-viewer/theme") {
+
+
+    .k-pdf-viewer {
+        @include fill(
+            $pdf-viewer-text,
+            $pdf-viewer-bg,
+            $pdf-viewer-border
+        );
+
+
+        // Toolbar
+        .k-toolbar {}
+
+
+        // Canvas
+        .k-canvas {
+            @include fill(
+                $pdf-viewer-canvas-text,
+                $pdf-viewer-canvas-bg,
+                $pdf-viewer-canvas-border
+            );
+        }
+
+
+        // Page
+        .k-page {
+            @include fill(
+                $pdf-viewer-page-text,
+                $pdf-viewer-page-bg,
+                $pdf-viewer-page-border
+            );
+            @include box-shadow( $pdf-viewer-page-shadow );
+        }
+
+    }
+
+}
