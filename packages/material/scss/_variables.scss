@@ -1250,6 +1250,24 @@ $scheduler-timecolumn-width: 11rem;
 
 $scheduler-current-time-color: #f00;
 
+
+// PDF viewer
+$pdf-viewer-bg: null !default;
+$pdf-viewer-text: null !default;
+$pdf-viewer-border: null !default;
+
+$pdf-viewer-canvas-bg: $app-bg !default;
+$pdf-viewer-canvas-text: null !default;
+$pdf-viewer-canvas-border: null !default;
+
+$pdf-viewer-page-spacing: 30px !default;
+
+$pdf-viewer-page-bg: $panel-bg !default;
+$pdf-viewer-page-text: $panel-text !default;
+$pdf-viewer-page-border: $panel-border !default;
+$pdf-viewer-page-shadow: 0 0 ($pdf-viewer-page-spacing / 2) $pdf-viewer-page-border !default;
+
+
 // Config maps
 $typography-config: () !default;
 // sass-lint:disable indentation
