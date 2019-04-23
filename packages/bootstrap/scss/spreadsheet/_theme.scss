@@ -85,6 +85,16 @@
         background-color: $accent;
     }
 
+    // Comments
+    .k-spreadsheet-has-comment::after {
+        border-color: $accent $accent transparent transparent;
+    }
+
+    // Validation
+    .k-dirty {
+        border-color: $error transparent transparent $error;
+    }
+
 }
 
 
@@ -152,6 +162,27 @@
         .k-button.k-state-active,
         .k-button.k-state-selected {
             @include appearance( selected-list-item );
+        }
+
+    }
+
+}
+
+
+
+
+@include exports("spreadsheet/rtl/theme") {
+
+    .k-rtl .k-spreadsheet,
+    .k-spreadsheet[dir="rtl"],
+    [dir="rtl"] .k-spreadsheet {
+
+        .k-spreadsheet-has-comment::after {
+            border-color: $accent transparent transparent $accent;
+        }
+
+        .k-dirty {
+            border-color: $error $error transparent transparent;
         }
 
     }

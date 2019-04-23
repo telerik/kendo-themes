@@ -564,6 +564,7 @@
         .k-header {
             position: relative;
             vertical-align: bottom;
+            cursor: default;
 
             &:first-child {
                 border-left-width: 0;
@@ -719,7 +720,7 @@
                 margin-left: $grid-cell-padding-y / 2;
             }
 
-            .k-numerictextbox {
+            .k-widget {
                 width: auto;
             }
         }

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+
+<head>
+    <title>Grid Short Filter Row</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        .section {
+            max-width: 200px;
+        }
+
+        #test-area {
+            grid-template-columns: 1fr;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="test-area" class="grid">
+
+
+            <div class="section">
+
+                <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar" style="height: 120px;">
+                    <div class="k-grid-header">
+                        <div class="k-grid-header-wrap k-auto-scrollable">
+                            <table role="grid">
+                                <colgroup>
+                                    <col>
+                                </colgroup>
+                                <thead role="rowgroup">
+                                    <tr role="row">
+                                        <th scope="col" class="k-header k-with-icon">
+                                            Autocomplete
+                                        </th>
+                                    </tr>
+                                    <tr class="k-filter-row">
+                                        <th>
+                                            <span class="k-filtercell">
+                                                <span>
+                                                    <span class="k-widget k-autocomplete k-autocomplete-clearable k-state-default">
+                                                        <input type="text" class="k-input">
+                                                        <span class="k-icon k-clear-value k-i-close k-hidden"></span>
+                                                    </span>
+                                                    <span class="k-widget k-dropdown k-dropdown-operator">
+                                                        <span class="k-dropdown-wrap k-state-default">
+                                                            <span class="k-input">Contains</span>
+                                                            <span class="k-select">
+                                                                <span class="k-icon k-i-filter"></span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <button class="k-button k-button-icon">
+                                                        <span class="k-icon k-i-filter-clear"></span>
+                                                    </button>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section">
+
+                <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar" style="height: 120px;">
+                    <div class="k-grid-header">
+                        <div class="k-grid-header-wrap k-auto-scrollable">
+                            <table role="grid">
+                                <colgroup>
+                                    <col>
+                                </colgroup>
+                                <thead role="rowgroup">
+                                    <tr role="row">
+                                        <th scope="col" class="k-header k-with-icon">
+                                            NumericTextBox
+                                        </th>
+                                    </tr>
+                                    <tr class="k-filter-row">
+                                        <th>
+                                            <span class="k-filtercell">
+                                                <span>
+                                                    <span class="k-widget k-numerictextbox">
+                                                        <span class="k-numeric-wrap k-state-default">
+                                                            <input type="text" class="k-formatted-value k-input" style="display: block;" >
+                                                            <span class="k-select">
+                                                                <span class="k-link k-link-increase">
+                                                                    <span class="k-icon k-i-arrow-60-up"></span>
+                                                                </span>
+                                                                <span class="k-link k-link-decrease">
+                                                                    <span class="k-icon k-i-arrow-60-down"></span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="k-widget k-dropdown k-dropdown-operator">
+                                                        <span class="k-dropdown-wrap k-state-default">
+                                                            <span class="k-input">Is greater than or equal to</span>
+                                                            <span class="k-select">
+                                                                <span class="k-icon k-i-filter"></span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <button type="button" class="k-button k-button-icon">
+                                                        <span class="k-icon k-i-filter-clear"></span>
+                                                    </button>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section">
+
+                <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar" style="height: 120px;">
+                    <div class="k-grid-header">
+                        <div class="k-grid-header-wrap k-auto-scrollable">
+                            <table role="grid">
+                                <colgroup>
+                                    <col>
+                                </colgroup>
+                                <thead role="rowgroup">
+                                    <tr role="row">
+                                        <th scope="col" class="k-header k-with-icon">
+                                            DatePicker
+                                        </th>
+                                    </tr>
+                                    <tr class="k-filter-row">
+                                        <th>
+                                            <span class="k-filtercell">
+                                                <span>
+                                                    <span class="k-widget k-datepicker">
+                                                        <span class="k-picker-wrap k-state-default">
+                                                            <input type="text" class="k-input" style="width: 100%;">
+                                                            <span class="k-select" role="button">
+                                                                <span class="k-icon k-i-calendar"></span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="k-widget k-dropdown k-dropdown-operator" role="listbox">
+                                                        <span class="k-dropdown-wrap k-state-default">
+                                                            <span class="k-input"> Is equal to</span>
+                                                            <span class="k-select">
+                                                                <span class="k-icon k-i-filter"></span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <button type="button" class="k-button k-button-icon">
+                                                        <span class="k-icon k-i-filter-clear"></span>
+                                                    </button>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+</body>
+
+</html>

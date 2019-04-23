@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>PDF Viewer</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+        }
+        #test-area .k-pdf-viewer {
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area" class="grid">
+
+        <div class="k-widget k-pdf-viewer">
+            <div class="k-toolbar k-widget k-toolbar-resizable">
+                <div class="k-overflow-anchor k-button k-hidden">
+                    <span class="k-icon k-i-more-vertical"></span>
+                </div>
+                <div class="k-pager-wrap">
+                    <a class="k-button k-button-icon k-flat k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
+                    <a class="k-button k-button-icon k-flat k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
+                    <span class="k-pager-input k-label"><input class="k-textbox">of 4 pages</span>
+                    <a class="k-button k-button-icon k-flat k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
+                    <a class="k-button k-button-icon k-flat k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
+                </div>
+                <span class="k-spacer"></span>
+                <a class="k-button k-button-icon k-flat"><span class="k-icon k-i-file-pdf"></span></a>
+                <a class="k-button k-button-icon k-flat"><span class="k-icon k-i-print"></span></a>
+                <a class="k-button k-button-icon k-flat"><span class="k-icon k-i-fullscreen"></span></a>
+            </div>
+            <div class="k-canvas k-list-scroller">
+                <div class="k-page" style="width: 720px; height: 360px;"></div>
+                <div class="k-page" style="width: 720px; height: 360px;"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
