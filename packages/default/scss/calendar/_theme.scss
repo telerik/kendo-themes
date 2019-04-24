@@ -58,7 +58,10 @@ $calendar-today-color: $accent;
 
 
         .k-calendar-header {
-            .k-button { @extend .k-button.k-flat; }
+            .k-button { 
+                @extend .k-button;
+                @extend .k-flat;
+            }
         }
 
 
