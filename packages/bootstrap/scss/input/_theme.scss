@@ -207,18 +207,20 @@
 @include exports("input/theme/IE") {
 
     // TODO: Remove once we drop IE support
-    .k-ie .k-textbox {
-
-        &:-ms-input-placeholder {
-            color: $input-text;
-        }
-        &.k-invalid,
-        &.k-state-invalid,
-        &.ng-invalid.ng-touched,
-        &.ng-invalid.ng-dirty {
-
+    .k-ie {
+        .k-textbox,
+        .k-textarea {
             &:-ms-input-placeholder {
-                color: $error;
+                color: $input-text;
+            }
+            &.k-invalid,
+            &.k-state-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+
+                &:-ms-input-placeholder {
+                    color: $error;
+                }
             }
         }
     }
