@@ -561,11 +561,15 @@
 
     .k-calendar.k-calendar-minimal {
         &.k-calendar-infinite {
-            padding: 0 ($calendar-content-padding-x / 2);
+            padding: 0;
 
             .k-calendar-view,
             .k-calendar-monthview {
-                padding: 0 ($calendar-content-padding-x / 2);
+                padding: 0;
+
+                th {
+                    text-align: center;
+                }
             }
 
             > .k-button {
@@ -596,6 +600,11 @@
                 .k-icon {
                     font-size: 1.5em;
                 }
+            }
+
+            > :first-child,
+            > :last-child {
+                padding: 0 ($calendar-content-padding-x / 2);
             }
 
             > .k-calendar-view {
