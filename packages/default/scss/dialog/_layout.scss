@@ -93,7 +93,7 @@
             padding: $dialog-stretched-button-padding-y $dialog-stretched-button-padding-x;
             border-width: 0;
             text-overflow: ellipsis;
-            flex: 1 0 0;
+            flex: 1 0 0%;
             display: inline-block; // needed for ellipsis overflow
             overflow: hidden;
         }
