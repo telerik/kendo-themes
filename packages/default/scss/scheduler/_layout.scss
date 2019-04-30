@@ -807,9 +807,18 @@
                 float: right;
             }
         }
-        .k-scheduler-agendaview .k-task > .k-event-delete {
-            left: 2px;
-            right: auto;
+        .k-scheduler-agendaview .k-task {
+
+            > .k-event-delete {
+                left: 2px;
+                right: auto;
+            }
+
+            .k-scheduler-mark {
+                margin-left: .5em;
+                margin-right: 0;
+            }
+
         }
 
         .k-scheduler-views {
