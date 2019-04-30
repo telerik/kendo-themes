@@ -72,10 +72,6 @@
         border: 0;
 
         // Hover state
-        > input[type="radio"]:hover + .k-button,
-        > input[type="checkbox"]:hover + .k-button {
-            @include appearance( hovered-button );
-        }
         .k-button:active,
         .k-button.k-state-active {
             & + .k-button:hover,
