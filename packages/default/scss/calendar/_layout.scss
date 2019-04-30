@@ -520,7 +520,7 @@
             &:not(.k-calendar-minimal) {
                 @if $multiviewcalendar-button-style == stretched {
                     > .k-button {
-                        @extend .k-bare;
+                        @extend .k-flat;
                         border-radius: 0;
                         width: $multiviewcalendar-button-size;
                     }
@@ -550,6 +550,7 @@
                         width: $multiviewcalendar-button-size;
                         height: $multiviewcalendar-button-size;
                         border-radius: 50%;
+                        z-index: 2;
                     }
                 }
             }
@@ -561,11 +562,15 @@
 
     .k-calendar.k-calendar-minimal {
         &.k-calendar-infinite {
-            padding: 0 ($calendar-content-padding-x / 2);
+            padding: 0;
 
             .k-calendar-view,
             .k-calendar-monthview {
-                padding: 0 ($calendar-content-padding-x / 2);
+                padding: 0;
+
+                th {
+                    text-align: center;
+                }
             }
 
             > .k-button {
@@ -596,6 +601,11 @@
                 .k-icon {
                     font-size: 1.5em;
                 }
+            }
+
+            > :first-child,
+            > :last-child {
+                padding: 0 ($calendar-content-padding-x / 2);
             }
 
             > .k-calendar-view {
