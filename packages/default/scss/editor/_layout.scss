@@ -19,6 +19,15 @@
         }
     }
 
+    // Reset styles if in sandbox mode
+    .k-editor-sandbox .k-content {
+        color: initial;
+        background-color: initial;
+        font-size: initial;
+        line-height: initial;
+        font-family: initial;
+    }
+
     table.k-editor {
         width: 100%;
     }
