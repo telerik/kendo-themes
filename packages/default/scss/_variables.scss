@@ -1166,6 +1166,8 @@ $modal-inner-padding: 1em;
 
 $scheduler-current-time-color: #f00;
 
+$scheduler-nonwork-bg: mix( $panel-text, $panel-bg, 3% ) !default;
+
 
 // PDF viewer
 $pdf-viewer-bg: null !default;

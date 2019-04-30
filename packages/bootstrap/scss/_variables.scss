@@ -1178,6 +1178,8 @@ $scheduler-timecolumn-width: 11em;
 
 $scheduler-current-time-color: #f00;
 
+$scheduler-nonwork-bg: mix( $panel-text, $panel-bg, ($color-level-step / 2) ) !default;
+
 
 // PDF viewer
 $pdf-viewer-bg: null !default;
