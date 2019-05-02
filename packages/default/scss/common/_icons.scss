@@ -55,6 +55,13 @@
         display: none;
     }
 
+    .k-widget .k-icon {
+        &.k-i-expand,
+        &.k-i-collapse {
+            cursor: pointer;
+        }
+    }
+
     .k-icon-xs { font-size: ( $icon-size * .5 ); }
     .k-icon-sm { font-size: ( $icon-size * .75 ); }
     .k-icon-md { font-size: ( $icon-size * 2 ); }
