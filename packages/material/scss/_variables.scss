@@ -208,6 +208,16 @@ $picker-select-size: add-two($picker-select-padding-x * 2, $icon-size) !default;
 $picker-icon-offset: calc(#{$picker-select-size} + #{$input-icon-offset}) !default;
 
 
+// ColorPicker
+$colorpicker-rect-padding: $padding-x !default;
+$colorpicker-margin: 8px !default;
+$colorpicker-width: 310px !default;
+$colorpicker-draghandle-width: 16px !default;
+$colorpicker-draghandle-height: 16px !default;
+$colorpicker-slider-track-size: 10px !default;
+$colorpicker-slider-border-radius: 10px !default;
+
+
 $list-item-padding-x: $padding-x * 1.5 !default;
 $list-item-padding-y: $padding-y / 2 !default;
 
