@@ -224,9 +224,21 @@
                 }
             }
             &.k-alpha-slider {
+                .k-slider-wrap {
+                    z-index: 1;
+                }
                 .k-slider-track {
-                    background: url('https://kendo.cdn.telerik.com/2019.1.220/styles/textures/transparency.png');
-                    background-position: center;
+                    background-color: transparent;
+
+                    &::before {
+                        z-index: -1;
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        border-radius: inherit;
+                        background: url('https://kendo.cdn.telerik.com/2019.1.220/styles/textures/transparency.png') center;
+                    }
                 }
                 .k-slider-selection {
                     display: none;
