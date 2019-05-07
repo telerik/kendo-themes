@@ -1206,6 +1206,41 @@ $adaptive-scheduler-current-text: $accent;
 $adaptive-scheduler-base-text: inherit;
 
 
+// Drawer
+$drawer-text: $base-text !default;
+$drawer-bg: $base-bg !default;
+$drawer-border: $base-border !default;
+$drawer-border-width: 1px !default;
+$drawer-content-padding-x: $padding-x !default;
+$drawer-content-padding-y: $padding-y !default;
+
+$drawer-scrollbar-width: 7px !default;
+$drawer-scrollbar-color: rgba(156, 156, 156, 0.7) !default;
+$drawer-scrollbar-bg: #dedede !default;
+$drawer-scrollbar-radius: 20px !default;
+$drawer-scrollbar-hovered-color: rgba(156, 156, 156, 1) !default;
+
+$drawer-item-padding-x: $padding-x !default;
+$drawer-item-padding-y: $padding-x !default;
+$drawer-item-font-size: 16px !default;
+$drawer-item-line-height: $line-height-lg !default;
+$drawer-icon-size: 18px !default;
+
+$drawer-initial-width: 200px !default;
+$drawer-mini-initial-width: calc(4 * #{$drawer-item-padding-x} + #{$drawer-icon-size}) !default;
+
+$drawer-hovered-text: $hovered-text !default;
+$drawer-hovered-bg: $hovered-bg !default;
+
+$drawer-focused-bg: $drawer-bg !default;
+$drawer-focused-shadow: $list-item-focused-shadow !default;
+
+$drawer-selected-text: $selected-text !default;
+$drawer-selected-bg: $selected-bg !default;
+$drawer-selected-hover-text: $selected-hover-color !default;
+$drawer-selected-hover-bg: $selected-hover-bg !default;
+
+
 // Config maps
 $typography-config: () !default;
 // sass-lint:disable indentation

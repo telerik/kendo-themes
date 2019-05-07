@@ -1,0 +1,21 @@
+@import "~@progress/kendo-theme-default/scss/drawer/layout";
+
+@include exports( "drawer/layout/material" ) {
+    .k-drawer-container .k-drawer-items {
+        .k-icon {
+            padding-left: 0;
+        }
+
+        .k-item-text {
+            padding: 0;
+        }
+
+        .k-rtl &,
+        [dir="rtl"] & {
+            .k-icon {
+                padding-left: inherit;
+                padding-right: 0;
+            }
+        }
+    }
+}
