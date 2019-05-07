@@ -8,10 +8,10 @@ position: 1
 # Default Theme Overview
 
 {% platform_content angular %}
-The Kendo UI for Angular Default theme is part of the Kendo UI for Angular library which provides native Kendo UI components for the Angular framework and is available through the [kendo-theme-default NPM package](https://www.npmjs.com/package/@progress/kendo-theme-default).
+The Kendo UI for Angular Default theme is part of the Kendo UI for Angular library of UI components. It is distributed through NPM under the [kendo-theme-default package](https://www.npmjs.com/package/@progress/kendo-theme-default).
 {% endplatform_content %}
 {% platform_content react %}
-The KendoReact Default theme is part of the KendoReact library which provides native Kendo UI components for the React ecosystem and is available through the [kendo-theme-default NPM package](https://www.npmjs.com/package/@progress/kendo-theme-default).
+The KendoReact Default theme is part of the KendoReact library of React UI components. It is distributed through NPM under the [kendo-theme-default package](https://www.npmjs.com/package/@progress/kendo-theme-default).
 {% endplatform_content %}
 
 ## Installation
