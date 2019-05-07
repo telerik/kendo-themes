@@ -209,9 +209,9 @@ $picker-icon-offset: calc(#{$picker-select-size} + #{$input-icon-offset}) !defau
 
 
 // ColorPicker
-$colorpicker-rect-padding: $padding-x !default;
+$colorpicker-rect-padding: $padding-x * 1.5 !default;
 $colorpicker-margin: 8px !default;
-$colorpicker-width: 310px !default;
+$colorpicker-width: 356px !default;
 $colorpicker-draghandle-width: 16px !default;
 $colorpicker-draghandle-height: 16px !default;
 $colorpicker-slider-track-size: 10px !default;

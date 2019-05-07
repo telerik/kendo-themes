@@ -78,13 +78,13 @@
             flex-direction: row;
 
             &.k-gradient-values {
-                margin-top: $colorpicker-rect-padding * 2;
+                margin-top: $colorpicker-margin * 2;
                 justify-content: space-between;
                 display: flex;
 
                 input,
                 div {
-                    width: 48px;
+                    width: $colorpicker-input-width;
                     text-align: center;
                 }
                 div {
@@ -92,7 +92,7 @@
                     text-align: center;
                 }
                 .k-hex-value {
-                    width: 65px;
+                    width: $colorpicker-hex-input-width;
                 }
 
                 &:last-of-type {
