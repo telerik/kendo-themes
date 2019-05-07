@@ -1,6 +1,3 @@
-$colorpicker-input-width: 52px !default;
-$colorpicker-hex-input-width: 85px !default;
-
 @import "~@progress/kendo-theme-default/scss/colorpicker/layout";
 
 @include exports( "colorpicker/layout/bootstrap" ) {
