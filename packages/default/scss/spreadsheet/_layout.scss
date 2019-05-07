@@ -505,7 +505,7 @@
         cursor: cell;
     }
 
-    
+
     // Border rendering
     .k-spreadsheet-vborder {
         position: absolute;
@@ -782,6 +782,12 @@
                 font-size: 6em;
             }
         }
+    }
+
+
+    // Insert comment dialog
+    .k-spreadsheet-insert-comment textarea {
+        height: auto;
     }
 
 }
