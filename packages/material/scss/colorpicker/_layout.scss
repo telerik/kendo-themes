@@ -1,6 +1,3 @@
-$colorpicker-input-width: 50px !default;
-$colorpicker-hex-input-width: 70px !default;
-
 @import "~@progress/kendo-theme-default/scss/colorpicker/layout";
 
 @include exports( "colorpicker/layout/material" ) {
@@ -55,8 +52,8 @@ $colorpicker-hex-input-width: 70px !default;
                     line-height: 1;
                 }
 
-                input,
-                div {
+                div,
+                input {
                     text-align: left;
                 }
             }

@@ -68,22 +68,22 @@
 
     .k-flatcolorpicker {
         @include border-radius();
-        padding: $colorpicker-rect-padding;
-        width: $colorpicker-width;
         display: flex;
         flex-direction: column;
         align-items: stretch;
+        width: $colorpicker-width;
+        padding: $colorpicker-rect-padding;
 
         .k-horizontal {
             flex-direction: row;
 
             &.k-gradient-values {
-                margin-top: $colorpicker-margin * 2;
-                justify-content: space-between;
                 display: flex;
+                justify-content: space-between;
+                margin-top: $colorpicker-margin * 2;
 
-                input,
-                div {
+                div,
+                input {
                     width: $colorpicker-input-width;
                     text-align: center;
                 }
@@ -212,10 +212,10 @@
             }
 
             &.k-slider-vertical {
-                margin-left: $colorpicker-margin;
-                height: 180px;
                 flex: 0 0 $colorpicker-slider-track-size;
                 width: $colorpicker-slider-track-size;
+                height: 180px;
+                margin-left: $colorpicker-margin;
                 border-radius: $colorpicker-slider-border-radius;
 
                 .k-slider-track {
@@ -237,7 +237,7 @@
                         height: 100%;
                         position: absolute;
                         border-radius: inherit;
-                        background: url('https://kendo.cdn.telerik.com/2019.1.220/styles/textures/transparency.png') center;
+                        background: url(map-get($data-uris, 'transparency.png')) center;
                     }
                 }
                 .k-slider-selection {
@@ -301,13 +301,13 @@
         // TODO: consider extrangting variables
         // sass-lint:disable no-color-literals no-color-keywords
         .k-item:hover {
-            box-shadow: 0 1px 3px 1px rgba( black, .5 ), inset 0 0 0 1px rgba( white, .3 );
+            box-shadow: 0 0 0 1 rgba( black, .3 ), inset 0 0 0 1px rgba( white, .8 );
             position: relative;
             z-index: 101;
         }
         .k-item.k-state-selected,
         .k-item.k-state-selected:hover {
-            box-shadow: 0 1px 3px 1px rgba( black, .7 ), inset 0 0 0 1px rgba( white, .45 );
+            box-shadow: 0 1px 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, 0.9 );
             position: relative;
             z-index: 100;
         }
