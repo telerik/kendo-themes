@@ -2,19 +2,24 @@
 
 @include exports( "drawer/layout/material" ) {
     .k-drawer-container .k-drawer-items {
-        .k-icon {
-            padding-left: 0;
-        }
 
         .k-item-text {
             padding: 0;
         }
 
+        .k-icon {
+            padding: 0;
+
+            & + .k-item-text {
+                padding-left: $drawer-item-padding-x;
+            }
+        }
+
         .k-rtl &,
         [dir="rtl"] & {
-            .k-icon {
-                padding-left: inherit;
-                padding-right: 0;
+            .k-icon + .k-item-text {
+                padding-left: 0;
+                padding-right: $drawer-item-padding-x;
             }
         }
     }

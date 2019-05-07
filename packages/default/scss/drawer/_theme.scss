@@ -1,22 +1,23 @@
 @include exports("drawer/theme") {
+
     .k-drawer-container {
         background-color: $drawer-bg;
         color: $drawer-text;
         border-color: $drawer-border;
-    }
 
-    .k-drawer-container,
-    .k-drawer-container .k-drawer-items {
-        &::-webkit-scrollbar-track {
-            background: $drawer-scrollbar-bg;
-        }
+        &,
+        .k-drawer-items {
+            &::-webkit-scrollbar-track {
+                background: $drawer-scrollbar-bg;
+            }
 
-        &::-webkit-scrollbar-thumb {
-            background: $drawer-scrollbar-color;
-        }
+            &::-webkit-scrollbar-thumb {
+                background: $drawer-scrollbar-color;
+            }
 
-        &::-webkit-scrollbar-thumb:hover {
-            background:  $drawer-scrollbar-hovered-color;
+            &::-webkit-scrollbar-thumb:hover {
+                background:  $drawer-scrollbar-hovered-color;
+            }
         }
     }
 
