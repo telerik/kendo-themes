@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Spreadsheet Dialogs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            min-height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area" class="grid">
+
+        <div class="k-widget k-window" data-role="draggable" style="position: relative; display: flex; align-self: flex-start; width: 450px;">
+            <div class="k-window-titlebar k-header">
+                <span class="k-window-title">Insert comment</span>
+                <div class="k-window-actions">
+                    <a role="button" href="#" class="k-button k-bare k-button-icon k-window-action">
+                        <span class="k-icon k-i-close"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="k-spreadsheet-window k-action-window k-popup-edit-form k-spreadsheet-insert-comment k-window-content k-content">
+                <div class="k-edit-label">
+                    <label>Comment:</label>
+                </div>
+                <div class="k-edit-field">
+                    <textarea rows="5" class="k-textbox"></textarea>
+                </div>
+                <div class="k-action-buttons">
+                    <button class="k-button k-left">Remove comment</button>
+                    <button class="k-button k-primary">OK</button>
+                    <button class="k-button">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
