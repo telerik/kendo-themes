@@ -1,6 +1,12 @@
 @include exports("drawer/layout") {
 
-    .k-drawer-container  {
+    .k-drawer-container {
+        border-style: solid;
+        border-width: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        white-space: nowrap;
+        user-select: none;
 
         &,
         .k-drawer-items {
@@ -15,15 +21,6 @@
                 border-radius: $drawer-scrollbar-radius;
             }
         }
-    }
-
-    .k-drawer-container {
-        border-style: solid;
-        border-width: 0;
-        box-sizing: border-box;
-        overflow-x: hidden;
-        white-space: nowrap;
-        user-select: none;
 
         .k-drawer-items {
             padding: 0;
