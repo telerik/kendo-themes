@@ -20,12 +20,23 @@
     }
 
     // Reset styles if in sandbox mode
-    .k-editor-sandbox .k-content {
-        color: initial;
-        background-color: initial;
-        font-size: initial;
-        line-height: initial;
-        font-family: initial;
+    .k-editor-sandbox {
+
+        .k-content {
+            color: initial;
+            background-color: initial;
+            font-size: initial;
+            line-height: initial;
+            font-family: initial;
+        }
+
+        &.k-ie .k-content {
+            color: #000;
+            background-color: transparent;
+            font-size: medium;
+            line-height: normal;
+            font-family: sans-serif;
+        }
     }
 
     table.k-editor {
