@@ -83,7 +83,8 @@
                 margin-top: $colorpicker-margin * 2;
 
                 div,
-                input {
+                input,
+                .k-numerictextbox {
                     width: $colorpicker-input-width;
                     text-align: center;
                 }
