@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Drawer</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            height: 600px;
+        }
+
+        #test-area .separator {
+            width: 100%;
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="k-drawer-wrapper k-drawer-right k-drawer-overlay"><div class="k-overlay" style="display: block;"></div>
+        <div class="k-drawer-container k-drawer-expanded" style="right: auto; left: 742px;">
+            <div class="k-drawer-items" style="width: 280px;">
+                <ul>
+                    <li class="k-drawer-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                        <span class="k-item-text">Item with icon</span>
+                    </li>
+                    <li class="k-drawer-item k-drawer-separator"></li>
+                    <li class="k-drawer-item k-state-hover">
+                        <span class="k-icon k-i-twitter"></span>
+                        <span class="k-item-text">Hovered Item with icon</span>
+                    </li>
+                    <li class="k-drawer-item k-state-selected">
+                        <span class="k-icon k-i-anchor"></span>
+                        <span class="k-item-text">Selected Item with icon</span>
+                    </li>
+                    <li class="k-drawer-item">
+                        <span class="k-item-text">Item</span>
+                    </li>
+                    <li class="k-drawer-item k-drawer-separator"></li>
+                    <li class="k-drawer-item">
+                        <span class="k-item-text">item</span>
+                    </li>
+                    <li class="k-drawer-item k-state-selected k-state-hover">
+                        <span class="k-item-text">Selected and hovered item</span>
+                    </li>
+                    <li class="k-drawer-item k-state-focused">
+                        <span class="k-item-text">Focused item</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="test-area">
+        <h2 style="text-align: center;">Drawer Overlay Mode Right Position</h2>
+        <div id="drawer" class="k-drawer k-widget" data-role="drawer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.olor sit amet consectetur
+                adipisicing elit. Error accusantium odit, optio nulla maiores quo neque fugit debitis dignissimos incidunt
+                maxime? Eum voluptatem blanditiis voluptatum praesentium dolorem, dolore placeat debitis quod delectus laborum
+                assumenda cupiditate quaerat quam fugiat deleniti suscipit necessitatibus. Voluptates a molestias temporibus
+                inventore, sit soluta vitae qui repellendus rem aliquam iusto esse. Velit suscipit quaerat tempore natus?
+                Autem, debitis non. Sunt, voluptatem laboriosam. Voluptates a molestias temporibus
+                inventore, sit soluta vitae qui repellendus rem aliquam iusto esse. Velit suscipit quaerat tempore natus?
+                Autem, debitis non. Sunt, voluptatem laboriosam. Voluptates a molestias temporibus
+                inventore, sit soluta vitae qui repellendus rem aliquam iusto esse. Velit suscipit quaerat tempore natus?
+                Autem, debitis non. Sunt, voluptatem laboriosam.
+        </div>
+    </div>
+</body>
+</html>
