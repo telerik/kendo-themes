@@ -16,12 +16,19 @@
             width: 100%;
             grid-column: span 2;
         }
+
+        #test-area h2 {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
 
     <div id="test-area" class="grid">
-
+        <h2>Drawer Push Mode RTL</h2>
         <section class="k-rtl">
             <h4>Drawer Position Left RTL</h4>
             <div id="drawer" class="k-drawer k-widget" data-role="drawer">
