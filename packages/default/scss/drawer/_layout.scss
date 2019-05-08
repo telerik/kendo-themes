@@ -23,6 +23,7 @@
         box-sizing: border-box;
         overflow-x: hidden;
         white-space: nowrap;
+        user-select: none;
 
         .k-drawer-items {
             padding: 0;
@@ -63,10 +64,6 @@
 
         &.k-drawer-expanded {
             border-right-width: $drawer-border-width;
-
-            .k-drawer-items {
-                width: $drawer-initial-width; /* Default width of sidebar */
-            }
         }
     }
 
@@ -82,10 +79,6 @@
                 overflow-y: visible;
                 overflow-x: initial;
                 width: $drawer-mini-initial-width; /* Default width of mini sidebar */
-            }
-
-             &.k-drawer-expanded .k-drawer-items {
-                width: $drawer-initial-width; /* Default width of sidebar */
             }
         }
 
