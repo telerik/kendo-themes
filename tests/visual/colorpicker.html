@@ -232,8 +232,73 @@
                 </div>
             </section>
 
-            <section></section>
-            <section></section>
+            <section>
+                <p>Angular colorpicker selected color tile</p>
+                <kendo-colorpicker class="k-widget k-colorpicker">
+                    <span class="k-picker-wrap k-state-default">
+                        <span class="k-selected-color" style="background-color: rgb(254, 65, 59);"></span>
+                    <span class="k-select">
+                        <span class="k-icon k-i-arrow-s"></span>
+                        </span>
+                    </span>
+                </kendo-colorpicker>
+            </section>
+
+            <section>
+                <p>Angular colorpicker with icon</p>
+                <kendo-colorpicker iconclass="k-icon k-i-edit-tools" class="k-widget k-colorpicker">
+                    <span class="k-picker-wrap k-state-default">
+                        <span class="k-tool-icon k-icon k-i-edit-tools">
+                            <span class="k-selected-color" style="background-color: rgb(254, 65, 59);"></span>
+                        </span>
+                        <span class="k-select">
+                            <span class="k-icon k-i-arrow-s"></span>
+                        </span>
+                    </span>
+                </kendo-colorpicker>
+            </section>
+
+            <section>
+                <p>Angular colorpicker disabled</p>
+                <kendo-colorpicker class="k-widget k-colorpicker">
+                    <span class="k-picker-wrap k-state-disabled">
+                        <span class="k-selected-color">
+                            <span class="k-icon k-i-line"></span>
+                        </span>
+                        <span class="k-select">
+                            <span class="k-icon k-i-arrow-s"></span>
+                        </span>
+                    </span>
+                </kendo-colorpicker>
+            </section>
+
+            <section>
+                <p>Angular colorpicker with opened colorpalette</p>
+                <kendo-colorpicker class="k-widget k-colorpicker">
+                    <span class="k-picker-wrap k-state-default">
+                        <span class="k-selected-color" style="background-color: rgb(78, 174, 197);"></span>
+                        <span class="k-select"><span class="k-icon k-i-arrow-s"></span></span>
+                    </span>
+                </kendo-colorpicker>
+                <kendo-popup class="k-animation-container k-animation-container-shown" style="left: 522px; top: 680px;">
+                    <div class="k-popup">
+                        <kendo-colorpalette class="k-widget k-colorpalette">
+                            <div role="grid">
+                                <table class="k-palette k-reset" role="presentation">
+                                    <tbody>
+                                        <tr role="row">
+                                            <td class="k-item" value="#fe413b" style="background-color: rgb(254, 65, 59); width: 30px; height: 30px; min-width: 30px;"></td>
+                                            <td class="k-item k-state-selected" value="#4eaec5" style="background-color: rgb(78, 174, 197); width: 30px; height: 30px; min-width: 30px;"></td>
+                                            <td class="k-item k-state-focused" value="#ff5500" style="background-color: rgb(255, 85, 0); width: 30px; height: 30px; min-width: 30px;"></td>
+                                            <td class="k-item k-state-hover" value="#42b683" style="background-color: rgb(66, 182, 131); width: 30px; height: 30px; min-width: 30px;"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </kendo-colorpalette>
+                    </div>
+                </kendo-popup>
+            </section>
 
             <section>
                 <p>Angular ColorGradient</p>
