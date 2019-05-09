@@ -61,7 +61,11 @@
             overflow: hidden;
         }
     }
-
+    .k-colorpicker + .k-animation-container {
+        .k-popup {
+            padding: 0;
+        }
+    }
 }
 
 @include exports( "flatcolorpicker/layout" ) {

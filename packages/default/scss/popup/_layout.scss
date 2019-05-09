@@ -71,6 +71,11 @@ $popup-filter-padding-x: $input-padding-x !default;
         white-space: normal;
     }
 
+    .k-popup > .k-colorpalette,
+    .k-popup > .k-flatcolorpicker {
+        padding: $colorpicker-rect-padding;
+    }
+
     .k-popup .k-list .k-item > .k-group {
         position: absolute;
         top: 0;
