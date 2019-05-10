@@ -1,13 +1,2 @@
 @import "~@progress/kendo-theme-default/scss/colorpicker/layout";
 
-@include exports( "colorpicker/layout/bootstrap" ) {
-
-    .k-flatcolorpicker {
-        .k-hsv-wrap {
-
-            .k-hsv-rectangle {
-                flex: 0 0 272px;
-            }
-        }
-    }
-}

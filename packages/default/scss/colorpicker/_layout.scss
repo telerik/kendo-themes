@@ -114,7 +114,7 @@
             align-items: center;
 
             .k-hsv-rectangle {
-                flex: 0 0 250px;
+                flex: 1;
             }
         }
 
@@ -229,6 +229,7 @@
                 }
             }
             &.k-alpha-slider {
+                margin-right: $colorpicker-margin / 2;
                 .k-slider-wrap {
                     z-index: 1;
                 }
