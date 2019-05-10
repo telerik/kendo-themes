@@ -15,6 +15,10 @@
         .k-editor-toolbar .k-overflow-tools {
             visibility: visible;
         }
+
+        p {
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -189,13 +193,140 @@
                 <span class="k-ct-cell k-state-disabled"></span>
                 <div class="k-status">Create a 3 x 5 table</div>
                 <div class="k-editor-toolbar">
-                    <a tabindex="0" role="button" class="k-tool" title="Table Wizard">
+                    <a role="button" class="k-tool" title="Table Wizard">
                         <span unselectable="on" class="k-tool-icon k-icon k-i-table-wizard"></span>
                         <span class="k-tool-text">Table Wizard</span>
                     </a>
                 </div>
             </div>
         </div>
+
+        <p>Angular Editor</p>
+        <kendo-editor class="k-widget k-editor">
+                <kendo-toolbar class="k-widget k-toolbar" role="toolbar" dir="ltr">
+                    <kendo-toolbar-renderer style="display: inline-block;">
+                    <kendo-buttongroup class="k-button-group" role="group" dir="ltr">
+                        <button type="button" class="k-button-icon k-button k-group-start" dir="ltr"><span class="k-icon k-i-bold" role="presentation"></span>
+                        </button><button type="button" class="k-button-icon k-button" dir="ltr"><span class="k-icon k-i-italic" role="presentation"></span>
+                        </button><button type="button" class="k-button-icon k-button k-group-end" dir="ltr"><span class="k-icon k-i-underline" role="presentation"></span>
+                        </button>
+                    </kendo-buttongroup>
+
+                </kendo-toolbar-renderer>
+                    <kendo-toolbar-renderer style="display: inline-block;">
+                    <kendo-dropdownlist class="k-widget k-dropdown k-header" dir="ltr">
+
+                    <span role="listbox" unselectable="on" class="k-dropdown-wrap k-state-default" dir="ltr" readonly="false" aria-disabled="false" aria-readonly="false" aria-haspopup="true" aria-expanded="false" aria-owns="fdac45f4-67bf-45e6-98fa-5844c0aa18eb" aria-activedescendant="354bded5-32bf-40c2-bdb2-e99fdad29a17-null">
+                    <span unselectable="on" class="k-input">
+                       Format
+                   </span>
+                   <span unselectable="on" class="k-select">
+                       <span class="k-i-arrow-s k-icon"></span>
+                   </span>
+                </span>
+            </kendo-dropdownlist>
+            </kendo-toolbar-renderer>
+                    <kendo-toolbar-renderer style="display: inline-block;">
+                    <kendo-buttongroup class="k-button-group" role="group" dir="ltr">
+                        <button type="button" class="k-button-icon k-button k-group-start" dir="ltr"><span class="k-icon k-i-align-left" role="presentation"></span>
+                        </button><button type="button" class="k-button-icon k-button" dir="ltr"><span class="k-icon k-i-align-center" role="presentation"></span>
+                        </button><button type="button" class="k-button-icon k-button" dir="ltr"><span class="k-icon k-i-align-right" role="presentation"></span>
+                        </button><button type="button" class="k-button-icon k-button k-group-end" dir="ltr"><span class="k-icon k-i-align-justify" role="presentation"></span>
+                        </button>
+            </kendo-buttongroup>
+
+            </kendo-toolbar-renderer>
+                    <kendo-toolbar-renderer style="display: inline-block;">
+                    <kendo-buttongroup class="k-button-group" role="group" dir="ltr">
+                        <button type="button" class="k-button-icon k-button k-group-start" dir="ltr"><span class="k-icon k-i-list-unordered" role="presentation"></span>
+                        </button><button type="button" class="k-button-icon k-button" dir="ltr"><span class="k-icon k-i-list-ordered" role="presentation"></span>
+                        </button><button type="button" class="k-button-icon k-button k-state-disabled" disabled="" dir="ltr"><span class="k-icon k-i-indent-increase" role="presentation"></span>
+                        </button><button type="button" class="k-button-icon k-button k-state-disabled k-group-end" disabled="" dir="ltr"><span class="k-icon k-i-indent-decrease" role="presentation"></span>
+
+                        </button>
+            </kendo-buttongroup>
+
+            </kendo-toolbar-renderer>
+                    <kendo-toolbar-renderer style="display: inline-block;">
+                    <kendo-buttongroup class="k-button-group" role="group" dir="ltr">
+                        <button type="button" class="k-button-icon k-button k-group-start" dir="ltr"><span class="k-icon k-i-link-horizontal" role="presentation"></span>
+                        </button><button type="button" class="k-button-icon k-button k-state-disabled k-group-end" disabled="" dir="ltr"><span class="k-icon k-i-unlink-horizontal" role="presentation"></span>
+                        </button>
+            </kendo-buttongroup>
+
+            </kendo-toolbar-renderer>
+                    <kendo-toolbar-renderer style="display: inline-block;">
+                    <button type="button" class="k-button-icon k-button" dir="ltr"><span class="k-icon k-i-image" role="presentation"></span>
+                    </button>
+            </kendo-toolbar-renderer>
+            </kendo-toolbar>
+                <div class="k-content" style="height: 300px;"><div contenteditable="true" class="ProseMirror"><p>The Kendo UI Angular Editor allows your users to edit HTML in a familiar, user-friendly way.<br>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p><p>Features include:</p><ul><li><p>Text formatting</p></li><li><p>Bulleted and numbered lists</p></li><li><p>Hyperlinks</p></li><li><p>Cross-browser support</p></li><li><p>Identical HTML output across browsers</p></li></ul></div></div>
+            </kendo-editor>
+
+        <p>Angular Editor in sandbox mode</p>
+        <kendo-editor class="k-widget k-editor k-editor-sandbox">
+            <kendo-toolbar class="k-widget k-toolbar" role="toolbar" dir="ltr">
+                <kendo-toolbar-renderer style="display: inline-block;">
+                <kendo-buttongroup class="k-button-group" role="group" dir="ltr">
+
+                <button type="button" class="k-button-icon k-button k-group-start" dir="ltr"><span class="k-icon k-i-bold" role="presentation"></span>
+                </button><button type="button" class="k-button-icon k-button" dir="ltr"><span class="k-icon k-i-italic" role="presentation"></span>
+                </button><button type="button" class="k-button-icon k-button k-group-end" dir="ltr"><span class="k-icon k-i-underline" role="presentation"></span>
+                </button>
+                </kendo-buttongroup>
+            </kendo-toolbar-renderer>
+
+            <kendo-toolbar-renderer style="display: inline-block;">
+            <kendo-dropdownlist class="k-widget k-dropdown k-header" dir="ltr">
+
+            <span role="listbox" unselectable="on" class="k-dropdown-wrap k-state-default" dir="ltr" readonly="false" aria-disabled="false" aria-readonly="false" aria-haspopup="true" aria-expanded="false" aria-owns="b169bd98-1c2b-4905-8fc1-082a064d4a37" aria-activedescendant="1e69e806-e649-425f-809c-4870395d44b6-null">
+                <span unselectable="on" class="k-input">
+                Format
+            </span>
+            <span unselectable="on" class="k-select">
+                <span class="k-i-arrow-s k-icon"></span>
+            </span>
+            </span>
+
+             </kendo-dropdownlist>
+            </kendo-toolbar-renderer>
+
+            <kendo-toolbar-renderer style="display: inline-block;">
+            <kendo-buttongroup role="group" dir="ltr">
+
+                <button type="button" class="k-button-icon k-button k-group-start" dir="ltr"><span class="k-icon k-i-align-left" role="presentation"></span>
+                </button><button type="button" class="k-button-icon k-button" dir="ltr"><span class="k-icon k-i-align-center" role="presentation"></span>
+                </button><button type="button" class="k-button-icon k-button" dir="ltr"><span class="k-icon k-i-align-right" role="presentation"></span>
+                </button><button type="button" class="k-button-icon k-button k-group-end" dir="ltr"><span class="k-icon k-i-align-justify" role="presentation"></span>
+
+                </button>
+            </kendo-buttongroup>
+            </kendo-toolbar-renderer>
+
+            <kendo-toolbar-renderer style="display: inline-block;">
+            <kendo-buttongroup role="group" dir="ltr">
+                    <button type="button" class="k-button-icon k-button k-group-start" dir="ltr"><span class="k-icon k-i-list-unordered" role="presentation"></span>
+                    </button><button type="button" class="k-button-icon k-button k-state-active" dir="ltr"><span class="k-icon k-i-list-ordered" role="presentation"></span>
+                    </button><button type="button" class="k-button-icon k-button" dir="ltr"><span class="k-icon k-i-indent-increase" role="presentation"></span>
+                    </button><button type="button" class="k-button-icon k-button k-state-disabled k-group-end" dir="ltr"><span class="k-icon k-i-indent-decrease" role="presentation"></span>
+                    </button>
+            </kendo-buttongroup>
+            </kendo-toolbar-renderer>
+
+            <kendo-toolbar-renderer style="display: inline-block;">
+            <kendo-buttongroup role="group" dir="ltr">
+            <button type="button" class="k-button-icon k-button k-group-start" dir="ltr"><span class="k-icon k-i-link-horizontal" role="presentation"></span>
+                </button><button type="button" class="k-button-icon k-button k-group-end" dir="ltr"><span class="k-icon k-i-unlink-horizontal" role="presentation"></span>
+                </button>
+            </kendo-buttongroup>
+            </kendo-toolbar-renderer>
+                    <kendo-toolbar-renderer style="display: inline-block;">
+                    <button type="button" class="k-button-icon k-button" dir="ltr"><span class="k-icon k-i-image" role="presentation"></span>
+                    </button>
+            </kendo-toolbar-renderer>
+            </kendo-toolbar>
+            <div class="k-content" style="height: 300px;"><div contenteditable="true" class="ProseMirror"><p>The quick brown fox jumps over the lazy dog The quick <span style="font-size: 36px;">brown </span><span style="font-size: 24px;">fox</span><span style="font-size: 36px;"> </span><strong><span style="font-size: 36px; font-family: Tahoma,Verdana,Segoe,sans-serif;">jumps</span></strong><span style="font-size: 36px;"> </span><span style="font-family: Impact,Haettenschweiler,&quot;Franklin Gothic Bold&quot;,Charcoal,&quot;Helvetica Inserat&quot;,&quot;Bitstream Vera Sans Bold&quot;,&quot;Arial Black&quot;,&quot;sans serif&quot;; font-size: 24px;">over</span><span style="font-size: 36px;"> the lazy dog</span></p><ol><li><p>a</p></li><li><p>b</p></li><li><p>c</p></li><li><p>d</p></li><li><p>e</p></li><li><p>f</p></li></ol></div></div>
+        </kendo-editor>
     </div>
 
 </body>
