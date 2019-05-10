@@ -166,6 +166,47 @@
 
 
 
+@include exports( "spreadsheet/drawing/theme" ) {
+
+    .k-spreadsheet-insert-image-dialog {
+        border-color: $spreadsheet-insert-image-dialog-preview-border-bg;
+        border-radius: $spreadsheet-insert-image-dialog-preview-border-radius;
+
+        .k-spreadsheet-has-image {
+            &:hover,
+            &.k-state-hovered {
+                box-shadow: $spreadsheet-insert-image-dialog-preview-overlay-shadow;
+                border-radius: $spreadsheet-insert-image-dialog-preview-overlay-border-radius;
+            }
+
+            &:hover div,
+            &.k-state-hovered div {
+                color: $spreadsheet-insert-image-dialog-overlay-hovered-text;
+            }
+        }
+    }
+
+    .k-spreadsheet-drawing {
+        &.k-spreadsheet-active-drawing {
+            outline-color: $spreadsheet-drawing-handle-outline-color;
+        }
+
+        .k-spreadsheet-drawing-handle {
+            border-color: $spreadsheet-drawing-handle-border-color;
+            background-color: $spreadsheet-drawing-handle-bg;
+            border-radius: $spreadsheet-drawing-handle-border-radius;
+        }
+    }
+
+    .k-spreadsheet-drawing-anchor-cell {
+        background: $spreadsheet-drawing-anchor-bg;
+    }
+
+}
+
+
+
+
 @include exports( "spreadsheet/tools/theme" ) {
 
     .k-spreadsheet-popup {
