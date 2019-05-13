@@ -147,7 +147,7 @@ $input-calc-size: #{$input-inner-calc-size} + #{$input-border-width * 2};
 $input-icon-offset: 6px !default;
 
 // Pickers
-$picker-select-border-width: 0 !default;
+$picker-select-border-width: 1px !default;
 $picker-select-padding-x: $button-padding-y !default;
 $picker-select-padding-y: $button-padding-y !default;
 $picker-select-line-height: $line-height !default;

@@ -12,6 +12,10 @@
             .k-edge13 & {
                 background-clip: border-box;
             }
+
+            &:focus {
+
+            }
         }
         .k-select {
             padding: 0;
@@ -20,9 +24,18 @@
         }
 
         // Hovered state
-        .k-picker-wrap:hover,
+        .k-tool-icon:hover,
+        .k-select:hover,
+        .k-tool-icon.k-state-hover,
+        .k-select.k-state-hover,
         .k-state-hover {
             @include appearance( hovered-button );
+        }
+
+        .k-tool-icon:hover,
+        .k-tool-icon.k-state-hover {
+            cursor: pointer;
+            border-color: rgba(0, 0, 0, 0.08);
         }
 
         // Selected state
