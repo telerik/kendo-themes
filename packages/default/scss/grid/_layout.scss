@@ -1191,4 +1191,12 @@
             }
         }
     }
+
+    [dir = "rtl"],
+    .k-rtl {
+        .k-columnmenu-item  > .k-icon {
+            margin-left: $icon-spacing;
+            margin-right: 0;
+        }
+    }
 }
