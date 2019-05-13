@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.5.0"></a>
+# 2.5.0 (2019-05-13)
+
+
+### Bug Fixes
+
+* **colorpicker:** alpha slider bgr using embed assets script ([a300c78](https://github.com/telerik/kendo-themes/commit/a300c78))
+* drawer overlay closed layout ([9b09fa1](https://github.com/telerik/kendo-themes/commit/9b09fa1))
+* **colorpicker:** bootstrap and material themes icon hover styles ([d451132](https://github.com/telerik/kendo-themes/commit/d451132))
+* **colorpicker:** flex layout glitches when hiding dynamically content ([9711ef9](https://github.com/telerik/kendo-themes/commit/9711ef9))
+
+
+### Features
+
+* drawer styles ([76c7ea3](https://github.com/telerik/kendo-themes/commit/76c7ea3))
+* **spreadsheet:** add images sass styles ([b369217](https://github.com/telerik/kendo-themes/commit/b369217))
+
+
+
+
 <a name="2.4.1"></a>
 ## [2.4.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@2.4.0...@progress/kendo-theme-material@2.4.1) (2019-04-09)
 

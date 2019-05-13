@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.6.0"></a>
+# 3.6.0 (2019-05-13)
+
+
+### Bug Fixes
+
+* angular editor content spacings and layout ([502d679](https://github.com/telerik/kendo-themes/commit/502d679))
+* **colorpicker:** alpha slider bgr using embed assets script ([a300c78](https://github.com/telerik/kendo-themes/commit/a300c78))
+* cursor of expand and collapse icons telerik/kendo-ui-core[#5021](https://github.com/telerik/kendo-themes/issues/5021) ([bee7a70](https://github.com/telerik/kendo-themes/commit/bee7a70))
+* drawer overlay closed layout ([9b09fa1](https://github.com/telerik/kendo-themes/commit/9b09fa1))
+* spacings of colorpicker when opening a popup ([5d617db](https://github.com/telerik/kendo-themes/commit/5d617db))
+* style encapsulation does not work ([c7f828b](https://github.com/telerik/kendo-themes/commit/c7f828b))
+* **colorpicker:** flex layout glitches when hiding dynamically content ([9711ef9](https://github.com/telerik/kendo-themes/commit/9711ef9))
+* **colorpicker:** icon colorpicker hovered states styles ([59057aa](https://github.com/telerik/kendo-themes/commit/59057aa))
+* **grid:** override adaptive edit form min-width ([f781dd8](https://github.com/telerik/kendo-themes/commit/f781dd8))
+* **pdf-viewer:** pager buttons shadow is not visible ([ad5ac42](https://github.com/telerik/kendo-themes/commit/ad5ac42))
+* **spreadsheet:** insufficient textarea height in insert comment dialog ([cff788a](https://github.com/telerik/kendo-themes/commit/cff788a))
+
+
+### Features
+
+* drawer styles ([76c7ea3](https://github.com/telerik/kendo-themes/commit/76c7ea3))
+* **colorpicker:** add new colorpicker layout styles ([873d4c6](https://github.com/telerik/kendo-themes/commit/873d4c6))
+* **editor:** add styles to for editor encapsulation ([95b3137](https://github.com/telerik/kendo-themes/commit/95b3137))
+* **spreadsheet:** add images sass styles ([b369217](https://github.com/telerik/kendo-themes/commit/b369217))
+
+
+
+
 <a name="3.5.1"></a>
 ## [3.5.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@3.5.0...@progress/kendo-theme-default@3.5.1) (2019-04-09)
 

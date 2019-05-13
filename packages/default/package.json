@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-default",
   "description": "SASS resources for the default Kendo UI theme",
-  "version": "3.5.1",
+  "version": "3.6.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -30,7 +30,7 @@
     "prepublishOnly": "npm run build && npm run swatches"
   },
   "devDependencies": {
-    "@progress/kendo-theme-tasks": "^0.1.4",
+    "@progress/kendo-theme-tasks": "^0.1.5",
     "bootstrap": "^4.3.1",
     "handlebars": "^4.0.10"
   }
