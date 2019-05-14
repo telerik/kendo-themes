@@ -149,6 +149,15 @@
 
     }
 
+    kendo-toolbar.k-toolbar {
+        padding: $toolbar-padding-y / 2 $toolbar-padding-x;
+
+        kendo-toolbar-renderer {
+            margin-top: $toolbar-padding-y / 2;
+            margin-bottom: $toolbar-padding-y / 2;
+        }
+    }
+
 
     .k-overflow-container {
 
