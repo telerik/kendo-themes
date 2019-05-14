@@ -587,6 +587,46 @@
             </div>
         </div>
 
+        <!-- Angular specific rendering with wrapped elements -->
+        <div class="section" style="width: 300px;">
+            <kendo-toolbar class="k-widget k-toolbar" dir="ltr">
+                <kendo-toolbar-renderer style="display: inline-block;">
+                    <button type="button" class="k-button" dir="ltr">
+                        Button
+                    </button>
+                </kendo-toolbar-renderer>
+                <kendo-toolbar-renderer style="display: inline-block;">
+                    <button type="button" class="k-button" dir="ltr">
+                        Toggle
+                    </button>
+                </kendo-toolbar-renderer>
+                <kendo-toolbar-renderer style="display: inline-block;">
+                    <div class="k-widget k-split-button k-button-group" dir="ltr">
+                        <button type="button" class="k-button" dir="ltr">
+                            Split Button
+                        </button>
+                        <button type="button" class="k-button-icon k-button" dir="ltr">
+                            <span class="k-icon k-i-arrow-s"></span>
+                        </button>
+                    </div>
+                </kendo-toolbar-renderer>
+                <kendo-toolbar-renderer style="display: inline-block;">
+                    <div class="k-widget k-dropdown-button" dir="ltr">
+                        <button type="button" class="k-button" dir="ltr">
+                            DropDownButton
+                        </button>
+                    </div>
+                </kendo-toolbar-renderer>
+                <kendo-toolbar-renderer style="display: inline-block;">
+                    <div class="k-button-group" dir="ltr">
+                        <button type="button" class="k-button-icon k-button k-group-start k-group-end" dir="ltr">
+                            <span class="k-icon k-i-align-left"></span>
+                        </button>
+                    </div>
+                </kendo-toolbar-renderer>
+            </kendo-toolbar>
+        </div>
+
     </div>
 
 </body>
