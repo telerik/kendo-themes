@@ -24,19 +24,19 @@ $accent: $primary !default;
 /// @group color-system
 $accent-contrast: contrast-wcag( $accent ) !default;
 
-/// The color for error messages and states.
+/// The color for success messages and states.
 /// @group color-system
 $success: $success !default;
 
-/// The color for warning messages and states.
+/// The color for informational messages and states.
 /// @group color-system
 $info: $info !default;
 
-/// The color for success messages and states.
+/// The color for warning messages and states.
 /// @group color-system
 $warning: $warning !default;
 
-/// The color for informational messages and states.
+/// The color for error messages and states.
 /// @group color-system
 $error: $danger !default;
 
