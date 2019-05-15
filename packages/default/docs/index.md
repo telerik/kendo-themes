@@ -15,19 +15,13 @@ The Kendo UI Default theme is available through the @progress/kendo-theme-defaul
 > Due to recent changes in rendering, the Kendo UI Default theme package now requires a kendo-angular-inputs@^4.0.0 version. For more information, refer to [issue #2018](https://github.com/telerik/kendo-angular/issues/2018) on GitHub.
 {% endplatform_content %}
 
-1. Download and install the package of the Default theme.
+1. Download and install the Kendo UI Default theme package.
 
     ```sh
     npm install --save @progress/kendo-theme-default
     ```
 
-1. Import the CSS file from the package
-
-    ```sh
-      import '@progress/kendo-theme-default/dist/all.css';
-    ```
-
-1. Apply the Default theme options according to the instructions in the article on [styling]({% slug themesandstyles %}).
+1. For the next steps that include alternative approaches for theme installation, refer to the instructions in the [article on styling in Kendo UI]({% slug themesandstyles %}).
 
 ## Preview
 
