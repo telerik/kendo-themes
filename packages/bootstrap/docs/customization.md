@@ -421,7 +421,7 @@ Used to provide contrast between the background and foreground colors.
     
     $success
 </td>
-<td>The color for error messages and states.
+<td>The color for success messages and states.
 </td>
 </tr>
 <tr>
@@ -430,7 +430,7 @@ Used to provide contrast between the background and foreground colors.
     
     $info
 </td>
-<td>The color for warning messages and states.
+<td>The color for informational messages and states.
 </td>
 </tr>
 <tr>
@@ -439,7 +439,7 @@ Used to provide contrast between the background and foreground colors.
     
     $warning
 </td>
-<td>The color for success messages and states.
+<td>The color for warning messages and states.
 </td>
 </tr>
 <tr>
@@ -448,7 +448,7 @@ Used to provide contrast between the background and foreground colors.
     
     $danger
 </td>
-<td>The color for informational messages and states.
+<td>The color for error messages and states.
 </td>
 </tr>
 <tr>
