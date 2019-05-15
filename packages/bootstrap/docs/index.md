@@ -15,28 +15,21 @@ The Kendo UI Bootstrap theme is available through the @progress/kendo-theme-boot
 > Due to recent changes in rendering, the Kendo UI Bootstrap theme package now requires a kendo-angular-inputs@^4.0.0 version. For more information, refer to [issue #2018](https://github.com/telerik/kendo-angular/issues/2018) on GitHub.
 {% endplatform_content %}
 
-1. Download and install the package of the Bootstrap theme.
+1. Download and install the Kendo UI Bootstrap theme package.
 
     ```sh
     npm install --save @progress/kendo-theme-bootstrap
     ```
 
-1. Import the CSS file from the package.
+1. For the next steps that include alternative approaches for theme installation, refer to the instructions in the [article on styling in Kendo UI]({% slug themesandstyles %}).
 
-    ```sh
-      import '@progress/kendo-theme-bootstrap/dist/all.css';
-    ```
+If you include the Bootstrap framework from its source, you have to add `kendo-theme-bootstrap` and any variable customizations before you import the Bootstrap framework.
 
-1. Apply the Bootstrap theme options according to the instructions in the article on [styling]({% slug themesandstyles %}).
-
-    If you include the Bootstrap framework from its source, you have to add `kendo-theme-bootstrap` and any variable customizations before you import the Bootstrap framework.
-
-    ```css
-      // Set the variables here.
-      
-      @import "~@progress/kendo-theme-bootstrap/scss/all";
-      @import "~bootstrap/scss/bootstrap";
-    ```
+```css-no-run
+  // Set the variables here.
+  @import "~@progress/kendo-theme-bootstrap/scss/all";
+  @import "~bootstrap/scss/bootstrap";
+```
 
 ## Preview
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.6.1"></a>
+## [3.6.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@3.6.0...@progress/kendo-theme-default@3.6.1) (2019-05-15)
+
+
+
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
 <a name="3.6.0"></a>
 # 3.6.0 (2019-05-13)
 
