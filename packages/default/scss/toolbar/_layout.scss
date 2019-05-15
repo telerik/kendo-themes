@@ -155,6 +155,21 @@
         kendo-toolbar-renderer {
             margin-top: $toolbar-padding-y / 2;
             margin-bottom: $toolbar-padding-y / 2;
+            margin-left: 0px;
+
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+        }
+
+        &[dir="rtl"] {
+            kendo-toolbar-renderer {
+                margin-left: 8px;
+
+                &:not(:last-child) {
+                    margin-right: 0px;
+                }
+            }
         }
     }
 
