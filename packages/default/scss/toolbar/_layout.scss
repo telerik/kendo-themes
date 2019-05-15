@@ -158,13 +158,13 @@
             margin-left: 0px;
 
             &:not(:last-child) {
-                margin-right: 8px;
+                margin-right: $toolbar-padding-x;
             }
         }
 
         &[dir="rtl"] {
             kendo-toolbar-renderer {
-                margin-left: 8px;
+                margin-left: $toolbar-padding-x;
 
                 &:not(:last-child) {
                     margin-right: 0px;
@@ -172,7 +172,6 @@
             }
         }
     }
-
 
     .k-overflow-container {
 
