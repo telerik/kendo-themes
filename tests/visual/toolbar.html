@@ -473,51 +473,51 @@
 
         <!-- Angular specific rendering (.k-button not direct descendant of .k-toolbar) -->
         <div class="section">
-            <div tabindex="0" role="toolbar" dir="ltr" class="k-widget k-toolbar">
-                <div style="display: inline-block;">
-                    <button tabindex="-1" class="k-button" dir="ltr">
-                        Button
+            <kendo-toolbar dir="ltr" class="k-widget k-toolbar">
+                <kendo-toolbar-renderer style="display: inline-block;">
+                    <button class="k-button" dir="ltr">
+                        Angular Button
                     </button>
-                </div>
-                <div style="display: inline-block;">
-                    <button tabindex="-1" role="checkbox" aria-checked="true" class="k-button k-state-active" dir="ltr">
+                </kendo-toolbar-renderer>
+                <kendo-toolbar-renderer style="display: inline-block;">
+                    <button class="k-button k-state-active" dir="ltr">
                         Toggle
                     </button>
-                </div>
-                <div style="display: inline-block;">
+                </kendo-toolbar-renderer>
+                <kendo-toolbar-renderer style="display: inline-block;">
                     <div class="k-widget k-split-button k-button-group" dir="ltr">
-                        <button role="listbox" type="button" tabindex="-1" class="k-button" dir="ltr">
+                        <button class="k-button" dir="ltr">
                             Split Button
                         </button>
-                        <button type="button" class="k-button-icon k-button" tabindex="-1" dir="ltr">
-                            <span class="k-icon k-i-arrow-s" role="presentation"></span>
+                        <button class="k-button-icon k-button" dir="ltr">
+                            <span class="k-icon k-i-arrow-s"></span>
                         </button>
                     </div>
-                </div>
-                <div style="display: inline-block;">
+                </kendo-toolbar-renderer>
+                <kendo-toolbar-renderer style="display: inline-block;">
                     <div class="k-widget k-dropdown-button" dir="ltr">
-                        <button role="menu" type="button" tabindex="-1" class="k-button" dir="ltr">
+                        <button class="k-button" dir="ltr">
                             DropDownButton
                         </button>
                     </div>
-                </div>
-                <div style="display: inline-block;">
-                    <div class="k-button-group" role="radiogroup" dir="ltr" tabindex="-1">
-                        <button class="k-button-icon k-button k-group-start" role="radio" dir="ltr" tabindex="-1">
-                            <span class="k-icon k-i-align-left" role="presentation"></span>
+                </kendo-toolbar-renderer>
+                <kendo-toolbar-renderer style="display: inline-block;">
+                    <div class="k-button-group" dir="ltr">
+                        <button class="k-button-icon k-button k-group-start" dir="ltr">
+                            <span class="k-icon k-i-align-left"></span>
                         </button>
-                        <button class="k-button-icon k-button" role="radio" dir="ltr" tabindex="-1">
-                            <span class="k-icon k-i-align-center" role="presentation"></span>
+                        <button class="k-button-icon k-button" dir="ltr">
+                            <span class="k-icon k-i-align-center"></span>
                         </button>
-                        <button class="k-button-icon k-button" role="radio" dir="ltr" tabindex="-1">
-                            <span class="k-icon k-i-align-right" role="presentation"></span>
+                        <button class="k-button-icon k-button" dir="ltr">
+                            <span class="k-icon k-i-align-right"></span>
                         </button>
-                        <button class="k-button-icon k-button k-group-end k-state-active" role="radio" dir="ltr" tabindex="0">
-                            <span class="k-icon k-i-align-justify" role="presentation"></span>
+                        <button class="k-button-icon k-button k-group-end k-state-active" dir="ltr">
+                            <span class="k-icon k-i-align-justify"></span>
                         </button>
                     </div>
-                </div>
-            </div>
+                </kendo-toolbar-renderer>
+            </kendo-toolbar>
         </div>
 
         <!-- Owerflow popup with normal buttons -->
@@ -591,40 +591,78 @@
         <div class="section" style="width: 300px;">
             <kendo-toolbar class="k-widget k-toolbar" dir="ltr">
                 <kendo-toolbar-renderer style="display: inline-block;">
-                    <button type="button" class="k-button" dir="ltr">
-                        Button
+                    <button class="k-button" dir="ltr">
+                        Angular Button
                     </button>
                 </kendo-toolbar-renderer>
                 <kendo-toolbar-renderer style="display: inline-block;">
-                    <button type="button" class="k-button" dir="ltr">
+                    <button class="k-button" dir="ltr">
                         Toggle
                     </button>
                 </kendo-toolbar-renderer>
                 <kendo-toolbar-renderer style="display: inline-block;">
                     <div class="k-widget k-split-button k-button-group" dir="ltr">
-                        <button type="button" class="k-button" dir="ltr">
+                        <button class="k-button" dir="ltr">
                             Split Button
                         </button>
-                        <button type="button" class="k-button-icon k-button" dir="ltr">
+                        <button class="k-button-icon k-button" dir="ltr">
                             <span class="k-icon k-i-arrow-s"></span>
                         </button>
                     </div>
                 </kendo-toolbar-renderer>
                 <kendo-toolbar-renderer style="display: inline-block;">
                     <div class="k-widget k-dropdown-button" dir="ltr">
-                        <button type="button" class="k-button" dir="ltr">
+                        <button class="k-button" dir="ltr">
                             DropDownButton
                         </button>
                     </div>
                 </kendo-toolbar-renderer>
                 <kendo-toolbar-renderer style="display: inline-block;">
                     <div class="k-button-group" dir="ltr">
-                        <button type="button" class="k-button-icon k-button k-group-start k-group-end" dir="ltr">
+                        <button class="k-button-icon k-button k-group-start k-group-end" dir="ltr">
                             <span class="k-icon k-i-align-left"></span>
                         </button>
                     </div>
                 </kendo-toolbar-renderer>
             </kendo-toolbar>
+        </div>
+
+        <div class="section" style="width: 300px;">
+            <div id="toolbar" class="k-toolbar k-widget">
+                <a href="" class="k-button" >Send</a>
+                <a href="" class="k-button" >Discard</a>
+                <div class="k-separator">&nbsp;</div>
+                <div class="k-split-button" id="1ce53d63-4cf5-411b-ba23-6d1553e28c42_wrapper" >
+                    <a class="k-button k-button-icontext" >
+                        Save
+                    </a>
+                    <a class="k-button k-split-button-arrow">
+                        <span class="k-icon k-i-arrow-60-down"></span>
+                    </a>
+                </div>
+                <div class="k-split-button" id="d78d0a5c-bbd2-428a-ad00-7c8ce3642155_wrapper" >
+                    <a class="k-button k-button-icontext" >
+                        Reply
+                    </a>
+                    <a class="k-button k-split-button-arrow">
+                        <span class="k-icon k-i-arrow-60-down"></span>
+                    </a>
+                </div>
+                <div class="k-separator">&nbsp;</div>
+                <div >
+                    <span>
+                        <span title="" class="k-widget k-dropdown" unselectable="on" style="width: 150px;">
+                            <span unselectable="on" class="k-dropdown-wrap k-state-default">
+                                <span unselectable="on" class="k-input">Ann Devon</span>
+                                <span unselectable="on" class="k-select" >
+                                    <span class="k-icon k-i-arrow-60-down"></span>
+                                </span>
+                            </span>
+                            <input id="contacts" style="width: 150px; display: none;" >
+                        </span>
+                    </span>
+                </div>
+            </div>
         </div>
 
     </div>
