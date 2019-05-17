@@ -1,5 +1,4 @@
 @include exports("input/theme") {
-    $floating-label-color: rgba(0, 0, 0, .38) !default;
 
     .k-textbox,
     .k-textarea,
@@ -57,7 +56,7 @@
         vertical-align: baseline;
 
         > .k-label {
-            color: $floating-label-color;
+            color: $floating-label-text;
         }
 
         &.k-state-focused > .k-label {
