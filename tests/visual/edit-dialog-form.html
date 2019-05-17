@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+
+<head>
+    <title>Edit Dialog Form</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        #test-area > section {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        .k-dialog {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="test-area" class="grid">
+
+        <section>
+
+            <div class="k-widget k-window k-dialog ng-trigger ng-trigger-dialogSlideInAppear" style="min-width:700px;0:min-width;min-width:700px;">
+                <kendo-dialog-titlebar class="ng-tns-c1-1 k-window-titlebar k-dialog-titlebar k-header ng-star-inserted">
+                    <div class="k-window-title k-dialog-title">Event</div>
+                    <div class="k-window-actions k-dialog-actions"><a aria-label="Close" class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close" href="#"><span class="k-icon k-i-x"></span></a></div>
+                </kendo-dialog-titlebar>
+                <div class="k-content k-window-content k-dialog-content">
+                    <div class="k-scheduler-edit-form ng-star-inserted">
+                        <div class="k-edit-form-container">
+                            <form class="ng-untouched ng-pristine ng-valid">
+                                <div class="k-edit-label">
+                                    <label for="k-event-title">Title</label>
+                                </div>
+                                <div class="k-edit-field">
+                                    <input class="k-textbox ng-untouched ng-pristine ng-valid" id="k-event-title" placeholder="Title">
+                                </div>
+                                <div class="k-edit-label">
+                                    <label>Start</label>
+                                </div>
+                                <div class="k-edit-field">
+                                    <kendo-scheduler-datetime-picker class="ng-untouched ng-pristine ng-valid">
+                                        <kendo-datepicker class="k-widget k-datepicker k-header">
+                                            <span class="k-picker-wrap k-state-default">
+                                                <kendo-dateinput class="k-widget k-dateinput">
+                                                    <span class="k-dateinput-wrap">
+                                                        <input class="k-input" />
+                                                    </span>
+                                                </kendo-dateinput>
+                                                <span class="k-select" title="Toggle calendar">
+                                                    <span class="k-icon k-i-calendar"></span>
+                                                </span>
+                                            </span>
+                                        </kendo-datepicker>
+                                        <kendo-timepicker class="k-widget k-timepicker k-header ng-star-inserted">
+                                            <span class="k-picker-wrap k-state-default">
+                                                <kendo-dateinput class="k-widget k-dateinput">
+                                                    <span class="k-dateinput-wrap">
+                                                        <input class="k-input" />
+                                                    </span>
+                                                </kendo-dateinput>
+                                                <span class="k-select" title="Toggle time list">
+                                                    <span class="k-icon k-i-clock"></span>
+                                                </span>
+                                            </span>
+                                        </kendo-timepicker>
+                                    </kendo-scheduler-datetime-picker>
+                                </div>
+                                <div class="k-edit-label">
+                                    <label>End</label>
+                                </div>
+                                <div class="k-edit-field">
+                                    <kendo-scheduler-datetime-picker class="ng-untouched ng-pristine ng-valid">
+                                        <kendo-datepicker class="k-widget k-datepicker k-header">
+                                            <span class="k-picker-wrap k-state-default">
+                                                <kendo-dateinput class="k-widget k-dateinput">
+                                                    <span class="k-dateinput-wrap">
+                                                        <input class="k-input" />
+                                                    </span>
+                                                </kendo-dateinput>
+                                                <span class="k-select" title="Toggle calendar">
+                                                    <span class="k-icon k-i-calendar"></span>
+                                                </span>
+                                            </span>
+                                        </kendo-datepicker>
+                                        <kendo-timepicker class="k-widget k-timepicker k-header ng-star-inserted">
+                                        <span class="k-picker-wrap k-state-default">
+                                            <kendo-dateinput class="k-widget k-dateinput">
+                                                <span class="k-dateinput-wrap">
+                                                    <input class="k-input" />
+                                                </span>
+                                            </kendo-dateinput>
+                                            <span class="k-select" title="Toggle time list">
+                                                <span class="k-icon k-i-clock"></span>
+                                            </span>
+                                        </span>
+                                        </kendo-timepicker>
+                                    </kendo-scheduler-datetime-picker>
+                                </div>
+                                <div class="k-edit-field ng-star-inserted">
+                                    <input class="k-checkbox ng-untouched ng-pristine ng-valid" id="k-is-allday-chkbox" type="checkbox">
+                                    <label class="k-checkbox-label" for="k-is-allday-chkbox">All Day Event</label>
+                                </div>
+                                <div class="k-edit-field ng-star-inserted">
+                                    <input class="k-checkbox ng-untouched ng-pristine ng-valid" formcontrolname="startTimezoneCheckbox" id="k-set-timezone" type="checkbox">
+                                    <label class="k-checkbox-label" for="k-set-timezone">Specify Time Zone</label>
+                                </div>
+                                <kendo-recurrence-editor class="k-recurrence-editor ng-untouched ng-pristine ng-valid ng-star-inserted">
+                                    <kendo-recurrence-frequency-editor>
+                                        <div class="k-edit-label">
+                                            <label>Repeat</label>
+                                        </div>
+                                        <div class="k-edit-field">
+                                            <kendo-buttongroup class="k-button-group" dir="ltr" tabindex="0">
+                                                <button class="k-button k-group-start ng-star-inserted" dir="ltr" tabindex="-1" style="width: 100px;">Never</button>
+                                                <button class="k-button k-state-active ng-star-inserted" dir="ltr" tabindex="0" style="width: 100px;">Daily</button>
+                                                <button class="k-button ng-star-inserted" dir="ltr" tabindex="-1" style="width: 100px;">Weekly</button>
+                                                <button class="k-button ng-star-inserted" dir="ltr" tabindex="-1" style="width: 100px;">Monthly</button>
+                                                <button class="k-button k-group-end ng-star-inserted" dir="ltr" tabindex="-1" style="width: 100px;">Yearly</button>
+                                            </kendo-buttongroup>
+                                        </div>
+                                    </kendo-recurrence-frequency-editor>
+                                    <div class="k-recur-view">
+                                        <kendo-recurrence-interval-editor class="ng-star-inserted">
+                                            <div class="k-edit-label">
+                                                <label>Repeat every</label>
+                                            </div>
+                                            <div class="k-edit-field">
+                                                <kendo-numerictextbox dir="ltr" class="k-widget k-numerictextbox" style="width: 70px;">
+                                                    <span class="k-numeric-wrap">
+                                                        <input class="k-input k-formatted-value" />
+                                                        <span class="k-select ng-star-inserted">
+                                                            <span class="k-link k-link-increase">
+                                                                <span class="k-icon k-i-arrow-n"></span>
+                                                            </span>
+                                                            <span class="k-link k-link-decrease">
+                                                                <span class="k-icon k-i-arrow-s"></span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </kendo-numerictextbox><span>day(s)</span>
+                                            </div>
+                                        </kendo-recurrence-interval-editor>
+                                        <kendo-recurrence-end-rule-editor class="ng-star-inserted">
+                                            <div class="k-edit-label">
+                                                <label>End</label>
+                                            </div>
+                                            <div class="k-edit-field">
+                                                <ul class="k-reset">
+                                                    <li>
+                                                        <input id="k-endrule-never" ng-reflect-end-rule-id="k-endrule-never" type="radio" name="end" class="k-radio">
+                                                        <label class="k-radio-label" for="k-endrule-never">Never</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="k-endrule-count" ng-reflect-end-rule-id="k-endrule-count" type="radio" name="end" class="k-radio">
+                                                        <label class="k-radio-label" for="k-endrule-count">After</label>
+                                                        <kendo-numerictextbox class="k-widget k-numerictextbox" style="width: 70px;">
+                                                            <span class="k-numeric-wrap">
+                                                                <input class="k-input k-formatted-value" />
+                                                                <span class="k-select ng-star-inserted">
+                                                                    <span class="k-link k-link-increase">
+                                                                        <span class="k-icon k-i-arrow-n"></span>
+                                                                    </span>
+                                                                    <span class="k-link k-link-decrease" title="Decrease value">
+                                                                        <span class="k-icon k-i-arrow-s"></span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </kendo-numerictextbox><span>occurrence(s)</span>
+                                                    </li>
+                                                    <li>
+                                                        <input id="k-endrule-until" type="radio" name="end" class="k-radio">
+                                                        <label class="k-radio-label" for="k-endrule-until">On</label>
+                                                        <kendo-datepicker class="k-widget k-datepicker k-header k-state-disabled" style="width: 150px;">
+                                                            <span class="k-picker-wrap k-state-default k-state-disabled">
+                                                                <kendo-dateinput class="k-widget k-dateinput k-state-disabled">
+                                                                    <span class="k-dateinput-wrap">
+                                                                        <input class="k-input" />
+                                                                    </span>
+                                                                </kendo-dateinput>
+                                                                <span class="k-select" title="Toggle calendar">
+                                                                    <span class="k-icon k-i-calendar"></span>
+                                                                </span>
+                                                            </span>
+                                                        </kendo-datepicker>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </kendo-recurrence-end-rule-editor>
+                                    </div>
+                                </kendo-recurrence-editor>
+                                <div class="k-edit-label ng-star-inserted">
+                                    <label for="k-event-description">Description</label>
+                                </div>
+                                <div class="k-edit-field ng-star-inserted">
+                                    <textarea class="k-textbox ng-untouched ng-pristine ng-valid" id="k-event-description"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <kendo-dialog-actions class="k-dialog-buttongroup k-dialog-button-layout-stretched ng-star-inserted">
+                    <button class="k-button ng-star-inserted">Cancel</button>
+                    <button class="k-button k-primary ng-star-inserted">Save</button>
+                </kendo-dialog-actions>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
