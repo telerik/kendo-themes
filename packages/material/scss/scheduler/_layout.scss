@@ -145,8 +145,30 @@
 
         .k-edit-form-container { width: 390px; }
 
-        .k-edit-label { width: auto; }
-        .k-edit-field { width: auto; }
+        .k-edit-label {
+            width: auto;
+            margin-bottom: .5em;
+
+            label { margin-bottom: 0; }
+        }
+
+        .k-edit-field {
+            width: auto;
+            align-items: center;
+        }
+
+        .k-recur-view .k-edit-field .k-numerictextbox {
+            flex: 0 70px;
+        }
+
+        kendo-scheduler-datetime-picker {
+            display: inline-flex;
+            width: 100%;
+
+            .k-picker-wrap {
+                flex: 1;
+            }
+        }
 
     }
 
