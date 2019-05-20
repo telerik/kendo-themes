@@ -1276,7 +1276,7 @@ $pdf-viewer-canvas-border: null !default;
 
 $pdf-viewer-page-spacing: 30px !default;
 
-$pdf-viewer-page-bg: $panel-bg !default;
+$pdf-viewer-page-bg: white !default;
 $pdf-viewer-page-text: $panel-text !default;
 $pdf-viewer-page-border: $panel-border !default;
 $pdf-viewer-page-shadow: 0 0 ($pdf-viewer-page-spacing / 2) $pdf-viewer-page-border !default;
