@@ -13,6 +13,9 @@ $popup-filter-padding-x: $padding-x;
         .k-group-header {
             text-transform: uppercase;
         }
+        &.k-colorpicker-popup {
+            padding: 0;
+        }
     }
 
     .k-list-container {
