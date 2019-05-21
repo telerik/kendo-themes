@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Grid Filter Menu</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+</head>
+<body>
+    <div id="test-area">
+        <div id="grid" data-role="grid" class="k-grid k-widget k-display-block" style="height: 550px;">
+            <div class="k-grid-header" style="padding-right: 17px;">
+                <div class="k-grid-header-wrap k-auto-scrollable">
+                    <table role="grid">
+                        <colgroup>
+                            <col style="width:225px">
+                            <col style="width:500px">
+                            <col style="width:255px">
+                            <col>
+                        </colgroup>
+                        <thead role="rowgroup">
+                            <tr role="row">
+                                <th scope="col" role="columnheader" class="k-header">OrderID</th>
+                                <th scope="col" role="columnheader" class="k-header">Ship Name</th>
+                                <th scope="col" role="columnheader" class="k-header">Freight</th>
+                                <th scope="col" role="columnheader" class="k-header">Order Date</th>
+                            </tr>
+                            <tr class="k-filter-row">
+                                <th>
+                                    <span class="k-filtercell">
+                                        <span class="k-operator-hidden">
+                                            <span class="k-widget k-numerictextbox">
+                                                <span class="k-numeric-wrap k-state-default">
+                                                    <input type="text" class="k-formatted-value k-input" title="OrderID" style="display: block;">
+                                                    <input title="OrderID"  class="k-input" type="text" style="display: none;" >
+                                                    <span class="k-icon k-i-warning" style="display: none;"></span>
+                                                    <span class="k-select">
+                                                        <span class="k-link k-link-increase" title="Increase value">
+                                                            <span class="k-icon k-i-arrow-60-up"></span>
+                                                        </span>
+                                                        <span class="k-link k-link-decrease" title="Decrease value">
+                                                            <span class="k-icon k-i-arrow-60-down"></span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <div style="display: none;">eq</div>
+                                            <button type="button" class="k-button k-button-icon" title="Clear">
+                                                <span class="k-icon k-i-filter-clear"></span>
+                                            </button>
+                                        </span>
+                                    </span>
+                                </th>
+                                <th>
+                                    <span class="k-filtercell"><span>
+                                        <span class="k-widget k-autocomplete k-autocomplete-clearable k-state-default">
+                                            <input class="k-input" />
+                                                <span class="k-icon k-clear-value k-i-close k-hidden" title="clear"></span>
+                                                <span class="k-icon k-i-loading" style="display:none"></span>
+                                            </span>
+                                            <span class="k-widget k-dropdown k-dropdown-operator">
+                                                <span  class="k-dropdown-wrap k-state-default">
+                                                    <span class="k-input">Contains</span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-filter"></span>
+                                                    </span>
+                                                </span>
+                                                <input class="k-dropdown-operator" style="display: none;">
+                                            </span>
+                                            <button type="button" class="k-button k-button-icon" style="display: none;">
+                                                <span class="k-icon k-i-filter-clear"></span>
+                                            </button>
+                                        </span>
+                                    </span>
+                                </th>
+                                <th>
+                                    <span class="k-filtercell">
+                                        <span>
+                                            <span class="k-widget k-numerictextbox">
+                                                <span class="k-numeric-wrap k-state-default">
+                                                    <input type="text" class="k-formatted-value k-input" title="Freight" style="display: block;">
+                                                    <input title="Freight" class="k-input" type="text" style="display: none;">
+                                                    <span class="k-icon k-i-warning" style="display: none;"></span>
+                                                    <span class="k-select">
+                                                        <span class="k-link k-link-increase" title="Increase value">
+                                                            <span class="k-icon k-i-arrow-60-up"></span>
+                                                        </span>
+                                                        <span class="k-link k-link-decrease" title="Decrease value">
+                                                            <span class="k-icon k-i-arrow-60-down"></span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="k-widget k-dropdown k-dropdown-operator">
+                                                <span class="k-dropdown-wrap k-state-default">
+                                                    <span class="k-input">Is greater than or equal to</span>
+                                                    <span class="k-select"><span class="k-icon k-i-filter"></span>
+                                                </span>
+                                            </span>
+                                            <input class="k-dropdown-operator" style="display: none;"></span>
+                                            <button type="button" class="k-button k-button-icon" title="Clear" style="display: none;">
+                                                <span class="k-icon k-i-filter-clear"></span>
+                                            </button>
+                                        </span>
+                                    </span>
+                                </th>
+                                <th>
+                                    <span class="k-filtercell"><span>
+                                        <span class="k-widget k-datepicker">
+                                            <span class="k-picker-wrap k-state-default">
+                                                <input type="text" class="k-input" style="width: 100%;">
+                                                <span class="k-select" role="button">
+                                                    <span class="k-icon k-i-calendar"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="k-widget k-dropdown k-dropdown-operator">
+                                            <span class="k-dropdown-wrap k-state-default">
+                                                <span class="k-input">Is equal to</span>
+                                                <span class="k-select">
+                                                    <span class="k-icon k-i-filter"></span>
+                                                </span>
+                                            </span>
+                                            <input class="k-dropdown-operator" style="display: none;">
+                                        </span>
+                                        <button type="button" class="k-button k-button-icon" title="Clear" style="display: none;">
+                                            <span class="k-icon k-i-filter-clear"></span>
+                                        </button>
+                                    </span>
+                                </span>
+                            </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="k-grid-content k-auto-scrollable" style="height: 417px;">
+                <table role="grid" style="height: auto;">
+                    <colgroup>
+                        <col style="width:225px">
+                        <col style="width:500px">
+                        <col style="width:255px">
+                        <col>
+                    </colgroup>
+                    <tbody role="rowgroup"></tbody>
+                </table>
+                <div class="k-grid-norecords">
+                    <div class="k-grid-norecords-template">No records available.</div>
+                </div>
+                <div class="k-grid-content-expander" style="width: 1404px;"></div>
+            </div>
+            <div class="k-pager-wrap k-grid-pager k-widget k-floatwrap">
+                <a href="#" title="Go to the first page" class="k-link k-pager-nav k-pager-first k-state-disabled">
+                    <span class="k-icon k-i-arrow-end-left"></span>
+                </a>
+                <a href="#" title="Go to the previous page" class="k-link k-pager-nav k-state-disabled">
+                    <span class="k-icon k-i-arrow-60-left"></span>
+                </a>
+                <div class="k-pager-numbers-wrap">
+                    <ul class="k-pager-numbers k-reset">
+                        <li class="k-current-page"><span class="k-link k-pager-nav">0</span></li>
+                        <li><span class="k-state-selected">0</span></li>
+                    </ul>
+                </div>
+                <a href="#" title="Go to the next page" class="k-link k-pager-nav k-state-disabled">
+                    <span class="k-icon k-i-arrow-60-right"></span>
+                </a>
+                <a href="#" title="Go to the last page" class="k-link k-pager-nav k-pager-last k-state-disabled">
+                    <span class="k-icon k-i-arrow-end-right"></span>
+                </a>
+                <span class="k-pager-info k-label">No items to display</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

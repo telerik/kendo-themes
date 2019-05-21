@@ -359,6 +359,7 @@
             position: absolute;
             visibility: hidden;
             height: 1px;
+            bottom: 1px; // fix for vertical scrollbar appearing when no records template is displayed
         }
     }
 
@@ -960,6 +961,24 @@
             overflow-y: auto;
         }
     }
+
+
+    .k-grid-norecords {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .k-grid-norecords-template {
+        width: 20em;
+        height: 4em;
+        line-height: 4em;
+        margin: 0 auto;
+        border: 1px solid;
+    }
+
 }
 
 @include exports( "grid/pdf-export" ) {
