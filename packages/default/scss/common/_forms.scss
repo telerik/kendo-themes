@@ -219,14 +219,15 @@ $forms-invalid-color: $error !default;
             }
         }
     }
-    .k-multiselect-wrap:hover,
-    .k-multiselect-wrap.k-state-hover,
-    .k-state-hover > .k-multiselect-wrap,
-    .k-multiselect-wrap.k-state-focused,
-    .k-state-focused > .k-multiselect-wrap,
-    .k-multiselect-wrap:hover {
-        .k-clear-value {
-            display: inline-flex;
+
+    .k-multiselect-wrap {
+        &.k-state-hover,
+        &.k-state-focused,
+        .k-state-hover > &,
+        .k-state-focused > & {
+            .k-clear-value {
+                display: inline-flex;
+             }
         }
     }
 
