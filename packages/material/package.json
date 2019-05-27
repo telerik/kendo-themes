@@ -31,10 +31,9 @@
     "prepublishOnly": "bash ./build/embed-dependencies '@progress/kendo-theme-default' && npm run build && npm run swatches",
     "postpublish": "rm -rf modules && git checkout scss"
   },
-  "dependencies": {
-    "@progress/kendo-theme-default": "^3.6.1"
-  },
   "devDependencies": {
-    "@progress/kendo-theme-tasks": "^0.1.5"
+    "@progress/kendo-theme-default": "^3.6.1",
+    "@progress/kendo-theme-tasks": "^0.1.5",
+    "gulp": "^4.0.2"
   }
 }
