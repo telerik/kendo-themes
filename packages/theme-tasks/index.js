@@ -13,9 +13,7 @@ function kendotheme() {
             tasks.sass.lint();
             break;
         case "build": {
-            if (opts.watch) {
-                tasks.sass.watch();
-            } else if (opts.file) {
+            if (opts.file) {
                 tasks.sass.buildFile(opts.file);
             } else if (opts.swatches) {
                 tasks.sass.swatches();
