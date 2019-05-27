@@ -100,7 +100,7 @@
         }
 
         .k-switch-handle {
-            top: add-three($switch-track-size, -$switch-handle-size, -$switch-container-border-width*2, 0.5);
+            top: add-three($switch-track-size, -$switch-handle-size, -$switch-container-border-width * 2, .5);
         }
 
     }

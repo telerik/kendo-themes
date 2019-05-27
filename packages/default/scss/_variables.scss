@@ -1226,7 +1226,7 @@ $drawer-content-padding-x: $padding-x !default;
 $drawer-content-padding-y: $padding-y !default;
 
 $drawer-scrollbar-width: 7px !default;
-$drawer-scrollbar-color: rgba(156, 156, 156, 0.7) !default;
+$drawer-scrollbar-color: rgba(156, 156, 156, .7) !default;
 $drawer-scrollbar-bg: #dedede !default;
 $drawer-scrollbar-radius: 20px !default;
 $drawer-scrollbar-hovered-color: rgba(156, 156, 156, 1) !default;
@@ -1260,7 +1260,7 @@ $spreadsheet-insert-image-dialog-preview-height: 230px !default;
 $spreadsheet-insert-image-dialog-preview-img: 'image-default.png' !default;
 $spreadsheet-insert-image-dialog-preview-border-bg: $border-color !default;
 $spreadsheet-insert-image-dialog-preview-border-radius: $border-radius !default;
-$spreadsheet-insert-image-dialog-preview-overlay-shadow: inset 0 0 0 2000px rgba(0,0,0, 0.5) !default;
+$spreadsheet-insert-image-dialog-preview-overlay-shadow: inset 0 0 0 2000px rgba(0, 0, 0, .5) !default;
 $spreadsheet-insert-image-dialog-preview-overlay-border-radius: $border-radius !default;
 $spreadsheet-insert-image-dialog-overlay-hovered-text: $bg-color !default;
 

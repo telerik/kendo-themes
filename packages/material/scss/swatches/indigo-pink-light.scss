@@ -2,4 +2,4 @@ $primary-palette-name: indigo;
 $secondary-palette-name: pink;
 $theme-type: light;
 
-@import "../all.scss";
+@import "../all.scss"; // sass-lint:disable-line clean-import-paths

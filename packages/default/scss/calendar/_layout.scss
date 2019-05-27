@@ -577,7 +577,7 @@
                 @extend .k-bare;
                 width: auto;
                 height: auto;
-                opacity: 0.6;
+                opacity: .6;
                 transition: opacity .2s ease-in-out;
                 padding: 0;
                 margin: $multiviewcalendar-navigation-margin-y $multiviewcalendar-navigation-margin-x;
@@ -587,13 +587,13 @@
                     opacity: 1;
                     transition: opacity .2s ease-in-out;
 
-                    &:before {
+                    &::before {
                         opacity: 0;
                     }
                 }
 
                 &:focus {
-                    &:after {
+                    &::after {
                         opacity: 0;
                     }
                 }

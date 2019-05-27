@@ -41,6 +41,8 @@
         .k-horizontal {
 
             &.k-gradient-values {
+                // sass-lint:disable-block nesting-depth
+
                 div {
                     height: 14px;
                     line-height: 1;

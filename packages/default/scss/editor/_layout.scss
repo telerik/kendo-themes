@@ -26,7 +26,8 @@
         }
         .k-content {
             overflow-y: auto;
-            > .ProseMirror {
+
+            > .ProseMirror { // sass-lint:disable-line class-name-format
                 padding: $padding-x;
             }
         }
