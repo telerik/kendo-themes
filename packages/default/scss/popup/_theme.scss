@@ -58,7 +58,7 @@
 
         &.k-state-selected {
             color: $list-item-selected-text;
-            background-color: blend-multiply( $list-item-hovered-bg, $list-item-selected-bg );
+            background-color: shade( $list-item-selected-bg );
         }
     }
 
