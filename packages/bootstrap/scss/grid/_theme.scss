@@ -144,20 +144,20 @@
             font-weight: 400;
 
             .k-item {
-               @include appearance( list-item );
+                @include appearance( list-item );
 
                 &:hover,
                 &.k-state-hover {
-                   @include appearance( hovered-list-item );
+                    @include appearance( hovered-list-item );
                 }
 
                 &.k-state-selected {
-                   @include appearance( selected-list-item );
+                    @include appearance( selected-list-item );
                 }
 
                 &:focus,
                 &.k-state-focused {
-                   @include appearance( focused-list-item );
+                    @include appearance( focused-list-item );
                 }
             }
         }

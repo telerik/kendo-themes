@@ -23,8 +23,8 @@
             border-color: $input-focused-border;
         }
 
-         // Selection
-         &::selection {
+        // Selection
+        &::selection {
             background-color: $accent;
             color: $accent-contrast;
         }

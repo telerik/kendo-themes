@@ -46,6 +46,7 @@ $pager-buttons-padding: 0 !default;
                 margin: 0;
 
                 .k-current-page {
+                    // sass-lint:disable-block nesting-depth
 
                     > span {
                         border-style: solid;
@@ -54,6 +55,7 @@ $pager-buttons-padding: 0 !default;
                 }
 
                 &.k-state-expanded {
+                    // sass-lint:disable-block nesting-depth
 
                     .k-current-page {
 

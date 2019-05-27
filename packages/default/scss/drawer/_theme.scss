@@ -8,6 +8,9 @@
         &,
         .k-drawer-items {
 
+            // Scrollbar styles for Mozilla
+            scrollbar-color: $drawer-scrollbar-color $drawer-scrollbar-bg;
+
             // Scrollbar styles for Chrome, Safari and Opera
             &::-webkit-scrollbar-track {
                 background: $drawer-scrollbar-bg;
@@ -20,9 +23,6 @@
             &::-webkit-scrollbar-thumb:hover {
                 background: $drawer-scrollbar-hovered-color;
             }
-
-            // Scrollbar styles for Mozilla
-            scrollbar-color: $drawer-scrollbar-color $drawer-scrollbar-bg;
         }
     }
 

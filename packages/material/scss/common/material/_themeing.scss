@@ -18,7 +18,8 @@
         $base-palette: get-base-palette($base-palette);
     }
 
-    $result: map_merge($base-palette, (
+    $result: map-merge($base-palette, (
+        // sass-lint:disable-block indentation
         default: map-get($base-palette, $default),
         lighter: map-get($base-palette, $lighter),
         darker: map-get($base-palette, $darker),
@@ -29,7 +30,8 @@
 
     // For each hue in the palette, add a "-contrast" color to the map.
     @each $hue, $color in $base-palette {
-        $result: map_merge($result, (
+        $result: map-merge($result, (
+            // sass-lint:disable-block indentation
             '#{$hue}-contrast': material-contrast($base-palette, $hue)
         ));
     }
@@ -63,6 +65,7 @@
 @function material-theme($primary, $secondary, $theme-type, $warn: material-palette(red)) {
     $complimentary: if($theme-type == dark, $material-dark-complimentary, $material-light-complimentary);
     @return map-merge((
+        // sass-lint:disable-block indentation
         primary: $primary,
         secondary: $secondary,
         warn: $warn

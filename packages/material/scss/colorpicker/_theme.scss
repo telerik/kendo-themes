@@ -3,13 +3,13 @@
     .k-colorpicker {
 
         .k-tool-icon {
-            color: rgba(0, 0, 0, 0.42);
+            color: rgba(0, 0, 0, .42);
         }
 
         .k-tool-icon:hover,
         .k-tool-icon.k-state-hover {
             cursor: pointer;
-            color: rgba(0, 0, 0, 0.87);
+            color: rgba(0, 0, 0, .87);
         }
     }
 

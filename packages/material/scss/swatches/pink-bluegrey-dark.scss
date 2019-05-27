@@ -2,4 +2,4 @@ $primary-palette-name: pink;
 $secondary-palette-name: blueGrey;
 $theme-type: dark;
 
-@import "../all.scss";
+@import "../all.scss"; // sass-lint:disable-line clean-import-paths
