@@ -17,12 +17,11 @@
     "validate-commit-msg": "^1.1.1"
   },
   "scripts": {
-    "build": "lerna run build",
-    "lint": "lerna run lint",
-    "api": "lerna run api",
-    "api-check": "lerna run api-check",
-    "watch": "lerna run --parallel watch",
-    "test": "lerna run test && npm run karma-single && npm run visual-test",
+    "build": "./build/foreach.sh build",
+    "lint": "./build/foreach.sh lint",
+    "api": "./build/foreach.sh api",
+    "api-check": "./build/foreach.sh api-check",
+    "test": "./build/foreach.sh test && npm run karma-single && npm run visual-test",
     "visual-test": "./build/visual-test.sh",
     "create-screenshots": "./build/create-screenshots.sh",
     "develop": "./develop.sh",
