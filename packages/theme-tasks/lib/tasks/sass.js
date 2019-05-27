@@ -49,9 +49,6 @@ function buildFile(file) {
 function theme() {
     return build(paths.sass.theme);
 }
-function watchtheme() {
-    gulp.watch(paths.sass.src, () => build(paths.sass.theme, fullSassOptions) );
-}
 function swatches() {
     return build(paths.sass.swatches, fullSassOptions);
 }
@@ -104,7 +101,6 @@ function api() {
 module.exports = {
     buildFile,
     theme,
-    watchtheme,
     swatches,
     api,
     assets

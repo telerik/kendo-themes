@@ -12,7 +12,6 @@ exports.tasks = {
         lint: sasslint,
         buildFile: sassTasks.buildFile,
         theme: sassTasks.theme,
-        watch: sassTasks.watchtheme,
         swatches: sassTasks.swatches,
         api: sassTasks.api,
         assets: sassTasks.assets
