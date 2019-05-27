@@ -125,10 +125,9 @@ $calendar-today-color: $accent;
                 $calendar-cell-selected-bg,
                 $calendar-cell-selected-border
             );
-
-            &.k-state-hover {
-                background-color: blend-multiply( $node-hovered-bg, $node-selected-bg );
-            }
+        }
+        .k-state-selected.k-state-hover .k-link {
+            background-color: try-shade( $calendar-cell-selected-bg );
         }
         .k-state-focused .k-link {
             box-shadow: $calendar-cell-focused-shadow;
