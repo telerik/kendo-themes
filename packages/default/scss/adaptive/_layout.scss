@@ -656,12 +656,14 @@
             .k-label {
 
                 .k-check {
-                    border: 0;
+                    border-width: 1px;
+                    border-style: solid;
+                    box-sizing: content-box;
                     font-size: inherit;
                     outline: 0;
-                    width: 13px;
-                    height: 13px;
-                    margin: .26em 1em .26em 0;
+                    width: 1em;
+                    height: 1em;
+                    margin-right: 1em;
                 }
             }
         }

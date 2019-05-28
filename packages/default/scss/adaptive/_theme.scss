@@ -95,6 +95,7 @@
 
             .k-check {
                 color: $adaptive-content-text;
+                border-color: $adaptive-content-text;
             }
         }
 
@@ -147,7 +148,6 @@
 
             .k-check:checked {
                 font-family: 'WebComponentsIcons';
-                border-color: transparent;
 
                 &::before {
                     content: "\e118";
