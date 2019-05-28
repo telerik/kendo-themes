@@ -15,7 +15,5 @@ find tests/visual -name '*.html' | while read file; do sedi "s#packages/default/
 # capture screenshots. see .pastshotsrc for config options
 npx pastshots --output tests/visual/output/$theme
 
-npx pastshots --output tests/visual/output/1024px/$theme --serve 'tests/visual/1024px/*.html' --port 8081 --selector "#test-area" --viewport-size 1024,768 --tolerance 1
-
 # revert theme reference
 find tests/visual -name '*.html' | while read file; do sedi "s#packages/$theme/dist#packages/default/dist#" "$file"; done
