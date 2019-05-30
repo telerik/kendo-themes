@@ -48,10 +48,13 @@ The repository uses [lerna](https://github.com/lerna/lerna/) to ship the multipl
 
 To set up the monorepo:
 
-1. Run `npm install` to install the root-level dependencies.
-1. Run `npx lerna bootstrap` to install the theme dependencies and cross-link the theme packages.
+Run the `build/install.sh` file. To do that, on the root level of the repository, run the following row in a Git Bash:
 
-  > The `npx` command runs packages from `./node_modules/.bin` without requiring a global install.
+  > `./build/install.sh`
+
+To perform a clean setup (remove existing node_modules) of the monorepo, on the root level of the repository, run the following row in a Git Bash:
+
+  > `./build/clean-install.sh`
 
 The following commands have to be run in the root of the repository and help you check if various tasks are accomplished successfully:
 
