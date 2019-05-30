@@ -52,6 +52,10 @@ $grid-group-drag-clue-opacity: .9 !default;
 
         th {
             font-weight: 700;
+
+            .k-grid-filter {
+                font-weight: normal;
+            }
         }
 
         .k-grid-filter {
