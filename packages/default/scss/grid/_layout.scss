@@ -817,17 +817,18 @@
     .k-edit-cell,
     .k-grid-edit-row > td {
         > .k-textbox,
-        > .k-widget,
+        > .k-widget:not(.k-switch),
         > .text-box {
             margin-left: $edit-cell-input-space;
         }
     }
 
-    .k-grid-edit-row td > .k-textbox,
-    .k-grid-edit-row td > .k-widget,
-    .k-edit-cell > .k-textbox,
-    .k-edit-cell > .k-widget {
-        width: $edit-cell-textbox-width;
+    .k-grid-edit-row td,
+    .k-edit-cell {
+        > .k-textbox,
+        > .k-widget:not(.k-switch) {
+            width: $edit-cell-textbox-width;
+        }
     }
 
     .k-grid-edit-row td > .k-textbox,
