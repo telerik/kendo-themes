@@ -23,19 +23,17 @@
 
     .k-notification {
         @include border-radius();
-        padding: 0;
+        padding: $notification-padding-y $notification-padding-x;
         border-width: $notification-border-width;
         border-style: solid;
-    }
-
-    .k-notification-wrap {
-        padding: $notification-padding-y $notification-padding-x;
-        padding-right: $notification-padding-end;
         font-size: $font-size-sm;
+        line-height: $line-height-em;
         white-space: nowrap;
         cursor: default;
         position: relative;
-        line-height: $line-height-em;
+    }
+
+    .k-notification-wrap {
 
         > .k-icon {
             margin-right: $notification-padding-x;
@@ -62,21 +60,16 @@
             vertical-align: top;
         }
     }
-
-    // refactor when https://github.com/telerik/kendo-themes/issues/298 is done
-    .k-notification-group .k-notification-wrap {
-        padding-right: $notification-padding-x;
-    }
-
-    .k-notification-closable > .k-notification-wrap {
+    .k-notification-closable {
         padding-right: $notification-padding-end;
     }
 
     // RTL
-    .k-notification-container[dir="rtl"],
-    .k-rtl .k-notification {
+    .k-rtl .k-notification,
+    [dir='rtl'] .k-notification {
+        padding-right: $notification-padding-x;
+
         .k-notification-wrap {
-            padding-right: $notification-padding-x;
 
             > .k-notification-content {
                 padding-right: $notification-padding-x;
@@ -94,9 +87,8 @@
             }
         }
 
-        .k-notification-closable > .k-notification-wrap {
+        &-closable {
             padding-left: $notification-padding-end;
-            padding-right: $notification-padding-x;
         }
     }
 }
