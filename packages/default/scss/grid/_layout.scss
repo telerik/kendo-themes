@@ -376,7 +376,7 @@
             vertical-align: middle;
         }
         .k-button + .k-button {
-            margin-left: $grid-toolbar-button-spacing;
+            margin-left: inherit;
         }
     }
 
