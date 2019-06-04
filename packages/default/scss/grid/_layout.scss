@@ -376,8 +376,15 @@
             vertical-align: middle;
         }
         .k-button + .k-button {
-            margin-left: inherit;
+            margin-left: 0;
         }
+        .k-button + .k-button-group .k-button:first-of-type  {
+            margin-left: 4px;
+        }
+        .k-button-group + .k-button {
+            margin-left: 4px;
+        }
+
     }
 
 
