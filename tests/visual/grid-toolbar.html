@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+
+<head>
+    <title>Grid Multi-Column Headers</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div class="section" style="width: 500px">
+                <kendo-grid dir="ltr" class="k-widget k-grid">
+            <kendo-grid-toolbar class="k-header k-grid-toolbar" style="padding: 0">
+                <button class="k-button" dir="ltr">
+                    Add new
+                </button>
+                <kendo-buttongroup class="k-button-group" dir="ltr">
+                    <button class="k-button-icon k-button k-group-start" dir="ltr">
+                        <span class="k-icon k-i-bold"></span>
+                    </button>
+                    <button class="k-button-icon k-button" dir="ltr">
+                        <span class="k-icon k-i-italic"></span>
+                    </button>
+                    <button class="k-button-icon k-button k-group-end" dir="ltr">
+                        <span class="k-icon k-i-underline"></span>
+                    </button>
+                </kendo-buttongroup>
+                <button class="k-button" dir="ltr">
+                        Add new
+                    </button>
+                <kendo-toolbar class="k-widget k-toolbar" dir="ltr">
+                    <kendo-toolbar-renderer style="display: inline-block;">
+                        <kendo-buttongroup class="k-button-group" dir="ltr">
+                            <button class="k-button-icon k-button k-group-start" dir="ltr">
+                                <span class="k-icon k-i-bold"></span>
+                            </button>
+                            <button class="k-button-icon k-button" dir="ltr">
+                                <span class="k-icon k-i-italic"></span>
+                            </button>
+                            <button class="k-button-icon k-button k-group-end" dir="ltr">
+                                <span class="k-icon k-i-underline"></span>
+                            </button>
+                        </kendo-buttongroup>
+                    </kendo-toolbar-renderer>
+                </kendo-toolbar>
+            </kendo-grid-toolbar>
+            </kendo-grid>
+        </div>
+
+    </div>
+</body>
+
+</html>
