@@ -372,21 +372,12 @@
         cursor: default;
         display: block;
 
-        .k-button {
+        > * {
             vertical-align: middle;
         }
-        .k-button + .k-button {
+        > * + * {
             margin-left: $grid-toolbar-button-spacing;
         }
-        // .k-button + .k-button {
-        //     margin-left: 0;
-        // }
-        // .k-button + .k-button-group .k-button:first-of-type  {
-        //     margin-left: $grid-toolbar-button-spacing;
-        // }
-        // .k-button-group + .k-button {
-        //     margin-left: $grid-toolbar-button-spacing;
-        // }
 
     }
 
