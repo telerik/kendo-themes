@@ -96,6 +96,11 @@
             .k-check {
                 color: $adaptive-content-text;
                 border-color: $adaptive-content-text;
+
+                &:focus,
+                &.k-state-focused {
+                    box-shadow: $primary-button-focused-shadow;
+                }
             }
         }
 

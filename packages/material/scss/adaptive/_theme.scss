@@ -1,1 +1,14 @@
 @import "~@progress/kendo-theme-default/scss/adaptive/theme";
+
+@include exports("adaptive/theme/material") {
+    .k-pane-wrapper .k-pane {
+        .k-filter-menu,
+        .k-scheduler-edit-form {
+
+            .k-check:focus,
+            .k-check.k-state-focused {
+                box-shadow: $button-shadow;
+            }
+        }
+    }
+}
