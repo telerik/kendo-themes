@@ -1,6 +1,6 @@
 @import "~@progress/kendo-theme-default/scss/pivotgrid/layout";
 
-@include exports ('pivotgrid/layout/material') {
+@include exports ("pivotgrid/layout/material") {
 
     .k-pivot-toolbar .k-button,
     .k-fieldselector .k-list li.k-item {

@@ -4,7 +4,7 @@
 $calendar-today-style: color !default;
 $calendar-today-color: $accent;
 
-@include exports('calendar/theme') {
+@include exports("calendar/theme") {
     .k-calendar {
         @include fill(
             $calendar-text,
@@ -158,7 +158,7 @@ $calendar-today-color: $accent;
         }
 
 
-        &[dir='rtl'],
+        &[dir="rtl"],
         .k-rtl & {
             .k-calendar-navigation {
                 box-shadow: inset 1px 0 $calendar-navigation-border;

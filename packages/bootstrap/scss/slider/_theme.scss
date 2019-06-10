@@ -47,10 +47,10 @@
     }
 
     .k-slider-horizontal .k-tick {
-        background-image: url(map-get($data-uris, 'slider-h.gif'));
+        background-image: url(map-get($data-uris, "slider-h.gif"));
     }
     .k-slider-vertical .k-tick {
-        background-image: url(map-get($data-uris, 'slider-v.gif'));
+        background-image: url(map-get($data-uris, "slider-v.gif"));
     }
 
     .k-slider-wrap {

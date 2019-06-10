@@ -1,4 +1,4 @@
-@include exports('upload/layout') {
+@include exports("upload/layout") {
     $line-height-sm: (20 / 12) !default;
     $uploaded-image-width: 24px !default;
     $uploaded-image-height: 34px !default;
@@ -223,7 +223,7 @@
             .k-multiple-files-invalid-extension-wrapper::before,
             .k-multiple-files-invalid-extension-wrapper::after {
                 position: absolute;
-                content: '';
+                content: "";
                 display: inline-block;
                 border-style: solid;
             }

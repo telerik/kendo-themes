@@ -65,7 +65,7 @@
         }
 
         .k-rtl &,
-        &[dir='rtl'] {
+        &[dir="rtl"] {
             .k-i-warning {
                 left: $spacer * 2.5;
             }
@@ -167,7 +167,7 @@
         }
 
         .k-rtl &,
-        &[dir='rtl'] {
+        &[dir="rtl"] {
             .k-i-warning {
                 left: calc( #{ button-inner-size( 2 ) } + #{ $input-padding-x-sm });
             }

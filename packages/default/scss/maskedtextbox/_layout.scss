@@ -9,7 +9,7 @@
         }
 
         .k-rtl &,
-        &[dir='rtl'] {
+        &[dir="rtl"] {
             .k-i-warning {
                 right: auto;
                 left: $padding-x;

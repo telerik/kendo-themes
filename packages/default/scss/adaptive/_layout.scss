@@ -95,7 +95,7 @@
         .k-resize-handle-inner::before {
             content: "\e01e";
             position: absolute;
-            font: 16px/1 'WebComponentsIcons';
+            font: 16px/1 "WebComponentsIcons";
             // The Calc is needed due to the the negative margin
             // that removes the double bottom border of the header
             top: calc(50% - 1px);
@@ -485,7 +485,7 @@
                         content: "\e014";
                         position: absolute;
                         right: .5em;
-                        font: 1.5em/1 'WebComponentsIcons';
+                        font: 1.5em/1 "WebComponentsIcons";
                     }
                 }
 

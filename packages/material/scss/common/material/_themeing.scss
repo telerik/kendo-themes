@@ -32,7 +32,7 @@
     @each $hue, $color in $base-palette {
         $result: map-merge($result, (
             // sass-lint:disable-block indentation
-            '#{$hue}-contrast': material-contrast($base-palette, $hue)
+            "#{$hue}-contrast": material-contrast($base-palette, $hue)
         ));
     }
 

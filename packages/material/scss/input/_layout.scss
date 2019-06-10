@@ -7,7 +7,7 @@ $floating-label-transition: .4s cubic-bezier(.25, .8, .25, 1) !default;
 
 @import "~@progress/kendo-theme-default/scss/input/layout";
 
-@include exports('input/layout/checkbox-radiobutton/material') {
+@include exports("input/layout/checkbox-radiobutton/material") {
 
     // animate tick mark with max-width transition
 
@@ -47,7 +47,7 @@ $floating-label-transition: .4s cubic-bezier(.25, .8, .25, 1) !default;
         }
 
         .k-rtl &,
-        &[dir='rtl'] {
+        &[dir="rtl"] {
             &.k-textarea-wrapper {
                 > .k-label {
                     left: auto;

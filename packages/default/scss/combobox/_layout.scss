@@ -7,7 +7,7 @@
             padding-right: add-two($icon-size, $padding-x);
         }
 
-        &[dir='rtl'],
+        &[dir="rtl"],
         .k-rtl & {
             .k-input {
                 padding-left: add-two($icon-size, $padding-x);

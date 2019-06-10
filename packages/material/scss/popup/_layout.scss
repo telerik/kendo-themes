@@ -6,7 +6,7 @@ $popup-filter-padding-x: $padding-x;
 
 @import "~@progress/kendo-theme-default/scss/popup/layout";
 
-@include exports('popup/layout/material') {
+@include exports("popup/layout/material") {
 
     .k-popup {
 

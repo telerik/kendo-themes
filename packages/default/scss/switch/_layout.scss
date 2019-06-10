@@ -1,4 +1,4 @@
-@include exports('switch/layout') {
+@include exports("switch/layout") {
 
     .k-switch {
         @include border-radius( $switch-border-radius );
@@ -14,7 +14,7 @@
         user-select: none;
         text-align: left;
 
-        [type='checkbox'] {
+        [type="checkbox"] {
             display: none;
         }
     }

@@ -15,7 +15,7 @@ $chart-selection-marque-background: $series-a !default;
 $selection-border-color: rgba(0, 0, 0, .08) !default;
 $selection-shadow: inset 0 1px 7px rgba(0, 0, 0, .15) !default;
 
-@include exports('dataviz/charts/theme') {
+@include exports("dataviz/charts/theme") {
     // Exported variables
     .k-var--chart-inactive {
         background-color: $chart-inactive;

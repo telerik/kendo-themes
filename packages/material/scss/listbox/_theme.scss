@@ -3,7 +3,7 @@ $listbox-drag-clue-text: $base-text !default;
 
 @import "~@progress/kendo-theme-default/scss/listbox/theme";
 
-@include exports( 'listbox/theme/material') {
+@include exports( "listbox/theme/material") {
     .k-item.k-drag-clue {
         box-shadow: $popup-shadow;
     }

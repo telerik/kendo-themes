@@ -1,6 +1,6 @@
 $checkbox-size: $icon-size !default;
 
-@include exports( 'input/layout' ) {
+@include exports( "input/layout" ) {
 
     $checkbox-radius: $border-radius !default;
     $radio-radius: 50% !default;
@@ -150,7 +150,7 @@ $checkbox-size: $icon-size !default;
         }
 
         .k-rtl &,
-        &[dir='rtl'] {
+        &[dir="rtl"] {
 
             > .k-label {
                 left: auto;
@@ -244,7 +244,7 @@ $checkbox-size: $icon-size !default;
         }
 
         .k-rtl &,
-        [dir='rtl'] & {
+        [dir="rtl"] & {
             padding-left: 0;
             padding-right: add-two($checkbox-size, $icon-spacing);
         }
@@ -267,7 +267,7 @@ $checkbox-size: $icon-size !default;
         left: 0;
 
         .k-rtl &,
-        [dir='rtl'] &  {
+        [dir="rtl"] &  {
             left: auto;
             right: 0;
         }
@@ -304,7 +304,7 @@ $checkbox-size: $icon-size !default;
         content: "";
         transform: scale(1);
 
-        @if $checkbox-indeterminate-style == 'dash' {
+        @if $checkbox-indeterminate-style == "dash" {
             width: $checkbox-dash-width;
             height: $checkbox-dash-height;
             top: $checkbox-dash-offset-y;
@@ -333,7 +333,7 @@ $checkbox-size: $icon-size !default;
     }
 
     .k-rtl,
-    [dir='rtl'] {
+    [dir="rtl"] {
         .k-radio:checked + .k-radio-label::after {
             right: $checkbox-size / 4;
         }

@@ -1,4 +1,4 @@
-@include exports('pivotgrid/theme') {
+@include exports("pivotgrid/theme") {
     $pivotgrid-alt-bg: try-shade($grid-bg, .5) !default;
     $pivotgrid-alt-text: $grid-text !default;
 
@@ -125,7 +125,7 @@
         }
     }
 
-    /* Loading indicator */
+    // Loading indicator
     .k-fieldselector {
         .k-i-loading {
             border-color: $header-bg;
