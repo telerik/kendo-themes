@@ -9,6 +9,7 @@ const sassTasks = require("./lib/tasks/sass");
 // Export related tasks as a group
 exports.tasks = {
     sass: {
+        dart: sassTasks.dart,
         lint: sasslint,
         buildFile: sassTasks.buildFile,
         theme: sassTasks.theme,

@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9.5.1",
+    "fibers": "^4.0.1",
     "glob": "^7.1.3",
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
@@ -33,6 +34,7 @@
     "mime": "^1.6.0",
     "minimist": "^1.2.0",
     "postcss-calc": "^6.0.2",
+    "sass": "^1.21.0",
     "sass-lint": "^1.7.0",
     "sassdoc": "^2.5.0"
   },
