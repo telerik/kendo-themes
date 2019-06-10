@@ -1,1 +1,19 @@
 @import "~@progress/kendo-theme-default/scss/numerictextbox/layout";
+
+@include exports("numerictextbox/layout/material") {
+
+    .k-numerictextbox {
+        .k-numeric-wrap {
+            border-top: 1px solid transparent;
+        }
+
+        &.k-invalid,
+        &.k-state-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            .k-numeric-wrap {
+                border-top: 1px solid transparent;
+            }
+        }
+    }
+}
