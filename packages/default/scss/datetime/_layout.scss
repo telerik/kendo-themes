@@ -33,7 +33,7 @@
         }
 
         .k-rtl &,
-        &[dir='rtl'] {
+        &[dir="rtl"] {
             .k-i-warning {
                 right: auto;
             }
@@ -48,7 +48,7 @@
         }
 
         .k-rtl &,
-        &[dir='rtl'] {
+        &[dir="rtl"] {
             .k-i-warning {
                 left: calc( #{ button-inner-size( 1 ) } + #{ $input-padding-x-sm });
             }
@@ -62,7 +62,7 @@
         }
 
         .k-rtl &,
-        &[dir='rtl'] {
+        &[dir="rtl"] {
             .k-i-warning {
                 left: calc( #{ button-inner-size( 2 ) } + #{ $input-padding-x-sm });
             }
@@ -161,7 +161,7 @@
         }
 
         .k-rtl &,
-        &[dir='rtl'] {
+        &[dir="rtl"] {
             .k-i-warning {
                 left: $padding-x;
                 right: auto;
@@ -250,7 +250,7 @@
         top: $time-list-padding;
         bottom: $time-list-padding;
 
-        @include hide-scrollbar('right');
+        @include hide-scrollbar("right");
 
         > ul {
             height: auto;

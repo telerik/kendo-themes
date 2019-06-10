@@ -1,4 +1,4 @@
-@include exports( 'listbox/layout' ) {
+@include exports( "listbox/layout" ) {
     $listbox-margin: $padding-x !default;
     $listbox-button-margin: $padding-x !default;
     $listbox-width: 12.4em !default;

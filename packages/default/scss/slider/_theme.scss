@@ -1,7 +1,7 @@
 $slider-trackbackground-color: darken($widget-bg, 10%) !default;
 $slider-selection-background-color: $accent !default;
 
-@include exports('slider/theme') {
+@include exports("slider/theme") {
 
     .k-slider {
         .k-slider-track,
@@ -54,10 +54,10 @@ $slider-selection-background-color: $accent !default;
     }
 
     .k-slider-horizontal .k-tick {
-        background-image: url(map-get($data-uris, 'slider-h.gif'));
+        background-image: url(map-get($data-uris, "slider-h.gif"));
     }
 
     .k-slider-vertical .k-tick {
-        background-image: url(map-get($data-uris, 'slider-v.gif'));
+        background-image: url(map-get($data-uris, "slider-v.gif"));
     }
 }

@@ -18,7 +18,7 @@ const postcssPlugins = [
         precision: 10
     }),
     autoprefixer({
-        browsers: browsers
+        overrideBrowserslist: browsers
     })
 ];
 const quickSassOptions = {

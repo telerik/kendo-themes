@@ -6,7 +6,7 @@ $chart-tooltip-font-size: ($font-size * .929) !default;
 $chart-label-font-size: .857em !default;
 $chart-title-font-size: 1.143em !default;
 
-@include exports('dataviz/charts/layout') {
+@include exports("dataviz/charts/layout") {
 
     $selection-handle-size: 22px !default;
 
@@ -101,10 +101,10 @@ $chart-title-font-size: 1.143em !default;
         vertical-align: middle;
     }
 
-    /* Selection */
+    // Selection
     .k-selector {
         position: absolute;
-        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
     }
 
     .k-selection {
@@ -190,7 +190,7 @@ $chart-title-font-size: 1.143em !default;
         height: 100%;
     }
 
-    /* Navigator hint */
+    // Navigator hint
     .k-navigator-hint div {
         position: absolute;
     }
@@ -207,7 +207,7 @@ $chart-title-font-size: 1.143em !default;
         text-align: center;
     }
 
-    /* Sparklines */
+    // Sparklines
     .k-sparkline,
     .k-sparkline span {
         display: inline-block;
@@ -274,7 +274,7 @@ $chart-title-font-size: 1.143em !default;
         height: 100%;
     }
 
-    /* IE8- */
+    // IE8-
     .k-diagram img {
         box-sizing: content-box;
     }
@@ -416,14 +416,14 @@ $chart-title-font-size: 1.143em !default;
         $type: type-of($value);
 
         .k-var--#{$name} {
-            @if $type == 'color' {
+            @if $type == "color" {
                 // background-color can store any color
                 background-color: $value;
 
                 svg & {
                     fill: $value;
                 }
-            } @else if $type == 'number' {
+            } @else if $type == "number" {
                 // margin-top can store positive & negative values
                 margin-top: $value;
             }

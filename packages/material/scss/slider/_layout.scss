@@ -9,7 +9,7 @@ $slider-alt-size: 36px !default;
 
 @import "~@progress/kendo-theme-default/scss/slider/layout";
 
-@include exports('slider/layout/material') {
+@include exports("slider/layout/material") {
     .k-slider {
         .k-tick {
             margin: 0;

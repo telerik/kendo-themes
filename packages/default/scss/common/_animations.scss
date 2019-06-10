@@ -1,4 +1,4 @@
-@include exports('animation/container') {
+@include exports("animation/container") {
 
     .k-animation-container {
         position: absolute;
@@ -18,7 +18,7 @@
 }
 
 
-@include exports('animation/effect') {
+@include exports("animation/effect") {
 
     .k-push-right {
         &-enter,
@@ -380,7 +380,7 @@
 }
 
 
-@include exports('animation/fx') {
+@include exports("animation/fx") {
     $fx-duration: 350ms;
 
     .k-fx-end .k-fx-next,

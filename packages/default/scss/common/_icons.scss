@@ -1,10 +1,10 @@
-@import './font/WebComponentsIcons';
+@import "./font/WebComponentsIcons";
 
 @include exports( "common/icons" ) {
-    $icon-font-url: map-get( $data-uris, 'WebComponentsIcons.ttf' ) !default;
+    $icon-font-url: map-get( $data-uris, "WebComponentsIcons.ttf" ) !default;
 
     @font-face {
-        font-family: 'WebComponentsIcons';
+        font-family: "WebComponentsIcons";
         font-style: normal;
         font-weight: normal;
         src: url(#{$icon-font-url}) format( "truetype" );
@@ -16,7 +16,7 @@
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         font-size: $icon-size;
-        font-family: 'WebComponentsIcons';
+        font-family: "WebComponentsIcons";
         font-style: normal;
         font-variant: normal;
         font-weight: normal;

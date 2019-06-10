@@ -1,4 +1,4 @@
-@include exports('calendar/layout') {
+@include exports("calendar/layout") {
 
     // Base
     .k-calendar {
@@ -349,7 +349,7 @@
         overflow-y: auto;
         display: block;
 
-        @include hide-scrollbar('right');
+        @include hide-scrollbar("right");
     }
 
     // scoped in calendar until it is used elsewhere
@@ -639,7 +639,7 @@
         }
 
         .k-content.k-scrollable {
-            @include hide-scrollbar('left');
+            @include hide-scrollbar("left");
         }
 
         tbody th {

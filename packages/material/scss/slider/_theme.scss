@@ -2,7 +2,7 @@ $slider-trackbackground-color: darken($widget-bg, 10%) !default;
 $slider-selection-background-color: $accent !default;
 $slider-disabled-bg: $input-disabled-bg !default;
 
-@include exports('slider/theme') {
+@include exports("slider/theme") {
     $draghandle-focus-shadow: 0 0 0 11px rgba($accent, .25) !default;
 
     .k-slider {

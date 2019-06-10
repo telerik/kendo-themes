@@ -39,7 +39,7 @@ $dropdowntree-filter-spacer: $dropdowntree-popup-spacer-y !default;
         }
 
         &.k-rtl,
-        [dir='rtl'] & {
+        [dir="rtl"] & {
 
             .k-check-all .k-checkbox-label {
                 padding-left: 0;

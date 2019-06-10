@@ -4,7 +4,7 @@
     .km-scrollview,
     .km-scroll-container {
         user-select: none;
-        margin-collapse: separate;
+        border-collapse: separate;
     }
     .km-scroll-wrapper {
         position: relative;
@@ -59,7 +59,7 @@
         z-index: 200000;
         height: .4em;
         width: .4em;
-        background-color: #333;
+        background-color: #333333;
         opacity: 0;
         transform-origin: 0 0;
         transition: opacity .3s linear;

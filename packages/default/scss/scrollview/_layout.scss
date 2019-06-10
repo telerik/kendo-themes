@@ -1,7 +1,7 @@
-@import '../common/icons';
-@import '../button/layout';
+@import "../common/icons";
+@import "../button/layout";
 
-@include exports('scrollview/layout') {
+@include exports("scrollview/layout") {
 
     // refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
     kendo-scrollview.k-scrollview-wrap,

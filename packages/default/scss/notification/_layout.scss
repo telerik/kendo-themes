@@ -73,7 +73,7 @@
     }
 
     // RTL
-    .k-notification-container[dir='rtl'],
+    .k-notification-container[dir="rtl"],
     .k-rtl .k-notification {
         .k-notification-wrap {
             padding-right: $notification-padding-x;

@@ -7,7 +7,7 @@ $slider-draghandle-size: 14px !default;
 $slider-draghandle-border-width: 1px !default;
 $slider-draghandle-active-scale: 1 !default;
 
-@include exports('slider/layout') {
+@include exports("slider/layout") {
 
     $button-spacing: ($slider-button-size + $slider-button-offset);
     $transition-speed: .3s;
@@ -79,7 +79,7 @@ $slider-draghandle-active-scale: 1 !default;
             }
         }
 
-        &[dir='rtl'] {
+        &[dir="rtl"] {
             .k-slider-selection {
                 left: auto;
                 right: 0;
@@ -220,7 +220,7 @@ $slider-draghandle-active-scale: 1 !default;
             top: -1.2em;
         }
 
-        &[dir='rtl'] {
+        &[dir="rtl"] {
             .k-button-increase,
             .k-button-decrease {
                 .k-icon {
