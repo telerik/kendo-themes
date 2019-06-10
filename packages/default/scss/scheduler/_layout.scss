@@ -259,7 +259,7 @@
             vertical-align: top;
         }
 
-        /* Remove bottom border from first cell of hours cells spaning on two rows */
+        // Remove bottom border from first cell of hours cells spaning on two rows
         tr + tr,
         .k-scheduler-pane + .k-scheduler-pane {
             .k-scheduler-times tr {
@@ -361,7 +361,7 @@
         padding-right: $padding-x;
 
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             display: none;
             top: 0;

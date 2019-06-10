@@ -2,7 +2,7 @@ $upload-disabled-text: darken($widget-bg, 27%) !default;
 $upload-border: $border-color !default;
 $upload-error-text: $error !default;
 
-@include exports('upload/theme') {
+@include exports("upload/theme") {
 
     $upload-bg: $header-bg !default;
     $upload-files-bg: $widget-bg !default;

@@ -78,7 +78,7 @@
     }
 
     .k-multiselect-wrap {
-        [dir='rtl'] > &,
+        [dir="rtl"] > &,
         .k-rtl & {
             padding-left: calc( #{ $picker-select-size } );
             padding-right: 0;

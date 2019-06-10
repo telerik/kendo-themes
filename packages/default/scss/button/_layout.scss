@@ -1,4 +1,4 @@
-@include exports('button/layout') {
+@include exports("button/layout") {
 
     // Button
     .k-button {
@@ -68,7 +68,7 @@
             }
 
             .k-rtl &,
-            &[dir='rtl'] {
+            &[dir="rtl"] {
                 .k-icon,
                 .k-image,
                 .k-sprite {

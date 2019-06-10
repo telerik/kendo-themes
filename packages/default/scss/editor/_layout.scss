@@ -45,7 +45,7 @@
         }
 
         &.k-ie .k-content * {
-            color: #000;
+            color: #000000;
             background-color: transparent;
             font-size: medium;
             line-height: normal;
@@ -94,7 +94,7 @@
         list-style-type: none;
         line-height: $toolbar-line-height;
         cursor: default;
-        word-wrap: break-word; /* allow tools to wrap properly in IE */
+        word-wrap: break-word; // allow tools to wrap properly in IE
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -549,7 +549,7 @@
             &,
             & td {
                 outline: 0;
-                border: 1px dotted #ccc;
+                border: 1px dotted #cccccc;
             }
 
             td {
@@ -562,8 +562,8 @@
             position: absolute;
             width: 5px;
             height: 5px;
-            background-color: #fff;
-            border: 1px solid #000;
+            background-color: #ffffff;
+            border: 1px solid #000000;
             z-index: 100;
 
             .k-table-resize-handle {

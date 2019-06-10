@@ -15,7 +15,7 @@
         box-shadow: $toolbar-shadow;
 
         &::before {
-            content: '';
+            content: "";
             height: calc(#{$toolbar-button-calc-size});
         }
 

@@ -437,7 +437,7 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
 
             // fix for flex container disregarding the right padding
             &::after {
-                content: '';
+                content: "";
                 padding-right: $chat-toolbar-padding-x;
             }
 

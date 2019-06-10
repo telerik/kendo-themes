@@ -23,7 +23,7 @@ $forms-invalid-color: $error !default;
         vertical-align: middle;
         position: relative;
 
-        &[dir='rtl'],
+        &[dir="rtl"],
         .k-rtl & {
             text-align: right;
 

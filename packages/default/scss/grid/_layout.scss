@@ -1,4 +1,4 @@
-@include exports('grid/layout') {
+@include exports("grid/layout") {
 
     $filter-rows-span-size: calc( #{$line-height-em} + #{$input-padding-y * 2} + #{$input-border-width * 2}) !default;
 
@@ -480,7 +480,7 @@
         &::before,
         &::after {
             display: inline-block;
-            content: '';
+            content: "";
             position: absolute;
         }
 
@@ -899,7 +899,7 @@
     }
 
 
-    /* Locked columns */
+    // Locked columns
     .k-grid-lockedcolumns {
         white-space: nowrap;
     }
@@ -1113,7 +1113,7 @@
 
 }
 
-@include exports('columnmenu/layout') {
+@include exports("columnmenu/layout") {
     .k-column-list {
         padding: 0;
         margin: 0;

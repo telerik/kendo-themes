@@ -1,5 +1,5 @@
-@import '../../mixins';
+@import "../../mixins";
 
-@include exports('<FILENAME>') {
-    @include register-data-uri('<FILENAME>', 'data:<MIME>;base64,<BASE64>')
+@include exports("<FILENAME>") {
+    @include register-data-uri("<FILENAME>", "data:<MIME>;base64,<BASE64>")
 }

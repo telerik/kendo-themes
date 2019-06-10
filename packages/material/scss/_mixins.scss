@@ -6,7 +6,7 @@
     &::after {
         display: block;
         z-index: 2;
-        content: '';
+        content: "";
         position: absolute;
         bottom: add-two(-$height, 1px);
         left: 0;
