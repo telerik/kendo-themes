@@ -11,7 +11,8 @@ const packageImporterFactory = require("../utils/nodesass-packageimporter");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const calc = require("postcss-calc");
-const sassdoc = require('sassdoc');
+const sassdoc = require("sassdoc");
+const Fiber = require("fibers");
 
 const postcssPlugins = [
     calc({
@@ -29,6 +30,12 @@ const quickSassOptions = {
 const fullSassOptions = {
     ...quickSassOptions,
     importer: packageImporterFactory({ cache: false })
+};
+const dartSassOptions = {
+    ...quickSassOptions,
+    importer: packageImporterFactory({ cache: false }),
+    outputStyle: "expanded",
+    fiber: Fiber
 };
 
 
@@ -51,6 +58,14 @@ function theme() {
 }
 function swatches() {
     return build(paths.sass.swatches, fullSassOptions);
+}
+// #endregion
+
+
+// #region dart
+function dart() {
+    sass.compiler = require("sass");
+    return build(paths.sass.theme, dartSassOptions);
 }
 // #endregion
 
@@ -103,5 +118,6 @@ module.exports = {
     theme,
     swatches,
     api,
-    assets
+    assets,
+    dart
 };
