@@ -24,6 +24,7 @@
     "api": "gulp api",
     "api-check": "npm run api && git diff --exit-code --quiet -- docs/ || (echo -e '\\033[0;31mERROR: API docs are out of date' && exit 1)",
     "build": "gulp sass",
+    "dart": "gulp dart",
     "watch": "gulp sass:watch",
     "embed-assets": "gulp assets",
     "swatches": "gulp swatches",

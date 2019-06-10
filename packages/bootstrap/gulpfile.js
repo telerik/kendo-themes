@@ -5,6 +5,7 @@ const paths = require("./node_modules/@progress/kendo-theme-tasks/lib/globals").
 const sassTasks = require("./node_modules/@progress/kendo-theme-tasks/gulpfile").tasks.sass;
 
 exports.sass = sassTasks.theme;
+exports.dart = sassTasks.dart;
 exports.swatches = sassTasks.swatches;
 exports.api = sassTasks.api;
 exports.assets = sassTasks.assets;
