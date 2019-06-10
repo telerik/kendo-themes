@@ -9,6 +9,7 @@ exports.swatches = sassTasks.swatches;
 exports.api = sassTasks.api;
 exports.assets = sassTasks.assets;
 exports.lint = sassTasks.lint;
+exports.dart = sassTasks.dart;
 
 
 gulp.task('sass:watch', function () {
