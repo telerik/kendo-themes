@@ -1,4 +1,4 @@
-@include exports('grid/layout') {
+@include exports("grid/layout") {
 
     $filter-rows-span-size: calc( #{$line-height-em} + #{$input-padding-y * 2} + #{$input-border-width * 2}) !default;
 
@@ -372,12 +372,13 @@
         cursor: default;
         display: block;
 
-        .k-button {
+        > * {
             vertical-align: middle;
         }
-        .k-button + .k-button {
+        > * + * {
             margin-left: $grid-toolbar-button-spacing;
         }
+
     }
 
 
@@ -479,7 +480,7 @@
         &::before,
         &::after {
             display: inline-block;
-            content: '';
+            content: "";
             position: absolute;
         }
 
@@ -898,7 +899,7 @@
     }
 
 
-    /* Locked columns */
+    // Locked columns
     .k-grid-lockedcolumns {
         white-space: nowrap;
     }
@@ -1010,7 +1011,7 @@
             width: auto !important; // sass-lint:disable-line no-important
         }
 
-         // Remove all sizes and scrolling
+        // Remove all sizes and scrolling
         .k-grid,
         .k-grid-content,
         .k-grid-content-locked {
@@ -1112,7 +1113,7 @@
 
 }
 
-@include exports('columnmenu/layout') {
+@include exports("columnmenu/layout") {
     .k-column-list {
         padding: 0;
         margin: 0;

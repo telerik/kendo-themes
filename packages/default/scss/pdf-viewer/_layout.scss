@@ -34,6 +34,9 @@
             margin: $pdf-viewer-page-spacing auto;
         }
 
+        .k-page canvas {
+            direction: ltr;
+        }
     }
 
 }

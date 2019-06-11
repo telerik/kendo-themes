@@ -18,7 +18,7 @@ $grid-group-drag-clue-opacity: .9 !default;
 
 @import "~@progress/kendo-theme-default/scss/grid/layout";
 
-@include exports ('grid/layout/material') {
+@include exports ("grid/layout/material") {
     $text-field-border-width: 2px;
     $text-field-radius: $text-field-border-width + 1px;
     $text-field-padding: (2 * $grid-cell-padding-x / 3);
@@ -52,6 +52,10 @@ $grid-group-drag-clue-opacity: .9 !default;
 
         th {
             font-weight: 700;
+
+            .k-grid-filter {
+                font-weight: normal;
+            }
         }
 
         .k-grid-filter {
@@ -231,7 +235,7 @@ $grid-group-drag-clue-opacity: .9 !default;
         }
 
         .k-textbox,
-        .k-textbox.k-input, {
+        .k-textbox.k-input {
             height: button-size();
         }
     }

@@ -7,7 +7,7 @@ $upload-file-name-spacing: 0 !default;
 
 @import "~@progress/kendo-theme-default/scss/upload/layout";
 
-@include exports('upload/layout/material') {
+@include exports("upload/layout/material") {
     .k-upload {
         .k-upload-files {
             .k-file {

@@ -18,13 +18,13 @@
     "access": "public"
   },
   "scripts": {
-    "lint": "kendotheme lint",
-    "api": "kendotheme api",
+    "lint": "gulp lint",
+    "api": "gulp api",
     "api-check": "npm run api && git diff --exit-code --quiet -- docs/ || (echo -e '\\033[0;31mERROR: API docs are out of date' && exit 1)",
-    "build": "kendotheme build",
-    "watch": "kendotheme build --watch",
-    "swatches": "kendotheme build --swatches",
-    "embed-assets": "kendotheme assets",
+    "build": "gulp sass",
+    "watch": "gulp sass:watch",
+    "embed-assets": "gulp assets",
+    "swatches": "gulp swatches",
     "test": "npm run lint && npm run build && npm run api-check",
     "twbs-compat": "kendotheme build --file ./build/twbs-compat.scss",
     "prepublishOnly": "npm run build && npm run swatches"
@@ -32,6 +32,7 @@
   "devDependencies": {
     "@progress/kendo-theme-tasks": "^0.1.5",
     "bootstrap": "^4.3.1",
+    "gulp": "^4.0.2",
     "handlebars": "^4.0.10"
   }
 }

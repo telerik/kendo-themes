@@ -74,7 +74,7 @@
             margin-left: $dialog-button-gap;
 
             .k-rtl &,
-            [dir='rtl'] & {
+            [dir="rtl"] & {
                 margin-left: 0;
                 margin-right: $dialog-button-gap;
             }
@@ -103,7 +103,7 @@
             border-left-width: $dialog-stretched-button-border-width;
 
             .k-rtl &,
-            [dir='rtl'] & {
+            [dir="rtl"] & {
                 margin: 0;
                 border-left-width: 0;
                 border-right-width: $dialog-stretched-button-border-width;
@@ -148,7 +148,7 @@
         }
 
         .k-rtl,
-        [dir='rtl'] {
+        [dir="rtl"] {
 
             .k-dialog-buttongroup {
                 text-align: left;

@@ -1,19 +1,14 @@
 @include exports("adaptive/layout") {
 
-    .k-root,
-    .k-pane,
-    .k-pane-wrapper {
-        width: 100%;
-        height: 100%;
-        user-select: none;
-        box-sizing: border-box;
-    }
-
     .k-pane-wrapper {
         position: relative;
         font-size: 14px;
 
         .k-pane {
+            width: 100%;
+            height: 100%;
+            user-select: none;
+            box-sizing: border-box;
             font-family: sans-serif;
             overflow-x: hidden;
 
@@ -100,7 +95,7 @@
         .k-resize-handle-inner::before {
             content: "\e01e";
             position: absolute;
-            font: 16px/1 'WebComponentsIcons';
+            font: 16px/1 "WebComponentsIcons";
             // The Calc is needed due to the the negative margin
             // that removes the double bottom border of the header
             top: calc(50% - 1px);
@@ -490,7 +485,7 @@
                         content: "\e014";
                         position: absolute;
                         right: .5em;
-                        font: 1.5em/1 'WebComponentsIcons';
+                        font: 1.5em/1 "WebComponentsIcons";
                     }
                 }
 
@@ -644,8 +639,8 @@
 
         // Mobile list form elements
 
-        .k-check[type=radio],
-        .k-check[type=checkbox] {
+        .k-check[type="radio"],
+        .k-check[type="checkbox"] {
             appearance: none;
             background-color: transparent;
         }
@@ -656,12 +651,14 @@
             .k-label {
 
                 .k-check {
-                    border: 0;
+                    border-width: 1px;
+                    border-style: solid;
+                    box-sizing: content-box;
                     font-size: inherit;
                     outline: 0;
-                    width: 13px;
-                    height: 13px;
-                    margin: .26em 1em .26em 0;
+                    width: 1em;
+                    height: 1em;
+                    margin-right: 1em;
                 }
             }
         }

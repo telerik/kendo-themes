@@ -1,7 +1,7 @@
-@import '../common/icons';
-@import '../button/layout';
+@import "../common/icons";
+@import "../button/layout";
 
-@include exports('scrollview/layout') {
+@include exports("scrollview/layout") {
 
     // refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
     kendo-scrollview.k-scrollview-wrap,
@@ -132,18 +132,18 @@
         div.k-scrollview-wrap {
             white-space: nowrap;
 
-            & > [data-role=page] {
-               vertical-align: top;
-               display: inline-block;
-               min-height: 1px;
-           }
+            & > [data-role="page"] {
+                vertical-align: top;
+                display: inline-block;
+                min-height: 1px;
+            }
         }
 
         .k-scrollview-nav-wrap {
             position: absolute;
             bottom: ($scrollview-pager-offset - ($scrollview-pager-item-spacing / 4));
             left: ($scrollview-pager-item-spacing / 2);
-            right: ($scrollview-pager-item-spacing / 2);;
+            right: ($scrollview-pager-item-spacing / 2);
             height: $scrollview-pager-height;
             overflow: hidden;
 

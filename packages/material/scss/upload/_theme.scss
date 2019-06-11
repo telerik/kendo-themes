@@ -2,7 +2,7 @@ $upload-success-text: $text-color !default;
 
 @import "~@progress/kendo-theme-default/scss/upload/theme";
 
-@include exports('upload/theme/material') {
+@include exports("upload/theme/material") {
     .k-upload {
         .k-upload-button {
             box-shadow: none;

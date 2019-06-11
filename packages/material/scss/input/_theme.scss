@@ -1,5 +1,4 @@
 @include exports("input/theme") {
-    $floating-label-color: rgba(0, 0, 0, .38) !default;
 
     .k-textbox,
     .k-textarea,
@@ -23,8 +22,8 @@
             border-color: $input-focused-border;
         }
 
-         // Selection
-         &::selection {
+        // Selection
+        &::selection {
             background-color: $accent;
             color: $accent-contrast;
         }
@@ -57,7 +56,7 @@
         vertical-align: baseline;
 
         > .k-label {
-            color: $floating-label-color;
+            color: $floating-label-text;
         }
 
         &.k-state-focused > .k-label {
@@ -93,7 +92,7 @@ $radio-checked-bg: $primary-contrast !default;
 $radio-checked-border: $primary !default;
 $radio-checked-text: $radio-checked-border !default;
 
-@include exports('input/theme/checkbox-radiobutton') {
+@include exports("input/theme/checkbox-radiobutton") {
 
     .k-radio + .k-radio-label {
         &::before {

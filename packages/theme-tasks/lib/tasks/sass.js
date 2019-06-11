@@ -18,7 +18,7 @@ const postcssPlugins = [
         precision: 10
     }),
     autoprefixer({
-        browsers: browsers
+        overrideBrowserslist: browsers
     })
 ];
 const quickSassOptions = {
@@ -48,9 +48,6 @@ function buildFile(file) {
 // #region theme
 function theme() {
     return build(paths.sass.theme);
-}
-function watchtheme() {
-    gulp.watch(paths.sass.src, () => build(paths.sass.theme, fullSassOptions) );
 }
 function swatches() {
     return build(paths.sass.swatches, fullSassOptions);
@@ -104,7 +101,6 @@ function api() {
 module.exports = {
     buildFile,
     theme,
-    watchtheme,
     swatches,
     api,
     assets

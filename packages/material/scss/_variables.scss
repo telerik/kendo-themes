@@ -197,6 +197,8 @@ $textarea-padding-x: 10px !default;
 $textarea-padding-y: 15px !default;
 $textarea-floating-label-padding: 25px !default;
 
+$floating-label-text: rgba(0, 0, 0, .38) !default;
+
 
 // Pickers
 $picker-select-border-width: 0 !default;
@@ -621,7 +623,7 @@ $grid-filter-cell-padding-y: $grid-padding-y !default;
 
 $grid-toolbar-padding-x: 14px !default;
 $grid-toolbar-padding-y: $grid-toolbar-padding-x !default;
-$grid-toolbar-button-spacing: 8px !default;
+$grid-toolbar-button-spacing: 0 !default;
 
 $grid-cell-padding-x: $grid-padding-x !default;
 $grid-cell-padding-y: $grid-padding-y !default;
@@ -1258,7 +1260,7 @@ $scheduler-cell-height: $line-height * 1rem;
 $scheduler-datecolumn-width: 12rem;
 $scheduler-timecolumn-width: 11rem;
 
-$scheduler-current-time-color: #f00;
+$scheduler-current-time-color: #ff0000;
 
 $scheduler-nonwork-bg: mix( $panel-text, $panel-bg, 3% ) !default;
 
@@ -1274,7 +1276,7 @@ $pdf-viewer-canvas-border: null !default;
 
 $pdf-viewer-page-spacing: 30px !default;
 
-$pdf-viewer-page-bg: $panel-bg !default;
+$pdf-viewer-page-bg: white !default;
 $pdf-viewer-page-text: $panel-text !default;
 $pdf-viewer-page-border: $panel-border !default;
 $pdf-viewer-page-shadow: 0 0 ($pdf-viewer-page-spacing / 2) $pdf-viewer-page-border !default;
@@ -1309,7 +1311,7 @@ $drawer-content-padding-x: $padding-x !default;
 $drawer-content-padding-y: $padding-y !default;
 
 $drawer-scrollbar-width: 7px !default;
-$drawer-scrollbar-color: rgba(156, 156, 156, 0.7) !default;
+$drawer-scrollbar-color: rgba(156, 156, 156, .7) !default;
 $drawer-scrollbar-bg: #dedede !default;
 $drawer-scrollbar-radius: 20px !default;
 $drawer-scrollbar-hovered-color: rgba(156, 156, 156, 1) !default;
@@ -1340,10 +1342,10 @@ $spreadsheet-insert-image-dialog-border-width: 2px !default;
 $spreadsheet-insert-image-dialog-text-margin-bottom: 30px !default;
 $spreadsheet-insert-image-dialog-preview-width: 355px !default;
 $spreadsheet-insert-image-dialog-preview-height: 230px !default;
-$spreadsheet-insert-image-dialog-preview-img: 'image-default.png' !default;
+$spreadsheet-insert-image-dialog-preview-img: "image-default.png" !default;
 $spreadsheet-insert-image-dialog-preview-border-bg: $border-color !default;
 $spreadsheet-insert-image-dialog-preview-border-radius: $border-radius !default;
-$spreadsheet-insert-image-dialog-preview-overlay-shadow: inset 0 0 0 2000px rgba(0,0,0, 0.5) !default;
+$spreadsheet-insert-image-dialog-preview-overlay-shadow: inset 0 0 0 2000px rgba(0, 0, 0, .5) !default;
 $spreadsheet-insert-image-dialog-preview-overlay-border-radius: $border-radius !default;
 $spreadsheet-insert-image-dialog-overlay-hovered-text: $bg-color !default;
 

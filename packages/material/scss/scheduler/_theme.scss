@@ -91,7 +91,7 @@
             &::before {
                 display: block;
                 background-color: currentColor;
-                opacity: 0.24;
+                opacity: .24;
             }
         }
 
@@ -166,9 +166,13 @@
 
 
 
-@include exports("scheduler-edit-form/theme") {
+@include exports("scheduler-edit-form/theme/material") {
 
-    .k-scheduler-edit-form {}
+    .k-scheduler-edit-form {
+        .k-edit-label {
+            color: $floating-label-text;
+        }
+    }
 
 }
 

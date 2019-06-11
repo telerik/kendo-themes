@@ -1,4 +1,4 @@
-@include exports('switch/layout') {
+@include exports("switch/layout") {
 
     .k-switch {
         @include border-radius( $switch-border-radius );
@@ -14,7 +14,7 @@
         user-select: none;
         text-align: left;
 
-        [type='checkbox'] {
+        [type="checkbox"] {
             display: none;
         }
     }
@@ -100,7 +100,7 @@
         }
 
         .k-switch-handle {
-            top: add-three($switch-track-size, -$switch-handle-size, -$switch-container-border-width*2, 0.5);
+            top: add-three($switch-track-size, -$switch-handle-size, -$switch-container-border-width * 2, .5);
         }
 
     }

@@ -28,4 +28,6 @@ npm link
 # Install root packages
 cd ../../
 npm install
+
+# Bootstrap lerna
 npx lerna bootstrap

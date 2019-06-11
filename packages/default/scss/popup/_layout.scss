@@ -4,7 +4,7 @@ $popup-header-font-size: null !default;
 $popup-header-text: null !default;
 $popup-filter-padding-x: $input-padding-x !default;
 
-@include exports('popup/layout') {
+@include exports("popup/layout") {
 
     .k-popup {
         display: flex;
@@ -28,7 +28,7 @@ $popup-filter-padding-x: $input-padding-x !default;
         }
 
         .k-rtl,
-        [dir='rtl'] & {
+        [dir="rtl"] & {
             .k-list-optionlabel {
                 text-align: right;
             }
@@ -201,7 +201,7 @@ $popup-filter-padding-x: $input-padding-x !default;
 
 
         .k-rtl &,
-        [dir='rtl'] & {
+        [dir="rtl"] & {
 
             > .k-textbox {
                 padding-right: $popup-filter-padding-x;

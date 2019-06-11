@@ -78,7 +78,7 @@
             .k-clear,
             .k-select-all,
             .k-scheduler-delete,
-            .k-scheduler-resetSeries {
+            .k-scheduler-resetSeries { // sass-lint:disable-line class-name-format
                 color: $adaptive-menu-clear-text;
             }
         }
@@ -95,6 +95,7 @@
 
             .k-check {
                 color: $adaptive-content-text;
+                border-color: $adaptive-content-text;
             }
         }
 
@@ -146,8 +147,7 @@
             }
 
             .k-check:checked {
-                font-family: 'WebComponentsIcons';
-                border-color: transparent;
+                font-family: "WebComponentsIcons";
 
                 &::before {
                     content: "\e118";

@@ -14,8 +14,8 @@
         overflow: hidden;
         box-shadow: $toolbar-shadow;
 
-        &:before {
-            content: '';
+        &::before {
+            content: "";
             height: calc(#{$toolbar-button-calc-size});
         }
 
@@ -155,7 +155,7 @@
         kendo-toolbar-renderer {
             margin-top: $toolbar-padding-y / 2;
             margin-bottom: $toolbar-padding-y / 2;
-            margin-left: 0px;
+            margin-left: 0;
 
             &:not(:last-child) {
                 margin-right: $toolbar-padding-x;
@@ -167,7 +167,7 @@
                 margin-left: $toolbar-padding-x;
 
                 &:not(:last-child) {
-                    margin-right: 0px;
+                    margin-right: 0;
                 }
             }
         }

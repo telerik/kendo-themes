@@ -1,4 +1,4 @@
-@include exports('calendar/layout') {
+@include exports("calendar/layout") {
 
     // Base
     .k-calendar {
@@ -349,7 +349,7 @@
         overflow-y: auto;
         display: block;
 
-        @include hide-scrollbar('right');
+        @include hide-scrollbar("right");
     }
 
     // scoped in calendar until it is used elsewhere
@@ -577,7 +577,7 @@
                 @extend .k-bare;
                 width: auto;
                 height: auto;
-                opacity: 0.6;
+                opacity: .6;
                 transition: opacity .2s ease-in-out;
                 padding: 0;
                 margin: $multiviewcalendar-navigation-margin-y $multiviewcalendar-navigation-margin-x;
@@ -587,13 +587,13 @@
                     opacity: 1;
                     transition: opacity .2s ease-in-out;
 
-                    &:before {
+                    &::before {
                         opacity: 0;
                     }
                 }
 
                 &:focus {
-                    &:after {
+                    &::after {
                         opacity: 0;
                     }
                 }
@@ -639,7 +639,7 @@
         }
 
         .k-content.k-scrollable {
-            @include hide-scrollbar('left');
+            @include hide-scrollbar("left");
         }
 
         tbody th {

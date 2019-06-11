@@ -12,10 +12,8 @@ sedi () {
 # replace theme reference
 find tests/visual -name '*.html' | while read file; do sedi "s#packages/default/dist#packages/$theme/dist#" "$file"; done
 
-# capture screenshots
-npx pastshots --output tests/visual/output/$theme --serve 'tests/visual/*.html' --port 8081 --selector "#test-area" --viewport-size 1200,768 --tolerance 1
-
-npx pastshots --output tests/visual/output/1024px/$theme --serve 'tests/visual/1024px/*.html' --port 8081 --selector "#test-area" --viewport-size 1024,768 --tolerance 1
+# capture screenshots. see .pastshotsrc for config options
+npx pastshots --output tests/visual/output/$theme
 
 # revert theme reference
 find tests/visual -name '*.html' | while read file; do sedi "s#packages/$theme/dist#packages/default/dist#" "$file"; done
