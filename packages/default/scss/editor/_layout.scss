@@ -84,6 +84,12 @@
 
 
     // Toolbar
+    .k-editor > .k-toolbar {
+        border-width: 0 0 $toolbar-border-width 0;
+    }
+
+
+    // Custom toolbar
     .k-editor-toolbar-wrap {
         border-color: inherit;
     }
