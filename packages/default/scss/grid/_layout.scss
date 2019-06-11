@@ -359,6 +359,7 @@
             position: absolute;
             visibility: hidden;
             height: 1px;
+            bottom: 1px; // fix for vertical scrollbar appearing when no records template is displayed
         }
     }
 
@@ -816,17 +817,18 @@
     .k-edit-cell,
     .k-grid-edit-row > td {
         > .k-textbox,
-        > .k-widget,
+        > .k-widget:not(.k-switch),
         > .text-box {
             margin-left: $edit-cell-input-space;
         }
     }
 
-    .k-grid-edit-row td > .k-textbox,
-    .k-grid-edit-row td > .k-widget,
-    .k-edit-cell > .k-textbox,
-    .k-edit-cell > .k-widget {
-        width: $edit-cell-textbox-width;
+    .k-grid-edit-row td,
+    .k-edit-cell {
+        > .k-textbox,
+        > .k-widget:not(.k-switch) {
+            width: $edit-cell-textbox-width;
+        }
     }
 
     .k-grid-edit-row td > .k-textbox,
@@ -960,6 +962,24 @@
             overflow-y: auto;
         }
     }
+
+
+    .k-grid-norecords {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .k-grid-norecords-template {
+        width: 20em;
+        height: 4em;
+        line-height: 4em;
+        margin: 0 auto;
+        border: 1px solid;
+    }
+
 }
 
 @include exports( "grid/pdf-export" ) {
@@ -1190,6 +1210,14 @@
                     margin-right: 0;
                 }
             }
+        }
+    }
+
+    [dir = "rtl"],
+    .k-rtl {
+        .k-columnmenu-item  > .k-icon {
+            margin-left: $icon-spacing;
+            margin-right: 0;
         }
     }
 }

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Grid Filter Menu</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+</head>
+<body>
+    <div id="test-area">
+        <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar" style="height: 550px;">
+            <div class="k-grid-header">
+                <div class="k-grid-header-wrap k-auto-scrollable">
+                    <table role="grid">
+                        <colgroup>
+                            <col style="width:225px">
+                            <col style="width:500px">
+                            <col style="width:255px">
+                            <col>
+                        </colgroup>
+                        <thead role="rowgroup">
+                            <tr role="row">
+                                <th scope="col" role="columnheader" class="k-header">OrderID</th>
+                                <th scope="col" role="columnheader" class="k-header">Ship Name</th>
+                                <th scope="col" role="columnheader" class="k-header">Freight</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="k-grid-content k-auto-scrollable" style="height: 480px;">
+                <table role="grid" style="height: auto;">
+                    <colgroup>
+                        <col style="width:225px">
+                        <col style="width:500px">
+                        <col style="width:255px">
+                        <col>
+                    </colgroup>
+                    <tbody role="rowgroup"></tbody>
+                </table>
+                <div class="k-grid-norecords">
+                    <div class="k-grid-norecords-template">No records available.</div>
+                </div>
+                <div class="k-grid-content-expander" style="width: 982px;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

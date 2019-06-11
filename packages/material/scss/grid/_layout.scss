@@ -1,5 +1,5 @@
 $grid-hierarchy-col-width: 32px !default;
-$grid-form-component-vertical-align: bottom !default;
+$grid-form-component-vertical-align: middle !default;
 // TODO: perhaps these should be the values for cell-padding-x/-y
 $grid-grouping-row-border-top: 0 !default;
 $grid-group-footer-border-y: 0 !default;
@@ -134,6 +134,10 @@ $grid-group-drag-clue-opacity: .9 !default;
             border-radius: $text-field-radius;
             margin-left: -$text-field-padding;
             margin-right: -$text-field-padding;
+        }
+
+        > .k-switch {
+            margin-left: 0;
         }
     }
     .k-edit-cell,

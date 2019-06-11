@@ -162,4 +162,9 @@
             }
         }
     }
+
+    .k-grid-norecords-template {
+        background-color: $grid-bg;
+        border-color: $grid-border;
+    }
 }
