@@ -1,7 +1,8 @@
 @import "~@progress/kendo-theme-default/scss/drawer/layout";
 
-@include exports( "drawer/layout/material" ) {
+@include exports( "drawer/layout/bootstrap" ) {
     .k-drawer-container .k-drawer-items {
+
         .k-item-text {
             padding: 0;
         }
