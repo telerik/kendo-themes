@@ -750,19 +750,21 @@ $panelbar-item-focused-shadow: null !default;
 $notification-padding-x: 16px !default;
 $notification-padding-y: 14px !default;
 $notification-border-width: 0 !default;
+$notification-icon-offset: 4px !default;
+$notification-icon-spacing: $icon-spacing !default;
 
-$notification-info-border: $info !default;
 $notification-info-bg: $info !default;
 $notification-info-text: contrast-wcag( $notification-info-bg ) !default;
-$notification-success-border: $success !default;
+$notification-info-border: $notification-info-bg !default;
 $notification-success-bg: $success !default;
 $notification-success-text: contrast-wcag( $notification-success-bg ) !default;
-$notification-warning-border: $warning !default;
+$notification-success-border: $notification-success-bg !default;
 $notification-warning-bg: $warning !default;
 $notification-warning-text: contrast-wcag( $notification-warning-bg ) !default;
-$notification-error-border: $error !default;
+$notification-warning-border: $notification-warning-bg !default;
 $notification-error-bg: $error !default;
 $notification-error-text: contrast-wcag( $notification-error-bg ) !default;
+$notification-error-border: $notification-error-bg !default;
 
 
 // Link
