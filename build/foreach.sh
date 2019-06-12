@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# exit early on error
+set -e
+
 dir=$(pwd);
 
 
