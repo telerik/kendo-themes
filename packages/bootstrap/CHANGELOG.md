@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.4.2"></a>
+## 3.4.2 (2019-06-12)
+
+
+### Bug Fixes
+
+* use gulp tasks in themes instead of lerna ([f5d5c0c](https://github.com/telerik/kendo-themes/commit/f5d5c0c))
+* **drawer:** fix includes in bootstrap theme ([ed4364d](https://github.com/telerik/kendo-themes/commit/ed4364d))
+* **grid:** adaptive renedering checkbox focused state ([12c2dbe](https://github.com/telerik/kendo-themes/commit/12c2dbe))
+* **grid:** add no records template styles ([0c64ab0](https://github.com/telerik/kendo-themes/commit/0c64ab0))
+* **notification:** improve alignment of text and icons in notification ([e629688](https://github.com/telerik/kendo-themes/commit/e629688))
+
+
+
+
 <a name="3.4.1"></a>
 ## [3.4.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@3.4.0...@progress/kendo-theme-bootstrap@3.4.1) (2019-05-15)
 

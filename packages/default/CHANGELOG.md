@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.7.0"></a>
+# 3.7.0 (2019-06-12)
+
+
+### Bug Fixes
+
+* allow notification to be customized through custom class ([ac6ddc8](https://github.com/telerik/kendo-themes/commit/ac6ddc8))
+* remove margin between buttons in button group ([ea1bf88](https://github.com/telerik/kendo-themes/commit/ea1bf88))
+* **grid:** add no records template styles ([0c64ab0](https://github.com/telerik/kendo-themes/commit/0c64ab0))
+* use gulp tasks in themes instead of lerna ([f5d5c0c](https://github.com/telerik/kendo-themes/commit/f5d5c0c))
+* use shade() instead of blend-multiply() for themes ([41899bd](https://github.com/telerik/kendo-themes/commit/41899bd))
+* **editor:** remove double toolbar border ([7fadbad](https://github.com/telerik/kendo-themes/commit/7fadbad))
+* **grid:** adaptive renedering checkbox focused state ([12c2dbe](https://github.com/telerik/kendo-themes/commit/12c2dbe))
+* **grid:** Cannot select text if the Grid is inside Splitter pane ([9924a53](https://github.com/telerik/kendo-themes/commit/9924a53))
+* **grid:** column menu icons in rtl ([db87fd3](https://github.com/telerik/kendo-themes/commit/db87fd3))
+* **notification:** improve alignment of text and icons in notification ([e629688](https://github.com/telerik/kendo-themes/commit/e629688))
+* **responsivepanel:** passive event error thrown in chrome ([b4f904b](https://github.com/telerik/kendo-themes/commit/b4f904b))
+* **switch:** width in cell in grid edit mode ([4a7cffe](https://github.com/telerik/kendo-themes/commit/4a7cffe))
+
+
+### Features
+
+* **drawer:** add scrolling styles supported in Mozilla ([07460ab](https://github.com/telerik/kendo-themes/commit/07460ab))
+* **grid:** Accessibility improvements for adaptive rendering ([8e5ff21](https://github.com/telerik/kendo-themes/commit/8e5ff21))
+
+
+
+
 <a name="3.6.1"></a>
 ## [3.6.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@3.6.0...@progress/kendo-theme-default@3.6.1) (2019-05-15)
 

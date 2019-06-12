@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.5.2"></a>
+## 2.5.2 (2019-06-12)
+
+
+### Bug Fixes
+
+* **colorpicker:** remove additional padding for material theme ([8f6ebca](https://github.com/telerik/kendo-themes/commit/8f6ebca))
+* background color on hover when using multiselect in a dialog ([4eda7e7](https://github.com/telerik/kendo-themes/commit/4eda7e7))
+* improve dialog form alignment ([6b081aa](https://github.com/telerik/kendo-themes/commit/6b081aa))
+* improve edit dialog form label color ([a5709b4](https://github.com/telerik/kendo-themes/commit/a5709b4))
+* remove margin between buttons in button group ([ea1bf88](https://github.com/telerik/kendo-themes/commit/ea1bf88))
+* use gulp tasks in themes instead of lerna ([f5d5c0c](https://github.com/telerik/kendo-themes/commit/f5d5c0c))
+* **grid:** adaptive renedering checkbox focused state ([12c2dbe](https://github.com/telerik/kendo-themes/commit/12c2dbe))
+* **grid:** material filter menu wrong font-weight ([7bb5c91](https://github.com/telerik/kendo-themes/commit/7bb5c91))
+* **notification:** improve alignment of text and icons in notification ([e629688](https://github.com/telerik/kendo-themes/commit/e629688))
+* **switch:** width in cell in grid edit mode ([4a7cffe](https://github.com/telerik/kendo-themes/commit/4a7cffe))
+
+
+
+
 <a name="2.5.1"></a>
 ## [2.5.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@2.5.0...@progress/kendo-theme-material@2.5.1) (2019-05-15)
 
