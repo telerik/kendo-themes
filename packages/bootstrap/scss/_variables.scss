@@ -704,6 +704,8 @@ $pager-selected-border: $pagination-active-border-color !default;
 $notification-padding-x: $alert-padding-x !default;
 $notification-padding-y: $alert-padding-y !default;
 $notification-border-width: $alert-border-width !default;
+$notification-icon-offset: 3px !default;
+$notification-icon-spacing: $icon-spacing !default;
 
 $notification-info-bg: color-level($info, 10) !default;
 $notification-info-text: color-level($info, -6) !default;

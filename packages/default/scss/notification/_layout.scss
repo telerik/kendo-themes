@@ -1,7 +1,5 @@
 @include exports("notification/layout") {
 
-    $notification-padding-end: calc(#{$notification-padding-x} + #{$icon-size} + #{$icon-spacing}) !default;
-
     // Base
     .k-notification-group {
         position: fixed;
@@ -28,67 +26,71 @@
         border-style: solid;
         font-size: $font-size-sm;
         line-height: $line-height-em;
-        white-space: nowrap;
         cursor: default;
         position: relative;
     }
 
     .k-notification-wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
 
         > .k-icon {
-            margin-right: $notification-padding-x;
-            vertical-align: middle;
+            margin-top: $notification-icon-offset;
+            margin-right: $notification-icon-spacing;
+            flex: 0 0 0%;
         }
 
         > .k-i-close {
-            margin: 0;
-            position: absolute;
-            top: $notification-padding-y;
-            right: $notification-padding-x;
+            margin-right: 0;
+            margin-left: $notification-icon-spacing;
+            flex: 0 0 0%;
             cursor: pointer;
-            font-size: inherit;
-            line-height: inherit;
-
-            &::before {
-                font-size: $icon-size;
-            }
         }
 
         > .k-notification-content {
-            display: inline-block;
-            white-space: normal;
-            vertical-align: top;
+            flex: 1 1 0%;
         }
-    }
-    .k-notification-closable {
-        padding-right: $notification-padding-end;
     }
 
     // RTL
     .k-rtl .k-notification,
-    [dir='rtl'] .k-notification {
-        padding-right: $notification-padding-x;
+    [dir="rtl"] .k-notification {
 
         .k-notification-wrap {
 
-            > .k-notification-content {
-                padding-right: $notification-padding-x;
-            }
-
             > .k-icon {
                 margin-right: 0;
-                margin-left: $padding-x;
+                margin-left: $notification-icon-spacing;
             }
 
             > .k-i-close {
-                margin: 0;
-                right: auto;
-                left: $notification-padding-x;
+                margin-left: 0;
+                margin-right: $notification-icon-spacing;
             }
         }
+    }
 
-        &-closable {
-            padding-left: $notification-padding-end;
+}
+
+
+
+
+@include exports("notification/layout/ie9") {
+
+
+    .k-ie9 .k-notification-wrap {
+        white-space: nowrap;
+
+        > .k-icon {
+            vertical-align: top;
+        }
+
+        > .k-notification-content {
+            display: inline-block;
+            vertical-align: middle;
+            white-space: normal;
         }
     }
+
 }
