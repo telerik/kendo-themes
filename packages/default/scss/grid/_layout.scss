@@ -963,11 +963,13 @@
         }
     }
 
-
     .k-grid-norecords {
+        text-align: center;
+    }
+
+    div.k-grid-norecords {
         width: 100%;
         height: 100%;
-        text-align: center;
         display: flex;
         align-items: center;
     }
@@ -979,7 +981,6 @@
         margin: 0 auto;
         border: 1px solid;
     }
-
 }
 
 @include exports( "grid/pdf-export" ) {
