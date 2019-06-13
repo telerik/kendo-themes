@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="test-area">
-        <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar" style="height: 550px;">
+        <div id="grid" data-role="grid" class="k-grid k-widget k-display-block k-grid-no-scrollbar" style="height: 350px;">
             <div class="k-grid-header">
                 <div class="k-grid-header-wrap k-auto-scrollable">
                     <table role="grid">
@@ -30,7 +30,7 @@
                     </table>
                 </div>
             </div>
-            <div class="k-grid-content k-auto-scrollable" style="height: 480px;">
+            <div class="k-grid-content k-auto-scrollable" style="height: 280px;">
                 <table role="grid" style="height: auto;">
                     <colgroup>
                         <col style="width:225px">
@@ -46,6 +46,52 @@
                 <div class="k-grid-content-expander" style="width: 982px;"></div>
             </div>
         </div>
+        <h4>Angular Grid</h4>
+        <kendo-grid ng-reflect-data="" dir="ltr" class="k-widget k-grid">
+            <div class="k-grid-aria-root" role="grid" aria-rowcount="1" aria-colcount="4">
+                <div class="k-grid-header" role="presentation" style="padding: 0px 16px 0px 0px;">
+                    <colgroup kendogridcolgroup="" role="presentation">
+                        <col style="width: 140px;">
+                        <col style="width: 120px;">
+                        <col style="width: 100px;">
+                        <col style="width: 130px;">
+                    </colgroup>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="k-header" rowspan="1" colspan="1">CompanyName</th>
+                                <th class="k-header" rowspan="1" colspan="1">ContactName</th>
+                                <th class="k-header" rowspan="1" colspan="1">City</th>
+                                <th class="k-header" rowspan="1" colspan="1">ContactTitle</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
+            <kendo-grid-list class="k-grid-container">
+            <div class="k-grid-content k-virtual-content">
+                <div class="k-grid-table-wrap">
+                        <table class="k-grid-table">
+                            <colgroup>
+                                <col style="width: 140px;">
+                                <col style="width: 120px;">
+                                <col style="width: 100px;">
+                                <col style="width: 130px;">
+                            </colgroup>
+                            <tbody>
+                                <tr class="k-grid-norecords">
+                                    <td colspan="4">No records available. </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="k-height-container">
+                        <div style="height: 0px;"></div>
+                    </div>
+                </div>
+            </kendo-grid-list>
+        </kendo-grid>
     </div>
 </body>
 </html>
