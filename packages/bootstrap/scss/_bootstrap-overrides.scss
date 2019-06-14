@@ -43,7 +43,7 @@ $theme-colors: () !default;
     $component-color: contrast-yiq($component-bg, $gray-900) !default;
     $component-border-color: rgba(contrast-yiq($component-bg, $gray-900), .125) !default;
     $component-active-bg: $primary !default;
-    $component-active-color: contrast-yiq($component-active-bg);
+    $component-active-color: contrast-yiq($component-active-bg) !default;
 
     $card-bg: $component-bg !default;
     $card-color: $component-color !default;

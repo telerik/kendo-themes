@@ -41,7 +41,7 @@ $color-level-step: 8% !default;
 
 /// Color of shadows
 /// @group shadows
-$elevation: map-get( $theme, elevation );
+$elevation: map-get( $theme, elevation ) !default;
 /// Shadow for switch.
 /// Equivalent to material elevation 1.
 /// @group shadows
@@ -169,8 +169,8 @@ $button-padding-x-sm: $button-padding-x / 2 !default;
 $button-padding-y-sm: $button-padding-y / 2 !default;
 $button-line-height-sm: $form-line-height-sm !default;
 
-$button-inner-calc-size: #{$button-line-height * 1em} + #{$button-padding-y * 2};
-$button-calc-size: #{$button-inner-calc-size} + #{$button-border-width * 2};
+$button-inner-calc-size: #{$button-line-height * 1em} + #{$button-padding-y * 2} !default;
+$button-calc-size: #{$button-inner-calc-size} + #{$button-border-width * 2} !default;
 
 
 // Inputs
@@ -188,8 +188,8 @@ $input-padding-x-sm: $input-padding-x / 2 !default;
 $input-padding-y-sm: $input-padding-y / 2 !default;
 $input-line-height-sm: $form-line-height-sm !default;
 
-$input-inner-calc-size: #{$input-line-height * 1em} + #{$input-padding-y * 2};
-$input-calc-size: #{$input-inner-calc-size} + #{$input-border-width * 2};
+$input-inner-calc-size: #{$input-line-height * 1em} + #{$input-padding-y * 2} !default;
+$input-calc-size: #{$input-inner-calc-size} + #{$input-border-width * 2} !default;
 
 $input-icon-offset: 4px !default;
 
@@ -260,8 +260,8 @@ $secondary-lighter: material-color($secondary-palette, lighter) !default;
 $secondary-contrast: material-color($secondary-palette, default-contrast) !default;
 
 // Aliases for backwards compatibility
-$accent: $primary;
-$accent-contrast: $primary-contrast;
+$accent: $primary !default;
+$accent-contrast: $primary-contrast !default;
 
 
 $body-bg: map-get($theme, body-bg) !default;
@@ -270,9 +270,9 @@ $app-bg: $body-bg !default;
 $app-text: $body-text !default;
 
 
-$component-bg: map-get($theme, component-bg);
-$component-text: map-get($theme, component-text);
-$component-border: map-get($theme, component-border);
+$component-bg: map-get($theme, component-bg) !default;
+$component-text: map-get($theme, component-text) !default;
+$component-border: map-get($theme, component-border) !default;
 
 
 $text-color: rgba(black, .87) !default;
@@ -496,9 +496,9 @@ $toolbar-separator-border: $widget-border !default;
 
 
 // Icon
-$icon-opacity: .54;
-$icon-hovered-opacity: .87;
-$icon-focused-opacity: .87;
+$icon-opacity: .54 !default;
+$icon-hovered-opacity: .87 !default;
+$icon-focused-opacity: .87 !default;
 
 // Input
 $input-bg: null !default;
@@ -893,8 +893,8 @@ $calendar-header-padding-x-sm: 0 !default;
 $calendar-header-padding-y-sm: $calendar-header-padding-y !default;
 $calendar-header-border-width: 0 !default;
 
-$calendar-content-padding-x: $calendar-header-padding-x;
-$calendar-content-padding-y: $calendar-header-padding-y;
+$calendar-content-padding-x: $calendar-header-padding-x !default;
+$calendar-content-padding-y: $calendar-header-padding-y !default;
 
 $calendar-cell-padding-x: .75em !default;
 $calendar-cell-padding-y: $calendar-cell-padding-x !default;
@@ -976,10 +976,10 @@ $calendar-cell-selected-focus-shadow: $calendar-cell-focused-shadow !default;
 $multiviewcalendar-button-style: detached !default;
 $multiviewcalendar-button-size: 40px !default;
 $multiviewcalendar-gap: ($calendar-content-padding-x * 2) !default;
-$multiviewcalendar-content-padding-x: ($multiviewcalendar-gap / 2);
-$multiviewcalendar-content-padding-y: 0;
-$multiviewcalendar-navigation-margin-x: 0;
-$multiviewcalendar-navigation-margin-y: #{add-three( 2 * $calendar-header-padding-y, $calendar-header-height, 2 * $button-border-width) };
+$multiviewcalendar-content-padding-x: ($multiviewcalendar-gap / 2) !default;
+$multiviewcalendar-content-padding-y: 0 !default;
+$multiviewcalendar-navigation-margin-x: 0 !default;
+$multiviewcalendar-navigation-margin-y: #{add-three( 2 * $calendar-header-padding-y, $calendar-header-height, 2 * $button-border-width) } !default;
 
 
 // Chat
@@ -1118,12 +1118,12 @@ $time-list-title-focus: null !default;
 
 $time-header-padding: null !default;
 
-$time-list-padding: $padding-y * 5;
-$time-list-focus-size: 2px;
+$time-list-padding: $padding-y * 5 !default;
+$time-list-focus-size: 2px !default;
 $time-list-width: 5em !default;
 $time-list-height: 200px !default;
 
-$datetime-width: add-two($calendar-cell-size * 8, $calendar-content-padding-x * 2);
+$datetime-width: add-two($calendar-cell-size * 8, $calendar-content-padding-x * 2) !default;
 
 
 // Dialog
@@ -1177,13 +1177,13 @@ $switch-handle-border-width: 0 !default;
 $switch-label-display: none !default;
 $switch-label-outer-spacing: 3px !default;
 $switch-label-inner-spacing: 2px !default;
-$switch-label-spacing: add-two($switch-label-outer-spacing, $switch-label-inner-spacing);
-$switch-label-occupied-space: add-three(-$switch-handle-size, -$switch-label-spacing, -$switch-container-padding-x);
+$switch-label-spacing: add-two($switch-label-outer-spacing, $switch-label-inner-spacing) !default;
+$switch-label-occupied-space: add-three(-$switch-handle-size, -$switch-label-spacing, -$switch-container-padding-x) !default;
 $switch-label-text-transform: null !default;
 
-$switch-label-position: add-two($switch-label-outer-spacing, -$switch-container-border-width);
-$switch-label-width: calc(100% + #{$switch-label-occupied-space});
-$switch-on-left-x: calc(100% - #{$switch-handle-size});
+$switch-label-position: add-two($switch-label-outer-spacing, -$switch-container-border-width) !default;
+$switch-label-width: calc(100% + #{$switch-label-occupied-space}) !default;
+$switch-on-left-x: calc(100% - #{$switch-handle-size}) !default;
 
 $switch-container-shadow: null !default;
 $switch-container-hovered-shadow: null !default;
@@ -1258,11 +1258,11 @@ $scheduler-event-line-height: calc(#{$scheduler-event-min-height} - (2 * #{$padd
 
 $scheduler-event-selected-box-shadow: $box-shadow-depth-3 !default;
 
-$scheduler-cell-height: $line-height * 1rem;
-$scheduler-datecolumn-width: 12rem;
-$scheduler-timecolumn-width: 11rem;
+$scheduler-cell-height: $line-height * 1rem !default;
+$scheduler-datecolumn-width: 12rem !default;
+$scheduler-timecolumn-width: 11rem !default;
 
-$scheduler-current-time-color: #ff0000;
+$scheduler-current-time-color: #ff0000 !default;
 
 $scheduler-nonwork-bg: mix( $panel-text, $panel-bg, 3% ) !default;
 
@@ -1286,22 +1286,22 @@ $pdf-viewer-page-shadow: 0 0 ($pdf-viewer-page-spacing / 2) $pdf-viewer-page-bor
 
 // Adaptive Common
 $adaptive-content-bg: $base-bg !default;
-$adaptive-content-text: $accent;
+$adaptive-content-text: $accent !default;
 
-$adaptive-menu-bg: $accent;
-$adaptive-menu-text: white;
+$adaptive-menu-bg: $accent !default;
+$adaptive-menu-text: white !default;
 
-$adaptive-menu-clear-text: $accent;
+$adaptive-menu-clear-text: $accent !default;
 
-$adaptive-menu-item-border: $grid-border;
-$adaptive-menu-title-text: $base-text;
+$adaptive-menu-item-border: $grid-border !default;
+$adaptive-menu-title-text: $base-text !default;
 
 // Adaptive Grid
-$adaptive-grid-sort-text: $accent;
+$adaptive-grid-sort-text: $accent !default;
 
 // Adaptive Scheduler
-$adaptive-scheduler-current-text: $accent;
-$adaptive-scheduler-base-text: inherit;
+$adaptive-scheduler-current-text: $accent !default;
+$adaptive-scheduler-base-text: inherit !default;
 
 
 // Drawer
