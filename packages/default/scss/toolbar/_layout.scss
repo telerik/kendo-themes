@@ -16,7 +16,7 @@
 
         &::before {
             content: "";
-            height: calc(#{$toolbar-button-calc-size});
+            height: $toolbar-button-calc-size;
         }
 
         &.k-toolbar-resizable {
@@ -93,16 +93,14 @@
         }
 
         // Dropdowns and Inputs
-        // TODO unselect if necessary after the design for inputs in toolbar is completed
-        //.k-autocomplete,
-        //.k-dateinput-wrap,
-        //.k-multiselect-wrap,
-        //.k-numeric-wrap,
+        // .k-autocomplete,
+        // .k-dateinput-wrap,
+        // .k-multiselect-wrap,
+        // .k-numeric-wrap,
         .k-picker-wrap,
         .k-dropdown-wrap {
-
             &::before {
-                @extend .k-button::before;
+                @extend .k-button-overlay;
             }
         }
 
@@ -111,7 +109,7 @@
         .k-overflow-anchor {
             @include border-radius( 0 );
             padding: $toolbar-padding-y;
-            width: calc( #{$toolbar-inner-calc-size} );
+            width: $toolbar-inner-calc-size;
             height: 100%;
             margin: 0;
             border-width: 0 0 0 1px;
@@ -131,7 +129,7 @@
 
         // Separator
         .k-separator {
-            @extend %hr-vertical;
+            @extend %hr-vertical !optional;
             margin: 0 $toolbar-spacing;
             height: $line-height-em;
 

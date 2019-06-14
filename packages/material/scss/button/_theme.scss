@@ -3,7 +3,7 @@ $button-disabled-text: rgba(0, 0, 0, .38) !default;
 
 @include exports("button/theme") {
 
-    $not-button-selector: ".k-flat, .k-bare, .k-outline, .k-overflow-button";
+    $not-button-selector: ":not(.k-flat):not(.k-bare):not(.k-outline):not(.k-overflow-button)";
 
     // Default button
     .k-button {
@@ -35,7 +35,7 @@ $button-disabled-text: rgba(0, 0, 0, .38) !default;
 
     }
 
-    .k-button:not(#{$not-button-selector}).k-state-disabled {
+    .k-button#{$not-button-selector}.k-state-disabled {
         background-color: $button-disabled-bg;
         box-shadow: none !important; // sass-lint:disable-line no-important
 
@@ -52,8 +52,7 @@ $button-disabled-text: rgba(0, 0, 0, .38) !default;
 
 
     // Variant buttons
-    .k-button.k-flat.k-primary,
-    .k-button.k-bare.k-primary,
+    .k-button-flat.k-primary,
     .k-button.k-outline.k-primary {
 
         &,
@@ -91,7 +90,7 @@ $button-disabled-text: rgba(0, 0, 0, .38) !default;
         .k-button {
             color: $button-disabled-text;
         }
-        .k-button:not(#{$not-button-selector}) {
+        .k-button#{$not-button-selector} {
             background-color: $button-disabled-bg;
         }
     }

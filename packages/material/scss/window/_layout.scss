@@ -23,10 +23,8 @@
     .k-edit-buttons,
     .k-edit-field {
         .k-button {
-            @extend .k-button.k-flat;
+            @extend .k-button-flat;
         }
     }
-
-
 
 }

@@ -21,8 +21,8 @@
 
         // Icon button
         .k-button-icon {
-            height: calc( #{$toolbar-inner-calc-size} );
-            width: calc( #{$toolbar-inner-calc-size} );
+            height: $toolbar-inner-calc-size;
+            width: $toolbar-inner-calc-size;
         }
 
         // Split button
@@ -71,7 +71,7 @@
 
             .k-input {
                 padding: $toolbar-button-padding-y $toolbar-button-padding-x;
-                height: calc( #{$toolbar-inner-calc-size} );
+                height: $toolbar-inner-calc-size;
             }
 
             .k-select {
@@ -86,7 +86,7 @@
         .k-colorpicker .k-tool-icon {
             padding-top: $toolbar-button-padding-y;
             padding-bottom: $toolbar-button-padding-y;
-            height: calc( #{$toolbar-inner-calc-size} );
+            height: $toolbar-inner-calc-size;
 
             .k-selected-color {
                 margin: 0 0 12px;

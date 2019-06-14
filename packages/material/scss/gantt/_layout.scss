@@ -9,7 +9,7 @@
     .k-gantt-toolbar {
 
         .k-button {
-            @extend .k-button.k-flat;
+            @extend .k-button-flat;
             padding: $toolbar-button-padding-y $toolbar-button-padding-x;
         }
     }
@@ -25,14 +25,14 @@
             background: none;
         }
         li a {
-            @extend .k-button.k-flat;
+            @extend .k-button-flat;
             padding: $toolbar-button-padding-y $toolbar-button-padding-x;
             display: flex;
             align-items: center;
             position: relative;
         }
         li a::before {
-            @extend .k-button::before;
+            @extend .k-button-overlay;
             display: block;
         }
         li.k-state-selected a::before {

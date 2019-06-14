@@ -21,7 +21,7 @@
 
             .k-input {
                 padding: $toolbar-button-padding-y $toolbar-button-padding-x;
-                height: calc( #{$toolbar-inner-calc-size} );
+                height: $toolbar-inner-calc-size;
             }
 
             .k-select {
@@ -30,7 +30,7 @@
             }
 
             &::before {
-                @extend .k-button::before;
+                @extend .k-button-overlay;
             }
         }
         .k-colorpicker .k-selected-color {
@@ -40,7 +40,7 @@
         .k-colorpicker .k-tool-icon {
             padding-top: $toolbar-button-padding-y;
             padding-bottom: $toolbar-button-padding-y;
-            height: calc( #{$toolbar-inner-calc-size} );
+            height: $toolbar-inner-calc-size;
 
             .k-selected-color {
                 margin: 0 0 12px;

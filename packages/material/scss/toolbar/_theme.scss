@@ -73,7 +73,7 @@
                 }
 
                 .k-button {
-                    @extend .k-button.k-flat;
+                    @extend .k-button-flat;
                     color: $button-disabled-text;
                 }
 

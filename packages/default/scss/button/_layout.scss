@@ -203,8 +203,7 @@
 
 
     // Flat button and bare
-    .k-button.k-flat,
-    .k-button.k-bare {
+    .k-button-flat {
         border-color: transparent !important; // sass-lint:disable-line no-important
         color: inherit;
         background: none !important; // sass-lint:disable-line no-important
@@ -223,6 +222,10 @@
         &::before {
             display: block;
         }
+    }
+    .k-button.k-flat,
+    .k-button.k-bare {
+        @extend .k-button-flat;
     }
 
 
@@ -283,25 +286,30 @@
 
 
 
-@include exports( "button/layout/thin-background" ) {
+@include exports( "button/layout/overlay" ) {
 
-    // Thin background
+    // Button overlay
+    .k-button-overlay {
+        @include border-radius(inherit);
+        content: "";
+        background: currentColor;
+        opacity: 0;
+        display: none;
+        pointer-events: none;
+        position: absolute;
+        left: -$button-border-width;
+        right: -$button-border-width;
+        top: -$button-border-width;
+        bottom: -$button-border-width;
+        z-index: 0;
+        transition: opacity .2s ease-in-out;
+    }
+
+
     .k-button {
 
         &::before {
-            @include border-radius(inherit);
-            content: "";
-            background: currentColor;
-            opacity: 0;
-            display: none;
-            pointer-events: none;
-            position: absolute;
-            left: -$button-border-width;
-            right: -$button-border-width;
-            top: -$button-border-width;
-            bottom: -$button-border-width;
-            z-index: 0;
-            transition: opacity .2s ease-in-out;
+            @extend .k-button-overlay;
         }
 
         // Hovered state
