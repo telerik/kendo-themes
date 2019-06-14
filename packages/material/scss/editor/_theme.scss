@@ -24,11 +24,11 @@
         @include appearance( toolbar );
 
         a.k-tool {
-            @extend .k-button.k-flat;
+            @extend .k-button-flat;
             @include border-radius( 0 );
 
             &::before {
-                @extend .k-button::before;
+                @extend .k-button-overlay;
             }
         }
 
@@ -41,8 +41,8 @@
     // Overflow anchor
     .k-editor-toolbar .k-overflow-anchor {
         padding: $toolbar-padding-y;
-        width: calc( #{$toolbar-inner-calc-size} );
-        height: calc( #{$toolbar-inner-calc-size} );
+        width: $toolbar-inner-calc-size;
+        height: $toolbar-inner-calc-size;
     }
 
     .k-editor-dialog {

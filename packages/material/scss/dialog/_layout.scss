@@ -12,12 +12,9 @@
     .k-dialog-buttongroup {
 
         .k-button {
-            @extend .k-button.k-flat;
+            @extend .k-button-flat;
             padding: $dialog-stretched-button-padding-y $dialog-stretched-button-padding-x;
             min-width: 64px;
-        }
-        .k-button.k-primary {
-            @extend .k-button.k-primary.k-flat;
         }
     }
 

@@ -520,7 +520,7 @@
             &:not(.k-calendar-minimal) {
                 @if $multiviewcalendar-button-style == stretched {
                     > .k-button {
-                        @extend .k-flat;
+                        @extend .k-button-flat;
                         border-radius: 0;
                         width: $multiviewcalendar-button-size;
                     }
@@ -574,7 +574,7 @@
             }
 
             > .k-button {
-                @extend .k-bare;
+                @extend .k-button-flat;
                 width: auto;
                 height: auto;
                 opacity: .6;

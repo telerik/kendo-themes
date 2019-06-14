@@ -64,8 +64,8 @@
     // Overflow anchor
     .k-editor-toolbar .k-overflow-anchor {
         padding: $toolbar-padding-y;
-        width: calc( #{$toolbar-inner-calc-size} );
-        height: calc( #{$toolbar-inner-calc-size} );
+        width: $toolbar-inner-calc-size;
+        height: $toolbar-inner-calc-size;
     }
 
     .k-editor-dialog {

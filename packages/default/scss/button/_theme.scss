@@ -227,8 +227,7 @@
 @include exports( "flat-button/theme" ) {
 
     // Flat button
-    .k-button.k-flat,
-    .k-button.k-bare {
+    .k-button-flat {
 
         // Explicitly exclude flat button from button group styling
         &,
@@ -250,8 +249,7 @@
             }
         }
     }
-    .k-button.k-primary.k-flat,
-    .k-button.k-primary.k-bare {
+    .k-button-flat.k-primary {
 
         // Explicitly exclude flat button from button group styling
         &,

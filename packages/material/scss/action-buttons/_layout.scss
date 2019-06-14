@@ -11,7 +11,7 @@
         clear: both;
 
         .k-button {
-            @extend .k-button.k-flat;
+            @extend .k-button-flat;
             border-radius: $border-radius;
             flex: 0 1 auto;
             align-self: center;

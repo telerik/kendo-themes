@@ -31,7 +31,7 @@
     $grid-sorted-icon-spacing: add-two($padding-x, -1px) !default;
 
     // helper variables
-    $grid-filterable-icon-spacing: calc(#{ button-size() } + #{ $grid-header-menu-icon-spacing });
+    $grid-filterable-icon-spacing: calc( #{ button-size() } + #{ $grid-header-menu-icon-spacing } );
     $default-scrollbar-width: 17px;
 
     .k-grid {
@@ -498,7 +498,7 @@
             width: $grid-group-dropclue-line-size;
             height: calc(100% - #{$grid-group-dropclue-size});
             top: $grid-group-dropclue-size;
-            left: calc(#{$grid-group-dropclue-size} - (#{$grid-group-dropclue-line-size} / 2));
+            left: calc( #{$grid-group-dropclue-size} - (#{$grid-group-dropclue-line-size} / 2) );
         }
     }
 
