@@ -1,24 +1,4 @@
-$checkbox-size: $icon-size !default;
-
 @include exports( "input/layout" ) {
-
-    $checkbox-radius: $border-radius !default;
-    $radio-radius: 50% !default;
-    $textbox-shadow: 0 2px 2px 1px rgba(0, 0, 0, .06) !default;
-    $fieldset-margin: 30px;
-    $checkbox-border-width: 1px !default;
-    $checkbox-line-height: $checkbox-size + $checkbox-border-width !default;
-    $checkbox-indeterminate-style: square !default;
-    $checkbox-dash-height: $checkbox-size / 10 !default;
-    $checkbox-dash-width: $checkbox-size - ( $checkbox-border-width * 4 ) !default;
-    $checkbox-dash-offset-x: $checkbox-border-width * 2 !default;
-    $checkbox-dash-offset-y: ( $checkbox-size - $checkbox-dash-height ) / 2 !default;
-
-    $textbox-font-size: $font-size !default;
-    $textbox-line-height: $form-line-height-em !default;
-    // TODO: legacy, consider switching to 100%
-    $textbox-default-width: $input-default-width !default;
-    $textarea-default-width: 18em !default;
 
     .k-textbox,
     .k-input.k-textbox,
@@ -96,12 +76,6 @@ $checkbox-size: $icon-size !default;
         }
     }
 
-
-    // input container / floating label
-    $floating-label-transition: .2s ease-out !default;
-    $floating-label-scale: .75 !default;
-    $floating-label-height: $textbox-line-height * $floating-label-scale;
-
     .k-textbox-container {
         position: relative;
         padding-top: $floating-label-height;
@@ -174,6 +148,31 @@ $checkbox-size: $icon-size !default;
                             translate($half-scale-percent, $fls * $half-scale-percent)
                             scale($floating-label-scale);
                 // sass-lint:enable indentation
+            }
+        }
+    }
+
+
+    // Textbox with icon styles
+
+    .k-input-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $textbox-icon-width;
+
+        .k-ie9 & {
+            position: absolute;
+            height: 100%;
+            right: 0;
+            top: 0;
+        }
+
+        .k-rtl &,
+        [dir="rtl"] & {
+            .k-ie9 & {
+                left: 0;
+                right: auto;
             }
         }
     }
@@ -359,9 +358,6 @@ $checkbox-size: $icon-size !default;
         }
     }
 
-    // Forms
-    $form-spacer: $padding-x * 2 !default;
-
     .k-form,
     .k-form-inline {
         font-size: $font-size;
@@ -447,7 +443,6 @@ $checkbox-size: $icon-size !default;
     }
 
     .k-form-inline {
-        $inline-form-element-width: 25% !default;
 
         .k-form-field {
             display: flex;
