@@ -74,24 +74,6 @@
     }
 }
 
-$checkbox-bg: $input-bg !default;
-$checkbox-border: rgba(0, 0, 0, .54) !default;
-$checkbox-checked-bg: $primary !default;
-$checkbox-checked-border: $checkbox-checked-bg !default;
-$checkbox-checked-text: $primary-contrast !default;
-
-$checkbox-focused-border: $checkbox-border !default;
-$checkbox-focused-shadow: none !default;
-$checkbox-focused-checked-shadow: none !default;
-$checkbox-focused-checked-border: $primary !default;
-$checkbox-disabled-bg: #b0b0b0 !default;
-
-$radio-bg: $input-bg !default;
-$radio-border: $checkbox-border !default;
-$radio-checked-bg: $primary-contrast !default;
-$radio-checked-border: $primary !default;
-$radio-checked-text: $radio-checked-border !default;
-
 @include exports("input/theme/checkbox-radiobutton") {
 
     .k-radio + .k-radio-label {

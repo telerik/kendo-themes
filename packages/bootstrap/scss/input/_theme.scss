@@ -1,22 +1,5 @@
 @include exports("input/theme") {
 
-    $radio-bg: lighten($input-border, 6.7) !default;
-    $radio-border: $radio-bg !default;
-    $radio-hovered-border: $input-hovered-border !default;
-    $radio-checked-bg: $accent !default;
-    $radio-checked-text: $accent-contrast !default;
-
-    $checkbox-bg: lighten($input-border, 6.7) !default;
-    $checkbox-border: $checkbox-bg !default;
-    $checkbox-hovered-border: $input-hovered-border !default;
-    $checkbox-checked-bg: $accent !default;
-    $checkbox-checked-border: $accent !default;
-    $checkbox-checked-text: $accent-contrast !default;
-
-    $focused-checked-shadow: 0 0 0 1px $panel-bg, 0 0 0 3px $accent !default;
-
-    $fieldset-font-size: $h4-font-size;
-
     // Input, Textbox, Textarea
     .k-textbox,
     .k-textarea,

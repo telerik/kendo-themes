@@ -323,6 +323,10 @@
                 margin-left: $icon-size / 2;
                 margin-right: add-two(-1 * $cell-padding-x, $icon-size / 2);
             }
+
+            .k-grid-search {
+                float: left;
+            }
         }
 
         .k-tooltip.k-tooltip-validation {
@@ -360,6 +364,11 @@
             visibility: hidden;
             height: 1px;
             bottom: 1px; // fix for vertical scrollbar appearing when no records template is displayed
+        }
+
+        .k-grid-search {
+            width: $grid-search-width;
+            float: right;
         }
     }
 
