@@ -1,1 +1,18 @@
 @import "~@progress/kendo-theme-default/scss/popup/layout";
+
+@include exports("popup/layout/bootstrap") {
+
+    $frozen-grouping-header-border-width: 2px !default;
+
+    .k-popup {
+        .k-outer-group-header {
+            font-size: $font-size-sm;
+
+            &.k-first {
+                border-bottom-width: $frozen-grouping-header-border-width;
+                border-bottom-style: solid;
+                border-color: $grouping-border;
+            }
+        }
+    }
+}
