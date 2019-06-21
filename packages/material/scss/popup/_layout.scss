@@ -9,6 +9,7 @@ $popup-filter-padding-x: $padding-x;
 @include exports("popup/layout/material") {
 
     .k-popup {
+        line-height: $line-height-lg;
 
         .k-group-header {
             text-transform: uppercase;
