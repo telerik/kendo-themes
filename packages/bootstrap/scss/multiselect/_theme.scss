@@ -5,6 +5,10 @@
         @include appearance( input );
         transition: $transition;
 
+        > .k-readonly {
+            opacity: .6;
+        }
+
         &:hover,
         .k-state-hover > & {
             @include appearance( hovered-input );
