@@ -1,20 +1,11 @@
 @include exports("multiselect/theme") {
-    $multiselect-token-opacity: .07 !default;
-    $multiselect-token-focused-opacity: .46 !default;
-    $multiselect-token-focused-text: $base-bg !default;
-    $multiselect-token-focused-bg: $base-text !default;
-    $multiselect-token-disabled-text: rgba( $base-text, .42 ) !default;
-    $multiselect-token-hover-text: $base-bg !default;
-    $multiselect-token-hover-bg: rgba( $base-text, .54 ) !default;
-    $multiselect-remove-color: $base-bg !default;
-    $multiselect-remove-bg: rgba( $base-text, .4 ) !default;
-    $multiselect-remove-hover-color: $multiselect-remove-color !default;
-    $multiselect-remove-hover-bg: rgba( $base-text, .54 ) !default;
-    $multiselect-remove-focused-color: rgba( $base-text, .54 ) !default;
-    $multiselect-remove-focused-bg: rgba($base-bg, .93) !default;
 
     .k-multiselect-wrap {
         min-height: 0;
+
+        > .k-readonly {
+            opacity: .6;
+        }
 
         .k-button {
             min-height: $form-line-height-em;
@@ -42,7 +33,7 @@
                 }
 
                 .k-select {
-                    color: $multiselect-remove-focused-color;
+                    color: $multiselect-remove-focused-text;
                     background: $multiselect-remove-focused-bg;
                 }
             }
@@ -67,7 +58,7 @@
             .k-select {
                 border-radius: 50%;
                 background-color: $multiselect-remove-bg;
-                color: $multiselect-remove-color;
+                color: $multiselect-remove-text;
                 margin-left: .5em;
                 margin-right: -.2em;
 
@@ -79,7 +70,7 @@
 
                 &:hover {
                     background-color: $multiselect-remove-hover-bg;
-                    color: $multiselect-remove-hover-color;
+                    color: $multiselect-remove-hover-text;
                 }
             }
         }

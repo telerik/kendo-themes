@@ -1182,6 +1182,22 @@ $window-sizes: map-merge((
 ), $window-sizes);
 
 
+// Multiselect
+$multiselect-token-opacity: .07 !default;
+$multiselect-token-focused-opacity: .46 !default;
+$multiselect-token-focused-text: $base-bg !default;
+$multiselect-token-focused-bg: $base-text !default;
+$multiselect-token-disabled-text: rgba( $base-text, .42 ) !default;
+$multiselect-token-hover-text: $base-bg !default;
+$multiselect-token-hover-bg: rgba( $base-text, .54 ) !default;
+$multiselect-remove-text: $base-bg !default;
+$multiselect-remove-bg: rgba( $base-text, .4 ) !default;
+$multiselect-remove-hover-text: $multiselect-remove-text !default;
+$multiselect-remove-hover-bg: rgba( $base-text, .54 ) !default;
+$multiselect-remove-focused-text: rgba( $base-text, .54 ) !default;
+$multiselect-remove-focused-bg: rgba($base-bg, .93) !default;
+
+
 // DateTime
 
 $time-list-highlight-color: null !default;
