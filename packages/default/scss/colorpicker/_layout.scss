@@ -286,15 +286,12 @@
         }
     }
 
-    [dir="rtl"].k-flatcolorpicker {
+    .k-rtl,
+    [dir="rtl"] {
 
-        .k-hue-slider.k-alpha-slider,
-        .k-transparency-slider.k-alpha-slider,
+        .k-alpha-slider.k-slider-vertical,
         .k-hue-slider.k-slider-vertical {
             margin-right: ($colorpicker-margin * 1.5);
-        }
-
-        .k-slider-vertical {
             margin-left: 0;
         }
     }
