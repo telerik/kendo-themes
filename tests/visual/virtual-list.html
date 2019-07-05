@@ -23,6 +23,8 @@
         .k-virtual-content > .k-virtual-list > .k-virtual-item,
         .k-first.k-virtual-item {
             position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
             height: 28px;
         }
     </style>
@@ -32,10 +34,10 @@
 
     <div id="test-area" class="grid">
 
-        <kendo-popup class="k-animation-container k-animation-container-shown" style="min-width: 174px; width: 174px;">
+        <kendo-popup class="k-animation-container k-animation-container-shown" style="width: 174px;">
             <div class="k-popup k-list-container k-reset">
                 <kendo-list>
-                    <div class="k-outer-group-header k-first k-virtual-item" style="overflow: hidden;box-sizing: border-box;">
+                    <div class="k-outer-group-header k-first k-virtual-item">
                         <strong class="upper">technical support</strong>
                     </div>
                     <div class="k-virtual-content" style="height: 350px;">
