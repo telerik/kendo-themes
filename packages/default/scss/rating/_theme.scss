@@ -1,0 +1,37 @@
+@include exports("rating/theme") {
+    .k-rating {
+        &:focus,
+        &.k-state-focused {
+
+            .k-rating-item {
+                > .k-icon {
+                    text-shadow: $rating-icon-focused-shadow;
+                }
+
+                &.k-state-selected > .k-icon {
+                    text-shadow: $rating-icon-focused-selected-shadow;
+                }
+            }
+        }
+    }
+
+    .k-rating-item {
+        color: $rating-icon-text;
+
+        &.k-state-selected {
+            color: $rating-icon-selected-text;
+        }
+
+        &:hover,
+        &.k-state-hover {
+            color: $rating-icon-hover-text;
+            cursor: pointer;
+        }
+
+        &:focus,
+        &.k-state-focused {
+            color: $rating-icon-focused-text;
+        }
+    }
+}
+

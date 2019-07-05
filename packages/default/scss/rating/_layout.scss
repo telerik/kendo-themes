@@ -1,0 +1,69 @@
+@include exports("rating/layout") {
+    .k-rating {
+        display: inline-flex;
+        box-sizing: border-box;
+        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+    }
+
+    .k-rating-container {
+        flex: 0 0 auto;
+        position: relative;
+        box-sizing: border-box;
+
+        .k-rating-item {
+            display: inline-flex;
+            position: relative;
+            padding: $rating-item-padding-y $rating-item-padding-x;
+            align-items: center;
+            vertical-align: middle;
+            margin: 0;
+            outline: 0;
+            overflow: hidden;
+            transition: color 200ms ease-out 0s;
+
+            * {
+                pointer-events: none;
+            }
+
+            .k-icon {
+                font-size: $rating-icon-size;
+            }
+
+            .k-rating-precision-part {
+                display: flex;
+                position: absolute;
+                top: $rating-item-padding-y;
+                left: $rating-item-padding-x;
+                overflow: hidden;
+
+                .k-ie9 & {
+                    top: auto;
+                }
+            }
+
+            .k-ie9 & {
+                vertical-align: auto;
+            }
+        }
+    }
+
+    .k-rating-label {
+        display: inline-flex;
+        align-items: center;
+        vertical-align: middle;
+        line-height: $rating-label-line-height;
+        margin: $rating-label-margin-y $rating-label-margin-x;
+    }
+
+    .k-rtl,
+    [dir="rtl"] {
+        .k-rating-precision-part  {
+            left: auto;
+            right: $rating-item-padding-x;
+        }
+    }
+}
