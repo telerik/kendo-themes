@@ -24,10 +24,10 @@ $split-button-arrow-border-width: 1px;
         border: $outline-button-border-width solid currentColor;
 
         &:not(.k-button-icon) {
-            padding-top: add-two( $button-padding-y, -$outline-button-border-width );
-            padding-bottom: add-two( $button-padding-y, -$outline-button-border-width );
-            padding-left: add-two( $button-padding-x, -$outline-button-border-width );
-            padding-right: add-two( $button-padding-x, -$outline-button-border-width );
+            padding-top: calc( #{$button-padding-y} - #{$outline-button-border-width} );
+            padding-bottom: calc( #{$button-padding-y} - #{$outline-button-border-width} );
+            padding-left: calc( #{$button-padding-x} - #{$outline-button-border-width} );
+            padding-right: calc( #{$button-padding-x} - #{$outline-button-border-width} );
         }
     }
 

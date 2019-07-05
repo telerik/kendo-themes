@@ -30,7 +30,7 @@
         }
 
         > .k-label {
-            left: add-two($textarea-padding-x, $input-border-width);
+            left: calc( #{$textarea-padding-x } + #{$input-border-width} );
         }
 
         &::after {
@@ -43,7 +43,7 @@
             &.k-textarea-wrapper {
                 > .k-label {
                     left: auto;
-                    right: add-two($textarea-padding-x, $input-border-width);
+                    right: calc( #{$textarea-padding-x } + #{$input-border-width} );
                 }
             }
         }

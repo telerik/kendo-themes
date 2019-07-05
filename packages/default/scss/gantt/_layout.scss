@@ -14,13 +14,13 @@
             vertical-align: top;
         }
         .k-grid-header tr {
-            height: add-three( $line-height-em, 2 * $grid-header-padding-y, 1px );
+            height: calc( #{$line-height-em} + #{$grid-header-padding-y * 2} + 1px );
         }
         .k-grid-header .k-header {
             position: static;
         }
         .k-grid-content tr {
-            height: add-three( $line-height-em, 2 * $grid-cell-padding-y, $grid-cell-horizontal-border-width );
+            height: calc( #{$line-height-em} + #{$grid-cell-padding-y * 2} + #{$grid-cell-horizontal-border-width} );
         }
 
 
@@ -138,7 +138,7 @@
             padding: 0 !important; // sass-lint:disable-line no-important
         }
         .k-grid-header tr {
-            height: add-three( 2 * $line-height-em, 4 * $grid-header-padding-y, 2px );
+            height: calc( #{$line-height-em * 2} + #{$grid-header-padding-y * 4} + 2px );
             vertical-align: bottom;
         }
         .k-grid-content {

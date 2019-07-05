@@ -62,8 +62,8 @@
     // Navigator
     .k-navigator {
         margin: $spacer-x;
-        width: add-two( (3 * $icon-size), $map-navigator-padding );
-        height: add-two( (3 * $icon-size), $map-navigator-padding );
+        width: calc( #{$icon-size * 3} + #{$map-navigator-padding} );
+        height: calc( #{$icon-size * 3} + #{$map-navigator-padding} );
         box-sizing: content-box;
         border-radius: 50%;
         position: relative;

@@ -159,7 +159,7 @@
         .k-form-field {
             > span:not(.k-widget),
             > label:not(.k-checkbox-label):not(.k-radio-label) {
-                padding: add-two($padding-y, -$input-border-width) 0;
+                padding: calc( #{$padding-y} - #{$input-border-width} ) 0;
                 padding-right: $padding-x;
             }
         }
