@@ -20,9 +20,37 @@
 </head>
 <body>
 
-    <div id="test-area" class="grid">
-
-            <section>
+        <div id="test-area" class="grid">
+            <section class="k-rtl">
+                <p>jQuery ColorGradient RTL</p>
+                <div class="k-widget k-flatcolorpicker">
+                    <div class="k-selected-color">
+                        <div class="k-selected-color-display" style="background-color: green">
+                            <div class="k-color-input">
+                                <input class="k-color-value" value="rgba(0, 0, 0, 0.53)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="k-hsv-rectangle" style="background-color: green">
+                        <div class="k-hsv-gradient"></div>
+                        <div class="k-draghandle" style="left: 100px; top: 100px;"></div>
+                    </div>
+                    <div class="k-widget k-slider k-slider-horizontal k-hue-slider k-state-default">
+                        <div class="k-slider-wrap">
+                            <div class="k-slider-track" style="width: 100%;">
+                                <div class="k-slider-selection" style="width: 66px;"><!-- --></div>
+                                <a class="k-draghandle" style="left: 59px;"></a>
+                            </div>
+                            <input class="k-hue-slider" style="display: none;">
+                        </div>
+                    </div>
+                    <div class="k-controls">
+                        <button class="k-button k-primary apply">Apply</button>
+                        <button class="k-button cancel">Cancel</button>
+                    </div>
+                </div>
+            </section>
+            <section class="k-rtl">
                 <p>Angular ColorGradient RTL</p>
                 <kendo-colorgradient class="k-widget k-flatcolorpicker" dir="rtl">
                     <div class="k-hsv-wrap k-horizontal">
@@ -35,7 +63,7 @@
                             <div class="k-slider-wrap" style="position: relative;">
                             <div class="k-slider-track" style="height: 180px;">
                                 <div class="k-slider-selection" style="transition: none 0s ease 0s; height: 0px;"></div>
-                                <a class="k-draghandle" title="Drag" style="transition: none 0s ease 0s; bottom: -8px;">Drag</a>
+                                <a class="k-draghandle" title="Drag" style="transition: none 0s ease 0s; bottom: -8px;"></a>
                             </div>
 
                                 <div>
@@ -54,7 +82,7 @@
                                 <div class="k-slider-track" style="height: 180px;">
                                     <div class="k-slider-selection" style="transition: none 0s ease 0s; height: 180px;">
                                 </div>
-                                <a class="k-draghandle" title="Drag" style="transition: none 0s ease 0s; bottom: 172px;">Drag</a>
+                                <a class="k-draghandle" title="Drag" style="transition: none 0s ease 0s; bottom: 172px;"></a>
                             </div>
 
                             <div>
@@ -88,7 +116,95 @@
                 </kendo-colorgradient>
             </section>
 
-    </div>
+            <section class="k-rtl">
+                <p>jQuery ColorPalette RTL</p>
+                <div class="k-widget k-colorpalette">
+                    <table class="k-palette k-reset">
+                        <tbody>
+                            <tr>
+                                <td class="k-item" style="background-color:#000000"></td>
+                                <td class="k-item" style="background-color:#7f7f7f"></td>
+                                <td class="k-item" style="background-color:#880015"></td>
+                                <td class="k-item" style="background-color:#ed1c24"></td>
+                                <td class="k-item" style="background-color:#ff7f27"></td>
+                                <td class="k-item" style="background-color:#fff200"></td>
+                                <td class="k-item" style="background-color:#22b14c"></td>
+                                <td class="k-item" style="background-color:#00a2e8"></td>
+                                <td class="k-item" style="background-color:#3f48cc"></td>
+                                <td class="k-item" style="background-color:#a349a4"></td>
+                            </tr>
+                            <tr>
+                                <td class="k-item" style="background-color:#ffffff"></td>
+                                <td class="k-item" style="background-color:#c3c3c3"></td>
+                                <td class="k-item" style="background-color:#b97a57"></td>
+                                <td class="k-item" style="background-color:#ffaec9"></td>
+                                <td class="k-item" style="background-color:#ffc90e"></td>
+                                <td class="k-item" style="background-color:#efe4b0"></td>
+                                <td class="k-item" style="background-color:#b5e61d"></td>
+                                <td class="k-item" style="background-color:#99d9ea"></td>
+                                <td class="k-item" style="background-color:#7092be"></td>
+                                <td class="k-item" style="background-color:#c8bfe7"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="k-rtl">
+                <p>Angular ColorPalette RTL</p>
+                <div value="#ffcc33" class="k-widget k-colorpalette" dir="rtl">
+                    <div role="grid">
+                        <table class="k-palette k-reset" role="presentation">
+                            <tbody>
+                                <tr role="row">
+                                    <td class="k-item" value="#000000" style="background-color: rgb(0, 0, 0);">
+                                    </td><td class="k-item k-state-hover" value="#1a1a1a" style="background-color: rgb(26, 26, 26);">
+                                    </td><td class="k-item" value="#333333" style="background-color: rgb(51, 51, 51);">
+                                    </td><td class="k-item k-state-selected" value="#4d4d4d" style="background-color: rgb(77, 77, 77);">
+                                    </td><td class="k-item" value="#666666" style="background-color: rgb(102, 102, 102);">
+                                    </td><td class="k-item k-state-focused" value="#808080" style="background-color: rgb(128, 128, 128);">
+                                    </td><td class="k-item" value="#999999" style="background-color: rgb(153, 153, 153);">
+                                    </td><td class="k-item" value="#b3b3b3" style="background-color: rgb(179, 179, 179);">
+                                    </td><td class="k-item" value="#cccccc" style="background-color: rgb(204, 204, 204);">
+                                    </td><td class="k-item" value="#e6e6e6" style="background-color: rgb(230, 230, 230);">
+                                    </td><td class="k-item" value="#f2f2f2" style="background-color: rgb(242, 242, 242);">
+                                    </td><td class="k-item" value="#ffffff" style="background-color: rgb(255, 255, 255);">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </section>
+
+                <section class="k-rtl">
+                    <p>jQuery ColorPicker RTL</p>
+                    <span class="k-widget k-colorpicker k-header">
+                        <span class="k-picker-wrap k-state-default">
+                            <span class="k-selected-color" style="background-color: #000000;">
+                                <span class="k-icon k-i-line" style="display: none;"></span>
+                            </span>
+                            <span class="k-select">
+                                <span class="k-icon k-i-arrow-60-down"></span>
+                            </span>
+                        </span>
+                        <input type="color" style="display: none;">
+                    </span>
+                </section>
+
+                <section class="k-rtl">
+                    <p>Angular ColorPicker RTL</p>
+                    <kendo-colorpicker class="k-widget k-colorpicker" dir="rtl">
+                        <span class="k-picker-wrap k-state-default">
+                            <span class="k-selected-color" style="background-color: rgb(254, 65, 59);"></span>
+                        <span class="k-select">
+                            <span class="k-icon k-i-arrow-s"></span>
+                            </span>
+                        </span>
+                    </kendo-colorpicker>
+                </section>
+
+            </div>
 
 </body>
 </html>
