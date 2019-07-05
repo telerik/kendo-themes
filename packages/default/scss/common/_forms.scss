@@ -310,6 +310,8 @@ $forms-invalid-color: $error !default;
             width: 100%;
             box-sizing: border-box;
             overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
             white-space: nowrap;
         }
     }

@@ -69,6 +69,11 @@ $popup-filter-padding-x: $input-padding-x !default;
         font-size: $popup-header-font-size;
         color: $popup-header-text;
         white-space: normal;
+
+        &.k-virtual-item {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
     }
 
     .k-popup > .k-colorpalette,

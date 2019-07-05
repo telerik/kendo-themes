@@ -12,6 +12,11 @@
             font-size: $font-size-sm;
         }
 
+        .k-outer-group-header {
+            border-top-color: $grouping-border;
+            color: $frozen-grouping-header-text;
+        }
+
         &.k-column-menu {
             padding-top: 0;
             padding-bottom: 0;
@@ -21,6 +26,7 @@
     .k-popup > .k-virtual-wrap > .k-group-header {
         border-bottom-color: $grouping-border;
     }
+
     .k-popup .k-group-header + div > .k-list > .k-item.k-first::before {
         border-top-color: $grouping-border;
     }
