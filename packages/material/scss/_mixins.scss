@@ -8,7 +8,7 @@
         z-index: 2;
         content: "";
         position: absolute;
-        bottom: add-two(-$height, 1px);
+        bottom: calc( 1px - #{$height} );
         left: 0;
         right: 0;
         height: $height;

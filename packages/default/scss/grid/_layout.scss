@@ -11,8 +11,8 @@
     $edit-cell-input-space: calc(-#{$cell-padding} - #{$input-border-width}) !default;
     $edit-cell-textbox-width: calc(100% + ((#{$cell-padding} + #{$input-border-width}) * 2)) !default;
 
-    $grid-row-inner-height: add-two( $line-height-em, $cell-padding-y * 2 );
-    // $grid-row-half-inner-height: add-two( $line-height-em / 2, $cell-padding-y );
+    $grid-row-inner-height: calc( #{$line-height-em} + #{$cell-padding-y * 2} );
+    // $grid-row-half-inner-height: calc( #{$line-height-em / 2} + #{$cell-padding-y} );
 
     // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
     $grid-form-component-offset: calc( (#{$line-height-em} - #{button-size()}) / 2 ) !default;
@@ -28,10 +28,10 @@
     $grid-group-footer-second-cell-border: 1px !default;
     $grid-header-first-border: 1px !default;
     $grid-header-menu-icon-spacing: $icon-spacing !default;
-    $grid-sorted-icon-spacing: add-two($padding-x, -1px) !default;
+    $grid-sorted-icon-spacing: calc( #{$padding-x} - 1px ) !default;
 
     // helper variables
-    $grid-filterable-icon-spacing: calc( #{ button-size() } + #{ $grid-header-menu-icon-spacing } );
+    $grid-filterable-icon-spacing: calc( #{ button-size() } + #{$grid-header-menu-icon-spacing} );
     $default-scrollbar-width: 17px;
 
     .k-grid {
@@ -146,8 +146,8 @@
         }
 
         .k-grouping-row .k-icon {
-            margin-left: add-two(-1 * $cell-padding-x, $icon-size / 2);
-            margin-right: $icon-size / 2;
+            margin-left: calc( #{$icon-size / 2} - #{$cell-padding-x} );
+            margin-right: ($icon-size / 2);
         }
 
         .k-group-footer td {
@@ -320,8 +320,8 @@
             }
 
             .k-grouping-row .k-icon {
-                margin-left: $icon-size / 2;
-                margin-right: add-two(-1 * $cell-padding-x, $icon-size / 2);
+                margin-left: #{$icon-size / 2};
+                margin-right: calc( #{$icon-size / 2} - #{$cell-padding-x} );
             }
 
             .k-grid-search {
@@ -1071,7 +1071,7 @@
         $item-spacing: $spacer-y / 2;
         $form-padding: $spacer-y;
         $form-padding-y: $form-padding - $item-spacing;
-        $action-buttons-margin-bottom: add-two(-$form-padding-y, -$popup-padding-y);
+        $action-buttons-margin-bottom: calc( -1 * ( #{$form-padding-y} + #{$popup-padding-y} ) );
 
         .k-filter-menu-container {
             padding: $form-padding-y $form-padding;
@@ -1156,7 +1156,7 @@
     .k-column-chooser-title,
     .k-column-list-item {
         padding: $list-item-padding-y $list-item-padding-x;
-        padding-right: add-two( (2 * $list-item-padding-x), $icon-size);
+        padding-right: calc( #{$list-item-padding-x * 2} + #{$icon-size} );
     }
 
     .k-column-list-item {
@@ -1192,7 +1192,7 @@
         overflow: hidden;
 
         .k-column-list-item {
-            padding-left: add-three($nav-item-padding-x, $icon-size, $icon-spacing);
+            padding-left: calc( #{$nav-item-padding-x} + #{$icon-size} + #{$icon-spacing} );
         }
 
         .k-filter-menu .k-filter-menu-container {

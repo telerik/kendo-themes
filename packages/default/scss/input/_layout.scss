@@ -21,12 +21,12 @@
 
     .k-textbox,
     .k-input.k-textbox {
-        height: add-three( 2 * $input-border-width, 2 * $input-padding-y, $input-line-height * 1em );
+        height: calc( #{$input-border-width * 2} + #{$input-padding-y * 2} + #{$input-line-height * 1em} );
     }
 
     .k-textarea {
         width: $textarea-default-width;
-        min-height: add-two( 2 * $input-padding-y, $input-line-height * 1em * 4 );
+        min-height: calc( #{$input-border-width * 2} + #{$input-padding-y * 2} + #{$input-line-height * 1em} );
     }
 
     .k-maskedtextbox {
@@ -89,8 +89,8 @@
             position: absolute;
             line-height: $textbox-line-height;
             cursor: text;
-            top: add-three($floating-label-height, $input-border-width, $input-padding-y);
-            left: add-two($input-padding-x, $input-border-width);
+            top: calc( #{$floating-label-height} + #{$input-border-width} + #{$input-padding-y} );
+            left: calc( #{$input-padding-x} + #{$input-border-width} );
             transition: transform $floating-label-transition, color $floating-label-transition;
         }
 
@@ -128,7 +128,7 @@
 
             > .k-label {
                 left: auto;
-                right: add-two($input-padding-x, $input-border-width);
+                right: calc( #{$input-padding-x} + #{$input-border-width} );
             }
 
             &.k-state-empty {
@@ -199,7 +199,7 @@
     .k-checkbox-label,
     .k-radio-label {
         margin: 0;
-        padding-left: add-two($checkbox-size, $icon-spacing);
+        padding-left: calc( #{$checkbox-size} + #{$icon-spacing} );
         min-height: $icon-size;
         line-height: $checkbox-line-height;
         vertical-align: text-top;
@@ -245,7 +245,7 @@
         .k-rtl &,
         [dir="rtl"] & {
             padding-left: 0;
-            padding-right: add-two($checkbox-size, $icon-spacing);
+            padding-right: calc( #{$checkbox-size} + #{$icon-spacing} );
         }
     }
 
@@ -454,7 +454,7 @@
                 width: $inline-form-element-width;
                 text-align: right;
                 line-height: $line-height;
-                padding: add-two($padding-y, $input-border-width) 0;
+                padding: calc( #{$padding-y} + #{$input-border-width} ) 0;
                 padding-right: $padding-x-lg;
                 align-self: center;
             }

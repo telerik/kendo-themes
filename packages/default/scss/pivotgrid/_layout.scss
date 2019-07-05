@@ -22,7 +22,7 @@
     .k-fieldselector .k-list li.k-item {
         @include border-radius();
         padding: $button-padding-y $button-padding-x;
-        padding-right: add-two( ($button-padding-x * 2), ($icon-size * 2) );
+        padding-right: calc( #{$button-padding-x * 2} + #{$icon-size * 2} );
         min-height: auto;
         font-size: $font-size;
         line-height: $button-line-height;

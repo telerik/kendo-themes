@@ -129,7 +129,7 @@ $image-spacing: 8px !default;
         .k-item > .k-link {
             line-height: $line-height;
             padding: $list-item-padding-y $list-item-padding-x;
-            padding-right: add-two( (2 * $list-item-padding-x), $icon-size);
+            padding-right: calc( #{$list-item-padding-x * 2} + #{$icon-size} );
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -262,7 +262,7 @@ $image-spacing: 8px !default;
 
             .k-link {
                 padding-right: $list-item-padding-x;
-                padding-left: add-two( (2 * $list-item-padding-x), $icon-size);
+                padding-left: calc( #{$list-item-padding-x * 2} + #{$icon-size} );
             }
 
             .k-item .k-icon {
@@ -276,7 +276,7 @@ $image-spacing: 8px !default;
         }
 
         .k-menu-vertical .k-link {
-            padding-right: add-two($icon-size, $icon-spacing); // Save space in case there is an expand icon
+            padding-right: calc( #{$icon-size} + #{$icon-spacing} ); // Save space in case there is an expand icon
         }
     }
 

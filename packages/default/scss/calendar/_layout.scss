@@ -541,7 +541,7 @@
                         border-width: $calendar-border-width;
                         border-style: solid;
                         border-color: inherit;
-                        padding: 0 add-two($half-size, $spacer-x);
+                        padding: 0 calc( #{$half-size} + #{$spacer-x} );
                         margin: 0 (-$half-size);
                     }
 

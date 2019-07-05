@@ -47,7 +47,7 @@
 
     .k-editor-dialog {
         .k-edit-label {
-            padding: add-two($padding-y, -$input-border-width) 0;
+            padding: calc( #{$padding-y} - #{$input-border-width} ) 0;
         }
     }
 

@@ -152,7 +152,7 @@
         }
         .k-link {
             padding: 0;
-            width: add-three( $button-border-width, $icon-size, $button-padding-y * 2 );
+            width: calc( #{$button-border-width} + #{$icon-size} + #{$button-padding-y * 2} );
         }
 
         .k-i-warning {

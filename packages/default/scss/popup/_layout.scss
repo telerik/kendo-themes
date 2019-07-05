@@ -186,7 +186,7 @@ $popup-filter-padding-x: $input-padding-x !default;
         display: block;
         position: relative;
         padding: $padding-x;
-        min-height: add-three(4 * $padding-y, $form-line-height-em, 2 * $button-padding-y);
+        min-height: calc( #{$padding-y * 4} + #{$form-line-height-em} + #{$button-padding-y * 2} );
         box-sizing: border-box;
 
         > .k-textbox {
@@ -194,12 +194,12 @@ $popup-filter-padding-x: $input-padding-x !default;
             width: 100% !important; // sass-lint:disable-block no-important
             box-sizing: border-box;
             padding-left: $popup-filter-padding-x;
-            padding-right: add-two($icon-size, $padding-x);
+            padding-right: calc( #{$icon-size} + #{$padding-x} );
         }
 
         > .k-icon {
             position: absolute;
-            right: add-two($input-padding-x, $padding-x);
+            right: calc( #{$input-padding-x} + #{$padding-x} );
             top: 50%;
             transform: translateY(-50%);
         }
@@ -210,10 +210,10 @@ $popup-filter-padding-x: $input-padding-x !default;
 
             > .k-textbox {
                 padding-right: $popup-filter-padding-x;
-                padding-left: add-two($icon-size, $padding-x);
+                padding-left: calc( #{$icon-size} + #{$padding-x} );
             }
             > .k-icon {
-                left: add-two($input-padding-x, $padding-x);
+                left: calc( #{$input-padding-x} + #{$padding-x} );
                 right: auto;
             }
 

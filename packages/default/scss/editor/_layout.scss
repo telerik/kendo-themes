@@ -282,7 +282,7 @@
 
         .k-edit-label {
             width: 30%;
-            padding: add-two($padding-y, $input-border-width) 0;
+            padding: calc( #{$padding-y} + #{$input-border-width} ) 0;
         }
 
         .k-edit-field {
