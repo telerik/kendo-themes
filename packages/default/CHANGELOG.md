@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@3.7.0...@progress/kendo-theme-default@4.0.0) (2019-07-08)
+
+
+### Bug Fixes
+
+* add !default flag to more variables ([5372039](https://github.com/telerik/kendo-themes/commit/5372039))
+* background opacity of dialog in window ([ff03b04](https://github.com/telerik/kendo-themes/commit/ff03b04))
+* **colorpicker:** styles in RTL view ([0741bc8](https://github.com/telerik/kendo-themes/commit/0741bc8))
+* **grid:** no records template ([74c9a7d](https://github.com/telerik/kendo-themes/commit/74c9a7d))
+* remove usages of add-two and add-three ([604a730](https://github.com/telerik/kendo-themes/commit/604a730))
+
+
+### Features
+
+* fit frozen group header text in one row ([17382fe](https://github.com/telerik/kendo-themes/commit/17382fe))
+* modify themes for dart-sass ([d3e1c27](https://github.com/telerik/kendo-themes/commit/d3e1c27))
+* **grid:** add styles for search bar within grid toolbar ([0460702](https://github.com/telerik/kendo-themes/commit/0460702))
+* **slider:** remove unnecessary css properties from k-draghandle class ([9f04809](https://github.com/telerik/kendo-themes/commit/9f04809))
+
+
+### BREAKING CHANGES
+
+* remove add-two and add-three functions due to dart-sass compatibility issues
+* Refactor themes so they can be compiled with dart-sass:
+
+* create `.k-button-flat` selector for `@extend` use
+* create `.k-button-overlay` selector for `@extend` use
+* replace `@extend` usages of composite selectors `.k-button.k-flat` and `.k-button::before` with said selectors
+
+
+
+
 <a name="3.7.0"></a>
 # 3.7.0 (2019-06-12)
 

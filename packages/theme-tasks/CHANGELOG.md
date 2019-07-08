@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.1.6...@progress/kendo-theme-tasks@0.2.0) (2019-07-08)
+
+
+### Features
+
+* add support for dartsass compilation ([41d3f2b](https://github.com/telerik/kendo-themes/commit/41d3f2b))
+
+
+
+
 <a name="0.1.6"></a>
 ## 0.1.6 (2019-06-12)
 

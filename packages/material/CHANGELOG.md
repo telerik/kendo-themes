@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@2.5.2...@progress/kendo-theme-material@3.0.0) (2019-07-08)
+
+
+### Bug Fixes
+
+* add !default flag to more variables ([5372039](https://github.com/telerik/kendo-themes/commit/5372039))
+* input underscore misalignment ([f464539](https://github.com/telerik/kendo-themes/commit/f464539))
+* reduce grid shadow width for frozen columns ([8aa0a7d](https://github.com/telerik/kendo-themes/commit/8aa0a7d))
+* **multiselect:** placeholder color ([aba2611](https://github.com/telerik/kendo-themes/commit/aba2611))
+* remove usages of add-two and add-three ([604a730](https://github.com/telerik/kendo-themes/commit/604a730))
+
+
+### Features
+
+* fit frozen group header text in one row ([17382fe](https://github.com/telerik/kendo-themes/commit/17382fe))
+* modify themes for dart-sass ([d3e1c27](https://github.com/telerik/kendo-themes/commit/d3e1c27))
+* **grid:** add styles for search bar within grid toolbar ([0460702](https://github.com/telerik/kendo-themes/commit/0460702))
+
+
+### BREAKING CHANGES
+
+* remove add-two and add-three functions due to dart-sass compatibility issues
+* Refactor themes so they can be compiled with dart-sass:
+
+* create `.k-button-flat` selector for `@extend` use
+* create `.k-button-overlay` selector for `@extend` use
+* replace `@extend` usages of composite selectors `.k-button.k-flat` and `.k-button::before` with said selectors
+
+
+
+
 <a name="2.5.2"></a>
 ## 2.5.2 (2019-06-12)
 
