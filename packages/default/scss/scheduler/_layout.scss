@@ -19,14 +19,6 @@
         }
     }
 
-    kendo-scheduler.k-scheduler {
-        overflow: hidden;
-
-        &.k-readonly-scheduler .k-event-delete {
-            display: none;
-        }
-    }
-
     // Commmon
     .k-scheduler-table {
         width: 100%;
