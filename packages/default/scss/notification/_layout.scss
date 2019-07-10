@@ -38,18 +38,18 @@
         > .k-icon {
             margin-top: $notification-icon-offset;
             margin-right: $notification-icon-spacing;
-            flex: 0 0 0%;
+            flex: 0 0 auto;
         }
 
         > .k-i-close {
             margin-right: 0;
             margin-left: $notification-icon-spacing;
-            flex: 0 0 0%;
+            flex: 0 0 auto;
             cursor: pointer;
         }
 
         > .k-notification-content {
-            flex: 1 1 0%;
+            flex: 1 1 auto;
         }
     }
 
