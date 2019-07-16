@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+
+<head>
+    <title>Grid Editing</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+</head>
+
+<body>
+
+    <div id="test-area" class="grid">
+
+        <!--enabled Add button-->
+        <kendo-grid dir="ltr" class="k-widget k-grid">
+            <kendo-grid-toolbar class="k-header k-grid-toolbar">
+              <button class="k-button k-grid-add-command" dir="ltr">Add new</button>
+            </kendo-grid-toolbar>
+            <div class="k-grid-aria-root">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap">
+                        <table>
+                            <colgroup>
+                                <col><col><col><col><col style="width: 220px;">
+                            </colgroup>
+                            <thead >
+                                <tr>
+                                    <th class="k-header" rowspan="1" colspan="1"><a class="k-link">Product Name<span></span></a></th>
+                                    <th class="k-header" rowspan="1" colspan="1"><a class="k-link">Price<span></span></a></th>
+                                    <th class="k-header" rowspan="1" colspan="1"><a class="k-link">Discontinued<span></span></a></th>
+                                    <th class="k-header" rowspan="1" colspan="1"><a class="k-link">Units In Stock<span></span></a></th>
+                                    <th class="k-header" rowspan="1" colspan="1">command</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <kendo-grid-list class="k-grid-container">
+                    <div class="k-grid-content k-virtual-content">
+                        <div class="k-grid-table-wrap">
+                            <table class="k-grid-table">
+                                <colgroup>
+                                    <col/><col/><col/><col/><col style="width: 220px;">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="k-grid-add-row k-grid-edit-row">
+                                        <td colspan="1"><input class="k-textbox" type="text"></td>
+                                        <td colspan="1"><kendo-numerictextbox class="k-widget k-numerictextbox"><span class="k-numeric-wrap"><input class="k-input k-formatted-value"><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-n"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-s"></span></span></span></span></kendo-numerictextbox></td>
+                                        <td colspan="1"><input type="checkbox"></td>
+                                        <td colspan="1"><kendo-numerictextbox class="k-widget k-numerictextbox"><span class="k-numeric-wrap"><input class="k-input k-formatted-value"><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-n"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-s"></span></span></span></span></kendo-numerictextbox></td>
+                                        <td colspan="1" class="k-command-cell">
+                                            <button class="k-button k-primary k-grid-edit-command" dir="ltr" style="display: none;">Edit</button>
+                                            <button class="k-button k-grid-remove-command" dir="ltr" style="display: none;">Remove</button>
+                                            <button class="k-button k-state-disabled k-grid-save-command" dir="ltr">Add</button>
+                                            <button class="k-button k-grid-cancel-command" dir="ltr">Discard changes</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </kendo-grid-list>
+            </div>
+        </kendo-grid>
+
+        <!--disabled Add button-->
+        <kendo-grid dir="ltr" class="k-widget k-grid">
+                <kendo-grid-toolbar class="k-header k-grid-toolbar">
+                  <button class="k-button k-grid-add-command" dir="ltr">Add new</button>
+                </kendo-grid-toolbar>
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header">
+                        <div class="k-grid-header-wrap">
+                            <table>
+                                <colgroup>
+                                    <col><col><col><col><col style="width: 220px;">
+                                </colgroup>
+                                <thead >
+                                    <tr>
+                                        <th class="k-header" rowspan="1" colspan="1"><a class="k-link">Product Name<span></span></a></th>
+                                        <th class="k-header" rowspan="1" colspan="1"><a class="k-link">Price<span></span></a></th>
+                                        <th class="k-header" rowspan="1" colspan="1"><a class="k-link">Discontinued<span></span></a></th>
+                                        <th class="k-header" rowspan="1" colspan="1"><a class="k-link">Units In Stock<span></span></a></th>
+                                        <th class="k-header" rowspan="1" colspan="1">command</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <kendo-grid-list class="k-grid-container">
+                        <div class="k-grid-content k-virtual-content">
+                            <div class="k-grid-table-wrap">
+                                <table class="k-grid-table">
+                                    <colgroup>
+                                        <col/><col/><col/><col/><col style="width: 220px;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr class="k-grid-add-row k-grid-edit-row">
+                                            <td colspan="1"><input class="k-textbox" type="text"></td>
+                                            <td colspan="1"><kendo-numerictextbox class="k-widget k-numerictextbox"><span class="k-numeric-wrap"><input class="k-input k-formatted-value"><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-n"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-s"></span></span></span></span></kendo-numerictextbox></td>
+                                            <td colspan="1"><input type="checkbox"></td>
+                                            <td colspan="1"><kendo-numerictextbox class="k-widget k-numerictextbox"><span class="k-numeric-wrap"><input class="k-input k-formatted-value"><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-n"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-s"></span></span></span></span></kendo-numerictextbox></td>
+                                            <td colspan="1" class="k-command-cell">
+                                                <button class="k-button k-primary k-grid-edit-command" dir="ltr" style="display: none;">Edit</button>
+                                                <button class="k-button k-grid-remove-command" dir="ltr" style="display: none;">Remove</button>
+                                                <button class="k-button k-grid-save-command" dir="ltr">Add</button>
+                                                <button class="k-button k-grid-cancel-command" dir="ltr">Discard changes</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </kendo-grid-list>
+                </div>
+            </kendo-grid>
+
+    </div>
+
+</body>
+
+</html>
