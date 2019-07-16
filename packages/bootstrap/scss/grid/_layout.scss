@@ -2,3 +2,12 @@ $edit-cell-input-space: 0 !default;
 $edit-cell-textbox-width: 100% !default;
 
 @import "~@progress/kendo-theme-default/scss/grid/layout";
+
+@include exports( "grid/layout/bootstrap" ) {
+
+    .k-command-cell {
+        > .k-grid-save-command + .k-grid-cancel-command {
+            margin-top: $cell-padding-x;
+        }
+    }
+}
