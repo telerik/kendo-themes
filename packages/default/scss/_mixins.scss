@@ -2,27 +2,17 @@
 @import "mixins/core/_import-once.scss";
 @import "mixins/core/_placeholder-selectors.scss";
 @import "mixins/core/_data-uri.scss";
-@import "mixins/core/_math.scss";
 @import "mixins/core/_props.scss";
-@import "mixins/core/_config-maps.scss";
-
-
-// Functions
-@import "mixins/functions/_props.scss";
 
 
 // Utils
 @import "mixins/_border-radius.scss";
 @import "mixins/_box-shadow.scss";
-@import "mixins/_button-size.scss";
-@import "mixins/_colors.scss";
 @import "mixins/_decoration.scss";
 @import "mixins/_disabled.scss";
 @import "mixins/_gradients.scss";
 @import "mixins/_hide-scrollbar.scss";
 @import "mixins/_opacity.scss";
-@import "mixins/_layout.scss";
-@import "mixins/_typography.scss";
 
 
 // Appearance
