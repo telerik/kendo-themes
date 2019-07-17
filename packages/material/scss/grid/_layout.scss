@@ -243,10 +243,4 @@ $grid-group-drag-clue-opacity: .9 !default;
             height: button-size();
         }
     }
-
-    .k-command-cell {
-        > .k-grid-save-command + .k-grid-cancel-command {
-            margin-top: ($cell-padding-x / 2);
-        }
-    }
 }
