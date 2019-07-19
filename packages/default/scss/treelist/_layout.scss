@@ -37,6 +37,22 @@
         }
     }
 
+
+    // Sticky headers
+    .k-treelist-scrollable {
+        > table,
+        .k-grid-header,
+        .k-grid-header tr,
+        .k-grid-header th,
+        .k-grid-header tr:hover {
+            background-color: inherit;
+        }
+
+        .k-grid-header th {
+            position: sticky;
+        }
+    }
+
     .k-drag-separator {
         display: inline-block;
         border-right: 1px solid;
