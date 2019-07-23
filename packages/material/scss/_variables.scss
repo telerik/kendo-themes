@@ -1483,7 +1483,6 @@ $spreadsheet-drawing-outline-width: 2px !default;
 $spreadsheet-drawing-anchor-bg: rgba( $header-selected-bg, .25 ) !default;
 
 
-
 // Filter
 $filter-padding-x: $padding-x-sm !default;
 $filter-padding-y: $filter-padding-x !default;
@@ -1493,6 +1492,68 @@ $filter-line-size: 1px !default;
 
 $filter-field-text: $accent !default;
 $filter-operator-text: rgba($text-color, .6) !default;
+
+
+// Timeline
+
+$timeline-spacing-x: 40px !default;
+$timeline-spacing-y: 40px !default;
+$timeline-items-padding: $padding-x !default;
+
+$timeline-mobile-spacing-x: $padding-x !default;
+$timeline-mobile-spacing-y: $padding-x !default;
+
+$timeline-track-arrow-width: 36px !default;
+$timeline-track-arrow-height: 36px !default;
+
+$timeline-track-arrow-disabled-text: true-mix($button-text, $bg-color, 65%) !default;
+$timeline-track-arrow-disabled-bg: true-mix(#000000, $bg-color, 8%) !default;
+$timeline-track-arrow-disabled-border: true-mix($button-border, $bg-color, 65%) !default;
+
+$timeline-track-size: 6px !default;
+$timeline-track-border-width: 1px !default;
+$timeline-track-margin-bottom: 18px !default;
+$timeline-track-start-calc: calc(#{$timeline-track-arrow-width} - 2 * #{$timeline-track-border-width}) !default;
+$timeline-track-end-calc: calc(#{$timeline-track-arrow-width} - 2 * #{$timeline-track-border-width}) !default;
+$timeline-track-bg: #e0e0e0 !default;
+$timeline-track-border-color: $timeline-track-bg !default;
+
+$timeline-track-event-offset: 36px !default;
+
+$timeline-flag-padding-x: $button-padding-x !default;
+$timeline-flag-padding-y: $button-padding-y !default;
+$timeline-flag-line-height: $button-line-height !default;
+$timeline-flag-min-width: 80px !default;
+$timeline-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-spacing-x}) !default;
+$timeline-mobile-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-mobile-spacing-x}) !default;
+$timeline-horizontal-flag-min-width: 60px !default;
+$timeline-flag-background: $accent !default;
+$timeline-flag-text: $accent-contrast !default;
+
+$timeline-flag-callout-width: 10px !default;
+$timeline-flag-callout-height: 10px !default;
+
+$timeline-flag-offset-bottom: 4px !default;
+$timeline-flag-margin-bottom-calc: calc(#{$timeline-track-size} + 2 * #{$timeline-track-border-width} + #{$timeline-flag-offset-bottom} + #{$timeline-flag-callout-height}) !default;
+
+$timeline-date-width: 50px !default;
+$timeline-date-margin-bottom: 8px !default;
+
+$timeline-vertical-padding-calc: calc(#{$timeline-spacing-x} + (#{$timeline-flag-min-width} - #{$timeline-track-size}) / 2) !default;
+$timeline-vertical-padding-with-dates-calc: calc(#{$timeline-vertical-padding-calc} + #{$timeline-date-width}) !default;
+$timeline-mobile-vertical-padding-calc: calc(#{$timeline-mobile-spacing-x} + (#{$timeline-flag-min-width} - #{$timeline-track-size}) / 2) !default;
+$timeline-mobile-vertical-padding-with-dates-calc: calc(#{$timeline-mobile-vertical-padding-calc} + #{$timeline-date-width}) !default;
+
+$timeline-circle-width: 16px !default;
+$timeline-circle-height: 16px !default;
+$timeline-circle-color: $accent !default;
+
+$timeline-collapse-arrow-padding-x: $padding-x-sm !default;
+
+$timeline-event-width: 400px !default;
+$timeline-event-height: 600px !default;
+$timeline-event-min-height-calc: calc(2 * (#{$timeline-track-event-offset}- #{$card-border-width})) !default;
+
 
 // Config maps
 $typography-config: () !default;
