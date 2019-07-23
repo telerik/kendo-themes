@@ -1,0 +1,7 @@
+@import "~@progress/kendo-theme-default/scss/timeline/layout";
+
+@include exports( "timeline/layout/bootstrap" ) {
+    .k-timeline-card .k-card-header {
+        padding-top: $card-header-padding-x;
+    }
+}
