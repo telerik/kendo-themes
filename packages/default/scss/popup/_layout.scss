@@ -18,8 +18,13 @@ $popup-filter-padding-x: $input-padding-x !default;
         line-height: $line-height;
         box-sizing: content-box;
 
-        > .k-widget:only-child {
+        > .k-widget {
             border-width: 0;
+        }
+
+        &.k-colorpicker-popup {
+            display: flex;
+            align-items: center;
         }
 
         .k-item {
