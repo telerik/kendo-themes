@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Rating</title>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+        }
+        #test-area > section.buttons {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+            <span>Continuous</span>
+            <span class="k-rating k-widget">
+                <input id="rating1" class="k-hidden">
+                <span class="k-rating-container">
+                    <span class="k-rating-item k-state-selected">
+                        <span class="k-icon k-i-star"></span>
+                    </span>
+                    <span class="k-rating-item k-state-selected">
+                        <span class="k-icon k-i-star"></span>
+                    </span>
+                    <span class="k-rating-item k-state-selected">
+                        <span class="k-icon k-i-star"></span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                </span>
+                <span class="k-rating-label">
+                    <span>3 / 5</span>
+                </span>
+            </span>
+
+            <span class="k-rating k-widget">
+                <input id="rating1" class="k-hidden">
+                <span class="k-rating-container">
+                    <span class="k-rating-item k-state-selected">
+                        <span class="k-icon k-i-star"></span>
+                    </span>
+                    <span class="k-rating-item k-state-selected">
+                        <span class="k-icon k-i-star"></span>
+                    </span>
+                    <span class="k-rating-item k-state-selected">
+                        <span class="k-icon k-i-star-outline"></span>
+                        <span class="k-rating-precision-part" style="width: 12px;">
+                            <span class="k-icon k-i-star"></span>
+                        </span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                </span>
+                <span class="k-rating-label">
+                    <span>2.5 / 5</span>
+                </span>
+            </span>
+
+            <span>Single</span>
+            <span class="k-rating k-widget">
+                <input id="rating1" class="k-hidden">
+                <span class="k-rating-container">
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                    <span class="k-rating-item k-state-selected">
+                        <span class="k-icon k-i-star"></span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                </span>
+                <span class="k-rating-label">
+                    <span>3 / 5</span>
+                </span>
+            </span>
+
+            <span class="k-rating k-widget">
+                <input id="rating1" class="k-hidden">
+                <span class="k-rating-container">
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                    <span class="k-rating-item k-state-selected">
+                        <span class="k-icon k-i-star-outline"></span>
+                        <span class="k-rating-precision-part" style="width: 12px;">
+                            <span class="k-icon k-i-star"></span>
+                        </span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                </span>
+                <span class="k-rating-label">
+                    <span>2.5 / 5</span>
+                </span>
+            </span>
+
+            <span>Normal</span>
+            <span class="k-rating k-widget">
+                <input id="rating1" class="k-hidden">
+                <span class="k-rating-container">
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                </span>
+            </span>
+
+            <span>Focused</span>
+            <span class="k-rating k-widget k-state-focused">
+                <input id="rating1" class="k-hidden">
+                <span class="k-rating-container">
+                    <span class="k-rating-item k-state-selected">
+                        <span class="k-icon k-i-star"></span>
+                    </span>
+                    <span class="k-rating-item k-state-selected">
+                        <span class="k-icon k-i-star"></span>
+                    </span>
+                    <span class="k-rating-item k-state-selected k-state-focused">
+                        <span class="k-icon k-i-star"></span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                    <span class="k-rating-item">
+                        <span class="k-icon k-i-star-outline"></span>
+                    </span>
+                </span>
+                <span class="k-rating-label">
+                    <span>3 / 5</span>
+                </span>
+            </span>
+
+    </div>
+
+</body>
+</html>
