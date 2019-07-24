@@ -43,7 +43,11 @@
     }
     .k-popup > .k-colorpalette,
     .k-popup > .k-flatcolorpicker {
-        background: #f5f5f5;
+        background: transparent;
+
+        &:only-child {
+            background: #f5f5f5;
+        }
     }
 }
 
