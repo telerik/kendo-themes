@@ -1,1 +1,12 @@
 @import "~@progress/kendo-theme-default/scss/treelist/layout";
+
+@include exports("treelist/layout/material") {
+    // Sticky headers
+    .k-treelist-scrollable {
+        .k-grid-toolbar,
+        .k-grid-header,
+        .k-grid-header tr:hover {
+            background-color: inherit;
+        }
+    }
+}

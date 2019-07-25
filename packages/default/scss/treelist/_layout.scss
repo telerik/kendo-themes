@@ -41,15 +41,20 @@
     // Sticky headers
     .k-treelist-scrollable {
         > table,
-        .k-grid-header,
         .k-grid-header tr,
-        .k-grid-header th,
-        .k-grid-header tr:hover {
+        .k-grid-header th {
             background-color: inherit;
         }
 
+        .k-grid-toolbar,
         .k-grid-header th {
             position: sticky;
+            z-index: 1;
+        }
+
+        .k-grid-toolbar {
+            top: 0px;
+            left: 0px;
         }
     }
 
