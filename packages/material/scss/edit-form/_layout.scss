@@ -64,6 +64,10 @@
             display: flex;
             flex-direction: row;
         }
+
+        .k-upload {
+            flex-wrap: wrap;
+        }
     }
     .k-no-flexbox .k-edit-field {
         display: block;
