@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.0.0...@progress/kendo-theme-default@4.1.0) (2019-07-26)
+
+
+### Bug Fixes
+
+* **notification:** broken layout in IE ([e9e2d09](https://github.com/telerik/kendo-themes/commit/e9e2d09))
+* add toolbar to treelist sticky headers ([1ca69f2](https://github.com/telerik/kendo-themes/commit/1ca69f2))
+* improve sticky headers of treelist ([9db4dd4](https://github.com/telerik/kendo-themes/commit/9db4dd4))
+
+
+### Features
+
+* rating styles ([1104050](https://github.com/telerik/kendo-themes/commit/1104050))
+* **colorpicker:** add comboview styles ([dd5705f](https://github.com/telerik/kendo-themes/commit/dd5705f))
+* **tooltip:** add rtl styles ([13b9816](https://github.com/telerik/kendo-themes/commit/13b9816))
+
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@3.7.0...@progress/kendo-theme-default@4.0.0) (2019-07-08)
 

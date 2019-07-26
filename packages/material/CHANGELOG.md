@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.0.0...@progress/kendo-theme-material@3.1.0) (2019-07-26)
+
+
+### Bug Fixes
+
+* add toolbar to treelist sticky headers ([1ca69f2](https://github.com/telerik/kendo-themes/commit/1ca69f2))
+
+
+### Features
+
+* rating styles ([1104050](https://github.com/telerik/kendo-themes/commit/1104050))
+
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@2.5.2...@progress/kendo-theme-material@3.0.0) (2019-07-08)
 
