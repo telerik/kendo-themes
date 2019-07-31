@@ -116,6 +116,21 @@
             .k-hsv-rectangle {
                 flex: 1;
             }
+
+            &.k-hsv-wrap-clearable {
+                .k-clear-color {
+                    position: absolute;
+                    top: $colorpicker-rect-padding;
+                    right: 0;
+                }
+
+                .k-alpha-slider.k-slider-vertical,
+                .k-hue-slider.k-slider-vertical {
+                    height: 140px;
+                    align-self: flex-end;
+                }
+            }
+
         }
 
         .k-draghandle {
@@ -288,6 +303,14 @@
 
     .k-rtl,
     [dir="rtl"] {
+        .k-flatcolorpicker {
+            .k-hsv-wrap.k-hsv-wrap-clearable {
+                .k-clear-color {
+                    right: unset;
+                    left: 0;
+                }
+            }
+        }
 
         .k-alpha-slider.k-slider-vertical,
         .k-hue-slider.k-slider-vertical {
