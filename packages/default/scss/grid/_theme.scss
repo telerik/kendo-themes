@@ -138,6 +138,10 @@
                 border-right-color: $tooltip-bg;
             }
         }
+
+        .k-grid-search {
+            color: $text-color;
+        }
     }
 
     col.k-sorted,
