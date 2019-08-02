@@ -476,6 +476,20 @@
         &.k-event-drag-hint .k-event-time {
             display: block;
         }
+
+        .k-event-top-actions,
+        .k-event-bottom-actions {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .k-event-bottom-actions {
+            top: auto;
+            bottom: 0;
+        }
     }
 
 
