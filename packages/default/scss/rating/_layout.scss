@@ -2,7 +2,6 @@
     .k-rating {
         display: inline-flex;
         box-sizing: border-box;
-        white-space: nowrap;
         margin: 0;
         padding: 0;
         border: 0;
@@ -10,7 +9,7 @@
     }
 
     .k-rating-container {
-        flex: 0 0 auto;
+        flex: 0 1 auto;
         position: relative;
         box-sizing: border-box;
 
