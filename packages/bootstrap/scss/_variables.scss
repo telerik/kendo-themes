@@ -1339,7 +1339,9 @@ $drawer-selected-hover-bg: try-darken( $selected-bg, 7.5% ) !default;
 
 
 // Rating
-$rating-item-padding-x: $padding-x !default;
+$rating-container-margin-x: $padding-x-sm !default;
+
+$rating-item-padding-x: $padding-x-sm !default;
 $rating-item-padding-y: $padding-y !default;
 
 $rating-label-margin-x: $padding-x !default;

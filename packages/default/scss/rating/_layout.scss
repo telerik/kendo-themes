@@ -12,6 +12,7 @@
         flex: 0 1 auto;
         position: relative;
         box-sizing: border-box;
+        margin: 0 $rating-container-margin-x;
 
         .k-rating-item {
             display: inline-flex;

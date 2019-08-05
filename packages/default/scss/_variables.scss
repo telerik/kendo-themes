@@ -1324,7 +1324,9 @@ $drawer-selected-hover-bg: $selected-hover-bg !default;
 
 
 // Rating
-$rating-item-padding-x: $padding-x !default;
+$rating-container-margin-x: $padding-x-sm !default;
+
+$rating-item-padding-x: $padding-x-sm !default;
 $rating-item-padding-y: $padding-y !default;
 
 $rating-label-margin-x: $padding-x !default;
