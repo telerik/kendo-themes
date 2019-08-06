@@ -1481,6 +1481,17 @@ $spreadsheet-drawing-outline-width: 2px !default;
 $spreadsheet-drawing-anchor-bg: rgba( $header-selected-bg, .25 ) !default;
 
 
+
+// Filter
+$filter-padding-x: $padding-x-sm !default;
+$filter-padding-y: $filter-padding-x !default;
+
+$filter-bottom-margin: 2.1em !default;
+$filter-line-size: 1px !default;
+
+$filter-field-text: $accent !default;
+$filter-operator-text: rgba($text-color, .6) !default;
+
 // Config maps
 $typography-config: () !default;
 // sass-lint:disable indentation
