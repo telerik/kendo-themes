@@ -1,0 +1,12 @@
+@import "~@progress/kendo-theme-default/scss/filter/theme";
+
+@include exports("filter/theme/material") {
+
+    .k-filter {
+        .k-filter-toolbar {
+            .k-toolbar .k-dropdown-wrap .k-select {
+                opacity: 1;
+            }
+        }
+    }
+}

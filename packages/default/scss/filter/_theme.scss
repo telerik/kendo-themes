@@ -1,0 +1,19 @@
+@include exports("filter/theme") {
+
+    .k-filter {
+        .k-filter-field {
+            color: $filter-field-text;
+        }
+
+        .k-filter-operator {
+            color: $filter-operator-text;
+        }
+
+        .k-filter-item::before,
+        .k-filter-toolbar::before,
+        .k-filter-lines .k-filter-item:last-child > .k-filter-toolbar::after {
+            background-color: $border-color;
+        }
+    }
+
+}
