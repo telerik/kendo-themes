@@ -1,1 +1,18 @@
 @import "~@progress/kendo-theme-default/scss/card/layout";
+
+@include exports( "timeline/card/material" ) {
+    .k-card-title,
+    .k-card-subtitle {
+        font-weight: 500;
+    }
+
+    .k-card-actions {
+        .k-button {
+            padding: $padding-x-sm;
+        }
+
+        > .k-button.k-flat:first-child {
+            margin-left: -$padding-x-sm;
+        }
+    }
+}

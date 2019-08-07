@@ -8,7 +8,42 @@
         border-style: solid;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
+        position: relative;
+
+        .k-card-callout {
+            position: absolute;
+            width: $card-callout-width;
+            height: $card-callout-height;
+            border-width: $card-border-width $card-border-width 0 0;
+            border-style: solid;
+            margin: 0;
+
+            &.k-callout-n {
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+
+            &.k-callout-e {
+                top: 50%;
+                left: auto;
+                right: 0;
+                transform: translate(50%, -50%) rotate(135deg) scaleX(-1);
+            }
+
+            &.k-callout-s {
+                top: auto;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 50%) rotate(135deg);
+            }
+
+            &.k-callout-w {
+                top: 50%;
+                left: 0;
+                transform: translate(-50%, -50%) rotate(-135deg);
+            }
+        }
     }
     .k-card.k-card-flat {
         box-shadow: none;
@@ -44,6 +79,10 @@
         > h5,
         > h6 {
             margin: 0;
+        }
+
+        .k-card-title + .k-card-subtitle {
+            margin-top: $card-subtitle-margin-top;
         }
     }
 
@@ -203,6 +242,7 @@
             @include border-radius( $card-deck-scroll-button-radius );
             flex: 0 0 auto;
             position: absolute;
+            z-index: 1;
 
             &:first-child {
                 left: $card-deck-scroll-button-offset;
