@@ -858,6 +858,8 @@ $card-body-padding-y: $card-padding-y !default;
 
 $card-title-margin-bottom: $h2-margin-bottom !default;
 $card-subtitle-margin-bottom: $h6-margin-bottom !default;
+$card-subtitle-margin-top: $padding-x !default;
+$card-subtitle-text-opacity: .45 !default;
 
 $card-actions-padding-x: $card-padding-x !default;
 $card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
@@ -866,6 +868,8 @@ $card-actions-border-width: 1px !default;
 $card-deck-scroll-button-radius: 0 !default;
 $card-deck-scroll-button-offset: -$button-border-width !default;
 
+$card-callout-width: 20px !default;
+$card-callout-height: 20px !default;
 
 // Calendar
 $calendar-border-width: 1px !default;
