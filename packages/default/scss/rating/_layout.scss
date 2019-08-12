@@ -4,6 +4,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        font-size: $font-size;
         border: 0;
         outline: 0;
     }
@@ -33,21 +34,17 @@
                 font-size: $rating-icon-size;
             }
 
-            .k-rating-precision-part {
-                display: flex;
+            .k-rating-precision-part,
+            .k-rating-precision-complement {
+                display: inline-flex;
                 position: absolute;
                 top: $rating-item-padding-y;
                 left: $rating-item-padding-x;
                 overflow: hidden;
-
-                .k-ie9 & {
-                    top: auto;
-                }
             }
 
-            .k-ie9 & {
-                display: inline-block;
-                vertical-align: auto;
+            .k-rating-precision-complement {
+                direction: rtl;
             }
         }
     }
@@ -60,11 +57,23 @@
         margin: $rating-label-margin-y $rating-label-margin-x;
     }
 
+    .k-ie9 {
+        .k-rating-label,
+        .k-rating-container,
+        .k-rating-item {
+            display: inline-block;
+        }
+    }
+
     .k-rtl,
     [dir="rtl"] {
         .k-rating-precision-part  {
             left: auto;
             right: $rating-item-padding-x;
+        }
+
+        .k-rating-item .k-rating-precision-complement {
+            direction: ltr;
         }
     }
 }
