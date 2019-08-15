@@ -1272,6 +1272,8 @@ $pdf-viewer-page-text: $panel-text !default;
 $pdf-viewer-page-border: $panel-border !default;
 $pdf-viewer-page-shadow: 0 0 ($pdf-viewer-page-spacing / 2) $pdf-viewer-page-border !default;
 
+$pdf-viewer-selection-line-height: $line-height-sm !default;
+
 
 // Adaptive Common
 $adaptive-content-bg: $base-bg !default;
