@@ -26,16 +26,44 @@
         // Canvas
         .k-list-scroller {
             flex: 1 1 auto;
+            outline: none;
+
+            .k-enable-text-select {
+                -webkit-user-select: text;
+                -moz-user-select: text;
+                -ms-user-select: text;
+                user-select: text;
+                cursor: text;
+            }
+
+            .k-enable-panning {
+                cursor: grab;
+            }
         }
 
 
         // Page
         .k-page {
+            position: relative;
             margin: $pdf-viewer-page-spacing auto;
-        }
 
-        .k-page canvas {
-            direction: ltr;
+            canvas {
+                direction: ltr;
+            }
+
+            .k-text-layer {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: .2;
+                overflow: hidden;
+            }
+            .k-text-layer > span {
+                position: absolute;
+                line-height: $pdf-viewer-selection-line-height;
+                transform-origin: 0% 0%;
+                color: transparent;
+            }
         }
     }
 
