@@ -1274,6 +1274,14 @@ $pdf-viewer-page-shadow: 0 0 ($pdf-viewer-page-spacing / 2) $pdf-viewer-page-bor
 
 $pdf-viewer-selection-line-height: $line-height-sm !default;
 
+$pdf-viewer-search-highlight-bg: try-darken($base-bg, 70% ) !default;
+
+$pdf-viewer-search-dialog-input-button-height: $line-height-em !default;
+$pdf-viewer-search-dialog-textbox-padding-x: $input-padding-y !default;
+
+$pdf-viewer-search-dialog-matches-margin: 0 1em 0 .5em !default;
+$pdf-viewer-search-dialog-draghandle-margin: 0 1em 0 0 !default;
+
 
 // Adaptive Common
 $adaptive-content-bg: $base-bg !default;
