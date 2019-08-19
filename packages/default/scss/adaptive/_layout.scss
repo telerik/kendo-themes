@@ -382,6 +382,9 @@
 
                 .k-header-done,
                 .k-header-cancel {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
 
                     .k-icon {
                         font-size: 1.5em;
@@ -494,9 +497,11 @@
 
                     &.k-filter-item .k-filterable::before {
                         content: "\e014";
-                        position: absolute;
-                        right: .5em;
                         font: 1.5em/1 "WebComponentsIcons";
+                        transform: translateY(-50%);
+                        position: absolute;
+                        top: 50%;
+                        right: .5em;
                     }
                 }
 
