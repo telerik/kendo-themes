@@ -68,6 +68,9 @@
     }
 }
 
+
+
+
 @include exports( "flatcolorpicker/layout" ) {
 
     .k-flatcolorpicker {
@@ -78,60 +81,152 @@
         width: $colorpicker-width;
         padding: $colorpicker-rect-padding;
 
-        .k-horizontal {
-            flex-direction: row;
 
-            &.k-gradient-values {
-                display: flex;
-                justify-content: space-between;
-                margin-top: $colorpicker-margin * 2;
+        // HSV wrap
+        .k-hsv-wrap {}
 
-                div,
-                input,
-                .k-numerictextbox {
-                    width: $colorpicker-input-width;
-                    text-align: center;
-                }
-                div {
-                    text-transform: uppercase;
-                    text-align: center;
-                }
-                .k-hex-value {
-                    width: $colorpicker-hex-input-width;
-                }
 
-                &:last-of-type {
+        // HSV rectangle
+        .k-hsv-rectangle {
+            position: relative;
+            flex: 1 1 auto;
+            user-select: none;
+            -ms-touch-action: pinch-zoom double-tap-zoom;
+
+            .k-draghandle {
+                margin: -7px 0 0 -7px;
+                cursor: pointer;
+                position: absolute;
+                z-index: 10;
+                left: 50%;
+                top: 50%;
+            }
+        }
+        .k-hsv-gradient {
+            height: 180px;
+            background: linear-gradient( to bottom, $gradient-transparent-to-black ), linear-gradient( to right, $gradient-white-to-transparent );
+        }
+
+
+        // Sliders wrap
+        .k-sliders-wrap {
+            flex-shrink: 0;
+            position: relative;
+
+            &.k-hbox {
+                margin-left: $colorpicker-margin;
+
+                .k-slider + .k-slider {
+                    margin-left: $colorpicker-margin;
+                }
+            }
+
+            &.k-vbox {
+                margin-top: $colorpicker-margin;
+
+                .k-slider + .k-slider {
                     margin-top: $colorpicker-margin;
                 }
             }
-        }
-        .k-vertical {
-            flex-direction: column;
-        }
-        .k-hsv-wrap {
-            display: flex;
-            flex-wrap: nowrap;
-            align-items: center;
 
-            .k-hsv-rectangle {
-                flex: 1;
-            }
+        }
+        .k-sliders-wrap-clearable {
 
-            &.k-hsv-wrap-clearable {
+            &.k-hbox {
+
                 .k-clear-color {
                     position: absolute;
-                    top: $colorpicker-rect-padding;
-                    right: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
                 }
 
-                .k-alpha-slider.k-slider-vertical,
-                .k-hue-slider.k-slider-vertical {
+                .k-hue-slider,
+                .k-alpha-slider {
                     height: 140px;
                     align-self: flex-end;
                 }
             }
 
+            &.k-vbox {}
+
         }
+
+
+        // Sliders
+        .k-slider {
+            display: block;
+
+            .k-slider-wrap {
+                z-index: 1;
+            }
+
+            .k-slider-selection {
+                display: none;
+            }
+
+            // Draghandle
+            .k-draghandle {
+                border-width: 3px;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, .9);
+                // sass-lint:enable no-color-literals no-color-keywords
+                background-color: transparent;
+            }
+            .k-draghandle:hover,
+            .k-draghandle:focus {
+                // sass-lint:disable no-color-literals no-color-keywords
+                border-color: white;
+                box-shadow: 0 1px 4px black;
+                // sass-lint:enable no-color-literals no-color-keywords
+                background-color: transparent;
+            }
+
+        }
+
+
+        // Slider orientation
+        .k-slider-horizontal {
+            width: 100%;
+            height: $colorpicker-slider-track-size;
+            flex: 0 0 $colorpicker-slider-track-size;
+
+            .k-slider-track {
+                margin-top: -($colorpicker-slider-track-size / 2);
+                height: $colorpicker-slider-track-size;
+                border-radius: $colorpicker-slider-border-radius;
+            }
+        }
+        .k-slider-vertical {
+            width: $colorpicker-slider-track-size;
+            height: 180px;
+            flex: 0 0 $colorpicker-slider-track-size;
+
+            .k-slider-track {
+                margin-left: -($colorpicker-slider-track-size / 2);
+                width: $colorpicker-slider-track-size;
+                border-radius: $colorpicker-slider-border-radius;
+            }
+        }
+
+
+        // Slider type
+        .k-hue-slider {
+            &.k-slider-horizontal {
+                .k-slider-track {
+                    background: linear-gradient( to right, $gradient-rainbow );
+                }
+            }
+            &.k-slider-vertical {
+                .k-slider-track {
+                    background: linear-gradient( to top, $gradient-rainbow );
+                }
+            }
+        }
+        .k-alpha-slider {
+            .k-slider-track {
+                background: url(map-get($data-uris, "alpha-slider-bgr.png")) center;
+            }
+        }
+
 
         .k-draghandle {
             @include border-radius( 50% );
@@ -141,6 +236,34 @@
             box-shadow: 0 1px 4px rgba(0, 0, 0, .21);
             box-sizing: border-box;
         }
+
+
+        // Color inputs
+        .k-colorinputs {
+            margin-top: ($colorpicker-margin * 2);
+
+            > .k-gradient-values + .k-gradient-values {
+                margin-top: $colorpicker-margin;
+            }
+        }
+        .k-gradient-values {
+            justify-content: space-between;
+
+            div,
+            input,
+            .k-numerictextbox {
+                width: $colorpicker-input-width;
+                text-align: center;
+            }
+            div {
+                text-transform: uppercase;
+                text-align: center;
+            }
+            .k-hex-value {
+                width: $colorpicker-hex-input-width;
+            }
+        }
+
 
         // Selected color
         .k-selected-color {
@@ -180,123 +303,10 @@
             right: 0;
         }
 
-        .k-hsv-rectangle {
-            position: relative;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            -ms-touch-action: pinch-zoom double-tap-zoom;
-
-            .k-draghandle {
-                margin: -7px 0 0 -7px;
-                cursor: pointer;
-                position: absolute;
-                z-index: 10;
-                left: 50%;
-                top: 50%;
-            }
-        }
-
-        .k-hsv-gradient {
-            height: 180px;
-            background: linear-gradient( to bottom, $gradient-transparent-to-black ), linear-gradient( to right, $gradient-white-to-transparent );
-        }
-
-        // Sliders
-        > .k-slider {
-            margin: $spacer $spacer 0;
-        }
-        .k-horizontal .k-hue-slider {
-            .k-slider-track {
-                background: linear-gradient( to top, $gradient-rainbow );
-            }
-        }
-
-        .k-hue-slider,
-        .k-transparency-slider {
-            display: block;
-
-            .k-draghandle {
-                border-width: 3px;
-                box-shadow: 0 1px 4px rgba(0, 0, 0, .9);
-                // sass-lint:enable no-color-literals no-color-keywords
-                background-color: transparent;
-            }
-            .k-draghandle:hover,
-            .k-draghandle:focus {
-                // sass-lint:disable no-color-literals no-color-keywords
-                border-color: white;
-                box-shadow: 0 1px 4px black;
-                // sass-lint:enable no-color-literals no-color-keywords
-                background-color: transparent;
-            }
-
-            &.k-slider-vertical {
-                flex: 0 0 $colorpicker-slider-track-size;
-                width: $colorpicker-slider-track-size;
-                height: 180px;
-                margin-left: $colorpicker-margin;
-                border-radius: $colorpicker-slider-border-radius;
-
-                .k-slider-track {
-                    width: $colorpicker-slider-track-size;
-                    border-radius: $colorpicker-slider-border-radius;
-                }
-            }
-            &.k-alpha-slider {
-                margin-right: ($colorpicker-margin / 2);
-
-                .k-slider-wrap {
-                    z-index: 1;
-                }
-                .k-slider-track {
-                    background-color: transparent;
-
-                    &::before {
-                        z-index: -1;
-                        content: "";
-                        width: 100%;
-                        height: 100%;
-                        position: absolute;
-                        border-radius: inherit;
-                        background: url(map-get($data-uris, "alpha-slider-bgr.png"));
-                        background-position: center;
-                    }
-                }
-                .k-slider-selection {
-                    display: none;
-                }
-            }
-        }
-
-        .k-hue-slider {
-            width: $spacer;
-            height: $spacer;
-
-            .k-slider-track {
-                background: linear-gradient( to right, $gradient-rainbow );
-            }
-
-            .k-slider-selection {
-                background: none;
-                opacity: 0;
-            }
-
-            &.k-slider-vertical {
-                margin-right: ($colorpicker-margin / 2);
-            }
-        }
-
-        .k-slider-horizontal {
-            width: 90%;
-            height: 20px;
-        }
-
 
         // Buttons
         .k-controls {
-            margin: $spacer $spacer 0;
+            margin-top: ($colorpicker-margin * 2);
             text-align: center;
         }
     }
@@ -304,21 +314,22 @@
     .k-rtl,
     [dir="rtl"] {
         .k-flatcolorpicker {
-            .k-hsv-wrap.k-hsv-wrap-clearable {
-                .k-clear-color {
-                    right: unset;
-                    left: 0;
+
+            .k-sliders-wrap.k-hbox {
+                margin-left: 0;
+                margin-right: $colorpicker-margin;
+
+                .k-slider + .k-slider {
+                    margin-left: 0;
+                    margin-right: $colorpicker-margin;
                 }
             }
-        }
 
-        .k-alpha-slider.k-slider-vertical,
-        .k-hue-slider.k-slider-vertical {
-            margin-right: ($colorpicker-margin * 1.5);
-            margin-left: 0;
         }
     }
 }
+
+
 
 
 @include exports( "colorpalette/layout" ) {
