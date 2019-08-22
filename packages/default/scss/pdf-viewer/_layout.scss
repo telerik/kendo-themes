@@ -39,6 +39,9 @@
             .k-enable-panning {
                 cursor: grab;
             }
+            .k-enable-panning span::selection {
+                background-color: transparent;
+            }
         }
 
 
