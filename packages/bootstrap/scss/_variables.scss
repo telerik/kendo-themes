@@ -876,7 +876,7 @@ $card-body-padding-y: $card-padding-x !default; // In bootstrap, all card body p
 $card-title-margin-bottom: $h5-margin-bottom !default;
 $card-subtitle-margin-bottom: $h6-margin-bottom !default;
 $card-subtitle-margin-top: $padding-y-lg !default;
-$card-subtitle-text-opacity: .65 !default;
+$card-subtitle-text: true-mix($card-text, $card-bg, 65%) !default;
 
 $card-actions-padding-x: $card-padding-x !default;
 $card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
