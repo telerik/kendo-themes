@@ -22,6 +22,17 @@
         border-color: $card-border;
     }
 
+    .k-card-subtitle {
+        color: $card-subtitle-text;
+
+        .k-state-primary &,
+        .k-state-info &,
+        .k-state-success &,
+        .k-state-warning &,
+        .k-state-error & {
+            color: inherit;
+        }
+    }
 
     // Theme variants
     .k-card.k-state-primary { @extend .k-state-primary !optional; }
@@ -38,10 +49,6 @@
                 box-shadow: $card-box-focused-shadow;
             }
         }
-    }
-
-    .k-card-subtitle {
-        opacity: $card-subtitle-text-opacity;
     }
 
 }
