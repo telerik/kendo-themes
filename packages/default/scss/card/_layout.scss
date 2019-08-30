@@ -71,6 +71,8 @@
         border-width: 0 0 $card-header-border-width;
         border-style: solid;
         overflow: hidden;
+        position: relative;
+        z-index: 1;
 
         > h1,
         > h2,

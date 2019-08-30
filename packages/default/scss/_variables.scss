@@ -859,7 +859,7 @@ $card-body-padding-y: $card-padding-y !default;
 $card-title-margin-bottom: $h2-margin-bottom !default;
 $card-subtitle-margin-bottom: $h6-margin-bottom !default;
 $card-subtitle-margin-top: $padding-x !default;
-$card-subtitle-text-opacity: .45 !default;
+$card-subtitle-text: true-mix($card-text, $card-bg, 45%) !default;
 
 $card-actions-padding-x: $card-padding-x !default;
 $card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
@@ -1272,7 +1272,15 @@ $pdf-viewer-page-text: $panel-text !default;
 $pdf-viewer-page-border: $panel-border !default;
 $pdf-viewer-page-shadow: 0 0 ($pdf-viewer-page-spacing / 2) $pdf-viewer-page-border !default;
 
+$pdf-viewer-search-dialog-spacing: $toolbar-padding-x !default;
+$pdf-viewer-search-dialog-button-spacing: $pdf-viewer-search-dialog-spacing !default;
+$pdf-viewer-search-dialog-textbox-padding-x: $input-padding-y !default;
+$pdf-viewer-search-dialog-input-button-height: $line-height-em !default;
+$pdf-viewer-search-dialog-matches-width: 4.5em !default;
+
 $pdf-viewer-selection-line-height: $line-height-sm !default;
+
+$pdf-viewer-search-highlight-bg: try-darken($base-bg, 70% ) !default;
 
 
 // Adaptive Common
@@ -1378,7 +1386,6 @@ $spreadsheet-drawing-outline-width: 2px !default;
 $spreadsheet-drawing-anchor-bg: rgba( $header-selected-bg, .25 ) !default;
 
 
-
 // Filter
 $filter-padding-x: $padding-x !default;
 $filter-padding-y: $padding-y !default;
@@ -1389,6 +1396,66 @@ $filter-line-size: 1px !default;
 $filter-field-text: $accent !default;
 $filter-operator-text: rgba($text-color, .6) !default;
 
+
+// Timeline
+
+$timeline-spacing-x: 40px !default;
+$timeline-spacing-y: 40px !default;
+$timeline-items-padding: 16px !default;
+
+$timeline-mobile-spacing-x: 16px !default;
+$timeline-mobile-spacing-y: 16px !default;
+
+$timeline-track-arrow-width: 30px !default;
+$timeline-track-arrow-height: 30px !default;
+
+$timeline-track-arrow-disabled-text: true-mix($button-text, $bg-color, 65%) !default;
+$timeline-track-arrow-disabled-bg: true-mix($button-bg, $bg-color, 65%) !default;
+$timeline-track-arrow-disabled-border: true-mix(#000000, $bg-color, 4.8%) !default;
+
+$timeline-track-size: 6px !default;
+$timeline-track-border-width: 1px !default;
+$timeline-track-margin-bottom: 16px !default;
+$timeline-track-start-calc: calc(#{$timeline-track-arrow-width} - 2 * #{$timeline-track-border-width}) !default;
+$timeline-track-end-calc: calc(#{$timeline-track-arrow-width} - 2 * #{$timeline-track-border-width}) !default;
+$timeline-track-bg: $button-bg !default;
+$timeline-track-border-color: $button-border !default;
+
+$timeline-track-event-offset: 36px !default;
+
+$timeline-flag-padding-x: $button-padding-x !default;
+$timeline-flag-padding-y: $button-padding-y !default;
+$timeline-flag-line-height: $button-line-height !default;
+$timeline-flag-min-width: 80px !default;
+$timeline-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-spacing-x}) !default;
+$timeline-mobile-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-mobile-spacing-x}) !default;
+$timeline-horizontal-flag-min-width: 60px !default;
+$timeline-flag-background: $accent !default;
+$timeline-flag-text: $accent-contrast !default;
+
+$timeline-flag-callout-width: 10px !default;
+$timeline-flag-callout-height: 10px !default;
+
+$timeline-flag-offset-bottom: 4px !default;
+$timeline-flag-margin-bottom-calc: calc(#{$timeline-track-size} + 2 * #{$timeline-track-border-width} + #{$timeline-flag-offset-bottom} + #{$timeline-flag-callout-height}) !default;
+
+$timeline-date-width: 50px !default;
+$timeline-date-margin-bottom: 8px !default;
+
+$timeline-vertical-padding-calc: calc(#{$timeline-spacing-x} + (#{$timeline-flag-min-width} - #{$timeline-track-size}) / 2) !default;
+$timeline-vertical-padding-with-dates-calc: calc(#{$timeline-vertical-padding-calc} + #{$timeline-date-width}) !default;
+$timeline-mobile-vertical-padding-calc: calc(#{$timeline-mobile-spacing-x} + (#{$timeline-flag-min-width} - #{$timeline-track-size}) / 2) !default;
+$timeline-mobile-vertical-padding-with-dates-calc: calc(#{$timeline-mobile-vertical-padding-calc} + #{$timeline-date-width}) !default;
+
+$timeline-circle-width: 16px !default;
+$timeline-circle-height: 16px !default;
+$timeline-circle-color: $accent !default;
+
+$timeline-collapse-arrow-padding-x: $padding-x !default;
+
+$timeline-event-width: 400px !default;
+$timeline-event-height: 600px !default;
+$timeline-event-min-height-calc: calc(2 * (#{$timeline-track-event-offset}- #{$card-border-width})) !default;
 
 // Config maps
 $typography-config: () !default;

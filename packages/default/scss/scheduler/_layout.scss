@@ -59,6 +59,132 @@
         }
     }
 
+    .k-scheduler-layout-flex {
+        overflow: auto;
+
+        .k-scheduler-head {
+            background-color: $panel-bg;
+            position: sticky;
+            top: 0;
+            z-index: 3;
+        }
+        .k-scheduler-body {
+            position: relative;
+        }
+
+        .k-scheduler-head,
+        .k-scheduler-body {
+            display: flex;
+            flex: 100%;
+            flex-wrap: wrap;
+        }
+
+        .k-scheduler-row {
+            display: flex;
+            flex: 1 1 100%;
+            width: 100%;
+        }
+
+        .k-scheduler-group {
+            display: flex;
+            flex: 1 1 100%;
+            width: 100%;
+            flex-wrap: wrap;
+
+            .k-group-cell {
+                display: flex;
+                flex: 1 1 auto;
+                flex-wrap: wrap;
+                overflow: auto;
+            }
+
+            .k-group-content {
+                padding: 0;
+                display: flex;
+                flex: 1 1 100%;
+                width: 100%;
+                border-width: 0;
+                flex-wrap: wrap;
+            }
+
+            &.k-group-horizontal {
+                .k-group-cell {
+                    flex-basis: 100%;
+                    border-width: 0;
+                    padding: 0;
+                }
+            }
+        }
+
+
+
+        .k-more-events {
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+        }
+
+        .k-scheduler-cell {
+            display: flex;
+            flex: 1 1 100%;
+            padding: $cell-padding;
+            min-height: 1.5em;
+            overflow: hidden;
+            white-space: nowrap;
+            border-style: solid;
+            border-width: 0 1px 1px 0;
+            vertical-align: top;
+            box-sizing: content-box;
+
+            &.k-slot-cell {
+                position: relative;
+            }
+
+            &.k-heading-cell {
+                justify-content: center;
+                font-weight: bold;
+            }
+
+            &.k-side-cell {
+                justify-content: flex-end;
+                flex-grow: 0;
+                flex-basis: auto;
+                overflow: visible;
+            }
+
+            &.k-major-cell {
+                border-bottom-width: 0;
+            }
+        }
+
+        .k-middle-row .k-scheduler-cell {
+            border-bottom-style: dotted;
+        }
+
+        .k-resource-cell {
+            display: flex;
+            flex-wrap: wrap;
+            overflow: visible;
+        }
+
+        .k-resource-content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            border-width: 0;
+        }
+
+        .k-sticky-cell {
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 0;
+            position: sticky;
+            left: 0;
+            z-index: 3;
+            background-color: $panel-bg;
+        }
+    }
+
     %ul-button-group {
         display: flex;
         flex-direction: row;
@@ -534,6 +660,7 @@
     // Draging hint
     .k-event-drag-hint {
         opacity: .5;
+        z-index: 3;
 
         .k-event-actions,
         .k-event-top-actions,
@@ -648,6 +775,9 @@
         .k-scheduler-table td {
             height: 80px;
             text-align: right;
+        }
+        .k-scheduler-body .k-scheduler-cell {
+            min-height: 80px;
         }
 
         // sass-lint:disable no-important
