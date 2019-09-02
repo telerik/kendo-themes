@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.1.0...@progress/kendo-theme-default@4.2.0) (2019-09-02)
+
+
+### Bug Fixes
+
+* **card:** update subtitle color to match design ([dbea6f6](https://github.com/telerik/kendo-themes/commit/dbea6f6))
+* **grid:** use correct color for search input ([f454860](https://github.com/telerik/kendo-themes/commit/f454860))
+* **scheduler:** add event top/bottom action styles ([dc8ea72](https://github.com/telerik/kendo-themes/commit/dc8ea72))
+* **window:** button container in window should inherit border color ([74ec78e](https://github.com/telerik/kendo-themes/commit/74ec78e))
+
+
+### Features
+
+* **card:** add callout and update styles based on the design ([bf3bc1c](https://github.com/telerik/kendo-themes/commit/bf3bc1c))
+* **colorpicker:** add clear button styles for angular colorpicker ([a108aa4](https://github.com/telerik/kendo-themes/commit/a108aa4))
+* **filter:** widget styles ([2334e35](https://github.com/telerik/kendo-themes/commit/2334e35))
+* **pdf-viewer:** add search dialog styles ([4e4742e](https://github.com/telerik/kendo-themes/commit/4e4742e))
+* **pdf-viewer:** add text layer sass styles ([bcf3a3a](https://github.com/telerik/kendo-themes/commit/bcf3a3a))
+* **scheduler:** implement scheduler flex rendering ([ea42eea](https://github.com/telerik/kendo-themes/commit/ea42eea))
+* **timeline:** widget styles ([dbee03c](https://github.com/telerik/kendo-themes/commit/dbee03c))
+
+
+
+
 <a name="4.1.0"></a>
 # [4.1.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.0.0...@progress/kendo-theme-default@4.1.0) (2019-07-26)
 

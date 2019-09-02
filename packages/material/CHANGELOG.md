@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.1.0...@progress/kendo-theme-material@3.2.0) (2019-09-02)
+
+
+### Bug Fixes
+
+* **card:** update subtitle color to match design ([dbea6f6](https://github.com/telerik/kendo-themes/commit/dbea6f6))
+* **popup:** upload file layout in grid popup editor ([8b26948](https://github.com/telerik/kendo-themes/commit/8b26948))
+
+
+### Features
+
+* **card:** add callout and update styles based on the design ([bf3bc1c](https://github.com/telerik/kendo-themes/commit/bf3bc1c))
+* **filter:** widget styles ([2334e35](https://github.com/telerik/kendo-themes/commit/2334e35))
+* **pdf-viewer:** add search dialog styles ([4e4742e](https://github.com/telerik/kendo-themes/commit/4e4742e))
+* **pdf-viewer:** add text layer sass styles ([bcf3a3a](https://github.com/telerik/kendo-themes/commit/bcf3a3a))
+* **timeline:** widget styles ([dbee03c](https://github.com/telerik/kendo-themes/commit/dbee03c))
+
+
+
+
 <a name="3.1.0"></a>
 # [3.1.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.0.0...@progress/kendo-theme-material@3.1.0) (2019-07-26)
 
