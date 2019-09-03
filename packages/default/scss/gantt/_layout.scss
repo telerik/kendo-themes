@@ -162,6 +162,11 @@
         .k-grid-content {
             overflow-x: scroll;
         }
+        .k-header {
+            padding: $grid-header-padding-y $grid-header-padding-x;
+            border-width: 0 0 1px $grid-cell-vertical-border-width;
+            white-space: nowrap;
+        }
     }
 
 
@@ -469,8 +474,18 @@
         .k-task-wrap:not(.k-milestone-wrap) {
             margin: 0 -26px;
         }
-        .k-timeline .k-gantt-tasks tbody {
-            text-align: left;
+
+        .k-gantt-timeline {
+
+            .k-gantt-tasks tbody {
+                text-align: left;
+            }
+            .k-header {
+                border-width: 0 $grid-cell-vertical-border-width 1px 0;
+            }
+            .k-header:first-child {
+                border-right-width: 0;
+            }
         }
 
         .k-task-content {
