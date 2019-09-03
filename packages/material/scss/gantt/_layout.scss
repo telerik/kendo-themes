@@ -60,6 +60,20 @@
     }
 
 
+    //Timeline
+    .k-gantt-timeline {
+
+        .k-header {
+            font-weight: 700;
+        }
+        .k-rtl & {
+
+            .k-header {
+                border-width: 0 $grid-cell-vertical-border-width 1px 0;
+            }
+        }
+    }
+
     // Treelist
     .k-gantt-treelist {}
 
