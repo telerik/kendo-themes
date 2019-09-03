@@ -1,12 +1,12 @@
 @include exports("filter/theme") {
 
     .k-filter {
-        .k-filter-field {
-            color: $filter-field-text;
+        .k-filter-preview-field {
+            color: $filter-preview-field-text;
         }
 
-        .k-filter-operator {
-            color: $filter-operator-text;
+        .k-filter-preview-operator {
+            color: $filter-preview-operator-text;
         }
 
         .k-filter-item::before,
