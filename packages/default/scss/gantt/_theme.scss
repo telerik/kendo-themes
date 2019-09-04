@@ -53,6 +53,15 @@
     }
 
 
+    // Timeline
+    .k-gantt-timeline {
+
+        .k-header {
+            border-color: inherit;
+        }
+    }
+
+
     // Treelist
     .k-gantt-treelist {
         background-color: darken( $panel-bg, 2 );
