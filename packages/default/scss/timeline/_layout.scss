@@ -1,12 +1,6 @@
 @include exports("timeline/layout") {
 
     .k-timeline {
-        width: 100%;
-        padding: 0 $timeline-spacing-x;
-        margin: $timeline-spacing-y 0;
-        position: relative;
-        box-sizing: border-box;
-        border: 0;
 
         ul {
             margin: 0;
@@ -100,6 +94,15 @@
         }
     }
 
+    .k-timeline-vertical,
+    .k-timeline-horizontal {
+        padding: 0 $timeline-spacing-x;
+        margin: $timeline-spacing-y 0;
+        width: 100%;
+        position: relative;
+        box-sizing: border-box;
+        border: 0;
+    }
 
     .k-timeline-vertical,
     .k-timeline-horizontal .k-timeline-track-wrap  {
