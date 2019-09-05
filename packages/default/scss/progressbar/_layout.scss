@@ -84,6 +84,7 @@
         }
 
         > .k-state-selected {
+            width: 0;
             flex-direction: row;
         }
 
@@ -128,6 +129,7 @@
         }
 
         > .k-state-selected {
+            height: 0;
             flex-direction: column-reverse;
             align-self: flex-end;
         }
