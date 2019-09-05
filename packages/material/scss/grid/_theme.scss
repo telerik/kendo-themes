@@ -92,7 +92,19 @@
         thead > tr:not(:only-child) > th {
             border-left-color: $grid-border;
         }
+
+        .k-grid-header-sticky {
+            @include fill($grid-sticky-text, $grid-sticky-bg, $grid-sticky-border);
+        }
     }
+
+    // Container
+    .k-grid-container {
+        .k-grid-content-sticky {
+            @include fill($grid-sticky-text, $grid-sticky-bg, $grid-sticky-border);
+        }
+    }
+
     .k-grouping-header .k-group-indicator {
         background-color: $grid-selected-bg;
 
