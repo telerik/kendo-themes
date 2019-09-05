@@ -619,6 +619,9 @@
     .k-i-sln::before { content: "\e920"; }
     .k-i-cloud::before { content: "\e921"; }
     .k-i-file-horizontal::before { content: "\e922"; }
+    .k-i-hand::before { content: "\e158"; }
+    .k-i-cursor::before { content: "\e159"; }
+
 
     // Aliases
     .k-i-page-portrait { @extend .k-i-file-vertical; }

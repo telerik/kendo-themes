@@ -158,6 +158,12 @@
             &:not(:last-child) {
                 margin-right: $toolbar-padding-x;
             }
+
+            .k-separator {
+                margin-left: 0;
+                margin-right: 0;
+                border-color: $panel-border;
+            }
         }
 
         &[dir="rtl"] {

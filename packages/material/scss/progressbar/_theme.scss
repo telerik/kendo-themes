@@ -47,8 +47,8 @@
 
 @include exports("progressbar/theme") {
 
-    $progressbar-status-offset: ($progressbar-height * 2) !default;
     $progressbar-status-font-size: 11px !default;
+    $progressbar-status-offset: ($progressbar-height + $progressbar-status-font-size) !default;
     $progressbar-indeterminate-animation-timing: 2s infinite !default;
 
     @include progressbar-indeterminate-animation(horizontal);
@@ -74,19 +74,14 @@
     }
 
     .k-progressbar-horizontal {
-        .k-progress-status-wrap {
-            top: -$progressbar-status-offset;
+        .k-progress-status {
+            margin-top: -$progressbar-status-offset;
         }
     }
 
     .k-progressbar-vertical {
-
-        .k-progress-status-wrap {
-            top: 0;
-            left: -$progressbar-status-offset;
-        }
-        &.k-progressbar-reverse .k-progress-status-wrap {
-            left: $progressbar-status-offset;
+        .k-progress-status {
+            margin-right: -$progressbar-status-offset;
         }
     }
 
