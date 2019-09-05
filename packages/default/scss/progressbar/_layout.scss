@@ -6,36 +6,20 @@
         border-width: 0;
         font-size: $font-size-sm;
         line-height: $progressbar-height;
-        display: inline-flex;
+        display: inline-grid;
         vertical-align: middle;
         position: relative;
         overflow: hidden;
 
 
-        // Status
-        .k-progress-status-wrap {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        .k-progress-status {
-            padding: 0 ($spacer-x / 2);
-            min-width: 10px;
-            text-align: center;
-            display: inline-block;
-            white-space: nowrap;
-        }
-
+        // Selection
         > .k-state-selected {
-            position: absolute;
-            overflow: hidden;
-            border-style: solid;
             border-width: 0;
-
-            .k-progress-status-wrap {}
+            border-style: solid;
+            display: flex;
+            overflow: hidden;
+            grid-column: 1 / -1;
+            grid-row: 1 / -1;
         }
 
 
@@ -47,6 +31,8 @@
             display: flex;
             align-items: stretch;
             flex: 1;
+            grid-column: 1 / -1;
+            grid-row: 1 / -1;
         }
         .k-item {
             display: block;
@@ -58,24 +44,47 @@
     }
 
 
+    // Status
+    .k-progress-status-wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+
+        &.k-progress-start { justify-content: flex-start; }
+        &.k-progress-center { justify-content: center; }
+        &.k-progress-end { justify-content: flex-end; }
+    }
+    .k-progress-status {
+        padding: 0 ($spacer-x / 2);
+        padding-block-start: 0;
+        padding-block-end: 0;
+        padding-inline-start: ($spacer-x / 2);
+        padding-inline-end: ($spacer-x / 2);
+        min-width: 10px;
+        text-align: center;
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+
     // Horizontal
     .k-progressbar-horizontal {
         width: 27em;
         height: $progressbar-height;
-        flex-direction: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: $progressbar-height;
 
 
         .k-progress-status-wrap {
             flex-direction: row;
-            justify-content: flex-end;
-            top: 0;
-            left: 0;
         }
+
         > .k-state-selected {
-            left: 0;
-            right: auto;
-            top: 0;
-            height: 100%;
+            flex-direction: row;
         }
 
 
@@ -86,21 +95,17 @@
         .k-item {}
         .k-item + .k-item {
             border-left-width: 1px;
+            border-inline-start-width: 1px;
+            border-inline-end-width: 0;
         }
 
 
         // Horizontal reverse
         &.k-progressbar-reverse {
-            flex-direction: row-reverse;
 
-            .k-progress-status-wrap {
-                justify-content: flex-start;
-                left: auto;
-                right: 0;
-            }
             > .k-state-selected {
-                left: auto;
-                right: 0;
+                flex-direction: row-reverse;
+                justify-self: flex-end;
             }
 
         }
@@ -111,25 +116,20 @@
     .k-progressbar-vertical {
         width: $progressbar-height;
         height: 27em;
-        flex-direction: column;
-        justify-content: flex-end;
+        grid-template-columns: $progressbar-height;
+        grid-template-rows: 1fr;
 
 
         .k-progress-status-wrap {
-            flex-direction: column;
-            justify-content: flex-start;
-            left: 0;
-            bottom: 0;
-            top: auto;
+            flex-direction: column-reverse;
         }
         .k-progress-status {
-            transform: rotate(-90deg) translateX(-100%);
-            transform-origin: 0 0;
-            position: absolute;
+            writing-mode: vertical-lr;
         }
+
         > .k-state-selected {
-            bottom: 0;
-            width: 100%;
+            flex-direction: column-reverse;
+            align-self: flex-end;
         }
 
 
@@ -140,32 +140,19 @@
         .k-item {}
         .k-item + .k-item {
             border-top-width: 1px;
+            border-block-start-width: 1px;
+            border-block-end-width: 0;
         }
 
 
         // Vertical reverse
         &.k-progressbar-reverse {
-            flex-direction: column-reverse;
+            flex-direction: column;
 
-            .k-progress-status-wrap {
-                justify-content: flex-end;
-                top: 0;
-                bottom: auto;
-            }
-            .k-progress-status {
-                transform: rotate(90deg) translateX(-100%);
-                transform-origin: 0 100%;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-            }
             > .k-state-selected {
-                left: auto;
-                right: 0;
-                bottom: auto;
-                top: 0;
+                flex-direction: column;
+                align-self: flex-start;
             }
-
         }
     }
 
@@ -187,18 +174,43 @@
 
     .k-rtl .k-progressbar,
     .k-progressbar[dir="rtl"] {
-        direction: ltr;
+        direction: rtl;
     }
 
-    .k-progressbar-horizontal {
-        .k-rtl &,
-        &[dir="rtl"] {
-            transform: scaleX(-1);
+}
 
-            .k-progress-status {
-                transform: scaleX(-1);
-                direction: rtl;
-            }
+
+
+
+@include exports("progressbar/layout/ie11") {
+
+    .k-progressbar {
+        display: -ms-inline-grid;
+
+        > .k-progress-status-wrap,
+        > .k-state-selected {
+            -ms-grid-column: 1;
+            -ms-grid-row: 1;
+        }
+    }
+    .k-progressbar-horizontal {
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: $progressbar-height;
+
+        &.k-progressbar-reverse > .k-state-selected {
+            -ms-grid-column-align: end;
+        }
+    }
+    .k-progressbar-vertical {
+        -ms-grid-columns: $progressbar-height;
+        -ms-grid-rows: 1fr;
+
+        > .k-state-selected {
+            -ms-grid-row-align: end;
+        }
+
+        &.k-progressbar-reverse > .k-state-selected {
+            -ms-grid-row-align: start;
         }
     }
 
