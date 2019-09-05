@@ -94,13 +94,17 @@
             }
             .k-textbox .k-icon {
                 position: absolute;
-                top: auto;
-                margin: 0;
+                font-size: inherit;
+
+                .k-ie & {
+                    position: relative;
+                }
             }
 
             .k-match-case-button {
+                display: inline-flex;
                 height: $pdf-viewer-search-dialog-input-button-height;
-                font-size: initial;
+                justify-content: center;
             }
 
             .k-search-matches {
