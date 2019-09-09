@@ -954,6 +954,13 @@
         margin-bottom: -1px;
     }
 
+    .k-grid-header .k-header.k-grid-header-sticky,
+    .k-grid-header .k-filter-row .k-grid-header-sticky,
+    .k-grid-content-sticky {
+        position: sticky;
+        z-index: 1;
+    }
+
     .k-header.k-drag-clue {
         overflow: hidden;
     }

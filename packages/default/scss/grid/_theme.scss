@@ -173,6 +173,17 @@
                 background-color: $selected-bg;
             }
         }
+
+        .k-grid-header-sticky {
+            @include fill($grid-sticky-text, $grid-sticky-bg, $grid-sticky-border);
+        }
+    }
+
+    // Container
+    .k-grid-container {
+        .k-grid-content-sticky {
+            @include fill($grid-sticky-text, $grid-sticky-bg, $grid-sticky-border);
+        }
     }
 
     .k-column-list-item:hover,
