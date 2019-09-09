@@ -8,7 +8,9 @@
         position: relative;
         table-layout: fixed;
 
-        .k-content {
+        > .k-content,
+        iframe.k-content,
+        .k-editor-content {
             margin: 0;
             padding: 0;
             width: 100%;
@@ -24,7 +26,8 @@
             flex-direction: column;
             display: flex;
         }
-        .k-content {
+        > .k-content,
+        .k-editor-content {
             overflow-y: auto;
 
             > .ProseMirror { // sass-lint:disable-line class-name-format
@@ -36,7 +39,8 @@
     // Reset styles if in sandbox mode
     .k-editor-sandbox {
 
-        .k-content * {
+        > .k-content *,
+        .k-editor-content * {
             color: initial;
             background-color: initial;
             font-size: initial;
@@ -44,7 +48,8 @@
             font-family: initial;
         }
 
-        &.k-ie .k-content * {
+        &.k-ie > .k-content *,
+        &.k-ie .k-editor-content * {
             color: #000000;
             background-color: transparent;
             font-size: medium;
