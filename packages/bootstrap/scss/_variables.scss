@@ -1412,8 +1412,10 @@ $filter-padding-y: $padding-y !default;
 $filter-bottom-margin: 2.1em !default;
 $filter-line-size: 1px !default;
 
-$filter-field-text: $accent !default;
-$filter-operator-text: rgba($text-color, .6) !default;
+$filter-operator-dropdown-width: 15em !default;
+
+$filter-preview-field-text: $accent !default;
+$filter-preview-operator-text: rgba($text-color, .6) !default;
 
 
 // Timeline
