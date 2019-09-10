@@ -456,6 +456,7 @@
     .k-spreadsheet .k-selection-wrapper .k-spreadsheet-editor-button {
         position: absolute;
         padding: 0;
+        z-index: 60;
     }
 
     .k-spreadsheet-active-cell {
