@@ -101,7 +101,6 @@
             align-items: center;
             justify-content: space-between;
             flex: 0 0 auto;
-            line-height: $calendar-header-height;
 
             .k-title {
                 font-weight: bold;
@@ -109,9 +108,6 @@
             .k-today {
                 cursor: pointer;
             }
-        }
-        &:not(.k-calendar-infinite) .k-calendar-header {
-            line-height: inherit;
 
             .k-calendar-nav {
                 white-space: nowrap;
