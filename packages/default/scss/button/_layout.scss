@@ -108,6 +108,9 @@
     .k-button-group {
         margin: 0;
         padding: 0;
+        border-width: 0;
+        color: inherit;
+        background-color: transparent;
         list-style: none;
         outline: 0;
         white-space: nowrap;
