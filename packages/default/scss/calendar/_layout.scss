@@ -95,7 +95,7 @@
 
 
         // Calendar header
-        .k-calendar-header {
+        @at-root .k-calendar-header {
             padding: $calendar-header-padding-y $calendar-header-padding-x;
             display: flex;
             align-items: center;
@@ -110,13 +110,19 @@
             }
 
             .k-calendar-nav {
-                white-space: nowrap;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: nowrap;
             }
+
+            .k-button { @extend .k-button-flat; }
         }
 
 
         // Footer
-        .k-footer {
+        .k-footer,
+        .k-calendar-footer {
             text-align: center;
             clear: both;
         }
@@ -149,7 +155,8 @@
 
 
         // Content
-        .k-content {
+        .k-content,
+        .k-calendar-content {
             margin: 0;
             text-align: center;
             flex: 1 1 auto;
@@ -554,63 +561,6 @@
     }
 }
 
-@include exports("multiviewcalendar/layout/minimal") {
-
-    .k-calendar.k-calendar-minimal {
-        &.k-calendar-infinite {
-            padding: 0;
-
-            .k-calendar-view,
-            .k-calendar-monthview {
-                padding: 0;
-
-                th {
-                    text-align: center;
-                }
-            }
-
-            > .k-button {
-                @extend .k-button-flat;
-                width: auto;
-                height: auto;
-                opacity: .6;
-                transition: opacity .2s ease-in-out;
-                padding: 0;
-                margin: $multiviewcalendar-navigation-margin-y $multiviewcalendar-navigation-margin-x;
-
-                &:hover,
-                &:active {
-                    opacity: 1;
-                    transition: opacity .2s ease-in-out;
-
-                    &::before {
-                        opacity: 0;
-                    }
-                }
-
-                &:focus {
-                    &::after {
-                        opacity: 0;
-                    }
-                }
-
-                .k-icon {
-                    font-size: 1.5em;
-                }
-            }
-
-            > :first-child,
-            > :last-child {
-                padding: 0 ($calendar-content-padding-x / 2);
-            }
-
-            > .k-calendar-view {
-                border-width: 0;
-            }
-        }
-    }
-}
-
 
 
 @include exports("daterangepicker/layout") {
@@ -629,8 +579,10 @@
     .k-rtl .k-calendar,
     .k-calendar[dir="rtl"] {
 
-        .k-nav-prev .k-icon,
-        .k-nav-next .k-icon {
+        .k-nav-prev,
+        .k-nav-next,
+        .k-prev-view,
+        .k-next-view {
             transform: scaleX(-1);
         }
 
