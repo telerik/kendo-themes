@@ -57,11 +57,6 @@ $calendar-today-color: $accent;
         }
 
 
-        .k-calendar-header {
-            .k-button { @extend .k-button-flat; }
-        }
-
-
         // Today navigation
         .k-footer .k-nav-today,
         .k-calendar-header .k-today {

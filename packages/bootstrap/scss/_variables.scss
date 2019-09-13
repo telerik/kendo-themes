@@ -945,7 +945,7 @@ $calendar-header-button-pressed-border: $button-pressed-border !default;
 $calendar-header-button-pressed-gradient: $button-pressed-gradient !default;
 $calendar-header-button-pressed-shadow: $button-pressed-shadow !default;
 
-$calendar-header-cell-text: $calendar-header-text !default;
+$calendar-header-cell-text: null !default;
 $calendar-header-cell-opacity: $disabled-opacity !default;
 
 $calendar-navigation-bg: $calendar-header-bg !default;
@@ -962,8 +962,8 @@ $calendar-weekend-opacity: 1 !default;
 $calendar-today-style: box !default;
 $calendar-today-color: $accent !default;
 
-$calendar-week-number-bg: $calendar-header-bg !default;
-$calendar-week-number-text: $calendar-header-text !default;
+$calendar-week-number-bg: transparent !default;
+$calendar-week-number-text: $calendar-header-cell-text !default;
 $calendar-week-number-opacity: $calendar-header-cell-opacity !default;
 
 $calendar-other-month-opacity: $calendar-header-cell-opacity !default;
