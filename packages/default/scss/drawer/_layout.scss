@@ -6,6 +6,10 @@
         flex-wrap: nowrap;
         align-items: flex-start;
     }
+    kendo-drawer.k-drawer,
+    kendo-drawer .k-drawer-wrapper {
+        transition: none;
+    }
     .k-drawer {
         height: 100%;
         border-width: 0;
