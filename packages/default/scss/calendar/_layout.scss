@@ -119,6 +119,9 @@
             .k-button { @extend .k-button-flat; }
         }
 
+        > .k-calendar-header {
+            min-width: $calendar-header-min-width;
+        }
 
         // Footer
         .k-footer,
@@ -144,6 +147,7 @@
             position: relative;
             z-index: 1;
             overflow: hidden;
+            margin: auto;
         }
         &.k-week-number .k-calendar-view {
             width: (8 * $calendar-cell-size);
