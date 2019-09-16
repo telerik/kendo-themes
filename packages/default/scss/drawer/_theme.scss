@@ -1,68 +1,60 @@
 @include exports("drawer/theme") {
 
-    .k-drawer-container {
-        background-color: $drawer-bg;
-        color: $drawer-text;
-        border-color: $drawer-border;
-
-        &,
-        .k-drawer-items {
-
-            // Scrollbar styles for Mozilla
-            scrollbar-color: $drawer-scrollbar-color $drawer-scrollbar-bg;
-
-            // Scrollbar styles for Chrome, Safari and Opera
-            &::-webkit-scrollbar-track {
-                background: $drawer-scrollbar-bg;
-            }
-
-            &::-webkit-scrollbar-thumb {
-                background: $drawer-scrollbar-color;
-            }
-
-            &::-webkit-scrollbar-thumb:hover {
-                background: $drawer-scrollbar-hovered-color;
-            }
-        }
+    .k-drawer {
+        @include fill(
+            $drawer-text,
+            $drawer-bg,
+            $drawer-border
+        );
     }
 
-    .k-drawer-items {
-        .k-drawer-item {
-            color: $drawer-text;
+    // Drawer items
+    .k-drawer-wrapper {
+        scrollbar-color: $drawer-scrollbar-color $drawer-scrollbar-bg;
+
+        &::-webkit-scrollbar-track {
+            background: $drawer-scrollbar-bg;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $drawer-scrollbar-color;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: $drawer-scrollbar-hovered-color;
+        }
+    }
+    .k-drawer-item {
+
+        &:hover,
+        &.k-state-hover {
+            color: $drawer-hovered-text;
+            background-color: $drawer-hovered-bg;
+        }
+
+        &:focus,
+        &.k-state-focused {
+            background-color: $drawer-focused-bg;
+            box-shadow: $drawer-focused-shadow;
 
             &:hover,
             &.k-state-hover {
                 color: $drawer-hovered-text;
                 background-color: $drawer-hovered-bg;
-                cursor: pointer;
             }
+        }
 
-            &:focus,
-            &.k-state-focused {
-                background-color: $drawer-focused-bg;
-                box-shadow: $drawer-focused-shadow;
+        &.k-state-selected {
+            color: $drawer-selected-text;
+            background-color: $drawer-selected-bg;
 
-                &:hover,
-                &.k-state-hover {
-                    color: $drawer-hovered-text;
-                    background-color: $drawer-hovered-bg;
-                }
-            }
-
-            &.k-state-selected {
-                color: $drawer-selected-text;
-                background-color: $drawer-selected-bg;
-
-                &:hover,
-                &.k-state-hover {
-                    color: $drawer-selected-hover-text;
-                    background-color: $drawer-selected-hover-bg;
-                }
-            }
-
-            &.k-drawer-separator {
-                background-color: $drawer-border;
+            &:hover,
+            &.k-state-hover {
+                color: $drawer-selected-hover-text;
+                background-color: $drawer-selected-hover-bg;
             }
         }
     }
+    .k-drawer-separator {
+        background-color: $drawer-border;
+    }
+
 }
