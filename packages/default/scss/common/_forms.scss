@@ -260,6 +260,12 @@ $forms-invalid-color: $error !default;
         &[dir="rtl"] {
             padding-left: calc( #{ $picker-select-size } );
             padding-right: 0;
+
+            .k-clear-value,
+            .k-i-loading {
+                right: auto;
+                left: $input-icon-offset;
+            }
         }
     }
 
