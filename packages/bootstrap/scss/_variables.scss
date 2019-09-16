@@ -901,6 +901,8 @@ $calendar-header-padding-x-sm: ($calendar-header-padding-y / 2) !default;
 $calendar-header-padding-y-sm: $calendar-header-padding-x-sm !default;
 $calendar-header-border-width: 1px !default;
 
+$calendar-header-min-width: 280px !default;
+
 $calendar-content-padding-x: $calendar-header-padding-x !default;
 $calendar-content-padding-y: $calendar-header-padding-y !default;
 
