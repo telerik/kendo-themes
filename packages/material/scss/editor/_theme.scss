@@ -23,12 +23,52 @@
     .k-editor-toolbar {
         @include appearance( toolbar );
 
-        a.k-tool {
+        a.k-tool,
+        .k-picker-wrap,
+        .k-dropdown-wrap {
             @extend .k-button-flat;
             @include border-radius( 0 );
 
             &::before {
                 @extend .k-button-overlay;
+                display: block;
+            }
+
+            // Hovered state
+            &:hover,
+            &.k-state-hover {
+                &::before {
+                    @include opacity( $flat-button-hover-opacity );
+                }
+            }
+
+            // Focused state
+            &:focus,
+            &.k-state-focused {
+                &::before {
+                    @include opacity( $flat-button-focused-opacity );
+                }
+            }
+            &.k-no-focus:not(:hover),
+            &.k-no-focus:not(.k-state-hover) {
+                &::before {
+                    @include opacity( 0 );
+                }
+            }
+
+            // Pressed state
+            &:active,
+            &.k-state-active {
+                &::before {
+                    @include opacity( $flat-button-active-opacity );
+                }
+            }
+
+            // Selected state
+            &.k-state-selected {
+                &::before {
+                    @include opacity( $flat-button-selected-opacity );
+                }
             }
         }
 
