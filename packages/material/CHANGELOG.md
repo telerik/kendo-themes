@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.3.0"></a>
+# [3.3.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.2.0...@progress/kendo-theme-material@3.3.0) (2019-09-16)
+
+
+### Bug Fixes
+
+* Gantt to use td elements in its Timeline header layout table telerik/kendo[#9756](https://github.com/telerik/kendo-themes/issues/9756) ([a61b20c](https://github.com/telerik/kendo-themes/commit/a61b20c))
+* **calendar:** adjust calendar width for blazor suite ([9e28dfb](https://github.com/telerik/kendo-themes/commit/9e28dfb))
+* **filter:** update width of filter operator and grouping elements ([76f2e2f](https://github.com/telerik/kendo-themes/commit/76f2e2f))
+* **grid:** add styles for locked columns feature ([64cc404](https://github.com/telerik/kendo-themes/commit/64cc404))
+
+
+### Features
+
+* **calendar:** add styles for blazor calendar ([a3db613](https://github.com/telerik/kendo-themes/commit/a3db613))
+* **progressbar:** add styles for progress label position ([ae1a780](https://github.com/telerik/kendo-themes/commit/ae1a780))
+
+
+
+
 <a name="3.2.0"></a>
 # [3.2.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.1.0...@progress/kendo-theme-material@3.2.0) (2019-09-02)
 

@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.3.0"></a>
+# [4.3.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.2.0...@progress/kendo-theme-default@4.3.0) (2019-09-16)
+
+
+### Bug Fixes
+
+* **buttongroup:** remove double border from .k-widget.k-button-group ([47bcd7e](https://github.com/telerik/kendo-themes/commit/47bcd7e))
+* **calendar:** adjust calendar width for blazor suite ([9e28dfb](https://github.com/telerik/kendo-themes/commit/9e28dfb))
+* **editor:** scope k-editor k-content styles so they dont interfere with editor dialog content ([97187c7](https://github.com/telerik/kendo-themes/commit/97187c7))
+* **filter:** update width of filter operator and grouping elements ([76f2e2f](https://github.com/telerik/kendo-themes/commit/76f2e2f))
+* **grid:** add styles for locked columns feature ([64cc404](https://github.com/telerik/kendo-themes/commit/64cc404))
+* **pdf-viewer:** match case button incorrectly positioned in ie ([638115b](https://github.com/telerik/kendo-themes/commit/638115b))
+* add border color styling for the modified header table of the Gantt Timeline ([73ce888](https://github.com/telerik/kendo-themes/commit/73ce888))
+* Gantt to use td elements in its Timeline header layout table telerik/kendo[#9756](https://github.com/telerik/kendo-themes/issues/9756) ([a61b20c](https://github.com/telerik/kendo-themes/commit/a61b20c))
+* **progressbar:** set initial size to progress so it animates smoothly ([127aaa4](https://github.com/telerik/kendo-themes/commit/127aaa4))
+* **rating:** incorrect position of parts with svg template ([a0cffbd](https://github.com/telerik/kendo-themes/commit/a0cffbd))
+* **rating:** remove rating background color ([a81f413](https://github.com/telerik/kendo-themes/commit/a81f413))
+* **spreadsheet:** custom editor popup flickering on open ([618deb6](https://github.com/telerik/kendo-themes/commit/618deb6))
+* **timeline:** improve spacing in timeline and timeline cards ([55efe92](https://github.com/telerik/kendo-themes/commit/55efe92))
+* **timeline:** scope styles so they dont affect gantt ([7e1067a](https://github.com/telerik/kendo-themes/commit/7e1067a))
+* **toolbar:** spacing between separator and adjacent element ([3144194](https://github.com/telerik/kendo-themes/commit/3144194))
+
+
+### Features
+
+* **calendar:** add styles for blazor calendar ([a3db613](https://github.com/telerik/kendo-themes/commit/a3db613))
+* **drawer:** add styles for angular drawer ([f091bad](https://github.com/telerik/kendo-themes/commit/f091bad))
+* **pdf-viewer:** add pan and selection icons ([9f86a1b](https://github.com/telerik/kendo-themes/commit/9f86a1b))
+* **progressbar:** add styles for progress label position ([ae1a780](https://github.com/telerik/kendo-themes/commit/ae1a780))
+
+
+
+
 <a name="4.2.0"></a>
 # [4.2.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.1.0...@progress/kendo-theme-default@4.2.0) (2019-09-02)
 
