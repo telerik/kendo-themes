@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.3.1"></a>
+## [3.3.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.3.0...@progress/kendo-theme-material@3.3.1) (2019-09-16)
+
+
+### Bug Fixes
+
+* **kendo-jquery:** no interactive states in material editor toolbar after dart-sass refactoring ([23d9c3c](https://github.com/telerik/kendo-themes/commit/23d9c3c))
+
+
+
+
 <a name="3.3.0"></a>
 # [3.3.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.2.0...@progress/kendo-theme-material@3.3.0) (2019-09-16)
 
