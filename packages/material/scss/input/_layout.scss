@@ -48,4 +48,11 @@
             }
         }
     }
+
+    .k-textbox-container {
+        &.k-state-focused > .k-label {
+            top: calc( #{$floating-label-height} + #{$input-border-width} + #{$input-padding-y} - 10px );
+            padding: 0 $textarea-floating-label-padding;
+        }
+    }
 }
