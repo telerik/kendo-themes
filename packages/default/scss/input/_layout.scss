@@ -77,9 +77,10 @@
     }
 
     .k-textbox-container {
-        position: relative;
         padding-top: $floating-label-height;
         display: inline-flex;
+        vertical-align: middle;
+        position: relative;
         width: $textbox-default-width;
         flex-direction: column;
         justify-content: stretch;
