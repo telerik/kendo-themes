@@ -17,6 +17,7 @@
         flex-direction: column;
         flex: 0 0 auto;
         transition: all 300ms ease-in-out; // sass-lint:disable-line no-transition-all
+        overflow: hidden;
 
         // Borders
         .k-drawer-mini &.k-drawer-start,
@@ -165,6 +166,35 @@
     .k-rtl,
     [dir="rtl"] {
 
+        // Borders
+        &.k-drawer-mini .k-drawer-start,
+        .k-drawer-mini .k-drawer-start,
+        .k-drawer-expanded .k-drawer-start,
+        &.k-drawer-expanded .k-drawer-start {
+            border-left-width: $drawer-border-width;
+            border-right-width: 0;
+        }
+        &.k-drawer-mini .k-drawer-end,
+        .k-drawer-mini .k-drawer-end,
+        &.k-drawer-expanded .k-drawer-end
+        .k-drawer-expanded .k-drawer-end {
+            border-left-width: 0;
+            border-right-width: $drawer-border-width;
+        }
+
+        // Position
+        &.k-drawer-overlay .k-drawer-start,
+        .k-drawer-overlay .k-drawer-start {
+            left: auto;
+            right: 0;
+        }
+        &.k-drawer-overlay .k-drawer-end,
+        .k-drawer-overlay .k-drawer-end {
+            left: 0;
+            right: auto;
+        }
+
+        // Order
         .k-drawer-left.k-drawer-push .k-drawer {
             order: 1;
         }
