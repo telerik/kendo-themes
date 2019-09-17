@@ -93,8 +93,6 @@ $theme-colors: () !default;
     $modal-content-bg: $component-bg !default;
     $modal-content-color: $component-color !default;
     $modal-content-border-color: $component-border-color !default;
-    $modal-header-bg: $modal-content-bg !default;
-    $modal-header-color: $modal-content-color !default;
     $modal-header-border-color: $component-border-color !default;
 
     $custom-control-indicator-bg: try-lighten( $input-border-color, 6.7 ) !default;
