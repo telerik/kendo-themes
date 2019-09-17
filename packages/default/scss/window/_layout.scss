@@ -44,13 +44,20 @@
 
     // Title bar title text
     .k-window-title {
-        margin: -.15em 0;
+        margin: $window-title-spacing;
         font-size: $window-title-font-size;
         line-height: $window-title-line-height;
         text-overflow: ellipsis;
         overflow: hidden;
         cursor: default;
         flex: 1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        &::before {
+            content: "\200b";
+        }
     }
 
 

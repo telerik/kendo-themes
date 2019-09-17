@@ -1093,21 +1093,22 @@ $window-border-radius: $border-radius !default;
 
 $window-inner-padding-x: $modal-inner-padding !default;
 $window-inner-padding-y: $modal-inner-padding !default;
-$window-titlebar-border-width: 0 0 1px !default;
-$window-titlebar-border-style: solid !default;
-
-$window-title-font-size: $font-size-lg !default;
-$window-title-line-height: 1.3 !default;
 
 $window-titlebar-padding-x: $modal-header-padding !default;
 $window-titlebar-padding-y: $modal-header-padding !default;
+$window-titlebar-border-width: 0 0 1px !default;
+$window-titlebar-border-style: solid !default;
+
+$window-title-spacing: 0;
+$window-title-font-size: $font-size-lg !default;
+$window-title-line-height: $modal-title-line-height !default;
 
 $window-bg: $modal-content-bg !default;
 $window-text: $modal-content-color !default;
 $window-border: $modal-content-border-color !default;
 
-$window-titlebar-bg: $modal-header-bg !default;
-$window-titlebar-text: $modal-header-color !default;
+$window-titlebar-bg: null !default;
+$window-titlebar-text: null !default;
 $window-titlebar-border: $modal-header-border-color !default;
 
 $window-shadow: null !default;
