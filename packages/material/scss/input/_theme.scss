@@ -61,6 +61,7 @@
 
         &.k-state-focused > .k-label {
             color: $accent;
+            background-color: $base-bg;
         }
 
         .ng-invalid.ng-touched + .k-label,
