@@ -1107,8 +1107,8 @@ $window-bg: $modal-content-bg !default;
 $window-text: $modal-content-color !default;
 $window-border: $modal-content-border-color !default;
 
-$window-titlebar-bg: $modal-header-bg !default;
-$window-titlebar-text: $modal-header-color !default;
+$window-titlebar-bg: null !default;
+$window-titlebar-text: null !default;
 $window-titlebar-border: $modal-header-border-color !default;
 
 $window-shadow: null !default;
