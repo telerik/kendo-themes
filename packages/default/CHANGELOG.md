@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.3.1"></a>
+## [4.3.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.3.0...@progress/kendo-theme-default@4.3.1) (2019-09-17)
+
+
+### Bug Fixes
+
+* **colorpicker:** colorpicker is missing vertical-align middle ([1d3fc87](https://github.com/telerik/kendo-themes/commit/1d3fc87))
+* **drawer:** angular drawer is not properly end aligned ([39c44cf](https://github.com/telerik/kendo-themes/commit/39c44cf))
+* **textbox-container:** textbox container is missing vertical-align middle ([fa5a649](https://github.com/telerik/kendo-themes/commit/fa5a649))
+
+
+
+
 <a name="4.3.0"></a>
 # [4.3.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.2.0...@progress/kendo-theme-default@4.3.0) (2019-09-16)
 
