@@ -123,6 +123,16 @@
         flex-wrap: nowrap;
         cursor: pointer;
 
+        > .k-drawer-link {
+            margin: (-$drawer-item-padding-y) (-$drawer-item-padding-x);
+            padding: $drawer-item-padding-y $drawer-item-padding-x;
+            color: inherit;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            flex: 1 0 auto;
+        }
+
         .k-icon {
             margin: 0 $drawer-item-padding-x;
             font-size: $drawer-icon-size;
