@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.3.2"></a>
+## [4.3.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.3.1...@progress/kendo-theme-default@4.3.2) (2019-09-17)
+
+
+### Bug Fixes
+
+* **drawer:** add styles for angular drawer links ([d032d5c](https://github.com/telerik/kendo-themes/commit/d032d5c))
+* **window:** ensure correct min height for window / dialog with empty title ([6dbac0a](https://github.com/telerik/kendo-themes/commit/6dbac0a))
+* **window:** use precise line-height for window title in default theme ([8ef4426](https://github.com/telerik/kendo-themes/commit/8ef4426))
+* **window:** wrong height of window titlebar in bootstrap theme ([bce63f5](https://github.com/telerik/kendo-themes/commit/bce63f5))
+
+
+
+
 <a name="4.3.1"></a>
 ## [4.3.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.3.0...@progress/kendo-theme-default@4.3.1) (2019-09-17)
 

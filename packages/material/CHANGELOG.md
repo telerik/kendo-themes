@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.3.3"></a>
+## [3.3.3](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.3.2...@progress/kendo-theme-material@3.3.3) (2019-09-17)
+
+
+### Bug Fixes
+
+* **window:** wrong height of window titlebar in bootstrap theme ([bce63f5](https://github.com/telerik/kendo-themes/commit/bce63f5))
+
+
+
+
 <a name="3.3.2"></a>
 ## [3.3.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.3.1...@progress/kendo-theme-material@3.3.2) (2019-09-17)
 
