@@ -216,4 +216,20 @@
         }
     }
 
+    .k-overflow-container {
+        .k-button-group {
+            .k-button ~ .k-button {
+                margin-left: 0;
+            }
+            .k-button:first-child {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+            .k-button:last-child {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+    }
+
 }
