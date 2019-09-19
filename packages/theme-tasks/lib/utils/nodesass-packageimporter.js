@@ -8,7 +8,7 @@ const EMPTY_IMPORT = {
 const imported = new Set();
 
 function packageImporterFactory(options = { cache: false }) {
-    return function packageImporter(url, prev) {
+    function packageImporter(url, prev) {
         let file;
 
         if (url.startsWith("~")) {
@@ -31,7 +31,15 @@ function packageImporterFactory(options = { cache: false }) {
         imported.add(file);
 
         return { file };
-    };
+    }
+
+    packageImporter.resetImported = resetImported;
+
+    return packageImporter;
+}
+
+function resetImported() {
+    imported.clear();
 }
 
 
