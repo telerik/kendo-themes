@@ -7,7 +7,7 @@ $slider-tick-size: 2px !default;
 $slider-button-offset: 22px !default;
 $slider-alt-size: 36px !default;
 
-@import "~@progress/kendo-theme-default/scss/slider/layout";
+@import "~@progress/kendo-theme-default/scss/slider/_layout.scss";
 
 @include exports("slider/layout/material") {
     .k-slider {

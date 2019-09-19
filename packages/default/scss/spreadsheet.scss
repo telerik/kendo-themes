@@ -1,17 +1,16 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "button";
-@import "tabstrip";
-@import "toolbar";
-@import "window";
-
-@import "spreadsheet/images/image-default";
+@import "common/_all.scss";
+@import "button.scss";
+@import "tabstrip.scss";
+@import "toolbar.scss";
+@import "window.scss";
 
 
 // Component
-@import "spreadsheet/layout";
-@import "spreadsheet/theme";
+@import "spreadsheet/images/image-default.scss";
+@import "spreadsheet/_layout.scss";
+@import "spreadsheet/_theme.scss";

@@ -1,12 +1,12 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "window";
+@import "common/_all.scss";
+@import "window.scss";
 
 
 // Component
-@import "dialog/layout";
-@import "dialog/theme";
+@import "dialog/_layout.scss";
+@import "dialog/_theme.scss";

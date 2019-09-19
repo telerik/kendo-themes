@@ -1,13 +1,13 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "dialog";
-@import "treeview";
+@import "common/_all.scss";
+@import "dialog.scss";
+@import "treeview.scss";
 
 
 // Component
-@import "pivotgrid/layout";
-@import "pivotgrid/theme";
+@import "pivotgrid/_layout.scss";
+@import "pivotgrid/_theme.scss";

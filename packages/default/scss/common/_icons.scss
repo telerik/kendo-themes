@@ -1,4 +1,4 @@
-@import "./font/WebComponentsIcons";
+@import "./font/WebComponentsIcons.scss";
 
 @include exports( "common/icons" ) {
     $icon-font-url: map-get( $data-uris, "WebComponentsIcons.ttf" ) !default;

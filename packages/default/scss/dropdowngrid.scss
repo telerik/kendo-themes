@@ -1,12 +1,11 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "common/forms";
+@import "common/_all.scss";
 
 
 // Component
-@import "dropdowngrid/layout";
-@import "dropdowngrid/theme";
+@import "dropdowngrid/_layout.scss";
+@import "dropdowngrid/_theme.scss";

@@ -1,4 +1,4 @@
-@import "~@progress/kendo-theme-default/scss/mixins";
+@import "~@progress/kendo-theme-default/scss/_mixins.scss";
 
 @mixin input-ripple() {
     $height: 2 * $input-border-width;

@@ -1,8 +1,8 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 // Dependencies
 
 // Component
-@import "adaptive/layout";
-@import "adaptive/theme";
+@import "adaptive/_layout.scss";
+@import "adaptive/_theme.scss";

@@ -1,9 +1,9 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 // Dependencies
 
 
 // Component
-@import "badge/layout";
-@import "badge/theme";
+@import "badge/_layout.scss";
+@import "badge/_theme.scss";

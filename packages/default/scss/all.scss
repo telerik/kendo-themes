@@ -1,97 +1,98 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
+
 
 // Dependencies
-@import "common/all";
-@import "ripple";
-@import "popup";
+@import "common/_all.scss";
+@import "ripple.scss";
+@import "popup.scss";
 
 
 // Data management
-@import "pager";
-@import "grid";
-@import "spreadsheet";
-@import "pivotgrid";
-@import "treelist";
-@import "scrollview";
-@import "listview";
-@import "filter";
+@import "pager.scss";
+@import "grid.scss";
+@import "spreadsheet.scss";
+@import "pivotgrid.scss";
+@import "treelist.scss";
+@import "scrollview.scss";
+@import "listview.scss";
+@import "filter.scss";
 
 
 // Editors
-@import "autocomplete";
-@import "colorpicker";
-@import "combobox";
-@import "datetime";
-@import "dropdowngrid";
-@import "dropdownlist";
-@import "dropdowntree";
-@import "editor";
-@import "input";
-@import "multiselect";
-@import "numerictextbox";
-@import "slider";
-@import "upload";
-@import "validator";
-@import "switch";
-@import "maskedtextbox";
-@import "listbox";
-@import "rating";
+@import "autocomplete.scss";
+@import "colorpicker.scss";
+@import "combobox.scss";
+@import "datetime.scss";
+@import "dropdowngrid.scss";
+@import "dropdownlist.scss";
+@import "dropdowntree.scss";
+@import "editor.scss";
+@import "input.scss";
+@import "multiselect.scss";
+@import "numerictextbox.scss";
+@import "slider.scss";
+@import "upload.scss";
+@import "validator.scss";
+@import "switch.scss";
+@import "maskedtextbox.scss";
+@import "listbox.scss";
+@import "rating.scss";
 
 // Dataviz
-@import "dataviz";
-@import "map";
+@import "dataviz.scss";
+@import "map.scss";
 
 
 // Barcodes
-@import "barcode";
-@import "qrcode";
+@import "barcode.scss";
+@import "qrcode.scss";
 
 
 // Scheduling
-@import "calendar";
-@import "gantt";
-@import "scheduler";
+@import "calendar.scss";
+@import "gantt.scss";
+@import "scheduler.scss";
 
 
 // Media
-@import "mediaplayer";
+@import "mediaplayer.scss";
 
 
 // Layout
-@import "dialog";
-@import "notification";
-@import "responsivepanel";
-@import "splitter";
-@import "tooltip";
-@import "window";
+@import "dialog.scss";
+@import "notification.scss";
+@import "responsivepanel.scss";
+@import "splitter.scss";
+@import "tooltip.scss";
+@import "window.scss";
 
 
 // Navigation
-@import "button";
-@import "menu";
-@import "panelbar";
-@import "tabstrip";
-@import "toolbar";
-@import "treeview";
-@import "drawer";
+@import "button.scss";
+@import "menu.scss";
+@import "panelbar.scss";
+@import "tabstrip.scss";
+@import "toolbar.scss";
+@import "treeview.scss";
+@import "drawer.scss";
 
 
 // Interactivity & UX
-@import "progressbar";
-@import "scroller";
+@import "progressbar.scss";
+@import "scroller.scss";
 
 
 // Styling & Content
-@import "styling";
-@import "badge";
-@import "card";
-@import "timeline";
+@import "styling.scss";
+@import "badge.scss";
+@import "card.scss";
+@import "timeline.scss";
 
 
 // Chat
-@import "chat";
+@import "chat.scss";
 
 
 // PDF Viewer
-@import "pdf-viewer";
+@import "pdf-viewer.scss";

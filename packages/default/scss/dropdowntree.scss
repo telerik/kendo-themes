@@ -1,15 +1,14 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "common/forms";
-@import "popup";
-@import "input";
-@import "treeview";
+@import "common/_all.scss";
+@import "popup.scss";
+@import "input.scss";
+@import "treeview.scss";
 
 
 // Component
-@import "dropdowntree/layout";
-@import "dropdowntree/theme";
+@import "dropdowntree/_layout.scss";
+@import "dropdowntree/_theme.scss";

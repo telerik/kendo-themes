@@ -1,12 +1,12 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "adaptive";
+@import "common/_all.scss";
+@import "adaptive.scss";
 
 
 // Component
-@import "scheduler/layout";
-@import "scheduler/theme";
+@import "scheduler/_layout.scss";
+@import "scheduler/_theme.scss";

@@ -1,7 +1,7 @@
 $pager-buttons-size: 36px !default;
 $pager-buttons-padding: 0 !default;
 
-@import "~@progress/kendo-theme-default/scss/pager/layout";
+@import "~@progress/kendo-theme-default/scss/pager/_layout.scss";
 
 @include exports ("pager/layout/material") {
     $pager-elements-margin: 8px !default;
