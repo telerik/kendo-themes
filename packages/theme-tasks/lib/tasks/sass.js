@@ -41,6 +41,8 @@ const dartSassOptions = {
 
 // #region core
 function build(fileGlob = paths.sass.src, options = quickSassOptions) {
+    options.importer.resetImported();
+
     return gulp.src(fileGlob)
         .pipe(sass(options).on("error", sass.logError))
         .pipe(postcss(postcssPlugins))
