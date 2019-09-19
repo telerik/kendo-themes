@@ -1,12 +1,12 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/base";
-@import "popup";
+@import "common/_all.scss";
+@import "popup.scss";
 
 
 // Component
-@import "dataviz/layout";
-@import "dataviz/theme";
+@import "dataviz/_layout.scss";
+@import "dataviz/_theme.scss";

@@ -1,12 +1,11 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "common/icons";
+@import "common/_all.scss";
 
 
 // Component
-@import "chat/layout";
-@import "chat/theme";
+@import "chat/_layout.scss";
+@import "chat/_theme.scss";

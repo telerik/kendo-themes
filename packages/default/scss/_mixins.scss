@@ -1,33 +1,33 @@
 // Core
-@import "mixins/core/import-once";
-@import "mixins/core/placeholder-selectors";
-@import "mixins/core/data-uri";
-@import "mixins/core/math";
-@import "mixins/core/props";
-@import "mixins/core/config-maps";
+@import "mixins/core/_import-once.scss";
+@import "mixins/core/_placeholder-selectors.scss";
+@import "mixins/core/_data-uri.scss";
+@import "mixins/core/_math.scss";
+@import "mixins/core/_props.scss";
+@import "mixins/core/_config-maps.scss";
 
 
 // Functions
-@import "mixins/functions/props";
+@import "mixins/functions/_props.scss";
 
 
 // Utils
-@import "mixins/border-radius";
-@import "mixins/box-shadow";
-@import "mixins/button-size";
-@import "mixins/colors";
-@import "mixins/decoration";
-@import "mixins/disabled";
-@import "mixins/gradients";
-@import "mixins/hide-scrollbar";
-@import "mixins/opacity";
-@import "mixins/layout";
-@import "mixins/typography";
+@import "mixins/_border-radius.scss";
+@import "mixins/_box-shadow.scss";
+@import "mixins/_button-size.scss";
+@import "mixins/_colors.scss";
+@import "mixins/_decoration.scss";
+@import "mixins/_disabled.scss";
+@import "mixins/_gradients.scss";
+@import "mixins/_hide-scrollbar.scss";
+@import "mixins/_opacity.scss";
+@import "mixins/_layout.scss";
+@import "mixins/_typography.scss";
 
 
 // Appearance
-@import "mixins/appearance";
-@import "mixins/widget";
-@import "mixins/button";
-@import "mixins/input";
-@import "mixins/node";
+@import "mixins/_appearance.scss";
+@import "mixins/_widget.scss";
+@import "mixins/_button.scss";
+@import "mixins/_input.scss";
+@import "mixins/_node.scss";

@@ -1,4 +1,4 @@
-@import "~@progress/kendo-theme-default/scss/card/layout";
+@import "~@progress/kendo-theme-default/scss/card/_layout.scss";
 
 @include exports( "timeline/card/material" ) {
     .k-card-title,

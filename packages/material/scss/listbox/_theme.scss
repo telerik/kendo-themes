@@ -1,7 +1,7 @@
 $listbox-drag-clue-bg: darken( $base-bg, 7% ) !default;
 $listbox-drag-clue-text: $base-text !default;
 
-@import "~@progress/kendo-theme-default/scss/listbox/theme";
+@import "~@progress/kendo-theme-default/scss/listbox/_theme.scss";
 
 @include exports( "listbox/theme/material") {
     .k-item.k-drag-clue {

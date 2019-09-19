@@ -1,12 +1,12 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "tooltip";
+@import "common/_all.scss";
+@import "tooltip.scss";
 
 
 // Component
-@import "validator/layout";
-@import "validator/theme";
+@import "validator/_layout.scss";
+@import "validator/_theme.scss";

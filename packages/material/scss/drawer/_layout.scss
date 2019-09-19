@@ -1,4 +1,4 @@
-@import "~@progress/kendo-theme-default/scss/drawer/layout";
+@import "~@progress/kendo-theme-default/scss/drawer/_layout.scss";
 
 @include exports( "drawer/layout/material" ) {
     .k-drawer-container .k-drawer-items {

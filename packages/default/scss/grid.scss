@@ -1,14 +1,14 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "dialog";
-@import "pager";
-@import "adaptive";
+@import "common/_all.scss";
+@import "dialog.scss";
+@import "pager.scss";
+@import "adaptive.scss";
 
 
 // Component
-@import "grid/layout";
-@import "grid/theme";
+@import "grid/_layout.scss";
+@import "grid/_theme.scss";

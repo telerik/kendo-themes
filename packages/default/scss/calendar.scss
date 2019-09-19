@@ -1,13 +1,12 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "common/icons";
-@import "button";
+@import "common/_all.scss";
+@import "button.scss";
 
 
 // Component
-@import "calendar/layout";
-@import "calendar/theme";
+@import "calendar/_layout.scss";
+@import "calendar/_theme.scss";

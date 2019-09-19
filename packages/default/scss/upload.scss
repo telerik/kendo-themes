@@ -1,14 +1,13 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "common/icons";
-@import "button";
-@import "action-buttons";
+@import "common/_all.scss";
+@import "button.scss";
+@import "action-buttons.scss";
 
 
 // Component
-@import "upload/layout";
-@import "upload/theme";
+@import "upload/_layout.scss";
+@import "upload/_theme.scss";

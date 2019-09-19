@@ -5,7 +5,7 @@ $upload-dropzone-status-icon-spacing: $padding-y * 2 !default;
 $upload-progress-thickness: 3px !default;
 $upload-file-name-spacing: 0 !default;
 
-@import "~@progress/kendo-theme-default/scss/upload/layout";
+@import "~@progress/kendo-theme-default/scss/upload/_layout.scss";
 
 @include exports("upload/layout/material") {
     .k-upload {

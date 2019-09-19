@@ -4,7 +4,7 @@ $item-selected-opacity: .16 !default;
 $menu-scrolling-border: transparent !default;
 $menu-separator-spacer-y: $popup-padding-y !default;
 
-@import "~@progress/kendo-theme-default/scss/menu/layout";
+@import "~@progress/kendo-theme-default/scss/menu/_layout.scss";
 
 @include exports("menu/layout/material") {
 
