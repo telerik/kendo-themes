@@ -1,16 +1,15 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "button";
-@import "tooltip";
-
-@import "slider/images/slider-h";
-@import "slider/images/slider-v";
+@import "common/_all.scss";
+@import "button.scss";
+@import "tooltip.scss";
 
 
 // Component
-@import "slider/layout";
-@import "slider/theme";
+@import "slider/images/slider-h.scss";
+@import "slider/images/slider-v.scss";
+@import "slider/_layout.scss";
+@import "slider/_theme.scss";

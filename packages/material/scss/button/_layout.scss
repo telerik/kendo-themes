@@ -5,7 +5,7 @@ $flat-button-selected-opacity: .16 !default;
 $outline-button-border-width: 2px !default;
 $split-button-arrow-border-width: 1px;
 
-@import "~@progress/kendo-theme-default/scss/button/layout";
+@import "~@progress/kendo-theme-default/scss/button/_layout.scss";
 
 @include exports("button/layout/material") {
 

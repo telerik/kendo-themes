@@ -1,13 +1,12 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "common/forms";
-@import "popup";
+@import "common/_all.scss";
+@import "popup.scss";
 
 
 // Component
-@import "combobox/layout";
-@import "combobox/theme";
+@import "combobox/_layout.scss";
+@import "combobox/_theme.scss";

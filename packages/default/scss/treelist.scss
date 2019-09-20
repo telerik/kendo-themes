@@ -1,11 +1,11 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "grid";
+@import "common/_all.scss";
+@import "grid.scss";
 
 
 // Component
-@import "treelist/layout";
+@import "treelist/_layout.scss";

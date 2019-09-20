@@ -1,15 +1,15 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "button";
-@import "toolbar";
-@import "upload";
-@import "window";
+@import "common/_all.scss";
+@import "button.scss";
+@import "toolbar.scss";
+@import "upload.scss";
+@import "window.scss";
 
 
 // Component
-@import "editor/layout";
-@import "editor/theme";
+@import "editor/_layout.scss";
+@import "editor/_theme.scss";

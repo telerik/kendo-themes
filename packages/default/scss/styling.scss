@@ -1,13 +1,13 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/utils/reset";
-@import "common/utils/display";
-@import "common/utils/float";
-@import "common/utils/floatwrap";
-@import "common/icons";
-@import "common/typography";
-@import "common/panel";
-@import "common/decoration";
+@import "common/utils/_reset.scss";
+@import "common/utils/_display.scss";
+@import "common/utils/_float.scss";
+@import "common/utils/_floatwrap.scss";
+@import "common/_icons.scss";
+@import "common/_typography.scss";
+@import "common/_panel.scss";
+@import "common/_decoration.scss";

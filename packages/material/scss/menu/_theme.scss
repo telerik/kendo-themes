@@ -5,7 +5,7 @@ $menu-scrolling-icon: inherit !default;
 $menu-scrolling-icon-hover: inherit !default;
 
 
-@import "~@progress/kendo-theme-default/scss/menu/theme";
+@import "~@progress/kendo-theme-default/scss/menu/_theme.scss";
 
 @include exports("multiselect/theme/material") {
 

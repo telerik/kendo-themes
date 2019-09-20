@@ -32,8 +32,8 @@ If you include the Bootstrap framework from its source, you have to add `kendo-t
 
 ```css-no-run
   // Set the variables here.
-  @import "~@progress/kendo-theme-bootstrap/scss/all";
-  @import "~bootstrap/scss/bootstrap";
+  @import "~@progress/kendo-theme-bootstrap/scss/all.scss";
+  @import "~bootstrap/scss/bootstrap.scss";
 ```
 
 ## Preview
