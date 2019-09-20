@@ -8,16 +8,21 @@ const EMPTY_IMPORT = {
 const imported = new Set();
 
 function packageImporterFactory(options = { cache: false }) {
-    return function packageImporter(url) {
-        if (!url.startsWith("~")) {
-            return null;
-        }
+    function packageImporter(url, prev) {
+        let file;
 
-        let file = path.resolve( path.join(
-            process.cwd(),
-            "node_modules/",
-            url.slice(1)
-        ) );
+        if (url.startsWith("~")) {
+            file = path.resolve(path.join(
+                process.cwd(),
+                "node_modules/",
+                url.slice(1)
+            ));
+        } else {
+            file = path.resolve(path.join(
+                path.dirname(prev),
+                url
+            ));
+        }
 
         if (options.cache && imported.has(file)) {
             return EMPTY_IMPORT;
@@ -26,7 +31,15 @@ function packageImporterFactory(options = { cache: false }) {
         imported.add(file);
 
         return { file };
-    };
+    }
+
+    packageImporter.resetImported = resetImported;
+
+    return packageImporter;
+}
+
+function resetImported() {
+    imported.clear();
 }
 
 
