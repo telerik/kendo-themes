@@ -1,6 +1,6 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "~@progress/kendo-theme-default/scss/styling";
+@import "~@progress/kendo-theme-default/scss/styling.scss";

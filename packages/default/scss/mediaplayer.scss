@@ -1,13 +1,13 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "toolbar";
-@import "slider";
+@import "common/_all.scss";
+@import "toolbar.scss";
+@import "slider.scss";
 
 
 // Component
-@import "mediaplayer/layout";
-@import "mediaplayer/theme";
+@import "mediaplayer/_layout.scss";
+@import "mediaplayer/_theme.scss";

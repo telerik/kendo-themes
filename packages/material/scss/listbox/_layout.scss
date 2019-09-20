@@ -5,7 +5,7 @@ $listbox-drag-clue-padding-y: $padding-y !default;
 $listbox-drag-clue-padding-x: $padding-x !default;
 $listbox-drag-clue-line-height: $line-height !default;
 
-@import "~@progress/kendo-theme-default/scss/listbox/layout";
+@import "~@progress/kendo-theme-default/scss/listbox/_layout.scss";
 
 @include exports( "listbox/layout/material" ) {
     $listbox-item-padding-x: 24px !default;

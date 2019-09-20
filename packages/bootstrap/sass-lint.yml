@@ -11,6 +11,11 @@ rules:
     property-sort-order: 0
     mixins-before-declarations: 0
 
+    clean-import-paths:
+        - 0
+        - filename-extension: true
+          leading-underscore: true
+
     nesting-depth:
         - 1
         - max-depth: 4

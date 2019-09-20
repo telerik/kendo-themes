@@ -1,12 +1,12 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "toolbar";
+@import "common/_all.scss";
+@import "toolbar.scss";
 
 
 // Component
-@import "filter/layout";
-@import "filter/theme";
+@import "filter/_layout.scss";
+@import "filter/_theme.scss";

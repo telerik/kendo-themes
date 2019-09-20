@@ -1,13 +1,13 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "toolbar";
-@import "pager";
+@import "common/_all.scss";
+@import "toolbar.scss";
+@import "pager.scss";
 
 
 // Component
-@import "pdf-viewer/layout";
-@import "pdf-viewer/theme";
+@import "pdf-viewer/_layout.scss";
+@import "pdf-viewer/_theme.scss";

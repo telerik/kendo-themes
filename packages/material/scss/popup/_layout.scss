@@ -4,7 +4,7 @@ $popup-header-font-size: $font-size-sm !default;
 $popup-header-text: rgba($base-text, .54) !default;
 $popup-filter-padding-x: $padding-x;
 
-@import "~@progress/kendo-theme-default/scss/popup/layout";
+@import "~@progress/kendo-theme-default/scss/popup/_layout.scss";
 
 @include exports("popup/layout/material") {
 

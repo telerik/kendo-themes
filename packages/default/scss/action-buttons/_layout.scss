@@ -32,4 +32,10 @@
         }
     }
 
+    .k-popup > .k-action-buttons,
+    .k-popup > kendo-grid-columnlist > .k-action-buttons {
+        margin-top: $spacer;
+        margin-bottom: -$popup-padding-y;
+    }
+
 }

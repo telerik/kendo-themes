@@ -1,12 +1,12 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "button";
+@import "common/_all.scss";
+@import "button.scss";
 
 
 // Component
-@import "scrollview/layout";
-@import "scrollview/theme";
+@import "scrollview/_layout.scss";
+@import "scrollview/_theme.scss";

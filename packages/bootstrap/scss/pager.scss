@@ -1,12 +1,12 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
-@import "dropdownlist";
+@import "common/_all.scss";
+@import "dropdownlist.scss";
 
 
 // Component
-@import "pager/layout";
-@import "pager/theme";
+@import "pager/_layout.scss";
+@import "pager/_theme.scss";

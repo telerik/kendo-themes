@@ -1,6 +1,6 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Component
-@import "barcode/layout";
+@import "barcode/_layout.scss";

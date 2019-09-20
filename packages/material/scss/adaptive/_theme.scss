@@ -1,4 +1,4 @@
-@import "~@progress/kendo-theme-default/scss/adaptive/theme";
+@import "~@progress/kendo-theme-default/scss/adaptive/_theme.scss";
 
 @include exports("adaptive/theme/material") {
     .k-pane-wrapper .k-pane {
