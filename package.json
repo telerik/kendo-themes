@@ -17,10 +17,13 @@
     "validate-commit-msg": "^1.1.1"
   },
   "scripts": {
-    "build": "bash ./build/foreach.sh build",
-    "lint": "bash ./build/foreach.sh lint",
-    "api": "bash ./build/foreach.sh api",
-    "api-check": "bash ./build/foreach.sh api-check",
+    "sass": "./build/foreach.sh sass",
+    "sass:swatches": "./build/foreach.sh sass:swatches",
+    "dart": "./build/foreach.sh dart",
+    "dart:swatches": "./build/foreach.sh dart:swatches",
+    "lint": "./build/foreach.sh lint",
+    "api": "./build/foreach.sh api",
+    "api-check": "./build/foreach.sh api-check",
     "test": "./build/foreach.sh test && npm run karma-single && npm run visual-test",
     "visual-test": "./build/visual-test.sh",
     "create-screenshots": "./build/create-screenshots.sh",

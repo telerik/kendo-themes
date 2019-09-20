@@ -101,42 +101,42 @@ function build(fileGlob = paths.sass.src, dest = paths.sass.dist, options = quic
 
 
 // #region node-sass
-function sassTheme() {
+gulp.task("sass", function() {
     let file = getArg("--file") || paths.sass.theme;
     let dest = getArg("--dest") || paths.sass.dist;
     let opts = getArg("--opts") || quickSassOptions;
 
     sass.compiler = require("node-sass");
     return build(file, dest, opts);
-}
-function sassWatch() {
+});
+gulp.task('sass:watch', function() {
     sass.compiler = require("node-sass");
     gulp.watch(paths.sass.src, gulp.series("sass"));
-}
-function sassSwatches() {
+});
+gulp.task('sass:swatches', function() {
     sass.compiler = require("node-sass");
     return build(paths.sass.swatches, paths.sass.dist, fullSassOptions);
-}
+});
 // #endregion
 
 
 // #region dart-sass
-function dartTheme() {
+gulp.task("dart", function() {
     let file = getArg("--file") || paths.sass.theme;
     let dest = getArg("--dest") || paths.sass.dist;
     let opts = getArg("--opts") || quickSassOptions;
 
     sass.compiler = require("sass");
     return build(file, dest, opts);
-}
-function dartWatch() {
+});
+gulp.task('dart:watch', function() {
     sass.compiler = require("sass");
     gulp.watch(paths.sass.src, gulp.series("dart"));
-}
-function dartSwatches() {
+});
+gulp.task('dart:swatches', function() {
     sass.compiler = require("sass");
     return build(paths.sass.swatches, paths.sass.dist, fullSassOptions);
-}
+});
 // #endregion
 
 
@@ -154,11 +154,21 @@ function lintScripts() {
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
 }
+
+gulp.task("lint", function() {
+    if (__dirname === process.cwd()) {
+        // called from theme-tasks
+        return lintScripts();
+    }
+
+    // consumed from themes
+    return lintStyles();
+});
 // #endregion
 
 
 // #region assets
-function assets() {
+gulp.task("assets", function() {
     let files = glob.sync(paths.sass.assets);
 
     files.forEach(function(filename) {
@@ -167,7 +177,7 @@ function assets() {
     });
 
     return Promise.resolve();
-}
+});
 
 function embedFile(filename) {
     let basename = path.basename(filename);
@@ -191,23 +201,29 @@ function embedFile(filename) {
 
 
 // #region api
-function api() {
+gulp.task("api", function() {
     return gulp.src(paths.sass.src)
         .pipe(sassdoc());
-}
+});
 // #endregion
 
 
-module.exports = {
-    paths,
-    sassTheme,
-    sassWatch,
-    sassSwatches,
-    dartTheme,
-    dartWatch,
-    dartSwatches,
-    lintStyles,
-    lint: lintScripts,
-    assets,
-    api
+const registry = gulp.registry();
+const taskHelper = {
+    registry,
+
+    exportTasksToGulpInstance(gulpInstance) {
+
+        Object.entries( registry.tasks() ).forEach(function(taskEntry) {
+
+            let taskName = taskEntry[0];
+            let taskBody = taskEntry[1].unwrap();
+
+            gulpInstance.task(taskName, taskBody);
+
+        });
+
+    }
 };
+
+module.exports.taskHelper = taskHelper;
