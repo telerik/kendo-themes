@@ -2,9 +2,9 @@
 .*
 CODEOWNERS.md
 CONTRIBUTING.md
-build
-demo
+build/
+demo/
+docs/
 dist/*.js
-docs
-sass-lint.yml
-webpack.config.js
+dist/all-sass.css
+dist/all-dart.css
