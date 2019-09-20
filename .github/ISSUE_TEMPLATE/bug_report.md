@@ -1,6 +1,6 @@
 ---
-name: Bug report
-about: Create a report to help us improve
+name: Bug Report
+about: Create a report to help us improve the product
 title: ''
 labels: bug
 assignees: ''
@@ -10,12 +10,12 @@ assignees: ''
 **Describe the bug**
 A clear and concise description of what the bug is.
 
-**To Reproduce**
+**To reproduce**
 Steps to reproduce the behavior:
 1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+2. Click '...'
+3. Scroll down to '...'
+4. See error '...'
 
 **Expected behavior**
 A clear and concise description of what you expected to happen.
@@ -23,30 +23,30 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Affected package (please complete the following information)**
+**Affected package (please provide)**
 * theme-default
 * theme-bootstrap
 * theme-material
 * theme-tasks
 
-**Affected suites (please complete the following information):**
-* Kendo Ui for jQuery
-* Kendo Ui for Angular
-* Kendo Ui for React
-* Kendo Ui for Vue
+**Affected suites (please provide)**
+* Kendo UI for jQuery
+* Kendo UI for Angular
+* Kendo UI for React
+* Kendo UI for Vue
 * Telerik UI for Blazor
 
-**Affected browsers (please complete the following information):**
- - Firefox: [e.g. 67, lts]
- - Chrome: [e.g. 77]
- - Edge version: [e.g. 15]
- - Safari: [e.g. 12]
- - IE version: [e.g. 11]
+**Affected browsers (please provide)**
+- Firefox: [for example, 67, lts]
+- Chrome: [for example, 77]
+- Edge version: [for example, 15]
+- Safari: [for example, 12]
+- IE version: [for example, 11]
 
-**Build system information (please complete the following information):**
- - OS: [e.g. windows, linux, mac]
- - Node version: [e.g. 10.15.3]
- - NPM version: [e.g. 6.4.1]
+**Build system information (please provide)**
+- OS: [for example, Windows, Linux, Mac]
+- Node version: [for example, 10.15.3]
+- NPM version: [for example, 6.4.1]
 
 **Additional context**
-Add any other context about the problem here.
+Add any other context about the bug.
