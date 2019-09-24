@@ -16,6 +16,7 @@ const Fiber = require("fibers");
 const sassdoc = require("sassdoc");
 const eslint = require("gulp-eslint");
 const sasslint = require("gulp-sass-lint");
+const baka = require("@joneff/baka");
 const sassImporterFactory = require("./lib/sassimporter");
 
 
@@ -30,6 +31,7 @@ const paths = {
         theme: "./scss/all.scss",
         swatches: "./scss/swatches/*.scss",
         src: "./scss/**/*.scss",
+        inline: "./dist/all.scss",
         dist: "./dist",
         assets: "./scss/**/*.{png,gif,ttf,woff}"
     },
@@ -115,7 +117,6 @@ gulp.task('sass:swatches', function() {
     sass.compiler = require("node-sass");
     return build(paths.sass.swatches, paths.sass.dist);
 });
-gulp.task('sass:prepublish', gulp.series("sass", "sass:swatches"));
 // #endregion
 
 
@@ -135,7 +136,6 @@ gulp.task('dart:swatches', function() {
     sass.compiler = require("sass");
     return build(paths.sass.swatches, paths.sass.dist);
 });
-gulp.task('dart:prepublish', gulp.series("dart", "dart:swatches"));
 // #endregion
 
 
@@ -223,7 +223,22 @@ gulp.task("ci:full", gulp.series("lint", "sass", "dart", "api:check"));
 // #endregion
 
 
+// #region Flatten files
+gulp.task("flatten-sass-files", function(done) {
+    let file = getArg("--file") || paths.sass.theme;
+    let outFile = getArg("--out-file") || paths.sass.inline;
+
+    baka.compile(file, outFile);
+
+    Promise.resolve();
+    done();
+});
+// #region
+
+
 // #region prepublish
+gulp.task('sass:prepublish', gulp.series("sass", "sass:swatches", "flatten-sass-files"));
+gulp.task('dart:prepublish', gulp.series("dart", "dart:swatches", "flatten-sass-files"));
 gulp.task("prepublish", gulp.series("sass:prepublish"));
 // #endregion
 
