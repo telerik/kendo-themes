@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Floating Label</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, min-content);
+            align-items: start;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+            <span>Textarea</span>
+            <span>Input</span>
+
+            <span class="k-textbox-container k-textarea-wrapper k-state-empty">
+                <textarea class="k-textarea"></textarea>
+                <label class="k-label">Empty</label>
+            </span>
+            <span class="k-textbox-container k-state-empty">
+                <input class="k-textbox">
+                <label class="k-label">Empty</label>
+            </span>
+
+            <span class="k-textbox-container k-textarea-wrapper k-state-hover">
+                <textarea class="k-textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
+                <label class="k-label">Hover</label>
+            </span>
+            <span class="k-textbox-container k-state-hover">
+                <input class="k-textbox" value="Hover">
+                <label class="k-label">Hover</label>
+            </span>
+
+            <span class="k-textbox-container k-textarea-wrapper k-state-focused">
+                <textarea class="k-textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
+                <label class="k-label">Focused</label>
+            </span>
+            <span class="k-textbox-container k-state-focused">
+                <input class="k-textbox" value="Focused">
+                <label class="k-label">Focused</label>
+            </span>
+
+            <span class="k-textbox-container k-textarea-wrapper k-state-disabled">
+                <textarea class="k-textarea" disabled>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
+                <label class="k-label">Disabled</label>
+            </span>
+            <span class="k-textbox-container k-state-disabled">
+                <input class="k-textbox" value="Disabled" disabled>
+                <label class="k-label">Disabled</label>
+            </span>
+
+            <span class="k-textbox-container k-textarea-wrapper k-state-invalid">
+                <textarea class="k-textarea k-state-invalid">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
+                <label class="k-label">Invalid</label>
+            </span>
+            <span class="k-textbox-container k-state-invalid">
+                <input class="k-textbox k-state-invalid" value="Invalid">
+                <label class="k-label">Invalid</label>
+            </span>
+
+            <span class="k-textbox-container k-textarea-wrapper ng-invalid ng-touched">
+                <textarea class="k-textarea ng-invalid ng-touched">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
+                <label class="k-label">NG Invalid</label>
+            </span>
+            <span class="k-textbox-container ng-invalid ng-touched">
+                <input class="k-textbox ng-invalid ng-touched" value="NG Invalid">
+                <label class="k-label">NG Invalid</label>
+            </span>
+    </div>
+
+</body>
+</html>
