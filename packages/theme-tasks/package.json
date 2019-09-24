@@ -41,6 +41,7 @@
     "sassdoc": "^2.5.0"
   },
   "devDependencies": {
+    "@joneff/baka": "^0.1.0",
     "gulp-eslint": "^5.0.0"
   }
 }
