@@ -34,6 +34,10 @@
                 padding: $padding-x;
             }
         }
+
+        .k-toolbar {
+            min-height: min-content;
+        }
     }
 
     // Reset styles if in sandbox mode
