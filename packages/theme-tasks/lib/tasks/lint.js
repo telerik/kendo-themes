@@ -5,13 +5,9 @@ const gulp = require("gulp");
 const eslint = require("gulp-eslint");
 const sasslint = require("gulp-sass-lint");
 
-const sasslintOptions = {
-    configFile: "./sass-lint.yml"
-};
-
 function lintStyles() {
     return gulp.src(paths.sass.src)
-        .pipe(sasslint(sasslintOptions))
+        .pipe(sasslint())
         .pipe(sasslint.format())
         .pipe(sasslint.failOnError());
 }
