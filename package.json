@@ -24,12 +24,9 @@
     "test": "./build/foreach.sh test && npm run karma-single && npm run visual-test",
     "visual-test": "./build/visual-test.sh",
     "create-screenshots": "./build/create-screenshots.sh",
-    "develop": "./develop.sh",
-    "watch-test": "npm run karma-watch",
     "karma-watch": "karma start --auto-watch --no-single-run",
     "karma-single": "karma start --no-auto-watch --single-run --browsers ChromeHeadless",
-    "serve-integrity": "http-server ./tests/integrity",
-    "serve-visual": "http-server ./tests/visual"
+    "serve-tests": "http-server ./"
   },
   "config": {
     "commitizen": {
