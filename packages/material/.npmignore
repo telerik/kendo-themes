@@ -8,3 +8,4 @@ docs/
 dist/*.js
 dist/all-sass.css
 dist/all-dart.css
+.sasslintrc
