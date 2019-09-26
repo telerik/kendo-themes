@@ -10,6 +10,9 @@
         display: inline-block;
         user-select: none;
 
+        .k-popup & {
+            height: 100%;
+        }
 
         // Common
         .k-link {
