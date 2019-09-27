@@ -24,7 +24,8 @@
     "lint": "./build/foreach.sh lint",
     "api": "./build/foreach.sh api",
     "api-check": "./build/foreach.sh api-check",
-    "test": "./build/foreach.sh test && npm run karma-single && npm run visual-test",
+    "ci": "./build/foreach.sh ci:full && npm run karma-single && npm run visual-test",
+    "ci:theme": "./build/foreach.sh ci",
     "visual-test": "./build/visual-test.sh",
     "create-screenshots": "./build/create-screenshots.sh",
     "karma-watch": "karma start --auto-watch --no-single-run",
@@ -37,7 +38,8 @@
     },
     "ghooks": {
       "pre-commit": "npm run lint",
-      "commit-msg": "validate-commit-msg"
+      "commit-msg": "validate-commit-msg",
+      "pre-push": "npm run ci:theme"
     },
     "validate-commit-msg": {
       "types": [
