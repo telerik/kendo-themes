@@ -34,6 +34,10 @@
                 padding: $padding-x;
             }
         }
+
+        .k-toolbar {
+            overflow: visible;
+        }
     }
 
     // Reset styles if in sandbox mode
