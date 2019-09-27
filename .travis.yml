@@ -26,6 +26,9 @@ before_install:
 before_script:
   - lerna bootstrap --concurrency=1
 
+script:
+  - npm run ci
+
 after_success:
   - ./build/publish.sh
 

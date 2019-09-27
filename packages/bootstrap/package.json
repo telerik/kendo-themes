@@ -27,10 +27,11 @@
     "dart:swatches": "gulp dart:swatches",
     "lint": "gulp lint",
     "api": "gulp api",
-    "api-check": "npm run api && git diff --exit-code --quiet -- docs/ || (echo -e '\\033[0;31mERROR: API docs are out of date' && exit 1)",
+    "api-check": "gulp api:check",
+    "ci": "gulp ci",
+    "ci:full": "gulp ci",
     "embed-assets": "gulp assets",
-    "test": "npm run lint && npm run build && npm run api-check",
-    "prepublishOnly": "./build/embed-dependencies 'bootstrap' '@progress/kendo-theme-default' && npm run build && npm run swatches",
+    "prepublishOnly": "./build/embed-dependencies 'bootstrap' '@progress/kendo-theme-default' && gulp prepublish",
     "postpublish": "rm -rf modules && git checkout scss"
   },
   "peerDependencies": {

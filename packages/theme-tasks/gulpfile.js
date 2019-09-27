@@ -2,6 +2,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const cp = require("child_process");
 const glob = require("glob");
 const gulp = require("gulp");
 const logger = require("gulplog");
@@ -117,6 +118,7 @@ gulp.task('sass:swatches', function() {
     sass.compiler = require("node-sass");
     return build(paths.sass.swatches, paths.sass.dist, fullSassOptions);
 });
+gulp.task('sass:prepublish', gulp.series("sass", "sass:swatches"));
 // #endregion
 
 
@@ -137,6 +139,7 @@ gulp.task('dart:swatches', function() {
     sass.compiler = require("sass");
     return build(paths.sass.swatches, paths.sass.dist, fullSassOptions);
 });
+gulp.task('dart:prepublish', gulp.series("dart", "dart:swatches"));
 // #endregion
 
 
@@ -205,6 +208,27 @@ gulp.task("api", function() {
     return gulp.src(paths.sass.src)
         .pipe(sassdoc());
 });
+gulp.task("api:check", function() {
+    //git diff --exit-code --quiet -- docs/
+    return gulp.task("api")().promise.then(function() {
+        let status = cp.spawnSync("git", [ "diff", "--exit-code", "--quiet", "--", "docs/" ]) .status;
+
+        if (status !== 0) {
+            throw new Error("API docs are out of date");
+        }
+    });
+});
+// #endregion
+
+
+// #region ci
+gulp.task("ci", gulp.series("lint", "sass", "dart", "api:check"));
+gulp.task("ci:full", gulp.series("lint", "sass", "dart", "api:check"));
+// #endregion
+
+
+// #region prepublish
+gulp.task("prepublish", gulp.series("sass:prepublish"));
 // #endregion
 
 
