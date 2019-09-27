@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# 0.3.0 (2019-09-27)
+
+
+### Bug Fixes
+
+* **colorpicker:** colorpicker is missing vertical-align middle ([1d3fc87](https://github.com/telerik/kendo-themes/commit/1d3fc87))
+
+
+### Features
+
+* enable watch for themes ([2d94b07](https://github.com/telerik/kendo-themes/commit/2d94b07))
+* speedup buiild drastically ([0b3cb13](https://github.com/telerik/kendo-themes/commit/0b3cb13))
+
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.1.6...@progress/kendo-theme-tasks@0.2.0) (2019-07-08)
 

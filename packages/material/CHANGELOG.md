@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.3.4"></a>
+## [3.3.4](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.3.3...@progress/kendo-theme-material@3.3.4) (2019-09-27)
+
+
+### Bug Fixes
+
+* floating label overlapping ([da9ec76](https://github.com/telerik/kendo-themes/commit/da9ec76))
+
+
+
+
 <a name="3.3.3"></a>
 ## [3.3.3](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.3.2...@progress/kendo-theme-material@3.3.3) (2019-09-17)
 

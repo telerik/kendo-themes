@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.3.3"></a>
+## [4.3.3](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.3.2...@progress/kendo-theme-default@4.3.3) (2019-09-27)
+
+
+### Bug Fixes
+
+* **drawer:** improve styles for angular ovrelay drawer in rtl ([7c56452](https://github.com/telerik/kendo-themes/commit/7c56452))
+* **dropdowns:** ng autocomplete rtl icon misalign ([630fab3](https://github.com/telerik/kendo-themes/commit/630fab3))
+* add new fix for editor toolbar style ([0475eae](https://github.com/telerik/kendo-themes/commit/0475eae))
+* **grid:** page scroll on column chooser item click ([cc13d2d](https://github.com/telerik/kendo-themes/commit/cc13d2d))
+* **toolbar:** buttongroup style ([4487366](https://github.com/telerik/kendo-themes/commit/4487366))
+* **toolbar:** overflow button style ([f1ed0ea](https://github.com/telerik/kendo-themes/commit/f1ed0ea))
+* calendar height in datepicker for blazor defeault theme layout ([3feb5ab](https://github.com/telerik/kendo-themes/commit/3feb5ab))
+* editor toolbar spacing when wrapped ([89a4228](https://github.com/telerik/kendo-themes/commit/89a4228))
+
+
+
+
 <a name="4.3.2"></a>
 ## [4.3.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.3.1...@progress/kendo-theme-default@4.3.2) (2019-09-17)
 
