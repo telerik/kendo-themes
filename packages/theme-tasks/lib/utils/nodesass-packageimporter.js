@@ -1,9 +1,6 @@
 const path = require("path");
 
-const EMPTY_IMPORT = {
-    file: "",
-    contents: ""
-};
+const EMPTY_IMPORT = {};
 
 const imported = new Set();
 
