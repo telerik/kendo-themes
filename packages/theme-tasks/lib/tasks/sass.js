@@ -25,17 +25,12 @@ const postcssPlugins = [
 const quickSassOptions = {
     precision: 10,
     outputStyle: "compressed",
-    importer: packageImporterFactory({ cache: true })
+    importer: packageImporterFactory({ cache: true }),
+    fiber: Fiber
 };
 const fullSassOptions = {
     ...quickSassOptions,
     importer: packageImporterFactory({ cache: false })
-};
-const dartSassOptions = {
-    ...quickSassOptions,
-    importer: packageImporterFactory({ cache: false }),
-    outputStyle: "expanded",
-    fiber: Fiber
 };
 
 
@@ -44,7 +39,7 @@ function build(fileGlob = paths.sass.src, options = quickSassOptions) {
     options.importer.resetImported();
 
     return gulp.src(fileGlob)
-        .pipe(sass(options).on("error", sass.logError))
+        .pipe(sass.sync(options).on("error", sass.logError))
         .pipe(postcss(postcssPlugins))
         .pipe(gulp.dest(paths.sass.dist));
 }
@@ -67,7 +62,7 @@ function swatches() {
 // #region dart
 function dart() {
     sass.compiler = require("sass");
-    return build(paths.sass.theme, dartSassOptions);
+    return build(paths.sass.theme, quickSassOptions);
 }
 // #endregion
 
