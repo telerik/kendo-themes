@@ -138,8 +138,8 @@ $padding-y-lg: $padding-y * 1.5 !default;
 
 /// Border radius for all components.
 $border-radius: 2px !default;
-$border-radius-sm: 1px !default;
-$border-radius-lg: 4px !default;
+$border-radius-sm: $border-radius / 2 !default;
+$border-radius-lg: $border-radius * 2 !default;
 
 $panel-padding-x: $padding-x !default;
 $panel-padding-y: $padding-y !default;
@@ -927,7 +927,7 @@ $pager-number-selected-border: null !default;
 $card-padding-x: 16px !default;
 $card-padding-y: 16px !default;
 $card-border-width: 0 !default;
-$card-border-radius: 2px !default;
+$card-border-radius: $border-radius !default;
 $card-box-shadow: $box-shadow-depth-2 !default;
 $card-box-focused-shadow: $box-shadow-depth-3 !default;
 

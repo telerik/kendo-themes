@@ -62,7 +62,6 @@
             .k-card-header {
                 overflow: visible;
                 border-bottom: 0;
-                border-radius: $border-radius-lg;
             }
 
             .k-card-header + .k-card-body {
@@ -165,6 +164,10 @@
                 min-height: $timeline-event-min-height-calc;
                 width: $timeline-event-width;
                 max-width: 100%;
+
+                .k-card-header {
+                    border-radius: $card-border-radius; // In vertical collapsed mode there shold be a bottom border radius
+                }
 
                 .k-card-title {
                     display: flex;
