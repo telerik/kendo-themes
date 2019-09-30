@@ -31,7 +31,8 @@ $menu-separator-spacer-y: $popup-padding-y !default;
             }
 
             // Hovered state
-            &.k-state-hover {
+            &.k-state-hover,
+            &:hover {
 
                 & > .k-link::before {
                     opacity: $item-hovered-opacity;
@@ -40,7 +41,8 @@ $menu-separator-spacer-y: $popup-padding-y !default;
             }
 
             // Focused state
-            &.k-state-focused {
+            &.k-state-focused,
+            &:focus {
 
                 & > .k-link::before {
                     opacity: $item-focused-opacity;
@@ -49,7 +51,8 @@ $menu-separator-spacer-y: $popup-padding-y !default;
             }
 
             // Active state
-            & > .k-state-active {
+            & > .k-state-active,
+            &:active {
 
                 &.k-link::before {
                     opacity: $item-selected-opacity;
