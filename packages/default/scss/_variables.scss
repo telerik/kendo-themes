@@ -1103,6 +1103,11 @@ $window-sizes: map-merge((
 ), $window-sizes);
 
 
+// Backdrop (Overlay)
+$backdrop-bg: #000000 !default;
+$backdrop-opacity: .5 !default;
+
+
 // DateTime
 $time-list-highlight-color: $border-color !default;
 $time-list-focused-bg: rgba(0, 0, 0, .04) !default;
