@@ -1123,8 +1123,8 @@ $window-sizes: map-merge((
 
 
 // Backdrop (Overlay)
-$backdrop-bg: #000000 !default;
-$backdrop-opacity: .5 !default;
+$backdrop-bg: $modal-backdrop-bg !default;
+$backdrop-opacity: $modal-backdrop-opacity !default;
 
 
 // DateTime
