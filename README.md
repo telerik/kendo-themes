@@ -59,7 +59,8 @@ To perform a clean setup (remove existing node_modules) of the monorepo, on the 
 The following commands have to be run in the root of the repository and help you check if various tasks are accomplished successfully:
 
 * To lint over all the themes, run `npm run lint`.
-* To build all the themes, run `npm run build`.
+* To build all the themes with node-sass, run `npm run sass`.
+* To build all the themes with dart-sass, run `npm run dart`.
 * To run the lint, JS, and build tests, run `npm test`.
 * To run builds on every file change of a specific theme:
 
@@ -74,7 +75,7 @@ To guard against regressions and make pull request reviews easier, the CI build 
 
 To generate screenshots for a specific theme:
 
-1. Build the theme with `npm run build`
+1. Build the theme with `npm run sass` or `npm run dart`
 1. Run `npm run create-screenshots <theme>`, substituting `<theme>` with a theme name.
 
 These steps will create new screenshots in `tests/output`. Note that due to platform differences, all of the files will be marked as changed.

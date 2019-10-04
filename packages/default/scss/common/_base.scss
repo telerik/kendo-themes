@@ -29,6 +29,7 @@ $widget-border-width: 1px !default;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
+        font-family: $font-family;
         font-size: $font-size;
         line-height: $line-height;
         display: block;
