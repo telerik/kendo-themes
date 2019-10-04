@@ -468,6 +468,23 @@ $input-focused-bg: $input-bg !default;
 $input-focused-border: try-lighten( $accent, 25 ) !default;
 $input-focused-shadow: none !default;
 
+// Dropdownlists
+$dropdownlist-text: $button-text !default;
+$dropdownlist-bg: $button-bg !default;
+$dropdownlist-border: $button-border !default;
+$dropdownlist-gradient: $button-gradient !default;
+
+$dropdownlist-hovered-text: $button-hovered-text !default;
+$dropdownlist-hovered-bg: $button-hovered-bg !default;
+$dropdownlist-hovered-border: $button-hovered-border !default;
+$dropdownlist-hovered-gradient: $button-hovered-gradient !default;
+
+$dropdownlist-focused-text: $button-pressed-text !default;
+$dropdownlist-focused-bg: $button-pressed-bg !default;
+$dropdownlist-focused-border: $button-pressed-border !default;
+$dropdownlist-focused-gradient: $button-pressed-gradient !default;
+$dropdownlist-focused-shadow: $button-focused-shadow !default;
+
 //Textboxes
 $textbox-shadow: 0 2px 2px 1px rgba(0, 0, 0, .06) !default;
 $textbox-font-size: $font-size !default;
