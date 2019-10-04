@@ -3,24 +3,39 @@
     // Dropdown
     .k-dropdown {
         .k-dropdown-wrap {
-            @include appearance( button );
+            @include fill(
+                $dropdownlist-text,
+                $dropdownlist-bg,
+                $dropdownlist-border,
+                $dropdownlist-gradient
+            );
             transition: $transition;
         }
 
         // Hover state
         > :hover,
         .k-state-hover {
-            @include appearance( hovered-button );
+            @include fill(
+                $dropdownlist-hovered-text,
+                $dropdownlist-hovered-bg,
+                $dropdownlist-hovered-border,
+                $dropdownlist-hovered-gradient
+            );
         }
 
         // Focused state
         .k-state-focused {
-            box-shadow: $button-focused-shadow;
+            box-shadow: $dropdownlist-focused-shadow;
         }
 
         // Active state
         .k-state-active {
-            @include appearance( pressed-button );
+            @include fill(
+                $dropdownlist-focused-text,
+                $dropdownlist-focused-bg,
+                $dropdownlist-focused-border,
+                $dropdownlist-focused-gradient
+            );
         }
 
     }
