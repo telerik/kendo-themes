@@ -336,15 +336,12 @@ $slider-draghandle-active-scale: 1 !default;
 
         .k-slider-horizontal & {
             height: 100%;
+            padding: 2px 0;
+            box-sizing: border-box;
         }
 
         .k-slider-vertical & {
             padding-top: 1px;
-        }
-
-        .k-slider-horizontal .k-slider-buttons & {
-            padding: 2px 0;
-            box-sizing: border-box;
         }
 
         .k-slider-vertical .k-slider-buttons & {
