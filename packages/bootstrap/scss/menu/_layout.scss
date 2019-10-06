@@ -21,5 +21,9 @@
         .k-separator {
             margin: ($spacer / 2) 0;
         }
+
+        .k-menu-popup & {
+            padding: 0;
+        }
     }
 }
