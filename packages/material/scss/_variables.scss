@@ -1632,6 +1632,41 @@ $timeline-event-height: 600px !default;
 $timeline-event-min-height-calc: calc(2 * (#{$timeline-track-event-offset}- #{$card-border-width})) !default;
 
 
+// Upload
+$upload-padding: 14px !default;
+$upload-button-bg: $base-border !default;
+$upload-status-text: lighten($text-color, 25%) !default;
+$upload-delete-hovered-bg: $base-border !default;
+
+$uploaded-image-width: 24px !default;
+$uploaded-image-height: 34px !default;
+$uploaded-image-border: 2px !default;
+
+$uploaded-file-spacing: $cell-padding !default;
+$upload-button-margin: $upload-padding !default;
+$upload-dropzone-status-icon-spacing: $padding-y * 2 !default;
+$upload-status-spacing: $padding-y $padding-x-sm $padding-y 0 !default;
+$upload-file-name-spacing: 0 !default;
+
+$upload-progress-thickness: 3px !default;
+
+$upload-disabled-text: darken($widget-bg, 27%) !default;
+$upload-border: $border-color !default;
+$upload-error-text: $error !default;
+
+$upload-bg: $header-bg !default;
+$upload-hovered-bg: $hovered-bg !default;
+$upload-files-bg: $widget-bg !default;
+$upload-progress-text: $base-text !default;
+$upload-progress-bg: $info !default;
+$upload-error-bg: $error !default;
+$upload-error-border: lighten($error, 29%) !default;
+$upload-success-text: $text-color !default;
+$upload-success-bg: $success !default;
+$upload-disabled-border: darken($widget-bg, 27%) !default;
+$upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
+
+
 // Config maps
 $typography-config: () !default;
 // sass-lint:disable indentation

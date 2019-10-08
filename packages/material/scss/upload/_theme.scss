@@ -1,15 +1,13 @@
-$upload-success-text: $text-color !default;
-
 @import "~@progress/kendo-theme-default/scss/upload/_theme.scss";
 
 @include exports("upload/theme/material") {
     .k-upload {
         .k-upload-button {
             box-shadow: none;
-            background: $base-border;
+            background: $upload-button-bg;
         }
         .k-upload-status {
-            color: lighten($text-color, 25%);
+            color: $upload-status-text;
         }
         .k-dropzone-hint {
             color: $upload-disabled-text;
@@ -28,7 +26,7 @@ $upload-success-text: $text-color !default;
             .k-delete {
                 &:hover,
                 &.k-state-hover {
-                    background: $base-border;
+                    background: $upload-delete-hovered-bg;
                 }
             }
         }

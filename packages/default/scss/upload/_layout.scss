@@ -1,16 +1,4 @@
 @include exports("upload/layout") {
-    $line-height-sm: (20 / 12) !default;
-    $uploaded-image-width: 24px !default;
-    $uploaded-image-height: 34px !default;
-    $uploaded-image-border: 2px !default;
-    $uploaded-file-spacing: $cell-padding !default;
-
-    $upload-button-margin: $toolbar-padding-x !default;
-    $upload-dropzone-status-icon-spacing: $padding-x-lg / 2 !default;
-    $upload-status-spacing: $button-padding-y $button-padding-x !default;
-    $upload-file-name-spacing: $padding-y !default;
-
-    $upload-progress-thickness: 2px !default;
 
     html .k-upload {
         position: relative;
