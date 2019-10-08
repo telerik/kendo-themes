@@ -251,6 +251,11 @@
         .k-gradient-values {
             justify-content: space-between;
 
+            .k-input,
+            .k-textbox {
+                padding: $colorpicker-input-padding-y $colorpicker-input-padding-x;
+            }
+
             div,
             input,
             .k-numerictextbox {
@@ -263,6 +268,11 @@
             }
             .k-hex-value {
                 width: $colorpicker-hex-input-width;
+            }
+        }
+        .k-numerictextbox {
+            .k-input {
+                text-overflow: clip;
             }
         }
 
