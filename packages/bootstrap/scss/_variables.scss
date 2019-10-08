@@ -1536,6 +1536,36 @@ $timeline-event-height: 600px !default;
 $timeline-event-min-height-calc: calc(2 * (#{$timeline-track-event-offset}- #{$card-border-width})) !default;
 
 
+// Upload
+$uploaded-image-width: 24px !default;
+$uploaded-image-height: 34px !default;
+$uploaded-image-border: 2px !default;
+
+$uploaded-file-spacing: $cell-padding !default;
+$upload-button-margin: $toolbar-padding-x !default;
+$upload-dropzone-status-icon-spacing: $padding-y !default;
+$upload-status-spacing: 0 !default;
+$upload-file-name-spacing: 0 !default;
+
+$upload-progress-thickness: 2px !default;
+
+$upload-disabled-text: darken($widget-bg, 27%) !default;
+$upload-border: $border-color !default;
+$upload-error-text: $error !default;
+
+$upload-bg: $header-bg !default;
+$upload-hovered-bg: $hovered-bg !default;
+$upload-files-bg: $widget-bg !default;
+$upload-progress-text: $base-text !default;
+$upload-progress-bg: $info !default;
+$upload-error-bg: $error !default;
+$upload-error-border: lighten($error, 29%) !default;
+$upload-success-text: $success !default;
+$upload-success-bg: $success !default;
+$upload-disabled-border: darken($widget-bg, 27%) !default;
+$upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
+
+
 // Config maps
 $typography-config: () !default;
 // sass-lint:disable indentation
