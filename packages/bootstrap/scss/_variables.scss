@@ -1088,6 +1088,27 @@ $progressbar-indeterminate-gradient: null !default;
 $progressbar-chunk-border: $bg-color !default;
 
 
+// Slider
+$slider-size: 200px !default;
+$slider-tick-size: null !default;
+$slider-alt-size: 30px !default;
+$slider-button-offset: 10px !default;
+$slider-button-size: ($slider-alt-size - 2) !default;
+$slider-track-thickness: 4px !default;
+$slider-draghandle-size: 14px !default;
+$slider-draghandle-border-width: 1px !default;
+$slider-draghandle-active-scale: 1 !default;
+$slider-draghandle-active-size: null !default;
+$slider-button-spacing: ($slider-button-size + $slider-button-offset) !default;
+$slider-transition-speed: .3s !default;
+$slider-transition-function: ease-out !default;
+$slider-draghandle-transition-speed: .4s !default;
+$slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
+
+$slider-trackbackground-color: $progressbar-bg !default;
+$slider-selection-background-color: $progressbar-fill-bg !default;
+$slider-disabled-bg: null !default;
+
 
 // Window
 $window-border-width: 1px !default;
