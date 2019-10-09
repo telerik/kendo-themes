@@ -63,15 +63,11 @@ const postcssPlugins = [
         overrideBrowserslist: browsers
     })
 ];
-const quickSassOptions = {
+const sassOptions = {
     precision: 10,
     outputStyle: "compressed",
     importer: sassImporterFactory({ cache: true }),
     fiber: Fiber
-};
-const fullSassOptions = {
-    ...quickSassOptions,
-    importer: sassImporterFactory({ cache: false })
 };
 
 
@@ -88,12 +84,14 @@ const _em = colors.magentaBright;
 
 
 // #region core
-function build(fileGlob = paths.sass.src, dest = paths.sass.dist, options = quickSassOptions) {
-    options.importer.resetImported();
-
-    _info(`Compiling ${_em(fileGlob)} to ${_em(dest)}`);
-
+function build(fileGlob = paths.sass.src, dest = paths.sass.dist, options = sassOptions) {
     return gulp.src(fileGlob)
+        .on("data", function(data) {
+            options.importer.resetImported();
+            _info(`Compiling ${_em(fileGlob)} to ${_em(dest)}`);
+
+            return data;
+        })
         .pipe(sass.sync(options).on("error", sass.logError))
         .pipe(postcss(postcssPlugins))
         .pipe(gulp.dest(paths.sass.dist));
@@ -105,10 +103,9 @@ function build(fileGlob = paths.sass.src, dest = paths.sass.dist, options = quic
 gulp.task("sass", function() {
     let file = getArg("--file") || paths.sass.theme;
     let dest = getArg("--dest") || paths.sass.dist;
-    let opts = getArg("--opts") || quickSassOptions;
 
     sass.compiler = require("node-sass");
-    return build(file, dest, opts);
+    return build(file, dest);
 });
 gulp.task('sass:watch', function() {
     sass.compiler = require("node-sass");
@@ -116,7 +113,7 @@ gulp.task('sass:watch', function() {
 });
 gulp.task('sass:swatches', function() {
     sass.compiler = require("node-sass");
-    return build(paths.sass.swatches, paths.sass.dist, fullSassOptions);
+    return build(paths.sass.swatches, paths.sass.dist);
 });
 gulp.task('sass:prepublish', gulp.series("sass", "sass:swatches"));
 // #endregion
@@ -126,10 +123,9 @@ gulp.task('sass:prepublish', gulp.series("sass", "sass:swatches"));
 gulp.task("dart", function() {
     let file = getArg("--file") || paths.sass.theme;
     let dest = getArg("--dest") || paths.sass.dist;
-    let opts = getArg("--opts") || quickSassOptions;
 
     sass.compiler = require("sass");
-    return build(file, dest, opts);
+    return build(file, dest);
 });
 gulp.task('dart:watch', function() {
     sass.compiler = require("sass");
@@ -137,7 +133,7 @@ gulp.task('dart:watch', function() {
 });
 gulp.task('dart:swatches', function() {
     sass.compiler = require("sass");
-    return build(paths.sass.swatches, paths.sass.dist, fullSassOptions);
+    return build(paths.sass.swatches, paths.sass.dist);
 });
 gulp.task('dart:prepublish', gulp.series("dart", "dart:swatches"));
 // #endregion
