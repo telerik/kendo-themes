@@ -497,10 +497,6 @@
             }
         }
 
-        .k-edit-field > .k-checkbox {
-            position: relative; // fix scrolling
-        }
-
         // Generic widgets
         .k-numerictextbox {
             width: 10em;
@@ -522,7 +518,6 @@
         .k-edit-field > .k-checkbox {
             position: relative; // fix scrolling
         }
-
 
         // Align
         .k-dropdown.k-align {
