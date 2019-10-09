@@ -2,9 +2,14 @@ const path = require("path");
 
 const EMPTY_IMPORT = {};
 
-const imported = new Set();
-
 function packageImporterFactory(options = { cache: false }) {
+
+    const imported = new Set();
+
+    function resetImported() {
+        imported.clear();
+    }
+
     function packageImporter(url, prev) {
         let file;
 
@@ -34,10 +39,5 @@ function packageImporterFactory(options = { cache: false }) {
 
     return packageImporter;
 }
-
-function resetImported() {
-    imported.clear();
-}
-
 
 module.exports = packageImporterFactory;
