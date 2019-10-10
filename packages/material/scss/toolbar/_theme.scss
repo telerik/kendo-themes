@@ -98,6 +98,26 @@
         .k-dropdown-wrap {
             color: $button-text;
         }
+
+        .k-dropdown {
+            .k-dropdown-wrap {
+                // Hover
+                &:hover,
+                &.k-state-hover {
+                    .k-select {
+                        opacity: $icon-opacity;
+                    }
+                }
+
+                // Focused
+                &.k-state-focused,
+                .k-state-focused > & {
+                    .k-select {
+                        opacity: $icon-opacity;
+                    }
+                }
+            }
+        }
     }
 
 }
