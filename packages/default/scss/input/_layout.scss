@@ -17,6 +17,12 @@
         vertical-align: middle;
         position: relative;
         -webkit-appearance: none;
+
+        &:disabled,
+        &[disabled],
+        &.k-state-disabled {
+            @include disabled;
+        }
     }
 
     .k-textbox,
@@ -66,14 +72,6 @@
 
     .k-textbox:focus {
         box-shadow: $textbox-shadow;
-    }
-
-    .k-textbox {
-        &:disabled,
-        &[disabled],
-        &.k-state-disabled {
-            @include disabled;
-        }
     }
 
     .k-textbox-container {
