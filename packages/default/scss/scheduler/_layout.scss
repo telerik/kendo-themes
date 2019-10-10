@@ -811,6 +811,10 @@
             td.k-first {
                 border-left-width: 0;
             }
+
+            .k-scheduler-datecolumn {
+                border-left-width: 0 !important; // sass-lint:disable-line no-important
+            }
         }
 
         .k-task > .k-event-delete {
@@ -1045,6 +1049,10 @@
                     th:first-child {
                         border-right-width: 1px;
                     }
+                }
+
+                .k-scheduler-datecolumn {
+                    border-right-width: 0 !important; // sass-lint:disable-line no-important
                 }
             }
         }

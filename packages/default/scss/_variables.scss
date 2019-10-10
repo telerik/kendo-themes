@@ -436,6 +436,25 @@ $input-focused-bg: $input-bg !default;
 $input-focused-border: $input-hovered-border !default;
 $input-focused-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
+
+// Dropdownlists
+$dropdownlist-text: $button-text !default;
+$dropdownlist-bg: $button-bg !default;
+$dropdownlist-border: $button-border !default;
+$dropdownlist-gradient: $button-gradient !default;
+
+$dropdownlist-hovered-text: $button-hovered-text !default;
+$dropdownlist-hovered-bg: $button-hovered-bg !default;
+$dropdownlist-hovered-border: $button-hovered-border !default;
+$dropdownlist-hovered-gradient: $button-hovered-gradient !default;
+
+$dropdownlist-focused-text: $input-focused-text !default;
+$dropdownlist-focused-bg: $input-focused-bg !default;
+$dropdownlist-focused-border: $input-focused-border !default;
+$dropdownlist-focused-gradient: null !default;
+$dropdownlist-focused-shadow: $input-focused-shadow !default;
+
+
 //Textboxes
 $textbox-shadow: 0 2px 2px 1px rgba(0, 0, 0, .06) !default;
 $textbox-font-size: $font-size !default;
@@ -1068,6 +1087,28 @@ $progressbar-indeterminate-border: $progressbar-border !default;
 $progressbar-indeterminate-gradient: null !default;
 
 $progressbar-chunk-border: $bg-color !default;
+
+
+// Slider
+$slider-size: 200px !default;
+$slider-tick-size: null !default;
+$slider-alt-size: 30px !default;
+$slider-button-offset: 10px !default;
+$slider-button-size: ($slider-alt-size - 2) !default;
+$slider-track-thickness: 4px !default;
+$slider-draghandle-size: 14px !default;
+$slider-draghandle-border-width: 1px !default;
+$slider-draghandle-active-scale: 1 !default;
+$slider-draghandle-active-size: null !default;
+$slider-button-spacing: ($slider-button-size + $slider-button-offset) !default;
+$slider-transition-speed: .3s !default;
+$slider-transition-function: ease-out !default;
+$slider-draghandle-transition-speed: .4s !default;
+$slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
+
+$slider-trackbackground-color: darken($widget-bg, 10%) !default;
+$slider-selection-background-color: $accent !default;
+$slider-disabled-bg: null !default;
 
 
 // Window

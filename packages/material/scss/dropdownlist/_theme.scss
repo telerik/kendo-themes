@@ -1,2 +1,42 @@
 @include exports( "dropdownlist/theme" ) {
+    .k-dropdown {
+        .k-dropdown-wrap {
+            @include fill(
+                $dropdownlist-text,
+                $dropdownlist-bg,
+                $dropdownlist-border,
+                $dropdownlist-gradient
+            );
+
+            .k-input {
+                color: $dropdownlist-text;
+            }
+
+            .k-select {
+                border-width: 0;
+                font-size: $dropdownlist-font-size;
+                opacity: $dropdownlist-opacity;
+            }
+
+            // Hover
+            &:hover,
+            &.k-state-hover {
+                border-color: $dropdownlist-hovered-border;
+
+                .k-select {
+                    opacity: $dropdownlist-hovered-opacity;
+                }
+            }
+
+            // Focused
+            &.k-state-focused,
+            .k-state-focused > & {
+                border-color: $dropdownlist-focused-border;
+
+                .k-select {
+                    opacity: $dropdownlist-focused-opacity;
+                }
+            }
+        }
+    }
 }

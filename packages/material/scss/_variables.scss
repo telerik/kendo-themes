@@ -521,6 +521,29 @@ $input-focused-shadow: null !default;
 
 $input-disabled-bg: rgb(189, 189, 189) !default;
 
+
+// Dropdownlists
+$dropdownlist-text: $input-text !default;
+$dropdownlist-bg: null !default;
+$dropdownlist-border: $input-border !default;
+$dropdownlist-gradient: null !default;
+$dropdownlist-font-size: $font-size !default;
+$dropdownlist-opacity: $icon-opacity !default;
+
+$dropdownlist-hovered-text: null !default;
+$dropdownlist-hovered-bg: null !default;
+$dropdownlist-hovered-border: $input-hovered-border !default;
+$dropdownlist-hovered-gradient: null !default;
+$dropdownlist-hovered-opacity: $icon-hovered-opacity !default;
+
+$dropdownlist-focused-text: null !default;
+$dropdownlist-focused-bg: null !default;
+$dropdownlist-focused-border: $input-focused-border !default;
+$dropdownlist-focused-gradient: null !default;
+$dropdownlist-focused-shadow: null !default;
+$dropdownlist-focused-opacity: $icon-focused-opacity !default;
+
+
 //Textboxes
 $textbox-shadow: none !default;
 $textbox-font-size: $font-size !default;
@@ -1160,6 +1183,27 @@ $progressbar-indeterminate-gradient: null !default;
 
 $progressbar-chunk-border: $component-bg !default;
 
+
+// Slider
+$slider-size: 200px !default;
+$slider-tick-size: 2px !default;
+$slider-alt-size: 36px !default;
+$slider-button-offset: 22px !default;
+$slider-button-size: 36px !default;
+$slider-track-thickness: 2px !default;
+$slider-draghandle-size: 16px !default;
+$slider-draghandle-border-width: 0 !default;
+$slider-draghandle-active-scale: 1 !default;
+$slider-draghandle-active-size: 20px !default;
+$slider-button-spacing: ($slider-button-size + $slider-button-offset) !default;
+$slider-transition-speed: .3s !default;
+$slider-transition-function: ease-out !default;
+$slider-draghandle-transition-speed: .4s !default;
+$slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
+
+$slider-trackbackground-color: darken($widget-bg, 10%) !default;
+$slider-selection-background-color: $accent !default;
+$slider-disabled-bg: $input-disabled-bg !default;
 
 
 // Window
