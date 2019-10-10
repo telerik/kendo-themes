@@ -1,20 +1,4 @@
-$slider-size: 200px !default;
-$slider-alt-size: 30px !default;
-$slider-button-offset: 10px !default;
-$slider-button-size: ($slider-alt-size - 2) !default;
-$slider-track-thickness: 4px !default;
-$slider-draghandle-size: 14px !default;
-$slider-draghandle-border-width: 1px !default;
-$slider-draghandle-active-scale: 1 !default;
-
 @include exports("slider/layout") {
-
-    $button-spacing: ($slider-button-size + $slider-button-offset);
-    $transition-speed: .3s;
-    $transition-function: ease-out;
-
-    $draghandle-transition-speed: .4s;
-    $draghandle-transition-function: cubic-bezier(.25, .8, .25, 1);
 
     .k-slider {
         background-color: transparent;
@@ -79,6 +63,9 @@ $slider-draghandle-active-scale: 1 !default;
             }
         }
 
+        .k-rtl &,
+        &.k-rtl,
+        [dir="rtl"] &,
         &[dir="rtl"] {
             .k-slider-selection {
                 left: auto;
@@ -160,6 +147,22 @@ $slider-draghandle-active-scale: 1 !default;
             left: auto;
             right: 120%;
         }
+
+        .k-rtl &,
+        &.k-rtl,
+        [dir="rtl"] &,
+        &[dir="rtl"] {
+            .k-label {
+                left: auto;
+                right: 120%;
+            }
+
+            .k-slider-topleft .k-label {
+                left: 120%;
+                right: auto;
+            }
+        }
+
     }
 
     .k-slider-horizontal {
@@ -219,12 +222,32 @@ $slider-draghandle-active-scale: 1 !default;
             top: -1.2em;
         }
 
+        .k-rtl &,
+        &.k-rtl,
+        [dir="rtl"] &,
         &[dir="rtl"] {
-            .k-button-increase,
-            .k-button-decrease {
-                .k-icon {
-                    transform: rotate(180deg);
-                }
+            .k-slider-track,
+            .k-slider-selection {
+                right: 0;
+                left: auto;
+            }
+            .k-slider-buttons .k-slider-track {
+                right: $slider-button-spacing;
+            }
+
+            .k-label {
+                left: auto;
+                right: 0;
+            }
+
+            .k-first .k-label {
+                right: -50%;
+                left: auto;
+            }
+
+            .k-last .k-label {
+                left: 50%;
+                right: auto;
             }
         }
     }
@@ -257,11 +280,11 @@ $slider-draghandle-active-scale: 1 !default;
 
     .k-slider-buttons .k-slider-track {
         .k-slider-horizontal & {
-            left: $button-spacing;
+            left: $slider-button-spacing;
         }
 
         .k-slider-vertical & {
-            bottom: $button-spacing;
+            bottom: $slider-button-spacing;
         }
     }
 
@@ -300,11 +323,11 @@ $slider-draghandle-active-scale: 1 !default;
         }
 
         .k-slider-transitions.k-slider-horizontal & {
-            transition: left $transition-speed $transition-function, background-color $transition-speed $transition-function, transform $draghandle-transition-speed $draghandle-transition-function;
+            transition: left $slider-transition-speed $slider-transition-function, background-color $slider-transition-speed $slider-transition-function, transform $slider-draghandle-transition-speed $slider-draghandle-transition-function;
         }
 
         .k-slider-transitions.k-slider-vertical & {
-            transition: bottom  $transition-speed $transition-function, background-color $transition-speed $transition-function, transform $draghandle-transition-speed $draghandle-transition-function;
+            transition: bottom  $slider-transition-speed $slider-transition-function, background-color $slider-transition-speed $slider-transition-function, transform $slider-draghandle-transition-speed $slider-draghandle-transition-function;
         }
 
         &.k-pressed {
@@ -314,11 +337,11 @@ $slider-draghandle-active-scale: 1 !default;
 
     .k-slider-selection {
         .k-slider-transitions.k-slider-horizontal & {
-            transition: width $transition-speed $transition-function;
+            transition: width $slider-transition-speed $slider-transition-function;
         }
 
         .k-slider-transitions.k-slider-vertical & {
-            transition: height $transition-speed $transition-function;
+            transition: height $slider-transition-speed $slider-transition-function;
         }
 
         &.k-pressed {
@@ -331,7 +354,7 @@ $slider-draghandle-active-scale: 1 !default;
         user-select: none;
 
         .k-slider-buttons & {
-            margin-left: $button-spacing;
+            margin-left: $slider-button-spacing;
         }
 
         .k-slider-horizontal & {
@@ -346,7 +369,7 @@ $slider-draghandle-active-scale: 1 !default;
 
         .k-slider-vertical .k-slider-buttons & {
             margin: 0;
-            padding-top: $button-spacing;
+            padding-top: $slider-button-spacing;
         }
     }
 

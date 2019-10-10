@@ -1,12 +1,3 @@
-$slider-track-thickness: 2px !default;
-$slider-draghandle-border-width: 0 !default;
-$slider-draghandle-active-size: 20px !default;
-$slider-button-size: 36px !default;
-$slider-draghandle-size: 16px !default;
-$slider-tick-size: 2px !default;
-$slider-button-offset: 22px !default;
-$slider-alt-size: 36px !default;
-
 @import "~@progress/kendo-theme-default/scss/slider/_layout.scss";
 
 @include exports("slider/layout/material") {

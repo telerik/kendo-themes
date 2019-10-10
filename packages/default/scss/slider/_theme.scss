@@ -1,6 +1,3 @@
-$slider-trackbackground-color: darken($widget-bg, 10%) !default;
-$slider-selection-background-color: $accent !default;
-
 @include exports("slider/theme") {
 
     .k-slider {
@@ -35,7 +32,8 @@ $slider-selection-background-color: $accent !default;
                 box-shadow: inset $primary-button-pressed-shadow;
             }
 
-            &:focus {
+            &:focus,
+            &.k-state-focused {
                 box-shadow: $primary-button-focused-shadow;
             }
         }
