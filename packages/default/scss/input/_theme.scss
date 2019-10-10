@@ -282,21 +282,21 @@
         }
 
         // Indeterminate
-        .k-checkbox:indeterminate + & {
+        .k-checkbox-legacy:indeterminate + & {
             &::after {
                 background-color: $checkbox-checked-bg;
             }
         }
 
         // Focus state
-        .k-checkbox:focus + & {
+        .k-checkbox-legacy:focus + & {
             &::before {
                 box-shadow: $checkbox-focused-shadow;
             }
         }
 
         // Checked
-        .k-checkbox:checked + & {
+        .k-checkbox-legacy:checked + & {
             &::before {
                 border-color: $checkbox-checked-border;
                 background-color: $checkbox-checked-bg;
@@ -305,7 +305,7 @@
                 color: $checkbox-checked-text;
             }
         }
-        .k-checkbox:checked:focus + & {
+        .k-checkbox-legacy:checked:focus + & {
             &::before {
                 box-shadow: $checkbox-focused-checked-shadow;
             }
