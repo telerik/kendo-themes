@@ -13,7 +13,9 @@
         }
 
         .k-checkbox-label,
-        .k-radio-label {
+        .k-radio-label,
+        .k-checkbox-legacy-label,
+        .k-radio-legacy-label {
             margin-bottom: 20px;
         }
     </style>
@@ -83,6 +85,66 @@
             <label class="k-radio-label" for="rad8">Disabled</label>
         </section>
 
+        <span>LTR Checkboxes (Legacy classes)</span>
+        <span>LTR RadioButtons (Legacy classes)</span>
+        <span dir="rtl">RTL Checkboxes (Legacy classes)</span>
+        <span dir="rtl">RTL RadioButtons (Legacy classes)</span>
+
+        <section>
+            <input type="checkbox" id="ch1-legacy" class="k-checkbox-legacy" checked />
+            <label class="k-checkbox-legacy-label" for="ch1-legacy">Checked</label>
+            <br />
+            <input type="checkbox" id="ch2-legacy" class="k-checkbox-legacy">
+            <label class="k-checkbox-legacy-label" for="ch2-legacy">Unchecked</label>
+            <br />
+            <input type="checkbox" id="ch3-legacy" class="k-checkbox-legacy" disabled checked />
+            <label class="k-checkbox-legacy-label" for="ch3-legacy">Disabled</label>
+            <br />
+            <input type="checkbox" id="ch4-legacy" class="k-checkbox-legacy" disabled />
+            <label class="k-checkbox-legacy-label" for="ch4-legacy">Disabled</label>
+        </section>
+
+        <section>
+            <input type="radio" name="group5" id="rad1-legacy" class="k-radio-legacy" checked/>
+            <label class="k-radio-legacy-label" for="rad1-legacy">Checked</label>
+            <br />
+            <input type="radio" name="group5" id="rad2-legacy" class="k-radio-legacy" />
+            <label class="k-radio-legacy-label" for="rad2-legacy">Unchecked</label>
+            <br />
+            <input type="radio" name="group6" id="rad3-legacy" class="k-radio-legacy" disabled checked />
+            <label class="k-radio-legacy-label" for="rad3-legacy">Disabled</label>
+            <br />
+            <input type="radio" name="group6" id="rad4-legacy" class="k-radio-legacy" disabled />
+            <label class="k-radio-legacy-label" for="rad4-legacy">Disabled</label>
+        </section>
+
+        <section dir="rtl">
+            <input type="checkbox" id="ch5-legacy" class="k-checkbox-legacy" checked />
+            <label class="k-checkbox-legacy-label" for="ch5-legacy">Checked</label>
+            <br />
+            <input type="checkbox" id="ch6-legacy" class="k-checkbox-legacy" />
+            <label class="k-checkbox-legacy-label" for="ch6-legacy">Unchecked</label>
+            <br />
+            <input type="checkbox" id="ch7-legacy" class="k-checkbox-legacy" disabled checked />
+            <label class="k-checkbox-legacy-label" for="ch7-legacy">Disabled</label>
+            <br />
+            <input type="checkbox" id="ch8-legacy" class="k-checkbox-legacy" disabled />
+            <label class="k-checkbox-legacy-label" for="ch8-legacy">Disabled</label>
+        </section>
+
+        <section dir="rtl">
+            <input type="radio" name="group7" id="rad5-legacy" class="k-radio-legacy" checked/>
+            <label class="k-radio-legacy-label" for="rad5-legacy">Checked</label>
+            <br />
+            <input type="radio" name="group7" id="rad6-legacy" class="k-radio-legacy" />
+            <label class="k-radio-legacy-label" for="rad6-legacy">Unchecked</label>
+            <br />
+            <input type="radio" name="group8" id="rad7-legacy" class="k-radio-legacy" disabled checked />
+            <label class="k-radio-legacy-label" for="rad7-legacy">Disabled</label>
+            <br />
+            <input type="radio" name="group8" id="rad8-legacy" class="k-radio-legacy" disabled />
+            <label class="k-radio-legacy-label" for="rad8-legacy">Disabled</label>
+        </section>
     </div>
 
 </body>
