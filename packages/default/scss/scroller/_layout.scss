@@ -59,10 +59,14 @@
         z-index: 200000;
         height: .4em;
         width: .4em;
-        background-color: #333333;
         opacity: 0;
         transform-origin: 0 0;
         transition: opacity .3s linear;
+
+        .k-map &,
+        .k-diagram & {
+            display: none;
+        }
     }
     .km-vertical-scrollbar {
         height: 100%;
