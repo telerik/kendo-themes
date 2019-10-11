@@ -2,6 +2,7 @@
 
     .k-tooltip {
         @include border-radius();
+        font-size: $tooltip-font-size;
         line-height: $tooltip-line-height;
         padding: $tooltip-padding-y $tooltip-padding-x;
         border-width: 0;
@@ -11,10 +12,6 @@
         display: flex;
         flex-direction: column;
         z-index: 12000;
-
-        &:not(.k-tooltip-closable) {
-            font-size: $tooltip-font-size;
-        }
     }
 
     .k-tooltip-title {
@@ -29,6 +26,7 @@
     }
 
     .k-tooltip-closable {
+        font-size: $font-size;
         padding: $tooltip-closable-padding-y $tooltip-closable-padding-x;
         line-height: normal;
 
