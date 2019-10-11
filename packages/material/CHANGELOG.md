@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.3.5"></a>
+## [3.3.5](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.3.4...@progress/kendo-theme-material@3.3.5) (2019-10-11)
+
+
+### Bug Fixes
+
+* **card:** enable adjustable border radius in themebuilder ([edc604c](https://github.com/telerik/kendo-themes/commit/edc604c))
+* **colorpicker:** input cut off in bootstrap theme ([91bd81a](https://github.com/telerik/kendo-themes/commit/91bd81a))
+* **menu:** add focus state for material theme in kendo angular and react ([1dcc66a](https://github.com/telerik/kendo-themes/commit/1dcc66a))
+* floating label misalignment ([afeb4a7](https://github.com/telerik/kendo-themes/commit/afeb4a7))
+* handle api-check, ci and prepubilsh tasks from gulp ([71175b2](https://github.com/telerik/kendo-themes/commit/71175b2))
+* **slider:** rtl styles ([5260318](https://github.com/telerik/kendo-themes/commit/5260318))
+* **toolbar:** hover/focus dropdown style ([330915f](https://github.com/telerik/kendo-themes/commit/330915f))
+
+
+
+
 <a name="3.3.4"></a>
 ## [3.3.4](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.3.3...@progress/kendo-theme-material@3.3.4) (2019-09-27)
 
