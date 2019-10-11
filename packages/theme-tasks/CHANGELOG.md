@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.1"></a>
+## [0.3.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.3.0...@progress/kendo-theme-tasks@0.3.1) (2019-10-11)
+
+
+### Bug Fixes
+
+* handle api-check, ci and prepubilsh tasks from gulp ([71175b2](https://github.com/telerik/kendo-themes/commit/71175b2))
+* speedup dart-sass compilation ([a04122c](https://github.com/telerik/kendo-themes/commit/a04122c))
+
+
+
+
 <a name="0.3.0"></a>
 # 0.3.0 (2019-09-27)
 
