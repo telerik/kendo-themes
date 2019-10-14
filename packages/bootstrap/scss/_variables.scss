@@ -1,6 +1,4 @@
-@import "~@progress/kendo-theme-default/scss/mixins/core/_config-maps.scss";
-@import "~@progress/kendo-theme-default/scss/mixins/core/_math.scss";
-@import "~@progress/kendo-theme-default/scss/mixins/_colors.scss";
+@import "_functions.scss";
 @import "_bootstrap-overrides.scss";
 @import "~bootstrap/scss/_functions.scss";
 @import "~bootstrap/scss/_variables.scss";
@@ -497,7 +495,7 @@ $textbox-icon-width: calc( #{$icon-size} + #{$input-padding-x * 2} ) !default;
 $textarea-default-width: 18em !default;
 
 //Checkboxes
-$check-icon-size: $icon-size !default;
+$checkbox-icon-size: 10px !default;
 $checkbox-size: $icon-size !default;
 $checkbox-radius: $border-radius !default;
 $checkbox-border-width: 1px !default;
@@ -1078,11 +1076,6 @@ $mediaplayer-toolbar-bg: rgba( $toolbar-bg, .85 ) !default;
 $mediaplayer-toolbar-text: $toolbar-text !default;
 
 
-// Tooltip
-$tooltip-bg: $tooltip-bg !default;
-$tooltip-text: contrast-wcag($tooltip-bg) !default;
-
-
 // Progressbar
 $progressbar-height: $progress-height !default;
 $progressbar-animation-timing: $progress-bar-animation-timing !default;
@@ -1160,6 +1153,22 @@ $window-sizes: map-merge((
         md: 800px,
         lg: 1200px
 ), $window-sizes);
+
+
+// Tooltip
+$tooltip-padding-y: $padding-y !default;
+$tooltip-padding-x: $padding-x !default;
+$tooltip-closable-padding-x: $padding-x !default;
+$tooltip-closable-padding-y: $padding-y !default;
+$tooltip-closable-content-padding: calc( #{$icon-size} + #{$icon-spacing} ) !default;
+$tooltip-font-size: $font-size !default;
+$tooltip-title-font-size: $font-size-lg !default;
+$tooltip-line-height: $line-height !default;
+$tooltip-callout-size: 12px !default;
+$callout-half-size: $tooltip-callout-size / 2;
+
+$tooltip-bg: $tooltip-bg !default;
+$tooltip-text: contrast-wcag($tooltip-bg) !default;
 
 
 // Backdrop (Overlay)

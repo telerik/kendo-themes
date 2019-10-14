@@ -29,6 +29,12 @@ $grid-group-drag-clue-opacity: .9 !default;
             line-height: normal;
         }
 
+        // Checkbox and Radio legacy styles
+        .k-checkbox-legacy-label,
+        .k-radio-legacy-label {
+            line-height: normal;
+        }
+
         .k-button,
         .k-button:active {
             box-shadow: none;

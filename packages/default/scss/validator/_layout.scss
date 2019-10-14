@@ -7,6 +7,7 @@
         display: inline-flex;
         flex-direction: row;
         align-items: center;
+        z-index: 9999;
 
         &[hidden] {
             display: none;

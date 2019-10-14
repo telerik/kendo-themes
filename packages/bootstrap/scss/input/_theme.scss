@@ -50,7 +50,7 @@
     .k-radio {
 
         // Hover
-        &:not(:disabled) + .k-radio-label {}
+        &:hover {}
 
         // Checked
         &:checked + .k-radio-label {
@@ -64,9 +64,6 @@
                 background-color: $radio-checked-text;
             }
         }
-
-        // Checked && Hovered
-        &:not(:disabled):checked + .k-radio-label:hover {}
 
         // Focused
         &:focus + .k-radio-label::before {
@@ -82,7 +79,7 @@
     .k-checkbox {
 
         // Hover
-        &:not(:disabled) + .k-checkbox-label:hover::before {}
+        &:hover {}
 
         // Checked
         &:checked + .k-checkbox-label {
@@ -187,6 +184,8 @@
 }
 
 
+
+
 @include exports("input/theme/IE") {
 
     // TODO: Remove once we drop IE support
@@ -207,5 +206,84 @@
             }
         }
     }
+
+}
+
+
+
+
+@include exports("input/theme/legacy") {
+
+    // Radio legacy styles
+    .k-radio-legacy-label::before {
+        border-color: $radio-border;
+        background-color: $radio-bg;
+    }
+    .k-radio-legacy {
+
+        // Checked
+        &:checked + .k-radio-legacy-label {
+            &::before {
+                border-color: transparent;
+                background-color: $radio-checked-bg;
+                box-shadow: 0 0 1px 0 $radio-checked-bg inset;
+            }
+
+            &::after {
+                background-color: $radio-checked-text;
+            }
+        }
+
+        // Focused
+        &:focus + .k-radio-legacy-label::before {
+            box-shadow: $focused-checked-shadow;
+        }
+    }
+
+
+    // Checkbox legacy styles
+    .k-checkbox-legacy-label::before {
+        border-color: $checkbox-border;
+        background-color: $checkbox-bg;
+    }
+    .k-checkbox-legacy {
+
+        // Checked
+        &:checked + .k-checkbox-legacy-label {
+            &::before {
+                border-color: $checkbox-checked-border;
+                background-color: $checkbox-checked-bg;
+            }
+
+            &::after {
+                color: $checkbox-checked-text;
+            }
+        }
+
+        // Indeterminate
+        &:indeterminate + .k-checkbox-legacy-label::after {
+            border-color: $checkbox-checked-border;
+            background-color: $checkbox-checked-bg;
+        }
+
+        // Focused
+        &:focus + .k-checkbox-legacy-label::before {
+            box-shadow: $focused-checked-shadow;
+        }
+    }
+
+
+    // Form styles
+    .k-form-inline {
+
+        .k-form-field {
+            > label:not(.k-checkbox-legacy-label):not(.k-radio-legacy-label) {
+                padding: calc( #{$padding-y} - #{$input-border-width} ) 0;
+                padding-right: $padding-x;
+            }
+        }
+
+    }
+
 
 }
