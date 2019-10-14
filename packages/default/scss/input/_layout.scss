@@ -252,7 +252,7 @@
     .k-checkbox-label::after,
     .k-radio-label::before,
     .k-radio-label::after {
-        font-size: $icon-size;
+        font-size: $checkbox-icon-size;
         font-family: "WebComponentsIcons", monospace;
         box-sizing: border-box;
         text-align: center;
@@ -284,7 +284,7 @@
         @include border-radius( $checkbox-radius );
     }
     .k-radio-label::before {
-        border-radius: $radio-radius;
+        @include border-radius( $radio-radius );
     }
 
     // Checkbox
@@ -476,4 +476,202 @@
             outline: 0;
         }
     }
+}
+
+
+
+
+@include exports( "input/layout/legacy" ) {
+
+    // Radio and Checkbox legacy styles
+    .k-checkbox-legacy,
+    .k-radio-legacy {
+        margin: 0;
+        padding: 0;
+        clip: rect(0, 0, 0, 0);
+        overflow: hidden;
+        position: absolute;
+        opacity: 0;
+        -webkit-appearance: none;
+        pointer-events: none;
+    }
+    .k-radio-legacy:disabled + .k-radio-legacy-label,
+    .k-checkbox-legacy:disabled + .k-checkbox-legacy-label {
+        @include disabled;
+    }
+
+
+    .k-checkbox-legacy-label,
+    .k-radio-legacy-label {
+        margin: 0;
+        padding-left: calc( #{$checkbox-size} + #{$icon-spacing} );
+        min-height: $icon-size;
+        line-height: $checkbox-line-height;
+        vertical-align: text-top;
+        display: inline-flex;
+        align-items: flex-start;
+        position: relative;
+        cursor: pointer;
+
+        // With no text
+        &.k-no-text {
+            padding: 0;
+            width: $icon-size;
+            height: $icon-size;
+            display: inline-block;
+            font-size: 0;
+
+            .k-ie &,
+            .k-edge & {
+                width: 0;
+            }
+        }
+
+        .k-rtl &,
+        [dir="rtl"] & {
+            padding-left: 0;
+            padding-right: calc( #{$checkbox-size} + #{$icon-spacing} );
+        }
+    }
+
+    .k-checkbox-legacy-label::before,
+    .k-checkbox-legacy-label::after,
+    .k-radio-legacy-label::before,
+    .k-radio-legacy-label::after {
+        font-size: $checkbox-icon-size;
+        font-family: "WebComponentsIcons", monospace;
+        box-sizing: border-box;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        .k-rtl &,
+        [dir="rtl"] &  {
+            left: auto;
+            right: 0;
+        }
+    }
+
+
+    // Container box
+    .k-checkbox-legacy-label::before,
+    .k-radio-legacy-label::before {
+        content: "";
+        width: $checkbox-size;
+        height: $checkbox-size;
+        border-width: $checkbox-border-width;
+        border-style: solid;
+    }
+    .k-checkbox-legacy-label::before {
+        @include border-radius( $checkbox-radius );
+    }
+    .k-radio-legacy-label::before {
+        border-radius: $radio-radius;
+    }
+
+
+    // Checkbox
+    .k-checkbox-legacy-label::after {
+        content: "\e118";
+        width: $checkbox-size;
+        height: $checkbox-size;
+        transform: scale(0);
+    }
+    .k-checkbox-legacy:checked + .k-checkbox-legacy-label::after {
+        @include border-radius( $checkbox-radius );
+        transform: scale(1);
+    }
+    .k-checkbox-legacy:indeterminate + .k-checkbox-legacy-label::after {
+        content: "";
+        transform: scale(1);
+
+        @if $checkbox-indeterminate-style == "dash" {
+            width: $checkbox-dash-width;
+            height: $checkbox-dash-height;
+            top: $checkbox-dash-offset-y;
+            left: $checkbox-dash-offset-x;
+        } @else {
+            width: $checkbox-size / 2;
+            height: $checkbox-size / 2;
+            top: $checkbox-size / 4;
+            left: $checkbox-size / 4;
+        }
+    }
+
+
+    // Radio
+    .k-radio-legacy-label::after {
+        content: "";
+        width: $checkbox-size / 2;
+        height: $checkbox-size / 2;
+        border-radius: 50%;
+        position: absolute;
+        top: $checkbox-size / 4;
+        left: $checkbox-size / 4;
+        transform: scale(0);
+    }
+    .k-radio-legacy:checked + .k-radio-legacy-label::after {
+        transform: scale(1);
+    }
+
+    .k-rtl,
+    [dir="rtl"] {
+        .k-radio-legacy:checked + .k-radio-legacy-label::after {
+            right: $checkbox-size / 4;
+        }
+    }
+
+
+    // Check / Radio list
+    .k-radio-list {
+        .k-radio-legacy-label {
+            line-height: $checkbox-size * 1.25;
+        }
+    }
+
+
+    // Form styles
+    .k-form,
+    .k-form-inline {
+
+        // Checkbox and Radio legacy styles
+        .k-checkbox-legacy-label,
+        .k-radio-legacy-label {
+            margin-right: $padding-x * 2;
+            align-self: center;
+        }
+    }
+
+    .k-form-inline {
+
+        .k-form-field {
+
+            // Checkbox and Radio legacy styles
+            > label:not(.k-checkbox-legacy-label):not(.k-radio-legacy-label) {
+                width: $inline-form-element-width;
+                text-align: right;
+                line-height: $line-height;
+                padding: calc( #{$padding-y} + #{$input-border-width} ) 0;
+                padding-right: $padding-x-lg;
+                align-self: center;
+            }
+        }
+    }
+
+    .k-treeview,
+    .k-grid {
+
+        // Checkbox legacy styles
+        .k-checkbox-legacy-label {
+            cursor: default;
+            outline: 0;
+        }
+    }
+
+
 }

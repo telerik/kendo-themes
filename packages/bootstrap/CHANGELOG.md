@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.3.4"></a>
+## [4.3.4](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.3.3...@progress/kendo-theme-bootstrap@4.3.4) (2019-10-11)
+
+
+### Bug Fixes
+
+* handle api-check, ci and prepubilsh tasks from gulp ([71175b2](https://github.com/telerik/kendo-themes/commit/71175b2))
+* **colorpicker:** input cut off in bootstrap theme ([91bd81a](https://github.com/telerik/kendo-themes/commit/91bd81a))
+* **menu:** submenu double padding in blazor bootstrap theme ([0f3d022](https://github.com/telerik/kendo-themes/commit/0f3d022))
+* **slider:** rtl styles ([5260318](https://github.com/telerik/kendo-themes/commit/5260318))
+
+
+
+
 <a name="4.3.3"></a>
 ## [4.3.3](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.3.2...@progress/kendo-theme-bootstrap@4.3.3) (2019-09-27)
 

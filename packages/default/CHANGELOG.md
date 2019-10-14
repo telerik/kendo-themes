@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.4.0"></a>
+# [4.4.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.3.3...@progress/kendo-theme-default@4.4.0) (2019-10-11)
+
+
+### Bug Fixes
+
+* **card:** enable adjustable border radius in themebuilder ([edc604c](https://github.com/telerik/kendo-themes/commit/edc604c))
+* add font-family to k-widget ([4f4e372](https://github.com/telerik/kendo-themes/commit/4f4e372))
+* handle api-check, ci and prepubilsh tasks from gulp ([71175b2](https://github.com/telerik/kendo-themes/commit/71175b2))
+* **colorpicker:** input cut off in bootstrap theme ([91bd81a](https://github.com/telerik/kendo-themes/commit/91bd81a))
+* **grid:** increase CSS tooltip selector specificity to allow auto width ([cb1f397](https://github.com/telerik/kendo-themes/commit/cb1f397))
+* **scheduler:** remove double border ([acd7b94](https://github.com/telerik/kendo-themes/commit/acd7b94))
+* **slider:** multiple display-block sliders ([4356691](https://github.com/telerik/kendo-themes/commit/4356691))
+* **slider:** rtl styles ([5260318](https://github.com/telerik/kendo-themes/commit/5260318))
+* **textarea:** add disabled styles ([8c28ccc](https://github.com/telerik/kendo-themes/commit/8c28ccc))
+
+
+### Features
+
+* **inputs:** autofill support for floating labels ([bf78433](https://github.com/telerik/kendo-themes/commit/bf78433))
+
+
+
+
 <a name="4.3.3"></a>
 ## [4.3.3](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.3.2...@progress/kendo-theme-default@4.3.3) (2019-09-27)
 
