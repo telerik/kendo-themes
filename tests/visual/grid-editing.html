@@ -183,7 +183,7 @@
         </kendo-grid>
 
         <kendo-grid class="k-widget k-grid k-grid-no-scrollbar">
-            <div class="k-grid-aria-root">
+            <div class="k-grid-aria-root" style="overflow: visible;">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
                         <table>
@@ -202,8 +202,8 @@
                         </table>
                     </div>
                 </div>
-                <kendo-grid-list class="k-grid-container">
-                    <div class="k-grid-content">
+                <kendo-grid-list class="k-grid-container" style="overflow: visible;">
+                    <div class="k-grid-content" style="overflow: visible;">
                         <div>
                             <table class="k-grid-table">
                                 <colgroup>
@@ -221,7 +221,7 @@
                                         <td>RTL</td>
                                         <td><span class="k-widget k-datepicker" dir="rtl"><span class="k-picker-wrap"><input type="text" class="k-input" placeholder="Datepicker..."><span class="k-select"><span class="k-icon k-i-calendar"></span></span></span></span></td>
                                         <td><span class="k-widget k-timepicker" dir="rtl"><span class="k-picker-wrap"><input type="text" class="k-input" placeholder="Timepicker..."><span class="k-select"><span class="k-icon k-i-clock"></span></span></span></span></td>
-                                        <td><span class="k-widget k-datetimepicker" dir="rtl"><span class="k-picker-wrap"><input type="text" class="k-input" placeholder="Datetime..."><span class="k-select"><span class="k-link k-link-date"><span class="k-icon k-i-calendar"></span></span><span class="k-link k-link-time"><span class="k-icon k-i-clock"></span></span></span></span></span></td>
+                                        <td><span class="k-widget k-datetimepicker" dir="rtl"><span class="k-picker-wrap k-invalid"><input type="text" class="k-input" placeholder="Datetime..."><span class="k-select"><span class="k-link k-link-date"><span class="k-icon k-i-calendar"></span></span><span class="k-link k-link-time"><span class="k-icon k-i-clock"></span></span></span></span></span><div class="k-widget k-tooltip k-tooltip-validation k-invalid-msg k-rtl" style="margin:0.5em" data-for="Date" role="alert"><span class="k-icon k-i-warning"> </span>Date is not valid<br> please use MM/DD/YYYY format<div class="k-callout k-callout-n"></div></div></td>
                                         <td><span class="k-widget k-dateinput" dir="rtl"><span class="k-dateinput-wrap"><input type="text" class="k-input" placeholder="Dateinput..."><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-n"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-s"></span></span></span></span></span></td>
                                     </tr>
                                 </tbody>
@@ -229,6 +229,63 @@
                         </div>
                     </div>
                 </kendo-grid-list>
+            </div>
+            <div class="k-animation-container" style="width: 240px;height: auto; overflow: visible;bottom:3px; z-index: 10002;left: 549px;box-sizing: content-box;display: block;position: absolute;">
+                <div class="k-calendar-container k-popup k-group k-reset k-state-border-up" style="display: block; position: absolute; font-size: 14px; font-family: &quot;Times New Roman&quot;; font-stretch: 100%; font-style: normal; font-weight: 400; line-height: 20px; transform: translateY(0px);">
+                    <div class="k-widget k-calendar">
+                        <div class="k-header">
+                            <a href="#" class="k-link k-nav-prev">
+                                <span class="k-icon k-i-arrow-60-left"></span>
+                            </a>
+                            <a class="k-link k-nav-fast">October 2019</a>
+                            <a href="#" class="k-link k-nav-next">
+                                <span class="k-icon k-i-arrow-60-right"></span>
+                            </a>
+                        </div>
+                        <div class="k-calendar-view" style="height: auto;">
+                            <table class="k-content k-month" style="transform-origin: 187px 81px; transform: scale(1);">
+                                <thead>
+                                    <tr role="row">
+                                        <th>Su</th>
+                                        <th>Mo</th>
+                                        <th>Tu</th>
+                                        <th>We</th>
+                                        <th>Th</th>
+                                        <th>Fr</th>
+                                        <th>Sa</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr role="row"><td class="k-other-month k-weekend">
+                                        <a class="k-link" href="#">29</a>
+                                    </td>
+                                    <td class="k-other-month">
+                                        <a class="k-link">30</a>
+                                    </td>
+                                    <td>
+                                        <a class="k-link" href="#">1</a>
+                                    </td>
+                                    <td>
+                                        <a class="k-link">2</a>
+                                    </td>
+                                    <td>
+                                        <a class="k-link">3</a>
+                                    </td>
+                                    <td>
+                                        <a class="k-link">4</a>
+                                    </td>
+                                    <td class="k-weekend">
+                                        <a class="k-link">5</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-footer">
+                            <a href="#" class="k-link k-nav-today" title="Friday, October 11, 2019">Friday, October 11, 2019</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </kendo-grid>
 
