@@ -27,7 +27,7 @@ before_script:
   - lerna bootstrap --concurrency=1
 
 script:
-  - npm run ci
+  - npm run ci:full
 
 after_success:
   - ./build/publish.sh

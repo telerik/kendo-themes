@@ -5,6 +5,7 @@ files:
     include: 'scss/**/*.scss'
     ignore:
         - 'scss/mixins/**/*.scss'
+        - 'scss/functions/**/*.scss'
 
 rules:
     no-ids: 2
