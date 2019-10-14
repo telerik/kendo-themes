@@ -28,7 +28,7 @@
     "api": "gulp api",
     "api-check": "gulp api:check",
     "ci": "gulp ci",
-    "ci:full": "gulp ci",
+    "ci:full": "gulp ci:full",
     "embed-assets": "gulp assets",
     "twbs-compat": "gulp sass --file ./build/twbs-compat.scss",
     "prepublishOnly": "gulp prepublish"

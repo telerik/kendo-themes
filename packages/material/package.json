@@ -30,7 +30,7 @@
     "api": "gulp api",
     "api-check": "gulp api:check",
     "ci": "gulp ci",
-    "ci:full": "gulp ci",
+    "ci:full": "gulp ci:full",
     "embed-assets": "gulp assets",
     "prepublishOnly": "./build/embed-dependencies '@progress/kendo-theme-default' && gulp prepublish",
     "postpublish": "rm -rf modules && git checkout scss"

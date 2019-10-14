@@ -169,6 +169,9 @@ $image-spacing: 8px !default;
         display: flex !important; // sass-lint:disable-line no-important
         flex-wrap: nowrap;
     }
+    .k-context-menu-popup {
+        z-index: 12000;
+    }
 
 
     // Scrolling
