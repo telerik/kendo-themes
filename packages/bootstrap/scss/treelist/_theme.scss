@@ -1,6 +1,1 @@
-@include exports("treelist/theme") {
-
-    // Theme
-    .k-treelist {}
-
-}
+@import "~@progress/kendo-theme-default/scss/treelist/_theme.scss";
