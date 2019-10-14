@@ -218,7 +218,7 @@ gulp.task("api:check", function() {
 
 
 // #region ci
-gulp.task("ci", gulp.series("lint", "sass", "dart", "api:check"));
+gulp.task("ci", gulp.series("lint", "sass", "api:check"));
 gulp.task("ci:full", gulp.series("lint", "sass", "dart", "api:check"));
 // #endregion
 
