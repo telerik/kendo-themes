@@ -1,48 +1,17 @@
 @import "~@progress/kendo-theme-default/scss/upload/_theme.scss";
 
 @include exports("upload/theme/material") {
+
     .k-upload {
+
         .k-upload-button {
             box-shadow: none;
-            background: $upload-button-bg;
-        }
-        .k-upload-status {
-            color: $upload-status-text;
-        }
-        .k-dropzone-hint {
-            color: $upload-disabled-text;
-            font-style: normal;
         }
 
-        .k-upload-files {
-            .k-upload-action:hover::before {
-                opacity: 0;
-            }
-
-            .k-file-validation-message {
-                color: $upload-error-text;
-            }
-
-            .k-delete {
-                &:hover,
-                &.k-state-hover {
-                    background: $upload-delete-hovered-bg;
-                }
-            }
-        }
-
-        .k-clear-selected {
-            color: $upload-disabled-text;
-
-            &:hover {
-                background-color: transparent;
-            }
-
-            &.k-state-focused,
-            &:active {
-                color: $upload-disabled-text;
-            }
+        .k-upload-files .k-upload-action::before {
+            display: none;
         }
     }
+
 }
 
