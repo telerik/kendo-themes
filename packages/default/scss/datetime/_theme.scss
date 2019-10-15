@@ -41,7 +41,6 @@
             @include appearance( focused-input );
 
             .k-select {
-                @include appearance( active-button );
                 border-color: inherit;
             }
         }
@@ -192,7 +191,7 @@
                 box-shadow: none;
             }
 
-            .k-select { @include appearance( active-button ); }
+            .k-select {}
         }
 
         // Invalid state
