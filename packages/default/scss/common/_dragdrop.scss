@@ -8,6 +8,8 @@
         font-size: $font-size-sm;
         white-space: nowrap;
         overflow: hidden;
+        position: absolute;
+        z-index: 20000;
         cursor: move;
     }
     .k-drag-status {
