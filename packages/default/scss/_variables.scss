@@ -453,7 +453,7 @@ $dropdownlist-focused-gradient: null !default;
 $dropdownlist-focused-shadow: $input-focused-shadow !default;
 
 
-//Textboxes
+// Textboxes
 $textbox-shadow: 0 2px 2px 1px rgba(0, 0, 0, .06) !default;
 $textbox-font-size: $font-size !default;
 $textbox-line-height: $form-line-height-em !default;
@@ -1525,32 +1525,41 @@ $timeline-event-min-height-calc: calc(2 * (#{$timeline-track-event-offset}- #{$c
 
 
 // Upload
-$uploaded-image-width: 24px !default;
-$uploaded-image-height: 34px !default;
-$uploaded-image-border: 2px !default;
+$upload-border-width: 1px !default;
+$upload-font-size: $font-size !default;
+$upload-line-height: $line-height !default;
+$upload-border: $panel-border !default;
+$upload-bg: $panel-bg !default;
+$upload-text: $panel-text !default;
 
-$uploaded-file-spacing: $cell-padding !default;
-$upload-button-margin: $toolbar-padding-x !default;
-$upload-dropzone-status-icon-spacing: $padding-x-lg / 2 !default;
-$upload-status-spacing: $button-padding-y $button-padding-x !default;
-$upload-file-name-spacing: $padding-y !default;
+$upload-dropzone-padding-x: $toolbar-padding-x !default;
+$upload-dropzone-padding-y: $toolbar-padding-y !default;
+$upload-dropzone-spacing: $upload-dropzone-padding-x !default;
+$upload-dropzone-bg: $toolbar-bg !default;
+$upload-dropzone-text: $toolbar-text !default;
+$upload-dropzone-border: $toolbar-border !default;
 
-$upload-progress-thickness: 2px !default;
+$upload-item-padding-x: $cell-padding-x !default;
+$upload-item-padding-y: $cell-padding-y !default;
+
+$upload-item-image-width: 24px !default;
+$upload-item-image-height: 34px !default;
+$upload-item-image-border: 2px !default;
 
 $upload-disabled-text: darken($widget-bg, 27%) !default;
-$upload-border: $border-color !default;
-$upload-error-text: $error !default;
-
-$upload-bg: $header-bg !default;
-$upload-hovered-bg: $hovered-bg !default;
-$upload-files-bg: $widget-bg !default;
-$upload-progress-text: $base-text !default;
-$upload-progress-bg: $info !default;
-$upload-error-bg: $error !default;
-$upload-error-border: lighten($error, 29%) !default;
-$upload-success-text: $success !default;
-$upload-success-bg: $success !default;
 $upload-disabled-border: darken($widget-bg, 27%) !default;
+
+$upload-progress-thickness: 2px !default;
+$upload-progress-bg: $info !default;
+$upload-progress-text: $base-text !default;
+
+$upload-success-bg: $success !default;
+$upload-success-text: $success !default;
+
+$upload-error-bg: $error !default;
+$upload-error-text: $error !default;
+$upload-error-border: lighten($error, 29%) !default;
+
 $upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 
