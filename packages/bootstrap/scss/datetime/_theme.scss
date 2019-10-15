@@ -7,34 +7,67 @@
 
         // Normal state
         .k-picker-wrap {
-            @include appearance( input );
+            @include fill(
+                $datetime-text,
+                $datetime-bg,
+                $datetime-border
+            );
             transition: $transition;
         }
         .k-select {
-            @include appearance( button );
+            @include fill(
+                $datetime-select-text,
+                $datetime-select-bg,
+                $datetime-select-border,
+                $datetime-select-gradient
+            );
             transition: $transition;
         }
 
         // Hovered state
         .k-state-hover {
-            @include appearance( hovered-input );
+            @include fill(
+                $datetime-hovered-text,
+                $datetime-hovered-bg,
+                $datetime-hovered-border
+            );
 
             .k-select {
-                @include appearance( hovered-button );
+                @include fill(
+                    $datetime-select-hovered-text,
+                    $datetime-select-hovered-bg,
+                    $datetime-select-hovered-border,
+                    $datetime-select-hovered-gradient
+                );
             }
         }
 
         // Focused state
         .k-state-focused {
-            @include appearance( focused-input );
+            @include fill(
+                $datetime-focused-text,
+                $datetime-focused-bg,
+                $datetime-focused-border
+            );
+            @include box-shadow($datetime-focused-shadow);
         }
 
         // Selected state
         .k-state-active {
-            @include appearance( focused-input );
+            @include fill(
+                $datetime-focused-text,
+                $datetime-focused-bg,
+                $datetime-focused-border
+            );
+            @include box-shadow($datetime-focused-shadow);
 
             .k-select {
-                @include appearance( pressed-button );
+                @include fill(
+                    $datetime-select-focused-text,
+                    $datetime-select-focused-bg,
+                    $datetime-select-focused-border,
+                    $datetime-select-focused-gradient
+                );
             }
         }
     }
@@ -179,31 +212,59 @@
 
         // Normal state
         .k-dateinput-wrap {
-            @include appearance( input );
+            @include fill(
+                $datetime-text,
+                $datetime-bg,
+                $datetime-border
+            );
             transition: $transition;
         }
         .k-select {
-            @include appearance( button );
+            @include fill(
+                $datetime-select-text,
+                $datetime-select-bg,
+                $datetime-select-border,
+                $datetime-select-gradient
+            );
             transition: $transition;
         }
 
         // Hovered state
         .k-state-hover {
-            @include appearance( hovered-input );
+            @include fill(
+                $datetime-hovered-text,
+                $datetime-hovered-bg,
+                $datetime-hovered-border
+            );
 
             .k-select {
-                @include appearance( hovered-button );
+                @include fill(
+                    $datetime-select-hovered-text,
+                    $datetime-select-hovered-bg,
+                    $datetime-select-hovered-border,
+                    $datetime-select-hovered-gradient
+                );
             }
         }
 
         // Focused state
         .k-state-focused {
-            @include appearance( focused-input );
+            @include fill(
+                $datetime-focused-text,
+                $datetime-focused-bg,
+                $datetime-focused-border
+            );
+            @include box-shadow($datetime-focused-shadow);
         }
 
         // Selected state
         .k-link.k-state-selected {
-            @include appearance( pressed-button );
+            @include fill(
+                $datetime-select-focused-text,
+                $datetime-select-focused-bg,
+                $datetime-select-focused-border,
+                $datetime-select-focused-gradient
+            );
         }
 
     }
