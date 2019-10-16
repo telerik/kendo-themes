@@ -511,7 +511,8 @@ $floating-label-transition: .2s ease-out !default;
 $floating-label-scale: .75 !default;
 $floating-label-height: $textbox-line-height * $floating-label-scale !default;
 $floating-label-text: null !default;
-$floating-label-bg: null !default;
+$floating-label-focused-text: null !default;
+$floating-label-focused-bg: null !default;
 
 //Forms
 
