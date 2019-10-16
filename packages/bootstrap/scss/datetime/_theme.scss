@@ -97,6 +97,13 @@
             border-color: $error;
         }
 
+        .k-picker-wrap {
+            &.k-invalid {
+                color: $error;
+                border-color: $invalid-border;
+            }
+        }
+
         .k-rtl &,
         &[dir="rtl"] {
             .k-i-warning {
@@ -197,6 +204,13 @@
             transition: none;
             color: $error;
             border-color: $error;
+        }
+
+        .k-picker-wrap {
+            &.k-invalid {
+                color: $error;
+                border-color: $invalid-border;
+            }
         }
 
         .k-rtl &,
