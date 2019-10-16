@@ -100,9 +100,10 @@
             margin-top: calc( #{$input-padding-y} + #{$input-border-width} );
         }
 
-        .k-reset > li + li {
+        > .k-reset > li + li {
             margin-top: ($spacer / 2);
         }
+
         .k-reset .k-widget {
             margin: 0 .4ex 0 1ex;
         }
