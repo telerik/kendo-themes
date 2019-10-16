@@ -146,9 +146,6 @@ $border-radius-lg: $border-radius-lg !default;
 $panel-padding-x: $card-spacer-x !default;
 $panel-padding-y: $card-spacer-y !default;
 
-$popup-padding-x: 0 !default;
-$popup-padding-y: $dropdown-padding-y !default;
-
 $header-padding-x: $card-spacer-x !default;
 $header-padding-y: $card-spacer-y !default;
 
@@ -329,6 +326,16 @@ $panel-border: $card-border-color !default;
 
 
 // Popup
+
+$popup-padding-x: 0 !default;
+$popup-padding-y: $dropdown-padding-y !default;
+
+$popup-border-width: 1px !default;
+$popup-header-padding: $list-item-padding-y $list-item-padding-x !default;
+$popup-header-font-size: null !default;
+$popup-header-text: null !default;
+$popup-filter-padding-x: $input-padding-x !default;
+
 $popup-text: $dropdown-link-color !default;
 $popup-bg: $dropdown-bg !default;
 $popup-border: $dropdown-border-color !default;

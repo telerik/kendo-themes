@@ -142,9 +142,6 @@ $border-radius-lg: $border-radius * 2 !default;
 $panel-padding-x: $padding-x !default;
 $panel-padding-y: $padding-y !default;
 
-$popup-padding-x: 0 !default;
-$popup-padding-y: 0 !default;
-
 $header-padding-x: $padding-x * 1.5 !default;
 $header-padding-y: $padding-y * 5 !default;
 
@@ -342,6 +339,16 @@ $panel-border: $component-border !default;
 
 
 // Popup
+
+$popup-padding-x: 0 !default;
+$popup-padding-y: 0 !default;
+
+$popup-border-width: 0;
+$popup-header-padding: $padding-y-lg $padding-x-lg !default;
+$popup-header-font-size: $font-size-sm !default;
+$popup-header-text: rgba($base-text, .54) !default;
+$popup-filter-padding-x: $padding-x;
+
 $popup-bg: $component-bg !default;
 $popup-text: $component-text !default;
 $popup-border: $component-border !default;
