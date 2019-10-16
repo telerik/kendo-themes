@@ -548,6 +548,8 @@ $radio-focused-checked-shadow: $checkbox-focused-checked-shadow !default;
 $floating-label-transition: .2s ease-out !default;
 $floating-label-scale: .75 !default;
 $floating-label-height: $textbox-line-height * $floating-label-scale !default;
+$floating-label-text: null !default;
+$floating-label-bg: null !default;
 
 //Forms
 
