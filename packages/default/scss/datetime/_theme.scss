@@ -73,12 +73,19 @@
     .k-datepicker,
     .k-datetimepicker,
     .k-timepicker {
-        .k-picker-wrap.k-state-invalid {
-            transition: none;
-            border-color: $error;
+        .k-picker-wrap {
+            &.k-state-invalid {
+                transition: none;
+                border-color: $error;
 
-            .k-input {
+                .k-input {
+                    color: $error;
+                }
+            }
+
+            &.k-invalid {
                 color: $error;
+                border-color: $invalid-border;
             }
         }
 
