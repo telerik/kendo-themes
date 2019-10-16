@@ -227,6 +227,7 @@
         border-style: solid;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         flex-shrink: 0;
@@ -313,6 +314,7 @@
     // View switcher
     .k-scheduler-views {
         @extend %ul-button-group;
+        margin-left: auto;
 
         li:first-child { @include border-radius(); }
         li:first-child + li { @include border-left-radius-only(); }
@@ -970,6 +972,9 @@
         }
 
         .k-scheduler-views {
+            margin-left: 0;
+            margin-right: auto;
+
             li:first-child + li { @include border-right-radius-only(); }
             li:last-child { @include border-left-radius-only(); }
 
