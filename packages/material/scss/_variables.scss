@@ -195,8 +195,6 @@ $textarea-padding-x: 10px !default;
 $textarea-padding-y: 15px !default;
 $textarea-floating-label-padding: 3px !default;
 
-$floating-label-text: rgba(0, 0, 0, .38) !default;
-
 
 // Pickers
 $picker-select-border-width: 0 !default;
@@ -599,6 +597,8 @@ $radio-focused-checked-shadow: $checkbox-focused-checked-shadow !default;
 $floating-label-transition: .4s cubic-bezier(.25, .8, .25, 1) !default;
 $floating-label-scale: .75 !default;
 $floating-label-height: $textbox-line-height * $floating-label-scale !default;
+$floating-label-text: rgba(0, 0, 0, .38) !default;
+$floating-label-bg: $base-bg !default;
 
 //Forms
 $form-spacer: $padding-x * 2 !default;
