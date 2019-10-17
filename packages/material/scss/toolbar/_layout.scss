@@ -79,17 +79,34 @@
                 opacity: $icon-opacity;
             }
         }
-        .k-colorpicker .k-selected-color {
-            margin-top: $toolbar-button-padding-y;
-            margin-bottom: $toolbar-button-padding-y;
-        }
-        .k-colorpicker .k-tool-icon {
-            padding-top: $toolbar-button-padding-y;
-            padding-bottom: $toolbar-button-padding-y;
-            height: $toolbar-inner-calc-size;
+
+        .k-colorpicker {
+            .k-picker-wrap {
+                border-width: 0;
+
+                .k-input {
+                    padding: $toolbar-button-padding-y $toolbar-button-padding-x;
+                    height: $toolbar-inner-calc-size;
+                }
+
+                .k-select {
+                    padding: $button-padding-x-sm;
+                    opacity: $icon-opacity;
+                }
+            }
 
             .k-selected-color {
-                margin: 0 0 12px;
+                margin-top: $toolbar-button-padding-y;
+                margin-bottom: $toolbar-button-padding-y;
+            }
+            .k-tool-icon {
+                padding-top: $toolbar-button-padding-y;
+                padding-bottom: $toolbar-button-padding-y;
+                height: $toolbar-inner-calc-size;
+
+                .k-selected-color {
+                    margin: 0 0 12px;
+                }
             }
         }
     }
