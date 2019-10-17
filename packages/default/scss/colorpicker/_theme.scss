@@ -1,6 +1,7 @@
 @include exports("colorpicker/theme") {
 
     .k-colorpicker {
+        background-color: transparent;
 
         // Normal state
         .k-picker-wrap {
@@ -15,6 +16,16 @@
 
             &:focus {
 
+            }
+
+            // Invalid state
+            &.k-invalid,
+            &.k-invalid:hover,
+            &.k-state-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+                color: $error;
+                border-color: $invalid-border;
             }
         }
         .k-select {
