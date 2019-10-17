@@ -662,6 +662,15 @@
         }
     }
 
+    .k-column-resizer {
+        width: .5em;
+        height: 1000%;
+        display: block;
+        position: absolute;
+        top: 0;
+        cursor: col-resize;
+    }
+
     .k-grid-footer {
         border-width: 1px 0 0;
 
