@@ -385,6 +385,10 @@ $forms-invalid-color: $error !default;
         box-sizing: border-box;
     }
 
+    .k-multiselect.form-control {
+        height: auto;
+    }
+
     .input-group {
         .k-dateinput-wrap,
         .k-dropdown-wrap,
