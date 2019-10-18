@@ -203,19 +203,6 @@ $picker-select-size: calc( #{$picker-select-padding-x * 2} + #{$icon-size} ) !de
 $picker-icon-offset: calc( #{$picker-select-size} + #{$input-icon-offset} ) !default;
 
 
-// ColorPicker
-$colorpicker-rect-padding: $padding-x * 1.5 !default;
-$colorpicker-margin: 8px !default;
-$colorpicker-width: 356px !default;
-$colorpicker-draghandle-width: 14px !default;
-$colorpicker-draghandle-height: 14px !default;
-$colorpicker-slider-track-size: 10px !default;
-$colorpicker-slider-border-radius: 10px !default;
-$colorpicker-input-width: 50px !default;
-$colorpicker-hex-input-width: 70px !default;
-$colorpicker-input-padding-x: $input-padding-x !default;
-$colorpicker-input-padding-y: $input-padding-y !default;
-
 $list-item-padding-x: $padding-x * 1.5 !default;
 $list-item-padding-y: $padding-y / 2 !default;
 
@@ -578,7 +565,51 @@ $combobox-select-focused-gradient: null !default;
 $combobox-select-focused-shadow: null !default;
 
 
-//Textboxes
+// ColorPicker
+$colorpicker-rect-padding: $padding-x * 1.5 !default;
+$colorpicker-margin: 8px !default;
+$colorpicker-width: 356px !default;
+$colorpicker-draghandle-width: 14px !default;
+$colorpicker-draghandle-height: 14px !default;
+$colorpicker-slider-track-size: 10px !default;
+$colorpicker-slider-border-radius: 10px !default;
+$colorpicker-input-width: 50px !default;
+$colorpicker-hex-input-width: 70px !default;
+$colorpicker-input-padding-x: $input-padding-x !default;
+$colorpicker-input-padding-y: $input-padding-y !default;
+
+$colorpicker-bg: $input-bg !default;
+$colorpicker-text: $input-text !default;
+$colorpicker-border: $input-border !default;
+
+$colorpicker-hovered-bg: null !default;
+$colorpicker-hovered-text: null !default;
+$colorpicker-hovered-border: $input-hovered-border !default;
+
+$colorpicker-focused-bg: null !default;
+$colorpicker-focused-text: null !default;
+$colorpicker-focused-border: $input-focused-border !default;
+$colorpicker-focused-shadow: null !default;
+
+$colorpicker-select-bg: $button-bg !default;
+$colorpicker-select-text: $button-text !default;
+$colorpicker-select-border: $button-border !default;
+$colorpicker-select-gradient: $button-gradient !default;
+
+$colorpicker-select-hovered-bg: $button-hovered-bg !default;
+$colorpicker-select-hovered-text: $button-hovered-text !default;
+$colorpicker-select-hovered-border: $button-hovered-border !default;
+$colorpicker-select-hovered-gradient: $button-hovered-gradient !default;
+
+$colorpicker-select-focused-bg: $button-pressed-bg !default;
+$colorpicker-select-focused-text: $button-pressed-text !default;
+$colorpicker-select-focused-border: $button-pressed-border !default;
+$colorpicker-select-focused-gradient: $button-pressed-gradient !default;
+$colorpicker-select-pressed-shadow: $button-pressed-shadow !default;
+$colorpicker-select-focused-shadow: $button-focused-shadow !default;
+
+
+// Textboxes
 $textbox-shadow: none !default;
 $textbox-font-size: $font-size !default;
 $textbox-line-height: 1.375em !default;
