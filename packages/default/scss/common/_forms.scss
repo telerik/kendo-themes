@@ -3,7 +3,6 @@ $forms-invalid-color: $error !default;
 @include exports("forms/layout") {
 
     // Widgets
-    .k-autocomplete,
     .k-combobox,
     .k-dateinput,
     .k-datepicker,
@@ -72,7 +71,6 @@ $forms-invalid-color: $error !default;
 
 
     // Wrappers
-    .k-autocomplete,
     .k-dateinput-wrap,
     .k-dropdown-wrap,
     .k-picker-wrap,
@@ -117,10 +115,6 @@ $forms-invalid-color: $error !default;
             border-color: $invalid-border;
         }
     }
-    .k-autocomplete {
-        // Reset width to default input width
-        width: $input-default-width;
-    }
 
     // Other common
     .k-dateinput-wrap,
@@ -157,7 +151,6 @@ $forms-invalid-color: $error !default;
 
 
     // Loading
-    .k-autocomplete,
     .k-multiselect-wrap {
 
         .k-i-loading {
@@ -178,7 +171,6 @@ $forms-invalid-color: $error !default;
 
 
     // Clear value
-    .k-autocomplete,
     .k-dropdown-wrap,
     .k-multiselect-wrap {
 
@@ -208,7 +200,6 @@ $forms-invalid-color: $error !default;
         }
     }
 
-    .k-autocomplete,
     .k-dropdown-wrap {
         &.k-state-focused,
         &.k-state-hover,
@@ -249,22 +240,6 @@ $forms-invalid-color: $error !default;
         [dir="rtl"] & {
             padding-left: calc( #{ $picker-select-size } );
             padding-right: $input-padding-x;
-        }
-    }
-
-    .k-autocomplete {
-        padding-right: calc( #{ $picker-select-size } );
-
-        .k-rtl &,
-        &[dir="rtl"] {
-            padding-left: calc( #{ $picker-select-size } );
-            padding-right: 0;
-
-            .k-clear-value,
-            .k-i-loading {
-                right: auto;
-                left: $input-icon-offset;
-            }
         }
     }
 
