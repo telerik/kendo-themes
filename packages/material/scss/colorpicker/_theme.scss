@@ -14,11 +14,11 @@
         }
 
         .k-picker-wrap {
-            border-color: $input-border;
+            border-color: $colorpicker-border;
             background-color: transparent;
 
             .k-input {
-                color: $input-text;
+                color: $colorpicker-text;
             }
 
             .k-select {
@@ -28,7 +28,7 @@
             // Hover
             &:hover,
             &.k-state-hover {
-                border-color: $input-hovered-border;
+                border-color: $colorpicker-hovered-border;
 
                 .k-select {
                     opacity: $icon-hovered-opacity;
@@ -38,7 +38,7 @@
             // Focused
             &.k-state-focused,
             .k-state-focused > & {
-                border-color: $input-focused-border;
+                border-color: $colorpicker-focused-border;
 
                 .k-select {
                     opacity: $icon-focused-opacity;
