@@ -1,8 +1,3 @@
-$popup-border-width: 1px !default;
-$popup-header-padding: $list-item-padding-y $list-item-padding-x !default;
-$popup-header-font-size: null !default;
-$popup-header-text: null !default;
-$popup-filter-padding-x: $input-padding-x !default;
 
 @include exports("popup/layout") {
 
@@ -193,6 +188,7 @@ $popup-filter-padding-x: $input-padding-x !default;
         padding: $padding-x;
         min-height: calc( #{$padding-y * 4} + #{$form-line-height-em} + #{$button-padding-y * 2} );
         box-sizing: border-box;
+        flex: 1 0 auto;
 
         > .k-textbox {
             // remove the !important declaration when https://github.com/telerik/kendo-ui-core/issues/2617 is fixed

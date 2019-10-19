@@ -1,29 +1,18 @@
-$upload-disabled-text: darken($widget-bg, 27%) !default;
-$upload-border: $border-color !default;
-$upload-error-text: $error !default;
-
 @include exports("upload/theme") {
 
-    $upload-bg: $header-bg !default;
-    $upload-files-bg: $widget-bg !default;
-    $upload-progress-text: $base-text !default;
-    $upload-progress-bg: $info !default;
-    $upload-error-bg: $error !default;
-    $upload-error-border: lighten($error, 29%) !default;
-    $upload-success-text: $success !default;
-    $upload-success-bg: $success !default;
-    $upload-disabled-border: darken($widget-bg, 27%) !default;
-    $upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
-
     .k-upload {
-        background-color: $upload-bg;
-        border-color: $upload-border;
-        background-clip: padding-box;
+        @include fill(
+            $upload-text,
+            $upload-bg,
+            $upload-border
+        );
 
-        .k-ie11 &,
-        .k-edge12 &,
-        .k-edge13 & {
-            background-clip: border-box;
+        .k-dropzone {
+            @include fill(
+                $upload-dropzone-text,
+                $upload-dropzone-bg,
+                $upload-dropzone-border
+            );
         }
 
         .k-upload-files,
@@ -32,78 +21,57 @@ $upload-error-text: $error !default;
         }
 
         .k-file {
-            background-color: $upload-files-bg;
-            border-color: $upload-border;
-            outline: none;
 
             &.k-state-focused {
                 box-shadow: inset $upload-focused-shadow;
             }
 
-            .k-upload-action {
-                opacity: .6;
-                color: inherit;
-                background: none;
-                border-width: 0;
-                box-shadow: none;
-
-                &:hover {
-                    opacity: 1;
-                }
-
-                &.k-state-focused {
-                    box-shadow: $upload-focused-shadow;
-                }
-            }
-
-            .k-upload-pct {
-                opacity: .65;
+            .k-upload-action.k-state-focused {
+                box-shadow: $upload-focused-shadow;
             }
 
         }
 
-        .k-upload-button {
-            input {
-                &[disabled],
-                &.k-state-disabled {
-                    visibility: hidden;
-                }
-            }
-        }
 
+        // Upload status: uploading
         .k-file-progress {
-            color: $upload-progress-text;
+
+            .k-file-name {
+                color: $upload-progress-text;
+            }
+            .k-progress {
+                background-color: $upload-progress-bg;
+            }
         }
 
-        .k-file-progress .k-progress {
-            background-color: $upload-progress-bg;
+
+        // Upload status: success
+        .k-file-success {
+
+            .k-file-name {
+                color: $upload-success-text;
+            }
+            .k-progress {
+                background-color: $upload-success-bg;
+            }
         }
 
-        .k-file-success .k-file-name {
-            color: $upload-success-text;
-        }
 
-        .k-file-success .k-progress {
-            background-color: $upload-success-bg;
-        }
-
-        .k-file-error .k-file-name {
-            color: $upload-error-text;
-        }
-
-        .k-file-error .k-progress,
-        .k-file-invalid .k-progress {
-            background-color: $upload-error-bg;
+        // Upload satus: error
+        .k-file-error,
+        .k-file-invalid {
+            .k-file-name {
+                color: $upload-error-text;
+            }
+            .k-progress {
+                background-color: $upload-error-bg;
+            }
         }
 
         .k-file-extension-wrapper,
         .k-multiple-files-extension-wrapper {
             color: $upload-disabled-text;
             border-color: $upload-disabled-border;
-        }
-
-        .k-file-invalid .k-file-name-invalid {
-            color: $upload-error-text;
         }
 
         .k-file-invalid-extension-wrapper,
@@ -115,14 +83,14 @@ $upload-error-text: $error !default;
 
         .k-file-extension-wrapper::before,
         .k-multiple-files-extension-wrapper::before {
-            background-color: $upload-files-bg;
+            background-color: $upload-bg;
             border-color: transparent transparent $upload-disabled-border $upload-disabled-border;
         }
 
         .k-file-invalid-extension-wrapper::before,
         .k-multiple-files-invalid-extension-wrapper::before,
         .k-file-error .k-file-extension-wrapper::before {
-            background-color: $upload-files-bg;
+            background-color: $upload-bg;
             border-color: transparent transparent $upload-error-border $upload-error-border;
         }
 
@@ -143,18 +111,4 @@ $upload-error-text: $error !default;
         }
     }
 
-    .k-dropzone {
-        .k-i-loading {
-            border-color: $header-bg;
-        }
-
-        .k-i-loading::before,
-        .k-i-loading::after {
-            background-color: $header-bg;
-        }
-    }
-
-    .k-dropzone-hovered {
-        background-color: $hovered-bg;
-    }
 }

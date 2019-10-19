@@ -7,7 +7,11 @@
 
         // Normal state
         .k-picker-wrap {
-            @include appearance( input );
+            @include fill(
+                $datetime-text,
+                $datetime-bg,
+                $datetime-border
+            );
             background-clip: padding-box;
 
             .k-ie11 &,
@@ -18,7 +22,12 @@
         }
 
         .k-select {
-            @include appearance( button );
+            @include fill(
+                $datetime-select-text,
+                $datetime-select-bg,
+                $datetime-select-border,
+                $datetime-select-gradient
+            );
             padding: 0;
             width: button-inner-size();
             border-width: 0;
@@ -27,10 +36,19 @@
         // Hovered state
         &:hover,
         .k-state-hover {
-            @include appearance( hovered-input );
+            @include fill(
+                $datetime-hovered-text,
+                $datetime-hovered-bg,
+                $datetime-hovered-border
+            );
 
             .k-select {
-                @include appearance( hovered-button );
+                @include fill(
+                    $datetime-select-hovered-text,
+                    $datetime-select-hovered-bg,
+                    $datetime-select-hovered-border,
+                    $datetime-select-hovered-gradient
+                );
                 border-color: inherit;
             }
         }
@@ -38,10 +56,14 @@
         // Selected state
         .k-state-focused,
         .k-state-active {
-            @include appearance( focused-input );
+            @include fill(
+                $datetime-focused-text,
+                $datetime-focused-bg,
+                $datetime-focused-border
+            );
+            @include box-shadow($datetime-focused-shadow);
 
             .k-select {
-                @include appearance( active-button );
                 border-color: inherit;
             }
         }
@@ -51,12 +73,19 @@
     .k-datepicker,
     .k-datetimepicker,
     .k-timepicker {
-        .k-picker-wrap.k-state-invalid {
-            transition: none;
-            border-color: $error;
+        .k-picker-wrap {
+            &.k-state-invalid {
+                transition: none;
+                border-color: $error;
 
-            .k-input {
+                .k-input {
+                    color: $error;
+                }
+            }
+
+            &.k-invalid {
                 color: $error;
+                border-color: $invalid-border;
             }
         }
 
@@ -150,7 +179,11 @@
 
         // Normal state
         .k-dateinput-wrap {
-            @include appearance( input );
+            @include fill(
+                $datetime-text,
+                $datetime-bg,
+                $datetime-border
+            );
             background-clip: padding-box;
 
             .k-ie11 &,
@@ -160,39 +193,70 @@
             }
         }
         .k-select {
-            @include appearance( button );
+            @include fill(
+                $datetime-select-text,
+                $datetime-select-bg,
+                $datetime-select-border,
+                $datetime-select-gradient
+            );
             padding: 0;
             width: button-inner-size();
             border-width: 0;
 
             &:hover {
-                @include appearance( hovered-button );
+                @include fill(
+                    $datetime-select-hovered-text,
+                    $datetime-select-hovered-bg,
+                    $datetime-select-hovered-border,
+                    $datetime-select-hovered-gradient
+                );
             }
 
             > .k-state-selected,
             > .k-state-active {
+                @include fill(
+                    $datetime-select-hovered-text,
+                    $datetime-select-hovered-bg,
+                    $datetime-select-hovered-border,
+                    $datetime-select-hovered-gradient
+                );
                 color: darken($text-color, 25%);
-                @include appearance( hovered-button );
-                box-shadow: inset $button-focused-shadow;
+                box-shadow: inset $datetime-select-focused-shadow;
             }
         }
 
         // Hovered state
         .k-state-hover {
-            @include appearance( hovered-input );
+            @include fill(
+                $datetime-hovered-text,
+                $datetime-hovered-bg,
+                $datetime-hovered-border
+            );
 
-            .k-select { @include appearance( hovered-button ); }
+            .k-select {
+                @include fill(
+                    $datetime-select-hovered-text,
+                    $datetime-select-hovered-bg,
+                    $datetime-select-hovered-border,
+                    $datetime-select-hovered-gradient
+                );
+            }
         }
 
         // Focused state
         .k-state-focused {
-            @include appearance( focused-input );
+            @include fill(
+                $datetime-focused-text,
+                $datetime-focused-bg,
+                $datetime-focused-border
+            );
+            @include box-shadow($datetime-focused-shadow);
 
             .k-picker-wrap > & {
                 box-shadow: none;
             }
 
-            .k-select { @include appearance( active-button ); }
+            .k-select {}
         }
 
         // Invalid state

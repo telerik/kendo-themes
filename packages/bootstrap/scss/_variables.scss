@@ -146,9 +146,6 @@ $border-radius-lg: $border-radius-lg !default;
 $panel-padding-x: $card-spacer-x !default;
 $panel-padding-y: $card-spacer-y !default;
 
-$popup-padding-x: 0 !default;
-$popup-padding-y: $dropdown-padding-y !default;
-
 $header-padding-x: $card-spacer-x !default;
 $header-padding-y: $card-spacer-y !default;
 
@@ -329,6 +326,16 @@ $panel-border: $card-border-color !default;
 
 
 // Popup
+
+$popup-padding-x: 0 !default;
+$popup-padding-y: $dropdown-padding-y !default;
+
+$popup-border-width: 1px !default;
+$popup-header-padding: $list-item-padding-y $list-item-padding-x !default;
+$popup-header-font-size: null !default;
+$popup-header-text: null !default;
+$popup-filter-padding-x: $input-padding-x !default;
+
 $popup-text: $dropdown-link-color !default;
 $popup-bg: $dropdown-bg !default;
 $popup-border: $dropdown-border-color !default;
@@ -482,6 +489,36 @@ $dropdownlist-focused-bg: $button-pressed-bg !default;
 $dropdownlist-focused-border: $button-pressed-border !default;
 $dropdownlist-focused-gradient: $button-pressed-gradient !default;
 $dropdownlist-focused-shadow: $button-focused-shadow !default;
+
+// Comboboxes
+$combobox-bg: $input-bg !default;
+$combobox-text: $input-text !default;
+$combobox-border: $input-border !default;
+
+$combobox-hovered-bg: $input-hovered-bg !default;
+$combobox-hovered-text: $input-hovered-text !default;
+$combobox-hovered-border: $input-hovered-border !default;
+
+$combobox-focused-bg: $input-focused-bg !default;
+$combobox-focused-text: $input-focused-text !default;
+$combobox-focused-border: $input-focused-border !default;
+$combobox-focused-shadow: $input-focused-shadow !default;
+
+$combobox-select-bg: $button-bg !default;
+$combobox-select-text: $button-text !default;
+$combobox-select-border: $button-border !default;
+$combobox-select-gradient: $button-gradient !default;
+
+$combobox-select-hovered-bg: $button-hovered-bg !default;
+$combobox-select-hovered-text: $button-hovered-text !default;
+$combobox-select-hovered-border: $button-hovered-border !default;
+$combobox-select-hovered-gradient: $button-hovered-gradient !default;
+
+$combobox-select-focused-bg: $button-pressed-bg !default;
+$combobox-select-focused-text: $button-pressed-text !default;
+$combobox-select-focused-border: $button-pressed-border !default;
+$combobox-select-focused-gradient: $button-pressed-gradient !default;
+$combobox-select-focused-shadow: $button-pressed-shadow !default;
 
 //Textboxes
 $textbox-shadow: 0 2px 2px 1px rgba(0, 0, 0, .06) !default;
@@ -1194,6 +1231,35 @@ $time-list-height: 200px !default;
 
 $datetime-width: ((4 * $time-list-width) + 1em) !default;
 
+$datetime-bg: $input-bg !default;
+$datetime-text: $input-text !default;
+$datetime-border: $input-border !default;
+
+$datetime-hovered-bg: $input-hovered-bg !default;
+$datetime-hovered-text: $input-hovered-text !default;
+$datetime-hovered-border: $input-hovered-border !default;
+
+$datetime-focused-bg: $input-focused-bg !default;
+$datetime-focused-text: $input-focused-text !default;
+$datetime-focused-border: $input-focused-border !default;
+$datetime-focused-shadow: $input-focused-shadow !default;
+
+$datetime-select-bg: $button-bg !default;
+$datetime-select-text: $button-text !default;
+$datetime-select-border: $button-border !default;
+$datetime-select-gradient: $button-gradient !default;
+
+$datetime-select-hovered-bg: $button-hovered-bg !default;
+$datetime-select-hovered-text: $button-hovered-text !default;
+$datetime-select-hovered-border: $button-hovered-border !default;
+$datetime-select-hovered-gradient: $button-hovered-gradient !default;
+
+$datetime-select-focused-bg: $button-pressed-bg !default;
+$datetime-select-focused-text: $button-pressed-text !default;
+$datetime-select-focused-border: $button-pressed-border !default;
+$datetime-select-focused-gradient: $button-pressed-gradient !default;
+$datetime-select-focused-shadow: $button-pressed-shadow !default;
+
 
 // Dialog
 $dialog-buttongroup-padding-x: $window-inner-padding-x !default;
@@ -1537,6 +1603,45 @@ $timeline-collapse-arrow-padding-x: $padding-x-sm !default;
 $timeline-event-width: 400px !default;
 $timeline-event-height: 600px !default;
 $timeline-event-min-height-calc: calc(2 * (#{$timeline-track-event-offset}- #{$card-border-width})) !default;
+
+
+// Upload
+$upload-border-width: 1px !default;
+$upload-font-size: $font-size !default;
+$upload-line-height: $line-height !default;
+$upload-border: $panel-border !default;
+$upload-bg: $panel-bg !default;
+$upload-text: $panel-text !default;
+
+$upload-dropzone-padding-x: $toolbar-padding-x !default;
+$upload-dropzone-padding-y: $toolbar-padding-y !default;
+$upload-dropzone-spacing: $upload-dropzone-padding-x !default;
+$upload-dropzone-bg: $toolbar-bg !default;
+$upload-dropzone-text: $toolbar-text !default;
+$upload-dropzone-border: $toolbar-border !default;
+
+$upload-item-padding-x: $cell-padding-x !default;
+$upload-item-padding-y: $cell-padding-y !default;
+
+$upload-item-image-width: 24px !default;
+$upload-item-image-height: 34px !default;
+$upload-item-image-border: 2px !default;
+
+$upload-disabled-text: darken($widget-bg, 27%) !default;
+$upload-disabled-border: darken($widget-bg, 27%) !default;
+
+$upload-progress-thickness: 2px !default;
+$upload-progress-bg: $info !default;
+$upload-progress-text: $base-text !default;
+
+$upload-success-bg: $success !default;
+$upload-success-text: $success !default;
+
+$upload-error-bg: $error !default;
+$upload-error-text: $error !default;
+$upload-error-border: lighten($error, 29%) !default;
+
+$upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 
 // Config maps

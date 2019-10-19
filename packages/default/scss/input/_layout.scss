@@ -435,7 +435,8 @@
                 padding: $padding-y 0;
             }
 
-            > input {
+            > input,
+            > textarea {
                 width: 100%;
             }
         }
