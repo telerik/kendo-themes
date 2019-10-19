@@ -68,6 +68,10 @@
         width: 65%;
         float: right;
         clear: right;
+
+        &.k-no-editor {
+            padding: calc( #{$input-padding-y} + #{$input-border-width} ) 0;
+        }
     }
 
     .k-edit-field {
