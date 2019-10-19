@@ -20,6 +20,16 @@
         &.k-state-active {
             @include appearance( focused-input );
         }
+
+        // Invalid
+        &.k-invalid,
+        &.k-invalid:hover,
+        &.k-state-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            color: $error;
+            border-color: $invalid-border;
+        }
     }
 
 }

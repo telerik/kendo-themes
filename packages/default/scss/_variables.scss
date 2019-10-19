@@ -95,9 +95,6 @@ $border-radius-lg: $border-radius * 2 !default;
 $panel-padding-x: $padding-x !default;
 $panel-padding-y: $padding-y !default;
 
-$popup-padding-x: 0 !default;
-$popup-padding-y: 0 !default;
-
 $header-padding-x: $padding-x !default;
 $header-padding-y: $padding-y * 2 !default;
 
@@ -203,19 +200,6 @@ $zindex-window: 2 !default;
 
 $rgba-transparent: rgba( 0, 0, 0, 0 );
 
-// ColorPicker
-$colorpicker-rect-padding: $padding-x !default;
-$colorpicker-margin: 8px !default;
-$colorpicker-width: 310px !default;
-$colorpicker-draghandle-width: 14px !default;
-$colorpicker-draghandle-height: 14px !default;
-$colorpicker-slider-track-size: 10px !default;
-$colorpicker-slider-border-radius: 10px !default;
-$colorpicker-hex-input-width: 65px !default;
-$colorpicker-input-width: 48px !default;
-$colorpicker-input-padding-x: $input-padding-y !default;
-$colorpicker-input-padding-y: $input-padding-y !default;
-
 
 // Theme colors
 /// The color that focuses the user attention.
@@ -300,6 +284,16 @@ $panel-border: rgba( black, .08 ) !default;
 
 
 // Popup
+
+$popup-padding-x: 0 !default;
+$popup-padding-y: 0 !default;
+
+$popup-border-width: 1px !default;
+$popup-header-padding: $list-item-padding-y $list-item-padding-x !default;
+$popup-header-font-size: null !default;
+$popup-header-text: null !default;
+$popup-filter-padding-x: $input-padding-x !default;
+
 $popup-text: $base-text !default;
 $popup-bg: lighten($base-bg, 1%) !default;
 $popup-border: $base-border !default;
@@ -453,6 +447,81 @@ $dropdownlist-focused-gradient: null !default;
 $dropdownlist-focused-shadow: $input-focused-shadow !default;
 
 
+// Comboboxes
+$combobox-bg: $input-bg !default;
+$combobox-text: $input-text !default;
+$combobox-border: $input-border !default;
+
+$combobox-hovered-bg: $input-hovered-bg !default;
+$combobox-hovered-text: $input-hovered-text !default;
+$combobox-hovered-border: $input-hovered-border !default;
+
+$combobox-focused-bg: $input-focused-bg !default;
+$combobox-focused-text: $input-focused-text !default;
+$combobox-focused-border: $input-focused-border !default;
+$combobox-focused-shadow: $input-focused-shadow !default;
+
+$combobox-select-bg: $button-bg !default;
+$combobox-select-text: $button-text !default;
+$combobox-select-border: $button-border !default;
+$combobox-select-gradient: $button-gradient !default;
+
+$combobox-select-hovered-bg: $button-hovered-bg !default;
+$combobox-select-hovered-text: $button-hovered-text !default;
+$combobox-select-hovered-border: $button-hovered-border !default;
+$combobox-select-hovered-gradient: $button-hovered-gradient !default;
+
+$combobox-select-focused-bg: $button-pressed-bg !default;
+$combobox-select-focused-text: $button-pressed-text !default;
+$combobox-select-focused-border: $button-pressed-border !default;
+$combobox-select-focused-gradient: $button-pressed-gradient !default;
+$combobox-select-focused-shadow: $button-pressed-shadow !default;
+
+
+// ColorPicker
+$colorpicker-rect-padding: $padding-x !default;
+$colorpicker-margin: 8px !default;
+$colorpicker-width: 310px !default;
+$colorpicker-draghandle-width: 14px !default;
+$colorpicker-draghandle-height: 14px !default;
+$colorpicker-slider-track-size: 10px !default;
+$colorpicker-slider-border-radius: 10px !default;
+$colorpicker-hex-input-width: 65px !default;
+$colorpicker-input-width: 48px !default;
+$colorpicker-input-padding-x: $input-padding-y !default;
+$colorpicker-input-padding-y: $input-padding-y !default;
+
+$colorpicker-bg: $input-bg !default;
+$colorpicker-text: $input-text !default;
+$colorpicker-border: $input-border !default;
+
+$colorpicker-hovered-bg: null !default;
+$colorpicker-hovered-text: null !default;
+$colorpicker-hovered-border: null !default;
+
+$colorpicker-focused-bg: null !default;
+$colorpicker-focused-text: null !default;
+$colorpicker-focused-border: null !default;
+$colorpicker-focused-shadow: null !default;
+
+$colorpicker-select-bg: $button-bg !default;
+$colorpicker-select-text: $button-text !default;
+$colorpicker-select-border: $button-border !default;
+$colorpicker-select-gradient: $button-gradient !default;
+
+$colorpicker-select-hovered-bg: $button-hovered-bg !default;
+$colorpicker-select-hovered-text: $button-hovered-text !default;
+$colorpicker-select-hovered-border: $button-hovered-border !default;
+$colorpicker-select-hovered-gradient: $button-hovered-gradient !default;
+
+$colorpicker-select-focused-bg: $button-pressed-bg !default;
+$colorpicker-select-focused-text: $button-pressed-text !default;
+$colorpicker-select-focused-border: $button-pressed-border !default;
+$colorpicker-select-focused-gradient: $button-pressed-gradient !default;
+$colorpicker-select-pressed-shadow: $button-pressed-shadow !default;
+$colorpicker-select-focused-shadow: $button-focused-shadow !default;
+
+
 // Textboxes
 $textbox-shadow: 0 2px 2px 1px rgba(0, 0, 0, .06) !default;
 $textbox-font-size: $font-size !default;
@@ -510,6 +579,9 @@ $radio-focused-checked-shadow: $checkbox-focused-checked-shadow !default;
 $floating-label-transition: .2s ease-out !default;
 $floating-label-scale: .75 !default;
 $floating-label-height: $textbox-line-height * $floating-label-scale !default;
+$floating-label-text: null !default;
+$floating-label-focused-text: null !default;
+$floating-label-focused-bg: null !default;
 
 //Forms
 
@@ -1173,6 +1245,35 @@ $time-list-width: 5em !default;
 $time-list-height: 200px !default;
 
 $datetime-width: ((4 * $time-list-width) + 1em) !default;
+
+$datetime-bg: $input-bg !default;
+$datetime-text: $input-text !default;
+$datetime-border: $input-border !default;
+
+$datetime-hovered-bg: $input-hovered-bg !default;
+$datetime-hovered-text: $input-hovered-text !default;
+$datetime-hovered-border: $input-hovered-border !default;
+
+$datetime-focused-bg: $input-focused-bg !default;
+$datetime-focused-text: $input-focused-text !default;
+$datetime-focused-border: $input-focused-border !default;
+$datetime-focused-shadow: $input-focused-shadow !default;
+
+$datetime-select-bg: $button-bg !default;
+$datetime-select-text: $button-text !default;
+$datetime-select-border: $button-border !default;
+$datetime-select-gradient: $button-gradient !default;
+
+$datetime-select-hovered-bg: $button-hovered-bg !default;
+$datetime-select-hovered-text: $button-hovered-text !default;
+$datetime-select-hovered-border: $button-hovered-border !default;
+$datetime-select-hovered-gradient: $button-hovered-gradient !default;
+
+$datetime-select-focused-bg: null !default;
+$datetime-select-focused-text: null !default;
+$datetime-select-focused-border: null !default;
+$datetime-select-focused-gradient: null !default;
+$datetime-select-focused-shadow: $button-focused-shadow !default;
 
 
 // Dialog

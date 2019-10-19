@@ -5,7 +5,12 @@
 
         // Normal state
         .k-picker-wrap {
-            @include appearance( button );
+            @include fill(
+                $colorpicker-select-text,
+                $colorpicker-select-bg,
+                $colorpicker-select-border,
+                $colorpicker-select-gradient
+            );
             transition: $transition;
         }
         .k-select {
@@ -19,7 +24,12 @@
         .k-tool-icon.k-state-hover,
         .k-select.k-state-hover,
         .k-state-hover {
-            @include appearance( hovered-button );
+            @include fill(
+                $colorpicker-select-hovered-text,
+                $colorpicker-select-hovered-bg,
+                $colorpicker-select-hovered-border,
+                $colorpicker-select-hovered-gradient
+            );
         }
 
         .k-tool-icon:hover,
@@ -32,7 +42,13 @@
 
         // Active state
         .k-state-active {
-            @include appearance( pressed-button );
+            @include fill(
+                $colorpicker-select-focused-text,
+                $colorpicker-select-focused-bg,
+                $colorpicker-select-focused-border,
+                $colorpicker-select-focused-gradient
+            );
+            @include box-shadow( $colorpicker-select-pressed-shadow );
         }
     }
 
