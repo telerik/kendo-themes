@@ -65,22 +65,6 @@
             color: rgba($input-text, .5);
         }
     }
-
-    // This is needed for the textbox container to capture browser autofill
-    @keyframes autoFillStart {
-        from {}
-        to {}
-    }
-    @keyframes autoFillEnd {
-        from {}
-        to {}
-    }
-    .k-textbox:-webkit-autofill {
-        animation-name: autoFillStart;
-    }
-    .k-textbox:not(:-webkit-autofill) {
-        animation-name: autoFillEnd;
-    }
 }
 
 @include exports("input/theme/checkbox-radiobutton") {
