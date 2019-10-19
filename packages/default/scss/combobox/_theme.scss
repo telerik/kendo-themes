@@ -4,7 +4,11 @@
 
         // Normal state
         .k-dropdown-wrap {
-            @include appearance( input );
+            @include fill(
+                $combobox-text,
+                $combobox-bg,
+                $combobox-border
+            );
             background-clip: padding-box;
             cursor: initial;
 
@@ -16,7 +20,12 @@
         }
 
         .k-select {
-            @include appearance( button );
+            @include fill(
+                $combobox-select-text,
+                $combobox-select-bg,
+                $combobox-select-border,
+                $combobox-select-gradient
+            );
             padding: 0;
             width: button-inner-size();
             border-width: 0;
@@ -25,17 +34,31 @@
         // Hovered state
         > :hover,
         .k-state-hover {
-            @include appearance( hovered-input );
+            @include fill(
+                $combobox-hovered-text,
+                $combobox-hovered-bg,
+                $combobox-hovered-border
+            );
 
             .k-select {
-                @include appearance( hovered-button );
+                @include fill(
+                    $combobox-select-hovered-text,
+                    $combobox-select-hovered-bg,
+                    $combobox-select-hovered-border,
+                    $combobox-select-hovered-gradient
+                );
             }
         }
 
         // Selected state
         > .k-state-focused,
         .k-state-active {
-            @include appearance( focused-input );
+            @include fill(
+                $combobox-focused-text,
+                $combobox-focused-bg,
+                $combobox-focused-border
+            );
+            @include box-shadow($combobox-focused-shadow);
 
             .k-select {}
         }

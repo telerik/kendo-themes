@@ -1,6 +1,7 @@
 @include exports( "colorpicker/theme" ) {
 
     .k-colorpicker {
+        background-color: transparent;
 
         .k-tool-icon {
             color: rgba(0, 0, 0, .42);
@@ -10,6 +11,39 @@
         .k-tool-icon.k-state-hover {
             cursor: pointer;
             color: rgba(0, 0, 0, .87);
+        }
+
+        .k-picker-wrap {
+            border-color: $colorpicker-border;
+            background-color: transparent;
+
+            .k-input {
+                color: $colorpicker-text;
+            }
+
+            .k-select {
+                opacity: $icon-opacity;
+            }
+
+            // Hover
+            &:hover,
+            &.k-state-hover {
+                border-color: $colorpicker-hovered-border;
+
+                .k-select {
+                    opacity: $icon-hovered-opacity;
+                }
+            }
+
+            // Focused
+            &.k-state-focused,
+            .k-state-focused > & {
+                border-color: $colorpicker-focused-border;
+
+                .k-select {
+                    opacity: $icon-focused-opacity;
+                }
+            }
         }
     }
 

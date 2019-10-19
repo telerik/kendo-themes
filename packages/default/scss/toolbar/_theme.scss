@@ -90,6 +90,13 @@
         // Button group
         .k-button-group {}
 
+        .k-combobox {
+            .k-state-border-up,
+            .k-state-border-down {
+                box-shadow: $toolbar-button-expanded-shadow;
+            }
+        }
+
     }
 
 }
