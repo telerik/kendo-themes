@@ -142,9 +142,6 @@ $border-radius-lg: $border-radius * 2 !default;
 $panel-padding-x: $padding-x !default;
 $panel-padding-y: $padding-y !default;
 
-$popup-padding-x: 0 !default;
-$popup-padding-y: 0 !default;
-
 $header-padding-x: $padding-x * 1.5 !default;
 $header-padding-y: $padding-y * 5 !default;
 
@@ -195,8 +192,6 @@ $textarea-padding-x: 10px !default;
 $textarea-padding-y: 15px !default;
 $textarea-floating-label-padding: 3px !default;
 
-$floating-label-text: rgba(0, 0, 0, .38) !default;
-
 
 // Pickers
 $picker-select-border-width: 0 !default;
@@ -207,19 +202,6 @@ $picker-select-line-height: $line-height !default;
 $picker-select-size: calc( #{$picker-select-padding-x * 2} + #{$icon-size} ) !default;
 $picker-icon-offset: calc( #{$picker-select-size} + #{$input-icon-offset} ) !default;
 
-
-// ColorPicker
-$colorpicker-rect-padding: $padding-x * 1.5 !default;
-$colorpicker-margin: 8px !default;
-$colorpicker-width: 356px !default;
-$colorpicker-draghandle-width: 14px !default;
-$colorpicker-draghandle-height: 14px !default;
-$colorpicker-slider-track-size: 10px !default;
-$colorpicker-slider-border-radius: 10px !default;
-$colorpicker-input-width: 50px !default;
-$colorpicker-hex-input-width: 70px !default;
-$colorpicker-input-padding-x: $input-padding-x !default;
-$colorpicker-input-padding-y: $input-padding-y !default;
 
 $list-item-padding-x: $padding-x * 1.5 !default;
 $list-item-padding-y: $padding-y / 2 !default;
@@ -342,6 +324,16 @@ $panel-border: $component-border !default;
 
 
 // Popup
+
+$popup-padding-x: 0 !default;
+$popup-padding-y: 0 !default;
+
+$popup-border-width: 0;
+$popup-header-padding: $padding-y-lg $padding-x-lg !default;
+$popup-header-font-size: $font-size-sm !default;
+$popup-header-text: rgba($base-text, .54) !default;
+$popup-filter-padding-x: $padding-x;
+
 $popup-bg: $component-bg !default;
 $popup-text: $component-text !default;
 $popup-border: $component-border !default;
@@ -542,6 +534,81 @@ $dropdownlist-focused-shadow: null !default;
 $dropdownlist-focused-opacity: $icon-focused-opacity !default;
 
 
+// Comboboxes
+$combobox-bg: $input-bg !default;
+$combobox-text: $input-text !default;
+$combobox-border: $input-border !default;
+
+$combobox-hovered-bg: $input-hovered-bg !default;
+$combobox-hovered-text: $input-hovered-text !default;
+$combobox-hovered-border: $input-hovered-border !default;
+
+$combobox-focused-bg: $input-focused-bg !default;
+$combobox-focused-text: $input-focused-text !default;
+$combobox-focused-border: $input-focused-border !default;
+$combobox-focused-shadow: $input-focused-shadow !default;
+
+$combobox-select-bg: $button-bg !default;
+$combobox-select-text: $button-text !default;
+$combobox-select-border: $button-border !default;
+$combobox-select-gradient: $button-gradient !default;
+
+$combobox-select-hovered-bg: $button-hovered-bg !default;
+$combobox-select-hovered-text: $button-hovered-text !default;
+$combobox-select-hovered-border: $button-hovered-border !default;
+$combobox-select-hovered-gradient: $button-hovered-gradient !default;
+
+$combobox-select-focused-bg: null !default;
+$combobox-select-focused-text: null !default;
+$combobox-select-focused-border: null !default;
+$combobox-select-focused-gradient: null !default;
+$combobox-select-focused-shadow: null !default;
+
+
+// ColorPicker
+$colorpicker-rect-padding: $padding-x * 1.5 !default;
+$colorpicker-margin: 8px !default;
+$colorpicker-width: 356px !default;
+$colorpicker-draghandle-width: 14px !default;
+$colorpicker-draghandle-height: 14px !default;
+$colorpicker-slider-track-size: 10px !default;
+$colorpicker-slider-border-radius: 10px !default;
+$colorpicker-input-width: 50px !default;
+$colorpicker-hex-input-width: 70px !default;
+$colorpicker-input-padding-x: $input-padding-x !default;
+$colorpicker-input-padding-y: $input-padding-y !default;
+
+$colorpicker-bg: $input-bg !default;
+$colorpicker-text: $input-text !default;
+$colorpicker-border: $input-border !default;
+
+$colorpicker-hovered-bg: null !default;
+$colorpicker-hovered-text: null !default;
+$colorpicker-hovered-border: $input-hovered-border !default;
+
+$colorpicker-focused-bg: null !default;
+$colorpicker-focused-text: null !default;
+$colorpicker-focused-border: $input-focused-border !default;
+$colorpicker-focused-shadow: null !default;
+
+$colorpicker-select-bg: $button-bg !default;
+$colorpicker-select-text: $button-text !default;
+$colorpicker-select-border: $button-border !default;
+$colorpicker-select-gradient: $button-gradient !default;
+
+$colorpicker-select-hovered-bg: $button-hovered-bg !default;
+$colorpicker-select-hovered-text: $button-hovered-text !default;
+$colorpicker-select-hovered-border: $button-hovered-border !default;
+$colorpicker-select-hovered-gradient: $button-hovered-gradient !default;
+
+$colorpicker-select-focused-bg: $button-pressed-bg !default;
+$colorpicker-select-focused-text: $button-pressed-text !default;
+$colorpicker-select-focused-border: $button-pressed-border !default;
+$colorpicker-select-focused-gradient: $button-pressed-gradient !default;
+$colorpicker-select-pressed-shadow: $button-pressed-shadow !default;
+$colorpicker-select-focused-shadow: $button-focused-shadow !default;
+
+
 // Textboxes
 $textbox-shadow: none !default;
 $textbox-font-size: $font-size !default;
@@ -599,6 +666,9 @@ $radio-focused-checked-shadow: $checkbox-focused-checked-shadow !default;
 $floating-label-transition: .4s cubic-bezier(.25, .8, .25, 1) !default;
 $floating-label-scale: .75 !default;
 $floating-label-height: $textbox-line-height * $floating-label-scale !default;
+$floating-label-text: rgba(0, 0, 0, .38) !default;
+$floating-label-focused-text: $accent !default;
+$floating-label-focused-bg: $base-bg !default;
 
 //Forms
 $form-spacer: $padding-x * 2 !default;
@@ -1285,6 +1355,35 @@ $time-list-width: 5em !default;
 $time-list-height: 200px !default;
 
 $datetime-width: calc( #{$calendar-cell-size * 8} + #{$calendar-content-padding-x * 2} ) !default;
+
+$datetime-bg: $input-bg !default;
+$datetime-text: $input-text !default;
+$datetime-border: $input-border !default;
+
+$datetime-hovered-bg: $input-hovered-bg !default;
+$datetime-hovered-text: $input-hovered-text !default;
+$datetime-hovered-border: $input-hovered-border !default;
+
+$datetime-focused-bg: $input-focused-bg !default;
+$datetime-focused-text: $input-focused-text !default;
+$datetime-focused-border: $input-focused-border !default;
+$datetime-focused-shadow: $input-focused-shadow !default;
+
+$datetime-select-bg: $button-bg !default;
+$datetime-select-text: $button-text !default;
+$datetime-select-border: $button-border !default;
+$datetime-select-gradient: $button-gradient !default;
+
+$datetime-select-hovered-bg: $button-hovered-bg !default;
+$datetime-select-hovered-text: $button-hovered-text !default;
+$datetime-select-hovered-border: $button-hovered-border !default;
+$datetime-select-hovered-gradient: $button-hovered-gradient !default;
+
+$datetime-select-focused-bg: null !default;
+$datetime-select-focused-text: null !default;
+$datetime-select-focused-border: null !default;
+$datetime-select-focused-gradient: null !default;
+$datetime-select-focused-shadow: null !default;
 
 
 // Dialog

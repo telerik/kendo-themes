@@ -185,6 +185,14 @@ $grid-group-drag-clue-opacity: .9 !default;
             }
         }
 
+        .k-autocomplete {
+            &[dir="rtl"],
+            .k-rtl & {
+                padding-left: $text-field-padding;
+                padding-right: $text-field-padding;
+            }
+        }
+
         .k-multiselect-wrap {
             .k-button {
                 margin-top: $padding-y * 2;

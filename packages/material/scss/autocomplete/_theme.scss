@@ -1,13 +1,39 @@
 @include exports("autocomplete/theme") {
 
     .k-autocomplete {
+        border-color: $input-border;
+        background-color: transparent;
+
         .k-input {
             color: $input-text;
         }
 
-        &.k-state-focused {
-            @include appearance( focused-input );
+        .k-select {
+            opacity: $icon-opacity;
+        }
+
+        &.k-header {
+            border-color: $widget-border;
+        }
+
+        // Hover
+        &:hover,
+        &.k-state-hover {
+            border-color: $input-hovered-border;
+
+            .k-select {
+                opacity: $icon-hovered-opacity;
+            }
+        }
+
+        // Focused
+        &.k-state-focused,
+        .k-state-focused > & {
+            border-color: $input-focused-border;
+
+            .k-select {
+                opacity: $icon-focused-opacity;
+            }
         }
     }
-
 }
