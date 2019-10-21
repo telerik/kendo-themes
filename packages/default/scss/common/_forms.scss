@@ -3,7 +3,6 @@ $forms-invalid-color: $error !default;
 @include exports("forms/layout") {
 
     // Widgets
-    .k-combobox,
     .k-dateinput,
     .k-datepicker,
     .k-datetimepicker,
@@ -35,7 +34,6 @@ $forms-invalid-color: $error !default;
             display: none;
         }
     }
-    .k-combobox,
     .k-dateinput,
     .k-datepicker,
     .k-datetimepicker,
