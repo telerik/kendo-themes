@@ -1,0 +1,184 @@
+@include exports("checkbox/theme") {
+
+    // Checkbox
+    .k-checkbox-label {
+
+        // Normal state
+        &::before {
+            @include fill(
+                $bg: $checkbox-bg,
+                $border: $checkbox-border
+            );
+        }
+
+        // Hover state
+
+        // Focus state
+        .k-checkbox:focus + & {
+            &::before {
+                @include fill( $border: $checkbox-focused-border );
+                @include box-shadow( $checkbox-focused-shadow );
+            }
+        }
+
+        // Indeterminate
+        .k-checkbox-legacy:indeterminate + & {
+            &::before {
+                @include fill(
+                    $bg: $checkbox-indeterminate-bg,
+                    $border: $checkbox-indeterminate-border
+                );
+            }
+            &::after {
+                @include fill( $checkbox-indeterminate-text );
+            }
+        }
+
+        // Checked
+        .k-checkbox:checked + & {
+            &::before {
+                @include fill(
+                    $bg: $checkbox-checked-bg,
+                    $border: $checkbox-checked-border
+                );
+            }
+            &::after {
+                @include fill( $checkbox-checked-text );
+            }
+        }
+        .k-checkbox:checked:focus + & {
+            &::before {
+                @include fill( $border: $checkbox-focused-checked-border );
+                @include box-shadow( $checkbox-focused-checked-shadow );
+            }
+        }
+
+
+        // Disabled
+        .k-checkbox:disabled + & {
+            &::before {
+                @include fill(
+                    $bg: $checkbox-disabled-bg,
+                    $border: $checkbox-disabled-border
+                );
+            }
+            &::after {
+                @include fill( $checkbox-disabled-text );
+            }
+        }
+        .k-checkbox:checked:disabled + &,
+        .k-checkbox:indeterminate:disabled + & {
+            &::before {
+                @include fill(
+                    $bg: $checkbox-disabled-checked-bg,
+                    $border: $checkbox-disabled-checked-border
+                );
+            }
+            &::after {
+                @include fill( $checkbox-disabled-checked-text );
+            }
+        }
+    }
+
+}
+
+
+
+
+@include exports("checkbox/theme/legacy") {
+
+    // Checkbox legacy styles
+    .k-checkbox-legacy-label {
+
+        // Normal state
+        &::before {
+            @include fill(
+                $bg: $checkbox-bg,
+                $border: $checkbox-border
+            );
+        }
+
+        // Hover
+        // the hover styles must be placed on the label to prevent
+        // IE performance regressions with .foo:hover + .bar rules
+        &:hover {
+            &::before {
+                @include fill(
+                    $bg: $checkbox-hovered-bg,
+                    $border: $checkbox-hovered-border
+                );
+            }
+            &::after {
+                @include fill( $checkbox-hovered-text );
+            }
+        }
+
+        // Focus state
+        .k-checkbox-legacy:focus + & {
+            &::before {
+                @include fill( $border: $checkbox-focused-border );
+                @include box-shadow( $checkbox-focused-shadow );
+            }
+        }
+
+        // Indeterminate
+        .k-checkbox-legacy:indeterminate + & {
+            &::before {
+                @include fill(
+                    $bg: $checkbox-indeterminate-bg,
+                    $border: $checkbox-indeterminate-border
+                );
+            }
+            &::after {
+                @include fill( $checkbox-indeterminate-text );
+            }
+        }
+
+        // Checked
+        .k-checkbox-legacy:checked + & {
+            &::before {
+                @include fill(
+                    $bg: $checkbox-checked-bg,
+                    $border: $checkbox-checked-border
+                );
+            }
+            &::after {
+                @include fill( $checkbox-checked-text );
+            }
+        }
+        .k-checkbox-legacy:checked:focus + & {
+            &::before {
+                @include fill( $border: $checkbox-focused-checked-border );
+                @include box-shadow( $checkbox-focused-checked-shadow );
+            }
+        }
+
+
+        // Disabled
+        .k-checkbox-legacy:disabled + & {
+            &::before {
+                @include fill(
+                    $bg: $checkbox-disabled-bg,
+                    $border: $checkbox-disabled-border
+                );
+            }
+            &::after {
+                @include fill( $checkbox-disabled-text );
+            }
+        }
+        .k-checkbox-legacy:checked:disabled + &,
+        .k-checkbox-legacy:indeterminate:disabled + & {
+            &::before {
+                @include fill(
+                    $bg: $checkbox-disabled-checked-bg,
+                    $border: $checkbox-disabled-checked-border
+                );
+            }
+            &::after {
+                @include fill( $checkbox-disabled-checked-text );
+            }
+        }
+
+    }
+
+}
