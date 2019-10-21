@@ -611,6 +611,23 @@ $colorpicker-select-pressed-shadow: $button-pressed-shadow !default;
 $colorpicker-select-focused-shadow: $button-focused-shadow !default;
 
 
+// Autocomplete
+$autocomplete-bg: $input-bg !default;
+$autocomplete-text: $input-text !default;
+$autocomplete-border: $input-border !default;
+$autocomplete-shadow: $input-shadow !default;
+
+$autocomplete-hovered-bg: $input-hovered-bg !default;
+$autocomplete-hovered-text: $input-hovered-text !default;
+$autocomplete-hovered-border: $input-hovered-border !default;
+$autocomplete-hovered-shadow: $input-hovered-shadow !default;
+
+$autocomplete-focused-bg: $input-focused-bg !default;
+$autocomplete-focused-text: $input-focused-text !default;
+$autocomplete-focused-border: $input-focused-border !default;
+$autocomplete-focused-shadow: $input-focused-shadow !default;
+
+
 // Textboxes
 $textbox-shadow: none !default;
 $textbox-font-size: $font-size !default;
