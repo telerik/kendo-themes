@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.5.0"></a>
+# 4.5.0 (2019-10-21)
+
+
+### Bug Fixes
+
+* **colorpicker:** extract scss variables ([493b5a1](https://github.com/telerik/kendo-themes/commit/493b5a1))
+* **datetime:** invalid state style in grid-editing ([8d8d45c](https://github.com/telerik/kendo-themes/commit/8d8d45c))
+* **dragclue:** position and z-index styles ([818c65b](https://github.com/telerik/kendo-themes/commit/818c65b))
+* **dropdownlist:** fix popup content overflowing when filtering is enabled [#920](https://github.com/telerik/kendo-themes/issues/920) ([2258964](https://github.com/telerik/kendo-themes/commit/2258964))
+* **grid:** add styles for non-editable fields in popup editor ([4562a47](https://github.com/telerik/kendo-themes/commit/4562a47))
+* **grid:** MVVM Visible binding does not hide the Grid with Sass themes ([638a3b5](https://github.com/telerik/kendo-themes/commit/638a3b5))
+* **input:** extract variable for input floating label background ([e05ddac](https://github.com/telerik/kendo-themes/commit/e05ddac))
+* **input:** extract variables for floating labels focused state ([146937f](https://github.com/telerik/kendo-themes/commit/146937f))
+* **multiselect:** height with bootstrap integration ([ff39f31](https://github.com/telerik/kendo-themes/commit/ff39f31))
+* **multiselect:** tags margins in an edit form ([a60c119](https://github.com/telerik/kendo-themes/commit/a60c119))
+* **scheduler:** views buttons wrap to prevent overflow [#217](https://github.com/telerik/kendo-themes/issues/217) ([a8b1668](https://github.com/telerik/kendo-themes/commit/a8b1668))
+* **switch:** widget not rendered correctly in IE 9 and 10 ([5e9cd95](https://github.com/telerik/kendo-themes/commit/5e9cd95))
+* adjust textarea width in k-form ([fa510a6](https://github.com/telerik/kendo-themes/commit/fa510a6))
+* contextmenu popup shown behind window ([e59da04](https://github.com/telerik/kendo-themes/commit/e59da04))
+* split functions and variables into separate import files ([cda7960](https://github.com/telerik/kendo-themes/commit/cda7960))
+* W3C CSS Validation Service error ([98ffd84](https://github.com/telerik/kendo-themes/commit/98ffd84))
+* **toolbar:** expanded combobox style ([da1acd5](https://github.com/telerik/kendo-themes/commit/da1acd5))
+* **tooltip:** closable tooltip in material theme needs different font-size ([3f23190](https://github.com/telerik/kendo-themes/commit/3f23190))
+* **upload:** extract variables for upload component ([1f1c517](https://github.com/telerik/kendo-themes/commit/1f1c517))
+
+
+### Features
+
+* **grid:** column resizer styles ([c7e532a](https://github.com/telerik/kendo-themes/commit/c7e532a))
+
+
+
+
 <a name="4.4.0"></a>
 # [4.4.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.3.3...@progress/kendo-theme-default@4.4.0) (2019-10-11)
 

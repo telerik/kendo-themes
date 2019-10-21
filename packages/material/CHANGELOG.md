@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.3.6"></a>
+## 3.3.6 (2019-10-21)
+
+
+### Bug Fixes
+
+* split functions and variables into separate import files ([cda7960](https://github.com/telerik/kendo-themes/commit/cda7960))
+* **colorpicker:** extract scss variables ([493b5a1](https://github.com/telerik/kendo-themes/commit/493b5a1))
+* **dropdownlist:** fix popup content overflowing when filtering is enabled [#920](https://github.com/telerik/kendo-themes/issues/920) ([2258964](https://github.com/telerik/kendo-themes/commit/2258964))
+* **input:** extract variable for input floating label background ([e05ddac](https://github.com/telerik/kendo-themes/commit/e05ddac))
+* **input:** extract variables for floating labels focused state ([146937f](https://github.com/telerik/kendo-themes/commit/146937f))
+* **multiselect:** tags margin in Material ([2d85333](https://github.com/telerik/kendo-themes/commit/2d85333))
+* **tooltip:** closable tooltip in material theme needs different font-size ([3f23190](https://github.com/telerik/kendo-themes/commit/3f23190))
+* **upload:** extract variables for upload component ([1f1c517](https://github.com/telerik/kendo-themes/commit/1f1c517))
+
+
+
+
 <a name="3.3.5"></a>
 ## [3.3.5](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.3.4...@progress/kendo-theme-material@3.3.5) (2019-10-11)
 

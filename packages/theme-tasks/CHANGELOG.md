@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# 0.4.0 (2019-10-21)
+
+
+### Features
+
+* implement functionality to flatten sass files ([a2004df](https://github.com/telerik/kendo-themes/commit/a2004df))
+
+
+
+
 <a name="0.3.1"></a>
 ## [0.3.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.3.0...@progress/kendo-theme-tasks@0.3.1) (2019-10-11)
 
