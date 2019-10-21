@@ -1,6 +1,29 @@
 @include exports("combobox/layout") {
 
-    .k-combobox {}
+    .k-combobox {
+        width: $input-default-width;
+        font-size: $input-font-size;
+        line-height: $input-line-height;
+        text-align: left;
+        white-space: nowrap;
+        border-width: 0;
+        display: inline-flex;
+        vertical-align: middle;
+        position: relative;
+
+        &[dir="rtl"],
+        .k-rtl & {
+            text-align: right;
+
+            .k-select {
+                @include border-left-radius-only();
+            }
+        }
+
+        ::-ms-clear {
+            display: none;
+        }
+    }
 
     .k-combobox-clearable {
         .k-input {
