@@ -1,18 +1,34 @@
 @include exports("autocomplete/theme") {
 
     .k-autocomplete {
-        @include appearance( input );
+        @include fill(
+            $autocomplete-text,
+            $autocomplete-bg,
+            $autocomplete-border
+        );
+        @include box-shadow($autocomplete-shadow);
         @include use-background-clip();
 
         // Hovered state
+        &:hover,
         &.k-state-hover {
-            @include appearance( hovered-input );
+            @include fill(
+                $autocomplete-hovered-text,
+                $autocomplete-hovered-bg,
+                $autocomplete-hovered-border
+            );
+            @include box-shadow($autocomplete-hovered-shadow);
         }
 
-        // Selected & Focused state
-        &.k-state-focused,
-        &.k-state-active {
-            @include appearance( focused-input );
+        // Focused & Open state
+        &.k-state-open,
+        &.k-state-focused {
+            @include fill(
+                $autocomplete-focused-text,
+                $autocomplete-focused-bg,
+                $autocomplete-focused-border
+            );
+            @include box-shadow($autocomplete-focused-shadow);
         }
 
         // Invalid
