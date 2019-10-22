@@ -1,1 +1,97 @@
 @import "~@progress/kendo-theme-default/scss/datetime/_layout.scss";
+
+@include exports("datetime/layout/bootstrap") {
+
+    .k-datepicker,
+    .k-datetimepicker,
+    .k-timepicker {
+        .k-select {
+            width: auto;
+        }
+    }
+
+    .k-datepicker,
+    .k-timepicker {
+        .k-picker-wrap {
+            .k-select {
+                padding: $picker-select-padding-y $picker-select-padding-x;
+                border-width: 0 0 0 $picker-select-border-width;
+            }
+        }
+
+        .k-i-warning {
+            right: $spacer * 2.5;
+        }
+
+        .k-state-invalid {
+            transition: none;
+        }
+
+        .k-rtl &,
+        &[dir="rtl"] {
+            .k-i-warning {
+                left: $spacer * 2.5;
+            }
+        }
+    }
+
+    // Timepicker header
+    .k-time-header {
+        padding: $time-header-padding;
+
+        .k-title {
+            font-weight: bold;
+        }
+
+        .k-time-now {
+            cursor: pointer;
+        }
+    }
+
+    // Timepicker content
+    .k-time-list-wrapper {
+        .k-title {
+            z-index: 12;
+            font-size: $font-size-xs;
+        }
+
+        &.k-state-focused {
+            &::before,
+            &::after {
+                border-width: 0;
+            }
+        }
+    }
+
+    // Datetimepicker
+    .k-datetimepicker {
+        .k-link {
+            padding: 0;
+            width: calc( #{$button-border-width} + #{$icon-size} + #{$button-padding-y * 2} );
+            border-width: 0 0 0 $picker-select-border-width;
+        }
+
+        .k-i-warning {
+            right: calc( #{ button-inner-size( 2 ) } + #{ $input-padding-x-sm });
+        }
+
+        .k-state-invalid {
+            transition: none;
+        }
+
+        .k-rtl &,
+        &[dir="rtl"] {
+            .k-i-warning {
+                left: calc( #{ button-inner-size( 2 ) } + #{ $input-padding-x-sm });
+            }
+        }
+    }
+
+    // Dateinput
+    .k-dateinput {
+        .k-dateinput-wrap,
+        .k-select {
+            transition: $transition;
+        }
+    }
+}

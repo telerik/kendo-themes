@@ -725,6 +725,9 @@ $form-fieldset-legend-text: darken($text-color, 13%) !default;
 $fieldset-font-size: $h4-font-size !default;
 $fieldset-margin: 30px !default;
 
+$spinner-width: button-inner-size() !default;
+$spinner-icon-offset: 1px !default;
+
 
 // Toolbar
 
@@ -1387,17 +1390,21 @@ $backdrop-opacity: $modal-backdrop-opacity !default;
 
 
 // DateTime
+$time-highlight-size: 1px;
 
 $time-list-highlight-color: $border-color !default;
 $time-list-focused-bg: rgba(0, 0, 0, .02) !default;
 $time-list-title-focus: black !default;
 
 $time-header-padding: $padding-y $padding-x !default;
+$timepicker-header-height: 2em;
 
 $time-list-padding: $padding-y * 5 !default;
 $time-list-focus-size: 2px !default;
 $time-list-width: 5em !default;
 $time-list-height: 200px !default;
+
+$dateinput-text: null !default;
 
 $datetime-width: ((4 * $time-list-width) + 1em) !default;
 

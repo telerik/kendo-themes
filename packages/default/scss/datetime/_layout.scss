@@ -1,11 +1,98 @@
 @include exports("datetime/layout") {
-    $timepicker-header-height: 2em;
-    $time-highlight-size: 1px;
+
+    // Common
+    .k-dateinput,
+    .k-datepicker,
+    .k-datetimepicker,
+    .k-timepicker {
+        width: $input-default-width;
+        border-width: 0;
+        background-color: transparent;
+        font-size: $input-font-size;
+        line-height: $input-line-height;
+        text-align: left;
+        white-space: nowrap;
+        display: inline-flex;
+        vertical-align: middle;
+        position: relative;
+
+        // Wrappers
+        .k-dateinput-wrap,
+        .k-picker-wrap {
+            @include border-radius( $input-border-radius );
+            padding: 0;
+            width: 100%;
+            border-width: 1px;
+            border-style: solid;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            transition: all .1s ease; // sass-lint:disable-block no-transition-all
+            cursor: default;
+            outline: 0;
+
+            .k-input {
+                padding: $input-padding-y $input-padding-x;
+                width: 100%;
+                height: calc( #{$input-padding-y * 2} + #{$input-line-height * 1em} );
+                box-sizing: border-box;
+                border: 0;
+                outline: 0;
+                color: inherit;
+                background: none;
+                font: inherit;
+                flex: 0 1 auto;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                .k-edge & {
+                    min-width: 0;
+                }
+            }
+
+            .k-select {
+                @include border-right-radius-only();
+                padding: 0;
+                border-width: 0;
+                box-sizing: border-box;
+                border-style: solid;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 0 0 auto;
+                text-align: center;
+                cursor: pointer;
+
+                .k-icon {}
+            }
+        }
+
+        &[dir="rtl"],
+        .k-rtl & {
+            text-align: right;
+
+            .k-select {
+                @include border-left-radius-only();
+            }
+        }
+
+        ::-ms-clear {
+            display: none;
+        }
+    }
 
     // Datepicker
     .k-datepicker,
     .k-datetimepicker,
     .k-timepicker {
+        .k-select {
+            padding: 0;
+            width: $spinner-width;
+            border-width: 0;
+        }
 
         .k-i-warning {
             display: none;
@@ -32,6 +119,12 @@
             @include border-left-radius-only();
         }
 
+        .k-picker-wrap {
+            &.k-state-invalid {
+                transition: none;
+            }
+        }
+
         .k-rtl &,
         &[dir="rtl"] {
             .k-i-warning {
@@ -55,7 +148,31 @@
         }
     }
 
+    // Timepicker
+    .k-timepicker {}
+
+    // Datetimepicker
     .k-datetimepicker {
+
+        .k-select {
+            padding: 0;
+            width: auto;
+            border-left-width: 0;
+            align-items: stretch;
+        }
+
+        .k-link {
+            padding: 0;
+            width: button-inner-size();
+            height: 100%;
+            border-width: 0;
+            border-style: solid;
+            border-color: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
 
         .k-i-warning {
             right: calc( #{ button-inner-size( 2 ) } + #{ $input-padding-x-sm });
@@ -66,29 +183,6 @@
             .k-i-warning {
                 left: calc( #{ button-inner-size( 2 ) } + #{ $input-padding-x-sm });
             }
-        }
-    }
-
-    // Timepicker
-    .k-timepicker {}
-
-    // Datetimepicker
-    .k-datetimepicker {
-
-        .k-select {
-            padding: 0;
-            border-left-width: 0;
-            align-items: stretch;
-        }
-        .k-link {
-            padding: $picker-select-padding-y $picker-select-padding-x;
-            border-width: 0 0 0 $picker-select-border-width;
-            border-style: solid;
-            border-color: inherit;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-sizing: border-box;
         }
     }
 
@@ -144,8 +238,36 @@
 
     // Dateinput
     .k-dateinput {
-        position: relative;
-        border-width: 0;
+        .k-select {
+            padding: 0;
+            border-width: 0;
+            width: $spinner-width;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .k-link {
+            width: 100%;
+            flex: 1 1 auto;
+            display: block;
+            overflow: hidden;
+            position: relative;
+
+            .k-icon {
+                position: absolute;
+                right: 50%;
+                transform: translateX(50%);
+            }
+        }
+
+        .k-link-increase .k-icon {
+            bottom: -$spinner-icon-offset;
+        }
+
+        .k-link-decrease .k-icon {
+            top: -$spinner-icon-offset;
+        }
 
         .k-i-warning {
             display: none;
@@ -179,10 +301,14 @@
         padding: 2 * $padding-y $padding-x * 2;
         line-height: $timepicker-header-height;
 
+        .k-title {
+            font-weight: bold;
+        }
+
         .k-time-now {
             border-width: 0;
-            background: transparent;
             line-height: inherit;
+            cursor: pointer;
         }
     }
 
@@ -210,7 +336,7 @@
             height: 1.5em;
             line-height: 1.5em;
             margin-top: -$time-list-padding;
-            background: transparent;
+            z-index: 12;
         }
 
         &.k-state-focused {

@@ -1,17 +1,57 @@
 @include exports("datetime/theme") {
-    $dateinput-text: $panel-text !default;
-    $uppercase-text: uppercase;
 
-    // Shared
+    // Common
+    .k-dateinput,
     .k-datepicker,
-    .k-timepicker,
-    .k-datetimepicker {
-        .k-picker-wrap {
+    .k-datetimepicker,
+    .k-timepicker {
+        background-color: transparent;
 
-            &.k-state-focused {
-                border-color: $input-focused-border;
+        // Wrappers
+        .k-dateinput-wrap,
+        .k-picker-wrap {
+            border-color: $datetime-border;
+            background-color: transparent;
+
+            .k-input {
+                color: $datetime-text;
+            }
+
+            .k-select {
+                opacity: $icon-opacity;
+            }
+
+            // Hover
+            &:hover,
+            &.k-state-hover {
+                border-color: $datetime-hovered-border;
+
+                .k-select {
+                    opacity: $icon-hovered-opacity;
+                }
+            }
+
+            // Focused
+            &.k-state-focused,
+            .k-state-focused > & {
+                border-color: $datetime-focused-border;
+
+                .k-select {
+                    opacity: $icon-focused-opacity;
+                }
+            }
+
+            // Invalid
+            &.k-invalid,
+            &.k-invalid:hover,
+            &.k-state-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+                color: $error;
+                border-color: $invalid-border;
             }
         }
+
     }
 
     // Timepicker
@@ -25,20 +65,13 @@
     .k-timeselector,
     .k-datetime-wrap {
         .k-time-header {
-            padding: $padding-x-sm calc( #{$padding-x} + 2px );
 
             .k-title {
-                font-weight: bold;
                 color: $dateinput-text;
             }
 
             .k-time-now {
                 color: $action-button-text;
-                cursor: pointer;
-                text-transform: $uppercase-text;
-                font-weight: bold;
-                padding: 0;
-                min-width: auto;
 
                 &:hover,
                 &:focus {
@@ -54,20 +87,13 @@
         .k-time-list-wrapper {
             .k-title {
                 color: $dateinput-text;
-                text-transform: $uppercase-text;
                 opacity: .3;
-                z-index: 99;
             }
 
             &.k-state-focused {
                 .k-title {
                     color: $dateinput-text;
                     opacity: 1;
-                }
-
-                &::before,
-                &::after {
-                    border-width: 0;
                 }
             }
 
@@ -81,12 +107,6 @@
                     $shadow-size: 3em;
                     box-shadow: 0 0 $shadow-size ($shadow-size) $popup-bg;
                 }
-            }
-        }
-
-        .k-time-list-container {
-            .k-time-separator {
-                display: none;
             }
         }
     }
