@@ -42,75 +42,6 @@
         }
     }
 
-    // Radio
-    .k-radio-label::before {
-        border-color: $radio-border;
-        background-color: $radio-bg;
-    }
-    .k-radio {
-
-        // Hover
-        &:hover {}
-
-        // Checked
-        &:checked + .k-radio-label {
-            &::before {
-                background-color: $radio-checked-bg;
-                border-color: transparent;
-                box-shadow: 0 0 1px 0 $radio-checked-bg inset;
-            }
-
-            &::after {
-                background-color: $radio-checked-text;
-            }
-        }
-
-        // Focused
-        &:focus + .k-radio-label::before {
-            box-shadow: $focused-checked-shadow;
-        }
-    }
-
-    // Checkbox
-    .k-checkbox-label::before {
-        background-color: $checkbox-bg;
-        border-color: $checkbox-border;
-    }
-    .k-checkbox {
-
-        // Hover
-        &:hover {}
-
-        // Checked
-        &:checked + .k-checkbox-label {
-            &::before {
-                border-color: $checkbox-checked-border;
-                background-color: $checkbox-checked-bg;
-            }
-
-            &::after {
-                color: $checkbox-checked-text;
-            }
-        }
-
-        // Indeterminate
-        &:indeterminate + .k-checkbox-label::after {
-            border-color: $checkbox-checked-border;
-            background-color: $checkbox-checked-bg;
-        }
-
-        // Focused
-        &:focus + .k-checkbox-label::before {
-            box-shadow: $focused-checked-shadow;
-        }
-
-    }
-
-    // .k-checkbox:focus:checked + .k-checkbox-label::before,
-    // .k-radio:focus:checked + .k-radio-label::before {
-    //     border-color: $accent;
-    //     box-shadow: $custom-control-focus-indicator-box-shadow;
-    // }
 
     // Forms
     .k-form,
@@ -154,8 +85,7 @@
         }
 
         .k-form-field {
-            > span:not(.k-widget),
-            > label:not(.k-checkbox-label):not(.k-radio-label) {
+            > span:not(.k-widget) {
                 padding: calc( #{$padding-y} - #{$input-border-width} ) 0;
                 padding-right: $padding-x;
             }
@@ -206,84 +136,4 @@
             }
         }
     }
-
-}
-
-
-
-
-@include exports("input/theme/legacy") {
-
-    // Radio legacy styles
-    .k-radio-legacy-label::before {
-        border-color: $radio-border;
-        background-color: $radio-bg;
-    }
-    .k-radio-legacy {
-
-        // Checked
-        &:checked + .k-radio-legacy-label {
-            &::before {
-                border-color: transparent;
-                background-color: $radio-checked-bg;
-                box-shadow: 0 0 1px 0 $radio-checked-bg inset;
-            }
-
-            &::after {
-                background-color: $radio-checked-text;
-            }
-        }
-
-        // Focused
-        &:focus + .k-radio-legacy-label::before {
-            box-shadow: $focused-checked-shadow;
-        }
-    }
-
-
-    // Checkbox legacy styles
-    .k-checkbox-legacy-label::before {
-        border-color: $checkbox-border;
-        background-color: $checkbox-bg;
-    }
-    .k-checkbox-legacy {
-
-        // Checked
-        &:checked + .k-checkbox-legacy-label {
-            &::before {
-                border-color: $checkbox-checked-border;
-                background-color: $checkbox-checked-bg;
-            }
-
-            &::after {
-                color: $checkbox-checked-text;
-            }
-        }
-
-        // Indeterminate
-        &:indeterminate + .k-checkbox-legacy-label::after {
-            border-color: $checkbox-checked-border;
-            background-color: $checkbox-checked-bg;
-        }
-
-        // Focused
-        &:focus + .k-checkbox-legacy-label::before {
-            box-shadow: $focused-checked-shadow;
-        }
-    }
-
-
-    // Form styles
-    .k-form-inline {
-
-        .k-form-field {
-            > label:not(.k-checkbox-legacy-label):not(.k-radio-legacy-label) {
-                padding: calc( #{$padding-y} - #{$input-border-width} ) 0;
-                padding-right: $padding-x;
-            }
-        }
-
-    }
-
-
 }
