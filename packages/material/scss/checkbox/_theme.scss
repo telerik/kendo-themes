@@ -1,0 +1,47 @@
+@import "~@progress/kendo-theme-default/scss/checkbox/_theme.scss";
+
+@include exports("checkbox/theme/material") {
+
+    // Checkbox
+    .k-checkbox-label {
+
+        // Disabled state
+        .k-checkbox:disabled + & {
+            color: if($is-dark-theme, $light-secondary-text, $dark-secondary-text);
+            opacity: 1;
+            filter: none;
+        }
+
+
+        // Ripple
+        .k-ripple-blob {
+            opacity: .2;
+            background-color: $checkbox-checked-bg;
+        }
+
+    }
+}
+
+
+@include exports("checkbox/theme/material/legacy") {
+
+    // Checkbox
+    .k-checkbox-legacy-label {
+
+        // Disabled state
+        .k-checkbox-legacy:disabled + & {
+            color: if($is-dark-theme, $light-secondary-text, $dark-secondary-text);
+            opacity: 1;
+            filter: none;
+        }
+
+
+        // Ripple
+        .k-ripple-blob {
+            opacity: .2;
+            background-color: $checkbox-checked-bg;
+        }
+
+    }
+
+}

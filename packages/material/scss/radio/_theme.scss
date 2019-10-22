@@ -1,0 +1,55 @@
+@import "~@progress/kendo-theme-default/scss/radio/_theme.scss";
+
+@include exports("radio/theme/material") {
+
+    // Radio
+    .k-radio-label {
+
+        .k-radio + &::after {
+            transition: transform linear 280ms;
+        }
+
+        // Disabled state
+        .k-radio:disabled + & {
+            color: if($is-dark-theme, $light-secondary-text, $dark-secondary-text);
+            opacity: 1;
+            filter: none;
+        }
+
+
+        // Ripple
+        .k-ripple-blob {
+            opacity: .2;
+            background-color: $radio-checked-bg;
+        }
+
+    }
+}
+
+
+@include exports("radio/theme/material/legacy") {
+
+    // Radio legacy styles
+    .k-radio-legacy-label {
+
+        .k-radio-legacy + &::after {
+            transition: transform linear 280ms;
+        }
+
+        // Disabled state
+        .k-radio-legacy:disabled + & {
+            color: if($is-dark-theme, $light-secondary-text, $dark-secondary-text);
+            opacity: 1;
+            filter: none;
+        }
+
+
+        // Ripple
+        .k-ripple-blob {
+            opacity: .2;
+            background-color: $radio-checked-bg;
+        }
+
+    }
+
+}

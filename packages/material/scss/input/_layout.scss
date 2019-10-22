@@ -2,20 +2,6 @@
 
 @include exports("input/layout/material") {
 
-    // animate tick mark with max-width transition
-
-    .k-checkbox-label::after {
-        max-width: 0;
-        text-indent: (($checkbox-size - $checkbox-icon-size) / 2);
-        justify-content: flex-start;
-        transition: max-width linear 280ms;
-
-        .k-checkbox:checked + &,
-        .k-checkbox:indeterminate + & {
-            max-width: $checkbox-size;
-        }
-    }
-
     // Textarea Floating label
     .k-textarea-wrapper {
         padding-top: 0;
@@ -52,26 +38,6 @@
         &.k-state-focused > .k-label {
             top: calc( #{$floating-label-height} + #{$input-border-width} + #{$input-padding-y} - 10px );
             padding: 0 $textarea-floating-label-padding;
-        }
-    }
-}
-
-
-
-
-@include exports("input/layout/material/legacy") {
-
-    // animate tick mark with max-width transition
-
-    .k-checkbox-legacy-label::after {
-        max-width: 0;
-        text-indent: (($checkbox-size - $checkbox-icon-size) / 2);
-        justify-content: flex-start;
-        transition: max-width linear 280ms;
-
-        .k-checkbox-legacy:checked + &,
-        .k-checkbox-legacy:indeterminate + & {
-            max-width: $checkbox-size;
         }
     }
 }
