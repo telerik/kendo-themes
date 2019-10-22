@@ -35,6 +35,41 @@
             );
             @include use-background-clip();
 
+            // Hovered state
+            &:hover,
+            &.k-state-hover {
+                @include fill(
+                    $datetime-hovered-text,
+                    $datetime-hovered-bg,
+                    $datetime-hovered-border
+                );
+
+                .k-select {
+                    @include fill(
+                        $datetime-select-hovered-text,
+                        $datetime-select-hovered-bg,
+                        $datetime-select-hovered-border,
+                        $datetime-select-hovered-gradient
+                    );
+                    border-color: inherit;
+                }
+            }
+
+            // Selected state
+            &.k-state-focused,
+            &.k-state-active {
+                @include fill(
+                    $datetime-focused-text,
+                    $datetime-focused-bg,
+                    $datetime-focused-border
+                );
+                @include box-shadow($datetime-focused-shadow);
+
+                .k-select {
+                    border-color: inherit;
+                }
+            }
+
             &.k-state-invalid {
                 border-color: $error;
 
@@ -60,41 +95,6 @@
 
         .k-i-warning {
             color: $error;
-        }
-
-        // Hovered state
-        &:hover,
-        .k-state-hover {
-            @include fill(
-                $datetime-hovered-text,
-                $datetime-hovered-bg,
-                $datetime-hovered-border
-            );
-
-            .k-select {
-                @include fill(
-                    $datetime-select-hovered-text,
-                    $datetime-select-hovered-bg,
-                    $datetime-select-hovered-border,
-                    $datetime-select-hovered-gradient
-                );
-                border-color: inherit;
-            }
-        }
-
-        // Selected state
-        .k-state-focused,
-        .k-state-active {
-            @include fill(
-                $datetime-focused-text,
-                $datetime-focused-bg,
-                $datetime-focused-border
-            );
-            @include box-shadow($datetime-focused-shadow);
-
-            .k-select {
-                border-color: inherit;
-            }
         }
     }
 
