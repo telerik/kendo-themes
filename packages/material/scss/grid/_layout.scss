@@ -184,6 +184,23 @@ $grid-group-drag-clue-opacity: .9 !default;
             }
         }
 
+        .k-dateinput,
+        .k-datepicker,
+        .k-datetimepicker,
+        .k-timepicker {
+            .k-dateinput-wrap,
+            .k-picker-wrap {
+                border-radius: $text-field-radius;
+                border-width: 0 0 $text-field-border-width;
+                padding-left: $text-field-padding;
+                padding-right: $padding-y;
+
+                .k-input {
+                    height: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} - #{$text-field-border-width} );
+                }
+            }
+        }
+
         .k-autocomplete {
             &[dir="rtl"],
             .k-rtl & {

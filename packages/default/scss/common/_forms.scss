@@ -3,13 +3,11 @@ $forms-invalid-color: $error !default;
 @include exports("forms/layout") {
 
     // Widgets
-    .k-dateinput,
-    .k-datepicker,
-    .k-datetimepicker,
     .k-dropdown,
-    .k-timepicker,
     .k-dropdowntree {
         width: $input-default-width;
+        border-width: 0;
+        background-color: transparent;
         font-size: $input-font-size;
         line-height: $input-line-height;
         text-align: left;
@@ -30,15 +28,6 @@ $forms-invalid-color: $error !default;
         ::-ms-clear {
             display: none;
         }
-    }
-    .k-dateinput,
-    .k-datepicker,
-    .k-datetimepicker,
-    .k-dropdown,
-    .k-timepicker,
-    .k-dropdowntree {
-        border-width: 0;
-        background-color: transparent;
     }
 
     .k-nodata {
@@ -63,9 +52,7 @@ $forms-invalid-color: $error !default;
 
 
     // Wrappers
-    .k-dateinput-wrap,
-    .k-dropdown-wrap,
-    .k-picker-wrap {
+    .k-dropdown-wrap {
         @include border-radius( $input-border-radius );
         padding: 0;
         width: 100%;
@@ -107,9 +94,7 @@ $forms-invalid-color: $error !default;
     }
 
     // Other common
-    .k-dateinput-wrap,
-    .k-dropdown-wrap,
-    .k-picker-wrap {
+    .k-dropdown-wrap {
         display: flex;
         flex-direction: row;
 
@@ -187,42 +172,6 @@ $forms-invalid-color: $error !default;
                 right: auto;
                 left: $picker-icon-offset;
             }
-        }
-    }
-
-    $spinner-width: button-inner-size() !default;
-    $spinner-icon-offset: 2px !default;
-
-    .k-dateinput {
-
-        .k-select {
-            padding: 0;
-            border-width: 0;
-            width: $spinner-width;
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-        }
-
-        .k-link {
-            flex: 1 1 auto;
-            display: block;
-            overflow: hidden;
-            position: relative;
-
-            .k-icon {
-                position: absolute;
-                right: 50%;
-                transform: translateX(50%);
-            }
-        }
-
-        .k-link-increase .k-icon {
-            bottom: -$spinner-icon-offset;
-        }
-
-        .k-link-decrease .k-icon {
-            top: -$spinner-icon-offset;
         }
     }
 

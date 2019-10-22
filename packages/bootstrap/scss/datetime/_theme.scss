@@ -72,14 +72,16 @@
         }
     }
 
-    .k-dateinput.k-state-invalid {
-        .k-textbox {
-            color: $error;
-            border-color: $error;
-        }
+    .k-dateinput {
+        &.k-state-invalid {
+            .k-textbox {
+                color: $error;
+                border-color: $error;
+            }
 
-        .k-i-warning {
-            color: $error;
+            .k-i-warning {
+                color: $error;
+            }
         }
     }
 
@@ -88,11 +90,9 @@
     .k-timepicker {
         .k-i-warning {
             color: $error;
-            right: $spacer * 2.5;
         }
 
         .k-state-invalid {
-            transition: none;
             color: $error;
             border-color: $error;
         }
@@ -101,13 +101,6 @@
             &.k-invalid {
                 color: $error;
                 border-color: $invalid-border;
-            }
-        }
-
-        .k-rtl &,
-        &[dir="rtl"] {
-            .k-i-warning {
-                left: $spacer * 2.5;
             }
         }
     }
@@ -121,15 +114,8 @@
 
     // Timepicker header
     .k-time-header {
-        padding: $time-header-padding;
-
-        .k-title {
-            font-weight: bold;
-        }
-
         .k-time-now {
             color: $accent;
-            cursor: pointer;
 
             &:hover,
             &:focus {
@@ -143,9 +129,7 @@
         background-color: $popup-bg;
 
         .k-title {
-            z-index: 12;
             opacity: $disabled-opacity;
-            font-size: $font-size-xs;
             color: $header-text;
         }
 
@@ -158,7 +142,6 @@
             &::before,
             &::after {
                 background-color: $time-list-focused-bg;
-                border-width: 0;
             }
         }
     }
@@ -186,22 +169,11 @@
 
     // Datetimepicker
     .k-datetimepicker {
-
-        .k-select {
-            width: auto;
-        }
-        .k-link {
-            padding: 0;
-            width: calc( #{$button-border-width} + #{$icon-size} + #{$button-padding-y * 2} );
-        }
-
         .k-i-warning {
             color: $error;
-            right: calc( #{ button-inner-size( 2 ) } + #{ $input-padding-x-sm });
         }
 
         .k-state-invalid {
-            transition: none;
             color: $error;
             border-color: $error;
         }
@@ -210,13 +182,6 @@
             &.k-invalid {
                 color: $error;
                 border-color: $invalid-border;
-            }
-        }
-
-        .k-rtl &,
-        &[dir="rtl"] {
-            .k-i-warning {
-                left: calc( #{ button-inner-size( 2 ) } + #{ $input-padding-x-sm });
             }
         }
     }
@@ -231,7 +196,6 @@
                 $datetime-bg,
                 $datetime-border
             );
-            transition: $transition;
         }
         .k-select {
             @include fill(
@@ -240,7 +204,6 @@
                 $datetime-select-border,
                 $datetime-select-gradient
             );
-            transition: $transition;
         }
 
         // Hovered state
