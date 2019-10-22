@@ -576,9 +576,9 @@ $checkbox-dash-width: $checkbox-size - ( $checkbox-border-width * 4 ) !default;
 $checkbox-dash-offset-x: $checkbox-border-width * 2 !default;
 $checkbox-dash-offset-y: ( $checkbox-size - $checkbox-dash-height ) / 2 !default;
 
-$checkbox-bg: lighten($input-border, 6.7) !default;
+$checkbox-bg: $input-bg !default;
 $checkbox-text: transparent !default;
-$checkbox-border: $checkbox-bg !default;
+$checkbox-border: $input-border !default;
 $checkbox-hovered-bg: $checkbox-bg !default;
 $checkbox-hovered-text: $accent !default;
 $checkbox-hovered-border: $input-hovered-border !default;
