@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.3.7"></a>
+## [3.3.7](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.3.6...@progress/kendo-theme-material@3.3.7) (2019-10-22)
+
+
+
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
 <a name="3.3.6"></a>
 ## 3.3.6 (2019-10-21)
 

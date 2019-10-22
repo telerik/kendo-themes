@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.3.6"></a>
+## [4.3.6](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.3.5...@progress/kendo-theme-bootstrap@4.3.6) (2019-10-22)
+
+
+### Bug Fixes
+
+* **radio-checkbox:** update radio / checkbox appearance in bootstrap theme ([89cf2bd](https://github.com/telerik/kendo-themes/commit/89cf2bd))
+
+
+
+
 <a name="4.3.5"></a>
 ## 4.3.5 (2019-10-21)
 
