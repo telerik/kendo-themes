@@ -15,13 +15,7 @@ $menu-scrolling-icon-hover: $link-hover-text !default;
     .k-menu:not(.k-context-menu) {
         border-width: 0;
         background: $menu-bg;
-        background-clip: padding-box;
-
-        .k-ie11 &,
-        .k-edge12 &,
-        .k-edge13 & {
-            background-clip: border-box;
-        }
+        @include use-background-clip();
 
         > .k-item {
             color: $menu-text;

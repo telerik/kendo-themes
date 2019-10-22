@@ -12,13 +12,7 @@
                 $datetime-bg,
                 $datetime-border
             );
-            background-clip: padding-box;
-
-            .k-ie11 &,
-            .k-edge12 &,
-            .k-edge13 & {
-                background-clip: border-box;
-            }
+            @include use-background-clip();
         }
 
         .k-select {
@@ -184,13 +178,7 @@
                 $datetime-bg,
                 $datetime-border
             );
-            background-clip: padding-box;
-
-            .k-ie11 &,
-            .k-edge12 &,
-            .k-edge13 & {
-                background-clip: border-box;
-            }
+            @include use-background-clip();
         }
         .k-select {
             @include fill(

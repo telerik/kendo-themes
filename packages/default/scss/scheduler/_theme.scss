@@ -2,13 +2,7 @@
 
     // Appearance
     .k-scheduler {
-        background-clip: padding-box;
-
-        .k-ie11 &,
-        .k-edge12 &,
-        .k-edge13 & {
-            background-clip: border-box;
-        }
+        @include use-background-clip();
     }
 
     // Current time
@@ -32,13 +26,7 @@
     .k-scheduler-toolbar,
     .k-scheduler-footer {
         @include appearance( header );
-        background-clip: padding-box;
-
-        .k-ie11 &,
-        .k-edge12 &,
-        .k-edge13 & {
-            background-clip: border-box;
-        }
+        @include use-background-clip();
     }
 
     .k-scheduler-header {
@@ -54,13 +42,7 @@
     .k-scheduler-navigation {
 
         li {
-            background-clip: padding-box;
-
-            .k-ie11 &,
-            .k-edge12 &,
-            .k-edge13 & {
-                background-clip: border-box;
-            }
+            @include use-background-clip();
 
             &.k-state-focused {
                 @include appearance( focused-list-item );
@@ -83,13 +65,7 @@
 
         li {
             @include appearance( button );
-            background-clip: padding-box;
-
-            .k-ie11 &,
-            .k-edge12 &,
-            .k-edge13 & {
-                background-clip: border-box;
-            }
+            @include use-background-clip();
 
             &:hover {
                 @include appearance( hovered-button );
@@ -109,13 +85,7 @@
 
         li {
             @include appearance( button );
-            background-clip: padding-box;
-
-            .k-ie11 &,
-            .k-edge12 &,
-            .k-edge13 & {
-                background-clip: border-box;
-            }
+            @include use-background-clip();
 
             &:hover { @include appearance( hovered-button ); }
         }
