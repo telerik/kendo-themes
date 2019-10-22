@@ -622,7 +622,7 @@ $textbox-icon-width: calc( #{$icon-size} + #{$input-padding-x * 2} ) !default;
 $textarea-default-width: 18em !default;
 
 //Checkboxes
-$checkbox-icon-size: $icon-size !default;
+$checkbox-icon-size: 12px !default;
 $checkbox-size: $icon-size !default;
 $checkbox-radius: $border-radius !default;
 $checkbox-border-width: 1px !default;

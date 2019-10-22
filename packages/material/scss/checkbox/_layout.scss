@@ -3,15 +3,29 @@
 @include exports("checkbox/layout/material") {
     // animate tick mark with max-width transition
 
-    .k-checkbox-label::after {
+    $checkmark-offset: ($checkbox-size - (2 * $checkbox-border-width) - $checkbox-icon-size ) / 2;
+
+    .k-checkbox::before {
         max-width: 0;
-        text-indent: (($checkbox-size - $checkbox-icon-size) / 2);
         justify-content: flex-start;
         transition: max-width linear 280ms;
+        top: $checkmark-offset;
+        left: $checkmark-offset;
+        transform: scale(1);
+    }
+    .k-checkbox:checked::before,
+    .k-checkbox:indeterminate::before {
+        max-width: $checkbox-icon-size;
+        transform: scale(1);
+    }
 
-        .k-checkbox:checked + &,
-        .k-checkbox:indeterminate + & {
-            max-width: $checkbox-size;
+
+    // RTL
+    .k-rtl,
+    [dir="rtl"] {
+        .k-checkbox::before {
+            left: auto;
+            right: $checkmark-offset;
         }
     }
 }
