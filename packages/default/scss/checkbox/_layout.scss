@@ -1,27 +1,81 @@
 @include exports( "checkbox/layout" ) {
+
+    // Container box
     .k-checkbox {
+        @include border-radius( $checkbox-radius );
         margin: 0;
         padding: 0;
-        clip: rect(0, 0, 0, 0);
-        overflow: hidden;
-        position: absolute;
-        opacity: 0;
+        width: $checkbox-size;
+        height: $checkbox-size;
+        border-width: $checkbox-border-width;
+        border-style: solid;
+        outline: 0;
+        box-sizing: border-box;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        position: relative;
         -webkit-appearance: none;
-        pointer-events: none;
     }
 
+    // Checkmark
+    .k-checkbox::before {
+        content: "\e118";
+        width: $checkbox-icon-size;
+        height: $checkbox-icon-size;
+        font-size: $checkbox-icon-size;
+        font-family: "WebComponentsIcons", monospace;
+        transform: scale(0) translate(-50%, -50%);
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+
+    // Checked state
+    .k-checkbox:checked::before {
+        @include border-radius( $checkbox-radius );
+        transform: scale(1) translate(-50%, -50%);
+    }
+
+
+    // Indeterminate state
+    .k-checkbox:indeterminate::before {
+        content: "";
+        transform: scale(1);
+
+        @if $checkbox-indeterminate-style == "dash" {
+            width: $checkbox-dash-width;
+            height: $checkbox-dash-height;
+            top: $checkbox-dash-offset-y;
+            left: $checkbox-dash-offset-x;
+        } @else {
+            width: $checkbox-size / 2;
+            height: $checkbox-size / 2;
+            top: $checkbox-size / 4;
+            left: $checkbox-size / 4;
+        }
+    }
+
+
+    // Disabled state
+    .k-checkbox:disabled,
     .k-checkbox:disabled + .k-checkbox-label {
         @include disabled;
     }
 
+
+    // Checkbox label
     .k-checkbox-label {
         margin: 0;
-        padding-left: calc( #{$checkbox-size} + #{$icon-spacing} );
-        min-height: $icon-size;
+        padding: 0;
         line-height: $checkbox-line-height;
-        vertical-align: text-top;
         display: inline-flex;
+        flex-direction: column;
         align-items: flex-start;
+        vertical-align: middle;
         position: relative;
         cursor: pointer;
 
@@ -44,117 +98,28 @@
             width: 200% !important;
             height: 200% !important;
         }
-
-        // With no text
-        &.k-no-text {
-            padding: 0;
-            width: $icon-size;
-            height: $icon-size;
-            display: inline-block;
-            font-size: 0;
-
-            .k-ie &,
-            .k-edge & {
-                width: 0;
-            }
-        }
-
-        .k-rtl &,
-        [dir="rtl"] & {
-            padding-left: 0;
-            padding-right: calc( #{$checkbox-size} + #{$icon-spacing} );
-        }
+    }
+    .k-checkbox + .k-checkbox-label {
+        margin-left: $icon-spacing;
+    }
+    .k-checkbox-label > .k-checkbox {
+        margin-right: $icon-spacing;
     }
 
-    .k-checkbox-label::before,
-    .k-checkbox-label::after {
-        font-size: $checkbox-icon-size;
-        font-family: "WebComponentsIcons", monospace;
-        box-sizing: border-box;
-        text-align: center;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
 
-        .k-rtl &,
-        [dir="rtl"] &  {
-            left: auto;
-            right: 0;
+    // RTL
+    .k-rtl,
+    [dir="rtl"] {
+        .k-checkbox + .k-checkbox-label {
+            margin-left: 0;
+            margin-right: $icon-spacing;
+        }
+        .k-checkbox-label > .k-checkbox {
+            margin-right: 0;
+            margin-left: $icon-spacing;
         }
     }
 
-    // Container box
-    .k-checkbox-label::before {
-        content: "";
-        width: $checkbox-size;
-        height: $checkbox-size;
-        border-width: $checkbox-border-width;
-        border-style: solid;
-    }
-    .k-checkbox-label::before {
-        @include border-radius( $checkbox-radius );
-    }
-
-    .k-checkbox-label::after {
-        content: "\e118";
-        width: $checkbox-size;
-        height: $checkbox-size;
-        transform: scale(0);
-    }
-    .k-checkbox:checked + .k-checkbox-label::after {
-        @include border-radius( $checkbox-radius );
-        transform: scale(1);
-    }
-    .k-checkbox:indeterminate + .k-checkbox-label::after {
-        content: "";
-        transform: scale(1);
-
-        @if $checkbox-indeterminate-style == "dash" {
-            width: $checkbox-dash-width;
-            height: $checkbox-dash-height;
-            top: $checkbox-dash-offset-y;
-            left: $checkbox-dash-offset-x;
-        } @else {
-            width: $checkbox-size / 2;
-            height: $checkbox-size / 2;
-            top: $checkbox-size / 4;
-            left: $checkbox-size / 4;
-        }
-    }
-
-    // Form styles
-    .k-form,
-    .k-form-inline {
-        .k-checkbox-label {
-            margin-right: $padding-x * 2;
-            align-self: center;
-        }
-    }
-
-    .k-form-inline {
-        .k-form-field {
-            > label:not(.k-checkbox-label) {
-                width: $inline-form-element-width;
-                text-align: right;
-                line-height: $line-height;
-                padding: calc( #{$padding-y} + #{$input-border-width} ) 0;
-                padding-right: $padding-x-lg;
-                align-self: center;
-            }
-        }
-    }
-
-    .k-treeview,
-    .k-grid {
-        .k-checkbox-label {
-            cursor: default;
-            outline: 0;
-        }
-    }
 }
 
 @include exports( "checkbox/layout/legacy" ) {
