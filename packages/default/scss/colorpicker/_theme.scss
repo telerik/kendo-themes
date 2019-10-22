@@ -11,13 +11,7 @@
                 $colorpicker-select-border,
                 $colorpicker-select-gradient
             );
-            background-clip: padding-box;
-
-            .k-ie11 &,
-            .k-edge12 &,
-            .k-edge13 & {
-                background-clip: border-box;
-            }
+            @include use-background-clip();
 
             &:focus {
 

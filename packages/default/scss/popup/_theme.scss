@@ -2,13 +2,7 @@
 
     .k-popup {
         @include appearance( popup );
-        background-clip: padding-box;
-
-        .k-ie11 &,
-        .k-edge12 &,
-        .k-edge13 & {
-            background-clip: border-box;
-        }
+        @include use-background-clip();
     }
 
     .k-popup > kendo-list > .k-first {

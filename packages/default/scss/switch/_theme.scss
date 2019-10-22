@@ -5,13 +5,7 @@
     }
 
     .k-switch-handle {
-        background-clip: padding-box;
-
-        .k-ie11 &,
-        .k-edge12 &,
-        .k-edge13 & {
-            background-clip: border-box;
-        }
+        @include use-background-clip();
     }
 
     .k-switch-label-on,

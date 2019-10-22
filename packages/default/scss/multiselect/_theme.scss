@@ -3,13 +3,7 @@
     // Appearance
     .k-multiselect-wrap {
         @include appearance( input );
-        background-clip: padding-box;
-
-        .k-ie11 &,
-        .k-edge12 &,
-        .k-edge13 & {
-            background-clip: border-box;
-        }
+        @include use-background-clip();
 
         > .k-readonly {
             opacity: .6;
@@ -17,13 +11,7 @@
 
 
         li {
-            background-clip: padding-box;
-
-            .k-ie11 &,
-            .k-edge12 &,
-            .k-edge13 & {
-                background-clip: border-box;
-            }
+            @include use-background-clip();
 
             .k-icon {
                 opacity: .6;

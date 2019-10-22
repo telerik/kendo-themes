@@ -69,13 +69,7 @@
 
     .k-grid {
         @include fill( $grid-text, $grid-bg, $grid-border );
-        background-clip: padding-box;
-
-        .k-ie11 &,
-        .k-edge12 &,
-        .k-edge13 & {
-            background-clip: border-box;
-        }
+        @include use-background-clip();
 
         // Alt row
         tr.k-alt {

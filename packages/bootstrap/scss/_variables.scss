@@ -10,6 +10,8 @@ $enable-shadows: $enable-shadows !default;
 $enable-gradients: $enable-gradients !default;
 $enable-transitions: $enable-transitions !default;
 
+$use-background-clip: false !default;
+
 
 // Theme colors
 /// The color that focuses the user attention.
