@@ -1,88 +1,98 @@
 @include exports("multiselect/theme") {
 
-    .k-multiselect-wrap {
-        min-height: 0;
+    .k-multiselect {
+        .k-multiselect-wrap {
+            background-color: transparent;
+            border-color: $input-border;
 
-        > .k-readonly {
-            opacity: .6;
-        }
-
-        .k-button {
-            min-height: $form-line-height-em;
-            padding-top: 0;
-            padding-bottom: 0;
-            font-size: .75em;
-            line-height: $form-line-height;
-            box-shadow: none;
-            border-radius: $form-line-height-em;
-            background: transparent;
-
-            &::before {
-                border-radius: $form-line-height-em;
-                opacity: $multiselect-token-opacity;
-            }
-
-            // focused state
-            &.k-state-focused,
-            &:focus {
-                color: $multiselect-token-focused-text;
-                background: $multiselect-token-focused-bg;
-
-                &::before {
-                    opacity: $multiselect-token-focused-opacity;
-                }
-
-                .k-select {
-                    color: $multiselect-remove-focused-text;
-                    background: $multiselect-remove-focused-bg;
-                }
-            }
-
-            // hover state
-            &.k-state-hover,
-            &:hover {
-                color: $multiselect-token-hover-text;
-                background-color: $multiselect-token-hover-bg;
-
-                .k-select {
-                    color: $multiselect-token-hover-bg;
-                    background: $multiselect-token-hover-text;
-                }
-            }
-
-            // Disabled state
-            &.k-state-disabled {
-                color: $multiselect-token-disabled-text;
+            .k-input {
+                color: $input-text;
             }
 
             .k-select {
-                border-radius: 50%;
-                background-color: $multiselect-remove-bg;
-                color: $multiselect-remove-text;
-                margin-left: .5em;
-                margin-right: -.2em;
+                opacity: $icon-opacity;
+            }
 
-                .k-icon {
-                    font-size: $font-size-sm;
-                    padding: calc( #{$font-size} - #{$font-size-sm} );
-                    box-sizing: content-box;
+            > .k-readonly {
+                opacity: .6;
+            }
+
+            .k-button {
+                box-shadow: none;
+                background: transparent;
+
+                // focused state
+                &.k-state-focused,
+                &:focus {
+                    color: $multiselect-token-focused-text;
+                    background: $multiselect-token-focused-bg;
+
+                    &::before {
+                        opacity: $multiselect-token-focused-opacity;
+                    }
+
+                    .k-select {
+                        color: $multiselect-remove-focused-text;
+                        background: $multiselect-remove-focused-bg;
+                    }
                 }
 
+                // hover state
+                &.k-state-hover,
                 &:hover {
-                    background-color: $multiselect-remove-hover-bg;
-                    color: $multiselect-remove-hover-text;
+                    color: $multiselect-token-hover-text;
+                    background-color: $multiselect-token-hover-bg;
+
+                    .k-select {
+                        color: $multiselect-token-hover-bg;
+                        background: $multiselect-token-hover-text;
+                    }
+                }
+
+                // Disabled state
+                &.k-state-disabled {
+                    color: $multiselect-token-disabled-text;
+                }
+
+                .k-select {
+                    background-color: $multiselect-remove-bg;
+                    color: $multiselect-remove-text;
+
+                    &:hover {
+                        background-color: $multiselect-remove-hover-bg;
+                        color: $multiselect-remove-hover-text;
+                    }
+                }
+            }
+
+            // Hover
+            &:hover,
+            &.k-state-hover {
+                border-color: $input-hovered-border;
+
+                .k-select {
+                    opacity: $icon-hovered-opacity;
+                }
+            }
+
+            // Focused
+            &.k-state-focused {
+                border-color: $input-focused-border;
+
+                .k-select {
+                    opacity: $icon-focused-opacity;
                 }
             }
         }
-    }
 
-    // Fix vertical centering icon
-    .k-multiselect-wrap .k-button .k-icon.k-i-arrow-60-down {
-        line-height: 1.2;
+        &.k-state-focused {
+            > .k-multiselect-wrap {
+                border-color: $input-focused-border;
 
-        .k-edge &,
-        .k-state-border-down & {
-            line-height: initial;
+                .k-select {
+                    opacity: $icon-focused-opacity;
+                }
+            }
         }
     }
 }
