@@ -110,7 +110,7 @@
         // Focus state
         .k-radio-legacy:focus + & {
             &::before {
-                @include fill( $border: $radio-focused-border ß);
+                @include fill( $border: $radio-focused-border );
                 @include box-shadow( $radio-focused-shadow );
             }
         }

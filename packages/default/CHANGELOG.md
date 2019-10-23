@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.5.2"></a>
+## [4.5.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.5.1...@progress/kendo-theme-default@4.5.2) (2019-10-22)
+
+
+### Bug Fixes
+
+* remove ß from output ([06ea2b0](https://github.com/telerik/kendo-themes/commit/06ea2b0))
+
+
+
+
+<a name="4.5.1"></a>
+## [4.5.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.5.0...@progress/kendo-theme-default@4.5.1) (2019-10-22)
+
+
+### Bug Fixes
+
+* **autocomplete:** missing clear button on hover ([e0ad34d](https://github.com/telerik/kendo-themes/commit/e0ad34d))
+
+
+
+
 <a name="4.5.0"></a>
 # 4.5.0 (2019-10-21)
 
