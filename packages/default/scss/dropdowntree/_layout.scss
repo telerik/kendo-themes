@@ -7,6 +7,8 @@ $dropdowntree-filter-spacer: $dropdowntree-popup-spacer-y !default;
 @include exports("dropdowntree/layout") {
 
     .k-dropdowntree {
+        @extend .k-multiselect;
+        // @extend .k-dropdown;
 
         .k-select {
             border-width: 0;

@@ -1,58 +1,73 @@
 @include exports("multiselect/theme") {
 
-    // Appearance
-    .k-multiselect-wrap {
-        @include appearance( input );
-        @include use-background-clip();
+    .k-multiselect {
+        background-color: transparent;
 
-        > .k-readonly {
-            opacity: .6;
-        }
-
-
-        li {
+        .k-multiselect-wrap {
+            @include appearance( input );
             @include use-background-clip();
 
-            .k-icon {
+            > .k-readonly {
                 opacity: .6;
-                cursor: pointer;
             }
 
-            .k-icon:hover {
-                opacity: 1;
-            }
 
-            &.k-button:active,
-            &.k-button.k-state-active {
-                @include appearance( pressed-button );
-            }
+            li {
+                @include use-background-clip();
 
-            // Focused state
-            &:focus,
-            &.k-state-focused {
                 .k-icon {
+                    opacity: .6;
+                }
+
+                .k-icon:hover {
                     opacity: 1;
                 }
+
+                &.k-button:active,
+                &.k-button.k-state-active {
+                    @include appearance( pressed-button );
+                }
+
+                // Focused state
+                &:focus,
+                &.k-state-focused {
+                    .k-icon {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .k-i-loading {
+                background-color: $input-bg;
+            }
+
+
+            &:hover,
+            &.k-state-hover {
+                @include appearance( hovered-input );
+            }
+
+            // Invalid
+            &.k-invalid,
+            &.k-invalid:hover,
+            &.k-state-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+                color: $error;
+                border-color: $invalid-border;
             }
         }
 
-        .k-i-loading {
-            background-color: $input-bg;
+        &.k-state-focused {
+            > .k-multiselect-wrap {
+                @include appearance( focused-input );
+            }
         }
 
-
-        &:hover,
-        &.k-state-hover {
-            @include appearance( hovered-input );
-        }
-
-        .k-state-focused > & {
-            @include appearance( focused-input );
-        }
-
-        .k-disabled > & {
-            @include appearance( disabled-input );
+        &.k-disabled {
+            > .k-multiselect-wrap {
+                @include appearance( disabled-input );
+            }
         }
     }
-
 }

@@ -4,106 +4,198 @@
     // Base
     .k-multiselect {
         @include border-radius();
-        width: 100%;
+        width: $input-default-width;
+        font-size: $input-font-size;
+        line-height: $input-line-height;
+        text-align: left;
+        white-space: nowrap;
+        border-width: 0;
+        display: inline-flex;
+        vertical-align: middle;
+        position: relative;
 
         .k-loading-hidden {
             visibility: hidden;
         }
-    }
 
-    .k-multiselect-wrap {
-        cursor: text;
+        .k-multiselect-wrap {
+            @include border-radius( $input-border-radius );
+            padding: 0 $picker-select-calc-size 0 0;
+            width: 100%;
+            border-width: 1px;
+            border-style: solid;
+            box-sizing: border-box;
+            position: relative;
+            transition: all .1s ease; // sass-lint:disable-block no-transition-all
+            cursor: text;
+            outline: 0;
 
-
-        // Height placeholder
-        &::before {
-            content: "";
-            width: 0;
-            height: $input-inner-calc-height;
-            float: left;
-        }
-
-        // Input
-        .k-input {
-            float: left;
-        }
-
-        // Token list
-        ul {
-            vertical-align: top;
-        }
-        li.k-button {
-            float: left;
-        }
-
-
-        // Token
-        .k-button {
-            min-height: calc( #{$form-line-height-em} + #{$button-padding-y-sm} + 2px );
-            padding: ($button-padding-y-sm / 2) ($button-padding-x / 2);
-            margin: $padding-y-sm 0 0 $padding-y-sm;
-            cursor: default;
-            display: inline-flex;
-            flex-direction: row;
-            align-items: center;
-            line-height: inherit;
-            white-space: normal;
-
-            .k-select {
+            .k-input {
+                padding: $input-padding-y $input-padding-x;
+                height: calc( #{$input-padding-y * 2} + #{$input-line-height * 1em} );
+                float: left;
+                box-sizing: border-box;
+                border: 0;
+                outline: 0;
+                color: inherit;
+                background: none;
+                font: inherit;
+                flex: 0 1 auto;
                 display: flex;
-                cursor: pointer;
-                margin-left: $padding-x;
-                align-self: stretch;
+                align-items: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
-            &:last-child {
-                margin-bottom: $padding-y-sm;
+            // Height placeholder
+            &::before {
+                content: "";
+                width: 0;
+                height: $input-inner-calc-height;
+                float: left;
             }
-        }
 
-        .k-searchbar {
-            // search bar must be floated to align after any selected tags
-            // (or align below them, if space is not available)
-            float: left;
-            width: auto;
-
-            .k-input {
-                padding-right: 0;
+            // Token list
+            ul {
+                vertical-align: top;
             }
-        }
-    }
+            li {
+                &.k-button {
+                    float: left;
+                }
+                .k-icon {
+                    cursor: pointer;
+                }
+            }
 
-    .k-multiselect-wrap {
-        [dir="rtl"] > &,
-        .k-rtl & {
-            padding-left: $picker-select-calc-size;
-            padding-right: 0;
 
-            &::before,
-            li.k-button,
-            .k-input {
-                float: right;
+            // Token
+            .k-button {
+                min-height: calc( #{$form-line-height-em} + #{$button-padding-y-sm} + 2px );
+                padding: ($button-padding-y-sm / 2) ($button-padding-x / 2);
+                margin: $padding-y-sm 0 0 $padding-y-sm;
+                cursor: default;
+                display: inline-flex;
+                flex-direction: row;
+                align-items: center;
+                line-height: inherit;
+                white-space: normal;
+
+                .k-select {
+                    display: flex;
+                    cursor: pointer;
+                    margin-left: $padding-x;
+                    align-self: stretch;
+                }
+
+                &:last-child {
+                    margin-bottom: $padding-y-sm;
+                }
             }
 
             .k-searchbar {
-                float: right;
+                // search bar must be floated to align after any selected tags
+                // (or align below them, if space is not available)
+                float: left;
+                width: auto;
 
                 .k-input {
-                    padding-left: 0;
-                    padding-right: $input-padding-x;
+                    padding-right: 0;
                 }
             }
 
-            .k-button {
-                width: auto;
-                margin-right: $padding-y-sm;
-                margin-left: 0;
+            .k-i-loading {
+                height: ($input-line-height * $input-font-size);
+                line-height: ($input-line-height * $input-font-size);
+                position: absolute;
+                top: $input-padding-y;
+                right: $input-icon-offset;
+            }
 
-                .k-select {
+            .k-clear-value {
+                height: ($input-line-height * $input-font-size);
+                line-height: ($input-line-height * $input-font-size);
+                outline: 0;
+                cursor: pointer;
+                display: none;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                opacity: .5;
+                position: absolute;
+                top: $input-padding-y;
+                right: $input-icon-offset;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            &:hover,
+            &.k-state-hover,
+            &.k-state-focused {
+                .k-clear-value {
+                    display: inline-flex;
+                }
+            }
+        }
+
+        &.k-state-hover,
+        &.k-state-focused {
+            > .k-multiselect-wrap {
+                .k-clear-value {
+                    display: inline-flex;
+                }
+            }
+        }
+
+        &[dir="rtl"],
+        .k-rtl & {
+            text-align: right;
+
+            .k-multiselect-wrap {
+                padding-left: $picker-select-calc-size;
+                padding-right: 0;
+
+                &::before,
+                li.k-button,
+                .k-input {
+                    float: right;
+                }
+
+                .k-searchbar {
+                    float: right;
+
+                    .k-input {
+                        padding-left: 0;
+                        padding-right: $input-padding-x;
+                    }
+                }
+
+                .k-button {
+                    width: auto;
+                    margin-right: $padding-y-sm;
                     margin-left: 0;
-                    margin-right: $padding-x;
+
+                    .k-select {
+                        margin-left: 0;
+                        margin-right: $padding-x;
+                    }
                 }
             }
+
+            .k-select {
+                @include border-left-radius-only();
+            }
+
+            .k-clear-value,
+            .k-i-loading {
+                right: auto;
+                left: $input-icon-offset;
+            }
+        }
+
+        ::-ms-clear {
+            display: none;
         }
     }
 }
