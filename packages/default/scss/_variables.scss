@@ -1388,8 +1388,8 @@ $switch-on-handle-hovered-text: $switch-on-text !default;
 $switch-on-handle-hovered-border: $hovered-border !default;
 $switch-on-handle-hovered-gradient: null !default;
 
-$switch-off-bg: white !default;
-$switch-off-text: $base-text !default;
+$switch-off-bg: $bg-color !default;
+$switch-off-text: $text-color !default;
 $switch-off-border: null !default;
 $switch-off-gradient: null !default;
 $switch-off-shadow: null !default;
