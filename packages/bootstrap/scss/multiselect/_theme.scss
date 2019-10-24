@@ -2,26 +2,43 @@
 
     .k-multiselect {
         .k-multiselect-wrap {
-            @include appearance( input );
+            @include fill(
+                $multiselect-text,
+                $multiselect-bg,
+                $multiselect-border
+            );
 
             > .k-readonly {
                 opacity: .6;
             }
 
             &:hover {
-                @include appearance( hovered-input );
+                @include fill(
+                    $multiselect-hovered-text,
+                    $multiselect-hovered-bg,
+                    $multiselect-hovered-border
+                );
             }
         }
 
         &.k-state-hover {
             > .k-multiselect-wrap {
-                @include appearance( hovered-input );
+                @include fill(
+                    $multiselect-hovered-text,
+                    $multiselect-hovered-bg,
+                    $multiselect-hovered-border
+                );
             }
         }
 
         &.k-state-focused {
             > .k-multiselect-wrap {
-                @include appearance( focused-input );
+                @include fill(
+                    $multiselect-focused-text,
+                    $multiselect-focused-bg,
+                    $multiselect-focused-border
+                );
+                @include box-shadow($multiselect-focused-shadow);
             }
         }
     }

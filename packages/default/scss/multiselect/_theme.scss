@@ -4,7 +4,11 @@
         background-color: transparent;
 
         .k-multiselect-wrap {
-            @include appearance( input );
+            @include fill(
+                $multiselect-text,
+                $multiselect-bg,
+                $multiselect-border
+            );
             @include use-background-clip();
 
             > .k-readonly {
@@ -25,7 +29,13 @@
 
                 &.k-button:active,
                 &.k-button.k-state-active {
-                    @include appearance( pressed-button );
+                    @include fill(
+                        $multiselect-button-focused-text,
+                        $multiselect-button-focused-bg,
+                        $multiselect-button-focused-border,
+                        $multiselect-button-focused-gradient
+                    );
+                    @include box-shadow( $multiselect-button-focused-shadow );
                 }
 
                 // Focused state
@@ -38,13 +48,17 @@
             }
 
             .k-i-loading {
-                background-color: $input-bg;
+                background-color: $multiselect-bg;
             }
 
 
             &:hover,
             &.k-state-hover {
-                @include appearance( hovered-input );
+                @include fill(
+                    $multiselect-hovered-text,
+                    $multiselect-hovered-bg,
+                    $multiselect-hovered-border
+                );
             }
 
             // Invalid
@@ -60,13 +74,12 @@
 
         &.k-state-focused {
             > .k-multiselect-wrap {
-                @include appearance( focused-input );
-            }
-        }
-
-        &.k-disabled {
-            > .k-multiselect-wrap {
-                @include appearance( disabled-input );
+                @include fill(
+                    $multiselect-focused-text,
+                    $multiselect-focused-bg,
+                    $multiselect-focused-border
+                );
+                @include box-shadow($multiselect-focused-shadow);
             }
         }
     }
