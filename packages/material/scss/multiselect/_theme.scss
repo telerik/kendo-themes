@@ -3,10 +3,10 @@
     .k-multiselect {
         .k-multiselect-wrap {
             background-color: transparent;
-            border-color: $input-border;
+            border-color: $multiselect-border;
 
             .k-input {
-                color: $input-text;
+                color: $multiselect-text;
             }
 
             .k-select {
@@ -68,7 +68,7 @@
             // Hover
             &:hover,
             &.k-state-hover {
-                border-color: $input-hovered-border;
+                border-color: $multiselect-hovered-border;
 
                 .k-select {
                     opacity: $icon-hovered-opacity;
@@ -77,7 +77,7 @@
 
             // Focused
             &.k-state-focused {
-                border-color: $input-focused-border;
+                border-color: $multiselect-focused-border;
 
                 .k-select {
                     opacity: $icon-focused-opacity;
@@ -87,7 +87,7 @@
 
         &.k-state-focused {
             > .k-multiselect-wrap {
-                border-color: $input-focused-border;
+                border-color: $multiselect-focused-border;
 
                 .k-select {
                     opacity: $icon-focused-opacity;
