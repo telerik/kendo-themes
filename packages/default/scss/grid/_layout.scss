@@ -327,6 +327,11 @@
             .k-grid-search {
                 float: left;
             }
+
+            .k-column-resizer {
+                left: 0;
+                right: auto;
+            }
         }
 
         .k-widget.k-tooltip.k-tooltip-validation {
@@ -668,6 +673,7 @@
         display: block;
         position: absolute;
         top: 0;
+        right:0;
         cursor: col-resize;
     }
 
