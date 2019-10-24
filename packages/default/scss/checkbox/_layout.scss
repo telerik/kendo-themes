@@ -33,6 +33,11 @@
         left: 50%;
     }
 
+    // Hover state
+    .k-checkbox:hover {
+        cursor: pointer;
+    }
+
 
     // Checked state
     .k-checkbox:checked::before {
@@ -64,6 +69,7 @@
     .k-checkbox:disabled,
     .k-checkbox:disabled + .k-checkbox-label {
         @include disabled;
+        cursor: default;
     }
 
 

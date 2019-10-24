@@ -687,7 +687,11 @@ $checkbox-disabled-checked-border: null !default;
 
 
 //Radio Buttons
+$radio-icon-size: 10px !default;
+$radio-size: $icon-size !default;
 $radio-radius: 50% !default;
+$radio-border-width: 1px !default;
+$radio-line-height: $radio-size + $radio-border-width !default;
 
 $radio-bg: $checkbox-bg !default;
 $radio-text: $checkbox-text !default;

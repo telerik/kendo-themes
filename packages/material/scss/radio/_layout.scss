@@ -1,1 +1,29 @@
 @import "~@progress/kendo-theme-default/scss/radio/_layout.scss";
+
+@include exports( "radio/layout/material" ) {
+
+    .k-radio::before {
+        transition: transform linear 280ms;
+        transform: scale(0);
+        position: static;
+    }
+
+    .k-radio:checked::before {
+        transform: scale(1);
+    }
+}
+
+
+
+
+@include exports("radio/layout/material/legacy") {
+
+    // Radio legacy styles
+    .k-radio-legacy-label {
+
+        .k-radio-legacy + &::after {
+            transition: transform linear 280ms;
+        }
+    }
+
+}
