@@ -249,8 +249,7 @@
     }
 
     .k-form {
-        input,
-        label:not(.k-checkbox-label):not(.k-radio-label),
+        input:not(.k-checkbox):not(.k-radio),
         .k-widget:not(.k-calendar):not(.k-switch) {
             display: block;
         }
@@ -261,7 +260,7 @@
                 padding: $padding-y 0;
             }
 
-            > input,
+            > input:not(.k-checkbox):not(.k-radio),
             > textarea {
                 width: 100%;
             }
