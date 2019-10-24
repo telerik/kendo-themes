@@ -1,37 +1,73 @@
 @include exports( "radio/layout" ) {
+
+    // Container box
     .k-radio {
+        @include border-radius( $radio-radius );
         margin: 0;
         padding: 0;
-        clip: rect(0, 0, 0, 0);
+        width: $radio-size;
+        height: $radio-size;
+        border-width: $radio-border-width;
+        border-style: solid;
+        outline: 0;
+        box-sizing: border-box;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        position: relative;
+        -webkit-appearance: none;
+    }
+
+    .k-radio::before {
+        content: "";
+        width: $radio-size / 2;
+        height: $radio-size / 2;
+        border-radius: 50%;
+        transform: scale(0) translate(-50%, -50%);
         overflow: hidden;
         position: absolute;
-        opacity: 0;
-        -webkit-appearance: none;
-        pointer-events: none;
+        top: 50%;
+        left: 50%;
     }
 
+    // Hover state
+    .k-radio:hover {
+        cursor: pointer;
+    }
+
+    // Checked state
+    .k-radio:checked::before {
+        @include border-radius( $radio-radius );
+        transform: scale(1) translate(-50%, -50%);
+    }
+
+    // Disabled state
+    .k-radio:disabled,
     .k-radio:disabled + .k-radio-label {
         @include disabled;
+        cursor: default;
     }
 
+    // Radio label
     .k-radio-label {
         margin: 0;
-        padding-left: calc( #{$checkbox-size} + #{$icon-spacing} );
-        min-height: $icon-size;
-        line-height: $checkbox-line-height;
-        vertical-align: text-top;
+        padding: 0;
+        line-height: $radio-line-height;
         display: inline-flex;
+        flex-direction: column;
         align-items: flex-start;
+        vertical-align: middle;
         position: relative;
         cursor: pointer;
 
         .k-ripple {
-            top: $checkbox-size / 2;
-            left: $checkbox-size / 2;
+            top: $radio-size / 2;
+            left: $radio-size / 2;
             right: auto;
             bottom: auto;
-            width: $checkbox-size * 5 / 2;
-            height: $checkbox-size * 5 / 2;
+            width: $radio-size * 5 / 2;
+            height: $radio-size * 5 / 2;
             transform: translate(-50%, -50%);
             border-radius: 50%;
         }
@@ -44,104 +80,25 @@
             width: 200% !important;
             height: 200% !important;
         }
-
-        // With no text
-        &.k-no-text {
-            padding: 0;
-            width: $icon-size;
-            height: $icon-size;
-            display: inline-block;
-            font-size: 0;
-
-            .k-ie &,
-            .k-edge & {
-                width: 0;
-            }
-        }
     }
 
-    .k-radio-label::before,
-    .k-radio-label::after {
-        box-sizing: border-box;
-        text-align: center;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        position: absolute;
+    .k-radio + .k-radio-label {
+        margin-left: $icon-spacing;
     }
-
-    // Container box
-    .k-radio-label::before {
-        @include border-radius( $radio-radius );
-        content: "";
-        width: $checkbox-size;
-        height: $checkbox-size;
-        border-width: $checkbox-border-width;
-        border-style: solid;
-        top: 0;
-        left: 0;
+    .k-radio-label > .k-radio {
+        margin-right: $icon-spacing;
     }
-
-
-    // Radio
-    .k-radio-label::after {
-        content: "";
-        width: $checkbox-size / 2;
-        height: $checkbox-size / 2;
-        border-radius: 50%;
-        position: absolute;
-        top: $checkbox-size / 4;
-        left: $checkbox-size / 4;
-        transform: scale(0);
-    }
-    .k-radio:checked + .k-radio-label::after {
-        transform: scale(1);
-    }
-
 
     // RTL
     .k-rtl,
     [dir="rtl"] {
-        .k-radio-label {
-            padding-left: 0;
-            padding-right: calc( #{$checkbox-size} + #{$icon-spacing} );
+        .k-radio + .k-radio-label {
+            margin-left: 0;
+            margin-right: $icon-spacing;
         }
-        .k-radio + .k-radio-label::before {
-            left: auto;
-            right: 0;
-        }
-        .k-radio + .k-radio-label::after {
-            right: $checkbox-size / 4;
-        }
-    }
-
-    // Radio list
-    .k-radio-list {
-        .k-radio-label {
-            line-height: $checkbox-size * 1.25;
-        }
-    }
-
-    // Form styles
-    .k-form,
-    .k-form-inline {
-        .k-radio-label {
-            margin-right: $padding-x * 2;
-            align-self: center;
-        }
-    }
-
-    .k-form-inline {
-        .k-form-field {
-            > label:not(.k-radio-label) {
-                width: $inline-form-element-width;
-                text-align: right;
-                line-height: $line-height;
-                padding: calc( #{$padding-y} + #{$input-border-width} ) 0;
-                padding-right: $padding-x-lg;
-                align-self: center;
-            }
+        .k-radio-label > .k-radio {
+            margin-right: 0;
+            margin-left: $icon-spacing;
         }
     }
 }
@@ -168,9 +125,9 @@
 
     .k-radio-legacy-label {
         margin: 0;
-        padding-left: calc( #{$checkbox-size} + #{$icon-spacing} );
+        padding-left: calc( #{$radio-size} + #{$icon-spacing} );
         min-height: $icon-size;
-        line-height: $checkbox-line-height;
+        line-height: $radio-line-height;
         vertical-align: text-top;
         display: inline-flex;
         align-items: flex-start;
@@ -208,9 +165,9 @@
     .k-radio-legacy-label::before {
         @include border-radius( $radio-radius );
         content: "";
-        width: $checkbox-size;
-        height: $checkbox-size;
-        border-width: $checkbox-border-width;
+        width: $radio-size;
+        height: $radio-size;
+        border-width: $radio-border-width;
         border-style: solid;
         top: 0;
         left: 0;
@@ -220,12 +177,12 @@
     // Radio
     .k-radio-legacy-label::after {
         content: "";
-        width: $checkbox-size / 2;
-        height: $checkbox-size / 2;
+        width: $radio-size / 2;
+        height: $radio-size / 2;
         border-radius: 50%;
         position: absolute;
-        top: $checkbox-size / 4;
-        left: $checkbox-size / 4;
+        top: $radio-size / 4;
+        left: $radio-size / 4;
         transform: scale(0);
     }
     .k-radio-legacy:checked + .k-radio-legacy-label::after {
@@ -238,14 +195,14 @@
     [dir="rtl"] {
         .k-radio-legacy-label {
             padding-left: 0;
-            padding-right: calc( #{$checkbox-size} + #{$icon-spacing} );
+            padding-right: calc( #{$radio-size} + #{$icon-spacing} );
         }
         .k-radio-legacy + .k-radio-legacy-label::before {
             left: auto;
             right: 0;
         }
         .k-radio-legacy + .k-radio-legacy-label::after {
-            right: $checkbox-size / 4;
+            right: $radio-size / 4;
         }
     }
 
@@ -253,7 +210,7 @@
     // Radio list
     .k-radio-list {
         .k-radio-legacy-label {
-            line-height: $checkbox-size * 1.25;
+            line-height: $radio-size * 1.25;
         }
     }
 
