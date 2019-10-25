@@ -20,6 +20,10 @@
             }
         }
 
+        .k-select {
+            width: if($use-picker-select-width, $picker-select-calc-size, auto);
+        }
+
         ::-ms-clear {
             display: none;
         }
