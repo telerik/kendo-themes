@@ -1,5 +1,47 @@
 @include exports( "combobox/theme" ) {
     .k-combobox {
         background-color: transparent;
+
+        .k-dropdown-wrap {
+            border-color: $combobox-border;
+            background-color: transparent;
+
+            .k-input {
+                color: $combobox-text;
+            }
+
+            .k-select {
+                opacity: $icon-opacity;
+            }
+
+            // Hover
+            &:hover,
+            &.k-state-hover {
+                border-color: $combobox-hovered-border;
+
+                .k-select {
+                    opacity: $icon-hovered-opacity;
+                }
+            }
+
+            // Focused
+            &.k-state-focused {
+                border-color: $combobox-focused-border;
+
+                .k-select {
+                    opacity: $icon-focused-opacity;
+                }
+            }
+        }
+
+        &.k-state-focused {
+            > .k-dropdown-wrap {
+                border-color: $combobox-focused-border;
+
+                .k-select {
+                    opacity: $icon-focused-opacity;
+                }
+            }
+        }
     }
 }
