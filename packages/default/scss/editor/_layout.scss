@@ -32,6 +32,7 @@
 
             > .ProseMirror { // sass-lint:disable-line class-name-format
                 padding: $padding-x;
+                white-space: pre-wrap;
             }
         }
 
