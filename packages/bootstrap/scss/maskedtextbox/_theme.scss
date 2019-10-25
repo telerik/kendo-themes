@@ -1,16 +1,1 @@
-@include exports("maskedtextbox/theme") {
-    .k-maskedtextbox {
-        .k-i-warning {
-            color: $error;
-        }
-
-        &.k-state-invalid {
-            transition: none;
-
-            .k-textbox {
-                color: $error;
-                border-color: $error;
-            }
-        }
-    }
-}
+@import "~@progress/kendo-theme-default/scss/maskedtextbox/_theme.scss";
