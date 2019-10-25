@@ -8,6 +8,7 @@ $enable-gradients: true !default;
 $enable-transitions: true !default;
 
 $use-background-clip: true !default;
+$use-picker-select-width: true !default;
 
 
 // Spacing
@@ -24,6 +25,7 @@ $font-size: 14px !default;
 $font-size-xs: 10px !default;
 $font-size-sm: 12px !default;
 $font-size-lg: 19px !default;
+$font-size-xl: 19px !default;
 
 /// Font family across all components.
 /// @group fonts
@@ -105,6 +107,7 @@ $header-padding-y: $padding-y * 2 !default;
 $form-line-height: $line-height !default;
 $form-line-height-em: $form-line-height * 1em !default;
 $form-line-height-sm: $line-height-sm !default;
+$form-line-height-lg: $line-height-lg !default;
 
 
 // Buttons
@@ -121,68 +124,6 @@ $button-line-height-sm: $form-line-height-sm !default;
 
 $button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} ) !default;
 $button-calc-size: calc( #{$button-inner-calc-size} + 2px ) !default;
-
-
-// Inputs
-$input-default-width: 12.4em !default;
-$input-font-size: $font-size !default;
-
-$input-border-width: 1px !default;
-$input-border-radius: $border-radius !default;
-
-$input-padding-x: $padding-x !default;
-$input-padding-y: $padding-y !default;
-$input-line-height: $form-line-height !default;
-
-$input-padding-x-sm: $input-padding-x / 2 !default;
-$input-padding-y-sm: $input-padding-y / 2 !default;
-$input-line-height-sm: $form-line-height-sm !default;
-
-$input-inner-calc-size: calc( #{$input-line-height * 1em} + #{$input-padding-y * 2} ) !default;
-$input-calc-size: calc( #{$input-inner-calc-size} + #{$input-border-width * 2} ) !default;
-
-$input-icon-offset: 6px !default;
-
-// Pickers
-$picker-select-border-width: 1px !default;
-$picker-select-padding-x: $button-padding-y !default;
-$picker-select-padding-y: $button-padding-y !default;
-$picker-select-line-height: $line-height !default;
-
-$picker-select-size: calc( #{$picker-select-line-height * 1em} + #{$picker-select-padding-y * 2} ) !default;
-$picker-icon-offset: calc( #{$picker-select-size} + #{$input-icon-offset} ) !default;
-
-// Toolbar
-$toolbar-border-width: 1px !default;
-$toolbar-border-radius: 0 !default;
-
-/// The horizontal padding of the container.
-/// @group toolbar
-$toolbar-padding-x: $padding-x !default;
-
-/// The vertical padding of the container.
-/// @group toolbar
-$toolbar-padding-y: $padding-x !default;
-$toolbar-line-height: $line-height !default;
-
-$toolbar-spacing: $toolbar-padding-x !default;
-
-$toolbar-button-border-width: $button-border-width !default;
-$toolbar-button-border-radius: 0 !default;
-
-$toolbar-button-padding-x: $button-padding-x !default;
-$toolbar-button-padding-y: $button-padding-y !default;
-$toolbar-button-line-height: $button-line-height !default;
-
-$toolbar-button-calc-size: calc( #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} + #{$toolbar-button-border-width * 2} ) !default;
-$toolbar-inner-calc-size: calc( #{$toolbar-button-calc-size} + #{$toolbar-padding-y * 2} ) !default;
-
-$toolbar-button-expanded-bg: null !default;
-$toolbar-button-expanded-shadow: none !default;
-
-$toolbar-shadow: none !default;
-$toolbar-separator-padding-y: $toolbar-button-padding-y !default;
-$toolbar-separator-border: inherit !default;
 
 
 $list-item-padding-x: $padding-x !default;
@@ -285,23 +226,6 @@ $panel-bg: $widget-bg !default;
 $panel-border: rgba( black, .08 ) !default;
 
 
-// Popup
-
-$popup-padding-x: 0 !default;
-$popup-padding-y: 0 !default;
-
-$popup-border-width: 1px !default;
-$popup-header-padding: $list-item-padding-y $list-item-padding-x !default;
-$popup-header-font-size: null !default;
-$popup-header-text: null !default;
-$popup-filter-padding-x: $input-padding-x !default;
-
-$popup-text: $base-text !default;
-$popup-bg: lighten($base-bg, 1%) !default;
-$popup-border: $base-border !default;
-$popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
-
-
 // Grouping
 $grouping-header-text: $bg-color !default;
 $grouping-header-bg: $text-color !default;
@@ -383,6 +307,9 @@ $button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
 $button-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
 
 
+// Components
+
+
 // Primary button
 $primary-button-text: $accent-contrast !default;
 $primary-button-bg: $accent !default;
@@ -407,14 +334,41 @@ $flat-button-focused-opacity: null !default;
 $flat-button-active-opacity: .16 !default;
 $flat-button-selected-opacity: .2 !default;
 
-// Toolbar
-$toolbar-text: $button-text !default;
-$toolbar-bg: $button-bg !default;
-$toolbar-border: $button-border !default;
-$toolbar-gradient: null !default;
-
 
 // Input
+
+$input-default-width: 12.4em !default;
+
+$input-border-width: 1px !default;
+$input-border-radius: $border-radius !default;
+$input-border-radius-sm: $border-radius !default;
+$input-border-radius-lg: $border-radius !default;
+
+$input-padding-x: $padding-x !default;
+$input-padding-y: $padding-y !default;
+$input-font-size: $font-size !default;
+$input-line-height: $form-line-height !default;
+
+$input-padding-x-sm: ($input-padding-x / 2) !default;
+$input-padding-y-sm: ($input-padding-y / 2) !default;
+$input-font-size-sm: $input-font-size !default;
+$input-line-height-sm: $form-line-height-sm !default;
+
+$input-padding-x-lg: ($input-padding-x * 1.5) !default;
+$input-padding-y-lg: ($input-padding-y * 1.5) !default;
+$input-font-size-lg: $input-font-size !default;
+$input-line-height-lg: $form-line-height-lg !default;
+
+$input-calc-height: calc( #{$input-line-height * 1em} + #{$input-padding-y * 2} + #{$input-border-width * 2} ) !default;
+$input-calc-height-sm: calc( #{$input-line-height-sm * 1em} + #{$input-padding-y-sm * 2} + #{$input-border-width * 2} ) !default;
+$input-calc-height-lg: calc( #{$input-line-height-lg * 1em} + #{$input-padding-y-lg * 2} + #{$input-border-width * 2} ) !default;
+
+$input-inner-calc-height: calc( #{$input-line-height * 1em} + #{$input-padding-y * 2} ) !default;
+$input-inner-calc-height-sm: calc( #{$input-line-height-sm * 1em} + #{$input-padding-y-sm * 2} ) !default;
+$input-inner-calc-height-lg: calc( #{$input-line-height-lg * 1em} + #{$input-padding-y-lg * 2} ) !default;
+
+$input-icon-offset: 6px !default;
+
 $input-bg: $panel-bg !default;
 $input-text: $panel-text !default;
 $input-border: $button-border !default;
@@ -429,6 +383,43 @@ $input-focused-text: $input-text !default;
 $input-focused-bg: $input-bg !default;
 $input-focused-border: $input-hovered-border !default;
 $input-focused-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
+
+
+// Picker
+
+$picker-select-border-width: 0 !default;
+
+$picker-select-padding-x: $input-padding-y !default;
+$picker-select-padding-y: $input-padding-y !default;
+
+$picker-select-padding-x-sm: $input-padding-y-sm !default;
+$picker-select-padding-y-sm: $input-padding-y-sm !default;
+
+$picker-select-padding-x-lg: $input-padding-y-sm !default;
+$picker-select-padding-y-lg: $input-padding-y-sm !default;
+
+$picker-select-calc-size: $input-inner-calc-height !default;
+$picker-select-calc-size-sm: $input-inner-calc-height-sm !default;
+$picker-select-calc-size-lg: $input-inner-calc-height-lg !default;
+
+$picker-icon-offset: calc( #{$picker-select-calc-size} + #{$picker-select-border-width}  + #{$input-icon-offset}) !default;
+
+
+// Popup
+
+$popup-padding-x: 0 !default;
+$popup-padding-y: 0 !default;
+
+$popup-border-width: 1px !default;
+$popup-header-padding: $list-item-padding-y $list-item-padding-x !default;
+$popup-header-font-size: null !default;
+$popup-header-text: null !default;
+$popup-filter-padding-x: $input-padding-x !default;
+
+$popup-bg: lighten($base-bg, 1%) !default;
+$popup-text: $base-text !default;
+$popup-border: $base-border !default;
+$popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
 
 // Dropdownlists
@@ -492,6 +483,8 @@ $colorpicker-hex-input-width: 65px !default;
 $colorpicker-input-width: 48px !default;
 $colorpicker-input-padding-x: $input-padding-y !default;
 $colorpicker-input-padding-y: $input-padding-y !default;
+
+$colorpicker-select-border-width: 1px !default;
 
 $colorpicker-bg: $input-bg !default;
 $colorpicker-text: $input-text !default;
@@ -631,6 +624,44 @@ $form-fieldset-legend-text: darken($text-color, 13%) !default;
 
 $fieldset-font-size: $h4-font-size !default;
 $fieldset-margin: 30px !default;
+
+// Toolbar
+
+$toolbar-bg: $button-bg !default;
+$toolbar-text: $button-text !default;
+$toolbar-border: $button-border !default;
+$toolbar-gradient: null !default;
+
+$toolbar-border-width: 1px !default;
+$toolbar-border-radius: 0 !default;
+
+/// The horizontal padding of the container.
+/// @group toolbar
+$toolbar-padding-x: $padding-x !default;
+
+/// The vertical padding of the container.
+/// @group toolbar
+$toolbar-padding-y: $padding-x !default;
+$toolbar-line-height: $line-height !default;
+
+$toolbar-spacing: $toolbar-padding-x !default;
+
+$toolbar-button-border-width: $button-border-width !default;
+$toolbar-button-border-radius: 0 !default;
+
+$toolbar-button-padding-x: $button-padding-x !default;
+$toolbar-button-padding-y: $button-padding-y !default;
+$toolbar-button-line-height: $button-line-height !default;
+
+$toolbar-button-calc-size: calc( #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} + #{$toolbar-button-border-width * 2} ) !default;
+$toolbar-inner-calc-size: calc( #{$toolbar-button-calc-size} + #{$toolbar-padding-y * 2} ) !default;
+
+$toolbar-button-expanded-bg: null !default;
+$toolbar-button-expanded-shadow: none !default;
+
+$toolbar-shadow: none !default;
+$toolbar-separator-padding-y: $toolbar-button-padding-y !default;
+$toolbar-separator-border: inherit !default;
 
 
 // Link
