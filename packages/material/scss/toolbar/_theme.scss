@@ -99,7 +99,8 @@
             color: $button-text;
         }
 
-        .k-dropdown {
+        .k-dropdown,
+        .k-combobox {
             .k-dropdown-wrap {
                 // Hover
                 &:hover,

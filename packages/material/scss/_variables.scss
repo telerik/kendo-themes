@@ -530,6 +530,11 @@ $dropdownlist-focused-opacity: $icon-focused-opacity !default;
 
 
 // Comboboxes
+$combobox-select-padding-x: ($button-padding-y / 2) !default;
+$combobox-select-padding-y: $button-padding-y !default;
+$combobox-select-width: auto !default;
+$combobox-select-border-width: 1px !default;
+
 $combobox-bg: $input-bg !default;
 $combobox-text: $input-text !default;
 $combobox-border: $input-border !default;
