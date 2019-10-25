@@ -13,8 +13,7 @@ $forms-invalid-color: inherit !default;
 
     .k-dateinput-wrap,
     .k-dropdown-wrap,
-    .k-picker-wrap,
-    .k-numeric-wrap {
+    .k-picker-wrap {
         border-width: 0 0 $input-border-width;
         border-color: $input-border;
         background-color: transparent;

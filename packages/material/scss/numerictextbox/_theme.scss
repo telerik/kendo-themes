@@ -1,39 +1,63 @@
 @import "~@progress/kendo-theme-default/scss/numerictextbox/_theme.scss";
 
 @include exports("numerictextbox/theme/material") {
+
     .k-numerictextbox {
         .k-numeric-wrap {
+            border-color: $input-border;
             background-color: transparent;
-        }
 
-        .k-select {
-            opacity: 1;
-            width: $icon-size;
-            color: inherit;
-        }
-
-        .k-select,
-        .k-select:hover,
-        .k-state-hover .k-select {
-            background-color: transparent;
-        }
-
-        .k-link {
-            opacity: $icon-opacity;
-
-            // Hover state
-            &:hover {
-                opacity: $icon-hovered-opacity;
+            .k-input {
+                color: $input-text;
             }
 
-            // Selected state
-            &.k-state-selected {
-                opacity: $icon-focused-opacity;
-                background-color: transparent;
-                box-shadow: none;
+            .k-select {
+                opacity: 1;
+                color: inherit;
+
+                &,
+                &:hover,
+                .k-state-hover & {
+                    background-color: transparent;
+                }
+            }
+
+            .k-link {
+                opacity: $icon-opacity;
+
+                // Hover state
+                &:hover {
+                    opacity: $icon-hovered-opacity;
+                }
+
+                // Selected state
+                &.k-state-selected {
+                    opacity: $icon-focused-opacity;
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+            }
+
+            // Hover
+            &:hover,
+            &.k-state-hover {
+                border-color: $input-hovered-border;
+
+                .k-select {
+                    opacity: $icon-hovered-opacity;
+                }
+            }
+
+            // Focused
+            &.k-state-focused,
+            .k-state-focused > & {
+                border-color: $input-focused-border;
+
+                .k-select {
+                    opacity: $icon-focused-opacity;
+                }
             }
         }
-
-
     }
+
 }
