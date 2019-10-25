@@ -14,4 +14,4 @@ debug.log
 .DS_Store
 
 # Lock files
-package-lock.json
+# package-lock.json
