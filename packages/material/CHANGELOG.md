@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.4.0"></a>
+# [3.4.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.3.8...@progress/kendo-theme-material@3.4.0) (2019-10-25)
+
+
+### Bug Fixes
+
+* **autocomplete:** extract scss variables ([3800a14](https://github.com/telerik/kendo-themes/commit/3800a14))
+* **grid:** edit selector for locked columns to be applied in both grid and treelist ([e3fc434](https://github.com/telerik/kendo-themes/commit/e3fc434))
+
+
+### Features
+
+* allow default theme reuse without background-clip ([58abbf5](https://github.com/telerik/kendo-themes/commit/58abbf5)), closes [#512](https://github.com/telerik/kendo-themes/issues/512)
+
+
+
+
 <a name="3.3.8"></a>
 ## [3.3.8](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.3.7...@progress/kendo-theme-material@3.3.8) (2019-10-22)
 
