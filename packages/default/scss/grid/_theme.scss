@@ -173,12 +173,13 @@
         }
     }
 
-    // Container
-    .k-grid-container {
+    // Content
+    .k-master-row {
         .k-grid-content-sticky {
             @include fill($grid-sticky-text, $grid-sticky-bg, $grid-sticky-border);
         }
     }
+
 
     .k-column-list-item:hover,
     .k-columnmenu-item:hover {
