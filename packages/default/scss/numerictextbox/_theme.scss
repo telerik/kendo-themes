@@ -2,12 +2,30 @@
 
     // Numeric
     .k-numerictextbox {
+        background-color: transparent;
 
         // Normal state
         .k-numeric-wrap {
             @include appearance( input );
             @include use-background-clip();
+
+            // Invalid
+            &.k-invalid,
+            &.k-invalid:hover,
+            &.k-state-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+                color: $error;
+                border-color: $invalid-border;
+            }
+
+            &.k-state-invalid {
+                .k-select {
+                    color: $error;
+                }
+            }
         }
+
         .k-select {
             @include appearance( button );
 
@@ -33,15 +51,6 @@
         // Focused state
         .k-state-focused {
             @include appearance( focused-input );
-        }
-
-        .k-numeric-wrap.k-state-invalid {
-            color: $error;
-            border-color: $invalid-border;
-
-            .k-select {
-                color: $error;
-            }
         }
     }
 
