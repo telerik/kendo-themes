@@ -30,7 +30,7 @@
 
             .k-input {
                 padding: $input-padding-y $input-padding-x;
-                width: 100%;
+                // width: 100%;
                 height: calc( #{$input-padding-y * 2} + #{$input-line-height * 1em} );
                 box-sizing: border-box;
                 border: 0;
@@ -38,11 +38,15 @@
                 color: inherit;
                 background: none;
                 font: inherit;
-                flex: 0 1 auto;
+                flex: 1 1 auto;
                 display: flex;
                 align-items: center;
                 overflow: hidden;
                 text-overflow: ellipsis;
+
+                &:invalid {
+                    box-shadow: none;
+                }
 
                 .k-edge & {
                     min-width: 0;
@@ -65,39 +69,31 @@
                 cursor: pointer;
             }
 
+            .k-link {
+                flex: 1 1 auto;
+                display: block;
+                overflow: hidden;
+                position: relative;
+
+                .k-icon {
+                    position: absolute;
+                    right: 50%;
+                    transform: translateX(50%);
+                }
+            }
+
+            .k-link-increase .k-icon {
+                bottom: -$spinner-icon-offset;
+            }
+
+            .k-link-decrease .k-icon {
+                top: -$spinner-icon-offset;
+            }
+
             .k-i-warning {
                 align-self: center;
                 margin-right: $spacer-x / 2;
             }
-
-            > .k-input {
-                flex: 1 1 auto;
-
-                &:invalid {
-                    box-shadow: none;
-                }
-            }
-        }
-
-        .k-link {
-            flex: 1 1 auto;
-            display: block;
-            overflow: hidden;
-            position: relative;
-
-            .k-icon {
-                position: absolute;
-                right: 50%;
-                transform: translateX(50%);
-            }
-        }
-
-        .k-link-increase .k-icon {
-            bottom: -$spinner-icon-offset;
-        }
-
-        .k-link-decrease .k-icon {
-            top: -$spinner-icon-offset;
         }
 
         .k-rtl &,
@@ -108,6 +104,10 @@
                 align-self: center;
                 margin-right: 0;
                 margin-left: $spacer-x / 2;
+            }
+
+            .k-select {
+                @include border-radius( $border-radius 0 0 $border-radius );
             }
         }
 
