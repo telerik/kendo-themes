@@ -2,24 +2,23 @@
 
 @include exports("numerictextbox/theme/material") {
 
+    // Numeric
     .k-numerictextbox {
-        .k-numeric-wrap {
-            border-color: $input-border;
-            background-color: transparent;
+        background-color: transparent;
 
-            .k-input {
-                color: $input-text;
-            }
+        // Normal state
+        .k-numeric-wrap {
+            border-color: $numeric-border;
+            background-color: transparent;
 
             .k-select {
                 opacity: 1;
                 color: inherit;
+                background-color: transparent;
+            }
 
-                &,
-                &:hover,
-                .k-state-hover & {
-                    background-color: transparent;
-                }
+            .k-input {
+                color: $numeric-text;
             }
 
             .k-link {
@@ -38,20 +37,47 @@
                 }
             }
 
+
             // Hover
             &:hover,
             &.k-state-hover {
-                border-color: $input-hovered-border;
+                border-color: $numeric-hovered-border;
 
                 .k-select {
                     opacity: $icon-hovered-opacity;
+                    background-color: transparent;
                 }
             }
 
+
             // Focused
-            &.k-state-focused,
-            .k-state-focused > & {
-                border-color: $input-focused-border;
+            &.k-state-focused {
+                border-color: $numeric-focused-border;
+
+                .k-select {
+                    opacity: $icon-focused-opacity;
+                }
+            }
+
+
+            // Invalid state
+            &.k-invalid,
+            &.k-invalid:hover,
+            &.k-state-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+                @include fill(
+                    $numeric-invalid-text,
+                    $numeric-invalid-bg,
+                    $numeric-invalid-border
+                );
+            }
+        }
+
+        // Focused state for k-state-focused added to the k-numerictextbox
+        &.k-state-focused {
+            .k-numeric-wrap {
+                border-color: $numeric-focused-border;
 
                 .k-select {
                     opacity: $icon-focused-opacity;
