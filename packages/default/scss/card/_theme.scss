@@ -16,6 +16,15 @@
         @include fill( $card-header-text, $card-header-bg, $card-header-border );
     }
 
+    // Footer
+    .k-card-footer {
+        @include fill( $card-footer-text, $card-footer-bg, $card-footer-border );
+    }
+
+    // Separator
+    .k-card-separator {
+        border-color: $card-border;
+    }
 
     // Card actions
     .k-card-actions {
@@ -35,11 +44,32 @@
     }
 
     // Theme variants
-    .k-card.k-state-primary { @extend .k-state-primary !optional; }
-    .k-card.k-state-info { @extend .k-state-info !optional; }
-    .k-card.k-state-success { @extend .k-state-success !optional; }
-    .k-card.k-state-warning { @extend .k-state-warning !optional; }
-    .k-card.k-state-error { @extend .k-state-error !optional; }
+    .k-card {
+        &.k-card-primary,
+        &.k-state-primary {
+            @extend .k-state-primary !optional;
+        }
+
+        &.k-card-info,
+        &.k-state-info {
+            @extend .k-state-info !optional;
+        }
+
+        &.k-card-success,
+        &.k-state-success {
+            @extend .k-state-success !optional;
+        }
+
+        &.k-card-warning,
+        &.k-state-warning {
+            @extend .k-state-warning !optional;
+        }
+
+        &.k-card-error,
+        &.k-state-error {
+            @extend .k-state-error !optional;
+        }
+    }
 
 
     .k-card-wrap {

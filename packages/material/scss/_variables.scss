@@ -1254,14 +1254,25 @@ $card-header-border: null !default;
 $card-body-padding-x: $card-padding-x !default;
 $card-body-padding-y: $card-padding-y !default;
 
+$card-footer-padding-x: $card-padding-x !default;
+$card-footer-padding-y: $card-padding-y !default;
+$card-footer-border-width: 0 !default;
+$card-footer-bg: null !default;
+$card-footer-text: null !default;
+$card-footer-border: null !default;
+
 $card-title-margin-bottom: $h1-margin-bottom !default;
 $card-subtitle-margin-bottom: $paragraph-margin-bottom !default;
 $card-subtitle-margin-top: 0 !default;
 $card-subtitle-text: true-mix($card-text, $card-bg, 54%) !default;
 
+$card-avatar-size: 60px !default;
+
 $card-actions-padding-x: $card-padding-x !default;
 $card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
 $card-actions-border-width: 1px !default;
+
+$card-button-negative-spacing: (-$padding-x-sm) !default;
 
 $card-deck-scroll-button-radius: 50% !default;
 $card-deck-scroll-button-offset: $card-deck-gap / 2 !default;
