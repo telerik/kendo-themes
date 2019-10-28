@@ -1175,14 +1175,25 @@ $card-header-border: $card-border-color !default;
 $card-body-padding-x: $card-padding-x !default;
 $card-body-padding-y: $card-padding-x !default; // In bootstrap, all card body paddings equal the card-spacer-x var
 
+$card-footer-padding-x: $card-padding-x !default;
+$card-footer-padding-y: $card-padding-y !default;
+$card-footer-border-width: $card-border-width !default;
+$card-footer-bg: $card-cap-bg !default;
+$card-footer-text: $card-text !default;
+$card-footer-border: $card-border-color !default;
+
 $card-title-margin-bottom: $h5-margin-bottom !default;
 $card-subtitle-margin-bottom: $h6-margin-bottom !default;
 $card-subtitle-margin-top: $padding-y-lg !default;
 $card-subtitle-text: true-mix($card-text, $card-bg, 65%) !default;
 
+$card-avatar-size: 60px !default;
+
 $card-actions-padding-x: $card-padding-x !default;
 $card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
 $card-actions-border-width: 1px !default;
+
+$card-button-negative-spacing: (-$button-padding-x) !default;
 
 $card-callout-width: 1.3em !default;
 $card-callout-height: 1.3em !default;

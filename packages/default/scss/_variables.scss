@@ -1155,21 +1155,31 @@ $card-border: $panel-border !default;
 $card-header-padding-x: $card-padding-x !default;
 $card-header-padding-y: $card-padding-y !default;
 $card-header-border-width: 1px !default;
-$card-header-bg: $header-bg !default;
+$card-header-bg: null !default;
 $card-header-text: $header-text !default;
 $card-header-border: $header-border !default;
 
 $card-body-padding-x: $card-padding-x !default;
 $card-body-padding-y: $card-padding-y !default;
 
+$card-footer-padding-x: $card-padding-x !default;
+$card-footer-padding-y: $card-padding-y !default;
+$card-footer-border-width: 1px !default;
+$card-footer-bg: null !default;
+$card-footer-text: $header-text !default;
+$card-footer-border: $header-border !default;
+
 $card-title-margin-bottom: $h2-margin-bottom !default;
 $card-subtitle-margin-bottom: $h6-margin-bottom !default;
 $card-subtitle-margin-top: $padding-x !default;
 $card-subtitle-text: true-mix($card-text, $card-bg, 45%) !default;
 
+$card-avatar-size: 60px !default;
+
 $card-actions-padding-x: $card-padding-x !default;
 $card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
 $card-actions-border-width: 1px !default;
+$card-button-negative-spacing: (-$button-padding-x) !default;
 
 $card-deck-scroll-button-radius: 0 !default;
 $card-deck-scroll-button-offset: -$button-border-width !default;
