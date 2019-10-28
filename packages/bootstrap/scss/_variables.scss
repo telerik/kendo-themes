@@ -572,6 +572,20 @@ $autocomplete-focused-border: $input-focused-border !default;
 $autocomplete-focused-shadow: $input-focused-shadow !default;
 
 
+// Dropdowntree
+$dropdowntree-text: $button-text !default;
+$dropdowntree-bg: $button-bg !default;
+$dropdowntree-border: $button-border !default;
+$dropdowntree-gradient: $button-gradient !default;
+
+$dropdowntree-hovered-text: $button-hovered-text !default;
+$dropdowntree-hovered-bg: $button-hovered-bg !default;
+$dropdowntree-hovered-border: $button-hovered-border !default;
+$dropdowntree-hovered-gradient: $button-hovered-gradient !default;
+
+$dropdowntree-focused-shadow: $button-focused-shadow !default;
+
+
 //Textboxes
 $textbox-shadow: 0 2px 2px 1px rgba(0, 0, 0, .06) !default;
 $textbox-font-size: $font-size !default;
