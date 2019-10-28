@@ -124,6 +124,11 @@
             top: $checkbox-size / 4;
             left: $checkbox-size / 4;
         }
+
+        .k-rtl &,
+        [dir="rtl"] &  {
+            right: $checkbox-size / 4;
+        }
     }
 
     // Form styles
