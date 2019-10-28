@@ -22,15 +22,9 @@
         }
 
         // Indeterminate
-        .k-checkbox-legacy:indeterminate + & {
-            &::before {
-                @include fill(
-                    $bg: $checkbox-indeterminate-bg,
-                    $border: $checkbox-indeterminate-border
-                );
-            }
+        .k-checkbox:indeterminate + & {
             &::after {
-                @include fill( $checkbox-indeterminate-text );
+                @include fill( $bg: $checkbox-indeterminate-bg );
             }
         }
 
