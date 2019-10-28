@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts.js"></script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll('.indeterminate-state');
+            elements.forEach(el => el.indeterminate = true);
+        });
+    </script>
+
     <style>
         #test-area {
             grid-template-columns: repeat(4, 1fr);
@@ -36,11 +43,17 @@
             <input type="checkbox" id="ch2" class="k-checkbox">
             <label class="k-checkbox-label" for="ch2">Unchecked</label>
             <br />
-            <input type="checkbox" id="ch3" class="k-checkbox" disabled checked />
-            <label class="k-checkbox-label" for="ch3">Disabled</label>
+            <input type="checkbox" id="ch3" class="k-checkbox indeterminate-state">
+            <label class="k-checkbox-label" for="ch3">Indeterminate</label>
             <br />
-            <input type="checkbox" id="ch4" class="k-checkbox" disabled />
+            <input type="checkbox" id="ch4" class="k-checkbox" disabled checked />
             <label class="k-checkbox-label" for="ch4">Disabled</label>
+            <br />
+            <input type="checkbox" id="ch5" class="k-checkbox" disabled />
+            <label class="k-checkbox-label" for="ch5">Disabled</label>
+            <br />
+            <input type="checkbox" id="ch6" class="k-checkbox indeterminate-state" disabled>
+            <label class="k-checkbox-label" for="ch6">Indeterminate</label>
         </section>
 
         <section>
@@ -58,17 +71,23 @@
         </section>
 
         <section dir="rtl">
-            <input type="checkbox" id="ch5" class="k-checkbox" checked />
-            <label class="k-checkbox-label" for="ch5">Checked</label>
+            <input type="checkbox" id="ch7" class="k-checkbox" checked />
+            <label class="k-checkbox-label" for="ch7">Checked</label>
             <br />
-            <input type="checkbox" id="ch6" class="k-checkbox" />
-            <label class="k-checkbox-label" for="ch6">Unchecked</label>
+            <input type="checkbox" id="ch8" class="k-checkbox" />
+            <label class="k-checkbox-label" for="ch8">Unchecked</label>
             <br />
-            <input type="checkbox" id="ch7" class="k-checkbox" disabled checked />
-            <label class="k-checkbox-label" for="ch7">Disabled</label>
+            <input type="checkbox" id="ch9" class="k-checkbox indeterminate-state" />
+            <label class="k-checkbox-label" for="ch9">Indeterminate</label>
             <br />
-            <input type="checkbox" id="ch8" class="k-checkbox" disabled />
-            <label class="k-checkbox-label" for="ch8">Disabled</label>
+            <input type="checkbox" id="ch10" class="k-checkbox" disabled checked />
+            <label class="k-checkbox-label" for="ch10">Disabled</label>
+            <br />
+            <input type="checkbox" id="ch11" class="k-checkbox" disabled />
+            <label class="k-checkbox-label" for="ch11">Disabled</label>
+            <br />
+            <input type="checkbox" id="ch12" class="k-checkbox indeterminate-state" disabled />
+            <label class="k-checkbox-label" for="ch12">Indeterminate</label>
         </section>
 
         <section dir="rtl">
