@@ -18,6 +18,13 @@
             left: calc( #{$textarea-padding-x } + #{$input-border-width} );
         }
 
+        &:not(.k-state-empty) {
+            > .k-label {
+                top: calc( #{$floating-label-height} + #{$input-border-width} + #{$input-padding-y} - 10px );
+                padding: 0 $textarea-floating-label-padding;
+            }
+        }
+
         &::after {
             // disable input ripple
             display: none;
@@ -31,13 +38,6 @@
                     right: calc( #{$textarea-padding-x } + #{$input-border-width} );
                 }
             }
-        }
-    }
-
-    .k-textarea-wrapper {
-        &.k-state-focused > .k-label {
-            top: calc( #{$floating-label-height} + #{$input-border-width} + #{$input-padding-y} - 10px );
-            padding: 0 $textarea-floating-label-padding;
         }
     }
 }
