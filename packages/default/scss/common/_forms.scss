@@ -2,34 +2,6 @@ $forms-invalid-color: $error !default;
 
 @include exports("forms/layout") {
 
-    // Widgets
-    .k-dropdown,
-    .k-dropdowntree {
-        width: $input-default-width;
-        border-width: 0;
-        background-color: transparent;
-        font-size: $input-font-size;
-        line-height: $input-line-height;
-        text-align: left;
-        white-space: nowrap;
-        display: inline-flex;
-        vertical-align: middle;
-        position: relative;
-
-        &[dir="rtl"],
-        .k-rtl & {
-            text-align: right;
-
-            .k-select {
-                @include border-left-radius-only();
-            }
-        }
-
-        ::-ms-clear {
-            display: none;
-        }
-    }
-
     .k-nodata {
         min-height: 138px;
         width: 100%;

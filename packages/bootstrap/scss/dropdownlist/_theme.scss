@@ -2,6 +2,8 @@
 
     // Dropdown
     .k-dropdown {
+        background-color: transparent;
+
         .k-dropdown-wrap {
             @include fill(
                 $dropdownlist-text,
