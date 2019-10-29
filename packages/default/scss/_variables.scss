@@ -1178,6 +1178,9 @@ $calendar-weekend-text: inherit !default;
 $calendar-weekend-bg: transparent !default;
 $calendar-weekend-opacity: 1 !default;
 
+$calendar-today-style: null !default;
+$calendar-today-color: null !default;
+
 $calendar-week-number-bg: transparent !default;
 $calendar-week-number-text: $calendar-header-cell-text !default;
 $calendar-week-number-opacity: $calendar-header-cell-opacity !default;
