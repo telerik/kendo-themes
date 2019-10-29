@@ -1,1 +1,23 @@
 @import "~@progress/kendo-theme-default/scss/dropdownlist/_layout.scss";
+
+@include exports("dropdownlist/layout/material") {
+    .k-dropdown {
+        .k-dropdown-wrap {
+            border-width: 0 0 $input-border-width;
+            position: relative;
+
+            .k-select {
+                padding: $picker-select-padding-y $picker-select-padding-x;
+                width: unset;
+                border-width: 0;
+                font-size: $font-size;
+            }
+
+            // Disabled
+            .k-state-disabled > &,
+            &.k-state-disabled {
+                border-bottom-style: dashed;
+            }
+        }
+    }
+}

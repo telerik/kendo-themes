@@ -1,1 +1,12 @@
 @import "~@progress/kendo-theme-default/scss/dropdownlist/_layout.scss";
+
+@include exports("dropdownlist/layout/bootstrap") {
+    .k-dropdown {
+        .k-dropdown-wrap {
+            .k-select {
+                padding: $picker-select-padding-y $picker-select-padding-x;
+                width: unset;
+            }
+        }
+    }
+}
