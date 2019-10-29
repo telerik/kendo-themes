@@ -19,7 +19,7 @@
             > .k-state-active {
                 color: darken($text-color, 25%);
                 @include appearance( hovered-button );
-                box-shadow: inset $button-focused-shadow;
+                box-shadow: $numerictextbox-spinners-focused-shadow;
             }
         }
 

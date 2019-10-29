@@ -429,7 +429,7 @@ $primary-button-pressed-bg: try-darken( $primary-button-bg, 10% ) !default;
 $primary-button-pressed-text: contrast-wcag( $primary-button-pressed-bg ) !default;
 $primary-button-pressed-border: try-darken( $primary-button-border, 12.5% ) !default;
 $primary-button-pressed-gradient: null !default;
-$primary-button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
+$primary-button-pressed-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
 
 $primary-button-focused-shadow: 0 0 0 3px rgba($primary-button-border, .5) !default;
 
@@ -570,6 +570,10 @@ $autocomplete-focused-bg: $input-focused-bg !default;
 $autocomplete-focused-text: $input-focused-text !default;
 $autocomplete-focused-border: $input-focused-border !default;
 $autocomplete-focused-shadow: $input-focused-shadow !default;
+
+
+// NumericTextBox
+$numerictextbox-spinners-focused-shadow: null !default;
 
 
 //Textboxes
@@ -1236,8 +1240,8 @@ $window-border-radius: $border-radius !default;
 $window-inner-padding-x: $modal-inner-padding !default;
 $window-inner-padding-y: $modal-inner-padding !default;
 
-$window-titlebar-padding-x: $modal-header-padding !default;
-$window-titlebar-padding-y: $modal-header-padding !default;
+$window-titlebar-padding-x: $modal-header-padding-x !default;
+$window-titlebar-padding-y: $modal-header-padding-y !default;
 $window-titlebar-border-width: 0 0 1px !default;
 $window-titlebar-border-style: solid !default;
 

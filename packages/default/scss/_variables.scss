@@ -398,7 +398,7 @@ $primary-button-pressed-text: $primary-button-text !default;
 $primary-button-pressed-bg: $primary-button-bg !default;
 $primary-button-pressed-border: $primary-button-pressed-bg !default;
 $primary-button-pressed-gradient: rgba( adjust-hue( $primary-button-pressed-bg, 14), .2 ), rgba( adjust-hue( $primary-button-pressed-bg, 14), 0 ) !default;
-$primary-button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
+$primary-button-pressed-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
 
 $primary-button-focused-shadow: 0 3px 4px 0 rgba($accent, .4) !default;
 
@@ -539,6 +539,10 @@ $autocomplete-focused-bg: $input-focused-bg !default;
 $autocomplete-focused-text: $input-focused-text !default;
 $autocomplete-focused-border: $input-focused-border !default;
 $autocomplete-focused-shadow: $input-focused-shadow !default;
+
+
+// NumericTextBox
+$numerictextbox-spinners-focused-shadow: inset $button-focused-shadow !default;
 
 
 // Textboxes
