@@ -142,7 +142,7 @@
         .k-grouping-row .k-group-cell,
         .k-grouping-row + tr .k-group-cell {
             border-top-width: 0;
-            text-overflow: none;
+            text-overflow: clip;
         }
 
         .k-grouping-row .k-icon {

@@ -28,7 +28,7 @@
         // Selected state
         &.k-state-selected {
             @include appearance( pressed-primary-button );
-            box-shadow: inset $primary-button-pressed-shadow;
+            box-shadow: $primary-button-pressed-shadow;
         }
 
     }
@@ -60,13 +60,13 @@
         &:active,
         &.k-state-active {
             @include appearance( pressed-primary-button );
-            box-shadow: inset $primary-button-pressed-shadow;
+            box-shadow: $primary-button-pressed-shadow;
         }
 
         // Selected state
         &.k-state-selected {
             @include appearance( pressed-primary-button );
-            box-shadow: inset $primary-button-pressed-shadow;
+            box-shadow: $primary-button-pressed-shadow;
         }
 
     }
@@ -108,7 +108,7 @@
         > input[type="radio"]:checked + .k-button,
         > input[type="checkbox"]:checked + .k-button {
             @include appearance( pressed-primary-button );
-            box-shadow: inset $primary-button-pressed-shadow;
+            box-shadow: $primary-button-pressed-shadow;
         }
 
         // Disabled state
