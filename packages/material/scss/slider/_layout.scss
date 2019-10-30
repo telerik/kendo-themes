@@ -22,13 +22,6 @@
         .k-draghandle {
             z-index: 2;
         }
-
-        &.k-state-disabled {
-            .k-draghandle {
-                border-width: 2px;
-                border-style: solid;
-            }
-        }
     }
 
     .k-slider-horizontal {

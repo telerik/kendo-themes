@@ -31,19 +31,5 @@
                 box-shadow: $draghandle-focus-shadow;
             }
         }
-
-        &.k-state-disabled {
-            opacity: 1;
-
-            .k-slider-track,
-            .k-slider-selection,
-            .k-draghandle {
-                background-color: $slider-disabled-bg;
-            }
-
-            .k-draghandle {
-                border-color: inherit;
-            }
-        }
     }
 }
