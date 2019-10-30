@@ -1342,7 +1342,7 @@ $slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
 
 $slider-trackbackground-color: darken($widget-bg, 10%) !default;
 $slider-selection-background-color: $accent !default;
-$slider-disabled-bg: $input-disabled-bg !default;
+$slider-disabled-opacity: .65 !default;
 
 
 // Window
