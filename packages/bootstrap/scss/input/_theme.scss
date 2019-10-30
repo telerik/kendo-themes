@@ -4,20 +4,26 @@
     .k-textbox,
     .k-textarea,
     .k-input.k-textbox {
-        @include appearance( "input" );
+        @include fill(
+            $input-text,
+            $input-bg,
+            $input-border
+        );
         transition: $transition;
 
         // Hovered
         &:hover,
         &.k-state-hover {
-            border-color: $input-hovered-border;
+            @include fill ( $border: $input-hovered-border );
         }
 
         // Focused
         &:focus,
         &.k-state-focused {
-            border-color: $input-focused-border;
-            box-shadow: none;
+            @include fill (
+                $border: $input-focused-border
+            );
+            @include box-shadow( none );
         }
 
         // Invalid
@@ -25,19 +31,23 @@
         &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            color: $error;
-            border-color: $invalid-border;
+            @include fill (
+                $color: $error,
+                $border: $invalid-border
+            );
         }
 
         // Selection
         &::selection {
-            background-color: $accent;
-            color: $accent-contrast;
+            @include fill (
+                $color: $accent-contrast,
+                $bg: $accent
+            );
         }
 
         // Placeholder
         &::placeholder {
-            color: inherit;
+            @include fill ( $color: inherit );
             opacity: .7;
         }
     }
@@ -94,7 +104,7 @@
 
     .k-required,
     .k-required.k-field-info {
-        color: $accent;
+        @include fill ( $color: $accent );
     }
 
     fieldset {
@@ -104,12 +114,12 @@
     }
 
     fieldset legend {
-        color: $header-text;
+        @include fill ( $color: $header-text );
         font-size: $fieldset-font-size;
     }
 
     .k-maskedtextbox .k-state-invalid + .k-i-warning {
-        color: $error;
+        @include fill ( $color: $error );
     }
 }
 
@@ -123,7 +133,7 @@
         .k-textbox,
         .k-textarea {
             &:-ms-input-placeholder {
-                color: $input-text;
+                @include fill ( $color: $input-text );
             }
             &.k-invalid,
             &.k-state-invalid,
@@ -131,7 +141,7 @@
             &.ng-invalid.ng-dirty {
 
                 &:-ms-input-placeholder {
-                    color: $error;
+                    @include fill ( $color: $error );
                 }
             }
         }

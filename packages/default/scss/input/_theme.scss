@@ -3,20 +3,26 @@
     .k-textbox,
     .k-textarea,
     .k-input.k-textbox {
-        @include appearance( "input" );
+        @include fill(
+            $input-text,
+            $input-bg,
+            $input-border
+        );
         @include use-background-clip();
 
         // Hovered
         &:hover,
         &.k-state-hover {
-            border-color: $input-hovered-border;
+            @include fill ( $border: $input-hovered-border );
         }
 
         // Focused
         &:focus,
         &.k-state-focus {
-            color: $input-focused-text;
-            border-color: $input-focused-border;
+            @include fill (
+                $color: $input-focused-text,
+                $border: $input-focused-border
+            );
         }
 
         // Invalid
@@ -24,14 +30,18 @@
         &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            color: $error;
-            border-color: $invalid-border;
+            @include fill (
+                $color: $error,
+                $border: $invalid-border
+            );
         }
 
         // Selection
         &::selection {
-            background-color: $accent;
-            color: $accent-contrast;
+            @include fill (
+                $color: $accent-contrast,
+                $bg: $accent
+            );
         }
     }
 
@@ -39,14 +49,18 @@
     .k-input,
     .k-textarea {
         &::selection {
-            background-color: $accent;
-            color: $accent-contrast;
+            @include fill (
+                $color: $accent-contrast,
+                $bg: $accent
+            );
         }
 
         .k-state-disabled & {
             &::selection {
-                color: $input-text;
-                background-color: transparent;
+                @include fill (
+                    $color: $input-text,
+                    $bg: transparent
+                );
             }
         }
     }
@@ -56,7 +70,7 @@
     .k-input.k-textbox,
     .k-textarea {
         &::placeholder {
-            color: rgba($input-text, .5);
+            @include fill ( $color: rgba($input-text, .5) );
         }
     }
 }
@@ -67,34 +81,34 @@
 @include exports("input/theme/form-styles") {
 
     fieldset {
-        border-color: $input-border;
+        @include fill ( $border: $input-border );
     }
 
     fieldset legend {
-        color: $header-text;
+        @include fill ( $color: $header-text );
     }
 
     .k-form,
     .k-form-inline {
-        color: $text-color;
+        @include fill ( $color: $text-color );
 
         fieldset {
             legend {
-                color: $form-fieldset-legend-text;
+                @include fill ( $color: $form-fieldset-legend-text );
             }
         }
 
         .k-field-info {
-            color: lighten($text-color, 33%);
+            @include fill ( $color: lighten($text-color, 33%) );
         }
 
         .k-alert-error {
-            color: $error;
+            @include fill ( $color: $error );
         }
     }
 
     .k-required,
     .k-required.k-field-info {
-        color: $accent;
+        @include fill ( $color: $accent );
     }
 }
