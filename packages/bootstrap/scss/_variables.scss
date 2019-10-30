@@ -1320,21 +1320,43 @@ $progressbar-chunk-border: $bg-color !default;
 $slider-size: 200px !default;
 $slider-tick-size: null !default;
 $slider-alt-size: 30px !default;
+
 $slider-button-offset: 10px !default;
 $slider-button-size: ($slider-alt-size - 2) !default;
+$slider-button-spacing: ($slider-button-size + $slider-button-offset) !default;
+$slider-button-focused-shadow: $button-focused-shadow !default;
+
 $slider-track-thickness: 4px !default;
 $slider-draghandle-size: 14px !default;
 $slider-draghandle-border-width: 1px !default;
 $slider-draghandle-active-scale: 1 !default;
 $slider-draghandle-active-size: null !default;
-$slider-button-spacing: ($slider-button-size + $slider-button-offset) !default;
+
+$slider-draghandle-bg: $primary-button-bg !default;
+$slider-draghandle-text: $primary-button-text !default;
+$slider-draghandle-border: $primary-button-border !default;
+$slider-draghandle-gradient: $primary-button-gradient !default;
+
+$slider-draghandle-hovered-bg: $primary-button-hovered-bg !default;
+$slider-draghandle-hovered-text: $primary-button-hovered-text !default;
+$slider-draghandle-hovered-border: $primary-button-hovered-border !default;
+$slider-draghandle-hovered-gradient: $primary-button-hovered-gradient !default;
+
+$slider-draghandle-pressed-bg: $primary-button-pressed-bg !default;
+$slider-draghandle-pressed-text: $primary-button-pressed-text !default;
+$slider-draghandle-pressed-border: $primary-button-pressed-border !default;
+$slider-draghandle-pressed-gradient: $primary-button-pressed-gradient !default;
+$slider-draghandle-pressed-shadow: inset $primary-button-pressed-shadow !default;
+
+$slider-draghandle-focused-shadow: $primary-button-focused-shadow !default;
+
 $slider-transition-speed: .3s !default;
 $slider-transition-function: ease-out !default;
 $slider-draghandle-transition-speed: .4s !default;
 $slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
 
-$slider-trackbackground-color: $progressbar-bg !default;
-$slider-selection-background-color: $progressbar-fill-bg !default;
+$slider-track-bg: $progressbar-bg !default;
+$slider-selection-bg: $progressbar-fill-bg !default;
 $slider-disabled-opacity: null !default;
 
 
