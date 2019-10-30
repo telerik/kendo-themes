@@ -7,11 +7,11 @@
         }
 
         .k-slider-track {
-            background-color: $slider-trackbackground-color;
+            @include fill( $bg: $slider-track-bg );
         }
 
         .k-slider-selection {
-            background-color: $slider-selection-background-color;
+            @include fill( $bg: $slider-selection-bg );
         }
 
         .k-button {
@@ -19,28 +19,43 @@
         }
 
         .k-draghandle {
-            @include appearance( primary-button );
+            @include fill(
+                $slider-draghandle-text,
+                $slider-draghandle-bg,
+                $slider-draghandle-border,
+                $slider-draghandle-gradient
+            );
             @include border-radius( 50% );
 
             &:hover {
-                @include appearance( hovered-primary-button );
+                @include fill(
+                    $slider-draghandle-hovered-text,
+                    $slider-draghandle-hovered-bg,
+                    $slider-draghandle-hovered-border,
+                    $slider-draghandle-hovered-gradient
+                );
             }
 
             &:active,
             &.k-pressed {
-                @include appearance( pressed-primary-button );
-                box-shadow: $primary-button-pressed-shadow;
+                @include fill(
+                    $slider-draghandle-pressed-text,
+                    $slider-draghandle-pressed-bg,
+                    $slider-draghandle-pressed-border,
+                    $slider-draghandle-pressed-gradient
+                );
+                @include box-shadow( $slider-draghandle-pressed-shadow );
             }
 
             &:focus,
             &.k-state-focused {
-                box-shadow: $primary-button-focused-shadow;
+                @include box-shadow( $slider-draghandle-focused-shadow );
             }
         }
 
         &.k-state-focused {
             .k-draghandle {
-                box-shadow: $primary-button-focused-shadow;
+                @include box-shadow( $slider-draghandle-focused-shadow );
             }
         }
 
