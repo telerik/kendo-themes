@@ -168,7 +168,8 @@
             }
         }
 
-        .k-grid-header-sticky {
+        .k-grid-header-sticky,
+        .k-grid-header-sticky.k-sorted {
             @include fill($grid-sticky-text, $grid-sticky-bg, $grid-sticky-border);
         }
     }
