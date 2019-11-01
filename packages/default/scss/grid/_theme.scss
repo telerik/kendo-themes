@@ -197,6 +197,18 @@
         &.k-state-selected.k-alt .k-grid-content-sticky {
             @include fill( $bg: $grid-sticky-selected-alt-bg );
         }
+
+
+        // Hovered state
+        &:hover .k-grid-content-sticky {
+            background-color: $grid-sticky-hovered-bg;
+        }
+
+
+        // Selected hover
+        &.k-state-selected:hover .k-grid-content-sticky {
+            background-color: $grid-sticky-selected-hovered-bg;
+        }
     }
 
 
