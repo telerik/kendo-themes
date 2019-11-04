@@ -324,25 +324,13 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
         width: 200px;
     }
 
-    .k-card-deck-scrollwrap {
-        margin-left: -$chat-message-list-padding-y;
-        margin-right: -$chat-message-list-padding-y;
-        padding-left: $chat-message-list-padding-y;
-        padding-right: $chat-message-list-padding-y;
-        overflow: hidden;
-        flex: 0 0 auto;
-        width: 100%;
-        box-sizing: content-box;
-        padding-bottom: 3px; // prevents trimming of card shadows on OSX (0-width scrollbar)
+    .k-chat .k-card-deck-scrollwrap > .k-card-deck {
+        // hide scrollbar in chat
+        $scrollbar-size: 20px;
 
-        > .k-card-deck {
-            // hide scrollbar
-            $scrollbar-size: 20px;
-            margin-bottom: -$scrollbar-size;
-            padding-bottom: $scrollbar-size;
-        }
+        margin-bottom: -$scrollbar-size;
+        padding-bottom: $scrollbar-size;
     }
-
 
     // Deck
     .k-chat .k-card-deck .k-card-wrap {
