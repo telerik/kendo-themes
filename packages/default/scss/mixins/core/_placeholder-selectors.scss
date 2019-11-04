@@ -171,4 +171,55 @@
         pointer-events: all;
     }
 
+    // Hr
+    %hr {
+        margin: $spacer-y auto;
+        height: 0;
+        border-width: 1px 0 0;
+        border-style: solid;
+        border-color: $panel-border;
+        display: block;
+    }
+
+    %hr-vertical {
+        margin: 0;
+        width: 0;
+        height: auto;
+        border-width: 0 0 0 1px;
+        flex: 0 0 auto;
+    }
+
+    // Button Group
+    %ul-button-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        li {
+            border-width: $button-border-width;
+            border-style: solid;
+            position: relative;
+            z-index: 1;
+        }
+        li + li {
+            margin-left: -$button-border-width;
+        }
+        .k-state-hover,
+        .k-state-selected {
+            z-index: 2;
+        }
+
+
+        .k-link {
+            padding: $button-padding-y $button-padding-x;
+            box-sizing: border-box;
+            color: inherit;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+    }
 }

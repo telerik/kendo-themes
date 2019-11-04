@@ -95,7 +95,7 @@
 
     // View switcher
     .k-gantt-views {
-        @extend %ul-button-group !optional;
+        @extend %ul-button-group;
 
         .k-current-view { display: none; }
         .k-current-view .k-link::after {

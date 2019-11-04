@@ -92,8 +92,8 @@
 
     // Header
     .k-card-header {
-        @extend %top-rounded-child !optional;
-        @extend %bottom-rounded-child !optional;
+        @extend %top-rounded-child;
+        @extend %bottom-rounded-child;
         padding: $card-header-padding-y $card-header-padding-x;
         border-width: 0 0 $card-header-border-width;
         border-style: solid;
@@ -123,8 +123,8 @@
 
     // Footer
     .k-card-footer {
-        @extend %top-rounded-child !optional;
-        @extend %bottom-rounded-child !optional;
+        @extend %top-rounded-child;
+        @extend %bottom-rounded-child;
         padding: $card-footer-padding-y $card-footer-padding-x;
         border-width: $card-footer-border-width 0 0;
         border-style: solid;
@@ -138,8 +138,8 @@
 
     // Body
     .k-card-body {
-        @extend %top-rounded-child !optional;
-        @extend %bottom-rounded-child !optional;
+        @extend %top-rounded-child;
+        @extend %bottom-rounded-child;
         padding: $card-body-padding-y $card-body-padding-x;
         display: block;
         flex: 1 1 auto;
@@ -163,10 +163,10 @@
     // Card image
     .k-card-image,
     .k-card-media {
-        @extend %top-rounded-child !optional;
-        @extend %bottom-rounded-child !optional;
-        @extend %left-rounded-child !optional;
-        @extend %right-rounded-child !optional;
+        @extend %top-rounded-child;
+        @extend %bottom-rounded-child;
+        @extend %left-rounded-child;
+        @extend %right-rounded-child;
         border: 0;
         max-width: 100%;
         overflow: hidden;
@@ -223,8 +223,8 @@
 
     // Card actions
     .k-card-actions {
-        @extend %top-rounded-child !optional;
-        @extend %bottom-rounded-child !optional;
+        @extend %top-rounded-child;
+        @extend %bottom-rounded-child;
         padding: $card-actions-padding-y $card-actions-padding-x;
         border-width: 0;
         border-style: solid;
@@ -246,7 +246,7 @@
         }
 
         .k-card-horizontal & {
-            @extend %right-rounded-child !optional;
+            @extend %right-rounded-child;
         }
 
         .k-button {
