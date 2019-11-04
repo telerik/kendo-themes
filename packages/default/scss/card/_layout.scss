@@ -374,9 +374,18 @@
     }
 
     .k-card-deck-scrollwrap {
+        margin-right: -$chat-message-list-padding-y;
+        margin-left: -$chat-message-list-padding-y;
+        padding-left: $chat-message-list-padding-y;
+        padding-bottom: 3px; // prevents trimming of card shadows on OSX (0-width scrollbar)
+        padding-right: $chat-message-list-padding-y;
+        width: 100%;
+        box-sizing: content-box;
         display: flex;
-        position: relative;
+        flex: 0 0 auto;
         align-items: center;
+        position: relative;
+        overflow: hidden;
 
         > .k-button {
             @include border-radius( $card-deck-scroll-button-radius );
@@ -394,6 +403,11 @@
         }
 
         > .k-card-deck {
+            // hide scrollbar
+            $scrollbar-size: 20px;
+
+            margin-bottom: -$scrollbar-size;
+            padding-bottom: $scrollbar-size;
             flex: 1 1 auto;
         }
     }

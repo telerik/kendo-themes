@@ -1,7 +1,13 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 
+
 // Dependencies
+@import "listgroup.scss";
+@import "checkbox.scss";
+@import "radio.scss";
+@import "switch.scss";
+
 
 // Component
 @import "adaptive/_layout.scss";
