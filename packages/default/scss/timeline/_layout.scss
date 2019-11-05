@@ -1,6 +1,7 @@
 @include exports("timeline/layout") {
 
     .k-timeline {
+        background-color: transparent;
 
         ul {
             margin: 0;

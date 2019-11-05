@@ -232,11 +232,11 @@ $forms-invalid-color: $error !default;
     }
 
     .k-multiselect-wrap {
-        padding-right: calc( #{ $picker-select-size } );
+        padding-right: $picker-select-calc-size;
 
         .k-rtl &,
         [dir="rtl"] & {
-            padding-left: calc( #{ $picker-select-size } );
+            padding-left: $picker-select-calc-size;
             padding-right: $input-padding-x;
         }
     }

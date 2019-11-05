@@ -3,7 +3,7 @@
     // Layout
     .k-autocomplete {
         @include border-radius( $input-border-radius );
-        padding: 0 calc( #{ $picker-select-size } ) 0 0;
+        padding: 0 $picker-select-calc-size 0 0;
         width: $input-default-width;
         font-size: $input-font-size;
         line-height: $input-line-height;
@@ -97,7 +97,7 @@
 
         &[dir="rtl"],
         .k-rtl & {
-            padding-left: calc( #{ $picker-select-size } );
+            padding-left: $picker-select-calc-size;
             padding-right: 0;
             text-align: right;
 
