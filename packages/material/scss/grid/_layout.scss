@@ -185,6 +185,19 @@ $grid-group-drag-clue-opacity: .9 !default;
             }
         }
 
+        .k-multiselect {
+            .k-multiselect-wrap {
+                border-radius: $text-field-radius;
+                border-width: 0 0 $text-field-border-width;
+                padding-left: $text-field-padding;
+                padding-right: $text-field-padding;
+
+                .k-input {
+                    height: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} - #{$text-field-border-width} );
+                }
+            }
+        }
+
         .k-autocomplete {
             &[dir="rtl"],
             .k-rtl & {
@@ -193,12 +206,14 @@ $grid-group-drag-clue-opacity: .9 !default;
             }
         }
 
-        .k-multiselect-wrap {
-            .k-button {
-                margin-top: $padding-y * 2;
-            }
-            > .k-clear-value {
-                right: $padding-y * 2;
+        .k-multiselect {
+            .k-multiselect-wrap {
+                .k-button {
+                    margin-top: $padding-y * 2;
+                }
+                > .k-clear-value {
+                    right: $padding-y * 2;
+                }
             }
         }
 

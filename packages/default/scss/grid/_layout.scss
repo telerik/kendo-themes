@@ -142,7 +142,7 @@
         .k-grouping-row .k-group-cell,
         .k-grouping-row + tr .k-group-cell {
             border-top-width: 0;
-            text-overflow: none;
+            text-overflow: clip;
         }
 
         .k-grouping-row .k-icon {
@@ -973,7 +973,7 @@
     .k-grid-header .k-filter-row .k-grid-header-sticky,
     .k-grid-content-sticky {
         position: sticky;
-        z-index: 1;
+        z-index: 2;
     }
 
     .k-header.k-drag-clue {

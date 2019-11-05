@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.6.0"></a>
+# [4.6.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.5.2...@progress/kendo-theme-default@4.6.0) (2019-10-25)
+
+
+### Bug Fixes
+
+* **autocomplete:** extract scss variables ([3800a14](https://github.com/telerik/kendo-themes/commit/3800a14))
+* **grid:** edit selector for locked columns to be applied in both grid and treelist ([e3fc434](https://github.com/telerik/kendo-themes/commit/e3fc434))
+* **switch:** off background not visible with dark swatches ([a5f1d39](https://github.com/telerik/kendo-themes/commit/a5f1d39))
+
+
+### Features
+
+* **grid:** column resizer rtl styles ([a4381d5](https://github.com/telerik/kendo-themes/commit/a4381d5))
+* allow default theme reuse without background-clip ([58abbf5](https://github.com/telerik/kendo-themes/commit/58abbf5)), closes [#512](https://github.com/telerik/kendo-themes/issues/512)
+
+
+
+
 <a name="4.5.2"></a>
 ## [4.5.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.5.1...@progress/kendo-theme-default@4.5.2) (2019-10-22)
 
