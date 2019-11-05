@@ -647,6 +647,10 @@
                 margin-bottom: calc( (#{ button-size() } - #{ $form-line-height * 1em}) / -2);
                 margin-right: calc( -1 * #{ button-size() });
             }
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         .k-header > .k-link > .k-icon {
