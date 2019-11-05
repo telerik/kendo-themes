@@ -1,39 +1,108 @@
 @include exports("numerictextbox/theme") {
+
     // Numeric
     .k-numerictextbox {
+        background-color: transparent;
 
         // Normal state
         .k-numeric-wrap {
-            @include appearance( input );
+            @include fill(
+                $numeric-text,
+                $numeric-bg,
+                $numeric-border
+            );
             transition: $transition;
-        }
-        .k-select {
-            @include appearance( button );
-            transition: $transition;
-        }
-
-        // Hovered state
-        .k-state-hover {
-            @include appearance( hovered-input );
 
             .k-select {
-                @include appearance( hovered-button );
+                @include fill(
+                    $numeric-button-text,
+                    $numeric-button-bg,
+                    $numeric-button-border,
+                    $numeric-button-gradient
+                );
+                transition: $transition;
+            }
+
+
+            // Hovered state
+            &:hover,
+            &.k-state-hover {
+                @include fill(
+                    $numeric-hovered-text,
+                    $numeric-hovered-bg,
+                    $numeric-hovered-border
+                );
+
+                .k-select {
+                    @include fill(
+                        $numeric-button-hovered-text,
+                        $numeric-button-hovered-bg,
+                        $numeric-button-hovered-border,
+                        $numeric-button-hovered-gradient
+                    );
+                }
+            }
+
+
+            // Focused state
+            &.k-state-focused {
+                @include fill(
+                    $numeric-focused-text,
+                    $numeric-focused-bg,
+                    $numeric-focused-border
+                );
+                @include box-shadow($numeric-focused-shadow);
+            }
+
+
+            // Invalid state
+            &.k-invalid,
+            &.k-invalid:hover,
+            &.k-state-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+                @include fill(
+                    $numeric-invalid-text,
+                    $numeric-invalid-bg,
+                    $numeric-invalid-border
+                );
+            }
+
+
+            // Selected state
+            .k-link.k-state-selected {
+                @include fill(
+                    $numeric-button-pressed-text,
+                    $numeric-button-pressed-bg,
+                    $numeric-button-pressed-border,
+                    $numeric-button-pressed-gradient
+                );
+                @include box-shadow( $numeric-button-pressed-shadow );
             }
         }
 
-        // Focused state
-        .k-state-focused {
-            @include appearance( focused-input );
+        // Invalid state for k-state-invalid added to the k-numerictextbox
+        &.k-invalid,
+        &.k-invalid:hover,
+        &.k-state-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            @include fill(
+                $numeric-invalid-text,
+                $numeric-invalid-bg,
+                $numeric-invalid-border
+            );
         }
 
-        // Selected state
-        .k-link.k-state-selected {
-            @include appearance( pressed-button );
-        }
-
-        .k-numeric-wrap.k-state-invalid {
-            border-color: $error;
-            color: $error;
+        // Focused state for k-state-focused added to the k-numerictextbox
+        &.k-state-focused {
+            @include fill(
+                $numeric-focused-text,
+                $numeric-focused-bg,
+                $numeric-focused-border
+            );
+            @include box-shadow($numeric-focused-shadow);
         }
     }
+
 }

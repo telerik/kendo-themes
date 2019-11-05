@@ -29,7 +29,7 @@
             &:active,
             &.k-pressed {
                 @include appearance( pressed-primary-button );
-                box-shadow: inset $primary-button-pressed-shadow;
+                box-shadow: $primary-button-pressed-shadow;
             }
 
             &:focus,
@@ -42,6 +42,10 @@
             .k-draghandle {
                 box-shadow: $primary-button-focused-shadow;
             }
+        }
+
+        &.k-state-disabled {
+            opacity: $slider-disabled-opacity;
         }
 
         .k-slider-wrap {

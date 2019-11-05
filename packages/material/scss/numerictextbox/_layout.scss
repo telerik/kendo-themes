@@ -5,15 +5,28 @@
     .k-numerictextbox {
         .k-numeric-wrap {
             border-top: 1px solid transparent;
+            border-width: 0 0 $input-border-width;
+            position: relative;
+
+            .k-select {
+                width: $icon-size;
+                border-width: 0;
+                font-size: $font-size;
+            }
+
+
+            // Disabled state
+            &.k-state-disabled {
+                border-bottom-style: dashed;
+            }
         }
 
-        &.k-invalid,
-        &.k-state-invalid,
-        &.ng-invalid.ng-touched,
-        &.ng-invalid.ng-dirty {
+        // Disabled state for k-state-disabled added to the k-numerictextbox
+        &.k-state-disabled {
             .k-numeric-wrap {
-                border-top: 1px solid transparent;
+                border-bottom-style: dashed;
             }
         }
     }
+
 }
