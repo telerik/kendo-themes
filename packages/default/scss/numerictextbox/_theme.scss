@@ -2,45 +2,95 @@
 
     // Numeric
     .k-numerictextbox {
+        background-color: transparent;
 
         // Normal state
         .k-numeric-wrap {
-            @include appearance( input );
+            @include fill(
+                $numeric-text,
+                $numeric-bg,
+                $numeric-border
+            );
+
             @include use-background-clip();
-        }
-        .k-select {
-            @include appearance( button );
-
-            &:hover {
-                @include appearance( hovered-button );
-            }
-
-            > .k-state-selected,
-            > .k-state-active {
-                color: darken($text-color, 25%);
-                @include appearance( hovered-button );
-                box-shadow: $numerictextbox-spinners-focused-shadow;
-            }
-        }
-
-        // Hovered state
-        .k-state-hover {
-            @include appearance( hovered-input );
-
-            .k-select { @include appearance( hovered-button ); }
-        }
-
-        // Focused state
-        .k-state-focused {
-            @include appearance( focused-input );
-        }
-
-        .k-numeric-wrap.k-state-invalid {
-            color: $error;
-            border-color: $invalid-border;
 
             .k-select {
-                color: $error;
+                @include fill(
+                    $numeric-button-text,
+                    $numeric-button-bg,
+                    $numeric-button-border,
+                    $numeric-button-gradient
+                );
+
+                &:hover {
+                    @include fill(
+                        $numeric-button-hovered-text,
+                        $numeric-button-hovered-bg,
+                        $numeric-button-hovered-border,
+                        $numeric-button-hovered-gradient
+                    );
+                }
+
+                > .k-state-selected,
+                > .k-state-active {
+                    @include fill(
+                        darken($text-color, 25%),
+                        $numeric-button-hovered-bg,
+                        $numeric-button-hovered-border,
+                        $numeric-button-hovered-gradient
+                    );
+                    box-shadow: $numerictextbox-spinners-focused-shadow;
+                }
+            }
+
+
+            // Hovered state
+            &.k-state-hover {
+                @include fill(
+                    $numeric-hovered-text,
+                    $numeric-hovered-bg,
+                    $numeric-hovered-border
+                );
+
+                .k-select {
+                    @include fill(
+                        $numeric-button-hovered-text,
+                        $numeric-button-hovered-bg,
+                        $numeric-button-hovered-border,
+                        $numeric-button-hovered-gradient
+                    );
+                }
+            }
+
+
+            // Focused state
+            &.k-state-focused {
+                @include fill(
+                    $numeric-focused-text,
+                    $numeric-focused-bg,
+                    $numeric-focused-border
+                );
+                @include box-shadow($numeric-focused-shadow);
+            }
+
+
+            // Invalid state
+            &.k-invalid,
+            &.k-invalid:hover,
+            &.k-state-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+                @include fill(
+                    $numeric-invalid-text,
+                    $numeric-invalid-bg,
+                    $numeric-invalid-border
+                );
+            }
+
+            &.k-state-invalid {
+                .k-select {
+                    color: $numeric-invalid-text;
+                }
             }
         }
     }
