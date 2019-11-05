@@ -19,7 +19,7 @@
         &::before {
             content: "";
             width: 0;
-            height: $input-inner-calc-size;
+            height: $input-inner-calc-height;
             float: left;
         }
 
@@ -76,7 +76,7 @@
     .k-multiselect-wrap {
         [dir="rtl"] > &,
         .k-rtl & {
-            padding-left: calc( #{ $picker-select-size } );
+            padding-left: $picker-select-calc-size;
             padding-right: 0;
 
             &::before,

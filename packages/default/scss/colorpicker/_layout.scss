@@ -37,7 +37,7 @@
             padding: $button-padding-y;
             width: button-inner-size();
             height: button-inner-size();
-            border-width: 0 $picker-select-border-width 0 0;
+            border-width: 0 $colorpicker-select-border-width 0 0;
             border-style: solid;
             border-color: inherit;
             box-sizing: border-box;
@@ -99,8 +99,9 @@
                 @include border-right-radius-only();
                 padding: $picker-select-padding-y $picker-select-padding-x;
                 border-width: 0;
-                box-sizing: border-box;
                 border-style: solid;
+                border-color: inherit;
+                box-sizing: border-box;
                 display: flex;
                 align-items: center;
                 justify-content: center;
