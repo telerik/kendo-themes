@@ -876,11 +876,11 @@ $grid-sticky-text: $grid-text !default;
 $grid-sticky-bg: $grid-bg !default;
 $grid-sticky-border: $grid-header-border !default;
 
-$grid-sticky-selected-bg: #f5f5f5 !default;
-$grid-sticky-selected-alt-bg: null !default;
+$grid-sticky-selected-bg: mix( $grid-bg, contrast-wcag( $grid-bg ), 96% ) !default;
+$grid-sticky-selected-alt-bg: mix( $grid-bg, contrast-wcag( $grid-bg ), 96% ) !default;
 
-$grid-sticky-hovered-bg: #ededed !default;
-$grid-sticky-selected-hovered-bg: #ededed !default;
+$grid-sticky-hovered-bg: mix( mix( $grid-bg, contrast-wcag( $grid-bg ), 90% ), $grid-bg, 75% ) !default;
+$grid-sticky-selected-hovered-bg: mix( mix( $grid-bg, contrast-wcag( $grid-bg ), 93% ), mix( $grid-bg, contrast-wcag( $grid-bg ), 96% ), 75% ) !default;
 
 
 // Treeview
