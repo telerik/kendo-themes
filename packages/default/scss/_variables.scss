@@ -336,7 +336,6 @@ $flat-button-selected-opacity: .2 !default;
 
 
 // Input
-
 $input-default-width: 12.4em !default;
 
 $input-border-width: 1px !default;
@@ -385,8 +384,43 @@ $input-focused-border: $input-hovered-border !default;
 $input-focused-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
 
-// Picker
+// Badge
+$badge-font-size: 75% !default;
+$badge-line-height: 1 !default;
 
+$badge-padding: $padding-y !default;
+$badge-border-width: 1px !default;
+
+$badge-size: calc( #{$badge-line-height} * 1em + 2 * #{$badge-padding} +  2 * #{$badge-border-width} ) !default;
+$badge-overlay-x: calc( #{$badge-size} / 2) !default;
+$badge-overlay-y: $badge-overlay-x !default;
+
+$badge-secondary-bg: darken($base-bg, 4%) !default;
+$badge-secondary-text:  $base-text !default;
+$badge-secondary-border: $badge-secondary-bg !default;
+
+$badge-primary-bg: $accent !default;
+$badge-primary-text: $accent-contrast !default;
+$badge-primary-border: $badge-primary-bg !default;
+
+$badge-info-bg: $info !default;
+$badge-info-text: contrast-wcag( $badge-info-bg ) !default;
+$badge-info-border: $badge-info-bg !default;
+
+$badge-success-bg: $success !default;
+$badge-success-text: contrast-wcag( $badge-success-bg ) !default;
+$badge-success-border: $badge-success-bg !default;
+
+$badge-warning-bg: $warning !default;
+$badge-warning-text: contrast-wcag( $badge-warning-bg ) !default;
+$badge-warning-border: $badge-warning-bg !default;
+
+$badge-error-bg: $error !default;
+$badge-error-text: contrast-wcag( $badge-error-bg ) !default;
+$badge-error-border: $badge-error-bg !default;
+
+
+// Picker
 $picker-select-border-width: 0 !default;
 
 $picker-select-padding-x: $input-padding-y !default;
@@ -406,7 +440,6 @@ $picker-icon-offset: calc( #{$picker-select-calc-size} + #{$picker-select-border
 
 
 // Popup
-
 $popup-padding-x: 0 !default;
 $popup-padding-y: 0 !default;
 

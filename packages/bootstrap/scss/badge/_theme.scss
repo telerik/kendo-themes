@@ -1,1 +1,12 @@
-@import "~@progress/kendo-theme-default/scss/badge/_layout.scss";
+@import "~@progress/kendo-theme-default/scss/badge/_theme.scss";
+
+@include exports("badge/theme/bootstrap") {
+
+    .k-badge-outline {
+
+        &.k-badge-secondary {
+            color: $gray-600;
+        }
+    }
+
+}
