@@ -1,32 +1,73 @@
 @include exports( "badge/layout" ) {
 
-    // Badge
     .k-badge {
         @include border-radius();
-        padding: 0 $padding-x-sm;
+        padding: $badge-padding;
+        border-width: $badge-border-width;
+        border-style: solid;
         box-sizing: border-box;
-        font-size: $font-size-xs;
-        line-height: $line-height-lg;
+        font-size: $badge-font-size;
+        line-height: $badge-line-height;
+        display: inline-block;
         text-align: center;
         white-space: nowrap;
-        display: inline-block;
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
-
-    // Badge in button
-    .k-button .k-badge {
-        margin-left: $padding-x-sm;
-        position: relative;
-        z-index: 5;
+    .k-badge > * {
+        color: inherit;
     }
 
+    .k-badge.k-badge-pill {
+        min-width: $badge-size;
+        min-height: $badge-size;
+        border-radius: 5rem;
+    }
 
-    // RTL
-    .k-rtl .k-badge {
-        right: auto;
-        left: -.5em * $line-height-lg;
+    .k-badge.k-badge-pill:empty {
+        min-width: auto;
+        min-height: auto;
+    }
+
+    a.k-badge,
+    .k-badge > a {
+        text-decoration: none;
+    }
+
+    a.k-badge:hover,
+    .k-badge > a:hover {
+        text-decoration: underline;
+    }
+
+    .k-badge-overlay {
+        position: relative;
+    }
+
+    .k-badge-overlay .k-badge {
+        position: absolute;
+        top: $badge-overlay-y;
+        right: $badge-overlay-x;
+        z-index: 9999;
+        transform: translate(100%, -100%);
+
+        &:empty {
+            top: calc( #{$badge-padding} + #{$badge-border-width} );
+            right: calc( #{$badge-padding} + #{$badge-border-width} );
+        }
+
+        // RTL
+        .k-rtl &,
+        &[dir="rtl"],
+        [dir="rtl"] & {
+            right: auto;
+            left: $badge-overlay-x;
+            transform: translate(-100%, -100%);
+
+            &:empty {
+                left: calc( #{$badge-padding} + #{$badge-border-width} );
+            }
+        }
     }
 
 }

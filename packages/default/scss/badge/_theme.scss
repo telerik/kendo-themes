@@ -1,9 +1,107 @@
 @include exports( "badge/theme" ) {
 
-    // Badge
     .k-badge {
-        color: $accent-contrast;
-        background-color: $accent;
+
+        &.k-badge-secondary {
+            @include fill(
+                $badge-secondary-text,
+                $badge-secondary-bg,
+                $badge-secondary-border
+            );
+        }
+
+        &.k-badge-primary {
+            @include fill(
+                $badge-primary-text,
+                $badge-primary-bg,
+                $badge-primary-border
+            );
+        }
+
+        &.k-badge-info {
+            @include fill(
+                $badge-info-text,
+                $badge-info-bg,
+                $badge-info-border
+            );
+        }
+
+        &.k-badge-success {
+            @include fill(
+                $badge-success-text,
+                $badge-success-bg,
+                $badge-success-border
+            );
+        }
+
+        &.k-badge-warning {
+            @include fill(
+                $badge-warning-text,
+                $badge-warning-bg,
+                $badge-warning-border
+            );
+        }
+
+        &.k-badge-error {
+            @include fill(
+                $badge-error-text,
+                $badge-error-bg,
+                $badge-error-border
+            );
+        }
+
+    }
+
+    .k-badge-outline {
+
+        &.k-badge-secondary {
+            @include fill(
+                $badge-secondary-text,
+                $bg-color,
+                currentColor
+            );
+        }
+
+        &.k-badge-primary {
+            @include fill(
+                $badge-primary-bg,
+                $bg-color,
+                currentColor
+            );
+        }
+
+        &.k-badge-info {
+            @include fill(
+                $badge-info-bg,
+                $bg-color,
+                currentColor
+            );
+        }
+
+        &.k-badge-success {
+            @include fill(
+                $badge-success-bg,
+                $bg-color,
+                currentColor
+            );
+        }
+
+        &.k-badge-warning {
+            @include fill(
+                $badge-warning-bg,
+                $bg-color,
+                currentColor
+            );
+        }
+
+        &.k-badge-error {
+            @include fill(
+                $badge-error-bg,
+                $bg-color,
+                currentColor
+            );
+        }
+
     }
 
 }
