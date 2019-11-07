@@ -55,6 +55,10 @@
                     border-right-color: $grid-border;
                 }
             }
+
+            thead.k-grid-header > tr:not(:only-child) > th {
+                border-right-color: $grid-border;
+            }
         }
     }
 
@@ -101,6 +105,10 @@
                 $grid-sticky-border
             );
         }
+    }
+
+    thead.k-grid-header> tr:not(:only-child)>th {
+        border-left-color: $grid-border;
     }
 
     // Content
