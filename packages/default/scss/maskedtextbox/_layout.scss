@@ -1,5 +1,15 @@
 @include exports("maskedtextbox/layout") {
     .k-maskedtextbox {
+        width: $input-default-width;
+        font-size: $input-font-size;
+        line-height: $input-line-height;
+        text-align: left;
+        white-space: nowrap;
+        border-width: 0;
+        display: inline-flex;
+        vertical-align: middle;
+        position: relative;
+
         .k-i-warning {
             display: none;
             position: absolute;
@@ -8,18 +18,30 @@
             right: $padding-x;
         }
 
-        .k-rtl &,
-        &[dir="rtl"] {
+        &.k-state-invalid {
+            transition: none;
+
+            .k-i-warning {
+                display: inline-block;
+            }
+        }
+
+        &[dir="rtl"],
+        .k-rtl & {
+            text-align: right;
+
+            .k-select {
+                @include border-left-radius-only();
+            }
+
             .k-i-warning {
                 right: auto;
                 left: $padding-x;
             }
         }
 
-        &.k-state-invalid {
-            .k-i-warning {
-                display: inline-block;
-            }
+        ::-ms-clear {
+            display: none;
         }
     }
 }

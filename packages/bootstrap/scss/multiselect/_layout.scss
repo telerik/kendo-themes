@@ -1,1 +1,14 @@
 @import "~@progress/kendo-theme-default/scss/multiselect/_layout.scss";
+
+@include exports("multiselect/layout/bootstrap") {
+    .k-multiselect {
+        .k-multiselect-wrap {
+            transition: $transition;
+
+            .k-button {
+                min-height: calc( #{$form-line-height * 1em} + #{$button-padding-y-sm} + 2px + 2px );
+                padding: calc( #{$button-padding-y-sm / 2} + 1px ) ($button-padding-x / 2);
+            }
+        }
+    }
+}
