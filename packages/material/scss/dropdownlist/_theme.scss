@@ -1,6 +1,11 @@
 @include exports( "dropdownlist/theme" ) {
     .k-dropdown {
+        background-color: transparent;
+
         .k-dropdown-wrap {
+            border-color: $input-border;
+            background-color: transparent;
+
             @include fill(
                 $dropdownlist-text,
                 $dropdownlist-bg,

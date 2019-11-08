@@ -1,1 +1,102 @@
 @import "~@progress/kendo-theme-default/scss/datetime/_layout.scss";
+
+@include exports("datetime/layout/material") {
+    // Common
+    .k-dateinput,
+    .k-datepicker,
+    .k-datetimepicker,
+    .k-timepicker {
+
+        // Wrappers
+        .k-dateinput-wrap,
+        .k-picker-wrap {
+            border-width: 0 0 $input-border-width;
+            position: relative;
+
+            .k-select {
+                border-width: 0;
+                font-size: $font-size;
+            }
+
+            // Disabled
+            .k-state-disabled > &,
+            &.k-state-disabled {
+                border-bottom-style: dashed;
+            }
+        }
+
+        .k-picker-wrap {
+            > .k-dateinput {
+                width: 100%;
+            }
+
+            .k-dateinput-wrap {
+                border: 0;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .k-datepicker,
+    .k-datetimepicker,
+    .k-timepicker {
+        .k-select {
+            width: auto;
+        }
+    }
+
+    .k-datepicker,
+    .k-timepicker {
+        .k-picker-wrap {
+            .k-select {
+                padding: $picker-select-padding-y $picker-select-padding-x;
+            }
+        }
+    }
+
+    .k-timeselector,
+    .k-datetime-wrap {
+        .k-time-header {
+            padding: $padding-x-sm calc( #{$padding-x} + 2px );
+
+            .k-title {
+                font-weight: bold;
+            }
+
+            .k-time-now {
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding: 0;
+                min-width: auto;
+            }
+
+            .k-time-list-wrapper {
+                .k-title {
+                    text-transform: uppercase;
+                    z-index: 99;
+                }
+
+                &.k-state-focused {
+                    &::before,
+                    &::after {
+                        border-width: 0;
+                    }
+                }
+            }
+
+            .k-time-list-container {
+                .k-time-separator {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .k-datetimepicker {
+        .k-link {
+            width: auto;
+            padding: $picker-select-padding-y $picker-select-padding-x;
+        }
+    }
+}

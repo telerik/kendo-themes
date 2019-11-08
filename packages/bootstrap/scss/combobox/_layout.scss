@@ -1,1 +1,21 @@
 @import "~@progress/kendo-theme-default/scss/combobox/_layout.scss";
+
+@include exports("combobox/layout/bootstrap") {
+    .k-combobox {
+        .k-dropdown-wrap {
+            transition: $transition;
+
+            .k-select {
+                transition: $transition;
+            }
+        }
+
+        &[dir="rtl"],
+        .k-rtl & {
+            .k-select {
+                @include border-radius( $border-radius 0 0 $border-radius );
+                border-width: 0 1px 0 0;
+            }
+        }
+    }
+}

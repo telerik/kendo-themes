@@ -1,6 +1,7 @@
 @include exports( "dropdownlist/theme" ) {
 
     .k-dropdown {
+        background-color: transparent;
 
         .k-dropdown-wrap {
             @include fill(
@@ -10,11 +11,6 @@
                 $dropdownlist-gradient
             );
             @include use-background-clip();
-
-            .k-select {
-                padding: 0;
-                width: button-inner-size();
-            }
 
             &:hover,
             &.k-state-hover {
