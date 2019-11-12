@@ -274,6 +274,14 @@
                     right: auto;
                     left: $grid-header-menu-icon-spacing;
                 }
+                
+                // Column Menu in header template is positioned inline.
+                .k-link .k-grid-filter {
+                    position: initial;
+                    display: inline-block;
+                    margin: -4px 0;
+                    padding: 4px 8px;
+                }
             }
 
             .k-filtercell-operator {
