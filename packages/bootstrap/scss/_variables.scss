@@ -1854,6 +1854,32 @@ $upload-error-border: lighten($error, 29%) !default;
 $upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 
+// Breadcrumb
+$breadcrumb-padding-x: $padding-x-lg / 2 !default;
+
+$breadcrumb-container-padding-x: 0 !default;
+$breadcrumb-container-padding-y: 0 !default;
+
+$breadcrumb-container-margin-x: 0 !default;
+$breadcrumb-container-margin-y: 0 !default;
+
+$breadcrumb-icon-font-size: $icon-size * .75 !default;
+$breadcrumb-icon-padding-x: $button-padding-y !default;
+$breadcrumb-icon-padding-y: 0 !default;
+
+$breadcrumb-link-text: $link-text !default;
+$breadcrumb-link-bg: null !default;
+$breadcrumb-link-border: null !default;
+
+$breadcrumb-link-hovered-text: $link-hover-text !default;
+$breadcrumb-link-hovered-bg: null !default;
+$breadcrumb-link-hovered-border: null !default;
+
+$breadcrumb-link-focused-text: $link-text !default;
+$breadcrumb-link-focused-bg: null !default;
+$breadcrumb-link-focused-border: null !default;
+
+
 // Config maps
 $typography-config: () !default;
 // sass-lint:disable indentation

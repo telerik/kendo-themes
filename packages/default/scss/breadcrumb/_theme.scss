@@ -1,0 +1,45 @@
+@include exports( "breadcrumb/theme" ) {
+
+    // Breadcrumb
+    .k-breadcrumb {
+
+        .k-breadcrumb-item {
+            .k-link {
+                @include fill(
+                    $breadcrumb-link-text,
+                    $breadcrumb-link-bg,
+                    $breadcrumb-link-border
+                );
+                transition: $transition;
+
+                // Hovered state
+                &:hover,
+                &.k-state-hover {
+                    @extend %text-underline;
+                    @include fill(
+                        $breadcrumb-link-hovered-text,
+                        $breadcrumb-link-hovered-bg,
+                        $breadcrumb-link-hovered-border
+                    );
+                }
+
+                // Focused state
+                &:focus,
+                &.k-state-focused {
+                    @extend %text-underline;
+                    @include fill(
+                        $breadcrumb-link-focused-text,
+                        $breadcrumb-link-focused-bg,
+                        $breadcrumb-link-focused-border
+                    );
+                }
+            }
+
+            .k-breadcrumb-icon {
+                color: inherit;
+            }
+        }
+
+    }
+
+}
