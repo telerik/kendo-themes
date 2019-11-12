@@ -55,10 +55,6 @@
                     border-right-color: $grid-border;
                 }
             }
-
-            thead.k-grid-header > tr:not(:only-child) > th {
-                border-right-color: $grid-border;
-            }
         }
     }
 

@@ -61,6 +61,18 @@
             top: 0;
             left: 0;
         }
+
+        thead.k-grid-header {
+            padding-right: 0;
+        }
+
+        &[dir = "rtl"],
+        .k-rtl & {
+            thead.k-grid-header {
+                padding-left: 0;
+            }
+        }
+
     }
 
     .k-drag-separator {
