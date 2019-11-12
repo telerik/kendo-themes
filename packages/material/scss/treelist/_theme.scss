@@ -9,5 +9,9 @@
         .k-grid-header tr:hover {
             background-color: inherit;
         }
+
+        thead.k-grid-header > tr:not(:only-child) > th {
+            border-right-color: $grid-border;
+        }
     }
 }
