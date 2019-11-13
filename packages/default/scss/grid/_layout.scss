@@ -142,7 +142,7 @@
         .k-grouping-row .k-group-cell,
         .k-grouping-row + tr .k-group-cell {
             border-top-width: 0;
-            text-overflow: none;
+            text-overflow: clip;
         }
 
         .k-grouping-row .k-icon {
@@ -273,6 +273,14 @@
                 .k-header-column-menu {
                     right: auto;
                     left: $grid-header-menu-icon-spacing;
+                }
+
+                // Column Menu in header template is positioned inline.
+                .k-link .k-grid-filter {
+                    position: initial;
+                    display: inline-block;
+                    margin: -4px 0;
+                    padding: 4px 8px;
                 }
             }
 
@@ -646,6 +654,10 @@
                 margin-top: calc( (#{ button-size() } - #{ $form-line-height * 1em}) / -2);
                 margin-bottom: calc( (#{ button-size() } - #{ $form-line-height * 1em}) / -2);
                 margin-right: calc( -1 * #{ button-size() });
+            }
+
+            &:hover {
+                cursor: pointer;
             }
         }
 

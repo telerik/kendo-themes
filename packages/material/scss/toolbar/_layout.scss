@@ -80,6 +80,23 @@
             }
         }
 
+        .k-combobox,
+        .k-dropdown {
+            .k-dropdown-wrap {
+                border-width: 0;
+
+                .k-input {
+                    padding: $toolbar-button-padding-y $toolbar-button-padding-x;
+                    height: $toolbar-inner-calc-size;
+                }
+
+                .k-select {
+                    padding: $button-padding-x-sm;
+                    opacity: $icon-opacity;
+                }
+            }
+        }
+
         .k-colorpicker {
             .k-picker-wrap {
                 border-width: 0;
@@ -108,6 +125,11 @@
                     margin: 0 0 12px;
                 }
             }
+        }
+
+        // Switch
+        .k-switch {
+            font-size: $font-size-xs;
         }
     }
 

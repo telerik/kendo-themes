@@ -1,7 +1,6 @@
 @import "~@progress/kendo-theme-default/scss/slider/_theme.scss";
 
 @include exports("slider/theme/material") {
-    $draghandle-focus-shadow: 0 0 0 11px rgba($accent, .25) !default;
 
     .k-slider {
         cursor: pointer;
@@ -12,7 +11,7 @@
         }
 
         .k-tick::after {
-            background: $base-text;
+            @include fill( $bg: $base-text );
         }
 
         .k-button {
@@ -28,7 +27,7 @@
             box-sizing: border-box;
 
             &:focus {
-                box-shadow: $draghandle-focus-shadow;
+                @include box-shadow( $slider-draghandle-focused-shadow );
             }
         }
 
@@ -38,7 +37,7 @@
             .k-slider-track,
             .k-slider-selection,
             .k-draghandle {
-                background-color: $slider-disabled-bg;
+                @include fill( $bg: $slider-track-bg );
             }
 
             .k-draghandle {

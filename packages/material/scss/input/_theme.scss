@@ -3,29 +3,33 @@
     .k-textbox,
     .k-textarea,
     .k-input.k-textbox {
-        background-color: transparent;
+        @include fill(
+            $bg: transparent,
+            $border: $input-border
+        );
         border-width: 0 0 $input-border-width;
-        border-color: $input-border;
         border-radius: 0;
-        box-shadow: none;
+        @include box-shadow( none );
         font-size: $font-size-lg;
 
         // Hovered
         &:hover,
         &.k-state-hover {
-            border-color: $input-hovered-border;
+            @include fill( $border: $input-hovered-border );
         }
 
         // Focused
         &:focus,
         &.k-state-focus  {
-            border-color: $input-focused-border;
+            @include fill( $border: $input-focused-border );
         }
 
         // Selection
         &::selection {
-            background-color: $accent;
-            color: $accent-contrast;
+            @include fill(
+                $color: $accent-contrast,
+                $bg: $accent
+            );
         }
 
         // Invalid
@@ -33,7 +37,7 @@
         &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            border-color: $error;
+            @include fill( $border: $error );
         }
 
         &:disabled {
@@ -47,7 +51,7 @@
     // Textarea
     .k-textarea {
         border-width: $input-border-width;
-        border-color: $border-color;
+        @include fill( $border: $border-color );
         border-radius: $border-radius;
     }
 
@@ -56,22 +60,31 @@
         vertical-align: baseline;
 
         > .k-label {
-            color: $floating-label-text;
+            @include fill( $color: $floating-label-text );
         }
 
         &.k-state-focused > .k-label {
-            color: $floating-label-focused-text;
-            background-color: $floating-label-focused-bg;
+            @include fill( $color: $floating-label-focused-text );
         }
 
         .ng-invalid.ng-touched + .k-label,
         .ng-invalid.ng-dirty + .k-label {
-            color: $error;
+            @include fill( $color: $error );
         }
     }
 
-    .k-textarea-wrapper .k-textarea:focus {
-        border-color: $accent;
+    .k-textarea-wrapper {
+        &:not(.k-state-empty) {
+            > .k-label {
+                @include fill( $bg: $floating-label-focused-bg );
+            }
+        }
+
+        .k-textarea {
+            &:focus {
+                @include fill( $border: $accent );
+            }
+        }
     }
 }
 

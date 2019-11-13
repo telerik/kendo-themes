@@ -11,7 +11,16 @@
                 $combobox-border
             );
             @include use-background-clip();
-            cursor: initial;
+
+            // Invalid
+            &.k-invalid,
+            &.k-invalid:hover,
+            &.k-state-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+                color: $error;
+                border-color: $invalid-border;
+            }
         }
 
         .k-select {
@@ -21,9 +30,6 @@
                 $combobox-select-border,
                 $combobox-select-gradient
             );
-            padding: 0;
-            width: button-inner-size();
-            border-width: 0;
         }
 
         // Hovered state

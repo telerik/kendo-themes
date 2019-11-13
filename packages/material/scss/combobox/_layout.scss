@@ -1,1 +1,26 @@
 @import "~@progress/kendo-theme-default/scss/combobox/_layout.scss";
+
+@include exports( "combobox/layout/material" ) {
+    .k-combobox {
+        .k-dropdown-wrap {
+            border-width: 0 0 $input-border-width;
+            position: relative;
+
+            .k-select {
+                border-width: 0;
+                font-size: $font-size;
+            }
+
+            // Disabled
+            &.k-state-disabled {
+                border-bottom-style: dashed;
+            }
+        }
+
+        &.k-state-disabled {
+            > .k-multiselect-wrap {
+                border-bottom-style: dashed;
+            }
+        }
+    }
+}

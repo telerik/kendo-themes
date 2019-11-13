@@ -7,15 +7,7 @@ $forms-invalid-color: inherit !default;
         @include input-ripple();
     }
 
-    .k-picker-wrap .k-dateinput-wrap {
-        border: 0;
-    }
-
-    .k-dateinput-wrap,
-    .k-dropdown-wrap,
-    .k-picker-wrap,
-    .k-multiselect-wrap,
-    .k-numeric-wrap {
+    .k-dropdown-wrap {
         border-width: 0 0 $input-border-width;
         border-color: $input-border;
         background-color: transparent;
@@ -62,13 +54,5 @@ $forms-invalid-color: inherit !default;
     .k-state-border-up > .k-select .k-i-arrow-60-down,
     .k-state-border-down > .k-select .k-i-arrow-60-down {
         transform: rotate(180deg);
-    }
-
-    .k-picker-wrap > .k-dateinput {
-        width: 100%;
-    }
-
-    .k-picker-wrap .k-dateinput-wrap {
-        box-shadow: none;
     }
 }

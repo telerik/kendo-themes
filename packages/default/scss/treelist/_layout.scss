@@ -52,6 +52,11 @@
             z-index: 1;
         }
 
+        .k-grid-header th.k-grid-header-sticky {
+            z-index: 3;
+        }
+
+
         .k-grid-toolbar {
             top: 0;
             left: 0;
