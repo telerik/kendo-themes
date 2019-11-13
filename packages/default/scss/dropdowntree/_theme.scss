@@ -12,11 +12,6 @@
             );
             @include use-background-clip();
 
-            .k-select {
-                padding: 0;
-                width: button-inner-size();
-            }
-
             &:hover,
             &.k-state-hover {
                 @include fill(
@@ -33,6 +28,31 @@
                 @include box-shadow( $dropdowntree-focused-shadow );
             }
         }
+    }
 
+    .k-dropdown-wrap,
+    .k-multiselect-wrap {
+        .k-input {
+            @include fill(
+                $color: inherit,
+                $bg: none
+            );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.k-invalid:hover,
+        &.k-state-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty,
+        .k-state-invalid > &,
+        .k-state-invalid > &:hover,
+        .ng-invalid.ng-touched &,
+        .ng-invalid.ng-dirty & {
+            @include fill (
+                $color: $dropdowntree-invalid-text,
+                $border: $dropdowntree-invalid-border
+            )
+        }
     }
 }

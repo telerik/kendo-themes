@@ -4,3 +4,17 @@ $dropdowntree-filter-shadow: none !default;
 $dropdowntree-filter-spacer: 0 !default;
 
 @import "~@progress/kendo-theme-default/scss/dropdowntree/_layout.scss";
+
+.k-dropdowntree {
+    .k-dropdown-wrap,
+    .k-multiselect-wrap {
+        border-width: 0 0 1px;
+    }
+
+    .k-dropdown-wrap {
+        .k-select {
+            padding: $picker-select-padding-y $picker-select-padding-x;
+            width: unset;
+        }
+    }
+}

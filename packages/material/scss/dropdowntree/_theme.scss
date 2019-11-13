@@ -4,4 +4,25 @@
         background-color: transparent;
     }
 
+    .k-dropdown-wrap,
+        .k-multiselect-wrap {
+            .k-input {
+                @include fill(
+                    $color: inherit,
+                    $bg: none
+                );
+            }
+
+            // Invalid
+            &.k-invalid,
+            &.k-invalid:hover,
+            &.k-state-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+                @include fill (
+                    $color: $dropdowntree-invalid-text,
+                    $border: $dropdowntree-invalid-border
+                )
+            }
+        }
 }
