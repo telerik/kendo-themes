@@ -6,11 +6,36 @@
 
     .k-dropdown-wrap,
     .k-multiselect-wrap {
+        border-color: $input-border;
+        background-color: transparent;
+
         .k-input {
-            @include fill(
-                $color: inherit,
-                $bg: none
-            );
+            color: inherit;
+            background: none;
+        }
+
+        .k-select {
+            opacity: $icon-opacity;
+        }
+
+        // Hover
+        &:hover,
+        &.k-state-hover {
+            border-color: $input-hovered-border;
+
+            .k-select {
+                opacity: $icon-hovered-opacity;
+            }
+        }
+
+        // Focused
+        &.k-state-focused,
+        .k-state-focused > & {
+            border-color: $input-focused-border;
+
+            .k-select {
+                opacity: $icon-focused-opacity;
+            }
         }
 
         // Invalid

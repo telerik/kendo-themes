@@ -8,7 +8,19 @@ $dropdowntree-filter-spacer: 0 !default;
 .k-dropdowntree {
     .k-dropdown-wrap,
     .k-multiselect-wrap {
-        border-width: 0 0 1px;
+        border-width: 0 0 $input-border-width;
+        position: relative;
+
+        .k-select {
+            border-width: 0;
+            font-size: $font-size;
+        }
+
+        // Disabled
+        .k-state-disabled > &,
+        &.k-state-disabled {
+            border-bottom-style: dashed;
+        }
     }
 
     .k-dropdown-wrap {
