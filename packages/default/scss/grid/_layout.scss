@@ -512,7 +512,7 @@
             width: $grid-group-dropclue-line-size;
             height: calc(100% - #{$grid-group-dropclue-size});
             top: $grid-group-dropclue-size;
-            left: calc( #{$grid-group-dropclue-size} - (#{$grid-group-dropclue-line-size} / 2) );
+            left: calc( #{$grid-group-dropclue-size} - #{$grid-group-dropclue-line-size / 2} );
         }
     }
 
