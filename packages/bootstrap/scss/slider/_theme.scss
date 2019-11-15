@@ -7,7 +7,7 @@
         .k-button {
             &:active,
             &.k-state-active {
-                box-shadow: $button-focused-shadow;
+                @include box-shadow( $slider-button-focused-shadow );
             }
         }
     }

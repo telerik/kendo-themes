@@ -33,6 +33,27 @@
                 @extend .k-button-overlay;
             }
         }
+
+        .k-dropdown {
+            .k-dropdown-wrap {
+                border-width: 0;
+
+                .k-input {
+                    padding: $toolbar-button-padding-y $toolbar-button-padding-x;
+                    height: $toolbar-inner-calc-size;
+                }
+
+                .k-select {
+                    padding: $button-padding-x-sm;
+                    opacity: $icon-opacity;
+                }
+
+                &::before {
+                    @extend .k-button-overlay;
+                }
+            }
+        }
+
         .k-colorpicker .k-selected-color {
             margin-top: $toolbar-button-padding-y;
             margin-bottom: $toolbar-button-padding-y;

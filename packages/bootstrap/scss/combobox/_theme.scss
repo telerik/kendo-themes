@@ -10,8 +10,8 @@
                 $combobox-bg,
                 $combobox-border
             );
-            transition: $transition;
         }
+
         .k-select {
             @include fill(
                 $combobox-select-text,
@@ -19,7 +19,6 @@
                 $combobox-select-border,
                 $combobox-select-gradient
             );
-            transition: $transition;
         }
 
         // Hovered state
@@ -68,14 +67,6 @@
                     $combobox-select-focused-gradient
                 );
                 @include box-shadow($combobox-select-focused-shadow);
-            }
-        }
-
-        &[dir="rtl"],
-        .k-rtl & {
-            .k-select {
-                @include border-radius( $border-radius 0 0 $border-radius );
-                border-width: 0 1px 0 0;
             }
         }
     }

@@ -693,6 +693,14 @@
         min-width: 200px;
     }
 
+    // Standalone column menu
+    .k-grid-column-menu-standalone a.k-grid-filter {
+        position: initial;
+        display: inline-block;
+        margin: -4px 0;
+        padding: 4px 8px;
+    }
+
     .k-grid-columnmenu-popup {
         width: 230px;
     }

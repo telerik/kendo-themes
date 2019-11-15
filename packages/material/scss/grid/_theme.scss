@@ -93,8 +93,13 @@
             border-left-color: $grid-border;
         }
 
-        .k-grid-header-sticky {
-            @include fill($grid-sticky-text, $grid-sticky-bg, $grid-sticky-border);
+        .k-grid-header-sticky,
+        .k-grid-header-sticky.k-sorted {
+            @include fill(
+                $grid-sticky-text,
+                $grid-sticky-bg,
+                $grid-sticky-border
+            );
         }
     }
 
@@ -105,7 +110,29 @@
     // Content
     .k-master-row {
         .k-grid-content-sticky {
-            @include fill($grid-sticky-text, $grid-sticky-bg, $grid-sticky-border);
+            @include fill(
+                $grid-sticky-text,
+                $grid-sticky-bg,
+                $grid-sticky-border
+            );
+        }
+
+
+        // Selected state
+        &.k-state-selected .k-grid-content-sticky {
+            @include fill( $bg: $grid-sticky-selected-bg );
+        }
+
+
+        // Hovered state
+        &:hover .k-grid-content-sticky {
+            background-color: $grid-sticky-hovered-bg;
+        }
+
+
+        // Selected hover
+        &.k-state-selected:hover .k-grid-content-sticky {
+            background-color: $grid-sticky-selected-hovered-bg;
         }
     }
 
