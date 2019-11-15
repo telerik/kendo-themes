@@ -200,7 +200,7 @@
 
             .k-file-name-size-wrapper {
                 margin-left: calc( #{$upload-item-image-width} + #{$spacer-x} );
-                margin-right: calc( #{$icon-size}*2 + 3.5em );
+                margin-right: calc( #{$icon-size * 2} + 3.5em );
                 min-height: $upload-item-image-height + ($upload-item-image-border * 2);
                 display: block;
                 overflow: hidden;
