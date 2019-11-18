@@ -3,6 +3,11 @@
     // Breadcrumb
     .k-breadcrumb {
 
+        &:focus,
+        &.k-state-focused {
+            box-shadow: $breadcrumb-focused-shadow;
+        }
+
         .k-breadcrumb-item {
             .k-link {
                 @include fill(
