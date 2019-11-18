@@ -47,8 +47,10 @@
 
 
     // Indeterminate state
-    .k-checkbox:indeterminate::before {
+    .k-checkbox:indeterminate::before,
+    .k-checkbox.k-checkbox-indeterminate::before {
         content: "";
+        position: initial;
         transform: scale(1);
 
         @if $checkbox-indeterminate-style == "dash" {
@@ -236,6 +238,11 @@
             height: $checkbox-size / 2;
             top: $checkbox-size / 4;
             left: $checkbox-size / 4;
+        }
+
+        .k-rtl &,
+        [dir="rtl"] &  {
+            right: $checkbox-size / 4;
         }
     }
 

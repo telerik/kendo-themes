@@ -23,7 +23,16 @@
         .k-radio-legacy-label {
             margin-bottom: 20px;
         }
+
+
     </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll('.k-checkbox-indeterminate');
+        elements.forEach(el => el.indeterminate = true);
+    });
+</script>
 </head>
 <body>
 
@@ -46,6 +55,12 @@
             <br />
             <input type="checkbox" id="ch4" class="k-checkbox" disabled /><!--
             --><label class="k-checkbox-label" for="ch4">Disabled</label>
+            <br />
+            <input type="checkbox" id="ch4" class="k-checkbox k-checkbox-indeterminate" /><!--
+            --><label class="k-checkbox-label" for="ch4">Indeterminate</label>
+            <br />
+            <input type="checkbox" id="ch4" class="k-checkbox k-checkbox-indeterminate" disabled /><!--
+            --><label class="k-checkbox-label" for="ch4">Indeterminate Disabled</label>
         </section>
 
         <section>
@@ -107,6 +122,12 @@
             <br />
             <input type="checkbox" id="ch4-legacy" class="k-checkbox-legacy" disabled />
             <label class="k-checkbox-legacy-label" for="ch4-legacy">Disabled</label>
+            <br />
+            <input type="checkbox" id="ch4" class="k-checkbox-legacy k-checkbox-indeterminate" />
+            <label class="k-checkbox-legacy-label" for="ch4">Indeterminate</label>
+            <br />
+            <input type="checkbox" id="ch4" class="k-checkbox-legacy k-checkbox-indeterminate" disabled />
+            <label class="k-checkbox-legacy-label" for="ch4">Indeterminate Disabled</label>
         </section>
 
         <section>
