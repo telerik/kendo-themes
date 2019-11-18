@@ -1,0 +1,69 @@
+@include exports( "breadcrumb/layout" ) {
+
+    // Breadcrumb
+    .k-breadcrumb {
+        padding-right: $breadcrumb-padding-x;
+        border: 0;
+        display: flex;
+        flex-direction: row;
+
+        // Items
+        .k-breadcrumb-container {
+            margin: $breadcrumb-container-margin-y $breadcrumb-container-margin-x;
+            padding: $breadcrumb-container-padding-y $breadcrumb-container-padding-x;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            list-style: none;
+        }
+
+        .k-breadcrumb-item {
+            vertical-align: middle;
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .k-breadcrumb-item .k-link {
+            white-space: nowrap;
+        }
+
+        .k-breadcrumb-icon {
+            padding: $breadcrumb-icon-padding-y $breadcrumb-icon-padding-x;
+            font-size: $breadcrumb-icon-font-size;
+            opacity: $disabled-opacity;
+        }
+
+        .k-breadcrumb-overflow-icon {
+            padding: 0 0 0 $breadcrumb-icon-padding-x;
+        }
+        .k-breadcrumb-overflow-icon + .k-breadcrumb-overflow-icon {
+            padding: 0 $breadcrumb-icon-padding-x 0 0;
+        }
+
+        // Editing
+        .k-textbox {
+            width: 100%;
+        }
+    }
+
+    .k-ie9 {
+        .k-breadcrumb,
+        .k-breadcrumb-container {
+            display: block;
+        }
+
+        .k-breadcrumb-item {
+            display: inline-block;
+        }
+    }
+
+    // RTL
+    .k-rtl,
+    [dir="rtl"] {
+        .k-breadcrumb {
+            padding-right: 0;
+            padding-left: $breadcrumb-padding-x;
+        }
+    }
+
+}
