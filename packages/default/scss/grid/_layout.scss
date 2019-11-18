@@ -900,6 +900,13 @@
         font-size: inherit;
     }
 
+    .k-pager-input {
+        .k-numerictextbox {
+            margin: 0 $font-size / 2;
+            width: 3em;
+        }
+    }
+
     .k-grid-virtual .k-grid-content {
         .k-grid-table-wrap {
             float: left;
