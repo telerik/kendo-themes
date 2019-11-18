@@ -103,6 +103,10 @@
         }
     }
 
+    thead.k-grid-header> tr:not(:only-child)>th {
+        border-left-color: $grid-border;
+    }
+
     // Content
     .k-master-row {
         .k-grid-content-sticky {
