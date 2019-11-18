@@ -347,10 +347,10 @@ $chart-title-font-size: 1.143em !default;
             right: 0;
         }
         .k-treemap-title + .k-treemap-wrap {
-            top: calc( #{($padding-y-sm*2) + ($line-height*$font-size)} + 1px);
+            top: calc( #{$padding-y-sm * 2} + (#{$line-height} * #{$font-size}) + 1px);
         }
         .k-treemap-title-vertical + .k-treemap-wrap {
-            left: calc( #{($padding-y-sm*2) + ($line-height*$font-size)} + 1px);
+            left: calc( #{$padding-y-sm * 2} + (#{$line-height} * #{$font-size}) + 1px);
         }
 
 
