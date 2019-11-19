@@ -35,7 +35,7 @@
 
     // Indeterminate
     .k-checkbox:indeterminate,
-    .k-checkbox.k-checkbox-indeterminate {
+    .k-checkbox.k-state-indeterminate {
         @include fill(
             $bg: $checkbox-indeterminate-bg,
             $border: $checkbox-indeterminate-border
@@ -79,7 +79,7 @@
     }
     .k-checkbox:checked:disabled,
     .k-checkbox:indeterminate:disabled,
-    .k-checkbox.k-checkbox-indeterminate:disabled {
+    .k-checkbox.k-state-indeterminate:disabled {
         @include fill(
             $bg: $checkbox-disabled-checked-bg,
             $border: $checkbox-disabled-checked-border
@@ -90,6 +90,12 @@
         }
     }
 
+
+    // Invalid
+    .k-checkbox.k-invalid,
+    .k-checkbox.k-state-invalid {
+        @include fill( $border: $checkbox-invalid-border );
+    }
 }
 
 
@@ -133,7 +139,7 @@
 
         // Indeterminate
         .k-checkbox-legacy:indeterminate + &,
-        .k-checkbox-legacy.k-checkbox-indeterminate + & {
+        .k-checkbox-legacy.k-state-indeterminate + & {
             &::before {
                 @include fill(
                     $bg: $checkbox-indeterminate-bg,

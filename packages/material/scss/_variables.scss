@@ -722,6 +722,7 @@ $checkbox-dash-height: $checkbox-size / 10 !default;
 $checkbox-dash-width: $checkbox-size - ( $checkbox-border-width * 4 ) !default;
 $checkbox-dash-offset-x: $checkbox-border-width * 2 !default;
 $checkbox-dash-offset-y: ( $checkbox-size - $checkbox-dash-height ) / 2 !default;
+$checkbox-label-width: calc( 100% - #{$checkbox-size} - #{$icon-spacing}) !default;
 
 $checkbox-bg: null !default;
 $checkbox-text: transparent !default;
@@ -745,6 +746,9 @@ $checkbox-disabled-border: #b0b0b0 !default;
 $checkbox-disabled-checked-bg: $checkbox-disabled-border !default;
 $checkbox-disabled-checked-text: #ffffff !default;
 $checkbox-disabled-checked-border: $checkbox-disabled-checked-bg !default;
+$checkbox-invalid-bg: null !default;
+$checkbox-invalid-text: null !default;
+$checkbox-invalid-border: $checkbox-checked-bg !default;
 
 //Radio Buttons
 $radio-icon-size: 10px !default;

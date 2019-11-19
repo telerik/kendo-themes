@@ -14,7 +14,8 @@
         transform: scale(1);
     }
     .k-checkbox:checked::before,
-    .k-checkbox:indeterminate::before {
+    .k-checkbox:indeterminate::before,
+    .k-checkbox.k-state-indeterminate::before {
         max-width: $checkbox-icon-size;
         transform: scale(1);
     }

@@ -7,6 +7,7 @@
         padding: 0;
         width: $checkbox-size;
         height: $checkbox-size;
+        line-height: initial;
         border-width: $checkbox-border-width;
         border-style: solid;
         outline: 0;
@@ -14,7 +15,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        vertical-align: middle;
+        vertical-align: top;
         position: relative;
         -webkit-appearance: none;
     }
@@ -48,7 +49,7 @@
 
     // Indeterminate state
     .k-checkbox:indeterminate::before,
-    .k-checkbox.k-checkbox-indeterminate::before {
+    .k-checkbox.k-state-indeterminate::before {
         content: "";
         position: initial;
         transform: scale(1);
@@ -79,11 +80,12 @@
     .k-checkbox-label {
         margin: 0;
         padding: 0;
+        width: $checkbox-label-width;
         line-height: $checkbox-line-height;
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
-        vertical-align: middle;
+        vertical-align: top;
         position: relative;
         cursor: pointer;
 
