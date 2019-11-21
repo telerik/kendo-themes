@@ -266,14 +266,14 @@ $selected-hover-color: $selected-text !default;
 
 $transition: background-color .2s ease !default;
 
-/// The color for error messages and states.
-$error: #f31700 !default;
-/// The color for warning messages and states.
-$warning: #ffc000 !default;
+/// The color for informational messages and states.
+$info: #0058e9 !default;
 /// The color for success messages and states.
 $success: #37b400 !default;
-/// The color for informational messages and states.
-$info: #3f51b5 !default;
+/// The color for warning messages and states.
+$warning: #ffc000 !default;
+/// The color for error messages and states.
+$error: #f31700 !default;
 
 $invalid-border: rgba($error, .5) !default;
 
