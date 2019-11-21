@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.5.0"></a>
+# 3.5.0 (2019-11-21)
+
+
+### Bug Fixes
+
+* **colorpicker:** add numerictextbox as a dependency to colorpicker ([899fbd5](https://github.com/telerik/kendo-themes/commit/899fbd5))
+* **grid:** add locked column selected, hovered and selected hovered states variables ([fa99539](https://github.com/telerik/kendo-themes/commit/fa99539))
+* **grid:** locked column hovered and selected hovered state background ([89ee7a0](https://github.com/telerik/kendo-themes/commit/89ee7a0))
+* **grid:** selected locked columns contenthave background with opacity ([c82419f](https://github.com/telerik/kendo-themes/commit/c82419f))
+* **grid:** sorted locked column header does not have background color ([1d16df6](https://github.com/telerik/kendo-themes/commit/1d16df6))
+* **multiselect:** extract scss variables ([8ddbc6b](https://github.com/telerik/kendo-themes/commit/8ddbc6b))
+* add whitespace around operators in calc expressions ([02ee4b6](https://github.com/telerik/kendo-themes/commit/02ee4b6))
+* **numerictextbox:** extract scss variables ([1a6b0bc](https://github.com/telerik/kendo-themes/commit/1a6b0bc))
+* **toolbar:** switch has incorrect font size in toolbar ([235f2b8](https://github.com/telerik/kendo-themes/commit/235f2b8))
+* **treelist:** add left/right borders to multicolumn headers ([47492e4](https://github.com/telerik/kendo-themes/commit/47492e4))
+* floating label misalignment ([4a75180](https://github.com/telerik/kendo-themes/commit/4a75180))
+* **treelist:** extract treelist specific styles in treelist folder ([7d0be42](https://github.com/telerik/kendo-themes/commit/7d0be42))
+
+
+### Features
+
+* **breadcrumb:** add styles for breadcrumb component ([400fd43](https://github.com/telerik/kendo-themes/commit/400fd43))
+* **checkbox:** add invalid, indeterminate and long labels styles ([43ee6c8](https://github.com/telerik/kendo-themes/commit/43ee6c8))
+* **checkbox:** style native checkbox trough k-checkbox class ([066d5ca](https://github.com/telerik/kendo-themes/commit/066d5ca))
+* **radio:** style native radio through k-radio class ([f7d9906](https://github.com/telerik/kendo-themes/commit/f7d9906))
+
+
+
+
 <a name="3.4.0"></a>
 # [3.4.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.3.8...@progress/kendo-theme-material@3.4.0) (2019-10-25)
 
