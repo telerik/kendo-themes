@@ -217,6 +217,11 @@
         @include appearance( hovered-list-item );
     }
 
+    .k-columnmenu-item {
+        &.k-state-selected {
+            @include appearance( selected-list-item );
+        }
+    }
 
     .k-column-menu {
 
