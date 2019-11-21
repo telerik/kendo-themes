@@ -207,21 +207,12 @@ Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
-<td>$error</td>
+<td>$info</td>
 <td>
-    <span class="color-preview" style="background-color: #f31700"></span>
-    #f31700
+    <span class="color-preview" style="background-color: #0058e9"></span>
+    #0058e9
 </td>
-<td>The color for error messages and states.
-</td>
-</tr>
-<tr>
-<td>$warning</td>
-<td>
-    <span class="color-preview" style="background-color: #ffc000"></span>
-    #ffc000
-</td>
-<td>The color for warning messages and states.
+<td>The color for informational messages and states.
 </td>
 </tr>
 <tr>
@@ -234,12 +225,21 @@ Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
-<td>$info</td>
+<td>$warning</td>
 <td>
-    <span class="color-preview" style="background-color: #3f51b5"></span>
-    #3f51b5
+    <span class="color-preview" style="background-color: #ffc000"></span>
+    #ffc000
 </td>
-<td>The color for informational messages and states.
+<td>The color for warning messages and states.
+</td>
+</tr>
+<tr>
+<td>$error</td>
+<td>
+    <span class="color-preview" style="background-color: #f31700"></span>
+    #f31700
+</td>
+<td>The color for error messages and states.
 </td>
 </tr>
 </table>
