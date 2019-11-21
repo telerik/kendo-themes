@@ -931,6 +931,15 @@
         }
     }
 
+    .k-width-container {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .k-width-container  div {
+        height: 1px;
+    }
+
     .k-grid-virtual[dir="rtl"],
     .k-grid-virtual.k-rtl {
         .k-grid-content .k-grid-table {
