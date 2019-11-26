@@ -155,34 +155,32 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
 
             .k-message-status { height: 1.2em; }
         }
+
+        // Avatar
+        .k-avatar {
+            @include border-radius(100%);
+            width: $chat-avatar-size;
+            height: $chat-avatar-size;
+            position: absolute;
+
+            @at-root .k-message-group:not(.k-alt) > .k-avatar {
+                left: 0;
+                bottom: 0;
+            }
+            @at-root .k-message-group.k-alt > .k-avatar {
+                right: 0;
+                bottom: 0;
+            }
+        }
+        .k-avatars {
+            .k-message-group:not(.k-alt):not(.k-no-avatar) {
+                padding-left: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
+            }
+            .k-message-group.k-alt:not(.k-no-avatar) {
+                padding-right: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
+            }
+        }
     }
-
-
-    // Avatar
-    .k-avatar {
-        @include border-radius(100%);
-        width: $chat-avatar-size;
-        height: $chat-avatar-size;
-        position: absolute;
-
-        .k-message-group:not(.k-alt) > & {
-            left: 0;
-            bottom: 0;
-        }
-        .k-message-group.k-alt > & {
-            right: 0;
-            bottom: 0;
-        }
-    }
-    .k-avatars {
-        .k-message-group:not(.k-alt):not(.k-no-avatar) {
-            padding-left: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
-        }
-        .k-message-group.k-alt:not(.k-no-avatar) {
-            padding-right: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
-        }
-    }
-
 
     // Author
     .k-author {
