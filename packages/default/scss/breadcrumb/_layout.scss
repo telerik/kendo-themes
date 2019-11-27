@@ -2,7 +2,6 @@
 
     // Breadcrumb
     .k-breadcrumb {
-        padding-right: $breadcrumb-padding-x;
         border: 0;
         display: flex;
         flex-direction: row;
@@ -25,35 +24,54 @@
             align-items: center;
             overflow: hidden;
         }
-        .k-breadcrumb-item .k-link {
-            white-space: nowrap;
-        }
-
-        .k-breadcrumb-last-item .k-link {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
 
         .k-breadcrumb-root-item {
             flex: 0 0 auto;
         }
 
-        .k-breadcrumb-icon {
-            padding: $breadcrumb-icon-padding-y $breadcrumb-icon-padding-x;
-            font-size: $breadcrumb-icon-font-size;
+        .k-breadcrumb-last-item .k-breadcrumb-link {
+            display: inline-block;
+            align-self: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .k-breadcrumb-link,
+        .k-breadcrumb-root-link {
+            @include border-radius();
+            padding: $breadcrumb-link-padding-y $breadcrumb-link-padding-x;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            align-self: stretch;
+            white-space: nowrap;
+            text-decoration: none;
+            outline: none;
+        }
+
+        .k-breadcrumb-root-link {
+            margin-right: $breadcrumb-root-link-spacing;
+        }
+
+        .k-breadcrumb-icontext-link .k-icon {
+            margin-right: $breadcrumb-link-icon-spacing;
+        }
+
+        .k-breadcrumb-delimiter-icon {
+            font-size: $breadcrumb-delimiter-icon-font-size;
             opacity: $disabled-opacity;
         }
 
-        .k-breadcrumb-overflow-icon {
-            padding: 0 0 0 $breadcrumb-icon-padding-x;
-        }
-        .k-breadcrumb-overflow-icon + .k-breadcrumb-overflow-icon {
-            padding: 0 $breadcrumb-icon-padding-x 0 0;
-        }
-
         // Editing
-        .k-textbox {
+        .k-breadcrumb-input-container {
+            width: 100%;
+            border-top-width: $breadcrumb-input-container-border-width;
+            border-top-style: solid;
+            border-bottom-width: $breadcrumb-input-container-border-width;
+            border-bottom-style: solid;
+        }
+        .k-breadcrumb-input-container .k-textbox {
             width: 100%;
         }
     }
@@ -66,15 +84,6 @@
 
         .k-breadcrumb-item {
             display: inline-block;
-        }
-    }
-
-    // RTL
-    .k-rtl,
-    [dir="rtl"] {
-        .k-breadcrumb {
-            padding-right: 0;
-            padding-left: $breadcrumb-padding-x;
         }
     }
 
