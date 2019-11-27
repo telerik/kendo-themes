@@ -1,0 +1,11 @@
+@include exports( "listgroup/theme" ) {
+
+    .k-listgroup {
+        @include fill(
+            $listgroup-text,
+            $listgroup-bg,
+            $listgroup-border
+        );
+    }
+
+}

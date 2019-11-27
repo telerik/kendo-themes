@@ -80,7 +80,6 @@
     .k-checkbox-label {
         margin: 0;
         padding: 0;
-        width: $checkbox-label-width;
         line-height: $checkbox-line-height;
         display: inline-flex;
         flex-direction: column;
@@ -88,6 +87,11 @@
         vertical-align: top;
         position: relative;
         cursor: pointer;
+
+        // Hide empty label
+        &:empty {
+            display: none;
+        }
 
         .k-ripple {
             top: $checkbox-size / 2;

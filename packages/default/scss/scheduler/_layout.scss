@@ -879,6 +879,11 @@
 
 @include exports("scheduler-edit-form/layout") {
 
+    .k-scheduler-edit-dialog {
+        .k-dialog {
+            max-height: 100vh;
+        }
+    }
 
     .k-scheduler-edit-form {
 
