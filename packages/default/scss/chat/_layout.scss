@@ -161,6 +161,7 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
             @include border-radius(100%);
             width: $chat-avatar-size;
             height: $chat-avatar-size;
+            margin: 0;
             position: absolute;
 
             @at-root .k-message-group:not(.k-alt) > .k-avatar {
