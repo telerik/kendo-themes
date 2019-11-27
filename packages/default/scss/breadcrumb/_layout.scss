@@ -15,6 +15,7 @@
             flex-direction: row;
             flex-wrap: nowrap;
             list-style: none;
+            overflow: hidden;
         }
 
         .k-breadcrumb-item {
@@ -22,9 +23,20 @@
             display: inline-flex;
             flex-direction: row;
             align-items: center;
+            overflow: hidden;
         }
         .k-breadcrumb-item .k-link {
             white-space: nowrap;
+        }
+
+        .k-breadcrumb-last-item .k-link {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .k-breadcrumb-root-item {
+            flex: 0 0 auto;
         }
 
         .k-breadcrumb-icon {
