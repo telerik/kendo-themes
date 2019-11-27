@@ -61,6 +61,11 @@
         position: relative;
         cursor: pointer;
 
+        // Hide empty label
+        &:empty {
+            display: none;
+        }
+
         .k-ripple {
             top: $radio-size / 2;
             left: $radio-size / 2;
