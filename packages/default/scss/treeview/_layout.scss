@@ -67,6 +67,11 @@
             cursor: pointer;
         }
 
+        // Checkboxes
+        .k-checkbox-wrapper {
+            margin-right: $icon-spacing;
+        }
+
         // Drag and Drop icon
         .k-i-drag-and-drop {
             position: absolute;
@@ -98,6 +103,12 @@
         .k-i-collapse {
             margin-left: 0;
             margin-right: -$treeview-indent;
+        }
+
+        // Checkboxes
+        .k-checkbox-wrapper {
+            margin-right: 0;
+            margin-left: $icon-spacing;
         }
 
         // Other content
