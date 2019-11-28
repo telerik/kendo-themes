@@ -900,6 +900,13 @@
         font-size: inherit;
     }
 
+    .k-pager-input {
+        .k-numerictextbox {
+            margin: 0 $font-size / 2;
+            width: 3em;
+        }
+    }
+
     .k-grid-virtual .k-grid-content {
         .k-grid-table-wrap {
             float: left;
@@ -922,6 +929,15 @@
             display: block;
             clear: both;
         }
+    }
+
+    .k-width-container {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .k-width-container  div {
+        height: 1px;
     }
 
     .k-grid-virtual[dir="rtl"],

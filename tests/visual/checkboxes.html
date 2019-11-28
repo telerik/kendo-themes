@@ -12,13 +12,27 @@
             grid-template-columns: repeat(4, 1fr);
         }
 
-        .k-checkbox-label,
-        .k-radio-label,
+        section > .k-checkbox,
+        section > .k-checkbox-label,
+        section > .k-radio,
+        section > .k-radio-label  {
+            margin-bottom: 20px;
+        }
+
         .k-checkbox-legacy-label,
         .k-radio-legacy-label {
             margin-bottom: 20px;
         }
+
+
     </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll('.k-state-indeterminate');
+        elements.forEach(el => el.indeterminate = true);
+    });
+</script>
 </head>
 <body>
 
@@ -30,59 +44,77 @@
         <span dir="rtl">RTL RadioButtons</span>
 
         <section>
-            <input type="checkbox" id="ch1" class="k-checkbox" checked />
-            <label class="k-checkbox-label" for="ch1">Checked</label>
+            <input type="checkbox" id="ch1" class="k-checkbox" checked /><!--
+            --><label class="k-checkbox-label" for="ch1">Checked</label>
             <br />
-            <input type="checkbox" id="ch2" class="k-checkbox">
-            <label class="k-checkbox-label" for="ch2">Unchecked</label>
+            <input type="checkbox" id="ch2" class="k-checkbox" /><!--
+            --><label class="k-checkbox-label" for="ch2">Unchecked</label>
             <br />
-            <input type="checkbox" id="ch3" class="k-checkbox" disabled checked />
-            <label class="k-checkbox-label" for="ch3">Disabled</label>
+            <input type="checkbox" id="ch3" class="k-checkbox" disabled checked /><!--
+            --><label class="k-checkbox-label" for="ch3">Disabled</label>
             <br />
-            <input type="checkbox" id="ch4" class="k-checkbox" disabled />
-            <label class="k-checkbox-label" for="ch4">Disabled</label>
+            <input type="checkbox" id="ch4" class="k-checkbox" disabled /><!--
+            --><label class="k-checkbox-label" for="ch4">Disabled</label>
+            <br />
+            <input type="checkbox" id="chInd" class="k-checkbox k-state-indeterminate" /><!--
+            --><label class="k-checkbox-label" for="chInd">Indeterminate</label>
+            <br />
+            <input type="checkbox" id="chIndDis" class="k-checkbox k-state-indeterminate" disabled /><!--
+            --><label class="k-checkbox-label" for="chIndDis">Indeterminate Disabled</label>
+            <br />
+            <input type="checkbox" id="chRequired" class="k-checkbox k-state-invalid" required/><!--
+            --><label class="k-checkbox-label" for="chRequired">Required</label>
         </section>
 
         <section>
-            <input type="radio" name="group1" id="rad1" class="k-radio" checked/>
-            <label class="k-radio-label" for="rad1">Checked</label>
+            <input type="radio" name="group1" id="rad1" class="k-radio" checked /><!--
+            --><label class="k-radio-label" for="rad1">Checked</label>
             <br />
-            <input type="radio" name="group1" id="rad2" class="k-radio" />
-            <label class="k-radio-label" for="rad2">Unchecked</label>
+            <input type="radio" name="group1" id="rad2" class="k-radio" /><!--
+            --><label class="k-radio-label" for="rad2">Unchecked</label>
             <br />
-            <input type="radio" name="group2" id="rad3" class="k-radio" disabled checked />
-            <label class="k-radio-label" for="rad3">Disabled</label>
+            <input type="radio" name="group2" id="rad3" class="k-radio" disabled checked /><!--
+            --><label class="k-radio-label" for="rad3">Disabled</label>
             <br />
-            <input type="radio" name="group2" id="rad4" class="k-radio" disabled />
-            <label class="k-radio-label" for="rad4">Disabled</label>
+            <input type="radio" name="group2" id="rad4" class="k-radio" disabled /><!--
+            --><label class="k-radio-label" for="rad4">Disabled</label>
         </section>
 
         <section dir="rtl">
-            <input type="checkbox" id="ch5" class="k-checkbox" checked />
-            <label class="k-checkbox-label" for="ch5">Checked</label>
+            <input type="checkbox" id="ch5" class="k-checkbox" checked /><!--
+            --><label class="k-checkbox-label" for="ch5">Checked</label>
             <br />
-            <input type="checkbox" id="ch6" class="k-checkbox" />
-            <label class="k-checkbox-label" for="ch6">Unchecked</label>
+            <input type="checkbox" id="ch6" class="k-checkbox" /><!--
+            --><label class="k-checkbox-label" for="ch6">Unchecked</label>
             <br />
-            <input type="checkbox" id="ch7" class="k-checkbox" disabled checked />
-            <label class="k-checkbox-label" for="ch7">Disabled</label>
+            <input type="checkbox" id="ch7" class="k-checkbox" disabled checked /><!--
+            --><label class="k-checkbox-label" for="ch7">Disabled</label>
             <br />
-            <input type="checkbox" id="ch8" class="k-checkbox" disabled />
-            <label class="k-checkbox-label" for="ch8">Disabled</label>
+            <input type="checkbox" id="ch8" class="k-checkbox" disabled /><!--
+            --><label class="k-checkbox-label" for="ch8">Disabled</label>
+            <br />
+            <input type="checkbox" id="chInd" class="k-checkbox k-state-indeterminate" /><!--
+            --><label class="k-checkbox-label" for="chInd">Indeterminate</label>
+            <br />
+            <input type="checkbox" id="chIndDis" class="k-checkbox k-state-indeterminate" disabled /><!--
+            --><label class="k-checkbox-label" for="chIndDis">Indeterminate Disabled</label>
+            <br />
+            <input type="checkbox" id="chRequired" class="k-checkbox k-state-invalid" required/><!--
+            --><label class="k-checkbox-label" for="chRequired">Required</label>
         </section>
 
         <section dir="rtl">
-            <input type="radio" name="group3" id="rad5" class="k-radio" checked/>
-            <label class="k-radio-label" for="rad5">Checked</label>
+            <input type="radio" name="group3" id="rad5" class="k-radio" checked /><!--
+            --><label class="k-radio-label" for="rad5">Checked</label>
             <br />
-            <input type="radio" name="group3" id="rad6" class="k-radio" />
-            <label class="k-radio-label" for="rad6">Unchecked</label>
+            <input type="radio" name="group3" id="rad6" class="k-radio" /><!--
+            --><label class="k-radio-label" for="rad6">Unchecked</label>
             <br />
-            <input type="radio" name="group4" id="rad7" class="k-radio" disabled checked />
-            <label class="k-radio-label" for="rad7">Disabled</label>
+            <input type="radio" name="group4" id="rad7" class="k-radio" disabled checked /><!--
+            --><label class="k-radio-label" for="rad7">Disabled</label>
             <br />
-            <input type="radio" name="group4" id="rad8" class="k-radio" disabled />
-            <label class="k-radio-label" for="rad8">Disabled</label>
+            <input type="radio" name="group4" id="rad8" class="k-radio" disabled /><!--
+            --><label class="k-radio-label" for="rad8">Disabled</label>
         </section>
 
         <span>LTR Checkboxes (Legacy classes)</span>
@@ -102,6 +134,12 @@
             <br />
             <input type="checkbox" id="ch4-legacy" class="k-checkbox-legacy" disabled />
             <label class="k-checkbox-legacy-label" for="ch4-legacy">Disabled</label>
+            <br />
+            <input type="checkbox" id="ch4" class="k-checkbox-legacy k-state-indeterminate" />
+            <label class="k-checkbox-legacy-label" for="ch4">Indeterminate</label>
+            <br />
+            <input type="checkbox" id="ch4" class="k-checkbox-legacy k-state-indeterminate" disabled />
+            <label class="k-checkbox-legacy-label" for="ch4">Indeterminate Disabled</label>
         </section>
 
         <section>
@@ -130,6 +168,12 @@
             <br />
             <input type="checkbox" id="ch8-legacy" class="k-checkbox-legacy" disabled />
             <label class="k-checkbox-legacy-label" for="ch8-legacy">Disabled</label>
+            <br />
+            <input type="checkbox" id="ch4" class="k-checkbox-legacy k-state-indeterminate" />
+            <label class="k-checkbox-legacy-label" for="ch4">Indeterminate</label>
+            <br />
+            <input type="checkbox" id="ch4" class="k-checkbox-legacy k-state-indeterminate" disabled />
+            <label class="k-checkbox-legacy-label" for="ch4">Indeterminate Disabled</label>
         </section>
 
         <section dir="rtl">
