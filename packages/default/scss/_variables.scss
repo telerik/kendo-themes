@@ -665,7 +665,6 @@ $checkbox-dash-height: $checkbox-size / 10 !default;
 $checkbox-dash-width: $checkbox-size - ( $checkbox-border-width * 4 ) !default;
 $checkbox-dash-offset-x: $checkbox-border-width * 2 !default;
 $checkbox-dash-offset-y: ( $checkbox-size - $checkbox-dash-height ) / 2 !default;
-$checkbox-label-width: calc( 100% - #{$checkbox-size} - #{$icon-spacing}) !default;
 
 $checkbox-bg: $input-bg !default;
 $checkbox-text: $input-text !default;
@@ -820,6 +819,23 @@ $list-item-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 $list-container-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
 $list-container-no-data-text: rgba( $text-color, .5 ) !default;
+
+
+// Listgroup
+$listgroup-border-width: 1px !default;
+$listgroup-border-radius: $border-radius !default;
+
+$listgroup-font-size: $font-size !default;
+$listgroup-line-height: $line-height !default;
+
+$listgroup-bg: $panel-bg !default;
+$listgroup-text: $panel-text !default;
+$listgroup-border: $panel-border !default;
+
+$listgroup-item-padding-x: $padding-x !default;
+$listgroup-item-padding-y: $padding-y !default;
+$listgroup-item-border-width: 1px !default;
+
 
 // Tabstrip
 $tabstrip-wrapper-padding-x: 0 !default;
@@ -1160,6 +1176,15 @@ $card-deck-scroll-button-offset: -$button-border-width !default;
 
 $card-callout-width: 20px !default;
 $card-callout-height: 20px !default;
+
+
+// Avatar
+$avatar-size: 32px !default;
+$avatar-margin: 8px !default;
+
+$avatar-bg: $accent !default;
+$avatar-text: white !default;
+
 
 // Calendar
 $calendar-border-width: 1px !default;
@@ -1913,6 +1938,8 @@ $breadcrumb-link-hovered-border: null !default;
 $breadcrumb-link-focused-text: $link-text !default;
 $breadcrumb-link-focused-bg: null !default;
 $breadcrumb-link-focused-border: null !default;
+
+$breadcrumb-focused-shadow: 0 0 2px 1px rgba(0, 0, 0, .06) !default;
 
 
 // Config maps
