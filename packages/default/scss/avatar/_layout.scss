@@ -1,0 +1,44 @@
+@include exports("avatar/layout") {
+
+    .k-avatar {
+        margin: 0 $avatar-margin 0 0;
+        width: $avatar-size;
+        height: $avatar-size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .k-avatar-rounded {
+        @include border-radius(50%);
+
+        &.k-avatar-image {
+            > * {
+                @include border-radius(50%);
+            }
+        }
+    }
+
+    .k-avatar-image {
+        > * {
+            width: $avatar-size;
+            height: $avatar-size;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+}
+
+
+@include exports("avatar/layout/rtl") {
+
+    .k-avatar {
+        &[dir="rtl"],
+        .k-rtl & {
+            margin: 0 0 0 $avatar-margin;
+        }
+    }
+
+}

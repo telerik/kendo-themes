@@ -1,0 +1,11 @@
+@include exports("avatar/theme") {
+
+    .k-avatar-icon,
+    .k-avatar-initials {
+        @include fill (
+            $avatar-text,
+            $avatar-bg
+        );
+    }
+
+}

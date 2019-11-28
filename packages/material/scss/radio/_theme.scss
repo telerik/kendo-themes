@@ -5,10 +5,6 @@
     // Radio
     .k-radio-label {
 
-        .k-radio + &::after {
-            transition: transform linear 280ms;
-        }
-
         // Disabled state
         .k-radio:disabled + & {
             color: if($is-dark-theme, $light-secondary-text, $dark-secondary-text);
@@ -31,10 +27,6 @@
 
     // Radio legacy styles
     .k-radio-legacy-label {
-
-        .k-radio-legacy + &::after {
-            transition: transform linear 280ms;
-        }
 
         // Disabled state
         .k-radio-legacy:disabled + & {

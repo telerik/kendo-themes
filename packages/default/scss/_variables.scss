@@ -622,7 +622,7 @@ $textbox-icon-width: calc( #{$icon-size} + #{$input-padding-x * 2} ) !default;
 $textarea-default-width: 18em !default;
 
 //Checkboxes
-$checkbox-icon-size: $icon-size !default;
+$checkbox-icon-size: 12px !default;
 $checkbox-size: $icon-size !default;
 $checkbox-radius: $border-radius !default;
 $checkbox-border-width: 1px !default;
@@ -642,9 +642,9 @@ $checkbox-hovered-border: $input-hovered-border !default;
 $checkbox-checked-bg: $accent !default;
 $checkbox-checked-text: $accent-contrast !default;
 $checkbox-checked-border: $accent !default;
-$checkbox-indeterminate-bg: $checkbox-checked-bg !default;
-$checkbox-indeterminate-text: $checkbox-checked-text !default;
-$checkbox-indeterminate-border: $checkbox-checked-border !default;
+$checkbox-indeterminate-bg: $checkbox-bg !default;
+$checkbox-indeterminate-text: $checkbox-checked-bg !default;
+$checkbox-indeterminate-border: $checkbox-border !default;
 $checkbox-focused-border: $checkbox-hovered-border !default;
 $checkbox-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 $checkbox-focused-checked-border: $checkbox-checked-border !default;
@@ -655,10 +655,17 @@ $checkbox-disabled-border: null !default;
 $checkbox-disabled-checked-bg: null !default;
 $checkbox-disabled-checked-text: null !default;
 $checkbox-disabled-checked-border: null !default;
+$checkbox-invalid-bg: null !default;
+$checkbox-invalid-text: null !default;
+$checkbox-invalid-border: $checkbox-checked-bg !default;
 
 
 //Radio Buttons
+$radio-icon-size: 12px !default;
+$radio-size: $icon-size !default;
 $radio-radius: 50% !default;
+$radio-border-width: 1px !default;
+$radio-line-height: $radio-size + $radio-border-width !default;
 
 $radio-bg: $checkbox-bg !default;
 $radio-text: $checkbox-text !default;
@@ -779,6 +786,23 @@ $list-item-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 $list-container-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
 $list-container-no-data-text: rgba( $text-color, .5 ) !default;
+
+
+// Listgroup
+$listgroup-border-width: 1px !default;
+$listgroup-border-radius: $border-radius !default;
+
+$listgroup-font-size: $font-size !default;
+$listgroup-line-height: $line-height !default;
+
+$listgroup-bg: $panel-bg !default;
+$listgroup-text: $panel-text !default;
+$listgroup-border: $panel-border !default;
+
+$listgroup-item-padding-x: $padding-x !default;
+$listgroup-item-padding-y: $padding-y !default;
+$listgroup-item-border-width: 1px !default;
+
 
 // Tabstrip
 $tabstrip-wrapper-padding-x: 0 !default;
@@ -1119,6 +1143,15 @@ $card-deck-scroll-button-offset: -$button-border-width !default;
 
 $card-callout-width: 20px !default;
 $card-callout-height: 20px !default;
+
+
+// Avatar
+$avatar-size: 32px !default;
+$avatar-margin: 8px !default;
+
+$avatar-bg: $accent !default;
+$avatar-text: white !default;
+
 
 // Calendar
 $calendar-border-width: 1px !default;
@@ -1872,6 +1905,8 @@ $breadcrumb-link-hovered-border: null !default;
 $breadcrumb-link-focused-text: $link-text !default;
 $breadcrumb-link-focused-bg: null !default;
 $breadcrumb-link-focused-border: null !default;
+
+$breadcrumb-focused-shadow: 0 0 2px 1px rgba(0, 0, 0, .06) !default;
 
 
 // Config maps

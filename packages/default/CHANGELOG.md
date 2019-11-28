@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.7.0"></a>
+# 4.7.0 (2019-11-21)
+
+
+### Bug Fixes
+
+* **colorpicker:** add numerictextbox as a dependency to colorpicker ([899fbd5](https://github.com/telerik/kendo-themes/commit/899fbd5))
+* **datetime:** hover styles applied on disabled ([c88d5b2](https://github.com/telerik/kendo-themes/commit/c88d5b2))
+* **grid:** add cursor pointer to filter hover in blazor ([9d7ad3f](https://github.com/telerik/kendo-themes/commit/9d7ad3f))
+* **grid:** add locked column selected, hovered and selected hovered states variables ([fa99539](https://github.com/telerik/kendo-themes/commit/fa99539))
+* **grid:** add styles for standalone column menu ([50a034c](https://github.com/telerik/kendo-themes/commit/50a034c))
+* **grid:** locked column hovered and selected hovered state background ([89ee7a0](https://github.com/telerik/kendo-themes/commit/89ee7a0))
+* **grid:** selected locked columns contenthave background with opacity ([c82419f](https://github.com/telerik/kendo-themes/commit/c82419f))
+* **grid:** sorted locked column header does not have background color ([1d16df6](https://github.com/telerik/kendo-themes/commit/1d16df6))
+* **multiselect:** extract scss variables ([8ddbc6b](https://github.com/telerik/kendo-themes/commit/8ddbc6b))
+* **numerictextbox:** extract scss variables ([1a6b0bc](https://github.com/telerik/kendo-themes/commit/1a6b0bc))
+* **spreadsheet:** add braces around array formulas ([c7fd2d7](https://github.com/telerik/kendo-themes/commit/c7fd2d7))
+* **tabstrip:** remove default browser outline ([97a25b4](https://github.com/telerik/kendo-themes/commit/97a25b4))
+* **treelist:** extract treelist specific styles in treelist folder ([7d0be42](https://github.com/telerik/kendo-themes/commit/7d0be42))
+* add virtual columns styles ([61d3362](https://github.com/telerik/kendo-themes/commit/61d3362))
+* add whitespace around operators in calc expressions ([02ee4b6](https://github.com/telerik/kendo-themes/commit/02ee4b6))
+
+
+### Features
+
+* **breadcrumb:** add home icon ([0ae4380](https://github.com/telerik/kendo-themes/commit/0ae4380))
+* **breadcrumb:** add styles for breadcrumb component ([400fd43](https://github.com/telerik/kendo-themes/commit/400fd43))
+* **checkbox:** add invalid, indeterminate and long labels styles ([43ee6c8](https://github.com/telerik/kendo-themes/commit/43ee6c8))
+* **checkbox:** add styles for indeterminate state ([9d822e3](https://github.com/telerik/kendo-themes/commit/9d822e3))
+* **checkbox:** style native checkbox trough k-checkbox class ([066d5ca](https://github.com/telerik/kendo-themes/commit/066d5ca))
+* **grid:** allow placing column menu inside header ([5666dfb](https://github.com/telerik/kendo-themes/commit/5666dfb)), closes [telerik/kendo-angular-grid#870](https://github.com/telerik/kendo-angular-grid/issues/870)
+* **radio:** style native radio through k-radio class ([f7d9906](https://github.com/telerik/kendo-themes/commit/f7d9906))
+
+
+
+
 <a name="4.6.0"></a>
 # [4.6.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.5.2...@progress/kendo-theme-default@4.6.0) (2019-10-25)
 

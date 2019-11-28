@@ -684,10 +684,17 @@ $checkbox-disabled-border: null !default;
 $checkbox-disabled-checked-bg: null !default;
 $checkbox-disabled-checked-text: null !default;
 $checkbox-disabled-checked-border: null !default;
+$checkbox-invalid-bg: null !default;
+$checkbox-invalid-text: null !default;
+$checkbox-invalid-border: $checkbox-checked-bg !default;
 
 
 //Radio Buttons
+$radio-icon-size: 10px !default;
+$radio-size: $icon-size !default;
 $radio-radius: 50% !default;
+$radio-border-width: 1px !default;
+$radio-line-height: $radio-size + $radio-border-width !default;
 
 $radio-bg: $checkbox-bg !default;
 $radio-text: $checkbox-text !default;
@@ -806,6 +813,22 @@ $list-item-selected-text: $dropdown-link-active-color !default;
 $list-item-selected-bg: $dropdown-link-active-bg !default;
 
 $list-item-focused-shadow: inset 0 0 0 3px rgba( $list-item-text, .15 ) !default;
+
+
+// Listgroup
+$listgroup-border-width: $list-group-border-width !default;
+$listgroup-border-radius: $list-group-border-radius !default;
+
+$listgroup-font-size: $font-size !default;
+$listgroup-line-height: $line-height !default;
+
+$listgroup-bg: $list-group-bg !default;
+$listgroup-text: $list-group-color !default;
+$listgroup-border: $list-group-border-color !default;
+
+$listgroup-item-padding-x: $list-group-item-padding-x !default;
+$listgroup-item-padding-y: $list-group-item-padding-y !default;
+$listgroup-item-border-width: $list-group-border-width !default;
 
 
 // Tabstrip
@@ -1129,6 +1152,14 @@ $card-actions-border-width: 1px !default;
 
 $card-callout-width: 1.3em !default;
 $card-callout-height: 1.3em !default;
+
+
+// Avatar
+$avatar-size: 32px !default;
+$avatar-margin: 8px !default;
+
+$avatar-bg: $accent !default;
+$avatar-text: white !default;
 
 
 // Calendar
@@ -1878,6 +1909,8 @@ $breadcrumb-link-hovered-border: null !default;
 $breadcrumb-link-focused-text: $link-text !default;
 $breadcrumb-link-focused-bg: null !default;
 $breadcrumb-link-focused-border: null !default;
+
+$breadcrumb-focused-shadow: 0 0 2px 1px rgba(0, 0, 0, .06) !default;
 
 
 // Config maps
