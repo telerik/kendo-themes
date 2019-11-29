@@ -526,13 +526,18 @@
             top: 0;
             bottom: 0;
             right: $padding-x;
-            opacity: .5;
-            visibility: hidden;
             z-index: 2;
+
+            .k-event-delete {
+                opacity: .5;
+                visibility: hidden;
+            }
 
             &:hover,
             &.k-state-hover {
-                opacity: 1;
+                .k-event-delete {
+                    opacity: 1;
+                }
             }
 
             .k-icon {
@@ -595,7 +600,7 @@
         // Hover
         &:hover,
         &.k-state-hover {
-            .k-event-actions,
+            .k-event-actions .k-event-delete,
             .k-resize-handle {
                 visibility: visible;
             }
