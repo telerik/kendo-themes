@@ -1245,7 +1245,7 @@
 
     .k-columnmenu-item-wrapper {
         border-bottom: 1px solid;
-        border-bottom-color: inherit;
+        border-bottom-color: $popup-border;
 
         &:last-child {
             border-bottom-width: 0;
