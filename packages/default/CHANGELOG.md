@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.8.0"></a>
+# [4.8.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.7.0...@progress/kendo-theme-default@4.8.0) (2019-11-29)
+
+
+### Bug Fixes
+
+* **chat:** conflict with the avatar component ([4d78015](https://github.com/telerik/kendo-themes/commit/4d78015))
+* **drawer:** remove border in overlay mode ([148a259](https://github.com/telerik/kendo-themes/commit/148a259))
+* **dropdowntree:** remove extra spacing around check all label ([68e3af4](https://github.com/telerik/kendo-themes/commit/68e3af4))
+* **grid:** add styles for selected column menu item ([30421de](https://github.com/telerik/kendo-themes/commit/30421de))
+* **scheduler:** add scrollbar to edit dialog ([03e7f15](https://github.com/telerik/kendo-themes/commit/03e7f15))
+* **scheduler:** checkbox style in edit dialog ([7abd073](https://github.com/telerik/kendo-themes/commit/7abd073))
+* hide empty radio and checkbox labels ([4dfe798](https://github.com/telerik/kendo-themes/commit/4dfe798))
+* remove explicit margin from edit-form checkboxes ([d7e5c01](https://github.com/telerik/kendo-themes/commit/d7e5c01))
+* remove explicit width for checkbox label ([7efdbd4](https://github.com/telerik/kendo-themes/commit/7efdbd4))
+* **scheduler:** resource group header not rendered in day view ([107394c](https://github.com/telerik/kendo-themes/commit/107394c)), closes [telerik/kendo-ui-core#5418](https://github.com/telerik/kendo-ui-core/issues/5418)
+* **scheduler:** the right arrow in events shall always be visible not only on hover ([8a615ee](https://github.com/telerik/kendo-themes/commit/8a615ee))
+* **scheduler:** times slot is hidden with vertical grouping ([07ae48d](https://github.com/telerik/kendo-themes/commit/07ae48d)), closes [telerik/kendo-ui-core#5418](https://github.com/telerik/kendo-ui-core/issues/5418)
+* **treemap:** use html calc method to calculate treemap-title-sizes ([d04e08a](https://github.com/telerik/kendo-themes/commit/d04e08a))
+* **treeview:** adjust spacing between checkbox and node ([aa4fbc1](https://github.com/telerik/kendo-themes/commit/aa4fbc1))
+
+
+### Features
+
+* add listgroup styles ([7eaea1d](https://github.com/telerik/kendo-themes/commit/7eaea1d))
+* **avatar:** add component styles ([ad0d07b](https://github.com/telerik/kendo-themes/commit/ad0d07b))
+* headers in Editor table wizard telerik/kendo[#10227](https://github.com/telerik/kendo-themes/issues/10227) ([a10cfc7](https://github.com/telerik/kendo-themes/commit/a10cfc7))
+* **badge:** component styles ([367f6a4](https://github.com/telerik/kendo-themes/commit/367f6a4))
+
+
+
+
 <a name="4.7.0"></a>
 # 4.7.0 (2019-11-21)
 

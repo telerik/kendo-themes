@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.6.0"></a>
+# [4.6.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.5.0...@progress/kendo-theme-bootstrap@4.6.0) (2019-11-29)
+
+
+### Bug Fixes
+
+* remove explicit width for checkbox label ([7efdbd4](https://github.com/telerik/kendo-themes/commit/7efdbd4))
+* **grid:** add styles for selected column menu item ([30421de](https://github.com/telerik/kendo-themes/commit/30421de))
+
+
+### Features
+
+* add listgroup styles ([7eaea1d](https://github.com/telerik/kendo-themes/commit/7eaea1d))
+* **avatar:** add component styles ([ad0d07b](https://github.com/telerik/kendo-themes/commit/ad0d07b))
+* **badge:** component styles ([367f6a4](https://github.com/telerik/kendo-themes/commit/367f6a4))
+
+
+
+
 <a name="4.5.0"></a>
 # 4.5.0 (2019-11-21)
 
