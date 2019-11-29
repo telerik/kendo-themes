@@ -283,6 +283,10 @@
             }
 
             > input {
+                align-self: center;
+            }
+
+            > input:not(.k-checkbox):not(.k-radio) {
                 flex: 1 1 auto;
             }
 
