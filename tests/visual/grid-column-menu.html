@@ -16,6 +16,10 @@
         .k-popup {
             position: relative;
         }
+
+        .k-grid-columnmenu-popup {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -28,38 +32,33 @@
                     <kendo-grid-columnmenu-sort class="k-columnmenu-item-wrapper">
                         <kendo-grid-columnmenu-item icon="sort-asc-sm">
                             <div class="k-columnmenu-item">
-                                <span class="k-icon k-i-sort-asc-sm"></span><!--
-                                -->Sort Ascending
+                                <span class="k-icon k-i-sort-asc-sm"></span>Sort Ascending
                             </div>
                         </kendo-grid-columnmenu-item>
                         <kendo-grid-columnmenu-item icon="sort-desc-sm">
                             <div class="k-columnmenu-item">
-                                <span class="k-icon k-i-sort-desc-sm"></span><!--
-                                -->Sort Descending
+                                <span class="k-icon k-i-sort-desc-sm"></span>Sort Descending
                             </div>
                         </kendo-grid-columnmenu-item>
                     </kendo-grid-columnmenu-sort>
                     <kendo-grid-columnmenu-lock class="k-columnmenu-item-wrapper">
                         <kendo-grid-columnmenu-item>
                             <div class="k-columnmenu-item">
-                                <span class="k-icon k-i-lock"></span><!--
-                                -->Lock
+                                <span class="k-icon k-i-lock"></span>Lock
                             </div>
                         </kendo-grid-columnmenu-item>
                     </kendo-grid-columnmenu-lock>
                     <kendo-grid-columnmenu-chooser class="k-columnmenu-item-wrapper">
                         <kendo-grid-columnmenu-item icon="columns">
                             <div class="k-columnmenu-item">
-                                <span class="k-icon k-i-columns"></span><!--
-                                -->Columns
+                                <span class="k-icon k-i-columns"></span>Columns
                             </div>
                         </kendo-grid-columnmenu-item>
                     </kendo-grid-columnmenu-chooser>
                     <kendo-grid-columnmenu-filter class="k-columnmenu-item-wrapper">
                         <kendo-grid-columnmenu-item icon="filter">
                             <div class="k-columnmenu-item">
-                                <span class="k-icon k-i-filter"></span><!--
-                                -->Filter
+                                <span class="k-icon k-i-filter"></span>Filter
                             </div>
                             <div class="k-columnmenu-item-content ng-trigger ng-trigger-state" style="overflow: hidden; display: block;">
                                 <kendo-grid-filter-menu-container>
@@ -69,7 +68,7 @@
                                                 <kendo-grid-string-filter-menu-input>
                                                     <kendo-grid-filter-menu-input-wrapper>
                                                         <kendo-dropdownlist class="k-widget k-dropdown k-header">
-                                                            <span class="k-dropdown-wrap k-state-default"  dir="ltr" readonly="false">
+                                                            <span class="k-dropdown-wrap k-state-default" dir="ltr" readonly="false">
                                                                 <span class="k-input">
                                                                     Contains
                                                                 </span>
@@ -103,7 +102,7 @@
                                                                 </span>
                                                             </span>
                                                         </kendo-dropdownlist>
-                                                        <input class="k-textbox ng-untouched ng-pristine ng-valid" value="Filter text" >
+                                                        <input class="k-textbox ng-untouched ng-pristine ng-valid" value="Filter text">
                                                     </kendo-grid-filter-menu-input-wrapper>
                                                 </kendo-grid-string-filter-menu-input>
                                             </kendo-grid-string-filter-menu>
@@ -128,30 +127,26 @@
                     <kendo-grid-columnmenu-sort class="k-columnmenu-item-wrapper">
                         <kendo-grid-columnmenu-item icon="sort-asc-sm">
                             <div class="k-columnmenu-item">
-                                <span class="k-icon k-i-sort-asc-sm"></span><!--
-                                -->Sort Ascending
+                                <span class="k-icon k-i-sort-asc-sm"></span>Sort Ascending
                             </div>
                         </kendo-grid-columnmenu-item>
                         <kendo-grid-columnmenu-item icon="sort-desc-sm">
                             <div class="k-columnmenu-item">
-                                <span class="k-icon k-i-sort-desc-sm"></span><!--
-                                -->Sort Descending
+                                <span class="k-icon k-i-sort-desc-sm"></span>Sort Descending
                             </div>
                         </kendo-grid-columnmenu-item>
                     </kendo-grid-columnmenu-sort>
                     <kendo-grid-columnmenu-lock class="k-columnmenu-item-wrapper">
                         <kendo-grid-columnmenu-item>
                             <div class="k-columnmenu-item">
-                                <span class="k-icon k-i-lock"></span><!--
-                                -->Lock
+                                <span class="k-icon k-i-lock"></span>Lock
                             </div>
                         </kendo-grid-columnmenu-item>
                     </kendo-grid-columnmenu-lock>
                     <kendo-grid-columnmenu-chooser class="k-columnmenu-item-wrapper">
                         <kendo-grid-columnmenu-item icon="columns">
                             <div class="k-columnmenu-item">
-                                <span class="k-icon k-i-columns"></span><!--
-                                -->Columns
+                                <span class="k-icon k-i-columns"></span>Columns
                             </div>
                             <div class="k-columnmenu-item-content ng-trigger ng-trigger-state">
                                 <kendo-grid-columnlist>
@@ -192,8 +187,7 @@
                         <kendo-grid-columnmenu-item icon="filter">
                             <div class="k-columnmenu-item">
                                 <span class="k-icon k-i-filter">
-                                </span><!--
-                                -->Filter
+                                </span>Filter
                             </div>
                         </kendo-grid-columnmenu-item>
                     </kendo-grid-columnmenu-filter>
@@ -232,6 +226,7 @@
 
         <!-- jQuery Grid Column -->
         <div class="section">
+            <span>jQuery Grid Column Menu</span>
             <div class="k-animation-container" style="overflow: visible;">
                 <div class="k-column-menu k-popup k-group k-reset k-state-border-up" data-role="popup">
                     <ul data-role="menu" class="k-widget k-reset k-header k-menu k-menu-vertical" role="menubar">
@@ -246,13 +241,92 @@
                             </span>
                         </li>
                         <li class="k-separator k-item k-state-default" role="presentation">&nbsp;</li>
-                        <li class="k-item k-columns-item k-state-default k-last k-state-hover" role="menuitem" style="z-index: auto;">
+                        <li class="k-item k-columns-item k-state-default k-last k-state-hover" role="menuitem"
+                            style="z-index: auto;">
                             <span class="k-link">
                                 <span class="k-icon k-i-columns"></span>Columns
                                 <span class="k-icon k-i-arrow-60-right k-menu-expand-arrow"></span>
                             </span>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Angular Grid Column Menu -->
+        <div class="section">
+            <span>Angular Grid Column Menu</span>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-grid-columnmenu-popup">
+                    <kendo-grid-columnmenu-sort class="k-columnmenu-item-wrapper ng-star-inserted">
+                        <kendo-grid-columnmenu-item icon="sort-asc-sm" class="ng-tns-c3-25">
+                            <div class="k-columnmenu-item k-item k-state-selected">
+                                <span class="k-icon ng-tns-c3-25 k-i-sort-asc-sm ng-star-inserted"></span> Sort
+                                Ascending
+                            </div>
+                        </kendo-grid-columnmenu-item>
+                        <kendo-grid-columnmenu-item icon="sort-desc-sm" class="ng-tns-c3-26">
+                            <div class="k-columnmenu-item">
+                                <span class="k-icon ng-tns-c3-26 k-i-sort-desc-sm ng-star-inserted"></span> Sort
+                                Descending
+                            </div>
+                        </kendo-grid-columnmenu-item>
+                    </kendo-grid-columnmenu-sort>
+
+                    <kendo-grid-columnmenu-chooser class="k-columnmenu-item-wrapper ng-star-inserted">
+                        <kendo-grid-columnmenu-item icon="columns" class="ng-tns-c3-27">
+                            <div class="k-columnmenu-item">
+                                <span class="k-icon ng-tns-c3-27 k-i-columns ng-star-inserted"></span> Columns
+                            </div>
+                        </kendo-grid-columnmenu-item>
+                    </kendo-grid-columnmenu-chooser>
+
+                    <kendo-grid-columnmenu-filter class="k-columnmenu-item-wrapper ng-star-inserted">
+                        <kendo-grid-columnmenu-item icon="filter" class="ng-tns-c3-28">
+                            <div class="k-columnmenu-item">
+                                <span class="k-icon ng-tns-c3-28 k-i-filter ng-star-inserted"></span> Filter
+                            </div>
+                        </kendo-grid-columnmenu-item>
+                    </kendo-grid-columnmenu-filter>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- React Grid Column Menu -->
+        <div class="section">
+            <span>React Grid Column Menu</span>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-child-animation-container">
+                    <div class="k-grid-columnmenu-popup">
+                        <div>
+                            <div class="k-columnmenu-item-wrapper">
+                                <div class="k-columnmenu-item k-state-selected">
+                                    <span class="k-icon k-i-sort-asc-sm"></span>Sort Ascending
+                                </div>
+                                <div class="k-columnmenu-item ">
+                                    <span class="k-icon k-i-sort-desc-sm"></span>Sort Descending
+                                </div>
+                            </div>
+                            <div class="k-columnmenu-item-wrapper">
+                                <div class="k-columnmenu-item ">
+                                    <span class="k-icon k-i-filter"></span>Filter
+                                </div>
+                                <div class="k-columnmenu-item-content">
+                                    <div class="k-animation-container k-animation-container-relative" style="position: relative; display: block;"></div>
+                                </div>
+                            </div>
+                            <div class="k-columnmenu-item-wrapper">
+                                <div class="k-columnmenu-item ">
+                                    <span class="k-icon k-i-columns"></span>Columns
+                                </div>
+                                <div class="k-columnmenu-item-content">
+                                    <div class="k-animation-container k-animation-container-relative" style="position: relative; display: block;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
