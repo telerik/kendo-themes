@@ -133,6 +133,10 @@
         border-width: 0;
         box-shadow: none;
     }
+
+    .k-scheduler-layout-flex .k-scheduler-cell {
+        min-height: $line-height-em;
+    }
 }
 
 
