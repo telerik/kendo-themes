@@ -2,6 +2,7 @@
 
     .k-badge {
         @include border-radius();
+        margin: 0 0 0 ($spacer / 2);
         padding: $badge-padding;
         border-width: $badge-border-width;
         border-style: solid;
@@ -13,6 +14,13 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+
+        // RTL
+        .k-rtl &,
+        &[dir="rtl"],
+        [dir="rtl"] & {
+            margin: 0 ($spacer / 2) 0 0;
+        }
     }
 
     .k-badge > * {
@@ -42,9 +50,11 @@
 
     .k-badge-overlay {
         position: relative;
+        overflow: visible;
     }
 
     .k-badge-overlay .k-badge {
+        margin: 0;
         position: absolute;
         top: $badge-overlay-y;
         right: $badge-overlay-x;
