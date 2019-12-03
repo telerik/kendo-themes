@@ -22,22 +22,35 @@
             background: none;
         }
 
-        li a {
+        li a,
+        li .k-link {
             @extend .k-button-flat;
             padding: $toolbar-button-padding-y $toolbar-button-padding-x;
             display: flex;
             align-items: center;
             position: relative;
         }
-        li a::before {
+        li a::before,
+        li .k-link::before {
             @extend .k-button-overlay;
             display: block;
         }
-        li.k-state-selected a::before {
+
+        li:hover,
+        li.k-state-hover {
+            a::before,
+            .k-link::before {
+                @include opacity( $flat-button-hover-opacity );
+            }
+        }
+
+        li.k-state-selected a::before,
+        li.k-state-selected .k-link::before {
             @include opacity( $flat-button-selected-opacity );
         }
 
-        li.k-state-focused a::before {
+        li.k-state-focused a::before,
+        li.k-state-focused .k-link::before {
             @include opacity( $flat-button-focused-opacity );
         }
     }
