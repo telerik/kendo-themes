@@ -1175,6 +1175,7 @@ $card-subtitle-margin-top: $padding-x !default;
 $card-subtitle-text: true-mix($card-text, $card-bg, 45%) !default;
 
 $card-avatar-size: 60px !default;
+$card-img-max-width: 100px !default;
 
 $card-actions-padding-x: $card-padding-x !default;
 $card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;

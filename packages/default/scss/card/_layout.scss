@@ -91,6 +91,7 @@
         padding: $card-header-padding-y $card-header-padding-x;
         border-width: 0 0 $card-header-border-width;
         border-style: solid;
+        display: block;
         overflow: hidden;
         position: relative;
         z-index: 1;
@@ -116,6 +117,7 @@
         padding: $card-footer-padding-y $card-footer-padding-x;
         border-width: $card-footer-border-width 0 0;
         border-style: solid;
+        display: block;
     }
 
     // Body
@@ -123,6 +125,7 @@
         @extend %top-rounded-child !optional;
         @extend %bottom-rounded-child !optional;
         padding: $card-body-padding-y $card-body-padding-x;
+        display: block;
         flex: 1 1 auto;
 
         p {
@@ -154,6 +157,8 @@
 
         .k-card-horizontal & {
             flex-shrink: 0;
+            max-width: $card-img-max-width;
+            object-fit: cover;
         }
     }
 
@@ -267,6 +272,22 @@
         .k-card-horizontal & {
             border-top-width: 0;
             border-left-width: $card-actions-border-width;
+        }
+
+        .k-card-vertical & {
+            &.k-card-actions-start { align-items: flex-start; }
+            &.k-card-actions-end { align-items: flex-end; }
+            &.k-card-actions-center { align-items: center; }
+
+            &.k-card-actions-start,
+            &.k-card-actions-end,
+            &.k-card-actions-center {
+                padding: $card-actions-padding-y $card-actions-padding-x;
+
+                .k-button {
+                    padding: $button-padding-y $button-padding-x;
+                }
+            }
         }
     }
 
