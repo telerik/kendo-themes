@@ -276,16 +276,16 @@
                 left: 0;
 
                 // Variants
-                .k-tabstrip-top & {
+                .k-tabstrip-top > & {
                     border-bottom-width: $tabstrip-indicator-size;
                 }
-                .k-tabstrip-bottom & {
+                .k-tabstrip-bottom > & {
                     border-top-width: $tabstrip-indicator-size;
                 }
-                .k-tabstrip-left & {
+                .k-tabstrip-left > & {
                     border-right-width: $tabstrip-indicator-size;
                 }
-                .k-tabstrip-right & {
+                .k-tabstrip-right > & {
                     border-left-width: $tabstrip-indicator-size;
                 }
             }
