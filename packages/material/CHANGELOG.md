@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.7.0"></a>
+# [3.7.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.6.0...@progress/kendo-theme-material@3.7.0) (2019-12-04)
+
+
+### Bug Fixes
+
+* **scheduler:** add consistent row height in material theme ([7514a63](https://github.com/telerik/kendo-themes/commit/7514a63))
+* **scheduler:** add hover, focus and selected button styles in material theme for blazor ([3671a80](https://github.com/telerik/kendo-themes/commit/3671a80))
+
+
+### Features
+
+* **avatar:** add shape styles ([c140647](https://github.com/telerik/kendo-themes/commit/c140647))
+
+
+
+
 <a name="3.6.0"></a>
 # [3.6.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.5.0...@progress/kendo-theme-material@3.6.0) (2019-11-29)
 

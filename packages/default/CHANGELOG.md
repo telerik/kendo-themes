@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.9.0"></a>
+# [4.9.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.8.0...@progress/kendo-theme-default@4.9.0) (2019-12-04)
+
+
+### Bug Fixes
+
+* **buttongroup:** missing style on focused active ([dccd0d9](https://github.com/telerik/kendo-themes/commit/dccd0d9))
+* **checkbox:** label text misalignment ([d15de44](https://github.com/telerik/kendo-themes/commit/d15de44))
+* **tabstrip:** tab selected styles based on orientation in nested tabstrips ([e0d5ef4](https://github.com/telerik/kendo-themes/commit/e0d5ef4))
+* **toolbar:** remove outline button overrides ([0b6674b](https://github.com/telerik/kendo-themes/commit/0b6674b))
+
+
+### Features
+
+* **avatar:** add shape styles ([c140647](https://github.com/telerik/kendo-themes/commit/c140647))
+* **badge:** add Margin in Inline scenario ([5b58248](https://github.com/telerik/kendo-themes/commit/5b58248))
+
+
+
+
 <a name="4.8.0"></a>
 # [4.8.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.7.0...@progress/kendo-theme-default@4.8.0) (2019-11-29)
 

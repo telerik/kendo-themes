@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.7.0"></a>
+# [4.7.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.6.0...@progress/kendo-theme-bootstrap@4.7.0) (2019-12-04)
+
+
+### Bug Fixes
+
+* **tabstrip:** tab selected styles based on orientation in nested tabstrips ([e0d5ef4](https://github.com/telerik/kendo-themes/commit/e0d5ef4))
+
+
+### Features
+
+* **avatar:** add shape styles ([c140647](https://github.com/telerik/kendo-themes/commit/c140647))
+
+
+
+
 <a name="4.6.0"></a>
 # [4.6.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.5.0...@progress/kendo-theme-bootstrap@4.6.0) (2019-11-29)
 
