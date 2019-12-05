@@ -68,12 +68,6 @@
                 transform: translate(-50%, -50%) rotate(-135deg);
             }
         }
-
-        .k-avatar,
-        .k-avatar-image>* {
-            width: $card-avatar-size;
-            height: $card-avatar-size;
-        }
     }
     .k-card.k-card-flat {
         box-shadow: none;
@@ -108,6 +102,11 @@
         .k-card-title + .k-card-subtitle {
             margin-top: $card-subtitle-margin-top;
         }
+
+        &.k-hbox,
+        &.k-vbox {
+            display: flex;
+        }
     }
 
     // Footer
@@ -118,6 +117,11 @@
         border-width: $card-footer-border-width 0 0;
         border-style: solid;
         display: block;
+
+        &.k-hbox,
+        &.k-vbox {
+            display: flex;
+        }
     }
 
     // Body
@@ -135,6 +139,11 @@
         > .k-last,
         > :last-child {
             margin-bottom: 0;
+        }
+
+        &.k-hbox,
+        &.k-vbox {
+            display: flex;
         }
     }
 
