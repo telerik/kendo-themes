@@ -387,6 +387,25 @@
                 }
             }
 
+            .k-color-value {
+                margin: 0 button-inner-size(2) 0 0;
+                direction: initial;
+                text-align: right;
+            }
+
+            .k-color-value + .k-clear-color {
+                right: auto;
+                left: 0;
+            }
+
+            .k-hue-slider.k-slider-horizontal .k-slider-track {
+                background: linear-gradient( to left, $gradient-rainbow );
+            }
+
+            .k-alpha-slider .k-slider-track {
+                background: url(map-get($data-uris, "alpha-slider-bgr-reversed.png")) center;
+            }
+
         }
     }
 }
