@@ -4,7 +4,7 @@
     // Base
     .k-multiselect {
         @include border-radius();
-        width: $input-default-width;
+        width: $multiselect-width;
         font-size: $input-font-size;
         line-height: $input-line-height;
         text-align: left;
