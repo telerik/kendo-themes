@@ -639,6 +639,8 @@ $numeric-button-pressed-shadow: $button-pressed-shadow !default;
 
 
 // Multiselect
+$multiselect-width: 100% !default;
+
 $multiselect-token-opacity: .07 !default;
 $multiselect-token-focused-opacity: .46 !default;
 $multiselect-token-focused-text: $base-bg !default;
