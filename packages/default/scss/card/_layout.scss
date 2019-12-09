@@ -16,11 +16,23 @@
         .k-card-horizontal > &:first-child {
             @include border-left-radius-only( $card-border-radius );
         }
+
+        .k-card-horizontal.k-rtl > &:first-child,
+        .k-rtl .k-card-horizontal > &:first-child,
+        [dir="rtl"] .k-card-horizontal > &:first-child {
+            @include border-right-radius-only( $card-border-radius );
+        }
     }
 
     %right-rounded-child {
         .k-card-horizontal > &:last-child {
             @include border-right-radius-only( $card-border-radius );
+        }
+
+        .k-card-horizontal.k-rtl > &:last-child,
+        .k-rtl .k-card-horizontal > &:last-child,
+        [dir="rtl"] .k-card-horizontal > &:last-child {
+            @include border-left-radius-only( $card-border-radius );
         }
     }
 
@@ -178,7 +190,6 @@
         margin: 0 0 $card-title-margin-bottom;
     }
 
-
     // Card subtitle
     .k-card-subtitle {
         @include typography-styles( card-subtitle );
@@ -227,6 +238,11 @@
         .k-card > & {
             border-top-width: $card-actions-border-width;
             border-color: inherit;
+        }
+
+        .k-card-horizontal &,
+        .k-card-vertical & {
+            border: 0;
         }
 
         .k-card-horizontal & {
