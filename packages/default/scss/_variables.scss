@@ -1943,6 +1943,9 @@ $breadcrumb-delimiter-icon-padding-y: 0 !default;
 $breadcrumb-link-padding-x: $padding-x !default;
 $breadcrumb-link-padding-y: $padding-y-lg !default;
 
+$breadcrumb-icon-link-padding-x: $breadcrumb-link-padding-x !default;
+$breadcrumb-icon-link-padding-y: $breadcrumb-icon-link-padding-x !default;
+
 $breadcrumb-root-link-spacing: $breadcrumb-link-padding-x !default;
 $breadcrumb-link-icon-spacing: $icon-spacing !default;
 
