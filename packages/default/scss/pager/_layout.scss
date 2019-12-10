@@ -15,7 +15,7 @@
         .k-link,
         .k-state-selected {
             padding: $pager-buttons-padding;
-            width: button-size();
+            min-width: button-size();
             height: button-size();
             box-sizing: border-box;
             display: inline-flex;
