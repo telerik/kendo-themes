@@ -26,4 +26,19 @@
             padding: 0;
         }
     }
+
+    .k-context-menu-popup {
+        > .k-popup:not(.k-menu-popup) {
+            padding: 0;
+        }
+
+        .k-context-menu {
+            @include border-radius( $border-radius );
+        }
+
+        .k-header {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+    }
 }
