@@ -324,9 +324,11 @@
                 margin-right: calc( #{$icon-size / 2} - #{$cell-padding-x} );
             }
 
-            .k-grid-search {
-                float: left;
-            }
+           
+      .k-grid-search {
+                  flex-direction: row-reverse;
+        }
+
 
             .k-column-resizer {
                 left: 0;
