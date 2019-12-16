@@ -223,3 +223,13 @@ $widget-border-width: 1px !default;
     }
 
 }
+
+@include exports( "common/placeholder" ) {
+
+    .k-placeholder-line {
+        width: $placeholder-line-width;
+        height: $placeholder-line-height;
+        background-color: $placeholder-bg;
+        display: inline-block;
+    }
+}
