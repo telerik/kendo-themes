@@ -10,3 +10,11 @@ $menu-scrolling-icon: rgba( $header-text, .5 ) !default;
 $menu-scrolling-icon-hover: rgba( $header-text, .7 ) !default;
 
 @import "~@progress/kendo-theme-default/scss/menu/_theme.scss";
+
+@include exports("menu/theme/bootstrap") {
+    .k-context-menu-popup {
+        .k-header {
+            color: inherit;
+        }
+    }
+}

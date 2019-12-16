@@ -171,6 +171,10 @@ $image-spacing: 8px !default;
     }
     .k-context-menu-popup {
         z-index: 12000;
+
+        > .k-popup:not(.k-menu-popup) {
+            border: 0;
+        }
     }
 
 
