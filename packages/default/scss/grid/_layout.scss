@@ -96,6 +96,10 @@
             &:focus {
                 outline: none;
             }
+
+            .k-placeholder-line {
+                width: $grid-cell-placeholder-line-width;
+            }
         }
         th {
             padding: $grid-header-padding-y $grid-header-padding-x;

@@ -324,6 +324,12 @@ $header-selected-border: $selected-border !default;
 $header-selected-gradient: null !default;
 
 
+// Placeholder
+$placeholder-line-width: 100% !default;
+$placeholder-line-height: 10px !default;
+$placeholder-bg: rgba(0, 0, 0, .1) !default;
+
+
 // Button
 /// The background of the buttons.
 /// @group buttons
@@ -1001,6 +1007,8 @@ $grid-cell-padding-x: $grid-padding-x !default;
 $grid-cell-padding-y: $grid-padding-y !default;
 $grid-cell-horizontal-border-width: 1px !default;
 $grid-cell-vertical-border-width: 1px !default;
+
+$grid-cell-placeholder-line-width: 80% !default;
 
 $grid-bg: $component-bg !default;
 $grid-text: $component-text !default;
