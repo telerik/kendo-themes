@@ -35,8 +35,8 @@
                         </a>
                     </div>
                     <div class="k-stretched-view k-content">
-                        <form class="k-filter-menu k-mobile-list">
-                            <ul>
+                        <form class="k-filter-menu">
+                            <ul class="k-reset">
                                 <li class="k-textbox k-space-right">
                                     <input placeholder="Search">
                                     <span class="k-icon k-i-zoom"></span>
@@ -48,16 +48,21 @@
                                     <div class="k-filter-selected-items">0 items selected</div>
                                 </li>
                                 <li>
-                                    <ul class="k-multicheck-wrap">
-                                        <li class="k-item"><label class="k-label">
-                                            <input type="checkbox" class="k-check" checked>
-                                            <span class="k-item-title">Chai</span>
-                                        </label>
+                                    <ul class="k-multicheck-wrap k-listgroup k-listgroup-flush">
+                                        <li class="k-item k-listgroup-item">
+                                            <label class="k-label k-listgroup-form-row">
+                                                <span class="k-item-title k-listgroup-form-field-label">Chai</span>
+                                                <span class="k-listgroup-form-field-wrapper">
+                                                    <input type="checkbox" class="k-checkbox" checked />
+                                                </span>
+                                            </label>
                                         </li>
-                                        <li class="k-item">
-                                            <label class="k-label">
-                                                <input type="checkbox" class="k-check">
-                                                <span class="k-item-title">Chang</span>
+                                        <li class="k-item k-listgroup-item">
+                                            <label class="k-label k-listgroup-form-row">
+                                                <span class="k-item-title k-listgroup-form-field-label">Chang</span>
+                                                <span class="k-listgroup-form-field-wrapper">
+                                                    <input type="checkbox" class="k-checkbox" />
+                                                </span>
                                             </label>
                                         </li>
                                     </ul>
