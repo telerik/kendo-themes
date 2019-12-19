@@ -622,6 +622,13 @@
     .k-i-hand::before { content: "\e158"; }
     .k-i-cursor::before { content: "\e159"; }
     .k-i-home::before { content: "\e034"; }
+    .k-i-file-video::before { content: "\e93b"; }
+    .k-i-file-audio::before { content: "\e93c"; }
+    .k-i-file-image::before { content: "\e93d"; }
+    .k-i-file-presentation::before { content: "\e93e"; }
+    .k-i-file-data::before { content: "\e93f"; }
+    .k-i-file-disc-image::before { content: "\e940"; }
+    .k-i-file-programming::before { content: "\e941"; }
 
 
     // Aliases
