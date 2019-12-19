@@ -259,6 +259,126 @@
         </section>
 
         <section>
+            <!-- File restrictions set with group icons-->
+            <kendo-upload dir="ltr" class="k-widget k-upload k-header">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button">
+                        <input type="file" name="files" multiple="multiple" dir="ltr" />
+                        <span>Select files...</span>
+                    </div>
+                    <em class="k-dropzone-hint">Drop files here to upload</em>
+                    <kendo-upload-status-total>
+                        <strong class="k-upload-status k-upload-status-total">
+                            <span class="k-i-loading k-icon"></span> Uploading...
+                        </strong>
+                    </kendo-upload-status-total>
+                </div>
+                <ul class="k-upload-files k-reset">
+                    <li class="k-file k-file-invalid">
+                        <kendo-upload-file-list-single-item class="k-file-single">
+                            <span class="k-progress" style="width: 0%; opacity: 0;"></span>
+                            <span class="k-file-invalid-group-wrapper">
+                                <span class="k-file-group k-icon k-i-file-audio"></span>
+                                <span class="k-file-state"></span>
+                            </span>
+                            <span class="k-file-name-size-wrapper">
+                                <span class="k-file-name k-file-name-invalid">Audio.mp3</span>
+                                <span class="k-file-validation-message">File type not allowed.</span>
+                            </span>
+                            <kendo-upload-file-list-item-action-button>
+                                <strong class="k-upload-status">
+                                    <button type="button" class="k-button k-upload-action">
+                                        <span class="k-icon k-delete k-i-x"></span>
+                                    </button>
+                                </strong>
+                            </kendo-upload-file-list-item-action-button>
+                        </kendo-upload-file-list-single-item>
+                    </li>
+                    <li class="k-file k-file-progress">
+                        <kendo-upload-file-list-single-item class="k-file-single">
+                            <span class="k-progress" style="width: 30%; opacity: 1;"></span>
+                            <span class="k-file-group-wrapper">
+                                <span class="k-file-group k-icon k-i-file-video"></span>
+                                <span class="k-file-state"></span>
+                            </span>
+                            <span class="k-file-name-size-wrapper">
+                                <span class="k-file-name">Video.x264</span>
+                                <span class="k-file-size">0.49 KB</span>
+                            </span>
+                            <kendo-upload-file-list-item-action-button>
+                                <strong class="k-upload-status">
+                                    <span class="k-upload-pct">30%</span>
+                                    <button type="button" class="k-button k-upload-action">
+                                        <span class="k-icon k-cancel k-i-deny"></span>
+                                    </button>
+                                </strong>
+                            </kendo-upload-file-list-item-action-button>
+                        </kendo-upload-file-list-single-item>
+                    </li>
+                </ul>
+            </kendo-upload>
+        </section>
+
+        <!-- Successfully uploaded files with group type icon -->
+        <kendo-upload dir="ltr" class="k-widget k-upload k-header">
+            <div class="k-dropzone">
+                <div class="k-button k-upload-button">
+                    <input type="file" name="files" multiple="multiple" dir="ltr" />
+                    <span>Select files...</span>
+                </div>
+                <em class="k-dropzone-hint">Drop files here to upload</em>
+                <kendo-upload-status-total>
+                    <strong class="k-upload-status k-upload-status-total">
+                        <span class="k-i-checkmark k-icon"></span> Done
+                    </strong>
+                </kendo-upload-status-total>
+            </div>
+            <ul class="k-upload-files k-reset">
+                <li class="k-file k-file-success">
+                    <kendo-upload-file-list-single-item class="k-file-single">
+                        <span class="k-progress" style="width: 100%; opacity: 0;"></span>
+                        <span class="k-file-group-wrapper">
+                            <span class="k-file-group k-icon k-i-file-audio"></span>
+                            <span class="k-file-state"></span>
+                        </span>
+                        <span class="k-file-name-size-wrapper">
+                            <span class="k-file-name">Audio.mp3</span>
+                            <span class="k-file-size">0.00 KB</span>
+                        </span>
+                        <kendo-upload-file-list-item-action-button>
+                            <strong class="k-upload-status">
+                                <button type="button" class="k-button k-upload-action">
+                                    <span class="k-icon k-delete k-i-x"></span>
+                                </button>
+                            </strong>
+                        </kendo-upload-file-list-item-action-button>
+                    </kendo-upload-file-list-single-item>
+                </li>
+                <li class="k-file k-file-success">
+                    <kendo-upload-file-list-single-item class="k-file-single">
+                        <span class="k-progress" style="width: 100%; opacity: 0;"></span>
+                        <span class="k-file-group-wrapper">
+                            <span class="k-file-group k-icon k-i-file-video"></span>
+                            <span class="k-file-state"></span>
+                        </span>
+                        <span class="k-file-name-size-wrapper">
+                            <span class="k-file-name">Movie.x264</span>
+                            <span class="k-file-size">0.00 KB</span>
+                        </span>
+                        <kendo-upload-file-list-item-action-button>
+                            <strong class="k-upload-status">
+                                <button type="button" class="k-button k-upload-action">
+                                    <span class="k-icon k-delete k-i-x"></span>
+                                </button>
+                            </strong>
+                        </kendo-upload-file-list-item-action-button>
+                    </kendo-upload-file-list-single-item>
+                </li>
+            </ul>
+        </kendo-upload>
+    </section>
+
+        <section>
             <!-- Drag and drop file text in the dropzone -->
             <kendo-upload dir="ltr" class="k-widget k-upload k-header">
                 <div class="k-dropzone k-dropzone-active">

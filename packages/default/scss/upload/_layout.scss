@@ -184,6 +184,22 @@
                 top: $upload-item-padding-y;
             }
 
+            .k-file-group-wrapper,
+            .k-file-invalid-group-wrapper,
+            .k-multiple-files-group-wrapper,
+            .k-multiple-files-invalid-group-wrapper {
+                position: absolute;
+                top: $upload-item-padding-y;
+
+                .k-file-group {
+                    font-size: $upload-group-icon-size;
+                }
+
+                .k-file-state {
+                    position: absolute;
+                }
+            }
+
             .k-file-invalid-extension-wrapper,
             .k-multiple-files-invalid-extension-wrapper {
                 font-size: 1.2em;
