@@ -1143,13 +1143,6 @@
             display: block;
         }
 
-        // Radio legacy styles
-        .k-radio-legacy-list {
-            margin: $item-spacing 0;
-            width: 100%;
-            display: block;
-        }
-
         .k-widget.k-filter-and {
             width: 6em;
             margin: (2 * $item-spacing) 0;
@@ -1228,12 +1221,6 @@
 
         .k-checkbox,
         .k-checkbox-label {
-            vertical-align: middle;
-        }
-
-        // Checkbox legacy styles
-        .k-checkbox-legacy,
-        .k-checkbox-legacy-label {
             vertical-align: middle;
         }
     }

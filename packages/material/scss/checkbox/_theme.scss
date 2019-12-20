@@ -21,27 +21,3 @@
 
     }
 }
-
-
-@include exports("checkbox/theme/material/legacy") {
-
-    // Checkbox legacy styles
-    .k-checkbox-legacy-label {
-
-        // Disabled state
-        .k-checkbox-legacy:disabled + & {
-            color: if($is-dark-theme, $light-secondary-text, $dark-secondary-text);
-            opacity: 1;
-            filter: none;
-        }
-
-
-        // Ripple
-        .k-ripple-blob {
-            opacity: .2;
-            background-color: $checkbox-checked-bg;
-        }
-
-    }
-
-}

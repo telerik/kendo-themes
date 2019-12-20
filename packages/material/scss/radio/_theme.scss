@@ -21,27 +21,3 @@
 
     }
 }
-
-
-@include exports("radio/theme/material/legacy") {
-
-    // Radio legacy styles
-    .k-radio-legacy-label {
-
-        // Disabled state
-        .k-radio-legacy:disabled + & {
-            color: if($is-dark-theme, $light-secondary-text, $dark-secondary-text);
-            opacity: 1;
-            filter: none;
-        }
-
-
-        // Ripple
-        .k-ripple-blob {
-            opacity: .2;
-            background-color: $radio-checked-bg;
-        }
-
-    }
-
-}
