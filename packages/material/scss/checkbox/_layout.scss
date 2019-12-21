@@ -13,11 +13,15 @@
         left: $checkmark-offset;
         transform: scale(1);
     }
-    .k-checkbox:checked::before,
-    .k-checkbox:indeterminate::before,
-    .k-checkbox.k-state-indeterminate::before {
+    .k-checkbox:checked::before {
         max-width: $checkbox-icon-size;
         transform: scale(1);
+    }
+    .k-checkbox:indeterminate::before,
+    .k-checkbox.k-state-indeterminate::before {
+        max-width: $checkbox-dash-width;
+        top: 50%;
+        left: 50%;
     }
 
 
@@ -28,25 +32,12 @@
             left: auto;
             right: $checkmark-offset;
         }
-    }
-}
-
-
-
-
-@include exports("checkbox/layout/material/legacy") {
-
-    // animate tick mark with max-width transition
-
-    .k-checkbox-legacy-label::after {
-        max-width: 0;
-        text-indent: (($checkbox-size - $checkbox-icon-size) / 2);
-        justify-content: flex-start;
-        transition: max-width linear 280ms;
-
-        .k-checkbox-legacy:checked + &,
-        .k-checkbox-legacy:indeterminate + & {
-            max-width: $checkbox-size;
+        .k-checkbox:indeterminate::before,
+        .k-checkbox.k-state-indeterminate::before {
+            max-width: $checkbox-dash-width;
+            top: 50%;
+            left: 50%;
+            right: auto;
         }
     }
 }

@@ -62,11 +62,11 @@
         .k-scheduler-edit-form {
 
             .k-header {
+                color: $adaptive-menu-text;
                 background-color: $adaptive-menu-bg;
 
-                &,
                 .k-link {
-                    color: $adaptive-menu-text;
+                    color: inherit;
                 }
             }
 
@@ -81,89 +81,19 @@
             .k-scheduler-resetSeries { // sass-lint:disable-line class-name-format
                 color: $adaptive-menu-clear-text;
             }
+
         }
 
         .k-column-menu {
 
-            .k-state-selected .k-link {
+            .k-listgroup-item.k-state-selected {
                 color: $adaptive-grid-sort-text;
+                background: none;
+            }
+            .k-listgroup-item.k-state-selected .k-link {
+                color: inherit;
             }
         }
 
-        .k-filter-menu,
-        .k-scheduler-edit-form {
-
-            .k-check {
-                color: $adaptive-content-text;
-                border-color: $adaptive-content-text;
-
-                &:focus,
-                &.k-state-focused {
-                    box-shadow: $primary-button-focused-shadow;
-                }
-            }
-        }
-
-        .k-mobile-list {
-
-            .k-item {
-                background-color: $bg-color;
-                border-bottom: 1px solid $adaptive-menu-item-border;
-
-                > .k-link,
-                > .k-label,
-                .k-edit-label.k-check,
-                .k-recur-view .k-check {
-
-                    &:active {
-                        color: $hovered-text;
-                        background-color: $hovered-bg;
-                        border-color: $hovered-border;
-                    }
-                }
-            }
-
-            .k-item {
-
-                .k-state-selected {
-                    background-color: $selected-bg;
-                    border-top-color: $selected-border;
-                }
-
-                &:first-child,
-                &.k-clear-wrap {
-                    box-shadow: inset 0 1px 0 $adaptive-menu-item-border;
-                }
-            }
-
-            &.k-filter-menu {
-
-                .k-space-right {
-
-                    > input {
-                        background: $bg-color;
-                        border-color: $base-border;
-
-                        &:focus {
-                            box-shadow: $button-focused-shadow;
-                        }
-                    }
-                }
-            }
-
-            .k-check:checked {
-                font-family: "WebComponentsIcons";
-
-                &::before {
-                    content: "\e118";
-                }
-            }
-
-            .k-list-title,
-            .k-filter-help-text,
-            .k-filter-selected-items {
-                color: $adaptive-menu-title-text;
-            }
-        }
     }
 }

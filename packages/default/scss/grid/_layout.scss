@@ -1143,13 +1143,6 @@
             display: block;
         }
 
-        // Radio legacy styles
-        .k-radio-legacy-list {
-            margin: $item-spacing 0;
-            width: 100%;
-            display: block;
-        }
-
         .k-widget.k-filter-and {
             width: 6em;
             margin: (2 * $item-spacing) 0;
@@ -1165,17 +1158,6 @@
         .k-item {}
         .k-item + .k-item {
             margin-top: ($spacer-y / 2);
-        }
-
-        .k-label {
-            margin: 0;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-
-            input {
-                margin: 0 ($spacer-y / 4);
-            }
         }
     }
     .k-filter-selected-items {
@@ -1225,17 +1207,6 @@
         display: block;
         margin: 0;
         cursor: pointer;
-
-        .k-checkbox,
-        .k-checkbox-label {
-            vertical-align: middle;
-        }
-
-        // Checkbox legacy styles
-        .k-checkbox-legacy,
-        .k-checkbox-legacy-label {
-            vertical-align: middle;
-        }
     }
 
     .k-columnmenu-item {
