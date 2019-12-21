@@ -701,8 +701,6 @@ $checkbox-line-height: $checkbox-size + $checkbox-border-width !default;
 $checkbox-indeterminate-style: square !default;
 $checkbox-dash-height: $checkbox-size / 10 !default;
 $checkbox-dash-width: $checkbox-size - ( $checkbox-border-width * 4 ) !default;
-$checkbox-dash-offset-x: $checkbox-border-width * 2 !default;
-$checkbox-dash-offset-y: ( $checkbox-size - $checkbox-dash-height ) / 2 !default;
 
 $checkbox-bg: $input-bg !default;
 $checkbox-text: transparent !default;
