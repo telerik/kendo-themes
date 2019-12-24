@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>File Manager</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area">
+
+        <h3>Grid View</h3>
+        <div id="filemanager" class="k-widget k-filemanager">
+            <!-- Header -->
+            <div class="k-filemanager-header">
+                <div class="k-filemanager-toolbar k-toolbar k-widget k-toolbar-resizable">
+                    <div class="k-overflow-anchor k-button" style="visibility: hidden; width: 1px;">
+                        <span class="k-icon k-i-more-vertical"></span>
+                    </div>
+                    <a class="k-button k-toolbar-first-visible" >New Folder</a>
+                    <a class="k-button">Upload</a>
+                    <div class="k-button-group">
+                        <a class="k-toggle-button k-state-active k-button k-button-icon k-group-start">
+                            <span class="k-icon k-i-sort-asc-sm"></span>
+                        </a>
+                        <a class="k-toggle-button k-button k-button-icon k-group-end">
+                            <span class="k-icon k-i-sort-desc-sm"></span>
+                        </a>
+                    </div>
+                    <div class="k-split-button">
+                        <a class="k-button">Sort By</a>
+                        <a class="k-button k-split-button-arrow">
+                            <span class="k-icon k-i-arrow-60-down"></span>
+                        </a>
+                    </div>
+                    <div class="k-button-group">
+                        <a class="k-toggle-button k-button k-button-icon k-group-start">
+                            <span class="k-icon k-i-grid-layout"></span>
+                        </a>
+                        <a class="k-toggle-button k-state-active k-button k-button-icon k-group-end">
+                            <span class="k-icon k-i-grid"></span>
+                        </a>
+                    </div>
+                    <div class="k-spacer">&nbsp;</div>
+                    <div class="k-filemanager-details-toggle">
+                        <label>View Details</label>
+                        <span class="k-switch k-widget k-switch-off">
+                            <input type="checkbox">
+                            <span class="k-switch-container">
+                                <span class="k-switch-label-on">On</span>
+                                <span class="k-switch-label-off">Off</span>
+                                <span class="k-switch-handle"></span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="k-filemanager-search-tool k-textbox k-toolbar-last-visible" >
+                        <input class="k-input" placeholder="Search">
+                        <span class="k-input-icon">
+                            <span class="k-icon k-i-search"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="k-filemanager-content-container" >
+                <!-- Navigation -->
+                <div class="k-filemanager-navigation">
+                    <div class="k-filemanager-navigation-container">
+                        <div class="k-filemanager-treeview k-widget k-treeview">
+                            <ul class="k-group k-treeview-lines">
+                                <li role="treeitem" class="k-item k-first">
+                                    <div class="k-top">
+                                        <span class="k-in">SubFolder</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item k-last">
+                                    <div class="k-bot">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">SubFolder(1)</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="k-filemanager-content">
+                    <nav class="k-filemanager-breadcrumb k-widget k-breadcrumb">
+                        <div class="k-breadcrumb-input-container" style="display: none;">
+                            <input class="k-textbox">
+                        </div>
+                        <ol class="k-breadcrumb-container">
+                            <li class="k-breadcrumb-item k-breadcrumb-root-item">
+                                <a href="#" class="k-breadcrumb-root-link  k-breadcrumb-icon-link">
+                                    <span class="k-icon k-i-home "></span>
+                                </a>
+                                <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
+                                <span class="k-breadcrumb-delimiter-icon k-hidden k-icon k-i-arrow-chevron-right"></span>
+                            </li>
+                            <li class="k-breadcrumb-item">
+                                <a href="#" class="k-breadcrumb-link">Folder 1</a>
+                                <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
+                            </li>
+                            <li class="k-breadcrumb-item">
+                                <a href="#" class="k-breadcrumb-link">Folder 2</a>
+                                <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
+                            </li>
+                            <li class="k-breadcrumb-item  k-breadcrumb-last-item">
+                                <a href="#" class="k-breadcrumb-link k-state-disabled">Folder 3</a>
+                            </li>
+                        </ol>
+                    </nav>
+
+                    <!-- View -->
+                    <div class="k-filemanager-view k-filemanager-view-grid">
+                        <div data-role="grid" class="k-filemanager-grid k-grid k-widget k-grid-display-block k-editable">
+                            <div class="k-grid-header" style="padding-right: 17px;">
+                                <div class="k-grid-header-wrap k-auto-scrollable">
+                                    <table role="grid">
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead role="rowgroup">
+                                            <tr role="row">
+                                                <th class="k-header k-sorted">
+                                                    <a class="k-link" href="#">
+                                                        Name
+                                                        <span class="k-icon k-i-sort-asc-sm"></span>
+                                                    </a>
+                                                </th>
+                                                <th class="k-header" data-role="columnsorter">
+                                                    <a class="k-link" href="#">Date Created</a>
+                                                </th>
+                                                <th class="k-header" data-role="columnsorter">
+                                                    <a class="k-link" href="#">File Size</a>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="k-grid-content k-auto-scrollable">
+                                <table class="k-selectable">
+                                    <colgroup>
+                                        <col class="k-sorted">
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tbody role="rowgroup">
+                                        <tr>
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-folder"></span>
+                                                </div>
+                                                <div class="file-name">New Folder<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">0</td>
+                                        </tr>
+                                        <tr class="k-alt">
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-folder"></span>
+                                                </div>
+                                                <div class="file-name">New Folder<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">0</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-file"></span>
+                                                </div>
+                                                <div class="file-name">a100.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">73289</td>
+                                        </tr>
+                                        <tr class="k-alt">
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-folder"></span>
+                                                </div>
+                                                <div class="file-name">aeroviewer.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">15289</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-file"></span>
+                                                </div>
+                                                <div class="file-name">a100.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">73289</td>
+                                        </tr>
+                                        <tr class="k-alt">
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-folder"></span>
+                                                </div>
+                                                <div class="file-name">aeroviewer.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">15289</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-file"></span>
+                                                </div>
+                                                <div class="file-name">a100.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">73289</td>
+                                        </tr>
+                                        <tr class="k-alt">
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-folder"></span>
+                                                </div>
+                                                <div class="file-name">aeroviewer.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">15289</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Preview -->
+                <div class="k-filemanager-preview" style="display: none;">
+                    <div class="k-filemanager-preview-container">
+                        <div class="k-file-info">
+                            <div class="k-file-preview-wrapper">
+                                <span class="k-icon k-i-file"></span>
+                            </div>
+                            <div class="k-file-title-wrapper">
+                                <span class="k-file-title">chart-wrapper-small.png</span>
+                            </div>
+                            <dl class="k-file-meta-wrapper">
+                                <dt class="k-file-meta-label">Type:</dt>
+                                <dd class="k-file-meta-value k-file-type">.png</dd>
+                                <dt class="k-file-meta-label">Size:</dt>
+                                <dd class="k-file-meta-value k-file-size">6.14 KB</dd>
+                                <dt class="k-file-meta-label">Date Created:</dt>
+                                <dd class="k-file-meta-value k-file-created">12/13/2019 12:22:04 PM</dd>
+                                <dt class="k-file-meta-label">Date Modified:</dt>
+                                <dd class="k-file-meta-value k-file-modified">11/25/2019 3:23:45 PM</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Grid View Selection</h3>
+        <div id="filemanager" class="k-widget k-filemanager">
+            <!-- Header -->
+            <div class="k-filemanager-header">
+                <div class="k-filemanager-toolbar k-toolbar k-widget k-toolbar-resizable">
+                    <div class="k-overflow-anchor k-button" style="visibility: hidden; width: 1px;">
+                        <span class="k-icon k-i-more-vertical"></span>
+                    </div>
+                    <a class="k-button k-toolbar-first-visible" >New Folder</a>
+                    <a class="k-button">Upload</a>
+                    <div class="k-button-group">
+                        <a class="k-toggle-button k-state-active k-button k-button-icon k-group-start">
+                            <span class="k-icon k-i-sort-asc-sm"></span>
+                        </a>
+                        <a class="k-toggle-button k-button k-button-icon k-group-end">
+                            <span class="k-icon k-i-sort-desc-sm"></span>
+                        </a>
+                    </div>
+                    <div class="k-split-button">
+                        <a class="k-button">Sort By</a>
+                        <a class="k-button k-split-button-arrow">
+                            <span class="k-icon k-i-arrow-60-down"></span>
+                        </a>
+                    </div>
+                    <div class="k-button-group">
+                        <a class="k-toggle-button k-button k-button-icon k-group-start">
+                            <span class="k-icon k-i-grid-layout"></span>
+                        </a>
+                        <a class="k-toggle-button k-state-active k-button k-button-icon k-group-end">
+                            <span class="k-icon k-i-grid"></span>
+                        </a>
+                    </div>
+                    <div class="k-spacer">&nbsp;</div>
+                    <div class="k-filemanager-details-toggle">
+                        <label>View Details</label>
+                        <span class="k-switch k-widget k-switch-off">
+                            <input type="checkbox">
+                            <span class="k-switch-container">
+                                <span class="k-switch-label-on">On</span>
+                                <span class="k-switch-label-off">Off</span>
+                                <span class="k-switch-handle"></span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="k-filemanager-search-tool k-textbox k-toolbar-last-visible" >
+                        <input class="k-input" placeholder="Search">
+                        <span class="k-input-icon">
+                            <span class="k-icon k-i-search"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="k-filemanager-content-container" >
+                <!-- Navigation -->
+                <div class="k-filemanager-navigation">
+                    <div class="k-filemanager-navigation-container">
+                        <div class="k-filemanager-treeview k-widget k-treeview">
+                            <ul class="k-group k-treeview-lines">
+                                <li role="treeitem" class="k-item k-first">
+                                    <div class="k-top">
+                                        <span class="k-in k-state-selected">SubFolder</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item k-last">
+                                    <div class="k-bot">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">SubFolder(1)</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="k-filemanager-content">
+                    <nav class="k-filemanager-breadcrumb k-widget k-breadcrumb">
+                        <div class="k-breadcrumb-input-container" style="display: none;">
+                            <input class="k-textbox">
+                        </div>
+                        <ol class="k-breadcrumb-container">
+                            <li class="k-breadcrumb-item k-breadcrumb-root-item">
+                                <a href="#" class="k-breadcrumb-root-link  k-breadcrumb-icon-link">
+                                    <span class="k-icon k-i-home "></span>
+                                </a>
+                                <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
+                                <span class="k-breadcrumb-delimiter-icon k-hidden k-icon k-i-arrow-chevron-right"></span>
+                            </li>
+                            <li class="k-breadcrumb-item  k-breadcrumb-last-item">
+                                <a href="#" class="k-breadcrumb-link k-state-disabled">SubFolder</a>
+                            </li>
+                        </ol>
+                    </nav>
+
+                    <!-- View -->
+                    <div class="k-filemanager-view k-filemanager-view-grid">
+                        <div data-role="grid" class="k-filemanager-grid k-grid k-widget k-grid-display-block k-editable">
+                            <div class="k-grid-header" style="padding-right: 17px;">
+                                <div class="k-grid-header-wrap k-auto-scrollable">
+                                    <table role="grid">
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead role="rowgroup">
+                                            <tr role="row">
+                                                <th class="k-header k-sorted">
+                                                    <a class="k-link" href="#">
+                                                        Name
+                                                        <span class="k-icon k-i-sort-asc-sm"></span>
+                                                    </a>
+                                                </th>
+                                                <th class="k-header" data-role="columnsorter">
+                                                    <a class="k-link" href="#">Date Created</a>
+                                                </th>
+                                                <th class="k-header" data-role="columnsorter">
+                                                    <a class="k-link" href="#">File Size</a>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="k-grid-content k-auto-scrollable">
+                                <table class="k-selectable">
+                                    <colgroup>
+                                        <col class="k-sorted">
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tbody role="rowgroup">
+                                        <tr>
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-folder"></span>
+                                                </div>
+                                                <div class="file-name">New Folder<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">0</td>
+                                        </tr>
+                                        <tr class="k-alt">
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-folder"></span>
+                                                </div>
+                                                <div class="file-name">New Folder<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">0</td>
+                                        </tr>
+                                        <tr class="k-state-selected">
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-file"></span>
+                                                </div>
+                                                <div class="file-name">a100.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">73289</td>
+                                        </tr>
+                                        <tr class="k-alt k-state-selected">
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-folder"></span>
+                                                </div>
+                                                <div class="file-name">aeroviewer.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">15289</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-file"></span>
+                                                </div>
+                                                <div class="file-name">a100.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">73289</td>
+                                        </tr>
+                                        <tr class="k-alt">
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-folder"></span>
+                                                </div>
+                                                <div class="file-name">aeroviewer.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">15289</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-file"></span>
+                                                </div>
+                                                <div class="file-name">a100.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">73289</td>
+                                        </tr>
+                                        <tr class="k-alt">
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-folder"></span>
+                                                </div>
+                                                <div class="file-name">aeroviewer.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">15289</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Preview -->
+                <div class="k-filemanager-preview" style="display: none;">
+                    <div class="k-filemanager-preview-container">
+                        <div class="k-file-info">
+                            <div class="k-file-preview-wrapper">
+                                <span class="k-icon k-i-file"></span>
+                            </div>
+                            <div class="k-file-title-wrapper">
+                                <span class="k-file-title">chart-wrapper-small.png</span>
+                            </div>
+                            <dl class="k-file-meta-wrapper">
+                                <dt class="k-file-meta-label">Type:</dt>
+                                <dd class="k-file-meta-value k-file-type">.png</dd>
+                                <dt class="k-file-meta-label">Size:</dt>
+                                <dd class="k-file-meta-value k-file-size">6.14 KB</dd>
+                                <dt class="k-file-meta-label">Date Created:</dt>
+                                <dd class="k-file-meta-value k-file-created">12/13/2019 12:22:04 PM</dd>
+                                <dt class="k-file-meta-label">Date Modified:</dt>
+                                <dd class="k-file-meta-value k-file-modified">11/25/2019 3:23:45 PM</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Grid View Resizing</h3>
+        <div id="filemanager" class="k-widget k-filemanager">
+            <!-- Header -->
+            <div class="k-filemanager-header">
+                <div class="k-filemanager-toolbar k-toolbar k-widget k-toolbar-resizable">
+                    <div class="k-overflow-anchor k-button" style="visibility: hidden; width: 1px;">
+                        <span class="k-icon k-i-more-vertical"></span>
+                    </div>
+                    <a class="k-button k-toolbar-first-visible" >New Folder</a>
+                    <a class="k-button">Upload</a>
+                    <div class="k-button-group">
+                        <a class="k-toggle-button k-state-active k-button k-button-icon k-group-start">
+                            <span class="k-icon k-i-sort-asc-sm"></span>
+                        </a>
+                        <a class="k-toggle-button k-button k-button-icon k-group-end">
+                            <span class="k-icon k-i-sort-desc-sm"></span>
+                        </a>
+                    </div>
+                    <div class="k-split-button">
+                        <a class="k-button">Sort By</a>
+                        <a class="k-button k-split-button-arrow">
+                            <span class="k-icon k-i-arrow-60-down"></span>
+                        </a>
+                    </div>
+                    <div class="k-button-group">
+                        <a class="k-toggle-button k-button k-button-icon k-group-start">
+                            <span class="k-icon k-i-grid-layout"></span>
+                        </a>
+                        <a class="k-toggle-button k-state-active k-button k-button-icon k-group-end">
+                            <span class="k-icon k-i-grid"></span>
+                        </a>
+                    </div>
+                    <div class="k-spacer">&nbsp;</div>
+                    <div class="k-filemanager-details-toggle">
+                        <label>View Details</label>
+                        <span class="k-switch k-widget k-switch-off">
+                            <input type="checkbox">
+                            <span class="k-switch-container">
+                                <span class="k-switch-label-on">On</span>
+                                <span class="k-switch-label-off">Off</span>
+                                <span class="k-switch-handle"></span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="k-filemanager-search-tool k-textbox k-toolbar-last-visible" >
+                        <input class="k-input" placeholder="Search">
+                        <span class="k-input-icon">
+                            <span class="k-icon k-i-search"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="k-filemanager-content-container" >
+                <!-- Navigation -->
+                <div class="k-filemanager-navigation" style="width: 234px;">
+                    <div class="k-filemanager-navigation-container">
+                        <div class="k-filemanager-treeview k-widget k-treeview">
+                            <ul class="k-group k-treeview-lines">
+                                <li role="treeitem" class="k-item k-first">
+                                    <div class="k-top">
+                                        <span class="k-in k-state-selected">SubFolder</span>
+                                    </div>
+                                </li>
+                                <li role="treeitem" class="k-item k-last">
+                                    <div class="k-bot">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in">SubFolder(1)</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resizing Handle -->
+                <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal k-filemanager-splitbar-navigation k-state-focused">
+                    <span class="k-icon k-resize-handle"></span>
+                </div>
+
+                <!-- Content -->
+                <div class="k-filemanager-content">
+                    <nav class="k-filemanager-breadcrumb k-widget k-breadcrumb">
+                        <div class="k-breadcrumb-input-container" style="display: none;">
+                            <input class="k-textbox">
+                        </div>
+                        <ol class="k-breadcrumb-container">
+                            <li class="k-breadcrumb-item k-breadcrumb-root-item">
+                                <a href="#" class="k-breadcrumb-root-link  k-breadcrumb-icon-link">
+                                    <span class="k-icon k-i-home "></span>
+                                </a>
+                                <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
+                                <span class="k-breadcrumb-delimiter-icon k-hidden k-icon k-i-arrow-chevron-right"></span>
+                            </li>
+                            <li class="k-breadcrumb-item  k-breadcrumb-last-item">
+                                <a href="#" class="k-breadcrumb-link k-state-disabled">SubFolder</a>
+                            </li>
+                        </ol>
+                    </nav>
+
+                    <!-- View -->
+                    <div class="k-filemanager-view k-filemanager-view-grid">
+                        <div data-role="grid" class="k-filemanager-grid k-grid k-widget k-grid-display-block k-editable" style="height: 200px;">
+                            <div class="k-grid-header" style="padding-right: 17px;">
+                                <div class="k-grid-header-wrap k-auto-scrollable">
+                                    <table role="grid">
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead role="rowgroup">
+                                            <tr role="row">
+                                                <th class="k-header k-sorted">
+                                                    <a class="k-link" href="#">
+                                                        Name
+                                                        <span class="k-icon k-i-sort-asc-sm"></span>
+                                                    </a>
+                                                </th>
+                                                <th class="k-header" data-role="columnsorter">
+                                                    <a class="k-link" href="#">Date Created</a>
+                                                </th>
+                                                <th class="k-header" data-role="columnsorter">
+                                                    <a class="k-link" href="#">File Size</a>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="k-grid-content k-auto-scrollable" style="height: 153px;">
+                                <table class="k-selectable">
+                                    <colgroup>
+                                        <col class="k-sorted">
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tbody role="rowgroup">
+                                        <tr>
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-folder"></span>
+                                                </div>
+                                                <div class="file-name">New Folder<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">0</td>
+                                        </tr>
+                                        <tr class="k-alt">
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-folder"></span>
+                                                </div>
+                                                <div class="file-name">New Folder<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">0</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-file"></span>
+                                                </div>
+                                                <div class="file-name">a100.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">73289</td>
+                                        </tr>
+                                        <tr class="k-alt">
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-folder"></span>
+                                                </div>
+                                                <div class="file-name">aeroviewer.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">15289</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-file"></span>
+                                                </div>
+                                                <div class="file-name">a100.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">73289</td>
+                                        </tr>
+                                        <tr class="k-alt">
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-folder"></span>
+                                                </div>
+                                                <div class="file-name">aeroviewer.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">15289</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-file"></span>
+                                                </div>
+                                                <div class="file-name">a100.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">73289</td>
+                                        </tr>
+                                        <tr class="k-alt">
+                                            <td class="" role="gridcell">
+                                                <div class="file-group-icon">
+                                                    <span class="k-icon k-i-folder"></span>
+                                                </div>
+                                                <div class="file-name">aeroviewer.png<div>
+                                            </td>
+                                            <td class="" role="gridcell"> 13/12/2019 at 12:22:04 PM</td>
+                                            <td class="" role="gridcell">15289</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Preview -->
+                <div class="k-filemanager-preview" style="display: none;">
+                    <div class="k-filemanager-preview-container">
+                        <div class="k-file-info">
+                            <div class="k-file-preview-wrapper">
+                                <span class="k-icon k-i-file"></span>
+                            </div>
+                            <div class="k-file-title-wrapper">
+                                <span class="k-file-title">chart-wrapper-small.png</span>
+                            </div>
+                            <dl class="k-file-meta-wrapper">
+                                <dt class="k-file-meta-label">Type:</dt>
+                                <dd class="k-file-meta-value k-file-type">.png</dd>
+                                <dt class="k-file-meta-label">Size:</dt>
+                                <dd class="k-file-meta-value k-file-size">6.14 KB</dd>
+                                <dt class="k-file-meta-label">Date Created:</dt>
+                                <dd class="k-file-meta-value k-file-created">12/13/2019 12:22:04 PM</dd>
+                                <dt class="k-file-meta-label">Date Modified:</dt>
+                                <dd class="k-file-meta-value k-file-modified">11/25/2019 3:23:45 PM</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
