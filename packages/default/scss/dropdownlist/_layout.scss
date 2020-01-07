@@ -121,7 +121,7 @@
                 @include border-left-radius-only();
             }
 
-            .k-clear-value {
+            .k-dropdown-wrap .k-clear-value {
                 right: auto;
                 left: $picker-icon-offset;
             }
