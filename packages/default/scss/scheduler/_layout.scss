@@ -638,16 +638,19 @@
     // More events indicator
     .k-more-events {
         padding: 0;
+        height: 13px;
         border-style: solid;
         border-width: 1px;
-        font-size: 1.5em;
-        line-height: 1;
-        text-align: center;
         overflow: hidden;
         position: absolute;
         justify-content: center;
 
-        > span { margin-top: -.5em; }
+        > .k-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 
     // Current time
@@ -795,6 +798,17 @@
             border-right-width: 0 !important;
         }
         // sass-lint:enable no-important
+
+        .k-scheduler-table-auto,
+        .k-scheduler-table-auto td,
+        .k-scheduler-content .k-scheduler-table-auto {
+            height: auto;
+        }
+
+        // Force vertical scroll in monthview
+        .k-scheduler-content {
+            overflow-y: scroll;
+        }
     }
 
 
