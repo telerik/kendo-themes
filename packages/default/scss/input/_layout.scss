@@ -74,7 +74,8 @@
         box-shadow: $textbox-shadow;
     }
 
-    .k-textbox-container {
+    .k-textbox-container,
+    .k-floating-label {
         padding-top: $floating-label-height;
         display: inline-flex;
         vertical-align: middle;
@@ -312,6 +313,16 @@
         from {}
         to {}
     }
+
+    // Generic class for autofill animations
+    .k-autofill:-webkit-autofill {
+        animation-name: autoFillStart;
+    }
+    .k-autofill:not(:-webkit-autofill) {
+        animation-name: autoFillEnd;
+    }
+
+
     .k-textbox:-webkit-autofill {
         animation-name: autoFillStart;
     }
