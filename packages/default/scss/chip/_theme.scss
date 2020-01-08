@@ -1,0 +1,155 @@
+@include exports("chip/theme") {
+
+    .k-selection-single {
+        .k-chip-selected {
+            &.k-chip-filled {
+                @include fill(
+                    $chip-filled-single-selected-text,
+                    $chip-filled-single-selected-bg,
+                    $chip-filled-single-selected-border
+                );
+            }
+
+            &.k-chip-outline {
+                @include fill(
+                    $chip-outline-single-selected-text,
+                    $chip-outline-single-selected-bg,
+                    $chip-outline-single-selected-border
+                );
+            }
+        }
+    }
+
+    .k-selection-multiple {
+        > .k-chip-has-icon {
+            &.k-chip-selected {
+                .k-selected-icon-wrapper {
+                    color: $chip-multiple-selected-icon-text;
+                    background-color: $chip-multiple-selected-icon-bg;
+                }
+            }
+        }
+    }
+
+    .k-chip-filled {
+        @include fill(
+            $chip-filled-text,
+            $chip-filled-bg,
+            $chip-filled-border
+        );
+
+        &:hover,
+        &.k-chip-hover {
+            background-color: $chip-filled-hovered-bg;
+            border-color: $chip-filled-hovered-border;
+        }
+
+        &:focus,
+        &.k-chip-focused {
+            background-color: $chip-filled-focused-bg;
+            box-shadow: $chip-filled-focused-shadow;
+        }
+
+        &.k-chip-selected {
+            background-color: $chip-filled-selected-bg;
+            border-color: $chip-filled-selected-border;
+        }
+
+        &.k-chip-success {
+            @include fill(
+                $chip-filled-success-text,
+                $chip-filled-success-bg,
+                $chip-filled-success-border
+            );
+        }
+
+        &.k-chip-warning {
+            @include fill(
+                $chip-filled-warning-text,
+                $chip-filled-warning-bg,
+                $chip-filled-warning-border
+            );
+        }
+
+        &.k-chip-error {
+            @include fill(
+                $chip-filled-error-text,
+                $chip-filled-error-bg,
+                $chip-filled-error-border
+            );
+        }
+
+        &.k-chip-info {
+            @include fill(
+                $chip-filled-info-text,
+                $chip-filled-info-bg,
+                $chip-filled-info-border
+            );
+        }
+    }
+
+    .k-chip-outline {
+        @include fill(
+            $chip-outline-text,
+            $chip-outline-bg,
+            $chip-outline-border
+        );
+
+        &:hover,
+        &.k-chip-hover {
+            @include fill(
+                $chip-outline-hovered-text,
+                $chip-outline-hovered-bg,
+                $chip-outline-hovered-border
+            );
+        }
+
+        &:focus,
+        &.k-chip-focused {
+            @include fill(
+                $chip-outline-focused-text,
+                $chip-outline-focused-bg,
+                $chip-outline-focused-border
+            );
+            box-shadow: $chip-outline-focused-shadow;
+        }
+
+        &.k-chip-selected {
+            color: $chip-outline-selected-text;
+            background-color: $chip-outline-selected-bg;
+        }
+
+        &.k-chip-success {
+            @include fill(
+                $chip-outline-success-text,
+                $chip-outline-success-bg,
+                $chip-outline-success-border
+            );
+        }
+
+        &.k-chip-warning {
+            @include fill(
+                $chip-outline-warning-text,
+                $chip-outline-warning-bg,
+                $chip-outline-warning-border
+            );
+        }
+
+        &.k-chip-error {
+            @include fill(
+                $chip-outline-error-text,
+                $chip-outline-error-bg,
+                $chip-outline-error-border
+            );
+        }
+
+        &.k-chip-info {
+            @include fill(
+                $chip-outline-info-text,
+                $chip-outline-info-bg,
+                $chip-outline-info-border
+            );
+        }
+    }
+
+}
