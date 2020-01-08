@@ -4,7 +4,7 @@ $forms-invalid-color: inherit !default;
 
 @include exports("common/forms/material") {
     .k-textbox-container,
-    .k-floating-label {
+    .k-floating-label-container {
         @include input-ripple();
     }
 
