@@ -14,4 +14,4 @@ All available Kendo UI commercial licenses may be obtained at http://www.telerik
 
 If you do not own a commercial license, the usage of this software shall be governed by the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
-*Copyright © 2019 Progress Software Corporation and/or one of its subsidiaries or affiliates. All rights reserved.*
+*Copyright © 2020 Progress Software Corporation and/or one of its subsidiaries or affiliates. All rights reserved.*
