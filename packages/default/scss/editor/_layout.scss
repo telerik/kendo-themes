@@ -39,6 +39,14 @@
         .k-toolbar {
             overflow: visible;
         }
+
+        &.k-readonly {
+            @include disabled;
+            > .k-content,
+            .k-editor-content {
+                pointer-events: auto;
+            }
+        }
     }
 
     // Reset styles if in sandbox mode
