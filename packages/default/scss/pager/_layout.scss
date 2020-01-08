@@ -34,6 +34,9 @@
         .k-state-selected {
             z-index: 2;
         }
+        .k-state-selected {
+            cursor: inherit;
+        }
         .k-link:focus,
         .k-state-selected {
             text-decoration: none;
