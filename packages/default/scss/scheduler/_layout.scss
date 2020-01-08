@@ -805,9 +805,12 @@
             height: auto;
         }
 
-        // Force vertical scroll in monthview
+        // Force vertical scroll in monthview for jquery
         .k-scheduler-content {
             overflow-y: scroll;
+        }
+        &.k-scheduler-flex-layout .k-scheduler-content {
+            overflow-y: auto;
         }
     }
 

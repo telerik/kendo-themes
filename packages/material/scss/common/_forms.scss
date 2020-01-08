@@ -3,7 +3,8 @@ $forms-invalid-color: inherit !default;
 @import "~@progress/kendo-theme-default/scss/common/_forms.scss";
 
 @include exports("common/forms/material") {
-    .k-textbox-container {
+    .k-textbox-container,
+    .k-floating-label-container {
         @include input-ripple();
     }
 
