@@ -1,0 +1,47 @@
+@import "~@progress/kendo-theme-default/scss/chip/_theme.scss";
+
+@include exports( "chip/theme/material" ) {
+    .k-selection-single {
+        .k-chip-selected.k-chip-outline {
+            .k-chip-icon,
+            .k-remove-icon {
+                color: rgba($chip-outline-single-selected-text, $icon-opacity);
+            }
+        }
+    }
+
+    .k-chip-outline {
+        .k-chip-icon,
+        .k-remove-icon {
+            color: rgba($chip-outline-text, $icon-opacity);
+        }
+
+        &.k-chip-success {
+            .k-chip-icon,
+            .k-remove-icon {
+                color: rgba($chip-outline-success-text, $icon-opacity);
+            }
+        }
+
+        &.k-chip-warning {
+            .k-chip-icon,
+            .k-remove-icon {
+                color: rgba($chip-outline-warning-text, $icon-opacity);
+            }
+        }
+
+        &.k-chip-error {
+            .k-chip-icon,
+            .k-remove-icon {
+                color: rgba($chip-outline-error-text, $icon-opacity);
+            }
+        }
+
+        &.k-chip-info {
+            .k-chip-icon,
+            .k-remove-icon {
+                color: rgba($chip-outline-info-text, $icon-opacity);
+            }
+        }
+    }
+}

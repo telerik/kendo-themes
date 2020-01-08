@@ -69,14 +69,19 @@
         }
 
         .k-file-extension-wrapper,
-        .k-multiple-files-extension-wrapper {
+        .k-multiple-files-extension-wrapper,
+        .k-file-group-wrapper,
+        .k-multiple-files-group-wrapper {
             color: $upload-disabled-text;
             border-color: $upload-disabled-border;
         }
 
         .k-file-invalid-extension-wrapper,
         .k-multiple-files-invalid-extension-wrapper,
-        .k-file-error .k-file-extension-wrapper {
+        .k-file-error .k-file-extension-wrapper,
+        .k-file-invalid-group-wrapper,
+        .k-multiple-files-invalid-group-wrapper,
+        .k-file-error .k-file-group-wrapper {
             color: $upload-error-text;
             border-color: $upload-error-border;
         }

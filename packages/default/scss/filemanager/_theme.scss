@@ -1,0 +1,125 @@
+@include exports( "filemanager/theme") {
+
+    .k-filemanager {
+
+        @include fill(
+            $filemanager-text,
+            $filemanager-bg,
+            $filemanager-border
+        );
+
+    }
+
+    .k-filemanager-toolbar {
+
+        @include fill(
+            $filemanager-toolbar-text,
+            $filemanager-toolbar-bg,
+            $filemanager-toolbar-border
+        );
+
+    }
+
+    .k-filemanager-navigation {
+
+        @include fill(
+            $filemanager-navigation-text,
+            $filemanager-navigation-bg,
+            $filemanager-navigation-border
+        );
+
+    }
+
+    .k-filemanager-breadcrumb {
+
+        @include fill(
+            $filemanager-breadcrumb-text,
+            $filemanager-breadcrumb-bg,
+            $filemanager-breadcrumb-border
+        );
+
+    }
+
+    .k-filemanager-listview {
+
+        @include fill(
+            $filemanager-listview-text,
+            $filemanager-listview-bg,
+            $filemanager-listview-border
+        );
+
+        .k-item {
+            @include fill(
+                $filemanager-listview-item-text,
+                $filemanager-listview-item-bg,
+                $filemanager-listview-item-border
+            );
+
+
+            &.k-state-selected .k-icon {
+                @include fill(
+                    $filemanager-listview-item-icon-selected-text,
+                    $filemanager-listview-item-icon-selected-bg,
+                    $filemanager-listview-item-icon-selected-border
+                );
+            }
+
+            .k-icon {
+                @include fill(
+                    $filemanager-listview-item-icon-text,
+                    $filemanager-listview-item-icon-bg,
+                    $filemanager-listview-item-icon-border
+                );
+            }
+        }
+
+    }
+
+    .k-filemanager-grid {
+
+        @include fill(
+            $filemanager-grid-text,
+            $filemanager-grid-bg,
+            $filemanager-grid-border
+        );
+
+    }
+
+    .k-filemanager-preview {
+
+        @include fill(
+            $filemanager-preview-text,
+            $filemanager-preview-bg,
+            $filemanager-preview-border
+        );
+
+        .k-file-preview-wrapper .k-icon {
+            @include fill(
+                $filemanager-preview-icon-text,
+                $filemanager-preview-icon-bg,
+                $filemanager-preview-icon-border
+            );
+        }
+
+    }
+
+    // Drag Hint
+    .k-filemanager-drag-hint {
+
+        @include fill(
+            $filemanager-drag-hint-text,
+            $filemanager-drag-hint-bg,
+            $filemanager-drag-hint-border
+        );
+
+        .k-icon {
+            @include fill(
+                $filemanager-drag-hint-icon-text,
+                $filemanager-drag-hint-icon-bg,
+                $filemanager-drag-hint-icon-border
+            );
+        }
+
+    }
+
+}

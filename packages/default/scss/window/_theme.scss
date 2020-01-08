@@ -10,8 +10,12 @@
         @include use-background-clip();
         @include box-shadow( $window-shadow );
     }
-    .k-window.k-state-focused {
-        @include box-shadow( $window-focused-shadow );
+
+    .k-window {
+        &:focus,
+        &.k-state-focused {
+            @include box-shadow( $window-focused-shadow );
+        }
     }
 
 

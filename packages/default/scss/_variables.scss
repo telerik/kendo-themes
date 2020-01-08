@@ -250,6 +250,12 @@ $header-selected-border: $selected-border !default;
 $header-selected-gradient: null !default;
 
 
+// Placeholder
+$placeholder-line-width: 100% !default;
+$placeholder-line-height: 10px !default;
+$placeholder-bg: rgba(0, 0, 0, .1) !default;
+
+
 // Button
 /// The text color of the buttons.
 /// @group buttons
@@ -665,8 +671,6 @@ $checkbox-line-height: $checkbox-size + $checkbox-border-width !default;
 $checkbox-indeterminate-style: square !default;
 $checkbox-dash-height: $checkbox-size / 10 !default;
 $checkbox-dash-width: $checkbox-size - ( $checkbox-border-width * 4 ) !default;
-$checkbox-dash-offset-x: $checkbox-border-width * 2 !default;
-$checkbox-dash-offset-y: ( $checkbox-size - $checkbox-dash-height ) / 2 !default;
 
 $checkbox-bg: $input-bg !default;
 $checkbox-text: $input-text !default;
@@ -834,8 +838,8 @@ $listgroup-bg: $panel-bg !default;
 $listgroup-text: $panel-text !default;
 $listgroup-border: $panel-border !default;
 
-$listgroup-item-padding-x: $padding-x !default;
-$listgroup-item-padding-y: $padding-y !default;
+$listgroup-item-padding-x: $cell-padding-x !default;
+$listgroup-item-padding-y: $cell-padding-y !default;
 $listgroup-item-border-width: 1px !default;
 
 
@@ -911,6 +915,8 @@ $grid-cell-padding-x: $grid-padding-x !default;
 $grid-cell-padding-y: $grid-padding-y !default;
 $grid-cell-horizontal-border-width: 0 !default;
 $grid-cell-vertical-border-width: 1px !default;
+
+$grid-cell-placeholder-line-width: 80% !default;
 
 $grid-bg: $panel-bg !default;
 $grid-text: $panel-text !default;
@@ -1197,6 +1203,102 @@ $avatar-rounded-radius: 5px !default;
 
 $avatar-bg: $accent !default;
 $avatar-text: white !default;
+
+
+// Chip
+$chips-margin: 8px !default;
+
+$chip-padding-x: 0 !default;
+$chip-padding-y: 4px !default;
+$chip-height: 24px !default;
+$chip-border-radius: $chip-height / 2 !default;
+$chip-font-size: 14px !default;
+
+$chip-selected-icon-size: 16px !default;
+$chip-selected-icon-offset: 4px !default;
+$chip-selected-icon-no-icon-offset: $chip-selected-icon-offset !default;
+$chip-selected-icon-font-size: $chip-font-size !default;
+
+$chip-content-padding-x: 8px !default;
+
+$chip-icons-size: 16px !default;
+$chip-icon-margin: 4px !default;
+$chip-remove-icon-margin: 8px !default;
+$chip-remove-icon-font-size: 14px !default;
+
+$chip-avatar-size: 16px !default;
+
+$chip-filled-bg: #ebebeb !default;
+$chip-filled-text: $text-color !default;
+$chip-filled-border: rgba(0, 0, 0, .15) !default;
+
+$chip-filled-hovered-bg: #e0e0e0 !default;
+$chip-filled-hovered-border: rgba(0, 0, 0, .2) !default;
+
+$chip-filled-focused-bg: $chip-filled-bg !default;
+$chip-filled-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
+
+$chip-filled-selected-bg: #d6d6d6 !default;
+$chip-filled-selected-border: rgba(0, 0, 0, .3) !default;
+
+$chip-filled-success-bg: rgba($success, .12) !default;
+$chip-filled-success-text: $success !default;
+$chip-filled-success-border: rgba($success, .3) !default;
+
+$chip-filled-warning-bg: rgba($warning, .12) !default;
+$chip-filled-warning-text: $warning !default;
+$chip-filled-warning-border: rgba($warning, .3) !default;
+
+$chip-filled-error-bg: rgba($error, .12) !default;
+$chip-filled-error-text: $error !default;
+$chip-filled-error-border: rgba($error, .3) !default;
+
+$chip-filled-info-bg: rgba($info, .12) !default;
+$chip-filled-info-text: $info !default;
+$chip-filled-info-border: rgba($info, .3) !default;
+
+$chip-outline-bg: transparent !default;
+$chip-outline-text: #6c757d !default;
+$chip-outline-border: $text-color !default;
+
+$chip-outline-hovered-bg: $text-color !default;
+$chip-outline-hovered-text: #ffffff !default;
+$chip-outline-hovered-border: rgba(0, 0, 0, .2) !default;
+
+$chip-outline-focused-bg: $chip-outline-bg !default;
+$chip-outline-focused-text: $chip-outline-text !default;
+$chip-outline-focused-border: $chip-outline-border !default;
+$chip-outline-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .4) !default;
+
+$chip-outline-selected-bg: $text-color !default;
+$chip-outline-selected-text: #ffffff !default;
+
+$chip-outline-success-bg: transparent !default;
+$chip-outline-success-text: $success !default;
+$chip-outline-success-border: rgba($success, .54) !default;
+
+$chip-outline-warning-bg: transparent !default;
+$chip-outline-warning-text: $warning !default;
+$chip-outline-warning-border: rgba($warning, .54) !default;
+
+$chip-outline-error-bg: transparent !default;
+$chip-outline-error-text: $error !default;
+$chip-outline-error-border: rgba($error, .54) !default;
+
+$chip-outline-info-bg: transparent !default;
+$chip-outline-info-text: $info !default;
+$chip-outline-info-border: rgba($info, .54) !default;
+
+$chip-filled-single-selected-bg: rgba($accent, .08) !default;
+$chip-filled-single-selected-text: $accent !default;
+$chip-filled-single-selected-border: rgba($accent, .2) !default;
+
+$chip-outline-single-selected-bg: transparent !default;
+$chip-outline-single-selected-text: $accent !default;
+$chip-outline-single-selected-border: rgba($accent, .2) !default;
+
+$chip-multiple-selected-icon-bg: rgba(0, 0, 0, .36) !default;
+$chip-multiple-selected-icon-text: #ffffff !default;
 
 
 // Calendar
@@ -1910,6 +2012,8 @@ $upload-item-image-width: 24px !default;
 $upload-item-image-height: 34px !default;
 $upload-item-image-border: 2px !default;
 
+$upload-group-icon-size: $icon-size-lg !default;
+
 $upload-disabled-text: darken($widget-bg, 27%) !default;
 $upload-disabled-border: darken($widget-bg, 27%) !default;
 
@@ -1974,6 +2078,108 @@ $breadcrumb-root-link-focused-border: null !default;
 $breadcrumb-root-link-focused-shadow: $breadcrumb-link-focused-shadow !default;
 
 $breadcrumb-focused-shadow: 0 0 2px 1px rgba(0, 0, 0, .06) !default;
+
+
+// FileManager
+$filemanager-spacer: $padding-y * 4 !default;
+$filemanager-border-width: 1px !default;
+$filemanager-bg: null !default;
+$filemanager-text: null !default;
+$filemanager-border: null !default;
+
+$filemanager-toolbar-border-width: 0 0 $filemanager-border-width 0 !default;
+$filemanager-toolbar-border-style: solid !default;
+$filemanager-toolbar-font-weight: normal !default;
+$filemanager-toolbar-spacing: $toolbar-spacing !default;
+$filemanager-toolbar-bg: null !default;
+$filemanager-toolbar-text: null !default;
+$filemanager-toolbar-border: $panel-border !default;
+
+$filemanager-toolbar-search-tool-spacing: 0 !default;
+
+$filemanager-navigation-width: 20% !default;
+$filemanager-navigation-border-width: 0 $filemanager-border-width 0 0 !default;
+$filemanager-navigation-border-style: solid !default;
+$filemanager-navigation-bg: null !default;
+$filemanager-navigation-text: null !default;
+$filemanager-navigation-border: $panel-border !default;
+
+$filemanager-navigation-container-padding-x: 0 !default;
+$filemanager-navigation-container-padding-y: $filemanager-spacer !default;
+
+$filemanager-treeivew-spacing-x: $filemanager-spacer !default;
+$filemanager-treeivew-spacing-y: 0 !default;
+
+$filemanager-breadcrumb-padding-x: $padding-x-sm !default;
+$filemanager-breadcrumb-padding-y: $padding-y * 2 !default;
+$filemanager-breadcrumb-border-width: 0 0 $filemanager-border-width 0 !default;
+$filemanager-breadcrumb-border-style: solid !default;
+$filemanager-breadcrumb-bg: $base-bg !default;
+$filemanager-breadcrumb-text: null !default;
+$filemanager-breadcrumb-border: $panel-border !default;
+
+$filemanager-listview-border-width: 0 !default;
+$filemanager-listview-bg: null !default;
+$filemanager-listview-text: null !default;
+$filemanager-listview-border: null !default;
+
+$filemanager-listview-item-padding-x: $padding-x !default;
+$filemanager-listview-item-padding-y: $filemanager-listview-item-padding-x !default;
+$filemanager-listview-item-width: 104px !default;
+$filemanager-listview-item-height: 104px !default;
+$filemanager-listview-item-bg: null !default;
+$filemanager-listview-item-text: null !default;
+$filemanager-listview-item-border: null !default;
+
+$filemanager-listview-item-icon-padding-x: 0 !default;
+$filemanager-listview-item-icon-padding-y: $padding-y * 2 !default;
+$filemanager-listview-item-icon-size: $icon-size-lg * 1.5 !default;
+$filemanager-listview-item-icon-bg: null !default;
+$filemanager-listview-item-icon-text: true-mix($base-text, $base-bg, 41.5%) !default;
+$filemanager-listview-item-icon-border: null !default;
+$filemanager-listview-item-icon-selected-bg: null !default;
+$filemanager-listview-item-icon-selected-text: darken($filemanager-listview-item-icon-text, 20%) !default;
+$filemanager-listview-item-icon-selected-border: null !default;
+
+$filemanager-grid-row-height: 46px !default;
+$filemanager-grid-header-height: $filemanager-grid-row-height !default;
+$filemanager-grid-icon-spacing: $filemanager-spacer !default;
+$filemanager-grid-bg: null !default;
+$filemanager-grid-text: null !default;
+$filemanager-grid-border: null !default;
+
+$filemanager-preview-width: 20% !default;
+$filemanager-preview-border-width: 0 0 0 $filemanager-border-width !default;
+$filemanager-preview-border-style: solid !default;
+$filemanager-preview-bg: null !default;
+$filemanager-preview-text: null !default;
+$filemanager-preview-border: $panel-border !default;
+
+$filemanager-preview-container-padding: ($filemanager-spacer * 6) 0 $filemanager-spacer 0 !default;
+
+$filemanager-preview-file-spacing-x: 20px !default;
+$filemanager-preview-file-spacing-y: 0 !default;
+
+$filemanager-preview-icon-size: $icon-size-lg * 3 !default;
+$filemanager-preview-icon-bg: null !default;
+$filemanager-preview-icon-text: true-mix($base-text, $base-bg, 41.5%) !default;
+$filemanager-preview-icon-border: null !default;
+
+$filemanager-preview-title-padding-x: 0 !default;
+$filemanager-preview-title-padding-y: $filemanager-spacer !default;
+
+$filemanager-preview-line-break-spacing: $filemanager-spacer !default;
+
+$filemanager-drag-hint-padding-x: $padding-x !default;
+$filemanager-drag-hint-padding-y: $padding-y !default;
+$filemanager-drag-hint-bg: $accent !default;
+$filemanager-drag-hint-text: $accent-contrast !default;
+$filemanager-drag-hint-border: null !default;
+
+$filemanager-drag-hint-icon-spacing: $padding-x !default;
+$filemanager-drag-hint-icon-bg: null !default;
+$filemanager-drag-hint-icon-text: $accent-contrast !default;
+$filemanager-drag-hint-icon-border: null !default;
 
 
 // Config maps

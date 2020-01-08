@@ -56,7 +56,8 @@
     }
 
     // Floating label
-    .k-textbox-container {
+    .k-textbox-container,
+    .k-floating-label-container {
         vertical-align: baseline;
 
         > .k-label {

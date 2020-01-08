@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.10.0"></a>
+# [4.10.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.9.0...@progress/kendo-theme-default@4.10.0) (2019-12-17)
+
+
+### Bug Fixes
+
+* **card:** avatar and card elements display improvements ([3e69ae1](https://github.com/telerik/kendo-themes/commit/3e69ae1))
+* **colorpicker:** flatcolorpicker misaligned in rtl ([8ce3ee4](https://github.com/telerik/kendo-themes/commit/8ce3ee4)), closes [telerik/kendo-ui-core#5420](https://github.com/telerik/kendo-ui-core/issues/5420)
+* **contextmenu:** inconsistent styles ([3a657ff](https://github.com/telerik/kendo-themes/commit/3a657ff))
+* **multiselect:** wrong width value ([0c822f1](https://github.com/telerik/kendo-themes/commit/0c822f1))
+* **pager:** allow bigger items width for pages with wider content ([17deded](https://github.com/telerik/kendo-themes/commit/17deded))
+
+
+### Features
+
+* **placeholder:** add placeholder line styles ([7cd1bd2](https://github.com/telerik/kendo-themes/commit/7cd1bd2))
+
+
+
+
 <a name="4.9.0"></a>
 # [4.9.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.8.0...@progress/kendo-theme-default@4.9.0) (2019-12-04)
 
