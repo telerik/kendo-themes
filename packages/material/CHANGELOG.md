@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.9.0"></a>
+# [3.9.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.8.0...@progress/kendo-theme-material@3.9.0) (2020-01-09)
+
+
+### Bug Fixes
+
+* add checkbox / radio styles for IE 11 / Edge ([d4680c4](https://github.com/telerik/kendo-themes/commit/d4680c4))
+* **drawer:** switch drawer item text padding in rtl mode ([ca2fe37](https://github.com/telerik/kendo-themes/commit/ca2fe37))
+
+
+### Features
+
+* **chip:** add component styles ([a184d92](https://github.com/telerik/kendo-themes/commit/a184d92))
+* **filemanager:** add component styles ([37ec1d5](https://github.com/telerik/kendo-themes/commit/37ec1d5)), closes [telerik/kendo#10436](https://github.com/telerik/kendo/issues/10436)
+* **inputs:** introduce k-floating-label and k-autofill classes ([c4ccc62](https://github.com/telerik/kendo-themes/commit/c4ccc62))
+* **upload:** integrate file group icons ([9e2a76e](https://github.com/telerik/kendo-themes/commit/9e2a76e)), closes [telerik/kendo#10422](https://github.com/telerik/kendo/issues/10422)
+
+
+
+
 <a name="3.8.0"></a>
 # [3.8.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.7.0...@progress/kendo-theme-material@3.8.0) (2019-12-17)
 

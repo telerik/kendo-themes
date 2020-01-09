@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.11.0"></a>
+# [4.11.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.10.0...@progress/kendo-theme-default@4.11.0) (2020-01-09)
+
+
+### Bug Fixes
+
+* **scheduler:** do not enforce scrolling for month view area when in flex layout ([c529512](https://github.com/telerik/kendo-themes/commit/c529512))
+* add checkbox / radio styles for IE 11 / Edge ([d4680c4](https://github.com/telerik/kendo-themes/commit/d4680c4))
+* use listgroup in adaptive rendering of grid and scheduler ([814a362](https://github.com/telerik/kendo-themes/commit/814a362))
+* **calendar:** prevent table cells from being cut telerik/blazor[#640](https://github.com/telerik/kendo-themes/issues/640) ([fcce7a1](https://github.com/telerik/kendo-themes/commit/fcce7a1))
+* **checkbox:** vertical alignment ([97e67ca](https://github.com/telerik/kendo-themes/commit/97e67ca))
+* **dropdowntree:** clear button position in rtl ([279bdf6](https://github.com/telerik/kendo-themes/commit/279bdf6))
+* **editor:** add readonly class ([aca90d9](https://github.com/telerik/kendo-themes/commit/aca90d9))
+* **pager:** set default cursor for selected item ([b91ed77](https://github.com/telerik/kendo-themes/commit/b91ed77))
+* **ripple:** temporarily hide ripple inside checkbox / radio label ([e846222](https://github.com/telerik/kendo-themes/commit/e846222))
+* **scheduler:** use kendo icons for more button icon ([57ca605](https://github.com/telerik/kendo-themes/commit/57ca605))
+* **window:** add focus styles on focus pseudo-class ([f8a3f49](https://github.com/telerik/kendo-themes/commit/f8a3f49))
+
+
+### Features
+
+* **chip:** add component styles ([a184d92](https://github.com/telerik/kendo-themes/commit/a184d92))
+* **filemanager:** add component styles ([37ec1d5](https://github.com/telerik/kendo-themes/commit/37ec1d5)), closes [telerik/kendo#10436](https://github.com/telerik/kendo/issues/10436)
+* **inputs:** introduce k-floating-label and k-autofill classes ([c4ccc62](https://github.com/telerik/kendo-themes/commit/c4ccc62))
+* **upload:** add font icons for extension groups ([e4ddd65](https://github.com/telerik/kendo-themes/commit/e4ddd65)), closes [telerik/kendo#10422](https://github.com/telerik/kendo/issues/10422)
+* **upload:** integrate file group icons ([9e2a76e](https://github.com/telerik/kendo-themes/commit/9e2a76e)), closes [telerik/kendo#10422](https://github.com/telerik/kendo/issues/10422)
+
+
+
+
 <a name="4.10.0"></a>
 # [4.10.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.9.0...@progress/kendo-theme-default@4.10.0) (2019-12-17)
 
