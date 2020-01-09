@@ -105,7 +105,8 @@
         background-color: $scheduler-nonwork-bg;
     }
 
-    .k-scheduler-layout td.k-state-selected {
+    .k-scheduler-layout td.k-state-selected,
+    .k-scheduler-layout .k-scheduler-cell.k-state-selected {
         background-color: rgba($selected-bg, .25);
     }
 
