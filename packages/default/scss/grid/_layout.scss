@@ -1154,11 +1154,6 @@
         overflow: auto;
         overflow-x: hidden;
         white-space: nowrap;
-
-        .k-item {}
-        .k-item + .k-item {
-            margin-top: ($spacer-y / 2);
-        }
     }
     .k-filter-selected-items {
         font-weight: bold;
