@@ -95,6 +95,9 @@
             height: $checkbox-size * 5 / 2;
             transform: translate(-50%, -50%);
             border-radius: 50%;
+
+            // Hide ripple temporarily
+            display: none !important; // sass-lint:disable-line no-important
         }
 
         .k-ripple-blob {
