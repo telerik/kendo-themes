@@ -43,11 +43,9 @@
         }
 
         > .k-chip-has-icon {
-            &.k-chip-selected {
-                .k-selected-icon-wrapper {
-                    border-radius: 50%;
-                    position: absolute;
-                }
+            .k-selected-icon-wrapper {
+                border-radius: 50%;
+                position: absolute;
             }
         }
 
