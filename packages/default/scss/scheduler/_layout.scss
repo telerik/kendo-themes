@@ -850,7 +850,8 @@
             visibility: hidden;
         }
         .k-state-hover .k-task > .k-event-delete,
-        .k-scheduler-content tr:hover .k-event-delete {
+        .k-scheduler-content tr:hover .k-event-delete,
+        .k-scheduler-content .k-scheduler-row:hover .k-event-delete {
             visibility: visible;
         }
     }

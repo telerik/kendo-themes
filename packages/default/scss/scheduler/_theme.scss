@@ -183,7 +183,8 @@
     .k-scheduler-agendaview {
 
         tr.k-state-hover,
-        .k-scheduler-content tr:hover {
+        .k-scheduler-content tr:hover,
+        .k-scheduler-content .k-scheduler-row:hover {
             @include appearance( hovered-node );
         }
 
