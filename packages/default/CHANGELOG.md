@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.11.1"></a>
+## [4.11.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.11.0...@progress/kendo-theme-default@4.11.1) (2020-01-13)
+
+
+### Bug Fixes
+
+* **chip:** select icon position ([8b74585](https://github.com/telerik/kendo-themes/commit/8b74585))
+* **grid:** keep empty checkbox visible in kendo-jquery-grid ([e48ec37](https://github.com/telerik/kendo-themes/commit/e48ec37))
+* flex scheduler row hover ([4d62c7a](https://github.com/telerik/kendo-themes/commit/4d62c7a))
+* flex scheduler slot selection ([fee1171](https://github.com/telerik/kendo-themes/commit/fee1171))
+
+
+
+
 <a name="4.11.0"></a>
 # [4.11.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.10.0...@progress/kendo-theme-default@4.11.0) (2020-01-09)
 

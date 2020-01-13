@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.9.1"></a>
+## [3.9.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.9.0...@progress/kendo-theme-material@3.9.1) (2020-01-13)
+
+
+### Bug Fixes
+
+* flex scheduler row hover ([4d62c7a](https://github.com/telerik/kendo-themes/commit/4d62c7a))
+* flex scheduler slot selection ([fee1171](https://github.com/telerik/kendo-themes/commit/fee1171))
+
+
+
+
 <a name="3.9.0"></a>
 # [3.9.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.8.0...@progress/kendo-theme-material@3.9.0) (2020-01-09)
 
