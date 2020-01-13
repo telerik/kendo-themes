@@ -86,6 +86,11 @@
             display: none;
         }
 
+        // Keep it "visible" in jquery grid
+        &.k-no-text {
+            min-width: 1px;
+        }
+
         .k-ripple {
             top: $checkbox-size / 2;
             left: $checkbox-size / 2;
