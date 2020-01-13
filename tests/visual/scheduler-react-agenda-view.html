@@ -1,0 +1,1553 @@
+
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Scheduler React Agenda View</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 1400px;
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area">
+        <div class="k-widget k-scheduler k-scheduler-flex k-floatwrap" style="height: 900px;">
+            <div class="k-scheduler-toolbar k-header k-floatwrap">
+                <ul class="k-scheduler-navigation k-reset">
+                    <li class="k-state-default k-header k-nav-today">
+                        <a tabindex="-1" href="#" role="button" class="k-link">Today</a>
+                    </li>
+                    <li class="k-state-default k-header k-nav-prev">
+                        <a tabindex="-1" href="#" role="button" class="k-link">
+                        <span class="k-icon k-i-arrow-60-left"></span>
+                        </a>
+                    </li>
+                    <li class="k-state-default k-header k-nav-next">
+                        <a tabindex="-1" href="#" role="button" class="k-link"><span class="k-icon k-i-arrow-60-right"></span></a>
+                    </li>
+                    <li class="k-state-default k-nav-current"><a tabindex="-1" href="#" role="button" class="k-link"><span class="k-icon k-i-calendar"></span><span class="k-sm-date-format">6/21/2020 - 6/28/2020</span><span class="k-lg-date-format">Sunday, June 21, 2020 - Saturday, June 27, 2020</span></a></li>
+                </ul>
+                <ul class="k-scheduler-views k-reset">
+                    <li class="k-current-view"><a tabindex="-1" role="button" href="#" class="k-link">Agenda</a></li>
+                    <li class="k-state-default k-state-selected"><a tabindex="-1" role="button" href="#" data-name="agenda" class="k-link">Agenda</a></li>
+                    <li class="k-state-default"><a tabindex="-1" role="button" href="#" data-name="multi-day-timeline" class="k-link">Multi Day Timeline</a></li>
+                    <li class="k-state-default"><a tabindex="-1" role="button" href="#" data-name="timeline" class="k-link">Timeline</a></li>
+                    <li class="k-state-default"><a tabindex="-1" role="button" href="#" data-name="day" class="k-link">Day</a></li>
+                    <li class="k-state-default"><a tabindex="-1" role="button" href="#" data-name="multi-day" class="k-link">Multi Day</a></li>
+                    <li class="k-state-default"><a tabindex="-1" role="button" href="#" data-name="week" class="k-link">Week</a></li>
+                    <li class="k-state-default"><a tabindex="-1" role="button" href="#" data-name="work-week" class="k-link">Work Week</a></li>
+                    <li class="k-state-default"><a tabindex="-1" role="button" href="#" data-name="month" class="k-link">Month</a></li>
+                </ul>
+            </div>
+            <div class="k-scheduler-layout k-scheduler-layout-flex k-scheduler-agendaview">
+                <div class="k-scheduler-head">
+                    <div class="k-scheduler-group">
+                        <div class="k-scheduler-row">
+                            <div class="k-scheduler-cell k-group-cell k-heading-cell" data-depth-index="0" style="min-width: 111px;"></div>
+                            <div class="k-scheduler-cell k-group-cell k-heading-cell" data-depth-index="1" style="min-width: 33px;"></div>
+                            <div class="k-scheduler-cell k-group-content">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-heading-cell k-group-cell k-scheduler-datecolumn" style="min-width: 168px;">Date</div>
+                                    <div class="k-scheduler-cell k-heading-cell k-group-cell k-scheduler-timecolumn" style="min-width: 640px;">Time</div>
+                                    <div class="k-scheduler-cell k-heading-cell k-scheduler-eventcolumn">Event</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-scheduler-body">
+                    <div class="k-scheduler-group">
+                        <div class="k-scheduler-row">
+                            <div class="k-scheduler-cell k-group-cell k-heading-cell" data-depth-index="0" style="min-width: 111px;">Meeting Room 101</div>
+                            <div class="k-scheduler-cell k-group-content k-resource-row" data-depth-index="0" data-resource-index="0">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-group-cell k-heading-cell" data-depth-index="1" style="min-width: 33px;">Peter</div>
+                                    <div class="k-scheduler-cell k-group-content k-resource-row" data-depth-index="1" data-resource-index="0">
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592686800000" data-slot-end="1592773200000" data-slot-group="0" data-slot-range="0" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">21</strong><em class="k-scheduler-agendaweek">Sunday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-cell k-heading-cell k-group-cell">no events</div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592773200000" data-slot-end="1592859600000" data-slot-group="0" data-slot-range="1" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">22</strong><em class="k-scheduler-agendaweek">Monday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>9:30 PM-11:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span><span class="k-icon k-i-reload"></span>Dance Practice<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592859600000" data-slot-end="1592946000000" data-slot-group="0" data-slot-range="2" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">23</strong><em class="k-scheduler-agendaweek">Tuesday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>10:00 PM-12:00 AM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span><span class="k-icon k-i-reload"></span>HR Lecture<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592946000000" data-slot-end="1593032400000" data-slot-group="0" data-slot-range="3" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">24</strong><em class="k-scheduler-agendaweek">Wednesday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>11:30 AM-1:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Car Service<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>12:45 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Breakfast with Tom<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Team planning meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Replace the printer on the 1st floor<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Register new Access Cards<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>4:30 PM-6:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Install new laptops in conference rooms<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>4:30 PM-5:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Job Interview - Bernard Atkins<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-8:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Review Job Applications<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-7:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span><span class="k-icon k-i-reload"></span>Helpdesk weekly meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Support Phone Call<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>9:30 PM-11:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span><span class="k-icon k-i-reload"></span>Dance Practice<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1593032400000" data-slot-end="1593118800000" data-slot-group="0" data-slot-range="4" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">25</strong><em class="k-scheduler-agendaweek">Thursday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day<span class="k-icon k-i-arrow-60-right"></span></div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Attending HR Conference<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>12:00 PM-1:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Business breakfast with Caroline<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>1:00 PM-3:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Software updates<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>2:00 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Discuss preojects' deadlines<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>3:00 PM-4:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Business Lunch with Gregory Watkins<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-7:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Support Meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>7:30 PM-9:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>UPS maintenance<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>9:30 PM-11:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Dine with Mathew<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>10:00 PM-12:00 AM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span><span class="k-icon k-i-reload"></span>HR Lecture<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1593118800000" data-slot-end="1593205200000" data-slot-group="0" data-slot-range="5" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">26</strong><em class="k-scheduler-agendaweek">Friday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div><span class="k-icon k-i-arrow-60-left"></span>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Attending HR Conference<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>12:00 PM-1:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Banking<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>2:30 PM-3:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Support Call<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>4:30 PM-5:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Phone Sync with NY office <a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-7:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Phone Sync with Boston Office<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Server maintenance<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1593205200000" data-slot-end="1593291600000" data-slot-group="0" data-slot-range="6" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">27</strong><em class="k-scheduler-agendaweek">Saturday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>10:30 AM-11:30 AM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Website upload<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>11:30 AM-12:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Breakfast with CFO and COO<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>1:00 PM-2:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Job Interview - Mathew Stevens<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>1:30 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Helpdesk status meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>2:00 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Review CVs with Tim<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>3:00 PM-4:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Lunch with Monica<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>3:00 PM-4:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Business Lunch<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>5:00 PM-6:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Employee database update<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>5:00 PM-6:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Job Interview - John Stewart<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:30 PM-7:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Job Interview - Mary Smith<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>8:00 PM-9:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Meeting with marketing guys<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-group-cell k-heading-cell" data-depth-index="1" style="min-width: 33px;">Alex</div>
+                                    <div class="k-scheduler-cell k-group-content k-resource-row" data-depth-index="1" data-resource-index="1">
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592686800000" data-slot-end="1592773200000" data-slot-group="1" data-slot-range="0" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">21</strong><em class="k-scheduler-agendaweek">Sunday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-cell k-heading-cell k-group-cell">no events</div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592773200000" data-slot-end="1592859600000" data-slot-group="1" data-slot-range="1" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">22</strong><em class="k-scheduler-agendaweek">Monday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>9:30 PM-11:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span><span class="k-icon k-i-reload"></span>Dance Practice<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592859600000" data-slot-end="1592946000000" data-slot-group="1" data-slot-range="2" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">23</strong><em class="k-scheduler-agendaweek">Tuesday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>10:00 PM-12:00 AM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span><span class="k-icon k-i-reload"></span>HR Lecture<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592946000000" data-slot-end="1593032400000" data-slot-group="1" data-slot-range="3" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">24</strong><em class="k-scheduler-agendaweek">Wednesday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>11:30 AM-1:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Car Service<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>12:45 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Breakfast with Tom<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Team planning meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Replace the printer on the 1st floor<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Register new Access Cards<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>4:30 PM-6:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Install new laptops in conference rooms<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>4:30 PM-5:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Job Interview - Bernard Atkins<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-8:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Review Job Applications<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-7:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span><span class="k-icon k-i-reload"></span>Helpdesk weekly meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Support Phone Call<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>9:30 PM-11:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span><span class="k-icon k-i-reload"></span>Dance Practice<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1593032400000" data-slot-end="1593118800000" data-slot-group="1" data-slot-range="4" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">25</strong><em class="k-scheduler-agendaweek">Thursday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day<span class="k-icon k-i-arrow-60-right"></span></div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Attending HR Conference<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>12:00 PM-1:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Business breakfast with Caroline<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>1:00 PM-3:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Software updates<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>2:00 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Discuss preojects' deadlines<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>3:00 PM-4:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Business Lunch with Gregory Watkins<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-7:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Support Meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>7:30 PM-9:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>UPS maintenance<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>9:30 PM-11:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Dine with Mathew<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>10:00 PM-12:00 AM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span><span class="k-icon k-i-reload"></span>HR Lecture<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1593118800000" data-slot-end="1593205200000" data-slot-group="1" data-slot-range="5" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">26</strong><em class="k-scheduler-agendaweek">Friday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div><span class="k-icon k-i-arrow-60-left"></span>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Attending HR Conference<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>12:00 PM-1:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Banking<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>2:30 PM-3:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Support Call<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>4:30 PM-5:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Phone Sync with NY office <a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-7:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Phone Sync with Boston Office<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Server maintenance<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1593205200000" data-slot-end="1593291600000" data-slot-group="1" data-slot-range="6" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">27</strong><em class="k-scheduler-agendaweek">Saturday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>10:30 AM-11:30 AM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Website upload<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>11:30 AM-12:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Breakfast with CFO and COO<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>1:00 PM-2:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Job Interview - Mathew Stevens<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>1:30 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Helpdesk status meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>2:00 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Review CVs with Tim<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>3:00 PM-4:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Lunch with Monica<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>3:00 PM-4:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Business Lunch<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>5:00 PM-6:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Employee database update<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>5:00 PM-6:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Job Interview - John Stewart<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:30 PM-7:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Job Interview - Mary Smith<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>8:00 PM-9:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: red; background-color: red;"></span>Meeting with marketing guys<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-scheduler-row">
+                            <div class="k-scheduler-cell k-group-cell k-heading-cell" data-depth-index="0" style="min-width: 111px;">Meeting Room 201</div>
+                            <div class="k-scheduler-cell k-group-content k-resource-row" data-depth-index="0" data-resource-index="1">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-group-cell k-heading-cell" data-depth-index="1" style="min-width: 33px;">Peter</div>
+                                    <div class="k-scheduler-cell k-group-content k-resource-row" data-depth-index="1" data-resource-index="2">
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592686800000" data-slot-end="1592773200000" data-slot-group="2" data-slot-range="0" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">21</strong><em class="k-scheduler-agendaweek">Sunday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-cell k-heading-cell k-group-cell">no events</div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592773200000" data-slot-end="1592859600000" data-slot-group="2" data-slot-range="1" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">22</strong><em class="k-scheduler-agendaweek">Monday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>9:30 PM-11:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span><span class="k-icon k-i-reload"></span>Dance Practice<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592859600000" data-slot-end="1592946000000" data-slot-group="2" data-slot-range="2" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">23</strong><em class="k-scheduler-agendaweek">Tuesday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>10:00 PM-12:00 AM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span><span class="k-icon k-i-reload"></span>HR Lecture<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592946000000" data-slot-end="1593032400000" data-slot-group="2" data-slot-range="3" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">24</strong><em class="k-scheduler-agendaweek">Wednesday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>11:30 AM-1:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Car Service<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>12:45 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Breakfast with Tom<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Team planning meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Replace the printer on the 1st floor<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Register new Access Cards<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>4:30 PM-6:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Install new laptops in conference rooms<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>4:30 PM-5:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Job Interview - Bernard Atkins<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-8:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Review Job Applications<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-7:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span><span class="k-icon k-i-reload"></span>Helpdesk weekly meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Support Phone Call<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>9:30 PM-11:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span><span class="k-icon k-i-reload"></span>Dance Practice<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1593032400000" data-slot-end="1593118800000" data-slot-group="2" data-slot-range="4" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">25</strong><em class="k-scheduler-agendaweek">Thursday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day<span class="k-icon k-i-arrow-60-right"></span></div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Attending HR Conference<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>12:00 PM-1:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Business breakfast with Caroline<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>1:00 PM-3:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Software updates<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>2:00 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Discuss preojects' deadlines<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>3:00 PM-4:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Business Lunch with Gregory Watkins<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-7:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Support Meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>7:30 PM-9:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>UPS maintenance<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>9:30 PM-11:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Dine with Mathew<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>10:00 PM-12:00 AM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span><span class="k-icon k-i-reload"></span>HR Lecture<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1593118800000" data-slot-end="1593205200000" data-slot-group="2" data-slot-range="5" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">26</strong><em class="k-scheduler-agendaweek">Friday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div><span class="k-icon k-i-arrow-60-left"></span>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Attending HR Conference<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>12:00 PM-1:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Banking<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>2:30 PM-3:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Support Call<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>4:30 PM-5:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Phone Sync with NY office <a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-7:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Phone Sync with Boston Office<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Server maintenance<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1593205200000" data-slot-end="1593291600000" data-slot-group="2" data-slot-range="6" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">27</strong><em class="k-scheduler-agendaweek">Saturday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>10:30 AM-11:30 AM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Website upload<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>11:30 AM-12:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Breakfast with CFO and COO<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>1:00 PM-2:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Job Interview - Mathew Stevens<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>1:30 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Helpdesk status meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>2:00 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Review CVs with Tim<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>3:00 PM-4:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Lunch with Monica<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>3:00 PM-4:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Business Lunch<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>5:00 PM-6:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Employee database update<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>5:00 PM-6:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Job Interview - John Stewart<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:30 PM-7:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Job Interview - Mary Smith<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>8:00 PM-9:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Meeting with marketing guys<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-group-cell k-heading-cell" data-depth-index="1" style="min-width: 33px;">Alex</div>
+                                    <div class="k-scheduler-cell k-group-content k-resource-row" data-depth-index="1" data-resource-index="3">
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592686800000" data-slot-end="1592773200000" data-slot-group="3" data-slot-range="0" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">21</strong><em class="k-scheduler-agendaweek">Sunday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-cell k-heading-cell k-group-cell">no events</div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592773200000" data-slot-end="1592859600000" data-slot-group="3" data-slot-range="1" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">22</strong><em class="k-scheduler-agendaweek">Monday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>9:30 PM-11:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span><span class="k-icon k-i-reload"></span>Dance Practice<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592859600000" data-slot-end="1592946000000" data-slot-group="3" data-slot-range="2" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">23</strong><em class="k-scheduler-agendaweek">Tuesday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>10:00 PM-12:00 AM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span><span class="k-icon k-i-reload"></span>HR Lecture<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1592946000000" data-slot-end="1593032400000" data-slot-group="3" data-slot-range="3" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">24</strong><em class="k-scheduler-agendaweek">Wednesday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>11:30 AM-1:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Car Service<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>12:45 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Breakfast with Tom<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Team planning meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Replace the printer on the 1st floor<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Register new Access Cards<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>4:30 PM-6:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Install new laptops in conference rooms<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>4:30 PM-5:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Job Interview - Bernard Atkins<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-8:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Review Job Applications<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-7:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span><span class="k-icon k-i-reload"></span>Helpdesk weekly meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Support Phone Call<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>9:30 PM-11:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span><span class="k-icon k-i-reload"></span>Dance Practice<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1593032400000" data-slot-end="1593118800000" data-slot-group="3" data-slot-range="4" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">25</strong><em class="k-scheduler-agendaweek">Thursday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day<span class="k-icon k-i-arrow-60-right"></span></div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Attending HR Conference<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>12:00 PM-1:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Business breakfast with Caroline<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>1:00 PM-3:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Software updates<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>2:00 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Discuss preojects' deadlines<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>3:00 PM-4:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Business Lunch with Gregory Watkins<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-7:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Support Meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>7:30 PM-9:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>UPS maintenance<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>9:30 PM-11:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Dine with Mathew<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>10:00 PM-12:00 AM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span><span class="k-icon k-i-reload"></span>HR Lecture<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1593118800000" data-slot-end="1593205200000" data-slot-group="3" data-slot-range="5" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">26</strong><em class="k-scheduler-agendaweek">Friday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div><span class="k-icon k-i-arrow-60-left"></span>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Attending HR Conference<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>12:00 PM-1:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Banking<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>2:30 PM-3:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Support Call<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>4:30 PM-5:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Phone Sync with NY office <a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:00 PM-7:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Phone Sync with Boston Office<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>all day</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Server maintenance<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-row  k-scheduler-content">
+                                            <div tabindex="-1" class="k-scheduler-datecolumn k-group-cell k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="true" data-slot-start="1593205200000" data-slot-end="1593291600000" data-slot-group="3" data-slot-range="6" data-slot-index="0" style="user-select: none; min-width: 168px;">
+                                                <div><strong class="k-scheduler-agendaday">27</strong><em class="k-scheduler-agendaweek">Saturday</em><span class="k-scheduler-agendadate">Jun 2020</span></div>
+                                            </div>
+                                            <div class="k-scheduler-cell k-group-content">
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>10:30 AM-11:30 AM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Website upload<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>11:30 AM-12:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Breakfast with CFO and COO<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>1:00 PM-2:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Job Interview - Mathew Stevens<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>1:30 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Helpdesk status meeting<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>2:00 PM-2:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Review CVs with Tim<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>3:00 PM-4:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Lunch with Monica<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>3:00 PM-4:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Business Lunch<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>5:00 PM-6:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Employee database update<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>5:00 PM-6:00 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Job Interview - John Stewart<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>6:30 PM-7:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Job Interview - Mary Smith<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="k-scheduler-row">
+                                                    <div class="k-scheduler-cell k-scheduler-timecolumn" style="min-width: 640px;">
+                                                        <div>8:00 PM-9:30 PM</div>
+                                                    </div>
+                                                    <div class="k-scheduler-cell">
+                                                        <div class="k-task"><span class="k-scheduler-mark" style="color: green; background-color: green;"></span>Meeting with marketing guys<a href="#" class="k-link k-event-delete" title="Delete" aria-label="Delete"><span class="k-icon k-i-close"></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
