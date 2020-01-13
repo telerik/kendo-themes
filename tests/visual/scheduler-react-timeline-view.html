@@ -1,0 +1,449 @@
+
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Scheduler React Timeline View</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 1400px;
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area">
+        <div class="k-widget k-scheduler k-scheduler-flex k-floatwrap" style="height: 900px;">
+            <div class="k-scheduler-toolbar k-header k-floatwrap">
+                <ul class="k-scheduler-navigation k-reset">
+                    <li class="k-state-default k-header k-nav-today"><a tabindex="-1" href="#" role="button" class="k-link">Today</a></li>
+                    <li class="k-state-default k-header k-nav-prev"><a tabindex="-1" href="#" role="button" class="k-link"><span class="k-icon k-i-arrow-60-left"></span></a></li>
+                    <li class="k-state-default k-header k-nav-next"><a tabindex="-1" href="#" role="button" class="k-link"><span class="k-icon k-i-arrow-60-right"></span></a></li>
+                    <li class="k-state-default k-nav-current"><a tabindex="-1" href="#" role="button" class="k-link"><span class="k-icon k-i-calendar"></span><span class="k-sm-date-format">6/24/2020</span><span class="k-lg-date-format">Wednesday, June 24, 2020</span></a></li>
+                </ul>
+                <ul class="k-scheduler-views k-reset">
+                    <li class="k-current-view"><a tabindex="-1" role="button" href="#" class="k-link">Timeline</a></li>
+                    <li class="k-state-default"><a tabindex="-1" role="button" href="#" data-name="agenda" class="k-link">Agenda</a></li>
+                    <li class="k-state-default"><a tabindex="-1" role="button" href="#" data-name="multi-day-timeline" class="k-link">Multi Day Timeline</a></li>
+                    <li class="k-state-default k-state-selected"><a tabindex="-1" role="button" href="#" data-name="timeline" class="k-link">Timeline</a></li>
+                    <li class="k-state-default"><a tabindex="-1" role="button" href="#" data-name="day" class="k-link">Day</a></li>
+                    <li class="k-state-default"><a tabindex="-1" role="button" href="#" data-name="multi-day" class="k-link">Multi Day</a></li>
+                    <li class="k-state-default"><a tabindex="-1" role="button" href="#" data-name="week" class="k-link">Week</a></li>
+                    <li class="k-state-default"><a tabindex="-1" role="button" href="#" data-name="work-week" class="k-link">Work Week</a></li>
+                    <li class="k-state-default"><a tabindex="-1" role="button" href="#" data-name="month" class="k-link">Month</a></li>
+                </ul>
+            </div>
+            <div class="k-scheduler-layout k-scheduler-layout-flex k-scheduler-timeline-view">
+                <div class="k-scheduler-head" style="width: 7201px;">
+                    <div class="k-scheduler-group k-group-horizontal">
+                        <div class="k-scheduler-row">
+                            <div class="k-sticky-cell">
+                                <div class="k-scheduler-cell k-side-cell" style="min-width: 62px;"></div>
+                            </div>
+                            <div class="k-scheduler-cell k-heading-cell">Meeting Room 101</div>
+                            <div class="k-scheduler-cell k-heading-cell">Meeting Room 201</div>
+                        </div>
+                        <div class="k-scheduler-row">
+                            <div class="k-sticky-cell">
+                                <div class="k-scheduler-cell k-side-cell" style="min-width: 62px;"></div>
+                            </div>
+                            <div class="k-scheduler-cell k-heading-cell">Peter</div>
+                            <div class="k-scheduler-cell k-heading-cell">Alex</div>
+                            <div class="k-scheduler-cell k-heading-cell">Peter</div>
+                            <div class="k-scheduler-cell k-heading-cell">Alex</div>
+                        </div>
+                        <div class="k-scheduler-row">
+                            <div class="k-sticky-cell">
+                                <div class="k-scheduler-cell k-side-cell" style="min-width: 62px;"></div>
+                            </div>
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-heading-cell">Jun 24</div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-heading-cell">8:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">9:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">10:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">11:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">12:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">1:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">2:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">3:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">4:00 PM</div>
+                                </div>
+                            </div>
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-heading-cell">Jun 24</div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-heading-cell">8:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">9:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">10:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">11:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">12:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">1:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">2:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">3:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">4:00 PM</div>
+                                </div>
+                            </div>
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-heading-cell">Jun 24</div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-heading-cell">8:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">9:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">10:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">11:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">12:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">1:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">2:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">3:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">4:00 PM</div>
+                                </div>
+                            </div>
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-heading-cell">Jun 24</div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-heading-cell">8:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">9:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">10:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">11:00 AM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">12:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">1:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">2:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">3:00 PM</div>
+                                    <div class="k-scheduler-cell k-heading-cell">4:00 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-scheduler-body" style="width: 7201px;">
+                    <div class="k-scheduler-group k-group-horizontal">
+                        <div class="k-scheduler-row">
+                            <div class="k-sticky-cell">
+                                <div class="k-scheduler-cell k-heading-cell k-side-cell k-scheduler-times-all-day" data-range-index="0" style="min-width: 62px;">All events</div>
+                            </div>
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592974800000" data-slot-end="1592976600000" data-slot-group="0" data-slot-range="0" data-slot-index="16" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592976600000" data-slot-end="1592978400000" data-slot-group="0" data-slot-range="0" data-slot-index="17" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592978400000" data-slot-end="1592980200000" data-slot-group="0" data-slot-range="0" data-slot-index="18" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592980200000" data-slot-end="1592982000000" data-slot-group="0" data-slot-range="0" data-slot-index="19" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592982000000" data-slot-end="1592983800000" data-slot-group="0" data-slot-range="0" data-slot-index="20" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592983800000" data-slot-end="1592985600000" data-slot-group="0" data-slot-range="0" data-slot-index="21" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592985600000" data-slot-end="1592987400000" data-slot-group="0" data-slot-range="0" data-slot-index="22" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592987400000" data-slot-end="1592989200000" data-slot-group="0" data-slot-range="0" data-slot-index="23" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592989200000" data-slot-end="1592991000000" data-slot-group="0" data-slot-range="0" data-slot-index="24" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592991000000" data-slot-end="1592992800000" data-slot-group="0" data-slot-range="0" data-slot-index="25" style="user-select: none; min-height: 36px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592992800000" data-slot-end="1592994600000" data-slot-group="0" data-slot-range="0" data-slot-index="26" style="user-select: none; min-height: 62px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592994600000" data-slot-end="1592996400000" data-slot-group="0" data-slot-range="0" data-slot-index="27" style="user-select: none; min-height: 62px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592996400000" data-slot-end="1592998200000" data-slot-group="0" data-slot-range="0" data-slot-index="28" style="user-select: none; min-height: 36px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592998200000" data-slot-end="1593000000000" data-slot-group="0" data-slot-range="0" data-slot-index="29" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593000000000" data-slot-end="1593001800000" data-slot-group="0" data-slot-range="0" data-slot-index="30" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593001800000" data-slot-end="1593003600000" data-slot-group="0" data-slot-range="0" data-slot-index="31" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593003600000" data-slot-end="1593005400000" data-slot-group="0" data-slot-range="0" data-slot-index="32" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593005400000" data-slot-end="1593007200000" data-slot-group="0" data-slot-range="0" data-slot-index="33" style="user-select: none; min-height: 36px;"></div>
+                                </div>
+                            </div>
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592974800000" data-slot-end="1592976600000" data-slot-group="1" data-slot-range="0" data-slot-index="16" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592976600000" data-slot-end="1592978400000" data-slot-group="1" data-slot-range="0" data-slot-index="17" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592978400000" data-slot-end="1592980200000" data-slot-group="1" data-slot-range="0" data-slot-index="18" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592980200000" data-slot-end="1592982000000" data-slot-group="1" data-slot-range="0" data-slot-index="19" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592982000000" data-slot-end="1592983800000" data-slot-group="1" data-slot-range="0" data-slot-index="20" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592983800000" data-slot-end="1592985600000" data-slot-group="1" data-slot-range="0" data-slot-index="21" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592985600000" data-slot-end="1592987400000" data-slot-group="1" data-slot-range="0" data-slot-index="22" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592987400000" data-slot-end="1592989200000" data-slot-group="1" data-slot-range="0" data-slot-index="23" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592989200000" data-slot-end="1592991000000" data-slot-group="1" data-slot-range="0" data-slot-index="24" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592991000000" data-slot-end="1592992800000" data-slot-group="1" data-slot-range="0" data-slot-index="25" style="user-select: none; min-height: 36px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592992800000" data-slot-end="1592994600000" data-slot-group="1" data-slot-range="0" data-slot-index="26" style="user-select: none; min-height: 62px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592994600000" data-slot-end="1592996400000" data-slot-group="1" data-slot-range="0" data-slot-index="27" style="user-select: none; min-height: 62px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592996400000" data-slot-end="1592998200000" data-slot-group="1" data-slot-range="0" data-slot-index="28" style="user-select: none; min-height: 36px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592998200000" data-slot-end="1593000000000" data-slot-group="1" data-slot-range="0" data-slot-index="29" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593000000000" data-slot-end="1593001800000" data-slot-group="1" data-slot-range="0" data-slot-index="30" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593001800000" data-slot-end="1593003600000" data-slot-group="1" data-slot-range="0" data-slot-index="31" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593003600000" data-slot-end="1593005400000" data-slot-group="1" data-slot-range="0" data-slot-index="32" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593005400000" data-slot-end="1593007200000" data-slot-group="1" data-slot-range="0" data-slot-index="33" style="user-select: none; min-height: 36px;"></div>
+                                </div>
+                            </div>
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592974800000" data-slot-end="1592976600000" data-slot-group="2" data-slot-range="0" data-slot-index="16" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592976600000" data-slot-end="1592978400000" data-slot-group="2" data-slot-range="0" data-slot-index="17" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592978400000" data-slot-end="1592980200000" data-slot-group="2" data-slot-range="0" data-slot-index="18" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592980200000" data-slot-end="1592982000000" data-slot-group="2" data-slot-range="0" data-slot-index="19" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592982000000" data-slot-end="1592983800000" data-slot-group="2" data-slot-range="0" data-slot-index="20" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592983800000" data-slot-end="1592985600000" data-slot-group="2" data-slot-range="0" data-slot-index="21" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592985600000" data-slot-end="1592987400000" data-slot-group="2" data-slot-range="0" data-slot-index="22" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592987400000" data-slot-end="1592989200000" data-slot-group="2" data-slot-range="0" data-slot-index="23" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592989200000" data-slot-end="1592991000000" data-slot-group="2" data-slot-range="0" data-slot-index="24" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592991000000" data-slot-end="1592992800000" data-slot-group="2" data-slot-range="0" data-slot-index="25" style="user-select: none; min-height: 36px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592992800000" data-slot-end="1592994600000" data-slot-group="2" data-slot-range="0" data-slot-index="26" style="user-select: none; min-height: 62px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592994600000" data-slot-end="1592996400000" data-slot-group="2" data-slot-range="0" data-slot-index="27" style="user-select: none; min-height: 62px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592996400000" data-slot-end="1592998200000" data-slot-group="2" data-slot-range="0" data-slot-index="28" style="user-select: none; min-height: 36px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592998200000" data-slot-end="1593000000000" data-slot-group="2" data-slot-range="0" data-slot-index="29" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593000000000" data-slot-end="1593001800000" data-slot-group="2" data-slot-range="0" data-slot-index="30" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593001800000" data-slot-end="1593003600000" data-slot-group="2" data-slot-range="0" data-slot-index="31" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593003600000" data-slot-end="1593005400000" data-slot-group="2" data-slot-range="0" data-slot-index="32" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593005400000" data-slot-end="1593007200000" data-slot-group="2" data-slot-range="0" data-slot-index="33" style="user-select: none; min-height: 36px;"></div>
+                                </div>
+                            </div>
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592974800000" data-slot-end="1592976600000" data-slot-group="3" data-slot-range="0" data-slot-index="16" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592976600000" data-slot-end="1592978400000" data-slot-group="3" data-slot-range="0" data-slot-index="17" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592978400000" data-slot-end="1592980200000" data-slot-group="3" data-slot-range="0" data-slot-index="18" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592980200000" data-slot-end="1592982000000" data-slot-group="3" data-slot-range="0" data-slot-index="19" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592982000000" data-slot-end="1592983800000" data-slot-group="3" data-slot-range="0" data-slot-index="20" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592983800000" data-slot-end="1592985600000" data-slot-group="3" data-slot-range="0" data-slot-index="21" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592985600000" data-slot-end="1592987400000" data-slot-group="3" data-slot-range="0" data-slot-index="22" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592987400000" data-slot-end="1592989200000" data-slot-group="3" data-slot-range="0" data-slot-index="23" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592989200000" data-slot-end="1592991000000" data-slot-group="3" data-slot-range="0" data-slot-index="24" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592991000000" data-slot-end="1592992800000" data-slot-group="3" data-slot-range="0" data-slot-index="25" style="user-select: none; min-height: 36px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592992800000" data-slot-end="1592994600000" data-slot-group="3" data-slot-range="0" data-slot-index="26" style="user-select: none; min-height: 62px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592994600000" data-slot-end="1592996400000" data-slot-group="3" data-slot-range="0" data-slot-index="27" style="user-select: none; min-height: 62px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592996400000" data-slot-end="1592998200000" data-slot-group="3" data-slot-range="0" data-slot-index="28" style="user-select: none; min-height: 36px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1592998200000" data-slot-end="1593000000000" data-slot-group="3" data-slot-range="0" data-slot-index="29" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593000000000" data-slot-end="1593001800000" data-slot-group="3" data-slot-range="0" data-slot-index="30" style="user-select: none; min-height: 10px;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593001800000" data-slot-end="1593003600000" data-slot-group="3" data-slot-range="0" data-slot-index="31" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593003600000" data-slot-end="1593005400000" data-slot-group="3" data-slot-range="0" data-slot-index="32" style="user-select: none;"></div>
+                                    <div tabindex="-1" class="k-scheduler-cell k-slot-cell" data-slot="true" data-slot-allday="false" data-slot-start="1593005400000" data-slot-end="1593007200000" data-slot-group="3" data-slot-range="0" data-slot-index="33" style="user-select: none; min-height: 36px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="0" data-range-index="0" style="cursor: pointer; user-select: none; border-color: red; background-color: red; top: 0px; left: 772px; width: 296px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Car Service">
+                            <div class="k-event-template k-event-time ">(11:30 AM - 1:00 PM): Car Service</div>
+                            <div class="k-event-template">Car Service</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="1" data-range-index="0" style="cursor: pointer; user-select: none; border-color: red; background-color: red; top: 0px; left: 2552px; width: 296px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Car Service">
+                            <div class="k-event-template k-event-time ">(11:30 AM - 1:00 PM): Car Service</div>
+                            <div class="k-event-template">Car Service</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="2" data-range-index="0" style="cursor: pointer; user-select: none; border-color: green; background-color: green; top: 0px; left: 4332px; width: 296px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Car Service">
+                            <div class="k-event-template k-event-time ">(11:30 AM - 1:00 PM): Car Service</div>
+                            <div class="k-event-template">Car Service</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="3" data-range-index="0" style="cursor: pointer; user-select: none; border-color: green; background-color: green; top: 0px; left: 6113px; width: 296px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Car Service">
+                            <div class="k-event-template k-event-time ">(11:30 AM - 1:00 PM): Car Service</div>
+                            <div class="k-event-template">Car Service</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="0" data-range-index="0" style="cursor: pointer; user-select: none; border-color: red; background-color: red; top: 26px; left: 969px; width: 395px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Breakfast with Tom">
+                            <div class="k-event-template k-event-time ">(12:45 PM - 2:30 PM): Breakfast with Tom</div>
+                            <div class="k-event-template">Breakfast with Tom</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="1" data-range-index="0" style="cursor: pointer; user-select: none; border-color: red; background-color: red; top: 26px; left: 2750px; width: 395px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Breakfast with Tom">
+                            <div class="k-event-template k-event-time ">(12:45 PM - 2:30 PM): Breakfast with Tom</div>
+                            <div class="k-event-template">Breakfast with Tom</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="2" data-range-index="0" style="cursor: pointer; user-select: none; border-color: green; background-color: green; top: 26px; left: 4530px; width: 395px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Breakfast with Tom">
+                            <div class="k-event-template k-event-time ">(12:45 PM - 2:30 PM): Breakfast with Tom</div>
+                            <div class="k-event-template">Breakfast with Tom</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="3" data-range-index="0" style="cursor: pointer; user-select: none; border-color: green; background-color: green; top: 26px; left: 6311px; width: 395px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Breakfast with Tom">
+                            <div class="k-event-template k-event-time ">(12:45 PM - 2:30 PM): Breakfast with Tom</div>
+                            <div class="k-event-template">Breakfast with Tom</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="0" data-range-index="0" style="cursor: pointer; user-select: none; border-color: red; background-color: red; top: 0px; left: 1068px; width: 395px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Team planning meeting">
+                            <div class="k-event-template">Team planning meeting</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="1" data-range-index="0" style="cursor: pointer; user-select: none; border-color: red; background-color: red; top: 0px; left: 2849px; width: 395px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Team planning meeting">
+                            <div class="k-event-template">Team planning meeting</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="2" data-range-index="0" style="cursor: pointer; user-select: none; border-color: green; background-color: green; top: 0px; left: 4629px; width: 395px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Team planning meeting">
+                            <div class="k-event-template">Team planning meeting</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="3" data-range-index="0" style="cursor: pointer; user-select: none; border-color: green; background-color: green; top: 0px; left: 6410px; width: 395px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Team planning meeting">
+                            <div class="k-event-template">Team planning meeting</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="0" data-range-index="0" style="cursor: pointer; user-select: none; border-color: red; background-color: red; top: 52px; left: 1068px; width: 197px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Replace the printer on the 1st floor">
+                            <div class="k-event-template">Replace the printer on the 1st floor</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="1" data-range-index="0" style="cursor: pointer; user-select: none; border-color: red; background-color: red; top: 52px; left: 2849px; width: 197px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Replace the printer on the 1st floor">
+                            <div class="k-event-template">Replace the printer on the 1st floor</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="2" data-range-index="0" style="cursor: pointer; user-select: none; border-color: green; background-color: green; top: 52px; left: 4629px; width: 197px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Replace the printer on the 1st floor">
+                            <div class="k-event-template">Replace the printer on the 1st floor</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="3" data-range-index="0" style="cursor: pointer; user-select: none; border-color: green; background-color: green; top: 52px; left: 6410px; width: 197px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Replace the printer on the 1st floor">
+                            <div class="k-event-template">Replace the printer on the 1st floor</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="0" data-range-index="0" style="cursor: pointer; user-select: none; border-color: red; background-color: red; top: 0px; left: 1464px; width: 98px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Register new Access Cards">
+                            <div class="k-event-template">Register new Access Cards</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="1" data-range-index="0" style="cursor: pointer; user-select: none; border-color: red; background-color: red; top: 0px; left: 3244px; width: 98px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Register new Access Cards">
+                            <div class="k-event-template">Register new Access Cards</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="2" data-range-index="0" style="cursor: pointer; user-select: none; border-color: green; background-color: green; top: 0px; left: 5025px; width: 98px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Register new Access Cards">
+                            <div class="k-event-template">Register new Access Cards</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="3" data-range-index="0" style="cursor: pointer; user-select: none; border-color: green; background-color: green; top: 0px; left: 6805px; width: 98px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Register new Access Cards">
+                            <div class="k-event-template">Register new Access Cards</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="0" data-range-index="0" style="cursor: pointer; user-select: none; border-color: red; background-color: red; top: 0px; left: 1761px; width: 98px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Install new laptops in conference rooms">
+                            <div class="k-event-template k-event-time ">(4:30 PM - 6:00 PM): Install new laptops in conference rooms</div>
+                            <div class="k-event-template">Install new laptops in conference rooms</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="1" data-range-index="0" style="cursor: pointer; user-select: none; border-color: red; background-color: red; top: 0px; left: 3541px; width: 98px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Install new laptops in conference rooms">
+                            <div class="k-event-template k-event-time ">(4:30 PM - 6:00 PM): Install new laptops in conference rooms</div>
+                            <div class="k-event-template">Install new laptops in conference rooms</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="2" data-range-index="0" style="cursor: pointer; user-select: none; border-color: green; background-color: green; top: 0px; left: 5322px; width: 98px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Install new laptops in conference rooms">
+                            <div class="k-event-template k-event-time ">(4:30 PM - 6:00 PM): Install new laptops in conference rooms</div>
+                            <div class="k-event-template">Install new laptops in conference rooms</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="3" data-range-index="0" style="cursor: pointer; user-select: none; border-color: green; background-color: green; top: 0px; left: 7102px; width: 98px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Install new laptops in conference rooms">
+                            <div class="k-event-template k-event-time ">(4:30 PM - 6:00 PM): Install new laptops in conference rooms</div>
+                            <div class="k-event-template">Install new laptops in conference rooms</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="0" data-range-index="0" style="cursor: pointer; user-select: none; border-color: red; background-color: red; top: 26px; left: 1761px; width: 98px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Job Interview - Bernard Atkins">
+                            <div class="k-event-template k-event-time ">(4:30 PM - 5:30 PM): Job Interview - Bernard Atkins</div>
+                            <div class="k-event-template">Job Interview - Bernard Atkins</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="1" data-range-index="0" style="cursor: pointer; user-select: none; border-color: red; background-color: red; top: 26px; left: 3541px; width: 98px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Job Interview - Bernard Atkins">
+                            <div class="k-event-template k-event-time ">(4:30 PM - 5:30 PM): Job Interview - Bernard Atkins</div>
+                            <div class="k-event-template">Job Interview - Bernard Atkins</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="2" data-range-index="0" style="cursor: pointer; user-select: none; border-color: green; background-color: green; top: 26px; left: 5322px; width: 98px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Job Interview - Bernard Atkins">
+                            <div class="k-event-template k-event-time ">(4:30 PM - 5:30 PM): Job Interview - Bernard Atkins</div>
+                            <div class="k-event-template">Job Interview - Bernard Atkins</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div tabindex="-1" class="k-event" data-group-index="3" data-range-index="0" style="cursor: pointer; user-select: none; border-color: green; background-color: green; top: 26px; left: 7102px; width: 98px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Job Interview - Bernard Atkins">
+                            <div class="k-event-template k-event-time ">(4:30 PM - 5:30 PM): Job Interview - Bernard Atkins</div>
+                            <div class="k-event-template">Job Interview - Bernard Atkins</div>
+                        </div>
+                        <span class="k-event-actions"><a href="#" class="k-link k-event-delete" title="Delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="k-scheduler-footer">
+                <ul class="k-reset k-header">
+                    <li class="k-state-default k-scheduler-fullday k-scheduler-fullday"><a href="#" class="k-link"><span class="k-icon k-i-clock"></span>Show full day</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
