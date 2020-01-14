@@ -25,23 +25,23 @@
   },
   "dependencies": {
     "ansi-colors": "^4.1.1",
-    "autoprefixer": "^9.5.1",
-    "fibers": "^4.0.1",
-    "glob": "^7.1.3",
+    "autoprefixer": "^9.7.3",
+    "fibers": "^4.0.2",
+    "glob": "^7.1.6",
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^4.0.2",
     "gulp-sass-lint": "^1.4.0",
     "gulplog": "^1.0.0",
-    "mime": "^1.6.0",
+    "mime": "^2.4.4",
     "minimist": "^1.2.0",
-    "postcss-calc": "^6.0.2",
-    "sass": "^1.21.0",
-    "sass-lint": "^1.7.0",
-    "sassdoc": "^2.5.0"
+    "postcss-calc": "^7.0.1",
+    "sass": "^1.24.4",
+    "sass-lint": "^1.13.1",
+    "sassdoc": "^2.7.1"
   },
   "devDependencies": {
     "@joneff/baka": "^0.1.0",
-    "gulp-eslint": "^5.0.0"
+    "gulp-eslint": "^6.0.0"
   }
 }
