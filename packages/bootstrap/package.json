@@ -35,12 +35,12 @@
     "postpublish": "rm -rf modules && git checkout scss"
   },
   "peerDependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^4.4.1"
   },
   "devDependencies": {
     "@progress/kendo-theme-default": "^4.11.1",
     "@progress/kendo-theme-tasks": "^0.4.2",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.1",
     "gulp": "^4.0.2"
   }
 }
