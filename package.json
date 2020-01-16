@@ -25,7 +25,7 @@
     "visual-test": "./build/visual-test.sh",
     "create-screenshots": "./build/create-screenshots.sh",
     "karma-watch": "karma start --auto-watch --no-single-run",
-    "karma-single": "karma start --no-auto-watch --single-run --browsers ChromeHeadless",
+    "karma-single": "karma start --no-auto-watch --single-run --browsers ChromeKarma",
     "serve-tests": "http-server ./"
   },
   "config": {

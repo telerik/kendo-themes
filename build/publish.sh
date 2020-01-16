@@ -3,7 +3,7 @@
 set -e
 
 # Do not publish pull requests
-if [[ $TRAVIS_PULL_REQUEST != 'false' ]]
+if [[ $IS_PULL_REQUEST != 'false' ]]
 then
   echo "Pull requests do not publish to NPM."
   exit 0
@@ -18,18 +18,18 @@ then
   exit 0
 fi
 
-if [[ $TRAVIS_BRANCH == 'develop' ]]
+if [[ $BRANCH == 'develop' ]]
 then
   # Publish development (canary) release
 
   npx lerna publish --canary=dev --npm-tag=dev --allow-branch=develop --loglevel=verbose --yes
 
-elif [[ $TRAVIS_BRANCH == 'master' ]]
+elif [[ $BRANCH == 'master' ]]
 then
   # Publish official release
 
-  git config user.name "Travis CI"
-  git config user.email "travis"
+  git config user.name "Kendo Bot"
+  git config user.email "kendobot@progress.com"
 
   git remote set-url origin https://${GH_TOKEN}@github.com/telerik/kendo-themes.git > /dev/null 2>&1
 
@@ -47,9 +47,7 @@ then
 
   declare -a checks=(
       "WIP"
-      "continuous-integration/travis-ci"
-      "continuous-integration/travis-ci/pr"
-      "continuous-integration/travis-ci/push"
+      "Shippable"
   )
 
   for check in "${checks[@]}"

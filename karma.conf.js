@@ -79,13 +79,25 @@ module.exports = function(config) {
         },
 
 
-
-
         // client configuration
         client: {
             clearContext: false,
             qunit: {
                 showUI: false
+            }
+        },
+
+
+        customLaunchers: {
+            "ChromeKarma": {
+                base: 'Chrome',
+                flags: [
+                    '--no-sandbox',
+                    '--headless',
+                    '--disable-gpu',
+                    '--disable-software-rasterizer',
+                    '--remote-debugging-port=9222'
+                ]
             }
         }
     })

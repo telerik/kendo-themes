@@ -1,0 +1,55 @@
+language: node_js
+
+node_js:
+  - 10
+
+addons:
+  chrome: stable
+  firefox: latest
+
+branches:
+  except:
+    - "/\\.*@\\d+\\.\\d+\\.\\d+$/"
+env:
+  global:
+    - PATH=$PATH:./node_modules/.bin
+    - secure: uW+a9ILOBWyyu0PhcoEjyu1vvfWc1q3rQi7Rj69rLKhg1tia9zEFiLWxY3pTO6TsrgUuH+SD1zzElVppV3kkbwL1FQ4lgACOB+p76y+c2VD+A7StLgNkWnoUSy7YRyMCZRg/7DUsw+oLOvQcUfubZqdLKRLfJca4ebfGD5utc8cfVO7HjqhFN/teFJ/7LDyTNsbpAi0oOzH0UNMyyREoi+o/Qgfqv5ByLPiiJA2bKvxBQs1CeiN4qWPWR21LDrEehLLnZZ7c/5wMh15LlYBPdxGn2pSK+0Yy9V6YrX0YQkqaXLMyOvlp53VfDlWj8LyRV0JZZoVewh9RXxPCbyvKKQ==
+
+build:
+  # http://docs.shippable.com/ci/shippableyml/#ci
+  ci:
+    - CHROME_BIN=`which chrome`
+    - chrome --version
+    - firefox --version
+    - npm install --no-audit
+    - lerna bootstrap --concurrency=1 --no-ci
+    - npm run ci:full
+  on_success:
+    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > .npmrc
+    - ./build/publish.sh
+
+resources:
+  - name: kendo-themes-repo
+    type: gitRepo
+    integration: github-telerik
+    versionTemplate:
+      sourceName: telerik/kendo-themes
+      branch: develop
+  - name: shippable-themes-push
+    type: integration
+    integration: shippable-themes
+
+jobs:
+  - name: kendo-themes-publish_develop_as_latest
+    type: runSh
+    steps:
+      - IN: kendo-themes-repo
+        switch: off
+      - IN: shippable-themes-push
+        switch: off
+      - TASK:
+          name: kendo-themes-publish_develop
+          script:
+            - ssh-add $SHIPPABLETHEMESPUSH_PRIVATE_KEY_PATH
+            - cd $KENDOTHEMESREPO_STATE && git remote set-url --push origin git@github.com:telerik/kendo-themes.git && git checkout master && git pull --rebase
+            - npm install @telerik/semantic-prerelease@1 --no-save && npx release-master
