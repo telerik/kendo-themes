@@ -17,7 +17,7 @@ module.exports = function(dest, context) {
     const capitalize = (str) => str[0].toUpperCase() + str.substring(1);
     const isColor = /^#/i;
     const data = context.data
-        .filter((item) => item.access == 'public')
+        .filter((item) => item.access === 'public')
         .reduce((acc, item) => {
             acc[item.context.type].push(item);
             return acc;
@@ -44,24 +44,24 @@ module.exports = function(dest, context) {
 
     // sort groups by title, moving common group to the top
     data.variable.sort((a, b) => {
-        if (!a.id) return -1;
-        if (!b.id) return 1;
+        if (!a.id) { return -1; }
+        if (!b.id) { return 1; }
+        if (a.title === b.title) { return 0; }
 
-        return a.title === b.title ? 0 :
-               a.title < b.title ? -1 : 1;
+        return a.title > b.title ? 1 : -1;
     });
 
     data.meta = context.meta;
 
     return new Promise(function(done, error) {
-            let output = template(data);
-            output = output.replace(/\r?\n/g, '\n');
-            fs.writeFile(path.join('docs', 'customization.md'), output, (err) => {
-                if (err) {
-                    error(err);
-                } else {
-                    done(output);
-                }
-            });
+        let output = template(data);
+        output = output.replace(/\r?\n/g, '\n');
+        fs.writeFile(path.join('docs', 'customization.md'), output, (err) => {
+            if (err) {
+                error(err);
+            } else {
+                done(output);
+            }
         });
+    });
 };
