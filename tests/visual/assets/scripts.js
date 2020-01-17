@@ -1,15 +1,20 @@
-// Change themes
-var matches = (/(bootstrap|material)/i).exec(window.location.search);;
-if (matches) {
-    var link = document.querySelector('link[rel=stylesheet][href*=default]');
-    link.href = link.href.replace(/default/i, matches[0]);
-}
+"use strict";
+
+const DEFAULT_THEME = "default";
+const DEFAULT_SWATCH = "all";
+
+let params = (new URL(document.location)).searchParams;
+let theme = params.get("theme") || DEFAULT_THEME;
+let swatch = params.get("swatch") || DEFAULT_SWATCH;
+let animations = params.get("animations");
+let kendoThemeLink = document.querySelector('link[data-role="kendo-theme"]');
+
+// Change theme
+kendoThemeLink.href = kendoThemeLink.href.replace(/default/i, theme).replace(/all.css/, `${swatch}.css`);
 
 // Stop animations
-matches = (/(noanimations)/i).exec(window.location.search);;
-if (matches) {
+if (animations === true) {
     document.documentElement.classList.add("k-no-animations");
-}
-else {
+} else {
     document.documentElement.classList.remove("k-no-animations");
 }
