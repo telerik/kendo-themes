@@ -1,11 +1,13 @@
 {
     "dest": ".tmp",
-    "theme": "node_modules/@progress/kendo-theme-default/build/sassdoc-theme.js",
+    "theme": "node_modules/@progress/kendo-theme-tasks/lib/docs/sassdoc-theme.js",
     "meta": {
         "name": "material",
         "friendlyName": "Material",
     },
     "groups": {
+        "color-system": "Color System",
+        "fonts": "Fonts",
         "charts": "Charts",
         "undefined": "Common"
     }
