@@ -434,9 +434,10 @@
     .k-spreadsheet-cell {
         padding: 1px;
         box-sizing: border-box;
+        position: absolute;
+        line-height: normal;
         background-clip: padding-box;
         white-space: pre;
-        position: absolute;
         overflow: hidden;
     }
     .k-spreadsheet-merged-cell {
