@@ -51,62 +51,6 @@ The following table lists the available variables for customizing the Default th
 </td>
 </tr>
 <tr>
-<td>$accent</td>
-<td>
-    <span class="color-preview" style="background-color: #ff6358"></span>
-    #ff6358
-</td>
-<td>The color that focuses the user attention.<br/>
-Used for primary buttons and for elements of primary importance across the theme.
-</td>
-</tr>
-<tr>
-<td>$accent-contrast</td>
-<td>
-    
-    contrast-wcag( $accent )
-</td>
-<td>The color used along with the accent color denoted by $accent.<br/>
-Used to provide contrast between the background and foreground colors.
-</td>
-</tr>
-<tr>
-<td>$info</td>
-<td>
-    <span class="color-preview" style="background-color: #0058e9"></span>
-    #0058e9
-</td>
-<td>The color for informational messages and states.
-</td>
-</tr>
-<tr>
-<td>$success</td>
-<td>
-    <span class="color-preview" style="background-color: #37b400"></span>
-    #37b400
-</td>
-<td>The color for success messages and states.
-</td>
-</tr>
-<tr>
-<td>$warning</td>
-<td>
-    <span class="color-preview" style="background-color: #ffc000"></span>
-    #ffc000
-</td>
-<td>The color for warning messages and states.
-</td>
-</tr>
-<tr>
-<td>$error</td>
-<td>
-    <span class="color-preview" style="background-color: #f31700"></span>
-    #f31700
-</td>
-<td>The color for error messages and states.
-</td>
-</tr>
-<tr>
 <td>$base-text</td>
 <td>
     <span class="color-preview" style="background-color: #656565"></span>
@@ -433,6 +377,106 @@ Used to provide contrast between the background and foreground colors.
     rgba(0, 0, 0, .04)
 </td>
 <td>The color of the Chart grid lines (minor).
+</td>
+</tr>
+</table>
+
+
+### Color System
+
+<table class="theme-variables">
+<colgroup>
+<col style="white-space:nowrap; width: 200px" />
+<col style="width: 250px" />
+<col />
+</colgroup>
+<tr>
+<th>Name</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>$color-level-step</td>
+<td>
+    
+    8%
+</td>
+<td>Set a specific jump point for requesting color jumps
+</td>
+</tr>
+<tr>
+<td>$accent</td>
+<td>
+    <span class="color-preview" style="background-color: #ff6358"></span>
+    #ff6358
+</td>
+<td>The color that focuses the user attention.<br/>
+Used for primary buttons and for elements of primary importance across the theme.
+</td>
+</tr>
+<tr>
+<td>$accent-contrast</td>
+<td>
+    
+    contrast-wcag( $accent )
+</td>
+<td>The color used along with the accent color denoted by $accent.<br/>
+Used to provide contrast between the background and foreground colors.
+</td>
+</tr>
+<tr>
+<td>$secondary</td>
+<td>
+    <span class="color-preview" style="background-color: #f6f6f6"></span>
+    #f6f6f6
+</td>
+<td>The secondary color of the theme.
+</td>
+</tr>
+<tr>
+<td>$secondary-contrast</td>
+<td>
+    
+    contrast-wcag( $secondary )
+</td>
+<td>The color used along with the secondary color denoted by $secondary.<br/>
+Used to provide contrast between the background and foreground colors.
+</td>
+</tr>
+<tr>
+<td>$info</td>
+<td>
+    <span class="color-preview" style="background-color: #0058e9"></span>
+    #0058e9
+</td>
+<td>The color for informational messages and states.
+</td>
+</tr>
+<tr>
+<td>$success</td>
+<td>
+    <span class="color-preview" style="background-color: #37b400"></span>
+    #37b400
+</td>
+<td>The color for success messages and states.
+</td>
+</tr>
+<tr>
+<td>$warning</td>
+<td>
+    <span class="color-preview" style="background-color: #ffc000"></span>
+    #ffc000
+</td>
+<td>The color for warning messages and states.
+</td>
+</tr>
+<tr>
+<td>$error</td>
+<td>
+    <span class="color-preview" style="background-color: #f31700"></span>
+    #f31700
+</td>
+<td>The color for error messages and states.
 </td>
 </tr>
 </table>
