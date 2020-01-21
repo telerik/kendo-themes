@@ -10,7 +10,7 @@
         .k-grid-mobile {
 
             .k-column-active + th.k-header {
-                border-left-color: $text-color;
+                border-left-color: $body-text;
             }
 
             .k-resize-handle-inner::before {

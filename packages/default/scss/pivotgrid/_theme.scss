@@ -3,10 +3,10 @@
     $pivotgrid-alt-color: black !default;
     $pivotgrid-chrome-border: $border-color !default;
 
-    $pivotgrid-setting-delete-color: darken($bg-color, 27%) !default;
+    $pivotgrid-setting-delete-color: darken($component-bg, 27%) !default;
 
-    $pivotgrid-container-bg: $bg-color !default;
-    $pivotgrid-row-headers-bg: darken($bg-color, 7%) !default;
+    $pivotgrid-container-bg: $component-bg !default;
+    $pivotgrid-row-headers-bg: darken($component-bg, 7%) !default;
 
     .k-alt,
     .k-pivot-toolbar,

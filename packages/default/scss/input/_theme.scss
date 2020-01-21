@@ -90,7 +90,7 @@
 
     .k-form,
     .k-form-inline {
-        @include fill ( $color: $text-color );
+        @include fill ( $color: $body-text );
 
         fieldset {
             legend {
@@ -99,7 +99,7 @@
         }
 
         .k-field-info {
-            @include fill ( $color: lighten($text-color, 33%) );
+            @include fill ( $color: lighten($body-text, 33%) );
         }
 
         .k-alert-error {

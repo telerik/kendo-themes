@@ -5,8 +5,8 @@ $menu-expanded-text: $base-text !default;
 $menu-selected-text: $list-item-selected-text !default;
 $menu-focused-shadow: $list-item-focused-shadow !default;
 
-$menu-scrolling-bg: $bg-color !default;
-$menu-scrolling-border: $widget-border !default;
+$menu-scrolling-bg: $component-bg !default;
+$menu-scrolling-border: $component-border !default;
 $menu-scrolling-icon: $link-text !default;
 $menu-scrolling-icon-hover: $link-hover-text !default;
 
