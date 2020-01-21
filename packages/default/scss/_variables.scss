@@ -110,22 +110,6 @@ $form-line-height-sm: $line-height-sm !default;
 $form-line-height-lg: $line-height-lg !default;
 
 
-// Buttons
-$button-border-width: 1px !default;
-$button-border-radius: $border-radius !default;
-
-$button-padding-x: $padding-x !default;
-$button-padding-y: $padding-y !default;
-$button-line-height: $form-line-height !default;
-
-$button-padding-x-sm: $button-padding-x / 2 !default;
-$button-padding-y-sm: $button-padding-y / 2 !default;
-$button-line-height-sm: $form-line-height-sm !default;
-
-$button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} ) !default;
-$button-calc-size: calc( #{$button-inner-calc-size} + 2px ) !default;
-
-
 $list-item-padding-x: $padding-x !default;
 $list-item-padding-y: $padding-y !default;
 
@@ -213,6 +197,7 @@ $gradient-white-to-transparent: white, rgba( white, 0);
 $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
 
+// Components
 
 
 // Widget
@@ -257,7 +242,22 @@ $placeholder-line-height: 10px !default;
 $placeholder-bg: rgba(0, 0, 0, .1) !default;
 
 
-// Button
+// Buttons
+
+$button-border-width: 1px !default;
+$button-border-radius: $border-radius !default;
+
+$button-padding-x: $padding-x !default;
+$button-padding-y: $padding-y !default;
+$button-line-height: $form-line-height !default;
+
+$button-padding-x-sm: $button-padding-x / 2 !default;
+$button-padding-y-sm: $button-padding-y / 2 !default;
+$button-line-height-sm: $form-line-height-sm !default;
+
+$button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} ) !default;
+$button-calc-size: calc( #{$button-inner-calc-size} + 2px ) !default;
+
 /// The text color of the buttons.
 /// @group buttons
 $button-text: $base-text !default;
@@ -314,9 +314,6 @@ $button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
 $button-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
 
 
-// Components
-
-
 // Primary button
 $primary-button-text: $accent-contrast !default;
 $primary-button-bg: $accent !default;
@@ -343,6 +340,7 @@ $flat-button-selected-opacity: .2 !default;
 
 
 // Input
+
 $input-default-width: 12.4em !default;
 
 $input-border-width: 1px !default;
