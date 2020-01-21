@@ -24,7 +24,7 @@
             overflow: hidden;
         }
 
-        table {
+        .k-calendar-view table {
             margin: 0;
             border-width: 0;
             border-color: inherit;
@@ -35,8 +35,8 @@
             position: relative;
             z-index: 1;
         }
-        td,
-        th {
+        .k-calendar-view td,
+        .k-calendar-view th {
             border-width: 0;
             padding: 0;
             text-align: center;
@@ -45,14 +45,14 @@
             font-weight: normal;
             cursor: default;
         }
-        th {
+        .k-calendar-view th {
             padding: $calendar-header-cell-padding-y $calendar-header-cell-padding-x;
             font-size: $calendar-header-cell-font-size;
             line-height: $calendar-header-cell-line-height;
             text-transform: uppercase;
             opacity: $calendar-header-cell-opacity;
         }
-        tbody th {
+        .k-calendar-view tbody th {
             padding-left: $button-padding-x;
             padding-right: $button-padding-x;
             height: $calendar-header-height;
