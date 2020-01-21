@@ -124,6 +124,7 @@
 
         > .k-calendar-header {
             min-width: $calendar-header-min-width;
+            box-sizing: border-box;
         }
 
         // Footer
