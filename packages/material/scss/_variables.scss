@@ -285,8 +285,8 @@ $panel-border: $component-border !default;
 
 
 // Grouping
+$grouping-header-bg: $component-border !default;
 $grouping-header-text: rgba($base-text, .54) !default;
-$grouping-header-bg: $widget-border !default;
 $grouping-border: $grouping-header-bg !default;
 $frozen-grouping-header-text: null !default;
 
@@ -874,7 +874,7 @@ $toolbar-button-expanded-shadow: $button-focused-shadow !default;
 
 $toolbar-shadow: $button-shadow !default;
 $toolbar-separator-padding-y: 6px !default;
-$toolbar-separator-border: $widget-border !default;
+$toolbar-separator-border: $component-border !default;
 
 
 // Node
@@ -917,9 +917,9 @@ $listgroup-border-radius: $border-radius !default;
 $listgroup-font-size: $font-size !default;
 $listgroup-line-height: $line-height !default;
 
-$listgroup-bg: $panel-bg !default;
-$listgroup-text: $panel-text !default;
-$listgroup-border: $panel-border !default;
+$listgroup-bg: $component-bg !default;
+$listgroup-text: $component-text !default;
+$listgroup-border: $component-border !default;
 
 $listgroup-item-padding-x: $padding-x !default;
 $listgroup-item-padding-y: $padding-y !default;
@@ -1202,7 +1202,7 @@ $chart-minor-lines: rgba(0, 0, 0, .04) !default;
 
 $chart-area-opacity: .8 !default;
 
-$chart-bg: $widget-bg !default;
+$chart-bg: $component-bg !default;
 
 // Disabled mixin variables
 $disabled-filter: grayscale(.1) !default;
@@ -1626,7 +1626,7 @@ $slider-transition-function: ease-out !default;
 $slider-draghandle-transition-speed: .4s !default;
 $slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
 
-$slider-track-bg: darken($widget-bg, 10%) !default;
+$slider-track-bg: darken($component-bg, 10%) !default;
 $slider-selection-bg: $accent !default;
 $slider-disabled-opacity: .65 !default;
 
@@ -1702,7 +1702,7 @@ $time-list-focus-size: 2px !default;
 $time-list-width: 5em !default;
 $time-list-height: 200px !default;
 
-$dateinput-text: $panel-text !default;
+$dateinput-text: $component-text !default;
 
 $datetime-width: calc( #{$calendar-cell-size * 8} + #{$calendar-content-padding-x * 2} ) !default;
 
@@ -1874,7 +1874,7 @@ $scheduler-timecolumn-width: 11rem !default;
 
 $scheduler-current-time-color: #ff0000 !default;
 
-$scheduler-nonwork-bg: mix( $panel-text, $panel-bg, 3% ) !default;
+$scheduler-nonwork-bg: mix( $component-text, $component-bg, 3% ) !default;
 
 
 // PDF viewer
@@ -1889,8 +1889,8 @@ $pdf-viewer-canvas-border: null !default;
 $pdf-viewer-page-spacing: 30px !default;
 
 $pdf-viewer-page-bg: white !default;
-$pdf-viewer-page-text: $panel-text !default;
-$pdf-viewer-page-border: $panel-border !default;
+$pdf-viewer-page-text: $component-text !default;
+$pdf-viewer-page-border: $component-border !default;
 $pdf-viewer-page-shadow: 0 0 ($pdf-viewer-page-spacing / 2) $pdf-viewer-page-border !default;
 
 $pdf-viewer-search-dialog-spacing: 6px !default;
@@ -2085,9 +2085,9 @@ $timeline-event-min-height-calc: calc(2 * (#{$timeline-track-event-offset} - #{$
 $upload-border-width: 1px !default;
 $upload-font-size: $font-size !default;
 $upload-line-height: ( 20 / 14 ) !default;
-$upload-border: $panel-border !default;
-$upload-bg: $panel-bg !default;
-$upload-text: $panel-text !default;
+$upload-bg: $component-bg !default;
+$upload-text: $component-text !default;
+$upload-border: $component-border !default;
 
 $upload-dropzone-padding-x: 8px !default;
 $upload-dropzone-padding-y: 8px !default;
@@ -2105,8 +2105,8 @@ $upload-item-image-border: 2px !default;
 
 $upload-group-icon-size: $icon-size-lg !default;
 
-$upload-disabled-text: darken($widget-bg, 27%) !default;
-$upload-disabled-border: darken($widget-bg, 27%) !default;
+$upload-disabled-text: darken($component-bg, 27%) !default;
+$upload-disabled-border: darken($component-bg, 27%) !default;
 
 $upload-progress-thickness: 3px !default;
 $upload-progress-bg: $info !default;
@@ -2185,7 +2185,7 @@ $filemanager-toolbar-font-weight: bold !default;
 $filemanager-toolbar-spacing: $padding-x !default;
 $filemanager-toolbar-bg: null !default;
 $filemanager-toolbar-text: null !default;
-$filemanager-toolbar-border: $panel-border !default;
+$filemanager-toolbar-border: $component-border !default;
 
 $filemanager-toolbar-search-tool-spacing: $filemanager-toolbar-spacing !default;
 
@@ -2194,7 +2194,7 @@ $filemanager-navigation-border-width: 0 $filemanager-border-width 0 0 !default;
 $filemanager-navigation-border-style: solid !default;
 $filemanager-navigation-bg: null !default;
 $filemanager-navigation-text: null !default;
-$filemanager-navigation-border: $panel-border !default;
+$filemanager-navigation-border: $component-border !default;
 
 $filemanager-navigation-container-padding-x: 0 !default;
 $filemanager-navigation-container-padding-y: $filemanager-spacer !default;
@@ -2208,7 +2208,7 @@ $filemanager-breadcrumb-border-width: 0 0 $filemanager-border-width 0 !default;
 $filemanager-breadcrumb-border-style: solid !default;
 $filemanager-breadcrumb-bg: try-shade($base-bg, .5) !default;
 $filemanager-breadcrumb-text: null !default;
-$filemanager-breadcrumb-border: $panel-border !default;
+$filemanager-breadcrumb-border: $component-border !default;
 
 $filemanager-listview-border-width: 0 !default;
 $filemanager-listview-bg: null !default;
@@ -2245,7 +2245,7 @@ $filemanager-preview-border-width: 0 0 0 $filemanager-border-width !default;
 $filemanager-preview-border-style: solid !default;
 $filemanager-preview-bg: null !default;
 $filemanager-preview-text: null !default;
-$filemanager-preview-border: $panel-border !default;
+$filemanager-preview-border: $component-border !default;
 
 $filemanager-preview-container-padding: ($filemanager-spacer * 6) 0 $filemanager-spacer 0 !default;
 
