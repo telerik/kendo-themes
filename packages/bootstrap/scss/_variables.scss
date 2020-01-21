@@ -1118,18 +1118,18 @@ $notification-border-width: $alert-border-width !default;
 $notification-icon-offset: 3px !default;
 $notification-icon-spacing: $icon-spacing !default;
 
-$notification-info-bg: color-level($info, 10) !default;
-$notification-info-text: color-level($info, -6) !default;
-$notification-info-border: color-level($info, 9) !default;
-$notification-success-bg: color-level($success, 10) !default;
-$notification-success-text: color-level($success, -6) !default;
-$notification-success-border: color-level($success, 9) !default;
-$notification-warning-bg: color-level($warning, 10) !default;
-$notification-warning-text: color-level($warning, -6) !default;
-$notification-warning-border: color-level($warning, 9) !default;
-$notification-error-bg: color-level($error, 10) !default;
-$notification-error-text: color-level($error, -6) !default;
-$notification-error-border: color-level($error, 9) !default;
+$notification-info-bg: tint($info, 10) !default;
+$notification-info-text: shade($info, 6) !default;
+$notification-info-border: tint($info, 9) !default;
+$notification-success-bg: tint($success, 10) !default;
+$notification-success-text: shade($success, 6) !default;
+$notification-success-border: tint($success, 9) !default;
+$notification-warning-bg: tint($warning, 10) !default;
+$notification-warning-text: shade($warning, 6) !default;
+$notification-warning-border: tint($warning, 9) !default;
+$notification-error-bg: tint($error, 10) !default;
+$notification-error-text: shade($error, 6) !default;
+$notification-error-border: tint($error, 9) !default;
 
 
 // Chart
