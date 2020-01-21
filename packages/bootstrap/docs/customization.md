@@ -396,6 +396,15 @@ The following table lists the available variables for customizing the Bootstrap 
 <th>Description</th>
 </tr>
 <tr>
+<td>$color-level-step</td>
+<td>
+    
+    $theme-color-interval
+</td>
+<td>Set a specific jump point for requesting color jumps
+</td>
+</tr>
+<tr>
 <td>$accent</td>
 <td>
     
@@ -416,12 +425,22 @@ Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
-<td>$success</td>
+<td>$secondary</td>
 <td>
     
-    $success
+    $secondary
 </td>
-<td>The color for success messages and states.
+<td>The secondary color of the theme.
+</td>
+</tr>
+<tr>
+<td>$secondary-contrast</td>
+<td>
+    
+    contrast-wcag( $secondary )
+</td>
+<td>The color used along with the secondary color denoted by $secondary.<br/>
+Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
@@ -431,6 +450,15 @@ Used to provide contrast between the background and foreground colors.
     $info
 </td>
 <td>The color for informational messages and states.
+</td>
+</tr>
+<tr>
+<td>$success</td>
+<td>
+    
+    $success
+</td>
+<td>The color for success messages and states.
 </td>
 </tr>
 <tr>
@@ -449,15 +477,6 @@ Used to provide contrast between the background and foreground colors.
     $danger
 </td>
 <td>The color for error messages and states.
-</td>
-</tr>
-<tr>
-<td>$color-level-step</td>
-<td>
-    
-    $theme-color-interval
-</td>
-<td>Set a specific jump point for requesting color jumps
 </td>
 </tr>
 <tr>
