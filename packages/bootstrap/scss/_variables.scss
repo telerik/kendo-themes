@@ -245,6 +245,14 @@ $gradient-white-to-transparent: white, rgba( white, 0);
 $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
 
+// Root styles
+$body-bg: $body-bg !default;
+$body-text: $body-color !default;
+
+$app-bg: $body-bg !default;
+$app-text: $body-text !default;
+
+
 // Components
 
 
@@ -267,8 +275,8 @@ $panel-border: $card-border-color !default;
 
 
 // Grouping
-$grouping-header-text: $bg-color !default;
-$grouping-header-bg: $text-color !default;
+$grouping-header-bg: $body-text !default;
+$grouping-header-text: $body-bg !default;
 $grouping-border: $border-color !default;
 $frozen-grouping-header-text: #6c757d !default;
 
@@ -797,7 +805,7 @@ $form-spacer: $padding-x * 2 !default;
 
 $inline-form-element-width: 25% !default;
 
-$form-fieldset-legend-text: darken($text-color, 13%) !default;
+$form-fieldset-legend-text: darken($body-text, 13%) !default;
 
 $fieldset-font-size: $h4-font-size !default;
 $fieldset-margin: 30px !default;
@@ -1162,7 +1170,7 @@ $chart-font-size-sm: 11px !default;
 $chart-font-size-md: 12px !default;
 $chart-font-size-lg: 16px !default;
 
-$chart-inactive: rgba( $text-color, .5 ) !default;
+$chart-inactive: rgba( $body-text, .5 ) !default;
 
 /// The color of the Chart grid lines (major).
 /// @group charts
@@ -1266,7 +1274,7 @@ $chip-remove-icon-font-size: 14px !default;
 $chip-avatar-size: 24px !default;
 
 $chip-filled-bg: #e4e7eb !default;
-$chip-filled-text: $text-color !default;
+$chip-filled-text: $body-text !default;
 $chip-filled-border: transparent !default;
 
 $chip-filled-hovered-bg: #ced3db !default;
@@ -1526,7 +1534,7 @@ $progressbar-indeterminate-text: $progressbar-text !default;
 $progressbar-indeterminate-border: $progressbar-border !default;
 $progressbar-indeterminate-gradient: null !default;
 
-$progressbar-chunk-border: $bg-color !default;
+$progressbar-chunk-border: $body-bg !default;
 
 
 // Slider
@@ -1866,8 +1874,8 @@ $pdf-viewer-search-highlight-bg: try-darken($base-bg, 70% ) !default;
 
 
 // Drawer
-$drawer-text: $text-color !default;
-$drawer-bg: $bg-color !default;
+$drawer-bg: $body-bg !default;
+$drawer-text: $body-text !default;
 $drawer-border: $border-color !default;
 $drawer-border-width: 1px !default;
 $drawer-content-padding-x: $padding-x !default;
@@ -1931,7 +1939,7 @@ $spreadsheet-insert-image-dialog-preview-border-bg: $border-color !default;
 $spreadsheet-insert-image-dialog-preview-border-radius: $border-radius !default;
 $spreadsheet-insert-image-dialog-preview-overlay-shadow: inset 0 0 0 2000px rgba(0, 0, 0, .5) !default;
 $spreadsheet-insert-image-dialog-preview-overlay-border-radius: $border-radius !default;
-$spreadsheet-insert-image-dialog-overlay-hovered-text: $bg-color !default;
+$spreadsheet-insert-image-dialog-overlay-hovered-text: $body-bg !default;
 
 $spreadsheet-drawing-handle-width: 6px !default;
 $spreadsheet-drawing-handle-height: 6px !default;
@@ -1958,7 +1966,7 @@ $filter-line-size: 1px !default;
 $filter-operator-dropdown-width: 15em !default;
 
 $filter-preview-field-text: $accent !default;
-$filter-preview-operator-text: rgba($text-color, .6) !default;
+$filter-preview-operator-text: rgba($body-text, .6) !default;
 
 
 // Timeline
@@ -1973,9 +1981,9 @@ $timeline-mobile-spacing-y: $padding-x !default;
 $timeline-track-arrow-width: 38px !default;
 $timeline-track-arrow-height: 38px !default;
 
-$timeline-track-arrow-disabled-text: true-mix($button-text, $bg-color, 65%) !default;
-$timeline-track-arrow-disabled-bg: true-mix($button-bg, $bg-color, 65%) !default;
-$timeline-track-arrow-disabled-border: true-mix($button-border, $bg-color, 65%) !default;
+$timeline-track-arrow-disabled-text: true-mix($button-text, $body-bg, 65%) !default;
+$timeline-track-arrow-disabled-bg: true-mix($button-bg, $body-bg, 65%) !default;
+$timeline-track-arrow-disabled-border: true-mix($button-border, $body-bg, 65%) !default;
 
 $timeline-track-size: 6px !default;
 $timeline-track-border-width: 1px !default;

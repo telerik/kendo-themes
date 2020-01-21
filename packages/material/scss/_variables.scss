@@ -236,6 +236,7 @@ $accent-contrast: $primary-contrast !default;
 
 $body-bg: map-get($theme, body-bg) !default;
 $body-text: map-get($theme, body-text) !default;
+
 $app-bg: $body-bg !default;
 $app-text: $body-text !default;
 
@@ -852,7 +853,7 @@ $form-spacer: $padding-x * 2 !default;
 
 $inline-form-element-width: 25% !default;
 
-$form-fieldset-legend-text: darken($text-color, 13%) !default;
+$form-fieldset-legend-text: darken($body-text, 13%) !default;
 
 $fieldset-font-size: $h4-font-size !default;
 $fieldset-margin: 30px !default;
@@ -929,7 +930,7 @@ $list-item-selected-text: $secondary !default;
 $list-item-focused-shadow: null !default;
 
 $list-container-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
-$list-container-no-data-text: rgba( $text-color, .5 ) !default;
+$list-container-no-data-text: rgba( $body-text, .5 ) !default;
 
 
 // Listgroup
@@ -1347,7 +1348,7 @@ $chip-remove-icon-font-size: 14px !default;
 $chip-avatar-size: 24px !default;
 
 $chip-filled-bg: #e0e0e0 !default;
-$chip-filled-text: $text-color !default;
+$chip-filled-text: $body-text !default;
 $chip-filled-border: transparent !default;
 
 $chip-filled-hovered-bg: #d8d8d8 !default;
@@ -1376,7 +1377,7 @@ $chip-filled-info-text: $info !default;
 $chip-filled-info-border: transparent !default;
 
 $chip-outline-bg: transparent !default;
-$chip-outline-text: $text-color !default;
+$chip-outline-text: $body-text !default;
 $chip-outline-border: rgba(0, 0, 0, .2) !default;
 
 $chip-outline-hovered-bg: #f6f6f6 !default;
@@ -2012,7 +2013,7 @@ $spreadsheet-insert-image-dialog-preview-border-bg: $border-color !default;
 $spreadsheet-insert-image-dialog-preview-border-radius: $border-radius !default;
 $spreadsheet-insert-image-dialog-preview-overlay-shadow: inset 0 0 0 2000px rgba(0, 0, 0, .5) !default;
 $spreadsheet-insert-image-dialog-preview-overlay-border-radius: $border-radius !default;
-$spreadsheet-insert-image-dialog-overlay-hovered-text: $bg-color !default;
+$spreadsheet-insert-image-dialog-overlay-hovered-text: $body-bg !default;
 
 $spreadsheet-drawing-handle-width: 6px !default;
 $spreadsheet-drawing-handle-height: 6px !default;
@@ -2039,7 +2040,7 @@ $filter-line-size: 1px !default;
 $filter-operator-dropdown-width: 19em !default;
 
 $filter-preview-field-text: $accent !default;
-$filter-preview-operator-text: rgba($text-color, .6) !default;
+$filter-preview-operator-text: rgba($body-text, .6) !default;
 
 
 // Timeline
@@ -2054,9 +2055,9 @@ $timeline-mobile-spacing-y: $padding-x !default;
 $timeline-track-arrow-width: 36px !default;
 $timeline-track-arrow-height: 36px !default;
 
-$timeline-track-arrow-disabled-text: true-mix($button-text, $bg-color, 65%) !default;
-$timeline-track-arrow-disabled-bg: true-mix(#000000, $bg-color, 8%) !default;
-$timeline-track-arrow-disabled-border: true-mix($button-border, $bg-color, 65%) !default;
+$timeline-track-arrow-disabled-text: true-mix($button-text, $body-bg, 65%) !default;
+$timeline-track-arrow-disabled-bg: true-mix(#000000, $body-bg, 8%) !default;
+$timeline-track-arrow-disabled-border: true-mix($button-border, $body-bg, 65%) !default;
 
 $timeline-track-size: 6px !default;
 $timeline-track-border-width: 1px !default;
@@ -2135,7 +2136,7 @@ $upload-progress-bg: $info !default;
 $upload-progress-text: $base-text !default;
 
 $upload-success-bg: $success !default;
-$upload-success-text: $text-color !default;
+$upload-success-text: $body-text !default;
 
 $upload-error-bg: $error !default;
 $upload-error-text: $error !default;
