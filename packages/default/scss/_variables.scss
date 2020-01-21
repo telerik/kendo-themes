@@ -199,6 +199,7 @@ $selected-hover-color: $selected-text !default;
 $selected-hover-bg: shade( $selected-bg ) !default;
 
 $focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
+$primary-focused-shadow: inset 0 0 0 2px rgba($accent, .3) !default;
 
 $transition: background-color .2s ease !default;
 
