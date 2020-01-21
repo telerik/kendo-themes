@@ -292,6 +292,13 @@ $gradient-white-to-transparent: white, rgba( white, 0);
 $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
 
+// Generic styles
+
+// Link
+$link-text: $secondary !default;
+$link-hover-text: $secondary-darker !default;
+
+
 // Components
 
 
@@ -1178,11 +1185,6 @@ $notification-warning-border: $notification-warning-bg !default;
 $notification-error-bg: $error !default;
 $notification-error-text: contrast-wcag( $notification-error-bg ) !default;
 $notification-error-border: $notification-error-bg !default;
-
-
-// Link
-$link-text: $secondary !default;
-$link-hover-text: $secondary-darker !default;
 
 
 // Chart

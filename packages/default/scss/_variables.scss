@@ -235,6 +235,8 @@ $gradient-white-to-transparent: white, rgba( white, 0);
 $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
 
+// Generic styles
+
 // Root styles
 $body-bg: $bg-color !default;
 $body-text: $text-color !default;
@@ -242,9 +244,12 @@ $body-text: $text-color !default;
 $app-bg: $body-bg !default;
 $app-text: $body-text !default;
 
+// Link
+$link-text: $primary !default;
+$link-hover-text: $primary-darker !default;
+
 
 // Components
-
 
 // Component
 $component-bg: $body-bg !default;
@@ -838,11 +843,6 @@ $toolbar-button-expanded-shadow: none !default;
 $toolbar-shadow: none !default;
 $toolbar-separator-padding-y: $toolbar-button-padding-y !default;
 $toolbar-separator-border: inherit !default;
-
-
-// Link
-$link-text: $accent !default;
-$link-hover-text: desaturate(darken($accent, 5), 25) !default;
 
 
 // Node
