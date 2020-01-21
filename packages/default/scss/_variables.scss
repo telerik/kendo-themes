@@ -128,25 +128,63 @@ $zindex-window: 2 !default;
 $rgba-transparent: rgba( 0, 0, 0, 0 );
 
 
+// Color settings
+// $is-dark-theme: ;
+
+/// Set a specific jump point for requesting color jumps
+/// @group color-system
+$color-level-step: 8% !default;
+
+
 // Theme colors
 /// The color that focuses the user attention.
 /// Used for primary buttons and for elements of primary importance across the theme.
+/// @group color-system
 $accent: #ff6358 !default;
+$primary: $accent !default;
+$primary-lighter: tint($primary, 2) !default;
+$primary-darker: shade($primary, 2) !default;
 
 /// The color used along with the accent color denoted by $accent.
 /// Used to provide contrast between the background and foreground colors.
+/// @group color-system
 $accent-contrast: contrast-wcag( $accent ) !default;
+$primary-contrast: $accent-contrast !default;
+
+/// The secondary color of the theme.
+/// @group color-system
+$secondary: #f6f6f6 !default;
+$secondary-lighter: tint($secondary, 2) !default;
+$secondary-darker: shade($secondary, 2) !default;
+
+/// The color used along with the secondary color denoted by $secondary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+$secondary-contrast: contrast-wcag( $secondary ) !default;
 
 /// The color for informational messages and states.
+/// @group color-system
 $info: #0058e9 !default;
-/// The color for success messages and states.
-$success: #37b400 !default;
-/// The color for warning messages and states.
-$warning: #ffc000 !default;
-/// The color for error messages and states.
-$error: #f31700 !default;
+$info-lighter: tint($info, 2) !default;
+$info-darker: shade($info, 2) !default;
 
-$color-level-step: 8% !default;
+/// The color for success messages and states.
+/// @group color-system
+$success: #37b400 !default;
+$success-lighter: tint($success, 2) !default;
+$success-darker: shade($success, 2) !default;
+
+/// The color for warning messages and states.
+/// @group color-system
+$warning: #ffc000 !default;
+$warning-lighter: tint($warning, 2) !default;
+$warning-darker: shade($warning, 2) !default;
+
+/// The color for error messages and states.
+/// @group color-system
+$error: #f31700 !default;
+$error-lighter: tint($error, 2) !default;
+$error-darker: shade($error, 2) !default;
 
 $text-color: #656565 !default;
 $bg-color: #ffffff !default;
