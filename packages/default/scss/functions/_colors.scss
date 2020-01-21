@@ -286,7 +286,7 @@ $linear-channel-values: (
         @return $color;
     }
 
-    $base: if($level > 0, #ffffff, #000000);
+    $base: if($level < 0, #ffffff, #000000);
     $level: abs($level);
 
     @if ( unit($level) == "%" ) {
@@ -297,11 +297,11 @@ $linear-channel-values: (
 }
 
 @function tint( $color, $level: 1 ) {
-    @return color-level( $color, $level );
+    @return color-level( $color, -1 * $level );
 }
 
 @function shade( $color, $level: 1 ) {
-    @return color-level( $color, - $level );
+    @return color-level( $color, 1 * $level );
 }
 
 @function try-shade($color, $level: 1) {
