@@ -180,8 +180,7 @@
 @include exports( "spreadsheet/drawing/theme" ) {
 
     .k-spreadsheet-insert-image-dialog {
-        border-color: $spreadsheet-insert-image-dialog-preview-border-bg;
-        border-radius: $spreadsheet-insert-image-dialog-preview-border-radius;
+        border-color: $spreadsheet-insert-image-dialog-preview-border;
 
         .k-spreadsheet-has-image {
             &:hover,

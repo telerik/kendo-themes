@@ -799,6 +799,7 @@
 
     // Insert image dialog
     .k-spreadsheet-insert-image-dialog {
+        @include border-radius( $spreadsheet-insert-image-dialog-preview-border-radius );
         border-style: $spreadsheet-insert-image-dialog-border-style;
         border-width: $spreadsheet-insert-image-dialog-border-width;
 
