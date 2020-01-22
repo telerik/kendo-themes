@@ -2,12 +2,12 @@
 
     .k-timeline {
         .k-timeline-flag {
-            background-color: $timeline-flag-background;
             color: $timeline-flag-text;
+            background-color: $timeline-flag-bg;
         }
 
         .k-timeline-circle {
-            background-color: $timeline-circle-color;
+            background-color: $timeline-circle-bg;
         }
 
         .k-timeline-card {
@@ -57,6 +57,6 @@
     }
 
     .k-timeline-horizontal .k-timeline-flag::after {
-        background-color: $timeline-flag-background;
+        background-color: $timeline-flag-bg;
     }
 }

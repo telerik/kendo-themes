@@ -106,8 +106,8 @@
     // Badge
     .k-badge {
         @include fill(
-            $primary-contrast,
-            $primary
+            $badge-primary-text,
+            $badge-primary-bg
         );
     }
 }

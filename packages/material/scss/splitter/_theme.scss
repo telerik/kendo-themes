@@ -3,6 +3,6 @@ $splitter-text: rgba($base-text, .54) !default;
 $splitter-hovered-bg: rgba($base-text, .22);
 $splitter-hovered-text: $base-text !default;
 $splitter-selected-bg: $primary !default;
-$splitter-selected-text: $primary-contrast !default;
+$splitter-selected-text: contrast-wcag( $splitter-selected-bg ) !default;
 
 @import "~@progress/kendo-theme-default/scss/splitter/_theme.scss";

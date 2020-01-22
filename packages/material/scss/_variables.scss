@@ -414,7 +414,7 @@ $button-focused-shadow: null !default;
 
 // Primary button
 $primary-button-bg: $primary !default;
-$primary-button-text: $primary-contrast !default;
+$primary-button-text: contrast-wcag( $primary-button-bg ) !default;
 $primary-button-border: $primary-button-bg !default;
 $primary-button-gradient: null !default;
 
@@ -516,7 +516,7 @@ $badge-secondary-text:  $base-text !default;
 $badge-secondary-border: $badge-secondary-bg !default;
 
 $badge-primary-bg: $primary !default;
-$badge-primary-text: $primary-contrast !default;
+$badge-primary-text: contrast-wcag( $badge-primary-bg ) !default;
 $badge-primary-border: $badge-primary-bg !default;
 
 $badge-info-bg: $info !default;
@@ -794,7 +794,7 @@ $checkbox-hovered-bg: null !default;
 $checkbox-hovered-text: null !default;
 $checkbox-hovered-border: $input-hovered-border !default;
 $checkbox-checked-bg: $primary !default;
-$checkbox-checked-text: $primary-contrast !default;
+$checkbox-checked-text: contrast-wcag( $checkbox-checked-bg ) !default;
 $checkbox-checked-border: $checkbox-checked-bg !default;
 $checkbox-indeterminate-bg: $checkbox-checked-bg !default;
 $checkbox-indeterminate-text: $checkbox-checked-text !default;
@@ -1255,7 +1255,7 @@ $pager-number-hovered-text: $list-item-hovered-text !default;
 $pager-number-hovered-border: null !default;
 
 $pager-number-selected-bg: $primary !default;
-$pager-number-selected-text: $primary-contrast !default;
+$pager-number-selected-text: contrast-wcag( $pager-number-selected-bg ) !default;
 $pager-number-selected-border: null !default;
 
 // Card
@@ -1319,7 +1319,7 @@ $avatar-margin: 8px !default;
 $avatar-rounded-radius: 5px !default;
 
 $avatar-bg: $primary !default;
-$avatar-text: $primary-contrast !default;
+$avatar-text: contrast-wcag( $avatar-bg ) !default;
 
 
 // Chip
@@ -1503,7 +1503,7 @@ $calendar-cell-hovered-text: $node-hovered-text !default;
 $calendar-cell-hovered-border: $node-hovered-border !default;
 
 $calendar-cell-selected-bg: $primary !default;
-$calendar-cell-selected-text: $primary-contrast !default;
+$calendar-cell-selected-text: contrast-wcag( $calendar-cell-selected-bg ) !default;
 $calendar-cell-selected-border: $calendar-cell-selected-bg !default;
 
 $calendar-cell-focused-shadow: $list-item-focused-shadow !default;
@@ -1564,7 +1564,7 @@ $chat-bubble-text: $component-text !default;
 $chat-bubble-border: $chat-bubble-bg !default;
 
 $chat-alt-bubble-bg: $primary !default;
-$chat-alt-bubble-text: $primary-contrast !default;
+$chat-alt-bubble-text: contrast-wcag( $chat-alt-bubble-bg ) !default;
 $chat-alt-bubble-border: $chat-alt-bubble-bg !default;
 
 
@@ -1786,7 +1786,7 @@ $scrollview-arrow-icon-size: 4.5em !default;
 $scrollview-arrow-tap-highlight-color: $rgba-transparent !default;
 $scrollview-navigation-color: $base-text !default;
 $scrollview-navigation-icon-shadow: rgba(0, 0, 0, .3) 0 0 15px !default;
-$scrollview-navigation-background: rgba(0, 0, 0, 0) !default;
+$scrollview-navigation-bg: rgba(0, 0, 0, 0) !default;
 $scrollview-navigation-default-opacity: .7 !default;
 $scrollview-navigation-hover-opacity: 1 !default;
 $scrollview-navigation-hover-span-bg: rgba($base-bg, .4) !default;
@@ -1883,7 +1883,7 @@ $switch-off-handle-hovered-gradient: null !default;
 $scheduler-event-border-radius: $border-radius !default;
 
 $scheduler-event-bg: $primary !default;
-$scheduler-event-text: $primary-contrast !default;
+$scheduler-event-text: contrast-wcag( $scheduler-event-bg ) !default;
 $scheduler-event-min-height: 25px !default;
 $scheduler-event-line-height: calc( #{$scheduler-event-min-height} - (2 * #{$padding-y-sm}) ) !default;
 
@@ -1930,7 +1930,7 @@ $adaptive-content-bg: $base-bg !default;
 $adaptive-content-text: $primary !default;
 
 $adaptive-menu-bg: $primary !default;
-$adaptive-menu-text: $primary-contrast !default;
+$adaptive-menu-text: contrast-wcag( $adaptive-menu-bg ) !default;
 
 $adaptive-menu-clear-text: $primary !default;
 
@@ -2074,8 +2074,8 @@ $timeline-flag-min-width: 80px !default;
 $timeline-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-spacing-x}) !default;
 $timeline-mobile-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-mobile-spacing-x}) !default;
 $timeline-horizontal-flag-min-width: 60px !default;
-$timeline-flag-background: $primary !default;
-$timeline-flag-text: $primary-contrast !default;
+$timeline-flag-bg: $primary !default;
+$timeline-flag-text: contrast-wcag( $timeline-flag-bg ) !default;
 
 $timeline-flag-callout-width: 10px !default;
 $timeline-flag-callout-height: 10px !default;
@@ -2093,7 +2093,7 @@ $timeline-mobile-vertical-padding-with-dates-calc: calc(#{$timeline-mobile-verti
 
 $timeline-circle-width: 16px !default;
 $timeline-circle-height: 16px !default;
-$timeline-circle-color: $primary !default;
+$timeline-circle-bg: $primary !default;
 
 $timeline-collapse-arrow-padding-x: $padding-x-sm !default;
 
@@ -2286,13 +2286,8 @@ $filemanager-preview-line-break-spacing: $filemanager-spacer !default;
 $filemanager-drag-hint-padding-x: $padding-x !default;
 $filemanager-drag-hint-padding-y: $padding-y !default;
 $filemanager-drag-hint-bg: $primary !default;
-$filemanager-drag-hint-text: $primary-contrast !default;
+$filemanager-drag-hint-text: contrast-wcag( $filemanager-drag-hint-bg ) !default;
 $filemanager-drag-hint-border: null !default;
-
-$filemanager-drag-hint-icon-spacing: $padding-x !default;
-$filemanager-drag-hint-icon-bg: null !default;
-$filemanager-drag-hint-icon-text: $primary-contrast !default;
-$filemanager-drag-hint-icon-border: null !default;
 
 
 // Config maps
