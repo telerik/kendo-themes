@@ -1,5 +1,5 @@
 @include exports( "button/theme" ) {
-    $outline-primary-button-text: $accent !default;
+    $outline-primary-button-text: $primary !default;
 
     // Default button
     .k-button {
@@ -243,7 +243,7 @@
         &:hover,
         &.k-state-hover,
         .k-button-group & {
-            color: $accent;
+            color: $primary;
             background: none;
         }
     }
