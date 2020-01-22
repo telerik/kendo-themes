@@ -126,7 +126,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>$selected-bg</td>
 <td>
     
-    $accent
+    $primary
 </td>
 <td>The background of selected items.
 </td>
@@ -405,22 +405,22 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 </tr>
 <tr>
-<td>$accent</td>
+<td>$primary</td>
 <td>
     
-    $primary
+    $accent
 </td>
 <td>The color that focuses the user attention.<br/>
 Used for primary buttons and for elements of primary importance across the theme.
 </td>
 </tr>
 <tr>
-<td>$accent-contrast</td>
+<td>$primary-contrast</td>
 <td>
     
-    contrast-wcag( $accent )
+    $accent-contrast
 </td>
-<td>The color used along with the accent color denoted by $accent.<br/>
+<td>The color used along with the primary color denoted by $primary.<br/>
 Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
