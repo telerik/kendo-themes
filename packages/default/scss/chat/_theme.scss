@@ -49,14 +49,14 @@
 
         // Quick replies
         .k-quick-reply {
-            border-color: $accent;
-            color: $accent;
+            border-color: $primary;
+            color: $primary;
             background-color: transparent;
         }
         .k-quick-reply:hover {
-            border-color: $accent;
-            color: $accent-contrast;
-            background-color: $accent;
+            border-color: $primary;
+            color: $primary-contrast;
+            background-color: $primary;
         }
 
 
@@ -70,7 +70,7 @@
             box-shadow: 0 0 40px rgba( $input-text, .1 );
         }
         .k-message-box .k-button:hover {
-            color: $accent;
+            color: $primary;
         }
 
 
@@ -81,7 +81,7 @@
             background-color: $toolbar-bg;
 
             .k-button:hover {
-                color: $accent;
+                color: $primary;
                 background: none;
             }
 

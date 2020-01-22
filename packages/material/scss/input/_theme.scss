@@ -27,8 +27,8 @@
         // Selection
         &::selection {
             @include fill(
-                $color: $accent-contrast,
-                $bg: $accent
+                $color: $primary-contrast,
+                $bg: $primary
             );
         }
 
@@ -85,7 +85,7 @@
 
         .k-textarea {
             &:focus {
-                @include fill( $border: $accent );
+                @include fill( $border: $primary );
             }
         }
     }

@@ -40,8 +40,8 @@
         // Selection
         &::selection {
             @include fill (
-                $color: $accent-contrast,
-                $bg: $accent
+                $color: $primary-contrast,
+                $bg: $primary
             );
         }
 
@@ -104,7 +104,7 @@
 
     .k-required,
     .k-required.k-field-info {
-        @include fill ( $color: $accent );
+        @include fill ( $color: $primary );
     }
 
     fieldset {

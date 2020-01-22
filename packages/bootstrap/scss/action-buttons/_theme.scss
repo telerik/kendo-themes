@@ -19,7 +19,7 @@
         }
 
         .k-primary {
-            color: $accent;
+            color: $primary;
 
             &:hover {
                 @include appearance( hovered-primary-button );

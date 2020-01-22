@@ -135,20 +135,23 @@ $rgba-transparent: rgba( 0, 0, 0, 0 );
 /// @group color-system
 $color-level-step: 8% !default;
 
+// Deprecated
+// TODO: remove for v5
+$accent: #ff6358 !default;
+$accent-contrast: contrast-wcag( $accent ) !default;
+
 
 // Theme colors
 /// The color that focuses the user attention.
 /// Used for primary buttons and for elements of primary importance across the theme.
 /// @group color-system
-$accent: #ff6358 !default;
 $primary: $accent !default;
 $primary-lighter: tint($primary, 2) !default;
 $primary-darker: shade($primary, 2) !default;
 
-/// The color used along with the accent color denoted by $accent.
+/// The color used along with the accent color denoted by $primary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
-$accent-contrast: contrast-wcag( $accent ) !default;
 $primary-contrast: $accent-contrast !default;
 
 /// The secondary color of the theme.
@@ -209,7 +212,7 @@ $hovered-border: rgba( black, .15 ) !default;
 $hovered-gradient: $hovered-bg, darken( $hovered-bg, 2% ) !default;
 
 /// The background of selected items.
-$selected-bg: $accent !default;
+$selected-bg: $primary !default;
 /// The text color of selected items.
 $selected-text: contrast-wcag( $selected-bg ) !default;
 /// The border color of selected items.
@@ -221,7 +224,7 @@ $selected-hover-color: $selected-text !default;
 $selected-hover-bg: shade( $selected-bg ) !default;
 
 $focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
-$primary-focused-shadow: inset 0 0 0 2px rgba($accent, .3) !default;
+$primary-focused-shadow: inset 0 0 0 2px rgba($primary, .3) !default;
 
 $transition: background-color .2s ease !default;
 
@@ -372,8 +375,8 @@ $button-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
 
 
 // Primary button
-$primary-button-text: $accent-contrast !default;
-$primary-button-bg: $accent !default;
+$primary-button-bg: $primary !default;
+$primary-button-text: $primary-contrast !default;
 $primary-button-border: $primary-button-bg !default;
 $primary-button-gradient: rgba( adjust-hue( $primary-button-bg, 14), 0 ), rgba( adjust-hue( $primary-button-bg, 14), .2 ) !default;
 
@@ -388,7 +391,7 @@ $primary-button-pressed-border: $primary-button-pressed-bg !default;
 $primary-button-pressed-gradient: rgba( adjust-hue( $primary-button-pressed-bg, 14), .2 ), rgba( adjust-hue( $primary-button-pressed-bg, 14), 0 ) !default;
 $primary-button-pressed-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
 
-$primary-button-focused-shadow: 0 3px 4px 0 rgba($accent, .4) !default;
+$primary-button-focused-shadow: 0 3px 4px 0 rgba($primary, .4) !default;
 
 $flat-button-hover-opacity: .08 !default;
 $flat-button-focused-opacity: null !default;
@@ -461,8 +464,8 @@ $badge-secondary-bg: darken($base-bg, 4%) !default;
 $badge-secondary-text:  $base-text !default;
 $badge-secondary-border: $badge-secondary-bg !default;
 
-$badge-primary-bg: $accent !default;
-$badge-primary-text: $accent-contrast !default;
+$badge-primary-bg: $primary !default;
+$badge-primary-text: $primary-contrast !default;
 $badge-primary-border: $badge-primary-bg !default;
 
 $badge-info-bg: $info !default;
@@ -732,18 +735,18 @@ $checkbox-bg: $input-bg !default;
 $checkbox-text: $input-text !default;
 $checkbox-border: $input-border !default;
 $checkbox-hovered-bg: $checkbox-bg !default;
-$checkbox-hovered-text: $accent !default;
+$checkbox-hovered-text: $primary !default;
 $checkbox-hovered-border: $input-hovered-border !default;
-$checkbox-checked-bg: $accent !default;
-$checkbox-checked-text: $accent-contrast !default;
-$checkbox-checked-border: $accent !default;
+$checkbox-checked-bg: $primary !default;
+$checkbox-checked-text: $primary-contrast !default;
+$checkbox-checked-border: $primary !default;
 $checkbox-indeterminate-bg: $checkbox-bg !default;
 $checkbox-indeterminate-text: $checkbox-checked-bg !default;
 $checkbox-indeterminate-border: $checkbox-border !default;
 $checkbox-focused-border: $checkbox-hovered-border !default;
 $checkbox-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 $checkbox-focused-checked-border: $checkbox-checked-border !default;
-$checkbox-focused-checked-shadow: 0 0 0 2px rgba($accent, .3) !default;
+$checkbox-focused-checked-shadow: 0 0 0 2px rgba($primary, .3) !default;
 $checkbox-disabled-bg: null !default;
 $checkbox-disabled-text: null !default;
 $checkbox-disabled-border: null !default;
@@ -1001,7 +1004,7 @@ $grid-grouping-row-bg: darken($grid-bg, 7%) !default;
 $grid-grouping-row-text: $grid-text !default;
 
 $grid-sorted-bg: rgba( contrast-wcag( $grid-bg ), .02 ) !default;
-$grid-sorting-indicator-text: $accent !default;
+$grid-sorting-indicator-text: $primary !default;
 $grid-sorting-index-font-size: $font-size-sm !default;
 $grid-sorting-index-height: $icon-size !default;
 $grid-sorting-index-spacing-y: ($icon-spacing / 2) !default;
@@ -1186,11 +1189,11 @@ $pager-item-hovered-text: $list-item-hovered-text !default;
 $pager-item-hovered-border: null !default;
 
 $pager-number-bg: null !default;
-$pager-number-text: $accent !default;
+$pager-number-text: $primary !default;
 $pager-number-border: null !default;
 
 $pager-number-hovered-bg: $list-item-hovered-bg !default;
-$pager-number-hovered-text: $accent !default;
+$pager-number-hovered-text: $primary !default;
 $pager-number-hovered-border: null !default;
 
 $pager-number-selected-bg: $selected-bg !default;
@@ -1252,8 +1255,8 @@ $avatar-size: 32px !default;
 $avatar-margin: 8px !default;
 $avatar-rounded-radius: 5px !default;
 
-$avatar-bg: $accent !default;
-$avatar-text: white !default;
+$avatar-bg: $primary !default;
+$avatar-text: $primary-contrast !default;
 
 
 // Chip
@@ -1340,13 +1343,13 @@ $chip-outline-info-bg: transparent !default;
 $chip-outline-info-text: $info !default;
 $chip-outline-info-border: rgba($info, .54) !default;
 
-$chip-filled-single-selected-bg: rgba($accent, .08) !default;
-$chip-filled-single-selected-text: $accent !default;
-$chip-filled-single-selected-border: rgba($accent, .2) !default;
+$chip-filled-single-selected-bg: rgba($primary, .08) !default;
+$chip-filled-single-selected-text: $primary !default;
+$chip-filled-single-selected-border: rgba($primary, .2) !default;
 
 $chip-outline-single-selected-bg: transparent !default;
-$chip-outline-single-selected-text: $accent !default;
-$chip-outline-single-selected-border: rgba($accent, .2) !default;
+$chip-outline-single-selected-text: $primary !default;
+$chip-outline-single-selected-border: rgba($primary, .2) !default;
 
 $chip-multiple-selected-icon-bg: rgba(0, 0, 0, .36) !default;
 $chip-multiple-selected-icon-text: #ffffff !default;
@@ -1497,8 +1500,8 @@ $chat-bubble-bg: $component-bg !default;
 $chat-bubble-text: $component-text !default;
 $chat-bubble-border: $chat-bubble-bg !default;
 
-$chat-alt-bubble-bg: $accent !default;
-$chat-alt-bubble-text: $accent-contrast !default;
+$chat-alt-bubble-bg: $primary !default;
+$chat-alt-bubble-text: $primary-contrast !default;
 $chat-alt-bubble-border: $chat-alt-bubble-bg !default;
 
 
@@ -1530,7 +1533,7 @@ $progressbar-text: $base-text !default;
 $progressbar-border: $base-border !default;
 $progressbar-gradient: null !default;
 
-$progressbar-fill-bg: $accent !default;
+$progressbar-fill-bg: $primary !default;
 $progressbar-fill-text: contrast-wcag( $progressbar-fill-bg ) !default;
 $progressbar-fill-border: darken( $progressbar-fill-bg, 4% ) !default;
 $progressbar-fill-gradient: rgba( adjust-hue( $progressbar-fill-bg, 14), 0 ), rgba( adjust-hue( $progressbar-fill-bg, 14), .2 ) !default;
@@ -1583,7 +1586,7 @@ $slider-draghandle-transition-speed: .4s !default;
 $slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
 
 $slider-track-bg: darken($component-bg, 10%) !default;
-$slider-selection-bg: $accent !default;
+$slider-selection-bg: $primary !default;
 $slider-disabled-opacity: null !default;
 
 
@@ -1634,7 +1637,7 @@ $tooltip-line-height: $line-height !default;
 $tooltip-callout-size: 12px !default;
 $callout-half-size: $tooltip-callout-size / 2;
 
-$tooltip-bg: $accent !default;
+$tooltip-bg: $primary !default;
 $tooltip-text: contrast-wcag($tooltip-bg) !default;
 
 
@@ -1755,8 +1758,8 @@ $switch-container-shadow: inset 0 0 0 1px $base-border !default;
 $switch-container-hovered-shadow: inset 0 0 0 1px $hovered-border !default;
 $switch-container-focused-shadow: inset 0 0 0 3px rgba( black, .06) !default;
 
-$switch-on-bg: $accent !default;
-$switch-on-text: white !default;
+$switch-on-bg: $primary !default;
+$switch-on-text: $primary-contrast !default;
 $switch-on-border: null !default;
 $switch-on-gradient: null !default;
 $switch-on-shadow: null !default;
@@ -1866,21 +1869,21 @@ $pdf-viewer-search-highlight-bg: try-darken($base-bg, 70% ) !default;
 
 // Adaptive Common
 $adaptive-content-bg: $base-bg !default;
-$adaptive-content-text: $accent !default;
+$adaptive-content-text: $primary !default;
 
-$adaptive-menu-bg: $accent !default;
-$adaptive-menu-text: white !default;
+$adaptive-menu-bg: $primary !default;
+$adaptive-menu-text: $primary-contrast !default;
 
-$adaptive-menu-clear-text: $accent !default;
+$adaptive-menu-clear-text: $primary !default;
 
 $adaptive-menu-item-border: $grid-border !default;
 $adaptive-menu-title-text: $base-text !default;
 
 // Adaptive Grid
-$adaptive-grid-sort-text: $accent !default;
+$adaptive-grid-sort-text: $primary !default;
 
 // Adaptive Scheduler
-$adaptive-scheduler-current-text: $accent !default;
+$adaptive-scheduler-current-text: $primary !default;
 $adaptive-scheduler-base-text: inherit !default;
 
 
@@ -1956,9 +1959,9 @@ $spreadsheet-drawing-handle-width: 6px !default;
 $spreadsheet-drawing-handle-height: 6px !default;
 $spreadsheet-drawing-handle-border-style: solid !default;
 $spreadsheet-drawing-handle-border-width: 1px !default;
-$spreadsheet-drawing-handle-outline-color: $accent !default;
+$spreadsheet-drawing-handle-outline-color: $primary !default;
 $spreadsheet-drawing-handle-border-color: $selected-bg !default;
-$spreadsheet-drawing-handle-bg: $accent !default;
+$spreadsheet-drawing-handle-bg: $primary !default;
 $spreadsheet-drawing-handle-border-radius: $border-radius-lg !default;
 
 $spreadsheet-drawing-outline-style: solid !default;
@@ -1976,7 +1979,7 @@ $filter-line-size: 1px !default;
 
 $filter-operator-dropdown-width: 15em !default;
 
-$filter-preview-field-text: $accent !default;
+$filter-preview-field-text: $primary !default;
 $filter-preview-operator-text: rgba($body-text, .6) !default;
 
 
@@ -2013,8 +2016,8 @@ $timeline-flag-min-width: 80px !default;
 $timeline-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-spacing-x}) !default;
 $timeline-mobile-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-mobile-spacing-x}) !default;
 $timeline-horizontal-flag-min-width: 60px !default;
-$timeline-flag-background: $accent !default;
-$timeline-flag-text: $accent-contrast !default;
+$timeline-flag-background: $primary !default;
+$timeline-flag-text: $primary-contrast !default;
 
 $timeline-flag-callout-width: 10px !default;
 $timeline-flag-callout-height: 10px !default;
@@ -2032,7 +2035,7 @@ $timeline-mobile-vertical-padding-with-dates-calc: calc(#{$timeline-mobile-verti
 
 $timeline-circle-width: 16px !default;
 $timeline-circle-height: 16px !default;
-$timeline-circle-color: $accent !default;
+$timeline-circle-color: $primary !default;
 
 $timeline-collapse-arrow-padding-x: $padding-x !default;
 
@@ -2224,13 +2227,13 @@ $filemanager-preview-line-break-spacing: $filemanager-spacer !default;
 
 $filemanager-drag-hint-padding-x: $padding-x !default;
 $filemanager-drag-hint-padding-y: $padding-y !default;
-$filemanager-drag-hint-bg: $accent !default;
-$filemanager-drag-hint-text: $accent-contrast !default;
+$filemanager-drag-hint-bg: $primary !default;
+$filemanager-drag-hint-text: $primary-contrast !default;
 $filemanager-drag-hint-border: null !default;
 
 $filemanager-drag-hint-icon-spacing: $padding-x !default;
 $filemanager-drag-hint-icon-bg: null !default;
-$filemanager-drag-hint-icon-text: $accent-contrast !default;
+$filemanager-drag-hint-icon-text: $primary-contrast !default;
 $filemanager-drag-hint-icon-border: null !default;
 
 

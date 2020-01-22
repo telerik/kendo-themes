@@ -115,7 +115,7 @@
     // Timepicker header
     .k-time-header {
         .k-time-now {
-            color: $accent;
+            color: $link-text;
 
             &:hover,
             &:focus {
@@ -154,7 +154,7 @@
         }
 
         .k-item:hover {
-            color: $accent;
+            color: $primary;
         }
     }
 

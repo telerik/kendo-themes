@@ -229,10 +229,6 @@ $error: #f31700 !default;
 $error-lighter: tint($error, 2) !default;
 $error-darker: shade($error, 2) !default;
 
-// Aliases for backwards compatibility
-$accent: $primary !default;
-$accent-contrast: $primary-contrast !default;
-
 
 $body-bg: map-get($theme, body-bg) !default;
 $body-text: map-get($theme, body-text) !default;
@@ -519,8 +515,8 @@ $badge-secondary-bg: true-mix( $base-text, $base-bg, 12%) !default;
 $badge-secondary-text:  $base-text !default;
 $badge-secondary-border: $badge-secondary-bg !default;
 
-$badge-primary-bg: $accent !default;
-$badge-primary-text: $accent-contrast !default;
+$badge-primary-bg: $primary !default;
+$badge-primary-text: $primary-contrast !default;
 $badge-primary-border: $badge-primary-bg !default;
 
 $badge-info-bg: $info !default;
@@ -852,7 +848,7 @@ $floating-label-transition: .4s cubic-bezier(.25, .8, .25, 1) !default;
 $floating-label-scale: .75 !default;
 $floating-label-height: $textbox-line-height * $floating-label-scale !default;
 $floating-label-text: rgba(0, 0, 0, .38) !default;
-$floating-label-focused-text: $accent !default;
+$floating-label-focused-text: $primary !default;
 $floating-label-focused-bg: $base-bg !default;
 
 //Forms
@@ -1322,8 +1318,8 @@ $avatar-size: 32px !default;
 $avatar-margin: 8px !default;
 $avatar-rounded-radius: 5px !default;
 
-$avatar-bg: $accent !default;
-$avatar-text: white !default;
+$avatar-bg: $primary !default;
+$avatar-text: $primary-contrast !default;
 
 
 // Chip
@@ -1410,13 +1406,13 @@ $chip-outline-info-bg: transparent !default;
 $chip-outline-info-text: $info !default;
 $chip-outline-info-border: rgba($info, .54) !default;
 
-$chip-filled-single-selected-bg: rgba($accent, .12) !default;
-$chip-filled-single-selected-text: $accent !default;
+$chip-filled-single-selected-bg: rgba($primary, .12) !default;
+$chip-filled-single-selected-text: $primary !default;
 $chip-filled-single-selected-border: transparent !default;
 
 $chip-outline-single-selected-bg: $chip-filled-single-selected-bg !default;
-$chip-outline-single-selected-text: $accent !default;
-$chip-outline-single-selected-border: $accent !default;
+$chip-outline-single-selected-text: $primary !default;
+$chip-outline-single-selected-border: $primary !default;
 
 $chip-multiple-selected-icon-bg: rgba(0, 0, 0, .36) !default;
 $chip-multiple-selected-icon-text: #ffffff !default;
@@ -1644,7 +1640,7 @@ $slider-draghandle-pressed-border: $primary-button-pressed-border !default;
 $slider-draghandle-pressed-gradient: $primary-button-pressed-gradient !default;
 $slider-draghandle-pressed-shadow: inset $primary-button-pressed-shadow !default;
 
-$slider-draghandle-focused-shadow: 0 0 0 11px rgba($accent, .25) !default;
+$slider-draghandle-focused-shadow: 0 0 0 11px rgba($primary, .25) !default;
 
 $slider-transition-speed: .3s !default;
 $slider-transition-function: ease-out !default;
@@ -1652,7 +1648,7 @@ $slider-draghandle-transition-speed: .4s !default;
 $slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
 
 $slider-track-bg: darken($component-bg, 10%) !default;
-$slider-selection-bg: $accent !default;
+$slider-selection-bg: $primary !default;
 $slider-disabled-opacity: .65 !default;
 
 
@@ -1824,14 +1820,14 @@ $switch-container-shadow: null !default;
 $switch-container-hovered-shadow: null !default;
 $switch-container-focused-shadow: null !default;
 
-$switch-on-bg: lighten( $accent, 25% ) !default;
+$switch-on-bg: lighten( $primary, 25% ) !default;
 $switch-on-text: white !default;
 $switch-on-border: null !default;
 $switch-on-gradient: null !default;
 $switch-on-shadow: null !default;
 $switch-on-focused-shadow: null !default;
 
-$switch-on-focused-bg: lighten( $accent, 17% ) !default;
+$switch-on-focused-bg: lighten( $primary, 17% ) !default;
 $switch-on-focused-text: $switch-on-text !default;
 $switch-on-focused-border: null !default;
 $switch-on-focused-gradient: null !default;
@@ -1841,7 +1837,7 @@ $switch-on-hovered-text: $switch-on-text !default;
 $switch-on-hovered-border: null !default;
 $switch-on-hovered-gradient: null !default;
 
-$switch-on-handle-bg: $accent !default;
+$switch-on-handle-bg: $primary !default;
 $switch-on-handle-text: $switch-on-text !default;
 $switch-on-handle-border: null !default;
 $switch-on-handle-gradient: null !default;
@@ -1931,21 +1927,21 @@ $pdf-viewer-search-highlight-bg: try-darken($base-bg, 70% ) !default;
 
 // Adaptive Common
 $adaptive-content-bg: $base-bg !default;
-$adaptive-content-text: $accent !default;
+$adaptive-content-text: $primary !default;
 
-$adaptive-menu-bg: $accent !default;
-$adaptive-menu-text: white !default;
+$adaptive-menu-bg: $primary !default;
+$adaptive-menu-text: $primary-contrast !default;
 
-$adaptive-menu-clear-text: $accent !default;
+$adaptive-menu-clear-text: $primary !default;
 
 $adaptive-menu-item-border: $grid-border !default;
 $adaptive-menu-title-text: $base-text !default;
 
 // Adaptive Grid
-$adaptive-grid-sort-text: $accent !default;
+$adaptive-grid-sort-text: $primary !default;
 
 // Adaptive Scheduler
-$adaptive-scheduler-current-text: $accent !default;
+$adaptive-scheduler-current-text: $primary !default;
 $adaptive-scheduler-base-text: inherit !default;
 
 
@@ -2021,9 +2017,9 @@ $spreadsheet-drawing-handle-width: 6px !default;
 $spreadsheet-drawing-handle-height: 6px !default;
 $spreadsheet-drawing-handle-border-style: solid !default;
 $spreadsheet-drawing-handle-border-width: 1px !default;
-$spreadsheet-drawing-handle-outline-color: $accent !default;
-$spreadsheet-drawing-handle-border-color: $accent !default;
-$spreadsheet-drawing-handle-bg: $accent !default;
+$spreadsheet-drawing-handle-outline-color: $primary !default;
+$spreadsheet-drawing-handle-border-color: $primary !default;
+$spreadsheet-drawing-handle-bg: $primary !default;
 $spreadsheet-drawing-handle-border-radius: $border-radius-lg !default;
 
 $spreadsheet-drawing-outline-style: solid !default;
@@ -2041,7 +2037,7 @@ $filter-line-size: 1px !default;
 
 $filter-operator-dropdown-width: 19em !default;
 
-$filter-preview-field-text: $accent !default;
+$filter-preview-field-text: $primary !default;
 $filter-preview-operator-text: rgba($body-text, .6) !default;
 
 
@@ -2078,8 +2074,8 @@ $timeline-flag-min-width: 80px !default;
 $timeline-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-spacing-x}) !default;
 $timeline-mobile-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-mobile-spacing-x}) !default;
 $timeline-horizontal-flag-min-width: 60px !default;
-$timeline-flag-background: $accent !default;
-$timeline-flag-text: $accent-contrast !default;
+$timeline-flag-background: $primary !default;
+$timeline-flag-text: $primary-contrast !default;
 
 $timeline-flag-callout-width: 10px !default;
 $timeline-flag-callout-height: 10px !default;
@@ -2097,7 +2093,7 @@ $timeline-mobile-vertical-padding-with-dates-calc: calc(#{$timeline-mobile-verti
 
 $timeline-circle-width: 16px !default;
 $timeline-circle-height: 16px !default;
-$timeline-circle-color: $accent !default;
+$timeline-circle-color: $primary !default;
 
 $timeline-collapse-arrow-padding-x: $padding-x-sm !default;
 
@@ -2289,13 +2285,13 @@ $filemanager-preview-line-break-spacing: $filemanager-spacer !default;
 
 $filemanager-drag-hint-padding-x: $padding-x !default;
 $filemanager-drag-hint-padding-y: $padding-y !default;
-$filemanager-drag-hint-bg: $accent !default;
-$filemanager-drag-hint-text: $accent-contrast !default;
+$filemanager-drag-hint-bg: $primary !default;
+$filemanager-drag-hint-text: $primary-contrast !default;
 $filemanager-drag-hint-border: null !default;
 
 $filemanager-drag-hint-icon-spacing: $padding-x !default;
 $filemanager-drag-hint-icon-bg: null !default;
-$filemanager-drag-hint-icon-text: $accent-contrast !default;
+$filemanager-drag-hint-icon-text: $primary-contrast !default;
 $filemanager-drag-hint-icon-border: null !default;
 
 

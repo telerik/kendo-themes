@@ -16,7 +16,7 @@
         opacity: 0;
         transform: scaleX(.5);
         transition: transform .3s;
-        background-color: $accent;
+        background-color: $primary;
     }
 
     &.k-state-focused::after {

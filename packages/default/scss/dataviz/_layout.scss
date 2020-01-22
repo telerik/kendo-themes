@@ -382,8 +382,10 @@ $chart-title-font-size: 1.143em !default;
 
     // export variables to allow use in scripts
     $exported: (
-        accent: $accent,
-        accent-contrast: $accent-contrast,
+        accent: $primary,
+        accent-contrast: $primary-contrast,
+        primary: $primary,
+        primary-contrast: $primary-contrast,
         base: $base-bg,
         background: $chart-bg,
 
@@ -408,7 +410,7 @@ $chart-title-font-size: 1.143em !default;
         series-e: $series-e,
         series-f: $series-f,
 
-        gauge-pointer: $accent,
+        gauge-pointer: $primary,
         gauge-track: darken($chart-bg, 10%)
     );
 
