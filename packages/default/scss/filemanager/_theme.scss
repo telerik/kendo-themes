@@ -112,14 +112,6 @@
             $filemanager-drag-hint-border
         );
 
-        .k-icon {
-            @include fill(
-                $filemanager-drag-hint-icon-text,
-                $filemanager-drag-hint-icon-bg,
-                $filemanager-drag-hint-icon-border
-            );
-        }
-
     }
 
 }
