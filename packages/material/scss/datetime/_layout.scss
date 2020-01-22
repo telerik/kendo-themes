@@ -70,27 +70,28 @@
                 padding: 0;
                 min-width: auto;
             }
+        }
 
-            .k-time-list-wrapper {
-                .k-title {
-                    text-transform: uppercase;
-                    z-index: 99;
-                }
-
-                &.k-state-focused {
-                    &::before,
-                    &::after {
-                        border-width: 0;
-                    }
-                }
+        .k-time-list-wrapper {
+            .k-title {
+                text-transform: uppercase;
+                z-index: 99;
             }
 
-            .k-time-list-container {
-                .k-time-separator {
-                    display: none;
+            &.k-state-focused {
+                &::before,
+                &::after {
+                    border-width: 0;
                 }
             }
         }
+
+        .k-time-list-container {
+            .k-time-separator {
+                display: none;
+            }
+        }
+
     }
 
     .k-datetimepicker {
