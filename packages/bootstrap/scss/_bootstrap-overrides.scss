@@ -36,6 +36,10 @@ $theme-colors: () !default;
         "danger": $danger
     ), $theme-colors);
 
+    $yiq-threshold: 150 !default;
+    $yiq-dark: $gray-900 !default;
+    $yiq-light: $white !default;
+
     $body-bg: $white !default;
     $body-color: contrast-yiq($body-bg, $gray-900) !default;
 

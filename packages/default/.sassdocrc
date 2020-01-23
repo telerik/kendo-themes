@@ -7,7 +7,7 @@
     },
     "groups": {
         "color-system": "Color System",
-        "fonts": "Fonts",
+        "typography": "typography",
         "charts": "Charts",
         "undefined": "Common"
     }

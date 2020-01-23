@@ -358,9 +358,9 @@ $linear-channel-values: (
 
     @return $yiq;
 }
-@function contrast-yiq($color, $dark: #000000, $light: #ffffff) {
+@function contrast-yiq($color, $dark: $yiq-dark, $light: $yiq-light) {
     $yiq: yiq($color);
-    $out: if($yiq >= 150, $dark, $light);
+    $out: if($yiq >= $yiq-threshold, $dark, $light);
     // @debug yiq;
     @return $out;
 }
