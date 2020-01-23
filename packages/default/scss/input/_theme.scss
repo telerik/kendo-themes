@@ -94,7 +94,7 @@
 
         fieldset {
             legend {
-                @include fill ( $color: $form-fieldset-legend-text );
+                @include fill ( $color: $fieldset-legend-text );
             }
         }
 

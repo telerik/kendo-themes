@@ -5,7 +5,7 @@
     .k-textarea {
         @include border-radius();
         padding: $input-padding-y $input-padding-x;
-        width: $textbox-default-width;
+        width: $input-default-width;
         box-sizing: border-box;
         border-width: $input-border-width;
         border-style: solid;
@@ -71,7 +71,7 @@
     }
 
     .k-textbox:focus {
-        box-shadow: $textbox-shadow;
+        @include box-shadow( $input-focused-shadow );
     }
 
     .k-textbox-container,
@@ -80,7 +80,7 @@
         display: inline-flex;
         vertical-align: middle;
         position: relative;
-        width: $textbox-default-width;
+        width: $input-default-width;
         flex-direction: column;
         justify-content: stretch;
 
