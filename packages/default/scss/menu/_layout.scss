@@ -69,6 +69,11 @@ $image-spacing: 8px !default;
         }
     }
 
+    .k-menu-popup {
+        overflow: auto;
+        max-height: 80vh;
+    }
+
 
     // Sub
     .k-menu-group {
