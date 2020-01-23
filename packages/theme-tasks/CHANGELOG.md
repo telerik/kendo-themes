@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.3"></a>
+## [0.4.3](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.4.2...@progress/kendo-theme-tasks@0.4.3) (2020-01-23)
+
+
+### Bug Fixes
+
+* move api generation to theme-tasks ([c754811](https://github.com/telerik/kendo-themes/commit/c754811))
+
+
+
+
 <a name="0.4.2"></a>
 ## 0.4.2 (2020-01-09)
 
