@@ -1524,12 +1524,12 @@ $progressbar-animation-timing: $progress-bar-animation-timing !default;
 
 $progressbar-bg: $progress-bg !default;
 $progressbar-text: $progress-color !default;
-$progressbar-border: transparent !default;
+$progressbar-border: null !default;
 $progressbar-gradient: null !default;
 
 $progressbar-fill-bg:  $progress-bar-bg !default;
 $progressbar-fill-text: $progress-bar-color !default;
-$progressbar-fill-border: transparent !default;
+$progressbar-fill-border: null !default;
 $progressbar-fill-gradient: null !default;
 
 $progressbar-indeterminate-bg: $progressbar-bg !default;
@@ -1579,8 +1579,8 @@ $slider-transition-function: ease-out !default;
 $slider-draghandle-transition-speed: .4s !default;
 $slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
 
-$slider-track-bg: $progressbar-bg !default;
-$slider-selection-bg: $progressbar-fill-bg !default;
+$slider-track-bg: $progress-bg !default;
+$slider-selection-bg: $progress-bar-bg !default;
 $slider-disabled-opacity: null !default;
 
 
