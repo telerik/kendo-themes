@@ -33,10 +33,6 @@
 @import "validator.scss";
 
 
-// Date time
-@import "calendar.scss";
-
-
 // Inputs
 @import "autocomplete.scss";
 @import "colorpicker.scss";
@@ -56,6 +52,10 @@
 @import "slider.scss";
 @import "switch.scss";
 @import "rating.scss";
+
+
+// Date time
+@import "calendar.scss";
 
 
 // Command interfaces
