@@ -42,15 +42,6 @@ The following table lists the available variables for customizing the Material t
 <th>Description</th>
 </tr>
 <tr>
-<td>$font-family-monospace</td>
-<td>
-    
-    Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace
-</td>
-<td>Font family for monospaced text. Used for styling the code.
-</td>
-</tr>
-<tr>
 <td>$border-radius</td>
 <td>
     
@@ -72,7 +63,7 @@ The following table lists the available variables for customizing the Material t
 <td>$base-text</td>
 <td>
     
-    $component-text
+    map-get($theme, component-text)
 </td>
 <td>The text color of the components' chrome area.
 </td>
@@ -488,47 +479,31 @@ Used to provide contrast between the background and foreground colors.
 <td>The color for error messages and states.
 </td>
 </tr>
-</table>
-
-
-### Fonts
-
-<table class="theme-variables">
-<colgroup>
-<col style="white-space:nowrap; width: 200px" />
-<col style="width: 250px" />
-<col />
-</colgroup>
 <tr>
-<th>Name</th>
-<th>Default value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>$font-size</td>
+<td>$yiq-threshold</td>
 <td>
     
-    14px
+    150
 </td>
-<td>Base font size across all components.
+<td>The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 </td>
 </tr>
 <tr>
-<td>$font-family</td>
+<td>$yiq-dark</td>
 <td>
     
-    Roboto, "Helvetica Neue", sans-serif
+    black
 </td>
-<td>Font family across all components.
+<td>Dark color for use in YIQ color contrast function.
 </td>
 </tr>
 <tr>
-<td>$line-height</td>
+<td>$yiq-light</td>
 <td>
     
-    (28 / 14)
+    white
 </td>
-<td>Line height used along with $font-size.
+<td>Light color for use in YIQ color contrast function.
 </td>
 </tr>
 </table>
@@ -707,6 +682,58 @@ Equivalent to material elevation 24.
     0
 </td>
 <td>The vertical padding of the container.
+</td>
+</tr>
+</table>
+
+
+### Typography
+
+<table class="theme-variables">
+<colgroup>
+<col style="white-space:nowrap; width: 200px" />
+<col style="width: 250px" />
+<col />
+</colgroup>
+<tr>
+<th>Name</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>$font-size</td>
+<td>
+    
+    14px
+</td>
+<td>Base font size across all components.
+</td>
+</tr>
+<tr>
+<td>$font-family</td>
+<td>
+    
+    Roboto, "Helvetica Neue", sans-serif
+</td>
+<td>Font family across all components.
+</td>
+</tr>
+<tr>
+<td>$font-family-monospace</td>
+<td>
+    
+    Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace
+</td>
+<td>Font family for monospaced text. Used for styling the code.
+</td>
+</tr>
+<tr>
+<td>$line-height</td>
+<td>
+    
+    (28 / 14)
+</td>
+<td>Line height used along with $font-size.
 </td>
 </tr>
 </table>
