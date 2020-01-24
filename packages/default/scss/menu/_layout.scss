@@ -69,6 +69,7 @@ $image-spacing: 8px !default;
         }
     }
 
+    .k-context-menu-popup > .k-popup,
     .k-menu-popup {
         overflow: auto;
         max-height: 80vh;
