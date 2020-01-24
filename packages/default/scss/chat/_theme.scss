@@ -1,3 +1,7 @@
+$chat-message-box-bg: $input-bg !default;
+$chat-message-box-text: $input-text !default;
+$chat-message-box-border: inherit !default;
+
 @include exports("chat/theme") {
 
     // Chat
@@ -62,9 +66,11 @@
 
         // Message box
         .k-message-box {
-            border-color: inherit;
-            color: $input-text;
-            background-color: $input-bg;
+            @include fill(
+                $chat-message-box-text,
+                $chat-message-box-bg,
+                $chat-message-box-border
+            );
         }
         .k-message-box.k-state-focused {
             box-shadow: 0 0 40px rgba( $input-text, .1 );
