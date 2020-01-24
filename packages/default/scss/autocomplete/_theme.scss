@@ -1,5 +1,7 @@
 @include exports("autocomplete/theme") {
 
+    // Remove first selector when https://github.com/telerik/kendo-angular-dropdowns/issues/656 is done.
+    .k-autocomplete.k-header,
     .k-autocomplete {
         @include fill(
             $autocomplete-text,
