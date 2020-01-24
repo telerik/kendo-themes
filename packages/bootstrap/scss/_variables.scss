@@ -632,6 +632,11 @@ $button-pressed-shadow: null !default;
 $button-focused-shadow: 0 0 0 3px rgba($button-border, .5) !default;
 
 
+// Disabled button
+$button-disabled-bg: null !default;
+$button-disabled-text: null !default;
+
+
 // Primary button
 $primary-button-bg: $primary !default;
 $primary-button-text: contrast-wcag( $primary-button-bg ) !default;
