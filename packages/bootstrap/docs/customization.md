@@ -509,58 +509,6 @@ Used to provide contrast between the background and foreground colors.
 </table>
 
 
-### Fonts
-
-<table class="theme-variables">
-<colgroup>
-<col style="white-space:nowrap; width: 200px" />
-<col style="width: 250px" />
-<col />
-</colgroup>
-<tr>
-<th>Name</th>
-<th>Default value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>$font-size</td>
-<td>
-    
-    $font-size-base
-</td>
-<td>Base font size across all components.
-</td>
-</tr>
-<tr>
-<td>$font-family</td>
-<td>
-    
-    $font-family-base
-</td>
-<td>Font family across all components.
-</td>
-</tr>
-<tr>
-<td>$font-family-monospace</td>
-<td>
-    
-    $font-family-monospace
-</td>
-<td>Font family for monospaced text. Used for styling the code.
-</td>
-</tr>
-<tr>
-<td>$line-height</td>
-<td>
-    
-    $line-height-base
-</td>
-<td>Line height used along with $font-size.
-</td>
-</tr>
-</table>
-
-
 ### Icons
 
 <table class="theme-variables">
@@ -616,6 +564,58 @@ The default value of `null` embeds the package font with a `data:` URL
     $table-cell-padding / 2
 </td>
 <td>The vertical padding of the container.
+</td>
+</tr>
+</table>
+
+
+### Typography
+
+<table class="theme-variables">
+<colgroup>
+<col style="white-space:nowrap; width: 200px" />
+<col style="width: 250px" />
+<col />
+</colgroup>
+<tr>
+<th>Name</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>$font-size</td>
+<td>
+    
+    $font-size-base
+</td>
+<td>Base font size across all components.
+</td>
+</tr>
+<tr>
+<td>$font-family</td>
+<td>
+    
+    $font-family-base
+</td>
+<td>Font family across all components.
+</td>
+</tr>
+<tr>
+<td>$font-family-monospace</td>
+<td>
+    
+    $font-family-monospace
+</td>
+<td>Font family for monospaced text. Used for styling the code.
+</td>
+</tr>
+<tr>
+<td>$line-height</td>
+<td>
+    
+    $line-height-base
+</td>
+<td>Line height used along with $font-size.
 </td>
 </tr>
 </table>
