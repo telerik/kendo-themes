@@ -1,3 +1,7 @@
+$chat-message-box-bg: $input-bg !default;
+$chat-message-box-text: $input-text !default;
+$chat-message-box-border: inherit !default;
+
 @import "~@progress/kendo-theme-default/scss/chat/_theme.scss";
 
 @include exports("chat/theme/bootstrap") {
