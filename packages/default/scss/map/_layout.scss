@@ -1,18 +1,23 @@
 @include exports("map/layout") {
 
-    $map-navigator-padding: 2px !default;
-
     // Layout
     .k-map {
         height: 600px;
+        border-width: $map-border-width;
+        border-style: solid;
+        font-size: $map-font-size;
+        line-height: $map-line-height;
+        font-family: $map-font-family;
 
-        // Scroll wrap
+
+        // Scroll
         .km-scroll-wrapper {
             width: 100%;
             height: 100%;
             user-select: none;
             position: absolute;
         }
+        .km-scroll-container { height: 100%; }
         .k-touch-scrollbar { display: none; }
 
         // Layers
@@ -25,25 +30,23 @@
         // Marker
         .k-marker {
             transform: translate(-50%, -100%);
-            font-size: $font-size * 2;
+            font-size: $map-marker-size;
             cursor: pointer;
             position: absolute;
             overflow: visible;
         }
 
 
-        // TODO: see attribuion
         // Attribution
         .k-attribution {
-            padding: $padding-y-sm $padding-x-sm;
-            font-size: $font-size-sm * .75;
-            background-color: rgba( $panel-bg, .8);
+            padding: $map-attribution-padding-y $map-attribution-padding-x;
+            border-width: 0;
+            font-size: $map-attribution-font-size;
+            background-color: $map-attribution-bg;
             z-index: 1000;
         }
 
-        .km-scroll-container {
-            height: 100%;
-        }
+
     }
 
 
@@ -61,10 +64,12 @@
 
     // Navigator
     .k-navigator {
-        margin: $spacer-x;
-        width: calc( #{$icon-size * 3} + #{$map-navigator-padding} );
-        height: calc( #{$icon-size * 3} + #{$map-navigator-padding} );
-        box-sizing: content-box;
+        margin: $map-navigator-margin;
+        width: $map-navigator-width;
+        height: $map-navigator-width;
+        border-width: $map-navigator-border-width;
+        border-style: solid;
+        box-sizing: border-box;
         border-radius: 50%;
         position: relative;
 
