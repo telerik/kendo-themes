@@ -186,6 +186,16 @@
     }
 
     // Header and footer
+    .k-scheduler-header {
+        .k-widget {
+            font-size: inherit;
+        }
+    }
+    .k-scheduler-footer {
+        .k-widget {
+            font-size: inherit;
+        }
+    }
     .k-scheduler-toolbar,
     .k-scheduler-footer {
         padding: $toolbar-padding-y $toolbar-padding-x;
