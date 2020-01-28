@@ -5,6 +5,7 @@
         font-size: $tooltip-font-size;
         line-height: $tooltip-line-height;
         padding: $tooltip-padding-y $tooltip-padding-x;
+        max-width: $tooltip-max-width;
         border-width: 0;
         box-sizing: border-box;
         background-repeat: repeat-x;
