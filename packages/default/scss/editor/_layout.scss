@@ -227,18 +227,8 @@
         width: $ct-cell-size * 10 - ($ct-cell-size / 2);
         padding: $ct-cell-size / 4;
 
-        .k-editor-toolbar {
-            text-align: center;
-
-            .k-tool {
-                @include border-radius();
-                width: 100%;
-                height: auto;
-                display: flex;
-            }
-            .k-tool-text {
-                display: inline;
-            }
+        .k-button {
+            width: 100%;
         }
 
         .k-ct-cell {
