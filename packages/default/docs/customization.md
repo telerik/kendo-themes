@@ -396,15 +396,6 @@ The following table lists the available variables for customizing the Default th
 <th>Description</th>
 </tr>
 <tr>
-<td>$color-level-step</td>
-<td>
-    
-    8%
-</td>
-<td>Set a specific jump point for requesting color jumps
-</td>
-</tr>
-<tr>
 <td>$primary</td>
 <td>
     
@@ -477,33 +468,6 @@ Used to provide contrast between the background and foreground colors.
     #f31700
 </td>
 <td>The color for error messages and states.
-</td>
-</tr>
-<tr>
-<td>$yiq-threshold</td>
-<td>
-    
-    150
-</td>
-<td>The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
-</td>
-</tr>
-<tr>
-<td>$yiq-dark</td>
-<td>
-    
-    black
-</td>
-<td>Dark color for use in YIQ color contrast function.
-</td>
-</tr>
-<tr>
-<td>$yiq-light</td>
-<td>
-    
-    white
-</td>
-<td>Light color for use in YIQ color contrast function.
 </td>
 </tr>
 </table>
