@@ -1,5 +1,3 @@
-$message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
-
 @include exports("chat/layout") {
 
     .k-chat {
@@ -535,10 +533,7 @@ $message-group-spacing: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
             margin-right: 0;
             margin-left: $chat-quick-reply-spacing;
         }
-        // .k-quick-reply + .k-quick-reply {
-        //     margin-left: 0;
-        //     margin-right: $chat-quick-reply-spacing
-        // }
+
     }
 
 
