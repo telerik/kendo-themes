@@ -220,7 +220,7 @@ $selected-gradient: null !default;
 $selected-hover-bg: try-shade( $selected-bg ) !default;
 $selected-hover-color: $selected-text !default;
 
-$transition: background-color .2s ease !default;
+$transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
 
 
 // Disabled mixin variables
