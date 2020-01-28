@@ -9,7 +9,8 @@
 
 
     // Header
-    .k-dropdowngrid-popup .k-header {
+    .k-dropdowngrid-popup .k-header,
+    .k-dropdowngrid-popup .k-grid-header {
         border-color: $grid-header-border;
         color: $grid-header-text;
         background-color: $grid-header-bg;
