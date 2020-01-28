@@ -71,10 +71,6 @@ $zindex-window: 2 !default;
 $accent: $primary !default;
 $accent-contrast: contrast-wcag( $accent ) !default;
 
-/// Set a specific jump point for requesting color jumps
-/// @group color-system
-$color-level-step: $theme-color-interval !default;
-
 
 // Theme colors
 /// The color that focuses the user attention.
@@ -123,21 +119,6 @@ $warning-darker: shade($warning, 2) !default;
 $error: $danger !default;
 $error-lighter: tint($error, 2) !default;
 $error-darker: shade($error, 2) !default;
-
-
-// Contrast
-
-/// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
-/// @group color-system
-$yiq-threshold: $yiq-contrasted-threshold !default;
-
-/// Dark color for use in YIQ color contrast function.
-/// @group color-system
-$yiq-dark: $yiq-text-dark !default;
-
-/// Light color for use in YIQ color contrast function.
-/// @group color-system
-$yiq-light: $yiq-text-light !default;
 
 
 // Color constants

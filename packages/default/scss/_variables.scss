@@ -63,10 +63,6 @@ $zindex-window: 2 !default;
 // Color settings
 // $is-dark-theme: ;
 
-/// Set a specific jump point for requesting color jumps
-/// @group color-system
-$color-level-step: 8% !default;
-
 // Deprecated
 // TODO: remove for v5
 $accent: #ff6358 !default;
@@ -120,21 +116,6 @@ $warning-darker: shade($warning, 2) !default;
 $error: #f31700 !default;
 $error-lighter: tint($error, 2) !default;
 $error-darker: shade($error, 2) !default;
-
-
-// Contrast
-
-/// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
-/// @group color-system
-$yiq-threshold: 150 !default;
-
-/// Dark color for use in YIQ color contrast function.
-/// @group color-system
-$yiq-dark: black !default;
-
-/// Light color for use in YIQ color contrast function.
-/// @group color-system
-$yiq-light: white !default;
 
 
 // Color constants
