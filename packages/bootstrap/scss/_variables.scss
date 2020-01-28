@@ -1743,6 +1743,7 @@ $card-padding-y: $card-spacer-y !default;
 $card-border-width: 1px !default;
 $card-border-radius: $card-border-radius !default;
 $card-box-shadow: null !default;
+$card-box-focused-shadow: 0 0 4px 0 rgba(0, 0, 0, .3) !default;
 
 $card-deck-gap: $card-deck-margin !default;
 
@@ -1779,6 +1780,9 @@ $card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
 $card-actions-border-width: 1px !default;
 
 $card-button-negative-spacing: (-$button-padding-x) !default;
+
+$card-deck-scroll-button-radius: 0 !default;
+$card-deck-scroll-button-offset: -$button-border-width !default;
 
 $card-callout-width: 1.3em !default;
 $card-callout-height: 1.3em !default;
