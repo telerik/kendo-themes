@@ -99,6 +99,7 @@
             margin: $chat-bubble-spacing 0 0;
             position: relative;
             transition: margin .2s ease-in-out;
+            outline: none;
         }
 
 
@@ -221,6 +222,7 @@
         transition-property: color, background-color, border-color;
         transition-duration: .2s;
         transition-timing-function: ease-in-out;
+        outline: none;
     }
 
 
