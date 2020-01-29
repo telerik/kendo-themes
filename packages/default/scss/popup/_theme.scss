@@ -103,7 +103,8 @@
     .k-list-container {
 
         // Button normal state
-        .k-button {
+        .k-button,
+        .k-button.k-state-active {
             box-shadow: none;
         }
 

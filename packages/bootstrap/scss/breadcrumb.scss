@@ -1,11 +1,12 @@
-@import "variables";
-@import "mixins";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 
 // Dependencies
-@import "common/all";
+@import "common/_all.scss";
+@import "input.scss";
 
 
 // Component
-@import "breadcrumb/layout";
-@import "breadcrumb/theme";
+@import "breadcrumb/_layout.scss";
+@import "breadcrumb/_theme.scss";

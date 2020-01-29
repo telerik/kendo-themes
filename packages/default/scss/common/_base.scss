@@ -113,7 +113,7 @@ $widget-border-width: 1px !default;
 
     // Widget
     .k-widget {
-        @extend %text-selection !optional;
+        @extend %text-selection;
         @include appearance( widget );
     }
 
@@ -153,23 +153,6 @@ $widget-border-width: 1px !default;
 
 
 @include exports( "common/misc/hr" ) {
-
-    %hr {
-        margin: $spacer-y auto;
-        height: 0;
-        border-width: 1px 0 0;
-        border-style: solid;
-        border-color: $panel-border;
-        display: block;
-    }
-
-    %hr-vertical {
-        margin: 0;
-        width: 0;
-        height: auto;
-        border-width: 0 0 0 1px;
-        flex: 0 0 auto;
-    }
 
     .k-hr {
         @extend %hr;

@@ -129,7 +129,7 @@
 
         // Separator
         .k-separator {
-            @extend %hr-vertical !optional;
+            @extend %hr-vertical;
             margin: 0 $toolbar-spacing;
             height: $line-height-em;
 
