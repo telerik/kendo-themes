@@ -47,27 +47,27 @@
     .k-card {
         &.k-card-primary,
         &.k-state-primary {
-            @extend .k-state-primary !optional;
+            @extend .k-state-primary;
         }
 
         &.k-card-info,
         &.k-state-info {
-            @extend .k-state-info !optional;
+            @extend .k-state-info;
         }
 
         &.k-card-success,
         &.k-state-success {
-            @extend .k-state-success !optional;
+            @extend .k-state-success;
         }
 
         &.k-card-warning,
         &.k-state-warning {
-            @extend .k-state-warning !optional;
+            @extend .k-state-warning;
         }
 
         &.k-card-error,
         &.k-state-error {
-            @extend .k-state-error !optional;
+            @extend .k-state-error;
         }
     }
 
