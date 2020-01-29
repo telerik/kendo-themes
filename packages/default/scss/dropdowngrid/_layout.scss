@@ -23,14 +23,24 @@
 
 
     // Header
-    .k-dropdowngrid-popup .k-grid-header-wrap {
-        border-width: 0 $grid-cell-vertical-border-width 0 0;
-    }
     .k-dropdowngrid-popup .k-grid-header {
         padding: 0;
+        border-width: 0 0 1px 0;
+        border-style: solid;
+        border-color: inherit;
+        font-size: $grid-header-font-size;
         display: block;
     }
+    .k-dropdowngrid-popup .k-grid-header-wrap {
+        border-width: 0 $grid-cell-vertical-border-width 0 0;
+        border-style: solid;
+        border-color: inherit;
+        vertical-align: top;
+        display: inline-block;
+        overflow: hidden;
+    }
     .k-dropdowngrid-popup .k-grid-header table {
+        margin-bottom: -1px;
         width: 100%;
         max-width: none;
         border-width: 0;

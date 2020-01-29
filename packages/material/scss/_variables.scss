@@ -106,10 +106,6 @@ $zindex-window: 2;
 // Color settings
 $is-dark-theme: map-get($theme, is-dark);
 
-/// Set a specific jump point for requesting color jumps
-/// @group color-system
-$color-level-step: 8% !default;
-
 
 // Theme colors
 /// The color that focuses the user attention.
@@ -160,21 +156,6 @@ $error-lighter: tint($error, 2) !default;
 $error-darker: shade($error, 2) !default;
 
 
-// Contrast
-
-/// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
-/// @group color-system
-$yiq-threshold: 150 !default;
-
-/// Dark color for use in YIQ color contrast function.
-/// @group color-system
-$yiq-dark: black !default;
-
-/// Light color for use in YIQ color contrast function.
-/// @group color-system
-$yiq-light: white !default;
-
-
 // Color constants
 $rgba-transparent: rgba( $black, 0 );
 
@@ -220,7 +201,7 @@ $selected-gradient: null !default;
 $selected-hover-bg: try-shade( $selected-bg ) !default;
 $selected-hover-color: $selected-text !default;
 
-$transition: background-color .2s ease !default;
+$transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
 
 
 // Disabled mixin variables
@@ -674,6 +655,11 @@ $button-pressed-shadow: $box-shadow-depth-3 !default;
 /// The shadow of focused buttons.
 /// @group buttons
 $button-focused-shadow: null !default;
+
+
+// Disabled button
+$button-disabled-bg: rgba(0, 0, 0, .12) !default;
+$button-disabled-text: rgba(0, 0, 0, .38) !default;
 
 
 // Primary button
@@ -1887,6 +1873,7 @@ $grid-padding-y: $cell-padding-y !default;
 
 $grid-header-padding-x: $grid-padding-x !default;
 $grid-header-padding-y: 16px !default;
+$grid-header-font-size: 12px !default;
 
 $grid-footer-padding-x: $grid-header-padding-x !default;
 $grid-footer-padding-y: $grid-header-padding-y !default;
@@ -2163,11 +2150,40 @@ $chat-border: $component-border !default;
 $chat-bubble-bg: $component-bg !default;
 $chat-bubble-text: $component-text !default;
 $chat-bubble-border: $chat-bubble-bg !default;
+$chat-bubble-shadow: 0 1px 2px rgba( 0, 0, 0, .08) !default;
+$chat-bubble-hover-shadow: 0 1px 2px rgba( 0, 0, 0, .16) !default;
+$chat-bubble-selected-shadow: 0 3px 10px rgba( 0, 0, 0, .16) !default;
 
 $chat-alt-bubble-bg: $primary !default;
 $chat-alt-bubble-text: contrast-wcag( $chat-alt-bubble-bg ) !default;
 $chat-alt-bubble-border: $chat-alt-bubble-bg !default;
+$chat-alt-bubble-shadow: 0 1px 2px rgba( $chat-alt-bubble-bg, .2 ) !default;
+$chat-alt-bubble-hover-shadow: 0 1px 2px rgba( $chat-alt-bubble-bg, .2 ) !default;
+$chat-alt-bubble-selected-shadow: 0 3px 10px rgba( $chat-alt-bubble-bg, .4 ) !default;
 
+$chat-quick-reply-bg: transparent !default;
+$chat-quick-reply-text: $primary !default;
+$chat-quick-reply-border: $primary !default;
+
+$chat-quick-reply-hover-bg: $primary !default;
+$chat-quick-reply-hover-text: $primary-contrast !default;
+$chat-quick-reply-hover-border: $primary !default;
+
+$chat-message-box-bg: white !default;
+$chat-message-box-text: $input-text !default;
+$chat-message-box-border: inherit !default;
+$chat-message-box-focus-shadow: 0 0 40px rgba( $input-text, .1 ) !default;
+
+$chat-message-box-button-hover-text: $primary !default;
+
+$chat-toolbar-box-bg: $toolbar-bg !default;
+$chat-toolbar-box-text: $toolbar-text !default;
+$chat-toolbar-box-border: inherit !default;
+
+$chat-toolbar-box-button-hover-text: $primary !default;
+$chat-toolbar-box-button-hover-bg: none !default;
+
+$chat-toolbar-box-scroll-button-shadow: 0 0 20px 5px $chat-bg !default;
 
 // Media player
 $mediaplayer-bg: $component-bg !default;

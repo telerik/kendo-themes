@@ -1,14 +1,12 @@
-$chat-message-box-bg: $input-bg !default;
-$chat-message-box-text: $input-text !default;
-$chat-message-box-border: inherit !default;
-
 @include exports("chat/theme") {
 
     // Chat
     .k-chat {
-        border-color: $chat-border;
-        color: $chat-text;
-        background-color: $chat-bg;
+        @include fill(
+            $chat-text,
+            $chat-bg,
+            $chat-border
+        );
 
 
         // Message meta
@@ -23,44 +21,52 @@ $chat-message-box-border: inherit !default;
 
         // Bubbles
         .k-bubble {
-            @include box-shadow( 0 1px 2px rgba( 0, 0, 0, .08) );
-            border-color: $chat-bubble-border;
-            color: $chat-bubble-text;
-            background-color: $chat-bubble-bg;
-            transition: box-shadow .2s ease-in-out;
+            @include fill(
+                $chat-bubble-text,
+                $chat-bubble-bg,
+                $chat-bubble-border
+            );
+            @include box-shadow( $chat-bubble-shadow );
+            transition: $transition;
             order: -1;
         }
         .k-bubble:hover {
-            @include box-shadow( 0 1px 2px rgba( 0, 0, 0, .16) );
+            @include box-shadow( $chat-bubble-hover-shadow );
         }
         .k-state-selected .k-bubble {
-            @include box-shadow( 0 3px 10px rgba( 0, 0, 0, .16) );
+            @include box-shadow( $chat-bubble-selected-shadow );
         }
 
         .k-alt .k-bubble {
-            @include box-shadow( 0 1px 2px rgba( $chat-alt-bubble-bg, .2 ) );
-            border-color: $chat-alt-bubble-border;
-            color: $chat-alt-bubble-text;
-            background-color: $chat-alt-bubble-bg;
+            @include fill(
+                $chat-alt-bubble-text,
+                $chat-alt-bubble-bg,
+                $chat-alt-bubble-border
+            );
+            @include box-shadow( $chat-alt-bubble-shadow );
         }
         .k-alt .k-bubble:hover {
-            @include box-shadow( 0 1px 2px rgba( $chat-alt-bubble-bg, .2 ) );
+            @include box-shadow( $chat-alt-bubble-hover-shadow );
         }
         .k-alt .k-state-selected .k-bubble {
-            @include box-shadow( 0 3px 10px rgba( $chat-alt-bubble-bg, .4 ) );
+            @include box-shadow( $chat-alt-bubble-selected-shadow );
         }
 
 
         // Quick replies
         .k-quick-reply {
-            border-color: $primary;
-            color: $primary;
-            background-color: transparent;
+            @include fill(
+                $chat-quick-reply-text,
+                $chat-quick-reply-bg,
+                $chat-quick-reply-border
+            );
         }
         .k-quick-reply:hover {
-            border-color: $primary;
-            color: $primary-contrast;
-            background-color: $primary;
+            @include fill(
+                $chat-quick-reply-hover-text,
+                $chat-quick-reply-hover-bg,
+                $chat-quick-reply-hover-border
+            );
         }
 
 
@@ -73,30 +79,34 @@ $chat-message-box-border: inherit !default;
             );
         }
         .k-message-box.k-state-focused {
-            box-shadow: 0 0 40px rgba( $input-text, .1 );
+            @include box-shadow( $chat-message-box-focus-shadow );
         }
         .k-message-box .k-button:hover {
-            color: $primary;
+            @include fill( $chat-message-box-button-hover-text );
         }
 
 
         // Toolbar
         .k-toolbar-box {
-            border-color: inherit;
-            color: $toolbar-text;
-            background-color: $toolbar-bg;
+            @include fill(
+                $chat-toolbar-box-text,
+                $chat-toolbar-box-bg,
+                $chat-toolbar-box-border
+            );
 
             .k-button:hover {
-                color: $primary;
-                background: none;
+                @include fill(
+                    $chat-toolbar-box-button-hover-text,
+                    $chat-toolbar-box-button-hover-bg
+                );
             }
 
             .k-scroll-button {
-                background-color: $chat-bg;
-                box-shadow: 0 0 20px 5px $chat-bg;
+                @include fill( $bg: $chat-bg );
+                @include box-shadow( $chat-toolbar-box-scroll-button-shadow );
             }
             .k-scroll-button:hover {
-                background-color: $chat-bg;
+                @include fill( $bg: $chat-bg );
             }
         }
 
