@@ -22,7 +22,8 @@
             @include fill(
                 $tabstrip-item-text,
                 $tabstrip-item-bg,
-                $tabstrip-item-border
+                $tabstrip-item-border,
+                $tabstrip-item-gradient
             );
 
             &:hover,
@@ -30,7 +31,8 @@
                 @include fill(
                     $tabstrip-item-hovered-text,
                     $tabstrip-item-hovered-bg,
-                    $tabstrip-item-hovered-border
+                    $tabstrip-item-hovered-border,
+                    $tabstrip-item-hovered-gradient
                 );
             }
 
@@ -39,7 +41,8 @@
                 @include fill(
                     $tabstrip-item-selected-text,
                     $tabstrip-item-selected-bg,
-                    $tabstrip-item-selected-border
+                    $tabstrip-item-selected-border,
+                    $tabstrip-item-selected-gradient
                 );
             }
 
