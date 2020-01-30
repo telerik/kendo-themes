@@ -1,4 +1,6 @@
 @include exports("slider/theme") {
+    $slider-tick-horizontal-image: map-get($data-uris, "slider-h.gif") !default;
+    $slider-tick-vertical-image: map-get($data-uris, "slider-v.gif") !default;
 
     .k-slider {
         .k-slider-track,
@@ -71,10 +73,10 @@
     }
 
     .k-slider-horizontal .k-tick {
-        background-image: url(map-get($data-uris, "slider-h.gif"));
+        @include background-image( $slider-tick-horizontal-image );
     }
 
     .k-slider-vertical .k-tick {
-        background-image: url(map-get($data-uris, "slider-v.gif"));
+        @include background-image( $slider-tick-vertical-image );
     }
 }
