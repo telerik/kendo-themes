@@ -1742,14 +1742,17 @@ $tabstrip-border: $component-border !default;
 $tabstrip-item-bg: null !default;
 $tabstrip-item-text: inherit !default;
 $tabstrip-item-border: null !default;
+$tabstrip-item-gradient: null !default;
 
 $tabstrip-item-hovered-bg: null !default;
 $tabstrip-item-hovered-text: inherit !default;
 $tabstrip-item-hovered-border: null !default;
+$tabstrip-item-hovered-gradient: null !default;
 
 $tabstrip-item-selected-bg: null !default;
 $tabstrip-item-selected-text: inherit !default;
 $tabstrip-item-selected-border: null !default;
+$tabstrip-item-selected-gradient: null !default;
 
 $tabstrip-item-focused-shadow: $list-item-focused-shadow !default;
 
