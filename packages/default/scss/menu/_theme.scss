@@ -1,69 +1,87 @@
-$menu-bg: none !default;
-$menu-text: $link-text !default;
-$menu-hover-text: $link-hover-text !default;
-$menu-expanded-text: $base-text !default;
-$menu-selected-text: $list-item-selected-text !default;
-$menu-focused-shadow: $list-item-focused-shadow !default;
-
-$menu-scrolling-bg: $component-bg !default;
-$menu-scrolling-border: $component-border !default;
-$menu-scrolling-icon: $link-text !default;
-$menu-scrolling-icon-hover: $link-hover-text !default;
-
 @include exports("menu/theme") {
 
     .k-menu:not(.k-context-menu) {
-        border-width: 0;
-        background: $menu-bg;
+        @include fill(
+            $menu-text,
+            $menu-bg,
+            $menu-border,
+            $menu-gradient
+        );
         @include use-background-clip();
 
         > .k-item {
-            color: $menu-text;
+            @include fill(
+                $menu-item-text,
+                $menu-item-bg,
+                $menu-item-border,
+                $menu-item-gradient
+            );
 
             &:hover,
             &.k-state-hover {
-                color: $menu-hover-text;
+                @include fill(
+                    $menu-item-hover-text,
+                    $menu-item-hover-bg,
+                    $menu-item-hover-border,
+                    $menu-item-hover-gradient
+                );
             }
 
             > .k-state-active {
-                color: $menu-expanded-text;
-            }
-
-            &.k-state-selected {
-                color: $menu-selected-text;
+                @include fill(
+                    $menu-item-expanded-text,
+                    $menu-item-expanded-bg,
+                    $menu-item-expanded-border,
+                    $menu-item-expanded-gradient
+                );
             }
 
             &:focus,
             &.k-state-focused {
-                box-shadow: $menu-focused-shadow;
-                outline: 0;
+                @include box-shadow( $menu-item-focus-shadow );
             }
         }
     }
 
     .k-menu-group,
     .k-menu.k-context-menu {
-        @include appearance( popup );
+        @include fill(
+            $menu-popup-text,
+            $menu-popup-bg,
+            $menu-popup-border,
+            $menu-popup-gradient
+        );
 
         .k-item {
+            @include fill(
+                $menu-popup-item-text,
+                $menu-popup-item-bg,
+                $menu-popup-item-border,
+                $menu-popup-item-gradient
+            );
+
             &:hover,
             &.k-state-hover {
-                @include appearance( hovered-list-item );
+                @include fill(
+                    $menu-popup-item-hover-text,
+                    $menu-popup-item-hover-bg,
+                    $menu-popup-item-hover-border,
+                    $menu-popup-item-hover-gradient
+                );
             }
 
             > .k-state-active {
-                color: $list-item-selected-text;
-                background-color: $list-item-selected-bg;
-            }
-
-            &.k-state-selected {
-                @include appearance( selected-list-item );
+                @include fill(
+                    $menu-popup-item-expanded-text,
+                    $menu-popup-item-expanded-bg,
+                    $menu-popup-item-expanded-border,
+                    $menu-popup-item-expanded-gradient
+                );
             }
 
             &:focus,
             &.k-state-focused {
-                box-shadow: $menu-focused-shadow;
-                outline: 0;
+                @include box-shadow( $menu-popup-item-focus-shadow );
             }
         }
     }
@@ -71,14 +89,20 @@ $menu-scrolling-icon-hover: $link-hover-text !default;
 
     // Scrolling
     .k-menu-scroll-button {
-        border-color: $menu-scrolling-border;
-        color: $menu-scrolling-icon;
-        background: $menu-scrolling-bg;
+        @include fill(
+            $menu-scroll-button-text,
+            $menu-scroll-button-bg,
+            $menu-scroll-button-border,
+            $menu-scroll-button-gradient
+        );
 
         &:hover {
-            border-color: $menu-scrolling-border;
-            color: $menu-scrolling-icon-hover;
-            background: $menu-scrolling-bg;
+            @include fill(
+                $menu-scroll-button-hover-text,
+                $menu-scroll-button-hover-bg,
+                $menu-scroll-button-hover-border,
+                $menu-scroll-button-hover-gradient
+            );
 
             &::before {
                 opacity: 0;

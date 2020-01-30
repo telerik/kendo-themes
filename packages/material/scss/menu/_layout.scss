@@ -1,9 +1,3 @@
-$item-hovered-opacity: .12 !default;
-$item-focused-opacity: .16 !default;
-$item-selected-opacity: .16 !default;
-$menu-scrolling-border: transparent !default;
-$menu-separator-spacer-y: $popup-padding-y !default;
-
 @import "~@progress/kendo-theme-default/scss/menu/_layout.scss";
 
 @include exports("menu/layout/material") {
@@ -11,53 +5,8 @@ $menu-separator-spacer-y: $popup-padding-y !default;
     .k-menu:not(.k-context-menu) {
 
         // Root items
-        & > .k-item {
-
-            & > .k-link > span:not(.k-menu-expand-arrow) {
-                position: relative; // prevent overlaping by the pseudo element
-            }
-
-            & > .k-link::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                border-radius: $border-radius;
-                background-color: currentColor;
-                opacity: 0;
-                transition: opacity .2s ease-in-out;
-            }
-
-            // Hovered state
-            &.k-state-hover,
-            &:hover {
-
-                & > .k-link::before {
-                    opacity: $item-hovered-opacity;
-                }
-
-            }
-
-            // Focused state
-            &.k-state-focused,
-            &:focus {
-
-                & > .k-link::before {
-                    opacity: $item-focused-opacity;
-                }
-
-            }
-
-            // Active state
-            & > .k-state-active,
-            &:active {
-
-                &.k-link::before {
-                    opacity: $item-selected-opacity;
-                }
-            }
+        > .k-menu-item {
+            transition: $transition;
         }
     }
 
