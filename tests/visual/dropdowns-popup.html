@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Dropdowns Popup</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(4, 1fr);
+            align-items: start;
+        }
+
+        .grid-single {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 15px;
+        }
+
+        .k-animation-container {
+            position: relative;
+        }
+
+        .k-virtual-content > .k-virtual-list > .k-virtual-item,
+        .k-first.k-virtual-item {
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+            height: 28px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <section class="grid-single">
+            <span>Angular</span>
+
+            <kendo-popup class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-list-container k-reset">
+                    <kendo-list>
+                        <div class="k-list-scroller">
+                            <ul class="k-list k-reset">
+                                <li class="k-item">Baseball</li>
+                                <li class="k-item">Basketball</li>
+                                <li class="k-item">Cricket</li>
+                                <li class="k-item">Field Hockey</li>
+                                <li class="k-item">Football</li>
+                                <li class="k-item">Table Tennis</li>
+                                <li class="k-item">Tennis</li>
+                                <li class="k-item">Volleyball</li>
+                            </ul>
+                        </div>
+                    </kendo-list>
+                    <kendo-resize-sensor></kendo-resize-sensor>
+                </div>
+            </kendo-popup>
+        </section>
+
+        <section class="grid-single">
+            <span>Angular with Virtualization</span>
+
+            <kendo-popup class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-list-container k-reset">
+                    <kendo-list>
+                        <div class="k-virtual-content">
+                            <ul class="k-list k-reset k-virtual-list">
+                                <li class="k-item k-virtual-item">Baseball</li>
+                                <li class="k-item k-virtual-item">Basketball</li>
+                                <li class="k-item k-virtual-item">Cricket</li>
+                                <li class="k-item k-virtual-item">Field Hockey</li>
+                                <li class="k-item k-virtual-item">Football</li>
+                                <li class="k-item k-virtual-item">Table Tennis</li>
+                                <li class="k-item k-virtual-item">Tennis</li>
+                                <li class="k-item k-virtual-item">Volleyball</li>
+                            </ul>
+                            <div class="k-height-container">
+                                <div></div>
+                            </div>
+                        </div>
+                    </kendo-list>
+                    <kendo-resize-sensor></kendo-resize-sensor>
+                </div>
+             </kendo-popup>
+        </section>
+
+        <section class="grid-single">
+            <span>jQuery</span>
+
+            <div class="k-animation-container" style="overflow: visible;">
+                <div class="k-list-container k-popup k-group k-reset k-state-border-up">
+                    <div class="k-group-header" style="display:none"></div>
+                    <div class="k-list-scroller">
+                        <ul class="k-list k-reset">
+                            <li class="k-item">Baseball</li>
+                            <li class="k-item">Basketball</li>
+                            <li class="k-item">Cricket</li>
+                            <li class="k-item">Field Hockey</li>
+                            <li class="k-item">Football</li>
+                            <li class="k-item">Table Tennis</li>
+                            <li class="k-item">Tennis</li>
+                            <li class="k-item">Volleyball</li>
+                        </ul>
+                    </div>
+                    <div class="k-nodata" style="display:none">
+                        <div>No data found.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-single">
+            <span>jQuery with Virtualization</span>
+
+            <div class="k-animation-container" style="overflow: visible;">
+                <div class="k-list-container k-popup k-group k-reset k-state-border-up">
+                    <div class="k-virtual-wrap">
+                        <div class="k-group-header" style="display: none;"></div>
+                        <div class="k-virtual-content">
+                            <ul class="k-list k-reset k-virtual-list">
+                                <li class="k-item k-virtual-item">Baseball</li>
+                                <li class="k-item k-virtual-item">Basketball</li>
+                                <li class="k-item k-virtual-item">Cricket</li>
+                                <li class="k-item k-virtual-item">Field Hockey</li>
+                                <li class="k-item k-virtual-item">Football</li>
+                                <li class="k-item k-virtual-item">Table Tennis</li>
+                                <li class="k-item k-virtual-item">Tennis</li>
+                                <li class="k-item k-virtual-item">Volleyball</li>
+                            </ul>
+                            <div class="k-height-container">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="k-nodata" style="display:none">
+                        <div>No data found.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-single">
+            <span>Angular NoData</span>
+
+            <kendo-popup class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-list-container k-reset">
+                    <kendo-list>
+                        <div class="k-list-scroller">
+                            <ul class="k-list k-reset"></ul>
+                        </div>
+                    </kendo-list>
+                    <div class="k-nodata">
+                        <div>NO DATA FOUND</div>
+                    </div>
+                    <kendo-resize-sensor></kendo-resize-sensor>
+                </div>
+            </kendo-popup>
+        </section>
+
+        <section class="grid-single">
+            <span>jQuery NoData</span>
+
+            <div class="k-animation-container" style="overflow: visible;">
+                <div class="k-list-container k-popup k-group k-reset k-state-border-up">
+                    <div class="k-group-header" style="display:none"></div>
+                    <div class="k-list-scroller">
+                        <ul class="k-list k-reset"></ul>
+                    </div>
+                    <div class="k-nodata">
+                        <div>No data found.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
