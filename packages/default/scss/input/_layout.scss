@@ -250,9 +250,18 @@
     }
 
     .k-form {
-        input:not(.k-checkbox):not(.k-radio),
-        .k-widget:not(.k-calendar):not(.k-switch) {
-            display: block;
+        .k-textbox,
+        .k-textarea,
+        .k-autocomplete,
+        .k-combobox,
+        .k-dropdown,
+        .k-dateinput,
+        .k-datepicker,
+        .k-datetimepicker,
+        .k-timepicker,
+        .k-numerictextbox,
+        .k-maskedtextbox {
+            display: flex;
         }
 
         .k-form-field {
