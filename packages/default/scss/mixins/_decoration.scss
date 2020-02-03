@@ -19,3 +19,9 @@
     background-color: transparent;
     background-image: none;
 }
+
+@mixin background-image( $background-image: null ) {
+    @if $background-image {
+        background-image: url(#{$background-image});
+    }
+}
