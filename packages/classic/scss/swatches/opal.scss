@@ -1,0 +1,26 @@
+// Color settings
+$primary: #7bd2f6 !default;
+$secondary: #daecf4 !default;
+
+$info: #0066cc !default;
+$success: #37b400 !default;
+$warning: #ffb400 !default;
+$error: #db4240 !default;
+
+
+// Root styles
+$body-bg: #ffffff !default;
+$body-text: #003f59 !default;
+
+
+// Charts
+$series-a: #0069a5 !default;
+$series-b: #0069a5 !default;
+$series-c: #7bd2f6 !default;
+$series-d: #ffb800 !default;
+$series-e: #ff8517 !default;
+$series-f: #e34a00 !default;
+
+
+// Import classic swatch file
+@import "_classic.scss";
