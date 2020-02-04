@@ -20,6 +20,15 @@
             display: block;
         }
     }
+    table.k-editor {
+        width: 100%;
+
+        tbody,
+        tr,
+        td {
+            border-color: inherit;
+        }
+    }
 
     kendo-editor {
         &.k-editor {
@@ -49,6 +58,7 @@
         }
     }
 
+
     // Reset styles if in sandbox mode
     .k-editor-sandbox {
 
@@ -71,10 +81,8 @@
         }
     }
 
-    table.k-editor {
-        width: 100%;
-    }
 
+    // Inline editor
     .k-editor-inline {
         @include border-radius();
         padding: $padding-y-sm $padding-x-sm;
@@ -107,13 +115,12 @@
     }
 
 
-    // Custom toolbar
-    .k-editor-toolbar-wrap {
-        border-color: inherit;
-    }
+    // jQuery toolbar
     .k-editor-toolbar {
         margin: 0;
         padding: $toolbar-padding-y $toolbar-padding-y;
+        border-width: 0 0 $toolbar-border-width 0;
+        border-style: solid;
         border-color: inherit;
         list-style-type: none;
         line-height: $toolbar-line-height;
@@ -140,9 +147,7 @@
 
         // Group
         .k-tool-group {
-            padding: 0;
             border-width: 0;
-            border-style: solid;
             border-color: inherit;
 
             .k-widget {}
@@ -174,15 +179,16 @@
             align-content: center;
             justify-content: center;
             position: relative;
+
+            &:hover {
+                z-index: 2;
+            }
         }
         .k-tool-text {
             display: none;
         }
         .k-tool + .k-tool {
-            margin-left: $toolbar-spacing;
-        }
-        .k-tool-group.k-button-group .k-tool {
-            margin: 0;
+            margin-left: -$toolbar-button-border-width;
         }
 
         // Overflow tools
@@ -191,6 +197,12 @@
             top: 0;
             right: 0;
             visibility: hidden;
+        }
+        .k-overflow-anchor {
+            border-width: 0;
+            padding: $toolbar-padding-y;
+            width: $toolbar-inner-calc-size;
+            height: $toolbar-inner-calc-size;
         }
 
     }
@@ -201,9 +213,7 @@
         padding: $input-padding-y;
         width: 100%;
         height: 100%;
-        border-width: 1px 0 0;
-        border-style: solid;
-        border-color: inherit;
+        border-width: 0;
         outline: 0;
 
         .k-resizable & {
