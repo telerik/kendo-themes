@@ -129,9 +129,12 @@
 
         // Separator
         .k-separator {
-            @extend %hr-vertical;
             margin: 0 $toolbar-spacing;
+            width: 0;
             height: $line-height-em;
+            border-width: 0 0 0 1px;
+            border-style: solid;
+            flex-shrink: 0;
 
             & + * {
                 margin-left: 0;
