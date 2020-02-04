@@ -9,6 +9,11 @@
     "Theme"
   ],
   "main": "index.js",
+  "files": [
+    "lib/",
+    "bin/",
+    "gulpfile.js"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/telerik/kendo-themes.git"
