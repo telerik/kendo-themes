@@ -23,7 +23,7 @@ else
     npm link --force
 
     # Install dependant themes
-    for pkg in bootstrap material nouvelle
+    for pkg in bootstrap classic material nouvelle
     do
         cd $dir/packages/$pkg
         npm link @progress/kendo-theme-default

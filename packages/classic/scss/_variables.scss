@@ -1,0 +1,3398 @@
+@import "functions/_index.scss";
+
+
+// Options
+$enable-rounded: true !default;
+$enable-shadows: true !default;
+$enable-gradients: true !default;
+$enable-transitions: true !default;
+$enable-flex-classes: true !default;
+$enable-grid-classes: true !default;
+
+$use-background-clip: true !default;
+$use-calc-badge-size: true !default;
+$use-picker-select-width: true !default;
+
+
+// Spacing
+$spacer: 1em !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+
+$spacing: (
+    0: 0,
+    1: 4px,
+    2: 8px,
+    3: 12px,
+    4: 16px,
+    5: 20px,
+    6: 24px,
+    7: 28px,
+    8: 32px,
+    9: 36px,
+    10: 40px,
+    11: 44px,
+    12: 48px,
+    13: 52px,
+    14: 56px,
+    15: 60px,
+    16: 64px,
+    17: 68px,
+    18: 72px,
+    19: 76px,
+    20: 80px,
+    21: 84px,
+    22: 88px,
+    23: 92px,
+    24: 96px,
+    xs: 4px,
+    sm: 8px,
+    md: 12px,
+    lg: 16px,
+    xl: 24px
+) !default;
+
+
+// Icons
+$icon-size: 16px !default;
+$icon-size-lg: 32px !default;
+$icon-spacing: 4px !default;
+
+/// The URL to the icon font that will be used by the theme
+/// The default value of `null` embeds the package font with a `data:` URL
+/// @group icons
+$icon-font-url: null !default;
+
+
+// Metrics
+$padding-x: 8px !default;
+$padding-y: 4px !default;
+$padding-x-sm: $padding-x / 2 !default;
+$padding-y-sm: $padding-y / 2 !default;
+$padding-x-lg: $padding-x * 1.5 !default;
+$padding-y-lg: $padding-y * 1.5 !default;
+
+/// Border radius for all components.
+$border-radius: 4px !default;
+$border-radius-sm: $border-radius / 2 !default;
+$border-radius-lg: $border-radius * 2 !default;
+
+$panel-padding-x: $padding-x !default;
+$panel-padding-y: $padding-y !default;
+
+$nav-item-margin: 0 !default;
+$nav-item-padding-x: $padding-x-lg !default;
+$nav-item-padding-y: $padding-y-lg !default;
+
+$header-cell-padding-x: 12px !default;
+$header-cell-padding-y: 8px !default;
+$cell-padding-x: 12px !default;
+$cell-padding-y: 8px !default;
+$cell-padding: 8px !default;
+// $cell-padding-sm: $table-sm-cell-padding !default;
+
+$zindex-popup: 1 !default;
+$zindex-window: 2 !default;
+
+
+// Color settings
+$is-dark-theme: false;
+
+
+// Theme colors
+/// The color that focuses the user attention.
+/// Used for primary buttons and for elements of primary importance across the theme.
+/// @group color-system
+$primary: #f35800 !default;
+$primary-lighter: tint($primary, 2) !default;
+$primary-darker: shade($primary, 2) !default;
+
+/// The color used along with the primary color denoted by $primary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+$primary-contrast: contrast-wcag( $primary ) !default;
+
+/// The secondary color of the theme.
+/// @group color-system
+$secondary: #e9e9e9 !default;
+$secondary-lighter: tint($secondary, 2) !default;
+$secondary-darker: shade($secondary, 2) !default;
+
+/// The color used along with the secondary color denoted by $secondary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+$secondary-contrast: contrast-wcag( $secondary ) !default;
+
+/// The tertiary color of the theme.
+/// @group color-system
+/// @type Color
+$tertiary: #03a9f4 !default;
+$tertiary-lighter: tint( $tertiary, 2 ) !default;
+$tertiary-darker: shade( $tertiary, 2 ) !default;
+
+/// The color used along with the tertiary color denoted by $tertiary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+/// @type Color
+$tertiary-contrast: contrast-wcag( $tertiary ) !default;
+
+/// The color for informational messages and states.
+/// @group color-system
+$info: #2498bc !default;
+$info-lighter: tint($info, 2) !default;
+$info-darker: shade($info, 2) !default;
+
+/// The color for success messages and states.
+/// @group color-system
+$success: #3ea44e !default;
+$success-lighter: tint($success, 2) !default;
+$success-darker: shade($success, 2) !default;
+
+/// The color for warning messages and states.
+/// @group color-system
+$warning: #ff9800 !default;
+$warning-lighter: tint($warning, 2) !default;
+$warning-darker: shade($warning, 2) !default;
+
+/// The color for error messages and states.
+/// @group color-system
+$error: #d92800 !default;
+$error-lighter: tint($error, 2) !default;
+$error-darker: shade($error, 2) !default;
+
+/// The dark color of the theme.
+/// @group color-system
+/// @type Color
+$dark: #404040 !default;
+
+/// The light color of the theme.
+/// @group color-system
+/// @type Color
+$light: #ebebeb !default;
+
+/// Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark
+/// @group color-system
+$inverse: if( $is-dark-theme, $light, $dark ) !default;
+
+
+$theme-colors: () !default;
+// sass-lint:disable indentation
+$theme-colors: map-merge((
+    "primary": $primary,
+    "secondary": $secondary,
+    "tertiary": $tertiary,
+    "info": $info,
+    "success": $success,
+    "warning": $warning,
+    "error": $error,
+    "dark": $dark,
+    "light": $light,
+    "inverse": $inverse
+), $theme-colors);
+// sass-lint:enable indentation
+
+
+$cursors: ( auto, default, none, context-menu, help, pointer, progress, wait, cell, crosshair, text,
+    vertical-text, alias, copy, move, no-drop, not-allowed, e-resize, n-resize, ne-resize, nw-resize,
+    s-resize, se-resize, sw-resize, w-resize, ew-resize, ns-resize, nesw-resize, nwse-resize, col-resize,
+    row-resize, all-scroll, zoom-in, zoom-out, grab, grabbing ) !default;
+
+
+// Color constants
+$rgba-transparent: rgba( 0, 0, 0, 0 );
+
+$gradient-transparent-to-black: rgba( black, 0), black;
+$gradient-transparent-to-white: rgba( white, 0), white;
+$gradient-black-to-transparent: black, rgba( black, 0);
+$gradient-white-to-transparent: white, rgba( white, 0);
+
+$gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
+
+
+$bg-color: #ffffff !default;
+$text-color: #2e2e2e !default;
+$border-color: try-shade( $bg-color, 2 ) !default;
+
+/// The background of the components' chrome area.
+$base-bg: $secondary !default;
+/// The text color of the components' chrome area.
+$base-text: $text-color !default;
+/// The border color of the components' chrome area.
+$base-border: try-shade( $base-bg, 2 ) !default;
+/// The gradient background of the components' chrome area.
+$base-gradient: rgba( white, .2 ), rgba( white, 0 ) !default;
+
+/// The background of hovered items.
+$hovered-bg: try-shade( $base-bg, 1 ) !default;
+/// The text color of hovered items.
+$hovered-text: $base-text !default;
+/// The border color of hovered items.
+$hovered-border: try-shade( $hovered-bg, 2 ) !default;
+/// The gradient background of hovered items.
+$hovered-gradient: $base-gradient !default;
+
+/// The background of selected items.
+$selected-bg: $primary !default;
+/// The text color of selected items.
+$selected-text: contrast-wcag( $selected-bg ) !default;
+/// The border color of selected items.
+$selected-border: try-shade( $selected-bg, 2 ) !default;
+/// The gradient background of selected items.
+$selected-gradient: $base-gradient !default;
+
+$selected-hover-bg: try-shade( $selected-bg ) !default;
+$selected-hover-color: contrast-wcag( $selected-hover-bg ) !default;
+
+$focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
+$primary-focused-shadow: inset 0 0 0 2px rgba($primary, .3) !default;
+
+$transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
+
+
+// Disabled mixin variables
+$disabled-filter: grayscale(.1) !default;
+$disabled-opacity: .6 !default;
+
+
+// Typography
+
+/// Base font size across all components.
+/// @group typography
+$font-size: 14px !default;
+$font-size-xs: 10px !default;
+$font-size-sm: 12px !default;
+$font-size-lg: 19px !default;
+$font-size-xl: 19px !default;
+
+/// Font family across all components.
+/// @group typography
+$font-family: inherit !default;
+
+/// Font family for monospaced text. Used for styling the code.
+/// @group typography
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
+
+/// Line height used along with $font-size.
+/// @group typography
+$line-height: (20 / 14) !default;
+$line-height-sm: 1.2 !default;
+$line-height-lg: 1.5 !default;
+$line-height-em: $line-height * 1em;
+
+
+// Font weight
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+
+
+// Headings
+$h1-font-size: ($font-size * 2) !default;
+$h2-font-size: $font-size-lg !default;
+$h3-font-size: $font-size !default;
+$h4-font-size: $font-size-sm !default;
+$h5-font-size: $font-size-sm !default;
+$h6-font-size: $font-size-sm !default;
+
+$h1-margin-bottom: $font-size !default;
+$h2-margin-bottom: $font-size !default;
+$h3-margin-bottom: $font-size !default;
+$h4-margin-bottom: $font-size !default;
+$h5-margin-bottom: $font-size !default;
+$h6-margin-bottom: $font-size !default;
+
+
+// Display
+$display1-font-size: ($font-size * 6) !default;
+$display2-font-size: ($font-size * 5) !default;
+$display3-font-size: ($font-size * 4) !default;
+$display4-font-size: ($font-size * 3) !default;
+
+
+// Paragraph
+$paragraph-margin-bottom: $font-size !default;
+
+
+// Generic styles
+
+// Root styles
+$body-bg: $bg-color !default;
+$body-text: $text-color !default;
+
+$app-bg: $body-bg !default;
+$app-text: $body-text !default;
+$app-border: $border-color !default;
+
+// Link
+$link-text: $primary !default;
+$link-hover-text: $primary-darker !default;
+
+
+// Components
+
+// Component
+/// Background color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.
+/// @group component
+$component-bg: $body-bg !default;
+/// Text color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.
+/// @group component
+$component-text: $body-text !default;
+/// Border color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
+/// @group component
+$component-border: rgba( black, .08 ) !default;
+
+
+// Widget
+/// Background color of a component.
+/// @deprecated Will be removed in v5. Use `$component-bg` variable instead.
+/// @group component
+$widget-bg: $component-bg !default;
+/// Text color of a component.
+/// @deprecated Will be removed in v5. Use `$component-text` variable instead.
+/// @group component
+$widget-text: $component-text !default;
+/// Border color of a component.
+/// @deprecated Will be removed in v5. Use `$component-border` variable instead.
+/// @group component
+$widget-border: $component-border !default;
+
+
+// Drop Hint
+$equilateral-index: 1.7320508076 !default;
+
+$drop-hint-arrow-size: 8px !default;
+$drop-hint-arrow-spacing: ($drop-hint-arrow-size / 2) !default;
+$drop-hint-line-h-width: 20px !default;
+$drop-hint-line-h-height: 1px !default;
+$drop-hint-line-v-width: $drop-hint-line-h-height !default;
+$drop-hint-line-v-height: $drop-hint-line-h-width !default;
+
+$drop-hint-bg: $primary !default;
+
+
+// Panel
+$panel-bg: $component-bg !default;
+$panel-text: $component-text !default;
+$panel-border: $component-border !default;
+
+
+// Grouping
+$grouping-header-bg: $body-text !default;
+$grouping-header-text: $body-bg !default;
+$grouping-border: $border-color !default;
+$frozen-grouping-header-text: null !default;
+$frozen-grouping-header-border-width: null !default;
+
+
+// Header
+$header-padding-x: $padding-x !default;
+$header-padding-y: $padding-y !default;
+
+$header-bg: $base-bg !default;
+$header-text: $base-text !default;
+$header-border: $base-border !default;
+$header-gradient: $base-gradient !default;
+
+$header-hovered-bg: $hovered-bg !default;
+$header-hovered-text: $hovered-text !default;
+$header-hovered-border: $hovered-border !default;
+$header-hovered-gradient: null !default;
+
+$header-selected-bg: $selected-bg !default;
+$header-selected-text: $selected-text !default;
+$header-selected-border: $selected-border !default;
+$header-selected-gradient: null !default;
+
+
+// Avatar
+$avatar-size: 32px !default;
+$avatar-rounded-radius: 5px !default;
+
+$avatar-bg: $primary !default;
+$avatar-text: contrast-wcag( $avatar-bg ) !default;
+
+
+// Badge
+$badge-padding-x: $padding-x-sm !default;
+$badge-padding-y: $badge-padding-x !default;
+$badge-border-width: 1px !default;
+$badge-border-radius: $border-radius !default;
+$badge-font-size: $font-size-xs !default;
+$badge-line-height: 1 !default;
+
+$badge-padding-x-sm: ( $badge-padding-x / 2 ) !default;
+$badge-padding-y-sm: ( $badge-padding-y / 2 ) !default;
+$badge-border-width-sm: $badge-border-width !default;
+$badge-border-radius-sm: $border-radius-sm !default;
+$badge-font-size-sm: $font-size-xs !default;
+$badge-line-height-sm: 1 !default;
+
+$badge-padding-x-lg: ( $badge-padding-x * 1.5 ) !default;
+$badge-padding-y-lg: ( $badge-padding-y * 1.5 ) !default;
+$badge-border-width-lg: $badge-border-width !default;
+$badge-border-radius-lg: $border-radius-lg !default;
+$badge-font-size-lg: $font-size-sm !default;
+$badge-line-height-lg: 1 !default;
+
+$badge-fixed-size: 20px !default;
+$badge-calc-size: calc( #{$badge-line-height * 1em} + #{$badge-padding-y * 2} + #{$badge-border-width * 2} ) !default;
+$badge-size: if( $use-calc-badge-size, $badge-calc-size, $badge-fixed-size );
+$badge-dot-size: 10px;
+
+$badge-fixed-size-sm: 16px !default;
+$badge-calc-size-sm: calc( #{$badge-line-height-sm * 1em} + #{$badge-padding-y-sm * 2} + #{$badge-border-width-sm * 2} ) !default;
+$badge-size-sm: if( $use-calc-badge-size, $badge-calc-size-sm, $badge-fixed-size-sm );
+$badge-dot-size-sm: 6px;
+
+$badge-fixed-size-lg: 26px !default;
+$badge-calc-size-lg: calc( #{$badge-line-height-lg * 1em} + #{$badge-padding-y-lg * 2} + #{$badge-border-width-lg * 2} ) !default;
+$badge-size-lg: if( $use-calc-badge-size, $badge-calc-size-lg, $badge-fixed-size-lg );
+$badge-dot-size-lg: 12px;
+
+
+// Chip
+$chips-margin: 8px !default;
+
+$chip-padding-x: 0 !default;
+$chip-padding-y: 4px !default;
+$chip-height: 24px !default;
+$chip-border-radius: $chip-height / 2 !default;
+$chip-font-size: 14px !default;
+
+$chip-selected-icon-size: 16px !default;
+$chip-selected-icon-offset: 4px !default;
+$chip-selected-icon-no-icon-offset: $chip-selected-icon-offset !default;
+$chip-selected-icon-font-size: $chip-font-size !default;
+
+$chip-content-padding-x: 8px !default;
+
+$chip-icons-size: 16px !default;
+$chip-icon-margin: 4px !default;
+$chip-remove-icon-margin: 8px !default;
+$chip-remove-icon-font-size: 14px !default;
+
+$chip-avatar-size: 16px !default;
+
+$chip-filled-bg: #ebebeb !default;
+$chip-filled-text: $body-text !default;
+$chip-filled-border: rgba(0, 0, 0, .15) !default;
+
+$chip-filled-hovered-bg: #e0e0e0 !default;
+$chip-filled-hovered-border: rgba(0, 0, 0, .2) !default;
+
+$chip-filled-focused-bg: $chip-filled-bg !default;
+$chip-filled-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
+
+$chip-filled-selected-bg: #d6d6d6 !default;
+$chip-filled-selected-border: rgba(0, 0, 0, .3) !default;
+
+$chip-filled-success-bg: rgba($success, .12) !default;
+$chip-filled-success-text: $success !default;
+$chip-filled-success-border: rgba($success, .3) !default;
+
+$chip-filled-warning-bg: rgba($warning, .12) !default;
+$chip-filled-warning-text: $warning !default;
+$chip-filled-warning-border: rgba($warning, .3) !default;
+
+$chip-filled-error-bg: rgba($error, .12) !default;
+$chip-filled-error-text: $error !default;
+$chip-filled-error-border: rgba($error, .3) !default;
+
+$chip-filled-info-bg: rgba($info, .12) !default;
+$chip-filled-info-text: $info !default;
+$chip-filled-info-border: rgba($info, .3) !default;
+
+$chip-outline-bg: transparent !default;
+$chip-outline-text: #6c757d !default;
+$chip-outline-border: $body-text !default;
+
+$chip-outline-hovered-bg: $body-text !default;
+$chip-outline-hovered-text: #ffffff !default;
+$chip-outline-hovered-border: rgba(0, 0, 0, .2) !default;
+
+$chip-outline-focused-bg: $chip-outline-bg !default;
+$chip-outline-focused-text: $chip-outline-text !default;
+$chip-outline-focused-border: $chip-outline-border !default;
+$chip-outline-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .4) !default;
+
+$chip-outline-selected-bg: $body-text !default;
+$chip-outline-selected-text: #ffffff !default;
+
+$chip-outline-success-bg: transparent !default;
+$chip-outline-success-text: $success !default;
+$chip-outline-success-border: rgba($success, .54) !default;
+
+$chip-outline-warning-bg: transparent !default;
+$chip-outline-warning-text: $warning !default;
+$chip-outline-warning-border: rgba($warning, .54) !default;
+
+$chip-outline-error-bg: transparent !default;
+$chip-outline-error-text: $error !default;
+$chip-outline-error-border: rgba($error, .54) !default;
+
+$chip-outline-info-bg: transparent !default;
+$chip-outline-info-text: $info !default;
+$chip-outline-info-border: rgba($info, .54) !default;
+
+$chip-filled-single-selected-bg: rgba($primary, .08) !default;
+$chip-filled-single-selected-text: $primary !default;
+$chip-filled-single-selected-border: rgba($primary, .2) !default;
+
+$chip-outline-single-selected-bg: transparent !default;
+$chip-outline-single-selected-text: $primary !default;
+$chip-outline-single-selected-border: rgba($primary, .2) !default;
+
+$chip-multiple-selected-icon-bg: rgba(0, 0, 0, .36) !default;
+$chip-multiple-selected-icon-text: #ffffff !default;
+
+
+// Node
+$node-bg: $base-bg !default;
+$node-text: $base-text !default;
+$node-border: $node-bg !default;
+$node-gradient: null !default;
+
+$node-hovered-bg: $hovered-bg !default;
+$node-hovered-text: $hovered-text !default;
+$node-hovered-border: $node-hovered-bg !default;
+$node-hovered-gradient: null !default;
+
+$node-selected-bg: $selected-bg !default;
+$node-selected-text: $selected-text !default;
+$node-selected-border: $node-selected-bg !default;
+$node-selected-gradient: null !default;
+
+
+// List
+$list-item-padding-x: $padding-x !default;
+$list-item-padding-y: $padding-y !default;
+
+$list-item-bg: null !default;
+$list-item-text: null !default;
+
+$list-item-hovered-bg: $hovered-bg !default;
+$list-item-hovered-text: $hovered-text !default;
+
+$list-item-selected-bg: $selected-bg !default;
+$list-item-selected-text: $selected-text !default;
+
+$list-item-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
+
+$list-container-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
+$list-container-no-data-text: rgba( $component-text, .5 ) !default;
+
+
+// Listgroup
+$listgroup-border-width: 1px !default;
+$listgroup-border-radius: $border-radius !default;
+
+$listgroup-font-size: $font-size !default;
+$listgroup-line-height: $line-height !default;
+
+$listgroup-bg: $component-bg !default;
+$listgroup-text: $component-text !default;
+$listgroup-border: $component-border !default;
+
+$listgroup-item-padding-x: $cell-padding-x !default;
+$listgroup-item-padding-y: $cell-padding-y !default;
+$listgroup-item-border-width: 1px !default;
+
+
+// Loading
+
+
+// Placeholder
+$placeholder-line-width: 100% !default;
+$placeholder-line-height: 10px !default;
+$placeholder-bg: rgba(0, 0, 0, .1) !default;
+
+
+// Progressbar
+$progressbar-height: 22px !default;
+$progressbar-animation-timing: 1s linear infinite !default;
+$progressbar-border-width: 0px !default;
+$progressbar-font-family: $font-family !default;
+$progressbar-font-size: $font-size-sm !default;
+$progressbar-line-height: $line-height !default;
+
+$progressbar-bg: $base-bg !default;
+$progressbar-text: $base-text !default;
+$progressbar-border: $base-border !default;
+$progressbar-gradient: null !default;
+
+$progressbar-fill-bg: $primary !default;
+$progressbar-fill-text: contrast-wcag( $progressbar-fill-bg ) !default;
+$progressbar-fill-border: try-shade( $progressbar-fill-bg ) !default;
+$progressbar-fill-gradient: null !default;
+
+$progressbar-indeterminate-bg: $progressbar-bg !default;
+$progressbar-indeterminate-text: $progressbar-text !default;
+$progressbar-indeterminate-border: $progressbar-border !default;
+$progressbar-indeterminate-gradient: null !default;
+
+$progressbar-chunk-border: $body-bg !default;
+
+
+// Ripple
+
+
+// Table
+
+
+// Message box
+$message-box-margin: 0 0 $spacer 0 !default;
+$message-box-padding-x: $padding-x !default;
+$message-box-padding-y: $padding-y !default;
+$message-box-border-width: 0 0 0 4px !default;
+
+$message-box-font-size: $font-size !default;
+$message-box-line-height: $line-height !default;
+
+$message-box-bg-level: -10 !default;
+$message-box-text-level: 6 !default;
+$message-box-border-level: -9 !default;
+
+$message-box-link-font-style: italic !default;
+$message-box-link-text-decoration: underline !default;
+
+
+// Forms
+$form-spacer: $padding-x * 2 !default;
+
+$form-font-size: $font-size !default;
+$form-line-height: $line-height !default;
+$form-line-height-em: $form-line-height * 1em !default;
+$form-line-height-sm: $line-height-sm !default;
+$form-line-height-lg: $line-height-lg !default;
+
+$form-fieldset-margin: 2rem 0 0 !default;
+$form-fieldset-padding: 0px !default;
+
+$form-legend-margin: 0 0 1rem !default;
+$form-legend-padding: 0px !default;
+$form-legend-border-width: 0 0 2px !default;
+$form-legend-border-style: solid !default;
+$form-legend-border-color: $component-border !default;
+$form-legend-width: 100% !default;
+$form-legend-font-size: 14px !default;
+$form-legend-text-transform: uppercase !default;
+
+$form-label-margin-bottom: 0px !default;
+
+$form-button-margin-x: 8px !default;
+
+$form-hint-font-size: 12px !default;
+$form-hint-font-style: italic !default;
+
+$form-field-margin-top: 1rem !default;
+
+$form-separator-margin: $form-field-margin-top 0 0 !default;
+$form-separator-border-color: $form-legend-border-color !default;
+
+$horizontal-form-label-padding-top: 5px !default;
+$horizontal-form-label-margin-x: 10px !default;
+$horizontal-form-label-width: 25% !default;
+$horizontal-form-label-align: flex-end !default;
+
+$inline-form-element-width: 25% !default;
+
+$forms-invalid-color: $error !default;
+
+
+// Label
+$label-optional-margin-x: 6px !default;
+$label-optional-font-size: 12px !default;
+$label-optional-font-style: italic !default;
+
+
+// Fieldset
+$fieldset-margin: 30px !default;
+$fieldset-font-size: $h4-font-size !default;
+
+$fieldset-bg: null !default;
+$fieldset-text: null !default;
+$fieldset-border: null !default;
+
+$fieldset-legend-bg: null !default;
+$fieldset-legend-text: darken($body-text, 13%) !default;
+$fieldset-legend-border: null !default;
+
+
+// Validator
+$invalid-bg: null !default;
+$invalid-text: $error !default;
+$invalid-border: rgba( $error, .5 ) !default;
+$invalid-shadow: null !default;
+
+
+// Buttons
+
+/// Width of border around buttons
+/// @group button
+$button-border-width: 1px !default;
+/// Border radius of buttons
+/// @group button
+$button-border-radius: $border-radius !default;
+
+/// Horizontal padding of buttons
+/// @group button
+$button-padding-x: $padding-x !default;
+/// Vertical padding of buttons
+/// @group button
+$button-padding-y: $padding-y !default;
+$button-font-family: $font-family !default;
+$button-font-size: $font-size !default;
+$button-line-height: $form-line-height !default;
+
+$button-padding-x-sm: $button-padding-x / 2 !default;
+$button-padding-y-sm: $button-padding-y / 2 !default;
+$button-line-height-sm: $form-line-height-sm !default;
+
+$button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} ) !default;
+$button-calc-size: calc( #{$button-inner-calc-size} + 2px ) !default;
+
+/// The text color of the buttons.
+/// @group button
+$button-text: $base-text !default;
+
+/// The background of the buttons.
+/// @group button
+$button-bg: $base-bg !default;
+
+/// The border color of the buttons.
+/// @group button
+$button-border: $base-border !default;
+
+/// The background gradient of the buttons.
+/// @group button
+$button-gradient: $base-gradient !default;
+$button-shadow: null !default;
+
+/// The text color of hovered buttons.
+/// @group button
+$button-hovered-text: $hovered-text !default;
+
+/// The background of hovered buttons.
+/// @group button
+$button-hovered-bg: $hovered-bg !default;
+
+/// The border color of hovered buttons.
+/// @group button
+$button-hovered-border: $hovered-border !default;
+
+/// The background gradient of hovered buttons.
+/// @group button
+$button-hovered-gradient: $hovered-gradient !default;
+$button-hovered-shadow: null !default;
+
+/// The text color of pressed buttons.
+/// @group button
+$button-pressed-text: $button-text !default;
+
+/// The background color of pressed buttons.
+/// @group button
+$button-pressed-bg: $button-bg !default;
+
+/// The border color of pressed buttons.
+/// @group button
+$button-pressed-border: $button-border !default;
+
+/// The background gradient of pressed buttons.
+/// @group button
+$button-pressed-gradient: none !default;
+$button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
+
+/// The shadow of focused buttons.
+/// @group button
+$button-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
+
+
+// Disabled button
+$button-disabled-bg: null !default;
+$button-disabled-text: null !default;
+
+
+// Primary button
+$primary-button-bg: $primary !default;
+$primary-button-text: contrast-wcag( $primary-button-bg ) !default;
+$primary-button-border: $primary-button-bg !default;
+$primary-button-gradient: rgba( adjust-hue( $primary-button-bg, 14), 0 ), rgba( adjust-hue( $primary-button-bg, 14), .2 ) !default;
+
+$primary-button-hovered-text: $primary-button-text !default;
+$primary-button-hovered-bg: adjust-hue( $primary-button-bg, 3) !default;
+$primary-button-hovered-border: $primary-button-hovered-bg !default;
+$primary-button-hovered-gradient: rgba( adjust-hue( $primary-button-hovered-bg, 14), 0 ), rgba( adjust-hue( $primary-button-hovered-bg, 14), .2 ) !default;
+
+$primary-button-pressed-text: $primary-button-text !default;
+$primary-button-pressed-bg: $primary-button-bg !default;
+$primary-button-pressed-border: $primary-button-pressed-bg !default;
+$primary-button-pressed-gradient: rgba( adjust-hue( $primary-button-pressed-bg, 14), .2 ), rgba( adjust-hue( $primary-button-pressed-bg, 14), 0 ) !default;
+$primary-button-pressed-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
+
+$primary-button-focused-shadow: 0 3px 4px 0 rgba($primary, .4) !default;
+
+$flat-button-hover-opacity: .08 !default;
+$flat-button-focused-opacity: null !default;
+$flat-button-active-opacity: .16 !default;
+$flat-button-selected-opacity: .2 !default;
+
+$clear-button-text: $button-text !default;
+$clear-button-hover-text: darken($body-text, 13%) !default;
+$clear-button-focused-opacity: .1 !default;
+
+
+// Input
+
+$input-default-width: 12.4em !default;
+
+$input-border-width: 1px !default;
+$input-border-height: ( $input-border-width * 2 ) !default;
+$input-border-radius: $border-radius !default;
+$input-border-radius-sm: $border-radius !default;
+$input-border-radius-lg: $border-radius !default;
+
+$input-padding-x: $padding-x !default;
+$input-padding-y: $padding-y !default;
+$input-font-family: $font-family !default;
+$input-font-size: $font-size !default;
+$input-line-height: $form-line-height !default;
+$input-line-height-em: $input-line-height * 1em;
+
+$input-padding-x-sm: ($input-padding-x / 2) !default;
+$input-padding-y-sm: ($input-padding-y / 2) !default;
+$input-font-size-sm: $input-font-size !default;
+$input-line-height-sm: $form-line-height-sm !default;
+
+$input-padding-x-lg: ($input-padding-x * 1.5) !default;
+$input-padding-y-lg: ($input-padding-y * 1.5) !default;
+$input-font-size-lg: $input-font-size !default;
+$input-line-height-lg: $form-line-height-lg !default;
+
+$input-calc-height: calc( #{$input-line-height * 1em} + #{$input-padding-y * 2} + #{$input-border-width * 2} ) !default;
+$input-calc-height-sm: calc( #{$input-line-height-sm * 1em} + #{$input-padding-y-sm * 2} + #{$input-border-width * 2} ) !default;
+$input-calc-height-lg: calc( #{$input-line-height-lg * 1em} + #{$input-padding-y-lg * 2} + #{$input-border-width * 2} ) !default;
+
+$input-inner-calc-height: calc( #{$input-line-height * 1em} + #{$input-padding-y * 2} ) !default;
+$input-inner-calc-height-sm: calc( #{$input-line-height-sm * 1em} + #{$input-padding-y-sm * 2} ) !default;
+$input-inner-calc-height-lg: calc( #{$input-line-height-lg * 1em} + #{$input-padding-y-lg * 2} ) !default;
+
+$input-icon-offset: 6px !default;
+
+$input-bg: $component-bg !default;
+$input-text: $component-text !default;
+$input-border: $button-border !default;
+$input-shadow: null !default;
+
+$input-hovered-text: $input-text !default;
+$input-hovered-bg: $input-bg !default;
+$input-hovered-border: $button-hovered-border !default;
+$input-hovered-shadow: null !default;
+
+$input-focused-text: $input-text !default;
+$input-focused-bg: $input-bg !default;
+$input-focused-border: $input-hovered-border !default;
+$input-focused-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
+
+$input-placeholder-text: rgba( $input-text, .5) !default;
+$input-placeholder-opacity: 1 !default;
+
+$input-selected-text: $primary-contrast !default;
+$input-selected-bg: $primary !default;
+
+
+// Textboxes
+$textbox-line-height: $form-line-height-em !default;
+$textbox-icon-width: calc( #{$icon-size} + #{$input-padding-x * 2} ) !default;
+$textbox-icon-padding-x: 6px !default;
+$textbox-icon-padding-y: $textbox-icon-padding-x !default;
+
+$textbox-icon-color: #2d2db2 !default;
+$textbox-icon-opacity: .35 !default;
+
+$textbox-separator-color: $clear-button-text !default;
+$textbox-separator-opacity: .5 !default;
+
+
+// Textarea
+$textarea-default-width: 18em !default;
+
+$textarea-border-width: $input-border-width !default;
+$textarea-border-height: $input-border-height !default;
+$textarea-border-radius: $input-border-radius !default;
+$textarea-border-radius-sm: $input-border-radius-sm !default;
+$textarea-border-radius-lg: $input-border-radius-lg !default;
+
+$textarea-padding-x: $input-padding-x !default;
+$textarea-padding-y: $input-padding-y !default;
+$textarea-font-family: $input-font-family !default;
+$textarea-font-size: $input-font-size !default;
+$textarea-line-height: $input-line-height !default;
+$textarea-line-height-em: $input-line-height-em !default;
+
+$textarea-padding-x-sm: $input-padding-x-sm !default;
+$textarea-padding-y-sm: $input-padding-y-sm !default;
+$textarea-font-size-sm: $input-font-size-sm !default;
+$textarea-line-height-sm: $input-line-height-sm !default;
+
+$textarea-padding-x-lg: $input-padding-x-lg !default;
+$textarea-padding-y-lg: $input-padding-y-lg !default;
+$textarea-font-size-lg: $input-font-size-lg !default;
+$textarea-line-height-lg: $input-line-height-lg !default;
+
+$textarea-calc-height: $input-calc-height !default;
+$textarea-calc-height-sm: $input-calc-height-sm !default;
+$textarea-calc-height-lg: $input-calc-height-lg !default;
+
+$textarea-floating-label-padding: null !default;
+
+$textarea-bg: $input-bg !default;
+$textarea-text: $input-text !default;
+$textarea-border: $input-border !default;
+$textarea-shadow: $input-shadow !default;
+
+$textarea-hovered-text: $input-hovered-text !default;
+$textarea-hovered-bg: $input-hovered-bg !default;
+$textarea-hovered-border: $input-hovered-border !default;
+$textarea-hovered-shadow: $input-hovered-shadow !default;
+
+$textarea-focused-text: $input-focused-text !default;
+$textarea-focused-bg: $input-focused-bg !default;
+$textarea-focused-border: $input-focused-border !default;
+$textarea-focused-shadow: $input-focused-shadow !default;
+
+$textarea-placeholder-text: $input-placeholder-text !default;
+$textarea-placeholder-opacity: $input-placeholder-opacity !default;
+
+$textarea-selected-text: $input-selected-text !default;
+$textarea-selected-bg: $input-selected-bg !default;
+
+$textarea-focused-invalid-shadow: null !default;
+
+
+// Floating label
+$floating-label-scale: .75 !default;
+$floating-label-height: $textbox-line-height * $floating-label-scale !default;
+$floating-label-transition: .2s ease-out !default;
+
+$floating-label-bg: null !default;
+$floating-label-text: null !default;
+
+$floating-label-focused-bg: null !default;
+$floating-label-focused-text: null !default;
+
+
+// Checkboxes
+$checkbox-icon-size: 12px !default;
+$checkbox-size: $icon-size !default;
+$checkbox-radius: $border-radius !default;
+$checkbox-border-width: 1px !default;
+$checkbox-line-height: $checkbox-size + $checkbox-border-width !default;
+$checkbox-indeterminate-style: square !default;
+$checkbox-dash-height: $checkbox-size / 10 !default;
+$checkbox-dash-width: $checkbox-size - ( $checkbox-border-width * 4 ) !default;
+$checkbox-label-margin-x: 8px !default;
+
+$checkbox-bg: $input-bg !default;
+$checkbox-text: $input-text !default;
+$checkbox-border: $input-border !default;
+$checkbox-hovered-bg: $checkbox-bg !default;
+$checkbox-hovered-text: $primary !default;
+$checkbox-hovered-border: $input-hovered-border !default;
+$checkbox-checked-bg: $primary !default;
+$checkbox-checked-text: contrast-wcag( $checkbox-checked-bg ) !default;
+$checkbox-checked-border: $checkbox-checked-bg !default;
+$checkbox-indeterminate-bg: $checkbox-bg !default;
+$checkbox-indeterminate-text: $checkbox-checked-bg !default;
+$checkbox-indeterminate-border: $checkbox-border !default;
+$checkbox-focused-border: $checkbox-hovered-border !default;
+$checkbox-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
+$checkbox-focused-checked-border: $checkbox-checked-border !default;
+$checkbox-focused-checked-shadow: 0 0 0 2px rgba($primary, .3) !default;
+$checkbox-disabled-bg: null !default;
+$checkbox-disabled-text: null !default;
+$checkbox-disabled-border: null !default;
+$checkbox-disabled-checked-bg: null !default;
+$checkbox-disabled-checked-text: null !default;
+$checkbox-disabled-checked-border: null !default;
+$checkbox-invalid-bg: null !default;
+$checkbox-invalid-text: $invalid-text !default;
+$checkbox-invalid-border: $invalid-border !default;
+
+$checkbox-list-margin: 0px !default;
+$checkbox-list-padding: 0px !default;
+$checkbox-list-item-margin-top: 16px !default;
+$checkbox-list-horizontal-item-margin-x: 32px !default;
+
+
+// Radio Buttons
+$radio-icon-size: 12px !default;
+$radio-size: $icon-size !default;
+$radio-radius: 50% !default;
+$radio-border-width: 1px !default;
+$radio-line-height: $radio-size + $radio-border-width !default;
+$radio-label-margin-x: 8px !default;
+
+$radio-bg: $checkbox-bg !default;
+$radio-text: $checkbox-text !default;
+$radio-border: $checkbox-border !default;
+$radio-hovered-bg: $checkbox-hovered-bg !default;
+$radio-hovered-text: $checkbox-hovered-text !default;
+$radio-hovered-border: $checkbox-hovered-border !default;
+$radio-checked-bg: $checkbox-checked-bg !default;
+$radio-checked-text: $checkbox-checked-text !default;
+$radio-checked-border: $checkbox-checked-border !default;
+$radio-indeterminate-bg: $radio-checked-bg !default;
+$radio-indeterminate-text: $radio-checked-text !default;
+$radio-indeterminate-border: $radio-checked-border !default;
+$radio-focused-border: $checkbox-hovered-border !default;
+$radio-focused-shadow: $checkbox-focused-shadow !default;
+$radio-focused-checked-border: $checkbox-checked-border !default;
+$radio-focused-checked-shadow: $checkbox-focused-checked-shadow !default;
+$radio-disabled-bg: null !default;
+$radio-disabled-text: null !default;
+$radio-disabled-border: null !default;
+$radio-disabled-checked-bg: null !default;
+$radio-disabled-checked-text: null !default;
+$radio-disabled-checked-border: null !default;
+
+$radio-list-margin: 0px !default;
+$radio-list-padding: 0px !default;
+$radio-list-item-margin-top: 16px !default;
+$radio-list-horizontal-item-margin-x: 32px !default;
+
+
+// Picker
+$picker-select-border-width: 0 !default;
+
+$picker-select-padding-x: $input-padding-y !default;
+$picker-select-padding-y: $input-padding-y !default;
+
+$picker-select-padding-x-sm: $input-padding-y-sm !default;
+$picker-select-padding-y-sm: $input-padding-y-sm !default;
+
+$picker-select-padding-x-lg: $input-padding-y-sm !default;
+$picker-select-padding-y-lg: $input-padding-y-sm !default;
+
+$picker-select-calc-size: $input-inner-calc-height !default;
+$picker-select-calc-size-sm: $input-inner-calc-height-sm !default;
+$picker-select-calc-size-lg: $input-inner-calc-height-lg !default;
+
+$picker-icon-offset: calc( #{$picker-select-calc-size} + #{$picker-select-border-width}  + #{$input-icon-offset}) !default;
+
+
+// Popup
+$popup-padding-x: 0 !default;
+$popup-padding-y: 0 !default;
+$popup-border-width: 1px !default;
+$popup-border-radius: null !default;
+
+$popup-font-size: $font-size !default;
+$popup-line-height: $line-height !default;
+
+$popup-border-width: 1px !default;
+$popup-header-padding: $list-item-padding-y $list-item-padding-x !default;
+$popup-header-font-size: null !default;
+$popup-header-text: null !default;
+$popup-filter-padding-x: $input-padding-x !default;
+
+$popup-bg: lighten($base-bg, 1%) !default;
+$popup-text: $base-text !default;
+$popup-border: $base-border !default;
+$popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
+
+
+// Autocomplete
+$autocomplete-bg: $input-bg !default;
+$autocomplete-text: $input-text !default;
+$autocomplete-border: $input-border !default;
+$autocomplete-shadow: $input-shadow !default;
+
+$autocomplete-hovered-bg: $input-hovered-bg !default;
+$autocomplete-hovered-text: $input-hovered-text !default;
+$autocomplete-hovered-border: $input-hovered-border !default;
+$autocomplete-hovered-shadow: $input-hovered-shadow !default;
+
+$autocomplete-focused-bg: $input-focused-bg !default;
+$autocomplete-focused-text: $input-focused-text !default;
+$autocomplete-focused-border: $input-focused-border !default;
+$autocomplete-focused-shadow: $input-focused-shadow !default;
+
+
+// ColorPicker
+$colorpicker-rect-padding: $padding-x !default;
+$colorpicker-margin: 8px !default;
+$colorpicker-width: 310px !default;
+$colorpicker-border-width: 1px !default;
+$colorpicker-font-family: $font-family !default;
+$colorpicker-font-size: $font-size !default;
+$colorpicker-line-height: $line-height !default;
+$colorpicker-draghandle-width: 14px !default;
+$colorpicker-draghandle-height: 14px !default;
+$colorpicker-slider-track-size: 10px !default;
+$colorpicker-slider-border-radius: 10px !default;
+$colorpicker-hex-input-width: 65px !default;
+$colorpicker-input-width: 48px !default;
+$colorpicker-input-padding-x: $input-padding-y !default;
+$colorpicker-input-padding-y: $input-padding-y !default;
+
+$colorpicker-select-border-width: 1px !default;
+
+$colorpicker-bg: $input-bg !default;
+$colorpicker-text: $input-text !default;
+$colorpicker-border: $input-border !default;
+
+$colorpicker-hovered-bg: null !default;
+$colorpicker-hovered-text: null !default;
+$colorpicker-hovered-border: null !default;
+
+$colorpicker-focused-bg: null !default;
+$colorpicker-focused-text: null !default;
+$colorpicker-focused-border: null !default;
+$colorpicker-focused-shadow: null !default;
+
+$colorpicker-select-bg: $button-bg !default;
+$colorpicker-select-text: $button-text !default;
+$colorpicker-select-border: $button-border !default;
+$colorpicker-select-gradient: $button-gradient !default;
+
+$colorpicker-select-hovered-bg: $button-hovered-bg !default;
+$colorpicker-select-hovered-text: $button-hovered-text !default;
+$colorpicker-select-hovered-border: $button-hovered-border !default;
+$colorpicker-select-hovered-gradient: $button-hovered-gradient !default;
+
+$colorpicker-select-focused-bg: $button-pressed-bg !default;
+$colorpicker-select-focused-text: $button-pressed-text !default;
+$colorpicker-select-focused-border: $button-pressed-border !default;
+$colorpicker-select-focused-gradient: $button-pressed-gradient !default;
+$colorpicker-select-pressed-shadow: $button-pressed-shadow !default;
+$colorpicker-select-focused-shadow: $button-focused-shadow !default;
+
+$colorpicker-tool-icon-hovered-border: rgba(0, 0, 0, .08) !default;
+
+$colorpalette-hovered-shadow: 0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .8 ) !default;
+$colorpalette-focused-shadow: 0 1px 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, 1 ) !default;
+
+
+// Comboboxes
+$combobox-select-padding-x: 0 !default;
+$combobox-select-padding-y: 0 !default;
+$combobox-select-width: button-inner-size() !default;
+$combobox-select-border-width: 0 !default;
+
+$combobox-bg: $input-bg !default;
+$combobox-text: $input-text !default;
+$combobox-border: $input-border !default;
+
+$combobox-hovered-bg: $input-hovered-bg !default;
+$combobox-hovered-text: $input-hovered-text !default;
+$combobox-hovered-border: $input-hovered-border !default;
+
+$combobox-focused-bg: $input-focused-bg !default;
+$combobox-focused-text: $input-focused-text !default;
+$combobox-focused-border: $input-focused-border !default;
+$combobox-focused-shadow: $input-focused-shadow !default;
+
+$combobox-select-bg: $button-bg !default;
+$combobox-select-text: $button-text !default;
+$combobox-select-border: $button-border !default;
+$combobox-select-gradient: $button-gradient !default;
+
+$combobox-select-hovered-bg: $button-hovered-bg !default;
+$combobox-select-hovered-text: $button-hovered-text !default;
+$combobox-select-hovered-border: $button-hovered-border !default;
+$combobox-select-hovered-gradient: $button-hovered-gradient !default;
+
+$combobox-select-focused-bg: $button-pressed-bg !default;
+$combobox-select-focused-text: $button-pressed-text !default;
+$combobox-select-focused-border: $button-pressed-border !default;
+$combobox-select-focused-gradient: $button-pressed-gradient !default;
+$combobox-select-focused-shadow: $button-pressed-shadow !default;
+
+
+// Dropdownlists
+$dropdownlist-text: $button-text !default;
+$dropdownlist-bg: $button-bg !default;
+$dropdownlist-border: $button-border !default;
+$dropdownlist-gradient: $button-gradient !default;
+
+$dropdownlist-hovered-text: $button-hovered-text !default;
+$dropdownlist-hovered-bg: $button-hovered-bg !default;
+$dropdownlist-hovered-border: $button-hovered-border !default;
+$dropdownlist-hovered-gradient: $button-hovered-gradient !default;
+
+$dropdownlist-focused-text: $input-focused-text !default;
+$dropdownlist-focused-bg: $input-focused-bg !default;
+$dropdownlist-focused-border: $input-focused-border !default;
+$dropdownlist-focused-gradient: null !default;
+$dropdownlist-focused-shadow: $input-focused-shadow !default;
+
+
+// Dropdowntree
+$dropdowntree-popup-spacer-x: $padding-y-lg !default;
+$dropdowntree-popup-spacer-y: $dropdowntree-popup-spacer-x !default;
+$dropdowntree-filter-shadow: $popup-shadow !default;
+$dropdowntree-filter-spacer: $dropdowntree-popup-spacer-y !default;
+
+
+// Multiselect
+$multiselect-width: 100% !default;
+
+$multiselect-token-opacity: .07 !default;
+$multiselect-token-focused-opacity: .46 !default;
+$multiselect-token-focused-text: $base-bg !default;
+$multiselect-token-focused-bg: $base-text !default;
+$multiselect-token-disabled-text: rgba( $base-text, .42 ) !default;
+$multiselect-token-hover-text: $base-bg !default;
+$multiselect-token-hover-bg: rgba( $base-text, .54 ) !default;
+$multiselect-remove-text: $base-bg !default;
+$multiselect-remove-bg: rgba( $base-text, .4 ) !default;
+$multiselect-remove-hover-text: $multiselect-remove-text !default;
+$multiselect-remove-hover-bg: rgba( $base-text, .54 ) !default;
+$multiselect-remove-focused-text: rgba( $base-text, .54 ) !default;
+$multiselect-remove-focused-bg: rgba($base-bg, .93) !default;
+
+$multiselect-bg: $input-bg !default;
+$multiselect-text: $input-text !default;
+$multiselect-border: $input-border !default;
+
+$multiselect-hovered-bg: $input-hovered-bg !default;
+$multiselect-hovered-text: $input-hovered-text !default;
+$multiselect-hovered-border: $input-hovered-border !default;
+
+$multiselect-focused-bg: $input-focused-bg !default;
+$multiselect-focused-text: $input-focused-text !default;
+$multiselect-focused-border: $input-focused-border !default;
+$multiselect-focused-shadow: $input-focused-shadow !default;
+
+$multiselect-button-focused-bg: $button-pressed-bg !default;
+$multiselect-button-focused-text: $button-pressed-text !default;
+$multiselect-button-focused-border: $button-pressed-border !default;
+$multiselect-button-focused-gradient: $button-pressed-gradient !default;
+$multiselect-button-focused-shadow: $button-pressed-shadow !default;
+
+
+// NumericTextBox
+$numerictextbox-spinners-focused-shadow: inset $button-focused-shadow !default;
+
+$numeric-bg: $input-bg !default;
+$numeric-text: $input-text !default;
+$numeric-border: $input-border !default;
+
+$numeric-hovered-bg: $input-hovered-bg !default;
+$numeric-hovered-text: $input-hovered-text !default;
+$numeric-hovered-border: $input-hovered-border !default;
+
+$numeric-focused-bg: $input-focused-bg !default;
+$numeric-focused-text: $input-focused-text !default;
+$numeric-focused-border: $input-focused-border !default;
+$numeric-focused-shadow: $input-focused-shadow !default;
+
+$numeric-invalid-bg: null !default;
+$numeric-invalid-text: $invalid-text !default;
+$numeric-invalid-border: $invalid-border !default;
+
+$numeric-button-bg: $button-bg !default;
+$numeric-button-text: $button-text !default;
+$numeric-button-border: $button-border !default;
+$numeric-button-gradient: $button-gradient !default;
+
+$numeric-button-hovered-bg: $button-hovered-bg !default;
+$numeric-button-hovered-text: $button-hovered-text !default;
+$numeric-button-hovered-border: $button-hovered-border !default;
+$numeric-button-hovered-gradient: $button-hovered-gradient !default;
+
+$numeric-button-pressed-text: $button-pressed-text !default;
+$numeric-button-pressed-bg: $button-pressed-bg !default;
+$numeric-button-pressed-border: $button-pressed-border !default;
+$numeric-button-pressed-gradient: $button-pressed-gradient !default;
+$numeric-button-pressed-shadow: $button-pressed-shadow !default;
+
+
+$spinner-width: $button-inner-calc-size !default;
+$spinner-icon-offset: 2px !default;
+
+
+// Listbox
+$listbox-margin: $padding-x !default;
+$listbox-button-margin: $padding-x !default;
+$listbox-width: 12.4em !default;
+$listbox-default-height: 200px !default;
+
+$listbox-border-width: 1px !default;
+$listbox-font-family: $font-family !default;
+$listbox-font-size: $font-size !default;
+$listbox-line-height: $line-height !default;
+
+$listbox-bg: $component-bg !default;
+$listbox-text: $component-text !default;
+$listbox-border: $component-border !default;
+
+$listbox-item-padding-x: null !default;
+$listbox-item-padding-y: null !default;
+
+$listbox-drop-hint-border-width: null !default;
+$listbox-drop-hint-width: 1px !default;
+
+$drag-clue-opacity: null !default;
+$drag-clue-line-height: null !default;
+$drag-clue-border-radius: null !default;
+
+$listbox-drag-clue-padding-y: $list-item-padding-y !default;
+$listbox-drag-clue-padding-x: $list-item-padding-x !default;
+$listbox-drag-clue-line-height: $line-height-em !default;
+
+$listbox-drag-clue-bg: $list-item-selected-bg !default;
+$listbox-drag-clue-text: $list-item-selected-text !default;
+
+
+// Slider
+$slider-size: 200px !default;
+$slider-tick-size: null !default;
+$slider-alt-size: 30px !default;
+
+$slider-font-family: $font-family !default;
+$slider-font-size: $font-size !default;
+$slider-line-height: $line-height !default;
+
+$slider-button-offset: 10px !default;
+$slider-button-size: ($slider-alt-size - 2) !default;
+$slider-button-spacing: ($slider-button-size + $slider-button-offset) !default;
+$slider-button-focused-shadow: null !default;
+
+$slider-track-thickness: 4px !default;
+$slider-draghandle-size: 14px !default;
+$slider-draghandle-border-width: 1px !default;
+$slider-draghandle-active-scale: 1 !default;
+$slider-draghandle-active-size: null !default;
+
+$slider-draghandle-bg: $primary-button-bg !default;
+$slider-draghandle-text: $primary-button-text !default;
+$slider-draghandle-border: $primary-button-border !default;
+$slider-draghandle-gradient: $primary-button-gradient !default;
+
+$slider-draghandle-hovered-bg: $primary-button-hovered-bg !default;
+$slider-draghandle-hovered-text: $primary-button-hovered-text !default;
+$slider-draghandle-hovered-border: $primary-button-hovered-border !default;
+$slider-draghandle-hovered-gradient: $primary-button-hovered-gradient !default;
+
+$slider-draghandle-pressed-bg: $primary-button-pressed-bg !default;
+$slider-draghandle-pressed-text: $primary-button-pressed-text !default;
+$slider-draghandle-pressed-border: $primary-button-pressed-border !default;
+$slider-draghandle-pressed-gradient: $primary-button-pressed-gradient !default;
+$slider-draghandle-pressed-shadow: inset $primary-button-pressed-shadow !default;
+
+$slider-draghandle-focused-shadow: $primary-button-focused-shadow !default;
+
+$slider-transition-speed: .3s !default;
+$slider-transition-function: ease-out !default;
+$slider-draghandle-transition-speed: .4s !default;
+$slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
+
+$slider-track-bg: darken($component-bg, 10%) !default;
+$slider-selection-bg: $primary !default;
+$slider-disabled-opacity: null !default;
+
+
+// Switch
+$switch-size: 6em !default;
+$switch-border-radius: $switch-size !default;
+
+$switch-track-size: null !default;
+$switch-container-border-width: 0 !default;
+$switch-container-padding-x: 0 !default;
+$switch-container-padding-y: $switch-container-padding-x !default;
+
+$switch-handle-size: (.5 * $switch-size) !default;
+$switch-handle-border-radius: $switch-size !default;
+$switch-handle-border-width: 1px !default;
+
+$switch-label-display: inline !default;
+$switch-label-outer-spacing: 8px !default;
+$switch-label-inner-spacing: 2px !default;
+$switch-label-spacing: calc( #{$switch-label-outer-spacing} + #{$switch-label-inner-spacing} ) !default;
+$switch-label-occupied-space: calc( -1 * ( #{$switch-handle-size} + #{$switch-label-spacing} + #{$switch-container-padding-x} ) ) !default;
+$switch-label-text-transform: uppercase !default;
+
+$switch-label-position: calc( #{$switch-label-outer-spacing} - #{$switch-container-border-width} ) !default;
+$switch-label-width: calc( 100% + #{$switch-label-occupied-space} ) !default;
+$switch-on-left-x: calc( 100% - #{$switch-handle-size} ) !default;
+
+$switch-container-shadow: inset 0 0 0 1px $base-border !default;
+$switch-container-hovered-shadow: inset 0 0 0 1px $hovered-border !default;
+$switch-container-focused-shadow: inset 0 0 0 3px rgba( black, .06) !default;
+
+$switch-on-bg: $primary !default;
+$switch-on-text: contrast-wcag( $switch-on-bg ) !default;
+$switch-on-border: null !default;
+$switch-on-gradient: null !default;
+$switch-on-shadow: null !default;
+
+$switch-on-focused-bg: null !default;
+$switch-on-focused-text: null !default;
+$switch-on-focused-border: null !default;
+$switch-on-focused-gradient: null !default;
+$switch-on-focused-shadow: null !default;
+
+$switch-on-hovered-bg: shade( $switch-on-bg ) !default;
+$switch-on-hovered-text: $switch-on-text !default;
+$switch-on-hovered-border: null !default;
+$switch-on-hovered-gradient: null !default;
+
+$switch-on-handle-bg: darken( white, 5 ) !default;
+$switch-on-handle-text: $switch-on-text !default;
+$switch-on-handle-border: $base-border !default;
+$switch-on-handle-gradient: null !default;
+$switch-on-handle-shadow: null !default;
+
+$switch-on-handle-hovered-bg: darken( white, 7 ) !default;
+$switch-on-handle-hovered-text: $switch-on-text !default;
+$switch-on-handle-hovered-border: $hovered-border !default;
+$switch-on-handle-hovered-gradient: null !default;
+
+$switch-off-bg: $component-bg !default;
+$switch-off-text: $component-text !default;
+$switch-off-border: null !default;
+$switch-off-gradient: null !default;
+$switch-off-shadow: null !default;
+
+$switch-off-focused-bg: null !default;
+$switch-off-focused-text: null !default;
+$switch-off-focused-border: null !default;
+$switch-off-focused-gradient: null !default;
+$switch-off-focused-shadow: null !default;
+
+$switch-off-hovered-bg: $switch-off-bg !default;
+$switch-off-hovered-text: $switch-off-text !default;
+$switch-off-hovered-border: null !default;
+$switch-off-hovered-gradient: null !default;
+
+$switch-off-handle-bg: $switch-on-handle-bg !default;
+$switch-off-handle-text: $switch-off-text !default;
+$switch-off-handle-border: $switch-on-handle-border !default;
+$switch-off-handle-gradient: null !default;
+$switch-off-handle-shadow: null !default;
+
+$switch-off-handle-hovered-bg: $switch-on-handle-hovered-bg !default;
+$switch-off-handle-hovered-text: $switch-off-text !default;
+$switch-off-handle-hovered-border: $switch-on-handle-hovered-border !default;
+$switch-off-handle-hovered-gradient: null !default;
+
+
+// Rating
+$rating-font-family: $font-family !default;
+$rating-font-size: $font-size !default;
+$rating-line-height: $line-height !default;
+
+$rating-container-margin-x: $padding-x-sm !default;
+
+$rating-item-padding-x: $padding-x-sm !default;
+$rating-item-padding-y: $padding-y !default;
+
+$rating-label-margin-x: $padding-x !default;
+$rating-label-margin-y: $padding-y !default;
+$rating-label-line-height: $line-height-lg !default;
+
+$rating-icon-size: ($icon-size * 1.5) !default;
+
+$rating-icon-text: lighten($base-text, 45%) !default;
+$rating-icon-selected-text: $selected-bg !default;
+$rating-icon-hover-text: $selected-bg !default;
+$rating-icon-focused-text: $selected-bg !default;
+
+$rating-icon-focused-shadow: 0 2px 3.6px rgba(black, .1) !default;
+$rating-icon-focused-selected-shadow: 0 2px 3.6px rgba($selected-bg, .4) !default;
+
+
+// Calendar
+$calendar-border-width: 1px !default;
+$calendar-font-family: $font-family !default;
+$calendar-font-size: $font-size !default;
+$calendar-line-height: $line-height !default;
+
+$calendar-header-padding-x: ($padding-x * 2) !default;
+$calendar-header-padding-y: ($padding-y * 2) !default;
+$calendar-header-padding-x-sm: ($calendar-header-padding-y / 2) !default;
+$calendar-header-padding-y-sm: $calendar-header-padding-x-sm !default;
+$calendar-header-border-width: 1px !default;
+
+$calendar-header-min-width: 280px !default;
+
+$calendar-content-padding-x: $calendar-header-padding-x !default;
+$calendar-content-padding-y: $calendar-header-padding-y !default;
+
+$calendar-cell-padding-x: .5em !default;
+$calendar-cell-padding-y: $calendar-cell-padding-x !default;
+$calendar-cell-line-height: $calendar-line-height !default;
+$calendar-cell-size-px: 34px !default;
+$calendar-cell-size: ($calendar-cell-size-px / $font-size) * 1em !default;
+$calendar-cell-border-radius: $border-radius !default;
+
+$calendar-header-cell-padding-x: 0 !default;
+$calendar-header-cell-padding-y: ($calendar-cell-padding-y / 2) !default;
+$calendar-header-cell-font-size: $font-size-sm !default;
+$calendar-header-cell-line-height: 2 !default;
+
+$calendar-header-height: 2em !default;
+
+$calendar-navigation-width: 5em !default;
+$calendar-navigation-item-height: 2em !default;
+
+$calendar-view-width: 7 * $calendar-cell-size !default;
+$calendar-view-height: calc( #{$calendar-cell-size * 8} + #{$calendar-header-height} ) !default;
+
+$calendar-bg: $component-bg !default;
+$calendar-text: $component-text !default;
+$calendar-border: $component-border !default;
+
+$calendar-header-bg: $header-bg !default;
+$calendar-header-text: $header-text !default;
+$calendar-header-border: $header-border !default;
+$calendar-header-gradient: $header-gradient !default;
+$calendar-header-shadow: 0 1px 3px 1px rgba(black, .1) !default;
+
+$calendar-header-button-hovered-bg: $button-hovered-bg !default;
+$calendar-header-button-hovered-text: $button-hovered-text !default;
+$calendar-header-button-hovered-border: $button-hovered-border !default;
+$calendar-header-button-hovered-gradient: $button-hovered-gradient !default;
+
+$calendar-header-button-pressed-bg: $button-pressed-bg !default;
+$calendar-header-button-pressed-text: $button-pressed-text !default;
+$calendar-header-button-pressed-border: $button-pressed-border !default;
+$calendar-header-button-pressed-gradient: $button-pressed-gradient !default;
+$calendar-header-button-pressed-shadow: $button-pressed-shadow !default;
+
+$calendar-header-cell-text: null !default;
+$calendar-header-cell-opacity: $disabled-opacity !default;
+
+$calendar-navigation-bg: $calendar-header-bg !default;
+$calendar-navigation-text: $calendar-header-text !default;
+$calendar-navigation-border: $calendar-header-border !default;
+
+$calendar-today-nav-text: $link-text !default;
+$calendar-today-nav-hovered-text: $link-hover-text !default;
+
+$calendar-weekend-text: inherit !default;
+$calendar-weekend-bg: transparent !default;
+$calendar-weekend-opacity: 1 !default;
+
+$calendar-today-style: null !default;
+$calendar-today-color: null !default;
+
+$calendar-week-number-bg: transparent !default;
+$calendar-week-number-text: $calendar-header-cell-text !default;
+$calendar-week-number-opacity: $calendar-header-cell-opacity !default;
+
+$calendar-other-month-opacity: $calendar-header-cell-opacity !default;
+
+$calendar-cell-hovered-bg: $node-hovered-bg !default;
+$calendar-cell-hovered-text: $node-hovered-text !default;
+$calendar-cell-hovered-border: $node-hovered-border !default;
+
+$calendar-cell-selected-bg: $node-selected-bg !default;
+$calendar-cell-selected-text: $node-selected-text !default;
+$calendar-cell-selected-border: $node-selected-border !default;
+
+$calendar-cell-focused-shadow: $list-item-focused-shadow !default;
+$calendar-cell-selected-focus-shadow: $calendar-cell-focused-shadow !default;
+
+
+// Multiview Calendar
+$multiviewcalendar-button-style: stretched !default;
+$multiviewcalendar-button-size: 44px !default;
+$multiviewcalendar-gap: ($calendar-content-padding-x * 2) !default;
+$multiviewcalendar-content-padding-x: ($multiviewcalendar-gap / 2);
+$multiviewcalendar-content-padding-y: 0 !default;
+$multiviewcalendar-navigation-margin-x: 0 !default;
+$multiviewcalendar-navigation-margin-y: calc( #{$calendar-header-padding-y * 2} + #{$calendar-header-height} + #{$button-border-width * 2} ) !default;
+
+
+// DateTime
+$time-highlight-size: 1px;
+
+$time-list-highlight-color: $border-color !default;
+$time-list-focused-bg: rgba(0, 0, 0, .04) !default;
+$time-list-title-focus: black !default;
+
+$time-header-padding: null !default;
+$timepicker-header-height: 2em;
+
+$time-list-padding: $padding-y * 5 !default;
+$time-list-focus-size: 2px !default;
+$time-list-width: 5em !default;
+$time-list-height: 200px !default;
+
+$dateinput-text: null !default;
+
+$datetime-width: ((4 * $time-list-width) + 1em) !default;
+
+$datetime-bg: $input-bg !default;
+$datetime-text: $input-text !default;
+$datetime-border: $input-border !default;
+
+$datetime-hovered-bg: $input-hovered-bg !default;
+$datetime-hovered-text: $input-hovered-text !default;
+$datetime-hovered-border: $input-hovered-border !default;
+
+$datetime-focused-bg: $input-focused-bg !default;
+$datetime-focused-text: $input-focused-text !default;
+$datetime-focused-border: $input-focused-border !default;
+$datetime-focused-shadow: $input-focused-shadow !default;
+
+$datetime-select-bg: $button-bg !default;
+$datetime-select-text: $button-text !default;
+$datetime-select-border: $button-border !default;
+$datetime-select-gradient: $button-gradient !default;
+
+$datetime-select-hovered-bg: $button-hovered-bg !default;
+$datetime-select-hovered-text: $button-hovered-text !default;
+$datetime-select-hovered-border: $button-hovered-border !default;
+$datetime-select-hovered-gradient: $button-hovered-gradient !default;
+
+$datetime-select-focused-bg: null !default;
+$datetime-select-focused-text: null !default;
+$datetime-select-focused-border: null !default;
+$datetime-select-focused-gradient: null !default;
+$datetime-select-focused-shadow: $button-focused-shadow !default;
+
+
+// Menu
+$menu-padding-x: 0 !default;
+$menu-padding-y: 0 !default;
+$menu-border-width: 0 !default;
+$menu-font-family: $font-family !default;
+$menu-font-size: $font-size !default;
+$menu-line-height: $line-height !default;
+
+$menu-bg: transparent !default;
+$menu-text: $component-text !default;
+$menu-border: null !default;
+$menu-gradient: null !default;
+
+$menu-item-padding-x: $nav-item-padding-x !default;
+$menu-item-padding-y: $nav-item-padding-y !default;
+$menu-item-spacing: $nav-item-margin !default;
+$menu-item-icon-spacing: $icon-spacing !default;
+
+$menu-item-bg: null !default;
+$menu-item-text: $link-text !default;
+$menu-item-border: null !default;
+$menu-item-gradient: null !default;
+
+$menu-item-hover-bg: null !default;
+$menu-item-hover-text: $link-hover-text !default;
+$menu-item-hover-border: null !default;
+$menu-item-hover-gradient: null !default;
+
+$menu-item-expanded-bg: null !default;
+$menu-item-expanded-text: $component-text !default;
+$menu-item-expanded-border: null !default;
+$menu-item-expanded-gradient: null !default;
+
+$menu-item-focus-shadow: $list-item-focused-shadow !default;
+
+$menu-separator-spacing: 2px !default;
+
+$menu-scroll-button-bg: $component-bg !default;
+$menu-scroll-button-text: $link-text !default;
+$menu-scroll-button-border: $component-border !default;
+$menu-scroll-button-gradient: null !default;
+
+$menu-scroll-button-hover-bg: null !default;
+$menu-scroll-button-hover-text: $link-hover-text !default;
+$menu-scroll-button-hover-border: null !default;
+$menu-scroll-button-hover-gradient: null !default;
+
+
+// Menu popup
+$menu-popup-padding-x: $popup-padding-x !default;
+$menu-popup-padding-y: $popup-padding-y !default;
+$menu-popup-border-width: $popup-border-width !default;
+$menu-popup-font-size: $font-size !default;
+$menu-popup-line-height: $line-height !default;
+
+$menu-popup-bg: $popup-bg !default;
+$menu-popup-text: $popup-text !default;
+$menu-popup-border: $popup-border !default;
+$menu-popup-gradient: null !default;
+
+$menu-popup-item-padding-x: $list-item-padding-x !default;
+$menu-popup-item-padding-y: $list-item-padding-y !default;
+$menu-popup-item-padding-end: calc( #{$list-item-padding-x * 2} + #{$icon-size} ) !default;
+$menu-popup-item-spacing: 0 !default;
+$menu-popup-item-icon-spacing: $icon-spacing !default;
+
+$menu-popup-item-bg: null !default;
+$menu-popup-item-text: null !default;
+$menu-popup-item-border: null !default;
+$menu-popup-item-gradient: null !default;
+
+$menu-popup-item-hover-bg: $list-item-hovered-bg !default;
+$menu-popup-item-hover-text: $list-item-hovered-text !default;
+$menu-popup-item-hover-border: null !default;
+$menu-popup-item-hover-gradient: null !default;
+
+$menu-popup-item-expanded-bg: $list-item-selected-bg !default;
+$menu-popup-item-expanded-text: $list-item-selected-text !default;
+$menu-popup-item-expanded-border: null !default;
+$menu-popup-item-expanded-gradient: null !default;
+
+$menu-popup-item-focus-shadow: $menu-item-focus-shadow !default;
+
+
+// Actions
+$actions-margin-top: map-get( $spacing, 4 ) !default;
+$actions-padding-x: map-get( $spacing, 2 ) !default;
+$actions-padding-y: map-get( $spacing, 2 ) !default;
+$actions-border-width: 0px !default;
+$actions-button-gap: map-get( $spacing, 2 ) !default;
+
+$actions-bg: null !default;
+$actions-text: null !default;
+$actions-border: null !default;
+$actions-gradient: null !default;
+
+$actions-stretched-border: $base-border !default;
+
+
+// Appbar
+$appbar-margin-y: null !default;
+$appbar-margin-x: null !default;
+$appbar-padding-y: map-get( $spacing, 2 ) !default;
+$appbar-padding-x: map-get( $spacing, 4 ) !default;
+$appbar-border-width: 0px !default;
+
+$appbar-font-size: $font-size !default;
+$appbar-line-height: $line-height !default;
+$appbar-font-family: $font-family !default;
+$appbar-gap: map-get( $spacing, 2 ) !default;
+
+$appbar-light-bg: $bg-color !default;
+$appbar-light-text: $text-color !default;
+
+$appbar-dark-bg: $text-color !default;
+$appbar-dark-text: $bg-color !default;
+
+$appbar-box-shadow: 0px 1px 1px rgba(0, 0, 0, .16);
+$appbar-bottom-box-shadow:  0px -1px 1px rgba(0, 0, 0, .16);
+
+
+// Toolbar
+
+$toolbar-bg: $button-bg !default;
+$toolbar-text: $button-text !default;
+$toolbar-border: $button-border !default;
+$toolbar-gradient: null !default;
+
+$toolbar-border-width: 1px !default;
+$toolbar-border-radius: 0px !default;
+
+/// The horizontal padding of the container.
+/// @group toolbar
+$toolbar-padding-x: $padding-x !default;
+
+/// The vertical padding of the container.
+/// @group toolbar
+$toolbar-padding-y: $padding-x !default;
+
+$toolbar-font-family: $font-family !default;
+$toolbar-font-size: $font-size !default;
+$toolbar-line-height: $line-height !default;
+
+$toolbar-spacing: $toolbar-padding-x !default;
+
+$toolbar-button-border-width: $button-border-width !default;
+$toolbar-button-border-radius: 0px !default;
+
+$toolbar-button-padding-x: $button-padding-x !default;
+$toolbar-button-padding-y: $button-padding-y !default;
+$toolbar-button-line-height: $button-line-height !default;
+
+$toolbar-button-calc-size: calc( #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} + #{$toolbar-button-border-width * 2} ) !default;
+$toolbar-button-inner-calc-size: calc( #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} ) !default;
+
+$toolbar-inner-calc-size: calc( #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} + #{$toolbar-button-border-width * 2} + #{$toolbar-padding-y * 2} ) !default;
+
+$toolbar-button-expanded-bg: null !default;
+$toolbar-button-expanded-shadow: none !default;
+
+$toolbar-shadow: none !default;
+$toolbar-separator-padding-y: $toolbar-button-padding-y !default;
+$toolbar-separator-border: inherit !default;
+
+
+// Upload
+$upload-border-width: 1px !default;
+$upload-font-family: $font-family !default;
+$upload-font-size: $font-size !default;
+$upload-line-height: $line-height !default;
+$upload-max-height: 300px !default;
+
+$upload-bg: $component-bg !default;
+$upload-text: $component-text !default;
+$upload-border: $component-border !default;
+
+$upload-dropzone-padding-x: $toolbar-padding-x !default;
+$upload-dropzone-padding-y: $toolbar-padding-y !default;
+$upload-dropzone-spacing: ($upload-dropzone-padding-x * 2) !default;
+$upload-dropzone-bg: $toolbar-bg !default;
+$upload-dropzone-text: $toolbar-text !default;
+$upload-dropzone-text-opacity: .6 !default;
+$upload-dropzone-border: $toolbar-border !default;
+$upload-dropzone-hover-bg: $hovered-bg !default;
+
+$upload-item-padding-x: $cell-padding !default;
+$upload-item-padding-y: $cell-padding !default;
+
+$upload-multiple-items-spacing: 12px !default;
+
+$upload-validation-font-size: 11px !default;
+$upload-icon-spacing: $upload-dropzone-padding-x !default;
+$upload-icon-color: #d6d6d6 !default;
+
+$upload-item-image-width: 30px !default;
+$upload-item-image-height: 30px !default;
+$upload-item-image-border: 0px !default; // TODO: remove
+
+$upload-group-icon-size: $icon-size-lg !default;
+
+$upload-disabled-text: darken($component-bg, 27%) !default;
+$upload-disabled-border: darken($component-bg, 27%) !default;
+
+$upload-progress-thickness: 2px !default;
+$upload-progress-bg: $info !default;
+$upload-progress-text: $base-text !default;
+
+$upload-success-bg: $success !default;
+$upload-success-text: $success !default;
+
+$upload-error-bg: $error !default;
+$upload-error-text: $error !default;
+$upload-error-border: lighten($error, 29%) !default;
+
+$upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
+
+
+// Upload external DropZone
+$external-dropzone-padding-x: $upload-dropzone-padding-x !default;
+$external-dropzone-padding-y: $upload-dropzone-padding-y * 6 !default;
+$external-dropzone-spacing: 6px !default;
+
+$external-dropzone-bg: $upload-dropzone-bg !default;
+$external-dropzone-text: $upload-dropzone-text !default;
+$external-dropzone-border: $upload-dropzone-border !default;
+
+$external-dropzone-icon-opacity: .6 !default;
+
+
+// Window
+$window-border-width: 0 !default;
+$window-border-radius: 0 !default;
+$window-font-family: $font-family !default;
+$window-font-size: $font-size !default;
+$window-line-height: $line-height !default;
+
+$window-titlebar-padding-x: 16px !default;
+$window-titlebar-padding-y: 12px !default;
+$window-titlebar-border-width: 0 0 1px !default;
+$window-titlebar-border-style: solid !default;
+
+$window-title-spacing: 0 !default;
+$window-title-font-size: $font-size-lg !default;
+$window-title-line-height: ( 20 / 19 ) !default; // desired line-height divided by $font-size-lg
+
+$window-inner-padding-x: 16px !default;
+$window-inner-padding-y: 16px !default;
+
+$window-bg: $component-bg !default;
+$window-text: $component-text !default;
+$window-border: rgba(0, 0, 0, .08) !default;
+
+$window-titlebar-bg: $header-bg !default;
+$window-titlebar-text: $header-text !default;
+$window-titlebar-border: inherit !default;
+
+$window-shadow: 0 3px 3px 0 rgba(0, 0, 0, .06) !default;
+$window-focused-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
+
+$window-sizes: () !default;
+$window-sizes: map-merge((
+        sm: 300px,
+        md: 800px,
+        lg: 1200px
+), $window-sizes);
+
+
+// Dialog
+$dialog-titlebar-bg: $primary !default;
+$dialog-titlebar-text: $primary-contrast !default;
+$dialog-titlebar-border: inherit !default;
+
+$dialog-buttongroup-padding-x: ($window-inner-padding-x / 2) !default;
+$dialog-buttongroup-padding-y: ($window-inner-padding-y / 2) !default;
+$dialog-buttongroup-border-width: 1px !default;
+
+$dialog-button-gap: 8px !default;
+
+$dialog-stretched-button-padding-x: $window-inner-padding-x !default;
+$dialog-stretched-button-padding-y: ($window-inner-padding-x * .75) !default;
+$dialog-stretched-button-border-width: 1px !default;
+
+
+// Drawer
+$drawer-text: $base-text !default;
+$drawer-bg: $base-bg !default;
+$drawer-border: $base-border !default;
+$drawer-border-width: 1px !default;
+$drawer-font-family: $font-family !default;
+$drawer-font-size: $font-size !default;
+$drawer-line-height: $line-height !default;
+$drawer-content-padding-x: $padding-x !default;
+$drawer-content-padding-y: $padding-y !default;
+
+$drawer-scrollbar-width: 7px !default;
+$drawer-scrollbar-color: rgba(156, 156, 156, .7) !default;
+$drawer-scrollbar-bg: #dedede !default;
+$drawer-scrollbar-radius: 20px !default;
+$drawer-scrollbar-hovered-color: rgba(156, 156, 156, 1) !default;
+
+$drawer-item-padding-x: $padding-x !default;
+$drawer-item-padding-y: $padding-x !default;
+$drawer-item-font-size: 16px !default;
+$drawer-item-line-height: $line-height-lg !default;
+$drawer-icon-size: $icon-size !default;
+
+$drawer-mini-initial-width: calc(4 * #{$drawer-item-padding-x} + #{$drawer-icon-size}) !default;
+
+$drawer-hovered-text: $hovered-text !default;
+$drawer-hovered-bg: $hovered-bg !default;
+
+$drawer-focused-bg: $drawer-bg !default;
+$drawer-focused-shadow: $list-item-focused-shadow !default;
+
+$drawer-selected-text: $selected-text !default;
+$drawer-selected-bg: $selected-bg !default;
+$drawer-selected-hover-text: $selected-hover-color !default;
+$drawer-selected-hover-bg: $selected-hover-bg !default;
+
+
+// Notification
+$notification-padding-x: 8px !default;
+$notification-padding-y: 4px !default;
+$notification-border-width: 1px !default;
+$notification-border-radius: $border-radius !default;
+
+$notification-shadow: $popup-shadow !default;
+
+$notification-font-family: $font-family !default;
+$notification-font-size: $font-size-sm !default;
+$notification-line-height: $line-height !default;
+
+$notification-icon-offset: null !default;
+$notification-icon-spacing: $icon-spacing !default;
+
+$notification-bg: $component-bg !default;
+$notification-text: $component-text !default;
+$notification-border: $component-border !default;
+$notification-info-bg: $info !default;
+$notification-info-text: contrast-wcag( $notification-info-bg ) !default;
+$notification-info-border: $notification-info-bg !default;
+$notification-success-bg: $success !default;
+$notification-success-text: contrast-wcag( $notification-success-bg ) !default;
+$notification-success-border: $notification-success-bg !default;
+$notification-warning-bg: $warning !default;
+$notification-warning-text: contrast-wcag( $notification-warning-bg ) !default;
+$notification-warning-border: $notification-warning-bg !default;
+$notification-error-bg: $error !default;
+$notification-error-text: contrast-wcag( $notification-error-bg ) !default;
+$notification-error-border: $notification-error-bg !default;
+
+
+// Responsive panel
+
+
+// Tooltip
+$tooltip-padding-y: $padding-y !default;
+$tooltip-padding-x: $padding-x !default;
+$tooltip-max-width: null !default;
+$tooltip-border-width: 0px !default;
+$tooltip-border-radius: $border-radius !default;
+
+$tooltip-font-family: $font-family !default;
+$tooltip-font-size: $font-size !default;
+$tooltip-line-height: 1.25 !default;
+
+$tooltip-title-font-size: ($tooltip-font-size * 1.25) !default;
+$tooltip-title-line-height: 1 !default;
+
+$tooltip-callout-size: 6px !default;
+
+$tooltip-bg: rgba( contrast-wcag( $body-bg ), .75 ) !default;
+$tooltip-text: contrast-wcag( $tooltip-bg ) !default;
+$tooltip-border: $tooltip-bg !default;
+
+$tooltip-primary-bg: $primary !default;
+$tooltip-primary-text: contrast-wcag( $tooltip-primary-bg ) !default;
+$tooltip-primary-border: $tooltip-primary-bg !default;
+$tooltip-info-bg: $info !default;
+$tooltip-info-text: contrast-wcag( $tooltip-info-bg ) !default;
+$tooltip-info-border: $tooltip-info-bg !default;
+$tooltip-success-bg: $success !default;
+$tooltip-success-text: contrast-wcag( $tooltip-success-bg ) !default;
+$tooltip-success-border: $tooltip-success-bg !default;
+$tooltip-warning-bg: $warning !default;
+$tooltip-warning-text: contrast-wcag( $tooltip-warning-bg ) !default;
+$tooltip-warning-border: $tooltip-warning-bg !default;
+$tooltip-error-bg: $error !default;
+$tooltip-error-text: contrast-wcag( $tooltip-error-bg ) !default;
+$tooltip-error-border: $tooltip-error-bg !default;
+
+
+// Breadcrumb
+$breadcrumb-margin-x: null !default;
+$breadcrumb-margin-y: null !default;
+$breadcrumb-padding-x: null !default;
+$breadcrumb-padding-y: null !default;
+$breadcrumb-border-width: 0px !default;
+
+$breadcrumb-font-family: $font-family !default;
+$breadcrumb-font-size: $font-size !default;
+$breadcrumb-line-height: $line-height !default;
+
+$breadcrumb-bg: $component-bg !default;
+$breadcrumb-text: $component-text !default;
+$breadcrumb-border: $component-border !default;
+
+$breadcrumb-delimiter-icon-font-size: $icon-size * .75 !default;
+$breadcrumb-delimiter-icon-padding-x: $padding-x-lg / 2 !default;
+$breadcrumb-delimiter-icon-padding-y: 0px !default;
+
+$breadcrumb-link-padding-x: $padding-x !default;
+$breadcrumb-link-padding-y: $padding-y-lg !default;
+$breadcrumb-link-border-radius: $border-radius !default;
+
+$breadcrumb-icon-link-padding-x: $breadcrumb-link-padding-x !default;
+$breadcrumb-icon-link-padding-y: $breadcrumb-icon-link-padding-x !default;
+
+$breadcrumb-root-link-spacing: $breadcrumb-link-padding-x !default;
+$breadcrumb-link-icon-spacing: $icon-spacing !default;
+
+$breadcrumb-link-text: $link-text !default;
+$breadcrumb-link-bg: null !default;
+$breadcrumb-link-border: null !default;
+
+$breadcrumb-link-hovered-text: $link-hover-text !default;
+$breadcrumb-link-hovered-bg: $base-bg !default;
+$breadcrumb-link-hovered-border: null !default;
+
+$breadcrumb-link-focused-text: $link-text !default;
+$breadcrumb-link-focused-bg: null !default;
+$breadcrumb-link-focused-border: null !default;
+$breadcrumb-link-focused-shadow: $focused-shadow !default;
+
+$breadcrumb-root-link-text: inherit !default;
+$breadcrumb-root-link-bg: null !default;
+$breadcrumb-root-link-border: null !default;
+
+$breadcrumb-root-link-hovered-text: null !default;
+$breadcrumb-root-link-hovered-bg: $base-bg !default;
+$breadcrumb-root-link-hovered-border: null !default;
+
+$breadcrumb-root-link-focused-text: null !default;
+$breadcrumb-root-link-focused-bg: null !default;
+$breadcrumb-root-link-focused-border: null !default;
+$breadcrumb-root-link-focused-shadow: $breadcrumb-link-focused-shadow !default;
+
+$breadcrumb-focused-shadow: 0 0 2px 1px rgba(0, 0, 0, .06) !default;
+
+
+// Pager
+$pager-padding-x: $toolbar-padding-x !default;
+$pager-padding-y: $toolbar-padding-y !default;
+$pager-border-width: 1px !default;
+
+$pager-font-family: $font-family !default;
+$pager-font-size: $font-size !default;
+$pager-line-height: $line-height !default;
+
+$pager-bg: $header-bg !default;
+$pager-text: $header-text !default;
+$pager-border: $component-border !default;
+
+$pager-section-spacing: $spacer-x !default;
+
+$pager-item-padding-x: $button-padding-y !default;
+$pager-item-padding-y: $pager-item-padding-x !default;
+$pager-item-border-width: 0px !default;
+$pager-item-border-radius: null !default;
+$pager-item-spacing: null !default;
+
+$pager-item-bg: null !default;
+$pager-item-text: null !default;
+$pager-item-border: null !default;
+
+$pager-item-hover-bg: $list-item-hovered-bg !default;
+$pager-item-hover-text: $list-item-hovered-text !default;
+$pager-item-hover-border: null !default;
+
+$pager-item-selected-bg: $list-item-selected-bg !default;
+$pager-item-selected-text: $list-item-selected-text !default;
+$pager-item-selected-border: null !default;
+
+$pager-item-focus-opacity: null !default;
+$pager-item-focus-bg: transparent !default;
+$pager-item-focus-shadow: $list-item-focused-shadow !default;
+
+$pager-number-padding-x: $pager-item-padding-x !default;
+$pager-number-padding-y: $pager-item-padding-y !default;
+$pager-number-border-width: $pager-item-border-width !default;
+$pager-number-border-radius: null !default;
+$pager-number-spacing: $pager-item-spacing !default;
+
+$pager-number-bg: null !default;
+$pager-number-text: $primary !default;
+$pager-number-border: null !default;
+
+$pager-number-hover-opacity: .08 !default;
+$pager-number-hover-bg: rgba($pager-item-selected-bg, $pager-number-hover-opacity) !default;
+$pager-number-hover-text: $pager-number-text !default;
+$pager-number-hover-border: $pager-item-hover-border !default;
+
+$pager-number-selected-opacity: .2 !default;
+$pager-number-selected-bg: rgba($pager-item-selected-bg, $pager-number-selected-opacity) !default;
+$pager-number-selected-text: $pager-number-text !default;
+$pager-number-selected-border: $pager-item-selected-border !default;
+
+$pager-number-focus-opacity: .12 !default;
+$pager-number-focus-bg: transparent !default;
+$pager-number-focus-shadow: inset 0 0 0 2px rgba($pager-number-selected-bg, $pager-number-focus-opacity) !default;
+
+$pager-input-width: 3em !default;
+$pager-dropdown-width: 5em !default;
+
+
+// Panelbar
+$panelbar-padding-x: 0px !default;
+$panelbar-padding-y: 0px !default;
+$panelbar-font-family: $font-family !default;
+$panelbar-font-size: $font-size !default;
+$panelbar-line-height: $line-height !default;
+$panelbar-border-width: 1px !default;
+
+$panelbar-header-padding-x: $header-padding-x !default;
+$panelbar-header-padding-y: $header-padding-y !default;
+
+$panelbar-item-padding-x: $list-item-padding-x !default;
+$panelbar-item-padding-y: $list-item-padding-y !default;
+
+$panelbar-bg: $base-bg !default;
+$panelbar-text: $base-text !default;
+$panelbar-border: $base-border !default;
+
+$panelbar-header-bg: $component-bg !default;
+$panelbar-header-text: $link-text !default;
+$panelbar-header-border: null !default;
+$panelbar-header-gradient: null !default;
+
+$panelbar-header-hovered-bg: shade($panelbar-header-bg) !default;
+$panelbar-header-hovered-text: $link-hover-text !default;
+$panelbar-header-hovered-border: null !default;
+$panelbar-header-hovered-gradient: null !default;
+
+$panelbar-header-selected-bg: $selected-bg !default;
+$panelbar-header-selected-text: $selected-text !default;
+$panelbar-header-selected-border: null !default;
+$panelbar-header-selected-gradient: null !default;
+
+$panelbar-header-focused-shadow: $list-item-focused-shadow !default;
+
+$panelbar-item-hovered-bg: shade($panelbar-bg) !default;
+$panelbar-item-hovered-text: null !default;
+$panelbar-item-hovered-border: null !default;
+$panelbar-item-hovered-gradient: null !default;
+
+$panelbar-item-selected-bg: $selected-bg !default;
+$panelbar-item-selected-text: $selected-text !default;
+$panelbar-item-selected-border: null !default;
+$panelbar-item-selected-gradient: null !default;
+
+$panelbar-item-focused-shadow: $list-item-focused-shadow !default;
+
+
+// Stepper
+$stepper-margin-x: null !default;
+$stepper-margin-y: null !default;
+$stepper-padding-x: null !default;
+$stepper-padding-y: null !default;
+$stepper-label-margin-x: 12px !default;
+$stepper-label-padding-x: 12px !default;
+$stepper-label-padding-y: 5px !default;
+$stepper-border-width: 0px !default;
+
+$stepper-inline-content-padding-x: 20px !default;
+$stepper-inline-content-padding-y: 10px !default;
+
+$stepper-font-size: $font-size !default;
+$stepper-line-height: $line-height !default;
+$stepper-font-family: $font-family !default;
+
+$stepper-bg: null !default;
+$stepper-text: null !default;
+$stepper-border: null !default;
+
+$stepper-indicator-width: 28px !default;
+$stepper-indicator-height: $stepper-indicator-width !default;
+$stepper-indicator-border-width: 1px !default;
+$stepper-indicator-border-radius: 50% !default;
+
+$stepper-indicator-focus-border-width: 1px !default;
+$stepper-indicator-focus-size: 2px !default;
+$stepper-indicator-focus-offset: 3px !default;
+$stepper-indicator-focus-calc-offset: calc( #{$stepper-indicator-focus-border-width} + #{$stepper-indicator-focus-offset} ) !default;
+
+$stepper-indicator-bg: $component-bg !default;
+$stepper-indicator-text: $component-text !default;
+$stepper-indicator-border: #cccccc !default;
+
+$stepper-indicator-hover-bg: try-shade( $stepper-indicator-bg ) !default;
+$stepper-indicator-hover-text: null !default;
+$stepper-indicator-hover-border: null !default;
+
+$stepper-indicator-disabled-bg: $stepper-indicator-bg !default;
+$stepper-indicator-disabled-text: mix($stepper-indicator-text, #ffffff, 60%) !default;
+$stepper-indicator-disabled-border: $stepper-indicator-border !default;
+
+$stepper-indicator-done-bg: $primary !default;
+$stepper-indicator-done-text: contrast-wcag( $stepper-indicator-done-bg ) !default;
+$stepper-indicator-done-border: $stepper-indicator-done-bg !default;
+
+$stepper-indicator-done-hover-bg: try-shade( $stepper-indicator-done-bg ) !default;
+$stepper-indicator-done-hover-text: null !default;
+$stepper-indicator-done-hover-border: null !default;
+
+$stepper-indicator-done-disabled-bg: mix( $stepper-indicator-done-bg, $component-bg, 60%) !default;
+$stepper-indicator-done-disabled-text: contrast-wcag( $stepper-indicator-done-bg ) !default;
+$stepper-indicator-done-disabled-border: $stepper-indicator-done-disabled-bg !default;
+
+$stepper-indicator-current-bg: $stepper-indicator-done-bg !default;
+$stepper-indicator-current-text: $stepper-indicator-done-text !default;
+$stepper-indicator-current-border: $stepper-indicator-done-border !default;
+
+$stepper-indicator-current-hover-bg: $stepper-indicator-done-hover-bg !default;
+$stepper-indicator-current-hover-text: $stepper-indicator-done-hover-text !default;
+$stepper-indicator-current-hover-border: $stepper-indicator-done-hover-border !default;
+
+$stepper-indicator-current-disabled-bg: $stepper-indicator-done-disabled-bg !default;
+$stepper-indicator-current-disabled-text: $stepper-indicator-done-disabled-text !default;
+$stepper-indicator-current-disabled-border: $stepper-indicator-done-disabled-border !default;
+
+$stepper-label-text: $component-text !default;
+$stepper-label-success-text: $success !default;
+$stepper-label-error-text: $error !default;
+$stepper-label-hover-text: darken($body-text, 13%) !default;
+$stepper-label-disabled-text: mix($component-text, #ffffff, 60%) !default;
+
+$stepper-optional-label-opacity: .35 !default;
+$stepper-disabled-opacity: .6 !default;
+
+$stepper-progressbar-size: 2px !default;
+$stepper-progressbar-bg: #cccccc !default;
+$stepper-progressbar-text: null !default;
+$stepper-progressbar-fill-bg: null !default;
+$stepper-progressbar-fill-text: null !default;
+
+$stepper-content-transition-property: height !default;
+$stepper-content-transition-duration: 300ms !default;
+$stepper-content-transition-timing-function: cubic-bezier(.4, 0, .2, 1) 0ms;
+
+
+// Wizard
+$wizard-padding-x: $padding-x * 2.5 !default;
+$wizard-padding-y: $wizard-padding-x !default;
+$wizard-content-padding-x: $padding-x * 4 !default;
+$wizard-content-padding-y: $padding-y * 8 !default;
+$wizard-buttons-margin-x: 10px !default;
+
+$wizard-border-width: 0px !default;
+$wizard-font-size: $font-size !default;
+$wizard-line-height: $line-height !default;
+$wizard-font-family: $font-family !default;
+
+$wizard-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
+
+
+// Tabstrip
+$tabstrip-wrapper-padding-x: 0px !default;
+$tabstrip-wrapper-padding-y: 0px !default;
+$tabstrip-wrapper-border-width: 0px !default;
+
+$tabstrip-font-family: $font-family !default;
+$tabstrip-font-size: $font-size !default;
+$tabstrip-line-height: $line-height !default;
+$tabstrip-border-width: 1px !default;
+
+$tabstrip-wrapper-bg: null !default;
+$tabstrip-wrapper-text: null !default;
+$tabstrip-wrapper-border: null !default;
+
+/// Background color of tabstrip component
+/// @group tabstrip
+$tabstrip-bg: null !default;
+/// Text color of tabstrip component
+/// @group tabstrip
+$tabstrip-text: $component-text !default;
+/// Border color of tabstrip component
+/// @group tabstrip
+$tabstrip-border: $component-border !default;
+
+/// Horizontal padding of tabs
+/// @group tabstrip
+$tabstrip-item-padding-x: $nav-item-padding-x !default;
+/// Vertical padding of tabs
+/// @group tabstrip
+$tabstrip-item-padding-y: $nav-item-padding-y !default;
+/// Width of border around tabs
+/// @group tabstrip
+$tabstrip-item-border-width: 1px !default;
+/// Border radius of tabs
+/// @group tabstrip
+$tabstrip-item-border-radius: $border-radius !default;
+/// Spacing between tabs
+/// @group tabstrip
+$tabstrip-item-gap: $nav-item-margin !default;
+
+/// Background color of tabs
+/// @group tabstrip
+$tabstrip-item-bg: null !default;
+/// Text color of tabs
+/// @group tabstrip
+$tabstrip-item-text: $link-text !default;
+/// Border color of tabs
+/// @group tabstrip
+$tabstrip-item-border: null !default;
+/// Background gradient of tabs
+/// @group tabstrip
+$tabstrip-item-gradient: null !default;
+
+/// Background color of hovered tabs
+/// @group tabstrip
+$tabstrip-item-hovered-bg: null !default;
+/// Text color of hovered tabs
+/// @group tabstrip
+$tabstrip-item-hovered-text: $link-hover-text !default;
+/// Border color of hovered tabs
+/// @group tabstrip
+$tabstrip-item-hovered-border: null !default;
+/// Background gradient of hovered tabs
+/// @group tabstrip
+$tabstrip-item-hovered-gradient: null !default;
+
+/// Background color of selected tabs
+/// @group tabstrip
+$tabstrip-item-selected-bg: $component-bg !default;
+/// Text color of selected tabs
+/// @group tabstrip
+$tabstrip-item-selected-text: $component-text !default;
+/// Border color of selected tabs
+/// @group tabstrip
+$tabstrip-item-selected-border: $component-border !default;
+/// Background gradient of selected tabs
+/// @group tabstrip
+$tabstrip-item-selected-gradient: null !default;
+
+$tabstrip-item-focused-shadow: $list-item-focused-shadow !default;
+
+$tabstrip-indicator-size: null !default;
+$tabstrip-indicator-color: null !default;
+
+/// Horizontal padding of tabstrip content
+/// @group tabstrip
+$tabstrip-content-padding-x: $tabstrip-item-padding-x !default;
+/// Vertical padding of tabstrip content
+/// @group tabstrip
+$tabstrip-content-padding-y: $tabstrip-item-padding-y !default;
+/// Width of border around tabstrip content
+/// @group tabstrip
+$tabstrip-content-border-width: 1px !default;
+
+/// Background color of tabstrip content
+/// @group tabstrip
+$tabstrip-content-bg: $component-bg !default;
+/// Text color of tabstrip content
+/// @group tabstrip
+$tabstrip-content-text: $component-text !default;
+/// Border color of tabstrip content
+/// @group tabstrip
+$tabstrip-content-border: $component-border !default;
+
+
+// Treeview
+$treeview-padding-x: 0px !default;
+$treeview-padding-y: 0px !default;
+$treeview-font-family: $font-family !default;
+$treeview-font-size: $font-size !default;
+$treeview-line-height: $form-line-height !default;
+
+$treeview-indent: 16px !default;
+
+$treeview-item-padding-x: $button-padding-x !default;
+$treeview-item-padding-y: $button-padding-y !default;
+$treeview-item-border-width: 0px !default;
+$treeview-item-border-radius: 0px !default;
+
+$treeview-bg: null !default;
+$treeview-text: $component-text !default;
+$treeview-border: null !default;
+
+$treeview-item-hovered-text: $hovered-text !default;
+$treeview-item-hovered-bg: $hovered-bg !default;
+$treeview-item-hovered-border: null !default;
+$treeview-item-hovered-gradient: null !default;
+
+$treeview-item-selected-text: $selected-text !default;
+$treeview-item-selected-bg: $selected-bg !default;
+$treeview-item-selected-border: null !default;
+$treeview-item-selected-gradient: null !default;
+
+$treeview-item-focused-shadow: $focused-shadow !default;
+$treeview-item-selected-focused-shadow: null !default;
+
+$treeview-loadmore-checkboxes-padding-x: calc( #{$icon-spacing} + #{$checkbox-size} + #{$treeview-indent} ) !default;
+$treeview-loadmore-checkboxes-icon-indent: calc( -1 * (#{$icon-spacing} + #{$treeview-indent}) ) !default;
+$treeview-loadmore-checkboxes-icon-margin-x: $icon-spacing !default;
+
+$treeview-loadmore-text: $primary !default;
+$treeview-loadmore-bg: transparent !default;
+$treeview-loadmore-border: null !default;
+
+$treeview-loadmore-hover-text: $primary-darker !default;
+$treeview-loadmore-hover-bg: transparent !default;
+$treeview-loadmore-hover-border: null !default;
+
+$treeview-loadmore-focus-text: $primary !default;
+$treeview-loadmore-focus-bg: transparent !default;
+$treeview-loadmore-focus-border: null !default;
+$treeview-loadmore-focus-shadow: none !default;
+
+
+// Layout
+$grid-cols: 12 !default;
+$grid-rows: 10 !default;
+$grid-gap: 10px !default;
+
+
+// Card
+$card-padding-x: map-get( $spacing, lg ) !default;
+$card-padding-y: map-get( $spacing, md ) !default;
+$card-border-width: 1px !default;
+$card-border-radius: $border-radius-lg !default;
+$card-font-family: $font-family !default;
+$card-font-size: $font-size !default;
+$card-line-height: $line-height !default;
+$card-box-shadow: null !default;
+$card-box-focused-shadow: 0 0 4px 0 rgba(0, 0, 0, .3) !default;
+
+$card-deck-gap: map-get( $spacing, lg ) !default;
+
+$card-bg: $component-bg !default;
+$card-text: $component-text !default;
+$card-border: $component-border !default;
+
+$card-header-padding-x: $card-padding-x !default;
+$card-header-padding-y: $card-padding-y !default;
+$card-header-border-width: 1px !default;
+$card-header-bg: null !default;
+$card-header-text: $header-text !default;
+$card-header-border: $header-border !default;
+
+$card-body-padding-x: map-get( $spacing, lg ) !default;
+$card-body-padding-y: map-get( $spacing, lg ) !default;
+
+$card-footer-padding-x: $card-padding-x !default;
+$card-footer-padding-y: $card-padding-y !default;
+$card-footer-border-width: 1px !default;
+$card-footer-bg: null !default;
+$card-footer-text: $header-text !default;
+$card-footer-border: $header-border !default;
+
+$card-title-margin-bottom: map-get( $spacing, sm ) !default;
+$card-subtitle-margin-bottom: map-get( $spacing, sm ) !default;
+$card-subtitle-text: true-mix($card-text, $card-bg, 45%) !default;
+
+$card-img-max-width: 100px !default;
+$card-avatar-size: 45px !default;
+$card-avatar-spacing:  $card-header-padding-x !default;
+
+$card-actions-padding-x: $card-padding-x !default;
+$card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
+$card-actions-border-width: 1px !default;
+$card-button-negative-spacing: (-$button-padding-x) !default;
+
+$card-deck-scroll-button-radius: 0px !default;
+$card-deck-scroll-button-offset: -$button-border-width !default;
+
+$card-callout-width: 20px !default;
+$card-callout-height: 20px !default;
+
+
+// Splitter
+$splitter-border-width: 1px !default;
+$splitter-font-family: $font-family !default;
+$splitter-font-size: $font-size !default;
+$splitter-line-height: $line-height !default;
+
+$splitter-bg: $component-bg !default;
+$splitter-text: $component-text !default;
+$splitter-border: $component-border !default;
+
+$splitter-splitbar-size: 8px !default;
+$splitter-resize-icon-size: 10px !default;
+$splitter-drag-handle-length: 20px !default;
+$splitter-drag-handle-thickness: 2px !default;
+$splitter-drag-icon-margin: 7px !default;
+
+$splitbar-bg: rgba( try-darken( $panel-bg, 8 ), .8 ) !default;
+$splitbar-text: $panel-text !default;
+
+$splitbar-hovered-bg: try-darken( $panel-bg, 8 ) !default;
+$splitbar-hovered-text: $panel-text !default;
+
+$splitbar-selected-bg: $selected-bg !default;
+$splitbar-selected-text: contrast-wcag( $splitbar-selected-bg ) !default;
+
+
+// TileLayout
+$tilelayout-border-width: 0px !default;
+$tilelayout-card-border-width: $card-border-width !default;
+
+$tilelayout-hint-border-width: 1px !default;
+$tilelayout-hint-border-radius: $border-radius-lg !default;
+
+$tilelayout-bg: $base-bg !default;
+
+$tilelayout-hint-bg: rgba(255, 255, 255, .2) !default;
+$tilelayout-hint-border: $component-border !default;
+
+
+// Filter expression builder
+$filter-padding-x: $padding-x !default;
+$filter-padding-y: $padding-y !default;
+
+$filter-bottom-margin: 30px !default;
+$filter-line-size: 1px !default;
+
+$filter-operator-dropdown-width: 15em !default;
+
+$filter-preview-field-text: $primary !default;
+$filter-preview-operator-text: rgba($body-text, .6) !default;
+
+
+// Grid
+$grid-padding-x: $cell-padding-x !default;
+$grid-padding-y: $cell-padding-y !default;
+
+$grid-header-padding-x: $grid-padding-x !default;
+$grid-header-padding-y: $grid-padding-y !default;
+$grid-header-font-size: null !default;
+
+$grid-footer-padding-x: $grid-header-padding-x !default;
+$grid-footer-padding-y: $grid-header-padding-y !default;
+
+$grid-grouping-header-padding-x: $grid-padding-y !default;
+$grid-grouping-header-padding-y: $grid-grouping-header-padding-x !default;
+
+$grid-filter-cell-padding-x: $grid-padding-y !default;
+$grid-filter-cell-padding-y: $grid-filter-cell-padding-x !default;
+
+$grid-toolbar-padding-x: $grid-padding-y !default;
+$grid-toolbar-padding-y: $grid-toolbar-padding-x !default;
+$grid-toolbar-button-spacing: ($grid-toolbar-padding-y / 2) !default;
+
+$grid-cell-padding-x: $grid-padding-x !default;
+$grid-cell-padding-y: $grid-padding-y !default;
+$grid-cell-horizontal-border-width: 0px !default;
+$grid-cell-vertical-border-width: 1px !default;
+
+$grid-cell-placeholder-line-width: 80% !default;
+
+$grid-border-width: 1px !default;
+$grid-font-family: $font-family !default;
+$grid-font-size: $font-size !default;
+$grid-line-height: $line-height !default;
+
+/// Background color of the grid component
+/// @group grid
+$grid-bg: $component-bg !default;
+/// Text color of the grid component
+/// @group grid
+$grid-text: $component-text !default;
+/// Border color of the grid component
+/// @group grid
+$grid-border: $component-border !default;
+
+/// Background color of grid header
+/// @group grid
+$grid-header-bg: $header-bg !default;
+/// Text color of grid header
+/// @group grid
+$grid-header-text: $header-text !default;
+/// Border color of grid header
+/// @group grid
+$grid-header-border: $grid-border !default;
+/// Background gradient of grid header
+/// @group grid
+$grid-header-gradient: $header-gradient !default;
+
+$grid-group-drag-clue-bg: $grid-header-bg !default;
+$grid-group-drag-clue-text: $grid-header-text !default;
+$grid-group-drag-clue-line-height: $line-height !default;
+
+/// Background color of alternating rows in grid
+/// @group grid
+$grid-alt-bg: rgba( contrast-wcag( $grid-bg ), .04 ) !default;
+/// Text color of alternating rows in grid
+/// @group grid
+$grid-alt-text: null !default;
+/// Border color of alternating rows in grid
+/// @group grid
+$grid-alt-border: null !default;
+
+/// Background color of hovered rows in grid
+/// @group grid
+$grid-hovered-bg: darken($grid-bg, 7%) !default;
+/// Text color of hovered rows in grid
+/// @group grid
+$grid-hovered-text: null !default;
+/// Border color of hovered rows in grid
+/// @group grid
+$grid-hovered-border: null !default;
+
+/// Background color of selected rows in grid
+/// @group grid
+$grid-selected-bg: rgba($selected-bg, .25) !default;
+/// Text color of selected rows in grid
+/// @group grid
+$grid-selected-text: null !default;
+/// Border color of selected rows in grid
+/// @group grid
+$grid-selected-border: null !default;
+
+$grid-selected-alt-bg: shade($grid-selected-bg, .4) !default;
+$grid-selected-hovered-bg: shade($grid-selected-bg, .7) !default;
+
+$grid-grouping-row-bg: darken($grid-bg, 7%) !default;
+$grid-grouping-row-text: $grid-text !default;
+
+$grid-sorted-bg: rgba( contrast-wcag( $grid-bg ), .02 ) !default;
+$grid-sorting-indicator-text: $primary !default;
+$grid-sorting-index-font-size: $font-size-sm !default;
+$grid-sorting-index-height: $icon-size !default;
+$grid-sorting-index-spacing-y: ($icon-spacing / 2) !default;
+$grid-sorting-index-spacing-x: -$grid-sorting-index-spacing-y !default;
+
+
+$grid-focused-shadow: $list-item-focused-shadow !default;
+
+$grid-command-cell-button-spacing: .16em !default;
+
+$grid-search-width: 15.7em !default;
+
+$grid-sticky-bg: $component-bg !default;
+$grid-sticky-text: $grid-text !default;
+$grid-sticky-border: rgba( black, .3 ) !default;
+
+$grid-sticky-alt-bg: shade($grid-bg, 3.5%) !default;
+
+$grid-sticky-header-bg: $grid-header-bg !default;
+$grid-sticky-header-text: $grid-header-text !default;
+$grid-sticky-header-border: $grid-sticky-border !default;
+
+$grid-sticky-footer-bg: $grid-grouping-row-bg !default;
+$grid-sticky-footer-hovered-bg: $grid-hovered-bg !default;
+
+$grid-sticky-selected-bg: mix($selected-bg, #ffffff, 25%) !default;
+$grid-sticky-selected-alt-bg: shade($grid-sticky-selected-bg, .4) !default;
+
+$grid-sticky-hovered-bg: darken($grid-bg, 8%) !default;
+$grid-sticky-selected-hovered-bg: shade($grid-sticky-selected-bg, .7) !default;
+
+
+// Treelist
+$treelist-footer-row-bg: $grid-hovered-bg !default;
+$treelist-footer-row-border-width: 1px !default;
+
+
+// Pivot grid
+$pivotgrid-font-family: $font-family !default;
+$pivotgrid-font-size: $font-size !default;
+$pivotgrid-line-height: $line-height !default;
+
+$pivotgrid-alt-bg: $header-bg !default;
+$pivotgrid-alt-color: black !default;
+$pivotgrid-alt-text: null !default;
+$pivotgrid-chrome-border: $border-color !default;
+
+$pivotgrid-setting-delete-color: darken($component-bg, 27%) !default;
+
+$pivotgrid-container-bg: $component-bg !default;
+$pivotgrid-row-headers-bg: darken($component-bg, 7%) !default;
+
+$pivotgrid-button-bg: null !default;
+$pivotgrid-button-text: null !default;
+$pivotgrid-button-hover-bg: null !default;
+$pivotgrid-button-hover-text: null !default;
+$pivotgrid-button-active-bg: null !default;
+$pivotgrid-button-active-text: null !default;
+
+$pivotgrid-remove-bg: null !default;
+$pivotgrid-remove-text: null !default;
+
+$pivotgrid-configurator-text: $component-text !default;
+
+
+// Listview
+$listview-padding-x: map-get( $spacing, 1 ) !default;
+$listview-padding-y: map-get( $spacing, 1 ) !default;
+$listview-border-width: 1px !default;
+$listview-font-family: $font-family !default;
+$listview-font-size: $font-size !default;
+$listview-line-height: $line-height !default;
+
+$listview-bg: $component-bg !default;
+$listview-text: $component-text !default;
+$listview-border: $component-border !default;
+
+$listview-grid-gap: 10px !default;
+
+$listview-item-padding-x: map-get( $spacing, 1 ) !default;
+$listview-item-padding-y: map-get( $spacing, 1 ) !default;
+
+$listview-item-selected-bg: rgba( $selected-bg, .25 ) !default;
+$listview-item-selected-text: null !default;
+$listview-item-selected-border: null !default;
+
+$listview-item-focus-bg: null !default;
+$listview-item-focus-text: null !default;
+$listview-item-focus-border: null !default;
+$listview-item-focus-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
+
+
+// Spreadsheet
+$spreadsheet-border-width: 1px !default;
+$spreadsheet-font-family: $font-family !default;
+$spreadsheet-font-size: $font-size !default;
+$spreadsheet-line-height: $line-height !default;
+
+$spreadsheet-bg: $component-bg !default;
+$spreadsheet-text: $component-text !default;
+$spreadsheet-border: $component-border !default;
+
+$spreadsheet-insert-image-dialog-border-style: dashed !default;
+$spreadsheet-insert-image-dialog-border-width: 2px !default;
+$spreadsheet-insert-image-dialog-text-margin-bottom: 30px !default;
+$spreadsheet-insert-image-dialog-preview-width: 355px !default;
+$spreadsheet-insert-image-dialog-preview-height: 230px !default;
+$spreadsheet-insert-image-dialog-preview-img: "image-default.png" !default;
+$spreadsheet-insert-image-dialog-preview-border: $border-color !default;
+$spreadsheet-insert-image-dialog-preview-border-radius: $border-radius !default;
+$spreadsheet-insert-image-dialog-preview-overlay-shadow: inset 0 0 0 2000px rgba(0, 0, 0, .5) !default;
+$spreadsheet-insert-image-dialog-preview-overlay-border-radius: $border-radius !default;
+$spreadsheet-insert-image-dialog-overlay-hovered-text: $body-bg !default;
+
+$spreadsheet-drawing-handle-width: 6px !default;
+$spreadsheet-drawing-handle-height: 6px !default;
+$spreadsheet-drawing-handle-border-style: solid !default;
+$spreadsheet-drawing-handle-border-width: 1px !default;
+$spreadsheet-drawing-handle-outline-color: $primary !default;
+$spreadsheet-drawing-handle-border-color: $selected-bg !default;
+$spreadsheet-drawing-handle-bg: $primary !default;
+$spreadsheet-drawing-handle-border-radius: $border-radius-lg !default;
+
+$spreadsheet-drawing-outline-style: solid !default;
+$spreadsheet-drawing-outline-width: 2px !default;
+
+$spreadsheet-drawing-anchor-bg: rgba( $header-selected-bg, .25 ) !default;
+
+
+// File manager
+$filemanager-spacer: map-get( $spacing, 4 ) !default;
+$filemanager-border-width: 1px !default;
+$filemanager-font-family: $font-family !default;
+$filemanager-font-size: $font-size !default;
+$filemanager-line-height: $line-height !default;
+$filemanager-bg: $component-bg !default;
+$filemanager-text: $component-text !default;
+$filemanager-border: $component-border !default;
+
+$filemanager-toolbar-border-width: $filemanager-border-width !default;
+$filemanager-toolbar-bg: null !default;
+$filemanager-toolbar-text: null !default;
+$filemanager-toolbar-border: null !default;
+
+$filemanager-navigation-padding-x: $filemanager-spacer !default;
+$filemanager-navigation-padding-y: $filemanager-spacer !default;
+$filemanager-navigation-width: 20% !default;
+$filemanager-navigation-border-width: $filemanager-border-width !default;
+$filemanager-navigation-bg: null !default;
+$filemanager-navigation-text: null !default;
+$filemanager-navigation-border: null !default;
+
+$filemanager-breadcrumb-padding-x: map-get( $spacing, 2 ) !default;
+$filemanager-breadcrumb-padding-y: map-get( $spacing, 2 ) !default;
+$filemanager-breadcrumb-border-width: $filemanager-border-width !default;
+$filemanager-breadcrumb-bg: $toolbar-bg !default;
+$filemanager-breadcrumb-text: null !default;
+$filemanager-breadcrumb-border: null !default;
+
+$filemanager-listview-bg: null !default;
+$filemanager-listview-text: null !default;
+$filemanager-listview-border: null !default;
+
+$filemanager-listview-item-padding-x: map-get( $spacing, 4 ) !default;
+$filemanager-listview-item-padding-y: map-get( $spacing, 4 ) !default;
+$filemanager-listview-item-width: 120px !default;
+$filemanager-listview-item-height: 120px !default;
+$filemanager-listview-item-bg: null !default;
+$filemanager-listview-item-text: null !default;
+$filemanager-listview-item-border: null !default;
+
+$filemanager-listview-item-icon-size: ($icon-size * 3) !default;
+$filemanager-listview-item-icon-bg: null !default;
+$filemanager-listview-item-icon-text: try-tint($filemanager-text, 4) !default;
+$filemanager-listview-item-icon-border: null !default;
+$filemanager-listview-item-icon-selected-bg: null !default;
+$filemanager-listview-item-icon-selected-text: inherit !default;
+$filemanager-listview-item-icon-selected-border: null !default;
+
+$filemanager-grid-bg: null !default;
+$filemanager-grid-text: null !default;
+$filemanager-grid-border: null !default;
+
+$filemanager-preview-padding-x: $filemanager-spacer !default;
+$filemanager-preview-padding-y: $filemanager-spacer !default;
+$filemanager-preview-width: 20% !default;
+$filemanager-preview-border-width: $filemanager-border-width !default;
+$filemanager-preview-spacing: $filemanager-spacer !default;
+$filemanager-preview-bg: null !default;
+$filemanager-preview-text: null !default;
+$filemanager-preview-border: null !default;
+
+$filemanager-preview-icon-size: ($icon-size * 6) !default;
+$filemanager-preview-icon-bg: null !default;
+$filemanager-preview-icon-text: try-tint($filemanager-text, 4) !default;
+$filemanager-preview-icon-border: null !default;
+
+
+// Editor
+$editor-border-width: 1px !default;
+$editor-font-family: $font-family !default;
+$editor-font-size: $font-size !default;
+$editor-line-height: $line-height !default;
+
+$editor-placeholder-text: $input-placeholder-text !default;
+$editor-placeholder-opacity: $input-placeholder-opacity !default;
+
+
+// Gantt
+$gantt-border-width: 1px !default;
+$gantt-font-family: $font-family !default;
+$gantt-font-size: $font-size !default;
+$gantt-line-height: $line-height !default;
+
+$gantt-bg: $component-bg !default;
+$gantt-text: $component-text !default;
+$gantt-border: $component-border !default;
+
+$gantt-treelist-bg: null !default;
+$gantt-treelist-text: null !default;
+$gantt-treelist-border: null !default;
+
+$gantt-nonwork-bg: rgba( contrast-wcag( $gantt-bg ), .025 ) !default;
+$gantt-nonwork-text: null !default;
+$gantt-nonwork-border: null !default;
+
+$gantt-line-size: 2px !default;
+$gantt-line-fill: contrast-wcag( $gantt-bg ) !default;
+$gantt-line-selected-fill: $primary !default;
+
+$gantt-dot-size: 8px !default;
+$gantt-dot-spacing: 4px !default;
+$gantt-dot-bg: $gantt-text !default;
+$gantt-dot-border: null !default;
+$gantt-dot-hover-bg: $gantt-bg !default;
+$gantt-dot-hover-border: $gantt-text !default;
+
+$gantt-milestone-bg: $gantt-text !default;
+$gantt-milestone-border: $gantt-border !default;
+$gantt-milestone-selected-bg: $selected-bg !default;
+$gantt-milestone-selected-border: $selected-border !default;
+
+$gantt-summary-bg: try-tint( $gantt-text, 1 ) !default;
+$gantt-summary-progress-bg: try-shade( $gantt-text, 5 ) !default;
+$gantt-summary-selected-bg: try-tint( $selected-bg, 6 ) !default;
+$gantt-summary-progress-selected-bg: $selected-bg !default;
+
+$gantt-task-border-width: 0px !default;
+$gantt-task-padding-x: map-get( $spacing, 2 ) !default;
+$gantt-task-padding-y: map-get( $spacing, 1 ) !default;
+$gantt-task-bg: try-tint( $gantt-text, 2 ) !default;
+$gantt-task-text: contrast-wcag( $gantt-text ) !default;
+$gantt-task-border: null !default;
+$gantt-task-progress-bg: $gantt-text !default;
+$gantt-task-selected-bg: try-tint( $selected-bg, 6 ) !default;
+$gantt-task-selected-text: $selected-text !default;
+$gantt-task-selected-border: null !default;
+$gantt-task-progress-selected-bg: $selected-bg !default;
+
+
+// Scheduler
+$scheduler-border-width: 1px !default;
+$scheduler-font-family: $font-family !default;
+$scheduler-font-size: $font-size !default;
+$scheduler-line-height: $line-height !default;
+
+$scheduler-bg: $component-bg !default;
+$scheduler-text: $component-text !default;
+$scheduler-border: $component-border !default;
+
+$scheduler-event-min-height: 25px !default;
+$scheduler-event-border-radius: $border-radius !default;
+$scheduler-event-line-height: calc( #{$scheduler-event-min-height} - (2 * #{$padding-y}) ) !default;
+
+$scheduler-event-bg: tint( $selected-bg, 2 ) !default;
+$scheduler-event-text: $selected-text !default;
+$scheduler-event-border: null !default;
+$scheduler-event-gradient: null !default;
+$scheduler-event-shadow: null !default;
+
+$scheduler-event-hover-bg: null !default;
+$scheduler-event-hover-text: null !default;
+$scheduler-event-hover-border: null !default;
+$scheduler-event-hover-gradient: null !default;
+$scheduler-event-hover-shadow: null !default;
+
+$scheduler-event-selected-bg: $selected-bg !default;
+$scheduler-event-selected-text: $selected-text !default;
+$scheduler-event-selected-border: null !default;
+$scheduler-event-selected-gradient: null !default;
+$scheduler-event-selected-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
+
+$scheduler-cell-height: $line-height-em !default;
+$scheduler-datecolumn-width: 12em !default;
+$scheduler-timecolumn-width: 11em !default;
+
+$scheduler-current-time-color: #ff0000 !default;
+
+$scheduler-nonwork-bg: try-shade( $component-bg, .5 ) !default;
+
+
+// Chat
+$chat-padding-x: 16px !default;
+$chat-padding-y: 16px !default;
+$chat-border-width: 1px !default;
+$chat-font-family: $font-family !default;
+$chat-font-size: $font-size !default;
+$chat-line-height: $line-height !default;
+
+$chat-item-spacing-x: 8px !default;
+$chat-item-spacing-y: 16px !default;
+
+$chat-message-list-padding-x: $chat-padding-x !default;
+$chat-message-list-padding-y: $chat-padding-y !default;
+$chat-message-list-spacing: $chat-item-spacing-y !default;
+
+$chat-bubble-padding-x: 12px !default;
+$chat-bubble-padding-y: 8px !default;
+$chat-bubble-spacing: 2px !default;
+$chat-bubble-line-height: 18px !default;
+
+$chat-bubble-border-radius: 12px !default;
+$chat-bubble-border-radius-sm: 2px !default;
+
+$chat-avatar-size: 32px !default;
+$chat-avatar-spacing: $chat-item-spacing-x !default;
+
+$chat-message-box-padding-x: $chat-padding-x !default;
+$chat-message-box-padding-y: 10px !default;
+
+$chat-toolbar-padding-x: $chat-padding-x !default;
+$chat-toolbar-padding-y: 10px !default;
+$chat-toolbar-spacing: 20px !default;
+
+$chat-quick-reply-padding-x: 12px !default;
+$chat-quick-reply-padding-y: 8px !default;
+$chat-quick-reply-spacing: 8px !default;
+$chat-quick-reply-line-height: $chat-bubble-line-height !default;
+
+
+$chat-bg: $app-bg !default;
+$chat-text: $app-text !default;
+$chat-border: $app-border !default;
+
+$chat-bubble-bg: $component-bg !default;
+$chat-bubble-text: $component-text !default;
+$chat-bubble-border: $chat-bubble-bg !default;
+$chat-bubble-shadow: 0 1px 2px rgba( 0, 0, 0, .08) !default;
+$chat-bubble-hover-shadow: 0 1px 2px rgba( 0, 0, 0, .16) !default;
+$chat-bubble-selected-shadow: 0 3px 10px rgba( 0, 0, 0, .16) !default;
+
+$chat-alt-bubble-bg: $primary !default;
+$chat-alt-bubble-text: contrast-wcag( $chat-alt-bubble-bg ) !default;
+$chat-alt-bubble-border: $chat-alt-bubble-bg !default;
+$chat-alt-bubble-shadow: 0 1px 2px rgba( $chat-alt-bubble-bg, .2 ) !default;
+$chat-alt-bubble-hover-shadow: 0 1px 2px rgba( $chat-alt-bubble-bg, .2 ) !default;
+$chat-alt-bubble-selected-shadow: 0 3px 10px rgba( $chat-alt-bubble-bg, .4 ) !default;
+
+$chat-quick-reply-bg: transparent !default;
+$chat-quick-reply-text: $primary !default;
+$chat-quick-reply-border: $primary !default;
+
+$chat-quick-reply-hover-bg: $primary !default;
+$chat-quick-reply-hover-text: $primary-contrast !default;
+$chat-quick-reply-hover-border: $primary !default;
+
+$chat-message-box-bg: $input-bg !default;
+$chat-message-box-text: $input-text !default;
+$chat-message-box-border: inherit !default;
+$chat-message-box-focus-shadow: 0 0 40px rgba( $input-text, .1 ) !default;
+
+$chat-message-box-button-hover-text: $primary !default;
+
+$chat-toolbar-box-bg: $toolbar-bg !default;
+$chat-toolbar-box-text: $toolbar-text !default;
+$chat-toolbar-box-border: inherit !default;
+
+$chat-toolbar-box-button-hover-text: $primary !default;
+$chat-toolbar-box-button-hover-bg: none !default;
+
+$chat-toolbar-box-scroll-button-shadow: 0 0 20px 5px $chat-bg !default;
+
+
+// Media player
+$mediaplayer-border-width: 1px !default;
+$mediaplayer-font-family: $font-family !default;
+$mediaplayer-font-size: $font-size !default;
+$mediaplayer-line-height: $line-height !default;
+
+$mediaplayer-bg: $component-bg !default;
+$mediaplayer-text: $component-text !default;
+$mediaplayer-border: $component-border !default;
+
+$mediaplayer-titlebar-padding-x: $header-padding-x !default;
+$mediaplayer-titlebar-padding-y: $header-padding-y !default;
+$mediaplayer-titlebar-bg: null !default;
+$mediaplayer-titlebar-text: $mediaplayer-bg !default;
+$mediaplayer-titlebar-border: null !default;
+$mediaplayer-titlebar-gradient: rgba( $mediaplayer-text, .7 ), rgba( $mediaplayer-text, 0 ) !default;
+
+$mediaplayer-toolbar-padding-x: $toolbar-padding-x !default;
+$mediaplayer-toolbar-padding-y: $toolbar-padding-y !default;
+$mediaplayer-toolbar-spacing: $padding-x !default;
+$mediaplayer-toolbar-bg: rgba( $toolbar-bg, .85 ) !default;
+$mediaplayer-toolbar-text: $toolbar-text !default;
+
+
+// Timeline
+$timeline-spacing-x: 40px !default;
+$timeline-spacing-y: 40px !default;
+$timeline-items-padding: 16px !default;
+
+$timeline-font-family: $font-family !default;
+$timeline-font-size: $font-size !default;
+$timeline-line-height: $line-height !default;
+
+$timeline-mobile-spacing-x: 16px !default;
+$timeline-mobile-spacing-y: 16px !default;
+
+$timeline-track-arrow-width: 30px !default;
+$timeline-track-arrow-height: 30px !default;
+
+$timeline-track-arrow-disabled-text: true-mix($button-text, $body-bg, 65%) !default;
+$timeline-track-arrow-disabled-bg: true-mix($button-bg, $body-bg, 65%) !default;
+$timeline-track-arrow-disabled-border: true-mix(#000000, $body-bg, 4.8%) !default;
+
+$timeline-track-size: 6px !default;
+$timeline-track-border-width: 1px !default;
+$timeline-track-margin-bottom: 16px !default;
+$timeline-track-start-calc: calc(#{$timeline-track-arrow-width} - 2 * #{$timeline-track-border-width}) !default;
+$timeline-track-end-calc: calc(#{$timeline-track-arrow-width} - 2 * #{$timeline-track-border-width}) !default;
+$timeline-track-bg: $button-bg !default;
+$timeline-track-border-color: $button-border !default;
+
+$timeline-track-event-offset: 36px !default;
+
+$timeline-flag-padding-x: $button-padding-x !default;
+$timeline-flag-padding-y: $button-padding-y !default;
+$timeline-flag-line-height: $button-line-height !default;
+$timeline-flag-min-width: 80px !default;
+$timeline-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-spacing-x}) !default;
+$timeline-mobile-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-mobile-spacing-x}) !default;
+$timeline-horizontal-flag-min-width: 60px !default;
+$timeline-flag-bg: $primary !default;
+$timeline-flag-text: contrast-wcag( $timeline-flag-bg ) !default;
+
+$timeline-flag-callout-width: 10px !default;
+$timeline-flag-callout-height: 10px !default;
+
+$timeline-flag-offset-bottom: 4px !default;
+$timeline-flag-margin-bottom-calc: calc(#{$timeline-track-size} + 2 * #{$timeline-track-border-width} + #{$timeline-flag-offset-bottom} + #{$timeline-flag-callout-height}) !default;
+
+$timeline-date-width: 50px !default;
+$timeline-date-margin-bottom: 8px !default;
+
+$timeline-vertical-padding-calc: calc(#{$timeline-spacing-x} + (#{$timeline-flag-min-width} - #{$timeline-track-size}) / 2) !default;
+$timeline-vertical-padding-with-dates-calc: calc(#{$timeline-vertical-padding-calc} + #{$timeline-date-width}) !default;
+$timeline-mobile-vertical-padding-calc: calc(#{$timeline-mobile-spacing-x} + (#{$timeline-flag-min-width} - #{$timeline-track-size}) / 2) !default;
+$timeline-mobile-vertical-padding-with-dates-calc: calc(#{$timeline-mobile-vertical-padding-calc} + #{$timeline-date-width}) !default;
+
+$timeline-circle-width: 16px !default;
+$timeline-circle-height: 16px !default;
+$timeline-circle-bg: $primary !default;
+
+$timeline-collapse-arrow-padding-x: $padding-x !default;
+
+$timeline-event-width: 400px !default;
+$timeline-event-height: 600px !default;
+$timeline-event-min-height-calc: calc(2 * (#{$timeline-track-event-offset} - #{$card-border-width})) !default;
+
+
+// PDF viewer
+$pdf-viewer-border-width: 1px !default;
+$pdf-viewer-font-family: $font-family !default;
+$pdf-viewer-font-size: $font-size !default;
+$pdf-viewer-line-height: $line-height !default;
+
+$pdf-viewer-bg: $component-bg !default;
+$pdf-viewer-text: $component-text !default;
+$pdf-viewer-border: $component-border !default;
+
+$pdf-viewer-canvas-bg: $app-bg !default;
+$pdf-viewer-canvas-text: null !default;
+$pdf-viewer-canvas-border: null !default;
+
+$pdf-viewer-page-spacing: 30px !default;
+
+$pdf-viewer-page-bg: white !default;
+$pdf-viewer-page-text: $component-text !default;
+$pdf-viewer-page-border: $component-border !default;
+$pdf-viewer-page-shadow: 0 0 ($pdf-viewer-page-spacing / 2) $pdf-viewer-page-border !default;
+
+$pdf-viewer-search-dialog-spacing: $toolbar-padding-x !default;
+$pdf-viewer-search-dialog-button-spacing: $pdf-viewer-search-dialog-spacing !default;
+$pdf-viewer-search-dialog-textbox-padding-x: $input-padding-y !default;
+$pdf-viewer-search-dialog-input-button-height: $line-height-em !default;
+$pdf-viewer-search-dialog-matches-width: 4.5em !default;
+
+$pdf-viewer-selection-line-height: $line-height-sm !default;
+
+$pdf-viewer-search-highlight-bg: try-darken($base-bg, 70% ) !default;
+
+
+// Scroller
+
+
+// Scrollview
+$scrollview-border-width: 1px !default;
+$scrollview-font-family: $font-family !default;
+$scrollview-font-size: $font-size !default;
+$scrollview-line-height: $line-height !default;
+
+$scrollview-bg: $component-bg !default;
+$scrollview-text: $component-text !default;
+$scrollview-border: $component-border !default;
+
+$scrollview-pagebutton-size: 8px !default;
+$scrollview-pagebutton-bg: $button-bg !default;
+$scrollview-pagebutton-border: $button-border !default;
+$scrollview-pagebutton-primary-bg: $primary-button-bg !default;
+$scrollview-pagebutton-primary-border: $primary-button-border !default;
+$scrollview-pagebutton-shadow: 0 0 2px rgba(0, 0, 0, .08) !default;
+
+$scrollview-pager-offset: 20px !default;
+$scrollview-pager-item-spacing: 20px !default;
+$scrollview-pager-item-border-width: 1px !default;
+$scrollview-pager-height: calc( #{$scrollview-pagebutton-size} + #{$scrollview-pager-item-border-width * 2} + #{$scrollview-pager-item-spacing / 2} ) !default;
+
+$scrollview-arrow-icon-size: 4.5em !default;
+$scrollview-arrow-tap-highlight-color: $rgba-transparent !default;
+$scrollview-navigation-color: $selected-text !default;
+$scrollview-navigation-icon-shadow: rgba(0, 0, 0, .3) 0 0 15px !default;
+$scrollview-navigation-bg: rgba(0, 0, 0, 0) !default;
+$scrollview-navigation-default-opacity: .7 !default;
+$scrollview-navigation-hover-opacity: 1 !default;
+$scrollview-navigation-hover-span-bg: null !default;
+
+
+// Map
+$map-border-width: 0px !default;
+
+$map-font-size: $font-size !default;
+$map-line-height: $line-height !default;
+$map-font-family: $font-family !default;
+
+$map-bg: $component-bg !default;
+$map-text: $component-text !default;
+$map-border: $component-border !default;
+
+$map-navigator-margin: $spacer-x !default;
+$map-navigator-padding: 2px !default;
+$map-navigator-width: calc( #{$icon-size * 3} + #{$map-navigator-padding * 2} ) !default;
+$map-navigator-height: $map-navigator-width !default;
+$map-navigator-border-width: 1px !default;
+
+$map-zoom-control-margin: $spacer-x !default;
+$map-zoom-control-button-padding-x: $button-padding-y !default;
+$map-zoom-control-button-padding-y: $map-zoom-control-button-padding-x !default;
+
+$map-attribution-padding-x: $padding-x-sm !default;
+$map-attribution-padding-y: $padding-y-sm !default;
+$map-attribution-font-size: ($map-font-size * .75) !default;
+$map-attribution-bg: rgba( $map-bg, .8 ) !default;
+
+$map-marker-size: $icon-size-lg !default;
+$map-marker-fill: $primary !default;
+
+
+// Chart
+/// The color of the first series.
+/// @group charts
+$series-a: #ff6358 !default;
+
+/// The color of the second series.
+/// @group charts
+$series-b: #ffd246 !default;
+
+/// The color of the third series.
+/// @group charts
+$series-c: #78d237 !default;
+
+/// The color of the fourth series.
+/// @group charts
+$series-d: #28b4c8 !default;
+
+/// The color of the fifth series.
+/// @group charts
+$series-e: #2d73f5 !default;
+
+/// The color of the sixth series.
+/// @group charts
+$series-f: #aa46be !default;
+
+$chart-border-width: 0px !default;
+$chart-font-family: $font-family !default;
+$chart-font-size: $font-size !default;
+$chart-line-height: $line-height !default;
+$chart-font-size-sm: 11px !default;
+$chart-font-size-md: 12px !default;
+$chart-font-size-lg: 16px !default;
+$chart-tooltip-font-size: ($font-size * .929) !default;
+$chart-label-font-size: .857em !default;
+$chart-title-font-size: 1.143em !default;
+
+$chart-inactive: rgba( $body-text, .5 ) !default;
+/// The color of the Chart grid lines (major).
+/// @group charts
+$chart-major-lines: rgba(0, 0, 0, .08) !default;
+/// The color of the Chart grid lines (minor).
+/// @group charts
+$chart-minor-lines: rgba(0, 0, 0, .04) !default;
+
+$chart-area-opacity: .8 !default;
+
+$chart-bg: $component-bg !default;
+$chart-text: $component-text !default;
+$chart-border: $component-border !default;
+
+$chart-tap-highlight-color: rgba(0, 0, 0, 0);
+
+$chart-crosshair-background: rgba(0, 0, 0, .5) !default;
+$chart-crosshair-shared-tooltip-color: $base-text !default;
+$chart-crosshair-shared-tooltip-background: $base-bg !default;
+$chart-crosshair-shared-tooltip-border: rgba(0, 0, 0, .08) !default;
+
+$chart-notes-background: rgba(0, 0, 0, .5) !default;
+$chart-notes-border: rgba(0, 0, 0, .5) !default;
+$chart-notes-lines: rgba(0, 0, 0, .5) !default;
+
+$error-bars-background: rgba(0, 0, 0, .5) !default;
+
+$chart-selection-marque-background: $series-a !default;
+$selection-handle-size: 22px !default;
+$selection-border-color: rgba(0, 0, 0, .08) !default;
+$selection-shadow: inset 0 1px 7px rgba(0, 0, 0, .15) !default;
+
+// TreeMap
+$treemap-font-family: $font-family !default;
+$treemap-font-size: $font-size !default;
+$treemap-line-height: $line-height !default;
+
+
+// Backdrop (Overlay)
+$backdrop-bg: #000000 !default;
+$backdrop-opacity: .5 !default;
+
+
+// Adaptive Common
+$adaptive-content-bg: $base-bg !default;
+$adaptive-content-text: $primary !default;
+
+$adaptive-menu-bg: $primary !default;
+$adaptive-menu-text: contrast-wcag( $adaptive-menu-bg ) !default;
+
+$adaptive-menu-clear-text: $primary !default;
+
+$adaptive-menu-item-border: $grid-border !default;
+$adaptive-menu-title-text: $base-text !default;
+
+$adaptive-border-width: 1px !default;
+$adaptive-font-family: $font-family !default;
+$adaptive-font-size: $font-size !default;
+$adaptive-line-height: $line-height !default;
+
+$adaptive-bg: $component-bg !default;
+$adaptive-text: $component-text !default;
+$adaptive-border: $component-border !default;
+
+
+// Adaptive Grid
+$adaptive-grid-sort-text: $primary !default;
+
+
+// Adaptive Scheduler
+$adaptive-scheduler-current-text: $primary !default;
+$adaptive-scheduler-base-text: inherit !default;
+
+
+// Config maps
+$typography-config: () !default;
+// sass-lint:disable indentation
+$typography-config: map-merge((
+    display-1: font-map($display1-font-size, 1.2, $font-weight-light, inherit),
+    display-2: font-map($display2-font-size, 1.2, $font-weight-light, inherit),
+    display-3: font-map($display3-font-size, 1.2, $font-weight-light, inherit),
+    display-4: font-map($display4-font-size, 1.2, $font-weight-light, inherit),
+    h1: font-map($h1-font-size, normal, $font-weight-light, inherit),
+    h2: font-map($h2-font-size, normal, $font-weight-normal, inherit),
+    h3: font-map($h3-font-size, normal, $font-weight-bold, inherit),
+    h4: font-map($h4-font-size, normal, $font-weight-bold, inherit),
+    h5: font-map($h5-font-size, normal, $font-weight-normal, inherit),
+    h6: font-map($h6-font-size, normal, $font-weight-normal, inherit),
+    body: font-map($font-size, $line-height, $font-weight-normal, inherit)
+), $typography-config);
+$typography-config: map-merge((
+    card-title: map-get($typography-config, h2),
+    card-subtitle: map-get($typography-config, h6)
+), $typography-config);
+// sass-lint:enable indentation
+
+
+// Disabled Styling maps
+$disabled-styling: () !default;
+// sass-lint:disable indentation
+$disabled-styling: map-merge((
+    opacity: $disabled-opacity,
+    filter: $disabled-filter
+), $disabled-styling);
+// sass-lint:enable indentation
