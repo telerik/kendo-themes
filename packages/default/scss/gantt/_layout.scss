@@ -186,12 +186,41 @@
     .k-gantt-rows {}
 
 
-    // Deps,
+    // Deps
     .k-gantt-dependencies {
         opacity: .7;
         position: absolute;
         top: 0;
         left: 0;
+
+
+        // Lines
+        .k-line {
+            background-color: currentColor;
+            border-color: currentColor;
+            position: absolute;
+        }
+        .k-line-h { height: 2px; }
+        .k-line-v { width: 2px; }
+
+
+        // Arrows
+        .k-arrow-e,
+        .k-arrow-w {
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            position: absolute;
+            top: -4px;
+        }
+        .k-arrow-e {
+            border-left-color: currentColor;
+            right: -6px;
+        }
+        .k-arrow-w {
+            border-right-color: currentColor;
+            left: -6px;
+        }
     }
 
 
