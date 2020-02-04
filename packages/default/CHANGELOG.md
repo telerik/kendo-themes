@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.12.1"></a>
+## [4.12.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.12.0...@progress/kendo-theme-default@4.12.1) (2020-02-04)
+
+
+### Bug Fixes
+
+* **menu:** expose menu variables for customization ([d18a1a6](https://github.com/telerik/kendo-themes/commit/d18a1a6))
+* remove circular dependecies between components ([a7334cf](https://github.com/telerik/kendo-themes/commit/a7334cf))
+* **breadcrumb:** rtl icon misalign ([5102c9f](https://github.com/telerik/kendo-themes/commit/5102c9f))
+* **chat:** remove visible browser outline style. Closes [#1134](https://github.com/telerik/kendo-themes/issues/1134) ([2587650](https://github.com/telerik/kendo-themes/commit/2587650))
+* **color-system:** move color level and yiq variables in color functions ([f32259a](https://github.com/telerik/kendo-themes/commit/f32259a))
+* **dropdowngrid:** remove Grid style dependencies ([4fbb721](https://github.com/telerik/kendo-themes/commit/4fbb721))
+* **editor:** use k-button styles instead of k-tool for table wizard popup ([4ffebef](https://github.com/telerik/kendo-themes/commit/4ffebef))
+* **map:** extract and use map variables ([a5fffde](https://github.com/telerik/kendo-themes/commit/a5fffde))
+* **slider:** background-image empty url in material theme ([96fd3fa](https://github.com/telerik/kendo-themes/commit/96fd3fa))
+* **tabstrip:** add variables for item gradient ([8e3c46b](https://github.com/telerik/kendo-themes/commit/8e3c46b))
+* Angular Autocomplete styles ([986dc00](https://github.com/telerik/kendo-themes/commit/986dc00))
+* Chat message-box theme ([ac4cccc](https://github.com/telerik/kendo-themes/commit/ac4cccc))
+* Default variables leakage to other themes ([df48dae](https://github.com/telerik/kendo-themes/commit/df48dae))
+* remove list-container active button shadow ([a1d69ce](https://github.com/telerik/kendo-themes/commit/a1d69ce))
+* **progressbar:** remove visual complexity of progressbar ([27de0b5](https://github.com/telerik/kendo-themes/commit/27de0b5))
+
+
+
+
 <a name="4.12.0"></a>
 # [4.12.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.11.1...@progress/kendo-theme-default@4.12.0) (2020-01-23)
 
