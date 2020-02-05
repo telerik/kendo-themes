@@ -1,6 +1,6 @@
-sudo: required
-
+os: linux
 language: node_js
+node_js: 12
 
 addons:
   chrome: stable
@@ -17,8 +17,12 @@ cache:
 notifications:
   email: false
 
-node_js:
-  - '12'
+
+# Skip builds on version tags
+branches:
+  except:
+    - "/\\.*@\\d+\\.\\d+\\.\\d+$/"
+
 
 before_install:
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then printf "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> ~/.npmrc; fi'
@@ -31,7 +35,3 @@ script:
 
 after_success:
   - ./build/publish.sh
-
-branches:
-  except:
-    - "/\\.*@\\d+\\.\\d+\\.\\d+$/"
