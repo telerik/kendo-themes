@@ -2,10 +2,6 @@ os: linux
 language: node_js
 node_js: 12
 
-addons:
-  chrome: stable
-  firefox: latest
-
 cache:
   directories:
     - node_modules
@@ -51,6 +47,9 @@ jobs:
 
   # Branch push, except master and dev
   - stage: Push in branch
+    addons:
+      chrome: stable
+      firefox: latest
     install:
       - npm install
       - lerna bootstrap --concurrency=1
