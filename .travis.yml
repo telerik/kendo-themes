@@ -43,7 +43,10 @@ jobs:
       - npm install
       - lerna bootstrap --concurrency=1
     script:
-      - npm run ci:full
+      - npm run lint
+      - npm run api-check
+      - npm run sass
+      - npm run dart
 
   # Branch push, except master and dev
   - stage: Push in branch
@@ -54,7 +57,9 @@ jobs:
       - npm install
       - lerna bootstrap --concurrency=1
     script:
-      - npm run ci:full
+      - npm run sass
+      - npm run karma-single
+      - npm run visual-tests
 
   # Master and develop
   - stage: Master and develop
@@ -62,6 +67,11 @@ jobs:
       - npm install
       - lerna bootstrap --concurrency=1
     script:
-      - npm run ci
+      - npm run lint
+      - npm run api-check
+      - npm run sass
+      - npm run sass:swatches
+      - npm run dart
+      - npm run dart:swatches
     after_success:
       - ./build/publish.sh
