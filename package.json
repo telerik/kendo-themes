@@ -22,7 +22,7 @@
     "ci": "./build/foreach.sh ci && npm run karma-single && npm run visual-test",
     "ci:full": "./build/foreach.sh ci:full && npm run karma-single && npm run visual-test",
     "ci:theme": "bash ./build/foreach.sh ci",
-    "visual-test": "./build/visual-test.sh",
+    "visual-tests": "./build/visual-test.sh",
     "create-screenshots": "./build/create-screenshots.sh",
     "karma-watch": "karma start --auto-watch --no-single-run",
     "karma-single": "karma start --no-auto-watch --single-run --browsers ChromeHeadless",
