@@ -1000,6 +1000,13 @@ $dropdownlist-focused-shadow: null !default;
 $dropdownlist-focused-opacity: $icon-focused-opacity !default;
 
 
+// Dropdowntree
+$dropdowntree-popup-spacer-x: $padding-x !default;
+$dropdowntree-popup-spacer-y: $dropdowntree-popup-spacer-x !default;
+$dropdowntree-filter-shadow: none !default;
+$dropdowntree-filter-spacer: 0 !default;
+
+
 // Multiselect
 $multiselect-width: 100% !default;
 

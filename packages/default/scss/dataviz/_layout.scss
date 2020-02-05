@@ -6,6 +6,15 @@ $chart-tooltip-font-size: ($font-size * .929) !default;
 $chart-label-font-size: .857em !default;
 $chart-title-font-size: 1.143em !default;
 
+@include exports("dataviz/barcode/layout") {
+
+    .k-barcode {
+        display: inline-block;
+    }
+
+}
+
+
 @include exports("dataviz/charts/layout") {
 
     $selection-handle-size: 22px !default;
@@ -376,6 +385,19 @@ $chart-title-font-size: 1.143em !default;
     }
 
 }
+
+
+
+
+@include exports("dataviz/qrcode/layout") {
+
+    .k-qrcode {
+        display: inline-block;
+    }
+
+}
+
+
 
 
 @include exports("chart/variables") {

@@ -82,6 +82,13 @@
             }
         }
 
+        // Searchbar
+        .k-searchbar {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+        }
+
         &:hover,
         &.k-state-hover,
         &.k-state-focused {

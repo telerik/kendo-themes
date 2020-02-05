@@ -271,6 +271,16 @@
         }
 
         .k-nodata {
+            min-height: 138px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            font-weight: lighter;
+            text-align: center;
+            white-space: normal;
+
             .k-button {
                 display: inline-flex;
                 border-width: 1px;
