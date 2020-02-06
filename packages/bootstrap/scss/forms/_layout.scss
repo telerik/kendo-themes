@@ -1,0 +1,78 @@
+$twbs-font-size-base: $font-size-base !default;
+$twbs-input-padding-x: $input-btn-padding-x !default;
+$twbs-input-padding-y: $input-btn-padding-y !default;
+$twbs-input-line-height: $line-height-base !default;
+
+$twbs-font-size-base-sm: $font-size-sm !default;
+$twbs-input-padding-x-sm: $input-padding-x-sm !default;
+$twbs-input-padding-y-sm: $input-padding-y-sm !default;
+$twbs-input-line-height-sm: $input-line-height-sm !default;
+
+$twbs-font-size-base-lg: $font-size-lg !default;
+$twbs-input-padding-x-lg: $input-padding-x-lg !default;
+$twbs-input-padding-y-lg: $input-padding-y-lg !default;
+$twbs-input-line-height-lg: $input-line-height-lg !default;
+
+@import "~@progress/kendo-theme-default/scss/forms/_layout.scss";
+
+@include exports("forms/layout/bootstrap") {
+
+    // Forms
+    .k-form,
+    .k-form-inline {
+        legend {
+            font-size: $font-size * 1.5;
+            font-weight: normal;
+            line-height: $line-height;
+            text-transform: none;
+        }
+
+        .k-form-field,
+        .k-form-field:last-child {
+            margin-bottom: $spacer;
+        }
+
+        .k-field-info {
+            opacity: .7;
+        }
+    }
+
+    .k-form {
+        legend {
+            margin-bottom: $padding-y;
+        }
+        .k-form-field {
+            > span:not(.k-widget) {
+                padding: 0;
+                margin: 0 0 $padding-y;
+            }
+        }
+
+        .k-field-info {
+            margin: 0 $padding-x / 2;
+        }
+    }
+
+    .k-form-inline {
+        legend {
+            margin-bottom: 0;
+        }
+
+        .k-form-field {
+            > span:not(.k-widget) {
+                padding: calc( #{$padding-y} - #{$input-border-width} ) 0;
+                padding-right: $padding-x;
+            }
+        }
+    }
+
+}
+
+@include exports("edit-form/layout/bootstrap") {
+
+    .k-edit-label {
+        padding: calc( #{$padding-y} - #{$input-border-width} ) 0;
+    }
+
+}
+

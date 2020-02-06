@@ -25,9 +25,11 @@
             }
         }
 
-        &::after {
-            // disable input ripple
-            display: none;
+        &.k-textbox-container {
+            &::after {
+                // disable input ripple
+                display: none;
+            }
         }
 
         .k-rtl &,
@@ -39,5 +41,10 @@
                 }
             }
         }
+    }
+
+    .k-textbox-container,
+    .k-floating-label-container {
+        @include input-ripple();
     }
 }

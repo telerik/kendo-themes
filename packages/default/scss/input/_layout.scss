@@ -27,6 +27,20 @@
 
     .k-textbox {
         height: $input-calc-height;
+
+        &.k-space-left {
+            padding-left: 1.9em;
+        }
+
+        &.k-space-right {
+            padding-right: 1.9em;
+        }
+
+        .k-icon {
+            top: 50%;
+            margin: -8px 0 0;
+            position: absolute;
+        }
     }
 
     .k-textarea {
@@ -71,6 +85,14 @@
 
     .k-textbox:focus {
         @include box-shadow( $input-focused-shadow );
+    }
+
+    .k-space-left .k-icon {
+        left: 3px;
+    }
+
+    .k-space-right .k-icon {
+        right: 3px;
     }
 
     .k-textbox-container,
@@ -189,122 +211,6 @@
         }
     }
 
-    .k-form,
-    .k-form-inline {
-        font-size: $font-size;
-        line-height: $line-height;
-        padding: $form-spacer;
-
-        fieldset {
-            border-width: 1px 0 0;
-            border-style: solid;
-            margin: ($form-spacer * 2) 0;
-            padding: 0;
-
-            &:first-child:first-of-type {
-                margin-top: 0;
-            }
-
-            &:last-child:last-of-type {
-                margin-bottom: 0;
-            }
-        }
-
-        legend {
-            font-size: $font-size-sm;
-            text-align: left;
-            font-weight: 600;
-            line-height: 1;
-            margin-bottom: $padding-y-lg * 2;
-            text-transform: uppercase;
-            padding: 0 $padding-x 0 0;
-            width: auto;
-        }
-
-        .k-form-field {
-            display: block;
-            text-align: left;
-            margin-bottom: $padding-y-lg * 2;
-
-            > span {
-                line-height: $line-height;
-            }
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-
-        .k-alert-error {
-            font-size: $font-size-sm;
-            margin-top: $padding-y * 2;
-        }
-
-        .k-field-info {
-            display: inline-block;
-            font-size: $font-size-xs;
-            line-height: 1;
-            margin: 0 $padding-x;
-        }
-    }
-
-    .k-form {
-        .k-textbox,
-        .k-textarea,
-        .k-autocomplete,
-        .k-combobox,
-        .k-dropdown,
-        .k-dateinput,
-        .k-datepicker,
-        .k-datetimepicker,
-        .k-timepicker,
-        .k-numerictextbox,
-        .k-maskedtextbox {
-            display: flex;
-        }
-
-        .k-form-field {
-            > span:not(.k-widget) {
-                display: block;
-                padding: $padding-y 0;
-            }
-
-            > input:not(.k-checkbox):not(.k-radio),
-            > textarea {
-                width: 100%;
-            }
-        }
-    }
-
-    .k-form-inline {
-
-        .k-form-field {
-            display: flex;
-            align-items: flex-start;
-
-            > span:not(.k-widget) {
-                width: $inline-form-element-width;
-                text-align: right;
-                line-height: $line-height;
-                padding: calc( #{$padding-y} + #{$input-border-width} ) 0;
-                padding-right: $padding-x-lg;
-                align-self: center;
-            }
-
-            > input {
-                align-self: center;
-            }
-
-            > input:not(.k-checkbox):not(.k-radio) {
-                flex: 1 1 auto;
-            }
-
-            .k-field-info {
-                display: block;
-                margin: 0;
-            }
-        }
-    }
 }
 
 
