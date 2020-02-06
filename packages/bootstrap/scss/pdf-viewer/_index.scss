@@ -1,15 +1,15 @@
-@import "_variables.scss";
-@import "_mixins.scss";
+@import "../_variables.scss";
+@import "../mixins/_index.scss";
 
 
 // Dependencies
-@import "common/_all.scss";
-@import "combobox.scss";
-@import "toolbar.scss";
-@import "dialog.scss";
-@import "pager.scss";
+@import "../common/_index.scss";
+@import "../combobox/_index.scss";
+@import "../toolbar/_index.scss";
+@import "../dialog/_index.scss";
+@import "../pager/_index.scss";
 
 
 // Component
-@import "pdf-viewer/_layout.scss";
-@import "pdf-viewer/_theme.scss";
+@import "_layout.scss";
+@import "_theme.scss";

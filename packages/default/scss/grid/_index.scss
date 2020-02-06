@@ -1,26 +1,26 @@
-@import "_variables.scss";
-@import "_mixins.scss";
+@import "../_variables.scss";
+@import "../mixins/_index.scss";
 
 
 // Dependencies
-@import "common/_all.scss";
-@import "adaptive.scss";
-@import "progressbar.scss";
-@import "button.scss";
-@import "action-buttons.scss";
-@import "input.scss";
-@import "checkbox.scss";
-@import "radio.scss";
-@import "validator.scss";
-@import "autocomplete.scss";
-@import "datetime.scss";
-@import "dropdownlist.scss";
-@import "numerictextbox.scss";
-@import "menu.scss";
-@import "dialog.scss";
-@import "pager.scss";
+@import "../common/_index.scss";
+@import "../adaptive/_index.scss";
+@import "../progressbar/_index.scss";
+@import "../button/_index.scss";
+@import "../action-buttons/_index.scss";
+@import "../input/_index.scss";
+@import "../checkbox/_index.scss";
+@import "../radio/_index.scss";
+@import "../validator/_index.scss";
+@import "../autocomplete/_index.scss";
+@import "../datetime/_index.scss";
+@import "../dropdownlist/_index.scss";
+@import "../numerictextbox/_index.scss";
+@import "../menu/_index.scss";
+@import "../dialog/_index.scss";
+@import "../pager/_index.scss";
 
 
 // Component
-@import "grid/_layout.scss";
-@import "grid/_theme.scss";
+@import "_layout.scss";
+@import "_theme.scss";

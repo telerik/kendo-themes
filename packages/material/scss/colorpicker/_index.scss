@@ -1,17 +1,17 @@
-@import "_variables.scss";
-@import "_mixins.scss";
+@import "../_variables.scss";
+@import "../mixins/_index.scss";
 
 
 // Dependencies
-@import "common/_all.scss";
-@import "button.scss";
-@import "numerictextbox.scss";
-@import "slider.scss";
-@import "popup.scss";
+@import "../common/_index.scss";
+@import "../button/_index.scss";
+@import "../numerictextbox/_index.scss";
+@import "../slider/_index.scss";
+@import "../popup/_index.scss";
 
 
 // Component
-@import "colorpicker/images/alpha-slider-bgr.scss";
-@import "colorpicker/images/alpha-slider-bgr-reversed.scss";
-@import "colorpicker/_layout.scss";
-@import "colorpicker/_theme.scss";
+@import "images/alpha-slider-bgr.scss";
+@import "images/alpha-slider-bgr-reversed.scss";
+@import "_layout.scss";
+@import "_theme.scss";

@@ -1,13 +1,13 @@
-@import "_variables.scss";
-@import "_mixins.scss";
+@import "../_variables.scss";
+@import "../mixins/_index.scss";
 
 
 // Dependencies
-@import "common/_all.scss";
-@import "styling.scss";
-@import "action-buttons.scss";
+@import "../common/_index.scss";
+@import "../styling/_index.scss";
+@import "../action-buttons/_index.scss";
 
 
 // Component
-@import "card/_layout.scss";
-@import "card/_theme.scss";
+@import "_layout.scss";
+@import "_theme.scss";

@@ -1,22 +1,22 @@
-@import "_variables.scss";
-@import "_mixins.scss";
+@import "../_variables.scss";
+@import "../mixins/_index.scss";
 
 
 // Dependencies
-@import "common/_all.scss";
-@import "input.scss";
-@import "upload.scss";
-@import "switch.scss";
-@import "menu.scss";
-@import "toolbar.scss";
-@import "dialog.scss";
-@import "breadcrumb.scss";
-@import "treeview.scss";
-@import "splitter.scss";
-@import "grid.scss";
-@import "listview.scss";
+@import "../common/_index.scss";
+@import "../input/_index.scss";
+@import "../upload/_index.scss";
+@import "../switch/_index.scss";
+@import "../menu/_index.scss";
+@import "../toolbar/_index.scss";
+@import "../dialog/_index.scss";
+@import "../breadcrumb/_index.scss";
+@import "../treeview/_index.scss";
+@import "../splitter/_index.scss";
+@import "../grid/_index.scss";
+@import "../listview/_index.scss";
 
 
 // Component
-@import "filemanager/_layout.scss";
-@import "filemanager/_theme.scss";
+@import "_layout.scss";
+@import "_theme.scss";

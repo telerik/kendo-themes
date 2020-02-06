@@ -1,14 +1,14 @@
-@import "_variables.scss";
-@import "_mixins.scss";
+@import "../_variables.scss";
+@import "../mixins/_index.scss";
 
 
 // Dependencies
-@import "common/_all.scss";
-@import "button.scss";
-@import "scroller.scss";
+@import "../common/_index.scss";
+@import "../button/_index.scss";
+@import "../scroller/_index.scss";
 
 
 // Component
-@import "map/images/markers.scss";
-@import "map/_layout.scss";
-@import "map/_theme.scss";
+@import "images/markers.scss";
+@import "_layout.scss";
+@import "_theme.scss";
