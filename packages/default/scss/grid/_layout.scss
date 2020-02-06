@@ -440,7 +440,6 @@
         padding: $button-padding-y $button-padding-x;
         border-width: 1px;
         border-style: solid;
-        line-height: $grid-group-drag-clue-line-height;
         display: inline-flex;
         flex-direction: row;
         align-items: center;
@@ -483,10 +482,15 @@
 
     .k-group-indicator {
         margin-right: ( $grid-group-indicator-gap / 2 );
+        line-height: $grid-group-drag-clue-line-height;
     }
 
     .k-group-indicator + .k-group-indicator {
         margin-left: ( $grid-group-indicator-gap / 2 );
+    }
+
+    .k-drag-clue {
+        line-height: $line-height-lg;
     }
 
     .k-grouping-dropclue {
