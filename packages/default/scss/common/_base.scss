@@ -111,14 +111,38 @@ $widget-border-width: 1px !default;
 
 @include exports( "common/theme" ) {
 
+    // Text selection
+    .k-text-selection {
+        ::selection {
+            background-color: $primary;
+            color: $primary-contrast;
+        }
+    }
+
     // Widget
     .k-widget {
-        @extend %text-selection;
+        @extend .k-text-selection;
         @include appearance( widget );
     }
 
-
     // Panels
+    .k-block,
+    .k-panel {
+        @extend .k-text-selection;
+        @include appearance( widget );
+        @include border-radius();
+        padding: $panel-padding-y $panel-padding-x;
+        border-width: 1px;
+        border-style: solid;
+        box-sizing: border-box;
+
+        > .k-header {
+            @include appearance( header );
+            @include border-top-radius();
+            margin: #{-$panel-padding-y} #{-$panel-padding-x} $panel-padding-y;
+            padding: $header-padding-y $header-padding-x;
+        }
+    }
     .k-content {
         @include appearance( panel );
     }
@@ -155,26 +179,30 @@ $widget-border-width: 1px !default;
 @include exports( "common/misc/hr" ) {
 
     .k-hr {
-        @extend %hr;
+        margin: $spacer-y auto;
         padding: 0;
+        height: 0;
+        border-width: 1px 0 0;
+        border-style: solid;
+        border-color: $panel-border;
+        display: block;
         float: none;
         clear: both;
     }
 
     // Horizontal rule
     .k-hbox > .k-hr {
-        @extend %hr-vertical;
+        margin: 0;
+        width: 0;
+        height: auto;
+        border-width: 0 0 0 1px;
+        flex: 0 0 auto;
     }
 
     // Vertical rule
     .k-vbox > .k-hr {
         margin: 0;
         flex: 0 0 auto;
-    }
-
-    // Separator
-    .k-separator {
-        @extend %hr;
     }
 
 }
