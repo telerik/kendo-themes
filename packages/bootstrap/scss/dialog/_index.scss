@@ -1,16 +1,15 @@
-@import "_variables.scss";
-@import "_mixins.scss";
+@import "../_variables.scss";
+@import "../mixins/_index.scss";
 
 
 // Dependencies
-@import "common/_all.scss";
-@import "edit-form.scss";
-@import "button.scss";
-@import "action-buttons.scss";
-@import "window.scss";
-
+@import "../common/_index.scss";
+@import "../edit-form/_index.scss";
+@import "../button/_index.scss";
+@import "../action-buttons/_index.scss";
+@import "../window/_index.scss";
 
 
 // Component
-@import "dialog/_layout.scss";
-@import "dialog/_theme.scss";
+@import "_layout.scss";
+@import "_theme.scss";

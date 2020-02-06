@@ -1,16 +1,16 @@
-@import "_variables.scss";
-@import "_mixins.scss";
+@import "../_variables.scss";
+@import "../mixins/_index.scss";
 
 
 // Dependencies
-@import "common/_all.scss";
-@import "input.scss";
-@import "dropdownlist.scss";
-@import "multiselect.scss";
-@import "popup.scss";
-@import "treeview.scss";
+@import "../common/_index.scss";
+@import "../input/_index.scss";
+@import "../dropdownlist/_index.scss";
+@import "../multiselect/_index.scss";
+@import "../popup/_index.scss";
+@import "../treeview/_index.scss";
 
 
 // Component
-@import "dropdowntree/_layout.scss";
-@import "dropdowntree/_theme.scss";
+@import "_layout.scss";
+@import "_theme.scss";

@@ -1,25 +1,25 @@
-@import "_variables.scss";
-@import "_mixins.scss";
+@import "../_variables.scss";
+@import "../mixins/_index.scss";
 
 
 // Dependencies
-@import "common/_all.scss";
-@import "button.scss";
-@import "checkbox.scss";
-@import "radio.scss";
-@import "colorpicker.scss";
-@import "combobox.scss";
-@import "datetime.scss";
-@import "dropdownlist.scss";
-@import "upload.scss";
-@import "menu.scss";
-@import "toolbar.scss";
-@import "window.scss";
-@import "tabstrip.scss";
-@import "treeview.scss";
+@import "../common/_index.scss";
+@import "../button/_index.scss";
+@import "../checkbox/_index.scss";
+@import "../radio/_index.scss";
+@import "../colorpicker/_index.scss";
+@import "../combobox/_index.scss";
+@import "../datetime/_index.scss";
+@import "../dropdownlist/_index.scss";
+@import "../upload/_index.scss";
+@import "../menu/_index.scss";
+@import "../toolbar/_index.scss";
+@import "../window/_index.scss";
+@import "../tabstrip/_index.scss";
+@import "../treeview/_index.scss";
 
 
 // Component
-@import "spreadsheet/images/image-default.scss";
-@import "spreadsheet/_layout.scss";
-@import "spreadsheet/_theme.scss";
+@import "images/image-default.scss";
+@import "_layout.scss";
+@import "_theme.scss";

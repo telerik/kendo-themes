@@ -1,19 +1,19 @@
-@import "_variables.scss";
-@import "_mixins.scss";
+@import "../_variables.scss";
+@import "../mixins/_index.scss";
 
 
 // Dependencies
-@import "common/_all.scss";
-@import "button.scss";
-@import "input.scss";
-@import "validator.scss";
-@import "datetime.scss";
-@import "numerictextbox.scss";
-@import "window.scss";
-@import "splitter.scss";
-@import "treelist.scss";
+@import "../common/_index.scss";
+@import "../button/_index.scss";
+@import "../input/_index.scss";
+@import "../validator/_index.scss";
+@import "../datetime/_index.scss";
+@import "../numerictextbox/_index.scss";
+@import "../window/_index.scss";
+@import "../splitter/_index.scss";
+@import "../treelist/_index.scss";
 
 
 // Component
-@import "gantt/_layout.scss";
-@import "gantt/_theme.scss";
+@import "_layout.scss";
+@import "_theme.scss";

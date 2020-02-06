@@ -1,120 +1,120 @@
-@import "_functions.scss";
+@import "functions/_index.scss";
 @import "_variables.scss";
-@import "_mixins.scss";
+@import "mixins/_index.scss";
 
 
 // Dependencies
-@import "common/_all.scss";
+@import "common/_index.scss";
 
 
 // Generic content
-@import "styling.scss";
-@import "avatar.scss";
-@import "badge.scss";
-@import "chip.scss";
-// @import "icons.scss";
-// @import "list.scss";
-@import "edit-form.scss";
-@import "listgroup.scss";
-@import "adaptive.scss";
-// @import "loading.scss";
-@import "progressbar.scss";
-@import "ripple.scss";
-// @import "table.scss";
-// @import "typography.scss";
+@import "styling/_index.scss";
+@import "avatar/_index.scss";
+@import "badge/_index.scss";
+@import "chip/_index.scss";
+// @import "icons/_index.scss";
+// @import "list/_index.scss";
+@import "edit-form/_index.scss";
+@import "listgroup/_index.scss";
+@import "adaptive/_index.scss";
+// @import "loading/_index.scss";
+@import "progressbar/_index.scss";
+@import "ripple/_index.scss";
+// @import "table/_index.scss";
+// @import "typography/_index.scss";
 
 
 // Basic forms
-@import "button.scss";
-@import "action-buttons.scss";
-@import "input.scss";
-@import "checkbox.scss";
-@import "radio.scss";
-@import "validator.scss";
+@import "button/_index.scss";
+@import "action-buttons/_index.scss";
+@import "input/_index.scss";
+@import "checkbox/_index.scss";
+@import "radio/_index.scss";
+@import "validator/_index.scss";
 
 
 // Inputs
-@import "autocomplete.scss";
-@import "colorpicker.scss";
-@import "combobox.scss";
-@import "datetime.scss";
-@import "dropdowngrid.scss";
-@import "dropdownlist.scss";
-@import "dropdowntree.scss";
-@import "maskedtextbox.scss";
-@import "multiselect.scss";
-@import "numerictextbox.scss";
-@import "upload.scss";
+@import "autocomplete/_index.scss";
+@import "colorpicker/_index.scss";
+@import "combobox/_index.scss";
+@import "datetime/_index.scss";
+@import "dropdowngrid/_index.scss";
+@import "dropdownlist/_index.scss";
+@import "dropdowntree/_index.scss";
+@import "maskedtextbox/_index.scss";
+@import "multiselect/_index.scss";
+@import "numerictextbox/_index.scss";
+@import "upload/_index.scss";
 
 
 // Other forms
-@import "listbox.scss";
-@import "slider.scss";
-@import "switch.scss";
-@import "rating.scss";
+@import "listbox/_index.scss";
+@import "slider/_index.scss";
+@import "switch/_index.scss";
+@import "rating/_index.scss";
 
 
 // Date time
-@import "calendar.scss";
+@import "calendar/_index.scss";
 
 
 // Command interfaces
-@import "menu.scss";
-@import "toolbar.scss";
+@import "menu/_index.scss";
+@import "toolbar/_index.scss";
 
 
 // Popups and modals
-@import "dialog.scss";
-@import "drawer.scss";
-@import "notification.scss";
-@import "popup.scss";
-@import "responsivepanel.scss";
-@import "tooltip.scss";
-@import "window.scss";
+@import "dialog/_index.scss";
+@import "drawer/_index.scss";
+@import "notification/_index.scss";
+@import "popup/_index.scss";
+@import "responsivepanel/_index.scss";
+@import "tooltip/_index.scss";
+@import "window/_index.scss";
 
 
 // Navigation
-@import "breadcrumb.scss";
-@import "pager.scss";
-@import "panelbar.scss";
-@import "tabstrip.scss";
-@import "treeview.scss";
+@import "breadcrumb/_index.scss";
+@import "pager/_index.scss";
+@import "panelbar/_index.scss";
+@import "tabstrip/_index.scss";
+@import "treeview/_index.scss";
 
 
 // Layout & containers
-// @import "layout.scss";
-@import "card.scss";
-@import "splitter.scss";
+// @import "layout/_index.scss";
+@import "card/_index.scss";
+@import "splitter/_index.scss";
 
 
 // Data management
-@import "grid.scss";
-@import "listview.scss";
-@import "spreadsheet.scss";
-@import "pivotgrid.scss";
-@import "treelist.scss";
-@import "filter.scss";
-@import "filemanager.scss";
+@import "grid/_index.scss";
+@import "listview/_index.scss";
+@import "spreadsheet/_index.scss";
+@import "pivotgrid/_index.scss";
+@import "treelist/_index.scss";
+@import "filter/_index.scss";
+@import "filemanager/_index.scss";
 
 
 // Editor
-@import "editor.scss";
+@import "editor/_index.scss";
 
 
 // Scheduling
-@import "gantt.scss";
-@import "scheduler.scss";
+@import "gantt/_index.scss";
+@import "scheduler/_index.scss";
 
 
 // Misc
-@import "chat.scss";
-@import "mediaplayer.scss";
-@import "timeline.scss";
-@import "pdf-viewer.scss";
-@import "scroller.scss";
-@import "scrollview.scss";
+@import "chat/_index.scss";
+@import "mediaplayer/_index.scss";
+@import "timeline/_index.scss";
+@import "pdf-viewer/_index.scss";
+@import "scroller/_index.scss";
+@import "scrollview/_index.scss";
 
 
 // Dataviz
-@import "dataviz.scss";
-@import "map.scss";
+@import "dataviz/_index.scss";
+@import "map/_index.scss";
