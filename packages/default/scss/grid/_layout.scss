@@ -15,7 +15,7 @@
     // $grid-row-half-inner-height: calc( #{$line-height-em / 2} + #{$cell-padding-y} );
 
     // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
-    $grid-form-component-offset: calc( (#{$line-height-em} - #{button-size()}) / 2 ) !default;
+    $grid-command-cell-padding-y: calc( #{$cell-padding-y} + (#{$line-height-em} - #{button-size()}) / 2 ) !default;
 
     $grid-form-component-vertical-align: middle !default;
     $grid-hierarchy-col-width: ($icon-size * 2) !default;
@@ -877,9 +877,13 @@
     .k-command-cell > .k-button,
     .k-edit-cell > .k-textbox,
     .k-edit-cell > .k-widget {
-        margin-top: $grid-form-component-offset;
-        margin-bottom: $grid-form-component-offset;
         vertical-align: $grid-form-component-vertical-align;
+    }
+
+    .k-grid .k-grid-edit-row td,
+    .k-grid .k-command-cell,
+    .k-grid .k-edit-cell {
+        padding: $grid-command-cell-padding-y $grid-cell-padding-x;
     }
 
     .k-command-cell > .k-button {
