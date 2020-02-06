@@ -21,6 +21,17 @@
         }
     }
 
+    // Common Invalid
+    .k-state-invalid,
+    .ng-invalid.ng-touched,
+    .ng-invalid.ng-dirty {
+        > .k-dateinput-wrap,
+        > .k-picker-wrap {
+            color: $forms-invalid-color;
+            border-color: $invalid-border;
+        }
+    }
+
     // Shared
     .k-datepicker,
     .k-timepicker,

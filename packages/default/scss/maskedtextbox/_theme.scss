@@ -6,10 +6,12 @@
             color: $error;
         }
 
-        &.k-state-invalid {
+        &.k-state-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
             .k-textbox {
-                color: $error;
-                border-color: $error;
+                color: $forms-invalid-color;
+                border-color: $invalid-border;
             }
         }
     }
