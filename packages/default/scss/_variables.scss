@@ -1936,7 +1936,7 @@ $grid-header-gradient: $header-gradient !default;
 
 $grid-group-drag-clue-bg: $grid-header-bg !default;
 $grid-group-drag-clue-text: $grid-header-text !default;
-$grid-group-drag-clue-line-height: 1.5 !default;
+$grid-group-drag-clue-line-height: $line-height !default;
 
 $grid-alt-bg: rgba( contrast-wcag( $grid-bg ), .04 ) !default;
 $grid-alt-text: $grid-text !default;
