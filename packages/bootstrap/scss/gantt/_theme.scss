@@ -53,17 +53,6 @@
         background-color: rgba( $panel-text, .025 );
     }
 
-
-    .k-gantt-dependencies {}
-    .k-line {
-        color: mix( $panel-text, $panel-bg );
-        background-color: mix( $panel-text, $panel-bg );
-    }
-    .k-line.k-state-selected {
-        color: $header-selected-bg;
-        background-color: $header-selected-bg;
-    }
-
     .k-task-dot {}
     .k-task-dot::before {
         background-color: $panel-text;
@@ -126,6 +115,14 @@
     }
     .k-task-single:hover .k-resize-handle {
         opacity: 0;
+    }
+
+    // Dependency Lines
+    .k-gantt-line {
+        color: $gantt-line-fill;
+    }
+    .k-gantt-line.k-state-selected {
+        color: $gantt-line-selected-fill;
     }
 
 }

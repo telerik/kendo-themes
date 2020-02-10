@@ -2179,6 +2179,11 @@ $filemanager-drag-hint-border: null !default;
 
 
 // Gantt
+$gantt-line-size: 2px !default;
+
+$gantt-line-fill: mix( $panel-text, $panel-bg ) !default;
+
+$gantt-line-selected-fill: $selected-bg !default;
 
 
 // Scheduler
