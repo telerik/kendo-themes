@@ -1,92 +1,40 @@
-@function font-map(
-    $font-size: null,
-    $line-height: null,
-    $font-weight: null,
-    $font-family: null,
-    $letter-spacing: null
-) {
-    @return (
-        font-size: $font-size,
-        line-height: $line-height,
-        font-weight: $font-weight,
-        font-family: $font-family,
-        letter-spacing: $letter-spacing
-    );
-}
+@function get-config-prop( $config, $name, $prop ) {
+    $key: #{$config}-#{$prop}-#{$name};
 
-@function layout-map(
-    $margin: null,
-    $gap: null
-) {
-    $_expanded: _expand-trbl-prop(margin, $margin);
-
-    @return map-merge((
-        margin: $margin,
-        gap: $gap
-    ), $_expanded);
-}
-
-@function config-prop($config, $name, $prop) {
-    $key: fn-#{$prop}-#{$name};
-
-    @if has-config-prop($config, $name, $prop) {
-        @return map-get( map-get($config, $name), $prop );
+    @if map-has-key( $config, $name ) {
+        @if map-has-key( map-get( $config, $name ), $prop ) {
+            @return map-get( map-get( $config, $name ), $prop );
+        }
     }
 
     @warn NO_SUCH_KEY $key;
     @return null;
 }
-@function has-config-prop($config, $name, $prop) {
-    @if map-has-key($config, $name) {
-        @if map-has-key( map-get($config, $name), $prop ) {
-            @return true;
-        }
-    }
 
-    @return false;
+
+// #region typography
+@function font-map( $font-family: null, $font-size: null, $line-height: null, $font-weight: null, $letter-spacing: null ) {
+    @return (
+        font-family: $font-family,
+        font-size: $font-size,
+        line-height: $line-height,
+        font-weight: $font-weight,
+        letter-spacing: $letter-spacing
+    );
 }
-
-@function _expand-trbl-prop($type, $value) {
-    $ret: null;
-
-    @if $type == margin {
-
-        $len: length( $value );
-
-        @if $len == 1 {
-            $ret: (
-                #{$type}-top: nth($value, 1),
-                #{$type}-right: nth($value, 1),
-                #{$type}-bottom: nth($value, 1),
-                #{$type}-left: nth($value, 1)
-            );
-        }
-        @else if $len == 2 {
-            $ret: (
-                #{$type}-top: nth($value, 1),
-                #{$type}-right: nth($value, 2),
-                #{$type}-bottom: nth($value, 1),
-                #{$type}-left: nth($value, 2)
-            );
-        }
-        @else if $len == 3 {
-            $ret: (
-                #{$type}-top: nth($value, 1),
-                #{$type}-right: nth($value, 2),
-                #{$type}-bottom: nth($value, 3),
-                #{$type}-left: nth($value, 2)
-            );
-        }
-        @else if $len == 4 {
-            $ret: (
-                #{$type}-top: nth($value, 1),
-                #{$type}-right: nth($value, 2),
-                #{$type}-bottom: nth($value, 3),
-                #{$type}-left: nth($value, 4)
-            );
-
-        }
-    }
-
-    @return $ret;
+@function get-font-family( $config, $name ) {
+    @return get-config-prop( $config, $name, font-family );
 }
+@function get-font-size( $config, $name ) {
+    @return get-config-prop( $config, $name, font-size );
+}
+@function get-line-height( $config, $name ) {
+    @return get-config-prop( $config, $name, line-height );
+}
+@function get-font-weight( $config, $name ) {
+    @return get-config-prop( $config, $name, font-weight );
+}
+@function get-letter-spacing( $config, $name ) {
+    @return get-config-prop( $config, $name, letter-spacing );
+}
+// #endregion
