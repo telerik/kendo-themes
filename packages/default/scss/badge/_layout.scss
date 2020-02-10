@@ -1,9 +1,9 @@
 @include exports( "badge/layout" ) {
 
     .k-badge {
-        @include border-radius();
+        @include border-radius( $badge-border-radius );
         margin: 0 0 0 ($spacer / 2);
-        padding: $badge-padding;
+        padding: $badge-padding-y $badge-padding-x;
         border-width: $badge-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -62,8 +62,8 @@
         transform: translate(100%, -100%);
 
         &:empty {
-            top: calc( #{$badge-padding} + #{$badge-border-width} );
-            right: calc( #{$badge-padding} + #{$badge-border-width} );
+            top: calc( #{$badge-padding-y} + #{$badge-border-width} );
+            right: calc( #{$badge-padding-x} + #{$badge-border-width} );
         }
 
         // RTL
@@ -75,7 +75,7 @@
             transform: translate(-100%, -100%);
 
             &:empty {
-                left: calc( #{$badge-padding} + #{$badge-border-width} );
+                left: calc( #{$badge-padding-x} + #{$badge-border-width} );
             }
         }
     }

@@ -294,18 +294,20 @@ $avatar-text: contrast-wcag( $avatar-bg ) !default;
 
 
 // Badge
-$badge-font-size: 75% !default;
+$badge-padding-x: $badge-padding-x !default;
+$badge-padding-y: $badge-padding-y !default;
+$badge-border-width: 1px !default;
+$badge-border-radius: $badge-border-radius !default;
+
+$badge-font-size: $badge-font-size !default;
 $badge-line-height: 1 !default;
 
-$badge-padding: ($padding-y / 2) !default;
-$badge-border-width: 1px !default;
-
-$badge-size: calc( #{$badge-line-height} * 1em + 2 * #{$badge-padding} +  2 * #{$badge-border-width} ) !default;
+$badge-size: calc( #{$badge-line-height * 1em} + #{$badge-padding-y * 2} + #{$badge-border-width * 2} ) !default;
 $badge-overlay-x: calc( #{$badge-size} / 2) !default;
 $badge-overlay-y: $badge-overlay-x !default;
 
 $badge-secondary-bg: $secondary !default;
-$badge-secondary-text:  $base-text !default;
+$badge-secondary-text: $base-text !default;
 $badge-secondary-border: $badge-secondary-bg !default;
 
 $badge-primary-bg: $primary !default;
