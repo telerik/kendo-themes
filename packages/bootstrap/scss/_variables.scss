@@ -2440,17 +2440,17 @@ $adaptive-scheduler-base-text: inherit !default;
 $typography-config: () !default;
 // sass-lint:disable indentation
 $typography-config: map-merge((
-    display-1: font-map($display1-font-size, $display-line-height, $display1-weight, inherit),
-    display-2: font-map($display2-font-size, $display-line-height, $display2-weight, inherit),
-    display-3: font-map($display3-font-size, $display-line-height, $display3-weight, inherit),
-    display-4: font-map($display4-font-size, $display-line-height, $display4-weight, inherit),
-    h1: font-map($h1-font-size, normal, $headings-font-family, $headings-font-family),
-    h2: font-map($h2-font-size, normal, $headings-font-family, $headings-font-family),
-    h3: font-map($h3-font-size, normal, $headings-font-family, $headings-font-family),
-    h4: font-map($h4-font-size, normal, $headings-font-family, $headings-font-family),
-    h5: font-map($h5-font-size, normal, $headings-font-family, $headings-font-family),
-    h6: font-map($h6-font-size, normal, $headings-font-family, $headings-font-family),
-    body: font-map($font-size-base, $line-height-base, $font-weight-base, $font-family-base)
+    display-1: font-map($headings-font-family, $display1-font-size, $display-line-height, $display1-weight ),
+    display-2: font-map($headings-font-family, $display2-font-size, $display-line-height, $display2-weight ),
+    display-3: font-map($headings-font-family, $display3-font-size, $display-line-height, $display3-weight ),
+    display-4: font-map($headings-font-family, $display4-font-size, $display-line-height, $display4-weight ),
+    h1: font-map($headings-font-family, $h1-font-size, $headings-line-height, $headings-font-weight ),
+    h2: font-map($headings-font-family, $h2-font-size, $headings-line-height, $headings-font-weight ),
+    h3: font-map($headings-font-family, $h3-font-size, $headings-line-height, $headings-font-weight ),
+    h4: font-map($headings-font-family, $h4-font-size, $headings-line-height, $headings-font-weight ),
+    h5: font-map($headings-font-family, $h5-font-size, $headings-line-height, $headings-font-weight ),
+    h6: font-map($headings-font-family, $h6-font-size, $headings-line-height, $headings-font-weight ),
+    body: font-map($font-family-base, $font-size-base, $line-height-base, $font-weight-base )
 ), $typography-config);
 $typography-config: map-merge((
     card-title: map-get($typography-config, h5),

@@ -2523,17 +2523,17 @@ $adaptive-scheduler-base-text: inherit !default;
 $typography-config: () !default;
 // sass-lint:disable indentation
 $typography-config: map-merge((
-    display-1: font-map($display1-font-size, 112px, $font-weight-light, $font-family, -.05em),
-    display-2: font-map($display2-font-size, 56px, $font-weight-normal, $font-family, -.02em),
-    display-3: font-map($display3-font-size, 48px, $font-weight-normal, $font-family, -.005em),
-    display-4: font-map($display4-font-size, 40px, $font-weight-normal, $font-family),
-    h1: font-map($h1-font-size, 32px, $font-weight-normal, $font-family),
-    h2: font-map($h2-font-size, 32px, $font-weight-bold, $font-family),
-    h3: font-map($h3-font-size, 28px, $font-weight-normal, $font-family),
-    h4: font-map($h4-font-size, 24px, $font-weight-normal, $font-family),
-    h5: font-map($h5-font-size, $line-height, $font-weight-normal, $font-family),
-    h6: font-map($h6-font-size, $line-height, $font-weight-normal, $font-family),
-    body: font-map($font-size, $line-height, $font-weight-normal, $font-family)
+    display-1: font-map( $font-family, $display1-font-size, 112px, $font-weight-light, -.05em ),
+    display-2: font-map( $font-family, $display2-font-size, 56px, $font-weight-normal, -.02em ),
+    display-3: font-map( $font-family, $display3-font-size, 48px, $font-weight-normal, -.005em ),
+    display-4: font-map( $font-family, $display4-font-size, 40px, $font-weight-normal ),
+    h1: font-map( $font-family, $h1-font-size, 32px, $font-weight-normal ),
+    h2: font-map( $font-family, $h2-font-size, 32px, $font-weight-bold ),
+    h3: font-map( $font-family, $h3-font-size, 28px, $font-weight-normal ),
+    h4: font-map( $font-family, $h4-font-size, 24px, $font-weight-normal ),
+    h5: font-map( $font-family, $h5-font-size, $line-height, $font-weight-normal ),
+    h6: font-map( $font-family, $h6-font-size, $line-height, $font-weight-normal ),
+    body: font-map( $font-family, $font-size, $line-height, $font-weight-normal )
 ), $typography-config);
 $typography-config: map-merge((
     card-title: map-get($typography-config, h1),
