@@ -15,77 +15,8 @@
     <div id="test-area" class="grid">
 
         <section>
-            <kendo-grid class="k-widget k-grid k-grid-no-scrollbar" style="width: 480px;">
-                <div class="k-grid-aria-root">
-                    <div class="k-grid-header"> <!-- add padding-left or -right for scrollbar width-->
-                        <div class="k-grid-header-wrap">
-                            <table>
-                                <colgroup>
-                                    <col style="width: 100px;" />
-                                    <col />
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th class="k-header">
-                                            100px
-                                        </th>
-                                        <th class="k-header">
-                                            no width
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-                    </div>
-
-                    <kendo-grid-list class="k-grid-container">
-                        <div class="k-grid-content k-virtual-content">
-                            <div>
-                                <table class="k-grid-table">
-                                    <colgroup>
-                                        <col style="width: 100px;" />
-                                        <col />
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                1
-                                            </td>
-                                            <td>
-                                                Row
-                                            </td>
-                                        </tr>
-                                        <tr class="k-alt">
-                                            <td>
-                                                2
-                                            </td>
-                                            <td>
-                                                Alt row
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                3
-                                            </td>
-                                            <td>
-                                                This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="k-height-container">
-                                <div style="height: 0px;"></div> <!-- set height to scroll height (virtual scrolling) -->
-                            </div>
-                        </div>
-                    </kendo-grid-list>
-                </div>
-            </kendo-grid>
-        </section>
-
-        <section>
-            <!-- filter row, checkbox selection -->
-            <kendo-grid class="k-widget k-grid k-grid-no-scrollbar" style="width: 800px;">
+            <!-- filter row, checkbox selection - RTL mode -->
+            <kendo-grid class="k-widget k-grid k-grid-no-scrollbar" style="width: 800px;" dir="rtl">
                 <div class="k-grid-aria-root">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
@@ -110,7 +41,6 @@
                                             Numeric column
                                         </th>
                                     </tr>
-
                                     <tr class="k-filter-row">
                                         <td>
                                         </td>
@@ -120,7 +50,7 @@
                                                     <input class="k-textbox" value="Cha" />
                                                     <kendo-grid-filter-cell-operators class="k-filtercell-operator">
                                                         <kendo-dropdownlist class="k-dropdown-operator k-widget k-dropdown k-header" iconclass="k-i-filter" textfield="text" valuefield="value">
-                                                            <span class="k-dropdown-wrap k-state-default" id="4c85079f-efb7-49ba-bbf3-52655c86fd98" dir="ltr" readonly="false">
+                                                            <span class="k-dropdown-wrap k-state-default" id="4c85079f-efb7-49ba-bbf3-52655c86fd98" dir="rtl" readonly="false">
                                                                 <span class="k-input">
                                                                     Is equal to
                                                                 </span>
@@ -139,7 +69,7 @@
                                         <td>
                                             <kendo-grid-date-filter-cell class="k-filtercell">
                                                 <kendo-grid-filter-wrapper-cell class="k-filtercell-wrapper">
-                                                    <kendo-datepicker class="k-widget k-datepicker k-header">
+                                                    <kendo-datepicker class="k-widget k-datepicker k-header" dir="rtl">
                                                         <span class="k-picker-wrap k-state-default">
                                                             <kendo-dateinput class="k-widget k-dateinput">
                                                                 <span class="k-dateinput-wrap">
@@ -153,7 +83,7 @@
                                                     </kendo-datepicker>
                                                     <kendo-grid-filter-cell-operators class="k-filtercell-operator">
                                                         <kendo-dropdownlist class="k-dropdown-operator k-widget k-dropdown k-header" iconclass="k-i-filter" textfield="text" valuefield="value">
-                                                            <span class="k-dropdown-wrap k-state-default" id="a08714c4-8784-4c09-a3f9-dca9b364ad97" dir="ltr" readonly="false">
+                                                            <span class="k-dropdown-wrap k-state-default" id="a08714c4-8784-4c09-a3f9-dca9b364ad97" dir="rtl" readonly="false">
                                                                 <span class="k-input">
                                                                     Is after or equal to
                                                                 </span>
@@ -172,7 +102,7 @@
                                         <td>
                                             <kendo-grid-numeric-filter-cell class="k-filtercell">
                                                 <kendo-grid-filter-wrapper-cell class="k-filtercell-wrapper">
-                                                    <kendo-numerictextbox dir="ltr" class="k-widget k-numerictextbox">
+                                                    <kendo-numerictextbox dir="rtl" class="k-widget k-numerictextbox">
                                                         <span class="k-numeric-wrap">
                                                             <input autocorrect="off" class="k-input k-formatted-value" id="714b77a5-cec8-3370-be49-6ea55a89921c" value="1" />
                                                             <span class="k-select">
@@ -187,7 +117,7 @@
                                                     </kendo-numerictextbox>
                                                     <kendo-grid-filter-cell-operators class="k-filtercell-operator">
                                                         <kendo-dropdownlist class="k-dropdown-operator k-widget k-dropdown k-header" iconclass="k-i-filter" textfield="text" valuefield="value">
-                                                            <span class="k-dropdown-wrap k-state-default" id="0d7a44ea-c77d-4f78-845c-019160be8a85" dir="ltr" readonly="false">
+                                                            <span class="k-dropdown-wrap k-state-default" id="0d7a44ea-c77d-4f78-845c-019160be8a85" dir="rtl" readonly="false">
                                                                 <span class="k-input">
                                                                     Is equal to
                                                                 </span>
@@ -251,8 +181,8 @@
         </section>
 
         <section>
-            <!-- fixed height, hierarchy, filter menu, sort icon -->
-            <kendo-grid style="height: 250px; width: 800px;" class="k-widget k-grid k-grid-no-scrollbar">
+            <!-- fixed height, hierarchy, filter menu, sort icon - RTL mode -->
+            <kendo-grid style="height: 250px; width: 800px;" class="k-widget k-grid k-grid-no-scrollbar" dir="rtl">
                 <div class="k-grid-aria-root">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
@@ -287,7 +217,7 @@
                                                 <span></span>
                                             </a>
                                         </th>
-                                        <th class="k-header k-filterable k-state-focused">
+                                        <th class="k-header k-filterable">
                                             <kendo-grid-filter-menu>
                                                 <a class="k-grid-filter">
                                                     <span class="k-icon k-i-filter"></span>
@@ -388,8 +318,8 @@
         </section>
 
         <section>
-            <!-- Grid with paging enabled -->
-            <kendo-grid style="width: 800px;" class="k-widget k-grid">
+            <!-- Grid with paging enabled - RTL mode -->
+            <kendo-grid dir="rtl" style="width: 800px;" class="k-widget k-grid">
                 <div class="k-grid-aria-root">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
