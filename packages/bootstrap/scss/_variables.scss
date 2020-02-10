@@ -1578,6 +1578,11 @@ $drawer-selected-hover-bg: try-darken( $selected-bg, 7.5% ) !default;
 $notification-padding-x: $alert-padding-x !default;
 $notification-padding-y: $alert-padding-y !default;
 $notification-border-width: $alert-border-width !default;
+$notification-border-radius: $alert-border-radius !default;
+
+$notification-font-size: $font-size-sm !default;
+$notification-line-height: $line-height !default;
+
 $notification-icon-offset: 3px !default;
 $notification-icon-spacing: $icon-spacing !default;
 
