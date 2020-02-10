@@ -1569,7 +1569,7 @@ $drawer-item-padding-x: $padding-x !default;
 $drawer-item-padding-y: $padding-x !default;
 $drawer-item-font-size: 16px !default;
 $drawer-item-line-height: $line-height-lg !default;
-$drawer-icon-size: 18px !default;
+$drawer-icon-size: $icon-size !default;
 
 $drawer-mini-initial-width: calc(4 * #{$drawer-item-padding-x} + #{$drawer-icon-size}) !default;
 

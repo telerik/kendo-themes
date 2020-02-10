@@ -137,7 +137,9 @@
 
         .k-icon {
             margin: 0 $drawer-item-padding-x;
+            height: auto;
             font-size: $drawer-icon-size;
+            line-height: $drawer-item-line-height;
             flex-shrink: 0;
         }
 
