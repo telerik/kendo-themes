@@ -4,11 +4,6 @@
     .k-editor {
         @include appearance( panel );
         @include use-background-clip();
-
-        .k-editor-toolbar {}
-        .k-editable-area {
-            border-color: $header-border;
-        }
     }
 
     // Inline Editor
@@ -22,41 +17,12 @@
     }
 
 
-    // Editor toolbar
+    // jQuery toolbar
     .k-editor-toolbar {
         @include appearance( toolbar );
-        padding: 0;
 
-
-        // Group
-        .k-tool-group {
-            padding: $toolbar-padding-y $toolbar-padding-x;
-
-            .k-tool.k-group-start,
-            .k-tool.k-group-end {
-                @include border-radius( 0 );
-            }
-        }
-        .k-tool-group + .k-tool-group {
-            margin: 0;
-            border-left-width: 1px;
-        }
-    }
-
-    // sass-lint:disable class-name-format
-    .editorToolbarWindow.k-header.k-window-content {
-        @include appearance( header );
-    }
-    // sass-lint:enable class-name-format
-    // sass-lint:disable class-name-format
-    .k-editor .k-editor-toolbar-wrap,
-    .k-ct-popup .k-editor-toolbar,
-    .editorToolbarWindow.k-header.k-window-content {
         a.k-tool {
             @include appearance( button );
-            border-width: 0;
-            background-image: none;
-            background-color: transparent;
 
             &:hover,
             &.k-state-hover {
@@ -69,22 +35,16 @@
             }
 
             &.k-state-selected {
-                @include fill( $selected-text, $selected-bg, $selected-border, none );
+                @include appearance( pressed-primary-button );
             }
         }
-        .k-tool-group {
-            border-color: $border-color;
-        }
+    }
+
+    // sass-lint:disable class-name-format
+    .editorToolbarWindow.k-header.k-window-content {
+        @include appearance( toolbar );
     }
     // sass-lint:enable class-name-format
-
-
-    // Overflow anchor
-    .k-editor-toolbar .k-overflow-anchor {
-        padding: $toolbar-padding-y;
-        width: $toolbar-inner-calc-size;
-        height: $toolbar-inner-calc-size;
-    }
 
 
     // Insert table
