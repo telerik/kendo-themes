@@ -1,4 +1,4 @@
-@import "_functions.scss";
+@import "functions/_index.scss";
 @import "common/material/_themeing.scss";
 
 
@@ -761,6 +761,8 @@ $textarea-default-width: 18em !default;
 $textarea-padding-x: 10px !default;
 $textarea-padding-y: 15px !default;
 
+$textarea-calc-height: $input-calc-height !default;
+
 $textarea-floating-label-padding: 3px !default;
 
 
@@ -998,6 +1000,13 @@ $dropdownlist-focused-border: $input-focused-border !default;
 $dropdownlist-focused-gradient: null !default;
 $dropdownlist-focused-shadow: null !default;
 $dropdownlist-focused-opacity: $icon-focused-opacity !default;
+
+
+// Dropdowntree
+$dropdowntree-popup-spacer-x: $padding-x !default;
+$dropdowntree-popup-spacer-y: $dropdowntree-popup-spacer-x !default;
+$dropdowntree-filter-shadow: none !default;
+$dropdowntree-filter-spacer: 0 !default;
 
 
 // Multiselect

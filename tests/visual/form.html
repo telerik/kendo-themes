@@ -8,30 +8,42 @@
     <script src="assets/scripts.js"></script>
 
     <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         section {
             max-width: 400px;
+        }
+
+        #test-area > section > .k-form fieldset {
+            margin: 0;
+        }
+
+        #test-area > section > .k-form > p {
+            margin: 4px 0 0;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
 
     <div id="test-area" class="grid">
-
         <section>
             <form class="k-form">
                 <fieldset>
-                    <legend>User Details</legend>
+                    <legend>Fieldset legend</legend>
 
                     <label class="k-form-field">
-                        <span>First Name</span>
-                        <input class="k-textbox" placeholder="Your Name">
+                        <span>Textbox<span class="k-field-info">optional</span></span>
+                        <input class="k-textbox" placeholder="Simple textbox">
                     </label>
                     <label class="k-form-field">
-                        <span>Last Name</span>
-                        <input class="k-textbox" placeholder="Your Last Name" value="Batista">
+                        <input checked="checked" class="k-checkbox" id="auth-2fa" type="checkbox">
+                        <label class="k-checkbox-label" for="auth-2fa">Checkbox</label>
                     </label>
                     <div class="k-form-field">
-                        <span>Gender</span>
+                        <span>RadioButtons</span>
 
                         <input class="k-radio" id="female" name="gender" type="radio">
                         <label class="k-radio-label" for="female">Female</label>
@@ -40,32 +52,8 @@
                         <label class="k-radio-label" for="male">Male</label>
                     </div>
                     <label class="k-form-field">
-                        <span>Email <span class="k-required">*</span></span>
-                        <input class="k-textbox" placeholder="Your Email" type="email" value="bernardo.batista@progress.com">
-                    </label>
-                    <label class="k-form-field">
-                        <span>Company<span class="k-field-info">optional</span></span>
-                        <input class="k-textbox" placeholder="Your Company" autocomplete="off">
-                    </label>
-                    <label class="k-form-field">
-                        <span>About</span>
-                        <textarea class="k-textarea">Lorem Ipsum is simply dummy text.</textarea>
-                    </label>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Credentials</legend>
-                    <label class="k-form-field">
-                        <span>Username</span>
-                        <input class="k-textbox" placeholder="Your username" value="bbatista">
-                    </label>
-                    <label class="k-form-field">
-                        <span>Password</span>
-                        <input class="k-textbox" placeholder="Your password" type="password" value="123456">
-                    </label>
-                    <label class="k-form-field">
-                        <input checked="checked" class="k-checkbox" id="auth-2fa" type="checkbox">
-                        <label class="k-checkbox-label" for="auth-2fa">Enable two-factor authentication</label>
+                        <span>Textarea</span>
+                        <textarea class="k-textarea">Textarea text</textarea>
                     </label>
                     <label class="k-form-field">
                         <kendo-switch dir="ltr" class="k-widget k-switch k-switch-on">
@@ -85,11 +73,495 @@
                     </label>
                 </fieldset>
 
-                <div class="text-right">
-                    <button class="k-button" type="button">Cancel</button>
-                    <button class="k-button k-primary" type="button">Submit</button>
+                <p>Angular MaskedTextbox</p>
+                <kendo-maskedtextbox class="k-widget k-maskedtextbox">
+                    <input class="k-textbox" spellcheck="false">
+                </kendo-maskedtextbox>
+
+                <p>jQuery MaskedTextbox</p>
+                <span class="k-widget k-maskedtextbox"><input value="555 123 4567" class="k-textbox" style="width: 100%;"><span class="k-icon k-i-warning"></span></span>
+
+                <p>Angular Slider</p>
+                <kendo-slider dir="ltr" class="k-slider-horizontal k-slider k-slider-transitions k-widget k-state-default" style="width: 226px;">
+                    <div class="k-slider-wrap k-slider-buttons" id="92bce93d-a5ef-95a8-d1ef-d49182179669" style="position: relative;">
+                    <a class="k-button k-button-decrease">
+                        <span class="k-icon k-i-arrow-w"></span>
+                    </a>
+                    <a class="k-button k-button-increase">
+                        <span class="k-icon k-i-arrow-e">
+                        </span>
+                    </a>
+                        <ul class="k-reset k-slider-items">
+                            <li class="k-tick k-first" style="width: 5px;">
+                            </li><li class="k-tick" style="width: 10px;">
+                            </li><li class="k-tick" style="width: 10px;">
+                            </li><li class="k-tick" style="width: 10px;">
+                            </li><li class="k-tick" style="width: 10px;">
+                            </li><li class="k-tick" style="width: 10px;">
+                            </li><li class="k-tick" style="width: 10px;">
+                            </li><li class="k-tick" style="width: 10px;">
+                            </li><li class="k-tick" style="width: 10px;">
+                            </li><li class="k-tick" style="width: 10px;">
+                            </li><li class="k-tick" style="width: 10px;">
+                            </li><li class="k-tick" style="width: 10px;">
+                            </li><li class="k-tick" style="width: 10px;">
+                            </li><li class="k-tick" style="width: 10px;">
+                            </li><li class="k-tick" style="width: 10px;">
+                            </li><li class="k-tick k-last" style="width: 5px;">
+                            </li>
+                        </ul>
+                        <div class="k-slider-track" style="width: 150px;">
+                            <div class="k-slider-selection" style="width: 150px;">
+                            </div>
+                            <a class="k-draghandle" style="left: 142px;"></a>
+                        </div>
+                    </div>
+                </kendo-slider>
+
+                <p>jQuery Slider</p>
+                <div class="k-widget k-slider k-slider-horizontal k-state-default">
+                    <div class="k-slider-wrap k-slider-buttons"><a class="k-button k-button-increase" title="Right" aria-label="Right"><span class="k-icon k-i-arrow-60-right"></span></a><a class="k-button k-button-decrease" title="Left" aria-label="Left"><span class="k-icon k-i-arrow-60-left"></span></a>
+                        <ul class="k-reset k-slider-items">
+                            <li class="k-tick k-first" role="presentation" title="-10" style="width: 12px;">&nbsp;</li>
+                            <li class="k-tick" role="presentation" title="-6" style="width: 25px;">&nbsp;</li>
+                            <li class="k-tick" role="presentation" title="-2" style="width: 24px;">&nbsp;</li>
+                            <li class="k-tick" role="presentation" title="2" style="width: 24px;">&nbsp;</li>
+                            <li class="k-tick" role="presentation" title="6" style="width: 25px;">&nbsp;</li>
+                            <li class="k-tick k-last" role="presentation" title="10" style="width: 13px;">&nbsp;</li>
+                        </ul>
+                        <div class="k-slider-track" style="width: 122px;">
+                            <div class="k-slider-selection" style="width: 73px;"></div>
+                            <a href="#" class="k-draghandle" title="drag" role="slider" aria-valuemin="-10" aria-valuemax="10" aria-valuenow="-10" tabindex="0" data-role="draggable" style="left: 65px;"></a>
+                        </div>
+                        <input id="slider" value="0" title="slider" type="text" data-role="slider" style="display: none;">
+                    </div>
+                </div>
+
+                <p>Angular Calendar</p>
+                <kendo-calendar class="k-widget k-calendar k-calendar-infinite">
+                    <kendo-calendar-navigation class="k-calendar-navigation">
+                        <span class="k-calendar-navigation-highlight"></span>
+                        <kendo-virtualization class="k-content k-scrollable">
+                            <ul class="k-reset">
+                                <li><span>Nov</span></li>
+                                <li><span>Dec</span></li>
+                                <li><span class="k-calendar-navigation-marker">2018</span></li>
+                                <li><span>Feb</span></li>
+                                <li><span>Mar</span></li>
+                                <li><span>Apr</span></li>
+                                <li><span>May</span></li>
+                                <li><span>Jun</span></li>
+                                <li><span>Jul</span></li>
+                                <li><span>Aug</span></li>
+                                <li><span>Sep</span></li>
+                                <li><span>Oct</span></li>
+                                <li><span>Nov</span></li>
+                                <li><span>Dec</span></li>
+                                <li><span class="k-calendar-navigation-marker">2019</span></li>
+                                <li><span>Feb</span></li>
+                                <li><span>Mar</span></li>
+                                <li><span>Apr</span></li>
+                                <li><span>May</span></li>
+                                <li><span>Jun</span></li>
+                                <li><span>Jul</span></li>
+                                <li><span>Aug</span></li>
+                                <li><span>Sep</span></li>
+                                <li><span>Oct</span></li>
+                                <li><span>Nov</span></li>
+                                <li><span>Dec</span></li>
+                                <li><span class="k-calendar-navigation-marker">2020</span></li>
+                                <li><span>Feb</span></li>
+                                <li><span>Mar</span></li>
+                                <li><span>Apr</span></li>
+                            </ul>
+                            <!-- virtualizaton scrollbar -->
+                            <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
+                        </kendo-virtualization>
+                    </kendo-calendar-navigation>
+                    <kendo-calendar-viewlist class="k-calendar-view k-calendar-monthview">
+                        <kendo-calendar-header class="k-calendar-header">
+                            <span class="k-button k-title">April 2018</span>
+                            <span class="k-today k-state-disabled">Today</span>
+                        </kendo-calendar-header>
+                        <table class="k-calendar-weekdays" style="table-layout: auto;">
+                            <thead>
+                                <tr>
+                                    <th style="width: 14%;">Su</th>
+                                    <th style="width: 14%;">Mo</th>
+                                    <th style="width: 14%;">Tu</th>
+                                    <th style="width: 14%;">We</th>
+                                    <th style="width: 14%;">Th</th>
+                                    <th style="width: 14%;">Fr</th>
+                                    <th style="width: 14%;">Sa</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <kendo-virtualization class="k-content k-scrollable">
+                            <table>
+                                <colgroup>
+                                    <col><col><col><col><col><col><col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" colspan="7">April 2018</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-weekend"><span class="k-link">1</span></td>
+                                        <td><span class="k-link">2</span></td>
+                                        <td class="k-today"><span class="k-link">3</span></td>
+                                        <td class="k-state-hover"><span class="k-link">4</span></td>
+                                        <td class="k-state-focused"><span class="k-link">5</span></td>
+                                        <td class="k-state-selected"><span class="k-link">6</span></td>
+                                        <td class="k-weekend"><span class="k-link">7</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-weekend"><span class="k-link">8</span></td>
+                                        <td><span class="k-link">9</span></td>
+                                        <td><span class="k-link">10</span></td>
+                                        <td class="k-state-hover k-state-focused"><span class="k-link">11</span></td>
+                                        <td class="k-state-selected k-state-focused"><span class="k-link">12</span></td>
+                                        <td class="k-state-selected k-state-hover"><span class="k-link">13</span></td>
+                                        <td class="k-weekend"><span class="k-link">14</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-weekend"><span class="k-link">15</span></td>
+                                        <td><span class="k-link">16</span></td>
+                                        <td><span class="k-link">17</span></td>
+                                        <td><span class="k-link">18</span></td>
+                                        <td><span class="k-link">19</span></td>
+                                        <td><span class="k-link">20</span></td>
+                                        <td class="k-weekend"><span class="k-link">21</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-weekend"><span class="k-link">22</span></td>
+                                        <td><span class="k-link">23</span></td>
+                                        <td><span class="k-link">24</span></td>
+                                        <td><span class="k-link">25</span></td>
+                                        <td><span class="k-link">26</span></td>
+                                        <td><span class="k-link">27</span></td>
+                                        <td class="k-weekend"><span class="k-link">28</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-weekend"><span class="k-link">29</span></td>
+                                        <td><span class="k-link">30</span></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" colspan="7">May 2018</th>
+                                    </tr>
+                                    <!-- content omitted for brevity-->
+                                </tbody>
+                            </table>
+                            <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
+                        </kendo-virtualization>
+                    </kendo-calendar-viewlist>
+                </kendo-calendar>
+
+                <p>jQuery Calendar</p>
+                <div class="k-widget k-calendar k-week-number">
+                    <div class="k-calendar-header">
+                        <a class="k-button k-title">October 2018</a>
+                        <span class="k-calendar-nav">
+                            <a class="k-button k-button-icon k-prev-view"><span class="k-icon k-i-arrow-60-left"></span></a>
+                            <a class="k-today">Today</a>
+                            <a class="k-button k-button-icon k-next-view"><span class="k-icon k-i-arrow-60-right"></span></a>
+                        </span>
+                    </div>
+                    <div class="k-calendar-view k-calendar-monthview">
+                        <table class="k-content k-calendar-content k-month">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="k-alt">Wk</th>
+                                    <th scope="col">Su</th>
+                                    <th scope="col">Mo</th>
+                                    <th scope="col">Tu</th>
+                                    <th scope="col">We</th>
+                                    <th scope="col">Th</th>
+                                    <th scope="col">Fr</th>
+                                    <th scope="col">Sa</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="k-alt">9</td>
+                                    <td class="k-other-month k-weekend"><a class="k-link">25</a></td>
+                                    <td class="k-other-month"><a class="k-link">26</a></td>
+                                    <td class="k-other-month"><a class="k-link">27</a></td>
+                                    <td class="k-other-month"><a class="k-link">28</a></td>
+                                    <td><a class="k-link">1</a></td>
+                                    <td><a class="k-link">2</a></td>
+                                    <td class="k-weekend"><a class="k-link">3</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">10</td>
+                                    <td class="k-weekend"role="gridcell"><a class="k-link">4</a></td>
+                                    <td class="k-state-hover"><a class="k-link">5</a></td>
+                                    <td class="k-state-focused"><a class="k-link">6</a></td>
+                                    <td class="k-state-selected"><a class="k-link">7</a></td>
+                                    <td><a class="k-link">8</a></td>
+                                    <td><a class="k-link">9</a></td>
+                                    <td class="k-weekend"><a class="k-link">10</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">11</td>
+                                    <td class="k-weekend"><a class="k-link">11</a></td>
+                                    <td class="k-state-hover k-state-focused"><a class="k-link">12</a></td>
+                                    <td class="k-state-selected k-state-focused"><a class="k-link">13</a></td>
+                                    <td class="k-state-selected k-state-hover"><a class="k-link">14</a></td>
+                                    <td><a class="k-link">15</a></td>
+                                    <td><a class="k-link">16</a></td>
+                                    <td class="k-weekend"><a class="k-link">17</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">12</td>
+                                    <td class="k-weekend"><a class="k-link">18</a></td>
+                                    <td><a class="k-link">19</a></td>
+                                    <td><a class="k-link">20</a></td>
+                                    <td><a class="k-link">21</a></td>
+                                    <td><a class="k-link">22</a></td>
+                                    <td><a class="k-link">23</a></td>
+                                    <td class="k-weekend"><a class="k-link">24</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">13</td>
+                                    <td class="k-weekend"><a class="k-link">25</a></td>
+                                    <td><a class="k-link">26</a></td>
+                                    <td><a class="k-link">27</a></td>
+                                    <td><a class="k-link">28</a></td>
+                                    <td class="k-today"><a class="k-link">29</a></td>
+                                    <td><a class="k-link">30</a></td>
+                                    <td class="k-weekend"><a class="k-link">31</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">14</td>
+                                    <td class="k-other-month k-weekend"><a class="k-link">1</a></td>
+                                    <td class="k-other-month"><a class="k-link">2</a></td>
+                                    <td class="k-other-month"><a class="k-link">3</a></td>
+                                    <td class="k-other-month"><a class="k-link">4</a></td>
+                                    <td class="k-other-month"><a class="k-link">5</a></td>
+                                    <td class="k-other-month"><a class="k-link">6</a></td>
+                                    <td class="k-other-month k-weekend"><a class="k-link">7</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </form>
+        </section>
+        <section>
+            <div class="k-form">
+                <p>Grid</p>
+                <div class="k-widget k-grid" style="height: 100px;">
+                    <div class="k-grid-header">
+                        <div class="k-grid-header-wrap">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 250px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="k-header" rowspan="1" colspan="1">
+                                            Name
+                                        </th>
+                                    </tr>
+
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="k-grid-container">
+                        <div class="k-grid-content k-virtual-content">
+                            <div class="k-grid-table-wrap">
+                                <table class="k-grid-table" style="transform: translateY(0px);">
+                                    <colgroup>
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="1">
+                                                Chai
+                                            </td>
+                                        </tr>
+
+                                        <tr class="k-alt">
+                                            <td colspan="1">
+                                                Chang
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="1">
+                                                Aniseed Syrup
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="k-height-container" role="presentation">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Splitter</p>
+                <div style="height: 100px;" class="k-widget k-splitter k-splitter-flex k-splitter-vertical">
+                    <div class="k-pane-flex k-pane k-scrollable" style="order: 0;">
+                        <div class="k-widget k-splitter k-splitter-flex k-splitter-horizontal">
+                            <div class="k-pane k-scrollable" style="order: 0;">
+                                <div class="pane-content">
+                                    Pane A
+                                </div>
+                            </div>
+                            <div class="k-pane k-scrollable" style="order: 2;">
+                                <div class="pane-content">
+                                    Pane B
+                                </div>
+                            </div>
+
+                            <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" style="order: 1;">
+                                <div class="k-icon k-hidden"></div>
+                                <div class="k-resize-handle"></div>
+                                <div class="k-icon k-hidden"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="k-pane k-scrollable" style="order: 2;">
+                        <div class="pane-content">
+                            Pane C
+                        </div>
+                    </div>
+                    <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical" style="order: 1;">
+                        <div class="k-icon k-hidden"></div>
+                        <div class="k-resize-handle"></div>
+                        <div class="k-icon k-hidden"></div>
+                    </div>
+                </div>
+
+                <p>Angular Autocomplete</p>
+                <span class="k-widget k-autocomplete k-header" dir="ltr">
+                    <span class="k-searchbar">
+                        <input type="text" class="k-input" placeholder="Autocomplete..." dir="ltr" />
+                    </span>
+                </span>
+
+                <p>jQuery Autocomplete</p>
+                <span class="k-widget k-autocomplete"><input type="text" class="k-input" placeholder="Autocomplete..." /></span>
+
+                <p>Angular ComboBox</p>
+                <span class="k-widget k-combobox k-header k-combobox-clearable" dir="ltr">
+                    <span class="k-dropdown-wrap k-state-default">
+                        <span class="k-searchbar">
+                            <input placeholder="Combo..." class="k-input" dir="ltr">
+                        </span>
+                        <span class="k-icon k-clear-value k-i-close"></span>
+                        <span class="k-select">
+                            <span class="k-icon k-i-arrow-s"></span>
+                        </span>
+                    </span>
+                </span>
+
+                <p>jQuery ComboBox</p>
+                <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" placeholder="Combo..." /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+
+                <p>Angular DropDownList</p>
+                <span class="k-widget k-dropdown k-header" dir="ltr">
+                    <span class="k-dropdown-wrap k-state-default" dir="ltr">
+                        <span class="k-input">Dropdown...</span>
+                        <span class="k-select">
+                            <span class="k-icon k-i-arrow-s"></span>
+                        </span>
+                    </span>
+                </span>
+                <p>jQuery DropDownList</p>
+                <span class="k-widget k-dropdown"><span class="k-dropdown-wrap"><span class="k-input">Dropdown...</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+
+                <p>Angular MultiSelect</p>
+                <div class="k-widget k-multiselect k-header" dir="ltr">
+                    <div class="k-multiselect-wrap k-floatwrap">
+                        <span>
+                            <ul class="k-reset">
+                            </ul>
+                        </span>
+                        <span class="k-searchbar">
+                            <input placeholder="Multiselect..." class="k-input" dir="ltr">
+                        </span>
+                        <span class="k-icon k-clear-value k-i-close"></span>
+                    </div>
+                </div>
+
+                <p>jQuery MultiSelect</p>
+                <div class="k-widget k-multiselect"><div class="k-multiselect-wrap k-floatwrap"><input class="k-input" type="text" placeholder="Multiselect..." /></div></span></div>
+
+                <p>Angular DatePicker</p>
+                <kendo-datepicker class="k-widget k-datepicker k-header">
+                    <span class="k-picker-wrap k-state-default">
+                        <kendo-dateinput class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input">
+                            </span>
+                        </kendo-dateinput>
+                        <span class="k-select">
+                                    <span class="k-icon k-i-calendar"></span>
+                        </span>
+                    </span>
+                </kendo-datepicker>
+
+                <p>jQuery DatePicker</p>
+                <span class="k-widget k-datepicker"><span class="k-picker-wrap"><input type="text" class="k-input" placeholder="Datepicker..." /><span class="k-select"><span class="k-icon k-i-calendar"></span></span></span></span>
+
+                <p>Angular TimePicker</p>
+                <kendo-timepicker class="k-widget k-timepicker k-header">
+                    <span class="k-picker-wrap k-state-default">
+                        <kendo-dateinput class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" value="Angular">
+                            </span>
+                        </kendo-dateinput>
+                        <span class="k-select">
+                            <span class="k-icon k-i-clock"></span>
+                        </span>
+                    </span>
+                </kendo-timepicker>
+
+                <p>jQuery TimePicker</p>
+                <span class="k-widget k-timepicker"><span class="k-picker-wrap"><input type="text" class="k-input" placeholder="Timepicker..." /><span class="k-select"><span class="k-icon k-i-clock"></span></span></span></span>
+
+                <p>Angular NumericTextBox</p>
+                <kendo-numerictextbox dir="ltr" class="k-widget k-numerictextbox">
+                    <span class="k-numeric-wrap">
+                        <input class="k-input k-formatted-value">
+                        <span class="k-select">
+                            <span class="k-link k-link-increase">
+                                <span class="k-icon k-i-arrow-n"></span>
+                            </span>
+                            <span class="k-link k-link-decrease">
+                                <span class="k-icon k-i-arrow-s"></span>
+                            </span>
+                        </span>
+                    </span>
+                </kendo-numerictextbox>
+
+                <p>jQuery NumericTextBox</p>
+                <span class="k-widget k-numerictextbox"><span class="k-numeric-wrap k-state-default"><input class="k-formatted-value k-input"><input style="display: none;" class="k-input"><span class="k-icon k-i-warning" style="display: none;"></span><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-60-up"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-60-down"></span></span></span></span></span>
+            </div>
         </section>
 
     </div>

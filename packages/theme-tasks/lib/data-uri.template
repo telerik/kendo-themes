@@ -1,4 +1,4 @@
-@import "../../_mixins.scss";
+@import "../../mixins/_index.scss";
 
 @include exports("<FILENAME>") {
     @include register-data-uri("<FILENAME>", "data:<MIME>;base64,<BASE64>")

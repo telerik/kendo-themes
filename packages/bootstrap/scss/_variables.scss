@@ -1,4 +1,4 @@
-@import "_functions.scss";
+@import "functions/_index.scss";
 @import "_bootstrap-overrides.scss";
 @import "~bootstrap/scss/_functions.scss";
 @import "~bootstrap/scss/_variables.scss";
@@ -704,6 +704,8 @@ $textarea-default-width: 18em !default;
 $textarea-padding-x: $input-padding-x !default;
 $textarea-padding-y: $input-padding-y !default;
 
+$textarea-calc-height: $input-calc-height !default;
+
 $textarea-floating-label-padding: null !default;
 
 
@@ -937,6 +939,13 @@ $dropdownlist-focused-bg: $button-pressed-bg !default;
 $dropdownlist-focused-border: $button-pressed-border !default;
 $dropdownlist-focused-gradient: $button-pressed-gradient !default;
 $dropdownlist-focused-shadow: $button-focused-shadow !default;
+
+
+// Dropdowntree
+$dropdowntree-popup-spacer-x: $padding-x !default;
+$dropdowntree-popup-spacer-y: $dropdowntree-popup-spacer-x !default;
+$dropdowntree-filter-shadow: none !default;
+$dropdowntree-filter-spacer: 0 !default;
 
 
 // Multiselect

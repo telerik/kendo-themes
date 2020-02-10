@@ -1,4 +1,4 @@
-@import "_functions.scss";
+@import "functions/_index.scss";
 
 
 // Options
@@ -714,6 +714,8 @@ $textarea-default-width: 18em !default;
 $textarea-padding-x: $input-padding-x !default;
 $textarea-padding-y: $input-padding-y !default;
 
+$textarea-calc-height: $input-calc-height !default;
+
 $textarea-floating-label-padding: null !default;
 
 
@@ -947,6 +949,13 @@ $dropdownlist-focused-bg: $input-focused-bg !default;
 $dropdownlist-focused-border: $input-focused-border !default;
 $dropdownlist-focused-gradient: null !default;
 $dropdownlist-focused-shadow: $input-focused-shadow !default;
+
+
+// Dropdowntree
+$dropdowntree-popup-spacer-x: $padding-y-lg !default;
+$dropdowntree-popup-spacer-y: $dropdowntree-popup-spacer-x !default;
+$dropdowntree-filter-shadow: $popup-shadow !default;
+$dropdowntree-filter-spacer: $dropdowntree-popup-spacer-y !default;
 
 
 // Multiselect
@@ -1929,7 +1938,7 @@ $grid-header-gradient: $header-gradient !default;
 
 $grid-group-drag-clue-bg: $grid-header-bg !default;
 $grid-group-drag-clue-text: $grid-header-text !default;
-$grid-group-drag-clue-line-height: 1.5 !default;
+$grid-group-drag-clue-line-height: $line-height !default;
 
 $grid-alt-bg: rgba( contrast-wcag( $grid-bg ), .04 ) !default;
 $grid-alt-text: $grid-text !default;

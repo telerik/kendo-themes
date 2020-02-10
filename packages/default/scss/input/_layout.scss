@@ -25,14 +25,13 @@
         }
     }
 
-    .k-textbox,
-    .k-input.k-textbox {
-        height: calc( #{$input-border-width * 2} + #{$input-padding-y * 2} + #{$input-line-height * 1em} );
+    .k-textbox {
+        height: $input-calc-height;
     }
 
     .k-textarea {
         width: $textarea-default-width;
-        min-height: calc( #{$input-border-width * 2} + #{$input-padding-y * 2} + #{$input-line-height * 1em} );
+        min-height: $textarea-calc-height;
     }
 
     .k-maskedtextbox {
@@ -250,9 +249,18 @@
     }
 
     .k-form {
-        input:not(.k-checkbox):not(.k-radio),
-        .k-widget:not(.k-calendar):not(.k-switch) {
-            display: block;
+        .k-textbox,
+        .k-textarea,
+        .k-autocomplete,
+        .k-combobox,
+        .k-dropdown,
+        .k-dateinput,
+        .k-datepicker,
+        .k-datetimepicker,
+        .k-timepicker,
+        .k-numerictextbox,
+        .k-maskedtextbox {
+            display: flex;
         }
 
         .k-form-field {

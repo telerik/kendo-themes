@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Window</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        /* test page overrides */
+         .k-window {
+            position: relative;
+        }
+
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: start;
+        }
+
+        .grid-single {
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <section class="grid-single">
+            <div class="k-widget k-window k-rtl">
+                <div class="k-window-titlebar k-header">
+                    <span class="k-window-title">jQuery window</span>
+                    <div class="k-window-actions">
+                        <a href="#" class="k-button k-bare k-button-icon k-window-action"><span class="k-icon k-i-pin"></span></a>
+                        <a href="#" class="k-button k-bare k-button-icon k-window-action"><span class="k-icon k-i-window-minimize"></span></a>
+                        <a href="#" class="k-button k-bare k-button-icon k-window-action"><span class="k-icon k-i-window-maximize"></span></a>
+                        <a href="#" class="k-button k-bare k-button-icon k-window-action"><span class="k-icon k-i-close"></span></a>
+                    </div>
+                </div>
+                <div class="k-rtl k-window-content k-content">
+                    jQuery window content
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-single">
+            <div class="k-widget k-window k-rtl">
+                <div class="k-window-titlebar k-header">
+                    <span class="k-window-title"></span>
+                    <div class="k-window-actions">
+                        <a href="#" class="k-button k-bare k-button-icon k-window-action"><span class="k-icon k-i-pin"></span></a>
+                        <a href="#" class="k-button k-bare k-button-icon k-window-action"><span class="k-icon k-i-window-minimize"></span></a>
+                        <a href="#" class="k-button k-bare k-button-icon k-window-action"><span class="k-icon k-i-window-maximize"></span></a>
+                        <a href="#" class="k-button k-bare k-button-icon k-window-action"><span class="k-icon k-i-close"></span></a>
+                    </div>
+                </div>
+                <div class="k-rtl k-window-content k-content">
+                    jQuery window with no title specified
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-single">
+            <div class="k-widget k-window k-rtl">
+                <div class="k-window-titlebar k-header">
+                    <span class="k-window-title"></span>
+                    <div class="k-window-actions"></div>
+                </div>
+                <div class="k-rtl k-window-content k-content">
+                    jQuery window with empty title and no actions
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-single">
+            <div class="k-widget k-window k-rtl k-window-titleless">
+                <div class="k-rtl k-window-content k-content">
+                    jQiery window without a title
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-single">
+            <div class="k-widget k-window k-rtl">
+                <div class="k-window-titlebar k-header">
+                    <span class="k-window-title">jQuery Window minimized</span>
+                    <div class="k-window-actions">
+                        <a href="#" class="k-button k-bare k-button-icon k-window-action"><span class="k-icon k-i-window-restore"></span></a>
+                        <a href="#" class="k-button k-bare k-button-icon k-window-action" style="display: none;"><span class="k-icon k-i-window-maximize"></span></a>
+                        <a href="#" class="k-button k-bare k-button-icon k-window-action"><span class="k-icon k-i-close"></span></a>
+                    </div>
+                </div>
+                <div class="k-rtl k-window-content k-content" style="display: none;">
+                    jQuery Window content
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-single">
+            <div class="k-widget k-window k-window-wrapper" dir="rtl">
+                <div class="k-window-titlebar k-dialog-titlebar k-header">
+                    <div class="k-window-title">Angular Window</div>
+                    <button class="k-button-icon k-button k-bare">
+                        <span class="k-icon k-i-window-minimize"></span>
+                    </button>
+                    <button class="k-button-icon k-button k-bare">
+                        <span class="k-icon k-i-window-maximize"></span>
+                    </button>
+                    <button class="k-button-icon k-button k-bare">
+                        <span class="k-icon k-i-window-restore"></span>
+                    </button>
+                    <button class="k-button-icon k-button k-bare">
+                        <span class="k-icon k-i-close"></span>
+                    </button>
+                </div>
+                <div class="k-content k-window-content">
+                    Angular window content
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-single">
+            <div class="k-widget k-window k-window-wrapper" dir="rtl">
+                <div class="k-window-titlebar k-dialog-titlebar k-header">
+                    <div class="k-window-title"></div>
+                    <button class="k-button-icon k-button k-bare">
+                        <span class="k-icon k-i-window-minimize"></span>
+                    </button>
+                    <button class="k-button-icon k-button k-bare">
+                        <span class="k-icon k-i-window-maximize"></span>
+                    </button>
+                    <button class="k-button-icon k-button k-bare">
+                        <span class="k-icon k-i-window-restore"></span>
+                    </button>
+                    <button class="k-button-icon k-button k-bare" >
+                        <span class="k-icon k-i-close"></span>
+                    </button>
+                </div>
+                <div class="k-content k-window-content">
+                    <p>Angular window with no title specified</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-single">
+            <div class="k-widget k-window k-window-wrapper" dir="rtl">
+                <div class="k-window-titlebar k-dialog-titlebar k-header">
+                    <div class="k-window-title"></div>
+                </div>
+                <div class="k-content k-window-content">
+                    Angular window with empty title and no actions
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-single">
+            <div class="k-widget k-window k-window-wrapper" dir="rtl">
+                <div class="k-window-titlebar k-dialog-titlebar k-header">
+                    <div class="k-window-title">Angular window minimized</div>
+                    <button class="k-button-icon k-button k-bare" style="display: none;">
+                        <span class="k-icon k-i-window-maximize"></span>
+                    </button>
+                    <button class="k-button-icon k-button k-bare" style="display: inline-flex;">
+                        <span class="k-icon k-i-window-restore"></span>
+                    </button>
+                    <button class="k-button-icon k-button k-bare" style="display: none;">
+                        <span class="k-icon k-i-window-minimize"></span>
+                    </button>
+                    <button class="k-button-icon k-button k-bare" >
+                        <span class="k-icon k-i-close"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

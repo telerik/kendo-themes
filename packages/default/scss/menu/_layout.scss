@@ -75,8 +75,12 @@
         }
 
         > .k-separator {
-            @extend %hr-vertical;
             margin: 0 $menu-separator-spacing;
+            width: 0;
+            height: auto;
+            border-width: 0 0 0 1px;
+            border-style: solid;
+            flex-shrink: 0;
         }
     }
 
@@ -95,8 +99,12 @@
         }
 
         > .k-separator {
-            @extend %hr;
             margin: $menu-separator-spacing 0;
+            height: 0;
+            border-width: 1px 0 0;
+            border-style: solid;
+            border-color: $panel-border;
+            display: block;
         }
     }
 
@@ -142,8 +150,12 @@
         }
 
         .k-separator {
-            @extend %hr;
             margin: $menu-separator-spacing 0;
+            height: 0;
+            border-width: 1px 0 0;
+            border-style: solid;
+            border-color: $panel-border;
+            display: block;
         }
     }
 
