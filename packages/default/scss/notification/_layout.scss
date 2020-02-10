@@ -20,12 +20,12 @@
     }
 
     .k-notification {
-        @include border-radius();
+        @include border-radius( $notification-border-radius );
         padding: $notification-padding-y $notification-padding-x;
         border-width: $notification-border-width;
         border-style: solid;
-        font-size: $font-size-sm;
-        line-height: $line-height-em;
+        font-size: $notification-font-size;
+        line-height: $notification-line-height;
         cursor: default;
         position: relative;
     }

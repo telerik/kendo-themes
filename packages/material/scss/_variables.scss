@@ -1640,6 +1640,11 @@ $drawer-selected-hover-bg: $hovered-bg !default;
 $notification-padding-x: 16px !default;
 $notification-padding-y: 14px !default;
 $notification-border-width: 0 !default;
+$notification-border-radius: $border-radius !default;
+
+$notification-font-size: $font-size-sm !default;
+$notification-line-height: $line-height !default;
+
 $notification-icon-offset: 4px !default;
 $notification-icon-spacing: $icon-spacing !default;
 
