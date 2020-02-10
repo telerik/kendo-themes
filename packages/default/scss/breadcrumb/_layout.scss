@@ -31,7 +31,7 @@
 
         .k-breadcrumb-link,
         .k-breadcrumb-root-link {
-            @include border-radius();
+            @include border-radius( $breadcrumb-link-border-radius );
             padding: $breadcrumb-link-padding-y $breadcrumb-link-padding-x;
             position: relative;
             display: inline-flex;
