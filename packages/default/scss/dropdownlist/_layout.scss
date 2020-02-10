@@ -45,7 +45,7 @@
             .k-select {
                 @include border-right-radius-only();
                 padding: 0;
-                width: button-inner-size();
+                width: $button-inner-calc-size;
                 border-width: 0;
                 box-sizing: border-box;
                 border-style: solid;
@@ -96,8 +96,8 @@
                 }
 
                 .k-select {
-                    width: button-inner-size();
-                    height: button-inner-size();
+                    width: $button-inner-calc-size;
+                    height: $button-inner-calc-size;
                 }
             }
         }

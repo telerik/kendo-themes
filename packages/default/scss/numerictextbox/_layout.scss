@@ -1,5 +1,5 @@
 @include exports("numerictextbox/layout") {
-    $spinner-width: button-inner-size() !default;
+    $spinner-width: $button-inner-calc-size !default;
     $spinner-icon-offset: 2px !default;
 
     // Base

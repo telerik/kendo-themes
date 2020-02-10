@@ -235,7 +235,7 @@
 
         // sass-lint:disable no-important
         .k-tabstrip-items {
-            margin: 0 button-size() !important;
+            margin: 0 $button-calc-size !important;
             border-width: 0;
         }
         .k-tabstrip-prev {

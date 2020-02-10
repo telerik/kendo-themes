@@ -564,8 +564,8 @@ $button-padding-x-sm: $button-padding-x / 2 !default;
 $button-padding-y-sm: $button-padding-y / 2 !default;
 $button-line-height-sm: $form-line-height-sm !default;
 
+$button-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} + #{$button-border-width * 2} ) !default;
 $button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} ) !default;
-$button-calc-size: calc( #{$button-inner-calc-size} + 2px ) !default;
 
 /// The text color of the buttons.
 /// @group buttons
@@ -900,7 +900,7 @@ $colorpicker-select-focused-shadow: $button-focused-shadow !default;
 // Comboboxes
 $combobox-select-padding-x: 0 !default;
 $combobox-select-padding-y: 0 !default;
-$combobox-select-width: button-inner-size() !default;
+$combobox-select-width: $button-inner-calc-size !default;
 $combobox-select-border-width: 0 !default;
 
 $combobox-bg: $input-bg !default;
@@ -1032,7 +1032,7 @@ $numeric-button-pressed-gradient: $button-pressed-gradient !default;
 $numeric-button-pressed-shadow: $button-pressed-shadow !default;
 
 
-$spinner-width: button-inner-size() !default;
+$spinner-width: $button-inner-calc-size !default;
 $spinner-icon-offset: 2px !default;
 
 
@@ -1452,7 +1452,9 @@ $toolbar-button-padding-y: $button-padding-y !default;
 $toolbar-button-line-height: $button-line-height !default;
 
 $toolbar-button-calc-size: calc( #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} + #{$toolbar-button-border-width * 2} ) !default;
-$toolbar-inner-calc-size: calc( #{$toolbar-button-calc-size} + #{$toolbar-padding-y * 2} ) !default;
+$toolbar-button-inner-calc-size: calc( #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} ) !default;
+
+$toolbar-inner-calc-size: calc( #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} + #{$toolbar-button-border-width * 2} + #{$toolbar-padding-y * 2} ) !default;
 
 $toolbar-button-expanded-bg: null !default;
 $toolbar-button-expanded-shadow: none !default;

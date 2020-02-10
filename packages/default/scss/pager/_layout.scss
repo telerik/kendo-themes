@@ -15,8 +15,8 @@
         .k-link,
         .k-state-selected {
             padding: $pager-buttons-padding;
-            min-width: button-size();
-            height: button-size();
+            min-width: $button-calc-size;
+            height: $button-calc-size;
             box-sizing: border-box;
             display: inline-flex;
             align-items: center;
@@ -133,8 +133,8 @@
             overflow: visible;
 
             .k-pager-nav + .k-pager-numbers-wrap {
-                width: button-size(2);
-                height: button-size();
+                width: calc( #{$button-calc-size} * 2 );
+                height: $button-calc-size;
                 box-sizing: border-box;
                 border-color: inherit;
                 margin: 0 $pager-padding-x;
@@ -166,8 +166,8 @@
                 .k-state-selected {
                     margin: 0;
                     border-width: 0;
-                    width: button-size(2);
-                    height: button-size();
+                    width: calc( #{$button-calc-size} * 2 );
+                    height: $button-calc-size;
                 }
 
                 &.k-state-expanded {

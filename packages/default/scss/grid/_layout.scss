@@ -4,7 +4,7 @@
 
     $grid-group-dropclue-size: 6px;
     $grid-group-dropclue-line-size: $grid-group-dropclue-size / 3;
-    $grid-group-dropclue-height: button-size() !default;
+    $grid-group-dropclue-height: $button-calc-size !default;
     $grid-group-dropclue-top: 3px !default;
     $grid-group-drag-clue-opacity: 1 !default;
 
@@ -15,7 +15,7 @@
     // $grid-row-half-inner-height: calc( #{$line-height-em / 2} + #{$cell-padding-y} );
 
     // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
-    $grid-command-cell-padding-y: calc( #{$cell-padding-y} + (#{$line-height-em} - #{button-size()}) / 2 ) !default;
+    $grid-command-cell-padding-y: calc( #{$cell-padding-y} - (#{$button-calc-size} - #{$line-height-em}) / 2 ) !default;
 
     $grid-form-component-vertical-align: middle !default;
     $grid-hierarchy-col-width: ($icon-size * 2) !default;
@@ -31,7 +31,7 @@
     $grid-sorted-icon-spacing: calc( #{$padding-x} - 1px ) !default;
 
     // helper variables
-    $grid-filterable-icon-spacing: calc( #{ button-size() } + #{$grid-header-menu-icon-spacing} );
+    $grid-filterable-icon-spacing: calc( #{$button-calc-size} + #{$grid-header-menu-icon-spacing} );
     $default-scrollbar-width: 17px;
 
     .k-grid {
@@ -410,7 +410,7 @@
         border-width: 0 0 1px;
         border-style: solid;
         border-color: inherit;
-        line-height: button-size();
+        line-height: $button-calc-size;
     }
 
     .k-grouping-header-flex {
@@ -428,7 +428,7 @@
 
             &:last-child {
                 flex-grow: 1;
-                line-height: button-size();
+                line-height: $button-calc-size;
             }
         }
     }
@@ -623,7 +623,7 @@
 
             .k-ie &,
             .k-edge & {
-                padding-right: calc( #{ button-size() } + #{ $grid-header-menu-icon-spacing });
+                padding-right: calc( #{ $button-calc-size } + #{ $grid-header-menu-icon-spacing });
             }
         }
 
@@ -634,8 +634,8 @@
         .k-grid-filter,
         .k-header-column-menu {
             padding: $button-padding-y;
-            width: button-size();
-            height: button-size();
+            width: $button-calc-size;
+            height: $button-calc-size;
             box-sizing: border-box;
             outline: 0;
             line-height: $form-line-height;
@@ -645,16 +645,16 @@
             justify-content: center;
             position: absolute;
             right: $grid-header-menu-icon-spacing;
-            bottom: calc( #{ $grid-header-padding-y } + #{ $line-height-em / 2 } + (-1 * #{ button-inner-size(.5) } ) );
+            bottom: calc( #{ $grid-header-padding-y } + #{ $line-height-em / 2 } - #{ $button-inner-calc-size / 2 } );
             z-index: 1;
 
             .k-ie &,
             .k-edge & {
                 position: static;
                 float: right;
-                margin-top: calc( (#{ button-size() } - #{ $form-line-height * 1em}) / -2);
-                margin-bottom: calc( (#{ button-size() } - #{ $form-line-height * 1em}) / -2);
-                margin-right: calc( -1 * #{ button-size() });
+                margin-top: calc( (#{ $button-calc-size } - #{ $form-line-height * 1em}) / -2);
+                margin-bottom: calc( (#{ $button-calc-size } - #{ $form-line-height * 1em}) / -2);
+                margin-right: calc( -1 * #{ $button-calc-size });
             }
 
             &:hover {
@@ -775,7 +775,7 @@
         .k-filtercell-operator {
             > .k-button.k-clear-button-visible {
                 visibility: visible;
-                height: button-size();
+                height: $button-calc-size;
             }
 
             > .k-button:not(.k-clear-button-visible) {

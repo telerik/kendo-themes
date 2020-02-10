@@ -77,8 +77,8 @@
             }
         }
         &-icon {
-            width: button-size();
-            height: button-size();
+            width: $button-calc-size;
+            height: $button-calc-size;
             padding: $button-padding-y;
 
             .k-text {

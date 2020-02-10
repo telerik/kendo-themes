@@ -79,8 +79,8 @@
             .k-gantt-pdf,
             .k-gantt-create {
                 padding: $button-padding-y;
-                width: button-size();
-                height: button-size();
+                width: $button-calc-size;
+                height: $button-calc-size;
 
                 .k-icon {
                     margin: 0;
