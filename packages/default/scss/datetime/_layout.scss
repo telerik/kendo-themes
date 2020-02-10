@@ -137,13 +137,13 @@
     .k-timepicker {
 
         .k-i-warning {
-            right: calc( #{ button-inner-size( 1 ) } + #{ $input-padding-x-sm });
+            right: calc( #{ $button-inner-calc-size } + #{ $input-padding-x-sm });
         }
 
         .k-rtl &,
         &[dir="rtl"] {
             .k-i-warning {
-                left: calc( #{ button-inner-size( 1 ) } + #{ $input-padding-x-sm });
+                left: calc( #{ $button-inner-calc-size } + #{ $input-padding-x-sm });
             }
         }
     }
@@ -163,7 +163,7 @@
 
         .k-link {
             padding: 0;
-            width: button-inner-size();
+            width: $button-inner-calc-size;
             height: 100%;
             border-width: 0;
             border-style: solid;
@@ -175,13 +175,13 @@
         }
 
         .k-i-warning {
-            right: calc( #{ button-inner-size( 2 ) } + #{ $input-padding-x-sm });
+            right: calc( #{ $button-inner-calc-size } * 2 + #{ $input-padding-x-sm });
         }
 
         .k-rtl &,
         &[dir="rtl"] {
             .k-i-warning {
-                left: calc( #{ button-inner-size( 2 ) } + #{ $input-padding-x-sm });
+                left: calc( #{ $button-inner-calc-size } * 2 + #{ $input-padding-x-sm });
             }
         }
     }
@@ -428,7 +428,7 @@
         right: 0;
         transform: translateY(-50%);
         width: 100%;
-        height: button-inner-size();
+        height: $button-inner-calc-size;
         z-index: 1;
         border-width: $time-highlight-size 0;
         border-style: solid;

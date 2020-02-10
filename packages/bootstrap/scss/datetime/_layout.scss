@@ -72,7 +72,7 @@
         }
 
         .k-i-warning {
-            right: calc( #{ button-inner-size( 2 ) } + #{ $input-padding-x-sm });
+            right: calc( #{ $button-inner-calc-size } * 2 + #{ $input-padding-x-sm });
         }
 
         .k-state-invalid {
@@ -82,7 +82,7 @@
         .k-rtl &,
         &[dir="rtl"] {
             .k-i-warning {
-                left: calc( #{ button-inner-size( 2 ) } + #{ $input-padding-x-sm });
+                left: calc( #{ $button-inner-calc-size } * 2 + #{ $input-padding-x-sm });
             }
         }
     }

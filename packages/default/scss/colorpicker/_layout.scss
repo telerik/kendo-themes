@@ -11,8 +11,8 @@
 
         .k-selected-color {
             padding: $button-padding-y;
-            width: button-inner-size();
-            height: button-inner-size();
+            width: $button-inner-calc-size;
+            height: $button-inner-calc-size;
             box-sizing: border-box;
             line-height: 0;
             position: relative;
@@ -35,8 +35,8 @@
 
         .k-tool-icon {
             padding: $button-padding-y;
-            width: button-inner-size();
-            height: button-inner-size();
+            width: $button-inner-calc-size;
+            height: $button-inner-calc-size;
             border-width: 0 $colorpicker-select-border-width 0 0;
             border-style: solid;
             border-color: inherit;
@@ -340,7 +340,7 @@
             position: relative;
         }
         .k-color-value {
-            margin: 0 0 0 button-inner-size(2);
+            margin: 0 0 0 calc( #{$button-inner-calc-size} * 2 );
             padding: $input-padding-y $input-padding-x;
             width: 100%;
             border: 0;
@@ -388,7 +388,7 @@
             }
 
             .k-color-value {
-                margin: 0 button-inner-size(2) 0 0;
+                margin: 0 calc( #{$button-inner-calc-size} * 2 ) 0 0;
                 direction: initial;
                 text-align: right;
             }

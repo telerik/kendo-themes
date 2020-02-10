@@ -29,7 +29,7 @@
         }
         .k-select {
             padding: 0;
-            width: button-inner-size();
+            width: $button-inner-calc-size;
             border-width: 0;
         }
 

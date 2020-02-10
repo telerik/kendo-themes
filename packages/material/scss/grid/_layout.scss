@@ -12,7 +12,7 @@ $grid-group-indicator-border-radius: calc( #{$font-size} + #{$button-padding-y} 
 $grid-group-indicator-gap: 8px !default;
 
 $grid-group-dropclue-height: calc( #{$font-size * 2} + #{$padding-y * 2} ) !default;
-$grid-group-dropclue-top: calc( ( #{button-size()} + #{$grid-grouping-header-padding-y * 2} - #{$grid-group-dropclue-height} ) / 2) !default;
+$grid-group-dropclue-top: calc( ( #{$button-calc-size} + #{$grid-grouping-header-padding-y * 2} - #{$grid-group-dropclue-height} ) / 2) !default;
 $grid-group-drag-clue-opacity: .9 !default;
 
 @import "~@progress/kendo-theme-default/scss/grid/_layout.scss";
@@ -316,7 +316,7 @@ $grid-group-drag-clue-opacity: .9 !default;
 
         .k-textbox,
         .k-textbox.k-input {
-            height: button-size();
+            height: $button-calc-size;
         }
     }
 }

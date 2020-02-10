@@ -167,8 +167,8 @@
         // Tools
         .k-tool {
             padding: $toolbar-button-padding-y;
-            width: toolbar-button-size();
-            height: toolbar-button-size();
+            width: $toolbar-button-calc-size;
+            height: $toolbar-button-calc-size;
             border-width: $toolbar-button-border-width;
             border-style: solid;
             box-sizing: border-box;
@@ -548,7 +548,7 @@
         }
         .k-list .k-item {
             padding: $button-padding-y;
-            height: button-size();
+            height: $button-calc-size;
             box-sizing: border-box;
             justify-content: center;
             flex: 1 0 33%;
