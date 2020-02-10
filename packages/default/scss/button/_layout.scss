@@ -2,7 +2,7 @@
 
     // Button
     .k-button {
-        @include border-radius();
+        @include border-radius( $button-border-radius );
         padding: $button-padding-y $button-padding-x;
         box-sizing: border-box;
         border-width: $button-border-width;
@@ -64,7 +64,6 @@
             .k-image,
             .k-sprite {
                 margin: 0 ($button-padding-x / 2) 0 (-$button-padding-x / 2);
-
             }
 
             .k-rtl &,
@@ -140,15 +139,15 @@
 
         .k-group-start,
         .k-button:first-child {
-            @include border-left-radius();
+            @include border-left-radius( $button-border-radius );
         }
         .k-group-end,
         .k-button:last-child {
-            @include border-right-radius();
+            @include border-right-radius( $button-border-radius );
         }
         .k-group-start.k-group-end,
         .k-button:first-child:last-child {
-            @include border-radius();
+            @include border-radius( $button-border-radius );
         }
 
         > input[type="radio"],
@@ -186,7 +185,7 @@
         outline: none;
     }
     .k-split-button.k-button-group.k-state-focused {
-        @include border-radius();
+        @include border-radius( $button-border-radius );
     }
 
     .k-split-button.k-widget {
@@ -196,11 +195,11 @@
 
     .k-split-button.k-button-group .k-button {
         &:first-child {
-            @include border-left-radius();
+            @include border-left-radius( $button-border-radius );
         }
 
         &:nth-child(2) {
-            @include border-right-radius();
+            @include border-right-radius( $button-border-radius );
         }
     }
 
@@ -257,15 +256,15 @@
 
             .k-group-start,
             .k-button:first-child {
-                @include border-right-radius();
+                @include border-right-radius( $button-border-radius );
             }
             .k-group-end,
             .k-button:last-child {
-                @include border-left-radius();
+                @include border-left-radius( $button-border-radius );
             }
             .k-group-start.k-group-end,
             .k-button:first-child:last-child {
-                @include border-radius();
+                @include border-radius( $button-border-radius );
             }
 
         }
@@ -274,10 +273,10 @@
         .k-split-button {
 
             .k-button {
-                @include border-right-radius-only();
+                @include border-right-radius-only( $button-border-radius );
             }
             .k-split-button-arrow {
-                @include border-left-radius-only();
+                @include border-left-radius-only( $button-border-radius );
                 margin-left: 0;
                 margin-right: -1px;
             }
@@ -363,7 +362,7 @@
     .k-button {
 
         &::after {
-            @include border-radius();
+            @include border-radius( $button-border-radius );
             content: "";
             opacity: 0;
             display: none;
