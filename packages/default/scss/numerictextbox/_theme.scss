@@ -34,7 +34,7 @@
                 > .k-state-selected,
                 > .k-state-active {
                     @include fill(
-                        darken($text-color, 25%),
+                        darken($body-text, 25%),
                         $numeric-button-hovered-bg,
                         $numeric-button-hovered-border,
                         $numeric-button-hovered-gradient

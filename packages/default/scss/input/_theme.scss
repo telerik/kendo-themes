@@ -39,8 +39,8 @@
         // Selection
         &::selection {
             @include fill (
-                $color: $accent-contrast,
-                $bg: $accent
+                $color: $primary-contrast,
+                $bg: $primary
             );
         }
     }
@@ -50,8 +50,8 @@
     .k-textarea {
         &::selection {
             @include fill (
-                $color: $accent-contrast,
-                $bg: $accent
+                $color: $primary-contrast,
+                $bg: $primary
             );
         }
 
@@ -90,16 +90,16 @@
 
     .k-form,
     .k-form-inline {
-        @include fill ( $color: $text-color );
+        @include fill ( $color: $body-text );
 
         fieldset {
             legend {
-                @include fill ( $color: $form-fieldset-legend-text );
+                @include fill ( $color: $fieldset-legend-text );
             }
         }
 
         .k-field-info {
-            @include fill ( $color: lighten($text-color, 33%) );
+            @include fill ( $color: lighten($body-text, 33%) );
         }
 
         .k-alert-error {
@@ -109,6 +109,6 @@
 
     .k-required,
     .k-required.k-field-info {
-        @include fill ( $color: $accent );
+        @include fill ( $color: $primary );
     }
 }

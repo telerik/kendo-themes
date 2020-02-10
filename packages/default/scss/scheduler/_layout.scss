@@ -185,40 +185,6 @@
         }
     }
 
-    %ul-button-group {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        li {
-            border-width: $button-border-width;
-            border-style: solid;
-            position: relative;
-            z-index: 1;
-        }
-        li + li {
-            margin-left: -$button-border-width;
-        }
-        .k-state-hover,
-        .k-state-selected {
-            z-index: 2;
-        }
-
-
-        .k-link {
-            padding: $button-padding-y $button-padding-x;
-            box-sizing: border-box;
-            color: inherit;
-            text-decoration: none;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-        }
-    }
-
-
     // Header and footer
     .k-scheduler-toolbar,
     .k-scheduler-footer {
@@ -256,8 +222,37 @@
 
     // Scheduler navigation
     .k-scheduler-navigation {
-        @extend %ul-button-group;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         flex: 1;
+
+        li {
+            border-width: $button-border-width;
+            border-style: solid;
+            position: relative;
+            z-index: 1;
+        }
+        li + li {
+            margin-left: -$button-border-width;
+        }
+        .k-state-hover,
+        .k-state-selected {
+            z-index: 2;
+        }
+
+
+        .k-link {
+            padding: $button-padding-y $button-padding-x;
+            box-sizing: border-box;
+            color: inherit;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
 
 
         // Prev / next
@@ -313,8 +308,37 @@
 
     // View switcher
     .k-scheduler-views {
-        @extend %ul-button-group;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         margin-left: auto;
+
+        li {
+            border-width: $button-border-width;
+            border-style: solid;
+            position: relative;
+            z-index: 1;
+        }
+        li + li {
+            margin-left: -$button-border-width;
+        }
+        .k-state-hover,
+        .k-state-selected {
+            z-index: 2;
+        }
+
+
+        .k-link {
+            padding: $button-padding-y $button-padding-x;
+            box-sizing: border-box;
+            color: inherit;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
 
         li:first-child { @include border-radius(); }
         li:first-child + li { @include border-left-radius-only(); }
@@ -367,7 +391,36 @@
 
     // Scheduler footer
     .k-scheduler-footer {
-        @extend %ul-button-group;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        li {
+            border-width: $button-border-width;
+            border-style: solid;
+            position: relative;
+            z-index: 1;
+        }
+        li + li {
+            margin-left: -$button-border-width;
+        }
+        .k-state-hover,
+        .k-state-selected {
+            z-index: 2;
+        }
+
+
+        .k-link {
+            padding: $button-padding-y $button-padding-x;
+            box-sizing: border-box;
+            color: inherit;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
 
         li {
             @include border-radius();

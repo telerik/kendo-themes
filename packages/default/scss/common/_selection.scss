@@ -1,15 +1,3 @@
-@include exports( "common/selection/text-selection" ) {
-
-    %text-selection {
-        ::selection {
-            background-color: $accent;
-            color: $accent-contrast;
-        }
-    }
-
-}
-
-
 @include exports( "common/selection/marquee" ) {
 
     .k-marquee {

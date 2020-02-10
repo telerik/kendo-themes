@@ -2,7 +2,7 @@
 
     // sass-lint:disable-block no-important
 
-    .k-text-primary     { color: $accent !important; }
+    .k-text-primary     { color: $primary !important; }
     .k-text-info        { color: $info !important; }
     .k-text-success     { color: $success !important; }
     .k-text-warning     { color: $warning !important; }
@@ -15,7 +15,7 @@
 
     // sass-lint:disable-block no-important
 
-    .k-bg-primary       { background-color: $accent !important; }
+    .k-bg-primary       { background-color: $primary !important; }
     .k-bg-info          { background-color: $info !important; }
     .k-bg-success       { background-color: $success !important; }
     .k-bg-warning       { background-color: $warning !important; }
@@ -25,14 +25,14 @@
 
 
 @mixin variant( $base ) {
-    background-color: color-level($base, 10);
-    color: color-level($base, -6);
-    border-color: color-level($base, 9);
+    background-color: tint($base, 10);
+    color: shade($base, 6);
+    border-color: tint($base, 9);
 }
 
 @include exports( "common/decoration/variant" ) {
 
-    .k-state-primary    { @include variant( $accent ); }
+    .k-state-primary    { @include variant( $primary ); }
     .k-state-info       { @include variant( $info ); }
     .k-state-success    { @include variant( $success ); }
     .k-state-warning    { @include variant( $warning ); }

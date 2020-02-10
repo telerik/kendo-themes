@@ -269,6 +269,50 @@ $linear-channel-values: (
     1
 );
 
+/// Set a specific jump point for requesting color jumps
+/// @group color-system
+/// @access private
+$color-level-step: if(
+    /* check for existance of bootstrap variable */
+    variable-exists("theme-color-interval"),
+    $theme-color-interval,
+    /* fallback */
+    8%
+) !default;
+
+/// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+/// @group color-system
+/// @access private
+$yiq-threshold: if(
+    /* check for existance of bootstrap variable */
+    variable-exists("yiq-contrasted-threshold"),
+    $yiq-contrasted-threshold,
+    /* fallback */
+    150
+) !default;
+
+/// Dark color for use in YIQ color contrast function.
+/// @group color-system
+/// @access private
+$yiq-dark: if(
+    /* check for existance of bootstrap variable */
+    variable-exists("yiq-text-dark"),
+    $yiq-text-dark,
+    /* fallback */
+    black
+) !default;
+
+/// Light color for use in YIQ color contrast function.
+/// @group color-system
+/// @access private
+$yiq-light: if(
+    /* check for existance of bootstrap variable */
+    variable-exists("yiq-text-light"),
+    $yiq-text-light,
+    /* fallback */
+    white
+) !default;
+
 // Calculate the luminance for a color.
 // See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
 @function luminance($color) {
@@ -286,7 +330,7 @@ $linear-channel-values: (
         @return $color;
     }
 
-    $base: if($level > 0, #ffffff, #000000);
+    $base: if($level < 0, #ffffff, #000000);
     $level: abs($level);
 
     @if ( unit($level) == "%" ) {
@@ -297,11 +341,11 @@ $linear-channel-values: (
 }
 
 @function tint( $color, $level: 1 ) {
-    @return color-level( $color, $level );
+    @return color-level( $color, -1 * $level );
 }
 
 @function shade( $color, $level: 1 ) {
-    @return color-level( $color, - $level );
+    @return color-level( $color, 1 * $level );
 }
 
 @function try-shade($color, $level: 1) {
@@ -358,9 +402,9 @@ $linear-channel-values: (
 
     @return $yiq;
 }
-@function contrast-yiq($color, $dark: #000000, $light: #ffffff) {
+@function contrast-yiq($color, $dark: $yiq-dark, $light: $yiq-light) {
     $yiq: yiq($color);
-    $out: if($yiq >= 150, $dark, $light);
+    $out: if($yiq >= $yiq-threshold, $dark, $light);
     // @debug yiq;
     @return $out;
 }

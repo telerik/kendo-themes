@@ -94,12 +94,12 @@
     .k-spreadsheet .k-resize-handle,
     .k-spreadsheet .k-resize-hint-handle,
     .k-spreadsheet .k-resize-hint-marker {
-        background-color: $accent;
+        background-color: $primary;
     }
 
     // Comments
     .k-spreadsheet-has-comment::after {
-        border-color: $accent $accent transparent transparent;
+        border-color: $primary $primary transparent transparent;
     }
 
     // Validation
@@ -116,7 +116,7 @@
 
     // Filter button
     .k-spreadsheet .k-filter-range {
-        border-color: $accent;
+        border-color: $primary;
     }
     .k-spreadsheet-filter {
         @include appearance( button );
@@ -180,8 +180,7 @@
 @include exports( "spreadsheet/drawing/theme" ) {
 
     .k-spreadsheet-insert-image-dialog {
-        border-color: $spreadsheet-insert-image-dialog-preview-border-bg;
-        border-radius: $spreadsheet-insert-image-dialog-preview-border-radius;
+        border-color: $spreadsheet-insert-image-dialog-preview-border;
 
         .k-spreadsheet-has-image {
             &:hover,
@@ -225,7 +224,7 @@
     [dir="rtl"] .k-spreadsheet {
 
         .k-spreadsheet-has-comment::after {
-            border-color: $accent transparent transparent $accent;
+            border-color: $primary transparent transparent $primary;
         }
 
         .k-dirty {

@@ -1,13 +1,19 @@
 @include exports("map/theme") {
 
     .k-map {
+        @include fill(
+            $map-text,
+            $map-bg,
+            $map-border
+        );
 
         .k-navigator {
             @include appearance( button );
+            @include box-shadow( $button-shadow );
         }
 
         .k-marker {
-            color: $accent;
+            color: $map-marker-fill;
         }
     }
 

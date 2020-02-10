@@ -42,60 +42,12 @@ The following table lists the available variables for customizing the Material t
 <th>Description</th>
 </tr>
 <tr>
-<td>$font-family-monospace</td>
-<td>
-    
-    Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace
-</td>
-<td>Font family for monospaced text. Used for styling the code.
-</td>
-</tr>
-<tr>
 <td>$border-radius</td>
 <td>
     
     2px
 </td>
 <td>Border radius for all components.
-</td>
-</tr>
-<tr>
-<td>$primary</td>
-<td>
-    
-    material-color($primary-palette, default)
-</td>
-<td>The color that focuses the user attention.<br/>
-Used for primary buttons and for elements of primary importance across the theme.
-</td>
-</tr>
-<tr>
-<td>$primary-contrast</td>
-<td>
-    
-    material-color($primary-palette, default-contrast)
-</td>
-<td>The color used along with the primary color denoted by $primary.<br/>
-Used to provide contrast between the background and foreground colors.
-</td>
-</tr>
-<tr>
-<td>$secondary</td>
-<td>
-    
-    material-color($secondary-palette, default)
-</td>
-<td>The secondary color of the theme.
-</td>
-</tr>
-<tr>
-<td>$secondary-contrast</td>
-<td>
-    
-    material-color($secondary-palette, default-contrast)
-</td>
-<td>The color used along with the secondary color denoted by $secondary.<br/>
-Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
@@ -111,7 +63,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$base-text</td>
 <td>
     
-    $component-text
+    map-get($theme, component-text)
 </td>
 <td>The text color of the components' chrome area.
 </td>
@@ -204,42 +156,6 @@ Used to provide contrast between the background and foreground colors.
     null
 </td>
 <td>The gradient background of selected items.
-</td>
-</tr>
-<tr>
-<td>$info</td>
-<td>
-    <span class="color-preview" style="background-color: #0058e9"></span>
-    #0058e9
-</td>
-<td>The color for informational messages and states.
-</td>
-</tr>
-<tr>
-<td>$success</td>
-<td>
-    <span class="color-preview" style="background-color: #37b400"></span>
-    #37b400
-</td>
-<td>The color for success messages and states.
-</td>
-</tr>
-<tr>
-<td>$warning</td>
-<td>
-    <span class="color-preview" style="background-color: #ffc000"></span>
-    #ffc000
-</td>
-<td>The color for warning messages and states.
-</td>
-</tr>
-<tr>
-<td>$error</td>
-<td>
-    <span class="color-preview" style="background-color: #f31700"></span>
-    #f31700
-</td>
-<td>The color for error messages and states.
 </td>
 </tr>
 </table>
@@ -466,7 +382,7 @@ Used to provide contrast between the background and foreground colors.
 </table>
 
 
-### Fonts
+### Color System
 
 <table class="theme-variables">
 <colgroup>
@@ -480,30 +396,78 @@ Used to provide contrast between the background and foreground colors.
 <th>Description</th>
 </tr>
 <tr>
-<td>$font-size</td>
+<td>$primary</td>
 <td>
     
-    14px
+    material-color($primary-palette, default)
 </td>
-<td>Base font size across all components.
+<td>The color that focuses the user attention.<br/>
+Used for primary buttons and for elements of primary importance across the theme.
 </td>
 </tr>
 <tr>
-<td>$font-family</td>
+<td>$primary-contrast</td>
 <td>
     
-    Roboto, "Helvetica Neue", sans-serif
+    material-color($primary-palette, default-contrast)
 </td>
-<td>Font family across all components.
+<td>The color used along with the primary color denoted by $primary.<br/>
+Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
-<td>$line-height</td>
+<td>$secondary</td>
 <td>
     
-    (28 / 14)
+    material-color($secondary-palette, default)
 </td>
-<td>Line height used along with $font-size.
+<td>The secondary color of the theme.
+</td>
+</tr>
+<tr>
+<td>$secondary-contrast</td>
+<td>
+    
+    material-color($secondary-palette, default-contrast)
+</td>
+<td>The color used along with the secondary color denoted by $secondary.<br/>
+Used to provide contrast between the background and foreground colors.
+</td>
+</tr>
+<tr>
+<td>$info</td>
+<td>
+    <span class="color-preview" style="background-color: #0058e9"></span>
+    #0058e9
+</td>
+<td>The color for informational messages and states.
+</td>
+</tr>
+<tr>
+<td>$success</td>
+<td>
+    <span class="color-preview" style="background-color: #37b400"></span>
+    #37b400
+</td>
+<td>The color for success messages and states.
+</td>
+</tr>
+<tr>
+<td>$warning</td>
+<td>
+    <span class="color-preview" style="background-color: #ffc000"></span>
+    #ffc000
+</td>
+<td>The color for warning messages and states.
+</td>
+</tr>
+<tr>
+<td>$error</td>
+<td>
+    <span class="color-preview" style="background-color: #f31700"></span>
+    #f31700
+</td>
+<td>The color for error messages and states.
 </td>
 </tr>
 </table>
@@ -682,6 +646,58 @@ Equivalent to material elevation 24.
     0
 </td>
 <td>The vertical padding of the container.
+</td>
+</tr>
+</table>
+
+
+### Typography
+
+<table class="theme-variables">
+<colgroup>
+<col style="white-space:nowrap; width: 200px" />
+<col style="width: 250px" />
+<col />
+</colgroup>
+<tr>
+<th>Name</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>$font-size</td>
+<td>
+    
+    14px
+</td>
+<td>Base font size across all components.
+</td>
+</tr>
+<tr>
+<td>$font-family</td>
+<td>
+    
+    Roboto, "Helvetica Neue", sans-serif
+</td>
+<td>Font family across all components.
+</td>
+</tr>
+<tr>
+<td>$font-family-monospace</td>
+<td>
+    
+    Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace
+</td>
+<td>Font family for monospaced text. Used for styling the code.
+</td>
+</tr>
+<tr>
+<td>$line-height</td>
+<td>
+    
+    (28 / 14)
+</td>
+<td>Line height used along with $font-size.
 </td>
 </tr>
 </table>

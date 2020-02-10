@@ -105,8 +105,10 @@
 
     // Badge
     .k-badge {
-        background-color: $accent;
-        color: $accent-contrast;
+        @include fill(
+            $badge-primary-text,
+            $badge-primary-bg
+        );
     }
 }
 
@@ -207,7 +209,7 @@
         &:hover,
         &.k-state-hover,
         &.k-state-active {
-            color: $accent;
+            color: $primary;
         }
     }
 

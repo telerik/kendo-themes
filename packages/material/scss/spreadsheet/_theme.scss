@@ -8,19 +8,19 @@
     .k-spreadsheet > .k-tabstrip-wrapper {
 
         .k-tabstrip-items {
-            color: $accent-contrast;
-            background-color: $accent;
+            color: $primary-contrast;
+            background-color: $primary;
         }
         .k-tabstrip-items .k-item.k-state-active {
-            border-color: $accent-contrast;
+            border-color: $primary-contrast;
         }
     }
 
 
     // Quick access toolbar
     .k-spreadsheet-quick-access-toolbar {
-        color: $accent-contrast;
-        background-color: $accent;
+        color: $primary-contrast;
+        background-color: $primary;
     }
 
 
@@ -75,36 +75,36 @@
 
 
     .k-spreadsheet-selection {
-        border-color: $accent;
-        background-color: rgba( $accent, .25 );
-        box-shadow: inset 0 0 0 1px $accent;
+        border-color: $primary;
+        background-color: rgba( $primary, .25 );
+        box-shadow: inset 0 0 0 1px $primary;
     }
 
     .k-spreadsheet .k-single-selection::after {
         border-color: $panel-bg;
-        background-color: $accent;
+        background-color: $primary;
     }
     .k-spreadsheet-active-cell {
-        box-shadow: inset 0 0 0 1px $accent;
+        box-shadow: inset 0 0 0 1px $primary;
         background-color: $panel-bg;
 
         &.k-right {
-            box-shadow: inset 0 0 0 1px $accent, inset -1px 0 0 1px $accent;
+            box-shadow: inset 0 0 0 1px $primary, inset -1px 0 0 1px $primary;
         }
 
         &.k-bottom {
-            box-shadow: inset 0 0 0 1px $accent, inset 0 -1px 0 1px $accent;
+            box-shadow: inset 0 0 0 1px $primary, inset 0 -1px 0 1px $primary;
         }
 
         &.k-bottom.k-right {
-            box-shadow: inset 0 0 0 1px $accent, inset -1px -1px 0 1px $accent;
+            box-shadow: inset 0 0 0 1px $primary, inset -1px -1px 0 1px $primary;
         }
     }
 
     .k-spreadsheet .k-auto-fill {
-        border-color: $accent;
-        background-color: rgba( $accent, .25 );
-        box-shadow: inset 0 0 0 1px $accent;
+        border-color: $primary;
+        background-color: rgba( $primary, .25 );
+        box-shadow: inset 0 0 0 1px $primary;
     }
     .k-spreadsheet .k-auto-fill-punch {
         background-color: rgba( $panel-bg, .5 );
@@ -115,12 +115,12 @@
     .k-spreadsheet .k-resize-handle,
     .k-spreadsheet .k-resize-hint-handle,
     .k-spreadsheet .k-resize-hint-marker {
-        background-color: $accent;
+        background-color: $primary;
     }
 
     // Comments
     .k-spreadsheet-has-comment::after {
-        border-color: $accent $accent transparent transparent;
+        border-color: $primary $primary transparent transparent;
     }
 
     // Validation
@@ -137,7 +137,7 @@
 
     // Filter button
     .k-spreadsheet .k-filter-range {
-        border-color: $accent;
+        border-color: $primary;
     }
     .k-spreadsheet-filter {
         @include appearance( button );
@@ -169,8 +169,7 @@
 @include exports( "spreadsheet/drawing/theme" ) {
 
     .k-spreadsheet-insert-image-dialog {
-        border-color: $spreadsheet-insert-image-dialog-preview-border-bg;
-        border-radius: $spreadsheet-insert-image-dialog-preview-border-radius;
+        border-color: $spreadsheet-insert-image-dialog-preview-border;
 
         .k-spreadsheet-has-image {
             &:hover,
@@ -238,7 +237,7 @@
     [dir="rtl"] .k-spreadsheet {
 
         .k-spreadsheet-has-comment::after {
-            border-color: $accent transparent transparent $accent;
+            border-color: $primary transparent transparent $primary;
         }
 
         .k-dirty {

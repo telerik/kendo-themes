@@ -1,7 +1,7 @@
 @include exports("grid/theme") {
 
-    $tooltip-bg: $accent !default;
-    $tooltip-text: contrast-wcag($accent) !default;
+    $tooltip-bg: $primary !default;
+    $tooltip-text: contrast-wcag($primary) !default;
 
     .k-grid-header,
     .k-header,
@@ -134,7 +134,7 @@
         }
 
         .k-grid-search {
-            color: $text-color;
+            color: $body-text;
         }
     }
 

@@ -126,7 +126,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>$selected-bg</td>
 <td>
     
-    $accent
+    $primary
 </td>
 <td>The background of selected items.
 </td>
@@ -396,32 +396,42 @@ The following table lists the available variables for customizing the Bootstrap 
 <th>Description</th>
 </tr>
 <tr>
-<td>$accent</td>
+<td>$primary</td>
 <td>
     
-    $primary
+    $accent
 </td>
 <td>The color that focuses the user attention.<br/>
 Used for primary buttons and for elements of primary importance across the theme.
 </td>
 </tr>
 <tr>
-<td>$accent-contrast</td>
+<td>$primary-contrast</td>
 <td>
     
-    contrast-wcag( $accent )
+    $accent-contrast
 </td>
-<td>The color used along with the accent color denoted by $accent.<br/>
+<td>The color used along with the primary color denoted by $primary.<br/>
 Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
-<td>$success</td>
+<td>$secondary</td>
 <td>
     
-    $success
+    $secondary
 </td>
-<td>The color for success messages and states.
+<td>The secondary color of the theme.
+</td>
+</tr>
+<tr>
+<td>$secondary-contrast</td>
+<td>
+    
+    contrast-wcag( $secondary )
+</td>
+<td>The color used along with the secondary color denoted by $secondary.<br/>
+Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
@@ -431,6 +441,15 @@ Used to provide contrast between the background and foreground colors.
     $info
 </td>
 <td>The color for informational messages and states.
+</td>
+</tr>
+<tr>
+<td>$success</td>
+<td>
+    
+    $success
+</td>
+<td>The color for success messages and states.
 </td>
 </tr>
 <tr>
@@ -449,94 +468,6 @@ Used to provide contrast between the background and foreground colors.
     $danger
 </td>
 <td>The color for error messages and states.
-</td>
-</tr>
-<tr>
-<td>$color-level-step</td>
-<td>
-    
-    $theme-color-interval
-</td>
-<td>Set a specific jump point for requesting color jumps
-</td>
-</tr>
-<tr>
-<td>$yiq-threshold</td>
-<td>
-    
-    $yiq-contrasted-threshold
-</td>
-<td>The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
-</td>
-</tr>
-<tr>
-<td>$yiq-dark</td>
-<td>
-    
-    $yiq-text-dark
-</td>
-<td>Dark color for use in YIQ color contrast function.
-</td>
-</tr>
-<tr>
-<td>$yiq-light</td>
-<td>
-    
-    $yiq-text-light
-</td>
-<td>Light color for use in YIQ color contrast function.
-</td>
-</tr>
-</table>
-
-
-### Fonts
-
-<table class="theme-variables">
-<colgroup>
-<col style="white-space:nowrap; width: 200px" />
-<col style="width: 250px" />
-<col />
-</colgroup>
-<tr>
-<th>Name</th>
-<th>Default value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>$font-size</td>
-<td>
-    
-    $font-size-base
-</td>
-<td>Base font size across all components.
-</td>
-</tr>
-<tr>
-<td>$font-family</td>
-<td>
-    
-    $font-family-base
-</td>
-<td>Font family across all components.
-</td>
-</tr>
-<tr>
-<td>$font-family-monospace</td>
-<td>
-    
-    $font-family-monospace
-</td>
-<td>Font family for monospaced text. Used for styling the code.
-</td>
-</tr>
-<tr>
-<td>$line-height</td>
-<td>
-    
-    $line-height-base
-</td>
-<td>Line height used along with $font-size.
 </td>
 </tr>
 </table>
@@ -597,6 +528,58 @@ The default value of `null` embeds the package font with a `data:` URL
     $table-cell-padding / 2
 </td>
 <td>The vertical padding of the container.
+</td>
+</tr>
+</table>
+
+
+### Typography
+
+<table class="theme-variables">
+<colgroup>
+<col style="white-space:nowrap; width: 200px" />
+<col style="width: 250px" />
+<col />
+</colgroup>
+<tr>
+<th>Name</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>$font-size</td>
+<td>
+    
+    $font-size-base
+</td>
+<td>Base font size across all components.
+</td>
+</tr>
+<tr>
+<td>$font-family</td>
+<td>
+    
+    $font-family-base
+</td>
+<td>Font family across all components.
+</td>
+</tr>
+<tr>
+<td>$font-family-monospace</td>
+<td>
+    
+    $font-family-monospace
+</td>
+<td>Font family for monospaced text. Used for styling the code.
+</td>
+</tr>
+<tr>
+<td>$line-height</td>
+<td>
+    
+    $line-height-base
+</td>
+<td>Line height used along with $font-size.
 </td>
 </tr>
 </table>

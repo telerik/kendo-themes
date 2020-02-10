@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.10.1"></a>
+## [4.10.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.10.0...@progress/kendo-theme-bootstrap@4.10.1) (2020-02-04)
+
+
+### Bug Fixes
+
+* **menu:** expose menu variables for customization ([d18a1a6](https://github.com/telerik/kendo-themes/commit/d18a1a6))
+* remove circular dependecies between components ([a7334cf](https://github.com/telerik/kendo-themes/commit/a7334cf))
+* **color-system:** move color level and yiq variables in color functions ([f32259a](https://github.com/telerik/kendo-themes/commit/f32259a))
+* **dropdowngrid:** remove Grid style dependencies ([4fbb721](https://github.com/telerik/kendo-themes/commit/4fbb721))
+* **map:** extract and use map variables ([a5fffde](https://github.com/telerik/kendo-themes/commit/a5fffde))
+* **slider:** background-image empty url in material theme ([96fd3fa](https://github.com/telerik/kendo-themes/commit/96fd3fa))
+* **tabstrip:** add variables for item gradient ([8e3c46b](https://github.com/telerik/kendo-themes/commit/8e3c46b))
+* Chat message-box theme ([ac4cccc](https://github.com/telerik/kendo-themes/commit/ac4cccc))
+* Default variables leakage to other themes ([df48dae](https://github.com/telerik/kendo-themes/commit/df48dae))
+* **slider:** use correct values for slider background ([5c0fb9a](https://github.com/telerik/kendo-themes/commit/5c0fb9a))
+
+
+
+
+<a name="4.10.0"></a>
+# [4.10.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.9.1...@progress/kendo-theme-bootstrap@4.10.0) (2020-01-23)
+
+
+### Bug Fixes
+
+* **color-system:** use  instead of ([7e973f3](https://github.com/telerik/kendo-themes/commit/7e973f3))
+* **color-system:** use contrast-wcag function instead of explicit contrst colors ([ced09de](https://github.com/telerik/kendo-themes/commit/ced09de))
+* **color-system:** use correct grading of color level function ([950d639](https://github.com/telerik/kendo-themes/commit/950d639))
+* introduce and use component variables ([8f1951f](https://github.com/telerik/kendo-themes/commit/8f1951f))
+* move api generation to theme-tasks ([c754811](https://github.com/telerik/kendo-themes/commit/c754811))
+
+
+### Features
+
+* **color-system:** introduce lighter and darker shades of theme colors ([7a1c2a3](https://github.com/telerik/kendo-themes/commit/7a1c2a3))
+
+
+
+
 <a name="4.9.1"></a>
 ## [4.9.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.9.0...@progress/kendo-theme-bootstrap@4.9.1) (2020-01-13)
 

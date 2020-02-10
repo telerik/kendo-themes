@@ -84,8 +84,8 @@
             }
 
             &.k-state-active {
-                color: $accent-contrast;
-                background-color: $accent;
+                color: $primary-contrast;
+                background-color: $primary;
             }
         }
 
@@ -157,7 +157,7 @@
 
     .k-grouping-dropclue,
     .k-reorder-cue {
-        border-color: $accent;
+        border-color: $primary;
 
         &::before {
             border-color: transparent;
@@ -170,15 +170,15 @@
     }
 
     .k-resize-handle:hover .k-resize-handle-inner {
-        background-color: $accent;
+        background-color: $primary;
     }
 
     .k-column-resizer:hover {
-        color: $accent;
+        color: $primary;
     }
 
     .k-reorder-cue {
-        background-color: $accent;
+        background-color: $primary;
     }
 
     .k-grid-lockedcolumns {

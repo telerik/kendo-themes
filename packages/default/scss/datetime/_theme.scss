@@ -106,8 +106,8 @@
     .k-time-header {
 
         .k-time-now {
+            color: $primary;
             background: transparent;
-            color: $accent;
 
             &:hover,
             &:focus {
@@ -148,7 +148,7 @@
         }
 
         .k-item:hover {
-            color: $accent;
+            color: $primary;
         }
     }
 
@@ -157,7 +157,7 @@
     }
 
     .k-time-highlight {
-        background-color: $bg-color;
+        background-color: $component-bg;
         border-color: $time-list-highlight-color;
     }
 
@@ -198,7 +198,7 @@
                     $datetime-select-hovered-border,
                     $datetime-select-hovered-gradient
                 );
-                color: darken($text-color, 25%);
+                color: darken($body-text, 25%);
                 box-shadow: inset $datetime-select-focused-shadow;
             }
         }

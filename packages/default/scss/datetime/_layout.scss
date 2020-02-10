@@ -108,7 +108,7 @@
             }
         }
 
-        .k-dateinput {
+        .k-widget.k-dateinput {
             width: 100%;
             flex: 1 1 auto;
             margin: 0;
@@ -216,7 +216,7 @@
 
             .k-datetime-buttongroup,
             .k-datetime-selector {
-                background-color: $bg-color;
+                background-color: $component-bg;
             }
         }
 

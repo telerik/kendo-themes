@@ -10,7 +10,6 @@ $grid-sorted-icon-spacing: 4px !default;
 $grid-header-menu-icon-spacing: 14px !default;
 $grid-group-indicator-border-radius: calc( #{$font-size} + #{$button-padding-y} ) !default;
 $grid-group-indicator-gap: 8px !default;
-$grid-header-font-size: 12px !default;
 
 $grid-group-dropclue-height: calc( #{$font-size * 2} + #{$padding-y * 2} ) !default;
 $grid-group-dropclue-top: calc( ( #{button-size()} + #{$grid-grouping-header-padding-y * 2} - #{$grid-group-dropclue-height} ) / 2) !default;
@@ -48,7 +47,6 @@ $grid-group-drag-clue-opacity: .9 !default;
     }
 
     .k-grid-header {
-        font-size: $grid-header-font-size;
 
         th {
             font-weight: 700;
@@ -92,6 +90,7 @@ $grid-group-drag-clue-opacity: .9 !default;
 
         .k-group-indicator {
             border-width: 0;
+            line-height: $button-line-height;
         }
     }
 

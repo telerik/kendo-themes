@@ -1,18 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/chat/_theme.scss";
-
-@include exports("chat/theme/bootstrap") {
-
-    .k-chat {
-
-        // Bubbles
-        .k-bubble,
-        .k-bubble:hover,
-        .k-state-selected .k-bubble,
-        .k-alt .k-bubble,
-        .k-alt .k-bubble:hover,
-        .k-alt .k-state-selected .k-bubble {
-            @include box-shadow( none );
-        }
-
-    }
-}

@@ -51,62 +51,6 @@ The following table lists the available variables for customizing the Default th
 </td>
 </tr>
 <tr>
-<td>$accent</td>
-<td>
-    <span class="color-preview" style="background-color: #ff6358"></span>
-    #ff6358
-</td>
-<td>The color that focuses the user attention.<br/>
-Used for primary buttons and for elements of primary importance across the theme.
-</td>
-</tr>
-<tr>
-<td>$accent-contrast</td>
-<td>
-    
-    contrast-wcag( $accent )
-</td>
-<td>The color used along with the accent color denoted by $accent.<br/>
-Used to provide contrast between the background and foreground colors.
-</td>
-</tr>
-<tr>
-<td>$info</td>
-<td>
-    <span class="color-preview" style="background-color: #0058e9"></span>
-    #0058e9
-</td>
-<td>The color for informational messages and states.
-</td>
-</tr>
-<tr>
-<td>$success</td>
-<td>
-    <span class="color-preview" style="background-color: #37b400"></span>
-    #37b400
-</td>
-<td>The color for success messages and states.
-</td>
-</tr>
-<tr>
-<td>$warning</td>
-<td>
-    <span class="color-preview" style="background-color: #ffc000"></span>
-    #ffc000
-</td>
-<td>The color for warning messages and states.
-</td>
-</tr>
-<tr>
-<td>$error</td>
-<td>
-    <span class="color-preview" style="background-color: #f31700"></span>
-    #f31700
-</td>
-<td>The color for error messages and states.
-</td>
-</tr>
-<tr>
 <td>$base-text</td>
 <td>
     <span class="color-preview" style="background-color: #656565"></span>
@@ -182,7 +126,7 @@ Used to provide contrast between the background and foreground colors.
 <td>$selected-bg</td>
 <td>
     
-    $accent
+    $primary
 </td>
 <td>The background of selected items.
 </td>
@@ -438,7 +382,7 @@ Used to provide contrast between the background and foreground colors.
 </table>
 
 
-### Fonts
+### Color System
 
 <table class="theme-variables">
 <colgroup>
@@ -452,65 +396,78 @@ Used to provide contrast between the background and foreground colors.
 <th>Description</th>
 </tr>
 <tr>
-<td>$font-size</td>
+<td>$primary</td>
 <td>
     
-    14px
+    $accent
 </td>
-<td>Base font size across all components.
+<td>The color that focuses the user attention.<br/>
+Used for primary buttons and for elements of primary importance across the theme.
 </td>
 </tr>
 <tr>
-<td>$font-family</td>
+<td>$primary-contrast</td>
 <td>
     
-    inherit
+    $accent-contrast
 </td>
-<td>Font family across all components.
+<td>The color used along with the accent color denoted by $primary.<br/>
+Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
 <tr>
-<td>$font-family-monospace</td>
+<td>$secondary</td>
 <td>
-    
-    SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace
+    <span class="color-preview" style="background-color: #f6f6f6"></span>
+    #f6f6f6
 </td>
-<td>Font family for monospaced text. Used for styling the code.
+<td>The secondary color of the theme.
 </td>
 </tr>
 <tr>
-<td>$line-height</td>
+<td>$secondary-contrast</td>
 <td>
     
-    (20 / 14)
+    contrast-wcag( $secondary )
 </td>
-<td>Line height used along with $font-size.
+<td>The color used along with the secondary color denoted by $secondary.<br/>
+Used to provide contrast between the background and foreground colors.
 </td>
 </tr>
-</table>
-
-
-### Grid
-
-<table class="theme-variables">
-<colgroup>
-<col style="white-space:nowrap; width: 200px" />
-<col style="width: 250px" />
-<col />
-</colgroup>
 <tr>
-<th>Name</th>
-<th>Default value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>$grid-alt-bg</td>
+<td>$info</td>
 <td>
-    
-    rgba( contrast-wcag( $grid-bg ), .04 )
+    <span class="color-preview" style="background-color: #0058e9"></span>
+    #0058e9
 </td>
-<td>The background of alternating rows.<br/>
-Set to transparent to remove the row stripes.
+<td>The color for informational messages and states.
+</td>
+</tr>
+<tr>
+<td>$success</td>
+<td>
+    <span class="color-preview" style="background-color: #37b400"></span>
+    #37b400
+</td>
+<td>The color for success messages and states.
+</td>
+</tr>
+<tr>
+<td>$warning</td>
+<td>
+    <span class="color-preview" style="background-color: #ffc000"></span>
+    #ffc000
+</td>
+<td>The color for warning messages and states.
+</td>
+</tr>
+<tr>
+<td>$error</td>
+<td>
+    <span class="color-preview" style="background-color: #f31700"></span>
+    #f31700
+</td>
+<td>The color for error messages and states.
 </td>
 </tr>
 </table>
@@ -571,6 +528,58 @@ The default value of `null` embeds the package font with a `data:` URL
     $padding-x
 </td>
 <td>The vertical padding of the container.
+</td>
+</tr>
+</table>
+
+
+### typography
+
+<table class="theme-variables">
+<colgroup>
+<col style="white-space:nowrap; width: 200px" />
+<col style="width: 250px" />
+<col />
+</colgroup>
+<tr>
+<th>Name</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>$font-size</td>
+<td>
+    
+    14px
+</td>
+<td>Base font size across all components.
+</td>
+</tr>
+<tr>
+<td>$font-family</td>
+<td>
+    
+    inherit
+</td>
+<td>Font family across all components.
+</td>
+</tr>
+<tr>
+<td>$font-family-monospace</td>
+<td>
+    
+    SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace
+</td>
+<td>Font family for monospaced text. Used for styling the code.
+</td>
+</tr>
+<tr>
+<td>$line-height</td>
+<td>
+    
+    (20 / 14)
+</td>
+<td>Line height used along with $font-size.
 </td>
 </tr>
 </table>

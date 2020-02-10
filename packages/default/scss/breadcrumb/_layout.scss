@@ -82,4 +82,18 @@
         }
     }
 
+    @include exports("breadcrumb/layout/rtl") {
+
+        .k-breadcrumb {
+            &[dir="rtl"],
+            .k-rtl & {
+                .k-breadcrumb-icontext-link .k-icon {
+                    margin-right: 0;
+                    margin-left: $breadcrumb-link-icon-spacing;
+                }
+            }
+        }
+
+    }
+
 }

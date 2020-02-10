@@ -57,7 +57,7 @@
         &.k-badge-secondary {
             @include fill(
                 $badge-secondary-text,
-                $bg-color,
+                $component-bg,
                 currentColor
             );
         }
@@ -65,7 +65,7 @@
         &.k-badge-primary {
             @include fill(
                 $badge-primary-bg,
-                $bg-color,
+                $component-bg,
                 currentColor
             );
         }
@@ -73,7 +73,7 @@
         &.k-badge-info {
             @include fill(
                 $badge-info-bg,
-                $bg-color,
+                $component-bg,
                 currentColor
             );
         }
@@ -81,7 +81,7 @@
         &.k-badge-success {
             @include fill(
                 $badge-success-bg,
-                $bg-color,
+                $component-bg,
                 currentColor
             );
         }
@@ -89,7 +89,7 @@
         &.k-badge-warning {
             @include fill(
                 $badge-warning-bg,
-                $bg-color,
+                $component-bg,
                 currentColor
             );
         }
@@ -97,7 +97,7 @@
         &.k-badge-error {
             @include fill(
                 $badge-error-bg,
-                $bg-color,
+                $component-bg,
                 currentColor
             );
         }
