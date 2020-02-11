@@ -4,6 +4,7 @@
         @include border-radius( $badge-border-radius );
         margin: 0 0 0 ($spacer / 2);
         padding: $badge-padding-y $badge-padding-x;
+        min-width: $badge-size;
         border-width: $badge-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -22,37 +23,41 @@
             margin: 0 ($spacer / 2) 0 0;
         }
     }
-
     .k-badge > * {
         color: inherit;
     }
 
-    .k-badge.k-badge-pill {
-        min-width: $badge-size;
-        min-height: $badge-size;
-        border-radius: 5rem;
-    }
 
-    .k-badge.k-badge-pill:empty {
+    // Empty badge
+    .k-badge:empty {
+        padding: $badge-padding-y;
         min-width: auto;
         min-height: auto;
     }
 
+
+    // Links
     a.k-badge,
     .k-badge > a {
         text-decoration: none;
     }
-
     a.k-badge:hover,
     .k-badge > a:hover {
         text-decoration: underline;
     }
 
+
+    // Pill badges
+    .k-badge-pill {
+        border-radius: 5rem;
+    }
+
+
+    // Badge overlay
     .k-badge-overlay {
         position: relative;
         overflow: visible;
     }
-
     .k-badge-overlay .k-badge {
         margin: 0;
         position: absolute;
