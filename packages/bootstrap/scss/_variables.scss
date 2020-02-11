@@ -1560,7 +1560,7 @@ $drawer-item-padding-x: $padding-x !default;
 $drawer-item-padding-y: $padding-y !default;
 $drawer-item-font-size: 16px !default;
 $drawer-item-line-height: $line-height-lg !default;
-$drawer-icon-size: 18px !default;
+$drawer-icon-size: $icon-size !default;
 
 $drawer-mini-initial-width: calc(2 * #{$drawer-item-padding-x} + #{$drawer-icon-size}) !default;
 
@@ -2102,6 +2102,11 @@ $filemanager-drag-hint-border: null !default;
 
 
 // Gantt
+$gantt-line-size: 2px !default;
+
+$gantt-line-fill: mix( $panel-text, $panel-bg ) !default;
+
+$gantt-line-selected-fill: $selected-bg !default;
 
 
 // Scheduler

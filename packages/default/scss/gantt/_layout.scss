@@ -196,6 +196,7 @@
             border-width: 0 0 1px $grid-cell-vertical-border-width;
             white-space: nowrap;
         }
+
     }
 
 
@@ -222,17 +223,6 @@
         top: 0;
         left: 0;
 
-
-        // Lines
-        .k-line {
-            background-color: currentColor;
-            border-color: currentColor;
-            position: absolute;
-        }
-        .k-line-h { height: 2px; }
-        .k-line-v { width: 2px; }
-
-
         // Arrows
         .k-arrow-e,
         .k-arrow-w {
@@ -250,6 +240,28 @@
             border-right-color: currentColor;
             left: -6px;
         }
+    }
+
+    // Dependency Lines
+    .k-gantt-line {
+        background-color: currentColor;
+        border-color: currentColor;
+        position: absolute;
+    }
+    .k-gantt-line.k-state-selected {
+        z-index: 3;
+    }
+
+    .k-gantt-line-h {
+        height: $gantt-line-size;
+    }
+
+    .k-gantt-line-v {
+        width: $gantt-line-size;
+    }
+
+    .k-gantt-dependency-hint {
+        z-index: 4;
     }
 
 
@@ -562,6 +574,16 @@
             }
             .k-header:first-child {
                 border-right-width: 0;
+            }
+
+            .k-task-start {
+                left: auto;
+                right: 0;
+            }
+
+            .k-task-end {
+                right: auto;
+                left: 0;
             }
         }
 

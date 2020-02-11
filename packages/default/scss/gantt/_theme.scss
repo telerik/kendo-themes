@@ -53,6 +53,7 @@
         .k-header {
             border-color: inherit;
         }
+
     }
 
 
@@ -82,15 +83,6 @@
     .k-gantt-columns {}
     .k-gantt-columns .k-nonwork-hour {
         background-color: rgba( $panel-text, .025 );
-    }
-
-
-    .k-gantt-dependencies {}
-    .k-line {
-        color: darken( $panel-text, 40 );
-    }
-    .k-line.k-state-selected {
-        color: $selected-bg;
     }
 
     .k-task-dot {}
@@ -161,6 +153,14 @@
         .k-task-complete {
             background: $selected-bg;
         }
+    }
+
+    // Dependency Lines
+    .k-gantt-line {
+        color: $gantt-line-fill;
+    }
+    .k-gantt-line.k-state-selected {
+        color: $gantt-line-selected-fill;
     }
 
 }
