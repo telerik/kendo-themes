@@ -11,7 +11,7 @@
 
     <div id="test-area">
         <!-- normal state buttons -->
-        <div class="section">
+        <div class="section k-rtl">
             <div class="k-toolbar k-widget k-toolbar-resizable">
                 <div class="k-overflow-anchor k-button" style="visibility: visible;">
                     <span class="k-icon k-i-more-vertical"></span>
@@ -42,7 +42,7 @@
         </div>
 
         <!-- normal state SplitButton, Dropdowns and Switch -->
-        <div class="section">
+        <div class="section k-rtl">
             <div class="k-toolbar k-widget k-toolbar-resizable">
                 <div class="k-overflow-anchor k-button" style="visibility: visible;">
                     <span class="k-icon k-i-more-vertical"></span>
@@ -102,7 +102,7 @@
         </div>
 
         <!-- Buttons in Toolbar -->
-        <div class="section">
+        <div class="section k-rtl">
             <div class="k-toolbar k-widget k-toolbar-resizable">
                 <div class="k-overflow-anchor k-button" style="visibility: visible;">
                     <span class="k-icon k-i-more-vertical"></span>
@@ -134,7 +134,7 @@
         </div>
 
         <!-- Buttons with text and icon in Toolbar -->
-        <div class="section">
+        <div class="section k-rtl">
             <div class="k-toolbar k-widget k-toolbar-resizable">
                 <div class="k-overflow-anchor k-button" style="visibility: visible;">
                     <span class="k-icon k-i-more-vertical"></span>
@@ -165,7 +165,7 @@
         </div>
 
         <!-- DropDownList in Toolbar -->
-        <div class="section">
+        <div class="section k-rtl">
             <div class="k-toolbar k-widget k-toolbar-resizable">
                 <div class="k-overflow-anchor k-button" style="visibility: visible;">
                     <span class="k-icon k-i-more-vertical"></span>
@@ -229,7 +229,7 @@
         </div>
 
         <!-- ComboBox in Toolbar -->
-        <div class="section">
+        <div class="section k-rtl">
             <div class="k-toolbar k-widget k-toolbar-resizable">
                 <div class="k-overflow-anchor k-button k-state-hover" style="visibility: visible;">
                     <span class="k-icon k-i-more-vertical"></span>
@@ -298,7 +298,7 @@
         </div>
 
         <!-- Split button -->
-        <div class="section">
+        <div class="section k-rtl">
             <div class="k-toolbar k-widget k-toolbar-resizable">
                 <div class="k-overflow-anchor k-button k-state-active" style="visibility: visible;">
                     <span class="k-icon k-i-more-vertical"></span>
@@ -343,7 +343,7 @@
         </div>
 
         <!-- States of Buttons in button Group in Toolbar -->
-        <div class="section">
+        <div class="section k-rtl">
             <div class="k-toolbar k-widget k-toolbar-resizable">
                 <div class="k-overflow-anchor k-button k-state-border-down" style="visibility: visible;">
                     <span class="k-icon k-i-more-vertical"></span>
@@ -377,7 +377,7 @@
         </div>
 
         <!-- Spacing between button Group without separator in Toolbar -->
-        <div class="section">
+        <div class="section k-rtl">
             <div class="k-toolbar k-widget k-toolbar-resizable">
                 <div class="k-overflow-anchor k-button k-state-border-down" style="visibility: visible;">
                     <span class="k-icon k-i-more-vertical"></span>
@@ -402,7 +402,7 @@
         </div>
 
         <!-- Disabled focused states of buttons -->
-        <div class="section">
+        <div class="section k-rtl">
                 <div class="k-toolbar k-widget k-toolbar-resizable">
                     <div class="k-overflow-anchor k-button k-state-disabled k-state-focused" style="visibility: visible;">
                         <span class="k-icon k-i-more-vertical"></span>
@@ -429,7 +429,7 @@
             </div>
 
         <!-- Template containers -->
-        <div class="section">
+        <div class="section k-rtl">
             <div id="toolbarTemplates" class="k-toolbar k-widget">
                 <div>
                     <label>SHAPE:</label>
@@ -480,7 +480,7 @@
 
         <!-- Angular specific rendering (.k-button not direct descendant of .k-toolbar) -->
         <div class="section">
-            <kendo-toolbar dir="ltr" class="k-widget k-toolbar">
+            <kendo-toolbar dir="rtl" class="k-widget k-toolbar">
                 <kendo-toolbar-renderer style="display: inline-block;">
                     <button class="k-button" dir="ltr">
                         Angular Button
@@ -530,7 +530,7 @@
         <!-- Owerflow popup with normal buttons -->
         <div class="section" style="float: left">
             <div id="overflowPopup" class="k-animation-container k-overflow-wrapper" style="overflow: visible; display: inline-block; position: static">
-                <ul class="k-overflow-container k-list-container k-popup k-group k-reset k-state-border-up">
+                <ul class="k-overflow-container k-list-container k-popup k-group k-reset k-state-border-up k-rtl">
                     <li class="k-item k-state-default">
                         <a class="k-overflow-button k-button">
                             <span class="k-text">Normal Button</span>
@@ -568,7 +568,7 @@
         <!-- Owerflow popup with button group -->
         <div class="section" style="float: left">
             <div id="overflowPopup" class="k-animation-container k-overflow-wrapper" style="overflow: visible; display: inline-block; position: static">
-                <ul class="k-overflow-container k-list-container k-popup k-group k-reset k-state-border-up">
+                <ul class="k-overflow-container k-list-container k-popup k-group k-reset k-state-border-up k-rtl">
                     <li class="k-button-group k-overflow-group k-item k-state-default">
                         <a class="k-toggle-button k-button-icontext k-overflow-button k-button k-group-start">
                             <span class="k-icon k-i-bold"></span>
@@ -600,28 +600,28 @@
                     <ul class="k-overflow-container k-list-container k-reset">
                         <li class="k-item">
                             <span style="display: block;">
-                                <button class="k-overflow-button k-button" type="button">Paste</button>
+                                <button class="k-overflow-button k-button" type="button" dir="rtl">Paste</button>
                                 <span>
 
-                                    <button class="k-overflow-button k-button k-button-icontext" style="padding-left: 16px" type="button">
+                                    <button class="k-overflow-button k-button k-button-icontext" style="padding-left: 16px" type="button" dir="rtl">
                                         <span class="k-icon k-i-paste-as-html"></span> Paste as HTML
                                     </button>
-                                    <button class="k-overflow-button k-button k-state-hover" style="padding-left: 16px" type="button"> Set Default Paste </button>
+                                    <button class="k-overflow-button k-button k-state-hover" style="padding-left: 16px" type="button" dir="rtl"> Set Default Paste </button>
                                 </span>
                             </span>
                         </li>
 
                         <li class="k-item">
                             <span style="display: block;">
-                                <button class="k-overflow-button k-button k-state-disabled" type="button"> Edit </button>
+                                <button class="k-overflow-button k-button k-state-disabled" type="button" dir="rtl"> Edit </button>
                                 <span>
-                                    <button class="k-overflow-button k-button k-button-icontext k-state-hover" style="padding-left: 16px" type="button">
+                                    <button class="k-overflow-button k-button k-button-icontext k-state-hover" style="padding-left: 16px" type="button" dir="rtl">
                                         <span class="k-icon k-i-undo"></span> Undo
                                     </button>
-                                    <button class="k-overflow-button k-button k-state-disabled k-button-icontext" style="padding-left: 16px" type="button">
+                                    <button class="k-overflow-button k-button k-state-disabled k-button-icontext" style="padding-left: 16px" type="button" dir="rtl">
                                         <span class="k-icon k-i-redo"></span> Redo
                                     </button>
-                                    <button class="k-overflow-button k-button k-button-icontext k-state-hover" style="padding-left: 16px" type="button">
+                                    <button class="k-overflow-button k-button k-button-icontext k-state-hover" style="padding-left: 16px" type="button" dir="rtl">
                                         <span class="k-icon k-i-copy"></span> Copy
                                     </button>
                                 </span>
@@ -634,7 +634,7 @@
 
         <!-- Angular specific rendering with wrapped elements -->
         <div class="section" style="width: 300px; clear: both;">
-            <kendo-toolbar class="k-widget k-toolbar" dir="ltr">
+            <kendo-toolbar class="k-widget k-toolbar" dir="rtl">
                 <kendo-toolbar-renderer style="display: inline-block;">
                     <button class="k-button" dir="ltr">
                         Angular Button
@@ -672,7 +672,7 @@
             </kendo-toolbar>
         </div>
 
-        <div class="section" style="width: 300px;">
+        <div class="section k-rtl" style="width: 300px;">
             <div id="toolbar" class="k-toolbar k-widget">
                 <a href="" class="k-button" >Send</a>
                 <a href="" class="k-button" >Discard</a>
@@ -711,7 +711,7 @@
         </div>
 
         <div class="section">
-            <kendo-toolbar class="k-widget k-toolbar k-toolbar-resizable" dir="ltr">
+            <kendo-toolbar class="k-widget k-toolbar k-toolbar-resizable" dir="rtl">
                 <kendo-toolbar-renderer style="visibility: visible; display: inline-block;">
                     <button type="button" class="k-button k-button-icontext" dir="ltr">
                         <span class="k-icon k-i-folder"></span>
