@@ -1738,30 +1738,60 @@ $breadcrumb-focused-shadow: 0 0 2px 1px rgba(0, 0, 0, .06) !default;
 // Pager
 $pager-padding-x: 8px !default;
 $pager-padding-y: 10px !default;
+$pager-border-width: 1px !default;
+
+$pager-font-size: $font-size !default;
+$pager-line-height: $line-height !default;
 
 $pager-bg: $component-bg !default;
 $pager-text: if($theme-type == dark, $light-secondary-text, $dark-secondary-text) !default;
 $pager-border: null !default;
 
+$pager-section-spacing: $pager-padding-x !default;
+
+$pager-item-padding-x: 0 !default;
+$pager-item-padding-y: 0 !default;
+$pager-item-border-width: 0 !default;
+$pager-item-border-radius: 5em !default;
+$pager-item-spacing: 0 !default;
+
 $pager-item-bg: null !default;
 $pager-item-text: null !default;
 $pager-item-border: null !default;
 
-$pager-item-hovered-bg: $list-item-hovered-bg !default;
-$pager-item-hovered-text: $list-item-hovered-text !default;
-$pager-item-hovered-border: null !default;
+$pager-item-hover-bg: $list-item-hovered-bg !default;
+$pager-item-hover-text: $list-item-hovered-text !default;
+$pager-item-hover-border: null !default;
+
+$pager-item-selected-bg: $primary !default;
+$pager-item-selected-text: $primary-contrast !default;
+$pager-item-selected-border: null !default;
+
+$pager-number-padding-x: $pager-item-padding-x !default;
+$pager-number-padding-y: $pager-item-padding-y !default;
+$pager-number-border-width: $pager-item-border-width !default;
+$pager-number-border-radius: $pager-item-border-radius !default;
+$pager-number-spacing: $pager-item-spacing !default;
+
+$pager-item-focus-shadow: null !default;
 
 $pager-number-bg: null !default;
 $pager-number-text: $component-text !default;
 $pager-number-border: null !default;
 
-$pager-number-hovered-bg: $list-item-hovered-bg !default;
-$pager-number-hovered-text: $list-item-hovered-text !default;
-$pager-number-hovered-border: null !default;
+$pager-number-hover-bg: $list-item-hovered-bg !default;
+$pager-number-hover-text: $list-item-hovered-text !default;
+$pager-number-hover-border: null !default;
 
-$pager-number-selected-bg: $primary !default;
-$pager-number-selected-text: contrast-wcag( $pager-number-selected-bg ) !default;
-$pager-number-selected-border: null !default;
+$pager-number-selected-bg: $pager-item-selected-bg !default;
+$pager-number-selected-text: $pager-item-selected-text !default;
+$pager-number-selected-border: $pager-item-selected-border !default;
+
+$pager-number-focus-shadow: null !default;
+
+$pager-input-width: 3em !default;
+
+$pager-page-size-dropdown-width: 5.2em !default;
 
 
 // Panelbar

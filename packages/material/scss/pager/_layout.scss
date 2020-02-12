@@ -1,75 +1,20 @@
-$pager-buttons-size: 36px !default;
-$pager-buttons-padding: 0 !default;
-
 @import "~@progress/kendo-theme-default/scss/pager/_layout.scss";
 
-@include exports ("pager/layout/material") {
-    $pager-elements-margin: 8px !default;
-    $pager-elements-margin-lg: 32px !default;
+@include exports( "pager/layout/material" ) {
 
-    .k-pager-wrap {
+    // Responsive
+    .k-pager-lg,
+    .k-pager-md,
+    .k-pager-sm {
+
         .k-pager-numbers {
-            margin: 0 $pager-elements-margin;
-        }
 
-        .k-pager-input,
-        .k-pager-sizes {
-            margin: 0 $pager-elements-margin 0 $pager-elements-margin-lg;
-        }
-
-        .k-input,
-        .k-textbox {
-            font-size: $font-size;
-        }
-
-        .k-pager-sizes>.k-dropdown {
-            margin: 0 $pager-elements-margin 0 0;
-        }
-
-        .k-pager-info {
-            margin: 0 $pager-elements-margin-lg;
-        }
-
-        // Border radius
-        .k-pager-nav,
-        .k-pager-numbers .k-link,
-        .k-pager-numbers .k-state-selected,
-        > .k-link {
-            border-radius: 50%;
-        }
-
-        &.k-pager-lg,
-        &.k-pager-md,
-        &.k-pager-sm {
-
-            .k-pager-numbers {
-                margin: 0;
-
-                .k-current-page {
-                    // sass-lint:disable-block nesting-depth
-
-                    > span {
-                        border-style: solid;
-                        border-width: 0 0 $input-border-width;
-                    }
-                }
-
-                &.k-state-expanded {
-                    // sass-lint:disable-block nesting-depth
-
-                    .k-current-page {
-
-                        > span {
-                            border-style: none;
-                        }
-                    }
-                }
-
-                .k-link,
-                .k-state-selected {
-                    border-radius: 0;
-                }
+            .k-current-page .k-link {
+                border-width: 0 0 1px;
             }
+
         }
+
     }
+
 }
