@@ -1451,7 +1451,7 @@ $toolbar-button-expanded-shadow: none !default;
 
 $toolbar-shadow: none !default;
 $toolbar-separator-padding-y: $toolbar-button-padding-y !default;
-$toolbar-separator-border: inherit !default;
+$toolbar-separator-border: $component-border !default;
 
 
 // Upload
