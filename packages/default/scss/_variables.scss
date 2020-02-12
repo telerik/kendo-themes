@@ -1687,30 +1687,60 @@ $breadcrumb-focused-shadow: 0 0 2px 1px rgba(0, 0, 0, .06) !default;
 // Pager
 $pager-padding-x: $toolbar-padding-x !default;
 $pager-padding-y: $toolbar-padding-y !default;
+$pager-border-width: 1px !default;
+
+$pager-font-size: $font-size !default;
+$pager-line-height: $line-height !default;
 
 $pager-bg: $header-bg !default;
 $pager-text: $header-text !default;
 $pager-border: null !default;
 
+$pager-section-spacing: $spacer-x !default;
+
+$pager-item-padding-x: $button-padding-y !default;
+$pager-item-padding-y: $pager-item-padding-x !default;
+$pager-item-border-width: 0 !default;
+$pager-item-border-radius: null !default;
+$pager-item-spacing: null !default;
+
 $pager-item-bg: null !default;
 $pager-item-text: null !default;
 $pager-item-border: null !default;
 
-$pager-item-hovered-bg: $list-item-hovered-bg !default;
-$pager-item-hovered-text: $list-item-hovered-text !default;
-$pager-item-hovered-border: null !default;
+$pager-item-hover-bg: $list-item-hovered-bg !default;
+$pager-item-hover-text: $list-item-hovered-text !default;
+$pager-item-hover-border: null !default;
+
+$pager-item-selected-bg: $list-item-selected-bg !default;
+$pager-item-selected-text: $list-item-selected-text !default;
+$pager-item-selected-border: null !default;
+
+$pager-item-focus-shadow: $list-item-focused-shadow !default;
+
+$pager-number-padding-x: $pager-item-padding-x !default;
+$pager-number-padding-y: $pager-item-padding-y !default;
+$pager-number-border-width: $pager-item-border-width !default;
+$pager-number-border-radius: null !default;
+$pager-number-spacing: $pager-item-spacing !default;
 
 $pager-number-bg: null !default;
-$pager-number-text: $primary !default;
+$pager-number-text: $link-text !default;
 $pager-number-border: null !default;
 
-$pager-number-hovered-bg: $list-item-hovered-bg !default;
-$pager-number-hovered-text: $primary !default;
-$pager-number-hovered-border: null !default;
+$pager-number-hover-bg: $pager-item-hover-bg !default;
+$pager-number-hover-text: $link-hover-text !default;
+$pager-number-hover-border: $pager-item-hover-border !default;
 
-$pager-number-selected-bg: $selected-bg !default;
-$pager-number-selected-text: $selected-text !default;
-$pager-number-selected-border: null !default;
+$pager-number-selected-bg: $pager-item-selected-bg !default;
+$pager-number-selected-text: $pager-item-selected-text !default;
+$pager-number-selected-border: $pager-item-selected-border !default;
+
+$pager-number-focus-shadow: $pager-item-focus-shadow !default;
+
+$pager-input-width: 3em !default;
+
+$pager-page-size-dropdown-width: 5.2em !default;
 
 
 // Panelbar
