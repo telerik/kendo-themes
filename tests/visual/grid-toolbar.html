@@ -9,6 +9,12 @@
     <script src="assets/scripts.js"></script>
 
     <style>
+        #test-area {
+            grid-template-columns: min-content 1fr 1fr;
+        }
+        #test-area > span {
+            white-space: nowrap;
+        }
     </style>
 </head>
 
@@ -16,37 +22,95 @@
 
     <div id="test-area" class="grid">
 
-        <div class="section" style="width: 500px">
-            <kendo-grid dir="ltr" class="k-widget k-grid">
+        <span></span>
+        <span>jQuery</span>
+        <span>Angular</span>
+
+
+        <span>Toolbar</span>
+        <section>
+            <div class="k-widget k-grid">
+                <div class="k-header k-grid-toolbar">
+                    <button class="k-button">Button</button>
+                    <span class="k-button-group">
+                        <button class="k-button-icon k-button k-group-start"><span class="k-icon k-i-bold"></span></button>
+                        <button class="k-button-icon k-button"><span class="k-icon k-i-italic"></span></button>
+                        <button class="k-button-icon k-button k-group-end"><span class="k-icon k-i-underline"></span></button>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <kendo-grid class="k-widget k-grid">
                 <kendo-grid-toolbar class="k-header k-grid-toolbar">
-                    <button class="k-button" dir="ltr">
-                    Kendo Angular Grid Toolbar
-                    </button>
-                    <kendo-buttongroup class="k-button-group" dir="ltr">
-                        <button class="k-button-icon k-button k-group-start" dir="ltr">
-                            <span class="k-icon k-i-bold"></span>
-                        </button>
-                        <button class="k-button-icon k-button" dir="ltr">
-                            <span class="k-icon k-i-italic"></span>
-                        </button>
-                        <button class="k-button-icon k-button k-group-end" dir="ltr">
-                            <span class="k-icon k-i-underline"></span>
-                        </button>
+                    <button class="k-button">Button</button>
+                    <kendo-buttongroup class="k-button-group">
+                        <button class="k-button-icon k-button k-group-start"><span class="k-icon k-i-bold"></span></button>
+                        <button class="k-button-icon k-button"><span class="k-icon k-i-italic"></span></button>
+                        <button class="k-button-icon k-button k-group-end"><span class="k-icon k-i-underline"></span></button>
                     </kendo-buttongroup>
-                    <button class="k-button" dir="ltr">
-                    Add new
-                    </button>
-                    <kendo-splitbutton class="k-widget k-split-button k-button-group" dir="ltr">
-                        <button class="k-button" dir="ltr">  Paste </button>
-                        <button class="k-button-icon k-button" dir="ltr">
-                        <span class="k-icon k-i-arrow-s"></span>
-                    </button>
-                    </kendo-splitbutton>
                 </kendo-grid-toolbar>
             </kendo-grid>
-        </div>
+        </section>
+
+
+        <span>Toolbar RTL</span>
+        <section>
+            <div class="k-widget k-grid" dir="rtl">
+                <div class="k-header k-grid-toolbar">
+                    <button class="k-button">Button</button>
+                    <span class="k-button-group">
+                        <button class="k-button-icon k-button k-group-start"><span class="k-icon k-i-bold"></span></button>
+                        <button class="k-button-icon k-button"><span class="k-icon k-i-italic"></span></button>
+                        <button class="k-button-icon k-button k-group-end"><span class="k-icon k-i-underline"></span></button>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <kendo-grid class="k-widget k-grid" dir="rtl">
+                <kendo-grid-toolbar class="k-header k-grid-toolbar">
+                    <button class="k-button">Button</button>
+                    <kendo-buttongroup class="k-button-group">
+                        <button class="k-button-icon k-button k-group-start"><span class="k-icon k-i-bold"></span></button>
+                        <button class="k-button-icon k-button"><span class="k-icon k-i-italic"></span></button>
+                        <button class="k-button-icon k-button k-group-end"><span class="k-icon k-i-underline"></span></button>
+                    </kendo-buttongroup>
+                </kendo-grid-toolbar>
+            </kendo-grid>
+        </section>
+
+
+        <span>Search</span>
+        <section>
+            <div class="k-widget k-grid">
+                <div class="k-header k-grid-toolbar">
+                    <a class="k-button k-grid-pdf"><span class="k-icon k-i-file-pdf"></span>Export to PDF</a>
+                    <span class="k-textbox k-grid-search k-display-flex">
+                        <input type="text" class="k-input" placeholder="Search" />
+                        <span class="k-input-icon"><span class="k-icon k-i-search"></span></span>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section></section>
+
+
+        <span>Search RTL</span>
+        <section>
+            <div class="k-widget k-grid" dir="rtl">
+                <div class="k-header k-grid-toolbar">
+                    <a class="k-button k-grid-pdf"><span class="k-icon k-i-file-pdf"></span>Export to PDF</a>
+                    <span class="k-textbox k-grid-search k-display-flex">
+                        <input type="text" class="k-input" placeholder="Search" />
+                        <span class="k-input-icon"><span class="k-icon k-i-search"></span></span>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section></section>
 
     </div>
-</body>
 
+</body>
 </html>
