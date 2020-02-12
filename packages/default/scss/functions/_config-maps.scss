@@ -1,5 +1,5 @@
 @function get-config-prop( $config, $name, $prop ) {
-    $key: #{$config}-#{$prop}-#{$name};
+    $key: config-#{$prop}-#{$name};
 
     @if map-has-key( $config, $name ) {
         @if map-has-key( map-get( $config, $name ), $prop ) {
