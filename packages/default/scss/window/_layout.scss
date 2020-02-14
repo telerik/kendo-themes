@@ -40,6 +40,10 @@
         flex-direction: row;
         flex-shrink: 0;
         align-items: center;
+
+        .k-window-minimized & {
+            border-width: 0;
+        }
     }
 
     // Title bar title text
