@@ -39,7 +39,7 @@
         &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            color: $error;
+            color: $forms-invalid-color;
             border-color: $invalid-border;
         }
     }

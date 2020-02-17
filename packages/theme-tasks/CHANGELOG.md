@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.5"></a>
+## 0.4.5 (2020-02-14)
+
+
+### Bug Fixes
+
+* **grid:** inconsistent grouping header height ([b7ea9be](https://github.com/telerik/kendo-themes/commit/b7ea9be))
+
+
+
+
 <a name="0.4.4"></a>
 ## [0.4.4](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.4.3...@progress/kendo-theme-tasks@0.4.4) (2020-02-04)
 

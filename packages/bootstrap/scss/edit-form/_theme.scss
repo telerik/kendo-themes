@@ -1,7 +1,0 @@
-@include exports("edit-form/theme") {
-
-    // TODO: is this the correct place?
-    .k-edit-label {
-        padding: calc( #{$padding-y} - #{$input-border-width} ) 0;
-    }
-}

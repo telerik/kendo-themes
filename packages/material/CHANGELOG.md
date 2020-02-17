@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.10.2"></a>
+## 3.10.2 (2020-02-14)
+
+
+### Bug Fixes
+
+* **badge:** extract badge-border-radius variable ([d646feb](https://github.com/telerik/kendo-themes/commit/d646feb))
+* **breadcrumb:** extract breadcrumb-link-border-radius variable ([ab90929](https://github.com/telerik/kendo-themes/commit/ab90929))
+* **drawer:** fix flickering upon mini mode collapsing ([3ba8d87](https://github.com/telerik/kendo-themes/commit/3ba8d87))
+* **editor:** make jQuery editor toolbar look like regular toolbar ([bfd016c](https://github.com/telerik/kendo-themes/commit/bfd016c))
+* **gantt:** dependency lines are not displayed in rtl ([c0b3355](https://github.com/telerik/kendo-themes/commit/c0b3355))
+* **notification:** extract notification variables ([4ec43f2](https://github.com/telerik/kendo-themes/commit/4ec43f2))
+* switch usages of button-*-size functions with button-calc-* vars ([6437547](https://github.com/telerik/kendo-themes/commit/6437547))
+* **grid:** inconsistent grouping header height ([b7ea9be](https://github.com/telerik/kendo-themes/commit/b7ea9be))
+* **textarea:** extract scss variable ([fdd4186](https://github.com/telerik/kendo-themes/commit/fdd4186))
+
+
+
+
 <a name="3.10.1"></a>
 ## [3.10.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.10.0...@progress/kendo-theme-material@3.10.1) (2020-02-04)
 

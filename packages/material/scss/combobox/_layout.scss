@@ -23,4 +23,10 @@
             }
         }
     }
+
+    // Expanded
+    .k-state-border-up > .k-select .k-i-arrow-60-down,
+    .k-state-border-down > .k-select .k-i-arrow-60-down {
+        transform: rotate(180deg);
+    }
 }

@@ -1,3 +1,10 @@
 @include exports("dropdowntree/theme") {
-
+    .k-state-invalid,
+    .ng-invalid.ng-touched,
+    .ng-invalid.ng-dirty {
+        > .k-dropdown-wrap {
+            color: $forms-invalid-color;
+            border-color: $invalid-border;
+        }
+    }
 }
