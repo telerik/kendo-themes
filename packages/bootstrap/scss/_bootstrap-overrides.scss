@@ -99,8 +99,6 @@ $theme-colors: () !default;
     $modal-content-border-color: $component-border-color !default;
     $modal-header-border-color: $component-border-color !default;
 
-    $custom-control-indicator-bg: try-lighten( $input-border-color, 6.7 ) !default;
-
     $progress-bg: $gray-200 !default;
     $progress-color: contrast-yiq($progress-bg, $gray-900) !default;
     $progress-bar-bg: $primary !default;
