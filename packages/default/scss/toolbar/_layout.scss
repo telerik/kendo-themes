@@ -35,6 +35,10 @@
             align-items: stretch;
             align-content: center;
             vertical-align: middle;
+
+            > label {
+                margin-right: $toolbar-spacing;
+            }
         }
         > :last-child {
             margin-right: 0;
@@ -204,6 +208,11 @@
             > * {
                 margin-right: 0;
                 margin-left: $toolbar-spacing;
+
+                > label {
+                    margin-right: 0;
+                    margin-left: $toolbar-spacing;
+                }
             }
             > :last-child {
                 margin-left: 0;
