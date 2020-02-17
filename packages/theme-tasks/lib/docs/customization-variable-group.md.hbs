@@ -1,13 +1,13 @@
 ---
-title: Customization
+title: Customizing {{ title }}
 description: "Refer to the list of the Kendo UI {{ meta.friendlyName }} theme variables available for customization."
 slug: variables_kendotheme{{ meta.name }}
 position: 9
 ---
 
-# Customization
+# Customizing {{ title }}
 
-The following table lists the available variables for customizing the {{ meta.friendlyName }} theme.
+The following table lists the available variables for customization.
 
 <style>
 .theme-variables th,
@@ -27,11 +27,6 @@ The following table lists the available variables for customizing the {{ meta.fr
 
 
 
-
-## Variables
-
-{{#each variableGroups}}
-### {{ title }}
 
 <table class="theme-variables">
   <colgroup>
@@ -59,25 +54,6 @@ The following table lists the available variables for customizing the {{ meta.fr
   {{/each}}
   </tbody>
 </table>
-{{/each}}
-
-
-
-
-## Mixins
-
-{{#each mixin}}
-### `{{ context.name }}`
-{{ description }}
-
-{{#if parameter}}
-#### Parameters
-{{#each parameter}}
-- {{ name }} : `{{ type }}` - {{ description }}
-{{/each}}
-{{/if}}
-
-{{/each}}
 
 
 
