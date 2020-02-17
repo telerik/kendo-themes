@@ -28,10 +28,10 @@
             align-items: stretch;
             align-content: center;
             vertical-align: middle;
-            margin-left: $toolbar-spacing;
+            margin-right: $toolbar-spacing;
         }
-        .k-overflow-anchor + * {
-            margin-left: 0;
+        .k-overflow-anchor {
+            margin-right: 0;
         }
 
         .k-button,
@@ -207,14 +207,16 @@
         .k-rtl &,
         &[dir="rtl"],
         [dir="rtl"] & {
-            .k-overflow-anchor {
-                right: auto;
-                left: 0;
-            }
 
             > * {
+                margin-right: 0;
+                margin-left: $toolbar-spacing;
+            }
+
+            .k-overflow-anchor {
                 margin-left: 0;
-                margin-right: $toolbar-spacing;
+                right: auto;
+                left: 0;
             }
         }
     }
