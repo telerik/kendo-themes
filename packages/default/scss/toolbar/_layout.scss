@@ -36,6 +36,9 @@
             align-content: center;
             vertical-align: middle;
         }
+        > :last-child {
+            margin-right: 0;
+        }
         .k-overflow-anchor {
             margin: 0;
         }
@@ -201,6 +204,9 @@
             > * {
                 margin-right: 0;
                 margin-left: $toolbar-spacing;
+            }
+            > :last-child {
+                margin-left: 0;
             }
 
             .k-overflow-anchor {
