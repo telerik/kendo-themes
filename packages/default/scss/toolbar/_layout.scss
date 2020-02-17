@@ -30,6 +30,7 @@
             margin-top: ($toolbar-padding-y / 2);
             margin-bottom: ($toolbar-padding-y / 2);
             margin-right: $toolbar-spacing;
+            flex-shrink: 0;
             display: inline-flex;
             align-items: stretch;
             align-content: center;
@@ -138,7 +139,6 @@
             height: $line-height-em;
             border-width: 0 0 0 1px;
             border-style: solid;
-            flex-shrink: 0;
         }
 
 
