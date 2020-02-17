@@ -66,8 +66,10 @@
                 margin: 0 ($button-padding-x / 2) 0 (-$button-padding-x / 2);
             }
 
+            &.k-rtl,
             .k-rtl &,
-            &[dir="rtl"] {
+            &[dir="rtl"],
+            [dir="rtl"] & {
                 .k-icon,
                 .k-image,
                 .k-sprite {
