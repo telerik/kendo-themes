@@ -203,6 +203,7 @@
     // RTL
     .k-toolbar {
 
+        &.k-rtl,
         .k-rtl &,
         &[dir="rtl"],
         [dir="rtl"] & {
