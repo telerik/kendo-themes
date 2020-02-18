@@ -1546,6 +1546,10 @@ $window-sizes: map-merge((
 
 
 // Dialog
+$dialog-titlebar-bg: $primary !default;
+$dialog-titlebar-text: $primary-contrast !default;
+$dialog-titlebar-border: inherit !default;
+
 $dialog-buttongroup-padding-x: ($window-inner-padding-x / 2) !default;
 $dialog-buttongroup-padding-y: ($window-inner-padding-y / 2) !default;
 $dialog-buttongroup-border-width: 1px !default;
