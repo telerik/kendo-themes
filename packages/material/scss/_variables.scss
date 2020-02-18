@@ -2130,12 +2130,9 @@ $filemanager-border: null !default;
 $filemanager-toolbar-border-width: 0 0 $filemanager-border-width 0 !default;
 $filemanager-toolbar-border-style: solid !default;
 $filemanager-toolbar-font-weight: bold !default;
-$filemanager-toolbar-spacing: $padding-x !default;
 $filemanager-toolbar-bg: null !default;
 $filemanager-toolbar-text: null !default;
 $filemanager-toolbar-border: $component-border !default;
-
-$filemanager-toolbar-search-tool-spacing: $filemanager-toolbar-spacing !default;
 
 $filemanager-navigation-width: 20% !default;
 $filemanager-navigation-border-width: 0 $filemanager-border-width 0 0 !default;

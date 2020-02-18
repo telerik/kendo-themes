@@ -11,20 +11,20 @@
         .k-spreadsheet-cell {
             white-space: normal;
         }
+        .k-combobox,
+        .k-dropdown {
+            width: 5em;
+        }
     </style>
 </head>
 
 <body>
     <div id="test-area">
-        <div id="spreadsheet2" style="width: 100%;" data-role="spreadsheet" class="k-widget k-spreadsheet">
+        <div style="width: 100%;" class="k-widget k-spreadsheet">
             <div class="k-tabstrip-wrapper">
                 <div class="k-spreadsheet-quick-access-toolbar">
-                    <a href="#" title="Undo" data-action="undo" class="k-button k-button-icon">
-                        <span class="k-icon k-i-undo"></span>
-                    </a>
-                    <a href="#" title="Redo" class="k-button k-button-icon">
-                        <span class="k-icon k-i-redo"></span>
-                    </a>
+                    <a class="k-button k-button-icon"><span class="k-icon k-i-undo"></span></a>
+                    <a class="k-button k-button-icon"><span class="k-icon k-i-redo"></span></a>
                 </div>
                 <div class="k-widget k-header k-tabstrip k-floatwrap k-tabstrip-top k-spreadsheet-tabstrip">
                     <ul class="k-tabstrip-items k-reset" style="padding-left: 76px;">
@@ -41,215 +41,98 @@
                             <span class="k-link">Data</span>
                         </li>
                     </ul>
-                    <div class="k-content k-state-active" style="display: block;" >
+                    <div class="k-content k-state-active" style="display: block;">
                         <div data-role="spreadsheettoolbar" class="k-toolbar k-widget k-toolbar-resizable k-spreadsheet-toolbar">
                             <div class="k-button k-upload-button k-button-icon k-toolbar-first-visible">
                                 <span class="k-icon k-i-folder-open"></span>
                                 <input type="file">
                             </div>
-                            <button type="button" class="k-button k-button-icon" title="Export..." aria-label="Export...">
+                            <button type="button" class="k-button k-button-icon">
                                 <span class="k-icon k-i-download"></span>
                             </button>
                             <span class="k-separator"></span>
                             <div class="k-button-group">
-                                <a href="" title="Cut" class="k-button k-button-icon k-group-start">
-                                    <span class="k-icon k-i-cut"></span>
-                                </a>
-                                <a href="" title="Copy" class="k-button k-button-icon">
-                                    <span class="k-icon k-i-copy"></span>
-                                </a>
-                                <a href="" title="Paste" class="k-button k-button-icon k-group-end">
-                                    <span class="k-icon k-i-paste"></span>
-                                </a>
+                                <a class="k-button k-button-icon k-group-start"><span class="k-icon k-i-cut"></span></a>
+                                <a class="k-button k-button-icon"><span class="k-icon k-i-copy"></span></a>
+                                <a class="k-button k-button-icon k-group-end"><span class="k-icon k-i-paste"></span></a>
                             </div>
                             <span class="k-separator"></span>
                             <div class="k-button-group">
-                                <a href="" title="Bold" class="k-toggle-button k-button k-button-icon k-group-start">
-                                    <span class="k-icon k-i-bold"></span>
-                                </a>
-                                <a href="" title="Italic" class="k-toggle-button k-button k-button-icon">
-                                    <span class="k-icon k-i-italic"></span>
-                                </a>
-                                <a href="" title="Underline" class="k-toggle-button k-button k-button-icon k-group-end">
-                                    <span class="k-icon k-i-underline"></span>
-                                </a>
+                                <a class="k-toggle-button k-button k-button-icon k-group-start"><span class="k-icon k-i-bold"></span></a>
+                                <a class="k-toggle-button k-button k-button-icon"><span class="k-icon k-i-italic"></span></a>
+                                <a class="k-toggle-button k-button k-button-icon k-group-end"><span class="k-icon k-i-underline"></span></a>
                             </div>
                             <span class="k-separator"></span>
-                            <a href="" title="Link" class="k-button k-button-icon">
-                                <span class="k-icon k-i-link-horizontal"></span>
-                            </a>
+                            <a class="k-button k-button-icon"><span class="k-icon k-i-link-horizontal"></span></a>
                             <span class="k-separator"></span>
-                            <a href="" title="Insert comment" class="k-toggle-button k-button k-button-icon">
-                                <span class="k-icon k-i-comment"></span>
-                            </a>
+                            <a class="k-toggle-button k-button k-button-icon"><span class="k-icon k-i-comment"></span></a>
                             <span class="k-separator"></span>
-                            <a href="#" class="k-button k-button-icon" title="Background">
+                            <a class="k-button k-button-icon">
                                 <span class="k-icon k-i-paint"></span>
                                 <span class="k-icon k-i-arrow-60-down"></span>
                             </a>
                             <span class="k-separator"></span>
-                            <a href="#" class="k-button k-button-icon" title="Text Color">
+                            <a class="k-button k-button-icon">
                                 <span class="k-icon k-i-foreground-color"></span>
                                 <span class="k-icon k-i-arrow-60-down"></span>
                             </a>
                             <span class="k-separator"></span>
-                            <a href="#" class="k-button k-button-icon" title="Borders">
+                            <a class="k-button k-button-icon">
                                 <span class="k-icon k-i-borders-all"></span>
                                 <span class="k-icon k-i-arrow-60-down"></span>
                             </a>
                             <span class="k-separator"></span>
-                            <span class="k-widget k-combobox k-header" title="Font size" aria-label="Font size">
+                            <span class="k-widget k-combobox k-header">
                                 <span class="k-dropdown-wrap k-state-default">
-                                    <input class="k-input" type="text" autocomplete="off" style="display: inline-block;">
-                                    <span class="k-select">
-                                        <span class="k-icon k-i-arrow-60-down"></span>
-                                    </span>
+                                    <input class="k-input" type="text" />
+                                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
                                 </span>
-                                <input data-role="combobox" style="display: none;"></span>
-                                <span class="k-separator"></span>
-                                <span title="Font" class="k-widget k-dropdown k-header" >
-                                    <span class="k-dropdown-wrap k-state-default">
-                                        <span class="k-input">Arial</span>
-                                        <span class="k-select">
-                                            <span class="k-icon k-i-arrow-60-down"></span>
-                                        </span>
-                                    </span>
-                                    <select title="Font" style="display: none;">
-                                        <option value="Arial">Arial</option>
-                                        <option value="Courier New">Courier New</option>
-                                        <option value="Georgia">Georgia</option>
-                                        <option value="Times New Roman">Times New Roman</option>
-                                        <option value="Trebuchet MS">Trebuchet MS</option>
-                                        <option value="Verdana">Verdana</option>
-                                    </select>
-                                </span>
-                                <span class="k-separator"></span>
-                                <a href="#" class="k-button k-button-icon">
-                                    <span class="k-icon k-i-align-left"></span>
-                                    <span class="k-icon k-i-arrow-60-down"></span>
-                                </a>
-                                <span class="k-separator"></span>
-                                <a href="" title="Wrap text" class="k-toggle-button k-button k-button-icon">
-                                    <span class="k-icon k-i-text-wrap"></span>
-                                </a>
-                                <span class="k-separator"></span>
-                                <div class="k-button-group">
-                                    <a href="" title="Decrease decimal" class="k-button k-button-icon k-group-start">
-                                        <span class="k-icon k-i-decimal-decrease"></span>
-                                    </a>
-                                    <a href="" title="Increase decimal" class="k-button k-button-icon k-group-end">
-                                        <span class="k-icon k-i-decimal-increase"></span>
-                                    </a>
-                                </div>
-                                <span class="k-separator k-toolbar-last-visible"></span>
-                                <span title="Custom format..." class="k-widget k-dropdown k-header" style="width: auto; display: none;">
-                                    <span class="k-dropdown-wrap k-state-default">
-                                        <span class="k-input">
-                                            <span class="k-icon k-i-custom-format" style="line-height: 1em; width: 1.35em;"></span>
-                                        </span>
-                                        <span class="k-select">
-                                            <span class="k-icon k-i-arrow-60-down"></span>
-                                        </span>
-                                    </span>
-                                    <select title="Custom format..."  style="display: none;">
-                                        <option value="null">Automatic</option>
-                                        <option value="@">Text</option>
-                                        <option value="#,0.00">Number</option>
-                                        <option value="0.00%">Percent</option>
-                                        <option value="_(&quot;$&quot;* #,##0.00_);_(&quot;$&quot;* (#,##0.00);_(&quot;$&quot;* &quot;-&quot;??_);_(@_)">
-                                            Financial
-                                        </option>
-                                        <option value="$#,##0.00;[Red]$#,##0.00">Currency</option>
-                                        <option value="m/d/yyyy">Date</option>
-                                        <option value="h:mm:ss AM/PM">Time</option>
-                                        <option value="m/d/yyyy h:mm">Date time</option>
-                                        <option value="[h]:mm:ss">Duration</option>
-                                        <option>More formats...</option>
-                                    </select>
-                                </span>
-                                <span class="k-separator" style="display: none;"></span>
-                                <a href="#" class="k-button k-button-icon" title="Merge cells" style="display: none;">
-                                    <span class="k-icon k-i-cells-merge"></span>
-                                    <span class="k-icon k-i-arrow-60-down"></span>
-                                </a>
-                                <span class="k-separator" style="display: none;"></span>
-                                <a href="#" class="k-button k-button-icon" title="Freeze panes" style="display: none;">
-                                    <span class="k-icon k-i-pane-freeze"></span>
-                                    <span class="k-icon k-i-arrow-60-down"></span>
-                                </a>
-                                <span class="k-separator" style="display: none;"></span>
-                                <a href="" title="Filter" class="k-button k-button-icon k-state-active" style="display: none;">
-                                    <span class="k-icon k-i-filter"></span>
-                                </a>
-                                <span class="k-separator" style="display: none;"></span>
-                                <a href="" title="Toggle gridlines" class="k-toggle-button k-button k-button-icon k-state-active" style="display: none;">
-                                    <span class="k-icon k-i-border-no"></span>
-                                </a>
-                                <div class="k-overflow-anchor k-button" style="visibility: visible;position: relative;">
-                                    <span class="k-icon k-i-more-vertical"></span>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="k-content" style="display:none">
-                        <div data-role="spreadsheettoolbar" class="k-toolbar k-widget k-toolbar-resizable k-spreadsheet-toolbar">
-                            <div class="k-overflow-anchor k-button" style="visibility: hidden; width: 1px;">
-                                <span class="k-icon k-i-more-vertical"></span>
-                            </div>
-                            <span class="k-separator"></span>
-                            <div class="k-button-group">
-                                <a href="" title="Add column left" class="k-button k-button-icon k-group-start">
-                                    <span class="k-icon k-i-table-column-insert-left"></span>
-                                </a>
-                                <a href="" title="Add column right" class="k-button k-button-icon">
-                                    <span class="k-icon k-i-table-column-insert-right"></span>
-                                </a>
-                                <a href="" title="Add row below" class="k-button k-button-icon">
-                                    <span class="k-icon k-i-table-row-insert-below"></span>
-                                </a>
-                                <a href="" title="Add row above" class="k-button k-button-icon k-group-end">
-                                    <span class="k-icon k-i-table-row-insert-above"></span>
-                                </a>
-                            </div>
-                            <span class="k-separator"></span>
-                            <div class="k-button-group">
-                                <a href="" title="Delete column" class="k-button k-button-icon k-group-start">
-                                    <span class="k-icon k-i-table-column-delete"></span>
-                                </a>
-                                <a href="" title="Delete row" class="k-button k-button-icon k-group-end">
-                                    <span class="k-icon k-i-table-row-delete"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="k-content" style="display:none">
-                        <div data-role="spreadsheettoolbar" class="k-toolbar k-widget k-toolbar-resizable k-spreadsheet-toolbar">
-                            <div class="k-overflow-anchor k-button" style="visibility: hidden; width: 1px;">
-                                <span class="k-icon k-i-more-vertical"></span>
-                            </div>
-                            <span class="k-separator"></span>
-                            <span title="Sort" class="k-widget k-dropdown k-header" style="width: auto;">
-                                <span class="k-dropdown-wrap k-state-default">
-                                    <span class="k-input">
-                                        <span class="k-icon k-i-sort-desc" style="line-height: 1em; width: 1.35em;"></span>
-                                    </span>
-                                    <span class="k-select">
-                                        <span class="k-icon k-i-arrow-60-down"></span>
-                                    </span>
-                                </span>
-                                <select title="Sort" style="display: none;">
-                                    <option value="asc">Sort range A to Z</option>
-                                    <option value="desc">Sort range Z to A</option>
-                                </select>
+                                <input data-role="combobox" style="display: none;" />
                             </span>
                             <span class="k-separator"></span>
-                            <a href="" title="Filter" class="k-button k-button-icon k-state-active">
-                                <span class="k-icon k-i-filter"></span>
+                            <span class="k-widget k-dropdown k-header">
+                                <span class="k-dropdown-wrap k-state-default">
+                                    <span class="k-input">Arial</span>
+                                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                                </span>
+                                <select style="display: none;"></select>
+                            </span>
+                            <span class="k-separator"></span>
+                            <a class="k-button k-button-icon">
+                                <span class="k-icon k-i-align-left"></span>
+                                <span class="k-icon k-i-arrow-60-down"></span>
                             </a>
                             <span class="k-separator"></span>
-                            <a href="" title="Data validation..." class="k-button k-button-icontext">
-                                <span class="k-icon k-i-exception"></span>
-                                Data validation...
+                            <a class="k-toggle-button k-button k-button-icon"><span class="k-icon k-i-text-wrap"></span></a>
+                            <span class="k-separator"></span>
+                            <div class="k-button-group">
+                                <a class="k-button k-button-icon k-group-start"><span class="k-icon k-i-decimal-decrease"></span></a>
+                                <a class="k-button k-button-icon k-group-end"><span class="k-icon k-i-decimal-increase"></span></a>
+                            </div>
+                            <span class="k-separator"></span>
+                            <span class="k-widget k-dropdown k-header" style="width: auto;">
+                                <span class="k-dropdown-wrap k-state-default">
+                                    <span class="k-input">
+                                        <span class="k-icon k-i-custom-format" style="line-height: 1em; width: 1.35em;"></span>
+                                    </span>
+                                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                                </span>
+                                <select style="display: none;"></select>
+                            </span>
+                            <span class="k-separator"></span>
+                            <a class="k-button k-button-icon">
+                                <span class="k-icon k-i-cells-merge"></span>
+                                <span class="k-icon k-i-arrow-60-down"></span>
                             </a>
+                            <span class="k-separator"></span>
+                            <a class="k-button k-button-icon">
+                                <span class="k-icon k-i-pane-freeze"></span>
+                                <span class="k-icon k-i-arrow-60-down"></span>
+                            </a>
+                            <span class="k-separator"></span>
+                            <a class="k-button k-button-icon k-state-active"><span class="k-icon k-i-filter"></span></a>
+                            <span class="k-separator"></span>
+                            <a class="k-toggle-button k-button k-button-icon k-state-active"><span class="k-icon k-i-border-no"></span></a>
                         </div>
                     </div>
                 </div>
@@ -531,13 +414,13 @@
                                 <div class="k-spreadsheet-drawing-image" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==); opacity: 1;">
                                 </div>
                                 <div class="k-spreadsheet-drawing-handle N"></div>
-                                <div class="k-spreadsheet-drawing-handle NE" data-direction="NE"></div>
-                                <div class="k-spreadsheet-drawing-handle E" data-direction="E"></div>
-                                <div class="k-spreadsheet-drawing-handle SE" data-direction="SE"></div>
-                                <div class="k-spreadsheet-drawing-handle S" data-direction="S"></div>
-                                <div class="k-spreadsheet-drawing-handle SW" data-direction="SW"></div>
-                                <div class="k-spreadsheet-drawing-handle W" data-direction="W"></div>
-                                <div class="k-spreadsheet-drawing-handle NW" data-direction="NW"></div>
+                                <div class="k-spreadsheet-drawing-handle NE"></div>
+                                <div class="k-spreadsheet-drawing-handle E"></div>
+                                <div class="k-spreadsheet-drawing-handle SE"></div>
+                                <div class="k-spreadsheet-drawing-handle S"></div>
+                                <div class="k-spreadsheet-drawing-handle SW"></div>
+                                <div class="k-spreadsheet-drawing-handle W"></div>
+                                <div class="k-spreadsheet-drawing-handle NW"></div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 296px; width: 114px; height: 19px;">
                             </div>
@@ -741,5 +624,6 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>
