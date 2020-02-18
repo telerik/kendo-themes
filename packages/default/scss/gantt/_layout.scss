@@ -300,6 +300,8 @@
         cursor: pointer;
         display: none;
         position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .k-task-wrap:hover .k-task-dot,
     .k-task-wrap.k-origin .k-task-dot {
@@ -307,7 +309,6 @@
     }
     .k-task-dot::before {
         content: "";
-        margin: -4px 0 0 -4px;
         width: 8px;
         height: 8px;
         border-width: 0;
@@ -317,6 +318,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        transform: translate(-50%, -50%);
     }
     .k-task-dot:hover::before,
     .k-task-dot.k-state-hover::before {
