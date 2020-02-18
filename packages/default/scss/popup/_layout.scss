@@ -82,19 +82,22 @@
     }
 
     .k-popup .k-list .k-item > .k-group {
-        position: absolute;
-        top: 0;
-        right: 0;
         padding: 0 .5em;
         font-size: ($font-size * .714);
         line-height: $font-size;
         text-transform: uppercase;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     .k-popup .k-list .k-item > .k-group::before {
-        display: block;
-        content: " ";
+        content: "";
+        width: $font-size;
+        height: $font-size;
         border-width: ($font-size / 2);
         border-style: solid;
+        box-sizing: border-box;
+        display: block;
         position: absolute;
         left: -$font-size;
         bottom: 0;
