@@ -1,0 +1,17 @@
+@import "~@progress/kendo-theme-default/scss/dropzone/_layout.scss";
+
+@include exports( "dropzone/layout/bootstrap" ) {
+    .k-dropzone-inner {
+        >.k-icon {
+            margin-bottom: $upload-dropzone-padding-y * 4;
+        }
+
+        .k-dropzone-hint {
+            margin-bottom: $external-dropzone-spacing;
+        }
+
+        .k-dropzone-note {
+            font-size: $font-size-xs;
+        }
+    }
+}
