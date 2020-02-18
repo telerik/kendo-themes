@@ -1533,6 +1533,10 @@ $window-sizes: map-merge((
 
 
 // Dialog
+$dialog-titlebar-bg: null !default;
+$dialog-titlebar-text: null !default;
+$dialog-titlebar-border: null !default;
+
 $dialog-buttongroup-padding-x: $window-inner-padding-x !default;
 $dialog-buttongroup-padding-y: $window-inner-padding-y !default;
 $dialog-buttongroup-border-width: 1px !default;
