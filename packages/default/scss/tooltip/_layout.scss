@@ -1,23 +1,26 @@
 @include exports("tooltip/layout") {
 
     .k-tooltip {
-        @include border-radius();
-        font-size: $tooltip-font-size;
-        line-height: $tooltip-line-height;
+        @include border-radius( $tooltip-border-radius );
+        margin: 0;
         padding: $tooltip-padding-y $tooltip-padding-x;
-        border-width: 0;
+        // max-width: $tooltip-max-width;
+        border-width: $tooltip-border-width;
+        border-style: solid;
         box-sizing: border-box;
         background-repeat: repeat-x;
-        position: absolute;
-        display: flex;
+        font-size: $tooltip-font-size;
+        line-height: $tooltip-line-height;
+        display: inline-flex;
         flex-direction: column;
+        position: absolute;
         z-index: 12000;
     }
 
     .k-tooltip-title {
-        display: inline-flex;
-        padding: $tooltip-padding-y 0;
+        margin-bottom: .25em;
         font-size: $tooltip-title-font-size;
+        line-height: $tooltip-title-line-height;
     }
 
     .k-tooltip-content {
@@ -26,91 +29,86 @@
     }
 
     .k-tooltip-closable {
-        padding: $tooltip-closable-padding-y $tooltip-closable-padding-x;
-        line-height: normal;
 
-        .k-tooltip-title {
-            display: inline-flex;
-            padding: 0 ($tooltip-closable-content-padding) ($tooltip-closable-padding-y) 0;
-            line-height: 1;
-        }
-
+        .k-tooltip-title,
         .k-tooltip-content {
             padding-right: $tooltip-closable-content-padding;
         }
     }
 
-
-    .k-rtl,
-    [dir="rtl"] {
-        .k-tooltip-title,
-        .k-tooltip-content {
-            padding-right: 0;
-            padding-left: $tooltip-closable-content-padding;
-        }
-        .k-tooltip-button {
-            left: $tooltip-closable-padding-x;
-            right: auto;
-        }
-    }
-
     .k-tooltip-button {
         position: absolute;
-        top: $tooltip-closable-padding-y;
-        right: $tooltip-closable-padding-x;
+        top: $tooltip-padding-y;
+        right: $tooltip-padding-x;
 
         .k-icon {
             color: inherit;
             vertical-align: top;
         }
-
-        .k-rtl &,
-        [dir-rtl] & {
-            left: $tooltip-closable-padding-x;
-            right: auto;
-        }
     }
+
 
     // Callout
     .k-callout {
-        position: absolute;
-        width: 0;
-        height: 0;
+        width: ($tooltip-callout-size * 2);
+        height: ($tooltip-callout-size * 2);
+        border-width: $tooltip-callout-size;
         border-style: solid;
-        border-width: $callout-half-size;
         border-color: transparent;
+        box-sizing: border-box;
+        position: absolute;
         pointer-events: none;
     }
 
     .k-callout-n {
-        left: 50%;
-        margin-left: -$callout-half-size;
         border-bottom-color: currentColor;
-        top: -$tooltip-callout-size;
-        pointer-events: none;
-    }
-
-    .k-callout-e {
-        top: 50%;
-        margin-top: -$callout-half-size;
-        border-left-color: currentColor;
-        right: -$tooltip-callout-size;
-        pointer-events: none;
-    }
-
-    .k-callout-s {
+        top: 0;
         left: 50%;
-        margin-left: -$callout-half-size;
+        transform: translate(-50%, -100%);
+        pointer-events: none;
+    }
+    .k-callout-e {
+        border-left-color: currentColor;
+        top: 50%;
+        right: 0;
+        transform: translate(100%, -50%);
+        pointer-events: none;
+    }
+    .k-callout-s {
         border-top-color: currentColor;
-        bottom: -$tooltip-callout-size;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        pointer-events: none;
+    }
+    .k-callout-w {
+        border-right-color: currentColor;
+        top: 50%;
+        left: 0;
+        transform: translate(-100%, -50%);
         pointer-events: none;
     }
 
-    .k-callout-w {
-        top: 50%;
-        margin-top: -$callout-half-size;
-        border-right-color: currentColor;
-        left: -$tooltip-callout-size;
-        pointer-events: none;
+
+
+    // RTL
+    .k-tooltip-closable.k-rtl,
+    .k-tooltip-closable[dir="rtl"],
+    .k-rtl .k-tooltip-closable,
+    [dir="rtl"] .k-tooltip-closable {
+
+        .k-tooltip-title,
+        .k-tooltip-content {
+            padding-right: 0;
+            padding-left: $tooltip-closable-content-padding;
+        }
     }
+    .k-rtl,
+    [dir="rtl"] {
+        .k-tooltip-button {
+            left: $tooltip-padding-x;
+            right: auto;
+        }
+    }
+
 }

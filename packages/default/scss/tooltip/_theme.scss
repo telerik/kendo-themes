@@ -4,11 +4,18 @@
             box-shadow: $popup-shadow;
         }
     }
+
+
+    // Default tooltip
     .k-tooltip {
-        color: $tooltip-text;
-        background-color: $tooltip-bg;
-    }
-    .k-callout {
-        color: $tooltip-bg;
+        @include fill(
+            $tooltip-text,
+            $tooltip-bg,
+            $tooltip-border
+        );
+
+        .k-callout {
+            color: $tooltip-bg;
+        }
     }
 }

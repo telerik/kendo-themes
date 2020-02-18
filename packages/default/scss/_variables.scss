@@ -1631,17 +1631,23 @@ $notification-error-border: $notification-error-bg !default;
 // Tooltip
 $tooltip-padding-y: $padding-y !default;
 $tooltip-padding-x: $padding-x !default;
-$tooltip-closable-padding-x: $window-titlebar-padding-x !default;
-$tooltip-closable-padding-y: $window-titlebar-padding-y !default;
+$tooltip-max-width: null !default;
+$tooltip-border-width: 0 !default;
+$tooltip-border-radius: $border-radius !default;
+
 $tooltip-closable-content-padding: calc( #{$icon-size} + #{$icon-spacing} ) !default;
+
 $tooltip-font-size: $font-size !default;
-$tooltip-title-font-size: $font-size-lg !default;
-$tooltip-line-height: $line-height !default;
-$tooltip-callout-size: 12px !default;
-$callout-half-size: $tooltip-callout-size / 2;
+$tooltip-line-height: 1.25 !default;
+
+$tooltip-title-font-size: ($tooltip-font-size * 1.25) !default;
+$tooltip-title-line-height: 1 !default;
+
+$tooltip-callout-size: 6px !default;
 
 $tooltip-bg: $primary !default;
-$tooltip-text: contrast-wcag($tooltip-bg) !default;
+$tooltip-text: contrast-wcag( $tooltip-bg ) !default;
+$tooltip-border: $tooltip-bg !default;
 
 
 // Breadcrumb

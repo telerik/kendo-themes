@@ -1,7 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/tooltip/_layout.scss";
-
-@include exports("tooltip/layout/material") {
-    .k-tooltip-closable {
-        font-size: $font-size;
-    }
-}
