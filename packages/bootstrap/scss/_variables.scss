@@ -1616,19 +1616,25 @@ $notification-error-border: tint($error, 9) !default;
 
 
 // Tooltip
-$tooltip-padding-y: $padding-y !default;
-$tooltip-padding-x: $padding-x !default;
-$tooltip-closable-padding-x: $padding-x !default;
-$tooltip-closable-padding-y: $padding-y !default;
+$tooltip-padding-y: $tooltip-padding-y !default;
+$tooltip-padding-x: $tooltip-padding-x !default;
+$tooltip-max-width: $tooltip-max-width !default;
+$tooltip-border-width: 0 !default;
+$tooltip-border-radius: $tooltip-border-radius !default;
+
 $tooltip-closable-content-padding: calc( #{$icon-size} + #{$icon-spacing} ) !default;
-$tooltip-font-size: $font-size !default;
-$tooltip-title-font-size: $font-size-lg !default;
+
+$tooltip-font-size: $tooltip-font-size !default;
 $tooltip-line-height: $line-height !default;
-$tooltip-callout-size: 12px !default;
-$callout-half-size: $tooltip-callout-size / 2;
+
+$tooltip-title-font-size: ($tooltip-font-size * 1.25) !default;
+$tooltip-title-line-height: 1 !default;
+
+$tooltip-callout-size: $tooltip-arrow-height !default;
 
 $tooltip-bg: $tooltip-bg !default;
 $tooltip-text: contrast-wcag($tooltip-bg) !default;
+$tooltip-border: $tooltip-bg !default;
 
 
 // Breadcrumb
