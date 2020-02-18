@@ -71,6 +71,7 @@ module.exports = function(dest, context) {
         });
 
         data.variableGroups.forEach(group => {
+            group.meta = data.meta;
             let output = templateVariableGroup(group);
             output = output.replace(/\r?\n/g, '\n');
 
