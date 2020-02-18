@@ -2572,3 +2572,11 @@ $typography-config: map-merge((
     card-subtitle: map-get($typography-config, body)
 ), $typography-config);
 // sass-lint:enable indentation
+
+
+// Disabled Styling maps
+$disabled-styling: () !default;
+$disabled-styling: map-merge((
+        opacity: $disabled-opacity,
+        filter: $disabled-filter
+), $disabled-styling);

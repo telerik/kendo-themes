@@ -31,7 +31,7 @@
             &,
             &:focus,
             &.k-state-focused {
-                @extend %disabled;
+                @include disabled( $disabled-styling );
             }
         }
 
@@ -392,7 +392,7 @@
         .k-button[disabled]:focus,
         .k-button.k-state-disabled:hover,
         .k-button.k-state-disabled:focus {
-            @include disabled-legacy-ie;
+            @include disabled-legacy-ie( $disabled-styling );
         }
 
     }

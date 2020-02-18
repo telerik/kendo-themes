@@ -1,22 +1,16 @@
 // Disabled
-@mixin disabled {
+@mixin disabled( $disabled-styling ) {
     outline: none;
     cursor: default;
-    opacity: $disabled-opacity;
-    filter: $disabled-filter;
+    opacity: map-get($disabled-styling, opacity);
+    filter: map-get($disabled-styling, filter);
     pointer-events: none;
     box-shadow: none;
 }
-@mixin disabled-legacy-ie {
+
+@mixin disabled-legacy-ie( $disabled-styling ) {
     outline: none;
     cursor: default;
-    opacity: $disabled-opacity;
+    opacity: map-get($disabled-styling, opacity);
     box-shadow: none;
-}
-@include exports("placeholder/disabled") {
-    %disabled {
-        @if ( mixin-exists( disabled ) ) {
-            @include disabled;
-        }
-    }
 }

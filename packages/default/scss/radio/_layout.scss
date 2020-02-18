@@ -44,7 +44,7 @@
     // Disabled state
     .k-radio:disabled,
     .k-radio:disabled + .k-radio-label {
-        @include disabled;
+        @include disabled( $disabled-styling );
         cursor: default;
     }
 
