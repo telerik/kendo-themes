@@ -1,7 +1,7 @@
 ---
 title: Customizing Icons
-description: "Refer to the list of the Kendo UI  theme variables available for customization."
-slug: variables_kendotheme
+description: "Refer to the list of the Kendo UI Bootstrap theme variables available for customization."
+slug: variables_kendothemebootstrap_icons
 position: 9
 ---
 
