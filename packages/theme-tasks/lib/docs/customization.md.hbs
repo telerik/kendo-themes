@@ -25,36 +25,44 @@ The following table lists the available variables for customizing the {{ meta.fr
 }
 </style>
 
+
+
+
 ## Variables
 
-{{#each variable}}
-
+{{#each variableGroups}}
 ### {{ title }}
 
 <table class="theme-variables">
-<colgroup>
-<col style="white-space:nowrap; width: 200px" />
-<col style="width: 250px" />
-<col />
-</colgroup>
-<tr>
-<th>Name</th>
-<th>Default value</th>
-<th>Description</th>
-</tr>
-{{#each variables}}
-<tr>
-<td>${{context.name}}</td>
-<td>
-    {{# if isColor }}<span class="color-preview" style="background-color: {{context.value}}"></span>{{/if}}
-    {{ context.value }}
-</td>
-<td>{{{ formatText description }}}</td>
-</tr>
-{{/each}}
+  <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col style="width: 250px" />
+    <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Default value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each variables}}
+    <tr>
+      <td>${{context.name}}</td>
+      <td>
+          {{# if isColor }}<span class="color-preview" style="background-color: {{context.value}}"></span>
+          {{/if}}{{ context.value }}
+      </td>
+      <td>{{{ formatText description }}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
 </table>
-
 {{/each}}
+
+
+
 
 ## Mixins
 
@@ -70,6 +78,9 @@ The following table lists the available variables for customizing the {{ meta.fr
 {{/if}}
 
 {{/each}}
+
+
+
 
 ## Suggested Links
 

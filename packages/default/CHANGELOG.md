@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.12.2"></a>
+## 4.12.2 (2020-02-14)
+
+
+### Bug Fixes
+
+* **badge:** extract badge-border-radius variable ([d646feb](https://github.com/telerik/kendo-themes/commit/d646feb))
+* **breadcrumb:** extract breadcrumb-link-border-radius variable ([ab90929](https://github.com/telerik/kendo-themes/commit/ab90929))
+* **button:** use button-border-radius variable ([6547f3c](https://github.com/telerik/kendo-themes/commit/6547f3c))
+* **drawer:** fix flickering upon mini mode collapsing ([3ba8d87](https://github.com/telerik/kendo-themes/commit/3ba8d87))
+* **editor:** broken layout with iframe ([1ded612](https://github.com/telerik/kendo-themes/commit/1ded612))
+* **editor:** make jQuery editor toolbar look like regular toolbar ([bfd016c](https://github.com/telerik/kendo-themes/commit/bfd016c))
+* **gantt:** dependency lines are not displayed in rtl ([c0b3355](https://github.com/telerik/kendo-themes/commit/c0b3355))
+* **gantt:** export with actual width ([25ae8ad](https://github.com/telerik/kendo-themes/commit/25ae8ad)), closes [#1158](https://github.com/telerik/kendo-themes/issues/1158)
+* **grid:** inconsistent grouping header height ([b7ea9be](https://github.com/telerik/kendo-themes/commit/b7ea9be))
+* **grid:** prevent command buttons from overlapping ([7db6f39](https://github.com/telerik/kendo-themes/commit/7db6f39))
+* **grid:** reversed pager icons in RTL ([16ba87c](https://github.com/telerik/kendo-themes/commit/16ba87c))
+* **grid:** set correct border for top pager ([5daada3](https://github.com/telerik/kendo-themes/commit/5daada3)), closes [#767](https://github.com/telerik/kendo-themes/issues/767)
+* **notification:** extract notification variables ([4ec43f2](https://github.com/telerik/kendo-themes/commit/4ec43f2))
+* **scheduler:** ensure widgets inside sheduler header or footer inherit font size ([cb3a00a](https://github.com/telerik/kendo-themes/commit/cb3a00a))
+* **slider:** vertical labels alignment ([7bf3aa1](https://github.com/telerik/kendo-themes/commit/7bf3aa1))
+* **textarea:** extract scss variable ([fdd4186](https://github.com/telerik/kendo-themes/commit/fdd4186))
+* **window:** titlebar border when minimized ([90f4b50](https://github.com/telerik/kendo-themes/commit/90f4b50))
+* fix an issue with dart compilation ([9902650](https://github.com/telerik/kendo-themes/commit/9902650))
+* **toolbar:** remove right border from popup menu button in RTL mode ([c106c9a](https://github.com/telerik/kendo-themes/commit/c106c9a))
+* switch usages of button-*-size functions with button-calc-* vars ([6437547](https://github.com/telerik/kendo-themes/commit/6437547))
+
+
+
+
 <a name="4.12.1"></a>
 ## [4.12.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.12.0...@progress/kendo-theme-default@4.12.1) (2020-02-04)
 

@@ -1,0 +1,460 @@
+@include exports("forms/layout") {
+
+    .k-form,
+    .k-form-inline {
+        font-size: $font-size;
+        line-height: $line-height;
+        padding: $form-spacer;
+
+        fieldset {
+            border-width: 1px 0 0;
+            border-style: solid;
+            margin: ($form-spacer * 2) 0;
+            padding: 0;
+
+            &:first-child:first-of-type {
+                margin-top: 0;
+            }
+
+            &:last-child:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        legend {
+            font-size: $font-size-sm;
+            text-align: left;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: $padding-y-lg * 2;
+            text-transform: uppercase;
+            padding: 0 $padding-x 0 0;
+            width: auto;
+        }
+
+        .k-form-field {
+            display: block;
+            text-align: left;
+            margin-bottom: $padding-y-lg * 2;
+
+            > span {
+                line-height: $line-height;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .k-alert-error {
+            font-size: $font-size-sm;
+            margin-top: $padding-y * 2;
+        }
+
+        .k-field-info {
+            display: inline-block;
+            font-size: $font-size-xs;
+            line-height: 1;
+            margin: 0 $padding-x;
+        }
+    }
+
+    .k-form {
+        .k-textbox,
+        .k-textarea,
+        .k-autocomplete,
+        .k-combobox,
+        .k-dropdown,
+        .k-dateinput,
+        .k-datepicker,
+        .k-datetimepicker,
+        .k-timepicker,
+        .k-numerictextbox,
+        .k-maskedtextbox {
+            display: flex;
+        }
+
+        .k-form-field {
+            > span:not(.k-widget) {
+                display: block;
+                padding: $padding-y 0;
+            }
+
+            > input:not(.k-checkbox):not(.k-radio),
+            > textarea {
+                width: 100%;
+            }
+        }
+    }
+
+    .k-form-inline {
+
+        .k-form-field {
+            display: flex;
+            align-items: flex-start;
+
+            > span:not(.k-widget) {
+                width: $inline-form-element-width;
+                text-align: right;
+                line-height: $line-height;
+                padding: calc( #{$padding-y} + #{$input-border-width} ) 0;
+                padding-right: $padding-x-lg;
+                align-self: center;
+            }
+
+            > input {
+                align-self: center;
+            }
+
+            > input:not(.k-checkbox):not(.k-radio) {
+                flex: 1 1 auto;
+            }
+
+            .k-field-info {
+                display: block;
+                margin: 0;
+            }
+        }
+    }
+
+}
+
+@include exports("edit-form/layout") {
+
+    // Edit form
+    .k-edit-form-container {
+        width: 400px;
+        min-width: 400px;
+        border-color: inherit;
+        position: relative;
+    }
+
+
+    // Tabstrip
+    .k-edit-form-container .k-tabstrip-wrapper {
+        margin: (-$window-inner-padding-y) (-$window-inner-padding-x);
+    }
+    .k-edit-form-container .k-tabstrip.k-root-tabs {
+        margin-bottom: $window-inner-padding-y;
+    }
+    .k-edit-form-container .k-tabstrip .k-tabstrip-items {
+        padding: $window-inner-padding-y $window-inner-padding-x 0;
+    }
+    .k-edit-form-container .k-tabstrip .k-content {
+        padding: $window-inner-padding-y $window-inner-padding-x;
+        border-width: 0;
+    }
+
+
+    // Edit buttons
+    .k-edit-buttons {
+        padding: $toolbar-padding-y $toolbar-padding-x;
+        border-width: 1px 0 0;
+        border-style: solid;
+        border-color: inherit;
+        text-align: right;
+        clear: both;
+    }
+    .k-edit-buttons .k-button + .k-button {
+        margin-left: ( $spacer-x / 2 );
+    }
+    .k-edit-form-container .k-edit-buttons {
+        margin: $window-inner-padding-y (-$window-inner-padding-x) (-$window-inner-padding-y);
+        padding: $window-inner-padding-y $window-inner-padding-x;
+    }
+
+
+    // Action buttons
+    .k-popup-edit-form > .k-action-buttons,
+    .k-edit-form-container .k-action-buttons {
+        margin: $spacer (-$window-inner-padding-x) (-$window-inner-padding-y);
+    }
+
+
+    .k-edit-label {
+        margin: 0 0 $spacer-y 0;
+        padding: calc( #{$input-padding-y} + #{$input-border-width} ) 0;
+        width: 30%;
+        line-height: $form-line-height;
+        text-align: right;
+        float: left;
+        clear: both;
+    }
+    .k-edit-field {
+        margin: 0 0 $spacer-y 0;
+        width: 65%;
+        float: right;
+        clear: right;
+
+        &.k-no-editor {
+            padding: calc( #{$input-padding-y} + #{$input-border-width} ) 0;
+        }
+    }
+
+    .k-edit-field {
+
+        > .k-widget,
+        > .k-textbox,
+        > .k-input.k-textbox {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        > .k-colorpicker {
+            width: auto;
+        }
+
+        input[type="radio"]:not(.k-radio),
+        input[type="checkbox"]:not(.k-checkbox) {
+            margin-right: .4ex;
+        }
+
+        .k-radio-label,
+        .k-checkbox-label {
+            margin-right: ($spacer);
+        }
+
+        > .k-reset > li + li {
+            margin-top: ($spacer / 2);
+        }
+
+        .k-reset .k-widget {
+            margin: 0 .4ex 0 1ex;
+        }
+    }
+
+}
+
+@include exports("edit-form/rtl") {
+
+    .k-rtl {
+
+        .k-edit-buttons {
+            text-align: left;
+
+            .k-button + .k-button {
+                margin-left: 0;
+                margin-right: .5em;
+            }
+        }
+    }
+
+}
+
+@include exports("forms/integration-with-bootstrap-forms") {
+    $twbs-font-size-base: 1rem !default;
+    $twbs-input-padding-x: .75rem !default;
+    $twbs-input-padding-y: .5rem !default;
+    $twbs-input-line-height: 1.25 !default;
+
+    $bootstrap-integration-input-height: ($twbs-input-padding-y * 2) + ($twbs-font-size-base * $twbs-input-line-height) !default;
+
+    $twbs-font-size-base-sm: .875rem !default;
+    $twbs-input-padding-x-sm: .5rem !default;
+    $twbs-input-padding-y-sm: .25rem !default;
+    $twbs-input-line-height-sm: 1.5 !default;
+
+    $bootstrap-integration-input-height-sm: ($twbs-input-padding-y-sm * 2) + ($twbs-font-size-base-sm * $twbs-input-line-height-sm) !default;
+
+    $twbs-font-size-base-lg: 1.25rem !default;
+    $twbs-input-padding-x-lg: 1rem !default;
+    $twbs-input-padding-y-lg: .5rem !default;
+    $twbs-input-line-height-lg: 1.5 !default;
+
+    $bootstrap-integration-input-height-lg: ($twbs-input-padding-y-lg * 2) + ($twbs-font-size-base-lg * $twbs-input-line-height-lg) !default;
+
+    $numerictextbox-icon-offset-sm: 2px !default;
+
+    .k-widget.form-control {
+        padding: 0;
+    }
+
+    .k-widget.form-control,
+    .k-maskedtextbox.form-control .k-textbox,
+    .k-textbox.form-control {
+        width: 100%;
+    }
+
+    .k-autocomplete.form-control .k-input {
+        box-sizing: border-box;
+    }
+
+    .k-multiselect.form-control {
+        height: auto;
+    }
+
+    .input-group {
+        .k-dateinput-wrap,
+        .k-dropdown-wrap,
+        .k-multiselect-wrap,
+        .k-numeric-wrap,
+        .k-picker-wrap,
+        .k-maskedtextbox .k-textbox {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+
+            .k-select {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+
+        .k-widget.form-control,
+        .k-maskedtextbox.form-control .k-textbox,
+        .k-textbox.form-control {
+            width: auto;
+        }
+
+        .k-widget.form-control:not(:first-child):not(:last-child) {
+            .k-dateinput-wrap,
+            .k-dropdown-wrap,
+            .k-multiselect-wrap,
+            .k-numeric-wrap,
+            .k-picker-wrap,
+            > .k-textbox {
+                border-radius: 0;
+            }
+        }
+    }
+
+    .input-group-prepend + .k-widget.form-control {
+        .k-dateinput-wrap,
+        .k-dropdown-wrap,
+        .k-multiselect-wrap,
+        .k-numeric-wrap,
+        .k-picker-wrap,
+        > .k-textbox {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+        }
+    }
+
+    // Bootstrap form-control, form-control-sm, form-control-lg
+    .k-widget {
+        &.form-control {
+            .k-input {
+                padding: $twbs-input-padding-y $twbs-input-padding-x;
+                height: $bootstrap-integration-input-height;
+            }
+
+            &-sm {
+                .k-input {
+                    padding: $twbs-input-padding-y-sm $twbs-input-padding-x-sm;
+                    height: $bootstrap-integration-input-height-sm;
+                }
+
+                .k-dateinput-wrap,
+                .k-dropdown-wrap,
+                .k-picker-wrap {
+                    .k-select {
+                        padding: $twbs-input-padding-y-sm;
+                    }
+                }
+
+                .k-select {
+                    width: $bootstrap-integration-input-height-sm;
+                }
+            }
+
+            &-lg {
+                .k-input {
+                    padding: $twbs-input-padding-y-lg $twbs-input-padding-x-lg;
+                    height: $bootstrap-integration-input-height-lg;
+                }
+
+                .k-dateinput-wrap,
+                .k-dropdown-wrap,
+                .k-picker-wrap {
+                    .k-select {
+                        padding: $twbs-input-padding-y-lg;
+                    }
+                }
+
+                .k-select {
+                    width: $bootstrap-integration-input-height-lg;
+                }
+            }
+        }
+    }
+
+    .k-maskedtextbox {
+        &.form-control {
+            .k-textbox {
+                height: calc( #{$bootstrap-integration-input-height} + #{$input-border-width * 2} );
+                padding: $twbs-input-padding-y $twbs-input-padding-x;
+            }
+
+            &-sm {
+                .k-textbox {
+                    height: calc( #{$bootstrap-integration-input-height-sm} + #{$input-border-width + 2} );
+                    padding: $twbs-input-padding-y-sm $twbs-input-padding-x-sm;
+                    line-height: $twbs-input-line-height-sm;
+                }
+            }
+
+            &-lg {
+                .k-textbox {
+                    height: calc( #{$bootstrap-integration-input-height-lg} + #{$input-border-width * 2} );
+                    padding: $twbs-input-padding-y-lg $twbs-input-padding-x-lg;
+                    line-height: $twbs-input-line-height-lg;
+                }
+            }
+        }
+    }
+
+    .k-textbox {
+        &.form-control {
+            height: calc( #{$bootstrap-integration-input-height} + #{$input-border-width * 2} );
+            padding: $twbs-input-padding-y $twbs-input-padding-x;
+
+            &-sm {
+                height: calc( #{$bootstrap-integration-input-height-sm} + #{$input-border-width * 2} );
+                padding: $twbs-input-padding-y-sm $twbs-input-padding-x-sm;
+                line-height: $twbs-input-line-height-sm;
+            }
+
+            &-lg {
+                height: calc( #{$bootstrap-integration-input-height-lg} + #{$input-border-width * 2} );
+                padding: $twbs-input-padding-y-lg $twbs-input-padding-x-lg;
+                line-height: $twbs-input-line-height-lg;
+            }
+        }
+    }
+
+    .k-dateinput,
+    .k-numerictextbox {
+        &.form-control {
+            &-sm {
+                .k-link-increase > .k-icon {
+                    bottom: -$numerictextbox-icon-offset-sm;
+                }
+
+                .k-link-decrease > .k-icon {
+                    top: -$numerictextbox-icon-offset-sm;
+                }
+
+                .k-link {
+                    height: ($bootstrap-integration-input-height-sm / 2);
+                }
+            }
+
+            &-lg {
+                .k-link {
+                    height: $bootstrap-integration-input-height-lg / 2;
+                }
+            }
+        }
+    }
+
+    .k-dateinput {
+        &.form-control {
+            .k-dateinput-wrap {
+                .k-select {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}

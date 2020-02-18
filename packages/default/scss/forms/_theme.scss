@@ -1,0 +1,22 @@
+@include exports( "forms/theme" ) {
+
+    .k-form,
+    .k-form-inline {
+        @include fill ( $color: $body-text );
+
+        fieldset {
+            legend {
+                @include fill ( $color: $fieldset-legend-text );
+            }
+        }
+
+        .k-field-info {
+            @include fill ( $color: lighten($body-text, 33%) );
+        }
+
+        .k-alert-error {
+            @include fill ( $color: $error );
+        }
+    }
+
+}

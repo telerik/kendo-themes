@@ -2,50 +2,17 @@
 
 @include exports("pager/theme/material") {
 
-    .k-pager-wrap {
+    // Responsive
+    .k-pager-lg,
+    .k-pager-md,
+    .k-pager-sm {
 
-        &.k-pager-lg,
-        &.k-pager-md,
-        &.k-pager-sm {
+        .k-pager-numbers {
 
-            .k-pager-numbers {
-                // sass-lint:disable-block nesting-depth
-
-                .k-current-page {
-
-                    > span {
-                        @include fill(
-                            $pager-number-text,
-                            $pager-bg,
-                            $input-border
-                        );
-
-                        &:hover,
-                        &.k-state-hover {
-                            @include fill(
-                                $pager-number-hovered-text,
-                                $pager-bg,
-                                $input-hovered-border
-                            );
-                        }
-                    }
-                }
-
-                &.k-state-expanded {
-                    box-shadow: $popup-shadow;
-
-                    .k-current-page {
-
-                        > span {
-                            @include fill(
-                                $pager-number-hovered-text,
-                                $pager-number-hovered-bg,
-                                $pager-number-hovered-border
-                            );
-                        }
-                    }
-                }
+            .k-current-page .k-link {
+                background-color: transparent;
             }
         }
     }
+
 }

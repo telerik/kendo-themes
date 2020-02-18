@@ -109,7 +109,12 @@
         .k-slider-topleft .k-tick { background-position: -122px center; }
         .k-slider-bottomright .k-tick { background-position: -152px center; }
 
-        .k-tick-large { background-position: -2px center; }
+        .k-tick-large {
+            display: flex;
+            align-items: center;
+            background-position: -2px center;
+        }
+
         .k-slider-topleft .k-tick-large { background-position: -32px center; }
         .k-slider-bottomright .k-tick-large { background-position: -62px center; }
 
