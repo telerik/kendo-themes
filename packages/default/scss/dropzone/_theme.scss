@@ -1,0 +1,26 @@
+@include exports( "dropzone/theme" ) {
+    // Dropzone
+    .k-external-dropzone {
+        &.k-external-dropzone-hover {
+            .k-icon {
+                color: $primary;
+                opacity: 1;
+            }
+        }
+    }
+
+    // Dropzpne icon + hint + note wrapper
+    .k-dropzone-inner {
+        @include fill(
+            $external-dropzone-text,
+            $external-dropzone-bg,
+            $external-dropzone-border
+        );
+
+        >.k-icon,
+        .k-dropzone-note {
+            opacity: $external-dropzone-icon-opacity;
+        }
+    }
+
+}

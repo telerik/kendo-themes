@@ -1,0 +1,11 @@
+@import "~@progress/kendo-theme-default/scss/dropzone/_layout.scss";
+
+@include exports("dropzone/layout/material") {}
+
+.k-dropzone-inner {
+    line-height: normal;
+
+    >.k-icon {
+        margin-bottom: $external-dropzone-spacing * 5;
+    }
+}
