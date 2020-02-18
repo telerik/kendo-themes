@@ -1,7 +1,7 @@
 ---
 title: Customizing Color System
-description: "Refer to the list of the Kendo UI  theme variables available for customization."
-slug: variables_kendotheme
+description: "Refer to the list of the Kendo UI Material theme variables available for customization."
+slug: variables_kendothemematerial_color-system
 position: 9
 ---
 

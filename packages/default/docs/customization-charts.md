@@ -1,7 +1,7 @@
 ---
 title: Customizing Charts
-description: "Refer to the list of the Kendo UI  theme variables available for customization."
-slug: variables_kendotheme
+description: "Refer to the list of the Kendo UI Default theme variables available for customization."
+slug: variables_kendothemedefault_charts
 position: 9
 ---
 
