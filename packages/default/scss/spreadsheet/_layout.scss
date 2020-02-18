@@ -256,6 +256,8 @@
                 margin-left: -$spacer / 2;
                 padding: 0;
                 line-height: 1;
+                display: inline-flex;
+                flex-direction: row;
                 vertical-align: middle;
             }
         }
