@@ -156,16 +156,27 @@
     // Agenda view
     .k-scheduler-agendaview {
 
-        tr.k-state-hover,
+        // Hover
         .k-scheduler-content tr:hover,
+        .k-scheduler-content tr.k-state-hover,
         .k-scheduler-content .k-scheduler-row:hover {
             @include appearance( hovered-node );
         }
 
-        tr.k-state-hover .k-scheduler-datecolumn,
-        tr:hover .k-scheduler-datecolumn,
-        tr:hover .k-scheduler-groupcolumn {
+        .k-scheduler-content tr:hover .k-scheduler-datecolumn,
+        .k-scheduler-content tr:hover .k-scheduler-groupcolumn,
+        .k-scheduler-content tr.k-state-hover .k-scheduler-datecolumn,
+        .k-scheduler-content tr.k-state-hover .k-scheduler-groupcolumn {
             @include appearance( panel );
+        }
+
+        // Selected
+        .k-scheduler-content tr.k-state-selected {
+            background-color: rgba($selected-bg, .25);
+        }
+        .k-scheduler-content tr.k-state-selected .k-scheduler-datecolumn,
+        .k-scheduler-content tr.k-state-selected .k-scheduler-groupcolumn {
+            background-color: $panel-bg;
         }
     }
 
