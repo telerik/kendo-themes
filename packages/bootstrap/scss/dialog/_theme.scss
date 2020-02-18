@@ -2,6 +2,14 @@
 
     .k-dialog {}
 
+    // Titlebar
+    .k-dialog-titlebar {
+        @include fill(
+            $dialog-titlebar-text,
+            $dialog-titlebar-bg,
+            $dialog-titlebar-border
+        );
+    }
 
     // Buttons
     .k-dialog-buttongroup {
