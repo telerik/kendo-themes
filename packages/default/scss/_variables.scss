@@ -2512,3 +2512,13 @@ $typography-config: map-merge((
     card-subtitle: map-get($typography-config, h6)
 ), $typography-config);
 // sass-lint:enable indentation
+
+
+// Disabled Styling maps
+$disabled-styling: () !default;
+// sass-lint:disable indentation
+$disabled-styling: map-merge((
+    opacity: $disabled-opacity,
+    filter: $disabled-filter
+), $disabled-styling);
+// sass-lint:enable indentation

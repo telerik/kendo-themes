@@ -21,7 +21,7 @@
         &:disabled,
         &[disabled],
         &.k-state-disabled {
-            @include disabled;
+            @include disabled( $disabled-styling );
         }
     }
 

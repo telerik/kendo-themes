@@ -85,7 +85,7 @@
         }
 
         &.k-chip-disabled {
-            @extend %disabled;
+            @include disabled( $disabled-styling );
         }
     }
 
