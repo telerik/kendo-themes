@@ -815,8 +815,12 @@ $picker-icon-offset: calc( #{$picker-select-calc-size} + #{$picker-select-border
 // Popup
 $popup-padding-x: 0 !default;
 $popup-padding-y: $dropdown-padding-y !default;
-
 $popup-border-width: 1px !default;
+$popup-border-radius: $border-radius !default;
+
+$popup-font-size: $font-size !default;
+$popup-line-height: $line-height !default;
+
 $popup-header-padding: $list-item-padding-y $list-item-padding-x !default;
 $popup-header-font-size: null !default;
 $popup-header-text: null !default;

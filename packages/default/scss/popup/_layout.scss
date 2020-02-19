@@ -2,16 +2,18 @@
 @include exports("popup/layout") {
 
     .k-popup {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
+        @include use-background-clip();
+        @include border-radius( $popup-border-radius );
         margin: 0;
         padding: $popup-padding-y $popup-padding-x;
         border-width: $popup-border-width;
         border-style: solid;
-        font-size: $font-size;
-        line-height: $line-height;
-        box-sizing: content-box;
+        box-sizing: border-box;
+        font-size: $popup-font-size;
+        line-height: $popup-line-height;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
 
         > .k-widget {
             border-width: 0;
