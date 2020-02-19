@@ -8,19 +8,28 @@
 
             &:hover,
             &.k-state-hover {
-                @include appearance( hovered-button );
-                border-color: inherit;
+                @include fill(
+                    $button-hovered-text,
+                    $button-hovered-bg,
+                    $button-hovered-border,
+                    $button-hovered-gradient
+                );
             }
 
             &:focus,
             &.k-state-focused {
-                box-shadow: $focused-shadow;
+                @include box-shadow( $focused-shadow );
             }
 
             &:active,
             &.k-state-active {
-                @include appearance( pressed-button );
-                border-color: inherit;
+                @include fill(
+                    $button-pressed-text,
+                    $button-pressed-bg,
+                    $button-pressed-border,
+                    $button-pressed-gradient
+                );
+                @include box-shadow( $button-pressed-shadow );
             }
         }
 
@@ -29,24 +38,32 @@
 
             &:hover,
             &.k-state-hover {
-                @include appearance( hovered-primary-button );
-                border-color: inherit;
+                @include fill(
+                    $primary-button-hovered-text,
+                    $primary-button-hovered-bg,
+                    $primary-button-hovered-border,
+                    $primary-button-hovered-gradient
+                );
 
                 &:focus,
                 &.k-state-focused {
-                    box-shadow: $focused-shadow;
+                    @include box-shadow( $focused-shadow );
                 }
             }
 
             &:focus,
             &.k-state-focused {
-                box-shadow: $primary-focused-shadow;
+                @include box-shadow( $primary-focused-shadow );
             }
 
             &:active,
             &.k-state-active {
-                @include appearance( pressed-primary-button );
-                border-color: inherit;
+                @include fill(
+                    $primary-button-pressed-text,
+                    $primary-button-pressed-bg,
+                    $primary-button-pressed-border,
+                    $primary-button-pressed-gradient
+                );
             }
         }
     }
