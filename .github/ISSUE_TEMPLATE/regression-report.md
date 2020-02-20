@@ -6,15 +6,16 @@ labels: regression
 assignees: ''
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**Describe the regression**
+A clear and concise description of what the regression is.
 
 **To reproduce**
 Steps to reproduce the behavior:
+
 1. Go to '...'
-2. Click '...'
-3. Scroll down to '...'
-4. See error '...'
+1. Click '...'
+1. Scroll down to '...'
+1. See error '...'
 
 **Expected behavior**
 A clear and concise description of what you expected to happen.
@@ -22,30 +23,33 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Affected package (please provide)**
+**Affected package (please remove the unneeded items)**
 * theme-default
 * theme-bootstrap
 * theme-material
 * theme-tasks
 
-**Affected suites (please provide)**
+**Affected suites (please remove the unneeded items)**
 * Kendo UI for jQuery
 * Kendo UI for Angular
 * Kendo UI for React
 * Kendo UI for Vue
 * Telerik UI for Blazor
 
-**Affected browsers (please provide)**
-- Firefox: [for example, 67, lts]
-- Chrome: [for example, 77]
-- Edge version: [for example, 15]
-- Safari: [for example, 12]
-- IE version: [for example, 11]
+**Affected browsers (please remove the unneeded items)**
+* All
+* Not Applicable
+* Firefox version: [for example, 72, lts]
+* Chrome version: [for example, 80]
+* Edge version: [for example, 80]
+* Safari version: [for example, 13]
+* IE version: [for example, 11]
 
-**Build system information (please provide)**
-- OS: [for example, Windows, Linux, Mac]
-- Node version: [for example, 10.15.3]
-- NPM version: [for example, 6.4.1]
+**Build system information (please remove the unneeded items)**
+* Not Applicable
+* OS: [for example, Windows, Linux, Mac]
+* Node version: [for example, 10.15.3]
+* NPM version: [for example, 6.4.1]
 
 **Additional context**
 Add any other context about the regression problem.
