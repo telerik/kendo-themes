@@ -4,10 +4,13 @@
 
     // Default button
     .k-button {
-        @include appearance( button );
+        @include fill(
+            $button-text,
+            $button-bg,
+            $button-border,
+            $button-gradient
+        );
         box-shadow: $button-shadow;
-        font-weight: 500;
-        transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
 
         &:hover,
         &.k-state-hover {
@@ -43,8 +46,17 @@
 
 
     // Primary button
-    .k-button.k-primary {
-        @include appearance( primary-button );
+    .k-button.k-primary:not(.k-outline) {
+        @include fill(
+            $primary-button-text,
+            $primary-button-bg,
+            $primary-button-border,
+            $primary-button-gradient
+        );
+
+        &.k-state-disabled {
+            color: $button-disabled-text;
+        }
     }
 
 

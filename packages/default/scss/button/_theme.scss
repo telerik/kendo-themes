@@ -1,15 +1,23 @@
 @include exports( "button/theme" ) {
-    $outline-primary-button-text: $primary !default;
 
     // Default button
     .k-button {
-        @include appearance( button );
-        @include use-background-clip();
+        @include fill(
+            $button-text,
+            $button-bg,
+            $button-border,
+            $button-gradient
+        );
 
         // Hover state
         &:hover,
         &.k-state-hover {
-            @include appearance( hovered-button );
+            @include fill(
+                $button-hovered-text,
+                $button-hovered-bg,
+                $button-hovered-border,
+                $button-hovered-gradient
+            );
         }
 
         // Focused state
@@ -21,13 +29,23 @@
         // Pressed state
         &:active,
         &.k-state-active {
-            @include appearance( pressed-button );
+            @include fill(
+                $button-pressed-text,
+                $button-pressed-bg,
+                $button-pressed-border,
+                $button-pressed-gradient
+            );
             box-shadow: inset $button-pressed-shadow;
         }
 
         // Selected state
         &.k-state-selected {
-            @include appearance( pressed-primary-button );
+            @include fill(
+                $primary-button-pressed-text,
+                $primary-button-pressed-bg,
+                $primary-button-pressed-border,
+                $primary-button-pressed-gradient
+            );
             box-shadow: $primary-button-pressed-shadow;
         }
 
@@ -35,12 +53,22 @@
 
     // Primary button
     .k-button.k-primary {
-        @include appearance( primary-button );
+        @include fill(
+            $primary-button-text,
+            $primary-button-bg,
+            $primary-button-border,
+            $primary-button-gradient
+        );
 
         // Hovoer state
         &:hover,
         &.k-state-hover {
-            @include appearance( hovered-primary-button );
+            @include fill(
+                $primary-button-hovered-text,
+                $primary-button-hovered-bg,
+                $primary-button-hovered-border,
+                $primary-button-hovered-gradient
+            );
         }
 
         // Focused state
@@ -59,13 +87,23 @@
         // Active state
         &:active,
         &.k-state-active {
-            @include appearance( pressed-primary-button );
+            @include fill(
+                $primary-button-pressed-text,
+                $primary-button-pressed-bg,
+                $primary-button-pressed-border,
+                $primary-button-pressed-gradient
+            );
             box-shadow: $primary-button-pressed-shadow;
         }
 
         // Selected state
         &.k-state-selected {
-            @include appearance( pressed-primary-button );
+            @include fill(
+                $primary-button-pressed-text,
+                $primary-button-pressed-bg,
+                $primary-button-pressed-border,
+                $primary-button-pressed-gradient
+            );
             box-shadow: $primary-button-pressed-shadow;
         }
 
@@ -99,7 +137,12 @@
         .k-button.k-state-selected,
         > input[type="radio"]:checked + .k-button,
         > input[type="checkbox"]:checked + .k-button {
-            @include appearance( pressed-primary-button );
+            @include fill(
+                $primary-button-pressed-text,
+                $primary-button-pressed-bg,
+                $primary-button-pressed-border,
+                $primary-button-pressed-gradient
+            );
             box-shadow: $primary-button-pressed-shadow;
         }
 
@@ -116,7 +159,12 @@
         .k-state-disabled {
 
             &:not(.k-state-active) {
-                @include appearance( button );
+                @include fill(
+                    $button-text,
+                    $button-bg,
+                    $button-border,
+                    $button-gradient
+                );
             }
         }
 
@@ -132,7 +180,12 @@
     .k-split-button.k-button-group .k-button {
         &:active,
         &.k-state-active {
-            @include appearance( pressed-button );
+            @include fill(
+                $button-pressed-text,
+                $button-pressed-bg,
+                $button-pressed-border,
+                $button-pressed-gradient
+            );
             box-shadow: inset $button-pressed-shadow;
         }
     }
