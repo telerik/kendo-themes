@@ -4,7 +4,6 @@ about: Documentation issue or request
 title: ''
 labels: docs
 assignees: ''
-
 ---
 
 **Describe the issue or request**

@@ -4,11 +4,12 @@ about: Suggest an idea for this project
 title: ''
 labels: Enhancement
 assignees: ''
-
 ---
 
 **Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. For example, the behavior of [...] is not intuitive when [...].
+A clear and concise description of what the problem is.
+
+For example, the behavior of [...] is not intuitive when [...].
 
 **Describe the solution you would like to see implemented**
 A clear and concise description of what you want to happen.
