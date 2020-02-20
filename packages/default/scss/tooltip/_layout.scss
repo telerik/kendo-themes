@@ -60,32 +60,44 @@
         pointer-events: none;
     }
 
+    // TODO:
+    // Some implementations rely on margin + transform-rotate to position callout
+    // Remove margin tweaking and uncomment when their implementation is fixed.
+
     .k-callout-n {
+        margin-left: -$tooltip-callout-size;
         border-bottom-color: currentColor;
-        top: 0;
+        // top: 0;
+        top: (-$tooltip-callout-size * 2);
         left: 50%;
-        transform: translate(-50%, -100%);
+        // transform: translate(-50%, -100%);
         pointer-events: none;
     }
     .k-callout-e {
+        margin-top: -$tooltip-callout-size;
         border-left-color: currentColor;
         top: 50%;
-        right: 0;
-        transform: translate(100%, -50%);
+        // right: 0;
+        right: (-$tooltip-callout-size * 2);
+        // transform: translate(100%, -50%);
         pointer-events: none;
     }
     .k-callout-s {
+        margin-left: -$tooltip-callout-size;
         border-top-color: currentColor;
-        bottom: 0;
+        // bottom: 0;
+        bottom: (-$tooltip-callout-size * 2);
         left: 50%;
-        transform: translate(-50%, 100%);
+        // transform: translate(-50%, 100%);
         pointer-events: none;
     }
     .k-callout-w {
+        margin-top: -$tooltip-callout-size;
         border-right-color: currentColor;
         top: 50%;
-        left: 0;
-        transform: translate(-100%, -50%);
+        // left: 0;
+        left: (-$tooltip-callout-size * 2);
+        // transform: translate(-100%, -50%);
         pointer-events: none;
     }
 
