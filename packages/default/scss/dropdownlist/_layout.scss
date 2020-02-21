@@ -7,11 +7,13 @@
         text-align: left;
         white-space: nowrap;
         border-width: 0;
+        background: none;
         display: inline-flex;
         vertical-align: middle;
         position: relative;
 
         .k-dropdown-wrap {
+            @include use-background-clip();
             @include border-radius( $input-border-radius );
             padding: 0;
             width: 100%;
@@ -44,8 +46,8 @@
 
             .k-select {
                 @include border-right-radius-only();
-                padding: 0;
-                width: $button-inner-calc-size;
+                padding: $picker-select-padding-y $picker-select-padding-x;
+                width: if($use-picker-select-width, $button-inner-calc-size, null);
                 border-width: 0;
                 box-sizing: border-box;
                 border-style: solid;
