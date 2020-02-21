@@ -1,16 +1,32 @@
 @import "~@progress/kendo-theme-default/scss/dropdownlist/_layout.scss";
 
 @include exports("dropdownlist/layout/material") {
+
     .k-dropdown {
         .k-dropdown-wrap {
             border-width: 0 0 $input-border-width;
             position: relative;
 
             .k-select {
-                padding: $picker-select-padding-y $picker-select-padding-x;
-                width: unset;
-                border-width: 0;
-                font-size: $font-size;
+                opacity: $dropdownlist-opacity;
+            }
+
+            // Hover
+            &:hover,
+            &.k-state-hover {
+
+                .k-select {
+                    opacity: $dropdownlist-hovered-opacity;
+                }
+            }
+
+            // Focused
+            &.k-state-focused,
+            .k-state-focused > & {
+
+                .k-select {
+                    opacity: $dropdownlist-focused-opacity;
+                }
             }
 
             // Disabled
