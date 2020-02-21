@@ -6,10 +6,13 @@
         @include border-radius();
         padding: $input-padding-y $input-padding-x;
         width: $input-default-width;
-        box-sizing: border-box;
         border-width: $input-border-width;
         border-style: solid;
         outline: 0;
+        box-sizing: border-box;
+        background: none;
+        // Do not put use-background-clip at the top for this specific case!
+        @include use-background-clip();
         font: inherit;
         font-size: $input-font-size;
         line-height: $input-line-height;
@@ -46,16 +49,6 @@
     .k-textarea {
         width: $textarea-default-width;
         min-height: $textarea-calc-height;
-    }
-
-    .k-maskedtextbox {
-        display: inline-flex;
-        border-width: 0;
-
-        .k-textbox {
-            flex: 1 0 0%;
-            min-width: 0;
-        }
     }
 
     .k-input,
