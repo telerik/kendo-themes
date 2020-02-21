@@ -1,7 +1,6 @@
 @include exports( "input/layout" ) {
 
     .k-textbox,
-    .k-input.k-textbox,
     .k-textarea {
         @include border-radius();
         padding: $input-padding-y $input-padding-x;
@@ -26,6 +25,10 @@
         &.k-state-disabled {
             @include disabled( $disabled-styling );
         }
+    }
+    input.k-textbox,
+    textarea.k-textarea {
+        display: inline-block;
     }
 
     .k-textbox {
