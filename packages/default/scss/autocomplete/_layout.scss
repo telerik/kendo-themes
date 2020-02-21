@@ -5,15 +5,16 @@
         @include border-radius( $input-border-radius );
         padding: 0 $picker-select-calc-size 0 0;
         width: $input-default-width;
+        border-width: 1px;
+        border-style: solid;
+        box-sizing: border-box;
+        background: none;
         font-size: $input-font-size;
         line-height: $input-line-height;
         text-align: left;
         white-space: nowrap;
         display: inline-flex;
         vertical-align: middle;
-        border-width: 1px;
-        border-style: solid;
-        box-sizing: border-box;
         transition: all .1s ease; // sass-lint:disable-block no-transition-all
         position: relative;
         cursor: default;

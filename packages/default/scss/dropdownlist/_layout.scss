@@ -2,12 +2,13 @@
 
     .k-dropdown {
         width: $input-default-width;
+        border-width: 0;
+        background: none;
+        box-sizing: border-box;
         font-size: $input-font-size;
         line-height: $input-line-height;
         text-align: left;
         white-space: nowrap;
-        border-width: 0;
-        background: none;
         display: inline-flex;
         vertical-align: middle;
         position: relative;
