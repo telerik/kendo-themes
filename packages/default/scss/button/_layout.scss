@@ -2,6 +2,7 @@
 
     // Button
     .k-button {
+        @include use-background-clip();
         @include border-radius( $button-border-radius );
         padding: $button-padding-y $button-padding-x;
         box-sizing: border-box;

@@ -8,7 +8,6 @@
             $input-bg,
             $input-border
         );
-        @include use-background-clip();
 
         // Hovered
         &:hover,
