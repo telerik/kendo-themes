@@ -180,7 +180,7 @@ gulp.task("assets", function() {
 
 function embedFile(filename) {
     let basename = path.basename(filename);
-    let mimeType = mime.lookup(filename);
+    let mimeType = mime.getType(filename);
     let base64 = fs.readFileSync(filename).toString("base64");
     let template = fs.readFileSync(path.join(__dirname, "lib/", "data-uri.template"), "utf8");
 
