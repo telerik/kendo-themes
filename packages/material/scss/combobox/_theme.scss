@@ -1,6 +1,5 @@
 @include exports( "combobox/theme" ) {
     .k-combobox {
-        background-color: transparent;
 
         .k-dropdown-wrap {
             border-color: $combobox-border;

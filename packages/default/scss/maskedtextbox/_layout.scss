@@ -1,14 +1,22 @@
 @include exports("maskedtextbox/layout") {
+
     .k-maskedtextbox {
         width: $input-default-width;
         font-size: $input-font-size;
         line-height: $input-line-height;
+        border-width: 0;
+        box-sizing: border-box;
+        background: none;
         text-align: left;
         white-space: nowrap;
-        border-width: 0;
         display: inline-flex;
         vertical-align: middle;
         position: relative;
+
+        > .k-textbox {
+            flex: 1 0 0%;
+            min-width: 0;
+        }
 
         .k-i-warning {
             display: none;

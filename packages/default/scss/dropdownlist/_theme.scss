@@ -1,7 +1,6 @@
 @include exports( "dropdownlist/theme" ) {
 
     .k-dropdown {
-        background-color: transparent;
 
         .k-dropdown-wrap {
             @include fill(
@@ -10,8 +9,8 @@
                 $dropdownlist-border,
                 $dropdownlist-gradient
             );
-            @include use-background-clip();
 
+            // Hover state
             &:hover,
             &.k-state-hover {
                 @include fill(
@@ -24,6 +23,7 @@
 
             &.k-state-active {}
 
+            // Focused state
             &.k-state-focused {
                 @include fill(
                     $dropdownlist-focused-text,
