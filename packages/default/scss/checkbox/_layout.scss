@@ -65,8 +65,7 @@
     // Disabled state
     .k-checkbox:disabled,
     .k-checkbox:disabled + .k-checkbox-label {
-        @include disabled;
-        cursor: default;
+        @include disabled( $disabled-styling );
     }
 
 

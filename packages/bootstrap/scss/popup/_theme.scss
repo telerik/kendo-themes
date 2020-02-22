@@ -1,9 +1,11 @@
 @include exports( "popup/theme" ) {
 
     .k-popup {
-        @include appearance( popup );
-        @include border-radius( $border-radius );
-        margin: $dropdown-spacer 0 0 0;
+        @include fill(
+            $popup-text,
+            $popup-bg,
+            $popup-border
+        );
 
         .k-header,
         .k-group-header {

@@ -1,8 +1,11 @@
 @include exports("popup/theme") {
 
     .k-popup {
-        @include appearance( popup );
-        @include use-background-clip();
+        @include fill(
+            $popup-text,
+            $popup-bg,
+            $popup-border,
+        );
     }
 
     .k-popup > kendo-list > .k-first {
@@ -86,11 +89,11 @@
 
     .k-animation-container-shown,
     .k-animation-container > .k-popup {
-        box-shadow: $popup-shadow;
+        @include box-shadow( $popup-shadow );
     }
 
     .k-animation-container-fixed > .k-popup {
-        box-shadow: none;
+        @include box-shadow( none );
     }
 }
 

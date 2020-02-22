@@ -4,11 +4,76 @@
             box-shadow: $popup-shadow;
         }
     }
+
+
+    // Default tooltip
     .k-tooltip {
-        color: $tooltip-text;
-        background-color: $tooltip-bg;
+        @include fill(
+            $tooltip-text,
+            $tooltip-bg,
+            $tooltip-border
+        );
+
+        .k-callout {
+            color: $tooltip-bg;
+        }
     }
-    .k-callout {
-        color: $tooltip-bg;
+
+
+    // Tooltip variants
+    .k-tooltip-primary {
+        @include fill(
+            $tooltip-primary-text,
+            $tooltip-primary-bg,
+            $tooltip-primary-border
+        );
+
+        .k-callout {
+            color: $tooltip-primary-bg;
+        }
+    }
+    .k-tooltip-info {
+        @include fill(
+            $tooltip-info-text,
+            $tooltip-info-bg,
+            $tooltip-info-border
+        );
+
+        .k-callout {
+            color: $tooltip-info-bg;
+        }
+    }
+    .k-tooltip-success {
+        @include fill(
+            $tooltip-success-text,
+            $tooltip-success-bg,
+            $tooltip-success-border
+        );
+
+        .k-callout {
+            color: $tooltip-success-bg;
+        }
+    }
+    .k-tooltip-warning {
+        @include fill(
+            $tooltip-warning-text,
+            $tooltip-warning-bg,
+            $tooltip-warning-border
+        );
+
+        .k-callout {
+            color: $tooltip-warning-bg;
+        }
+    }
+    .k-tooltip-error {
+        @include fill(
+            $tooltip-error-text,
+            $tooltip-error-bg,
+            $tooltip-error-border
+        );
+
+        .k-callout {
+            color: $tooltip-error-bg;
+        }
     }
 }

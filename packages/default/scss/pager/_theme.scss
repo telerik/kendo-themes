@@ -6,45 +6,47 @@
             $pager-bg,
             $pager-border
         );
-
-        &.k-pager-lg,
-        &.k-pager-md,
-        &.k-pager-sm {
-
-            .k-pager-numbers {
-                border-color: $button-border;
-                background-color: $pager-bg;
-
-                &.k-state-expanded {
-
-                    .k-current-page {
-                        border-color: $button-border;
-                    }
-                }
-            }
-        }
     }
 
-    .k-pager-nav {
+
+    %base-pager-item-theme {
         @include fill(
             $pager-item-text,
             $pager-item-bg,
             $pager-item-border
         );
 
-        &:hover {
+        &:hover,
+        &.k-state-hover {
             @include fill(
-                $pager-number-hovered-text,
-                $pager-number-hovered-bg,
-                $pager-number-hovered-border
+                $pager-item-hover-text,
+                $pager-item-hover-bg,
+                $pager-item-hover-border
             );
         }
 
-        &:focus {
-            box-shadow: $list-item-focused-shadow;
+        &.k-state-selected {
+            @include fill(
+                $pager-item-selected-text,
+                $pager-item-selected-bg,
+                $pager-item-selected-border
+            );
+        }
+
+        &:focus,
+        &.k-state-focus {
+            @include box-shadow( $pager-item-focus-shadow );
         }
     }
 
+
+    // Pager items
+    .k-pager-nav {
+        @extend %base-pager-item-theme;
+    }
+
+
+    // Pager numbers
     .k-pager-numbers {
         .k-link {
             @include fill(
@@ -56,24 +58,90 @@
             &:hover,
             &.k-state-hover {
                 @include fill(
-                    $pager-number-hovered-text,
-                    $pager-number-hovered-bg,
-                    $pager-number-hovered-border
+                    $pager-number-hover-text,
+                    $pager-number-hover-bg,
+                    $pager-number-hover-border
                 );
             }
 
-            &:focus {
-                box-shadow: $list-item-focused-shadow;
+            &.k-state-selected {
+                @include fill(
+                    $pager-number-selected-text,
+                    $pager-number-selected-bg,
+                    $pager-number-selected-border
+                );
+            }
+
+            &:focus,
+            &.k-state-focus {
+                @include box-shadow( $pager-number-focus-shadow );
             }
         }
+    }
 
-        .k-state-selected {
-            @include fill(
-                $pager-number-selected-text,
-                $pager-number-selected-bg,
-                $pager-number-selected-border
-            );
+
+    // Pager refresh
+    .k-pager-refresh {
+        @extend %base-pager-item-theme;
+    }
+
+
+
+
+    // Responsive
+    .k-pager-lg,
+    .k-pager-md,
+    .k-pager-sm {
+
+        .k-pager-numbers {
+
+            .k-current-page .k-link {
+                @include fill(
+                    $dropdownlist-text,
+                    $dropdownlist-bg,
+                    $dropdownlist-border
+                );
+
+                &:hover,
+                &.k-state-hover {
+                    @include fill(
+                        $dropdownlist-hovered-text,
+                        $dropdownlist-hovered-bg,
+                        $dropdownlist-hovered-border
+                    );
+                }
+            }
+
+            &.k-state-expanded {
+                @include fill(
+                    $popup-text,
+                    $popup-bg,
+                    $popup-border
+                );
+                @include box-shadow( $popup-shadow );
+
+                .k-link {
+
+                    &:hover,
+                    &.k-state-hover {
+                        @include fill(
+                            $list-item-hovered-text,
+                            $list-item-hovered-bg
+                        )
+                    }
+
+                    &.k-state-selected {
+                        @include fill(
+                            $list-item-selected-text,
+                            $list-item-selected-bg
+                        )
+                    }
+
+                }
+            }
+
         }
+
     }
 
 }

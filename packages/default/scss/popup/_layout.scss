@@ -2,16 +2,18 @@
 @include exports("popup/layout") {
 
     .k-popup {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
+        @include use-background-clip();
+        @include border-radius( $popup-border-radius );
         margin: 0;
         padding: $popup-padding-y $popup-padding-x;
         border-width: $popup-border-width;
         border-style: solid;
-        font-size: $font-size;
-        line-height: $line-height;
-        box-sizing: content-box;
+        box-sizing: border-box;
+        font-size: $popup-font-size;
+        line-height: $popup-line-height;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
 
         > .k-widget {
             border-width: 0;
@@ -82,19 +84,22 @@
     }
 
     .k-popup .k-list .k-item > .k-group {
-        position: absolute;
-        top: 0;
-        right: 0;
         padding: 0 .5em;
         font-size: ($font-size * .714);
         line-height: $font-size;
         text-transform: uppercase;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     .k-popup .k-list .k-item > .k-group::before {
-        display: block;
-        content: " ";
+        content: "";
+        width: $font-size;
+        height: $font-size;
         border-width: ($font-size / 2);
         border-style: solid;
+        box-sizing: border-box;
+        display: block;
         position: absolute;
         left: -$font-size;
         bottom: 0;

@@ -5,11 +5,13 @@
     .k-multiselect {
         @include border-radius();
         width: $multiselect-width;
+        border-width: 0;
+        box-sizing: border-box;
+        background: none;
         font-size: $input-font-size;
         line-height: $input-line-height;
         text-align: left;
         white-space: nowrap;
-        border-width: 0;
         display: inline-flex;
         vertical-align: middle;
         position: relative;

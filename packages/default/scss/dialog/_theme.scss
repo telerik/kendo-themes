@@ -1,15 +1,10 @@
 @include exports("dialog/theme") {
-
-    $dialog-titlebar-border-color: inherit !default;
-    $dialog-titlebar-bg: $primary !default;
-    $dialog-titlebar-text: $primary-contrast !default;
-
     // Titlebar
     .k-dialog-titlebar {
         @include fill(
             $dialog-titlebar-text,
             $dialog-titlebar-bg,
-            $dialog-titlebar-border-color
+            $dialog-titlebar-border
         );
     }
 

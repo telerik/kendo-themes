@@ -1,7 +1,6 @@
 @include exports("multiselect/theme") {
 
     .k-multiselect {
-        background-color: transparent;
 
         .k-multiselect-wrap {
             @include fill(

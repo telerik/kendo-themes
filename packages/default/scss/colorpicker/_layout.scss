@@ -3,6 +3,8 @@
     .k-colorpicker {
         width: auto;
         border-width: 0;
+        box-sizing: border-box;
+        background: none;
         text-align: left;
         display: inline-flex;
         vertical-align: middle;

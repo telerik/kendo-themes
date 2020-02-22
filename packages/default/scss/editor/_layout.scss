@@ -56,37 +56,13 @@
         }
 
         &.k-readonly {
-            @include disabled;
+            @include disabled( $disabled-styling );
             > .k-content,
             .k-editor-content {
                 pointer-events: auto;
             }
         }
     }
-
-
-    // Reset styles if in sandbox mode
-    .k-editor-sandbox {
-
-        > .k-content *,
-        .k-editor-content * {
-            color: initial;
-            background-color: initial;
-            font-size: initial;
-            line-height: initial;
-            font-family: initial;
-        }
-
-        &.k-ie > .k-content *,
-        &.k-ie .k-editor-content * {
-            color: #000000;
-            background-color: transparent;
-            font-size: medium;
-            line-height: normal;
-            font-family: sans-serif;
-        }
-    }
-
 
     // Inline editor
     .k-editor-inline {

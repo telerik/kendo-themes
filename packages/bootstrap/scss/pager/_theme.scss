@@ -1,112 +1,55 @@
-@include exports("pager/theme") {
+@import "~@progress/kendo-theme-default/scss/pager/_theme.scss";
 
-    // Theme
-    .k-pager-wrap {
-        @include appearance( header );
+@include exports( "pager/theme/bootstrap" ) {
 
-        .k-pager-first {
-            @include border-left-radius-only();
-        }
-        .k-pager-last {
-            @include border-right-radius-only();
-        }
 
-        .k-link,
-        .k-pager-nav {
-            color: $pager-text;
-            background-color: $pager-bg;
-            border-color: $pager-border;
-            border-width: 1px;
-            border-style: solid;
+    // Pager sizes
+    .k-pager-sizes {
+
+        .k-dropdown .k-dropdown-wrap {
+            @include fill(
+                $pager-text,
+                $pager-item-bg,
+                $pager-item-border
+            );
 
             &:hover,
             &.k-state-hover {
-                color: $pager-hover-text;
-                background-color: $pager-hover-bg;
-                border-color: $pager-hover-border;
-                z-index: 2;
-            }
-
-            &:focus {
-                box-shadow: $pagination-focus-box-shadow;
-                outline: 0;
-                z-index: 2;
+                @include fill(
+                    $pager-text,
+                    $pager-item-hover-bg,
+                    $pager-item-hover-border
+                );
             }
         }
 
-        .k-pager-refresh {
-            @include border-radius( $border-radius );
-        }
+    }
 
-        .k-dropdown .k-dropdown-wrap {
-            color: $body-color;
-            background-color: $pager-bg;
-            border-color: $pager-border;
 
-            &.k-state-hover {
-                background-color: $pager-hover-bg;
-            }
-        }
+    // Responsive
+    .k-pager-lg,
+    .k-pager-md,
+    .k-pager-sm {
 
-        .k-rtl &,
-        &[dir="rtl"],
-        [dir="rtl"] & {
-            .k-pager-first {
-                @include border-right-radius-only();
-            }
-            .k-pager-last {
-                @include border-left-radius-only();
-            }
-        }
+        .k-pager-numbers {
 
-        &.k-pager-lg,
-        &.k-pager-md,
-        &.k-pager-sm {
+            .k-current-page .k-link {
+                @include fill(
+                    $pager-text,
+                    $pager-item-bg,
+                    $pager-item-border
+                );
 
-            .k-pager-numbers {
-                border-color: $button-border;
-                background-color: $pager-bg;
-
-                &.k-state-expanded {
-
-                    .k-current-page {
-                        border-color: $button-border;
-                    }
+                &:hover,
+                &.k-state-hover {
+                    @include fill(
+                        $pager-text,
+                        $pager-item-hover-bg,
+                        $pager-item-hover-border
+                    );
                 }
             }
-        }
-    }
-    .k-pager-numbers {
 
-        .k-state-selected,
-        .k-state-selected:hover {
-            border-width: 1px;
-            border-style: solid;
-            border-color: $pager-selected-border;
-            color: $pager-selected-text;
-            background-color: $pager-selected-bg;
-            z-index: 2;
-            cursor: default;
-        }
-
-    }
-
-    .k-link.k-pager-nav.k-state-disabled {}
-
-
-    // Spacing
-    .k-pager-nav + .k-pager-nav,
-    .k-pager-nav + .k-pager-numbers,
-    .k-pager-nav + .k-pager-numbers-wrap,
-    .k-pager-numbers + .k-pager-nav,
-    .k-pager-numbers .k-current-page ~ li + li,
-    .k-pager-numbers-wrap + .k-pager-nav {
-        margin-left: -1px;
-
-        .k-rtl &,
-        [dir="rtl"] & {
-            margin-right: -1px;
-            margin-left: 0;
         }
     }
 

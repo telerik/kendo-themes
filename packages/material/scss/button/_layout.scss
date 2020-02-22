@@ -11,6 +11,8 @@ $split-button-arrow-border-width: 1px;
 
     .k-button {
         text-transform: uppercase;
+        font-weight: 500;
+        transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
 
         &::before {
             display: block;
