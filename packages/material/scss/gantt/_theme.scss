@@ -2,13 +2,22 @@
 
     // Theme
     .k-gantt {
-        @include appearance( panel );
+        @include fill(
+            $panel-text,
+            $panel-bg,
+            $panel-border
+        );
     }
 
 
     // Header and footer
     .k-gantt-toolbar {
-        @include appearance( toolbar );
+        @include fill(
+            $toolbar-text,
+            $toolbar-bg,
+            inherit,
+            $toolbar-gradient
+        );
     }
 
 
@@ -19,14 +28,12 @@
 
 
         &.k-state-expanded {
-            @include appearance( popup );
+            @include fill(
+                $popup-text,
+                $popup-bg,
+                $popup-border
+            );
             box-shadow: $popup-shadow;
-
-            li {
-                margin: 0;
-                border-radius: 0;
-            }
-            li + li { margin: 0; }
         }
     }
 
@@ -92,17 +99,10 @@
             color: $secondary;
         }
     }
-    .k-task-summary::before,
-    .k-task-summary::after,
-    .k-task-summary-complete::before,
-    .k-task-summary-complete::after {
-        display: none;
-    }
 
 
     // Tasks
     .k-task-single {
-        @include border-radius( $border-radius );
         color: $primary-contrast;
         background-color: mix( $primary, $grid-bg, 54 );
 
@@ -111,19 +111,12 @@
         }
     }
     .k-task-single.k-state-selected {
-        @include appearance( active-button );
         color: $secondary-contrast;
         background-color: mix( $secondary, $grid-bg, 54 );
 
         .k-task-complete {
             background: $secondary;
         }
-    }
-    .k-task-single .k-resize-handle {
-        width:  ($spacer-x / 2 );
-    }
-    .k-task-single:hover .k-resize-handle {
-        opacity: 0;
     }
 
     // Dependency Lines
