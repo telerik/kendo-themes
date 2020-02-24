@@ -8,7 +8,6 @@
                 $multiselect-bg,
                 $multiselect-border
             );
-            @include use-background-clip();
 
             > .k-readonly {
                 opacity: .6;
@@ -16,8 +15,6 @@
 
 
             li {
-                @include use-background-clip();
-
                 .k-icon {
                     opacity: .6;
                 }
