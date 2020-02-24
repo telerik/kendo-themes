@@ -25,7 +25,6 @@
             }
 
             .k-dropzone-hint {
-                padding: 0 $button-padding-x;
                 font-style: normal;
                 font-weight: normal;
                 white-space: nowrap;
@@ -39,7 +38,6 @@
             }
 
             .k-upload-status {
-                padding: 0 $button-padding-x;
                 font-size: $font-size;
                 line-height: $form-line-height;
                 font-weight: normal;
@@ -48,7 +46,7 @@
                 position: relative;
 
                 > .k-icon {
-                    margin-right: $icon-spacing;
+                    margin-right: $upload-icon-spacing;
                 }
             }
             .k-upload-status-total {}
@@ -116,20 +114,15 @@
                 right: $upload-item-padding-x;
                 top: $upload-item-padding-y;
 
-                .k-button {
-                    padding: 0;
-                    border-radius: 50%;
-                }
-
                 .k-icon {
                     vertical-align: middle;
                 }
             }
 
             .k-upload-pct {
+                margin: 0 $upload-icon-spacing;
                 font-weight: normal;
                 vertical-align: middle;
-                opacity: $disabled-opacity;
             }
 
             ~ .k-clear-selected,
@@ -216,7 +209,7 @@
 
             .k-file-name-size-wrapper {
                 margin-left: calc( #{$upload-item-image-width} + #{$spacer-x} );
-                margin-right: calc( #{$icon-size * 2} + 3.5em );
+                margin-right: calc( (#{$button-calc-size} + 2 * #{$button-padding-y} * 2) + 3.5em );
                 min-height: $upload-item-image-height + ($upload-item-image-border * 2);
                 display: block;
                 overflow: hidden;
@@ -277,16 +270,10 @@
             }
 
             .k-upload-action {
-                margin-left: $upload-item-padding-x;
                 border-width: 0;
                 color: inherit;
                 background: none;
                 box-shadow: none;
-                opacity: .6;
-
-                &:hover {
-                    opacity: 1;
-                }
             }
         }
 
@@ -304,9 +291,16 @@
         // RTL styles
         &[dir = "rtl"],
         .k-rtl & {
-            .k-dropzone .k-upload-status > .k-icon {
-                margin-left: $padding-y-lg;
-                margin-right: 0;
+            .k-dropzone  {
+                .k-upload-status > .k-icon {
+                    margin-left: $padding-y-lg;
+                    margin-right: 0;
+                }
+
+                > * + * {
+                    margin-left: 0;
+                    margin-right: $upload-dropzone-spacing;
+                }
             }
 
             .k-upload-files {
@@ -330,7 +324,7 @@
 
             .k-file-name-size-wrapper {
                 margin-right: calc( #{$upload-item-image-width} + #{$spacer-x} );
-                margin-left: calc( #{$icon-size} + #{$upload-item-padding-x} );
+                margin-left: calc( (#{$button-calc-size} + 2 * #{$button-padding-y} * 2) + 3.5em );
             }
 
             .k-file-extension {
@@ -338,11 +332,6 @@
                 left: auto;
                 margin-right: .4em;
                 margin-left: 0;
-            }
-
-            .k-upload-action {
-                margin-left: 0;
-                margin-right: $upload-item-padding-x;
             }
         }
     }
