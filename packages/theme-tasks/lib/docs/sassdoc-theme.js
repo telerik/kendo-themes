@@ -59,29 +59,19 @@ module.exports = function(dest, context) {
 
     data.meta = context.meta;
 
-    return new Promise(function(done, error) {
-        let output = template(data);
+    let output = template(data);
+    output = output.replace(/\r?\n/g, '\n');
+
+    fs.writeFileSync(path.join('docs', 'customization.md'), output);
+
+    data.variableGroups.forEach(group => {
+        group.meta = data.meta;
+        group.id = group.id === null ? 'common' : group.id;
+        let output = templateVariableGroup(group);
         output = output.replace(/\r?\n/g, '\n');
-        fs.writeFile(path.join('docs', 'customization.md'), output, (err) => {
-            if (err) {
-                error(err);
-            } else {
-                done(output);
-            }
-        });
 
-        data.variableGroups.forEach(group => {
-            group.meta = data.meta;
-            let output = templateVariableGroup(group);
-            output = output.replace(/\r?\n/g, '\n');
-
-            fs.writeFile(path.join('docs', `customization-${ group.id === null ? 'common' : group.id }.md`), output, (err) => {
-                if (err) {
-                    error(err);
-                } else {
-                    done(output);
-                }
-            });
-        });
+        fs.writeFileSync(path.join('docs', `customization-${group.id}.md`), output);
     });
+
+    return Promise.resolve();
 };
