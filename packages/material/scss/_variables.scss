@@ -1622,15 +1622,17 @@ $upload-bg: $component-bg !default;
 $upload-text: $component-text !default;
 $upload-border: $component-border !default;
 
-$upload-dropzone-padding-x: 8px !default;
-$upload-dropzone-padding-y: 8px !default;
+$upload-dropzone-padding-x: ($cell-padding * 2) !default;
+$upload-dropzone-padding-y: ($cell-padding * 2) !default;
 $upload-dropzone-spacing: $upload-dropzone-padding-x !default;
 $upload-dropzone-bg: $upload-bg !default;
 $upload-dropzone-text: $upload-text !default;
 $upload-dropzone-border: $upload-border !default;
 
-$upload-item-padding-x: $cell-padding-x !default;
-$upload-item-padding-y: $cell-padding-y !default;
+$upload-item-padding-x: ($cell-padding * 2) !default;
+$upload-item-padding-y: ($cell-padding * 2) !default;
+
+$upload-icon-spacing: $upload-dropzone-padding-x / 2 !default;
 
 $upload-item-image-width: 24px !default;
 $upload-item-image-height: 34px !default;
