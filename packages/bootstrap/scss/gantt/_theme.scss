@@ -1,13 +1,13 @@
 @include exports("gantt/theme") {
 
-    // Theme
-    .k-gantt {}
-
-
     // Header and footer
     .k-gantt-toolbar {
-        @include appearance( toolbar );
-        line-height: $form-line-height;
+        @include fill(
+            $toolbar-text,
+            $toolbar-bg,
+            inherit,
+            $toolbar-gradient
+        );
     }
 
 
@@ -15,34 +15,36 @@
     .k-gantt-views {
 
         li {
-            @include appearance( button );
+            @include fill(
+                $button-text,
+                $button-bg,
+                $button-border,
+                $button-gradient
+            );
 
             &.k-state-hover {
-                @include appearance( hovered-button );
+                @include fill(
+                    $button-hovered-text,
+                    $button-hovered-bg,
+                    $button-hovered-border,
+                    $button-hovered-gradient
+                );
             }
             &.k-state-selected {
-                @include appearance( pressed-button );
+                @include fill(
+                    $button-pressed-text,
+                    $button-pressed-bg,
+                    $button-pressed-border,
+                    $button-pressed-gradient
+                );
+                @include box-shadow( $button-pressed-shadow );
             }
             &.k-state-focused,
             .k-state-focused {
-                @include appearance( focused-button );
+                @include box-shadow( $button-focused-shadow );
             }
         }
-        li:first-child { @include border-radius( $border-radius ); }
-        li:first-child + li { @include border-radius( $border-radius 0 0 $border-radius ); }
-        li:last-child { @include border-radius( 0 $border-radius $border-radius 0 ); }
 
-
-        &.k-state-expanded {
-            li {
-                margin: 0;
-                border-radius: 0;
-            }
-            li + li { margin-top: -1px; }
-            li:first-child { @include border-radius( $border-radius $border-radius 0 0 ); }
-            li:first-child + li { border-radius: 0; }
-            li:last-child { @include border-radius( 0 0 $border-radius $border-radius ); }
-        }
     }
 
 
@@ -89,33 +91,23 @@
             color: $header-selected-bg;
         }
     }
-    .k-task-summary::before,
-    .k-task-summary::after,
-    .k-task-summary-complete::before,
-    .k-task-summary-complete::after {
-        display: none;
-    }
 
 
     // Tasks
     .k-task-single {
-        @include appearance( button );
-        @include border-radius( $border-radius );
+        @include fill(
+            $button-text,
+            $button-bg,
+            $button-border,
+            $button-gradient
+        );
 
         .k-task-complete {
             background: $button-text;
             opacity: .25;
         }
     }
-    .k-task-single.k-state-selected {
-        @include appearance( active-button );
-    }
-    .k-task-single .k-resize-handle {
-        width:  ($spacer-x / 2 );
-    }
-    .k-task-single:hover .k-resize-handle {
-        opacity: 0;
-    }
+    .k-task-single.k-state-selected {}
 
     // Dependency Lines
     .k-gantt-line {

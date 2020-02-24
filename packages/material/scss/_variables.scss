@@ -2254,6 +2254,10 @@ $gantt-line-fill: mix( $panel-text, $panel-bg ) !default;
 
 $gantt-line-selected-fill: $selected-bg !default;
 
+$gantt-task-border-width: 0 !default;
+
+$gantt-task-template-padding: $padding-y $padding-x-sm !default;
+
 
 // Scheduler
 $scheduler-event-border-radius: $border-radius !default;

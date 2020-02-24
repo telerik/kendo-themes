@@ -3,6 +3,7 @@
     $row-height: #{$line-height-em} + #{2 * $cell-padding} + #{$grid-cell-horizontal-border-width};
 
     .k-gantt {
+        @include use-background-clip();
         position: relative;
         white-space: nowrap;
 
@@ -108,9 +109,23 @@
         li + li {
             margin-left: -$button-border-width;
         }
+        li:first-child { @include border-radius(); }
+        li:first-child + li { @include border-left-radius-only(); }
+        li:last-child { @include border-right-radius-only(); }
+
         .k-state-hover,
         .k-state-selected {
             z-index: 2;
+        }
+        &.k-state-expanded {
+            li {
+                @include border-radius( 0 );
+                margin: 0;
+            }
+            li + li { margin-top: -1px; }
+            li:first-child { @include border-top-radius-only(); }
+            li:first-child + li { @include border-radius( 0 ) }
+            li:last-child { @include border-bottom-radius-only(); }
         }
 
 
@@ -376,6 +391,7 @@
             border: 8px solid transparent;
             position: absolute;
             top: 0;
+            display: none;
         }
 
         &::before {
@@ -402,7 +418,7 @@
     .k-single-wrap {}
     .k-task-single {
         @include border-radius();
-        border-width: 1px;
+        border-width: $gantt-task-border-width;
         border-style: solid;
         cursor: default;
 
@@ -449,7 +465,7 @@
         align-items: center;
     }
     .k-task-template {
-        padding: $padding-y-sm $padding-x-sm;
+        padding: $gantt-task-template-padding;
         line-height: normal;
         flex: 1;
         overflow: hidden;
@@ -550,6 +566,9 @@
 
         .k-gantt-views {
             float: left;
+
+            li:first-child + li { @include border-right-radius-only(); }
+            li:last-child { @include border-left-radius-only(); }
         }
 
         .k-gantt-actions {
