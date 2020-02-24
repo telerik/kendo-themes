@@ -122,10 +122,16 @@
             input[type="date"],
             input[type="time"],
             input[type="datetime-local"],
-            input[type="number"] {
+            input[type="number"],
+            textarea {
                 width: 100%;
                 box-sizing: border-box;
                 flex: 1 1 100%;
+            }
+
+            textarea {
+                min-height: 4em;
+                resize: vertical;
             }
         }
     }
