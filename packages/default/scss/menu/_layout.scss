@@ -185,7 +185,8 @@
     .k-context-menu-popup {
         z-index: 12000;
 
-        > .k-popup:not(.k-menu-popup) {
+        > .k-popup:not(.k-menu-popup),
+        .k-context-menu {
             border: 0;
         }
     }
