@@ -319,4 +319,19 @@ $grid-group-drag-clue-opacity: .9 !default;
             height: $button-calc-size;
         }
     }
+
+    .k-column-menu .k-menu:not(.k-context-menu) {
+
+        .k-item {
+            & > .k-link::before {
+                content: none;
+            }
+        }
+
+        &.k-menu-vertical {
+            & > .k-item + .k-item {
+                margin-top: 0;
+            }
+        }
+    }
 }

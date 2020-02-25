@@ -35,6 +35,7 @@
     $default-scrollbar-width: 17px;
 
     .k-grid {
+        @include use-background-clip();
         display: flex;
         flex-direction: column;
         position: relative;
@@ -152,6 +153,7 @@
         .k-grouping-row .k-icon {
             margin-left: calc( #{$icon-size / 2} - #{$cell-padding-x} );
             margin-right: ($icon-size / 2);
+            text-decoration: none;
         }
 
         .k-group-footer td {
@@ -378,6 +380,12 @@
         .k-grid-search {
             width: $grid-search-width;
             float: right;
+        }
+
+        .k-grid-filter,
+        .k-header-column-menu,
+        .k-hierarchy-cell .k-icon {
+            border-width: 0;
         }
     }
 
@@ -696,6 +704,12 @@
         td {
             height: $line-height-em;
         }
+    }
+
+    .k-grid-footer td,
+    .k-group-footer td,
+    .k-grouping-row td {
+        font-weight: bold;
     }
 
     .k-grid-filter-popup {
@@ -1266,6 +1280,12 @@
                     margin-right: 0;
                 }
             }
+        }
+    }
+
+    .k-column-menu {
+        .k-menu:not(.k-context-menu) {
+            font-weight: 400;
         }
     }
 
