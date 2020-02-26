@@ -20,6 +20,7 @@
 
     .k-pivot-toolbar .k-button,
     .k-fieldselector .k-list li.k-item {
+        @include use-background-clip();
         @include border-radius();
         padding: $button-padding-y $button-padding-x;
         padding-right: calc( #{$button-padding-x * 2} + #{$icon-size * 2} );
@@ -50,6 +51,11 @@
     .k-pivot-layout {
         border-spacing: 0;
         table-layout: auto;
+
+        .k-grid-footer,
+        .k-grid .k-alt {
+            font-weight: bold;
+        }
     }
 
     .k-pivot-layout > tbody,
@@ -117,26 +123,6 @@
 
     .k-pivot-filter-window .k-treeview {
         max-height: 600px;
-    }
-
-
-    // KPI icons
-    .k-i-kpi-trend-increase,
-    .k-i-kpi-trend-decrease,
-    .k-i-kpi-trend-equal {
-        color: inherit;
-    }
-
-    .k-i-kpi-status-hold {
-        color: $warning;
-    }
-
-    .k-i-kpi-status-deny {
-        color: $error;
-    }
-
-    .k-i-kpi-status-open {
-        color: $success;
     }
 
 }
