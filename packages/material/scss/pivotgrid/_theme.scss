@@ -1,19 +1,4 @@
 @include exports("pivotgrid/theme") {
-    $pivotgrid-alt-bg: try-shade($grid-bg, .5) !default;
-    $pivotgrid-alt-text: $grid-text !default;
-
-    $pivotgrid-chrome-border: $grid-border !default;
-    $pivotgrid-container-bg: $grid-header-bg !default;
-
-    $pivotgrid-button-bg: try-shade($button-bg, 1) !default;
-    $pivotgrid-button-text: $button-text !default;
-    $pivotgrid-button-hover-bg: try-shade($button-bg, 2) !default;
-    $pivotgrid-button-hover-text: $button-text !default;
-    $pivotgrid-button-active-bg: try-shade($button-bg, 2) !default;
-    $pivotgrid-button-active-text: $button-text !default;
-
-    $pivotgrid-remove-bg: $pivotgrid-button-text !default;
-    $pivotgrid-remove-text: $pivotgrid-button-bg !default;
 
     .k-fieldselector,
     .k-pivot-layout .k-grid-footer,
@@ -51,10 +36,6 @@
         }
     }
 
-    .k-pivot-rowheaders .k-grid tr .k-grid-footer {
-        border-bottom-width: 0;
-    }
-
     .k-pivot-layout .k-grid .k-alt {
         border-left-color: $pivotgrid-chrome-border;
 
@@ -63,15 +44,9 @@
         }
     }
 
-    .k-fieldselector p,
-    .k-pivot-layout .k-button {
-        text-transform: none;
-    }
-
     .k-pivot-layout .k-grid-footer,
     .k-pivot-layout .k-grid .k-alt {
         color: $pivotgrid-alt-text;
-        font-weight: bold;
     }
 
     .k-pivot-toolbar .k-button,
@@ -88,8 +63,6 @@
                 $pivotgrid-remove-bg
             );
             opacity: .75;
-            border-radius: 50%;
-            padding: 2px;
         }
 
         &:hover,
@@ -121,7 +94,6 @@
 
         &.k-empty {
             background-color: $pivotgrid-container-bg;
-            border: 0;
         }
     }
 
@@ -137,26 +109,22 @@
         }
     }
 
-    .k-fieldselector,
-    .k-pivot {
-        .k-i-arrow-60-right,
-        .k-i-arrow-e,
-        .k-i-sarrow-e,
-        .k-i-expand,
-        .k-i-expand-e {
-            &::before {
-                content: "\E014";
-            }
-        }
+    // KPI icons
+    .k-i-kpi-trend-increase,
+    .k-i-kpi-trend-decrease,
+    .k-i-kpi-trend-equal {
+        color: inherit;
+    }
 
-        .k-i-arrow-60-down,
-        .k-i-arrow-s,
-        .k-i-sarrow-s,
-        .k-i-collapse,
-        .k-i-expand-s {
-            &::before {
-                content: "\E015";
-            }
-        }
+    .k-i-kpi-status-hold {
+        color: $warning;
+    }
+
+    .k-i-kpi-status-deny {
+        color: $error;
+    }
+
+    .k-i-kpi-status-open {
+        color: $success;
     }
 }
