@@ -1,14 +1,13 @@
 @include exports("gantt/theme") {
 
-    // Theme
-    .k-gantt {
-        @include use-background-clip();
-    }
-
-
     // Header and footer
     .k-gantt-toolbar {
-        @include appearance( header );
+        @include fill(
+            $header-text,
+            $header-bg,
+            $header-border,
+            $header-gradient
+        );
     }
 
 
@@ -16,44 +15,29 @@
     .k-gantt-views {
 
         li {
-            @include appearance( button );
+            @include fill(
+                $button-text,
+                $button-bg,
+                $button-border,
+                $button-gradient
+            );
 
             &.k-state-hover {
-                @include appearance( hovered-button );
+                @include fill(
+                    $button-hovered-text,
+                    $button-hovered-bg,
+                    $button-hovered-border,
+                    $button-hovered-gradient
+                );
             }
             &.k-state-selected {
                 @include fill( $selected-text, $selected-bg, $selected-border, none );
             }
             &.k-state-focused,
             .k-state-focused {
-                @include appearance( focused-list-item );
+                @include box-shadow( $list-item-focused-shadow );
             }
         }
-        li:first-child { @include border-radius(); }
-        li:first-child + li { @include border-left-radius-only(); }
-        li:last-child { @include border-right-radius-only(); }
-
-
-        &.k-state-expanded {
-            li {
-                @include border-radius( 0 );
-                margin: 0;
-            }
-            li + li { margin-top: -1px; }
-            li:first-child { @include border-top-radius-only(); }
-            li:first-child + li { @include border-radius( 0 ) }
-            li:last-child { @include border-bottom-radius-only(); }
-        }
-    }
-
-
-    // Timeline
-    .k-gantt-timeline {
-
-        .k-header {
-            border-color: inherit;
-        }
-
     }
 
 
@@ -121,28 +105,16 @@
             color: shade( $selected-bg );
         }
     }
-    .k-task-summary::before,
-    .k-task-summary::after,
-    .k-task-summary-complete::before,
-    .k-task-summary-complete::after {
-        display: none;
-    }
 
 
     // Tasks
     .k-task-single {
-        border-width: 0;
         border-color: $panel-border;
         color: $panel-bg;
         background: mix( $panel-text, $panel-bg, 80 );
 
         .k-task-complete {
             background: $panel-text;
-        }
-
-        .k-task-template {
-            padding-top: $padding-y;
-            padding-bottom: $padding-y;
         }
     }
     .k-task-single.k-state-selected {
@@ -163,14 +135,4 @@
         color: $gantt-line-selected-fill;
     }
 
-}
-
-
-@include exports("gantt/theme-rtl") {
-
-    // View switcher
-    .k-gantt-views {
-        li:first-child + li { @include border-right-radius-only(); }
-        li:last-child { @include border-left-radius-only(); }
-    }
 }
