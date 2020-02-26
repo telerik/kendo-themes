@@ -1,8 +1,6 @@
 // Styling of today date
 // color - mark the today date with a different text color
 // box - instead of changing the text color, show a box around the date
-$calendar-today-style: color !default;
-$calendar-today-color: $primary !default;
 
 @include exports("calendar/theme") {
     .k-calendar {
