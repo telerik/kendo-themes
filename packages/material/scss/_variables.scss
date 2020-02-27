@@ -1320,8 +1320,8 @@ $calendar-weekend-text: inherit !default;
 $calendar-weekend-bg: transparent !default;
 $calendar-weekend-opacity: 1 !default;
 
-$calendar-today-style: null !default;
-$calendar-today-color: null !default;
+$calendar-today-style: color !default;
+$calendar-today-color: $primary !default;
 
 $calendar-week-number-bg: transparent !default;
 $calendar-week-number-text: $calendar-header-cell-text !default;
@@ -2117,6 +2117,25 @@ $grid-sticky-selected-hovered-bg: mix( mix( $grid-bg, contrast-wcag( $grid-bg ),
 
 
 // Pivot grid
+$pivotgrid-alt-bg: try-shade($grid-bg, .5) !default;
+$pivotgrid-alt-color: null !default;
+$pivotgrid-alt-text: $grid-text !default;
+$pivotgrid-chrome-border: $grid-border !default;
+
+$pivotgrid-setting-delete-color: null !default;
+
+$pivotgrid-container-bg: $grid-header-bg !default;
+$pivotgrid-row-headers-bg: null !default;
+
+$pivotgrid-button-bg: try-shade($button-bg, 1) !default;
+$pivotgrid-button-text: $button-text !default;
+$pivotgrid-button-hover-bg: try-shade($button-bg, 2) !default;
+$pivotgrid-button-hover-text: $button-text !default;
+$pivotgrid-button-active-bg: try-shade($button-bg, 2) !default;
+$pivotgrid-button-active-text: $button-text !default;
+
+$pivotgrid-remove-bg: $pivotgrid-button-text !default;
+$pivotgrid-remove-text: $pivotgrid-button-bg !default;
 
 
 // Listview

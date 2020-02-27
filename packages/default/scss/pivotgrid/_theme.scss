@@ -1,12 +1,4 @@
 @include exports("pivotgrid/theme") {
-    $pivotgrid-alt-bg: $header-bg !default;
-    $pivotgrid-alt-color: black !default;
-    $pivotgrid-chrome-border: $border-color !default;
-
-    $pivotgrid-setting-delete-color: darken($component-bg, 27%) !default;
-
-    $pivotgrid-container-bg: $component-bg !default;
-    $pivotgrid-row-headers-bg: darken($component-bg, 7%) !default;
 
     .k-alt,
     .k-pivot-toolbar,
@@ -35,12 +27,21 @@
 
     .k-pivot-toolbar .k-button,
     .k-fieldselector .k-list li.k-item {
-        @include appearance( button );
-        @include use-background-clip();
+        @include fill(
+            $button-text,
+            $button-bg,
+            $button-border,
+            $button-gradient
+        );
 
         &:hover,
         &.k-state-hover {
-            @include appearance( hovered-button );
+            @include fill(
+                $button-hovered-text,
+                $button-hovered-bg,
+                $button-hovered-border,
+                $button-hovered-gradient
+            );
         }
 
         // Pressed state
@@ -74,7 +75,6 @@
     .k-pivot-layout .k-grid-footer,
     .k-pivot-layout .k-grid .k-alt {
         color: $pivotgrid-alt-color;
-        font-weight: bold;
     }
 
     // Loading indicator
@@ -87,5 +87,24 @@
         .k-i-loading::after {
             background-color: $header-bg;
         }
+    }
+
+    // KPI icons
+    .k-i-kpi-trend-increase,
+    .k-i-kpi-trend-decrease,
+    .k-i-kpi-trend-equal {
+        color: inherit;
+    }
+
+    .k-i-kpi-status-hold {
+        color: $warning;
+    }
+
+    .k-i-kpi-status-deny {
+        color: $error;
+    }
+
+    .k-i-kpi-status-open {
+        color: $success;
     }
 }
