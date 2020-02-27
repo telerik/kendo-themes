@@ -41,6 +41,11 @@
         &.ng-invalid.ng-dirty {
             color: $forms-invalid-color;
             border-color: $invalid-border;
+
+            &:focus,
+            &.k-state-focused {
+                @include box-shadow($invalid-shadow);
+            }
         }
     }
 
