@@ -548,6 +548,7 @@ $fieldset-legend-border: null !default;
 $invalid-bg: null !default;
 $invalid-text: $error !default;
 $invalid-border: $error !default;
+$invalid-shadow: 0 0 0 .2rem rgba($invalid-border, .25) !default;
 
 
 // Buttons
@@ -699,7 +700,7 @@ $input-hovered-shadow: none !default;
 $input-focused-text: $input-text !default;
 $input-focused-bg: $input-bg !default;
 $input-focused-border: try-lighten( $primary, 25 ) !default;
-$input-focused-shadow: none !default;
+$input-focused-shadow: 0 0 0 .2rem rgba($input-focused-border, .5) !default;
 
 
 // Textboxes

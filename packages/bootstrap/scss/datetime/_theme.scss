@@ -80,6 +80,11 @@
         > .k-picker-wrap {
             color: $forms-invalid-color;
             border-color: $invalid-border;
+
+            &:focus,
+            &.k-state-focused {
+                @include box-shadow($invalid-shadow);
+            }
         }
     }
 
@@ -88,6 +93,11 @@
             .k-textbox {
                 color: $error;
                 border-color: $error;
+
+                &:focus,
+                &.k-state-focused {
+                    @include box-shadow($invalid-shadow);
+                }
             }
 
             .k-i-warning {
@@ -106,12 +116,22 @@
         .k-state-invalid {
             color: $error;
             border-color: $error;
+
+            &:focus,
+            &.k-state-focused {
+                @include box-shadow($invalid-shadow);
+            }
         }
 
         .k-picker-wrap {
             &.k-invalid {
                 color: $error;
                 border-color: $invalid-border;
+
+                &:focus,
+                &.k-state-focused {
+                    @include box-shadow($invalid-shadow);
+                }
             }
         }
     }
@@ -187,12 +207,22 @@
         .k-state-invalid {
             color: $error;
             border-color: $error;
+
+            &:focus,
+            &.k-state-focused {
+                @include box-shadow($invalid-shadow);
+            }
         }
 
         .k-picker-wrap {
             &.k-invalid {
                 color: $error;
                 border-color: $invalid-border;
+
+                &:focus,
+                &.k-state-focused {
+                    @include box-shadow($invalid-shadow);
+                }
             }
         }
     }

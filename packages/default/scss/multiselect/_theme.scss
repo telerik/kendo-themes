@@ -76,6 +76,20 @@
                     $multiselect-focused-border
                 );
                 @include box-shadow($multiselect-focused-shadow);
+
+                // Invalid
+                &.k-invalid,
+                &.k-invalid:hover,
+                &.k-state-invalid,
+                &.ng-invalid.ng-touched,
+                &.ng-invalid.ng-dirty {
+                    @include fill (
+                        $color: $error,
+                        $border: $invalid-border
+                    );
+
+                    @include box-shadow($invalid-shadow);
+                }
             }
         }
     }
