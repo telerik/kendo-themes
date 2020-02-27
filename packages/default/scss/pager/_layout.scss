@@ -18,7 +18,8 @@
             outline: 0;
         }
 
-        .k-widget {
+        .k-widget,
+        select.k-dropdown {
             font-size: inherit;
         }
 
@@ -88,6 +89,11 @@
         display: flex;
         flex-direction: row;
         position: relative;
+
+        select.k-dropdown {
+            cursor: pointer;
+            display: none;
+        }
     }
     .k-pager-numbers {
         margin: 0;
@@ -100,28 +106,13 @@
             display: inline-flex;
         }
 
-        .k-current-page {
-            cursor: pointer;
-            display: none;
-
-            // TODO: replace with native select element to simplify styling
-            .k-link {
-                @include border-radius( $input-border-radius );
-                border-width: $input-border-width;
-                border-style: solid;
-            }
-        }
-        .k-current-page + li {
-            margin-left: 0;
-        }
-
 
         // Links
         .k-link {
             @extend %base-pager-item;
             @include border-radius( $pager-number-border-radius );
-            padding: $pager-item-padding-y $pager-item-padding-x;
-            border-width: $pager-item-border-width;
+            padding: $pager-number-padding-y $pager-number-padding-x;
+            border-width: $pager-number-border-width;
             border-style: solid;
         }
 
@@ -136,11 +127,9 @@
 
     // Spacing between items
     .k-pager-nav + .k-pager-nav,
-    .k-pager-nav + .k-pager-numbers,
     .k-pager-nav + .k-pager-numbers-wrap,
-    .k-pager-numbers + .k-pager-nav,
-    .k-pager-numbers .k-current-page ~ li + li,
-    .k-pager-numbers-wrap + .k-pager-nav {
+    .k-pager-numbers-wrap + .k-pager-nav,
+    .k-pager-numbers > li + li {
         @if ($pager-item-spacing) {
             margin-left: $pager-item-spacing;
         }
@@ -224,10 +213,16 @@
                 margin-left: $pager-section-spacing;
                 margin-right: $pager-section-spacing;
             }
-            width: calc( #{$button-calc-size} * 2 );
+            width: 5em;
             height: $button-calc-size;
             box-sizing: border-box;
             border-color: inherit;
+
+            // Show native select
+            select.k-dropdown {
+                width: 100%;
+                display: flex;
+            }
         }
 
         .k-rtl &,
@@ -241,63 +236,16 @@
             }
         }
 
-        .k-pager-numbers {
-            width: 100%;
-            border-style: solid;
-            border-width: 0;
-            box-sizing: border-box;
-            flex-direction: column-reverse;
-            position: absolute;
-            bottom: 0;
-            z-index: 3;
-            overflow: hidden;
-
-            li {
-                @if ($pager-number-spacing) {
-                    margin: 0;
-                }
-                display: none;
-            }
-            .k-current-page {
-                display: inline-flex;
-            }
-
-            .k-link {
-                margin: 0;
-                width: 100%;
-                height: auto;
-            }
-        }
-
-
-        // Expanded state
-        .k-state-expanded {
-            @include border-radius( 0 );
-            border-width: $popup-border-width;
-
-            li {
-                display: inline-flex;
-            }
-            .k-current-page {
-                display: none;
-            }
-
-            .k-link {
-                @include border-radius( 0 );
-                height: auto;
-                padding: $list-item-padding-y $list-item-padding-x;
-                border-width: 0;
-                color: inherit;
-                background-color: transparent;
-            }
-        }
     }
 
 
     // Hide components
     .k-pager-md .k-pager-info,
     .k-pager-sm .k-pager-info,
-    .k-pager-sm .k-pager-sizes {
+    .k-pager-sm .k-pager-sizes,
+    .k-pager-lg .k-pager-numbers,
+    .k-pager-md .k-pager-numbers,
+    .k-pager-sm .k-pager-numbers {
         display: none;
     }
 

@@ -60,4 +60,37 @@
             border-color: $invalid-border;
         }
     }
+
+
+    // Native select
+    select.k-dropdown {
+        @include fill(
+            $dropdownlist-text,
+            $dropdownlist-bg,
+            $dropdownlist-border,
+            $dropdownlist-gradient
+        );
+
+        // Hover state
+        &:hover {
+            @include fill(
+                $dropdownlist-hovered-text,
+                $dropdownlist-hovered-bg,
+                $dropdownlist-hovered-border,
+                $dropdownlist-hovered-gradient
+            );
+        }
+
+        // Focused state
+        &:focus {
+            @include fill(
+                $dropdownlist-focused-text,
+                $dropdownlist-focused-bg,
+                $dropdownlist-focused-border,
+                $dropdownlist-focused-gradient
+            );
+            @include box-shadow($dropdownlist-focused-shadow);
+        }
+    }
+
 }

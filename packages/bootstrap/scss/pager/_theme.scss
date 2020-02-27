@@ -3,9 +3,10 @@
 @include exports( "pager/theme/bootstrap" ) {
 
 
-    // Pager sizes
-    .k-pager-sizes {
+    // Pager
+    .k-pager-wrap {
 
+        select.k-dropdown,
         .k-dropdown .k-dropdown-wrap {
             @include fill(
                 $pager-text,

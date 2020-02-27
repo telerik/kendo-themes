@@ -42,4 +42,11 @@
     .k-state-border-down > .k-select .k-i-arrow-60-down {
         transform: rotate(180deg);
     }
+
+
+    // Native select
+    select.k-dropdown {
+        border-width: 0 0 $input-border-width;
+    }
+
 }
