@@ -18,7 +18,7 @@
     .k-menu-item {
         border-width: 0;
         outline: 0;
-        display: block;
+        display: flex;
         flex-shrink: 0;
         position: relative;
         user-select: none;
@@ -32,6 +32,7 @@
         color: inherit;
         display: flex;
         flex-direction: row;
+        flex: 1;
         align-items: center;
         position: relative;
         white-space: nowrap;
@@ -185,7 +186,8 @@
     .k-context-menu-popup {
         z-index: 12000;
 
-        > .k-popup:not(.k-menu-popup) {
+        > .k-popup:not(.k-menu-popup),
+        .k-context-menu {
             border: 0;
         }
     }

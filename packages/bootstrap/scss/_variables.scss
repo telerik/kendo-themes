@@ -548,6 +548,7 @@ $fieldset-legend-border: null !default;
 $invalid-bg: null !default;
 $invalid-text: $error !default;
 $invalid-border: $error !default;
+$invalid-shadow: 0 0 0 .2rem rgba($invalid-border, .25) !default;
 
 
 // Buttons
@@ -699,7 +700,7 @@ $input-hovered-shadow: none !default;
 $input-focused-text: $input-text !default;
 $input-focused-bg: $input-bg !default;
 $input-focused-border: try-lighten( $primary, 25 ) !default;
-$input-focused-shadow: none !default;
+$input-focused-shadow: 0 0 0 .2rem rgba($input-focused-border, .5) !default;
 
 
 // Textboxes
@@ -1040,6 +1041,31 @@ $spinner-icon-offset: 1px !default;
 
 
 // Listbox
+$listbox-margin: 5px !default;
+$listbox-button-margin: $padding-x !default;
+$listbox-width: 12.4em !default;
+$listbox-default-height: 200px !default;
+
+$listbox-bg: $panel-bg !default;
+$listbox-text: $panel-text !default;
+$listbox-border: $panel-border !default;
+
+$listbox-item-padding-x: null !default;
+$listbox-item-padding-y: null !default;
+
+$listbox-drop-hint-border-width: null !default;
+$listbox-drop-hint-width: 1px !default;
+
+$drag-clue-opacity: null !default;
+$drag-clue-line-height: null !default;
+$drag-clue-border-radius: null !default;
+
+$listbox-drag-clue-padding-y: $list-item-padding-y !default;
+$listbox-drag-clue-padding-x: $list-item-padding-x !default;
+$listbox-drag-clue-line-height: $line-height-em !default;
+
+$listbox-drag-clue-bg: $list-item-selected-bg !default;
+$listbox-drag-clue-text: $list-item-selected-text !default;
 
 
 // Slider
@@ -2046,6 +2072,25 @@ $grid-sticky-selected-hovered-bg: mix( mix( $grid-bg, contrast-wcag( $grid-bg ),
 
 
 // Pivot grid
+$pivotgrid-alt-bg: $header-bg !default;
+$pivotgrid-alt-color: null !default;
+$pivotgrid-alt-text: null !default;
+$pivotgrid-chrome-border: $border-color !default;
+
+$pivotgrid-setting-delete-color: null !default;
+
+$pivotgrid-container-bg: $header-bg !default;
+$pivotgrid-row-headers-bg: darken( $header-bg, 3 ) !default;
+
+$pivotgrid-button-bg: null !default;
+$pivotgrid-button-text: null !default;
+$pivotgrid-button-hover-bg: null !default;
+$pivotgrid-button-hover-text: null !default;
+$pivotgrid-button-active-bg: null !default;
+$pivotgrid-button-active-text: null !default;
+
+$pivotgrid-remove-bg: null !default;
+$pivotgrid-remove-text: null !default;
 
 
 // Listview
@@ -2183,6 +2228,10 @@ $gantt-line-size: 2px !default;
 $gantt-line-fill: mix( $panel-text, $panel-bg ) !default;
 
 $gantt-line-selected-fill: $selected-bg !default;
+
+$gantt-task-border-width: 1px !default;
+
+$gantt-task-template-padding: $padding-y-sm $padding-x-sm !default;
 
 
 // Scheduler

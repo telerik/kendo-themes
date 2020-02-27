@@ -587,6 +587,7 @@ $fieldset-legend-border: null !default;
 $invalid-bg: null !default;
 $invalid-text: $error !default;
 $invalid-border: rgba($error, .5) !default;
+$invalid-shadow: null !default;
 
 
 // Buttons
@@ -1096,7 +1097,31 @@ $spinner-icon-offset: 2px !default;
 
 
 // Listbox
+$listbox-margin: 12px !default;
+$listbox-button-margin: 8px !default;
+$listbox-width: 12.4em !default;
+$listbox-default-height: 200px !default;
 
+$listbox-bg: $widget-bg !default;
+$listbox-text: $widget-text !default;
+$listbox-border: $widget-border !default;
+
+$listbox-item-padding-x: 24px !default;
+$listbox-item-padding-y: 2px !default;
+
+$listbox-drop-hint-border-width: 2px !default;
+$listbox-drop-hint-width: 2px !default;
+
+$drag-clue-opacity: .9 !default;
+$drag-clue-line-height: $line-height !default;
+$drag-clue-border-radius: calc( ( #{$drag-clue-line-height} * ( #{$font-size} + #{$padding-y} ) ) / 2 ) !default;
+
+$listbox-drag-clue-padding-y: $padding-y !default;
+$listbox-drag-clue-padding-x: $padding-x !default;
+$listbox-drag-clue-line-height: $line-height !default;
+
+$listbox-drag-clue-bg: darken( $base-bg, 7% ) !default;
+$listbox-drag-clue-text: $base-text !default;
 
 // Slider
 $slider-size: 200px !default;
@@ -1319,8 +1344,8 @@ $calendar-weekend-text: inherit !default;
 $calendar-weekend-bg: transparent !default;
 $calendar-weekend-opacity: 1 !default;
 
-$calendar-today-style: null !default;
-$calendar-today-color: null !default;
+$calendar-today-style: color !default;
+$calendar-today-color: $primary !default;
 
 $calendar-week-number-bg: transparent !default;
 $calendar-week-number-text: $calendar-header-cell-text !default;
@@ -2116,6 +2141,25 @@ $grid-sticky-selected-hovered-bg: mix( mix( $grid-bg, contrast-wcag( $grid-bg ),
 
 
 // Pivot grid
+$pivotgrid-alt-bg: try-shade($grid-bg, .5) !default;
+$pivotgrid-alt-color: null !default;
+$pivotgrid-alt-text: $grid-text !default;
+$pivotgrid-chrome-border: $grid-border !default;
+
+$pivotgrid-setting-delete-color: null !default;
+
+$pivotgrid-container-bg: $grid-header-bg !default;
+$pivotgrid-row-headers-bg: null !default;
+
+$pivotgrid-button-bg: try-shade($button-bg, 1) !default;
+$pivotgrid-button-text: $button-text !default;
+$pivotgrid-button-hover-bg: try-shade($button-bg, 2) !default;
+$pivotgrid-button-hover-text: $button-text !default;
+$pivotgrid-button-active-bg: try-shade($button-bg, 2) !default;
+$pivotgrid-button-active-text: $button-text !default;
+
+$pivotgrid-remove-bg: $pivotgrid-button-text !default;
+$pivotgrid-remove-text: $pivotgrid-button-bg !default;
 
 
 // Listview
@@ -2253,6 +2297,10 @@ $gantt-line-size: 2px !default;
 $gantt-line-fill: mix( $panel-text, $panel-bg ) !default;
 
 $gantt-line-selected-fill: $selected-bg !default;
+
+$gantt-task-border-width: 0 !default;
+
+$gantt-task-template-padding: $padding-y $padding-x-sm !default;
 
 
 // Scheduler

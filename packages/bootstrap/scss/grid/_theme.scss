@@ -68,8 +68,12 @@
 
     // Toolbar
     .k-grid-toolbar {
-        @include appearance( toolbar );
-        padding: $toolbar-padding-y;
+        @include fill(
+            $toolbar-text,
+            $toolbar-bg,
+            inherit,
+            $toolbar-gradient
+        );
     }
 
 
@@ -78,8 +82,12 @@
         @include fill( $grid-header-text, $grid-header-bg, $grid-header-border );
     }
     .k-grouping-header .k-group-indicator {
-        @include appearance( button );
-        @include border-radius( $border-radius );
+        @include fill(
+            $button-text,
+            $button-bg,
+            $button-border,
+            $button-gradient
+        );
     }
 
 
@@ -163,7 +171,6 @@
     // Pager
     .k-grid-pager {
         @include fill( $grid-header-text, $grid-header-bg, $grid-header-border );
-        padding: $toolbar-padding-y;
     }
 
 
@@ -175,7 +182,10 @@
 
     .k-column-list-item:hover,
     .k-columnmenu-item:hover {
-        @include appearance( hovered-list-item );
+        @include fill(
+            $list-item-hovered-text,
+            $list-item-hovered-bg
+        );
     }
 
     .k-column-list-wrapper {
@@ -184,7 +194,10 @@
 
     .k-columnmenu-item {
         &.k-state-selected {
-            @include appearance( selected-list-item );
+            @include fill(
+                $list-item-selected-text,
+                $list-item-selected-bg
+            );
         }
     }
 
@@ -192,24 +205,36 @@
 
         .k-menu:not(.k-context-menu) {
 
-            @include appearance( popup );
-            font-weight: 400;
+            @include fill(
+                $popup-text,
+                $popup-bg,
+                $popup-border
+            );
 
             .k-item {
-                @include appearance( list-item );
+                @include fill(
+                    $list-item-text,
+                    $list-item-bg
+                );
 
                 &:hover,
                 &.k-state-hover {
-                    @include appearance( hovered-list-item );
+                    @include fill(
+                        $list-item-hovered-text,
+                        $list-item-hovered-bg
+                    );
                 }
 
                 &.k-state-selected {
-                    @include appearance( selected-list-item );
+                    @include fill(
+                        $list-item-selected-text,
+                        $list-item-selected-bg
+                    );
                 }
 
                 &:focus,
                 &.k-state-focused {
-                    @include appearance( focused-list-item );
+                    @include box-shadow( $list-item-focused-shadow );
                 }
             }
         }

@@ -1,12 +1,4 @@
 @include exports( "listbox/layout" ) {
-    $listbox-margin: $padding-x !default;
-    $listbox-button-margin: $padding-x !default;
-    $listbox-width: 12.4em !default;
-    $listbox-default-height: 200px !default;
-    $listbox-drop-hint-width: 1px !default;
-    $listbox-drag-clue-padding-y: $list-item-padding-y !default;
-    $listbox-drag-clue-padding-x: $list-item-padding-x !default;
-    $listbox-drag-clue-line-height: $line-height-em !default;
 
     .k-listbox {
         width: $listbox-width;
@@ -73,6 +65,7 @@
         }
 
         .k-list-scroller {
+            @include use-background-clip();
             width: 100%;
             border-width: 1px;
             border-style: solid;

@@ -1,18 +1,2 @@
-@include exports("listbox/theme") {
+@import "~@progress/kendo-theme-default/scss/listbox/_theme.scss";
 
-    .k-listbox {
-
-        .k-list-scroller {
-            @include appearance( panel );
-        }
-        .k-drop-hint {
-            border-top-color: $primary;
-        }
-    }
-
-    .k-item.k-drag-clue {
-        background-color: $list-item-selected-bg;
-        color: $list-item-selected-text;
-    }
-
-}
