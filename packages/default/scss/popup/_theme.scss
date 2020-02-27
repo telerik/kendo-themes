@@ -9,7 +9,12 @@
     }
 
     .k-popup > kendo-list > .k-first {
-        border-bottom: 1px solid $border-color;
+        border-bottom-color: $border-color;
+    }
+
+    .k-popup > .k-group-header,
+    .k-popup > .k-virtual-wrap > .k-group-header {
+        color: $popup-header-text;
     }
 
     .k-popup > .k-group-header,
@@ -19,6 +24,7 @@
         box-shadow: $list-container-shadow;
     }
     .k-popup .k-outer-group-header {
+        color: $popup-header-text;
         border-bottom-color: $border-color;
     }
     .k-popup .k-list .k-item > .k-group {
@@ -41,10 +47,6 @@
     .k-popup > .k-colorpalette,
     .k-popup > .k-flatcolorpicker {
         background: transparent;
-
-        &:only-child {
-            background: #f5f5f5;
-        }
     }
 }
 
@@ -52,18 +54,14 @@
 
     .k-list {}
 
-    .k-list .k-item,
-    .k-list-optionlabel {
-        transition-property: color, background-color, outline-color, box-shadow;
-        transition-duration: 200ms;
-        transition-timing-function: ease;
-    }
-
     .k-list .k-item:hover,
     .k-list .k-item.k-state-hover,
     .k-list-optionlabel:hover,
     .k-list-optionlabel.k-state-hover {
-        @include appearance( hovered-list-item );
+        @include fill(
+            $list-item-hovered-text,
+            $list-item-hovered-bg
+        );
 
         &.k-state-selected {
             color: $list-item-selected-text;
@@ -75,12 +73,15 @@
     .k-list .k-item.k-state-focused,
     .k-list-optionlabel:focus,
     .k-list-optionlabel.k-state-focused {
-        @include appearance( focused-list-item );
+        @include box-shadow( $list-item-focused-shadow );
     }
 
     .k-list .k-item.k-state-selected,
     .k-list-optionlabel.k-state-selected {
-        @include appearance( selected-list-item );
+        @include fill(
+            $list-item-selected-text,
+            $list-item-selected-bg
+        );
     }
 
     .k-animation-container {
@@ -115,14 +116,20 @@
         // Button hover state
         .k-button:hover,
         .k-button.k-state-hover {
-            @include appearance( hovered-list-item );
+            @include fill(
+                $list-item-hovered-text,
+                $list-item-hovered-bg
+            );
             background-image: none;
         }
 
         // Button pressed state
         .k-button:active,
         .k-button.k-state-active {
-            @include appearance( selected-list-item );
+            @include fill(
+                $list-item-selected-text,
+                $list-item-selected-bg
+            );
             background-image: none;
         }
 
@@ -140,6 +147,15 @@
 
         .k-nodata {
             color: $list-container-no-data-text;
+
+            .k-button {
+                @include fill(
+                    $button-text,
+                    $button-bg,
+                    $button-border,
+                    $button-gradient
+                );
+            }
         }
 
     }

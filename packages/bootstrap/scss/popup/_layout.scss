@@ -2,8 +2,6 @@
 
 @include exports("popup/layout/bootstrap") {
 
-    $frozen-grouping-header-border-width: 2px !default;
-
     .k-popup {
         .k-outer-group-header {
             font-size: $font-size-sm;
@@ -11,8 +9,18 @@
             &.k-first {
                 border-bottom-width: $frozen-grouping-header-border-width;
                 border-bottom-style: solid;
-                border-color: $grouping-border;
             }
+        }
+
+        .k-header,
+        .k-group-header {
+            font-weight: 600;
+            font-size: $font-size-sm;
+        }
+
+        &.k-column-menu {
+            padding-top: 0;
+            padding-bottom: 0;
         }
     }
 }
