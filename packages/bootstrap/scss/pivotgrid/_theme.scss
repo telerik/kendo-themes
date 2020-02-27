@@ -1,18 +1,9 @@
 @include exports("pivotgrid/theme") {
 
-    $pivotgrid-alt-bg: $header-bg !default;
-    $pivotgrid-chrome-border: $border-color !default;
-
-    $pivotgrid-container-bg: $header-bg !default;
-    $pivotgrid-row-headers-bg: darken( $header-bg, 3 ) !default;
-
     //.k-alt,
     .k-pivot-toolbar,
     .k-pivot-layout > tbody > tr:first-child > td:first-child {
         background-color: $pivotgrid-alt-bg;
-    }
-    .k-pivot-toolbar {
-        padding: $toolbar-padding-y;
     }
 
     .k-fieldselector {
@@ -41,18 +32,33 @@
 
     .k-pivot-toolbar .k-button,
     .k-fieldselector .k-list li.k-item {
-        @include appearance( button );
+        @include fill(
+            $button-text,
+            $button-bg,
+            $button-border,
+            $button-gradient
+        );
 
         &:hover,
         &.k-state-hover {
-            @include appearance( hovered-button );
+            @include fill(
+                $button-hovered-text,
+                $button-hovered-bg,
+                $button-hovered-border,
+                $button-hovered-gradient
+            );
         }
 
         // Pressed state
         &:active,
         &.k-state-active {
-            @include appearance( pressed-button );
-            box-shadow: $button-pressed-shadow;
+            @include fill(
+                $button-pressed-text,
+                $button-pressed-bg,
+                $button-pressed-border,
+                $button-pressed-gradient
+            );
+            @include box-shadow( $button-pressed-shadow );
         }
 
         // Focused state
@@ -72,5 +78,24 @@
         .k-i-loading::after {
             background-color: $header-bg;
         }
+    }
+
+    // KPI icons
+    .k-i-kpi-trend-increase,
+    .k-i-kpi-trend-decrease,
+    .k-i-kpi-trend-equal {
+        color: inherit;
+    }
+
+    .k-i-kpi-status-hold {
+        color: $warning;
+    }
+
+    .k-i-kpi-status-deny {
+        color: $error;
+    }
+
+    .k-i-kpi-status-open {
+        color: $success;
     }
 }

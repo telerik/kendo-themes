@@ -65,6 +65,11 @@
                     $numeric-invalid-bg,
                     $numeric-invalid-border
                 );
+
+                &:focus,
+                &.k-state-focused {
+                    @include box-shadow($invalid-shadow);
+                }
             }
 
 

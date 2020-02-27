@@ -20,9 +20,9 @@
         &:focus,
         &.k-state-focused {
             @include fill (
-                $border: $input-focused-border
+                $border: $input-focused-border,
             );
-            @include box-shadow( none );
+            @include box-shadow( $input-focused-shadow );
         }
 
         // Invalid
@@ -34,6 +34,11 @@
                 $color: $error,
                 $border: $invalid-border
             );
+
+            &:focus,
+            &.k-state-focused {
+                @include box-shadow($invalid-shadow);
+            }
         }
 
         // Selection
