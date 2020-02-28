@@ -97,6 +97,36 @@
     }
 
 
+    // Appointments
+    kendo-scheduler .k-event,
+    .k-event {
+        &::before {
+            display: none;
+            left: 0;
+
+            .k-rtl & {
+                right: 0;
+            }
+        }
+
+        &.k-state-selected {
+            &::before {
+                display: block;
+            }
+        }
+
+        .k-event-template {
+            // Angular fix for stronger selector and smaller padding
+            & {
+                padding: $padding-y-sm $padding-x-sm;
+            }
+        }
+
+        .k-event-actions {
+            right: $padding-x-sm;
+        }
+    }
+
     $handle-size: 2px;
     $handle-half-size: $handle-size / 2;
     .k-event {
@@ -150,6 +180,20 @@
     .k-scheduler-layout-flex .k-scheduler-cell {
         min-height: $line-height-em;
     }
+}
+
+
+
+
+@include exports("scheduler-views/layout/material") {
+
+    // Month view
+    .k-scheduler-monthview {
+        .k-scheduler-table td {
+            height: 85px;
+        }
+    }
+
 }
 
 
