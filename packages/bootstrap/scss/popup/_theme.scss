@@ -72,6 +72,23 @@
         // Button normal state
         .k-button {}
 
+        // Button hover state
+        .k-button:hover,
+        .k-button.k-state-hover {
+            @include appearance( hovered-list-item );
+        }
+
+        // Button pressed state
+        .k-button:active,
+        .k-button.k-state-active {
+            @include appearance( selected-list-item );
+        }
+
+        // Button disabled state
+        .k-button.k-state-disabled {
+            background: transparent;
+        }
+
         // Button focus state
         .k-button:focus,
         .k-button.k-state-focused {
