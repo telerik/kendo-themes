@@ -263,6 +263,7 @@ $body-text: $body-color !default;
 
 $app-bg: $body-bg !default;
 $app-text: $body-text !default;
+$app-border: rgba(contrast-yiq($app-bg, $gray-900), .15) !default;
 
 // Link
 $link-text: $link-color !default;
@@ -2373,9 +2374,9 @@ $chat-quick-reply-spacing: 8px !default;
 $chat-quick-reply-line-height: $chat-bubble-line-height !default;
 
 
-$chat-bg: $popup-bg !default;
-$chat-text: $popup-text !default;
-$chat-border: $popup-border !default;
+$chat-bg: $app-bg !default;
+$chat-text: $app-text !default;
+$chat-border: $app-border !default;
 
 $chat-bubble-bg: $button-bg !default;
 $chat-bubble-text: $button-text !default;
@@ -2500,7 +2501,7 @@ $pdf-viewer-bg: null !default;
 $pdf-viewer-text: null !default;
 $pdf-viewer-border: null !default;
 
-$pdf-viewer-canvas-bg: $chat-bg !default;
+$pdf-viewer-canvas-bg: $app-bg !default;
 $pdf-viewer-canvas-text: null !default;
 $pdf-viewer-canvas-border: null !default;
 
