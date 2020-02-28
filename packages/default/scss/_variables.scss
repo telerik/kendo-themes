@@ -264,8 +264,9 @@ $paragraph-margin-bottom: $font-size !default;
 $body-bg: $bg-color !default;
 $body-text: $text-color !default;
 
-$app-bg: $body-bg !default;
+$app-bg: lighten($base-bg, 1%) !default;
 $app-text: $body-text !default;
+$app-border: $border-color !default;
 
 // Link
 $link-text: $primary !default;
@@ -2380,9 +2381,9 @@ $chat-quick-reply-spacing: 8px !default;
 $chat-quick-reply-line-height: $chat-bubble-line-height !default;
 
 
-$chat-bg: $popup-bg !default;
-$chat-text: $popup-text !default;
-$chat-border: $popup-border !default;
+$chat-bg: $app-bg !default;
+$chat-text: $app-text !default;
+$chat-border: $app-border !default;
 
 $chat-bubble-bg: $component-bg !default;
 $chat-bubble-text: $component-text !default;
@@ -2507,7 +2508,7 @@ $pdf-viewer-bg: null !default;
 $pdf-viewer-text: null !default;
 $pdf-viewer-border: null !default;
 
-$pdf-viewer-canvas-bg: $chat-bg !default;
+$pdf-viewer-canvas-bg: $app-bg !default;
 $pdf-viewer-canvas-text: null !default;
 $pdf-viewer-canvas-border: null !default;
 
