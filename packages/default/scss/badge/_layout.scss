@@ -5,9 +5,10 @@
         padding: $badge-padding-y $badge-padding-x;
         border-width: $badge-border-width;
         border-style: solid;
+        border-color: transparent;
         box-sizing: border-box;
-        font-size: $badge-font-size;
-        line-height: $badge-line-height;
+        color: inherit;
+        background-color: transparent;
         font-size: $badge-font-size;
         line-height: $badge-line-height;
         text-align: center;
