@@ -8,6 +8,8 @@
         box-sizing: border-box;
         font-size: $badge-font-size;
         line-height: $badge-line-height;
+        font-size: $badge-font-size;
+        line-height: $badge-line-height;
         text-align: center;
         white-space: nowrap;
         display: inline-flex;
@@ -112,22 +114,27 @@
     .k-badge-overlay {
         position: relative;
         overflow: visible;
-    }
-    .k-badge-overlay .k-badge {
-        margin: 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 9999;
-        transform: translate(50%, -50%);
+
+        .k-badge {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 9999;
+            transform: translate(50%, -50%);
+        }
+
 
         // RTL
+        &.k-rtl,
         .k-rtl &,
         &[dir="rtl"],
         [dir="rtl"] & {
-            right: auto;
-            left: 0;
-            transform: translate(-50%, -50%);
+            .k-badge {
+                right: auto;
+                left: 0;
+                transform: translate(-50%, -50%);
+            }
         }
     }
 
