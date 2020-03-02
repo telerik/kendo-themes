@@ -11,6 +11,7 @@ $enable-gradients: $enable-gradients !default;
 $enable-transitions: $enable-transitions !default;
 
 $use-background-clip: false !default;
+$use-calc-badge-size: true !default;
 $use-picker-select-width: false !default;
 
 
@@ -307,7 +308,9 @@ $badge-border-radius: $badge-border-radius !default;
 $badge-font-size: $badge-font-size !default;
 $badge-line-height: 1 !default;
 
-$badge-size: calc( #{$badge-line-height * 1em} + #{$badge-padding-y * 2} + #{$badge-border-width * 2} ) !default;
+$badge-fixed-size: 20px !default;
+$badge-calc-size: calc( #{$badge-line-height * 1em} + #{$badge-padding-y * 2} + #{$badge-border-width * 2} ) !default;
+$badge-size: if( $use-calc-badge-size, $badge-calc-size, $badge-fixed-size );
 
 $badge-secondary-bg: $secondary !default;
 $badge-secondary-text: $base-text !default;
