@@ -61,27 +61,18 @@
     .k-badge-overlay .k-badge {
         margin: 0;
         position: absolute;
-        top: $badge-overlay-y;
-        right: $badge-overlay-x;
+        top: 0;
+        right: 0;
         z-index: 9999;
-        transform: translate(100%, -100%);
-
-        &:empty {
-            top: calc( #{$badge-padding-y} + #{$badge-border-width} );
-            right: calc( #{$badge-padding-x} + #{$badge-border-width} );
-        }
+        transform: translate(50%, -50%);
 
         // RTL
         .k-rtl &,
         &[dir="rtl"],
         [dir="rtl"] & {
             right: auto;
-            left: $badge-overlay-x;
-            transform: translate(-100%, -100%);
-
-            &:empty {
-                left: calc( #{$badge-padding-x} + #{$badge-border-width} );
-            }
+            left: 0;
+            transform: translate(-50%, -50%);
         }
     }
 
