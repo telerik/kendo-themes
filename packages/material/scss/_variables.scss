@@ -22,10 +22,12 @@ $spacer-y: $spacer !default;
 // Apply material theme, as early as possible
 $primary-palette-name: indigo !default;
 $secondary-palette-name: pink !default;
+$tertiary-palette-name: teal !default;
 $theme-type: light !default; // light or dark
 
 $primary-palette: material-palette($primary-palette-name) !default;
 $secondary-palette: material-palette($secondary-palette-name, A200, A100, A400) !default;
+$tertiary-palette: material-palette($tertiary-palette-name) !default;
 
 $theme: material-theme(
     $primary-palette,
@@ -112,49 +114,72 @@ $is-dark-theme: map-get($theme, is-dark);
 /// The color that focuses the user attention.
 /// Used for primary buttons and for elements of primary importance across the theme.
 /// @group color-system
-$primary: material-color($primary-palette, default) !default;
-$primary-lighter: material-color($primary-palette, lighter) !default;
-$primary-darker: material-color($primary-palette, darker) !default;
+$primary: material-color( $primary-palette, default ) !default;
+$primary-lighter: material-color( $primary-palette, lighter ) !default;
+$primary-darker: material-color( $primary-palette, darker ) !default;
 
 /// The color used along with the primary color denoted by $primary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
-$primary-contrast: material-color($primary-palette, default-contrast) !default;
+$primary-contrast: material-color( $primary-palette, default-contrast ) !default;
 
 /// The secondary color of the theme.
 /// @group color-system
-$secondary: material-color($secondary-palette, default) !default;
-$secondary-lighter: material-color($secondary-palette, lighter) !default;
-$secondary-darker: material-color($secondary-palette, darker) !default;
+$secondary: material-color( $secondary-palette, default ) !default;
+$secondary-lighter: material-color( $secondary-palette, lighter ) !default;
+$secondary-darker: material-color( $secondary-palette, darker ) !default;
 
 /// The color used along with the secondary color denoted by $secondary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
-$secondary-contrast: material-color($secondary-palette, default-contrast) !default;
+$secondary-contrast: material-color( $secondary-palette, default-contrast ) !default;
+
+/// The tertiary color of the theme.
+/// @group color-system
+$tertiary: material-color($tertiary-palette, default) !default;
+$tertiary-lighter: material-color($tertiary-palette, lighter) !default;
+$tertiary-darker: material-color($tertiary-palette, darker) !default;
+
+/// The color used along with the tertiary color denoted by $tertiary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+$tertiary-contrast: material-color($tertiary-palette, default-contrast) !default;
 
 /// The color for informational messages and states.
 /// @group color-system
 $info: #0058e9 !default;
-$info-lighter: tint($info, 2) !default;
-$info-darker: shade($info, 2) !default;
+$info-lighter: tint( $info, 2 ) !default;
+$info-darker: shade( $info, 2 ) !default;
 
 /// The color for success messages and states.
 /// @group color-system
 $success: #37b400 !default;
-$success-lighter: tint($success, 2) !default;
-$success-darker: shade($success, 2) !default;
+$success-lighter: tint( $success, 2 ) !default;
+$success-darker: shade( $success, 2 ) !default;
 
 /// The color for warning messages and states.
 /// @group color-system
 $warning: #ffc000 !default;
-$warning-lighter: tint($warning, 2) !default;
-$warning-darker: shade($warning, 2) !default;
+$warning-lighter: tint( $warning, 2 ) !default;
+$warning-darker: shade( $warning, 2 ) !default;
 
 /// The color for error messages and states.
 /// @group color-system
 $error: #f31700 !default;
-$error-lighter: tint($error, 2) !default;
-$error-darker: shade($error, 2) !default;
+$error-lighter: tint( $error, 2 ) !default;
+$error-darker: shade( $error, 2 ) !default;
+
+/// The dark color of the theme.
+/// @group color-system
+$dark: get-base-hue( grey, 800 ) !default;
+
+/// The light color of the theme.
+/// @group color-system
+$light: get-base-hue( grey, 100 ) !default;
+
+/// Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark
+/// @group color-system
+$inverse: if( $is-dark-theme, $light, $dark ) !default;
 
 
 // Color constants
