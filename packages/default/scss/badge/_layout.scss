@@ -55,6 +55,25 @@
     }
 
 
+    // Badge sizes
+    .k-badge-sm {
+        @include border-radius( $badge-border-radius-sm );
+        padding: $badge-padding-y-sm $badge-padding-x-sm;
+        min-width: $badge-size-sm;
+        border-width: $badge-border-width-sm;
+        font-size: $badge-font-size-sm;
+        line-height: $badge-line-height-sm;
+    }
+    .k-badge-lg {
+        @include border-radius( $badge-border-radius-lg );
+        padding: $badge-padding-y-lg $badge-padding-x-lg;
+        border-width: $badge-border-width-lg;
+        min-width: $badge-size-lg;
+        font-size: $badge-font-size-lg;
+        line-height: $badge-line-height-lg;
+    }
+
+
     // Badge overlay
     .k-badge-overlay {
         position: relative;
