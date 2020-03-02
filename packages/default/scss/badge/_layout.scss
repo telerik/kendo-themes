@@ -10,9 +10,11 @@
         box-sizing: border-box;
         font-size: $badge-font-size;
         line-height: $badge-line-height;
-        display: inline-block;
         text-align: center;
         white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         overflow: hidden;
         text-overflow: ellipsis;
 
