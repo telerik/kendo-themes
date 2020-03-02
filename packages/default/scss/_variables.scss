@@ -302,12 +302,12 @@ $avatar-text: contrast-wcag( $avatar-bg ) !default;
 
 
 // Badge
-$badge-padding-x: $padding-y !default;
+$badge-padding-x: $padding-x-sm !default;
 $badge-padding-y: $badge-padding-x !default;
 $badge-border-width: 1px !default;
 $badge-border-radius: $border-radius !default;
 
-$badge-font-size: 75% !default;
+$badge-font-size: $font-size-xs !default;
 $badge-line-height: 1 !default;
 
 $badge-size: calc( #{$badge-line-height * 1em} + #{$badge-padding-y * 2} + #{$badge-border-width * 2} ) !default;
