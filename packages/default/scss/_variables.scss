@@ -1985,6 +1985,20 @@ $card-callout-height: 20px !default;
 
 
 // Splitter
+$splitter-splitbar-size: 8px !default;
+$splitter-resize-icon-size: 10px !default;
+$splitter-drag-handle-length: 20px !default;
+$splitter-drag-handle-thickness: 2px !default;
+$splitter-drag-icon-margin: 7px !default;
+
+$splitter-bg: rgba( try-darken( $panel-bg, 8 ), .8 ) !default;
+$splitter-text: $panel-text !default;
+
+$splitter-hovered-bg: try-darken( $panel-bg, 8 ) !default;
+$splitter-hovered-text: $panel-text !default;
+
+$splitter-selected-bg: $selected-bg !default;
+$splitter-selected-text: contrast-wcag( $splitter-selected-bg ) !default;
 
 
 // Filter expression builder

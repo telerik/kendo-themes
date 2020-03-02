@@ -1,15 +1,6 @@
 @include exports("splitter/theme") {
 
-    $splitter-bg: rgba( try-darken( $panel-bg, 8 ), .8 ) !default;
-    $splitter-text: $panel-text !default;
-    $splitter-hovered-bg: try-darken( $panel-bg, 8 ) !default;
-    $splitter-hovered-text: $panel-text !default;
-    $splitter-selected-bg: $selected-bg !default;
-    $splitter-selected-text: contrast-wcag( $splitter-selected-bg ) !default;
-
-    .k-splitter {
-        @include use-background-clip();
-    }
+    .k-splitter {}
 
     // Splitbar
     .k-splitbar {
