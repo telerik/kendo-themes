@@ -62,7 +62,7 @@ $zindex-window: 2 !default;
 
 
 // Color settings
-// $is-dark-theme: ;
+$is-dark-theme: false !default;
 
 // Deprecated
 // TODO: remove for v5
@@ -75,8 +75,8 @@ $accent-contrast: contrast-wcag( $accent ) !default;
 /// Used for primary buttons and for elements of primary importance across the theme.
 /// @group color-system
 $primary: $accent !default;
-$primary-lighter: tint($primary, 2) !default;
-$primary-darker: shade($primary, 2) !default;
+$primary-lighter: tint( $primary, 2 ) !default;
+$primary-darker: shade( $primary, 2 ) !default;
 
 /// The color used along with the accent color denoted by $primary.
 /// Used to provide contrast between the background and foreground colors.
@@ -86,37 +86,60 @@ $primary-contrast: $accent-contrast !default;
 /// The secondary color of the theme.
 /// @group color-system
 $secondary: #f6f6f6 !default;
-$secondary-lighter: tint($secondary, 2) !default;
-$secondary-darker: shade($secondary, 2) !default;
+$secondary-lighter: tint( $secondary, 2 ) !default;
+$secondary-darker: shade( $secondary, 2 ) !default;
 
 /// The color used along with the secondary color denoted by $secondary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 $secondary-contrast: contrast-wcag( $secondary ) !default;
 
+/// The tertiary color of the theme.
+/// @group color-system
+$tertiary: #03a9f4 !default;
+$tertiary-lighter: tint( $tertiary, 2 ) !default;
+$tertiary-darker: shade( $tertiary, 2 ) !default;
+
+/// The color used along with the tertiary color denoted by $tertiary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+$tertiary-contrast: contrast-wcag( $tertiary ) !default;
+
 /// The color for informational messages and states.
 /// @group color-system
 $info: #0058e9 !default;
-$info-lighter: tint($info, 2) !default;
-$info-darker: shade($info, 2) !default;
+$info-lighter: tint( $info, 2 ) !default;
+$info-darker: shade( $info, 2 ) !default;
 
 /// The color for success messages and states.
 /// @group color-system
 $success: #37b400 !default;
-$success-lighter: tint($success, 2) !default;
-$success-darker: shade($success, 2) !default;
+$success-lighter: tint( $success, 2 ) !default;
+$success-darker: shade( $success, 2 ) !default;
 
 /// The color for warning messages and states.
 /// @group color-system
 $warning: #ffc000 !default;
-$warning-lighter: tint($warning, 2) !default;
-$warning-darker: shade($warning, 2) !default;
+$warning-lighter: tint( $warning, 2 ) !default;
+$warning-darker: shade( $warning, 2 ) !default;
 
 /// The color for error messages and states.
 /// @group color-system
 $error: #f31700 !default;
-$error-lighter: tint($error, 2) !default;
-$error-darker: shade($error, 2) !default;
+$error-lighter: tint( $error, 2 ) !default;
+$error-darker: shade( $error, 2 ) !default;
+
+/// The dark color of the theme.
+/// @group color-system
+$dark: #404040 !default;
+
+/// The light color of the theme.
+/// @group color-system
+$light: #ebebeb !default;
+
+/// Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark
+/// @group color-system
+$inverse: if( $is-dark-theme, $light, $dark ) !default;
 
 
 // Color constants
