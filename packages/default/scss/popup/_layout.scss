@@ -45,6 +45,12 @@
     .k-animation-container-shown {
         overflow: visible;
     }
+
+    .k-popup > kendo-list > .k-first {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+
     // Virtual list -> K1 - virtuallist.less
     .k-popup .k-item.k-first {
         position: relative;
@@ -55,7 +61,6 @@
         padding: $popup-header-padding;
         min-height: $line-height-em;
         font-size: $popup-header-font-size;
-        color: $popup-header-text;
         white-space: normal;
         transition: $transition;
         border-bottom-width: 1px;
@@ -69,7 +74,6 @@
         padding: $popup-header-padding;
         min-height: $line-height-em;
         font-size: $popup-header-font-size;
-        color: $popup-header-text;
         white-space: normal;
 
         &.k-virtual-item {
@@ -179,6 +183,9 @@
         min-height: $line-height-em;
         line-height: $line-height-em;
         white-space: normal;
+        transition-property: color, background-color, outline-color, box-shadow;
+        transition-duration: 200ms;
+        transition-timing-function: ease;
     }
     .k-list-optionlabel {
         cursor: pointer;
@@ -289,7 +296,6 @@
             .k-button {
                 display: inline-flex;
                 border-width: 1px;
-                @include appearance( button );
             }
         }
 

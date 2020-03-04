@@ -1,73 +1,40 @@
-@include exports( "popup/theme" ) {
+@import "~@progress/kendo-theme-default/scss/popup/_theme.scss";
+
+@include exports( "popup/theme/bootstrap" ) {
 
     .k-popup {
-        @include fill(
-            $popup-text,
-            $popup-bg,
-            $popup-border
-        );
 
         .k-header,
         .k-group-header {
             color: $dropdown-header-color;
-            font-weight: 600;
-            font-size: $font-size-sm;
         }
 
         .k-outer-group-header {
             border-top-color: $grouping-border;
             color: $frozen-grouping-header-text;
-        }
 
-        &.k-column-menu {
-            padding-top: 0;
-            padding-bottom: 0;
+            &.k-first {
+                border-color: $grouping-border;
+            }
         }
     }
+
     .k-popup > .k-group-header,
     .k-popup > .k-virtual-wrap > .k-group-header {
         border-bottom-color: $grouping-border;
     }
 
-    .k-popup .k-group-header + div > .k-list > .k-item.k-first::before {
-        border-top-color: $grouping-border;
+    .k-popup > .k-group-header,
+    .k-popup .k-outer-group-header.k-first,
+    .k-popup > .k-virtual-wrap > .k-group-header {
+        box-shadow: none;
     }
 
-    .k-popup .k-list .k-item > .k-group {
-        color: $grouping-header-text;
-        background: $grouping-header-bg;
-    }
-    .k-popup .k-list .k-item > .k-group::before {
-        border-color: $grouping-header-bg $grouping-header-bg transparent transparent;
-    }
-    .k-rtl.k-popup .k-list .k-item > .k-group::before,
-    [dir="rtl"] .k-popup .k-list .k-item > .k-group::before {
-        border-color: $grouping-header-bg transparent transparent $grouping-header-bg;
-    }
 }
 
-@include exports( "list/theme" ) {
+@include exports( "list/theme/bootstrap" ) {
 
     .k-list {}
-
-    .k-list .k-item,
-    .k-list-optionlabel {
-        transition-property: color, background-color, outline-color, box-shadow;
-        transition-duration: 200ms;
-        transition-timing-function: ease;
-    }
-
-    .k-list .k-item:hover,
-    .k-list .k-item.k-state-hover,
-    .k-list-optionlabel:hover,
-    .k-list-optionlabel.k-state-hover {
-        @include appearance( hovered-list-item );
-    }
-
-    .k-list .k-item.k-state-selected,
-    .k-list-optionlabel.k-state-selected {
-        @include appearance( selected-list-item );
-    }
 
     .k-list .k-item:focus,
     .k-list .k-item.k-state-focused,
@@ -85,10 +52,15 @@
         }
     }
 
+    .k-animation-container-shown,
+    .k-animation-container > .k-popup {
+        @include box-shadow( none );
+    }
+
 }
 
 
-@include exports( "listcontainer/theme" ) {
+@include exports( "listcontainer/theme/bootstrap" ) {
 
 
     .k-list-container {
@@ -99,20 +71,6 @@
 
         // Button normal state
         .k-button {}
-
-
-        // Button hover state
-        .k-button:hover,
-        .k-button.k-state-hover {
-            @include appearance( hovered-list-item );
-        }
-
-        // Button pressed state
-        .k-button:active,
-        .k-button.k-state-active {
-            @include appearance( selected-list-item );
-        }
-
 
         // Button focus state
         .k-button:focus,
@@ -127,6 +85,19 @@
             &:active,
             &.k-state-active {
                 box-shadow: inset 0 0 0 3px rgba($list-item-selected-text, .15);
+            }
+        }
+
+        // Button group states
+        .k-button-group {
+            .k-button:active,
+            .k-button.k-state-active {
+                background-color: $primary-button-pressed-bg;
+                box-shadow: $primary-button-pressed-shadow;
+            }
+
+            .k-button.k-state-disabled {
+                background-color: $button-bg;
             }
         }
 

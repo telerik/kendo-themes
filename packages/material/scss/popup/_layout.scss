@@ -41,4 +41,11 @@
             transform: none;
         }
     }
+
+    // Tooltip popup container padding
+    .k-animation-container-shown.k-tooltip-wrapper {
+        .k-popup-transparent {
+            padding: 0;
+        }
+    }
 }
