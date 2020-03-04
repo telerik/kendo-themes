@@ -25,7 +25,12 @@
     .k-scheduler-toolbar,
     .k-scheduler-footer,
     .k-scheduler-header {
-        @include appearance( header );
+        @include fill(
+            $header-text,
+            $header-bg,
+            inherit,
+            $header-gradient
+        );
     }
 
     .k-scheduler-header-wrap {
@@ -38,16 +43,26 @@
         .k-nav-today,
         .k-nav-prev,
         .k-nav-next {
-            @include appearance( button );
+            @include fill(
+                $button-text,
+                $button-bg,
+                $button-border,
+                $button-gradient
+            );
 
-            &:hover { @include appearance( hovered-button ); }
+            &:hover {
+                @include fill(
+                    $button-hovered-text,
+                    $button-hovered-bg,
+                    $button-hovered-border,
+                    $button-hovered-gradient
+                );
+            }
         }
-        .k-nav-today { @include border-radius( $border-radius 0 0 $border-radius ); }
-        .k-nav-next { @include border-radius( 0 $border-radius $border-radius 0 ); }
 
         li {
             &.k-state-focused {
-                @include appearance( focused-button );
+                @include box-shadow( $button-focused-shadow );
             }
         }
     }
@@ -58,32 +73,33 @@
         &.k-state-expanded { background-color: $base-bg; }
 
         li {
-            @include appearance( button );
+            @include fill(
+                $button-text,
+                $button-bg,
+                $button-border,
+                $button-gradient
+            );
 
             &:hover {
-                @include appearance( hovered-button );
+                @include fill(
+                    $button-hovered-text,
+                    $button-hovered-bg,
+                    $button-hovered-border,
+                    $button-hovered-gradient
+                );
             }
             &.k-state-selected {
-                @include appearance( pressed-button );
+                @include fill(
+                    $button-pressed-text,
+                    $button-pressed-bg,
+                    $button-pressed-border,
+                    $button-pressed-gradient
+                );
+                @include box-shadow( $button-pressed-shadow );
             }
             &.k-state-focused {
-                @include appearance( focused-button );
+                @include box-shadow( $button-focused-shadow );
             }
-        }
-        li:first-child { @include border-radius( $border-radius ); }
-        li:first-child + li { @include border-radius( $border-radius 0 0 $border-radius ); }
-        li:last-child { @include border-radius( 0 $border-radius $border-radius 0 ); }
-
-
-        &.k-state-expanded {
-            li {
-                margin: 0;
-                border-radius: 0;
-            }
-            li + li { margin-top: -1px; }
-            li:first-child { @include border-radius( $border-radius $border-radius 0 0 ); }
-            li:first-child + li { border-radius: 0; }
-            li:last-child { @include border-radius( 0 0 $border-radius $border-radius ); }
         }
     }
 
@@ -92,10 +108,21 @@
     .k-scheduler-footer {
 
         li {
-            @include appearance( button );
-            @include border-radius( $border-radius );
+            @include fill(
+                $button-text,
+                $button-bg,
+                $button-border,
+                $button-gradient
+            );
 
-            &:hover { @include appearance( hovered-button ); }
+            &:hover {
+                @include fill(
+                    $button-hovered-text,
+                    $button-hovered-bg,
+                    $button-hovered-border,
+                    $button-hovered-gradient
+                );
+            }
         }
     }
 
@@ -110,25 +137,18 @@
         background-color: rgba($selected-bg, .25);
     }
 
+    .k-scheduler-layout-flex {
+        .k-scheduler-head,
+        .k-sticky-cell {
+            background-color: $panel-bg;
+        }
+    }
+
 
     // Appointments
     .k-event {
         background-color: $scheduler-event-bg;
         color: $scheduler-event-text;
-
-        .k-event-template {
-            // Angular fix for stronger selector and smaller padding
-            &,
-            kendo-scheduler & {
-                padding: $padding-y-sm $padding-x-sm;
-                font-size: $font-size-sm;
-            }
-        }
-
-        .k-event-actions {
-            right: $padding-x-sm;
-            font-size: $font-size-sm;
-        }
 
         &.k-state-selected {
             box-shadow: $scheduler-event-selected-box-shadow;
@@ -160,14 +180,23 @@
         .k-scheduler-content tr:hover,
         .k-scheduler-content tr.k-state-hover,
         .k-scheduler-content .k-scheduler-row:hover {
-            @include appearance( hovered-node );
+            @include fill(
+                $node-hovered-text,
+                $node-hovered-bg,
+                $node-hovered-border,
+                $node-hovered-gradient
+            );
         }
 
         .k-scheduler-content tr:hover .k-scheduler-datecolumn,
         .k-scheduler-content tr:hover .k-scheduler-groupcolumn,
         .k-scheduler-content tr.k-state-hover .k-scheduler-datecolumn,
         .k-scheduler-content tr.k-state-hover .k-scheduler-groupcolumn {
-            @include appearance( panel );
+            @include fill(
+                $panel-text,
+                $panel-bg,
+                $panel-border
+            );
         }
 
         // Selected

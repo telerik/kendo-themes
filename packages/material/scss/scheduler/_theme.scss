@@ -2,7 +2,11 @@
 
     // Appearance
     .k-scheduler {
-        @include appearance( panel );
+        @include fill(
+            $panel-text,
+            $panel-bg,
+            $panel-border
+        );
     }
 
     // Current time
@@ -27,7 +31,12 @@
     .k-scheduler-toolbar,
     .k-scheduler-footer,
     .k-scheduler-header {
-        @include appearance( toolbar );
+        @include fill(
+            $toolbar-text,
+            $toolbar-bg,
+            inherit,
+            $toolbar-gradient
+        );
     }
 
     .k-scheduler-header-wrap {
@@ -59,22 +68,19 @@
         background-color: rgba($selected-bg, .25);
     }
 
+    .k-scheduler-layout-flex {
+        .k-scheduler-head,
+        .k-sticky-cell {
+            background-color: $panel-bg;
+        }
+    }
+
     // Events
     .k-event {
         background-color: $scheduler-event-bg;
         color: $scheduler-event-text;
 
-        .k-event-template {
-            // Angular fix for stronger selector and smaller padding
-            &,
-            kendo-scheduler & {
-                padding: $padding-y-sm $padding-x-sm;
-            }
-        }
-
         .k-event-actions {
-            right: $padding-x-sm;
-
             .k-link {
                 color: $scheduler-event-bg;
                 background-color: $scheduler-event-text;
@@ -90,7 +96,6 @@
             box-shadow: $scheduler-event-selected-box-shadow;
 
             &::before {
-                display: block;
                 background-color: currentColor;
                 opacity: .24;
             }
@@ -136,11 +141,7 @@
 
 
     // Month view
-    .k-scheduler-monthview {
-        .k-scheduler-table td {
-            height: 85px;
-        }
-    }
+    .k-scheduler-monthview {}
 
 
     // Agenda view
@@ -150,14 +151,23 @@
         .k-scheduler-content tr:hover,
         .k-scheduler-content tr.k-state-hover,
         .k-scheduler-content .k-scheduler-row:hover {
-            @include appearance( hovered-node );
+            @include fill(
+                $node-hovered-text,
+                $node-hovered-bg,
+                $node-hovered-border,
+                $node-hovered-gradient
+            );
         }
 
         .k-scheduler-content tr:hover .k-scheduler-datecolumn,
         .k-scheduler-content tr:hover .k-scheduler-groupcolumn,
         .k-scheduler-content tr.k-state-hover .k-scheduler-datecolumn,
         .k-scheduler-content tr.k-state-hover .k-scheduler-groupcolumn {
-            @include appearance( panel );
+            @include fill(
+                $panel-text,
+                $panel-bg,
+                $panel-border
+            );
         }
 
         // Selected

@@ -43,17 +43,15 @@
         }
     }
 
-    // Tooltip popup container padding
-    .k-animation-container-shown.k-tooltip-wrapper {
-        .k-popup-transparent {
-            padding: 0;
-        }
-    }
-
     .k-list-filter {
 
         & > .k-textbox {
-            @include appearance( hovered-node );
+            @include fill(
+                $node-hovered-text,
+                $node-hovered-bg,
+                $node-hovered-border,
+                $node-hovered-gradient
+            );
         }
     }
 }

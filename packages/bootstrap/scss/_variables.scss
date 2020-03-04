@@ -155,8 +155,8 @@ $gradient-white-to-transparent: white, rgba( white, 0);
 
 $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
-$text-color: $body-color !default;
 $bg-color: $body-bg !default;
+$text-color: $body-color !default;
 $border-color: try-darken( $bg-color, 12% ) !default;
 
 /// The background of the components' chrome area.
@@ -294,6 +294,7 @@ $grouping-header-bg: $body-text !default;
 $grouping-header-text: $body-bg !default;
 $grouping-border: $border-color !default;
 $frozen-grouping-header-text: #6c757d !default;
+$frozen-grouping-header-border-width: 2px !default;
 
 
 // Header
@@ -327,21 +328,49 @@ $badge-padding-x: $badge-padding-x !default;
 $badge-padding-y: $badge-padding-y !default;
 $badge-border-width: 1px !default;
 $badge-border-radius: $badge-border-radius !default;
-
 $badge-font-size: $badge-font-size !default;
 $badge-line-height: 1 !default;
+
+$badge-padding-x-sm: ( $badge-padding-x / 2 ) !default;
+$badge-padding-y-sm: ( $badge-padding-y / 2 ) !default;
+$badge-border-width-sm: $badge-border-width !default;
+$badge-border-radius-sm: $border-radius-sm !default;
+$badge-font-size-sm: ( $badge-font-size * .875 ) !default;
+$badge-line-height-sm: 1 !default;
+
+$badge-padding-x-lg: ( $badge-padding-x * 1.5 ) !default;
+$badge-padding-y-lg: ( $badge-padding-y * 1.5 ) !default;
+$badge-border-width-lg: $badge-border-width !default;
+$badge-border-radius-lg: $border-radius-lg !default;
+$badge-font-size-lg: $font-size-sm !default;
+$badge-line-height-lg: 1.25 !default;
 
 $badge-fixed-size: 20px !default;
 $badge-calc-size: calc( #{$badge-line-height * 1em} + #{$badge-padding-y * 2} + #{$badge-border-width * 2} ) !default;
 $badge-size: if( $use-calc-badge-size, $badge-calc-size, $badge-fixed-size );
+$badge-dot-size: 10px;
 
-$badge-secondary-bg: $secondary !default;
-$badge-secondary-text: $base-text !default;
-$badge-secondary-border: $badge-secondary-bg !default;
+$badge-fixed-size-sm: 15px !default;
+$badge-calc-size-sm: calc( #{$badge-line-height-sm * 1em} + #{$badge-padding-y-sm * 2} + #{$badge-border-width-sm * 2} ) !default;
+$badge-size-sm: if( $use-calc-badge-size, $badge-calc-size-sm, $badge-fixed-size-sm );
+$badge-dot-size-sm: 6px;
+
+$badge-fixed-size-lg: 30px !default;
+$badge-calc-size-lg: calc( #{$badge-line-height-lg * 1em} + #{$badge-padding-y-lg * 2} + #{$badge-border-width-lg * 2} ) !default;
+$badge-size-lg: if( $use-calc-badge-size, $badge-calc-size-lg, $badge-fixed-size-lg );
+$badge-dot-size-lg: 12px;
 
 $badge-primary-bg: $primary !default;
 $badge-primary-text: contrast-wcag( $badge-primary-bg ) !default;
 $badge-primary-border: $badge-primary-bg !default;
+
+$badge-secondary-bg: $secondary !default;
+$badge-secondary-text: contrast-wcag( $badge-secondary-bg ) !default;
+$badge-secondary-border: $badge-secondary-bg !default;
+
+$badge-tertiary-bg: $tertiary !default;
+$badge-tertiary-text: contrast-wcag( $badge-tertiary-bg ) !default;
+$badge-tertiary-border: $badge-tertiary-bg !default;
 
 $badge-info-bg: $info !default;
 $badge-info-text: contrast-wcag( $badge-info-bg ) !default;
@@ -358,6 +387,18 @@ $badge-warning-border: $badge-warning-bg !default;
 $badge-error-bg: $error !default;
 $badge-error-text: contrast-wcag( $badge-error-bg ) !default;
 $badge-error-border: $badge-error-bg !default;
+
+$badge-dark-bg: $dark !default;
+$badge-dark-text: contrast-wcag( $badge-dark-bg ) !default;
+$badge-dark-border: $badge-dark-bg !default;
+
+$badge-light-bg: $light !default;
+$badge-light-text: contrast-wcag( $badge-light-bg ) !default;
+$badge-light-border: $badge-light-bg !default;
+
+$badge-inverse-bg: $inverse !default;
+$badge-inverse-text: contrast-wcag( $badge-inverse-bg ) !default;
+$badge-inverse-border: $badge-inverse-bg !default;
 
 
 // Chip
@@ -487,6 +528,9 @@ $list-item-selected-bg: $dropdown-link-active-bg !default;
 $list-item-selected-text: $dropdown-link-active-color !default;
 
 $list-item-focused-shadow: inset 0 0 0 3px rgba( $list-item-text, .15 ) !default;
+
+$list-container-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
+$list-container-no-data-text: rgba( $component-text, .5 ) !default;
 
 
 // Listgroup
@@ -1526,13 +1570,15 @@ $upload-border: $component-border !default;
 
 $upload-dropzone-padding-x: $toolbar-padding-x !default;
 $upload-dropzone-padding-y: $toolbar-padding-y !default;
-$upload-dropzone-spacing: $upload-dropzone-padding-x !default;
+$upload-dropzone-spacing: ($upload-dropzone-padding-x * 2) !default;
 $upload-dropzone-bg: $toolbar-bg !default;
 $upload-dropzone-text: $toolbar-text !default;
 $upload-dropzone-border: $toolbar-border !default;
 
-$upload-item-padding-x: $cell-padding-x !default;
-$upload-item-padding-y: $cell-padding-y !default;
+$upload-item-padding-x: $spacer !default;
+$upload-item-padding-y: $spacer !default;
+
+$upload-icon-spacing: $upload-dropzone-padding-x !default;
 
 $upload-item-image-width: 24px !default;
 $upload-item-image-height: 34px !default;
@@ -2000,6 +2046,20 @@ $card-callout-height: 1.3em !default;
 
 
 // Splitter
+$splitter-splitbar-size: 8px !default;
+$splitter-resize-icon-size: 10px !default;
+$splitter-drag-handle-length: 20px !default;
+$splitter-drag-handle-thickness: 2px !default;
+$splitter-drag-icon-margin: 7px !default;
+
+$splitter-bg: darken($button-bg, 5) !default;
+$splitter-text: $button-text !default;
+
+$splitter-hovered-bg: darken($button-hovered-bg, 5) !default;
+$splitter-hovered-text: $button-hovered-text !default;
+
+$splitter-selected-bg: $selected-bg !default;
+$splitter-selected-text: $selected-text !default;
 
 
 // Filter expression builder

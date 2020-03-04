@@ -3,6 +3,7 @@
 
     // Layout
     .k-scheduler {
+        @include use-background-clip();
         display: flex;
         flex-direction: column;
 
@@ -63,7 +64,6 @@
         overflow: auto;
 
         .k-scheduler-head {
-            background-color: $panel-bg;
             position: sticky;
             top: 0;
             z-index: 3;
@@ -181,7 +181,6 @@
             position: sticky;
             left: 0;
             z-index: 3;
-            background-color: $panel-bg;
         }
     }
 
@@ -198,6 +197,7 @@
     }
     .k-scheduler-toolbar,
     .k-scheduler-footer {
+        @include use-background-clip();
         padding: $toolbar-padding-y $toolbar-padding-x;
         border-width: 0;
         border-style: solid;
@@ -238,6 +238,7 @@
         flex: 1;
 
         li {
+            @include use-background-clip();
             border-width: $button-border-width;
             border-style: solid;
             position: relative;
@@ -324,6 +325,7 @@
         margin-left: auto;
 
         li {
+            @include use-background-clip();
             border-width: $button-border-width;
             border-style: solid;
             position: relative;
@@ -406,6 +408,7 @@
         align-items: center;
 
         li {
+            @include use-background-clip();
             border-width: $button-border-width;
             border-style: solid;
             position: relative;
@@ -554,12 +557,23 @@
         &::before {
             content: "";
             position: absolute;
-            display: none;
+            display: block;
             top: 0;
-            left: 0;
+            left: 3px;
             right: 0;
             bottom: 0;
             z-index: 1;
+
+            .k-rtl & {
+                left: 0;
+                right: 3px;
+            }
+        }
+
+        &.k-state-selected {
+            &::before {
+                display: none;
+            }
         }
 
         > div {

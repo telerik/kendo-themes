@@ -54,20 +54,20 @@ The following table lists the available variables for customizing the Default th
       <td>Border radius for all components.</td>
     </tr>
     <tr>
-      <td>$base-text</td>
-      <td>
-          <span class="color-preview" style="background-color: #656565"></span>
-          #656565
-      </td>
-      <td>The text color of the components' chrome area.</td>
-    </tr>
-    <tr>
       <td>$base-bg</td>
       <td>
           <span class="color-preview" style="background-color: #f6f6f6"></span>
           #f6f6f6
       </td>
       <td>The background of the components' chrome area.</td>
+    </tr>
+    <tr>
+      <td>$base-text</td>
+      <td>
+          <span class="color-preview" style="background-color: #656565"></span>
+          #656565
+      </td>
+      <td>The text color of the components' chrome area.</td>
     </tr>
     <tr>
       <td>$base-border</td>
@@ -84,20 +84,19 @@ The following table lists the available variables for customizing the Default th
       <td>The gradient background of the components' chrome area.</td>
     </tr>
     <tr>
-      <td>$hovered-text</td>
-      <td>
-          <span class="color-preview" style="background-color: #656565"></span>
-          #656565
-      </td>
-      <td>The text color of hovered items.</td>
-    </tr>
-    <tr>
       <td>$hovered-bg</td>
       <td>
           <span class="color-preview" style="background-color: #ededed"></span>
           #ededed
       </td>
       <td>The background of hovered items.</td>
+    </tr>
+    <tr>
+      <td>$hovered-text</td>
+      <td>
+          $base-text
+      </td>
+      <td>The text color of hovered items.</td>
     </tr>
     <tr>
       <td>$hovered-border</td>
