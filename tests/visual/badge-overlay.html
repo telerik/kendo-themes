@@ -7,113 +7,98 @@
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts.js"></script>
     <style>
-        #test-area > section {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
+        #test-area {
+            grid-template-columns: repeat(6, 1fr);
         }
         #test-area .k-badge-overlay {
             width: 60px;
             height: 30px;
             background-color: skyblue;
         }
-
     </style>
 </head>
 <body>
 
     <div id="test-area" class="grid">
 
-        <h3>Overlay</h3>
-        <section class="overlay">
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge k-badge-pill">99+</span>
-            </div>
+        <span></span>
+        <span>Rectangle</span>
+        <span>Rounded</span>
+        <span>Pill</span>
+        <span>Circle</span>
+        <span>Dot</span>
 
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge k-badge-pill">1</span>
-            </div>
 
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge k-badge-pill"></span>
-            </div>
+        <span>Solid</span>
+        <div class="k-badge-overlay">
+            <span class="k-badge k-badge-primary">Rectangle</span>
+        </div>
+        <div class="k-badge-overlay">
+            <span class="k-badge k-badge-primary k-badge-rounded">Rounded</span>
+        </div>
+        <div class="k-badge-overlay">
+            <span class="k-badge k-badge-primary k-badge-pill">Pill</span>
+        </div>
+        <div class="k-badge-overlay">
+            <span class="k-badge k-badge-primary k-badge-circle">99+</span>
+        </div>
+        <div class="k-badge-overlay">
+            <span class="k-badge k-badge-primary k-badge-dot"></span>
+        </div>
 
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge">Overlay</span>
-            </div>
 
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge"></span>
-            </div>
-        </section>
+        <span>Outline</span>
+        <div class="k-badge-overlay">
+            <span class="k-badge k-badge-outline k-badge-outline-primary">Rectangle</span>
+        </div>
+        <div class="k-badge-overlay">
+            <span class="k-badge k-badge-outline k-badge-outline-primary k-badge-rounded">Rounded</span>
+        </div>
+        <div class="k-badge-overlay">
+            <span class="k-badge k-badge-outline k-badge-outline-primary k-badge-pill">Pill</span>
+        </div>
+        <div class="k-badge-overlay">
+            <span class="k-badge k-badge-outline k-badge-outline-primary k-badge-circle">99+</span>
+        </div>
+        <div class="k-badge-overlay">
+            <span class="k-badge k-badge-outline k-badge-outline-primary k-badge-dot"></span>
+        </div>
 
-        <h3>Overlay Outline</h3>
-        <section class="overlay">
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge-outline k-badge k-badge-pill">99+</span>
-            </div>
 
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge-outline k-badge k-badge-pill">1</span>
-            </div>
+        <span>Solid RTL</span>
+        <div class="k-badge-overlay k-rtl">
+            <span class="k-badge k-badge-primary">Rectangle</span>
+        </div>
+        <div class="k-badge-overlay k-rtl">
+            <span class="k-badge k-badge-primary k-badge-rounded">Rounded</span>
+        </div>
+        <div class="k-badge-overlay k-rtl">
+            <span class="k-badge k-badge-primary k-badge-pill">Pill</span>
+        </div>
+        <div class="k-badge-overlay k-rtl">
+            <span class="k-badge k-badge-primary k-badge-circle">99+</span>
+        </div>
+        <div class="k-badge-overlay k-rtl">
+            <span class="k-badge k-badge-primary k-badge-dot"></span>
+        </div>
 
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge-outline k-badge k-badge-pill"></span>
-            </div>
 
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge-outline k-badge">Overlay</span>
-            </div>
-
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge-outline k-badge"></span>
-            </div>
-        </section>
-
-        <h3>Overlay RTL</h3>
-        <section class="overlay k-rtl">
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge k-badge-pill">99+</span>
-            </div>
-
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge k-badge-pill">1</span>
-            </div>
-
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge k-badge-pill"></span>
-            </div>
-
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge">Overlay</span>
-            </div>
-
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge"></span>
-            </div>
-        </section>
-
-        <h3>Overlay Outline RTL</h3>
-        <section class="overlay k-rtl">
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge-outline k-badge k-badge-pill">99+</span>
-            </div>
-
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge-outline k-badge k-badge-pill">1</span>
-            </div>
-
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge-outline k-badge k-badge-pill"></span>
-            </div>
-
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge-outline k-badge">Overlay</span>
-            </div>
-
-            <div class="k-badge-overlay">
-                <span class="k-badge-primary k-badge-outline k-badge"></span>
-            </div>
-        </section>
+        <span>Outline RTL</span>
+        <div class="k-badge-overlay k-rtl">
+            <span class="k-badge k-badge-outline k-badge-outline-primary">Rectangle</span>
+        </div>
+        <div class="k-badge-overlay k-rtl">
+            <span class="k-badge k-badge-outline k-badge-outline-primary k-badge-rounded">Rounded</span>
+        </div>
+        <div class="k-badge-overlay k-rtl">
+            <span class="k-badge k-badge-outline k-badge-outline-primary k-badge-pill">Pill</span>
+        </div>
+        <div class="k-badge-overlay k-rtl">
+            <span class="k-badge k-badge-outline k-badge-outline-primary k-badge-circle">99+</span>
+        </div>
+        <div class="k-badge-overlay k-rtl">
+            <span class="k-badge k-badge-outline k-badge-outline-primary k-badge-dot"></span>
+        </div>
 
     </div>
 

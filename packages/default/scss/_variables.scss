@@ -62,7 +62,7 @@ $zindex-window: 2 !default;
 
 
 // Color settings
-// $is-dark-theme: ;
+$is-dark-theme: false !default;
 
 // Deprecated
 // TODO: remove for v5
@@ -75,8 +75,8 @@ $accent-contrast: contrast-wcag( $accent ) !default;
 /// Used for primary buttons and for elements of primary importance across the theme.
 /// @group color-system
 $primary: $accent !default;
-$primary-lighter: tint($primary, 2) !default;
-$primary-darker: shade($primary, 2) !default;
+$primary-lighter: tint( $primary, 2 ) !default;
+$primary-darker: shade( $primary, 2 ) !default;
 
 /// The color used along with the accent color denoted by $primary.
 /// Used to provide contrast between the background and foreground colors.
@@ -86,37 +86,60 @@ $primary-contrast: $accent-contrast !default;
 /// The secondary color of the theme.
 /// @group color-system
 $secondary: #f6f6f6 !default;
-$secondary-lighter: tint($secondary, 2) !default;
-$secondary-darker: shade($secondary, 2) !default;
+$secondary-lighter: tint( $secondary, 2 ) !default;
+$secondary-darker: shade( $secondary, 2 ) !default;
 
 /// The color used along with the secondary color denoted by $secondary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 $secondary-contrast: contrast-wcag( $secondary ) !default;
 
+/// The tertiary color of the theme.
+/// @group color-system
+$tertiary: #03a9f4 !default;
+$tertiary-lighter: tint( $tertiary, 2 ) !default;
+$tertiary-darker: shade( $tertiary, 2 ) !default;
+
+/// The color used along with the tertiary color denoted by $tertiary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+$tertiary-contrast: contrast-wcag( $tertiary ) !default;
+
 /// The color for informational messages and states.
 /// @group color-system
 $info: #0058e9 !default;
-$info-lighter: tint($info, 2) !default;
-$info-darker: shade($info, 2) !default;
+$info-lighter: tint( $info, 2 ) !default;
+$info-darker: shade( $info, 2 ) !default;
 
 /// The color for success messages and states.
 /// @group color-system
 $success: #37b400 !default;
-$success-lighter: tint($success, 2) !default;
-$success-darker: shade($success, 2) !default;
+$success-lighter: tint( $success, 2 ) !default;
+$success-darker: shade( $success, 2 ) !default;
 
 /// The color for warning messages and states.
 /// @group color-system
 $warning: #ffc000 !default;
-$warning-lighter: tint($warning, 2) !default;
-$warning-darker: shade($warning, 2) !default;
+$warning-lighter: tint( $warning, 2 ) !default;
+$warning-darker: shade( $warning, 2 ) !default;
 
 /// The color for error messages and states.
 /// @group color-system
 $error: #f31700 !default;
-$error-lighter: tint($error, 2) !default;
-$error-darker: shade($error, 2) !default;
+$error-lighter: tint( $error, 2 ) !default;
+$error-darker: shade( $error, 2 ) !default;
+
+/// The dark color of the theme.
+/// @group color-system
+$dark: #404040 !default;
+
+/// The light color of the theme.
+/// @group color-system
+$light: #ebebeb !default;
+
+/// Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark
+/// @group color-system
+$inverse: if( $is-dark-theme, $light, $dark ) !default;
 
 
 // Color constants
@@ -130,23 +153,23 @@ $gradient-white-to-transparent: white, rgba( white, 0);
 $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
 
-$text-color: #656565 !default;
 $bg-color: #ffffff !default;
+$text-color: #656565 !default;
 $border-color: rgba( black, .08 ) !default;
 
+/// The background of the components' chrome area.
+$base-bg: #f6f6f6 !default; // $secondary
 /// The text color of the components' chrome area.
 $base-text: #656565 !default;
-/// The background of the components' chrome area.
-$base-bg: #f6f6f6 !default;
 /// The border color of the components' chrome area.
 $base-border: rgba( black, .08 ) !default;
 /// The gradient background of the components' chrome area.
 $base-gradient: $base-bg, darken( $base-bg, 2% ) !default;
 
-/// The text color of hovered items.
-$hovered-text: #656565 !default;
 /// The background of hovered items.
-$hovered-bg: #ededed !default;
+$hovered-bg: #ededed !default; // tint $base .5
+/// The text color of hovered items.
+$hovered-text: $base-text !default;
 /// The border color of hovered items.
 $hovered-border: rgba( black, .15 ) !default;
 /// The gradient background of hovered items.
@@ -274,6 +297,7 @@ $grouping-header-bg: $body-text !default;
 $grouping-header-text: $body-bg !default;
 $grouping-border: $border-color !default;
 $frozen-grouping-header-text: null !default;
+$frozen-grouping-header-border-width: null !default;
 
 
 // Header
@@ -307,21 +331,49 @@ $badge-padding-x: $padding-x-sm !default;
 $badge-padding-y: $badge-padding-x !default;
 $badge-border-width: 1px !default;
 $badge-border-radius: $border-radius !default;
-
 $badge-font-size: $font-size-xs !default;
 $badge-line-height: 1 !default;
+
+$badge-padding-x-sm: ( $badge-padding-x / 2 ) !default;
+$badge-padding-y-sm: ( $badge-padding-y / 2 ) !default;
+$badge-border-width-sm: $badge-border-width !default;
+$badge-border-radius-sm: $border-radius-sm !default;
+$badge-font-size-sm: $font-size-xs !default;
+$badge-line-height-sm: 1 !default;
+
+$badge-padding-x-lg: ( $badge-padding-x * 1.5 ) !default;
+$badge-padding-y-lg: ( $badge-padding-y * 1.5 ) !default;
+$badge-border-width-lg: $badge-border-width !default;
+$badge-border-radius-lg: $border-radius-lg !default;
+$badge-font-size-lg: $font-size-sm !default;
+$badge-line-height-lg: 1 !default;
 
 $badge-fixed-size: 20px !default;
 $badge-calc-size: calc( #{$badge-line-height * 1em} + #{$badge-padding-y * 2} + #{$badge-border-width * 2} ) !default;
 $badge-size: if( $use-calc-badge-size, $badge-calc-size, $badge-fixed-size );
+$badge-dot-size: 10px;
 
-$badge-secondary-bg: darken($base-bg, 4%) !default;
-$badge-secondary-text:  $base-text !default;
-$badge-secondary-border: $badge-secondary-bg !default;
+$badge-fixed-size-sm: 16px !default;
+$badge-calc-size-sm: calc( #{$badge-line-height-sm * 1em} + #{$badge-padding-y-sm * 2} + #{$badge-border-width-sm * 2} ) !default;
+$badge-size-sm: if( $use-calc-badge-size, $badge-calc-size-sm, $badge-fixed-size-sm );
+$badge-dot-size-sm: 6px;
+
+$badge-fixed-size-lg: 26px !default;
+$badge-calc-size-lg: calc( #{$badge-line-height-lg * 1em} + #{$badge-padding-y-lg * 2} + #{$badge-border-width-lg * 2} ) !default;
+$badge-size-lg: if( $use-calc-badge-size, $badge-calc-size-lg, $badge-fixed-size-lg );
+$badge-dot-size-lg: 12px;
 
 $badge-primary-bg: $primary !default;
 $badge-primary-text: contrast-wcag( $badge-primary-bg ) !default;
 $badge-primary-border: $badge-primary-bg !default;
+
+$badge-secondary-bg: $secondary !default;
+$badge-secondary-text:  contrast-wcag( $badge-secondary-bg ) !default;
+$badge-secondary-border: $badge-secondary-bg !default;
+
+$badge-tertiary-bg: $tertiary !default;
+$badge-tertiary-text: contrast-wcag( $badge-tertiary-bg ) !default;
+$badge-tertiary-border: $badge-tertiary-bg !default;
 
 $badge-info-bg: $info !default;
 $badge-info-text: contrast-wcag( $badge-info-bg ) !default;
@@ -338,6 +390,18 @@ $badge-warning-border: $badge-warning-bg !default;
 $badge-error-bg: $error !default;
 $badge-error-text: contrast-wcag( $badge-error-bg ) !default;
 $badge-error-border: $badge-error-bg !default;
+
+$badge-dark-bg: $dark !default;
+$badge-dark-text: contrast-wcag( $badge-dark-bg ) !default;
+$badge-dark-border: $badge-dark-bg !default;
+
+$badge-light-bg: $light !default;
+$badge-light-text: contrast-wcag( $badge-light-bg ) !default;
+$badge-light-border: $badge-light-bg !default;
+
+$badge-inverse-bg: $inverse !default;
+$badge-inverse-text: contrast-wcag( $badge-inverse-bg ) !default;
+$badge-inverse-border: $badge-inverse-bg !default;
 
 
 // Chip
@@ -1512,13 +1576,15 @@ $upload-border: $component-border !default;
 
 $upload-dropzone-padding-x: $toolbar-padding-x !default;
 $upload-dropzone-padding-y: $toolbar-padding-y !default;
-$upload-dropzone-spacing: $upload-dropzone-padding-x !default;
+$upload-dropzone-spacing: ($upload-dropzone-padding-x * 2) !default;
 $upload-dropzone-bg: $toolbar-bg !default;
 $upload-dropzone-text: $toolbar-text !default;
 $upload-dropzone-border: $toolbar-border !default;
 
-$upload-item-padding-x: $cell-padding-x !default;
-$upload-item-padding-y: $cell-padding-y !default;
+$upload-item-padding-x: $cell-padding !default;
+$upload-item-padding-y: $cell-padding !default;
+
+$upload-icon-spacing: $upload-dropzone-padding-x !default;
 
 $upload-item-image-width: 24px !default;
 $upload-item-image-height: 34px !default;

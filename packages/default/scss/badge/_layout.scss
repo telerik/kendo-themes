@@ -1,13 +1,14 @@
 @include exports( "badge/layout" ) {
 
     .k-badge {
-        @include border-radius( $badge-border-radius );
         margin: 0 0 0 ($spacer / 2);
         padding: $badge-padding-y $badge-padding-x;
-        min-width: $badge-size;
         border-width: $badge-border-width;
         border-style: solid;
+        border-color: transparent;
         box-sizing: border-box;
+        color: inherit;
+        background-color: transparent;
         font-size: $badge-font-size;
         line-height: $badge-line-height;
         text-align: center;
@@ -15,6 +16,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        vertical-align: middle;
         overflow: hidden;
         text-overflow: ellipsis;
 
@@ -33,8 +35,6 @@
     // Empty badge
     .k-badge:empty {
         padding: $badge-padding-y;
-        min-width: auto;
-        min-height: auto;
     }
 
 
@@ -49,9 +49,65 @@
     }
 
 
-    // Pill badges
+    // Badge sizes
+    .k-badge-sm {
+        padding: $badge-padding-y-sm $badge-padding-x-sm;
+        border-width: $badge-border-width-sm;
+        font-size: $badge-font-size-sm;
+        line-height: $badge-line-height-sm;
+
+        &:empty { padding: $badge-padding-y-sm; }
+    }
+    .k-badge-lg {
+        padding: $badge-padding-y-lg $badge-padding-x-lg;
+        border-width: $badge-border-width-lg;
+        font-size: $badge-font-size-lg;
+        line-height: $badge-line-height-lg;
+
+        &:empty { padding: $badge-padding-y-lg; }
+    }
+
+
+    // Badge shapes
+    .k-badge-rounded {
+        @include border-radius( $badge-border-radius );
+
+        &-sm { @include border-radius( $badge-border-radius-sm ); }
+        &-lg { @include border-radius( $badge-border-radius-lg ); }
+    }
     .k-badge-pill {
         border-radius: 5rem;
+    }
+    .k-badge-circle {
+        padding: 0 !important; // sass-lint:disable-line no-important
+        width: $badge-size;
+        height: $badge-size;
+        border-radius: 100%;
+
+        &-sm {
+            width: $badge-size-sm;
+            height: $badge-size-sm;
+        }
+        &-lg {
+            width: $badge-size-lg;
+            height: $badge-size-lg;
+        }
+    }
+    .k-badge-dot {
+        padding: 0 !important;  // sass-lint:disable-line no-important
+        width: $badge-dot-size;
+        height: $badge-dot-size;
+        border-radius: 100%;
+        font-size: 0;
+
+        &-sm {
+            width: $badge-dot-size-sm;
+            height: $badge-dot-size-sm;
+        }
+        &-lg {
+            width: $badge-dot-size-lg;
+            height: $badge-dot-size-lg;
+        }
     }
 
 
@@ -59,22 +115,27 @@
     .k-badge-overlay {
         position: relative;
         overflow: visible;
-    }
-    .k-badge-overlay .k-badge {
-        margin: 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 9999;
-        transform: translate(50%, -50%);
+
+        .k-badge {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 9999;
+            transform: translate(50%, -50%);
+        }
+
 
         // RTL
+        &.k-rtl,
         .k-rtl &,
         &[dir="rtl"],
         [dir="rtl"] & {
-            right: auto;
-            left: 0;
-            transform: translate(-50%, -50%);
+            .k-badge {
+                right: auto;
+                left: 0;
+                transform: translate(-50%, -50%);
+            }
         }
     }
 
