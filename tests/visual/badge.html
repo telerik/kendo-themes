@@ -7,21 +7,8 @@
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts.js"></script>
     <style>
-        #test-area > section {
-            display: grid;
-            grid-template-columns: repeat(11, 1fr);
-        }
-        #test-area > section.look {
-            grid-template-columns: 1fr 5fr 5fr;
-        }
-        #test-area > section > span {
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #test-area .states  {
-            justify-content: flex-start;
+        #test-area  {
+            grid-template-columns: repeat(9, 1fr);
         }
     </style>
 </head>
@@ -29,113 +16,222 @@
 
     <div id="test-area" class="grid">
 
-        <section class="look">
-            <span></span>
-            <span>Flat</span>
-            <span>Outline</span>
-        </section>
-        <section>
-            <span></span>
-            <span>Pill</span>
-            <span>Circle</span>
-            <span>Empty Pill</span>
-            <span>Rectangle</span>
-            <span>Empty Rectangle</span>
-            <span>Pill</span>
-            <span>Circle</span>
-            <span>Empty Pill</span>
-            <span>Rectangle</span>
-            <span>Empty Rectangle</span>
-        </section>
-        <section>
-            <span class="states"><span>Secondary</span></span>
-            <span><span class="k-badge-secondary k-badge k-badge-pill">99 +</span></span>
-            <span><span class="k-badge-secondary k-badge k-badge-pill">1</span></span>
-            <span><span class="k-badge-secondary k-badge k-badge-pill"></span></span>
-            <span><span class="k-badge-secondary k-badge">Updated</span></span>
-            <span><span class="k-badge-secondary k-badge"></span></span>
+        <span></span>
+        <span class="col-2">Rectange</span>
+        <span class="col-2">Rounded</span>
+        <span class="col-2">Pill</span>
+        <span class="col">Circle</span>
+        <span class="col">Dot</span>
 
-            <span><span class="k-badge-secondary k-badge k-badge-pill k-badge-outline">99 +</span></span>
-            <span><span class="k-badge-secondary k-badge k-badge-pill k-badge-outline">1</span></span>
-            <span><span class="k-badge-secondary k-badge k-badge-pill k-badge-outline"></span></span>
-            <span><span class="k-badge-secondary k-badge k-badge-outline">Updated</span></span>
-            <span><span class="k-badge-secondary k-badge k-badge-outline"></span></span>
-        </section>
 
-        <section>
-            <span class="states"><span>Primary</span></span>
-            <span><span class="k-badge-primary k-badge k-badge-pill">99 +</span></span>
-            <span><span class="k-badge-primary k-badge k-badge-pill">1</span></span>
-            <span><span class="k-badge-primary k-badge k-badge-pill"></span></span>
-            <span><span class="k-badge-primary k-badge">Updated</span></span>
-            <span><span class="k-badge-primary k-badge"></span></span>
+        <span>Primary</span>
+        <span><span class="k-badge k-badge-primary">Rectange</span></span>
+        <span><span class="k-badge k-badge-primary"></span></span>
+        <span><span class="k-badge k-badge-primary k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-primary k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-primary k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-primary k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-primary k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-primary k-badge-dot"></span></span>
 
-            <span><span class="k-badge-primary k-badge k-badge-pill k-badge-outline">99 +</span></span>
-            <span><span class="k-badge-primary k-badge k-badge-pill k-badge-outline">1</span></span>
-            <span><span class="k-badge-primary k-badge k-badge-pill k-badge-outline"></span></span>
-            <span><span class="k-badge-primary k-badge k-badge-outline">Updated</span></span>
-            <span><span class="k-badge-primary k-badge k-badge-outline"></span></span>
-        </section>
+        <span>^ outline</span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-primary">Rectange</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-primary"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-primary k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-primary k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-primary k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-primary k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-primary k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-primary k-badge-dot"></span></span>
 
-        <section>
-            <span class="states"><span>Info</span></span>
-            <span><span class="k-badge-info k-badge k-badge-pill">99 +</span></span>
-            <span><span class="k-badge-info k-badge k-badge-pill">1</span></span>
-            <span><span class="k-badge-info k-badge k-badge-pill"></span></span>
-            <span><span class="k-badge-info k-badge">Updated</span></span>
-            <span><span class="k-badge-info k-badge"></span></span>
 
-            <span><span class="k-badge-info k-badge k-badge-pill k-badge-outline">99 +</span></span>
-            <span><span class="k-badge-info k-badge k-badge-pill k-badge-outline">1</span></span>
-            <span><span class="k-badge-info k-badge k-badge-pill k-badge-outline"></span></span>
-            <span><span class="k-badge-info k-badge k-badge-outline">Updated</span></span>
-            <span><span class="k-badge-info k-badge k-badge-outline"></span></span>
-        </section>
+        <span>Secondary</span>
+        <span><span class="k-badge k-badge-secondary">Rectange</span></span>
+        <span><span class="k-badge k-badge-secondary"></span></span>
+        <span><span class="k-badge k-badge-secondary k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-secondary k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-secondary k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-secondary k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-secondary k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-secondary k-badge-dot"></span></span>
 
-        <section>
-            <span class="states"><span>Success</span></span>
-            <span><span class="k-badge-success k-badge k-badge-pill">99 +</span></span>
-            <span><span class="k-badge-success k-badge k-badge-pill">1</span></span>
-            <span><span class="k-badge-success k-badge k-badge-pill"></span></span>
-            <span><span class="k-badge-success k-badge">Updated</span></span>
-            <span><span class="k-badge-success k-badge"></span></span>
+        <span>^ outline</span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-secondary">Rectange</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-secondary"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-secondary k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-secondary k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-secondary k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-secondary k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-secondary k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-secondary k-badge-dot"></span></span>
 
-            <span><span class="k-badge-success k-badge k-badge-pill k-badge-outline">99 +</span></span>
-            <span><span class="k-badge-success k-badge k-badge-pill k-badge-outline">1</span></span>
-            <span><span class="k-badge-success k-badge k-badge-pill k-badge-outline"></span></span>
-            <span><span class="k-badge-success k-badge k-badge-outline">Updated</span></span>
-            <span><span class="k-badge-success k-badge k-badge-outline"></span></span>
-        </section>
 
-        <section>
-            <span class="states">Warning</span></span>
-            <span><span class="k-badge-warning k-badge k-badge-pill">99 +</span></span>
-            <span><span class="k-badge-warning k-badge k-badge-pill">1</span></span>
-            <span><span class="k-badge-warning k-badge k-badge-pill"></span></span>
-            <span><span class="k-badge-warning k-badge">Updated</span></span>
-            <span><span class="k-badge-warning k-badge"></span></span>
+        <span>Tertiary</span>
+        <span><span class="k-badge k-badge-tertiary">Rectange</span></span>
+        <span><span class="k-badge k-badge-tertiary"></span></span>
+        <span><span class="k-badge k-badge-tertiary k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-tertiary k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-tertiary k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-tertiary k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-tertiary k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-tertiary k-badge-dot"></span></span>
 
-            <span><span class="k-badge-warning k-badge k-badge-pill k-badge-outline">99 +</span></span>
-            <span><span class="k-badge-warning k-badge k-badge-pill k-badge-outline">1</span></span>
-            <span><span class="k-badge-warning k-badge k-badge-pill k-badge-outline"></span></span>
-            <span><span class="k-badge-warning k-badge k-badge-outline">Updated</span></span>
-            <span><span class="k-badge-warning k-badge k-badge-outline"></span></span>
-        </section>
+        <span>^ outline</span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-tertiary">Rectange</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-tertiary"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-tertiary k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-tertiary k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-tertiary k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-tertiary k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-tertiary k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-tertiary k-badge-dot"></span></span>
 
-        <section>
-            <span class="states"><span>Error</span></span>
-            <span><span class="k-badge-error k-badge k-badge-pill">99 +</span></span>
-            <span><span class="k-badge-error k-badge k-badge-pill">1</span></span>
-            <span><span class="k-badge-error k-badge k-badge-pill"></span></span>
-            <span><span class="k-badge-error k-badge">Updated</span></span>
-            <span><span class="k-badge-error k-badge"></span></span>
 
-            <span><span class="k-badge-error k-badge k-badge-pill k-badge-outline">99 +</span></span>
-            <span><span class="k-badge-error k-badge k-badge-pill k-badge-outline">1</span></span>
-            <span><span class="k-badge-error k-badge k-badge-pill k-badge-outline"></span></span>
-            <span><span class="k-badge-error k-badge k-badge-outline">Updated</span></span>
-            <span><span class="k-badge-error k-badge k-badge-outline"></span></span>
-        </section>
+        <span>Info</span>
+        <span><span class="k-badge k-badge-info">Rectange</span></span>
+        <span><span class="k-badge k-badge-info"></span></span>
+        <span><span class="k-badge k-badge-info k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-info k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-info k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-info k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-info k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-info k-badge-dot"></span></span>
+
+        <span>^ outline</span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-info">Rectange</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-info"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-info k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-info k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-info k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-info k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-info k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-info k-badge-dot"></span></span>
+
+
+        <span>Success</span>
+        <span><span class="k-badge k-badge-success">Rectange</span></span>
+        <span><span class="k-badge k-badge-success"></span></span>
+        <span><span class="k-badge k-badge-success k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-success k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-success k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-success k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-success k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-success k-badge-dot"></span></span>
+
+        <span>^ outline</span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-success">Rectange</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-success"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-success k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-success k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-success k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-success k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-success k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-success k-badge-dot"></span></span>
+
+
+        <span>Warning</span>
+        <span><span class="k-badge k-badge-warning">Rectange</span></span>
+        <span><span class="k-badge k-badge-warning"></span></span>
+        <span><span class="k-badge k-badge-warning k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-warning k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-warning k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-warning k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-warning k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-warning k-badge-dot"></span></span>
+
+        <span>^ outline</span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-warning">Rectange</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-warning"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-warning k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-warning k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-warning k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-warning k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-warning k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-warning k-badge-dot"></span></span>
+
+
+        <span>Error</span>
+        <span><span class="k-badge k-badge-error">Rectange</span></span>
+        <span><span class="k-badge k-badge-error"></span></span>
+        <span><span class="k-badge k-badge-error k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-error k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-error k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-error k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-error k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-error k-badge-dot"></span></span>
+
+        <span>^ outline</span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-error">Rectange</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-error"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-error k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-error k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-error k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-error k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-error k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-error k-badge-dot"></span></span>
+
+
+        <span>Dark</span>
+        <span><span class="k-badge k-badge-dark">Rectange</span></span>
+        <span><span class="k-badge k-badge-dark"></span></span>
+        <span><span class="k-badge k-badge-dark k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-dark k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-dark k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-dark k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-dark k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-dark k-badge-dot"></span></span>
+
+        <span>^ outline</span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-dark">Rectange</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-dark"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-dark k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-dark k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-dark k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-dark k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-dark k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-dark k-badge-dot"></span></span>
+
+
+        <span>light</span>
+        <span><span class="k-badge k-badge-light">Rectange</span></span>
+        <span><span class="k-badge k-badge-light"></span></span>
+        <span><span class="k-badge k-badge-light k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-light k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-light k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-light k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-light k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-light k-badge-dot"></span></span>
+
+        <span>^ outline</span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-light">Rectange</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-light"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-light k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-light k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-light k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-light k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-light k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-light k-badge-dot"></span></span>
+
+
+        <span>Inverse</span>
+        <span><span class="k-badge k-badge-inverse">Rectange</span></span>
+        <span><span class="k-badge k-badge-inverse"></span></span>
+        <span><span class="k-badge k-badge-inverse k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-inverse k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-inverse k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-inverse k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-inverse k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-inverse k-badge-dot"></span></span>
+
+        <span>^ outline</span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-inverse">Rectange</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-inverse"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-inverse k-badge-rounded">Rounded</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-inverse k-badge-rounded"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-inverse k-badge-pill">Pill</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-inverse k-badge-pill"></span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-inverse k-badge-circle">99+</span></span>
+        <span><span class="k-badge k-badge-outline k-badge-outline-inverse k-badge-dot"></span></span>
 
     </div>
 

@@ -54,20 +54,20 @@ The following table lists the available variables for customizing the Default th
       <td>Border radius for all components.</td>
     </tr>
     <tr>
-      <td>$base-text</td>
-      <td>
-          <span class="color-preview" style="background-color: #656565"></span>
-          #656565
-      </td>
-      <td>The text color of the components' chrome area.</td>
-    </tr>
-    <tr>
       <td>$base-bg</td>
       <td>
           <span class="color-preview" style="background-color: #f6f6f6"></span>
           #f6f6f6
       </td>
       <td>The background of the components' chrome area.</td>
+    </tr>
+    <tr>
+      <td>$base-text</td>
+      <td>
+          <span class="color-preview" style="background-color: #656565"></span>
+          #656565
+      </td>
+      <td>The text color of the components' chrome area.</td>
     </tr>
     <tr>
       <td>$base-border</td>
@@ -84,20 +84,19 @@ The following table lists the available variables for customizing the Default th
       <td>The gradient background of the components' chrome area.</td>
     </tr>
     <tr>
-      <td>$hovered-text</td>
-      <td>
-          <span class="color-preview" style="background-color: #656565"></span>
-          #656565
-      </td>
-      <td>The text color of hovered items.</td>
-    </tr>
-    <tr>
       <td>$hovered-bg</td>
       <td>
           <span class="color-preview" style="background-color: #ededed"></span>
           #ededed
       </td>
       <td>The background of hovered items.</td>
+    </tr>
+    <tr>
+      <td>$hovered-text</td>
+      <td>
+          $base-text
+      </td>
+      <td>The text color of hovered items.</td>
     </tr>
     <tr>
       <td>$hovered-border</td>
@@ -378,6 +377,21 @@ The following table lists the available variables for customizing the Default th
       <td>The color used along with the secondary color denoted by $secondary.<br />Used to provide contrast between the background and foreground colors.</td>
     </tr>
     <tr>
+      <td>$tertiary</td>
+      <td>
+          <span class="color-preview" style="background-color: #03a9f4"></span>
+          #03a9f4
+      </td>
+      <td>The tertiary color of the theme.</td>
+    </tr>
+    <tr>
+      <td>$tertiary-contrast</td>
+      <td>
+          contrast-wcag( $tertiary )
+      </td>
+      <td>The color used along with the tertiary color denoted by $tertiary.<br />Used to provide contrast between the background and foreground colors.</td>
+    </tr>
+    <tr>
       <td>$info</td>
       <td>
           <span class="color-preview" style="background-color: #0058e9"></span>
@@ -408,6 +422,29 @@ The following table lists the available variables for customizing the Default th
           #f31700
       </td>
       <td>The color for error messages and states.</td>
+    </tr>
+    <tr>
+      <td>$dark</td>
+      <td>
+          <span class="color-preview" style="background-color: #404040"></span>
+          #404040
+      </td>
+      <td>The dark color of the theme.</td>
+    </tr>
+    <tr>
+      <td>$light</td>
+      <td>
+          <span class="color-preview" style="background-color: #ebebeb"></span>
+          #ebebeb
+      </td>
+      <td>The light color of the theme.</td>
+    </tr>
+    <tr>
+      <td>$inverse</td>
+      <td>
+          if( $is-dark-theme, $light, $dark )
+      </td>
+      <td>Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark</td>
     </tr>
   </tbody>
 </table>

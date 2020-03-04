@@ -9,6 +9,7 @@ $enable-gradients: false !default;
 $enable-transitions: true !default;
 
 $use-background-clip: false !default;
+$use-calc-badge-size: true !default;
 $use-picker-select-width: false !default;
 
 
@@ -21,10 +22,12 @@ $spacer-y: $spacer !default;
 // Apply material theme, as early as possible
 $primary-palette-name: indigo !default;
 $secondary-palette-name: pink !default;
+$tertiary-palette-name: teal !default;
 $theme-type: light !default; // light or dark
 
 $primary-palette: material-palette($primary-palette-name) !default;
 $secondary-palette: material-palette($secondary-palette-name, A200, A100, A400) !default;
+$tertiary-palette: material-palette($tertiary-palette-name) !default;
 
 $theme: material-theme(
     $primary-palette,
@@ -111,49 +114,72 @@ $is-dark-theme: map-get($theme, is-dark);
 /// The color that focuses the user attention.
 /// Used for primary buttons and for elements of primary importance across the theme.
 /// @group color-system
-$primary: material-color($primary-palette, default) !default;
-$primary-lighter: material-color($primary-palette, lighter) !default;
-$primary-darker: material-color($primary-palette, darker) !default;
+$primary: material-color( $primary-palette, default ) !default;
+$primary-lighter: material-color( $primary-palette, lighter ) !default;
+$primary-darker: material-color( $primary-palette, darker ) !default;
 
 /// The color used along with the primary color denoted by $primary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
-$primary-contrast: material-color($primary-palette, default-contrast) !default;
+$primary-contrast: material-color( $primary-palette, default-contrast ) !default;
 
 /// The secondary color of the theme.
 /// @group color-system
-$secondary: material-color($secondary-palette, default) !default;
-$secondary-lighter: material-color($secondary-palette, lighter) !default;
-$secondary-darker: material-color($secondary-palette, darker) !default;
+$secondary: material-color( $secondary-palette, default ) !default;
+$secondary-lighter: material-color( $secondary-palette, lighter ) !default;
+$secondary-darker: material-color( $secondary-palette, darker ) !default;
 
 /// The color used along with the secondary color denoted by $secondary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
-$secondary-contrast: material-color($secondary-palette, default-contrast) !default;
+$secondary-contrast: material-color( $secondary-palette, default-contrast ) !default;
+
+/// The tertiary color of the theme.
+/// @group color-system
+$tertiary: material-color($tertiary-palette, default) !default;
+$tertiary-lighter: material-color($tertiary-palette, lighter) !default;
+$tertiary-darker: material-color($tertiary-palette, darker) !default;
+
+/// The color used along with the tertiary color denoted by $tertiary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+$tertiary-contrast: material-color($tertiary-palette, default-contrast) !default;
 
 /// The color for informational messages and states.
 /// @group color-system
 $info: #0058e9 !default;
-$info-lighter: tint($info, 2) !default;
-$info-darker: shade($info, 2) !default;
+$info-lighter: tint( $info, 2 ) !default;
+$info-darker: shade( $info, 2 ) !default;
 
 /// The color for success messages and states.
 /// @group color-system
 $success: #37b400 !default;
-$success-lighter: tint($success, 2) !default;
-$success-darker: shade($success, 2) !default;
+$success-lighter: tint( $success, 2 ) !default;
+$success-darker: shade( $success, 2 ) !default;
 
 /// The color for warning messages and states.
 /// @group color-system
 $warning: #ffc000 !default;
-$warning-lighter: tint($warning, 2) !default;
-$warning-darker: shade($warning, 2) !default;
+$warning-lighter: tint( $warning, 2 ) !default;
+$warning-darker: shade( $warning, 2 ) !default;
 
 /// The color for error messages and states.
 /// @group color-system
 $error: #f31700 !default;
-$error-lighter: tint($error, 2) !default;
-$error-darker: shade($error, 2) !default;
+$error-lighter: tint( $error, 2 ) !default;
+$error-darker: shade( $error, 2 ) !default;
+
+/// The dark color of the theme.
+/// @group color-system
+$dark: get-base-hue( grey, 800 ) !default;
+
+/// The light color of the theme.
+/// @group color-system
+$light: get-base-hue( grey, 100 ) !default;
+
+/// Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark
+/// @group color-system
+$inverse: if( $is-dark-theme, $light, $dark ) !default;
 
 
 // Color constants
@@ -341,21 +367,49 @@ $badge-padding-x: $padding-y !default;
 $badge-padding-y: $badge-padding-x !default;
 $badge-border-width: 1px !default;
 $badge-border-radius: $border-radius !default;
-
-$badge-font-size: 75% !default;
+$badge-font-size: $font-size-sm !default;
 $badge-line-height: 1 !default;
 
-$badge-size: calc( #{$badge-line-height * 1em} + #{$badge-padding-y * 2} + #{$badge-border-width * 2} ) !default;
-$badge-overlay-x: calc( #{$badge-size} / 2) !default;
-$badge-overlay-y: $badge-overlay-x !default;
+$badge-padding-x-sm: ( $badge-padding-x / 2 ) !default;
+$badge-padding-y-sm: ( $badge-padding-y / 2 ) !default;
+$badge-border-width-sm: $badge-border-width !default;
+$badge-border-radius-sm: $border-radius-sm !default;
+$badge-font-size-sm: $font-size-xs !default;
+$badge-line-height-sm: 1 !default;
 
-$badge-secondary-bg: true-mix( $base-text, $base-bg, 12%) !default;
-$badge-secondary-text: $base-text !default;
-$badge-secondary-border: $badge-secondary-bg !default;
+$badge-padding-x-lg: ( $badge-padding-x * 1.5 ) !default;
+$badge-padding-y-lg: ( $badge-padding-y * 1.5 ) !default;
+$badge-border-width-lg: $badge-border-width !default;
+$badge-border-radius-lg: $border-radius-lg !default;
+$badge-font-size-lg: $font-size !default;
+$badge-line-height-lg: 1 !default;
+
+$badge-fixed-size: 22px !default;
+$badge-calc-size: calc( #{$badge-line-height * 1em} + #{$badge-padding-y * 2} + #{$badge-border-width * 2} ) !default;
+$badge-size: if( $use-calc-badge-size, $badge-calc-size, $badge-fixed-size );
+$badge-dot-size: 10px;
+
+$badge-fixed-size-sm: 16px !default;
+$badge-calc-size-sm: calc( #{$badge-line-height-sm * 1em} + #{$badge-padding-y-sm * 2} + #{$badge-border-width-sm * 2} ) !default;
+$badge-size-sm: if( $use-calc-badge-size, $badge-calc-size-sm, $badge-fixed-size-sm );
+$badge-dot-size-sm: 6px;
+
+$badge-fixed-size-lg: 28px !default;
+$badge-calc-size-lg: calc( #{$badge-line-height-lg * 1em} + #{$badge-padding-y-lg * 2} + #{$badge-border-width-lg * 2} ) !default;
+$badge-size-lg: if( $use-calc-badge-size, $badge-calc-size-lg, $badge-fixed-size-lg );
+$badge-dot-size-lg: 12px;
 
 $badge-primary-bg: $primary !default;
 $badge-primary-text: contrast-wcag( $badge-primary-bg ) !default;
 $badge-primary-border: $badge-primary-bg !default;
+
+$badge-secondary-bg: $secondary !default;
+$badge-secondary-text: contrast-wcag( $badge-secondary-bg ) !default;
+$badge-secondary-border: $badge-secondary-bg !default;
+
+$badge-tertiary-bg: $tertiary !default;
+$badge-tertiary-text: contrast-wcag( $badge-tertiary-bg ) !default;
+$badge-tertiary-border: $badge-tertiary-bg !default;
 
 $badge-info-bg: $info !default;
 $badge-info-text: contrast-wcag( $badge-info-bg ) !default;
@@ -372,6 +426,18 @@ $badge-warning-border: $badge-warning-bg !default;
 $badge-error-bg: $error !default;
 $badge-error-text: contrast-wcag( $badge-error-bg ) !default;
 $badge-error-border: $badge-error-bg !default;
+
+$badge-dark-bg: $dark !default;
+$badge-dark-text: contrast-wcag( $badge-dark-bg ) !default;
+$badge-dark-border: $badge-dark-bg !default;
+
+$badge-light-bg: $light !default;
+$badge-light-text: contrast-wcag( $badge-light-bg ) !default;
+$badge-light-border: $badge-light-bg !default;
+
+$badge-inverse-bg: $inverse !default;
+$badge-inverse-text: contrast-wcag( $badge-inverse-bg ) !default;
+$badge-inverse-border: $badge-inverse-bg !default;
 
 
 // Chip
@@ -1557,15 +1623,17 @@ $upload-bg: $component-bg !default;
 $upload-text: $component-text !default;
 $upload-border: $component-border !default;
 
-$upload-dropzone-padding-x: 8px !default;
-$upload-dropzone-padding-y: 8px !default;
+$upload-dropzone-padding-x: ($cell-padding * 2) !default;
+$upload-dropzone-padding-y: ($cell-padding * 2) !default;
 $upload-dropzone-spacing: $upload-dropzone-padding-x !default;
 $upload-dropzone-bg: $upload-bg !default;
 $upload-dropzone-text: $upload-text !default;
 $upload-dropzone-border: $upload-border !default;
 
-$upload-item-padding-x: $cell-padding-x !default;
-$upload-item-padding-y: $cell-padding-y !default;
+$upload-item-padding-x: ($cell-padding * 2) !default;
+$upload-item-padding-y: ($cell-padding * 2) !default;
+
+$upload-icon-spacing: $upload-dropzone-padding-x / 2 !default;
 
 $upload-item-image-width: 24px !default;
 $upload-item-image-height: 34px !default;
