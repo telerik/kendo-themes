@@ -2,6 +2,7 @@
 
     // Spreadsheet
     .k-spreadsheet {
+        @include use-background-clip();
         width: 800px;
         height: 600px;
         display: flex;
@@ -194,6 +195,10 @@
         .k-item {
             padding: $list-item-padding-y $list-item-padding-x;
         }
+    }
+    .k-syntax-func,
+    .k-syntax-startexp {
+        font-weight: bold;
     }
 
 
@@ -442,9 +447,6 @@
         white-space: pre;
         overflow: hidden;
     }
-    .k-spreadsheet-merged-cell {
-        background-color: $panel-bg;
-    }
     .k-spreadsheet-merged-cells-wrapers {
         position: relative;
     }
@@ -511,6 +513,13 @@
         right: 0;
         z-index: 100;
         cursor: crosshair;
+    }
+
+    .k-spreadsheet .k-selection-full,
+    .k-spreadsheet .k-selection-partial {
+        &::after {
+            display: none;
+        }
     }
 
 
@@ -879,6 +888,7 @@
             height: $spreadsheet-drawing-handle-height;
             border-style: $spreadsheet-drawing-handle-border-style;
             border-width: $spreadsheet-drawing-handle-border-width;
+            border-radius: $spreadsheet-drawing-handle-border-radius;
             position: absolute;
             transform: translate(-50%, -50%);
 
@@ -892,6 +902,15 @@
             &.W { left: 0; top: 50%; cursor: ew-resize; }
             &.NW { left: 0; top: 0; cursor: nwse-resize; }
             // sass-lint:enable class-name-format, one-declaration-per-line
+        }
+
+        .k-spreadsheet-insert-image-dialog {
+            .k-spreadsheet-has-image {
+                &:hover,
+                &.k-state-hovered {
+                    border-radius: $spreadsheet-insert-image-dialog-preview-overlay-border-radius;
+                }
+            }
         }
     }
 

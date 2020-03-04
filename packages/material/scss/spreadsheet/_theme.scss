@@ -26,7 +26,12 @@
 
     // Spreadsheet footer
     .k-spreadsheet-sheets-bar {
-        @include appearance( toolbar );
+        @include fill(
+            $toolbar-text,
+            $toolbar-bg,
+            inherit,
+            $toolbar-gradient
+        );
 
         .k-tabstrip-items .k-item.k-state-active {
             border-color: $secondary;
@@ -50,17 +55,21 @@
     .k-spreadsheet-formula-list {}
     .k-syntax-ref { color: #ff8822; }
     .k-syntax-num { color: #0099ff; }
-    .k-syntax-func { font-weight: bold; }
     .k-syntax-str { color: #38b714; }
     .k-syntax-error { color: red; }
     .k-syntax-bool { color: #a9169c; }
-    .k-syntax-startexp { font-weight: bold; }
     .k-syntax-paren-match { background-color: #caf200; }
 
 
     // Cell editor
     .k-spreadsheet-cell-editor {
         color: $panel-text;
+        background-color: $panel-bg;
+    }
+
+
+    // Cells
+    .k-spreadsheet-merged-cell {
         background-color: $panel-bg;
     }
 
@@ -140,15 +149,31 @@
         border-color: $primary;
     }
     .k-spreadsheet-filter {
-        @include appearance( button );
+        @include fill(
+            $button-text,
+            $button-bg,
+            $button-border,
+            $button-gradient
+        );
         box-shadow: inset 0 0 0 1px $button-border;
 
         &.k-state-active {
-            @include appearance( pressed-button );
+            @include fill(
+                $button-pressed-text,
+                $button-pressed-bg,
+                $button-pressed-border,
+                $button-pressed-gradient
+            );
+            @include box-shadow( $button-pressed-shadow );
         }
 
         &:hover {
-            @include appearance( hovered-button );
+            @include fill(
+                $button-hovered-text,
+                $button-hovered-bg,
+                $button-hovered-border,
+                $button-hovered-gradient
+            );
         }
     }
 
@@ -157,7 +182,11 @@
     .k-spreadsheet-filter-menu {
 
         .k-spreadsheet-value-treeview-wrapper {
-            @include appearance( panel );
+            @include fill(
+                $panel-text,
+                $panel-bg,
+                $panel-border
+            );
         }
     }
 
@@ -175,7 +204,6 @@
             &:hover,
             &.k-state-hovered {
                 box-shadow: $spreadsheet-insert-image-dialog-preview-overlay-shadow;
-                border-radius: $spreadsheet-insert-image-dialog-preview-overlay-border-radius;
             }
 
             &:hover div,
@@ -193,7 +221,6 @@
         .k-spreadsheet-drawing-handle {
             border-color: $spreadsheet-drawing-handle-border-color;
             background-color: $spreadsheet-drawing-handle-bg;
-            border-radius: $spreadsheet-drawing-handle-border-radius;
         }
     }
 
@@ -215,12 +242,18 @@
 
         .k-button:hover,
         .k-button.k-state-hover {
-            @include appearance( hovered-list-item );
+            @include fill(
+                $list-item-hovered-text,
+                $list-item-hovered-bg
+            );
         }
         .k-button:active,
         .k-button.k-state-active,
         .k-button.k-state-selected {
-            @include appearance( selected-list-item );
+            @include fill(
+                $list-item-selected-text,
+                $list-item-selected-bg
+            );
         }
 
     }
