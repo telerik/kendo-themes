@@ -1,1 +1,16 @@
 @import "~@progress/kendo-theme-default/scss/spreadsheet/_layout.scss";
+
+@include exports("spreadsheet/filter/layout/bootstrap") {
+
+    // Filter menu
+    .k-spreadsheet-filter-menu {
+        > .k-menu,
+        > .k-menu:not(.k-context-menu) {
+            background: none;
+            color: inherit;
+            font-weight: inherit;
+            font-size: inherit;
+        }
+    }
+
+}

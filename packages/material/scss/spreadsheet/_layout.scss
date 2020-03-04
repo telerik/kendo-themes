@@ -35,6 +35,15 @@
 
     }
 
+
+    // Selection
+    .k-spreadsheet .k-selection-full,
+    .k-spreadsheet .k-selection-partial {
+        &::after {
+            display: block;
+        }
+    }
+
 }
 
 
