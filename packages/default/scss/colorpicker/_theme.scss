@@ -10,7 +10,6 @@
                 $colorpicker-select-border,
                 $colorpicker-select-gradient
             );
-            @include use-background-clip();
 
             &:focus {
 
@@ -25,11 +24,6 @@
                 color: $error;
                 border-color: $invalid-border;
             }
-        }
-        .k-select {
-            padding: 0;
-            width: $button-inner-calc-size;
-            border-width: 0;
         }
 
         // Hovered state
@@ -48,7 +42,6 @@
 
         .k-tool-icon:hover,
         .k-tool-icon.k-state-hover {
-            cursor: pointer;
             border-color: rgba(0, 0, 0, .08);
         }
 
@@ -70,6 +63,13 @@
 
     }
 
+}
+
+
+
+
+@include exports( "flatcolorpicker/theme" ) {
+
     .k-flatcolorpicker {
         @include appearance( panel );
 
@@ -79,6 +79,94 @@
                 $colorpicker-bg,
                 $colorpicker-border
             );
+        }
+
+        .k-hsv-gradient {
+            background: linear-gradient( to bottom, $gradient-transparent-to-black ), linear-gradient( to right, $gradient-white-to-transparent );
+        }
+
+
+        // Sliders
+        .k-slider {
+
+            // Draghandle
+            .k-draghandle {
+                box-shadow: 0 1px 4px rgba(0, 0, 0, .9);
+                // sass-lint:enable no-color-literals no-color-keywords
+                background-color: transparent;
+            }
+            .k-draghandle:hover,
+            .k-draghandle:focus {
+                // sass-lint:disable no-color-literals no-color-keywords
+                border-color: white;
+                box-shadow: 0 1px 4px black;
+                // sass-lint:enable no-color-literals no-color-keywords
+                background-color: transparent;
+            }
+
+        }
+
+
+        // Slider type
+        .k-hue-slider {
+            &.k-slider-horizontal {
+                .k-slider-track {
+                    background: linear-gradient( to right, $gradient-rainbow );
+                }
+            }
+            &.k-slider-vertical {
+                .k-slider-track {
+                    background: linear-gradient( to top, $gradient-rainbow );
+                }
+            }
+        }
+        .k-alpha-slider {
+            .k-slider-track {
+                background: url(map-get($data-uris, "alpha-slider-bgr.png")) center;
+            }
+        }
+
+
+        .k-draghandle {
+            border-color: rgba(255, 255, 255, .8);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .21);
+        }
+
+    }
+
+
+    .k-rtl,
+    [dir="rtl"] {
+        .k-flatcolorpicker {
+
+            .k-hue-slider.k-slider-horizontal .k-slider-track {
+                background: linear-gradient( to left, $gradient-rainbow );
+            }
+
+            .k-alpha-slider .k-slider-track {
+                background: url(map-get($data-uris, "alpha-slider-bgr-reversed.png")) center;
+            }
+
+        }
+    }
+
+}
+
+
+
+
+@include exports( "colorpalette/theme" ) {
+
+    .k-colorpalette {
+        .k-item:hover,
+        .k-item.k-state-hover {
+            box-shadow: $colorpalette-hovered-shadow;
+        }
+        .k-item.k-state-selected,
+        .k-item.k-state-selected:hover,
+        .k-item.k-state-focused,
+        .k-item:focus {
+            box-shadow: $colorpalette-focused-shadow;
         }
     }
 

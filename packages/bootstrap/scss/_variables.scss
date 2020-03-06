@@ -970,6 +970,9 @@ $colorpicker-select-focused-gradient: $button-pressed-gradient !default;
 $colorpicker-select-pressed-shadow: $button-pressed-shadow !default;
 $colorpicker-select-focused-shadow: $button-focused-shadow !default;
 
+$colorpalette-hovered-shadow: 0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .8 ) !default;
+$colorpalette-focused-shadow: 0 1px 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, 1 ) !default;
+
 
 // Comboboxes
 $combobox-select-padding-x: $button-padding-y !default;
