@@ -3,6 +3,43 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.13.0"></a>
+# 4.13.0 (2020-03-06)
+
+
+### Bug Fixes
+
+* **badge:** conditionally set badge size to fixed or calculated ([39a7128](https://github.com/telerik/kendo-themes/commit/39a7128))
+* **badge:** rtl styling for badge overlay was not propery applied ([94ccc4e](https://github.com/telerik/kendo-themes/commit/94ccc4e))
+* **badge:** update badge styles to match design ([09bc84b](https://github.com/telerik/kendo-themes/commit/09bc84b))
+* **badge:** use only translate styles for badge position ([ea051dc](https://github.com/telerik/kendo-themes/commit/ea051dc))
+* **chat:** prevent chat send message button from shrinking ([8434b89](https://github.com/telerik/kendo-themes/commit/8434b89))
+* **contextmenu:** remove extra border ([25e339d](https://github.com/telerik/kendo-themes/commit/25e339d))
+* **gantt:** use fill mixin ([1072826](https://github.com/telerik/kendo-themes/commit/1072826))
+* **grid:** use fill mixin ([937e52c](https://github.com/telerik/kendo-themes/commit/937e52c))
+* **listbox:** use fill mixin ([61e53c3](https://github.com/telerik/kendo-themes/commit/61e53c3))
+* **menu:** change menu items display ([c5218c7](https://github.com/telerik/kendo-themes/commit/c5218c7))
+* **pivotgrid:** use fill mixin ([ae9276a](https://github.com/telerik/kendo-themes/commit/ae9276a))
+* **popup:** use fill mixin ([02a73a0](https://github.com/telerik/kendo-themes/commit/02a73a0))
+* **scheduler:** use fill mixin ([4d9926c](https://github.com/telerik/kendo-themes/commit/4d9926c))
+* **spreadsheet:** use fill mixin ([8c396b2](https://github.com/telerik/kendo-themes/commit/8c396b2))
+* adaptive Grid Pager current-page line-height ([d7fbcfd](https://github.com/telerik/kendo-themes/commit/d7fbcfd))
+
+
+### Features
+
+* **badge:** add badge sizes ([c0a983b](https://github.com/telerik/kendo-themes/commit/c0a983b))
+* **badge:** add circle and dot shape for badge ([6c3ef98](https://github.com/telerik/kendo-themes/commit/6c3ef98))
+* **badge:** add styles for tertiary, dark, light and iverse badges ([82ad426](https://github.com/telerik/kendo-themes/commit/82ad426))
+* **color-system:** add tertiary, dark, light and inverse colors ([513b5ed](https://github.com/telerik/kendo-themes/commit/513b5ed))
+* **inputs:** add focused box-shadow in bootstrap ([feb7055](https://github.com/telerik/kendo-themes/commit/feb7055))
+* **pager:** use native select for responsive pager page selection ([59cf508](https://github.com/telerik/kendo-themes/commit/59cf508))
+* **styles:** allow adaptive rendering without height ([aa2afa3](https://github.com/telerik/kendo-themes/commit/aa2afa3))
+* **upload:** update styles to fit updated design ([0f47d17](https://github.com/telerik/kendo-themes/commit/0f47d17))
+
+
+
+
 <a name="4.12.2"></a>
 ## 4.12.2 (2020-02-14)
 

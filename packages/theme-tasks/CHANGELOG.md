@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.0"></a>
+# 0.5.0 (2020-03-06)
+
+
+### Bug Fixes
+
+* **docs-gen:** generate documentation synchronously ([6c58d57](https://github.com/telerik/kendo-themes/commit/6c58d57))
+
+
+### Features
+
+* **styles:** allow adaptive rendering without height ([aa2afa3](https://github.com/telerik/kendo-themes/commit/aa2afa3))
+
+
+
+
 <a name="0.4.5"></a>
 ## 0.4.5 (2020-02-14)
 
