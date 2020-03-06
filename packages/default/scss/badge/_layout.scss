@@ -41,6 +41,17 @@
     }
 
 
+    // Icon
+    .k-badge-icon {
+        max-width: 1em;
+        max-height: 1em;
+        font-size: inherit;
+    }
+    .k-badge-icon.k-svg-icon svg {
+        fill: currentColor;
+    }
+
+
     // Badge sizes
     .k-badge-sm {
         padding: $badge-padding-y-sm $badge-padding-x-sm;
