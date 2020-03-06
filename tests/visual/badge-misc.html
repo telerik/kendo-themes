@@ -10,8 +10,15 @@
         #test-area {
             grid-template-columns: repeat(6, 1fr);
         }
-        svg {
-            fill: currentColor;
+        .k-badge-container {
+            padding: 5px;
+            width: 80px;
+            min-height: 30px;
+            box-sizing: border-box;
+            background-color: skyblue;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
         }
     </style>
 </head>
@@ -70,6 +77,49 @@
         <span><span class="k-badge k-badge-lg k-badge-outline k-badge-outline-error k-badge-rounded k-badge-rounded-lg"><span class="k-badge-icon k-svg-icon"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" /></svg></span></span></span>
         <span><span class="k-badge k-badge-lg k-badge-outline k-badge-outline-error k-badge-pill k-badge-pill-lg"><span class="k-badge-icon k-svg-icon"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" /></svg></span></span></span>
         <span><span class="k-badge k-badge-lg k-badge-outline k-badge-outline-error k-badge-circle k-badge-circle-lg"><span class="k-badge-icon k-svg-icon"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" /></svg></span></span></span>
+
+
+        <span></span>
+        <span>Rectangle</span>
+        <span>Rounded</span>
+        <span>Pill</span>
+        <span>Circle</span>
+        <span>Dot</span>
+
+
+        <span>Inline</span>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-border-cutout">Rect</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-border-cutout k-badge-rounded">Round</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-border-cutout k-badge-pill">Pill</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-border-cutout k-badge-circle">99+</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-border-cutout k-badge-dot"></span>
+        </div>
+
+        <span>Edge</span>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-border-cutout k-badge-top-end">Rect</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-border-cutout k-badge-rounded k-badge-top-end">Round</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-border-cutout k-badge-pill k-badge-top-end">Pill</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-border-cutout k-badge-circle k-badge-top-end">99+</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-border-cutout k-badge-dot k-badge-top-end"></span>
+        </div>
 
     </div>
 
