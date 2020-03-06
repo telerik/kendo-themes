@@ -42,7 +42,7 @@
 
         .k-tool-icon:hover,
         .k-tool-icon.k-state-hover {
-            border-color: rgba(0, 0, 0, .08);
+            border-color: $colorpicker-tool-icon-hovered-border;
         }
 
         // Selected state
@@ -71,7 +71,11 @@
 @include exports( "flatcolorpicker/theme" ) {
 
     .k-flatcolorpicker {
-        @include appearance( panel );
+        @include fill(
+            $panel-text,
+            $panel-bg,
+            $panel-border
+        );
 
         .k-color-value {
             @include fill(
