@@ -109,7 +109,12 @@
 
             .k-time-list {
                 .k-item:hover {
-                    @include appearance( hovered-node );
+                    @include fill(
+                        $node-hovered-text,
+                        $node-hovered-bg,
+                        $node-hovered-border,
+                        $node-hovered-gradient
+                    );
                 }
 
                 &::before,
@@ -128,6 +133,16 @@
     .k-time-highlight {
         background-color: $component-bg;
         border-color: $component-border;
+    }
+
+    .k-datetime-container {
+        .k-date-tab {
+
+            .k-datetime-buttongroup,
+            .k-datetime-selector {
+                background-color: $component-bg;
+            }
+        }
     }
 }
 
