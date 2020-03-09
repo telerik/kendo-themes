@@ -1,4 +1,6 @@
-@include exports("datetime/theme") {
+@import "~@progress/kendo-theme-default/scss/datetime/_theme.scss";
+
+@include exports("datetime/theme/bootstrap") {
 
     // Shared
     .k-datepicker,
@@ -7,273 +9,34 @@
 
         // Normal state
         .k-picker-wrap {
-            @include fill(
-                $datetime-text,
-                $datetime-bg,
-                $datetime-border
-            );
-            transition: $transition;
-        }
-        .k-select {
-            @include fill(
-                $datetime-select-text,
-                $datetime-select-bg,
-                $datetime-select-border,
-                $datetime-select-gradient
-            );
-            transition: $transition;
-        }
 
-        // Hovered state
-        .k-state-hover {
-            @include fill(
-                $datetime-hovered-text,
-                $datetime-hovered-bg,
-                $datetime-hovered-border
-            );
-
-            .k-select {
-                @include fill(
-                    $datetime-select-hovered-text,
-                    $datetime-select-hovered-bg,
-                    $datetime-select-hovered-border,
-                    $datetime-select-hovered-gradient
-                );
-            }
-        }
-
-        // Focused state
-        .k-state-focused {
-            @include fill(
-                $datetime-focused-text,
-                $datetime-focused-bg,
-                $datetime-focused-border
-            );
-            @include box-shadow($datetime-focused-shadow);
-        }
-
-        // Selected state
-        .k-state-active {
-            @include fill(
-                $datetime-focused-text,
-                $datetime-focused-bg,
-                $datetime-focused-border
-            );
-            @include box-shadow($datetime-focused-shadow);
-
-            .k-select {
-                @include fill(
-                    $datetime-select-focused-text,
-                    $datetime-select-focused-bg,
-                    $datetime-select-focused-border,
-                    $datetime-select-focused-gradient
-                );
-            }
-        }
-    }
-
-    // Common Invalid
-    .k-state-invalid,
-    .ng-invalid.ng-touched,
-    .ng-invalid.ng-dirty {
-        > .k-dateinput-wrap,
-        > .k-picker-wrap {
-            color: $forms-invalid-color;
-            border-color: $invalid-border;
-
-            &:focus,
-            &.k-state-focused {
-                @include box-shadow($invalid-shadow);
-            }
-        }
-    }
-
-    .k-dateinput {
-        &.k-state-invalid {
-            .k-textbox {
-                color: $error;
-                border-color: $error;
-
-                &:focus,
-                &.k-state-focused {
-                    @include box-shadow($invalid-shadow);
+            // Selected state
+            &.k-state-active {
+                .k-select {
+                    @include fill(
+                        $datetime-select-focused-text,
+                        $datetime-select-focused-bg,
+                        $datetime-select-focused-border,
+                        $datetime-select-focused-gradient
+                    );
                 }
             }
 
-            .k-i-warning {
-                color: $error;
-            }
-        }
-    }
-
-    // Datepicker
-    .k-datepicker,
-    .k-timepicker {
-        .k-i-warning {
-            color: $error;
         }
 
-        .k-state-invalid {
-            color: $error;
-            border-color: $error;
-
-            &:focus,
-            &.k-state-focused {
-                @include box-shadow($invalid-shadow);
-            }
-        }
-
-        .k-picker-wrap {
-            &.k-invalid {
-                color: $error;
-                border-color: $invalid-border;
-
-                &:focus,
-                &.k-state-focused {
-                    @include box-shadow($invalid-shadow);
-                }
-            }
-        }
-    }
-
-    // Timepicker
-    .k-timepicker {}
-
-    .k-timeselector {
-        border-color: inherit;
-    }
-
-    // Timepicker header
-    .k-time-header {
-        .k-time-now {
-            color: $link-text;
-
-            &:hover,
-            &:focus {
-                color: $link-hover-text;
-            }
-        }
     }
 
     // Timepicker content
-    .k-time-list-wrapper {
-        background-color: $popup-bg;
-
-        .k-title {
-            opacity: $disabled-opacity;
-            color: $header-text;
-        }
-
-        &.k-state-focused {
-            .k-title {
-                color: $time-list-title-focus;
-                opacity: 1;
-            }
-
-            &::before,
-            &::after {
-                background-color: $time-list-focused-bg;
-            }
-        }
-    }
-
     .k-time-list {
         &::before,
         &::after {
             $shadow-size: 3em;
             box-shadow: 0 0 $shadow-size ($shadow-size) $popup-bg;
         }
-
-        .k-item:hover {
-            color: $primary;
-        }
-    }
-
-    .k-time-container {
-        background: transparent;
-    }
-
-    .k-time-highlight {
-        background-color: $component-bg;
-        border-color: $time-list-highlight-color;
-    }
-
-    // Datetimepicker
-    .k-datetimepicker {
-        .k-i-warning {
-            color: $error;
-        }
-
-        .k-state-invalid {
-            color: $error;
-            border-color: $error;
-
-            &:focus,
-            &.k-state-focused {
-                @include box-shadow($invalid-shadow);
-            }
-        }
-
-        .k-picker-wrap {
-            &.k-invalid {
-                color: $error;
-                border-color: $invalid-border;
-
-                &:focus,
-                &.k-state-focused {
-                    @include box-shadow($invalid-shadow);
-                }
-            }
-        }
     }
 
     // Dateinput
     .k-dateinput {
-
-        // Normal state
-        .k-dateinput-wrap {
-            @include fill(
-                $datetime-text,
-                $datetime-bg,
-                $datetime-border
-            );
-        }
-        .k-select {
-            @include fill(
-                $datetime-select-text,
-                $datetime-select-bg,
-                $datetime-select-border,
-                $datetime-select-gradient
-            );
-        }
-
-        // Hovered state
-        .k-state-hover {
-            @include fill(
-                $datetime-hovered-text,
-                $datetime-hovered-bg,
-                $datetime-hovered-border
-            );
-
-            .k-select {
-                @include fill(
-                    $datetime-select-hovered-text,
-                    $datetime-select-hovered-bg,
-                    $datetime-select-hovered-border,
-                    $datetime-select-hovered-gradient
-                );
-            }
-        }
-
-        // Focused state
-        .k-state-focused {
-            @include fill(
-                $datetime-focused-text,
-                $datetime-focused-bg,
-                $datetime-focused-border
-            );
-            @include box-shadow($datetime-focused-shadow);
-        }
 
         // Selected state
         .k-link.k-state-selected {
@@ -286,4 +49,5 @@
         }
 
     }
+
 }

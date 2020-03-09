@@ -8,6 +8,11 @@
         .k-select {
             width: auto;
         }
+
+        .k-picker-wrap,
+        .k-select {
+            transition: $transition;
+        }
     }
 
     .k-datepicker,
@@ -53,13 +58,6 @@
         .k-title {
             z-index: 12;
             font-size: $font-size-xs;
-        }
-
-        &.k-state-focused {
-            &::before,
-            &::after {
-                border-width: 0;
-            }
         }
     }
 
