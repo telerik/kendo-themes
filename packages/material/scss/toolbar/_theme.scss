@@ -3,8 +3,6 @@
 @include exports("toolbar/theme/material") {
 
     .k-toolbar {
-        @include appearance( toolbar );
-
 
         .k-dropdown-button:not(.k-primary),
         .k-split-button:not(.k-primary),
@@ -21,6 +19,9 @@
 
         // Split button
         .k-split-button {
+            .k-icon {
+                opacity: $icon-opacity;
+            }
 
             // States
             &:hover {
@@ -97,11 +98,19 @@
         .k-picker-wrap,
         .k-dropdown-wrap {
             color: $button-text;
+
+            .k-select {
+                opacity: $icon-opacity;
+            }
         }
 
         .k-dropdown,
         .k-combobox {
             .k-dropdown-wrap {
+                .k-select {
+                    opacity: $icon-opacity;
+                }
+
                 // Hover
                 &:hover,
                 &.k-state-hover {
@@ -116,6 +125,14 @@
                     .k-select {
                         opacity: $icon-opacity;
                     }
+                }
+            }
+        }
+
+        .k-colorpicker {
+            .k-picker-wrap {
+                .k-select {
+                    opacity: $icon-opacity;
                 }
             }
         }

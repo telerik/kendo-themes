@@ -5,6 +5,7 @@ const path = require("path");
 const cp = require("child_process");
 const glob = require("glob");
 const gulp = require("gulp");
+const PluginError = require("plugin-error");
 const logger = require("gulplog");
 const colors = require("ansi-colors");
 const mime = require("mime");
@@ -81,7 +82,7 @@ function getArg(key) {
     return (index < 0) ? null : (!next || next[0] === "-") ? true : next; // eslint-disable-line no-nested-ternary
 }
 function _info(msg, ...args) { return logger.info(colors.gray(msg), ...args); }
-// function _error(msg, ...args) { return logger.info(colors.red(msg), ...args); }
+function _error(msg, ...args) { return logger.error(colors.gray(msg), ...args); }
 const _em = colors.magentaBright;
 
 
@@ -94,7 +95,18 @@ function build(fileGlob = paths.sass.src, dest = paths.sass.dist, options = sass
 
             return data;
         })
-        .pipe(sass.sync(options).on("error", sass.logError))
+        .pipe(sass.sync(options).on("error", function(error) {
+            // error.message
+            // error.formatted
+            // error.messageFormatted
+            // error.messageOriginal
+            _info();
+            _error(`Error: ${colors.red(error.messageOriginal)}`);
+            _info(`File: ${error.file}:${error.line}:${error.column}`);
+            _info();
+
+            throw new PluginError(error.plugin, error.messageFormatted);
+        }))
         .pipe(postcss(postcssPlugins))
         .pipe(gulp.dest(paths.sass.dist));
 }

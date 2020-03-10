@@ -1,7 +1,12 @@
-@include exports( "colorpicker/theme" ) {
+@import "~@progress/kendo-theme-default/scss/colorpicker/_theme.scss";
+
+@include exports( "colorpicker/theme/material" ) {
 
     .k-colorpicker {
-        background-color: transparent;
+
+        .k-selected-color {
+            border-color: rgba( 0, 0, 0, .08 );
+        }
 
         .k-tool-icon {
             color: rgba(0, 0, 0, .42);
@@ -9,8 +14,14 @@
 
         .k-tool-icon:hover,
         .k-tool-icon.k-state-hover {
-            cursor: pointer;
             color: rgba(0, 0, 0, .87);
+            background-color: transparent;
+        }
+
+        .k-select:hover,
+        .k-select.k-state-hover {
+            border-color: transparent;
+            background-color: transparent;
         }
 
         .k-picker-wrap {

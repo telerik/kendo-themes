@@ -2,8 +2,12 @@
 
     // Theme
     .k-toolbar {
-        @include appearance( toolbar );
-        @include use-background-clip();
+        @include fill(
+            $toolbar-text,
+            $toolbar-bg,
+            $toolbar-border,
+            $toolbar-gradient
+        );
 
 
         // Overflow anchor

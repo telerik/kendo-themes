@@ -42,10 +42,6 @@
                 }
             }
 
-            .k-icon {
-                opacity: $icon-opacity;
-            }
-
             // Expanded state
             &.k-state-border-down {
                 .k-i-arrow-60-down {
@@ -76,7 +72,6 @@
 
             .k-select {
                 padding: $button-padding-x-sm;
-                opacity: $icon-opacity;
             }
         }
 
@@ -92,7 +87,6 @@
 
                 .k-select {
                     padding: $button-padding-x-sm;
-                    opacity: $icon-opacity;
                 }
             }
         }
@@ -108,7 +102,6 @@
 
                 .k-select {
                     padding: $button-padding-x-sm;
-                    opacity: $icon-opacity;
                 }
             }
 
