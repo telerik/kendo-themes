@@ -35,6 +35,18 @@
             }
         }
 
+        a.k-tool,
+        .k-picker-wrap,
+        .k-dropdown-wrap {
+            @extend .k-button-flat;
+            @include border-radius( 0 );
+
+            &::before {
+                @extend .k-button-overlay;
+                display: block;
+            }
+        }
+
         .k-dropdown {
             .k-dropdown-wrap {
                 border-width: 0;
@@ -68,12 +80,28 @@
                 margin: 0 0 12px;
             }
         }
+
+        // Overflow anchor
+        .k-overflow-anchor {
+            padding: $toolbar-padding-y;
+            width: $toolbar-inner-calc-size;
+            height: $toolbar-inner-calc-size;
+        }
     }
 
     .k-overflow-container {
 
         .k-button-group {
             box-shadow: none;
+        }
+    }
+
+    // Insert table
+    .k-ct-popup {
+        line-height: normal;
+
+        .k-status {
+            line-height: $line-height;
         }
     }
 }
@@ -92,7 +120,7 @@
         }
 
         .k-edit-label {
-            padding: 0;
+            padding: calc( #{$padding-y} - #{$input-border-width} ) 0;
             margin: 0 0 -.5em;
             width: auto;
             font-size: $font-size-sm;
