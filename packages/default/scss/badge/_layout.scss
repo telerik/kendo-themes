@@ -1,7 +1,6 @@
 @include exports( "badge/layout" ) {
 
     .k-badge {
-        margin: 0 0 0 ($spacer / 2);
         padding: $badge-padding-y $badge-padding-x;
         border-width: $badge-border-width;
         border-style: solid;
@@ -19,13 +18,6 @@
         vertical-align: middle;
         overflow: hidden;
         text-overflow: ellipsis;
-
-        // RTL
-        .k-rtl &,
-        &[dir="rtl"],
-        [dir="rtl"] & {
-            margin: 0 ($spacer / 2) 0 0;
-        }
     }
     .k-badge > * {
         color: inherit;
@@ -46,6 +38,17 @@
     a.k-badge:hover,
     .k-badge > a:hover {
         text-decoration: underline;
+    }
+
+
+    // Icon
+    .k-badge-icon {
+        max-width: 1em;
+        max-height: 1em;
+        font-size: inherit;
+    }
+    .k-badge-icon.k-svg-icon svg {
+        fill: currentColor;
     }
 
 
@@ -111,32 +114,90 @@
     }
 
 
-    // Badge overlay
-    .k-badge-overlay {
+    // Badge position
+    .k-badge-container {
         position: relative;
         overflow: visible;
+    }
+    @each $placement, $translate in ("inside": null, "edge": 50, "outside": 100) {
+        $infix: if( $placement == "edge", "", "-#{$placement}");
 
-        .k-badge {
-            margin: 0;
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 9999;
-            transform: translate(50%, -50%);
-        }
-
-
-        // RTL
-        &.k-rtl,
-        .k-rtl &,
-        &[dir="rtl"],
-        [dir="rtl"] & {
-            .k-badge {
-                right: auto;
+        .k-badge#{$infix} {
+            &-top-start {
+                position: absolute;
+                z-index: 9999;
+                top: 0;
                 left: 0;
-                transform: translate(-50%, -50%);
+                @if $translate {
+                    transform: translate( -1% * $translate, -1% * $translate );
+                }
+            }
+            &-top-end {
+                position: absolute;
+                z-index: 9999;
+                top: 0;
+                right: 0;
+                @if $translate {
+                    transform: translate( 1% * $translate, -1% * $translate );
+                }
+            }
+            &-bottom-start {
+                position: absolute;
+                z-index: 9999;
+                bottom: 0;
+                left: 0;
+                @if $translate {
+                    transform: translate( -1% * $translate, 1% * $translate );
+                }
+            }
+            &-bottom-end {
+                position: absolute;
+                z-index: 9999;
+                bottom: 0;
+                right: 0;
+                @if $translate {
+                    transform: translate( 1% * $translate, 1% * $translate );
+                }
             }
         }
+
+        .k-rtl .k-badge#{$infix},
+        [dir="rtl"] .k-badge#{$infix} {
+            &-top-start {
+                left: auto;
+                right: 0;
+                @if $translate {
+                    transform: translate( 1% * $translate, -1% * $translate );
+                }
+            }
+            &-top-end {
+                right: auto;
+                left: 0;
+                @if $translate {
+                    transform: translate( -1% * $translate, -1% * $translate );
+                }
+            }
+            &-bottom-start {
+                left: auto;
+                right: 0;
+                @if $translate {
+                    transform: translate( 1% * $translate, 1% * $translate );
+                }
+            }
+            &-bottom-end {
+                right: auto;
+                left: 0;
+                @if $translate {
+                    transform: translate( -1% * $translate, 1% * $translate );
+                }
+            }
+        }
+    }
+
+
+    // Border cutout
+    .k-badge-border-cutout {
+        box-shadow: 0 0 0 2px $component-bg;
     }
 
 }
