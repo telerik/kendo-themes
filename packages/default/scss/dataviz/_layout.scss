@@ -1,11 +1,3 @@
-// TODO: chart variables
-$chart-tap-highlight-color: rgba(0, 0, 0, 0);
-
-$chart-font-size: $base-font-size !default;
-$chart-tooltip-font-size: ($font-size * .929) !default;
-$chart-label-font-size: .857em !default;
-$chart-title-font-size: 1.143em !default;
-
 @include exports("dataviz/barcode/layout") {
 
     .k-barcode {
@@ -16,8 +8,6 @@ $chart-title-font-size: 1.143em !default;
 
 
 @include exports("dataviz/charts/layout") {
-
-    $selection-handle-size: 22px !default;
 
     // Exported variables
     .k-var--chart-font {
@@ -78,6 +68,7 @@ $chart-title-font-size: 1.143em !default;
     }
 
     .k-chart-tooltip {
+        @include border-radius();
         font-size: $chart-tooltip-font-size;
         line-height: $line-height;
         padding: $padding-y $padding-x;
@@ -205,6 +196,7 @@ $chart-title-font-size: 1.143em !default;
     }
 
     .k-navigator-hint .k-scroll {
+        @include border-radius();
         position: absolute;
         height: 4px;
     }

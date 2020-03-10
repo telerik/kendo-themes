@@ -44,7 +44,6 @@
                 $datetime-bg,
                 $datetime-border
             );
-            @include use-background-clip();
 
             // Hovered state
             &:hover,
@@ -62,7 +61,6 @@
                         $datetime-select-hovered-border,
                         $datetime-select-hovered-gradient
                     );
-                    border-color: inherit;
                 }
             }
 
@@ -76,9 +74,7 @@
                 );
                 @include box-shadow($datetime-focused-shadow);
 
-                .k-select {
-                    border-color: inherit;
-                }
+                .k-select {}
             }
 
             &.k-state-invalid {
@@ -132,7 +128,12 @@
         background-color: $popup-bg;
 
         .k-title {
-            @include appearance( header );
+            @include fill(
+                $header-text,
+                $header-bg,
+                $header-border,
+                $header-gradient
+            );
             background: $popup-bg;
             opacity: $disabled-opacity;
         }
@@ -146,7 +147,6 @@
             &::before,
             &::after {
                 background-color: $time-list-focused-bg;
-                border-width: 0;
             }
         }
     }
@@ -172,6 +172,16 @@
         border-color: $time-list-highlight-color;
     }
 
+    .k-datetime-container {
+        .k-date-tab {
+
+            .k-datetime-buttongroup,
+            .k-datetime-selector {
+                background-color: $component-bg;
+            }
+        }
+    }
+
     // Dateinput
     .k-dateinput {
 
@@ -182,7 +192,6 @@
                 $datetime-bg,
                 $datetime-border
             );
-            @include use-background-clip();
         }
         .k-select {
             @include fill(

@@ -172,7 +172,8 @@
             position: relative;
 
             > table {
-                table-layout: auto;
+                table-layout: fixed;
+                margin-right: -17px; // scrollbar-size
             }
 
             td {
