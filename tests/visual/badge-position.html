@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Badge position</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+    <style>
+        #test-area {
+            grid-template-columns: repeat(6, 1fr);
+        }
+        .k-badge-container {
+            padding: 5px;
+            width: 80px;
+            min-height: 30px;
+            box-sizing: border-box;
+            background-color: skyblue;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <span></span>
+        <span>Rectangle</span>
+        <span>Rounded</span>
+        <span>Pill</span>
+        <span>Circle</span>
+        <span>Dot</span>
+
+
+        <span>Inline</span>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary">Rect</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-rounded">Round</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-pill">Pill</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-circle">99+</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-dot"></span>
+        </div>
+
+        <span>^ RTL</span>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-outline k-badge-outline-primary">Rect</span>
+        </div>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-outline k-badge-outline-primary k-badge-rounded">Round</span>
+        </div>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-outline k-badge-outline-primary k-badge-pill">Pill</span>
+        </div>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-outline k-badge-outline-primary k-badge-circle">99+</span>
+        </div>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-outline k-badge-outline-primary k-badge-dot"></span>
+        </div>
+
+
+
+        <span class="col-6"></span>
+
+
+
+        <span></span>
+        <span>top start</span>
+        <span>top end</span>
+        <span>bottom start</span>
+        <span>bottom end</span>
+        <span></span>
+
+
+        <span>Inside</span>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-inside-top-start">Rect</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-inside-top-end">Rect</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-inside-bottom-start">Rect</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-inside-bottom-end">Rect</span>
+        </div>
+        <span></span>
+
+        <span>Edge</span>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-top-start">Rect</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-top-end">Rect</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-bottom-start">Rect</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-bottom-end">Rect</span>
+        </div>
+        <span></span>
+
+        <span class="col-6"><!-- Spacing needed for outside badges --></span>
+
+        <span>Outside</span>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-outside-top-start">Rect</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-outside-top-end">Rect</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-outside-bottom-start">Rect</span>
+        </div>
+        <div class="k-badge-container">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-outside-bottom-end">Rect</span>
+        </div>
+        <span></span>
+
+        <span class="col-6"><!-- Spacing needed for outside badges --></span>
+
+        <span>Inside RTL</span>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-inside-top-start">Rect</span>
+        </div>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-inside-top-end">Rect</span>
+        </div>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-inside-bottom-start">Rect</span>
+        </div>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-inside-bottom-end">Rect</span>
+        </div>
+        <span></span>
+
+        <span>Edge RTL</span>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-top-start">Rect</span>
+        </div>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-top-end">Rect</span>
+        </div>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-bottom-start">Rect</span>
+        </div>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-bottom-end">Rect</span>
+        </div>
+        <span></span>
+
+        <span class="col-6"><!-- Spacing needed for outside badges --></span>
+
+        <span>Outside RTL</span>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-outside-top-start">Rect</span>
+        </div>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-outside-top-end">Rect</span>
+        </div>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-outside-bottom-start">Rect</span>
+        </div>
+        <div class="k-badge-container k-rtl">
+            <span class="k-badge k-badge-primary k-badge-rounded k-badge-outside-bottom-end">Rect</span>
+        </div>
+        <span></span>
+
+    </div>
+
+</body>
+</html>

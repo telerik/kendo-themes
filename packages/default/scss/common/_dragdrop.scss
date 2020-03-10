@@ -19,7 +19,12 @@
 
     // Theme
     .k-drag-clue {
-        @include appearance( selected-node );
+        @include fill(
+            $node-selected-text,
+            $node-selected-bg,
+            $node-selected-border,
+            $node-selected-gradient
+        );
     }
 
 }
