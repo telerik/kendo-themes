@@ -1086,16 +1086,17 @@
             </kendo-calendar>
         </section>
 
-        <span class="col-6">angular calendar empty cells</span>
+        <span class="col-3">angular calendar empty cells</span>
+        <span class="col-3">angular calendar - week number column</span>
 
-        <section class="col-6">
-            <kendo-calendar class="k-widget k-calendar k-calendar-infinite" tabindex="0">
+        <section class="col-3">
+            <kendo-calendar class="k-widget k-calendar k-calendar-infinite">
                <kendo-calendar-navigation class="k-calendar-navigation">
                     <span class="k-calendar-navigation-highlight"></span>
                     <kendo-virtualization class="k-content k-scrollable">
                         <ul class="k-reset" style="transform: translateY(136px);">
-                            <li data-date-index="0"><span>2018</span></li>
-                            <li data-date-index="1"><span>2019</span></li>
+                            <li><span>2018</span></li>
+                            <li><span>2019</span></li>
                         </ul>
                         <div class="k-scrollable-placeholder" style="height: 328px;"></div>
                     </kendo-virtualization>
@@ -1129,8 +1130,8 @@
                                     <td class="k-empty">&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td title="2018 Nov"><span class="k-link">Nov</span></td>
-                                    <td title="2018 Dec"><span class="k-link">Dec</span></td>
+                                    <td><span class="k-link">Nov</span></td>
+                                    <td><span class="k-link">Dec</span></td>
                                     <td class="k-empty">&nbsp;</td>
                                     <td class="k-empty">&nbsp;</td>
                                     <td class="k-empty">&nbsp;</td>
@@ -1141,9 +1142,9 @@
                                     <th scope="col" colspan="5">2019</th>
                                 </tr>
                                 <tr>
-                                    <td title="2019 Jan"><span class="k-link">Jan</span></td>
-                                    <td title="2019 Feb"><span class="k-link">Feb</span></td>
-                                    <td class="k-today" title="2019 Mar"><span class="k-link">Mar</span></td>
+                                    <td><span class="k-link">Jan</span></td>
+                                    <td><span class="k-link">Feb</span></td>
+                                    <td class="k-today"><span class="k-link">Mar</span></td>
                                     <td class="k-empty">&nbsp;</td>
                                     <td class="k-empty">&nbsp;</td>
                                 </tr>
@@ -1164,6 +1165,404 @@
                             </tbody>
                         </table>
                         <div class="k-scrollable-placeholder" style="height: 435px;"></div>
+                    </kendo-virtualization>
+                </kendo-calendar-viewlist>
+            </kendo-calendar>
+        </section>
+
+        <section class="col-3">
+            <kendo-calendar class="k-widget k-calendar k-calendar-infinite k-week-number">
+                <kendo-calendar-navigation class="k-calendar-navigation">
+                    <span class="k-calendar-navigation-highlight"></span>
+                    <kendo-virtualization class="k-content k-scrollable">
+                        <ul class="k-reset">
+                            <li><span>Oct</span></li>
+                            <li><span>>Nov</span></li>
+                            <li><span>Dec</span></li>
+                            <li><span class="k-calendar-navigation-marker">2020</span></li>
+                            <li><span>Feb</span></li>
+                            <li><span>Mar</span></li>
+                            <li><span>Apr</span></li>
+                            <li><span>May</span></li>
+                            <li><span>Jun</span></li>
+                            <li><span>Jul</span></li>
+                            <li><span>Aug</span></li>
+                            <li><span>Sep</span></li>
+                            <li><span>Oct</span></li>
+                            <li><span>Nov</span></li>
+                            <li><span>Dec</span></li>
+                            <li><span class="k-calendar-navigation-marker">2021</span></li>
+                            <li><span>Feb</span></li>
+                            <li><span>Mar</span></li>
+                            <li><span>Apr</span></li>
+                            <li><span>May</span></li>
+                            <li><span>Jun</span></li>
+                            <li><span>Jul</span></li>
+                            <li><span>Aug</span></li>
+                            <li><span>Sep</span></li>
+                            <li><span>Oct</span></li>
+                            <li><span>Nov</span></li>
+                            <li><span>Dec</span></li>
+                            <li><span class="k-calendar-navigation-marker">2022</span></li>
+                            <li><span>Feb</span></li>
+                            <li><span>Mar</span></li>
+                        </ul>
+                        <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
+                    </kendo-virtualization>
+                </kendo-calendar-navigation>
+                <kendo-calendar-viewlist class="k-calendar-view k-calendar-monthview">
+                    <kendo-calendar-header class="k-calendar-header">
+                        <span class="k-button k-bare k-title">March 2020</span>
+                        <span class="k-today">
+                    TODAY
+                </span>
+                    </kendo-calendar-header>
+                    <table class="k-calendar-weekdays" style="table-layout: auto;">
+                        <thead>
+                            <tr>
+                                <th style="width: 13%;"></th>
+                                <th style="width: 13%;">Su</th>
+                                <th style="width: 13%;">Mo</th>
+                                <th style="width: 13%;">Tu</th>
+                                <th style="width: 13%;">We</th>
+                                <th style="width: 13%;">Th</th>
+                                <th style="width: 13%;">Fr</th>
+                                <th style="width: 13%;">Sa</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <kendo-virtualization class="k-content k-scrollable">
+                        <table>
+                            <colgroup><col /><col /><col /><col /><col /><col /><col /><col /></colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="col" colspan="8">March 2020</th>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">10</td>
+                                    <td class="k-weekend"><span class="k-link">1</span></td>
+                                    <td><span class="k-link">2</span></td>
+                                    <td><span class="k-link">3</span></td>
+                                    <td><span class="k-link">4</span></td>
+                                    <td><span class="k-link">5</span></td>
+                                    <td class="k-today"><span class="k-link">6</span></td>
+                                    <td class="k-weekend"><span class="k-link">7</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">11</td>
+                                    <td class="k-weekend"><span class="k-link">8</span></td>
+                                    <td><span class="k-link">9</span></td>
+                                    <td><span class="k-link">10</span></td>
+                                    <td><span class="k-link">11</span></td>
+                                    <td><span class="k-link">12</span></td>
+                                    <td><span class="k-link">13</span></td>
+                                    <td class="k-weekend"><span class="k-link">14</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">12</td>
+                                    <td class="k-weekend"><span class="k-link">15</span></td>
+                                    <td><span class="k-link">16</span></td>
+                                    <td><span class="k-link">17</span></td>
+                                    <td><span class="k-link">18</span></td>
+                                    <td><span class="k-link">19</span></td>
+                                    <td><span class="k-link">20</span></td>
+                                    <td class="k-weekend"><span class="k-link">21</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">13</td>
+                                    <td class="k-weekend"><span class="k-link">22</span></td>
+                                    <td><span class="k-link">23</span></td>
+                                    <td><span class="k-link">24</span></td>
+                                    <td><span class="k-link">25</span></td>
+                                    <td><span class="k-link">26</span></td>
+                                    <td><span class="k-link">27</span></td>
+                                    <td class="k-weekend"><span class="k-link">28</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">14</td>
+                                    <td class="k-weekend"><span class="k-link">29</span></td>
+                                    <td><span class="k-link">30</span></td>
+                                    <td><span class="k-link">31</span></td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="col" colspan="8">April 2020</th>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">14</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td><span class="k-link">1</span></td>
+                                    <td><span class="k-link">2</span></td>
+                                    <td><span class="k-link">3</span></td>
+                                    <td class="k-weekend"><span class="k-link">4</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">15</td>
+                                    <td class="k-weekend"><span class="k-link">5</span></td>
+                                    <td><span class="k-link">6</span></td>
+                                    <td><span class="k-link">7</span></td>
+                                    <td><span class="k-link">8</span></td>
+                                    <td><span class="k-link">9</span></td>
+                                    <td><span class="k-link">10</span></td>
+                                    <td class="k-weekend"><span class="k-link">11</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">16</td>
+                                    <td class="k-weekend"><span class="k-link">12</span></td>
+                                    <td><span class="k-link">13</span></td>
+                                    <td><span class="k-link">14</span></td>
+                                    <td><span class="k-link">15</span>
+                                    </td>
+                                    <td><span class="k-link">16</span></td>
+                                    <td><span class="k-link">17</span></td>
+                                    <td class="k-weekend"><span class="k-link">18</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">17</td>
+                                    <td class="k-weekend"><span class="k-link">19</span></td>
+                                    <td><span class="k-link">20</span></td>
+                                    <td><span class="k-link">21</span></td>
+                                    <td><span class="k-link">22</span></td>
+                                    <td><span class="k-link">23</span></td>
+                                    <td><span class="k-link">24</span></td>
+                                    <td class="k-weekend"><span class="k-link">25</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">18</td>
+                                    <td class="k-weekend"><span class="k-link">26</span></td>
+                                    <td><span class="k-link">27</span></td>
+                                    <td><span class="k-link">28</span></td>
+                                    <td><span class="k-link">29</span></td>
+                                    <td><span class="k-link">30</span></td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="col" colspan="8">May 2020</th>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">18</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td><span class="k-link">1</span></td>
+                                    <td class="k-weekend"><span class="k-link">2</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">19</td>
+                                    <td class="k-weekend"><span class="k-link">3</span></td>
+                                    <td><span class="k-link">4</span></td>
+                                    <td><span class="k-link">5</span></td>
+                                    <td><span class="k-link">6</span></td>
+                                    <td><span class="k-link">7</span></td>
+                                    <td><span class="k-link">8</span></td>
+                                    <td class="k-weekend"><span class="k-link">9</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">20</td>
+                                    <td class="k-weekend"><span class="k-link">10 </span></td>
+                                    <td><span class="k-link">11</span></td>
+                                    <td><span class="k-link">12</span></td>
+                                    <td><span class="k-link">13</span></td>
+                                    <td><span class="k-link">14</span></td>
+                                    <td><span class="k-link">15</span></td>
+                                    <td class="k-weekend"><span class="k-link">16</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">21</td>
+                                    <td class="k-weekend"><span class="k-link">17</span></td>
+                                    <td><span class="k-link">18</span></td>
+                                    <td><span class="k-link">19</span></td>
+                                    <td><span class="k-link">20</span></td>
+                                    <td><span class="k-link">21</span></td>
+                                    <td><span class="k-link">22</span></td>
+                                    <td class="k-weekend"><span class="k-link">23</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">22</td>
+                                    <td class="k-weekend"><span class="k-link">24</span></td>
+                                    <td><span class="k-link">25</span></td>
+                                    <td><span class="k-link">26</span></td>
+                                    <td><span class="k-link">27</span></td>
+                                    <td> <span class="k-link">28</span></td>
+                                    <td><span class="k-link">29</span></td>
+                                    <td class="k-weekend"><span class="k-link">30</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">23</td>
+                                    <td class="k-weekend"><span class="k-link">31</span></td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="col" colspan="8">June 2020</th>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">23</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td><span class="k-link">1</span></td>
+                                    <td><span class="k-link">2</span></td>
+                                    <td><span class="k-link">3</span></td>
+                                    <td><span class="k-link">4</span></td>
+                                    <td><span class="k-link">5</span></td>
+                                    <td class="k-weekend"><span class="k-link">6</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">24</td>
+                                    <td class="k-weekend"><span class="k-link">7</span></td>
+                                    <td><span class="k-link">8</span></td>
+                                    <td><span class="k-link">9</span></td>
+                                    <td><span class="k-link">10</span></td>
+                                    <td><span class="k-link">11</span></td>
+                                    <td><span class="k-link">12</span></td>
+                                    <td class="k-weekend"><span class="k-link">13</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">25</td>
+                                    <td class="k-weekend"><span class="k-link">14</span></td>
+                                    <td><span class="k-link">15</span></td>
+                                    <td><span class="k-link">16</span></td>
+                                    <td><span class="k-link">17</span></td>
+                                    <td><span class="k-link">18</span></td>
+                                    <td><span class="k-link">19</span></td>
+                                    <td class="k-weekend"><span class="k-link">20</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">26</td>
+                                    <td class="k-weekend"><span class="k-link">21</span></td>
+                                    <td><span class="k-link">22</span></td>
+                                    <td><span class="k-link">23</span></td>
+                                    <td><span class="k-link">24</span></td>
+                                    <td><span class="k-link">25</span></td>
+                                    <td><span class="k-link">26</span></td>
+                                    <td class="k-weekend"><span class="k-link">27</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">27</td>
+                                    <td class="k-weekend"><span class="k-link">28</span></td>
+                                    <td><span class="k-link">29</span></td>
+                                    <td><span class="k-link">30</span></td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="col" colspan="8">July 2020</th>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">27</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td><span class="k-link">1</span></td>
+                                    <td><span class="k-link">2</span></td>
+                                    <td><span class="k-link">3</span></td>
+                                    <td class="k-weekend"><span class="k-link">4</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">28</td>
+                                    <td class="k-weekend"><span class="k-link">5</span></td>
+                                    <td><span class="k-link">6</span>
+                                    </td>
+                                    <td><span class="k-link">7</span></td>
+                                    <td><span class="k-link">8</span></td>
+                                    <td><span class="k-link">9</span></td>
+                                    <td><span class="k-link">10</span></td>
+                                    <td class="k-weekend"><span class="k-link">11</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">29</td>
+                                    <td class="k-weekend"><span class="k-link">12</span></td>
+                                    <td><span class="k-link">13</span></td>
+                                    <td><span class="k-link">14</span></td>
+                                    <td><span class="k-link">15</span></td>
+                                    <td><span class="k-link">16</span></td>
+                                    <td><span class="k-link">17</span></td>
+                                    <td class="k-weekend"><span class="k-link">18</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">30</td>
+                                    <td class="k-weekend"><span class="k-link">19</span></td>
+                                    <td><span class="k-link">20</span></td>
+                                    <td><span class="k-link">21</span></td>
+                                    <td><span class="k-link">22</span></td>
+                                    <td><span class="k-link">3</span></td>
+                                    <td><span class="k-link">24</span></td>
+                                    <td class="k-weekend"><span class="k-link">25</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="k-alt">31</td>
+                                    <td><span class="k-link">26</span></td>
+                                    <td><span class="k-link">27</span></td>
+                                    <td><span class="k-link">28</span></td>
+                                    <td><span class="k-link">29</span></td>
+                                    <td><span class="k-link">30</span></td>
+                                    <td><span class="k-link">31</span></td>
+                                    <td class="k-empty">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                    <td class="k-empty">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
                     </kendo-virtualization>
                 </kendo-calendar-viewlist>
             </kendo-calendar>

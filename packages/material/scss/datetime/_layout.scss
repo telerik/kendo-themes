@@ -77,13 +77,6 @@
                 text-transform: uppercase;
                 z-index: 99;
             }
-
-            &.k-state-focused {
-                &::before,
-                &::after {
-                    border-width: 0;
-                }
-            }
         }
 
         .k-time-list-container {

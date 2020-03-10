@@ -20,6 +20,7 @@
         // Wrappers
         .k-dateinput-wrap,
         .k-picker-wrap {
+            @include use-background-clip();
             @include border-radius( $input-border-radius );
             padding: 0;
             width: 100%;
@@ -213,14 +214,6 @@
             justify-content: center;
         }
 
-        .k-date-tab {
-
-            .k-datetime-buttongroup,
-            .k-datetime-selector {
-                background-color: $component-bg;
-            }
-        }
-
         .k-time-tab {
 
             .k-datetime-selector {
@@ -351,17 +344,16 @@
                 pointer-events: none;
                 height: calc(50% - 1em);
                 box-sizing: border-box;
+                border-width: 0;
                 border-style: solid;
             }
 
             &::before {
                 top: 0;
-                border-width: $time-list-focus-size $time-list-focus-size 0;
             }
 
             &::after {
                 bottom: 0;
-                border-width: 0 $time-list-focus-size $time-list-focus-size;
             }
         }
     }
