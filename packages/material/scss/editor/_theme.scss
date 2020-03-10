@@ -1,7 +1,11 @@
 @include exports("editor/theme") {
 
     .k-editor {
-        @include appearance( panel );
+        @include fill(
+            $panel-text,
+            $panel-bg,
+            $panel-border
+        );
 
         .k-editor-toolbar {}
         .k-editable-area {
@@ -12,6 +16,32 @@
     // Inline Editor
     .k-editor-inline {
 
+        .k-table {
+            &,
+            & td {
+                border-color: #cccccc;
+            }
+        }
+
+        .k-table-resize-handle-wrapper {
+            background-color: #ffffff;
+            border-color: #000000;
+        }
+
+        .k-column-resize-handle-wrapper {
+            .k-column-resize-handle {
+                .k-column-resize-marker {
+                    background-color: #00b0ff;
+                }
+            }
+        }
+
+        .k-row-resize-handle-wrapper {
+            .k-row-resize-marker {
+                background-color: #00b0ff;
+            }
+        }
+
         // Hover & Actve state
         &:hover,
         &.k-state-active {
@@ -21,18 +51,16 @@
 
     // Editor toolbar
     .k-editor-toolbar {
-        @include appearance( toolbar );
+        @include fill(
+            $toolbar-text,
+            $toolbar-bg,
+            $toolbar-border,
+            $toolbar-gradient
+        );
 
         a.k-tool,
         .k-picker-wrap,
         .k-dropdown-wrap {
-            @extend .k-button-flat;
-            @include border-radius( 0 );
-
-            &::before {
-                @extend .k-button-overlay;
-                display: block;
-            }
 
             // Hovered state
             &:hover,
@@ -78,28 +106,8 @@
     }
 
 
-    // Overflow anchor
-    .k-editor-toolbar .k-overflow-anchor {
-        padding: $toolbar-padding-y;
-        width: $toolbar-inner-calc-size;
-        height: $toolbar-inner-calc-size;
-    }
-
-    .k-editor-dialog {
-        .k-edit-label {
-            padding: calc( #{$padding-y} - #{$input-border-width} ) 0;
-        }
-    }
-
-
     // Insert table
     .k-ct-popup {
-        line-height: normal;
-
-        .k-status {
-            line-height: $line-height;
-        }
-
         .k-state-selected {
             @include fill( $selected-text, $selected-bg, $selected-border, none );
         }

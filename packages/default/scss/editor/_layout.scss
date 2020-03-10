@@ -2,6 +2,7 @@
 
     // Base
     .k-editor {
+        @include use-background-clip();
         border-collapse: separate;
         border-spacing: 0;
         vertical-align: top;
@@ -555,7 +556,8 @@
             &,
             & td {
                 outline: 0;
-                border: 1px dotted #cccccc;
+                border-width: 1px;
+                border-style: dotted;
             }
 
             td {
@@ -568,8 +570,8 @@
             position: absolute;
             width: 5px;
             height: 5px;
-            background-color: #ffffff;
-            border: 1px solid #000000;
+            border-width: 1px;
+            border-style: solid;
             z-index: 100;
 
             .k-table-resize-handle {
@@ -625,7 +627,6 @@
                     width: 2px;
                     height: 100%;
                     margin: 0 auto;
-                    background-color: #00b0ff;
                     display: none;
                     opacity: .8;
                 }
@@ -660,7 +661,6 @@
                 padding: 0;
                 width: 100%;
                 height: 2px;
-                background-color: #00b0ff;
                 opacity: .8;
             }
         }
