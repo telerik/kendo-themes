@@ -1,0 +1,39 @@
+language: node_js
+
+node_js:
+  - 10
+
+build:
+  ci:
+    - echo "Just blank CI"
+
+resources:
+  - name: kendo-themes-repo
+    type: gitRepo
+    integration: github-telerik
+    versionTemplate:
+      sourceName: telerik/kendo-themes
+      branch: develop
+  - name: shippable-themes-push
+    type: integration
+    integration: shippable-themes
+
+jobs:
+  - name: kendo-themes-publish_develop_as_latest
+    type: runSh
+    steps:
+      - IN: kendo-themes-repo
+        switch: off
+      - IN: shippable-themes-push
+        switch: off
+      - TASK:
+          name: kendo-themes-publish_develop
+          script:
+            - ssh-add $SHIPPABLETHEMESPUSH_PRIVATE_KEY_PATH
+            - cd $KENDOTHEMESREPO_STATE
+            - git remote set-url --push origin git@github.com:telerik/kendo-themes.git
+            - git checkout master
+            - git fetch --quiet
+            - git reset --hard origin/master
+            - git merge --ff-only --quiet origin/develop
+            - git push origin master
