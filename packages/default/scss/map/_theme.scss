@@ -8,12 +8,21 @@
         );
 
         .k-navigator {
-            @include appearance( button );
+            @include fill(
+                $button-text,
+                $button-bg,
+                $button-border,
+                $button-gradient
+            );
             @include box-shadow( $button-shadow );
         }
 
         .k-marker {
             color: $map-marker-fill;
+        }
+
+        .k-attribution {
+            background-color: $map-attribution-bg;
         }
     }
 
