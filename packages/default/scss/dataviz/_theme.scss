@@ -47,12 +47,14 @@
         }
     }
 
-    .k-chart-tooltip {
-        color: $widget-bg;
-    }
 
+    // Tooltip
+    // TODO
+    .k-chart-tooltip {
+        color: $component-bg;
+    }
     .k-chart-tooltip-inverse {
-        color: invert($widget-bg);
+        color: invert($component-bg);
     }
 
     .k-chart-crosshair-tooltip,
@@ -95,7 +97,7 @@
     }
 
     .k-mask {
-        background-color: $widget-bg;
+        background-color: $component-bg;
         opacity: .8;
     }
 
