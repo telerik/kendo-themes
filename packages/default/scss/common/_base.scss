@@ -135,9 +135,9 @@ $widget-border-width: 1px !default;
         @extend .k-text-selection;
         @include border-radius();
         @include fill(
-            $widget-text,
-            $widget-bg,
-            $widget-border
+            $panel-text,
+            $panel-bg,
+            $panel-border
         );
         padding: $panel-padding-y $panel-padding-x;
         border-width: 1px;
