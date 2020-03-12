@@ -69,7 +69,13 @@ $is-dark-theme: false;
 
 // Deprecated
 // TODO: remove for v5
+/// Deprecated. Will be removed in v5. Use `$primary` variable instead.
+/// @deprecated
+/// @group color-system
 $accent: $primary !default;
+/// Deprecated. Will be removed in v5. Use `$primary-contrast` variable instead.
+/// @deprecated
+/// @group color-system
 $accent-contrast: contrast-wcag( $accent ) !default;
 
 
@@ -273,15 +279,33 @@ $link-hover-text: $link-hover-color !default;
 // Components
 
 // Component
+/// Background color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.
+/// @group component
 $component-bg: $component-bg !default;
+/// Text color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.
+/// @group component
 $component-text: $component-color !default;
+/// Border color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
+/// @group component
 $component-border: $component-border-color !default;
 
 
 // Widget
+/// Deprecated. Will be removed in v5. Use `$component-bg` variable instead.
+/// @deprecated
+/// @group component
 $widget-bg: $component-bg !default;
-$widget-text: $component-color !default;
-$widget-border: $component-border-color !default;
+/// Deprecated. Will be removed in v5. Use `$component-text` variable instead.
+/// @deprecated
+/// @group component
+$widget-text: $component-text !default;
+/// Deprecated. Will be removed in v5. Use `$component-border` variable instead.
+/// @deprecated
+/// @group component
+$widget-border: $component-border !default;
 
 
 // Panel
