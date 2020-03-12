@@ -43,6 +43,21 @@ The following table lists the available variables for customization.
   </thead>
   <tbody>
     <tr>
+      <td>$accent</td>
+      <td>
+          <span class="color-preview" style="background-color: #ff6358"></span>
+          #ff6358
+      </td>
+      <td>Deprecated. Will be removed in v5. Use `$primary` variable instead.</td>
+    </tr>
+    <tr>
+      <td>$accent-contrast</td>
+      <td>
+          contrast-wcag( $accent )
+      </td>
+      <td> Deprecated. Will be removed in v5. Use `$primary-contrast` variable instead.</td>
+    </tr>
+    <tr>
       <td>$primary</td>
       <td>
           $accent
