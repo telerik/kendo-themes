@@ -1,0 +1,14 @@
+@include exports("messagebox/layout") {
+
+    // Base
+    .k-messagebox {
+        margin: $message-box-margin;
+        padding: $message-box-padding-y $message-box-padding-x;
+        border-width: $message-box-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        font-size: $message-box-font-size;
+        line-height: $message-box-line-height;
+    }
+
+}
