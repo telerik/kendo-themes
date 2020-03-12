@@ -1,0 +1,13 @@
+@include exports("messagebox/theme") {
+
+    @each $color-name, $color in $theme-colors {
+        .k-messagebox-#{$color-name} {
+            @include fill(
+                color-level( $color, $message-box-text-level ),
+                color-level( $color, $message-box-bg-level ),
+                color-level( $color, $message-box-border-level )
+            );
+        }
+    }
+
+}
