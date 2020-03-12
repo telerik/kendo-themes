@@ -312,14 +312,32 @@ $link-hover-text: $secondary-darker !default;
 // Components
 
 // Component
+/// Background color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.
+/// @group component
 $component-bg: map-get($theme, component-bg) !default;
+/// Text color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.
+/// @group component
 $component-text: map-get($theme, component-text) !default;
+/// Border color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
+/// @group component
 $component-border: map-get($theme, component-border) !default;
 
 
 // Widget
+/// Deprecated. Will be removed in v5. Use `$component-bg` variable instead.
+/// @deprecated
+/// @group component
 $widget-bg: $component-bg !default;
+/// Deprecated. Will be removed in v5. Use `$component-text` variable instead.
+/// @deprecated
+/// @group component
 $widget-text: $component-text !default;
+/// Deprecated. Will be removed in v5. Use `$component-border` variable instead.
+/// @deprecated
+/// @group component
 $widget-border: $component-border !default;
 
 
