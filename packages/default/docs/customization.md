@@ -348,6 +348,21 @@ The following table lists the available variables for customizing the Default th
   </thead>
   <tbody>
     <tr>
+      <td>$accent</td>
+      <td>
+          <span class="color-preview" style="background-color: #ff6358"></span>
+          #ff6358
+      </td>
+      <td>Deprecated. Will be removed in v5. Use `$primary` variable instead.</td>
+    </tr>
+    <tr>
+      <td>$accent-contrast</td>
+      <td>
+          contrast-wcag( $accent )
+      </td>
+      <td> Deprecated. Will be removed in v5. Use `$primary-contrast` variable instead.</td>
+    </tr>
+    <tr>
       <td>$primary</td>
       <td>
           $accent
@@ -445,6 +460,66 @@ The following table lists the available variables for customizing the Default th
           if( $is-dark-theme, $light, $dark )
       </td>
       <td>Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark</td>
+    </tr>
+  </tbody>
+</table>
+### Component
+
+<table class="theme-variables">
+  <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col style="width: 250px" />
+    <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Default value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$component-bg</td>
+      <td>
+          $body-bg
+      </td>
+      <td>Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.</td>
+    </tr>
+    <tr>
+      <td>$component-text</td>
+      <td>
+          $body-text
+      </td>
+      <td>Text color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.</td>
+    </tr>
+    <tr>
+      <td>$component-border</td>
+      <td>
+          rgba( black, .08 )
+      </td>
+      <td>Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.</td>
+    </tr>
+    <tr>
+      <td>$widget-bg</td>
+      <td>
+          $component-bg
+      </td>
+      <td>Deprecated. Will be removed in v5. Use `$component-bg` variable instead.</td>
+    </tr>
+    <tr>
+      <td>$widget-text</td>
+      <td>
+          $component-text
+      </td>
+      <td>Deprecated. Will be removed in v5. Use `$component-text` variable instead.</td>
+    </tr>
+    <tr>
+      <td>$widget-border</td>
+      <td>
+          $component-border
+      </td>
+      <td> Deprecated. Will be removed in v5. Use `$component-border` variable instead.</td>
     </tr>
   </tbody>
 </table>
