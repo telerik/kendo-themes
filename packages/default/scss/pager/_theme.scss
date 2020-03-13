@@ -35,13 +35,14 @@
 
         &:focus,
         &.k-state-focus {
+            background-color: $pager-item-focus-bg;
             @include box-shadow( $pager-item-focus-shadow );
         }
     }
 
 
     // Pager items
-    .k-pager-nav {
+    .k-pager-nav.k-link {
         @extend %base-pager-item-theme;
     }
 
@@ -74,6 +75,7 @@
 
             &:focus,
             &.k-state-focus {
+                background-color: $pager-number-focus-bg;
                 @include box-shadow( $pager-number-focus-shadow );
             }
         }
@@ -89,7 +91,6 @@
 
 
     // Responsive
-    .k-pager-lg,
     .k-pager-md,
     .k-pager-sm {
 

@@ -16,6 +16,8 @@
         .k-link {
             text-decoration: none;
             outline: 0;
+            font: inherit;
+            background-color: inherit;
         }
 
         .k-widget,
@@ -162,7 +164,7 @@
         .k-dropdown,
         > select {
             margin-right: 1ex;
-            width: $pager-page-size-dropdown-width;
+            width: $pager-dropdown-width;
         }
 
         .k-rtl &,
@@ -199,30 +201,27 @@
         }
     }
 
-
-
-
     // Responsive
-    .k-pager-lg,
-    .k-pager-md,
     .k-pager-sm {
         overflow: visible;
+
+        // Show native select
+        .k-pager-numbers-wrap {
+            select.k-dropdown {
+                width: $pager-dropdown-width;
+                display: flex;
+            }
+        }
 
         .k-pager-numbers-wrap {
             @if ($pager-section-spacing) {
                 margin-left: $pager-section-spacing;
                 margin-right: $pager-section-spacing;
             }
-            width: 5em;
+
             height: $button-calc-size;
             box-sizing: border-box;
             border-color: inherit;
-
-            // Show native select
-            select.k-dropdown {
-                width: 100%;
-                display: flex;
-            }
         }
 
         .k-rtl &,
@@ -238,13 +237,10 @@
 
     }
 
-
     // Hide components
     .k-pager-md .k-pager-info,
     .k-pager-sm .k-pager-info,
     .k-pager-sm .k-pager-sizes,
-    .k-pager-lg .k-pager-numbers,
-    .k-pager-md .k-pager-numbers,
     .k-pager-sm .k-pager-numbers {
         display: none;
     }
