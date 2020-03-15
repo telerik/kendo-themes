@@ -103,27 +103,6 @@
             }
         }
 
-        .k-tooltip.k-tooltip-validation {
-            color: $tooltip-text;
-            background-color: $tooltip-bg;
-
-            .k-callout-n {
-                border-bottom-color: $tooltip-bg;
-            }
-
-            .k-callout-e {
-                border-left-color: $tooltip-bg;
-            }
-
-            .k-callout-s {
-                border-top-color: $tooltip-bg;
-            }
-
-            .k-callout-w {
-                border-right-color: $tooltip-bg;
-            }
-        }
-
         .k-grid-search {
             color: $body-text;
         }
