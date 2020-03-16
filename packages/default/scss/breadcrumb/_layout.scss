@@ -2,18 +2,28 @@
 
     // Breadcrumb
     .k-breadcrumb {
-        border: 0;
+        margin: $breadcrumb-margin-y $breadcrumb-margin-x;
+        padding: $breadcrumb-padding-y $breadcrumb-padding-x;
+        border-width: $breadcrumb-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $breadcrumb-font-family;
+        font-size: $breadcrumb-font-size;
+        line-height: $breadcrumb-line-height;
         display: flex;
         flex-direction: row;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
 
         // Items
         .k-breadcrumb-container {
-            margin: $breadcrumb-container-margin-y $breadcrumb-container-margin-x;
-            padding: $breadcrumb-container-padding-y $breadcrumb-container-padding-x;
+            margin: 0;
+            padding: 0;
+            list-style: none;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            list-style: none;
             overflow: hidden;
         }
 
