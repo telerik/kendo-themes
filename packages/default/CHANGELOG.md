@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.14.0"></a>
+# [4.14.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.13.0...@progress/kendo-theme-default@4.14.0) (2020-03-17)
+
+
+### Bug Fixes
+
+* **base:** use fill mixin ([cae01c3](https://github.com/telerik/kendo-themes/commit/cae01c3))
+* **calendar:** displaced layout when week number column is rendered ([e634c02](https://github.com/telerik/kendo-themes/commit/e634c02))
+* **colorpicker:** boot and mat inherit default ([b86a098](https://github.com/telerik/kendo-themes/commit/b86a098))
+* **colorpicker:** use fill mixin ([0ee0837](https://github.com/telerik/kendo-themes/commit/0ee0837))
+* **dataviz:** use fill mixin ([06e4d09](https://github.com/telerik/kendo-themes/commit/06e4d09))
+* **datetime:** use fill mixin ([d521d7a](https://github.com/telerik/kendo-themes/commit/d521d7a))
+* **dragdrop:** use fill mixin ([5cae008](https://github.com/telerik/kendo-themes/commit/5cae008))
+* **editor:** use fill mixin ([02f8af0](https://github.com/telerik/kendo-themes/commit/02f8af0))
+* **map:** use fill mixin ([898f1eb](https://github.com/telerik/kendo-themes/commit/898f1eb))
+* **notification:** use fill mixin ([80e6d9b](https://github.com/telerik/kendo-themes/commit/80e6d9b))
+* **popup:** disabled items in popup appearance ([3818a7b](https://github.com/telerik/kendo-themes/commit/3818a7b))
+* **progressbar:** the progress is visible while in indeterminate state ([a2c2708](https://github.com/telerik/kendo-themes/commit/a2c2708))
+* **toolbar:** use fill mixin ([fa17fac](https://github.com/telerik/kendo-themes/commit/fa17fac))
+* **upload:** add grey color for successfully uploaded item ([2aafa01](https://github.com/telerik/kendo-themes/commit/2aafa01))
+
+
+### Features
+
+* **badge:** add styles for badge position and placement ([af31d85](https://github.com/telerik/kendo-themes/commit/af31d85))
+* **badge:** add styles for border cutout ([bd4ebe6](https://github.com/telerik/kendo-themes/commit/bd4ebe6))
+* **badge:** add support for icons in badges ([77f2617](https://github.com/telerik/kendo-themes/commit/77f2617))
+
+
+
+
 <a name="4.13.0"></a>
 # 4.13.0 (2020-03-06)
 
