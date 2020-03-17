@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.1"></a>
+## [0.5.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.5.0...@progress/kendo-theme-tasks@0.5.1) (2020-03-17)
+
+
+### Bug Fixes
+
+* use PluginError to break on errors in sass compile ([17e5df4](https://github.com/telerik/kendo-themes/commit/17e5df4))
+
+
+
+
 <a name="0.5.0"></a>
 # 0.5.0 (2020-03-06)
 

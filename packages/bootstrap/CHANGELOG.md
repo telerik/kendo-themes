@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.12.0"></a>
+# [4.12.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.11.0...@progress/kendo-theme-bootstrap@4.12.0) (2020-03-17)
+
+
+### Bug Fixes
+
+* **colorpicker:** boot and mat inherit default ([b86a098](https://github.com/telerik/kendo-themes/commit/b86a098))
+* **colorpicker:** use fill mixin ([0ee0837](https://github.com/telerik/kendo-themes/commit/0ee0837))
+* **dataviz:** use fill mixin ([06e4d09](https://github.com/telerik/kendo-themes/commit/06e4d09))
+* **datetime:** use fill mixin ([d521d7a](https://github.com/telerik/kendo-themes/commit/d521d7a))
+* **notification:** use fill mixin ([80e6d9b](https://github.com/telerik/kendo-themes/commit/80e6d9b))
+* **popup:** disabled items in popup appearance ([3818a7b](https://github.com/telerik/kendo-themes/commit/3818a7b))
+* **toolbar:** use fill mixin ([fa17fac](https://github.com/telerik/kendo-themes/commit/fa17fac))
+
+
+### Features
+
+* **badge:** add support for icons in badges ([77f2617](https://github.com/telerik/kendo-themes/commit/77f2617))
+
+
+
+
 <a name="4.11.0"></a>
 # 4.11.0 (2020-03-06)
 

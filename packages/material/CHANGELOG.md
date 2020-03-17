@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.11.1"></a>
+## [3.11.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.11.0...@progress/kendo-theme-material@3.11.1) (2020-03-17)
+
+
+### Bug Fixes
+
+* **colorpicker:** boot and mat inherit default ([b86a098](https://github.com/telerik/kendo-themes/commit/b86a098))
+* **colorpicker:** use fill mixin ([0ee0837](https://github.com/telerik/kendo-themes/commit/0ee0837))
+* **dataviz:** use fill mixin ([06e4d09](https://github.com/telerik/kendo-themes/commit/06e4d09))
+* **datetime:** use fill mixin ([d521d7a](https://github.com/telerik/kendo-themes/commit/d521d7a))
+* **dropdownlist:** decrease size of select button in material ([f91799a](https://github.com/telerik/kendo-themes/commit/f91799a))
+* **editor:** use fill mixin ([02f8af0](https://github.com/telerik/kendo-themes/commit/02f8af0))
+* **notification:** use fill mixin ([80e6d9b](https://github.com/telerik/kendo-themes/commit/80e6d9b))
+* **toolbar:** use fill mixin ([fa17fac](https://github.com/telerik/kendo-themes/commit/fa17fac))
+
+
+
+
 <a name="3.11.0"></a>
 # 3.11.0 (2020-03-06)
 
