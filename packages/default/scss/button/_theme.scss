@@ -114,7 +114,6 @@
 
     // Dropdown button
     .k-dropdown-button {
-
         &:active > .k-button:not(:disabled),
         &.k-state-active > .k-button:not(:disabled) {
             box-shadow: inset $button-pressed-shadow;
@@ -123,11 +122,6 @@
         &:focus > .k-button,
         &.k-state-focused > .k-button {
             box-shadow: $button-focused-shadow;
-        }
-
-        .k-widget {
-            border-width: 0;
-            display: inline-block;
         }
     }
 
