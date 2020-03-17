@@ -46,4 +46,13 @@ $split-button-arrow-border-width: 1px;
             border-right-width: 0;
         }
     }
+
+
+    // Popup button group
+    .k-overflow-button,
+    .k-overflow-group {
+        &.k-button-group {
+            line-height: inherit;
+        }
+    }
 }

@@ -752,6 +752,8 @@ $button-padding-x: $padding-x !default;
 /// Vertical padding of buttons
 /// @group tabstrip
 $button-padding-y: $padding-y !default;
+$button-font-family: $font-family !default;
+$button-font-size: $font-size !default;
 $button-line-height: $form-line-height !default;
 
 $button-padding-x-sm: $button-padding-x / 2 !default;

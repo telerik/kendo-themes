@@ -780,6 +780,8 @@ $button-padding-x: $padding-x !default;
 /// Vertical padding of buttons
 /// @group tabstrip
 $button-padding-y: 8px !default;
+$button-font-family: $font-family !default;
+$button-font-size: $font-size !default;
 $button-line-height: (20 / 14) !default;
 
 $button-padding-x-sm: $button-padding-x / 2 !default;
@@ -873,6 +875,7 @@ $flat-button-hover-opacity: .12 !default;
 $flat-button-focused-opacity: .12 !default;
 $flat-button-active-opacity: .16 !default;
 $flat-button-selected-opacity: .22 !default;
+
 
 // Action buttons
 $action-button-text: rgba( $primary, .87 ) !default;
