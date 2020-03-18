@@ -2379,6 +2379,10 @@ $scheduler-nonwork-bg: mix( $component-text, $component-bg, ($color-level-step /
 // Chat
 $chat-padding-x: 16px !default;
 $chat-padding-y: 16px !default;
+$chat-border-width: 1px !default;
+$chat-font-family: $font-family !default;
+$chat-font-size: $font-size !default;
+$chat-line-height: $line-height !default;
 
 $chat-item-spacing-x: 8px !default;
 $chat-item-spacing-y: 16px !default;
