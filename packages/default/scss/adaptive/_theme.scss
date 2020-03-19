@@ -1,5 +1,15 @@
 @include exports("adaptive/theme") {
 
+    .k-pane-wrapper,
+    .k-view {
+        @extend .k-text-selection;
+        @include fill(
+            $adaptive-text,
+            $adaptive-bg,
+            $adaptive-border
+        );
+    }
+
     .k-pane-wrapper .k-pane {
 
         > .k-view > .k-content {
