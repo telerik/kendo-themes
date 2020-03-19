@@ -42,9 +42,16 @@
         @include box-shadow( $card-box-shadow );
         border-width: $card-border-width;
         border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $card-font-family;
+        font-size: $card-font-size;
+        line-height: $card-line-height;
         display: flex;
         flex-direction: column;
         position: relative;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
 
         .k-card-callout {
             position: absolute;
