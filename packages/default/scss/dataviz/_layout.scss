@@ -26,15 +26,19 @@
     .k-chart,
     .k-sparkline,
     .k-stockchart {
+        border-width: $chart-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $chart-font-family;
+        font-size: $chart-font-size;
+        line-height: $chart-line-height;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $chart-tap-highlight-color;
-        border-width: 0;
     }
 
     .k-chart,
     .k-stockchart {
-        font-size: $chart-font-size;
-        font-family: $font-family;
         display: block;
         height: 400px;
     }

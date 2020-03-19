@@ -2722,7 +2722,10 @@ $series-e: #ff5722 !default;
 /// @group charts
 $series-f: #e91e63 !default;
 
+$chart-border-width: 0 !default;
+$chart-font-family: $font-family !default;
 $chart-font-size: $font-size !default;
+$chart-line-height: $line-height !default;
 $chart-font-size-sm: 11px !default;
 $chart-font-size-md: 12px !default;
 $chart-font-size-lg: 16px !default;
@@ -2741,6 +2744,8 @@ $chart-minor-lines: rgba(0, 0, 0, .04) !default;
 $chart-area-opacity: .8 !default;
 
 $chart-bg: $component-bg !default;
+$chart-text: $component-text !default;
+$chart-border: $component-border !default;
 
 $chart-tap-highlight-color: rgba(0, 0, 0, 0);
 
