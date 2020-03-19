@@ -71,6 +71,7 @@
 @include exports( "flatcolorpicker/theme" ) {
 
     .k-flatcolorpicker {
+        @extend .k-text-selection;
         @include fill(
             $panel-text,
             $panel-bg,
