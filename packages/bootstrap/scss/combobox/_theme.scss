@@ -1,64 +1,12 @@
-@include exports("combobox/theme") {
+@import "~@progress/kendo-theme-default/scss/combobox/_theme.scss";
+
+@include exports("combobox/theme/bootstrap") {
 
     // Combobox
     .k-combobox {
 
-        // Normal state
-        .k-dropdown-wrap {
-            @include fill(
-                $combobox-text,
-                $combobox-bg,
-                $combobox-border
-            );
-        }
-
-        .k-select {
-            @include fill(
-                $combobox-select-text,
-                $combobox-select-bg,
-                $combobox-select-border,
-                $combobox-select-gradient
-            );
-        }
-
-        // Hovered state
-        > :hover,
-        .k-state-hover {
-            @include fill(
-                $combobox-hovered-text,
-                $combobox-hovered-bg,
-                $combobox-hovered-border
-            );
-
-            .k-select {
-                @include fill(
-                    $combobox-select-hovered-text,
-                    $combobox-select-hovered-bg,
-                    $combobox-select-hovered-border,
-                    $combobox-select-hovered-gradient
-                );
-            }
-        }
-
-        // Focused state
-        .k-state-focused {
-            @include fill(
-                $combobox-focused-text,
-                $combobox-focused-bg,
-                $combobox-focused-border
-            );
-            @include box-shadow($combobox-focused-shadow);
-        }
-
         // Selected state
         .k-state-active {
-            @include fill(
-                $combobox-focused-text,
-                $combobox-focused-bg,
-                $combobox-focused-border
-            );
-            @include box-shadow($combobox-focused-shadow);
-
             .k-select {
                 @include fill(
                     $combobox-select-focused-text,
@@ -67,21 +15,6 @@
                     $combobox-select-focused-gradient
                 );
                 @include box-shadow($combobox-select-focused-shadow);
-            }
-        }
-
-        // Invalid
-        .k-invalid,
-        .k-invalid:hover,
-        .k-state-invalid,
-        .ng-invalid.ng-touched,
-        .ng-invalid.ng-dirty {
-            color: $error;
-            border-color: $invalid-border;
-
-            &:focus,
-            &.k-state-focused {
-                @include box-shadow($invalid-shadow);
             }
         }
     }
