@@ -49,6 +49,10 @@ $theme-colors: () !default;
     $component-active-bg: $primary !default;
     $component-active-color: contrast-yiq($component-active-bg) !default;
 
+    $breadcrumb-padding-x: 0 !default;
+    $breadcrumb-padding-y: 0 !default;
+    $breadcrumb-bg: $component-bg !default;
+
     $card-bg: $component-bg !default;
     $card-color: $component-color !default;
     $card-border-color: rgba(contrast-yiq($card-bg, $gray-900), .125) !default;

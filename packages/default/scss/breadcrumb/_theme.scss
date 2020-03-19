@@ -2,6 +2,12 @@
 
     // Breadcrumb
     .k-breadcrumb {
+        @extend .k-text-selection;
+        @include fill(
+            $breadcrumb-text,
+            $breadcrumb-bg,
+            $breadcrumb-border
+        );
 
         &:focus,
         &.k-state-focused {
