@@ -2,12 +2,12 @@
 
     // Window
     .k-window {
+        @extend .k-text-selection;
         @include fill(
             $window-text,
             $window-bg,
             $window-border
         );
-        @include use-background-clip();
         @include box-shadow( $window-shadow );
     }
 
@@ -26,8 +26,6 @@
             $window-titlebar-bg,
             $window-titlebar-border
         );
-        @include use-background-clip();
-
     }
 
 }
