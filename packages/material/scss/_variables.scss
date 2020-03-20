@@ -1691,6 +1691,9 @@ $upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 // Window
 $window-border-width: 0 !default;
 $window-border-radius: 4px !default;
+$window-font-family: $font-family !default;
+$window-font-size: $font-size !default;
+$window-line-height: $line-height !default;
 
 $window-titlebar-padding-x: 24px !default;
 $window-titlebar-padding-y: 24px !default;
