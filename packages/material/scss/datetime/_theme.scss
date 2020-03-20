@@ -5,6 +5,7 @@
     .k-datepicker,
     .k-datetimepicker,
     .k-timepicker {
+        @extend .k-text-selection;
 
         // Wrappers
         .k-dateinput-wrap,
