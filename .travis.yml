@@ -1,10 +1,6 @@
-sudo: required
-
+os: linux
 language: node_js
-
-addons:
-  chrome: stable
-  firefox: latest
+node_js: 12
 
 cache:
   directories:
@@ -17,21 +13,65 @@ cache:
 notifications:
   email: false
 
-node_js:
-  - '12'
 
-before_install:
-  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then printf "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> ~/.npmrc; fi'
-
-before_script:
-  - lerna bootstrap --concurrency=1
-
-script:
-  - npm run ci:full
-
-after_success:
-  - ./build/publish.sh
-
+# Skip builds on version tags
 branches:
   except:
     - "/\\.*@\\d+\\.\\d+\\.\\d+$/"
+
+
+# Stages
+stages:
+  # Pull request
+  - name: Pull request
+    if: type == pull_request
+
+  # Branch push, except master and dev
+  - name: Push in branch
+    if: type == push && branch NOT IN (master, develop)
+
+  # Master and develop
+  - name: Master and develop
+    if: type != pull_request && branch IN (master, develop)
+
+
+# Jobs
+jobs:
+  # Pull request
+  - stage: Pull request
+    install:
+      - npm install
+      - lerna bootstrap --concurrency=1
+    script:
+      - npm run lint
+      - npm run api-check
+      - npm run sass
+      - npm run dart
+
+  # Branch push, except master and dev
+  - stage: Push in branch
+    addons:
+      chrome: stable
+      firefox: latest
+    install:
+      - npm install
+      - lerna bootstrap --concurrency=1
+    script:
+      - npm run sass
+      - npm run karma-single
+      - npm run visual-tests
+
+  # Master and develop
+  - stage: Master and develop
+    install:
+      - npm install
+      - lerna bootstrap --concurrency=1
+    script:
+      - npm run lint
+      - npm run api-check
+      - npm run sass
+      - npm run sass:swatches
+      - npm run dart
+      - npm run dart:swatches
+    after_success:
+      - ./build/publish.sh
