@@ -956,6 +956,10 @@ $autocomplete-focused-shadow: $input-focused-shadow !default;
 $colorpicker-rect-padding: $padding-x !default;
 $colorpicker-margin: 8px !default;
 $colorpicker-width: 310px !default;
+$colorpicker-border-width: 1px !default;
+$colorpicker-font-family: $font-family !default;
+$colorpicker-font-size: $font-size !default;
+$colorpicker-line-height: $line-height !default;
 $colorpicker-draghandle-width: 14px !default;
 $colorpicker-draghandle-height: 14px !default;
 $colorpicker-slider-track-size: 10px !default;
@@ -1323,6 +1327,7 @@ $rating-icon-focused-selected-shadow: 0 2px 3.6px rgba($selected-bg, .4) !defaul
 
 // Calendar
 $calendar-border-width: 1px !default;
+$calendar-font-family: $font-family !default;
 $calendar-font-size: $font-size !default;
 $calendar-line-height: $line-height !default;
 
@@ -1795,11 +1800,19 @@ $tooltip-error-border: $tooltip-error-bg !default;
 
 
 // Breadcrumb
-$breadcrumb-container-padding-x: 0 !default;
-$breadcrumb-container-padding-y: 0 !default;
+$breadcrumb-margin-x: null !default;
+$breadcrumb-margin-y: null !default;
+$breadcrumb-padding-x: null !default;
+$breadcrumb-padding-y: null !default;
+$breadcrumb-border-width: 0 !default;
 
-$breadcrumb-container-margin-x: 0 !default;
-$breadcrumb-container-margin-y: 0 !default;
+$breadcrumb-font-family: $font-family !default;
+$breadcrumb-font-size: $font-size !default;
+$breadcrumb-line-height: $line-height !default;
+
+$breadcrumb-bg: $component-bg !default;
+$breadcrumb-text: $component-text !default;
+$breadcrumb-border: $component-border !default;
 
 $breadcrumb-delimiter-icon-font-size: $icon-size * .75 !default;
 $breadcrumb-delimiter-icon-padding-x: $padding-x-lg / 2 !default;
@@ -2038,6 +2051,9 @@ $card-padding-x: 16px !default;
 $card-padding-y: 12px !default;
 $card-border-width: 1px !default;
 $card-border-radius: $border-radius-lg !default;
+$card-font-family: $font-family !default;
+$card-font-size: $font-size !default;
+$card-line-height: $line-height !default;
 $card-box-shadow: null !default;
 $card-box-focused-shadow: 0 0 4px 0 rgba(0, 0, 0, .3) !default;
 
@@ -2386,6 +2402,10 @@ $scheduler-nonwork-bg: mix( $component-text, $component-bg, 3% ) !default;
 // Chat
 $chat-padding-x: 16px !default;
 $chat-padding-y: 16px !default;
+$chat-border-width: 1px !default;
+$chat-font-family: $font-family !default;
+$chat-font-size: $font-size !default;
+$chat-line-height: $line-height !default;
 
 $chat-item-spacing-x: 8px !default;
 $chat-item-spacing-y: 16px !default;

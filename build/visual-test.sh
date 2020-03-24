@@ -46,9 +46,12 @@ commit_changes() {
     git push origin $TRAVIS_BRANCH --quiet > /dev/null 2>&1
 }
 
-./build/create-screenshots.sh default
-./build/create-screenshots.sh bootstrap
-./build/create-screenshots.sh material
+for theme in default bootstrap material
+do
+    ./build/create-screenshots.sh $theme &
+done
+
+wait
 
 has_changes=0
 has_untracked=0
