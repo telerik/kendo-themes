@@ -74,4 +74,5 @@ jobs:
       - npm run dart
       - npm run dart:swatches
     after_success:
+      - printf "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> ~/.npmrc
       - ./build/publish.sh
