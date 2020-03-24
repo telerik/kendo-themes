@@ -5,7 +5,7 @@
     .k-datepicker,
     .k-datetimepicker,
     .k-timepicker {
-        background-color: transparent;
+        @extend .k-text-selection;
 
         .k-dateinput-wrap,
         .k-picker-wrap {
