@@ -40,7 +40,12 @@
     .k-chart,
     .k-sparkline,
     .k-stockchart {
-        background-color: transparent;
+        @extend .k-text-selection;
+        @include fill(
+            $chart-text,
+            transparent,
+            $chart-border
+        );
 
         .k-popup {
             background: transparent;
