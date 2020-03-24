@@ -6,25 +6,6 @@
     .k-datetimepicker,
     .k-timepicker {
         @extend .k-text-selection;
-
-        .k-dateinput-wrap,
-        .k-picker-wrap {
-            // Invalid
-            &.k-invalid,
-            &.k-invalid:hover,
-            &.k-state-invalid {
-                border-color: $invalid-border;
-            }
-        }
-
-        // Invalid
-        &.ng-invalid.ng-touched,
-        &.ng-invalid.ng-dirty {
-            .k-dateinput-wrap,
-            .k-picker-wrap {
-                border-color: $invalid-border;
-            }
-        }
     }
 
     // Shared
@@ -70,14 +51,6 @@
                 @include box-shadow($datetime-focused-shadow);
 
                 .k-select {}
-            }
-
-            &.k-state-invalid {
-                border-color: $error;
-            }
-
-            &.k-invalid {
-                border-color: $invalid-border;
             }
         }
 
@@ -246,17 +219,39 @@
 
             .k-select {}
         }
+    }
 
-        // Invalid state
-        &.k-state-invalid {
-            .k-textbox {
-                border-color: $error;
+    .k-dateinput,
+    .k-datepicker,
+    .k-datetimepicker,
+    .k-timepicker {
+        .k-dateinput-wrap,
+        .k-picker-wrap {
+            // Invalid
+            &.k-invalid,
+            &.k-invalid:hover,
+            &.k-state-invalid {
+                border-color: $invalid-border;
+
+                &:focus,
+                &.k-state-focused {
+                    @include box-shadow($invalid-shadow);
+                }
             }
+        }
+        // Invalid
+        &.k-state-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            .k-dateinput-wrap,
+            .k-picker-wrap {
+                border-color: $invalid-border;
 
-            .k-i-warning {
-                color: $error;
+                &:focus,
+                &.k-state-focused {
+                    @include box-shadow($invalid-shadow);
+                }
             }
         }
     }
-
 }

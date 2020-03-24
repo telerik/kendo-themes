@@ -10,11 +10,18 @@
             }
         }
 
+        .k-form-legend {
+            @include fill ( $border: $form-legend-border-color );
+        }
+
         .k-field-info {
             @include fill ( $color: lighten($body-text, 33%) );
         }
 
-        .k-alert-error {
+        .k-alert-error,
+        .k-form-error,
+        .k-text-error,
+        .k-form-field-error .k-label {
             @include fill ( $color: $error );
         }
     }
