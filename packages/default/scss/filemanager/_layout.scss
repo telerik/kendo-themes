@@ -66,8 +66,11 @@
 
     .k-filemanager-listview {
         border-width: $filemanager-listview-border-width;
-        display: flex;
-        flex-flow: row wrap;
+
+        .k-listview-content {
+            display: flex;
+            flex-flow: row wrap;
+        }
 
         .k-item {
             padding: $filemanager-listview-item-padding-y $filemanager-listview-item-padding-x;
