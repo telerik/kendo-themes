@@ -1,6 +1,7 @@
 @include exports("combobox/theme") {
 
     .k-combobox {
+        @extend .k-text-selection;
 
         // Normal state
         .k-dropdown-wrap {
@@ -9,7 +10,6 @@
                 $combobox-bg,
                 $combobox-border
             );
-            @include use-background-clip();
 
             // Invalid
             &.k-invalid,

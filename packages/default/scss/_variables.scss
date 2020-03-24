@@ -1648,6 +1648,9 @@ $upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 // Window
 $window-border-width: 0 !default;
 $window-border-radius: 0 !default;
+$window-font-family: $font-family !default;
+$window-font-size: $font-size !default;
+$window-line-height: $line-height !default;
 
 $window-titlebar-padding-x: 16px !default;
 $window-titlebar-padding-y: 12px !default;
@@ -1663,7 +1666,7 @@ $window-inner-padding-y: 16px !default;
 
 $window-bg: $component-bg !default;
 $window-text: $component-text !default;
-$window-border: rgba(0, 0, 0, .08) !default;
+$window-border: $component-border !default;
 
 $window-titlebar-bg: $header-bg !default;
 $window-titlebar-text: $header-text !default;
@@ -1701,6 +1704,9 @@ $drawer-text: $base-text !default;
 $drawer-bg: $base-bg !default;
 $drawer-border: $base-border !default;
 $drawer-border-width: 1px !default;
+$drawer-font-family: $font-family !default;
+$drawer-font-size: $font-size !default;
+$drawer-line-height: $line-height !default;
 $drawer-content-padding-x: $padding-x !default;
 $drawer-content-padding-y: $padding-y !default;
 
@@ -2668,7 +2674,10 @@ $series-e: #2d73f5 !default;
 /// @group charts
 $series-f: #aa46be !default;
 
+$chart-border-width: 0 !default;
+$chart-font-family: $font-family !default;
 $chart-font-size: $font-size !default;
+$chart-line-height: $line-height !default;
 $chart-font-size-sm: 11px !default;
 $chart-font-size-md: 12px !default;
 $chart-font-size-lg: 16px !default;
@@ -2687,6 +2696,8 @@ $chart-minor-lines: rgba(0, 0, 0, .04) !default;
 $chart-area-opacity: .8 !default;
 
 $chart-bg: $component-bg !default;
+$chart-text: $component-text !default;
+$chart-border: $component-border !default;
 
 $chart-tap-highlight-color: rgba(0, 0, 0, 0);
 
