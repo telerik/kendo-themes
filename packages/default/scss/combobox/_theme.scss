@@ -16,6 +16,11 @@
             &.k-invalid:hover,
             &.k-state-invalid {
                 border-color: $invalid-border;
+
+                &:focus,
+                &.k-state-focused {
+                    @include box-shadow($invalid-shadow);
+                }
             }
         }
 
@@ -61,10 +66,16 @@
         }
 
         // Invalid
+        &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
             .k-dropdown-wrap {
                 border-color: $invalid-border;
+
+                &:focus,
+                &.k-state-focused {
+                    @include box-shadow($invalid-shadow);
+                }
             }
         }
     }

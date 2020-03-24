@@ -130,6 +130,16 @@
             width: if($use-picker-select-width, $button-inner-calc-size, null);
             border-width: 0;
         }
+
+        .k-rtl &,
+        &[dir="rtl"] {
+            .k-picker-wrap {
+                .k-select {
+                    @include border-left-radius-only();
+                }
+            }
+        }
+
     }
     .k-colorpicker + .k-animation-container {
         .k-popup {

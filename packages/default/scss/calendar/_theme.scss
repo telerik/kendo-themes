@@ -239,3 +239,17 @@
     }
 
 }
+
+@include exports("daterangepicker/theme") {
+
+    //jQuery DateRangePicker
+    .k-daterangepicker {
+        // Invalid
+        &.k-state-invalid {
+            .k-dateinput-wrap {
+                border-color: $invalid-border;
+            }
+        }
+    }
+
+}

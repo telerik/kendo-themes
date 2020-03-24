@@ -2,6 +2,33 @@
 
     .k-multiselect {
 
+        &.k-state-focused {
+            > .k-multiselect-wrap {
+                @include fill(
+                    $multiselect-focused-text,
+                    $multiselect-focused-bg,
+                    $multiselect-focused-border
+                );
+                @include box-shadow($multiselect-focused-shadow);
+
+                // Invalid + focused
+                &.k-invalid,
+                &.k-invalid:hover,
+                &.k-state-invalid {
+                    @include box-shadow($invalid-shadow);
+                }
+            }
+            // Invalid + focused
+            &.k-state-invalid,
+            &.ng-invalid.ng-touched,
+            &.ng-invalid.ng-dirty {
+                .k-multiselect-wrap {
+                    @include box-shadow($invalid-shadow);
+                }
+            }
+
+        }
+
         .k-multiselect-wrap {
             @include fill(
                 $multiselect-text,
@@ -65,18 +92,8 @@
             }
         }
 
-        &.k-state-focused {
-            > .k-multiselect-wrap {
-                @include fill(
-                    $multiselect-focused-text,
-                    $multiselect-focused-bg,
-                    $multiselect-focused-border
-                );
-                @include box-shadow($multiselect-focused-shadow);
-            }
-        }
-
-        // Invalid
+        // Invalid,
+        &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
             .k-multiselect-wrap {

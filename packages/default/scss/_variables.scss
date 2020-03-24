@@ -657,10 +657,42 @@ $message-box-border-level: -9 !default;
 // Forms
 $form-spacer: $padding-x * 2 !default;
 
+$form-font-size: $font-size !default;
 $form-line-height: $line-height !default;
 $form-line-height-em: $form-line-height * 1em !default;
 $form-line-height-sm: $line-height-sm !default;
 $form-line-height-lg: $line-height-lg !default;
+
+$form-label-optional-margin-x: 10px !default;
+$form-label-optional-font-size: 12px !default;
+$form-label-optional-font-style: italic !default;
+
+$form-fieldset-margin: 2rem 0 0 !default;
+$form-fieldset-padding: 0 !default;
+
+$form-legend-margin: 0 0 1rem !default;
+$form-legend-padding: 0 !default;
+$form-legend-border-width: 0 0 2px !default;
+$form-legend-border-style: solid !default;
+$form-legend-border-color: $component-border !default;
+$form-legend-width: 100% !default;
+$form-legend-font-size: 14px !default;
+$form-legend-text-transform: uppercase !default;
+
+$form-radio-list-margin: 0 !default;
+$form-radio-list-padding: 0 !default;
+$form-radio-list-horizontal-item-margin-x: 10px !default;
+
+$form-button-margin-x: 8px !default;
+
+$form-hint-font-size: 11px !default;
+$form-hint-font-style: italic !default;
+
+$form-field-margin-top: 1rem !default;
+
+$horizontal-form-label-padding-top: 5px !default;
+$horizontal-form-label-margin-x: 10px !default;
+$horizontal-form-label-width: 25% !default;
 
 $inline-form-element-width: 25% !default;
 
@@ -903,7 +935,7 @@ $checkbox-disabled-checked-text: null !default;
 $checkbox-disabled-checked-border: null !default;
 $checkbox-invalid-bg: null !default;
 $checkbox-invalid-text: null !default;
-$checkbox-invalid-border: $checkbox-checked-bg !default;
+$checkbox-invalid-border: $invalid-border !default;
 
 
 // Radio Buttons

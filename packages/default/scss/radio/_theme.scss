@@ -27,6 +27,14 @@
     }
 
 
+    // Invalid state
+    .k-radio.k-state-invalid,
+    .k-radio.ng-invalid.ng-touched,
+    .k-radio.ng-invalid.ng-dirty {
+        @include fill( $border: $invalid-border );
+    }
+
+
     // Checked
     .k-radio:checked {
         @include fill(

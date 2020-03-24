@@ -52,6 +52,7 @@
         }
 
         // Invalid state
+        &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
             .k-dropdown-wrap {

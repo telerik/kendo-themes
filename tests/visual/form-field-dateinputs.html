@@ -1,0 +1,1691 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Form Field DateInputs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        section {
+            padding: 30px;
+            border: 1px dashed grey;
+        }
+
+        .test-heading {
+            margin: 0 0 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <section>
+            <h2 class="test-heading">Vertical/Default Form (Angular)</h2>
+
+            <div class="k-messagebox k-messagebox-error">
+                Error: The quick brown fox jumps over the lazy dog.
+            </div>
+
+            <form class="k-form ng-invalid">
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">Calendar:</label>
+                    <kendo-calendar class="k-widget k-calendar k-calendar-infinite ng-invalid ng-touched">
+                        <kendo-calendar-navigation class="k-calendar-navigation">
+                            <span class="k-calendar-navigation-highlight"></span>
+                            <kendo-virtualization class="k-content k-scrollable">
+                                <ul class="k-reset">
+                                    <li><span>Nov</span></li>
+                                    <li><span>Dec</span></li>
+                                    <li><span class="k-calendar-navigation-marker">2018</span></li>
+                                    <li><span>Feb</span></li>
+                                    <li><span>Mar</span></li>
+                                    <li><span>Apr</span></li>
+                                    <li><span>May</span></li>
+                                    <li><span>Jun</span></li>
+                                    <li><span>Jul</span></li>
+                                    <li><span>Aug</span></li>
+                                    <li><span>Sep</span></li>
+                                    <li><span>Oct</span></li>
+                                    <li><span>Nov</span></li>
+                                    <li><span>Dec</span></li>
+                                    <li><span class="k-calendar-navigation-marker">2019</span></li>
+                                    <li><span>Feb</span></li>
+                                    <li><span>Mar</span></li>
+                                    <li><span>Apr</span></li>
+                                    <li><span>May</span></li>
+                                    <li><span>Jun</span></li>
+                                    <li><span>Jul</span></li>
+                                    <li><span>Aug</span></li>
+                                    <li><span>Sep</span></li>
+                                    <li><span>Oct</span></li>
+                                    <li><span>Nov</span></li>
+                                    <li><span>Dec</span></li>
+                                    <li><span class="k-calendar-navigation-marker">2020</span></li>
+                                    <li><span>Feb</span></li>
+                                    <li><span>Mar</span></li>
+                                    <li><span>Apr</span></li>
+                                </ul>
+                                <!-- virtualizaton scrollbar -->
+                                <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
+                            </kendo-virtualization>
+                        </kendo-calendar-navigation>
+                        <kendo-calendar-viewlist class="k-calendar-view k-calendar-monthview">
+                            <kendo-calendar-header class="k-calendar-header">
+                                <span class="k-button k-title">April 2018</span>
+                                <span class="k-today k-state-disabled">Today</span>
+                            </kendo-calendar-header>
+                            <table class="k-calendar-weekdays" style="table-layout: auto;">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 14%;">Su</th>
+                                        <th style="width: 14%;">Mo</th>
+                                        <th style="width: 14%;">Tu</th>
+                                        <th style="width: 14%;">We</th>
+                                        <th style="width: 14%;">Th</th>
+                                        <th style="width: 14%;">Fr</th>
+                                        <th style="width: 14%;">Sa</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <kendo-virtualization class="k-content k-scrollable">
+                                <table>
+                                    <colgroup>
+                                        <col><col><col><col><col><col><col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col" colspan="7">April 2018</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="k-weekend"><span class="k-link">1</span></td>
+                                            <td><span class="k-link">2</span></td>
+                                            <td class="k-today"><span class="k-link">3</span></td>
+                                            <td><span class="k-link">4</span></td>
+                                            <td><span class="k-link">5</span></td>
+                                            <td><span class="k-link">6</span></td>
+                                            <td class="k-weekend"><span class="k-link">7</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="k-weekend"><span class="k-link">8</span></td>
+                                            <td><span class="k-link">9</span></td>
+                                            <td><span class="k-link">10</span></td>
+                                            <td><span class="k-link">11</span></td>
+                                            <td><span class="k-link">12</span></td>
+                                            <td><span class="k-link">13</span></td>
+                                            <td class="k-weekend"><span class="k-link">14</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="k-weekend"><span class="k-link">15</span></td>
+                                            <td><span class="k-link">16</span></td>
+                                            <td><span class="k-link">17</span></td>
+                                            <td><span class="k-link">18</span></td>
+                                            <td><span class="k-link">19</span></td>
+                                            <td><span class="k-link">20</span></td>
+                                            <td class="k-weekend"><span class="k-link">21</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="k-weekend"><span class="k-link">22</span></td>
+                                            <td><span class="k-link">23</span></td>
+                                            <td><span class="k-link">24</span></td>
+                                            <td><span class="k-link">25</span></td>
+                                            <td><span class="k-link">26</span></td>
+                                            <td><span class="k-link">27</span></td>
+                                            <td class="k-weekend"><span class="k-link">28</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="k-weekend"><span class="k-link">29</span></td>
+                                            <td><span class="k-link">30</span></td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col" colspan="7">May 2018</th>
+                                        </tr>
+                                        <!-- content omitted for brevity-->
+                                    </tbody>
+                                </table>
+                                <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
+                            </kendo-virtualization>
+                        </kendo-calendar-viewlist>
+                    </kendo-calendar>
+
+                    <kendo-form-hint class="k-form-hint k-text-start">
+                        <span>Hint: Birth date</span>
+                    </kendo-form-hint>
+
+                    <kendo-form-error class="k-form-error k-text-start">
+                        Error: required
+                    </kendo-form-error>
+                </kendo-form-field>
+
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">DateInput:</label>
+                    <kendo-dateinput class="k-widget k-dateinput ng-touched ng-invalid">
+                        <span class="k-dateinput-wrap">
+                            <input class="k-input" value="11/10/2000">
+                        </span>
+                    </kendo-dateinput>
+
+                    <kendo-form-hint class="k-form-hint k-text-start">
+                        <span>Hint: Birth date</span>
+                    </kendo-form-hint>
+
+                    <kendo-form-error class="k-form-error k-text-start">
+                        Error: required
+                    </kendo-form-error>
+                </kendo-form-field>
+
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">DatePicker:</label>
+                    <kendo-datepicker class="k-widget k-datepicker k-header ng-invalid ng-touched">
+                        <span class="k-picker-wrap k-state-default">
+                            <kendo-dateinput class="k-widget k-dateinput">
+                                <span class="k-dateinput-wrap">
+                                    <input class="k-input">
+                                </span>
+                            </kendo-dateinput>
+                            <span class="k-select">
+                                <span class="k-icon k-i-calendar"></span>
+                            </span>
+                        </span>
+                    </kendo-datepicker>
+
+                    <kendo-form-hint class="k-form-hint k-text-start">
+                        <span>Hint: Birth date</span>
+                    </kendo-form-hint>
+
+                    <kendo-form-error class="k-form-error k-text-start">
+                        Error: required
+                    </kendo-form-error>
+                </kendo-form-field>
+
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">DateTimePicker:</label>
+                    <kendo-datetimepicker class="k-widget k-datetimepicker ng-invalid ng-touched">
+                        <span class="k-picker-wrap k-state-default">
+                            <kendo-dateinput class="k-widget k-dateinput">
+                                <span class="k-dateinput-wrap">
+                                    <input class="k-input">
+                                </span>
+                            </kendo-dateinput>
+                            <span class="k-select">
+                                <span class="k-link k-link-date">
+                                    <span class="k-icon k-i-calendar"></span>
+                                </span>
+                            </span>
+                        </span>
+                    </kendo-datetimepicker>
+
+                    <kendo-form-hint class="k-form-hint k-text-start">
+                        <span>Hint: Birth date</span>
+                    </kendo-form-hint>
+
+                    <kendo-form-error class="k-form-error k-text-start">
+                        Error: required
+                    </kendo-form-error>
+                </kendo-form-field>
+
+                <kendo-daterange>
+                    <kendo-form-field class="k-form-field k-form-field-error">
+                        <label class="k-label">Start (DateRange)</label>
+                        <kendo-dateinput class="k-widget k-dateinput ng-invalid ng-touched">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input">
+                            </span>
+                        </kendo-dateinput>
+
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            Hint: hint text
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            Error: error text
+                        </kendo-form-error>
+                    </kendo-form-field>
+
+                    <kendo-form-field class="k-form-field k-form-field-error">
+                        <label class="k-label">End (DateRange)</label>
+                        <kendo-dateinput class="k-widget k-dateinput ng-invalid ng-touched">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input">
+                            </span>
+                        </kendo-dateinput>
+
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            Hint: hint text
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            Error: error text
+                        </kendo-form-error>
+                    </kendo-form-field>
+                    <kendo-daterange-popup></kendo-daterange-popup>
+                </kendo-daterange>
+
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">TimePicker:</label>
+                    <kendo-timepicker class="k-widget k-timepicker k-header ng-touched ng-invalid">
+                        <span class="k-picker-wrap k-state-default">
+                            <kendo-dateinput class="k-widget k-dateinput">
+                                <span class="k-dateinput-wrap">
+                                    <input class="k-input">
+                                </span>
+                            </kendo-dateinput>
+                            <span class="k-select">
+                                <span class="k-icon k-i-clock"></span>
+                            </span>
+                        </span>
+                    </kendo-timepicker>
+
+                    <kendo-form-hint class="k-form-hint k-text-start">
+                        <span>Hint: Birth date</span>
+                    </kendo-form-hint>
+
+                    <kendo-form-error class="k-form-error k-text-start">
+                        Error: required
+                    </kendo-form-error>
+                </kendo-form-field>
+
+                <div class="k-form-buttons">
+                    <button class="k-button k-primary">Submit</button>
+                    <button class="k-button">Clear</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2 class="test-heading">Horizontal Form (Angular)</h2>
+
+            <div class="k-messagebox k-messagebox-error">
+                Error: The quick brown fox jumps over the lazy dog.
+            </div>
+
+            <form class="k-form k-form-horizontal ng-invalid">
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">Calendar:</label>
+
+                    <div class="k-form-field-wrap">
+                        <kendo-calendar class="k-widget k-calendar k-calendar-infinite ng-invalid ng-touched">
+                            <kendo-calendar-navigation class="k-calendar-navigation">
+                                <span class="k-calendar-navigation-highlight"></span>
+                                <kendo-virtualization class="k-content k-scrollable">
+                                    <ul class="k-reset">
+                                        <li><span>Nov</span></li>
+                                        <li><span>Dec</span></li>
+                                        <li><span class="k-calendar-navigation-marker">2018</span></li>
+                                        <li><span>Feb</span></li>
+                                        <li><span>Mar</span></li>
+                                        <li><span>Apr</span></li>
+                                        <li><span>May</span></li>
+                                        <li><span>Jun</span></li>
+                                        <li><span>Jul</span></li>
+                                        <li><span>Aug</span></li>
+                                        <li><span>Sep</span></li>
+                                        <li><span>Oct</span></li>
+                                        <li><span>Nov</span></li>
+                                        <li><span>Dec</span></li>
+                                        <li><span class="k-calendar-navigation-marker">2019</span></li>
+                                        <li><span>Feb</span></li>
+                                        <li><span>Mar</span></li>
+                                        <li><span>Apr</span></li>
+                                        <li><span>May</span></li>
+                                        <li><span>Jun</span></li>
+                                        <li><span>Jul</span></li>
+                                        <li><span>Aug</span></li>
+                                        <li><span>Sep</span></li>
+                                        <li><span>Oct</span></li>
+                                        <li><span>Nov</span></li>
+                                        <li><span>Dec</span></li>
+                                        <li><span class="k-calendar-navigation-marker">2020</span></li>
+                                        <li><span>Feb</span></li>
+                                        <li><span>Mar</span></li>
+                                        <li><span>Apr</span></li>
+                                    </ul>
+                                    <!-- virtualizaton scrollbar -->
+                                    <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
+                                </kendo-virtualization>
+                            </kendo-calendar-navigation>
+                            <kendo-calendar-viewlist class="k-calendar-view k-calendar-monthview">
+                                <kendo-calendar-header class="k-calendar-header">
+                                    <span class="k-button k-title">April 2018</span>
+                                    <span class="k-today k-state-disabled">Today</span>
+                                </kendo-calendar-header>
+                                <table class="k-calendar-weekdays" style="table-layout: auto;">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 14%;">Su</th>
+                                            <th style="width: 14%;">Mo</th>
+                                            <th style="width: 14%;">Tu</th>
+                                            <th style="width: 14%;">We</th>
+                                            <th style="width: 14%;">Th</th>
+                                            <th style="width: 14%;">Fr</th>
+                                            <th style="width: 14%;">Sa</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <kendo-virtualization class="k-content k-scrollable">
+                                    <table>
+                                        <colgroup>
+                                            <col><col><col><col><col><col><col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col" colspan="7">April 2018</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-weekend"><span class="k-link">1</span></td>
+                                                <td><span class="k-link">2</span></td>
+                                                <td class="k-today"><span class="k-link">3</span></td>
+                                                <td><span class="k-link">4</span></td>
+                                                <td><span class="k-link">5</span></td>
+                                                <td><span class="k-link">6</span></td>
+                                                <td class="k-weekend"><span class="k-link">7</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-weekend"><span class="k-link">8</span></td>
+                                                <td><span class="k-link">9</span></td>
+                                                <td><span class="k-link">10</span></td>
+                                                <td><span class="k-link">11</span></td>
+                                                <td><span class="k-link">12</span></td>
+                                                <td><span class="k-link">13</span></td>
+                                                <td class="k-weekend"><span class="k-link">14</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-weekend"><span class="k-link">15</span></td>
+                                                <td><span class="k-link">16</span></td>
+                                                <td><span class="k-link">17</span></td>
+                                                <td><span class="k-link">18</span></td>
+                                                <td><span class="k-link">19</span></td>
+                                                <td><span class="k-link">20</span></td>
+                                                <td class="k-weekend"><span class="k-link">21</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-weekend"><span class="k-link">22</span></td>
+                                                <td><span class="k-link">23</span></td>
+                                                <td><span class="k-link">24</span></td>
+                                                <td><span class="k-link">25</span></td>
+                                                <td><span class="k-link">26</span></td>
+                                                <td><span class="k-link">27</span></td>
+                                                <td class="k-weekend"><span class="k-link">28</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-weekend"><span class="k-link">29</span></td>
+                                                <td><span class="k-link">30</span></td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col" colspan="7">May 2018</th>
+                                            </tr>
+                                            <!-- content omitted for brevity-->
+                                        </tbody>
+                                    </table>
+                                    <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
+                                </kendo-virtualization>
+                            </kendo-calendar-viewlist>
+                        </kendo-calendar>
+
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: Birth date</span>
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            Error: required
+                        </kendo-form-error>
+                    </div>
+                </kendo-form-field>
+
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">DateInput:</label>
+
+                    <div class="k-form-field-wrap">
+                        <kendo-dateinput class="k-widget k-dateinput ng-touched ng-invalid">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" value="11/10/2000">
+                            </span>
+                        </kendo-dateinput>
+
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: Birth date</span>
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            Error: required
+                        </kendo-form-error>
+                    </div>
+                </kendo-form-field>
+
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">DatePicker:</label>
+
+                    <div class="k-form-field-wrap">
+                        <kendo-datepicker class="k-widget k-datepicker k-header ng-invalid ng-touched">
+                            <span class="k-picker-wrap k-state-default">
+                                <kendo-dateinput class="k-widget k-dateinput">
+                                    <span class="k-dateinput-wrap">
+                                        <input class="k-input">
+                                    </span>
+                                </kendo-dateinput>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-calendar"></span>
+                                </span>
+                            </span>
+                        </kendo-datepicker>
+
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: Birth date</span>
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            Error: required
+                        </kendo-form-error>
+                    </div>
+                </kendo-form-field>
+
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">DateTimePicker:</label>
+
+                    <div class="k-form-field-wrap">
+                        <kendo-datetimepicker class="k-widget k-datetimepicker ng-invalid ng-touched">
+                            <span class="k-picker-wrap k-state-default">
+                                <kendo-dateinput class="k-widget k-dateinput">
+                                    <span class="k-dateinput-wrap">
+                                        <input class="k-input">
+                                    </span>
+                                </kendo-dateinput>
+                                <span class="k-select">
+                                    <span class="k-link k-link-date">
+                                        <span class="k-icon k-i-calendar"></span>
+                                    </span>
+                                </span>
+                            </span>
+                        </kendo-datetimepicker>
+
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: Birth date</span>
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            Error: required
+                        </kendo-form-error>
+                    </div>
+                </kendo-form-field>
+
+                <kendo-daterange>
+                    <kendo-form-field class="k-form-field k-form-field-error">
+                        <label class="k-label">Start(DateRange)</label>
+
+                        <div class="k-form-field-wrap">
+                            <kendo-dateinput class="k-widget k-dateinput ng-invalid ng-touched">
+                                <span class="k-dateinput-wrap">
+                                    <input class="k-input">
+                                </span>
+                            </kendo-dateinput>
+
+                            <kendo-form-hint class="k-form-hint k-text-start">
+                                Hint: hint text
+                            </kendo-form-hint>
+
+                            <kendo-form-error class="k-form-error k-text-start">
+                                Error: error text
+                            </kendo-form-error>
+                        </div>
+                    </kendo-form-field>
+
+                    <kendo-form-field class="k-form-field k-form-field-error">
+                        <label class="k-label">End(DateRange)</label>
+
+                        <div class="k-form-field-wrap">
+                            <kendo-dateinput class="k-widget k-dateinput ng-invalid ng-touched">
+                                <span class="k-dateinput-wrap">
+                                    <input class="k-input">
+                                </span>
+                            </kendo-dateinput>
+
+                            <kendo-form-hint class="k-form-hint k-text-start">
+                                Hint: hint text
+                            </kendo-form-hint>
+
+                            <kendo-form-error class="k-form-error k-text-start">
+                                Error: error text
+                            </kendo-form-error>
+                        </div>
+                    </kendo-form-field>
+                    <kendo-daterange-popup></kendo-daterange-popup>
+                </kendo-daterange>
+
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">TimePicker:</label>
+
+                    <div class="k-form-field-wrap">
+                        <kendo-timepicker class="k-widget k-timepicker k-header ng-touched ng-invalid">
+                            <span class="k-picker-wrap k-state-default">
+                                <kendo-dateinput class="k-widget k-dateinput">
+                                    <span class="k-dateinput-wrap">
+                                        <input class="k-input">
+                                    </span>
+                                </kendo-dateinput>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-clock"></span>
+                                </span>
+                            </span>
+                        </kendo-timepicker>
+
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: Birth date</span>
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            Error: required
+                        </kendo-form-error>
+                    </div>
+                </kendo-form-field>
+
+                <div class="k-form-buttons">
+                    <button class="k-button k-primary">Submit</button>
+                    <button class="k-button">Clear</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2 class="test-heading">Vertical/Default Form (React)</h2>
+
+            <div class="k-messagebox k-messagebox-error">
+                Error: The quick brown fox jumps over the lazy dog.
+            </div>
+
+            <form class="k-form">
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">Calendar:</label>
+                    <div class="k-widget k-calendar k-calendar-infinite k-state-invalid">
+                        <div class="k-calendar-navigation">
+                           <span class="k-calendar-navigation-highlight"></span>
+                           <div class="k-content k-scrollable">
+                              <ul class="k-reset">
+                                 <li><span>Nov</span></li>
+                                 <li><span>Dec</span></li>
+                                 <li><span class="k-calendar-navigation-marker">2020</span></li>
+                                 <li><span>Feb</span></li>
+                                 <li><span>Mar</span></li>
+                                 <li><span>Apr</span></li>
+                                 <li><span>May</span></li>
+                                 <li><span>Jun</span></li>
+                                 <li><span>Jul</span></li>
+                                 <li><span>Aug</span></li>
+                                 <li><span>Sep</span></li>
+                                 <li><span>Oct</span></li>
+                                 <li><span>Nov</span></li>
+                                 <li><span>Dec</span></li>
+                                 <li><span class="k-calendar-navigation-marker">2021</span></li>
+                                 <li><span>Feb</span></li>
+                                 <li><span>Mar</span></li>
+                                 <li><span>Apr</span></li>
+                                 <li><span>May</span></li>
+                                 <li><span>Jun</span></li>
+                                 <li><span>Jul</span></li>
+                                 <li><span>Aug</span></li>
+                                 <li><span>Sep</span></li>
+                                 <li><span>Oct</span></li>
+                                 <li><span>Nov</span></li>
+                                 <li><span>Dec</span></li>
+                                 <li><span class="k-calendar-navigation-marker">2022</span></li>
+                                 <li><span>Feb</span></li>
+                                 <li><span>Mar</span></li>
+                                 <li><span>Apr</span></li>
+                              </ul>
+                              <div class="k-scrollable-placeholder"></div>
+                           </div>
+                        </div>
+                        <div class="k-calendar-view k-calendar-monthview">
+                           <div class="k-calendar-header">
+                               <span value="April 2020" class="k-button k-bare k-title">April 2020</span>
+                               <span class="k-today">TODAY</span>
+                            </div>
+                           <table class="k-calendar-weekdays">
+                              <colgroup>
+                                 <col>
+                                 <col>
+                                 <col>
+                                 <col>
+                                 <col>
+                                 <col>
+                                 <col>
+                              </colgroup>
+                              <thead>
+                                 <tr>
+                                    <th>Su</th>
+                                    <th>Mo</th>
+                                    <th>Tu</th>
+                                    <th>We</th>
+                                    <th>Th</th>
+                                    <th>Fr</th>
+                                    <th>Sa</th>
+                                 </tr>
+                              </thead>
+                           </table>
+                           <div class="k-content k-scrollable">
+                              <table style="transform: translateY(0);">
+                                 <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                 </colgroup>
+                                 <tbody>
+                                    <tr>
+                                       <th scope="col" colspan="7">April 2020</th>
+                                    </tr>
+                                    <tr>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td >1</span></td>
+                                       <td >2</span></td>
+                                       <td >3</span></td>
+                                       <td >4</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >5</span></td>
+                                       <td >6</span></td>
+                                       <td >7</span></td>
+                                       <td >8</span></td>
+                                       <td >9</span></td>
+                                       <td >10</span></td>
+                                       <td >11</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >12</span></td>
+                                       <td >13</span></td>
+                                       <td >14</span></td>
+                                       <td >15</span></td>
+                                       <td >16</span></td>
+                                       <td >17</span></td>
+                                       <td >18</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >19</span></td>
+                                       <td >20</span></td>
+                                       <td >21</span></td>
+                                       <td >22</span></td>
+                                       <td >23</span></td>
+                                       <td >24</span></td>
+                                       <td >25</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >26</span></td>
+                                       <td >27</span></td>
+                                       <td >28</span></td>
+                                       <td >29</span></td>
+                                       <td >30</span></td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                    </tr>
+                                 </tbody>
+                                 <tbody>
+                                    <tr>
+                                       <th scope="col" colspan="7">May 2020</th>
+                                    </tr>
+                                    <tr>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td >1</span></td>
+                                       <td >2</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >3</span></td>
+                                       <td >4</span></td>
+                                       <td >5</span></td>
+                                       <td >6</span></td>
+                                       <td >7</span></td>
+                                       <td >8</span></td>
+                                       <td >9</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >10</span></td>
+                                       <td >11</span></td>
+                                       <td >12</span></td>
+                                       <td >13</span></td>
+                                       <td >14</span></td>
+                                       <td >15</span></td>
+                                       <td >16</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >17</span></td>
+                                       <td >18</span></td>
+                                       <td >19</span></td>
+                                       <td >20</span></td>
+                                       <td >21</span></td>
+                                       <td >22</span></td>
+                                       <td >23</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >24</span></td>
+                                       <td >25</span></td>
+                                       <td >26</span></td>
+                                       <td >27</span></td>
+                                       <td >28</span></td>
+                                       <td >29</span></td>
+                                       <td >30</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >31</span></td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                    </tr>
+                                 </tbody>
+                                 <tbody>
+                                    <tr>
+                                       <th scope="col" colspan="7">June 2020</th>
+                                    </tr>
+                                    <tr>
+                                       <td>&nbsp;</td>
+                                       <td >1</span></td>
+                                       <td >2</span></td>
+                                       <td >3</span></td>
+                                       <td >4</span></td>
+                                       <td >5</span></td>
+                                       <td >6</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >7</span></td>
+                                       <td >8</span></td>
+                                       <td >9</span></td>
+                                       <td >10</span></td>
+                                       <td >11</span></td>
+                                       <td >12</span></td>
+                                       <td >13</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >14</span></td>
+                                       <td >15</span></td>
+                                       <td >16</span></td>
+                                       <td >17</span></td>
+                                       <td >18</span></td>
+                                       <td >19</span></td>
+                                       <td >20</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >21</span></td>
+                                       <td >22</span></td>
+                                       <td >23</span></td>
+                                       <td >24</span></td>
+                                       <td >25</span></td>
+                                       <td >26</span></td>
+                                       <td >27</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >28</span></td>
+                                       <td >29</span></td>
+                                       <td >30</span></td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                    </tr>
+                                 </tbody>
+                                 <tbody>
+                                    <tr>
+                                       <th scope="col" colspan="7">July 2020</th>
+                                    </tr>
+                                    <tr>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td >1</span></td>
+                                       <td >2</span></td>
+                                       <td >3</span></td>
+                                       <td >4</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >5</span></td>
+                                       <td >6</span></td>
+                                       <td >7</span></td>
+                                       <td >8</span></td>
+                                       <td >9</span></td>
+                                       <td >10</span></td>
+                                       <td >11</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >12</span></td>
+                                       <td >13</span></td>
+                                       <td >14</span></td>
+                                       <td >15</span></td>
+                                       <td >16</span></td>
+                                       <td >17</span></td>
+                                       <td >18</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >19</span></td>
+                                       <td >20</span></td>
+                                       <td >21</span></td>
+                                       <td >22</span></td>
+                                       <td >23</span></td>
+                                       <td >24</span></td>
+                                       <td >25</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >26</span></td>
+                                       <td >27</span></td>
+                                       <td >28</span></td>
+                                       <td >29</span></td>
+                                       <td >30</span></td>
+                                       <td >31</span></td>
+                                       <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                    </tr>
+                                 </tbody>
+                                 <tbody>
+                                    <tr>
+                                       <th scope="col" colspan="7">August 2020</th>
+                                    </tr>
+                                    <tr>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td >1</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >2</span></td>
+                                       <td >3</span></td>
+                                       <td >4</span></td>
+                                       <td >5</span></td>
+                                       <td >6</span></td>
+                                       <td >7</span></td>
+                                       <td >8</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >9</span></td>
+                                       <td >10</span></td>
+                                       <td >11</span></td>
+                                       <td >12</span></td>
+                                       <td >13</span></td>
+                                       <td >14</span></td>
+                                       <td >15</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >16</span></td>
+                                       <td >17</span></td>
+                                       <td >18</span></td>
+                                       <td >19</span></td>
+                                       <td >20</span></td>
+                                       <td >21</span></td>
+                                       <td >22</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >23</span></td>
+                                       <td >24</span></td>
+                                       <td >25</span></td>
+                                       <td >26</span></td>
+                                       <td >27</span></td>
+                                       <td >28</span></td>
+                                       <td >29</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td >30</span></td>
+                                       <td >31</span></td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                       <td>&nbsp;</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                              <div class="k-scrollable-placeholder" style="height: 556802px;"></div>
+                           </div>
+                        </div>
+                     </div>
+
+                    <div class="k-form-hint k-text-start">
+                            Hint: Birth date
+                        </div>
+
+                        <div class="k-form-error k-text-start">
+                            Error: required
+                        </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">DateInput:</label>
+                    <span class="k-widget k-dateinput k-state-invalid">
+                        <span class="k-dateinput-wrap">
+                            <input class="k-input" >
+                        </span>
+                    </span>
+
+                    <div class="k-form-hint k-text-start">
+                            Hint: Birth date
+                        </div>
+
+                        <div class="k-form-error k-text-start">
+                            Error: required
+                        </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">DatePicker:</label>
+                    <span class="k-widget k-datepicker k-state-invalid">
+                        <span class="k-picker-wrap k-state-default">
+                            <span class="k-widget k-dateinput">
+                                <span class="k-dateinput-wrap">
+                                    <input class="k-input" >
+                                </span>
+                            </span>
+                            <span class="k-select">
+                                <span class="k-icon k-i-calendar"></span>
+                            </span>
+                        </span>
+                    </span>
+
+                    <div class="k-form-hint k-text-start">
+                        Hint: Birth date
+                    </div>
+
+                    <div class="k-form-error k-text-start">
+                        Error: required
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">DateTimePicker:</label>
+                    <div class="k-widget k-datetimepicker k-state-invalid">
+                        <div class="k-picker-wrap k-state-default">
+                            <span class="k-widget k-dateinput">
+                                <span class="k-dateinput-wrap">
+                                    <input class="k-input" >
+                                </span>
+                            </span>
+                            <span class="k-select">
+                                <span class="k-link k-link-date">
+                                    <span class="k-icon k-i-calendar"></span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="k-form-hint k-text-start">
+                        Hint: Birth date
+                    </div>
+
+                    <div class="k-form-error k-text-start">
+                        Error: required
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">DateRangePicker:</label>
+                    <span class="k-daterangepicker">
+                        <span class="k-daterangepicker-wrap" style="display: inline-block;">
+                            <span class="k-textbox-container">
+                                <span class="k-widget k-dateinput k-state-invalid">
+                                    <span class="k-dateinput-wrap">
+                                        <input class="k-input" >
+                                    </span>
+                                </span>
+                                <label class="k-label">Start</label>
+                            </span>
+                            <span class="k-textbox-container">
+                                <span class="k-widget k-dateinput k-state-invalid">
+                                    <span class="k-dateinput-wrap">
+                                        <input class="k-input" >
+                                    </span>
+                                </span>
+                                <label class="k-label">End</label>
+                            </span>
+                        </span>
+                    </span>
+
+                    <div class="k-form-hint k-text-start">
+                        Hint: Birth date
+                    </div>
+
+                    <div class="k-form-error k-text-start">
+                        Error: required
+                    </div>
+                </div>
+
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">TimePicker:</label>
+                    <div class="k-widget k-timepicker k-state-invalid">
+                        <span class="k-picker-wrap k-state-default">
+                            <span class="k-widget k-dateinput">
+                                <span class="k-dateinput-wrap">
+                                    <input class="k-input" >
+                                </span>
+                            </span>
+                            <span class="k-select">
+                                <span class="k-icon k-i-clock"></span>
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="k-form-hint k-text-start">
+                        Hint: Birth date
+                    </div>
+
+                    <div class="k-form-error k-text-start">
+                        Error: required
+                    </div>
+                </div>
+
+                <div class="k-form-buttons">
+                    <button class="k-button k-primary">Submit</button>
+                    <button class="k-button">Clear</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2 class="test-heading">Horizontal Form (React)</h2>
+
+            <div class="k-messagebox k-messagebox-error">
+                Error: The quick brown fox jumps over the lazy dog.
+            </div>
+
+            <form class="k-form k-form-horizontal">
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">Calendar:</label>
+                    <div class="k-form-field-wrap">
+                        <div class="k-widget k-calendar k-calendar-infinite k-state-invalid" >
+                            <div class="k-calendar-navigation">
+                            <span class="k-calendar-navigation-highlight"></span>
+                            <div class="k-content k-scrollable">
+                                <ul class="k-reset" style="transform: translateY(0);">
+                                    <li><span>Nov</span></li>
+                                    <li><span>Dec</span></li>
+                                    <li><span class="k-calendar-navigation-marker">2020</span></li>
+                                    <li><span>Feb</span></li>
+                                    <li><span>Mar</span></li>
+                                    <li><span>Apr</span></li>
+                                    <li><span>May</span></li>
+                                    <li><span>Jun</span></li>
+                                    <li><span>Jul</span></li>
+                                    <li><span>Aug</span></li>
+                                    <li><span>Sep</span></li>
+                                    <li><span>Oct</span></li>
+                                    <li><span>Nov</span></li>
+                                    <li><span>Dec</span></li>
+                                    <li><span class="k-calendar-navigation-marker">2021</span></li>
+                                    <li><span>Feb</span></li>
+                                    <li><span>Mar</span></li>
+                                    <li><span>Apr</span></li>
+                                    <li><span>May</span></li>
+                                    <li><span>Jun</span></li>
+                                    <li><span>Jul</span></li>
+                                    <li><span>Aug</span></li>
+                                    <li><span>Sep</span></li>
+                                    <li><span>Oct</span></li>
+                                    <li><span>Nov</span></li>
+                                    <li><span>Dec</span></li>
+                                    <li><span class="k-calendar-navigation-marker">2022</span></li>
+                                    <li><span>Feb</span></li>
+                                    <li><span>Mar</span></li>
+                                    <li><span>Apr</span></li>
+                                </ul>
+                                <div class="k-scrollable-placeholder" style="height: 67472px;"></div>
+                            </div>
+                            </div>
+                            <div class="k-calendar-view k-calendar-monthview">
+                            <div class="k-calendar-header"><span value="April 2020" class="k-button k-bare k-title">April 2020</span><span class="k-today">TODAY</span></div>
+                            <table class="k-calendar-weekdays">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>Su</th>
+                                        <th>Mo</th>
+                                        <th>Tu</th>
+                                        <th>We</th>
+                                        <th>Th</th>
+                                        <th>Fr</th>
+                                        <th>Sa</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="k-content k-scrollable">
+                                <table style="transform: translateY(0);">
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                        <th scope="col" colspan="7">April 2020</th>
+                                        </tr>
+                                        <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td title="Wednesday, April 1, 2020"><span class="k-link">1</span></td>
+                                        <td title="Thursday, April 2, 2020"><span class="k-link">2</span></td>
+                                        <td >3</span></td>
+                                        <td >4</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >5</span></td>
+                                        <td >6</span></td>
+                                        <td >7</span></td>
+                                        <td >8</span></td>
+                                        <td >9</span></td>
+                                        <td >10</span></td>
+                                        <td >11</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >12</span></td>
+                                        <td >13</span></td>
+                                        <td >14</span></td>
+                                        <td >15</span></td>
+                                        <td >16</span></td>
+                                        <td >17</span></td>
+                                        <td >18</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >19</span></td>
+                                        <td >20</span></td>
+                                        <td >21</span></td>
+                                        <td >22</span></td>
+                                        <td >23</span></td>
+                                        <td >24</span></td>
+                                        <td >25</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >26</span></td>
+                                        <td >27</span></td>
+                                        <td >28</span></td>
+                                        <td >29</span></td>
+                                        <td >30</span></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                        <th scope="col" colspan="7">May 2020</th>
+                                        </tr>
+                                        <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td >1</span></td>
+                                        <td >2</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >3</span></td>
+                                        <td >4</span></td>
+                                        <td >5</span></td>
+                                        <td >6</span></td>
+                                        <td >7</span></td>
+                                        <td >8</span></td>
+                                        <td >9</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >10</span></td>
+                                        <td >11</span></td>
+                                        <td >12</span></td>
+                                        <td >13</span></td>
+                                        <td >14</span></td>
+                                        <td >15</span></td>
+                                        <td >16</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >17</span></td>
+                                        <td >18</span></td>
+                                        <td >19</span></td>
+                                        <td >20</span></td>
+                                        <td >21</span></td>
+                                        <td >22</span></td>
+                                        <td >23</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >24</span></td>
+                                        <td >25</span></td>
+                                        <td >26</span></td>
+                                        <td >27</span></td>
+                                        <td >28</span></td>
+                                        <td >29</span></td>
+                                        <td >30</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >31</span></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                        <th scope="col" colspan="7">June 2020</th>
+                                        </tr>
+                                        <tr>
+                                        <td>&nbsp;</td>
+                                        <td >1</span></td>
+                                        <td >2</span></td>
+                                        <td >3</span></td>
+                                        <td >4</span></td>
+                                        <td >5</span></td>
+                                        <td >6</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >7</span></td>
+                                        <td >8</span></td>
+                                        <td >9</span></td>
+                                        <td >10</span></td>
+                                        <td >11</span></td>
+                                        <td >12</span></td>
+                                        <td >13</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >14</span></td>
+                                        <td >15</span></td>
+                                        <td >16</span></td>
+                                        <td >17</span></td>
+                                        <td >18</span></td>
+                                        <td >19</span></td>
+                                        <td >20</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >21</span></td>
+                                        <td >22</span></td>
+                                        <td >23</span></td>
+                                        <td >24</span></td>
+                                        <td >25</span></td>
+                                        <td >26</span></td>
+                                        <td >27</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >28</span></td>
+                                        <td >29</span></td>
+                                        <td >30</span></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                        <th scope="col" colspan="7">July 2020</th>
+                                        </tr>
+                                        <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td >1</span></td>
+                                        <td >2</span></td>
+                                        <td >3</span></td>
+                                        <td >4</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >5</span></td>
+                                        <td >6</span></td>
+                                        <td >7</span></td>
+                                        <td >8</span></td>
+                                        <td >9</span></td>
+                                        <td >10</span></td>
+                                        <td >11</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >12</span></td>
+                                        <td >13</span></td>
+                                        <td >14</span></td>
+                                        <td >15</span></td>
+                                        <td >16</span></td>
+                                        <td >17</span></td>
+                                        <td >18</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >19</span></td>
+                                        <td >20</span></td>
+                                        <td >21</span></td>
+                                        <td >22</span></td>
+                                        <td >23</span></td>
+                                        <td >24</span></td>
+                                        <td >25</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >26</span></td>
+                                        <td >27</span></td>
+                                        <td >28</span></td>
+                                        <td >29</span></td>
+                                        <td >30</span></td>
+                                        <td >31</span></td>
+                                        <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                        <th scope="col" colspan="7">August 2020</th>
+                                        </tr>
+                                        <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td >1</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >2</span></td>
+                                        <td >3</span></td>
+                                        <td >4</span></td>
+                                        <td >5</span></td>
+                                        <td >6</span></td>
+                                        <td >7</span></td>
+                                        <td >8</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >9</span></td>
+                                        <td >10</span></td>
+                                        <td >11</span></td>
+                                        <td >12</span></td>
+                                        <td >13</span></td>
+                                        <td >14</span></td>
+                                        <td >15</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >16</span></td>
+                                        <td >17</span></td>
+                                        <td >18</span></td>
+                                        <td >19</span></td>
+                                        <td >20</span></td>
+                                        <td >21</span></td>
+                                        <td >22</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >23</span></td>
+                                        <td >24</span></td>
+                                        <td >25</span></td>
+                                        <td >26</span></td>
+                                        <td >27</span></td>
+                                        <td >28</span></td>
+                                        <td >29</span></td>
+                                        </tr>
+                                        <tr>
+                                        <td >30</span></td>
+                                        <td >31</span></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="k-scrollable-placeholder"></div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="k-form-hint k-text-start">
+                            Hint: Birth date
+                        </div>
+
+                        <div class="k-form-error k-text-start">
+                            Error: required
+                        </div>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">DateInput:</label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-widget k-dateinput k-state-invalid">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" >
+                            </span>
+                        </span>
+
+                        <div class="k-form-hint k-text-start">
+                            Hint: Birth date
+                        </div>
+
+                        <div class="k-form-error k-text-start">
+                            Error: required
+                        </div>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">DatePicker:</label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-widget k-datepicker k-state-invalid">
+                            <span class="k-picker-wrap k-state-default">
+                                <span class="k-widget k-dateinput">
+                                    <span class="k-dateinput-wrap">
+                                        <input class="k-input" >
+                                    </span>
+                                </span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-calendar"></span>
+                                </span>
+                            </span>
+                        </span>
+
+                        <div class="k-form-hint k-text-start">
+                            Hint: Birth date
+                        </div>
+
+                        <div class="k-form-error k-text-start">
+                            Error: required
+                        </div>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">DateTimePicker:</label>
+                    <div class="k-form-field-wrap">
+                        <div class="k-widget k-datetimepicker k-state-invalid">
+                            <div class="k-picker-wrap k-state-default">
+                                <span class="k-widget k-dateinput">
+                                    <span class="k-dateinput-wrap">
+                                        <input class="k-input" >
+                                    </span>
+                                </span>
+                                <span class="k-select">
+                                    <span class="k-link k-link-date">
+                                        <span class="k-icon k-i-calendar"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="k-form-hint k-text-start">
+                            Hint: Birth date
+                        </div>
+
+                        <div class="k-form-error k-text-start">
+                            Error: required
+                        </div>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">DateRangePicker:</label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-daterangepicker">
+                            <span class="k-daterangepicker-wrap" style="display: inline-block;">
+                                <span class="k-textbox-container">
+                                    <span class="k-widget k-dateinput k-state-invalid">
+                                        <span class="k-dateinput-wrap">
+                                            <input class="k-input" >
+                                        </span>
+                                    </span>
+                                    <label class="k-label">Start</label>
+                                </span>
+                                <span class="k-textbox-container">
+                                    <span class="k-widget k-dateinput k-state-invalid">
+                                        <span class="k-dateinput-wrap">
+                                            <input class="k-input" >
+                                        </span>
+                                    </span>
+                                    <label class="k-label">End</label>
+                                </span>
+                            </span>
+                        </span>
+
+                        <div class="k-form-hint k-text-start">
+                            Hint: Birth date
+                        </div>
+
+                        <div class="k-form-error k-text-start">
+                            Error: required
+                        </div>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">TimePicker:</label>
+                    <div class="k-form-field-wrap">
+                        <div class="k-widget k-timepicker k-state-invalid">
+                            <span class="k-picker-wrap k-state-default">
+                                <span class="k-widget k-dateinput">
+                                    <span class="k-dateinput-wrap">
+                                        <input class="k-input" >
+                                    </span>
+                                </span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-clock"></span>
+                                </span>
+                            </span>
+                        </div>
+
+                        <div class="k-form-hint k-text-start">
+                            Hint: Birth date
+                        </div>
+
+                        <div class="k-form-error k-text-start">
+                            Error: required
+                        </div>
+                    </div>
+                </div>
+
+                <div class="k-form-buttons">
+                    <button class="k-button k-primary">Submit</button>
+                    <button class="k-button">Clear</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>

@@ -1,6 +1,17 @@
 @include exports("multiselect/theme") {
 
     .k-multiselect {
+
+        &.k-state-focused {
+            > .k-multiselect-wrap {
+                border-color: $multiselect-focused-border;
+
+                .k-select {
+                    opacity: $icon-focused-opacity;
+                }
+            }
+        }
+
         .k-multiselect-wrap {
             background-color: transparent;
             border-color: $multiselect-border;
@@ -92,17 +103,8 @@
             }
         }
 
-        &.k-state-focused {
-            > .k-multiselect-wrap {
-                border-color: $multiselect-focused-border;
-
-                .k-select {
-                    opacity: $icon-focused-opacity;
-                }
-            }
-        }
-
         // Invalid
+        &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
             .k-multiselect-wrap {

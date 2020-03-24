@@ -11,9 +11,11 @@
         &.ng-invalid.ng-dirty {
             .k-textbox {
                 border-color: $invalid-border;
+            }
 
-                &:focus,
-                &.k-state-focused {
+            &:focus,
+            &.k-state-focused {
+                .k-textbox {
                     @include box-shadow($invalid-shadow);
                 }
             }

@@ -207,6 +207,10 @@
         }
     }
 
+    .k-text-disabled {
+        @include disabled( $disabled-styling );
+    }
+
 }
 
 

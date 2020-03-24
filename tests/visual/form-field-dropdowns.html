@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Form Field Dropdowns</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        section {
+            padding: 30px;
+            border: 1px dashed grey;
+        }
+
+        .test-heading {
+            margin: 0 0 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <section>
+            <h2 class="test-heading">Vertical/Default Form (Angular)</h2>
+
+            <div class="k-messagebox k-messagebox-error">
+                Error: The quick brown fox jumps over the lazy dog.
+            </div>
+
+            <form class="k-form ng-invalid">
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">AutoComplete:</label>
+                    <kendo-autocomplete class="k-widget k-autocomplete k-header ng-touched ng-invalid">
+                        <kendo-searchbar class="k-searchbar">
+                            <input class="k-input">
+                        </kendo-searchbar>
+                    </kendo-autocomplete>
+
+                    <kendo-form-hint class="k-form-hint k-text-start">
+                        Hint: Only in Europe
+                    </kendo-form-hint>
+
+                    <kendo-form-error class="k-form-error k-text-start">
+                        <div>Error: required</div>
+                    </kendo-form-error>
+                </kendo-form-field>
+
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">ComboBox:</label>
+                    <kendo-combobox class="k-widget k-combobox k-header k-combobox-clearable ng-invalid ng-touched">
+                        <span class="k-dropdown-wrap k-state-default">
+                            <kendo-searchbar class="k-searchbar">
+                                <input class="k-input">
+                            </kendo-searchbar>
+                            <span class="k-select">
+                                <span class="k-icon k-i-arrow-s"></span>
+                            </span>
+                        </span>
+                    </kendo-combobox>
+
+                    <kendo-form-hint class="k-form-hint k-text-start">
+                        Hint: Hint text
+                    </kendo-form-hint>
+
+                    <kendo-form-error class="k-form-error k-text-start">
+                        <div>Error: required</div>
+                    </kendo-form-error>
+                </kendo-form-field>
+
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">DropDownList:</label>
+                    <kendo-dropdownlist class="k-widget k-dropdown k-header ng-invalid ng-touched">
+                        <span class="k-dropdown-wrap k-state-default">
+                            <span class="k-input">Select gender</span>
+                            <span class="k-select">
+                                <span class="k-icon k-i-arrow-s"></span>
+                            </span>
+                        </span>
+                    </kendo-dropdownlist>
+
+                    <kendo-form-hint class="k-form-hint k-text-start">
+                        Hint: Hint text
+                    </kendo-form-hint>
+
+                    <kendo-form-error class="k-form-error k-text-start">
+                        <div>Error: required</div>
+                    </kendo-form-error>
+                </kendo-form-field>
+
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">MultiSelect:</label>
+                    <kendo-multiselect class="k-widget k-multiselect k-header ng-touched ng-invalid">
+                        <div class="k-multiselect-wrap k-floatwrap">
+                            <kendo-taglist>
+                                <ul class="k-reset">
+                                    <li class="k-button">
+                                        <span>Female</span>
+                                        <span class="k-select">
+                                            <span class="k-icon k-i-close"></span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </kendo-taglist>
+                            <kendo-searchbar class="k-searchbar">
+                                <input class="k-input">
+                            </kendo-searchbar>
+                            <span class="k-icon k-clear-value k-i-close"></span>
+                        </div>
+                    </kendo-multiselect>
+
+                    <kendo-form-hint class="k-form-hint k-text-start">
+                        Hint: Hint text
+                    </kendo-form-hint>
+
+                    <kendo-form-error class="k-form-error k-text-start">
+                        <div>Error: required</div>
+                    </kendo-form-error>
+                </kendo-form-field>
+
+                <div class="k-form-buttons">
+                    <button class="k-button k-primary">Submit</button>
+                    <button class="k-button">Clear</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2 class="test-heading">Horizontal Form (Angular)</h2>
+
+            <div class="k-messagebox k-messagebox-error">
+                Error: The quick brown fox jumps over the lazy dog.
+            </div>
+
+            <form class="k-form k-form-horizontal ng-invalid">
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">AutoComplete:</label>
+
+                    <div class="k-form-field-wrap">
+                        <kendo-autocomplete class="k-widget k-autocomplete k-header ng-touched ng-invalid">
+                            <kendo-searchbar class="k-searchbar">
+                                <input class="k-input">
+                            </kendo-searchbar>
+                        </kendo-autocomplete>
+
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            Hint: Only in Europe
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            <div>Error: required</div>
+                        </kendo-form-error>
+                    </div>
+                </kendo-form-field>
+
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">ComboBox:</label>
+
+                    <div class="k-form-field-wrap">
+                        <kendo-combobox class="k-widget k-combobox k-header k-combobox-clearable ng-invalid ng-touched">
+                            <span class="k-dropdown-wrap k-state-default">
+                                <kendo-searchbar class="k-searchbar">
+                                    <input class="k-input">
+                                </kendo-searchbar>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </span>
+                        </kendo-combobox>
+
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            Hint: Hint text
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            <div>Error: required</div>
+                        </kendo-form-error>
+                    </div>
+                </kendo-form-field>
+
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">DropDownList:</label>
+
+                    <div class="k-form-field-wrap">
+                        <kendo-dropdownlist class="k-widget k-dropdown k-header ng-invalid ng-touched">
+                            <span class="k-dropdown-wrap k-state-default">
+                                <span class="k-input">Select gender</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </span>
+                        </kendo-dropdownlist>
+
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            Hint: Hint text
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            <div>Error: required</div>
+                        </kendo-form-error>
+                    </div>
+                </kendo-form-field>
+
+                <kendo-form-field class="k-form-field k-form-field-error">
+                    <label class="k-label">MultiSelect:</label>
+
+                    <div class="k-form-field-wrap">
+                        <kendo-multiselect class="k-widget k-multiselect k-header ng-touched ng-invalid">
+                            <div class="k-multiselect-wrap k-floatwrap">
+                                <kendo-taglist>
+                                    <ul class="k-reset">
+                                        <li class="k-button">
+                                            <span>Female</span>
+                                            <span class="k-select">
+                                                <span class="k-icon k-i-close"></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </kendo-taglist>
+                                <kendo-searchbar class="k-searchbar">
+                                    <input class="k-input">
+                                </kendo-searchbar>
+                                <span class="k-icon k-clear-value k-i-close"></span>
+                            </div>
+                        </kendo-multiselect>
+
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            Hint: Hint text
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            <div>Error: required</div>
+                        </kendo-form-error>
+                    </div>
+                </kendo-form-field>
+
+                <div class="k-form-buttons">
+                    <button class="k-button k-primary">Submit</button>
+                    <button class="k-button">Clear</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2 class="test-heading">Vertical/Default Form (React)</h2>
+
+            <div class="k-messagebox k-messagebox-error">
+                Error: The quick brown fox jumps over the lazy dog.
+            </div>
+
+            <form class="k-form">
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">AutoComplete:</label>
+                    <span class="k-widget k-autocomplete k-header k-state-invalid">
+                        <span class="k-searchbar">
+                            <input class="k-input">
+                        </span>
+                    </span>
+
+                    <div class="k-form-hint k-text-start">
+                        Hint: Birth date
+                    </div>
+
+                    <div class="k-form-error k-text-start">
+                        Error: required
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">ComboBox:</label>
+                    <span class="k-widget k-combobox k-header k-combobox-clearable k-state-invalid">
+                        <span class="k-dropdown-wrap k-state-default">
+                            <span class="k-searchbar">
+                                <input class="k-input">
+                            </span>
+                            <span class="k-select">
+                                <span class="k-icon k-i-arrow-s"></span>
+                            </span>
+                        </span>
+                    </span>
+
+                    <div class="k-form-hint k-text-start">
+                        Hint: Birth date
+                    </div>
+
+                    <div class="k-form-error k-text-start">
+                        Error: required
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">DropDownList:</label>
+                    <span class="k-widget k-dropdown k-header k-state-invalid">
+                        <span class="k-dropdown-wrap k-state-default">
+                            <span class="k-input">Select gender:</span>
+                            <span class="k-select">
+                                <span class="k-icon k-i-arrow-s"></span>
+                            </span>
+                            <select style="opacity: 0; width: 1px; border: 0px; z-index: -1; position: absolute; left: 50%;">
+                                <option></option>
+                            </select>
+                        </span>
+                    </span>
+
+                    <div class="k-form-hint k-text-start">
+                        Hint: Birth date
+                    </div>
+
+                    <div class="k-form-error k-text-start">
+                        Error: required
+                    </div>
+                </div>
+
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">MultiSelect:</label>
+                    <span class="k-widget k-multiselect k-header k-state-invalid">
+                        <div class="k-multiselect-wrap k-floatwrap">
+                            <ul class="k-reset">
+                                <li class="k-button">
+                                    <span>Female</span>
+                                    <span class="k-select">
+                                        <span class="k-icon k-i-close"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                            <span class="k-searchbar">
+                                <input class="k-input">
+                            </span>
+                        </div>
+                    </span>
+
+                    <div class="k-form-hint k-text-start">
+                        Hint: Birth date
+                    </div>
+
+                    <div class="k-form-error k-text-start">
+                        Error: required
+                    </div>
+                </div>
+
+                <div class="k-form-buttons">
+                    <button class="k-button k-primary">Submit</button>
+                    <button class="k-button">Clear</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2 class="test-heading">Horizontal Form (React)</h2>
+
+            <div class="k-messagebox k-messagebox-error">
+                Error: The quick brown fox jumps over the lazy dog.
+            </div>
+
+            <form class="k-form k-form-horizontal">
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">AutoComplete:</label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-widget k-autocomplete k-header k-state-invalid">
+                            <span class="k-searchbar">
+                                <input class="k-input">
+                            </span>
+                        </span>
+
+                        <div class="k-form-hint k-text-start">
+                            Hint: Birth date
+                        </div>
+
+                        <div class="k-form-error k-text-start">
+                            Error: required
+                        </div>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">ComboBox:</label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-widget k-combobox k-header k-combobox-clearable k-state-invalid">
+                            <span class="k-dropdown-wrap k-state-default">
+                                <span class="k-searchbar">
+                                    <input class="k-input">
+                                </span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </span>
+                        </span>
+
+                        <div class="k-form-hint k-text-start">
+                            Hint: Birth date
+                        </div>
+
+                        <div class="k-form-error k-text-start">
+                            Error: required
+                        </div>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">DropDownList:</label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-widget k-dropdown k-header k-state-invalid">
+                            <span class="k-dropdown-wrap k-state-default">
+                                <span class="k-input">Select gender:</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                                <select style="opacity: 0; width: 1px; border: 0px; z-index: -1; position: absolute; left: 50%;">
+                                    <option></option>
+                                </select>
+                            </span>
+                        </span>
+
+                        <div class="k-form-hint k-text-start">
+                            Hint: Birth date
+                        </div>
+
+                        <div class="k-form-error k-text-start">
+                            Error: required
+                        </div>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-text-error">MultiSelect:</label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-widget k-multiselect k-header k-state-invalid">
+                            <div class="k-multiselect-wrap k-floatwrap">
+                                <ul class="k-reset">
+                                    <li class="k-button">
+                                        <span>Female</span>
+                                        <span class="k-select">
+                                            <span class="k-icon k-i-close"></span>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <span class="k-searchbar">
+                                    <input class="k-input">
+                                </span>
+                            </div>
+                        </span>
+
+                        <div class="k-form-hint k-text-start">
+                            Hint: Birth date
+                        </div>
+
+                        <div class="k-form-error k-text-start">
+                            Error: required
+                        </div>
+                    </div>
+                </div>
+
+                <div class="k-form-buttons">
+                    <button class="k-button k-primary">Submit</button>
+                    <button class="k-button">Clear</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>

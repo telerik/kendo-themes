@@ -49,15 +49,16 @@
         }
 
         // Invalid
+        &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
             > .k-dropdown-wrap {
                 border-color: $invalid-border;
-            }
 
-            &:focus,
-            &.k-state-focused {
-                @include box-shadow($invalid-shadow);
+                &:focus,
+                &.k-state-focused {
+                    @include box-shadow($invalid-shadow);
+                }
             }
         }
 

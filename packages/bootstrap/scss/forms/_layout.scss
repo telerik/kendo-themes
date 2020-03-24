@@ -41,12 +41,6 @@ $twbs-input-line-height-lg: $input-line-height-lg !default;
         legend {
             margin-bottom: $padding-y;
         }
-        .k-form-field {
-            > span:not(.k-widget) {
-                padding: 0;
-                margin: 0 0 $padding-y;
-            }
-        }
 
         .k-field-info {
             margin: 0 $padding-x / 2;
