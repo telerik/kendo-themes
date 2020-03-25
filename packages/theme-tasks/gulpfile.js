@@ -81,6 +81,17 @@ function getArg(key) {
 
     return (index < 0) ? null : (!next || next[0] === "-") ? true : next; // eslint-disable-line no-nested-ternary
 }
+function ensurePath(filename) {
+    // create folder path if not exists
+    filename.split('/').slice(0,-1).reduce((last, folder) => {
+        let folderPath = last ? (last + '/' + folder) : folder;
+        if (!fs.existsSync(folderPath)) {
+            fs.mkdirSync(folderPath);
+        }
+
+        return folderPath;
+    });
+}
 function _info(msg, ...args) { return logger.info(colors.gray(msg), ...args); }
 function _error(msg, ...args) { return logger.error(colors.gray(msg), ...args); }
 const _em = colors.magentaBright;
@@ -110,6 +121,12 @@ function build(fileGlob = paths.sass.src, dest = paths.sass.dist, options = sass
         .pipe(postcss(postcssPlugins))
         .pipe(gulp.dest(paths.sass.dist));
 }
+function flattenSassFiles(file = paths.sass.theme, outFile = paths.sass.inline) {
+    ensurePath(outFile);
+    baka.compile(file, outFile);
+
+    Promise.resolve();
+}
 // #endregion
 
 
@@ -126,8 +143,16 @@ gulp.task('sass:watch', function() {
     gulp.watch(paths.sass.src, gulp.series("sass"));
 });
 gulp.task('sass:swatches', function() {
+    flattenSassFiles(paths.sass.theme, paths.sass.inline);
+
     sass.compiler = require("node-sass");
     return build(paths.sass.swatches, paths.sass.dist);
+});
+gulp.task('sass:flat', function() {
+    flattenSassFiles(paths.sass.theme, paths.sass.inline);
+
+    sass.compier = require("sass");
+    return build(paths.sass.inline, paths.sass.dist);
 });
 // #endregion
 
@@ -145,8 +170,16 @@ gulp.task('dart:watch', function() {
     gulp.watch(paths.sass.src, gulp.series("dart"));
 });
 gulp.task('dart:swatches', function() {
+    flattenSassFiles(paths.sass.theme, paths.sass.inline);
+
     sass.compiler = require("sass");
     return build(paths.sass.swatches, paths.sass.dist);
+});
+gulp.task('dart:flat', function() {
+    flattenSassFiles(paths.sass.theme, paths.sass.inline);
+
+    sass.compier = require("sass");
+    return build(paths.sass.inline, paths.sass.dist);
 });
 // #endregion
 
@@ -235,22 +268,9 @@ gulp.task("ci:full", gulp.series("lint", "sass", "dart", "api:check"));
 // #endregion
 
 
-// #region Flatten files
-gulp.task("flatten-sass-files", function(done) {
-    let file = getArg("--file") || paths.sass.theme;
-    let outFile = getArg("--out-file") || paths.sass.inline;
-
-    baka.compile(file, outFile);
-
-    Promise.resolve();
-    done();
-});
-// #region
-
-
 // #region prepublish
-gulp.task('sass:prepublish', gulp.series("sass", "sass:swatches", "flatten-sass-files"));
-gulp.task('dart:prepublish', gulp.series("dart", "dart:swatches", "flatten-sass-files"));
+gulp.task('sass:prepublish', gulp.series("sass:flat", "sass:swatches"));
+gulp.task('dart:prepublish', gulp.series("dart:flat", "dart:swatches"));
 gulp.task("prepublish", gulp.series("sass:prepublish"));
 // #endregion
 
