@@ -45,8 +45,8 @@ jobs:
     script:
       - npm run lint
       - npm run api-check
-      - npm run sass
-      - npm run dart
+      - npm run sass:flat
+      - npm run dart:flat
 
   # Branch push, except master and dev
   - stage: Push in branch
@@ -57,7 +57,7 @@ jobs:
       - npm install
       - lerna bootstrap --concurrency=1
     script:
-      - npm run sass
+      - npm run sass:flat
       - npm run karma-single
       - npm run visual-tests
 
@@ -69,9 +69,9 @@ jobs:
     script:
       - npm run lint
       - npm run api-check
-      - npm run sass
+      - npm run sass:flat
       - npm run sass:swatches
-      - npm run dart
+      - npm run dart:flat
       - npm run dart:swatches
     after_success:
       - printf "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> ~/.npmrc
