@@ -2371,7 +2371,10 @@ $filemanager-drag-hint-border: null !default;
 
 
 // Editor
-
+$editor-border-width: 1px !default;
+$editor-font-family: $font-family !default;
+$editor-font-size: $font-size !default;
+$editor-line-height: $line-height !default;
 
 // Gantt
 $gantt-line-size: 2px !default;
