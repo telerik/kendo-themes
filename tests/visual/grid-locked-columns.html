@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Grid Locked Columns</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <div class="k-widget k-grid k-grid-display-block k-reorderable k-grid-lockedcolumns" id="Grid" style="width: 793px">
+            <div class="k-grouping-header" style="touch-action: none;">Drag a column header and drop it here to group by that column</div>
+            <div class="k-grid-header" style="padding-right: 17px;">
+                <div class="k-grid-header-locked" style="width: 450px;">
+                    <table>
+                        <colgroup>
+                            <col style="width:150px">
+                                <col style="width:300px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="k-header k-with-icon"><a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings"><span class="k-icon k-i-more-vertical"></span></a><a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=OrderID-asc">Order ID</a></th>
+                                <th class="k-header k-with-icon"><a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings"><span class="k-icon k-i-more-vertical"></span></a><a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipName-asc">Ship Name</a></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="k-grid-header-wrap k-auto-scrollable"  style="width: 319px;">
+                    <table role="grid" style="width: 1000px;">
+                        <colgroup>
+                            <col style="width:300px">
+                                <col style="width:300px">
+                                    <col style="width:400px">
+                        </colgroup>
+                        <thead>
+                            <tr role="row">
+                                <th class="k-header k-with-icon"><a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings"><span class="k-icon k-i-more-vertical"></span></a><a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipCountry-asc">Ship Country</a></th>
+                                <th class="k-header k-with-icon"><a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings"><span class="k-icon k-i-more-vertical"></span></a><a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipCity-asc">Ship City</a></th>
+                                <th class="k-header k-with-icon"><a class="k-header-column-menu" href="#" title="Edit Column Settings" aria-label="Edit Column Settings"><span class="k-icon k-i-more-vertical"></span></a><a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipAddress-asc">Ship Address</a></th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="k-resize-handle" style="top: 0px; left: 595.5px; height: 37px; width: 9px;">
+                        <div class="k-resize-handle-inner"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="k-grid-content-locked" style="width: 450px; height: 523px;">
+                <table>
+                    <colgroup>
+                        <col style="width:150px">
+                            <col style="width:300px">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td data-field="OrderID">10248</td>
+                            <td data-field="ShipName">Vins et alcools Chevalier</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td data-field="OrderID">10249</td>
+                            <td data-field="ShipName">Toms Spezialitäten</td>
+                        </tr>
+                        <tr>
+                            <td data-field="OrderID">10250</td>
+                            <td data-field="ShipName">Hanari Carnes</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td data-field="OrderID">10251</td>
+                            <td data-field="ShipName">Victuailles en stock</td>
+                        </tr>
+                        <tr>
+                            <td data-field="OrderID">10252</td>
+                            <td data-field="ShipName">Suprêmes délices</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td data-field="OrderID">10253</td>
+                            <td data-field="ShipName">Hanari Carnes</td>
+                        </tr>
+                        <tr>
+                            <td data-field="OrderID">10254</td>
+                            <td data-field="ShipName">Chop-suey Chinese</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td data-field="OrderID">10255</td>
+                            <td data-field="ShipName">Richter Supermarkt</td>
+                        </tr>
+                        <tr>
+                            <td data-field="OrderID">10256</td>
+                            <td data-field="ShipName">Wellington Importadora</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td data-field="OrderID">10257</td>
+                            <td data-field="ShipName">HILARION-Abastos</td>
+                        </tr>
+                        <tr>
+                            <td data-field="OrderID">10258</td>
+                            <td data-field="ShipName">Ernst Handel</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td data-field="OrderID">10259</td>
+                            <td data-field="ShipName">Centro comercial Moctezuma</td>
+                        </tr>
+                        <tr>
+                            <td data-field="OrderID">10260</td>
+                            <td data-field="ShipName">Ottilies Käseladen</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td data-field="OrderID">10261</td>
+                            <td data-field="ShipName">Que Delícia</td>
+                        </tr>
+                        <tr>
+                            <td data-field="OrderID">10261</td>
+                            <td data-field="ShipName">Que Delícia</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="k-grid-content k-auto-scrollable" style="height: 540px; width: 337px;">
+                <table role="grid" style="width: 1000px;">
+                    <colgroup>
+                        <col style="width:300px">
+                            <col style="width:300px">
+                                <col style="width:400px">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>France</td>
+                            <td>Reims</td>
+                            <td>59 rue de l'Abbaye</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td>Germany</td>
+                            <td>Münster</td>
+                            <td>Luisenstr. 48</td>
+                        </tr>
+                        <tr>
+                            <td>Brazil</td>
+                            <td>Rio de Janeiro</td>
+                            <td>Rua do Paço, 67</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td>France</td>
+                            <td>Lyon</td>
+                            <td>2, rue du Commerce</td>
+                        </tr>
+                        <tr>
+                            <td>Belgium</td>
+                            <td>Charleroi</td>
+                            <td>Boulevard Tirou, 255</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td>Brazil</td>
+                            <td>Rio de Janeiro</td>
+                            <td>Rua do Paço, 67</td>
+                        </tr>
+                        <tr>
+                            <td>Switzerland</td>
+                            <td>Bern</td>
+                            <td>Hauptstr. 31</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td>Switzerland</td>
+                            <td>Genève</td>
+                            <td>Starenweg 5</td>
+                        </tr>
+                        <tr>
+                            <td>Brazil</td>
+                            <td>Resende</td>
+                            <td>Rua do Mercado, 12</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td>Venezuela</td>
+                            <td>San Cristóbal</td>
+                            <td>Carrera 22 con Ave. Carlos Soublette #8-35</td>
+                        </tr>
+                        <tr>
+                            <td>Austria</td>
+                            <td>Graz</td>
+                            <td>Kirchgasse 6</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td>Mexico</td>
+                            <td>México D.F.</td>
+                            <td>Sierras de Granada 9993</td>
+                        </tr>
+                        <tr>
+                            <td>Germany</td>
+                            <td>Köln</td>
+                            <td>Mehrheimerstr. 369</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td>Brazil</td>
+                            <td>Rio de Janeiro</td>
+                            <td>Rua da Panificadora, 12</td>
+                        </tr>
+                        <tr>
+                            <td>Brazil</td>
+                            <td>Rio de Janeiro</td>
+                            <td>Rua da Panificadora, 12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -5,7 +5,6 @@
     $grid-edit-cell-border: rgba(0, 0, 0, .12) !default;
     $grid-edit-cell-bg: #f5f5f5 !default;
     $grid-edit-cell-shadow: 0 0 5px 3px rgba(0, 0, 0, .12) !default;
-    $grid-locked-column-shadow: inset 18px 0 4px -16px rgba(0, 0, 0, .14) !default;
 
     $text-field-bg: rgba(0, 0, 0, .07) !default;
 
@@ -56,6 +55,9 @@
                 }
             }
         }
+        .k-grid-header-locked th {
+            @include fill( $border: $grid-sticky-header-border );
+        }
     }
 
     .k-grid-header {
@@ -93,47 +95,10 @@
             border-left-color: $grid-border;
         }
 
-        .k-grid-header-sticky,
-        .k-grid-header-sticky.k-sorted {
-            @include fill(
-                $grid-sticky-text,
-                $grid-sticky-bg,
-                $grid-sticky-border
-            );
-        }
     }
 
     thead.k-grid-header> tr:not(:only-child)>th {
         border-left-color: $grid-border;
-    }
-
-    // Content
-    .k-master-row {
-        .k-grid-content-sticky {
-            @include fill(
-                $grid-sticky-text,
-                $grid-sticky-bg,
-                $grid-sticky-border
-            );
-        }
-
-
-        // Selected state
-        &.k-state-selected .k-grid-content-sticky {
-            @include fill( $bg: $grid-sticky-selected-bg );
-        }
-
-
-        // Hovered state
-        &:hover .k-grid-content-sticky {
-            background-color: $grid-sticky-hovered-bg;
-        }
-
-
-        // Selected hover
-        &.k-state-selected:hover .k-grid-content-sticky {
-            background-color: $grid-sticky-selected-hovered-bg;
-        }
     }
 
     .k-grouping-header .k-group-indicator {
@@ -179,17 +144,6 @@
 
     .k-reorder-cue {
         background-color: $primary;
-    }
-
-    .k-grid-lockedcolumns {
-        .k-grid-header-locked {
-            border-right-color: $grid-border;
-        }
-
-        .k-grid-content,
-        .k-grid-header-wrap {
-            box-shadow: $grid-locked-column-shadow;
-        }
     }
 
     .k-grid-edit-row > td {
