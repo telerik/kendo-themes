@@ -2380,6 +2380,15 @@ $gantt-task-border-width: 1px !default;
 
 $gantt-task-template-padding: $padding-y-sm $padding-x-sm !default;
 
+$gantt-border-width: 1px !default;
+$gantt-font-family: $font-family !default;
+$gantt-font-size: $font-size !default;
+$gantt-line-height: $line-height !default;
+
+$gantt-bg: $component-bg !default;
+$gantt-text: $component-text !default;
+$gantt-border: $component-border !default;
+
 
 // Scheduler
 $scheduler-event-border-radius: $border-radius !default;
