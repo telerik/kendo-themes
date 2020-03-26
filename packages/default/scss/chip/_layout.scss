@@ -65,6 +65,7 @@
     }
 
     .k-chip {
+        overflow: hidden;
         padding: $chip-padding-y $chip-padding-x;
         height: $chip-height;
         border-radius: $chip-border-radius;
@@ -90,7 +91,12 @@
     }
 
     .k-chip-content {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         padding: 0 $chip-content-padding-x;
+        flex: 1;
     }
 
     .k-chip-icon,
