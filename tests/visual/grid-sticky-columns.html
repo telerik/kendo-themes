@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Grid Sticky Columns</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+</head>
+
+<body>
+    <div id="test-area" class="grid">
+        <div class="k-grid k-widget telerik-blazor" style="height: 400px;width: 100%;">
+            <div class="k-grouping-header k-grouping-header-flex">
+                <div class="k-indicator-container">
+                    <div class="k-group-indicator">
+                        <span class="k-link" style="cursor: default">
+                            Active Projects
+                        </span>
+
+                        <span class="k-button k-button-icon k-bare">
+                            <span class="k-icon k-i-group-delete"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="k-indicator-container" style="touch-action: none;"></div>
+            </div>
+
+            <div class="k-grid-header"style="padding-right: 16px;">
+                <div class="k-grid-header-wrap">
+                    <table>
+                        <colgroup>
+                            <col class="k-group-col">
+                            <col style="width: 100px">
+                            <col style="width: 200px">
+                            <col style="width: 100px">
+                            <col style="width: 100px">
+                            <col style="width: 100px">
+                        </colgroup>
+
+                        <thead>
+                            <tr>
+                                <th colspan="1" rowspan="1" class="k-group-cell k-header"></th>
+                                <th class="k-header  " colspan="1">
+                                    Name
+                                </th>
+                                <th data-text="Team" class="k-header k-grid-header-sticky" style="left: 0px; right: 0px" colspan="1">
+                                    Team
+                                </th>
+
+                                <th class="k-header k-grid-header-sticky" colspan="1">
+                                    Active Projects
+                                </th>
+
+                                <th class="k-header  " colspan="1">
+                                    Salary
+                                </th>
+
+                                <th data-text="On Vacation" class="k-header  " colspan="1">
+                                    On Vacation
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
+            <div class="k-grid-container">
+                <div class="k-grid-content k-virtual-content">
+                    <div style="position: relative;">
+                        <div class="k-virtual-position" style="">
+                            <table data-role="grid" role="grid" class="k-grid-table" style="height: auto; width: ;" aria-rowcount="25" aria-colcount="5">
+                                <colgroup>
+                                    <col class="k-group-col">
+                                    <col style="width: 100px;">
+                                    <col style="width: 200px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 100px;">
+                                    <col style="width: 100px;">
+                                </colgroup>
+
+                                <tbody>
+                                    <tr class="k-grouping-row">
+                                        <td class="" colspan="6">
+                                            <p class="k-reset">
+                                                <span class="k-icon k-i-collapse"></span>
+                                                <span>Currently active projects: 2 &nbsp;</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="k-master-row   " data-render-row-index="1" aria-rowindex="2">
+                                        <td class="k-group-cell"></td>
+                                        <td colspan="1" class="  ">
+                                            Employee 0</td>
+                                        <td colspan="1" class="k-grid-content-sticky" style="left: 0px; right: 0px">
+                                            Team 0</td>
+                                        <td colspan="1" class="k-grid-content-sticky">
+                                            2</td>
+                                        <td colspan="1" class="  ">
+                                            1429</td>
+                                        <td colspan="1" class="  ">
+                                            True</td>
+                                    </tr>
+
+                                    <tr class="k-master-row k-alt  ">
+                                        <td class="k-group-cell"></td>
+                                        <td colspan="1" class="  ">
+                                            Employee 4</td>
+                                        <td colspan="1" class="k-grid-content-sticky" style="left: 0px; right: 0px">
+                                            Team 1</td>
+                                        <td colspan="1" class="k-grid-content-sticky">
+                                            2</td>
+                                        <td colspan="1" class="  ">
+                                            2915</td>
+                                        <td colspan="1" class="  ">
+                                            True</td>
+                                    </tr>
+
+                                    <tr class="k-group-footer">
+                                        <td class="k-group-cell"></td>
+                                        <td class="">
+                                        </td>
+                                        <td class="k-grid-footer-sticky" style="left: 0px; right: 0px">
+                                            Team size: 7
+                                        </td>
+                                        <td class="k-grid-footer-sticky">
+                                        </td>
+                                        <td class="">
+                                            Total montly cost: 18665
+                                            <br>
+                                            <span class="text-info">Top paid employee: 4259</span>
+                                        </td>
+                                        <td class="">
+                                        </td>
+                                    </tr>
+
+                                    <tr class="k-grouping-row">
+                                        <td class="" colspan="6">
+                                            <p class="k-reset">
+                                                <span class="k-icon k-i-collapse"></span>
+                                                <span>Currently active projects: 5 &nbsp;</span>
+                                                <span class="warning">These people work on too many projects</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="k-master-row   ">
+                                        <td class="k-group-cell"></td>
+                                        <td colspan="1" class="  ">
+                                            Employee 1</td>
+                                        <td colspan="1" class="k-grid-content-sticky  " style="left: 0px; right: 0px">
+                                            Team 1</td>
+                                        <td colspan="1" class="k-grid-content-sticky">
+                                            5</td>
+                                        <td colspan="1" class="  ">
+                                            2307</td>
+                                        <td colspan="1" class="  ">
+                                            False</td>
+                                    </tr>
+
+                                    <tr class="k-master-row k-alt  ">
+                                        <td class="k-group-cell"></td>
+                                        <td colspan="1" class="  ">
+                                            Employee 2</td>
+                                        <td colspan="1" class="k-grid-content-sticky" style="left: 0px; right: 0px">
+                                            Team 2</td>
+                                        <td colspan="1" class="k-grid-content-sticky">
+                                            5</td>
+                                        <td colspan="1" class="  ">
+                                            4225</td>
+                                        <td colspan="1" class="  ">
+                                            True</td>
+                                    </tr>
+
+                                    <tr class="k-master-row   ">
+                                        <td class="k-group-cell"></td>
+                                        <td colspan="1" class="  ">
+                                            Employee 3</td>
+                                        <td colspan="1" class="k-grid-content-sticky  " style="left: 0px; right: 0px">
+                                            Team 0</td>
+                                        <td colspan="1" class="k-grid-content-sticky">
+                                            5</td>
+                                        <td colspan="1" class="  ">
+                                            4593</td>
+                                        <td colspan="1" class="  ">
+                                            False</td>
+                                    </tr>
+
+                                    <tr class="k-master-row k-alt  ">
+                                        <td class="k-group-cell"></td>
+                                        <td colspan="1" class="  ">
+                                            Employee 5</td>
+                                        <td colspan="1" class="k-grid-content-sticky" style="left: 0px; right: 0px">
+                                            Team 2</td>
+                                        <td colspan="1" class="k-grid-content-sticky">
+                                            5</td>
+                                        <td colspan="1" class="  ">
+                                            2906</td>
+                                        <td colspan="1" class="  ">
+                                         False</td>
+                                    </tr>
+
+                                    <tr class="k-group-footer">
+                                        <td class="k-group-cell"></td>
+                                        <td class="">
+                                        </td>
+                                        <td class="k-grid-content-sticky" style="left: 0px; right: 0px">
+                                            Team size: 18
+                                        </td>
+                                        <td class="k-grid-content-sticky">
+                                        </td>
+                                        <td class="">
+                                            Total montly cost: 55581
+                                            <br>
+                                            <span class="text-info">Top paid employee: 4657</span>
+                                        </td>
+                                        <td class="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="k-height-container">
+                        <div style=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1038,9 +1038,20 @@
 
     .k-grid-header .k-header.k-grid-header-sticky,
     .k-grid-header .k-filter-row .k-grid-header-sticky,
-    .k-grid-content-sticky {
+    .k-grid-content-sticky,
+    .k-grid-footer-sticky {
         position: sticky;
         z-index: 2;
+    }
+
+    .k-grid .k-grid-header-sticky,
+    .k-grid .k-grid-content-sticky {
+        border-right-width: $grid-cell-vertical-border-width;
+
+        + td,
+        + th {
+            border-left-width: 0;
+        }
     }
 
     .k-header.k-drag-clue {
