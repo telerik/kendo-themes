@@ -1,30 +1,37 @@
 "use strict";
 
 const { command, opts } = require("./lib/utils/args-parser")(); // eslint-disable-line no-unused-vars
-const { tasks } = require("./gulpfile.js");
+const registry = require("./gulpfile.js").taskHelper.registry;
 
 function kendotheme() {
+    let tasks = {};
+
+    Object.entries( registry.tasks() ).forEach(function(taskEntry) {
+
+        let taskName = taskEntry[0];
+        let taskBody = taskEntry[1].unwrap();
+
+        tasks[taskName] = taskBody;
+
+    });
 
     switch (command) {
-        case "assets":
-            tasks.sass.assets();
-            break;
-        case "lint":
-            tasks.sass.lint();
-            break;
-        case "build": {
-            if (opts.file) {
-                tasks.sass.buildFile(opts.file);
-            } else if (opts.swatches) {
-                tasks.sass.swatches();
-            } else {
-                tasks.sass.theme();
-            }
+        case "sass": {
+            tasks["sass"]();
             break;
         }
-        case "api":
-            tasks.sass.api();
+        case "dart": {
+            tasks["dart"]();
             break;
+        }
+        case "sass:swatches": {
+            tasks["sass:swatches"]();
+            break;
+        }
+        case "dart:swatches": {
+            tasks["sass:swatches"]();
+            break;
+        }
         default:
             throw new Error("Unknown command");
     }
