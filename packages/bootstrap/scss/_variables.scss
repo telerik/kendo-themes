@@ -150,6 +150,22 @@ $light: $light !default;
 /// @group color-system
 $inverse: if( $is-dark-theme, $light, $dark ) !default;
 
+$theme-colors: () !default;
+// sass-lint:disable indentation
+$theme-colors: map-merge((
+    "primary": $primary,
+    "secondary": $secondary,
+    "tertiary": $tertiary,
+    "info": $info,
+    "success": $success,
+    "warning": $warning,
+    "error": $error,
+    "dark": $dark,
+    "light": $light,
+    "inverse": $inverse
+), $theme-colors);
+// sass-lint:enable indentation
+
 
 // Color constants
 $rgba-transparent: rgba( 0, 0, 0, 0 );
@@ -384,46 +400,6 @@ $badge-fixed-size-lg: 30px !default;
 $badge-calc-size-lg: calc( #{$badge-line-height-lg * 1em} + #{$badge-padding-y-lg * 2} + #{$badge-border-width-lg * 2} ) !default;
 $badge-size-lg: if( $use-calc-badge-size, $badge-calc-size-lg, $badge-fixed-size-lg );
 $badge-dot-size-lg: 12px;
-
-$badge-primary-bg: $primary !default;
-$badge-primary-text: contrast-wcag( $badge-primary-bg ) !default;
-$badge-primary-border: $badge-primary-bg !default;
-
-$badge-secondary-bg: $secondary !default;
-$badge-secondary-text: contrast-wcag( $badge-secondary-bg ) !default;
-$badge-secondary-border: $badge-secondary-bg !default;
-
-$badge-tertiary-bg: $tertiary !default;
-$badge-tertiary-text: contrast-wcag( $badge-tertiary-bg ) !default;
-$badge-tertiary-border: $badge-tertiary-bg !default;
-
-$badge-info-bg: $info !default;
-$badge-info-text: contrast-wcag( $badge-info-bg ) !default;
-$badge-info-border: $badge-info-bg !default;
-
-$badge-success-bg: $success !default;
-$badge-success-text: contrast-wcag( $badge-success-bg ) !default;
-$badge-success-border: $badge-success-bg !default;
-
-$badge-warning-bg: $warning !default;
-$badge-warning-text: contrast-wcag( $badge-warning-bg ) !default;
-$badge-warning-border: $badge-warning-bg !default;
-
-$badge-error-bg: $error !default;
-$badge-error-text: contrast-wcag( $badge-error-bg ) !default;
-$badge-error-border: $badge-error-bg !default;
-
-$badge-dark-bg: $dark !default;
-$badge-dark-text: contrast-wcag( $badge-dark-bg ) !default;
-$badge-dark-border: $badge-dark-bg !default;
-
-$badge-light-bg: $light !default;
-$badge-light-text: contrast-wcag( $badge-light-bg ) !default;
-$badge-light-border: $badge-light-bg !default;
-
-$badge-inverse-bg: $inverse !default;
-$badge-inverse-text: contrast-wcag( $badge-inverse-bg ) !default;
-$badge-inverse-border: $badge-inverse-bg !default;
 
 
 // Chip
