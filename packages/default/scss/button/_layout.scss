@@ -24,9 +24,7 @@
         -webkit-appearance: none;
         position: relative;
 
-        // TODO: extend disabled selector
-        &[disabled],
-        [disabled] &,
+        &:disabled,
         &.k-state-disabled {
             @include disabled( $disabled-styling );
         }
@@ -128,11 +126,6 @@
         .k-button:active,
         .k-button.k-state-active {
             z-index: 2;
-        }
-
-        [disabled],
-        .k-state-disabled {
-            pointer-events: none;
         }
 
         .k-group-start,
