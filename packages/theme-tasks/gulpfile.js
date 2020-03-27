@@ -81,15 +81,15 @@ function getArg(key) {
 
     return (index < 0) ? null : (!next || next[0] === "-") ? true : next; // eslint-disable-line no-nested-ternary
 }
-function ensurePath(filename) {
-    // create folder path if not exists
-    filename.split('/').slice(0,-1).reduce((last, folder) => {
-        let folderPath = last ? (last + '/' + folder) : folder;
-        if (!fs.existsSync(folderPath)) {
-            fs.mkdirSync(folderPath);
+function ensureDirSync(dir) {
+    dir.split(path.sep).reduce((acc, curr) => {
+        let dirPath = path.join(acc, curr);
+
+        if (!fs.existsSync(dirPath)) {
+            fs.mkdirSync(dirPath);
         }
 
-        return folderPath;
+        return dirPath;
     });
 }
 function _info(msg, ...args) { return logger.info(colors.gray(msg), ...args); }
@@ -122,7 +122,7 @@ function build(fileGlob = paths.sass.src, dest = paths.sass.dist, options = sass
         .pipe(gulp.dest(paths.sass.dist));
 }
 function flattenSassFiles(file = paths.sass.theme, outFile = paths.sass.inline) {
-    ensurePath(outFile);
+    ensureDirSync(path.dirname(outFile));
     baka.compile(file, outFile);
 
     Promise.resolve();

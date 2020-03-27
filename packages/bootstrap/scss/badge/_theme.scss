@@ -2,11 +2,4 @@
 
 @include exports("badge/theme/bootstrap") {
 
-    .k-badge-outline {
-
-        &.k-badge-secondary {
-            color: $gray-600;
-        }
-    }
-
 }
