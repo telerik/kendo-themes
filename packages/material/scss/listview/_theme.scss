@@ -1,19 +1,15 @@
-@include exports( "listview/theme" ) {
+@import "~@progress/kendo-theme-default/scss/listview/_theme.scss";
 
-    .k-listview {
+@include exports( "listview/theme/material" ) {
 
-        > .k-state-focused {
-            background-color: rgba(0, 0, 0, .07);
-        }
+    // Listview
+    .k-listview {}
 
-        > .k-state-selected {
-            color: inherit;
-            background-color: rgba(0, 0, 0, .04);
-        }
-        > .k-state-selected.k-state-focused {
-            background-color: rgba(0, 0, 0, .12);
-        }
 
+    // Listview content
+    .k-listview-content {}
+    .k-listview-content > .k-state-selected.k-state-focused {
+        background-color: rgba( contrast-wcag( $listview-bg ), .12 );
     }
 
 }

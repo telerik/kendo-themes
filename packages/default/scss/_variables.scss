@@ -146,6 +146,22 @@ $light: #ebebeb !default;
 /// @group color-system
 $inverse: if( $is-dark-theme, $light, $dark ) !default;
 
+$theme-colors: () !default;
+// sass-lint:disable indentation
+$theme-colors: map-merge((
+    "primary": $primary,
+    "secondary": $secondary,
+    "tertiary": $tertiary,
+    "info": $info,
+    "success": $success,
+    "warning": $warning,
+    "error": $error,
+    "dark": $dark,
+    "light": $light,
+    "inverse": $inverse
+), $theme-colors);
+// sass-lint:enable indentation
+
 
 // Color constants
 $rgba-transparent: rgba( 0, 0, 0, 0 );
@@ -386,46 +402,6 @@ $badge-fixed-size-lg: 26px !default;
 $badge-calc-size-lg: calc( #{$badge-line-height-lg * 1em} + #{$badge-padding-y-lg * 2} + #{$badge-border-width-lg * 2} ) !default;
 $badge-size-lg: if( $use-calc-badge-size, $badge-calc-size-lg, $badge-fixed-size-lg );
 $badge-dot-size-lg: 12px;
-
-$badge-primary-bg: $primary !default;
-$badge-primary-text: contrast-wcag( $badge-primary-bg ) !default;
-$badge-primary-border: $badge-primary-bg !default;
-
-$badge-secondary-bg: $secondary !default;
-$badge-secondary-text:  contrast-wcag( $badge-secondary-bg ) !default;
-$badge-secondary-border: $badge-secondary-bg !default;
-
-$badge-tertiary-bg: $tertiary !default;
-$badge-tertiary-text: contrast-wcag( $badge-tertiary-bg ) !default;
-$badge-tertiary-border: $badge-tertiary-bg !default;
-
-$badge-info-bg: $info !default;
-$badge-info-text: contrast-wcag( $badge-info-bg ) !default;
-$badge-info-border: $badge-info-bg !default;
-
-$badge-success-bg: $success !default;
-$badge-success-text: contrast-wcag( $badge-success-bg ) !default;
-$badge-success-border: $badge-success-bg !default;
-
-$badge-warning-bg: $warning !default;
-$badge-warning-text: contrast-wcag( $badge-warning-bg ) !default;
-$badge-warning-border: $badge-warning-bg !default;
-
-$badge-error-bg: $error !default;
-$badge-error-text: contrast-wcag( $badge-error-bg ) !default;
-$badge-error-border: $badge-error-bg !default;
-
-$badge-dark-bg: $dark !default;
-$badge-dark-text: contrast-wcag( $badge-dark-bg ) !default;
-$badge-dark-border: $badge-dark-bg !default;
-
-$badge-light-bg: $light !default;
-$badge-light-text: contrast-wcag( $badge-light-bg ) !default;
-$badge-light-border: $badge-light-bg !default;
-
-$badge-inverse-bg: $inverse !default;
-$badge-inverse-text: contrast-wcag( $badge-inverse-bg ) !default;
-$badge-inverse-border: $badge-inverse-bg !default;
 
 
 // Chip
@@ -1895,6 +1871,8 @@ $pager-item-selected-bg: $list-item-selected-bg !default;
 $pager-item-selected-text: $list-item-selected-text !default;
 $pager-item-selected-border: null !default;
 
+$pager-item-focus-opacity: null !default;
+$pager-item-focus-bg: transparent !default;
 $pager-item-focus-shadow: $list-item-focused-shadow !default;
 
 $pager-number-padding-x: $pager-item-padding-x !default;
@@ -1904,22 +1882,24 @@ $pager-number-border-radius: null !default;
 $pager-number-spacing: $pager-item-spacing !default;
 
 $pager-number-bg: null !default;
-$pager-number-text: $link-text !default;
+$pager-number-text: $primary !default;
 $pager-number-border: null !default;
 
-$pager-number-hover-bg: $pager-item-hover-bg !default;
-$pager-number-hover-text: $link-hover-text !default;
+$pager-number-hover-opacity: .08 !default;
+$pager-number-hover-bg: rgba($pager-item-selected-bg, $pager-number-hover-opacity) !default;
+$pager-number-hover-text: $pager-number-text !default;
 $pager-number-hover-border: $pager-item-hover-border !default;
 
-$pager-number-selected-bg: $pager-item-selected-bg !default;
-$pager-number-selected-text: $pager-item-selected-text !default;
+$pager-number-selected-opacity: .2 !default;
+$pager-number-selected-bg: rgba($pager-item-selected-bg, $pager-number-selected-opacity) !default;
+$pager-number-selected-text: $pager-number-text !default;
 $pager-number-selected-border: $pager-item-selected-border !default;
 
-$pager-number-focus-shadow: $pager-item-focus-shadow !default;
+$pager-number-focus-bg: transparent !default;
+$pager-number-focus-shadow: inset 0 0 0 2px rgba($pager-number-selected-bg, $pager-number-selected-opacity) !default;
 
 $pager-input-width: 3em !default;
-
-$pager-page-size-dropdown-width: 5.2em !default;
+$pager-dropdown-width: 5em !default;
 
 
 // Panelbar
@@ -2247,6 +2227,25 @@ $pivotgrid-remove-text: null !default;
 
 
 // Listview
+$listview-font-family: $font-family !default;
+$listview-font-size: $font-size !default;
+$listview-line-height: $line-height !default;
+$listview-border-width: 1px !default;
+
+$listview-grid-gap: 10px !default;
+
+$listview-bg: $component-bg !default;
+$listview-text: $component-text !default;
+$listview-border: $component-border !default;
+
+$listview-item-selected-bg: rgba( $selected-bg, .25 ) !default;
+$listview-item-selected-text: null !default;
+$listview-item-selected-border: null !default;
+
+$listview-item-focus-bg: null !default;
+$listview-item-focus-text: null !default;
+$listview-item-focus-border: null !default;
+$listview-item-focus-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 
 // Spreadsheet
@@ -2372,7 +2371,10 @@ $filemanager-drag-hint-border: null !default;
 
 
 // Editor
-
+$editor-border-width: 1px !default;
+$editor-font-family: $font-family !default;
+$editor-font-size: $font-size !default;
+$editor-line-height: $line-height !default;
 
 // Gantt
 $gantt-line-size: 2px !default;

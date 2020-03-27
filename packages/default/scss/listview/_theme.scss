@@ -1,14 +1,33 @@
 @include exports( "listview/theme" ) {
 
+    // Listview
     .k-listview {
+        @include fill(
+            $listview-text,
+            $listview-bg,
+            $listview-border
+        );
+    }
+
+
+    // Listview content
+    .k-listview-content {
 
         > .k-state-focused {
-            box-shadow: $list-item-focused-shadow;
+            @include fill(
+                $listview-item-focus-text,
+                $listview-item-focus-bg,
+                $listview-item-focus-border
+            );
+            @include box-shadow( $listview-item-focus-shadow );
         }
 
         > .k-state-selected {
-            color: inherit;
-            background-color: rgba( $selected-bg, .25 );
+            @include fill(
+                $listview-item-selected-text,
+                $listview-item-selected-bg,
+                $listview-item-selected-border
+            );
         }
 
     }

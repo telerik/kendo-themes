@@ -8,25 +8,71 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-        .k-listview {
-            display: grid;
+        #test-area {
             grid-template-columns: 1fr 1fr;
         }
-        .k-listview > .k-widget {
-            padding: 20px;
+
+        .k-listview-content {
+            grid-template-columns: 1fr 1fr;
+        }
+        .k-listview-content > div {
+            padding: 10px;
+            display: inline-block;
+            outline: 1px dashed;
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area">
+    <div id="test-area" class="grid">
 
-        <div class="k-widget k-listview">
-            <div class="k-widget">Listview cell</div>
-            <div class="k-widget k-state-focused">Listview focused cell</div>
-            <div class="k-widget k-state-selected">Listview selected cell</div>
-            <div class="k-widget k-state-selected k-state-focused">Listview selected-focused cell</div>
-        </div>
+        <section>
+            <span>No layout</span>
+            <div class="k-widget k-listview">
+                <div class="k-listview-content">
+                    <div>Listview cell</div>
+                    <div>Listview cell</div>
+                    <div>Listview cell</div>
+                    <div>Listview cell</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <span>Flex layout</span>
+            <div class="k-widget k-listview k-listview-flex">
+                <div class="k-listview-content">
+                    <div>Listview cell</div>
+                    <div>Listview cell</div>
+                    <div>Listview cell</div>
+                    <div>Listview cell</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <span>Grid layout</span>
+            <div class="k-widget k-listview k-listview-grid">
+                <div class="k-listview-content">
+                    <div>Listview cell</div>
+                    <div>Listview cell</div>
+                    <div>Listview cell</div>
+                    <div>Listview cell</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <span>Interactive states</span>
+            <div class="k-widget k-listview k-listview-grid">
+                <div class="k-listview-content">
+                    <div>Normal cell</div>
+                    <div class="k-state-focused">Focused cell</div>
+                    <div class="k-state-selected">Selected cell</div>
+                    <div class="k-state-selected k-state-focused">Selected-focused cell</div>
+                </div>
+            </div>
+        </section>
 
     </div>
 

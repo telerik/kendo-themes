@@ -1,130 +1,23 @@
 @include exports( "badge/theme" ) {
 
     // Solid badges
-    .k-badge-primary {
-        @include fill(
-            $badge-primary-text,
-            $badge-primary-bg,
-            $badge-primary-border
-        );
+    @each $name, $color in $theme-colors {
+        .k-badge-#{$name} {
+            border-color: $color;
+            color: contrast-wcag( $color );
+            background-color: $color;
+        }
     }
-
-    .k-badge-secondary {
-        @include fill(
-            $badge-secondary-text,
-            $badge-secondary-bg,
-            $badge-secondary-border
-        );
-    }
-
-    .k-badge-tertiary {
-        @include fill(
-            $badge-tertiary-text,
-            $badge-tertiary-bg,
-            $badge-tertiary-border
-        );
-    }
-
-    .k-badge-info {
-        @include fill(
-            $badge-info-text,
-            $badge-info-bg,
-            $badge-info-border
-        );
-    }
-
-    .k-badge-success {
-        @include fill(
-            $badge-success-text,
-            $badge-success-bg,
-            $badge-success-border
-        );
-    }
-
-    .k-badge-warning {
-        @include fill(
-            $badge-warning-text,
-            $badge-warning-bg,
-            $badge-warning-border
-        );
-    }
-
-    .k-badge-error {
-        @include fill(
-            $badge-error-text,
-            $badge-error-bg,
-            $badge-error-border
-        );
-    }
-
-    .k-badge-dark {
-        @include fill(
-            $badge-dark-text,
-            $badge-dark-bg,
-            $badge-dark-border
-        );
-    }
-
-    .k-badge-light {
-        @include fill(
-            $badge-light-text,
-            $badge-light-bg,
-            $badge-light-border
-        );
-    }
-
-    .k-badge-inverse {
-        @include fill(
-            $badge-inverse-text,
-            $badge-inverse-bg,
-            $badge-inverse-border
-        );
-    }
-
 
     // Outline badges
     .k-badge-outline {
         border-color: currentColor;
         background-color: $component-bg;
     }
-    .k-badge-outline-primary {
-        @include fill( $badge-primary-bg );
-    }
 
-    .k-badge-outline-secondary {
-        @include fill( $badge-secondary-bg );
+    @each $name, $color in $theme-colors {
+        .k-badge-outline-#{$name} {
+            color: $color;
+        }
     }
-
-    .k-badge-outline-tertiary {
-        @include fill( $badge-tertiary-bg );
-    }
-
-    .k-badge-outline-info {
-        @include fill( $badge-info-bg );
-    }
-
-    .k-badge-outline-success {
-        @include fill( $badge-success-bg );
-    }
-
-    .k-badge-outline-warning {
-        @include fill( $badge-warning-bg );
-    }
-
-    .k-badge-outline-error {
-        @include fill( $badge-error-bg );
-    }
-
-    .k-badge-outline-dark {
-        @include fill( $badge-dark-bg );
-    }
-
-    .k-badge-outline-light {
-        @include fill( $badge-light-bg );
-    }
-
-    .k-badge-outline-inverse {
-        @include fill( $badge-inverse-bg );
-    }
-
 }

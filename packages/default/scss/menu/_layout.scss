@@ -19,7 +19,7 @@
         border-width: 0;
         outline: 0;
         display: flex;
-        flex-shrink: 0;
+        flex: 0 0 auto;
         position: relative;
         user-select: none;
     }
@@ -32,7 +32,7 @@
         color: inherit;
         display: flex;
         flex-direction: row;
-        flex: 1;
+        flex: 1 1 auto;
         align-items: center;
         position: relative;
         white-space: nowrap;
