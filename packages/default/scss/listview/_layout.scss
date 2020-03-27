@@ -1,7 +1,79 @@
 @include exports( "listview/layout" ) {
 
     .k-listview {
+        border-width: $listview-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $listview-font-family;
+        font-size: $listview-font-size;
+        line-height: $listview-line-height;
+        display: flex;
+        flex-direction: column;
         position: relative;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+
+    // Header and footer
+    .k-listview-header {
+        border-width: 0;
+        border-bottom-width: $listview-border-width;
+        border-style: solid;
+        border-color: inherit;
+    }
+
+
+    // Listview contnet
+    .k-listview-content {
+        flex-grow: 1;
+        position: relative;
+        overflow: auto;
+
+        &::after {
+            height: 0;
+            clear: both;
+            display: block;
+        }
+    }
+    .k-listview-flex .k-listview-content {
+        display: flex;
+        flex-direction: column;
+
+        > * {
+            flex-shrink: 0;
+        }
+
+        &::after { display: none; }
+    }
+    .k-listview-grid .k-listview-content {
+        display: grid;
+        gap: $listview-grid-gap;
+
+        &::after { display: none; }
+    }
+
+
+    // Listview footer
+    .k-listview-footer {
+        border-width: 0;
+        border-bottom-width: $listview-border-width;
+        border-style: solid;
+        border-color: inherit;
+    }
+
+
+    // Listview pager
+    .k-listview-pager {
+        border-width: 0;
+        border-top-width: $listview-border-width;
+        border-color: inherit;
+        font: inherit;
+    }
+    .k-listview-pager-top {
+        border-top-width: 0;
+        border-bottom-width: $listview-border-width;
     }
 
 }

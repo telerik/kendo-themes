@@ -20,6 +20,6 @@ cp $dir/tests/visual/assets -r $dir/.tmp/tests/visual/$theme
 find $dir/.tmp/tests/visual/$theme -name '*.html' | while read file; do sedi "s#../../packages/default/dist#../../../../packages/$theme/dist#" "$file"; done
 
 # capture screenshots. see .pastshotsrc for config options
-npx pastshots --serve ".tmp/tests/visual/$theme/*.html" --port $RANDOM --output tests/visual/output/$theme
+npx pastshots --serve ".tmp/tests/visual/$theme/*.html" --port $((RANDOM % 1000 + 8000)) --output tests/visual/output/$theme
 
 rm -rf .tmp/tests/visual/$theme
