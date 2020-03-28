@@ -8,38 +8,28 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-       #test-area {
+        #test-area {
             grid-template-columns: 1fr;
+        }
+        #filemanager-context-menu {
+            position: absolute;
+            top: 200px;
+            left: 270px;
+            z-index: 2;
+            overflow: visible;
         }
     </style>
 </head>
 <body>
-    <div id="test-area">
+    <div id="test-area" class="grid">
 
-        <h2>View ContextMenu</h2>
-        <div id="filemanager" class="k-widget k-filemanager">
+        <span>File Manager ContextMenu</span>
+        <div class="k-widget k-filemanager">
             <!-- Header -->
             <div class="k-filemanager-header">
-                <div class="k-filemanager-toolbar k-toolbar k-widget k-toolbar-resizable">
-                    <div class="k-overflow-anchor k-button" style="visibility: hidden; width: 1px;">
-                        <span class="k-icon k-i-more-vertical"></span>
-                    </div>
-                    <a class="k-button k-toolbar-first-visible" >New Folder</a>
+                <div class="k-filemanager-toolbar k-toolbar k-widget">
+                    <a class="k-button k-toolbar-first-visible">New Folder</a>
                     <a class="k-button">Upload</a>
-                    <div class="k-button-group">
-                        <a class="k-toggle-button k-state-active k-button k-button-icon k-group-start">
-                            <span class="k-icon k-i-sort-asc-sm"></span>
-                        </a>
-                        <a class="k-toggle-button k-button k-button-icon k-group-end">
-                            <span class="k-icon k-i-sort-desc-sm"></span>
-                        </a>
-                    </div>
-                    <div class="k-split-button">
-                        <a class="k-button">Sort By</a>
-                        <a class="k-button k-split-button-arrow">
-                            <span class="k-icon k-i-arrow-60-down"></span>
-                        </a>
-                    </div>
                     <div class="k-button-group">
                         <a class="k-toggle-button k-state-active k-button k-button-icon k-group-start">
                             <span class="k-icon k-i-grid-layout"></span>
@@ -48,135 +38,45 @@
                             <span class="k-icon k-i-grid"></span>
                         </a>
                     </div>
-                    <div class="k-spacer">&nbsp;</div>
-                    <div class="k-filemanager-details-toggle">
-                        <label>View Details</label>
-                        <span class="k-switch k-widget k-switch-off">
-                            <input type="checkbox">
-                            <span class="k-switch-container">
-                                <span class="k-switch-label-on">On</span>
-                                <span class="k-switch-label-off">Off</span>
-                                <span class="k-switch-handle"></span>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="k-filemanager-search-tool k-textbox k-toolbar-last-visible" >
-                        <input class="k-input" placeholder="Search">
-                        <span class="k-input-icon">
-                            <span class="k-icon k-i-search"></span>
-                        </span>
-                    </div>
                 </div>
             </div>
 
-            <div class="k-filemanager-content-container" >
+            <div class="k-filemanager-content-container">
                 <!-- Navigation -->
                 <div class="k-filemanager-navigation">
-                    <div class="k-filemanager-navigation-container">
-                        <div class="k-filemanager-treeview k-widget k-treeview">
-                            <ul class="k-group k-treeview-lines">
-                                <li role="treeitem" class="k-item k-first">
-                                    <div class="k-top">
-                                        <span class="k-in">SubFolder</span>
-                                    </div>
-                                </li>
-                                <li role="treeitem" class="k-item k-last">
-                                    <div class="k-bot">
-                                        <span class="k-icon k-i-expand"></span>
-                                        <span class="k-in">SubFolder(1)</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="k-filemanager-treeview k-widget k-treeview">
+                        <ul class="k-group k-treeview-lines">
+                            <li class="k-item k-first">
+                                <div class="k-top">
+                                    <span class="k-in">Folder</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
                 <!-- Content -->
                 <div class="k-filemanager-content">
                     <nav class="k-filemanager-breadcrumb k-widget k-breadcrumb">
-                        <div class="k-breadcrumb-input-container" style="display: none;">
-                            <input class="k-textbox">
-                        </div>
                         <ol class="k-breadcrumb-container">
                             <li class="k-breadcrumb-item k-breadcrumb-root-item">
-                                <a href="#" class="k-breadcrumb-root-link  k-breadcrumb-icon-link">
-                                    <span class="k-icon k-i-home "></span>
+                                <a class="k-breadcrumb-root-link  k-breadcrumb-icon-link">
+                                    <span class="k-icon k-i-home"></span>
                                 </a>
-                                <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
-                                <span class="k-breadcrumb-delimiter-icon k-hidden k-icon k-i-arrow-chevron-right"></span>
-                            </li>
-                            <li class="k-breadcrumb-item">
-                                <a href="#" class="k-breadcrumb-link">Folder 1</a>
-                                <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
-                            </li>
-                            <li class="k-breadcrumb-item">
-                                <a href="#" class="k-breadcrumb-link">Folder 2</a>
-                                <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
-                            </li>
-                            <li class="k-breadcrumb-item  k-breadcrumb-last-item">
-                                <a href="#" class="k-breadcrumb-link k-state-disabled">Folder 3</a>
                             </li>
                         </ol>
                     </nav>
 
                     <!-- View -->
-                    <div class="k-filemanager-view k-filemanager-view-list">
-                        <div class="k-widget k-listview k-selectable k-filemanager-listview">
-                            <div class="k-listview-content">
-                                <div class="k-item">
-                                    <div class="file-group-icon">
-                                        <span class="k-icon k-i-folder"></span>
-                                    </div>
-                                    <div class="file-name">SubFolder</div>
-                                </div>
-                                <div class="k-item">
-                                    <div class="file-group-icon">
-                                        <span class="k-icon k-i-folder"></span>
-                                    </div>
-                                    <div class="file-name">SubFolder(1)</div>
-                                </div>
-                                <div class="k-item">
-                                    <div class="file-group-icon">
-                                        <span class="k-icon k-i-file-image"></span>
-                                    </div>
-                                    <div class="file-name">a100.png</div>
-                                </div>
-                                <div class="k-item">
-                                    <div class="file-group-icon">
-                                        <span class="k-icon k-i-folder"></span>
-                                    </div>
-                                    <div class="file-name">SubFolder</div>
-                                </div>
-                                <div class="k-item">
-                                    <div class="file-group-icon">
-                                        <span class="k-icon k-i-folder"></span>
-                                    </div>
-                                    <div class="file-name">SubFolder(1)</div>
-                                </div>
-                                <div class="k-item">
-                                    <div class="file-group-icon">
-                                        <span class="k-icon k-i-file-image"></span>
-                                    </div>
-                                    <div class="file-name">a100.png</div>
-                                </div>
-                                <div class="k-item">
-                                    <div class="file-group-icon">
-                                        <span class="k-icon k-i-folder"></span>
-                                    </div>
-                                    <div class="file-name">SubFolder</div>
-                                </div>
-                                <div class="k-item">
-                                    <div class="file-group-icon">
-                                        <span class="k-icon k-i-folder"></span>
-                                    </div>
-                                    <div class="file-name">SubFolder(1)</div>
-                                </div>
-                                <div class="k-item">
-                                    <div class="file-group-icon">
-                                        <span class="k-icon k-i-file-image"></span>
-                                    </div>
-                                    <div class="file-name">a100.png</div>
-                                </div>
+                    <div class="k-widget k-listview k-selectable k-filemanager-listview">
+                        <div class="k-listview-content k-d-flex k-flex-row k-flex-wrap">
+                            <div class="k-listview-item">
+                                <span class="k-file-preview"><span class="k-file-icon k-icon k-i-folder"></span></span>
+                                <span class="k-file-name">Folder</span>
+                            </div>
+                            <div class="k-listview-item">
+                                <span class="k-file-preview"><span class="k-file-icon k-icon k-i-file-image"></span></span>
+                                <span class="k-file-name">file.png</span>
                             </div>
                         </div>
                     </div>
@@ -184,32 +84,13 @@
 
 
                 <!-- Preview -->
-                <div class="k-filemanager-preview" style="display: none;">
-                    <div class="k-filemanager-preview-container">
-                        <div class="k-file-info">
-                            <div class="k-file-preview-wrapper">
-                                <span class="k-icon k-i-file"></span>
-                            </div>
-                            <div class="k-file-title-wrapper">
-                                <span class="k-file-title">chart-wrapper-small.png</span>
-                            </div>
-                            <dl class="k-file-meta-wrapper">
-                                <dt class="k-file-meta-label">Type:</dt>
-                                <dd class="k-file-meta-value k-file-type">.png</dd>
-                                <dt class="k-file-meta-label">Size:</dt>
-                                <dd class="k-file-meta-value k-file-size">6.14 KB</dd>
-                                <dt class="k-file-meta-label">Date Created:</dt>
-                                <dd class="k-file-meta-value k-file-created">12/13/2019 12:22:04 PM</dd>
-                                <dt class="k-file-meta-label">Date Modified:</dt>
-                                <dd class="k-file-meta-value k-file-modified">11/25/2019 3:23:45 PM</dd>
-                            </dl>
-                        </div>
-                    </div>
+                <div class="k-filemanager-preview k-hidden">
                 </div>
             </div>
         </div>
-        <div class="k-animation-container" style="width: 112px; height: 58px; overflow: visible; top: 220px; z-index: 10002; left: 270px; box-sizing: content-box; display: block; position: absolute;">
-            <ul class="k-widget k-reset k-header k-menu k-menu-vertical k-context-menu k-popup k-group k-state-border-up" style="display: block; position: absolute;">
+
+        <div class="k-animation-container" id="filemanager-context-menu">
+            <ul class="k-widget k-reset k-header k-menu k-menu-vertical k-context-menu k-popup k-group k-state-border-up">
                 <li class="k-item k-menu-item k-state-default k-first">
                     <span class="k-link k-menu-link">
                         <span class="k-icon k-i-edit"></span>
