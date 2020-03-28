@@ -1897,44 +1897,31 @@ $appbar-bottom-box-shadow:  0px -2px 3px rgba(0, 0, 0, .24);
 
 // Toolbar
 
-$toolbar-bg: try-shade($button-bg, .5) !default;
-$toolbar-text: $button-text !default;
-$toolbar-border: $toolbar-bg !default;
-$toolbar-gradient: null !default;
-
-$toolbar-border-width: 0px !default;
-$toolbar-border-radius: 0px !default;
 /// The horizontal padding of the container.
 /// @group toolbar
-$toolbar-padding-x: 0px !default;
-
+$toolbar-padding-x: 6px !default;
 /// The vertical padding of the container.
 /// @group toolbar
-$toolbar-padding-y: 0px !default;
+$toolbar-padding-y: 6px !default;
+$toolbar-border-width: 0 !default;
+$toolbar-border-radius: null !default;
+$toolbar-spacing: $toolbar-padding-x !default;
 
 $toolbar-font-family: $font-family !default;
 $toolbar-font-size: $font-size !default;
-$toolbar-line-height: $button-line-height !default;
+$toolbar-line-height: (20 / 14) !default;
 
-$toolbar-spacing: $toolbar-padding-x !default;
+$toolbar-inner-calc-size: calc( #{$button-calc-size} + #{$toolbar-padding-y * 2} ) !default;
 
-$toolbar-button-border-width: $button-border-width !default;
-$toolbar-button-border-radius: 0px !default;
-
-$toolbar-button-padding-x: $button-padding-x !default;
-$toolbar-button-padding-y: 14px !default;
-$toolbar-button-line-height: $button-line-height !default;
-
-$toolbar-button-calc-size: calc( #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} + #{$toolbar-button-border-width * 2} ) !default;
-$toolbar-button-inner-calc-size: calc( #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} ) !default;
-
-$toolbar-inner-calc-size: calc( #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} + #{$toolbar-button-border-width * 2} + #{$toolbar-padding-y * 2} ) !default;
+$toolbar-bg: $component-bg !default;
+$toolbar-text: $component-text !default;
+$toolbar-border: null !default;
+$toolbar-gradient: null !default;
+$toolbar-shadow: $box-shadow-depth-2 !default;
 
 $toolbar-button-expanded-bg: $popup-bg !default;
 $toolbar-button-expanded-shadow: $button-focused-shadow !default;
 
-$toolbar-shadow: $button-shadow !default;
-$toolbar-separator-padding-y: 6px !default;
 $toolbar-separator-border: $component-border !default;
 
 
@@ -2722,9 +2709,9 @@ $grid-grouping-header-padding-y: $grid-grouping-header-padding-x !default;
 $grid-filter-cell-padding-x: $grid-padding-x !default;
 $grid-filter-cell-padding-y: $grid-padding-y !default;
 
-$grid-toolbar-padding-x: 14px !default;
-$grid-toolbar-padding-y: $grid-toolbar-padding-x !default;
-$grid-toolbar-spacing: 0px !default;
+$grid-toolbar-padding-x: $toolbar-padding-x !default;
+$grid-toolbar-padding-y: $toolbar-padding-y !default;
+$grid-toolbar-spacing: $toolbar-spacing !default;
 
 $grid-cell-padding-x: $grid-padding-x !default;
 $grid-cell-padding-y: $grid-padding-y !default;
@@ -2939,7 +2926,7 @@ $filemanager-text: $component-text !default;
 $filemanager-border: $component-border !default;
 
 $filemanager-toolbar-border-width: $filemanager-border-width !default;
-$filemanager-toolbar-bg: null !default;
+$filemanager-toolbar-bg: try-shade( $button-bg, .5 ) !default;
 $filemanager-toolbar-text: null !default;
 $filemanager-toolbar-border: null !default;
 $filemanager-toolbar-gradient: null !default;
@@ -2955,7 +2942,7 @@ $filemanager-navigation-border: null !default;
 $filemanager-breadcrumb-padding-x: map-get( $spacing, 2 ) !default;
 $filemanager-breadcrumb-padding-y: map-get( $spacing, 2 ) !default;
 $filemanager-breadcrumb-border-width: $filemanager-border-width !default;
-$filemanager-breadcrumb-bg: $toolbar-bg !default;
+$filemanager-breadcrumb-bg: $filemanager-toolbar-bg !default;
 $filemanager-breadcrumb-text: null !default;
 $filemanager-breadcrumb-border: null !default;
 
@@ -3100,15 +3087,15 @@ $scheduler-bg: $panel-bg !default;
 $scheduler-text: $panel-text !default;
 $scheduler-border: $panel-border !default;
 
-$scheduler-toolbar-bg: $toolbar-bg !default;
-$scheduler-toolbar-text: $toolbar-text !default;
-$scheduler-toolbar-border: $toolbar-border !default;
-$scheduler-toolbar-gradient: $toolbar-gradient !default;
+$scheduler-toolbar-bg: try-shade( $button-bg, .5 ) !default;
+$scheduler-toolbar-text: null !default;
+$scheduler-toolbar-border: null !default;
+$scheduler-toolbar-gradient: null !default;
 
-$scheduler-footer-bg: $toolbar-bg !default;
-$scheduler-footer-text: $toolbar-text !default;
-$scheduler-footer-border: $toolbar-border !default;
-$scheduler-footer-gradient: $toolbar-gradient !default;
+$scheduler-footer-bg: try-shade( $button-bg, .5 ) !default;
+$scheduler-footer-text: null !default;
+$scheduler-footer-border: null !default;
+$scheduler-footer-gradient: null !default;
 
 $scheduler-event-min-height: 25px !default;
 $scheduler-event-border-radius: $border-radius !default;
@@ -3173,6 +3160,9 @@ $chat-message-box-padding-y: 10px !default;
 $chat-toolbar-padding-x: $chat-padding-x !default;
 $chat-toolbar-padding-y: 10px !default;
 $chat-toolbar-spacing: 20px !default;
+$chat-toolbar-bg: try-shade( $button-bg, .5 ) !default;
+$chat-toolbar-text: $toolbar-text !default;
+$chat-toolbar-border: inherit !default;
 
 $chat-quick-reply-padding-x: 12px !default;
 $chat-quick-reply-padding-y: 8px !default;
@@ -3213,10 +3203,6 @@ $chat-message-box-focus-shadow: 0 0 40px rgba( $input-text, .1 ) !default;
 
 $chat-message-box-button-hover-text: $primary !default;
 
-$chat-toolbar-box-bg: $toolbar-bg !default;
-$chat-toolbar-box-text: $toolbar-text !default;
-$chat-toolbar-box-border: inherit !default;
-
 $chat-toolbar-box-button-hover-text: $primary !default;
 $chat-toolbar-box-button-hover-bg: none !default;
 
@@ -3242,7 +3228,7 @@ $mediaplayer-titlebar-gradient: rgba( $mediaplayer-text, .7 ), rgba( $mediaplaye
 $mediaplayer-toolbar-padding-x: $toolbar-padding-x !default;
 $mediaplayer-toolbar-padding-y: $toolbar-padding-y !default;
 $mediaplayer-toolbar-spacing: $padding-x !default;
-$mediaplayer-toolbar-bg: rgba( $toolbar-bg, .85 ) !default;
+$mediaplayer-toolbar-bg: try-shade( $button-bg, .25 ) !default;
 $mediaplayer-toolbar-text: $toolbar-text !default;
 
 
@@ -3320,7 +3306,7 @@ $pdf-viewer-bg: $component-bg !default;
 $pdf-viewer-text: $component-text !default;
 $pdf-viewer-border: $component-border !default;
 
-$pdf-viewer-toolbar-bg: null !default;
+$pdf-viewer-toolbar-bg: try-shade( $button-bg, .25 ) !default;
 $pdf-viewer-toolbar-text: null !default;
 $pdf-viewer-toolbar-border: null !default;
 $pdf-viewer-toolbar-gradient: null !default;

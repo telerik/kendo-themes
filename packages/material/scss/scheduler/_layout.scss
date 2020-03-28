@@ -25,7 +25,7 @@
         li a,
         li .k-link {
             @extend .k-button-flat;
-            padding: $toolbar-button-padding-y $toolbar-button-padding-x;
+            padding: $button-padding-y $button-padding-x;
             display: flex;
             align-items: center;
             position: relative;

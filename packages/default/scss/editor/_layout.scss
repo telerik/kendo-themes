@@ -87,9 +87,9 @@
 
         // Tool
         .k-tool {
-            padding: $toolbar-button-padding-y;
-            width: $toolbar-button-calc-size;
-            height: $toolbar-button-calc-size;
+            padding: $button-padding-y;
+            width: $button-calc-size;
+            height: $button-calc-size;
         }
         .k-tool-text {
             display: none;
