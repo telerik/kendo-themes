@@ -23,36 +23,36 @@ $spacer-x: $spacer !default;
 $spacer-y: $spacer !default;
 
 $spacing: (
-    "0": 0,
-    "1": .25rem,
-    "2": .5rem,
-    "3": .75rem,
-    "4": 1rem,
-    "5": 1.25rem,
-    "6": 1.5rem,
-    "7": 1.75rem,
-    "8": 2rem,
-    "9": 2.25rem,
-    "10": 2.5rem,
-    "11": 2.75rem,
-    "12": 3rem,
-    "13": 3.25rem,
-    "14": 3.5rem,
-    "15": 3.75rem,
-    "16": 4rem,
-    "17": 4.25rem,
-    "18": 4.5rem,
-    "19": 4.75rem,
-    "20": 5rem,
-    "21": 5.25rem,
-    "22": 5.5rem,
-    "23": 5.75rem,
-    "24": 6rem,
-    "xs": .25rem,
-    "sm": 5rem,
-    "md": .75rem,
-    "lg": 1rem,
-    "xl": 1.5rem
+    0: 0,
+    1: .25rem,
+    2: .5rem,
+    3: .75rem,
+    4: 1rem,
+    5: 1.25rem,
+    6: 1.5rem,
+    7: 1.75rem,
+    8: 2rem,
+    9: 2.25rem,
+    10: 2.5rem,
+    11: 2.75rem,
+    12: 3rem,
+    13: 3.25rem,
+    14: 3.5rem,
+    15: 3.75rem,
+    16: 4rem,
+    17: 4.25rem,
+    18: 4.5rem,
+    19: 4.75rem,
+    20: 5rem,
+    21: 5.25rem,
+    22: 5.5rem,
+    23: 5.75rem,
+    24: 6rem,
+    xs: .25rem,
+    sm: 5rem,
+    md: .75rem,
+    lg: 1rem,
+    xl: 1.5rem
 ) !default;
 
 
@@ -2331,98 +2331,72 @@ $spreadsheet-drawing-anchor-bg: rgba( $header-selected-bg, .25 ) !default;
 
 
 // File manager
-$filemanager-spacer: $padding-y * 2 !default;
+$filemanager-spacer: map-get( $spacing, 4 ) !default;
 $filemanager-border-width: 1px !default;
+$filemanager-font-family: $font-family !default;
+$filemanager-font-size: $font-size !default;
+$filemanager-line-height: $line-height !default;
+$filemanager-bg: $component-bg !default;
+$filemanager-text: $component-text !default;
+$filemanager-border: $component-border !default;
 
-$filemanager-bg: null !default;
-$filemanager-text: null !default;
-$filemanager-border: null !default;
-
-$filemanager-toolbar-border-width: 0 0 $filemanager-border-width 0 !default;
-$filemanager-toolbar-border-style: solid !default;
-$filemanager-toolbar-font-weight: normal !default;
+$filemanager-toolbar-border-width: $filemanager-border-width !default;
 $filemanager-toolbar-bg: null !default;
 $filemanager-toolbar-text: null !default;
-$filemanager-toolbar-border: $component-border !default;
+$filemanager-toolbar-border: null !default;
 
+$filemanager-navigation-padding-x: $filemanager-spacer !default;
+$filemanager-navigation-padding-y: $filemanager-spacer !default;
 $filemanager-navigation-width: 20% !default;
-$filemanager-navigation-border-width: 0 $filemanager-border-width 0 0 !default;
-$filemanager-navigation-border-style: solid !default;
+$filemanager-navigation-border-width: $filemanager-border-width !default;
 $filemanager-navigation-bg: null !default;
 $filemanager-navigation-text: null !default;
-$filemanager-navigation-border: $component-border !default;
+$filemanager-navigation-border: null !default;
 
-$filemanager-navigation-container-padding-x: 0 !default;
-$filemanager-navigation-container-padding-y: $filemanager-spacer !default;
-
-$filemanager-treeivew-spacing-x: $filemanager-spacer !default;
-$filemanager-treeivew-spacing-y: 0 !default;
-
-$filemanager-breadcrumb-padding-x: $padding-x-sm !default;
-$filemanager-breadcrumb-padding-y: $padding-y-sm !default;
-$filemanager-breadcrumb-border-width: 0 0 $filemanager-border-width 0 !default;
-$filemanager-breadcrumb-border-style: solid !default;
-$filemanager-breadcrumb-bg: $base-bg !default;
+$filemanager-breadcrumb-padding-x: map-get( $spacing, 2 ) !default;
+$filemanager-breadcrumb-padding-y: map-get( $spacing, 2 ) !default;
+$filemanager-breadcrumb-border-width: $filemanager-border-width !default;
+$filemanager-breadcrumb-bg: $toolbar-bg !default;
 $filemanager-breadcrumb-text: null !default;
-$filemanager-breadcrumb-border: $component-border !default;
+$filemanager-breadcrumb-border: null !default;
 
-$filemanager-listview-border-width: 0 !default;
 $filemanager-listview-bg: null !default;
 $filemanager-listview-text: null !default;
 $filemanager-listview-border: null !default;
 
-$filemanager-listview-item-padding-x: .75rem !default;
-$filemanager-listview-item-padding-y: $filemanager-listview-item-padding-x !default;
-$filemanager-listview-item-width: 106px !default;
-$filemanager-listview-item-height: 106px !default;
+$filemanager-listview-item-padding-x: map-get( $spacing, 4 ) !default;
+$filemanager-listview-item-padding-y: map-get( $spacing, 4 ) !default;
+$filemanager-listview-item-width: 120px !default;
+$filemanager-listview-item-height: 120px !default;
 $filemanager-listview-item-bg: null !default;
 $filemanager-listview-item-text: null !default;
 $filemanager-listview-item-border: null !default;
 
-$filemanager-listview-item-icon-padding-x: 0 !default;
-$filemanager-listview-item-icon-padding-y: .25rem !default;
-$filemanager-listview-item-icon-size: $icon-size-lg * 1.5 !default;
+$filemanager-listview-item-icon-size: ($icon-size * 3) !default;
 $filemanager-listview-item-icon-bg: null !default;
-$filemanager-listview-item-icon-text: true-mix($base-text, $base-bg, 22.5%) !default;
+$filemanager-listview-item-icon-text: try-tint($filemanager-text, 4) !default;
 $filemanager-listview-item-icon-border: null !default;
 $filemanager-listview-item-icon-selected-bg: null !default;
-$filemanager-listview-item-icon-selected-text: true-mix($base-text, $base-bg, 48%) !default;
+$filemanager-listview-item-icon-selected-text: inherit !default;
 $filemanager-listview-item-icon-selected-border: null !default;
 
-$filemanager-grid-row-height: 58px !default;
-$filemanager-grid-header-height: 50px !default;
-$filemanager-grid-icon-spacing: $filemanager-spacer !default;
 $filemanager-grid-bg: null !default;
 $filemanager-grid-text: null !default;
 $filemanager-grid-border: null !default;
 
+$filemanager-preview-padding-x: $filemanager-spacer !default;
+$filemanager-preview-padding-y: $filemanager-spacer !default;
 $filemanager-preview-width: 20% !default;
-$filemanager-preview-border-width: 0 0 0 $filemanager-border-width !default;
-$filemanager-preview-border-style: solid !default;
+$filemanager-preview-border-width: $filemanager-border-width !default;
+$filemanager-preview-spacing: $filemanager-spacer !default;
 $filemanager-preview-bg: null !default;
 $filemanager-preview-text: null !default;
-$filemanager-preview-border: $component-border !default;
+$filemanager-preview-border: null !default;
 
-$filemanager-preview-container-padding: ($filemanager-spacer * 6) 0 $filemanager-spacer 0 !default;
-
-$filemanager-preview-file-spacing-x: 20px !default;
-$filemanager-preview-file-spacing-y: 0 !default;
-
-$filemanager-preview-icon-size: $icon-size-lg * 3 !default;
+$filemanager-preview-icon-size: ($icon-size * 6) !default;
 $filemanager-preview-icon-bg: null !default;
-$filemanager-preview-icon-text: true-mix($base-text, $base-bg, 22.5%) !default;
+$filemanager-preview-icon-text: try-tint($filemanager-text, 4) !default;
 $filemanager-preview-icon-border: null !default;
-
-$filemanager-preview-title-padding-x: 0 !default;
-$filemanager-preview-title-padding-y: $filemanager-spacer !default;
-
-$filemanager-preview-line-break-spacing: $filemanager-spacer !default;
-
-$filemanager-drag-hint-padding-x: $padding-x !default;
-$filemanager-drag-hint-padding-y: $padding-y !default;
-$filemanager-drag-hint-bg: $primary !default;
-$filemanager-drag-hint-text: contrast-wcag( $filemanager-drag-hint-bg ) !default;
-$filemanager-drag-hint-border: null !default;
 
 
 // Editor
