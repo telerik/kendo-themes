@@ -315,9 +315,9 @@
         .k-nav-prev,
         .k-nav-next {
             .k-link {
-                padding: $toolbar-button-padding-y;
-                width: $toolbar-button-inner-calc-size;
-                height: $toolbar-button-inner-calc-size;
+                padding: $button-padding-y;
+                width: $button-inner-calc-size;
+                height: $button-inner-calc-size;
             }
         }
 

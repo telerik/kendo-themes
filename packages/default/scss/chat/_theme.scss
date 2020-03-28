@@ -93,9 +93,9 @@
     .k-chat-toolbar,
     .k-chat .k-toolbar-box {
         @include fill(
-            $chat-toolbar-box-text,
-            $chat-toolbar-box-bg,
-            $chat-toolbar-box-border
+            $chat-toolbar-text,
+            $chat-toolbar-bg,
+            $chat-toolbar-border
         );
 
         .k-button:hover {

@@ -1,4 +1,4 @@
-@include exports("sreadsheet/theme") {
+@include exports("sreadsheet/theme/material") {
 
     // Spreadsheet
     .k-spreadsheet {
@@ -35,7 +35,7 @@
     .k-spreadsheet-sheets-bar {
         @include fill(
             $toolbar-text,
-            $toolbar-bg,
+            try-shade( $toolbar-bg, .5 ),
             inherit,
             $toolbar-gradient
         );

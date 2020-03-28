@@ -1854,45 +1854,31 @@ $appbar-bottom-box-shadow:  0px -1px 1px rgba(0, 0, 0, .16);
 
 // Toolbar
 
-$toolbar-bg: $button-bg !default;
-$toolbar-text: $button-text !default;
-$toolbar-border: $button-border !default;
-$toolbar-gradient: null !default;
-
-$toolbar-border-width: 1px !default;
-$toolbar-border-radius: 0px !default;
-
 /// The horizontal padding of the container.
 /// @group toolbar
 $toolbar-padding-x: $padding-x !default;
-
 /// The vertical padding of the container.
 /// @group toolbar
 $toolbar-padding-y: $padding-x !default;
+$toolbar-border-width: 1px !default;
+$toolbar-border-radius: null !default;
+$toolbar-spacing: $toolbar-padding-x !default;
+
+$toolbar-inner-calc-size: calc( #{$button-calc-size} + #{$toolbar-padding-y * 2} ) !default;
 
 $toolbar-font-family: $font-family !default;
 $toolbar-font-size: $font-size !default;
 $toolbar-line-height: $line-height !default;
 
-$toolbar-spacing: $toolbar-padding-x !default;
-
-$toolbar-button-border-width: $button-border-width !default;
-$toolbar-button-border-radius: 0px !default;
-
-$toolbar-button-padding-x: $button-padding-x !default;
-$toolbar-button-padding-y: $button-padding-y !default;
-$toolbar-button-line-height: $button-line-height !default;
-
-$toolbar-button-calc-size: calc( #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} + #{$toolbar-button-border-width * 2} ) !default;
-$toolbar-button-inner-calc-size: calc( #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} ) !default;
-
-$toolbar-inner-calc-size: calc( #{$toolbar-button-line-height * 1em} + #{$toolbar-button-padding-y * 2} + #{$toolbar-button-border-width * 2} + #{$toolbar-padding-y * 2} ) !default;
+$toolbar-bg: $button-bg !default;
+$toolbar-text: $button-text !default;
+$toolbar-border: $button-border !default;
+$toolbar-gradient: null !default;
+$toolbar-shadow: null !default;
 
 $toolbar-button-expanded-bg: null !default;
 $toolbar-button-expanded-shadow: none !default;
 
-$toolbar-shadow: none !default;
-$toolbar-separator-padding-y: $toolbar-button-padding-y !default;
 $toolbar-separator-border: inherit !default;
 
 
@@ -3135,6 +3121,9 @@ $chat-message-box-padding-y: 10px !default;
 $chat-toolbar-padding-x: $chat-padding-x !default;
 $chat-toolbar-padding-y: 10px !default;
 $chat-toolbar-spacing: 20px !default;
+$chat-toolbar-bg: $toolbar-bg !default;
+$chat-toolbar-text: $toolbar-text !default;
+$chat-toolbar-border: inherit !default;
 
 $chat-quick-reply-padding-x: 12px !default;
 $chat-quick-reply-padding-y: 8px !default;
@@ -3174,10 +3163,6 @@ $chat-message-box-border: inherit !default;
 $chat-message-box-focus-shadow: 0 0 40px rgba( $input-text, .1 ) !default;
 
 $chat-message-box-button-hover-text: $primary !default;
-
-$chat-toolbar-box-bg: $toolbar-bg !default;
-$chat-toolbar-box-text: $toolbar-text !default;
-$chat-toolbar-box-border: inherit !default;
 
 $chat-toolbar-box-button-hover-text: $primary !default;
 $chat-toolbar-box-button-hover-bg: none !default;

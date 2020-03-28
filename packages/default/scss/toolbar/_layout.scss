@@ -27,7 +27,7 @@
 
         &::before {
             content: "";
-            height: $toolbar-button-calc-size;
+            height: $button-calc-size;
         }
 
         &.k-toolbar-resizable {
@@ -68,10 +68,8 @@
 
 
         // Button
-        .k-button {
-            padding: $toolbar-button-padding-y $toolbar-button-padding-x;
-            line-height: $toolbar-button-line-height;
-        }
+        .k-button {}
+
 
         // Toggle button
         .k-toggle-button {}
@@ -85,19 +83,6 @@
         .k-split-button {}
 
 
-        // Dropdowns and Inputs
-        // .k-autocomplete,
-        // .k-dateinput-wrap,
-        // .k-multiselect-wrap,
-        // .k-numeric-wrap,
-        .k-picker-wrap,
-        .k-dropdown-wrap {
-            &::before {
-                @extend .k-button-overlay;
-            }
-        }
-
-
         // Overflow anchor
         .k-overflow-anchor {
             @include border-radius( 0 );
@@ -107,7 +92,6 @@
             height: 100%;
             border-width: 0;
             border-color: inherit;
-            background-clip: padding-box;
             box-sizing: border-box;
             justify-content: center;
             position: absolute;
