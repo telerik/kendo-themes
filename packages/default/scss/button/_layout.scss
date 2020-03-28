@@ -223,10 +223,13 @@
 
 
     // Outline button
-    .k-button.k-outline {
+    .k-button-outline {
+        @include box-shadow( none );
         color: inherit;
         background: none;
-        box-shadow: none;
+    }
+    .k-button.k-outline {
+        @extend .k-button-outline;
     }
 
 
