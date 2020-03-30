@@ -127,6 +127,51 @@
         .k-grid-search {
             color: $body-text;
         }
+
+        // Locked columns
+        .k-grid-header-locked {
+            @include fill(
+                $grid-sticky-header-text,
+                $grid-sticky-header-bg,
+                $grid-sticky-header-border
+            );
+        }
+
+        .k-grid-content-locked {
+            @include fill( $border: $grid-sticky-header-border );
+
+            td {
+                @include fill(
+                    $grid-sticky-text,
+                    $grid-sticky-bg,
+                    $grid-sticky-border
+                );
+            }
+
+            .k-alt td {
+                @include fill( $bg: $grid-sticky-alt-bg );
+            }
+
+            // Selected state
+            .k-state-selected td {
+                @include fill( $bg: $grid-sticky-selected-bg );
+            }
+
+            .k-state-selected.k-alt td {
+                @include fill( $bg: $grid-sticky-selected-alt-bg );
+            }
+
+            // Hovered state
+            .k-state-hover td,
+            tr:hover td {
+                @include fill( $bg: $grid-sticky-hovered-bg );
+            }
+
+            // Selected hover
+            .k-state-selected:hover td {
+                @include fill( $bg: $grid-sticky-selected-hovered-bg );
+            }
+        }
     }
 
     col.k-sorted,
@@ -162,9 +207,9 @@
         .k-grid-header-sticky,
         .k-grid-header-sticky.k-sorted {
             @include fill(
-                $grid-sticky-text,
-                $grid-sticky-bg,
-                $grid-sticky-border
+                $grid-sticky-header-text,
+                $grid-sticky-header-bg,
+                $grid-sticky-header-border
             );
         }
     }
@@ -179,6 +224,11 @@
             );
         }
 
+        &.k-alt {
+            .k-grid-content-sticky {
+                @include fill( $bg: $grid-sticky-alt-bg );
+            }
+        }
 
         // Selected state
         &.k-state-selected .k-grid-content-sticky {
@@ -202,6 +252,16 @@
         }
     }
 
+    .k-group-footer {
+        .k-grid-footer-sticky {
+            @include fill( $bg: $grid-sticky-footer-bg );
+        }
+
+        &:hover .k-grid-footer-sticky,
+        &.k-state-hover .k-grid-footer-sticky {
+            @include fill( $bg: $grid-sticky-footer-hovered-bg );
+        }
+    }
 
     .k-column-list-item:hover,
     .k-columnmenu-item:hover {
