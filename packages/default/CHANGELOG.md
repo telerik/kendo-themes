@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.15.0"></a>
+# [4.15.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.14.0...@progress/kendo-theme-default@4.15.0) (2020-03-30)
+
+
+### Bug Fixes
+
+* **chip:** label overflows its content on small resolutions ([a10bdfb](https://github.com/telerik/kendo-themes/commit/a10bdfb))
+* **menu:** menu shrinks in IE11 ([5d78d7c](https://github.com/telerik/kendo-themes/commit/5d78d7c))
+
+
+### Features
+
+* **listview:** allow listview content to have grid or flex layout ([09a9d52](https://github.com/telerik/kendo-themes/commit/09a9d52))
+* **pager:** add styling for standalone pager component ([f7cecc8](https://github.com/telerik/kendo-themes/commit/f7cecc8))
+
+
+
+
 <a name="4.14.0"></a>
 # [4.14.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.13.0...@progress/kendo-theme-default@4.14.0) (2020-03-17)
 
