@@ -10,11 +10,8 @@
         font-family: $editor-font-family;
         font-size: $editor-font-size;
         line-height: $editor-line-height;
-        border-collapse: separate;
-        border-spacing: 0;
         vertical-align: top;
         position: relative;
-        table-layout: fixed;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
 
@@ -32,6 +29,9 @@
     }
     table.k-editor {
         width: 100%;
+        table-layout: fixed;
+        border-collapse: separate;
+        border-spacing: 0;
 
         tbody,
         tr,
@@ -82,7 +82,6 @@
         word-wrap: break-word;
         overflow: auto;
         background: none;
-        transition: border-color .3s;
     }
     .k-window.k-editor-widget {
         padding: 0;
@@ -109,82 +108,28 @@
 
     // jQuery toolbar
     .k-editor-toolbar {
-        margin: 0;
-        padding: $toolbar-padding-y $toolbar-padding-y;
         border-width: 0 0 $toolbar-border-width 0;
-        border-style: solid;
-        border-color: inherit;
-        list-style-type: none;
-        line-height: $toolbar-line-height;
-        cursor: default;
-        word-wrap: break-word; // allow tools to wrap properly in IE
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        position: relative;
-
-        &.k-toolbar-resizable {
-            flex-wrap: nowrap;
-            overflow: hidden;
-            flex: 1 1 auto;
-        }
-
-        li {
-            display: inline-flex;
-            align-items: center;
-            vertical-align: middle;
-        }
-
 
         // Group
         .k-tool-group {
-            border-width: 0;
-            border-color: inherit;
-
-            .k-widget {}
             .k-widget ~ .k-widget {
-                margin-left: $toolbar-spacing;
+                margin-inline-start: $toolbar-spacing;
             }
         }
-        .k-tool-group + .k-tool-group {
-            margin-left: $toolbar-spacing;
-        }
-        .k-tool-group .k-state-disabled,
-        .k-tool-group.k-state-disabled {
-            display: none;
-        }
 
-
-        // Tools
+        // Tool
         .k-tool {
             padding: $toolbar-button-padding-y;
             width: $toolbar-button-calc-size;
             height: $toolbar-button-calc-size;
-            border-width: $toolbar-button-border-width;
-            border-style: solid;
-            box-sizing: border-box;
-            text-decoration: none;
-            display: inline-flex;
-            flex-direction: row;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-            position: relative;
-
-            &:hover {
-                z-index: 2;
-            }
         }
         .k-tool-text {
             display: none;
         }
-        .k-tool + .k-tool {
-            margin-left: -$toolbar-button-border-width;
-        }
 
         // Overflow tools
         .k-overflow-tools {
+            margin: 0;
             position: absolute;
             top: 0;
             right: 0;
@@ -195,6 +140,7 @@
             padding: $toolbar-padding-y;
             width: $toolbar-inner-calc-size;
             height: $toolbar-inner-calc-size;
+            position: relative;
         }
 
     }

@@ -49,62 +49,6 @@
         }
     }
 
-    // Editor toolbar
-    .k-editor-toolbar {
-        @include fill(
-            $toolbar-text,
-            $toolbar-bg,
-            $toolbar-border,
-            $toolbar-gradient
-        );
-
-        a.k-tool,
-        .k-picker-wrap,
-        .k-dropdown-wrap {
-
-            // Hovered state
-            &:hover,
-            &.k-state-hover {
-                &::before {
-                    @include opacity( $flat-button-hover-opacity );
-                }
-            }
-
-            // Focused state
-            &:focus,
-            &.k-state-focused {
-                &::before {
-                    @include opacity( $flat-button-focused-opacity );
-                }
-            }
-            &.k-no-focus:not(:hover),
-            &.k-no-focus:not(.k-state-hover) {
-                &::before {
-                    @include opacity( 0 );
-                }
-            }
-
-            // Pressed state
-            &:active,
-            &.k-state-active {
-                &::before {
-                    @include opacity( $flat-button-active-opacity );
-                }
-            }
-
-            // Selected state
-            &.k-state-selected {
-                &::before {
-                    @include opacity( $flat-button-selected-opacity );
-                }
-            }
-        }
-
-        .k-tool-group.k-button-group {
-            box-shadow: none;
-        }
-    }
-
 
     // Insert table
     .k-ct-popup {
