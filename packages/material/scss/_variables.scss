@@ -1988,7 +1988,8 @@ $pager-number-selected-bg: rgba($pager-item-selected-bg, $pager-number-selected-
 $pager-number-selected-text: $pager-number-text !default;
 $pager-number-selected-border: $pager-item-selected-border !default;
 
-$pager-number-focus-bg: rgba($pager-item-selected-bg, $pager-item-focus-opacity) !default;
+$pager-number-focus-opacity: .12 !default;
+$pager-number-focus-bg: rgba($pager-item-selected-bg, $pager-number-focus-opacity) !default;
 $pager-number-focus-shadow: null !default;
 
 $pager-input-width: 3em !default;

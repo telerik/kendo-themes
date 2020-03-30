@@ -1916,8 +1916,8 @@ $pager-item-selected-text: $pagination-active-color !default;
 $pager-item-selected-border: $pagination-active-border-color !default;
 
 $pager-item-focus-opacity: null !default;
-$pager-item-focus-bg: transparent !default;
-$pager-item-focus-shadow: null !default;
+$pager-item-focus-bg: $pager-item-bg !default;
+$pager-item-focus-shadow: 0 0 0 3px rgba($primary, .25) !default;
 
 $pager-number-padding-x: $pager-item-padding-x !default;
 $pager-number-padding-y: $pager-item-padding-y !default;
@@ -1939,8 +1939,9 @@ $pager-number-selected-bg: $pager-item-selected-bg !default;
 $pager-number-selected-text: $pager-item-selected-text !default;
 $pager-number-selected-border: $pager-item-selected-border !default;
 
-$pager-number-focus-bg: transparent !default;
-$pager-number-focus-shadow: null !default;
+$pager-number-focus-opacity: null !default;
+$pager-number-focus-bg: $pager-number-bg !default;
+$pager-number-focus-shadow: $pager-item-focus-shadow !default;
 
 $pager-input-width: 5em !default;
 $pager-dropdown-width: 5em !default;
