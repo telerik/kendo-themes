@@ -65,18 +65,18 @@
                 );
             }
 
+            &:focus,
+            &.k-state-focus {
+                background-color: $pager-number-focus-bg;
+                @include box-shadow( $pager-number-focus-shadow );
+            }
+
             &.k-state-selected {
                 @include fill(
                     $pager-number-selected-text,
                     $pager-number-selected-bg,
                     $pager-number-selected-border
                 );
-            }
-
-            &:focus,
-            &.k-state-focus {
-                background-color: $pager-number-focus-bg;
-                @include box-shadow( $pager-number-focus-shadow );
             }
         }
     }
