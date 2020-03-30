@@ -76,7 +76,8 @@
             height: $button-calc-size;
             padding: $button-padding-y;
 
-            .k-text {
+            .k-text,
+            .k-button-text {
                 display: none;
             }
         }

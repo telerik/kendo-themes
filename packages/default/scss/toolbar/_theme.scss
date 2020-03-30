@@ -8,6 +8,7 @@
             $toolbar-border,
             $toolbar-gradient
         );
+        @include box-shadow( $toolbar-shadow );
 
 
         // Overflow anchor

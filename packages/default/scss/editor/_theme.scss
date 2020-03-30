@@ -45,56 +45,6 @@
         }
     }
 
-
-    // jQuery toolbar
-    .k-editor-toolbar {
-        @include fill(
-            $toolbar-text,
-            $toolbar-bg,
-            $toolbar-border,
-            $toolbar-gradient
-        );
-
-        a.k-tool {
-            @include fill(
-                $button-text,
-                $button-bg,
-                $button-border,
-                $button-gradient
-            );
-
-            &:hover,
-            &.k-state-hover {
-                @include fill(
-                    $button-hovered-text,
-                    $button-hovered-bg,
-                    $button-hovered-border,
-                    $button-hovered-gradient
-                );
-            }
-
-            &:active,
-            &.k-state-active {
-                @include fill(
-                    $button-pressed-text,
-                    $button-pressed-bg,
-                    $button-pressed-border,
-                    $button-pressed-gradient
-                );
-                @include box-shadow( $button-pressed-shadow );
-            }
-
-            &.k-state-selected {
-                @include fill(
-                    $primary-button-pressed-text,
-                    $primary-button-pressed-bg,
-                    $primary-button-pressed-border,
-                    $primary-button-pressed-gradient
-                );
-            }
-        }
-    }
-
     // sass-lint:disable class-name-format
     .editorToolbarWindow.k-header.k-window-content {
         @include fill(
