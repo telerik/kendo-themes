@@ -611,6 +611,15 @@
             text-align: right;
         }
 
+        // Content
+        .k-content,
+        .k-calendar-content {
+            > table {
+                margin-right: 0;
+                margin-left: -17px; // scrollbar-size
+            }
+        }
+
     }
 
 }
