@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.13.0"></a>
+# [4.13.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.12.0...@progress/kendo-theme-bootstrap@4.13.0) (2020-03-30)
+
+
+### Features
+
+* **listview:** allow listview content to have grid or flex layout ([09a9d52](https://github.com/telerik/kendo-themes/commit/09a9d52))
+* **pager:** add styling for standalone pager component ([f7cecc8](https://github.com/telerik/kendo-themes/commit/f7cecc8))
+
+
+
+
 <a name="4.12.0"></a>
 # [4.12.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.11.0...@progress/kendo-theme-bootstrap@4.12.0) (2020-03-17)
 

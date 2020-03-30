@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.12.0"></a>
+# [3.12.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.11.1...@progress/kendo-theme-material@3.12.0) (2020-03-30)
+
+
+### Bug Fixes
+
+* **upload:** use try-shade to determine upload button background ([0ad027a](https://github.com/telerik/kendo-themes/commit/0ad027a))
+* use flattened theme to build swatches against ([be5cc16](https://github.com/telerik/kendo-themes/commit/be5cc16))
+
+
+### Features
+
+* **listview:** allow listview content to have grid or flex layout ([09a9d52](https://github.com/telerik/kendo-themes/commit/09a9d52))
+* **pager:** add styling for standalone pager component ([f7cecc8](https://github.com/telerik/kendo-themes/commit/f7cecc8))
+
+
+
+
 <a name="3.11.1"></a>
 ## [3.11.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.11.0...@progress/kendo-theme-material@3.11.1) (2020-03-17)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.2"></a>
+## [0.5.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.5.1...@progress/kendo-theme-tasks@0.5.2) (2020-03-30)
+
+
+### Bug Fixes
+
+* use task registry to run tasks ([8f5eb29](https://github.com/telerik/kendo-themes/commit/8f5eb29))
+
+
+
+
 <a name="0.5.1"></a>
 ## [0.5.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.5.0...@progress/kendo-theme-tasks@0.5.1) (2020-03-17)
 
