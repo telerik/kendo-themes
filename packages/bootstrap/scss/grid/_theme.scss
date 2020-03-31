@@ -105,7 +105,8 @@
             }
 
             // Selected hover
-            .k-state-selected:hover td {
+            .k-state-selected:hover td,
+            .k-state-selected.k-state-hover td {
                 @include fill( $bg: $grid-sticky-selected-hovered-bg );
             }
         }
@@ -197,13 +198,15 @@
 
 
         // Hovered state
-        &:hover .k-grid-content-sticky {
+        &:hover .k-grid-content-sticky,
+        &.k-state-hover .k-grid-content-sticky {
             background-color: $grid-sticky-hovered-bg;
         }
 
 
         // Selected hover
-        &.k-state-selected:hover .k-grid-content-sticky {
+        &.k-state-selected:hover .k-grid-content-sticky,
+        &.k-state-selected.k-state-hover .k-grid-content-sticky {
             background-color: $grid-sticky-selected-hovered-bg;
         }
     }
