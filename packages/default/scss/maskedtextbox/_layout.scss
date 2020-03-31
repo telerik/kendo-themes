@@ -16,6 +16,14 @@
         > .k-textbox {
             flex: 1 0 0%;
             min-width: 0;
+
+            &.k-state-invalid {
+                transition: none;
+
+                + .k-i-warning {
+                    display: inline-block;
+                }
+            }
         }
 
         .k-i-warning {
@@ -24,14 +32,6 @@
             top: 50%;
             transform: translateY(-50%);
             right: $padding-x;
-        }
-
-        &.k-state-invalid {
-            transition: none;
-
-            .k-i-warning {
-                display: inline-block;
-            }
         }
 
         &[dir="rtl"],

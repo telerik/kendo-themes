@@ -29,10 +29,7 @@
         &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            @include fill (
-                $color: $error,
-                $border: $invalid-border
-            );
+            border-color: $invalid-border;
         }
 
         // Selection

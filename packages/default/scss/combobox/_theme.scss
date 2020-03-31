@@ -11,13 +11,10 @@
                 $combobox-border
             );
 
-            // Invalid
+            // Invalid state
             &.k-invalid,
             &.k-invalid:hover,
-            &.k-state-invalid,
-            &.ng-invalid.ng-touched,
-            &.ng-invalid.ng-dirty {
-                color: $error;
+            &.k-state-invalid {
                 border-color: $invalid-border;
             }
         }
@@ -62,14 +59,13 @@
 
             .k-select {}
         }
-    }
 
-    .k-state-invalid,
-    .ng-invalid.ng-touched,
-    .ng-invalid.ng-dirty {
-        > .k-dropdown-wrap {
-            color: $forms-invalid-color;
-            border-color: $invalid-border;
+        // Invalid
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            .k-dropdown-wrap {
+                border-color: $invalid-border;
+            }
         }
     }
 
