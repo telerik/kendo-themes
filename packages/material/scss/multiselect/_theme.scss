@@ -75,6 +75,13 @@
                 }
             }
 
+            // Invalid state
+            &.k-invalid,
+            &.k-invalid:hover,
+            &.k-state-invalid {
+                border-color: $invalid-border;
+            }
+
             // Focused
             &.k-state-focused {
                 border-color: $multiselect-focused-border;
@@ -94,14 +101,14 @@
                 }
             }
         }
-    }
 
-    .k-state-invalid,
-    .ng-invalid.ng-touched,
-    .ng-invalid.ng-dirty {
-        > .k-multiselect-wrap {
-            color: $forms-invalid-color;
-            border-color: $invalid-border;
+        // Invalid
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            .k-multiselect-wrap {
+                border-color: $invalid-border;
+            }
         }
     }
+
 }

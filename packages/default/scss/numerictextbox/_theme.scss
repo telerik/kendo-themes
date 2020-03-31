@@ -72,34 +72,20 @@
                 @include box-shadow($numeric-focused-shadow);
             }
 
-
             // Invalid state
             &.k-invalid,
             &.k-invalid:hover,
-            &.k-state-invalid,
-            &.ng-invalid.ng-touched,
-            &.ng-invalid.ng-dirty {
-                @include fill(
-                    $numeric-invalid-text,
-                    $numeric-invalid-bg,
-                    $numeric-invalid-border
-                );
-            }
-
             &.k-state-invalid {
-                .k-select {
-                    color: $numeric-invalid-text;
-                }
+                border-color: $invalid-border;
             }
         }
-    }
 
-    .k-widget.k-state-invalid,
-    .ng-invalid.ng-touched,
-    .ng-invalid.ng-dirty {
-        > .k-numeric-wrap {
-            color: $forms-invalid-color;
-            border-color: $invalid-border;
+        // Invalid state
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            .k-numeric-wrap {
+                border-color: $invalid-border;
+            }
         }
     }
 }

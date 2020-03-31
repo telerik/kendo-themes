@@ -10,7 +10,6 @@
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
             .k-textbox {
-                color: $forms-invalid-color;
                 border-color: $invalid-border;
 
                 &:focus,

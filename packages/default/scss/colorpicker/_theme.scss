@@ -18,9 +18,7 @@
             // Invalid state
             &.k-invalid,
             &.k-invalid:hover,
-            &.k-state-invalid,
-            &.ng-invalid.ng-touched,
-            &.ng-invalid.ng-dirty {
+            &.k-state-invalid {
                 color: $error;
                 border-color: $invalid-border;
             }
@@ -59,6 +57,14 @@
         // Focused state
         .k-state-focused {
             box-shadow: $colorpicker-select-focused-shadow;
+        }
+
+        // Invalid state
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            .k-picker-wrap {
+                border-color: $invalid-border;
+            }
         }
 
     }
