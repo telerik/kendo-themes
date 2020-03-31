@@ -2313,7 +2313,7 @@ $grid-sticky-footer-hovered-bg: true-mix($grid-hovered-bg, $grid-sticky-footer-b
 $grid-sticky-selected-bg: try-shade( mix( $grid-bg, contrast-wcag( $grid-bg ), 96% ) ) !default;
 $grid-sticky-selected-alt-bg: try-shade( mix( $grid-bg, contrast-wcag( $grid-bg ), 96% ) ) !default;
 
-$grid-sticky-hovered-bg: try-shade($grid-hovered-bg, .5) !default;
+$grid-sticky-hovered-bg: try-shade(true-mix($grid-hovered-bg, $grid-bg, 9%)) !default;
 $grid-sticky-selected-hovered-bg: try-shade( mix( mix( $grid-bg, contrast-wcag( $grid-bg ), 93% ), mix( $grid-bg, contrast-wcag( $grid-bg ), 96% ), 75% ) ) !default;
 
 
