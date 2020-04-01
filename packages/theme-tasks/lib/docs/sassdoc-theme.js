@@ -29,7 +29,8 @@ module.exports = function(dest, context) {
             return acc;
         }, {
             mixin: [],
-            variableGroups: []
+            variableGroups: [],
+            css: []
         });
 
     // honor @group annotations
