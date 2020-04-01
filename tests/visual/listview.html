@@ -12,10 +12,11 @@
             grid-template-columns: 1fr 1fr;
         }
 
-        .k-listview-content {
+        .k-d-grid {
             grid-template-columns: 1fr 1fr;
+            grid-gap: 10px
         }
-        .k-listview-content > div {
+        .k-listview-item {
             padding: 10px;
             display: inline-block;
             outline: 1px dashed;
@@ -30,34 +31,34 @@
             <span>No layout</span>
             <div class="k-widget k-listview">
                 <div class="k-listview-content">
-                    <div>Listview cell</div>
-                    <div>Listview cell</div>
-                    <div>Listview cell</div>
-                    <div>Listview cell</div>
+                    <div class="k-listview-item">Listview item</div>
+                    <div class="k-listview-item">Listview item</div>
+                    <div class="k-listview-item">Listview item</div>
+                    <div class="k-listview-item">Listview item</div>
                 </div>
             </div>
         </section>
 
         <section>
             <span>Flex layout</span>
-            <div class="k-widget k-listview k-listview-flex">
-                <div class="k-listview-content">
-                    <div>Listview cell</div>
-                    <div>Listview cell</div>
-                    <div>Listview cell</div>
-                    <div>Listview cell</div>
+            <div class="k-widget k-listview">
+                <div class="k-listview-content k-d-flex k-flex-col k-flex-nowrap">
+                    <div class="k-listview-item">Listview item</div>
+                    <div class="k-listview-item">Listview item</div>
+                    <div class="k-listview-item">Listview item</div>
+                    <div class="k-listview-item">Listview item</div>
                 </div>
             </div>
         </section>
 
         <section>
             <span>Grid layout</span>
-            <div class="k-widget k-listview k-listview-grid">
-                <div class="k-listview-content">
-                    <div>Listview cell</div>
-                    <div>Listview cell</div>
-                    <div>Listview cell</div>
-                    <div>Listview cell</div>
+            <div class="k-widget k-listview">
+                <div class="k-listview-content k-d-grid">
+                    <div class="k-listview-item">Listview item</div>
+                    <div class="k-listview-item">Listview item</div>
+                    <div class="k-listview-item">Listview item</div>
+                    <div class="k-listview-item">Listview item</div>
                 </div>
             </div>
         </section>
@@ -65,11 +66,11 @@
         <section>
             <span>Interactive states</span>
             <div class="k-widget k-listview k-listview-grid">
-                <div class="k-listview-content">
-                    <div>Normal cell</div>
-                    <div class="k-state-focused">Focused cell</div>
-                    <div class="k-state-selected">Selected cell</div>
-                    <div class="k-state-selected k-state-focused">Selected-focused cell</div>
+                <div class="k-listview-content k-d-grid">
+                    <div class="k-listview-item">Normal item</div>
+                    <div class="k-listview-item k-state-focused">Focused item</div>
+                    <div class="k-listview-item k-state-selected">Selected item</div>
+                    <div class="k-listview-item k-state-selected k-state-focused">Selected-focused item</div>
                 </div>
             </div>
         </section>
