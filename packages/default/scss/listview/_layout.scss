@@ -16,7 +16,7 @@
     }
 
 
-    // Header and footer
+    // Header
     .k-listview-header {
         border-width: 0;
         border-bottom-width: $listview-border-width;
@@ -37,21 +37,16 @@
             display: block;
         }
     }
-    .k-listview-flex .k-listview-content {
-        display: flex;
-        flex-direction: column;
-
-        > * {
-            flex-shrink: 0;
-        }
-
+    .k-listview-content.k-d-flex,
+    .k-listview-content.k-d-grid {
         &::after { display: none; }
     }
-    .k-listview-grid .k-listview-content {
-        display: grid;
-        gap: $listview-grid-gap;
 
-        &::after { display: none; }
+
+    // Listview item
+    .k-listview-item {
+        box-sizing: border-box;
+        flex-shrink: 0;
     }
 
 
