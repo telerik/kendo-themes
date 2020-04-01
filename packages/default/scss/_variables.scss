@@ -6,6 +6,8 @@ $enable-rounded: true !default;
 $enable-shadows: true !default;
 $enable-gradients: true !default;
 $enable-transitions: true !default;
+$enable-flex-classes: true !default;
+$enable-grid-classes: true !default;
 
 $use-background-clip: true !default;
 $use-calc-badge-size: true !default;
@@ -2063,6 +2065,9 @@ $treeview-item-selected-focused-shadow: null !default;
 
 
 // Layout
+$grid-cols: 12 !default;
+$grid-rows: 10 !default;
+$grid-gap: 10px !default;
 
 
 // Card
