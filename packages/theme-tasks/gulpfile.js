@@ -244,18 +244,18 @@ function embedFile(filename) {
 // #endregion
 
 
-// #region api
-gulp.task("api", function() {
+// #region docs
+gulp.task("docs", function() {
     return gulp.src(paths.sass.src)
         .pipe(sassdoc());
 });
-gulp.task("api:check", function() {
+gulp.task("docs:check", function() {
     //git diff --exit-code --quiet -- docs/
-    return gulp.task("api")().promise.then(function() {
+    return gulp.task("docs")().promise.then(function() {
         let status = cp.spawnSync("git", [ "diff", "--exit-code", "--quiet", "--", "docs/" ]) .status;
 
         if (status !== 0) {
-            throw new Error("API docs are out of date");
+            throw new Error("Docs are out of date");
         }
     });
 });
@@ -263,8 +263,8 @@ gulp.task("api:check", function() {
 
 
 // #region ci
-gulp.task("ci", gulp.series("lint", "sass", "api:check"));
-gulp.task("ci:full", gulp.series("lint", "sass", "dart", "api:check"));
+gulp.task("ci", gulp.series("lint", "sass", "docs:check"));
+gulp.task("ci:full", gulp.series("lint", "sass", "dart", "docs:check"));
 // #endregion
 
 

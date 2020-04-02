@@ -9,6 +9,7 @@ position: 9
 
 The following table lists the available variables for customization.
 
+
 <style>
 .theme-variables th,
 .theme-variables td {
@@ -16,64 +17,84 @@ The following table lists the available variables for customization.
 }
 
 .color-preview {
+  margin-right: .5em;
   border-radius: 50%;
   width: 1em;
   height: 1em;
-  vertical-align: middle;
+  vertical-align: top;
   display: inline-block;
   border: 1px solid rgba(0,0,0,.08);
 }
+
+.theme-variables-description-container > div {
+  margin: 0 0 .5em 2em;
+}
+
+.theme-variables-description {
+  display: block;
+  margin-left: 1em;
+}
 </style>
-
-
 
 
 <table class="theme-variables">
   <colgroup>
     <col style="width: 200px; white-space:nowrap;" />
-    <col style="width: 250px" />
+    <col />
+    <col />
     <col />
   </colgroup>
   <thead>
     <tr>
       <th>Name</th>
+      <th>Type</th>
       <th>Default value</th>
-      <th>Description</th>
+      <th>Computed value</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>$font-size</td>
-      <td>
-          $font-size-base
+      <td></td>
+      <td> $font-size-base</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Base font size across all components.</div></div>
       </td>
-      <td>Base font size across all components.</td>
     </tr>
     <tr>
       <td>$font-family</td>
-      <td>
-          $font-family-base
+      <td></td>
+      <td> $font-family-base</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family across all components.</div></div>
       </td>
-      <td>Font family across all components.</td>
     </tr>
     <tr>
       <td>$font-family-monospace</td>
-      <td>
-          $font-family-monospace
+      <td></td>
+      <td> $font-family-monospace</td>
+      <td> $font-family-monospace</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family for monospaced text. Used for styling the code.</div></div>
       </td>
-      <td>Font family for monospaced text. Used for styling the code.</td>
     </tr>
     <tr>
       <td>$line-height</td>
-      <td>
-          $line-height-base
-      </td>
-      <td>Line height used along with $font-size.</td>
+      <td></td>
+      <td> $line-height-base</td>
+      <td> </td>
     </tr>
-  </tbody>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $font-size.</div></div>
+      </td>
+    </tr>
+    </tbody>
 </table>
-
-
 
 
 ## Suggested Links

@@ -44,7 +44,9 @@
     "postcss-calc": "^7.0.2",
     "sass": "^1.26.3",
     "sass-lint": "^1.13.1",
-    "sassdoc": "^2.7.1"
+    "sassdoc": "^2.7.1",
+    "sassdoc-extras": "^3.0.0",
+    "nunjucks": "^3.2.1"
   },
   "devDependencies": {
     "@joneff/baka": "^0.1.1",
