@@ -32,6 +32,7 @@
     .k-switch-container {
         @include border-radius( $switch-border-radius );
         padding: $switch-container-padding-y $switch-container-padding-x;
+        width: $switch-size;
         border-width: $switch-container-border-width;
         border-style: solid;
         flex: 1 0 auto;
