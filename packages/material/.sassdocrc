@@ -1,6 +1,6 @@
 {
     "dest": ".tmp",
-    "theme": "node_modules/@progress/kendo-theme-tasks/lib/docs/sassdoc-theme.js",
+    "theme": "node_modules/@progress/kendo-theme-tasks/docs/sassdoc-theme.js",
     "meta": {
         "name": "material",
         "friendlyName": "Material",

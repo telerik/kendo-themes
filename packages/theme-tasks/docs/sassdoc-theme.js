@@ -2,21 +2,15 @@
 
 const fs = require('fs');
 const path = require('path');
-const hbs = require('handlebars');
-const read = (src) => fs.readFileSync(path.join(__dirname, src), { encoding: 'utf-8' });
-
-hbs.registerHelper(
-    'formatText',
-    (str) => str.replace(/\n(.)/g, '<br />$1').replace(/\s$/, "")
-);
-
-const compile = (src) => hbs.compile(read(src), { noEscape: true });
-const template = compile('customization.md.hbs');
-const templateVariableGroup = compile('customization-variable-group.md.hbs');
+const sassdocExtras = require('sassdoc-extras');
+const nunjucks = require('./nunjucks');
 
 module.exports = function(dest, context) {
     const capitalize = (str) => str[0].toUpperCase() + str.substring(1);
-    const isColor = /^#/i;
+
+    sassdocExtras(context,
+        'resolveVariables'
+    );
 
     const data = context.data
         .filter((item) => item.access === 'public')
@@ -36,7 +30,6 @@ module.exports = function(dest, context) {
     // honor @group annotations
     data.variableGroups = data.variableGroups.reduce((acc, item) => {
         const groupId = item.group[0];
-        item.isColor = isColor.test(item.context.value);
         acc[groupId] = acc[groupId] || [];
         acc[groupId].push(item);
         return acc;
@@ -60,7 +53,7 @@ module.exports = function(dest, context) {
 
     data.meta = context.meta;
 
-    let output = template(data);
+    let output = nunjucks.render('customization.md.njk', data);
     output = output.replace(/\r?\n/g, '\n');
 
     fs.writeFileSync(path.join('docs', 'customization.md'), output);
@@ -68,7 +61,8 @@ module.exports = function(dest, context) {
     data.variableGroups.forEach(group => {
         group.meta = data.meta;
         group.id = group.id === null ? 'common' : group.id;
-        let output = templateVariableGroup(group);
+
+        let output = nunjucks.render('customization-variable-group.md.njk', group);
         output = output.replace(/\r?\n/g, '\n');
 
         fs.writeFileSync(path.join('docs', `customization-${group.id}.md`), output);

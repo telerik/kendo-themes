@@ -9,6 +9,7 @@ position: 9
 
 The following table lists the available variables for customization.
 
+
 <style>
 .theme-variables th,
 .theme-variables td {
@@ -16,127 +17,174 @@ The following table lists the available variables for customization.
 }
 
 .color-preview {
+  margin-right: .5em;
   border-radius: 50%;
   width: 1em;
   height: 1em;
-  vertical-align: middle;
+  vertical-align: top;
   display: inline-block;
   border: 1px solid rgba(0,0,0,.08);
 }
+
+.theme-variables-description-container > div {
+  margin: 0 0 .5em 2em;
+}
+
+.theme-variables-description {
+  display: block;
+  margin-left: 1em;
+}
 </style>
-
-
 
 
 <table class="theme-variables">
   <colgroup>
     <col style="width: 200px; white-space:nowrap;" />
-    <col style="width: 250px" />
+    <col />
+    <col />
     <col />
   </colgroup>
   <thead>
     <tr>
       <th>Name</th>
+      <th>Type</th>
       <th>Default value</th>
-      <th>Description</th>
+      <th>Computed value</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>$border-radius</td>
-      <td>
-          $border-radius
+      <td></td>
+      <td> $border-radius</td>
+      <td> $border-radius</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius for all components.</div></div>
       </td>
-      <td>Border radius for all components.</td>
     </tr>
     <tr>
       <td>$base-bg</td>
-      <td>
-          try-darken( $component-bg, 3% )
+      <td></td>
+      <td> try-darken( $component-bg, 3% )</td>
+      <td> try-darken( $component-bg, 3% )</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the components' chrome area.</div></div>
       </td>
-      <td>The background of the components' chrome area.</td>
     </tr>
     <tr>
       <td>$base-text</td>
-      <td>
-          $component-color
+      <td></td>
+      <td> $component-color</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the components' chrome area.</div></div>
       </td>
-      <td>The text color of the components' chrome area.</td>
     </tr>
     <tr>
       <td>$base-border</td>
-      <td>
-          try-darken( $base-bg, 3% )
+      <td></td>
+      <td> try-darken( $base-bg, 3% )</td>
+      <td> try-darken( $base-bg, 3% )</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the components' chrome area.</div></div>
       </td>
-      <td>The border color of the components' chrome area.</td>
     </tr>
     <tr>
       <td>$base-gradient</td>
-      <td>
-          null
+      <td></td>
+      <td> null</td>
+      <td> null</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of the components' chrome area.</div></div>
       </td>
-      <td>The gradient background of the components' chrome area.</td>
     </tr>
     <tr>
       <td>$hovered-bg</td>
-      <td>
-          try-darken( $base-bg, 3% )
+      <td></td>
+      <td> try-darken( $base-bg, 3% )</td>
+      <td> try-darken( $base-bg, 3% )</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered items.</div></div>
       </td>
-      <td>The background of hovered items.</td>
     </tr>
     <tr>
       <td>$hovered-text</td>
-      <td>
-          $base-text
+      <td></td>
+      <td> $base-text</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered items.</div></div>
       </td>
-      <td>The text color of hovered items.</td>
     </tr>
     <tr>
       <td>$hovered-border</td>
-      <td>
-          try-darken( $base-border, 12% )
+      <td></td>
+      <td> try-darken( $base-border, 12% )</td>
+      <td> try-darken( $base-border, 12% )</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered items.</div></div>
       </td>
-      <td>The border color of hovered items.</td>
     </tr>
     <tr>
       <td>$hovered-gradient</td>
-      <td>
-          null
+      <td></td>
+      <td> null</td>
+      <td> null</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of hovered items.</div></div>
       </td>
-      <td>The gradient background of hovered items.</td>
     </tr>
     <tr>
       <td>$selected-bg</td>
-      <td>
-          $primary
+      <td></td>
+      <td> $primary</td>
+      <td> $accent</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of selected items.</div></div>
       </td>
-      <td>The background of selected items.</td>
     </tr>
     <tr>
       <td>$selected-text</td>
-      <td>
-          contrast-wcag( $selected-bg )
+      <td></td>
+      <td> contrast-wcag( $selected-bg )</td>
+      <td> contrast-wcag( $selected-bg )</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected items.</div></div>
       </td>
-      <td>The text color of selected items.</td>
     </tr>
     <tr>
       <td>$selected-border</td>
-      <td>
-          try-darken( $selected-bg, 12% )
+      <td></td>
+      <td> try-darken( $selected-bg, 12% )</td>
+      <td> try-darken( $selected-bg, 12% )</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected items.</div></div>
       </td>
-      <td>The border color of selected items.</td>
     </tr>
     <tr>
       <td>$selected-gradient</td>
-      <td>
-          null
-      </td>
-      <td>The gradient background of selected items.</td>
+      <td></td>
+      <td> null</td>
+      <td> null</td>
     </tr>
-  </tbody>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of selected items.</div></div>
+      </td>
+    </tr>
+    </tbody>
 </table>
-
-
 
 
 ## Suggested Links

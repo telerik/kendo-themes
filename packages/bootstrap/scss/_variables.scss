@@ -103,14 +103,15 @@ $zindex-window: 2 !default;
 $is-dark-theme: false;
 
 // Deprecated
-// TODO: remove for v5
-/// Deprecated. Will be removed in v5. Use `$primary` variable instead.
-/// @deprecated
+/// The color that focuses the user attention.
+/// @deprecated Will be removed in v5. Use `$primary` variable instead.
 /// @group color-system
+/// @type Color
 $accent: $primary !default;
-/// Deprecated. Will be removed in v5. Use `$primary-contrast` variable instead.
-/// @deprecated
+/// The color used along with the primary color denoted by $primary.
+/// @deprecated Will be removed in v5. Use `$primary-contrast` variable instead.
 /// @group color-system
+/// @type Color
 $accent-contrast: contrast-wcag( $accent ) !default;
 
 
@@ -118,6 +119,7 @@ $accent-contrast: contrast-wcag( $accent ) !default;
 /// The color that focuses the user attention.
 /// Used for primary buttons and for elements of primary importance across the theme.
 /// @group color-system
+/// @type Color
 $primary: $accent !default;
 $primary-lighter: tint( $primary, 2 ) !default;
 $primary-darker: shade( $primary, 2 ) !default;
@@ -125,10 +127,12 @@ $primary-darker: shade( $primary, 2 ) !default;
 /// The color used along with the primary color denoted by $primary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
+/// @type Color
 $primary-contrast: $accent-contrast !default;
 
 /// The secondary color of the theme.
 /// @group color-system
+/// @type Color
 $secondary: $secondary !default;
 $secondary-lighter: tint( $secondary, 2 ) !default;
 $secondary-darker: shade( $secondary, 2 ) !default;
@@ -136,10 +140,12 @@ $secondary-darker: shade( $secondary, 2 ) !default;
 /// The color used along with the secondary color denoted by $secondary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
+/// @type Color
 $secondary-contrast: contrast-wcag( $secondary ) !default;
 
 /// The tertiary color of the theme.
 /// @group color-system
+/// @type Color
 $tertiary: $purple !default;
 $tertiary-lighter: tint( $tertiary, 2 ) !default;
 $tertiary-darker: shade( $tertiary, 2 ) !default;
@@ -147,38 +153,45 @@ $tertiary-darker: shade( $tertiary, 2 ) !default;
 /// The color used along with the tertiary color denoted by $tertiary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
+/// @type Color
 $tertiary-contrast: contrast-wcag( $tertiary ) !default;
 
 /// The color for informational messages and states.
 /// @group color-system
+/// @type Color
 $info: $info !default;
 $info-lighter: tint( $info, 2 ) !default;
 $info-darker: shade( $info, 2 ) !default;
 
 /// The color for success messages and states.
 /// @group color-system
+/// @type Color
 $success: $success !default;
 $success-lighter: tint( $success, 2 ) !default;
 $success-darker: shade( $success, 2 ) !default;
 
 /// The color for warning messages and states.
 /// @group color-system
+/// @type Color
 $warning: $warning !default;
 $warning-lighter: tint( $warning, 2 ) !default;
 $warning-darker: shade( $warning, 2 ) !default;
 
 /// The color for error messages and states.
 /// @group color-system
+/// @type Color
 $error: $danger !default;
 $error-lighter: tint( $error, 2 ) !default;
 $error-darker: shade( $error, 2 ) !default;
 
 /// The dark color of the theme.
 /// @group color-system
+/// @type Color
 $dark: $dark !default;
 
 /// The light color of the theme.
 /// @group color-system
+/// @type Color
 $light: $light !default;
 
 /// Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark
@@ -346,16 +359,16 @@ $component-border: $component-border-color !default;
 
 
 // Widget
-/// Deprecated. Will be removed in v5. Use `$component-bg` variable instead.
-/// @deprecated
+/// Background color of a component.
+/// @deprecated Will be removed in v5. Use `$component-bg` variable instead.
 /// @group component
 $widget-bg: $component-bg !default;
-/// Deprecated. Will be removed in v5. Use `$component-text` variable instead.
-/// @deprecated
+/// Text color of a component.
+/// @deprecated Will be removed in v5. Use `$component-text` variable instead.
 /// @group component
 $widget-text: $component-text !default;
-/// Deprecated. Will be removed in v5. Use `$component-border` variable instead.
-/// @deprecated
+/// Border color of a component.
+/// @deprecated Will be removed in v5. Use `$component-border` variable instead.
 /// @group component
 $widget-border: $component-border !default;
 

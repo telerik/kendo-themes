@@ -1,0 +1,90 @@
+---
+title: Customizing {{ title }}
+description: "Refer to the list of the Kendo UI {{ meta.friendlyName }} theme variables available for customization."
+slug: variables_kendotheme{{ meta.name }}_{{ id }}
+position: 9
+---
+
+# Customizing {{ title }}
+
+The following table lists the available variables for customization.
+
+
+<style>
+.theme-variables th,
+.theme-variables td {
+  vertical-align: top;
+}
+
+.color-preview {
+  margin-right: .5em;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  vertical-align: top;
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,.08);
+}
+
+.theme-variables-description-container > div {
+  margin: 0 0 .5em 2em;
+}
+
+.theme-variables-description {
+  display: block;
+  margin-left: 1em;
+}
+</style>
+
+
+<table class="theme-variables">
+  <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Computed value</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for variable in variables -%}
+    <tr>
+      <td>${{ variable.context.name }}</td>
+      <td>{{ variable.type }}</td>
+      <td>{% if variable.context.value | is_color === true %}<span class="color-preview" style="background-color: {{variable.context.value}}"></span>{% endif %} {{ variable.context.value }}</td>
+      <td>{% if variable.resolvedValue | is_color === true %}<span class="color-preview" style="background-color: {{variable.context.value}}"></span>{% endif %} {{ variable.resolvedValue }}</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="theme-variables-description-container">
+        {%- if variable.deprecated == '' %}<div><b>Deprecated</b></div>{% endif %}
+        {%- if variable.deprecated %}<div><b>Deprecated</b><div class="theme-variables-description">{{ variable.deprecated  }}</div></div>{% endif %}
+        {%- if variable.description %}<div><b>Description</b><div class="theme-variables-description">{{ variable.description | format_text }}</div></div>{% endif %}
+        {%- if variable.example %}
+        <div>
+          <b>Example</b>
+          {% for ex in variable.example -%}
+          <pre>
+<code>
+{{ ex.code }}
+</code>
+          </pre>
+          {%- endfor %}
+        </div>{% endif %}
+      </td>
+    </tr>
+    {% endfor -%}
+  </tbody>
+</table>
+
+
+## Suggested Links
+
+* [Styling Overview]({% raw %}{% slug themesandstyles %}{% endraw %})
+* [Web Font Icons]({% raw %}{% slug icons %}{% endraw %})
+* [Preview of the Themed Components](../)

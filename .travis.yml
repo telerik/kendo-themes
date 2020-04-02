@@ -44,7 +44,7 @@ jobs:
       - lerna bootstrap --concurrency=1
     script:
       - npm run lint
-      - npm run api-check
+      - npm run docs:check
       - npm run sass:flat
       - npm run dart:flat
 
@@ -68,7 +68,7 @@ jobs:
       - lerna bootstrap --concurrency=1
     script:
       - npm run lint
-      - npm run api-check
+      - npm run docs:check
       - npm run sass:flat
       - npm run sass:swatches
       - npm run dart:flat
