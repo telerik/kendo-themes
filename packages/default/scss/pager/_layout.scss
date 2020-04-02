@@ -18,6 +18,12 @@
             outline: 0;
             font: inherit;
             background-color: inherit;
+
+            // Focused state
+            &:focus,
+            &.k-state-focus {
+                z-index: 2;
+            }
         }
 
         .k-widget,
@@ -117,7 +123,6 @@
             border-width: $pager-number-border-width;
             border-style: solid;
         }
-
 
         // Selected state
         .k-state-selected {
