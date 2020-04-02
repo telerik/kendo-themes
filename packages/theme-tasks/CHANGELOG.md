@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.5.2...@progress/kendo-theme-tasks@0.6.0) (2020-04-02)
+
+
+### Features
+
+* allow to document class names ([833d221](https://github.com/telerik/kendo-themes/commit/833d221))
+
+
+
+
 <a name="0.5.2"></a>
 ## [0.5.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.5.1...@progress/kendo-theme-tasks@0.5.2) (2020-03-30)
 

@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.13.0"></a>
+# [3.13.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.12.0...@progress/kendo-theme-material@3.13.0) (2020-04-02)
+
+
+### Bug Fixes
+
+* **editor:** remove editor specific styles for toolbar and rely on global toolbar styles ([a954999](https://github.com/telerik/kendo-themes/commit/a954999))
+* **filemanager:** use sizing system to set spacing in filemanager ([57a7244](https://github.com/telerik/kendo-themes/commit/57a7244))
+* **grid:** remove frozen columns hover row background opacity ([4026df5](https://github.com/telerik/kendo-themes/commit/4026df5))
+* **pager:** update pager numbers focus/selected states ([f38081e](https://github.com/telerik/kendo-themes/commit/f38081e))
+* introduce map with predefined spacing values ([235530c](https://github.com/telerik/kendo-themes/commit/235530c))
+
+
+### Features
+
+* add styles for flex and grid layout ([1c63d50](https://github.com/telerik/kendo-themes/commit/1c63d50))
+* add styles for message box ([c10d31c](https://github.com/telerik/kendo-themes/commit/c10d31c))
+
+
+
+
 <a name="3.12.0"></a>
 # [3.12.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.11.1...@progress/kendo-theme-material@3.12.0) (2020-03-30)
 

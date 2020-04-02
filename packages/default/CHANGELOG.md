@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.16.0"></a>
+# [4.16.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.15.0...@progress/kendo-theme-default@4.16.0) (2020-04-02)
+
+
+### Bug Fixes
+
+* **calendar:** infinite calendar in RTL appearance ([cfa8c2a](https://github.com/telerik/kendo-themes/commit/cfa8c2a))
+* **editor:** remove editor specific styles for toolbar and rely on global toolbar styles ([a954999](https://github.com/telerik/kendo-themes/commit/a954999))
+* **filemanager:** use sizing system to set spacing in filemanager ([57a7244](https://github.com/telerik/kendo-themes/commit/57a7244))
+* **grid:** remove frozen columns hover row background opacity ([4026df5](https://github.com/telerik/kendo-themes/commit/4026df5))
+* **listview:** listview items should be border-box ([f63af93](https://github.com/telerik/kendo-themes/commit/f63af93))
+* **listview:** replace footer bottom border with top ([fd392ad](https://github.com/telerik/kendo-themes/commit/fd392ad))
+* **pager:** add z-index to page in focused state ([1b7449c](https://github.com/telerik/kendo-themes/commit/1b7449c))
+* **pager:** update pager numbers focus/selected states ([f38081e](https://github.com/telerik/kendo-themes/commit/f38081e))
+* introduce map with predefined spacing values ([235530c](https://github.com/telerik/kendo-themes/commit/235530c))
+* **splitbutton:** unify appearance of splitbutton ([3d8c4bf](https://github.com/telerik/kendo-themes/commit/3d8c4bf))
+
+
+### Features
+
+* add styles for flex and grid layout ([1c63d50](https://github.com/telerik/kendo-themes/commit/1c63d50))
+* add styles for message box ([c10d31c](https://github.com/telerik/kendo-themes/commit/c10d31c))
+
+
+
+
 <a name="4.15.0"></a>
 # [4.15.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.14.0...@progress/kendo-theme-default@4.15.0) (2020-03-30)
 
