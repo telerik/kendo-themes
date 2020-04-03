@@ -10,88 +10,114 @@ position: 9
 The following table lists the available variables for customization.
 
 <style>
-.theme-variables th,
-.theme-variables td {
-  vertical-align: top;
-}
+    .theme-variables th,
+    .theme-variables td {
+        vertical-align: top;
+    }
 
-.color-preview {
-  border-radius: 50%;
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-  display: inline-block;
-  border: 1px solid rgba(0,0,0,.08);
-}
+    .color-preview {
+        margin-right: .5em;
+        border-radius: 50%;
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+        display: inline-block;
+        border: 1px solid rgba(0,0,0,.08);
+    }
+
+    .theme-variables-description-container > div {
+        margin: 0 0 .5em 2em;
+    }
+
+    .theme-variables-description {
+        display: block;
+        margin-left: 1em;
+    }
 </style>
 
 
-
-
 <table class="theme-variables">
-  <colgroup>
+    <colgroup>
     <col style="width: 200px; white-space:nowrap;" />
-    <col style="width: 250px" />
     <col />
-  </colgroup>
-  <thead>
+    <col />
+    <col />
+</colgroup>
+<thead>
     <tr>
-      <th>Name</th>
-      <th>Default value</th>
-      <th>Description</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
     </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>$component-bg</td>
-      <td>
-          $component-bg
-      </td>
-      <td>Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.</td>
-    </tr>
-    <tr>
-      <td>$component-text</td>
-      <td>
-          $component-color
-      </td>
-      <td>Text color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.</td>
-    </tr>
-    <tr>
-      <td>$component-border</td>
-      <td>
-          $component-border-color
-      </td>
-      <td>Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.</td>
-    </tr>
-    <tr>
-      <td>$widget-bg</td>
-      <td>
-          $component-bg
-      </td>
-      <td>Deprecated. Will be removed in v5. Use `$component-bg` variable instead.</td>
-    </tr>
-    <tr>
-      <td>$widget-text</td>
-      <td>
-          $component-text
-      </td>
-      <td>Deprecated. Will be removed in v5. Use `$component-text` variable instead.</td>
-    </tr>
-    <tr>
-      <td>$widget-border</td>
-      <td>
-          $component-border
-      </td>
-      <td>Deprecated. Will be removed in v5. Use `$component-border` variable instead.</td>
-    </tr>
-  </tbody>
+</thead>
+<tbody>
+        <tr>
+    <td>$component-bg</td>
+    <td></td>
+    <td>$component-bg</td>
+    <td>$component-bg</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$component-text</td>
+    <td></td>
+    <td>$component-color</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$component-border</td>
+    <td></td>
+    <td>$component-border-color</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$widget-bg</td>
+    <td></td>
+    <td>$component-bg</td>
+    <td>$component-bg</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$component-bg` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">Background color of a component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$widget-text</td>
+    <td></td>
+    <td>$component-text</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$component-text` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">Text color of a component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$widget-border</td>
+    <td></td>
+    <td>$component-border</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$component-border` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">Border color of a component.</div></div>
+    </td>
+</tr>
+</tbody>
 </table>
-
-
-
 
 ## Suggested Links
 
 * [Styling Overview]({% slug themesandstyles %})
 * [Web Font Icons]({% slug icons %})
 * [Preview of the Themed Components](../)
+

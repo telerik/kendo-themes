@@ -10,151 +10,204 @@ position: 9
 The following table lists the available variables for customization.
 
 <style>
-.theme-variables th,
-.theme-variables td {
-  vertical-align: top;
-}
+    .theme-variables th,
+    .theme-variables td {
+        vertical-align: top;
+    }
 
-.color-preview {
-  border-radius: 50%;
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-  display: inline-block;
-  border: 1px solid rgba(0,0,0,.08);
-}
+    .color-preview {
+        margin-right: .5em;
+        border-radius: 50%;
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+        display: inline-block;
+        border: 1px solid rgba(0,0,0,.08);
+    }
+
+    .theme-variables-description-container > div {
+        margin: 0 0 .5em 2em;
+    }
+
+    .theme-variables-description {
+        display: block;
+        margin-left: 1em;
+    }
 </style>
 
 
-
-
 <table class="theme-variables">
-  <colgroup>
+    <colgroup>
     <col style="width: 200px; white-space:nowrap;" />
-    <col style="width: 250px" />
     <col />
-  </colgroup>
-  <thead>
+    <col />
+    <col />
+</colgroup>
+<thead>
     <tr>
-      <th>Name</th>
-      <th>Default value</th>
-      <th>Description</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
     </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>$accent</td>
-      <td>
-          $primary
-      </td>
-      <td>Deprecated. Will be removed in v5. Use `$primary` variable instead.</td>
-    </tr>
-    <tr>
-      <td>$accent-contrast</td>
-      <td>
-          contrast-wcag( $accent )
-      </td>
-      <td>Deprecated. Will be removed in v5. Use `$primary-contrast` variable instead.</td>
-    </tr>
-    <tr>
-      <td>$primary</td>
-      <td>
-          $accent
-      </td>
-      <td>The color that focuses the user attention.<br />Used for primary buttons and for elements of primary importance across the theme.</td>
-    </tr>
-    <tr>
-      <td>$primary-contrast</td>
-      <td>
-          $accent-contrast
-      </td>
-      <td>The color used along with the primary color denoted by $primary.<br />Used to provide contrast between the background and foreground colors.</td>
-    </tr>
-    <tr>
-      <td>$secondary</td>
-      <td>
-          $secondary
-      </td>
-      <td>The secondary color of the theme.</td>
-    </tr>
-    <tr>
-      <td>$secondary-contrast</td>
-      <td>
-          contrast-wcag( $secondary )
-      </td>
-      <td>The color used along with the secondary color denoted by $secondary.<br />Used to provide contrast between the background and foreground colors.</td>
-    </tr>
-    <tr>
-      <td>$tertiary</td>
-      <td>
-          $purple
-      </td>
-      <td>The tertiary color of the theme.</td>
-    </tr>
-    <tr>
-      <td>$tertiary-contrast</td>
-      <td>
-          contrast-wcag( $tertiary )
-      </td>
-      <td>The color used along with the tertiary color denoted by $tertiary.<br />Used to provide contrast between the background and foreground colors.</td>
-    </tr>
-    <tr>
-      <td>$info</td>
-      <td>
-          $info
-      </td>
-      <td>The color for informational messages and states.</td>
-    </tr>
-    <tr>
-      <td>$success</td>
-      <td>
-          $success
-      </td>
-      <td>The color for success messages and states.</td>
-    </tr>
-    <tr>
-      <td>$warning</td>
-      <td>
-          $warning
-      </td>
-      <td>The color for warning messages and states.</td>
-    </tr>
-    <tr>
-      <td>$error</td>
-      <td>
-          $danger
-      </td>
-      <td>The color for error messages and states.</td>
-    </tr>
-    <tr>
-      <td>$dark</td>
-      <td>
-          $dark
-      </td>
-      <td>The dark color of the theme.</td>
-    </tr>
-    <tr>
-      <td>$light</td>
-      <td>
-          $light
-      </td>
-      <td>The light color of the theme.</td>
-    </tr>
-    <tr>
-      <td>$inverse</td>
-      <td>
-          if( $is-dark-theme, $light, $dark )
-      </td>
-      <td>Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark</td>
-    </tr>
-  </tbody>
+</thead>
+<tbody>
+        <tr>
+    <td>$accent</td>
+    <td>Color</td>
+    <td>$primary</td>
+    <td>$accent</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$primary` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$accent-contrast</td>
+    <td>Color</td>
+    <td>contrast-wcag( $accent )</td>
+    <td>contrast-wcag( $accent )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$primary-contrast` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $primary.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$primary</td>
+    <td>Color</td>
+    <td>$accent</td>
+    <td>$accent</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.<br />Used for primary buttons and for elements of primary importance across the theme.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$primary-contrast</td>
+    <td>Color</td>
+    <td>$accent-contrast</td>
+    <td>contrast-wcag( $accent )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$secondary</td>
+    <td>Color</td>
+    <td>$secondary</td>
+    <td>$secondary</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The secondary color of the theme.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$secondary-contrast</td>
+    <td>Color</td>
+    <td>contrast-wcag( $secondary )</td>
+    <td>contrast-wcag( $secondary )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the secondary color denoted by $secondary.<br />Used to provide contrast between the background and foreground colors.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tertiary</td>
+    <td>Color</td>
+    <td>$purple</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The tertiary color of the theme.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tertiary-contrast</td>
+    <td>Color</td>
+    <td>contrast-wcag( $tertiary )</td>
+    <td>contrast-wcag( $tertiary )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the tertiary color denoted by $tertiary.<br />Used to provide contrast between the background and foreground colors.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$info</td>
+    <td>Color</td>
+    <td>$info</td>
+    <td>$info</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for informational messages and states.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$success</td>
+    <td>Color</td>
+    <td>$success</td>
+    <td>$success</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for success messages and states.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$warning</td>
+    <td>Color</td>
+    <td>$warning</td>
+    <td>$warning</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for warning messages and states.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$error</td>
+    <td>Color</td>
+    <td>$danger</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for error messages and states.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$dark</td>
+    <td>Color</td>
+    <td>$dark</td>
+    <td>$dark</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The dark color of the theme.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$light</td>
+    <td>Color</td>
+    <td>$light</td>
+    <td>$light</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The light color of the theme.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$inverse</td>
+    <td></td>
+    <td>if( $is-dark-theme, $light, $dark )</td>
+    <td>if( $is-dark-theme, $light, $dark )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark</div></div>
+    </td>
+</tr>
+</tbody>
 </table>
-
-
-
 
 ## Suggested Links
 
 * [Styling Overview]({% slug themesandstyles %})
 * [Web Font Icons]({% slug icons %})
 * [Preview of the Themed Components](../)
+

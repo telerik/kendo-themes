@@ -30,10 +30,7 @@
         &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            @include fill (
-                $color: $error,
-                $border: $invalid-border
-            );
+            @include fill( $border: $invalid-border );
 
             &:focus,
             &.k-state-focused {

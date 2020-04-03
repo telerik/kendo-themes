@@ -39,7 +39,6 @@
         &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            color: $forms-invalid-color;
             border-color: $invalid-border;
 
             &:focus,

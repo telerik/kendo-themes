@@ -1,0 +1,10 @@
+{% for m in mixin -%}
+### `{{ m.context.name }}`
+{{ m.description }}
+{% if m.parameter %}
+#### Parameters
+{% for p in m.parameter -%}
+- {{ p.name }} : `{{ p.type }}` - {{ p.description }}
+{% endfor -%}
+{% endif -%}
+{% endfor %}
