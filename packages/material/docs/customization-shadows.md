@@ -9,116 +9,115 @@ position: 9
 
 The following table lists the available variables for customization.
 
-
 <style>
-.theme-variables th,
-.theme-variables td {
-  vertical-align: top;
-}
+    .theme-variables th,
+    .theme-variables td {
+        vertical-align: top;
+    }
 
-.color-preview {
-  margin-right: .5em;
-  border-radius: 50%;
-  width: 1em;
-  height: 1em;
-  vertical-align: top;
-  display: inline-block;
-  border: 1px solid rgba(0,0,0,.08);
-}
+    .color-preview {
+        margin-right: .5em;
+        border-radius: 50%;
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+        display: inline-block;
+        border: 1px solid rgba(0,0,0,.08);
+    }
 
-.theme-variables-description-container > div {
-  margin: 0 0 .5em 2em;
-}
+    .theme-variables-description-container > div {
+        margin: 0 0 .5em 2em;
+    }
 
-.theme-variables-description {
-  display: block;
-  margin-left: 1em;
-}
+    .theme-variables-description {
+        display: block;
+        margin-left: 1em;
+    }
 </style>
 
 
 <table class="theme-variables">
-  <colgroup>
+    <colgroup>
     <col style="width: 200px; white-space:nowrap;" />
     <col />
     <col />
     <col />
-  </colgroup>
-  <thead>
+</colgroup>
+<thead>
     <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Default value</th>
-      <th>Computed value</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
     </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>$elevation</td>
-      <td></td>
-      <td> map-get( $theme, elevation )</td>
-      <td> map-get( $theme, elevation )</td>
-    </tr>
-    <tr>
-      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of shadows</div></div>
-      </td>
-    </tr>
-    <tr>
-      <td>$box-shadow-depth-1</td>
-      <td></td>
-      <td> 0 2px 1px -1px rgba( $elevation, .2 ), 0 1px 1px 0 rgba( $elevation, .14 ), 0 1px 3px 0 rgba( $elevation, .12 )</td>
-      <td> 0 2px 1px -1px rgba( $elevation, .2 ), 0 1px 1px 0 rgba( $elevation, .14 ), 0 1px 3px 0 rgba( $elevation, .12 )</td>
-    </tr>
-    <tr>
-      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for switch.<br />Equivalent to material elevation 1.</div></div>
-      </td>
-    </tr>
-    <tr>
-      <td>$box-shadow-depth-2</td>
-      <td></td>
-      <td> 0 3px 1px -2px rgba( $elevation, .2 ), 0 2px 2px 0 rgba( $elevation, .14 ), 0 1px 5px 0 rgba( $elevation, .12 )</td>
-      <td> 0 3px 1px -2px rgba( $elevation, .2 ), 0 2px 2px 0 rgba( $elevation, .14 ), 0 1px 5px 0 rgba( $elevation, .12 )</td>
-    </tr>
-    <tr>
-      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for resting state of button, card and other widgets.<br />Equivalent to material elevation 2.</div></div>
-      </td>
-    </tr>
-    <tr>
-      <td>$box-shadow-depth-3</td>
-      <td></td>
-      <td> 0 5px 5px -3px rgba( $elevation, .2 ), 0 8px 10px 1px rgba( $elevation, .14 ), 0 3px 14px 2px rgba( $elevation, .12 )</td>
-      <td> 0 5px 5px -3px rgba( $elevation, .2 ), 0 8px 10px 1px rgba( $elevation, .14 ), 0 3px 14px 2px rgba( $elevation, .12 )</td>
-    </tr>
-    <tr>
-      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for menu, popups and raised state of button and card.<br />Equivalent to material elevation 8.</div></div>
-      </td>
-    </tr>
-    <tr>
-      <td>$box-shadow-depth-4</td>
-      <td></td>
-      <td> 0 8px 10px -5px rgba( $elevation, .2 ), 0 16px 24px 2px rgba( $elevation, .14 ), 0 6px 30px 5px rgba( $elevation, .12 )</td>
-      <td> 0 8px 10px -5px rgba( $elevation, .2 ), 0 16px 24px 2px rgba( $elevation, .14 ), 0 6px 30px 5px rgba( $elevation, .12 )</td>
-    </tr>
-    <tr>
-      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for drawers and other overlaying elements.<br />Equivalent to material elevation 16.</div></div>
-      </td>
-    </tr>
-    <tr>
-      <td>$box-shadow-depth-5</td>
-      <td></td>
-      <td> 0 11px 15px -7px rgba( $elevation, .2 ), 0 24px 38px 3px rgba( $elevation, .14 ), 0 9px 46px 8px rgba( $elevation, .12 )</td>
-      <td> 0 11px 15px -7px rgba( $elevation, .2 ), 0 24px 38px 3px rgba( $elevation, .14 ), 0 9px 46px 8px rgba( $elevation, .12 )</td>
-    </tr>
-    <tr>
-      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for window and dialog.<br />Equivalent to material elevation 24.</div></div>
-      </td>
-    </tr>
-    </tbody>
+</thead>
+<tbody>
+        <tr>
+    <td>$elevation</td>
+    <td></td>
+    <td>map-get( $theme, elevation )</td>
+    <td>map-get( $theme, elevation )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of shadows</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$box-shadow-depth-1</td>
+    <td></td>
+    <td>0 2px 1px -1px rgba( $elevation, .2 ), 0 1px 1px 0 rgba( $elevation, .14 ), 0 1px 3px 0 rgba( $elevation, .12 )</td>
+    <td>0 2px 1px -1px rgba( $elevation, .2 ), 0 1px 1px 0 rgba( $elevation, .14 ), 0 1px 3px 0 rgba( $elevation, .12 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for switch.<br />Equivalent to material elevation 1.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$box-shadow-depth-2</td>
+    <td></td>
+    <td>0 3px 1px -2px rgba( $elevation, .2 ), 0 2px 2px 0 rgba( $elevation, .14 ), 0 1px 5px 0 rgba( $elevation, .12 )</td>
+    <td>0 3px 1px -2px rgba( $elevation, .2 ), 0 2px 2px 0 rgba( $elevation, .14 ), 0 1px 5px 0 rgba( $elevation, .12 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for resting state of button, card and other widgets.<br />Equivalent to material elevation 2.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$box-shadow-depth-3</td>
+    <td></td>
+    <td>0 5px 5px -3px rgba( $elevation, .2 ), 0 8px 10px 1px rgba( $elevation, .14 ), 0 3px 14px 2px rgba( $elevation, .12 )</td>
+    <td>0 5px 5px -3px rgba( $elevation, .2 ), 0 8px 10px 1px rgba( $elevation, .14 ), 0 3px 14px 2px rgba( $elevation, .12 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for menu, popups and raised state of button and card.<br />Equivalent to material elevation 8.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$box-shadow-depth-4</td>
+    <td></td>
+    <td>0 8px 10px -5px rgba( $elevation, .2 ), 0 16px 24px 2px rgba( $elevation, .14 ), 0 6px 30px 5px rgba( $elevation, .12 )</td>
+    <td>0 8px 10px -5px rgba( $elevation, .2 ), 0 16px 24px 2px rgba( $elevation, .14 ), 0 6px 30px 5px rgba( $elevation, .12 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for drawers and other overlaying elements.<br />Equivalent to material elevation 16.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$box-shadow-depth-5</td>
+    <td></td>
+    <td>0 11px 15px -7px rgba( $elevation, .2 ), 0 24px 38px 3px rgba( $elevation, .14 ), 0 9px 46px 8px rgba( $elevation, .12 )</td>
+    <td>0 11px 15px -7px rgba( $elevation, .2 ), 0 24px 38px 3px rgba( $elevation, .14 ), 0 9px 46px 8px rgba( $elevation, .12 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for window and dialog.<br />Equivalent to material elevation 24.</div></div>
+    </td>
+</tr>
+</tbody>
 </table>
-
 
 ## Suggested Links
 
 * [Styling Overview]({% slug themesandstyles %})
 * [Web Font Icons]({% slug icons %})
 * [Preview of the Themed Components](../)
+
