@@ -12,9 +12,16 @@
             // Invalid
             &.k-invalid,
             &.k-invalid:hover,
-            &.k-state-invalid,
-            .ng-invalid.ng-touched &,
-            .ng-invalid.ng-dirty & {
+            &.k-state-invalid {
+                border-color: $invalid-border;
+            }
+        }
+
+        // Invalid
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            .k-dateinput-wrap,
+            .k-picker-wrap {
                 border-color: $invalid-border;
             }
         }
@@ -67,14 +74,9 @@
 
             &.k-state-invalid {
                 border-color: $error;
-
-                .k-input {
-                    color: $error;
-                }
             }
 
             &.k-invalid {
-                color: $error;
                 border-color: $invalid-border;
             }
         }
@@ -248,7 +250,6 @@
         // Invalid state
         &.k-state-invalid {
             .k-textbox {
-                color: $error;
                 border-color: $error;
             }
 
