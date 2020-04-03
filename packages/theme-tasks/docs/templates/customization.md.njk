@@ -1,0 +1,34 @@
+---
+title: Customization
+description: "Refer to the list of the Kendo UI {{ meta.friendlyName }} theme variables available for customization."
+slug: variables_kendotheme{{ meta.name }}
+position: 9
+---
+
+# Customization
+
+The following table lists the available variables for customizing the {{ meta.friendlyName }} theme.
+
+{% include "./includes/styles.md.njk" %}
+
+## Variables
+
+{% for group in variableGroups -%}
+### {{ group.title }}
+
+<table class="theme-variables">
+    {% include "./includes/theme-variables-thead.md.njk" -%}
+    <tbody>
+        {% for variable in group.variables -%}
+        {% include "./includes/theme-variables-row.md.njk" %}
+        {%- endfor -%}
+    </tbody>
+</table>
+{% endfor %}
+
+
+## Mixins
+
+{% include "./includes/mixins.md.njk" %}
+
+{% include "./includes/suggested-links.md.njk" %}

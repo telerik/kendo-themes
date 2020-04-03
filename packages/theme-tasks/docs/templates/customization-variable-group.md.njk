@@ -1,0 +1,23 @@
+---
+title: Customizing {{ title }}
+description: "Refer to the list of the Kendo UI {{ meta.friendlyName }} theme variables available for customization."
+slug: variables_kendotheme{{ meta.name }}_{{ id }}
+position: 9
+---
+
+# Customizing {{ title }}
+
+The following table lists the available variables for customization.
+
+{% include "./includes/styles.md.njk" %}
+
+<table class="theme-variables">
+    {% include "./includes/theme-variables-thead.md.njk" -%}
+    <tbody>
+        {% for variable in variables -%}
+        {% include "./includes/theme-variables-row.md.njk" %}
+        {%- endfor -%}
+    </tbody>
+</table>
+
+{% include "./includes/suggested-links.md.njk" %}

@@ -10,60 +10,74 @@ position: 9
 The following table lists the available variables for customization.
 
 <style>
-.theme-variables th,
-.theme-variables td {
-  vertical-align: top;
-}
+    .theme-variables th,
+    .theme-variables td {
+        vertical-align: top;
+    }
 
-.color-preview {
-  border-radius: 50%;
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-  display: inline-block;
-  border: 1px solid rgba(0,0,0,.08);
-}
+    .color-preview {
+        margin-right: .5em;
+        border-radius: 50%;
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+        display: inline-block;
+        border: 1px solid rgba(0,0,0,.08);
+    }
+
+    .theme-variables-description-container > div {
+        margin: 0 0 .5em 2em;
+    }
+
+    .theme-variables-description {
+        display: block;
+        margin-left: 1em;
+    }
 </style>
 
 
-
-
 <table class="theme-variables">
-  <colgroup>
+    <colgroup>
     <col style="width: 200px; white-space:nowrap;" />
-    <col style="width: 250px" />
     <col />
-  </colgroup>
-  <thead>
+    <col />
+    <col />
+</colgroup>
+<thead>
     <tr>
-      <th>Name</th>
-      <th>Default value</th>
-      <th>Description</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
     </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>$toolbar-padding-x</td>
-      <td>
-          0
-      </td>
-      <td>The horizontal padding of the container.</td>
-    </tr>
-    <tr>
-      <td>$toolbar-padding-y</td>
-      <td>
-          0
-      </td>
-      <td>The vertical padding of the container.</td>
-    </tr>
-  </tbody>
+</thead>
+<tbody>
+        <tr>
+    <td>$toolbar-padding-x</td>
+    <td></td>
+    <td>0</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$toolbar-padding-y</td>
+    <td></td>
+    <td>0</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the container.</div></div>
+    </td>
+</tr>
+</tbody>
 </table>
-
-
-
 
 ## Suggested Links
 
 * [Styling Overview]({% slug themesandstyles %})
 * [Web Font Icons]({% slug icons %})
 * [Preview of the Themed Components](../)
+

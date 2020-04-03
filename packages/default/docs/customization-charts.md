@@ -10,108 +10,134 @@ position: 9
 The following table lists the available variables for customization.
 
 <style>
-.theme-variables th,
-.theme-variables td {
-  vertical-align: top;
-}
+    .theme-variables th,
+    .theme-variables td {
+        vertical-align: top;
+    }
 
-.color-preview {
-  border-radius: 50%;
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-  display: inline-block;
-  border: 1px solid rgba(0,0,0,.08);
-}
+    .color-preview {
+        margin-right: .5em;
+        border-radius: 50%;
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+        display: inline-block;
+        border: 1px solid rgba(0,0,0,.08);
+    }
+
+    .theme-variables-description-container > div {
+        margin: 0 0 .5em 2em;
+    }
+
+    .theme-variables-description {
+        display: block;
+        margin-left: 1em;
+    }
 </style>
 
 
-
-
 <table class="theme-variables">
-  <colgroup>
+    <colgroup>
     <col style="width: 200px; white-space:nowrap;" />
-    <col style="width: 250px" />
     <col />
-  </colgroup>
-  <thead>
+    <col />
+    <col />
+</colgroup>
+<thead>
     <tr>
-      <th>Name</th>
-      <th>Default value</th>
-      <th>Description</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
     </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>$series-a</td>
-      <td>
-          <span class="color-preview" style="background-color: #ff6358"></span>
-          #ff6358
-      </td>
-      <td>The color of the first series.</td>
-    </tr>
-    <tr>
-      <td>$series-b</td>
-      <td>
-          <span class="color-preview" style="background-color: #ffd246"></span>
-          #ffd246
-      </td>
-      <td>The color of the second series.</td>
-    </tr>
-    <tr>
-      <td>$series-c</td>
-      <td>
-          <span class="color-preview" style="background-color: #78d237"></span>
-          #78d237
-      </td>
-      <td>The color of the third series.</td>
-    </tr>
-    <tr>
-      <td>$series-d</td>
-      <td>
-          <span class="color-preview" style="background-color: #28b4c8"></span>
-          #28b4c8
-      </td>
-      <td>The color of the fourth series.</td>
-    </tr>
-    <tr>
-      <td>$series-e</td>
-      <td>
-          <span class="color-preview" style="background-color: #2d73f5"></span>
-          #2d73f5
-      </td>
-      <td>The color of the fifth series.</td>
-    </tr>
-    <tr>
-      <td>$series-f</td>
-      <td>
-          <span class="color-preview" style="background-color: #aa46be"></span>
-          #aa46be
-      </td>
-      <td>The color of the sixth series.</td>
-    </tr>
-    <tr>
-      <td>$chart-major-lines</td>
-      <td>
-          rgba(0, 0, 0, .08)
-      </td>
-      <td>The color of the Chart grid lines (major).</td>
-    </tr>
-    <tr>
-      <td>$chart-minor-lines</td>
-      <td>
-          rgba(0, 0, 0, .04)
-      </td>
-      <td>The color of the Chart grid lines (minor).</td>
-    </tr>
-  </tbody>
+</thead>
+<tbody>
+        <tr>
+    <td>$series-a</td>
+    <td></td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the first series.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$series-b</td>
+    <td></td>
+    <td><span class="color-preview" style="background-color: #ffd246"></span>#ffd246</td>
+    <td><span class="color-preview" style="background-color: #ffd246"></span>#ffd246</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the second series.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$series-c</td>
+    <td></td>
+    <td><span class="color-preview" style="background-color: #78d237"></span>#78d237</td>
+    <td><span class="color-preview" style="background-color: #78d237"></span>#78d237</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the third series.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$series-d</td>
+    <td></td>
+    <td><span class="color-preview" style="background-color: #28b4c8"></span>#28b4c8</td>
+    <td><span class="color-preview" style="background-color: #28b4c8"></span>#28b4c8</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the fourth series.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$series-e</td>
+    <td></td>
+    <td><span class="color-preview" style="background-color: #2d73f5"></span>#2d73f5</td>
+    <td><span class="color-preview" style="background-color: #2d73f5"></span>#2d73f5</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the fifth series.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$series-f</td>
+    <td></td>
+    <td><span class="color-preview" style="background-color: #aa46be"></span>#aa46be</td>
+    <td><span class="color-preview" style="background-color: #aa46be"></span>#aa46be</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the sixth series.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$chart-major-lines</td>
+    <td></td>
+    <td>rgba(0, 0, 0, .08)</td>
+    <td>rgba(0, 0, 0, .08)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Chart grid lines (major).</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$chart-minor-lines</td>
+    <td></td>
+    <td>rgba(0, 0, 0, .04)</td>
+    <td>rgba(0, 0, 0, .04)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Chart grid lines (minor).</div></div>
+    </td>
+</tr>
+</tbody>
 </table>
-
-
-
 
 ## Suggested Links
 
 * [Styling Overview]({% slug themesandstyles %})
 * [Web Font Icons]({% slug icons %})
 * [Preview of the Themed Components](../)
+
