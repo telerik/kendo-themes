@@ -9,96 +9,95 @@ position: 9
 
 The following table lists the available variables for customization.
 
-
 <style>
-.theme-variables th,
-.theme-variables td {
-  vertical-align: top;
-}
+    .theme-variables th,
+    .theme-variables td {
+        vertical-align: top;
+    }
 
-.color-preview {
-  margin-right: .5em;
-  border-radius: 50%;
-  width: 1em;
-  height: 1em;
-  vertical-align: top;
-  display: inline-block;
-  border: 1px solid rgba(0,0,0,.08);
-}
+    .color-preview {
+        margin-right: .5em;
+        border-radius: 50%;
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+        display: inline-block;
+        border: 1px solid rgba(0,0,0,.08);
+    }
 
-.theme-variables-description-container > div {
-  margin: 0 0 .5em 2em;
-}
+    .theme-variables-description-container > div {
+        margin: 0 0 .5em 2em;
+    }
 
-.theme-variables-description {
-  display: block;
-  margin-left: 1em;
-}
+    .theme-variables-description {
+        display: block;
+        margin-left: 1em;
+    }
 </style>
 
 
 <table class="theme-variables">
-  <colgroup>
+    <colgroup>
     <col style="width: 200px; white-space:nowrap;" />
     <col />
     <col />
     <col />
-  </colgroup>
-  <thead>
+</colgroup>
+<thead>
     <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Default value</th>
-      <th>Computed value</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
     </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>$font-size</td>
-      <td></td>
-      <td> $font-size-base</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Base font size across all components.</div></div>
-      </td>
-    </tr>
-    <tr>
-      <td>$font-family</td>
-      <td></td>
-      <td> $font-family-base</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family across all components.</div></div>
-      </td>
-    </tr>
-    <tr>
-      <td>$font-family-monospace</td>
-      <td></td>
-      <td> $font-family-monospace</td>
-      <td> $font-family-monospace</td>
-    </tr>
-    <tr>
-      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family for monospaced text. Used for styling the code.</div></div>
-      </td>
-    </tr>
-    <tr>
-      <td>$line-height</td>
-      <td></td>
-      <td> $line-height-base</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $font-size.</div></div>
-      </td>
-    </tr>
-    </tbody>
+</thead>
+<tbody>
+        <tr>
+    <td>$font-size</td>
+    <td></td>
+    <td>$font-size-base</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Base font size across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$font-family</td>
+    <td></td>
+    <td>$font-family-base</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$font-family-monospace</td>
+    <td></td>
+    <td>$font-family-monospace</td>
+    <td>$font-family-monospace</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family for monospaced text. Used for styling the code.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$line-height</td>
+    <td></td>
+    <td>$line-height-base</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $font-size.</div></div>
+    </td>
+</tr>
+</tbody>
 </table>
-
 
 ## Suggested Links
 
 * [Styling Overview]({% slug themesandstyles %})
 * [Web Font Icons]({% slug icons %})
 * [Preview of the Themed Components](../)
+

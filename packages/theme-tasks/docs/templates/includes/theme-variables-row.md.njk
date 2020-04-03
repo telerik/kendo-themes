@@ -1,0 +1,24 @@
+<tr>
+    <td>${{ variable.context.name }}</td>
+    <td>{{ variable.type }}</td>
+    <td>{% if variable.context.value | is_color === true %}<span class="color-preview" style="background-color: {{variable.context.value}}"></span>{% endif %}{{ variable.context.value }}</td>
+    <td>{% if variable.resolvedValue | is_color === true %}<span class="color-preview" style="background-color: {{variable.context.value}}"></span>{% endif %}{{ variable.resolvedValue }}</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container">
+        {%- if variable.deprecated == '' %}<div><b>Deprecated</b></div>{% endif %}
+        {%- if variable.deprecated %}<div><b>Deprecated</b><div class="theme-variables-description">{{ variable.deprecated  }}</div></div>{% endif %}
+        {%- if variable.description %}<div><b>Description</b><div class="theme-variables-description">{{ variable.description | format_text }}</div></div>{% endif %}
+        {%- if variable.example %}
+        <div>
+            <b>Example</b>
+            {% for ex in variable.example -%}
+            <pre>
+<code>
+{{ ex.code }}
+</code>
+            </pre>
+            {%- endfor %}
+        </div>{% endif %}
+    </td>
+</tr>
