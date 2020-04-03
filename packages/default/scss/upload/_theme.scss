@@ -32,6 +32,9 @@
 
         }
 
+        .k-upload-status {
+            color: $upload-disabled-text;
+        }
 
         // Upload status: uploading
         .k-file-progress {
@@ -47,6 +50,10 @@
 
         // Upload status: success
         .k-file-success {
+            .k-file-information {
+                color: $upload-disabled-text;
+            }
+
             .k-progress {
                 background-color: $upload-success-bg;
             }
@@ -56,7 +63,7 @@
         // Upload satus: error
         .k-file-error,
         .k-file-invalid {
-            .k-file-name {
+            .k-file-validation-message {
                 color: $upload-error-text;
             }
             .k-progress {
@@ -78,8 +85,8 @@
         .k-file-invalid-group-wrapper,
         .k-multiple-files-invalid-group-wrapper,
         .k-file-error .k-file-group-wrapper {
-            color: $upload-error-text;
-            border-color: $upload-error-border;
+            color: $upload-disabled-text;
+            border-color: $upload-disabled-border;
         }
 
         .k-file-extension-wrapper::before,
@@ -92,7 +99,7 @@
         .k-multiple-files-invalid-extension-wrapper::before,
         .k-file-error .k-file-extension-wrapper::before {
             background-color: $upload-bg;
-            border-color: transparent transparent $upload-error-border $upload-error-border;
+            border-color: transparent transparent $upload-disabled-border $upload-disabled-border;
         }
 
         .k-multiple-files-extension-wrapper::after {
@@ -101,8 +108,8 @@
         }
 
         .k-multiple-files-invalid-extension-wrapper::after {
-            border-top-color: $upload-error-border;
-            border-left-color: $upload-error-border;
+            border-top-color: $upload-disabled-border;
+            border-left-color: $upload-disabled-border;
         }
 
         .k-file-size,

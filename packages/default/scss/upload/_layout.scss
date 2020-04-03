@@ -17,6 +17,7 @@
             border-width: 0;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             position: relative;
             background-color: transparent;
 
@@ -31,7 +32,6 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 position: relative;
-                flex: 1;
                 opacity: 0;
                 visibility: hidden;
                 display: none;
@@ -76,12 +76,13 @@
 
             .k-file-multiple,
             .k-file-single {
-                display: block;
+                display: flex;
+                align-items: center;
                 width: 100%;
             }
 
             .k-file {
-                padding: $upload-item-padding-y $upload-item-padding-x;
+                padding: $upload-item-padding-y $upload-item-padding-x calc(#{$upload-item-padding-y} + #{$upload-progress-thickness});
                 border-width: 0 0 1px;
                 border-style: solid;
                 border-color: inherit;
@@ -90,6 +91,7 @@
                 align-items: center;
                 position: relative;
             }
+
             .k-file:last-child {
                 border-width: 0;
             }
@@ -154,7 +156,8 @@
             .k-file-size,
             .k-file-information,
             .k-file-validation-message {
-                font-size: $font-size-sm * .786;
+                font-size: $upload-validation-font-size;
+                line-height: 1;
             }
 
             .k-file-information {
@@ -173,16 +176,14 @@
                 font-size: $font-size * .57;
                 text-transform: uppercase;
                 box-sizing: content-box;
-                position: absolute;
-                top: $upload-item-padding-y;
+                position: relative;
+                flex-shrink: 0;
             }
 
             .k-file-group-wrapper,
             .k-file-invalid-group-wrapper,
             .k-multiple-files-group-wrapper,
             .k-multiple-files-invalid-group-wrapper {
-                position: absolute;
-                top: $upload-item-padding-y;
 
                 .k-file-group {
                     font-size: $upload-group-icon-size;
@@ -208,7 +209,7 @@
             }
 
             .k-file-name-size-wrapper {
-                margin-left: calc( #{$upload-item-image-width} + #{$spacer-x} );
+                margin-left: $padding-x;
                 margin-right: calc( (#{$button-calc-size} + 2 * #{$button-padding-y} * 2) + 3.5em );
                 min-height: $upload-item-image-height + ($upload-item-image-border * 2);
                 display: block;
@@ -323,7 +324,7 @@
             }
 
             .k-file-name-size-wrapper {
-                margin-right: calc( #{$upload-item-image-width} + #{$spacer-x} );
+                margin-right: $padding-x;
                 margin-left: calc( (#{$button-calc-size} + 2 * #{$button-padding-y} * 2) + 3.5em );
             }
 

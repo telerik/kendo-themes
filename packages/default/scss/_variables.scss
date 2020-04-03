@@ -1733,9 +1733,10 @@ $upload-item-padding-y: $cell-padding !default;
 $upload-icon-spacing: $upload-dropzone-padding-x !default;
 
 $upload-item-image-width: 24px !default;
-$upload-item-image-height: 34px !default;
+$upload-item-image-height: 28px !default;
 $upload-item-image-border: 2px !default;
 
+$upload-validation-font-size: 11px !default;
 $upload-group-icon-size: $icon-size-lg !default;
 
 $upload-disabled-text: darken($component-bg, 27%) !default;

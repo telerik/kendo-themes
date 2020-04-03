@@ -1722,6 +1722,7 @@ $upload-dropzone-border: $toolbar-border !default;
 $upload-item-padding-x: $spacer !default;
 $upload-item-padding-y: $spacer !default;
 
+$upload-validation-font-size: 11px !default;
 $upload-icon-spacing: $upload-dropzone-padding-x !default;
 
 $upload-item-image-width: 24px !default;
@@ -1733,7 +1734,7 @@ $upload-group-icon-size: $icon-size-lg !default;
 $upload-disabled-text: darken($component-bg, 27%) !default;
 $upload-disabled-border: darken($component-bg, 27%) !default;
 
-$upload-progress-thickness: 2px !default;
+$upload-progress-thickness: 3px !default;
 $upload-progress-bg: $info !default;
 $upload-progress-text: $base-text !default;
 
