@@ -127,7 +127,6 @@ $grid-group-drag-clue-opacity: .9 !default;
     .k-grid-edit-row > td {
 
         > .k-textbox,
-        > .k-input.k-textbox,
         > .k-textarea,
         > .k-widget {
             border-radius: $text-field-radius;
@@ -153,14 +152,12 @@ $grid-group-drag-clue-opacity: .9 !default;
         .k-multiselect,
         .k-numerictextbox,
         .k-timepicker,
-        .k-textbox,
-        .k-textbox.k-input {
+        .k-textbox {
             font-size: $font-size;
             line-height: $button-line-height;
         }
 
         .k-textbox,
-        .k-textbox.k-input,
         .k-textarea,
         .k-autocomplete,
         .k-dateinput-wrap,
@@ -314,8 +311,7 @@ $grid-group-drag-clue-opacity: .9 !default;
             }
         }
 
-        .k-textbox,
-        .k-textbox.k-input {
+        .k-textbox {
             height: $button-calc-size;
         }
     }

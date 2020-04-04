@@ -1,8 +1,7 @@
 @include exports("input/theme") {
 
     .k-textbox,
-    .k-textarea,
-    .k-input.k-textbox {
+    .k-textarea {
         @include fill(
             $input-text,
             $input-bg,
@@ -47,18 +46,6 @@
                 $bg: $primary
             );
         }
-    }
-
-    .k-textbox,
-    .k-input,
-    .k-textarea {
-        &::selection {
-            @include fill (
-                $color: $primary-contrast,
-                $bg: $primary
-            );
-        }
-
         .k-state-disabled & {
             &::selection {
                 @include fill (
@@ -67,14 +54,11 @@
                 );
             }
         }
-    }
 
-    .k-textbox,
-    .k-input,
-    .k-input.k-textbox,
-    .k-textarea {
+        ::placeholder,
         &::placeholder {
-            @include fill ( $color: rgba($input-text, .5) );
+            color: inherit;
+            opacity: .5;
         }
     }
 }

@@ -2,10 +2,9 @@
 
 @include exports("input/theme") {
 
-    // Input, Textbox, Textarea
+    // Textbox, Textarea
     .k-textbox,
-    .k-textarea,
-    .k-input.k-textbox {
+    .k-textarea {
         // Placeholder
         &::placeholder {
             @include fill ( $color: inherit );
