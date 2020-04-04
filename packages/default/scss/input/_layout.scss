@@ -1,45 +1,70 @@
 @include exports( "input/layout" ) {
 
+    // Textbox, Textarea
     .k-textbox,
     .k-textarea {
-        @include border-radius($input-border-radius);
-        padding: $input-padding-y $input-padding-x;
-        width: $input-default-width;
+        @include border-radius( $input-border-radius );
+        margin: 0;
         border-width: $input-border-width;
         border-style: solid;
         outline: 0;
-        box-sizing: border-box;
-        background: none;
-        // Do not put use-background-clip at the top for this specific case!
-        @include use-background-clip();
         font: inherit;
         font-size: $input-font-size;
         line-height: $input-line-height;
+        box-sizing: border-box;
+        background: none;
         display: inline-flex;
+        flex-flow: row nowrap;
         vertical-align: middle;
         position: relative;
         -webkit-appearance: none;
 
+        > input,
+        > textarea {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            border: 0;
+            outline: 0;
+            box-sizing: border-box;
+            color: inherit;
+            background: none;
+            font: inherit;
+            display: inline-block;
+            flex: 1 1 auto;
+            -webkit-appearance: none;
+        }
+
+        // Disabled state
         &:disabled,
         &[disabled],
         &.k-state-disabled {
             @include disabled( $disabled-styling );
+
+            // Disabled selection
+            &::selection {
+                @include fill (
+                    $color: $input-text,
+                    $bg: transparent
+                    // $bg: rgba( contrast-wcag( $input-bg ), .1 )
+                );
+            }
         }
     }
-    input.k-textbox,
-    textarea.k-textarea {
-        display: inline-block;
-    }
 
+
+    // Textbox
     .k-textbox {
+        @include use-background-clip();
+        padding: $input-padding-y $input-padding-x;
+        width: $input-default-width;
         height: $input-calc-height;
 
-        &.k-space-left {
-            padding-left: 1.9em;
-        }
-
-        &.k-space-right {
-            padding-right: 1.9em;
+        // Nested input
+        > input {
+            height: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .k-icon {
@@ -49,55 +74,52 @@
         }
     }
 
+
+    // Textarea
     .k-textarea {
+        @include use-background-clip();
         padding: $textarea-padding-y $textarea-padding-x;
         width: $textarea-default-width;
         min-height: $textarea-calc-height;
     }
+    textarea.k-textarea {
+        display: inline-block;
+    }
 
-    .k-input,
-    .k-textbox > input {
+
+    // Generic input
+    .k-input {
+        margin: 0;
         padding: 0;
         width: 100%;
-        box-sizing: border-box;
         border: 0;
         outline: 0;
+        box-sizing: border-box;
         color: inherit;
         background: none;
         font: inherit;
-        font-size: $input-font-size;
-        flex: 1;
-        display: flex;
-        align-items: center;
+        flex: 1 1 auto;
+        display: inline-block;
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-appearance: none;
     }
 
-    .k-input,
-    .k-textbox > input,
-    .k-textbox {
-        &::-ms-clear { display: none; }
+
+    // Input spacing
+    .k-space-left {
+        padding-left: 1.9em;
+
+        .k-icon {
+            left: 3px;
+        }
     }
 
-    .k-space-left .k-icon {
-        left: 3px;
-    }
+    .k-space-right {
+        padding-right: 1.9em;
 
-    .k-space-right .k-icon {
-        right: 3px;
-    }
-
-
-    // Disabled selection
-    .k-textbox:disabled,
-    .k-textarea:disabled {
-        &::selection {
-            @include fill (
-                $color: $input-text,
-                $bg: transparent
-                // $bg: rgba( contrast-wcag( $input-bg ), .1 )
-            );
+        .k-icon {
+            right: 3px;
         }
     }
 
