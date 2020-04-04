@@ -8,7 +8,7 @@
         border-width: $input-border-width;
         border-style: solid;
         outline: 0;
-        font: inherit;
+        font-family: $input-font-family;
         font-size: $input-font-size;
         line-height: $input-line-height;
         box-sizing: border-box;
@@ -19,6 +19,16 @@
         position: relative;
         -webkit-appearance: none;
 
+        // Hide clear icon
+        &::-ms-clear { display: none; }
+
+        // Placeholder text
+        &::placeholder {
+            color: $input-placeholder-text;
+            opacity: $input-placeholder-opacity;
+        }
+
+        // TOOD: change this to .k-input
         > input,
         > textarea {
             padding: 0;
@@ -33,6 +43,15 @@
             display: inline-block;
             flex: 1 1 auto;
             -webkit-appearance: none;
+
+            // Hide clear icon
+            &::-ms-clear { display: none; }
+
+            // Placeholder text
+            &::placeholder {
+                color: $input-placeholder-text;
+                opacity: $input-placeholder-opacity;
+            }
         }
 
         // Disabled state
@@ -103,6 +122,17 @@
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-appearance: none;
+
+        // TODO Move styles for k-input in components
+
+        // Hide clear icon
+        &::-ms-clear { display: none; }
+
+        // Placeholder text
+        &::placeholder {
+            color: $input-placeholder-text;
+            opacity: $input-placeholder-opacity;
+        }
     }
 
 
@@ -265,6 +295,7 @@
 
 
 
+
 @include exports("input/layout/autofill-fix") {
 
     // This is needed for the textbox container to capture browser autofill
@@ -293,4 +324,21 @@
         animation-name: autoFillEnd;
     }
 
+}
+
+
+
+
+@include exports("input/layout/IE") {
+    // TODO: Remove once we drop IE support
+
+    .k-ie {
+        .k-textbox,
+        .k-textarea {
+            :-ms-input-placeholder,
+            &:-ms-input-placeholder {
+                color: $input-placeholder-text;
+            }
+        }
+    }
 }

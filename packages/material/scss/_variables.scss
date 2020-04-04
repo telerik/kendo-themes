@@ -928,6 +928,9 @@ $input-focused-shadow: null !default;
 
 $input-disabled-bg: rgb(189, 189, 189) !default;
 
+$input-placeholder-text: rgba( $input-text, .54 ) !default;
+$input-placeholder-opacity: 1 !default;
+
 
 // Textboxes
 $textbox-line-height: 1.375em !default;

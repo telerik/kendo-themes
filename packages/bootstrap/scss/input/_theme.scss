@@ -1,21 +1,5 @@
 @import "~@progress/kendo-theme-default/scss/input/_theme.scss";
 
-@include exports("input/theme/bootstrap") {
-
-    // Textbox, Textarea
-    .k-textbox,
-    .k-textarea {
-        // Placeholder
-        &::placeholder {
-            @include fill ( $color: inherit );
-            opacity: .7;
-        }
-    }
-
-}
-
-
-
 
 @include exports("input/theme/form-styles/bootstrap") {
     // TODO: remove once we have forms
@@ -29,21 +13,5 @@
     fieldset legend {
         @include fill ( $color: $header-text );
         font-size: $fieldset-font-size;
-    }
-}
-
-
-
-
-@include exports("input/theme/IE") {
-    // TODO: Remove once we drop IE support
-
-    .k-ie {
-        .k-textbox,
-        .k-textarea {
-            &:-ms-input-placeholder {
-                @include fill ( $color: $input-text );
-            }
-        }
     }
 }
