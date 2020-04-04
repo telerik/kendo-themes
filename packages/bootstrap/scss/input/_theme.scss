@@ -1,6 +1,6 @@
 @import "~@progress/kendo-theme-default/scss/input/_theme.scss";
 
-@include exports("input/theme") {
+@include exports("input/theme/bootstrap") {
 
     // Textbox, Textarea
     .k-textbox,
@@ -12,6 +12,14 @@
         }
     }
 
+}
+
+
+
+
+@include exports("input/theme/form-styles/bootstrap") {
+    // TODO: remove once we have forms
+
     fieldset {
         border-width: 0;
         margin: 0;
@@ -22,32 +30,19 @@
         @include fill ( $color: $header-text );
         font-size: $fieldset-font-size;
     }
-
-    .k-maskedtextbox .k-state-invalid + .k-i-warning {
-        @include fill ( $color: $error );
-    }
 }
 
 
 
 
 @include exports("input/theme/IE") {
-
     // TODO: Remove once we drop IE support
+
     .k-ie {
         .k-textbox,
         .k-textarea {
             &:-ms-input-placeholder {
                 @include fill ( $color: $input-text );
-            }
-            &.k-invalid,
-            &.k-state-invalid,
-            &.ng-invalid.ng-touched,
-            &.ng-invalid.ng-dirty {
-
-                &:-ms-input-placeholder {
-                    @include fill ( $color: $error );
-                }
             }
         }
     }

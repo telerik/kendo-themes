@@ -2,7 +2,7 @@
 
     .k-textbox,
     .k-textarea {
-        @include border-radius();
+        @include border-radius($input-border-radius);
         padding: $input-padding-y $input-padding-x;
         width: $input-default-width;
         border-width: $input-border-width;
@@ -50,6 +50,7 @@
     }
 
     .k-textarea {
+        padding: $textarea-padding-y $textarea-padding-x;
         width: $textarea-default-width;
         min-height: $textarea-calc-height;
     }
@@ -87,6 +88,21 @@
         right: 3px;
     }
 
+
+    // Disabled selection
+    .k-textbox:disabled,
+    .k-textarea:disabled {
+        &::selection {
+            @include fill (
+                $color: $input-text,
+                $bg: transparent
+                // $bg: rgba( contrast-wcag( $input-bg ), .1 )
+            );
+        }
+    }
+
+
+    // Floating label
     .k-textbox-container,
     .k-floating-label-container {
         padding-top: $floating-label-height;
