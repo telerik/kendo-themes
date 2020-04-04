@@ -9,12 +9,6 @@
             $input-border
         );
 
-        // Placeholder
-        &::placeholder {
-            @include fill ( $color: inherit );
-            opacity: .5;
-        }
-
         // Selection
         &::selection {
             @include fill (
