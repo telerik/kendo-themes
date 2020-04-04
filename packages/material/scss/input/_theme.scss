@@ -1,26 +1,18 @@
 @include exports("input/theme") {
 
+    // Textbox, Textarea
     .k-textbox,
     .k-textarea {
         @include fill(
-            $bg: transparent,
-            $border: $input-border
+            $input-text,
+            $input-bg,
+            $input-border
         );
-        border-width: 0 0 $input-border-width;
-        border-radius: 0;
-        @include box-shadow( none );
-        font-size: $font-size-lg;
 
-        // Hovered
-        &:hover,
-        &.k-state-hover {
-            @include fill( $border: $input-hovered-border );
-        }
-
-        // Focused
-        &:focus,
-        &.k-state-focus  {
-            @include fill( $border: $input-focused-border );
+        // Placeholder
+        &::placeholder {
+            @include fill ( $color: inherit );
+            opacity: .69;
         }
 
         // Selection
@@ -31,6 +23,27 @@
             );
         }
 
+        // Hovered
+        &:hover,
+        &.k-state-hover {
+            @include fill(
+                $input-hovered-text,
+                $input-hovered-bg,
+                $input-hovered-border
+            );
+        }
+
+        // Focused
+        &:focus,
+        &.k-state-focus,
+        &.k-state-focused  {
+            @include fill(
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
+            );
+        }
+
         // Invalid
         &.k-invalid,
         &.k-state-invalid,
@@ -38,20 +51,24 @@
         &.ng-invalid.ng-dirty {
             @include fill( $border: $error );
         }
-
-        &:disabled {
-            border-style: dashed;
-        }
-        &.k-state-disabled {
-            border-bottom-style: dotted;
-        }
     }
 
-    // Textarea
-    .k-textarea {
-        border-width: $input-border-width;
-        @include fill( $border: $border-color );
-        border-radius: $border-radius;
+
+    // Reset .k-textbox border-top-color
+    .k-textbox {
+
+        &,
+        &:hover,
+        &.k-state-hover,
+        &:focus,
+        &.k-state-focus,
+        &.k-state-focused,
+        &.k-invalid,
+        &.k-state-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            border-top-color: transparent;
+        }
     }
 
     // Floating label
@@ -79,12 +96,6 @@
         &:not(.k-state-empty) {
             > .k-label {
                 @include fill( $bg: $floating-label-focused-bg );
-            }
-        }
-
-        .k-textarea {
-            &:focus {
-                @include fill( $border: $primary );
             }
         }
     }
