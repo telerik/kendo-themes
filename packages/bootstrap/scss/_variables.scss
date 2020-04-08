@@ -1249,6 +1249,11 @@ $listbox-button-margin: $padding-x !default;
 $listbox-width: 12.4em !default;
 $listbox-default-height: 200px !default;
 
+$listbox-border-width: 1px !default;
+$listbox-font-family: $font-family !default;
+$listbox-font-size: $font-size !default;
+$listbox-line-height: $line-height !default;
+
 $listbox-bg: $panel-bg !default;
 $listbox-text: $panel-text !default;
 $listbox-border: $panel-border !default;
