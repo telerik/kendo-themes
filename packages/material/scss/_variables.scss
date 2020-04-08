@@ -132,6 +132,8 @@ $nav-item-margin: 2px !default;
 $nav-item-padding-x: $padding-x !default;
 $nav-item-padding-y: $padding-y !default;
 
+$header-cell-padding-x: 24px !default;
+$header-cell-padding-y: 10px !default;
 $cell-padding-x: 24px !default;
 $cell-padding-y: 10px !default;
 $cell-padding: 8px !default;
@@ -2383,26 +2385,58 @@ $grid-font-family: $font-family !default;
 $grid-font-size: $font-size !default;
 $grid-line-height: $line-height !default;
 
+/// Background color of the grid component
+/// @group grid
 $grid-bg: $component-bg !default;
+/// Text color of the grid component
+/// @group grid
 $grid-text: $component-text !default;
+/// Border color of the grid component
+/// @group grid
 $grid-border: $component-border !default;
 
+/// Background color of grid header
+/// @group grid
 $grid-header-bg: transparent !default;
+/// Background color of grid header
+/// @group grid
 $grid-header-text: if($theme-type == dark, $light-secondary-text, $dark-secondary-text) !default;
+/// Border color of grid header
+/// @group grid
 $grid-header-border: $grid-border !default;
+/// Background gradient of grid header
+/// @group grid
 $grid-header-gradient: null !default;
 
 // TODO(ZHEKOV): we need this, so k-alt won't override it. When we remove k-alt, we can make this null.
+/// Background color of alternating rows in grid
+/// @group grid
 $grid-alt-bg: transparent !default;
+/// Text color of alternating rows in grid
+/// @group grid
 $grid-alt-text: null !default;
+/// Text color of alternating rows in grid
+/// @group grid
 $grid-alt-border: null !default;
 
+/// Background color of hovered rows in grid
+/// @group grid
 $grid-hovered-bg: rgba( contrast-wcag( $grid-bg ), .07 ) !default;
+/// Text color of hovered rows in grid
+/// @group grid
 $grid-hovered-text: $grid-text !default;
+/// Border color of hovered rows in grid
+/// @group grid
 $grid-hovered-border: $grid-border !default;
 
+/// Background color of selected rows in grid
+/// @group grid
 $grid-selected-bg: rgba( contrast-wcag( $grid-bg ), .04 ) !default;
+/// Text color of selected rows in grid
+/// @group grid
 $grid-selected-text: #000000 !default;
+/// Border color of selected rows in grid
+/// @group grid
 $grid-selected-border: $grid-border !default;
 
 $grid-grouping-row-bg: transparent !default;

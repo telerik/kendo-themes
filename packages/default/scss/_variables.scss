@@ -87,6 +87,8 @@ $nav-item-margin: 0 !default;
 $nav-item-padding-x: $padding-x-lg !default;
 $nav-item-padding-y: $padding-y-lg !default;
 
+$header-cell-padding-x: 12px !default;
+$header-cell-padding-y: 8px !default;
 $cell-padding-x: 12px !default;
 $cell-padding-y: 8px !default;
 $cell-padding: 8px !default;
@@ -2332,30 +2334,62 @@ $grid-font-family: $font-family !default;
 $grid-font-size: $font-size !default;
 $grid-line-height: $line-height !default;
 
+/// Background color of the grid component
+/// @group grid
 $grid-bg: $component-bg !default;
+/// Text color of the grid component
+/// @group grid
 $grid-text: $component-text !default;
+/// Border color of the grid component
+/// @group grid
 $grid-border: $component-border !default;
 
+/// Background color of grid header
+/// @group grid
 $grid-header-bg: $header-bg !default;
+/// Text color of grid header
+/// @group grid
 $grid-header-text: $header-text !default;
+/// Border color of grid header
+/// @group grid
 $grid-header-border: $grid-border !default;
+/// Background gradient of grid header
+/// @group grid
 $grid-header-gradient: $header-gradient !default;
 
 $grid-group-drag-clue-bg: $grid-header-bg !default;
 $grid-group-drag-clue-text: $grid-header-text !default;
 $grid-group-drag-clue-line-height: $line-height !default;
 
+/// Background color of alternating rows in grid
+/// @group grid
 $grid-alt-bg: rgba( contrast-wcag( $grid-bg ), .04 ) !default;
-$grid-alt-text: $grid-text !default;
-$grid-alt-border: $grid-border !default;
+/// Text color of alternating rows in grid
+/// @group grid
+$grid-alt-text: null !default;
+/// Border color of alternating rows in grid
+/// @group grid
+$grid-alt-border: null !default;
 
+/// Background color of hovered rows in grid
+/// @group grid
 $grid-hovered-bg: darken($grid-bg, 7%) !default;
-$grid-hovered-text: $grid-text !default;
-$grid-hovered-border: $grid-border !default;
+/// Text color of hovered rows in grid
+/// @group grid
+$grid-hovered-text: null !default;
+/// Border color of hovered rows in grid
+/// @group grid
+$grid-hovered-border: null !default;
 
+/// Background color of selected rows in grid
+/// @group grid
 $grid-selected-bg: rgba($selected-bg, .25) !default;
-$grid-selected-text: $grid-text !default;
-$grid-selected-border: $grid-border !default;
+/// Text color of selected rows in grid
+/// @group grid
+$grid-selected-text: null !default;
+/// Border color of selected rows in grid
+/// @group grid
+$grid-selected-border: null !default;
 
 $grid-grouping-row-bg: darken($grid-bg, 7%) !default;
 $grid-grouping-row-text: $grid-text !default;
