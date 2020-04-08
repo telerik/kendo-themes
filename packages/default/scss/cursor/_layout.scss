@@ -1,0 +1,9 @@
+@include exports( "cursor/layout" ) {
+
+    @each $cursor in $cursors {
+        .k-cursor-#{$cursor} {
+            cursor: $cursor;
+        }
+    }
+
+}
