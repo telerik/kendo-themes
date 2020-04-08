@@ -1,61 +1,16 @@
+@import "~@progress/kendo-theme-default/scss/input/_theme.scss";
+
 @include exports("input/theme") {
 
     // Input, Textbox, Textarea
     .k-textbox,
     .k-textarea,
     .k-input.k-textbox {
-        @include fill(
-            $input-text,
-            $input-bg,
-            $input-border
-        );
-
-        // Hovered
-        &:hover,
-        &.k-state-hover {
-            @include fill ( $border: $input-hovered-border );
-        }
-
-        // Focused
-        &:focus,
-        &.k-state-focused {
-            @include fill (
-                $border: $input-focused-border,
-            );
-            @include box-shadow( $input-focused-shadow );
-        }
-
-        // Invalid
-        &.k-invalid,
-        &.k-state-invalid,
-        &.ng-invalid.ng-touched,
-        &.ng-invalid.ng-dirty {
-            @include fill( $border: $invalid-border );
-
-            &:focus,
-            &.k-state-focused {
-                @include box-shadow($invalid-shadow);
-            }
-        }
-
-        // Selection
-        &::selection {
-            @include fill (
-                $color: $primary-contrast,
-                $bg: $primary
-            );
-        }
-
         // Placeholder
         &::placeholder {
             @include fill ( $color: inherit );
             opacity: .7;
         }
-    }
-
-    .k-required,
-    .k-required.k-field-info {
-        @include fill ( $color: $primary );
     }
 
     fieldset {

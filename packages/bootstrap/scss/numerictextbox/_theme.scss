@@ -1,3 +1,5 @@
+@import "~@progress/kendo-theme-default/scss/numerictextbox/_theme.scss";
+
 @include exports("numerictextbox/theme") {
 
     // Numeric
@@ -5,52 +7,10 @@
 
         // Normal state
         .k-numeric-wrap {
-            @include fill(
-                $numeric-text,
-                $numeric-bg,
-                $numeric-border
-            );
             transition: $transition;
 
             .k-select {
-                @include fill(
-                    $numeric-button-text,
-                    $numeric-button-bg,
-                    $numeric-button-border,
-                    $numeric-button-gradient
-                );
                 transition: $transition;
-            }
-
-
-            // Hovered state
-            &:hover,
-            &.k-state-hover {
-                @include fill(
-                    $numeric-hovered-text,
-                    $numeric-hovered-bg,
-                    $numeric-hovered-border
-                );
-
-                .k-select {
-                    @include fill(
-                        $numeric-button-hovered-text,
-                        $numeric-button-hovered-bg,
-                        $numeric-button-hovered-border,
-                        $numeric-button-hovered-gradient
-                    );
-                }
-            }
-
-
-            // Focused state
-            &.k-state-focused {
-                @include fill(
-                    $numeric-focused-text,
-                    $numeric-focused-bg,
-                    $numeric-focused-border
-                );
-                @include box-shadow($numeric-focused-shadow);
             }
 
             // Selected state
@@ -62,36 +22,6 @@
                     $numeric-button-pressed-gradient
                 );
                 @include box-shadow( $numeric-button-pressed-shadow );
-            }
-
-            // Invalid state
-            &.k-invalid,
-            &.k-invalid:hover,
-            &.k-state-invalid {
-                @include fill( $border: $invalid-border );
-
-                &:focus,
-                &.k-state-focused {
-                    @include box-shadow($invalid-shadow);
-                }
-            }
-        }
-
-        // Focused state for k-state-focused added to the k-numerictextbox
-        &.k-state-focused {
-            @include fill(
-                $numeric-focused-text,
-                $numeric-focused-bg,
-                $numeric-focused-border
-            );
-            @include box-shadow($numeric-focused-shadow);
-        }
-
-        // Invalid state
-        &.ng-invalid.ng-touched,
-        &.ng-invalid.ng-dirty {
-            .k-numeric-wrap {
-                @include fill( $border: $invalid-border );
             }
         }
     }
