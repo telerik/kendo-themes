@@ -10,7 +10,7 @@
         line-height: $stepper-line-height;
         font-family: $stepper-font-family;
         position: relative;
-        // TODO: remove those once k-widget styles are removed
+        // TODO: remove those once k-widget styles are removed. Link: https://github.com/telerik/kendo-themes/issues/1359
         color: inherit;
         background: none;
 
@@ -122,7 +122,7 @@
         .k-progressbar {
             position: absolute;
             pointer-events: none;
-            z-index: 0; //todo fix
+            z-index: 0;
         }
     }
 
