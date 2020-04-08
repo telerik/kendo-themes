@@ -29,6 +29,7 @@
     "lint": "gulp lint"
   },
   "dependencies": {
+    "@joneff/baka": "^0.1.2",
     "ansi-colors": "^4.1.1",
     "autoprefixer": "^9.7.5",
     "fibers": "^4.0.2",
@@ -40,16 +41,15 @@
     "gulplog": "^1.0.0",
     "mime": "^2.4.4",
     "minimist": "^1.2.5",
+    "nunjucks": "^3.2.1",
     "plugin-error": "^1.0.1",
     "postcss-calc": "^7.0.2",
     "sass": "^1.26.3",
     "sass-lint": "^1.13.1",
     "sassdoc": "^2.7.1",
-    "sassdoc-extras": "^3.0.0",
-    "nunjucks": "^3.2.1"
+    "sassdoc-extras": "^3.0.0"
   },
   "devDependencies": {
-    "@joneff/baka": "^0.1.1",
     "gulp-eslint": "^6.0.0"
   }
 }
