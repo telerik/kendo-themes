@@ -688,6 +688,186 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 </tbody>
 </table>
+### Grid
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$grid-bg</td>
+    <td></td>
+    <td>$table-bg</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid component</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-text</td>
+    <td></td>
+    <td>$table-color</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid component</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-border</td>
+    <td></td>
+    <td>$table-border-color</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid component</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-header-bg</td>
+    <td></td>
+    <td>$header-bg</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid header</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-header-text</td>
+    <td></td>
+    <td>$header-text</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of grid header</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-header-border</td>
+    <td></td>
+    <td>$header-border</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid header</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-header-gradient</td>
+    <td></td>
+    <td>$header-gradient</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of grid header</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-alt-bg</td>
+    <td></td>
+    <td>$table-accent-bg</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in grid</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-alt-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of alternating rows in grid</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-alt-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of alternating rows in grid</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-hovered-bg</td>
+    <td></td>
+    <td>$table-hover-bg</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered rows in grid</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-hovered-text</td>
+    <td></td>
+    <td>$table-hover-color</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered rows in grid</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-hovered-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered rows in grid</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-selected-bg</td>
+    <td></td>
+    <td>rgba($selected-bg, .25)</td>
+    <td>rgba($selected-bg, .25)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected rows in grid</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-selected-text</td>
+    <td></td>
+    <td>$grid-text</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected rows in grid</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-selected-border</td>
+    <td></td>
+    <td>$grid-border</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in grid</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
 ### Icons
 
 <table class="theme-variables">
@@ -714,6 +894,326 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The URL to the icon font that will be used by the theme<br />The default value of `null` embeds the package font with a `data:` URL</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+### Tabstrip
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$button-border-width</td>
+    <td></td>
+    <td>$btn-border-width</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around buttons</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-border-radius</td>
+    <td></td>
+    <td>$border-radius</td>
+    <td>$border-radius</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of buttons</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-padding-x</td>
+    <td></td>
+    <td>$btn-padding-x</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of buttons</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-padding-y</td>
+    <td></td>
+    <td>$btn-padding-y</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of buttons</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tabstrip component</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-text</td>
+    <td></td>
+    <td>$component-text</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tabstrip component</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-border</td>
+    <td></td>
+    <td>$nav-tabs-border-color</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip component</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-padding-x</td>
+    <td></td>
+    <td>$nav-item-padding-x</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-padding-y</td>
+    <td></td>
+    <td>$nav-item-padding-y</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-border-width</td>
+    <td></td>
+    <td>$nav-tabs-border-width</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-border-radius</td>
+    <td></td>
+    <td>$nav-tabs-border-radius</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-gap</td>
+    <td></td>
+    <td>$nav-item-margin</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-text</td>
+    <td></td>
+    <td>$link-text</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-hovered-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-hovered-text</td>
+    <td></td>
+    <td>$link-hover-text</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-hovered-border</td>
+    <td></td>
+    <td>$nav-tabs-link-hover-border-color</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-hovered-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of hovered tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-selected-bg</td>
+    <td></td>
+    <td>$nav-tabs-link-active-bg</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-selected-text</td>
+    <td></td>
+    <td>$nav-tabs-link-active-color</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-selected-border</td>
+    <td></td>
+    <td>$nav-tabs-link-active-border-color</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-item-selected-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of selected tabs</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-content-padding-x</td>
+    <td></td>
+    <td>$tabstrip-item-padding-x</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of tabstrip content</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-content-padding-y</td>
+    <td></td>
+    <td>$tabstrip-item-padding-y</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of tabstrip content</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-content-border-width</td>
+    <td></td>
+    <td>$nav-tabs-border-width</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around tabstrip content</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-content-bg</td>
+    <td></td>
+    <td>$component-bg</td>
+    <td>$component-bg</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tabstrip content</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-content-text</td>
+    <td></td>
+    <td>$component-text</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tabstrip content</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$tabstrip-content-border</td>
+    <td></td>
+    <td>$component-border</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip content</div></div>
     </td>
 </tr>
 </tbody>

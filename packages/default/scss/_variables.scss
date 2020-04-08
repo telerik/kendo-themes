@@ -87,6 +87,8 @@ $nav-item-margin: 0 !default;
 $nav-item-padding-x: $padding-x-lg !default;
 $nav-item-padding-y: $padding-y-lg !default;
 
+$header-cell-padding-x: 12px !default;
+$header-cell-padding-y: 8px !default;
 $cell-padding-x: 12px !default;
 $cell-padding-y: 8px !default;
 $cell-padding: 8px !default;
@@ -727,10 +729,18 @@ $invalid-shadow: null !default;
 
 // Buttons
 
+/// Width of border around buttons
+/// @group buttons
 $button-border-width: 1px !default;
+/// Border radius of buttons
+/// @group buttons
 $button-border-radius: $border-radius !default;
 
+/// Horizontal padding of buttons
+/// @group tabstrip
 $button-padding-x: $padding-x !default;
+/// Vertical padding of buttons
+/// @group tabstrip
 $button-padding-y: $padding-y !default;
 $button-line-height: $form-line-height !default;
 
@@ -2052,6 +2062,89 @@ $panelbar-item-selected-gradient: null !default;
 $panelbar-item-focused-shadow: $list-item-focused-shadow !default;
 
 
+// Stepper
+$stepper-margin-x: null !default;
+$stepper-margin-y: null !default;
+$stepper-padding-x: null !default;
+$stepper-padding-y: null !default;
+$stepper-label-margin-x: 12px !default;
+$stepper-label-padding-x: 12px !default;
+$stepper-label-padding-y: 5px !default;
+$stepper-border-width: 0 !default;
+
+$stepper-inline-content-padding-x: 20px !default;
+$stepper-inline-content-padding-y: 10px !default;
+
+$stepper-font-size: $font-size !default;
+$stepper-line-height: $line-height !default;
+$stepper-font-family: $font-family !default;
+
+$stepper-bg: null !default;
+$stepper-text: null !default;
+$stepper-border: null !default;
+
+$stepper-indicator-width: 28px !default;
+$stepper-indicator-height: $stepper-indicator-width !default;
+$stepper-indicator-border-width: 1px !default;
+$stepper-indicator-border-radius: 50% !default;
+
+$stepper-indicator-focus-border-width: 1px !default;
+$stepper-indicator-focus-size: 2px !default;
+$stepper-indicator-focus-offset: 3px !default;
+$stepper-indicator-focus-calc-offset: calc( #{$stepper-indicator-focus-border-width} + #{$stepper-indicator-focus-offset} ) !default;
+
+$stepper-indicator-bg: $component-bg !default;
+$stepper-indicator-text: $component-text !default;
+$stepper-indicator-border: $component-border !default;
+
+$stepper-indicator-hover-bg: try-shade( $stepper-indicator-bg ) !default;
+$stepper-indicator-hover-text: null !default;
+$stepper-indicator-hover-border: null !default;
+
+$stepper-indicator-disabled-bg: $stepper-indicator-bg !default;
+$stepper-indicator-disabled-text: mix($stepper-indicator-text, #ffffff, 60%) !default;
+$stepper-indicator-disabled-border: $stepper-indicator-border !default;
+
+$stepper-indicator-done-bg: $primary !default;
+$stepper-indicator-done-text: contrast-wcag( $stepper-indicator-done-bg ) !default;
+$stepper-indicator-done-border: $stepper-indicator-done-bg !default;
+
+$stepper-indicator-done-hover-bg: try-shade( $stepper-indicator-done-bg ) !default;
+$stepper-indicator-done-hover-text: null !default;
+$stepper-indicator-done-hover-border: null !default;
+
+$stepper-indicator-done-disabled-bg: mix( $stepper-indicator-done-bg, $component-bg, 60%) !default;
+$stepper-indicator-done-disabled-text: contrast-wcag( $stepper-indicator-done-bg ) !default;
+$stepper-indicator-done-disabled-border: $stepper-indicator-done-disabled-bg !default;
+
+$stepper-indicator-current-bg: $stepper-indicator-done-bg !default;
+$stepper-indicator-current-text: $stepper-indicator-done-text !default;
+$stepper-indicator-current-border: $stepper-indicator-done-border !default;
+
+$stepper-indicator-current-hover-bg: $stepper-indicator-done-hover-bg !default;
+$stepper-indicator-current-hover-text: $stepper-indicator-done-hover-text !default;
+$stepper-indicator-current-hover-border: $stepper-indicator-done-hover-border !default;
+
+$stepper-indicator-current-disabled-bg: $stepper-indicator-done-disabled-bg !default;
+$stepper-indicator-current-disabled-text: $stepper-indicator-done-disabled-text !default;
+$stepper-indicator-current-disabled-border: $stepper-indicator-done-disabled-border !default;
+
+$stepper-label-text: $component-text !default;
+$stepper-label-success-text: $success !default;
+$stepper-label-error-text: $error !default;
+$stepper-label-disabled-text: mix($component-text, #ffffff, 60%) !default;
+
+$stepper-optional-label-opacity: .35 !default;
+$stepper-disabled-opacity: .6 !default;
+
+$stepper-progressbar-size: 2px !default;
+$stepper-connector-calc-offset: calc(( #{$stepper-indicator-height} / 2) + #{$stepper-progressbar-size / 2} + #{$stepper-indicator-focus-offset}) !default;
+
+$stepper-content-transition-property: height !default;
+$stepper-content-transition-duration: 300ms !default;
+$stepper-content-transition-timing-function: cubic-bezier(.4, 0, .2, 1) 0ms;
+
+
 // Tabstrip
 $tabstrip-wrapper-padding-x: 0 !default;
 $tabstrip-wrapper-padding-y: 0 !default;
@@ -2060,47 +2153,99 @@ $tabstrip-wrapper-border-width: 0 !default;
 $tabstrip-line-height: $line-height !default;
 $tabstrip-border-width: 1px !default;
 
-$tabstrip-item-padding-x: $nav-item-padding-x !default;
-$tabstrip-item-padding-y: $nav-item-padding-y !default;
-$tabstrip-item-border-width: 1px !default;
-$tabstrip-item-border-radius: $border-radius !default;
-$tabstrip-item-gap: $nav-item-margin !default;
-
-$tabstrip-content-padding-x: $tabstrip-item-padding-x !default;
-$tabstrip-content-padding-y: $tabstrip-item-padding-y !default;
-$tabstrip-content-border-width: 1px !default;
-
 $tabstrip-wrapper-bg: null !default;
 $tabstrip-wrapper-text: null !default;
 $tabstrip-wrapper-border: null !default;
 
+/// Background color of tabstrip component
+/// @group tabstrip
 $tabstrip-bg: null !default;
+/// Text color of tabstrip component
+/// @group tabstrip
 $tabstrip-text: $component-text !default;
+/// Border color of tabstrip component
+/// @group tabstrip
 $tabstrip-border: $component-border !default;
 
+/// Horizontal padding of tabs
+/// @group tabstrip
+$tabstrip-item-padding-x: $nav-item-padding-x !default;
+/// Vertical padding of tabs
+/// @group tabstrip
+$tabstrip-item-padding-y: $nav-item-padding-y !default;
+/// Width of border around tabs
+/// @group tabstrip
+$tabstrip-item-border-width: 1px !default;
+/// Border radius of tabs
+/// @group tabstrip
+$tabstrip-item-border-radius: $border-radius !default;
+/// Spacing between tabs
+/// @group tabstrip
+$tabstrip-item-gap: $nav-item-margin !default;
+
+/// Background color of tabs
+/// @group tabstrip
 $tabstrip-item-bg: null !default;
+/// Text color of tabs
+/// @group tabstrip
 $tabstrip-item-text: $link-text !default;
+/// Border color of tabs
+/// @group tabstrip
 $tabstrip-item-border: null !default;
+/// Background gradient of tabs
+/// @group tabstrip
 $tabstrip-item-gradient: null !default;
 
+/// Background color of hovered tabs
+/// @group tabstrip
 $tabstrip-item-hovered-bg: null !default;
+/// Text color of hovered tabs
+/// @group tabstrip
 $tabstrip-item-hovered-text: $link-hover-text !default;
+/// Border color of hovered tabs
+/// @group tabstrip
 $tabstrip-item-hovered-border: null !default;
+/// Background gradient of hovered tabs
+/// @group tabstrip
 $tabstrip-item-hovered-gradient: null !default;
 
+/// Background color of selected tabs
+/// @group tabstrip
 $tabstrip-item-selected-bg: $component-bg !default;
+/// Text color of selected tabs
+/// @group tabstrip
 $tabstrip-item-selected-text: $component-text !default;
+/// Border color of selected tabs
+/// @group tabstrip
 $tabstrip-item-selected-border: $component-border !default;
+/// Background gradient of selected tabs
+/// @group tabstrip
 $tabstrip-item-selected-gradient: null !default;
 
 $tabstrip-item-focused-shadow: $list-item-focused-shadow !default;
 
-$tabstrip-content-bg: $component-bg !default;
-$tabstrip-content-text: $component-text !default;
-$tabstrip-content-border: $component-border !default;
-
 $tabstrip-indicator-size: null !default;
 $tabstrip-indicator-color: null !default;
+
+/// Horizontal padding of tabstrip content
+/// @group tabstrip
+$tabstrip-content-padding-x: $tabstrip-item-padding-x !default;
+/// Vertical padding of tabstrip content
+/// @group tabstrip
+$tabstrip-content-padding-y: $tabstrip-item-padding-y !default;
+/// Width of border around tabstrip content
+/// @group tabstrip
+$tabstrip-content-border-width: 1px !default;
+
+/// Background color of tabstrip content
+/// @group tabstrip
+$tabstrip-content-bg: $component-bg !default;
+/// Text color of tabstrip content
+/// @group tabstrip
+$tabstrip-content-text: $component-text !default;
+/// Border color of tabstrip content
+/// @group tabstrip
+$tabstrip-content-border: $component-border !default;
 
 
 // Treeview
@@ -2255,30 +2400,62 @@ $grid-font-family: $font-family !default;
 $grid-font-size: $font-size !default;
 $grid-line-height: $line-height !default;
 
+/// Background color of the grid component
+/// @group grid
 $grid-bg: $component-bg !default;
+/// Text color of the grid component
+/// @group grid
 $grid-text: $component-text !default;
+/// Border color of the grid component
+/// @group grid
 $grid-border: $component-border !default;
 
+/// Background color of grid header
+/// @group grid
 $grid-header-bg: $header-bg !default;
+/// Text color of grid header
+/// @group grid
 $grid-header-text: $header-text !default;
+/// Border color of grid header
+/// @group grid
 $grid-header-border: $grid-border !default;
+/// Background gradient of grid header
+/// @group grid
 $grid-header-gradient: $header-gradient !default;
 
 $grid-group-drag-clue-bg: $grid-header-bg !default;
 $grid-group-drag-clue-text: $grid-header-text !default;
 $grid-group-drag-clue-line-height: $line-height !default;
 
+/// Background color of alternating rows in grid
+/// @group grid
 $grid-alt-bg: rgba( contrast-wcag( $grid-bg ), .04 ) !default;
-$grid-alt-text: $grid-text !default;
-$grid-alt-border: $grid-border !default;
+/// Text color of alternating rows in grid
+/// @group grid
+$grid-alt-text: null !default;
+/// Border color of alternating rows in grid
+/// @group grid
+$grid-alt-border: null !default;
 
+/// Background color of hovered rows in grid
+/// @group grid
 $grid-hovered-bg: darken($grid-bg, 7%) !default;
-$grid-hovered-text: $grid-text !default;
-$grid-hovered-border: $grid-border !default;
+/// Text color of hovered rows in grid
+/// @group grid
+$grid-hovered-text: null !default;
+/// Border color of hovered rows in grid
+/// @group grid
+$grid-hovered-border: null !default;
 
+/// Background color of selected rows in grid
+/// @group grid
 $grid-selected-bg: rgba($selected-bg, .25) !default;
-$grid-selected-text: $grid-text !default;
-$grid-selected-border: $grid-border !default;
+/// Text color of selected rows in grid
+/// @group grid
+$grid-selected-text: null !default;
+/// Border color of selected rows in grid
+/// @group grid
+$grid-selected-border: null !default;
 
 $grid-grouping-row-bg: darken($grid-bg, 7%) !default;
 $grid-grouping-row-text: $grid-text !default;
