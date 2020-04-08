@@ -1,7 +1,7 @@
 ---
 title: Customizing Tabstrip
-description: "Refer to the list of the Kendo UI Material theme variables available for customization."
-slug: variables_kendothemematerial_tabstrip
+description: "Refer to the list of the Kendo UI Default theme variables available for customization."
+slug: variables_kendothemedefault_tabstrip
 position: 9
 ---
 
@@ -53,26 +53,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$button-border-width</td>
-    <td></td>
-    <td>0</td>
-    <td>0</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around buttons</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$button-border-radius</td>
-    <td></td>
-    <td>$border-radius</td>
-    <td>2px</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of buttons</div></div>
-    </td>
-</tr>
-<tr>
     <td>$button-padding-x</td>
     <td></td>
     <td>$padding-x</td>
@@ -85,8 +65,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-padding-y</td>
     <td></td>
-    <td>8px</td>
-    <td>8px</td>
+    <td>$padding-y</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of buttons</div></div>
@@ -105,8 +85,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-text</td>
     <td></td>
-    <td>inherit</td>
-    <td>inherit</td>
+    <td>$component-text</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tabstrip component</div></div>
@@ -116,7 +96,7 @@ The following table lists the available variables for customization.
     <td>$tabstrip-border</td>
     <td></td>
     <td>$component-border</td>
-    <td>map-get($theme, component-border)</td>
+    <td>rgba( black, .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip component</div></div>
@@ -125,8 +105,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-padding-x</td>
     <td></td>
-    <td>24px</td>
-    <td>24px</td>
+    <td>$nav-item-padding-x</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of tabs</div></div>
@@ -135,8 +115,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-padding-y</td>
     <td></td>
-    <td>14px</td>
-    <td>14px</td>
+    <td>$nav-item-padding-y</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of tabs</div></div>
@@ -145,18 +125,18 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-border-width</td>
     <td></td>
-    <td>0</td>
-    <td>0</td>
+    <td>1px</td>
+    <td>1px</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around of tabs</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around tabs</div></div>
     </td>
 </tr>
 <tr>
     <td>$tabstrip-item-border-radius</td>
     <td></td>
-    <td>0</td>
-    <td>0</td>
+    <td>$border-radius</td>
+    <td>2px</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of tabs</div></div>
@@ -165,8 +145,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-gap</td>
     <td></td>
-    <td>0</td>
-    <td>0</td>
+    <td>$nav-item-margin</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between tabs</div></div>
@@ -185,8 +165,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-text</td>
     <td></td>
-    <td>inherit</td>
-    <td>inherit</td>
+    <td>$link-text</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tabs</div></div>
@@ -225,8 +205,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-hovered-text</td>
     <td></td>
-    <td>inherit</td>
-    <td>inherit</td>
+    <td>$link-hover-text</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered tabs</div></div>
@@ -249,14 +229,14 @@ The following table lists the available variables for customization.
     <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradent of hovered tabs</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of hovered tabs</div></div>
     </td>
 </tr>
 <tr>
     <td>$tabstrip-item-selected-bg</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+    <td>$component-bg</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected tabs</div></div>
@@ -265,8 +245,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-selected-text</td>
     <td></td>
-    <td>inherit</td>
-    <td>inherit</td>
+    <td>$component-text</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected tabs</div></div>
@@ -275,8 +255,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-selected-border</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+    <td>$component-border</td>
+    <td>rgba( black, .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected tabs</div></div>
@@ -296,7 +276,7 @@ The following table lists the available variables for customization.
     <td>$tabstrip-content-padding-x</td>
     <td></td>
     <td>$tabstrip-item-padding-x</td>
-    <td>24px</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of tabstrip content</div></div>
@@ -306,7 +286,7 @@ The following table lists the available variables for customization.
     <td>$tabstrip-content-padding-y</td>
     <td></td>
     <td>$tabstrip-item-padding-y</td>
-    <td>14px</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of tabstrip content</div></div>
@@ -315,8 +295,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-content-border-width</td>
     <td></td>
-    <td>0</td>
-    <td>0</td>
+    <td>1px</td>
+    <td>1px</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around tabstrip content</div></div>
@@ -325,8 +305,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-content-bg</td>
     <td></td>
-    <td>transparent</td>
-    <td>transparent</td>
+    <td>$component-bg</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tabstrip content</div></div>
@@ -335,8 +315,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-content-text</td>
     <td></td>
-    <td>inherit</td>
-    <td>inherit</td>
+    <td>$component-text</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tabstrip content</div></div>
@@ -345,8 +325,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-content-border</td>
     <td></td>
-    <td>transparent</td>
-    <td>transparent</td>
+    <td>$component-border</td>
+    <td>rgba( black, .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip content</div></div>
