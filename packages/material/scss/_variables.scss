@@ -750,10 +750,18 @@ $invalid-shadow: null !default;
 
 // Buttons
 
+/// Width of border around buttons
+/// @group tabstrip
 $button-border-width: 0 !default;
+/// Border radius of buttons
+/// @group tabstrip
 $button-border-radius: $border-radius !default;
 
+/// Horizontal padding of buttons
+/// @group tabstrip
 $button-padding-x: $padding-x !default;
+/// Vertical padding of buttons
+/// @group tabstrip
 $button-padding-y: 8px !default;
 $button-line-height: (20 / 14) !default;
 
@@ -2096,53 +2104,99 @@ $tabstrip-wrapper-border-width: 0 !default;
 $tabstrip-line-height: (20 / 14) !default;
 $tabstrip-border-width: 1px !default;
 
-$tabstrip-item-padding-x: 24px !default;
-$tabstrip-item-padding-y: 14px !default;
-$tabstrip-item-border-width: 0 !default;
-$tabstrip-item-border-radius: 0 !default;
-$tabstrip-item-gap: 0 !default;
-
-$tabstrip-content-padding-x: $tabstrip-item-padding-x !default;
-$tabstrip-content-padding-y: $tabstrip-item-padding-y !default;
-$tabstrip-content-border-width: 0 !default;
-
 $tabstrip-wrapper-bg: null !default;
 $tabstrip-wrapper-text: null !default;
 $tabstrip-wrapper-border: null !default;
 
-/// Component background. Set to `transparent` to blend the component with the page.
+/// Background color of tabstrip component
 /// @group tabstrip
 $tabstrip-bg: null !default;
-/// Component text color. Set to `inherit` to blend the component with the page.
+/// Text color of tabstrip component
 /// @group tabstrip
 $tabstrip-text: inherit !default;
+/// Border color of tabstrip component
+/// @group tabstrip
 $tabstrip-border: $component-border !default;
 
+/// Horizontal padding of tabs
+/// @group tabstrip
+$tabstrip-item-padding-x: 24px !default;
+/// Vertical padding of tabs
+/// @group tabstrip
+$tabstrip-item-padding-y: 14px !default;
+/// Width of border around of tabs
+/// @group tabstrip
+$tabstrip-item-border-width: 0 !default;
+/// Border radius of tabs
+/// @group tabstrip
+$tabstrip-item-border-radius: 0 !default;
+/// Spacing between tabs
+/// @group tabstrip
+$tabstrip-item-gap: 0 !default;
+
+/// Background color of tabs
+/// @group tabstrip
 $tabstrip-item-bg: null !default;
+/// Text color of tabs
+/// @group tabstrip
 $tabstrip-item-text: inherit !default;
+/// Border color of tabs
+/// @group tabstrip
 $tabstrip-item-border: null !default;
+/// Background gradient of tabs
+/// @group tabstrip
 $tabstrip-item-gradient: null !default;
 
+/// Background color of hovered tabs
+/// @group tabstrip
 $tabstrip-item-hovered-bg: null !default;
+/// Text color of hovered tabs
+/// @group tabstrip
 $tabstrip-item-hovered-text: inherit !default;
+/// Border color of hovered tabs
+/// @group tabstrip
 $tabstrip-item-hovered-border: null !default;
+/// Background gradent of hovered tabs
+/// @group tabstrip
 $tabstrip-item-hovered-gradient: null !default;
 
+/// Background color of selected tabs
+/// @group tabstrip
 $tabstrip-item-selected-bg: null !default;
+/// Text color of selected tabs
+/// @group tabstrip
 $tabstrip-item-selected-text: inherit !default;
+/// Border color of selected tabs
+/// @group tabstrip
 $tabstrip-item-selected-border: null !default;
+/// Background gradient of selected tabs
+/// @group tabstrip
 $tabstrip-item-selected-gradient: null !default;
 
 $tabstrip-item-focused-shadow: $list-item-focused-shadow !default;
 
-$tabstrip-content-bg: transparent !default;
-$tabstrip-content-text: inherit !default;
-$tabstrip-content-border: transparent !default;
-
 $tabstrip-indicator-size: 2px !default;
-/// Active tab indicator color. Set to `currentColor` to use the text color
-/// @group tabstrip
 $tabstrip-indicator-color: $primary !default;
+
+/// Horizontal padding of tabstrip content
+/// @group tabstrip
+$tabstrip-content-padding-x: $tabstrip-item-padding-x !default;
+/// Vertical padding of tabstrip content
+/// @group tabstrip
+$tabstrip-content-padding-y: $tabstrip-item-padding-y !default;
+/// Width of border around tabstrip content
+/// @group tabstrip
+$tabstrip-content-border-width: 0 !default;
+
+/// Background color of tabstrip content
+/// @group tabstrip
+$tabstrip-content-bg: transparent !default;
+/// Text color of tabstrip content
+/// @group tabstrip
+$tabstrip-content-text: inherit !default;
+/// Border color of tabstrip content
+/// @group tabstrip
+$tabstrip-content-border: transparent !default;
 
 
 // Treeview
