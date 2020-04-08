@@ -79,10 +79,6 @@
         &::-ms-clear { display: none; }
     }
 
-    .k-textbox:focus {
-        @include box-shadow( $input-focused-shadow );
-    }
-
     .k-space-left .k-icon {
         left: 3px;
     }

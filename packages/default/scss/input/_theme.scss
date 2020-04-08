@@ -22,6 +22,8 @@
                 $color: $input-focused-text,
                 $border: $input-focused-border
             );
+
+            @include box-shadow( $input-focused-shadow );
         }
 
         // Invalid
@@ -30,6 +32,12 @@
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
             border-color: $invalid-border;
+
+            &:focus,
+            &.k-state-focus,
+            &.k-state-focused {
+                @include box-shadow($invalid-shadow);
+            }
         }
 
         // Selection

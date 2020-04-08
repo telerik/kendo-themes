@@ -44,6 +44,7 @@
 
 
             // Hovered state
+            &:hover,
             &.k-state-hover {
                 @include fill(
                     $numeric-hovered-text,
@@ -77,6 +78,11 @@
             &.k-invalid:hover,
             &.k-state-invalid {
                 border-color: $invalid-border;
+
+                &:focus,
+                &.k-state-focused {
+                    @include box-shadow($invalid-shadow);
+                }
             }
         }
 
@@ -86,6 +92,10 @@
         &.ng-invalid.ng-dirty {
             .k-numeric-wrap {
                 border-color: $invalid-border;
+
+                &.k-state-focused {
+                    @include box-shadow($invalid-shadow);
+                }
             }
         }
     }
