@@ -18,12 +18,15 @@
             @include fill ( $color: lighten($body-text, 33%) );
         }
 
-        .k-alert-error,
-        .k-form-error,
-        .k-text-error,
-        .k-form-field-error .k-label {
+        .k-alert-error {
             @include fill ( $color: $error );
         }
+    }
+
+    .k-form-error,
+    .k-text-error,
+    .k-form-field-error .k-label {
+        @include fill ( $color: $error );
     }
 
 }
