@@ -13,17 +13,11 @@
 
         .k-label {
             display: block;
+            margin-bottom: $form-label-margin-bottom;
         }
-        .k-label-optional {
-            margin-left: $form-label-optional-margin-x;
-            font-size: $form-label-optional-font-size;
-            font-style: $form-label-optional-font-style;
-        }
-        .k-label-empty {
-            &::before {
-                content: "";
-                display: inline-block;
-            }
+        .k-checkbox-label,
+        .k-radio-label {
+            display: inline-flex;
         }
 
         .k-form-fieldset {
@@ -64,24 +58,8 @@
         }
 
         .k-form-field-disabled {
-            @include disabled( $disabled-styling );
-        }
-
-        .k-radio-list {
-            margin: $form-radio-list-margin;
-            padding: $form-radio-list-padding;
-            list-style: none;
-        }
-
-        .k-list-horizontal {
-            .k-radio-item,
-            .k-checkbox-item {
-                display: inline-block;
-                margin-right: $form-radio-list-horizontal-item-margin-x;
-
-                &:last-child {
-                    margin-right: 0;
-                }
+            .k-label {
+                @include disabled( $disabled-styling );
             }
         }
 
@@ -152,7 +130,8 @@
             display: flex;
         }
 
-        .k-label {
+        .k-label:not(.k-checkbox-label),
+        .k-label:not(.k-radio-label) {
             margin-right: $horizontal-form-label-margin-x;
             padding-top: $horizontal-form-label-padding-top;
             width: $horizontal-form-label-width;
@@ -180,19 +159,6 @@
     .k-form {
         [dir="rtl"],
         .k-rtl & {
-
-            .k-list-horizontal {
-                .k-radio-item,
-                .k-checkbox-item {
-                    margin-right: 0;
-                    margin-left: $form-radio-list-horizontal-item-margin-x;
-
-                    &:last-child {
-                        margin-left: 0;
-                    }
-                }
-            }
-
             .k-form-buttons,
             &.k-form-buttons {
                 > * {

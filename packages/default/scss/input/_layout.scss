@@ -203,6 +203,21 @@
         }
     }
 
+
+    // Label
+    .k-label-optional {
+        margin-left: $label-optional-margin-x;
+        font-size: $label-optional-font-size;
+        font-style: $label-optional-font-style;
+    }
+
+    .k-label-empty {
+        &::before {
+            content: "";
+            display: inline-block;
+        }
+    }
+
     .k-text-disabled {
         @include disabled( $disabled-styling );
     }

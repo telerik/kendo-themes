@@ -671,10 +671,6 @@ $form-line-height-em: $form-line-height * 1em !default;
 $form-line-height-sm: $line-height-sm !default;
 $form-line-height-lg: $line-height-lg !default;
 
-$form-label-optional-margin-x: 10px !default;
-$form-label-optional-font-size: 12px !default;
-$form-label-optional-font-style: italic !default;
-
 $form-fieldset-margin: 2rem 0 0 !default;
 $form-fieldset-padding: 0 !default;
 
@@ -687,9 +683,7 @@ $form-legend-width: 100% !default;
 $form-legend-font-size: 14px !default;
 $form-legend-text-transform: uppercase !default;
 
-$form-radio-list-margin: 0 !default;
-$form-radio-list-padding: 0 !default;
-$form-radio-list-horizontal-item-margin-x: 10px !default;
+$form-label-margin-bottom: 0 !default;
 
 $form-button-margin-x: 8px !default;
 
@@ -705,6 +699,12 @@ $horizontal-form-label-width: 25% !default;
 $inline-form-element-width: 25% !default;
 
 $forms-invalid-color: $error !default;
+
+
+// Label
+$label-optional-margin-x: 6px !default;
+$label-optional-font-size: 12px !default;
+$label-optional-font-style: italic !default;
 
 
 // Fieldset
@@ -926,6 +926,7 @@ $checkbox-line-height: $checkbox-size + $checkbox-border-width !default;
 $checkbox-indeterminate-style: square !default;
 $checkbox-dash-height: $checkbox-size / 10 !default;
 $checkbox-dash-width: $checkbox-size - ( $checkbox-border-width * 4 ) !default;
+$checkbox-label-margin-x: 8px;
 
 $checkbox-bg: $input-bg !default;
 $checkbox-text: $input-text !default;
@@ -953,6 +954,11 @@ $checkbox-invalid-bg: null !default;
 $checkbox-invalid-text: null !default;
 $checkbox-invalid-border: $invalid-border !default;
 
+$checkbox-list-margin: 0 !default;
+$checkbox-list-padding: 0 !default;
+$checkbox-list-item-margin-top: 16px !default;
+$checkbox-list-horizontal-item-margin-x: 32px !default;
+
 
 // Radio Buttons
 $radio-icon-size: 12px !default;
@@ -960,6 +966,7 @@ $radio-size: $icon-size !default;
 $radio-radius: 50% !default;
 $radio-border-width: 1px !default;
 $radio-line-height: $radio-size + $radio-border-width !default;
+$radio-label-margin-x: 8px;
 
 $radio-bg: $checkbox-bg !default;
 $radio-text: $checkbox-text !default;
@@ -983,6 +990,11 @@ $radio-disabled-border: null !default;
 $radio-disabled-checked-bg: null !default;
 $radio-disabled-checked-text: null !default;
 $radio-disabled-checked-border: null !default;
+
+$radio-list-margin: 0 !default;
+$radio-list-padding: 0 !default;
+$radio-list-item-margin-top: 16px !default;
+$radio-list-horizontal-item-margin-x: 32px !default;
 
 
 // Picker
