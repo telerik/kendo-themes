@@ -1,17 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/input/_theme.scss";
-
-
-@include exports("input/theme/form-styles/bootstrap") {
-    // TODO: remove once we have forms
-
-    fieldset {
-        border-width: 0;
-        margin: 0;
-        padding: 0;
-    }
-
-    fieldset legend {
-        @include fill ( $color: $header-text );
-        font-size: $fieldset-font-size;
-    }
-}
