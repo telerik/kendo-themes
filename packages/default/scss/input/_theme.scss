@@ -55,18 +55,3 @@
     }
 
 }
-
-
-
-
-@include exports("input/theme/form-styles") {
-    // TODO: remove once we have forms
-
-    fieldset {
-        @include fill ( $border: $input-border );
-    }
-
-    fieldset legend {
-        @include fill ( $color: $header-text );
-    }
-}
