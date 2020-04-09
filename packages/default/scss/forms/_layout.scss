@@ -63,35 +63,6 @@
             }
         }
 
-        .k-form-buttons {
-            display: flex;
-
-            > * {
-                margin-right: $form-button-margin-x;
-
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-        }
-
-        .k-form-hint,
-        .k-form-error {
-            display: flex;
-            font-size: $form-hint-font-size;
-            font-style: $form-hint-font-style;
-        }
-
-        .k-text-start,
-        .k-buttons-start {
-            justify-content: flex-start;
-        }
-
-        .k-text-end,
-        .k-buttons-end {
-            justify-content: flex-end;
-        }
-
         .k-alert-error {
             font-size: $font-size-sm;
             margin-top: $padding-y * 2;
@@ -122,6 +93,37 @@
             display: flex;
             width: 100%;
         }
+    }
+
+    // Form Buttons Container
+    .k-form-buttons {
+        display: flex;
+
+        > * {
+            margin-right: $form-button-margin-x;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    // Form Hint/Error Messages
+    .k-form-hint,
+    .k-form-error {
+        display: flex;
+        font-size: $form-hint-font-size;
+        font-style: $form-hint-font-style;
+    }
+
+    .k-text-start,
+    .k-buttons-start {
+        justify-content: flex-start;
+    }
+
+    .k-text-end,
+    .k-buttons-end {
+        justify-content: flex-end;
     }
 
     // Horizontal Form
