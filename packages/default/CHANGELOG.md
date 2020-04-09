@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.17.0"></a>
+# [4.17.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.16.0...@progress/kendo-theme-default@4.17.0) (2020-04-09)
+
+
+### Bug Fixes
+
+* **editor:** set size to view source textbox in editor dialog ([74f73c7](https://github.com/telerik/kendo-themes/commit/74f73c7))
+* **forms:** various fixes and improvements ([b847a02](https://github.com/telerik/kendo-themes/commit/b847a02))
+* **inputs:** invalid+focus states for inputs, maskedtextbox and numerictextbox ([6e7e507](https://github.com/telerik/kendo-themes/commit/6e7e507))
+* inconsistent invalid states in date inputs ([65912ae](https://github.com/telerik/kendo-themes/commit/65912ae))
+* **progressbar:** progress is broken when a custom width/height is set ([ae46b9e](https://github.com/telerik/kendo-themes/commit/ae46b9e))
+* **switch:** fix layout misalignment in IE11 ([18bca8b](https://github.com/telerik/kendo-themes/commit/18bca8b))
+* unify error statesfor input components ([8e9b2de](https://github.com/telerik/kendo-themes/commit/8e9b2de))
+
+
+### Features
+
+* add Cursor styles ([24bcdce](https://github.com/telerik/kendo-themes/commit/24bcdce))
+* **forms:** implement forms styling ([0fc957c](https://github.com/telerik/kendo-themes/commit/0fc957c))
+* **stepper:** add stepper styles ([359c37c](https://github.com/telerik/kendo-themes/commit/359c37c))
+
+
+
+
 <a name="4.16.0"></a>
 # [4.16.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.15.0...@progress/kendo-theme-default@4.16.0) (2020-04-02)
 

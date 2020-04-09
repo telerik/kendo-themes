@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.14.0"></a>
+# [3.14.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.13.0...@progress/kendo-theme-material@3.14.0) (2020-04-09)
+
+
+### Bug Fixes
+
+* **forms:** various fixes and improvements ([b847a02](https://github.com/telerik/kendo-themes/commit/b847a02))
+* **progressbar:** progress is broken when a custom width/height is set ([ae46b9e](https://github.com/telerik/kendo-themes/commit/ae46b9e))
+* unify error statesfor input components ([8e9b2de](https://github.com/telerik/kendo-themes/commit/8e9b2de))
+
+
+### Features
+
+* add Cursor styles ([24bcdce](https://github.com/telerik/kendo-themes/commit/24bcdce))
+* **forms:** implement forms styling ([0fc957c](https://github.com/telerik/kendo-themes/commit/0fc957c))
+* **stepper:** add stepper styles ([359c37c](https://github.com/telerik/kendo-themes/commit/359c37c))
+
+
+
+
 <a name="3.13.0"></a>
 # [3.13.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.12.0...@progress/kendo-theme-material@3.13.0) (2020-04-02)
 

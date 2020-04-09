@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.1"></a>
+## [0.6.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.6.0...@progress/kendo-theme-tasks@0.6.1) (2020-04-09)
+
+
+### Bug Fixes
+
+* **theme-tasks:** update [@joneff](https://github.com/joneff)/baka to mitigate caching issue when flattening files for dist ([f1f216f](https://github.com/telerik/kendo-themes/commit/f1f216f))
+
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.5.2...@progress/kendo-theme-tasks@0.6.0) (2020-04-02)
 
