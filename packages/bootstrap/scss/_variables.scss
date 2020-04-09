@@ -1740,16 +1740,20 @@ $upload-bg: $component-bg !default;
 $upload-text: $component-text !default;
 $upload-border: $component-border !default;
 
-$upload-dropzone-padding-x: $toolbar-padding-x !default;
-$upload-dropzone-padding-y: $toolbar-padding-y !default;
+$upload-dropzone-padding-x: map-get( $spacing, 2 ) !default;
+$upload-dropzone-padding-y: map-get( $spacing, 2 ) !default;
 $upload-dropzone-spacing: ($upload-dropzone-padding-x * 2) !default;
 $upload-dropzone-bg: $toolbar-bg !default;
 $upload-dropzone-text: $toolbar-text !default;
 $upload-dropzone-border: $toolbar-border !default;
+$upload-dropzone-hover-bg: try-shade( $upload-dropzone-bg, .2) !default;
 
 $upload-item-padding-x: $spacer !default;
 $upload-item-padding-y: $spacer !default;
 
+$upload-multiple-items-spacing: 12px !default;
+
+$upload-validation-font-size: 11px !default;
 $upload-icon-spacing: $upload-dropzone-padding-x !default;
 
 $upload-item-image-width: 24px !default;

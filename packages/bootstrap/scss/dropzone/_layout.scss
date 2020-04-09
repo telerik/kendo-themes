@@ -3,7 +3,7 @@
 @include exports( "dropzone/layout/bootstrap" ) {
     .k-dropzone-inner {
         >.k-icon {
-            margin-bottom: $upload-dropzone-padding-y * 4;
+            margin-bottom: $upload-dropzone-padding-y * 3;
         }
 
         .k-dropzone-hint {
