@@ -928,6 +928,9 @@ $input-focused-shadow: null !default;
 
 $input-disabled-bg: rgb(189, 189, 189) !default;
 
+$input-placeholder-text: rgba( $input-text, .54 ) !default;
+$input-placeholder-opacity: 1 !default;
+
 
 // Textboxes
 $textbox-line-height: 1.375em !default;
@@ -951,7 +954,7 @@ $floating-label-height: $textbox-line-height * $floating-label-scale !default;
 $floating-label-transition: .4s cubic-bezier(.25, .8, .25, 1) !default;
 
 $floating-label-bg: null !default;
-$floating-label-text: rgba(0, 0, 0, .38) !default;
+$floating-label-text: rgba($input-text, .6) !default;
 
 $floating-label-focused-bg: $base-bg !default;
 $floating-label-focused-text: $primary !default;
@@ -1629,6 +1632,7 @@ $datetime-select-focused-shadow: null !default;
 $menu-padding-x: 0 !default;
 $menu-padding-y: 0 !default;
 $menu-border-width: 0 !default;
+$menu-font-family: $font-family !default;
 $menu-font-size: $font-size !default;
 $menu-line-height: $line-height !default;
 
@@ -2828,6 +2832,11 @@ $chat-toolbar-box-button-hover-bg: none !default;
 $chat-toolbar-box-scroll-button-shadow: 0 0 20px 5px $chat-bg !default;
 
 // Media player
+$mediaplayer-border-width: 1px !default;
+$mediaplayer-font-family: $font-family !default;
+$mediaplayer-font-size: $font-size !default;
+$mediaplayer-line-height: $line-height !default;
+
 $mediaplayer-bg: $component-bg !default;
 $mediaplayer-text: $component-text !default;
 $mediaplayer-border: $component-border !default;
