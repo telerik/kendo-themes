@@ -888,6 +888,9 @@ $input-focused-bg: $input-bg !default;
 $input-focused-border: $input-hovered-border !default;
 $input-focused-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
+$input-placeholder-text: rgba( $input-text, .5) !default;
+$input-placeholder-opacity: 1 !default;
+
 
 // Textboxes
 $textbox-line-height: $form-line-height-em !default;
@@ -2785,6 +2788,11 @@ $chat-toolbar-box-scroll-button-shadow: 0 0 20px 5px $chat-bg !default;
 
 
 // Media player
+$mediaplayer-border-width: 1px !default;
+$mediaplayer-font-family: $font-family !default;
+$mediaplayer-font-size: $font-size !default;
+$mediaplayer-line-height: $line-height !default;
+
 $mediaplayer-bg: $component-bg !default;
 $mediaplayer-text: $component-text !default;
 $mediaplayer-border: $component-border !default;
