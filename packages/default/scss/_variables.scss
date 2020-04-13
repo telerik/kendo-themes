@@ -2787,6 +2787,11 @@ $chat-toolbar-box-scroll-button-shadow: 0 0 20px 5px $chat-bg !default;
 
 
 // Media player
+$mediaplayer-border-width: 1px !default;
+$mediaplayer-font-family: $font-family !default;
+$mediaplayer-font-size: $font-size !default;
+$mediaplayer-line-height: $line-height !default;
+
 $mediaplayer-bg: $component-bg !default;
 $mediaplayer-text: $component-text !default;
 $mediaplayer-border: $component-border !default;

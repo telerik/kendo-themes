@@ -2,6 +2,7 @@
 
     // Theme
     .k-mediaplayer {
+        @extend .k-text-selection;
         @include fill( $mediaplayer-text, $mediaplayer-bg, $mediaplayer-border );
     }
 
