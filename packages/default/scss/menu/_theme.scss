@@ -7,7 +7,6 @@
             $menu-border,
             $menu-gradient
         );
-        @include use-background-clip();
 
         > .k-item {
             @include fill(
