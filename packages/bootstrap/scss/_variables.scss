@@ -884,6 +884,9 @@ $input-focused-bg: $input-bg !default;
 $input-focused-border: try-lighten( $primary, 25 ) !default;
 $input-focused-shadow: 0 0 0 .2rem rgba($input-focused-border, .5) !default;
 
+$input-placeholder-text: #6c757d !default;
+$input-placeholder-opacity: 1 !default;
+
 
 // Textboxes
 $textbox-line-height: $form-line-height-em !default;

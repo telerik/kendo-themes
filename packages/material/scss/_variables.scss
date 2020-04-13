@@ -928,6 +928,9 @@ $input-focused-shadow: null !default;
 
 $input-disabled-bg: rgb(189, 189, 189) !default;
 
+$input-placeholder-text: rgba( $input-text, .54 ) !default;
+$input-placeholder-opacity: 1 !default;
+
 
 // Textboxes
 $textbox-line-height: 1.375em !default;
@@ -951,7 +954,7 @@ $floating-label-height: $textbox-line-height * $floating-label-scale !default;
 $floating-label-transition: .4s cubic-bezier(.25, .8, .25, 1) !default;
 
 $floating-label-bg: null !default;
-$floating-label-text: rgba(0, 0, 0, .38) !default;
+$floating-label-text: rgba($input-text, .6) !default;
 
 $floating-label-focused-bg: $base-bg !default;
 $floating-label-focused-text: $primary !default;
