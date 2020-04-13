@@ -1300,6 +1300,11 @@ $listbox-button-margin: 8px !default;
 $listbox-width: 12.4em !default;
 $listbox-default-height: 200px !default;
 
+$listbox-border-width: 1px !default;
+$listbox-font-family: $font-family !default;
+$listbox-font-size: $font-size !default;
+$listbox-line-height: $line-height !default;
+
 $listbox-bg: $component-bg !default;
 $listbox-text: $component-text !default;
 $listbox-border: $component-border !default;
