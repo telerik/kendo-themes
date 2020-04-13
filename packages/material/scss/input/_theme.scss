@@ -3,8 +3,9 @@
     .k-textbox,
     .k-textarea {
         @include fill(
-            $bg: transparent,
-            $border: $input-border
+            $input-text,
+            transparent,
+            $input-border
         );
         border-width: 0 0 $input-border-width;
         border-radius: 0;
