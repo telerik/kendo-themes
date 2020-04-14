@@ -2,6 +2,7 @@
 
     // Numeric
     .k-numerictextbox {
+        @extend .k-text-selection;
 
         // Normal state
         .k-numeric-wrap {
@@ -10,8 +11,6 @@
                 $numeric-bg,
                 $numeric-border
             );
-
-            @include use-background-clip();
 
             .k-select {
                 @include fill(
