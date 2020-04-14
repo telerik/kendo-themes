@@ -57,11 +57,12 @@
                 flex-direction: row;
                 align-content: center;
                 align-items: center;
+            }
 
-                &[data-type="remove"] {
-                    padding: $tabstrip-item-padding-y;
-                    flex: none;
-                }
+            .k-remove-tab-link,
+            .k-link[data-type="remove"] {
+                padding: $tabstrip-item-padding-y;
+                flex: none;
             }
         }
         @at-root .k-ie11 .k-tabstrip-items {
