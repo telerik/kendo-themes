@@ -10,35 +10,35 @@
 </head>
 <body>
     <div id="test-area">
-        <div id="grid" data-role="grid" class="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style="height: 350px;">
+        <div id="grid" class="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style="height: 350px;">
             <div class="k-grid-header">
                 <div class="k-grid-header-wrap k-auto-scrollable">
-                    <table role="grid">
+                    <table>
                         <colgroup>
                             <col style="width:225px">
                             <col style="width:500px">
                             <col style="width:255px">
                             <col>
                         </colgroup>
-                        <thead role="rowgroup">
-                            <tr role="row">
-                                <th scope="col" role="columnheader" class="k-header">OrderID</th>
-                                <th scope="col" role="columnheader" class="k-header">Ship Name</th>
-                                <th scope="col" role="columnheader" class="k-header">Freight</th>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="k-header">OrderID</th>
+                                <th scope="col" class="k-header">Ship Name</th>
+                                <th scope="col" class="k-header">Freight</th>
                             </tr>
                         </thead>
                     </table>
                 </div>
             </div>
             <div class="k-grid-content k-auto-scrollable" style="height: 280px;">
-                <table role="grid" style="height: auto;">
+                <table style="height: auto;">
                     <colgroup>
                         <col style="width:225px">
                         <col style="width:500px">
                         <col style="width:255px">
                         <col>
                     </colgroup>
-                    <tbody role="rowgroup"></tbody>
+                    <tbody></tbody>
                 </table>
                 <div class="k-grid-norecords">
                     <div class="k-grid-norecords-template">No records available.</div>
@@ -48,9 +48,9 @@
         </div>
         <h4>Angular Grid</h4>
         <kendo-grid ng-reflect-data="" dir="ltr" class="k-widget k-grid">
-            <div class="k-grid-aria-root" role="grid" aria-rowcount="1" aria-colcount="4">
-                <div class="k-grid-header" role="presentation" style="padding: 0px 16px 0px 0px;">
-                    <colgroup kendogridcolgroup="" role="presentation">
+            <div class="k-grid-aria-root">
+                <div class="k-grid-header" style="padding: 0px 16px 0px 0px;">
+                    <colgroup kendogridcolgroup="">
                         <col style="width: 140px;">
                         <col style="width: 120px;">
                         <col style="width: 100px;">
