@@ -1,7 +1,14 @@
 @include exports("notification/theme") {
 
     // Theme
-    .k-notification {}
+    .k-notification {
+        @extend .k-text-selection;
+        @include fill(
+            $notification-text,
+            $notification-bg,
+            $notification-border
+        );
+    }
     .k-notification-wrap {
         > .k-i-close {
             color: inherit;
