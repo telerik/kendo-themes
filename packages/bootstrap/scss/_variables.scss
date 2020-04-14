@@ -1846,12 +1846,16 @@ $notification-border-radius: $alert-border-radius !default;
 
 $notification-shadow: $popup-shadow !default;
 
+$notification-font-family: $font-family !default;
 $notification-font-size: $font-size-sm !default;
 $notification-line-height: $line-height !default;
 
 $notification-icon-offset: 3px !default;
 $notification-icon-spacing: $icon-spacing !default;
 
+$notification-bg: $component-bg !default;
+$notification-text: $component-text !default;
+$notification-border: $component-border !default;
 $notification-info-bg: tint($info, 10) !default;
 $notification-info-text: shade($info, 6) !default;
 $notification-info-border: tint($info, 9) !default;
