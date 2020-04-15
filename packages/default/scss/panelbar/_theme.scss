@@ -1,17 +1,16 @@
 @include exports("panelbar/theme") {
 
     .k-panelbar {
+        @extend .k-text-selection;
         @include fill(
             $panelbar-text,
             $panelbar-bg,
             $panelbar-border
         );
-        @include use-background-clip();
 
 
         // Root
         > .k-item {
-            @include use-background-clip();
 
             > .k-link {
                 @include fill(
