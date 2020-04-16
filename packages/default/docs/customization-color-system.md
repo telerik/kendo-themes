@@ -76,7 +76,7 @@ The following table lists the available variables for customization.
     <td>$primary</td>
     <td>Color</td>
     <td>$accent</td>
-    <td><span class="color-preview" style="background-color: $accent"></span>#ff6358</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.<br />Used for primary buttons and for elements of primary importance across the theme.</div></div>
