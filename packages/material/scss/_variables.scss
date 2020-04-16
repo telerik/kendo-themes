@@ -2923,6 +2923,11 @@ $timeline-event-min-height-calc: calc(2 * (#{$timeline-track-event-offset} - #{$
 
 
 // PDF viewer
+$pdf-viewer-border-width: 1px !default;
+$pdf-viewer-font-family: $font-family !default;
+$pdf-viewer-font-size: $font-size !default;
+$pdf-viewer-line-height: $line-height !default;
+
 $pdf-viewer-bg: null !default;
 $pdf-viewer-text: null !default;
 $pdf-viewer-border: null !default;
