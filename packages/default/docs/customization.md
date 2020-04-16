@@ -120,7 +120,7 @@ The following table lists the available variables for customizing the Default th
     <td>$hovered-text</td>
     <td></td>
     <td>$base-text</td>
-    <td><span class="color-preview" style="background-color: $base-text"></span>#656565</td>
+    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered items.</div></div>
@@ -150,7 +150,7 @@ The following table lists the available variables for customizing the Default th
     <td>$selected-bg</td>
     <td></td>
     <td>$primary</td>
-    <td><span class="color-preview" style="background-color: $primary"></span>#ff6358</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of selected items.</div></div>
@@ -230,7 +230,7 @@ The following table lists the available variables for customizing the Default th
     <td>$button-text</td>
     <td></td>
     <td>$base-text</td>
-    <td><span class="color-preview" style="background-color: $base-text"></span>#656565</td>
+    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the buttons.</div></div>
@@ -240,7 +240,7 @@ The following table lists the available variables for customizing the Default th
     <td>$button-bg</td>
     <td></td>
     <td>$base-bg</td>
-    <td><span class="color-preview" style="background-color: $base-bg"></span>#f6f6f6</td>
+    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the buttons.</div></div>
@@ -280,7 +280,7 @@ The following table lists the available variables for customizing the Default th
     <td>$button-hovered-bg</td>
     <td></td>
     <td>$hovered-bg</td>
-    <td><span class="color-preview" style="background-color: $hovered-bg"></span>#ededed</td>
+    <td><span class="color-preview" style="background-color: #ededed"></span>#ededed</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered buttons.</div></div>
@@ -310,7 +310,7 @@ The following table lists the available variables for customizing the Default th
     <td>$button-pressed-text</td>
     <td></td>
     <td>$button-text</td>
-    <td><span class="color-preview" style="background-color: $button-text"></span>#656565</td>
+    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of pressed buttons.</div></div>
@@ -320,7 +320,7 @@ The following table lists the available variables for customizing the Default th
     <td>$button-pressed-bg</td>
     <td></td>
     <td>$button-bg</td>
-    <td><span class="color-preview" style="background-color: $button-bg"></span>#f6f6f6</td>
+    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of pressed buttons.</div></div>
@@ -500,7 +500,7 @@ The following table lists the available variables for customizing the Default th
     <td>$primary</td>
     <td>Color</td>
     <td>$accent</td>
-    <td><span class="color-preview" style="background-color: $accent"></span>#ff6358</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.<br />Used for primary buttons and for elements of primary importance across the theme.</div></div>
