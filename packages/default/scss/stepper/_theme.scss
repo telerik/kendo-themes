@@ -25,7 +25,8 @@
 
 
             // Disabled
-            &.k-step-disabled {
+            &.k-step-disabled,
+            &:disabled {
                 .k-step-indicator {
                     @include fill(
                         $stepper-indicator-disabled-text,
@@ -80,7 +81,8 @@
 
 
             // Disabled
-            &.k-step-disabled {
+            &.k-step-disabled,
+            &:disabled {
                 .k-step-indicator {
                     @include fill(
                         $stepper-indicator-done-disabled-text,
@@ -118,7 +120,8 @@
 
 
             // Disabled
-            &.k-step-disabled {
+            &.k-step-disabled,
+            &:disabled {
                 .k-step-indicator {
                     @include fill(
                         $stepper-indicator-current-disabled-text,
@@ -145,7 +148,7 @@
 
         // Labels only
         .k-step-focus .k-step-label:only-child,
-        .k-step-label:only-child:focus {
+        .k-step-link:focus .k-step-label:only-child {
             @include box-shadow( inset 0 0 0 $stepper-indicator-focus-size $component-border );
         }
 
