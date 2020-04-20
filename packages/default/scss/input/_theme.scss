@@ -1,28 +1,41 @@
 @include exports("input/theme") {
 
+    // Textbox, Textarea
     .k-textbox,
-    .k-textarea,
-    .k-input.k-textbox {
+    .k-textarea {
         @include fill(
             $input-text,
             $input-bg,
             $input-border
         );
 
+        // Selection
+        &::selection {
+            @include fill (
+                $color: $primary-contrast,
+                $bg: $primary
+            );
+        }
+
         // Hovered
         &:hover,
         &.k-state-hover {
-            @include fill ( $border: $input-hovered-border );
+            @include fill(
+                $input-hovered-text,
+                $input-hovered-bg,
+                $input-hovered-border
+            );
         }
 
         // Focused
         &:focus,
-        &.k-state-focus {
+        &.k-state-focus,
+        &.k-state-focused {
             @include fill (
-                $color: $input-focused-text,
-                $border: $input-focused-border
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
             );
-
             @include box-shadow( $input-focused-shadow );
         }
 
@@ -39,61 +52,6 @@
                 @include box-shadow($invalid-shadow);
             }
         }
-
-        // Selection
-        &::selection {
-            @include fill (
-                $color: $primary-contrast,
-                $bg: $primary
-            );
-        }
     }
 
-    .k-textbox,
-    .k-input,
-    .k-textarea {
-        &::selection {
-            @include fill (
-                $color: $primary-contrast,
-                $bg: $primary
-            );
-        }
-
-        .k-state-disabled & {
-            &::selection {
-                @include fill (
-                    $color: $input-text,
-                    $bg: transparent
-                );
-            }
-        }
-    }
-
-    .k-textbox,
-    .k-input,
-    .k-input.k-textbox,
-    .k-textarea {
-        &::placeholder {
-            @include fill ( $color: rgba($input-text, .5) );
-        }
-    }
-}
-
-
-
-
-@include exports("input/theme/form-styles") {
-
-    fieldset {
-        @include fill ( $border: $input-border );
-    }
-
-    fieldset legend {
-        @include fill ( $color: $header-text );
-    }
-
-    .k-required,
-    .k-required.k-field-info {
-        @include fill ( $color: $primary );
-    }
 }

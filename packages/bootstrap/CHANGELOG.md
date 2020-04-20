@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.15.0"></a>
+# [4.15.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.14.0...@progress/kendo-theme-bootstrap@4.15.0) (2020-04-09)
+
+
+### Bug Fixes
+
+* **forms:** various fixes and improvements ([b847a02](https://github.com/telerik/kendo-themes/commit/b847a02))
+* **inputs:** invalid+focus states for inputs, maskedtextbox and numerictextbox ([6e7e507](https://github.com/telerik/kendo-themes/commit/6e7e507))
+* unify error statesfor input components ([8e9b2de](https://github.com/telerik/kendo-themes/commit/8e9b2de))
+
+
+### Features
+
+* add Cursor styles ([24bcdce](https://github.com/telerik/kendo-themes/commit/24bcdce))
+* **forms:** implement forms styling ([0fc957c](https://github.com/telerik/kendo-themes/commit/0fc957c))
+* **stepper:** add stepper styles ([359c37c](https://github.com/telerik/kendo-themes/commit/359c37c))
+
+
+
+
 <a name="4.14.0"></a>
 # [4.14.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.13.0...@progress/kendo-theme-bootstrap@4.14.0) (2020-04-02)
 

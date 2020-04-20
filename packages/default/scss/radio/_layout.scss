@@ -87,23 +87,61 @@
         }
     }
 
-    .k-radio + .k-radio-label {
-        margin-left: $icon-spacing;
+    .k-radio + .k-radio-label,
+    .k-radio-label + .k-radio {
+        margin-left: $radio-label-margin-x;
     }
     .k-radio-label > .k-radio {
-        margin-right: $icon-spacing;
+        margin-right: $radio-label-margin-x;
+    }
+
+    .k-radio-list {
+        margin: $radio-list-margin;
+        padding: $radio-list-padding;
+        list-style: none;
+
+        .k-radio-item {
+            margin-top: $radio-list-item-margin-top;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .k-list-horizontal {
+        .k-radio-item {
+            display: inline-block;
+            margin: 0 $radio-list-horizontal-item-margin-x 0 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 
     // RTL
     .k-rtl,
     [dir="rtl"] {
-        .k-radio + .k-radio-label {
+        .k-radio + .k-radio-label,
+        .k-radio-label + .k-radio {
             margin-left: 0;
-            margin-right: $icon-spacing;
+            margin-right: $radio-label-margin-x;
         }
         .k-radio-label > .k-radio {
             margin-right: 0;
-            margin-left: $icon-spacing;
+            margin-left: $radio-label-margin-x;
+        }
+
+        .k-list-horizontal {
+            .k-radio-item {
+                margin-right: 0;
+                margin-left: $radio-list-horizontal-item-margin-x;
+
+                &:last-child {
+                    margin-left: 0;
+                }
+            }
         }
     }
 }

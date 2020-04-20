@@ -1,6 +1,6 @@
 @import "~@progress/kendo-theme-default/scss/menu/_theme.scss";
 
-@include exports("multiselect/theme/material") {
+@include exports("menu/theme/material") {
 
     .k-menu:not(.k-context-menu) {
 
@@ -14,7 +14,7 @@
                     $menu-item-hover-text,
                     $menu-item-hover-bg,
                     $menu-item-hover-border,
-                    $menu-item-hover-gradient,
+                    $menu-item-hover-gradient
                 );
             }
 

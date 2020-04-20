@@ -1,6 +1,7 @@
 @include exports("panelbar/theme") {
 
     .k-panelbar {
+        @extend .k-text-selection;
         @include fill(
             $panelbar-text,
             $panelbar-bg,

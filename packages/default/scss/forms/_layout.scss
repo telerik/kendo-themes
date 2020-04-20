@@ -13,17 +13,11 @@
 
         .k-label {
             display: block;
+            margin-bottom: $form-label-margin-bottom;
         }
-        .k-label-optional {
-            margin-left: $form-label-optional-margin-x;
-            font-size: $form-label-optional-font-size;
-            font-style: $form-label-optional-font-style;
-        }
-        .k-label-empty {
-            &::before {
-                content: "";
-                display: inline-block;
-            }
+        .k-checkbox-label,
+        .k-radio-label {
+            display: inline-flex;
         }
 
         .k-form-fieldset {
@@ -64,54 +58,9 @@
         }
 
         .k-form-field-disabled {
-            @include disabled( $disabled-styling );
-        }
-
-        .k-radio-list {
-            margin: $form-radio-list-margin;
-            padding: $form-radio-list-padding;
-            list-style: none;
-        }
-
-        .k-list-horizontal {
-            .k-radio-item,
-            .k-checkbox-item {
-                display: inline-block;
-                margin-right: $form-radio-list-horizontal-item-margin-x;
-
-                &:last-child {
-                    margin-right: 0;
-                }
+            .k-label {
+                @include disabled( $disabled-styling );
             }
-        }
-
-        .k-form-buttons {
-            display: flex;
-
-            > * {
-                margin-right: $form-button-margin-x;
-
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-        }
-
-        .k-form-hint,
-        .k-form-error {
-            display: flex;
-            font-size: $form-hint-font-size;
-            font-style: $form-hint-font-style;
-        }
-
-        .k-text-start,
-        .k-buttons-start {
-            justify-content: flex-start;
-        }
-
-        .k-text-end,
-        .k-buttons-end {
-            justify-content: flex-end;
         }
 
         .k-alert-error {
@@ -146,13 +95,45 @@
         }
     }
 
+    // Form Buttons Container
+    .k-form-buttons {
+        display: flex;
+
+        > * {
+            margin-right: $form-button-margin-x;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    // Form Hint/Error Messages
+    .k-form-hint,
+    .k-form-error {
+        display: flex;
+        font-size: $form-hint-font-size;
+        font-style: $form-hint-font-style;
+    }
+
+    .k-text-start,
+    .k-buttons-start {
+        justify-content: flex-start;
+    }
+
+    .k-text-end,
+    .k-buttons-end {
+        justify-content: flex-end;
+    }
+
     // Horizontal Form
     .k-form-horizontal {
         .k-form-field {
             display: flex;
         }
 
-        .k-label {
+        .k-label:not(.k-checkbox-label),
+        .k-label:not(.k-radio-label) {
             margin-right: $horizontal-form-label-margin-x;
             padding-top: $horizontal-form-label-padding-top;
             width: $horizontal-form-label-width;
@@ -180,19 +161,6 @@
     .k-form {
         [dir="rtl"],
         .k-rtl & {
-
-            .k-list-horizontal {
-                .k-radio-item,
-                .k-checkbox-item {
-                    margin-right: 0;
-                    margin-left: $form-radio-list-horizontal-item-margin-x;
-
-                    &:last-child {
-                        margin-left: 0;
-                    }
-                }
-            }
-
             .k-form-buttons,
             &.k-form-buttons {
                 > * {
@@ -366,8 +334,7 @@
     .k-edit-field {
 
         > .k-widget,
-        > .k-textbox,
-        > .k-input.k-textbox {
+        > .k-textbox {
             width: 100%;
             box-sizing: border-box;
         }
