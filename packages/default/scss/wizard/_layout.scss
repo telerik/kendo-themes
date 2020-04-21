@@ -1,0 +1,102 @@
+@include exports("wizard/layout") {
+    .k-wizard {
+        padding: $wizard-padding-y $wizard-padding-x;
+        border-width: $wizard-border-width;
+        font-size: $wizard-font-size;
+        line-height: $wizard-line-height;
+        font-family: $wizard-font-family;
+        position: relative;
+        color: inherit;
+        background: none;
+        display: flex;
+        align-items: stretch;
+        overflow: hidden;
+
+        .k-wizard-steps {
+            padding: $wizard-content-padding-x / 4;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .k-wizard-step {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+
+        .k-wizard-content {
+            overflow-y: auto;
+        }
+
+        .k-wizard-buttons {
+            margin-top: $wizard-content-padding-y;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+
+            .k-button {
+                margin-right: $wizard-buttons-margin-x;
+            }
+
+            .k-wizard-pager {
+                vertical-align: middle;
+            }
+        }
+
+        .k-wizard-buttons-right {
+            .k-button:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        .k-stepper {
+            .k-step-list-vertical {
+                .k-step {
+                    flex: 1 0 auto;
+                }
+            }
+
+            .k-step-indicator {
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    .k-wizard-horizontal {
+        flex-direction: column;
+
+        .k-wizard-steps {
+            margin-top: $wizard-content-padding-y;
+        }
+
+        .k-wizard-steps,
+        .k-wizard-content {
+            flex: 1 1 auto;
+        }
+    }
+
+    .k-wizard-vertical {
+
+        .k-wizard-steps,
+        .k-wizard-content {
+            flex: 1 0 0%;
+        }
+
+        .k-wizard-steps {
+            margin-left: $wizard-content-padding-x;
+        }
+    }
+
+    .k-wizard-left {
+        flex-direction: row-reverse;
+
+        .k-wizard-steps {
+            margin-right: $wizard-content-padding-x;
+            margin-left: 0;
+        }
+    }
+
+}

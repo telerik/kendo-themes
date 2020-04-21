@@ -1,0 +1,7 @@
+@include exports("wizard/theme") {
+    .k-wizard-steps:focus,
+    .k-wizard-steps.k-state-focused {
+        @include box-shadow($wizard-focused-shadow);
+        outline: none;
+    }
+}
