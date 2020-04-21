@@ -59,6 +59,9 @@
             position: relative;
             z-index: 1;
             overflow: visible;
+            transition-property: color, background-color, border-color;
+            transition-duration: .4s;
+            transition-timing-function: ease-in-out;
 
             &::after {
                 @include border-radius( 100% );
