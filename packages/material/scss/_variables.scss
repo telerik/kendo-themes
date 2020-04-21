@@ -1461,6 +1461,10 @@ $switch-off-handle-hovered-gradient: null !default;
 
 
 // Rating
+$rating-font-family: $font-family !default;
+$rating-font-size: $font-size !default;
+$rating-line-height: $line-height !default;
+
 $rating-container-margin-x: $padding-x-sm / 2 !default;
 
 $rating-item-padding-x: $padding-x-sm / 2 !default;

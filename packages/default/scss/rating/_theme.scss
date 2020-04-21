@@ -1,6 +1,6 @@
 @include exports("rating/theme") {
     .k-rating {
-        background-color: transparent;
+        @extend .k-text-selection;
 
         &:focus,
         &.k-state-focused {
