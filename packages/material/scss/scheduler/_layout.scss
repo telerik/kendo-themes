@@ -3,11 +3,6 @@
 @include exports("scheduler/layout/material") {
 
 
-    .k-scheduler {
-        font-family: $font-family;
-    }
-
-
     // Header and footer
     .k-scheduler-toolbar,
     .k-scheduler-footer {
