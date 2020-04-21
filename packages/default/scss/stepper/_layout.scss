@@ -162,7 +162,7 @@
 
         // Label
         .k-step-label {
-            text-align: left;
+            justify-content: flex-start;
         }
         .k-step-indicator + .k-step-label {
             margin-left: $stepper-label-margin-x;
