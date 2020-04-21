@@ -2694,6 +2694,15 @@ $gantt-border: $component-border !default;
 
 
 // Scheduler
+$scheduler-border-width: 1px !default;
+$scheduler-font-family: $font-family !default;
+$scheduler-font-size: $font-size !default;
+$scheduler-line-height: $line-height !default;
+
+$scheduler-bg: $component-bg !default;
+$scheduler-text: $component-text !default;
+$scheduler-border: $component-border !default;
+
 $scheduler-event-border-radius: $border-radius !default;
 
 $scheduler-event-bg: $selected-bg !default;
