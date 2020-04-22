@@ -59,6 +59,9 @@
             position: relative;
             z-index: 1;
             overflow: visible;
+            transition-property: color, background-color, border-color;
+            transition-duration: .4s;
+            transition-timing-function: ease-in-out;
 
             &::after {
                 @include border-radius( 100% );
@@ -162,7 +165,7 @@
 
         // Label
         .k-step-label {
-            text-align: left;
+            justify-content: flex-start;
         }
         .k-step-indicator + .k-step-label {
             margin-left: $stepper-label-margin-x;
