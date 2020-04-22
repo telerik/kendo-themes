@@ -1,6 +1,5 @@
 @include exports("gantt/theme") {
 
-    // Theme
     .k-gantt {
         @include fill(
             $gantt-text,
@@ -9,131 +8,113 @@
         );
     }
 
-
     // Header and footer
-    .k-gantt-toolbar {
-        @include fill(
-            $header-text,
-            $header-bg,
-            $header-border,
-            $header-gradient
-        );
+    .k-gantt-header {}
+    .k-gantt-footer {
+        @include box-shadow( none );
     }
-
-
-    // View switcher
-    .k-gantt-views {
-
-        li {
-            @include fill(
-                $button-text,
-                $button-bg,
-                $button-border,
-                $button-gradient
-            );
-
-            &.k-state-hover {
-                @include fill(
-                    $button-hovered-text,
-                    $button-hovered-bg,
-                    $button-hovered-border,
-                    $button-hovered-gradient
-                );
-            }
-            &.k-state-selected {
-                @include fill( $selected-text, $selected-bg, $selected-border, none );
-            }
-            &.k-state-focused,
-            .k-state-focused {
-                @include box-shadow( $list-item-focused-shadow );
-            }
-        }
-    }
+    .k-gantt-toolbar {}
 
 
     // Treelist
     .k-gantt-treelist {
-        background-color: darken( $panel-bg, 2 );
+        @include fill(
+            $gantt-treelist-text,
+            $gantt-treelist-bg,
+            $gantt-treelist-border
+        );
 
-        .k-treelist {
+        .k-treelist,
+        .k-grid-content {
             background-color: transparent;
         }
-
-        tr.k-alt {
-            background-color: darken( $panel-bg, 6 );
-        }
-
-        tr.k-state-selected,
-        td.k-state-selected {
-            color: inherit;
-            background-color: rgba($selected-bg, .25);
-        }
-
     }
 
 
     // Rows and colls
     .k-gantt-rows {}
     .k-gantt-columns {}
-    .k-gantt-columns .k-nonwork-hour {
-        background-color: rgba( $panel-text, .025 );
+
+
+    // Non work hours
+    .k-gantt .k-nonwork-hour {
+        @include fill(
+            $gantt-nonwork-text,
+            $gantt-nonwork-bg,
+            $gantt-nonwork-border
+        );
     }
 
+
+    // Task dot
     .k-task-dot {}
     .k-task-dot::before {
-        background-color: $panel-text;
+        @include fill(
+            $bg: $gantt-dot-bg,
+            $border: $gantt-dot-border
+        );
     }
     .k-task-dot:hover::before,
     .k-task-dot.k-state-hover::before {
-        border-color: $panel-text;
-        background-color: $panel-bg;
+        @include fill(
+            $bg: $gantt-dot-hover-bg,
+            $border: $gantt-dot-hover-border
+        );
     }
 
 
     // Milestone
     .k-task-milestone {
-        border-color: $panel-border;
-        background-color: $panel-text;
+        @include fill(
+            $bg: $gantt-milestone-bg,
+            $border: $gantt-milestone-border
+        );
     }
     .k-task-milestone.k-state-selected {
-        border-color: $selected-border;
-        background-color: $selected-bg;
+        @include fill(
+            $bg: $gantt-milestone-selected-bg,
+            $border: $gantt-milestone-selected-border
+        );
     }
 
 
     // Summary
     .k-task-summary {
-        color: mix( $panel-text, $panel-bg, 95 );
+        color: $gantt-summary-bg;
     }
     .k-task-summary-complete {
-        color: darken( $panel-text, 40 );
+        color: $gantt-summary-progress-bg;
     }
     .k-task-summary.k-state-selected {
-        color: mix( $selected-bg, $panel-bg, 80 );
+        color: $gantt-summary-selected-bg;
 
         .k-task-summary-complete {
-            color: shade( $selected-bg );
+            color: $gantt-summary-progress-selected-bg;
         }
     }
 
 
     // Tasks
     .k-task-single {
-        border-color: $panel-border;
-        color: $panel-bg;
-        background: mix( $panel-text, $panel-bg, 80 );
+        @include fill(
+            $gantt-task-text,
+            $gantt-task-bg,
+            $gantt-task-border
+        );
 
         .k-task-complete {
-            background: $panel-text;
+            background-color: $gantt-task-progress-bg;
         }
     }
     .k-task-single.k-state-selected {
-        border-color: $selected-border;
-        color: $selected-text;
-        background: mix( $selected-bg, $panel-bg, 70 );
+        @include fill(
+            $gantt-task-selected-text,
+            $gantt-task-selected-bg,
+            $gantt-task-selected-border
+        );
 
         .k-task-complete {
-            background: $selected-bg;
+            background-color: $gantt-task-progress-selected-bg;
         }
     }
 
