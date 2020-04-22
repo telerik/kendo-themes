@@ -4,11 +4,14 @@
         margin-top: calc( #{$tooltip-callout-size} + #{$tooltip-border-width} );
         width: auto;
         white-space: normal;
+        display: flex;
         align-items: center;
+        // NOTE: This works around popup / tooltip stackin issue
+        z-index: 9999;
 
-        .k-callout-n { inset-inline-start: 16px; }
+        // .k-callout-n { inset-inline-start: 16px; }
     }
-    .k-grid .k-validation-tooltip {
+    .k-grid .k-validator-tooltip {
         max-width: 300px;
     }
 
