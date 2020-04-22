@@ -3,6 +3,7 @@
 <head>
     <title>Gantt</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts.js"></script>
@@ -12,248 +13,265 @@
 
     <div id="test-area" class="grid">
 
-        <div id="gantt" class="k-widget k-gantt" style="height: 702px;">
-            <div class="k-floatwrap k-header k-gantt-toolbar">
+        <div id="gantt" class="k-widget k-gantt" style="height: 600px;">
+            <div class="k-gantt-header k-gantt-toolbar k-toolbar">
                 <button class="k-button k-button-icon k-gantt-toggle" type="button">
                     <span class="k-icon k-i-layout-1-by-4"></span>
                 </button>
-                <ul class="k-reset k-header k-gantt-views">
-                    <li class="k-current-view k-state-default">
-                        <a href="#" class="k-link">Week</a>
-                    </li>
-                    <li class="k-state-default k-view-day">
-                        <a href="#" class="k-link">Day</a>
-                    </li>
-                    <li class="k-state-default k-view-week k-state-selected">
-                        <a href="#" class="k-link">Week</a>
-                    </li>
-                    <li class="k-state-default k-view-month">
-                        <a href="#" class="k-link">Month</a>
-                    </li>
-                </ul>
-                <div class="k-gantt-actions">
-                    <button class="k-button k-button-icontext k-gantt-create" type="button">
-                        <span class="k-icon k-i-plus"></span>
-                        <span>Add Task</span>
-                    </button>
+                <button class="k-button k-gantt-create" type="button">
+                    <span class="k-icon k-i-plus"></span>
+                    <span class="k-button-text">Add Task</span>
+                </button>
+                <button class="k-button k-gantt-pdf" type="button">
+                    <span class="k-icon k-i-pdf"></span>
+                    <span class="k-button-text">Add Task</span>
+                </button>
+                <span class="k-spacer k-toolbar-spacer"></span>
+                <div class="k-gantt-views">
+                    <select class="k-dropdown">
+                        <option>Day</option>
+                    </select>
+                    <div class="k-button-group">
+                        <span class="k-button k-view-day">
+                            <span class="k-button-text">Day</span>
+                        </span>
+                        <span class="k-button k-view-week k-state-selected">
+                            <span class="k-button-text">Week</span>
+                        </span>
+                        <span class="k-button k-view-month">
+                            <span class="k-button-text">Month</span>
+                        </span>
+                    </div>
                 </div>
-            </div><!--
-            --><div class="k-gantt-layout k-gantt-treelist" style="width: 442px; height: 606px;">
-                <div class="k-treelist k-grid k-widget">
-                    <div class="k-grid-header">
-                        <div class="k-grid-header-wrap">
+            </div>
+            <div class="k-gantt-content">
+                <div class="k-gantt-layout k-gantt-treelist" style="width: 442px;">
+                    <div class="k-treelist k-grid k-widget">
+                        <div class="k-grid-header">
+                            <div class="k-grid-header-wrap">
+                                <table style="min-width: 280px;">
+                                    <colgroup>
+                                        <col style="width: 60px;" />
+                                        <col />
+                                        <col style="width: 100px;" />
+                                        <col style="width: 100px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="k-header">ID</th>
+                                            <th class="k-header"><a class="k-link" href="#">Title</a></th>
+                                            <th class="k-header"><a class="k-link" href="#">Start Time</a></th>
+                                            <th class="k-header"><a class="k-link" href="#">End Time</a></th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="k-grid-content" style="height: 532px;">
                             <table style="min-width: 280px;">
-                                <colgroup><col style="width: 60px;"><col><col style="width: 100px;"><col style="width: 100px;"></colgroup>
-                                <thead>
-                                    <tr>
-                                        <th class="k-header">ID</th>
-                                        <th class="k-header"><a class="k-link" href="#">Title</a></th>
-                                        <th class="k-header"><a class="k-link" href="#">Start Time</a></th>
-                                        <th class="k-header"><a class="k-link" href="#">End Time</a></th>
+                                <colgroup>
+                                    <col style="width: 60px;" />
+                                    <col />
+                                    <col style="width: 100px;" />
+                                    <col style="width: 100px;" />
+                                </colgroup>
+                                <tbody>
+                                    <tr class="k-treelist-group">
+                                        <td><span>7</span></td>
+                                        <td><span class="k-icon k-i-collapse"></span><span>Software validation, research and implementation</span></td>
+                                        <td><span>06/02/2014</span></td>
+                                        <td><span>07/12/2014</span></td>
                                     </tr>
-                                </thead>
+                                    <tr class="k-alt">
+                                        <td><span>18</span></td>
+                                        <td><span class="k-icon k-i-none"></span><span class="k-icon k-i-none"></span><span>Project Kickoff</span></td>
+                                        <td><span>06/02/2014</span></td>
+                                        <td><span>06/02/2014</span></td>
+                                    </tr>
+                                    <tr class="k-treelist-group">
+                                        <td><span>11</span></td>
+                                        <td><span class="k-icon k-i-none"></span><span class="k-icon k-i-collapse"></span><span>Research</span></td>
+                                        <td><span>06/02/2014</span></td>
+                                        <td><span>06/07/2014</span></td>
+                                    </tr>
+                                    <tr class="k-alt">
+                                        <td><span>19</span></td>
+                                        <td><span class="k-icon k-i-none"></span><span class="k-icon k-i-none"></span><span class="k-icon k-i-none"></span><span>Validation with Customers</span></td>
+                                        <td><span>06/02/2014</span></td>
+                                        <td><span>06/04/2014</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>20</span></td>
+                                        <td><span class="k-icon k-i-none"></span><span class="k-icon k-i-none"></span><span class="k-icon k-i-none"></span><span>Market Research</span></td>
+                                        <td><span>06/02/2014</span></td>
+                                        <td><span>06/04/2014</span></td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
-                    </div>
-                    <div class="k-grid-content" style="height: 532px;">
-                        <table style="min-width: 280px;">
-                            <colgroup><col style="width: 60px;"><col><col style="width: 100px;"><col style="width: 100px;"></colgroup>
-                            <tbody>
-                                <tr class="k-treelist-group">
-                                    <td><span>7</span></td>
-                                    <td><span class="k-icon k-i-collapse"></span><span>Software validation, research and implementation</span></td>
-                                    <td><span>06/02/2014</span></td>
-                                    <td><span>07/12/2014</span></td>
-                                </tr>
-                                <tr class="k-alt">
-                                    <td><span>18</span></td>
-                                    <td><span class="k-icon k-i-none"></span><span class="k-icon k-i-none"></span><span>Project Kickoff</span></td>
-                                    <td><span>06/02/2014</span></td>
-                                    <td><span>06/02/2014</span></td>
-                                </tr>
-                                <tr class="k-treelist-group">
-                                    <td><span>11</span></td>
-                                    <td><span class="k-icon k-i-none"></span><span class="k-icon k-i-collapse"></span><span>Research</span></td>
-                                    <td><span>06/02/2014</span></td>
-                                    <td><span>06/07/2014</span></td>
-                                </tr>
-                                <tr class="k-alt">
-                                    <td><span>19</span></td>
-                                    <td><span class="k-icon k-i-none"></span><span class="k-icon k-i-none"></span><span class="k-icon k-i-none"></span><span>Validation with Customers</span></td>
-                                    <td><span>06/02/2014</span></td>
-                                    <td><span>06/04/2014</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span>20</span></td>
-                                    <td><span class="k-icon k-i-none"></span><span class="k-icon k-i-none"></span><span class="k-icon k-i-none"></span><span>Market Research</span></td>
-                                    <td><span>06/02/2014</span></td>
-                                    <td><span>06/04/2014</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
-            </div><!--
-            --><div class="k-splitbar k-state-default k-splitbar-horizontal k-splitbar-draggable-horizontal k-gantt-layout" style="height: 606px;">
-                <div class="k-icon k-resize-handle"></div>
-            </div><!--
-            --><div class="k-gantt-layout k-gantt-timeline" style="height: 606px; width: 532px;">
-                <div class="k-timeline k-grid k-widget">
-                    <div class="k-grid-header">
-                        <div class="k-grid-header-wrap">
-                            <table style="width: 700px;">
-                                <colgroup><col><col><col><col><col><col><col></colgroup>
-                                <tbody>
-                                    <tr>
-                                        <td colspan="7" class="k-header">Sun 6/01 - Sat 6/07</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="1" class="k-header k-nonwork-hour">Sun 6/01</td>
-                                        <td colspan="1" class="k-header">Mon 6/02</td>
-                                        <td colspan="1" class="k-header">Tue 6/03</td>
-                                        <td colspan="1" class="k-header">Wed 6/04</td>
-                                        <td colspan="1" class="k-header">Thu 6/05</td>
-                                        <td colspan="1" class="k-header">Fri 6/06</td>
-                                        <td colspan="1" class="k-header k-nonwork-hour">Sat 6/07</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                <div class="k-splitbar k-state-default k-splitbar-horizontal k-splitbar-draggable-horizontal k-gantt-layout">
+                    <div class="k-icon k-resize-handle"></div>
+                </div>
+                <div class="k-gantt-layout k-gantt-timeline" style="width: 532px;">
+                    <div class="k-timeline k-grid k-widget">
+                        <div class="k-grid-header">
+                            <div class="k-grid-header-wrap">
+                                <table style="width: 700px;">
+                                    <colgroup>
+                                        <col /><col /><col /><col /><col /><col /><col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="7" class="k-header">Sun 6/01 - Sat 6/07</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="1" class="k-header k-nonwork-hour">Sun 6/01</th>
+                                            <th colspan="1" class="k-header">Mon 6/02</th>
+                                            <th colspan="1" class="k-header">Tue 6/03</th>
+                                            <th colspan="1" class="k-header">Wed 6/04</th>
+                                            <th colspan="1" class="k-header">Thu 6/05</th>
+                                            <th colspan="1" class="k-header">Fri 6/06</th>
+                                            <th colspan="1" class="k-header k-nonwork-hour">Sat 6/07</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="k-grid-content" style="height: 532px;">
+                            <div class="k-gantt-tables">
+                                <table class="k-gantt-rows" style="width: 700px;">
+                                    <colgroup><col></colgroup>
+                                    <tbody>
+                                        <tr><td>&nbsp;</td></tr>
+                                        <tr class="k-alt"><td>&nbsp;</td></tr>
+                                        <tr><td>&nbsp;</td></tr>
+                                        <tr class="k-alt"><td>&nbsp;</td></tr>
+                                        <tr><td>&nbsp;</td></tr>
+                                    </tbody>
+                                </table>
+                                <table class="k-gantt-columns" style="width: 700px;height: 181px;">
+                                    <colgroup><col><col><col><col><col><col><col></colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="k-nonwork-hour">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td class="k-nonwork-hour">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="k-gantt-tasks" style="width: 700px;">
+                                    <colgroup><col></colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="k-task-wrap" style="left: 113px;">
+                                                    <div class="k-task k-task-summary" style="width: 587px;">
+                                                        <div class="k-task-summary-progress" style="width: 252px;">
+                                                            <div class="k-task-summary-complete" style="width: 587px;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="k-task-dot k-task-start"></div>
+                                                    <div class="k-task-dot k-task-end"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="k-task-wrap k-milestone-wrap" style="left: 113px;">
+                                                    <div class="k-task k-task-milestone"></div>
+                                                    <div class="k-task-dot k-task-start" style="display: block;"></div>
+                                                    <div class="k-task-dot k-task-end" style="display: block;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="k-task-wrap" style="left: 113px;">
+                                                    <div class="k-task k-task-summary k-state-selected" style="width: 500px;">
+                                                        <div class="k-task-summary-progress" style="width: 215px;">
+                                                            <div class="k-task-summary-complete" style="width: 500px;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="k-task-dot k-task-start"></div>
+                                                    <div class="k-task-dot k-task-end"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="k-task-wrap" style="left: 113px;">
+                                                    <div class="k-task k-task-single" style="width: 200px;">
+                                                        <div class="k-task-complete" style="width: 50px;"></div>
+                                                        <div class="k-task-content">
+                                                            <div class="k-task-template">Validation with Customers</div>
+                                                            <span class="k-task-actions">
+                                                                <a class="k-link k-task-delete" href="#">
+                                                                    <span class="k-icon k-i-close"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span class="k-resize-handle k-resize-w"></span>
+                                                            <span class="k-resize-handle k-resize-e"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="k-task-dot k-task-start"></div>
+                                                    <div class="k-task-dot k-task-end"></div>
+                                                    <div class="k-task-draghandle" style="left: 50px;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="k-task-wrap" style="left: 113px;">
+                                                    <div class="k-task k-task-single k-state-selected" style="width: 200px;">
+                                                        <div class="k-task-complete" style="width: 164px;"></div>
+                                                        <div class="k-task-content">
+                                                            <div class="k-task-template">Market Research</div>
+                                                            <span class="k-task-actions">
+                                                                <a class="k-link k-task-delete" href="#">
+                                                                    <span class="k-icon k-i-close"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span class="k-resize-handle k-resize-w"></span>
+                                                            <span class="k-resize-handle k-resize-e"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="k-task-dot k-task-start"></div>
+                                                    <div class="k-task-dot k-task-end"></div>
+                                                    <div class="k-task-draghandle" style="left: 164px;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="k-gantt-dependencies" style="width: 700px;">
+                                <div class="k-gantt-line k-gantt-line-h" style="left: 124.5px; top: 53px; width: 10px;"></div>
+                                <div class="k-gantt-line k-gantt-line-v" style="left: 132.5px; top: 53px; height: 18px;"></div>
+                                <div class="k-gantt-line k-gantt-line-h" style="left: 103px; top: 71px; width: 31.5px;"></div>
+                                <div class="k-gantt-line k-gantt-line-v" style="left: 103px; top: 71px; height: 54px;"></div>
+                                <div class="k-gantt-line k-gantt-line-h" style="left: 103px; top: 125px; width: 9px;"><span class="k-arrow-e"></span></div>
+                                <div class="k-gantt-line k-gantt-line-h k-state-selected" style="left: 124.5px; top: 53px; width: 10px;"></div>
+                                <div class="k-gantt-line k-gantt-line-v k-state-selected" style="left: 132.5px; top: 53px; height: 18px;"></div>
+                                <div class="k-gantt-line k-gantt-line-h k-state-selected" style="left: 103px; top: 71px; width: 31.5px;"></div>
+                                <div class="k-gantt-line k-gantt-line-v k-state-selected" style="left: 103px; top: 71px; height: 90px;"></div>
+                                <div class="k-gantt-line k-gantt-line-h k-state-selected" style="left: 103px; top: 161px; width: 9px;"><span class="k-arrow-e"></span></div>
+                            </div>
+                            <div class="k-gantt-line k-gantt-line-h k-dependency-hint" style="top: 53px; left: 135px; width: 50px;"></div>
                         </div>
                     </div>
-                    <div class="k-grid-content" style="height: 532px;">
-                        <div class="k-gantt-tables">
-                            <table class="k-gantt-rows" style="width: 700px;">
-                                <colgroup><col></colgroup>
-                                <tbody>
-                                    <tr><td>&nbsp;</td></tr>
-                                    <tr class="k-alt"><td>&nbsp;</td></tr>
-                                    <tr><td>&nbsp;</td></tr>
-                                    <tr class="k-alt"><td>&nbsp;</td></tr>
-                                    <tr><td>&nbsp;</td></tr>
-                                </tbody>
-                            </table>
-                            <table class="k-gantt-columns" style="width: 700px;height: 181px;">
-                                <colgroup><col><col><col><col><col><col><col></colgroup>
-                                <tbody>
-                                    <tr>
-                                        <td class="k-nonwork-hour">&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td class="k-nonwork-hour">&nbsp;</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="k-gantt-tasks" style="width: 700px;">
-                                <colgroup><col></colgroup>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="k-task-wrap" style="left: 113px;">
-                                                <div class="k-task k-task-summary" style="width: 587px;">
-                                                    <div class="k-task-summary-progress" style="width: 252px;">
-                                                        <div class="k-task-summary-complete" style="width: 587px;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="k-task-dot k-task-start"></div>
-                                                <div class="k-task-dot k-task-end"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="k-task-wrap k-milestone-wrap" style="left: 113px;">
-                                                <div class="k-task k-task-milestone"></div>
-                                                <div class="k-task-dot k-task-start" style="display: block;"></div>
-                                                <div class="k-task-dot k-task-end" style="display: block;"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="k-task-wrap" style="left: 113px;">
-                                                <div class="k-task k-task-summary" style="width: 500px;">
-                                                    <div class="k-task-summary-progress" style="width: 215px;">
-                                                        <div class="k-task-summary-complete" style="width: 500px;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="k-task-dot k-task-start"></div>
-                                                <div class="k-task-dot k-task-end"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="k-task-wrap" style="left: 113px;">
-                                                <div class="k-task k-task-single" style="width: 200px;">
-                                                    <div class="k-task-complete" style="width: 50px;"></div>
-                                                    <div class="k-task-content">
-                                                        <div class="k-task-template">Validation with Customers</div>
-                                                        <span class="k-task-actions">
-                                                            <a class="k-link k-task-delete" href="#">
-                                                                <span class="k-icon k-i-close"></span>
-                                                            </a>
-                                                        </span>
-                                                        <span class="k-resize-handle k-resize-w"></span>
-                                                        <span class="k-resize-handle k-resize-e"></span>
-                                                    </div>
-                                                </div>
-                                                <div class="k-task-dot k-task-start"></div>
-                                                <div class="k-task-dot k-task-end"></div>
-                                                <div class="k-task-draghandle" style="left: 50px;"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="k-task-wrap" style="left: 113px;">
-                                                <div class="k-task k-task-single" style="width: 200px;">
-                                                    <div class="k-task-complete" style="width: 164px;"></div>
-                                                    <div class="k-task-content">
-                                                        <div class="k-task-template">Market Research</div>
-                                                        <span class="k-task-actions">
-                                                            <a class="k-link k-task-delete" href="#">
-                                                                <span class="k-icon k-i-close"></span>
-                                                            </a>
-                                                        </span>
-                                                        <span class="k-resize-handle k-resize-w"></span>
-                                                        <span class="k-resize-handle k-resize-e"></span>
-                                                    </div>
-                                                </div>
-                                                <div class="k-task-dot k-task-start"></div>
-                                                <div class="k-task-dot k-task-end"></div>
-                                                <div class="k-task-draghandle" style="left: 164px;"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="k-gantt-dependencies" style="width: 700px;">
-                            <div class="k-gantt-line k-gantt-line-h" style="left: 124.5px; top: 53px; width: 10px;"></div>
-                            <div class="k-gantt-line k-gantt-line-v" style="left: 132.5px; top: 53px; height: 18px;"></div>
-                            <div class="k-gantt-line k-gantt-line-h" style="left: 103px; top: 71px; width: 31.5px;"></div>
-                            <div class="k-gantt-line k-gantt-line-v" style="left: 103px; top: 71px; height: 54px;"></div>
-                            <div class="k-gantt-line k-gantt-line-h" style="left: 103px; top: 125px; width: 9px;"><span class="k-arrow-e"></span></div>
-                            <div class="k-gantt-line k-gantt-line-h k-state-selected" style="left: 124.5px; top: 53px; width: 10px;"></div>
-                            <div class="k-gantt-line k-gantt-line-v k-state-selected" style="left: 132.5px; top: 53px; height: 18px;"></div>
-                            <div class="k-gantt-line k-gantt-line-h k-state-selected" style="left: 103px; top: 71px; width: 31.5px;"></div>
-                            <div class="k-gantt-line k-gantt-line-v k-state-selected" style="left: 103px; top: 71px; height: 90px;"></div>
-                            <div class="k-gantt-line k-gantt-line-h k-state-selected" style="left: 103px; top: 161px; width: 9px;"><span class="k-arrow-e"></span></div>
-                        </div>
-                        <div class="k-gantt-line k-gantt-line-h k-dependency-hint" style="top: 53px; left: 135px; width: 50px;"></div>
-                    </div>
                 </div>
-            </div><!--
-            --><div class="k-floatwrap k-header k-gantt-toolbar">
-                <div class="k-gantt-actions">
-                    <button class="k-button k-button-icontext k-gantt-create" type="button">
-                        <span class="k-icon k-i-plus"></span>
-                        <span>Add Task</span>
-                    </button>
-                </div>
+            </div>
+            <div class="k-gantt-footer k-gantt-toolbar k-toolbar">
+                <button class="k-button k-gantt-create" type="button">
+                    <span class="k-icon k-i-plus"></span>
+                    <span class="k-button-text">Add Task</span>
+                </button>
             </div>
         </div>
 
