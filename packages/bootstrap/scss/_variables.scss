@@ -955,7 +955,7 @@ $checkbox-disabled-checked-bg: null !default;
 $checkbox-disabled-checked-text: null !default;
 $checkbox-disabled-checked-border: null !default;
 $checkbox-invalid-bg: null !default;
-$checkbox-invalid-text: null !default;
+$checkbox-invalid-text: $invalid-text !default;
 $checkbox-invalid-border: $invalid-border !default;
 
 $checkbox-list-margin: 0 !default;
