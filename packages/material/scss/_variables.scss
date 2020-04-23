@@ -1000,7 +1000,7 @@ $checkbox-disabled-checked-bg: $checkbox-disabled-border !default;
 $checkbox-disabled-checked-text: #ffffff !default;
 $checkbox-disabled-checked-border: $checkbox-disabled-checked-bg !default;
 $checkbox-invalid-bg: null !default;
-$checkbox-invalid-text: null !default;
+$checkbox-invalid-text: $invalid-text !default;
 $checkbox-invalid-border: $invalid-border !default;
 
 $checkbox-list-margin: 0 !default;
