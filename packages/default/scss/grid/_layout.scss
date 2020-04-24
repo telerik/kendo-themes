@@ -349,21 +349,6 @@
             }
         }
 
-        .k-widget.k-tooltip.k-tooltip-validation {
-            display: flex;
-            position: absolute;
-            width: auto;
-            padding: $padding-y $padding-x;
-
-            .k-callout {
-                display: block;
-            }
-        }
-
-        .k-animation-container-fixed .k-tooltip.k-tooltip-validation {
-            position: static;
-        }
-
         .k-dirty-cell {
             position: relative;
         }

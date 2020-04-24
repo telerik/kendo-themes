@@ -12,9 +12,15 @@
         font-size: $tooltip-font-size;
         line-height: $tooltip-line-height;
         display: inline-flex;
-        flex-direction: column;
+        flex-flow: row nowrap;
+        align-items: flex-start;
         position: absolute;
         z-index: 12000;
+    }
+
+    .k-tooltip-icon {
+        margin-inline-end: $icon-spacing;
+        flex-shrink: 0;
     }
 
     .k-tooltip-title {
@@ -28,18 +34,9 @@
         text-overflow: ellipsis;
     }
 
-    .k-tooltip-closable {
-
-        .k-tooltip-title,
-        .k-tooltip-content {
-            padding-right: $tooltip-closable-content-padding;
-        }
-    }
-
     .k-tooltip-button {
-        position: absolute;
-        top: $tooltip-padding-y;
-        right: $tooltip-padding-x;
+        margin-inline-start: $icon-spacing;
+        flex-shrink: 0;
 
         .k-icon {
             color: inherit;
@@ -99,28 +96,6 @@
         left: (-$tooltip-callout-size * 2);
         // transform: translate(-100%, -50%);
         pointer-events: none;
-    }
-
-
-
-    // RTL
-    .k-tooltip-closable.k-rtl,
-    .k-tooltip-closable[dir="rtl"],
-    .k-rtl .k-tooltip-closable,
-    [dir="rtl"] .k-tooltip-closable {
-
-        .k-tooltip-title,
-        .k-tooltip-content {
-            padding-right: 0;
-            padding-left: $tooltip-closable-content-padding;
-        }
-    }
-    .k-rtl,
-    [dir="rtl"] {
-        .k-tooltip-button {
-            left: $tooltip-padding-x;
-            right: auto;
-        }
     }
 
 }
