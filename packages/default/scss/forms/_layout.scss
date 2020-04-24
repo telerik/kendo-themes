@@ -12,7 +12,7 @@
         border: 0;
 
         .k-label {
-            display: block;
+            display: flex;
             margin-bottom: $form-label-margin-bottom;
         }
         .k-checkbox-label,
@@ -43,11 +43,13 @@
         }
 
         .k-form-field,
-        .k-form-buttons {
+        .k-form-buttons,
+        .k-daterangepicker .k-textbox-container {
             margin-top: $form-field-margin-top;
         }
 
-        > * {
+        > *,
+        .k-daterangepicker .k-textbox-container {
             &:first-child {
                 margin-top: 0;
             }
@@ -137,6 +139,7 @@
             margin-right: $horizontal-form-label-margin-x;
             padding-top: $horizontal-form-label-padding-top;
             width: $horizontal-form-label-width;
+            justify-content: $horizontal-form-label-justify-content;
         }
 
         .k-floating-label-container,
@@ -171,6 +174,11 @@
                         margin-left: 0;
                     }
                 }
+            }
+
+            .k-label-optional {
+                margin-left: 0;
+                margin-right: $label-optional-margin-x;
             }
         }
     }

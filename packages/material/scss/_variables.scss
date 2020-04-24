@@ -719,14 +719,15 @@ $form-label-margin-bottom: 0 !default;
 
 $form-button-margin-x: 8px !default;
 
-$form-hint-font-size: 11px !default;
-$form-hint-font-style: italic !default;
+$form-hint-font-size: 12px !default;
+$form-hint-font-style: normal !default;
 
 $form-field-margin-top: 1rem !default;
 
 $horizontal-form-label-padding-top: 5px !default;
 $horizontal-form-label-margin-x: 10px !default;
 $horizontal-form-label-width: 25% !default;
+$horizontal-form-label-justify-content: flex-end !default;
 
 $inline-form-element-width: 25% !default;
 
