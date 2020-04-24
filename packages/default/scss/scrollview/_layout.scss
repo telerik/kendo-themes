@@ -3,10 +3,18 @@
     // refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
     kendo-scrollview.k-scrollview-wrap,
     div.k-scrollview {
+        border-width: $scrollview-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $scrollview-font-family;
+        font-size: $scrollview-font-size;
+        line-height: $scrollview-line-height;
         position: relative;
         overflow: hidden;
-        outline: 0;
         display: block;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
 
         .k-scrollview,
         ul.k-scrollview-wrap {
