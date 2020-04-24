@@ -2425,6 +2425,19 @@ $splitbar-selected-bg: $selected-bg !default;
 $splitbar-selected-text: $selected-text !default;
 
 
+// TileLayout
+$tilelayout-border-width: 0 !default;
+$tilelayout-card-border-width: $card-border-width !default;
+
+$tilelayout-hint-border-width: 1px !default;
+$tilelayout-hint-border-radius: $card-border-radius !default;
+
+$tilelayout-bg: $gray-100 !default;
+
+$tilelayout-hint-bg: rgba(255, 255, 255, .2) !default;
+$tilelayout-hint-border: $component-border !default;
+
+
 // Filter expression builder
 $filter-padding-x: $padding-x !default;
 $filter-padding-y: $padding-y !default;
