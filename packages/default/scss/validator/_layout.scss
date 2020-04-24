@@ -1,25 +1,18 @@
 @include exports("validator/layout") {
 
-    .k-tooltip-validation {
-        margin: ($spacer / 2) 0 0;
-        position: static;
-        border-width: 0;
-        display: inline-flex;
-        flex-direction: row;
+    .k-validator-tooltip {
+        margin-top: calc( #{$tooltip-callout-size} + #{$tooltip-border-width} );
+        width: auto;
+        white-space: normal;
+        display: flex;
         align-items: center;
+        // NOTE: This works around popup / tooltip stackin issue
         z-index: 9999;
 
-        &[hidden] {
-            display: none;
-        }
-
-        > .k-icon {
-            margin-right: ($padding-x / 2);
-        }
-
-        .k-callout {
-            display: none;
-        }
+        // .k-callout-n { inset-inline-start: 16px; }
+    }
+    .k-grid .k-validator-tooltip {
+        max-width: 300px;
     }
 
 }

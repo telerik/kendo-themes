@@ -619,6 +619,10 @@ $placeholder-bg: rgba(0, 0, 0, .1) !default;
 // Progressbar
 $progressbar-height: $progress-height !default;
 $progressbar-animation-timing: $progress-bar-animation-timing !default;
+$progressbar-border-width: 0 !default;
+$progressbar-font-family: $font-family !default;
+$progressbar-font-size: $font-size-sm !default;
+$progressbar-line-height: $line-height !default;
 
 $progressbar-bg: $progress-bg !default;
 $progressbar-text: $progress-color !default;
@@ -905,7 +909,7 @@ $textarea-floating-label-padding: null !default;
 
 
 // Floating label
-$floating-label-scale: .75 !default;
+$floating-label-scale: 1 !default;
 $floating-label-height: $textbox-line-height * $floating-label-scale !default;
 $floating-label-transition: .2s ease-out !default;
 
@@ -1409,6 +1413,10 @@ $switch-off-handle-hovered-gradient: null !default;
 
 
 // Rating
+$rating-font-family: $font-family !default;
+$rating-font-size: $font-size !default;
+$rating-line-height: $line-height !default;
+
 $rating-container-margin-x: $padding-x-sm !default;
 
 $rating-item-padding-x: $padding-x-sm !default;
@@ -1879,8 +1887,6 @@ $tooltip-padding-x: $tooltip-padding-x !default;
 $tooltip-max-width: $tooltip-max-width !default;
 $tooltip-border-width: 0 !default;
 $tooltip-border-radius: $tooltip-border-radius !default;
-
-$tooltip-closable-content-padding: calc( #{$icon-size} + #{$icon-spacing} ) !default;
 
 $tooltip-font-size: $tooltip-font-size !default;
 $tooltip-line-height: $line-height !default;

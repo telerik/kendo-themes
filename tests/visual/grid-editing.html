@@ -110,7 +110,7 @@
                             <td><input class="k-textbox" name="ProductName" required="required" type="text" value="Towel" /></td>
                             <td>
                                 <span class="k-widget k-numerictextbox"><span class="k-numeric-wrap k-state-default k-invalid"><input class="k-formatted-value k-input" type="text" value="" /><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-60-up"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-60-down"></span></span></span></span></span>
-                                <div class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" style="margin:0.5em"><span class="k-icon k-i-warning"> </span>Price<div class="k-callout k-callout-n"></div></div>
+                                <div class="k-tooltip k-validator-tooltip k-tooltip-error k-invalid-msg"><span class="k-tooltip-icon k-icon k-i-warning"></span><span class="k-tooltip-content">Price</span><div class="k-callout k-callout-n"></div></div>
                             </td>
                             <td><input class="k-checkbox" id="e77452cd-b3b5-4dc9-8210-17007584b695" name="Discontinued" type="checkbox" /><label class="k-checkbox-label" for="e77452cd-b3b5-4dc9-8210-17007584b695">​</label></td>
                             <td class="k-command-cell"><a class="k-button k-button-icontext k-primary k-grid-update"><span class="k-icon k-i-check"></span>Update</a><a class="k-button k-button-icontext k-grid-cancel"><span class="k-icon k-i-cancel"></span>Cancel</a></td>
@@ -221,7 +221,10 @@
                                         <td>RTL</td>
                                         <td><span class="k-widget k-datepicker" dir="rtl"><span class="k-picker-wrap"><input type="text" class="k-input" placeholder="Datepicker..."><span class="k-select"><span class="k-icon k-i-calendar"></span></span></span></span></td>
                                         <td><span class="k-widget k-timepicker" dir="rtl"><span class="k-picker-wrap"><input type="text" class="k-input" placeholder="Timepicker..."><span class="k-select"><span class="k-icon k-i-clock"></span></span></span></span></td>
-                                        <td><span class="k-widget k-datetimepicker" dir="rtl"><span class="k-picker-wrap k-invalid"><input type="text" class="k-input" placeholder="Datetime..."><span class="k-select"><span class="k-link k-link-date"><span class="k-icon k-i-calendar"></span></span><span class="k-link k-link-time"><span class="k-icon k-i-clock"></span></span></span></span></span><div class="k-widget k-tooltip k-tooltip-validation k-invalid-msg k-rtl" style="margin:0.5em"><span class="k-icon k-i-warning"> </span>Date is not valid<br> please use MM/DD/YYYY format<div class="k-callout k-callout-n"></div></div></td>
+                                        <td>
+                                            <span class="k-widget k-datetimepicker" dir="rtl"><span class="k-picker-wrap k-invalid"><input type="text" class="k-input" placeholder="Datetime..."><span class="k-select"><span class="k-link k-link-date"><span class="k-icon k-i-calendar"></span></span><span class="k-link k-link-time"><span class="k-icon k-i-clock"></span></span></span></span></span>
+                                            <div class="k-tooltip k-validator-tooltip k-tooltip-error k-invalid-msg k-rtl"><span class="k-tooltip-icon k-icon k-i-warning"></span><span class="k-tooltip-content">Date is not valid<br /> please use MM/DD/YYYY format</span><div class="k-callout k-callout-n"></div></div>
+                                        </td>
                                         <td><span class="k-widget k-dateinput" dir="rtl"><span class="k-dateinput-wrap"><input type="text" class="k-input" placeholder="Dateinput..."><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-n"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-s"></span></span></span></span></span></td>
                                     </tr>
                                 </tbody>

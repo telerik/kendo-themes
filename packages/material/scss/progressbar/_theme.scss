@@ -51,6 +51,7 @@
 
     // Theme
     .k-progressbar {
+        @extend .k-text-selection;
         @include fill( $progressbar-text, $progressbar-bg, $progressbar-border, $progressbar-gradient );
 
         .k-state-selected {
