@@ -9,6 +9,12 @@
         box-sizing: border-box;
         font-size: $message-box-font-size;
         line-height: $message-box-line-height;
+
+        a {
+            color: inherit;
+            font-style: $message-box-link-font-style;
+            text-decoration: $message-box-link-text-decoration;
+        }
     }
 
 }

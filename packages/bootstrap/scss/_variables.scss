@@ -661,6 +661,9 @@ $message-box-bg-level: -10 !default;
 $message-box-text-level: 6 !default;
 $message-box-border-level: -9 !default;
 
+$message-box-link-font-style: normal !default;
+$message-box-link-text-decoration: underline !default;
+
 
 // Forms
 $form-spacer: $padding-x * 2 !default;
