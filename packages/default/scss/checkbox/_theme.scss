@@ -76,4 +76,8 @@
     .k-checkbox.k-state-invalid {
         @include fill( $border: $checkbox-invalid-border );
     }
+    .k-checkbox.k-invalid + .k-checkbox-label,
+    .k-checkbox.k-state-invalid + .k-checkbox-label {
+        @include fill( $color: $checkbox-invalid-text );
+    }
 }

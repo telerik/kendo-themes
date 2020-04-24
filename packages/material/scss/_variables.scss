@@ -722,14 +722,15 @@ $form-label-margin-bottom: 0 !default;
 
 $form-button-margin-x: 8px !default;
 
-$form-hint-font-size: 11px !default;
-$form-hint-font-style: italic !default;
+$form-hint-font-size: 12px !default;
+$form-hint-font-style: normal !default;
 
 $form-field-margin-top: 1rem !default;
 
 $horizontal-form-label-padding-top: 5px !default;
 $horizontal-form-label-margin-x: 10px !default;
 $horizontal-form-label-width: 25% !default;
+$horizontal-form-label-justify-content: flex-end !default;
 
 $inline-form-element-width: 25% !default;
 
@@ -1002,7 +1003,7 @@ $checkbox-disabled-checked-bg: $checkbox-disabled-border !default;
 $checkbox-disabled-checked-text: #ffffff !default;
 $checkbox-disabled-checked-border: $checkbox-disabled-checked-bg !default;
 $checkbox-invalid-bg: null !default;
-$checkbox-invalid-text: null !default;
+$checkbox-invalid-text: $invalid-text !default;
 $checkbox-invalid-border: $invalid-border !default;
 
 $checkbox-list-margin: 0 !default;
@@ -2749,6 +2750,15 @@ $gantt-border: $component-border !default;
 
 
 // Scheduler
+$scheduler-border-width: 1px !default;
+$scheduler-font-family: $font-family !default;
+$scheduler-font-size: $font-size !default;
+$scheduler-line-height: $line-height !default;
+
+$scheduler-bg: $panel-bg !default;
+$scheduler-text: $panel-text !default;
+$scheduler-border: $panel-border !default;
+
 $scheduler-event-border-radius: $border-radius !default;
 
 $scheduler-event-bg: $primary !default;

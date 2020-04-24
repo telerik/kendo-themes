@@ -2,10 +2,11 @@
 
     // Appearance
     .k-scheduler {
+        @extend .k-text-selection;
         @include fill(
-            $panel-text,
-            $panel-bg,
-            $panel-border
+            $scheduler-text,
+            $scheduler-bg,
+            $scheduler-border
         );
     }
 

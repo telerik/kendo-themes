@@ -21,6 +21,9 @@
             padding: $button-padding-y;
             width: $button-inner-calc-size;
             height: $button-inner-calc-size;
+            border-width: 0 $colorpicker-select-border-width 0 0;
+            border-style: solid;
+            border-color: inherit;
             box-sizing: border-box;
             line-height: 0;
             position: relative;
@@ -133,6 +136,11 @@
 
         .k-rtl &,
         &[dir="rtl"] {
+            .k-selected-color,
+            .k-tool-icon {
+                border-width: 0 0 0 $colorpicker-select-border-width;
+            }
+
             .k-picker-wrap {
                 .k-select {
                     @include border-left-radius-only();
