@@ -2933,6 +2933,15 @@ $pdf-viewer-search-highlight-bg: try-darken($base-bg, 70% ) !default;
 
 
 // Scrollview
+$scrollview-border-width: 1px !default;
+$scrollview-font-family: $font-family !default;
+$scrollview-font-size: $font-size !default;
+$scrollview-line-height: $line-height !default;
+
+$scrollview-bg: $component-bg !default;
+$scrollview-text: $component-text !default;
+$scrollview-border: $component-border !default;
+
 $scrollview-pagebutton-size: 8px !default;
 $scrollview-pagebutton-bg: $button-bg !default;
 $scrollview-pagebutton-border: $button-border !default;
