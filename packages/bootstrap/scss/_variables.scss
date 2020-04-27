@@ -1292,6 +1292,10 @@ $slider-size: 200px !default;
 $slider-tick-size: null !default;
 $slider-alt-size: 30px !default;
 
+$slider-font-family: $font-family !default;
+$slider-font-size: $font-size !default;
+$slider-line-height: $line-height !default;
+
 $slider-button-offset: 10px !default;
 $slider-button-size: ($slider-alt-size - 2) !default;
 $slider-button-spacing: ($slider-button-size + $slider-button-offset) !default;
