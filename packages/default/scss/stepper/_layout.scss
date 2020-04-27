@@ -6,10 +6,15 @@
         padding: $stepper-padding-y $stepper-padding-x;
         border-width: $stepper-border-width;
         border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
         font-size: $stepper-font-size;
         line-height: $stepper-line-height;
         font-family: $stepper-font-family;
+        display: block;
         position: relative;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
         // TODO: remove those once k-widget styles are removed. Link: https://github.com/telerik/kendo-themes/issues/1359
         color: inherit;
         background: none;
