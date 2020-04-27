@@ -2393,20 +2393,29 @@ $card-callout-height: 1.3em !default;
 
 
 // Splitter
+$splitter-border-width: 1px !default;
+$splitter-font-family: $font-family !default;
+$splitter-font-size: $font-size !default;
+$splitter-line-height: $line-height !default;
+
+$splitter-bg: $component-bg !default;
+$splitter-text: $component-text !default;
+$splitter-border: $component-border !default;
+
 $splitter-splitbar-size: 8px !default;
 $splitter-resize-icon-size: 10px !default;
 $splitter-drag-handle-length: 20px !default;
 $splitter-drag-handle-thickness: 2px !default;
 $splitter-drag-icon-margin: 7px !default;
 
-$splitter-bg: darken($button-bg, 5) !default;
-$splitter-text: $button-text !default;
+$splitbar-bg: darken($button-bg, 5) !default;
+$splitbar-text: $button-text !default;
 
-$splitter-hovered-bg: darken($button-hovered-bg, 5) !default;
-$splitter-hovered-text: $button-hovered-text !default;
+$splitbar-hovered-bg: darken($button-hovered-bg, 5) !default;
+$splitbar-hovered-text: $button-hovered-text !default;
 
-$splitter-selected-bg: $selected-bg !default;
-$splitter-selected-text: $selected-text !default;
+$splitbar-selected-bg: $selected-bg !default;
+$splitbar-selected-text: $selected-text !default;
 
 
 // Filter expression builder
