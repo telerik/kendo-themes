@@ -1,7 +1,14 @@
 @include exports("sreadsheet/theme") {
 
     // Spreadsheet
-    .k-spreadsheet {}
+    .k-spreadsheet {
+        @extend .k-text-selection;
+        @include fill(
+            $spreadsheet-text,
+            $spreadsheet-bg,
+            $spreadsheet-border
+        );
+    }
 
 
     // Row / column headers
