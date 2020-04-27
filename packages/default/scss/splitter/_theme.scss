@@ -1,26 +1,33 @@
 @include exports("splitter/theme") {
 
-    .k-splitter {}
+    .k-splitter {
+        @extend .k-text-selection;
+        @include fill(
+            $splitter-text,
+            $splitter-bg,
+            $splitter-border
+        );
+    }
 
     // Splitbar
     .k-splitbar {
-        color: $splitter-text;
-        background-color: $splitter-bg;
+        color: $splitbar-text;
+        background-color: $splitbar-bg;
 
         &:active,
         &.k-state-focused {
-            color: $splitter-selected-text;
-            background: $splitter-selected-bg;
+            color: $splitbar-selected-text;
+            background: $splitbar-selected-bg;
         }
     }
     .k-splitbar-horizontal-hover,
     .k-splitbar-vertical-hover {
-        color: $splitter-hovered-text;
-        background-color: $splitter-hovered-bg;
+        color: $splitbar-hovered-text;
+        background-color: $splitbar-hovered-bg;
     }
 
     .k-ghost-splitbar {
-        background-color: $splitter-hovered-bg;
+        background-color: $splitbar-hovered-bg;
     }
 
 }
