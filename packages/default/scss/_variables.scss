@@ -1297,6 +1297,10 @@ $slider-size: 200px !default;
 $slider-tick-size: null !default;
 $slider-alt-size: 30px !default;
 
+$slider-font-family: $font-family !default;
+$slider-font-size: $font-size !default;
+$slider-line-height: $line-height !default;
+
 $slider-button-offset: 10px !default;
 $slider-button-size: ($slider-alt-size - 2) !default;
 $slider-button-spacing: ($slider-button-size + $slider-button-offset) !default;
@@ -2580,6 +2584,15 @@ $listview-item-focus-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 
 // Spreadsheet
+$spreadsheet-border-width: 1px !default;
+$spreadsheet-font-family: $font-family !default;
+$spreadsheet-font-size: $font-size !default;
+$spreadsheet-line-height: $line-height !default;
+
+$spreadsheet-bg: $component-bg !default;
+$spreadsheet-text: $component-text !default;
+$spreadsheet-border: $component-border !default;
+
 $spreadsheet-insert-image-dialog-border-style: dashed !default;
 $spreadsheet-insert-image-dialog-border-width: 2px !default;
 $spreadsheet-insert-image-dialog-text-margin-bottom: 30px !default;
