@@ -1,7 +1,15 @@
 @include exports("timeline/layout") {
 
     .k-timeline {
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $timeline-font-family;
+        font-size: $timeline-font-size;
+        line-height: $timeline-line-height;
+        display: block;
         background-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
 
         ul {
             margin: 0;
