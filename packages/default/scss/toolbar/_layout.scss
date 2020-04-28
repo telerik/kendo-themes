@@ -9,6 +9,10 @@
         padding: ($toolbar-padding-y / 2) $toolbar-padding-x;
         border-width: $toolbar-border-width;
         border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $toolbar-font-family;
+        font-size: $toolbar-font-size;
         line-height: $toolbar-line-height;
         list-style: none;
         display: flex;
@@ -18,6 +22,8 @@
         justify-content: flex-start;
         position: relative;
         overflow: hidden;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
 
         &::before {
             content: "";

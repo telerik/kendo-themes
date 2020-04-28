@@ -1749,6 +1749,9 @@ $toolbar-padding-x: 0 !default;
 /// The vertical padding of the container.
 /// @group toolbar
 $toolbar-padding-y: 0 !default;
+
+$toolbar-font-family: $font-family !default;
+$toolbar-font-size: $font-size !default;
 $toolbar-line-height: $button-line-height !default;
 
 $toolbar-spacing: $toolbar-padding-x !default;
