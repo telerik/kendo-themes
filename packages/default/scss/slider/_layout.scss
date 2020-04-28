@@ -1,9 +1,17 @@
 @include exports("slider/layout") {
 
     .k-slider {
-        background-color: transparent;
         border-width: 0;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $slider-font-family;
+        font-size: $slider-font-size;
+        line-height: $slider-line-height;
+        display: block;
+        background-color: transparent;
         position: relative;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
 
         .k-button {
             height: $slider-button-size;
