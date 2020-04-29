@@ -1700,6 +1700,9 @@ $toolbar-padding-x: $table-cell-padding / 2 !default;
 /// The vertical padding of the container.
 /// @group toolbar
 $toolbar-padding-y: $table-cell-padding / 2 !default;
+
+$toolbar-font-family: $font-family !default;
+$toolbar-font-size: $font-size !default;
 $toolbar-line-height: $line-height !default;
 
 $toolbar-spacing: $toolbar-padding-x !default;
@@ -1910,6 +1913,7 @@ $tooltip-max-width: $tooltip-max-width !default;
 $tooltip-border-width: 0 !default;
 $tooltip-border-radius: $tooltip-border-radius !default;
 
+$tooltip-font-family: $font-family !default;
 $tooltip-font-size: $tooltip-font-size !default;
 $tooltip-line-height: $line-height !default;
 
