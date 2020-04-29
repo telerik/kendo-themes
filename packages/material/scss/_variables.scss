@@ -2354,6 +2354,8 @@ $tabstrip-content-border: transparent !default;
 // Treeview
 $treeview-padding-x: 0 !default;
 $treeview-padding-y: 0 !default;
+$treeview-font-family: $font-family !default;
+$treeview-font-size: $font-size !default;
 $treeview-line-height: (20 / 14) !default;
 
 $treeview-indent: 16px !default;
