@@ -1700,6 +1700,9 @@ $toolbar-padding-x: $table-cell-padding / 2 !default;
 /// The vertical padding of the container.
 /// @group toolbar
 $toolbar-padding-y: $table-cell-padding / 2 !default;
+
+$toolbar-font-family: $font-family !default;
+$toolbar-font-size: $font-size !default;
 $toolbar-line-height: $line-height !default;
 
 $toolbar-spacing: $toolbar-padding-x !default;
@@ -1766,6 +1769,16 @@ $upload-error-border: lighten($error, 29%) !default;
 
 $upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
+// Upload external DropZone
+$external-dropzone-padding-x: $upload-dropzone-padding-x !default;
+$external-dropzone-padding-y: $upload-dropzone-padding-y * 13 !default;
+$external-dropzone-spacing: 8px !default;
+
+$external-dropzone-bg: $upload-dropzone-bg !default;
+$external-dropzone-text: $upload-dropzone-text !default;
+$external-dropzone-border: $upload-dropzone-border !default;
+
+$external-dropzone-icon-opacity: 1 !default;
 
 // Window
 $window-border-width: 1px !default;
@@ -1900,6 +1913,7 @@ $tooltip-max-width: $tooltip-max-width !default;
 $tooltip-border-width: 0 !default;
 $tooltip-border-radius: $tooltip-border-radius !default;
 
+$tooltip-font-family: $font-family !default;
 $tooltip-font-size: $tooltip-font-size !default;
 $tooltip-line-height: $line-height !default;
 
