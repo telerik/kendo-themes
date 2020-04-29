@@ -1729,8 +1729,10 @@ $toolbar-separator-border: inherit !default;
 
 // Upload
 $upload-border-width: 1px !default;
+$upload-font-family: $font-family !default;
 $upload-font-size: $font-size !default;
 $upload-line-height: $line-height !default;
+
 $upload-bg: $component-bg !default;
 $upload-text: $component-text !default;
 $upload-border: $component-border !default;
