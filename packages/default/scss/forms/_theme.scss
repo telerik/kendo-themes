@@ -29,4 +29,8 @@
         @include fill ( $color: $error );
     }
 
+    .k-form-separator {
+        @include fill ( $border: $form-separator-border-color );
+    }
+
 }
