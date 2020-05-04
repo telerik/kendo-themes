@@ -2805,14 +2805,27 @@ $scheduler-bg: $panel-bg !default;
 $scheduler-text: $panel-text !default;
 $scheduler-border: $panel-border !default;
 
+$scheduler-event-min-height: 25px !default;
 $scheduler-event-border-radius: $border-radius !default;
+$scheduler-event-line-height: calc( #{$scheduler-event-min-height} - (2 * #{$padding-y-sm}) ) !default;
 
 $scheduler-event-bg: $primary !default;
 $scheduler-event-text: contrast-wcag( $scheduler-event-bg ) !default;
-$scheduler-event-min-height: 25px !default;
-$scheduler-event-line-height: calc( #{$scheduler-event-min-height} - (2 * #{$padding-y-sm}) ) !default;
+$scheduler-event-border: null !default;
+$scheduler-event-gradient: null !default;
+$scheduler-event-shadow: null !default;
 
-$scheduler-event-selected-box-shadow: $box-shadow-depth-3 !default;
+$scheduler-event-hover-bg: null !default;
+$scheduler-event-hover-text: null !default;
+$scheduler-event-hover-border: null !default;
+$scheduler-event-hover-gradient: null !default;
+$scheduler-event-hover-shadow: null !default;
+
+$scheduler-event-selected-bg: try-tint( $primary, 1 ) !default;
+$scheduler-event-selected-text: contrast-wcag( $scheduler-event-selected-bg ) !default;
+$scheduler-event-selected-border: null !default;
+$scheduler-event-selected-gradient: null !default;
+$scheduler-event-selected-shadow: $box-shadow-depth-3 !default;
 
 $scheduler-cell-height: $line-height * 1rem !default;
 $scheduler-datecolumn-width: 12rem !default;

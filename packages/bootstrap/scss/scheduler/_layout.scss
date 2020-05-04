@@ -2,37 +2,6 @@
 
 @include exports("scheduler/layout/bootstrap") {
 
-    //Scheduler navigation
-    .k-scheduler-navigation {
-        .k-nav-today { @include border-radius( $border-radius 0 0 $border-radius ); }
-        .k-nav-next { @include border-radius( 0 $border-radius $border-radius 0 ); }
-    }
-
-    // View switcher
-    .k-scheduler-views {
-        li:first-child { @include border-radius( $border-radius ); }
-        li:first-child + li { @include border-radius( $border-radius 0 0 $border-radius ); }
-        li:last-child { @include border-radius( 0 $border-radius $border-radius 0 ); }
-
-        &.k-state-expanded {
-            li {
-                margin: 0;
-                border-radius: 0;
-            }
-            li + li { margin-top: -1px; }
-            li:first-child { @include border-radius( $border-radius $border-radius 0 0 ); }
-            li:first-child + li { border-radius: 0; }
-            li:last-child { @include border-radius( 0 0 $border-radius $border-radius ); }
-        }
-    }
-
-    // Scheduler footer
-    .k-scheduler-footer {
-        li {
-            @include border-radius( $border-radius );
-        }
-    }
-
     // Appointments
     kendo-scheduler .k-event,
     .k-event {
