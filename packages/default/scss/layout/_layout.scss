@@ -21,6 +21,11 @@
     .k-flex-col-reverse         { flex-direction: column-reverse; }
 
 
+    // Aliases
+    .k-flex-column              { @extend .k-flex-col; }
+    .k-flex-column-reverse      { @extend .k-flex-col-reverse; }
+
+
     // Flex wrap
     /// This is equivalent to `flex-wrap: wrap`. It allows flex items to wrap as needed onto multiple lines, from top to bottom.
     /// @group flex-layout
