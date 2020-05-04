@@ -4,8 +4,8 @@
 
 
     // Header and footer
-    .k-scheduler-toolbar,
-    .k-scheduler-footer {
+    kendo-scheduler .k-scheduler-toolbar,
+    kendo-scheduler .k-scheduler-footer {
         line-height: $toolbar-line-height;
         text-transform: uppercase;
 
@@ -13,8 +13,8 @@
         li,
         li.k-state-hover,
         li.k-state-selected {
-            color: inherit;
-            background: none;
+            color: inherit !important; // sass-lint:disable-line no-important
+            background: none !important; // sass-lint:disable-line no-important
         }
 
         li a,
@@ -56,7 +56,7 @@
 
 
     // View switcher
-    .k-scheduler-views {
+    ul.k-scheduler-views {
 
         &.k-state-expanded {
             li {
@@ -95,14 +95,6 @@
     // Appointments
     kendo-scheduler .k-event,
     .k-event {
-        &::before {
-            display: none;
-            left: 0;
-
-            .k-rtl & {
-                right: 0;
-            }
-        }
 
         &.k-state-selected {
             &::before {
