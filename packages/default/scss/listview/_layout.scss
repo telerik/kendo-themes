@@ -1,6 +1,8 @@
 @include exports( "listview/layout" ) {
 
     .k-listview {
+        margin: 0;
+        padding: 0;
         border-width: $listview-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -9,10 +11,13 @@
         font-size: $listview-font-size;
         line-height: $listview-line-height;
         display: flex;
-        flex-direction: column;
+        flex-flow: column nowrap;
         position: relative;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: transparent;
+    }
+    .k-listview-bordered {
+        border-width: $listview-border-width;
     }
 
 
@@ -23,10 +28,15 @@
         border-style: solid;
         border-color: inherit;
     }
+    .k-listview-bordered > .k-listview-header {
+        border-bottom-width: $listview-border-width;
+    }
 
 
     // Listview contnet
     .k-listview-content {
+        margin: 0;
+        padding: 0;
         flex-grow: 1;
         position: relative;
         overflow: auto;
@@ -41,12 +51,35 @@
     .k-listview-content.k-d-grid {
         &::after { display: none; }
     }
+    .k-listview-content-padding-rectangle {
+        padding: $listview-padding-y $listview-padding-x;
+    }
+    .k-listview-content-padding-square {
+        padding: $listview-padding-y;
+    }
 
 
     // Listview item
     .k-listview-item {
+        padding: 0;
+        border-width: 0;
+        border-style: solid;
         box-sizing: border-box;
         flex-shrink: 0;
+    }
+    .k-listview-item-padding-rectangle {
+        padding: $listview-item-padding-y $listview-item-padding-x;
+    }
+    .k-listview-item-padding-rectangle .k-listview-link {
+        margin: (-$listview-item-padding-y) (-$listview-item-padding-x);
+        padding: $listview-item-padding-y $listview-item-padding-x;
+    }
+    .k-listview-item-padding-square {
+        padding: $listview-item-padding-y;
+    }
+    .k-listview-item-padding-square .k-listview-link {
+        margin: (-$listview-item-padding-y);
+        padding: $listview-item-padding-y;
     }
 
 
@@ -56,6 +89,9 @@
         border-top-width: $listview-border-width;
         border-style: solid;
         border-color: inherit;
+    }
+    .k-listview-bordered > .k-listview-footer {
+        border-top-width: $listview-border-width;
     }
 
 
@@ -69,6 +105,36 @@
     .k-listview-pager-top {
         border-top-width: 0;
         border-bottom-width: $listview-border-width;
+    }
+    .k-listview-bordered > .k-listview-pager-top {
+        border-bottom-width: $listview-border-width;
+    }
+    .k-listview-bordered > .k-listview-pager-bottom {
+        border-top-width: $listview-border-width;
+    }
+
+
+    // Borders
+    .k-listview-borders-all {
+        .k-listview-item {
+            border-width: 1px;
+        }
+    }
+    .k-listview-borders-horizontal {
+        .k-listview-item {
+            border-top-width: 1px;
+        }
+        .k-listview-item:first-child {
+            border-top-width: 0;
+        }
+    }
+    .k-listview-borders-vertical {
+        .k-listview-item {
+            border-left-width: 1px;
+        }
+        .k-listview-item:first-child {
+            border-left-width: 0;
+        }
     }
 
 }
