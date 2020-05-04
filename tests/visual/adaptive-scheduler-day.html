@@ -22,25 +22,29 @@
 
     <div id="test-area" class="grid">
 
-        <div class="k-pane-wrapper k-widget" style="height: 600px;">
+        <div class="k-pane-wrapper k-widget">
             <div class="k-pane">
                 <div class="k-view k-widget">
                     <div class="k-stretched-view k-content">
-                        <div id="scheduler" class="k-widget k-scheduler k-floatwrap k-scheduler-mobile" style="height: 600px;">
-                            <div class="k-header k-scheduler-toolbar">
-                                <ul class="k-reset k-scheduler-tools">
-                                    <li><a class="k-button k-pdf"><span class="k-icon k-i-file-pdf"></span></a></li>
-                                    <li><a class="k-button k-nav-calendar"><span class="k-icon k-i-calendar"></span></a></li>
-                                    <li><a class="k-button k-create-event"><span class="k-icon k-i-plus"></span></a></li>
-                                </ul>
-                                <select class="k-scheduler-mobile-views"><option class="k-state-default">Day</option></select>
+                        <div id="scheduler" class="k-widget k-scheduler k-floatwrap k-scheduler-mobile">
+                            <div class="k-scheduler-toolbar k-toolbar">
+                                <span class="k-scheduler-tools k-button-group">
+                                    <button type="button" class="k-button k-icon-button k-button-icon k-pdf"><span class="k-icon k-i-file-pdf"></span></button>
+                                    <button type="button" class="k-button k-icon-button k-button-icon k-nav-calendar"><span class="k-icon k-i-calendar"></span></button>
+                                    <button type="button" class="k-button k-icon-button k-button-icon k-create-event"><span class="k-icon k-i-plus"></span></button>
+                                </span>
+                                <span class="k-spacer k-toolbar-spacer"></span>
+                                <select class="k-dropdown k-scheduler-mobile-views"><option class="k-state-default">Day</option></select>
                             </div>
-                            <div class="k-header k-scheduler-toolbar">
-                                <ul class="k-reset k-header k-scheduler-navigation">
-                                    <li class="k-state-default k-nav-prev"><a class="k-link"><span class="k-icon k-i-arrow-chevron-left"></span></a></li>
-                                    <li class="k-state-default k-nav-current"><span class="k-m-date-format">Jun 13</span> <span class="k-y-date-format">2013</span></li>
-                                    <li class="k-state-default k-nav-next"><a class="k-link"><span class="k-icon k-i-arrow-chevron-right"></span></a></li>
-                                </ul>
+                            <div class="k-scheduler-toolbar k-toolbar">
+                                <span class="k-scheduler-navigation">
+                                    <button class="k-button k-button-icon k-icon-button k-nav-prev"><span class="k-icon k-i-arrow-chevron-left"></span></button>
+                                    <span class="k-state-default k-nav-current">
+                                        <span class="k-m-date-format">Jun 13</span>
+                                        <span class="k-y-date-format">2013</span>
+                                    </span>
+                                    <button class="k-button k-button-icon k-icon-button k-nav-next"><span class="k-icon k-i-arrow-chevron-right"></span></button>
+                                </span>
                             </div>
                             <table class="k-scheduler-layout k-scheduler-dayview k-scrollbar-v">
                                 <tbody>
@@ -188,9 +192,9 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <div class="k-header k-scheduler-footer">
-                                <span class="k-state-default k-scheduler-today"><a class="k-link">Today</a></span>
-                                <span class="k-state-default k-scheduler-fullday"><a class="k-link">Show business hours</a></span>
+                            <div class="k-scheduler-footer k-toolbar">
+                                <button class="k-button k-scheduler-today"><span class="k-button-text">Today</span></button>
+                                <button class="k-button k-scheduler-fullday"><span class="k-button-text">Show business hours</span></button>
                             </div>
                         </div>
                     </div>
