@@ -35,268 +35,310 @@
             <form class="k-form ng-invalid">
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">Normal Field:</label>
-                    <input class="k-textbox">
 
-                    <kendo-form-hint class="k-form-hint k-text-start">
-                        <span>Hint: Maximum 10 characters</span>
-                    </kendo-form-hint>
+                    <div>
+                        <input class="k-textbox">
+
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: Maximum 10 characters</span>
+                        </kendo-form-hint>
+                    </div>
                 </kendo-form-field>
 
                 <kendo-form-field class="k-form-field k-form-field-disabled">
                     <label class="k-label">Disabled Field:</label>
-                    <input class="k-textbox" disabled>
 
-                    <kendo-form-hint class="k-form-hint k-text-start">
-                        <span>Hint: Maximum 10 characters</span>
-                    </kendo-form-hint>
+                    <div>
+                        <input class="k-textbox" disabled>
+
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: Maximum 10 characters</span>
+                        </kendo-form-hint>
+                    </div>
                 </kendo-form-field>
 
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">Checkbox:</label>
-                    <input type="checkbox" class="k-checkbox">
 
-                    <kendo-form-hint class="k-form-hint k-text-start">
-                        <span>Hint: You need to check it</span>
-                    </kendo-form-hint>
+                    <div>
+                        <input type="checkbox" class="k-checkbox">
+
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: You need to check it</span>
+                        </kendo-form-hint>
+                    </div>
                 </kendo-form-field>
 
                 <kendo-form-field class="k-form-field">
-                    <input type="checkbox" class="k-checkbox">
-                    <label class="k-checkbox-label">Label after the box</label>
+                    <div>
+                        <div class="k-form-field-checkbox-wrap">
+                            <input type="checkbox" class="k-checkbox">
+                            <label class="k-checkbox-label">Label after the box</label>
+                        </div>
 
-                    <kendo-form-hint class="k-form-hint k-text-start">
-                        <span>Hint: You need to check it</span>
-                    </kendo-form-hint>
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: You need to check it</span>
+                        </kendo-form-hint>
+                    </div>
                 </kendo-form-field>
 
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">Radio (Y):</label>
 
-                    <ul class="k-radio-list">
-                        <li class="k-radio-item">
-                            <input type="radio" class="k-radio">
-                            <label class="k-radio-label">Male</label>
-                        </li>
+                    <div>
+                        <ul class="k-radio-list">
+                            <li class="k-radio-item">
+                                <input type="radio" class="k-radio">
+                                <label class="k-radio-label">Male</label>
+                            </li>
 
-                        <li class="k-radio-item">
-                            <input type="radio" class="k-radio">
-                            <label class="k-radio-label">Female</label>
-                        </li>
-                    </ul>
+                            <li class="k-radio-item">
+                                <input type="radio" class="k-radio">
+                                <label class="k-radio-label">Female</label>
+                            </li>
+                        </ul>
 
-                    <kendo-form-hint class="k-form-hint k-text-start">
-                        <span>Hint: You need to select a gender</span>
-                    </kendo-form-hint>
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: You need to select a gender</span>
+                        </kendo-form-hint>
+                    </div>
                 </kendo-form-field>
 
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">Radio (X):</label>
 
-                    <ul class="k-radio-list k-list-horizontal">
-                        <li class="k-radio-item">
-                            <input type="radio" class="k-radio">
-                            <label class="k-radio-label">Male</label>
-                        </li>
+                    <div>
+                        <ul class="k-radio-list k-list-horizontal">
+                            <li class="k-radio-item">
+                                <input type="radio" class="k-radio">
+                                <label class="k-radio-label">Male</label>
+                            </li>
 
-                        <li class="k-radio-item">
-                            <input type="radio" class="k-radio">
-                            <label class="k-radio-label">Female</label>
-                        </li>
-                    </ul>
+                            <li class="k-radio-item">
+                                <input type="radio" class="k-radio">
+                                <label class="k-radio-label">Female</label>
+                            </li>
+                        </ul>
 
-                    <kendo-form-hint class="k-form-hint k-text-start">
-                        <span>Hint: You need to select a gender</span>
-                    </kendo-form-hint>
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: You need to select a gender</span>
+                        </kendo-form-hint>
+                    </div>
                 </kendo-form-field>
 
                 <kendo-form-field class="k-form-field k-form-field-error">
                     <label class="k-label">First Name:<span class="k-label-optional">(Optional)</span></label>
-                    <input class="ng-invalid ng-touched k-textbox">
 
-                    <kendo-form-hint class="k-form-hint k-text-start">
-                        <span>Hint: Maximum 10 characters</span>
-                    </kendo-form-hint>
+                    <div>
+                        <input class="ng-invalid ng-touched k-textbox">
 
-                    <kendo-form-error class="k-form-error k-text-start">
-                        Error: First Name is required
-                    </kendo-form-error>
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: Maximum 10 characters</span>
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            Error: First Name is required
+                        </kendo-form-error>
+                    </div>
                 </kendo-form-field>
 
                 <kendo-form-field class="k-form-field k-form-field-error">
                     <label class="k-label">Last Name:<span class="k-label-optional">(Optional)</span></label>
-                    <input class="ng-invalid ng-touched k-textbox">
 
-                    <kendo-form-hint class="k-form-hint k-text-start">
-                        <span>Hint: Maximum 10 characters</span>
-                    </kendo-form-hint>
+                    <div>
+                        <input class="ng-invalid ng-touched k-textbox">
 
-                    <kendo-form-error class="k-form-error k-text-start">
-                        Error: Last Name is required
-                    </kendo-form-error>
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: Maximum 10 characters</span>
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            Error: Last Name is required
+                        </kendo-form-error>
+                    </div>
                 </kendo-form-field>
 
                 <kendo-form-field class="k-form-field k-form-field-error">
                     <label class="k-label">Colorpicker:</label>
-                    <kendo-colorpicker class="k-widget k-colorpicker ng-invalid ng-touched">
-                        <span class="k-picker-wrap k-state-default">
-                            <span class="k-selected-color">
-                                <span class="k-icon k-i-line"></span>
-                            </span>
-                            <span class="k-select">
-                                <span class="k-icon k-i-arrow-s"></span>
-                            </span>
-                        </span>
-                    </kendo-colorpicker>
 
-                    <kendo-form-hint class="k-form-hint k-text-start">
-                        <span>Hint: Color for your eyes</span>
-                    </kendo-form-hint>
+                    <div>
+                        <kendo-colorpicker class="k-widget k-colorpicker ng-invalid ng-touched">
+                            <span class="k-picker-wrap k-state-default">
+                                <span class="k-selected-color">
+                                    <span class="k-icon k-i-line"></span>
+                                </span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </span>
+                        </kendo-colorpicker>
 
-                    <kendo-form-error class="k-form-error k-text-start">
-                        Error: T-shirt color is required
-                    </kendo-form-error>
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: Color for your eyes</span>
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            Error: T-shirt color is required
+                        </kendo-form-error>
+                    </div>
                 </kendo-form-field>
 
                 <kendo-form-field class="k-form-field k-form-field-error">
                     <label class="k-label">MaskedTextBox:</label>
-                    <kendo-maskedtextbox class="k-widget k-maskedtextbox ng-invalid ng-touched">
-                        <input class="k-textbox" value="(359) 884-12-33-21">
-                    </kendo-maskedtextbox>
 
-                    <kendo-form-hint class="k-form-hint k-text-start">
-                        <span>Hint: Enter your phone number</span>
-                    </kendo-form-hint>
+                    <div>
+                        <kendo-maskedtextbox class="k-widget k-maskedtextbox ng-invalid ng-touched">
+                            <input class="k-textbox" value="(359) 884-12-33-21">
+                        </kendo-maskedtextbox>
 
-                    <kendo-form-error class="k-form-error k-text-start">
-                        Error: Phone number is required
-                    </kendo-form-error>
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: Enter your phone number</span>
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            Error: Phone number is required
+                        </kendo-form-error>
+                    </div>
                 </kendo-form-field>
 
                 <kendo-form-field class="k-form-field k-form-field-error">
                     <label class="k-label">NumericTextBox:</label>
-                    <kendo-numerictextbox class="k-widget k-numerictextbox ng-invalid ng-touched">
-                        <span class="k-numeric-wrap">
-                            <input class="k-input k-formatted-value" value="6">
-                            <span class="k-select">
-                                <span class="k-link k-link-increase">
-                                    <span class="k-icon k-i-arrow-n"></span>
-                                </span>
-                                <span class="k-link k-link-decrease">
-                                    <span class="k-icon k-i-arrow-s"></span>
+
+                    <div>
+                        <kendo-numerictextbox class="k-widget k-numerictextbox ng-invalid ng-touched">
+                            <span class="k-numeric-wrap">
+                                <input class="k-input k-formatted-value" value="6">
+                                <span class="k-select">
+                                    <span class="k-link k-link-increase">
+                                        <span class="k-icon k-i-arrow-n"></span>
+                                    </span>
+                                    <span class="k-link k-link-decrease">
+                                        <span class="k-icon k-i-arrow-s"></span>
+                                    </span>
                                 </span>
                             </span>
-                        </span>
-                    </kendo-numerictextbox>
+                        </kendo-numerictextbox>
 
-                    <kendo-form-hint class="k-form-hint k-text-start">
-                        <span>Hint: Number of T-shirts to purchase</span>
-                    </kendo-form-hint>
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: Number of T-shirts to purchase</span>
+                        </kendo-form-hint>
 
-                    <kendo-form-error class="k-form-error k-text-start">
-                        Error: Number of T-shirts is required
-                    </kendo-form-error>
+                        <kendo-form-error class="k-form-error k-text-start">
+                            Error: Number of T-shirts is required
+                        </kendo-form-error>
+                    </div>
                 </kendo-form-field>
 
                 <kendo-form-field class="k-form-field k-form-field-error">
                     <label class="k-label">Switch:</label>
-                    <kendo-switch class="k-widget k-switch ng-invalid k-switch-on ng-touched">
-                        <span class="k-switch-container">
-                            <span class="k-switch-label-on">ON</span>
-                            <span class="k-switch-label-off">OFF</span>
-                            <span class="k-switch-handle"></span>
-                        </span>
-                    </kendo-switch>
 
-                    <kendo-form-hint class="k-form-hint k-text-start">
-                        <span>Hint: It should be ON</span>
-                    </kendo-form-hint>
+                    <div>
+                        <kendo-switch class="k-widget k-switch ng-invalid k-switch-on ng-touched">
+                            <span class="k-switch-container">
+                                <span class="k-switch-label-on">ON</span>
+                                <span class="k-switch-label-off">OFF</span>
+                                <span class="k-switch-handle"></span>
+                            </span>
+                        </kendo-switch>
 
-                    <kendo-form-error class="k-form-error k-text-start">
-                        Error: Switch is required
-                    </kendo-form-error>
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: It should be ON</span>
+                        </kendo-form-hint>
+
+                        <kendo-form-error class="k-form-error k-text-start">
+                            Error: Switch is required
+                        </kendo-form-error>
+                    </div>
                 </kendo-form-field>
 
                 <kendo-form-field class="k-form-field k-form-field-error">
                     <label class="k-label">Slider:</label>
-                    <kendo-slider class="k-slider-horizontal k-slider k-widget k-state-default ng-invalid k-slider-transitions ng-touched" style="width: 276px;">
-                        <div class="k-slider-wrap k-slider-buttons">
-                            <a class="k-button k-button-decrease">
-                                <span class="k-icon k-i-arrow-w"></span>
-                            </a>
-                            <a class="k-button k-button-increase">
-                                <span class="k-icon k-i-arrow-e"></span>
-                            </a>
 
-                            <ul class="k-reset k-slider-items">
-                                <li class="k-tick k-first"style="width: 5px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick" style="width: 10px;"></li>
-                                <li class="k-tick k-last" style="width: 5px;"></li>
-                            </ul>
+                    <div>
+                        <kendo-slider class="k-slider-horizontal k-slider k-widget k-state-default ng-invalid k-slider-transitions ng-touched" style="width: 276px;">
+                            <div class="k-slider-wrap k-slider-buttons">
+                                <a class="k-button k-button-decrease">
+                                    <span class="k-icon k-i-arrow-w"></span>
+                                </a>
+                                <a class="k-button k-button-increase">
+                                    <span class="k-icon k-i-arrow-e"></span>
+                                </a>
 
-                            <div class="k-slider-track" style="width: 200px;">
-                                <div class="k-slider-selection" style="width: 110px;"></div>
-                                    <a class="k-draghandle" style="left: 102px; touch-action: none;"></a>
+                                <ul class="k-reset k-slider-items">
+                                    <li class="k-tick k-first"style="width: 5px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick" style="width: 10px;"></li>
+                                    <li class="k-tick k-last" style="width: 5px;"></li>
+                                </ul>
+
+                                <div class="k-slider-track" style="width: 200px;">
+                                    <div class="k-slider-selection" style="width: 110px;"></div>
+                                        <a class="k-draghandle" style="left: 102px; touch-action: none;"></a>
+                                    </div>
+
+                                    <kendo-resize-sensor></kendo-resize-sensor>
                                 </div>
+                        </kendo-slider>
 
-                                <kendo-resize-sensor></kendo-resize-sensor>
-                            </div>
-                    </kendo-slider>
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            <span>Hint: Hint text</span>
+                        </kendo-form-hint>
 
-                    <kendo-form-hint class="k-form-hint k-text-start">
-                        <span>Hint: Hint text</span>
-                    </kendo-form-hint>
-
-                    <kendo-form-error class="k-form-error k-text-start">
-                        Error: Slider is required
-                    </kendo-form-error>
+                        <kendo-form-error class="k-form-error k-text-start">
+                            Error: Slider is required
+                        </kendo-form-error>
+                    </div>
                 </kendo-form-field>
 
                 <kendo-form-field class="k-form-field k-form-field-error">
-                    <kendo-floatinglabel class="k-state-empty k-floating-label-container k-state-invalid">
-                        <input class="ng-invalid k-textbox ng-touched">
-                        <label class="k-label">FloatingLabel</label>
-                    </kendo-floatinglabel>
+                    <div>
+                        <kendo-floatinglabel class="k-state-empty k-floating-label-container k-state-invalid">
+                            <input class="ng-invalid k-textbox ng-touched">
+                            <label class="k-label">FloatingLabel</label>
+                        </kendo-floatinglabel>
 
-                    <kendo-form-hint class="k-form-hint k-text-start">
-                        Hint: Hint text
-                    </kendo-form-hint>
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            Hint: Hint text
+                        </kendo-form-hint>
 
-                    <kendo-form-error class="k-form-error k-text-start">
-                        <div>Error: required</div>
-                    </kendo-form-error>
+                        <kendo-form-error class="k-form-error k-text-start">
+                            <div>Error: required</div>
+                        </kendo-form-error>
+                    </div>
                 </kendo-form-field>
 
                 <kendo-form-field class="k-form-field k-form-field-error">
-                    <kendo-floatinglabel class="k-state-empty k-floating-label-container k-state-invalid k-state-focused">
-                        <input class="ng-invalid k-textbox ng-touched">
-                        <label class="k-label">FloatingLabel (Focused)</label>
-                    </kendo-floatinglabel>
+                    <div>
+                        <kendo-floatinglabel class="k-state-empty k-floating-label-container k-state-invalid k-state-focused">
+                            <input class="ng-invalid k-textbox ng-touched">
+                            <label class="k-label">FloatingLabel (Focused)</label>
+                        </kendo-floatinglabel>
 
-                    <kendo-form-hint class="k-form-hint k-text-start">
-                        Hint: Hint text
-                    </kendo-form-hint>
+                        <kendo-form-hint class="k-form-hint k-text-start">
+                            Hint: Hint text
+                        </kendo-form-hint>
 
-                    <kendo-form-error class="k-form-error k-text-start">
-                        <div>Error: required</div>
-                    </kendo-form-error>
+                        <kendo-form-error class="k-form-error k-text-start">
+                            <div>Error: required</div>
+                        </kendo-form-error>
+                    </div>
                 </kendo-form-field>
 
                 <div class="k-form-buttons">
