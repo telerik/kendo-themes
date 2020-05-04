@@ -166,13 +166,17 @@
         justify-content: stretch;
 
         > .k-label {
-            pointer-events: none;
-            position: absolute;
+            max-width: 90%;
             line-height: $textbox-line-height;
-            cursor: text;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            position: absolute;
             top: calc( #{$floating-label-height} + #{$input-border-width} + #{$input-padding-y} );
             left: calc( #{$input-padding-x} + #{$input-border-width} );
+            overflow: hidden;
+            cursor: text;
             transition: transform $floating-label-transition, color $floating-label-transition;
+            pointer-events: none;
         }
 
         > .k-textbox,
