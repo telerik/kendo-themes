@@ -11,7 +11,8 @@
     .k-form {
         border: 0;
 
-        .k-label {
+        .k-label,
+        kendo-label {
             display: flex;
             margin-bottom: $form-label-margin-bottom;
         }
@@ -128,26 +129,26 @@
         justify-content: flex-end;
     }
 
+    // Form Separator
+    .k-form-separator {
+        margin: $form-separator-margin;
+        border-width: 1px 0 0;
+        border-style: solid;
+        display: block;
+        flex: 0 0 auto;
+    }
+
     // Horizontal Form
     .k-form-horizontal {
         .k-form-field {
             display: flex;
-        }
 
-        .k-label:not(.k-checkbox-label),
-        .k-label:not(.k-radio-label) {
-            margin-right: $horizontal-form-label-margin-x;
-            padding-top: $horizontal-form-label-padding-top;
-            width: $horizontal-form-label-width;
-            justify-content: $horizontal-form-label-justify-content;
-        }
-
-        .k-floating-label-container,
-        .k-textbox-container {
-            .k-label {
-                margin: 0;
-                padding: 0;
-                width: auto;
+            > .k-label:not(.k-checkbox-label):not(.k-radio-label),
+            > kendo-label:not(.k-checkbox-label):not(.k-radio-label) {
+                margin-right: $horizontal-form-label-margin-x;
+                padding-top: $horizontal-form-label-padding-top;
+                width: $horizontal-form-label-width;
+                justify-content: $horizontal-form-label-justify-content;
             }
         }
 
@@ -186,9 +187,13 @@
     .k-form-horizontal {
         [dir="rtl"],
         .k-rtl & {
-            .k-label {
-                margin-right: 0;
-                margin-left: $horizontal-form-label-margin-x;
+            &.k-form-field,
+            .k-form-field {
+                > .k-label:not(.k-checkbox-label):not(.k-radio-label),
+                > kendo-label:not(.k-checkbox-label):not(.k-radio-label) {
+                    margin-right: 0;
+                    margin-left: $horizontal-form-label-margin-x;
+                }
             }
         }
     }
