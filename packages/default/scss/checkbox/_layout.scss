@@ -80,6 +80,10 @@
         position: relative;
         cursor: pointer;
 
+        .k-label {
+            cursor: pointer;
+        }
+
         // Hide empty label
         &:empty {
             display: none;
