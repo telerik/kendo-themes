@@ -1,0 +1,16 @@
+@include exports("tilelayout/theme") {
+
+    .k-tilelayout {
+        @include fill(
+            $bg: $tilelayout-bg
+        );
+    }
+
+    .k-layout-item-hint {
+        @include fill(
+            $bg: $tilelayout-hint-bg,
+            $border: $tilelayout-hint-border
+        );
+    }
+
+}

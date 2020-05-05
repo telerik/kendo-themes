@@ -695,6 +695,9 @@ $form-hint-font-style: normal !default;
 
 $form-field-margin-top: 1rem !default;
 
+$form-separator-margin: $form-field-margin-top 0 0 !default;
+$form-separator-border-color: $form-legend-border-color !default;
+
 $horizontal-form-label-padding-top: 5px !default;
 $horizontal-form-label-margin-x: 10px !default;
 $horizontal-form-label-width: 25% !default;
@@ -2422,6 +2425,19 @@ $splitbar-selected-bg: $selected-bg !default;
 $splitbar-selected-text: $selected-text !default;
 
 
+// TileLayout
+$tilelayout-border-width: 0 !default;
+$tilelayout-card-border-width: $card-border-width !default;
+
+$tilelayout-hint-border-width: 1px !default;
+$tilelayout-hint-border-radius: $card-border-radius !default;
+
+$tilelayout-bg: $gray-100 !default;
+
+$tilelayout-hint-bg: rgba(255, 255, 255, .2) !default;
+$tilelayout-hint-border: $component-border !default;
+
+
 // Filter expression builder
 $filter-padding-x: $padding-x !default;
 $filter-padding-y: $padding-y !default;
@@ -2585,16 +2601,21 @@ $pivotgrid-remove-text: null !default;
 
 
 // Listview
+$listview-padding-x: map-get( $spacing, 1 ) !default;
+$listview-padding-y: map-get( $spacing, 1 ) !default;
+$listview-border-width: 1px !default;
 $listview-font-family: $font-family !default;
 $listview-font-size: $font-size !default;
 $listview-line-height: $line-height !default;
-$listview-border-width: 1px !default;
-
-$listview-grid-gap: 10px !default;
 
 $listview-bg: $component-bg !default;
 $listview-text: $component-text !default;
 $listview-border: $component-border !default;
+
+$listview-grid-gap: 10px !default;
+
+$listview-item-padding-x: map-get( $spacing, 1 ) !default;
+$listview-item-padding-y: map-get( $spacing, 1 ) !default;
 
 $listview-item-selected-bg: rgba( $selected-bg, .25 ) !default;
 $listview-item-selected-text: null !default;
@@ -2749,14 +2770,27 @@ $scheduler-bg: $component-bg !default;
 $scheduler-text: $component-text !default;
 $scheduler-border: $component-border !default;
 
-$scheduler-event-border-radius: $border-radius !default;
-
-$scheduler-event-bg: $selected-bg !default;
-$scheduler-event-text: $selected-text !default;
 $scheduler-event-min-height: 25px !default;
+$scheduler-event-border-radius: $border-radius !default;
 $scheduler-event-line-height: calc( #{$scheduler-event-min-height} - (2 * #{$padding-y-sm}) ) !default;
 
-$scheduler-event-selected-box-shadow: inset 0 0 0 3px rgba(255, 255, 255, .5) !default;
+$scheduler-event-bg: tint( $selected-bg, 2 ) !default;
+$scheduler-event-text: $selected-text !default;
+$scheduler-event-border: null !default;
+$scheduler-event-gradient: null !default;
+$scheduler-event-shadow: null !default;
+
+$scheduler-event-hover-bg: null !default;
+$scheduler-event-hover-text: null !default;
+$scheduler-event-hover-border: null !default;
+$scheduler-event-hover-gradient: null !default;
+$scheduler-event-hover-shadow: null !default;
+
+$scheduler-event-selected-bg: $selected-bg !default;
+$scheduler-event-selected-text: $selected-text !default;
+$scheduler-event-selected-border: null !default;
+$scheduler-event-selected-gradient: null !default;
+$scheduler-event-selected-shadow: inset 0 0 0 3px rgba(255, 255, 255, .5) !default;
 
 $scheduler-cell-height: $line-height-em !default;
 $scheduler-datecolumn-width: 12em !default;
@@ -2764,7 +2798,7 @@ $scheduler-timecolumn-width: 11em !default;
 
 $scheduler-current-time-color: #ff0000 !default;
 
-$scheduler-nonwork-bg: mix( $component-text, $component-bg, ($color-level-step / 2) ) !default;
+$scheduler-nonwork-bg: try-shade( $component-bg, .5 ) !default;
 
 
 // Chat
