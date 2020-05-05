@@ -193,54 +193,90 @@
         }
     }
 
+
     // Header and footer
-    .k-scheduler-header {
+    .k-scheduler-toolbar {
+        border-width: 0;
+        border-bottom-width: $toolbar-border-width;
+        white-space: nowrap;
+        flex-shrink: 0;
+        position: relative;
+        z-index: 2;
+
         .k-widget {
             font-size: inherit;
         }
-    }
-    .k-scheduler-footer {
-        .k-widget {
-            font-size: inherit;
+
+        // Current date
+        .k-nav-current {
+            color: inherit;
+            text-decoration: none;
+            display: inline-flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            cursor: pointer;
+
+            .k-icon {
+                margin-right: $icon-spacing;
+            }
+
+            .k-sm-date-format,
+            .k-lg-date-format {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .k-sm-date-format { display: none; }
+        }
+
+
+        // Scheduler search
+        .k-scheduler-search {
+            display: inline-flex;
+            flex-flow: row nowrap;
+        }
+
+
+        // Scheduler views
+        .k-scheduler-views-wrapper {
+            margin-left: auto;
+
+            .k-views-dropdown {
+                width: auto;
+                font: inherit;
+                display: none;
+            }
+        }
+
+
+        // Responsive scheduler toolbar
+        @media (max-width: 1400px) {
+            .k-nav-current .k-lg-date-format { max-width: 200px; }
+        }
+
+        @media (max-width: 1024px) {
+
+            .k-nav-current .k-lg-date-format { display: none; }
+            .k-nav-current .k-sm-date-format { display: inline-block; }
+
+            .k-scheduler-views-wrapper .k-scheduler-views { display: none; }
+            .k-scheduler-views-wrapper .k-views-dropdown { display: inline-block; }
         }
     }
-    .k-scheduler-toolbar,
-    .k-scheduler-footer {
+    kendo-scheduler .k-scheduler-toolbar {
         @include use-background-clip();
         padding: $toolbar-padding-y $toolbar-padding-x;
-        border-width: 0;
         border-style: solid;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        flex-shrink: 0;
-        position: relative;
-        white-space: nowrap;
-
-        li .k-link {
-            padding: $toolbar-button-padding-y $toolbar-button-padding-x;
-            line-height: $toolbar-button-line-height;
-
-            box-sizing: border-box;
-        }
     }
-    .k-scheduler-toolbar { border-bottom-width: 1px; }
-    .k-scheduler-footer { border-top-width: 1px; }
 
-    // TODO: add this class to jQuery rendering
-    // after refactoring jQuery scheduler layout to be flex
-    .k-recurrence-editor {
-        display: inline-flex;
-        flex-direction: column;
-    }
-    kendo-scheduler .k-recurrence-editor {
-        display: block;
-    }
 
     // Scheduler navigation
-    .k-scheduler-navigation {
+    ul.k-scheduler-navigation {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -295,39 +331,9 @@
         .k-nav-next { @include border-right-radius-only(); }
     }
 
-    .k-scheduler-tools {
-        margin-right: $spacer;
-    }
-
-    .k-nav-current {
-
-        .k-icon {
-            margin-right: .4ex;
-        }
-
-        .k-sm-date-format,
-        .k-lg-date-format {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .k-sm-date-format {display: none;}
-
-        @media (max-width: 1024px) {
-            .k-sm-date-format { display: block; }
-            .k-lg-date-format { display: none; }
-        }
-    }
-
-    .k-scheduler-fullday {
-        .k-icon {
-            margin-right: $icon-spacing;
-        }
-    }
-
 
     // View switcher
-    .k-scheduler-views {
+    ul.k-scheduler-views {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -412,9 +418,16 @@
 
     // Scheduler footer
     .k-scheduler-footer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include box-shadow( none );
+        border-width: 0;
+        border-top-width: $toolbar-border-width;
+        white-space: nowrap;
+        flex-shrink: 0;
+        position: relative;
+
+        .k-widget {
+            font-size: inherit;
+        }
 
         li {
             @include use-background-clip();
@@ -446,6 +459,21 @@
 
         li {
             @include border-radius();
+        }
+    }
+    kendo-scheduler .k-scheduler-footer {
+        @include use-background-clip();
+        padding: $toolbar-padding-y $toolbar-padding-x;
+        border-style: solid;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .k-scheduler-fullday {
+        .k-icon {
+            margin-right: $icon-spacing;
         }
     }
 
@@ -562,28 +590,6 @@
         position: absolute;
         overflow: hidden;
         padding-right: $padding-x;
-
-        &::before {
-            content: "";
-            position: absolute;
-            display: block;
-            top: 0;
-            left: 3px;
-            right: 0;
-            bottom: 0;
-            z-index: 1;
-
-            .k-rtl & {
-                left: 0;
-                right: 3px;
-            }
-        }
-
-        &.k-state-selected {
-            &::before {
-                display: none;
-            }
-        }
 
         > div {
             position: relative;
@@ -841,6 +847,17 @@
         }
     }
     // sass-lint:enable no-important
+
+
+    // TODO: add this class to jQuery rendering
+    // after refactoring jQuery scheduler layout to be flex
+    .k-recurrence-editor {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    kendo-scheduler .k-recurrence-editor {
+        display: block;
+    }
 }
 
 
