@@ -143,8 +143,8 @@
         .k-form-field {
             display: flex;
 
-            > .k-label:not(.k-checkbox-label):not(.k-radio-label),
-            > kendo-label:not(.k-checkbox-label):not(.k-radio-label) {
+            > .k-label,
+            > kendo-label {
                 margin-right: $horizontal-form-label-margin-x;
                 padding-top: $horizontal-form-label-padding-top;
                 width: $horizontal-form-label-width;
@@ -189,8 +189,8 @@
         .k-rtl & {
             &.k-form-field,
             .k-form-field {
-                > .k-label:not(.k-checkbox-label):not(.k-radio-label),
-                > kendo-label:not(.k-checkbox-label):not(.k-radio-label) {
+                > .k-label,
+                > kendo-label {
                     margin-right: 0;
                     margin-left: $horizontal-form-label-margin-x;
                 }
