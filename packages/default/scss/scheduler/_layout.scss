@@ -484,6 +484,8 @@
         border-collapse: separate;
         border-spacing: 0;
         flex: 1 1 auto;
+        position: relative;
+        z-index: 1;
 
         > tbody > tr > td {
             padding: 0;

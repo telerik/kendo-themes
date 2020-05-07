@@ -49,6 +49,9 @@
             @include opacity( $flat-button-focused-opacity );
         }
     }
+    kendo-scheduler .k-scheduler-toolbar {
+        @include box-shadow( $toolbar-shadow );
+    }
 
 
     //Scheduler navigation
