@@ -77,7 +77,8 @@
         .k-multiple-files-group-wrapper,
         .k-file-invalid-extension-wrapper,
         .k-multiple-files-invalid-extension-wrapper,
-        .k-file-invalid-group-wrapper {
+        .k-file-invalid-group-wrapper,
+        .k-multiple-files-invalid-group-wrapper {
             color: $upload-disabled-text;
             border-color: $upload-disabled-border;
         }
