@@ -37,6 +37,34 @@
         .k-in.k-state-selected.k-state-focused {
             @include box-shadow( $treeview-item-selected-focused-shadow );
         }
+
+        // LoadMore button
+        .k-treeview-load-more-button {
+            @include fill(
+                $treeview-loadmore-text,
+                $treeview-loadmore-bg,
+                $treeview-loadmore-border
+            );
+        }
+
+        .k-treeview-load-more-button:hover,
+        .k-treeview-load-more-button.k-state-hover {
+            @include fill(
+                $treeview-loadmore-hover-text,
+                $treeview-loadmore-hover-bg,
+                $treeview-loadmore-hover-border
+            );
+        }
+
+        .k-treeview-load-more-button:focus,
+        .k-treeview-load-more-button.k-state-focused {
+            @include fill(
+                $treeview-loadmore-focus-text,
+                $treeview-loadmore-focus-bg,
+                $treeview-loadmore-focus-border
+            );
+            @include box-shadow( $treeview-loadmore-focus-shadow );
+        }
     }
 
 }
