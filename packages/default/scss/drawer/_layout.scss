@@ -124,6 +124,7 @@
     }
     .k-drawer-item {
         padding: $drawer-item-padding-y $drawer-item-padding-x;
+        outline: 0;
         color: inherit;
         font-size: $drawer-item-font-size;
         line-height: $drawer-item-line-height;

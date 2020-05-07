@@ -1753,15 +1753,19 @@ $upload-dropzone-spacing: ($upload-dropzone-padding-x * 2) !default;
 $upload-dropzone-bg: $toolbar-bg !default;
 $upload-dropzone-text: $toolbar-text !default;
 $upload-dropzone-border: $toolbar-border !default;
+$upload-dropzone-hover-bg: $hovered-bg !default;
 
 $upload-item-padding-x: $cell-padding !default;
 $upload-item-padding-y: $cell-padding !default;
 
+$upload-multiple-items-spacing: 12px !default;
+
+$upload-validation-font-size: 11px !default;
 $upload-icon-spacing: $upload-dropzone-padding-x !default;
 
-$upload-item-image-width: 24px !default;
-$upload-item-image-height: 34px !default;
-$upload-item-image-border: 2px !default;
+$upload-item-image-width: 30px !default;
+$upload-item-image-height: 30px !default;
+$upload-item-image-border: 0 !default; // TODO: remove
 
 $upload-group-icon-size: $icon-size-lg !default;
 
