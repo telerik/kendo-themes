@@ -2163,7 +2163,7 @@ $stepper-indicator-focus-calc-offset: calc( #{$stepper-indicator-focus-border-wi
 
 $stepper-indicator-bg: $component-bg !default;
 $stepper-indicator-text: $component-text !default;
-$stepper-indicator-border: $component-border !default;
+$stepper-indicator-border: #cccccc !default;
 
 $stepper-indicator-hover-bg: try-shade( $stepper-indicator-bg ) !default;
 $stepper-indicator-hover-text: null !default;
@@ -2206,7 +2206,10 @@ $stepper-optional-label-opacity: .35 !default;
 $stepper-disabled-opacity: .6 !default;
 
 $stepper-progressbar-size: 2px !default;
-$stepper-connector-calc-offset: calc(( #{$stepper-indicator-height} / 2) + #{$stepper-progressbar-size / 2} + #{$stepper-indicator-focus-offset}) !default;
+$stepper-progressbar-bg: #cccccc !default;
+$stepper-progressbar-text: null !default;
+$stepper-progressbar-fill-bg: null !default;
+$stepper-progressbar-fill-text: null !default;
 
 $stepper-content-transition-property: height !default;
 $stepper-content-transition-duration: 300ms !default;

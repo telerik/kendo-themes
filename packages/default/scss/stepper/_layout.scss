@@ -139,9 +139,16 @@
     .k-step-list-horizontal {
         flex-direction: row;
 
-        .k-step { flex: 1 0 auto; }
+        .k-step {
+            flex: 1 0 auto;
+            text-align: center;
+        }
 
-        .k-step-link { flex-direction: column; }
+        .k-step-link {
+            margin: auto;
+            max-width: 10em;
+            flex-direction: column;
+        }
 
         // Label
         .k-step-label {
