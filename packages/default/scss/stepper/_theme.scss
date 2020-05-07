@@ -156,6 +156,21 @@
         .k-step-optional .k-step-label-optional {
             @include opacity( $stepper-optional-label-opacity );
         }
+
+        // Progressbar
+        .k-progressbar {
+            @include fill(
+                $color: $stepper-progressbar-text,
+                $bg: $stepper-progressbar-bg
+            );
+
+            .k-state-selected {
+                @include fill(
+                    $color: $stepper-progressbar-fill-text,
+                    $bg: $stepper-progressbar-fill-bg
+                );
+            }
+        }
     }
 
 }
