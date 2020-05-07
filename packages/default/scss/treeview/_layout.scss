@@ -67,6 +67,26 @@
             z-index: 1;
         }
 
+        // LoadMore button
+        .k-treeview-load-more-button {
+            cursor: pointer;
+
+            &:hover,
+            &.k-state-hover,
+            &:focus,
+            &.k-state-focused {
+                text-decoration: underline;
+            }
+        }
+        .k-treeview-load-more-checkboxes-container {
+            padding-left: $treeview-loadmore-checkboxes-padding-x;
+
+            .k-i-loading {
+                margin-left: $treeview-loadmore-checkboxes-icon-indent;
+                margin-right: $treeview-loadmore-checkboxes-icon-margin-x;
+            }
+        }
+
         // Expand / collapse
         .k-i-expand,
         .k-i-collapse {
@@ -94,7 +114,6 @@
         }
     }
 
-
     // RTL
     .k-rtl .k-treeview,
     .k-treeview[dir="rtl"] {
@@ -103,6 +122,16 @@
         .k-item {
             padding-left: 0;
             padding-right: $treeview-indent;
+        }
+
+        .k-treeview-load-more-checkboxes-container {
+            padding-left: 0;
+            padding-right: $treeview-loadmore-checkboxes-padding-x;
+
+            .k-i-loading {
+                margin-left: $treeview-loadmore-checkboxes-icon-margin-x;
+                margin-right: $treeview-loadmore-checkboxes-icon-indent;
+            }
         }
 
         // Expand / collapse
