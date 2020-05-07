@@ -1,0 +1,28 @@
+@include exports( "common/utils/layout" ) {
+
+    // sass-lint:disable-block no-important
+    // sass-lint:disable-block indentation
+
+    // Padding
+    @each $name, $prop in (
+        pt: padding-top,
+        pr: padding-right,
+        pb: padding-bottom,
+        pl: padding-left
+    ) {
+        .k-#{$name}-0 { #{$prop}: 0; }
+        .k-#{$name}-0-f { #{$prop}: 0 !important; }
+    }
+
+    // Margin
+    @each $name, $prop in (
+        mt: margin-top,
+        mr: margin-right,
+        mb: margin-bottom,
+        ml: margin-left
+    ) {
+        .k-#{$name}-0 { #{$prop}: 0; }
+        .k-#{$name}-0-f { #{$prop}: 0 !important; }
+    }
+
+}
