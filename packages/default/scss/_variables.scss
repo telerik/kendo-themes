@@ -1752,6 +1752,7 @@ $upload-dropzone-padding-y: $toolbar-padding-y !default;
 $upload-dropzone-spacing: ($upload-dropzone-padding-x * 2) !default;
 $upload-dropzone-bg: $toolbar-bg !default;
 $upload-dropzone-text: $toolbar-text !default;
+$upload-dropzone-text-opacity: .6 !default;
 $upload-dropzone-border: $toolbar-border !default;
 $upload-dropzone-hover-bg: $hovered-bg !default;
 
@@ -1762,6 +1763,7 @@ $upload-multiple-items-spacing: 12px !default;
 
 $upload-validation-font-size: 11px !default;
 $upload-icon-spacing: $upload-dropzone-padding-x !default;
+$upload-icon-color: #d6d6d6 !default;
 
 $upload-item-image-width: 30px !default;
 $upload-item-image-height: 30px !default;

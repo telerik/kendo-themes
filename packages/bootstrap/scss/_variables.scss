@@ -1744,7 +1744,8 @@ $upload-dropzone-padding-x: map-get( $spacing, 2 ) !default;
 $upload-dropzone-padding-y: map-get( $spacing, 2 ) !default;
 $upload-dropzone-spacing: ($upload-dropzone-padding-x * 2) !default;
 $upload-dropzone-bg: $toolbar-bg !default;
-$upload-dropzone-text: $toolbar-text !default;
+$upload-dropzone-text: darken($component-bg, 27%) !default;
+$upload-dropzone-text-opacity: null !default;
 $upload-dropzone-border: $toolbar-border !default;
 $upload-dropzone-hover-bg: try-shade( $upload-dropzone-bg, .2) !default;
 
@@ -1755,6 +1756,7 @@ $upload-multiple-items-spacing: 12px !default;
 
 $upload-validation-font-size: 11px !default;
 $upload-icon-spacing: $upload-dropzone-padding-x !default;
+$upload-icon-color: darken($component-bg, 27%) !default;
 
 $upload-item-image-width: 24px !default;
 $upload-item-image-height: 34px !default;
@@ -1784,10 +1786,10 @@ $external-dropzone-padding-y: $upload-dropzone-padding-y * 13 !default;
 $external-dropzone-spacing: 8px !default;
 
 $external-dropzone-bg: $upload-dropzone-bg !default;
-$external-dropzone-text: $upload-dropzone-text !default;
+$external-dropzone-text: $toolbar-text !default;
 $external-dropzone-border: $upload-dropzone-border !default;
 
-$external-dropzone-icon-opacity: 1 !default;
+$external-dropzone-icon-opacity: null !default;
 
 // Window
 $window-border-width: 1px !default;
