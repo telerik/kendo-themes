@@ -18,6 +18,13 @@
             &.k-dropzone-hovered {
                 background-color: $upload-dropzone-hover-bg;
             }
+
+            .k-upload-status,
+            .k-dropzone-hint {
+                color: $upload-dropzone-text;
+                opacity: $upload-dropzone-text-opacity;
+            }
+
         }
 
         .k-upload-files,
@@ -38,7 +45,7 @@
         }
 
         .k-upload-status {
-            color: $upload-disabled-text;
+            color: $base-text;
         }
 
         // Upload status: uploading
@@ -79,8 +86,8 @@
         .k-multiple-files-invalid-extension-wrapper,
         .k-file-invalid-group-wrapper,
         .k-multiple-files-invalid-group-wrapper {
-            color: $upload-disabled-text;
-            border-color: $upload-disabled-border;
+            color: $upload-icon-color;
+            border-color: $upload-icon-color;
         }
 
         // old rendering
@@ -90,7 +97,7 @@
         .k-file-invalid-group-wrapper,
         .k-multiple-files-invalid-group-wrapper,
         .k-file-error .k-file-group-wrapper {
-            border-color: $upload-disabled-border;
+            border-color: $upload-icon-color;
         }
 
         // old rendering
@@ -100,14 +107,14 @@
         .k-multiple-files-invalid-extension-wrapper::before,
         .k-file-error .k-file-extension-wrapper::before {
             background-color: $upload-bg;
-            border-color: transparent transparent $upload-disabled-border $upload-disabled-border;
+            border-color: transparent transparent $upload-icon-color $upload-icon-color;
         }
 
         // old rendering
         .k-multiple-files-extension-wrapper::after,
         .k-multiple-files-invalid-extension-wrapper::after {
-            border-top-color: $upload-disabled-border;
-            border-left-color: $upload-disabled-border;
+            border-top-color: $upload-icon-color;
+            border-left-color: $upload-icon-color;
         }
 
         .k-file-size,

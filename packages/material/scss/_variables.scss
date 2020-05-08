@@ -1793,7 +1793,8 @@ $upload-dropzone-padding-x: ($cell-padding * 2) !default;
 $upload-dropzone-padding-y: ($cell-padding * 2) !default;
 $upload-dropzone-spacing: $upload-dropzone-padding-x !default;
 $upload-dropzone-bg: $upload-bg !default;
-$upload-dropzone-text: $upload-text !default;
+$upload-dropzone-text: rgba(0, 0, 0, .54) !default;
+$upload-dropzone-text-opacity: null !default;
 $upload-dropzone-border: $upload-border !default;
 $upload-dropzone-hover-bg: $hovered-bg !default;
 
@@ -1804,6 +1805,7 @@ $upload-multiple-items-spacing: 12px !default;
 
 $upload-validation-font-size: 12px !default;
 $upload-icon-spacing: $upload-dropzone-padding-x / 2 !default;
+$upload-icon-color: rgba($base-text, .52) !default;
 
 $upload-item-image-width: 24px !default;
 $upload-item-image-height: 28px !default;
@@ -1833,10 +1835,10 @@ $external-dropzone-padding-y: $upload-dropzone-padding-y * 4 !default;
 $external-dropzone-spacing: 6px !default;
 
 $external-dropzone-bg: rgba(0, 0, 0, .08) !default;
-$external-dropzone-text: $upload-dropzone-text !default;
+$external-dropzone-text: $toolbar-text !default;
 $external-dropzone-border: rgba(0, 0, 0, .15) !default;
 
-$external-dropzone-icon-opacity: .6 !default;
+$external-dropzone-icon-opacity: .56 !default;
 
 // Window
 $window-border-width: 0 !default;
