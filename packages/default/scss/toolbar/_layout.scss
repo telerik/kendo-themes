@@ -121,7 +121,8 @@
 
 
         // Separator
-        .k-separator {
+        .k-separator,
+        .k-toolbar-separator {
             width: 0;
             height: $line-height-em;
             border-width: 0 0 0 1px;
@@ -130,9 +131,17 @@
 
 
         // Spacer
-        .k-spacer {
+        .k-spacer,
+        .k-toolbar-spacer {
             height: $line-height-em;
             flex: 1 1 auto;
+        }
+
+
+        // Template
+        .k-toolbar-template {
+            align-self: center;
+            align-items: center;
         }
 
     }
