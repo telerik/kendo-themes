@@ -329,12 +329,11 @@
         .k-multiple-files-wrapper,
         .k-file-single > .k-file-name-size-wrapper,
         .k-file > .k-file-name-size-wrapper {
-            margin-left: 0;
+            margin-left: $padding-x;
             margin-right: 0;
             min-height: $upload-group-icon-size;
             display: block;
             overflow: hidden;
-            margin-left: $padding-x;
             flex: 1 0 0;
         }
 
