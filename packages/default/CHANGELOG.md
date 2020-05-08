@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.18.0"></a>
+# 4.18.0 (2020-05-08)
+
+
+### Bug Fixes
+
+* **drawer:** remove item outline ([3542597](https://github.com/telerik/kendo-themes/commit/3542597))
+* **filemanager:** view container should overflow ([5b8ee7e](https://github.com/telerik/kendo-themes/commit/5b8ee7e))
+* **forms:** various fixes and adjustments ([24b96bc](https://github.com/telerik/kendo-themes/commit/24b96bc))
+* **listview:** add styles for various listview settings ([6b218a5](https://github.com/telerik/kendo-themes/commit/6b218a5))
+* **messagebox:** add link style ([2b00a57](https://github.com/telerik/kendo-themes/commit/2b00a57))
+* **pdf-viewer:** remove border from pager ([e81bdf1](https://github.com/telerik/kendo-themes/commit/e81bdf1))
+* **scheduler:** scheduler toolbar should cast shadow over scheduler content ([211c01e](https://github.com/telerik/kendo-themes/commit/211c01e))
+* **scheduler:** use toolbar styles for scheduler toolbar ([6b7a40f](https://github.com/telerik/kendo-themes/commit/6b7a40f))
+* **stepper:** add color contrast for progressbar/border future steps ([223effd](https://github.com/telerik/kendo-themes/commit/223effd))
+* **toolbar:** add styles for toolbar template containers ([fccc7fd](https://github.com/telerik/kendo-themes/commit/fccc7fd))
+* **upload:** update colors to match the new design ([3375e05](https://github.com/telerik/kendo-themes/commit/3375e05))
+
+
+### Features
+
+* **dropzone:** add external dropzone styling and tests ([0879f80](https://github.com/telerik/kendo-themes/commit/0879f80))
+* **textbox:** jQuery styles ([b445dba](https://github.com/telerik/kendo-themes/commit/b445dba))
+* **tilelayout:** add styles ([82ccd6a](https://github.com/telerik/kendo-themes/commit/82ccd6a))
+* **treeview:** add styles for tree view load more functionality ([d4576c4](https://github.com/telerik/kendo-themes/commit/d4576c4))
+* **upload:** update styling to match the design ([553a69e](https://github.com/telerik/kendo-themes/commit/553a69e))
+* **utils:** add layout utility classes ([2526b80](https://github.com/telerik/kendo-themes/commit/2526b80))
+
+
+
+
 <a name="4.17.0"></a>
 # [4.17.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.16.0...@progress/kendo-theme-default@4.17.0) (2020-04-09)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.2"></a>
+## 0.6.2 (2020-05-08)
+
+
+### Bug Fixes
+
+* **messagebox:** add link style ([2b00a57](https://github.com/telerik/kendo-themes/commit/2b00a57))
+
+
+
+
 <a name="0.6.1"></a>
 ## [0.6.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.6.0...@progress/kendo-theme-tasks@0.6.1) (2020-04-09)
 
