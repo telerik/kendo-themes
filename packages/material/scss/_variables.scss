@@ -2244,6 +2244,7 @@ $stepper-indicator-current-disabled-border: $stepper-indicator-done-disabled-bor
 $stepper-label-text: $component-text !default;
 $stepper-label-success-text: $success !default;
 $stepper-label-error-text: $error !default;
+$stepper-label-hover-text: darken($body-text, 13%) !default;
 $stepper-label-disabled-text: mix($component-text, #ffffff, 60%) !default;
 
 $stepper-optional-label-opacity: .35 !default;

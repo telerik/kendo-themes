@@ -115,9 +115,7 @@
         }
         .k-step-label .k-icon { margin-left: $icon-spacing; }
 
-        .k-step-current .k-step-label,
-        .k-step-hover .k-step-label,
-        .k-step:hover .k-step-label {
+        .k-step-current .k-step-label {
             font-weight: bold;
         }
 

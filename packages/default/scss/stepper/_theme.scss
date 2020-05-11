@@ -14,6 +14,10 @@
             // Hover
             &:hover,
             &.k-step-hover {
+                .k-step-label {
+                    color: $stepper-label-hover-text;
+                }
+
                 .k-step-indicator {
                     @include fill(
                         $stepper-indicator-hover-text,
@@ -142,6 +146,20 @@
         .k-step-error .k-step-label {
             @include fill( $color: $stepper-label-error-text );
         }
+
+        .k-step-error {
+            .k-step-label {
+                @include fill( $color: $stepper-label-error-text );
+            }
+
+            &:hover,
+            &.k-step-hover {
+                .k-step-label {
+                    @include fill( $color: $stepper-label-error-text );
+                }
+            }
+        }
+
         .k-step-disabled .k-step-label {
             @include fill( $color: $stepper-label-disabled-text );
         }
