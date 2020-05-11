@@ -1,6 +1,8 @@
 @include exports("dropzone/layout") {
     // Dropzone
-    .k-external-dropzone {}
+    .k-external-dropzone {
+        display: flex;
+    }
 
     // Dropzpne icon + hint + note wrapper
     .k-dropzone-inner {
@@ -13,7 +15,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: stretch;
+        justify-content: center;
         position: relative;
         cursor: pointer;
 
