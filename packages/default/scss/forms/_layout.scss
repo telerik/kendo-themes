@@ -12,9 +12,11 @@
         border: 0;
 
         .k-label,
-        kendo-label {
-            display: flex;
+        kendo-label,
+        .k-form-label {
             margin-bottom: $form-label-margin-bottom;
+            display: flex;
+            flex-flow: row nowrap;
         }
         .k-checkbox-label,
         .k-radio-label {
@@ -61,7 +63,8 @@
         }
 
         .k-form-field-disabled {
-            .k-label {
+            .k-label,
+            .k-form-label {
                 @include disabled( $disabled-styling );
             }
         }
@@ -144,11 +147,18 @@
             display: flex;
 
             > .k-label,
-            > kendo-label {
+            > kendo-label,
+            > .k-form-label {
                 margin-right: $horizontal-form-label-margin-x;
                 padding-top: $horizontal-form-label-padding-top;
                 width: $horizontal-form-label-width;
-                justify-content: $horizontal-form-label-justify-content;
+                flex-direction: column;
+                align-items: $horizontal-form-label-align;
+                justify-content: flex-start;
+            }
+            .k-label-optional {
+                margin: 0;
+                align-self: inherit;
             }
         }
 
@@ -190,7 +200,8 @@
             &.k-form-field,
             .k-form-field {
                 > .k-label,
-                > kendo-label {
+                > kendo-label,
+                > .k-form-label {
                     margin-right: 0;
                     margin-left: $horizontal-form-label-margin-x;
                 }
