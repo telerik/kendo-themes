@@ -91,6 +91,7 @@
     .k-prompt-container {
         padding: $window-inner-padding-y $window-inner-padding-x;
         border-width: 0;
+        border-color: inherit;
         color: inherit;
         background: none;
         outline: 0;
