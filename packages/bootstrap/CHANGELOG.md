@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.16.1"></a>
+## [4.16.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.16.0...@progress/kendo-theme-bootstrap@4.16.1) (2020-05-11)
+
+
+### Bug Fixes
+
+* **forms:** place optional label below label in horizontal forms ([5fbc252](https://github.com/telerik/kendo-themes/commit/5fbc252))
+* **stepper:** update steps hover styling ([9119340](https://github.com/telerik/kendo-themes/commit/9119340))
+
+
+
+
 <a name="4.16.0"></a>
 # 4.16.0 (2020-05-08)
 
