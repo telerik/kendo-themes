@@ -80,11 +80,6 @@
                 right: 0;
             }
 
-            .k-button .k-icon.k-i-arrow-e,
-            .k-button .k-icon.k-i-arrow-w {
-                transform: scaleX(-1);
-            }
-
             .k-button-increase {
                 left: 0;
                 right: auto;
@@ -251,6 +246,11 @@
             }
             .k-slider-buttons .k-slider-track {
                 right: $slider-button-spacing;
+            }
+
+            .k-button .k-i-arrow-e,
+            .k-button .k-i-arrow-w {
+                transform: scaleX(-1);
             }
 
             .k-label {
