@@ -6,6 +6,7 @@
 
     // Dropzpne icon + hint + note wrapper
     .k-dropzone-inner {
+        @include use-background-clip();
         padding: $external-dropzone-padding-y $external-dropzone-padding-x;
         width: 100%;
         height: 100%;
