@@ -1177,6 +1177,11 @@
             width: 6em;
             margin: (2 * $item-spacing) 0;
         }
+
+        .k-switch {
+            width: $switch-size;
+            display: inline-flex;
+        }
     }
 
     .k-multicheck-wrap {
