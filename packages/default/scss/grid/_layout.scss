@@ -429,6 +429,7 @@
             padding: $header-half-padding-y 0 $header-half-padding-y $grid-grouping-header-padding-x;
 
             &:last-child {
+                display: block;
                 flex-grow: 1;
                 line-height: $button-calc-size;
             }
