@@ -1,7 +1,7 @@
 /// <reference path="../data/metrics.js" />
 
 
-var TestHelper = (function(){
+const TestHelper = (function() {
 
     function TestHelper() {}
 
@@ -9,13 +9,12 @@ var TestHelper = (function(){
     // #region Fields
     TestHelper.fixture = null;
     TestHelper.fixtureID = "fixture_" + Date.now();
-    var $fixture;
     // #endregion
 
 
     // #region Methods
     TestHelper.createFixture = function(id) {
-        var fixture = document.createElement("div");
+        const fixture = document.createElement("div");
         fixture.id = id || TestHelper.fixtureID;
         document.body.appendChild(fixture);
 
@@ -23,7 +22,7 @@ var TestHelper = (function(){
     };
     TestHelper.loadFixture = function(url) {
 
-        var $ = window.jQuery;
+        const $ = window.jQuery;
 
         if (!TestHelper.fixture) {
             TestHelper.fixture = TestHelper.createFixture();
@@ -33,8 +32,8 @@ var TestHelper = (function(){
         $.ajax(url, {
             async: false,
             cache: false,
-            success: function(data, status, $xhr) {
-                var tmp = document.createElement("_CONTAINER");
+            success: function(data, status, $xhr) { // eslint-disable-line no-unused-vars
+                let tmp = document.createElement("_CONTAINER");
                 tmp.innerHTML = data;
                 $(tmp).find("title, meta, link, style, script").remove();
                 tmp.innerHTML = tmp.innerHTML.trim();
@@ -50,7 +49,7 @@ var TestHelper = (function(){
     TestHelper.clearFixture = function() {
         TestHelper.fixture.innerHTML = "";
     };
-    TestHelper.removeFixture = function(){
+    TestHelper.removeFixture = function() {
         TestHelper.clearFixture();
         delete TestHelper.$fixture;
         TestHelper.fixture.remove();
@@ -65,6 +64,8 @@ var TestHelper = (function(){
 
 
 (function() {
+
+    const $ = window.jQuery;
 
     // Qunit settings
     QUnit.config.noglobals = true;
@@ -82,8 +83,8 @@ var TestHelper = (function(){
 
     // Custom assertions
     QUnit.assert.gt = function(a, b, message) {
-        var actual = a > b;
-        var expected = true;
+        const actual = a > b;
+        const expected = true;
 
         this.pushResult({
             result: actual === expected,
@@ -93,8 +94,8 @@ var TestHelper = (function(){
         });
     };
     QUnit.assert.gte = function(a, b, message) {
-        var actual = a >= b;
-        var expected = true;
+        const actual = a >= b;
+        const expected = true;
 
         this.pushResult({
             result: actual === expected,
@@ -104,8 +105,8 @@ var TestHelper = (function(){
         });
     };
     QUnit.assert.lt = function(a, b, message) {
-        var actual = a < b;
-        var expected = true;
+        const actual = a < b;
+        const expected = true;
 
         this.pushResult({
             result: actual === expected,
@@ -115,8 +116,8 @@ var TestHelper = (function(){
         });
     };
     QUnit.assert.lte = function(a, b, message) {
-        var actual = a <= b;
-        var expected = true;
+        const actual = a <= b;
+        const expected = true;
 
         this.pushResult({
             result: actual === expected,
@@ -130,19 +131,19 @@ var TestHelper = (function(){
 
 
 // Test methods
-function getHeight(element) {
-    var $ = window.jQuery;
+function getHeight(element) { // eslint-disable-line no-unused-vars
+    const $ = window.jQuery;
 
     return $(element).outerHeight();
 }
-function getWidth(element) {
-    var $ = window.jQuery;
+function getWidth(element) { // eslint-disable-line no-unused-vars
+    const $ = window.jQuery;
 
     return $(element).outerWidth();
 }
-function getSize(element) {
-    var $ = window.jQuery;
-    var $element = $(element);
+function getSize(element) { // eslint-disable-line no-unused-vars
+    const $ = window.jQuery;
+    const $element = $(element);
 
     return { width: $element.outerWidth(), height: $element.outerHeight() };
 }

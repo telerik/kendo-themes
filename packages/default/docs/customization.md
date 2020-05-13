@@ -1258,7 +1258,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
-### typography
+### Typography
 
 <table class="theme-variables">
     <colgroup>

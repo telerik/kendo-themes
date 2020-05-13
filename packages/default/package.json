@@ -31,18 +31,11 @@
     "dart:watch": "gulp dart:watch",
     "dart:swatches": "gulp dart:swatches",
     "dart:flat": "gulp dart:flat",
-    "lint": "gulp lint",
-    "docs": "gulp docs",
-    "docs:check": "gulp docs:check",
-    "ci": "gulp ci",
-    "ci:full": "gulp ci:full",
-    "embed-assets": "gulp assets",
     "twbs-compat": "gulp sass --file ./build/twbs-compat.scss",
-    "prepublishOnly": "gulp prepublish"
+    "prepublishOnly": "echo 'no prebublish for default theme'"
   },
   "devDependencies": {
     "@progress/kendo-theme-tasks": "^0.6.2",
-    "bootstrap": "^4.4.1",
-    "gulp": "^4.0.2"
+    "bootstrap": "^4.4.1"
   }
 }

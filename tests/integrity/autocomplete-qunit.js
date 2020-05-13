@@ -8,8 +8,9 @@ QUnit.module("Autocomplete", {
 });
 
 QUnit.test("Autocomplete height should be 30", function( assert ) {
-    var $autocomplete = $("#autocomplete");
-    var autocompleteHeight = getHeight( $autocomplete );
+    let $ = window.jQuery;
+    let $autocomplete = $("#autocomplete");
+    let autocompleteHeight = getHeight( $autocomplete );
 
     assert.equal( autocompleteHeight, metrics.autocomplete.height );
 });

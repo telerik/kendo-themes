@@ -1,11 +1,11 @@
 ---
-title: Customizing typography
+title: Customizing Typography
 description: "Refer to the list of the Kendo UI Default theme variables available for customization."
 slug: variables_kendothemedefault_typography
 position: 9
 ---
 
-# Customizing typography
+# Customizing Typography
 
 The following table lists the available variables for customization.
 

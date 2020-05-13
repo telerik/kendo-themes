@@ -1,5 +1,3 @@
-'use strict';
-
 const fs = require('fs');
 const path = require('path');
 const sassdocExtras = require('sassdoc-extras');
@@ -8,9 +6,7 @@ const nunjucks = require('./nunjucks');
 module.exports = function(dest, context) {
     const capitalize = (str) => str[0].toUpperCase() + str.substring(1);
 
-    sassdocExtras(context,
-        'resolveVariables'
-    );
+    sassdocExtras( context, 'resolveVariables' );
 
     const data = context.data
         .filter((item) => item.access === 'public')
@@ -56,7 +52,7 @@ module.exports = function(dest, context) {
     let output = nunjucks.render('customization.md.njk', data);
     output = output.replace(/\r?\n/g, '\n');
 
-    fs.writeFileSync(path.join('docs', 'customization.md'), output);
+    fs.writeFileSync(path.join(context.dist, 'customization.md'), output);
 
     data.variableGroups.forEach(group => {
         group.meta = data.meta;
@@ -65,7 +61,7 @@ module.exports = function(dest, context) {
         let output = nunjucks.render('customization-variable-group.md.njk', group);
         output = output.replace(/\r?\n/g, '\n');
 
-        fs.writeFileSync(path.join('docs', `customization-${group.id}.md`), output);
+        fs.writeFileSync(path.join(context.dist, `customization-${group.id}.md`), output);
     });
 
     return Promise.resolve();
