@@ -1,1 +1,14 @@
 @import "~@progress/kendo-theme-default/scss/drawer/_theme.scss";
+
+@include exports( "drawer/theme/material" ) {
+    .k-drawer-item {
+        &.k-state-selected {
+
+            &:focus,
+            &.k-state-focused {
+                background-color: $drawer-focused-bg;
+                box-shadow: $drawer-focused-shadow;
+            }
+        }
+    }
+}

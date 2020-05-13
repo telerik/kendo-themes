@@ -1874,7 +1874,7 @@ $drawer-hovered-text: $hovered-text !default;
 $drawer-hovered-bg: $hovered-bg !default;
 
 $drawer-focused-bg: $hovered-bg !default;
-$drawer-focused-shadow: $list-item-focused-shadow !default;
+$drawer-focused-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .15) !default;
 
 $drawer-selected-text: $selected-text !default;
 $drawer-selected-bg: $selected-bg !default;
