@@ -8,8 +8,9 @@ QUnit.module("Masked textbox", {
 });
 
 QUnit.test("Masked textbox height should be 30", function( assert ) {
-    var $maskedtextbox = $("#maskedtextbox");
-    var maskedtextboxHeight = getHeight( $maskedtextbox );
+    let $ = window.jQuery;
+    let $maskedtextbox = $("#maskedtextbox");
+    let maskedtextboxHeight = getHeight( $maskedtextbox );
 
     assert.equal( maskedtextboxHeight, metrics.maskedtextbox.height );
 });

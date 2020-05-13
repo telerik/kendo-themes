@@ -1,14 +1,25 @@
 {
   "devDependencies": {
+    "eslint": "^7.0.0",
     "ghooks": "^1.0.3",
+    "glob": "^7.1.6",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-sass-lint": "^1.4.0",
+    "gulplog": "^1.0.0",
     "http-server": "^0.12.1",
     "jquery": "^3.4.1",
     "karma": "^4.4.1",
     "karma-chrome-launcher": "^3.1.0",
     "karma-qunit": "^4.0.0",
     "lerna": "^2.4.0",
+    "mime": "^2.4.5",
+    "nunjucks": "^3.2.1",
     "pastshots": "^1.5.1",
     "qunit": "^2.9.3",
+    "sass-lint": "^1.13.1",
+    "sassdoc": "^2.7.1",
+    "sassdoc-extras": "^3.0.0",
     "validate-commit-msg": "^1.1.1"
   },
   "scripts": {
@@ -18,12 +29,9 @@
     "dart": "bash ./build/foreach.sh dart",
     "dart:swatches": "bash ./build/foreach.sh dart:swatches",
     "dart:flat": "bash ./build/foreach.sh dart:flat",
-    "lint": "bash ./build/foreach.sh lint",
-    "docs": "bash ./build/foreach.sh docs",
-    "docs:check": "bash ./build/foreach.sh docs:check",
-    "ci": "./build/foreach.sh ci && npm run karma-single && npm run visual-test",
-    "ci:full": "./build/foreach.sh ci:full && npm run karma-single && npm run visual-test",
-    "ci:theme": "bash ./build/foreach.sh ci",
+    "lint": "gulp lint",
+    "docs": "gulp docs",
+    "docs:check": "gulp docs:check",
     "visual-tests": "./build/visual-test.sh",
     "create-screenshots": "./build/create-screenshots.sh",
     "karma-watch": "karma start --auto-watch --no-single-run",
@@ -34,7 +42,7 @@
     "ghooks": {
       "pre-commit": "npm run lint",
       "commit-msg": "validate-commit-msg",
-      "pre-push": "npm run ci:theme"
+      "pre-push": "npm run lint && npm run sass && npm run docs:check"
     },
     "validate-commit-msg": {
       "types": [

@@ -8,16 +8,18 @@ QUnit.module("Numeric", {
 });
 
 QUnit.test("Numeric height should be 30", function( assert ) {
-    var $numeric = $("#numeric");
-    var numericHeight = getHeight( $numeric );
+    let $ = window.jQuery;
+    let $numeric = $("#numeric");
+    let numericHeight = getHeight( $numeric );
 
     assert.equal( numericHeight, metrics.numeric.height );
 });
 
 QUnit.test("Numeric select size should be 28:28", function( assert ) {
-    var numeic = $("#numeric");
-    var $select = numeic.find(".k-select");
-    var selectSize = getSize( $select );
+    let $ = window.jQuery;
+    let numeic = $("#numeric");
+    let $select = numeic.find(".k-select");
+    let selectSize = getSize( $select );
 
     assert.equal( selectSize.width, metrics.numeric.select.width );
     assert.equal( selectSize.height, metrics.numeric.select.height );

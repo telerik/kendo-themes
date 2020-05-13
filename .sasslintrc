@@ -2,10 +2,10 @@ options:
     verbose: true
 
 files:
-    include: 'scss/**/*.scss'
+    include: 'packages/*/scss/**/*.scss'
     ignore:
-        - 'scss/mixins/**/*.scss'
-        - 'scss/functions/**/*.scss'
+        - 'packages/*/scss/mixins/**/*.scss'
+        - 'packages/*/scss/functions/**/*.scss'
 
 rules:
     no-ids: 2

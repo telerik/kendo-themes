@@ -8,15 +8,17 @@ QUnit.module("Button", {
 });
 
 QUnit.test("Generic button height should be 30", function( assert ) {
-    var $button = $("#button");
-    var buttonHeight = getHeight( $button );
+    let $ = window.jQuery;
+    let $button = $("#button");
+    let buttonHeight = getHeight( $button );
 
     assert.equal( buttonHeight, metrics.button.height );
 });
 
 QUnit.test("Icon button size should be 30:30", function( assert ) {
-    var $iconButton = $("#icon-button");
-    var iconButtonSize = getSize( $iconButton );
+    let $ = window.jQuery;
+    let $iconButton = $("#icon-button");
+    let iconButtonSize = getSize( $iconButton );
 
     assert.equal( iconButtonSize.width, metrics.iconButton.width );
     assert.equal( iconButtonSize.height, metrics.iconButton.height );

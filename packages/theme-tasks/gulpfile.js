@@ -2,21 +2,15 @@
 
 const fs = require("fs");
 const path = require("path");
-const cp = require("child_process");
-const glob = require("glob");
 const gulp = require("gulp");
 const PluginError = require("plugin-error");
 const logger = require("gulplog");
 const colors = require("ansi-colors");
-const mime = require("mime");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const calc = require("postcss-calc");
 const Fiber = require("fibers");
-const sassdoc = require("sassdoc");
-const eslint = require("gulp-eslint");
-const sasslint = require("gulp-sass-lint");
 const baka = require("@joneff/baka");
 const sassImporterFactory = require("./lib/sassimporter");
 
@@ -33,17 +27,12 @@ const paths = {
         swatches: "./scss/swatches/*.scss",
         src: "./scss/**/*.scss",
         inline: "./dist/all.scss",
-        dist: "./dist",
-        assets: "./scss/**/*.{png,gif,ttf,woff}"
+        dist: "./dist"
     },
     less: {
         theme: "styles/**/kendo.*.less",
         src: "./styles/**/*.less",
         dist: "./dist/styles"
-    },
-    js: {
-        src: "**/*.js",
-        exclude: "!node_modules/**"
     }
 };
 const browsers = [
@@ -181,97 +170,6 @@ gulp.task('dart:flat', function() {
     sass.compier = require("sass");
     return build(paths.sass.inline, paths.sass.dist);
 });
-// #endregion
-
-
-// #region lint
-function lintStyles() {
-    return gulp.src(paths.sass.src)
-        .pipe(sasslint())
-        .pipe(sasslint.format())
-        .pipe(sasslint.failOnError());
-}
-
-function lintScripts() {
-    return gulp.src([ paths.js.src, paths.js.exclude ])
-        .pipe(eslint())
-        .pipe(eslint.format())
-        .pipe(eslint.failAfterError());
-}
-
-gulp.task("lint", function() {
-    if (__dirname === process.cwd()) {
-        // called from theme-tasks
-        return lintScripts();
-    }
-
-    // consumed from themes
-    return lintStyles();
-});
-// #endregion
-
-
-// #region assets
-gulp.task("assets", function() {
-    let files = glob.sync(paths.sass.assets);
-
-    files.forEach(function(filename) {
-        _info(`Converting asset to data URI: ${_em(filename)}`);
-        embedFile(filename);
-    });
-
-    return Promise.resolve();
-});
-
-function embedFile(filename) {
-    let basename = path.basename(filename);
-    let mimeType = mime.getType(filename);
-    let base64 = fs.readFileSync(filename).toString("base64");
-    let template = fs.readFileSync(path.join(__dirname, "lib/", "data-uri.template"), "utf8");
-
-    let output = template
-        .replace(/<FILENAME>/g, basename)
-        .replace(/<MIME>/g, mimeType)
-        .replace(/<BASE64>/g, base64);
-
-    let outputFilename = path.join(
-        path.dirname(filename),
-        path.basename(filename, path.extname(filename)) + ".scss"
-    );
-
-    fs.writeFileSync(outputFilename, output);
-}
-// #endregion
-
-
-// #region docs
-gulp.task("docs", function() {
-    return gulp.src(paths.sass.src)
-        .pipe(sassdoc());
-});
-gulp.task("docs:check", function() {
-    //git diff --exit-code --quiet -- docs/
-    return gulp.task("docs")().promise.then(function() {
-        let status = cp.spawnSync("git", [ "diff", "--exit-code", "--quiet", "--", "docs/" ]) .status;
-
-        if (status !== 0) {
-            throw new Error("Docs are out of date");
-        }
-    });
-});
-// #endregion
-
-
-// #region ci
-gulp.task("ci", gulp.series("lint", "sass", "docs:check"));
-gulp.task("ci:full", gulp.series("lint", "sass", "dart", "docs:check"));
-// #endregion
-
-
-// #region prepublish
-gulp.task('sass:prepublish', gulp.series("sass:flat", "sass:swatches"));
-gulp.task('dart:prepublish', gulp.series("dart:flat", "dart:swatches"));
-gulp.task("prepublish", gulp.series("sass:prepublish"));
 // #endregion
 
 

@@ -1,4 +1,4 @@
-var metrics = {
+const metrics = { // eslint-disable-line no-unused-vars
 
     // Button
     "button": {

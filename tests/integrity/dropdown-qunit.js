@@ -8,16 +8,18 @@ QUnit.module("Dropdown", {
 });
 
 QUnit.test("Dropdown height should be 30", function( assert ) {
-    var $dropdown = $("#dropdown");
-    var dropdownHeight = getHeight( $dropdown );
+    let $ = window.jQuery;
+    let $dropdown = $("#dropdown");
+    let dropdownHeight = getHeight( $dropdown );
 
     assert.equal( dropdownHeight, metrics.dropdown.height );
 });
 
 QUnit.test("Dropdown select size should be 28:28", function( assert ) {
-    var $dropdown = $("#dropdown");
-    var $select = $dropdown.find(".k-select");
-    var selectSize = getSize( $select );
+    let $ = window.jQuery;
+    let $dropdown = $("#dropdown");
+    let $select = $dropdown.find(".k-select");
+    let selectSize = getSize( $select );
 
     assert.equal( selectSize.width, metrics.dropdown.select.width );
     assert.equal( selectSize.height, metrics.dropdown.select.height );
