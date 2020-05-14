@@ -126,6 +126,13 @@
         .k-multiple-files-wrapper .k-file-information {
             color: $upload-text;
         }
+
+        // Invalid,
+        &.k-state-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            border-color: $invalid-border;
+        }
     }
 
 }
