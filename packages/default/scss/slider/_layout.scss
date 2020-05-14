@@ -248,6 +248,11 @@
                 right: $slider-button-spacing;
             }
 
+            .k-button .k-i-arrow-e,
+            .k-button .k-i-arrow-w {
+                transform: scaleX(-1);
+            }
+
             .k-label {
                 left: auto;
                 right: 0;
