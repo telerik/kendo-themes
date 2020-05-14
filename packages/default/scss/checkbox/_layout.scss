@@ -124,6 +124,12 @@
     .k-checkbox-label > .k-checkbox {
         margin-right: $checkbox-label-margin-x;
     }
+    kendo-label.k-checkbox-label > .k-checkbox:last-child {
+        margin-right: 0;
+    }
+    kendo-label.k-checkbox-label > .k-label:first-child {
+        margin-right: $checkbox-label-margin-x;
+    }
 
     .k-checkbox-list {
         margin: $checkbox-list-margin;
@@ -160,6 +166,13 @@
             margin-right: $checkbox-label-margin-x;
         }
         .k-checkbox-label > .k-checkbox {
+            margin-right: 0;
+            margin-left: $checkbox-label-margin-x;
+        }
+        kendo-label.k-checkbox-label > .k-checkbox:last-child {
+            margin-left: 0;
+        }
+        kendo-label.k-checkbox-label > .k-label:first-child {
             margin-right: 0;
             margin-left: $checkbox-label-margin-x;
         }

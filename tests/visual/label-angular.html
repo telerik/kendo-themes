@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Label (Angular)</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <span>Checkbox</span>
+        <span>Radio</span>
+        <span dir="rtl">Checkbox (RTL)</span>
+        <span dir="rtl">Radio (RTL)</span>
+
+        <section>
+            <input type="checkbox" class="k-checkbox" checked>
+            <kendo-label class="k-checkbox-label">
+                <label class="k-label">Checked</label>
+            </kendo-label>
+        </section>
+
+        <section>
+            <input type="radio" class="k-radio" checked>
+            <kendo-label class="k-radio-label">
+                <label class="k-label">Checked</label>
+            </kendo-label>
+        </section>
+
+        <section dir="rtl">
+            <input type="checkbox" class="k-checkbox" checked>
+            <kendo-label class="k-checkbox-label" dir="rtl">
+                <label class="k-label">Checked</label>
+            </kendo-label>
+        </section>
+
+        <section dir="rtl">
+            <input type="radio" class="k-radio" checked>
+            <kendo-label class="k-radio-label" dir="rtl">
+                <label class="k-label">Checked</label>
+            </kendo-label>
+        </section>
+
+        <span>Input inside Label</span>
+        <span>Input inside Label</span>
+        <span dir="rtl">Input inside Label (RTL)</span>
+        <span dir="rtl">Input inside Label (RTL)</span>
+
+        <section>
+            <kendo-label class="k-checkbox-label">
+                <label class="k-label">Checked</label>
+                <input type="checkbox" class="k-checkbox" checked>
+            </kendo-label>
+
+            <br />
+
+            <kendo-label class="k-checkbox-label">
+                <input type="checkbox" class="k-checkbox" checked>
+                <label class="k-label">Checked</label>
+            </kendo-label>
+        </section>
+
+        <section>
+            <kendo-label class="k-radio-label">
+                <label class="k-label">Baz</label>
+                <input type="radio" class="k-radio" checked>
+            </kendo-label>
+
+            <br />
+
+            <kendo-label class="k-radio-label">
+                <input type="radio" class="k-radio" checked>
+                <label class="k-label">Baz</label>
+            </kendo-label>
+        </section>
+
+        <section dir="rtl">
+            <kendo-label class="k-checkbox-label" dir="rtl">
+                <label class="k-label">Checked</label>
+                <input type="checkbox" class="k-checkbox" checked>
+            </kendo-label>
+
+            <br />
+
+            <kendo-label class="k-checkbox-label" dir="rtl">
+                <input type="checkbox" class="k-checkbox" checked>
+                <label class="k-label">Checked</label>
+            </kendo-label>
+        </section>
+
+        <section dir="rtl">
+            <kendo-label class="k-radio-label" dir="rtl">
+                <label class="k-label">Baz</label>
+                <input type="radio" class="k-radio" checked>
+            </kendo-label>
+
+            <br />
+
+            <kendo-label class="k-radio-label" dir="rtl">
+                <input type="radio" class="k-radio" checked>
+                <label class="k-label">Baz</label>
+            </kendo-label>
+        </section>
+
+    </div>
+
+</body>
+</html>
