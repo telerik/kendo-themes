@@ -281,6 +281,10 @@
 
 
     // Label
+    kendo-label > .k-label {
+        margin: 0;
+    }
+
     .k-label-optional {
         margin-left: $label-optional-margin-x;
         font-size: $label-optional-font-size;

@@ -58,6 +58,10 @@
         position: relative;
         cursor: pointer;
 
+        .k-label {
+            cursor: pointer;
+        }
+
         // Hide empty label
         &:empty {
             display: none;
@@ -92,6 +96,12 @@
         margin-left: $radio-label-margin-x;
     }
     .k-radio-label > .k-radio {
+        margin-right: $radio-label-margin-x;
+    }
+    kendo-label.k-radio-label > .k-radio:last-child {
+        margin-right: 0;
+    }
+    kendo-label.k-radio-label > .k-label:first-child {
         margin-right: $radio-label-margin-x;
     }
 
@@ -129,6 +139,13 @@
             margin-right: $radio-label-margin-x;
         }
         .k-radio-label > .k-radio {
+            margin-right: 0;
+            margin-left: $radio-label-margin-x;
+        }
+        kendo-label.k-radio-label > .k-radio:last-child {
+            margin-left: 0;
+        }
+        kendo-label.k-radio-label > .k-label:first-child {
             margin-right: 0;
             margin-left: $radio-label-margin-x;
         }
