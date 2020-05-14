@@ -320,8 +320,9 @@
         position: relative;
         padding: $time-list-padding 0;
         text-align: center;
-        width: $time-list-width;
+        min-width: $time-list-width;
         height: $time-list-height;
+        flex: 1 1 auto;
 
         .k-title {
             display: block;
@@ -378,6 +379,7 @@
         > ul {
             height: auto;
             width: $time-list-width;
+            margin: auto;
         }
     }
 
