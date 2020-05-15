@@ -322,6 +322,12 @@ $yiq-light: if(
 
     @return .2126 * $red + .7152 * $green + .0722 * $blue;
 }
+@function is-dark( $color ) {
+    @return if( luminance($color) < .5, true, false );
+}
+@function is-light( $color ) {
+    @return if( luminance($color) < .5, false, true );
+}
 
 
 @function color-level($color, $level: 0) {
