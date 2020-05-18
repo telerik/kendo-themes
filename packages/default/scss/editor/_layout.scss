@@ -128,6 +128,7 @@
 
         > .ProseMirror { // sass-lint:disable-line class-name-format
             padding: $padding-x;
+            outline: 0;
             white-space: pre-wrap;
 
             table {
