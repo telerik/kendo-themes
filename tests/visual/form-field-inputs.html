@@ -696,23 +696,25 @@
                     <kendo-label>
                         <label class="k-label">Avatar</label>
                     </kendo-label>
-                    <div>
-                        <kendo-upload class="k-widget k-upload ng-pristine ng-invalid ng-touched">
-                            <div class="k-dropzone">
-                                <div class="k-button k-upload-button">
-                                    <input> <span>Select files...</span>
+                    <div class="k-form-field-wrap">
+                        <div>
+                            <kendo-upload class="k-widget k-upload ng-pristine ng-invalid ng-touched">
+                                <div class="k-dropzone">
+                                    <div class="k-button k-upload-button">
+                                        <input> <span>Select files...</span>
+                                    </div>
+                                    <div class="k-dropzone-hint">Drop files here to upload</div>
                                 </div>
-                                <div class="k-dropzone-hint">Drop files here to upload</div>
-                            </div>
-                        </kendo-upload>
+                            </kendo-upload>
 
-                        <kendo-formhint class="k-form-hint k-text-start">
-                            <span>Hint: Hint text</span>
-                        </kendo-formhint>
+                            <kendo-formhint class="k-form-hint k-text-start">
+                                <span>Hint: Hint text</span>
+                            </kendo-formhint>
 
-                        <kendo-formerror class="k-form-error k-text-start">
-                            Error: Avatar is required
-                        </kendo-formerror>
+                            <kendo-formerror class="k-form-error k-text-start">
+                                Error: Avatar is required
+                            </kendo-formerror>
+                        </div>
                     </div>
                 </kendo-formfield>
 
@@ -1427,8 +1429,8 @@
                 </div>
 
                 <div class="k-form-field">
+                    <label class="k-label k-text-error">Avatar</label>
                     <div class="k-form-field-wrap">
-                        <label class="k-label k-text-error">Avatar</label>
                         <div class="k-widget k-upload k-header k-state-invalid">
                             <div class="k-dropzone">
                                 <div class="k-button k-upload-button">
