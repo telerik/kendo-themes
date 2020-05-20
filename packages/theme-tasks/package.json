@@ -34,14 +34,14 @@
   "dependencies": {
     "@joneff/baka": "^0.1.2",
     "ansi-colors": "^4.1.1",
-    "autoprefixer": "^9.7.5",
-    "fibers": "^4.0.2",
+    "autoprefixer": "^9.8.0",
+    "fibers": "^4.0.3",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulplog": "^1.0.0",
     "minimist": "^1.2.5",
     "plugin-error": "^1.0.1",
     "postcss-calc": "^7.0.2",
-    "sass": "^1.26.3"
+    "sass": "^1.26.5"
   }
 }
