@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.15.2"></a>
+## [3.15.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.15.1...@progress/kendo-theme-material@3.15.2) (2020-05-20)
+
+
+### Bug Fixes
+
+* **drawer:** focused and selected style in bootstrap and material telerik/kendo-themes/issues/1550 ([afbe808](https://github.com/telerik/kendo-themes/commit/afbe808))
+
+
+
+
 <a name="3.15.1"></a>
 ## [3.15.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.15.0...@progress/kendo-theme-material@3.15.1) (2020-05-11)
 

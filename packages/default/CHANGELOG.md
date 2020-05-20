@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.18.2"></a>
+## [4.18.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.18.1...@progress/kendo-theme-default@4.18.2) (2020-05-20)
+
+
+### Bug Fixes
+
+* **dropzone:** add background-clip: padding-box ([4f4ee26](https://github.com/telerik/kendo-themes/commit/4f4ee26))
+* **editor:** expose scoped styles for editor content ([cbb8259](https://github.com/telerik/kendo-themes/commit/cbb8259))
+* **editor:** remove outline from editor content ([ebca1ee](https://github.com/telerik/kendo-themes/commit/ebca1ee))
+* **forms:** update upload error state ([fa2d269](https://github.com/telerik/kendo-themes/commit/fa2d269))
+* **grid:** empty group header height in ie ([a428cd8](https://github.com/telerik/kendo-themes/commit/a428cd8))
+* **label:** angular label adjustments ([8afa893](https://github.com/telerik/kendo-themes/commit/8afa893))
+* add utility is-dark / is-light color functions ([3106c46](https://github.com/telerik/kendo-themes/commit/3106c46))
+* **slider:** wrong icons directions in RTL mode ([3d62955](https://github.com/telerik/kendo-themes/commit/3d62955))
+* **switch:** broken appearance in grid filter menu ([fa76f26](https://github.com/telerik/kendo-themes/commit/fa76f26))
+* **upload:** external dropzone styling ([061ba3c](https://github.com/telerik/kendo-themes/commit/061ba3c))
+
+
+
+
 <a name="4.18.1"></a>
 ## [4.18.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.18.0...@progress/kendo-theme-default@4.18.1) (2020-05-11)
 

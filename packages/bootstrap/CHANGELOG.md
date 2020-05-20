@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.16.2"></a>
+## [4.16.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.16.1...@progress/kendo-theme-bootstrap@4.16.2) (2020-05-20)
+
+
+### Bug Fixes
+
+* **drawer:** focused and selected style in bootstrap and material telerik/kendo-themes/issues/1550 ([afbe808](https://github.com/telerik/kendo-themes/commit/afbe808))
+* **multiselect:** button height adjustment ([ab40bd2](https://github.com/telerik/kendo-themes/commit/ab40bd2))
+
+
+
+
 <a name="4.16.1"></a>
 ## [4.16.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.16.0...@progress/kendo-theme-bootstrap@4.16.1) (2020-05-11)
 
