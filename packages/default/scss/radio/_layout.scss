@@ -47,6 +47,10 @@
         @include disabled( $disabled-styling );
     }
 
+    .k-radio + .k-radio-label {
+        display: inline;
+    }
+
     // Radio label
     .k-radio-label {
         margin: 0;
@@ -97,6 +101,7 @@
     }
     .k-radio-label > .k-radio {
         margin-right: $radio-label-margin-x;
+        flex-shrink: 0;
     }
     kendo-label.k-radio-label > .k-radio:last-child {
         margin-right: 0;

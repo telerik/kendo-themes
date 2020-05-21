@@ -68,6 +68,9 @@
         @include disabled( $disabled-styling );
     }
 
+    .k-checkbox + .k-checkbox-label {
+        display: inline;
+    }
 
     // Checkbox label
     .k-checkbox-label {
@@ -123,6 +126,7 @@
     }
     .k-checkbox-label > .k-checkbox {
         margin-right: $checkbox-label-margin-x;
+        flex-shrink: 0;
     }
     kendo-label.k-checkbox-label > .k-checkbox:last-child {
         margin-right: 0;
