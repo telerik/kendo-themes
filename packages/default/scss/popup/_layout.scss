@@ -304,4 +304,20 @@
         }
     }
 
+    .k-virtual-content {
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        position: relative;
+
+        > .k-virtual-list > .k-virtual-item {
+            position: absolute;
+            width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+            white-space: nowrap;
+        }
+    }
+
 }
