@@ -819,7 +819,7 @@
         table {
             table-layout: fixed;
         }
-        tr:last-child td {
+        tr:last-child > td {
             border-bottom-width: 0;
         }
     }
