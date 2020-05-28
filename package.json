@@ -1,13 +1,16 @@
 {
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/core": "^8.3.5",
     "eslint": "^7.0.0",
-    "ghooks": "^1.0.3",
     "glob": "^7.1.6",
     "gulp": "^4.0.2",
     "gulp-eslint": "^6.0.0",
     "gulp-sass-lint": "^1.4.0",
     "gulplog": "^1.0.0",
     "http-server": "^0.12.1",
+    "husky": "^4.2.5",
     "jquery": "^3.4.1",
     "karma": "^4.4.1",
     "karma-chrome-launcher": "^3.1.0",
@@ -19,8 +22,7 @@
     "qunit": "^2.9.3",
     "sass-lint": "^1.13.1",
     "sassdoc": "^2.7.1",
-    "sassdoc-extras": "^3.0.0",
-    "validate-commit-msg": "^1.1.1"
+    "sassdoc-extras": "^3.0.0"
   },
   "scripts": {
     "sass": "bash ./build/foreach.sh sass",
@@ -38,26 +40,11 @@
     "karma-single": "karma start --no-auto-watch --single-run --browsers ChromeHeadless",
     "serve-tests": "http-server ./"
   },
-  "config": {
-    "ghooks": {
+  "husky": {
+    "hooks": {
       "pre-commit": "npm run lint",
-      "commit-msg": "validate-commit-msg",
-      "pre-push": "npm run lint && npm run sass && npm run docs:check"
-    },
-    "validate-commit-msg": {
-      "types": [
-        "feat",
-        "fix",
-        "docs",
-        "style",
-        "refactor",
-        "perf",
-        "test",
-        "chore",
-        "revert"
-      ],
-      "warnOnFail": false,
-      "maxSubjectLength": 100
+      "pre-push": "npm run lint && npm run sass && npm run docs:check",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "dependencies": {}
