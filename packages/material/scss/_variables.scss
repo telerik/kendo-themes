@@ -2448,8 +2448,8 @@ $grid-gap: 10px !default;
 
 
 // Card
-$card-padding-x: 16px !default;
-$card-padding-y: 16px !default;
+$card-padding-x: map-get( $spacing, lg ) !default;
+$card-padding-y: map-get( $spacing, md ) !default;
 $card-border-width: 0 !default;
 $card-border-radius: $border-radius !default;
 $card-font-family: $font-family !default;
@@ -2458,7 +2458,7 @@ $card-line-height: $line-height !default;
 $card-box-shadow: $box-shadow-depth-2 !default;
 $card-box-focused-shadow: $box-shadow-depth-3 !default;
 
-$card-deck-gap: 16px !default;
+$card-deck-gap: map-get( $spacing, lg ) !default;
 
 $card-bg: $component-bg !default;
 $card-text: $component-text !default;
@@ -2466,27 +2466,28 @@ $card-border: $component-border !default;
 
 $card-header-padding-x: $card-padding-x !default;
 $card-header-padding-y: $card-padding-y !default;
-$card-header-border-width: 0 !default;
+$card-header-border-width: 1px !default;
 $card-header-bg: null !default;
 $card-header-text: null !default;
-$card-header-border: null !default;
+$card-header-border: $card-border !default;
 
-$card-body-padding-x: $card-padding-x !default;
-$card-body-padding-y: $card-padding-y !default;
+$card-body-padding-x: map-get( $spacing, lg ) !default;
+$card-body-padding-y: map-get( $spacing, lg ) !default;
 
 $card-footer-padding-x: $card-padding-x !default;
 $card-footer-padding-y: $card-padding-y !default;
-$card-footer-border-width: 0 !default;
+$card-footer-border-width: 1px !default;
 $card-footer-bg: null !default;
 $card-footer-text: null !default;
-$card-footer-border: null !default;
+$card-footer-border: $card-border !default;
 
 $card-title-margin-bottom: $h1-margin-bottom !default;
 $card-subtitle-margin-bottom: $paragraph-margin-bottom !default;
-$card-subtitle-margin-top: 0 !default;
 $card-subtitle-text: true-mix($card-text, $card-bg, 54%) !default;
 
 $card-img-max-width: 100px !default;
+$card-avatar-size: 45px !default;
+$card-avatar-spacing:  $card-header-padding-x !default;
 
 $card-actions-padding-x: $card-padding-x !default;
 $card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
