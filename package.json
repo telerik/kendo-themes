@@ -3,7 +3,9 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@commitlint/core": "^8.3.5",
+    "@joneff/baka": "^0.3.0",
     "eslint": "^7.0.0",
+    "fs-extra": "^9.0.0",
     "glob": "^7.1.6",
     "gulp": "^4.0.2",
     "gulp-eslint": "^6.0.0",
@@ -21,6 +23,7 @@
     "pastshots": "^1.5.1",
     "qunit": "^2.9.3",
     "sass-lint": "^1.13.1",
+    "sass-variable-parser": "^1.2.2",
     "sassdoc": "^2.7.1",
     "sassdoc-extras": "^3.0.0"
   },

@@ -3,12 +3,16 @@ const path = require("path");
 const glob = require("glob");
 const cp = require("child_process");
 
+const fse = require("fs-extra");
 const gulp = require("gulp");
 const logger = require("gulplog");
 const eslint = require("gulp-eslint");
 const sasslint = require("gulp-sass-lint");
 const mime = require("mime");
 const sassdoc = require("sassdoc");
+
+const baka = require("@joneff/baka");
+const { parse } = require('sass-variable-parser');
 
 
 // Settings
@@ -114,3 +118,39 @@ gulp.task("docs:check", function() {
     });
 });
 // #endregion
+
+
+gulp.task("resolve-vars", function() {
+    let themes = glob.sync(paths.sass.themes);
+    const cwd = process.cwd();
+
+    themes.forEach( theme => {
+        let variablesJson = path.resolve( cwd, `${theme}/.tmp/variables.json` );
+        let variablesScss = path.resolve( cwd, `${theme}/.tmp/variables.scss` );
+
+        fse.ensureFileSync( variablesJson );
+        fse.ensureFileSync( variablesScss );
+
+        baka.compile(
+            path.join( cwd, `${theme}/scss/_variables.scss` ),
+            variablesScss,
+            {
+                nodeModules: `${theme}/node_modules`
+            }
+        );
+
+        let content = fs.readFileSync( variablesScss, 'utf-8' );
+
+        content = content.replace(/ url\("data.*?\)/g, 'none');
+        content = content.replace(/\/\/.*/gm, '');
+        content = content.replace(/\n/gm, '');
+        content = content.replace(/;/gm, ';\n');
+
+        const variables = parse( content, { camelCase: false } );
+
+        fs.writeFileSync( variablesJson, JSON.stringify( variables, null, 4 ) );
+
+    });
+
+    return Promise.resolve();
+});
