@@ -19,12 +19,4 @@
         }
     }
 
-    .k-dialog-button-group,
-    .k-edit-buttons,
-    .k-edit-field {
-        .k-button {
-            @extend .k-button-flat;
-        }
-    }
-
 }
