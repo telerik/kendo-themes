@@ -46,7 +46,11 @@
             background-color: inherit;
         }
 
-        .k-grid-toolbar,
+        .k-grid-toolbar {
+            position: sticky;
+            z-index: 3;
+        }
+
         .k-grid-header th {
             position: sticky;
             z-index: 1;
@@ -55,7 +59,6 @@
         .k-grid-header th.k-grid-header-sticky {
             z-index: 3;
         }
-
 
         .k-grid-toolbar {
             top: 0;
