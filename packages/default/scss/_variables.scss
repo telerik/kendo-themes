@@ -2406,8 +2406,8 @@ $grid-gap: 10px !default;
 
 
 // Card
-$card-padding-x: 16px !default;
-$card-padding-y: 12px !default;
+$card-padding-x: map-get( $spacing, lg ) !default;
+$card-padding-y: map-get( $spacing, md ) !default;
 $card-border-width: 1px !default;
 $card-border-radius: $border-radius-lg !default;
 $card-font-family: $font-family !default;
@@ -2416,7 +2416,7 @@ $card-line-height: $line-height !default;
 $card-box-shadow: null !default;
 $card-box-focused-shadow: 0 0 4px 0 rgba(0, 0, 0, .3) !default;
 
-$card-deck-gap: 16px !default;
+$card-deck-gap: map-get( $spacing, lg ) !default;
 
 $card-bg: $component-bg !default;
 $card-text: $component-text !default;
@@ -2429,8 +2429,8 @@ $card-header-bg: null !default;
 $card-header-text: $header-text !default;
 $card-header-border: $header-border !default;
 
-$card-body-padding-x: $card-padding-x !default;
-$card-body-padding-y: $card-padding-y !default;
+$card-body-padding-x: map-get( $spacing, lg ) !default;
+$card-body-padding-y: map-get( $spacing, lg ) !default;
 
 $card-footer-padding-x: $card-padding-x !default;
 $card-footer-padding-y: $card-padding-y !default;
@@ -2439,12 +2439,13 @@ $card-footer-bg: null !default;
 $card-footer-text: $header-text !default;
 $card-footer-border: $header-border !default;
 
-$card-title-margin-bottom: $h2-margin-bottom !default;
-$card-subtitle-margin-bottom: $h6-margin-bottom !default;
-$card-subtitle-margin-top: $padding-x !default;
+$card-title-margin-bottom: map-get( $spacing, sm ) !default;
+$card-subtitle-margin-bottom: map-get( $spacing, sm ) !default;
 $card-subtitle-text: true-mix($card-text, $card-bg, 45%) !default;
 
 $card-img-max-width: 100px !default;
+$card-avatar-size: 45px !default;
+$card-avatar-spacing:  $card-header-padding-x !default;
 
 $card-actions-padding-x: $card-padding-x !default;
 $card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;

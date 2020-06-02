@@ -36,6 +36,17 @@
         }
     }
 
+
+    // Angular elements
+    kendo-card,
+    kendo-card-header,
+    kendo-card-body,
+    kendo-card-actions,
+    kendo-card-footer {
+        display: block;
+    }
+
+
     // Card
     .k-card {
         @include border-radius( $card-border-radius );
@@ -87,6 +98,17 @@
                 transform: translate(-50%, -50%) rotate(-135deg);
             }
         }
+
+        .k-avatar {
+            width: $card-avatar-size;
+            height: $card-avatar-size;
+            margin-right: $card-avatar-spacing;
+
+            &.k-avatar-image > * {
+                width: $card-avatar-size;
+                height: $card-avatar-size;
+            }
+        }
     }
     .k-card.k-card-flat {
         box-shadow: none;
@@ -104,27 +126,17 @@
         padding: $card-header-padding-y $card-header-padding-x;
         border-width: 0 0 $card-header-border-width;
         border-style: solid;
-        display: block;
         overflow: hidden;
         position: relative;
         z-index: 1;
 
-        > h1,
-        > h2,
-        > h3,
-        > h4,
-        > h5,
-        > h6 {
-            margin: 0;
+        .k-card-title,
+        .k-card-subtitle {
+            margin-bottom: 0;
         }
-
-        .k-card-title + .k-card-subtitle {
-            margin-top: $card-subtitle-margin-top;
-        }
-
-        &.k-hbox,
-        &.k-vbox {
-            display: flex;
+        .k-card-title + .k-card-subtitle,
+        .k-card-subtitle + .k-card-subtitle {
+            margin-top: $card-title-margin-bottom;
         }
     }
 
@@ -135,12 +147,6 @@
         padding: $card-footer-padding-y $card-footer-padding-x;
         border-width: $card-footer-border-width 0 0;
         border-style: solid;
-        display: block;
-
-        &.k-hbox,
-        &.k-vbox {
-            display: flex;
-        }
     }
 
     // Body
@@ -148,7 +154,6 @@
         @extend %top-rounded-child;
         @extend %bottom-rounded-child;
         padding: $card-body-padding-y $card-body-padding-x;
-        display: block;
         flex: 1 1 auto;
 
         p {
@@ -160,9 +165,8 @@
             margin-bottom: 0;
         }
 
-        &.k-hbox,
-        &.k-vbox {
-            display: flex;
+        > .k-card-actions {
+            padding: 0;
         }
     }
 
@@ -202,9 +206,6 @@
         @include typography( map-get( $typography-config, card-subtitle ) );
         margin: 0 0 $card-subtitle-margin-bottom;
     }
-    .k-card-title + .k-card-subtitle {
-        margin-top: -( $card-title-margin-bottom * .75 );
-    }
 
 
     // Separator
@@ -241,16 +242,6 @@
         flex-wrap: wrap;
         flex-shrink: 0;
         flex-basis: auto;
-
-        .k-card > & {
-            border-top-width: $card-actions-border-width;
-            border-color: inherit;
-        }
-
-        .k-card-horizontal &,
-        .k-card-vertical & {
-            border: 0;
-        }
 
         .k-card-horizontal & {
             @extend %right-rounded-child;
@@ -341,8 +332,23 @@
             border-left-width: $card-actions-border-width;
         }
 
+        .k-card & {
+            border-top-width: $card-actions-border-width;
+            border-style: solid;
+        }
+
+        .k-card-horizontal > & {
+            border-left-width: $card-actions-border-width;
+            border-top-width: 0;
+        }
+
         &.k-card-actions-vertical {
             flex-direction: column;
+
+            .k-card-action + .k-card-action {
+                border-top-width: $card-actions-border-width;
+                border-left-width: 0;
+            }
         }
     }
 
@@ -483,6 +489,22 @@
                 margin-right: $card-deck-gap;
             }
         }
+
+        .k-card-actions-stretched {
+            .k-card-action + .k-card-action {
+                border-right-width: $card-actions-border-width;
+                border-left-width: 0;
+            }
+        }
+
+        .k-card-horizontal {
+            > .k-card-actions-stretched,
+            .k-card-actions-vertical {
+                border-right-width: $card-actions-border-width;
+                border-left-width: 0;
+            }
+        }
+
     }
 
 }

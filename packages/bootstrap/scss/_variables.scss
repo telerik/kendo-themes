@@ -2432,12 +2432,13 @@ $card-footer-bg: $card-cap-bg !default;
 $card-footer-text: $card-text !default;
 $card-footer-border: $card-border-color !default;
 
-$card-title-margin-bottom: $h5-margin-bottom !default;
-$card-subtitle-margin-bottom: $h6-margin-bottom !default;
-$card-subtitle-margin-top: $padding-y-lg !default;
+$card-title-margin-bottom: map-get( $spacing, md ) !default;
+$card-subtitle-margin-bottom: map-get( $spacing, md ) !default;
 $card-subtitle-text: true-mix($card-text, $card-bg, 65%) !default;
 
 $card-img-max-width: 100px !default;
+$card-avatar-size: 45px !default;
+$card-avatar-spacing:  $card-header-padding-x !default;
 
 $card-actions-padding-x: $card-padding-x !default;
 $card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
