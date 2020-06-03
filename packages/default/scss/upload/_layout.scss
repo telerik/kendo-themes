@@ -81,6 +81,8 @@
 
         // Upload files list
         .k-upload-files {
+            max-height: $upload-max-height;
+            overflow-y: auto;
             margin: 0;
             padding: 0;
             border-width: 1px 0 0;
