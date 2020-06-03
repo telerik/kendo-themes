@@ -13,6 +13,11 @@ const sassdoc = require("sassdoc");
 
 const baka = require("@joneff/baka");
 const { parse } = require('sass-variable-parser');
+const tasks = require("./packages/theme-tasks/gulpfile");
+const sassImporterFactory = require("./packages/theme-tasks/lib/sassimporter");
+const nodeSass = require("node-sass");
+const dartSass = require("sass");
+let sassCompiler = nodeSass;
 
 
 // Settings
@@ -20,7 +25,11 @@ const paths = {
     sass: {
         src: "./packages/*/scss/**/*.scss",
         assets: "./packages/*/scss/**/*.{png,gif,ttf,woff}",
-        themes: "./packages/!(theme-tasks)"
+        themes: "./packages/!(theme-tasks)",
+        theme: "/scss/all.scss",
+        swatches: "/scss/swatches/*.scss",
+        inline: "/dist/all.scss",
+        dist: "/dist"
     },
     js: {
         src: "**/*.js",
@@ -77,6 +86,87 @@ function embedFile(filename) {
 
     fs.writeFileSync(outputFilename, output);
 }
+
+function buildAll(themes = glob.sync(paths.sass.themes), src = paths.sass.theme) {
+    return Promise.all(
+        themes.map( theme => {
+            const file = path.resolve(theme + src);
+            const dest = path.resolve(theme + paths.sass.dist);
+            const importerCWD = path.join(process.cwd() + "/" + theme);
+            const options = Object.assign({}, tasks.sassOptions);
+
+            options.importer = sassImporterFactory({ cache: true, cwd: importerCWD });
+
+            return tasks.build(file, dest, options, sassCompiler);
+        })
+    );
+}
+
+function flattenSassFilesAll(themes = glob.sync(paths.sass.themes)) {
+    return Promise.all(
+        themes.map( theme => {
+            const file = path.resolve(theme + paths.sass.theme);
+            const dest = `${theme}${paths.sass.dist}/all.scss`;
+            const nodeModules = `${theme}/node_modules`;
+
+            return tasks.flattenSassFiles(file, dest, nodeModules);
+        })
+    );
+}
+// #endregion
+
+
+// #region node-sass
+gulp.task("sass", function() {
+    let themes = glob.sync(paths.sass.themes);
+
+    sassCompiler = nodeSass;
+    return buildAll(themes);
+});
+gulp.task("sass:watch", function() {
+    gulp.watch(paths.sass.src, gulp.series("sass"));
+});
+gulp.task("sass:swatches", function() {
+    let themes = glob.sync(paths.sass.themes);
+    flattenSassFilesAll(themes);
+
+    sassCompiler = nodeSass;
+    return buildAll(themes, paths.sass.swatches);
+});
+gulp.task("sass:flat", function() {
+    let themes = glob.sync(paths.sass.themes);
+    flattenSassFilesAll(themes);
+
+    sassCompiler = nodeSass;
+    return buildAll(themes, paths.sass.inline);
+});
+// #endregion
+
+
+// #region dart-sass
+gulp.task("dart", function() {
+    let themes = glob.sync(paths.sass.themes);
+
+    sassCompiler = dartSass;
+    return buildAll(themes);
+});
+gulp.task("dart:watch", function() {
+    gulp.watch(paths.sass.src, gulp.series("dart"));
+});
+gulp.task("dart:swatches", function() {
+    let themes = glob.sync(paths.sass.themes);
+    flattenSassFilesAll(themes);
+
+    sassCompiler = dartSass;
+    return buildAll(themes, paths.sass.swatches);
+});
+gulp.task("dart:flat", function() {
+    let themes = glob.sync(paths.sass.themes);
+    flattenSassFilesAll(themes);
+
+    sassCompiler = dartSass;
+    return buildAll(themes, paths.sass.inline);
+});
 // #endregion
 
 
