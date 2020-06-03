@@ -2,9 +2,10 @@ const path = require("path");
 
 const EMPTY_IMPORT = {};
 
-function packageImporterFactory(options = { cache: false }) {
+function packageImporterFactory(options = { cache: false, cwd: null }) {
 
     const imported = new Set();
+    const cwd = options.cwd || process.cwd();
 
     function resetImported() {
         imported.clear();
@@ -15,7 +16,7 @@ function packageImporterFactory(options = { cache: false }) {
 
         if (url.startsWith("~")) {
             file = path.resolve(path.join(
-                process.cwd(),
+                cwd,
                 "node_modules/",
                 url.slice(1)
             ));
