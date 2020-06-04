@@ -122,6 +122,11 @@
 
     // Treemap
     .k-treemap {
+        @include fill(
+            $component-text,
+            $component-bg,
+            $component-border
+        );
 
         // Title
         .k-treemap-title {
@@ -135,13 +140,13 @@
 
         // Leaf
         .k-leaf {
-            color: $panel-bg;
+            color: $component-bg;
         }
         .k-leaf.k-inverse {
-            color: $panel-text;
+            color: $component-text;
         }
         .k-leaf.k-state-hover {
-            box-shadow: inset 0 0 0 3px $panel-border;
+            box-shadow: inset 0 0 0 3px $component-border;
         }
     }
 
