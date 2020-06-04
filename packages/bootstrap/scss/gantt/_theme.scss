@@ -1,5 +1,15 @@
 @include exports("gantt/theme") {
 
+    // Theme
+    .k-gantt {
+        @include fill(
+            $gantt-text,
+            $gantt-bg,
+            $gantt-border
+        );
+    }
+
+
     // Header and footer
     .k-gantt-toolbar {
         @include fill(
