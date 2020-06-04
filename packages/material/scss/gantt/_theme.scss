@@ -3,9 +3,9 @@
     // Theme
     .k-gantt {
         @include fill(
-            $panel-text,
-            $panel-bg,
-            $panel-border
+            $gantt-text,
+            $gantt-bg,
+            $gantt-border
         );
     }
 
