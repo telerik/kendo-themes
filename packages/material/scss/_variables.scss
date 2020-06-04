@@ -2072,7 +2072,7 @@ $pager-line-height: $line-height !default;
 
 $pager-bg: $component-bg !default;
 $pager-text: if($theme-type == dark, $light-secondary-text, $dark-secondary-text) !default;
-$pager-border: null !default;
+$pager-border: $component-border !default;
 
 $pager-section-spacing: $pager-padding-x !default;
 
