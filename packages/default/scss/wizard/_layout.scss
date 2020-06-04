@@ -13,12 +13,12 @@
         overflow: hidden;
 
         .k-wizard-steps {
-            padding: $wizard-content-padding-x / 4;
             display: flex;
             overflow: hidden;
         }
 
         .k-wizard-step {
+            padding: calc(#{$wizard-content-padding-x / 4} + 2px);
             width: 100%;
             display: flex;
             flex-direction: column;
