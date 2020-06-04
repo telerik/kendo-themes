@@ -2,7 +2,7 @@
 
     // Window
     .k-window {
-        @extend .k-text-selection;
+        @extend .k-text-selection !optional;
         @include fill(
             $window-text,
             $window-bg,

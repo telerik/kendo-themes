@@ -1,6 +1,6 @@
 @include exports( "combobox/theme" ) {
     .k-combobox {
-        @extend .k-text-selection;
+        @extend .k-text-selection !optional;
 
         .k-dropdown-wrap {
             border-color: $combobox-border;

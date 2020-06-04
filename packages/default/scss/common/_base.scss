@@ -121,7 +121,7 @@ $widget-border-width: 1px !default;
 
     // Widget
     .k-widget {
-        @extend .k-text-selection;
+        @extend .k-text-selection !optional;
         @include fill(
             $widget-text,
             $widget-bg,
@@ -132,7 +132,7 @@ $widget-border-width: 1px !default;
     // Panels
     .k-block,
     .k-panel {
-        @extend .k-text-selection;
+        @extend .k-text-selection !optional;
         @include border-radius();
         @include fill(
             $panel-text,

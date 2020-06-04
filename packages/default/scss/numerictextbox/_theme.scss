@@ -2,7 +2,7 @@
 
     // Numeric
     .k-numerictextbox {
-        @extend .k-text-selection;
+        @extend .k-text-selection !optional;
 
         // Normal state
         .k-numeric-wrap {
