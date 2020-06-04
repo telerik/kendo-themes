@@ -2030,7 +2030,7 @@ $pager-line-height: $line-height !default;
 
 $pager-bg: $header-bg !default;
 $pager-text: $header-text !default;
-$pager-border: null !default;
+$pager-border: $component-border !default;
 
 $pager-section-spacing: $spacer-x !default;
 
