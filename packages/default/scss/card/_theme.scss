@@ -2,7 +2,7 @@
 
     // Card
     .k-card {
-        @extend .k-text-selection;
+        @extend .k-text-selection !optional;
         @include fill( $card-text, $card-bg, $card-border );
 
         .k-card-callout {

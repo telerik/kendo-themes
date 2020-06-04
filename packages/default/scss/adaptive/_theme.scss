@@ -2,7 +2,7 @@
 
     .k-pane-wrapper,
     .k-view {
-        @extend .k-text-selection;
+        @extend .k-text-selection !optional;
         @include fill(
             $adaptive-text,
             $adaptive-bg,

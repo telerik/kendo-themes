@@ -40,7 +40,7 @@
     .k-chart,
     .k-sparkline,
     .k-stockchart {
-        @extend .k-text-selection;
+        @extend .k-text-selection !optional;
         @include fill(
             $chart-text,
             transparent,

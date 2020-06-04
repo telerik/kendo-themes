@@ -2,7 +2,7 @@
 
     // Spreadsheet
     .k-spreadsheet {
-        @extend .k-text-selection;
+        @extend .k-text-selection !optional;
         @include fill(
             $spreadsheet-text,
             $spreadsheet-bg,
