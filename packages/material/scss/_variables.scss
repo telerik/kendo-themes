@@ -3072,9 +3072,9 @@ $pdf-viewer-font-family: $font-family !default;
 $pdf-viewer-font-size: $font-size !default;
 $pdf-viewer-line-height: $line-height !default;
 
-$pdf-viewer-bg: null !default;
-$pdf-viewer-text: null !default;
-$pdf-viewer-border: null !default;
+$pdf-viewer-bg: $component-bg !default;
+$pdf-viewer-text: $component-text !default;
+$pdf-viewer-border: $component-border !default;
 
 $pdf-viewer-canvas-bg: $app-bg !default;
 $pdf-viewer-canvas-text: null !default;
