@@ -214,6 +214,10 @@
             flex: 0 0 $datetime-width;
         }
 
+        .k-timeselector {
+            outline: none;
+        }
+
         .k-time-list-container {
             justify-content: center;
         }
@@ -230,6 +234,18 @@
 
             .k-action-buttons {
                 margin-bottom: 0;
+            }
+        }
+
+        .k-rtl &,
+        &.k-rtl,
+        [dir="rtl"] &,
+        &[dir="rtl"] {
+            .k-time-tab {
+
+                .k-datetime-selector {
+                    transform: translateX(100%);
+                }
             }
         }
     }
@@ -380,6 +396,13 @@
             height: auto;
             width: $time-list-width;
             margin: auto;
+        }
+
+        .k-rtl &,
+        &.k-rtl,
+        [dir="rtl"] &,
+        &[dir="rtl"]  {
+            @include hide-scrollbar("left");
         }
     }
 
