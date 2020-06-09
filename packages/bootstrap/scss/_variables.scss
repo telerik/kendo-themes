@@ -3180,6 +3180,11 @@ $selection-handle-size: 22px !default;
 $selection-border-color: rgba(0, 0, 0, .08) !default;
 $selection-shadow: inset 0 1px 7px rgba(0, 0, 0, .15) !default;
 
+// TreeMap
+$treemap-font-family: $font-family !default;
+$treemap-font-size: $font-size !default;
+$treemap-line-height: $line-height !default;
+
 
 // Backdrop (Overlay)
 $backdrop-bg: $modal-backdrop-bg !default;
