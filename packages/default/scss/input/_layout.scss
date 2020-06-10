@@ -26,6 +26,7 @@
         &::placeholder {
             color: $input-placeholder-text;
             opacity: $input-placeholder-opacity;
+            user-select: none;
         }
 
         // TOOD: change this to .k-input
@@ -51,6 +52,7 @@
             &::placeholder {
                 color: $input-placeholder-text;
                 opacity: $input-placeholder-opacity;
+                user-select: none;
             }
         }
 
@@ -132,6 +134,7 @@
         &::placeholder {
             color: $input-placeholder-text;
             opacity: $input-placeholder-opacity;
+            user-select: none;
         }
     }
 
