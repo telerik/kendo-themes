@@ -75,7 +75,7 @@
         @include border-radius();
         font-size: $chart-tooltip-font-size;
         line-height: $line-height;
-        padding: $padding-y $padding-x;
+        padding: $tooltip-padding-y $tooltip-padding-x;
     }
 
     .k-chart-tooltip th {
