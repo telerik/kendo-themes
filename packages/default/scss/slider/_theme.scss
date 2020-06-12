@@ -3,6 +3,8 @@
     $slider-tick-vertical-image: map-get($data-uris, "slider-v.gif") !default;
 
     .k-slider {
+        color: $component-text;
+
         .k-slider-track,
         .k-slider-selection {
             @include border-radius();

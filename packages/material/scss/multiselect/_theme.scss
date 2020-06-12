@@ -2,6 +2,7 @@
 
     .k-multiselect {
         @extend .k-text-selection !optional;
+        color: $multiselect-text;
 
         &.k-state-focused {
             > .k-multiselect-wrap {
