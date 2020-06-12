@@ -2675,6 +2675,10 @@ $grid-sticky-selected-hovered-bg: try-shade( mix( mix( $grid-bg, contrast-wcag( 
 
 
 // Pivot grid
+$pivotgrid-font-family: $font-family !default;
+$pivotgrid-font-size: $font-size !default;
+$pivotgrid-line-height: $line-height !default;
+
 $pivotgrid-alt-bg: try-shade($grid-bg, .5) !default;
 $pivotgrid-alt-color: null !default;
 $pivotgrid-alt-text: $grid-text !default;
@@ -2695,6 +2699,7 @@ $pivotgrid-button-active-text: $button-text !default;
 $pivotgrid-remove-bg: $pivotgrid-button-text !default;
 $pivotgrid-remove-text: $pivotgrid-button-bg !default;
 
+$pivotgrid-configurator-text: $component-text !default;
 
 // Listview
 $listview-padding-x: map-get( $spacing, 1 ) !default;
@@ -3230,6 +3235,11 @@ $chart-selection-marque-background: $series-a !default;
 $selection-handle-size: 22px !default;
 $selection-border-color: rgba(0, 0, 0, .08) !default;
 $selection-shadow: inset 0 1px 7px rgba(0, 0, 0, .15) !default;
+
+// TreeMap
+$treemap-font-family: $font-family !default;
+$treemap-font-size: $font-size !default;
+$treemap-line-height: $line-height !default;
 
 
 // Backdrop (Overlay)
