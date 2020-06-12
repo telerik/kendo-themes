@@ -87,16 +87,10 @@
 
     //DropDown Button
     .k-dropdown-button {
-        &.k-state-focused,
-        &:focus {
-            outline: 0;
-        }
-
-        &.k-widget {
-            border-radius: $border-radius;
-            border-width: 0;
-            display: inline-block;
-        }
+        outline: 0;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        vertical-align: middle;
     }
 
 

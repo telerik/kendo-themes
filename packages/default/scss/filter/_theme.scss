@@ -1,6 +1,8 @@
 @include exports("filter/theme") {
 
     .k-filter {
+        color: $component-text;
+
         .k-filter-preview-field {
             color: $filter-preview-field-text;
         }

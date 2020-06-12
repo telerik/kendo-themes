@@ -115,7 +115,11 @@
         }
         .k-state-selected.k-state-hover .k-link,
         .k-state-selected:hover .k-link {
-            background-color: try-shade( $calendar-cell-selected-bg );
+            @include fill(
+                $calendar-cell-selected-text,
+                try-shade( $calendar-cell-selected-bg ),
+                try-shade( $calendar-cell-selected-border )
+            );
         }
         .k-state-focused .k-link {
             box-shadow: $calendar-cell-focused-shadow;
