@@ -1,1 +1,20 @@
 @import "~@progress/kendo-theme-default/scss/treelist/_theme.scss";
+
+@include exports("treelist/theme/bootstrap") {
+    .k-treelist {
+        tr.k-footer,
+        tr.k-footer-template {
+            &:hover {
+                background-color: $treelist-footer-row-bg;
+            }
+        }
+    }
+
+    .k-treelist-scrollable {
+        .k-group-footer td,
+        .k-grouping-row td,
+        tbody .k-group-cell {
+            background-color: $treelist-footer-row-bg;
+        }
+    }
+}

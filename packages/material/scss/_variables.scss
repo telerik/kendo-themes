@@ -2685,6 +2685,8 @@ $grid-sticky-selected-hovered-bg: try-shade( mix( mix( $grid-bg, contrast-wcag( 
 
 
 // Treelist
+$treelist-footer-row-bg: $grid-selected-bg !default;
+$treelist-footer-row-border-width: 1px !default;
 
 
 // Pivot grid
