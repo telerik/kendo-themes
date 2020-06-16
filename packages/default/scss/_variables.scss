@@ -2638,6 +2638,8 @@ $grid-sticky-selected-hovered-bg:  try-shade(mix( $grid-hovered-bg, $selected-bg
 
 
 // Treelist
+$treelist-footer-row-bg: $grid-hovered-bg !default;
+$treelist-footer-row-border-width: 1px !default;
 
 
 // Pivot grid

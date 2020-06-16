@@ -1,6 +1,11 @@
 @include exports("treelist/theme") {
 
     // Theme
-    .k-treelist {}
+    .k-treelist {
+        tr.k-footer,
+        tr.k-footer-template {
+            background-color: $treelist-footer-row-bg;
+        }
+    }
 
 }

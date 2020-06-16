@@ -35,6 +35,17 @@
             background-color: transparent;
             background-repeat: no-repeat;
         }
+
+        tr.k-footer td,
+        tr.k-footer-template td {
+            border-width: $treelist-footer-row-border-width 0;
+            border-style: solid;
+            font-weight: bold;
+        }
+
+        tr.k-footer + tr.k-footer td {
+            border-top-width: 0;
+        }
     }
 
 
@@ -67,6 +78,10 @@
 
         thead.k-grid-header {
             padding-right: 0;
+        }
+
+        tr.k-group-footer + tr.k-group-footer td {
+            border-top-width: 0;
         }
 
         &[dir = "rtl"],

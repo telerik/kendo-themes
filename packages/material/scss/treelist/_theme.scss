@@ -1,6 +1,14 @@
 @import "~@progress/kendo-theme-default/scss/treelist/_theme.scss";
 
 @include exports("treelist/theme/material") {
+    .k-treelist {
+        tr.k-footer,
+        tr.k-footer-template {
+            &:hover {
+                background-color: $treelist-footer-row-bg;
+            }
+        }
+    }
 
     // Sticky headers
     .k-treelist-scrollable {
@@ -12,6 +20,12 @@
 
         thead.k-grid-header > tr:not(:only-child) > th {
             border-right-color: $grid-border;
+        }
+
+        .k-group-footer td,
+        .k-grouping-row td,
+        tbody .k-group-cell {
+            background-color: $treelist-footer-row-bg;
         }
     }
 }

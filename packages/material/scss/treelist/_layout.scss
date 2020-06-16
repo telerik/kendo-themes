@@ -1,1 +1,20 @@
 @import "~@progress/kendo-theme-default/scss/treelist/_layout.scss";
+
+@include exports("treelist/layout/material") {
+    .k-treelist {
+        tr.k-footer-template td {
+            border-width: $treelist-footer-row-border-width 0;
+        }
+
+        tr.k-footer td,
+        tr.k-footer-template + tr.k-footer-template td {
+            border-width: 0 0 $treelist-footer-row-border-width 0;
+        }
+    }
+
+    .k-treelist-scrollable {
+        tr.k-group-footer td {
+            border-bottom-width: $treelist-footer-row-border-width;
+        }
+    }
+}
