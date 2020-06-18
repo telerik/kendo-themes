@@ -25,6 +25,7 @@
         "docs",
         "style",
         "refactor",
+        "infra",
         "perf",
         "test",
         "chore",
