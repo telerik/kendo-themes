@@ -24,7 +24,9 @@ then
 
   git checkout --force develop
 
-  npx lerna publish --canary --preid dev --dist-tag dev --allow-branch develop --loglevel verbose --yes
+  npx lerna version prerelease --preid dev --no-push --loglevel verbose --yes
+
+  npx lerna publish from-git --pre-dist-tag dev --loglevel verbose --yes
 
 elif [[ $TRAVIS_BRANCH == 'master' ]]
 then

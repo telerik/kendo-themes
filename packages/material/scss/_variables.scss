@@ -2841,16 +2841,6 @@ $editor-font-size: $font-size !default;
 $editor-line-height: $line-height !default;
 
 // Gantt
-$gantt-line-size: 2px !default;
-
-$gantt-line-fill: mix( $panel-text, $panel-bg ) !default;
-
-$gantt-line-selected-fill: $selected-bg !default;
-
-$gantt-task-border-width: 0 !default;
-
-$gantt-task-template-padding: $padding-y $padding-x-sm !default;
-
 $gantt-border-width: 1px !default;
 $gantt-font-family: $font-family !default;
 $gantt-font-size: $font-size !default;
@@ -2859,6 +2849,47 @@ $gantt-line-height: $line-height !default;
 $gantt-bg: $component-bg !default;
 $gantt-text: $component-text !default;
 $gantt-border: $component-border !default;
+
+$gantt-treelist-bg: null !default;
+$gantt-treelist-text: null !default;
+$gantt-treelist-border: null !default;
+
+$gantt-nonwork-bg: rgba( contrast-wcag( $gantt-bg ), .025 ) !default;
+$gantt-nonwork-text: null !default;
+$gantt-nonwork-border: null !default;
+
+$gantt-line-size: 2px !default;
+$gantt-line-fill: mix( $panel-text, $panel-bg ) !default;
+$gantt-line-selected-fill: $selected-bg !default;
+
+$gantt-dot-size: 8px !default;
+$gantt-dot-spacing: 4px !default;
+$gantt-dot-bg: $gantt-text !default;
+$gantt-dot-border: null !default;
+$gantt-dot-hover-bg: $gantt-bg !default;
+$gantt-dot-hover-border: $gantt-text !default;
+
+$gantt-milestone-bg: $primary !default;
+$gantt-milestone-border: $primary !default;
+$gantt-milestone-selected-bg: $secondary !default;
+$gantt-milestone-selected-border: $secondary !default;
+
+$gantt-summary-bg: mix( $primary, $gantt-bg ) !default;
+$gantt-summary-progress-bg: $primary !default;
+$gantt-summary-selected-bg: mix( $secondary, $gantt-bg ) !default;
+$gantt-summary-progress-selected-bg: $secondary !default;
+
+$gantt-task-padding-x: map-get( $spacing, 2 ) !default;
+$gantt-task-padding-y: map-get( $spacing, 1 ) !default;
+$gantt-task-border-width: 0 !default;
+$gantt-task-bg: mix( $primary, $gantt-bg ) !default;
+$gantt-task-text: $primary-contrast !default;
+$gantt-task-border: null !default;
+$gantt-task-progress-bg: $primary !default;
+$gantt-task-selected-bg:  mix( $secondary, $gantt-bg ) !default;
+$gantt-task-selected-text: $secondary-contrast !default;
+$gantt-task-selected-border: null !default;
+$gantt-task-progress-selected-bg: $secondary !default;
 
 
 // Scheduler
