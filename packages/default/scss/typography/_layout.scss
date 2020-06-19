@@ -1,4 +1,4 @@
-@include exports( "common/typography" ) {
+@include exports( "typography/layout" ) {
 
     .k-typography {
         @include typography(
