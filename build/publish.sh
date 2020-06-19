@@ -22,11 +22,7 @@ if [[ $TRAVIS_BRANCH == 'develop' ]]
 then
   # Publish development (canary) release
 
-  git checkout --force develop
-
-  npx lerna version prerelease --preid dev --no-push --loglevel verbose --yes
-
-  npx lerna publish from-git --pre-dist-tag dev --loglevel verbose --yes
+  npx lerna publish --canary=dev --npm-tag=dev --allow-branch=develop --loglevel=verbose --yes
 
 elif [[ $TRAVIS_BRANCH == 'master' ]]
 then
@@ -39,7 +35,7 @@ then
 
   git checkout --force master
 
-  npx lerna publish --message "chore(release): update changelogs" --conventional-commits --concurrency 1 --loglevel verbose --yes
+  npx lerna publish --message "chore(release): update changelogs" --conventional-commits --concurrency=1 --loglevel=verbose --yes
 
   echo "Push lerna commit to Github..."
   git push origin master --tags --quiet > /dev/null 2>&1
