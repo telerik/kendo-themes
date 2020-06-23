@@ -1,4 +1,4 @@
-@include exports( "common/utils/text" ) {
+@include exports( "utils/text" ) {
 
     $text-align: ( left, right, center, justify ) !default;
     $text-transform: ( lowercase, uppercase, capitalize ) !default;
