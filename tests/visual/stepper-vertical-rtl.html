@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="k-typography">
 <head>
-    <title>Vertical Steppers</title>
+    <title>Vertical Steppers RTL</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
@@ -24,13 +24,16 @@
 <body>
 
     <div id="test-area" class="grid">
+
+        <span class="col-4">RTL</span>
+
         <span>Indicator</span>
         <span>< + label</span>
         <span>Icons</span>
         <span>Labels</span>
 
         <section>
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-rows: repeat(12, 1fr)">
+            <nav dir="rtl" class="k-stepper k-widget" style="display: grid; grid-template-rows: repeat(12, 1fr)">
                 <ol class="k-step-list k-step-list-vertical" style="grid-row-start: 1; grid-row-end: -1;">
                     <li class="k-step k-step-first k-step-done" style="max-height: 33.333%">
                         <a href="#" class="k-step-link">
@@ -46,8 +49,8 @@
                             </span>
                         </a>
                     </li>
-                    <li class="k-step k-step-last">
-                        <a href="#" class="k-step-link" style="max-height: 33.333%">
+                    <li class="k-step k-step-last" style="max-height: 33.333%">
+                        <a href="#" class="k-step-link">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-text">3</span>
                             </span>
@@ -63,7 +66,7 @@
             </nav>
         </section>
         <section>
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-rows: repeat(12, 1fr)">
+            <nav dir="rtl" class="k-stepper k-widget" style="display: grid; grid-template-rows: repeat(12, 1fr)">
                 <ol class="k-step-list k-step-list-vertical" style="grid-row-start: 1; grid-row-end: -1;">
                     <li class="k-step k-step-first k-step-done k-step-success" style="max-height: 33.333%">
                         <a href="#" class="k-step-link">
@@ -87,8 +90,8 @@
                             </span>
                         </a>
                     </li>
-                    <li class="k-step k-step-last k-step-optional">
-                        <a href="#" class="k-step-link" style="max-height: 33.333%">
+                    <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%">
+                        <a href="#" class="k-step-link">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-text">3</span>
                             </span>
@@ -108,7 +111,7 @@
             </nav>
         </section>
         <section>
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-rows: repeat(12, 1fr)">
+            <nav dir="rtl" class="k-stepper k-widget" style="display: grid; grid-template-rows: repeat(12, 1fr)">
                 <ol class="k-step-list k-step-list-vertical" style="grid-row-start: 1; grid-row-end: -1;">
                     <li class="k-step k-step-first k-step-done" style="max-height: 33.333%">
                         <a href="#" class="k-step-link">
@@ -141,7 +144,7 @@
             </nav>
         </section>
         <section>
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-rows: repeat(12, 1fr)">
+            <nav dir="rtl" class="k-stepper k-widget" style="display: grid; grid-template-rows: repeat(12, 1fr)">
                 <ol class="k-step-list k-step-list-vertical" style="grid-row-start: 1; grid-row-end: -1;">
                     <li class="k-step k-step-first k-step-done" style="max-height: 33.333%">
                         <a href="#" class="k-step-link">
@@ -168,63 +171,6 @@
                 <div class="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" tabindex="0" style="grid-row-start: 2; grid-row-end: 10;">
                     <span class="k-progress-status-wrap k-progress-end"></span>
                     <div class="k-state-selected" style="width: 100%; height: 50%;">
-                        <span class="k-progress-status-wrap k-progress-end" style="width: 100%; height: 200%;"></span>
-                    </div>
-                </div>
-            </nav>
-        </section>
-
-        <hr />
-
-        <span class="col-4">Content Between Steps</span>
-
-        <section class="col-4">
-            <nav class="k-stepper k-widget" style="display: grid; grid-template-rows: repeat(12, 1fr)">
-                <ol class="k-step-list k-step-list-vertical" style="grid-row-start: 1; grid-row-end: -1;">
-                    <li class="k-step k-step-first k-step-done k-step-success" style="max-height: 33.333%">
-                        <a href="#" class="k-step-link">
-                            <span class="k-step-indicator">
-                                <span class="k-step-indicator-text">1</span>
-                            </span>
-                            <span class="k-step-label">
-                                <span class="k-step-text">Account Info</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-step k-step-current k-step-focus" style="height: auto;">
-                        <a href="#" class="k-step-link">
-                            <span class="k-step-indicator">
-                                <span class="k-step-indicator-text">2</span>
-                            </span>
-                            <span class="k-step-label">
-                                <span class="k-step-text">Personal Info</span>
-                            </span>
-                        </a>
-                        <div class="k-step-content" style="height: 100px">
-                            <div class="content">
-                                This is the first step of your wizard with inline content.
-                            </div>
-                            <div class="navigation">
-                                <button class="k-button k-outline k-primary">Close</button>
-                                <span>Step 2 of 3</span>
-                                <button class="k-button k-primary">Next</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="k-step k-step-last" style="max-height: 33.333%">
-                        <a href="#" class="k-step-link">
-                            <span class="k-step-indicator">
-                                <span class="k-step-indicator-text">3</span>
-                            </span>
-                            <span class="k-step-label">
-                                <span class="k-step-text">Payment Details</span>
-                            </span>
-                        </a>
-                    </li>
-                </ol>
-                <div class="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" tabindex="0" style="grid-row-start: 2; grid-row-end: 12;">
-                    <span class="k-progress-status-wrap k-progress-end"></span>
-                    <div class="k-state-selected" style="width: 100%; height: 20%;">
                         <span class="k-progress-status-wrap k-progress-end" style="width: 100%; height: 200%;"></span>
                     </div>
                 </div>
