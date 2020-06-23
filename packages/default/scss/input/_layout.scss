@@ -12,6 +12,8 @@
         font-size: $input-font-size;
         line-height: $input-line-height;
         box-sizing: border-box;
+        // Targets https://github.com/telerik/kendo-react/issues/638.
+        box-shadow: none;
         background: none;
         display: inline-flex;
         flex-flow: row nowrap;
