@@ -1,4 +1,4 @@
-@include exports( "common/utils/flex-containers" ) {
+@include exports( "utils/flex-containers" ) {
 
     // Horizonatal and vertical boxes
     .k-hbox, .k-vbox    { display: flex; } // sass-lint:disable-line single-line-per-selector
