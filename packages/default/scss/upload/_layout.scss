@@ -17,19 +17,6 @@
             min-width: 7em;
         }
 
-        .k-action-buttons {
-            justify-content: flex-end;
-
-            .k-button {
-                flex-grow: 0;
-                border-radius: 0;
-            }
-
-            .k-button+.k-button {
-                border-left-width: 0;
-            }
-        }
-
         // Drop zone
         .k-dropzone {
             padding: $upload-dropzone-padding-y $upload-dropzone-padding-x;
@@ -374,6 +361,13 @@
 
         .k-file-invalid > .k-progress {
             width: 100%;
+        }
+
+
+        // Action buttons
+        .k-actions,
+        .k-action-buttons {
+            border-top-width: 1px;
         }
 
         // RTL styles

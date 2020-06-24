@@ -1,1 +1,14 @@
-@include exports("action-buttons/theme") {}
+@import "~@progress/kendo-theme-default/scss/action-buttons/_theme.scss";
+
+@include exports("action-buttons/theme/material") {
+
+    .k-actions,
+    .k-action-buttons,
+    .k-columnmenu-actions {
+        .k-button:not(.k-primary),
+        .k-button-secondary {
+            background-color: try-shade( $button-bg );
+        }
+    }
+
+}
