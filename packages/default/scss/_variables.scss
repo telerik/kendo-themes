@@ -1692,6 +1692,19 @@ $menu-popup-item-expanded-gradient: null !default;
 $menu-popup-item-focus-shadow: $menu-item-focus-shadow !default;
 
 
+// Actions
+$actions-margin-top: map-get( $spacing, 4 ) !default;
+$actions-padding-x: map-get( $spacing, 2 ) !default;
+$actions-padding-y: map-get( $spacing, 2 ) !default;
+$actions-border-width: 0 !default;
+$actions-button-gap: map-get( $spacing, 2 ) !default;
+
+$actions-bg: null !default;
+$actions-text: null !default;
+$actions-border: null !default;
+$actions-gradient: null !default;
+
+
 // Toolbar
 
 $toolbar-bg: $button-bg !default;

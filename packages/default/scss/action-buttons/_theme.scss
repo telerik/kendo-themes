@@ -1,71 +1,14 @@
 @include exports("action-buttons/theme") {
 
-    .k-action-buttons {
-        border-color: $popup-border;
-
-        .k-button {
-            color: inherit;
-
-            &:hover,
-            &.k-state-hover {
-                @include fill(
-                    $button-hovered-text,
-                    $button-hovered-bg,
-                    $button-hovered-border,
-                    $button-hovered-gradient
-                );
-            }
-
-            &:focus,
-            &.k-state-focused {
-                @include box-shadow( $focused-shadow );
-            }
-
-            &:active,
-            &.k-state-active {
-                @include fill(
-                    $button-pressed-text,
-                    $button-pressed-bg,
-                    $button-pressed-border,
-                    $button-pressed-gradient
-                );
-                @include box-shadow( $button-pressed-shadow );
-            }
-        }
-
-        .k-primary {
-            color: $primary;
-
-            &:hover,
-            &.k-state-hover {
-                @include fill(
-                    $primary-button-hovered-text,
-                    $primary-button-hovered-bg,
-                    $primary-button-hovered-border,
-                    $primary-button-hovered-gradient
-                );
-
-                &:focus,
-                &.k-state-focused {
-                    @include box-shadow( $focused-shadow );
-                }
-            }
-
-            &:focus,
-            &.k-state-focused {
-                @include box-shadow( $primary-focused-shadow );
-            }
-
-            &:active,
-            &.k-state-active {
-                @include fill(
-                    $primary-button-pressed-text,
-                    $primary-button-pressed-bg,
-                    $primary-button-pressed-border,
-                    $primary-button-pressed-gradient
-                );
-            }
-        }
+    .k-actions,
+    .k-action-buttons,
+    .k-columnmenu-actions {
+        @include fill(
+            $actions-text,
+            $actions-bg,
+            $actions-border,
+            $actions-gradient
+        );
     }
 
 }

@@ -229,11 +229,11 @@
             }
         }
 
-        > .k-popup {
-            padding-bottom: 0;
-
-            .k-action-buttons {
-                margin-bottom: 0;
+        .k-actions,
+        .k-action-buttons,
+        .k-columnmenu-actions {
+            .k-button {
+                flex: 1 1 50%;
             }
         }
 
@@ -307,6 +307,18 @@
     }
 
     // Infinite timepicker
+    .k-timeselector {
+
+        .k-actions,
+        .k-action-buttons,
+        .k-columnmenu-actions {
+            .k-button {
+                flex: 1 1 50%;
+            }
+        }
+    }
+
+
     // Header
     .k-time-header {
         display: flex;

@@ -1156,14 +1156,9 @@
         $item-spacing: $spacer-y / 2;
         $form-padding: $spacer-y;
         $form-padding-y: $form-padding - $item-spacing;
-        $action-buttons-margin-bottom: calc( -1 * ( #{$form-padding-y} + #{$popup-padding-y} ) );
 
         .k-filter-menu-container {
             padding: $form-padding-y $form-padding;
-
-            .k-action-buttons {
-                margin: $form-padding (-$form-padding) $action-buttons-margin-bottom;
-            }
         }
 
         .k-widget,
@@ -1182,6 +1177,19 @@
         .k-switch {
             width: $switch-size;
             display: inline-flex;
+        }
+
+        .k-actions,
+        .k-action-buttons,
+        .k-columnmenu-actions {
+            margin-left: -$form-padding;
+            margin-right: -$form-padding;
+            margin-bottom: -$form-padding;
+            padding: $form-padding;
+
+            .k-button {
+                flex: 1 1 50%;
+            }
         }
     }
 
@@ -1267,28 +1275,17 @@
 
         .k-filter-menu .k-filter-menu-container {
             padding: $spacer-y $spacer-x;
-
-            .k-columnmenu-actions {
-                padding: $spacer-y 0 0;
-            }
         }
+    }
 
+    .k-column-list-wrapper,
+    .k-columnmenu-item-content {
+
+        .k-actions,
+        .k-action-buttons,
         .k-columnmenu-actions {
-            display: flex;
-            padding: $spacer-y $spacer-x;
-
             .k-button {
-                flex: 1 0 auto;
-                width: auto;
-                margin: 0 ( $spacer-x / 2 );
-
-                &:first-child {
-                    margin-left: 0;
-                }
-
-                &:last-child {
-                    margin-right: 0;
-                }
+                flex: 1 1 50%;
             }
         }
     }

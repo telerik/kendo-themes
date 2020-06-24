@@ -671,6 +671,14 @@
             }
         }
 
+        .k-actions,
+        .k-action-buttons,
+        .k-columnmenu-actions {
+            .k-button {
+                flex: 1 1 50%;
+            }
+        }
+
     }
 
 }
