@@ -9,33 +9,6 @@ position: 9
 
 The following table lists the available variables for customizing the Bootstrap theme.
 
-<style>
-    .theme-variables th,
-    .theme-variables td {
-        vertical-align: top;
-    }
-
-    .color-preview {
-        margin-right: .5em;
-        border-radius: 50%;
-        width: 1em;
-        height: 1em;
-        vertical-align: middle;
-        display: inline-block;
-        border: 1px solid rgba(0,0,0,.08);
-    }
-
-    .theme-variables-description-container > div {
-        margin: 0 0 .5em 2em;
-    }
-
-    .theme-variables-description {
-        display: block;
-        margin-left: 1em;
-    }
-</style>
-
-
 ## Variables
 
 ### Common
