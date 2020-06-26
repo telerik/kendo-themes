@@ -2806,6 +2806,9 @@ $editor-font-family: $font-family !default;
 $editor-font-size: $font-size !default;
 $editor-line-height: $line-height !default;
 
+$editor-placeholder-text: rgba( $component-text, .5) !default;
+$editor-placeholder-opacity: 1 !default;
+
 
 // Gantt
 $gantt-border-width: 1px !default;
