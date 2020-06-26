@@ -62,6 +62,10 @@
         position: relative;
         cursor: pointer;
 
+        .k-radio {
+            flex-shrink: 0;
+        }
+
         .k-label {
             cursor: pointer;
         }

@@ -83,6 +83,10 @@
         position: relative;
         cursor: pointer;
 
+        .k-checkbox {
+            flex-shrink: 0;
+        }
+
         .k-label {
             cursor: pointer;
         }
