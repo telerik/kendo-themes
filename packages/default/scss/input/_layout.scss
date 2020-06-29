@@ -118,6 +118,8 @@
         border: 0;
         outline: 0;
         box-sizing: border-box;
+        // Targets https://github.com/telerik/kendo-react/issues/638.
+        box-shadow: none;
         color: inherit;
         background: none;
         font: inherit;
