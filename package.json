@@ -2,7 +2,7 @@
   "devDependencies": {
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
-    "@commitlint/core": "^8.3.5",
+    "@commitlint/core": "^9.0.1",
     "@joneff/baka": "^0.3.2",
     "eslint": "^7.0.0",
     "fs-extra": "^9.0.0",
