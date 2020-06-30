@@ -22,7 +22,8 @@
             background-color: $grid-selected-bg;
         }
         tr.k-state-selected > td {
-            background-color: transparent;
+            //background-color: transparent;
+            //background-color: $grid-selected-bg;
         }
 
         // Hover, Focused state
@@ -55,8 +56,19 @@
                 }
             }
         }
-        .k-grid-header-locked th {
-            @include fill( $border: $grid-sticky-header-border );
+
+        .k-grid-header-locked,
+        .k-grid-content-locked,
+        .k-grid-header-locked .k-header,
+        .k-grid-content-locked td {
+            border-top-color: $grid-header-border;
+            border-bottom-color: $grid-header-border;
+        }
+
+        .k-master-row {
+            .k-grid-content-sticky {
+                border-bottom-color: $grid-header-border;
+            }
         }
     }
 

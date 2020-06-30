@@ -2564,7 +2564,7 @@ $grid-group-drag-clue-line-height: 1.5 !default;
 
 /// Background color of alternating rows in grid
 /// @group grid
-$grid-alt-bg: $table-accent-bg !default;
+$grid-alt-bg: darken($grid-bg, 5%) !default;
 /// Text color of alternating rows in grid
 /// @group grid
 $grid-alt-text: null !default;
@@ -2574,7 +2574,7 @@ $grid-alt-border: null !default;
 
 /// Background color of hovered rows in grid
 /// @group grid
-$grid-hovered-bg: $table-hover-bg !default;
+$grid-hovered-bg: darken($grid-bg, 8%) !default;
 /// Text color of hovered rows in grid
 /// @group grid
 $grid-hovered-text: $table-hover-color !default;
@@ -2584,13 +2584,16 @@ $grid-hovered-border: null !default;
 
 /// Background color of selected rows in grid
 /// @group grid
-$grid-selected-bg: rgba($selected-bg, .25) !default;
+$grid-selected-bg: mix($selected-bg, #ffffff, 32%) !default;
 /// Text color of selected rows in grid
 /// @group grid
 $grid-selected-text: $grid-text !default;
 /// Border color of selected rows in grid
 /// @group grid
 $grid-selected-border: $grid-border !default;
+
+$grid-selected-alt-bg: shade($grid-selected-bg, .4) !default;
+$grid-selected-hovered-bg: shade($grid-selected-bg, .7) !default;
 
 $grid-grouping-row-bg: darken($grid-bg, 7%) !default;
 $grid-grouping-row-text: $grid-text !default;
@@ -2608,24 +2611,20 @@ $grid-command-cell-button-spacing: .16em !default;
 
 $grid-search-width: 15.7em !default;
 
-$grid-sticky-bg: try-shade($grid-bg, .5) !default;
+$grid-sticky-bg: $grid-bg !default;
 $grid-sticky-text:  $grid-text !default;
-$grid-sticky-border:  try-darken($grid-border, 5%) !default;
+$grid-sticky-border: rgba($text-color, .5) !default;
 
-$grid-sticky-alt-bg: try-shade( true-mix($grid-alt-bg, $grid-bg, 6%), .5) !default;
+$grid-sticky-alt-bg: $grid-alt-bg !default;
 
-$grid-sticky-header-bg: try-shade($grid-header-bg, .5) !default;
+$grid-sticky-header-bg: $grid-header-bg !default;
 $grid-sticky-header-text: $grid-header-text !default;
 $grid-sticky-header-border: $grid-sticky-border !default;
 
 $grid-sticky-footer-bg: $grid-bg !default;
-$grid-sticky-footer-hovered-bg: true-mix($grid-hovered-bg, $grid-sticky-footer-bg, 7%) !default;
+$grid-sticky-footer-hovered-bg: $grid-hovered-bg !default;
 
-$grid-sticky-selected-bg: try-shade( mix( $grid-bg, $selected-bg, 75% ), .5) !default;
-$grid-sticky-selected-alt-bg:  try-shade( mix( mix( $grid-bg, contrast-wcag( $grid-bg ), 97% ), $selected-bg, 75% ), .5 ) !default;
-
-$grid-sticky-hovered-bg: try-shade( true-mix($grid-hovered-bg, $grid-bg, 13%), .5) !default;
-$grid-sticky-selected-hovered-bg: try-shade( mix( mix( $grid-bg, contrast-wcag( $grid-bg ), 93.5% ), $selected-bg, 75% ), .5) !default;
+$grid-sticky-hovered-bg: $grid-hovered-bg !default;
 
 
 // Treelist

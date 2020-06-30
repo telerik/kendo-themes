@@ -125,8 +125,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-alt-bg</td>
     <td></td>
-    <td>rgba( contrast-wcag( $grid-bg ), .04 )</td>
-    <td>rgba( contrast-wcag( $grid-bg ), .04 )</td>
+    <td>shade($grid-bg, 3.5%)</td>
+    <td>shade($grid-bg, 3.5%)</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in grid</div></div>
@@ -185,8 +185,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-selected-bg</td>
     <td></td>
-    <td>rgba($selected-bg, .25)</td>
-    <td>rgba($selected-bg, .25)</td>
+    <td>mix($selected-bg, #ffffff, 25%)</td>
+    <td>mix($selected-bg, #ffffff, 25%)</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected rows in grid</div></div>
