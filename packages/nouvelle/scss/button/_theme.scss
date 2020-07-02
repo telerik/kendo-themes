@@ -1,0 +1,71 @@
+@mixin kendo-button__theme() {
+
+    // Solid buttons
+    .k-button,
+    .k-button-solid.k-button-secondary {
+        @include fill(
+            var(--kendo-button-text),
+            var(--kendo-button-bg),
+            var(--kendo-button-border),
+            var(--kendo-button-gradient)
+        );
+
+
+        // Hover
+        &:hover,
+        &.k-state-hover {
+            @include fill(
+                var(--kendo-button-hover-text),
+                var(--kendo-button-hover-bg),
+                var(--kendo-button-hover-border),
+                var(--kendo-button-hover-gradient)
+            );
+        }
+
+        // Pressed
+        &:active,
+        &.k-state-active {
+            @include fill(
+                var(--kendo-button-active-text),
+                var(--kendo-button-active-bg),
+                var(--kendo-button-active-border),
+                var(--kendo-button-active-gradient)
+            );
+        }
+
+        // Focus
+        &:focus,
+        &.k-state-focus {
+            @include fill(
+                var(--kendo-button-focus-text),
+                var(--kendo-button-focus-bg),
+                var(--kendo-button-focus-border),
+                var(--kendo-button-focus-gradient)
+            );
+        }
+    }
+
+    .k-button.k-primary,
+    .k-button-solid.k-button-primary {}
+
+    .k-button-solid.k-button-tertiary {}
+
+
+    // Flat buttons
+    .k-button-flat.k-button-secondary {}
+    .k-button-flat.k-button-primary {}
+    .k-button-flat.k-button-tertiary {}
+
+
+    // Outline buttons
+    .k-button-outline.k-button-secondary {}
+    .k-button-outline.k-button-primary {}
+    .k-button-outline.k-button-tertiary {}
+
+
+    // Clear buttons
+    .k-button-clear.k-button-secondary {}
+    .k-button-clear.k-button-primary {}
+    .k-button-clear.k-button-tertiary {}
+
+}

@@ -1,0 +1,13 @@
+@mixin kendo-button__layout() {
+
+    .k-button {
+        padding: var(--kendo-button-padding-y) var(--kendo-button-padding-x);
+        border-width: var(--kendo-button-border-width);
+        border-style: var(--kendo-button-border-style);
+        outline: 0;
+        background-clip: padding-box;
+        display: inline-flex;
+        flex-flow: row nowrap;
+    }
+
+}
