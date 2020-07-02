@@ -37,10 +37,10 @@
         &:focus,
         &.k-state-focus {
             @include fill(
-                var(--kendo-button-focus-text),
-                var(--kendo-button-focus-bg),
-                var(--kendo-button-focus-border),
-                var(--kendo-button-focus-gradient)
+                var(--kendo-button-focus-text, var(--kendo-button-hover-text)),
+                var(--kendo-button-focus-bg, var(--kendo-button-hover-bg)),
+                var(--kendo-button-focus-border, var(--kendo-button-hover-border)),
+                var(--kendo-button-focus-gradient, var(--kendo-button-hover-gradient))
             );
         }
     }
