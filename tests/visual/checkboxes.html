@@ -9,7 +9,7 @@
 
     <style>
         #test-area {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
     </style>
 
@@ -27,9 +27,7 @@
     <div id="test-area" class="grid">
 
         <span>LTR Checkboxes</span>
-        <span>LTR RadioButtons</span>
-        <span dir="rtl">RTL Checkboxes</span>
-        <span dir="rtl">RTL RadioButtons</span>
+        <span>LTR Checkboxes (Input inside Label)</span>
 
         <section>
             <input type="checkbox" id="ch1" class="k-checkbox" checked /><!--
@@ -58,77 +56,6 @@
         </section>
 
         <section>
-            <input type="radio" name="group1" id="rad1" class="k-radio" checked /><!--
-            --><label class="k-radio-label" for="rad1">Checked</label>
-            <br /><br />
-            <input type="radio" name="group1" id="rad2" class="k-radio" /><!--
-            --><label class="k-radio-label" for="rad2">Unchecked</label>
-            <br /><br />
-            <input type="radio" name="group2" id="rad3" class="k-radio" disabled checked /><!--
-            --><label class="k-radio-label" for="rad3">Disabled</label>
-            <br /><br />
-            <input type="radio" name="group2" id="rad4" class="k-radio" disabled /><!--
-            --><label class="k-radio-label" for="rad4">Disabled</label>
-            <br /><br />
-            <input type="radio" name="group1" id="radRequired" class="k-radio k-state-invalid" required/><!--
-            --><label class="k-radio-label" for="radRequired">Required</label>
-            <br /><br />
-            <input type="radio" name="groupLong1" id="radLong" class="k-radio" checked /><!--
-            --><label class="k-radio-label" for="radLong">Long label Vivamus a arcu lacus. Integer augue leo, accumsan sit amet purus pharetra.</label>
-        </section>
-
-        <section dir="rtl">
-            <input type="checkbox" id="ch5" class="k-checkbox" checked /><!--
-            --><label class="k-checkbox-label" for="ch5">Checked</label>
-            <br /><br />
-            <input type="checkbox" id="ch6" class="k-checkbox" /><!--
-            --><label class="k-checkbox-label" for="ch6">Unchecked</label>
-            <br /><br />
-            <input type="checkbox" id="ch7" class="k-checkbox" disabled checked /><!--
-            --><label class="k-checkbox-label" for="ch7">Disabled</label>
-            <br /><br />
-            <input type="checkbox" id="ch8" class="k-checkbox" disabled /><!--
-            --><label class="k-checkbox-label" for="ch8">Disabled</label>
-            <br /><br />
-            <input type="checkbox" id="chRtlInd" class="k-checkbox k-state-indeterminate" /><!--
-            --><label class="k-checkbox-label" for="chRtlInd">Indeterminate</label>
-            <br /><br />
-            <input type="checkbox" id="chRtlIndDis" class="k-checkbox k-state-indeterminate" disabled /><!--
-            --><label class="k-checkbox-label" for="chRtlIndDis">Indeterminate Disabled</label>
-            <br /><br />
-            <input type="checkbox" id="chRtlRequired" class="k-checkbox k-state-invalid" required/><!--
-            --><label class="k-checkbox-label" for="chRtlRequired">Required</label>
-            <br /><br />
-            <input type="checkbox" id="chRtlLong" class="k-checkbox" checked /><!--
-            --><label class="k-checkbox-label" for="chRtlLong">Long label Vivamus a arcu lacus. Integer augue leo, accumsan sit amet purus pharetra.</label>
-        </section>
-
-        <section dir="rtl">
-            <input type="radio" name="group3" id="rad5" class="k-radio" checked /><!--
-            --><label class="k-radio-label" for="rad5">Checked</label>
-            <br /><br />
-            <input type="radio" name="group3" id="rad6" class="k-radio" /><!--
-            --><label class="k-radio-label" for="rad6">Unchecked</label>
-            <br /><br />
-            <input type="radio" name="group4" id="rad7" class="k-radio" disabled checked /><!--
-            --><label class="k-radio-label" for="rad7">Disabled</label>
-            <br /><br />
-            <input type="radio" name="group4" id="rad8" class="k-radio" disabled /><!--
-            --><label class="k-radio-label" for="rad8">Disabled</label>
-            <br /><br />
-            <input type="radio" name="group3" id="rad9" class="k-radio k-state-invalid" required/><!--
-            --><label class="k-radio-label" for="rad9">Required</label>
-            <br /><br />
-            <input type="radio" name="groupLong2" id="radLong" class="k-radio" checked /><!--
-            --><label class="k-radio-label" for="radLong">Long label Vivamus a arcu lacus. Integer augue leo, accumsan sit amet purus pharetra.</label>
-        </section>
-
-        <span>LTR Checkboxes (Input inside Label)</span>
-        <span>LTR Radio (Input inside Label)</span>
-        <span dir="rtl">RTL Checkboxes (Input inside Label)</span>
-        <span dir="rtl">RTL Radio (Input inside Label)</span>
-
-        <section>
             <label class="k-checkbox-label">
                 <input type="checkbox" class="k-checkbox" checked />
                 Checked
@@ -169,113 +96,6 @@
                 Long label Vivamus a arcu lacus. Integer augue leo, accumsan sit amet purus pharetra.
             </label>
         </section>
-
-        <section>
-            <label class="k-radio-label">
-                <input type="radio" name="group5" class="k-radio" checked />
-                Checked
-            </label>
-            <br /><br />
-            <label class="k-radio-label">
-                <input type="radio" name="group5" class="k-radio" />
-                Unchecked
-            </label>
-            <br /><br />
-            <label class="k-radio-label">
-                <input type="radio" name="group6" class="k-radio" disabled checked />
-                Disabled
-            </label>
-            <br /><br />
-            <label class="k-radio-label">
-                <input type="radio" name="group6" class="k-radio" disabled />
-                Disabled
-            </label>
-            <br /><br />
-            <label class="k-radio-label">
-                <input type="radio" name="group5" class="k-radio k-state-invalid" required/>
-                Required
-            </label>
-            <br /><br />
-            <label class="k-radio-label">
-                <input type="radio" name="groupLong3" class="k-radio" checked />
-                Long label Vivamus a arcu lacus. Integer augue leo, accumsan sit amet purus pharetra.
-            </label>
-        </section>
-
-        <section dir="rtl">
-            <label class="k-checkbox-label">
-                <input type="checkbox" class="k-checkbox" checked />
-                Checked
-            </label>
-            <br /><br />
-            <label class="k-checkbox-label">
-                <input type="checkbox" class="k-checkbox" />
-                Unchecked
-            </label>
-            <br /><br />
-            <label class="k-checkbox-label">
-                <input type="checkbox" class="k-checkbox" disabled checked />
-                Disabled
-            </label>
-            <br /><br />
-            <label class="k-checkbox-label">
-                <input type="checkbox" class="k-checkbox" disabled />
-                Disabled
-            </label>
-            <br /><br />
-            <label class="k-checkbox-label">
-                <input type="checkbox" class="k-checkbox k-state-indeterminate" />
-                Indeterminate
-            </label>
-            <br /><br />
-            <label class="k-checkbox-label">
-                <input type="checkbox" class="k-checkbox k-state-indeterminate" disabled />
-                Indeterminate Disabled
-            </label>
-            <br /><br />
-            <label class="k-checkbox-label">
-                <input type="checkbox" class="k-checkbox k-state-invalid" required/>
-                Required
-            </label>
-            <br /><br />
-            <label class="k-checkbox-label">
-                <input type="checkbox" class="k-checkbox" checked />
-                Long label Vivamus a arcu lacus. Integer augue leo, accumsan sit amet purus pharetra.
-            </label>
-        </section>
-
-        <section dir="rtl">
-            <label class="k-radio-label">
-                <input type="radio" name="group7" class="k-radio" checked />
-                Checked
-            </label>
-            <br /><br />
-            <label class="k-radio-label">
-                <input type="radio" name="group7" class="k-radio" />
-                Unchecked
-            </label>
-            <br /><br />
-            <label class="k-radio-label">
-                <input type="radio" name="group8" class="k-radio" disabled checked />
-                Disabled
-            </label>
-            <br /><br />
-            <label class="k-radio-label">
-                <input type="radio" name="group8" class="k-radio" disabled />
-                Disabled
-            </label>
-            <br /><br />
-            <label class="k-radio-label">
-                <input type="radio" name="group7" class="k-radio k-state-invalid" required/>
-                Required
-            </label>
-            <br /><br />
-            <label class="k-radio-label">
-                <input type="radio" name="groupLong4" class="k-radio" checked />
-                Long label Vivamus a arcu lacus. Integer augue leo, accumsan sit amet purus pharetra.
-            </label>
-        </section>
-
     </div>
 
 </body>
