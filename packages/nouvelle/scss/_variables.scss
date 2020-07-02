@@ -171,6 +171,38 @@ $theme-colors: map-merge((
 // sass-lint:enable indentation
 
 
+// Typography
+
+/// Base font size across all components.
+/// @group typography
+$font-size: 14px !default;
+$font-size-xs: 10px !default;
+$font-size-sm: 12px !default;
+$font-size-lg: 19px !default;
+$font-size-xl: 19px !default;
+
+/// Font family across all components.
+/// @group typography
+$font-family: inherit !default;
+
+/// Font family for monospaced text. Used for styling the code.
+/// @group typography
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
+
+/// Line height used along with $font-size.
+/// @group typography
+$line-height: (20 / 14) !default;
+$line-height-sm: 1.2 !default;
+$line-height-lg: 1.5 !default;
+$line-height-em: $line-height * 1em;
+
+
+// Font weight
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+
+
 // Generic styles
 
 // Root styles
