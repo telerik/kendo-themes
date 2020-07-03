@@ -47,15 +47,6 @@ During development, the SCSS files are linted on every `commit` and built on eve
 
 Browser-specific properties are generated at build-time through the [PostCSS autoprefixer](https://github.com/postcss/autoprefixer).
 
-### Embedding Resources
-
-The embedding of resources, such as images or fonts, avoids hosting-related issues when your project consumes the theme. For more details, refer to [issue #41](https://github.com/telerik/kendo-theme-default/issues/41#issuecomment-258472183).
-
-To update the embedded resources in your project:
-
-1. Run the `npm run embed-assets` task. As a result, the task generates a file with the same name, which registers a Base64-encoded version in the `$data-uris` SCSS map. For example, the `foo.woff` font file will receive a `foo.scss` file, which can later be imported through `@import './font/foo';`.
-1. Inline the Base64 version through `map-get( $data-uris, 'WebComponentsIcons.woff' )`.
-
 ### Documenting Variables
 
 The available variables for customizing the Default theme are listed in the article on [Default variables](https://github.com/telerik/kendo-theme-default/blob/develop/docs/customization.md). The file is generated from the SCSS source files by running the `npm run api` command.

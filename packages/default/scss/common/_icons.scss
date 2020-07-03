@@ -738,6 +738,9 @@
     .k-i-justify-around-vertical::before { content: "\e553"; }
     .k-i-data-rest::before { content: "\e946"; }
     .k-i-file-typescript::before { content: "\e947"; }
+    .k-i-set-column-position::before { content: "\e15c"; }
+    .k-i-stick::before { content: "\e15a"; }
+    .k-i-unstick::before { content: "\e15b"; }
 
     // Aliases
     .k-i-page-portrait { @extend .k-i-file-vertical; }
