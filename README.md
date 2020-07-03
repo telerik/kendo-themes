@@ -85,9 +85,9 @@ These steps will create new screenshots in `tests/output`. Note that due to plat
 
 To avoid hosting-related issues in projects that use the themes, the resources are embedded by encoding them in the output CSS. For more details, refer to [this issue](https://github.com/telerik/kendo-theme-default/issues/41#issuecomment-258472183).
 
-To embed the latest resources in a given theme:
+To embed the latest resources:
 
-1. Run the `npm run embed-assets` task in the theme subfolder. The task generates a file with the same name which registers a Base64-encoded version in the `$data-uris` SCSS map. For example, the `foo.woff` font file will be encoded in a `foo.scss` file which can later be imported through `@import './font/foo';`.
+1. Run the `npm run embed-assets` task. The task generates a file with the same name which registers a Base64-encoded version in the `$data-uris` SCSS map. For example, the `foo.woff` font file will be encoded in a `foo.scss` file which can later be imported through `@import './font/foo';`.
 1. Inline the encoded file inside the CSS through `map-get( $data-uris, 'foo.woff' )`. For example:
 
     ```scss
