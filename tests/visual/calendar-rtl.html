@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Calendar RTL</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <span class="k-rtl">calendar full rtl</span>
+        <span class="k-rtl">jquery calendar full rtl</span>
+
+        <section class="k-rtl">
+            <div class="k-widget k-calendar k-week-number">
+                <div class="k-calendar-header">
+                    <a class="k-button k-title">October 2018</a>
+                    <span class="k-calendar-nav">
+                        <a class="k-button k-button-icon k-prev-view"><span class="k-icon k-i-arrow-60-left"></span></a>
+                        <a class="k-today">Today</a>
+                        <a class="k-button k-button-icon k-next-view"><span class="k-icon k-i-arrow-60-right"></span></a>
+                    </span>
+                </div>
+                <div class="k-calendar-view k-calendar-monthview">
+                    <table class="k-content k-calendar-content k-month">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="k-alt">Wk</th>
+                                <th scope="col">Su</th>
+                                <th scope="col">Mo</th>
+                                <th scope="col">Tu</th>
+                                <th scope="col">We</th>
+                                <th scope="col">Th</th>
+                                <th scope="col">Fr</th>
+                                <th scope="col">Sa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="k-alt">9</td>
+                                <td class="k-other-month k-weekend"><a class="k-link">25</a></td>
+                                <td class="k-other-month"><a class="k-link">26</a></td>
+                                <td class="k-other-month"><a class="k-link">27</a></td>
+                                <td class="k-other-month"><a class="k-link">28</a></td>
+                                <td><a class="k-link">1</a></td>
+                                <td><a class="k-link">2</a></td>
+                                <td class="k-weekend"><a class="k-link">3</a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-alt">10</td>
+                                <td class="k-weekend"role="gridcell"><a class="k-link">4</a></td>
+                                <td class="k-state-hover"><a class="k-link">5</a></td>
+                                <td class="k-state-focused"><a class="k-link">6</a></td>
+                                <td class="k-state-selected"><a class="k-link">7</a></td>
+                                <td><a class="k-link">8</a></td>
+                                <td><a class="k-link">9</a></td>
+                                <td class="k-weekend"><a class="k-link">10</a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-alt">11</td>
+                                <td class="k-weekend"><a class="k-link">11</a></td>
+                                <td class="k-state-hover k-state-focused"><a class="k-link">12</a></td>
+                                <td class="k-state-selected k-state-focused"><a class="k-link">13</a></td>
+                                <td class="k-state-selected k-state-hover"><a class="k-link">14</a></td>
+                                <td><a class="k-link">15</a></td>
+                                <td><a class="k-link">16</a></td>
+                                <td class="k-weekend"><a class="k-link">17</a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-alt">12</td>
+                                <td class="k-weekend"><a class="k-link">18</a></td>
+                                <td><a class="k-link">19</a></td>
+                                <td><a class="k-link">20</a></td>
+                                <td><a class="k-link">21</a></td>
+                                <td><a class="k-link">22</a></td>
+                                <td><a class="k-link">23</a></td>
+                                <td class="k-weekend"><a class="k-link">24</a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-alt">13</td>
+                                <td class="k-weekend"><a class="k-link">25</a></td>
+                                <td><a class="k-link">26</a></td>
+                                <td><a class="k-link">27</a></td>
+                                <td><a class="k-link">28</a></td>
+                                <td class="k-today"><a class="k-link">29</a></td>
+                                <td><a class="k-link">30</a></td>
+                                <td class="k-weekend"><a class="k-link">31</a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-alt">14</td>
+                                <td class="k-other-month k-weekend"><a class="k-link">1</a></td>
+                                <td class="k-other-month"><a class="k-link">2</a></td>
+                                <td class="k-other-month"><a class="k-link">3</a></td>
+                                <td class="k-other-month"><a class="k-link">4</a></td>
+                                <td class="k-other-month"><a class="k-link">5</a></td>
+                                <td class="k-other-month"><a class="k-link">6</a></td>
+                                <td class="k-other-month k-weekend"><a class="k-link">7</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="k-rtl">
+            <div class="k-widget k-calendar k-week-number">
+                <div class="k-header">
+                    <a class="k-link k-nav-prev"><span class="k-icon k-i-arrow-60-left"></span></a>
+                    <a class="k-link k-nav-fast">March 2018</a>
+                    <a class="k-link k-nav-next"><span class="k-icon k-i-arrow-60-right"></span></a>
+                </div>
+                <div class="k-calendar-view">
+                    <table class="k-content k-month">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="k-alt">Wk</th>
+                                <th scope="col">Su</th>
+                                <th scope="col">Mo</th>
+                                <th scope="col">Tu</th>
+                                <th scope="col">We</th>
+                                <th scope="col">Th</th>
+                                <th scope="col">Fr</th>
+                                <th scope="col">Sa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="k-alt">9</td>
+                                <td class="k-other-month k-weekend"><a class="k-link">25</a></td>
+                                <td class="k-other-month"><a class="k-link">26</a></td>
+                                <td class="k-other-month"><a class="k-link">27</a></td>
+                                <td class="k-other-month"><a class="k-link">28</a></td>
+                                <td><a class="k-link">1</a></td>
+                                <td><a class="k-link">2</a></td>
+                                <td class="k-weekend"><a class="k-link">3</a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-alt">10</td>
+                                <td class="k-weekend"role="gridcell"><a class="k-link">4</a></td>
+                                <td class="k-state-hover"><a class="k-link">5</a></td>
+                                <td class="k-state-focused"><a class="k-link">6</a></td>
+                                <td class="k-state-selected"><a class="k-link">7</a></td>
+                                <td><a class="k-link">8</a></td>
+                                <td><a class="k-link">9</a></td>
+                                <td class="k-weekend"><a class="k-link">10</a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-alt">11</td>
+                                <td class="k-weekend"><a class="k-link">11</a></td>
+                                <td class="k-state-hover k-state-focused"><a class="k-link">12</a></td>
+                                <td class="k-state-selected k-state-focused"><a class="k-link">13</a></td>
+                                <td class="k-state-selected k-state-hover"><a class="k-link">14</a></td>
+                                <td><a class="k-link">15</a></td>
+                                <td><a class="k-link">16</a></td>
+                                <td class="k-weekend"><a class="k-link">17</a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-alt">12</td>
+                                <td class="k-weekend"><a class="k-link">18</a></td>
+                                <td><a class="k-link">19</a></td>
+                                <td><a class="k-link">20</a></td>
+                                <td><a class="k-link">21</a></td>
+                                <td><a class="k-link">22</a></td>
+                                <td><a class="k-link">23</a></td>
+                                <td class="k-weekend"><a class="k-link">24</a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-alt">13</td>
+                                <td class="k-weekend"><a class="k-link">25</a></td>
+                                <td><a class="k-link">26</a></td>
+                                <td><a class="k-link">27</a></td>
+                                <td><a class="k-link">28</a></td>
+                                <td class="k-today"><a class="k-link">29</a></td>
+                                <td><a class="k-link">30</a></td>
+                                <td class="k-weekend"><a class="k-link">31</a></td>
+                            </tr>
+                            <tr>
+                                <td class="k-alt">14</td>
+                                <td class="k-other-month k-weekend"><a class="k-link">1</a></td>
+                                <td class="k-other-month"><a class="k-link">2</a></td>
+                                <td class="k-other-month"><a class="k-link">3</a></td>
+                                <td class="k-other-month"><a class="k-link">4</a></td>
+                                <td class="k-other-month"><a class="k-link">5</a></td>
+                                <td class="k-other-month"><a class="k-link">6</a></td>
+                                <td class="k-other-month k-weekend"><a class="k-link">7</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="k-footer">
+                    <a class="k-link k-nav-today">Thursday, March 29, 2018</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

@@ -1,41 +1,6 @@
-@include exports("gantt/theme") {
+@import "~@progress/kendo-theme-default/scss/gantt/_theme.scss";
 
-    // Theme
-    .k-gantt {
-        @include fill(
-            $gantt-text,
-            $gantt-bg,
-            $gantt-border
-        );
-    }
-
-
-    // Header and footer
-    .k-gantt-toolbar {
-        @include fill(
-            $toolbar-text,
-            $toolbar-bg,
-            inherit,
-            $toolbar-gradient
-        );
-    }
-
-
-    // View switcher
-    .k-gantt-views {
-
-        li {}
-
-
-        &.k-state-expanded {
-            @include fill(
-                $popup-text,
-                $popup-bg,
-                $popup-border
-            );
-            box-shadow: $popup-shadow;
-        }
-    }
+@include exports("gantt/theme/material") {
 
 
     //Timeline
@@ -53,78 +18,6 @@
                 }
             }
         }
-    }
-
-
-    // Rows and colls
-    .k-gantt-rows {}
-    .k-gantt-columns {}
-    .k-gantt-columns .k-nonwork-hour {
-        background-color: rgba( $panel-text, .025 );
-    }
-
-    .k-task-dot {}
-    .k-task-dot::before {
-        background-color: $panel-text;
-    }
-    .k-task-dot:hover::before,
-    .k-task-dot.k-state-hover::before {
-        border-color: $panel-text;
-        background-color: $panel-bg;
-    }
-
-
-    // Milestone
-    .k-task-milestone {
-        border-color: $primary;
-        background-color: $primary;
-    }
-    .k-task-milestone.k-state-selected {
-        border-color: $secondary;
-        background-color: $secondary;
-    }
-
-
-    // Summary
-    .k-task-summary {
-        color: mix( $primary, $grid-bg, 54 );
-    }
-    .k-task-summary-complete {
-        color: $primary;
-    }
-    .k-task-summary.k-state-selected {
-        color: mix( $secondary, $grid-bg, 54 );
-
-        .k-task-summary-complete {
-            color: $secondary;
-        }
-    }
-
-
-    // Tasks
-    .k-task-single {
-        color: $primary-contrast;
-        background-color: mix( $primary, $grid-bg, 54 );
-
-        .k-task-complete {
-            background: $primary;
-        }
-    }
-    .k-task-single.k-state-selected {
-        color: $secondary-contrast;
-        background-color: mix( $secondary, $grid-bg, 54 );
-
-        .k-task-complete {
-            background: $secondary;
-        }
-    }
-
-    // Dependency Lines
-    .k-gantt-line {
-        color: $gantt-line-fill;
-    }
-    .k-gantt-line.k-state-selected {
-        color: $gantt-line-selected-fill;
     }
 
 }

@@ -1,0 +1,34 @@
+/// Set a specific jump point for requesting color jumps
+/// @group color-system
+/// @access private
+$color-level-step: if(
+    /* check for existance of bootstrap variable */
+    variable-exists("theme-color-interval"),
+    $theme-color-interval,
+    /* fallback */
+    8%
+) !default;
+
+@function color-level($color, $level: 0) {
+
+    @if ($level == 0) {
+        @return $color;
+    }
+
+    $base: if($level < 0, #ffffff, #000000);
+    $level: abs($level);
+
+    @if ( unit($level) == "%" ) {
+        @return mix( $base, $color, $level );
+    }
+
+    @return mix($base, $color, $level * $color-level-step);
+}
+
+@function tint( $color, $level: 1 ) {
+    @return color-level( $color, -1 * $level );
+}
+
+@function shade( $color, $level: 1 ) {
+    @return color-level( $color, 1 * $level );
+}

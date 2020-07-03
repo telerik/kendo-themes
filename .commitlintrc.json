@@ -20,15 +20,18 @@
       2,
       "always",
       [
+        "build",
+        "ci",
+        "chore",
+        "docs",
         "feat",
         "fix",
-        "docs",
-        "style",
-        "refactor",
+        "infra",
         "perf",
-        "test",
-        "chore",
+        "refactor",
         "revert",
+        "style",
+        "test",
         "WIP"
       ]
     ]

@@ -3,6 +3,43 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.19.0"></a>
+# [4.19.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.18.2...@progress/kendo-theme-default@4.19.0) (2020-06-09)
+
+
+### Bug Fixes
+
+* **avatar:** remove margin ([d84f6cd](https://github.com/telerik/kendo-themes/commit/d84f6cd))
+* **calendar:** add style on hover state ([1372dc0](https://github.com/telerik/kendo-themes/commit/1372dc0))
+* **calendar:** remove outline from today button ([18f8106](https://github.com/telerik/kendo-themes/commit/18f8106))
+* **checkbox:** checkbox variables are messing default flag ([cf1e4e0](https://github.com/telerik/kendo-themes/commit/cf1e4e0))
+* **checkbox:** layout with long labels ([e989a37](https://github.com/telerik/kendo-themes/commit/e989a37))
+* **combobox:** broken layout when virtual scrolling is enabled ([60662f4](https://github.com/telerik/kendo-themes/commit/60662f4))
+* **contextmenu:** menu items cut off ([f63b240](https://github.com/telerik/kendo-themes/commit/f63b240))
+* **dataviz:** uze correct variables for treemap bg, text and border ([f194430](https://github.com/telerik/kendo-themes/commit/f194430))
+* **datetimepicker:** rtl layout ([908e308](https://github.com/telerik/kendo-themes/commit/908e308))
+* **dialog:** remove focus outline ([4c029df](https://github.com/telerik/kendo-themes/commit/4c029df))
+* **gantt:** use correct variables for base gantt styling ([fe0938b](https://github.com/telerik/kendo-themes/commit/fe0938b))
+* **grid:** last nested Grid inherits row styles ([f83fb58](https://github.com/telerik/kendo-themes/commit/f83fb58))
+* **pager:** use correct variables for pager border ([d31c80b](https://github.com/telerik/kendo-themes/commit/d31c80b))
+* **scheduler:** missing border ([84b5f31](https://github.com/telerik/kendo-themes/commit/84b5f31))
+* **wizard:** content appearance in IE11 ([dcb31c2](https://github.com/telerik/kendo-themes/commit/dcb31c2))
+* add !optional flag to k-text-selection ([72f3c4d](https://github.com/telerik/kendo-themes/commit/72f3c4d))
+* **pdf-viewer:** add missing variables for bg, text and border ([19ec383](https://github.com/telerik/kendo-themes/commit/19ec383))
+* **tooltip:** add max-width to container ([fe8d6c1](https://github.com/telerik/kendo-themes/commit/fe8d6c1))
+* **treelist:** locked columns overlap toolbar ([b9a03cb](https://github.com/telerik/kendo-themes/commit/b9a03cb))
+* **upload:** add max-height and scroll ([815f766](https://github.com/telerik/kendo-themes/commit/815f766))
+* **wizard:** update step focus state ([27094c9](https://github.com/telerik/kendo-themes/commit/27094c9))
+* input-group-prepend styling ([df94d17](https://github.com/telerik/kendo-themes/commit/df94d17))
+
+
+### Features
+
+* **wizard:** add styling and tests for Wizard component ([c66958d](https://github.com/telerik/kendo-themes/commit/c66958d))
+
+
+
+
 <a name="4.18.2"></a>
 ## [4.18.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.18.1...@progress/kendo-theme-default@4.18.2) (2020-05-20)
 

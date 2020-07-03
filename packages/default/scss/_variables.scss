@@ -1692,6 +1692,19 @@ $menu-popup-item-expanded-gradient: null !default;
 $menu-popup-item-focus-shadow: $menu-item-focus-shadow !default;
 
 
+// Actions
+$actions-margin-top: map-get( $spacing, 4 ) !default;
+$actions-padding-x: map-get( $spacing, 2 ) !default;
+$actions-padding-y: map-get( $spacing, 2 ) !default;
+$actions-border-width: 0 !default;
+$actions-button-gap: map-get( $spacing, 2 ) !default;
+
+$actions-bg: null !default;
+$actions-text: null !default;
+$actions-border: null !default;
+$actions-gradient: null !default;
+
+
 // Toolbar
 
 $toolbar-bg: $button-bg !default;
@@ -2628,6 +2641,10 @@ $grid-sticky-selected-hovered-bg:  try-shade(mix( $grid-hovered-bg, $selected-bg
 
 
 // Pivot grid
+$pivotgrid-font-family: $font-family !default;
+$pivotgrid-font-size: $font-size !default;
+$pivotgrid-line-height: $line-height !default;
+
 $pivotgrid-alt-bg: $header-bg !default;
 $pivotgrid-alt-color: black !default;
 $pivotgrid-alt-text: null !default;
@@ -2648,6 +2665,7 @@ $pivotgrid-button-active-text: null !default;
 $pivotgrid-remove-bg: null !default;
 $pivotgrid-remove-text: null !default;
 
+$pivotgrid-configurator-text: $component-text !default;
 
 // Listview
 $listview-padding-x: map-get( $spacing, 1 ) !default;
@@ -2788,17 +2806,8 @@ $editor-font-family: $font-family !default;
 $editor-font-size: $font-size !default;
 $editor-line-height: $line-height !default;
 
+
 // Gantt
-$gantt-line-size: 2px !default;
-
-$gantt-line-fill: darken( $panel-text, 40 ) !default;
-
-$gantt-line-selected-fill: $selected-bg !default;
-
-$gantt-task-border-width: 0 !default;
-
-$gantt-task-template-padding: $padding-y $padding-x-sm !default;
-
 $gantt-border-width: 1px !default;
 $gantt-font-family: $font-family !default;
 $gantt-font-size: $font-size !default;
@@ -2807,6 +2816,47 @@ $gantt-line-height: $line-height !default;
 $gantt-bg: $component-bg !default;
 $gantt-text: $component-text !default;
 $gantt-border: $component-border !default;
+
+$gantt-treelist-bg: null !default;
+$gantt-treelist-text: null !default;
+$gantt-treelist-border: null !default;
+
+$gantt-nonwork-bg: rgba( contrast-wcag( $gantt-bg ), .025 ) !default;
+$gantt-nonwork-text: null !default;
+$gantt-nonwork-border: null !default;
+
+$gantt-line-size: 2px !default;
+$gantt-line-fill: contrast-wcag( $gantt-bg ) !default;
+$gantt-line-selected-fill: $primary !default;
+
+$gantt-dot-size: 8px !default;
+$gantt-dot-spacing: 4px !default;
+$gantt-dot-bg: $gantt-text !default;
+$gantt-dot-border: null !default;
+$gantt-dot-hover-bg: $gantt-bg !default;
+$gantt-dot-hover-border: $gantt-text !default;
+
+$gantt-milestone-bg: $gantt-text !default;
+$gantt-milestone-border: $gantt-border !default;
+$gantt-milestone-selected-bg: $selected-bg !default;
+$gantt-milestone-selected-border: $selected-border !default;
+
+$gantt-summary-bg: try-tint( $gantt-text, 1 ) !default;
+$gantt-summary-progress-bg: try-shade( $gantt-text, 5 ) !default;
+$gantt-summary-selected-bg: try-tint( $selected-bg, 6 ) !default;
+$gantt-summary-progress-selected-bg: $selected-bg !default;
+
+$gantt-task-border-width: 0 !default;
+$gantt-task-padding-x: map-get( $spacing, 2 ) !default;
+$gantt-task-padding-y: map-get( $spacing, 1 ) !default;
+$gantt-task-bg: try-tint( $gantt-text, 2 ) !default;
+$gantt-task-text: contrast-wcag( $gantt-text ) !default;
+$gantt-task-border: null !default;
+$gantt-task-progress-bg: $gantt-text !default;
+$gantt-task-selected-bg: try-tint( $selected-bg, 6 ) !default;
+$gantt-task-selected-text: $selected-text !default;
+$gantt-task-selected-border: null !default;
+$gantt-task-progress-selected-bg: $selected-bg !default;
 
 
 // Scheduler
@@ -3184,6 +3234,11 @@ $chart-selection-marque-background: $series-a !default;
 $selection-handle-size: 22px !default;
 $selection-border-color: rgba(0, 0, 0, .08) !default;
 $selection-shadow: inset 0 1px 7px rgba(0, 0, 0, .15) !default;
+
+// TreeMap
+$treemap-font-family: $font-family !default;
+$treemap-font-size: $font-size !default;
+$treemap-line-height: $line-height !default;
 
 
 // Backdrop (Overlay)

@@ -12,6 +12,8 @@
         font-size: $input-font-size;
         line-height: $input-line-height;
         box-sizing: border-box;
+        // Targets https://github.com/telerik/kendo-react/issues/638.
+        box-shadow: none;
         background: none;
         display: inline-flex;
         flex-flow: row nowrap;
@@ -26,6 +28,7 @@
         &::placeholder {
             color: $input-placeholder-text;
             opacity: $input-placeholder-opacity;
+            user-select: none;
         }
 
         // TOOD: change this to .k-input
@@ -51,6 +54,7 @@
             &::placeholder {
                 color: $input-placeholder-text;
                 opacity: $input-placeholder-opacity;
+                user-select: none;
             }
         }
 
@@ -114,6 +118,8 @@
         border: 0;
         outline: 0;
         box-sizing: border-box;
+        // Targets https://github.com/telerik/kendo-react/issues/638.
+        box-shadow: none;
         color: inherit;
         background: none;
         font: inherit;
@@ -132,6 +138,7 @@
         &::placeholder {
             color: $input-placeholder-text;
             opacity: $input-placeholder-opacity;
+            user-select: none;
         }
     }
 

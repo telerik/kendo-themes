@@ -1,41 +1,13 @@
-@include exports("action-buttons/layout") {
+@import "~@progress/kendo-theme-default/scss/action-buttons/_layout.scss";
 
-    .k-action-buttons {
-        padding: 8px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: center;
-        align-content: flex-end;
-        clear: both;
+@include exports("action-buttons/layout/material") {
 
+    .k-actions,
+    .k-action-buttons,
+    .k-columnmenu-actions {
         .k-button {
-            @extend .k-button-flat;
-            border-radius: $border-radius;
-            flex: 0 1 auto;
-            align-self: center;
-            border-style: none;
-            box-shadow: none;
-            min-width: auto;
-
-            &::before {
-                display: block;
-            }
+            @include box-shadow( none );
         }
-        .k-button + .k-button {
-            margin-left: $padding-x-sm;
-        }
-        .k-button.k-left {
-            float: none;
-        }
-
-    }
-
-    .k-popup > .k-action-buttons,
-    .k-popup > kendo-grid-columnlist > .k-action-buttons {
-        margin-top: $spacer;
-        margin-bottom: -$popup-padding-y;
     }
 
 }

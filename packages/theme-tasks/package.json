@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-tasks",
   "description": "Build utiliti for @progress/kendo-themes",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -32,10 +32,10 @@
     "gulp": "^4.0.2"
   },
   "dependencies": {
-    "@joneff/baka": "^0.1.2",
+    "@joneff/baka": "^0.3.2",
     "ansi-colors": "^4.1.1",
     "autoprefixer": "^9.8.0",
-    "fibers": "^4.0.3",
+    "fibers": "^5.0.0",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0",
     "gulplog": "^1.0.0",

@@ -1026,10 +1026,14 @@
 
 
         .k-widget.k-recur-interval,
-        .k-widget.k-recur-count {
+        .k-widget.k-recur-count,
+        .k-widget.k-recur-monthday {
             width: 5em;
         }
-        .k-widget.k-recur-until {
+        .k-widget.k-recur-until,
+        .k-widget.k-recur-month,
+        .k-widget.k-recur-weekday,
+        .k-widget.k-recur-weekday-offset {
             width: 9em;
         }
 

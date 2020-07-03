@@ -155,10 +155,6 @@
         }
     }
 
-    .k-columnmenu-actions .k-button {
-        box-shadow: none;
-    }
-
     .k-columnmenu-item {
         &.k-state-selected {
             @include fill(

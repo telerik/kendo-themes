@@ -1,7 +1,5 @@
 "use strict";
 
-const fs = require("fs");
-const path = require("path");
 const gulp = require("gulp");
 const PluginError = require("plugin-error");
 const logger = require("gulplog");
@@ -13,6 +11,9 @@ const calc = require("postcss-calc");
 const Fiber = require("fibers");
 const baka = require("@joneff/baka");
 const sassImporterFactory = require("./lib/sassimporter");
+const nodeSass = require("node-sass");
+const dartSass = require("sass");
+let sassCompiler = nodeSass;
 
 
 // Misc
@@ -70,24 +71,15 @@ function getArg(key) {
 
     return (index < 0) ? null : (!next || next[0] === "-") ? true : next; // eslint-disable-line no-nested-ternary
 }
-function ensureDirSync(dir) {
-    dir.split(path.sep).reduce((acc, curr) => {
-        let dirPath = path.join(acc, curr);
-
-        if (!fs.existsSync(dirPath)) {
-            fs.mkdirSync(dirPath);
-        }
-
-        return dirPath;
-    });
-}
 function _info(msg, ...args) { return logger.info(colors.gray(msg), ...args); }
 function _error(msg, ...args) { return logger.error(colors.gray(msg), ...args); }
 const _em = colors.magentaBright;
 
 
 // #region core
-function build(fileGlob = paths.sass.src, dest = paths.sass.dist, options = sassOptions) {
+function build(fileGlob = paths.sass.src, dest = paths.sass.dist, options = sassOptions, compiler = sassCompiler) {
+    sass.compiler = compiler;
+
     return gulp.src(fileGlob)
         .on("data", function(data) {
             options.importer.resetImported();
@@ -108,11 +100,16 @@ function build(fileGlob = paths.sass.src, dest = paths.sass.dist, options = sass
             throw new PluginError(error.plugin, error.messageFormatted);
         }))
         .pipe(postcss(postcssPlugins))
-        .pipe(gulp.dest(paths.sass.dist));
+        .pipe(gulp.dest(dest));
 }
-function flattenSassFiles(file = paths.sass.theme, outFile = paths.sass.inline) {
-    ensureDirSync(path.dirname(outFile));
-    baka.compile(file, outFile);
+function flattenSassFiles(file = paths.sass.theme, outFile = paths.sass.inline, nodeModules = "./node_modules") {
+    baka.compile(
+        file,
+        outFile,
+        {
+            nodeModules: nodeModules
+        }
+    );
 
     Promise.resolve();
 }
@@ -124,23 +121,22 @@ gulp.task("sass", function() {
     let file = getArg("--file") || paths.sass.theme;
     let dest = getArg("--dest") || paths.sass.dist;
 
-    sass.compiler = require("node-sass");
+    sassCompiler = nodeSass;
     return build(file, dest);
 });
-gulp.task('sass:watch', function() {
-    sass.compiler = require("node-sass");
+gulp.task("sass:watch", function() {
     gulp.watch(paths.sass.src, gulp.series("sass"));
 });
-gulp.task('sass:swatches', function() {
+gulp.task("sass:swatches", function() {
     flattenSassFiles(paths.sass.theme, paths.sass.inline);
 
-    sass.compiler = require("node-sass");
+    sassCompiler = nodeSass;
     return build(paths.sass.swatches, paths.sass.dist);
 });
-gulp.task('sass:flat', function() {
+gulp.task("sass:flat", function() {
     flattenSassFiles(paths.sass.theme, paths.sass.inline);
 
-    sass.compier = require("sass");
+    sassCompiler = nodeSass;
     return build(paths.sass.inline, paths.sass.dist);
 });
 // #endregion
@@ -151,23 +147,22 @@ gulp.task("dart", function() {
     let file = getArg("--file") || paths.sass.theme;
     let dest = getArg("--dest") || paths.sass.dist;
 
-    sass.compiler = require("sass");
+    sassCompiler = dartSass;
     return build(file, dest);
 });
-gulp.task('dart:watch', function() {
-    sass.compiler = require("sass");
+gulp.task("dart:watch", function() {
     gulp.watch(paths.sass.src, gulp.series("dart"));
 });
-gulp.task('dart:swatches', function() {
+gulp.task("dart:swatches", function() {
     flattenSassFiles(paths.sass.theme, paths.sass.inline);
 
-    sass.compiler = require("sass");
+    sassCompiler = dartSass;
     return build(paths.sass.swatches, paths.sass.dist);
 });
-gulp.task('dart:flat', function() {
+gulp.task("dart:flat", function() {
     flattenSassFiles(paths.sass.theme, paths.sass.inline);
 
-    sass.compier = require("sass");
+    sassCompiler = dartSass;
     return build(paths.sass.inline, paths.sass.dist);
 });
 // #endregion
@@ -192,3 +187,6 @@ const taskHelper = {
 };
 
 module.exports.taskHelper = taskHelper;
+module.exports.sassOptions = sassOptions;
+module.exports.build = build;
+module.exports.flattenSassFiles = flattenSassFiles;

@@ -11,6 +11,8 @@
         font-family: $gantt-font-family;
         font-size: $gantt-font-size;
         line-height: $gantt-line-height;
+        display: flex;
+        flex-flow: column nowrap;
         position: relative;
         white-space: nowrap;
         -webkit-touch-callout: none;
@@ -50,35 +52,27 @@
     }
 
 
+    // Header and footer
+    .k-gantt-header {
+        border-width: 0 0 $toolbar-border-width;
+        flex-shrink: 0;
+        z-index: 2;
+    }
+    .k-gantt-footer {
+        border-width: $toolbar-border-width 0 0;
+        flex-shrink: 0;
+    }
+
+
     // Toolbar
-    .k-gantt-toolbar {
-        padding: $toolbar-padding-y $toolbar-padding-x;
-        border-width: 0 0 1px;
-        border-style: solid;
-        border-color: inherit;
-        line-height: $toolbar-line-height;
+    .k-gantt-toolbar {}
 
-        .k-gantt-layout + & {
-            border-width: 1px 0 0;
-        }
-
-        .k-gantt-toggle {
-            margin-right: .5em;
-            display: none;
-            float: left;
-        }
+    .k-gantt-toggle {
+        display: none;
     }
-    .k-gantt-actions {
-        float: left;
-
-        .k-button + .k-button {
-            margin-left: $toolbar-padding-x;
-        }
-    }
-    .k-gantt-views {
-        float: right;
-        display: inline-flex;
-    }
+    .k-gantt-add {}
+    .k-gantt-create {}
+    .k-gantt-views {}
 
     @media only screen and (max-width: 480px) {
         .k-gantt-toolbar {
@@ -91,10 +85,10 @@
                 width: $button-calc-size;
                 height: $button-calc-size;
 
-                .k-icon {
+                .k-button-icon {
                     margin: 0;
                 }
-                span + span {
+                .k-button-text {
                     display: none;
                 }
             }
@@ -104,78 +98,35 @@
 
     // View switcher
     .k-gantt-views {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
 
-        li {
-            border-width: $button-border-width;
-            border-style: solid;
-            position: relative;
-            z-index: 1;
-        }
-        li + li {
-            margin-left: -$button-border-width;
-        }
-        li:first-child { @include border-radius(); }
-        li:first-child + li { @include border-left-radius-only(); }
-        li:last-child { @include border-right-radius-only(); }
-
-        .k-state-hover,
-        .k-state-selected {
-            z-index: 2;
-        }
-        &.k-state-expanded {
-            li {
-                @include border-radius( 0 );
-                margin: 0;
-            }
-            li + li { margin-top: -1px; }
-            li:first-child { @include border-top-radius-only(); }
-            li:first-child + li { @include border-radius( 0 ) }
-            li:last-child { @include border-bottom-radius-only(); }
-        }
-
-
-        .k-link {
-            padding: $button-padding-y $button-padding-x;
-            box-sizing: border-box;
-            color: inherit;
-            text-decoration: none;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-        }
-
-        .k-current-view { display: none; }
-        .k-current-view .k-link::after {
-            content: "";
-            margin: 0 0 0 1ex;
-            border: .25em solid transparent;
-            border-top: .5em solid currentColor;
-            border-bottom-width: 0;
-            display: inline-block;
+        select.k-dropdown {
+            width: auto;
+            font-size: inherit;
+            display: none;
+            cursor: pointer;
         }
     }
+
     @media (max-width: 1024px) {
-        ul.k-gantt-views {
-            flex-direction: column;
-            align-items: stretch;
-            position: absolute;
-            top: $toolbar-padding-y;
-            right: $toolbar-padding-x;
-            z-index: 1000;
+        .k-gantt-views {
 
-            li { display: none; }
-            .k-current-view { display: block; }
-
-
-            &.k-state-expanded {
-                li { display: block; }
+            select.k-dropdown {
+                display: flex;
+            }
+            .k-button-group {
+                display: none;
             }
         }
+    }
+
+
+    // Gant content
+    .k-gantt-content {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        flex: 1 1 auto;
+        overflow: hidden;
     }
 
 
@@ -209,6 +160,7 @@
         .k-timeline {
             height: 100%;
             border-width: 0;
+            display: flex;
         }
         .k-grid-header {}
         .k-grid-content {
@@ -317,8 +269,8 @@
         flex: 1 1 auto;
     }
     .k-task-dot {
-        width: 16px;
-        height: 16px;
+        width: calc( #{$gantt-dot-size} + #{$gantt-dot-spacing * 2} );
+        height: calc( #{$gantt-dot-size} + #{$gantt-dot-spacing * 2} );
         line-height: 1;
         cursor: pointer;
         display: none;
@@ -332,8 +284,8 @@
     }
     .k-task-dot::before {
         content: "";
-        width: 8px;
-        height: 8px;
+        width: $gantt-dot-size;
+        height: $gantt-dot-size;
         border-width: 0;
         border-style: solid;
         border-radius: 100%;
@@ -473,7 +425,7 @@
         align-items: center;
     }
     .k-task-template {
-        padding: $gantt-task-template-padding;
+        padding: $gantt-task-padding-y $gantt-task-padding-x;
         line-height: normal;
         flex: 1;
         overflow: hidden;

@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.16.0"></a>
+# [3.16.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.15.2...@progress/kendo-theme-material@3.16.0) (2020-06-09)
+
+
+### Bug Fixes
+
+* add !optional flag to k-text-selection ([72f3c4d](https://github.com/telerik/kendo-themes/commit/72f3c4d))
+* **avatar:** remove margin ([d84f6cd](https://github.com/telerik/kendo-themes/commit/d84f6cd))
+* **gantt:** use correct variables for base gantt styling ([fe0938b](https://github.com/telerik/kendo-themes/commit/fe0938b))
+* **multiselect:** tags styling when in k-edit-field ([7d92b79](https://github.com/telerik/kendo-themes/commit/7d92b79))
+* **pager:** use correct variables for pager border ([d31c80b](https://github.com/telerik/kendo-themes/commit/d31c80b))
+* **pdf-viewer:** add missing variables for bg, text and border ([19ec383](https://github.com/telerik/kendo-themes/commit/19ec383))
+* **upload:** add max-height and scroll ([815f766](https://github.com/telerik/kendo-themes/commit/815f766))
+* **wizard:** update step focus state ([27094c9](https://github.com/telerik/kendo-themes/commit/27094c9))
+
+
+### Features
+
+* **wizard:** add styling and tests for Wizard component ([c66958d](https://github.com/telerik/kendo-themes/commit/c66958d))
+
+
+
+
 <a name="3.15.2"></a>
 ## [3.15.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.15.1...@progress/kendo-theme-material@3.15.2) (2020-05-20)
 

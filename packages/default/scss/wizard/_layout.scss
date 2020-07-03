@@ -2,6 +2,9 @@
     .k-wizard {
         padding: $wizard-padding-y $wizard-padding-x;
         border-width: $wizard-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
         font-size: $wizard-font-size;
         line-height: $wizard-line-height;
         font-family: $wizard-font-family;
