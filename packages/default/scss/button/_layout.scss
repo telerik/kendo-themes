@@ -190,6 +190,18 @@
             width: auto;
             flex: none;
         }
+
+        &[dir="rtl"] {
+            // k-button
+            > .k-button:first-child {
+                @include border-left-radius(0);
+                @include border-right-radius( $button-border-radius );
+            }
+            > .k-button:last-child {
+                @include border-right-radius(0);
+                @include border-left-radius( $button-border-radius );
+            }
+        }
     }
 
 
