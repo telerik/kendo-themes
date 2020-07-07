@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Buttons</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        #test-area > section {
+            position: relative;
+            min-height: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <section>
+            <p>Angular</p>
+            <kendo-splitbutton class="k-widget k-split-button k-button-group k-state-focused">
+                <button class="k-button-icontext k-button">
+                    <span class="k-icon k-i-save"></span>
+                    Save
+                </button>
+                <button class="k-button-icon k-button">
+                    <span class="k-icon k-i-arrow-s"></span>
+                </button>
+            </kendo-splitbutton>
+
+            <kendo-popup class="k-animation-container k-animation-container-fixed k-animation-container-shown" style="position: absolute; left: 0; top: 85px;">
+                <div class="k-popup k-list-container k-reset k-group">
+                    <kendo-button-list>
+                        <ul class="k-list k-reset">
+                            <li class="k-item k-state-focused">
+                                <span class="k-icon k-i-upload"></span>
+                                Save as
+                            </li>
+                            <li class="k-item">
+                                <span class="k-icon k-i-upload"></span>
+                                Upload to drive
+                            </li>
+                        </ul>
+                    </kendo-button-list>
+                </div>
+            </kendo-popup>
+        </section>
+
+        <section>
+            <p>Angular - RTL</p>
+            <kendo-splitbutton class="k-widget k-split-button k-button-group k-state-focused" dir="rtl">
+                <button class="k-button-icontext k-button">
+                    <span class="k-icon k-i-save"></span>
+                    Save
+                </button>
+                <button class="k-button-icon k-button">
+                    <span class="k-icon k-i-arrow-s"></span>
+                </button>
+            </kendo-splitbutton>
+
+            <kendo-popup class="k-animation-container k-animation-container-fixed k-animation-container-shown" style="position: absolute; left: 0; top: 85px;">
+                <div class="k-popup k-list-container k-reset k-group">
+                    <kendo-button-list  dir="rtl">
+                        <ul class="k-list k-reset">
+                            <li class="k-item k-state-focused">
+                                <span class="k-icon k-i-upload"></span>
+                                Save as
+                            </li>
+                            <li class="k-item">
+                                <span class="k-icon k-i-upload"></span>
+                                Upload to drive
+                            </li>
+                        </ul>
+                    </kendo-button-list>
+                </div>
+            </kendo-popup>
+        </section>
+    </div>
+
+</body>
+</html>

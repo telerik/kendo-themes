@@ -175,6 +175,15 @@
                 margin-right: 0;
             }
         }
+
+        [dir="rtl"] & {
+            > .k-item {
+                > .k-icon {
+                    margin-right: 0;
+                    margin-left: $padding-x;
+                }
+            }
+        }
     }
 
     .k-list .k-item,
