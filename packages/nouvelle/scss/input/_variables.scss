@@ -1,0 +1,74 @@
+$input-padding-x: map-get( $spacing, 2 ) !default;
+$input-padding-y: map-get( $spacing, 1 ) !default;
+
+$input-border-width: 1px !default;
+$input-border-style: solid !default;
+
+$input-border-radius: map-get( $spacing, 1 ) !default;
+
+$input-font-family: $font-family !default;
+$input-font-size: $font-size !default;
+$input-line-height: $line-height !default;
+
+
+/// The background of the input.
+/// @group input
+$input-bg: $component-bg !default;
+/// The text color of the input.
+/// @group input
+$input-text: $component-text !default;
+/// The border color of the input.
+/// @group input
+$input-border: $interactive-border !default;
+$input-shadow: null !default;
+
+/// The background of hovered input.
+/// @group input
+$input-hover-bg: $input-bg !default;
+/// The text color of hovered input.
+/// @group input
+$input-hover-text: $input-text !default;
+/// The border color of hovered input.
+/// @group input
+$input-hover-border: $hover-border !default;
+$input-hover-shadow: null !default;
+
+/// The text color of focus input.
+/// @group input
+$input-focus-text: $input-text !default;
+/// The background color of focus input.
+/// @group input
+$input-focus-bg: $input-bg !default;
+/// The border color of focus input.
+/// @group input
+$input-focus-border: $input-hover-border !default;
+$input-focus-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
+
+
+
+
+// Expose
+:root {
+    --kendo-input-padding-x: #{$input-padding-x};
+    --kendo-input-padding-y: #{$input-padding-y};
+    --kendo-input-border-width: #{$input-border-width};
+    --kendo-input-border-style: #{$input-border-style};
+
+    --kendo-input-border-radius: #{$input-border-radius};
+
+    --kendo-input-font-family: #{$input-font-family};
+    --kendo-input-font-size: #{$input-font-size};
+    --kendo-input-line-height: #{$input-line-height};
+
+    --kendo-input-bg: #{$input-bg};
+    --kendo-input-text: #{$input-text};
+    --kendo-input-border: #{$input-border};
+
+    --kendo-input-hover-bg: #{$input-hover-bg};
+    --kendo-input-hover-text: #{$input-hover-text};
+    --kendo-input-hover-border: #{$input-hover-border};
+
+    --kendo-input-focus-bg: #{$input-focus-bg};
+    --kendo-input-focus-text: #{$input-focus-text};
+    --kendo-input-focus-border: #{$input-focus-border};
+}
