@@ -4,6 +4,8 @@ $button-padding-y: map-get( $spacing, 1 ) !default;
 $button-border-width: 1px !default;
 $button-border-style: solid !default;
 
+$button-border-radius: map-get( $spacing, 1 ) !default;
+
 $button-font-family: $font-family !default;
 $button-font-size: $font-size !default;
 $button-line-height: $line-height !default;
@@ -74,6 +76,8 @@ $button-focus-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
     --kendo-button-padding-y: #{$button-padding-y};
     --kendo-button-border-width: #{$button-border-width};
     --kendo-button-border-style: #{$button-border-style};
+
+    --kendo-button-border-radius: #{$button-border-radius};
 
     --kendo-button-font-family: #{$button-font-family};
     --kendo-button-font-size: #{$button-font-size};
