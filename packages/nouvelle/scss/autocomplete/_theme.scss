@@ -1,0 +1,38 @@
+@mixin kendo-autocomplete--theme() {
+
+    // Autocomplete
+    .k-autocomplete {
+        @include fill(
+            var(--kendo-autocomplete-text),
+            var(--kendo-autocomplete-bg),
+            var(--kendo-autocomplete-border)
+        );
+
+
+        // Hover
+        &:hover,
+        &.k-state-hover {
+            @include fill(
+                var(--kendo-autocomplete-hover-text),
+                var(--kendo-autocomplete-hover-bg),
+                var(--kendo-autocomplete-hover-border)
+            );
+        }
+
+
+        // Focus
+        &:focus,
+        &:focus-within,
+        &.k-state-focus,
+        // Legacy
+        &.k-state-focused {
+            @include fill(
+                var(--kendo-autocomplete-focus-text, var(--kendo-autocomplete-hover-text)),
+                var(--kendo-autocomplete-focus-bg, var(--kendo-autocomplete-hover-bg)),
+                var(--kendo-autocomplete-focus-border, var(--kendo-autocomplete-hover-border))
+            );
+            box-shadow: var(--kendo-autocomplete-focus-shadow);
+        }
+    }
+
+}

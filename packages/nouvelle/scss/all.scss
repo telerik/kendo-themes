@@ -1,8 +1,11 @@
 @import "index.scss";
 
-@include kendo-button__layout();
-@include kendo-button__theme();
+@include kendo-button--layout();
+@include kendo-button--theme();
 
-@include kendo-input__layout();
-@include kendo-input__theme();
+@include kendo-input--layout();
+@include kendo-input--theme();
+
+@include kendo-autocomplete--layout();
+@include kendo-autocomplete--theme();
 

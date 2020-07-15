@@ -42,7 +42,7 @@ $input-focus-bg: $input-bg !default;
 /// The border color of focus input.
 /// @group input
 $input-focus-border: $input-hover-border !default;
-$input-focus-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
+$input-focus-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
 
 
@@ -63,12 +63,15 @@ $input-focus-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
     --kendo-input-bg: #{$input-bg};
     --kendo-input-text: #{$input-text};
     --kendo-input-border: #{$input-border};
+    --kendo-input-shadow: #{$input-shadow};
 
     --kendo-input-hover-bg: #{$input-hover-bg};
     --kendo-input-hover-text: #{$input-hover-text};
     --kendo-input-hover-border: #{$input-hover-border};
+    --kendo-input-hover-shadow: #{$input-hover-shadow};
 
     --kendo-input-focus-bg: #{$input-focus-bg};
     --kendo-input-focus-text: #{$input-focus-text};
     --kendo-input-focus-border: #{$input-focus-border};
+    --kendo-input-focus-shadow: #{$input-focus-shadow};
 }

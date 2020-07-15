@@ -1,4 +1,4 @@
-@mixin kendo-input__theme() {
+@mixin kendo-input--theme() {
 
     // Textbox
     .k-textbox {
@@ -29,6 +29,7 @@
                 var(--kendo-input-focus-bg, var(--kendo-input-hover-bg)),
                 var(--kendo-input-focus-border, var(--kendo-input-hover-border))
             );
+            box-shadow: var(--kendo-input-focus-shadow);
         }
     }
 

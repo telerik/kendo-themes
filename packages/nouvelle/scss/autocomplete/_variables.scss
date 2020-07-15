@@ -1,0 +1,77 @@
+$autocomplete-padding-x: $input-padding-x !default;
+$autocomplete-padding-y: $input-padding-y !default;
+
+$autocomplete-border-width: $input-border-width !default;
+$autocomplete-border-style: $input-border-style !default;
+
+$autocomplete-border-radius: $input-border-radius !default;
+
+$autocomplete-font-family: $input-font-family !default;
+$autocomplete-font-size: $input-font-size !default;
+$autocomplete-line-height: $input-line-height !default;
+
+
+/// The background of the autocomplete.
+/// @group autocomplete
+$autocomplete-bg: $input-bg !default;
+/// The text color of the autocomplete.
+/// @group autocomplete
+$autocomplete-text: $input-text !default;
+/// The border color of the autocomplete.
+/// @group autocomplete
+$autocomplete-border: $input-border !default;
+$autocomplete-shadow: $input-shadow !default;
+
+/// The background of hovered autocomplete.
+/// @group autocomplete
+$autocomplete-hover-bg: $input-hover-bg !default;
+/// The text color of hovered autocomplete.
+/// @group autocomplete
+$autocomplete-hover-text: $input-hover-text !default;
+/// The border color of hovered autocomplete.
+/// @group autocomplete
+$autocomplete-hover-border: $input-hover-border !default;
+$autocomplete-hover-shadow: $input-hover-shadow !default;
+
+/// The text color of focus autocomplete.
+/// @group autocomplete
+$autocomplete-focus-text: $input-focus-text !default;
+/// The background color of focus autocomplete.
+/// @group autocomplete
+$autocomplete-focus-bg: $input-focus-bg !default;
+/// The border color of focus autocomplete.
+/// @group autocomplete
+$autocomplete-focus-border: $input-focus-border !default;
+$autocomplete-focus-shadow: $input-focus-shadow !default;
+
+
+
+
+// Expose
+:root {
+    --kendo-autocomplete-padding-x: #{$autocomplete-padding-x};
+    --kendo-autocomplete-padding-y: #{$autocomplete-padding-y};
+    --kendo-autocomplete-border-width: #{$autocomplete-border-width};
+    --kendo-autocomplete-border-style: #{$autocomplete-border-style};
+
+    --kendo-autocomplete-border-radius: #{$autocomplete-border-radius};
+
+    --kendo-autocomplete-font-family: #{$autocomplete-font-family};
+    --kendo-autocomplete-font-size: #{$autocomplete-font-size};
+    --kendo-autocomplete-line-height: #{$autocomplete-line-height};
+
+    --kendo-autocomplete-bg: #{$autocomplete-bg};
+    --kendo-autocomplete-text: #{$autocomplete-text};
+    --kendo-autocomplete-border: #{$autocomplete-border};
+    --kendo-autocomplete-shadow: #{$autocomplete-shadow};
+
+    --kendo-autocomplete-hover-bg: #{$autocomplete-hover-bg};
+    --kendo-autocomplete-hover-text: #{$autocomplete-hover-text};
+    --kendo-autocomplete-hover-border: #{$autocomplete-hover-border};
+    --kendo-autocomplete-hover-shadow: #{$autocomplete-hover-shadow};
+
+    --kendo-autocomplete-focus-bg: #{$autocomplete-focus-bg};
+    --kendo-autocomplete-focus-text: #{$autocomplete-focus-text};
+    --kendo-autocomplete-focus-border: #{$autocomplete-focus-border};
+    --kendo-autocomplete-focus-shadow: #{$autocomplete-focus-shadow};
+}

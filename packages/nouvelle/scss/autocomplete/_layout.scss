@@ -1,0 +1,28 @@
+@mixin kendo-autocomplete--layout() {
+
+    .k-autocomplete {
+        padding: var(--kendo-autocomplete-padding-y) var(--kendo-autocomplete-padding-x);
+        border-width: var(--kendo-autocomplete-border-width);
+        border-style: var(--kendo-autocomplete-border-style);
+        border-radius: var(--kendo-autocomplete-border-radius);
+        outline: 0;
+        background-clip: padding-box;
+        font-size: var(--kendo-autocomplete-font-size, inherit);
+        font-family: var(--kendo-autocomplete-font-family, inherit);
+        line-height: var(--kendo-autocomplete-line-height, calc(20 / 14));
+        display: inline-flex;
+        flex-flow: row nowrap;
+
+        .k-input {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            color: inherit;
+            background: none;
+            font: inherit;
+            flex: 1 1 auto;
+        }
+    }
+
+}
