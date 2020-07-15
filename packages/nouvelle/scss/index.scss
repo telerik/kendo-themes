@@ -1,5 +1,6 @@
 @import "functions/_index.scss";
 @import "mixins/_index.scss";
-@import "variables";
+@import "_variables.scss";
 
 @import "button/index.scss";
+@import "input/index.scss";
