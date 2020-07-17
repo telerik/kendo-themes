@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Floating Label</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, max-content);
+            align-items: start;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <span>Textarea TextBox Container (old)</span>
+        <span>Input TextBox Container (old)</span>
+
+        <!-- https://www.telerik.com/kendo-angular-ui/components/inputs/textarea/#toc-implementing-floating-labels -->
+        <kendo-textbox-container class="k-state-empty k-textbox-container k-textarea-wrapper">
+            <textarea class="k-textarea k-autofill"></textarea>
+            <label class="k-label">Empty</label>
+        </kendo-textbox-container>
+
+        <!-- https://www.telerik.com/kendo-angular-ui/components/inputs/textbox/#toc-implementing-floating-labels -->
+        <kendo-textbox-container class="k-state-empty k-textbox-container">
+            <input class="k-textbox">
+            <label class="k-label">Empty</label>
+        </kendo-textbox-container>
+
+        <kendo-textbox-container class="k-state-empty k-textbox-container k-textarea-wrapper k-state-focused">
+            <textarea class="k-textarea k-autofill"></textarea>
+            <label class="k-label">Focused</label>
+        </kendo-textbox-container>
+
+        <kendo-textbox-container class="k-state-empty k-textbox-container k-state-focused">
+            <input class="k-textbox">
+            <label class="k-label">Focused</label>
+        </kendo-textbox-container>
+
+        <span>Textarea FloatingLabel Container (new)</span>
+        <span>Input FloatingLabel Container (new)</span>
+
+        <!-- https://www.telerik.com/kendo-angular-ui/components/labels/floatinglabel/#toc-implementing-floating-labels -->
+        <kendo-floatinglabel class="k-state-empty k-floating-label-container k-textarea-container" >
+            <textarea class="k-textarea k-autofill ng-pristine ng-valid ng-touched"></textarea>
+            <label class="k-label">Empty</label>
+        </kendo-floatinglabel>
+
+        <kendo-floatinglabel class="k-state-empty k-floating-label-container" dir="ltr">
+            <input class="ng-pristine ng-valid k-textbox ng-touched">
+            <label class="k-label">Empty</label>
+        </kendo-floatinglabel>
+
+        <kendo-floatinglabel class="k-state-empty k-floating-label-container k-state-focused k-textarea-container" >
+            <textarea class="k-textarea k-autofill ng-pristine ng-valid ng-touched"></textarea>
+            <label class="k-label">Focused</label>
+        </kendo-floatinglabel>
+
+        <kendo-floatinglabel class="k-state-empty k-floating-label-container k-state-focused" dir="ltr">
+            <input class="ng-pristine ng-valid k-textbox ng-touched">
+            <label class="k-label">Focused</label>
+        </kendo-floatinglabel>
+    </div>
+
+</body>
+</html>
