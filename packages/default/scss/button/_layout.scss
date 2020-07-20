@@ -245,7 +245,6 @@
         @extend .k-button-outline;
     }
 
-
     // RTL
     .k-rtl {
 
@@ -354,6 +353,12 @@
         &.k-state-selected {
             &::before {
                 opacity: $flat-button-selected-opacity;
+            }
+        }
+
+        &.k-button-clear {
+            &::before {
+                display: none;
             }
         }
     }

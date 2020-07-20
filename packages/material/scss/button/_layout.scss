@@ -18,6 +18,12 @@ $split-button-arrow-border-width: 1px;
             display: block;
             transition: opacity .4s cubic-bezier(.25, .8, .25, 1);
         }
+
+        &.k-clear {
+            &::before {
+                display: none;
+            }
+        }
     }
 
 
@@ -32,7 +38,6 @@ $split-button-arrow-border-width: 1px;
             padding-right: calc( #{$button-padding-x} - #{$outline-button-border-width} );
         }
     }
-
 
     // Outline button group
     .k-button-group-outline {
