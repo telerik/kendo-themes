@@ -1,8 +1,7 @@
 @include exports("input/theme") {
 
-    // Textbox, Textarea
-    .k-textbox,
-    .k-textarea {
+    // Textbox
+    .k-textbox {
         @include fill(
             $input-text,
             $input-bg,
@@ -10,10 +9,11 @@
         );
 
         // Selection
-        &::selection {
+        &::selection,
+        .k-input::selection {
             @include fill(
-                $color: $primary-contrast,
-                $bg: $primary
+                $color: $input-selected-text, // $primary-contrast,
+                $bg: $input-selected-bg // $primary
             );
         }
 
@@ -29,6 +29,7 @@
 
         // Focused
         &:focus,
+        &:focus-within,
         &.k-state-focus,
         &.k-state-focused  {
             @include fill(
@@ -83,14 +84,6 @@
         .ng-invalid.ng-touched + .k-label,
         .ng-invalid.ng-dirty + .k-label {
             @include fill( $color: $error );
-        }
-    }
-
-    .k-textarea-wrapper {
-        &:not(.k-state-empty) {
-            > .k-label {
-                @include fill( $bg: $floating-label-focused-bg );
-            }
         }
     }
 }

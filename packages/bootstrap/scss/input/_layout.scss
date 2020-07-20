@@ -2,9 +2,8 @@
 
 @include exports("input/layout/bootstrap") {
 
-    // Input, Textbox, Textarea
-    .k-textbox,
-    .k-textarea {
+    // Input, Textbox
+    .k-textbox {
         transition: $transition;
     }
 

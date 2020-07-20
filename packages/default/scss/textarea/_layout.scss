@@ -1,0 +1,119 @@
+@include exports( "textarea/layout" ) {
+
+    // Textarea
+    .k-textarea {
+        @include border-radius( $textarea-border-radius );
+        margin: 0;
+        border-width: $textarea-border-width;
+        border-style: solid;
+        outline: 0;
+        font-family: $textarea-font-family;
+        font-size: $textarea-font-size;
+        line-height: $textarea-line-height;
+        box-sizing: border-box;
+        // Targets https://github.com/telerik/kendo-react/issues/638.
+        box-shadow: none;
+        background: none;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        vertical-align: middle;
+        position: relative;
+        -webkit-appearance: none;
+
+        // Hide clear icon
+        &::-ms-clear { display: none; }
+
+        // Placeholder text
+        &::placeholder {
+            color: $input-placeholder-text;
+            opacity: $input-placeholder-opacity;
+            user-select: none;
+        }
+
+        > .k-input {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            border: 0;
+            outline: 0;
+            box-sizing: border-box;
+            color: inherit;
+            background: none;
+            font: inherit;
+            display: inline-block;
+            flex: 1 1 auto;
+            -webkit-appearance: none;
+
+            // Hide clear icon
+            &::-ms-clear { display: none; }
+
+            // Placeholder text
+            &::placeholder {
+                color: $input-placeholder-text;
+                opacity: $input-placeholder-opacity;
+                user-select: none;
+            }
+        }
+
+        // Disabled state
+        &:disabled,
+        &[disabled],
+        &.k-state-disabled {
+            @include disabled( $disabled-styling );
+
+            // Disabled selection
+            &::selection {
+                @include fill (
+                    $color: $input-text,
+                    $bg: transparent
+                    // $bg: rgba( contrast-wcag( $input-bg ), .1 )
+                );
+            }
+        }
+    }
+
+    // Textarea old rendering
+    textarea.k-textarea {
+        @include use-background-clip();
+        padding: $textarea-padding-y $textarea-padding-x;
+        width: $textarea-default-width;
+        min-height: $textarea-calc-height;
+        display: inline-block;
+    }
+
+    // Textarea new rendering
+    .k-textarea {
+        > .k-input {
+            @include use-background-clip();
+            padding: $textarea-padding-y $textarea-padding-x;
+            width: $textarea-default-width;
+            min-height: $textarea-calc-height;
+            overflow-y: auto;
+        }
+    }
+
+    // Floating label
+    .k-textbox-container,
+    .k-floating-label-container {
+        > .k-textarea {
+            flex: 1 1 auto;
+            width: auto;
+        }
+    }
+}
+
+
+
+
+@include exports("textarea/layout/IE") {
+    // TODO: Remove once we drop IE support
+
+    .k-ie {
+        .k-textarea {
+            :-ms-input-placeholder,
+            &:-ms-input-placeholder {
+                color: $input-placeholder-text;
+            }
+        }
+    }
+}
