@@ -1,8 +1,7 @@
 @include exports( "input/layout" ) {
 
-    // Textbox, Textarea
-    .k-textbox,
-    .k-textarea {
+    // Textbox
+    .k-textbox {
         @include border-radius( $input-border-radius );
         margin: 0;
         border-width: $input-border-width;
@@ -31,9 +30,8 @@
             user-select: none;
         }
 
-        // TOOD: change this to .k-input
-        > input,
-        > textarea {
+        // TODO: change to .k-input
+        > input {
             padding: 0;
             margin: 0;
             width: 100%;
@@ -97,19 +95,6 @@
         }
     }
 
-
-    // Textarea
-    .k-textarea {
-        @include use-background-clip();
-        padding: $textarea-padding-y $textarea-padding-x;
-        width: $textarea-default-width;
-        min-height: $textarea-calc-height;
-    }
-    textarea.k-textarea {
-        display: inline-block;
-    }
-
-
     // Generic input
     .k-input {
         margin: 0;
@@ -168,7 +153,6 @@
         display: inline-flex;
         vertical-align: middle;
         position: relative;
-        width: $input-default-width;
         flex-direction: column;
         justify-content: stretch;
 
@@ -187,7 +171,6 @@
         }
 
         > .k-textbox,
-        > .k-textarea,
         > .k-widget {
             flex: 1 1 auto;
             width: auto;
@@ -372,8 +355,7 @@
     // TODO: Remove once we drop IE support
 
     .k-ie {
-        .k-textbox,
-        .k-textarea {
+        .k-textbox {
             :-ms-input-placeholder,
             &:-ms-input-placeholder {
                 color: $input-placeholder-text;
