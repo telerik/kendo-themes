@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.17.0"></a>
+# 3.17.0 (2020-07-22)
+
+
+### Bug Fixes
+
+* **action-buttons:** unify action buttons appearance ([9020c4e](https://github.com/telerik/kendo-themes/commit/9020c4e))
+* **treelist:** update treelist footer row styling ([eca6d82](https://github.com/telerik/kendo-themes/commit/eca6d82))
+
+
+### Features
+
+* **editor:** add placeholder styles ([949806d](https://github.com/telerik/kendo-themes/commit/949806d))
+
+
+
+
 <a name="3.16.0"></a>
 # [3.16.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.15.2...@progress/kendo-theme-material@3.16.0) (2020-06-09)
 

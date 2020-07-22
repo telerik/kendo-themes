@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.20.0"></a>
+# 4.20.0 (2020-07-22)
+
+
+### Bug Fixes
+
+* **treelist:** update treelist footer row styling ([eca6d82](https://github.com/telerik/kendo-themes/commit/eca6d82))
+* update alignment in rtl mode ([13a615a](https://github.com/telerik/kendo-themes/commit/13a615a))
+* **action-buttons:** unify action buttons appearance ([9020c4e](https://github.com/telerik/kendo-themes/commit/9020c4e))
+* **input:** remove box shadow on elements with k-input class in Firefox ([9f9139a](https://github.com/telerik/kendo-themes/commit/9f9139a))
+
+
+### Features
+
+* **editor:** add placeholder styles ([949806d](https://github.com/telerik/kendo-themes/commit/949806d))
+* update font icons ([386867a](https://github.com/telerik/kendo-themes/commit/386867a))
+
+
+
+
 <a name="4.19.0"></a>
 # [4.19.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.18.2...@progress/kendo-theme-default@4.19.0) (2020-06-09)
 
