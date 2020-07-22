@@ -1,0 +1,22 @@
+name: Merge develop to master
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        ref: master
+    - name: Merge develop to master
+      run: |
+        git fetch --quiet
+        git reset --hard origin/master
+        git merge --ff-only --quiet origin/develop
+        git push origin master
+      env:
+        CI: true
