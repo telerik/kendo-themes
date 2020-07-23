@@ -1,14 +1,15 @@
 "use strict";
 
+const fs = require("fs");
+const path = require("path");
 const gulp = require("gulp");
+const glob = require("glob");
 const PluginError = require("plugin-error");
 const logger = require("gulplog");
 const colors = require("ansi-colors");
-const sass = require("gulp-sass");
-const postcss = require("gulp-postcss");
+const postcss = require("postcss");
 const autoprefixer = require("autoprefixer");
 const calc = require("postcss-calc");
-const Fiber = require("fibers");
 const baka = require("@joneff/baka");
 const sassImporterFactory = require("./lib/sassimporter");
 const nodeSass = require("node-sass");
@@ -58,9 +59,8 @@ const postcssPlugins = [
 ];
 const sassOptions = {
     precision: 10,
-    outputStyle: "compressed",
-    importer: sassImporterFactory({ cache: true }),
-    fiber: Fiber
+    outputStyle: "expanded",
+    importer: sassImporterFactory({ cache: true })
 };
 
 
@@ -78,29 +78,41 @@ const _em = colors.magentaBright;
 
 // #region core
 function build(fileGlob = paths.sass.src, dest = paths.sass.dist, options = sassOptions, compiler = sassCompiler) {
-    sass.compiler = compiler;
 
-    return gulp.src(fileGlob)
-        .on("data", function(data) {
-            options.importer.resetImported();
-            _info(`Compiling ${_em(fileGlob)} to ${_em(dest)}`);
+    let files = glob.sync(fileGlob);
+    let result;
+    let outFile;
 
-            return data;
-        })
-        .pipe(sass.sync(options).on("error", function(error) {
-            // error.message
-            // error.formatted
-            // error.messageFormatted
-            // error.messageOriginal
+    files.forEach(file => {
+        options.importer.resetImported();
+        _info(`Compiling ${_em(file)} to ${_em(dest)}`);
+
+        try {
+            result = compiler.renderSync({
+                file,
+                ...options
+            }).css.toString("utf-8");
+        } catch (error) {
             _info();
-            _error(`Error: ${colors.red(error.messageOriginal)}`);
+            _error(`Error: ${colors.red(error.formatted)}`);
             _info(`File: ${error.file}:${error.line}:${error.column}`);
             _info();
 
-            throw new PluginError(error.plugin, error.messageFormatted);
-        }))
-        .pipe(postcss(postcssPlugins))
-        .pipe(gulp.dest(dest));
+            throw new PluginError("sass", error.message);
+        }
+
+        result = postcss(postcssPlugins).process( result ).css;
+
+        outFile = path.resolve(
+            dest,
+            path.basename(file, ".scss") + ".css"
+        );
+
+        fs.mkdirSync(dest, { recursive: true });
+        fs.writeFileSync(outFile, result);
+    });
+
+    return Promise.resolve();
 }
 function flattenSassFiles(file = paths.sass.theme, outFile = paths.sass.inline, nodeModules = "./node_modules") {
     baka.compile(
