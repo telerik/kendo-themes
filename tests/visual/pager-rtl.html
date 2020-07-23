@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="k-typography k-no-animations">
 <head>
-    <title>Pager</title>
+    <title>Pager RTL</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
@@ -19,26 +19,25 @@
     <div id="test-area" class="grid">
 
         <span></span>
-        <span>LTR</span>
+        <span>RTL</span>
 
         <span></span>
-        <div class="k-pager-wrap k-widget k-floatwrap">
+        <div class="k-pager-wrap k-widget k-floatwrap" dir="rtl">
             <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
-            <a class="k-link k-pager-nav k-state-focus"><span class="k-icon k-i-arrow-60-left"></span></a>
+            <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
             <div class="k-pager-numbers-wrap">
                 <select class="k-dropdown">
                     <option>1</option>
                 </select>
                 <ul class="k-pager-numbers">
-                    <li><span class="k-link">1</span></li>
-                    <li><a class="k-link k-state-hover">2</a></li>
-                    <li><span class="k-link k-state-focus">3</span></li>
-                    <li><a class="k-link k-state-selected">4</a></li>
-                    <li><a class="k-link k-state-hover k-state-focus">5</a></li>
-                    <li><a class="k-link k-state-selected k-state-focus">6</a></li>
+                    <li><span class="k-link k-state-selected">1</span></li>
+                    <li><a class="k-link">2</a></li>
+                    <li><a class="k-link">3</a></li>
+                    <li><a class="k-link k-state-hover">4</a></li>
+                    <li><a class="k-link">5</a></li>
                 </ul>
             </div>
-            <a class="k-link k-pager-nav k-state-hover"><span class="k-icon k-i-arrow-60-right"></span></a>
+            <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
             <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
 
             <span class="k-pager-sizes k-label">
@@ -52,36 +51,7 @@
         </div>
 
         <span></span>
-        <div class="k-pager-wrap k-widget k-floatwrap">
-            <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
-            <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
-            <div class="k-pager-numbers-wrap">
-                <select class="k-dropdown">
-                    <option>1</option>
-                </select>
-                <ul class="k-pager-numbers">
-                    <li><span class="k-link k-state-selected">1000</span></li>
-                    <li><a class="k-link">1001</a></li>
-                    <li><a class="k-link">1002</a></li>
-                    <li><a class="k-link k-state-hover">1003</a></li>
-                    <li><a class="k-link">1004</a></li>
-                </ul>
-            </div>
-            <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
-            <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
-
-            <span class="k-pager-sizes k-label">
-                <span class="k-widget k-dropdown k-header"><span class="k-dropdown-wrap k-state-default"><span class="k-input">20</span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
-                items per page
-            </span>
-
-            <a class="k-pager-refresh k-link"><span class="k-icon k-i-reload"></span></a>
-
-            <span class="k-pager-info k-label">5001 - 5005 of 6000 items</span>
-        </div>
-
-        <span></span>
-        <div class="k-pager-wrap k-widget k-floatwrap">
+        <div class="k-pager-wrap k-widget k-floatwrap" dir="rtl">
             <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
             <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
             <span class="k-pager-input k-label">
@@ -103,7 +73,7 @@
         </div>
 
         <span>12px</span>
-        <div class="k-pager-wrap k-widget k-floatwrap" style="font-size: 12px;">
+        <div class="k-pager-wrap k-widget k-floatwrap" dir="rtl" style="font-size: 12px;">
             <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
             <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
             <div class="k-pager-numbers-wrap">
@@ -132,7 +102,7 @@
         </div>
 
         <span>14px</span>
-        <div class="k-pager-wrap k-widget k-floatwrap" style="font-size: 14px;">
+        <div class="k-pager-wrap k-widget k-floatwrap" dir="rtl" style="font-size: 14px;">
             <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
             <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
             <div class="k-pager-numbers-wrap">
@@ -161,7 +131,7 @@
         </div>
 
         <span>16px</span>
-        <div class="k-pager-wrap k-widget k-floatwrap" style="font-size: 16px;">
+        <div class="k-pager-wrap k-widget k-floatwrap" dir="rtl" style="font-size: 16px;">
             <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
             <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
             <div class="k-pager-numbers-wrap">
@@ -190,7 +160,7 @@
         </div>
 
         <span>18px</span>
-        <div class="k-pager-wrap k-widget k-floatwrap" style="font-size: 18px;">
+        <div class="k-pager-wrap k-widget k-floatwrap" dir="rtl" style="font-size: 18px;">
             <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
             <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
             <div class="k-pager-numbers-wrap">
@@ -217,6 +187,7 @@
 
             <span class="k-pager-info k-label">1 - 20 of 91 items</span>
         </div>
+
     </div>
 
 </body>
