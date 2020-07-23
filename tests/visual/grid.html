@@ -17,10 +17,9 @@
 
     <div id="test-area" class="grid">
 
-        <span>jQuery grid</span>
-        <span>Angular grid</span>
+        <span class="col-2">jQuery grid</span>
 
-        <section>
+        <section class="col-2">
             <div class="k-widget k-grid k-grid-no-scrollbar">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
@@ -88,88 +87,6 @@
                     <span class="k-pager-info k-label">1 - 6 of 9 items</span>
                 </div>
             </div>
-        </section>
-
-        <section>
-            <kendo-grid class="k-widget k-grid k-grid-no-scrollbar">
-                <div class="k-grid-aria-root">
-                    <div class="k-grid-header"> <!-- add padding-left or -right for scrollbar width-->
-                        <div class="k-grid-header-wrap">
-                            <table>
-                                <colgroup>
-                                    <col style="width: 100px;" />
-                                    <col />
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th class="k-header">100px</th>
-                                        <th class="k-header">no width</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-                    </div>
-
-                    <kendo-grid-list class="k-grid-container">
-                        <div class="k-grid-content k-virtual-content">
-                            <div>
-                                <table class="k-grid-table">
-                                    <colgroup>
-                                        <col style="width: 100px;" />
-                                        <col />
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Row</td>
-                                        </tr>
-                                        <tr class="k-alt">
-                                            <td>2</td>
-                                            <td>Alt row</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>
-                                                This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.
-                                            </td>
-                                        </tr>
-                                        <tr class="k-alt">
-                                            <td>4</td>
-                                            <td><span class="k-placeholder-line"></span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td><span class="k-placeholder-line"></span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="k-height-container">
-                                <div style="height: 0px;"></div> <!-- set height to scroll height (virtual scrolling) -->
-                            </div>
-                        </div>
-                    </kendo-grid-list>
-                </div>
-                <kendo-pager class="k-widget k-pager-wrap k-grid-pager">
-                    <kendo-pager-prev-buttons>
-                        <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-seek-w"></span></a>
-                        <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-w"></span></a>
-                    </kendo-pager-prev-buttons>
-                    <kendo-pager-numeric-buttons>
-                        <ul class="k-pager-numbers">
-                            <li><a class="k-link k-state-selected">1</a></li>
-                            <li><a class="k-link">2</a></li>
-                            <li><a class="k-link">3</a></li>
-                        </ul>
-                    </kendo-pager-numeric-buttons>
-                    <kendo-pager-next-buttons>
-                        <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-e"></span></a>
-                        <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-seek-e"></span>
-                        </a>
-                    </kendo-pager-next-buttons>
-                    <kendo-pager-info class="k-pager-info k-label">1 - 2 of 5 items</kendo-pager-info>
-                </kendo-pager>
-            </kendo-grid>
         </section>
 
         <span class="col-2">jQuery -- fixed height, hierarchy, filter menu, sort icon</span>
@@ -250,92 +167,6 @@
                 </div>
             </div>
         </section>
-
-        <span class="col-2">Angular -- fixed height, hierarchy, filter menu, sort icon</span>
-        <section class="col-2">
-            <kendo-grid class="k-widget k-grid k-grid-no-scrollbar" style="height: 250px;">
-                <div class="k-grid-aria-root">
-                    <div class="k-grid-header">
-                        <div class="k-grid-header-wrap">
-                            <table>
-                                <colgroup>
-                                    <col class="k-hierarchy-col" /><col /><col /><col /><col />
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th class="k-header k-hierarchy-cell"></th>
-                                        <th class="k-header k-filterable">
-                                            <kendo-grid-filter-menu><a class="k-grid-filter"><span class="k-icon k-i-filter"></span></a></kendo-grid-filter-menu>
-                                            <a class="k-link">Default<span></span></a>
-                                        </th>
-                                        <th class="k-header k-filterable">
-                                            <kendo-grid-filter-menu><a class="k-grid-filter"><span class="k-icon k-i-filter"></span></a></kendo-grid-filter-menu>
-                                            <a class="k-link">Hover<span></span></a>
-                                        </th>
-                                        <th class="k-header k-filterable k-state-focused">
-                                            <kendo-grid-filter-menu><a class="k-grid-filter"><span class="k-icon k-i-filter"></span></a></kendo-grid-filter-menu>
-                                            <a class="k-link">Focus<span></span></a>
-                                        </th>
-                                        <th class="k-header k-filterable">
-                                            <kendo-grid-filter-menu><a class="k-grid-filter k-state-active"><span class="k-icon k-i-filter"></span></a></kendo-grid-filter-menu>
-                                            <a class="k-link">Active<span></span></a>
-                                        </th>
-                                        <th class="k-header k-filterable k-sorted">
-                                            <kendo-grid-filter-menu><a class="k-grid-filter"><span class="k-icon k-i-filter"></span></a></kendo-grid-filter-menu>
-                                            <a class="k-link">Sorted<span class="k-icon k-i-sort-asc-sm"></span></a>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-                    </div>
-                    <kendo-grid-list class="k-grid-container">
-                        <div class="k-grid-content k-virtual-content">
-                            <div>
-                                <table class="k-grid-table">
-                                    <colgroup>
-                                        <col class="k-hierarchy-col" /><col /><col /><col /><col />
-                                    </colgroup>
-                                    <tbody>
-                                        <tr class="k-master-row">
-                                            <td class="k-hierarchy-cell"><a class="k-icon k-minus"></a></td>
-                                            <td>1</td>
-                                            <td>Text</td>
-                                            <td>Text</td>
-                                            <td>Text</td>
-                                            <td>Text</td>
-                                        </tr>
-                                        <tr class="k-detail-row">
-                                            <td class="k-hierarchy-cell"></td>
-                                            <td class="k-detail-cell" colspan="5">
-                                                <!-- hierarchy child content -->
-                                                <div style="background: #ccc; padding: 10px;">
-                                                    Nested content
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="k-alt k-master-row">
-                                            <td class="k-hierarchy-cell">
-                                                <a class="k-icon k-plus"></a>
-                                            </td>
-                                            <td>2</td>
-                                            <td>Text</td>
-                                            <td>Text</td>
-                                            <td>Text</td>
-                                            <td>Text</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="k-height-container">
-                                <div></div>
-                            </div>
-                        </div>
-                    </kendo-grid-list>
-                </div>
-            </kendo-grid>
-        </section>
-
     </div>
 
 </body>
