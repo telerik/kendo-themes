@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="k-typography k-no-animations">
 <head>
-    <title>TabStrip</title>
+    <title>TabStrip RTL</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
@@ -42,7 +42,7 @@
 <body>
     <div id="test-area" class="grid">
 
-        <section>
+        <section dir="rtl">
             <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-top">
                 <ul class="k-reset k-tabstrip-items">
                     <li class="k-item k-first k-state-active">
@@ -59,33 +59,15 @@
                     </li>
                 </ul>
                 <div class="k-content k-state-active">
-                    <div class="k-tabstrip-wrapper">
-                        <div class="k-widget k-header k-tabstrip k-floatwrap k-tabstrip-left">
-                            <ul class="k-tabstrip-items k-reset">
-                                <li class="k-state-active k-item k-tab-on-top k-state-default k-first">
-                                    <span class="k-link">
-                                        Inner Tab 1
-                                    </span>
-                                </li>
-                                <li class="k-item k-state-default k-last">
-                                    <span class="k-link">
-                                        Inner Tab 2
-                                    </span>
-                                </li>
-                            </ul>
-                            <div class="k-content k-state-active" style="display: block; margin-left: 128px; min-height: 68px;">
-                                Left orientation inside Top orientation
-                            </div>
-                        </div>
-                    </div>
+                    <div>Top rtl orientation</div>
                 </div>
             </kendo-tabstrip>
         </section>
 
-        <section>
+        <section dir="rtl">
             <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-bottom">
                 <div class="k-content k-state-active">
-                    <div>Bottom orientation</div>
+                    <div>Bottom rtl orientation</div>
                 </div>
                 <ul class="k-reset k-tabstrip-items">
                     <li class="k-item k-first k-state-active">
@@ -104,7 +86,7 @@
             </kendo-tabstrip>
         </section>
 
-        <section>
+        <section dir="rtl">
             <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-top k-tabstrip-scrollable">
                 <ul class="k-reset k-tabstrip-items">
                     <li class="k-item k-first k-state-active">
@@ -119,17 +101,17 @@
                     </li>
                 </ul>
                 <div class="k-content k-state-active">
-                    <div>Top scrollable</div>
+                    <div>Top rtl scrollable</div>
                 </div>
                 <span class="k-button k-button-icon k-bare k-tabstrip-prev"><span class="k-icon k-i-arrow-60-left"></span></span>
                 <span class="k-button k-button-icon k-bare k-tabstrip-next"><span class="k-icon k-i-arrow-60-right"></span></span>
             </kendo-tabstrip>
         </section>
 
-        <section>
+        <section dir="rtl">
             <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-bottom k-tabstrip-scrollable">
                 <div class="k-content k-state-active">
-                    <div>Bottom scrollable</div>
+                    <div>Bottom rtl scrollable</div>
                 </div>
                 <ul class="k-reset k-tabstrip-items">
                     <li class="k-item k-first k-state-active">
@@ -148,7 +130,7 @@
             </kendo-tabstrip>
         </section>
 
-        <section>
+        <section dir="rtl">
             <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-left">
                 <ul class="k-reset k-tabstrip-items">
                     <li class="k-item k-first k-state-active">
@@ -172,12 +154,12 @@
                     </li>
                 </ul>
                 <div class="k-content k-state-active">
-                    <div>Left orientation</div>
+                    <div>Left rtl orientation</div>
                 </div>
             </kendo-tabstrip>
         </section>
 
-        <section>
+        <section dir="rtl">
             <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-right">
                 <ul class="k-reset k-tabstrip-items">
                     <li class="k-item k-first k-state-active">
@@ -201,10 +183,11 @@
                     </li>
                 </ul>
                 <div class="k-content k-state-active">
-                    <div>Right orientation</div>
+                    <div>Right rtl orientation</div>
                 </div>
             </kendo-tabstrip>
         </section>
+
     </div>
 </body>
 </html>
