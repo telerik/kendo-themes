@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="k-typography k-no-animations">
 <head>
-    <title>ListBox</title>
+    <title>ListBox RTL</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
@@ -13,7 +13,7 @@
             align-items: flex-start;
         }
         #test-area {
-            grid-template-columns: repeat(4, min-content);
+            grid-template-columns: 120px 200px 200px;
             align-items: start;
         }
     </style>
@@ -21,9 +21,13 @@
 <body>
 
     <div id="test-area" class="grid">
-        <span>LTR</span>
+        <span class="col-3">RTL</span>
 
-        <section>
+        <section dir="rtl">
+            <span class="k-item k-drag-clue">Drag clue</span>
+        </section>
+
+        <section dir="rtl">
             <div class="k-widget k-listbox k-listbox-toolbar-left">
                 <div class="k-listbox-toolbar">
                     <ul class="k-reset">
@@ -49,7 +53,7 @@
             </div>
         </section>
 
-        <section>
+        <section dir="rtl">
             <div class="k-widget k-listbox k-listbox-toolbar-right">
                 <div class="k-listbox-toolbar">
                     <ul class="k-reset">
@@ -75,9 +79,6 @@
             </div>
         </section>
 
-        <section>
-            <span class="k-item k-drag-clue">Drag clue</span>
-        </section>
     </div>
 
 </body>
