@@ -9,142 +9,79 @@
 
     <style>
         #test-area {
-            grid-template-columns: 100px repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             align-items: start;
         }
     </style>
 </head>
 <body>
     <div id="test-area" class="grid">
-        <span></span>
-        <span>LTR</span>
-        <span>RTL</span>
+        <span class="col-3">LTR</span>
 
         <span>Root states</span>
-        <section>
-            <kendo-panelbar class="k-widget k-panelbar">
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header">Normal</span>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header k-state-hover">Hovered<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header k-state-focused">Focused<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header k-state-selected">Selected<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header k-state-disabled">Disabled<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header">Last</span>
-                </kendo-panelbar-item>
-            </kendo-panelbar>
-        </section>
-        <section class="k-rtl">
-            <kendo-panelbar class="k-widget k-panelbar">
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header">Normal</span>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header k-state-hover">Hovered<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header k-state-focused">Focused<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header k-state-selected">Selected<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header k-state-disabled">Disabled<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header">Last</span>
-                </kendo-panelbar-item>
-            </kendo-panelbar>
-        </section>
-
         <span>Child states</span>
-        <section>
-            <kendo-panelbar class="k-widget k-panelbar">
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header">First</span>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-expanded">
-                    <span class="k-link k-header k-state-active">Expanded<span class="k-icon k-i-arrow-n k-panelbar-collapse"></span></span>
-                    <div>
-                        <div class="k-panel k-group">
-                            <kendo-panelbar-item class="k-item k-state-default">
-                                <span class="k-link">Normal</span>
-                            </kendo-panelbar-item>
-                            <kendo-panelbar-item class="k-item k-state-default">
-                                <span class="k-link k-state-hover">Hovered<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                            </kendo-panelbar-item>
-                            <kendo-panelbar-item class="k-item k-state-default">
-                                <span class="k-link k-state-focused">Focused<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                            </kendo-panelbar-item>
-                            <kendo-panelbar-item class="k-item k-state-default">
-                                <span class="k-link k-state-selected">Selected<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                            </kendo-panelbar-item>
-                            <kendo-panelbar-item class="k-item k-state-expanded">
-                                <span class="k-link k-state-active">Expanded<span class="k-icon k-i-arrow-n k-panelbar-collapse"></span></span>
-                            </kendo-panelbar-item>
-                            <kendo-panelbar-item class="k-item k-state-default">
-                                <span class="k-link k-state-disabled">Disabled<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                            </kendo-panelbar-item>
-                            <kendo-panelbar-item class="k-item k-state-default">
-                                <span class="k-link">Last</span>
-                            </kendo-panelbar-item>
-                        </div>
-                    </div>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header">Last</span>
-                </kendo-panelbar-item>
-            </kendo-panelbar>
-        </section>
-        <section class="k-rtl">
-            <kendo-panelbar class="k-widget k-panelbar">
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header">First</span>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-expanded">
-                    <span class="k-link k-header k-state-active">Expanded<span class="k-icon k-i-arrow-n k-panelbar-collapse"></span></span>
-                    <div>
-                        <div class="k-panel k-group">
-                            <kendo-panelbar-item class="k-item k-state-default">
-                                <span class="k-link">Normal</span>
-                            </kendo-panelbar-item>
-                            <kendo-panelbar-item class="k-item k-state-default">
-                                <span class="k-link k-state-hover">Hovered<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                            </kendo-panelbar-item>
-                            <kendo-panelbar-item class="k-item k-state-default">
-                                <span class="k-link k-state-focused">Focused<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                            </kendo-panelbar-item>
-                            <kendo-panelbar-item class="k-item k-state-default">
-                                <span class="k-link k-state-selected">Selected<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                            </kendo-panelbar-item>
-                            <kendo-panelbar-item class="k-item k-state-expanded">
-                                <span class="k-link k-state-active">Expanded<span class="k-icon k-i-arrow-n k-panelbar-collapse"></span></span>
-                            </kendo-panelbar-item>
-                            <kendo-panelbar-item class="k-item k-state-default">
-                                <span class="k-link k-state-disabled">Disabled<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
-                            </kendo-panelbar-item>
-                            <kendo-panelbar-item class="k-item k-state-default">
-                                <span class="k-link">Last</span>
-                            </kendo-panelbar-item>
-                        </div>
-                    </div>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header">Last</span>
-                </kendo-panelbar-item>
-            </kendo-panelbar>
-        </section>
-
         <span>Template</span>
+
+        <section>
+            <kendo-panelbar class="k-widget k-panelbar">
+                <kendo-panelbar-item class="k-item k-state-default">
+                    <span class="k-link k-header">Normal</span>
+                </kendo-panelbar-item>
+                <kendo-panelbar-item class="k-item k-state-default">
+                    <span class="k-link k-header k-state-hover">Hovered<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
+                </kendo-panelbar-item>
+                <kendo-panelbar-item class="k-item k-state-default">
+                    <span class="k-link k-header k-state-focused">Focused<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
+                </kendo-panelbar-item>
+                <kendo-panelbar-item class="k-item k-state-default">
+                    <span class="k-link k-header k-state-selected">Selected<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
+                </kendo-panelbar-item>
+                <kendo-panelbar-item class="k-item k-state-default">
+                    <span class="k-link k-header k-state-disabled">Disabled<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
+                </kendo-panelbar-item>
+                <kendo-panelbar-item class="k-item k-state-default">
+                    <span class="k-link k-header">Last</span>
+                </kendo-panelbar-item>
+            </kendo-panelbar>
+        </section>
+        <section>
+            <kendo-panelbar class="k-widget k-panelbar">
+                <kendo-panelbar-item class="k-item k-state-default">
+                    <span class="k-link k-header">First</span>
+                </kendo-panelbar-item>
+                <kendo-panelbar-item class="k-item k-state-expanded">
+                    <span class="k-link k-header k-state-active">Expanded<span class="k-icon k-i-arrow-n k-panelbar-collapse"></span></span>
+                    <div>
+                        <div class="k-panel k-group">
+                            <kendo-panelbar-item class="k-item k-state-default">
+                                <span class="k-link">Normal</span>
+                            </kendo-panelbar-item>
+                            <kendo-panelbar-item class="k-item k-state-default">
+                                <span class="k-link k-state-hover">Hovered<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
+                            </kendo-panelbar-item>
+                            <kendo-panelbar-item class="k-item k-state-default">
+                                <span class="k-link k-state-focused">Focused<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
+                            </kendo-panelbar-item>
+                            <kendo-panelbar-item class="k-item k-state-default">
+                                <span class="k-link k-state-selected">Selected<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
+                            </kendo-panelbar-item>
+                            <kendo-panelbar-item class="k-item k-state-expanded">
+                                <span class="k-link k-state-active">Expanded<span class="k-icon k-i-arrow-n k-panelbar-collapse"></span></span>
+                            </kendo-panelbar-item>
+                            <kendo-panelbar-item class="k-item k-state-default">
+                                <span class="k-link k-state-disabled">Disabled<span class="k-icon k-i-arrow-s k-panelbar-expand"></span></span>
+                            </kendo-panelbar-item>
+                            <kendo-panelbar-item class="k-item k-state-default">
+                                <span class="k-link">Last</span>
+                            </kendo-panelbar-item>
+                        </div>
+                    </div>
+                </kendo-panelbar-item>
+                <kendo-panelbar-item class="k-item k-state-default">
+                    <span class="k-link k-header">Last</span>
+                </kendo-panelbar-item>
+            </kendo-panelbar>
+        </section>
         <section>
             <kendo-panelbar class="k-widget k-panelbar">
                 <kendo-panelbar-item class=" k-item k-state-default k-state-expanded">
@@ -167,29 +104,6 @@
                 </kendo-panelbar-item>
             </kendo-panelbar>
         </section>
-        <section class="k-rtl">
-            <kendo-panelbar class="k-widget k-panelbar">
-                <kendo-panelbar-item class=" k-item k-state-default k-state-expanded">
-                    <span class="k-link k-header k-state-active">
-                        First item<span class=" k-icon k-i-arrow-n k-panelbar-collapse"></span>
-                    </span>
-                    <div>
-                        <div class="k-content ">
-                            <div class="custom-template">
-                                <h4>Custom template: </h4>
-                                <p>First item content</p>
-                            </div>
-                        </div>
-                    </div>
-                </kendo-panelbar-item>
-                <kendo-panelbar-item class="k-item k-state-default">
-                    <span class="k-link k-header">
-                        Second item<span class="k-icon k-i-arrow-s k-panelbar-expand"></span>
-                    </span>
-                </kendo-panelbar-item>
-            </kendo-panelbar>
-        </section>
-
     </div>
 
 </body>
