@@ -10,6 +10,124 @@
 
 <body>
     <div id="test-area" class="grid">
+        <div class="k-widget k-grid" role="grid" style="height: 400px; width: 500px;">
+            <div class="k-grid-header" role="presentation" style="padding: 0px 14px 0px 0px;">
+                <div class="k-grid-header-wrap" role="presentation">
+                    <table role="presentation" style="width: 1100px;">
+                        <colgroup role="presentation">
+                            <col width="250px" />
+                            <col width="150px" />
+                            <col width="200px" />
+                            <col width="250px" />
+                            <col width="250px" />
+                        </colgroup>
+                        <thead role="presentation">
+                            <tr role="row" style="touch-action: none;">
+                                <th colspan="1" rowspan="1" class="k-header k-grid-header-sticky" aria-sort="none" role="columnheader" aria-colindex="1" aria-selected="false" style="left: 0px; right: 250px; border-right-width: 1px;">
+                                    <a class="k-link">Product Name</a>
+                                </th>
+                                <th colspan="1" rowspan="1" class="k-header" aria-sort="none" role="columnheader" aria-colindex="2" aria-selected="false"><a class="k-link">Units In Stock</a></th>
+                                <th colspan="1" rowspan="1" class="k-header" aria-sort="none" role="columnheader" aria-colindex="3" aria-selected="false"><a class="k-link">Price</a></th>
+                                <th colspan="1" rowspan="1" class="k-header k-grid-header-sticky" aria-sort="none" role="columnheader" aria-colindex="4" aria-selected="false" style="left: 250px; right: 0px; border-right-width: 1px;">
+                                    <a class="k-link">Units On Order</a>
+                                </th>
+                                <th colspan="1" rowspan="1" class="k-header" aria-sort="none" role="columnheader" aria-colindex="5" aria-selected="false"><a class="k-link">Reorder Level</a></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="k-grid-container" role="presentation">
+                <div class="k-grid-content k-virtual-content" role="presentation">
+                    <div role="presentation" style="position: relative;">
+                        <table class="k-grid-table" role="presentation" style="width: 1100px;">
+                            <colgroup role="presentation">
+                                <col width="250px" />
+                                <col width="150px" />
+                                <col width="200px" />
+                                <col width="250px" />
+                                <col width="250px" />
+                            </colgroup>
+                            <tbody role="presentation">
+                                <tr class="k-master-row" role="row">
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="1" aria-selected="false" style="left: 0px; right: 250px; border-right-width: 1px;">Chai</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="2" aria-selected="false">39</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">18</td>
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="4" aria-selected="false" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">10</td>
+                                </tr>
+                                <tr class="k-master-row k-alt" role="row">
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="1" aria-selected="false" style="left: 0px; right: 250px; border-right-width: 1px;">Chang</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="2" aria-selected="false">17</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">19</td>
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="4" aria-selected="false" style="left: 250px; right: 0px; border-right-width: 1px;">40</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">25</td>
+                                </tr>
+                                <tr class="k-master-row k-state-selected" role="row">
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="1" aria-selected="false" style="left: 0px; right: 250px; border-right-width: 1px;">Aniseed Syrup(Selected)</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="2" aria-selected="false">13</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">10</td>
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="4" aria-selected="false" style="left: 250px; right: 0px; border-right-width: 1px;">70</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">25</td>
+                                </tr>
+                                <tr class="k-master-row k-alt k-state-selected" role="row">
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="1" aria-selected="false" style="left: 0px; right: 250px; border-right-width: 1px;">Chef Anton (Alt Selected)</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="2" aria-selected="false">53</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">22</td>
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="4" aria-selected="false" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">0</td>
+                                </tr>
+                                <tr class="k-master-row k-state-selected k-state-hover" role="row">
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="1" aria-selected="false" style="left: 0px; right: 250px; border-right-width: 1px;">Chef (Selected+Hover)</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="2" aria-selected="false">0</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">21.35</td>
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="4" aria-selected="false" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">0</td>
+                                </tr>
+                                <tr class="k-master-row k-alt k-state-selected k-state-hover" role="row">
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="1" aria-selected="false" style="left: 0px; right: 250px; border-right-width: 1px;">Gran (Alt Selected+Hover)</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="2" aria-selected="false">120</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">25</td>
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="4" aria-selected="false" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">25</td>
+                                </tr>
+                                <tr class="k-master-row" role="row">
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="1" aria-selected="false" style="left: 0px; right: 250px; border-right-width: 1px;">Uncle Bob's Organic Dried Pears</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="2" aria-selected="false">15</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">30</td>
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="4" aria-selected="false" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">10</td>
+                                </tr>
+                                <tr class="k-master-row k-alt" role="row">
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="1" aria-selected="false" style="left: 0px; right: 250px; border-right-width: 1px;">Northwoods Cranberry Sauce</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="2" aria-selected="false">6</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">40</td>
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="4" aria-selected="false" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">0</td>
+                                </tr>
+                                <tr class="k-master-row" role="row">
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="1" aria-selected="false" style="left: 0px; right: 250px; border-right-width: 1px;">Mishi Kobe Niku</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="2" aria-selected="false">29</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">97</td>
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="4" aria-selected="false" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">0</td>
+                                </tr>
+                                <tr class="k-master-row k-alt" role="row">
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="1" aria-selected="false" style="left: 0px; right: 250px; border-right-width: 1px;">Ikura</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="2" aria-selected="false">31</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">31</td>
+                                    <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="4" aria-selected="false" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
+                                    <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">0</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="k-height-container" role="presentation"><div></div></div>
+                </div>
+            </div>
+        </div>
+
         <div class="k-grid k-widget telerik-blazor" style="height: 600px;width: 100%;">
             <div class="k-grouping-header k-grouping-header-flex">
                 <div class="k-indicator-container">

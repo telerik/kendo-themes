@@ -5,6 +5,7 @@
 
     .k-grid-header,
     .k-header,
+    th.k-header,
     .k-grid-header-wrap,
     .k-grouping-header,
     .k-grouping-header .k-group-indicator,
@@ -108,27 +109,21 @@
         }
 
         // Locked columns
-        .k-grid-header-locked {
-            @include fill(
-                $grid-sticky-header-text,
-                $grid-sticky-header-bg,
-                $grid-sticky-header-border
-            );
+        .k-grid-header-locked,
+        .k-grid-content-locked,
+        .k-grid-header-locked .k-header,
+        .k-grid-content-locked td {
+            border-color: $grid-sticky-header-border;
         }
 
         .k-grid-content-locked {
-            @include fill( $border: $grid-sticky-header-border );
-
-            td {
-                @include fill(
-                    $grid-sticky-text,
-                    $grid-sticky-bg,
-                    $grid-sticky-border
-                );
+            .k-group-footer td,
+            .k-group-cell {
+                @include fill( $border: $grid-header-border );
             }
 
-            .k-alt td {
-                @include fill( $bg: $grid-sticky-alt-bg );
+            .k-grouping-row + tr td {
+                border-top-color: $grid-header-border;
             }
 
             // Selected state
@@ -152,6 +147,18 @@
                 @include fill( $bg: $grid-sticky-selected-hovered-bg );
             }
         }
+
+        .k-grid-header-locked .k-header {
+            border-bottom-color: $grid-header-border;
+        }
+
+        &[dir="rtl"],
+        &.k-rtl {
+            th.k-hierarchy-cell,
+            td.k-hierarchy-cell {
+                border-left-color: transparent;
+            }
+        }
     }
 
     col.k-sorted,
@@ -159,7 +166,7 @@
         background-color: $grid-sorted-bg;
     }
 
-    // Grid header / footer
+    // Grid header
     .k-grid-header {
 
         .k-i-sort-asc-sm,
@@ -184,12 +191,23 @@
             }
         }
 
-        .k-grid-header-sticky,
+        th.k-grid-header-sticky,
         .k-grid-header-sticky.k-sorted {
             @include fill(
-                $grid-sticky-header-text,
-                $grid-sticky-header-bg,
-                $grid-sticky-header-border
+                $color: $grid-sticky-header-text,
+                $bg: $grid-sticky-header-bg
+            );
+
+            border-right-color: $grid-sticky-header-border;
+            border-left-color: $grid-sticky-header-border;
+        }
+    }
+
+    // Grid footer
+    .k-grid-footer {
+        .k-grid-footer-sticky {
+            @include fill(
+                $bg: $grid-sticky-footer-bg
             );
         }
     }
@@ -197,11 +215,9 @@
     // Content
     .k-master-row {
         .k-grid-content-sticky {
-            @include fill(
-                $grid-sticky-text,
-                $grid-sticky-bg,
-                $grid-sticky-border
-            );
+            border-color: $grid-sticky-border;
+            border-top-color: $grid-header-border;
+            background-color: $grid-sticky-bg;
         }
 
         &.k-alt {
@@ -239,9 +255,11 @@
             @include fill( $bg: $grid-sticky-footer-bg );
         }
 
-        &:hover .k-grid-footer-sticky,
-        &.k-state-hover .k-grid-footer-sticky {
-            @include fill( $bg: $grid-sticky-footer-hovered-bg );
+        &:hover,
+        &.k-state-hover {
+            .k-grid-footer-sticky {
+                @include fill( $bg: $grid-sticky-footer-hovered-bg );
+            }
         }
     }
 

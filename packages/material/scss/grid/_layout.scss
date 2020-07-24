@@ -2,7 +2,7 @@ $grid-hierarchy-col-width: 32px !default;
 $grid-form-component-vertical-align: middle !default;
 // TODO: perhaps these should be the values for cell-padding-x/-y
 $grid-grouping-row-border-top: 0px !default;
-$grid-group-footer-border-y: 0px !default;
+$grid-group-footer-border-y: 1px !default;
 $grid-group-footer-second-cell-border: 0px !default;
 $edit-cell-input-space: 0px !default;
 $grid-header-first-border: 1px !default;
@@ -31,6 +31,10 @@ $grid-group-drag-clue-opacity: .9 !default;
         .k-button,
         .k-button:active {
             box-shadow: none;
+        }
+
+        .k-group-footer td {
+            border-top-width: 0;
         }
 
         &[dir="rtl"],
