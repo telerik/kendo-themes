@@ -33,6 +33,14 @@
             th.k-state-focused {
                 background-color: $grid-hovered-bg;
             }
+
+            tr:hover,
+            tr.k-state-hover {
+                .k-grid-header-sticky {
+                    background-color: $grid-sticky-hovered-bg;
+                }
+            }
+
         }
 
         th,
@@ -54,9 +62,45 @@
                     border-right-color: $grid-border;
                 }
             }
+
+            // Locked columns
+            .k-grid-header-locked,
+            .k-grid-content-locked,
+            .k-grid-header-locked thead > tr > th.k-header,
+            .k-grid-content-locked td {
+                border-left-color: $grid-sticky-header-border;
+                border-right-color: $grid-sticky-header-border;
+            }
+
+            .k-group-footer td {
+                border-top-width: 0;
+            }
+
+            .k-grid-header thead > tr:not(:only-child) > .k-grid-header-sticky {
+                border-right-color: $grid-sticky-header-border;
+                border-left-color: $grid-sticky-header-border;
+            }
         }
-        .k-grid-header-locked th {
-            @include fill( $border: $grid-sticky-header-border );
+
+        .k-grid-header-locked,
+        .k-grid-content-locked,
+        .k-grid-header-locked .k-header,
+        .k-grid-content-locked td {
+            border-top-color: $grid-header-border;
+            border-bottom-color: $grid-header-border;
+
+            .k-group-footer {
+                &:hover td,
+                &.k-state-hover td {
+                    @include fill( $bg: $grid-sticky-footer-hovered-bg );
+                }
+            }
+        }
+
+        .k-master-row {
+            .k-grid-content-sticky {
+                border-bottom-color: $grid-header-border;
+            }
         }
     }
 
@@ -93,6 +137,11 @@
 
         thead > tr:not(:only-child) > th {
             border-left-color: $grid-border;
+
+            &.k-grid-header-sticky {
+                border-right-color: $grid-sticky-header-border;
+                border-left-color: $grid-sticky-header-border;
+            }
         }
 
     }
@@ -110,6 +159,18 @@
             .k-icon {
                 color: $grid-header-text;
             }
+        }
+    }
+
+    .k-group-footer {
+        td,
+        .k-grid-footer-sticky {
+            background: $grid-sticky-footer-bg;
+        }
+
+        &:hover td,
+        &.k-state-hover td {
+            @include fill( $bg: $grid-sticky-footer-hovered-bg );
         }
     }
 
