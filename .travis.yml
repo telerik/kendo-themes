@@ -41,7 +41,6 @@ jobs:
   - stage: Pull request
     install:
       - npm install
-      - lerna bootstrap --concurrency=1
     script:
       - npm run lint
       - npm run docs:check
@@ -55,7 +54,6 @@ jobs:
       firefox: latest
     install:
       - npm install
-      - lerna bootstrap --concurrency=1
     script:
       - npm run sass:flat
       - npm run karma-single
@@ -65,7 +63,6 @@ jobs:
   - stage: Master and develop
     install:
       - npm install
-      - lerna bootstrap --concurrency=1
     script:
       - npm run lint
       - npm run docs:check

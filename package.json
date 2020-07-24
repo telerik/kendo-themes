@@ -30,6 +30,10 @@
     "sassdoc-extras": "^3.0.0"
   },
   "scripts": {
+    "clean": "bash ./build/clean.sh",
+    "bootstrap": "lerna bootstrap --concurrency=1",
+    "preinstall": "npm run clean",
+    "postinstall": "npm run bootstrap",
     "sass": "gulp sass",
     "sass:watch": "gulp sass:watch",
     "sass:swatches": "gulp sass:swatches",
