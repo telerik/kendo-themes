@@ -32,4 +32,58 @@
         margin-top: $actions-margin-top;
     }
 
+    .k-actions {
+        justify-content: flex-start;
+
+        .k-button {
+            flex: 0 1 auto;
+        }
+
+        &.k-actions-start {
+            justify-content: flex-start;
+        }
+
+        &.k-actions-center {
+            justify-content: center;
+        }
+
+        &.k-actions-end {
+            justify-content: flex-end;
+        }
+
+        &.k-actions-stretched {
+            padding: 0;
+            align-items: stretch;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            border-width: 1px 0 0;
+            border-style: solid;
+            display: flex;
+            flex-direction: row;
+            flex-shrink: 0;
+            flex-basis: auto;
+            overflow: hidden;
+
+            .k-button {
+                background-clip: border-box;
+                border-radius: 0;
+                padding: 12px 16px;
+                border-width: 0;
+                text-overflow: ellipsis;
+                flex: 1 0 0%;
+                flex-grow: 1;
+                display: inline-block;
+                overflow: hidden;
+
+                width: auto !important; // sass-lint:disable-line no-important
+                max-width: 100%;
+
+                ~ .k-button {
+                    margin: 0;
+                    border-left-width: 1px;
+                }
+            }
+        }
+    }
+
 }
