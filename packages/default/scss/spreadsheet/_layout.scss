@@ -679,6 +679,15 @@
             }
         }
 
+        .k-actions {
+            &.k-actions-start,
+            &.k-actions-center,
+            &.k-actions-end {
+                .k-button {
+                    flex: 0 1 auto;
+                }
+            }
+        }
     }
 
 }
