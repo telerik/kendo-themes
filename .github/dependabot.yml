@@ -36,3 +36,12 @@ updates:
     versioning-strategy: lockfile-only
     reviewers:
       - "telerik/kendo-front-end"
+
+  - package-ecosystem: "npm"
+    directory: "/packages/nouvelle"
+    schedule:
+      interval: "daily"
+    target-branch: "develop"
+    versioning-strategy: lockfile-only
+    reviewers:
+      - "telerik/kendo-front-end"
