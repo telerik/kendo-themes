@@ -22,6 +22,23 @@ let sassCompiler = nodeSass;
 // let _cwd = process.cwd();
 
 
+// #region helpers
+const ensureDirSync = (dir) => {
+    let resolvedPath = path.normalize(dir);
+
+    resolvedPath.split(path.sep).reduce((acc, curr) => {
+        let dirPath = path.join(acc, curr);
+
+        if (!fs.existsSync(dirPath)) {
+            fs.mkdirSync(dirPath);
+        }
+
+        return dirPath;
+    });
+};
+// #endregion
+
+
 // Settings
 const paths = {
     sass: {
@@ -108,7 +125,7 @@ function build(fileGlob = paths.sass.src, dest = paths.sass.dist, options = sass
             path.basename(file, ".scss") + ".css"
         );
 
-        fs.mkdirSync(dest, { recursive: true });
+        ensureDirSync(dest);
         fs.writeFileSync(outFile, result);
     });
 
