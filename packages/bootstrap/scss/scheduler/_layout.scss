@@ -28,4 +28,19 @@
         }
     }
 
+    .k-scheduler-edit-form {
+        .k-recur-interval,
+        .k-recur-count,
+        .k-recur-monthday {
+            width: 5em;
+        }
+        .k-recur-until,
+        .k-recur-month,
+        .k-recur-weekday,
+        .k-recur-weekday-offset {
+            width: 8em;
+        }
+
+    }
+
 }
