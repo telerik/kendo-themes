@@ -1,21 +1,9 @@
 #!/bin/bash
 
-# Remove node modules from theme tasks
-cd packages/theme-tasks
-rm -rf node_modules/
-
-#Remove node modules from theme default
-cd ../default
-rm -rf node_modules/
-
-# Remove node modules from theme bootstrap
-cd ../bootstrap
-rm -rf node_modules/
-
-# Remove node modules from theme material
-cd ../material
-rm -rf node_modules/
-
-# Remove node modules from root
-cd ../../
-rm -rf node_modules/
+if [[ $TRAVIS == true ]]
+then
+    echo "Travis CI detected. Skipping clean."
+else
+    echo "Local environment detected. Removing node_modules/ ..."
+    find . -name "node_modules" -type d -prune -exec rm -rf '{}' +
+fi

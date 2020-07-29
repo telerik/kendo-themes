@@ -1,33 +1,39 @@
 #!/bin/bash
 
-# Install theme tasks
-cd packages/theme-tasks
-npm ci
-npm link
+# exit early on error
+set -e
 
-# Install theme default
-cd ../default
-npm link @progress/kendo-theme-tasks
-npm ci
-npm link
+dir=$(pwd);
 
-# Install theme bootstrap
-cd ../bootstrap
-npm link @progress/kendo-theme-tasks
-npm link @progress/kendo-theme-default
-npm ci
-npm link
+if [[ $TRAVIS == true ]]
+then
+    echo "Travis CI detected. Bootstraping trough lerna."
+    npx lerna bootstrap
+else
+    echo "Local environment detected. Bootstraping manually ..."
 
-# Install theme material
-cd ../material
-npm link @progress/kendo-theme-tasks
-npm link @progress/kendo-theme-default
-npm ci
-npm link
+    # Install theme tasks
+    cd $dir/packages/theme-tasks
+    npm install
+    npm link --force
 
-# Install root packages
-cd ../../
-npm ci
+    # Install theme default
+    cd $dir/packages/default
+    npm link @progress/kendo-theme-tasks
+    npm install
+    npm link --force
 
-# Bootstrap lerna
-npx lerna bootstrap
+    # Install dependant themes
+    for pkg in bootstrap material nouvelle
+    do
+        cd $dir/packages/$pkg
+        npm link @progress/kendo-theme-tasks
+        npm link @progress/kendo-theme-default
+        npm install
+        npm link --force
+    done
+
+    # Bootstrap lerna
+    cd $dir
+    npx lerna bootstrap
+fi
