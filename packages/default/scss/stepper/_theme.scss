@@ -172,7 +172,7 @@
 
         // Optional Label
         .k-step-optional .k-step-label-optional {
-            @include opacity( $stepper-optional-label-opacity );
+            opacity: $stepper-optional-label-opacity;
         }
 
         // Progressbar
