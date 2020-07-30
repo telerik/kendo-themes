@@ -50,7 +50,8 @@
     "karma-watch": "karma start --auto-watch --no-single-run",
     "karma-single": "karma start --no-auto-watch --single-run --browsers ChromeHeadless",
     "serve-tests": "http-server ./",
-    "embed-assets": "gulp assets"
+    "embed-assets": "gulp assets",
+    "cleanup-test-results": "node ./scripts/cleanup-test-results.js"
   },
   "husky": {
     "hooks": {
