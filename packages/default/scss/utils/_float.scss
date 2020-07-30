@@ -6,4 +6,14 @@
     .k-float-right { float: right !important; }
     .k-float-none  { float: none !important; }
 
+
+    // Float wrap
+    .k-floatwrap::after,
+    .k-grid-toolbar::after,
+    .k-slider-items::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
 }
