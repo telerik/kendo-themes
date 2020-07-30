@@ -45,7 +45,7 @@
             &:hover,
             &.k-state-hover {
                 .k-button::before {
-                    @include opacity( $flat-button-hover-opacity );
+                    opacity: $flat-button-hover-opacity;
                 }
             }
 
@@ -53,7 +53,7 @@
             &:focus,
             &.k-state-focused {
                 .k-button::before {
-                    @include opacity( $flat-button-focused-opacity );
+                    opacity: $flat-button-focused-opacity;
                 }
             }
 
@@ -84,7 +84,7 @@
 
                 &:focus .k-button::before,
                 &.k-state-focused .k-button::before {
-                    @include opacity( $flat-button-focused-opacity );
+                    opacity: $flat-button-focused-opacity;
                 }
             }
         }

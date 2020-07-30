@@ -321,7 +321,7 @@
         &:hover,
         &.k-state-hover {
             &::before {
-                @include opacity( $flat-button-hover-opacity );
+                opacity: $flat-button-hover-opacity;
             }
         }
 
@@ -329,13 +329,13 @@
         &:focus,
         &.k-state-focused {
             &::before {
-                @include opacity( $flat-button-focused-opacity );
+                opacity: $flat-button-focused-opacity;
             }
         }
         &.k-no-focus:not(:hover),
         &.k-no-focus:not(.k-state-hover) {
             &::before {
-                @include opacity( 0 );
+                opacity: 0;
             }
         }
 
@@ -343,14 +343,14 @@
         &:active,
         &.k-state-active {
             &::before {
-                @include opacity( $flat-button-active-opacity );
+                opacity: $flat-button-active-opacity;
             }
         }
 
         // Selected state
         &.k-state-selected {
             &::before {
-                @include opacity( $flat-button-selected-opacity );
+                opacity: $flat-button-selected-opacity;
             }
         }
     }

@@ -1,9 +1,3 @@
-@mixin background-clip( $background-clip ) {
-    @if $background-clip {
-        background-clip: $background-clip;
-    }
-}
-
 @mixin use-background-clip() {
     @if $use-background-clip {
         background-clip: padding-box;

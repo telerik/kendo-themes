@@ -35,18 +35,18 @@
         li.k-state-hover {
             a::before,
             .k-link::before {
-                @include opacity( $flat-button-hover-opacity );
+                opacity: $flat-button-hover-opacity;
             }
         }
 
         li.k-state-selected a::before,
         li.k-state-selected .k-link::before {
-            @include opacity( $flat-button-selected-opacity );
+            opacity: $flat-button-selected-opacity;
         }
 
         li.k-state-focused a::before,
         li.k-state-focused .k-link::before {
-            @include opacity( $flat-button-focused-opacity );
+            opacity: $flat-button-focused-opacity;
         }
     }
     kendo-scheduler .k-scheduler-toolbar {
