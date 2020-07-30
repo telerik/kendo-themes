@@ -1,0 +1,133 @@
+@include exports( "utils/flex" ) {
+
+    // Flex documentation sourced from https://css-tricks.com/almanac/properties/f/flex/.
+
+    /// This is equivalent to `display: flex`. It defines a flex container and enables a flex context for all its direct children.
+    /// Think of flex items as primarily laying out either in horizontal rows or vertical columns.
+    /// @group flex-layout
+    .k-d-flex                   { display: flex; }
+    /// This is equivalent to `display: inline-flex`. It defines a flex container and enables a flex context for all its direct children.
+    /// Think of flex items as primarily laying out either in horizontal rows or vertical columns.
+    /// @group flex-layout
+    .k-d-inline-flex            { display: inline-flex; }
+    /// This is equivalent to `display: inline-flex` and `flex-direction: row`.
+    /// @group flex-layout
+    .k-d-flex-row               { display: flex; flex-direction: row; } // sass-lint:disable-line one-declaration-per-line
+    /// This is equivalent to `display: inline-flex` and `flex-direction: column`.
+    /// @group flex-layout
+    .k-d-flex-col               { display: flex; flex-direction: column; } // sass-lint:disable-line one-declaration-per-line
+    /// This is equivalent to `flex-direction: row`. This establishes the main-axis to be horizontal, thus defining the direction flex items are placed in the flex container: left to right in `ltr`; right to left in `rtl`.
+    /// @group flex-layout
+    .k-flex-row                 { flex-direction: row; }
+    /// This is equivalent to `flex-direction: row-reverse`. This establishes the main-axis to be horizontal, thus defining the direction flex items are placed in the flex container: right to left in `ltr`; left to right in `rtl`.
+    /// @group flex-layout
+    .k-flex-row-reverse         { flex-direction: row-reverse; }
+    /// This is equivalent to `flex-direction: column`. This establishes the main-axis to be vertical, thus defining the direction flex items are placed in the flex container: top to bottom.
+    /// @group flex-layout
+    .k-flex-col                 { flex-direction: column; }
+    /// This is equivalent to `flex-direction: column-reverse`. This establishes the main-axis to be vertical, thus defining the direction flex items are placed in the flex container: bottom to top.
+    /// @group flex-layout
+    .k-flex-col-reverse         { flex-direction: column-reverse; }
+
+
+    // Aliases
+    .k-flex-column              { @extend .k-flex-col; }
+    .k-flex-column-reverse      { @extend .k-flex-col-reverse; }
+
+
+    // Flex wrap
+    /// This is equivalent to `flex-wrap: wrap`. It allows flex items to wrap as needed onto multiple lines, from top to bottom.
+    /// @group flex-layout
+    .k-flex-wrap                { flex-wrap: wrap; }
+    /// This is equivalent to `flex-wrap: nowrap`. All flex items will be on one line.
+    /// @group flex-layout
+    .k-flex-nowrap              { flex-wrap: nowrap; }
+    /// This is equivalent to `flex-wrap: wrap-reverse`. It allows flex items to wrap as needed onto multiple lines, from bottom to top.
+    /// @group flex-layout
+    .k-flex-wrap-reverse        { flex-wrap: wrap-reverse; }
+
+
+    // Flex, shrink, grow, basis
+    /// This is the same as `flex: initial;` and the shorthand for the default value: `flex: 0 1 auto`. It sizes the item based on its `width`/`height` properties (or its content if not set).
+    /// It makes the flex item inflexible when there is some free space left, but allows it to shrink to its minimum when there is not enough space. The alignment abilities or `auto` margins can be used to align flex items along the main axis.
+    /// @group flex-layout
+    .k-flex-initial             { flex: 0 1 auto; }
+    /// This is equivalent to `flex: 1 1 0%`. It sizes the item not based on its `width`/`height` properties, but based on the available space.
+    /// This is similar to `flex: 1 1 auto` execpt it is allowed to shrink beyond its initial size.
+    /// @group flex-layout
+    .k-flex-1                   { flex: 1 1 0%; }
+    /// This is equivalent to `flex: 1 1 auto`. Beware, this is not the default value. It sizes the item based on its `width`/`height` properties, but makes it fully flexible so that they absorb any extra space along the main axis.
+    /// If all items are either `flex: auto`, `flex: initial`, or `flex: none`, any remaining space after the items have been sized will be distributed evenly to the items with `flex: auto`.
+    /// @group flex-layout
+    .k-flex-auto                { flex: 1 1 auto; }
+    /// This is equivalent to `flex: 0 0 auto`. It sizes the item according to its `width`/`height` properties, but makes it fully inflexible.
+    /// This is similar to `flex: initial` except it is not allowed to shrink, even in an overflow situation.
+    /// @group flex-layout
+    .k-flex-none                { flex: none; }
+    /// This is equivalent to `flex-grow: 1`. It defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
+    /// @group flex-layout
+    .k-flex-grow                { flex-grow: 1; }
+    /// This is equivalent to `flex-grow: 0`. The item will not grow.
+    /// @group flex-layout
+    .k-flex-grow-0              { flex-grow: 0; }
+    /// This is equivalent to `flex-shrink: 1`. It determines how much the flex item will shrink relative to the rest of the flex items in the flex container when there isn't enough space on the row.
+    /// @group flex-layout
+    .k-flex-shrink              { flex-shrink: 1; }
+    /// This is equivalent to `flex-shrink: 0`. The item will not srhink.
+    /// @group flex-layout
+    .k-flex-shrink-0            { flex-shrink: 0; }
+    /// This is equivalent to `flex-basis: auto`. It specifies the initial size of the flex item, before any available space is distributed according to the flex factors. It sizes the element according to its size property.
+    /// @group flex-layout
+    .k-flex-basis-auto          { flex-basis: auto; }
+    /// This is equivalent to `flex-basis: 0`. It specifies the initial size of the flex item, before any available space is distributed according to the flex factors. It disregards the element' size property.
+    /// @group flex-layout
+    .k-flex-basis-0             { flex-basis: 0%; }
+
+
+    // Flex align
+    .k-align-items-start        { align-items: flex-start; }
+    .k-align-items-end          { align-items: flex-end; }
+    .k-align-items-center       { align-items: center; }
+    .k-align-items-stretch      { align-items: stretch; }
+    .k-align-items-baseline     { align-items: baseline; }
+
+    .k-align-content-start      { align-content: flex-start; }
+    .k-align-content-end        { align-content: flex-end; }
+    .k-align-content-center     { align-content: center; }
+    .k-align-content-stretch    { align-content: stretch; }
+    .k-align-content-baseline   { align-content: baseline; }
+
+    .k-align-self-start         { align-self: flex-start; }
+    .k-align-self-end           { align-self: flex-end; }
+    .k-align-self-center        { align-self: center; }
+    .k-align-self-stretch       { align-self: stretch; }
+    .k-align-self-baseline      { align-self: baseline; }
+
+
+    // Flex justify
+    .k-justify-content-start    { justify-content: flex-start; }
+    .k-justify-content-end      { justify-content: flex-end; }
+    .k-justify-content-center   { justify-content: center; }
+    .k-justify-content-between  { justify-content: space-between; }
+    .k-justify-content-around   { justify-content: space-around; }
+    .k-justify-content-evenly   { justify-content: space-evenly; }
+
+
+    // Columns
+    .k-column {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+
+    // Aliases
+    .k-flex                     { @extend .k-flex-1; }
+    .k-no-flex                  { @extend .k-flex-none; }
+    .k-no-flex-grow             { @extend .k-flex-grow-0; }
+    .k-no-flex-shrink           { @extend .k-flex-shrink-0; }
+    .k-hbox                     { @extend .k-d-flex-row; }
+    .k-vbox                     { @extend .k-d-flex-col; }
+    .k-columnset                { @extend .k-d-flex-row; }
+    .k-rowset                   { @extend .k-d-flex-col; }
+
+}

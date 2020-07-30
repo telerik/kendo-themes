@@ -66,10 +66,10 @@ jobs:
     script:
       - npm run lint
       - npm run docs:check
-      - npm run sass:flat
-      - npm run sass:swatches
       - npm run dart:flat
       - npm run dart:swatches
+      - npm run sass:flat
+      - npm run sass:swatches
     after_success:
       - printf "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> ~/.npmrc
       - ./build/publish.sh

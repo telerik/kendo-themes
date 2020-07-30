@@ -5,7 +5,7 @@
     "@commitlint/core": "^9.0.1",
     "@joneff/baka": "^0.3.2",
     "eslint": "^7.0.0",
-    "fs-extra": "^9.0.0",
+    "fs-extra": "^8.1.0",
     "glob": "^7.1.6",
     "gulp": "^4.0.2",
     "gulp-eslint": "^6.0.0",
@@ -31,7 +31,7 @@
   },
   "scripts": {
     "clean": "bash ./build/clean.sh",
-    "bootstrap": "lerna bootstrap --concurrency=1",
+    "bootstrap": "bash ./build/install.sh",
     "preinstall": "npm run clean",
     "postinstall": "npm run bootstrap",
     "sass": "gulp sass",
@@ -50,7 +50,8 @@
     "karma-watch": "karma start --auto-watch --no-single-run",
     "karma-single": "karma start --no-auto-watch --single-run --browsers ChromeHeadless",
     "serve-tests": "http-server ./",
-    "embed-assets": "gulp assets"
+    "embed-assets": "gulp assets",
+    "cleanup-test-results": "node ./scripts/cleanup-test-results.js"
   },
   "husky": {
     "hooks": {

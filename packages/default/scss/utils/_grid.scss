@@ -1,0 +1,43 @@
+@include exports("utils/grid") {
+
+    /// This is equivalent to `display: grid`. It defines the element as a grid container and establishes a new grid formatting context for its contents.
+    /// @group grid-layout
+    .k-d-grid                   { display: grid; }
+    .k-grid-cols-none           { grid-template-columns: none; }
+    .k-grid-rows-none           { grid-template-rows: none; }
+
+
+    // Grid flow
+    .k-grid-flow-col            { grid-auto-flow: column; }
+    .k-grid-flow-col-dense      { grid-auto-flow: column dense; }
+    .k-grid-flow-row            { grid-auto-flow: row; }
+    .k-grid-flow-row-dense      { grid-auto-flow: row dense; }
+
+
+    // Columns
+    .k-colspan-all              { grid-column: 1 / -1; }
+    .k-colspan-auto             { grid-column: auto; }
+
+
+    // Rows
+    .k-rowspan-all              { grid-row: 1 / -1; }
+    .k-rowspan-auto             { grid-row: auto; }
+
+
+    // Grid utilities
+    @if $enable-grid-classes {
+        @for $i from 1 through $grid-cols {
+            .k-grid-cols-#{$i}   { grid-template-columns: repeat($i, minmax(0, 1fr)); }
+            .k-colspan-#{$i}    { grid-column: span $i; }
+            .k-col-start-#{$i}  { grid-column-start: $i; }
+            .k-col-end-#{$i}    { grid-column-end: $i; }
+        }
+        @for $i from 1 through $grid-rows {
+            .k-grid-rows-#{$i}   { grid-template-rows: repeat($i, minmax(0, 1fr)); }
+            .k-rowspan-#{$i}    { grid-row: span $i; }
+            .k-row-start-#{$i}  { grid-row-start: $i; }
+            .k-row-end-#{$i}    { grid-row-end: $i; }
+        }
+    }
+
+}

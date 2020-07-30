@@ -9,6 +9,7 @@
 
 // Generic content
 @import "styling/_index.scss";
+@import "utils/_index.scss";
 @import "icons/_index.scss";
 @import "typography/_index.scss";
 @import "avatar/_index.scss";
@@ -87,7 +88,6 @@
 
 
 // Layout & containers
-@import "layout/_index.scss";
 @import "card/_index.scss";
 @import "splitter/_index.scss";
 @import "tilelayout/_index.scss";

@@ -86,7 +86,7 @@ $panel-padding-y: $card-spacer-y !default;
 $header-padding-x: $card-spacer-x !default;
 $header-padding-y: $card-spacer-y !default;
 
-$nav-item-margin: 0 !default;
+$nav-item-margin: 0px !default;
 $nav-item-padding-x: $nav-link-padding-x !default;
 $nav-item-padding-y: $nav-link-padding-y !default;
 
@@ -469,14 +469,14 @@ $chip-font-size: 16px !default;
 
 $chip-selected-icon-size: 24px !default;
 $chip-selected-icon-offset: 6px !default;
-$chip-selected-icon-no-icon-offset: 0 !default;
+$chip-selected-icon-no-icon-offset: 0px !default;
 $chip-selected-icon-font-size: $chip-font-size !default;
 
 $chip-content-padding-x: 6px !default;
 
 $chip-icons-size: 24px !default;
-$chip-icon-margin: 0 !default;
-$chip-remove-icon-margin: 0 !default;
+$chip-icon-margin: 0px !default;
+$chip-remove-icon-margin: 0px !default;
 $chip-remove-icon-font-size: 14px !default;
 
 $chip-avatar-size: 24px !default;
@@ -618,7 +618,7 @@ $placeholder-bg: rgba(0, 0, 0, .1) !default;
 // Progressbar
 $progressbar-height: $progress-height !default;
 $progressbar-animation-timing: $progress-bar-animation-timing !default;
-$progressbar-border-width: 0 !default;
+$progressbar-border-width: 0px !default;
 $progressbar-font-family: $font-family !default;
 $progressbar-font-size: $font-size-sm !default;
 $progressbar-line-height: $line-height !default;
@@ -674,10 +674,10 @@ $form-line-height-sm: $line-height-sm !default;
 $form-line-height-lg: $line-height-lg !default;
 
 $form-fieldset-margin: 2rem 0 0 !default;
-$form-fieldset-padding: 0 !default;
+$form-fieldset-padding: 0px !default;
 
 $form-legend-margin: 0 0 1rem !default;
-$form-legend-padding: 0 !default;
+$form-legend-padding: 0px !default;
 $form-legend-border-width: 0 0 2px !default;
 $form-legend-border-style: solid !default;
 $form-legend-border-color: $component-border !default;
@@ -685,7 +685,7 @@ $form-legend-width: 100% !default;
 $form-legend-font-size: 14px !default;
 $form-legend-text-transform: uppercase !default;
 
-$form-label-margin-bottom: 0 !default;
+$form-label-margin-bottom: 0px !default;
 
 $form-button-margin-x: 8px !default;
 
@@ -963,8 +963,8 @@ $checkbox-invalid-bg: null !default;
 $checkbox-invalid-text: $invalid-text !default;
 $checkbox-invalid-border: $invalid-border !default;
 
-$checkbox-list-margin: 0 !default;
-$checkbox-list-padding: 0 !default;
+$checkbox-list-margin: 0px !default;
+$checkbox-list-padding: 0px !default;
 $checkbox-list-item-margin-top: 16px !default;
 $checkbox-list-horizontal-item-margin-x: 32px !default;
 
@@ -1000,8 +1000,8 @@ $radio-disabled-checked-bg: null !default;
 $radio-disabled-checked-text: null !default;
 $radio-disabled-checked-border: null !default;
 
-$radio-list-margin: 0 !default;
-$radio-list-padding: 0 !default;
+$radio-list-margin: 0px !default;
+$radio-list-padding: 0px !default;
 $radio-list-item-margin-top: 16px !default;
 $radio-list-horizontal-item-margin-x: 32px !default;
 
@@ -1026,7 +1026,7 @@ $picker-icon-offset: calc( #{$picker-select-calc-size} + #{$picker-select-border
 
 
 // Popup
-$popup-padding-x: 0 !default;
+$popup-padding-x: 0px !default;
 $popup-padding-y: $dropdown-padding-y !default;
 $popup-border-width: 1px !default;
 $popup-border-radius: $border-radius !default;
@@ -1175,7 +1175,7 @@ $dropdownlist-focused-shadow: $button-focused-shadow !default;
 $dropdowntree-popup-spacer-x: $padding-x !default;
 $dropdowntree-popup-spacer-y: $dropdowntree-popup-spacer-x !default;
 $dropdowntree-filter-shadow: none !default;
-$dropdowntree-filter-spacer: 0 !default;
+$dropdowntree-filter-spacer: 0px !default;
 
 
 // Multiselect
@@ -1346,13 +1346,13 @@ $switch-font-size: $font-size-xs !default;
 $switch-line-height: $line-height !default;
 
 $switch-track-size: null !default;
-$switch-container-border-width: 0 !default;
+$switch-container-border-width: 0px !default;
 $switch-container-padding-x: 3px !default;
 $switch-container-padding-y: $switch-container-padding-x !default;
 
 $switch-handle-size: (.4 * $switch-size) !default;
 $switch-handle-border-radius: $switch-size !default;
-$switch-handle-border-width: 0 !default;
+$switch-handle-border-width: 0px !default;
 
 $switch-label-display: none !default;
 $switch-label-outer-spacing: 8px !default;
@@ -1475,7 +1475,7 @@ $calendar-cell-size-px: 40px !default;
 $calendar-cell-size: ($calendar-cell-size-px / $font-size) * 1rem !default;
 $calendar-cell-border-radius: $border-radius !default;
 
-$calendar-header-cell-padding-x: 0 !default;
+$calendar-header-cell-padding-x: 0px !default;
 $calendar-header-cell-padding-y: ($calendar-cell-padding-y / 2) !default;
 $calendar-header-cell-font-size: $font-size-sm !default;
 $calendar-header-cell-line-height: 2 !default;
@@ -1549,8 +1549,8 @@ $multiviewcalendar-button-style: stretched !default;
 $multiviewcalendar-button-size: 50px !default;
 $multiviewcalendar-gap: ($calendar-content-padding-x * 2) !default;
 $multiviewcalendar-content-padding-x: ($multiviewcalendar-gap / 2) !default;
-$multiviewcalendar-content-padding-y: 0 !default;
-$multiviewcalendar-navigation-margin-x: 0 !default;
+$multiviewcalendar-content-padding-y: 0px !default;
+$multiviewcalendar-navigation-margin-x: 0px !default;
 $multiviewcalendar-navigation-margin-y: calc( #{$calendar-header-padding-y * 2} + #{$calendar-header-height} + #{$button-border-width * 2} ) !default;
 
 
@@ -1604,7 +1604,7 @@ $datetime-select-focused-shadow: $button-pressed-shadow !default;
 
 
 // Menu
-$menu-border-width: 0 !default;
+$menu-border-width: 0px !default;
 $menu-font-family: $font-family !default;
 $menu-font-size: $font-size !default;
 $menu-line-height: $line-height !default;
@@ -1664,7 +1664,7 @@ $menu-popup-gradient: null !default;
 $menu-popup-item-padding-x: $list-item-padding-x !default;
 $menu-popup-item-padding-y: $list-item-padding-y !default;
 $menu-popup-item-padding-end: calc( #{$list-item-padding-x * 2} + #{$icon-size} ) !default;
-$menu-popup-item-spacing: 0 !default;
+$menu-popup-item-spacing: 0px !default;
 $menu-popup-item-icon-spacing: $icon-spacing !default;
 
 $menu-popup-item-bg: null !default;
@@ -1689,7 +1689,7 @@ $menu-popup-item-focus-shadow: $menu-item-focus-shadow !default;
 $actions-margin-top: map-get( $spacing, 4 ) !default;
 $actions-padding-x: map-get( $spacing, 2 ) !default;
 $actions-padding-y: map-get( $spacing, 2 ) !default;
-$actions-border-width: 0 !default;
+$actions-border-width: 0px !default;
 $actions-button-gap: map-get( $spacing, 2 ) !default;
 
 $actions-bg: null !default;
@@ -1707,7 +1707,7 @@ $toolbar-border: $header-border !default;
 $toolbar-gradient: null !default;
 
 $toolbar-border-width: 1px !default;
-$toolbar-border-radius: 0 !default;
+$toolbar-border-radius: 0px !default;
 
 /// The horizontal padding of the container.
 /// @group toolbar
@@ -1820,7 +1820,7 @@ $window-titlebar-padding-y: $modal-header-padding-y !default;
 $window-titlebar-border-width: 0 0 1px !default;
 $window-titlebar-border-style: solid !default;
 
-$window-title-spacing: 0;
+$window-title-spacing: 0px !default;
 $window-title-font-size: $font-size-lg !default;
 $window-title-line-height: $modal-title-line-height !default;
 
@@ -1935,7 +1935,7 @@ $notification-error-border: tint($error, 9) !default;
 $tooltip-padding-y: $tooltip-padding-y !default;
 $tooltip-padding-x: $tooltip-padding-x !default;
 $tooltip-max-width: $tooltip-max-width !default;
-$tooltip-border-width: 0 !default;
+$tooltip-border-width: 0px !default;
 $tooltip-border-radius: $tooltip-border-radius !default;
 
 $tooltip-font-family: $font-family !default;
@@ -1973,7 +1973,7 @@ $breadcrumb-margin-x: null !default;
 $breadcrumb-margin-y: null !default;
 $breadcrumb-padding-x: null !default;
 $breadcrumb-padding-y: null !default;
-$breadcrumb-border-width: 0 !default;
+$breadcrumb-border-width: 0px !default;
 
 $breadcrumb-font-family: $font-family !default;
 $breadcrumb-font-size: $font-size !default;
@@ -1985,7 +1985,7 @@ $breadcrumb-border: $component-border !default;
 
 $breadcrumb-delimiter-icon-font-size: $icon-size * .75 !default;
 $breadcrumb-delimiter-icon-padding-x: $button-padding-y !default;
-$breadcrumb-delimiter-icon-padding-y: 0 !default;
+$breadcrumb-delimiter-icon-padding-y: 0px !default;
 
 $breadcrumb-link-padding-x: $padding-x-lg / 2 !default;
 $breadcrumb-link-padding-y: $padding-y !default;
@@ -2066,7 +2066,7 @@ $pager-item-focus-shadow: 0 0 0 3px rgba($primary, .25) !default;
 $pager-number-padding-x: $pager-item-padding-x !default;
 $pager-number-padding-y: $pager-item-padding-y !default;
 $pager-number-border-width: $pager-item-border-width !default;
-$pager-number-border-radius: 0 !default;
+$pager-number-border-radius: 0px !default;
 $pager-number-spacing: $pager-item-spacing !default;
 
 $pager-number-bg: $pager-item-bg !default;
@@ -2092,8 +2092,8 @@ $pager-dropdown-width: 5em !default;
 
 
 // Panelbar
-$panelbar-padding-x: 0 !default;
-$panelbar-padding-y: 0 !default;
+$panelbar-padding-x: 0px !default;
+$panelbar-padding-y: 0px !default;
 $panelbar-font-family: $font-family !default;
 $panelbar-font-size: $font-size !default;
 $panelbar-line-height: $line-height !default;
@@ -2147,7 +2147,7 @@ $stepper-padding-y: null !default;
 $stepper-label-margin-x: 12px !default;
 $stepper-label-padding-x: 12px !default;
 $stepper-label-padding-y: 5px !default;
-$stepper-border-width: 0 !default;
+$stepper-border-width: 0px !default;
 
 $stepper-inline-content-padding-x: 20px !default;
 $stepper-inline-content-padding-y: 10px !default;
@@ -2232,7 +2232,7 @@ $wizard-content-padding-x: $padding-x * 2 !default;
 $wizard-content-padding-y: $padding-y * 4 !default;
 $wizard-buttons-margin-x: 10px !default;
 
-$wizard-border-width: 0 !default;
+$wizard-border-width: 0px !default;
 $wizard-font-size: $font-size !default;
 $wizard-line-height: $line-height !default;
 $wizard-font-family: $font-family !default;
@@ -2240,9 +2240,9 @@ $wizard-font-family: $font-family !default;
 $wizard-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 // Tabstrip
-$tabstrip-wrapper-padding-x: 0 !default;
-$tabstrip-wrapper-padding-y: 0 !default;
-$tabstrip-wrapper-border-width: 0 !default;
+$tabstrip-wrapper-padding-x: 0px !default;
+$tabstrip-wrapper-padding-y: 0px !default;
+$tabstrip-wrapper-border-width: 0px !default;
 
 $tabstrip-font-family: $font-family !default;
 $tabstrip-font-size: $font-size !default;
@@ -2433,12 +2433,13 @@ $card-footer-bg: $card-cap-bg !default;
 $card-footer-text: $card-text !default;
 $card-footer-border: $card-border-color !default;
 
-$card-title-margin-bottom: $h5-margin-bottom !default;
-$card-subtitle-margin-bottom: $h6-margin-bottom !default;
-$card-subtitle-margin-top: $padding-y-lg !default;
+$card-title-margin-bottom: map-get( $spacing, md ) !default;
+$card-subtitle-margin-bottom: map-get( $spacing, md ) !default;
 $card-subtitle-text: true-mix($card-text, $card-bg, 65%) !default;
 
 $card-img-max-width: 100px !default;
+$card-avatar-size: 45px !default;
+$card-avatar-spacing:  $card-header-padding-x !default;
 
 $card-actions-padding-x: $card-padding-x !default;
 $card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
@@ -2446,7 +2447,7 @@ $card-actions-border-width: 1px !default;
 
 $card-button-negative-spacing: (-$button-padding-x) !default;
 
-$card-deck-scroll-button-radius: 0 !default;
+$card-deck-scroll-button-radius: 0px !default;
 $card-deck-scroll-button-offset: -$button-border-width !default;
 
 $card-callout-width: 1.3em !default;
@@ -2480,7 +2481,7 @@ $splitbar-selected-text: $selected-text !default;
 
 
 // TileLayout
-$tilelayout-border-width: 0 !default;
+$tilelayout-border-width: 0px !default;
 $tilelayout-card-border-width: $card-border-width !default;
 
 $tilelayout-hint-border-width: 1px !default;
@@ -2528,7 +2529,7 @@ $grid-toolbar-button-spacing: $grid-toolbar-padding-y !default;
 
 $grid-cell-padding-x: $grid-padding-x !default;
 $grid-cell-padding-y: $grid-padding-y !default;
-$grid-cell-horizontal-border-width: 0 !default;
+$grid-cell-horizontal-border-width: 0px !default;
 $grid-cell-vertical-border-width: 1px !default;
 
 $grid-cell-placeholder-line-width: 80% !default;
@@ -3121,7 +3122,7 @@ $scrollview-pagebutton-shadow: 0 0 2px rgba(0, 0, 0, .08) !default;
 
 $scrollview-pager-offset: 20px !default;
 $scrollview-pager-item-spacing: 20px !default;
-$scrollview-pager-item-border-width: 0 !default;
+$scrollview-pager-item-border-width: 0px !default;
 $scrollview-pager-height: calc( #{$scrollview-pagebutton-size} + #{$scrollview-pager-item-border-width * 2} + #{$scrollview-pager-item-spacing / 2} ) !default;
 
 $scrollview-arrow-icon-size: 4.5em !default;
@@ -3135,7 +3136,7 @@ $scrollview-navigation-hover-span-bg: null !default;
 
 
 // Map
-$map-border-width: 0 !default;
+$map-border-width: 0px !default;
 
 $map-font-size: $font-size !default;
 $map-line-height: $line-height !default;
@@ -3189,7 +3190,7 @@ $series-e: #e67d4a !default;
 /// @group charts
 $series-f: #d9534f !default;
 
-$chart-border-width: 0 !default;
+$chart-border-width: 0px !default;
 $chart-font-family: $font-family !default;
 $chart-font-size: $font-size !default;
 $chart-line-height: $line-height !default;
