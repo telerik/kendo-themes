@@ -9,21 +9,21 @@
     }
 
     .k-avatar-circle {
-        @include border-radius(50%);
+        @include border-radius( 50% );
 
         &.k-avatar-image {
             > * {
-                @include border-radius(50%);
+                @include border-radius( 50% );
             }
         }
     }
 
     .k-avatar-rounded {
-        @include border-radius($avatar-rounded-radius);
+        @include border-radius( $avatar-rounded-radius );
 
         &.k-avatar-image {
             > * {
-                @include border-radius($avatar-rounded-radius);
+                @include border-radius( $avatar-rounded-radius );
             }
         }
     }

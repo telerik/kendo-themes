@@ -327,8 +327,8 @@
             border: 0;
             margin-left: 0;
         }
-        .k-nav-today { @include border-left-radius-only(); }
-        .k-nav-next { @include border-right-radius-only(); }
+        .k-nav-today { @include border-left-radius-only( $border-radius ); }
+        .k-nav-next { @include border-right-radius-only( $border-radius ); }
     }
 
 
@@ -367,9 +367,9 @@
             justify-content: center;
         }
 
-        li:first-child { @include border-radius(); }
-        li:first-child + li { @include border-left-radius-only(); }
-        li:last-child { @include border-right-radius-only(); }
+        li:first-child { @include border-radius( $border-radius ); }
+        li:first-child + li { @include border-left-radius-only( $border-radius ); }
+        li:last-child { @include border-right-radius-only( $border-radius ); }
 
         &.k-state-expanded {
             li {
@@ -377,9 +377,9 @@
                 margin: 0;
             }
             li + li { margin-top: -1px; }
-            li:first-child { @include border-top-radius-only(); }
+            li:first-child { @include border-top-radius-only( $border-radius ); }
             li:first-child + li { @include border-radius( 0 ); }
-            li:last-child { @include border-bottom-radius-only(); }
+            li:last-child { @include border-bottom-radius-only( $border-radius ); }
         }
 
         .k-current-view { display: none; }
@@ -458,7 +458,7 @@
         }
 
         li {
-            @include border-radius();
+            @include border-radius( $border-radius );
         }
     }
     kendo-scheduler .k-scheduler-footer {
@@ -581,7 +581,7 @@
     // Appointments
     kendo-scheduler .k-event,
     .k-event {
-        @include border-radius();
+        @include border-radius( $border-radius );
         min-height: $scheduler-event-min-height;
         box-sizing: border-box;
         border-width: 0;
@@ -1113,8 +1113,8 @@
             margin-left: 0;
             margin-right: auto;
 
-            li:first-child + li { @include border-right-radius-only(); }
-            li:last-child { @include border-left-radius-only(); }
+            li:first-child + li { @include border-right-radius-only( $border-radius ); }
+            li:last-child { @include border-left-radius-only( $border-radius ); }
 
             .k-current-view .k-link::after {
                 margin: 0 1ex 0 0;
@@ -1124,11 +1124,11 @@
         .k-scheduler-navigation  {
 
             .k-nav-today {
-                @include border-right-radius-only();
+                @include border-right-radius-only( $border-radius );
             }
 
             .k-nav-next {
-                @include border-left-radius-only();
+                @include border-left-radius-only( $border-radius );
             }
 
             li + li {

@@ -2,7 +2,7 @@
 
     // Base
     .k-progressbar {
-        @include border-radius();
+        @include border-radius( $border-radius );
         border-width: $progressbar-border-width;
         border-style: solid;
         box-sizing: border-box;

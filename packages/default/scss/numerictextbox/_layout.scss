@@ -59,7 +59,7 @@
             }
 
             .k-select {
-                @include border-right-radius-only();
+                @include border-right-radius-only( $input-border-radius );
                 padding: 0;
                 width: $spinner-width;
                 border-width: 0;
@@ -112,7 +112,7 @@
             }
 
             .k-select {
-                @include border-radius( $border-radius 0 0 $border-radius );
+                @include border-left-radius-only( $input-border-radius );
             }
         }
 

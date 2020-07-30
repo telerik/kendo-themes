@@ -51,7 +51,7 @@
             }
 
             .k-select {
-                @include border-right-radius-only();
+                @include border-right-radius-only( $input-border-radius );
                 padding: $picker-select-padding-y $picker-select-padding-x;
                 width: if($use-picker-select-width, $button-inner-calc-size, null);
                 border-width: 0;
@@ -107,7 +107,7 @@
         text-align: right;
 
         .k-select {
-            @include border-left-radius-only();
+            @include border-left-radius-only( $input-border-radius );
         }
 
         .k-dropdown-wrap .k-clear-value {

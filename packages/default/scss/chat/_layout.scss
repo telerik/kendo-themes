@@ -166,7 +166,7 @@
 
         // Avatar
         .k-avatar {
-            @include border-radius(100%);
+            @include border-radius( 100% );
             width: $chat-avatar-size;
             height: $chat-avatar-size;
             margin: 0;

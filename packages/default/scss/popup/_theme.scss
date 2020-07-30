@@ -85,7 +85,7 @@
     }
 
     .k-animation-container {
-        @include border-bottom-radius-only();
+        @include border-bottom-radius-only( $border-radius );
     }
 
     .k-animation-container-shown,

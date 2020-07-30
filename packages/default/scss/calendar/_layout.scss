@@ -82,7 +82,7 @@
             z-index: 2;
 
             .k-link {
-                @include border-radius();
+                @include border-radius( $border-radius );
                 padding: $calendar-header-padding-y-sm;
                 display: flex;
                 flex-direction: row;
