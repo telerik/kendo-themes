@@ -55,8 +55,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$button-border-width</td>
     <td></td>
-    <td>0</td>
-    <td>0</td>
+    <td>0px</td>
+    <td>0px</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around buttons</div></div>
@@ -145,8 +145,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-border-width</td>
     <td></td>
-    <td>0</td>
-    <td>0</td>
+    <td>0px</td>
+    <td>0px</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around of tabs</div></div>
@@ -155,8 +155,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-border-radius</td>
     <td></td>
-    <td>0</td>
-    <td>0</td>
+    <td>0px</td>
+    <td>0px</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of tabs</div></div>
@@ -165,8 +165,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-gap</td>
     <td></td>
-    <td>0</td>
-    <td>0</td>
+    <td>0px</td>
+    <td>0px</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between tabs</div></div>
@@ -315,8 +315,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-content-border-width</td>
     <td></td>
-    <td>0</td>
-    <td>0</td>
+    <td>0px</td>
+    <td>0px</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around tabstrip content</div></div>
