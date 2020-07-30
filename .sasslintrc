@@ -58,3 +58,4 @@ rules:
     shorthand-values: 0
     no-empty-rulesets: 0
     url-quotes: 2
+    zero-unit: 0
