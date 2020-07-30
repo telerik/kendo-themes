@@ -60,7 +60,7 @@
             }
 
             .k-select {
-                @include border-right-radius-only();
+                @include border-right-radius-only( $input-border-radius );
                 padding: 0;
                 border-width: 0;
                 box-sizing: border-box;
@@ -81,7 +81,7 @@
             text-align: right;
 
             .k-select {
-                @include border-left-radius-only();
+                @include border-left-radius-only( $input-border-radius );
             }
         }
 
@@ -122,7 +122,7 @@
 
         .k-dateinput-wrap {
             border: 0;
-            @include border-left-radius-only();
+            @include border-left-radius-only( $input-border-radius );
         }
 
         .k-picker-wrap {

@@ -197,11 +197,11 @@
         &[dir="rtl"] {
             // k-button
             > .k-button:first-child {
-                @include border-left-radius(0);
+                @include border-left-radius( 0 );
                 @include border-right-radius( $button-border-radius );
             }
             > .k-button:last-child {
-                @include border-right-radius(0);
+                @include border-right-radius( 0 );
                 @include border-left-radius( $button-border-radius );
             }
         }
@@ -298,7 +298,7 @@
 
     // Button overlay
     .k-button-overlay {
-        @include border-radius(inherit);
+        @include border-radius( inherit );
         content: "";
         background: currentColor;
         opacity: 0;

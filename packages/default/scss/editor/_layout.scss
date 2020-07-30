@@ -43,7 +43,7 @@
 
     // Inline editor
     .k-editor-inline {
-        @include border-radius();
+        @include border-radius( $border-radius );
         padding: $padding-y-sm $padding-x-sm;
         border: 1px solid transparent;
         word-wrap: break-word;
@@ -385,7 +385,7 @@
             white-space: nowrap;
             overflow: hidden;
             cursor: pointer;
-            @include border-radius();
+            @include border-radius( $border-radius );
 
             .k-i-file,
             .k-i-folder {

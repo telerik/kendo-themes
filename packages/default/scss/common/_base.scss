@@ -107,7 +107,7 @@ $widget-border-width: 1px !default;
     .k-block,
     .k-panel {
         @extend .k-text-selection !optional;
-        @include border-radius();
+        @include border-radius( $border-radius );
         @include fill(
             $panel-text,
             $panel-bg,
@@ -119,7 +119,7 @@ $widget-border-width: 1px !default;
         box-sizing: border-box;
 
         > .k-header {
-            @include border-top-radius();
+            @include border-top-radius( $border-radius );
             @include fill(
                 $header-text,
                 $header-bg,

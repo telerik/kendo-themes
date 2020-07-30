@@ -3,7 +3,7 @@
 
     // Base
     .k-multiselect {
-        @include border-radius();
+        @include border-radius( $input-border-radius );
         width: $multiselect-width;
         border-width: 0;
         box-sizing: border-box;
@@ -197,10 +197,6 @@
                         margin-right: $padding-x;
                     }
                 }
-            }
-
-            .k-select {
-                @include border-left-radius-only();
             }
 
             .k-clear-value,

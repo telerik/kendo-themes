@@ -72,7 +72,7 @@
     }
 
     .k-chart-tooltip {
-        @include border-radius();
+        @include border-radius( $border-radius );
         font-size: $chart-tooltip-font-size;
         line-height: $line-height;
         padding: $tooltip-padding-y $tooltip-padding-x;
@@ -200,7 +200,7 @@
     }
 
     .k-navigator-hint .k-scroll {
-        @include border-radius();
+        @include border-radius( $border-radius );
         position: absolute;
         height: 4px;
     }

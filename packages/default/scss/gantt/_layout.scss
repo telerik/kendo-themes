@@ -377,7 +377,7 @@
     // Single task
     .k-single-wrap {}
     .k-task-single {
-        @include border-radius();
+        @include border-radius( $border-radius );
         border-width: $gantt-task-border-width;
         border-style: solid;
         cursor: default;
@@ -409,7 +409,7 @@
         }
     }
     .k-task-complete {
-        @include border-radius();
+        @include border-radius( $border-radius );
         width: 20%;
         position: absolute;
         z-index: 1;
@@ -523,22 +523,6 @@
 @include exports("gantt/rtl") {
 
     .k-rtl {
-
-        .k-gantt-views {
-            float: left;
-
-            li:first-child + li { @include border-right-radius-only(); }
-            li:last-child { @include border-left-radius-only(); }
-        }
-
-        .k-gantt-actions {
-            float: right;
-
-            .k-button + .k-button {
-                margin-left: 0;
-                margin-right: $toolbar-padding-x;
-            }
-        }
 
         .k-gantt-rows,
         .k-gantt-columns {

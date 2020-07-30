@@ -112,10 +112,6 @@
             padding-right: 0;
             text-align: right;
 
-            .k-select {
-                @include border-left-radius-only();
-            }
-
             .k-clear-value,
             .k-i-loading {
                 right: auto;

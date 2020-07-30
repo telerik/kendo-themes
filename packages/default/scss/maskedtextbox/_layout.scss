@@ -42,10 +42,6 @@
         .k-rtl & {
             text-align: right;
 
-            .k-select {
-                @include border-left-radius-only();
-            }
-
             .k-i-warning {
                 right: auto;
                 left: $padding-x;

@@ -435,11 +435,11 @@
         flex: 0 0 auto;
 
         .k-card {
-            @include border-radius(0);
+            @include border-radius( 0 );
             flex: 0 0 auto;
 
             > .k-card-header {
-                @include border-radius(0);
+                @include border-radius( 0 );
             }
         }
         .k-card + .k-card {
