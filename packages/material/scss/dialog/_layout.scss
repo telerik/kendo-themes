@@ -12,8 +12,7 @@
     .k-dialog-buttongroup {
 
         .k-button {
-            @extend .k-button-flat;
-            padding: $dialog-stretched-button-padding-y $dialog-stretched-button-padding-x;
+            @include box-shadow( none );
             min-width: 64px;
         }
     }
