@@ -1,0 +1,62 @@
+@include exports( "utils/position" ) {
+
+    @each $pos in (static, relative, absolute, fixed, sticky) {
+        .k-#{$pos},
+        .k-pos-#{$pos} { position: $pos; } // sass-lint:disable-line brace-style
+    }
+
+    @each $side in (top, right, bottom, left) {
+        .k-#{$side},
+        .k-pos-#{$side} { #{$side}: 0; } // sass-lint:disable-line brace-style
+    }
+
+    .k-top-start,
+    .k-pos-top-start {
+        top: 0;
+        left: 0;
+
+        .k-rtl &,
+        &[dir="rtl"],
+        [dir="rtl"] & {
+            left: auto;
+            right: 0;
+        }
+    }
+    .k-top-end,
+    .k-pos-top-end {
+        top: 0;
+        right: 0;
+
+        .k-rtl &,
+        &[dir="rtl"],
+        [dir="rtl"] & {
+            right: auto;
+            left: 0;
+        }
+    }
+    .k-bottom-start,
+    .k-pos-bottom-start {
+        bottom: 0;
+        left: 0;
+
+        .k-rtl &,
+        &[dir="rtl"],
+        [dir="rtl"] & {
+            left: auto;
+            right: 0;
+        }
+    }
+    .k-bottom-end,
+    .k-pos-bottom-end {
+        bottom: 0;
+        right: 0;
+
+        .k-rtl &,
+        &[dir="rtl"],
+        [dir="rtl"] & {
+            right: auto;
+            left: 0;
+        }
+    }
+
+}
