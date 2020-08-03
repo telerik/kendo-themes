@@ -16,4 +16,18 @@
         border-color: $component-border;
     }
 
+
+    // Button group
+    .k-dialog-buttongroup {
+        .k-button,
+        .k-button-secondary {
+            background-color: try-shade( $button-bg );
+        }
+
+        .k-button-primary,
+        .k-button.k-primary {
+            background-color: $primary-button-bg;
+        }
+    }
+
 }
