@@ -2,7 +2,7 @@
 
     // Solid badges
     @each $name, $color in $theme-colors {
-        .k-badge-#{$name} {
+        .k-badge-solid.k-badge-#{$name} {
             border-color: $color;
             color: contrast-wcag( $color );
             background-color: $color;
@@ -16,7 +16,7 @@
     }
 
     @each $name, $color in $theme-colors {
-        .k-badge-outline-#{$name} {
+        .k-badge-outline.k-badge-#{$name} {
             color: $color;
         }
     }
