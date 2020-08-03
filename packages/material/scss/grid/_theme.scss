@@ -99,6 +99,7 @@
 
         .k-master-row {
             .k-grid-content-sticky {
+                border-color: $grid-sticky-border;
                 border-bottom-color: $grid-header-border;
             }
         }

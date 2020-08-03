@@ -102,6 +102,11 @@
             .k-icon {
                 color: $grid-header-text;
             }
+
+            .k-grid-content-sticky {
+                border-color: $grid-sticky-border;
+                border-top-color: $grid-header-border;
+            }
         }
 
         .k-grid-search {
