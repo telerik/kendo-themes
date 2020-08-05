@@ -79,6 +79,7 @@
         width: $textarea-default-width;
         min-height: $textarea-calc-height;
         display: inline-block;
+        resize: both;
     }
 
     // Textarea new rendering
@@ -89,6 +90,7 @@
             width: $textarea-default-width;
             min-height: $textarea-calc-height;
             overflow-y: auto;
+            resize: both;
         }
     }
 
