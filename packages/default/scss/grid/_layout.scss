@@ -317,6 +317,11 @@
                 border-left-width: $grid-cell-vertical-border-width;
             }
 
+            .k-grid-header-sticky.k-header.k-grid-no-left-border.k-first {
+                border-left-width: $grid-cell-vertical-border-width;
+                border-right-width: 0;
+            }
+
             .k-filtercell-operator {
                 margin-left: 0;
                 margin-right: $cell-padding-y / 2;
@@ -1064,6 +1069,10 @@
         + th {
             border-left-width: 0;
         }
+    }
+
+    .k-grid-header-sticky.k-header.k-grid-no-left-border.k-first {
+        border-left-width: 0;
     }
 
     .k-header.k-drag-clue {
