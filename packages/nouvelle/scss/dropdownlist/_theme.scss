@@ -1,0 +1,41 @@
+@mixin kendo-dropdownlist--theme() {
+
+    .k-dropdown {
+
+        // Normal state
+        .k-dropdown-wrap {
+            @include fill(
+                var(--kendo-dropdownlist-text),
+                var(--kendo-dropdownlist-bg),
+                var(--kendo-dropdownlist-border)
+            );
+        }
+
+
+        // Hover
+        &:hover,
+        &.k-state-hover {
+            .k-dropdown-wrap {
+                @include fill(
+                    var(--kendo-dropdownlist-hover-text),
+                    var(--kendo-dropdownlist-hover-bg),
+                    var(--kendo-dropdownlist-hover-border)
+                );
+            }
+        }
+
+
+        // Focus
+        &:focus,
+        &:focus-within,
+        &.k-state-focus {
+            .k-dropdown-wrap {
+                @include fill(
+                    var(--kendo-dropdownlist-focus-text),
+                    var(--kendo-dropdownlist-focus-bg),
+                    var(--kendo-dropdownlist-focus-border)
+                );
+            }
+        }
+    }
+}
