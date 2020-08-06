@@ -1,0 +1,120 @@
+@mixin kendo-combobox--layout() {
+
+    .k-combobox {
+        border-width: 0;
+        box-sizing: border-box;
+        outline: 0;
+        background: none;
+        font-size: var(--kendo-combobox-font-size, inherit);
+        font-family: var(--kendo-combobox-font-family, inherit);
+        line-height: var(--kendo-combobox-line-height, calc(20 / 14));
+        text-align: left;
+        white-space: nowrap;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        vertical-align: middle;
+        position: relative;
+
+
+        // Dropdown wrap
+        .k-dropdown-wrap {
+            padding: 0;
+            width: 100%;
+            border-width: var(--kendo-combobox-border-width);
+            border-style: var(--kendo-combobox-border-style);
+            border-radius: var(--kendo-combobox-border-radius);
+            box-sizing: border-box;
+            background-clip: padding-box;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-flow: row nowrap;
+            transition: all .1s ease; // sass-lint:disable-block no-transition-all
+            outline: 0;
+            cursor: initial;
+        }
+
+
+        // Searchbar
+        .k-searchbar {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        // Input
+        .k-input {
+            padding: var(--kendo-combobox-padding-y) var(--kendo-combobox-padding-x);
+        }
+
+
+        // Select
+        .k-select {
+            padding: $combobox-select-padding-y $combobox-select-padding-x;
+            min-width: 1em;
+            border-width: 0;
+            border-inline-start-width: var(--kendo-combobox-select-border-width);
+            border-style: var(--kendo-combobox-select-border-style);
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: none;
+            text-align: center;
+            cursor: pointer;
+
+            // TMP
+            .k-i-arrow-s {
+                font-family: monospace;
+
+                &::before {
+                    content: "\25bc";
+                    display: inline-block;
+                    width: 1em;
+                    font: inherit;
+                }
+            }
+        }
+
+
+        // Clear
+        .k-clear-value {
+            width: ($combobox-line-height * $combobox-font-size);
+            height: ($combobox-line-height * $combobox-font-size);
+            box-sizing: border-box;
+            outline: 0;
+            font-family: monospace;
+            line-height: ($combobox-line-height * $combobox-font-size);
+            cursor: pointer;
+            display: none;
+            flex: none;
+            flex-direction: row;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            opacity: .5;
+
+            &::before {
+                content: "\2715";
+                display: inline-block;
+                width: 1em;
+                font: inherit;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+        &:hover,
+        &:focus,
+        &:focus-within,
+        &.k-state-hover,
+        &.k-state-focus {
+            .k-clear-value {
+                display: inline-flex;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,65 @@
+@mixin kendo-combobox--theme() {
+
+    .k-combobox {
+
+        // Normal state
+        .k-dropdown-wrap {
+            @include fill(
+                var(--kendo-combobox-text),
+                var(--kendo-combobox-bg),
+                var(--kendo-combobox-border)
+            );
+        }
+        .k-select {
+            @include fill(
+                var(--kendo-combobox-select-text),
+                var(--kendo-combobox-select-bg),
+                var(--kendo-combobox-select-border),
+                var(--kendo-combobox-select-gradient)
+            );
+        }
+
+
+        // Hover
+        &:hover,
+        &.k-state-hover {
+            .k-dropdown-wrap {
+                @include fill(
+                    var(--kendo-combobox-hover-text),
+                    var(--kendo-combobox-hover-bg),
+                    var(--kendo-combobox-hover-border)
+                );
+            }
+            .k-select {
+                @include fill(
+                    var(--kendo-combobox-select-hover-text),
+                    var(--kendo-combobox-select-hover-bg),
+                    var(--kendo-combobox-select-hover-border),
+                    var(--kendo-combobox-select-hover-gradient)
+                );
+            }
+        }
+
+
+        // Focus
+        &:focus,
+        &:focus-within,
+        &.k-state-focus {
+            .k-dropdown-wrap {
+                @include fill(
+                    var(--kendo-combobox-focus-text),
+                    var(--kendo-combobox-focus-bg),
+                    var(--kendo-combobox-focus-border)
+                );
+            }
+            .k-select {
+                @include fill(
+                    var(--kendo-combobox-select-focus-text),
+                    var(--kendo-combobox-select-focus-bg),
+                    var(--kendo-combobox-select-focus-border),
+                    var(--kendo-combobox-select-focus-gradient)
+                );
+            }
+        }
+    }
+}
