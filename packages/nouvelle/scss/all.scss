@@ -9,3 +9,8 @@
 @include kendo-autocomplete--layout();
 @include kendo-autocomplete--theme();
 
+@include kendo-combobox--layout();
+@include kendo-combobox--theme();
+
+@include kendo-dropdownlist--layout();
+@include kendo-dropdownlist--theme();

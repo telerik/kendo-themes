@@ -1,5 +1,27 @@
 @mixin kendo-input--layout() {
 
+    // Input
+    .k-input {
+        padding: var(--kendo-input-padding-y) var(--kendo-input-padding-x);
+        width: 100%;
+        box-sizing: border-box;
+        border: 0;
+        outline: 0;
+        color: inherit;
+        background: none;
+        font: inherit;
+        flex: 0 1 auto;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        // Clear value
+        &::-ms-clear {
+            display: none;
+        }
+    }
+
     .k-textbox {
         padding: var(--kendo-input-padding-y) var(--kendo-input-padding-x);
         border-width: var(--kendo-input-border-width);
@@ -10,7 +32,7 @@
         font-size: var(--kendo-input-font-size, inherit);
         font-family: var(--kendo-input-font-family, inherit);
         line-height: var(--kendo-input-line-height, calc(20 / 14));
-        display: inline-flex;
+        display: flex;
         flex-flow: row nowrap;
 
         > .k-input {
