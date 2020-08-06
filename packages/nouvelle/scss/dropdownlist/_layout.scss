@@ -1,0 +1,79 @@
+@mixin kendo-dropdownlist--layout() {
+
+    .k-dropdown {
+        border-width: 0;
+        box-sizing: border-box;
+        outline: 0;
+        background: none;
+        font-size: var(--kendo-dropdownlist-font-size, inherit);
+        font-family: var(--kendo-dropdownlist-font-family, inherit);
+        line-height: var(--kendo-combobox-line-height, calc(20 / 14));
+        text-align: left;
+        white-space: nowrap;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        vertical-align: middle;
+        position: relative;
+
+
+        // Dropdown wrap
+        .k-dropdown-wrap {
+            padding: 0;
+            width: 100%;
+            border-width: var(--kendo-dropdownlist-border-width);
+            border-style: var(--kendo-dropdownlist-border-style);
+            border-radius: var(--kendo-dropdownlist-border-radius);
+            box-sizing: border-box;
+            background-clip: padding-box;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-flow: row nowrap;
+            transition: all .1s ease; // sass-lint:disable-block no-transition-all
+            outline: 0;
+            cursor: initial;
+        }
+
+
+        // Searchbar
+        .k-searchbar {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        // Input
+        .k-input {
+            padding: var(--kendo-dropdownlist-padding-y) var(--kendo-dropdownlist-padding-x);
+        }
+
+
+        // Select
+        .k-select {
+            padding: $dropdownlist-select-padding-y $dropdownlist-select-padding-x;
+            min-width: 1em;
+            border-width: 0;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: none;
+            text-align: center;
+            cursor: pointer;
+
+            // TMP
+            .k-i-arrow-s {
+                font-family: monospace;
+
+                &::before {
+                    content: "\25bc";
+                    display: inline-block;
+                    width: 1em;
+                    font: inherit;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,83 @@
+$dropdownlist-padding-x: $input-padding-x !default;
+$dropdownlist-padding-y: $input-padding-y !default;
+
+$dropdownlist-border-width: $input-border-width !default;
+$dropdownlist-border-style: $input-border-style !default;
+
+$dropdownlist-border-radius: $input-border-radius !default;
+
+$dropdownlist-font-family: $input-font-family !default;
+$dropdownlist-font-size: $input-font-size !default;
+$dropdownlist-line-height: $input-line-height !default;
+
+
+/// The background of the dropdownlist.
+/// @group dropdownlist
+$dropdownlist-bg: $button-bg !default;
+/// The text color of the dropdownlist.
+/// @group dropdownlist
+$dropdownlist-text: $button-text !default;
+/// The border color of the dropdownlist.
+/// @group dropdownlist
+$dropdownlist-border: $button-border !default;
+$dropdownlist-gradient: $button-gradient !default;
+
+/// The background of hovered dropdownlist.
+/// @group dropdownlist
+$dropdownlist-hover-bg: $button-hover-bg !default;
+/// The text color of hovered dropdownlist.
+/// @group dropdownlist
+$dropdownlist-hover-text: $button-hover-text !default;
+/// The border color of hovered dropdownlist.
+/// @group dropdownlist
+$dropdownlist-hover-border: $button-hover-border !default;
+$dropdownlist-hover-gradient: $button-hover-gradient !default;
+
+/// The text color of focus dropdownlist.
+/// @group dropdownlist
+$dropdownlist-focus-text: $button-active-text !default;
+/// The background color of focus dropdownlist.
+/// @group dropdownlist
+$dropdownlist-focus-bg: $button-active-bg !default;
+/// The border color of focus dropdownlist.
+/// @group dropdownlist
+$dropdownlist-focus-border: $button-active-border !default;
+$dropdownlist-focus-gradient: $button-active-gradient !default;
+
+$dropdownlist-select-padding-x: $button-padding-y !default;
+$dropdownlist-select-padding-y: $button-padding-y !default;
+
+
+
+
+// Expose
+:root {
+    --kendo-dropdownlist-padding-x: #{$dropdownlist-padding-x};
+    --kendo-dropdownlist-padding-y: #{$dropdownlist-padding-y};
+    --kendo-dropdownlist-border-width: #{$dropdownlist-border-width};
+    --kendo-dropdownlist-border-style: #{$dropdownlist-border-style};
+
+    --kendo-dropdownlist-border-radius: #{$dropdownlist-border-radius};
+
+    --kendo-dropdownlist-font-family: #{$dropdownlist-font-family};
+    --kendo-dropdownlist-font-size: #{$dropdownlist-font-size};
+    --kendo-dropdownlist-line-height: #{$dropdownlist-line-height};
+
+    --kendo-dropdownlist-bg: #{$dropdownlist-bg};
+    --kendo-dropdownlist-text: #{$dropdownlist-text};
+    --kendo-dropdownlist-border: #{$dropdownlist-border};
+    --kendo-dropdownlist-gradient: #{$dropdownlist-gradient};
+
+    --kendo-dropdownlist-hover-bg: #{$dropdownlist-hover-bg};
+    --kendo-dropdownlist-hover-text: #{$dropdownlist-hover-text};
+    --kendo-dropdownlist-hover-border: #{$dropdownlist-hover-border};
+    --kendo-dropdownlist-hover-gradient: #{$dropdownlist-hover-gradient};
+
+    --kendo-dropdownlist-focus-bg: #{$dropdownlist-focus-bg};
+    --kendo-dropdownlist-focus-text: #{$dropdownlist-focus-text};
+    --kendo-dropdownlist-focus-border: #{$dropdownlist-focus-border};
+    --kendo-dropdownlist-focus-gradient: #{$dropdownlist-focus-gradient};
+
+    --kendo-dropdownlist-select-padding-x: #{$dropdownlist-select-padding-x};
+    --kendo-dropdownlist-select-padding-y: #{$dropdownlist-select-padding-y};
+}
