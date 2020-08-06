@@ -1,0 +1,118 @@
+$combobox-padding-x: $input-padding-x !default;
+$combobox-padding-y: $input-padding-y !default;
+
+$combobox-border-width: $input-border-width !default;
+$combobox-border-style: $input-border-style !default;
+
+$combobox-border-radius: $input-border-radius !default;
+
+$combobox-font-family: $input-font-family !default;
+$combobox-font-size: $input-font-size !default;
+$combobox-line-height: $input-line-height !default;
+
+
+/// The background of the combobox.
+/// @group combobox
+$combobox-bg: $input-bg !default;
+/// The text color of the combobox.
+/// @group combobox
+$combobox-text: $input-text !default;
+/// The border color of the combobox.
+/// @group combobox
+$combobox-border: $input-border !default;
+$combobox-shadow: $input-shadow !default;
+
+/// The background of hovered combobox.
+/// @group combobox
+$combobox-hover-bg: $input-hover-bg !default;
+/// The text color of hovered combobox.
+/// @group combobox
+$combobox-hover-text: $input-hover-text !default;
+/// The border color of hovered combobox.
+/// @group combobox
+$combobox-hover-border: $input-hover-border !default;
+$combobox-hover-shadow: $input-hover-shadow !default;
+
+/// The text color of focus combobox.
+/// @group combobox
+$combobox-focus-text: $input-focus-text !default;
+/// The background color of focus combobox.
+/// @group combobox
+$combobox-focus-bg: $input-focus-bg !default;
+/// The border color of focus combobox.
+/// @group combobox
+$combobox-focus-border: $input-focus-border !default;
+$combobox-focus-shadow: $input-focus-shadow !default;
+
+$combobox-select-padding-x: $button-padding-y !default;
+$combobox-select-padding-y: $button-padding-y !default;
+
+$combobox-select-border-width: $input-border-width !default;
+$combobox-select-border-style: $input-border-style !default;
+
+$combobox-select-bg: $button-bg !default;
+$combobox-select-text: $button-text !default;
+$combobox-select-border: $button-border !default;
+$combobox-select-gradient: $button-gradient !default;
+
+$combobox-select-hover-bg: $button-hover-bg !default;
+$combobox-select-hover-text: $button-hover-text !default;
+$combobox-select-hover-border: $button-hover-border !default;
+$combobox-select-hover-gradient: $button-hover-gradient !default;
+
+$combobox-select-focus-bg: $button-active-bg !default;
+$combobox-select-focus-text: $button-active-text !default;
+$combobox-select-focus-border: $button-active-border !default;
+$combobox-select-focus-gradient: $button-active-gradient !default;
+
+
+
+
+// Expose
+:root {
+    --kendo-combobox-padding-x: #{$combobox-padding-x};
+    --kendo-combobox-padding-y: #{$combobox-padding-y};
+    --kendo-combobox-border-width: #{$combobox-border-width};
+    --kendo-combobox-border-style: #{$combobox-border-style};
+
+    --kendo-combobox-border-radius: #{$combobox-border-radius};
+
+    --kendo-combobox-font-family: #{$combobox-font-family};
+    --kendo-combobox-font-size: #{$combobox-font-size};
+    --kendo-combobox-line-height: #{$combobox-line-height};
+
+    --kendo-combobox-bg: #{$combobox-bg};
+    --kendo-combobox-text: #{$combobox-text};
+    --kendo-combobox-border: #{$combobox-border};
+    --kendo-combobox-shadow: #{$combobox-shadow};
+
+    --kendo-combobox-hover-bg: #{$combobox-hover-bg};
+    --kendo-combobox-hover-text: #{$combobox-hover-text};
+    --kendo-combobox-hover-border: #{$combobox-hover-border};
+    --kendo-combobox-hover-shadow: #{$combobox-hover-shadow};
+
+    --kendo-combobox-focus-bg: #{$combobox-focus-bg};
+    --kendo-combobox-focus-text: #{$combobox-focus-text};
+    --kendo-combobox-focus-border: #{$combobox-focus-border};
+    --kendo-combobox-focus-shadow: #{$combobox-focus-shadow};
+
+    --kendo-combobox-select-padding-x: #{$combobox-select-padding-x};
+    --kendo-combobox-select-padding-y: #{$combobox-select-padding-y};
+    --kendo-combobox-select-border-width: #{$combobox-select-border-width};
+    --kendo-combobox-select-border-style: #{$combobox-select-border-style};
+
+    --kendo-combobox-select-bg: #{$combobox-select-bg};
+    --kendo-combobox-select-text: #{$combobox-select-text};
+    --kendo-combobox-select-border: #{$combobox-select-border};
+    --kendo-combobox-select-gradient: #{$combobox-select-gradient};
+
+    --kendo-combobox-select-hover-bg: #{$combobox-select-hover-bg};
+    --kendo-combobox-select-hover-text: #{$combobox-select-hover-text};
+    --kendo-combobox-select-hover-border: #{$combobox-select-hover-border};
+    --kendo-combobox-select-hover-gradient: #{$combobox-select-hover-gradient};
+
+    --kendo-combobox-select-focus-bg: #{$combobox-select-focus-bg};
+    --kendo-combobox-select-focus-text: #{$combobox-select-focus-text};
+    --kendo-combobox-select-focus-border: #{$combobox-select-focus-border};
+    --kendo-combobox-select-focus-gradient: #{$combobox-select-focus-gradient};
+}
