@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.19.0"></a>
+# 4.19.0 (2020-08-06)
+
+
+### Bug Fixes
+
+* **grid:** update locked columns styling ([b62d304](https://github.com/telerik/kendo-themes/commit/b62d304))
+* add missing px units to 0 variables ([c6684bf](https://github.com/telerik/kendo-themes/commit/c6684bf))
+* always pass value to border-*-radius mixins ([efffbe8](https://github.com/telerik/kendo-themes/commit/efffbe8))
+* **cards:** update styles to match latest design ([da77702](https://github.com/telerik/kendo-themes/commit/da77702))
+* **common:** expose utils into separate module ([1946a85](https://github.com/telerik/kendo-themes/commit/1946a85))
+
+
+### Features
+
+* **button:** add clear button styling ([a87a61e](https://github.com/telerik/kendo-themes/commit/a87a61e))
+* add TextArea styles ([cffdde6](https://github.com/telerik/kendo-themes/commit/cffdde6))
+* **badge:** rework badge styles to use stacked styles ([04c279f](https://github.com/telerik/kendo-themes/commit/04c279f))
+* provide styling for action buttons ([d852003](https://github.com/telerik/kendo-themes/commit/d852003))
+
+
+
+
 <a name="4.18.0"></a>
 # 4.18.0 (2020-07-22)
 

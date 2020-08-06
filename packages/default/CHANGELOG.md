@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.21.0"></a>
+# 4.21.0 (2020-08-06)
+
+
+### Bug Fixes
+
+* **cards:** update styles to match latest design ([da77702](https://github.com/telerik/kendo-themes/commit/da77702))
+* **common:** expose utils into separate module ([1946a85](https://github.com/telerik/kendo-themes/commit/1946a85))
+* **editor:** add 100% height of the content ([1eb1a49](https://github.com/telerik/kendo-themes/commit/1eb1a49))
+* **grid:** remove double border in multi headers and sticky columns ([712b488](https://github.com/telerik/kendo-themes/commit/712b488))
+* **grid:** update locked columns styling ([b62d304](https://github.com/telerik/kendo-themes/commit/b62d304))
+* **grid:** update sticky borders ([ad14ba6](https://github.com/telerik/kendo-themes/commit/ad14ba6))
+* **textarea:** add resizing in both directions ([a9fa95f](https://github.com/telerik/kendo-themes/commit/a9fa95f))
+* add missing px units to 0 variables ([c6684bf](https://github.com/telerik/kendo-themes/commit/c6684bf))
+* always pass value to border-*-radius mixins ([efffbe8](https://github.com/telerik/kendo-themes/commit/efffbe8))
+* remove unused mixins ([cc024cf](https://github.com/telerik/kendo-themes/commit/cc024cf))
+
+
+### Features
+
+* **button:** add clear button styling ([a87a61e](https://github.com/telerik/kendo-themes/commit/a87a61e))
+* add TextArea styles ([cffdde6](https://github.com/telerik/kendo-themes/commit/cffdde6))
+* provide additional theme color classes ([6a91e68](https://github.com/telerik/kendo-themes/commit/6a91e68))
+* **badge:** rework badge styles to use stacked styles ([04c279f](https://github.com/telerik/kendo-themes/commit/04c279f))
+* provide styling for action buttons ([d852003](https://github.com/telerik/kendo-themes/commit/d852003))
+
+
+
+
 <a name="4.20.0"></a>
 # 4.20.0 (2020-07-22)
 

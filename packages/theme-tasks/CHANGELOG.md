@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.6"></a>
+## 0.6.6 (2020-08-06)
+
+
+### Bug Fixes
+
+* **node:** use ad-hoc ensure dir sync for node lt 10 ([9eae3c9](https://github.com/telerik/kendo-themes/commit/9eae3c9))
+
+
+
+
 <a name="0.6.5"></a>
 ## 0.6.5 (2020-07-22)
 
