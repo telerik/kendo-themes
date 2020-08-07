@@ -1,0 +1,45 @@
+@mixin kendo-popup--layout() {
+
+    // Popup
+    .k-popup {
+        margin: 0;
+        padding: 0;
+        border-width: var(--kendo-popup-border-width);
+        border-style: var(--kendo-popup-border-style);
+        box-sizing: border-box;
+        font-size: var(--kendo-popup-font-size);
+        font-family: var(--kendo-popup-font-family);
+        line-height: var(--kendo-popup-line-height);
+    }
+
+
+    // Popup widgets
+    .k-popup > .k-widget {
+        border-width: 0;
+    }
+
+
+    // Popup list
+    .k-popup .k-list {
+        border-width: 0;
+        background: none;
+        font: inherit;
+    }
+
+
+    // Animation container
+    .k-animation-container {}
+    .k-animation-container-shown {
+        overflow: visible;
+    }
+
+
+    // No data
+    .k-nodata {
+        min-height: 10em;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+}

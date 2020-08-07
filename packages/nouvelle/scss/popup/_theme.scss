@@ -1,0 +1,17 @@
+@mixin kendo-popup--theme() {
+
+    .k-popup {
+        @include fill(
+            var(--kenod-popup-text),
+            var(--kendo-popup-bg),
+            var(--kendo-popup-border)
+        );
+        box-shadow: var(--kendo-popup-shadow);
+    }
+
+
+    .k-nodata {
+        color: rgba( $popup-text, .5 );
+    }
+
+}

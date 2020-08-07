@@ -1,0 +1,45 @@
+$popup-padding-x: 0px !default;
+$popup-padding-y: 0px !default;
+
+$popup-border-width: 1px !default;
+$popup-border-style: solid !default;
+
+$popup-border-radius: 0px !default;
+
+$popup-font-family: $font-family !default;
+$popup-font-size: $font-size !default;
+$popup-line-height: $line-height !default;
+
+
+/// The background of the popup.
+/// @group popup
+$popup-bg: mix( black, $component-bg, 2% ) !default;
+/// The text color of the popup.
+/// @group popup
+$popup-text: $component-text !default;
+/// The border color of the popup.
+/// @group popup
+$popup-border: $component-border !default;
+$popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
+
+
+
+
+// Expose
+:root {
+    --kendo-popup-padding-x: #{$popup-padding-x};
+    --kendo-popup-padding-y: #{$popup-padding-y};
+    --kendo-popup-border-width: #{$popup-border-width};
+    --kendo-popup-border-style: #{$popup-border-style};
+
+    --kendo-popup-border-radius: #{$popup-border-radius};
+
+    --kendo-popup-font-family: #{$popup-font-family};
+    --kendo-popup-font-size: #{$popup-font-size};
+    --kendo-popup-line-height: #{$popup-line-height};
+
+    --kendo-popup-bg: #{$popup-bg};
+    --kendo-popup-text: #{$popup-text};
+    --kendo-popup-border: #{$popup-border};
+    --kendo-popup-shadow: #{$popup-shadow};
+}
