@@ -35,7 +35,6 @@
     "prepublishOnly": "echo 'no prebublish for default theme'"
   },
   "devDependencies": {
-    "@progress/kendo-theme-tasks": "^0.6.6",
     "bootstrap": "^4.5.0"
   }
 }

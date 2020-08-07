@@ -40,7 +40,6 @@
   },
   "devDependencies": {
     "@progress/kendo-theme-default": "^4.21.0",
-    "@progress/kendo-theme-tasks": "^0.6.6",
     "bootstrap": "^4.5.0"
   }
 }
