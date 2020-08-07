@@ -34,7 +34,5 @@
     "dart:swatches": "gulp dart:swatches",
     "dart:flat": "gulp dart:flat"
   },
-  "devDependencies": {
-    "@progress/kendo-theme-tasks": "^0.6.6"
-  }
+  "devDependencies": {}
 }

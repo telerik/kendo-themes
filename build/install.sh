@@ -19,7 +19,6 @@ else
 
     # Install theme default
     cd $dir/packages/default
-    npm link @progress/kendo-theme-tasks
     npm install
     npm link --force
 
@@ -27,7 +26,6 @@ else
     for pkg in bootstrap material nouvelle
     do
         cd $dir/packages/$pkg
-        npm link @progress/kendo-theme-tasks
         npm link @progress/kendo-theme-default
         npm install
         npm link --force
