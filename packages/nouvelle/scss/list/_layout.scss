@@ -1,0 +1,38 @@
+@mixin kendo-list--layout() {
+
+    // List
+    .k-list {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+        outline: 0;
+        box-sizing: border-box;
+        list-style: none;
+    }
+
+
+    // Item
+    .k-list-item,
+    .k-list > .k-item {
+        padding: var(--kendo-list-item-padding-y) var(--kendo-list-item-padding-x);
+        box-sizing: border-box;
+        outline: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-content: center;
+    }
+
+
+    // List scroller
+    .k-list-scroller {
+        position: relative;
+        overflow: auto;
+    }
+
+
+    // Angular
+    kendo-list {
+        display: block;
+    }
+}

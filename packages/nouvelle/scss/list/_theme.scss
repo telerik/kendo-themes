@@ -1,0 +1,44 @@
+@mixin kendo-list--theme() {
+
+    // List
+    .k-list {
+        @include fill(
+            var(--kendo-list-text),
+            var(--kendo-list-bg),
+            var(--kendo-list-border)
+        );
+    }
+
+
+    // List item
+    .k-list-item,
+    .k-list > .k-item {
+        @include fill(
+            var(--kendo-list-item-text),
+            var(--kendo-list-item-bg)
+        );
+
+        &:hover,
+        &.k-state-hover {
+            @include fill(
+                var(--kendo-list-item-hover-text),
+                var(--kendo-list-item-hover-bg)
+            );
+        }
+
+        &.k-state-selected {
+            @include fill(
+                var(--kendo-list-item-selected-text),
+                var(--kendo-list-item-selected-bg)
+            );
+        }
+
+        &:focus,
+        &:focus-within,
+        &.k-state-focus,
+        &.k-state-focused {
+            box-shadow: var(--kendo-list-item-focus-shadow);
+        }
+    }
+
+}

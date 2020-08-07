@@ -1,0 +1,78 @@
+$list-padding-x: 0px !default;
+$list-padding-y: 0px !default;
+
+$list-border-width: 1px !default;
+$list-border-style: solid !default;
+
+$list-border-radius: 0px !default;
+
+$list-font-family: $font-family !default;
+$list-font-size: $font-size !default;
+$list-line-height: $line-height !default;
+
+
+/// The background of the list.
+/// @group list
+$list-bg: $component-bg !default;
+/// The text color of the list.
+/// @group list
+$list-text: $component-text !default;
+/// The border color of the list.
+/// @group list
+$list-border: $component-border !default;
+$list-shadow: null !default;
+
+
+$list-item-padding-x: map-get( $spacing, 2 ) !default;
+$list-item-padding-y: map-get( $spacing, 1 ) !default;
+
+$list-item-bg: null !default;
+$list-item-text: $component-text !default;
+
+$list-item-hover-bg: $hover-bg !default;
+$list-item-hover-text: $hover-text !default;
+
+$list-item-selected-bg: $selected-bg !default;
+$list-item-selected-text: $selected-text !default;
+
+$list-item-focus-bg: null !default;
+$list-item-focus-text: null !default;
+$list-item-focus-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
+
+
+
+
+// Expose
+:root {
+    --kendo-list-padding-x: #{$list-padding-x};
+    --kendo-list-padding-y: #{$list-padding-y};
+    --kendo-list-border-width: #{$list-border-width};
+    --kendo-list-border-style: #{$list-border-style};
+
+    --kendo-list-border-radius: #{$list-border-radius};
+
+    --kendo-list-font-family: #{$list-font-family};
+    --kendo-list-font-size: #{$list-font-size};
+    --kendo-list-line-height: #{$list-line-height};
+
+    --kendo-list-bg: #{$list-bg};
+    --kendo-list-text: #{$list-text};
+    --kendo-list-border: #{$list-border};
+    --kendo-list-shadow: #{$list-shadow};
+
+    --kendo-list-item-padding-x: #{$list-item-padding-x};
+    --kendo-list-item-padding-y: #{$list-item-padding-y};
+
+    --kendo-list-item-bg: #{$list-item-bg};
+    --kendo-list-item-text: #{$list-item-text};
+
+    --kendo-list-item-hover-bg: #{$list-item-hover-bg};
+    --kendo-list-item-hover-text: #{$list-item-hover-text};
+
+    --kendo-list-item-selected-bg: #{$list-item-selected-bg};
+    --kendo-list-item-selected-text: #{$list-item-selected-text};
+
+    --kendo-list-item-focus-bg: #{$list-item-focus-bg};
+    --kendo-list-item-focus-text: #{$list-item-focus-text};
+    --kendo-list-item-focus-shadow: #{$list-item-focus-shadow};
+}
