@@ -487,29 +487,9 @@ The following table lists the available variables for customizing the Nouvelle t
 </thead>
 <tbody>
         <tr>
-    <td>$accent</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
-    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$primary` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$accent-contrast</td>
-    <td>Color</td>
-    <td>contrast-wcag( $accent )</td>
-    <td>contrast-wcag( $accent )</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$primary-contrast` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">The color used along with the accent color denoted by $primary.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$primary</td>
     <td>Color</td>
-    <td>$accent</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
     <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
 </tr>
 <tr>
@@ -519,8 +499,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$primary-contrast</td>
     <td>Color</td>
-    <td>$accent-contrast</td>
-    <td>contrast-wcag( $accent )</td>
+    <td>contrast-wcag( $primary )</td>
+    <td>contrast-wcag( $primary )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the accent color denoted by $primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
@@ -1014,6 +994,106 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of focus input.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+### List
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$list-bg</td>
+    <td></td>
+    <td>$component-bg</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the list.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-text</td>
+    <td></td>
+    <td>$component-text</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-border</td>
+    <td></td>
+    <td>$component-border</td>
+    <td>rgba( black, .08 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the list.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+### Popup
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$popup-bg</td>
+    <td></td>
+    <td>mix( black, $component-bg, 2% )</td>
+    <td>mix( black, $component-bg, 2% )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$popup-text</td>
+    <td></td>
+    <td>$component-text</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$popup-border</td>
+    <td></td>
+    <td>$component-border</td>
+    <td>rgba( black, .08 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the popup.</div></div>
     </td>
 </tr>
 </tbody>
