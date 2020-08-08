@@ -1,64 +1,62 @@
 const fs = require("fs");
 const path = require("path");
-const glob = require("glob");
 const cp = require("child_process");
 
+const glob = require("glob");
 const fse = require("fs-extra");
 const gulp = require("gulp");
 const logger = require("gulplog");
-const eslint = require("gulp-eslint");
-const sasslint = require("gulp-sass-lint");
-const mime = require("mime");
 const sassdoc = require("sassdoc");
-
 const baka = require("@joneff/baka");
 const { parse } = require('sass-variable-parser');
-const tasks = require("./packages/theme-tasks/gulpfile");
-const sassImporterFactory = require("./packages/theme-tasks/lib/sassimporter");
 const nodeSass = require("node-sass");
 const dartSass = require("sass");
-let sassCompiler = nodeSass;
+const autoprefixer = require("autoprefixer");
+const calc = require("postcss-calc");
+
+const { buildAll } = require('./scripts/sass-build');
+const { flattenAll } = require('./scripts/sass-flatten');
+const { getArg } = require("./scripts/utils");
 
 
 // Settings
 const paths = {
     sass: {
-        src: "./packages/*/scss/**/*.scss",
+        all: "./packages/*/scss/**/*.scss",
         assets: "./packages/*/scss/**/*.{png,gif,ttf,woff}",
         themes: "./packages/!(theme-tasks)",
-        theme: "/scss/all.scss",
-        swatches: "/scss/swatches/*.scss",
-        inline: "/dist/all.scss",
-        dist: "/dist"
-    },
-    js: {
-        src: "**/*.js",
-        exclude: "!**/node_modules/**"
+        theme: "./scss/all.scss",
+        swatches: "./scss/swatches/*.scss",
+        inline: "./dist/all.scss",
+        dist: "./dist"
     }
 };
 
-
-// #region lint
-gulp.task("lint:styles", function() {
-    return gulp.src(paths.sass.src)
-        .pipe(sasslint())
-        .pipe(sasslint.format())
-        .pipe(sasslint.failOnError());
-});
-gulp.task("lint:scripts", function() {
-    return gulp.src([ paths.js.src, paths.js.exclude ])
-        .pipe(eslint())
-        .pipe(eslint.format())
-        .pipe(eslint.failAfterError());
-});
-
-gulp.task("lint", gulp.series("lint:styles", "lint:scripts"));
-// #endregion
+const browsers = [
+    "Explorer >= 9",
+    "last 3 Edge versions",
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Opera versions",
+    "last 2 Safari major versions",
+    "last 2 iOS major versions",
+    "Android >= 4.4",
+    "ExplorerMobile >= 10"
+];
+const postcssPlugins = [
+    calc({
+        precision: 10
+    }),
+    autoprefixer({
+        overrideBrowserslist: browsers
+    })
+];
 
 
 // #region assets
 gulp.task("assets", function() {
     let files = glob.sync(paths.sass.assets);
+    let embedFile = require('./scripts/sass-assets');
 
     files.forEach(function(filename) {
         logger.info(`Converting asset to data URI: ${filename}`);
@@ -67,105 +65,87 @@ gulp.task("assets", function() {
 
     return Promise.resolve();
 });
-
-function embedFile(filename) {
-    let basename = path.basename(filename);
-    let mimeType = mime.getType(filename);
-    let base64 = fs.readFileSync(filename).toString("base64");
-    let template = fs.readFileSync(path.join(__dirname, "lib/", "data-uri.template"), "utf8");
-
-    let output = template
-        .replace(/<FILENAME>/g, basename)
-        .replace(/<MIME>/g, mimeType)
-        .replace(/<BASE64>/g, base64);
-
-    let outputFilename = path.join(
-        path.dirname(filename),
-        path.basename(filename, path.extname(filename)) + ".scss"
-    );
-
-    fs.writeFileSync(outputFilename, output);
-}
-
-function buildAll(themes = glob.sync(paths.sass.themes), src = paths.sass.theme) {
-    return Promise.all(
-        themes.map( theme => {
-            const file = path.resolve(theme + src);
-            const dest = path.resolve(theme + paths.sass.dist);
-            const importerCWD = path.join(process.cwd() + "/" + theme);
-            const options = Object.assign({}, tasks.sassOptions);
-
-            options.importer = sassImporterFactory({ cache: true, cwd: importerCWD });
-
-            return tasks.build(file, dest, options, sassCompiler);
-        })
-    );
-}
-
-function flattenSassFilesAll(themes = glob.sync(paths.sass.themes)) {
-    return Promise.all(
-        themes.map( theme => {
-            const file = path.resolve(theme + paths.sass.theme);
-            const dest = `${theme}${paths.sass.dist}/all.scss`;
-            const nodeModules = `${theme}/node_modules`;
-
-            return tasks.flattenSassFiles(file, dest, nodeModules);
-        })
-    );
-}
 // #endregion
 
 
 // #region node-sass
-gulp.task("sass", function() {
-    let themes = glob.sync(paths.sass.themes);
+gulp.task("sass", function( done ) {
+    let file = getArg('--file') || paths.sass.theme;
+    let dest = getArg('--dest') || paths.sass.dist;
+    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
 
-    sassCompiler = nodeSass;
-    return buildAll(themes);
+    buildAll( file, dest, { cwds: themes, compiler: nodeSass, postcssPlugins: postcssPlugins } );
+
+    done();
 });
+
 gulp.task("sass:watch", function() {
-    gulp.watch(paths.sass.src, gulp.series("sass"));
+    gulp.watch(paths.sass.all, gulp.series("sass"));
 });
-gulp.task("sass:swatches", function() {
-    let themes = glob.sync(paths.sass.themes);
-    flattenSassFilesAll(themes);
 
-    sassCompiler = nodeSass;
-    return buildAll(themes, paths.sass.swatches);
+gulp.task("sass:swatches", function( done ) {
+    let file = getArg('--file') || paths.sass.theme;
+    let dest = getArg('--dest') || paths.sass.dist;
+    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
+    let swatches = paths.sass.swatches;
+
+    flattenAll( file, dest, { cwds: themes } );
+    buildAll( swatches, dest, { cwds: themes, compiler: nodeSass, postcssPlugins: postcssPlugins } );
+
+    done();
 });
-gulp.task("sass:flat", function() {
-    let themes = glob.sync(paths.sass.themes);
-    flattenSassFilesAll(themes);
 
-    sassCompiler = nodeSass;
-    return buildAll(themes, paths.sass.inline);
+gulp.task("sass:flat", function( done ) {
+    let file = getArg('--file') || paths.sass.theme;
+    let dest = getArg('--dest') || paths.sass.dist;
+    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
+    let inline = paths.sass.inline;
+
+    flattenAll( file, dest, { cwds: themes } );
+    buildAll( inline, dest, { cwds: themes, compiler: nodeSass, postcssPlugins: postcssPlugins } );
+
+    done();
 });
 // #endregion
 
 
 // #region dart-sass
-gulp.task("dart", function() {
-    let themes = glob.sync(paths.sass.themes);
+gulp.task("dart", function( done ) {
+    let file = getArg('--file') || paths.sass.theme;
+    let dest = getArg('--dest') || paths.sass.dist;
+    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
 
-    sassCompiler = dartSass;
-    return buildAll(themes);
+    buildAll( file, dest, { cwds: themes, compiler: dartSass, postcssPlugins: postcssPlugins } );
+
+    done();
 });
+
 gulp.task("dart:watch", function() {
-    gulp.watch(paths.sass.src, gulp.series("dart"));
+    gulp.watch(paths.sass.all, gulp.series("dart"));
 });
-gulp.task("dart:swatches", function() {
-    let themes = glob.sync(paths.sass.themes);
-    flattenSassFilesAll(themes);
 
-    sassCompiler = dartSass;
-    return buildAll(themes, paths.sass.swatches);
+gulp.task("dart:swatches", function( done ) {
+    let file = getArg('--file') || paths.sass.theme;
+    let dest = getArg('--dest') || paths.sass.dist;
+    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
+    let swatches = paths.sass.swatches;
+
+    flattenAll( file, dest, { cwds: themes } );
+    buildAll( swatches, dest, { cwds: themes, compiler: dartSass, postcssPlugins: postcssPlugins } );
+
+    done();
 });
-gulp.task("dart:flat", function() {
-    let themes = glob.sync(paths.sass.themes);
-    flattenSassFilesAll(themes);
 
-    sassCompiler = dartSass;
-    return buildAll(themes, paths.sass.inline);
+gulp.task("dart:flat", function( done ) {
+    let file = getArg('--file') || paths.sass.theme;
+    let dest = getArg('--dest') || paths.sass.dist;
+    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
+    let inline = paths.sass.inline;
+
+    flattenAll( file, dest, { cwds: themes } );
+    buildAll( inline, dest, { cwds: themes, compiler: dartSass, postcssPlugins: postcssPlugins } );
+
+    done();
 });
 // #endregion
 

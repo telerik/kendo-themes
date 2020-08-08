@@ -43,6 +43,7 @@ jobs:
     install:
       - npm install
     script:
+      - set -e
       - npm run lint
       - npm run docs:check
       - npm run sass:flat
@@ -56,6 +57,7 @@ jobs:
     install:
       - npm install
     script:
+      - set -e
       - npm run sass:flat
       - npm run karma-single
       - npm run visual-tests
@@ -65,6 +67,7 @@ jobs:
     install:
       - npm install
     script:
+      - set -e
       - npm run lint
       - npm run docs:check
       - npm run dart:flat
