@@ -1,6 +1,6 @@
 {
   "name": "@progress/kendo-theme-tasks",
-  "description": "Build utiliti for @progress/kendo-themes",
+  "description": "Build utility for @progress/kendo-themes",
   "version": "0.6.6",
   "author": "Progress",
   "license": "Apache-2.0",
@@ -10,9 +10,7 @@
   ],
   "main": "index.js",
   "files": [
-    "lib/",
-    "bin/",
-    "gulpfile.js"
+    "src/"
   ],
   "repository": {
     "type": "git",
@@ -21,27 +19,18 @@
   "publishConfig": {
     "access": "public"
   },
-  "bin": {
-    "kendotheme": "./bin/kendotheme.js",
-    "kendo-theme": "./bin/kendotheme.js"
-  },
   "scripts": {
-    "lint": "gulp --gulpfile ../../gulpfile.js lint:scripts"
+    "prepublish": "node ./scripts/prepublish.js"
   },
   "peerDependencies": {
-    "gulp": "^4.0.2",
     "node-sass": "^4.14.1",
     "sass": "^1.26.5"
   },
   "dependencies": {
     "@joneff/baka": "^0.3.2",
     "ansi-colors": "^4.1.1",
-    "autoprefixer": "^9.8.0",
     "glob": "^7.1.6",
     "gulplog": "^1.0.0",
-    "minimist": "^1.2.5",
-    "plugin-error": "^1.0.1",
-    "postcss": "^7.0.32",
-    "postcss-calc": "^7.0.2"
+    "postcss": "^7.0.32"
   }
 }
