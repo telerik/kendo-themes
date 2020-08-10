@@ -96,7 +96,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         padding: 0 $chip-content-padding-x;
-        flex: 1;
+        flex: 1 1 auto;
     }
 
     .k-chip-icon,
@@ -106,6 +106,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex: 1 0 auto;
     }
 
     .k-chip-icon {
