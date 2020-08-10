@@ -27,7 +27,7 @@
     "sass": "^1.26.5"
   },
   "dependencies": {
-    "@joneff/baka": "^0.3.2",
+    "@joneff/baka": "^0.5.1",
     "ansi-colors": "^4.1.1",
     "glob": "^7.1.6",
     "gulplog": "^1.0.0",
