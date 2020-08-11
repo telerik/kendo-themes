@@ -25,6 +25,10 @@
             flex-direction: row;
             flex-wrap: nowrap;
             overflow: hidden;
+
+            .k-flex-wrap {
+                flex-wrap: wrap;
+            }
         }
 
         .k-breadcrumb-item {
@@ -37,6 +41,10 @@
 
         .k-breadcrumb-root-item {
             flex: 1 0 auto;
+
+            &.k-flex-none {
+                flex: none;
+            }
         }
 
         .k-breadcrumb-link,
