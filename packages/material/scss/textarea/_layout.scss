@@ -24,8 +24,8 @@
         padding-top: 0;
 
 
-        .k-textarea {
-            padding-top: calc( #{$textarea-padding-y} + 14px );
+        .k-textarea .k-input {
+            padding-top: calc( #{$textarea-padding-y} + 20px );
         }
 
         .k-label {
@@ -70,7 +70,7 @@
 
     // Textarea Floating label Angular rendering
     .k-textbox-container.k-textarea-wrapper,
-    .k-floating-label-container.k-textarea-container {
+    .k-floating-label-container.k-textarea-wrapper {
         padding-top: 0;
 
         .k-textarea {
