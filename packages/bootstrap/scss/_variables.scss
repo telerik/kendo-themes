@@ -863,6 +863,7 @@ $input-padding-y: $input-padding-y !default;
 $input-font-family: $font-family !default;
 $input-font-size: $font-size !default;
 $input-line-height: $input-line-height !default;
+$input-line-height-em: $input-line-height * 1em;
 
 $input-padding-x-sm: $input-padding-x-sm !default;
 $input-padding-y-sm: $input-padding-y-sm !default;
@@ -925,6 +926,7 @@ $textarea-padding-y: $input-padding-y !default;
 $textarea-font-family: $input-font-family !default;
 $textarea-font-size: $input-font-size !default;
 $textarea-line-height: $input-line-height !default;
+$textarea-line-height-em: $input-line-height-em !default;
 
 $textarea-padding-x-sm: $input-padding-x-sm !default;
 $textarea-padding-y-sm: $input-padding-y-sm !default;
