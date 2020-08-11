@@ -55,7 +55,13 @@
         > .k-label {
             left: initial;
             right: $textarea-padding-x;
-            transform-origin: top right;
+        }
+
+        &:not(.k-state-empty),
+        &.k-state-focused {
+            > .k-label {
+                transform-origin: top right;
+            }
         }
     }
 }
