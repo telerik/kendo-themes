@@ -17,6 +17,28 @@
             );
         }
 
+        .k-input-prefix,
+        .k-input-suffix {
+            > .k-icon {
+                color: $textbox-icon-color;
+                opacity: $textbox-icon-opacity;
+            }
+
+            .k-clear-value {
+                color: $clear-button-text;
+                opacity: .5;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .k-textbox-separator {
+            border-color: $textbox-separator-color;
+            opacity: $textbox-separator-opacity;
+        }
+
         // Hovered
         &:hover,
         &.k-state-hover {

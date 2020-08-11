@@ -923,7 +923,14 @@ $input-selected-bg: rgba($input-focused-border, .5) !default;
 // Textboxes
 $textbox-line-height: $form-line-height-em !default;
 $textbox-icon-width: calc( #{$icon-size} + #{$input-padding-x * 2} ) !default;
+$textbox-icon-padding-x: 6px !default;
+$textbox-icon-padding-y: $textbox-icon-padding-x !default;
 
+$textbox-icon-color: #343a40 !default;
+$textbox-icon-opacity: .5 !default;
+
+$textbox-separator-color: $clear-button-text !default;
+$textbox-separator-opacity: .5 !default;
 
 // Textarea
 $textarea-default-width: 18em !default;
