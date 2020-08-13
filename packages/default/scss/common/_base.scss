@@ -235,3 +235,70 @@ $widget-border-width: 1px !default;
         display: inline-block;
     }
 }
+
+@include exports( "common/drop-hint" ) {
+
+    .k-drop-hint {
+        display: flex;
+        gap: $drop-hint-arrow-spacing;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        z-index: 1000;
+        transform: translate(-50%, -50%);
+    }
+
+    .k-drop-hint-start,
+    .k-drop-hint-end {
+        flex-shrink: 0;
+        border-width: ($drop-hint-arrow-size / 2);
+        border-style: solid;
+        border-color: transparent;
+    }
+
+    .k-drop-hint-line {
+        flex-grow: 1;
+        background-color: $drop-hint-bg;
+    }
+
+    .k-drop-hint-h {
+        .k-drop-hint-start {
+            border-left-width: (($drop-hint-arrow-size / 2) * $equilateral-index);
+            border-left-color: $drop-hint-bg;
+            border-right-width: 0;
+        }
+
+        .k-drop-hint-line {
+            width: $drop-hint-line-h-width;
+            height: $drop-hint-line-h-height;
+        }
+
+        .k-drop-hint-end {
+            border-right-width: (($drop-hint-arrow-size / 2) * $equilateral-index);
+            border-right-color: $drop-hint-bg;
+            border-left-width: 0;
+        }
+    }
+
+    .k-drop-hint-v {
+        flex-direction: column;
+
+        .k-drop-hint-start {
+            border-top-width: (($drop-hint-arrow-size / 2) * $equilateral-index);
+            border-top-color: $drop-hint-bg;
+            border-bottom-width: 0;
+        }
+
+        .k-drop-hint-line {
+            width: $drop-hint-line-v-width;
+            height: $drop-hint-line-v-height;
+        }
+
+        .k-drop-hint-end {
+            border-bottom-width: (($drop-hint-arrow-size / 2) * $equilateral-index);
+            border-bottom-color: $drop-hint-bg;
+            border-top-width: 0;
+        }
+    }
+
+}
