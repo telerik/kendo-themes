@@ -9,8 +9,9 @@ const files = [
 ];
 
 // Lerna executes this script with the wrong cwd
-if (process.cwd() === __dirname) {
-    process.chdir('../');
+if ( process.cwd() !== path.resolve( __dirname, '../' ) ) {
+    console.log('Fixing process.cwd()'); // eslint-disable-line no-console
+    process.chdir( path.resolve( __dirname, '../' ) );
 }
 
 fse.emptyDirSync('./src');
