@@ -8,6 +8,11 @@ const files = [
     '../../scripts/utils.js'
 ];
 
+// Lerna executes this script with the wrong cwd
+if (process.cwd() === __dirname) {
+    process.chdir('../');
+}
+
 fse.emptyDirSync('./src');
 
 files.forEach( file => {
