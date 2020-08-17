@@ -49,8 +49,97 @@
             display: inline-flex;
         }
 
-    }
+        // React gantt
+        .k-treelist-scrollable {
+            height: 100%;
+            width: 100%;
+            border-width: 0;
+            overflow: auto;
 
+            .k-grid-header .k-header {
+                position: sticky;
+            }
+            .k-grid-header th,
+            .k-grid-content-sticky {
+                z-index: 4;
+            }
+            .k-grid-header th.k-grid-header-sticky {
+                z-index: 5;
+            }
+            .k-grid-header th:last-child {
+                padding: 0;
+
+                .k-header {
+                    padding: $grid-header-padding-y $grid-header-padding-x;
+                    border-width: 0 0 1px $grid-cell-vertical-border-width;
+                    white-space: nowrap;
+                }
+            }
+            .k-task {
+                display: inline-flex;
+                flex-flow: row nowrap;
+                white-space: nowrap;
+                z-index: 3;
+
+                &:hover .k-task-start,
+                &:hover .k-task-end {
+                    display: block;
+                }
+
+                &:hover .k-task-draghandle {
+                    visibility: visible;
+                }
+            }
+
+            .k-task-milestone {
+                border: 0;
+                transform: none;
+                background: none;
+
+                .k-task-milestone-content {
+                    width: 1em;
+                    height: 1em;
+                    transform: rotate(45deg);
+                }
+            }
+
+            .k-task-summary-complete {
+                width: 100%;
+            }
+
+            .k-task-start {
+                transform: translateX(-140%) translateY(-50%);
+            }
+            .k-task-end {
+                transform: translateX(140%) translateY(-50%);
+            }
+
+            .k-task-content {
+                padding: $gantt-task-padding-y $gantt-task-padding-x;
+                line-height: normal;
+                flex: 1 1 auto;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .k-task-actions {
+                flex-shrink: 0;
+            }
+
+            .k-gantt-dependencies-svg {
+                position: absolute;
+                overflow: visible;
+                pointer-events: none;
+                z-index: 2;
+            }
+
+            .k-gantt-columns {
+                background: transparent;
+                pointer-events: none;
+                table-layout: fixed;
+            }
+        }
+    }
 
     // Header and footer
     .k-gantt-header {

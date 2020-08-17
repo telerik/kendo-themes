@@ -6,6 +6,22 @@
             $gantt-bg,
             $gantt-border
         );
+
+        // React gantt
+        .k-treelist-scrollable {
+            .k-task-milestone .k-task-milestone-content {
+                @include fill(
+                    $bg: $gantt-milestone-bg,
+                    $border: $gantt-milestone-border
+                );
+            }
+            .k-task-milestone.k-state-selected .k-task-milestone-content {
+                @include fill(
+                    $bg: $gantt-milestone-selected-bg,
+                    $border: $gantt-milestone-selected-border
+                );
+            }
+        }
     }
 
     // Header and footer
