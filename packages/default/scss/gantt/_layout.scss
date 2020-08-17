@@ -52,14 +52,115 @@
             display: inline-flex;
         }
 
-    }
+        // React gantt
+        .k-treelist-scrollable {
+            height: 100%;
+            width: 100%;
+            border-width: 0;
+            overflow: auto;
 
+            .k-grid-header .k-header {
+                position: sticky;
+            }
+            .k-grid-header th,
+            .k-grid-content-sticky {
+                z-index: 4;
+            }
+            .k-grid-header th.k-grid-header-sticky {
+                z-index: 5;
+            }
+            .k-grid-header tr:first-child th:last-child ,
+            tbody td:last-child {
+                padding: 0;
+            }
+            .k-grid-header th:last-child {
+                .k-header {
+                    padding: $grid-header-padding-y $grid-header-padding-x;
+                    border-width: 0 0 1px $grid-cell-vertical-border-width;
+                    white-space: nowrap;
+                }
+            }
+            .k-master-row:hover .k-task-dot {
+                display: block;
+            }
+            .k-task {
+                display: inline-flex;
+                flex-flow: row nowrap;
+                white-space: nowrap;
+                z-index: 3;
+
+                &:hover .k-task-start,
+                &:hover .k-task-end {
+                    display: block;
+                }
+
+                &:hover .k-task-draghandle {
+                    visibility: visible;
+                }
+            }
+
+            .k-task-milestone {
+                border: 0;
+                transform: none;
+                background: none;
+
+                .k-task-milestone-content {
+                    width: .875em;
+                    height: .875em;
+                    border-width: 1px;
+                    border-style: solid;
+                    transform: rotate(45deg);
+                }
+            }
+
+            .k-task-summary-complete {
+                width: 100%;
+            }
+
+            .k-task-start {
+                transform: translateX(-140%) translateY(-50%);
+            }
+            .k-task-end {
+                transform: translateX(140%) translateY(-50%);
+            }
+
+            .k-task-content {
+                padding: $gantt-task-padding-y $gantt-task-padding-x;
+                display: block;
+                line-height: normal;
+                flex: 1 1 auto;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .k-task-actions {
+                flex-shrink: 0;
+            }
+
+            .k-gantt-dependencies-svg {
+                position: absolute;
+                overflow: visible;
+                pointer-events: none;
+                z-index: 2;
+
+                polyline {
+                    stroke-width: $gantt-line-size;
+                }
+            }
+
+            .k-gantt-columns {
+                background: transparent;
+                pointer-events: none;
+                table-layout: fixed;
+            }
+        }
+    }
 
     // Header and footer
     .k-gantt-header {
         border-width: 0 0 $toolbar-border-width;
         flex-shrink: 0;
-        z-index: 2;
+        z-index: 6;
     }
     .k-gantt-footer {
         border-width: $toolbar-border-width 0 0;
@@ -77,7 +178,23 @@
     .k-gantt-create {}
     .k-gantt-views {}
 
-    @media only screen and (max-width: 480px) {
+
+    // Gantt views
+    .k-gantt-views-wrapper {
+        margin-left: auto;
+
+        .k-views-dropdown {
+            width: auto;
+            font-size: inherit;
+            display: none;
+            cursor: pointer;
+        }
+    }
+
+
+    // Responsive gantt toolbar
+    @media (max-width: 480px) {
+
         .k-gantt-toolbar {
             .k-gantt-toggle {
                 display: inline-flex;
@@ -96,30 +213,12 @@
                 }
             }
         }
-    }
 
-
-    // View switcher
-    .k-gantt-views {
-
-        select.k-dropdown {
-            width: auto;
-            font-size: inherit;
-            display: none;
-            cursor: pointer;
-        }
     }
 
     @media (max-width: 1024px) {
-        .k-gantt-views {
-
-            select.k-dropdown {
-                display: flex;
-            }
-            .k-button-group {
-                display: none;
-            }
-        }
+        .k-gantt-views-wrapper .k-gantt-views { display: none; }
+        .k-gantt-views-wrapper .k-views-dropdown { display: flex; }
     }
 
 

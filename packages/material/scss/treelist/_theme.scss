@@ -18,10 +18,6 @@
             background-color: inherit;
         }
 
-        thead.k-grid-header > tr:not(:only-child) > th {
-            border-right-color: $grid-border;
-        }
-
         .k-group-footer td,
         .k-grouping-row td,
         tbody .k-group-cell {
