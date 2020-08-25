@@ -68,6 +68,13 @@
     .k-icon-lg { font-size: ( $icon-size * 3 ); }
     .k-icon-xl { font-size: ( $icon-size * 4 ); }
 
+    .k-icon-size-xs { font-size: ( $icon-size * .5 ); }
+    .k-icon-size-sm { font-size: ( $icon-size * .75 ); }
+    .k-icon-size-md { font-size: ( $icon-size * 2 ); }
+    .k-icon-size-lg { font-size: ( $icon-size * 3 ); }
+    .k-icon-size-xl { font-size: ( $icon-size * 4 ); }
+    .k-icon-size-default { font-size: $icon-size; }
+
     // sass-lint:disable single-line-per-selector
     .k-i-arrow-45-up-right::before { content: "\e000"; }
     .k-i-collapse-ne::before { content: "\e000"; }
