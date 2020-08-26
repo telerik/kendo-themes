@@ -66,14 +66,19 @@
             .k-grid-header th.k-grid-header-sticky {
                 z-index: 5;
             }
-            .k-grid-header th:last-child {
+            .k-grid-header tr:first-child th:last-child ,
+            tbody td:last-child {
                 padding: 0;
-
+            }
+            .k-grid-header th:last-child {
                 .k-header {
                     padding: $grid-header-padding-y $grid-header-padding-x;
                     border-width: 0 0 1px $grid-cell-vertical-border-width;
                     white-space: nowrap;
                 }
+            }
+            .k-master-row:hover .k-task-dot {
+                display: block;
             }
             .k-task {
                 display: inline-flex;
