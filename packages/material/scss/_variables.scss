@@ -781,17 +781,17 @@ $invalid-shadow: null !default;
 // Buttons
 
 /// Width of border around buttons
-/// @group tabstrip
+/// @group buttons
 $button-border-width: 0px !default;
 /// Border radius of buttons
-/// @group tabstrip
+/// @group buttons
 $button-border-radius: $border-radius !default;
 
 /// Horizontal padding of buttons
-/// @group tabstrip
+/// @group buttons
 $button-padding-x: $padding-x !default;
 /// Vertical padding of buttons
-/// @group tabstrip
+/// @group buttons
 $button-padding-y: 8px !default;
 $button-font-family: $font-family !default;
 $button-font-size: $font-size !default;
