@@ -1,7 +1,7 @@
 ---
 title: Customizing Tabstrip
-description: "Refer to the list of the Kendo UI Bootstrap theme variables available for customization."
-slug: variables_kendothemebootstrap_tabstrip
+description: "Refer to the list of the Kendo UI Classic theme variables available for customization."
+slug: variables_kendothemeclassic_tabstrip
 position: 9
 ---
 
@@ -75,8 +75,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-border</td>
     <td></td>
-    <td>$nav-tabs-border-color</td>
-    <td></td>
+    <td>$component-border</td>
+    <td>rgba( black, .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip component</div></div>
@@ -105,8 +105,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-border-width</td>
     <td></td>
-    <td>$nav-tabs-border-width</td>
-    <td></td>
+    <td>1px</td>
+    <td>1px</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around tabs</div></div>
@@ -115,8 +115,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-border-radius</td>
     <td></td>
-    <td>$nav-tabs-border-radius</td>
-    <td></td>
+    <td>$border-radius</td>
+    <td>4px</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of tabs</div></div>
@@ -195,8 +195,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-hovered-border</td>
     <td></td>
-    <td>$nav-tabs-link-hover-border-color</td>
-    <td></td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered tabs</div></div>
@@ -215,7 +215,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-selected-bg</td>
     <td></td>
-    <td>$nav-tabs-link-active-bg</td>
+    <td>$component-bg</td>
     <td></td>
 </tr>
 <tr>
@@ -225,7 +225,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-selected-text</td>
     <td></td>
-    <td>$nav-tabs-link-active-color</td>
+    <td>$component-text</td>
     <td></td>
 </tr>
 <tr>
@@ -235,8 +235,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-selected-border</td>
     <td></td>
-    <td>$nav-tabs-link-active-border-color</td>
-    <td></td>
+    <td>$component-border</td>
+    <td>rgba( black, .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected tabs</div></div>
@@ -275,8 +275,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-content-border-width</td>
     <td></td>
-    <td>$nav-tabs-border-width</td>
-    <td></td>
+    <td>1px</td>
+    <td>1px</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around tabstrip content</div></div>
@@ -286,7 +286,7 @@ The following table lists the available variables for customization.
     <td>$tabstrip-content-bg</td>
     <td></td>
     <td>$component-bg</td>
-    <td>$component-bg</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tabstrip content</div></div>
@@ -306,7 +306,7 @@ The following table lists the available variables for customization.
     <td>$tabstrip-content-border</td>
     <td></td>
     <td>$component-border</td>
-    <td></td>
+    <td>rgba( black, .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip content</div></div>

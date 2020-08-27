@@ -207,6 +207,46 @@ The following table lists the available variables for customizing the Material t
 </thead>
 <tbody>
         <tr>
+    <td>$button-border-width</td>
+    <td></td>
+    <td>0px</td>
+    <td>0px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around buttons</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-border-radius</td>
+    <td></td>
+    <td>$border-radius</td>
+    <td>2px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of buttons</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-padding-x</td>
+    <td></td>
+    <td>$padding-x</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of buttons</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-padding-y</td>
+    <td></td>
+    <td>8px</td>
+    <td>8px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of buttons</div></div>
+    </td>
+</tr>
+<tr>
     <td>$button-bg</td>
     <td></td>
     <td>$base-bg</td>
@@ -977,46 +1017,6 @@ The following table lists the available variables for customizing the Material t
 </thead>
 <tbody>
         <tr>
-    <td>$button-border-width</td>
-    <td></td>
-    <td>0px</td>
-    <td>0px</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around buttons</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$button-border-radius</td>
-    <td></td>
-    <td>$border-radius</td>
-    <td>2px</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of buttons</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$button-padding-x</td>
-    <td></td>
-    <td>$padding-x</td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of buttons</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$button-padding-y</td>
-    <td></td>
-    <td>8px</td>
-    <td>8px</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of buttons</div></div>
-    </td>
-</tr>
-<tr>
     <td>$tabstrip-bg</td>
     <td></td>
     <td>null</td>
