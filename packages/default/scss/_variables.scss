@@ -760,10 +760,10 @@ $button-border-width: 1px !default;
 $button-border-radius: $border-radius !default;
 
 /// Horizontal padding of buttons
-/// @group tabstrip
+/// @group buttons
 $button-padding-x: $padding-x !default;
 /// Vertical padding of buttons
-/// @group tabstrip
+/// @group buttons
 $button-padding-y: $padding-y !default;
 $button-font-family: $font-family !default;
 $button-font-size: $font-size !default;
@@ -935,6 +935,7 @@ $textbox-icon-opacity: .35 !default;
 
 $textbox-separator-color: $clear-button-text !default;
 $textbox-separator-opacity: .5 !default;
+
 
 // Textarea
 $textarea-default-width: 18em !default;
@@ -1898,6 +1899,7 @@ $upload-error-border: lighten($error, 29%) !default;
 
 $upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
+
 // Upload external DropZone
 $external-dropzone-padding-x: $upload-dropzone-padding-x !default;
 $external-dropzone-padding-y: $upload-dropzone-padding-y * 6 !default;
@@ -1908,6 +1910,7 @@ $external-dropzone-text: $upload-dropzone-text !default;
 $external-dropzone-border: $upload-dropzone-border !default;
 
 $external-dropzone-icon-opacity: .6 !default;
+
 
 // Window
 $window-border-width: 0px !default;
@@ -2329,7 +2332,8 @@ $stepper-content-transition-property: height !default;
 $stepper-content-transition-duration: 300ms !default;
 $stepper-content-transition-timing-function: cubic-bezier(.4, 0, .2, 1) 0ms;
 
-//Wizard
+
+// Wizard
 $wizard-padding-x: $padding-x * 2.5 !default;
 $wizard-padding-y: $wizard-padding-x !default;
 $wizard-content-padding-x: $padding-x * 4 !default;
@@ -2342,6 +2346,7 @@ $wizard-line-height: $line-height !default;
 $wizard-font-family: $font-family !default;
 
 $wizard-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
+
 
 // Tabstrip
 $tabstrip-wrapper-padding-x: 0px !default;
@@ -2770,6 +2775,7 @@ $pivotgrid-remove-bg: null !default;
 $pivotgrid-remove-text: null !default;
 
 $pivotgrid-configurator-text: $component-text !default;
+
 
 // Listview
 $listview-padding-x: map-get( $spacing, 1 ) !default;
@@ -3374,8 +3380,10 @@ $adaptive-bg: $component-bg !default;
 $adaptive-text: $component-text !default;
 $adaptive-border: $component-border !default;
 
+
 // Adaptive Grid
 $adaptive-grid-sort-text: $primary !default;
+
 
 // Adaptive Scheduler
 $adaptive-scheduler-current-text: $primary !default;
