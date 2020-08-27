@@ -32,7 +32,7 @@
     "dart:watch": "gulp dart:watch",
     "dart:swatches": "gulp dart:swatches",
     "dart:flat": "gulp dart:flat",
-    "prepublishOnly": "./build/embed-dependencies '@progress/kendo-theme-default' && gulp prepublish",
+    "prepublishOnly": "./build/embed-dependencies '@progress/kendo-theme-default'",
     "postpublish": "rm -rf modules && git checkout scss"
   },
   "devDependencies": {
