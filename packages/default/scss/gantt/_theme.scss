@@ -69,8 +69,19 @@
             $bg: $gantt-milestone-bg,
             $border: $gantt-milestone-border
         );
+
+        &.k-task-delayed {
+            @include repeating-striped-gradient($gantt-delayed-bg, $bg-color, 90deg, 4px, 2px);
+        }
+
+        &.k-task-advanced {
+            @include fill(
+                $bg: $gantt-advanced-bg
+            );
+        }
     }
     .k-task-milestone.k-state-selected {
+        background-image: none;
         @include fill(
             $bg: $gantt-milestone-selected-bg,
             $border: $gantt-milestone-selected-border
@@ -81,9 +92,23 @@
     // Summary
     .k-task-summary {
         color: $gantt-summary-bg;
+
+        &.k-task-delayed {
+            color: $gantt-delayed-bg-lighter;
+        }
+
+        &.k-task-advanced {
+            color: $gantt-advanced-bg-lighter;
+        }
     }
     .k-task-summary-complete {
         color: $gantt-summary-progress-bg;
+    }
+    .k-task-delayed .k-task-summary-complete {
+        color: $gantt-delayed-bg;
+    }
+    .k-task-advanced .k-task-summary-complete {
+        color: $gantt-advanced-bg;
     }
     .k-task-summary.k-state-selected {
         color: $gantt-summary-selected-bg;
@@ -102,9 +127,31 @@
             $gantt-task-border
         );
 
+        &.k-task-delayed {
+            @include fill(
+                $bg: $gantt-delayed-bg-lighter
+            );
+        }
+
+        &.k-task-advanced {
+            @include fill(
+                $bg: $gantt-advanced-bg-lighter
+            );
+        }
+
         .k-task-complete {
             background-color: $gantt-task-progress-bg;
         }
+    }
+    .k-task-delayed .k-task-complete {
+        @include fill(
+            $bg: $gantt-delayed-bg
+        );
+    }
+    .k-task-advanced .k-task-complete {
+        @include fill(
+            $bg: $gantt-advanced-bg
+        );
     }
     .k-task-single.k-state-selected {
         @include fill(
@@ -126,4 +173,52 @@
         color: $gantt-line-selected-fill;
     }
 
+    // Planned element
+    .k-task-planned {
+        .k-task-moment {
+            @include fill(
+                $bg: transparent,
+                $border: $gantt-planned-border
+            );
+        }
+        .k-task-duration {
+            @include fill(
+                $bg: $gantt-planned-bg
+            );
+        }
+        &:hover .k-task-moment {
+            @include fill(
+                $bg: $gantt-planned-bg
+            );
+        }
+    }
+
+    // Delay offset
+    .k-task-offset {
+        @include repeating-striped-gradient($gantt-delayed-bg, $bg-color, 135deg, 4px, 2px);
+
+        .k-resize-e::before {
+            @include fill(
+                $border: $base-border
+            );
+        }
+    }
+
+    .k-task-offset:hover {
+        @include repeating-striped-gradient($gantt-delayed-bg-lighter, $bg-color, 135deg, 4px, 2px);
+    }
+
+    // Tooltips
+
+    .k-offset-tooltip-delayed {
+        @include fill(
+            $bg: $gantt-delayed-bg
+        );
+    }
+
+    .k-planned-tooltip {
+        @include fill(
+            $bg: $gantt-planned-bg
+        );
+    }
 }
