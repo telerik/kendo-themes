@@ -26,7 +26,7 @@ const paths = {
         assets: "./packages/*/scss/**/*.{png,gif,ttf,woff}",
         themes: "./packages/!(theme-tasks)",
         theme: "./scss/all.scss",
-        swatches: "./scss/swatches/*.scss",
+        swatches: "./scss/swatches/!(_)*.scss",
         inline: "./dist/all.scss",
         dist: "./dist"
     }
