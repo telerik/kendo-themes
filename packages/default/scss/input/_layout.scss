@@ -74,6 +74,10 @@
                 padding: $textbox-icon-padding-y $textbox-icon-padding-x;
                 position: static;
             }
+
+            .k-clear-value {
+                cursor: pointer;
+            }
         }
 
         .k-button-clear {
