@@ -159,7 +159,24 @@
 
 
     // Toolbar
-    .k-gantt-toolbar {}
+    .k-gantt-toolbar {
+        // Gantt views
+        .k-gantt-views-wrapper {
+            margin-left: auto;
+
+            .k-views-dropdown {
+                width: auto;
+                font: inherit;
+                display: none;
+            }
+        }
+
+        // Responsive gantt toolbar
+        @media (max-width: 1024px) {
+            .k-gantt-views-wrapper .k-gantt-views { display: none; }
+            .k-gantt-views-wrapper .k-views-dropdown { display: inline-block; }
+        }
+    }
 
     .k-gantt-toggle {
         display: none;
