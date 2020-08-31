@@ -358,7 +358,8 @@
     .k-edit-field {
 
         > .k-widget,
-        > .k-textbox {
+        > .k-textbox,
+        > .k-textarea {
             width: 100%;
             box-sizing: border-box;
         }
@@ -435,10 +436,6 @@
     .k-maskedtextbox.form-control .k-textbox,
     .k-textbox.form-control {
         width: 100%;
-    }
-
-    .k-autocomplete.form-control .k-input {
-        box-sizing: border-box;
     }
 
     .k-multiselect.form-control {

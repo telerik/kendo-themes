@@ -336,8 +336,7 @@
             .k-edit-cell,
             .k-grid-edit-row > td {
                 >.k-textbox,
-                >.k-widget,
-                > .text-box {
+                >.k-widget {
                     margin-right: $edit-cell-input-space;
                 }
             }
@@ -901,8 +900,7 @@
     .k-edit-cell,
     .k-grid-edit-row > td {
         > .k-textbox,
-        > .k-widget:not(.k-switch),
-        > .text-box {
+        > .k-widget:not(.k-switch) {
             margin-left: $edit-cell-input-space;
         }
     }

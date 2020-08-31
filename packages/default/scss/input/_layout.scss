@@ -1,167 +1,12 @@
 @include exports( "input/layout" ) {
 
-    // Textbox
-    .k-textbox {
-        @include border-radius( $input-border-radius );
-        margin: 0;
-        border-width: $input-border-width;
-        border-style: solid;
-        outline: 0;
-        font-family: $input-font-family;
-        font-size: $input-font-size;
-        line-height: $input-line-height;
-        box-sizing: border-box;
-        // Targets https://github.com/telerik/kendo-react/issues/638.
-        box-shadow: none;
-        background: none;
-        display: inline-flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        vertical-align: middle;
-        position: relative;
-        -webkit-appearance: none;
-
-        // Hide clear icon
-        &::-ms-clear { display: none; }
-
-        // Placeholder text
-        &::placeholder {
-            color: $input-placeholder-text;
-            opacity: $input-placeholder-opacity;
-            user-select: none;
-        }
-
-        // TODO: change to .k-input
-        > input {
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            border: 0;
-            outline: 0;
-            box-sizing: border-box;
-            color: inherit;
-            background: none;
-            font: inherit;
-            display: inline-block;
-            flex: 1 1 auto;
-            -webkit-appearance: none;
-
-            // Hide clear icon
-            &::-ms-clear { display: none; }
-
-            // Placeholder text
-            &::placeholder {
-                color: $input-placeholder-text;
-                opacity: $input-placeholder-opacity;
-                user-select: none;
-            }
-        }
-
-        .k-input-prefix,
-        .k-input-suffix {
-            display: flex;
-            align-items: center;
-            flex-shrink: 0;
-            height: $button-inner-calc-size;
-
-            > * {
-                flex-shrink: 0;
-            }
-
-            .k-icon {
-                margin-top: 0;
-                margin-bottom: 0;
-                padding: $textbox-icon-padding-y $textbox-icon-padding-x;
-                box-sizing: content-box;
-                position: static;
-            }
-
-            .k-clear-value {
-                cursor: pointer;
-            }
-        }
-
-        .k-button-clear {
-            width: $button-inner-calc-size;
-            height: $button-inner-calc-size;
-            border: 0;
-        }
-
-        .k-input-prefix {
-            margin-left: -$input-padding-x;
-            margin-right: $input-padding-x;
-        }
-
-        .k-input-suffix {
-            margin-left: $input-padding-x;
-            margin-right: -$input-padding-x;
-        }
-
-        .k-textbox-separator {
-            margin: 0;
-            width: 0;
-            height: $icon-size;
-            border-width: 0 0 0 1px;
-            border-style: solid;
-        }
-
-        // Disabled state
-        &:disabled,
-        &[disabled],
-        &.k-state-disabled {
-            @include disabled( $disabled-styling );
-
-            // Disabled selection
-            &::selection {
-                @include fill (
-                    $color: $input-text,
-                    $bg: transparent
-                    // $bg: rgba( contrast-wcag( $input-bg ), .1 )
-                );
-            }
-        }
-
-        .k-rtl &,
-        &[dir="rtl"] {
-            .k-input-prefix {
-                margin-left: $input-padding-x;
-                margin-right: -$input-padding-x;
-            }
-
-            .k-input-suffix {
-                margin-left: -$input-padding-x;
-                margin-right: $input-padding-x;
-            }
-        }
-    }
-
-
-    // Textbox
-    .k-textbox {
-        @include use-background-clip();
-        padding: $input-padding-y $input-padding-x;
-        width: $input-default-width;
-        height: $input-calc-height;
-
-        // Nested input
-        > input {
-            height: 100%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .k-icon {
-            top: 50%;
-            margin: -8px 0 0;
-            position: absolute;
-        }
-    }
-
     // Generic input
     .k-input {
         margin: 0;
-        padding: 0;
+        padding: $input-padding-y $input-padding-x;
         width: 100%;
+        min-width: 0;
+        height: $input-inner-calc-height;
         border: 0;
         outline: 0;
         box-sizing: border-box;
@@ -170,13 +15,13 @@
         color: inherit;
         background: none;
         font: inherit;
-        flex: 1 1 auto;
-        display: inline-block;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        flex: 0 1 auto;
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-appearance: none;
-
-        // TODO Move styles for k-input in components
 
         // Hide clear icon
         &::-ms-clear { display: none; }
@@ -187,14 +32,26 @@
             opacity: $input-placeholder-opacity;
             user-select: none;
         }
+        &:-ms-input-placeholder {
+            color: $input-placeholder-text;
+        }
+
+        // Invalid
+        &:invalid {
+            box-shadow: none;
+        }
     }
 
 
+    // TODO: Deprecate
     // Input spacing
     .k-space-left {
         padding-left: 1.9em;
 
         .k-icon {
+            margin: -8px 0 0;
+            position: absolute;
+            top: 50%;
             left: 3px;
         }
     }
@@ -203,8 +60,73 @@
         padding-right: 1.9em;
 
         .k-icon {
+            margin: -8px 0 0;
+            position: absolute;
+            top: 50%;
             right: 3px;
         }
+    }
+
+
+    // Input prefix and suffix
+    .k-input-prefix,
+    .k-input-suffix {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        height: $button-inner-calc-size;
+
+        > * {
+            flex-shrink: 0;
+        }
+
+        .k-icon {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: $textbox-icon-padding-y $textbox-icon-padding-x;
+            box-sizing: content-box;
+            position: static;
+        }
+    }
+
+
+    // Textbox with icon styles
+    .k-input-icon {
+        width: $textbox-icon-width;
+        height: $textbox-icon-width;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .k-ie9 & {
+            position: absolute;
+            height: 100%;
+            right: 0;
+            top: 0;
+        }
+
+        .k-rtl &,
+        [dir="rtl"] & {
+            .k-ie9 & {
+                left: 0;
+                right: auto;
+            }
+        }
+    }
+
+
+    // TODO: remove
+    // Clear value
+    .k-clear-value {
+        cursor: pointer;
+    }
+
+
+    // Searchbar
+    .k-searchbar {
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: row nowrap;
     }
 
 
@@ -294,30 +216,7 @@
     }
 
 
-    // Textbox with icon styles
-
-    .k-input-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: $textbox-icon-width;
-
-        .k-ie9 & {
-            position: absolute;
-            height: 100%;
-            right: 0;
-            top: 0;
-        }
-
-        .k-rtl &,
-        [dir="rtl"] & {
-            .k-ie9 & {
-                left: 0;
-                right: auto;
-            }
-        }
-    }
-
+    // Fieldset
     .k-fieldset {
         margin: $fieldset-margin;
         border-width: 1px 0 0;
@@ -366,6 +265,7 @@
         margin-right: $horizontal-form-label-margin-x;
         z-index: 1;
 
+        &:dir(rtl),
         .k-rtl &,
         &.k-rtl,
         [dir="rtl"] &,
@@ -408,20 +308,4 @@
         animation-name: autoFillEnd;
     }
 
-}
-
-
-
-
-@include exports("input/layout/IE") {
-    // TODO: Remove once we drop IE support
-
-    .k-ie {
-        .k-textbox {
-            :-ms-input-placeholder,
-            &:-ms-input-placeholder {
-                color: $input-placeholder-text;
-            }
-        }
-    }
 }

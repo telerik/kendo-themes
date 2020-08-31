@@ -37,21 +37,9 @@
             cursor: text;
             outline: 0;
 
+            // Input
             .k-input {
-                padding: $input-padding-y $input-padding-x;
-                height: calc( #{$input-padding-y * 2} + #{$input-line-height * 1em} );
                 float: left;
-                box-sizing: border-box;
-                border: 0;
-                outline: 0;
-                color: inherit;
-                background: none;
-                font: inherit;
-                flex: 0 1 auto;
-                display: flex;
-                align-items: center;
-                overflow: hidden;
-                text-overflow: ellipsis;
             }
 
             // Height placeholder
@@ -148,12 +136,6 @@
             }
         }
 
-        // Searchbar
-        .k-searchbar {
-            flex: 1;
-            display: flex;
-            flex-direction: row;
-        }
 
         &.k-state-hover,
         &.k-state-focused {
