@@ -1,0 +1,80 @@
+@include exports("textbox/theme") {
+
+    // Textbox
+    .k-textbox {
+        @include fill(
+            $input-text,
+            $input-bg,
+            $input-border
+        );
+
+        // Selection
+        &::selection,
+        .k-input::selection {
+            @include fill (
+                $color: $input-selected-text,
+                $bg: $input-selected-bg
+            );
+        }
+
+        .k-input-prefix,
+        .k-input-suffix {
+            > .k-icon {
+                color: $textbox-icon-color;
+                opacity: $textbox-icon-opacity;
+            }
+
+            .k-clear-value {
+                color: $clear-button-text;
+                opacity: .5;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .k-textbox-separator {
+            border-color: $textbox-separator-color;
+            opacity: $textbox-separator-opacity;
+        }
+
+        // Focused
+        &:focus,
+        &:focus-within,
+        &.k-state-focus,
+        &.k-state-focused {
+            @include fill (
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
+            );
+            @include box-shadow( $input-focused-shadow );
+        }
+
+        // Hovered
+        &:hover,
+        &.k-state-hover {
+            @include fill(
+                $input-hovered-text,
+                $input-hovered-bg,
+                $input-hovered-border
+            );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.k-state-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            border-color: $invalid-border;
+
+            &:focus,
+            &:focus-within,
+            &.k-state-focus,
+            &.k-state-focused {
+                @include box-shadow($invalid-shadow);
+            }
+        }
+    }
+}

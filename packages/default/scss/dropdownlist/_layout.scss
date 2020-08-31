@@ -32,24 +32,12 @@
             cursor: pointer;
             outline: 0;
 
-            .k-input {
-                padding: $input-padding-y $input-padding-x;
-                width: 100%;
-                min-width: 0;
-                height: calc( #{$input-padding-y * 2} + #{$input-line-height * 1em} );
-                box-sizing: border-box;
-                border: 0;
-                outline: 0;
-                color: inherit;
-                background: none;
-                font: inherit;
-                flex: 1;
-                display: flex;
-                align-items: center;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
 
+            // Input
+            .k-input {}
+
+
+            // Select
             .k-select {
                 @include border-right-radius-only( $input-border-radius );
                 padding: $picker-select-padding-y $picker-select-padding-x;
@@ -65,6 +53,7 @@
                 cursor: pointer;
             }
 
+            // Clear value
             .k-clear-value {
                 height: ($input-line-height * $input-font-size);
                 line-height: ($input-line-height * $input-font-size);

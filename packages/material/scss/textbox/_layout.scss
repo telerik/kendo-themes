@@ -1,0 +1,14 @@
+@import "~@progress/kendo-theme-default/scss/textbox/_layout.scss";
+
+@include exports("textbox/layout/material") {
+
+    // Textbox
+    .k-textbox {
+        border-width: 0 0 $input-border-width;
+
+        &:disabled {
+            border-style: dashed;
+        }
+    }
+
+}

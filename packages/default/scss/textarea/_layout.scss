@@ -4,6 +4,7 @@
     .k-textarea {
         @include border-radius( $textarea-border-radius );
         margin: 0;
+        padding: 0;
         border-width: $textarea-border-width;
         border-style: solid;
         outline: 0;
@@ -20,6 +21,9 @@
         position: relative;
         -webkit-appearance: none;
 
+        // not to be overriden by `background: none`
+        @include use-background-clip();
+
         // Hide clear icon
         &::-ms-clear { display: none; }
 
@@ -29,30 +33,13 @@
             opacity: $input-placeholder-opacity;
             user-select: none;
         }
-
         > .k-input {
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            border: 0;
-            outline: 0;
-            box-sizing: border-box;
-            color: inherit;
-            background: none;
-            font: inherit;
-            display: inline-block;
-            flex: 1 1 auto;
-            -webkit-appearance: none;
-
-            // Hide clear icon
-            &::-ms-clear { display: none; }
-
-            // Placeholder text
-            &::placeholder {
-                color: $input-placeholder-text;
-                opacity: $input-placeholder-opacity;
-                user-select: none;
-            }
+            padding: $textarea-padding-y $textarea-padding-x;
+            width: $textarea-default-width;
+            height: auto;
+            min-height: $textarea-calc-height;
+            overflow-y: auto;
+            resize: both;
         }
 
         // Disabled state
@@ -74,24 +61,11 @@
 
     // Textarea old rendering
     textarea.k-textarea {
-        @include use-background-clip();
         padding: $textarea-padding-y $textarea-padding-x;
         width: $textarea-default-width;
         min-height: $textarea-calc-height;
         display: inline-block;
         resize: both;
-    }
-
-    // Textarea new rendering
-    .k-textarea {
-        > .k-input {
-            @include use-background-clip();
-            padding: $textarea-padding-y $textarea-padding-x;
-            width: $textarea-default-width;
-            min-height: $textarea-calc-height;
-            overflow-y: auto;
-            resize: both;
-        }
     }
 
     // Floating label

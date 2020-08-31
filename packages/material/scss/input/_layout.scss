@@ -2,21 +2,6 @@
 
 @include exports("input/layout/material") {
 
-    // Textbox
-    .k-textbox {
-
-        &:disabled {
-            border-style: dashed;
-        }
-    }
-    .k-textbox {
-        border-width: 0 0 $input-border-width;
-    }
-    .k-textarea {
-        @include border-radius( $border-radius );
-    }
-
-
     // Input ripple
     .k-textbox-container,
     .k-floating-label-container {

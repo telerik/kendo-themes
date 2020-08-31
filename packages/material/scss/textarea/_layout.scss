@@ -4,6 +4,7 @@
 
     // Textarea
     .k-textarea {
+        @include border-radius( $border-radius );
         border-width: 0 0 1px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;

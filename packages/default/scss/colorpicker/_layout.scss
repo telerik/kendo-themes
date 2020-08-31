@@ -89,49 +89,30 @@
             overflow: hidden;
             cursor: default;
             outline: 0;
-
-            .k-input {
-                padding: $input-padding-y $input-padding-x;
-                width: 100%;
-                height: calc( #{$input-padding-y * 2} + #{$input-line-height * 1em} );
-                box-sizing: border-box;
-                border: 0;
-                outline: 0;
-                color: inherit;
-                background: none;
-                font: inherit;
-                flex: 0 1 auto;
-                display: flex;
-                align-items: center;
-                overflow: hidden;
-                text-overflow: ellipsis;
-
-                .k-edge & {
-                    min-width: 0;
-                }
-            }
-
-            .k-select {
-                @include border-right-radius-only( $input-border-radius );
-                padding: $picker-select-padding-y $picker-select-padding-x;
-                border-width: 0;
-                border-style: solid;
-                border-color: inherit;
-                box-sizing: border-box;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex: 0 0 auto;
-                text-align: center;
-                cursor: pointer;
-
-                .k-icon {}
-            }
         }
+
+
+        // Input
+        .k-input {}
+
+
+        // Select
         .k-select {
-            padding: 0;
+            @include border-right-radius-only( $input-border-radius );
+            padding: $picker-select-padding-y $picker-select-padding-x;
             width: if($use-picker-select-width, $button-inner-calc-size, null);
             border-width: 0;
+            border-style: solid;
+            border-color: inherit;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            text-align: center;
+            cursor: pointer;
+
+            .k-icon {}
         }
 
         .k-rtl &,
@@ -331,11 +312,6 @@
             }
             .k-hex-value {
                 width: $colorpicker-hex-input-width;
-            }
-        }
-        .k-numerictextbox {
-            .k-input {
-                text-overflow: clip;
             }
         }
 

@@ -26,8 +26,9 @@
 
         .k-input {
             width: calc(100% - #{$k-select-width});
+            display: inline-block;
+            vertical-align: middle;
         }
-        .k-input,
         .k-select {
             display: inline-block;
             vertical-align: middle;

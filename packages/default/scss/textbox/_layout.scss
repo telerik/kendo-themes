@@ -1,0 +1,81 @@
+@include exports( "textbox/layout" ) {
+
+    // Textbox
+    .k-textbox {
+        @include border-radius( $input-border-radius );
+        margin: 0;
+        padding: 0;
+        width: $input-default-width;
+        height: $input-calc-height;
+        border-width: $input-border-width;
+        border-style: solid;
+        outline: 0;
+        font-family: $input-font-family;
+        font-size: $input-font-size;
+        line-height: $input-line-height;
+        box-sizing: border-box;
+        // Targets https://github.com/telerik/kendo-react/issues/638.
+        box-shadow: none;
+        background: none;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        vertical-align: middle;
+        position: relative;
+        -webkit-appearance: none;
+
+        // not to be overriden by `background: none`
+        @include use-background-clip();
+
+        // Hide clear icon
+        &::-ms-clear { display: none; }
+
+        // Placeholder text
+        &::placeholder {
+            color: $input-placeholder-text;
+            opacity: $input-placeholder-opacity;
+            user-select: none;
+        }
+        &:-ms-input-placeholder {
+            color: $input-placeholder-text;
+        }
+
+        .k-input {}
+
+        .k-button-clear {
+            width: $button-inner-calc-size;
+            height: $button-inner-calc-size;
+            border: 0;
+        }
+
+        .k-textbox-separator {
+            margin: 0;
+            width: 0;
+            height: $icon-size;
+            border-width: 0 0 0 1px;
+            border-style: solid;
+        }
+
+        // Disabled state
+        &:disabled,
+        &[disabled],
+        &.k-state-disabled {
+            @include disabled( $disabled-styling );
+
+            // Disabled selection
+            &::selection {
+                @include fill (
+                    $color: $input-text,
+                    $bg: transparent
+                );
+            }
+        }
+    }
+
+
+    // Textbox
+    input.k-textbox {
+        padding: $input-padding-y $input-padding-x;
+    }
+
+}
