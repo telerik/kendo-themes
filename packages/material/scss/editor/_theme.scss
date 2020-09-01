@@ -56,4 +56,33 @@
             @include fill( $selected-text, $selected-bg, $selected-border, none );
         }
     }
+
+    // Content
+    .k-editor-content {
+
+        // Selection
+        .k-text-selected,
+        &::selection {
+            @include fill (
+                $color: $editor-selected-text,
+                $bg: $editor-selected-bg
+            );
+        }
+
+        .k-text-highlighted {
+            @include fill (
+                $bg: $editor-highlighted-bg
+            );
+        }
+    }
+
+    // Find and replace dialog
+    .k-editor-find-replace {
+        .k-matches-container {
+            @include fill (
+                $bg: $editor-find-line-bg
+            );
+        }
+
+    }
 }
