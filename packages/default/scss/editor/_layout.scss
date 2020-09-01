@@ -238,10 +238,48 @@
             border-width: 0;
         }
     }
+
+    // Find and replace dialog
+    .k-editor-find-replace {
+        .k-content {
+            position: relative;
+        }
+
+        .k-edit-form-container {
+            display: inline-block;
+
+            .k-edit-label {
+                text-align: left;
+            }
+        }
+
+        .k-action-buttons {
+            padding: 0;
+        }
+
+        .k-search-options {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0 40px 0;
+
+            > span {
+                padding-bottom: $padding-y;
+            }
+        }
+
+        .k-matches-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
 }
-
-
-
 
 @include exports( "editor/dialog/layout" ) {
 
