@@ -1,0 +1,44 @@
+@include exports("imageeditor/theme") {
+
+    // Image Editor
+    .k-imageeditor {
+        @include fill(
+            $imageeditor-text,
+            $imageeditor-bg,
+            $imageeditor-border
+        );
+    }
+
+    // Content
+    .k-imageeditor-content {
+        @include fill(
+            $imageeditor-content-text,
+            $imageeditor-content-bg,
+            $imageeditor-content-border
+        );
+    }
+
+    // Canvas
+    .k-imageeditor-canvas {
+        @include checkerboard-gradient();
+    }
+
+    // Action Pane
+    .k-imageeditor-action-pane {
+        @include fill(
+            $imageeditor-action-pane-text,
+            $imageeditor-action-pane-bg,
+            $imageeditor-action-pane-border
+        );
+    }
+
+    // Crop Tool
+    .k-imageeditor-crop {
+        @include fill(
+            $imageeditor-crop-text,
+            $imageeditor-crop-bg,
+            $imageeditor-crop-border
+        );
+    }
+
+}
