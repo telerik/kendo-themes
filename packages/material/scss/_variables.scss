@@ -2774,7 +2774,7 @@ $grid-sticky-header-bg: $grid-sticky-bg !default;
 $grid-sticky-header-text: $grid-header-text !default;
 $grid-sticky-header-border: $grid-sticky-border !default;
 
-$grid-sticky-footer-bg: $grid-header-bg !default;
+$grid-sticky-footer-bg: $grid-sticky-header-bg !default;
 $grid-sticky-footer-hovered-bg: $grid-sticky-footer-bg !default;
 
 $grid-sticky-selected-bg: shade($grid-bg, 4%) !default;
