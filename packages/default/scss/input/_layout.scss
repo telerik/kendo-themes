@@ -72,6 +72,7 @@
                 margin-top: 0;
                 margin-bottom: 0;
                 padding: $textbox-icon-padding-y $textbox-icon-padding-x;
+                box-sizing: content-box;
                 position: static;
             }
 
