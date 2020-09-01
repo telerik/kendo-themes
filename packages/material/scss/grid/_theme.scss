@@ -41,6 +41,15 @@
                 }
             }
 
+            td.k-state-focused,
+            th.k-state-focused {
+                &.k-grid-header-sticky,
+                &.k-grid-content-sticky,
+                &.k-grid-footer-sticky {
+                    background-color: $grid-sticky-hovered-bg;
+                }
+            }
+
         }
 
         th,

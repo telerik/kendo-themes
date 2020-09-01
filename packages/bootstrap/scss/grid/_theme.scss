@@ -208,6 +208,17 @@
         }
     }
 
+    .k-grouping-row {
+        .k-grid-content-sticky {
+            @include fill( $bg: $grid-sticky-header-bg );
+        }
+
+        &:hover .k-grid-content-sticky,
+        &.k-state-hover .k-grid-content-sticky {
+            @include fill( $bg: $grid-sticky-hovered-bg );
+        }
+    }
+
     .k-group-footer {
         td,
         .k-grid-footer-sticky {
