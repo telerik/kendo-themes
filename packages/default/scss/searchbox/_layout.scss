@@ -1,0 +1,24 @@
+@include exports("searchbox/layout") {
+
+    // Searchbox
+    .k-searchbox {
+        @include use-background-clip();
+        @include border-radius( $searchbox-border-radius );
+        border-width: 1px;
+        border-style: solid;
+        font-family: $searchbox-font-family;
+        font-size: $searchbox-font-size;
+        line-height: $searchbox-line-height;
+        display: inline-flex;
+        align-items: center;
+        vertical-align: middle;
+        flex-flow: row nowrap;
+        position: relative;
+        overflow: hidden;
+
+        > .k-input {
+            padding: $searchbox-padding-y $searchbox-padding-x;
+        }
+    }
+
+}
