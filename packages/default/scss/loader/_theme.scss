@@ -1,0 +1,17 @@
+@include exports( "loader/theme" ) {
+
+    @each $name, $color in $theme-colors {
+        .k-loader-#{$name} {
+            .k-loader-segment {
+                &::after {
+                    @if $name == "secondary" {
+                        background-color: $loader-secondary-bg;
+                    } @else {
+                        background-color: $color;
+                    }
+                }
+            }
+        }
+    }
+
+}
