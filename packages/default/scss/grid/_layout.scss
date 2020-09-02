@@ -381,6 +381,10 @@
 
         .k-dirty-cell {
             position: relative;
+
+            &.k-grid-content-sticky {
+                position: sticky;
+            }
         }
 
         .k-dirty {
