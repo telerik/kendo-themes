@@ -34,9 +34,8 @@ $input-inner-calc-height-sm: calc( #{$input-line-height-sm * 1em} + #{$input-pad
 $input-inner-calc-height-lg: calc( #{$input-line-height-lg * 1em} + #{$input-padding-y-lg * 2} ) !default;
 
 $input-icon-offset: 6.5px !default;
-$input-icon-width: calc( #{$icon-size} + #{$input-padding-x * 2} ) !default;
-$input-icon-padding-x: 6px !default;
-$input-icon-padding-y: $input-icon-padding-x !default;
+$input-icon-width: calc( #{$icon-size} + #{$input-padding-y * 2} ) !default;
+$input-icon-height: calc( #{$input-line-height * $input-font-size} + #{$input-padding-y * 2} ) !default;
 
 $input-bg: $input-bg !default;
 $input-text: $input-color !default;

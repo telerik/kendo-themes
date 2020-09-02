@@ -1,0 +1,9 @@
+@import "~@progress/kendo-theme-default/scss/searchbox/_layout.scss";
+
+@include exports( "searchbox/layout/material" ) {
+
+    .k-searchbox {
+        border-width: 0 0 $input-border-width;
+    }
+
+}

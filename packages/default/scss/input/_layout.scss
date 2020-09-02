@@ -48,7 +48,7 @@
     .k-space-left {
         padding-left: 1.9em;
 
-        .k-icon {
+        > .k-icon {
             margin: -8px 0 0;
             position: absolute;
             top: 50%;
@@ -59,7 +59,7 @@
     .k-space-right {
         padding-right: 1.9em;
 
-        .k-icon {
+        > .k-icon {
             margin: -8px 0 0;
             position: absolute;
             top: 50%;
@@ -80,12 +80,12 @@
             flex-shrink: 0;
         }
 
-        .k-icon {
-            margin-top: 0;
-            margin-bottom: 0;
-            padding: $input-icon-padding-y $input-icon-padding-x;
-            box-sizing: content-box;
-            position: static;
+        > .k-icon {
+            width: $button-inner-calc-size;
+            height: $button-inner-calc-size;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -93,10 +93,11 @@
     // Input with icon styles
     .k-input-icon {
         width: $input-icon-width;
-        height: $input-icon-width;
-        display: flex;
+        height: $input-icon-height;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
+        flex-shrink: 0;
 
         .k-ie9 & {
             position: absolute;
