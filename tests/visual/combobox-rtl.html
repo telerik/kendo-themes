@@ -27,11 +27,12 @@
             <span>Combobox</span>
             <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" placeholder="Combo..." /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
             <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Normal" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
-            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-hover"><input class="k-input" type="text" value="Hover" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-hover"><input class="k-input" type="text" value="Hover" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
             <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-active k-state-border-down"><input class="k-input" type="text" value="Open" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
-            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-focused"><input class="k-input" type="text" value="Focused" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-focused"><input class="k-input" type="text" value="Focused" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
             <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-disabled"><input class="k-input" type="text" value="Disabled" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
             <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-invalid"><input class="k-input" type="text" value="Invalid" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-invalid k-state-focused"><input class="k-input" type="text" value="Invalid+Focused" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
             <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Loading" /><span class="k-select"><span class="k-icon k-i-arrow-60-down k-i-loading"></span></span></span></span>
             <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Clear" /><span class="k-icon k-clear-value k-i-close" style="display: block"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
         </section>
@@ -114,6 +115,18 @@
                 <span class="k-dropdown-wrap">
                     <span class="k-searchbar">
                         <input value="NG Invalid" class="k-input" dir="rtl">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                    <span class="k-select">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </span>
+            </span>
+
+            <span class="k-widget k-combobox k-header k-combobox-clearable ng-invalid ng-touched" dir="rtl">
+                <span class="k-dropdown-wrap k-state-focused">
+                    <span class="k-searchbar">
+                        <input value="NG Invalid+Focused" class="k-input" dir="ltr">
                     </span>
                     <span class="k-icon k-clear-value k-i-close"></span>
                     <span class="k-select">

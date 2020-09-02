@@ -475,6 +475,37 @@ $badge-size-lg: if( $use-calc-badge-size, $badge-calc-size-lg, $badge-fixed-size
 $badge-dot-size-lg: 12px;
 
 
+// Loader
+$loader-segment-border-radius: 50% !default;
+$loader-segment-size-sm: 6px !default;
+$loader-segment-size-md: 10px !default;
+$loader-segment-size-lg: 20px !default;
+
+$loader-padding-sm: $loader-segment-size-sm / 2 !default;
+$loader-padding-md: $loader-segment-size-md / 2 !default;
+$loader-padding-lg: $loader-segment-size-lg / 2 !default;
+
+$loader-pulsing-2-segment-margin-x-sm: 1.5px !default;
+$loader-pulsing-2-segment-margin-x-md: 2.5px !default;
+$loader-pulsing-2-segment-margin-x-lg: 5px !default;
+
+$loader-spinner-3-width-sm: $loader-segment-size-sm * 4 !default;
+$loader-spinner-3-height-sm: 20px !default;
+$loader-spinner-3-width-md: $loader-segment-size-md * 4 !default;
+$loader-spinner-3-height-md: 34px !default;
+$loader-spinner-3-width-lg: $loader-segment-size-lg * 4 !default;
+$loader-spinner-3-height-lg: 65px !default;
+
+$loader-spinner-4-width-sm: $loader-segment-size-sm * 4 !default;
+$loader-spinner-4-height-sm: $loader-spinner-4-width-sm !default;
+$loader-spinner-4-width-md: $loader-segment-size-md * 4 !default;
+$loader-spinner-4-height-md: $loader-spinner-4-width-md !default;
+$loader-spinner-4-width-lg: $loader-segment-size-lg * 4 !default;
+$loader-spinner-4-height-lg: $loader-spinner-4-width-lg !default;
+
+$loader-secondary-bg: #656565 !default;
+
+
 // Chip
 $chips-margin: 8px !default;
 
@@ -760,10 +791,10 @@ $button-border-width: 1px !default;
 $button-border-radius: $border-radius !default;
 
 /// Horizontal padding of buttons
-/// @group tabstrip
+/// @group buttons
 $button-padding-x: $padding-x !default;
 /// Vertical padding of buttons
-/// @group tabstrip
+/// @group buttons
 $button-padding-y: $padding-y !default;
 $button-font-family: $font-family !default;
 $button-font-size: $font-size !default;
@@ -930,11 +961,12 @@ $textbox-icon-width: calc( #{$icon-size} + #{$input-padding-x * 2} ) !default;
 $textbox-icon-padding-x: 6px !default;
 $textbox-icon-padding-y: $textbox-icon-padding-x !default;
 
-$textbox-icon-color: #2d2db2 !default;
-$textbox-icon-opacity: .35 !default;
+$textbox-icon-color: $input-text !default;
+$textbox-icon-opacity: .75 !default;
 
 $textbox-separator-color: $clear-button-text !default;
 $textbox-separator-opacity: .5 !default;
+
 
 // Textarea
 $textarea-default-width: 18em !default;
@@ -1898,6 +1930,7 @@ $upload-error-border: lighten($error, 29%) !default;
 
 $upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
+
 // Upload external DropZone
 $external-dropzone-padding-x: $upload-dropzone-padding-x !default;
 $external-dropzone-padding-y: $upload-dropzone-padding-y * 6 !default;
@@ -1908,6 +1941,7 @@ $external-dropzone-text: $upload-dropzone-text !default;
 $external-dropzone-border: $upload-dropzone-border !default;
 
 $external-dropzone-icon-opacity: .6 !default;
+
 
 // Window
 $window-border-width: 0px !default;
@@ -2329,7 +2363,8 @@ $stepper-content-transition-property: height !default;
 $stepper-content-transition-duration: 300ms !default;
 $stepper-content-transition-timing-function: cubic-bezier(.4, 0, .2, 1) 0ms;
 
-//Wizard
+
+// Wizard
 $wizard-padding-x: $padding-x * 2.5 !default;
 $wizard-padding-y: $wizard-padding-x !default;
 $wizard-content-padding-x: $padding-x * 4 !default;
@@ -2342,6 +2377,7 @@ $wizard-line-height: $line-height !default;
 $wizard-font-family: $font-family !default;
 
 $wizard-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
+
 
 // Tabstrip
 $tabstrip-wrapper-padding-x: 0px !default;
@@ -2770,6 +2806,7 @@ $pivotgrid-remove-bg: null !default;
 $pivotgrid-remove-text: null !default;
 
 $pivotgrid-configurator-text: $component-text !default;
+
 
 // Listview
 $listview-padding-x: map-get( $spacing, 1 ) !default;
@@ -3415,8 +3452,10 @@ $adaptive-bg: $component-bg !default;
 $adaptive-text: $component-text !default;
 $adaptive-border: $component-border !default;
 
+
 // Adaptive Grid
 $adaptive-grid-sort-text: $primary !default;
+
 
 // Adaptive Scheduler
 $adaptive-scheduler-current-text: $primary !default;

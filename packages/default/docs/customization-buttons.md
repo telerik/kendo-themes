@@ -73,6 +73,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$button-padding-x</td>
+    <td></td>
+    <td>$padding-x</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of buttons</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-padding-y</td>
+    <td></td>
+    <td>$padding-y</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of buttons</div></div>
+    </td>
+</tr>
+<tr>
     <td>$button-text</td>
     <td></td>
     <td>$base-text</td>
