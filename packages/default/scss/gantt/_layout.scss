@@ -159,24 +159,7 @@
 
 
     // Toolbar
-    .k-gantt-toolbar {
-        // Gantt views
-        .k-gantt-views-wrapper {
-            margin-left: auto;
-
-            .k-views-dropdown {
-                width: auto;
-                font: inherit;
-                display: none;
-            }
-        }
-
-        // Responsive gantt toolbar
-        @media (max-width: 1024px) {
-            .k-gantt-views-wrapper .k-gantt-views { display: none; }
-            .k-gantt-views-wrapper .k-views-dropdown { display: inline-block; }
-        }
-    }
+    .k-gantt-toolbar {}
 
     .k-gantt-toggle {
         display: none;
@@ -185,7 +168,23 @@
     .k-gantt-create {}
     .k-gantt-views {}
 
-    @media only screen and (max-width: 480px) {
+
+    // Gantt views
+    .k-gantt-views-wrapper {
+        margin-left: auto;
+
+        .k-views-dropdown {
+            width: auto;
+            font-size: inherit;
+            display: none;
+            cursor: pointer;
+        }
+    }
+
+
+    // Responsive gantt toolbar
+    @media (max-width: 480px) {
+
         .k-gantt-toolbar {
             .k-gantt-toggle {
                 display: inline-flex;
@@ -204,30 +203,12 @@
                 }
             }
         }
-    }
 
-
-    // View switcher
-    .k-gantt-views {
-
-        select.k-dropdown {
-            width: auto;
-            font-size: inherit;
-            display: none;
-            cursor: pointer;
-        }
     }
 
     @media (max-width: 1024px) {
-        .k-gantt-views {
-
-            select.k-dropdown {
-                display: flex;
-            }
-            .k-button-group {
-                display: none;
-            }
-        }
+        .k-gantt-views-wrapper .k-gantt-views { display: none; }
+        .k-gantt-views-wrapper .k-views-dropdown { display: flex; }
     }
 
 
