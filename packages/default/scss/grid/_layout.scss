@@ -1057,6 +1057,11 @@
     .k-grid-footer-sticky {
         position: sticky;
         z-index: 2;
+
+        &.k-edit-cell {
+            overflow: visible;
+            z-index: 3;
+        }
     }
 
     .k-grid .k-grid-header-sticky,
