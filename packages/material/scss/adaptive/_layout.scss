@@ -1,1 +1,12 @@
 @import "~@progress/kendo-theme-default/scss/adaptive/_layout.scss";
+
+@include exports("adaptive/layout/material") {
+
+    .k-scheduler-mobile {
+        .k-scheduler-toolbar .k-scheduler-mobile-views {
+            margin-top: -1px;
+            margin-bottom: -1px;
+        }
+    }
+
+}

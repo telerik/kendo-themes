@@ -3,6 +3,11 @@
 @include exports("scheduler/layout/material") {
 
 
+    .k-scheduler-footer {
+        border-top-width: 1px;
+    }
+
+
     // Header and footer
     kendo-scheduler .k-scheduler-toolbar,
     kendo-scheduler .k-scheduler-footer {
