@@ -1,14 +1,10 @@
-$flat-button-hover-opacity: .12 !default;
-$flat-button-focused-opacity: .12 !default;
-$flat-button-active-opacity: .16 !default;
-$flat-button-selected-opacity: .16 !default;
 $outline-button-border-width: 2px !default;
-$split-button-arrow-border-width: 1px;
 
 @import "~@progress/kendo-theme-default/scss/button/_layout.scss";
 
 @include exports("button/layout/material") {
 
+    // Button
     .k-button {
         text-transform: uppercase;
         font-weight: 500;
@@ -27,11 +23,30 @@ $split-button-arrow-border-width: 1px;
     }
 
 
+    // Button group
+    .k-button-group {}
+    .k-button-group.k-state-disabled {
+        opacity: 1;
+    }
+
+
+    // Split button
+    .k-split-button {}
+    .k-split-button-expanded,
+    .k-split-button.k-state-border-up,
+    .k-split-button.k-state-border-down {
+        .k-i-arrow-60-down {
+            transform: rotate(180deg);
+        }
+    }
+
+
     // Outline button
+    .k-button-outline,
     .k-button.k-outline {
         border: $outline-button-border-width solid currentColor;
 
-        &:not(.k-button-icon) {
+        &:not(.k-button-icon):not(.k-icon-button) {
             padding-top: calc( #{$button-padding-y} - #{$outline-button-border-width} );
             padding-bottom: calc( #{$button-padding-y} - #{$outline-button-border-width} );
             padding-left: calc( #{$button-padding-x} - #{$outline-button-border-width} );

@@ -1,52 +1,42 @@
-@include exports("button/theme") {
-
-    $not-button-selector: ":not(.k-flat):not(.k-bare):not(.k-outline):not(.k-overflow-button)";
+@include exports( "button/theme/material" ) {
 
     // Default button
-    .k-button {
+    .k-button,
+    .k-button-secondary {
         @include fill(
             $button-text,
             $button-bg,
             $button-border,
             $button-gradient
         );
-        box-shadow: $button-shadow;
+        @include box-shadow( $button-shadow );
 
         &:hover,
         &.k-state-hover {
-            box-shadow: $button-hovered-shadow;
+            @include box-shadow( $button-hovered-shadow );
         }
 
         &:active,
         &.k-state-active {
-            box-shadow: $button-pressed-shadow;
+            @include box-shadow( $button-pressed-shadow );
         }
 
+        &:disabled,
         &.k-state-disabled {
-
-            &,
-            &:hover,
-            &:focus,
-            &.k-state-focused {
-                color: $button-disabled-text;
-                opacity: 1;
-            }
+            @include fill(
+                $button-disabled-text,
+                $button-disabled-bg
+            );
+            @include box-shadow( none );
+            opacity: 1;
         }
 
-    }
-
-    .k-button#{$not-button-selector}.k-state-disabled {
-        background-color: $button-disabled-bg;
-        box-shadow: none !important; // sass-lint:disable-line no-important
-
-        .k-split-button & {
-            background: transparent;
-        }
     }
 
 
     // Primary button
-    .k-button.k-primary:not(.k-outline) {
+    .k-button-primary,
+    .k-button.k-primary {
         @include fill(
             $primary-button-text,
             $primary-button-bg,
@@ -54,53 +44,94 @@
             $primary-button-gradient
         );
 
+        &:disabled,
         &.k-state-disabled {
-            color: $button-disabled-text;
+            @include fill(
+                $button-disabled-text,
+                $button-disabled-bg
+            );
+            @include box-shadow( none );
+            opacity: 1;
         }
     }
 
 
-    // Variant buttons
+    // Flat button
+    .k-button-flat-primary,
     .k-button-flat.k-primary,
-    .k-button.k-outline.k-primary {
+    .k-button.k-flat.k-primary {
+        color: $primary-button-bg;
 
-        &,
-        &:hover,
-        &.k-state-hover {
-            color: $primary-button-bg;
-        }
-
+        &:disabled,
         &.k-state-disabled {
             color: $button-disabled-text;
         }
     }
 
-    // Outline buttons
-    .k-button.k-outline.k-state-active,
-    .k-button.k-outline:active {
-        box-shadow: none;
+
+    // Outline button
+    .k-button-outline,
+    .k-button.k-outline {
+        @include box-shadow( none );
+        background-color: transparent;
+
+        &:disabled,
+        &.k-state-disabled {
+            color: $button-disabled-text;
+        }
     }
+    .k-button-outline-primary,
+    .k-button-outline.k-primary,
+    .k-button.k-outline.k-primary {
+        border-color: currentColor;
+        color: $primary-button-bg;
+        background-color: transparent;
+
+        &:disabled,
+        &.k-state-disabled {
+            color: $button-disabled-text;
+        }
+    }
+
 
     // Button group
     .k-button-group {
-        box-shadow: $button-shadow;
+        @include box-shadow( $button-shadow );
 
         .k-button {
-            box-shadow: none;
+            @include box-shadow( none );
+        }
+
+        &:disabled,
+        &.k-state-disabled {
+            @include box-shadow( none );
+            opacity: 1;
         }
     }
-    .k-button-group.k-toggled {
-        box-shadow: $button-shadow;
-    }
-    .k-button-group.k-state-disabled {
-        box-shadow: none;
-        opacity: 1;
+
+
+    // Split button
+    .k-split-button {
+        @include box-shadow( $button-shadow );
 
         .k-button {
-            color: $button-disabled-text;
+            @include box-shadow( none );
         }
-        .k-button#{$not-button-selector} {
-            background-color: $button-disabled-bg;
+
+        > .k-button:last-child .k-icon,
+        > .k-split-button-arrow .k-icon {
+            opacity: $icon-opacity;
+        }
+
+        > .k-button:last-child:hover .k-icon,
+        > .k-split-button-arrow:hover .k-icon {
+            opacity: $icon-hovered-opacity;
+        }
+
+        &:disabled,
+        &.k-state-disabled {
+            @include box-shadow( none );
+            opacity: 1;
         }
     }
 
@@ -109,7 +140,7 @@
     .k-button-group-flat,
     .k-button-group-bare,
     .k-button-group-outline {
-        box-shadow: none;
+        @include box-shadow( none );
     }
 
 }
