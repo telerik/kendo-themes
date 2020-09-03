@@ -251,10 +251,11 @@
                 border-left-width: $grid-cell-vertical-border-width;
             }
 
-            .k-grid-header-sticky + td,
-            .k-grid-header-sticky + th,
-            .k-grid-content-sticky + td,
-            .k-grid-content-sticky + th {
+            .k-grid-header-sticky:not([style*="display: none"]) + td,
+            .k-grid-header-sticky:not([style*="display: none"]) + th,
+            .k-grid-content-sticky:not([style*="display: none"]) + td,
+            .k-grid-content-sticky:not([style*="display: none"]) + th {
+                border-left-width: $grid-cell-vertical-border-width;
                 border-right-width: 0;
             }
 
@@ -1060,6 +1061,11 @@
     .k-grid-footer-sticky {
         position: sticky;
         z-index: 2;
+
+        &.k-edit-cell {
+            overflow: visible;
+            z-index: 3;
+        }
     }
 
     .k-grid .k-grid-header-sticky,
@@ -1067,8 +1073,8 @@
     .k-grid .k-grid-footer-sticky {
         border-right-width: $grid-cell-vertical-border-width;
 
-        + td,
-        + th {
+        &:not([style*="display: none"]) + td,
+        &:not([style*="display: none"]) + th {
             border-left-width: 0;
         }
     }

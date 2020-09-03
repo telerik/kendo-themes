@@ -34,6 +34,9 @@
             height: calc( #{$line-height-em} + #{$grid-cell-padding-y * 2} + #{$grid-cell-horizontal-border-width} );
         }
 
+        &.k-gantt-planned .k-grid-content tr {
+            height: calc( #{$line-height-em * 1.7} + #{$grid-cell-padding-y * 2} + #{$grid-cell-horizontal-border-width} );
+        }
 
         // Layout
         .k-gantt-layout {
@@ -479,6 +482,91 @@
         }
     }
 
+    // Planned metrics
+
+    .k-gantt-planned {
+        .k-gantt-dependencies,
+        .k-task-dot,
+        .k-resources-wrap {
+            margin-top: $gantt-planned-dependency-margin-y;
+        }
+
+        .k-task-wrap {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .k-task-offset-wrap {
+            display: inline-flex;
+        }
+    }
+
+    // Planned element
+
+    .k-task-planned {
+        margin: 0 0 $gantt-planned-margin-y;
+        line-height: $gantt-planned-line-height;
+        display: flex;
+        align-items: center;
+
+        .k-task-moment {
+            border-width: $gantt-planned-border-width;
+            border-radius: $gantt-planned-moment-border-radius;
+            border-style: solid;
+            height: $gantt-planned-moment-height;
+            width: $gantt-planned-moment-width;
+        }
+
+        .k-task-duration {
+            height: $gantt-planned-duration-height;
+        }
+
+        .k-task-moment.k-moment-left {
+            margin-left: $gantt-planned-moment-left-margin-x;
+        }
+
+        &:hover .k-task-duration {
+            height: $gantt-planned-duration-hover-height;
+        }
+    }
+
+    .k-milestone-wrap {
+        .k-task-moment {
+            margin-left: $gantt-planned-milestone-moment-margin-x;
+        }
+    }
+
+    // Planned Tooltip
+
+    .k-planned-tooltip {
+        .k-task-content {
+            display: block;
+        }
+    }
+
+    // Delay offset
+    .k-task-offset {
+        flex-direction: row-reverse;
+        display: flex;
+
+        .k-resize-e {
+            top: auto;
+            right: auto;
+            width: .3em;
+            height: 1.5em;
+        }
+
+        .k-resize-e::before {
+            border-left-width: 1px;
+            height: 1.5em;
+            visibility: hidden;
+        }
+    }
+
+    .k-task-single:hover + .k-task-offset .k-task-actions,
+    .k-task-offset:hover .k-task-actions {
+        visibility: visible;
+    }
 }
 
 @include exports("gantt/export") {
