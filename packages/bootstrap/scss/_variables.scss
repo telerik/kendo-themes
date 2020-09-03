@@ -3330,8 +3330,8 @@ $imageeditor-font-family: $font-family !default;
 
 $imageeditor-content-border-width: 1px !default;
 
-$imageeditor-action-pane-padding-y: $padding-x !default;
-$imageeditor-action-pane-padding-x: $padding-x !default;
+$imageeditor-action-pane-padding-y: map-get( $spacing, 8 ) !default;
+$imageeditor-action-pane-padding-x: map-get( $spacing, 4 ) !default;
 
 $imageeditor-crop-border-width: 1px !default;
 $imageeditor-crop-border-style: dashed !default;
