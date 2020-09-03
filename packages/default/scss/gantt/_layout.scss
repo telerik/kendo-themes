@@ -80,9 +80,8 @@
                     white-space: nowrap;
                 }
             }
-            .k-master-row:hover .k-task-dot {
-                display: block;
-            }
+
+            // Task
             .k-task {
                 display: inline-flex;
                 flex-flow: row nowrap;
@@ -98,7 +97,19 @@
                     visibility: visible;
                 }
             }
+            .k-task-content {
+                padding: $gantt-task-padding-y $gantt-task-padding-x;
+                display: block;
+                line-height: normal;
+                flex: 1 1 auto;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .k-task-actions {
+                flex-shrink: 0;
+            }
 
+            // Milestone
             .k-task-milestone {
                 border: 0;
                 transform: none;
@@ -113,30 +124,28 @@
                 }
             }
 
+            // Summary
+            .k-task-summary {
+                height: 15px;
+                clip-path: polygon(-20px 0, calc(100% + 20px) 0, calc(100% + 20px) 100%, 100% 100%, calc(100% - 8px) calc(100% - 5px), 8px calc(100% - 5px), 0 100%, -20px 100%);
+            }
             .k-task-summary-complete {
                 width: 100%;
+                height: 15px;
             }
 
+            // Dots
             .k-task-start {
                 transform: translateX(-140%) translateY(-50%);
             }
             .k-task-end {
                 transform: translateX(140%) translateY(-50%);
             }
-
-            .k-task-content {
-                padding: $gantt-task-padding-y $gantt-task-padding-x;
+            .k-master-row:hover .k-task-dot {
                 display: block;
-                line-height: normal;
-                flex: 1 1 auto;
-                overflow: hidden;
-                text-overflow: ellipsis;
             }
 
-            .k-task-actions {
-                flex-shrink: 0;
-            }
-
+            // Dependency lines SVG
             .k-gantt-dependencies-svg {
                 position: absolute;
                 overflow: visible;
@@ -148,6 +157,7 @@
                 }
             }
 
+            // Table with columns borders
             .k-gantt-columns {
                 background: transparent;
                 pointer-events: none;
