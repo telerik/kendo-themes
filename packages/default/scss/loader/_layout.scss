@@ -5,6 +5,10 @@
         display: inline-block;
         vertical-align: middle;
         box-sizing: border-box;
+
+        // Prevents the inline elements from being displaced.
+        // A good example is the 'pulsing' loader inside a button.
+        line-height: 0;
     }
 
     .k-loader-canvas {
