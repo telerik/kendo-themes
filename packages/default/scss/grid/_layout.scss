@@ -361,7 +361,7 @@
             .k-grid-toolbar {
 
                 .k-button + .k-button {
-                    margin: 0 $grid-toolbar-button-spacing 0 0;
+                    margin: 0 $grid-toolbar-spacing 0 0;
                 }
             }
 
@@ -432,7 +432,7 @@
             vertical-align: middle;
         }
         > * + * {
-            margin-left: $grid-toolbar-button-spacing;
+            margin-left: $grid-toolbar-spacing;
         }
 
     }
@@ -949,7 +949,6 @@
 
     // Pager
     .k-grid-pager {
-        padding: $grid-cell-padding-y;
         border-width: 1px 0 0;
         border-color: inherit;
         font-size: inherit;
