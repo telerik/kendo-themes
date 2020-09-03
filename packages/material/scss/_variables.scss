@@ -909,7 +909,7 @@ $button-focused-shadow: null !default;
 
 
 // Disabled button
-$button-disabled-bg: rgba(0, 0, 0, .12) !default;
+$button-disabled-bg: mix( black, white, 12 ) !default;
 $button-disabled-text: rgba(0, 0, 0, .38) !default;
 
 

@@ -5,7 +5,8 @@
     .k-toolbar {
 
         .k-button,
-        .k-button-group {
+        .k-button-group,
+        .k-split-button {
             box-shadow: none;
         }
 
@@ -30,16 +31,6 @@
 
             .k-button {
                 background: transparent;
-            }
-
-
-            .k-split-button-arrow {
-                border-left-width: $split-button-arrow-border-width;
-                border-color: transparent;
-
-                &::before {
-                    left: -$split-button-arrow-border-width;
-                }
             }
 
             // Expanded state
