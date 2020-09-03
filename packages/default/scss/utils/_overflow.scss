@@ -1,0 +1,22 @@
+@include exports( "utils/overflow" ) {
+
+    @each $force, $attribute in $utils-classes-force {
+
+        @each $overflow in $utils-overflows {
+
+            @each $axis in $utils-overflow-axis {
+                .k-overflow#{$axis}#{$overflow}#{$force} {
+                    overflow: $overflow#{$attribute};
+                }
+            }
+
+            @each $overflow-y in $utils-overflows {
+                .k-overflow-#{$overflow}-#{$overflow-y}#{$force} {
+                    overflow-x: $overflow#{$attribute};
+                    overflow-y: $overflow-y#{$attribute};
+                }
+            }
+        }
+    }
+
+}
