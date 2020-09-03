@@ -134,8 +134,15 @@
             color: $clear-button-hover-text;
         }
 
-        &:focus,
-        &.k-state-focused {
+        &:active,
+        &.k-state-active {
+            &::after {
+                background: transparent;
+            }
+        }
+
+        &.k-state-focused,
+        &.k-state-focused:active {
             &::after {
                 background-color: $clear-button-text;
                 opacity: $clear-button-focused-opacity;
