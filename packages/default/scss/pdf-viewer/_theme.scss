@@ -11,7 +11,14 @@
 
 
         // Toolbar
-        .k-toolbar {}
+        .k-toolbar {
+            @include fill(
+                $pdf-viewer-toolbar-text,
+                $pdf-viewer-toolbar-bg,
+                $pdf-viewer-toolbar-border,
+                $pdf-viewer-toolbar-gradient
+            );
+        }
 
 
         // Canvas

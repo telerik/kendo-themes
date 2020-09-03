@@ -408,6 +408,7 @@
 
 @include exports( "chat/toolbar/layout" ) {
 
+    .k-chat-toolbar,
     .k-chat .k-toolbar-box {
         width: 100%;
         box-sizing: border-box;

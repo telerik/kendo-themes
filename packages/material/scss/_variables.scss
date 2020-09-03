@@ -248,6 +248,23 @@ $theme-colors: map-merge((
 // sass-lint:enable indentation
 
 
+// Utility classes force
+// sass-lint:disable indentation
+$utils-classes-force: (
+    "": "",
+    "-f": " !important"
+) !default;
+// sass-lint:enable indentation
+
+
+// Overflow utility classes
+$utils-overflows: () !default;
+$utils-overflows: join(( visible, hidden, clip, scroll, auto ), $utils-overflows);
+
+$utils-overflow-axis: ( "-", "-x-", "-y-" ) !default;
+
+
+// Cursor utility classes
 $cursors: ( auto, default, none, context-menu, help, pointer, progress, wait, cell, crosshair, text,
     vertical-text, alias, copy, move, no-drop, not-allowed, e-resize, n-resize, ne-resize, nw-resize,
     s-resize, se-resize, sw-resize, w-resize, ew-resize, ns-resize, nesw-resize, nwse-resize, col-resize,
@@ -2707,7 +2724,7 @@ $grid-filter-cell-padding-y: $grid-padding-y !default;
 
 $grid-toolbar-padding-x: 14px !default;
 $grid-toolbar-padding-y: $grid-toolbar-padding-x !default;
-$grid-toolbar-button-spacing: 0px !default;
+$grid-toolbar-spacing: 0px !default;
 
 $grid-cell-padding-x: $grid-padding-x !default;
 $grid-cell-padding-y: $grid-padding-y !default;
@@ -2925,6 +2942,7 @@ $filemanager-toolbar-border-width: $filemanager-border-width !default;
 $filemanager-toolbar-bg: null !default;
 $filemanager-toolbar-text: null !default;
 $filemanager-toolbar-border: null !default;
+$filemanager-toolbar-gradient: null !default;
 
 $filemanager-navigation-padding-x: $filemanager-spacer !default;
 $filemanager-navigation-padding-y: $filemanager-spacer !default;
@@ -3074,6 +3092,16 @@ $scheduler-line-height: $line-height !default;
 $scheduler-bg: $panel-bg !default;
 $scheduler-text: $panel-text !default;
 $scheduler-border: $panel-border !default;
+
+$scheduler-toolbar-bg: $toolbar-bg !default;
+$scheduler-toolbar-text: $toolbar-text !default;
+$scheduler-toolbar-border: $toolbar-border !default;
+$scheduler-toolbar-gradient: $toolbar-gradient !default;
+
+$scheduler-footer-bg: $toolbar-bg !default;
+$scheduler-footer-text: $toolbar-text !default;
+$scheduler-footer-border: $toolbar-border !default;
+$scheduler-footer-gradient: $toolbar-gradient !default;
 
 $scheduler-event-min-height: 25px !default;
 $scheduler-event-border-radius: $border-radius !default;
@@ -3284,6 +3312,11 @@ $pdf-viewer-line-height: $line-height !default;
 $pdf-viewer-bg: $component-bg !default;
 $pdf-viewer-text: $component-text !default;
 $pdf-viewer-border: $component-border !default;
+
+$pdf-viewer-toolbar-bg: null !default;
+$pdf-viewer-toolbar-text: null !default;
+$pdf-viewer-toolbar-border: null !default;
+$pdf-viewer-toolbar-gradient: null !default;
 
 $pdf-viewer-canvas-bg: $app-bg !default;
 $pdf-viewer-canvas-text: null !default;

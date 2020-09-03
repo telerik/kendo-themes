@@ -15,7 +15,8 @@
         @include fill(
             $filemanager-toolbar-text,
             $filemanager-toolbar-bg,
-            $filemanager-toolbar-border
+            $filemanager-toolbar-border,
+            $filemanager-toolbar-gradient
         );
     }
 
