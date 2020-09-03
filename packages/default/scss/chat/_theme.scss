@@ -86,31 +86,32 @@
             @include fill( $chat-message-box-button-hover-text );
         }
 
+    }
 
-        // Toolbar
-        .k-toolbar-box {
+
+    // Toolbar
+    .k-chat-toolbar,
+    .k-chat .k-toolbar-box {
+        @include fill(
+            $chat-toolbar-box-text,
+            $chat-toolbar-box-bg,
+            $chat-toolbar-box-border
+        );
+
+        .k-button:hover {
             @include fill(
-                $chat-toolbar-box-text,
-                $chat-toolbar-box-bg,
-                $chat-toolbar-box-border
+                $chat-toolbar-box-button-hover-text,
+                $chat-toolbar-box-button-hover-bg
             );
-
-            .k-button:hover {
-                @include fill(
-                    $chat-toolbar-box-button-hover-text,
-                    $chat-toolbar-box-button-hover-bg
-                );
-            }
-
-            .k-scroll-button {
-                @include fill( $bg: $chat-bg );
-                @include box-shadow( $chat-toolbar-box-scroll-button-shadow );
-            }
-            .k-scroll-button:hover {
-                @include fill( $bg: $chat-bg );
-            }
         }
 
+        .k-scroll-button {
+            @include fill( $bg: $chat-bg );
+            @include box-shadow( $chat-toolbar-box-scroll-button-shadow );
+        }
+        .k-scroll-button:hover {
+            @include fill( $bg: $chat-bg );
+        }
     }
 
 }

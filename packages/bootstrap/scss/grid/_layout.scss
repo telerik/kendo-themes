@@ -5,18 +5,8 @@ $edit-cell-textbox-width: 100% !default;
 
 @include exports("grid/layout/bootstrap") {
 
-    // Toolbar
-    .k-grid-toolbar {
-        padding: $toolbar-padding-y;
-    }
-
     // Grouping header
     .k-grouping-header .k-group-indicator {
         @include border-radius( $border-radius );
-    }
-
-    // Pager
-    .k-grid-pager {
-        padding: $toolbar-padding-y;
     }
 }

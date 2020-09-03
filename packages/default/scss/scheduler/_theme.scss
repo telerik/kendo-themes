@@ -28,20 +28,20 @@
     }
 
     // Header and footer
-    kendo-scheduler .k-scheduler-toolbar {
+    .k-scheduler-toolbar {
         @include fill(
-            $toolbar-text,
-            $toolbar-bg,
-            $toolbar-border,
-            $toolbar-gradient
+            $scheduler-toolbar-text,
+            $scheduler-toolbar-bg,
+            $scheduler-toolbar-border,
+            $scheduler-toolbar-gradient
         );
     }
-    kendo-scheduler .k-scheduler-footer {
+    .k-scheduler-footer {
         @include fill(
-            $toolbar-text,
-            $toolbar-bg,
-            $toolbar-border,
-            $toolbar-gradient
+            $scheduler-footer-text,
+            $scheduler-footer-bg,
+            $scheduler-footer-border,
+            $scheduler-footer-gradient
         );
     }
 
