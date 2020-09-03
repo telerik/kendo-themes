@@ -161,6 +161,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Buttons
 
 <table class="theme-variables">
@@ -351,6 +352,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Charts
 
 <table class="theme-variables">
@@ -451,6 +453,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Color System
 
 <table class="theme-variables">
@@ -621,6 +624,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Component
 
 <table class="theme-variables">
@@ -701,6 +705,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Grid
 
 <table class="theme-variables">
@@ -911,6 +916,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Icons
 
 <table class="theme-variables">
@@ -941,6 +947,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Tabstrip
 
 <table class="theme-variables">
@@ -1221,6 +1228,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Toolbar
 
 <table class="theme-variables">
@@ -1261,6 +1269,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Typography
 
 <table class="theme-variables">

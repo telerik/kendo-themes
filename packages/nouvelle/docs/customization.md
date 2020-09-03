@@ -178,6 +178,7 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 </tbody>
 </table>
+
 ### Autocomplete
 
 <table class="theme-variables">
@@ -288,6 +289,7 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 </tbody>
 </table>
+
 ### Buttons
 
 <table class="theme-variables">
@@ -468,6 +470,7 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 </tbody>
 </table>
+
 ### Color System
 
 <table class="theme-variables">
@@ -618,6 +621,7 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 </tbody>
 </table>
+
 ### Combobox
 
 <table class="theme-variables">
@@ -728,6 +732,7 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 </tbody>
 </table>
+
 ### Component
 
 <table class="theme-variables">
@@ -778,6 +783,7 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 </tbody>
 </table>
+
 ### Dropdownlist
 
 <table class="theme-variables">
@@ -888,6 +894,7 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 </tbody>
 </table>
+
 ### Input
 
 <table class="theme-variables">
@@ -998,6 +1005,7 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 </tbody>
 </table>
+
 ### List
 
 <table class="theme-variables">
@@ -1048,6 +1056,7 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 </tbody>
 </table>
+
 ### Popup
 
 <table class="theme-variables">
@@ -1098,6 +1107,7 @@ The following table lists the available variables for customizing the Nouvelle t
 </tr>
 </tbody>
 </table>
+
 ### Typography
 
 <table class="theme-variables">
