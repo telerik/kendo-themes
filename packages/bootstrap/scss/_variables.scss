@@ -2535,6 +2535,7 @@ $card-padding-x: $card-spacer-x !default;
 $card-padding-y: $card-spacer-y !default;
 $card-border-width: 1px !default;
 $card-border-radius: $card-border-radius !default;
+$card-inner-border-radius: calc( #{$card-border-radius} - #{$card-border-width} ) !default;
 $card-font-family: $font-family !default;
 $card-font-size: $font-size !default;
 $card-line-height: $line-height !default;

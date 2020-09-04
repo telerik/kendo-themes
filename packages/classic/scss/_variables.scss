@@ -2505,6 +2505,7 @@ $card-padding-x: map-get( $spacing, lg ) !default;
 $card-padding-y: map-get( $spacing, md ) !default;
 $card-border-width: 1px !default;
 $card-border-radius: $border-radius-lg !default;
+$card-inner-border-radius: calc( #{$card-border-radius} - #{$card-border-width} ) !default;
 $card-font-family: $font-family !default;
 $card-font-size: $font-size !default;
 $card-line-height: $line-height !default;
