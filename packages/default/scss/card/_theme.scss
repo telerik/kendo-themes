@@ -4,17 +4,12 @@
     .k-card {
         @extend .k-text-selection !optional;
         @include fill( $card-text, $card-bg, $card-border );
-
-        .k-card-callout {
-            border-color: $card-border;
-            background-color: $card-bg;
-        }
+    }
 
 
-        // Card actions
-        .k-card-actions {
-            border-color: $card-border;
-        }
+    // Card actions
+    .k-card-actions {
+        border-color: $card-border;
     }
 
 
@@ -23,53 +18,35 @@
         @include fill( $card-header-text, $card-header-bg, $card-header-border );
     }
 
+
     // Footer
     .k-card-footer {
         @include fill( $card-footer-text, $card-footer-bg, $card-footer-border );
     }
+
 
     // Separator
     .k-card-separator {
         border-color: $card-border;
     }
 
+
+    // TODO: refactor
     .k-card-subtitle {
         color: $card-subtitle-text;
-
-        .k-state-primary &,
-        .k-state-info &,
-        .k-state-success &,
-        .k-state-warning &,
-        .k-state-error & {
-            color: inherit;
-        }
     }
 
-    // Theme variants
-    .k-card {
-        &.k-card-primary,
-        &.k-state-primary {
-            @extend .k-state-primary;
-        }
 
-        &.k-card-info,
-        &.k-state-info {
-            @extend .k-state-info;
-        }
+    // Card theme colors
+    @each $name, $color in $theme-colors {
+        .k-card-#{$name} {
+            background-color: tint($color, 10);
+            color: shade($color, 6);
+            border-color: tint($color, 9);
 
-        &.k-card-success,
-        &.k-state-success {
-            @extend .k-state-success;
-        }
-
-        &.k-card-warning,
-        &.k-state-warning {
-            @extend .k-state-warning;
-        }
-
-        &.k-card-error,
-        &.k-state-error {
-            @extend .k-state-error;
+            .k-card-subtitle {
+                color: inherit;
+            }
         }
     }
 
@@ -82,5 +59,19 @@
             }
         }
     }
+
+
+    // Card callout
+    .k-card-callout {
+        @include fill(
+            $bg: $card-bg,
+            $border: $card-border
+        );
+    }
+    .k-card-callout.k-callout-n { @include box-shadow( $card-callout-box-shadow-n ); }
+    .k-card-callout.k-callout-e { @include box-shadow( $card-callout-box-shadow-e ); }
+    .k-card-callout.k-callout-s { @include box-shadow( $card-callout-box-shadow-s ); }
+    .k-card-callout.k-callout-w { @include box-shadow( $card-callout-box-shadow-w ); }
+
 
 }
