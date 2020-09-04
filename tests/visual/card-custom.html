@@ -21,77 +21,71 @@
 
     <div id="test-area" class="grid">
 
-        <div class="k-card">
-            <div class="k-columnset k-flex-auto">
+        <div class="k-card k-card-horizontal">
+            <div class="k-card-body">
+                <h5 class="k-card-title">Card Title</h5>
+                <h6 class="k-card-subtitle">Card Subtitle</h6>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="k-card-actions k-card-actions-stretched k-card-actions-vertical">
+                <span class="k-card-action"><span class="k-button k-flat k-primary">Action 1</span></span>
+                <span class="k-card-action"><span class="k-button k-flat k-primary">Action 2</span></span>
+            </div>
+        </div>
+
+        <div class="k-card k-card-horizontal">
+            <img class="k-card-image" src="http://via.placeholder.com/80x80" />
+            <div class="k-rowset k-column">
                 <div class="k-card-body">
                     <h5 class="k-card-title">Card Title</h5>
                     <h6 class="k-card-subtitle">Card Subtitle</h6>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
-                <hr class="k-hr" />
-                <div class="k-card-actions k-card-actions-vertical">
+                <hr class="k-card-separator" />
+                <div class="k-card-actions k-card-actions-stretched k-card-actions-horizontal">
                     <span class="k-card-action"><span class="k-button k-flat k-primary">Action 1</span></span>
                     <span class="k-card-action"><span class="k-button k-flat k-primary">Action 2</span></span>
                 </div>
             </div>
         </div>
 
-        <div class="k-card">
-            <div class="k-columnset k-flex-auto">
-                <img class="k-card-image" src="http://via.placeholder.com/80x80" />
-                <div class="k-rowset k-column">
-                    <div class="k-card-body">
-                        <h5 class="k-card-title">Card Title</h5>
-                        <h6 class="k-card-subtitle">Card Subtitle</h6>
-                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <div class="k-card-actions k-card-actions-stretched">
-                        <span class="k-card-action"><span class="k-button k-flat k-primary">Action 1</span></span>
-                        <span class="k-card-action"><span class="k-button k-flat k-primary">Action 2</span></span>
-                    </div>
+        <div class="k-card k-card-horizontal">
+            <span class="k-card-image">
+                <img src="http://via.placeholder.com/80x80" />
+            </span>
+            <hr class="k-card-separator" />
+            <div class="k-rowset k-column">
+                <div class="k-card-body">
+                    <h5 class="k-card-title">Card Title</h5>
+                    <h6 class="k-card-subtitle">Card Subtitle</h6>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="k-card-actions k-card-actions-stretched k-card-actions-horizontal">
+                    <span class="k-card-action"><span class="k-button k-flat k-primary">Action 1</span></span>
+                    <span class="k-card-action"><span class="k-button k-flat k-primary">Action 2</span></span>
                 </div>
             </div>
         </div>
 
-        <div class="k-card">
-            <div class="k-columnset k-flex-auto">
-                <span class="k-card-image">
-                    <img src="http://via.placeholder.com/80x80" />
-                </span>
-                <hr class="k-hr" />
-                <div class="k-rowset k-column">
-                    <div class="k-card-body">
-                        <h5 class="k-card-title">Card Title</h5>
-                        <h6 class="k-card-subtitle">Card Subtitle</h6>
-                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <div class="k-card-actions k-card-actions-stretched">
-                        <span class="k-card-action"><span class="k-button k-flat k-primary">Action 1</span></span>
-                        <span class="k-card-action"><span class="k-button k-flat k-primary">Action 2</span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="k-card">
+        <div class="k-card k-card-vertical">
             <div class="k-card-body k-text-center">
                 <h5 class="k-card-title">Sofia</h5>
                 <div class="k-display-1">☀️</div>
                 <h6 class="k-card-subtitle">Sunny</h6>
                 <div class="k-display-2">2&deg;C</div>
             </div>
-            <div class="k-card-actions k-card-actions-stretched">
+            <div class="k-card-actions k-card-actions-stretched k-card-actions-horizontal">
                 <span class="k-card-action"><span class="k-button k-flat k-primary">Action 1</span></span>
                 <span class="k-card-action"><span class="k-button k-flat k-primary">Action 2</span></span>
             </div>
         </div>
 
-        <div class="k-card">
+        <div class="k-card k-card-vertical">
             <div class="k-card-body">
                 <h5 class="k-card-title">Passenger</h5>
                 <h5 class="k-card-subtitle">GP, Gosho</h5>
             </div>
-            <hr class="k-hr" />
+            <hr class="k-card-separator" />
             <div class="k-card-body">
                 <div class="k-columnset">
                     <div class="k-column k-text-left">Departure</div>
@@ -137,7 +131,7 @@
                     </div>
                 </div>
             </div>
-            <hr class="k-hr" />
+            <hr class="k-card-separator" />
             <div class="k-card-body">
                 <div class="k-columnset">
                     <div class="k-column k-text-left">Total</div>
@@ -146,9 +140,9 @@
             </div>
         </div>
 
-        <div class="k-card">
+        <div class="k-card k-card-vertical">
             <div class="k-card-header k-display-flex">
-                <div class="k-avatar k-avatar-image">
+                <div class="k-avatar k-avatar-image k-avatar-rounded">
                     <div style="background-image: url(&quot;https://demos.telerik.com/kendo-ui/content/web/Customers/SPLIR.jpg&quot;);"></div>
                 </div>
                 <div>
@@ -163,21 +157,6 @@
             </div>
             <div class="k-card-footer">
                 Footer here
-            </div>
-        </div>
-
-        <div class="k-card">
-            <div class="k-card-header k-display-flex">
-                <div class="k-avatar k-avatar-rounded"></div>
-                <div>
-                    <h5 class="k-card-title">Round Thumbnail</h5>
-                    <h6 class="k-card-subtitle">Rome</h6>
-                </div>
-            </div>
-            <div class="k-card-body">
-                <p>Rome is a sprawling, cosmopolitan city with nearly 3,000 years of globally influential art, architecture and culture on display.</p>
-                <span class="k-card-separator k-separator-vertical"></span>
-                <p>Ancient ruins such as the Forum and the Colosseum evoke the power of the former Roman Empire. </p>
             </div>
         </div>
 
