@@ -1,41 +1,5 @@
 @include exports("card/layout") {
 
-    // Placeholder selectors
-    %top-rounded-child {
-        .k-card > &:first-child {
-            @include border-top-radius( $card-border-radius );
-        }
-    }
-    %bottom-rounded-child {
-        .k-card > &:last-child {
-            @include border-bottom-radius( $card-border-radius );
-        }
-    }
-
-    %left-rounded-child {
-        .k-card-horizontal > &:first-child {
-            @include border-left-radius-only( $card-border-radius );
-        }
-
-        .k-card-horizontal.k-rtl > &:first-child,
-        .k-rtl .k-card-horizontal > &:first-child,
-        [dir="rtl"] .k-card-horizontal > &:first-child {
-            @include border-right-radius-only( $card-border-radius );
-        }
-    }
-
-    %right-rounded-child {
-        .k-card-horizontal > &:last-child {
-            @include border-right-radius-only( $card-border-radius );
-        }
-
-        .k-card-horizontal.k-rtl > &:last-child,
-        .k-rtl .k-card-horizontal > &:last-child,
-        [dir="rtl"] .k-card-horizontal > &:last-child {
-            @include border-left-radius-only( $card-border-radius );
-        }
-    }
-
 
     // Angular elements
     kendo-card,
@@ -61,6 +25,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
+        overflow: hidden;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
 
@@ -119,10 +84,9 @@
         flex-direction: row;
     }
 
+
     // Header
     .k-card-header {
-        @extend %top-rounded-child;
-        @extend %bottom-rounded-child;
         padding: $card-header-padding-y $card-header-padding-x;
         border-width: 0 0 $card-header-border-width;
         border-style: solid;
@@ -141,20 +105,18 @@
         }
     }
 
+
     // Footer
     .k-card-footer {
-        @extend %top-rounded-child;
-        @extend %bottom-rounded-child;
         padding: $card-footer-padding-y $card-footer-padding-x;
         border-width: $card-footer-border-width 0 0;
         border-style: solid;
         flex-shrink: 0;
     }
 
+
     // Body
     .k-card-body {
-        @extend %top-rounded-child;
-        @extend %bottom-rounded-child;
         padding: $card-body-padding-y $card-body-padding-x;
         flex: 1 1 auto;
 
@@ -176,10 +138,6 @@
     // Card image
     .k-card-image,
     .k-card-media {
-        @extend %top-rounded-child;
-        @extend %bottom-rounded-child;
-        @extend %left-rounded-child;
-        @extend %right-rounded-child;
         border: 0;
         max-width: 100%;
         flex-shrink: 0;
@@ -234,8 +192,6 @@
 
     // Card actions
     .k-card-actions {
-        @extend %top-rounded-child;
-        @extend %bottom-rounded-child;
         padding: $card-actions-padding-y $card-actions-padding-x;
         border-width: 0;
         border-style: solid;
@@ -245,10 +201,6 @@
         flex-wrap: wrap;
         flex-shrink: 0;
         flex-basis: auto;
-
-        .k-card-horizontal & {
-            @extend %right-rounded-child;
-        }
 
         .k-button {
             max-width: 100%;
@@ -440,10 +392,6 @@
         .k-card {
             @include border-radius( 0 );
             flex: 0 0 auto;
-
-            > .k-card-header {
-                @include border-radius( 0 );
-            }
         }
         .k-card + .k-card {
             margin-left: -1px;
@@ -453,24 +401,12 @@
         // Border-radius
         .k-card.k-first {
             @include border-left-radius( $card-border-radius );
-
-            > .k-card-header {
-                border-top-left-radius: $card-border-radius;
-            }
         }
         .k-card.k-last {
             @include border-right-radius( $card-border-radius );
-
-            > .k-card-header {
-                border-top-right-radius: $card-border-radius;
-            }
         }
         .k-card.k-only {
             @include border-radius( $card-border-radius );
-
-            > .k-card-header {
-                @include border-top-radius( $card-border-radius );
-            }
         }
     }
 
