@@ -126,6 +126,7 @@
         padding: $card-header-padding-y $card-header-padding-x;
         border-width: 0 0 $card-header-border-width;
         border-style: solid;
+        flex-shrink: 0;
         overflow: hidden;
         position: relative;
         z-index: 1;
@@ -147,6 +148,7 @@
         padding: $card-footer-padding-y $card-footer-padding-x;
         border-width: $card-footer-border-width 0 0;
         border-style: solid;
+        flex-shrink: 0;
     }
 
     // Body
@@ -180,6 +182,7 @@
         @extend %right-rounded-child;
         border: 0;
         max-width: 100%;
+        flex-shrink: 0;
         overflow: hidden;
 
         > img {
