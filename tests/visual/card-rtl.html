@@ -9,7 +9,7 @@
 
     <style>
         #test-area {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
     </style>
 </head>
@@ -31,9 +31,9 @@
         </div>
 
         <div class="k-card k-card-horizontal">
-            <div>
+            <div class="k-d-flex k-flex-column">
                 <div class="k-card-header">
-                    <h5 class="k-card-title">RTL Horizontal Card with Header</h5>
+                    <h5 class="k-card-title">RTL Horizontal Card</h5>
                     <h6 class="k-card-subtitle">Actions Stretched</h6>
                 </div>
                 <div class="k-card-body">
@@ -49,9 +49,10 @@
                 <span class="k-button k-flat k-primary">Action 2</span>
             </div>
         </div>
+
         <div class="k-card k-card-horizontal">
             <img class="k-card-image" src="http://via.placeholder.com/80x80">
-            <div>
+            <div class="k-d-flex k-flex-column">
                 <div class="k-card-header">
                     <h5 class="k-card-title">RTL Horizontal Card</h5>
                     <h6 class="k-card-subtitle">Card Subtitle</h6>
@@ -59,14 +60,15 @@
                 <div class="k-card-body">
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
-                <div class="k-card-actions k-card-actions-stretched">
+                <div class="k-card-actions k-card-actions-horizontal k-card-actions-stretched">
                     <span class="k-card-action"><span class="k-button k-flat k-primary k-state-hover">Action 1</span></span>
                 </div>
-                    <div class="k-card-footer">
+                <div class="k-card-footer">
                     Footer here
                 </div>
             </div>
         </div>
+
     </div>
 </body>
 </html>
