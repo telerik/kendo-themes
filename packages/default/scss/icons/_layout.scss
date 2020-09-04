@@ -37,6 +37,16 @@
         }
     }
 
+    .k-svg-icon {
+        width: 1em;
+        height: 1em;
+        display: inline-block;
+
+        > svg {
+            fill: currentColor;
+        }
+    }
+
     .k-icon-with-modifier {
         position: relative;
         margin: .25em;
