@@ -2542,10 +2542,10 @@ $card-img-max-width: 100px !default;
 $card-avatar-size: 45px !default;
 $card-avatar-spacing:  $card-header-padding-x !default;
 
-$card-actions-padding-x: $card-padding-x !default;
-$card-actions-padding-y: ($card-padding-y - $button-padding-y) !default;
+$card-actions-padding-x: map-get( $spacing, 2 ) !default;
+$card-actions-padding-y: map-get( $spacing, 2 ) !default;
 $card-actions-border-width: 1px !default;
-$card-button-negative-spacing: (-$button-padding-x) !default;
+$card-actions-gap: map-get( $spacing, 2 ) !default;
 
 $card-deck-scroll-button-radius: 0px !default;
 $card-deck-scroll-button-offset: -$button-border-width !default;

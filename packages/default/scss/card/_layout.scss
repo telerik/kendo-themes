@@ -79,10 +79,10 @@
         box-shadow: none;
     }
 
-    // Orientation
-    .k-card-horizontal {
-        flex-direction: row;
-    }
+
+    // Card orientation
+    .k-card-horizontal  { flex-flow: row nowrap; }
+    .k-card-vertical    { flex-flow: column nowrap; }
 
 
     // Header
@@ -172,15 +172,20 @@
     // Separator
     .k-card-separator {
         margin: 0;
-        border-width: 1px 0 0;
+        border-width: 0;
         border-style: solid;
+        border-color: inherit;
         display: block;
         flex: 0 0 auto;
-
-        &.k-separator-vertical {
-            width: 0;
-            border-width: 0 0 0 1px;
-        }
+        align-self: stretch;
+    }
+    .k-card-separator.k-separator-vertical,
+    .k-card-horizontal > .k-card-separator {
+        border-left-width: 1px;
+    }
+    .k-card-separator.k-separator-horizontal,
+    .k-card-vertical > .k-card-separator {
+        border-top-width: 1px;
     }
 
     .k-card > .k-hr {
@@ -198,112 +203,76 @@
         border-color: inherit;
         overflow: hidden;
         display: flex;
-        flex-wrap: wrap;
         flex-shrink: 0;
         flex-basis: auto;
+        gap: $card-actions-gap;
 
-        .k-button {
+        > .k-button {
+            padding-left: calc( #{$card-body-padding-x} - ( #{$card-actions-padding-x} + #{$button-border-width} ) );
+            padding-right: calc( #{$card-body-padding-x} - ( #{$card-actions-padding-x} + #{$button-border-width} ) );
             max-width: 100%;
             white-space: normal;
         }
-
-        > .k-button.k-flat:first-child {
-            margin-left: $card-button-negative-spacing;
-        }
-
-        &.k-card-actions-start { justify-content: flex-start; }
-        &.k-card-actions-end { justify-content: flex-end; }
-        &.k-card-actions-center { justify-content: center; }
     }
 
+
+    // Actions align
+    .k-card-actions-start       { justify-content: flex-start; }
+    .k-card-actions-end         { justify-content: flex-end; }
+    .k-card-actions-center      { justify-content: center; }
+
+
+    // Actions orientation
+    .k-card-actions-horizontal  { flex-flow: row nowrap; }
+    .k-card-actions-vertical    { flex-flow: column nowrap; }
+
+
+    // Streched actions
+    .k-card-actions-stretched {
+        padding: 0;
+        gap: 0;
+
+        > .k-button,
+        > .k-card-action {
+            flex: 1 1 auto;
+        }
+
+        // TODO: refactor once we have button size
+        .k-button {
+            @include border-radius( 0 );
+            padding-top: calc( #{$card-actions-padding-y} + #{$button-padding-y} );
+            padding-bottom: calc( #{$card-actions-padding-y} + #{$button-padding-y} );
+        }
+
+        .k-card & {
+            border-top-width: $card-actions-border-width;
+        }
+        .k-card-horizontal > & {
+            border-top-width: 0;
+            border-inline-start-width: $card-actions-border-width;
+        }
+        .k-card-vertical > & {
+            border-top-width: $card-actions-border-width;
+        }
+
+        &.k-card-actions-horizontal > .k-card-action + .k-card-action {
+            border-inline-start-width: $card-actions-border-width;
+        }
+        &.k-card-actions-vertical > .k-card-action + .k-card-action {
+            border-top-width: $card-actions-border-width;
+        }
+    }
+
+
+    // Card action
     .k-card-action {
         border-width: 0;
         border-style: solid;
         border-color: inherit;
         display: inline-flex;
-        flex: 1 1 auto;
 
         > .k-button {
-            @include border-radius( 0 );
-            padding: ($card-actions-padding-y + $button-padding-y) $card-actions-padding-x;
             flex: 1 1 auto;
-        }
-    }
-
-    .k-card-actions-vertical {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-
-        .k-button {
-            padding: ($card-actions-padding-y + $button-padding-y) $card-actions-padding-x;
-
-            &.k-flat:first-child {
-                margin-left: 0;
-            }
-        }
-
-        .k-card-action + .k-card-action {
-            border-top-width: $card-actions-border-width;
-        }
-
-        .k-card-horizontal & {
-            border-top-width: 0;
-            border-left-width: $card-actions-border-width;
-        }
-
-        .k-card-vertical & {
-            &.k-card-actions-start { align-items: flex-start; }
-            &.k-card-actions-end { align-items: flex-end; }
-            &.k-card-actions-center { align-items: center; }
-
-            &.k-card-actions-start,
-            &.k-card-actions-end,
-            &.k-card-actions-center {
-                padding: $card-actions-padding-y $card-actions-padding-x;
-
-                .k-button {
-                    padding: $button-padding-y $button-padding-x;
-                }
-            }
-        }
-    }
-
-    .k-card-actions-stretched {
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-
-        .k-button {
-            padding: ($card-actions-padding-y + $button-padding-y) $card-actions-padding-x;
-            flex-grow: 1;
-
-            &.k-flat:first-child {
-                margin-left: 0;
-            }
-        }
-
-        .k-card-action + .k-card-action {
-            border-left-width: $card-actions-border-width;
-        }
-
-        .k-card & {
-            border-top-width: $card-actions-border-width;
-            border-style: solid;
-        }
-
-        .k-card-horizontal > & {
-            border-left-width: $card-actions-border-width;
-            border-top-width: 0;
-        }
-
-        &.k-card-actions-vertical {
-            flex-direction: column;
-
-            .k-card-action + .k-card-action {
-                border-top-width: $card-actions-border-width;
-                border-left-width: 0;
-            }
         }
     }
 
@@ -311,16 +280,13 @@
     // List
     .k-card-list {
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        flex-flow: column nowrap;
         align-items: stretch;
+        gap: $card-deck-gap;
         flex: 0 0 auto;
 
         .k-card {
             flex: 0 0 auto;
-        }
-        .k-card + .k-card {
-            margin-top: $card-deck-gap;
         }
     }
 
@@ -328,16 +294,13 @@
     // Deck
     .k-card-deck {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
         align-items: stretch;
+        gap: $card-deck-gap;
         flex: 0 0 auto;
 
         .k-card {
             flex: 0 0 auto;
-        }
-        .k-card + .k-card {
-            margin-left: $card-deck-gap;
         }
     }
 
@@ -394,7 +357,7 @@
             flex: 0 0 auto;
         }
         .k-card + .k-card {
-            margin-left: -1px;
+            margin-inline-start: $card-border-width;
         }
 
 
@@ -420,14 +383,6 @@
 
     .k-rtl,
     [dir="rtl"] {
-
-        // Deck
-        .k-card-deck {
-            .k-card + .k-card {
-                margin-left: 0;
-                margin-right: $card-deck-gap;
-            }
-        }
 
         .k-card-actions-stretched {
             .k-card-action + .k-card-action {
