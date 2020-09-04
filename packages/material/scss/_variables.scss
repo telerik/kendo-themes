@@ -363,10 +363,10 @@ $h4-font-size: 15px !default;
 $h5-font-size: ($font-size * .83) !default;
 $h6-font-size: ($font-size * .67) !default;
 
-$h1-margin-bottom: 16px !default;
-$h2-margin-bottom: 16px !default;
-$h3-margin-bottom: 16px !default;
-$h4-margin-bottom: 16px !default;
+$h1-margin-bottom: 12px !default;
+$h2-margin-bottom: 12px !default;
+$h3-margin-bottom: 12px !default;
+$h4-margin-bottom: 12px !default;
 $h5-margin-bottom: 12px !default;
 $h6-margin-bottom: 12px !default;
 
@@ -2588,7 +2588,7 @@ $card-border-width: 0px !default;
 $card-border-radius: $border-radius !default;
 $card-font-family: $font-family !default;
 $card-font-size: $font-size !default;
-$card-line-height: $line-height !default;
+$card-line-height: (20 / 14) !default;
 $card-box-shadow: $box-shadow-depth-2 !default;
 $card-box-focused-shadow: $box-shadow-depth-3 !default;
 
@@ -3555,9 +3555,9 @@ $typography-config: map-merge((
     display-2: font-map( $font-family, $display2-font-size, 56px, $font-weight-normal, -.02em ),
     display-3: font-map( $font-family, $display3-font-size, 48px, $font-weight-normal, -.005em ),
     display-4: font-map( $font-family, $display4-font-size, 40px, $font-weight-normal ),
-    h1: font-map( $font-family, $h1-font-size, 32px, $font-weight-normal ),
-    h2: font-map( $font-family, $h2-font-size, 32px, $font-weight-bold ),
-    h3: font-map( $font-family, $h3-font-size, 28px, $font-weight-normal ),
+    h1: font-map( $font-family, $h1-font-size, 1.25, $font-weight-normal ),
+    h2: font-map( $font-family, $h2-font-size, 1.5, $font-weight-bold ),
+    h3: font-map( $font-family, $h3-font-size, 1.5, $font-weight-normal ),
     h4: font-map( $font-family, $h4-font-size, 24px, $font-weight-normal ),
     h5: font-map( $font-family, $h5-font-size, $line-height, $font-weight-normal ),
     h6: font-map( $font-family, $h6-font-size, $line-height, $font-weight-normal ),
@@ -3565,7 +3565,7 @@ $typography-config: map-merge((
 ), $typography-config);
 $typography-config: map-merge((
     card-title: map-get($typography-config, h1),
-    card-subtitle: map-get($typography-config, body)
+    card-subtitle: font-map( $font-family, $font-size, (20 / 14), $font-weight-normal )
 ), $typography-config);
 // sass-lint:enable indentation
 
