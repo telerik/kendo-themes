@@ -47,13 +47,13 @@ $theme-colors: () !default;
     $yiq-light: $white !default;
 
     $body-bg: $white !default;
-    $body-color: contrast-yiq( $body-bg, $gray-900 ) !default;
+    $body-color: contrast-yiq( $body-bg, $gray-900, $gray-100 ) !default;
 
     $component-bg: $body-bg !default;
-    $component-color: contrast-yiq( $component-bg, $gray-900 ) !default;
-    $component-border-color: rgba( contrast-yiq( $component-bg, $gray-900 ), .125 ) !default;
+    $component-color: contrast-yiq( $component-bg, $gray-900, $gray-100 ) !default;
+    $component-border-color: contrast-yiq( $component-bg, $gray-300, $gray-700 ) !default;
     $component-active-bg: $primary !default;
-    $component-active-color: contrast-yiq( $component-active-bg ) !default;
+    $component-active-color: contrast-yiq( $component-active-bg, $black, $white ) !default;
 
     $breadcrumb-padding-x: 0px !default;
     $breadcrumb-padding-y: 0px !default;

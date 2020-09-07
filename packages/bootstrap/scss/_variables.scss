@@ -253,7 +253,7 @@ $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000
 
 $bg-color: $body-bg !default;
 $text-color: $body-color !default;
-$border-color: try-darken( $bg-color, 12% ) !default;
+$border-color: $component-border-color !default;
 
 /// The background of the components' chrome area.
 $base-bg: try-darken( $component-bg, 3% ) !default;
@@ -359,7 +359,7 @@ $body-text: $body-color !default;
 
 $app-bg: $body-bg !default;
 $app-text: $body-text !default;
-$app-border: rgba(contrast-yiq($app-bg, $gray-900), .15) !default;
+$app-border: contrast-yiq( $app-bg, $gray-300, $gray-700 ) !default;
 
 // Link
 $link-text: $link-color !default;
@@ -418,9 +418,9 @@ $panel-border: $component-border !default;
 
 
 // Grouping
-$grouping-header-bg: $body-text !default;
-$grouping-header-text: $body-bg !default;
-$grouping-border: $border-color !default;
+$grouping-header-bg: $component-text !default;
+$grouping-header-text: $component-bg !default;
+$grouping-border: $component-border !default;
 $frozen-grouping-header-text: #6c757d !default;
 $frozen-grouping-header-border-width: 2px !default;
 
@@ -1672,7 +1672,7 @@ $multiviewcalendar-navigation-margin-y: calc( #{$calendar-header-padding-y * 2} 
 // DateTime
 $time-highlight-size: 1px;
 
-$time-list-highlight-color: $border-color !default;
+$time-list-highlight-color: $component-border !default;
 $time-list-focused-bg: rgba(0, 0, 0, .02) !default;
 $time-list-title-focus: black !default;
 
@@ -1986,7 +1986,7 @@ $dialog-stretched-button-border-width: $button-border-width !default;
 // Drawer
 $drawer-bg: $body-bg !default;
 $drawer-text: $body-text !default;
-$drawer-border: $border-color !default;
+$drawer-border: $component-border !default;
 $drawer-border-width: 1px !default;
 $drawer-font-family: $font-family !default;
 $drawer-font-size: $font-size !default;
@@ -2741,7 +2741,7 @@ $grid-search-width: 15.7em !default;
 
 $grid-sticky-bg: $grid-bg !default;
 $grid-sticky-text:  $grid-text !default;
-$grid-sticky-border: rgba($text-color, .5) !default;
+$grid-sticky-border: rgba($grid-text, .5) !default;
 
 $grid-sticky-alt-bg: darken($grid-bg, 5%) !default;
 
@@ -2772,7 +2772,7 @@ $pivotgrid-line-height: $line-height !default;
 $pivotgrid-alt-bg: $header-bg !default;
 $pivotgrid-alt-color: null !default;
 $pivotgrid-alt-text: null !default;
-$pivotgrid-chrome-border: $border-color !default;
+$pivotgrid-chrome-border: $component-border !default;
 
 $pivotgrid-setting-delete-color: null !default;
 
@@ -2834,7 +2834,7 @@ $spreadsheet-insert-image-dialog-text-margin-bottom: 30px !default;
 $spreadsheet-insert-image-dialog-preview-width: 355px !default;
 $spreadsheet-insert-image-dialog-preview-height: 230px !default;
 $spreadsheet-insert-image-dialog-preview-img: "image-default.png" !default;
-$spreadsheet-insert-image-dialog-preview-border: $border-color !default;
+$spreadsheet-insert-image-dialog-preview-border: $component-border !default;
 $spreadsheet-insert-image-dialog-preview-border-radius: $border-radius !default;
 $spreadsheet-insert-image-dialog-preview-overlay-shadow: inset 0 0 0 2000px rgba(0, 0, 0, .5) !default;
 $spreadsheet-insert-image-dialog-preview-overlay-border-radius: $border-radius !default;
@@ -3375,8 +3375,8 @@ $imageeditor-content-text: null !default;
 $imageeditor-content-border: null !default;
 
 $imageeditor-action-pane-text: null !default;
-$imageeditor-action-pane-bg: $bg-color !default;
-$imageeditor-action-pane-border: $border-color !default;
+$imageeditor-action-pane-bg: $component-bg !default;
+$imageeditor-action-pane-border: $component-border !default;
 
 $imageeditor-crop-text: null !default;
 $imageeditor-crop-bg: null !default;
