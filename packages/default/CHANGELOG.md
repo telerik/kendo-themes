@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.22.0"></a>
+# 4.22.0 (2020-09-08)
+
+
+### Bug Fixes
+
+* **breadcrumb:** update styling for collapse mode wrap ([a26d603](https://github.com/telerik/kendo-themes/commit/a26d603))
+* **card:** generate styles for theme colors ([c7f6e3f](https://github.com/telerik/kendo-themes/commit/c7f6e3f))
+* **card:** improve card callout styles ([cc1f20b](https://github.com/telerik/kendo-themes/commit/cc1f20b))
+* **card:** prevent shrinking of card elements ([a95ef5a](https://github.com/telerik/kendo-themes/commit/a95ef5a))
+* **card:** refactor card actions to behave as expected ([6421f0d](https://github.com/telerik/kendo-themes/commit/6421f0d))
+* **card:** use oveflow hidden instead of individually rounded card parts ([721c760](https://github.com/telerik/kendo-themes/commit/721c760))
+* **grid:** do not remove next col border if sticky col is hidden ([bc0e344](https://github.com/telerik/kendo-themes/commit/bc0e344))
+* **input:** extract input styles as a separate module ([c67e163](https://github.com/telerik/kendo-themes/commit/c67e163))
+* **scheduler:** use smaller line-height in mobile scheduler header to fit properly ([90e53a2](https://github.com/telerik/kendo-themes/commit/90e53a2))
+* **toolbar:** make toolbar container for buttons ([cee0b45](https://github.com/telerik/kendo-themes/commit/cee0b45))
+* add basic styles for svg icons ([72308d0](https://github.com/telerik/kendo-themes/commit/72308d0))
+* remove clear button active background ([8606e58](https://github.com/telerik/kendo-themes/commit/8606e58))
+* **grid:** dirty + sticky cell position ([902f9ac](https://github.com/telerik/kendo-themes/commit/902f9ac))
+* **grid:** show validation popups in sticky edit cell ([60092b2](https://github.com/telerik/kendo-themes/commit/60092b2))
+* **loader:** add line-height ([7f09e92](https://github.com/telerik/kendo-themes/commit/7f09e92))
+* **spreadsheet:** scroller should have a higher z-index on touch devices ([3bfe713](https://github.com/telerik/kendo-themes/commit/3bfe713)), closes [telerik/kendo-ui-core#5303](https://github.com/telerik/kendo-ui-core/issues/5303) [telerik/kendo-ui-core#5300](https://github.com/telerik/kendo-ui-core/issues/5300)
+
+
+### Features
+
+* **editor:** add find and replace dialog styles ([4676a4d](https://github.com/telerik/kendo-themes/commit/4676a4d))
+* **gantt:** add styles for gantt with treelist rendering ([e9e9c9d](https://github.com/telerik/kendo-themes/commit/e9e9c9d))
+* **gantt:** add styles for Planned vs Actual telerik/kendo[#11149](https://github.com/telerik/kendo-themes/issues/11149) ([23a1ffa](https://github.com/telerik/kendo-themes/commit/23a1ffa))
+* **imageeditor:** add component styles ([00762f8](https://github.com/telerik/kendo-themes/commit/00762f8)), closes [#1801](https://github.com/telerik/kendo-themes/issues/1801)
+* **utils:** overflow classes ([025cdb5](https://github.com/telerik/kendo-themes/commit/025cdb5))
+
+
+
+
 <a name="4.21.0"></a>
 # 4.21.0 (2020-08-06)
 

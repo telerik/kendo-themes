@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-nouvelle",
   "description": "A css variables heavy theme for Kendo UI",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -33,6 +33,5 @@
     "dart:watch": "gulp dart:watch",
     "dart:swatches": "gulp dart:swatches",
     "dart:flat": "gulp dart:flat"
-  },
-  "devDependencies": {}
+  }
 }

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.0"></a>
+# 0.2.0 (2020-09-08)
+
+
+### Features
+
+* **imageeditor:** add component styles ([00762f8](https://github.com/telerik/kendo-themes/commit/00762f8)), closes [#1801](https://github.com/telerik/kendo-themes/issues/1801)
+
+
+
+
 <a name="0.1.1"></a>
 ## 0.1.1 (2020-08-06)
 
