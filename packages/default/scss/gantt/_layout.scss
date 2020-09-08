@@ -30,6 +30,9 @@
         .k-grid-header .k-header {
             position: static;
         }
+        .k-treelist .k-grid-header .k-header {
+            position: relative;
+        }
         .k-grid-content tr {
             height: calc( #{$line-height-em} + #{$grid-cell-padding-y * 2} + #{$grid-cell-horizontal-border-width} );
         }
