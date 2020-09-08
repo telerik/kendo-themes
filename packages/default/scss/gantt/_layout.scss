@@ -556,6 +556,7 @@
         flex-direction: row;
         align-items: center;
         visibility: hidden;
+        z-index: 1;
     }
     .k-task-actions > .k-link {
         display: inline-flex;

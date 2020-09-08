@@ -228,6 +228,10 @@
                 $border: $base-border
             );
         }
+
+        .k-task-actions {
+            color: $gantt-action-on-offset-text;
+        }
     }
 
     .k-task-offset:hover {

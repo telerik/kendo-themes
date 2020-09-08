@@ -3024,6 +3024,8 @@ $gantt-delayed-bg-lighter: tint($gantt-delayed-bg, 5) !default;
 $gantt-advanced-bg: $success !default;
 $gantt-advanced-bg-lighter: tint($gantt-advanced-bg, 5) !default;
 
+$gantt-action-on-offset-text: #000000 !default;
+
 
 // Scheduler
 $scheduler-border-width: 1px !default;
