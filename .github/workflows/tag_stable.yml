@@ -1,0 +1,16 @@
+name: Tag stable version
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Tag stable version
+      env:
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      run: |
+        printf "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+        ./build/tag-stable.sh
