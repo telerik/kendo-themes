@@ -594,7 +594,7 @@
         }
     }
 
-    // Planned metrics
+    // Planned position
 
     .k-gantt-planned {
         .k-gantt-dependencies,
@@ -608,8 +608,20 @@
             align-items: flex-start;
         }
 
-        .k-task-offset-wrap {
+        .k-task-inner-wrap {
             display: inline-flex;
+        }
+
+        .k-task-wrap.k-drag-hint {
+            top: $gantt-planned-single-drag-hint-top;
+        }
+
+        .k-summary-wrap.k-drag-hint {
+            top: $gantt-planned-summary-drag-hint-top;
+        }
+
+        .k-milestone-wrap.k-drag-hint {
+            top: $gantt-planned-milestone-drag-hint-top;
         }
     }
 
@@ -642,10 +654,8 @@
         }
     }
 
-    .k-milestone-wrap {
-        .k-task-moment {
-            margin-left: $gantt-planned-milestone-moment-margin-x;
-        }
+    .k-milestone-wrap .k-task-moment {
+        margin-left: $gantt-planned-milestone-moment-margin-x;
     }
 
     // Planned Tooltip
@@ -657,26 +667,35 @@
     }
 
     // Delay offset
+
+    .k-task-offset-wrap .k-task-content .k-resize-e {
+        display: none;
+    }
+
     .k-task-offset {
         flex-direction: row-reverse;
         display: flex;
 
-        .k-resize-e {
-            top: auto;
-            right: auto;
-            width: .3em;
-            height: 1.5em;
+        .k-resize-handle {
+            right: 0;
+            z-index: 2;
+            visibility: hidden;
+            margin-right: $gantt-planned-offset-resize-handler-margin-x;
         }
 
-        .k-resize-e::before {
+        .k-resize-handle::before {
             border-left-width: 1px;
-            height: 1.5em;
-            visibility: hidden;
+            position: absolute;
+            top: $gantt-offset-resize-handler-top;
+            bottom: .5em;
+            margin-right: 2px;
         }
     }
 
     .k-task-single:hover + .k-task-offset .k-task-actions,
-    .k-task-offset:hover .k-task-actions {
+    .k-task-offset:hover .k-task-actions,
+    .k-task-single:hover + .k-task-offset .k-resize-handle,
+    .k-task-offset:hover .k-resize-handle {
         visibility: visible;
     }
 }
@@ -781,6 +800,28 @@
 
         .k-gantt-delete {
             float: right;
+        }
+
+        .k-task-offset-wrap .k-task-content {
+            .k-resize-e {
+                display: block;
+            }
+
+            .k-resize-w {
+                display: none;
+            }
+        }
+
+        .k-milestone-wrap {
+            margin-left: $gantt-rtl-milestone-wrap-margin-x;
+        }
+
+        .k-milestone-wrap .k-task-moment {
+            margin-right: $gantt-rtl-milestone-planned-moment-margin-x;
+        }
+
+        .k-gantt-timeline .k-milestone-wrap .k-task-start {
+            right: $gantt-rtl-milestone-dot-start-margin-x;
         }
     }
 }
