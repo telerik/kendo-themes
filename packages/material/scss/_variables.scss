@@ -1167,6 +1167,9 @@ $radio-disabled-border: #b0b0b0 !default;
 $radio-disabled-checked-bg: null !default;
 $radio-disabled-checked-text: $radio-disabled-border !default;
 $radio-disabled-checked-border: $radio-disabled-border !default;
+$radio-invalid-bg: null !default;
+$radio-invalid-text: $invalid-text !default;
+$radio-invalid-border: $invalid-border !default;
 
 $radio-list-margin: 0px !default;
 $radio-list-padding: 0px !default;
