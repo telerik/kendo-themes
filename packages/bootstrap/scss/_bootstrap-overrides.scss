@@ -72,8 +72,16 @@ $theme-colors: () !default;
 
     $list-group-bg: $component-bg !default;
     $list-group-color: $component-color !default;
-    $list-group-hover-bg: try-darken( $list-group-bg, 5% ) !default;
+    $list-group-border-color: rgba( contrast-yiq( $list-group-bg, $black, $white ), .125 ) !default;
+    $list-group-hover-bg: contrast-yiq( $list-group-bg, $gray-100, $gray-900 ) !default;
     $list-group-hover-color: $list-group-color !default;
+
+    $list-group-action-bg: $list-group-bg !default;
+    $list-group-action-color: contrast-yiq( $list-group-action-bg, $gray-700, $list-group-color ) !default;
+    $list-group-action-hover-bg: $list-group-hover-bg !default;
+    $list-group-action-hover-color: contrast-yiq( $list-group-action-hover-bg, $gray-700, $list-group-color ) !default;
+    $list-group-action-active-bg: contrast-yiq( $list-group-bg, $gray-200, $gray-800 ) !default;
+    $list-group-action-active-color: $list-group-color !default;
 
     $dropdown-bg: $component-bg !default;
     $dropdown-color: $component-color !default;
