@@ -951,21 +951,21 @@ $input-text: $input-color !default;
 $input-border: $input-border-color !default;
 $input-shadow: none !default;
 
-$input-hovered-text: $input-text !default;
-$input-hovered-bg: $input-bg !default;
-$input-hovered-border: $input-border !default;
-$input-hovered-shadow: none !default;
+$input-hovered-bg: null !default;
+$input-hovered-text: null !default;
+$input-hovered-border: null !default;
+$input-hovered-shadow: null !default;
 
-$input-focused-text: $input-text !default;
-$input-focused-bg: $input-bg !default;
-$input-focused-border: try-lighten( $primary, 25 ) !default;
-$input-focused-shadow: 0 0 0 .2rem rgba($input-focused-border, .5) !default;
+$input-focused-bg: $input-focus-bg !default;
+$input-focused-text: $input-focus-color !default;
+$input-focused-border: $input-focus-border-color !default;
+$input-focused-shadow: $input-focus-box-shadow !default;
 
-$input-placeholder-text: #6c757d !default;
+$input-placeholder-text: $input-placeholder-color !default;
 $input-placeholder-opacity: 1 !default;
 
-$input-selected-text: $input-text !default;
-$input-selected-bg: rgba($input-focused-border, .5) !default;
+$input-selected-bg: null !default;
+$input-selected-text: null !default;
 
 
 // Textboxes

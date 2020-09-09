@@ -67,8 +67,8 @@ $theme-colors: () !default;
     $card-cap-border-color: rgba( contrast-yiq( $card-bg, $gray-900 ), .125 ) !default;
 
     $input-bg: $component-bg !default;
-    $input-color: $component-color !default;
-    $input-border-color: rgba( contrast-yiq( $input-bg, $gray-900 ), .15 ) !default;
+    $input-color: contrast-yiq( $input-bg, $gray-700, $gray-300 ) !default;
+    $input-border-color:  contrast-yiq( $input-bg, $gray-400, $gray-600 ) !default;
 
     $list-group-bg: $component-bg !default;
     $list-group-color: $component-color !default;
