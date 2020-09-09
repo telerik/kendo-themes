@@ -297,7 +297,7 @@
             .k-calendar-monthview { // <- BACKCOMPAT: ensures backwards compatibility for previous versions of kendo-angular-dateinputs
                 padding: 0 $calendar-content-padding-x;
                 display: flex;
-                flex: 1 0 auto;
+                flex: 0 0 auto;
                 flex-direction: column;
                 overflow: hidden;
                 box-sizing: content-box;
@@ -383,10 +383,11 @@
     }
 
     .k-calendar-navigation {
-        position: relative;
+        width: $calendar-navigation-width;
+        flex: 0 0 auto;
         display: block;
         overflow: hidden;
-        width: $calendar-navigation-width;
+        position: relative;
         z-index: 2;
 
         &::before,
