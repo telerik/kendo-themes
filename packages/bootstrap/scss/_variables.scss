@@ -412,9 +412,9 @@ $drop-hint-bg: $primary !default;
 
 
 // Panel
-$panel-bg: $card-bg !default;
-$panel-text: $card-color !default;
-$panel-border: $card-border-color !default;
+$panel-bg: $component-bg !default;
+$panel-text: $component-text !default;
+$panel-border: $component-border !default;
 
 
 // Grouping
@@ -426,9 +426,9 @@ $frozen-grouping-header-border-width: 2px !default;
 
 
 // Header
-$header-bg: $card-cap-bg !default;
-$header-text: $card-cap-color !default;
-$header-border: try-darken( $header-bg, 9 ) !default;
+$header-bg: contrast-wcag( $component-bg, $gray-100, $gray-900 ) !default;
+$header-text: $component-text !default;
+$header-border: $component-border !default;
 $header-gradient: null !default;
 
 
@@ -3434,8 +3434,6 @@ $chart-area-opacity: .8 !default;
 $chart-bg: $component-bg !default;
 $chart-text: $component-text !default;
 $chart-border: $component-border !default;
-
-$header-bg: $card-cap-bg !default;
 
 $chart-tap-highlight-color: rgba(0, 0, 0, 0);
 
