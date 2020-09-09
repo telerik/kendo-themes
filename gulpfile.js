@@ -32,24 +32,11 @@ const paths = {
     }
 };
 
-const browsers = [
-    "Explorer >= 9",
-    "last 3 Edge versions",
-    "last 2 Chrome versions",
-    "last 2 Firefox versions",
-    "last 2 Opera versions",
-    "last 2 Safari major versions",
-    "last 2 iOS major versions",
-    "Android >= 4.4",
-    "ExplorerMobile >= 10"
-];
 const postcssPlugins = [
     calc({
         precision: 10
     }),
-    autoprefixer({
-        overrideBrowserslist: browsers
-    })
+    autoprefixer()
 ];
 
 
