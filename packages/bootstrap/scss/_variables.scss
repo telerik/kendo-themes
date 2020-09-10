@@ -1111,6 +1111,9 @@ $radio-disabled-border: null !default;
 $radio-disabled-checked-bg: null !default;
 $radio-disabled-checked-text: null !default;
 $radio-disabled-checked-border: null !default;
+$radio-invalid-bg: null !default;
+$radio-invalid-text: $invalid-text !default;
+$radio-invalid-border: $invalid-border !default;
 
 $radio-list-margin: 0px !default;
 $radio-list-padding: 0px !default;

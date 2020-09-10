@@ -73,11 +73,15 @@
 
     // Invalid
     .k-checkbox.k-invalid,
-    .k-checkbox.k-state-invalid {
+    .k-checkbox.k-state-invalid,
+    .k-checkbox.ng-invalid.ng-touched,
+    .k-checkbox.ng-invalid.ng-dirty {
         @include fill( $border: $checkbox-invalid-border );
     }
     .k-checkbox.k-invalid + .k-checkbox-label,
-    .k-checkbox.k-state-invalid + .k-checkbox-label {
+    .k-checkbox.k-state-invalid + .k-checkbox-label,
+    .k-checkbox.ng-invalid.ng-touched + .k-checkbox-label,
+    .k-checkbox.ng-invalid.ng-dirty + .k-checkbox-label {
         @include fill( $color: $checkbox-invalid-text );
     }
 }

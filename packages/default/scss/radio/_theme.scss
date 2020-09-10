@@ -28,15 +28,17 @@
 
 
     // Invalid state
+    .k-radio.k-invalid,
     .k-radio.k-state-invalid,
     .k-radio.ng-invalid.ng-touched,
     .k-radio.ng-invalid.ng-dirty {
-        @include fill( $border: $invalid-border );
+        @include fill( $border: $radio-invalid-border );
     }
+    .k-radio.k-invalid + .k-radio-label,
     .k-radio.k-state-invalid + .k-radio-label,
     .k-radio.ng-invalid.ng-touched + .k-radio-label,
     .k-radio.ng-invalid.ng-dirty + .k-radio-label {
-        @include fill( $color: $invalid-text );
+        @include fill( $color: $radio-invalid-text );
     }
 
 
