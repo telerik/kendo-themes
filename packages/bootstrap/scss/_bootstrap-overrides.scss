@@ -85,11 +85,11 @@ $theme-colors: () !default;
 
     $dropdown-bg: $component-bg !default;
     $dropdown-color: $component-color !default;
-    $dropdown-border-color: rgba( contrast-yiq( $dropdown-bg, $gray-900 ), .15 ) !default;
+    $dropdown-border-color: rgba( contrast-yiq( $dropdown-bg, $black, $white ), .15 ) !default;
 
-    $dropdown-link-color: contrast-yiq( $dropdown-bg, $gray-900 ) !default;
-    $dropdown-link-hover-color: try-darken( $dropdown-link-color, 5% ) !default;
-    $dropdown-link-hover-bg: try-darken( $dropdown-bg, 5% ) !default;
+    $dropdown-link-color: contrast-yiq( $dropdown-bg, $gray-900, $gray-100 ) !default;
+    $dropdown-link-hover-color: contrast-yiq( $dropdown-bg, darken( $dropdown-link-color, 5% ), lighten( $dropdown-link-color, 5% ) ) !default;
+    $dropdown-link-hover-bg: contrast-yiq( $dropdown-bg, $gray-100, $gray-900 ) !default;
 
     $nav-tabs-border-color: $component-border-color !default;
     $nav-tabs-link-active-bg: $component-bg !default;
