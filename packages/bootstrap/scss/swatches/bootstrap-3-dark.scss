@@ -1,0 +1,17 @@
+@import "../functions/_index.scss";
+
+
+// Settings
+$is-dark-theme: true !default;
+
+
+// Theme colors
+$black: #000000 !default;
+
+
+// Generic styles
+$body-bg: $black !default;
+
+
+// Import theme
+@import "bootstrap-3.scss"; // sass-lint:disable-line clean-import-paths
