@@ -7,10 +7,18 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        shell: bash
+
     steps:
-    - name: Tag stable version
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Add token
       env:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      run: |
-        printf "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-        ./build/tag-stable.sh
+      run: printf "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+
+    - name: Tag stable version
+      run: ./build/tag-stable.sh
