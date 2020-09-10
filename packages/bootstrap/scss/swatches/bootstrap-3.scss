@@ -5,9 +5,9 @@
 $white:    #ffffff !default;
 $gray-100: #f8f8f8 !default;
 $gray-200: #eeeeee !default;
-$gray-300: #cccccc !default;
-$gray-400: #aaaaaa !default;
-$gray-500: #999999 !default;
+$gray-300: #dddddd !default;
+$gray-400: #cccccc !default;
+$gray-500: #aaaaaa !default;
 $gray-600: #777777 !default;
 $gray-700: #555555 !default;
 $gray-800: #333333 !default;
@@ -44,17 +44,22 @@ $theme-colors: map-merge((
 
 // Generic styles
 $body-bg: $white !default;
-$body-text: $gray-800 !default;
+$body-text: contrast-yiq( $body-bg, $gray-800, $gray-100 ) !default;
+
+$border-color: contrast-yiq( $body-bg, $gray-300, $gray-700 ) !default;
 
 
 // Components
-$button-bg: $white !default;
-$button-text: $gray-800 !default;
+$component-bg: $body-bg !default;
+$component-color: contrast-yiq( $component-bg, $gray-800, $gray-100 ) !default;
+
+$button-bg: $body-bg !default;
+$button-text: contrast-yiq( $button-bg, $gray-800, $gray-100 ) !default;
 $button-border: try-shade( $button-bg, 2 ) !default;
 $button-gradient: null !default;
 
 $primary-button-bg: $primary !default;
-$primary-button-text: contrast-wcag( $primary-button-bg ) !default;
+$primary-button-text: contrast-yiq( $primary-button-bg, $black, $white ) !default;
 $primary-button-border: try-shade( $primary-button-bg, 2 ) !default;
 $primary-button-gradient: null !default;
 
