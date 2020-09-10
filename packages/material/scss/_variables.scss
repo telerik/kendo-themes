@@ -463,16 +463,6 @@ $header-text: $base-text !default;
 $header-border: $base-border !default;
 $header-gradient: null !default;
 
-$header-hovered-bg: $hovered-bg !default;
-$header-hovered-text: $hovered-text !default;
-$header-hovered-border: $hovered-border !default;
-$header-hovered-gradient: null !default;
-
-$header-selected-bg: $selected-bg !default;
-$header-selected-text: $selected-text !default;
-$header-selected-border: $selected-border !default;
-$header-selected-gradient: null !default;
-
 
 // Avatar
 $avatar-size: 32px !default;
@@ -2913,7 +2903,7 @@ $spreadsheet-drawing-handle-border-radius: $border-radius-lg !default;
 $spreadsheet-drawing-outline-style: solid !default;
 $spreadsheet-drawing-outline-width: 2px !default;
 
-$spreadsheet-drawing-anchor-bg: rgba( $header-selected-bg, .25 ) !default;
+$spreadsheet-drawing-anchor-bg: rgba( $selected-bg, .25 ) !default;
 
 
 // File manager
