@@ -431,16 +431,6 @@ $header-text: $card-cap-color !default;
 $header-border: try-darken( $header-bg, 9 ) !default;
 $header-gradient: null !default;
 
-$header-hovered-text: $header-text !default;
-$header-hovered-bg: try-darken( $header-bg, 3 ) !default;
-$header-hovered-border: $header-border !default;
-$header-hovered-gradient: null !default;
-
-$header-selected-text: $selected-text !default;
-$header-selected-bg: $selected-bg !default;
-$header-selected-border: $selected-border !default;
-$header-selected-gradient: null !default;
-
 
 // Avatar
 $avatar-size: 32px !default;
@@ -2248,15 +2238,15 @@ $panelbar-header-text: $header-text !default;
 $panelbar-header-border: $header-border !default;
 $panelbar-header-gradient: $header-gradient !default;
 
-$panelbar-header-hovered-bg: $header-hovered-bg !default;
-$panelbar-header-hovered-text: $header-hovered-text !default;
-$panelbar-header-hovered-border: $header-hovered-border !default;
-$panelbar-header-hovered-gradient: $header-hovered-gradient !default;
+$panelbar-header-hovered-bg: try-darken( $panelbar-header-bg, 3 ) !default;
+$panelbar-header-hovered-text: null !default;
+$panelbar-header-hovered-border: null !default;
+$panelbar-header-hovered-gradient: null !default;
 
-$panelbar-header-selected-bg: $header-selected-bg !default;
-$panelbar-header-selected-text: $header-selected-text !default;
-$panelbar-header-selected-border: $header-selected-border !default;
-$panelbar-header-selected-gradient: $header-selected-gradient !default;
+$panelbar-header-selected-bg: $selected-bg !default;
+$panelbar-header-selected-text: $selected-text !default;
+$panelbar-header-selected-border: $selected-border !default;
+$panelbar-header-selected-gradient: $selected-gradient !default;
 
 $panelbar-header-focused-shadow: $list-item-focused-shadow !default;
 
@@ -2862,7 +2852,7 @@ $spreadsheet-drawing-handle-border-radius: $border-radius-lg !default;
 $spreadsheet-drawing-outline-style: solid !default;
 $spreadsheet-drawing-outline-width: 2px !default;
 
-$spreadsheet-drawing-anchor-bg: rgba( $header-selected-bg, .25 ) !default;
+$spreadsheet-drawing-anchor-bg: rgba( $selected-bg, .25 ) !default;
 
 
 // File manager
