@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# exit early on error
 set -e
 
-dir=$(pwd);
+source $(pwd)/build/constants.sh
 
 if [[ $TRAVIS == true ]]
 then
@@ -23,9 +22,13 @@ else
     npm link --force
 
     # Install dependant themes
-    for pkg in bootstrap classic material nouvelle
+    for theme in $themes
     do
-        cd $dir/packages/$pkg
+        if [[ $theme == "default" ]]
+        then
+            continue
+        fi
+        cd $dir/packages/$theme
         npm link @progress/kendo-theme-default
         npm install
         npm link --force

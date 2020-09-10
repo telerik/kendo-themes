@@ -1,11 +1,10 @@
 #!/bin/bash
 
-# exit early on error
 set -e
 
-dir=$(pwd);
+source $(pwd)/build/constants.sh
 
-for pkg in default bootstrap material nouvelle theme-tasks
+for pkg in $packages
 do
     cd $dir/packages/$pkg
     npm run $1 --if-present
