@@ -40,10 +40,12 @@
     .k-svg-icon {
         width: 1em;
         height: 1em;
-        display: inline-block;
+        display: inline-flex;
+        vertical-align: middle;
 
         > svg {
             fill: currentColor;
+            flex: 1 0 auto;
         }
 
         &.k-flip-h,
