@@ -117,6 +117,7 @@
     // Form Hint/Error Messages
     .k-form-hint,
     .k-form-error {
+        margin-top: $form-hint-margin-top;
         display: flex;
         font-size: $form-hint-font-size;
         font-style: $form-hint-font-style;
