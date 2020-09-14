@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.1.0...@progress/kendo-theme-classic@0.1.1) (2020-09-14)
+
+
+### Bug Fixes
+
+* set top margin to the form hint ([f8843cf](https://github.com/telerik/kendo-themes/commit/f8843cf))
+* **gantt:** adjust planned vs actual styles telerik/kendo[#11149](https://github.com/telerik/kendo-themes/issues/11149) ([a055c1a](https://github.com/telerik/kendo-themes/commit/a055c1a))
+* remove soldomly used header-hover and header-selected variables ([9fb414f](https://github.com/telerik/kendo-themes/commit/9fb414f))
+* **gantt:** make delete over offset always visible telerik/kendo[#11149](https://github.com/telerik/kendo-themes/issues/11149) ([f89970c](https://github.com/telerik/kendo-themes/commit/f89970c))
+* **radio:** invalid radio styles are missing in kendo-jquery ([#1122](https://github.com/telerik/kendo-themes/issues/1122)) ([24d74eb](https://github.com/telerik/kendo-themes/commit/24d74eb))
+
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2020-09-08)
 

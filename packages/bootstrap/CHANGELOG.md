@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.21.0"></a>
+# [4.21.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.20.0...@progress/kendo-theme-bootstrap@4.21.0) (2020-09-14)
+
+
+### Bug Fixes
+
+* set top margin to the form hint ([f8843cf](https://github.com/telerik/kendo-themes/commit/f8843cf))
+* **gantt:** adjust planned vs actual styles telerik/kendo[#11149](https://github.com/telerik/kendo-themes/issues/11149) ([a055c1a](https://github.com/telerik/kendo-themes/commit/a055c1a))
+* change default bootstrap border color depending on document background ([579c485](https://github.com/telerik/kendo-themes/commit/579c485))
+* remove soldomly used header-hover and header-selected variables ([9fb414f](https://github.com/telerik/kendo-themes/commit/9fb414f))
+* update colors in bootstrap theme to match v4.5 ([78b1e4f](https://github.com/telerik/kendo-themes/commit/78b1e4f))
+* **card:** update card colors to match bootstrap 4.5.1 ([#787](https://github.com/telerik/kendo-themes/issues/787)) ([9b341ca](https://github.com/telerik/kendo-themes/commit/9b341ca))
+* **dropdown:** update dropdown colors to match bootstrap 4.5.1 ([#787](https://github.com/telerik/kendo-themes/issues/787)) ([1ed5e47](https://github.com/telerik/kendo-themes/commit/1ed5e47))
+* **gantt:** make delete over offset always visible telerik/kendo[#11149](https://github.com/telerik/kendo-themes/issues/11149) ([f89970c](https://github.com/telerik/kendo-themes/commit/f89970c))
+* **input:** update input border and text color to match bootstrap 4.5.1 ([9a23b87](https://github.com/telerik/kendo-themes/commit/9a23b87))
+* **listgroup:** kendo-listgroup styles did not override bootstrap-listgroup styles correctly ([d78f491](https://github.com/telerik/kendo-themes/commit/d78f491))
+* **radio:** invalid radio styles are missing in kendo-jquery ([#1122](https://github.com/telerik/kendo-themes/issues/1122)) ([24d74eb](https://github.com/telerik/kendo-themes/commit/24d74eb))
+
+
+### Features
+
+* add dark bootstrap-3 based swatch ([f848f93](https://github.com/telerik/kendo-themes/commit/f848f93))
+
+
+
+
 <a name="4.20.0"></a>
 # 4.20.0 (2020-09-08)
 

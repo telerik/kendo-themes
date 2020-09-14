@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.22.1"></a>
+## [4.22.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.22.0...@progress/kendo-theme-default@4.22.1) (2020-09-14)
+
+
+### Bug Fixes
+
+* **gantt:** adjust planned vs actual styles telerik/kendo[#11149](https://github.com/telerik/kendo-themes/issues/11149) ([a055c1a](https://github.com/telerik/kendo-themes/commit/a055c1a))
+* **listview:** remove display: flex from listview container ([3a6e7bb](https://github.com/telerik/kendo-themes/commit/3a6e7bb))
+* **listview:** remove focus ring from listview-content ([947f2fd](https://github.com/telerik/kendo-themes/commit/947f2fd))
+* remove soldomly used header-hover and header-selected variables ([9fb414f](https://github.com/telerik/kendo-themes/commit/9fb414f))
+* set top margin to the form hint ([f8843cf](https://github.com/telerik/kendo-themes/commit/f8843cf))
+* svg alignment ([5ad3888](https://github.com/telerik/kendo-themes/commit/5ad3888))
+* svg icon flip ([afe57d1](https://github.com/telerik/kendo-themes/commit/afe57d1))
+* **appbar:** add styles for appbar section ([e47f46d](https://github.com/telerik/kendo-themes/commit/e47f46d))
+* **calendar:** center content of infinite calendar when width is wider ([21dfa27](https://github.com/telerik/kendo-themes/commit/21dfa27))
+* **checkbox:** invalid checkbox styles are missing in kendo-jquery ([#1122](https://github.com/telerik/kendo-themes/issues/1122)) ([e0cd98b](https://github.com/telerik/kendo-themes/commit/e0cd98b))
+* **gantt:** columnMenu position telerik/kendo[#11149](https://github.com/telerik/kendo-themes/issues/11149) ([9b9ea02](https://github.com/telerik/kendo-themes/commit/9b9ea02))
+* **gantt:** enable setting max-height to the gantt ([d8d63e1](https://github.com/telerik/kendo-themes/commit/d8d63e1))
+* **gantt:** make delete over offset always visible telerik/kendo[#11149](https://github.com/telerik/kendo-themes/issues/11149) ([f89970c](https://github.com/telerik/kendo-themes/commit/f89970c))
+* **radio:** invalid radio styles are missing in kendo-jquery ([#1122](https://github.com/telerik/kendo-themes/issues/1122)) ([24d74eb](https://github.com/telerik/kendo-themes/commit/24d74eb))
+
+
+
+
 <a name="4.22.0"></a>
 # 4.22.0 (2020-09-08)
 
