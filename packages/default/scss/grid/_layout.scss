@@ -1303,6 +1303,7 @@
 
     .k-columnmenu-item {
         padding: $nav-item-padding-y $nav-item-padding-x;
+        outline: 0;
         cursor: pointer;
 
         > .k-icon {
