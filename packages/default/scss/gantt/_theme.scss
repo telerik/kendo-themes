@@ -225,7 +225,7 @@
 
         .k-resize-e::before {
             @include fill(
-                $border: $base-border
+                $border: $gantt-action-on-offset-text
             );
         }
 
@@ -236,6 +236,10 @@
 
     .k-task-offset:hover {
         @include repeating-striped-gradient($gantt-delayed-bg-lighter, $bg-color, 135deg, 4px, 2px);
+    }
+
+    .k-pdf-export .k-task-offset {
+        background-color: $gantt-delayed-bg;
     }
 
     // Tooltips

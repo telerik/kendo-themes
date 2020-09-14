@@ -2985,6 +2985,16 @@ $gantt-planned-milestone-moment-margin-x: $gantt-planned-moment-width !default;
 $gantt-planned-duration-height: $gantt-planned-border-width !default;
 $gantt-planned-duration-hover-height: calc( #{$gantt-planned-border-width} + 1px ) !default;
 
+$gantt-planned-single-drag-hint-top: 0 !default;
+$gantt-planned-summary-drag-hint-top: .5em !default;
+$gantt-planned-milestone-drag-hint-top: .3em !default;
+
+$gantt-rtl-milestone-wrap-margin-x: -2.4em !default;
+$gantt-rtl-milestone-planned-moment-margin-x: .2em !default;
+$gantt-rtl-milestone-dot-start-margin-x: -.1em !default;
+
+$gantt-planned-offset-resize-handler-margin-x: 1.4em !default;
+
 $gantt-planned-bg: $primary !default;
 $gantt-planned-border: $gantt-planned-bg !default;
 
@@ -2995,6 +3005,7 @@ $gantt-advanced-bg: $success !default;
 $gantt-advanced-bg-lighter: tint($gantt-advanced-bg, 5) !default;
 
 $gantt-action-on-offset-text: #000000 !default;
+$gantt-offset-resize-handler-top: 50% !default;
 
 
 // Scheduler
