@@ -234,6 +234,10 @@
             );
         }
     }
+    .k-columnmenu-item:focus,
+    .k-columnmenu-item.k-state-focus {
+        background: $list-item-hovered-bg;
+    }
 
     .k-column-menu .k-menu:not(.k-context-menu) {
 
