@@ -6,7 +6,7 @@
 
         // Selected color
         .k-selected-color {
-            margin: 8px;
+            margin: $button-padding-y;
             padding: 0;
             border-width: 1px;
             border-style: solid;
@@ -24,15 +24,6 @@
             .k-i-line::before {
                 content: "\e514";
                 display: inline;
-            }
-        }
-
-        .k-tool-icon {
-            .k-selected-color {
-                width: ($button-line-height * 1em);
-                height: 4px;
-                line-height: 0;
-                display: inline-block;
             }
         }
 
