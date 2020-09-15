@@ -8,10 +8,9 @@
             $autocomplete-bg,
             $autocomplete-border
         );
-        @include box-shadow($autocomplete-shadow);
-        @include use-background-clip();
+        @include box-shadow( $autocomplete-shadow );
 
-        // Hovered state
+        // Hover state
         &:hover,
         &.k-state-hover {
             @include fill(
@@ -19,10 +18,11 @@
                 $autocomplete-hovered-bg,
                 $autocomplete-hovered-border
             );
-            @include box-shadow($autocomplete-hovered-shadow);
+            @include box-shadow( $autocomplete-hovered-shadow );
         }
 
-        // Focused & Open state
+        // Focus state
+        &:focus-within,
         &.k-state-open,
         &.k-state-focused {
             @include fill(
@@ -30,20 +30,34 @@
                 $autocomplete-focused-bg,
                 $autocomplete-focused-border
             );
-            @include box-shadow($autocomplete-focused-shadow);
+            @include box-shadow( $autocomplete-focused-shadow );
         }
 
-        // Invalid
+        // Disabled state
+        &:disabled,
+        &.k-state-disabled {
+            @include fill(
+                $autocomplete-disabled-text,
+                $autocomplete-disabled-bg,
+                $autocomplete-disabled-border
+            );
+            @include box-shadow( $autocomplete-disabled-shadow );
+        }
+
+        // Invalid state
         &.k-invalid,
-        &.k-invalid:hover,
         &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            border-color: $invalid-border;
+            @include fill(
+                $autocomplete-invalid-text,
+                $autocomplete-invalid-bg,
+                $autocomplete-invalid-border
+            );
 
-            &:focus,
+            &:focus-within,
             &.k-state-focused {
-                @include box-shadow($invalid-shadow);
+                @include box-shadow( $autocomplete-invalid-shadow );
             }
         }
     }
