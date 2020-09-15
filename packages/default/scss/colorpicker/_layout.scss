@@ -54,6 +54,8 @@
             box-sizing: border-box;
             font-size: inherit;
             text-align: center;
+            flex-direction: column;
+            cursor: pointer;
 
             &::before {
                 font-size: $icon-size;
@@ -61,17 +63,14 @@
             }
 
             .k-selected-color {
-                margin: 0 0 12px;
+                margin: 1px 0 0;
                 padding: 0;
                 width: 14px;
                 height: 3px;
+                border-width: 0;
                 line-height: 0;
                 display: inline-block;
             }
-        }
-        .k-tool-icon:hover,
-        .k-tool-icon.k-state-hover {
-            cursor: pointer;
         }
 
         .k-picker-wrap {
