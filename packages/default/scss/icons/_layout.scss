@@ -13,8 +13,7 @@
     .k-icon {
         width: 1em;
         height: 1em;
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
+        outline: 0;
         font-size: $icon-size;
         font-family: "WebComponentsIcons";
         font-style: normal;
@@ -24,12 +23,15 @@
         speak: none;
         text-transform: none;
         text-decoration: none;
-        display: inline-block;
+        flex-shrink: 0;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
         vertical-align: middle;
-
-        &::before {
-            vertical-align: baseline;
-        }
+        position: relative;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
 
         &:hover,
         &:focus {
@@ -41,7 +43,11 @@
         width: 1em;
         height: 1em;
         display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
         vertical-align: middle;
+        position: relative;
 
         > svg {
             fill: currentColor;
