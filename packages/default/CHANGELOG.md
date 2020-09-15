@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.23.0"></a>
+# [4.23.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.22.1...@progress/kendo-theme-default@4.23.0) (2020-09-15)
+
+
+### Bug Fixes
+
+* **grid:** add styles for column menu focus items ([#1796](https://github.com/telerik/kendo-themes/issues/1796)) ([8faa5d4](https://github.com/telerik/kendo-themes/commit/8faa5d4))
+* **grid:** remove focus outline from column menu items ([#1796](https://github.com/telerik/kendo-themes/issues/1796)) ([b4af05e](https://github.com/telerik/kendo-themes/commit/b4af05e))
+* **icons:** add missing icon aliases ([817ad95](https://github.com/telerik/kendo-themes/commit/817ad95))
+* **listview:** remove focus outline from listview-item ([80a574e](https://github.com/telerik/kendo-themes/commit/80a574e))
+
+
+### Features
+
+* update icons for 2020 R3 ([#1687](https://github.com/telerik/kendo-themes/issues/1687)) ([90f4f5d](https://github.com/telerik/kendo-themes/commit/90f4f5d))
+
+
+
+
 <a name="4.22.1"></a>
 ## [4.22.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.22.0...@progress/kendo-theme-default@4.22.1) (2020-09-14)
 

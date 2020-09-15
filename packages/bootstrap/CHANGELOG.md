@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.21.1"></a>
+## [4.21.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.21.0...@progress/kendo-theme-bootstrap@4.21.1) (2020-09-15)
+
+
+### Bug Fixes
+
+* **grid:** add styles for column menu focus items ([#1796](https://github.com/telerik/kendo-themes/issues/1796)) ([8faa5d4](https://github.com/telerik/kendo-themes/commit/8faa5d4))
+
+
+
+
 <a name="4.21.0"></a>
 # [4.21.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.20.0...@progress/kendo-theme-bootstrap@4.21.0) (2020-09-14)
 
