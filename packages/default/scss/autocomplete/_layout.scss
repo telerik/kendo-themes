@@ -1,64 +1,57 @@
-@include exports("autocomplete/layout") {
+@include exports( "autocomplete/layout" ) {
 
-    // Layout
+    // Autocomplete
     .k-autocomplete {
-        @include border-radius( $input-border-radius );
-        padding: 0 $picker-select-calc-size 0 0;
-        width: $input-default-width;
-        border-width: $input-border-width;
+        @include border-radius( $autocomplete-border-radius );
+        @include use-background-clip();
+        width: $autocomplete-default-width;
+        border-width: $autocomplete-border-width;
         border-style: solid;
+        outline: 0;
         box-sizing: border-box;
-        background: none;
-        font-family: $input-font-family;
-        font-size: $input-font-size;
-        line-height: $input-line-height;
-        text-align: left;
+        font-family: $autocomplete-font-family;
+        font-size: $autocomplete-font-size;
+        line-height: $autocomplete-line-height;
         white-space: nowrap;
         display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
         vertical-align: middle;
-        transition: all .1s ease; // sass-lint:disable-block no-transition-all
+        transition: $autocomplete-transition;
         position: relative;
         cursor: default;
-        outline: 0;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
 
 
         // Input
-        .k-input {}
+        .k-input {
+            padding: $autocomplete-padding-y $autocomplete-padding-x;
+        }
 
 
         // Loading icon
         .k-i-loading {
-            height: ($input-line-height * $input-font-size);
-            line-height: ($input-line-height * $input-font-size);
-            position: absolute;
-            top: $input-padding-y;
-            right: $input-icon-offset;
+            width: $autocomplete-icon-width;
+            height: $autocomplete-icon-height;
         }
 
 
         // Clear value
         .k-clear-value {
-            height: ($input-line-height * $input-font-size);
-            line-height: ($input-line-height * $input-font-size);
+            width: $autocomplete-icon-width;
+            height: $autocomplete-icon-height;
             outline: 0;
-            cursor: pointer;
             display: none;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            cursor: pointer;
             opacity: .5;
-            position: absolute;
-            top: $input-padding-y;
-            right: $input-icon-offset;
-
 
             &:hover {
                 opacity: 1;
             }
         }
         &:hover,
+        &:focus-within,
         &.k-state-hover,
         &.k-state-focused {
             .k-clear-value {
@@ -66,22 +59,7 @@
             }
         }
 
-        &[dir="rtl"],
-        .k-rtl & {
-            padding-left: $picker-select-calc-size;
-            padding-right: 0;
-            text-align: right;
-
-            .k-i-loading {
-                right: auto;
-                left: $input-icon-offset;
-            }
-
-            .k-clear-value {
-                right: auto;
-                left: $input-icon-offset;
-            }
-        }
     }
+
 
 }
