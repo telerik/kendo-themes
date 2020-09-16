@@ -436,14 +436,6 @@ $header-border: $base-border !default;
 $header-gradient: null !default;
 
 
-// Avatar
-$avatar-size: 32px !default;
-$avatar-rounded-radius: 5px !default;
-
-$avatar-bg: $primary !default;
-$avatar-text: contrast-wcag( $avatar-bg ) !default;
-
-
 // Badge
 $badge-padding-x: $padding-x-sm !default;
 $badge-padding-y: $badge-padding-x !default;

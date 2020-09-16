@@ -1,0 +1,6 @@
+// Avatar
+$avatar-size: map-get( $spacing, 8) !default;
+$avatar-border-radius: map-get( $spacing, 1 ) !default;
+
+$avatar-bg: $primary !default;
+$avatar-text: contrast-wcag( $avatar-bg ) !default;

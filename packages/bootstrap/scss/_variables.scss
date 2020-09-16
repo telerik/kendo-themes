@@ -432,14 +432,6 @@ $header-border: $component-border !default;
 $header-gradient: null !default;
 
 
-// Avatar
-$avatar-size: 32px !default;
-$avatar-rounded-radius: 5px !default;
-
-$avatar-bg: $primary !default;
-$avatar-text: contrast-wcag( $avatar-bg ) !default;
-
-
 // Badge
 $badge-padding-x: $badge-padding-x !default;
 $badge-padding-y: $badge-padding-y !default;

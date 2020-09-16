@@ -4,10 +4,13 @@
         width: $avatar-size;
         height: $avatar-size;
         display: flex;
+        flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
     }
 
+
+    // Shapes
     .k-avatar-circle {
         @include border-radius( 50% );
 
@@ -19,15 +22,17 @@
     }
 
     .k-avatar-rounded {
-        @include border-radius( $avatar-rounded-radius );
+        @include border-radius( $avatar-border-radius );
 
         &.k-avatar-image {
             > * {
-                @include border-radius( $avatar-rounded-radius );
+                @include border-radius( $avatar-border-radius );
             }
         }
     }
 
+
+    // Avatar content
     .k-avatar-image {
         > * {
             width: $avatar-size;
