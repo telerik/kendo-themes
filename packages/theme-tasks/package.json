@@ -31,6 +31,6 @@
     "ansi-colors": "^4.1.1",
     "glob": "^7.1.6",
     "gulplog": "^1.0.0",
-    "postcss": "^7.0.32"
+    "postcss": "^8.0.3"
   }
 }
