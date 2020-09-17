@@ -1,11 +1,12 @@
 @include exports("appbar/theme") {
-    .k-appbar {
-        @include box-shadow($appbar-box-shadow);
 
-        &.k-appbar-bottom {
-            @include box-shadow($appbar-bottom-box-shadow);
-        }
+    .k-appbar {
+        @include box-shadow( $appbar-box-shadow );
     }
+    .k-appbar-bottom {
+        @include box-shadow( $appbar-bottom-box-shadow );
+    }
+
 
     // AppBar theme colors
     @each $name, $color in $theme-colors {
@@ -22,4 +23,5 @@
             }
         }
     }
+
 }
