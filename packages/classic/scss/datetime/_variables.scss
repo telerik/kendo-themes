@@ -1,0 +1,47 @@
+// DateTime
+$time-highlight-size: 1px;
+
+$time-list-highlight-color: $border-color !default;
+$time-list-focused-bg: rgba(0, 0, 0, .04) !default;
+$time-list-title-focus: black !default;
+
+$time-header-padding: null !default;
+$timepicker-header-height: 2em;
+
+$time-list-padding: $padding-y * 5 !default;
+$time-list-focus-size: 2px !default;
+$time-list-width: 5em !default;
+$time-list-height: 200px !default;
+
+$dateinput-text: null !default;
+
+$datetime-width: ((4 * $time-list-width) + 1em) !default;
+
+$datetime-bg: $input-bg !default;
+$datetime-text: $input-text !default;
+$datetime-border: $input-border !default;
+
+$datetime-hovered-bg: $input-hovered-bg !default;
+$datetime-hovered-text: $input-hovered-text !default;
+$datetime-hovered-border: $input-hovered-border !default;
+
+$datetime-focused-bg: $input-focused-bg !default;
+$datetime-focused-text: $input-focused-text !default;
+$datetime-focused-border: $input-focused-border !default;
+$datetime-focused-shadow: $input-focused-shadow !default;
+
+$datetime-select-bg: $button-bg !default;
+$datetime-select-text: $button-text !default;
+$datetime-select-border: $button-border !default;
+$datetime-select-gradient: $button-gradient !default;
+
+$datetime-select-hovered-bg: $button-hovered-bg !default;
+$datetime-select-hovered-text: $button-hovered-text !default;
+$datetime-select-hovered-border: $button-hovered-border !default;
+$datetime-select-hovered-gradient: $button-hovered-gradient !default;
+
+$datetime-select-focused-bg: null !default;
+$datetime-select-focused-text: null !default;
+$datetime-select-focused-border: null !default;
+$datetime-select-focused-gradient: null !default;
+$datetime-select-focused-shadow: $button-focused-shadow !default;
