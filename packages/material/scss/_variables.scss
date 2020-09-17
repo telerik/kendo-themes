@@ -314,7 +314,7 @@ $selected-border: rgba( if($theme-type == dark, white, black), .1 ) !default;
 $selected-gradient: null !default;
 
 $selected-hover-bg: try-shade( $selected-bg ) !default;
-$selected-hover-color: $selected-text !default;
+$selected-hover-text: $selected-text !default;
 
 $transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
 
@@ -1648,43 +1648,6 @@ $window-sizes: map-merge((
         md: 800px,
         lg: 1200px
 ), $window-sizes);
-
-
-// Drawer
-$drawer-text: $base-text !default;
-$drawer-bg: $base-bg !default;
-$drawer-border: $base-border !default;
-$drawer-border-width: 1px !default;
-$drawer-font-family: $font-family !default;
-$drawer-font-size: $font-size !default;
-$drawer-line-height: $line-height !default;
-$drawer-content-padding-x: $padding-x !default;
-$drawer-content-padding-y: $padding-y !default;
-
-$drawer-scrollbar-width: 7px !default;
-$drawer-scrollbar-color: rgba(156, 156, 156, .7) !default;
-$drawer-scrollbar-bg: #dedede !default;
-$drawer-scrollbar-radius: 20px !default;
-$drawer-scrollbar-hovered-color: rgba(156, 156, 156, 1) !default;
-
-$drawer-item-padding-x: $padding-x !default;
-$drawer-item-padding-y: 12px !default;
-$drawer-item-font-size: 16px !default;
-$drawer-item-line-height: $line-height-lg !default;
-$drawer-icon-size: $icon-size !default;
-
-$drawer-mini-initial-width: calc(2 * #{$drawer-item-padding-x} + #{$drawer-icon-size}) !default;
-
-$drawer-hovered-text: $hovered-text !default;
-$drawer-hovered-bg: $hovered-bg !default;
-
-$drawer-focused-bg: $hovered-bg !default;
-$drawer-focused-shadow: none !default;
-
-$drawer-selected-text: $secondary !default;
-$drawer-selected-bg: $base-bg !default;
-$drawer-selected-hover-text:  $secondary !default;
-$drawer-selected-hover-bg: $hovered-bg !default;
 
 
 // Notification
