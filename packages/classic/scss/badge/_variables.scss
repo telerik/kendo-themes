@@ -1,0 +1,36 @@
+// Badge
+$badge-padding-x: $padding-x-sm !default;
+$badge-padding-y: $badge-padding-x !default;
+$badge-border-width: 1px !default;
+$badge-border-radius: $border-radius !default;
+$badge-font-size: $font-size-xs !default;
+$badge-line-height: 1 !default;
+
+$badge-padding-x-sm: ( $badge-padding-x / 2 ) !default;
+$badge-padding-y-sm: ( $badge-padding-y / 2 ) !default;
+$badge-border-width-sm: $badge-border-width !default;
+$badge-border-radius-sm: $border-radius-sm !default;
+$badge-font-size-sm: $font-size-xs !default;
+$badge-line-height-sm: 1 !default;
+
+$badge-padding-x-lg: ( $badge-padding-x * 1.5 ) !default;
+$badge-padding-y-lg: ( $badge-padding-y * 1.5 ) !default;
+$badge-border-width-lg: $badge-border-width !default;
+$badge-border-radius-lg: $border-radius-lg !default;
+$badge-font-size-lg: $font-size-sm !default;
+$badge-line-height-lg: 1 !default;
+
+$badge-fixed-size: 20px !default;
+$badge-calc-size: calc( #{$badge-line-height * 1em} + #{$badge-padding-y * 2} + #{$badge-border-width * 2} ) !default;
+$badge-size: if( $use-calc-badge-size, $badge-calc-size, $badge-fixed-size );
+$badge-dot-size: 10px;
+
+$badge-fixed-size-sm: 16px !default;
+$badge-calc-size-sm: calc( #{$badge-line-height-sm * 1em} + #{$badge-padding-y-sm * 2} + #{$badge-border-width-sm * 2} ) !default;
+$badge-size-sm: if( $use-calc-badge-size, $badge-calc-size-sm, $badge-fixed-size-sm );
+$badge-dot-size-sm: 6px;
+
+$badge-fixed-size-lg: 26px !default;
+$badge-calc-size-lg: calc( #{$badge-line-height-lg * 1em} + #{$badge-padding-y-lg * 2} + #{$badge-border-width-lg * 2} ) !default;
+$badge-size-lg: if( $use-calc-badge-size, $badge-calc-size-lg, $badge-fixed-size-lg );
+$badge-dot-size-lg: 12px;
