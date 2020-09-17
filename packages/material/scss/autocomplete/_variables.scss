@@ -1,0 +1,43 @@
+$autocomplete-default-width: $input-default-width !default;
+
+$autocomplete-padding-x: $input-padding-x !default;
+$autocomplete-padding-y: $input-padding-y !default;
+
+$autocomplete-border-width: 0 0 $input-border-width !default;
+$autocomplete-border-radius: $input-border-radius !default;
+
+$autocomplete-font-family: $input-font-family !default;
+$autocomplete-font-size: $input-font-size !default;
+$autocomplete-line-height: $input-line-height !default;
+
+$autocomplete-icon-width: calc( #{$icon-size} + #{$autocomplete-padding-y * 2} ) !default;
+$autocomplete-icon-height: calc( #{$autocomplete-line-height * $autocomplete-font-size} + #{$autocomplete-padding-y * 2} ) !default;
+
+$autocomplete-transition: all .1s ease !default;
+
+
+// Autocomplete
+$autocomplete-bg: $input-bg !default;
+$autocomplete-text: $input-text !default;
+$autocomplete-border: $input-border !default;
+$autocomplete-shadow: $input-shadow !default;
+
+$autocomplete-hovered-bg: $input-hovered-bg !default;
+$autocomplete-hovered-text: $input-hovered-text !default;
+$autocomplete-hovered-border: $input-hovered-border !default;
+$autocomplete-hovered-shadow: $input-hovered-shadow !default;
+
+$autocomplete-focused-bg: $input-focused-bg !default;
+$autocomplete-focused-text: $input-focused-text !default;
+$autocomplete-focused-border: $input-focused-border !default;
+$autocomplete-focused-shadow: $input-focused-shadow !default;
+
+$autocomplete-disabled-bg: null !default;
+$autocomplete-disabled-text: null !default;
+$autocomplete-disabled-border: null !default;
+$autocomplete-disabled-shadow: null !default;
+
+$autocomplete-invalid-bg: null !default;
+$autocomplete-invalid-text: null !default;
+$autocomplete-invalid-border: $invalid-border !default;
+$autocomplete-invalid-shadow: $invalid-shadow !default;
