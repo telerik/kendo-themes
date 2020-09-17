@@ -48,13 +48,7 @@ The repository uses [lerna](https://github.com/lerna/lerna/) to ship the multipl
 
 To set up the monorepo:
 
-Run the `build/install.sh` file. To do that, on the root level of the repository, run the following row in a Git Bash:
-
-  > `./build/install.sh`
-
-To perform a clean setup (remove existing node_modules) of the monorepo, on the root level of the repository, run the following row in a Git Bash:
-
-  > `./build/clean-install.sh`
+Just run `npm install` in the root directory. Using node hooks, the command will clean the repo, install it and link the files.
 
 The following commands have to be run in the root of the repository and help you check if various tasks are accomplished successfully:
 
