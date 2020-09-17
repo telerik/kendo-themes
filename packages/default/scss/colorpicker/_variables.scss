@@ -1,0 +1,53 @@
+// Colorpicker
+$colorpicker-rect-padding: $padding-x !default;
+$colorpicker-margin: 8px !default;
+$colorpicker-width: 310px !default;
+$colorpicker-border-width: 1px !default;
+$colorpicker-font-family: $font-family !default;
+$colorpicker-font-size: $font-size !default;
+$colorpicker-line-height: $line-height !default;
+$colorpicker-draghandle-width: 14px !default;
+$colorpicker-draghandle-height: 14px !default;
+$colorpicker-slider-track-size: 10px !default;
+$colorpicker-slider-border-radius: 10px !default;
+$colorpicker-hex-input-width: 65px !default;
+$colorpicker-input-width: 48px !default;
+$colorpicker-input-padding-x: $input-padding-y !default;
+$colorpicker-input-padding-y: $input-padding-y !default;
+
+$colorpicker-select-border-width: 1px !default;
+
+$colorpicker-bg: $input-bg !default;
+$colorpicker-text: $input-text !default;
+$colorpicker-border: $input-border !default;
+
+$colorpicker-hovered-bg: null !default;
+$colorpicker-hovered-text: null !default;
+$colorpicker-hovered-border: null !default;
+
+$colorpicker-focused-bg: null !default;
+$colorpicker-focused-text: null !default;
+$colorpicker-focused-border: null !default;
+$colorpicker-focused-shadow: null !default;
+
+$colorpicker-select-bg: $button-bg !default;
+$colorpicker-select-text: $button-text !default;
+$colorpicker-select-border: $button-border !default;
+$colorpicker-select-gradient: $button-gradient !default;
+
+$colorpicker-select-hovered-bg: $button-hovered-bg !default;
+$colorpicker-select-hovered-text: $button-hovered-text !default;
+$colorpicker-select-hovered-border: $button-hovered-border !default;
+$colorpicker-select-hovered-gradient: $button-hovered-gradient !default;
+
+$colorpicker-select-focused-bg: $button-pressed-bg !default;
+$colorpicker-select-focused-text: $button-pressed-text !default;
+$colorpicker-select-focused-border: $button-pressed-border !default;
+$colorpicker-select-focused-gradient: $button-pressed-gradient !default;
+$colorpicker-select-pressed-shadow: $button-pressed-shadow !default;
+$colorpicker-select-focused-shadow: $button-focused-shadow !default;
+
+$colorpicker-tool-icon-hovered-border: rgba(0, 0, 0, .08) !default;
+
+$colorpalette-hovered-shadow: 0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .8 ) !default;
+$colorpalette-focused-shadow: 0 1px 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, 1 ) !default;
