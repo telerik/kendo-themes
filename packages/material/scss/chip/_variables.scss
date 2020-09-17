@@ -1,0 +1,94 @@
+// Chip
+$chips-margin: 8px !default;
+
+$chip-padding-x: 4px !default;
+$chip-padding-y: 4px !default;
+$chip-height: 32px !default;
+$chip-border-radius: $chip-height / 2 !default;
+$chip-font-size: 14px !default;
+
+$chip-selected-icon-size: 24px !default;
+$chip-selected-icon-offset: 4px !default;
+$chip-selected-icon-no-icon-offset: 0px !default;
+$chip-selected-icon-font-size: $chip-font-size !default;
+
+$chip-content-padding-x: 8px !default;
+
+$chip-icons-size: 24px !default;
+$chip-icon-margin: 0px !default;
+$chip-remove-icon-margin: 0px !default;
+$chip-remove-icon-font-size: 14px !default;
+
+$chip-avatar-size: 24px !default;
+
+$chip-filled-bg: #e0e0e0 !default;
+$chip-filled-text: $body-text !default;
+$chip-filled-border: transparent !default;
+
+$chip-filled-hovered-bg: #d8d8d8 !default;
+$chip-filled-hovered-border: transparent !default;
+
+$chip-filled-focused-bg: #c2c2c2 !default;
+$chip-filled-focused-shadow: none !default;
+
+$chip-filled-selected-bg: #c2c2c2 !default;
+$chip-filled-selected-border: transparent !default;
+
+$chip-filled-success-bg: rgba($success, .12) !default;
+$chip-filled-success-text: $success !default;
+$chip-filled-success-border: transparent !default;
+
+$chip-filled-warning-bg: rgba($warning, .12) !default;
+$chip-filled-warning-text: $warning !default;
+$chip-filled-warning-border: transparent !default;
+
+$chip-filled-error-bg: rgba($error, .12) !default;
+$chip-filled-error-text: $error !default;
+$chip-filled-error-border: transparent !default;
+
+$chip-filled-info-bg: rgba($info, .12) !default;
+$chip-filled-info-text: $info !default;
+$chip-filled-info-border: transparent !default;
+
+$chip-outline-bg: transparent !default;
+$chip-outline-text: $body-text !default;
+$chip-outline-border: rgba(0, 0, 0, .2) !default;
+
+$chip-outline-hovered-bg: #f6f6f6 !default;
+$chip-outline-hovered-text: $chip-outline-text !default;
+$chip-outline-hovered-border: $chip-outline-border !default;
+
+$chip-outline-focused-bg: #e0e0e0 !default;
+$chip-outline-focused-text: $chip-outline-text !default;
+$chip-outline-focused-border: $chip-outline-border !default;
+$chip-outline-focused-shadow: none !default;
+
+$chip-outline-selected-bg: #e0e0e0 !default;
+$chip-outline-selected-text: $chip-outline-text !default;
+
+$chip-outline-success-bg: transparent !default;
+$chip-outline-success-text: $success !default;
+$chip-outline-success-border: rgba($success, .54) !default;
+
+$chip-outline-warning-bg: transparent !default;
+$chip-outline-warning-text: $warning !default;
+$chip-outline-warning-border: rgba($warning, .54) !default;
+
+$chip-outline-error-bg: transparent !default;
+$chip-outline-error-text: $error !default;
+$chip-outline-error-border: rgba($error, .54) !default;
+
+$chip-outline-info-bg: transparent !default;
+$chip-outline-info-text: $info !default;
+$chip-outline-info-border: rgba($info, .54) !default;
+
+$chip-filled-single-selected-bg: rgba($primary, .12) !default;
+$chip-filled-single-selected-text: $primary !default;
+$chip-filled-single-selected-border: transparent !default;
+
+$chip-outline-single-selected-bg: $chip-filled-single-selected-bg !default;
+$chip-outline-single-selected-text: $primary !default;
+$chip-outline-single-selected-border: $primary !default;
+
+$chip-multiple-selected-icon-bg: rgba(0, 0, 0, .36) !default;
+$chip-multiple-selected-icon-text: #ffffff !default;
