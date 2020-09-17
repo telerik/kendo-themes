@@ -3,13 +3,13 @@
 @include exports( "autocomplete/layout/material" ) {
 
     .k-autocomplete {
-        border-width: 0 0 $input-border-width;
 
         // Disabled
-        .k-state-disabled > &,
+        &[disabled],
         &.k-state-disabled {
             border-bottom-style: dashed;
         }
+
     }
 
 }

@@ -1,9 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/autocomplete/_layout.scss";
-
-@include exports("autocomplete/layout/bootstrap") {
-
-    .k-autocomplete {
-        transition: $transition;
-    }
-
-}

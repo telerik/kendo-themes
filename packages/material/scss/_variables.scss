@@ -464,14 +464,6 @@ $header-border: $base-border !default;
 $header-gradient: null !default;
 
 
-// Avatar
-$avatar-size: 32px !default;
-$avatar-rounded-radius: 5px !default;
-
-$avatar-bg: $primary !default;
-$avatar-text: contrast-wcag( $avatar-bg ) !default;
-
-
 // Badge
 $badge-padding-x: $padding-y !default;
 $badge-padding-y: $badge-padding-x !default;
@@ -1207,23 +1199,6 @@ $popup-border: $component-border !default;
 $popup-shadow: 0 2px 4px -1px rgba( $elevation, .2 ), 0 4px 5px 0 rgba( $elevation, .14 ), 0 1px 10px 0 rgba( $elevation , .12 ) !default;
 
 
-// Autocomplete
-$autocomplete-bg: $input-bg !default;
-$autocomplete-text: $input-text !default;
-$autocomplete-border: $input-border !default;
-$autocomplete-shadow: $input-shadow !default;
-
-$autocomplete-hovered-bg: $input-hovered-bg !default;
-$autocomplete-hovered-text: $input-hovered-text !default;
-$autocomplete-hovered-border: $input-hovered-border !default;
-$autocomplete-hovered-shadow: $input-hovered-shadow !default;
-
-$autocomplete-focused-bg: $input-focused-bg !default;
-$autocomplete-focused-text: $input-focused-text !default;
-$autocomplete-focused-border: $input-focused-border !default;
-$autocomplete-focused-shadow: $input-focused-shadow !default;
-
-
 // ColorPicker
 $colorpicker-rect-padding: $padding-x * 1.5 !default;
 $colorpicker-margin: 8px !default;
@@ -1865,28 +1840,6 @@ $actions-border: null !default;
 $actions-gradient: null !default;
 
 $actions-stretched-border: $base-border !default;
-
-
-// Appbar
-$appbar-margin-y: null !default;
-$appbar-margin-x: null !default;
-$appbar-padding-y: map-get( $spacing, 2 ) !default;
-$appbar-padding-x: map-get( $spacing, 6 ) !default;
-$appbar-border-width: 0px !default;
-
-$appbar-font-size: $font-size !default;
-$appbar-line-height: $line-height !default;
-$appbar-font-family: $font-family !default;
-$appbar-gap: map-get( $spacing, 2 ) !default;
-
-$appbar-light-bg: #ffffff !default;
-$appbar-light-text: #000000 !default;
-
-$appbar-dark-bg: #121212 !default;
-$appbar-dark-text: rgba(#ffffff, .87) !default;
-
-$appbar-box-shadow: 0px 2px 3px rgba(0, 0, 0, .24);
-$appbar-bottom-box-shadow:  0px -2px 3px rgba(0, 0, 0, .24);
 
 
 // Toolbar
