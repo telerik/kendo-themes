@@ -1,0 +1,56 @@
+// Breadcrumb
+$breadcrumb-margin-x: null !default;
+$breadcrumb-margin-y: null !default;
+$breadcrumb-padding-x: null !default;
+$breadcrumb-padding-y: null !default;
+$breadcrumb-border-width: 0px !default;
+
+$breadcrumb-font-family: $font-family !default;
+$breadcrumb-font-size: $font-size !default;
+$breadcrumb-line-height: $line-height !default;
+
+$breadcrumb-bg: $component-bg !default;
+$breadcrumb-text: $component-text !default;
+$breadcrumb-border: $component-border !default;
+
+$breadcrumb-delimiter-icon-font-size: $icon-size * .75 !default;
+$breadcrumb-delimiter-icon-padding-x: $padding-x-lg / 2 !default;
+$breadcrumb-delimiter-icon-padding-y: 0px !default;
+
+$breadcrumb-link-padding-x: $padding-x !default;
+$breadcrumb-link-padding-y: $padding-y-lg !default;
+$breadcrumb-link-border-radius: $border-radius !default;
+
+$breadcrumb-icon-link-padding-x: $breadcrumb-link-padding-x !default;
+$breadcrumb-icon-link-padding-y: $breadcrumb-icon-link-padding-x !default;
+
+$breadcrumb-root-link-spacing: $breadcrumb-link-padding-x !default;
+$breadcrumb-link-icon-spacing: $icon-spacing !default;
+
+$breadcrumb-link-text: $link-text !default;
+$breadcrumb-link-bg: null !default;
+$breadcrumb-link-border: null !default;
+
+$breadcrumb-link-hovered-text: $link-hover-text !default;
+$breadcrumb-link-hovered-bg: $base-bg !default;
+$breadcrumb-link-hovered-border: null !default;
+
+$breadcrumb-link-focused-text: $link-text !default;
+$breadcrumb-link-focused-bg: null !default;
+$breadcrumb-link-focused-border: null !default;
+$breadcrumb-link-focused-shadow: $focused-shadow !default;
+
+$breadcrumb-root-link-text: inherit !default;
+$breadcrumb-root-link-bg: null !default;
+$breadcrumb-root-link-border: null !default;
+
+$breadcrumb-root-link-hovered-text: null !default;
+$breadcrumb-root-link-hovered-bg: $base-bg !default;
+$breadcrumb-root-link-hovered-border: null !default;
+
+$breadcrumb-root-link-focused-text: null !default;
+$breadcrumb-root-link-focused-bg: null !default;
+$breadcrumb-root-link-focused-border: null !default;
+$breadcrumb-root-link-focused-shadow: $breadcrumb-link-focused-shadow !default;
+
+$breadcrumb-focused-shadow: 0 0 2px 1px rgba(0, 0, 0, .06) !default;
