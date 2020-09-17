@@ -1,0 +1,34 @@
+// Comboboxes
+$combobox-select-padding-x: 0px !default;
+$combobox-select-padding-y: 0px !default;
+$combobox-select-width: $button-inner-calc-size !default;
+$combobox-select-border-width: 0px !default;
+
+$combobox-bg: $input-bg !default;
+$combobox-text: $input-text !default;
+$combobox-border: $input-border !default;
+
+$combobox-hovered-bg: $input-hovered-bg !default;
+$combobox-hovered-text: $input-hovered-text !default;
+$combobox-hovered-border: $input-hovered-border !default;
+
+$combobox-focused-bg: $input-focused-bg !default;
+$combobox-focused-text: $input-focused-text !default;
+$combobox-focused-border: $input-focused-border !default;
+$combobox-focused-shadow: $input-focused-shadow !default;
+
+$combobox-select-bg: $button-bg !default;
+$combobox-select-text: $button-text !default;
+$combobox-select-border: $button-border !default;
+$combobox-select-gradient: $button-gradient !default;
+
+$combobox-select-hovered-bg: $button-hovered-bg !default;
+$combobox-select-hovered-text: $button-hovered-text !default;
+$combobox-select-hovered-border: $button-hovered-border !default;
+$combobox-select-hovered-gradient: $button-hovered-gradient !default;
+
+$combobox-select-focused-bg: $button-pressed-bg !default;
+$combobox-select-focused-text: $button-pressed-text !default;
+$combobox-select-focused-border: $button-pressed-border !default;
+$combobox-select-focused-gradient: $button-pressed-gradient !default;
+$combobox-select-focused-shadow: $button-pressed-shadow !default;

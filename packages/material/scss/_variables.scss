@@ -1216,42 +1216,6 @@ $colorpalette-hovered-shadow: 0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgb
 $colorpalette-focused-shadow: 0 1px 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, 1 ) !default;
 
 
-// Comboboxes
-$combobox-select-padding-x: ($button-padding-y / 2) !default;
-$combobox-select-padding-y: $button-padding-y !default;
-$combobox-select-width: auto !default;
-$combobox-select-border-width: 1px !default;
-
-$combobox-bg: $input-bg !default;
-$combobox-text: $input-text !default;
-$combobox-border: $input-border !default;
-
-$combobox-hovered-bg: $input-hovered-bg !default;
-$combobox-hovered-text: $input-hovered-text !default;
-$combobox-hovered-border: $input-hovered-border !default;
-
-$combobox-focused-bg: $input-focused-bg !default;
-$combobox-focused-text: $input-focused-text !default;
-$combobox-focused-border: $input-focused-border !default;
-$combobox-focused-shadow: $input-focused-shadow !default;
-
-$combobox-select-bg: $button-bg !default;
-$combobox-select-text: $button-text !default;
-$combobox-select-border: $button-border !default;
-$combobox-select-gradient: $button-gradient !default;
-
-$combobox-select-hovered-bg: $button-hovered-bg !default;
-$combobox-select-hovered-text: $button-hovered-text !default;
-$combobox-select-hovered-border: $button-hovered-border !default;
-$combobox-select-hovered-gradient: $button-hovered-gradient !default;
-
-$combobox-select-focused-bg: null !default;
-$combobox-select-focused-text: null !default;
-$combobox-select-focused-border: null !default;
-$combobox-select-focused-gradient: null !default;
-$combobox-select-focused-shadow: null !default;
-
-
 // Dropdownlists
 $dropdownlist-text: $input-text !default;
 $dropdownlist-bg: null !default;
