@@ -325,6 +325,13 @@
         width: 200px;
     }
 
+    .k-chat .k-card-deck-scrollwrap {
+        margin-right: -$chat-message-list-padding-y;
+        margin-left: -$chat-message-list-padding-y;
+        padding-left: $chat-message-list-padding-y;
+        padding-right: $chat-message-list-padding-y;
+    }
+
     .k-chat .k-card-deck-scrollwrap > .k-card-deck {
         // hide scrollbar in chat
         $scrollbar-size: 20px;

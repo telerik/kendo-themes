@@ -1,0 +1,79 @@
+// Chat
+$chat-padding-x: 16px !default;
+$chat-padding-y: 16px !default;
+$chat-border-width: 1px !default;
+$chat-font-family: $font-family !default;
+$chat-font-size: $font-size !default;
+$chat-line-height: $line-height !default;
+
+$chat-item-spacing-x: 8px !default;
+$chat-item-spacing-y: 16px !default;
+
+$chat-message-list-padding-x: $chat-padding-x !default;
+$chat-message-list-padding-y: $chat-padding-y !default;
+$chat-message-list-spacing: $chat-item-spacing-y !default;
+
+$chat-bubble-padding-x: 12px !default;
+$chat-bubble-padding-y: 8px !default;
+$chat-bubble-spacing: 2px !default;
+$chat-bubble-line-height: 18px !default;
+
+$chat-bubble-border-radius: 12px !default;
+$chat-bubble-border-radius-sm: 2px !default;
+
+$chat-avatar-size: 32px !default;
+$chat-avatar-spacing: $chat-item-spacing-x !default;
+
+$chat-message-box-padding-x: $chat-padding-x !default;
+$chat-message-box-padding-y: 10px !default;
+
+$chat-toolbar-padding-x: $chat-padding-x !default;
+$chat-toolbar-padding-y: 10px !default;
+$chat-toolbar-spacing: 20px !default;
+$chat-toolbar-bg: $toolbar-bg !default;
+$chat-toolbar-text: $toolbar-text !default;
+$chat-toolbar-border: inherit !default;
+
+$chat-quick-reply-padding-x: 12px !default;
+$chat-quick-reply-padding-y: 8px !default;
+$chat-quick-reply-spacing: 8px !default;
+$chat-quick-reply-line-height: $chat-bubble-line-height !default;
+
+
+$chat-bg: $app-bg !default;
+$chat-text: $app-text !default;
+$chat-border: $app-border !default;
+
+$chat-bubble-bg: $component-bg !default;
+$chat-bubble-text: $component-text !default;
+$chat-bubble-border: $chat-bubble-bg !default;
+$chat-bubble-shadow: 0 1px 2px rgba( 0, 0, 0, .08) !default;
+$chat-bubble-hover-shadow: 0 1px 2px rgba( 0, 0, 0, .16) !default;
+$chat-bubble-selected-shadow: 0 3px 10px rgba( 0, 0, 0, .16) !default;
+
+$chat-alt-bubble-bg: $primary !default;
+$chat-alt-bubble-text: contrast-wcag( $chat-alt-bubble-bg ) !default;
+$chat-alt-bubble-border: $chat-alt-bubble-bg !default;
+$chat-alt-bubble-shadow: 0 1px 2px rgba( $chat-alt-bubble-bg, .2 ) !default;
+$chat-alt-bubble-hover-shadow: 0 1px 2px rgba( $chat-alt-bubble-bg, .2 ) !default;
+$chat-alt-bubble-selected-shadow: 0 3px 10px rgba( $chat-alt-bubble-bg, .4 ) !default;
+
+$chat-quick-reply-bg: transparent !default;
+$chat-quick-reply-text: $primary !default;
+$chat-quick-reply-border: $primary !default;
+
+$chat-quick-reply-hover-bg: $primary !default;
+$chat-quick-reply-hover-text: $primary-contrast !default;
+$chat-quick-reply-hover-border: $primary !default;
+
+$chat-message-box-bg: $input-bg !default;
+$chat-message-box-text: $input-text !default;
+$chat-message-box-border: inherit !default;
+$chat-message-box-focus-shadow: 0 0 40px rgba( $input-text, .1 ) !default;
+
+$chat-message-box-button-hover-text: $primary !default;
+
+$chat-toolbar-box-button-hover-text: $primary !default;
+$chat-toolbar-box-button-hover-bg: none !default;
+
+$chat-toolbar-box-scroll-button-shadow: 0 0 20px 5px $chat-bg !default;
