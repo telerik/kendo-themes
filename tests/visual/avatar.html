@@ -9,7 +9,10 @@
 
     <style>
         #test-area {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 200px repeat(6, 1fr);
+        }
+        .k-avatar-image {
+            background-image: url("https://demos.telerik.com/kendo-ui/content/web/Customers/SPLIR.jpg");
         }
     </style>
 </head>
@@ -17,42 +20,220 @@
 
     <div id="test-area" class="grid">
 
-        <kendo-avatar class="k-avatar k-avatar-circle k-avatar-image" style="width: 32px; height: 32px;">
-            <div style="background-image: url(&quot;https://demos.telerik.com/kendo-ui/content/web/Customers/SPLIR.jpg&quot;);"></div>
+        <span></span>
+        <span class="col-2">Image</span>
+        <span class="col-2">Icon</span>
+        <span class="col-2">Initials</span>
+
+
+        <span>primary</span>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-primary k-avatar-solid">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-primary k-avatar-outline">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-primary k-avatar-solid">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-primary k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-primary k-avatar-solid">
+            <span class="k-avatar-initials">JO</span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-primary k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-initials">JO</span>
         </kendo-avatar>
 
-        <kendo-avatar class="k-avatar k-avatar-circle k-avatar-initials" style="width: 32px; height: 32px;">
-            <span>JO</span>
+
+        <span>secondary</span>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-secondary k-avatar-solid">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-secondary k-avatar-outline">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-secondary k-avatar-solid">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-secondary k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-secondary k-avatar-solid">
+            <span class="k-avatar-initials">JO</span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-secondary k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-initials">JO</span>
         </kendo-avatar>
 
-        <kendo-avatar class="k-avatar k-avatar-circle k-avatar-icon" style="width: 32px;height: 32px;">
-            <span class="k-icon k-i-close"></span>
+
+        <span>tertiary</span>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-tertiary k-avatar-solid">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-tertiary k-avatar-outline">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-tertiary k-avatar-solid">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-tertiary k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-tertiary k-avatar-solid">
+            <span class="k-avatar-initials">JO</span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-tertiary k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-initials">JO</span>
         </kendo-avatar>
 
-        <kendo-avatar class="k-avatar k-avatar-rounded k-avatar-image" style="width: 32px; height: 32px;">
-            <div style="background-image: url(&quot;https://demos.telerik.com/kendo-ui/content/web/Customers/SPLIR.jpg&quot;);"></div>
+
+        <span>info</span>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-info k-avatar-solid">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-info k-avatar-outline">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-info k-avatar-solid">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-info k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-info k-avatar-solid">
+            <span class="k-avatar-initials">JO</span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-info k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-initials">JO</span>
         </kendo-avatar>
 
-        <kendo-avatar class="k-avatar k-avatar-rounded k-avatar-initials" style="width: 32px; height: 32px;">
-            <span>JO</span>
+
+        <span>success</span>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-success k-avatar-solid">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-success k-avatar-outline">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-success k-avatar-solid">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-success k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-success k-avatar-solid">
+            <span class="k-avatar-initials">JO</span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-success k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-initials">JO</span>
         </kendo-avatar>
 
-        <kendo-avatar class="k-avatar k-avatar-rounded k-avatar-icon" style="width: 32px;height: 32px;">
-            <span class="k-icon k-i-close"></span>
+
+        <span>warning</span>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-warning k-avatar-solid">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-warning k-avatar-outline">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-warning k-avatar-solid">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-warning k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-warning k-avatar-solid">
+            <span class="k-avatar-initials">JO</span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-warning k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-initials">JO</span>
         </kendo-avatar>
 
-        <kendo-avatar class="k-avatar k-avatar-square k-avatar-image" style="width: 32px; height: 32px;">
-            <div style="background-image: url(&quot;https://demos.telerik.com/kendo-ui/content/web/Customers/SPLIR.jpg&quot;);"></div>
+
+        <span>error</span>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-error k-avatar-solid">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-error k-avatar-outline">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-error k-avatar-solid">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-error k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-error k-avatar-solid">
+            <span class="k-avatar-initials">JO</span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-error k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-initials">JO</span>
         </kendo-avatar>
 
-        <kendo-avatar class="k-avatar k-avatar-square k-avatar-initials" style="width: 32px; height: 32px;">
-            <span>JO</span>
+
+        <span>dark</span>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-dark k-avatar-solid">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-dark k-avatar-outline">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-dark k-avatar-solid">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-dark k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-dark k-avatar-solid">
+            <span class="k-avatar-initials">JO</span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-dark k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-initials">JO</span>
         </kendo-avatar>
 
-        <kendo-avatar class="k-avatar k-avatar-square k-avatar-icon" style="width: 32px;height: 32px;">
-            <span class="k-icon k-i-close"></span>
+
+        <span>light</span>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-light k-avatar-solid">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-light k-avatar-outline">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-light k-avatar-solid">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-light k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-light k-avatar-solid">
+            <span class="k-avatar-initials">JO</span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-light k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-initials">JO</span>
         </kendo-avatar>
 
+
+        <span>inverse</span>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-inverse k-avatar-solid">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-inverse k-avatar-outline">
+            <div class="k-avatar-image"></div>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-inverse k-avatar-solid">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-inverse k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-icon k-icon k-i-close"></span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-inverse k-avatar-solid">
+            <span class="k-avatar-initials">JO</span>
+        </kendo-avatar>
+        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-inverse k-avatar-outline k-avatar-bordered">
+            <span class="k-avatar-initials">JO</span>
+        </kendo-avatar>
     </div>
 
 </body>
