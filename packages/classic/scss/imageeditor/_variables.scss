@@ -1,0 +1,41 @@
+// ImageEditor
+$imageeditor-margin-y: null !default;
+$imageeditor-margin-x: null !default;
+$imageeditor-padding-y: null !default;
+$imageeditor-padding-x: null !default;
+
+$imageeditor-border-width: 0px !default;
+$imageeditor-font-size: $font-size !default;
+$imageeditor-line-height: $line-height !default;
+$imageeditor-font-family: $font-family !default;
+
+$imageeditor-content-border-width: 1px !default;
+
+$imageeditor-action-pane-padding-y: map-get( $spacing, 8 ) !default;
+$imageeditor-action-pane-padding-x: map-get( $spacing, 4 ) !default;
+
+$imageeditor-crop-border-width: 1px !default;
+$imageeditor-crop-border-style: dashed !default;
+
+$imageeditor-resize-handle-margin-x: 1px !default;
+$imageeditor-resize-handle-margin-y: 1px !default;
+$imageeditor-resize-handle-border-width: 0 2px 2px 0 !default;
+$imageeditor-resize-handle-size: 15px !default;
+
+$imageeditor-bg: $component-bg !default;
+$imageeditor-text: $component-text !default;
+$imageeditor-border: $component-border !default;
+
+$imageeditor-content-bg: darken($component-bg, 22.5%) !default;
+$imageeditor-content-text: null !default;
+$imageeditor-content-border: null !default;
+
+$imageeditor-action-pane-text: null !default;
+$imageeditor-action-pane-bg: $base-bg !default;
+$imageeditor-action-pane-border: $base-border !default;
+
+$imageeditor-crop-text: null !default;
+$imageeditor-crop-bg: null !default;
+$imageeditor-crop-border: white !default;
+
+$imageeditor-crop-overlay-bg: rgba(black, .3) !default;
