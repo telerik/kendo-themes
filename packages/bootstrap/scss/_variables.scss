@@ -2585,6 +2585,8 @@ $imageeditor-crop-text: null !default;
 $imageeditor-crop-bg: null !default;
 $imageeditor-crop-border: white !default;
 
+$imageeditor-crop-overlay-bg: rgba(black, .3) !default;
+
 
 // Backdrop (Overlay)
 $backdrop-bg: $modal-backdrop-bg !default;
