@@ -1,6 +1,21 @@
 // Avatar
-$avatar-size: map-get( $spacing, 8) !default;
+$avatar-border-width: 1px !default;
 $avatar-border-radius: map-get( $spacing, 1 ) !default;
 
-$avatar-bg: $primary !default;
-$avatar-text: contrast-wcag( $avatar-bg ) !default;
+$avatar-font-family: $font-family !default;
+$avatar-font-size: $font-size !default;
+$avatar-line-height: $line-height !default;
+
+
+$avatar-sizes: () !default;
+// sass-lint:disable indentation
+$avatar-sizes: map-merge((
+    sm: map-get( $spacing, 4 ),
+    md: map-get( $spacing, 8 ),
+    lg: map-get( $spacing, 16 )
+), $avatar-sizes);
+// sass-lint:enable indentation
+
+
+$avatar-theme-colors: () !default;
+$avatar-theme-colors: map-merge( $avatar-theme-colors, $theme-colors );
