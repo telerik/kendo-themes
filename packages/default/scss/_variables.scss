@@ -503,22 +503,6 @@ $list-container-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
 $list-container-no-data-text: rgba( $component-text, .5 ) !default;
 
 
-// Listgroup
-$listgroup-border-width: 1px !default;
-$listgroup-border-radius: $border-radius !default;
-
-$listgroup-font-size: $font-size !default;
-$listgroup-line-height: $line-height !default;
-
-$listgroup-bg: $component-bg !default;
-$listgroup-text: $component-text !default;
-$listgroup-border: $component-border !default;
-
-$listgroup-item-padding-x: $cell-padding-x !default;
-$listgroup-item-padding-y: $cell-padding-y !default;
-$listgroup-item-border-width: 1px !default;
-
-
 // Loading
 
 
@@ -1018,65 +1002,13 @@ $popup-header-font-size: null !default;
 $popup-header-text: null !default;
 $popup-filter-padding-x: $input-padding-x !default;
 
+$popup-content-padding-x: map-get( $spacing, 2 ) !default;
+$popup-content-padding-y: map-get( $spacing, 2 ) !default;
+
 $popup-bg: lighten($base-bg, 1%) !default;
 $popup-text: $base-text !default;
 $popup-border: $base-border !default;
 $popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
-
-
-// ColorPicker
-$colorpicker-rect-padding: $padding-x !default;
-$colorpicker-margin: 8px !default;
-$colorpicker-width: 310px !default;
-$colorpicker-border-width: 1px !default;
-$colorpicker-font-family: $font-family !default;
-$colorpicker-font-size: $font-size !default;
-$colorpicker-line-height: $line-height !default;
-$colorpicker-draghandle-width: 14px !default;
-$colorpicker-draghandle-height: 14px !default;
-$colorpicker-slider-track-size: 10px !default;
-$colorpicker-slider-border-radius: 10px !default;
-$colorpicker-hex-input-width: 65px !default;
-$colorpicker-input-width: 48px !default;
-$colorpicker-input-padding-x: $input-padding-y !default;
-$colorpicker-input-padding-y: $input-padding-y !default;
-
-$colorpicker-select-border-width: 1px !default;
-
-$colorpicker-bg: $input-bg !default;
-$colorpicker-text: $input-text !default;
-$colorpicker-border: $input-border !default;
-
-$colorpicker-hovered-bg: null !default;
-$colorpicker-hovered-text: null !default;
-$colorpicker-hovered-border: null !default;
-
-$colorpicker-focused-bg: null !default;
-$colorpicker-focused-text: null !default;
-$colorpicker-focused-border: null !default;
-$colorpicker-focused-shadow: null !default;
-
-$colorpicker-select-bg: $button-bg !default;
-$colorpicker-select-text: $button-text !default;
-$colorpicker-select-border: $button-border !default;
-$colorpicker-select-gradient: $button-gradient !default;
-
-$colorpicker-select-hovered-bg: $button-hovered-bg !default;
-$colorpicker-select-hovered-text: $button-hovered-text !default;
-$colorpicker-select-hovered-border: $button-hovered-border !default;
-$colorpicker-select-hovered-gradient: $button-hovered-gradient !default;
-
-$colorpicker-select-focused-bg: $button-pressed-bg !default;
-$colorpicker-select-focused-text: $button-pressed-text !default;
-$colorpicker-select-focused-border: $button-pressed-border !default;
-$colorpicker-select-focused-gradient: $button-pressed-gradient !default;
-$colorpicker-select-pressed-shadow: $button-pressed-shadow !default;
-$colorpicker-select-focused-shadow: $button-focused-shadow !default;
-
-$colorpicker-tool-icon-hovered-border: rgba(0, 0, 0, .08) !default;
-
-$colorpalette-hovered-shadow: 0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .8 ) !default;
-$colorpalette-focused-shadow: 0 1px 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, 1 ) !default;
 
 
 // Dropdownlists
@@ -1095,13 +1027,6 @@ $dropdownlist-focused-bg: $input-focused-bg !default;
 $dropdownlist-focused-border: $input-focused-border !default;
 $dropdownlist-focused-gradient: null !default;
 $dropdownlist-focused-shadow: $input-focused-shadow !default;
-
-
-// Dropdowntree
-$dropdowntree-popup-spacer-x: $padding-y-lg !default;
-$dropdowntree-popup-spacer-y: $dropdowntree-popup-spacer-x !default;
-$dropdowntree-filter-shadow: $popup-shadow !default;
-$dropdowntree-filter-spacer: $dropdowntree-popup-spacer-y !default;
 
 
 // Multiselect
@@ -1181,38 +1106,9 @@ $numeric-button-pressed-shadow: $button-pressed-shadow !default;
 $spinner-width: $button-inner-calc-size !default;
 $spinner-icon-offset: 2px !default;
 
-
-// Listbox
-$listbox-margin: $padding-x !default;
-$listbox-button-margin: $padding-x !default;
-$listbox-width: 12.4em !default;
-$listbox-default-height: 200px !default;
-
-$listbox-border-width: 1px !default;
-$listbox-font-family: $font-family !default;
-$listbox-font-size: $font-size !default;
-$listbox-line-height: $line-height !default;
-
-$listbox-bg: $component-bg !default;
-$listbox-text: $component-text !default;
-$listbox-border: $component-border !default;
-
-$listbox-item-padding-x: null !default;
-$listbox-item-padding-y: null !default;
-
-$listbox-drop-hint-border-width: null !default;
-$listbox-drop-hint-width: 1px !default;
-
 $drag-clue-opacity: null !default;
 $drag-clue-line-height: null !default;
 $drag-clue-border-radius: null !default;
-
-$listbox-drag-clue-padding-y: $list-item-padding-y !default;
-$listbox-drag-clue-padding-x: $list-item-padding-x !default;
-$listbox-drag-clue-line-height: $line-height-em !default;
-
-$listbox-drag-clue-bg: $list-item-selected-bg !default;
-$listbox-drag-clue-text: $list-item-selected-text !default;
 
 
 // Slider
@@ -2142,19 +2038,6 @@ $tilelayout-hint-bg: rgba(255, 255, 255, .2) !default;
 $tilelayout-hint-border: $component-border !default;
 
 
-// Filter expression builder
-$filter-padding-x: $padding-x !default;
-$filter-padding-y: $padding-y !default;
-
-$filter-bottom-margin: 30px !default;
-$filter-line-size: 1px !default;
-
-$filter-operator-dropdown-width: 15em !default;
-
-$filter-preview-field-text: $primary !default;
-$filter-preview-operator-text: rgba($body-text, .6) !default;
-
-
 // Grid
 $grid-padding-x: $cell-padding-x !default;
 $grid-padding-y: $cell-padding-y !default;
@@ -2318,33 +2201,6 @@ $pivotgrid-remove-text: null !default;
 $pivotgrid-configurator-text: $component-text !default;
 
 
-// Listview
-$listview-padding-x: map-get( $spacing, 1 ) !default;
-$listview-padding-y: map-get( $spacing, 1 ) !default;
-$listview-border-width: 1px !default;
-$listview-font-family: $font-family !default;
-$listview-font-size: $font-size !default;
-$listview-line-height: $line-height !default;
-
-$listview-bg: $component-bg !default;
-$listview-text: $component-text !default;
-$listview-border: $component-border !default;
-
-$listview-grid-gap: 10px !default;
-
-$listview-item-padding-x: map-get( $spacing, 1 ) !default;
-$listview-item-padding-y: map-get( $spacing, 1 ) !default;
-
-$listview-item-selected-bg: rgba( $selected-bg, .25 ) !default;
-$listview-item-selected-text: null !default;
-$listview-item-selected-border: null !default;
-
-$listview-item-focus-bg: null !default;
-$listview-item-focus-text: null !default;
-$listview-item-focus-border: null !default;
-$listview-item-focus-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
-
-
 // Spreadsheet
 $spreadsheet-border-width: 1px !default;
 $spreadsheet-font-family: $font-family !default;
@@ -2380,182 +2236,6 @@ $spreadsheet-drawing-outline-style: solid !default;
 $spreadsheet-drawing-outline-width: 2px !default;
 
 $spreadsheet-drawing-anchor-bg: rgba( $selected-bg, .25 ) !default;
-
-
-// File manager
-$filemanager-spacer: map-get( $spacing, 4 ) !default;
-$filemanager-border-width: 1px !default;
-$filemanager-font-family: $font-family !default;
-$filemanager-font-size: $font-size !default;
-$filemanager-line-height: $line-height !default;
-$filemanager-bg: $component-bg !default;
-$filemanager-text: $component-text !default;
-$filemanager-border: $component-border !default;
-
-$filemanager-toolbar-border-width: $filemanager-border-width !default;
-$filemanager-toolbar-bg: null !default;
-$filemanager-toolbar-text: null !default;
-$filemanager-toolbar-border: null !default;
-$filemanager-toolbar-gradient: null !default;
-
-$filemanager-navigation-padding-x: $filemanager-spacer !default;
-$filemanager-navigation-padding-y: $filemanager-spacer !default;
-$filemanager-navigation-width: 20% !default;
-$filemanager-navigation-border-width: $filemanager-border-width !default;
-$filemanager-navigation-bg: null !default;
-$filemanager-navigation-text: null !default;
-$filemanager-navigation-border: null !default;
-
-$filemanager-breadcrumb-padding-x: map-get( $spacing, 2 ) !default;
-$filemanager-breadcrumb-padding-y: map-get( $spacing, 2 ) !default;
-$filemanager-breadcrumb-border-width: $filemanager-border-width !default;
-$filemanager-breadcrumb-bg: $toolbar-bg !default;
-$filemanager-breadcrumb-text: null !default;
-$filemanager-breadcrumb-border: null !default;
-
-$filemanager-listview-bg: null !default;
-$filemanager-listview-text: null !default;
-$filemanager-listview-border: null !default;
-
-$filemanager-listview-item-padding-x: map-get( $spacing, 4 ) !default;
-$filemanager-listview-item-padding-y: map-get( $spacing, 4 ) !default;
-$filemanager-listview-item-width: 120px !default;
-$filemanager-listview-item-height: 120px !default;
-$filemanager-listview-item-bg: null !default;
-$filemanager-listview-item-text: null !default;
-$filemanager-listview-item-border: null !default;
-
-$filemanager-listview-item-icon-size: ($icon-size * 3) !default;
-$filemanager-listview-item-icon-bg: null !default;
-$filemanager-listview-item-icon-text: try-tint($filemanager-text, 4) !default;
-$filemanager-listview-item-icon-border: null !default;
-$filemanager-listview-item-icon-selected-bg: null !default;
-$filemanager-listview-item-icon-selected-text: inherit !default;
-$filemanager-listview-item-icon-selected-border: null !default;
-
-$filemanager-grid-bg: null !default;
-$filemanager-grid-text: null !default;
-$filemanager-grid-border: null !default;
-
-$filemanager-preview-padding-x: $filemanager-spacer !default;
-$filemanager-preview-padding-y: $filemanager-spacer !default;
-$filemanager-preview-width: 20% !default;
-$filemanager-preview-border-width: $filemanager-border-width !default;
-$filemanager-preview-spacing: $filemanager-spacer !default;
-$filemanager-preview-bg: null !default;
-$filemanager-preview-text: null !default;
-$filemanager-preview-border: null !default;
-
-$filemanager-preview-icon-size: ($icon-size * 6) !default;
-$filemanager-preview-icon-bg: null !default;
-$filemanager-preview-icon-text: try-tint($filemanager-text, 4) !default;
-$filemanager-preview-icon-border: null !default;
-
-
-// Editor
-$editor-border-width: 1px !default;
-$editor-font-family: $font-family !default;
-$editor-font-size: $font-size !default;
-$editor-line-height: $line-height !default;
-
-$editor-placeholder-text: $input-placeholder-text !default;
-$editor-placeholder-opacity: $input-placeholder-opacity !default;
-
-$editor-selected-text: $primary-contrast !default;
-$editor-selected-bg: $primary !default;
-
-$editor-highlighted-bg: mix($primary, #ffffff, 20%) !default;
-
-$editor-find-line-bg: $secondary;
-
-
-// Gantt
-$gantt-border-width: 1px !default;
-$gantt-font-family: $font-family !default;
-$gantt-font-size: $font-size !default;
-$gantt-line-height: $line-height !default;
-
-$gantt-bg: $component-bg !default;
-$gantt-text: $component-text !default;
-$gantt-border: $component-border !default;
-
-$gantt-treelist-bg: null !default;
-$gantt-treelist-text: null !default;
-$gantt-treelist-border: null !default;
-
-$gantt-nonwork-bg: rgba( contrast-wcag( $gantt-bg ), .025 ) !default;
-$gantt-nonwork-text: null !default;
-$gantt-nonwork-border: null !default;
-
-$gantt-line-size: 2px !default;
-$gantt-line-fill: contrast-wcag( $gantt-bg ) !default;
-$gantt-line-selected-fill: $primary !default;
-
-$gantt-dot-size: 8px !default;
-$gantt-dot-spacing: 4px !default;
-$gantt-dot-bg: $gantt-text !default;
-$gantt-dot-border: null !default;
-$gantt-dot-hover-bg: $gantt-bg !default;
-$gantt-dot-hover-border: $gantt-text !default;
-
-$gantt-milestone-bg: $gantt-text !default;
-$gantt-milestone-border: $gantt-border !default;
-$gantt-milestone-selected-bg: $selected-bg !default;
-$gantt-milestone-selected-border: $selected-border !default;
-
-$gantt-summary-bg: try-tint( $gantt-text, 1 ) !default;
-$gantt-summary-progress-bg: try-shade( $gantt-text, 5 ) !default;
-$gantt-summary-selected-bg: try-tint( $selected-bg, 6 ) !default;
-$gantt-summary-progress-selected-bg: $selected-bg !default;
-
-$gantt-task-border-width: 0px !default;
-$gantt-task-padding-x: map-get( $spacing, 2 ) !default;
-$gantt-task-padding-y: map-get( $spacing, 1 ) !default;
-$gantt-task-bg: try-tint( $gantt-text, 2 ) !default;
-$gantt-task-text: contrast-wcag( $gantt-text ) !default;
-$gantt-task-border: null !default;
-$gantt-task-progress-bg: $gantt-text !default;
-$gantt-task-selected-bg: try-tint( $selected-bg, 6 ) !default;
-$gantt-task-selected-text: $selected-text !default;
-$gantt-task-selected-border: null !default;
-$gantt-task-progress-selected-bg: $selected-bg !default;
-
-$gantt-planned-margin-y: .35em !default;
-$gantt-planned-border-width: 2px !default;
-$gantt-planned-line-height: .75em !default;
-
-$gantt-planned-dependency-margin-y: .55em !default;
-
-$gantt-planned-moment-width: 6px !default;
-$gantt-planned-moment-height: $gantt-planned-moment-width !default;
-$gantt-planned-moment-border-radius: calc( ( #{$gantt-planned-border-width * 2} + #{$gantt-planned-moment-width} ) / 2 ) !default;
-$gantt-planned-moment-left-margin-x: calc( #{$gantt-planned-border-width} / 2 - #{$gantt-planned-moment-border-radius} ) !default;
-$gantt-planned-milestone-moment-margin-x: calc( #{$gantt-planned-moment-width} / 2) !default;
-
-$gantt-planned-duration-height: $gantt-planned-border-width !default;
-$gantt-planned-duration-hover-height: calc( #{$gantt-planned-border-width} + 1px ) !default;
-
-$gantt-planned-single-drag-hint-top: 0 !default;
-$gantt-planned-summary-drag-hint-top: .5em !default;
-$gantt-planned-milestone-drag-hint-top: .3em !default;
-
-$gantt-rtl-milestone-wrap-margin-x: -2.4em !default;
-$gantt-rtl-milestone-planned-moment-margin-x: .2em !default;
-$gantt-rtl-milestone-dot-start-margin-x: -.1em !default;
-
-$gantt-planned-offset-resize-handler-margin-x: 1.4em !default;
-
-$gantt-planned-bg: $primary !default;
-$gantt-planned-border: $gantt-planned-bg !default;
-
-$gantt-delayed-bg: $error !default;
-$gantt-delayed-bg-lighter: tint($gantt-delayed-bg, 5) !default;
-
-$gantt-advanced-bg: $success !default;
-$gantt-advanced-bg-lighter: tint($gantt-advanced-bg, 5) !default;
-
-$gantt-action-on-offset-text: #000000 !default;
-$gantt-offset-resize-handler-top: 50% !default;
 
 
 // Scheduler
@@ -2797,47 +2477,6 @@ $map-attribution-bg: rgba( $map-bg, .8 ) !default;
 
 $map-marker-size: $icon-size-lg !default;
 $map-marker-fill: $primary !default;
-
-
-// ImageEditor
-$imageeditor-margin-y: null !default;
-$imageeditor-margin-x: null !default;
-$imageeditor-padding-y: null !default;
-$imageeditor-padding-x: null !default;
-
-$imageeditor-border-width: 0px !default;
-$imageeditor-font-size: $font-size !default;
-$imageeditor-line-height: $line-height !default;
-$imageeditor-font-family: $font-family !default;
-
-$imageeditor-content-border-width: 1px !default;
-
-$imageeditor-action-pane-padding-y: map-get( $spacing, 8 ) !default;
-$imageeditor-action-pane-padding-x: map-get( $spacing, 4 ) !default;
-
-$imageeditor-crop-border-width: 1px !default;
-$imageeditor-crop-border-style: dashed !default;
-
-$imageeditor-resize-handle-margin-x: 1px !default;
-$imageeditor-resize-handle-margin-y: 1px !default;
-$imageeditor-resize-handle-border-width: 0 2px 2px 0 !default;
-$imageeditor-resize-handle-size: 15px !default;
-
-$imageeditor-bg: $component-bg !default;
-$imageeditor-text: $component-text !default;
-$imageeditor-border: $component-border !default;
-
-$imageeditor-content-bg: darken($component-bg, 22.5%) !default;
-$imageeditor-content-text: null !default;
-$imageeditor-content-border: null !default;
-
-$imageeditor-action-pane-text: null !default;
-$imageeditor-action-pane-bg: $base-bg !default;
-$imageeditor-action-pane-border: $base-border !default;
-
-$imageeditor-crop-text: null !default;
-$imageeditor-crop-bg: null !default;
-$imageeditor-crop-border: white !default;
 
 
 // Backdrop (Overlay)

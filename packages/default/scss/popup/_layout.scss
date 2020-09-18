@@ -81,9 +81,8 @@
         }
     }
 
-    .k-popup > .k-colorpalette,
-    .k-popup > .k-flatcolorpicker {
-        padding: $colorpicker-rect-padding;
+    .k-popup > .k-colorpalette {
+        padding: $popup-content-padding-y $popup-content-padding-x;
     }
 
     .k-popup .k-list .k-item > .k-group {
