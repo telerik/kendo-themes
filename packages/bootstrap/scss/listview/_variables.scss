@@ -1,0 +1,25 @@
+// Listview
+$listview-padding-x: map-get( $spacing, 1 ) !default;
+$listview-padding-y: map-get( $spacing, 1 ) !default;
+$listview-border-width: 1px !default;
+$listview-font-family: $font-family !default;
+$listview-font-size: $font-size !default;
+$listview-line-height: $line-height !default;
+
+$listview-bg: $component-bg !default;
+$listview-text: $component-text !default;
+$listview-border: $component-border !default;
+
+$listview-grid-gap: 10px !default;
+
+$listview-item-padding-x: map-get( $spacing, 1 ) !default;
+$listview-item-padding-y: map-get( $spacing, 1 ) !default;
+
+$listview-item-selected-bg: rgba( $selected-bg, .25 ) !default;
+$listview-item-selected-text: null !default;
+$listview-item-selected-border: null !default;
+
+$listview-item-focus-bg: null !default;
+$listview-item-focus-text: null !default;
+$listview-item-focus-border: null !default;
+$listview-item-focus-shadow: inset 0 0 0 3px rgba( $listview-text, .15 ) !default;

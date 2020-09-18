@@ -1,0 +1,11 @@
+// Filter expression builder
+$filter-padding-x: $padding-x-sm !default;
+$filter-padding-y: $filter-padding-x !default;
+
+$filter-bottom-margin: 2.1em !default;
+$filter-line-size: 1px !default;
+
+$filter-operator-dropdown-width: 19em !default;
+
+$filter-preview-field-text: $primary !default;
+$filter-preview-operator-text: rgba($body-text, .6) !default;
