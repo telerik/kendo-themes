@@ -1558,18 +1558,6 @@ $upload-error-border: lighten($error, 29%) !default;
 $upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 
-// Upload external DropZone
-$external-dropzone-padding-x: $upload-dropzone-padding-x !default;
-$external-dropzone-padding-y: $upload-dropzone-padding-y * 6 !default;
-$external-dropzone-spacing: 6px !default;
-
-$external-dropzone-bg: $upload-dropzone-bg !default;
-$external-dropzone-text: $upload-dropzone-text !default;
-$external-dropzone-border: $upload-dropzone-border !default;
-
-$external-dropzone-icon-opacity: .6 !default;
-
-
 // Window
 $window-border-width: 0px !default;
 $window-border-radius: 0px !default;
