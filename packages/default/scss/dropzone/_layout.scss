@@ -1,43 +1,60 @@
 @include exports("dropzone/layout") {
+
     // Dropzone
     .k-external-dropzone {
+        height: $dropzone-min-height;
         display: flex;
+        flex-flow: row nowrap;
     }
 
-    // Dropzpne icon + hint + note wrapper
+    // Dropzpne inner
     .k-dropzone-inner {
         @include use-background-clip();
-        padding: $external-dropzone-padding-y $external-dropzone-padding-x;
-        width: 100%;
-        height: 100%;
-        border-width: $upload-border-width;
+        padding: $dropzone-padding-y $dropzone-padding-x;
+        border-width: $dropzone-border-width;
         border-style: solid;
         box-sizing: border-box;
+        font-size: $dropzone-font-size;
+        font-family: $dropzone-font-family;
+        line-height: $dropzone-line-height;
+        flex: 1 1 auto;
         display: flex;
-        flex-direction: column;
+        flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
         position: relative;
         cursor: pointer;
 
-        >.k-icon {
-            margin-bottom: $upload-dropzone-padding-y * 2.75;
-            font-size: $icon-size * 3;
+        > .k-icon,
+        .k-dropzone-icon {
+            margin-bottom: $dropzone-icon-spacing;
+            font-size: $dropzone-icon-size;
+        }
+
+        .k-dropzone-hint {
+            margin-bottom: $dropzone-hint-spacing;
+            font-size: $dropzone-hint-font-size;
+        }
+
+        .k-dropzone-note {
+            margin-bottom: $dropzone-note-spacing;
+            font-size: $dropzone-note-font-size;
+        }
+    }
+
+
+    // No flexbox
+    .k-no-flexbox {
+        .k-dropzone-inner {
+            padding-top: ( $dropzone-padding-y * 6 );
+            padding-bottom: ( $dropzone-padding-y * 6 );
+            width: 100%;
+            height: 100%;
         }
 
         .k-dropzone-hint,
         .k-dropzone-note {
             display: block;
-        }
-
-        .k-dropzone-hint {
-            font-size: $icon-size;
-            margin-bottom: $external-dropzone-spacing * 2;
-        }
-
-        .k-dropzone-note {
-            font-size: $font-size-sm;
-            margin-bottom: $external-dropzone-spacing;
         }
     }
 

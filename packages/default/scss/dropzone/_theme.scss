@@ -1,25 +1,32 @@
 @include exports( "dropzone/theme" ) {
+
     // Dropzone
-    .k-external-dropzone {
-        &.k-external-dropzone-hover {
-            .k-icon {
-                color: $primary;
-                opacity: 1;
-            }
+    .k-dropzone-inner {
+        @include fill(
+            $dropzone-text,
+            $dropzone-bg,
+            $dropzone-border
+        );
+
+        > .k-icon,
+        .k-dropzone-icon {
+            color: $dropzone-icon-text;
+        }
+        .k-dropzone-hint {
+            color: $dropzone-hint-text;
+        }
+        .k-dropzone-note {
+            color: $dropzone-note-text;
         }
     }
 
-    // Dropzpne icon + hint + note wrapper
-    .k-dropzone-inner {
-        @include fill(
-            $external-dropzone-text,
-            $external-dropzone-bg,
-            $external-dropzone-border
-        );
 
-        >.k-icon,
-        .k-dropzone-note {
-            opacity: $external-dropzone-icon-opacity;
+    // Hover
+    .k-external-dropzone-hover {
+
+        .k-icon,
+        .k-dropzone-icon {
+            color: $dropzone-icon-hover-text;
         }
     }
 

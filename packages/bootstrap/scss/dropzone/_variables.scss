@@ -1,0 +1,26 @@
+// Dropzone
+$dropzone-padding-x: map-get( $spacing, 2 ) !default;
+$dropzone-padding-y: map-get( $spacing, 2 ) !default;
+$dropzone-border-width: 1px !default;
+$dropzone-min-height: 220px !default;
+
+$dropzone-font-family: $font-family !default;
+$dropzone-font-size: $font-size !default;
+$dropzone-line-height: $line-height !default;
+
+$dropzone-bg: contrast-wcag( $component-bg, $gray-100, $gray-900 ) !default;
+$dropzone-text: $component-text !default;
+$dropzone-border: $component-border !default;
+
+$dropzone-icon-size: ( $icon-size * 3 ) !default;
+$dropzone-icon-spacing: map-get( $spacing, 6 ) !default;
+$dropzone-icon-text: try-tint( $dropzone-text, 8 ) !default;
+$dropzone-icon-hover-text: $primary !default;
+
+$dropzone-hint-font-size: null !default;
+$dropzone-hint-spacing: map-get( $spacing, 2 ) !default;
+$dropzone-hint-text: null !default;
+
+$dropzone-note-font-size: $font-size-xs !default;
+$dropzone-note-spacing: null !default;
+$dropzone-note-text: try-tint( $dropzone-text, 8 ) !default;
