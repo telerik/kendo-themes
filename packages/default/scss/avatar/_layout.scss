@@ -1,47 +1,62 @@
-@include exports("avatar/layout") {
+@include exports( "avatar/layout" ) {
 
+    // Avatar
     .k-avatar {
-        width: $avatar-size;
-        height: $avatar-size;
-        display: flex;
+        border-width: 0;
+        border-style: solid;
+        box-sizing: border-box;
+        flex-shrink: 0 0 auto;
+        display: inline-flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
+    }
+
+
+    // Avatar initials
+    .k-avatar-initials {}
+
+
+    // Avatar icon
+    .k-avatar-icon {}
+
+
+    // Avatar image
+    .k-avatar-image {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    // Sizes
+    @each $name, $size in $avatar-sizes {
+        .k-avatar-#{$name} {
+            width: $size;
+            height: $size;
+            flex-basis: $size;
+        }
     }
 
 
     // Shapes
-    .k-avatar-circle {
-        @include border-radius( 50% );
-
-        &.k-avatar-image {
-            > * {
-                @include border-radius( 50% );
-            }
-        }
-    }
-
+    .k-avatar-square {}
     .k-avatar-rounded {
         @include border-radius( $avatar-border-radius );
-
-        &.k-avatar-image {
-            > * {
-                @include border-radius( $avatar-border-radius );
-            }
-        }
+    }
+    .k-avatar-circle {
+        border-radius: 50%;
     }
 
 
-    // Avatar content
-    .k-avatar-image {
-        > * {
-            width: $avatar-size;
-            height: $avatar-size;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
+    // Bordered
+    .k-avatar-bordered {
+        border-width: $avatar-border-width;
     }
+
 
 }
 
