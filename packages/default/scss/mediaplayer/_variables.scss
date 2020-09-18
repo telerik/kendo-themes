@@ -1,0 +1,22 @@
+// Media player
+$mediaplayer-border-width: 1px !default;
+$mediaplayer-font-family: $font-family !default;
+$mediaplayer-font-size: $font-size !default;
+$mediaplayer-line-height: $line-height !default;
+
+$mediaplayer-bg: $component-bg !default;
+$mediaplayer-text: $component-text !default;
+$mediaplayer-border: $component-border !default;
+
+$mediaplayer-titlebar-padding-x: $header-padding-x !default;
+$mediaplayer-titlebar-padding-y: $header-padding-y !default;
+$mediaplayer-titlebar-bg: null !default;
+$mediaplayer-titlebar-text: $mediaplayer-bg !default;
+$mediaplayer-titlebar-border: null !default;
+$mediaplayer-titlebar-gradient: rgba( $mediaplayer-text, .7 ), rgba( $mediaplayer-text, 0 ) !default;
+
+$mediaplayer-toolbar-padding-x: $toolbar-padding-x !default;
+$mediaplayer-toolbar-padding-y: $toolbar-padding-y !default;
+$mediaplayer-toolbar-spacing: $padding-x !default;
+$mediaplayer-toolbar-bg: rgba( $toolbar-bg, .85 ) !default;
+$mediaplayer-toolbar-text: $toolbar-text !default;
