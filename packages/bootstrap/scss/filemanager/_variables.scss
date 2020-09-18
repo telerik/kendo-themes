@@ -1,0 +1,68 @@
+// File manager
+$filemanager-spacer: map-get( $spacing, 4 ) !default;
+$filemanager-border-width: 1px !default;
+$filemanager-font-family: $font-family !default;
+$filemanager-font-size: $font-size !default;
+$filemanager-line-height: $line-height !default;
+$filemanager-bg: $component-bg !default;
+$filemanager-text: $component-text !default;
+$filemanager-border: $component-border !default;
+
+$filemanager-toolbar-border-width: $filemanager-border-width !default;
+$filemanager-toolbar-bg: null !default;
+$filemanager-toolbar-text: null !default;
+$filemanager-toolbar-border: null !default;
+$filemanager-toolbar-gradient: null !default;
+
+$filemanager-navigation-padding-x: $filemanager-spacer !default;
+$filemanager-navigation-padding-y: $filemanager-spacer !default;
+$filemanager-navigation-width: 20% !default;
+$filemanager-navigation-border-width: $filemanager-border-width !default;
+$filemanager-navigation-bg: null !default;
+$filemanager-navigation-text: null !default;
+$filemanager-navigation-border: null !default;
+
+$filemanager-breadcrumb-padding-x: map-get( $spacing, 2 ) !default;
+$filemanager-breadcrumb-padding-y: map-get( $spacing, 2 ) !default;
+$filemanager-breadcrumb-border-width: $filemanager-border-width !default;
+$filemanager-breadcrumb-bg: $toolbar-bg !default;
+$filemanager-breadcrumb-text: null !default;
+$filemanager-breadcrumb-border: null !default;
+
+$filemanager-listview-bg: null !default;
+$filemanager-listview-text: null !default;
+$filemanager-listview-border: null !default;
+
+$filemanager-listview-item-padding-x: map-get( $spacing, 4 ) !default;
+$filemanager-listview-item-padding-y: map-get( $spacing, 4 ) !default;
+$filemanager-listview-item-width: 120px !default;
+$filemanager-listview-item-height: 120px !default;
+$filemanager-listview-item-bg: null !default;
+$filemanager-listview-item-text: null !default;
+$filemanager-listview-item-border: null !default;
+
+$filemanager-listview-item-icon-size: ($icon-size * 3) !default;
+$filemanager-listview-item-icon-bg: null !default;
+$filemanager-listview-item-icon-text: try-tint($filemanager-text, 4) !default;
+$filemanager-listview-item-icon-border: null !default;
+$filemanager-listview-item-icon-selected-bg: null !default;
+$filemanager-listview-item-icon-selected-text: inherit !default;
+$filemanager-listview-item-icon-selected-border: null !default;
+
+$filemanager-grid-bg: null !default;
+$filemanager-grid-text: null !default;
+$filemanager-grid-border: null !default;
+
+$filemanager-preview-padding-x: $filemanager-spacer !default;
+$filemanager-preview-padding-y: $filemanager-spacer !default;
+$filemanager-preview-width: 20% !default;
+$filemanager-preview-border-width: $filemanager-border-width !default;
+$filemanager-preview-spacing: $filemanager-spacer !default;
+$filemanager-preview-bg: null !default;
+$filemanager-preview-text: null !default;
+$filemanager-preview-border: null !default;
+
+$filemanager-preview-icon-size: ($icon-size * 6) !default;
+$filemanager-preview-icon-bg: null !default;
+$filemanager-preview-icon-text: try-tint($filemanager-text, 4) !default;
+$filemanager-preview-icon-border: null !default;

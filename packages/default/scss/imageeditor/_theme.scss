@@ -41,4 +41,11 @@
         );
     }
 
+    // Crop Overlay
+    .k-imageeditor-crop-overlay {
+        @include fill (
+            $bg: $imageeditor-crop-overlay-bg
+        );
+    }
+
 }
