@@ -2091,19 +2091,6 @@ $tilelayout-hint-bg: rgba(255, 255, 255, .2) !default;
 $tilelayout-hint-border: $component-border !default;
 
 
-// Filter expression builder
-$filter-padding-x: $padding-x !default;
-$filter-padding-y: $padding-y !default;
-
-$filter-bottom-margin: 2.1em !default;
-$filter-line-size: 1px !default;
-
-$filter-operator-dropdown-width: 15em !default;
-
-$filter-preview-field-text: $primary !default;
-$filter-preview-operator-text: rgba($body-text, .6) !default;
-
-
 // Grid
 $grid-padding-x: $cell-padding-x !default;
 $grid-padding-y: $cell-padding-y !default;
