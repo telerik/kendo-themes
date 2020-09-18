@@ -1,0 +1,15 @@
+// Message box
+$message-box-margin: 0 0 $spacer 0 !default;
+$message-box-padding-x: $padding-x !default;
+$message-box-padding-y: $padding-y !default;
+$message-box-border-width: 0 0 0 4px !default;
+
+$message-box-font-size: $font-size !default;
+$message-box-line-height: $line-height !default;
+
+$message-box-bg-level: -10 !default;
+$message-box-text-level: 6 !default;
+$message-box-border-level: -9 !default;
+
+$message-box-link-font-style: normal !default;
+$message-box-link-text-decoration: underline !default;
