@@ -83,6 +83,10 @@
                 }
             }
 
+            tr.k-state-selected > td:last-child {
+                background: transparent;
+            }
+
             // Task
             .k-task {
                 display: inline-flex;
