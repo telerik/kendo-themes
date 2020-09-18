@@ -1,0 +1,27 @@
+// Listbox
+$listbox-margin: $padding-x !default;
+$listbox-button-margin: $padding-x !default;
+$listbox-width: 12.4em !default;
+$listbox-default-height: 200px !default;
+
+$listbox-border-width: 1px !default;
+$listbox-font-family: $font-family !default;
+$listbox-font-size: $font-size !default;
+$listbox-line-height: $line-height !default;
+
+$listbox-bg: $component-bg !default;
+$listbox-text: $component-text !default;
+$listbox-border: $component-border !default;
+
+$listbox-item-padding-x: null !default;
+$listbox-item-padding-y: null !default;
+
+$listbox-drop-hint-border-width: null !default;
+$listbox-drop-hint-width: 1px !default;
+
+$listbox-drag-clue-padding-y: $list-item-padding-y !default;
+$listbox-drag-clue-padding-x: $list-item-padding-x !default;
+$listbox-drag-clue-line-height: $line-height-em !default;
+
+$listbox-drag-clue-bg: $list-item-selected-bg !default;
+$listbox-drag-clue-text: $list-item-selected-text !default;
