@@ -1,0 +1,41 @@
+// Checkboxes
+$checkbox-icon-size: 12px !default;
+$checkbox-size: $icon-size !default;
+$checkbox-radius: $border-radius !default;
+$checkbox-border-width: 1px !default;
+$checkbox-line-height: $checkbox-size + $checkbox-border-width !default;
+$checkbox-indeterminate-style: square !default;
+$checkbox-dash-height: $checkbox-size / 10 !default;
+$checkbox-dash-width: $checkbox-size - ( $checkbox-border-width * 4 ) !default;
+$checkbox-label-margin-x: 8px !default;
+
+$checkbox-bg: $input-bg !default;
+$checkbox-text: $input-text !default;
+$checkbox-border: $input-border !default;
+$checkbox-hovered-bg: $checkbox-bg !default;
+$checkbox-hovered-text: $primary !default;
+$checkbox-hovered-border: $input-hovered-border !default;
+$checkbox-checked-bg: $primary !default;
+$checkbox-checked-text: contrast-wcag( $checkbox-checked-bg ) !default;
+$checkbox-checked-border: $checkbox-checked-bg !default;
+$checkbox-indeterminate-bg: $checkbox-bg !default;
+$checkbox-indeterminate-text: $checkbox-checked-bg !default;
+$checkbox-indeterminate-border: $checkbox-border !default;
+$checkbox-focused-border: $checkbox-hovered-border !default;
+$checkbox-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
+$checkbox-focused-checked-border: $checkbox-checked-border !default;
+$checkbox-focused-checked-shadow: 0 0 0 2px rgba($primary, .3) !default;
+$checkbox-disabled-bg: null !default;
+$checkbox-disabled-text: null !default;
+$checkbox-disabled-border: null !default;
+$checkbox-disabled-checked-bg: null !default;
+$checkbox-disabled-checked-text: null !default;
+$checkbox-disabled-checked-border: null !default;
+$checkbox-invalid-bg: null !default;
+$checkbox-invalid-text: $invalid-text !default;
+$checkbox-invalid-border: $invalid-border !default;
+
+$checkbox-list-margin: 0px !default;
+$checkbox-list-padding: 0px !default;
+$checkbox-list-item-margin-top: 16px !default;
+$checkbox-list-horizontal-item-margin-x: 32px !default;

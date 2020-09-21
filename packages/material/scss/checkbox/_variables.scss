@@ -1,0 +1,41 @@
+// Checkboxes
+$checkbox-icon-size: 10px !default;
+$checkbox-size: 16px !default;
+$checkbox-radius: $border-radius !default;
+$checkbox-border-width: 2px !default;
+$checkbox-line-height: $checkbox-size + $checkbox-border-width !default;
+$checkbox-indeterminate-style: dash !default;
+$checkbox-dash-height: $checkbox-size / 10 !default;
+$checkbox-dash-width: $checkbox-size - ( $checkbox-border-width * 4 ) !default;
+$checkbox-label-margin-x: 8px;
+
+$checkbox-bg: null !default;
+$checkbox-text: transparent !default;
+$checkbox-border: rgba(0, 0, 0, .54) !default;
+$checkbox-hovered-bg: null !default;
+$checkbox-hovered-text: null !default;
+$checkbox-hovered-border: $input-hovered-border !default;
+$checkbox-checked-bg: $primary !default;
+$checkbox-checked-text: contrast-wcag( $checkbox-checked-bg ) !default;
+$checkbox-checked-border: $checkbox-checked-bg !default;
+$checkbox-indeterminate-bg: $checkbox-checked-bg !default;
+$checkbox-indeterminate-text: $checkbox-checked-text !default;
+$checkbox-indeterminate-border: $checkbox-checked-border !default;
+$checkbox-focused-border: $checkbox-border !default;
+$checkbox-focused-shadow: none !default;
+$checkbox-focused-checked-border: $checkbox-checked-border !default;
+$checkbox-focused-checked-shadow: none !default;
+$checkbox-disabled-bg: null !default;
+$checkbox-disabled-text: null !default;
+$checkbox-disabled-border: #b0b0b0 !default;
+$checkbox-disabled-checked-bg: $checkbox-disabled-border !default;
+$checkbox-disabled-checked-text: #ffffff !default;
+$checkbox-disabled-checked-border: $checkbox-disabled-checked-bg !default;
+$checkbox-invalid-bg: null !default;
+$checkbox-invalid-text: $invalid-text !default;
+$checkbox-invalid-border: $invalid-border !default;
+
+$checkbox-list-margin: 0px !default;
+$checkbox-list-padding: 0px !default;
+$checkbox-list-item-margin-top: 16px !default;
+$checkbox-list-horizontal-item-margin-x: 32px !default;
