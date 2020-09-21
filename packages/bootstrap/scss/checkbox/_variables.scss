@@ -1,0 +1,41 @@
+// Checkboxes
+$checkbox-icon-size: 10px !default;
+$checkbox-size: $icon-size !default;
+$checkbox-radius: $border-radius !default;
+$checkbox-border-width: 1px !default;
+$checkbox-line-height: $checkbox-size + $checkbox-border-width !default;
+$checkbox-indeterminate-style: square !default;
+$checkbox-dash-height: $checkbox-size / 10 !default;
+$checkbox-dash-width: $checkbox-size - ( $checkbox-border-width * 4 ) !default;
+$checkbox-label-margin-x: 8px;
+
+$checkbox-bg: $custom-control-indicator-bg !default;
+$checkbox-text: transparent !default;
+$checkbox-border: $custom-control-indicator-border-color !default;
+$checkbox-hovered-bg: $checkbox-bg !default;
+$checkbox-hovered-text: $checkbox-text !default;
+$checkbox-hovered-border: $checkbox-border !default;
+$checkbox-checked-bg: $custom-control-indicator-checked-bg !default;
+$checkbox-checked-text: $custom-control-indicator-checked-color !default;
+$checkbox-checked-border: $custom-control-indicator-checked-border-color !default;
+$checkbox-indeterminate-bg: $custom-checkbox-indicator-indeterminate-bg !default;
+$checkbox-indeterminate-text: $custom-checkbox-indicator-indeterminate-color !default;
+$checkbox-indeterminate-border: $custom-checkbox-indicator-indeterminate-border-color !default;
+$checkbox-focused-border: $custom-control-indicator-focus-border-color !default;
+$checkbox-focused-shadow: $custom-control-indicator-focus-box-shadow !default;
+$checkbox-focused-checked-border: $checkbox-checked-border !default;
+$checkbox-focused-checked-shadow: $custom-control-indicator-focus-box-shadow !default;
+$checkbox-disabled-bg: null !default;
+$checkbox-disabled-text: null !default;
+$checkbox-disabled-border: null !default;
+$checkbox-disabled-checked-bg: null !default;
+$checkbox-disabled-checked-text: null !default;
+$checkbox-disabled-checked-border: null !default;
+$checkbox-invalid-bg: null !default;
+$checkbox-invalid-text: $invalid-text !default;
+$checkbox-invalid-border: $invalid-border !default;
+
+$checkbox-list-margin: 0px !default;
+$checkbox-list-padding: 0px !default;
+$checkbox-list-item-margin-top: 16px !default;
+$checkbox-list-horizontal-item-margin-x: 32px !default;
