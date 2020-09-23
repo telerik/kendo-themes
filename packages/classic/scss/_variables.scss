@@ -1584,11 +1584,6 @@ $grid-sticky-hovered-bg: darken($grid-bg, 8%) !default;
 $grid-sticky-selected-hovered-bg: shade($grid-sticky-selected-bg, .7) !default;
 
 
-// Treelist
-$treelist-footer-row-bg: $grid-hovered-bg !default;
-$treelist-footer-row-border-width: 1px !default;
-
-
 // Spreadsheet
 $spreadsheet-border-width: 1px !default;
 $spreadsheet-font-family: $font-family !default;
