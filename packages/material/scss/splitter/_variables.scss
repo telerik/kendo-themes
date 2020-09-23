@@ -1,0 +1,24 @@
+// Splitter
+$splitter-border-width: 1px !default;
+$splitter-font-family: $font-family !default;
+$splitter-font-size: $font-size !default;
+$splitter-line-height: $line-height !default;
+
+$splitter-bg: $component-bg !default;
+$splitter-text: $component-text !default;
+$splitter-border: $component-border !default;
+
+$splitter-splitbar-size: 8px !default;
+$splitter-resize-icon-size: 10px !default;
+$splitter-drag-handle-length: 20px !default;
+$splitter-drag-handle-thickness: 2px !default;
+$splitter-drag-icon-margin: 7px !default;
+
+$splitbar-bg: rgba($base-text, .12) !default;
+$splitbar-text: rgba($base-text, .54) !default;
+
+$splitbar-hovered-bg: rgba($base-text, .22);
+$splitbar-hovered-text: $base-text !default;
+
+$splitbar-selected-bg: $primary !default;
+$splitbar-selected-text: contrast-wcag( $splitbar-selected-bg ) !default;
