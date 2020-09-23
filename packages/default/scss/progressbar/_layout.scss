@@ -3,6 +3,7 @@
     // Base
     .k-progressbar {
         @include border-radius( $border-radius );
+        --kendo-progressbar-progress: 0;
         border-width: $progressbar-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -91,7 +92,12 @@
 
         > .k-state-selected {
             width: 0;
+            width: calc( var( --kendo-progressbar-progress, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
             flex-direction: row;
+
+            > .k-progress-status-wrap {
+                width: calc( 100% * ( 100 / var( --kendo-progressbar-progress, 0 ) ) );
+            }
         }
 
 
@@ -136,8 +142,14 @@
 
         > .k-state-selected {
             height: 0;
+            height: calc( var( --kendo-progressbar-progress, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
             flex-direction: column-reverse;
             align-self: flex-end;
+            align-items: flex-end;
+
+            > .k-progress-status-wrap {
+                height: calc( 100% * ( 100 / var( --kendo-progressbar-progress, 0 ) ) ); // sass-lint:disable-line no-duplicate-properties
+            }
         }
 
 
@@ -171,6 +183,16 @@
         .k-state-selected,
         .k-item {
             display: none;
+        }
+    }
+
+
+    // Blazor specific
+    .telerik-blazor.k-progressbar-horizontal {
+
+        > .k-state-selected,
+        > .k-state-selected > .k-progress-status-wrap {
+            transition: width .1s ease-in-out;
         }
     }
 
