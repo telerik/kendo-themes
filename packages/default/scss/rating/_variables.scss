@@ -1,0 +1,23 @@
+// Rating
+$rating-font-family: $font-family !default;
+$rating-font-size: $font-size !default;
+$rating-line-height: $line-height !default;
+
+$rating-container-margin-x: $padding-x-sm !default;
+
+$rating-item-padding-x: $padding-x-sm !default;
+$rating-item-padding-y: $padding-y !default;
+
+$rating-label-margin-x: $padding-x !default;
+$rating-label-margin-y: $padding-y !default;
+$rating-label-line-height: $line-height-lg !default;
+
+$rating-icon-size: ($icon-size * 1.5) !default;
+
+$rating-icon-text: lighten($base-text, 45%) !default;
+$rating-icon-selected-text: $selected-bg !default;
+$rating-icon-hover-text: $selected-bg !default;
+$rating-icon-focused-text: $selected-bg !default;
+
+$rating-icon-focused-shadow: 0 2px 3.6px rgba(black, .1) !default;
+$rating-icon-focused-selected-shadow: 0 2px 3.6px rgba($selected-bg, .4) !default;
