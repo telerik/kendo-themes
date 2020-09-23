@@ -1,0 +1,46 @@
+// Slider
+$slider-size: 200px !default;
+$slider-tick-size: null !default;
+$slider-alt-size: 30px !default;
+
+$slider-font-family: $font-family !default;
+$slider-font-size: $font-size !default;
+$slider-line-height: $line-height !default;
+
+$slider-button-offset: 10px !default;
+$slider-button-size: ($slider-alt-size - 2) !default;
+$slider-button-spacing: ($slider-button-size + $slider-button-offset) !default;
+$slider-button-focused-shadow: null !default;
+
+$slider-track-thickness: 4px !default;
+$slider-draghandle-size: 14px !default;
+$slider-draghandle-border-width: 1px !default;
+$slider-draghandle-active-scale: 1 !default;
+$slider-draghandle-active-size: null !default;
+
+$slider-draghandle-bg: $primary-button-bg !default;
+$slider-draghandle-text: $primary-button-text !default;
+$slider-draghandle-border: $primary-button-border !default;
+$slider-draghandle-gradient: $primary-button-gradient !default;
+
+$slider-draghandle-hovered-bg: $primary-button-hovered-bg !default;
+$slider-draghandle-hovered-text: $primary-button-hovered-text !default;
+$slider-draghandle-hovered-border: $primary-button-hovered-border !default;
+$slider-draghandle-hovered-gradient: $primary-button-hovered-gradient !default;
+
+$slider-draghandle-pressed-bg: $primary-button-pressed-bg !default;
+$slider-draghandle-pressed-text: $primary-button-pressed-text !default;
+$slider-draghandle-pressed-border: $primary-button-pressed-border !default;
+$slider-draghandle-pressed-gradient: $primary-button-pressed-gradient !default;
+$slider-draghandle-pressed-shadow: inset $primary-button-pressed-shadow !default;
+
+$slider-draghandle-focused-shadow: $primary-button-focused-shadow !default;
+
+$slider-transition-speed: .3s !default;
+$slider-transition-function: ease-out !default;
+$slider-draghandle-transition-speed: .4s !default;
+$slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
+
+$slider-track-bg: darken($component-bg, 10%) !default;
+$slider-selection-bg: $primary !default;
+$slider-disabled-opacity: null !default;

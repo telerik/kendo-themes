@@ -1,0 +1,35 @@
+// PDF viewer
+$pdf-viewer-border-width: 1px !default;
+$pdf-viewer-font-family: $font-family !default;
+$pdf-viewer-font-size: $font-size !default;
+$pdf-viewer-line-height: $line-height !default;
+
+$pdf-viewer-bg: $component-bg !default;
+$pdf-viewer-text: $component-text !default;
+$pdf-viewer-border: $component-border !default;
+
+$pdf-viewer-toolbar-bg: null !default;
+$pdf-viewer-toolbar-text: null !default;
+$pdf-viewer-toolbar-border: null !default;
+$pdf-viewer-toolbar-gradient: null !default;
+
+$pdf-viewer-canvas-bg: $app-bg !default;
+$pdf-viewer-canvas-text: null !default;
+$pdf-viewer-canvas-border: null !default;
+
+$pdf-viewer-page-spacing: 30px !default;
+
+$pdf-viewer-page-bg: white !default;
+$pdf-viewer-page-text: $component-text !default;
+$pdf-viewer-page-border: $component-border !default;
+$pdf-viewer-page-shadow: 0 0 ($pdf-viewer-page-spacing / 2) $pdf-viewer-page-border !default;
+
+$pdf-viewer-search-dialog-spacing: $toolbar-padding-x !default;
+$pdf-viewer-search-dialog-button-spacing: $pdf-viewer-search-dialog-spacing !default;
+$pdf-viewer-search-dialog-textbox-padding-x: $input-padding-y !default;
+$pdf-viewer-search-dialog-input-button-height: $line-height-em !default;
+$pdf-viewer-search-dialog-matches-width: 4.5em !default;
+
+$pdf-viewer-selection-line-height: $line-height-sm !default;
+
+$pdf-viewer-search-highlight-bg: try-darken($base-bg, 70% ) !default;

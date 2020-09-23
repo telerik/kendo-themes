@@ -1,0 +1,11 @@
+// TileLayout
+$tilelayout-border-width: 0px !default;
+$tilelayout-card-border-width: 1px !default;
+
+$tilelayout-hint-border-width: 1px !default;
+$tilelayout-hint-border-radius: $border-radius !default;
+
+$tilelayout-bg: if( $is-dark-theme, $dark, $light) !default;
+
+$tilelayout-hint-bg: rgba(255, 255, 255, .2) !default;
+$tilelayout-hint-border: $component-border !default;
