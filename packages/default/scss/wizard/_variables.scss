@@ -1,0 +1,13 @@
+// Wizard
+$wizard-padding-x: $padding-x * 2.5 !default;
+$wizard-padding-y: $wizard-padding-x !default;
+$wizard-content-padding-x: $padding-x * 4 !default;
+$wizard-content-padding-y: $padding-y * 8 !default;
+$wizard-buttons-margin-x: 10px !default;
+
+$wizard-border-width: 0px !default;
+$wizard-font-size: $font-size !default;
+$wizard-line-height: $line-height !default;
+$wizard-font-family: $font-family !default;
+
+$wizard-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
