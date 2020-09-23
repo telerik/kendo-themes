@@ -45,6 +45,12 @@
             text-transform: $form-legend-text-transform;
         }
 
+
+        // Form group
+        .k-form-group {
+            padding: 0;
+        }
+
         .k-form-field,
         .k-form-buttons,
         .k-daterangepicker .k-textbox-container {
