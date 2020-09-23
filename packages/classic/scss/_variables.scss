@@ -1751,19 +1751,6 @@ $splitbar-selected-bg: $selected-bg !default;
 $splitbar-selected-text: contrast-wcag( $splitbar-selected-bg ) !default;
 
 
-// TileLayout
-$tilelayout-border-width: 0px !default;
-$tilelayout-card-border-width: $card-border-width !default;
-
-$tilelayout-hint-border-width: 1px !default;
-$tilelayout-hint-border-radius: $border-radius-lg !default;
-
-$tilelayout-bg: $base-bg !default;
-
-$tilelayout-hint-bg: rgba(255, 255, 255, .2) !default;
-$tilelayout-hint-border: $component-border !default;
-
-
 // Grid
 $grid-padding-x: $cell-padding-x !default;
 $grid-padding-y: $cell-padding-y !default;
