@@ -1,0 +1,35 @@
+// Tooltip
+$tooltip-padding-y: $tooltip-padding-y !default;
+$tooltip-padding-x: $tooltip-padding-x !default;
+$tooltip-max-width: $tooltip-max-width !default;
+$tooltip-border-width: 0px !default;
+$tooltip-border-radius: $tooltip-border-radius !default;
+
+$tooltip-font-family: $font-family !default;
+$tooltip-font-size: $tooltip-font-size !default;
+$tooltip-line-height: $line-height !default;
+
+$tooltip-title-font-size: ($tooltip-font-size * 1.25) !default;
+$tooltip-title-line-height: 1 !default;
+
+$tooltip-callout-size: $tooltip-arrow-height !default;
+
+$tooltip-bg: $tooltip-bg !default;
+$tooltip-text: contrast-wcag($tooltip-bg) !default;
+$tooltip-border: $tooltip-bg !default;
+
+$tooltip-primary-bg: $primary !default;
+$tooltip-primary-text: contrast-wcag( $tooltip-primary-bg ) !default;
+$tooltip-primary-border: $tooltip-primary-bg !default;
+$tooltip-info-bg: $info !default;
+$tooltip-info-text: contrast-wcag( $tooltip-info-bg ) !default;
+$tooltip-info-border: $tooltip-info-bg !default;
+$tooltip-success-bg: $success !default;
+$tooltip-success-text: contrast-wcag( $tooltip-success-bg ) !default;
+$tooltip-success-border: $tooltip-success-bg !default;
+$tooltip-warning-bg: $warning !default;
+$tooltip-warning-text: contrast-wcag( $tooltip-warning-bg ) !default;
+$tooltip-warning-border: $tooltip-warning-bg !default;
+$tooltip-error-bg: $error !default;
+$tooltip-error-text: contrast-wcag( $tooltip-error-bg ) !default;
+$tooltip-error-border: $tooltip-error-bg !default;
