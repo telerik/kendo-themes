@@ -771,6 +771,9 @@ $input-inner-calc-height-sm: calc( #{$input-line-height-sm * 1em} + #{$input-pad
 $input-inner-calc-height-lg: calc( #{$input-line-height-lg * 1em} + #{$input-padding-y-lg * 2} ) !default;
 
 $input-icon-offset: 4px !default;
+$input-icon-width: calc( #{$icon-size} + #{$input-padding-x * 2} ) !default;
+$input-icon-padding-x: 6px !default;
+$input-icon-padding-y: $input-icon-padding-x !default;
 
 $input-bg: null !default;
 $input-text: $component-text !default;
@@ -794,19 +797,6 @@ $input-placeholder-opacity: 1 !default;
 
 $input-selected-text: $primary-contrast !default;
 $input-selected-bg: $primary !default;
-
-
-// Textboxes
-$textbox-line-height: 1.375em !default;
-$textbox-icon-width: calc( #{$icon-size} + #{$input-padding-x * 2} ) !default;
-$textbox-icon-padding-x: 6px !default;
-$textbox-icon-padding-y: $textbox-icon-padding-x !default;
-
-$textbox-icon-color: rgba(0, 0, 0, .42) !default;
-$textbox-icon-opacity: 1 !default;
-
-$textbox-separator-color: $clear-button-text !default;
-$textbox-separator-opacity: .5 !default;
 
 
 // Picker
