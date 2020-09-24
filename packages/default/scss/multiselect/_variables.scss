@@ -1,0 +1,35 @@
+// Multiselect
+$multiselect-width: 100% !default;
+
+$multiselect-token-opacity: .07 !default;
+$multiselect-token-focused-opacity: .46 !default;
+$multiselect-token-focused-text: $base-bg !default;
+$multiselect-token-focused-bg: $base-text !default;
+$multiselect-token-disabled-text: rgba( $base-text, .42 ) !default;
+$multiselect-token-hover-text: $base-bg !default;
+$multiselect-token-hover-bg: rgba( $base-text, .54 ) !default;
+$multiselect-remove-text: $base-bg !default;
+$multiselect-remove-bg: rgba( $base-text, .4 ) !default;
+$multiselect-remove-hover-text: $multiselect-remove-text !default;
+$multiselect-remove-hover-bg: rgba( $base-text, .54 ) !default;
+$multiselect-remove-focused-text: rgba( $base-text, .54 ) !default;
+$multiselect-remove-focused-bg: rgba($base-bg, .93) !default;
+
+$multiselect-bg: $input-bg !default;
+$multiselect-text: $input-text !default;
+$multiselect-border: $input-border !default;
+
+$multiselect-hovered-bg: $input-hovered-bg !default;
+$multiselect-hovered-text: $input-hovered-text !default;
+$multiselect-hovered-border: $input-hovered-border !default;
+
+$multiselect-focused-bg: $input-focused-bg !default;
+$multiselect-focused-text: $input-focused-text !default;
+$multiselect-focused-border: $input-focused-border !default;
+$multiselect-focused-shadow: $input-focused-shadow !default;
+
+$multiselect-button-focused-bg: $button-pressed-bg !default;
+$multiselect-button-focused-text: $button-pressed-text !default;
+$multiselect-button-focused-border: $button-pressed-border !default;
+$multiselect-button-focused-gradient: $button-pressed-gradient !default;
+$multiselect-button-focused-shadow: $button-pressed-shadow !default;
