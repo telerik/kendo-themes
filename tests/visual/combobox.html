@@ -9,37 +9,25 @@
 
     <style>
         #test-area {
-            grid-template-columns: repeat(4, 1fr);
             align-items: start;
-        }
-
-        .grid-single {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            row-gap: 15px;
+            justify-items: start;
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
 
-        <section class="grid-single">
-            <span>Combobox</span>
+        <span>Combobox</span>
+        <span>Angular</span>
+        <span>Combobox RTL</span>
+        <span>Angular RTL</span>
+
+        <!-- empty -->
+        <div>
             <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" placeholder="Combo..." /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
-            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Normal" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
-            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-hover"><input class="k-input" type="text" value="Hover" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
-            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-active k-state-border-down"><input class="k-input" type="text" value="Open" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
-            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-focused"><input class="k-input" type="text" value="Focused" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
-            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-disabled"><input class="k-input" type="text" value="Disabled" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
-            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-invalid"><input class="k-input" type="text" value="Invalid" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
-            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-invalid k-state-focused"><input class="k-input" type="text" value="Invalid+Focused" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
-            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Loading" /><span class="k-select"><span class="k-icon k-i-arrow-60-down k-i-loading"></span></span></span></span>
-            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Clear" /><span class="k-icon k-clear-value k-i-close" style="display: block"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
-        </section>
-
-        <section class="grid-single">
-            <span>Angular Combobox</span>
+        </div>
+        <div>
             <span class="k-widget k-combobox k-header k-combobox-clearable" dir="ltr">
                 <span class="k-dropdown-wrap k-state-default">
                     <span class="k-searchbar">
@@ -51,7 +39,29 @@
                     </span>
                 </span>
             </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" placeholder="Combo..." /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
+            <span class="k-widget k-combobox k-header k-combobox-clearable" dir="rtl">
+                <span class="k-dropdown-wrap k-state-default">
+                    <span class="k-searchbar">
+                        <input placeholder="Combo..." class="k-input" dir="rtl">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                    <span class="k-select">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </span>
+            </span>
+        </div>
 
+        <!-- normal -->
+        <div>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Normal" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
             <span class="k-widget k-combobox k-header k-combobox-clearable" dir="ltr">
                 <span class="k-dropdown-wrap k-state-default">
                     <span class="k-searchbar">
@@ -63,7 +73,29 @@
                     </span>
                 </span>
             </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Normal" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
+            <span class="k-widget k-combobox k-header k-combobox-clearable" dir="rtl">
+                <span class="k-dropdown-wrap k-state-default">
+                    <span class="k-searchbar">
+                        <input value="Normal" class="k-input" dir="rtl">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                    <span class="k-select">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </span>
+            </span>
+        </div>
 
+        <!-- hover -->
+        <div>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-hover"><input class="k-input" type="text" value="Hover" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
             <span class="k-widget k-combobox k-header k-combobox-clearable" dir="ltr">
                 <span class="k-dropdown-wrap k-state-hover">
                     <span class="k-searchbar">
@@ -75,7 +107,29 @@
                     </span>
                 </span>
             </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-hover"><input class="k-input" type="text" value="Hover" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
+            <span class="k-widget k-combobox k-header k-combobox-clearable" dir="rtl">
+                <span class="k-dropdown-wrap k-state-hover">
+                    <span class="k-searchbar">
+                        <input value="Hover" class="k-input" dir="rtl">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                    <span class="k-select">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </span>
+            </span>
+        </div>
 
+        <!-- open -->
+        <div>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-active k-state-border-down"><input class="k-input" type="text" value="Open" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
             <span class="k-widget k-combobox k-header k-combobox-clearable" dir="ltr">
                 <span class="k-dropdown-wrap k-state-active">
                     <span class="k-searchbar">
@@ -87,11 +141,15 @@
                     </span>
                 </span>
             </span>
-
-            <span class="k-widget k-combobox k-header k-combobox-clearable" dir="ltr">
-                <span class="k-dropdown-wrap k-state-focused">
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-active k-state-border-down"><input class="k-input" type="text" value="Open" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
+            <span class="k-widget k-combobox k-header k-combobox-clearable" dir="rtl">
+                <span class="k-dropdown-wrap k-state-active">
                     <span class="k-searchbar">
-                        <input value="Focused" class="k-input" dir="ltr">
+                        <input value="Open" class="k-input" dir="rtl">
                     </span>
                     <span class="k-icon k-clear-value k-i-close"></span>
                     <span class="k-select">
@@ -99,7 +157,47 @@
                     </span>
                 </span>
             </span>
+        </div>
 
+        <!-- focus -->
+        <div>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-focused"><input class="k-input" type="text" value="Focus" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
+            <span class="k-widget k-combobox k-header k-combobox-clearable" dir="ltr">
+                <span class="k-dropdown-wrap k-state-focused">
+                    <span class="k-searchbar">
+                        <input value="Focus" class="k-input" dir="ltr">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                    <span class="k-select">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-focused"><input class="k-input" type="text" value="Focus" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
+            <span class="k-widget k-combobox k-header k-combobox-clearable" dir="rtl">
+                <span class="k-dropdown-wrap k-state-focused">
+                    <span class="k-searchbar">
+                        <input value="Focus" class="k-input" dir="rtl">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                    <span class="k-select">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <!-- disabled -->
+        <div>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-disabled"><input class="k-input" type="text" value="Disabled" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
             <span class="k-widget k-combobox k-header k-combobox-clearable" dir="ltr">
                 <span class="k-dropdown-wrap k-state-disabled">
                     <span class="k-searchbar">
@@ -111,7 +209,29 @@
                     </span>
                 </span>
             </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-state-disabled"><input class="k-input" type="text" value="Disabled" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
+            <span class="k-widget k-combobox k-header k-combobox-clearable" dir="rtl">
+                <span class="k-dropdown-wrap k-state-disabled">
+                    <span class="k-searchbar">
+                        <input value="Disabled" class="k-input" dir="rtl">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                    <span class="k-select">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </span>
+            </span>
+        </div>
 
+        <!-- invalid -->
+        <div>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-invalid"><input class="k-input" type="text" value="Invalid" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
             <span class="k-widget k-combobox k-header k-combobox-clearable ng-invalid ng-touched" dir="ltr">
                 <span class="k-dropdown-wrap">
                     <span class="k-searchbar">
@@ -123,11 +243,15 @@
                     </span>
                 </span>
             </span>
-
-            <span class="k-widget k-combobox k-header k-combobox-clearable ng-invalid ng-touched" dir="ltr">
-                <span class="k-dropdown-wrap k-state-focused">
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-invalid"><input class="k-input" type="text" value="Invalid" /><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
+            <span class="k-widget k-combobox k-header k-combobox-clearable ng-invalid ng-touched" dir="rtl">
+                <span class="k-dropdown-wrap">
                     <span class="k-searchbar">
-                        <input value="NG Invalid+Focused" class="k-input" dir="ltr">
+                        <input value="NG Invalid" class="k-input" dir="rtl">
                     </span>
                     <span class="k-icon k-clear-value k-i-close"></span>
                     <span class="k-select">
@@ -135,11 +259,51 @@
                     </span>
                 </span>
             </span>
+        </div>
 
+        <!-- invalid + focus -->
+        <div>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-invalid k-state-focused"><input class="k-input" type="text" value="Invalid + Focus" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
+            <span class="k-widget k-combobox k-header k-combobox-clearable ng-invalid ng-touched" dir="ltr">
+                <span class="k-dropdown-wrap k-state-focused">
+                    <span class="k-searchbar">
+                        <input value="NG Invalid + Focus" class="k-input" dir="ltr">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                    <span class="k-select">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap k-invalid k-state-focused"><input class="k-input" type="text" value="Invalid + Focus" /><span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
+            <span class="k-widget k-combobox k-header k-combobox-clearable ng-invalid ng-touched" dir="rtl">
+                <span class="k-dropdown-wrap k-state-focused">
+                    <span class="k-searchbar">
+                        <input value="NG Invalid + Focus" class="k-input" dir="rtl">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                    <span class="k-select">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <!-- loading -->
+        <div>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Loading" /><span class="k-select"><span class="k-icon k-i-arrow-60-down k-i-loading"></span></span></span></span>
+        </div>
+        <div>
             <span class="k-widget k-combobox k-header k-combobox-clearable" dir="ltr">
                 <span class="k-dropdown-wrap">
                     <span class="k-searchbar">
-                        <input value="Loaded" class="k-input" dir="ltr">
+                        <input value="Loading" class="k-input" dir="ltr">
                     </span>
                     <span class="k-icon k-clear-value k-i-close"></span>
                     <span class="k-select">
@@ -147,7 +311,29 @@
                     </span>
                 </span>
             </span>
+        </div>
+        <div class="rtl">
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Loading" /><span class="k-select"><span class="k-icon k-i-arrow-60-down k-i-loading"></span></span></span></span>
+        </div>
+        <div>
+            <span class="k-widget k-combobox k-header k-combobox-clearable" dir="rtl">
+                <span class="k-dropdown-wrap">
+                    <span class="k-searchbar">
+                        <input value="Loading" class="k-input" dir="rtl">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                    <span class="k-select">
+                        <span class="k-icon k-i-arrow-60-down k-i-loading"></span>
+                    </span>
+                </span>
+            </span>
+        </div>
 
+        <!-- clear -->
+        <div>
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Clear" /><span class="k-icon k-clear-value k-i-close" style="display: block"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
             <span class="k-widget k-combobox k-header k-combobox-clearable" dir="ltr">
                 <span class="k-dropdown-wrap">
                     <span class="k-searchbar">
@@ -159,7 +345,24 @@
                     </span>
                 </span>
             </span>
-        </section>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-combobox"><span class="k-dropdown-wrap"><input class="k-input" type="text" value="Clear" /><span class="k-icon k-clear-value k-i-close" style="display: block"></span><span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span></span></span>
+        </div>
+        <div>
+            <span class="k-widget k-combobox k-header k-combobox-clearable" dir="rtl">
+                <span class="k-dropdown-wrap">
+                    <span class="k-searchbar">
+                        <input value="Clear" class="k-input" dir="rtl">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close" style="display: block"></span>
+                    <span class="k-select">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </span>
+            </span>
+        </div>
+
     </div>
 
 </body>
