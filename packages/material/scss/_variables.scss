@@ -864,18 +864,6 @@ $textarea-selected-bg: #cecece !default;
 $textarea-focused-invalid-shadow: 0 0 0 1px $error !default;
 
 
-// Floating label
-$floating-label-scale: .75 !default;
-$floating-label-height: $textbox-line-height * $floating-label-scale !default;
-$floating-label-transition: .4s cubic-bezier(.25, .8, .25, 1) !default;
-
-$floating-label-bg: null !default;
-$floating-label-text: rgba($input-text, .6) !default;
-
-$floating-label-focused-bg: $base-bg !default;
-$floating-label-focused-text: $primary !default;
-
-
 // Picker
 $picker-select-border-width: 0px !default;
 
