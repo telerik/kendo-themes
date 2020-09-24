@@ -9,7 +9,8 @@
 
     <style>
         #test-area {
-            grid-template-columns: repeat(2, 1fr);
+            align-items: start;
+            /* justify-items: start; */
         }
     </style>
 
@@ -24,78 +25,189 @@
 </head>
 <body>
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
 
-        <span>LTR Checkboxes</span>
-        <span>LTR Checkboxes (Input inside Label)</span>
+        <span>Checkboxes</span>
+        <span>Checkboxes in label</span>
+        <span dir="rtl">Checkboxes RTL</span>
+        <span dir="rtl">Checkboxes in label RTL</span>
 
-        <section>
+        <!-- checked -->
+        <div>
             <input type="checkbox" id="ch1" class="k-checkbox" checked /><!--
             --><label class="k-checkbox-label" for="ch1">Checked</label>
-            <br /><br />
-            <input type="checkbox" id="ch2" class="k-checkbox" /><!--
-            --><label class="k-checkbox-label" for="ch2">Unchecked</label>
-            <br /><br />
-            <input type="checkbox" id="ch3" class="k-checkbox" disabled checked /><!--
-            --><label class="k-checkbox-label" for="ch3">Disabled</label>
-            <br /><br />
-            <input type="checkbox" id="ch4" class="k-checkbox" disabled /><!--
-            --><label class="k-checkbox-label" for="ch4">Disabled</label>
-            <br /><br />
-            <input type="checkbox" id="chInd" class="k-checkbox k-state-indeterminate" /><!--
-            --><label class="k-checkbox-label" for="chInd">Indeterminate</label>
-            <br /><br />
-            <input type="checkbox" id="chIndDis" class="k-checkbox k-state-indeterminate" disabled /><!--
-            --><label class="k-checkbox-label" for="chIndDis">Indeterminate Disabled</label>
-            <br /><br />
-            <input type="checkbox" id="chRequired" class="k-checkbox k-state-invalid" required/><!--
-            --><label class="k-checkbox-label" for="chRequired">Required</label>
-            <br /><br />
-            <input type="checkbox" id="chLong" class="k-checkbox" checked /><!--
-            --><label class="k-checkbox-label" for="chLong">Long label Vivamus a arcu lacus. Integer augue leo, accumsan sit amet purus pharetra.</label>
-        </section>
-
-        <section>
+        </div>
+        <div>
             <label class="k-checkbox-label">
                 <input type="checkbox" class="k-checkbox" checked />
                 Checked
             </label>
-            <br /><br />
+        </div>
+        <div dir="rtl">
+            <input type="checkbox" id="ch1-rtl" class="k-checkbox" checked /><!--
+            --><label class="k-checkbox-label" for="ch1-rtl">Checked</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-checkbox-label">
+                <input type="checkbox" class="k-checkbox" checked />
+                Checked
+            </label>
+        </div>
+
+        <!-- disabled checked -->
+        <div>
+            <input type="checkbox" id="ch2" class="k-checkbox" disabled checked /><!--
+            --><label class="k-checkbox-label" for="ch2">Checked</label>
+        </div>
+        <div>
+            <label class="k-checkbox-label">
+                <input type="checkbox" class="k-checkbox" disabled checked />
+                Checked
+            </label>
+        </div>
+        <div dir="rtl">
+            <input type="checkbox" id="ch2-rtl" class="k-checkbox" disabled checked /><!--
+            --><label class="k-checkbox-label" for="ch2-rtl">Checked</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-checkbox-label">
+                <input type="checkbox" class="k-checkbox" disabled checked />
+                Checked
+            </label>
+        </div>
+
+        <!-- unchecked -->
+        <div>
+            <input type="checkbox" id="ch3" class="k-checkbox" /><!--
+            --><label class="k-checkbox-label" for="ch3">Unchecked</label>
+        </div>
+        <div>
             <label class="k-checkbox-label">
                 <input type="checkbox" class="k-checkbox" />
                 Unchecked
             </label>
-            <br /><br />
+        </div>
+        <div dir="rtl">
+            <input type="checkbox" id="ch3-rtl" class="k-checkbox" /><!--
+            --><label class="k-checkbox-label" for="ch3-rtl">Unchecked</label>
+        </div>
+        <div dir="rtl">
             <label class="k-checkbox-label">
-                <input type="checkbox" class="k-checkbox" disabled checked />
-                Disabled
+                <input type="checkbox" class="k-checkbox" />
+                Unchecked
             </label>
-            <br /><br />
+        </div>
+
+        <!-- disabled unchecked -->
+        <div>
+            <input type="checkbox" id="ch4" class="k-checkbox" disabled /><!--
+            --><label class="k-checkbox-label" for="ch4">Unchecked</label>
+        </div>
+        <div>
             <label class="k-checkbox-label">
                 <input type="checkbox" class="k-checkbox" disabled />
-                Disabled
+                Unchecked
             </label>
-            <br /><br />
+        </div>
+        <div dir="rtl">
+            <input type="checkbox" id="ch4-rtl" class="k-checkbox" disabled /><!--
+            --><label class="k-checkbox-label" for="ch4-rtl">Unchecked</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-checkbox-label">
+                <input type="checkbox" class="k-checkbox" disabled />
+                Unchecked
+            </label>
+        </div>
+
+        <!-- intedeterminate -->
+        <div>
+            <input type="checkbox" id="chInd" class="k-checkbox k-state-indeterminate" /><!--
+            --><label class="k-checkbox-label" for="chInd">Indeterminate</label>
+        </div>
+        <div>
             <label class="k-checkbox-label">
                 <input type="checkbox" class="k-checkbox k-state-indeterminate" />
                 Indeterminate
             </label>
-            <br /><br />
+        </div>
+        <div dir="rtl">
+            <input type="checkbox" id="chInd-rtl" class="k-checkbox k-state-indeterminate" /><!--
+            --><label class="k-checkbox-label" for="chInd-rtl">Indeterminate</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-checkbox-label">
+                <input type="checkbox" class="k-checkbox k-state-indeterminate" />
+                Indeterminate
+            </label>
+        </div>
+
+        <!-- disabled indeterminate -->
+        <div>
+            <input type="checkbox" id="chIndDis" class="k-checkbox k-state-indeterminate" disabled /><!--
+            --><label class="k-checkbox-label" for="chIndDis">Indeterminate</label>
+        </div>
+        <div>
             <label class="k-checkbox-label">
                 <input type="checkbox" class="k-checkbox k-state-indeterminate" disabled />
-                Indeterminate Disabled
+                Indeterminate
             </label>
-            <br /><br />
+        </div>
+        <div dir="rtl">
+            <input type="checkbox" id="chIndDis-rtl" class="k-checkbox k-state-indeterminate" disabled /><!--
+            --><label class="k-checkbox-label" for="chIndDis-rtl">Indeterminate</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-checkbox-label">
+                <input type="checkbox" class="k-checkbox k-state-indeterminate" disabled />
+                Indeterminate
+            </label>
+        </div>
+
+        <!-- error -->
+        <div>
+            <input type="checkbox" id="chError" class="k-checkbox k-state-invalid" required/><!--
+            --><label class="k-checkbox-label" for="chError">Error</label>
+        </div>
+        <div>
             <label class="k-checkbox-label">
                 <input type="checkbox" class="k-checkbox k-state-invalid" required/>
-                Required
+                Error
             </label>
-            <br /><br />
+        </div>
+        <div dir="rtl">
+            <input type="checkbox" id="chError-rtl" class="k-checkbox k-state-invalid" required/><!--
+            --><label class="k-checkbox-label" for="chError-rtl">Error</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-checkbox-label">
+                <input type="checkbox" class="k-checkbox k-state-invalid" required/>
+                Error
+            </label>
+        </div>
+
+        <!-- long label -->
+        <div>
+            <input type="checkbox" id="chLong" class="k-checkbox" checked /><!--
+            --><label class="k-checkbox-label" for="chLong">Long label Vivamus a arcu lacus. Integer augue leo.</label>
+        </div>
+        <div>
             <label class="k-checkbox-label">
                 <input type="checkbox" class="k-checkbox" checked />
-                Long label Vivamus a arcu lacus. Integer augue leo, accumsan sit amet purus pharetra.
+                Long label Vivamus a arcu lacus. Integer augue leo.
             </label>
-        </section>
+        </div>
+        <div dir="rtl">
+            <input type="checkbox" id="chLong-rtl" class="k-checkbox" checked /><!--
+            --><label class="k-checkbox-label" for="chLong-rtl">Long label Vivamus a arcu lacus. Integer augue leo.</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-checkbox-label">
+                <input type="checkbox" class="k-checkbox" checked />
+                Long label Vivamus a arcu lacus. Integer augue leo.
+            </label>
+        </div>
+
     </div>
 
 </body>

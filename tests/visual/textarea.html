@@ -9,247 +9,131 @@
 
     <style>
         #test-area {
-            grid-template-columns: repeat(3, max-content);
             align-items: start;
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
 
-        <span>No Label</span>
-        <span>Regular Label</span>
-        <span>Floating Label</span>
-
-        <span class="k-widget k-textarea">
-           <textarea class="k-input" placeholder="Enter text here..."></textarea>
-        </span>
-        <span>
-            <label class="k-label k-input-label">Label</label>
-            <span class="k-widget k-textarea">
-                <textarea class="k-input" placeholder="Enter text here..."></textarea>
-            </span>
-        </span>
-        <span class="k-floating-label-container k-textarea-container k-state-empty">
-            <label class="k-label k-input-label">Very very very very very very very long label</label>
-            <span class="k-widget k-textarea">
-               <textarea class="k-input"></textarea>
-            </span>
-         </span>
-
-        <span class="k-widget k-textarea k-state-hover">
-            <textarea class="k-input">Hover</textarea>
-        </span>
-        <span>
-            <label class="k-label k-input-label">Label</label>
-            <span class="k-widget k-textarea k-state-hover">
-                <textarea class="k-input">Hover</textarea>
-            </span>
-        </span>
-         <span class="k-floating-label-container k-textarea-container k-state-empty">
-            <label class="k-label k-input-label">Label</label>
-            <span class="k-widget k-textarea k-state-hover">
-               <textarea class="k-input"></textarea>
-            </span>
-         </span>
-
-        <span class="k-widget k-textarea k-state-focused">
-            <textarea class="k-input">Focused</textarea>
-        </span>
-        <span>
-            <label class="k-label k-input-label">Label</label>
-            <span class="k-widget k-textarea k-state-focused">
-                <textarea class="k-input">Focused</textarea>
-            </span>
-        </span>
-        <span class="k-floating-label-container k-textarea-container k-state-focused">
-            <label class="k-label k-input-label">Very very very very very very very long label</label>
-            <span class="k-widget k-textarea k-state-focused">
-               <textarea class="k-input">Focused</textarea>
-            </span>
-         </span>
-
-        <span class="k-widget k-textarea k-state-focused k-state-hover">
-            <textarea class="k-input">Hover + Focused</textarea>
-        </span>
-        <span>
-            <label class="k-label k-input-label">Label</label>
-            <span class="k-widget k-textarea k-state-focused k-state-hover">
-                <textarea class="k-input">Hover + Focused</textarea>
-            </span>
-        </span>
-        <span class="k-floating-label-container k-textarea-container k-state-focused k-state-hover">
-            <label class="k-label k-input-label">Label</label>
-            <span class="k-widget k-textarea k-state-focused k-state-hover">
-               <textarea class="k-input">Hover + Focused</textarea>
-            </span>
-        </span>
-
-        <span class="k-widget k-textarea k-state-invalid">
-            <textarea class="k-input">Invalid</textarea>
-        </span>
-        <span>
-            <label class="k-label k-input-label k-text-error">Label</label>
-            <span class="k-widget k-textarea k-state-invalid">
-                <textarea class="k-input">Invalid</textarea>
-            </span>
-        </span>
-        <span class="k-floating-label-container k-textarea-container k-state-focused k-state-invalid">
-            <label class="k-label k-input-label k-text-error">Label</label>
-            <span class="k-widget k-textarea k-state-invalid">
-               <textarea class="k-input">Invalid</textarea>
-            </span>
-        </span>
-
-        <span class="k-widget k-textarea k-state-invalid k-state-focused">
-            <textarea class="k-input">Invalid + Focused</textarea>
-        </span>
-        <span>
-            <label class="k-label k-input-label k-text-error">Label</label>
-            <span class="k-widget k-textarea k-state-invalid k-state-focused">
-                <textarea class="k-input">Invalid + Focused</textarea>
-            </span>
-        </span>
-        <span class="k-floating-label-container k-textarea-container k-state-invalid k-state-focused">
-            <label class="k-label k-input-label k-text-error">Label</label>
-            <span class="k-widget k-textarea k-state-invalid k-state-focused">
-               <textarea class="k-input">Invalid + Focused</textarea>
-            </span>
-        </span>
-
-        <span class="k-widget k-textarea k-state-disabled">
-            <textarea class="k-input">Disabled</textarea>
-        </span>
-        <span>
-            <label class="k-label k-input-label">Label</label>
-            <span class="k-widget k-textarea k-state-disabled">
-                <textarea class="k-input">Disabled</textarea>
-            </span>
-        </span>
-        <span class="k-floating-label-container k-textarea-container k-state-focused">
-            <label class="k-label k-input-label">Label</label>
-            <span class="k-widget k-textarea k-state-disabled">
-               <textarea class="k-input">Disabled</textarea>
-            </span>
-        </span>
-
-
-        <span>React TextArea</span>
-        <span></span>
-        <span></span>
+        <span class="k-colspan-2">LTR</span>
+        <span class="k-colspan-2">RTL</span>
+        <span>jquery</span>
+        <span>react</span>
+        <span>jquery</span>
+        <span>react</span>
 
         <span class="k-textarea">
-            <textarea class="k-input" placeholder="Enter text here..."></textarea>
+            <textarea class="k-input" placeholder="Empty..."></textarea>
         </span>
-        <span>
-        <label class="k-label">Label</label>
-            <span class="k-textarea">
-                <textarea class="k-input" placeholder="Enter text here..."></textarea>
-            </span>
+        <span class="k-textarea">
+            <textarea class="k-input" placeholder="Empty..."></textarea>
         </span>
-        <span class="k-textbox-container k-textarea-container k-state-empty">
-            <span class="k-textarea">
-                <textarea class="k-input"></textarea>
-            </span>
-            <label class="k-label">Label</label>
+        <span class="k-textarea" dir="rtl">
+            <textarea class="k-input" placeholder="Empty..."></textarea>
         </span>
+        <span class="k-textarea" dir="rtl">
+            <textarea class="k-input" placeholder="Empty..."></textarea>
+        </span>
+
+        <span class="k-textarea">
+            <textarea class="k-input">Normal</textarea>
+        </span>
+        <span class="k-textarea">
+            <textarea class="k-input">Normal</textarea>
+        </span>
+        <span class="k-textarea" dir="rtl">
+            <textarea class="k-input">Normal</textarea>
+        </span>
+        <span class="k-textarea" dir="rtl">
+            <textarea class="k-input">Normal</textarea>
+        </span>
+
 
         <span class="k-textarea k-state-hover">
             <textarea class="k-input">Hover</textarea>
         </span>
-        <span>
-            <label class="k-label">Label</label>
-            <span class="k-textarea k-state-hover">
-                <textarea class="k-input">Hover</textarea>
-            </span>
+        <span class="k-textarea k-state-hover">
+            <textarea class="k-input">Hover</textarea>
         </span>
-        <span class="k-textbox-container k-textarea-container k-state-empty">
-            <span class="k-textarea k-state-hover">
-                <textarea class="k-input"></textarea>
-            </span>
-            <label class="k-label">Label</label>
+        <span class="k-textarea k-state-hover" dir="rtl">
+            <textarea class="k-input">Hover</textarea>
         </span>
+        <span class="k-textarea k-state-hover" dir="rtl">
+            <textarea class="k-input">Hover</textarea>
+        </span>
+
 
         <span class="k-textarea k-state-focused">
-            <textarea class="k-input">Focused</textarea>
+            <textarea class="k-input">Focus</textarea>
         </span>
-        <span>
-            <label class="k-label">Label</label>
-            <span class="k-textarea k-state-focused">
-                <textarea class="k-input">Focused</textarea>
-            </span>
+        <span class="k-textarea k-state-focused">
+            <textarea class="k-input">Focus</textarea>
         </span>
-        <span class="k-textbox-container k-textarea-container k-state-focused">
-            <span class="k-textarea k-state-focused">
-                <textarea class="k-input">Focused</textarea>
-            </span>
-            <label class="k-label">Label</label>
+        <span class="k-textarea k-state-focused" dir="rtl">
+            <textarea class="k-input">Focus</textarea>
         </span>
+        <span class="k-textarea k-state-focused" dir="rtl">
+            <textarea class="k-input">Focus</textarea>
+        </span>
+
 
         <span class="k-textarea k-state-focused k-state-hover">
-            <textarea class="k-input">Hover + Focused</textarea>
+            <textarea class="k-input">Hover + Focus</textarea>
         </span>
-        <span>
-            <label class="k-label">Label</label>
-            <span class="k-textarea k-state-focused k-state-hover">
-                <textarea class="k-input">Hover + Focused</textarea>
-            </span>
+        <span class="k-textarea k-state-focused k-state-hover">
+            <textarea class="k-input">Hover + Focus</textarea>
         </span>
-        <span class="k-textbox-container k-textarea-container k-state-focused k-state-hover">
-            <span class="k-textarea k-state-focused k-state-hover">
-                <textarea class="k-input">Hover + Focused</textarea>
-            </span>
-            <label class="k-label">Label</label>
+        <span class="k-textarea k-state-focused k-state-hover" dir="rtl">
+            <textarea class="k-input">Hover + Focus</textarea>
+        </span>
+        <span class="k-textarea k-state-focused k-state-hover" dir="rtl">
+            <textarea class="k-input">Hover + Focus</textarea>
         </span>
 
+
+        <span class="k-textarea k-invalid">
+            <textarea class="k-input">Invalid</textarea>
+        </span>
         <span class="k-textarea k-state-invalid">
             <textarea class="k-input">Invalid</textarea>
         </span>
-        <span>
-            <label class="k-label k-text-error">Label</label>
-            <span class="k-textarea k-state-invalid">
-                <textarea class="k-input">Invalid</textarea>
-            </span>
+        <span class="k-textarea k-invalid" dir="rtl">
+            <textarea class="k-input">Invalid</textarea>
         </span>
-        <span class="k-textbox-container k-textarea-container k-state-focused k-state-invalid">
-            <span class="k-textarea k-state-invalid">
-                <textarea class="k-input">Invalid</textarea>
-            </span>
-            <label class="k-label k-text-error">Label</label>
+        <span class="k-textarea k-state-invalid" dir="rtl">
+            <textarea class="k-input">Invalid</textarea>
         </span>
 
+
+        <span class="k-textarea k-invalid k-state-focused">
+            <textarea class="k-input">Invalid + Focus</textarea>
+        </span>
         <span class="k-textarea k-state-invalid k-state-focused">
-            <textarea class="k-input">Invalid + Focused</textarea>
+            <textarea class="k-input">Invalid + Focus</textarea>
         </span>
-        <span>
-            <label class="k-label k-text-error">Label</label>
-            <span class="k-textarea k-state-invalid k-state-focused">
-                <textarea class="k-input">Invalid + Focused</textarea>
-            </span>
+        <span class="k-textarea k-invalid k-state-focused" dir="rtl">
+            <textarea class="k-input">Invalid + Focus</textarea>
         </span>
-        <span class="k-textbox-container k-textarea-container k-state-invalid k-state-focused">
-            <span class="k-textarea k-state-invalid k-state-focused">
-                <textarea class="k-input">Invalid + Focused</textarea>
-            </span>
-            <label class="k-label k-text-error">Label</label>
+        <span class="k-textarea k-state-invalid k-state-focused" dir="rtl">
+            <textarea class="k-input">Invalid + Focus</textarea>
         </span>
+
 
         <span class="k-textarea k-state-disabled">
             <textarea class="k-input">Disabled</textarea>
         </span>
-        <span>
-            <label class="k-label">Label</label>
-            <span class="k-textarea k-state-disabled">
-                <textarea class="k-input">Disabled</textarea>
-            </span>
+        <span class="k-textarea" disabled>
+            <textarea class="k-input">Disabled</textarea>
         </span>
-        <span class="k-textbox-container k-textarea-container k-state-focused">
-            <span class="k-textarea k-state-disabled">
-                <textarea class="k-input">Disabled</textarea>
-            </span>
-            <label class="k-label">Label</label>
+        <span class="k-textarea k-state-disabled" dir="rtl">
+            <textarea class="k-input">Disabled</textarea>
         </span>
+        <span class="k-textarea" disabled dir="rtl">
+            <textarea class="k-input">Disabled</textarea>
+        </span>
+
     </div>
 
 </body>

@@ -8,182 +8,101 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
         section {
-            padding: 30px;
+            padding: 20px;
             border: 1px dashed grey;
         }
 
         .test-heading {
-            margin: 0 0 30px;
+            margin: 0 0 20px;
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area" class="grid">
-        <section>
-            <h2 class="test-heading">Vertical/Default Form with Fieldsets and Legends (Angular)</h2>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
 
-            <form class="k-form ng-invalid">
+        <section>
+            <h3 class="test-heading">Vertical Form (Angular)</h3>
+
+            <form class="k-form k-form-vertical">
+
                 <fieldset class="k-form-fieldset">
                     <legend class="k-form-legend">Please fill in the fields:</legend>
-                    <kendo-form-field class="k-form-field k-form-field-error">
+                    <kendo-form-field class="k-form-field">
                         <label class="k-label">First Name:</label>
-
                         <div>
-                            <input class="ng-invalid ng-touched k-textbox">
-
-                            <kendo-form-hint class="k-form-hint k-text-start">
-                                <span>Hint: Maximum 10 characters</span>
-                            </kendo-form-hint>
-
-                            <kendo-form-error class="k-form-error k-text-start">
-                                Error: First Name is required
-                            </kendo-form-error>
+                            <input class="k-textbox" />
                         </div>
                     </kendo-form-field>
 
-                    <kendo-form-field class="k-form-field k-form-field-error">
+                    <kendo-form-field class="k-form-field">
                         <label class="k-label">Last Name:</label>
-
                         <div>
-                            <input class="ng-invalid ng-touched k-textbox">
-
-                            <kendo-form-hint class="k-form-hint k-text-start">
-                                <span>Hint: Maximum 10 characters</span>
-                            </kendo-form-hint>
-
-                            <kendo-form-error class="k-form-error k-text-start">
-                                Error: Last Name is required
-                            </kendo-form-error>
+                            <input class="k-textbox" />
                         </div>
                     </kendo-form-field>
                 </fieldset>
 
                 <fieldset class="k-form-fieldset">
                     <legend class="k-form-legend">Please fill in your address details:</legend>
-                    <kendo-form-field class="k-form-field k-form-field-error">
+                    <kendo-form-field class="k-form-field">
                         <label class="k-label">City:</label>
-
                         <div>
-                            <input class="ng-invalid ng-touched k-textbox">
-
-                            <kendo-form-hint class="k-form-hint k-text-start">
-                                <span>Hint: Maximum 10 characters</span>
-                            </kendo-form-hint>
-
-                            <kendo-form-error class="k-form-error k-text-start">
-                                Error: City is required
-                            </kendo-form-error>
+                            <input class="k-textbox" />
                         </div>
                     </kendo-form-field>
 
-                    <kendo-form-field class="k-form-field k-form-field-error">
+                    <kendo-form-field class="k-form-field">
                         <label class="k-label">Address:</label>
-
                         <div>
-                            <textarea class="k-textarea ng-invalid ng-touched"></textarea>
-
-                            <kendo-form-hint class="k-form-hint k-text-start">
-                                <span>Hint: Maximum 10 characters</span>
-                            </kendo-form-hint>
-
-                            <kendo-form-error class="k-form-error k-text-start">
-                                Error: Last Name is required
-                            </kendo-form-error>
+                            <textarea class="k-textarea"></textarea>
                         </div>
                     </kendo-form-field>
                 </fieldset>
 
-                <div class="k-form-buttons">
-                    <button class="k-button k-primary">Submit</button>
-                    <button class="k-button">Clear</button>
-                </div>
             </form>
         </section>
 
         <section>
-            <h2 class="test-heading">Horizontal Form with Fieldsets and Legends (Angular)</h2>
+            <h3 class="test-heading">Horizontal Form (Angular)</h3>
 
-            <form class="k-form k-form-horizontal ng-invalid">
+            <form class="k-form k-form-horizontal">
+
                 <fieldset class="k-form-fieldset">
                     <legend class="k-form-legend">Please fill in the fields:</legend>
-                    <kendo-form-field class="k-form-field k-form-field-error">
+                    <kendo-form-field class="k-form-field">
                         <label class="k-label">First Name:</label>
-
                         <div class="k-form-field-wrap">
-                            <input class="ng-invalid ng-touched k-textbox">
-
-                            <kendo-form-hint class="k-form-hint k-text-start">
-                                <span>Hint: Maximum 10 characters</span>
-                            </kendo-form-hint>
-
-                            <kendo-form-error class="k-form-error k-text-start">
-                                Error: First Name is required
-                            </kendo-form-error>
+                            <input class="k-textbox" />
                         </div>
                     </kendo-form-field>
 
-                    <kendo-form-field class="k-form-field k-form-field-error">
+                    <kendo-form-field class="k-form-field">
                         <label class="k-label">Last Name:</label>
-
                         <div class="k-form-field-wrap">
-                            <input class="ng-invalid ng-touched k-textbox">
-
-                            <kendo-form-hint class="k-form-hint k-text-start">
-                                <span>Hint: Maximum 10 characters</span>
-                            </kendo-form-hint>
-
-                            <kendo-form-error class="k-form-error k-text-start">
-                                Error: Last Name is required
-                            </kendo-form-error>
+                            <input class="k-textbox" />
                         </div>
                     </kendo-form-field>
                 </fieldset>
 
                 <fieldset class="k-form-fieldset">
                     <legend class="k-form-legend">Please fill in your address details:</legend>
-                    <kendo-form-field class="k-form-field k-form-field-error">
+                    <kendo-form-field class="k-form-field">
                         <label class="k-label">City:</label>
-
                         <div class="k-form-field-wrap">
-                            <input class="ng-invalid ng-touched k-textbox">
-
-                            <kendo-form-hint class="k-form-hint k-text-start">
-                                <span>Hint: Maximum 10 characters</span>
-                            </kendo-form-hint>
-
-                            <kendo-form-error class="k-form-error k-text-start">
-                                Error: City is required
-                            </kendo-form-error>
+                            <input class="k-textbox" />
                         </div>
                     </kendo-form-field>
 
-                    <kendo-form-field class="k-form-field k-form-field-error">
+                    <kendo-form-field class="k-form-field">
                         <label class="k-label">Address:</label>
-
                         <div class="k-form-field-wrap">
-                            <textarea class="k-textarea ng-invalid ng-touched"></textarea>
-
-                            <kendo-form-hint class="k-form-hint k-text-start">
-                                <span>Hint: Maximum 10 characters</span>
-                            </kendo-form-hint>
-
-                            <kendo-form-error class="k-form-error k-text-start">
-                                Error: Last Name is required
-                            </kendo-form-error>
+                            <textarea class="k-textarea"></textarea>
                         </div>
                     </kendo-form-field>
                 </fieldset>
 
-                <div class="k-form-buttons">
-                    <button class="k-button k-primary">Submit</button>
-                    <button class="k-button">Clear</button>
-                </div>
             </form>
         </section>
     </div>
