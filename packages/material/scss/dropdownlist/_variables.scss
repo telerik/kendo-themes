@@ -1,0 +1,20 @@
+// Dropdownlist
+$dropdownlist-bg: null !default;
+$dropdownlist-text: $input-text !default;
+$dropdownlist-border: $input-border !default;
+$dropdownlist-gradient: null !default;
+$dropdownlist-font-size: $font-size !default;
+$dropdownlist-opacity: $icon-opacity !default;
+
+$dropdownlist-hovered-bg: null !default;
+$dropdownlist-hovered-text: null !default;
+$dropdownlist-hovered-border: $input-hovered-border !default;
+$dropdownlist-hovered-gradient: null !default;
+$dropdownlist-hovered-opacity: $icon-hovered-opacity !default;
+
+$dropdownlist-focused-bg: null !default;
+$dropdownlist-focused-text: null !default;
+$dropdownlist-focused-border: $input-focused-border !default;
+$dropdownlist-focused-gradient: null !default;
+$dropdownlist-focused-shadow: null !default;
+$dropdownlist-focused-opacity: $icon-focused-opacity !default;

@@ -795,24 +795,6 @@ $popup-border: $dropdown-border-color !default;
 $popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
 
-// Dropdownlists
-$dropdownlist-text: $button-text !default;
-$dropdownlist-bg: $button-bg !default;
-$dropdownlist-border: $button-border !default;
-$dropdownlist-gradient: $button-gradient !default;
-
-$dropdownlist-hovered-text: $button-hovered-text !default;
-$dropdownlist-hovered-bg: $button-hovered-bg !default;
-$dropdownlist-hovered-border: $button-hovered-border !default;
-$dropdownlist-hovered-gradient: $button-hovered-gradient !default;
-
-$dropdownlist-focused-text: $button-pressed-text !default;
-$dropdownlist-focused-bg: $button-pressed-bg !default;
-$dropdownlist-focused-border: $button-pressed-border !default;
-$dropdownlist-focused-gradient: $button-pressed-gradient !default;
-$dropdownlist-focused-shadow: $button-focused-shadow !default;
-
-
 // Multiselect
 $multiselect-width: 100% !default;
 
