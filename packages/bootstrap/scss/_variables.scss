@@ -818,18 +818,6 @@ $textarea-selected-bg: $input-selected-bg !default;
 $textarea-focused-invalid-shadow: null !default;
 
 
-// Floating label
-$floating-label-scale: 1 !default;
-$floating-label-height: $textbox-line-height * $floating-label-scale !default;
-$floating-label-transition: .2s ease-out !default;
-
-$floating-label-bg: null !default;
-$floating-label-text: null !default;
-
-$floating-label-focused-bg: null !default;
-$floating-label-focused-text: null !default;
-
-
 // Picker
 $picker-select-border-width: 1px !default;
 

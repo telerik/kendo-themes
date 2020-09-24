@@ -88,26 +88,6 @@
         }
     }
 
-    // Floating label
-    .k-textbox-container,
-    .k-floating-label-container {
-        vertical-align: baseline;
-
-        > .k-label {
-            @include fill( $color: $floating-label-text );
-        }
-
-        &.k-state-focused > .k-label {
-            @include fill( $color: $floating-label-focused-text );
-        }
-
-        &.k-state-invalid + .k-label,
-        .k-state-invalid + .k-label,
-        .ng-invalid.ng-touched + .k-label,
-        .ng-invalid.ng-dirty + .k-label {
-            @include fill( $color: $error );
-        }
-    }
 }
 
 @import "~@progress/kendo-theme-default/scss/input/_theme.scss";
