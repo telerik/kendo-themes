@@ -98,7 +98,9 @@
     .k-loading-image::before,
     .k-loading-image::after {
         content: "";
-        border-width: .015em;
+        // See https://github.com/telerik/kendo-themes/issues/1925
+        border-width: 1px; // TODO: Remove once we drop IE support
+        border-width: #{"max( 1px, .015em )"}; // sass-lint:disable-line no-duplicate-properties
         font-size: 4em;
     }
 }
