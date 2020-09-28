@@ -710,6 +710,9 @@ $input-inner-calc-height-sm: calc( #{$input-line-height-sm * 1em} + #{$input-pad
 $input-inner-calc-height-lg: calc( #{$input-line-height-lg * 1em} + #{$input-padding-y-lg * 2} ) !default;
 
 $input-icon-offset: 6px !default;
+$input-icon-width: calc( #{$icon-size} + #{$input-padding-x * 2} ) !default;
+$input-icon-padding-x: 6px !default;
+$input-icon-padding-y: $input-icon-padding-x !default;
 
 $input-bg: $component-bg !default;
 $input-text: $component-text !default;
@@ -731,87 +734,6 @@ $input-placeholder-opacity: 1 !default;
 
 $input-selected-text: $primary-contrast !default;
 $input-selected-bg: $primary !default;
-
-
-// Textboxes
-$textbox-line-height: $form-line-height-em !default;
-$textbox-icon-width: calc( #{$icon-size} + #{$input-padding-x * 2} ) !default;
-$textbox-icon-padding-x: 6px !default;
-$textbox-icon-padding-y: $textbox-icon-padding-x !default;
-
-$textbox-icon-color: #2d2db2 !default;
-$textbox-icon-opacity: .35 !default;
-
-$textbox-separator-color: $clear-button-text !default;
-$textbox-separator-opacity: .5 !default;
-
-
-// Textarea
-$textarea-default-width: 18em !default;
-
-$textarea-border-width: $input-border-width !default;
-$textarea-border-height: $input-border-height !default;
-$textarea-border-radius: $input-border-radius !default;
-$textarea-border-radius-sm: $input-border-radius-sm !default;
-$textarea-border-radius-lg: $input-border-radius-lg !default;
-
-$textarea-padding-x: $input-padding-x !default;
-$textarea-padding-y: $input-padding-y !default;
-$textarea-font-family: $input-font-family !default;
-$textarea-font-size: $input-font-size !default;
-$textarea-line-height: $input-line-height !default;
-$textarea-line-height-em: $input-line-height-em !default;
-
-$textarea-padding-x-sm: $input-padding-x-sm !default;
-$textarea-padding-y-sm: $input-padding-y-sm !default;
-$textarea-font-size-sm: $input-font-size-sm !default;
-$textarea-line-height-sm: $input-line-height-sm !default;
-
-$textarea-padding-x-lg: $input-padding-x-lg !default;
-$textarea-padding-y-lg: $input-padding-y-lg !default;
-$textarea-font-size-lg: $input-font-size-lg !default;
-$textarea-line-height-lg: $input-line-height-lg !default;
-
-$textarea-calc-height: $input-calc-height !default;
-$textarea-calc-height-sm: $input-calc-height-sm !default;
-$textarea-calc-height-lg: $input-calc-height-lg !default;
-
-$textarea-floating-label-padding: null !default;
-
-$textarea-bg: $input-bg !default;
-$textarea-text: $input-text !default;
-$textarea-border: $input-border !default;
-$textarea-shadow: $input-shadow !default;
-
-$textarea-hovered-text: $input-hovered-text !default;
-$textarea-hovered-bg: $input-hovered-bg !default;
-$textarea-hovered-border: $input-hovered-border !default;
-$textarea-hovered-shadow: $input-hovered-shadow !default;
-
-$textarea-focused-text: $input-focused-text !default;
-$textarea-focused-bg: $input-focused-bg !default;
-$textarea-focused-border: $input-focused-border !default;
-$textarea-focused-shadow: $input-focused-shadow !default;
-
-$textarea-placeholder-text: $input-placeholder-text !default;
-$textarea-placeholder-opacity: $input-placeholder-opacity !default;
-
-$textarea-selected-text: $input-selected-text !default;
-$textarea-selected-bg: $input-selected-bg !default;
-
-$textarea-focused-invalid-shadow: null !default;
-
-
-// Floating label
-$floating-label-scale: .75 !default;
-$floating-label-height: $textbox-line-height * $floating-label-scale !default;
-$floating-label-transition: .2s ease-out !default;
-
-$floating-label-bg: null !default;
-$floating-label-text: null !default;
-
-$floating-label-focused-bg: null !default;
-$floating-label-focused-text: null !default;
 
 
 // Picker
@@ -855,98 +777,6 @@ $popup-bg: lighten($base-bg, 1%) !default;
 $popup-text: $base-text !default;
 $popup-border: $base-border !default;
 $popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
-
-
-// Dropdownlists
-$dropdownlist-text: $button-text !default;
-$dropdownlist-bg: $button-bg !default;
-$dropdownlist-border: $button-border !default;
-$dropdownlist-gradient: $button-gradient !default;
-
-$dropdownlist-hovered-text: $button-hovered-text !default;
-$dropdownlist-hovered-bg: $button-hovered-bg !default;
-$dropdownlist-hovered-border: $button-hovered-border !default;
-$dropdownlist-hovered-gradient: $button-hovered-gradient !default;
-
-$dropdownlist-focused-text: $input-focused-text !default;
-$dropdownlist-focused-bg: $input-focused-bg !default;
-$dropdownlist-focused-border: $input-focused-border !default;
-$dropdownlist-focused-gradient: null !default;
-$dropdownlist-focused-shadow: $input-focused-shadow !default;
-
-
-// Multiselect
-$multiselect-width: 100% !default;
-
-$multiselect-token-opacity: .07 !default;
-$multiselect-token-focused-opacity: .46 !default;
-$multiselect-token-focused-text: $base-bg !default;
-$multiselect-token-focused-bg: $base-text !default;
-$multiselect-token-disabled-text: rgba( $base-text, .42 ) !default;
-$multiselect-token-hover-text: $base-bg !default;
-$multiselect-token-hover-bg: rgba( $base-text, .54 ) !default;
-$multiselect-remove-text: $base-bg !default;
-$multiselect-remove-bg: rgba( $base-text, .4 ) !default;
-$multiselect-remove-hover-text: $multiselect-remove-text !default;
-$multiselect-remove-hover-bg: rgba( $base-text, .54 ) !default;
-$multiselect-remove-focused-text: rgba( $base-text, .54 ) !default;
-$multiselect-remove-focused-bg: rgba($base-bg, .93) !default;
-
-$multiselect-bg: $input-bg !default;
-$multiselect-text: $input-text !default;
-$multiselect-border: $input-border !default;
-
-$multiselect-hovered-bg: $input-hovered-bg !default;
-$multiselect-hovered-text: $input-hovered-text !default;
-$multiselect-hovered-border: $input-hovered-border !default;
-
-$multiselect-focused-bg: $input-focused-bg !default;
-$multiselect-focused-text: $input-focused-text !default;
-$multiselect-focused-border: $input-focused-border !default;
-$multiselect-focused-shadow: $input-focused-shadow !default;
-
-$multiselect-button-focused-bg: $button-pressed-bg !default;
-$multiselect-button-focused-text: $button-pressed-text !default;
-$multiselect-button-focused-border: $button-pressed-border !default;
-$multiselect-button-focused-gradient: $button-pressed-gradient !default;
-$multiselect-button-focused-shadow: $button-pressed-shadow !default;
-
-
-// NumericTextBox
-$numerictextbox-spinners-focused-shadow: inset $button-focused-shadow !default;
-
-$numeric-bg: $input-bg !default;
-$numeric-text: $input-text !default;
-$numeric-border: $input-border !default;
-
-$numeric-hovered-bg: $input-hovered-bg !default;
-$numeric-hovered-text: $input-hovered-text !default;
-$numeric-hovered-border: $input-hovered-border !default;
-
-$numeric-focused-bg: $input-focused-bg !default;
-$numeric-focused-text: $input-focused-text !default;
-$numeric-focused-border: $input-focused-border !default;
-$numeric-focused-shadow: $input-focused-shadow !default;
-
-$numeric-invalid-bg: null !default;
-$numeric-invalid-text: $invalid-text !default;
-$numeric-invalid-border: $invalid-border !default;
-
-$numeric-button-bg: $button-bg !default;
-$numeric-button-text: $button-text !default;
-$numeric-button-border: $button-border !default;
-$numeric-button-gradient: $button-gradient !default;
-
-$numeric-button-hovered-bg: $button-hovered-bg !default;
-$numeric-button-hovered-text: $button-hovered-text !default;
-$numeric-button-hovered-border: $button-hovered-border !default;
-$numeric-button-hovered-gradient: $button-hovered-gradient !default;
-
-$numeric-button-pressed-text: $button-pressed-text !default;
-$numeric-button-pressed-bg: $button-pressed-bg !default;
-$numeric-button-pressed-border: $button-pressed-border !default;
-$numeric-button-pressed-gradient: $button-pressed-gradient !default;
-$numeric-button-pressed-shadow: $button-pressed-shadow !default;
 
 
 $spinner-width: $button-inner-calc-size !default;

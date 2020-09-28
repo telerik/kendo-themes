@@ -1,0 +1,19 @@
+// Floating label
+$floating-label-scale: 1 !default;
+$floating-label-font-size: $input-font-size !default;
+$floating-label-line-height: $input-line-height !default;
+$floating-label-height: calc( #{$floating-label-line-height} * 1em ) !default;
+$floating-label-offset-x: calc( #{$input-padding-x} + #{$input-border-width} ) !default;
+$floating-label-offset-y: calc( #{$floating-label-height} + #{$input-border-width} + #{$input-padding-y} ) !default;
+
+$floating-label-focus-scale: 1 !default;
+$floating-label-focus-offset-x: 0 !default;
+$floating-label-focus-offset-y: 0 !default;
+
+$floating-label-transition: .2s ease-out !default;
+
+$floating-label-bg: null !default;
+$floating-label-text: null !default;
+
+$floating-label-focused-bg: null !default;
+$floating-label-focused-text: null !default;
