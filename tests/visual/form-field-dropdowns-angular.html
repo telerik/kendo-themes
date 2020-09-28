@@ -8,56 +8,40 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
         section {
-            padding: 30px;
+            padding: 20px;
             border: 1px dashed grey;
         }
 
         .test-heading {
-            margin: 0 0 30px;
+            margin: 0 0 20px;
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
         <section>
-            <h2 class="test-heading">Vertical/Default Form (Angular)</h2>
+            <h3 class="test-heading">Vertical Form (Angular)</h3>
 
-            <div class="k-messagebox k-messagebox-error">
-                Error: The quick brown fox jumps over the lazy dog.
-            </div>
+            <form class="k-form k-form-vertical">
 
-            <form class="k-form ng-invalid">
-                <kendo-form-field class="k-form-field k-form-field-error">
+                <kendo-form-field class="k-form-field">
                     <label class="k-label">AutoComplete:</label>
-
                     <div>
-                        <kendo-autocomplete class="k-widget k-autocomplete k-header ng-touched ng-invalid">
+                        <kendo-autocomplete class="k-widget k-autocomplete k-header">
                             <kendo-searchbar class="k-searchbar">
                                 <input class="k-input">
                             </kendo-searchbar>
                         </kendo-autocomplete>
-
-                        <kendo-form-hint class="k-form-hint k-text-start">
-                            Hint: Only in Europe
-                        </kendo-form-hint>
-
-                        <kendo-form-error class="k-form-error k-text-start">
-                            <div>Error: required</div>
-                        </kendo-form-error>
                     </div>
                 </kendo-form-field>
 
-                <kendo-form-field class="k-form-field k-form-field-error">
+                <kendo-form-field class="k-form-field">
                     <label class="k-label">ComboBox:</label>
-
                     <div>
-                        <kendo-combobox class="k-widget k-combobox k-header k-combobox-clearable ng-invalid ng-touched">
+                        <kendo-combobox class="k-widget k-combobox k-header k-combobox-clearable">
                             <span class="k-dropdown-wrap k-state-default">
                                 <kendo-searchbar class="k-searchbar">
                                     <input class="k-input">
@@ -67,22 +51,13 @@
                                 </span>
                             </span>
                         </kendo-combobox>
-
-                        <kendo-form-hint class="k-form-hint k-text-start">
-                            Hint: Hint text
-                        </kendo-form-hint>
-
-                        <kendo-form-error class="k-form-error k-text-start">
-                            <div>Error: required</div>
-                        </kendo-form-error>
                     </div>
                 </kendo-form-field>
 
-                <kendo-form-field class="k-form-field k-form-field-error">
+                <kendo-form-field class="k-form-field">
                     <label class="k-label">DropDownList:</label>
-
                     <div>
-                        <kendo-dropdownlist class="k-widget k-dropdown k-header ng-invalid ng-touched">
+                        <kendo-dropdownlist class="k-widget k-dropdown k-header">
                             <span class="k-dropdown-wrap k-state-default">
                                 <span class="k-input">Select gender</span>
                                 <span class="k-select">
@@ -90,22 +65,13 @@
                                 </span>
                             </span>
                         </kendo-dropdownlist>
-
-                        <kendo-form-hint class="k-form-hint k-text-start">
-                            Hint: Hint text
-                        </kendo-form-hint>
-
-                        <kendo-form-error class="k-form-error k-text-start">
-                            <div>Error: required</div>
-                        </kendo-form-error>
                     </div>
                 </kendo-form-field>
 
-                <kendo-form-field class="k-form-field k-form-field-error">
+                <kendo-form-field class="k-form-field">
                     <label class="k-label">MultiSelect:</label>
-
                     <div>
-                        <kendo-multiselect class="k-widget k-multiselect k-header ng-touched ng-invalid">
+                        <kendo-multiselect class="k-widget k-multiselect k-header">
                             <div class="k-multiselect-wrap k-floatwrap">
                                 <kendo-taglist>
                                     <ul class="k-reset">
@@ -123,57 +89,33 @@
                                 <span class="k-icon k-clear-value k-i-close"></span>
                             </div>
                         </kendo-multiselect>
-
-                        <kendo-form-hint class="k-form-hint k-text-start">
-                            Hint: Hint text
-                        </kendo-form-hint>
-
-                        <kendo-form-error class="k-form-error k-text-start">
-                            <div>Error: required</div>
-                        </kendo-form-error>
                     </div>
                 </kendo-form-field>
 
-                <div class="k-form-buttons">
-                    <button class="k-button k-primary">Submit</button>
-                    <button class="k-button">Clear</button>
-                </div>
             </form>
         </section>
 
+
         <section>
-            <h2 class="test-heading">Horizontal Form (Angular)</h2>
+            <h3 class="test-heading">Horizontal Form (Angular)</h3>
 
-            <div class="k-messagebox k-messagebox-error">
-                Error: The quick brown fox jumps over the lazy dog.
-            </div>
+            <form class="k-form k-form-horizontal">
 
-            <form class="k-form k-form-horizontal ng-invalid">
-                <kendo-form-field class="k-form-field k-form-field-error">
+                <kendo-form-field class="k-form-field">
                     <label class="k-label">AutoComplete:</label>
-
                     <div class="k-form-field-wrap">
-                        <kendo-autocomplete class="k-widget k-autocomplete k-header ng-touched ng-invalid">
+                        <kendo-autocomplete class="k-widget k-autocomplete k-header">
                             <kendo-searchbar class="k-searchbar">
                                 <input class="k-input">
                             </kendo-searchbar>
                         </kendo-autocomplete>
-
-                        <kendo-form-hint class="k-form-hint k-text-start">
-                            Hint: Only in Europe
-                        </kendo-form-hint>
-
-                        <kendo-form-error class="k-form-error k-text-start">
-                            <div>Error: required</div>
-                        </kendo-form-error>
                     </div>
                 </kendo-form-field>
 
-                <kendo-form-field class="k-form-field k-form-field-error">
+                <kendo-form-field class="k-form-field">
                     <label class="k-label">ComboBox:</label>
-
                     <div class="k-form-field-wrap">
-                        <kendo-combobox class="k-widget k-combobox k-header k-combobox-clearable ng-invalid ng-touched">
+                        <kendo-combobox class="k-widget k-combobox k-header k-combobox-clearable">
                             <span class="k-dropdown-wrap k-state-default">
                                 <kendo-searchbar class="k-searchbar">
                                     <input class="k-input">
@@ -183,22 +125,13 @@
                                 </span>
                             </span>
                         </kendo-combobox>
-
-                        <kendo-form-hint class="k-form-hint k-text-start">
-                            Hint: Hint text
-                        </kendo-form-hint>
-
-                        <kendo-form-error class="k-form-error k-text-start">
-                            <div>Error: required</div>
-                        </kendo-form-error>
                     </div>
                 </kendo-form-field>
 
-                <kendo-form-field class="k-form-field k-form-field-error">
+                <kendo-form-field class="k-form-field">
                     <label class="k-label">DropDownList:</label>
-
                     <div class="k-form-field-wrap">
-                        <kendo-dropdownlist class="k-widget k-dropdown k-header ng-invalid ng-touched">
+                        <kendo-dropdownlist class="k-widget k-dropdown k-header">
                             <span class="k-dropdown-wrap k-state-default">
                                 <span class="k-input">Select gender</span>
                                 <span class="k-select">
@@ -206,22 +139,13 @@
                                 </span>
                             </span>
                         </kendo-dropdownlist>
-
-                        <kendo-form-hint class="k-form-hint k-text-start">
-                            Hint: Hint text
-                        </kendo-form-hint>
-
-                        <kendo-form-error class="k-form-error k-text-start">
-                            <div>Error: required</div>
-                        </kendo-form-error>
                     </div>
                 </kendo-form-field>
 
-                <kendo-form-field class="k-form-field k-form-field-error">
+                <kendo-form-field class="k-form-field">
                     <label class="k-label">MultiSelect:</label>
-
                     <div class="k-form-field-wrap">
-                        <kendo-multiselect class="k-widget k-multiselect k-header ng-touched ng-invalid">
+                        <kendo-multiselect class="k-widget k-multiselect k-header">
                             <div class="k-multiselect-wrap k-floatwrap">
                                 <kendo-taglist>
                                     <ul class="k-reset">
@@ -239,21 +163,9 @@
                                 <span class="k-icon k-clear-value k-i-close"></span>
                             </div>
                         </kendo-multiselect>
-
-                        <kendo-form-hint class="k-form-hint k-text-start">
-                            Hint: Hint text
-                        </kendo-form-hint>
-
-                        <kendo-form-error class="k-form-error k-text-start">
-                            <div>Error: required</div>
-                        </kendo-form-error>
                     </div>
                 </kendo-form-field>
 
-                <div class="k-form-buttons">
-                    <button class="k-button k-primary">Submit</button>
-                    <button class="k-button">Clear</button>
-                </div>
             </form>
         </section>
     </div>

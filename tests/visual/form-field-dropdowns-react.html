@@ -8,74 +8,51 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
         section {
-            padding: 30px;
+            padding: 20px;
             border: 1px dashed grey;
         }
 
         .test-heading {
-            margin: 0 0 30px;
+            margin: 0 0 20px;
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
 
         <section>
-            <h2 class="test-heading">Vertical/Default Form (React)</h2>
+            <h3 class="test-heading">Vertical Form (React)</h3>
 
-            <div class="k-messagebox k-messagebox-error">
-                Error: The quick brown fox jumps over the lazy dog.
-            </div>
+            <form class="k-form k-form-vertical">
 
-            <form class="k-form">
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">AutoComplete:</label>
-                    <span class="k-widget k-autocomplete k-header k-state-invalid">
+                    <label class="k-label">AutoComplete:</label>
+                    <span class="k-widget k-autocomplete">
                         <span class="k-searchbar">
-                            <input class="k-input">
+                            <input class="k-input" />
                         </span>
                     </span>
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: Birth date
-                    </div>
-
-                    <div class="k-form-error k-text-start">
-                        Error: required
-                    </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">ComboBox:</label>
-                    <span class="k-widget k-combobox k-header k-combobox-clearable k-state-invalid">
+                    <label class="k-label">ComboBox:</label>
+                    <span class="k-widget k-combobox k-combobox-clearable">
                         <span class="k-dropdown-wrap k-state-default">
                             <span class="k-searchbar">
-                                <input class="k-input">
+                                <input class="k-input" />
                             </span>
                             <span class="k-select">
                                 <span class="k-icon k-i-arrow-s"></span>
                             </span>
                         </span>
                     </span>
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: Birth date
-                    </div>
-
-                    <div class="k-form-error k-text-start">
-                        Error: required
-                    </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">DropDownList:</label>
-                    <span class="k-widget k-dropdown k-header k-state-invalid">
+                    <label class="k-label">DropDownList:</label>
+                    <span class="k-widget k-dropdown">
                         <span class="k-dropdown-wrap k-state-default">
                             <span class="k-input">Select gender:</span>
                             <span class="k-select">
@@ -86,20 +63,11 @@
                             </select>
                         </span>
                     </span>
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: Birth date
-                    </div>
-
-                    <div class="k-form-error k-text-start">
-                        Error: required
-                    </div>
                 </div>
 
-
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">MultiSelect:</label>
-                    <span class="k-widget k-multiselect k-header k-state-invalid">
+                    <label class="k-label">MultiSelect:</label>
+                    <span class="k-widget k-multiselect">
                         <div class="k-multiselect-wrap k-floatwrap">
                             <ul class="k-reset">
                                 <li class="k-button">
@@ -110,82 +78,50 @@
                                 </li>
                             </ul>
                             <span class="k-searchbar">
-                                <input class="k-input">
+                                <input class="k-input" />
                             </span>
                         </div>
                     </span>
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: Birth date
-                    </div>
-
-                    <div class="k-form-error k-text-start">
-                        Error: required
-                    </div>
                 </div>
 
-                <div class="k-form-buttons">
-                    <button class="k-button k-primary">Submit</button>
-                    <button class="k-button">Clear</button>
-                </div>
             </form>
         </section>
 
         <section>
-            <h2 class="test-heading">Horizontal Form (React)</h2>
-
-            <div class="k-messagebox k-messagebox-error">
-                Error: The quick brown fox jumps over the lazy dog.
-            </div>
+            <h3 class="test-heading">Horizontal Form (React)</h3>
 
             <form class="k-form k-form-horizontal">
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">AutoComplete:</label>
+                    <label class="k-label">AutoComplete:</label>
                     <div class="k-form-field-wrap">
-                        <span class="k-widget k-autocomplete k-header k-state-invalid">
+                        <span class="k-widget k-autocomplete">
                             <span class="k-searchbar">
-                                <input class="k-input">
+                                <input class="k-input" />
                             </span>
                         </span>
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: Birth date
-                        </div>
-
-                        <div class="k-form-error k-text-start">
-                            Error: required
-                        </div>
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">ComboBox:</label>
+                    <label class="k-label">ComboBox:</label>
                     <div class="k-form-field-wrap">
-                        <span class="k-widget k-combobox k-header k-combobox-clearable k-state-invalid">
+                        <span class="k-widget k-combobox k-combobox-clearable">
                             <span class="k-dropdown-wrap k-state-default">
                                 <span class="k-searchbar">
-                                    <input class="k-input">
+                                    <input class="k-input" />
                                 </span>
                                 <span class="k-select">
                                     <span class="k-icon k-i-arrow-s"></span>
                                 </span>
                             </span>
                         </span>
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: Birth date
-                        </div>
-
-                        <div class="k-form-error k-text-start">
-                            Error: required
-                        </div>
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">DropDownList:</label>
+                    <label class="k-label">DropDownList:</label>
                     <div class="k-form-field-wrap">
-                        <span class="k-widget k-dropdown k-header k-state-invalid">
+                        <span class="k-widget k-dropdown">
                             <span class="k-dropdown-wrap k-state-default">
                                 <span class="k-input">Select gender:</span>
                                 <span class="k-select">
@@ -196,21 +132,13 @@
                                 </select>
                             </span>
                         </span>
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: Birth date
-                        </div>
-
-                        <div class="k-form-error k-text-start">
-                            Error: required
-                        </div>
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">MultiSelect:</label>
+                    <label class="k-label">MultiSelect:</label>
                     <div class="k-form-field-wrap">
-                        <span class="k-widget k-multiselect k-header k-state-invalid">
+                        <span class="k-widget k-multiselect">
                             <div class="k-multiselect-wrap k-floatwrap">
                                 <ul class="k-reset">
                                     <li class="k-button">
@@ -221,25 +149,13 @@
                                     </li>
                                 </ul>
                                 <span class="k-searchbar">
-                                    <input class="k-input">
+                                    <input class="k-input" />
                                 </span>
                             </div>
                         </span>
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: Birth date
-                        </div>
-
-                        <div class="k-form-error k-text-start">
-                            Error: required
-                        </div>
                     </div>
                 </div>
 
-                <div class="k-form-buttons">
-                    <button class="k-button k-primary">Submit</button>
-                    <button class="k-button">Clear</button>
-                </div>
             </form>
         </section>
     </div>
