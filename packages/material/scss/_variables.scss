@@ -1056,57 +1056,6 @@ $card-callout-box-shadow-s: 2px -2px 2px 0 rgba(0, 0, 0, .2), 0 -2px 2px -3px rg
 $card-callout-box-shadow-w: -1px -3px 1px -2px rgba(0, 0, 0, .2), 0 -2px 2px -2px rgba(0, 0, 0, .14), 1px -2px 2px -1px rgba(0, 0, 0, .12) !default;
 
 
-// Scheduler
-$scheduler-border-width: 1px !default;
-$scheduler-font-family: $font-family !default;
-$scheduler-font-size: $font-size !default;
-$scheduler-line-height: $line-height !default;
-
-$scheduler-bg: $panel-bg !default;
-$scheduler-text: $panel-text !default;
-$scheduler-border: $panel-border !default;
-
-$scheduler-toolbar-bg: try-shade( $button-bg, .5 ) !default;
-$scheduler-toolbar-text: null !default;
-$scheduler-toolbar-border: null !default;
-$scheduler-toolbar-gradient: null !default;
-
-$scheduler-footer-bg: try-shade( $button-bg, .5 ) !default;
-$scheduler-footer-text: null !default;
-$scheduler-footer-border: null !default;
-$scheduler-footer-gradient: null !default;
-
-$scheduler-event-min-height: 25px !default;
-$scheduler-event-border-radius: $border-radius !default;
-$scheduler-event-line-height: calc( #{$scheduler-event-min-height} - (2 * #{$padding-y-sm}) ) !default;
-
-$scheduler-event-bg: $primary !default;
-$scheduler-event-text: contrast-wcag( $scheduler-event-bg ) !default;
-$scheduler-event-border: null !default;
-$scheduler-event-gradient: null !default;
-$scheduler-event-shadow: null !default;
-
-$scheduler-event-hover-bg: null !default;
-$scheduler-event-hover-text: null !default;
-$scheduler-event-hover-border: null !default;
-$scheduler-event-hover-gradient: null !default;
-$scheduler-event-hover-shadow: null !default;
-
-$scheduler-event-selected-bg: try-tint( $primary, 1 ) !default;
-$scheduler-event-selected-text: contrast-wcag( $scheduler-event-selected-bg ) !default;
-$scheduler-event-selected-border: null !default;
-$scheduler-event-selected-gradient: null !default;
-$scheduler-event-selected-shadow: $box-shadow-depth-3 !default;
-
-$scheduler-cell-height: $line-height * 1rem !default;
-$scheduler-datecolumn-width: 12rem !default;
-$scheduler-timecolumn-width: 11rem !default;
-
-$scheduler-current-time-color: #ff0000 !default;
-
-$scheduler-nonwork-bg: mix( $component-text, $component-bg, 3% ) !default;
-
-
 // Backdrop (Overlay)
 $backdrop-bg: #000000 !default;
 $backdrop-opacity: .32 !default;
