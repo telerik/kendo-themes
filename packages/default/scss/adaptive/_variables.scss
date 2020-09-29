@@ -1,0 +1,29 @@
+// Adaptive
+$adaptive-content-bg: $base-bg !default;
+$adaptive-content-text: $primary !default;
+
+$adaptive-menu-bg: $primary !default;
+$adaptive-menu-text: contrast-wcag( $adaptive-menu-bg ) !default;
+
+$adaptive-menu-clear-text: $primary !default;
+
+$adaptive-menu-item-border: $component-border !default;
+$adaptive-menu-title-text: $component-text !default;
+
+$adaptive-border-width: 1px !default;
+$adaptive-font-family: $font-family !default;
+$adaptive-font-size: $font-size !default;
+$adaptive-line-height: $line-height !default;
+
+$adaptive-bg: $component-bg !default;
+$adaptive-text: $component-text !default;
+$adaptive-border: $component-border !default;
+
+
+// Adaptive Grid
+$adaptive-grid-sort-text: $primary !default;
+
+
+// Adaptive Scheduler
+$adaptive-scheduler-current-text: $primary !default;
+$adaptive-scheduler-base-text: inherit !default;
