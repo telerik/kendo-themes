@@ -46,4 +46,11 @@ $scheduler-timecolumn-width: 11em !default;
 
 $scheduler-current-time-color: #ff0000 !default;
 
-$scheduler-nonwork-bg: try-shade( $component-bg, .5 ) !default;
+$scheduler-nonwork-bg: try-shade( $scheduler-bg, .5 ) !default;
+$scheduler-nonwork-text: null !default;
+
+$scheduler-weekend-bg: null !default;
+$scheduler-weekend-text: null !default;
+
+$scheduler-othermonth-bg: try-shade( $scheduler-bg, .5 ) !default;
+$scheduler-othermonth-text: null !default;
