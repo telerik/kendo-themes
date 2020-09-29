@@ -4,9 +4,9 @@ $scheduler-font-family: $font-family !default;
 $scheduler-font-size: $font-size !default;
 $scheduler-line-height: $line-height !default;
 
-$scheduler-bg: $panel-bg !default;
-$scheduler-text: $panel-text !default;
-$scheduler-border: $panel-border !default;
+$scheduler-bg: $component-bg !default;
+$scheduler-text: $component-text !default;
+$scheduler-border: $component-border !default;
 
 $scheduler-toolbar-bg: try-shade( $button-bg, .5 ) !default;
 $scheduler-toolbar-text: null !default;
@@ -46,4 +46,11 @@ $scheduler-timecolumn-width: 11rem !default;
 
 $scheduler-current-time-color: #ff0000 !default;
 
-$scheduler-nonwork-bg: mix( $component-text, $component-bg, 3% ) !default;
+$scheduler-nonwork-bg: try-shade( $scheduler-bg, .5 ) !default;
+$scheduler-nonwork-text: null !default;
+
+$scheduler-weekend-bg: null !default;
+$scheduler-weekend-text: null !default;
+
+$scheduler-othermonth-bg: try-shade( $scheduler-bg, .5 ) !default;
+$scheduler-othermonth-text: null !default;
