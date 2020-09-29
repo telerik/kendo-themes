@@ -1,0 +1,63 @@
+// Pager
+$pager-padding-x: $toolbar-padding-x !default;
+$pager-padding-y: $toolbar-padding-y !default;
+$pager-border-width: 1px !default;
+
+$pager-font-family: $font-family !default;
+$pager-font-size: $font-size !default;
+$pager-line-height: $line-height !default;
+
+$pager-bg: $header-bg !default;
+$pager-text: $header-text !default;
+$pager-border: $component-border !default;
+
+$pager-section-spacing: $spacer-x !default;
+
+$pager-item-padding-x: $button-padding-y !default;
+$pager-item-padding-y: $pager-item-padding-x !default;
+$pager-item-border-width: 0px !default;
+$pager-item-border-radius: null !default;
+$pager-item-spacing: null !default;
+
+$pager-item-bg: null !default;
+$pager-item-text: null !default;
+$pager-item-border: null !default;
+
+$pager-item-hover-bg: $list-item-hovered-bg !default;
+$pager-item-hover-text: $list-item-hovered-text !default;
+$pager-item-hover-border: null !default;
+
+$pager-item-selected-bg: $list-item-selected-bg !default;
+$pager-item-selected-text: $list-item-selected-text !default;
+$pager-item-selected-border: null !default;
+
+$pager-item-focus-opacity: null !default;
+$pager-item-focus-bg: transparent !default;
+$pager-item-focus-shadow: $list-item-focused-shadow !default;
+
+$pager-number-padding-x: $pager-item-padding-x !default;
+$pager-number-padding-y: $pager-item-padding-y !default;
+$pager-number-border-width: $pager-item-border-width !default;
+$pager-number-border-radius: null !default;
+$pager-number-spacing: $pager-item-spacing !default;
+
+$pager-number-bg: null !default;
+$pager-number-text: $primary !default;
+$pager-number-border: null !default;
+
+$pager-number-hover-opacity: .08 !default;
+$pager-number-hover-bg: rgba($pager-item-selected-bg, $pager-number-hover-opacity) !default;
+$pager-number-hover-text: $pager-number-text !default;
+$pager-number-hover-border: $pager-item-hover-border !default;
+
+$pager-number-selected-opacity: .2 !default;
+$pager-number-selected-bg: rgba($pager-item-selected-bg, $pager-number-selected-opacity) !default;
+$pager-number-selected-text: $pager-number-text !default;
+$pager-number-selected-border: $pager-item-selected-border !default;
+
+$pager-number-focus-opacity: .12 !default;
+$pager-number-focus-bg: transparent !default;
+$pager-number-focus-shadow: inset 0 0 0 2px rgba($pager-number-selected-bg, $pager-number-focus-opacity) !default;
+
+$pager-input-width: 3em !default;
+$pager-dropdown-width: 5em !default;
