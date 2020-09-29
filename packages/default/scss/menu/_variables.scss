@@ -1,0 +1,82 @@
+// Menu
+$menu-padding-x: 0px !default;
+$menu-padding-y: 0px !default;
+$menu-border-width: 0px !default;
+$menu-font-family: $font-family !default;
+$menu-font-size: $font-size !default;
+$menu-line-height: $line-height !default;
+
+$menu-bg: transparent !default;
+$menu-text: $component-text !default;
+$menu-border: null !default;
+$menu-gradient: null !default;
+
+$menu-item-padding-x: $nav-item-padding-x !default;
+$menu-item-padding-y: $nav-item-padding-y !default;
+$menu-item-spacing: $nav-item-margin !default;
+$menu-item-icon-spacing: $icon-spacing !default;
+
+$menu-item-bg: null !default;
+$menu-item-text: $link-text !default;
+$menu-item-border: null !default;
+$menu-item-gradient: null !default;
+
+$menu-item-hover-bg: null !default;
+$menu-item-hover-text: $link-hover-text !default;
+$menu-item-hover-border: null !default;
+$menu-item-hover-gradient: null !default;
+
+$menu-item-expanded-bg: null !default;
+$menu-item-expanded-text: $component-text !default;
+$menu-item-expanded-border: null !default;
+$menu-item-expanded-gradient: null !default;
+
+$menu-item-focus-shadow: $list-item-focused-shadow !default;
+
+$menu-separator-spacing: 2px !default;
+
+$menu-scroll-button-bg: $component-bg !default;
+$menu-scroll-button-text: $link-text !default;
+$menu-scroll-button-border: $component-border !default;
+$menu-scroll-button-gradient: null !default;
+
+$menu-scroll-button-hover-bg: null !default;
+$menu-scroll-button-hover-text: $link-hover-text !default;
+$menu-scroll-button-hover-border: null !default;
+$menu-scroll-button-hover-gradient: null !default;
+
+
+// Menu popup
+$menu-popup-padding-x: $popup-padding-x !default;
+$menu-popup-padding-y: $popup-padding-y !default;
+$menu-popup-border-width: $popup-border-width !default;
+$menu-popup-font-size: $font-size !default;
+$menu-popup-line-height: $line-height !default;
+
+$menu-popup-bg: $popup-bg !default;
+$menu-popup-text: $popup-text !default;
+$menu-popup-border: $popup-border !default;
+$menu-popup-gradient: null !default;
+
+$menu-popup-item-padding-x: $list-item-padding-x !default;
+$menu-popup-item-padding-y: $list-item-padding-y !default;
+$menu-popup-item-padding-end: calc( #{$list-item-padding-x * 2} + #{$icon-size} ) !default;
+$menu-popup-item-spacing: 0px !default;
+$menu-popup-item-icon-spacing: $icon-spacing !default;
+
+$menu-popup-item-bg: null !default;
+$menu-popup-item-text: null !default;
+$menu-popup-item-border: null !default;
+$menu-popup-item-gradient: null !default;
+
+$menu-popup-item-hover-bg: $list-item-hovered-bg !default;
+$menu-popup-item-hover-text: $list-item-hovered-text !default;
+$menu-popup-item-hover-border: null !default;
+$menu-popup-item-hover-gradient: null !default;
+
+$menu-popup-item-expanded-bg: $list-item-selected-bg !default;
+$menu-popup-item-expanded-text: $list-item-selected-text !default;
+$menu-popup-item-expanded-border: null !default;
+$menu-popup-item-expanded-gradient: null !default;
+
+$menu-popup-item-focus-shadow: $menu-item-focus-shadow !default;
