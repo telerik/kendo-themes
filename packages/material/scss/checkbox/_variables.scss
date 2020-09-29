@@ -6,7 +6,7 @@ $checkbox-border-width: 2px !default;
 $checkbox-line-height: calc( #{$checkbox-size} + #{$checkbox-border-width} ) !default;
 $checkbox-indeterminate-style: dash !default;
 $checkbox-dash-height: $checkbox-size / 10 !default;
-$checkbox-dash-width: $checkbox-size - ( $checkbox-border-width * 4 ) !default;
+$checkbox-dash-width:  calc( #{$checkbox-size} - ( #{$checkbox-border-width} * 4 )) !default;
 $checkbox-label-margin-x: 8px;
 
 $checkbox-bg: null !default;
