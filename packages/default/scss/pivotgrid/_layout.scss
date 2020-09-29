@@ -1,6 +1,8 @@
 @include exports("pivotgrid/layout") {
 
     .k-pivot {
+        border-width: $pivotgrid-border-width;
+        border-style: solid;
         position: relative;
 
         .k-grid td {
