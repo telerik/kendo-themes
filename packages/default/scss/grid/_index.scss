@@ -8,6 +8,7 @@
 @import "../progressbar/_index.scss";
 @import "../button/_index.scss";
 @import "../action-buttons/_index.scss";
+@import "../toolbar/_index.scss";
 @import "../input/_index.scss";
 @import "../checkbox/_index.scss";
 @import "../radio/_index.scss";
@@ -22,5 +23,6 @@
 
 
 // Component
+@import "_variables.scss";
 @import "_layout.scss";
 @import "_theme.scss";

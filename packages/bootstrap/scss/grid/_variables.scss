@@ -1,0 +1,122 @@
+// Grid
+$grid-padding-x: $cell-padding-x !default;
+$grid-padding-y: $cell-padding-y !default;
+
+$grid-header-padding-x: $grid-padding-x !default;
+$grid-header-padding-y: $grid-padding-y !default;
+$grid-header-font-size: null !default;
+
+$grid-footer-padding-x: $grid-header-padding-x !default;
+$grid-footer-padding-y: $grid-header-padding-y !default;
+
+$grid-grouping-header-padding-x: ($grid-padding-y / 2) !default;
+$grid-grouping-header-padding-y: $grid-grouping-header-padding-x !default;
+
+$grid-filter-cell-padding-x: $grid-padding-y !default;
+$grid-filter-cell-padding-y: $grid-filter-cell-padding-x !default;
+
+$grid-toolbar-padding-x: $toolbar-padding-x !default;
+$grid-toolbar-padding-y: $toolbar-padding-y !default;
+$grid-toolbar-spacing: $toolbar-spacing !default;
+
+$grid-cell-padding-x: $grid-padding-x !default;
+$grid-cell-padding-y: $grid-padding-y !default;
+$grid-cell-horizontal-border-width: 0px !default;
+$grid-cell-vertical-border-width: 1px !default;
+
+$grid-cell-placeholder-line-width: 80% !default;
+
+$grid-border-width: 1px !default;
+$grid-font-family: $font-family !default;
+$grid-font-size: $font-size !default;
+$grid-line-height: $line-height !default;
+
+/// Background color of the grid component
+/// @group grid
+$grid-bg: $table-bg !default;
+/// Text color of the grid component
+/// @group grid
+$grid-text: $table-color !default;
+/// Border color of the grid component
+/// @group grid
+$grid-border: $table-border-color !default;
+
+/// Background color of grid header
+/// @group grid
+$grid-header-bg: $header-bg !default;
+/// Text color of grid header
+/// @group grid
+$grid-header-text: $header-text !default;
+/// Border color of grid header
+/// @group grid
+$grid-header-border: $header-border !default;
+/// Background gradient of grid header
+/// @group grid
+$grid-header-gradient: $header-gradient !default;
+
+$grid-group-drag-clue-line-height: 1.5 !default;
+
+/// Background color of alternating rows in grid
+/// @group grid
+$grid-alt-bg: $table-accent-bg !default;
+/// Text color of alternating rows in grid
+/// @group grid
+$grid-alt-text: null !default;
+/// Border color of alternating rows in grid
+/// @group grid
+$grid-alt-border: null !default;
+
+/// Background color of hovered rows in grid
+/// @group grid
+$grid-hovered-bg: $table-hover-bg !default;
+/// Text color of hovered rows in grid
+/// @group grid
+$grid-hovered-text: $table-hover-color !default;
+/// Border color of hovered rows in grid
+/// @group grid
+$grid-hovered-border: null !default;
+
+/// Background color of selected rows in grid
+/// @group grid
+$grid-selected-bg: rgba($selected-bg, .25) !default;
+/// Text color of selected rows in grid
+/// @group grid
+$grid-selected-text: $grid-text !default;
+/// Border color of selected rows in grid
+/// @group grid
+$grid-selected-border: $grid-border !default;
+
+$grid-grouping-row-bg: darken($grid-bg, 7%) !default;
+$grid-grouping-row-text: $grid-text !default;
+
+$grid-sorted-bg: rgba( contrast-wcag( $grid-bg ), .02 ) !default;
+$grid-sorting-indicator-text: $primary !default;
+$grid-sorting-index-font-size: ($icon-size * .75) !default;
+$grid-sorting-index-height: $icon-size !default;
+$grid-sorting-index-spacing-y: 2px !default;
+$grid-sorting-index-spacing-x: -$grid-sorting-index-spacing-y !default;
+
+$grid-focused-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .08) !default;
+
+$grid-command-cell-button-spacing: .16em !default;
+
+$grid-search-width: 15.7em !default;
+
+$grid-sticky-bg: $grid-bg !default;
+$grid-sticky-text:  $grid-text !default;
+$grid-sticky-border: rgba($grid-text, .5) !default;
+
+$grid-sticky-alt-bg: darken($grid-bg, 5%) !default;
+
+$grid-sticky-header-bg: $grid-header-bg !default;
+$grid-sticky-header-text: $grid-header-text !default;
+$grid-sticky-header-border: $grid-sticky-border !default;
+
+$grid-sticky-footer-bg: $grid-header-bg !default;
+$grid-sticky-footer-hovered-bg: $grid-sticky-footer-bg !default;
+
+$grid-sticky-selected-bg: mix($selected-bg, #ffffff, 25%) !default;
+$grid-sticky-selected-alt-bg: shade($grid-sticky-selected-bg, .4) !default;
+
+$grid-sticky-hovered-bg: darken($grid-bg, 8%) !default;
+$grid-sticky-selected-hovered-bg: shade($grid-sticky-selected-bg, .7) !default;
