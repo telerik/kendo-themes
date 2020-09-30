@@ -754,44 +754,6 @@ $drag-clue-line-height: null !default;
 $drag-clue-border-radius: null !default;
 
 
-// Window
-$window-border-width: 1px !default;
-$window-border-radius: $border-radius !default;
-$window-font-family: $font-family !default;
-$window-font-size: $font-size !default;
-$window-line-height: $line-height !default;
-
-$window-inner-padding-x: $modal-inner-padding !default;
-$window-inner-padding-y: $modal-inner-padding !default;
-
-$window-titlebar-padding-x: $modal-header-padding-x !default;
-$window-titlebar-padding-y: $modal-header-padding-y !default;
-$window-titlebar-border-width: 0 0 1px !default;
-$window-titlebar-border-style: solid !default;
-
-$window-title-spacing: 0px !default;
-$window-title-font-size: $font-size-lg !default;
-$window-title-line-height: $modal-title-line-height !default;
-
-$window-bg: $modal-content-bg !default;
-$window-text: $modal-content-color !default;
-$window-border: $modal-content-border-color !default;
-
-$window-titlebar-bg: null !default;
-$window-titlebar-text: null !default;
-$window-titlebar-border: $modal-header-border-color !default;
-
-$window-shadow: null !default;
-$window-focused-shadow: null !default;
-
-$window-sizes: () !default;
-$window-sizes: map-merge((
-        sm: 300px,
-        md: 800px,
-        lg: 1200px
-), $window-sizes);
-
-
 // Layout
 $grid-cols: 12 !default;
 $grid-rows: 10 !default;
