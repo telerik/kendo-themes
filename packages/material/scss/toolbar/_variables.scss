@@ -1,0 +1,28 @@
+// Toolbar
+
+/// The horizontal padding of the container.
+/// @group toolbar
+$toolbar-padding-x: 6px !default;
+/// The vertical padding of the container.
+/// @group toolbar
+$toolbar-padding-y: 6px !default;
+$toolbar-border-width: 0 !default;
+$toolbar-border-radius: null !default;
+$toolbar-spacing: $toolbar-padding-x !default;
+
+$toolbar-font-family: $font-family !default;
+$toolbar-font-size: $font-size !default;
+$toolbar-line-height: (20 / 14) !default;
+
+$toolbar-inner-calc-size: calc( #{$button-calc-size} + #{$toolbar-padding-y * 2} ) !default;
+
+$toolbar-bg: $component-bg !default;
+$toolbar-text: $component-text !default;
+$toolbar-border: null !default;
+$toolbar-gradient: null !default;
+$toolbar-shadow: $box-shadow-depth-2 !default;
+
+$toolbar-button-expanded-bg: $popup-bg !default;
+$toolbar-button-expanded-shadow: $button-focused-shadow !default;
+
+$toolbar-separator-border: $component-border !default;
