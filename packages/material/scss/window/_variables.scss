@@ -1,0 +1,36 @@
+// Window
+$window-border-width: 0px !default;
+$window-border-radius: 4px !default;
+$window-font-family: $font-family !default;
+$window-font-size: $font-size !default;
+$window-line-height: $line-height !default;
+
+$window-titlebar-padding-x: 24px !default;
+$window-titlebar-padding-y: 24px !default;
+$window-titlebar-border-width: 0px !default;
+$window-titlebar-border-style: solid !default;
+
+$window-title-spacing: -.15em 0 !default;
+$window-title-font-size: 20px !default;
+$window-title-line-height: 1.4 !default;
+
+$window-inner-padding-x: 24px !default;
+$window-inner-padding-y: 24px !default;
+
+$window-bg: $component-bg !default;
+$window-text: $component-text !default;
+$window-border: null !default;
+
+$window-titlebar-bg: null !default;
+$window-titlebar-text: null !default;
+$window-titlebar-border: null !default;
+
+$window-shadow: $box-shadow-depth-4 !default;
+$window-focused-shadow: $box-shadow-depth-5 !default;
+
+$window-sizes: () !default;
+$window-sizes: map-merge((
+        sm: 300px,
+        md: 800px,
+        lg: 1200px
+), $window-sizes);
