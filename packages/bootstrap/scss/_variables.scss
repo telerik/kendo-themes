@@ -295,62 +295,6 @@ $disabled-filter: grayscale(.1) !default;
 $disabled-opacity: .65 !default;
 
 
-// Typography
-
-/// Base font size across all components.
-/// @group typography
-$font-size: $font-size-base !default;
-$font-size-xs: .75 * $font-size-base !default;
-$font-size-sm: $font-size-sm !default;
-$font-size-lg: $font-size-lg !default;
-
-/// Font family across all components.
-/// @group typography
-$font-family: $font-family-base !default;
-
-/// Font family for monospaced text. Used for styling the code.
-/// @group typography
-$font-family-monospace: $font-family-monospace !default;
-
-/// Line height used along with $font-size.
-/// @group typography
-$line-height: $line-height-base !default;
-$line-height-sm: $line-height-sm !default;
-$line-height-lg: $line-height-lg !default;
-$line-height-em: ($line-height * 1em);
-
-
-// Font weight
-$font-weight-light: $font-weight-light !default;
-$font-weight-normal: $font-weight-normal !default;
-$font-weight-bold: $font-weight-bold !default;
-
-// Headings
-$h1-font-size: $h1-font-size !default;
-$h2-font-size: $h2-font-size !default;
-$h3-font-size: $h3-font-size !default;
-$h4-font-size: $h4-font-size !default;
-$h5-font-size: $h5-font-size !default;
-$h6-font-size: $h6-font-size !default;
-
-$h1-margin-bottom: $headings-margin-bottom !default;
-$h2-margin-bottom: $headings-margin-bottom !default;
-$h3-margin-bottom: $headings-margin-bottom !default;
-$h4-margin-bottom: $headings-margin-bottom !default;
-$h5-margin-bottom: $headings-margin-bottom !default;
-$h6-margin-bottom: $headings-margin-bottom !default;
-
-
-// Display
-$display1-font-size: $display1-size !default;
-$display2-font-size: $display2-size !default;
-$display3-font-size: $display3-size !default;
-$display4-font-size: $display4-size !default;
-
-// Paragraph
-$paragraph-margin-bottom: $paragraph-margin-bottom !default;
-
-
 // Generic styles
 
 // Root styles
@@ -360,10 +304,6 @@ $body-text: $body-color !default;
 $app-bg: $body-bg !default;
 $app-text: $body-text !default;
 $app-border: contrast-yiq( $app-bg, $gray-300, $gray-700 ) !default;
-
-// Link
-$link-text: $link-color !default;
-$link-hover-text: $link-hover-color !default;
 
 
 // Components
@@ -501,29 +441,6 @@ $grid-gap: 10px !default;
 // Backdrop (Overlay)
 $backdrop-bg: $modal-backdrop-bg !default;
 $backdrop-opacity: $modal-backdrop-opacity !default;
-
-
-// Config maps
-$typography-config: () !default;
-// sass-lint:disable indentation
-$typography-config: map-merge((
-    display-1: font-map($headings-font-family, $display1-font-size, $display-line-height, $display1-weight ),
-    display-2: font-map($headings-font-family, $display2-font-size, $display-line-height, $display2-weight ),
-    display-3: font-map($headings-font-family, $display3-font-size, $display-line-height, $display3-weight ),
-    display-4: font-map($headings-font-family, $display4-font-size, $display-line-height, $display4-weight ),
-    h1: font-map($headings-font-family, $h1-font-size, $headings-line-height, $headings-font-weight ),
-    h2: font-map($headings-font-family, $h2-font-size, $headings-line-height, $headings-font-weight ),
-    h3: font-map($headings-font-family, $h3-font-size, $headings-line-height, $headings-font-weight ),
-    h4: font-map($headings-font-family, $h4-font-size, $headings-line-height, $headings-font-weight ),
-    h5: font-map($headings-font-family, $h5-font-size, $headings-line-height, $headings-font-weight ),
-    h6: font-map($headings-font-family, $h6-font-size, $headings-line-height, $headings-font-weight ),
-    body: font-map($font-family-base, $font-size-base, $line-height-base, $font-weight-base )
-), $typography-config);
-$typography-config: map-merge((
-    card-title: map-get($typography-config, h5),
-    card-subtitle: map-get($typography-config, h6)
-), $typography-config);
-// sass-lint:enable indentation
 
 
 // Disabled Styling maps
