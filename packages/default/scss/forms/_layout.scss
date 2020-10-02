@@ -359,6 +359,7 @@
         width: 65%;
         float: right;
         clear: right;
+        position: relative;
 
         &.k-no-editor {
             padding: calc( #{$input-padding-y} + #{$input-border-width} ) 0;
