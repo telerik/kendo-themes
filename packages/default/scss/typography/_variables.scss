@@ -1,0 +1,85 @@
+// Typography
+
+/// Base font size across all components.
+/// @group typography
+$font-size: 14px !default;
+$font-size-xs: 10px !default;
+$font-size-sm: 12px !default;
+$font-size-lg: 19px !default;
+$font-size-xl: 19px !default;
+
+/// Font family across all components.
+/// @group typography
+$font-family: inherit !default;
+
+/// Font family for monospaced text. Used for styling the code.
+/// @group typography
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
+
+/// Line height used along with $font-size.
+/// @group typography
+$line-height: (20 / 14) !default;
+$line-height-sm: 1.2 !default;
+$line-height-lg: 1.5 !default;
+$line-height-em: $line-height * 1em;
+
+
+// Font weight
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+
+
+// Headings
+$h1-font-size: ($font-size * 2) !default;
+$h2-font-size: $font-size-lg !default;
+$h3-font-size: $font-size !default;
+$h4-font-size: $font-size-sm !default;
+$h5-font-size: $font-size-sm !default;
+$h6-font-size: $font-size-sm !default;
+
+$h1-margin-bottom: $font-size !default;
+$h2-margin-bottom: $font-size !default;
+$h3-margin-bottom: $font-size !default;
+$h4-margin-bottom: $font-size !default;
+$h5-margin-bottom: $font-size !default;
+$h6-margin-bottom: $font-size !default;
+
+
+// Display
+$display1-font-size: ($font-size * 6) !default;
+$display2-font-size: ($font-size * 5) !default;
+$display3-font-size: ($font-size * 4) !default;
+$display4-font-size: ($font-size * 3) !default;
+
+
+// Paragraph
+$paragraph-margin-bottom: $font-size !default;
+
+
+// Link
+$link-text: $primary !default;
+$link-hover-text: $primary-darker !default;
+
+
+// Config maps
+$typography-config: () !default;
+// sass-lint:disable indentation
+$typography-config: map-merge((
+    display-1: font-map( inherit, $display1-font-size, 1.2, $font-weight-light ),
+    display-2: font-map( inherit, $display2-font-size, 1.2, $font-weight-light ),
+    display-3: font-map( inherit, $display3-font-size, 1.2, $font-weight-light ),
+    display-4: font-map( inherit, $display4-font-size, 1.2, $font-weight-light ),
+    h1: font-map( inherit, $h1-font-size, normal, $font-weight-light ),
+    h2: font-map( inherit, $h2-font-size, normal, $font-weight-normal ),
+    h3: font-map( inherit, $h3-font-size, normal, $font-weight-bold ),
+    h4: font-map( inherit, $h4-font-size, normal, $font-weight-bold ),
+    h5: font-map( inherit, $h5-font-size, normal, $font-weight-normal ),
+    h6: font-map( inherit, $h6-font-size, normal, $font-weight-normal ),
+    body: font-map( inherit, $font-size, $line-height, $font-weight-normal )
+), $typography-config);
+$typography-config: map-merge((
+    card-title: map-get($typography-config, h2),
+    card-subtitle: map-get($typography-config, h6)
+), $typography-config);
+// sass-lint:enable indentation

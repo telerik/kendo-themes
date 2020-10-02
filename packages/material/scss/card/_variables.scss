@@ -1,0 +1,58 @@
+// Card
+$card-padding-x: map-get( $spacing, lg ) !default;
+$card-padding-y: map-get( $spacing, md ) !default;
+$card-border-width: 0px !default;
+$card-border-radius: $border-radius !default;
+$card-inner-border-radius: calc( #{$card-border-radius} - #{$card-border-width} ) !default;
+$card-font-family: $font-family !default;
+$card-font-size: $font-size !default;
+$card-line-height: (20 / 14) !default;
+$card-box-shadow: $box-shadow-depth-2 !default;
+$card-box-focused-shadow: $box-shadow-depth-3 !default;
+
+$card-deck-gap: map-get( $spacing, lg ) !default;
+
+$card-bg: $component-bg !default;
+$card-text: $component-text !default;
+$card-border: $component-border !default;
+
+$card-header-padding-x: $card-padding-x !default;
+$card-header-padding-y: $card-padding-y !default;
+$card-header-border-width: 1px !default;
+$card-header-bg: null !default;
+$card-header-text: null !default;
+$card-header-border: $card-border !default;
+
+$card-body-padding-x: map-get( $spacing, lg ) !default;
+$card-body-padding-y: map-get( $spacing, lg ) !default;
+
+$card-footer-padding-x: $card-padding-x !default;
+$card-footer-padding-y: $card-padding-y !default;
+$card-footer-border-width: 1px !default;
+$card-footer-bg: null !default;
+$card-footer-text: null !default;
+$card-footer-border: $card-border !default;
+
+$card-title-margin-bottom: $h1-margin-bottom !default;
+$card-subtitle-margin-bottom: $paragraph-margin-bottom !default;
+$card-subtitle-text: true-mix($card-text, $card-bg, 54%) !default;
+
+$card-img-max-width: 100px !default;
+$card-avatar-size: 45px !default;
+$card-avatar-spacing:  $card-header-padding-x !default;
+
+$card-actions-padding-x: map-get( $spacing, 2 ) !default;
+$card-actions-padding-y: map-get( $spacing, 2 ) !default;
+$card-actions-border-width: 1px !default;
+$card-actions-gap: map-get( $spacing, 2 ) !default;
+
+$card-deck-scroll-button-radius: 50% !default;
+$card-deck-scroll-button-offset: $card-deck-gap / 2 !default;
+
+$card-callout-width: 20px !default;
+$card-callout-height: 20px !default;
+
+$card-callout-box-shadow-n: 2px -2px 2px 0 rgba(0, 0, 0, .04) !default;
+$card-callout-box-shadow-e: -1px -3px 1px -2px rgba(0, 0, 0, .2), 0 -2px 2px -2px rgba(0, 0, 0, .14), 1px -2px 2px -1px rgba(0, 0, 0, .12) !default;
+$card-callout-box-shadow-s: 2px -2px 2px 0 rgba(0, 0, 0, .2), 0 -2px 2px -3px rgba(0, 0, 0, .14), 1px -2px 2px -1px rgba(0, 0, 0, .12) !default;
+$card-callout-box-shadow-w: -1px -3px 1px -2px rgba(0, 0, 0, .2), 0 -2px 2px -2px rgba(0, 0, 0, .14), 1px -2px 2px -1px rgba(0, 0, 0, .12) !default;

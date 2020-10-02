@@ -1,2 +1,11 @@
+// Dependencies // TODO: extract variables
+@import "../button/_variables.scss";
+@import "../input/_variables.scss";
+@import "../toolbar/_index.scss";
+@import "../window/_variables.scss";
+
+
+// Component
+@import "_variables.scss";
 @import "~@progress/kendo-theme-default/scss/forms/_layout.scss";
 @import "~@progress/kendo-theme-default/scss/forms/_theme.scss";

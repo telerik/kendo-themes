@@ -1,0 +1,58 @@
+// Card
+$card-padding-x: $card-spacer-x !default;
+$card-padding-y: $card-spacer-y !default;
+$card-border-width: 1px !default;
+$card-border-radius: $card-border-radius !default;
+$card-inner-border-radius: calc( #{$card-border-radius} - #{$card-border-width} ) !default;
+$card-font-family: $font-family !default;
+$card-font-size: $font-size !default;
+$card-line-height: $line-height !default;
+$card-box-shadow: null !default;
+$card-box-focused-shadow: 0 0 4px 0 rgba(0, 0, 0, .3) !default;
+
+$card-deck-gap: $card-deck-margin !default;
+
+$card-bg: $card-bg !default;
+$card-text: $component-text !default;
+$card-border: $card-border-color !default;
+
+$card-header-padding-x: $card-padding-x !default;
+$card-header-padding-y: $card-padding-y !default;
+$card-header-border-width: $card-border-width !default;
+$card-header-bg: $card-cap-bg !default;
+$card-header-text: $card-text !default;
+$card-header-border: $card-border-color !default;
+
+$card-body-padding-x: $card-padding-x !default;
+$card-body-padding-y: $card-padding-x !default; // In bootstrap, all card body paddings equal the card-spacer-x var
+
+$card-footer-padding-x: $card-padding-x !default;
+$card-footer-padding-y: $card-padding-y !default;
+$card-footer-border-width: $card-border-width !default;
+$card-footer-bg: $card-cap-bg !default;
+$card-footer-text: $card-text !default;
+$card-footer-border: $card-border-color !default;
+
+$card-title-margin-bottom: map-get( $spacing, md ) !default;
+$card-subtitle-margin-bottom: map-get( $spacing, md ) !default;
+$card-subtitle-text: true-mix($card-text, $card-bg, 65%) !default;
+
+$card-img-max-width: 100px !default;
+$card-avatar-size: 45px !default;
+$card-avatar-spacing:  $card-header-padding-x !default;
+
+$card-actions-padding-x: map-get( $spacing, 2 ) !default;
+$card-actions-padding-y: map-get( $spacing, 2 ) !default;
+$card-actions-border-width: 1px !default;
+$card-actions-gap: map-get( $spacing, 2 ) !default;
+
+$card-deck-scroll-button-radius: 0px !default;
+$card-deck-scroll-button-offset: -$button-border-width !default;
+
+$card-callout-width: 1.3em !default;
+$card-callout-height: 1.3em !default;
+
+$card-callout-box-shadow-n: null !default;
+$card-callout-box-shadow-e: null !default;
+$card-callout-box-shadow-s: null !default;
+$card-callout-box-shadow-w: null !default;

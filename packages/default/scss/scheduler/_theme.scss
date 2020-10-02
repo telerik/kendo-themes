@@ -149,8 +149,19 @@
 
     // Scheduler content
     .k-scheduler-content {}
-    .k-nonwork-hour {
-        background-color: $scheduler-nonwork-bg;
+    .k-scheduler-nonwork,
+    .k-scheduler .k-nonwork-hour {
+        @include fill(
+            $scheduler-nonwork-text,
+            $scheduler-nonwork-bg
+        );
+    }
+    .k-scheduler-other-month,
+    .k-scheduler .k-other-month {
+        @include fill(
+            $scheduler-othermonth-text,
+            $scheduler-othermonth-bg
+        );
     }
 
     .k-scheduler-layout td.k-state-selected,

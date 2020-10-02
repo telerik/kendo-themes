@@ -1,0 +1,43 @@
+@include exports("searchbox/theme") {
+
+    // Searchbox
+    .k-searchbox {
+        @include fill(
+            $searchbox-text,
+            $searchbox-bg,
+            $searchbox-border
+        );
+
+
+        // Hover state
+        &:hover,
+        &.k-state-hover {
+            @include fill(
+                $searchbox-hover-text,
+                $searchbox-hover-bg,
+                $searchbox-hover-border
+            );
+        }
+
+
+        // Focus state
+        &:focus,
+        &:focus-within,
+        &.k-state-focus {
+            @include fill(
+                $searchbox-focus-text,
+                $searchbox-focus-bg,
+                $searchbox-focus-border
+            );
+            @include box-shadow( $input-focused-shadow );
+        }
+
+
+        // Disabled
+        &:disabled,
+        &.k-state-disabled {
+            @include disabled( $disabled-styling );
+        }
+
+    }
+}

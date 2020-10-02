@@ -1,0 +1,58 @@
+// Card
+$card-padding-x: map-get( $spacing, lg ) !default;
+$card-padding-y: map-get( $spacing, md ) !default;
+$card-border-width: 1px !default;
+$card-border-radius: $border-radius-lg !default;
+$card-inner-border-radius: calc( #{$card-border-radius} - #{$card-border-width} ) !default;
+$card-font-family: $font-family !default;
+$card-font-size: $font-size !default;
+$card-line-height: $line-height !default;
+$card-box-shadow: null !default;
+$card-box-focused-shadow: 0 0 4px 0 rgba(0, 0, 0, .3) !default;
+
+$card-deck-gap: map-get( $spacing, lg ) !default;
+
+$card-bg: $component-bg !default;
+$card-text: $component-text !default;
+$card-border: $component-border !default;
+
+$card-header-padding-x: $card-padding-x !default;
+$card-header-padding-y: $card-padding-y !default;
+$card-header-border-width: 1px !default;
+$card-header-bg: null !default;
+$card-header-text: $header-text !default;
+$card-header-border: $header-border !default;
+
+$card-body-padding-x: map-get( $spacing, lg ) !default;
+$card-body-padding-y: map-get( $spacing, lg ) !default;
+
+$card-footer-padding-x: $card-padding-x !default;
+$card-footer-padding-y: $card-padding-y !default;
+$card-footer-border-width: 1px !default;
+$card-footer-bg: null !default;
+$card-footer-text: $header-text !default;
+$card-footer-border: $header-border !default;
+
+$card-title-margin-bottom: map-get( $spacing, sm ) !default;
+$card-subtitle-margin-bottom: map-get( $spacing, sm ) !default;
+$card-subtitle-text: true-mix($card-text, $card-bg, 45%) !default;
+
+$card-img-max-width: 100px !default;
+$card-avatar-size: 45px !default;
+$card-avatar-spacing:  $card-header-padding-x !default;
+
+$card-actions-padding-x: map-get( $spacing, 2 ) !default;
+$card-actions-padding-y: map-get( $spacing, 2 ) !default;
+$card-actions-border-width: 1px !default;
+$card-actions-gap: map-get( $spacing, 2 ) !default;
+
+$card-deck-scroll-button-radius: 0px !default;
+$card-deck-scroll-button-offset: -$button-border-width !default;
+
+$card-callout-width: 20px !default;
+$card-callout-height: 20px !default;
+
+$card-callout-box-shadow-n: null !default;
+$card-callout-box-shadow-e: null !default;
+$card-callout-box-shadow-s: null !default;
+$card-callout-box-shadow-w: null !default;

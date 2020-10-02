@@ -1,0 +1,21 @@
+// Popup
+$popup-padding-x: 0px !default;
+$popup-padding-y: 0px !default;
+$popup-border-width: 1px !default;
+$popup-border-radius: null !default;
+
+$popup-font-size: $font-size !default;
+$popup-line-height: $line-height !default;
+
+$popup-header-padding: $list-item-padding-y $list-item-padding-x !default;
+$popup-header-font-size: null !default;
+$popup-header-text: null !default;
+$popup-filter-padding-x: $input-padding-x !default;
+
+$popup-content-padding-x: map-get( $spacing, 2 ) !default;
+$popup-content-padding-y: map-get( $spacing, 2 ) !default;
+
+$popup-bg: lighten($base-bg, 1%) !default;
+$popup-text: $base-text !default;
+$popup-border: $base-border !default;
+$popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;

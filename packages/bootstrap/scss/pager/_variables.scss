@@ -1,0 +1,63 @@
+// Pager
+$pager-padding-x: $toolbar-padding-x !default;
+$pager-padding-y: $toolbar-padding-y !default;
+$pager-border-width: 1px !default;
+
+$pager-font-family: $font-family !default;
+$pager-font-size: $font-size !default;
+$pager-line-height: $line-height !default;
+
+$pager-bg: $header-bg !default;
+$pager-text: $header-text !default;
+$pager-border: $header-border !default;
+
+$pager-section-spacing: $spacer-x !default;
+
+$pager-item-padding-x: $button-padding-y !default;
+$pager-item-padding-y: $pager-item-padding-x !default;
+$pager-item-border-width: 1px !default;
+$pager-item-border-radius: $border-radius !default;
+$pager-item-spacing: (-1 * $pager-item-border-width) !default;
+
+$pager-item-bg: $pagination-bg !default;
+$pager-item-text: $pagination-color !default;
+$pager-item-border: $pagination-border-color !default;
+
+$pager-item-hover-bg: $pagination-hover-bg !default;
+$pager-item-hover-text: $pagination-color !default;
+$pager-item-hover-border: $pagination-hover-border-color !default;
+
+$pager-item-selected-bg: $pagination-active-bg !default;
+$pager-item-selected-text: $pagination-active-color !default;
+$pager-item-selected-border: $pagination-active-border-color !default;
+
+$pager-item-focus-opacity: null !default;
+$pager-item-focus-bg: $pager-item-bg !default;
+$pager-item-focus-shadow: 0 0 0 3px rgba($primary, .25) !default;
+
+$pager-number-padding-x: $pager-item-padding-x !default;
+$pager-number-padding-y: $pager-item-padding-y !default;
+$pager-number-border-width: $pager-item-border-width !default;
+$pager-number-border-radius: 0px !default;
+$pager-number-spacing: $pager-item-spacing !default;
+
+$pager-number-bg: $pager-item-bg !default;
+$pager-number-text: $pager-item-text !default;
+$pager-number-border: $pager-item-border !default;
+
+$pager-number-hover-opacity: null !default;
+$pager-number-hover-bg: $pager-item-hover-bg !default;
+$pager-number-hover-text: $pager-item-text !default;
+$pager-number-hover-border: $pager-item-hover-border !default;
+
+$pager-number-selected-opacity: null !default;
+$pager-number-selected-bg: $pager-item-selected-bg !default;
+$pager-number-selected-text: $pager-item-selected-text !default;
+$pager-number-selected-border: $pager-item-selected-border !default;
+
+$pager-number-focus-opacity: null !default;
+$pager-number-focus-bg: $pager-number-bg !default;
+$pager-number-focus-shadow: $pager-item-focus-shadow !default;
+
+$pager-input-width: 5em !default;
+$pager-dropdown-width: 5em !default;

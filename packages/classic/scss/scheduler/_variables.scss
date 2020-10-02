@@ -1,0 +1,56 @@
+// Scheduler
+$scheduler-border-width: 1px !default;
+$scheduler-font-family: $font-family !default;
+$scheduler-font-size: $font-size !default;
+$scheduler-line-height: $line-height !default;
+
+$scheduler-bg: $component-bg !default;
+$scheduler-text: $component-text !default;
+$scheduler-border: $component-border !default;
+
+$scheduler-toolbar-bg: $toolbar-bg !default;
+$scheduler-toolbar-text: $toolbar-text !default;
+$scheduler-toolbar-border: $toolbar-border !default;
+$scheduler-toolbar-gradient: $toolbar-gradient !default;
+
+$scheduler-footer-bg: $toolbar-bg !default;
+$scheduler-footer-text: $toolbar-text !default;
+$scheduler-footer-border: $toolbar-border !default;
+$scheduler-footer-gradient: $toolbar-gradient !default;
+
+$scheduler-event-min-height: 25px !default;
+$scheduler-event-border-radius: $border-radius !default;
+$scheduler-event-line-height: calc( #{$scheduler-event-min-height} - (2 * #{$padding-y}) ) !default;
+
+$scheduler-event-bg: tint( $selected-bg, 2 ) !default;
+$scheduler-event-text: $selected-text !default;
+$scheduler-event-border: null !default;
+$scheduler-event-gradient: null !default;
+$scheduler-event-shadow: null !default;
+
+$scheduler-event-hover-bg: null !default;
+$scheduler-event-hover-text: null !default;
+$scheduler-event-hover-border: null !default;
+$scheduler-event-hover-gradient: null !default;
+$scheduler-event-hover-shadow: null !default;
+
+$scheduler-event-selected-bg: $selected-bg !default;
+$scheduler-event-selected-text: $selected-text !default;
+$scheduler-event-selected-border: null !default;
+$scheduler-event-selected-gradient: null !default;
+$scheduler-event-selected-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
+
+$scheduler-cell-height: $line-height-em !default;
+$scheduler-datecolumn-width: 12em !default;
+$scheduler-timecolumn-width: 11em !default;
+
+$scheduler-current-time-color: #ff0000 !default;
+
+$scheduler-nonwork-bg: try-shade( $scheduler-bg, .5 ) !default;
+$scheduler-nonwork-text: null !default;
+
+$scheduler-weekend-bg: null !default;
+$scheduler-weekend-text: null !default;
+
+$scheduler-othermonth-bg: try-shade( $scheduler-bg, .5 ) !default;
+$scheduler-othermonth-text: null !default;
