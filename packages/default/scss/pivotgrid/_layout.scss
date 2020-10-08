@@ -30,9 +30,10 @@
         font-size: $font-size;
         line-height: $button-line-height;
         text-align: left;
+        white-space: normal;
+        word-break: break-word;
         position: relative;
         cursor: move;
-        white-space: normal;
 
         .k-field-actions .k-setting-delete {
             box-sizing: content-box;
