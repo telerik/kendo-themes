@@ -111,6 +111,10 @@
                 border-color: $grid-sticky-border;
                 border-bottom-color: $grid-header-border;
             }
+            .k-grid-row-sticky {
+                border-top-color: $grid-sticky-border;
+                border-bottom-color: $grid-sticky-border;
+            }
         }
     }
 
