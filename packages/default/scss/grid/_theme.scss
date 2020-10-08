@@ -210,10 +210,15 @@
 
     // Grid footer
     .k-grid-footer {
+        @include fill(
+            $grid-footer-text,
+            $grid-footer-bg,
+            $grid-footer-border
+        );
         .k-grid-footer-sticky {
-            @include fill(
-                $bg: $grid-sticky-footer-bg
-            );
+            border-left-color: $grid-sticky-border;
+            border-right-color: $grid-sticky-border;
+            background-color: $grid-sticky-footer-bg;
         }
     }
 
@@ -276,19 +281,6 @@
         &:hover .k-grid-content-sticky,
         &.k-state-hover .k-grid-content-sticky {
             @include fill( $bg: $grid-sticky-hovered-bg );
-        }
-    }
-
-    .k-group-footer {
-        .k-grid-footer-sticky {
-            @include fill( $bg: $grid-sticky-footer-bg );
-        }
-
-        &:hover,
-        &.k-state-hover {
-            .k-grid-footer-sticky {
-                @include fill( $bg: $grid-sticky-footer-hovered-bg );
-            }
         }
     }
 

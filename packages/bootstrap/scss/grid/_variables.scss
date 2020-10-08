@@ -54,6 +54,16 @@ $grid-header-border: $header-border !default;
 /// @group grid
 $grid-header-gradient: $header-gradient !default;
 
+/// Background color of grid footer
+/// @group grid
+$grid-footer-bg: $grid-header-bg !default;
+/// Text color of grid footer
+/// @group grid
+$grid-footer-text: $grid-header-text !default;
+/// Border color of grid footer
+/// @group grid
+$grid-footer-border: $grid-header-border !default;
+
 $grid-group-drag-clue-line-height: 1.5 !default;
 
 /// Background color of alternating rows in grid
