@@ -36,7 +36,8 @@
 
             tr:hover,
             tr.k-state-hover {
-                .k-grid-header-sticky {
+                .k-grid-header-sticky,
+                .k-grid-footer-sticky {
                     background-color: $grid-sticky-hovered-bg;
                 }
             }
@@ -85,7 +86,8 @@
                 border-top-width: 0;
             }
 
-            .k-grid-header thead > tr:not(:only-child) > .k-grid-header-sticky {
+            .k-grid-header thead > tr:not(:only-child) > .k-grid-header-sticky,
+            .k-grid-footer-sticky {
                 border-right-color: $grid-sticky-header-border;
                 border-left-color: $grid-sticky-header-border;
             }

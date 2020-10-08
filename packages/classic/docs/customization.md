@@ -797,6 +797,36 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$grid-footer-bg</td>
+    <td></td>
+    <td>$grid-header-bg</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid footer</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-footer-text</td>
+    <td></td>
+    <td>$grid-header-text</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of grid footer</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-footer-border</td>
+    <td></td>
+    <td>$grid-header-border</td>
+    <td>rgba( black, .08 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid footer</div></div>
+    </td>
+</tr>
+<tr>
     <td>$grid-alt-bg</td>
     <td></td>
     <td>rgba( contrast-wcag( $grid-bg ), .04 )</td>

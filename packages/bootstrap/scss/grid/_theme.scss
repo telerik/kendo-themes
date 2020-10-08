@@ -246,10 +246,17 @@
 
     // Footer
     .k-grid-footer {
-        @include fill( $grid-header-text, $grid-header-bg, $grid-header-border );
-
+        @include fill(
+            $grid-footer-text,
+            $grid-footer-bg,
+            $grid-footer-border
+        );
         .k-grid-footer-locked {
             border-color: inherit;
+        }
+        .k-grid-footer-sticky {
+            border-color: $grid-sticky-border;
+            background-color: $grid-sticky-footer-bg;
         }
     }
 
