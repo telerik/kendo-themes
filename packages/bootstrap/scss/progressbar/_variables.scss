@@ -3,8 +3,8 @@ $progressbar-height: $progress-height !default;
 $progressbar-animation-timing: $progress-bar-animation-timing !default;
 $progressbar-border-width: 0px !default;
 $progressbar-font-family: $font-family !default;
-$progressbar-font-size: $font-size-sm !default;
-$progressbar-line-height: $line-height !default;
+$progressbar-font-size: $progress-font-size !default;
+$progressbar-line-height: 1 !default;
 
 $progressbar-bg: $progress-bg !default;
 $progressbar-text: $progress-color !default;
