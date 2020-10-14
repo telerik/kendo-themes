@@ -4,9 +4,13 @@ set -e
 
 source $(pwd)/build/constants.sh
 
-if [[ $TRAVIS == true ]]
+if [[ $TRAVIS == 'true' ]]
 then
     echo "Travis CI detected. Bootstraping trough lerna."
+    npx lerna bootstrap
+elif [[ $JENKINS == 'true' ]] || [[ -n $JENKINS_URL ]]
+then
+    echo "Jenkins detected. Bootstraping trough lerna."
     npx lerna bootstrap
 else
     echo "Local environment detected. Bootstraping manually ..."
