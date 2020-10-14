@@ -1,8 +1,11 @@
 #!/bin/bash
 
-if [[ $TRAVIS == true ]]
+if [[ $TRAVIS == 'true' ]]
 then
     echo "Travis CI detected. Skipping clean."
+elif [[ $JENKINS == 'true' ]] || [[ -n $JENKINS_URL ]]
+then
+    echo "Jenkins detected. Skipping clean."
 else
     echo "Local environment detected."
 
