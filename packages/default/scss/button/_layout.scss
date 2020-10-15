@@ -71,18 +71,36 @@
                 }
             }
         }
-        &-icon {
-            width: $button-calc-size;
-            height: $button-calc-size;
-            padding: $button-padding-y;
-
-            .k-text,
-            .k-button-text {
-                display: none;
-            }
-        }
 
     }
+
+
+    // Text button
+    .k-text-button {
+        > .k-icon,
+        > .k-button-icon {
+            display: none;
+        }
+    }
+
+
+    // Icon button
+    .k-icon-button,
+    .k-button.k-button-icon {
+        width: $button-calc-size;
+        height: $button-calc-size;
+        padding: $button-padding-y;
+
+        .k-text,
+        .k-button-text {
+            display: none;
+        }
+    }
+
+
+    // Input button
+    .k-input-button {}
+    .k-input-button.k-icon-button {}
 
 
     //DropDown Button

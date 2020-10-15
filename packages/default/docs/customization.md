@@ -188,6 +188,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Buttons
 
 <table class="theme-variables">
@@ -378,6 +379,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Charts
 
 <table class="theme-variables">
@@ -478,6 +480,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Color System
 
 <table class="theme-variables">
@@ -648,6 +651,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Component
 
 <table class="theme-variables">
@@ -728,6 +732,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Grid
 
 <table class="theme-variables">
@@ -814,6 +819,36 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of grid header</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-footer-bg</td>
+    <td></td>
+    <td>$grid-header-bg</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid footer</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-footer-text</td>
+    <td></td>
+    <td>$grid-header-text</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of grid footer</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-footer-border</td>
+    <td></td>
+    <td>$grid-header-border</td>
+    <td>rgba( black, .08 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid footer</div></div>
     </td>
 </tr>
 <tr>
@@ -908,6 +943,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Icons
 
 <table class="theme-variables">
@@ -938,6 +974,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Tabstrip
 
 <table class="theme-variables">
@@ -1218,6 +1255,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Toolbar
 
 <table class="theme-variables">
@@ -1258,6 +1296,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 ### Typography
 
 <table class="theme-variables">
@@ -1318,6 +1357,7 @@ The following table lists the available variables for customizing the Default th
 </tr>
 </tbody>
 </table>
+
 
 
 

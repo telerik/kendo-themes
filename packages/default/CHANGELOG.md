@@ -3,6 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.24.0"></a>
+# 4.24.0 (2020-10-13)
+
+
+### Bug Fixes
+
+* **actions:** extract actions variables into separate files ([ad38523](https://github.com/telerik/kendo-themes/commit/ad38523))
+* **adaptive:** extract adaptive components variables into separate files ([1ff59ab](https://github.com/telerik/kendo-themes/commit/1ff59ab))
+* **button:** extract button variables ([44a3806](https://github.com/telerik/kendo-themes/commit/44a3806))
+* **card:** extract card variables into separate files ([d5bb957](https://github.com/telerik/kendo-themes/commit/d5bb957))
+* **charts:** tooltip opacity option not applying ([098f6f1](https://github.com/telerik/kendo-themes/commit/098f6f1))
+* **form:** extract form variables into separate files ([605019e](https://github.com/telerik/kendo-themes/commit/605019e))
+* **grid:** restyle the grid footer ([68f048f](https://github.com/telerik/kendo-themes/commit/68f048f))
+* **grid:** validation popup position in Material theme ([c01b44e](https://github.com/telerik/kendo-themes/commit/c01b44e))
+* **input:** extract input variables into separate files ([c1889b5](https://github.com/telerik/kendo-themes/commit/c1889b5))
+* **menu:** extract menu variables into separate files ([96f8021](https://github.com/telerik/kendo-themes/commit/96f8021))
+* **notification:** declare poup as explicit dependency ([b19a8ff](https://github.com/telerik/kendo-themes/commit/b19a8ff))
+* **pager:** extract pager variables into separate files ([de4707c](https://github.com/telerik/kendo-themes/commit/de4707c))
+* **panelbar:** extract panelbar variables into separate files ([9b47ece](https://github.com/telerik/kendo-themes/commit/9b47ece))
+* **panelbar:** keyboard navigation in IE ([5e22839](https://github.com/telerik/kendo-themes/commit/5e22839))
+* **pivotgrid:** buttons misalignments ([ea4a447](https://github.com/telerik/kendo-themes/commit/ea4a447))
+* **pivotgrid:** update settings item word-break ([1721fb8](https://github.com/telerik/kendo-themes/commit/1721fb8))
+* **popup:** extract popup variables ([94dc5f9](https://github.com/telerik/kendo-themes/commit/94dc5f9))
+* **progressbar:** center progress label inside progressbar ([6402819](https://github.com/telerik/kendo-themes/commit/6402819)), closes [telerik/kendo-themes#1945](https://github.com/telerik/kendo-themes/issues/1945) [telerik/kendo-themes#1947](https://github.com/telerik/kendo-themes/issues/1947)
+* add missing icons ([a2e70cd](https://github.com/telerik/kendo-themes/commit/a2e70cd))
+* **progressbar:** extract progressbar variables into separate files ([000040f](https://github.com/telerik/kendo-themes/commit/000040f))
+* **scheduler:** extract scheduler variables into separate files ([26c9c9a](https://github.com/telerik/kendo-themes/commit/26c9c9a))
+* **scheduler:** use uniform values for shceduler nonwork and othermonth cells ([3eaa95b](https://github.com/telerik/kendo-themes/commit/3eaa95b))
+* **toolbar:** extract toolbar variables ([5126f1d](https://github.com/telerik/kendo-themes/commit/5126f1d))
+* **typography:** extract typography variables into separate files ([5315fa4](https://github.com/telerik/kendo-themes/commit/5315fa4))
+* **utils:** move legacy shadow styling to popup due to variable flow ([202378a](https://github.com/telerik/kendo-themes/commit/202378a))
+* **window:** extract window variables ([2011e06](https://github.com/telerik/kendo-themes/commit/2011e06))
+
+
+### Features
+
+* **grid:** add sticky rows styling ([f02e23c](https://github.com/telerik/kendo-themes/commit/f02e23c))
+* add styles for searchbox component ([a25097e](https://github.com/telerik/kendo-themes/commit/a25097e))
+
+
+
+
 <a name="4.23.0"></a>
 # [4.23.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.22.1...@progress/kendo-theme-default@4.23.0) (2020-09-15)
 

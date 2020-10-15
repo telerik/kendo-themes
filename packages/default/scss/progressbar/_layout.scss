@@ -96,7 +96,7 @@
             flex-direction: row;
 
             > .k-progress-status-wrap {
-                width: calc( 100% * ( 100 / var( --kendo-progressbar-progress, 0 ) ) );
+                width: calc( 100% * ( 100 / var( --kendo-progressbar-progress, 1 ) ) );
             }
         }
 
@@ -148,7 +148,7 @@
             align-items: flex-end;
 
             > .k-progress-status-wrap {
-                height: calc( 100% * ( 100 / var( --kendo-progressbar-progress, 0 ) ) ); // sass-lint:disable-line no-duplicate-properties
+                height: calc( 100% * ( 100 / var( --kendo-progressbar-progress, 1 ) ) ); // sass-lint:disable-line no-duplicate-properties
             }
         }
 

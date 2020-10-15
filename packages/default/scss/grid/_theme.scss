@@ -210,10 +210,15 @@
 
     // Grid footer
     .k-grid-footer {
+        @include fill(
+            $grid-footer-text,
+            $grid-footer-bg,
+            $grid-footer-border
+        );
         .k-grid-footer-sticky {
-            @include fill(
-                $bg: $grid-sticky-footer-bg
-            );
+            border-left-color: $grid-sticky-border;
+            border-right-color: $grid-sticky-border;
+            background-color: $grid-sticky-footer-bg;
         }
     }
 
@@ -225,32 +230,45 @@
             background-color: $grid-sticky-bg;
         }
 
+        .k-grid-row-sticky {
+            border-top-color: $grid-sticky-border;
+            border-bottom-color: $grid-sticky-border;
+            background-color: $grid-sticky-bg;
+        }
+
         &.k-alt {
-            .k-grid-content-sticky {
+            .k-grid-content-sticky,
+            .k-grid-row-sticky {
                 @include fill( $bg: $grid-sticky-alt-bg );
             }
         }
 
         // Selected state
-        &.k-state-selected .k-grid-content-sticky {
+        &.k-state-selected .k-grid-content-sticky,
+        &.k-state-selected .k-grid-row-sticky {
             @include fill( $bg: $grid-sticky-selected-bg );
         }
 
-        &.k-state-selected.k-alt .k-grid-content-sticky {
+        &.k-state-selected.k-alt .k-grid-content-sticky,
+        &.k-state-selected.k-alt .k-grid-row-sticky {
             @include fill( $bg: $grid-sticky-selected-alt-bg );
         }
 
 
         // Hovered state
         &:hover .k-grid-content-sticky,
-        &.k-state-hover .k-grid-content-sticky {
+        &:hover .k-grid-row-sticky,
+        &.k-state-hover .k-grid-content-sticky,
+        &.k-state-hover .k-grid-row-sticky {
             background-color: $grid-sticky-hovered-bg;
         }
 
 
         // Selected hover
         &.k-state-selected:hover .k-grid-content-sticky,
-        &.k-state-selected.k-state-hover .k-grid-content-sticky {
+        &.k-state-selected:hover .k-grid-row-sticky,
+        &.k-state-selected.k-state-hover .k-grid-content-sticky,
+        &.k-state-selected.k-state-hover .k-grid-row-sticky {
             background-color: $grid-sticky-selected-hovered-bg;
         }
     }
@@ -263,19 +281,6 @@
         &:hover .k-grid-content-sticky,
         &.k-state-hover .k-grid-content-sticky {
             @include fill( $bg: $grid-sticky-hovered-bg );
-        }
-    }
-
-    .k-group-footer {
-        .k-grid-footer-sticky {
-            @include fill( $bg: $grid-sticky-footer-bg );
-        }
-
-        &:hover,
-        &.k-state-hover {
-            .k-grid-footer-sticky {
-                @include fill( $bg: $grid-sticky-footer-hovered-bg );
-            }
         }
     }
 

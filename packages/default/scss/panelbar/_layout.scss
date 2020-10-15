@@ -40,6 +40,10 @@
                 user-select: none;
                 cursor: default;
                 transition: $transition;
+
+                .k-ie & {
+                    display: block; // TODO: Remove once we drop IE support
+                }
             }
         }
         > .k-item + .k-item {

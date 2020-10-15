@@ -1,0 +1,24 @@
+// Progressbar
+$progressbar-height: $progress-height !default;
+$progressbar-animation-timing: $progress-bar-animation-timing !default;
+$progressbar-border-width: 0px !default;
+$progressbar-font-family: $font-family !default;
+$progressbar-font-size: $progress-font-size !default;
+$progressbar-line-height: 1 !default;
+
+$progressbar-bg: $progress-bg !default;
+$progressbar-text: $progress-color !default;
+$progressbar-border: null !default;
+$progressbar-gradient: null !default;
+
+$progressbar-fill-bg:  $progress-bar-bg !default;
+$progressbar-fill-text: $progress-bar-color !default;
+$progressbar-fill-border: null !default;
+$progressbar-fill-gradient: null !default;
+
+$progressbar-indeterminate-bg: $progressbar-bg !default;
+$progressbar-indeterminate-text: $progressbar-text !default;
+$progressbar-indeterminate-border: $progressbar-border !default;
+$progressbar-indeterminate-gradient: null !default;
+
+$progressbar-chunk-border: $body-bg !default;
