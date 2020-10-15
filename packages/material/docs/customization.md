@@ -188,6 +188,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Buttons
 
 <table class="theme-variables">
@@ -378,6 +379,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Charts
 
 <table class="theme-variables">
@@ -478,6 +480,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Color System
 
 <table class="theme-variables">
@@ -628,6 +631,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Component
 
 <table class="theme-variables">
@@ -708,6 +712,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Grid
 
 <table class="theme-variables">
@@ -918,6 +923,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Icons
 
 <table class="theme-variables">
@@ -948,6 +954,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Shadows
 
 <table class="theme-variables">
@@ -1028,6 +1035,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Tabstrip
 
 <table class="theme-variables">
@@ -1308,6 +1316,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Toolbar
 
 <table class="theme-variables">
@@ -1348,6 +1357,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Typography
 
 <table class="theme-variables">
@@ -1408,6 +1418,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 
 
 
