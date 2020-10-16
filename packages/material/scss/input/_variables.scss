@@ -1,0 +1,84 @@
+// Input
+$input-default-width: 200px !default;
+
+$input-border-width: 1px !default;
+$input-border-height: 1px !default;
+$input-border-radius: null !default;
+$input-border-radius-sm: 0px !default;
+$input-border-radius-lg: 0px !default;
+
+$input-padding-x: 0px !default;
+$input-padding-y: 8px !default;
+$input-font-family: $font-family !default;
+$input-font-size: $font-size-lg !default;
+$input-line-height: 1.125 !default;
+$input-line-height-em: $input-line-height * 1em;
+
+$input-padding-x-sm: ($input-padding-x / 2) !default;
+$input-padding-y-sm: ($input-padding-y / 2) !default;
+$input-font-size-sm: $input-font-size !default;
+$input-line-height-sm: (20 / 14) !default;
+
+$input-padding-x-lg: ($input-padding-x * 1.5) !default;
+$input-padding-y-lg: ($input-padding-y * 1.5) !default;
+$input-font-size-lg: $input-font-size !default;
+$input-line-height-lg: (20 / 14) !default;
+
+$input-calc-height: calc( #{$input-line-height * 1em} + #{$input-padding-y * 2} + #{$input-border-width * 2} ) !default;
+$input-calc-height-sm: calc( #{$input-line-height-sm * 1em} + #{$input-padding-y-sm * 2} + #{$input-border-width * 2} ) !default;
+$input-calc-height-lg: calc( #{$input-line-height-lg * 1em} + #{$input-padding-y-lg * 2} + #{$input-border-width * 2} ) !default;
+
+$input-inner-calc-height: calc( #{$input-line-height * 1em} + #{$input-padding-y * 2} ) !default;
+$input-inner-calc-height-sm: calc( #{$input-line-height-sm * 1em} + #{$input-padding-y-sm * 2} ) !default;
+$input-inner-calc-height-lg: calc( #{$input-line-height-lg * 1em} + #{$input-padding-y-lg * 2} ) !default;
+
+$input-icon-offset: 4px !default;
+$input-icon-width: calc( #{$icon-size} + #{$input-padding-y * 2} ) !default;
+$input-icon-height: calc( #{$input-line-height * $input-font-size} + #{$input-padding-y * 2} ) !default;
+
+$input-bg: null !default;
+$input-text: $component-text !default;
+$input-border: rgba( $component-border, if($theme-type == dark, .7, .42) ) !default;
+$input-shadow: null !default;
+
+$input-hovered-bg: null !default;
+$input-hovered-text: null !default;
+$input-hovered-border: $input-text !default;
+$input-hovered-shadow: null !default;
+
+$input-focused-bg: null !default;
+$input-focused-text: null !default;
+$input-focused-border: $primary !default;
+$input-focused-shadow: null !default;
+
+$input-disabled-bg: rgb(189, 189, 189) !default;
+
+$input-placeholder-text: rgba( $input-text, .54 ) !default;
+$input-placeholder-opacity: 1 !default;
+
+$input-selected-text: $primary-contrast !default;
+$input-selected-bg: $primary !default;
+
+
+// Picker
+$picker-select-border-width: 0px !default;
+
+$picker-select-padding-x: 4px !default;
+$picker-select-padding-y: $input-padding-y !default;
+
+$picker-select-padding-x-sm: ($picker-select-padding-x / 2) !default;
+$picker-select-padding-y-sm: $input-padding-y-sm !default;
+
+$picker-select-padding-x-lg: ($picker-select-padding-x * 1.5) !default;
+$picker-select-padding-y-lg: $input-padding-y-sm !default;
+
+$picker-select-calc-size: calc( #{$picker-select-padding-x * 2} + #{$icon-size} ) !default;
+$picker-select-calc-size-sm: calc( #{$picker-select-padding-x-sm * 2} + #{$icon-size} ) !default;
+$picker-select-calc-size-lg: calc( #{$picker-select-padding-x-sm * 2} + #{$icon-size} ) !default;
+
+$picker-icon-offset: calc( #{$picker-select-calc-size} + #{$picker-select-border-width}  + #{$input-icon-offset}) !default;
+
+
+// Spinner
+$spinner-width: $button-inner-calc-size !default;
+$spinner-icon-offset: 2px !default;

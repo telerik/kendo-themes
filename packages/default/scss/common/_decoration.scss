@@ -70,7 +70,8 @@
     }
 
     .k-shadow {
-        box-shadow: $popup-shadow;
+        // Shadow moved to popup/_layout.scss due to variable flow
+        // box-shadow: $popup-shadow;
     }
 
     .k-inset {

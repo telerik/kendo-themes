@@ -1,0 +1,28 @@
+// Map
+$map-border-width: 0px !default;
+
+$map-font-size: $font-size !default;
+$map-line-height: $line-height !default;
+$map-font-family: $font-family !default;
+
+$map-bg: $component-bg !default;
+$map-text: $component-text !default;
+$map-border: $component-border !default;
+
+$map-navigator-margin: $spacer-x !default;
+$map-navigator-padding: 2px !default;
+$map-navigator-width: calc( #{$icon-size * 3} + #{$map-navigator-padding * 2} ) !default;
+$map-navigator-height: $map-navigator-width !default;
+$map-navigator-border-width: 1px !default;
+
+$map-zoom-control-margin: $spacer-x !default;
+$map-zoom-control-button-padding-x: $button-padding-y !default;
+$map-zoom-control-button-padding-y: $map-zoom-control-button-padding-x !default;
+
+$map-attribution-padding-x: $padding-x-sm !default;
+$map-attribution-padding-y: $padding-y-sm !default;
+$map-attribution-font-size: ($map-font-size * .75) !default;
+$map-attribution-bg: rgba( $map-bg, .8 ) !default;
+
+$map-marker-size: $icon-size-lg !default;
+$map-marker-fill: $primary !default;

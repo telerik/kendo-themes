@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Searchbox</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .k-searchbox {
+            width: 100%;
+        }
+        .k-dropdown {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <span>Leading icon</span>
+        <span>Trailing icon</span>
+        <span>Icon and button icon</span>
+        <span>Elaborate</span>
+
+
+        <!-- empty -->
+        <section>
+            <span class="k-searchbox">
+                <span class="k-input-prefix">
+                    <span class="k-icon k-i-search"></span>
+                </span>
+                <input class="k-input" type="text" placeholder="Search..." />
+            </span>
+        </section>
+        <section>
+            <span class="k-searchbox">
+                <input class="k-input" type="text" placeholder="Search..." />
+                <span class="k-input-suffix">
+                    <span class="k-icon k-i-search"></span>
+                </span>
+            </span>
+        </section>
+        <section>
+            <span class="k-searchbox">
+                <input class="k-input" type="text" placeholder="Search..." />
+                <span class="k-input-suffix">
+                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-search"></span></button>
+                </span>
+            </span>
+        </section>
+        <section>
+            <span class="k-searchbox">
+                <span class="k-input-prefix">
+                    <select class="k-dropdown"><option>1</option></select>
+                </span>
+                <input class="k-input" type="text" placeholder="Search..." />
+                <span class="k-input-suffix">
+                    <button type="button" class="k-button k-icon-button"><span class="k-icon k-i-search"></span></button>
+                </span>
+            </span>
+        </section>
+
+
+        <!-- normal -->
+        <section>
+            <span class="k-searchbox">
+                <span class="k-input-prefix">
+                    <span class="k-icon k-i-search"></span>
+                </span>
+                <input class="k-input" type="text" value="Normal" />
+            </span>
+        </section>
+        <section>
+            <span class="k-searchbox">
+                <input class="k-input" type="text" value="Normal" />
+                <span class="k-input-suffix">
+                    <span class="k-icon k-i-search"></span>
+                </span>
+            </span>
+        </section>
+        <section>
+            <span class="k-searchbox">
+                <input class="k-input" type="text" value="Normal" />
+                <span class="k-input-suffix">
+                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-search"></span></button>
+                </span>
+            </span>
+        </section>
+        <section>
+            <span class="k-searchbox">
+                <span class="k-input-prefix">
+                    <select class="k-dropdown"><option>1</option></select>
+                </span>
+                <input class="k-input" type="text" value="Normal" />
+                <span class="k-input-suffix">
+                    <button type="button" class="k-button k-icon-button"><span class="k-icon k-i-search"></span></button>
+                </span>
+            </span>
+        </section>
+
+
+        <!-- hover -->
+        <section>
+            <span class="k-searchbox k-state-hover">
+                <span class="k-input-prefix">
+                    <span class="k-icon k-i-search"></span>
+                </span>
+                <input class="k-input" type="text" value="Hover" />
+                <span class="k-input-suffix">
+                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
+                </span>
+            </span>
+        </section>
+        <section>
+            <span class="k-searchbox k-state-hover">
+                <input class="k-input" type="text" value="Hover" />
+                <span class="k-input-suffix">
+                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
+                    <span class="k-icon k-i-search"></span>
+                </span>
+            </span>
+        </section>
+        <section>
+            <span class="k-searchbox k-state-hover">
+                <input class="k-input" type="text" value="Hover" />
+                <span class="k-input-suffix">
+                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
+                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-search"></span></button>
+                </span>
+            </span>
+        </section>
+        <section>
+            <span class="k-searchbox k-state-hover">
+                <span class="k-input-prefix">
+                    <select class="k-dropdown"><option>1</option></select>
+                </span>
+                <input class="k-input" type="text" value="Hover" />
+                <span class="k-input-suffix">
+                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
+                    <button type="button" class="k-button k-icon-button"><span class="k-icon k-i-search"></span></button>
+                </span>
+            </span>
+        </section>
+
+
+        <!-- focus -->
+        <section>
+            <span class="k-searchbox k-state-focus">
+                <span class="k-input-prefix">
+                    <span class="k-icon k-i-search"></span>
+                </span>
+                <input class="k-input" type="text" value="Focus" />
+                <span class="k-input-suffix">
+                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
+                </span>
+            </span>
+        </section>
+        <section>
+            <span class="k-searchbox k-state-focus">
+                <input class="k-input" type="text" value="Focus" />
+                <span class="k-input-suffix">
+                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
+                    <span class="k-icon k-i-search"></span>
+                </span>
+            </span>
+        </section>
+        <section>
+            <span class="k-searchbox k-state-focus">
+                <input class="k-input" type="text" value="Focus" />
+                <span class="k-input-suffix">
+                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
+                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-search"></span></button>
+                </span>
+            </span>
+        </section>
+        <section>
+            <span class="k-searchbox k-state-focus">
+                <span class="k-input-prefix">
+                    <select class="k-dropdown"><option>1</option></select>
+                </span>
+                <input class="k-input" type="text" value="Focus" />
+                <span class="k-input-suffix">
+                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
+                    <button type="button" class="k-button k-icon-button"><span class="k-icon k-i-search"></span></button>
+                </span>
+            </span>
+        </section>
+
+
+        <!-- disabled -->
+        <section>
+            <span class="k-searchbox k-state-disabled">
+                <span class="k-input-prefix">
+                    <span class="k-icon k-i-search"></span>
+                </span>
+                <input class="k-input" type="text" value="Disabled" />
+            </span>
+        </section>
+        <section>
+            <span class="k-searchbox k-state-disabled">
+                <input class="k-input" type="text" value="Disabled" />
+                <span class="k-input-suffix">
+                    <span class="k-icon k-i-search"></span>
+                </span>
+            </span>
+        </section>
+        <section>
+            <span class="k-searchbox k-state-disabled">
+                <input class="k-input" type="text" value="Disabled" />
+                <span class="k-input-suffix">
+                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-search"></span></button>
+                </span>
+            </span>
+        </section>
+        <section>
+            <span class="k-searchbox k-state-disabled">
+                <span class="k-input-prefix">
+                    <select class="k-dropdown"><option>1</option></select>
+                </span>
+                <input class="k-input" type="text" value="Disabled" />
+                <span class="k-input-suffix">
+                    <button type="button" class="k-button k-icon-button"><span class="k-icon k-i-search"></span></button>
+                </span>
+            </span>
+        </section>
+
+    </div>
+
+</body>
+</html>

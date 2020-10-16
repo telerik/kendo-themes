@@ -1,0 +1,25 @@
+@import "~@progress/kendo-theme-default/scss/floating-label/_layout.scss";
+
+
+@include exports( "floating-label/layout/material" ) {
+
+
+    // Floating label
+    .k-textbox-container,
+    .k-floating-label-container {
+
+        > .k-label {
+            transform-origin: left bottom;
+        }
+
+        .k-rtl &,
+        &[dir="rtl"] {
+
+            > .k-label {
+                transform-origin: right bottom;
+            }
+
+        }
+    }
+
+}

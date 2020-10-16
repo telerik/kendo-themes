@@ -1,0 +1,35 @@
+// Numeric Textbox
+$numerictextbox-spinners-focused-shadow: inset $button-focused-shadow !default;
+
+$numeric-bg: $input-bg !default;
+$numeric-text: $input-text !default;
+$numeric-border: $input-border !default;
+
+$numeric-hovered-bg: $input-hovered-bg !default;
+$numeric-hovered-text: $input-hovered-text !default;
+$numeric-hovered-border: $input-hovered-border !default;
+
+$numeric-focused-bg: $input-focused-bg !default;
+$numeric-focused-text: $input-focused-text !default;
+$numeric-focused-border: $input-focused-border !default;
+$numeric-focused-shadow: $input-focused-shadow !default;
+
+$numeric-invalid-bg: null !default;
+$numeric-invalid-text: $invalid-text !default;
+$numeric-invalid-border: $invalid-border !default;
+
+$numeric-button-bg: $button-bg !default;
+$numeric-button-text: $button-text !default;
+$numeric-button-border: $button-border !default;
+$numeric-button-gradient: $button-gradient !default;
+
+$numeric-button-hovered-bg: $button-hovered-bg !default;
+$numeric-button-hovered-text: $button-hovered-text !default;
+$numeric-button-hovered-border: $button-hovered-border !default;
+$numeric-button-hovered-gradient: $button-hovered-gradient !default;
+
+$numeric-button-pressed-text: $button-pressed-text !default;
+$numeric-button-pressed-bg: $button-pressed-bg !default;
+$numeric-button-pressed-border: $button-pressed-border !default;
+$numeric-button-pressed-gradient: $button-pressed-gradient !default;
+$numeric-button-pressed-shadow: $button-pressed-shadow !default;

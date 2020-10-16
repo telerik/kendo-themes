@@ -4,9 +4,11 @@
 
 // Dependencies
 @import "../common/_index.scss";
+@import "../popup/_index.scss";
 @import "../icons/_index.scss";
 
 
 // Component
+@import "_variables.scss";
 @import "_layout.scss";
 @import "_theme.scss";

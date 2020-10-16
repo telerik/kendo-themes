@@ -329,3 +329,13 @@
     }
 
 }
+
+
+
+@include exports( "common/decoration/shadow/legacy" ) {
+
+    .k-shadow {
+        box-shadow: $popup-shadow;
+    }
+
+}

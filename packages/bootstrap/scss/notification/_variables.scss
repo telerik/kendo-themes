@@ -1,0 +1,30 @@
+// Notification
+$notification-padding-x: $alert-padding-x !default;
+$notification-padding-y: $alert-padding-y !default;
+$notification-border-width: $alert-border-width !default;
+$notification-border-radius: $alert-border-radius !default;
+
+$notification-shadow: $popup-shadow !default;
+
+$notification-font-family: $font-family !default;
+$notification-font-size: $font-size-sm !default;
+$notification-line-height: $line-height !default;
+
+$notification-icon-offset: 3px !default;
+$notification-icon-spacing: $icon-spacing !default;
+
+$notification-bg: $component-bg !default;
+$notification-text: $component-text !default;
+$notification-border: $component-border !default;
+$notification-info-bg: tint($info, 10) !default;
+$notification-info-text: shade($info, 6) !default;
+$notification-info-border: tint($info, 9) !default;
+$notification-success-bg: tint($success, 10) !default;
+$notification-success-text: shade($success, 6) !default;
+$notification-success-border: tint($success, 9) !default;
+$notification-warning-bg: tint($warning, 10) !default;
+$notification-warning-text: shade($warning, 6) !default;
+$notification-warning-border: tint($warning, 9) !default;
+$notification-error-bg: tint($error, 10) !default;
+$notification-error-text: shade($error, 6) !default;
+$notification-error-border: tint($error, 9) !default;

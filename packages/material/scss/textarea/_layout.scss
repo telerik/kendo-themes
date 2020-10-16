@@ -24,7 +24,7 @@
     .k-textbox-container.k-textarea-container {
         padding-top: 0;
 
-
+        textarea.k-textarea,
         .k-textarea .k-input {
             padding-top: calc( #{$textarea-padding-y} + #{$textarea-line-height-em} );
         }

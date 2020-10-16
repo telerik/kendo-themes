@@ -45,6 +45,12 @@
             text-transform: $form-legend-text-transform;
         }
 
+
+        // Form group
+        .k-form-group {
+            padding: 0;
+        }
+
         .k-form-field,
         .k-form-buttons,
         .k-daterangepicker .k-textbox-container {
@@ -58,7 +64,10 @@
             }
         }
 
-        .k-form-field {
+
+        // Form field
+        .k-form-field,
+        .k-form-field-wrap {
             display: block;
         }
 
@@ -350,6 +359,7 @@
         width: 65%;
         float: right;
         clear: right;
+        position: relative;
 
         &.k-no-editor {
             padding: calc( #{$input-padding-y} + #{$input-border-width} ) 0;

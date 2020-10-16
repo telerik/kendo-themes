@@ -1,0 +1,103 @@
+// Tabstrip
+$tabstrip-wrapper-padding-x: 0px !default;
+$tabstrip-wrapper-padding-y: 0px !default;
+$tabstrip-wrapper-border-width: 0px !default;
+
+$tabstrip-font-family: $font-family !default;
+$tabstrip-font-size: $font-size !default;
+$tabstrip-line-height: $line-height !default;
+$tabstrip-border-width: 1px !default;
+
+$tabstrip-wrapper-bg: null !default;
+$tabstrip-wrapper-text: null !default;
+$tabstrip-wrapper-border: null !default;
+
+/// Background color of tabstrip component
+/// @group tabstrip
+$tabstrip-bg: null !default;
+/// Text color of tabstrip component
+/// @group tabstrip
+$tabstrip-text: $component-text !default;
+/// Border color of tabstrip component
+/// @group tabstrip
+$tabstrip-border: $component-border !default;
+
+/// Horizontal padding of tabs
+/// @group tabstrip
+$tabstrip-item-padding-x: $nav-item-padding-x !default;
+/// Vertical padding of tabs
+/// @group tabstrip
+$tabstrip-item-padding-y: $nav-item-padding-y !default;
+/// Width of border around tabs
+/// @group tabstrip
+$tabstrip-item-border-width: 1px !default;
+/// Border radius of tabs
+/// @group tabstrip
+$tabstrip-item-border-radius: $border-radius !default;
+/// Spacing between tabs
+/// @group tabstrip
+$tabstrip-item-gap: $nav-item-margin !default;
+
+/// Background color of tabs
+/// @group tabstrip
+$tabstrip-item-bg: null !default;
+/// Text color of tabs
+/// @group tabstrip
+$tabstrip-item-text: $link-text !default;
+/// Border color of tabs
+/// @group tabstrip
+$tabstrip-item-border: null !default;
+/// Background gradient of tabs
+/// @group tabstrip
+$tabstrip-item-gradient: null !default;
+
+/// Background color of hovered tabs
+/// @group tabstrip
+$tabstrip-item-hovered-bg: null !default;
+/// Text color of hovered tabs
+/// @group tabstrip
+$tabstrip-item-hovered-text: $link-hover-text !default;
+/// Border color of hovered tabs
+/// @group tabstrip
+$tabstrip-item-hovered-border: null !default;
+/// Background gradient of hovered tabs
+/// @group tabstrip
+$tabstrip-item-hovered-gradient: null !default;
+
+/// Background color of selected tabs
+/// @group tabstrip
+$tabstrip-item-selected-bg: $component-bg !default;
+/// Text color of selected tabs
+/// @group tabstrip
+$tabstrip-item-selected-text: $component-text !default;
+/// Border color of selected tabs
+/// @group tabstrip
+$tabstrip-item-selected-border: $component-border !default;
+/// Background gradient of selected tabs
+/// @group tabstrip
+$tabstrip-item-selected-gradient: null !default;
+
+$tabstrip-item-focused-shadow: $list-item-focused-shadow !default;
+
+$tabstrip-indicator-size: null !default;
+$tabstrip-indicator-color: null !default;
+
+/// Horizontal padding of tabstrip content
+/// @group tabstrip
+$tabstrip-content-padding-x: $tabstrip-item-padding-x !default;
+/// Vertical padding of tabstrip content
+/// @group tabstrip
+$tabstrip-content-padding-y: $tabstrip-item-padding-y !default;
+/// Width of border around tabstrip content
+/// @group tabstrip
+$tabstrip-content-border-width: 1px !default;
+
+/// Background color of tabstrip content
+/// @group tabstrip
+$tabstrip-content-bg: $component-bg !default;
+/// Text color of tabstrip content
+/// @group tabstrip
+$tabstrip-content-text: $component-text !default;
+/// Border color of tabstrip content
+/// @group tabstrip
+$tabstrip-content-border: $component-border !default;

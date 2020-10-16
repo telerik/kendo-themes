@@ -1,0 +1,29 @@
+// Pivot grid
+$pivotgrid-font-family: $font-family !default;
+$pivotgrid-font-size: $font-size !default;
+$pivotgrid-line-height: $line-height !default;
+
+$pivotgrid-border-width: 1px !default;
+
+$pivotgrid-alt-bg: try-shade($grid-bg, .5) !default;
+$pivotgrid-alt-color: null !default;
+$pivotgrid-alt-text: $grid-text !default;
+$pivotgrid-border: $component-border !default;
+$pivotgrid-chrome-border: $grid-border !default;
+
+$pivotgrid-setting-delete-color: null !default;
+
+$pivotgrid-container-bg: $grid-header-bg !default;
+$pivotgrid-row-headers-bg: null !default;
+
+$pivotgrid-button-bg: try-shade($button-bg, 1) !default;
+$pivotgrid-button-text: $button-text !default;
+$pivotgrid-button-hover-bg: try-shade($button-bg, 2) !default;
+$pivotgrid-button-hover-text: $button-text !default;
+$pivotgrid-button-active-bg: try-shade($button-bg, 2) !default;
+$pivotgrid-button-active-text: $button-text !default;
+
+$pivotgrid-remove-bg: $pivotgrid-button-text !default;
+$pivotgrid-remove-text: $pivotgrid-button-bg !default;
+
+$pivotgrid-configurator-text: $component-text !default;

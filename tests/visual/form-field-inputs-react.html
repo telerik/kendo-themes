@@ -8,185 +8,85 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
         section {
-            padding: 30px;
+            padding: 20px;
             border: 1px dashed grey;
         }
 
         .test-heading {
-            margin: 0 0 30px;
+            margin: 0 0 20px;
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area" class="grid">
-        <section>
-            <h2 class="test-heading">Vertical/Default Form (React)</h2>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
 
-            <div class="k-messagebox k-messagebox-error">
-                Error: The quick brown fox jumps over the lazy dog.
-            </div>
+        <section>
+            <h3 class="test-heading">Vertical Form (React)</h3>
 
             <form class="k-form">
-                <div class="k-form-field">
-                    <label class="k-label">Normal Field:</label>
-                    <input class="k-textbox">
 
-                    <div class="k-form-hint k-text-start">
-                        Hint: Maximum 10 characters
-                    </div>
+                <div class="k-form-field">
+                    <label class="k-label">Textbox:</label>
+                    <input class="k-textbox" />
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-disabled">Disabled Field:</label>
-                    <input disabled="" class="k-textbox">
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: Maximum 10 characters
-                    </div>
-                </div>
-
-                <div class="k-form-field">
-                    <label class="k-label k-text-error">Checkbox:</label>
+                    <label class="k-label">Checkbox:</label>
                     <span class="k-state-default">
-                        <input type="checkbox" class="k-checkbox k-state-invalid">
+                        <input type="checkbox" class="k-checkbox" />
                     </span>
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: You need to check it
-                    </div>
-                    <div class="k-form-error k-text-start">
-                        Error: Checkbox is required
-                    </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">Checkbox with label:</label>
                     <span class="k-state-default">
-                        <input type="checkbox" class="k-checkbox k-state-invalid">
-                            <label class="k-checkbox-label">Some text</label>
-                        </span>
-                    <div class="k-form-hint k-text-start">
-                        Hint: You need to check it
-                    </div>
-                    <div class="k-form-error k-text-start">
-                        Error: Checkbox is required
-                    </div>
+                        <input type="checkbox" class="k-checkbox" />
+                        <label class="k-checkbox-label">Label after the box</label>
+                    </span>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">RadioButton:</label>
-                    <input type="radio" class="k-radio k-state-invalid">
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: You need to select a gender
-                    </div>
-                    <div class="k-form-error k-text-start">
-                        Error: RadioButton is required
-                    </div>
+                    <label class="k-label">Radio:</label>
+                    <input type="radio" class="k-radio" />
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">RadioButton with label:</label>
-                    <input type="radio" class="k-radio k-state-invalid">
-                    <label class="k-radio-label">Some text</label>
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: You need to select a gender
-                    </div>
-                    <div class="k-form-error k-text-start">
-                        Error: RadioButton is required
-                    </div>
+                    <input type="radio" class="k-radio" />
+                    <label class="k-radio-label">Label after the box</label>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">RadioGroup (Y):</label>
-                    <ul role="radiogroup" class="k-radio-list k-list-vertical k-state-invalid">
+                    <label class="k-label">Radio (Y):</label>
+                    <ul role="radiogroup" class="k-radio-list k-list-vertical">
                         <li class="k-radio-item">
-                            <input type="radio" name="c58ee540-a8cc-46c4-86eb-c26f037bbad2" class="k-radio k-state-invalid" value="female">
-                            <label class="k-radio-label" for="44b5584f-e960-4061-809c-d651dfdb8bc4">Female</label>
+                            <input type="radio" class="k-radio" />
+                            <label class="k-radio-label">Female</label>
                         </li>
                         <li class="k-radio-item">
-                            <input type="radio" name="c58ee540-a8cc-46c4-86eb-c26f037bbad2" class="k-radio k-state-invalid" value="male">
-                            <label class="k-radio-label" for="046d41b7-5b93-4e61-9e4e-1fc4b9fe6327">Male</label>
-                        </li>
-                        <li class="k-radio-item">
-                            <input type="radio"  name="c58ee540-a8cc-46c4-86eb-c26f037bbad2" class="k-radio k-state-invalid" value="other">
-                            <label class="k-radio-label" for="c1c72bcd-5949-4ca2-af85-07421be2815e">Other</label>
+                            <input type="radio" class="k-radio" />
+                            <label class="k-radio-label">Male</label>
                         </li>
                     </ul>
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: You need to select a gender
-                    </div>
-                    <div class="k-form-error k-text-start">
-                        Error: RadioGroup is required
-                    </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">RadioGroup (X):</label>
-                    <ul role="radiogroup" class="k-radio-list k-list-horizontal k-state-invalid">
+                    <label class="k-label">Radio (X):</label>
+                    <ul role="radiogroup" class="k-radio-list k-list-horizontal">
                         <li class="k-radio-item">
-                            <input type="radio" name="c58ee540-a8cc-46c4-86eb-c26f037bbad2" class="k-radio k-state-invalid" value="female">
-                            <label class="k-radio-label" for="44b5584f-e960-4061-809c-d651dfdb8bc4">Female</label>
+                            <input type="radio" class="k-radio" />
+                            <label class="k-radio-label">Female</label>
                         </li>
                         <li class="k-radio-item">
-                            <input type="radio" name="c58ee540-a8cc-46c4-86eb-c26f037bbad2" class="k-radio k-state-invalid" value="male">
-                            <label class="k-radio-label" for="046d41b7-5b93-4e61-9e4e-1fc4b9fe6327">Male</label>
-                        </li>
-                        <li class="k-radio-item">
-                            <input type="radio"  name="c58ee540-a8cc-46c4-86eb-c26f037bbad2" class="k-radio k-state-invalid" value="other">
-                            <label class="k-radio-label" for="c1c72bcd-5949-4ca2-af85-07421be2815e">Other</label>
+                            <input type="radio" class="k-radio" />
+                            <label class="k-radio-label">Male</label>
                         </li>
                     </ul>
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: You need to select a gender
-                    </div>
-                    <div class="k-form-error k-text-start">
-                        Error: RadioGroup is required
-                    </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">First Name:
-                        <span class="k-label-optional">(Optional)</span>
-                    </label>
-                    <input class="k-textbox k-state-invalid">
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: Maximum 10 characters
-                    </div>
-
-                    <div class="k-form-error k-text-start">
-                        Error: First Name is required
-                    </div>
-                </div>
-
-                <div class="k-form-field">
-                    <label class="k-label k-text-error">Last Name:
-                        <span class="k-label-optional">(Optional)</span>
-                    </label>
-                    <input class="k-textbox k-state-invalid">
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: Maximum 10 characters
-                    </div>
-
-                    <div class="k-form-error k-text-start">
-                        Error: Last Name is required
-                    </div>
-                </div>
-
-                <div class="k-form-field">
-                    <label class="k-label k-text-error">ColorPicker:</label>
-                    <span class="k-widget k-colorpicker k-state-invalid">
+                    <label class="k-label">ColorPicker:</label>
+                    <span class="k-widget k-colorpicker">
                         <span class="k-picker-wrap k-state-default">
                             <span class="k-selected-color">
                                 <span class="k-icon k-i-line"></span>
@@ -196,36 +96,20 @@
                             </span>
                         </span>
                     </span>
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: Color for your eyes
-                    </div>
-
-                    <div class="k-form-error k-text-start">
-                        Error: T-shirt color is required
-                    </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">MaskedTextBox:</label>
-                    <span class="k-widget k-maskedtextbox k-state-invalid">
-                        <input type="text" class="k-textbox" value="(359) 884-12-33-21">
+                    <label class="k-label">MaskedTextBox:</label>
+                    <span class="k-widget k-maskedtextbox">
+                        <input type="text" class="k-textbox" value="(359) 884-12-33-21" />
                     </span>
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: Enter your phone number
-                    </div>
-
-                    <div class="k-form-error k-text-start">
-                        Error: Phone number is required
-                    </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">NumericTextBox:</label>
+                    <label class="k-label">NumericTextBox:</label>
                     <span class="k-widget k-numerictextbox">
-                        <span class="k-numeric-wrap k-state-invalid">
-                            <input type="tel" class="k-input k-formatted-value" value="6">
+                        <span class="k-numeric-wrap">
+                            <input type="tel" class="k-input k-formatted-value" value="6" />
                             <span class="k-select">
                                 <span class="k-link k-link-increase">
                                     <span class="k-icon k-i-arrow-n"></span>
@@ -236,38 +120,22 @@
                             </span>
                         </span>
                     </span>
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: Number of T-shirts to purchase
-                    </div>
-
-                    <div class="k-form-error k-text-start">
-                        Error: Number of T-shirts is required
-                    </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">Switch:</label>
-                    <span class="k-widget k-switch k-switch-on k-state-invalid">
-                        <span class="k-switch-container" >
-                            <input type="checkbox">
+                    <label class="k-label">Switch:</label>
+                    <span class="k-widget k-switch k-switch-on">
+                        <span class="k-switch-container">
+                            <input type="checkbox" />
                             <span class="k-switch-label-on">ON</span>
                             <span class="k-switch-label-off">OFF</span>
                             <span class="k-switch-handle"></span>
                         </span>
                     </span>
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: It should be ON
-                    </div>
-
-                    <div class="k-form-error k-text-start">
-                        Error: Switch is required
-                    </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">Slider:</label>
+                    <label class="k-label">Slider:</label>
                     <div class="k-slider k-widget k-state-default k-slider-horizontal">
                         <div class="k-slider-wrap k-slider-buttons" style="display: flex; position: relative; flex-direction: row;">
                             <a class="k-button k-button-decrease" style="position: relative;">
@@ -284,279 +152,120 @@
                             </a>
                         </div>
                     </div>
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: Slider Hint text
-                    </div>
-
-                    <div class="k-form-error k-text-start">
-                        Error: Slider is required
-                    </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">NormalLabel</label>
-                    <input class="k-textbox k-state-invalid" value="">
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: Hint text
-                    </div>
-
-                    <div class="k-form-error k-text-start">
-                        Error: Required
-                    </div>
-                </div>
-
-                <div class="k-form-field">
-                    <span class="k-textbox-container k-state-empty">
-                        <input class="k-textbox k-state-invalid">
-                        <label class="k-label k-text-error">FloatingLabel</label>
+                    <span class="k-floating-label-container k-state-empty">
+                        <input class="k-textbox" />
+                        <label class="k-label">FloatingLabel</label>
                     </span>
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: Hint text
-                    </div>
-
-                    <div class="k-form-error k-text-start">
-                        Error: Required
-                    </div>
                 </div>
 
                 <div class="k-form-field">
-                    <span class="k-textbox-container k-state-focused k-state-empty">
-                        <input class="k-textbox k-state-invalid">
-                        <label class="k-label k-text-error">FloatingLabel (focused)</label>
+                    <span class="k-floating-label-container k-state-empty k-state-focused">
+                        <input class="k-textbox" />
+                        <label class="k-label">FloatingLabel (focused)</label>
                     </span>
-
-                    <div class="k-form-hint k-text-start">
-                        Hint: Hint text
-                    </div>
-
-                    <div class="k-form-error k-text-start">
-                        Error: Required
-                    </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">Avatar</label>
-                    <div class="k-widget k-upload k-header k-state-invalid">
+                    <label class="k-label">Upload</label>
+                    <div class="k-widget k-upload k-header">
                         <div class="k-dropzone">
                             <div class="k-button k-upload-button">
-                                <input ><span>Select files...</span>
+                                <input /><span>Select files...</span>
                             </div>
                             <div class="k-dropzone-hint">Drop files here to upload</div>
                         </div>
                     </div>
-                    <div class="k-form-hint k-text-start">
-                        Hint: Hint text
-                    </div>
-
-                    <div class="k-form-error k-text-start">
-                        Error: Required
-                    </div>
                 </div>
 
-                <div class="k-form-buttons">
-                    <button class="k-button k-primary">Submit</button>
-                    <button class="k-button">Clear</button>
-                </div>
             </form>
         </section>
 
-        <section>
-            <h2 class="test-heading">Horizontal Form (React)</h2>
 
-            <div class="k-messagebox k-messagebox-error">
-                Error: The quick brown fox jumps over the lazy dog.
-            </div>
+        <section>
+            <h3 class="test-heading">Horizontal Form (React)</h3>
 
             <form class="k-form k-form-horizontal">
+
                 <div class="k-form-field">
-                    <label class="k-label">Normal Field:</label>
-
+                    <label class="k-label">Textbox:</label>
                     <div class="k-form-field-wrap">
-                        <input class="k-textbox">
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: Maximum 10 characters
-                        </div>
+                        <input class="k-textbox" />
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-disabled">Disabled Field:</label>
-
-                    <div class="k-form-field-wrap">
-                        <input disabled="" class="k-textbox">
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: Maximum 10 characters
-                        </div>
-                    </div>
-                </div>
-
-                <div class="k-form-field">
-                    <label class="k-label k-text-error">Checkbox:</label>
-
+                    <label class="k-label">Checkbox:</label>
                     <div class="k-form-field-wrap">
                         <span class="k-state-default">
-                            <input type="checkbox" class="k-checkbox k-state-invalid">
+                            <input type="checkbox" class="k-checkbox" />
                         </span>
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: You need to check it
-                        </div>
-                        <div class="k-form-error k-text-start">
-                            Error: Checkbox is required
-                        </div>
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">Checkbox with label:</label>
-
+                    <label class="k-label k-label-empty"></label>
                     <div class="k-form-field-wrap">
                         <span class="k-state-default">
-                            <input type="checkbox" class="k-checkbox k-state-invalid">
-                                <label class="k-checkbox-label">Some text</label>
-                            </span>
-                        <div class="k-form-hint k-text-start">
-                            Hint: You need to check it
-                        </div>
-                        <div class="k-form-error k-text-start">
-                            Error: Checkbox is required
-                        </div>
+                            <input type="checkbox" class="k-checkbox" />
+                            <label class="k-checkbox-label">Label after the box</label>
+                        </span>
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">RadioButton:</label>
-
+                    <label class="k-label">Radio:</label>
                     <div class="k-form-field-wrap">
-                        <input type="radio" class="k-radio k-state-invalid">
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: You need to select a gender
-                        </div>
-                        <div class="k-form-error k-text-start">
-                            Error: RadioButton is required
-                        </div>
+                        <input type="radio" class="k-radio" />
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">RadioButton with label:</label>
-
+                    <label class="k-label k-label-empty"></label>
                     <div class="k-form-field-wrap">
-                        <input type="radio" class="k-radio k-state-invalid">
-                        <label class="k-radio-label">Some text</label>
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: You need to select a gender
-                        </div>
-                        <div class="k-form-error k-text-start">
-                            Error: RadioButton is required
-                        </div>
+                        <input type="radio" class="k-radio" />
+                        <label class="k-radio-label">Label after the box</label>
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">RadioGroup (Y):</label>
-
+                    <label class="k-label">Radio (Y):</label>
                     <div class="k-form-field-wrap">
-                        <ul role="radiogroup" class="k-radio-list k-list-vertical k-state-invalid">
+                        <ul role="radiogroup" class="k-radio-list k-list-vertical">
                             <li class="k-radio-item">
-                                <input type="radio" name="c58ee540-a8cc-46c4-86eb-c26f037bbad2" class="k-radio k-state-invalid" value="female">
-                                <label class="k-radio-label" for="44b5584f-e960-4061-809c-d651dfdb8bc4">Female</label>
+                                <input type="radio" class="k-radio" />
+                                <label class="k-radio-label">Female</label>
                             </li>
                             <li class="k-radio-item">
-                                <input type="radio" name="c58ee540-a8cc-46c4-86eb-c26f037bbad2" class="k-radio k-state-invalid" value="male">
-                                <label class="k-radio-label" for="046d41b7-5b93-4e61-9e4e-1fc4b9fe6327">Male</label>
-                            </li>
-                            <li class="k-radio-item">
-                                <input type="radio"  name="c58ee540-a8cc-46c4-86eb-c26f037bbad2" class="k-radio k-state-invalid" value="other">
-                                <label class="k-radio-label" for="c1c72bcd-5949-4ca2-af85-07421be2815e">Other</label>
+                                <input type="radio" class="k-radio" />
+                                <label class="k-radio-label">Male</label>
                             </li>
                         </ul>
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: You need to select a gender
-                        </div>
-                        <div class="k-form-error k-text-start">
-                            Error: RadioGroup is required
-                        </div>
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">RadioGroup (X):</label>
-
+                    <label class="k-label">Radio (X):</label>
                     <div class="k-form-field-wrap">
-                        <ul role="radiogroup" class="k-radio-list k-list-horizontal k-state-invalid">
+                        <ul role="radiogroup" class="k-radio-list k-list-horizontal">
                             <li class="k-radio-item">
-                                <input type="radio" name="c58ee540-a8cc-46c4-86eb-c26f037bbad2" class="k-radio k-state-invalid" value="female">
-                                <label class="k-radio-label" for="44b5584f-e960-4061-809c-d651dfdb8bc4">Female</label>
+                                <input type="radio" class="k-radio" />
+                                <label class="k-radio-label">Female</label>
                             </li>
                             <li class="k-radio-item">
-                                <input type="radio" name="c58ee540-a8cc-46c4-86eb-c26f037bbad2" class="k-radio k-state-invalid" value="male">
-                                <label class="k-radio-label" for="046d41b7-5b93-4e61-9e4e-1fc4b9fe6327">Male</label>
-                            </li>
-                            <li class="k-radio-item">
-                                <input type="radio"  name="c58ee540-a8cc-46c4-86eb-c26f037bbad2" class="k-radio k-state-invalid" value="other">
-                                <label class="k-radio-label" for="c1c72bcd-5949-4ca2-af85-07421be2815e">Other</label>
+                                <input type="radio" class="k-radio" />
+                                <label class="k-radio-label">Male</label>
                             </li>
                         </ul>
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: You need to select a gender
-                        </div>
-                        <div class="k-form-error k-text-start">
-                            Error: RadioGroup is required
-                        </div>
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">First Name:
-                        <span class="k-label-optional">(Optional)</span>
-                    </label>
-
+                    <label class="k-label">ColorPicker:</label>
                     <div class="k-form-field-wrap">
-                        <input class="k-textbox k-state-invalid">
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: Maximum 10 characters
-                        </div>
-
-                        <div class="k-form-error k-text-start">
-                            Error: First Name is required
-                        </div>
-                    </div>
-                </div>
-
-                <div class="k-form-field">
-                    <label class="k-label k-text-error">Last Name:
-                        <span class="k-label-optional">(Optional)</span>
-                    </label>
-
-                    <div class="k-form-field-wrap">
-                        <input class="k-textbox k-state-invalid">
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: Maximum 10 characters
-                        </div>
-
-                        <div class="k-form-error k-text-start">
-                            Error: Last Name is required
-                        </div>
-                    </div>
-                </div>
-
-                <div class="k-form-field">
-                    <label class="k-label k-text-error">ColorPicker:</label>
-
-                    <div class="k-form-field-wrap">
-                        <span class="k-widget k-colorpicker k-state-invalid">
+                        <span class="k-widget k-colorpicker">
                             <span class="k-picker-wrap k-state-default">
                                 <span class="k-selected-color">
                                     <span class="k-icon k-i-line"></span>
@@ -566,41 +275,23 @@
                                 </span>
                             </span>
                         </span>
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: Color for your eyes
-                        </div>
-
-                        <div class="k-form-error k-text-start">
-                            Error: T-shirt color is required
-                        </div>
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">MaskedTextBox:</label>
-
+                    <label class="k-label">MaskedTextBox:</label>
                     <div class="k-form-field-wrap">
-                        <span class="k-widget k-maskedtextbox k-state-invalid">
-                            <input class="k-textbox" value="(359) 884-12-33-21">
+                        <span class="k-widget k-maskedtextbox">
+                            <input class="k-textbox" value="(359) 884-12-33-21" />
                         </span>
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: Enter your phone number
-                        </div>
-
-                        <div class="k-form-error k-text-start">
-                            Error: Phone number is required
-                        </div>
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">NumericTextBox:</label>
-
+                    <label class="k-label">NumericTextBox:</label>
                     <div class="k-form-field-wrap">
                         <span class="k-widget k-numerictextbox">
-                            <span class="k-numeric-wrap k-state-invalid">
+                            <span class="k-numeric-wrap">
                                 <input class="k-input k-formatted-value" value="6">
                                 <span class="k-select">
                                     <span class="k-link k-link-increase">
@@ -612,22 +303,13 @@
                                 </span>
                             </span>
                         </span>
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: Number of T-shirts to purchase
-                        </div>
-
-                        <div class="k-form-error k-text-start">
-                            Error: Number of T-shirts is required
-                        </div>
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">Switch:</label>
-
+                    <label class="k-label">Switch:</label>
                     <div class="k-form-field-wrap">
-                        <span class="k-widget k-switch k-switch-on k-state-invalid">
+                        <span class="k-widget k-switch k-switch-on">
                             <span class="k-switch-container" >
                                 <input type="checkbox">
                                 <span class="k-switch-label-on">ON</span>
@@ -635,20 +317,11 @@
                                 <span class="k-switch-handle"></span>
                             </span>
                         </span>
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: It should be ON
-                        </div>
-
-                        <div class="k-form-error k-text-start">
-                            Error: Switch is required
-                        </div>
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">Slider:</label>
-
+                    <label class="k-label">Slider:</label>
                     <div class="k-form-field-wrap">
                         <div class="k-slider k-widget k-state-default k-slider-horizontal">
                             <div class="k-slider-wrap k-slider-buttons" style="display: flex; position: relative; flex-direction: row;">
@@ -666,93 +339,43 @@
                                 </a>
                             </div>
                         </div>
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: Slider Hint text
-                        </div>
-
-                        <div class="k-form-error k-text-start">
-                            Error: Slider is required
-                        </div>
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">NormalLabel</label>
-
+                    <span class="k-label k-label-empty"></span>
                     <div class="k-form-field-wrap">
-                        <input class="k-textbox k-state-invalid" value="">
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: Hint text
-                        </div>
-
-                        <div class="k-form-error k-text-start">
-                            Error: Required
-                        </div>
-                    </div>
-                </div>
-
-                <div class="k-form-field">
-
-                    <div class="k-form-field-wrap">
-                        <span class="k-textbox-container k-state-empty">
-                            <input class="k-textbox k-state-invalid">
-                            <label class="k-label k-text-error">FloatingLabel</label>
+                        <span class="k-floating-label-container k-state-empty">
+                            <input class="k-textbox" />
+                            <label class="k-label">FloatingLabel</label>
                         </span>
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: Hint text
-                        </div>
-
-                        <div class="k-form-error k-text-start">
-                            Error: Required
-                        </div>
                     </div>
                 </div>
 
                 <div class="k-form-field">
+                    <span class="k-label k-label-empty"></span>
                     <div class="k-form-field-wrap">
-                        <span class="k-textbox-container k-state-focused k-state-empty">
-                            <input class="k-textbox k-state-invalid">
-                            <label class="k-label k-text-error">FloatingLabel (focused)</label>
+                        <span class="k-floating-label-container k-state-empty k-state-focused">
+                            <input class="k-textbox" />
+                            <label class="k-label">FloatingLabel (focused)</label>
                         </span>
-
-                        <div class="k-form-hint k-text-start">
-                            Hint: Hint text
-                        </div>
-
-                        <div class="k-form-error k-text-start">
-                            Error: Required
-                        </div>
                     </div>
                 </div>
 
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">Avatar</label>
+                    <label class="k-label">Upload</label>
                     <div class="k-form-field-wrap">
-                        <div class="k-widget k-upload k-header k-state-invalid">
+                        <div class="k-widget k-upload k-header">
                             <div class="k-dropzone">
                                 <div class="k-button k-upload-button">
-                                    <input ><span>Select files...</span>
+                                    <input /><span>Select files...</span>
                                 </div>
                                 <div class="k-dropzone-hint">Drop files here to upload</div>
                             </div>
                         </div>
-                        <div class="k-form-hint k-text-start">
-                            Hint: Hint text
-                        </div>
-
-                        <div class="k-form-error k-text-start">
-                            Error: Required
-                        </div>
                     </div>
                 </div>
 
-                <div class="k-form-buttons">
-                    <button class="k-button k-primary">Submit</button>
-                    <button class="k-button">Clear</button>
-                </div>
             </form>
         </section>
     </div>

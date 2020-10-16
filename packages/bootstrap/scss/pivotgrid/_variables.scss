@@ -1,0 +1,29 @@
+// Pivot grid
+$pivotgrid-font-family: $font-family !default;
+$pivotgrid-font-size: $font-size !default;
+$pivotgrid-line-height: $line-height !default;
+
+$pivotgrid-border-width: 1px !default;
+
+$pivotgrid-alt-bg: $header-bg !default;
+$pivotgrid-alt-color: null !default;
+$pivotgrid-alt-text: null !default;
+$pivotgrid-border: $component-border !default;
+$pivotgrid-chrome-border: $component-border !default;
+
+$pivotgrid-setting-delete-color: null !default;
+
+$pivotgrid-container-bg: $header-bg !default;
+$pivotgrid-row-headers-bg: darken( $header-bg, 3 ) !default;
+
+$pivotgrid-button-bg: null !default;
+$pivotgrid-button-text: null !default;
+$pivotgrid-button-hover-bg: null !default;
+$pivotgrid-button-hover-text: null !default;
+$pivotgrid-button-active-bg: null !default;
+$pivotgrid-button-active-text: null !default;
+
+$pivotgrid-remove-bg: null !default;
+$pivotgrid-remove-text: null !default;
+
+$pivotgrid-configurator-text: $component-text !default;

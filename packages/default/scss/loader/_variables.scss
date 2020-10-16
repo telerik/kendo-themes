@@ -1,0 +1,29 @@
+// Loader
+$loader-segment-border-radius: 50% !default;
+$loader-segment-size-sm: 6px !default;
+$loader-segment-size-md: 10px !default;
+$loader-segment-size-lg: 20px !default;
+
+$loader-padding-sm: $loader-segment-size-sm / 2 !default;
+$loader-padding-md: $loader-segment-size-md / 2 !default;
+$loader-padding-lg: $loader-segment-size-lg / 2 !default;
+
+$loader-pulsing-2-segment-margin-x-sm: 1.5px !default;
+$loader-pulsing-2-segment-margin-x-md: 2.5px !default;
+$loader-pulsing-2-segment-margin-x-lg: 5px !default;
+
+$loader-spinner-3-width-sm: $loader-segment-size-sm * 4 !default;
+$loader-spinner-3-height-sm: 20px !default;
+$loader-spinner-3-width-md: $loader-segment-size-md * 4 !default;
+$loader-spinner-3-height-md: 34px !default;
+$loader-spinner-3-width-lg: $loader-segment-size-lg * 4 !default;
+$loader-spinner-3-height-lg: 65px !default;
+
+$loader-spinner-4-width-sm: $loader-segment-size-sm * 4 !default;
+$loader-spinner-4-height-sm: $loader-spinner-4-width-sm !default;
+$loader-spinner-4-width-md: $loader-segment-size-md * 4 !default;
+$loader-spinner-4-height-md: $loader-spinner-4-width-md !default;
+$loader-spinner-4-width-lg: $loader-segment-size-lg * 4 !default;
+$loader-spinner-4-height-lg: $loader-spinner-4-width-lg !default;
+
+$loader-secondary-bg: #656565 !default;

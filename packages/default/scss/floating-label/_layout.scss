@@ -1,0 +1,79 @@
+@include exports( "floating-label/layout" ) {
+
+
+    // Floating label
+    .k-textbox-container,
+    .k-floating-label-container {
+        padding-top: $floating-label-height;
+        display: inline-flex;
+        vertical-align: middle;
+        position: relative;
+        flex-direction: column;
+        justify-content: stretch;
+
+        > .k-label {
+            max-width: 90%;
+            font-size: $floating-label-font-size;
+            line-height: $floating-label-line-height;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            position: absolute;
+            top: $floating-label-offset-y;
+            left: $floating-label-offset-x;
+            overflow: hidden;
+            cursor: text;
+            transform-origin: left center;
+            transition: transform $floating-label-transition, color $floating-label-transition, top $floating-label-transition, left $floating-label-transition;
+            pointer-events: none;
+        }
+
+        > .k-textbox,
+        > .k-widget {
+            flex: 1 1 auto;
+            width: auto;
+        }
+
+        &.k-state-empty {
+            > .k-label {
+                top: $floating-label-offset-y;
+                left: $floating-label-offset-x;
+                transform: scale( $floating-label-scale );
+            }
+        }
+
+        > .k-label,
+        &:focus-within > .k-label,
+        &.k-state-focused > .k-label {
+            top: $floating-label-focus-offset-y;
+            left: $floating-label-focus-offset-x;
+            transform: scale( $floating-label-focus-scale );
+        }
+
+        &.k-state-empty:not(.k-state-focused) ::placeholder {
+            color: transparent;
+        }
+
+        .k-rtl &,
+        &[dir="rtl"] {
+
+            > .k-label {
+                transform-origin: right center;
+            }
+
+            &.k-state-empty {
+                > .k-label {
+                    left: auto;
+                    right: $floating-label-offset-x;
+                }
+            }
+
+            > .k-label,
+            &:focus-within > .k-label,
+            &.k-state-focused > .k-label {
+                left: auto;
+                right: $floating-label-focus-offset-x;
+            }
+        }
+    }
+
+}

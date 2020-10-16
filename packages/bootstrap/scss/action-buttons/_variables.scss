@@ -1,0 +1,13 @@
+// Actions
+$actions-margin-top: map-get( $spacing, 4 ) !default;
+$actions-padding-x: map-get( $spacing, 2 ) !default;
+$actions-padding-y: map-get( $spacing, 2 ) !default;
+$actions-border-width: 0px !default;
+$actions-button-gap: map-get( $spacing, 2 ) !default;
+
+$actions-bg: null !default;
+$actions-text: null !default;
+$actions-border: null !default;
+$actions-gradient: null !default;
+
+$actions-stretched-border: $base-border !default;

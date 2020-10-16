@@ -1,0 +1,50 @@
+// Upload
+$upload-border-width: 1px !default;
+$upload-font-family: $font-family !default;
+$upload-font-size: $font-size !default;
+$upload-line-height: $line-height !default;
+$upload-max-height: 300px !default;
+
+$upload-bg: $component-bg !default;
+$upload-text: $component-text !default;
+$upload-border: $component-border !default;
+
+$upload-dropzone-padding-x: $toolbar-padding-x !default;
+$upload-dropzone-padding-y: $toolbar-padding-y !default;
+$upload-dropzone-spacing: ($upload-dropzone-padding-x * 2) !default;
+$upload-dropzone-bg: $toolbar-bg !default;
+$upload-dropzone-text: $toolbar-text !default;
+$upload-dropzone-text-opacity: .6 !default;
+$upload-dropzone-border: $toolbar-border !default;
+$upload-dropzone-hover-bg: $hovered-bg !default;
+
+$upload-item-padding-x: $cell-padding !default;
+$upload-item-padding-y: $cell-padding !default;
+
+$upload-multiple-items-spacing: 12px !default;
+
+$upload-validation-font-size: 11px !default;
+$upload-icon-spacing: $upload-dropzone-padding-x !default;
+$upload-icon-color: #d6d6d6 !default;
+
+$upload-item-image-width: 30px !default;
+$upload-item-image-height: 30px !default;
+$upload-item-image-border: 0px !default; // TODO: remove
+
+$upload-group-icon-size: $icon-size-lg !default;
+
+$upload-disabled-text: darken($component-bg, 27%) !default;
+$upload-disabled-border: darken($component-bg, 27%) !default;
+
+$upload-progress-thickness: 2px !default;
+$upload-progress-bg: $info !default;
+$upload-progress-text: $base-text !default;
+
+$upload-success-bg: $success !default;
+$upload-success-text: $success !default;
+
+$upload-error-bg: $error !default;
+$upload-error-text: $error !default;
+$upload-error-border: lighten($error, 29%) !default;
+
+$upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;

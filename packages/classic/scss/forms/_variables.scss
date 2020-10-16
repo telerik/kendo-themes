@@ -1,0 +1,61 @@
+// Forms
+$form-spacer: $padding-x * 2 !default;
+
+$form-font-size: $font-size !default;
+$form-line-height: $line-height !default;
+$form-line-height-em: $form-line-height * 1em !default;
+$form-line-height-sm: $line-height-sm !default;
+$form-line-height-lg: $line-height-lg !default;
+
+$form-fieldset-margin: 2rem 0 0 !default;
+$form-fieldset-padding: 0px !default;
+
+$form-legend-margin: 0 0 1rem !default;
+$form-legend-padding: 0px !default;
+$form-legend-border-width: 0 0 2px !default;
+$form-legend-border-style: solid !default;
+$form-legend-border-color: $component-border !default;
+$form-legend-width: 100% !default;
+$form-legend-font-size: 14px !default;
+$form-legend-text-transform: uppercase !default;
+
+$form-label-margin-bottom: 0px !default;
+
+$form-button-margin-x: 8px !default;
+
+$form-hint-font-size: 12px !default;
+$form-hint-font-style: italic !default;
+$form-hint-margin-top: 4px !default;
+
+$form-field-margin-top: 1rem !default;
+
+$form-separator-margin: $form-field-margin-top 0 0 !default;
+$form-separator-border-color: $form-legend-border-color !default;
+
+$horizontal-form-label-padding-top: 5px !default;
+$horizontal-form-label-margin-x: 10px !default;
+$horizontal-form-label-width: 25% !default;
+$horizontal-form-label-align: flex-end !default;
+
+$inline-form-element-width: 25% !default;
+
+$forms-invalid-color: $error !default;
+
+
+// Label
+$label-optional-margin-x: 6px !default;
+$label-optional-font-size: 12px !default;
+$label-optional-font-style: italic !default;
+
+
+// Fieldset
+$fieldset-margin: 30px !default;
+$fieldset-font-size: $h4-font-size !default;
+
+$fieldset-bg: null !default;
+$fieldset-text: null !default;
+$fieldset-border: null !default;
+
+$fieldset-legend-bg: null !default;
+$fieldset-legend-text: darken($body-text, 13%) !default;
+$fieldset-legend-border: null !default;

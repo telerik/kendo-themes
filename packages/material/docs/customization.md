@@ -188,6 +188,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Buttons
 
 <table class="theme-variables">
@@ -378,6 +379,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Charts
 
 <table class="theme-variables">
@@ -478,6 +480,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Color System
 
 <table class="theme-variables">
@@ -628,6 +631,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Component
 
 <table class="theme-variables">
@@ -708,6 +712,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Grid
 
 <table class="theme-variables">
@@ -794,6 +799,36 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of grid header</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-footer-bg</td>
+    <td></td>
+    <td>$grid-header-bg</td>
+    <td>transparent</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid footer</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-footer-text</td>
+    <td></td>
+    <td>$grid-header-text</td>
+    <td>if($theme-type == dark, $light-secondary-text, $dark-secondary-text)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of grid footer</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$grid-footer-border</td>
+    <td></td>
+    <td>$grid-header-border</td>
+    <td>map-get($theme, component-border)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid footer</div></div>
     </td>
 </tr>
 <tr>
@@ -888,6 +923,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Icons
 
 <table class="theme-variables">
@@ -918,6 +954,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Shadows
 
 <table class="theme-variables">
@@ -998,6 +1035,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Tabstrip
 
 <table class="theme-variables">
@@ -1278,6 +1316,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Toolbar
 
 <table class="theme-variables">
@@ -1318,6 +1357,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 ### Typography
 
 <table class="theme-variables">
@@ -1378,6 +1418,7 @@ The following table lists the available variables for customizing the Material t
 </tr>
 </tbody>
 </table>
+
 
 
 

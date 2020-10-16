@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Progressbar -- blazor</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        .k-progressbar-indeterminate,
+        .k-progressbar-indeterminate::before,
+        .k-progressbar-indeterminate::after {
+            /* Comment if you need to preview the indeterminate animation */
+            animation: none !important;
+        }
+
+        .grid hr {
+            width: 100%;
+            grid-column: 1 / -1;
+            visibility: hidden;
+        }
+
+        .subgrid-horizontal {
+            display: grid;
+            grid-template-columns: auto 1fr 1fr;
+            grid-gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area" class="grid">
+        <div class="subgrid-horizontal">
+            <span></span>
+            <span>LTR</span>
+            <span>RTL</span>
+
+            <span>Partial start</span>
+            <div class="k-widget k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-progress: 5">
+                <span class="k-progress-status-wrap k-progress-start">
+                    <span class="k-progress-status">5%</span>
+                </span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-start">
+                        <span class="k-progress-status">5%</span>
+                    </span>
+                </div>
+            </div>
+            <div dir="rtl" class="k-widget k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-progress: 5">
+                <span class="k-progress-status-wrap k-progress-start">
+                    <span class="k-progress-status">5%</span>
+                </span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-start">
+                        <span class="k-progress-status">5%</span>
+                    </span>
+                </div>
+            </div>
+
+            <span>Partial center</span>
+            <div class="k-widget k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-progress: 50">
+                <span class="k-progress-status-wrap k-progress-center">
+                    <span class="k-progress-status">50%</span>
+                </span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-center">
+                        <span class="k-progress-status">50%</span>
+                    </span>
+                </div>
+            </div>
+            <div dir="rtl" class="k-widget k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-progress: 50">
+                <span class="k-progress-status-wrap k-progress-center">
+                    <span class="k-progress-status">50%</span>
+                </span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-center">
+                        <span class="k-progress-status">50%</span>
+                    </span>
+                </div>
+            </div>
+
+            <span>Partial end</span>
+            <div class="k-widget k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-progress: 95">
+                <span class="k-progress-status-wrap k-progress-end">
+                    <span class="k-progress-status">95%</span>
+                </span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                        <span class="k-progress-status">95%</span>
+                    </span>
+                </div>
+            </div>
+            <div dir="rtl" class="k-widget k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-progress: 95">
+                <span class="k-progress-status-wrap k-progress-end">
+                    <span class="k-progress-status">95%</span>
+                </span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                        <span class="k-progress-status">95%</span>
+                    </span>
+                </div>
+            </div>
+
+            <span>100% start</span>
+            <div class="k-widget k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-progress: 100">
+                <span class="k-progress-status-wrap k-progress-start">
+                    <span class="k-progress-status">100%</span>
+                </span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-start">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
+            </div>
+            <div dir="rtl" class="k-widget k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-progress: 100">
+                <span class="k-progress-status-wrap k-progress-start">
+                    <span class="k-progress-status">100%</span>
+                </span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-start">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
+            </div>
+
+            <span>100% center</span>
+            <div class="k-widget k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-progress: 100">
+                <span class="k-progress-status-wrap k-progress-center">
+                    <span class="k-progress-status">100%</span>
+                </span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-center">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
+            </div>
+            <div dir="rtl" class="k-widget k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-progress: 100">
+                <span class="k-progress-status-wrap k-progress-center">
+                    <span class="k-progress-status">100%</span>
+                </span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-center">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
+            </div>
+
+            <span>100% end</span>
+            <div class="k-widget k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-progress: 100">
+                <span class="k-progress-status-wrap k-progress-end">
+                    <span class="k-progress-status">100%</span>
+                </span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
+            </div>
+            <div dir="rtl" class="k-widget k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-progress: 100">
+                <span class="k-progress-status-wrap k-progress-end">
+                    <span class="k-progress-status">100%</span>
+                </span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                        <span class="k-progress-status">100%</span>
+                    </span>
+                </div>
+            </div>
+            <span>No Label</span>
+            <div class="k-widget k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-progress: 50">
+                <span class="k-progress-status-wrap k-progress-end"></span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                </div>
+            </div>
+            <div dir="rtl" class="k-widget k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-progress: 50">
+                <span class="k-progress-status-wrap k-progress-end"></span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                </div>
+            </div>
+
+            <span>Thin style</span>
+            <div class="k-widget k-progressbar k-progressbar-horizontal" style="height: 2px; --kendo-progressbar-progress: 50;">
+                <span class="k-progress-status-wrap k-progress-end"></span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                </div>
+            </div>
+            <div dir="rtl" class="k-widget k-progressbar k-progressbar-horizontal" style="height: 2px; --kendo-progressbar-progress: 50;">
+                <span class="k-progress-status-wrap k-progress-end"></span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                </div>
+            </div>
+
+            <span>Thick style</span>
+            <div class="k-widget k-progressbar k-progressbar-horizontal" style="height: 50px; --kendo-progressbar-progress: 50">
+                <span class="k-progress-status-wrap k-progress-end">
+                    <span class="k-progress-status">50%</span>
+                </span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                        <span class="k-progress-status">50%</span>
+                    </span>
+                </div>
+            </div>
+            <div dir="rtl" class="k-widget k-progressbar k-progressbar-horizontal" style="height: 50px; --kendo-progressbar-progress: 50">
+                <span class="k-progress-status-wrap k-progress-end">
+                    <span class="k-progress-status">50%</span>
+                </span>
+                <div class="k-state-selected">
+                    <span class="k-progress-status-wrap k-progress-end">
+                        <span class="k-progress-status">50%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
