@@ -5,6 +5,7 @@
         @include border-radius( $textarea-border-radius );
         margin: 0;
         padding: 0;
+        width: $textarea-default-width;
         border-width: $textarea-border-width;
         border-style: solid;
         outline: 0;
@@ -33,13 +34,13 @@
             opacity: $input-placeholder-opacity;
             user-select: none;
         }
+
         > .k-input {
             padding: $textarea-padding-y $textarea-padding-x;
-            width: $textarea-default-width;
             height: auto;
             min-height: $textarea-calc-height;
             overflow-y: auto;
-            resize: both;
+            resize: vertical;
         }
 
         // Disabled state
@@ -62,7 +63,6 @@
     // Textarea old rendering
     textarea.k-textarea {
         padding: $textarea-padding-y $textarea-padding-x;
-        width: $textarea-default-width;
         min-height: $textarea-calc-height;
         display: inline-block;
         resize: both;
@@ -73,7 +73,7 @@
     .k-floating-label-container {
         > .k-textarea {
             flex: 1 1 auto;
-            width: auto;
+            width: 100%;
         }
     }
 }
