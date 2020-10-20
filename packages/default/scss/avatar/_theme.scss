@@ -1,11 +1,23 @@
-@include exports("avatar/theme") {
+@include exports( "avatar/theme" ) {
 
-    .k-avatar-icon,
-    .k-avatar-initials {
-        @include fill (
-            $avatar-text,
-            $avatar-bg
-        );
+    // Solid Avatars
+    @each $name, $color in $avatar-theme-colors {
+        .k-avatar-solid.k-avatar-#{$name} {
+            border-color: $color;
+            color: contrast-wcag( $color );
+            background-color: $color;
+        }
+    }
+
+    // Outline avatars
+    .k-avatar-outline {
+        border-color: currentColor;
+    }
+
+    @each $name, $color in $avatar-theme-colors {
+        .k-avatar-outline.k-avatar-#{$name} {
+            color: $color;
+        }
     }
 
 }

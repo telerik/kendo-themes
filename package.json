@@ -5,7 +5,7 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@commitlint/core": "^11.0.0",
     "@joneff/baka": "^0.5.1",
-    "@progress/kendo-font-icons": "0.0.5",
+    "@progress/kendo-font-icons": "0.1.0",
     "ansi-colors": "^4.1.1",
     "autoprefixer": "^10.0.1",
     "eslint": "^7.7.0",
