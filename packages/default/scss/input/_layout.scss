@@ -80,7 +80,8 @@
             flex-shrink: 0;
         }
 
-        > .k-icon {
+        > .k-icon,
+        .k-clear-value > .k-icon {
             width: $button-inner-calc-size;
             height: $button-inner-calc-size;
             display: inline-flex;
