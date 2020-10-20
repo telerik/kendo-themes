@@ -125,6 +125,31 @@
         }
     }
 
+    // Toggle button
+    .k-toggle-button {
+        &:focus,
+        &.k-state-focused {
+            box-shadow: $button-focused-shadow;
+        }
+
+        &:active,
+        &.k-state-active {
+            @include fill(
+                $primary-button-pressed-text,
+                $primary-button-pressed-bg,
+                $primary-button-pressed-border,
+                $primary-button-pressed-gradient
+            );
+            box-shadow: $primary-button-pressed-shadow;
+
+            &:focus,
+            &.k-state-focused {
+                box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13);
+            }
+
+        }
+    }
+
 
     // Button group
     .k-button-group {
