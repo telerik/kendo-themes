@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.23.0"></a>
+# [4.23.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.22.0...@progress/kendo-theme-bootstrap@4.23.0) (2020-10-20)
+
+
+### Bug Fixes
+
+* **checkbox:** kendo-theme-bootstrap checkboxes should be consistent with bootstrap checkboxes ([bca8369](https://github.com/telerik/kendo-themes/commit/bca8369)), closes [telerik/kendo-ui-core#5719](https://github.com/telerik/kendo-ui-core/issues/5719)
+* **checkbox:** use calc to calculate checkbox dash width ([0fe5d5b](https://github.com/telerik/kendo-themes/commit/0fe5d5b))
+* **radio:** kendo-theme-bootstrap radios should be consistent with bootstrap radios ([71c0c0f](https://github.com/telerik/kendo-themes/commit/71c0c0f)), closes [telerik/kendo-ui-core#5719](https://github.com/telerik/kendo-ui-core/issues/5719)
+
+
+### Features
+
+* **avatar:** sizes, shapes and colors to avatar ([4010ff8](https://github.com/telerik/kendo-themes/commit/4010ff8))
+
+
+
+
 <a name="4.22.0"></a>
 # 4.22.0 (2020-10-13)
 

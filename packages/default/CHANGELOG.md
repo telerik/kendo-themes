@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.25.0"></a>
+# [4.25.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.24.0...@progress/kendo-theme-default@4.25.0) (2020-10-20)
+
+
+### Bug Fixes
+
+* **avatar:** add no shrink to avatar so it doesnt shrink inside cards ([e00d9c1](https://github.com/telerik/kendo-themes/commit/e00d9c1))
+* **avatar:** add typography styles to text avatars ([7a85b9b](https://github.com/telerik/kendo-themes/commit/7a85b9b))
+* **avatar:** add vertical align middle to avatar ([0b129ac](https://github.com/telerik/kendo-themes/commit/0b129ac))
+* **avatar:** fit img tag inside avatar the same way as background image ([80ebad5](https://github.com/telerik/kendo-themes/commit/80ebad5))
+* **checkbox:** kendo-theme-bootstrap checkboxes should be consistent with bootstrap checkboxes ([bca8369](https://github.com/telerik/kendo-themes/commit/bca8369)), closes [telerik/kendo-ui-core#5719](https://github.com/telerik/kendo-ui-core/issues/5719)
+* **checkbox:** use calc to calculate checkbox dash width ([0fe5d5b](https://github.com/telerik/kendo-themes/commit/0fe5d5b))
+* **progressbar:** do not use 0 for default css variable value when dividing ([58ba965](https://github.com/telerik/kendo-themes/commit/58ba965))
+* **radio:** kendo-theme-bootstrap radios should be consistent with bootstrap radios ([71c0c0f](https://github.com/telerik/kendo-themes/commit/71c0c0f)), closes [telerik/kendo-ui-core#5719](https://github.com/telerik/kendo-ui-core/issues/5719)
+* **textarea:** move width do k-textarea instead of inner element ([ebb8f9a](https://github.com/telerik/kendo-themes/commit/ebb8f9a)), closes [telerik/kendo-themes#1969](https://github.com/telerik/kendo-themes/issues/1969)
+* **textbox:** clear button wrong sizing ([2698d1a](https://github.com/telerik/kendo-themes/commit/2698d1a))
+
+
+### Features
+
+* **avatar:** sizes, shapes and colors to avatar ([4010ff8](https://github.com/telerik/kendo-themes/commit/4010ff8))
+
+
+
+
 <a name="4.24.0"></a>
 # 4.24.0 (2020-10-13)
 
