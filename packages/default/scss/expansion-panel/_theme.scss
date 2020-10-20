@@ -1,0 +1,27 @@
+@include exports("expansion-panel/theme") {
+
+    .k-expander {
+        @include fill(
+            $expander-text,
+            $expander-bg,
+            $expander-border
+        );
+    }
+
+    .k-expander-header {
+        @include fill(
+            $expander-header-text,
+            $expander-header-bg,
+            $expander-header-border
+        );
+    }
+
+    .k-expander-header.k-state-focused {
+        background-color: $expander-header-focused-bg;
+        box-shadow: $expander-header-focused-shadow;
+    }
+
+    .k-expander-sub-title {
+        opacity: $expander-header-sub-title-opacity;
+    }
+}
