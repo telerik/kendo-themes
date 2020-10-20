@@ -167,9 +167,9 @@
         // Avatar
         .k-avatar {
             @include border-radius( 100% );
+            margin: 0;
             width: $chat-avatar-size;
             height: $chat-avatar-size;
-            margin: 0;
             position: absolute;
 
             @at-root .k-message-group:not(.k-alt) > .k-avatar {
