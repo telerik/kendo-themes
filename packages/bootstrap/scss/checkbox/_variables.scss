@@ -1,12 +1,20 @@
 // Checkboxes
-$checkbox-icon-size: 10px !default;
-$checkbox-size: $icon-size !default;
-$checkbox-radius: $border-radius !default;
+$checkbox-size: map-get( $spacing, 4 ) !default;
+$checkbox-radius: map-get( $spacing, 1 ) !default;
 $checkbox-border-width: 1px !default;
 $checkbox-line-height: calc( #{$checkbox-size} + #{$checkbox-border-width} ) !default;
-$checkbox-indeterminate-style: square !default;
-$checkbox-dash-height: $checkbox-size / 10 !default;
-$checkbox-dash-width:  calc( #{$checkbox-size} - ( #{$checkbox-border-width} * 4 )) !default;
+
+$checkbox-icon-size: $checkbox-size !default;
+$checkbox-icon-type: svg !default;
+$checkbox-icon-glyph: "\e118" !default;
+$checkbox-icon-svg: escape-svg( $custom-checkbox-indicator-icon-checked ) !default;
+
+$checkbox-indeterminate-style: dash !default;
+$checkbox-dash-width:  ( $checkbox-size / 2 ) !default;
+$checkbox-dash-height: 2px !default;
+$checkbox-square-width:  ( $checkbox-size / 2 ) !default;
+$checkbox-square-height: ( $checkbox-size / 2 ) !default;
+
 $checkbox-label-margin-x: 8px;
 
 $checkbox-bg: $custom-control-indicator-bg !default;
@@ -25,10 +33,10 @@ $checkbox-focused-border: $custom-control-indicator-focus-border-color !default;
 $checkbox-focused-shadow: $custom-control-indicator-focus-box-shadow !default;
 $checkbox-focused-checked-border: $checkbox-checked-border !default;
 $checkbox-focused-checked-shadow: $custom-control-indicator-focus-box-shadow !default;
-$checkbox-disabled-bg: null !default;
+$checkbox-disabled-bg: $custom-control-indicator-disabled-bg !default;
 $checkbox-disabled-text: null !default;
 $checkbox-disabled-border: null !default;
-$checkbox-disabled-checked-bg: null !default;
+$checkbox-disabled-checked-bg: $custom-control-indicator-checked-disabled-bg !default;
 $checkbox-disabled-checked-text: null !default;
 $checkbox-disabled-checked-border: null !default;
 $checkbox-invalid-bg: null !default;

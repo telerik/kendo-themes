@@ -20,16 +20,26 @@
 
     // Checkmark
     .k-checkbox::before {
-        content: "\e118";
         width: $checkbox-icon-size;
         height: $checkbox-icon-size;
         font-size: $checkbox-icon-size;
-        font-family: "WebComponentsIcons", monospace;
+        line-height: 1;
         transform: scale(0) translate(-50%, -50%);
         overflow: hidden;
         position: absolute;
         top: 50%;
         left: 50%;
+
+        @if $checkbox-icon-type == "svg" {
+            content: "";
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-position: 50%;
+            background-image: $checkbox-icon-svg;
+        } @else {
+            content: $checkbox-icon-glyph;
+            font-family: "WebComponentsIcons", monospace;
+        }
     }
 
     // Hover state
@@ -56,8 +66,8 @@
             width: $checkbox-dash-width;
             height: $checkbox-dash-height;
         } @else {
-            width: $checkbox-size / 2;
-            height: $checkbox-size / 2;
+            width: $checkbox-square-width;
+            height: $checkbox-square-height;
         }
     }
 

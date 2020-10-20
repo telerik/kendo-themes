@@ -1,12 +1,20 @@
 // Checkboxes
-$checkbox-icon-size: 12px !default;
-$checkbox-size: $icon-size !default;
-$checkbox-radius: $border-radius !default;
+$checkbox-size: map-get( $spacing, 4 ) !default;
+$checkbox-radius: map-get( $spacing, thin ) !default;
 $checkbox-border-width: 1px !default;
 $checkbox-line-height: calc( #{$checkbox-size} + #{$checkbox-border-width} ) !default;
+
+$checkbox-icon-size: 12px !default;
+$checkbox-icon-type: glyph !default;
+$checkbox-icon-glyph: "\e118" !default;
+$checkbox-icon-svg: null !default;
+
 $checkbox-indeterminate-style: square !default;
-$checkbox-dash-height: $checkbox-size / 10 !default;
-$checkbox-dash-width:  calc( #{$checkbox-size} - ( #{$checkbox-border-width} * 4 )) !default;
+$checkbox-dash-width:  ( $checkbox-size / 2 ) !default;
+$checkbox-dash-height: 2px !default;
+$checkbox-square-width:  ( $checkbox-size / 2 ) !default;
+$checkbox-square-height: ( $checkbox-size / 2 ) !default;
+
 $checkbox-label-margin-x: 8px !default;
 
 $checkbox-bg: $input-bg !default;
