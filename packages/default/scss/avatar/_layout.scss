@@ -14,8 +14,13 @@
     }
 
 
-    // Avatar initials
-    .k-avatar-initials {}
+    // Avatar text
+    .k-avatar-text,
+    .k-avatar-initials {
+        font-family: $avatar-font-family;
+        font-size: $avatar-font-size;
+        line-height: $avatar-line-height;
+    }
 
 
     // Avatar icon
