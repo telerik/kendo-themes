@@ -1,9 +1,11 @@
 // Radio Buttons
-$radio-icon-size: 12px !default;
-$radio-size: $icon-size !default;
+$radio-size: map-get( $spacing, 4 ) !default;
 $radio-radius: 50% !default;
 $radio-border-width: 1px !default;
 $radio-line-height: calc(#{$radio-size} + #{$radio-border-width}) !default;
+
+$radio-icon-size: ( $radio-size / 2 ) !default;
+
 $radio-label-margin-x: 8px !default;
 
 $radio-bg: $checkbox-bg !default;
