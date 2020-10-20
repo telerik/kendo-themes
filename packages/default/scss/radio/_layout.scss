@@ -19,8 +19,8 @@
 
     .k-radio::before {
         content: "";
-        width: $radio-size / 2;
-        height: $radio-size / 2;
+        width: $radio-icon-size;
+        height: $radio-icon-size;
         border-radius: 50%;
         background-color: currentColor;
         transform: scale(0) translate(-50%, -50%);
