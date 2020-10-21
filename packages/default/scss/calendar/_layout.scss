@@ -125,6 +125,10 @@
                 flex-direction: row;
                 align-items: center;
                 flex-wrap: nowrap;
+
+                .k-today {
+                    margin: $calendar-today-nav-margin-y $calendar-today-nav-margin-x;
+                }
             }
 
             .k-button { @extend .k-button-flat; }
