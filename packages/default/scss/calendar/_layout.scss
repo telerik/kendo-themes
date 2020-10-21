@@ -112,7 +112,8 @@
             justify-content: space-between;
             flex: 0 0 auto;
 
-            .k-title {
+            .k-title,
+            .k-calendar-title {
                 font-weight: bold;
             }
             .k-today {
@@ -218,7 +219,8 @@
                 opacity: $disabled-opacity;
             }
         }
-        table.k-content {
+        table.k-content,
+        table.k-calendar-content {
             display: inline-table;
             vertical-align: top;
         }
@@ -333,7 +335,8 @@
             .k-calendar-yearview,
             .k-calendar-decadeview,
             .k-calendar-centuryview {
-                .k-content {
+                .k-content,
+                .k-calendar-content {
                     $cell-size: $calendar-view-width / 5;
 
                     td {
@@ -368,7 +371,8 @@
 
 
 
-    .k-calendar .k-content.k-scrollable {
+    .k-calendar .k-content.k-scrollable,
+    .k-calendar .k-calendar-content.k-scrollable {
         box-sizing: content-box;
         overflow-x: hidden;
         overflow-y: auto;
@@ -411,7 +415,8 @@
         &::before { top: 0; }
         &::after { bottom: 0; }
 
-        .k-content {
+        .k-content,
+        .k-calendar-content {
             background: transparent;
             height: auto;
             position: absolute;
@@ -480,7 +485,8 @@
         table {
             width: auto;
         }
-        table.k-content {
+        table.k-content,
+        table.k-calendar-content {
             padding: $multiviewcalendar-content-padding-y $multiviewcalendar-content-padding-x;
         }
         table.k-meta-view {
@@ -609,7 +615,8 @@
             transform: scaleX(-1);
         }
 
-        .k-content.k-scrollable {
+        .k-content.k-scrollable,
+        .k-calendar-content.k-scrollable {
             @include hide-scrollbar("left");
         }
 
