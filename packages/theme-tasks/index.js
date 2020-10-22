@@ -1,4 +1,7 @@
+const { build } = require('./src/sass-build');
+const { flatten } = require('./src/sass-flatten');
+
 module.exports = {
-    ...require('./src/sass-build'),
-    ...require('./src/sass-flatten')
+    build,
+    flatten
 };
