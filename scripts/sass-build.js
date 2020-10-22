@@ -14,73 +14,104 @@ colors.theme(utils.colorTheme);
 
 const defaults = {
     cwd: process.cwd(),
+
+    dest: './',
+    destFile: '[name].css',
+
+    // sass options
     compiler: nodeSass,
-    sass: {
-        precision: 10,
-        outputStyle: "expanded",
-        importer: sassImporterFactory({ cache: true })
-    },
+    importer: sassImporterFactory( { cache: true } ),
+    functions: [],
+    indentType: 'space',
+    indentWidth: 4,
+    linefeed: 'lf',
+    outputStyle: 'expanded',
+    precision: 10,
+
+    // postcss plugins
     postcssPlugins: []
 };
 
-function build(fileGlob, dest, options) {
+function sassCompile( options ) {
 
-    options = Object.assign( {}, defaults, options ); // eslint-disable-line no-param-reassign
-
-    let cwd = options.cwd;
-    let destCwd = options.destCwd || cwd;
-    let files = glob.sync( fileGlob, { cwd: cwd } );
-    let result;
-    let outFile;
-
-    const importer = options.sass.importer;
+    let sassOptions = options;
     const compiler = options.compiler;
+
+    delete sassOptions.compiler;
+
+    try {
+        return compiler.renderSync(sassOptions).css.toString('utf-8');
+    } catch (error) {
+        logger.error(`Error: ${colors.error(error.formatted)}`);
+        logger.info(`File: ${error.file}:${error.line}:${error.column}`);
+
+        throw new Error( error.message, error.file, error.line );
+    }
+
+}
+
+function parsePathData( options ) {
+
+    let outFile;
+    let { root, file, dest, template } = options;
+    let meta = {};
+
+    if ( typeof template === 'string' ) {
+        outFile = template.replace('[name]', path.basename( file, path.extname( file ) ) );
+    }
+
+    meta.file = path.resolve( root, file );
+    meta.outFile = path.resolve( root, dest, outFile );
+
+    return meta;
+}
+
+function build( options ) {
+
+    let opts = Object.assign( {}, defaults, options );
+    let { cwd, file, dir, dest, destFile, postcssPlugins } = opts;
+    let files = [];
+
+    delete opts.cwd;
+    delete opts.file;
+    delete opts.dir;
+    delete opts.dest;
+    delete opts.destFile;
+    delete opts.postcssPlugins;
+
+    if ( typeof file === 'string' ) {
+        files = glob.sync( file, { cwd: cwd } );
+    } else if ( typeof dir === 'string' ) {
+        files = glob.sync( `${dir}/**/!(_)*.scss`, { cwd: cwd } );
+    }
+
+    if ( files.length === 0 ) {
+        logger.info( 'Provide a Sass file to render' );
+        return;
+    }
+
+    const importer = opts.importer;
+    importer.setCwd( cwd );
 
     files.forEach(file => {
         importer.clearImported();
-        importer.setCwd( options.cwd );
 
-        file = path.resolve( cwd, file ); // eslint-disable-line no-param-reassign
-        dest = path.resolve( destCwd, dest ); // eslint-disable-line no-param-reassign
+        let fileMeta = parsePathData( { root: cwd, file, dest, template: destFile } );
 
-        logger.info(`Compiling ${colors.info(file)} to ${colors.info(dest)}`);
+        logger.info(`Compiling ${colors.info(fileMeta.file)} to ${colors.info(fileMeta.outFile)}`);
 
-        try {
-            result = compiler.renderSync({
-                file,
-                ...options.sass
-            }).css.toString('utf-8');
-        } catch (error) {
-            logger.error(`Error: ${colors.error(error.formatted)}`);
-            logger.info(`File: ${error.file}:${error.line}:${error.column}`);
+        let result = sassCompile({ file: fileMeta.file, ...opts });
 
-            throw new Error( error.message, error.file, error.line );
+        if ( postcssPlugins.length > 0 ) {
+            result = postcss( postcssPlugins ).process( result ).css;
         }
 
-        if (options.postcssPlugins.length > 0) {
-            result = postcss( options.postcssPlugins ).process( result ).css;
-        }
+        utils.ensureDirSync( path.dirname( fileMeta.outFile ) );
+        fs.writeFileSync( fileMeta.outFile, result );
 
-        outFile = path.resolve(
-            dest,
-            path.basename(file, ".scss") + ".css"
-        );
-
-        utils.ensureDirSync(dest);
-        fs.writeFileSync(outFile, result);
-
-    });
-}
-
-function buildAll( fileGlob, dest, options ) {
-    options.cwds.forEach( cwd => {
-        let opts = { cwd: cwd, compiler: options.compiler, postcssPlugins: options.postcssPlugins };
-
-        build( fileGlob, dest, opts );
     });
 }
 
 module.exports = {
-    build,
-    buildAll
+    build
 };

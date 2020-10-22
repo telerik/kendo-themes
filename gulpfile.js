@@ -14,8 +14,8 @@ const dartSass = require("sass");
 const autoprefixer = require("autoprefixer");
 const calc = require("postcss-calc");
 
-const { buildAll } = require('./scripts/sass-build');
-const { flattenAll } = require('./scripts/sass-flatten');
+const { build } = require('./scripts/sass-build');
+const { flatten } = require('./scripts/sass-flatten');
 const { getArg } = require("./scripts/utils");
 
 
@@ -40,6 +40,25 @@ const postcssPlugins = [
 ];
 
 
+// #region helpers
+function buildAll( cwds, options ) {
+    cwds.forEach( cwd => {
+        build( { cwd, ...options } );
+    });
+}
+function flattenAll( cwds, options ) {
+
+    cwds.forEach( cwd => {
+        let file = path.resolve( cwd, options.file );
+        let outFile = path.resolve( cwd, options.dest, './all.scss' );
+        let nodeModules = path.resolve( cwd, './node_modules' );
+
+        flatten( file, outFile, { nodeModules } );
+    });
+}
+// #endregion
+
+
 // #region assets
 gulp.task("assets", function() {
     let files = glob.sync(paths.sass.assets);
@@ -61,7 +80,7 @@ gulp.task("sass", function( done ) {
     let dest = getArg('--dest') || paths.sass.dist;
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
 
-    buildAll( file, dest, { cwds: themes, compiler: nodeSass, postcssPlugins: postcssPlugins } );
+    buildAll( themes, { file, dest, compiler: nodeSass, postcssPlugins } );
 
     done();
 });
@@ -76,8 +95,8 @@ gulp.task("sass:swatches", function( done ) {
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
     let swatches = paths.sass.swatches;
 
-    flattenAll( file, dest, { cwds: themes } );
-    buildAll( swatches, dest, { cwds: themes, compiler: nodeSass, postcssPlugins: postcssPlugins } );
+    flattenAll( themes, { file, dest } );
+    buildAll( themes, { file: swatches, dest, compiler: nodeSass, postcssPlugins } );
 
     done();
 });
@@ -88,8 +107,8 @@ gulp.task("sass:flat", function( done ) {
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
     let inline = paths.sass.inline;
 
-    flattenAll( file, dest, { cwds: themes } );
-    buildAll( inline, dest, { cwds: themes, compiler: nodeSass, postcssPlugins: postcssPlugins } );
+    flattenAll( themes, { file, dest } );
+    buildAll( themes, { file: inline, dest, compiler: nodeSass, postcssPlugins } );
 
     done();
 });
@@ -102,7 +121,7 @@ gulp.task("dart", function( done ) {
     let dest = getArg('--dest') || paths.sass.dist;
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
 
-    buildAll( file, dest, { cwds: themes, compiler: dartSass, postcssPlugins: postcssPlugins } );
+    buildAll( themes, { file, dest, compiler: dartSass, postcssPlugins } );
 
     done();
 });
@@ -117,8 +136,8 @@ gulp.task("dart:swatches", function( done ) {
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
     let swatches = paths.sass.swatches;
 
-    flattenAll( file, dest, { cwds: themes } );
-    buildAll( swatches, dest, { cwds: themes, compiler: dartSass, postcssPlugins: postcssPlugins } );
+    flattenAll( themes, { file, dest } );
+    buildAll( themes, { file: swatches, dest, compiler: dartSass, postcssPlugins } );
 
     done();
 });
@@ -129,8 +148,8 @@ gulp.task("dart:flat", function( done ) {
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
     let inline = paths.sass.inline;
 
-    flattenAll( file, dest, { cwds: themes } );
-    buildAll( inline, dest, { cwds: themes, compiler: dartSass, postcssPlugins: postcssPlugins } );
+    flattenAll( themes, { file, dest } );
+    buildAll( themes, { file: inline, dest, compiler: dartSass, postcssPlugins } );
 
     done();
 });
