@@ -31,7 +31,8 @@
             overflow: hidden;
         }
 
-        .k-calendar-view table {
+        .k-calendar-view table,
+        .k-calendar-view .k-calendar-table {
             margin: 0;
             border-width: 0;
             border-color: inherit;
@@ -43,7 +44,9 @@
             z-index: 1;
         }
         .k-calendar-view td,
-        .k-calendar-view th {
+        .k-calendar-view th,
+        .k-calendar-view .k-calendar-td,
+        .k-calendar-view .k-calendar-th {
             border-width: 0;
             padding: 0;
             text-align: center;
@@ -52,14 +55,16 @@
             font-weight: normal;
             cursor: default;
         }
-        .k-calendar-view th {
+        .k-calendar-view th,
+        .k-calendar-view .k-calendar-th {
             padding: $calendar-header-cell-padding-y $calendar-header-cell-padding-x;
             font-size: $calendar-header-cell-font-size;
             line-height: $calendar-header-cell-line-height;
             text-transform: uppercase;
             opacity: $calendar-header-cell-opacity;
         }
-        .k-calendar-view tbody th {
+        .k-calendar-view tbody th,
+        .k-calendar-view .k-calendar-tbody .k-calendar-th {
             padding-left: $button-padding-x;
             padding-right: $button-padding-x;
             height: $calendar-header-height;
@@ -184,12 +189,14 @@
             flex: 1 1 auto;
             position: relative;
 
-            > table {
+            > table,
+            > .k-calendar-table {
                 table-layout: fixed;
                 margin-right: -17px; // scrollbar-size
             }
 
-            td {
+            td,
+            .k-calendar-td {
                 @include border-radius( $calendar-cell-border-radius );
                 border-color: transparent;
             }
@@ -220,7 +227,9 @@
             }
         }
         table.k-content,
-        table.k-calendar-content {
+        table.k-calendar-content,
+        .k-calendar-table.k-content,
+        .k-calendar-table.k-calendar-content {
             display: inline-table;
             vertical-align: top;
         }
@@ -230,7 +239,8 @@
         .k-month,
         .k-calendar-monthview {
 
-            td {
+            td,
+            .k-calendar-td {
                 width: $calendar-cell-size;
                 height: $calendar-cell-size;
             }
@@ -246,7 +256,8 @@
         .k-calendar-yearview {
             $cell-size: ( (7 / 4) * $calendar-cell-size);
 
-            td {
+            td,
+            .k-calendar-td {
                 width: auto;
                 height: auto;
             }
@@ -262,7 +273,8 @@
         .k-calendar-decadeview {
             $cell-size: ( (7 / 4) * $calendar-cell-size);
 
-            td {
+            td,
+            .k-calendar-td {
                 width: auto;
                 height: auto;
             }
@@ -278,7 +290,8 @@
         .k-calendar-centuryview {
             $cell-size: ( (7 / 4) * $calendar-cell-size);
 
-            td {
+            td,
+            .k-calendar-td {
                 width: auto;
                 height: auto;
             }
@@ -339,13 +352,15 @@
                 .k-calendar-content {
                     $cell-size: $calendar-view-width / 5;
 
-                    td {
+                    td,
+                    .k-calendar-td {
                         width: auto;
                         height: auto;
                     }
 
                     .k-link,
-                    td.k-empty {
+                    td.k-empty,
+                    .k-calendar-td.k-empty {
                         width: $cell-size;
                         height: $cell-size;
                     }
@@ -482,14 +497,18 @@
                 display: none;
             }
         }
-        table {
+        table,
+        .k-calendar-table {
             width: auto;
         }
         table.k-content,
-        table.k-calendar-content {
+        table.k-calendar-content,
+        .k-calendar-table.k-content,
+        .k-calendar-table.k-calendar-content {
             padding: $multiviewcalendar-content-padding-y $multiviewcalendar-content-padding-x;
         }
-        table.k-meta-view {
+        table.k-meta-view,
+        .k-calendar-table.k-meta-view {
             margin: 0 -1px;
         }
 
@@ -535,16 +554,19 @@
 
         // Angular
         &.k-calendar-infinite {
-            table {
+            table,
+            .k-calendar-table {
                 padding: 0;
                 display: flex;
                 flex-direction: row;
 
-                > tbody {
+                > tbody,
+                > .k-calendar-tbody {
                     display: inline-block;
                     vertical-align: top;
                 }
-                > tbody + tbody {
+                > tbody + tbody,
+                > .k-calendar-tbody + .k-calendar-tbody {
                     margin-left: $multiviewcalendar-gap;
                 }
             }
@@ -620,14 +642,16 @@
             @include hide-scrollbar("left");
         }
 
-        tbody th {
+        tbody th,
+        .k-calendar-tbody .k-calendar-th {
             text-align: right;
         }
 
         // Content
         .k-content,
         .k-calendar-content {
-            > table {
+            > table,
+            > .k-calendar-table {
                 margin-right: 0;
                 margin-left: -17px; // scrollbar-size
             }
