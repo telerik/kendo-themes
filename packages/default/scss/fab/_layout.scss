@@ -1,0 +1,145 @@
+@include exports( "fab/layout" ) {
+
+    // Floating Action Button (FAB)
+    .k-fab {
+        padding: 0;
+        border-width: 0;
+        border-style: solid;
+        border-color: transparent;
+        box-sizing: border-box;
+        color: inherit;
+        background-color: transparent;
+        font-size: $fab-font-size;
+        line-height: $fab-line-height;
+        font-family: $fab-font-family;
+        text-align: center;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+        outline: none;
+    }
+
+    // FAB Icon
+    .k-fab-icon {
+        width: $fab-icon-width;
+        height: $fab-icon-height;
+
+        &:not(:only-child) {
+            margin-right: $fab-icon-spacing;
+            margin-left: -$fab-icon-spacing;
+        }
+    }
+
+
+    // Sizes
+    .k-fab-sm {
+        padding: $fab-padding-y-sm $fab-padding-x-sm;
+    }
+    .k-fab-md {
+        padding: $fab-padding-y $fab-padding-x;
+    }
+    .k-fab-lg {
+        padding: $fab-padding-y-lg $fab-padding-x-lg;
+    }
+
+
+    // Shapes
+    .k-fab-circle {
+        border-radius: 50%;
+    }
+    .k-fab-pill {
+        border-radius: 5rem;
+    }
+    .k-fab-rounded {
+        @include border-radius( $fab-border-radius );
+    }
+
+
+    // Items
+    .k-fab-items {
+        margin: 0;
+        padding: $fab-items-padding-y $fab-items-padding-x;
+        display: flex;
+    }
+
+    .k-fab-items-bottom {
+        flex-direction: column;
+    }
+    .k-fab-items-bottom .k-fab-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .k-fab-items-top {
+        flex-direction: column-reverse;
+    }
+    .k-fab-items-top .k-fab-item:first-child {
+        margin-bottom: 0;
+    }
+
+    .k-fab-item {
+        list-style-type: none;
+        margin-bottom: map-get( $spacing, 2 );
+        outline: none;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &.k-text-right {
+            flex-direction: row;
+
+            .k-fab-item-text {
+                margin-right: map-get( $spacing, 2 );
+            }
+        }
+        &.k-text-left {
+            flex-direction: row-reverse;
+
+            .k-fab-item-text {
+                margin-left: map-get( $spacing, 2 );
+            }
+        }
+    }
+
+    .k-fab-item-text {
+        padding: $fab-item-text-padding-y $fab-item-text-padding-x;
+        border-width: $fab-item-text-border-width;
+        border-radius: $fab-item-text-border-radius;
+        font-size: $fab-item-text-font-size;
+        line-height: $fab-item-text-line-height;
+    }
+
+    .k-fab-item-icon {
+        padding: $fab-item-icon-padding-y $fab-item-icon-padding-x;
+        border-width: $fab-item-icon-border-width;
+        border-radius: $fab-item-icon-border-radius;
+        cursor: pointer;
+        outline: none;
+    }
+
+    // Popup
+    .k-fab-popup {
+        position: absolute;
+    }
+}
+
+@include exports("fab/layout/rtl") {
+
+    .k-rtl .k-fab,
+    .k-fab[dir="rtl"] {
+        direction: rtl;
+
+        .k-fab-icon {
+            &:not(:only-child) {
+                margin-right: -$icon-spacing;
+                margin-left: $icon-spacing;
+            }
+        }
+    }
+}
+

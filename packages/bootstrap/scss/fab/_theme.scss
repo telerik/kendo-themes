@@ -1,0 +1,84 @@
+@include exports( "fab/theme/bootstrap" ) {
+    // FAB
+    .k-fab {
+        @include box-shadow($fab-shadow);
+    }
+
+    // Normal state
+    @each $name, $color in $fab-theme-colors {
+        .k-fab-#{$name} {
+            border-color: $color;
+            color: contrast-wcag( $color );
+            background-color: $color;
+        }
+    }
+
+    // Hover state
+    @each $name, $color in $fab-theme-colors {
+        .k-state-hover.k-fab-#{$name},
+        .k-fab-#{$name}:hover {
+            border-color: try-darken( $color, 10% );
+            color: contrast-wcag( try-darken( $color, 7.5% ) );
+            background-color: try-darken( $color, 7.5% );
+        }
+    }
+
+    // Focus state
+    .k-fab.k-state-focus,
+    .k-fab:focus {
+        @include box-shadow($fab-focus-shadow);
+    }
+
+    // Active state
+    @each $name, $color in $fab-theme-colors {
+        .k-state-active.k-fab-#{$name},
+        .k-state-selected.k-fab-#{$name},
+        .k-fab-#{$name}:active {
+            border-color: try-darken( $color, 12.5% );
+            color: contrast-wcag( try-darken( $color, 10% ) );
+            background-color: try-darken( $color, 10% );
+        }
+    }
+
+    // Items
+    .k-fab-item-text {
+        @include fill(
+            $fab-item-text,
+            $fab-item-bg,
+            $fab-item-border
+        );
+        @include box-shadow($fab-item-shadow);
+    }
+    .k-fab-item-icon {
+        @include fill(
+            $fab-item-icon-text,
+            $fab-item-icon-bg,
+            $fab-item-icon-border
+        );
+        @include box-shadow($fab-item-shadow);
+    }
+
+    // Hover state
+    .k-fab-item.k-state-hover .k-fab-item-icon,
+    .k-fab-item:hover .k-fab-item-icon {
+        border-color: try-darken( $fab-item-icon-border, 10% );
+        color: contrast-wcag( try-darken( $fab-item-icon-bg, 7.5% ) );
+        background-color: try-darken( $fab-item-icon-bg, 7.5% );
+    }
+
+    // Focus state
+    .k-fab-item:focus .k-fab-item-text,
+    .k-fab-item:focus .k-fab-item-icon,
+    .k-fab-item.k-state-focus .k-fab-item-text,
+    .k-fab-item.k-state-focus .k-fab-item-icon {
+        @include box-shadow($fab-item-focus-shadow);
+    }
+
+    // Active state
+    .k-fab-item.k-state-active .k-fab-item-icon,
+    .k-fab-item:active .k-fab-item-icon {
+        border-color: try-darken( $fab-item-icon-border, 12.5% );
+        color: contrast-wcag( try-darken( $fab-item-icon-bg, 10% ) );
+        background-color: try-darken( $fab-item-icon-bg, 10% );
+    }
+}

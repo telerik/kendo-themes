@@ -1,0 +1,85 @@
+@include exports( "fab/theme/material" ) {
+    // FAB
+    .k-fab {
+        @include box-shadow($fab-shadow);
+    }
+
+    // Normal state
+    @each $name, $color in $fab-theme-colors {
+        .k-fab-#{$name} {
+            border-color: $color;
+            color: contrast-wcag( $color );
+            background-color: $color;
+        }
+    }
+
+    // Hover state
+    @each $name, $color in $fab-theme-colors {
+        .k-state-hover.k-fab-#{$name},
+        .k-fab-#{$name}:hover {
+            border-color: true-mix( #000000, $color, 30%);
+            background-color: true-mix( #000000, $color, 30%);
+        }
+    }
+
+    // Focus state
+    .k-fab.k-state-focus,
+    .k-fab:focus {
+        @include box-shadow($fab-focus-shadow);
+    }
+
+    // Active state
+    @each $name, $color in $fab-theme-colors {
+        .k-state-active.k-fab-#{$name},
+        .k-state-selected.k-fab-#{$name},
+        .k-fab-#{$name}:active {
+            border-color: true-mix( #ffffff, $color, 12%);
+            background-color: true-mix( #ffffff, $color, 12%);
+        }
+    }
+
+    // Items
+    .k-fab-item-text {
+        @include fill(
+            $fab-item-text,
+            $fab-item-bg,
+            $fab-item-border
+        );
+        @include box-shadow($fab-item-shadow);
+    }
+    .k-fab-item-icon {
+        @include fill(
+            $fab-item-icon-text,
+            $fab-item-icon-bg,
+            $fab-item-icon-border
+        );
+        @include box-shadow($fab-item-shadow);
+    }
+
+    // Hover state
+    .k-fab-item.k-state-hover .k-fab-item-icon,
+    .k-fab-item:hover .k-fab-item-icon {
+        border-color: true-mix( #000000, $fab-item-icon-border, 30%);
+        background-color: true-mix( #000000, $fab-item-icon-bg, 30%);
+    }
+
+    // Focus state
+    .k-fab-item:focus .k-fab-item-text,
+    .k-fab-item:focus .k-fab-item-icon,
+    .k-fab-item.k-state-focus .k-fab-item-text,
+    .k-fab-item.k-state-focus .k-fab-item-icon {
+        @include box-shadow($fab-item-focus-shadow);
+    }
+
+    // Active state
+    .k-fab-item.k-state-active .k-fab-item-icon,
+    .k-fab-item:active .k-fab-item-icon {
+        border-color: true-mix( #ffffff, $fab-item-icon-border, 12%);
+        background-color: true-mix( #ffffff, $fab-item-icon-bg, 12%);
+    }
+
+    // Popup
+    .k-animation-container > .k-fab-popup {
+        @include box-shadow( none );
+    }
+}
