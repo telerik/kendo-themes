@@ -19,11 +19,13 @@
             text-transform: none;
         }
         .k-calendar-view th,
+        .k-calendar-view .k-calendar-th,
         .k-meta-header,
         .k-month-header {
             font-weight: 500;
         }
-        .k-calendar-view tbody th {
+        .k-calendar-view tbody th,
+        .k-calendar-view .k-calendar-tbody .k-calendar-th {
             font-weight: 700;
         }
     }

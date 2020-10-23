@@ -62,7 +62,9 @@
 
         // Header cells
         .k-content th,
-        .k-calendar-content th {
+        .k-calendar-content th,
+        .k-content .k-calendar-th,
+        .k-calendar-content .k-calendar-th {
             color: $calendar-header-cell-text;
         }
 
@@ -101,7 +103,8 @@
 
         // Interactive states
         .k-state-hover .k-link,
-        td:hover .k-link {
+        td:hover .k-link,
+        .k-calendar-td:hover .k-link {
             @include fill(
                 $calendar-cell-hovered-text,
                 $calendar-cell-hovered-bg,
