@@ -6,6 +6,12 @@ then
 elif [[ $JENKINS == 'true' ]] || [[ -n $JENKINS_URL ]]
 then
     echo "Jenkins detected. Skipping clean."
+elif [[ $GITHUB_ACTION == 'true' ]]
+then
+    echo "GitHub Actions detected. Skipping clean."
+elif [[ $CI == 'true' ]]
+then
+    echo "CI environment detected. Skipping clean."
 else
     echo "Local environment detected."
 

@@ -1,0 +1,81 @@
+name: Branch push
+
+on:
+  push:
+    branches:
+      # - '!main'
+      - '!master'
+      - '!develop'
+
+jobs:
+
+  # Push in branch
+  ci-branch:
+    name: Push in branch
+
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash
+
+    env:
+      CI: true
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+
+      - name: Setup Chrome
+        run: |
+          export CHROME_SOURCE_URL=https://dl.google.com/dl/linux/direct/google-chrome-stable_current_amd64.deb
+          wget --no-verbose -O /tmp/$(basename $CHROME_SOURCE_URL) $CHROME_SOURCE_URL
+          sudo apt install /tmp/$(basename $CHROME_SOURCE_URL)
+          google-chrome --version
+
+      - name: Setup Firefox
+        run: |
+          export FIREFOX_SOURCE_URL='https://download.mozilla.org/?product=firefox-latest&lang=en-US&os=linux64'
+          wget --no-verbose -O /tmp/firefox-latest.tar.bz2 $FIREFOX_SOURCE_URL
+          tar -jxf /tmp/firefox-latest.tar.bz2 -C /tmp/
+          export PATH="/tmp/firefox:$PATH"
+          firefox --version
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Checkout branch
+        uses: actions/checkout@v2
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: |
+            ~/.npm
+            node_modules
+          key: ${{ runner.os }}-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ env.cache-name }}-${{ matrix.node-version }}-
+
+      - name: Install
+        run: |
+          set -e
+          npm install
+
+      - name: Build test assets
+        run: |
+          npm run sass:flat
+
+      - name: Karma
+        run: |
+          npm run karma-single
+
+      # - name: Visual tests
+      #   run: |
+      #     npm run visual-tests

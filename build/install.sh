@@ -12,6 +12,14 @@ elif [[ $JENKINS == 'true' ]] || [[ -n $JENKINS_URL ]]
 then
     echo "Jenkins detected. Bootstraping trough lerna."
     npx lerna bootstrap
+elif [[ $GITHUB_ACTION == 'true' ]]
+then
+    echo "GitHub Actions detected. Bootstraping trough lerna."
+    npx lerna bootstrap
+elif [[ $CI == 'true' ]]
+then
+    echo "CI environment detected. Bootstraping trough lerna."
+    npx lerna bootstrap
 else
     echo "Local environment detected. Bootstraping manually ..."
 
