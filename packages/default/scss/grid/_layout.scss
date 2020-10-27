@@ -931,7 +931,7 @@
         vertical-align: $grid-form-component-vertical-align;
     }
 
-    .k-grid .k-grid-edit-row td,
+    .k-grid .k-grid-edit-row td:not(.k-hierarchy-cell),
     .k-grid .k-command-cell,
     .k-grid .k-edit-cell {
         padding: $grid-command-cell-padding-y $grid-cell-padding-x;
