@@ -1,0 +1,126 @@
+name: Branch push
+
+on:
+  push:
+    branches:
+      # - 'main'
+      - 'master'
+      - 'develop'
+
+jobs:
+
+  # Push in develop
+  ci-dev:
+    name: Push in develop
+    if: ${{ github.ref == 'refs/heads/develop' }}
+
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash
+
+    env:
+      CI: true
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Checkout branch
+        uses: actions/checkout@v2
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: |
+            ~/.npm
+            node_modules
+          key: ${{ runner.os }}-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ env.cache-name }}-${{ matrix.node-version }}-
+
+      - name: Install
+        run: |
+          set -e
+          npm install
+
+      - name: Lint
+        run: |
+          npm run lint
+          npm run docs:check
+
+      - name: Build themes for dist
+        run: |
+          npm run dart:flat
+          npm run dart:swatches
+          npm run sass:flat
+          npm run sass:swatches
+
+
+  # Push in master
+  ci-master:
+    name: Push in master
+    if: ${{ github.ref == 'refs/heads/master' }}
+
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash
+
+    env:
+      CI: true
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Checkout branch
+        uses: actions/checkout@v2
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: |
+            ~/.npm
+            node_modules
+          key: ${{ runner.os }}-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
+            ${{ runner.os }}-${{ env.cache-name }}-${{ matrix.node-version }}-
+
+      - name: Install
+        run: |
+          set -e
+          npm install
+
+      - name: Lint
+        run: |
+          npm run lint
+          npm run docs:check
+
+      - name: Build themes for dist
+        run: |
+          npm run dart:flat
+          npm run dart:swatches
+          npm run sass:flat
+          npm run sass:swatches

@@ -1,0 +1,57 @@
+name: Pull request
+
+on: [pull_request]
+
+jobs:
+  ci-pr:
+    name: Pull request
+
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash
+
+    env:
+      CI: true
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
+
+    steps:
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Checkout branch
+        uses: actions/checkout@v2
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: |
+            ~/.npm
+            node_modules
+          key: ${{ runner.os }}-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ env.cache-name }}-${{ matrix.node-version }}-
+
+      - name: Install
+        run: |
+          set -e
+          npm install
+
+      - name: Lint
+        run: |
+          npm run lint
+          npm run docs:check
+
+      - name: Build themes
+        run: |
+          npm run dart:flat
+          npm run sass:flat
