@@ -460,6 +460,14 @@
         background-clip: padding-box;
         white-space: pre;
         overflow: hidden;
+
+        &.k-state-disabled {
+            opacity: 1;
+        }
+
+        &.k-state-disabled > div {
+            opacity: .6;
+        }
     }
     .k-spreadsheet-merged-cells-wrapers {
         position: relative;
