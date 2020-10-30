@@ -10,17 +10,15 @@ const colorTheme = {
 };
 
 function ensureDirSync(dir) {
-    let resolvedPath = path.normalize(dir);
+    let resolvedPath = path.resolve( dir );
 
-    resolvedPath.split(path.sep).reduce((acc, curr) => {
-        let dirPath = path.join(acc, curr);
-
-        if (!fs.existsSync(dirPath)) {
-            fs.mkdirSync(dirPath);
+    if (fs.existsSync(resolvedPath) === false ) {
+        try {
+            fs.mkdirSync(resolvedPath, { recursive: true });
+        } catch (err) {
+            console.log('Failed to create dir:', err); // eslint-disable-line no-console
         }
-
-        return dirPath;
-    });
+    }
 }
 
 const logger = {

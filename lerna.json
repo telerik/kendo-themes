@@ -3,5 +3,22 @@
   "packages": [
     "packages/*"
   ],
-  "version": "independent"
+  "version": "independent",
+  "command": {
+    "bootstrap": {
+      "concurrency": 1,
+      "npmClientArgs": ["--no-package-lock"]
+    },
+    "clean": {
+      "yes": true
+    },
+    "version": {
+      "allowBranch": ["master", "develop"]
+    },
+    "publish": {
+      "loglevel": "verbose",
+      "message": "chore(release): publish %s",
+      "yes": true
+    }
+  }
 }
