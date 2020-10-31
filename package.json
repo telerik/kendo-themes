@@ -32,13 +32,13 @@
     "clean:dist": "find ./packages -name \"dist\" -type d -prune | grep -e \"node_modules\" -v | xargs rm -rf",
     "bootstrap": "lerna clean && lerna bootstrap",
     "sass": "gulp sass",
+    "sass:flat": "gulp sass:flat",
     "sass:watch": "gulp sass:watch",
     "sass:swatches": "gulp sass:swatches",
-    "sass:flat": "gulp sass:flat",
     "dart": "gulp dart",
+    "dart:flat": "gulp dart:flat",
     "dart:watch": "gulp dart:watch",
     "dart:swatches": "gulp dart:swatches",
-    "dart:flat": "gulp dart:flat",
     "eslint": "eslint \"**/*.js\"",
     "sasslint": "sass-lint -v -q ",
     "lint": "npm run eslint && npm run sasslint",
@@ -52,7 +52,7 @@
     "karma-travis": "cd tests && npm run karma-travis",
     "serve-tests": "http-server ./",
     "embed-assets": "gulp assets",
-    "cleanup-test-results": "node ./scripts/cleanup-test-results.js"
+    "cleanup-test-results": "cd tests && npm run cleanup-test-results"
   },
   "husky": {
     "hooks": {

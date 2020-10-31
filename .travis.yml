@@ -38,7 +38,8 @@ jobs:
       - npm run bootstrap
     script:
       - set -e
-      - npm run lint
+      - npm run eslint
+      - npm run sasslint
       - npm run docs:check
       - npm run sass:flat
       - npm run dart:flat
@@ -65,7 +66,8 @@ jobs:
       - npm run bootstrap
     script:
       - set -e
-      - npm run lint
+      - npm run eslint
+      - npm run sasslint
       - npm run docs:check
       - npm run dart:flat
       - npm run dart:swatches

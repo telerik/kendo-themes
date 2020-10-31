@@ -15,6 +15,7 @@
     "clean:tests": "node ./scripts/cleanup-test-results.js",
     "karma": "karma start",
     "karma-single": "karma start --no-auto-watch --single-run --browsers ChromeHeadless",
-    "karma-travis": "karma start --no-auto-watch --single-run --browsers ChromeHeadless --reporters progress --travis"
+    "karma-travis": "karma start --no-auto-watch --single-run --browsers ChromeHeadless --reporters progress --travis",
+    "karma-github": "karma start --no-auto-watch --single-run --browsers ChromeHeadless --reporters progress --gh-actions"
   }
 }
