@@ -15,7 +15,7 @@ module.exports = function(config) {
             'node_modules/chai/chai.js',
             'node_modules/jquery/dist/jquery.js',
             'unit/lib/helpers.js',
-            `../packages/${config.theme || 'default'}/dist/all.css`,
+            `${config.ghActions === true ? '.tmp/dist/themes' : '../packages'}/${config.theme || 'default'}/dist/all.css`,
             'unit/html/**/*.html',
             'unit/data/metrics.js',
             'unit/**/*-spec.js'
