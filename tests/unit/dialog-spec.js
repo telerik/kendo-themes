@@ -1,6 +1,6 @@
 QUnit.module("Dialog", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/fixtures/dialog.html" );
+        TestHelper.loadFixture( "/html/dialog.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();

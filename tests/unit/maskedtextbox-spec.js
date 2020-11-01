@@ -1,6 +1,6 @@
 QUnit.module("Masked textbox", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/fixtures/maskedtextbox.html" );
+        TestHelper.loadFixture( "/html/maskedtextbox.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();

@@ -1,6 +1,6 @@
 QUnit.module("Multiselect", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/fixtures/multiselect.html" );
+        TestHelper.loadFixture( "/html/multiselect.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();

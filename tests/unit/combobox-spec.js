@@ -1,6 +1,6 @@
 QUnit.module("Combobox", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/fixtures/combobox.html" );
+        TestHelper.loadFixture( "/html/combobox.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();

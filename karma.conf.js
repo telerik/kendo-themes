@@ -13,11 +13,11 @@ module.exports = function(config) {
         // list of files / patterns to load in the browser
         files: [
             "node_modules/jquery/dist/jquery.js",
-            "tests/integrity/lib/helpers.js",
+            "tests/unit/lib/helpers.js",
             `packages/${config.theme || "default"}/dist/all.css`,
-            "tests/integrity/fixtures/**/*.html",
-            "tests/integrity/data/metrics.js",
-            "tests/integrity/**/*-qunit.js"
+            "tests/unit/html/**/*.html",
+            "tests/unit/data/metrics.js",
+            "tests/unit/**/*-spec.js"
         ],
 
 
@@ -29,7 +29,7 @@ module.exports = function(config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'tests/fixtures/**/*.html': []
+            'tests/html/**/*.html': []
             // 'tests/**/.html': ["html2js"]
         },
 
@@ -74,7 +74,7 @@ module.exports = function(config) {
         // Proxies
         proxies: {
             "/tests/": "/base/tests/",
-            "/fixtures/": "/base/tests/integrity/fixtures/",
+            "/html/": "/base/tests/unit/html/",
             "/theme/": `/base/packages/${config.theme || "default"}/dist/`
         },
 
