@@ -1,6 +1,6 @@
 QUnit.module("Dropdown", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/fixtures/dropdown.html" );
+        TestHelper.loadFixture( "/html/dropdown.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();

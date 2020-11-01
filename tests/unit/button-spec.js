@@ -1,6 +1,6 @@
 QUnit.module("Button", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/fixtures/button.html" );
+        TestHelper.loadFixture( "/html/button.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();

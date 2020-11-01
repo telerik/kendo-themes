@@ -1,6 +1,6 @@
 QUnit.module("Colorpicker", {
     beforeEach: function() {
-        TestHelper.loadFixture( "/fixtures/colorpicker.html" );
+        TestHelper.loadFixture( "/html/colorpicker.html" );
     },
     afterEach: function() {
         TestHelper.clearFixture();
