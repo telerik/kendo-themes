@@ -2,14 +2,7 @@ os: linux
 language: node_js
 node_js: 12
 
-cache:
-  directories:
-    - node_modules
-    - packages/default/node_modules
-    - packages/bootstrap/node_modules
-    - packages/material/node_modules
-    - packages/nouvelle/node_modules
-    - packages/theme-tasks/node_modules
+cache: npm
 
 notifications:
   email: false
@@ -41,7 +34,8 @@ jobs:
   # Pull request
   - stage: Pull request
     install:
-      - npm install
+      - npm ci
+      - npm run bootstrap
     script:
       - set -e
       - npm run lint
@@ -55,7 +49,8 @@ jobs:
       chrome: stable
       firefox: latest
     install:
-      - npm install
+      - npm ci
+      - npm run bootstrap
     script:
       - set -e
       - npm run sass:flat
@@ -65,7 +60,8 @@ jobs:
   # Master and develop
   - stage: Master and develop
     install:
-      - npm install
+      - npm ci
+      - npm run bootstrap
     script:
       - set -e
       - npm run lint
