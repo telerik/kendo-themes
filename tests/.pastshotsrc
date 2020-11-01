@@ -1,5 +1,5 @@
 {
-    "serve": "tests/visual/*.html",
+    "serve": "visual/*.html",
     "port": 8081,
     "selector": "#test-area",
     "viewportSize": {

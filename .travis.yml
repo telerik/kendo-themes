@@ -54,6 +54,7 @@ jobs:
     script:
       - set -e
       - npm run sass:flat
+      - npm run pre-tests
       - npm run karma-single
       - npm run visual-tests
 
