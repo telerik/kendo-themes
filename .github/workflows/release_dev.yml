@@ -56,7 +56,7 @@ jobs:
         run: npm run sasslint
 
       - name: Check docs
-        run: npm docs:check
+        run: npm run docs:check
 
       - name: Build themes
         run: |
