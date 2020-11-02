@@ -1,24 +1,38 @@
 name: Tag stable version
 
+defaults:
+  run:
+    shell: bash
+
+env:
+  CI: true
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
 on: [workflow_dispatch]
 
 jobs:
-  build:
+
+  tag:
 
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        shell: bash
-
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
 
-    - name: Add token
-      env:
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      run: printf "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
 
-    - name: Tag stable version
-      run: ./build/tag-stable.sh
+      - name: Add token
+        run: printf "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+
+      - name: Tag stable version
+        run: |
+          source $(pwd)/build/constants.sh
+
+          for theme in $themes \
+          do \
+              pkg=@progress/kendo-theme-$theme \
+              version=$(npm view $pkg version) \
+              npm dist-tag add $pkg@$version stable \
+          done
