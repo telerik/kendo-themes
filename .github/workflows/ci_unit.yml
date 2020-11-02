@@ -115,3 +115,4 @@ jobs:
       # You can not set a workflow to be status check. The job is. Hence the trickery...
 
       - name: Done
+        run: echo "Done!"
