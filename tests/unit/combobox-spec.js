@@ -1,27 +1,26 @@
-QUnit.module("Combobox", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/combobox.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    }
-});
+/// <reference path='lib/types.d.ts' />
 
-QUnit.test("Combobox height should be 30", function( assert ) {
-    let $ = window.jQuery;
-    let $combobox = $("#combobox");
-    let comboboxHeight = getHeight( $combobox );
+suite('Combobox', () => {
 
-    assert.equal( comboboxHeight, metrics.combobox.height );
-});
+    before( () => {
+        loadFixture('/html/combobox.html');
+    });
+    after( () => {
+        clearFixture();
+    });
 
-QUnit.test("Combobox select size should be 28:28", function( assert ) {
-    let $ = window.jQuery;
-    let $combobox = $("#combobox");
-    let $select = $combobox.find(".k-select");
-    let selectSize = getSize( $select );
+    test('Combobox height should be 30', () => {
+        let combobox = $('#combobox');
 
-    assert.equal( selectSize.width, metrics.combobox.select.width );
-    assert.equal( selectSize.height, metrics.combobox.select.height );
-    assert.equal( selectSize.width, selectSize.height );
+        assert.equal( combobox.offsetHeight, metrics.combobox.height );
+    });
+
+    test('Combobox select size should be 28:28', () => {
+        let select = $('#combobox .k-select');
+
+        assert.equal( select.offsetWidth, metrics.combobox.select.width );
+        assert.equal( select.offsetHeight, metrics.combobox.select.height );
+        assert.equal( select.offsetWidth, select.offsetHeight );
+    });
+
 });

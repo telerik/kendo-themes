@@ -66,18 +66,5 @@
         "no-this-before-super": "error",
         "no-var": "error",
         "yoda": ["error", "never", { "exceptRange": true }]
-    },
-    "overrides": [
-        {
-            "files": ["tests/**/*.js"],
-            "globals": {
-                "QUnit": "writable",
-                "TestHelper": "writable",
-                "metrics": "readonly",
-                "getWidth": "readonly",
-                "getHeight": "readonly",
-                "getSize": "readonly"
-            }
-        }
-    ]
+    }
 }

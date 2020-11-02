@@ -1,16 +1,18 @@
-QUnit.module("Masked textbox", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/maskedtextbox.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    }
-});
+/// <reference path='lib/types.d.ts' />
 
-QUnit.test("Masked textbox height should be 30", function( assert ) {
-    let $ = window.jQuery;
-    let $maskedtextbox = $("#maskedtextbox");
-    let maskedtextboxHeight = getHeight( $maskedtextbox );
+suite('Masked textbox', () => {
 
-    assert.equal( maskedtextboxHeight, metrics.maskedtextbox.height );
+    before( () => {
+        loadFixture('/html/maskedtextbox.html');
+    });
+    after( () => {
+        clearFixture();
+    });
+
+    test('Masked textbox height should be 30', () => {
+        let maskedtextbox = $('#maskedtextbox');
+
+        assert.equal( maskedtextbox.offsetHeight, metrics.maskedtextbox.height );
+    });
+
 });

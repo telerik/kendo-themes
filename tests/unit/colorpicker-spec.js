@@ -1,39 +1,35 @@
-QUnit.module("Colorpicker", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/colorpicker.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    }
-});
+/// <reference path='lib/types.d.ts' />
 
-QUnit.test("Colorpicker size should be 58:30", function( assert ) {
-    let $ = window.jQuery;
-    let $colorpicker = $("#colorpicker");
-    let colorpickerSize = getSize( $colorpicker );
+suite('Colorpicker', () => {
 
-    assert.equal( colorpickerSize.width, metrics.colorpicker.width );
-    assert.equal( colorpickerSize.height, metrics.colorpicker.height );
-});
+    before( () => {
+        loadFixture('/html/colorpicker.html');
+    });
+    after( () => {
+        clearFixture();
+    });
 
-QUnit.test("Colorpicker select size should be 28:28", function( assert ) {
-    let $ = window.jQuery;
-    let $colorpicker = $("#colorpicker");
-    let $select = $colorpicker.find(".k-select");
-    let selectSize = getSize( $select );
+    test('Colorpicker size should be 58:30', () => {
+        let colorpicker = $('#colorpicker');
 
-    assert.equal( selectSize.width, metrics.colorpicker.select.width );
-    assert.equal( selectSize.height, metrics.colorpicker.select.height );
-    assert.equal( selectSize.width, selectSize.height );
-});
+        assert.equal( colorpicker.offsetWidth, metrics.colorpicker.width );
+        assert.equal( colorpicker.offsetHeight, metrics.colorpicker.height );
+    });
 
-QUnit.test("Colorpicker preview size should be 28:28", function( assert ) {
-    let $ = window.jQuery;
-    let $colorpicker = $("#colorpicker");
-    let $preview = $colorpicker.find(".k-select");
-    let previewSize = getSize( $preview );
+    test('Colorpicker select size should be 28:28', () => {
+        let select = $('#colorpicker .k-select');
 
-    assert.equal( previewSize.width, metrics.colorpicker.preview.width );
-    assert.equal( previewSize.height, metrics.colorpicker.preview.height );
-    assert.equal( previewSize.width, previewSize.height );
+        assert.equal( select.offsetWidth, metrics.colorpicker.select.width );
+        assert.equal( select.offsetHeight, metrics.colorpicker.select.height );
+        assert.equal( select.offsetWidth, select.offsetHeight );
+    });
+
+    test('Colorpicker preview size should be 28:28', () => {
+        let preview = $('#colorpicker .k-selected-color');
+
+        assert.equal( preview.offsetWidth, metrics.colorpicker.preview.width );
+        assert.equal( preview.offsetHeight, metrics.colorpicker.preview.height );
+        assert.equal( preview.offsetWidth, preview.offsetHeight );
+    });
+
 });

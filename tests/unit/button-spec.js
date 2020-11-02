@@ -1,25 +1,25 @@
-QUnit.module("Button", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/button.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    }
-});
+/// <reference path='lib/types.d.ts' />
 
-QUnit.test("Generic button height should be 30", function( assert ) {
-    let $ = window.jQuery;
-    let $button = $("#button");
-    let buttonHeight = getHeight( $button );
+suite('Button', () => {
 
-    assert.equal( buttonHeight, metrics.button.height );
-});
+    before( () => {
+        loadFixture('/html/button.html');
+    });
+    after( () => {
+        clearFixture();
+    });
 
-QUnit.test("Icon button size should be 30:30", function( assert ) {
-    let $ = window.jQuery;
-    let $iconButton = $("#icon-button");
-    let iconButtonSize = getSize( $iconButton );
+    test('Button height should be 30', () => {
+        let button = $('#button');
 
-    assert.equal( iconButtonSize.width, metrics.iconButton.width );
-    assert.equal( iconButtonSize.height, metrics.iconButton.height );
+        assert.equal( button.offsetHeight, metrics.button.height );
+    });
+
+    test('Icon button size should be 30:30', () => {
+        let iconButton = $('#icon-button');
+
+        assert.equal( iconButton.offsetWidth, metrics.iconButton.width );
+        assert.equal( iconButton.offsetHeight, metrics.iconButton.height );
+    });
+
 });

@@ -1,149 +1,62 @@
-/// <reference path="../data/metrics.js" />
+/// <reference path="types.d.ts" />
 
+// aliases
+const suite = Mocha.suite; // eslint-disable-line no-unused-vars
+const test = Mocha.test; // eslint-disable-line no-unused-vars
+const assert = chai.assert; // eslint-disable-line no-unused-vars
+const Assertion = chai.Assertion; // eslint-disable-line no-unused-vars
 
-const TestHelper = (function() {
+// utils
+function $( selector ) { // eslint-disable-line no-unused-vars
+    return document.querySelector( selector );
+}
+function $$( selector ) { // eslint-disable-line no-unused-vars
+    return document.querySelectorAll( selector );
+}
 
-    function TestHelper() {}
+function loadFixture( url ) { // eslint-disable-line no-unused-vars
+    clearFixture();
 
+    jQuery.ajax( url, {
+        async: false,
+        success: function(data, status, $xhr) { // eslint-disable-line no-unused-vars
+            let domparser = new DOMParser();
+            let doc = domparser.parseFromString( data, 'text/html' );
+            let fixture = document.createElement( 'div' );
 
-    // #region Fields
-    TestHelper.fixture = null;
-    TestHelper.fixtureID = "fixture_" + Date.now();
-    // #endregion
+            fixture.id = 'mocha-fixture';
+            fixture.innerHTML = doc.querySelector('body').innerHTML;
 
+            document.body.append( fixture );
 
-    // #region Methods
-    TestHelper.createFixture = function(id) {
-        const fixture = document.createElement("div");
-        fixture.id = id || TestHelper.fixtureID;
-        document.body.appendChild(fixture);
-
-        return fixture;
-    };
-    TestHelper.loadFixture = function(url) {
-
-        const $ = window.jQuery;
-
-        if (!TestHelper.fixture) {
-            TestHelper.fixture = TestHelper.createFixture();
-            TestHelper.$fixture = $(TestHelper.fixture);
+            domparser = doc = fixture = undefined;
         }
-
-        $.ajax(url, {
-            async: false,
-            cache: false,
-            success: function(data, status, $xhr) { // eslint-disable-line no-unused-vars
-                let tmp = document.createElement("_CONTAINER");
-                tmp.innerHTML = data;
-                $(tmp).find("title, meta, link, style, script").remove();
-                tmp.innerHTML = tmp.innerHTML.trim();
-
-                TestHelper.$fixture.append(tmp.innerHTML);
-
-                tmp.innerHTML = "";
-                tmp = null;
-            },
-            error: function() {}
-        });
-    };
-    TestHelper.clearFixture = function() {
-        TestHelper.fixture.innerHTML = "";
-    };
-    TestHelper.removeFixture = function() {
-        TestHelper.clearFixture();
-        delete TestHelper.$fixture;
-        TestHelper.fixture.remove();
-        TestHelper.fixture = null;
-    };
-    // #endregion
-
-
-    return TestHelper;
-
-})();
-
-
-(function() {
-
-    const $ = window.jQuery;
-
-    // Qunit settings
-    QUnit.config.noglobals = true;
-    QUnit.config.fixture = "";
-
-    QUnit.testStart(function() {
-        TestHelper.fixture = TestHelper.createFixture();
-        TestHelper.$fixture = $(TestHelper.fixture);
     });
 
-    QUnit.testDone(function() {
-        TestHelper.removeFixture();
-    });
-
-
-    // Custom assertions
-    QUnit.assert.gt = function(a, b, message) {
-        const actual = a > b;
-        const expected = true;
-
-        this.pushResult({
-            result: actual === expected,
-            actual: actual,
-            expected: expected,
-            message: message || `${a} is not gt ${b}`
-        });
-    };
-    QUnit.assert.gte = function(a, b, message) {
-        const actual = a >= b;
-        const expected = true;
-
-        this.pushResult({
-            result: actual === expected,
-            actual: actual,
-            expected: expected,
-            message: message || `${a} is not gte ${b}`
-        });
-    };
-    QUnit.assert.lt = function(a, b, message) {
-        const actual = a < b;
-        const expected = true;
-
-        this.pushResult({
-            result: actual === expected,
-            actual: actual,
-            expected: expected,
-            message: message || `${a} is not lt ${b}`
-        });
-    };
-    QUnit.assert.lte = function(a, b, message) {
-        const actual = a <= b;
-        const expected = true;
-
-        this.pushResult({
-            result: actual === expected,
-            actual: actual,
-            expected: expected,
-            message: message || `${a} is not lte ${b}`
-        });
-    };
-
-})();
-
-
-// Test methods
-function getHeight(element) { // eslint-disable-line no-unused-vars
-    const $ = window.jQuery;
-
-    return $(element).outerHeight();
 }
-function getWidth(element) { // eslint-disable-line no-unused-vars
-    const $ = window.jQuery;
+function clearFixture() { // eslint-disable-line no-unused-vars
+    let fixture = $('#mocha-fixture');
 
-    return $(element).outerWidth();
-}
-function getSize(element) { // eslint-disable-line no-unused-vars
-    const $ = window.jQuery;
-    const $element = $(element);
+    if ( fixture instanceof HTMLElement ) {
+        fixture.innerHTML = '';
+        fixture.remove();
+    }
 
-    return { width: $element.outerWidth(), height: $element.outerHeight() };
+    fixture = undefined;
+
 }
+
+
+// Custom assertions
+assert.gt = function(a, b, message) {
+    new Assertion(a, (message || `${a} is not gt ${b}`), assert.gt, true).gt(b);
+};
+assert.gte = function(a, b, message) {
+    new Assertion(a, (message || `${a} is not gte ${b}`), assert.gte, true).gte(b);
+};
+assert.lt = function(a, b, message) {
+    new Assertion(a, (message || `${a} is not lt ${b}`), assert.lt, true).lt(b);
+};
+assert.lte = function(a, b, message) {
+    new Assertion(a, (message || `${a} is not lte ${b}`), assert.lte, true).lte(b);
+};

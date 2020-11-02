@@ -1,27 +1,26 @@
-QUnit.module("Numeric", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/numeric.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    }
-});
+/// <reference path='lib/types.d.ts' />
 
-QUnit.test("Numeric height should be 30", function( assert ) {
-    let $ = window.jQuery;
-    let $numeric = $("#numeric");
-    let numericHeight = getHeight( $numeric );
+suite('Numeric', () => {
 
-    assert.equal( numericHeight, metrics.numeric.height );
-});
+    before( () => {
+        loadFixture('/html/numeric.html');
+    });
+    after( () => {
+        clearFixture();
+    });
 
-QUnit.test("Numeric select size should be 28:28", function( assert ) {
-    let $ = window.jQuery;
-    let numeic = $("#numeric");
-    let $select = numeic.find(".k-select");
-    let selectSize = getSize( $select );
+    test('Numeric height should be 30', () => {
+        let numeric = $('#numeric');
 
-    assert.equal( selectSize.width, metrics.numeric.select.width );
-    assert.equal( selectSize.height, metrics.numeric.select.height );
-    assert.equal( selectSize.width, selectSize.height );
+        assert.equal( numeric.offsetHeight , metrics.numeric.height );
+    });
+
+    test('Numeric select size should be 28:28', () => {
+        let select = $('#numeric .k-select');
+
+        assert.equal( select.offsetWidth, metrics.numeric.select.width );
+        assert.equal( select.offsetHeight, metrics.numeric.select.height );
+        assert.equal( select.offsetWidth, select.offsetHeight );
+    });
+
 });

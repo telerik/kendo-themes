@@ -1,117 +1,106 @@
-QUnit.module("Dateinput", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/datetime.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    }
-});
+/// <reference path='lib/types.d.ts' />
 
-QUnit.test("Dateinput height should be 30", function( assert ) {
-    let $ = window.jQuery;
-    let $dateinput = $("#dateinput");
-    let dateinputHeight = getHeight( $dateinput );
+suite('Dateinput', () => {
 
-    assert.equal( dateinputHeight, metrics.datetime.height );
-});
-
-QUnit.test("Dateinput select size should be 28:28", function( assert ) {
-    let $ = window.jQuery;
-    let $dateinput = $("#dateinput");
-    let $select = $dateinput.find(".k-select");
-    let selectSize = getSize( $select );
-
-    assert.equal( selectSize.width, metrics.datetime.select.width );
-    assert.equal( selectSize.height, metrics.datetime.select.height );
-    assert.equal( selectSize.width, selectSize.height );
-});
-
-
-QUnit.module("Datepicker", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/datetime.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    }
-});
-
-QUnit.test("Datepicker height should be 30", function( assert ) {
-    let $ = window.jQuery;
-    let $datepicker = $("#datepicker");
-    let datepickerHeight = getHeight( $datepicker );
-
-    assert.equal( datepickerHeight, metrics.datetime.height );
-});
-
-QUnit.test("Datepicker select size should be 28:28", function( assert ) {
-    let $ = window.jQuery;
-    let $datepicker = $("#datepicker");
-    let $select = $datepicker.find(".k-select");
-    let selectSize = getSize( $select );
-
-    assert.equal( selectSize.width, metrics.datetime.select.width );
-    assert.equal( selectSize.height, metrics.datetime.select.height );
-    assert.equal( selectSize.width, selectSize.height );
-});
-
-
-QUnit.module("Timepicker", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/datetime.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    }
-});
-
-QUnit.test("Timepicker height should be 30", function( assert ) {
-    let $ = window.jQuery;
-    let $timepicker = $("#timepicker");
-    let timepickerHeight = getHeight( $timepicker );
-
-    assert.equal( timepickerHeight, metrics.datetime.height );
-});
-
-QUnit.test("Timepicker select size should be 28:28", function( assert ) {
-    let $ = window.jQuery;
-    let $timepicker = $("#timepicker");
-    let $select = $timepicker.find(".k-select");
-    let selectSize = getSize( $select );
-
-    assert.equal( selectSize.width, metrics.datetime.select.width );
-    assert.equal( selectSize.height, metrics.datetime.select.height );
-    assert.equal( selectSize.width, selectSize.height );
-});
-
-
-QUnit.module("DateTimepicker", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/datetime.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    }
-});
-
-QUnit.test("DateTimepicker height should be 30", function( assert ) {
-    let $ = window.jQuery;
-    let $datetimepicker = $("#datetimepicker");
-    let datetimepickerHeight = getHeight( $datetimepicker );
-
-    assert.equal( datetimepickerHeight, metrics.datetime.height );
-});
-
-QUnit.test("DateTimepicker button size should be 28:28", function( assert ) {
-    let $ = window.jQuery;
-    let $datetimepicker = $("#datetimepicker");
-    let $buttons = $datetimepicker.find(".k-select .k-link");
-
-    $.each($buttons, function(index, button) {
-        let buttonSize = getSize( button );
-
-        assert.equal( buttonSize.width, metrics.datetime.select.width );
-        assert.equal( buttonSize.height, metrics.datetime.select.height );
-        assert.equal( buttonSize.width, buttonSize.height );
+    before( () => {
+        loadFixture('/html/datetime.html');
     });
+    after(() => {
+        clearFixture();
+    });
+
+    test('Dateinput height should be 30', () => {
+        let dateinput = $('#dateinput');
+
+        assert.equal( dateinput.offsetHeight, metrics.datetime.height );
+    });
+
+    test('Dateinput select size should be 28:28', () => {
+        let select = $('#dateinput .k-select');
+
+        assert.equal( select.offsetWidth, metrics.datetime.select.width );
+        assert.equal( select.offsetHeight, metrics.datetime.select.height );
+        assert.equal( select.offsetWidth, select.offsetHeight );
+    });
+
+});
+
+
+suite('Datepicker', () => {
+
+    before( () => {
+        loadFixture('/html/datetime.html');
+    });
+    after(() => {
+        clearFixture();
+    });
+
+    test('Datepicker height should be 30', () => {
+        let datepicker = $('#datepicker');
+
+        assert.equal( datepicker.offsetHeight, metrics.datetime.height );
+    });
+
+    test('Datepicker select size should be 28:28', () => {
+        let select = $('#datepicker .k-select');
+
+        assert.equal( select.offsetWidth, metrics.datetime.select.width );
+        assert.equal( select.offsetHeight, metrics.datetime.select.height );
+        assert.equal( select.offsetWidth, select.offsetHeight );
+    });
+
+});
+
+
+suite('Timepicker', () => {
+
+    before( () => {
+        loadFixture('/html/datetime.html');
+    });
+    after(() => {
+        clearFixture();
+    });
+
+    test('Timepicker height should be 30', () => {
+        let timepicker = $('#timepicker');
+
+        assert.equal( timepicker.offsetHeight, metrics.datetime.height );
+    });
+
+    test('Timepicker select size should be 28:28', () => {
+        let select = $('#timepicker .k-select');
+
+        assert.equal( select.offsetWidth, metrics.datetime.select.width );
+        assert.equal( select.offsetHeight, metrics.datetime.select.height );
+        assert.equal( select.offsetWidth, select.offsetHeight );
+    });
+
+});
+
+
+suite('DateTimepicker', () => {
+
+    before( () => {
+        loadFixture('/html/datetime.html');
+    });
+    after(() => {
+        clearFixture();
+    });
+
+    test('DateTimepicker height should be 30', () => {
+        let datetimepicker = $('#datetimepicker');
+
+        assert.equal( datetimepicker.offsetHeight, metrics.datetime.height );
+    });
+
+    test('DateTimepicker button size should be 28:28', () => {
+        let buttons = $$('#datetimepicker .k-select .k-link');
+
+        buttons.forEach( (button) => {
+            assert.equal( button.offsetHeight, metrics.datetime.select.width );
+            assert.equal( button.offsetWidth, metrics.datetime.select.height );
+            assert.equal( button.offsetHeight, button.offsetWidth );
+        });
+    });
+
 });
