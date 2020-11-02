@@ -8,7 +8,6 @@ env:
   CI: true
   TESTS_DIR: ./tests
   GH_TOKEN: ${{ secrets.GH_TOKEN }}
-  STATUS_TOKEN: ${{ secrets.GH_TOKEN }}
 
 on:
   push:
