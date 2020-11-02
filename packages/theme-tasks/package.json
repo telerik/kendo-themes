@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-tasks",
   "description": "Build utility for @progress/kendo-themes",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [

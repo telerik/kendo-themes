@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.25.1"></a>
+## 4.25.1 (2020-11-02)
+
+
+
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
 <a name="4.25.0"></a>
 # [4.25.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.24.0...@progress/kendo-theme-default@4.25.0) (2020-10-20)
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.1"></a>
+## 0.3.1 (2020-11-02)
+
+
+
+
+**Note:** Version bump only for package @progress/kendo-theme-classic
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.2.0...@progress/kendo-theme-classic@0.3.0) (2020-10-20)
 
