@@ -91,8 +91,8 @@ jobs:
           name: themes
           path: tests/.tmp/dist/themes
 
-      - name: List artifacts
-        run: ls -R tests/.tmp/dist/themes
+      # - name: List artifacts
+      #   run: ls -R tests/.tmp/dist/themes
 
       - name: Install
         run: npm ci

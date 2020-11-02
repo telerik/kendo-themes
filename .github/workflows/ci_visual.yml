@@ -1,0 +1,200 @@
+name: CI | Visual
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  CI: true
+  TESTS_DIR: ./tests
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+on:
+  push:
+    branches-ignore:
+      # - 'main'
+      - 'master'
+      - 'develop'
+
+jobs:
+
+  build-themes:
+    name: Build themes
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v2
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Setup node cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install
+        run: npm ci
+
+      - name: Bootstrap
+        run: npm run bootstrap
+
+      - name: Build test assets
+        run: npm run sass:flat
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: themes
+          path: packages/*/dist/all.css
+          if-no-files-found: error
+
+  run-tests:
+    name: Run tests
+    needs: build-themes
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        theme: [default, bootstrap, material]
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v2
+
+      - name: Setup Firefox
+        run: |
+          export FIREFOX_SOURCE_URL='https://download.mozilla.org/?product=firefox-latest&lang=en-US&os=linux64'
+          wget --no-verbose -O /tmp/firefox-latest.tar.bz2 $FIREFOX_SOURCE_URL
+          tar -jxf /tmp/firefox-latest.tar.bz2 -C /tmp/
+          export PATH="/tmp/firefox:$PATH"
+          firefox --version
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Setup node cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: themes
+          path: tests/visual/dist/
+
+      # - name: List artifacts
+      #   run: ls -R tests/.tmp/dist/themes
+
+      - name: Install
+        run: npm ci
+        working-directory: ${{ env.TESTS_DIR }}
+
+      - name: Visual tests
+        run: |
+          find visual/ -name '*.html' | xargs sed -i -e 's#../../packages/default#dist/${{ matrix.theme }}#'
+          npx pastshots --serve "visual/*.html" --output visual/output/${{ matrix.theme }}
+        working-directory: ${{ env.TESTS_DIR }}
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: screenshots-${{ matrix.theme }}
+          path: tests/visual/output/${{ matrix.theme }}
+          if-no-files-found: warn
+
+  detect-changes:
+    name: Detect changes
+    needs: run-tests
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v2
+
+      - name: Setup git
+        run: |
+          git config user.name "kendo-bot"
+          git config user.email "kendouiteam@progress.com"
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v2
+        with:
+          path: .tmp/artifacts
+
+      # - name: List artifacts
+      #   run: ls -R .tmp/artifacts
+
+      - name: Copy artifacts
+        run: |
+          cp -rf .tmp/artifacts/screenshots-default/*.png tests/visual/output/default/
+          cp -rf .tmp/artifacts/screenshots-bootstrap/*.png tests/visual/output/bootstrap/
+          cp -rf .tmp/artifacts/screenshots-material/*.png tests/visual/output/material/
+
+      - name: Compare artifacts
+        run: |
+          has_changes=0
+          git diff --exit-code --quiet -- tests/visual/output/ || has_changes=1
+          echo "has_changes=$has_changes" >> $GITHUB_ENV
+
+      - name: Push changes to gtihub
+        if: ${{ env.has_changes == 1 }}
+        run: |
+          echo "Visual tests have detected changes. Upading screenshots."
+
+          git add tests/visual/output
+          git commit -m "chore: update visual previews"
+
+          git push
+
+      # - name: Mark checks as successful
+      #   if: $${{ env.has_changes ==1 }}
+      #   run: |
+      #       commit=$(git rev-parse HEAD)
+
+      #       checks=( "CI | Unit" "CI | Visual" )
+
+      #       for check in $checks \
+      #       do \
+      #         curl -s \
+      #           -H "Authorization: token ${GH_TOKEN}" \
+      #           -d "{ \"state\": \"success\", \"context\": \"$check\" }" \
+      #           "https://api.github.com/repos/telerik/kendo-themes/statuses/$commit" \
+      #       done
+
+      - name: No changes
+        if: ${{ env.has_changes ==0 }}
+        run: echo "No changes detected"
+
+  ci-visual:
+    name: CI | Visual
+    needs: detect-changes
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # IMPORTANT NOTE (31.10.2020)
+      #
+      # You can not set a workflow to be status check. The job is. Hence the trickery...
+
+      - name: Done
+        run: echo "Done!"
