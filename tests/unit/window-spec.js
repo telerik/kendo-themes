@@ -1,30 +1,26 @@
-QUnit.module("Window", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/window.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    },
-    after: function() {
-        TestHelper.clearFixture();
-    }
-});
+/// <reference path='lib/types.d.ts' />
 
-QUnit.test("Window titlebar height should be 45 with title", function( assert ) {
-    let $ = window.jQuery;
-    let $window = $("#window");
-    let $titlebar = $window.find(".k-window-titlebar");
-    let titlebarHeight = getHeight( $titlebar );
+suite('Window', () =>{
 
-    assert.equal( titlebarHeight, metrics.window.titlebar.height );
-});
+    before( () => {
+        loadFixture('/html/window.html');
+    });
+    after( () => {
+        clearFixture();
+    });
 
-QUnit.test("Window titlebar actions should be size 30:30", function( assert ) {
-    let $ = window.jQuery;
-    let $window = $("#window");
-    let $action = $window.find(".k-window-actions .k-window-action").get(0);
-    let actionSize = getSize( $action );
+    test('Window titlebar height should be 45 with title', () => {
+        let titlebar = $('#window .k-window-titlebar');
 
-    assert.equal( actionSize.width, metrics.window.actions.width );
-    assert.equal( actionSize.height, metrics.window.actions.height );
+        assert.equal( titlebar.offsetHeight, metrics.window.titlebar.height );
+    });
+
+    test('Window titlebar actions should be size 30:30', () => {
+        let action = $('#window .k-window-actions .k-window-action');
+
+        assert.equal( action.offsetWidth, metrics.window.actions.width );
+        assert.equal( action.offsetHeight, metrics.window.actions.height );
+        assert.equal( action.offsetWidth, action.offsetHeight );
+    });
+
 });

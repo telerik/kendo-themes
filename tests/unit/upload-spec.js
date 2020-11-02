@@ -1,34 +1,30 @@
-QUnit.module("Upload", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/upload.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    }
-});
+/// <reference path='lib/types.d.ts' />
 
-QUnit.test("Upload height should be greater than or equal to 48", function( assert ) {
-    let $ = window.jQuery;
-    let $upload = $("#upload");
-    let uploadHeight = getHeight( $upload );
+suite('Upload', () => {
 
-    assert.gte( uploadHeight, metrics.upload.height );
-});
+    before( ()=> {
+        loadFixture('/html/upload.html');
+    });
+    after( () => {
+        clearFixture();
+    });
 
-QUnit.test("Upload button height should be 30", function( assert ) {
-    let $ = window.jQuery;
-    let $upload = $("#upload");
-    let $button = $upload.find(".k-upload-button").eq(0);
-    let buttonHeight = getHeight( $button );
+    test('Upload height should be greater than or equal to 48', () => {
+        let upload = $('#upload');
 
-    assert.equal( buttonHeight, metrics.upload.button.height );
-});
+        assert.gte( upload.offsetHeight, metrics.upload.height );
+    });
 
-QUnit.test("Upload button width should be greater than or equal to 98", function( assert ) {
-    let $ = window.jQuery;
-    let $upload = $("#upload");
-    let $button = $upload.find(".k-upload-button").eq(0);
-    let buttonWidth = getWidth( $button );
+    test('Upload button height should be 30', () => {
+        let button = $('#upload .k-upload-button');
 
-    assert.gte( buttonWidth, metrics.upload.button.minWIdth );
+        assert.equal( button.offsetHeight, metrics.upload.button.height );
+    });
+
+    test('Upload button width should be greater than or equal to 98', () => {
+        let button = $('#upload .k-upload-button');
+
+        assert.gte( button.offsetWidth, metrics.upload.button.minWIdth );
+    });
+
 });

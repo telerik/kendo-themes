@@ -1,25 +1,24 @@
-QUnit.module("Multiselect", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/multiselect.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    }
-});
+/// <reference path='lib/types.d.ts' />
 
-QUnit.test("Multiselect height should be 30", function( assert ) {
-    let $ = window.jQuery;
-    let $multiselect = $("#multiselect");
-    let multiselectHeight = getHeight( $multiselect );
+suite('Multiselect', () => {
 
-    assert.equal( multiselectHeight, metrics.multiselect.height );
-});
+    before( () => {
+        loadFixture('/html/multiselect.html');
+    });
+    after( () => {
+        clearFixture();
+    });
 
-QUnit.test("Multiselect token height should be 24", function( assert ) {
-    let $ = window.jQuery;
-    let $multiselect = $("#multiselect");
-    let $token = $multiselect.find(".k-multiselect-wrap ul .k-button").eq(0);
-    let tokenHeight = getHeight( $token );
+    test('Multiselect height should be 30', () => {
+        let multiselect = $('#multiselect');
 
-    assert.equal( tokenHeight, metrics.multiselect.token.height );
+        assert.equal( multiselect.offsetHeight, metrics.multiselect.height );
+    });
+
+    test('Multiselect token height should be 24', () => {
+        let token = $('#multiselect .k-multiselect-wrap ul .k-button');
+
+        assert.equal( token.offsetHeight, metrics.multiselect.token.height );
+    });
+
 });

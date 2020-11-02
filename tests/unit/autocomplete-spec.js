@@ -1,16 +1,18 @@
-QUnit.module("Autocomplete", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/autocomplete.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    }
-});
+/// <reference path='lib/types.d.ts' />
 
-QUnit.test("Autocomplete height should be 30", function( assert ) {
-    let $ = window.jQuery;
-    let $autocomplete = $("#autocomplete");
-    let autocompleteHeight = getHeight( $autocomplete );
+suite('Autocomplete', () => {
 
-    assert.equal( autocompleteHeight, metrics.autocomplete.height );
+    before( () => {
+        loadFixture('/html/autocomplete.html');
+    });
+    after( () => {
+        clearFixture();
+    });
+
+    test('Autocomplete height should be 30', () => {
+        let autocomplete = $('#autocomplete');
+
+        assert.equal( autocomplete.offsetHeight, metrics.autocomplete.height );
+    });
+
 });

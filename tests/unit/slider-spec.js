@@ -1,50 +1,42 @@
-QUnit.module("Slider", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/slider.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    }
-});
+/// <reference path='lib/types.d.ts' />
 
-QUnit.test("Slider height should be 30", function( assert ) {
-    let $ = window.jQuery;
-    let $slider = $("#slider-horizontal");
-    let sliderHeight = getHeight( $slider );
+suite('Slider', () => {
 
-    assert.equal( sliderHeight, metrics.slider.height );
-});
-
-QUnit.test("Slider button size should be 30:30", function( assert ) {
-    let $ = window.jQuery;
-    let $slider = $("#slider-horizontal");
-    let $buttons = $slider.find(".k-slider-buttons > .k-button");
-
-    $.each($buttons, function(index, button) {
-        let buttonSize = getSize( button );
-
-        assert.equal( buttonSize.width, metrics.slider.buttons.width );
-        assert.equal( buttonSize.height, metrics.slider.buttons.height );
-        assert.equal( buttonSize.width, buttonSize.height);
+    before( ()=> {
+        loadFixture('/html/slider.html');
     });
-});
+    after( ()=> {
+        clearFixture();
+    });
 
-QUnit.test("Slider track height should be 4", function( assert ) {
-    let $ = window.jQuery;
-    let $slider = $("#slider-horizontal");
-    let $track = $slider.find(".k-slider-track").eq(0);
-    let trackHeight = getHeight( $track );
+    test('Slider height should be 30', () => {
+        let slider = $('#slider-horizontal');
 
-    assert.equal( trackHeight, metrics.slider.track.height );
-});
+        assert.equal( slider.offsetHeight, metrics.slider.height );
+    });
 
-QUnit.test("Slider handle size should be 16:16", function( assert ) {
-    let $ = window.jQuery;
-    let $slider = $("#slider-horizontal");
-    let $handle = $slider.find(".k-slider-track > .k-draghandle").eq(0);
-    let handleSize = getSize( $handle );
+    test('Slider button size should be 30:30', () => {
+        let buttons = $$('#slider-horizontal .k-slider-buttons > .k-button');
 
-    assert.equal( handleSize.width, metrics.slider.handle.width );
-    assert.equal( handleSize.height, metrics.slider.handle.height );
-    assert.equal( handleSize.width, handleSize.height );
+        buttons.forEach( (button) => {
+            assert.equal( button.offsetWidth, metrics.slider.buttons.width );
+            assert.equal( button.offsetHeight, metrics.slider.buttons.height );
+            assert.equal( button.offsetWidth, button.offsetHeight);
+        });
+    });
+
+    test('Slider track height should be 4', () => {
+        let track = $('#slider-horizontal .k-slider-track');
+
+        assert.equal( track.offsetHeight, metrics.slider.track.height );
+    });
+
+    test('Slider handle size should be 16:16', () => {
+        let handle = $('#slider-horizontal .k-slider-track > .k-draghandle');
+
+        assert.equal( handle.offsetWidth, metrics.slider.handle.width );
+        assert.equal( handle.offsetHeight, metrics.slider.handle.height );
+        assert.equal( handle.offsetWidth, handle.offsetHeight );
+    });
+
 });

@@ -1,27 +1,26 @@
-QUnit.module("Dropdown", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/dropdown.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    }
-});
+/// <reference path='lib/types.d.ts' />
 
-QUnit.test("Dropdown height should be 30", function( assert ) {
-    let $ = window.jQuery;
-    let $dropdown = $("#dropdown");
-    let dropdownHeight = getHeight( $dropdown );
+suite('Dropdown', () => {
 
-    assert.equal( dropdownHeight, metrics.dropdown.height );
-});
+    before( () => {
+        loadFixture('/html/dropdown.html');
+    });
+    after( () => {
+        clearFixture();
+    });
 
-QUnit.test("Dropdown select size should be 28:28", function( assert ) {
-    let $ = window.jQuery;
-    let $dropdown = $("#dropdown");
-    let $select = $dropdown.find(".k-select");
-    let selectSize = getSize( $select );
+    test('Dropdown height should be 30', () => {
+        let dropdown = $('#dropdown');
 
-    assert.equal( selectSize.width, metrics.dropdown.select.width );
-    assert.equal( selectSize.height, metrics.dropdown.select.height );
-    assert.equal( selectSize.width, selectSize.height );
+        assert.equal( dropdown.offsetHeight, metrics.dropdown.height );
+    });
+
+    test('Dropdown select size should be 28:28', () => {
+        let select = $('#dropdown .k-select');
+
+        assert.equal( select.offsetWidth, metrics.dropdown.select.width );
+        assert.equal( select.offsetHeight, metrics.dropdown.select.height );
+        assert.equal( select.offsetWidth, select.offsetHeight );
+    });
+
 });

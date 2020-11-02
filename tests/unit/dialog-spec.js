@@ -1,39 +1,31 @@
-QUnit.module("Dialog", {
-    beforeEach: function() {
-        TestHelper.loadFixture( "/html/dialog.html" );
-    },
-    afterEach: function() {
-        TestHelper.clearFixture();
-    },
-    after: function() {
-        TestHelper.clearFixture();
-    }
-});
+/// <reference path='lib/types.d.ts' />
 
-QUnit.test("Dialog titlebar height should be 45 with title", function( assert ) {
-    let $ = window.jQuery;
-    let $dialog = $("#dialog");
-    let $titlebar = $dialog.find(".k-dialog-titlebar");
-    let titlebarHeight = getHeight( $titlebar );
+suite('Dialog', () => {
 
-    assert.equal( titlebarHeight, metrics.dialog.titlebar.height );
-});
+    before( () => {
+        loadFixture('/html/dialog.html');
+    });
+    after( () => {
+        clearFixture();
+    });
 
-QUnit.test("Dialog titlebar actions should be size 30:30", function( assert ) {
-    let $ = window.jQuery;
-    let $dialog = $("#dialog");
-    let $action = $dialog.find(".k-dialog-actions .k-dialog-action").get(0);
-    let actionSize = getSize( $action );
+    test('Dialog titlebar height should be 45 with title', () => {
+        let titlebar = $('#dialog .k-dialog-titlebar');
 
-    assert.equal( actionSize.width, metrics.dialog.actions.width );
-    assert.equal( actionSize.height, metrics.dialog.actions.height );
-});
+        assert.equal( titlebar.offsetHeight, metrics.dialog.titlebar.height );
+    });
 
-QUnit.test("Dialog buttons height should be 44", function( assert ) {
-    let $ = window.jQuery;
-    let $dialog = $("#dialog");
-    let $button = $dialog.find(".k-dialog-buttongroup .k-button").get(0);
-    let buttonSize = getSize( $button );
+    test('Dialog titlebar actions should be size 30:30', () => {
+        let action = $('#dialog .k-dialog-actions .k-dialog-action');
 
-    assert.equal( buttonSize.height, metrics.dialog.buttons.height );
+        assert.equal( action.offsetWidth, metrics.dialog.actions.width );
+        assert.equal( action.offsetHeight, metrics.dialog.actions.height );
+    });
+
+    test('Dialog buttons height should be 44', () => {
+        let button = $('#dialog .k-dialog-buttongroup .k-button');
+
+        assert.equal( button.offsetHeight, metrics.dialog.buttons.height );
+    });
+
 });

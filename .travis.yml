@@ -55,7 +55,7 @@ jobs:
       - set -e
       - npm run sass:flat
       - npm run pre-tests
-      - npm run karma-single
+      - npm run karma-travis
       - npm run visual-tests
 
   # Master and develop
