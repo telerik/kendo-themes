@@ -8,6 +8,7 @@ env:
   CI: true
   TESTS_DIR: ./tests
   GH_TOKEN: ${{ secrets.GH_TOKEN }}
+  STATUS_TOKEN: ${{ secrets.GH_TOKEN }}
 
 on:
   push:
@@ -165,23 +166,13 @@ jobs:
 
           git push
 
-      # - name: Mark checks as successful
-      #   if: $${{ env.has_changes ==1 }}
-      #   run: |
-      #       commit=$(git rev-parse HEAD)
+          echo "Mark checks as successful"
 
-      #       checks=( "CI | Unit" "CI | Visual" )
-
-      #       for check in $checks \
-      #       do \
-      #         curl -s \
-      #           -H "Authorization: token ${GH_TOKEN}" \
-      #           -d "{ \"state\": \"success\", \"context\": \"$check\" }" \
-      #           "https://api.github.com/repos/telerik/kendo-themes/statuses/$commit" \
-      #       done
+          commit=$(git rev-parse HEAD)
+          ./build/mark-checks.sh $commit
 
       - name: No changes
-        if: ${{ env.has_changes ==0 }}
+        if: ${{ env.has_changes == 0 }}
         run: echo "No changes detected"
 
   ci-visual:
