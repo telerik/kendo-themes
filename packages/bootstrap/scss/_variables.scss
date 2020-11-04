@@ -106,6 +106,9 @@ $zindex-window: 2 !default;
 // Color settings
 $is-dark-theme: false;
 
+$white: #ffffff !default;
+$black: #000000 !default;
+
 // Deprecated
 /// The color that focuses the user attention.
 /// @deprecated Will be removed in v5. Use `$primary` variable instead.
