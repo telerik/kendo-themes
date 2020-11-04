@@ -1,0 +1,7 @@
+{%- if theme === 'default' -%}
+@include exports("{{ componentName }}/layout") {
+
+}
+{%- else -%}
+@import "~@progress/kendo-theme-default/scss/{{ componentName }}/_layout.scss";
+{%- endif %}
