@@ -2,11 +2,12 @@
 @import "../mixins/_index.scss";
 
 
-// Dependencies
+// Dependencies (TODO: extract variables)
 @import "../listgroup/_index.scss";
 @import "../checkbox/_index.scss";
 @import "../radio/_index.scss";
 @import "../switch/_index.scss";
+@import "../toolbar/_index.scss";
 
 
 // Component
