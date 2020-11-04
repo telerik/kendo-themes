@@ -66,7 +66,7 @@ The following table lists the available variables for customization.
     <td>$button-border-radius</td>
     <td></td>
     <td>$border-radius</td>
-    <td>4px</td>
+    <td>map-get( $spacing, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of buttons</div></div>

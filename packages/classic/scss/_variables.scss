@@ -75,14 +75,14 @@ $padding-x-lg: $padding-x * 1.5 !default;
 $padding-y-lg: $padding-y * 1.5 !default;
 
 /// Border radius for all components.
-$border-radius: 4px !default;
+$border-radius: map-get( $spacing, 1 ) !default;
 $border-radius-sm: $border-radius / 2 !default;
 $border-radius-lg: $border-radius * 2 !default;
 
 $panel-padding-x: $padding-x !default;
 $panel-padding-y: $padding-y !default;
 
-$nav-item-margin: 0 !default;
+$nav-item-margin: 0px !default;
 $nav-item-padding-x: $padding-x-lg !default;
 $nav-item-padding-y: $padding-y-lg !default;
 
@@ -98,13 +98,14 @@ $zindex-window: 2 !default;
 
 
 // Color settings
-$is-dark-theme: false;
+$is-dark-theme: false !default;
 
 
 // Theme colors
 /// The color that focuses the user attention.
 /// Used for primary buttons and for elements of primary importance across the theme.
 /// @group color-system
+/// @type Color
 $primary: #f35800 !default;
 $primary-lighter: tint($primary, 2) !default;
 $primary-darker: shade($primary, 2) !default;
@@ -112,10 +113,12 @@ $primary-darker: shade($primary, 2) !default;
 /// The color used along with the primary color denoted by $primary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
+/// @type Color
 $primary-contrast: contrast-wcag( $primary ) !default;
 
 /// The secondary color of the theme.
 /// @group color-system
+/// @type Color
 $secondary: #e9e9e9 !default;
 $secondary-lighter: tint($secondary, 2) !default;
 $secondary-darker: shade($secondary, 2) !default;
@@ -123,6 +126,7 @@ $secondary-darker: shade($secondary, 2) !default;
 /// The color used along with the secondary color denoted by $secondary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
+/// @type Color
 $secondary-contrast: contrast-wcag( $secondary ) !default;
 
 /// The tertiary color of the theme.
@@ -140,24 +144,28 @@ $tertiary-contrast: contrast-wcag( $tertiary ) !default;
 
 /// The color for informational messages and states.
 /// @group color-system
+/// @type Color
 $info: #2498bc !default;
 $info-lighter: tint($info, 2) !default;
 $info-darker: shade($info, 2) !default;
 
 /// The color for success messages and states.
 /// @group color-system
+/// @type Color
 $success: #3ea44e !default;
 $success-lighter: tint($success, 2) !default;
 $success-darker: shade($success, 2) !default;
 
 /// The color for warning messages and states.
 /// @group color-system
+/// @type Color
 $warning: #ff9800 !default;
 $warning-lighter: tint($warning, 2) !default;
 $warning-darker: shade($warning, 2) !default;
 
 /// The color for error messages and states.
 /// @group color-system
+/// @type Color
 $error: #d92800 !default;
 $error-lighter: tint($error, 2) !default;
 $error-darker: shade($error, 2) !default;

@@ -128,7 +128,7 @@ $grid-sticky-header-bg: $grid-header-bg !default;
 $grid-sticky-header-text: $grid-header-text !default;
 $grid-sticky-header-border: $grid-sticky-border !default;
 
-$grid-sticky-footer-bg: $grid-grouping-row-bg !default;
+$grid-sticky-footer-bg: $grid-header-bg !default;
 $grid-sticky-footer-hovered-bg: $grid-hovered-bg !default;
 
 $grid-sticky-selected-bg: mix($selected-bg, #ffffff, 25%) !default;

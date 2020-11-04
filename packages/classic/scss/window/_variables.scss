@@ -1,6 +1,6 @@
 // Window
-$window-border-width: 0 !default;
-$window-border-radius: 0 !default;
+$window-border-width: 0px !default;
+$window-border-radius: 0px !default;
 $window-font-family: $font-family !default;
 $window-font-size: $font-size !default;
 $window-line-height: $line-height !default;
@@ -10,7 +10,7 @@ $window-titlebar-padding-y: 12px !default;
 $window-titlebar-border-width: 0 0 1px !default;
 $window-titlebar-border-style: solid !default;
 
-$window-title-spacing: 0 !default;
+$window-title-spacing: 0px !default;
 $window-title-font-size: $font-size-lg !default;
 $window-title-line-height: ( 20 / 19 ) !default; // desired line-height divided by $font-size-lg
 

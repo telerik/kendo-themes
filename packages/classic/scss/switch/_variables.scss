@@ -2,9 +2,13 @@
 $switch-size: 6em !default;
 $switch-border-radius: $switch-size !default;
 
+$switch-font-family: $font-family !default;
+$switch-font-size: $font-size-xs !default;
+$switch-line-height: $line-height !default;
+
 $switch-track-size: null !default;
-$switch-container-border-width: 0 !default;
-$switch-container-padding-x: 0 !default;
+$switch-container-border-width: 0px !default;
+$switch-container-padding-x: 0px !default;
 $switch-container-padding-y: $switch-container-padding-x !default;
 
 $switch-handle-size: (.5 * $switch-size) !default;
