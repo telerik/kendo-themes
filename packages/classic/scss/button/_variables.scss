@@ -21,8 +21,8 @@ $button-padding-x-sm: $button-padding-x / 2 !default;
 $button-padding-y-sm: $button-padding-y / 2 !default;
 $button-line-height-sm: $line-height-sm !default;
 
+$button-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} + #{$button-border-width * 2} ) !default;
 $button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} ) !default;
-$button-calc-size: calc( #{$button-inner-calc-size} + 2px ) !default;
 
 /// The text color of the buttons.
 /// @group button

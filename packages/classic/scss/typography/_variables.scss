@@ -66,17 +66,17 @@ $link-hover-text: $primary-darker !default;
 $typography-config: () !default;
 // sass-lint:disable indentation
 $typography-config: map-merge((
-    display-1: font-map($display1-font-size, 1.2, $font-weight-light, inherit),
-    display-2: font-map($display2-font-size, 1.2, $font-weight-light, inherit),
-    display-3: font-map($display3-font-size, 1.2, $font-weight-light, inherit),
-    display-4: font-map($display4-font-size, 1.2, $font-weight-light, inherit),
-    h1: font-map($h1-font-size, normal, $font-weight-light, inherit),
-    h2: font-map($h2-font-size, normal, $font-weight-normal, inherit),
-    h3: font-map($h3-font-size, normal, $font-weight-bold, inherit),
-    h4: font-map($h4-font-size, normal, $font-weight-bold, inherit),
-    h5: font-map($h5-font-size, normal, $font-weight-normal, inherit),
-    h6: font-map($h6-font-size, normal, $font-weight-normal, inherit),
-    body: font-map($font-size, $line-height, $font-weight-normal, inherit)
+    display-1: font-map( inherit, $display1-font-size, 1.2, $font-weight-light ),
+    display-2: font-map( inherit, $display2-font-size, 1.2, $font-weight-light ),
+    display-3: font-map( inherit, $display3-font-size, 1.2, $font-weight-light ),
+    display-4: font-map( inherit, $display4-font-size, 1.2, $font-weight-light ),
+    h1: font-map( inherit, $h1-font-size, normal, $font-weight-light ),
+    h2: font-map( inherit, $h2-font-size, normal, $font-weight-normal ),
+    h3: font-map( inherit, $h3-font-size, normal, $font-weight-bold ),
+    h4: font-map( inherit, $h4-font-size, normal, $font-weight-bold ),
+    h5: font-map( inherit, $h5-font-size, normal, $font-weight-normal ),
+    h6: font-map( inherit, $h6-font-size, normal, $font-weight-normal ),
+    body: font-map( inherit, $font-size, $line-height, $font-weight-normal )
 ), $typography-config);
 $typography-config: map-merge((
     card-title: map-get($typography-config, h2),

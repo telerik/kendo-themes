@@ -1,3 +1,13 @@
+@import "../_variables.scss";
+@import "../mixins/_index.scss";
+
+
+// Dependencies
+@import "../icons/_index.scss";
+@import "../button/_index.scss";
+@import "../input/_index.scss";
+
+
 // Component
 @import "_variables.scss";
 @import "~@progress/kendo-theme-default/scss/searchbox/_layout.scss";
