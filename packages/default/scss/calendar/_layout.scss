@@ -77,7 +77,7 @@
 
         // Header
         .k-header {
-            padding: $calendar-header-padding-y-sm $calendar-header-padding-x-sm;
+            padding: $calendar-header-padding-y $calendar-header-padding-x;
             border-bottom-width: $calendar-header-border-width;
             border-bottom-style: solid;
             text-align: center;
@@ -88,7 +88,7 @@
 
             .k-link {
                 @include border-radius( $border-radius );
-                padding: $calendar-header-padding-y-sm;
+                padding: $calendar-header-padding-y;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -104,7 +104,7 @@
         }
 
         .k-nav-fast {
-            margin: 0 $calendar-header-padding-x-sm;
+            margin: 0 $calendar-header-padding-x;
             flex: 1 1 auto;
         }
 
@@ -128,13 +128,9 @@
 
             .k-calendar-nav {
                 display: flex;
-                flex-direction: row;
+                flex-flow: row nowrap;
                 align-items: center;
-                flex-wrap: nowrap;
-
-                .k-today {
-                    margin: $calendar-today-nav-margin-y $calendar-today-nav-margin-x;
-                }
+                gap: $calendar-nav-gap;
             }
 
             .k-button { @extend .k-button-flat; }
@@ -153,7 +149,7 @@
         }
         .k-nav-today,
         .k-footer > .k-state-disabled {
-            padding: $calendar-header-padding-y $calendar-header-padding-x;
+            padding: $calendar-footer-padding-y $calendar-footer-padding-x;
             display: block;
         }
         .k-nav-today:hover {
@@ -170,6 +166,8 @@
             z-index: 1;
             overflow: hidden;
             margin: auto;
+            padding: 0 $calendar-header-padding-x;
+            gap: $calendar-view-gap;
         }
         &.k-week-number .k-calendar-view {
             width: (8 * $calendar-cell-size);
@@ -177,6 +175,7 @@
         &-infinite .k-calendar-view {
             width: $calendar-view-width;
             height: $calendar-view-height;
+            gap: 0;
         }
 
 
@@ -314,7 +313,7 @@
 
             .k-calendar-view,
             .k-calendar-monthview { // <- BACKCOMPAT: ensures backwards compatibility for previous versions of kendo-angular-dateinputs
-                padding: 0 $calendar-content-padding-x;
+                padding: 0 $calendar-infinite-content-padding-x;
                 display: flex;
                 flex: 0 0 auto;
                 flex-direction: column;
@@ -336,8 +335,9 @@
             }
 
             .k-calendar-header {
-                margin-left: -$calendar-content-padding-x;
-                margin-right: -$calendar-content-padding-x;
+                margin-left: -$calendar-infinite-content-padding-x;
+                margin-right: -$calendar-infinite-content-padding-x;
+                padding: $calendar-infinite-header-padding-y $calendar-infinite-header-padding-x;
             }
 
             .k-calendar-weekdays {
@@ -500,12 +500,6 @@
         table,
         .k-calendar-table {
             width: auto;
-        }
-        table.k-content,
-        table.k-calendar-content,
-        .k-calendar-table.k-content,
-        .k-calendar-table.k-calendar-content {
-            padding: $multiviewcalendar-content-padding-y $multiviewcalendar-content-padding-x;
         }
         table.k-meta-view,
         .k-calendar-table.k-meta-view {

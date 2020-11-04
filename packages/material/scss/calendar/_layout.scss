@@ -3,13 +3,6 @@
 @include exports ("calendar/layout/material") {
 
     .k-calendar {
-        padding-left: $calendar-content-padding-x;
-        padding-right: $calendar-content-padding-x;
-
-        .k-header,
-        .k-calendar-header {
-            padding-bottom: 0;
-        }
 
         .k-title,
         .k-calendar-title,
@@ -28,10 +21,6 @@
         .k-calendar-view .k-calendar-tbody .k-calendar-th {
             font-weight: 700;
         }
-    }
-    .k-calendar-range,
-    .k-calendar-infinite {
-        padding: 0;
     }
 
 }

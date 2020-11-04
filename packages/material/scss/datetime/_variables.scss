@@ -15,7 +15,7 @@ $time-list-height: 200px !default;
 
 $dateinput-text: $component-text !default;
 
-$datetime-width: calc( #{$calendar-cell-size * 8} + #{$calendar-content-padding-x * 2} ) !default;
+$datetime-width: calc( #{$calendar-cell-size * 8} ) !default;
 
 $datetime-bg: $input-bg !default;
 $datetime-text: $input-text !default;
