@@ -1,1 +1,11 @@
+@import "../_variables.scss";
+@import "../mixins/_index.scss";
+
+
+// Dependencies
+@import "../common/_index.scss";
+
+
+// Component
 @import "~@progress/kendo-theme-default/scss/icons/_layout.scss";
+@import "~@progress/kendo-theme-default/scss/icons/_theme.scss";

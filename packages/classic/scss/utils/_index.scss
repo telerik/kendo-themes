@@ -1,9 +1,18 @@
-@import "~@progress/kendo-theme-default/scss/utils/_display.scss";
-@import "~@progress/kendo-theme-default/scss/utils/_flex.scss";
-@import "~@progress/kendo-theme-default/scss/utils/_float.scss";
-@import "~@progress/kendo-theme-default/scss/utils/_grid.scss";
-@import "~@progress/kendo-theme-default/scss/utils/_overflow.scss";
-@import "~@progress/kendo-theme-default/scss/utils/_position.scss";
-@import "~@progress/kendo-theme-default/scss/utils/_spacing.scss";
-@import "~@progress/kendo-theme-default/scss/utils/_text.scss";
-@import "~@progress/kendo-theme-default/scss/utils/_transform.scss";
+@import "../_variables.scss";
+@import "../mixins/_index.scss";
+
+
+// Dependencies
+
+
+// Component
+@import "_display.scss";
+@import "_flex.scss";
+@import "_float.scss";
+@import "_grid.scss";
+@import "_overflow.scss";
+@import "_position.scss";
+@import "_spacing.scss";
+@import "_table-layout.scss";
+@import "_text.scss";
+@import "_transform.scss";
