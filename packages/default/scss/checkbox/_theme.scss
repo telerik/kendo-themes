@@ -84,4 +84,12 @@
     .k-checkbox.ng-invalid.ng-dirty + .k-checkbox-label {
         @include fill( $color: $checkbox-invalid-text );
     }
+
+    // Ripple
+    .k-ripple-container {
+        .k-checkbox::after {
+            background: $checkbox-checked-bg;
+            opacity: $checkbox-ripple-opacity;
+        }
+    }
 }

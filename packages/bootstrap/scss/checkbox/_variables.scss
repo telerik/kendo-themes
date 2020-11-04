@@ -47,3 +47,7 @@ $checkbox-list-margin: 0px !default;
 $checkbox-list-padding: 0px !default;
 $checkbox-list-item-margin-top: 16px !default;
 $checkbox-list-horizontal-item-margin-x: 32px !default;
+
+$checkbox-ripple-size: $checkbox-size * 3 !default;
+$checkbox-ripple-margin: calc(-1 * (#{$checkbox-size} + #{$checkbox-border-width})) !default;
+$checkbox-ripple-opacity: .3 !default;

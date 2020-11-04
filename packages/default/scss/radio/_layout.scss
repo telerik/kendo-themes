@@ -166,6 +166,27 @@
             }
         }
     }
+
+    .k-ripple-container {
+        .k-radio::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: $checkbox-ripple-size;
+            height: $checkbox-ripple-size;
+            margin-left: $checkbox-ripple-margin;
+            margin-top: $checkbox-ripple-margin;
+            border-radius: 100%;
+            z-index: 1;
+            transform: scale(0);
+        }
+
+        .k-radio:disabled::after {
+            display: none;
+        }
+    }
 }
 
 
