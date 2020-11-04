@@ -35,6 +35,7 @@
     "sass:flat": "gulp sass:flat",
     "sass:watch": "gulp sass:watch",
     "sass:swatches": "gulp sass:swatches",
+    "sass:standalone": "gulp sass --file 'scss/!(common|styling)*/_index.scss'  --dry-run",
     "dart": "gulp dart",
     "dart:flat": "gulp dart:flat",
     "dart:watch": "gulp dart:watch",

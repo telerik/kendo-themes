@@ -58,6 +58,9 @@ jobs:
       - name: Check docs
         run: npm run docs:check
 
+      - name: Ensure standalone build
+        run: npm run sass:standalone
+
       - name: Build themes
         run: |
           npm run dart:flat
