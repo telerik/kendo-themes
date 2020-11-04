@@ -54,7 +54,7 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$primary</td>
-    <td></td>
+    <td>Color</td>
     <td><span class="color-preview" style="background-color: #f35800"></span>#f35800</td>
     <td><span class="color-preview" style="background-color: #f35800"></span>#f35800</td>
 </tr>
@@ -64,7 +64,7 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$primary-contrast</td>
-    <td></td>
+    <td>Color</td>
     <td>contrast-wcag( $primary )</td>
     <td>contrast-wcag( $primary )</td>
 </tr>
@@ -74,7 +74,7 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$secondary</td>
-    <td></td>
+    <td>Color</td>
     <td><span class="color-preview" style="background-color: #e9e9e9"></span>#e9e9e9</td>
     <td><span class="color-preview" style="background-color: #e9e9e9"></span>#e9e9e9</td>
 </tr>
@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$secondary-contrast</td>
-    <td></td>
+    <td>Color</td>
     <td>contrast-wcag( $secondary )</td>
     <td>contrast-wcag( $secondary )</td>
 </tr>
@@ -114,7 +114,7 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$info</td>
-    <td></td>
+    <td>Color</td>
     <td><span class="color-preview" style="background-color: #2498bc"></span>#2498bc</td>
     <td><span class="color-preview" style="background-color: #2498bc"></span>#2498bc</td>
 </tr>
@@ -124,7 +124,7 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$success</td>
-    <td></td>
+    <td>Color</td>
     <td><span class="color-preview" style="background-color: #3ea44e"></span>#3ea44e</td>
     <td><span class="color-preview" style="background-color: #3ea44e"></span>#3ea44e</td>
 </tr>
@@ -134,7 +134,7 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$warning</td>
-    <td></td>
+    <td>Color</td>
     <td><span class="color-preview" style="background-color: #ff9800"></span>#ff9800</td>
     <td><span class="color-preview" style="background-color: #ff9800"></span>#ff9800</td>
 </tr>
@@ -144,7 +144,7 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$error</td>
-    <td></td>
+    <td>Color</td>
     <td><span class="color-preview" style="background-color: #d92800"></span>#d92800</td>
     <td><span class="color-preview" style="background-color: #d92800"></span>#d92800</td>
 </tr>

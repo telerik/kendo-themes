@@ -1,13 +1,12 @@
 // Popup
-$popup-padding-x: 0 !default;
-$popup-padding-y: 0 !default;
+$popup-padding-x: 0px !default;
+$popup-padding-y: 0px !default;
 $popup-border-width: 1px !default;
 $popup-border-radius: null !default;
 
 $popup-font-size: $font-size !default;
 $popup-line-height: $line-height !default;
 
-$popup-border-width: 1px !default;
 $popup-header-padding: $list-item-padding-y $list-item-padding-x !default;
 $popup-header-font-size: null !default;
 $popup-header-text: null !default;

@@ -55,8 +55,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$border-radius</td>
     <td></td>
-    <td>4px</td>
-    <td>4px</td>
+    <td>map-get( $spacing, 1 )</td>
+    <td>map-get( $spacing, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius for all components.</div></div>

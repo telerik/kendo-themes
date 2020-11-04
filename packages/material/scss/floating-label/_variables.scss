@@ -2,7 +2,7 @@
 $floating-label-scale: 1 !default;
 $floating-label-font-size: $input-font-size !default;
 $floating-label-line-height: $input-line-height !default;
-$floating-label-height: calc( #{$floating-label-line-height} * #{$input-font-size} ) !default;
+$floating-label-height: calc( #{$floating-label-line-height} * #{$floating-label-font-size} ) !default;
 $floating-label-offset-x: null !default;
 $floating-label-offset-y: calc( #{$floating-label-height} + #{$input-border-width} + #{$input-padding-y} ) !default;
 

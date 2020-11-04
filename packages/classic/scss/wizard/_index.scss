@@ -1,3 +1,15 @@
+@import "../_variables.scss";
+@import "../mixins/_index.scss";
+
+
+// Dependencies
+@import "../common/_index.scss";
+@import "../button/_index.scss";
+@import "../stepper/_index.scss";
+@import "../forms/_index.scss";
+@import "../icons/_index.scss";
+
+
 // Component
 @import "_variables.scss";
 @import "~@progress/kendo-theme-default/scss/wizard/_layout.scss";
