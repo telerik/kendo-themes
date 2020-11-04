@@ -131,41 +131,6 @@
         flex-flow: row nowrap;
     }
 
-
-    // Fieldset
-    .k-fieldset {
-        margin: $fieldset-margin;
-        border-width: 1px 0 0;
-        border-style: solid;
-        padding: 25px 0 0;
-
-        > legend {
-            margin-left: 0;
-            padding: 0 $padding-x 0 0;
-            text-transform: uppercase;
-        }
-    }
-
-
-    // Label
-    kendo-label > .k-label {
-        margin: 0;
-    }
-
-    .k-label-optional {
-        margin-left: $label-optional-margin-x;
-        font-size: $label-optional-font-size;
-        font-style: $label-optional-font-style;
-        align-self: center;
-    }
-
-    .k-label-empty {
-        &::before {
-            content: "";
-            display: inline-block;
-        }
-    }
-
     .k-text-disabled {
         @include disabled( $disabled-styling );
     }
@@ -176,20 +141,6 @@
 
 
 @include exports("input/layout/jQuery-label") {
-
-    .k-input-label {
-        margin-right: $horizontal-form-label-margin-x;
-        z-index: 1;
-
-        &:dir(rtl),
-        .k-rtl &,
-        &.k-rtl,
-        [dir="rtl"] &,
-        &[dir="rtl"] {
-            margin-right: 0;
-            margin-left: $horizontal-form-label-margin-x;
-        }
-    }
 
 }
 
