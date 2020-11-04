@@ -13,21 +13,24 @@
     .k-splitbar {
         color: $splitbar-text;
         background-color: $splitbar-bg;
-
-        &:active,
-        &.k-state-focused {
-            color: $splitbar-selected-text;
-            background: $splitbar-selected-bg;
-        }
     }
+    .k-splitbar:hover,
+    .k-splitbar.k-state-hover,
     .k-splitbar-horizontal-hover,
     .k-splitbar-vertical-hover {
-        color: $splitbar-hovered-text;
-        background-color: $splitbar-hovered-bg;
+        color: $splitbar-hover-text;
+        background-color: $splitbar-hover-bg;
+    }
+    .k-splitbar:active,
+    .k-splitbar.k-state-focus,
+    .k-splitbar.k-state-focused {
+        color: $splitbar-selected-text;
+        background: $splitbar-selected-bg;
     }
 
+    // Ghost splitbar
     .k-ghost-splitbar {
-        background-color: $splitbar-hovered-bg;
+        background-color: $splitbar-hover-bg;
     }
 
 }
