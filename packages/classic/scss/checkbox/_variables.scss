@@ -17,12 +17,12 @@ $checkbox-square-height: ( $checkbox-size / 2 ) !default;
 
 $checkbox-label-margin-x: 8px !default;
 
-$checkbox-bg: $input-bg !default;
-$checkbox-text: $input-text !default;
-$checkbox-border: $input-border !default;
-$checkbox-hovered-bg: $checkbox-bg !default;
-$checkbox-hovered-text: $primary !default;
-$checkbox-hovered-border: $input-hovered-border !default;
+$checkbox-bg: $white !default;
+$checkbox-text: transparent !default;
+$checkbox-border: $base-border !default;
+$checkbox-hovered-bg: null !default;
+$checkbox-hovered-text: null !default;
+$checkbox-hovered-border: $hovered-border !default;
 $checkbox-checked-bg: $primary !default;
 $checkbox-checked-text: contrast-wcag( $checkbox-checked-bg ) !default;
 $checkbox-checked-border: $checkbox-checked-bg !default;
