@@ -10,7 +10,7 @@ $treeview-indent: 16px !default;
 $treeview-item-padding-x: 8px !default;
 $treeview-item-padding-y: 6px !default;
 $treeview-item-border-width: 0px !default;
-$treeview-item-border-radius: 0px !default;
+$treeview-item-border-radius: null !default;
 
 $treeview-bg: null !default;
 $treeview-text: $component-text !default;

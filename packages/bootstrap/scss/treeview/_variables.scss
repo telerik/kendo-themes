@@ -3,14 +3,14 @@ $treeview-padding-x: 2px !default;
 $treeview-padding-y: $treeview-padding-x !default;
 $treeview-font-family: $font-family !default;
 $treeview-font-size: $font-size !default;
-$treeview-line-height: $form-line-height !default;
+$treeview-line-height: $line-height !default;
 
 $treeview-indent: 16px !default;
 
-$treeview-item-padding-x: $button-padding-y !default;
+$treeview-item-padding-x: ( map-get( $spacing, 1 ) * 1.5 ) !default;
 $treeview-item-padding-y: $treeview-item-padding-x !default;
 $treeview-item-border-width: 1px !default;
-$treeview-item-border-radius: $border-radius !default;
+$treeview-item-border-radius: map-get( $spacing, 1 ) !default;
 
 $treeview-bg: null !default;
 $treeview-text: $component-text !default;
