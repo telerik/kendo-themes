@@ -32,11 +32,20 @@
     }
 
     kendo-editor {
+        .k-editor-content {
+            z-index: 1;
+        }
+
         &.k-readonly {
             @include disabled( $disabled-styling );
             > .k-content,
             .k-editor-content {
                 pointer-events: auto;
+            }
+
+            .k-editor-content.k-state-focused {
+                outline-width: 1px;
+                outline-style: dashed;
             }
         }
     }

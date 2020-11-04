@@ -9,6 +9,14 @@
         );
     }
 
+    kendo-editor {
+        &.k-readonly {
+            .k-editor-content.k-state-focused {
+                outline-color: $text-color;
+            }
+        }
+    }
+
     // Inline Editor
     .k-editor-inline {
 
