@@ -18,19 +18,6 @@
         }
 
 
-        // Expanded state
-        .k-state-border-up,
-        .k-state-border-down {
-            background: $toolbar-button-expanded-bg;
-            box-shadow: $toolbar-button-expanded-shadow;
-
-            &::before,
-            .k-button::before {
-                opacity: 0;
-            }
-        }
-
-
         // Separator
         .k-separator {
             border-color: $toolbar-separator-border;
@@ -47,13 +34,6 @@
 
         // Button group
         .k-button-group {}
-
-        .k-combobox {
-            .k-state-border-up,
-            .k-state-border-down {
-                box-shadow: $toolbar-button-expanded-shadow;
-            }
-        }
 
     }
 
