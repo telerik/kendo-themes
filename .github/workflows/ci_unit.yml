@@ -44,6 +44,9 @@ jobs:
       - name: Bootstrap
         run: npm run bootstrap
 
+      - name: Ensure standalone build
+        run: npm run sass:standalone
+
       - name: Build themes
         run: npm run sass:flat
 
