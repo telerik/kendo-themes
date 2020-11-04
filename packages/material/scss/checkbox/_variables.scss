@@ -19,10 +19,10 @@ $checkbox-label-margin-x: 8px !default;
 
 $checkbox-bg: null !default;
 $checkbox-text: transparent !default;
-$checkbox-border: rgba(0, 0, 0, .54) !default;
+$checkbox-border: rgba( 0, 0, 0, .54 ) !default;
 $checkbox-hovered-bg: null !default;
 $checkbox-hovered-text: null !default;
-$checkbox-hovered-border: $input-hovered-border !default;
+$checkbox-hovered-border: rgba( 0, 0, 0, .87 ) !default;
 $checkbox-checked-bg: $primary !default;
 $checkbox-checked-text: contrast-wcag( $checkbox-checked-bg ) !default;
 $checkbox-checked-border: $checkbox-checked-bg !default;
