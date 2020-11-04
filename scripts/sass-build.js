@@ -18,6 +18,8 @@ const defaults = {
     dest: './',
     destFile: '[name].css',
 
+    dryRun: false,
+
     // sass options
     compiler: nodeSass,
     importer: sassImporterFactory( { cache: true } ),
@@ -69,7 +71,7 @@ function parsePathData( options ) {
 function build( options ) {
 
     let opts = Object.assign( {}, defaults, options );
-    let { cwd, file, dir, dest, destFile, postcssPlugins } = opts;
+    let { cwd, file, dir, dest, destFile, dryRun, postcssPlugins } = opts;
     let files = [];
 
     delete opts.cwd;
@@ -77,6 +79,7 @@ function build( options ) {
     delete opts.dir;
     delete opts.dest;
     delete opts.destFile;
+    delete opts.dryRun;
     delete opts.postcssPlugins;
 
     if ( typeof file === 'string' ) {
@@ -106,8 +109,10 @@ function build( options ) {
             result = postcss( postcssPlugins ).process( result ).css;
         }
 
-        utils.ensureDirSync( path.dirname( fileMeta.outFile ) );
-        fs.writeFileSync( fileMeta.outFile, result );
+        if ( dryRun === false ) {
+            utils.ensureDirSync( path.dirname( fileMeta.outFile ) );
+            fs.writeFileSync( fileMeta.outFile, result );
+        }
 
     });
 }

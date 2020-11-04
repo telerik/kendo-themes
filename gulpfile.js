@@ -79,8 +79,9 @@ gulp.task("sass", function( done ) {
     let file = getArg('--file') || paths.sass.theme;
     let dest = getArg('--dest') || paths.sass.dist;
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
+    let dryRun = getArg('--dry-run') || false;
 
-    buildAll( themes, { file, dest, compiler: nodeSass, postcssPlugins } );
+    buildAll( themes, { file, dest, dryRun, compiler: nodeSass, postcssPlugins } );
 
     done();
 });
@@ -120,8 +121,9 @@ gulp.task("dart", function( done ) {
     let file = getArg('--file') || paths.sass.theme;
     let dest = getArg('--dest') || paths.sass.dist;
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
+    let dryRun = getArg('--dry-run') || false;
 
-    buildAll( themes, { file, dest, compiler: dartSass, postcssPlugins } );
+    buildAll( themes, { file, dest, dryRun, compiler: dartSass, postcssPlugins } );
 
     done();
 });
