@@ -42,7 +42,7 @@ $switch-on-focused-border: null !default;
 $switch-on-focused-gradient: null !default;
 $switch-on-focused-shadow: 0 0 1px 2px tint( $switch-on-bg, 6 ) !default;
 
-$switch-on-hovered-bg: $primary-button-hovered-bg !default;
+$switch-on-hovered-bg: try-darken( $switch-on-bg, 7.5% ) !default;
 $switch-on-hovered-text: $switch-on-text !default;
 $switch-on-hovered-border: null !default;
 $switch-on-hovered-gradient: null !default;
@@ -58,7 +58,7 @@ $switch-on-handle-hovered-text: $switch-on-text !default;
 $switch-on-handle-hovered-border: null !default;
 $switch-on-handle-hovered-gradient: null !default;
 
-$switch-off-bg: $button-bg !default;
+$switch-off-bg: $secondary !default;
 $switch-off-text: black !default;
 $switch-off-border: null !default;
 $switch-off-gradient: null !default;
@@ -70,7 +70,7 @@ $switch-off-focused-border: null !default;
 $switch-off-focused-gradient: null !default;
 $switch-off-focused-shadow: 0 0 1px 2px tint( $switch-off-bg, 6 ) !default;
 
-$switch-off-hovered-bg: $button-hovered-bg !default;
+$switch-off-hovered-bg: try-darken( $switch-off-bg, 7.5% ) !default;
 $switch-off-hovered-text: $switch-off-text !default;
 $switch-off-hovered-border: null !default;
 $switch-off-hovered-gradient: null !default;
