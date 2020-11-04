@@ -29,4 +29,21 @@
         }
     }
 
+    .k-ripple-focus::after {
+        visibility: visible;
+        animation: ripple 600ms ease-out;
+    }
+
+    @keyframes ripple {
+        0% {
+            transform: scale(0);
+        }
+        20% {
+            transform: scale(1);
+        }
+        100% {
+            opacity: 0;
+            transform: scale(1);
+        }
+    }
 }

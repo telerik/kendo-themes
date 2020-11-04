@@ -38,3 +38,7 @@ $radio-list-margin: 0px !default;
 $radio-list-padding: 0px !default;
 $radio-list-item-margin-top: 16px !default;
 $radio-list-horizontal-item-margin-x: 32px !default;
+
+$radio-ripple-size: $radio-size * 3 !default;
+$radio-ripple-margin: calc(-1 * (#{$radio-size} + 2 * #{$radio-border-width})) !default;
+$radio-ripple-opacity: .3 !default;
