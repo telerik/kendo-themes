@@ -14,11 +14,11 @@ $splitter-drag-handle-length: 20px !default;
 $splitter-drag-handle-thickness: 2px !default;
 $splitter-drag-icon-margin: 7px !default;
 
-$splitbar-bg: rgba($base-text, .12) !default;
-$splitbar-text: rgba($base-text, .54) !default;
+$splitbar-bg: try-shade( $base-bg, 1 ) !default;
+$splitbar-text: $base-text !default;
 
-$splitbar-hovered-bg: rgba($base-text, .22);
-$splitbar-hovered-text: $base-text !default;
+$splitbar-hover-bg: try-shade( $splitbar-bg, .5 ) !default;
+$splitbar-hover-text: $splitbar-text !default;
 
 $splitbar-selected-bg: $primary !default;
-$splitbar-selected-text: contrast-wcag( $splitbar-selected-bg ) !default;
+$splitbar-selected-text: $primary-contrast !default;
