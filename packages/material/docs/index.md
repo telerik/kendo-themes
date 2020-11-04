@@ -16,10 +16,6 @@ The KendoReact Material theme is part of the KendoReact library of React UI comp
 
 ## Installation
 
-{% platform_content angular %}
-> Due to recent changes in rendering, the Kendo UI Material theme package now requires a kendo-angular-inputs@^4.0.0 version. For more information, refer to [issue #2018](https://github.com/telerik/kendo-angular/issues/2018) on GitHub.
-{% endplatform_content %}
-
 1. Download and install the Kendo UI Material theme package.
 
     ```sh
@@ -49,7 +45,7 @@ You can add the font to the page from Google Fonts in the following way:
 The following additional configuration improves the look and feel of the theme in your application:
 
 * Use a [Ripple effect]({% slug overview_ripple %})&mdash;Available through the `kendoRippleContainer` directive from the `@progress/kendo-angular-ripple` NPM module. The `kendoRippleContainer` directive provides the [Material ink ripple effect](https://material.io/guidelines/motion/choreography.html#choreography-radial-reaction) for the Kendo UI components for Angular and is fully compatible with all available Kendo UI themes.
-* Use the [Floating labels]({% slug overview_textbox %}#toc-implementing-floating-labels)&mdash;Available through the `kendo-textbox-container` component from the `@progress/kendo-angular-inputs` NPM module. The [TextBox]({% slug overview_textbox %}) enables you to provide floating labels to `input` elements and Kendo UI components.
+* Use the [Floating label component]({% slug overview_floatinglabel %})&mdash;with [HTML Input elements]({% slug overview_floatinglabel %}#toc-using-with-html-input-elements) and with Kendo UI for Angular components from the [inputs]({% slug overview_floatinglabel %}#toc-using-with-kendo-ui-for-angular-inputs), [dateinputs]({% slug overview_floatinglabel %}#toc-using-with-kendo-ui-for-angular-date-inputs) or [dropdowns]({% slug overview_floatinglabel %}#toc-using-with-kendo-ui-for-angular-dropdowns) packages.
 {% endplatform_content %}
 
 {% platform_content react %}
@@ -63,7 +59,7 @@ The following additional configuration improves the look and feel of the theme i
 
 ## Preview
 
-To apply the Material theme to any of the examples on this website, use the theme chooser drop-down at the top-right corner of the page. The Material theme styling is loaded by default.
+To apply the Material theme to any of the examples on this website, use the theme chooser drop-down at the top-right corner of the example. The {% platform_content angular %}Default{% endplatform_content %}{% platform_content react %}Material{% endplatform_content %}{% platform_content vue %}Material{% endplatform_content %} theme styling is loaded by default.
 
 To simultaneously preview multiple components from different packages, to build your own theme, or to customize any of the available Kendo UI ones, use the capabilities of the [Kendo UI Theme Builder](https://themebuilder.telerik.com/) web application.
 
