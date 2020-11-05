@@ -1,4 +1,4 @@
-name: Release stable chanel
+name: Release stable channel
 
 defaults:
   run:
@@ -13,83 +13,7 @@ on: [workflow_dispatch]
 
 jobs:
 
-  catchup:
-    name: Merge develop to master
-
-    runs-on: ubuntu-latest
-
-    steps:
-
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: master
-          token: ${{ secrets.GH_TOKEN }}
-
-      - name: Merge develop to master
-        run: |
-          git fetch --quiet
-          git reset --hard origin/master
-          git merge --ff-only --quiet origin/develop
-          git push origin master
-
-          commit=$(git rev-parse HEAD)
-          ./build/mark-checks.sh $commit
-
-  ci-master:
-    name: CI
-    needs: catchup
-
-    runs-on: ubuntu-latest
-
-    steps:
-
-      - name: Checkout branch
-        uses: actions/checkout@v2
-        with:
-          ref: master
-
-      - name: Setup node
-        uses: actions/setup-node@v1
-        with:
-          node-version: 14.x
-
-      - name: Setup node cache
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - name: Install
-        run: npm ci
-
-      - name: Bootstrap
-        run: npm run bootstrap
-
-      - name: Lint scripts
-        run: npm run eslint
-
-      - name: Lint styles
-        run: npm run sasslint
-
-      - name: Check docs
-        run: npm run docs:check
-
-      - name: Ensure standalone build
-        run: npm run sass:standalone
-
-      - name: Build themes
-        run: |
-          npm run dart:flat
-          npm run dart:swatches
-          npm run sass:flat
-          npm run sass:swatches
-
-  release:
-    name: Release
-    needs: ci-master
+  release-stable:
 
     runs-on: ubuntu-latest
 
@@ -105,6 +29,12 @@ jobs:
         run: |
           git config user.name "kendo-bot"
           git config user.email "kendouiteam@progress.com"
+
+      - name: Merge develop to master
+        run: |
+          git fetch --quiet
+          git reset --hard origin/master
+          git merge --ff-only --quiet origin/develop
 
       - name: Setup node
         uses: actions/setup-node@v1
