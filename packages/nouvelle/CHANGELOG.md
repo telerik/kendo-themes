@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.4"></a>
+## [0.2.4](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-nouvelle@0.2.3...@progress/kendo-theme-nouvelle@0.2.4) (2020-11-05)
+
+
+
+
+**Note:** Version bump only for package @progress/kendo-theme-nouvelle
+
 <a name="0.2.3"></a>
 ## 0.2.3 (2020-11-02)
 

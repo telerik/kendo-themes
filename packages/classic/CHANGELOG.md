@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.2"></a>
+## [0.3.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.3.1...@progress/kendo-theme-classic@0.3.2) (2020-11-05)
+
+
+### Bug Fixes
+
+* **adaptive:** require toolbar styles explictly ([326945d](https://github.com/telerik/kendo-themes/commit/326945d))
+* **chat:** require toolbar styles explictly ([0a96c6e](https://github.com/telerik/kendo-themes/commit/0a96c6e))
+* **checkbox:** do not base checkbox variables on input variables ([d172930](https://github.com/telerik/kendo-themes/commit/d172930))
+* **colorpicker:** require utils/flex styles explictly ([3d00ce4](https://github.com/telerik/kendo-themes/commit/3d00ce4))
+* **dataviz:** remove stray files ([c455364](https://github.com/telerik/kendo-themes/commit/c455364))
+* **dropdowngrid:** require toolbar variables explicitly ([5bb3eff](https://github.com/telerik/kendo-themes/commit/5bb3eff))
+* **editor:** require toolbar styles before upload styles ([676ca40](https://github.com/telerik/kendo-themes/commit/676ca40))
+* **file-manager:** require toolbar styles before upload styles ([71b328e](https://github.com/telerik/kendo-themes/commit/71b328e))
+* **floating-label:** font-size and height based on input-font-size ([0c61a43](https://github.com/telerik/kendo-themes/commit/0c61a43))
+* **floating-label:** require input variables explicitly ([8231f94](https://github.com/telerik/kendo-themes/commit/8231f94))
+* **forms:** require common styles explicitly ([e9a5314](https://github.com/telerik/kendo-themes/commit/e9a5314))
+* **input:** require button variables explictly ([069aeed](https://github.com/telerik/kendo-themes/commit/069aeed))
+* **menu:** require popup styles explicitly ([c6b110a](https://github.com/telerik/kendo-themes/commit/c6b110a))
+* **pager:** require toolbar variables explicitly ([61253bb](https://github.com/telerik/kendo-themes/commit/61253bb))
+* **popoup:** require button styles explicitly ([dbea54c](https://github.com/telerik/kendo-themes/commit/dbea54c))
+* **popup:** require input styles explicitly ([514d0c7](https://github.com/telerik/kendo-themes/commit/514d0c7))
+* **splitter:** do not base splitbar variables on button variables ([aac856b](https://github.com/telerik/kendo-themes/commit/aac856b))
+* **spreadsheet:** require toolbar styles before upload styles ([15833ff](https://github.com/telerik/kendo-themes/commit/15833ff))
+* **textbox:** base variables on input variables ([6522a00](https://github.com/telerik/kendo-themes/commit/6522a00))
+* **treeview:** do not base treeview variables on button variables ([3005f6d](https://github.com/telerik/kendo-themes/commit/3005f6d))
+* **upload:** require toolbar variables explicitly ([99b4319](https://github.com/telerik/kendo-themes/commit/99b4319))
+* **utils:** require typography variables explicitly ([9ff3176](https://github.com/telerik/kendo-themes/commit/9ff3176))
+* add explicit immports to ensure per component compilation ([05090af](https://github.com/telerik/kendo-themes/commit/05090af))
+
+
+
+
 <a name="0.3.1"></a>
 ## 0.3.1 (2020-11-02)
 
