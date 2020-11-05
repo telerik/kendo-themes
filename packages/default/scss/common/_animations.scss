@@ -663,69 +663,6 @@
         }
     }
 
-    // Tile
-    .k-fx-tile {
-        // left
-        &.k-fx-start .k-fx-next {
-            will-change: transform;
-            transform: translateX(100%);
-        }
-
-        &.k-fx-end .k-fx-current {
-            transform: translateX(-100%);
-        }
-
-        // left reverse
-        &.k-fx-reverse {
-            &.k-fx-start .k-fx-current {
-                will-change: transform;
-                transform: translateX(0);
-            }
-
-            &.k-fx-end .k-fx-current {
-                transform: translateX(100%);
-            }
-
-            &.k-fx-start .k-fx-next {
-                transform: translateX(-100%);
-            }
-
-            &.k-fx-end .k-fx-next {
-                transform: translateX(0);
-            }
-        }
-
-        // right
-        &.k-fx-right {
-            &.k-fx-start .k-fx-next {
-                transform: translateX(-100%);
-            }
-
-            &.k-fx-end .k-fx-current {
-                transform: translateX(100%);
-            }
-
-            // right reverse
-            &.k-fx-reverse {
-                &.k-fx-start .k-fx-current {
-                    transform: translateX(0);
-                }
-
-                &.k-fx-end .k-fx-current {
-                    transform: translateX(-100%);
-                }
-
-                &.k-fx-start .k-fx-next {
-                    transform: translateX(100%);
-                }
-
-                &.k-fx-end .k-fx-next {
-                    transform: translateX(0%);
-                }
-            }
-        }
-    }
-
     // Overlay
     .k-fx.k-fx-overlay {
         &.k-fx-start .k-fx-next,

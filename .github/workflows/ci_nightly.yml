@@ -11,6 +11,7 @@ on:
   schedule:
     # Run at midnight every working day
     - cron: '0 0 * * Mon-Fri'
+  workflow_dispatch:
 
 jobs:
 
