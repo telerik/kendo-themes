@@ -16,10 +16,6 @@ The KendoReact Bootstrap theme is part of the KendoReact library of React UI com
 
 ## Installation
 
-{% platform_content angular %}
-> Due to recent changes in rendering, the Kendo UI Bootstrap theme package now requires a kendo-angular-inputs@^4.0.0 version. For more information, refer to [issue #2018](https://github.com/telerik/kendo-angular/issues/2018) on GitHub.
-{% endplatform_content %}
-
 1. Download and install the Kendo UI Bootstrap theme package.
 
     ```sh
@@ -38,7 +34,7 @@ If you include the Bootstrap framework from its source, you have to add `kendo-t
 
 ## Preview
 
-To apply the Bootstrap theme to any of the examples on this website, use the theme chooser drop-down at the top-right corner of the page. The Material theme styling is loaded by default.
+To apply the Bootstrap theme to any of the examples on this website, use the theme chooser drop-down at the top-right corner of the example. The {% platform_content angular %}Default{% endplatform_content %}{% platform_content react %}Material{% endplatform_content %}{% platform_content vue %}Material{% endplatform_content %} theme styling is loaded by default.
 
 To simultaneously preview multiple components from different packages, to build your own theme, or to customize any of the available Kendo UI ones, use the capabilities of the [Kendo UI Theme Builder](https://themebuilder.telerik.com/) web application.
 
