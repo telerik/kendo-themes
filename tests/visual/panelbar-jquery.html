@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Panelbar -- jquery</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            align-items: start;
+        }
+        .k-sprite {
+            background-color: gray;
+        }
+        .k-image {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
+
+        <span class="k-colspan-all">LTR</span>
+
+        <section>
+            <ul class="k-panelbar">
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-icon k-icon k-i-cog"></span>
+                        <span class="k-panelbar-item-text">Root</span>
+                        <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link k-state-hover">
+                        <span class="k-panelbar-item-icon k-image"></span>
+                        <span class="k-panelbar-item-text">Root hover</span>
+                        <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link k-state-focus">
+                        <span class="k-panelbar-item-icon k-sprite"></span>
+                        <span class="k-panelbar-item-text">Root focus</span>
+                        <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link k-state-selected">
+                        <span class="k-panelbar-item-text">Root selected</span>
+                        <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link k-state-disabled">
+                        <span class="k-panelbar-item-text">Root disabled</span>
+                        <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">Root last</span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <ul class="k-panelbar">
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">First</span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item k-state-expanded">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">Middle expanded</span>
+                        <span class="k-panelbar-toggle k-panelbar-collapse k-icon k-i-arrow-n"></span>
+                    </span>
+                    <ul class="k-panelbar-group k-panel k-group">
+                        <li class="k-panelbar-item k-item">
+                            <span class="k-link">
+                                <span class="k-panelbar-item-text">Child</span>
+                            </span>
+                        </li>
+                        <li class="k-panelbar-item k-item">
+                            <span class="k-link k-state-hover">
+                                <span class="k-panelbar-item-text">Child hover</span>
+                                <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                            </span>
+                        </li>
+                        <li class="k-panelbar-item k-item">
+                            <span class="k-link k-state-focus">
+                                <span class="k-panelbar-item-text">Child focus</span>
+                                <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                            </span>
+                        </li>
+                        <li class="k-panelbar-item k-item">
+                            <span class="k-link k-state-selected">
+                                <span class="k-panelbar-item-text">Child selected</span>
+                                <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                            </span>
+                        </li>
+                        <li class="k-panelbar-item k-item k-state-expanded">
+                            <span class="k-link">
+                                <span class="k-panelbar-item-text">Child expanded</span>
+                                <span class="k-panelbar-toggle k-panelbar-collapse k-icon k-i-arrow-n"></span>
+                            </span>
+                        </li>
+                        <li class="k-panelbar-item k-item">
+                            <span class="k-link k-state-disabled">
+                                <span class="k-panelbar-item-text">Child disabled</span>
+                                <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                            </span>
+                        </li>
+                        <li class="k-panelbar-item k-item">
+                            <span class="k-link">
+                                <span class="k-panelbar-item-text">Child last</span>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">Last</span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <ul class="k-panelbar">
+                <li class="k-panelbar-header k-item k-state-expanded">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">First expanded</span>
+                        <span class="k-panelbar-toggle k-panelbar-collapse k-icon k-i-arrow-n"></span>
+                    </span>
+                    <div class="k-panelbar-content k-content">
+                        <h4>Title in template</h4>
+                        <p>Multi line paragraph in template. Some more content to break onto multiple lines</p>
+                    </div>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">Middle</span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">Last</span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <ul class="k-panelbar">
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">First</span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">Middle</span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item k-state-expanded">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">Last expanded</span>
+                        <span class="k-panelbar-toggle k-panelbar-collapse k-icon k-i-arrow-n"></span>
+                    </span>
+                    <div class="k-panelbar-content k-content">
+                        <h4>Title in template</h4>
+                        <p>Multi line paragraph in template. Some more content to break onto multiple lines</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <span class="k-colspan-all">RTL</span>
+
+        <section class="k-rtl">
+            <ul class="k-panelbar">
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-icon k-icon k-i-cog"></span>
+                        <span class="k-panelbar-item-text">Root</span>
+                        <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link k-state-hover">
+                        <span class="k-panelbar-item-icon k-image"></span>
+                        <span class="k-panelbar-item-text">Root hover</span>
+                        <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link k-state-focus">
+                        <span class="k-panelbar-item-icon k-sprite"></span>
+                        <span class="k-panelbar-item-text">Root focus</span>
+                        <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link k-state-selected">
+                        <span class="k-panelbar-item-text">Root selected</span>
+                        <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link k-state-disabled">
+                        <span class="k-panelbar-item-text">Root disabled</span>
+                        <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">Root last</span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="k-rtl">
+            <ul class="k-panelbar">
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">First</span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item k-state-expanded">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">Middle expanded</span>
+                        <span class="k-panelbar-toggle k-panelbar-collapse k-icon k-i-arrow-n"></span>
+                    </span>
+                    <ul class="k-panelbar-group k-panel k-group">
+                        <li class="k-panelbar-item k-item">
+                            <span class="k-link">
+                                <span class="k-panelbar-item-text">Child</span>
+                            </span>
+                        </li>
+                        <li class="k-panelbar-item k-item">
+                            <span class="k-link k-state-hover">
+                                <span class="k-panelbar-item-text">Child hover</span>
+                                <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                            </span>
+                        </li>
+                        <li class="k-panelbar-item k-item">
+                            <span class="k-link k-state-focus">
+                                <span class="k-panelbar-item-text">Child focus</span>
+                                <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                            </span>
+                        </li>
+                        <li class="k-panelbar-item k-item">
+                            <span class="k-link k-state-selected">
+                                <span class="k-panelbar-item-text">Child selected</span>
+                                <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                            </span>
+                        </li>
+                        <li class="k-panelbar-item k-item k-state-expanded">
+                            <span class="k-link">
+                                <span class="k-panelbar-item-text">Child expanded</span>
+                                <span class="k-panelbar-toggle k-panelbar-collapse k-icon k-i-arrow-n"></span>
+                            </span>
+                        </li>
+                        <li class="k-panelbar-item k-item">
+                            <span class="k-link k-state-disabled">
+                                <span class="k-panelbar-item-text">Child disabled</span>
+                                <span class="k-panelbar-toggle k-panelbar-expand k-icon k-i-arrow-s"></span>
+                            </span>
+                        </li>
+                        <li class="k-panelbar-item k-item">
+                            <span class="k-link">
+                                <span class="k-panelbar-item-text">Child last</span>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">Last</span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="k-rtl">
+            <ul class="k-panelbar">
+                <li class="k-panelbar-header k-item k-state-expanded">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">First expanded</span>
+                        <span class="k-panelbar-toggle k-panelbar-collapse k-icon k-i-arrow-n"></span>
+                    </span>
+                    <div class="k-panelbar-content k-content">
+                        <h4>Title in template</h4>
+                        <p>Multi line paragraph in template. Some more content to break onto multiple lines</p>
+                    </div>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">Middle</span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">Last</span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="k-rtl">
+            <ul class="k-panelbar">
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">First</span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">Middle</span>
+                    </span>
+                </li>
+                <li class="k-panelbar-header k-item k-state-expanded">
+                    <span class="k-link">
+                        <span class="k-panelbar-item-text">Last expanded</span>
+                        <span class="k-panelbar-toggle k-panelbar-collapse k-icon k-i-arrow-n"></span>
+                    </span>
+                    <div class="k-panelbar-content k-content">
+                        <h4>Title in template</h4>
+                        <p>Multi line paragraph in template. Some more content to break onto multiple lines</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
