@@ -27,6 +27,8 @@
 
         > .k-item > .k-link:hover,
         > .k-item > .k-link.k-state-hover,
+        > .k-item > .k-link:focus,
+        > .k-item > .k-link.k-state-focus,
         > .k-item > .k-link.k-state-focused {
             @include fill(
                 $panelbar-header-hovered-text,
@@ -51,6 +53,8 @@
 
             > .k-item > .k-link:hover,
             > .k-item > .k-link.k-state-hover,
+            > .k-item > .k-link:focus,
+            > .k-item > .k-link.k-state-focus,
             > .k-item > .k-link.k-state-focused {
                 @include fill(
                     $panelbar-item-hovered-text,

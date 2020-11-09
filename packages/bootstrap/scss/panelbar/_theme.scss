@@ -42,6 +42,8 @@
             );
         }
 
+        > .k-item > .k-link:focus,
+        > .k-item > .k-link.k-state-focus,
         > .k-item > .k-link.k-state-focused {
             box-shadow: inset 0 0 0 3px try-darken( $panelbar-header-bg, 7 );
 
@@ -78,6 +80,8 @@
                 );
             }
 
+            > .k-item > .k-link:focus,
+            > .k-item > .k-link.k-state-focus,
             > .k-item > .k-link.k-state-focused {
                 box-shadow: inset 0 0 0 3px try-darken( $panelbar-bg, 7 );
 
