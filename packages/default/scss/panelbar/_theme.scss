@@ -60,6 +60,8 @@
                 }
             }
 
+            > .k-link:focus,
+            > .k-link.k-state-focus,
             > .k-link.k-state-focused {
                 box-shadow: $panelbar-header-focused-shadow;
             }
@@ -93,6 +95,8 @@
                 }
             }
 
+            > .k-item > .k-link:focus,
+            > .k-item > .k-link.k-state-focus,
             > .k-item > .k-link.k-state-focused {
                 box-shadow: $panelbar-item-focused-shadow;
             }
