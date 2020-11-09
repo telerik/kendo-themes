@@ -17,33 +17,13 @@
     .k-notification-group .k-notification {
         box-shadow: $notification-shadow;
     }
-    .k-notification-info {
-        @include fill(
-            $notification-info-text,
-            $notification-info-bg,
-            $notification-info-border
-        );
-    }
-    .k-notification-success {
-        @include fill(
-            $notification-success-text,
-            $notification-success-bg,
-            $notification-success-border
-        );
-    }
-    .k-notification-warning {
-        @include fill(
-            $notification-warning-text,
-            $notification-warning-bg,
-            $notification-warning-border
-        );
-    }
-    .k-notification-error {
-        @include fill(
-            $notification-error-text,
-            $notification-error-bg,
-            $notification-error-border
-        );
+
+    @each $theme, $props in $notification-themes {
+        .k-notification-#{$theme} {
+            border-color: map-get( $props, border );
+            color: map-get( $props, color );
+            background-color: map-get( $props, bg );
+        }
     }
 
 }

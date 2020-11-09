@@ -16,15 +16,29 @@ $notification-icon-spacing: $icon-spacing !default;
 $notification-bg: $component-bg !default;
 $notification-text: $component-text !default;
 $notification-border: $component-border !default;
-$notification-info-bg: $info !default;
-$notification-info-text: contrast-wcag( $notification-info-bg ) !default;
-$notification-info-border: $notification-info-bg !default;
-$notification-success-bg: $success !default;
-$notification-success-text: contrast-wcag( $notification-success-bg ) !default;
-$notification-success-border: $notification-success-bg !default;
-$notification-warning-bg: $warning !default;
-$notification-warning-text: contrast-wcag( $notification-warning-bg ) !default;
-$notification-warning-border: $notification-warning-bg !default;
-$notification-error-bg: $error !default;
-$notification-error-text: contrast-wcag( $notification-error-bg ) !default;
-$notification-error-border: $notification-error-bg !default;
+
+$notification-theme-colors: $theme-colors !default;
+// $notification-themes: () !default;
+
+@function notification-theme($name: null, $color: null) {
+    // sass-lint:disable indentation
+    @return (
+        border: $color,
+        color: contrast-wcag( $color ),
+        bg: $color
+    );
+    // sass-lint:enable indentation
+}
+
+$notification-themes: (
+    primary: notification-theme( primary, map-get( $notification-theme-colors, primary ) ),
+    secondary: notification-theme( secondary, map-get( $notification-theme-colors, secondary ) ),
+    tertiary: notification-theme( tertiary, map-get( $notification-theme-colors, tertiary ) ),
+    info: notification-theme( info, map-get( $notification-theme-colors, info ) ),
+    success: notification-theme( success, map-get( $notification-theme-colors, success ) ),
+    warning: notification-theme( warning, map-get( $notification-theme-colors, warning ) ),
+    error: notification-theme( error, map-get( $notification-theme-colors, error ) ),
+    dark: notification-theme( dark, map-get( $notification-theme-colors, dark ) ),
+    light: notification-theme( light, map-get( $notification-theme-colors, light ) ),
+    inverse: notification-theme( inverse, map-get( $notification-theme-colors, inverse ) )
+);
