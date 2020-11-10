@@ -16,6 +16,7 @@
     // Hover state
     @each $name, $color in $fab-theme-colors {
         .k-state-hover.k-fab-#{$name},
+        .k-state-hovered.k-fab-#{$name},
         .k-fab-#{$name}:hover {
             border-color: try-darken( $color, 10% );
             color: contrast-wcag( try-darken( $color, 7.5% ) );
@@ -25,6 +26,7 @@
 
     // Focus state
     .k-fab.k-state-focus,
+    .k-fab.k-state-focused,
     .k-fab:focus {
         @include box-shadow($fab-focus-shadow);
     }
@@ -60,6 +62,7 @@
 
     // Hover state
     .k-fab-item.k-state-hover .k-fab-item-icon,
+    .k-fab-item.k-state-hovered .k-fab-item-icon,
     .k-fab-item:hover .k-fab-item-icon {
         border-color: try-darken( $fab-item-icon-border, 10% );
         color: contrast-wcag( try-darken( $fab-item-icon-bg, 7.5% ) );
@@ -70,7 +73,9 @@
     .k-fab-item:focus .k-fab-item-text,
     .k-fab-item:focus .k-fab-item-icon,
     .k-fab-item.k-state-focus .k-fab-item-text,
-    .k-fab-item.k-state-focus .k-fab-item-icon {
+    .k-fab-item.k-state-focus .k-fab-item-icon,
+    .k-fab-item.k-state-focused .k-fab-item-text,
+    .k-fab-item.k-state-focused .k-fab-item-icon {
         @include box-shadow($fab-item-focus-shadow);
     }
 
