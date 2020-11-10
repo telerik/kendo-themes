@@ -122,10 +122,6 @@
         outline: none;
     }
 
-    // Popup
-    .k-fab-popup {
-        position: absolute;
-    }
 }
 
 @include exports("fab/layout/rtl") {
