@@ -309,6 +309,12 @@
         .k-edit-buttons {}
     }
 
+    //View HTML dialog using flex to fit child textarea
+    .k-editor-dialog.k-viewhtml-dialog {
+        display: flex;
+        flex-direction: column;
+    }
+
     // Text area in editor dialog
     .k-textarea.k-editor-textarea {
         width: 100%;
