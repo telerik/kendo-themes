@@ -33,17 +33,14 @@
                 background: none;
                 text-decoration: none;
                 display: flex;
-                flex-direction: row;
+                flex-flow: row nowrap;
+                gap: $icon-spacing;
                 align-items: center;
                 align-content: center;
                 position: relative;
                 user-select: none;
                 cursor: default;
                 transition: $transition;
-
-                .k-ie & {
-                    display: block; // TODO: Remove once we drop IE support
-                }
             }
         }
         > .k-item + .k-item {
@@ -69,7 +66,8 @@
                 color: inherit;
                 text-decoration: none;
                 display: flex;
-                flex-direction: row;
+                flex-flow: row nowrap;
+                gap: $icon-spacing;
                 align-items: center;
                 align-content: center;
                 position: relative;
@@ -80,34 +78,75 @@
         }
 
 
+        // Panelbar content
+        .k-content {
+            display: flow-root;
+        }
+
+
+        // Toggle icon
+        .k-panelbar-expand,
+        .k-panelbar-collapse {
+            margin-inline-start: auto;
+        }
+        .k-group .k-panelbar-expand,
+        .k-group .k-panelbar-collapse {
+            margin-inline-end: calc( #{$panelbar-header-padding-x} - #{$panelbar-item-padding-x} );
+        }
+
+    }
+
+}
+
+
+
+
+@include exports( "panelbar/layout/legacy" ) {
+
+    .k-no-flexbox .k-panelbar {
+
+        // Item
+        > .k-item > .k-link,
+        .k-group > .k-link {
+            display: block;
+        }
+
+        // Icons
+        .k-link > .k-image,
+        .k-link > .k-sprite,
+        .k-link > .k-icon {
+            margin-right: $icon-spacing;
+        }
+
         // Expand collapse
         .k-panelbar-expand,
         .k-panelbar-collapse {
-            margin-top: -.5em;
+            margin: 0 !important; // sass-lint:disable-line no-important
+            transform: translateY( -50% );
             position: absolute;
             top: 50%;
             right: $panelbar-header-padding-x;
         }
 
+    }
+
+
+    .k-no-flexbox .k-panelbar[dir="rtl"],
+    .k-no-flexbox .k-rtl .k-panelbar {
+
         .k-link > .k-image,
-        .k-link > .k-sprite {
-            margin-right: $icon-spacing;
+        .k-link > .k-sprite,
+        .k-link > .k-icon {
+            margin-left: $icon-spacing;
+            margin-right: 0;
         }
 
-        &[dir="rtl"],
-        .k-rtl & {
-            .k-panelbar-expand,
-            .k-panelbar-collapse {
-                right: auto;
-                left: $panelbar-header-padding-x;
-            }
-
-            .k-link > .k-image,
-            .k-link > .k-sprite {
-                margin-left: $icon-spacing;
-                margin-right: 0;
-            }
+        .k-panelbar-expand,
+        .k-panelbar-collapse {
+            right: auto;
+            left: $panelbar-header-padding-x;
         }
+
     }
 
 }
