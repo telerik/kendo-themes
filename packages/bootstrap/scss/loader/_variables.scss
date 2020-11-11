@@ -23,3 +23,24 @@ $loader-spinner-4-width-lg: $loader-segment-size-lg * 4 !default;
 $loader-spinner-4-height-lg: $loader-spinner-4-width-lg !default;
 
 $loader-secondary-bg: #212529 !default;
+
+$loader-container-panel-border-width: 1px !default;
+$loader-container-panel-border-style: solid !default;
+$loader-container-panel-border-color: $border-color !default;
+$loader-container-panel-border-radius: $border-radius !default;
+$loader-container-panel-bg: $white !default;
+
+$loader-container-padding-sm: map-get( $spacing, 4 ) !default;
+$loader-container-gap-sm: map-get( $spacing, 1 ) !default;
+$loader-container-font-size-sm: $font-size-sm !default;
+
+$loader-container-padding-md: map-get( $spacing, 5 ) !default;
+$loader-container-gap-md: map-get( $spacing, 2 ) !default;
+$loader-container-font-size-md: $font-size-md !default;
+
+$loader-container-padding-lg: map-get( $spacing, 6 ) !default;
+$loader-container-gap-lg: map-get( $spacing, 3 ) !default;
+$loader-container-font-size-lg: $font-size-lg !default;
+
+$loader-container-overlay-light-bg: rgba(255, 255, 255, .3) !default;
+$loader-container-overlay-dark-bg: rgba(0, 0, 0, .3) !default;
