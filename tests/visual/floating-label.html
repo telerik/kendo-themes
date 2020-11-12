@@ -12,6 +12,11 @@
             align-items: start;
             justify-items: start;
         }
+
+        .test-font-size .k-floating-label-container {
+            font-size: 50px;
+            max-width: calc( 14px * 12.4 );
+        }
     </style>
 </head>
 <body>
@@ -178,6 +183,37 @@
                 <label class="k-label">NG Invalid</label>
             </span>
         </div>
+
+
+        <!-- Parent font-size: 50px -->
+        <div class="test-font-size">
+            <span class="k-floating-label-container k-state-empty">
+                <input class="k-textbox" />
+                <label class="k-label">Parent font-size: 50px</label>
+            </span>
+        </div>
+        <div class="test-font-size">
+            <span class="k-floating-label-container k-textarea-container k-state-empty">
+                <textarea class="k-textarea"></textarea>
+                <label class="k-label">Parent font-size: 50px</label>
+            </span>
+        </div>
+        <div class="test-font-size k-rtl">
+            <span class="k-floating-label-container k-state-empty">
+                <input class="k-textbox" />
+                <label class="k-label">Parent font-size: 50px</label>
+            </span>
+        </div>
+        <div class="test-font-size k-rtl">
+            <span class="k-floating-label-container k-textarea-container k-state-empty">
+                <textarea class="k-textarea"></textarea>
+                <label class="k-label">Parent font-size: 50px</label>
+            </span>
+        </div>
+
+
+
+
     </div>
 
 </body>
