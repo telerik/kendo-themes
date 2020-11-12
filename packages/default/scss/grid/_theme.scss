@@ -344,6 +344,14 @@
         }
     }
 
+    .k-column-menu-group-header-text {
+        @include fill(
+            $grid-column-menu-group-header-text,
+            $grid-column-menu-group-header-bg,
+            $grid-column-menu-group-header-border
+        );
+    }
+
     .k-grid-norecords-template {
         background-color: $grid-bg;
         border-color: $grid-border;
