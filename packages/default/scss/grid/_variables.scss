@@ -136,3 +136,15 @@ $grid-sticky-selected-alt-bg: shade($grid-sticky-selected-bg, .4) !default;
 
 $grid-sticky-hovered-bg: darken($grid-bg, 8%) !default;
 $grid-sticky-selected-hovered-bg: shade($grid-sticky-selected-bg, .7) !default;
+
+$grid-column-menu-group-header-padding-x: $menu-popup-item-padding-x !default;
+$grid-column-menu-group-header-padding-y: $menu-popup-item-padding-y !default;
+
+$grid-column-menu-group-header-font-size: $font-size-sm !default;
+$grid-column-menu-group-header-line-height: $line-height !default;
+$grid-column-menu-group-header-text-transform: uppercase !default;
+$grid-column-menu-group-header-border-bottom-width: 1px !default;
+
+$grid-column-menu-group-header-bg: null !default;
+$grid-column-menu-group-header-text: darken($base-text, 13%) !default;
+$grid-column-menu-group-header-border: $grid-column-menu-group-header-text !default;
