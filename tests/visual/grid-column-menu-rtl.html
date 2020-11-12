@@ -9,12 +9,16 @@
 
     <style>
         #test-area {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
 
         .k-animation-container,
         .k-popup {
             position: relative;
+        }
+
+        .k-grid-columnmenu-popup {
+            width: 100%;
         }
     </style>
 </head>
@@ -232,6 +236,7 @@
 
         <!-- jQuery Grid Column -->
         <div class="section">
+            <span>jQuery Grid Column Menu</span>
             <div class="k-animation-container" style="overflow: visible;">
                 <div class="k-column-menu k-popup k-group k-reset k-state-border-up">
                     <ul class="k-widget k-reset k-header k-menu k-menu-vertical">
@@ -256,6 +261,117 @@
                 </div>
             </div>
         </div>
+
+        <div class="section">
+            <div class="k-animation-container" style="overflow: visible;">
+                <span>jQuery Columns popup</span>
+                <ul class="k-group k-menu-group k-popup k-reset k-state-border-left" style="display: block;">
+                    <li class="k-column-menu-group-header">
+                        <span class="k-column-menu-group-header-text">Group A</span>
+                    </li>
+                    <li class="k-first k-item k-menu-item k-state-default">
+                        <span class="k-link k-menu-link">
+                            <input type="checkbox" checked />
+                            Column name
+                        </span>
+                    </li>
+                    <li class="k-column-menu-group-header">
+                        <span class="k-column-menu-group-header-text">Group B</span>
+                    </li>
+                    <li class="k-first k-item k-menu-item k-state-default">
+                        <span class="k-link k-menu-link">
+                            <input type="checkbox" checked />
+                            Column name
+                        </span>
+                    </li>
+                    <li class="k-first k-item k-menu-item k-state-default">
+                        <span class="k-link k-menu-link">
+                            <input type="checkbox" checked />
+                            Column name
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Angular Grid Column Menu -->
+        <div class="section">
+            <span>Angular Grid Column Menu</span>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-grid-columnmenu-popup">
+                    <kendo-grid-columnmenu-sort class="k-columnmenu-item-wrapper ng-star-inserted">
+                        <kendo-grid-columnmenu-item icon="sort-asc-sm" class="ng-tns-c3-25">
+                            <div class="k-columnmenu-item k-item k-state-selected">
+                                <span class="k-icon ng-tns-c3-25 k-i-sort-asc-sm ng-star-inserted"></span> Sort
+                                Ascending
+                            </div>
+                        </kendo-grid-columnmenu-item>
+                        <kendo-grid-columnmenu-item icon="sort-desc-sm" class="ng-tns-c3-26">
+                            <div class="k-columnmenu-item">
+                                <span class="k-icon ng-tns-c3-26 k-i-sort-desc-sm ng-star-inserted"></span> Sort
+                                Descending
+                            </div>
+                        </kendo-grid-columnmenu-item>
+                    </kendo-grid-columnmenu-sort>
+
+                    <kendo-grid-columnmenu-chooser class="k-columnmenu-item-wrapper ng-star-inserted">
+                        <kendo-grid-columnmenu-item icon="columns" class="ng-tns-c3-27">
+                            <div class="k-columnmenu-item">
+                                <span class="k-icon ng-tns-c3-27 k-i-columns ng-star-inserted"></span> Columns
+                            </div>
+                        </kendo-grid-columnmenu-item>
+                    </kendo-grid-columnmenu-chooser>
+
+                    <kendo-grid-columnmenu-filter class="k-columnmenu-item-wrapper ng-star-inserted">
+                        <kendo-grid-columnmenu-item icon="filter" class="ng-tns-c3-28">
+                            <div class="k-columnmenu-item">
+                                <span class="k-icon ng-tns-c3-28 k-i-filter ng-star-inserted"></span> Filter
+                            </div>
+                        </kendo-grid-columnmenu-item>
+                    </kendo-grid-columnmenu-filter>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- React Grid Column Menu -->
+        <div class="section">
+            <span>React Grid Column Menu</span>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-child-animation-container">
+                    <div class="k-grid-columnmenu-popup">
+                        <div>
+                            <div class="k-columnmenu-item-wrapper">
+                                <div class="k-columnmenu-item k-state-selected">
+                                    <span class="k-icon k-i-sort-asc-sm"></span>Sort Ascending
+                                </div>
+                                <div class="k-columnmenu-item ">
+                                    <span class="k-icon k-i-sort-desc-sm"></span>Sort Descending
+                                </div>
+                            </div>
+                            <div class="k-columnmenu-item-wrapper">
+                                <div class="k-columnmenu-item ">
+                                    <span class="k-icon k-i-filter"></span>Filter
+                                </div>
+                                <div class="k-columnmenu-item-content">
+                                    <div class="k-animation-container k-animation-container-relative" style="position: relative; display: block;"></div>
+                                </div>
+                            </div>
+                            <div class="k-columnmenu-item-wrapper">
+                                <div class="k-columnmenu-item ">
+                                    <span class="k-icon k-i-columns"></span>Columns
+                                </div>
+                                <div class="k-columnmenu-item-content">
+                                    <div class="k-animation-container k-animation-container-relative" style="position: relative; display: block;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </body>
