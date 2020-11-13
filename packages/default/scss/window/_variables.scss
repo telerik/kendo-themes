@@ -3,16 +3,20 @@ $window-border-width: 0px !default;
 $window-border-radius: 0px !default;
 $window-font-family: $font-family !default;
 $window-font-size: $font-size !default;
-$window-line-height: $line-height !default;
+$window-line-height: 1.25 !default;
 
 $window-titlebar-padding-x: 16px !default;
 $window-titlebar-padding-y: 12px !default;
 $window-titlebar-border-width: 0 0 1px !default;
 $window-titlebar-border-style: solid !default;
 
-$window-title-spacing: 0px !default;
 $window-title-font-size: $font-size-lg !default;
-$window-title-line-height: ( 20 / 19 ) !default; // desired line-height divided by $font-size-lg
+$window-title-line-height: ( 20 / 18 ) !default;
+
+$window-actions-gap: null !default;
+
+$window-action-opacity: null !default;
+$window-action-hover-opacity: null !default;
 
 $window-inner-padding-x: 16px !default;
 $window-inner-padding-y: 16px !default;

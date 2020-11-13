@@ -1,25 +1,29 @@
 // Window
-$window-border-width: 0px !default;
-$window-border-radius: 0px !default;
+$window-border-width: 1px !default;
+$window-border-radius: map-get( $spacing, 1 ) !default;
 $window-font-family: $font-family !default;
 $window-font-size: $font-size !default;
 $window-line-height: $line-height !default;
 
-$window-titlebar-padding-x: 16px !default;
-$window-titlebar-padding-y: 12px !default;
+$window-titlebar-padding-x: map-get( $spacing, 3 ) !default;
+$window-titlebar-padding-y: map-get( $spacing, 3 ) !default;
 $window-titlebar-border-width: 0 0 1px !default;
 $window-titlebar-border-style: solid !default;
 
-$window-title-spacing: 0px !default;
 $window-title-font-size: $font-size-lg !default;
-$window-title-line-height: ( 20 / 19 ) !default; // desired line-height divided by $font-size-lg
+$window-title-line-height: 1.25 !default;
 
-$window-inner-padding-x: 16px !default;
-$window-inner-padding-y: 16px !default;
+$window-actions-gap: null !default;
+
+$window-action-opacity: null !default;
+$window-action-hover-opacity: null !default;
+
+$window-inner-padding-x: map-get( $spacing, 3 ) !default;
+$window-inner-padding-y: map-get( $spacing, 3 ) !default;
 
 $window-bg: $component-bg !default;
 $window-text: $component-text !default;
-$window-border: rgba(0, 0, 0, .08) !default;
+$window-border: $component-border !default;
 
 $window-titlebar-bg: $header-bg !default;
 $window-titlebar-text: $header-text !default;
