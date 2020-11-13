@@ -152,11 +152,14 @@ jobs:
       - name: Compare artifacts
         run: |
           has_changes=0
+          has_untracked=0
           git diff --exit-code --quiet -- tests/visual/output/ || has_changes=1
+          [[ $(git ls-files --others --exclude-standard tests/visual/output) ]] && has_untracked=1
           echo "has_changes=$has_changes" >> $GITHUB_ENV
+          echo "has_untracked=$has_untracked" >> $GITHUB_ENV
 
       - name: Push changes to gtihub
-        if: ${{ env.has_changes == 1 }}
+        if: ${{ env.has_changes == 1 || env.has_untracked == 1 }}
         run: |
           echo "Visual tests have detected changes. Upading screenshots."
 
@@ -171,7 +174,7 @@ jobs:
           ./build/mark-checks.sh $commit
 
       - name: No changes
-        if: ${{ env.has_changes == 0 }}
+        if: ${{ env.has_changes == 0 && env.has_untracked == 0 }}
         run: echo "No changes detected"
 
   ci-visual:

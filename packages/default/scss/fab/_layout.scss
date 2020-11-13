@@ -122,10 +122,6 @@
         outline: none;
     }
 
-    // Popup
-    .k-fab-popup {
-        position: absolute;
-    }
 }
 
 @include exports("fab/layout/rtl") {
@@ -141,5 +137,17 @@
             }
         }
     }
+
+    .k-rtl .k-fab-popup,
+    [dir="rtl"] .k-fab-popup {
+        .k-fab-item.k-text-left {
+            flex-direction: row;
+        }
+
+        .k-fab-item.k-text-right {
+            flex-direction: row-reverse;
+        }
+    }
+
 }
 
