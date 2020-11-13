@@ -5,17 +5,21 @@ $window-font-family: $font-family !default;
 $window-font-size: $font-size !default;
 $window-line-height: $line-height !default;
 
-$window-inner-padding-x: $modal-inner-padding !default;
-$window-inner-padding-y: $modal-inner-padding !default;
-
 $window-titlebar-padding-x: $modal-header-padding-x !default;
 $window-titlebar-padding-y: $modal-header-padding-y !default;
 $window-titlebar-border-width: 0 0 1px !default;
 $window-titlebar-border-style: solid !default;
 
-$window-title-spacing: 0px !default;
 $window-title-font-size: $font-size-lg !default;
 $window-title-line-height: $modal-title-line-height !default;
+
+$window-actions-gap: .5rem !default;
+
+$window-action-opacity: .5 !default;
+$window-action-hover-opacity: .75 !default;
+
+$window-inner-padding-x: $modal-inner-padding !default;
+$window-inner-padding-y: $modal-inner-padding !default;
 
 $window-bg: $modal-content-bg !default;
 $window-text: $modal-content-color !default;
