@@ -122,6 +122,17 @@
         outline: none;
     }
 
+    // Disabled state
+    .k-fab-item.k-state-disabled,
+    .k-fab-item:disabled {
+        @include disabled( $disabled-styling );
+
+        .k-fab-item-icon,
+        .k-fab-item-text {
+            opacity: .6;
+        }
+    }
+
 }
 
 @include exports("fab/layout/rtl") {
