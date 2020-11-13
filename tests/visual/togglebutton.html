@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Toggle button</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        #test-area > section {
+            position: relative;
+            min-height: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+            <p>Toggle Button</p>
+            <p>Button and Toggle Button in Toolbar</p>
+
+            <div><button class="k-button k-toggle-button">Normal</button></div>
+            <div class="k-toolbar k-widget">
+                <a class="k-button k-toolbar-first-visible">Button</a>
+                <a class="k-toggle-button k-button k-toolbar-last-visible">Toggle Button</a>
+            </div>
+
+            <div><button class="k-button k-toggle-button k-state-hover">Hover</button></div>
+            <div class="k-toolbar k-widget">
+                <a class="k-button k-toolbar-first-visible k-state-hover">Hover Button</a>
+                <a class="k-toggle-button k-button k-toolbar-last-visible k-state-hover">Hover Toggle Button</a>
+            </div>
+
+            <div><button class="k-button k-toggle-button k-state-focused">Focused</button></div>
+            <div class="k-toolbar k-widget">
+                <a class="k-button k-toolbar-first-visible k-state-focused">Focused Button</a>
+                <a class="k-toggle-button k-button k-toolbar-last-visible k-state-focused">Focused Toggle Button</a>
+            </div>
+
+            <div><button class="k-button k-toggle-button k-state-active">Active</button></div>
+            <div class="k-toolbar k-widget">
+                <a class="k-button k-toolbar-first-visible k-state-active">Active Button</a>
+                <a class="k-toggle-button k-button k-toolbar-last-visible k-state-active">Active Toggle Button</a>
+            </div>
+
+            <div><button class="k-button k-toggle-button k-state-active k-state-focused">Active+Focused</button></div>
+            <div class="k-toolbar k-widget">
+                <a class="k-button k-toolbar-first-visible k-state-active k-state-focused">A+F Button</a>
+                <a class="k-toggle-button k-button k-toolbar-last-visible k-state-active k-state-focused">A+F Toggle Button</a>
+            </div>
+
+            <div><button class="k-button k-toggle-button k-state-disabled">Disabled</button></div>
+            <div class="k-toolbar k-widget">
+                <a class="k-button k-toolbar-first-visible k-state-disabled">Disabled Button</a>
+                <a class="k-toggle-button k-button k-toolbar-last-visible k-state-disabled">Disabled Toggle Button</a>
+            </div>
+
+
+    </div>
+
+</body>
+</html>
