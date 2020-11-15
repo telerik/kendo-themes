@@ -18,14 +18,9 @@
 
     // Loader segment
     .k-loader-segment {
+        border-radius: $loader-segment-border-radius;
+        background-color: currentColor;
         position: absolute;
-        display: inline-block;
-
-        &::after {
-            content: "";
-            display: block;
-            border-radius: $loader-segment-border-radius;
-        }
     }
 
     // Loader sizes
@@ -33,259 +28,179 @@
         padding: $loader-padding-sm;
 
         .k-loader-segment {
-            &::after {
-                width: $loader-segment-size-sm;
-                height: $loader-segment-size-sm;
-            }
+            width: $loader-segment-size-sm;
+            height: $loader-segment-size-sm;
         }
     }
     .k-loader-md {
         padding: $loader-padding-md;
 
         .k-loader-segment {
-            &::after {
-                width: $loader-segment-size-md;
-                height: $loader-segment-size-md;
-            }
+            width: $loader-segment-size-md;
+            height: $loader-segment-size-md;
         }
     }
     .k-loader-lg {
         padding: $loader-padding-lg;
 
         .k-loader-segment {
-            &::after {
-                width: $loader-segment-size-lg;
-                height: $loader-segment-size-lg;
-            }
+            width: $loader-segment-size-lg;
+            height: $loader-segment-size-lg;
         }
     }
 
-
-    // Loader Animation Types
-    .k-loader-pulsing-2 {
-        .k-loader-segment {
-            position: relative;
-
-            &:nth-child(1) {
-                animation: pulsing-2-first-child 1s ease infinite;
-            }
-
-            &:nth-child(2) {
-                animation: pulsing-2-second-child 1s ease infinite;
-            }
-        }
-
-        &.k-loader-sm {
-            .k-loader-segment {
-                &:first-child {
-                    margin-right: $loader-pulsing-2-segment-margin-x-sm;
-                }
-
-                &:last-child {
-                    margin-left: $loader-pulsing-2-segment-margin-x-sm;
-                }
-            }
-        }
-
-        &.k-loader-md {
-            .k-loader-segment {
-                &:first-child {
-                    margin-right: $loader-pulsing-2-segment-margin-x-md;
-                }
-
-                &:last-child {
-                    margin-left: $loader-pulsing-2-segment-margin-x-md;
-                }
-            }
-        }
-
-        &.k-loader-lg {
-            .k-loader-segment {
-                &:first-child {
-                    margin-right: $loader-pulsing-2-segment-margin-x-lg;
-                }
-
-                &:last-child {
-                    margin-left: $loader-pulsing-2-segment-margin-x-lg;
-                }
-            }
-        }
-    }
-
-    .k-loader-spinner-3 {
-        .k-loader-segment {
-            &:nth-child(1) {
-                animation: spinner-3-first-child 2s ease infinite;
-            }
-
-            &:nth-child(2) {
-                animation: spinner-3-second-child 2s ease infinite;
-            }
-
-            &:nth-child(3) {
-                animation: spinner-3-third-child 2s ease infinite;
-            }
-        }
-
-        &.k-loader-sm {
-            .k-loader-canvas {
-                width: $loader-spinner-3-width-sm;
-                height: $loader-spinner-3-height-sm;
-            }
-        }
-
-        &.k-loader-md {
-            .k-loader-canvas {
-                width: $loader-spinner-3-width-md;
-                height: $loader-spinner-3-height-md;
-            }
-        }
-
-        &.k-loader-lg {
-            .k-loader-canvas {
-                width: $loader-spinner-3-width-lg;
-                height: $loader-spinner-3-height-lg;
-            }
-        }
-    }
-
-    .k-loader-spinner-4 {
-        .k-loader-canvas {
-            animation: spinner-4 1.833s ease infinite;
-        }
-
-        .k-loader-segment {
-            &:nth-child(1) {
-                animation: spinner-4-first-child 1.833s ease infinite;
-            }
-
-            &:nth-child(2) {
-                animation: spinner-4-second-child 1.833s ease infinite;
-            }
-
-            &:nth-child(3) {
-                animation: spinner-4-third-child 1.833s ease infinite;
-            }
-
-            &:nth-child(4) {
-                animation: spinner-4-fourth-child 1.833s ease infinite;
-            }
-        }
-
-        &.k-loader-sm {
-            .k-loader-canvas {
-                width: $loader-spinner-4-width-sm;
-                height: $loader-spinner-4-height-sm;
-            }
-        }
-
-        &.k-loader-md {
-            .k-loader-canvas {
-                width: $loader-spinner-4-width-md;
-                height: $loader-spinner-4-height-md;
-            }
-        }
-
-        &.k-loader-lg {
-            .k-loader-canvas {
-                width: $loader-spinner-4-width-lg;
-                height: $loader-spinner-4-height-lg;
-            }
-        }
-    }
+}
 
 
-    // Pulsing 2
-    @keyframes pulsing-2-first-child {
+
+
+@include exports( "loader/pulsing/2" ) {
+
+    // Animation
+    @keyframes pulsing-2-segment {
         0% { transform: scale(1); }
         50% { transform: scale(1.5); }
         100% { transform: scale(1); }
     }
-    @keyframes pulsing-2-second-child {
-        0% { transform: scale(1.5); }
-        50% { transform: scale(1); }
-        100% { transform: scale(1.5); }
+
+
+    // Component
+    .k-loader-pulsing-2 {
+
+        .k-loader-canvas {
+            align-items: center;
+        }
+
+        .k-loader-segment:nth-child(1) {
+            left: 0;
+            transform: scale( 1.5 );
+            transform-origin: 0 50%;
+            animation: pulsing-2-segment 1s ease infinite;
+            animation-delay: -.5s;
+        }
+        .k-loader-segment:nth-child(2) {
+            right: 0;
+            transform-origin: 100% 50%;
+            animation: pulsing-2-segment 1s ease infinite;
+        }
+
+        &.k-loader-sm {
+            .k-loader-canvas {
+                width: ( $loader-segment-size-sm * 3 );
+                height: ( $loader-segment-size-sm * 1.5 );
+            }
+        }
+
+        &.k-loader-md {
+            .k-loader-canvas {
+                width: ( $loader-segment-size-md * 3 );
+                height: ( $loader-segment-size-md * 1.5 );
+            }
+        }
+
+        &.k-loader-lg {
+            .k-loader-canvas {
+                width: ( $loader-segment-size-lg * 3 );
+                height: ( $loader-segment-size-lg * 1.5 );
+            }
+        }
     }
 
-    // Spinner 3
-    @keyframes spinner-3-first-child {
+}
+
+
+
+
+@include exports( "loader/spinner/3" ) {
+
+    // Animation
+    @keyframes spinner-3-segment {
         0% {
             top: 0;
             left: 50%;
-            transform: translateX(-50%) translateY(0);
         }
 
-        33.3% {
+        33.3333% {
             top: 100%;
             left: 0;
-            transform: translateX(0) translateY(-100%);
         }
 
-        66.6% {
+        66.6666% {
             top: 100%;
             left: 100%;
-            transform: translateX(-100%) translateY(-100%);
         }
 
         100% {
             top: 0;
             left: 50%;
-            transform: translateX(-50%) translateY(0);
         }
     }
-    @keyframes spinner-3-second-child {
-        0% {
-            top: 100%;
-            left: 0;
-            transform: translateX(0) translateY(-100%);
-        }
 
-        33.3% {
-            top: 100%;
-            left: 100%;
-            transform: translateX(-100%) translateY(-100%);
-        }
 
-        66.6% {
+    // Component
+    .k-loader-spinner-3 {
+
+        // Note: Until we can provide a css variables solution, or something better:
+        // * the dot center is on the exact point of angle
+        // * offset dots by artifically reduce dimentions by 1 dot size
+        // * compensate by setting margin on all sides half a dot size
+
+        .k-loader-segment {
+            transform: translate( -50%, -50% );
+        }
+        .k-loader-segment:nth-child(1) {
             top: 0;
             left: 50%;
-            transform: translateX(-50%) translateY(0);
+            animation: spinner-3-segment 2s ease infinite;
         }
-
-        100% {
+        .k-loader-segment:nth-child(2) {
             top: 100%;
             left: 0;
-            transform: translateX(0) translateY(-100%);
+            animation: spinner-3-segment 2s ease infinite;
+            animation-delay: calc( -2s / 3 );
         }
-    }
-    @keyframes spinner-3-third-child {
-        0% {
+        .k-loader-segment:nth-child(3) {
             top: 100%;
             left: 100%;
-            transform: translateX(-100%) translateY(-100%);
+            animation: spinner-3-segment 2s ease infinite;
+            animation-delay: calc( -4s / 3 );
         }
 
-        33.3% {
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%) translateY(0);
+
+        &.k-loader-sm {
+            .k-loader-canvas {
+                margin: ( $loader-segment-size-sm / 2 );
+                width: calc( #{$loader-spinner-3-width-sm} - #{$loader-segment-size-sm} );
+                height: calc( #{$loader-spinner-3-height-sm} - #{$loader-segment-size-sm} );
+            }
         }
 
-        66.6% {
-            top: 100%;
-            left: 0;
-            transform: translateX(0) translateY(-100%);
+        &.k-loader-md {
+            .k-loader-canvas {
+                margin: ( $loader-segment-size-md / 2 );
+                width: calc( #{$loader-spinner-3-width-md} - #{$loader-segment-size-md} );
+                height: calc( #{$loader-spinner-3-height-md} - #{$loader-segment-size-md} );
+            }
         }
 
-        100% {
-            top: 100%;
-            left: 100%;
-            transform: translateX(-100%) translateY(-100%);
+        &.k-loader-lg {
+            .k-loader-canvas {
+                margin: ( $loader-segment-size-lg / 2 );
+                width: calc( #{$loader-spinner-3-width-lg} - #{$loader-segment-size-lg} );
+                height: calc( #{$loader-spinner-3-height-lg} - #{$loader-segment-size-lg} );
+            }
         }
     }
 
-    // Spinner 4
-    @keyframes spinner-4-first-child {
+}
+
+
+
+
+@include exports( "loader/spinner/4" ) {
+
+    // Animation
+    @keyframes spinner-4-segment-1 {
         0% {
             top: 50%;
             left: 50%;
@@ -310,7 +225,7 @@
             transform: translateX(-50%) translateY(-50%);
         }
     }
-    @keyframes spinner-4-second-child {
+    @keyframes spinner-4-segment-2 {
         0% {
             top: 50%;
             left: 50%;
@@ -335,7 +250,7 @@
             transform: translateX(-50%) translateY(-50%);
         }
     }
-    @keyframes spinner-4-third-child {
+    @keyframes spinner-4-segment-3 {
         0% {
             top: 50%;
             left: 50%;
@@ -360,7 +275,7 @@
             transform: translateX(-50%) translateY(-50%);
         }
     }
-    @keyframes spinner-4-fourth-child {
+    @keyframes spinner-4-segment-4 {
         0% {
             top: 50%;
             left: 50%;
@@ -403,4 +318,52 @@
         }
     }
 
+    .k-loader-spinner-4 {
+        .k-loader-canvas {
+            animation: spinner-4 1.833s ease infinite;
+        }
+
+        .k-loader-segment {
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+
+            &:nth-child(1) {
+                animation: spinner-4-segment-1 1.833s ease infinite;
+            }
+
+            &:nth-child(2) {
+                animation: spinner-4-segment-2 1.833s ease infinite;
+            }
+
+            &:nth-child(3) {
+                animation: spinner-4-segment-3 1.833s ease infinite;
+            }
+
+            &:nth-child(4) {
+                animation: spinner-4-segment-4 1.833s ease infinite;
+            }
+        }
+
+        &.k-loader-sm {
+            .k-loader-canvas {
+                width: $loader-spinner-4-width-sm;
+                height: $loader-spinner-4-height-sm;
+            }
+        }
+
+        &.k-loader-md {
+            .k-loader-canvas {
+                width: $loader-spinner-4-width-md;
+                height: $loader-spinner-4-height-md;
+            }
+        }
+
+        &.k-loader-lg {
+            .k-loader-canvas {
+                width: $loader-spinner-4-width-lg;
+                height: $loader-spinner-4-height-lg;
+            }
+        }
+    }
 }

@@ -3,19 +3,23 @@ $window-border-width: 0px !default;
 $window-border-radius: 4px !default;
 $window-font-family: $font-family !default;
 $window-font-size: $font-size !default;
-$window-line-height: $line-height !default;
+$window-line-height: 1.5 !default;
 
 $window-titlebar-padding-x: 24px !default;
-$window-titlebar-padding-y: 24px !default;
+$window-titlebar-padding-y: 16px !default;
 $window-titlebar-border-width: 0px !default;
 $window-titlebar-border-style: solid !default;
 
-$window-title-spacing: -.15em 0 !default;
 $window-title-font-size: 20px !default;
-$window-title-line-height: 1.4 !default;
+$window-title-line-height: 1.6 !default;
+
+$window-actions-gap: null !default;
+
+$window-action-opacity: .54 !default;
+$window-action-hover-opacity: .87 !default;
 
 $window-inner-padding-x: 24px !default;
-$window-inner-padding-y: 24px !default;
+$window-inner-padding-y: 8px !default;
 
 $window-bg: $component-bg !default;
 $window-text: $component-text !default;
