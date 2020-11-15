@@ -4,25 +4,31 @@
     // sass-lint:disable-block indentation
 
     // Padding
-    @each $name, $prop in (
-        pt: padding-top,
-        pr: padding-right,
-        pb: padding-bottom,
-        pl: padding-left
-    ) {
-        .k-#{$name}-0 { #{$prop}: 0; }
-        .k-#{$name}-0-f { #{$prop}: 0 !important; }
+    @each $size, $val in $spacing {
+        @each $name, $prop in (
+            p: padding,
+            pt: padding-top,
+            pr: padding-right,
+            pb: padding-bottom,
+            pl: padding-left
+        ) {
+            .k-#{$name}-#{$size} { #{$prop}: #{$val}; }
+            .k-#{$name}-#{$size}-f { #{$prop}: #{$val} !important; }
+        }
     }
 
     // Margin
-    @each $name, $prop in (
-        mt: margin-top,
-        mr: margin-right,
-        mb: margin-bottom,
-        ml: margin-left
-    ) {
-        .k-#{$name}-0 { #{$prop}: 0; }
-        .k-#{$name}-0-f { #{$prop}: 0 !important; }
+    @each $size, $val in $spacing {
+        @each $name, $prop in (
+            m: margin,
+            mt: margin-top,
+            mr: margin-right,
+            mb: margin-bottom,
+            ml: margin-left
+        ) {
+            .k-#{$name}-#{$size} { #{$prop}: #{$val}; }
+            .k-#{$name}-#{$size}-f { #{$prop}: #{$val} !important; }
+        }
     }
 
 }

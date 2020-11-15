@@ -3,9 +3,11 @@
 /// Base font size across all components.
 /// @group typography
 $font-size: $font-size-base !default;
-$font-size-xs: .75 * $font-size-base !default;
+$font-size-xs: ( $font-size * .75 ) !default;
 $font-size-sm: $font-size-sm !default;
+$font-size-md: $font-size !default;
 $font-size-lg: $font-size-lg !default;
+$font-size-xl: ( $font-size-md * 1.5 ) !default;
 
 /// Font family across all components.
 /// @group typography
@@ -18,7 +20,9 @@ $font-family-monospace: $font-family-monospace !default;
 /// Line height used along with $font-size.
 /// @group typography
 $line-height: $line-height-base !default;
+$line-height-xs: 1 !default;
 $line-height-sm: $line-height-sm !default;
+$line-height-md: $line-height !default;
 $line-height-lg: $line-height-lg !default;
 $line-height-em: ($line-height * 1em);
 

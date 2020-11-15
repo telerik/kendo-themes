@@ -2,14 +2,10 @@
 
     @each $name, $color in $theme-colors {
         .k-loader-#{$name} {
-            .k-loader-segment {
-                &::after {
-                    @if $name == "secondary" {
-                        background-color: $loader-secondary-bg;
-                    } @else {
-                        background-color: $color;
-                    }
-                }
+            @if $name == "secondary" {
+                color: $loader-secondary-bg;
+            } @else {
+                color: $color;
             }
         }
     }

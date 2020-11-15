@@ -45,26 +45,20 @@
 
     // TODO: Deprecate
     // Input spacing
-    .k-space-left {
-        padding-left: 1.9em;
+    .k-space-left,
+    .k-space-right {
+        > input {
+            flex-grow: 1;
+        }
 
         > .k-icon {
-            margin: -8px 0 0;
-            position: absolute;
-            top: 50%;
             left: 3px;
+            margin: 3px 6px;
         }
     }
 
-    .k-space-right {
-        padding-right: 1.9em;
-
-        > .k-icon {
-            margin: -8px 0 0;
-            position: absolute;
-            top: 50%;
-            right: 3px;
-        }
+    .k-textbox.k-space-left {
+        flex-direction: row-reverse;
     }
 
 
