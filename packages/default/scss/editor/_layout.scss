@@ -62,18 +62,6 @@
     .k-window.k-editor-widget {
         padding: 0;
     }
-    // sass-lint:disable class-name-format
-    .editorToolbarWindow {
-        padding: 0;
-        display: flex;
-        align-items: stretch;
-    }
-    .k-editortoolbar-dragHandle {
-        margin: $toolbar-padding-y;
-        padding: 0;
-        cursor: move;
-    }
-    // sass-lint:enable class-name-format
 
 
     // Toolbar
