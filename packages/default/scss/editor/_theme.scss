@@ -53,17 +53,6 @@
         }
     }
 
-    // sass-lint:disable class-name-format
-    .editorToolbarWindow.k-header.k-window-content {
-        @include fill(
-            $toolbar-text,
-            $toolbar-bg,
-            $toolbar-border,
-            $toolbar-gradient
-        );
-    }
-    // sass-lint:enable class-name-format
-
 
     // Insert table
     .k-ct-popup {
