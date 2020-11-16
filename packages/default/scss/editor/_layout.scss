@@ -365,20 +365,6 @@
         // Filebrowser toolbar
         .k-filebrowser-toolbar {
             margin: $spacer-y 0 0 0;
-            padding: $toolbar-padding-y $toolbar-padding-x;
-            display: flex;
-            justify-content: space-between;
-        }
-        .k-toolbar-wrap {
-            display: flex;
-
-            > * + * {
-                margin-left: $toolbar-spacing;
-            }
-
-            .k-state-disabled {
-                display: none;
-            }
         }
 
         .k-upload {
