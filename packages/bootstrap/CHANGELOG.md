@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.24.0"></a>
+# [4.24.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.23.2...@progress/kendo-theme-bootstrap@4.24.0) (2020-11-16)
+
+
+### Bug Fixes
+
+* **calendar:** adjust spacing ([575dbcd](https://github.com/telerik/kendo-themes/commit/575dbcd))
+* **grid:** import float utility ([8e7aa96](https://github.com/telerik/kendo-themes/commit/8e7aa96))
+* **loader:** use precise metrics that correspond to our sizing system ([6648a90](https://github.com/telerik/kendo-themes/commit/6648a90))
+* **panelbar:** allow native :focus styles on items ([781c91c](https://github.com/telerik/kendo-themes/commit/781c91c))
+* **typography:** streamline typography variables ([da6a879](https://github.com/telerik/kendo-themes/commit/da6a879))
+* **window:** update window styles to match new font style metrics ([9c36541](https://github.com/telerik/kendo-themes/commit/9c36541))
+
+
+### Features
+
+* **fab:** add styles ([5d25359](https://github.com/telerik/kendo-themes/commit/5d25359))
+* **loader-container:** add component styles ([987e603](https://github.com/telerik/kendo-themes/commit/987e603))
+* **notification:** add styling based on theme colors ([ad97348](https://github.com/telerik/kendo-themes/commit/ad97348)), closes [telerik/kendo-themes#1981](https://github.com/telerik/kendo-themes/issues/1981)
+
+
+
+
 <a name="4.23.2"></a>
 ## [4.23.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.23.1...@progress/kendo-theme-bootstrap@4.23.2) (2020-11-05)
 
