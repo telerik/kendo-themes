@@ -116,7 +116,7 @@ $grid-focused-shadow: $list-item-focused-shadow !default;
 
 $grid-command-cell-button-spacing: .16em !default;
 
-$grid-search-width: 15.7em !default;
+$grid-search-width: $input-default-width !default;
 
 $grid-sticky-bg: $component-bg !default;
 $grid-sticky-text: $grid-text !default;
