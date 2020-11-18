@@ -27,12 +27,4 @@ jobs:
         run: printf "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
 
       - name: Tag stable version
-        run: |
-          source $(pwd)/build/constants.sh
-
-          for theme in $themes \
-          do \
-              pkg=@progress/kendo-theme-$theme \
-              version=$(npm view $pkg version) \
-              npm dist-tag add $pkg@$version stable \
-          done
+        run: ./build/tag-stable.sh

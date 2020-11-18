@@ -62,18 +62,6 @@
     .k-window.k-editor-widget {
         padding: 0;
     }
-    // sass-lint:disable class-name-format
-    .editorToolbarWindow {
-        padding: 0;
-        display: flex;
-        align-items: stretch;
-    }
-    .k-editortoolbar-dragHandle {
-        margin: $toolbar-padding-y;
-        padding: 0;
-        cursor: move;
-    }
-    // sass-lint:enable class-name-format
 
 
     // Toolbar
@@ -377,20 +365,6 @@
         // Filebrowser toolbar
         .k-filebrowser-toolbar {
             margin: $spacer-y 0 0 0;
-            padding: $toolbar-padding-y $toolbar-padding-x;
-            display: flex;
-            justify-content: space-between;
-        }
-        .k-toolbar-wrap {
-            display: flex;
-
-            > * + * {
-                margin-left: $toolbar-spacing;
-            }
-
-            .k-state-disabled {
-                display: none;
-            }
         }
 
         .k-upload {

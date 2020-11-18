@@ -987,7 +987,6 @@
     .k-i-data-json::before { content: "\e930"; }
     .k-i-data-sql::before { content: "\e931"; }
     .k-i-data-web::before { content: "\e932"; }
-    .k-i-data-rest::before { content: "\e946"; }
     .k-i-group-collection::before { content: "\e933"; }
     .k-i-parameter-boolean::before { content: "\e934"; }
     .k-i-parameter-date-time::before { content: "\e935"; }
@@ -1003,13 +1002,23 @@
     .k-i-file-data::before { content: "\e93f"; }
     .k-i-file-disc-image::before { content: "\e940"; }
     .k-i-file-programming::before { content: "\e941"; }
-    .k-i-file-typescript::before { content: "\e947"; }
     .k-i-parameters-byte-array::before { content: "\e942"; }
     .k-i-parameters-unknown::before { content: "\e943"; }
     .k-i-file-error::before { content: "\e944"; }
     .k-i-file-validation::before { content: "\e944"; }
     .k-i-files-error::before { content: "\e945"; }
     .k-i-files-validation::before { content: "\e945"; }
+    .k-i-data-rest::before { content: "\e946"; }
+    .k-i-file-typescript::before { content: "\e947"; }
+    .k-i-table-position-start::before { content: "\e948"; }
+    .k-i-table-position-left::before { content: "\e948"; }
+    .k-i-table-position-center::before { content: "\e949"; }
+    .k-i-table-position-end::before { content: "\e94a"; }
+    .k-i-table-position-right::before { content: "\e94a"; }
+    .k-i-list-roman-upper::before { content: "\e94b"; }
+    .k-i-list-roman-lower::before { content: "\e94c"; }
+    .k-i-import::before { content: "\e94d"; }
+    .k-i-export::before { content: "\e94e"; }
     .k-i-graph::before { content: "\ea00"; }
     .k-i-chart-column-clustered::before { content: "\ea01"; }
     .k-i-chart-column-stacked::before { content: "\ea02"; }

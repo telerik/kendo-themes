@@ -4,9 +4,7 @@
     .k-toolbar {
         @include use-background-clip();
         margin: 0;
-        // Until flex gap is available in chrome
-        // padding: $toolbar-padding-y $toolbar-padding-x;
-        padding: ($toolbar-padding-y / 2) $toolbar-padding-x;
+        padding: $toolbar-padding-y $toolbar-padding-x;
         border-width: $toolbar-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -16,8 +14,8 @@
         line-height: $toolbar-line-height;
         list-style: none;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
+        gap: $toolbar-spacing;
         align-items: center;
         justify-content: flex-start;
         position: relative;
@@ -25,9 +23,11 @@
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
 
+        // Remove once we decide to not size empty containers
         &::before {
             content: "";
             height: $button-calc-size;
+            margin-inline-start: -$toolbar-spacing;
         }
 
         &.k-toolbar-resizable {
@@ -35,10 +35,6 @@
         }
 
         > * {
-            // Until flex gap is available in chrome
-            margin-top: ($toolbar-padding-y / 2);
-            margin-bottom: ($toolbar-padding-y / 2);
-            margin-right: $toolbar-spacing;
             flex-shrink: 0;
             display: inline-flex;
             align-items: stretch;
@@ -46,11 +42,8 @@
             vertical-align: middle;
 
             > label {
-                margin-right: $toolbar-spacing;
+                margin-inline-end: $toolbar-spacing;
             }
-        }
-        > :last-child {
-            margin-right: 0;
         }
 
         .k-button,
@@ -176,26 +169,49 @@
         .k-rtl &,
         &[dir="rtl"],
         [dir="rtl"] & {
-
-            > * {
-                margin-right: 0;
-                margin-left: $toolbar-spacing;
-
-                > label {
-                    margin-right: 0;
-                    margin-left: $toolbar-spacing;
-                }
-            }
-            > :last-child {
-                margin-left: 0;
-            }
-
             .k-overflow-anchor {
                 margin: 0;
                 right: auto;
                 left: 0;
             }
         }
+
     }
+
+}
+
+
+
+
+@include exports( "floating-toolbar/layout" ) {
+
+
+    // sass-lint:disable class-name-format
+    .k-floating-toolbar,
+    .editorToolbarWindow.k-window-content {
+        padding: $toolbar-padding-y $toolbar-padding-x !important; // sass-lint:disable-line no-important
+        border-width: $toolbar-border-width;
+        border-style: solid;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: $toolbar-spacing;
+        align-items: center;
+
+        .k-toolbar {
+            padding: 0;
+            border-width: 0;
+            color: inherit;
+            background: none;
+        }
+    }
+    .k-editortoolbar-dragHandle {
+        cursor: move;
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        flex-shrink: 0;
+    }
+    // sass-lint:enable class-name-format
+
 
 }

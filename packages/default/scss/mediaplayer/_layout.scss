@@ -43,32 +43,11 @@
         right: 0;
     }
     .k-mediaplayer-toolbar {
-        padding: $mediaplayer-toolbar-padding-y $mediaplayer-toolbar-padding-x;
         border-width: 0;
         // sass-lint:disable no-important
         width: 100% !important;
         // sass-lint:enable no-important
         box-shadow: none;
-
-
-        > * {
-            margin: 0;
-            align-items: center;
-            align-content: center;
-        }
-        > * + * { margin-left: $mediaplayer-toolbar-spacing; }
-
-        .k-toolbar-spacer {
-            margin-top: 0;
-            margin-bottom: 0;
-            border-width: 0;
-            flex: 1;
-        }
-
-        .k-align-right {
-            & > * + * { margin-left: $mediaplayer-toolbar-spacing; }
-        }
-
     }
     .k-mediaplayer-time-wrap {
         flex: 1;

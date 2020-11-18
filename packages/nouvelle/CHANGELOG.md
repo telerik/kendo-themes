@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.5"></a>
+## [0.2.5](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-nouvelle@0.2.4...@progress/kendo-theme-nouvelle@0.2.5) (2020-11-16)
+
+
+### Bug Fixes
+
+* **window:** update window styles to match new font style metrics ([9c36541](https://github.com/telerik/kendo-themes/commit/9c36541))
+
+
+
+
 <a name="0.2.4"></a>
 ## [0.2.4](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-nouvelle@0.2.3...@progress/kendo-theme-nouvelle@0.2.4) (2020-11-05)
 

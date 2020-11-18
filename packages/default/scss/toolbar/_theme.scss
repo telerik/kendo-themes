@@ -38,3 +38,21 @@
     }
 
 }
+
+
+
+
+@include exports("floating-toolbar/theme") {
+
+    // sass-lint:disable-block class-name-format
+    .k-floating-toolbar,
+    .editorToolbarWindow.k-window-content {
+        @include fill(
+            $toolbar-text,
+            $toolbar-bg,
+            $toolbar-border,
+            $toolbar-gradient
+        );
+    }
+
+}

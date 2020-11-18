@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.26.0"></a>
+# [4.26.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.25.2...@progress/kendo-theme-default@4.26.0) (2020-11-16)
+
+
+### Bug Fixes
+
+* **calendar:** adjust spacing ([575dbcd](https://github.com/telerik/kendo-themes/commit/575dbcd))
+* **fab:** add disabled styling for the items ([917e726](https://github.com/telerik/kendo-themes/commit/917e726))
+* **grid:** import float utility ([8e7aa96](https://github.com/telerik/kendo-themes/commit/8e7aa96))
+* **input:** styled input with icon on left/right ([0794e79](https://github.com/telerik/kendo-themes/commit/0794e79))
+* **loader:** set canvas display to flex ([c27dfe9](https://github.com/telerik/kendo-themes/commit/c27dfe9))
+* **loader:** use precise metrics that correspond to our sizing system ([6648a90](https://github.com/telerik/kendo-themes/commit/6648a90))
+* **panelbar:** add space between icon and text ([7c90c9c](https://github.com/telerik/kendo-themes/commit/7c90c9c)), closes [telerik/kendo-themes#1144](https://github.com/telerik/kendo-themes/issues/1144)
+* **panelbar:** allow native :focus styles on items ([781c91c](https://github.com/telerik/kendo-themes/commit/781c91c))
+* **panelbar:** prevent margins in panelbar content from collapsing ([40c170a](https://github.com/telerik/kendo-themes/commit/40c170a))
+* **resizing:** use correct cursor for `.k-resize-e` ([0c4cb4d](https://github.com/telerik/kendo-themes/commit/0c4cb4d))
+* **toolbar:** make floating toolbar styles consistent with toolbar styles ([4e1c0a7](https://github.com/telerik/kendo-themes/commit/4e1c0a7))
+* **typography:** streamline typography variables ([da6a879](https://github.com/telerik/kendo-themes/commit/da6a879))
+* **window:** update window styles to match new font style metrics ([9c36541](https://github.com/telerik/kendo-themes/commit/9c36541))
+* explicitely set  box-sizing for better integration with Bootstrap ([4f71b79](https://github.com/telerik/kendo-themes/commit/4f71b79))
+* revise toggle button styling ([a61bdcf](https://github.com/telerik/kendo-themes/commit/a61bdcf))
+
+
+### Features
+
+* **fab:** add styles ([5d25359](https://github.com/telerik/kendo-themes/commit/5d25359))
+* **icons:** add icons ([4400f10](https://github.com/telerik/kendo-themes/commit/4400f10))
+* **loader-container:** add component styles ([987e603](https://github.com/telerik/kendo-themes/commit/987e603))
+* **notification:** add styling based on theme colors ([ad97348](https://github.com/telerik/kendo-themes/commit/ad97348)), closes [telerik/kendo-themes#1981](https://github.com/telerik/kendo-themes/issues/1981)
+* **utils:** update margin and padding classes ([71512b3](https://github.com/telerik/kendo-themes/commit/71512b3))
+
+
+
+
 <a name="4.25.2"></a>
 ## [4.25.2](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.25.1...@progress/kendo-theme-default@4.25.2) (2020-11-05)
 
