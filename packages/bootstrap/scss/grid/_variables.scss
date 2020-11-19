@@ -131,6 +131,24 @@ $grid-sticky-selected-alt-bg: shade($grid-sticky-selected-bg, .4) !default;
 $grid-sticky-hovered-bg: darken($grid-bg, 8%) !default;
 $grid-sticky-selected-hovered-bg: shade($grid-sticky-selected-bg, .7) !default;
 
+$grid-filter-menu-item-spacing-x: 0 !default;
+$grid-filter-menu-item-spacing-y: map-get( $spacing, 2 ) !default;
+
+$grid-column-menu-popup-padding-x: 0 !default;
+$grid-column-menu-popup-padding-y: $padding-y !default;
+
+$grid-column-menu-item-padding-x: $padding-x-lg !default;
+$grid-column-menu-item-padding-y: $padding-y-sm !default;
+
+$grid-column-menu-list-item-padding-x: $padding-x-lg !default;
+$grid-column-menu-list-item-padding-y: $padding-y-sm !default;
+
+$grid-column-menu-items-wrap-padding-x: 0 !default;
+$grid-column-menu-items-wrap-padding-y: map-get( $spacing, 2 ) !default;
+
+$grid-column-menu-filter-container-padding-x: $padding-x-lg !default;
+$grid-column-menu-filter-container-padding-y: $padding-y-sm !default;
+
 $grid-column-menu-group-header-padding-x: $menu-popup-item-padding-x !default;
 $grid-column-menu-group-header-padding-y: $menu-popup-item-padding-y !default;
 
