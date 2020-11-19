@@ -761,6 +761,10 @@
 
     .k-grid-columnmenu-popup {
         width: 230px;
+
+        &.k-popup {
+            padding: $grid-column-menu-popup-padding-y $grid-column-menu-popup-padding-x;
+        }
     }
 
     // Filter row
@@ -1223,14 +1227,14 @@
         .k-widget,
         .k-radio-list,
         .k-textbox {
-            margin: $item-spacing 0;
+            margin: $grid-filter-menu-item-spacing-y $grid-filter-menu-item-spacing-x;
             width: 100%;
             display: block;
         }
 
         .k-widget.k-filter-and {
             width: 6em;
-            margin: (2 * $item-spacing) 0;
+            margin: $grid-filter-menu-item-spacing-y $grid-filter-menu-item-spacing-x;
         }
 
         .k-switch {
@@ -1244,7 +1248,7 @@
             margin-left: -$form-padding;
             margin-right: -$form-padding;
             margin-bottom: -$form-padding;
-            padding: $form-padding;
+            padding: $grid-column-menu-item-padding-y $form-padding $form-padding;
 
             .k-button {
                 flex: 1 1 50%;
@@ -1306,8 +1310,7 @@
 
     .k-column-chooser-title,
     .k-column-list-item {
-        padding: $list-item-padding-y $list-item-padding-x;
-        padding-right: calc( #{$list-item-padding-x * 2} + #{$icon-size} );
+        padding: $grid-column-menu-list-item-padding-y $grid-column-menu-list-item-padding-x;
     }
 
     .k-column-list-item {
@@ -1317,8 +1320,12 @@
         cursor: pointer;
     }
 
+    .k-columns-items-wrap {
+        padding: $grid-column-menu-items-wrap-padding-y $grid-column-menu-items-wrap-padding-x;
+    }
+
     .k-columnmenu-item {
-        padding: $nav-item-padding-y $nav-item-padding-x;
+        padding: $grid-column-menu-item-padding-y $grid-column-menu-item-padding-x;
         outline: 0;
         cursor: pointer;
 
@@ -1327,24 +1334,16 @@
         }
     }
 
-    .k-columnmenu-item-wrapper {
-        border-bottom: 1px solid;
-        border-bottom-color: $popup-border;
-
-        &:last-child {
-            border-bottom-width: 0;
-        }
+    .k-columnmenu-item-wrapper + .k-columnmenu-item-wrapper {
+        border-top: 1px solid;
+        border-top-color: $popup-border;
     }
 
     .k-columnmenu-item-content {
         overflow: hidden;
 
-        .k-column-list-item {
-            padding-left: calc( #{$nav-item-padding-x} + #{$icon-size} + #{$icon-spacing} );
-        }
-
         .k-filter-menu .k-filter-menu-container {
-            padding: $spacer-y $spacer-x;
+            padding: $grid-column-menu-filter-container-padding-y $grid-column-menu-filter-container-padding-x;
         }
     }
 
