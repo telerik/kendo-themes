@@ -2,19 +2,48 @@
 
     // Common
     .k-dateinput,
+    .k-datetimepicker {
+
+        .k-link {
+
+            &:hover,
+            &.k-state-hover {
+                @include fill(
+                    $datetime-select-hovered-text,
+                    $datetime-select-hovered-bg,
+                    $datetime-select-hovered-border,
+                    $datetime-select-hovered-gradient
+                );
+            }
+        }
+    }
+
     .k-datepicker,
-    .k-datetimepicker,
     .k-timepicker {
-        @extend .k-text-selection !optional;
+
+        .k-select {
+
+            &:hover,
+            &.k-state-hover {
+                @include fill(
+                    $datetime-select-hovered-text,
+                    $datetime-select-hovered-bg,
+                    $datetime-select-hovered-border,
+                    $datetime-select-hovered-gradient
+                );
+            }
+        }
     }
 
     // Shared
     .k-datepicker,
     .k-timepicker,
-    .k-datetimepicker {
-
+    .k-datetimepicker,
+    .k-dateinput {
+        @extend .k-text-selection !optional;
         // Normal state
-        .k-picker-wrap {
+        .k-picker-wrap,
+        .k-dateinput-wrap {
             @include fill(
                 $datetime-text,
                 $datetime-bg,
@@ -30,14 +59,6 @@
                     $datetime-hovered-border
                 );
 
-                .k-select {
-                    @include fill(
-                        $datetime-select-hovered-text,
-                        $datetime-select-hovered-bg,
-                        $datetime-select-hovered-border,
-                        $datetime-select-hovered-gradient
-                    );
-                }
             }
 
             // Selected state
@@ -61,6 +82,18 @@
                 $datetime-select-border,
                 $datetime-select-gradient
             );
+
+            > .k-state-selected,
+            > .k-state-active {
+                @include fill(
+                    $datetime-select-hovered-text,
+                    $datetime-select-hovered-bg,
+                    $datetime-select-hovered-border,
+                    $datetime-select-hovered-gradient
+                );
+                color: darken($body-text, 25%);
+                box-shadow: inset $datetime-select-focused-shadow;
+            }
         }
 
         .k-i-warning {
@@ -156,68 +189,25 @@
                 $datetime-border
             );
         }
-        .k-select {
-            @include fill(
-                $datetime-select-text,
-                $datetime-select-bg,
-                $datetime-select-border,
-                $datetime-select-gradient
-            );
-
-            &:hover {
-                @include fill(
-                    $datetime-select-hovered-text,
-                    $datetime-select-hovered-bg,
-                    $datetime-select-hovered-border,
-                    $datetime-select-hovered-gradient
-                );
-            }
-
-            > .k-state-selected,
-            > .k-state-active {
-                @include fill(
-                    $datetime-select-hovered-text,
-                    $datetime-select-hovered-bg,
-                    $datetime-select-hovered-border,
-                    $datetime-select-hovered-gradient
-                );
-                color: darken($body-text, 25%);
-                box-shadow: inset $datetime-select-focused-shadow;
-            }
-        }
 
         // Hovered state
-        .k-state-hover {
+        &:hover,
+        &.k-state-hover {
             @include fill(
                 $datetime-hovered-text,
                 $datetime-hovered-bg,
                 $datetime-hovered-border
             );
 
-            .k-select {
-                @include fill(
-                    $datetime-select-hovered-text,
-                    $datetime-select-hovered-bg,
-                    $datetime-select-hovered-border,
-                    $datetime-select-hovered-gradient
-                );
-            }
         }
 
         // Focused state
-        .k-state-focused {
-            @include fill(
-                $datetime-focused-text,
-                $datetime-focused-bg,
-                $datetime-focused-border
-            );
-            @include box-shadow($datetime-focused-shadow);
-
+        &:focus,
+        &.k-state-focused {
             .k-picker-wrap > & {
                 box-shadow: none;
             }
 
-            .k-select {}
         }
     }
 

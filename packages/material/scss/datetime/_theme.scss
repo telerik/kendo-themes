@@ -2,6 +2,33 @@
 
     // Common
     .k-dateinput,
+    .k-datetimepicker {
+
+        .k-link {
+            opacity: $icon-opacity;
+
+            &:hover,
+            &.k-state-hover {
+                opacity: $icon-hovered-opacity;
+            }
+        }
+    }
+
+    .k-datepicker,
+    .k-timepicker {
+
+        .k-select {
+            opacity: $icon-opacity;
+
+            &:hover,
+            &.k-state-hover {
+                opacity: $icon-hovered-opacity;
+            }
+        }
+    }
+
+    // Common
+    .k-dateinput,
     .k-datepicker,
     .k-datetimepicker,
     .k-timepicker {
@@ -18,18 +45,11 @@
                 color: $datetime-text;
             }
 
-            .k-select {
-                opacity: $icon-opacity;
-            }
-
             // Hover
             &:hover,
             &.k-state-hover {
                 border-color: $datetime-hovered-border;
 
-                .k-select {
-                    opacity: $icon-hovered-opacity;
-                }
             }
 
             // Focused
@@ -37,9 +57,6 @@
             .k-state-focused > & {
                 border-color: $datetime-focused-border;
 
-                .k-select {
-                    opacity: $icon-focused-opacity;
-                }
             }
 
             // Invalid
