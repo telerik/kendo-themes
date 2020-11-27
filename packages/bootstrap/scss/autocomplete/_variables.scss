@@ -10,9 +10,6 @@ $autocomplete-font-family: $input-font-family !default;
 $autocomplete-font-size: $input-font-size !default;
 $autocomplete-line-height: $input-line-height !default;
 
-$autocomplete-icon-width: calc( #{$icon-size} + #{$autocomplete-padding-y * 2} ) !default;
-$autocomplete-icon-height: calc( #{$autocomplete-line-height * $autocomplete-font-size} + #{$autocomplete-padding-y * 2} ) !default;
-
 $autocomplete-transition: $transition !default;
 
 

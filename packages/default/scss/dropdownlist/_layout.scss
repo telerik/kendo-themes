@@ -55,18 +55,8 @@
 
             // Clear value
             .k-clear-value {
-                height: ($input-line-height * $input-font-size);
-                line-height: ($input-line-height * $input-font-size);
-                outline: 0;
-                cursor: pointer;
-                display: none;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
                 opacity: .5;
-                position: absolute;
-                top: $input-padding-y;
-                right: $picker-icon-offset;
+                visibility: hidden;
 
                 &:hover {
                     opacity: 1;
@@ -79,7 +69,7 @@
             &.k-state-hover,
             &:hover {
                 .k-clear-value {
-                    display: inline-flex;
+                    visibility: visible;
                 }
             }
         }
@@ -97,11 +87,6 @@
 
         .k-select {
             @include border-left-radius-only( $input-border-radius );
-        }
-
-        .k-dropdown-wrap .k-clear-value {
-            right: auto;
-            left: $picker-icon-offset;
         }
     }
 
