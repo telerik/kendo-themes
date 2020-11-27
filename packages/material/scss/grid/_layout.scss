@@ -222,32 +222,7 @@ $grid-group-drag-clue-opacity: .9 !default;
                 .k-button {
                     margin-top: $padding-y * 2;
                 }
-                > .k-clear-value {
-                    right: $padding-y * 2;
-                }
             }
-        }
-
-        .k-dropdown-wrap {
-            > .k-clear-value {
-                right: $padding-y * 6;
-                padding: 0 $padding-y;
-            }
-        }
-
-        .k-combobox {
-            .k-dropdown-wrap {
-                > .k-clear-value {
-                    right: $padding-y * 6;
-                    padding: 0 $padding-y;
-                }
-            }
-        }
-
-        .k-dropdown-wrap,
-        .k-dateinput-wrap,
-        .k-picker-wrap {
-            padding-right: $padding-y;
         }
 
         .k-numerictextbox {
@@ -272,11 +247,6 @@ $grid-group-drag-clue-opacity: .9 !default;
                 .k-input {
                     height: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} - #{$text-field-border-width} );
                 }
-
-                > .k-clear-value {
-                    right: $padding-y * 6;
-                    padding: 0 $padding-y;
-                }
             }
         }
 
@@ -298,20 +268,6 @@ $grid-group-drag-clue-opacity: .9 !default;
                 .k-numeric-wrap {
                     padding-left: $padding-y;
                     padding-right: $text-field-padding;
-                }
-
-                .k-dropdown-wrap {
-                    > .k-clear-value {
-                        right: auto;
-                        left: $padding-y * 6;
-                    }
-                }
-
-                .k-multiselect-wrap {
-                    > .k-clear-value {
-                        right: auto;
-                        left: $padding-y * 2;
-                    }
                 }
             }
         }

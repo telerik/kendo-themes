@@ -32,19 +32,15 @@
 
         // Loading icon
         .k-i-loading {
-            width: $autocomplete-icon-width;
-            height: $autocomplete-icon-height;
+            width: $input-icon-width;
+            height: $input-icon-height;
         }
 
 
         // Clear value
         .k-clear-value {
-            width: $autocomplete-icon-width;
-            height: $autocomplete-icon-height;
-            outline: 0;
-            display: none;
-            cursor: pointer;
             opacity: .5;
+            visibility: hidden;
 
             &:hover {
                 opacity: 1;
@@ -55,7 +51,7 @@
         &.k-state-hover,
         &.k-state-focused {
             .k-clear-value {
-                display: inline-flex;
+                visibility: visible;
             }
         }
 
