@@ -4,9 +4,8 @@
 
     .k-numerictextbox {
         .k-numeric-wrap {
-            border-top: 1px solid transparent;
-            border-width: 0 0 $input-border-width;
-            position: relative;
+            border-width: $input-border-width 0;
+            border-top-color: transparent !important; // sass-lint:disable-line no-important
 
             .k-select {
                 width: $icon-size;

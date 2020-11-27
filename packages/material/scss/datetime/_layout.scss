@@ -1,6 +1,7 @@
 @import "~@progress/kendo-theme-default/scss/datetime/_layout.scss";
 
 @include exports("datetime/layout/material") {
+
     // Common
     .k-dateinput,
     .k-datepicker,
@@ -10,8 +11,8 @@
         // Wrappers
         .k-dateinput-wrap,
         .k-picker-wrap {
-            border-width: 0 0 $input-border-width;
-            position: relative;
+            border-width: $input-border-width 0;
+            border-top-color: transparent !important; // sass-lint:disable-line no-important
 
             .k-select {
                 border-width: 0;
@@ -93,4 +94,5 @@
             padding: $picker-select-padding-y $picker-select-padding-x;
         }
     }
+
 }
