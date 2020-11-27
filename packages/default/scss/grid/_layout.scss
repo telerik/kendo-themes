@@ -1115,6 +1115,71 @@
         margin: 0 auto;
         border: 1px solid;
     }
+
+    .k-header > .k-cell-inner {
+        margin: (-1 * $grid-header-padding-y) calc(-1 * calc( #{$button-calc-size} - #{$grid-cell-padding-x})) (-1 * $grid-header-padding-y) (-1 * $grid-cell-padding-x);
+    }
+
+    .k-filterable {
+        > .k-cell-inner {
+            margin: (-1 * $grid-header-padding-y) calc(-1 * #{$button-calc-size}) (-1 * $grid-header-padding-y) (-1 * $grid-cell-padding-x);
+
+            .k-link {
+                padding-right: 0;
+            }
+        }
+    }
+
+    .k-cell-inner {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        overflow: hidden;
+
+        > .k-link {
+            padding: $grid-header-padding-y $grid-header-padding-x;
+            width: auto;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            flex: 1;
+            overflow: hidden;
+
+            > .k-icon.k-i-sort-desc-sm,
+            > .k-icon.k-i-sort-asc-sm {
+                margin-left: 0;
+                display: inline-block;
+                flex-shrink: 0;
+            }
+
+        }
+
+        .k-sort-order {
+            flex-shrink: 0;
+            line-height: normal;
+        }
+
+        .k-grid-filter,
+        .k-header-column-menu {
+            position: static;
+        }
+
+        .k-grid-filter,
+        .k-header-column-menu,
+        .k-hierarchy-cell .k-icon {
+            text-align: center;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+    }
+
+    .k-column-title {
+        min-width: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        flex-shrink: 1;
+        overflow: hidden;
+    }
 }
 
 @include exports( "grid/pdf-export" ) {
@@ -1375,6 +1440,28 @@
         .k-columnmenu-item  > .k-icon {
             margin-left: $icon-spacing;
             margin-right: 0;
+        }
+
+        .k-header > .k-cell-inner {
+            margin-right: (-1 * $grid-cell-padding-x);
+            margin-left: calc(-1 * calc( #{$button-calc-size} - #{$grid-cell-padding-x}));
+
+            .k-sort-order {
+                margin-right: $grid-sorting-index-spacing-x;
+                margin-left: 0;
+            }
+        }
+
+        .k-filterable {
+            > .k-cell-inner {
+                margin-right: (-1 * $grid-cell-padding-x);
+                margin-left: calc(-1 * #{$button-calc-size});
+
+                .k-link {
+                    padding-right: $grid-header-padding-x;
+                    padding-left: 0;
+                }
+            }
         }
     }
 }
