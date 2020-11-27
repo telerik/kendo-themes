@@ -90,6 +90,14 @@ $grid-group-drag-clue-opacity: .9 !default;
         }
     }
 
+    .k-cell-inner {
+        .k-grid-filter,
+        .k-header-column-menu,
+        .k-hierarchy-cell .k-icon {
+            line-height: normal;
+        }
+    }
+
     .k-grouping-header {
 
         .k-group-indicator {
