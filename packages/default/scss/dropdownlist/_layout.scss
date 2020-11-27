@@ -23,12 +23,12 @@
             padding: 0;
             width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-flow: row nowrap;
             border-width: 1px;
             border-style: solid;
             box-sizing: border-box;
             position: relative;
-            transition: all .1s ease; // sass-lint:disable-block no-transition-all
+            transition: all .1s ease; // sass-lint:disable-line no-transition-all
             cursor: pointer;
             outline: 0;
 

@@ -27,8 +27,8 @@
             box-sizing: border-box;
             position: relative;
             display: flex;
-            flex-direction: row;
-            transition: all .1s ease; // sass-lint:disable-block no-transition-all
+            flex-flow: row nowrap;
+            transition: all .1s ease; // sass-lint:disable-line no-transition-all
             outline: 0;
             cursor: initial;
         }
