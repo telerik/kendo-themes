@@ -2,22 +2,22 @@
 
     // Autocomplete
     .k-autocomplete {
-        @include border-radius( $autocomplete-border-radius );
+        @include border-radius( $input-border-radius );
         @include use-background-clip();
-        width: $autocomplete-default-width;
-        border-width: $autocomplete-border-width;
+        width: $input-default-width;
+        border-width: $input-border-width;
         border-style: solid;
         outline: 0;
         box-sizing: border-box;
-        font-family: $autocomplete-font-family;
-        font-size: $autocomplete-font-size;
-        line-height: $autocomplete-line-height;
+        font-family: $input-font-family;
+        font-size: $input-font-size;
+        line-height: $input-line-height;
         white-space: nowrap;
         display: inline-flex;
         flex-flow: row nowrap;
         align-items: stretch;
         vertical-align: middle;
-        transition: $autocomplete-transition;
+        transition: all .1s ease; // sass-lint:disable-block no-transition-all
         position: relative;
         cursor: default;
         -webkit-touch-callout: none;
@@ -25,26 +25,20 @@
 
 
         // Input
-        .k-input {
-            padding: $autocomplete-padding-y $autocomplete-padding-x;
-        }
+        .k-input {}
 
 
         // Loading icon
         .k-i-loading {
-            width: $autocomplete-icon-width;
-            height: $autocomplete-icon-height;
+            width: $input-icon-width;
+            height: $input-icon-height;
         }
 
 
         // Clear value
         .k-clear-value {
-            width: $autocomplete-icon-width;
-            height: $autocomplete-icon-height;
-            outline: 0;
-            display: none;
-            cursor: pointer;
             opacity: .5;
+            visibility: hidden;
 
             &:hover {
                 opacity: 1;
@@ -55,7 +49,7 @@
         &.k-state-hover,
         &.k-state-focused {
             .k-clear-value {
-                display: inline-flex;
+                visibility: visible;
             }
         }
 

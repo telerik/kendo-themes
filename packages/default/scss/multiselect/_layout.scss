@@ -27,7 +27,7 @@
         .k-multiselect-wrap {
             @include use-background-clip();
             @include border-radius( $input-border-radius );
-            padding: 0 $picker-select-calc-size 0 0;
+            padding: 0 $input-icon-width 0 0;
             width: 100%;
             border-width: 1px;
             border-style: solid;
@@ -102,26 +102,19 @@
             }
 
             .k-i-loading {
-                height: ($input-line-height * $input-font-size);
-                line-height: ($input-line-height * $input-font-size);
+                width: $input-icon-width;
+                height: $input-icon-height;
                 position: absolute;
-                top: $input-padding-y;
-                right: $input-icon-offset;
+                top: 0;
+                right: 0;
             }
 
             .k-clear-value {
-                height: ($input-line-height * $input-font-size);
-                line-height: ($input-line-height * $input-font-size);
-                outline: 0;
-                cursor: pointer;
-                display: none;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
                 opacity: .5;
+                visibility: hidden;
                 position: absolute;
-                top: $input-padding-y;
-                right: $input-icon-offset;
+                top: 0;
+                right: 0;
 
                 &:hover {
                     opacity: 1;
@@ -131,7 +124,7 @@
             &.k-state-hover,
             &.k-state-focused {
                 .k-clear-value {
-                    display: inline-flex;
+                    visibility: visible;
                 }
             }
         }
@@ -141,7 +134,7 @@
         &.k-state-focused {
             > .k-multiselect-wrap {
                 .k-clear-value {
-                    display: inline-flex;
+                    visibility: visible;
                 }
             }
         }
@@ -151,7 +144,7 @@
             text-align: right;
 
             .k-multiselect-wrap {
-                padding-left: $picker-select-calc-size;
+                padding-left: $input-icon-width;
                 padding-right: 0;
 
                 &::before,
@@ -184,12 +177,8 @@
             .k-clear-value,
             .k-i-loading {
                 right: auto;
-                left: $input-icon-offset;
+                left: 0;
             }
-        }
-
-        ::-ms-clear {
-            display: none;
         }
     }
 }

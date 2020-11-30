@@ -74,13 +74,21 @@
             flex-shrink: 0;
         }
 
-        > .k-icon,
-        .k-clear-value > .k-icon {
-            width: $button-inner-calc-size;
-            height: $button-inner-calc-size;
+        > .k-icon {
+            width: $input-icon-width;
+            height: $input-icon-height;
             display: inline-flex;
+            flex-flow: row nowrap;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
+        }
+        > .k-clear-value {
+            opacity: .5;
+
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 
@@ -90,6 +98,7 @@
         width: $input-icon-width;
         height: $input-icon-height;
         display: inline-flex;
+        flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
@@ -111,9 +120,15 @@
     }
 
 
-    // TODO: remove
     // Clear value
     .k-clear-value {
+        width: $input-icon-width;
+        height: $input-icon-height;
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        outline: 0;
         cursor: pointer;
     }
 

@@ -27,8 +27,8 @@
             box-sizing: border-box;
             position: relative;
             display: flex;
-            flex-direction: row;
-            transition: all .1s ease; // sass-lint:disable-block no-transition-all
+            flex-flow: row nowrap;
+            transition: all .1s ease; // sass-lint:disable-line no-transition-all
             outline: 0;
             cursor: initial;
         }
@@ -40,18 +40,8 @@
 
         // Clear value
         .k-clear-value {
-            height: ($input-line-height * $input-font-size);
-            line-height: ($input-line-height * $input-font-size);
-            outline: 0;
-            cursor: pointer;
-            display: none;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
             opacity: .5;
-            position: absolute;
-            top: $input-padding-y;
-            right: $picker-icon-offset;
+            visibility: hidden;
 
             &:hover {
                 opacity: 1;
@@ -64,7 +54,7 @@
         .k-dropdown-wrap.k-state-hover,
         .k-dropdown-wrap.k-state-focused {
             .k-clear-value {
-                display: inline-flex;
+                visibility: visible;
             }
         }
 
@@ -84,12 +74,6 @@
             cursor: pointer;
         }
 
-        &.k-combobox-clearable {
-            .k-input {
-                padding-right: calc( #{$icon-size} + #{$padding-x} );
-            }
-        }
-
         &[dir="rtl"],
         .k-rtl & {
             text-align: right;
@@ -97,18 +81,6 @@
             .k-select {
                 @include border-left-radius-only( $input-border-radius );
                 border-width: 0 $combobox-select-border-width 0 0;
-            }
-
-            .k-clear-value {
-                right: auto;
-                left: $picker-icon-offset;
-            }
-
-            &.k-combobox-clearable {
-                .k-input {
-                    padding-left: calc( #{$icon-size} + #{$padding-x} );
-                    padding-right: $input-padding-x;
-                }
             }
         }
     }

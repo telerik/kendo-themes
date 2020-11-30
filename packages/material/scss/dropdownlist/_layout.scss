@@ -4,8 +4,8 @@
 
     .k-dropdown {
         .k-dropdown-wrap {
-            border-width: 0 0 $input-border-width;
-            position: relative;
+            border-width: $input-border-width 0;
+            border-top-color: transparent !important; // sass-lint:disable-line no-important
 
             .k-select {
                 font-size: $font-size;

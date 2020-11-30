@@ -12,8 +12,8 @@
         &::selection,
         .k-input::selection {
             @include fill (
-                $color: $input-selected-text,
-                $bg: $input-selected-bg
+                $color: $input-selected-text, // $primary-contrast,
+                $bg: $input-selected-bg // $primary
             );
         }
 
@@ -26,11 +26,6 @@
 
             .k-clear-value {
                 color: $clear-button-text;
-                opacity: .5;
-
-                &:hover {
-                    opacity: 1;
-                }
             }
         }
 
@@ -67,7 +62,7 @@
         &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            border-color: $invalid-border;
+            @include fill( $border: $invalid-border );
 
             &:focus,
             &:focus-within,

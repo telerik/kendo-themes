@@ -4,7 +4,8 @@
 
     // Textbox
     .k-textbox {
-        border-width: 0 0 $input-border-width;
+        border-width: $input-border-width 0;
+        border-top-color: transparent !important; // sass-lint:disable-line no-important
 
         &:disabled {
             border-style: dashed;

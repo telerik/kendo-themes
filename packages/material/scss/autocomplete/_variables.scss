@@ -1,21 +1,3 @@
-$autocomplete-default-width: $input-default-width !default;
-
-$autocomplete-padding-x: $input-padding-x !default;
-$autocomplete-padding-y: $input-padding-y !default;
-
-$autocomplete-border-width: 0 0 $input-border-width !default;
-$autocomplete-border-radius: $input-border-radius !default;
-
-$autocomplete-font-family: $input-font-family !default;
-$autocomplete-font-size: $input-font-size !default;
-$autocomplete-line-height: $input-line-height !default;
-
-$autocomplete-icon-width: calc( #{$icon-size} + #{$autocomplete-padding-y * 2} ) !default;
-$autocomplete-icon-height: calc( #{$autocomplete-line-height * $autocomplete-font-size} + #{$autocomplete-padding-y * 2} ) !default;
-
-$autocomplete-transition: all .1s ease !default;
-
-
 // Autocomplete
 $autocomplete-bg: $input-bg !default;
 $autocomplete-text: $input-text !default;
