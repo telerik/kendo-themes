@@ -86,7 +86,12 @@
 
         // Focused state
         td.k-state-focused,
-        th.k-state-focused {
+        th.k-state-focused,
+        th:focus,
+        .k-master-row > td:focus,
+        .k-grouping-row > td:focus,
+        .k-detail-row > td:focus,
+        .k-group-footer > td:focus {
             box-shadow: $grid-focused-shadow;
         }
 

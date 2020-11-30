@@ -30,7 +30,12 @@
             tr:hover,
             tr.k-state-hover,
             td.k-state-focused,
-            th.k-state-focused {
+            th.k-state-focused,
+            th:focus,
+            .k-master-row > td:focus,
+            .k-grouping-row > td:focus,
+            .k-detail-row > td:focus,
+            .k-group-footer > td:focus  {
                 background-color: $grid-hovered-bg;
             }
 
@@ -43,7 +48,12 @@
             }
 
             td.k-state-focused,
-            th.k-state-focused {
+            th.k-state-focused,
+            th:focus,
+            .k-master-row > td:focus,
+            .k-grouping-row > td:focus,
+            .k-detail-row > td:focus,
+            .k-group-footer > td:focus  {
                 &.k-grid-header-sticky,
                 &.k-grid-content-sticky,
                 &.k-grid-footer-sticky {
