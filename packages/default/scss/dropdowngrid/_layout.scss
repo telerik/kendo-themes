@@ -1,12 +1,14 @@
 @include exports("dropdowngrid/layout") {
-
     .k-dropdowngrid-popup {
         overflow: hidden;
     }
     .k-dropdowngrid-popup .k-virtual-wrap {
         margin: 0;
-    }
+    }​​​​​​​​
 
+    .k-dropdowngrid-popup .k-list-scroller {
+        overflow-x: hidden;
+    }
 
     // Grid list
     .k-grid-list {
