@@ -22,6 +22,10 @@
         text-overflow: ellipsis;
         cursor: pointer;
         outline: none;
+
+        &:focus {
+            outline: none;
+        }
     }
 
     // FAB Icon
@@ -118,6 +122,7 @@
         padding: $fab-item-icon-padding-y $fab-item-icon-padding-x;
         border-width: $fab-item-icon-border-width;
         border-radius: $fab-item-icon-border-radius;
+        box-sizing: content-box;
         cursor: pointer;
         outline: none;
     }
