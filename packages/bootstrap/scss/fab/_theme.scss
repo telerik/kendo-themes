@@ -42,6 +42,20 @@
         }
     }
 
+    // Disabled state
+    .k-fab.k-state-disabled,
+    .k-fab:disabled {
+        @include box-shadow($fab-disabled-shadow);
+        opacity: 1;
+    }
+
+    @each $name, $color in $fab-theme-colors {
+        .k-state-disabled.k-fab-#{$name},
+        .k-fab-#{$name}:disabled {
+            background-color: tint( $color, 5 );
+        }
+    }
+
     // Items
     .k-fab-item-text {
         @include fill(
@@ -86,4 +100,17 @@
         color: contrast-wcag( try-darken( $fab-item-icon-bg, 10% ) );
         background-color: try-darken( $fab-item-icon-bg, 10% );
     }
+
+    // Disabled state
+    .k-fab-item.k-state-disabled,
+    .k-fab-item:disabled {
+        opacity: 1;
+
+        .k-fab-item-text,
+        .k-fab-item-icon {
+            color: tint( $fab-item-text, 8 );
+            @include box-shadow($fab-item-disabled-shadow);
+        }
+    }
+
 }

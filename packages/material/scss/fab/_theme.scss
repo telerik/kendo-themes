@@ -40,6 +40,20 @@
         }
     }
 
+    // Disabled state
+    .k-fab.k-state-disabled,
+    .k-fab:disabled {
+        @include box-shadow($fab-disabled-shadow);
+        opacity: 1;
+    }
+
+    @each $name, $color in $fab-theme-colors {
+        .k-state-disabled.k-fab-#{$name},
+        .k-fab-#{$name}:disabled {
+            background-color: tint( $color, 5 );
+        }
+    }
+
     // Items
     .k-fab-item-text {
         @include fill(
@@ -81,6 +95,18 @@
     .k-fab-item:active .k-fab-item-icon {
         border-color: true-mix( #ffffff, $fab-item-icon-border, 12%);
         background-color: true-mix( #ffffff, $fab-item-icon-bg, 12%);
+    }
+
+    // Disabled state
+    .k-fab-item.k-state-disabled,
+    .k-fab-item:disabled {
+        opacity: 1;
+
+        .k-fab-item-text,
+        .k-fab-item-icon {
+            color: tint( $fab-item-text, 8 );
+            @include box-shadow($fab-item-disabled-shadow);
+        }
     }
 
     // Popup
