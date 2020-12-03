@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.27.0"></a>
+# [4.27.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.26.0...@progress/kendo-theme-default@4.27.0) (2020-12-03)
+
+
+### Bug Fixes
+
+* **multicolumncombobox:** remove the horizontal scroll from popup ([e01bee2](https://github.com/telerik/kendo-themes/commit/e01bee2))
+* **utils:** reverse middle pos in rtl ([ebdae05](https://github.com/telerik/kendo-themes/commit/ebdae05))
+* ripple effect for checkboxes and radios ([7dfce23](https://github.com/telerik/kendo-themes/commit/7dfce23))
+* **autocomplete:** remove redundant autocomplete variables ([5eebb0c](https://github.com/telerik/kendo-themes/commit/5eebb0c))
+* rework input clear icon styles: ([8457bf7](https://github.com/telerik/kendo-themes/commit/8457bf7))
+
+
+### Features
+
+* **grid:** add focus shadow to the cells on native browser focus ([28290d9](https://github.com/telerik/kendo-themes/commit/28290d9))
+* **grid:** col menu group header styles ([28ce0d4](https://github.com/telerik/kendo-themes/commit/28ce0d4))
+* **utils:** add grid-auto-flow unset class ([72fd876](https://github.com/telerik/kendo-themes/commit/72fd876))
+
+
+
+
 <a name="4.26.0"></a>
 # [4.26.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.25.2...@progress/kendo-theme-default@4.26.0) (2020-11-16)
 

@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.4.0...@progress/kendo-theme-classic@0.5.0) (2020-12-03)
+
+
+### Bug Fixes
+
+* ripple effect for checkboxes and radios ([7dfce23](https://github.com/telerik/kendo-themes/commit/7dfce23))
+* **autocomplete:** remove redundant autocomplete variables ([5eebb0c](https://github.com/telerik/kendo-themes/commit/5eebb0c))
+* rework input clear icon styles: ([8457bf7](https://github.com/telerik/kendo-themes/commit/8457bf7))
+
+
+### Features
+
+* **grid:** col menu group header styles ([28ce0d4](https://github.com/telerik/kendo-themes/commit/28ce0d4))
+
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.3.2...@progress/kendo-theme-classic@0.4.0) (2020-11-16)
 

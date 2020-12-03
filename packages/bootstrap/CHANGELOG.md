@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.25.0"></a>
+# [4.25.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.24.0...@progress/kendo-theme-bootstrap@4.25.0) (2020-12-03)
+
+
+### Bug Fixes
+
+* ripple effect for checkboxes and radios ([7dfce23](https://github.com/telerik/kendo-themes/commit/7dfce23))
+* **autocomplete:** remove redundant autocomplete variables ([5eebb0c](https://github.com/telerik/kendo-themes/commit/5eebb0c))
+* rework input clear icon styles: ([8457bf7](https://github.com/telerik/kendo-themes/commit/8457bf7))
+
+
+### Features
+
+* **grid:** add focus shadow to the cells on native browser focus ([28290d9](https://github.com/telerik/kendo-themes/commit/28290d9))
+* **grid:** col menu group header styles ([28ce0d4](https://github.com/telerik/kendo-themes/commit/28ce0d4))
+
+
+
+
 <a name="4.24.0"></a>
 # [4.24.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.23.2...@progress/kendo-theme-bootstrap@4.24.0) (2020-11-16)
 
