@@ -14,7 +14,7 @@ kendoThemeLink.href = kendoThemeLink.href.replace(/default/i, theme).replace(/al
 
 // Stop animations
 if (animations === true) {
-    document.documentElement.classList.add("k-no-animations");
-} else {
     document.documentElement.classList.remove("k-no-animations");
+} else {
+    document.documentElement.classList.add("k-no-animations");
 }

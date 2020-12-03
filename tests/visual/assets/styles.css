@@ -30,6 +30,8 @@ body {
 /* Prevent animations */
 .k-no-animations,
 .k-no-animations *,
+.k-no-animations ::before,
+.k-no-animations ::after,
 .k-i-loading:before,
 .k-i-loading:after,
 .k-loading-image::before,
