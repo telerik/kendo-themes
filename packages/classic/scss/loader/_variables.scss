@@ -41,6 +41,3 @@ $loader-container-font-size-md: $font-size-md !default;
 $loader-container-padding-lg: 25px !default;
 $loader-container-gap-lg: map-get( $spacing, 3 ) !default;
 $loader-container-font-size-lg: $font-size-lg !default;
-
-$loader-container-overlay-light-bg: rgba(255, 255, 255, .3) !default;
-$loader-container-overlay-dark-bg: rgba(0, 0, 0, .3) !default;
