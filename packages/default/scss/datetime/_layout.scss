@@ -451,7 +451,7 @@
     }
 
     .k-time-list .k-item {
-        padding: $list-item-padding-y $list-item-padding-x;
+        padding: $time-list-item-padding-y $time-list-item-padding-x;
         min-height: calc( #{decimal-round($line-height-em, 2)} + 2px );
         line-height: calc( #{decimal-round($line-height-em, 2)} + 2px );
     }
@@ -478,10 +478,11 @@
     }
 
     .k-time-separator {
+        width: 0;
+        height: 100%;
         display: inline-flex;
         align-self: center;
         justify-content: center;
-        height: 100%;
         z-index: 11;
     }
 }
