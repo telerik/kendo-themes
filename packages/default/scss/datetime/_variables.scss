@@ -10,12 +10,15 @@ $timepicker-header-height: 2em;
 
 $time-list-padding: $padding-y * 5 !default;
 $time-list-focus-size: 2px !default;
-$time-list-width: 5em !default;
+$time-list-width: 4em !default;
 $time-list-height: 200px !default;
+
+$time-list-item-padding-x: $padding-x !default;
+$time-list-item-padding-y: $padding-y !default;
 
 $dateinput-text: null !default;
 
-$datetime-width: ((4 * $time-list-width) + 1em) !default;
+$datetime-width: (5 * $time-list-width) !default;
 
 $datetime-bg: $input-bg !default;
 $datetime-text: $input-text !default;
