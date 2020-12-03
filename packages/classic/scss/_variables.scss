@@ -178,10 +178,20 @@ $error-darker: shade($error, 2) !default;
 /// @type Color
 $dark: #404040 !default;
 
+/// The overlay dark color of the theme.
+/// @group color-system
+/// @type Color
+$overlay-dark: rgba(0, 0, 0, .3) !default;
+
 /// The light color of the theme.
 /// @group color-system
 /// @type Color
 $light: #ebebeb !default;
+
+/// The overlay light color of the theme.
+/// @group color-system
+/// @type Color
+$overlay-light: rgba(255, 255, 255, .3) !default;
 
 /// Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark
 /// @group color-system
@@ -204,6 +214,13 @@ $theme-colors: map-merge((
 ), $theme-colors);
 // sass-lint:enable indentation
 
+$overlay-theme-colors: () !default;
+// sass-lint:disable indentation
+$overlay-theme-colors: map-merge((
+    "dark": $overlay-dark,
+    "light": $overlay-light
+), $overlay-theme-colors);
+// sass-lint:enable indentation
 
 // Cursor utility classes
 $cursors: ( auto, default, none, context-menu, help, pointer, progress, wait, cell, crosshair, text,

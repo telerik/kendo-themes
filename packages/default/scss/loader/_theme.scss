@@ -16,13 +16,10 @@
 
 @include exports( "loader-container/theme" ) {
 
-    .k-loader-container-overlay {
-        &.k-overlay-light {
-            background-color: $loader-container-overlay-light-bg;
-        }
 
-        &.k-overlay-dark {
-            background-color: $loader-container-overlay-dark-bg;
+    @each $name, $color in $overlay-theme-colors {
+        .k-loader-container-overlay.k-overlay-#{$name} {
+            background-color: $color;
         }
     }
 
