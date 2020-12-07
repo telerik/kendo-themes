@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Bottom Navigation Variants Flat</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area .colors {
+            padding: 10px 20px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+        }
+
+        #test-area .colors-flat {
+            background-color: rgb(234, 234, 234);
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <h2>Solid Colors</h2>
+        <div class="colors k-d-grid">
+            <section>
+                <h4>Primary ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-primary k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Secondary ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-secondary k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Tertiary ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-tertiary k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Info ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-info k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Success ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-success k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Warning ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-warning k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Error ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-error k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Dark ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-dark k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Light ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-light k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+        </div>
+
+        <h2>Flat Colors</h4>
+        <div class="colors colors-flat k-d-grid">
+            <section>
+                <h4>Primary ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-primary k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Secondary ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-secondary k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Tertiary ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-tertiary k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Info ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-info k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Success ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-success k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Warning ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-warning k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Error ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-error k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Dark ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-dark k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+
+            <section>
+                <h4>Light ThemeColor</h4>
+                <nav class="k-bottom-nav k-bottom-nav-light k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
+                    <span class="k-bottom-nav-item">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Normal</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-focus" href="#">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Focused</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-selected">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Selected</span>
+                    </span>
+                    <span class="k-bottom-nav-item k-state-disabled">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
+                        <span class="k-bottom-nav-item-text">Disabled</span>
+                    </span>
+                </nav>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
