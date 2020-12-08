@@ -93,6 +93,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        cursor: pointer;
 
         &.k-text-right {
             flex-direction: row;
@@ -123,7 +124,6 @@
         border-width: $fab-item-icon-border-width;
         border-radius: $fab-item-icon-border-radius;
         box-sizing: content-box;
-        cursor: pointer;
         outline: none;
     }
 
