@@ -21,6 +21,10 @@
             height: 100%;
         }
 
+        > .k-calendar {
+            border: 0;
+        }
+
         // Common
         .k-link {
             outline: 0;
@@ -366,7 +370,10 @@
                     }
                 }
             }
+        }
 
+        &-classic {
+            display: inline-flex;
         }
     }
 
