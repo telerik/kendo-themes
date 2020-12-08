@@ -21,13 +21,21 @@
     }
 
     .k-grid-header,
-    .k-grid-toolbar,
     .k-grouping-header,
     .k-grid-add-row,
     .k-grid-footer {
         @include fill(
             $color: $grid-header-text,
             $bg: $grid-header-bg
+        );
+    }
+
+    .k-grid-toolbar {
+        @include fill(
+            null,
+            null,
+            inherit,
+            null
         );
     }
 
@@ -112,10 +120,6 @@
                 border-color: $grid-sticky-border;
                 border-top-color: $grid-header-border;
             }
-        }
-
-        .k-grid-search {
-            color: $body-text;
         }
 
         // Locked columns

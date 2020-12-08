@@ -20,7 +20,7 @@
 
 <body>
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid">
 
         <span></span>
         <span>jQuery</span>
@@ -30,7 +30,7 @@
         <span>Toolbar</span>
         <section>
             <div class="k-widget k-grid">
-                <div class="k-header k-grid-toolbar">
+                <div class="k-toolbar k-grid-toolbar">
                     <button class="k-button">Button</button>
                     <span class="k-button-group">
                         <button class="k-button-icon k-button k-group-start"><span class="k-icon k-i-bold"></span></button>
@@ -42,7 +42,7 @@
         </section>
         <section>
             <kendo-grid class="k-widget k-grid">
-                <kendo-grid-toolbar class="k-header k-grid-toolbar">
+                <kendo-grid-toolbar class="k-toolbar k-grid-toolbar">
                     <button class="k-button">Button</button>
                     <kendo-buttongroup class="k-button-group">
                         <button class="k-button-icon k-button k-group-start"><span class="k-icon k-i-bold"></span></button>
@@ -56,25 +56,25 @@
 
         <span>Toolbar RTL</span>
         <section>
-            <div class="k-widget k-grid" dir="rtl">
-                <div class="k-header k-grid-toolbar">
+            <div class="k-widget k-grid k-rtl">
+                <div class="k-toolbar k-grid-toolbar">
                     <button class="k-button">Button</button>
                     <span class="k-button-group">
-                        <button class="k-button-icon k-button k-group-start"><span class="k-icon k-i-bold"></span></button>
+                        <button class="k-button-icon k-button k-group-end"><span class="k-icon k-i-bold"></span></button>
                         <button class="k-button-icon k-button"><span class="k-icon k-i-italic"></span></button>
-                        <button class="k-button-icon k-button k-group-end"><span class="k-icon k-i-underline"></span></button>
+                        <button class="k-button-icon k-button k-group-start"><span class="k-icon k-i-underline"></span></button>
                     </span>
                 </div>
             </div>
         </section>
         <section>
             <kendo-grid class="k-widget k-grid" dir="rtl">
-                <kendo-grid-toolbar class="k-header k-grid-toolbar">
+                <kendo-grid-toolbar class="k-toolbar k-grid-toolbar">
                     <button class="k-button">Button</button>
                     <kendo-buttongroup class="k-button-group">
-                        <button class="k-button-icon k-button k-group-start"><span class="k-icon k-i-bold"></span></button>
+                        <button class="k-button-icon k-button k-group-end"><span class="k-icon k-i-bold"></span></button>
                         <button class="k-button-icon k-button"><span class="k-icon k-i-italic"></span></button>
-                        <button class="k-button-icon k-button k-group-end"><span class="k-icon k-i-underline"></span></button>
+                        <button class="k-button-icon k-button k-group-start"><span class="k-icon k-i-underline"></span></button>
                     </kendo-buttongroup>
                 </kendo-grid-toolbar>
             </kendo-grid>
@@ -84,9 +84,10 @@
         <span>Search</span>
         <section>
             <div class="k-widget k-grid">
-                <div class="k-header k-grid-toolbar">
+                <div class="k-toolbar k-grid-toolbar">
                     <a class="k-button k-grid-pdf"><span class="k-icon k-i-file-pdf"></span>Export to PDF</a>
-                    <span class="k-textbox k-grid-search k-display-flex">
+                    <span class="k-toolbar-spacer"></span>
+                    <span class="k-textbox k-grid-search">
                         <input type="text" class="k-input" placeholder="Search" />
                         <span class="k-input-icon"><span class="k-icon k-i-search"></span></span>
                     </span>
@@ -98,10 +99,11 @@
 
         <span>Search RTL</span>
         <section>
-            <div class="k-widget k-grid" dir="rtl">
-                <div class="k-header k-grid-toolbar">
+            <div class="k-widget k-grid k-rtl">
+                <div class="k-toolbar k-grid-toolbar">
                     <a class="k-button k-grid-pdf"><span class="k-icon k-i-file-pdf"></span>Export to PDF</a>
-                    <span class="k-textbox k-grid-search k-display-flex">
+                    <span class="k-toolbar-spacer"></span>
+                    <span class="k-textbox k-grid-search">
                         <input type="text" class="k-input" placeholder="Search" />
                         <span class="k-input-icon"><span class="k-icon k-i-search"></span></span>
                     </span>
@@ -109,6 +111,44 @@
             </div>
         </section>
         <section></section>
+
+        <span>Multi-line</span>
+        <section>
+            <div class="k-widget k-grid">
+                <div class="k-toolbar k-grid-toolbar">
+                    <a class="k-button k-grid-pdf"><span class="k-icon k-i-file-pdf"></span>Export to PDF</a>
+                    <span class="k-toolbar-spacer"></span>
+                    <span class="k-textbox k-grid-search">
+                        <input type="text" class="k-input" placeholder="Search" />
+                        <span class="k-input-icon"><span class="k-icon k-i-search"></span></span>
+                    </span>
+                    <a role="button" class="k-button k-button-icontext k-grid-add" href="#"><span class="k-icon k-i-plus"></span>Add new record</a>
+                    <a role="button" class="k-button k-button-icontext k-grid-save-changes" href="#"><span class="k-icon k-i-check"></span>Save changes</a>
+                    <a role="button" class="k-button k-button-icontext k-grid-cancel-changes" href="#"><span class="k-icon k-i-cancel"></span>Cancel changes</a>
+                </div>
+            </div>
+        </section>
+        <section></section>
+
+        <span>Multiline RTL</span>
+        <section>
+            <div class="k-widget k-grid k-rtl">
+                <div class="k-toolbar k-grid-toolbar">
+
+                    <a class="k-button k-grid-pdf"><span class="k-icon k-i-file-pdf"></span>Export to PDF</a>
+                    <span class="k-toolbar-spacer"></span>
+                    <span class="k-textbox k-grid-search">
+                        <input type="text" class="k-input" placeholder="Search" />
+                        <span class="k-input-icon"><span class="k-icon k-i-search"></span></span>
+                    </span>
+                    <a role="button" class="k-button k-button-icontext k-grid-add" href="#"><span class="k-icon k-i-plus"></span>Add new record</a>
+                    <a role="button" class="k-button k-button-icontext k-grid-save-changes" href="#"><span class="k-icon k-i-check"></span>Save changes</a>
+                    <a role="button" class="k-button k-button-icontext k-grid-cancel-changes" href="#"><span class="k-icon k-i-cancel"></span>Cancel changes</a>
+                </div>
+            </div>
+        </section>
+        <section></section>
+
 
     </div>
 
