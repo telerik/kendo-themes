@@ -363,20 +363,9 @@
                 border-right-width: $grid-group-footer-second-cell-border;
             }
 
-            .k-grid-toolbar {
-
-                .k-button + .k-button {
-                    margin: 0 $grid-toolbar-spacing 0 0;
-                }
-            }
-
             .k-grouping-row .k-icon {
                 margin-left: #{$icon-size / 2};
                 margin-right: calc( #{$icon-size / 2} - #{$cell-padding-x} );
-            }
-
-            .k-grid-search {
-                float: left;
             }
 
             .k-column-resizer {
@@ -411,11 +400,6 @@
             bottom: 1px; // fix for vertical scrollbar appearing when no records template is displayed
         }
 
-        .k-grid-search {
-            width: $grid-search-width;
-            float: right;
-        }
-
         .k-grid-filter,
         .k-header-column-menu,
         .k-hierarchy-cell .k-icon {
@@ -425,21 +409,14 @@
 
     // Toolbar
     .k-grid-toolbar {
-        padding: $grid-toolbar-padding-y $grid-toolbar-padding-x;
         border-width: 0 0 1px;
-        border-style: solid;
-        border-color: inherit;
-        text-overflow: clip;
-        cursor: default;
-        display: block;
+        flex-shrink: 0;
+    }
 
-        > * {
-            vertical-align: middle;
-        }
-        > * + * {
-            margin-left: $grid-toolbar-spacing;
-        }
 
+    // Grid search
+    .k-grid-search {
+        width: $grid-search-width;
     }
 
 
@@ -1394,7 +1371,7 @@
         }
     }
 
-    [dir = "rtl"],
+    [dir="rtl"],
     .k-rtl {
         .k-columnmenu-item  > .k-icon {
             margin-left: $icon-spacing;

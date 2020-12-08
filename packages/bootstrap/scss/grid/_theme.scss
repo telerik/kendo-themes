@@ -106,10 +106,10 @@
     // Toolbar
     .k-grid-toolbar {
         @include fill(
-            $toolbar-text,
-            $toolbar-bg,
+            null,
+            null,
             inherit,
-            $toolbar-gradient
+            null
         );
     }
 
