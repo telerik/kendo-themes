@@ -6,6 +6,12 @@
         );
     }
 
+    .k-tilelayout-item:focus,
+    .k-tilelayout-item.k-state-focus,
+    .k-tilelayout-item.k-state-focused {
+        @include box-shadow($tilelayout-card-focus-shadow);
+    }
+
     .k-layout-item-hint {
         @include fill(
             $bg: $tilelayout-hint-bg,
