@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Slider CSS vars</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        body {
+            background: #eeeeee;
+        }
+
+        .k-slider-horizontal {
+            width: 100%;
+        }
+        .k-slider-vertical {
+            height: 300px;
+        }
+
+        .k-slider {
+            --kendo-slider-start: 0;
+            --kendo-slider-end: 60;
+        }
+        .k-range-slider {
+            --kendo-slider-start: 20;
+            --kendo-slider-end: 60;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
+
+        <span>Single</span>
+        <span>Range</span>
+        <span>Single RTL</span>
+        <span>Range RTL</span>
+
+
+        <!-- horizontal -->
+        <section>
+            <div class="k-widget k-slider k-slider-horizontal">
+                <a class="k-button k-button-decrease">
+                    <span class="k-icon k-i-arrow-w"></span>
+                </a>
+                <div class="k-slider-track-wrap">
+                    <ul class="k-reset k-slider-items">
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">0</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">25</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">50</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">75</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">100</span>
+                        </li>
+                    </ul>
+                    <div class="k-slider-track">
+                        <div class="k-slider-selection"></div>
+                        <a href="#" class="k-draghandle k-draghandle-end"></a>
+                    </div>
+                </div>
+                <a class="k-button k-button-increase">
+                    <span class="k-icon k-i-arrow-e"></span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <div class="k-widget k-slider k-range-slider k-slider-horizontal">
+                <a class="k-button k-button-decrease">
+                    <span class="k-icon k-i-arrow-w"></span>
+                </a>
+                <div class="k-slider-track-wrap">
+                    <ul class="k-reset k-slider-items">
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">0</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">25</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">50</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">75</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">100</span>
+                        </li>
+                    </ul>
+                    <div class="k-slider-track">
+                        <div class="k-slider-selection"></div>
+                        <a href="#" class="k-draghandle k-draghandle-start"></a>
+                        <a href="#" class="k-draghandle k-draghandle-end"></a>
+                    </div>
+                </div>
+                <a class="k-button k-button-increase">
+                    <span class="k-icon k-i-arrow-e"></span>
+                </a>
+            </div>
+        </section>
+        <section dir="rtl">
+            <div class="k-widget k-slider k-slider-horizontal">
+                <a class="k-button k-button-decrease">
+                    <span class="k-icon k-i-arrow-w"></span>
+                </a>
+                <div class="k-slider-track-wrap">
+                    <ul class="k-reset k-slider-items">
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">0</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">25</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">50</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">75</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">100</span>
+                        </li>
+                    </ul>
+                    <div class="k-slider-track">
+                        <div class="k-slider-selection"></div>
+                        <a href="#" class="k-draghandle k-draghandle-end"></a>
+                    </div>
+                </div>
+                <a class="k-button k-button-increase">
+                    <span class="k-icon k-i-arrow-e"></span>
+                </a>
+            </div>
+        </section>
+        <section dir="rtl">
+            <div class="k-widget k-slider k-range-slider k-slider-horizontal">
+                <a class="k-button k-button-decrease">
+                    <span class="k-icon k-i-arrow-w"></span>
+                </a>
+                <div class="k-slider-track-wrap">
+                    <ul class="k-reset k-slider-items">
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">0</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">25</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">50</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">75</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">100</span>
+                        </li>
+                    </ul>
+                    <div class="k-slider-track">
+                        <div class="k-slider-selection"></div>
+                        <a href="#" class="k-draghandle k-draghandle-start"></a>
+                        <a href="#" class="k-draghandle k-draghandle-end"></a>
+                    </div>
+                </div>
+                <a class="k-button k-button-increase">
+                    <span class="k-icon k-i-arrow-e"></span>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- vertical -->
+        <section>
+            <div class="k-widget k-slider k-slider-vertical">
+                <a class="k-button k-button-decrease">
+                    <span class="k-icon k-i-arrow-s"></span>
+                </a>
+                <div class="k-slider-track-wrap">
+                    <ul class="k-reset k-slider-items">
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">0</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">25</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">50</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">75</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">100</span>
+                        </li>
+                    </ul>
+                    <div class="k-slider-track">
+                        <div class="k-slider-selection"></div>
+                        <a href="#" class="k-draghandle k-draghandle-end"></a>
+                    </div>
+                </div>
+                <a class="k-button k-button-increase">
+                    <span class="k-icon k-i-arrow-n"></span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <div class="k-widget k-slider k-range-slider k-slider-vertical">
+                <a class="k-button k-button-decrease">
+                    <span class="k-icon k-i-arrow-s"></span>
+                </a>
+                <div class="k-slider-track-wrap">
+                    <ul class="k-reset k-slider-items">
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">0</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">25</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">50</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">75</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">100</span>
+                        </li>
+                    </ul>
+                    <div class="k-slider-track">
+                        <div class="k-slider-selection"></div>
+                        <a href="#" class="k-draghandle k-draghandle-start"></a>
+                        <a href="#" class="k-draghandle k-draghandle-end"></a>
+                    </div>
+                </div>
+                <a class="k-button k-button-increase">
+                    <span class="k-icon k-i-arrow-n"></span>
+                </a>
+            </div>
+        </section>
+        <section dir="rtl">
+            <div class="k-widget k-slider k-slider-vertical">
+                <a class="k-button k-button-decrease">
+                    <span class="k-icon k-i-arrow-s"></span>
+                </a>
+                <div class="k-slider-track-wrap">
+                    <ul class="k-reset k-slider-items">
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">0</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">25</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">50</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">75</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">100</span>
+                        </li>
+                    </ul>
+                    <div class="k-slider-track">
+                        <div class="k-slider-selection"></div>
+                        <a href="#" class="k-draghandle k-draghandle-end"></a>
+                    </div>
+                </div>
+                <a class="k-button k-button-increase">
+                    <span class="k-icon k-i-arrow-n"></span>
+                </a>
+            </div>
+        </section>
+        <section dir="rtl">
+            <div class="k-widget k-slider k-range-slider k-slider-vertical">
+                <a class="k-button k-button-decrease">
+                    <span class="k-icon k-i-arrow-s"></span>
+                </a>
+                <div class="k-slider-track-wrap">
+                    <ul class="k-reset k-slider-items">
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">0</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">25</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">50</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">75</span>
+                        </li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick"></li>
+                        <li class="k-tick k-tick-large">
+                            <span class="k-label">100</span>
+                        </li>
+                    </ul>
+                    <div class="k-slider-track">
+                        <div class="k-slider-selection"></div>
+                        <a href="#" class="k-draghandle k-draghandle-start"></a>
+                        <a href="#" class="k-draghandle k-draghandle-end"></a>
+                    </div>
+                </div>
+                <a class="k-button k-button-increase">
+                    <span class="k-icon k-i-arrow-n"></span>
+                </a>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
