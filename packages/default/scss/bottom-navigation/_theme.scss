@@ -40,7 +40,11 @@
             &.k-bottom-nav-#{$name} .k-bottom-nav-item.k-state-selected,
             &.k-bottom-nav-#{$name} .k-bottom-nav-item.k-state-active,
             &.k-bottom-nav-#{$name} .k-bottom-nav-item:active {
-                @include fill( $color: try-shade($color, 1) );
+                @if $name == "secondary" or $name == "light" {
+                    @include fill( $color: try-shade($color, 3) );
+                } @else {
+                    @include fill( $color: $color );
+                }
             }
         }
     }
