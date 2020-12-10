@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.28.0"></a>
+# [4.28.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.27.0...@progress/kendo-theme-default@4.28.0) (2020-12-10)
+
+
+### Bug Fixes
+
+* add k-input-separator styles ([bfc591e](https://github.com/telerik/kendo-themes/commit/bfc591e))
+* **calendar:** double border in angular classic calendar ([0ae3bab](https://github.com/telerik/kendo-themes/commit/0ae3bab))
+* **datetime:** hover style for single k-link hover ([82db441](https://github.com/telerik/kendo-themes/commit/82db441))
+* **expansion-panel:** remove focus outline ([bff1c4b](https://github.com/telerik/kendo-themes/commit/bff1c4b))
+* sort indicator not visible if text overflows ([06c9caa](https://github.com/telerik/kendo-themes/commit/06c9caa))
+* **calendar:** generated css has duplicate code ([fdf5bd6](https://github.com/telerik/kendo-themes/commit/fdf5bd6))
+* **expansion-panel:** content animation flicker ([4f6d9c1](https://github.com/telerik/kendo-themes/commit/4f6d9c1))
+* **fab:** apply pointer cursor on item ([4cc3405](https://github.com/telerik/kendo-themes/commit/4cc3405))
+* **fab:** remove focus outline and add box-sizing to item icons ([f07f5da](https://github.com/telerik/kendo-themes/commit/f07f5da))
+* **grid:** use toolbar styles for grid toolbar ([f429b96](https://github.com/telerik/kendo-themes/commit/f429b96))
+
+
+### Features
+
+* **bottom-navigation:** add styles for bottom navigation component ([5c97343](https://github.com/telerik/kendo-themes/commit/5c97343))
+* **column-menu:** update spacings based on latest design ([b82f31c](https://github.com/telerik/kendo-themes/commit/b82f31c))
+* **datetimepicker:** add milliseconds column in popup picker ([8f20baf](https://github.com/telerik/kendo-themes/commit/8f20baf))
+* **tilelayout:** navigation shadow ([2aedeff](https://github.com/telerik/kendo-themes/commit/2aedeff))
+* **utils:** add styles spacer utility classnames ([b0e3902](https://github.com/telerik/kendo-themes/commit/b0e3902))
+
+
+
+
 <a name="4.27.0"></a>
 # [4.27.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.26.0...@progress/kendo-theme-default@4.27.0) (2020-12-03)
 

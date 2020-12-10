@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.26.0"></a>
+# [4.26.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.25.0...@progress/kendo-theme-bootstrap@4.26.0) (2020-12-10)
+
+
+### Bug Fixes
+
+* **fab:** line height issue in material and bootstrap themes ([80f03e3](https://github.com/telerik/kendo-themes/commit/80f03e3))
+* **fab:** remove focus outline and add box-sizing to item icons ([f07f5da](https://github.com/telerik/kendo-themes/commit/f07f5da))
+* **grid:** use toolbar styles for grid toolbar ([f429b96](https://github.com/telerik/kendo-themes/commit/f429b96))
+
+
+### Features
+
+* **bottom-navigation:** add styles for bottom navigation component ([5c97343](https://github.com/telerik/kendo-themes/commit/5c97343))
+* **column-menu:** update spacings based on latest design ([b82f31c](https://github.com/telerik/kendo-themes/commit/b82f31c))
+* **datetimepicker:** add milliseconds column in popup picker ([8f20baf](https://github.com/telerik/kendo-themes/commit/8f20baf))
+* **tilelayout:** navigation shadow ([2aedeff](https://github.com/telerik/kendo-themes/commit/2aedeff))
+* **utils:** add styles spacer utility classnames ([b0e3902](https://github.com/telerik/kendo-themes/commit/b0e3902))
+
+
+
+
 <a name="4.25.0"></a>
 # [4.25.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.24.0...@progress/kendo-theme-bootstrap@4.25.0) (2020-12-03)
 
