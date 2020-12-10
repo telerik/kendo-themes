@@ -92,6 +92,13 @@
         }
     }
 
+    .k-input-separator {
+        margin: 0;
+        width: 0;
+        height: $icon-size;
+        border-width: 0 0 0 1px;
+        border-style: solid;
+    }
 
     // Input with icon styles
     .k-input-icon {
