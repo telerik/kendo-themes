@@ -33,7 +33,7 @@
         .k-bottom-nav-item.k-state-focus,
         .k-bottom-nav-item.k-state-focused,
         .k-bottom-nav-item:focus {
-            @include fill( $bg: rgba($bottom-nav-flat-text, .2) );
+            @include fill( $bg: rgba($bottom-nav-flat-text, .05) );
         }
 
         @each $name, $color in $theme-colors {
