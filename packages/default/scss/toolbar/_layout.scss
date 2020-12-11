@@ -4,7 +4,7 @@
     .k-toolbar {
         @include use-background-clip();
         margin: 0;
-        padding: $toolbar-padding-y $toolbar-padding-x;
+        padding: 0 0 $toolbar-padding-y $toolbar-padding-x;
         border-width: $toolbar-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -15,7 +15,6 @@
         list-style: none;
         display: flex;
         flex-flow: row wrap;
-        gap: $toolbar-spacing;
         align-items: center;
         justify-content: flex-start;
         position: relative;
@@ -35,6 +34,7 @@
         }
 
         > * {
+            margin: $toolbar-spacing $toolbar-spacing 0 0;
             flex-shrink: 0;
             display: inline-flex;
             align-items: stretch;
