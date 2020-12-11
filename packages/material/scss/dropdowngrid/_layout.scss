@@ -1,1 +1,15 @@
 @import "~@progress/kendo-theme-default/scss/dropdowngrid/_layout.scss";
+
+@include exports("dropdowngrid/layout/material") {
+
+    // TODO: Change to $line-height when Material line-height is changed.
+    .k-grid-list > .k-outer-group-header {
+        height: calc( #{$grid-header-padding-y * 2} + (#{$font-size} * (20 / 12)) );
+    }
+
+    .k-grid-list > .k-outer-group-header > strong {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+
+}

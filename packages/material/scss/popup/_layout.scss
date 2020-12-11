@@ -3,16 +3,16 @@
 @include exports("popup/layout/material") {
 
     .k-popup {
-        .k-group-header {
-            text-transform: uppercase;
-        }
 
         &.k-colorpicker-popup {
             padding: 0;
         }
 
+        // TODO: Change to $line-height when Material line-height is changed.
+        .k-group-header,
         .k-outer-group-header {
-            line-height: $line-height-lg;
+            line-height: (20 / 12);
+            text-transform: uppercase;
         }
     }
 
