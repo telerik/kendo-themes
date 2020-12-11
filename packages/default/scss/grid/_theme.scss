@@ -37,6 +37,7 @@
             inherit,
             null
         );
+        @include box-shadow( none );
     }
 
     .k-drag-clue {
