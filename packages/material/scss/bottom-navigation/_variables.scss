@@ -1,6 +1,7 @@
 // Bottom-navigation
-$bottom-nav-padding-y: null !default;
-$bottom-nav-padding-x: null !default;
+$bottom-nav-padding-x: 0px !default;
+$bottom-nav-padding-y: $bottom-nav-padding-x !default;
+$bottom-nav-gap: $bottom-nav-padding-x !default;
 $bottom-nav-border-width: 1px 0px 0px 0px !default;
 
 $bottom-nav-font-family: $font-family !default;
@@ -12,8 +13,9 @@ $bottom-nav-item-padding-x: map-get( $spacing, 2 ) !default;
 $bottom-nav-item-padding-y: 0 !default;
 $bottom-nav-item-min-width: 72px !default;
 $bottom-nav-item-max-width: null !default;
-$bottom-nav-item-min-height: calc( #{$icon-size * 2.5} + #{$padding-x-sm * 2} ) !default;
-$bottom-nav-item-gap: 0 map-get( $spacing, 2 ) !default;
+$bottom-nav-item-min-height: calc( #{$icon-size * 2.5} + #{$padding-x-sm * 2} - #{$bottom-nav-padding-x * 2} ) !default;
+$bottom-nav-item-border-radius: null !default;
+$bottom-nav-item-gap: 0 map-get( $spacing, 1 ) !default;
 
 $bottom-nav-item-icon-margin-y: map-get( $spacing, 2 ) !default;
 $bottom-nav-item-icon-margin-x: $bottom-nav-item-icon-margin-y !default;

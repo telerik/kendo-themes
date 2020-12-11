@@ -33,14 +33,18 @@
         .k-bottom-nav-item.k-state-focus,
         .k-bottom-nav-item.k-state-focused,
         .k-bottom-nav-item:focus {
-            @include fill( $bg: rgba($bottom-nav-flat-text, .2) );
+            @include fill( $bg: rgba($bottom-nav-flat-text, .05) );
         }
 
         @each $name, $color in $theme-colors {
             &.k-bottom-nav-#{$name} .k-bottom-nav-item.k-state-selected,
             &.k-bottom-nav-#{$name} .k-bottom-nav-item.k-state-active,
             &.k-bottom-nav-#{$name} .k-bottom-nav-item:active {
-                @include fill( $color: try-shade($color, 1) );
+                @if $name == "secondary" or $name == "light" {
+                    @include fill( $color: try-shade($color, 3) );
+                } @else {
+                    @include fill( $color: $color );
+                }
             }
         }
     }
