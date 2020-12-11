@@ -26,14 +26,14 @@
         &::before {
             content: "";
             height: $button-calc-size;
-            margin-inline-start: -$toolbar-spacing;
         }
 
         &.k-toolbar-resizable {
             flex-wrap: nowrap;
         }
 
-        > * {
+        > *,
+        .k-textbox {
             margin: $toolbar-spacing $toolbar-spacing 0 0;
             flex-shrink: 0;
             display: inline-flex;
