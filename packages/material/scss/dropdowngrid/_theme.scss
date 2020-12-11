@@ -1,1 +1,9 @@
 @import "~@progress/kendo-theme-default/scss/dropdowngrid/_theme.scss";
+
+@include exports("dropdowngrid/theme/material") {
+
+    .k-grid-list > .k-outer-group-header > strong {
+        border-color: $grid-border;
+    }
+
+}

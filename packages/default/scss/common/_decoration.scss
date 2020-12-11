@@ -11,8 +11,9 @@
     .k-color-inherit     { color: inherit; }
 
     @each $name, $color in $theme-colors {
+        .k-text-#{$name},
         .k-color-#{$name} {
-            color: $color;
+            color: $color !important;
         }
     }
 

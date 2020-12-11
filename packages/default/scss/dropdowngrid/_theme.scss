@@ -26,7 +26,8 @@
 
 
     // Group header
-    .k-dropdowngrid-popup .k-group-header {
+    .k-dropdowngrid-popup .k-group-header,
+    .k-dropdowngrid-popup .k-outer-group-header.k-first {
         border-color: $grid-header-border;
         color: $grid-header-text;
         background-color: $grid-header-bg;
@@ -34,8 +35,15 @@
 
 
     // Alt
-    .k-dropdowngrid-popup .k-item:nth-child(2n) {
+    .k-grid-list > .k-item:nth-child(2n) {
         background-color: $grid-alt-bg;
+    }
+    .k-grid-list > .k-outer-group-header:nth-child(2n) {
+        background: none;
+
+        > strong {
+            background-color: $grid-alt-bg;
+        }
     }
 
 
