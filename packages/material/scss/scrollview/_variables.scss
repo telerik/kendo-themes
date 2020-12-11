@@ -8,23 +8,30 @@ $scrollview-bg: $component-bg !default;
 $scrollview-text: $component-text !default;
 $scrollview-border: $component-border !default;
 
-$scrollview-pagebutton-size: 8px !default;
-$scrollview-pagebutton-bg: rgba(black, .4) !default;
-$scrollview-pagebutton-border: null !default;
+$scrollview-pagebutton-size: 10px !default;
+$scrollview-pagebutton-bg: $button-bg !default;
+$scrollview-pagebutton-border: $button-border !default;
 $scrollview-pagebutton-primary-bg: $primary-button-bg !default;
-$scrollview-pagebutton-primary-border: null !default;
-$scrollview-pagebutton-shadow: 0 0 2px rgba(0, 0, 0, .08) !default;
+$scrollview-pagebutton-primary-border: $primary-button-border !default;
+$scrollview-pagebutton-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
-$scrollview-pager-offset: 20px !default;
-$scrollview-pager-item-spacing: 8px !default;
-$scrollview-pager-item-border-width: 0px !default;
-$scrollview-pager-height: calc( #{$scrollview-pagebutton-size} + #{$scrollview-pager-item-border-width * 2} + #{$scrollview-pager-item-spacing / 2} ) !default;
+$scrollview-pager-offset: 0 !default;
+$scrollview-pager-item-spacing: 20px !default;
+$scrollview-pager-item-border-width: 0 !default;
+$scrollview-pager-height: calc( #{$scrollview-pagebutton-size} + #{$scrollview-pager-item-border-width * 2} + #{$scrollview-pager-item-spacing * 2} ) !default;
+
+$scrollview-pager-multidot-threshold: 10;
+$scrollview-pager-multidot-intermediate: 3;
+$scrollview-pager-multidot-step: 1px;
 
 $scrollview-arrow-icon-size: 4.5em !default;
 $scrollview-arrow-tap-highlight-color: $rgba-transparent !default;
-$scrollview-navigation-color: $base-text !default;
+$scrollview-navigation-color: white !default;
 $scrollview-navigation-icon-shadow: rgba(0, 0, 0, .3) 0 0 15px !default;
 $scrollview-navigation-bg: rgba(0, 0, 0, 0) !default;
 $scrollview-navigation-default-opacity: .7 !default;
 $scrollview-navigation-hover-opacity: 1 !default;
-$scrollview-navigation-hover-span-bg: rgba($base-bg, .4) !default;
+$scrollview-navigation-hover-span-bg: null !default;
+
+$scrollview-light-bg: rgba(255, 255, 255, .2) !default;
+$scrollview-dark-bg: rgba(0, 0, 0, .2) !default;

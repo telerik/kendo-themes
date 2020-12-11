@@ -2,7 +2,7 @@
 
     // refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
     kendo-scrollview.k-scrollview-wrap,
-    div.k-scrollview {
+    .k-scrollview {
         @extend .k-text-selection !optional;
         @include fill(
             $scrollview-text,
@@ -10,26 +10,86 @@
             $scrollview-border
         );
 
-        .k-scrollview-pageable,
-        .k-scrollview-nav {
-            margin-left: $carousel-control-width;
-            margin-right: $carousel-control-width;
-            width: auto;
-            left: 0;
-            right: 0;
+        &.k-scrollview-dark {
+            kendo-scrollview-pager,
+            .k-scrollview-nav-wrap {
+                background-color: $scrollview-dark-bg;
+            }
+            .k-scrollview-next,
+            .k-scrollview-prev {
+                color: $scrollview-dark-bg;
 
-            > li {
-                background-color: $scrollview-pagebutton-bg;
-                margin-right: $carousel-indicator-spacer;
-                margin-left: $carousel-indicator-spacer;
-                padding: 0;
-                max-width: $carousel-indicator-width;
-                height: $carousel-indicator-height;
-                border-width: 0;
-                border-radius: 0;
-                flex: 1 0 auto;
-                position: relative;
             }
         }
+
+        &.k-scrollview-light {
+            kendo-scrollview-pager,
+            .k-scrollview-nav-wrap {
+                background-color: $scrollview-light-bg;
+            }
+
+        }
     }
+
+    .k-scrollview:focus,
+    .k-scrollview-wrap:focus  {
+        outline: none;
+
+    }
+
+    .k-scrollview-next,
+    .k-scrollview-prev {
+        color: $scrollview-navigation-color;
+        background-color: $scrollview-navigation-bg;
+        text-shadow: $scrollview-navigation-icon-shadow;
+        opacity: $scrollview-navigation-default-opacity;
+        outline-width: 0;
+
+        &:focus,
+        &.k-state-focus {
+            color: $scrollview-navigation-color;
+            opacity: $scrollview-navigation-hover-opacity;
+            .k-icon::before {
+                box-shadow: $scrollview-pagebutton-shadow;
+                background-color: $scrollview-navigation-hover-span-bg;
+            }
+        }
+
+        &:hover,
+        &.k-state-hover {
+            color: $scrollview-navigation-color;
+            opacity: $scrollview-navigation-hover-opacity;
+
+        }
+    }
+
+
+
+    .k-scrollview-pageable > .k-button,
+    .k-scrollview-nav > .k-link {
+        background-color: $scrollview-pagebutton-bg;
+        border-color: $scrollview-pagebutton-border;
+        background-clip: padding-box;
+
+        &.k-primary {
+            background: $scrollview-pagebutton-primary-bg;
+            border: $scrollview-pagebutton-primary-border;
+        }
+
+
+        &:focus,
+        &.k-state-focused {
+            box-shadow: $scrollview-pagebutton-shadow;
+        }
+    }
+
+    .k-scrollview-nav > .k-link:hover,
+    .k-scrollview-nav > .k-link.k-state-hover {
+        box-shadow: $scrollview-pagebutton-shadow;
+    }
+
+    .k-scrollview-pageable > .k-button {
+        box-shadow: inset 0 0 2px rgba(0, 0, 0, .08);
+    }
+
 }

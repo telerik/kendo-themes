@@ -2,7 +2,7 @@
 
     // refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
     kendo-scrollview.k-scrollview-wrap,
-    div.k-scrollview {
+    .k-widget.k-scrollview {
         border-width: $scrollview-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -15,162 +15,161 @@
         display: block;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
+    }
 
-        .k-scrollview,
-        ul.k-scrollview-wrap {
-            list-style-type: none;
-            position: absolute;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            cursor: default;
+    .k-scrollview-wrap .k-scrollview,
+    .k-scrollview .k-scrollview-wrap {
+        list-style-type: none;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        cursor: default;
+        white-space: nowrap;
 
-            img {
-                user-select: none;
-            }
-
-            & > li {
-                display: inline-block;
-                overflow: hidden;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
+        img {
+            user-select: none;
         }
 
-        .k-scrollview-pageable,
-        .k-scrollview-nav {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            list-style: none;
-            position: absolute;
-            left: 0;
-            bottom: $scrollview-pager-offset;
-            pointer-events: none;
-        }
-
-        .k-scrollview-pageable > li.k-button,
-        .k-scrollview-nav > li.k-link {
-            margin: 0 $scrollview-pager-item-spacing;
-            padding: 0;
-            width: $scrollview-pagebutton-size;
-            height: $scrollview-pagebutton-size;
-            box-sizing: content-box;
+        & > li {
             display: inline-block;
-            position: relative;
-            flex: 0 0 $scrollview-pagebutton-size;
-            border-width: $scrollview-pager-item-border-width;
-            border-style: solid;
-            border-radius: 50%;
-            cursor: pointer;
-            pointer-events: all;
-
-            &::before {
-                content: "";
-                width: $scrollview-pagebutton-size + $scrollview-pager-item-spacing;
-                height: $scrollview-pager-height;
-                display: block;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
 
-        // remove when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
-        .k-scrollview-pageable > li.k-button::before {
+        & > [data-role="page"] {
+            vertical-align: top;
+            display: inline-block;
+            min-height: 1px;
+        }
+    }
+
+    kendo-scrollview.k-scrollview-wrap.k-scrollview-multidot .k-scrollview-pageable > .k-button,
+    .k-widget.k-scrollview.k-scrollview-multidot .k-scrollview-nav > .k-link {
+
+        &:nth-last-of-type(1),
+        &:nth-of-type(1) {
+            width: ($scrollview-pagebutton-size - 6px);
+            height: ($scrollview-pagebutton-size - 6px);
+        }
+
+        &:nth-last-of-type(2),
+        &:nth-of-type(2) {
+            width: ($scrollview-pagebutton-size - 4px);
+            height: ($scrollview-pagebutton-size - 4px);
+        }
+
+        &:nth-last-of-type(3),
+        &:nth-of-type(3) {
+            width: ($scrollview-pagebutton-size - 2px);
+            height: ($scrollview-pagebutton-size - 2px);
+        }
+    }
+
+    kendo-scrollview.k-scrollview-wrap kendo-scrollview-pager,
+    .k-scrollview-nav-wrap {
+
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: $scrollview-pager-offset;
+        height: $scrollview-pager-height;
+        text-align: center;
+    }
+
+    .k-scrollview-pageable,
+    .k-scrollview-nav {
+        margin: 0;
+        padding:  $scrollview-pager-item-spacing;
+        max-width: 100%;
+        box-sizing: border-box;
+        line-height: 0;
+        text-align: center;
+        white-space: nowrap;
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        pointer-events: initial;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .k-scrollview-pageable > .k-button,
+    .k-scrollview-nav > .k-link {
+        margin: 0 ($scrollview-pager-item-spacing / 2);
+        padding: 0;
+        width: $scrollview-pagebutton-size;
+        height: $scrollview-pagebutton-size;
+        border-width: $scrollview-pager-item-border-width;
+        border-style: solid;
+        border-radius: 50%;
+        box-sizing: content-box;
+        display: inline-block;
+        position: relative;
+        flex: 0 0 auto;
+        cursor: pointer;
+        pointer-events: all;
+        vertical-align: top;
+
+        &::before {
+            content: "";
+            width: ($scrollview-pagebutton-size + $scrollview-pager-item-spacing);
+            height: ($scrollview-pagebutton-size + $scrollview-pager-item-spacing);
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             pointer-events: initial;
             border-radius: 0;
         }
+    }
 
-        .k-scrollview-next,
-        .k-scrollview-prev {
-            display: table;
-            position: absolute;
-            padding: 0;
-            height: 60%;
-            top: 20%;
-            text-decoration: none;
-            user-select: none;
-            cursor: pointer;
-            overflow: hidden;
-            -webkit-tap-highlight-color: $scrollview-arrow-tap-highlight-color;
-        }
+    .k-scrollview-next,
+    .k-scrollview-prev {
+        display: table;
+        position: absolute;
+        padding: 0;
+        height: 60%;
+        top: 20%;
+        text-decoration: none;
+        user-select: none;
+        cursor: pointer;
 
-        .k-scrollview-prev {
-            left: 0;
-        }
-
-        .k-scrollview-next {
-            right: 0;
-        }
-
-        .k-scrollview-next span,
-        .k-scrollview-prev span {
+        .k-icon {
             display: table-cell;
+            overflow: visible;
             margin: 0;
             padding: 0;
             vertical-align: middle;
             font-size: $scrollview-arrow-icon-size;
             font-weight: normal;
         }
-
-        .k-scrollview-elements {
-            width: 100%;
-        }
-
-        .k-scrollview-animation {
-            transition-duration: .3s;
-            transition-timing-function: ease-in-out;
-        }
-
     }
 
-    // refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
-    div.k-scrollview {
-
-        div.k-scrollview-wrap {
-            white-space: nowrap;
-
-            & > [data-role="page"] {
-                vertical-align: top;
-                display: inline-block;
-                min-height: 1px;
-            }
-        }
-
-        .k-scrollview-nav-wrap {
-            position: absolute;
-            bottom: ($scrollview-pager-offset - ($scrollview-pager-item-spacing / 4));
-            left: ($scrollview-pager-item-spacing / 2);
-            right: ($scrollview-pager-item-spacing / 2);
-            height: $scrollview-pager-height;
-            overflow: hidden;
-
-            .k-scrollview-nav {
-                margin: 0;
-                padding: ($scrollview-pager-item-spacing / 4) 0 0 0;
-                display: block;
-                white-space: nowrap;
-                overflow-x: scroll;
-                overflow-y: hidden;
-                text-align: center;
-                list-style: none;
-                position: static;
-                pointer-events: initial;
-
-                > li {
-                    vertical-align: top;
-                }
-            }
-        }
-
+    .k-scrollview-prev {
+        left: 0;
     }
+
+    .k-scrollview-next {
+        right: 0;
+    }
+
+
+    .k-scrollview-animation {
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+    }
+
 
     @supports (-webkit-user-select: none) {
         kendo-scrollview.k-scrollview-wrap ul.k-scrollview li > *,
