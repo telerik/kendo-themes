@@ -1,7 +1,6 @@
 @include exports("scrollview/theme") {
 
-    // refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
-    kendo-scrollview.k-scrollview-wrap,
+    kendo-scrollview.k-scrollview,
     div.k-scrollview {
         @extend .k-text-selection !optional;
         @include fill(
