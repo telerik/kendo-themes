@@ -24,6 +24,8 @@ $grid-cell-padding-y: $grid-padding-y !default;
 $grid-cell-horizontal-border-width: 0px !default;
 $grid-cell-vertical-border-width: 1px !default;
 
+$grid-cell-checkbox-margin-y: calc( #{$cell-padding-y} - (#{$button-calc-size} - #{$line-height-em}) / 2 ) !default; // $grid-command-cell-padding-y
+
 $grid-cell-placeholder-line-width: 80% !default;
 
 $grid-border-width: 1px !default;
