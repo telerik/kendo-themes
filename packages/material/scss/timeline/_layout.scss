@@ -8,4 +8,18 @@
     .k-timeline-card .k-timeline-card-callout.k-callout-s {
         bottom: 5px;
     }
+
+    .k-timeline-track-item .k-timeline-circle::before {
+        @extend .k-button-overlay;
+        display: block;
+    }
+
+    .k-timeline-track-item:hover .k-timeline-circle::before,
+    .k-timeline-track-item.k-state-hover .k-timeline-circle::before {
+        opacity: $flat-button-hover-opacity;
+    }
+
+    .k-timeline-track-item.k-state-focus .k-timeline-circle::before {
+        opacity: $flat-button-focused-opacity;
+    }
 }

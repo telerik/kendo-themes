@@ -59,4 +59,8 @@
     .k-timeline-horizontal .k-timeline-flag::after {
         background-color: $timeline-flag-bg;
     }
+
+    .k-timeline-track-item.k-state-focus .k-timeline-circle {
+        @include box-shadow( $timeline-track-item-focus-shadow );
+    }
 }
