@@ -14,7 +14,6 @@
     // Card
     .k-card {
         @include border-radius( $card-border-radius );
-        @include box-shadow( $card-box-shadow );
         border-width: $card-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -47,6 +46,7 @@
         padding: $card-header-padding-y $card-header-padding-x;
         border-width: 0 0 $card-header-border-width;
         border-style: solid;
+        outline: 0;
         flex-shrink: 0;
         overflow: hidden;
         position: relative;
@@ -68,6 +68,7 @@
         padding: $card-footer-padding-y $card-footer-padding-x;
         border-width: $card-footer-border-width 0 0;
         border-style: solid;
+        outline: 0;
         flex-shrink: 0;
     }
 
@@ -75,6 +76,7 @@
     // Body
     .k-card-body {
         padding: $card-body-padding-y $card-body-padding-x;
+        outline: 0;
         flex: 1 1 auto;
 
         p {
@@ -388,7 +390,7 @@
 
     // Solid card
     .k-card-solid {
-        @include box-shadow( $card-box-shadow );
+        @include box-shadow( $card-shadow );
     }
 
 

@@ -7,14 +7,18 @@ $card-inner-border-radius: calc( #{$card-border-radius} - #{$card-border-width} 
 $card-font-family: $font-family !default;
 $card-font-size: $font-size !default;
 $card-line-height: $line-height !default;
-$card-box-shadow: null !default;
-$card-box-focused-shadow: 0 0 4px 0 rgba(0, 0, 0, .3) !default;
 
 $card-deck-gap: map-get( $spacing, lg ) !default;
 
 $card-bg: $component-bg !default;
 $card-text: $component-text !default;
 $card-border: $component-border !default;
+$card-shadow: null !default;
+
+$card-focus-bg: null !default;
+$card-focus-text: null !default;
+$card-focus-border: rgba( black, .15) !default;
+$card-focus-shadow: 0 3px 4px 0 rgba( black, .06) !default;
 
 $card-header-padding-x: $card-padding-x !default;
 $card-header-padding-y: $card-padding-y !default;
@@ -56,3 +60,8 @@ $card-callout-box-shadow-n: null !default;
 $card-callout-box-shadow-e: null !default;
 $card-callout-box-shadow-s: null !default;
 $card-callout-box-shadow-w: null !default;
+
+$card-focus-callout-box-shadow-n: 1px -1px 4px 0 rgba( black, .06) !default;
+$card-focus-callout-box-shadow-e: 2px -1px 4px 0 rgba( black, .06) !default;
+$card-focus-callout-box-shadow-s: 2px -2px 4px 0 rgba( black, .06) !default;
+$card-focus-callout-box-shadow-w: 2px -1px 4px 0 rgba( black, .06) !default;
