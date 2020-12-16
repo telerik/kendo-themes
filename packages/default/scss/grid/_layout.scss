@@ -1276,7 +1276,11 @@
 
         .k-widget.k-filter-and {
             width: 6em;
-            margin: $grid-filter-menu-item-spacing-y $grid-filter-menu-item-spacing-x;
+        }
+
+        .k-widget.k-button-group {
+            width: auto;
+            display: inline-flex;
         }
 
         .k-switch {
@@ -1432,6 +1436,15 @@
     .k-column-menu {
         .k-menu:not(.k-context-menu) {
             font-weight: 400;
+        }
+
+        .k-expander {
+            background: inherit;
+
+            .k-columnmenu-item {
+                display: flex;
+                align-items: center;
+            }
         }
     }
 
