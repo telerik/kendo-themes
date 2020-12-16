@@ -53,6 +53,15 @@
         background-color: inherit;
         border-color: inherit;
         outline: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            color: inherit;
+            text-decoration: none;
+        }
     }
     .k-bottom-nav-item.k-state-disabled {
         background-color: initial;
