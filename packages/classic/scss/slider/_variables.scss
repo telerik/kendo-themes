@@ -21,18 +21,17 @@ $slider-draghandle-active-size: null !default;
 $slider-draghandle-bg: $primary-button-bg !default;
 $slider-draghandle-text: $primary-button-text !default;
 $slider-draghandle-border: $primary-button-border !default;
-$slider-draghandle-gradient: $primary-button-gradient !default;
+$slider-draghandle-gradient: null !default;
 
 $slider-draghandle-hovered-bg: $primary-button-hovered-bg !default;
 $slider-draghandle-hovered-text: $primary-button-hovered-text !default;
 $slider-draghandle-hovered-border: $primary-button-hovered-border !default;
-$slider-draghandle-hovered-gradient: $primary-button-hovered-gradient !default;
+$slider-draghandle-hovered-gradient: null !default;
 
 $slider-draghandle-pressed-bg: $primary-button-pressed-bg !default;
 $slider-draghandle-pressed-text: $primary-button-pressed-text !default;
 $slider-draghandle-pressed-border: $primary-button-pressed-border !default;
-$slider-draghandle-pressed-gradient: $primary-button-pressed-gradient !default;
-$slider-draghandle-pressed-shadow: inset $primary-button-pressed-shadow !default;
+$slider-draghandle-pressed-gradient: null !default;
 
 $slider-draghandle-focused-shadow: $primary-button-focused-shadow !default;
 

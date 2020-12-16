@@ -53,8 +53,37 @@
 
 
     // Shapes
+    .k-fab-square {
+        border-radius: 0;
+
+        &.k-fab-sm {
+            width: $fab-size-sm;
+            height: $fab-size-sm;
+        }
+        &.k-fab-md {
+            width: $fab-size-md;
+            height: $fab-size-md;
+        }
+        &.k-fab-lg {
+            width: $fab-size-lg;
+            height: $fab-size-lg;
+        }
+    }
     .k-fab-circle {
         border-radius: 50%;
+
+        &.k-fab-sm {
+            width: $fab-size-sm;
+            height: $fab-size-sm;
+        }
+        &.k-fab-md {
+            width: $fab-size-md;
+            height: $fab-size-md;
+        }
+        &.k-fab-lg {
+            width: $fab-size-lg;
+            height: $fab-size-lg;
+        }
     }
     .k-fab-pill {
         border-radius: 5rem;

@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.29.0"></a>
+# [4.29.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.28.0...@progress/kendo-theme-default@4.29.0) (2020-12-15)
+
+
+### Bug Fixes
+
+* **fab:** constrain circle and square shapes in size ([a06627e](https://github.com/telerik/kendo-themes/commit/a06627e))
+* add k-text-base color ([a20ac9c](https://github.com/telerik/kendo-themes/commit/a20ac9c))
+* **dropdowngrid:** remove unicode space character ([4afd60d](https://github.com/telerik/kendo-themes/commit/4afd60d))
+* add k-spacer-sized style ([e37dfd4](https://github.com/telerik/kendo-themes/commit/e37dfd4))
+* angular scrollview ([10d7916](https://github.com/telerik/kendo-themes/commit/10d7916))
+* **grid:** remove shadow from grid-toolbar ([461455f](https://github.com/telerik/kendo-themes/commit/461455f))
+* **scrollview:** update styles based on latest design ([ba5a4e9](https://github.com/telerik/kendo-themes/commit/ba5a4e9))
+* add styles for text-theme colors ([55e5980](https://github.com/telerik/kendo-themes/commit/55e5980))
+
+
+### Features
+
+* **card:** focus styles ([dbca46b](https://github.com/telerik/kendo-themes/commit/dbca46b))
+* **multicolumncombobox:** design update and adjustments ([6670fda](https://github.com/telerik/kendo-themes/commit/6670fda))
+* **timeline:** focus styles ([ee8453f](https://github.com/telerik/kendo-themes/commit/ee8453f))
+
+
+
+
 <a name="4.28.0"></a>
 # [4.28.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.27.0...@progress/kendo-theme-default@4.28.0) (2020-12-10)
 

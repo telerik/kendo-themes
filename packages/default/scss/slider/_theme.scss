@@ -48,7 +48,6 @@
                     $slider-draghandle-pressed-border,
                     $slider-draghandle-pressed-gradient
                 );
-                @include box-shadow( $slider-draghandle-pressed-shadow );
             }
 
             &:focus,

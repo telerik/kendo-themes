@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.7"></a>
+## [0.7.7](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.7.6...@progress/kendo-theme-tasks@0.7.7) (2020-12-15)
+
+
+
+
+**Note:** Version bump only for package @progress/kendo-theme-tasks
+
 <a name="0.7.6"></a>
 ## [0.7.6](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-tasks@0.7.5...@progress/kendo-theme-tasks@0.7.6) (2020-12-10)
 
