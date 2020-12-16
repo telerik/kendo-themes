@@ -54,6 +54,19 @@
         }
     }
 
+    // Disabled + Focus state
+    .k-fab-item:focus,
+    .k-fab-item.k-state-focus,
+    .k-fab-item.k-state-focused {
+        &:disabled,
+        &.k-state-disabled {
+            .k-fab-item-text,
+            .k-fab-item-icon {
+                @include box-shadow($fab-item-disabled-focus-shadow);
+            }
+        }
+    }
+
     // Items
     .k-fab-item-text {
         @include fill(
