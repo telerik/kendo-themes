@@ -8,7 +8,9 @@
     .k-text-warning     { color: $warning !important; }
     .k-text-error       { color: $error !important; }
 
-    .k-color-inherit     { color: inherit; }
+    .k-text-base        { color: $base-text; }
+
+    .k-color-inherit    { color: inherit; }
 
     @each $name, $color in $theme-colors {
         .k-text-#{$name},

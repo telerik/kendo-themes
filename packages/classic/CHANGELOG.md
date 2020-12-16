@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.6.0...@progress/kendo-theme-classic@0.7.0) (2020-12-15)
+
+
+### Bug Fixes
+
+* **fab:** constrain circle and square shapes in size ([a06627e](https://github.com/telerik/kendo-themes/commit/a06627e))
+* **scrollview:** update styles based on latest design ([ba5a4e9](https://github.com/telerik/kendo-themes/commit/ba5a4e9))
+
+
+### Features
+
+* **card:** focus styles ([dbca46b](https://github.com/telerik/kendo-themes/commit/dbca46b))
+* **timeline:** focus styles ([ee8453f](https://github.com/telerik/kendo-themes/commit/ee8453f))
+
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.5.0...@progress/kendo-theme-classic@0.6.0) (2020-12-10)
 

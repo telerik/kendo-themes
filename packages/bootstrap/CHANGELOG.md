@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.27.0"></a>
+# [4.27.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.26.0...@progress/kendo-theme-bootstrap@4.27.0) (2020-12-15)
+
+
+### Bug Fixes
+
+* **fab:** constrain circle and square shapes in size ([a06627e](https://github.com/telerik/kendo-themes/commit/a06627e))
+* **scrollview:** update styles based on latest design ([ba5a4e9](https://github.com/telerik/kendo-themes/commit/ba5a4e9))
+
+
+### Features
+
+* **card:** focus styles ([dbca46b](https://github.com/telerik/kendo-themes/commit/dbca46b))
+* **timeline:** focus styles ([ee8453f](https://github.com/telerik/kendo-themes/commit/ee8453f))
+
+
+
+
 <a name="4.26.0"></a>
 # [4.26.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.25.0...@progress/kendo-theme-bootstrap@4.26.0) (2020-12-10)
 
