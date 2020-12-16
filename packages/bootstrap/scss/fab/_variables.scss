@@ -62,7 +62,7 @@ $fab-item-icon-border: $light !default;
 $fab-item-shadow: $fab-shadow !default;
 $fab-item-focus-shadow: $fab-focus-shadow !default;
 $fab-item-disabled-shadow: $fab-disabled-shadow !default;
-
+$fab-item-disabled-focus-shadow: 0 1px 10px rgba(#000000, .12), 0 4px 5px rgba(#000000, .12), 0 2px 4px rgba(#000000, .08) !default;
 
 $fab-border-width-sm: $fab-border-width !default;
 $fab-line-height-sm: $fab-line-height !default;
