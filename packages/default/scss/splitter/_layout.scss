@@ -88,9 +88,10 @@
     .k-splitbar-static-vertical { height: 1px; }
 
     .k-splitbar-draggable-horizontal .k-resize-handle {
-        position: static;
         width: $splitter-drag-handle-thickness;
         height: $splitter-drag-handle-length;
+        position: static;
+        z-index: 1;
     }
 
     .k-splitbar .k-resize-handle {
@@ -123,9 +124,10 @@
     }
 
     .k-splitbar-draggable-vertical .k-resize-handle {
-        position: static;
         width: $splitter-drag-handle-length;
         height: $splitter-drag-handle-thickness;
+        position: static;
+        z-index: 1;
     }
 
     .k-pane > .k-splitter-overlay {
