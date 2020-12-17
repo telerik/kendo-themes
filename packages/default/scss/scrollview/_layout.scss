@@ -5,7 +5,7 @@
     .k-widget.k-scrollview {
         border-width: $scrollview-border-width;
         border-style: solid;
-        box-sizing: border-box;
+        box-sizing: content-box;
         outline: 0;
         font-family: $scrollview-font-family;
         font-size: $scrollview-font-size;
@@ -38,13 +38,16 @@
             position: absolute;
             top: 0;
             left: 0;
+            white-space: initial;
         }
 
         & > [data-role="page"] {
             vertical-align: top;
             display: inline-block;
             min-height: 1px;
+            white-space: initial;
         }
+
     }
 
     kendo-scrollview.k-scrollview-wrap.k-scrollview-multidot .k-scrollview-pageable > .k-button,
@@ -68,6 +71,15 @@
             width: ($scrollview-pagebutton-size - 2px);
             height: ($scrollview-pagebutton-size - 2px);
         }
+    }
+
+    kendo-scrollview.k-scrollview-wrap.k-scrollview-multidot .k-scrollview-pageable > .k-button:hover,
+    .k-widget.k-scrollview.k-scrollview-multidot .k-scrollview-nav > .k-link:hover {
+        .k-state-hover,
+        &:hover {
+            box-shadow: -100% 0 0 3px black;
+        }
+
     }
 
     kendo-scrollview.k-scrollview-wrap kendo-scrollview-pager,
