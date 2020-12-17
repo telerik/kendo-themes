@@ -1,2 +1,6 @@
 @include exports("input/theme") {
+    .k-input-separator {
+        border-color: $input-separator-color;
+        opacity: $input-separator-opacity;
+    }
 }
