@@ -73,15 +73,6 @@
         }
     }
 
-    kendo-scrollview.k-scrollview-wrap.k-scrollview-multidot .k-scrollview-pageable > .k-button:hover,
-    .k-widget.k-scrollview.k-scrollview-multidot .k-scrollview-nav > .k-link:hover {
-        .k-state-hover,
-        &:hover {
-            box-shadow: -100% 0 0 3px black;
-        }
-
-    }
-
     kendo-scrollview.k-scrollview-wrap kendo-scrollview-pager,
     kendo-scrollview.k-scrollview kendo-scrollview-pager,
     .k-scrollview-nav-wrap {
