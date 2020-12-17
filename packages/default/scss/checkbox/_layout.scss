@@ -145,17 +145,15 @@
         margin-right: $checkbox-label-margin-x;
     }
 
+
+    // Checkbox list
     .k-checkbox-list {
         margin: $checkbox-list-margin;
         padding: $checkbox-list-padding;
         list-style: none;
 
         .k-checkbox-item {
-            margin-top: $checkbox-list-item-margin-top;
-
-            &:first-child {
-                margin-top: 0;
-            }
+            padding: $checkbox-list-item-padding-y $checkbox-list-item-padding-x;
         }
     }
 

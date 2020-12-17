@@ -15,7 +15,7 @@ $checkbox-dash-height: 2px !default;
 $checkbox-square-width:  ( $checkbox-size / 2 ) !default;
 $checkbox-square-height: ( $checkbox-size / 2 ) !default;
 
-$checkbox-label-margin-x: 8px !default;
+$checkbox-label-margin-x: map-get( $spacing, 1 ) !default;
 
 $checkbox-bg: $white !default;
 $checkbox-text: transparent !default;
@@ -45,7 +45,8 @@ $checkbox-invalid-border: $invalid-border !default;
 
 $checkbox-list-margin: 0px !default;
 $checkbox-list-padding: 0px !default;
-$checkbox-list-item-margin-top: 16px !default;
+$checkbox-list-item-padding-x: 0px !default;
+$checkbox-list-item-padding-y: $list-item-padding-y !default;
 $checkbox-list-horizontal-item-margin-x: 32px !default;
 
 $checkbox-ripple-size: $checkbox-size * 3 !default;
