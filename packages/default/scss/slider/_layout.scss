@@ -45,9 +45,11 @@
         }
 
         .k-label {
+            width: auto;
             font-size: .92em;
-            position: absolute;
+            line-height: 1;
             white-space: nowrap;
+            position: absolute;
         }
 
         .k-tick,
@@ -265,18 +267,13 @@
         // labels
 
         .k-label {
-            display: block;
-            left: 120%;
             text-align: left;
+            left: 120%;
+            top: 50%;
+            transform: translateY(-50%);
         }
-
-        .k-last .k-label {
-            top: -.5em;
-        }
-
-        .k-first .k-label {
-            bottom: -.5em;
-        }
+        .k-first .k-label { top: 100%; }
+        .k-last .k-label { top: 0; }
 
         .k-slider-topleft .k-label {
             left: auto;
@@ -339,12 +336,12 @@
         // labels
 
         .k-label {
-            width: auto;
-            line-height: 1;
-            left: 0;
+            left: 50%;
             bottom: -1.2em;
             transform: translateX(-50%);
         }
+        .k-first .k-label { left: 0; }
+        .k-last .k-label { left: 100%; }
 
         .k-slider-topleft .k-label {
             top: -1.2em;
