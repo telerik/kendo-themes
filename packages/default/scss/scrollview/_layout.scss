@@ -1,5 +1,6 @@
 @include exports("scrollview/layout") {
 
+    kendo-scrollview.k-scrollview-wrap,
     kendo-scrollview.k-scrollview,
     .k-widget.k-scrollview {
         border-width: $scrollview-border-width;
@@ -46,6 +47,7 @@
         }
     }
 
+    kendo-scrollview.k-scrollview-wrap.k-scrollview-multidot .k-scrollview-pageable > .k-button,
     kendo-scrollview.k-scrollview.k-scrollview-multidot .k-scrollview-pageable > .k-button,
     .k-widget.k-scrollview.k-scrollview-multidot .k-scrollview-nav > .k-link {
 
@@ -68,6 +70,7 @@
         }
     }
 
+    kendo-scrollview.k-scrollview-wrap kendo-scrollview-pager,
     kendo-scrollview.k-scrollview kendo-scrollview-pager,
     .k-scrollview-nav-wrap {
         padding: 0;
@@ -180,6 +183,7 @@
 
 
     @supports (-webkit-user-select: none) {
+        kendo-scrollview.k-scrollview-wrap ul.k-scrollview li > *,
         kendo-scrollview.k-scrollview ul.k-scrollview-wrap li > *,
         div.k-scrollview ul.k-scrollview-wrap li > * {
             pointer-events: auto;
@@ -187,6 +191,7 @@
     }
 
     @supports (not (-webkit-user-select: none)) {
+        kendo-scrollview.k-scrollview-wrap ul.k-scrollview li > *,
         kendo-scrollview.k-scrollview ul.k-scrollview-wrap li > *,
         div.k-scrollview ul.k-scrollview-wrap li > * {
             pointer-events: none;

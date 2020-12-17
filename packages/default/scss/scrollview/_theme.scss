@@ -1,5 +1,6 @@
 @include exports("scrollview/theme") {
 
+    kendo-scrollview.k-scrollview-wrap,
     kendo-scrollview.k-scrollview,
     div.k-scrollview {
         @extend .k-text-selection !optional;
