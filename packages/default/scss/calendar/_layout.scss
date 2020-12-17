@@ -515,8 +515,7 @@
 
         .k-meta-header,
         .k-month-header {
-            margin: 0 $multiviewcalendar-content-padding-x;
-            padding: $calendar-header-cell-padding-y $button-padding-x;
+            padding: $calendar-header-cell-padding-y calc( #{$button-padding-x} + #{$button-border-width} );
             font-size: $calendar-header-cell-font-size;
             line-height: $calendar-header-cell-line-height;
             text-align: left;
