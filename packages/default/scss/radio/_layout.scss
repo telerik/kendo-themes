@@ -110,17 +110,15 @@
         margin-right: $radio-label-margin-x;
     }
 
+
+    // Radio list
     .k-radio-list {
         margin: $radio-list-margin;
         padding: $radio-list-padding;
         list-style: none;
 
         .k-radio-item {
-            margin-top: $radio-list-item-margin-top;
-
-            &:first-child {
-                margin-top: 0;
-            }
+            padding: $radio-list-item-padding-y $radio-list-item-padding-x;
         }
     }
 

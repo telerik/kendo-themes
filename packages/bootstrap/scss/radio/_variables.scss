@@ -6,7 +6,7 @@ $radio-line-height: calc(#{$radio-size} + #{$radio-border-width}) !default;
 
 $radio-icon-size: 6px !default;
 
-$radio-label-margin-x: 8px;
+$radio-label-margin-x: map-get( $spacing, 1 ) !default;
 
 $radio-bg: $checkbox-bg !default;
 $radio-text: $checkbox-text !default;
@@ -36,7 +36,8 @@ $radio-invalid-border: $invalid-border !default;
 
 $radio-list-margin: 0px !default;
 $radio-list-padding: 0px !default;
-$radio-list-item-margin-top: 16px !default;
+$radio-list-item-padding-x: 0px !default;
+$radio-list-item-padding-y: $list-item-padding-y !default;
 $radio-list-horizontal-item-margin-x: 32px !default;
 
 $radio-ripple-size: $radio-size * 3 !default;
