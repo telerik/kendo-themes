@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.30.0"></a>
+# [4.30.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.29.0...@progress/kendo-theme-default@4.30.0) (2020-12-21)
+
+
+### Bug Fixes
+
+* update expander padding ([aadceb0](https://github.com/telerik/kendo-themes/commit/aadceb0))
+* **bottom-navigation:** remove focus outline and hover decoration ([9be9088](https://github.com/telerik/kendo-themes/commit/9be9088))
+* **checkbox:** improve spacing between checkbox list items ([7e244a0](https://github.com/telerik/kendo-themes/commit/7e244a0))
+* **fab:** add disabled focus shadow ([f659ec5](https://github.com/telerik/kendo-themes/commit/f659ec5))
+* **fab:** add lower elevation of the FAB in Default and Bootstrap themes ([e05d9e1](https://github.com/telerik/kendo-themes/commit/e05d9e1))
+* **multiviewcalendar:** view header misalignment ([94714b5](https://github.com/telerik/kendo-themes/commit/94714b5))
+* **radio:** improve spacing between radio list items ([8a168ec](https://github.com/telerik/kendo-themes/commit/8a168ec))
+* **slider:** align first and last item labels to respective midpoint ([d1d1783](https://github.com/telerik/kendo-themes/commit/d1d1783))
+* **splitter:** force low z-index on splitter draghandle ([5624218](https://github.com/telerik/kendo-themes/commit/5624218))
+* **tooltip:** apply flex grow to tooltip content so the close icon is at the correct position ([dba4efd](https://github.com/telerik/kendo-themes/commit/dba4efd))
+* reduce expander content padding ([2c53d13](https://github.com/telerik/kendo-themes/commit/2c53d13))
+* revert styles for old rendering in Angular ([76b36f7](https://github.com/telerik/kendo-themes/commit/76b36f7))
+* separator wrong color ([04f5a39](https://github.com/telerik/kendo-themes/commit/04f5a39))
+* update textarea flex options ([c38c698](https://github.com/telerik/kendo-themes/commit/c38c698))
+
+
+### Features
+
+* **columnmenu:** new jQuery rendering ([4ed62fa](https://github.com/telerik/kendo-themes/commit/4ed62fa))
+* **slider:** introduce slider custom properties (css vars) ([6121f38](https://github.com/telerik/kendo-themes/commit/6121f38))
+
+
+
+
 <a name="4.29.0"></a>
 # [4.29.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.28.0...@progress/kendo-theme-default@4.29.0) (2020-12-15)
 

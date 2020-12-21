@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.7.0...@progress/kendo-theme-classic@0.8.0) (2020-12-21)
+
+
+### Bug Fixes
+
+* **checkbox:** improve spacing between checkbox list items ([7e244a0](https://github.com/telerik/kendo-themes/commit/7e244a0))
+* **fab:** add disabled focus shadow ([f659ec5](https://github.com/telerik/kendo-themes/commit/f659ec5))
+* **fab:** add lower elevation of the FAB in Default and Bootstrap themes ([e05d9e1](https://github.com/telerik/kendo-themes/commit/e05d9e1))
+* **multiviewcalendar:** view header misalignment ([94714b5](https://github.com/telerik/kendo-themes/commit/94714b5))
+* **radio:** improve spacing between radio list items ([8a168ec](https://github.com/telerik/kendo-themes/commit/8a168ec))
+* reduce expander content padding ([2c53d13](https://github.com/telerik/kendo-themes/commit/2c53d13))
+* separator wrong color ([04f5a39](https://github.com/telerik/kendo-themes/commit/04f5a39))
+
+
+### Features
+
+* **slider:** introduce slider custom properties (css vars) ([6121f38](https://github.com/telerik/kendo-themes/commit/6121f38))
+
+
+
+
 <a name="0.7.0"></a>
 # [0.7.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.6.0...@progress/kendo-theme-classic@0.7.0) (2020-12-15)
 

@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.26.0"></a>
+# [3.26.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.25.0...@progress/kendo-theme-material@3.26.0) (2020-12-21)
+
+
+### Bug Fixes
+
+* **checkbox:** improve spacing between checkbox list items ([7e244a0](https://github.com/telerik/kendo-themes/commit/7e244a0))
+* **checkbox:** remove intricate checkbox animation for material theme ([c5a9336](https://github.com/telerik/kendo-themes/commit/c5a9336))
+* **fab:** add disabled focus shadow ([f659ec5](https://github.com/telerik/kendo-themes/commit/f659ec5))
+* **multiviewcalendar:** view header misalignment ([94714b5](https://github.com/telerik/kendo-themes/commit/94714b5))
+* **radio:** improve spacing between radio list items ([8a168ec](https://github.com/telerik/kendo-themes/commit/8a168ec))
+* reduce expander content padding ([2c53d13](https://github.com/telerik/kendo-themes/commit/2c53d13))
+* separator wrong color ([04f5a39](https://github.com/telerik/kendo-themes/commit/04f5a39))
+
+
+### Features
+
+* **slider:** introduce slider custom properties (css vars) ([6121f38](https://github.com/telerik/kendo-themes/commit/6121f38))
+
+
+
+
 <a name="3.25.0"></a>
 # [3.25.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.24.0...@progress/kendo-theme-material@3.25.0) (2020-12-15)
 
