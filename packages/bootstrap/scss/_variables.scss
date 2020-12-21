@@ -232,13 +232,6 @@ $utils-classes-force: (
 // sass-lint:enable indentation
 
 
-// Overflow utility classes
-$utils-overflows: () !default;
-$utils-overflows: join(( visible, hidden, clip, scroll, auto ), $utils-overflows);
-
-$utils-overflow-axis: ( "-", "-x-", "-y-" ) !default;
-
-
 // Cursor utility classes
 $cursors: ( auto, default, none, context-menu, help, pointer, progress, wait, cell, crosshair, text,
     vertical-text, alias, copy, move, no-drop, not-allowed, e-resize, n-resize, ne-resize, nw-resize,
