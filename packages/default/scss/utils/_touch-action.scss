@@ -1,0 +1,15 @@
+@include exports( "utils/touch-action" ) {
+
+    $utils-touch-action: (
+        none,
+        auto
+    ) !default;
+
+    @if $utils-touch-action {
+        @each $touch-action in $utils-touch-action {
+            // sass-lint:disable-block no-important
+            .k-touch-action-#{$touch-action} { touch-action: $touch-action !important; }
+        }
+    }
+
+}
