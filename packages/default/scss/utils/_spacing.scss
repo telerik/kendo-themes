@@ -3,31 +3,50 @@
     // sass-lint:disable-block no-important
     // sass-lint:disable-block indentation
 
+    $utils-margin: (
+        m: margin,
+        mt: margin-top,
+        mr: margin-right,
+        mb: margin-bottom,
+        ml: margin-left
+    ) !default;
+    $utils-padding: (
+        p: padding,
+        pt: padding-top,
+        pr: padding-right,
+        pb: padding-bottom,
+        pl: padding-left
+    ) !default;
+
     // Padding
     @each $size, $val in $spacing {
-        @each $name, $prop in (
-            p: padding,
-            pt: padding-top,
-            pr: padding-right,
-            pb: padding-bottom,
-            pl: padding-left
-        ) {
-            .k-#{$name}-#{$size} { #{$prop}: #{$val}; }
-            .k-#{$name}-#{$size}-f { #{$prop}: #{$val} !important; }
+        @each $name, $prop in $utils-padding {
+            .k-#{$name}-#{$size} { #{$prop}: $val !important; }
+        }
+
+        .k-px-#{$size} {
+            padding-left: $val !important;
+            padding-right: $val !important;
+        }
+        .k-py-#{$size} {
+            padding-top: $val !important;
+            padding-bottom: $val !important;
         }
     }
 
     // Margin
     @each $size, $val in $spacing {
-        @each $name, $prop in (
-            m: margin,
-            mt: margin-top,
-            mr: margin-right,
-            mb: margin-bottom,
-            ml: margin-left
-        ) {
-            .k-#{$name}-#{$size} { #{$prop}: #{$val}; }
-            .k-#{$name}-#{$size}-f { #{$prop}: #{$val} !important; }
+        @each $name, $prop in $utils-margin {
+            .k-#{$name}-#{$size} { #{$prop}: $val !important; }
+        }
+
+        .k-mx-#{$size} {
+            padding-left: $val !important;
+            padding-right: $val !important;
+        }
+        .k-my-#{$size} {
+            padding-top: $val !important;
+            padding-bottom: $val !important;
         }
     }
 
