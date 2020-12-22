@@ -487,6 +487,11 @@
             padding-top: $slider-button-spacing;
         }
     }
+    .k-slider-items::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
 
     .k-slider-tooltip {
         .k-callout-n,

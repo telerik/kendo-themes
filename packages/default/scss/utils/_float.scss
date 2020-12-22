@@ -8,8 +8,7 @@
 
 
     // Float wrap
-    .k-floatwrap::after,
-    .k-slider-items::after {
+    .k-floatwrap::after {
         content: "";
         display: block;
         clear: both;
