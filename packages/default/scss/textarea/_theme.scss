@@ -17,27 +17,35 @@
             );
         }
 
-        // Focused
-        &:focus,
-        &:focus-within,
-        &.k-state-focus,
-        &.k-state-focused {
-            @include fill (
-                $textarea-focused-text,
-                $textarea-focused-bg,
-                $textarea-focused-border
-            );
-            @include box-shadow( $textarea-focused-shadow );
-        }
-
         // Hovered
         &:hover,
         &.k-state-hover {
             @include fill(
-                $textarea-hovered-text,
-                $textarea-hovered-bg,
-                $textarea-hovered-border
+                $textarea-hover-text,
+                $textarea-hover-bg,
+                $textarea-hover-border
             );
+        }
+
+        // Focused
+        &:focus,
+        // &:focus-within,
+        &.k-state-focus,
+        &.k-state-focused {
+            @include fill(
+                $textarea-focus-text,
+                $textarea-focus-bg,
+                $textarea-focus-border
+            );
+            @include box-shadow( $textarea-focus-shadow );
+        }
+        &:focus-within {
+            @include fill(
+                $textarea-focus-text,
+                $textarea-focus-bg,
+                $textarea-focus-border
+            );
+            @include box-shadow( $textarea-focus-shadow );
         }
 
         // Invalid
@@ -48,20 +56,16 @@
             border-color: $invalid-border;
 
             &:focus,
-            &:focus-within,
+            // &:focus-within,
             &.k-state-focus,
             &.k-state-focused {
-                @include box-shadow($invalid-shadow);
+                @include box-shadow( $textarea-invalid-focus-shadow );
+            }
+
+            &:focus-within {
+                @include box-shadow( $textarea-invalid-focus-shadow );
             }
         }
     }
 
-    // Textarea Floating label
-    .k-floating-label-container.k-textarea-container,
-    .k-textbox-container.k-textarea-container {
-
-        > .k-label {
-            @include fill( $color: $textarea-text );
-        }
-    }
 }
