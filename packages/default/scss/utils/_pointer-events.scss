@@ -1,0 +1,15 @@
+@include exports( "utils/pointer-events" ) {
+
+    $utils-pointer-events: (
+        none,
+        auto
+    ) !default;
+
+    @if $utils-pointer-events {
+        @each $pointer-events in $utils-pointer-events {
+            // sass-lint:disable-block no-important
+            .k-pointer-events-#{$pointer-events} { pointer-events: $pointer-events !important; }
+        }
+    }
+
+}
