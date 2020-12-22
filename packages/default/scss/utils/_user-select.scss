@@ -1,0 +1,18 @@
+@include exports( "utils/user-select" ) {
+
+    $utils-user-select: (
+        none,
+        auto,
+        text,
+        all,
+        contain
+    ) !default;
+
+    @if $utils-user-select {
+        @each $user-select in $utils-user-select {
+            // sass-lint:disable-block no-important
+            .k-user-select-#{$user-select} { user-select: $user-select !important; }
+        }
+    }
+
+}
