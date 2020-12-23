@@ -36,9 +36,17 @@
 
         // Focused
         &:focus,
-        &:focus-within,
+        // &:focus-within,
         &.k-state-focus,
         &.k-state-focused {
+            @include fill (
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
+            );
+            @include box-shadow( $input-focused-shadow );
+        }
+        &:focus-within {
             @include fill (
                 $input-focused-text,
                 $input-focused-bg,
@@ -65,9 +73,12 @@
             @include fill( $border: $invalid-border );
 
             &:focus,
-            &:focus-within,
+            // &:focus-within,
             &.k-state-focus,
             &.k-state-focused {
+                @include box-shadow($invalid-shadow);
+            }
+            &:focus-within {
                 @include box-shadow($invalid-shadow);
             }
         }
