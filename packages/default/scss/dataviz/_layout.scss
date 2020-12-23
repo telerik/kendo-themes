@@ -449,10 +449,6 @@
             @if $type == "color" {
                 // background-color can store any color
                 background-color: $value;
-
-                svg & {
-                    fill: $value;
-                }
             } @else if $type == "number" {
                 // margin-top can store positive & negative values
                 margin-top: $value;
