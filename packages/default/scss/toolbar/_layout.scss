@@ -153,6 +153,12 @@
             }
         }
 
+        // Split button
+        .k-split-button {
+            display: flex;
+            flex-direction: column;
+        }
+
         // Hidden items
         .k-overflow-hidden {
             display: none;
