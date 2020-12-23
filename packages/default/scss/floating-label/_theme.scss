@@ -1,0 +1,24 @@
+@include exports( "floating-label/theme" ) {
+
+    // Floating label
+    .k-textbox-container,
+    .k-textarea-container,
+    .k-floating-label-container {
+
+        > .k-label {
+            @include fill(
+                $color: $floating-label-text,
+                $bg: $floating-label-bg
+            );
+        }
+
+        &.k-state-focused > .k-label {
+            @include fill(
+                $color: $floating-label-focus-text,
+                $bg: $floating-label-focus-bg,
+            );
+        }
+
+    }
+
+}

@@ -35,15 +35,15 @@ $textarea-text: $input-text !default;
 $textarea-border: $input-border !default;
 $textarea-shadow: $input-shadow !default;
 
-$textarea-hovered-text: $input-hovered-text !default;
-$textarea-hovered-bg: $input-hovered-bg !default;
-$textarea-hovered-border: $input-hovered-border !default;
-$textarea-hovered-shadow: $input-hovered-shadow !default;
+$textarea-hover-text: $input-hovered-text !default;
+$textarea-hover-bg: $input-hovered-bg !default;
+$textarea-hover-border: $input-hovered-border !default;
+$textarea-hover-shadow: $input-hovered-shadow !default;
 
-$textarea-focused-text: $input-focused-text !default;
-$textarea-focused-bg: $input-focused-bg !default;
-$textarea-focused-border: $input-focused-border !default;
-$textarea-focused-shadow: $input-focused-shadow !default;
+$textarea-focus-text: $input-focused-text !default;
+$textarea-focus-bg: $input-focused-bg !default;
+$textarea-focus-border: $input-focused-border !default;
+$textarea-focus-shadow: $input-focused-shadow !default;
 
 $textarea-placeholder-text: $input-placeholder-text !default;
 $textarea-placeholder-opacity: $input-placeholder-opacity !default;
@@ -51,4 +51,4 @@ $textarea-placeholder-opacity: $input-placeholder-opacity !default;
 $textarea-selected-text: $input-selected-text !default;
 $textarea-selected-bg: $input-selected-bg !default;
 
-$textarea-focused-invalid-shadow: null !default;
+$textarea-invalid-focus-shadow: $invalid-shadow !default;

@@ -22,8 +22,16 @@
 
         // Focus state
         &:focus,
-        &:focus-within,
+        // &:focus-within,
         &.k-state-focus {
+            @include fill(
+                $searchbox-focus-text,
+                $searchbox-focus-bg,
+                $searchbox-focus-border
+            );
+            @include box-shadow( $input-focused-shadow );
+        }
+        &:focus-within {
             @include fill(
                 $searchbox-focus-text,
                 $searchbox-focus-bg,

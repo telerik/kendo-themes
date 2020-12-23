@@ -11,9 +11,13 @@
 
         // Focus state
         &:focus,
-        &:focus-within,
+        // &:focus-within,
         &.k-state-focus,
         &.k-state-focused {
+            border-bottom-left-radius: $textarea-border-radius;
+            border-bottom-right-radius: $textarea-border-radius;
+        }
+        &:focus-within {
             border-bottom-left-radius: $textarea-border-radius;
             border-bottom-right-radius: $textarea-border-radius;
         }

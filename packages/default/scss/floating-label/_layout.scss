@@ -43,8 +43,13 @@
         }
 
         > .k-label,
-        &:focus-within > .k-label,
+        // &:focus-within > .k-label,
         &.k-state-focused > .k-label {
+            top: $floating-label-focus-offset-y;
+            left: $floating-label-focus-offset-x;
+            transform: scale( $floating-label-focus-scale );
+        }
+        &:focus-within > .k-label {
             top: $floating-label-focus-offset-y;
             left: $floating-label-focus-offset-x;
             transform: scale( $floating-label-focus-scale );
@@ -69,8 +74,12 @@
             }
 
             > .k-label,
-            &:focus-within > .k-label,
+            // &:focus-within > .k-label,
             &.k-state-focused > .k-label {
+                left: auto;
+                right: $floating-label-focus-offset-x;
+            }
+            &:focus-within {
                 left: auto;
                 right: $floating-label-focus-offset-x;
             }

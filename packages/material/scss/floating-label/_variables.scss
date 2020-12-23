@@ -15,5 +15,5 @@ $floating-label-transition: .15s cubic-bezier( .4, 0, .2, 1 ) !default;
 $floating-label-bg: null !default;
 $floating-label-text: rgba($input-text, .6) !default;
 
-$floating-label-focused-bg: $base-bg !default;
-$floating-label-focused-text: $primary !default;
+$floating-label-focus-bg: null !default;
+$floating-label-focus-text: $primary !default;
