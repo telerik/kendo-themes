@@ -141,7 +141,9 @@
         .k-grid-filter,
         .k-header-column-menu,
         .k-hierarchy-cell .k-icon {
-            &:focus {
+            &:focus,
+            &.k-state-focus,
+            &.k-state-border-down {
                 box-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .1 );
             }
             &.k-state-active {
