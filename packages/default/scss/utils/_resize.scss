@@ -1,0 +1,17 @@
+@include exports( "utils/resize" ) {
+
+    $utils-resize: (
+        none,
+        both,
+        horizontal,
+        vertical
+    ) !default;
+
+    @if $utils-resize {
+        @each $resize in $utils-resize {
+            // sass-lint:disable-block no-important
+            .k-resize-#{$resize} { resize: $resize !important; }
+        }
+    }
+
+}

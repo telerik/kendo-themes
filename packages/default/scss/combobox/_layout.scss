@@ -48,11 +48,16 @@
             }
         }
         &:hover,
-        &:focus-within,
+        // &:focus-within,
         &.k-state-hover,
         &.k-state-focused,
         .k-dropdown-wrap.k-state-hover,
         .k-dropdown-wrap.k-state-focused {
+            .k-clear-value {
+                visibility: visible;
+            }
+        }
+        &:focus-within {
             .k-clear-value {
                 visibility: visible;
             }
