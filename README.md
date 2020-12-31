@@ -14,25 +14,27 @@ This is a monorepo that holds the SCSS-based themes for the Kendo UI components.
 
 This package is part of the following suites:
 
-* [Kendo UI for Angular](http://www.telerik.com/kendo-angular-ui/)
-* [KendoReact](http://www.telerik.com/kendo-react-ui/)
-* [Kendo UI for Vue](http://www.telerik.com/kendo-vue-ui/)
-* [Kendo UI for jQuery](http://www.telerik.com/kendo-ui)
-* [UI for ASP.NET MVC](http://www.telerik.com/aspnet-mvc)
-* [UI for ASP.NET Core](http://www.telerik.com/aspnet-core-ui)
+* [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui/)
+* [KendoReact](https://www.telerik.com/kendo-react-ui/)
+* [Kendo UI for Vue](https://www.telerik.com/kendo-vue-ui/)
+* [Kendo UI for jQuery](https://www.telerik.com/kendo-ui)
+* [UI for ASP.NET MVC](https://www.telerik.com/aspnet-mvc)
+* [UI for ASP.NET Core](https://www.telerik.com/aspnet-core-ui)
+* [UI for Blazor](https://www.telerik.com/blazor-ui)
 
-All available Kendo UI commercial licenses may be obtained at http://www.telerik.com/purchase/kendo-ui.
+All available Telerik and Kendo UI commercial licenses may be obtained at https://www.telerik.com/purchase.aspx.
 
-If you do not own a commercial license, the usage of this software shall be governed by the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+If you do not own a commercial license, the usage of this software shall be governed by the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 ## Basic Usage
 
 For more information on how to add one of the themes in your project, refer to the following articles:
 
-* [Using the Kendo UI themes in Angular Projects](http://www.telerik.com/kendo-angular-ui/components/styling/)
-* [Using the Kendo UI themes in React Projects](http://www.telerik.com/kendo-react-ui/components/styling/)
-* [Using the Kendo UI themes in Vue Projects](http://www.telerik.com/kendo-vue-ui/components/styling/)
-* [Using the Kendo UI themes in jQuery Projects](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
+* [Using the Kendo UI themes in Angular Projects](https://www.telerik.com/kendo-angular-ui/components/styling/)
+* [Using the Kendo UI themes in React Projects](https://www.telerik.com/kendo-react-ui/components/styling/)
+* [Using the Kendo UI themes in Vue Projects](https://www.telerik.com/kendo-vue-ui/components/styling/)
+* [Using the Kendo UI themes in jQuery Projects](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
+* [Using the Kendo UI themes in Blazor](https://docs.telerik.com/blazor-ui/themes/overview)
 
 ## Development
 
