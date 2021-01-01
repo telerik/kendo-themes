@@ -1,5 +1,23 @@
 @include exports( "utils/resize" ) {
 
+    // Resize documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/resize.
+
+    // @name k-resize-none
+    // @description This is equivalent to `resize: none;`. The element offers no user-controllable method for resizing it.
+    // @group resize
+
+    // @name k-resize-both
+    // @description This is equivalent to `resize: both;`. The element displays a mechanism for allowing the user to resize it, which may be resized both horizontally and vertically.
+    // @group resize
+
+    // @name k-resize-horizontal
+    // @description This is equivalent to `resize: horizontal;`. The element displays a mechanism for allowing the user to resize it in the horizontal direction.
+    // @group resize
+
+    // @name k-resize-vertical
+    // @description This is equivalent to `resize: vertical;`. The element displays a mechanism for allowing the user to resize it in the vertical direction.
+    // @group resize
+
     $utils-resize: (
         none,
         both,

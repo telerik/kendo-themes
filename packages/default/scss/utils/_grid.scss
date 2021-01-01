@@ -1,7 +1,8 @@
 @include exports("utils/grid") {
 
-    /// This is equivalent to `display: grid`. It defines the element as a grid container and establishes a new grid formatting context for its contents.
-    /// @group grid-layout
+    // @name k-d-grid
+    // @description This is equivalent to `display: grid`. It defines the element as a grid container and establishes a new grid formatting context for its contents.
+    // @group grid-layout
     .k-d-grid                   { display: grid; }
     .k-grid-cols-none           { grid-template-columns: none; }
     .k-grid-rows-none           { grid-template-rows: none; }

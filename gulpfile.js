@@ -17,6 +17,7 @@ const calc = require("postcss-calc");
 const { build } = require('./scripts/sass-build');
 const { flatten } = require('./scripts/sass-flatten');
 const { getArg } = require("./scripts/utils");
+const { utilsDocs } = require('./scripts/utils-docs/generate-utils-docs');
 
 
 // Settings
@@ -194,6 +195,14 @@ gulp.task("docs:check", function() {
             throw new Error("Docs are out of date");
         }
     });
+});
+// #endregion
+
+
+// #region Utility docs
+gulp.task("utils-docs", function( done ) {
+    utilsDocs();
+    done();
 });
 // #endregion
 
