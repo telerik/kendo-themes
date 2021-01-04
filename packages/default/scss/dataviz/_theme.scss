@@ -20,6 +20,10 @@
         opacity: $chart-area-inactive-opacity;
     }
 
+    .k-var--chart-line-inactive-opacity {
+        opacity: $chart-line-inactive-opacity;
+    }
+
     .k-var--chart-notes-background {
         background-color: $chart-notes-background;
     }
