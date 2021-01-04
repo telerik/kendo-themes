@@ -54,7 +54,8 @@
 
 
     // Interactive states
-    .k-dropdowngrid-popup .k-item.k-state-hover {
+    .k-dropdowngrid-popup .k-item.k-state-hover,
+    .k-dropdowngrid-popup .k-item:hover {
         border-color: $grid-hovered-border;
         color: $grid-hovered-text;
         background-color: $grid-hovered-bg;
