@@ -1274,6 +1274,11 @@
             display: block;
         }
 
+        .k-searchbox {
+            margin: $grid-filter-menu-item-spacing-y $grid-filter-menu-item-spacing-x;
+            width: 100%;
+        }
+
         .k-widget.k-filter-and {
             width: 6em;
         }

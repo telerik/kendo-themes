@@ -23,7 +23,7 @@
     <div id="test-area" class="grid">
 
         <!-- jQuery rendering -->
-        <div class="section">
+        <section>
             <div class="k-animation-container" style="overflow: visible;">
                 <form class="k-filter-menu k-popup k-group k-reset k-state-border-up">
                     <div class="k-filter-menu-container">
@@ -81,10 +81,10 @@
                     </div>
                 </form>
             </div>
-        </div>
+        </section>
 
         <!-- Angular rendering -->
-        <div class="section">
+        <section>
             <kendo-popup class="k-animation-container k-animation-container-shown" style="z-index: 2;">
                 <div class="k-popup k-grid-filter-popup">
                     <kendo-grid-filter-menu-container >
@@ -149,45 +149,73 @@
                     </kendo-grid-filter-menu-container>
                 </div>
             </kendo-popup>
-        </div>
+        </section>
 
         <!-- Angular rendering - Grid Filter Menu template with Switch component -->
-        <kendo-popup class="k-animation-container k-animation-container-shown">
-            <div class="k-popup k-grid-filter-popup">
-                <kendo-grid-filter-menu-container>
-                    <form class="k-filter-menu k-group k-reset k-state-border-up ng-untouched ng-pristine ng-valid">
-                        <div class="k-filter-menu-container">
-                            <kendo-grid-string-filter-menu>
-                                <kendo-grid-string-filter-menu-input>
-                                    <kendo-grid-filter-menu-input-wrapper>
-                                        <kendo-dropdownlist class="k-widget k-dropdown k-header">
-                                            <span class="k-dropdown-wrap">
-                                                <span class="k-input"></span>
-                                                <span class="k-select">
-                                                    <span class="k-icon k-i-arrow-s"> </span>
+        <section>
+            <kendo-popup class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-grid-filter-popup">
+                    <kendo-grid-filter-menu-container>
+                        <form class="k-filter-menu k-group k-reset k-state-border-up ng-untouched ng-pristine ng-valid">
+                            <div class="k-filter-menu-container">
+                                <kendo-grid-string-filter-menu>
+                                    <kendo-grid-string-filter-menu-input>
+                                        <kendo-grid-filter-menu-input-wrapper>
+                                            <kendo-dropdownlist class="k-widget k-dropdown k-header">
+                                                <span class="k-dropdown-wrap">
+                                                    <span class="k-input"></span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-arrow-s"> </span>
+                                                    </span>
                                                 </span>
-                                            </span>
-                                        </kendo-dropdownlist>
-                                        <input class="k-textbox" />
-                                    </kendo-grid-filter-menu-input-wrapper>
-                                </kendo-grid-string-filter-menu-input>
-                            </kendo-grid-string-filter-menu>
-                            <kendo-switch class="k-widget k-switch k-switch-off">
-                                <span class="k-switch-container">
-                                    <span class="k-switch-label-on">ON</span>
-                                    <span class="k-switch-label-off">OFF</span>
-                                    <span class="k-switch-handle"></span>
-                                </span>
-                            </kendo-switch>
-                            <div class="k-action-buttons k-button-group">
-                                <button class="k-button">Clear</button>
-                                <button class="k-button k-primary">Filter</button>
+                                            </kendo-dropdownlist>
+                                            <input class="k-textbox" />
+                                        </kendo-grid-filter-menu-input-wrapper>
+                                    </kendo-grid-string-filter-menu-input>
+                                </kendo-grid-string-filter-menu>
+                                <kendo-switch class="k-widget k-switch k-switch-off">
+                                    <span class="k-switch-container">
+                                        <span class="k-switch-label-on">ON</span>
+                                        <span class="k-switch-label-off">OFF</span>
+                                        <span class="k-switch-handle"></span>
+                                    </span>
+                                </kendo-switch>
+                                <div class="k-action-buttons k-button-group">
+                                    <button class="k-button">Clear</button>
+                                    <button class="k-button k-primary">Filter</button>
+                                </div>
                             </div>
+                        </form>
+                    </kendo-grid-filter-menu-container>
+                </div>
+            </kendo-popup>
+        </section>
+
+        <section>
+            <div class="k-animation-container" style="overflow: visible;">
+                <form class="k-filter-menu k-popup k-group k-reset k-state-border-up" style="display: flex;">
+                    <div class="k-filter-menu-container">
+                        <span class="k-searchbox">
+                            <input class="k-input" type="text" value="Normal">
+                            <span class="k-input-suffix">
+                                <button type="button" class="k-button k-button-clear k-icon-button"><span class="k-icon k-i-close"></span></button>
+                                <span class="k-icon k-i-search"></span>
+                            </span>
+                        </span>
+                        <ul class="k-reset k-multicheck-wrap">
+                            <li class="k-item"><label class="k-label"><input type="checkbox"><span>Chai</span></label></li>
+                            <li class="k-item"><label class="k-label"><input type="checkbox"><span>Chang</span></label></li>
+                            <li class="k-item"><label class="k-label"><input type="checkbox"><span>Aniseed Syrup</span></label></li>
+                        </ul>
+                        <div class="k-filter-selected-items">0 selected items</div>
+                        <div class="k-action-buttons">
+                            <button type="submit" class="k-button k-primary">Filter</button>
+                            <button type="reset" class="k-button">Clear</button>
                         </div>
-                    </form>
-                </kendo-grid-filter-menu-container>
+                    </div>
+                </form>
             </div>
-        </kendo-popup>
+        </section>
 
 
     </div>
