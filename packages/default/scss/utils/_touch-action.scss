@@ -1,5 +1,15 @@
 @include exports( "utils/touch-action" ) {
 
+    // Touch-action documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action.
+
+    // @name k-touch-action-none
+    // @description This is equivalent to `touch-action: none;`. Disable browser handling of all panning and zooming gestures.
+    // @group touch-action
+
+    // @name k-touch-action-auto
+    // @description This is equivalent to `touch-action: auto;`. Enable browser handling of all panning and zooming gestures.
+    // @group touch-action
+
     $utils-touch-action: (
         none,
         auto

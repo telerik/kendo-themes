@@ -2,18 +2,47 @@
 
     // sass-lint:disable-block no-important
 
-    // Display modes
+    // Display documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/display.
+
+    // @name k-display-inline
+    // @description This is equivalent to `display: inline;`. The element generates one or more inline element boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space.
+    // @group display
     .k-display-inline           { display: inline !important; }
+    // @name k-display-block
+    // @description This is equivalent to `display: block;`. The element generates a block element box, generating line breaks both before and after the element when in the normal flow.
+    // @group display
     .k-display-block            { display: block !important; }
+    // @name k-display-inline-block
+    // @description This is equivalent to `display: inline-block;`. The element generates a block element box that will be flowed with surrounding content as if it were a single inline box (behaving much like a replaced element would).
+    // @group display
     .k-display-inline-block     { display: inline-block !important; }
+    // @name k-display-flex
+    // @description This is equivalent to `display: flex;`. The element behaves like a block element and lays out its content according to the flexbox model.
+    // @group display
     .k-display-flex             { display: flex !important; }
+    // @name k-display-inline-flex
+    // @description This is equivalent to `display: inline-flex;`. The element behaves like an inline element and lays out its content according to the flexbox model.
+    // @group display
     .k-display-inline-flex      { display: inline-flex !important; }
+    // @name k-display-table
+    // @description This is equivalent to `display: table;`. These elements behave like HTML `<table>` elements. It defines a block-level box.
+    // @group display
     .k-display-table            { display: table !important; }
+    // @name k-display-inline-table
+    // @description This is equivalent to `display: inline-table;`. The inline-table value does not have a direct mapping in HTML. It behaves like an HTML `<table>` element, but as an inline box, rather than a block-level box. Inside the table box is a block-level context.
+    // @group display
     .k-display-inline-table     { display: inline-table !important; }
+    // @name k-display-none
+    // @description This is equivalent to `display: none;`. Turns off the display of an element so that it has no effect on layout (the document is rendered as though the element did not exist). All descendant elements also have their display turned off.
+    // @group display
     .k-display-none             { display: none !important; }
 
 
     // Aliases
+
+    // @name k-hidden
+    // @description This is an alias of `k-display-none`.
+    // @group display
     .k-hidden { @extend .k-display-none; }
 
 }
