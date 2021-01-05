@@ -33,8 +33,8 @@ $input-inner-calc-height: calc( #{$input-line-height * 1em} + #{$input-padding-y
 $input-inner-calc-height-sm: calc( #{$input-line-height-sm * 1em} + #{$input-padding-y-sm * 2} ) !default;
 $input-inner-calc-height-lg: calc( #{$input-line-height-lg * 1em} + #{$input-padding-y-lg * 2} ) !default;
 
-$input-icon-width: calc( #{$icon-size} + #{$input-padding-y * 2} ) !default;
 $input-icon-height: calc( #{$input-line-height * $input-font-size} + #{$input-padding-y * 2} ) !default;
+$input-icon-width: $input-icon-height !default;
 
 $input-bg: $component-bg !default;
 $input-text: $component-text !default;
@@ -59,6 +59,9 @@ $input-selected-bg: $primary !default;
 
 $input-separator-color: $clear-button-text !default;
 $input-separator-opacity: .5 !default;
+
+$input-clear-button-focused-background: $base-text !default;
+$input-clear-button-focused-opacity: .2 !default;
 
 // Picker
 $picker-select-border-width: 0 !default;
