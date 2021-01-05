@@ -1,36 +1,103 @@
 @include exports( "utils/transform" ) {
 
     // Flip
+
+    // @name k-flip-h
+    // @description This is equivalent to `transform: scaleX( -1 );`. Flips the element horizontally.
+    // @group transform
     .k-flip-h               { transform: scaleX( -1 ); }
+    // @name k-flip-v
+    // @description This is equivalent to `transform: scaleY( -1 );`. Flips the element vertically.
+    // @group transform
     .k-flip-v               { transform: scaleY( -1 ); }
     .k-flip-h.k-flip-v      { transform: scale( -1, -1 ); }
 
 
     // Rotate
+
+    // @name k-rotate-45
+    // @description This is equivalent to `transform: rotate( 45deg );`. Rotates the element by 45 degrees.
+    // @group transform
     .k-rotate-45            { transform: rotate( 45deg ); }
+    // @name k-rotate-90
+    // @description This is equivalent to `transform: rotate( 90deg );`. Rotates the element by 90 degrees.
+    // @group transform
     .k-rotate-90            { transform: rotate( 90deg ); }
+    // @name k-rotate-135
+    // @description This is equivalent to `transform: rotate( 135deg );`. Rotates the element by 135 degrees.
+    // @group transform
     .k-rotate-135           { transform: rotate( 135deg ); }
+    // @name k-rotate-180
+    // @description This is equivalent to `transform: rotate( 180deg );`. Rotates the element by 180 degrees.
+    // @group transform
     .k-rotate-180           { transform: rotate( 180deg ); }
+    // @name k-rotate-225
+    // @description This is equivalent to `transform: rotate( 225deg );`. Rotates the element by 225 degrees.
+    // @group transform
     .k-rotate-225           { transform: rotate( 225deg ); }
+    // @name k-rotate-270
+    // @description This is equivalent to `transform: rotate( 270deg );`. Rotates the element by 270 degrees.
+    // @group transform
     .k-rotate-270           { transform: rotate( 270deg ); }
+    // @name k-rotate-315
+    // @description This is equivalent to `transform: rotate( 315deg );`. Rotates the element by 315 degrees.
+    // @group transform
     .k-rotate-315           { transform: rotate( 315deg ); }
 
 
     // Scale
+
+    // @name k-scale-0
+    // @description This is equivalent to `transform: scale( 0, 0 );`. The element is shrunk and no longer visible.
+    // @group transform
     .k-scale-0              { transform: scale( 0, 0 ); }
+    // @name k-scale-1
+    // @description This is equivalent to `transform: scale( 1, 1 );`. The element has its default scale.
+    // @group transform
     .k-scale-1              { transform: scale( 1, 1 ); }
+    // @name k-scale-2
+    // @description This is equivalent to `transform: scale( 2, 2 );`. The element is scaling two times in both directions.
+    // @group transform
     .k-scale-2              { transform: scale( 2, 2 ); }
 
 
     // Translate
+
+    // @name k-translate-0
+    // @description This is equivalent to `transform: translate( 0, 0 );`. The element does not move.
+    // @group transform
     .k-translate-0          { transform: translate( 0, 0 ); }
+    // @name k-translate-0-50
+    // @description This is equivalent to `transform: translate( 0, 50% );`. The element moves vertically by 50% of its height.
+    // @group transform
     .k-translate-0-50       { transform: translate( 0, 50% ); }
+    // @name k-translate-0-100
+    // @description This is equivalent to `transform: translate( 0, 100% );`. The element moves vertically by 100% of its height.
+    // @group transform
     .k-translate-0-100      { transform: translate( 0, 100% ); }
+    // @name k-translate-50-0
+    // @description This is equivalent to `transform: translate( 50%, 0 );`. The element moves horizontally by 50% of its width.
+    // @group transform
     .k-translate-50-0       { transform: translate( 50%, 0 ); }
+    // @name k-translate-50-50
+    // @description This is equivalent to `transform: translate( 50%, 50% );`. The element moves horizontally by 50% of its width and vertically by 50% of its height.
+    // @group transform
     .k-translate-50-50      { transform: translate( 50%, 50% ); }
+    // @name k-translate-50-100
+    // @description This is equivalent to `transform: translate( 50%, 100% );`. The element moves horizontally by 50% of its width and vertically by 100% of its height.
+    // @group transform
     .k-translate-50-100     { transform: translate( 50%, 100% ); }
+    // @name k-translate-100-0
+    // @description This is equivalent to `transform: translate( 100%, 0 );`. The element moves horizontally by 100% of its width.
+    // @group transform
     .k-translate-100-0      { transform: translate( 100%, 0 ); }
+    // @name k-translate-100-50
+    // @description This is equivalent to `transform: translate( 100%, 50% );`. The element moves horizontally by 100% of its width and vertically by 50% of its height.
+    // @group transform
     .k-translate-100-50     { transform: translate( 100%, 50% ); }
+    // @name k-translate-100-100
+    // @description This is equivalent to `transform: translate( 100%, 100% );`. The element moves horizontally by 100% of its width and vertically by 100% of its height.
+    // @group transform
     .k-translate-100-100    { transform: translate( 100%, 100% ); }
 
 }

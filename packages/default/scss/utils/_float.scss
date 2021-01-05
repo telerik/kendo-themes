@@ -1,5 +1,36 @@
 @include exports( "utils/float" ) {
 
+    // Float documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/float.
+    // Clear documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/clear.
+
+    // @name k-float-left
+    // @description This is equivalent to `float: left;`. The element must float on the left side of its containing block.
+    // @group float
+
+    // @name k-float-right
+    // @description This is equivalent to `float: right;`. The element must float on the right side of its containing block.
+    // @group float
+
+    // @name k-float-none
+    // @description This is equivalent to `float: none;`. The element must not float.
+    // @group float
+
+    // @name k-clear-left
+    // @description This is equivalent to `clear: left;`. Is a keyword indicating that the element is moved down to clear past left floats.
+    // @group float
+
+    // @name k-clear-right
+    // @description This is equivalent to `clear: right;`. Is a keyword indicating that the element is moved down to clear past right floats.
+    // @group float
+
+    // @name k-clear-both
+    // @description This is equivalent to `clear: both;`. Is a keyword indicating that the element is moved down to clear past both left and right floats.
+    // @group float
+
+    // @name k-clear-none
+    // @description This is equivalent to `clear: none;`. Is a keyword indicating that the element is not moved down to clear past floating elements.
+    // @group float
+
     $utils-float: (
         left,
         right,
