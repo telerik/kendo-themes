@@ -84,10 +84,28 @@
             flex-shrink: 0;
         }
         > .k-clear-value {
+            position: relative;
             opacity: .5;
 
             &:hover {
                 opacity: 1;
+            }
+
+            &::after {
+                content: "";
+                opacity: 0;
+                display: none;
+                pointer-events: none;
+                position: absolute;
+                left: -1px;
+                right: -1px;
+                top: -1px;
+                bottom: -1px;
+            }
+
+            &.k-state-focused::after,
+            &:focus::after {
+                display: block;
             }
         }
     }
