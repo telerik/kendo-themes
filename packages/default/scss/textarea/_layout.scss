@@ -60,6 +60,10 @@
         }
     }
 
+    .k-textarea-suffix {
+        flex-shrink: 0;
+    }
+
     // Textarea old rendering
     textarea.k-textarea {
         padding: $textarea-padding-y $textarea-padding-x;
