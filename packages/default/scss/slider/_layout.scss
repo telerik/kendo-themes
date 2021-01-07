@@ -114,7 +114,10 @@
             touch-action: none;
 
             .k-slider-items {
-                flex-basis: 100%;
+                // For some reason, Safari does not understand `flex-basis: 100%`
+                // See telerik/kendo-themes#2197
+                // flex-basis: 100%;
+                flex: 1 1 100%;
                 display: flex;
                 flex-flow: inherit;
                 justify-content: space-between;
