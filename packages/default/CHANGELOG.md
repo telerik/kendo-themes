@@ -3,6 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.31.0"></a>
+# [4.31.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.30.0...@progress/kendo-theme-default@4.31.0) (2021-01-07)
+
+
+### Bug Fixes
+
+* clear-value icon wrong width ([acb7266](https://github.com/telerik/kendo-themes/commit/acb7266))
+* **chart:** set area opacity to 0.6 ([e1fc2c4](https://github.com/telerik/kendo-themes/commit/e1fc2c4))
+* **dialog:** make textbox / textarea inside prompt 100% wide ([b0a8cd8](https://github.com/telerik/kendo-themes/commit/b0a8cd8))
+* **fab:** add RTL styles for Angular FAB ([cd9cd76](https://github.com/telerik/kendo-themes/commit/cd9cd76))
+* **filemanager:** ensure correct scrolling direction of preview pane ([90d0970](https://github.com/telerik/kendo-themes/commit/90d0970))
+* **filemanager:** make treeview pane scrollable ([8ea6c71](https://github.com/telerik/kendo-themes/commit/8ea6c71))
+* **grid:** add styles for focused column menu button ([0ab43e9](https://github.com/telerik/kendo-themes/commit/0ab43e9))
+* **grid:** import textbox as a dependency ([0adbaa1](https://github.com/telerik/kendo-themes/commit/0adbaa1))
+* **multicolumncombobox:** default cursor used instead of pointer on item hover ([6e5b0b2](https://github.com/telerik/kendo-themes/commit/6e5b0b2))
+* **multicolumncombobox:** item k-state-hover styles not applied on hover ([063028e](https://github.com/telerik/kendo-themes/commit/063028e))
+* **scheduler:** missing border ([ad58619](https://github.com/telerik/kendo-themes/commit/ad58619))
+* **slider:** ticks in vertical slider are misaligned in Safari ([fc5161b](https://github.com/telerik/kendo-themes/commit/fc5161b))
+* extract :focus-within styles to ensure IE 11 compatibility ([136b048](https://github.com/telerik/kendo-themes/commit/136b048))
+* missing clear button focus state ([26eab30](https://github.com/telerik/kendo-themes/commit/26eab30))
+* prevent suffix container from shrinking ([5c42975](https://github.com/telerik/kendo-themes/commit/5c42975))
+* **slider:** eliminate dependency on utils/float ([071963a](https://github.com/telerik/kendo-themes/commit/071963a))
+* **spreadsheet:** move last cell editor button infront of the cell so its clickable ([d386f83](https://github.com/telerik/kendo-themes/commit/d386f83))
+* **toolbar:** splitbutton in overflow should display its items vertically ([9157d1f](https://github.com/telerik/kendo-themes/commit/9157d1f))
+* **tooltip:** tooltip content should take all available vertical space ([b46d9f8](https://github.com/telerik/kendo-themes/commit/b46d9f8))
+
+
+### Features
+
+* **chart:** add default inactive opacity for area series ([6f3a175](https://github.com/telerik/kendo-themes/commit/6f3a175))
+* **chart:** add default inactive opacity for line series ([156d38c](https://github.com/telerik/kendo-themes/commit/156d38c))
+* **chart:** new series colors ([706f02b](https://github.com/telerik/kendo-themes/commit/706f02b))
+* **filtermenu:** use Searchbox in multi-checkbox search ([02e89bd](https://github.com/telerik/kendo-themes/commit/02e89bd))
+* **utils:** add utility classes for clear ([7781232](https://github.com/telerik/kendo-themes/commit/7781232))
+* **utils:** add utility classes for horizontal and vertical padding and margin ([c162777](https://github.com/telerik/kendo-themes/commit/c162777))
+* **utils:** add utility classes for order ([6221ba1](https://github.com/telerik/kendo-themes/commit/6221ba1))
+* **utils:** add utility classes for overflow ([953ea45](https://github.com/telerik/kendo-themes/commit/953ea45))
+* **utils:** add utility classes for pointer events ([46fa35e](https://github.com/telerik/kendo-themes/commit/46fa35e))
+* **utils:** add utility classes for resizing textarea ([126ac02](https://github.com/telerik/kendo-themes/commit/126ac02))
+* **utils:** add utility classes for touch action ([025d5c0](https://github.com/telerik/kendo-themes/commit/025d5c0))
+* **utils:** add utility classes for user select ([0dc3da8](https://github.com/telerik/kendo-themes/commit/0dc3da8))
+
+
+
+
 <a name="4.30.0"></a>
 # [4.30.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.29.0...@progress/kendo-theme-default@4.30.0) (2020-12-21)
 
