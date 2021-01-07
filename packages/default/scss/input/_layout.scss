@@ -75,8 +75,8 @@
         }
 
         > .k-icon {
-            width: $input-icon-width;
-            height: $input-icon-height;
+            width: $input-adornment-width;
+            height: $input-adornment-height;
             display: inline-flex;
             flex-flow: row nowrap;
             align-items: center;
@@ -84,6 +84,8 @@
             flex-shrink: 0;
         }
         > .k-clear-value {
+            width: $input-adornment-width;
+            height: $input-adornment-height;
             position: relative;
             opacity: .5;
 
