@@ -162,9 +162,9 @@
 
             > .k-icon {
                 padding: 2px 0;
-                float: right;
-                margin-left: $padding-x;
-                margin-right: 0;
+                float: left;
+                margin-right: $padding-x;
+                margin-left: 0;
             }
         }
 
@@ -175,9 +175,9 @@
         [dir="rtl"] & {
             > .k-item {
                 > .k-icon {
-                    float: left;
-                    margin-right: $padding-x;
-                    margin-left: 0;
+                    float: right;
+                    margin-left: $padding-x;
+                    margin-right: 0;
                 }
             }
         }
