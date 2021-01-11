@@ -190,7 +190,11 @@
         padding: $list-item-padding-y $list-item-padding-x;
         min-height: $line-height-em;
         line-height: $line-height-em;
-        white-space: normal;
+        width: auto;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         transition-property: color, background-color, outline-color, box-shadow;
         transition-duration: 200ms;
         transition-timing-function: ease;
