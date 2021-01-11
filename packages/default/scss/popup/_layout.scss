@@ -161,25 +161,23 @@
             cursor: pointer;
 
             > .k-icon {
-                align-self: center;
-                margin-right: $padding-x;
+                padding: 2px 0;
+                float: right;
+                margin-left: $padding-x;
+                margin-right: 0;
             }
         }
 
         > .k-custom-item {
             font-style: italic;
-
-            > .k-i-plus {
-                margin-left: auto;
-                margin-right: 0;
-            }
         }
 
         [dir="rtl"] & {
             > .k-item {
                 > .k-icon {
-                    margin-right: 0;
-                    margin-left: $padding-x;
+                    float: left;
+                    margin-right: $padding-x;
+                    margin-left: 0;
                 }
             }
         }
@@ -190,15 +188,21 @@
         padding: $list-item-padding-y $list-item-padding-x;
         min-height: $line-height-em;
         line-height: $line-height-em;
+        transition-property: color, background-color, outline-color, box-shadow;
+        transition-duration: 200ms;
+        transition-timing-function: ease;
+        position: relative;
+    }
+
+    .k-list .k-item {
+
         width: auto;
         display: block;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        transition-property: color, background-color, outline-color, box-shadow;
-        transition-duration: 200ms;
-        transition-timing-function: ease;
     }
+
     .k-list-optionlabel {
         cursor: pointer;
         outline: none;
