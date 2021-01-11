@@ -795,6 +795,10 @@
             .k-button,
             .k-dropdown-operator {
                 margin-left: $grid-cell-padding-y / 2;
+
+                .k-ie & {
+                    min-width: $button-inner-calc-size;
+                }
             }
 
             .k-widget {
