@@ -144,6 +144,9 @@
     kendo-label.k-checkbox-label > .k-label:first-child {
         margin-right: $checkbox-label-margin-x;
     }
+    kendo-label.k-checkbox-label > .k-label {
+        display: inline;
+    }
 
 
     // Checkbox list

@@ -31,4 +31,10 @@
         border-color: $loader-container-panel-border-color;
     }
 
+    .k-loader-container-inner {
+        .k-text-secondary {
+            color: $loader-secondary-bg !important; // sass-lint:disable-line no-important
+        }
+    }
+
 }
