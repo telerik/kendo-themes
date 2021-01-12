@@ -91,6 +91,8 @@ $chart-font-size-lg: 16px !default;
 $chart-tooltip-font-size: ($font-size * .929) !default;
 $chart-label-font-size: .857em !default;
 $chart-title-font-size: 1.143em !default;
+$chart-pane-title-font-size: $chart-label-font-size !default;
+$chart-pane-title-font-weight: $font-weight-normal !default;
 
 $chart-inactive: rgba( $body-text, .5 ) !default;
 /// The color of the Chart grid lines (major).
