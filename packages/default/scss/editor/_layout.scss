@@ -108,6 +108,16 @@
             position: relative;
         }
 
+        .k-editor-export {
+            .k-icon {
+                margin-right: $editor-export-tool-icon-margin-x;
+            }
+
+            .k-icon,
+            .k-export-tool-text {
+                vertical-align: middle;
+            }
+        }
     }
 
 
