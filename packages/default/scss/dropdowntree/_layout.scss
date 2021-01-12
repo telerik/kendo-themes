@@ -24,6 +24,7 @@
 
         .k-treeview {
             padding: $dropdowntree-popup-spacer-y $dropdowntree-popup-spacer-x;
+            overflow: visible;
         }
     }
 }
