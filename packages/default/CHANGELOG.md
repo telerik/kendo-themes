@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.32.0"></a>
+# [4.32.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.31.0...@progress/kendo-theme-default@4.32.0) (2021-01-13)
+
+
+### Bug Fixes
+
+* **chart:** inherit pane title font ([7db96ca](https://github.com/telerik/kendo-themes/commit/7db96ca))
+* **columnmenu:** apply correct padding to actions ([0280155](https://github.com/telerik/kendo-themes/commit/0280155))
+* **inputs:** angular checkbox and radio labels on the same line ([ee2aa6f](https://github.com/telerik/kendo-themes/commit/ee2aa6f))
+* **loader-container:** adjust secondary color ([d0d7e7b](https://github.com/telerik/kendo-themes/commit/d0d7e7b))
+* **utils:** use marging for MX and MY classes ([459bbe3](https://github.com/telerik/kendo-themes/commit/459bbe3))
+
+
+### Features
+
+* add $chart-pane-title-font-weight variable ([2daf251](https://github.com/telerik/kendo-themes/commit/2daf251))
+
+
+
+
 <a name="4.31.0"></a>
 # [4.31.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.30.0...@progress/kendo-theme-default@4.31.0) (2021-01-07)
 

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.28.0"></a>
+# [3.28.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.27.0...@progress/kendo-theme-material@3.28.0) (2021-01-13)
+
+
+### Bug Fixes
+
+* **chart:** inherit pane title font ([7db96ca](https://github.com/telerik/kendo-themes/commit/7db96ca))
+
+
+### Features
+
+* add $chart-pane-title-font-weight variable ([2daf251](https://github.com/telerik/kendo-themes/commit/2daf251))
+
+
+
+
 <a name="3.27.0"></a>
 # [3.27.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.26.0...@progress/kendo-theme-material@3.27.0) (2021-01-07)
 
