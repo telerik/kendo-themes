@@ -1364,6 +1364,10 @@
         padding: $grid-column-menu-list-item-padding-y $grid-column-menu-list-item-padding-x;
     }
 
+    .k-columnmenu-actions {
+        padding: $grid-filter-menu-item-spacing-y $grid-column-menu-list-item-padding-x;
+    }
+
     .k-column-list-item {
         position: relative;
         display: block;
