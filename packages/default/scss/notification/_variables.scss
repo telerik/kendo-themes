@@ -17,8 +17,7 @@ $notification-bg: $component-bg !default;
 $notification-text: $component-text !default;
 $notification-border: $component-border !default;
 
-$notification-theme-colors: $theme-colors !default;
-// $notification-themes: () !default;
+$notification-themes: () !default;
 
 @function notification-theme($name: null, $color: null) {
     // sass-lint:disable indentation
@@ -30,15 +29,6 @@ $notification-theme-colors: $theme-colors !default;
     // sass-lint:enable indentation
 }
 
-$notification-themes: (
-    primary: notification-theme( primary, map-get( $notification-theme-colors, primary ) ),
-    secondary: notification-theme( secondary, map-get( $notification-theme-colors, secondary ) ),
-    tertiary: notification-theme( tertiary, map-get( $notification-theme-colors, tertiary ) ),
-    info: notification-theme( info, map-get( $notification-theme-colors, info ) ),
-    success: notification-theme( success, map-get( $notification-theme-colors, success ) ),
-    warning: notification-theme( warning, map-get( $notification-theme-colors, warning ) ),
-    error: notification-theme( error, map-get( $notification-theme-colors, error ) ),
-    dark: notification-theme( dark, map-get( $notification-theme-colors, dark ) ),
-    light: notification-theme( light, map-get( $notification-theme-colors, light ) ),
-    inverse: notification-theme( inverse, map-get( $notification-theme-colors, inverse ) )
-);
+@each $theme, $props in $theme-colors {
+    $notification-themes: map-merge($notification-themes, ($theme: notification-theme($theme, $props)) );
+}
