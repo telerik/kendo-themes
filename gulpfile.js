@@ -5,17 +5,18 @@ const cp = require("child_process");
 const glob = require("glob");
 const fse = require("fs-extra");
 const gulp = require("gulp");
-const logger = require("gulplog");
 const sassdoc = require("sassdoc");
 const baka = require("@joneff/baka");
+const merge = require('lodash.merge');
 const { parse } = require('sass-variable-parser');
 const nodeSass = require("node-sass");
 const dartSass = require("sass");
 const autoprefixer = require("autoprefixer");
 const calc = require("postcss-calc");
 
-const { build } = require('./scripts/sass-build');
-const { flatten } = require('./scripts/sass-flatten');
+const { sassBuild, sassFlatten } = require('@progress/kendo-theme-tasks/sass');
+const { embedFileBase64 } = require('@progress/kendo-theme-tasks/embedFile');
+const { logger, colors } = require("@progress/kendo-theme-tasks/utils");
 const { getArg } = require("./scripts/utils");
 const { utilsDocs } = require('./scripts/utils-docs/generate-utils-docs');
 
@@ -43,8 +44,17 @@ const postcssPlugins = [
 
 // #region helpers
 function buildAll( cwds, options ) {
+
+    let opts = merge( {}, options );
+    opts.output = {
+        filename: '[name].css',
+        path: opts.dest
+    };
+
+    delete opts.dest;
+
     cwds.forEach( cwd => {
-        build( { cwd, ...options } );
+        sassBuild({ cwd, ...opts });
     });
 }
 function flattenAll( cwds, options ) {
@@ -54,7 +64,7 @@ function flattenAll( cwds, options ) {
         let outFile = path.resolve( cwd, options.dest, './all.scss' );
         let nodeModules = path.resolve( cwd, './node_modules' );
 
-        flatten( file, outFile, { nodeModules } );
+        sassFlatten( file, outFile, { nodeModules } );
     });
 }
 // #endregion
@@ -63,11 +73,18 @@ function flattenAll( cwds, options ) {
 // #region assets
 gulp.task("assets", function() {
     let files = glob.sync(paths.sass.assets);
-    let embedFile = require('./scripts/sass-assets');
+    let template = fs.readFileSync('./lib/data-uri.template', 'utf8');
 
-    files.forEach(function(filename) {
-        logger.info(`Converting asset to data URI: ${filename}`);
-        embedFile(filename);
+    files.forEach( file => {
+        logger.info(`Converting to data URI ${colors.magentaBright(file)}`);
+        embedFileBase64({
+            file: file,
+            output: {
+                filename: '[name].scss',
+                path: path.dirname( file )
+            },
+            template: template
+        });
     });
 
     return Promise.resolve();
