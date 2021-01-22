@@ -140,4 +140,12 @@
         }
 
     }
+
+    // Resize Handles
+    .k-window {
+        .k-resize-n { top: 0; }
+        .k-resize-e { right: 0; }
+        .k-resize-s { bottom: 0; }
+        .k-resize-w { left: 0; }
+    }
 }
