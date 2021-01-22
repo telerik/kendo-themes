@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.9.0...@progress/kendo-theme-classic@0.10.0) (2021-01-13)
+
+
+### Bug Fixes
+
+* **chart:** inherit pane title font ([7db96ca](https://github.com/telerik/kendo-themes/commit/7db96ca))
+
+
+### Features
+
+* add $chart-pane-title-font-weight variable ([2daf251](https://github.com/telerik/kendo-themes/commit/2daf251))
+
+
+
+
 <a name="0.9.0"></a>
 # [0.9.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.8.0...@progress/kendo-theme-classic@0.9.0) (2021-01-07)
 

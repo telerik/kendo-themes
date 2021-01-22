@@ -18,6 +18,11 @@
         font-size: $chart-title-font-size;
     }
 
+    .k-var--chart-pane-title-font {
+        font-size: $chart-pane-title-font-size;
+        font-weight: $chart-pane-title-font-weight;
+    }
+
     .k-var--chart-label-font {
         font-size: $chart-label-font-size;
     }

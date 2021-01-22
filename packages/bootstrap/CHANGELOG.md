@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.30.0"></a>
+# [4.30.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.29.0...@progress/kendo-theme-bootstrap@4.30.0) (2021-01-13)
+
+
+### Bug Fixes
+
+* use correct value for Bootstrap SM spacing ([1751b03](https://github.com/telerik/kendo-themes/commit/1751b03))
+* **chart:** inherit pane title font ([7db96ca](https://github.com/telerik/kendo-themes/commit/7db96ca))
+
+
+### Features
+
+* add $chart-pane-title-font-weight variable ([2daf251](https://github.com/telerik/kendo-themes/commit/2daf251))
+
+
+
+
 <a name="4.29.0"></a>
 # [4.29.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.28.0...@progress/kendo-theme-bootstrap@4.29.0) (2021-01-07)
 
