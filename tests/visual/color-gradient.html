@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>ColorGradient</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <section>
+            <p>ColorGradient</p>
+            <div class="k-widget k-flatcolorpicker">
+                <div class="k-hbox k-hsv-wrap">
+                   <div class="k-hsv-rectangle" style="background: rgb(255, 0, 0);">
+                      <div class="k-hsv-gradient" style="touch-action: none;">
+                         <div class="k-draghandle" style="top: 50px; left: 73px;"></div>
+                      </div>
+                   </div>
+                   <div class="k-hbox k-sliders-wrap">
+                      <div role="slider" class="k-slider k-widget k-state-default k-slider-vertical k-hue-slider">
+                         <div class="k-slider-wrap" style="display: flex; position: relative; flex-direction: column-reverse;">
+                            <div class="k-slider-track-wrap" style="flex-grow: 1; position: relative; touch-action: none; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                               <div class="k-slider-track" style="bottom: 0px; height: 100%;">
+                                  <div class="k-slider-selection" style="height: 0%;"></div>
+                                  <a class="k-draghandle" title="Drag" style="bottom: calc(0% - 8px); z-index: 1;"></a>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div role="slider" class="k-slider k-widget k-state-default k-slider-vertical k-alpha-slider">
+                         <div class="k-slider-wrap" style="display: flex; position: relative; flex-direction: column-reverse;">
+                            <div class="k-slider-track-wrap" style="flex-grow: 1; position: relative; touch-action: none; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                               <div class="k-slider-track" style="bottom: 0px; height: 100%; background: linear-gradient(to top, transparent, rgb(255, 0, 0));">
+                                  <div class="k-slider-selection" style="height: 100%;"></div>
+                                  <a class="k-draghandle" title="Drag" style="bottom: calc(100% - 8px); z-index: 1;"></a>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="k-colorinputs">
+                   <div class="k-hbox k-gradient-values">
+                       <input class="k-textbox k-hex-value" value="#b88484">
+                       <span class="k-widget k-numerictextbox">
+                           <span class="k-numeric-wrap">
+                                <input type="tel" class="k-input k-formatted-value" value="184">
+                            </span>
+                        </span>
+                        <span class="k-widget k-numerictextbox">
+                            <span class="k-numeric-wrap">
+                                <input type="tel" class="k-input k-formatted-value" value="132">
+                            </span>
+                        </span>
+                        <span class="k-widget k-numerictextbox">
+                            <span class="k-numeric-wrap">
+                                <input type="tel" class="k-input k-formatted-value" value="132">
+                            </span>
+                        </span>
+                        <span class="k-widget k-numerictextbox">
+                            <span class="k-numeric-wrap">
+                                <input type="tel" class="k-input k-formatted-value" value="1.00">
+                            </span>
+                        </span>
+                    </div>
+                    <div class="k-hbox k-gradient-values">
+                        <div class="k-hex-value">hex</div>
+                        <div>r</div>
+                        <div>g</div>
+                        <div>b</div>
+                        <div>a</div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section>
+            <p>ColorGradient without alpha slider</p>
+            <div class="k-widget k-flatcolorpicker">
+                <div class="k-hbox k-hsv-wrap">
+                   <div class="k-hsv-rectangle" style="background: rgb(255, 0, 61);">
+                      <div class="k-hsv-gradient" style="touch-action: none;">
+                         <div class="k-draghandle" style="top: 39px; left: 196px;"></div>
+                      </div>
+                   </div>
+                   <div class="k-hbox k-sliders-wrap">
+                      <div role="slider" class="k-slider k-widget k-state-default k-slider-vertical k-hue-slider">
+                         <div class="k-slider-wrap" style="display: flex; position: relative; flex-direction: column-reverse;">
+                            <div class="k-slider-track-wrap" style="flex-grow: 1; position: relative; touch-action: none; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                               <div class="k-slider-track" style="bottom: 0px; height: 100%;">
+                                  <div class="k-slider-selection" style="height: 95.9829%;"></div>
+                                  <a class="k-draghandle" title="Drag" style="bottom: calc(95.9829% - 8px); z-index: 1;"></a>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="k-colorinputs">
+                   <div class="k-hbox k-gradient-values">
+                       <input class="k-textbox k-hex-value" value="#c8395b">
+                       <span class="k-widget k-numerictextbox">
+                           <span class="k-numeric-wrap">
+                               <input type="tel" class="k-input k-formatted-value" value="200">
+                            </span>
+                        </span>
+                        <span class="k-widget k-numerictextbox">
+                            <span class="k-numeric-wrap">
+                                <input type="tel" class="k-input k-formatted-value" value="57">
+                            </span>
+                        </span>
+                        <span class="k-widget k-numerictextbox">
+                            <span class="k-numeric-wrap">
+                                <input type="tel" class="k-input k-formatted-value" value="91">
+                            </span>
+                        </span>
+                    </div>
+                   <div class="k-hbox k-gradient-values">
+                      <div class="k-hex-value">hex</div>
+                      <div>r</div>
+                      <div>g</div>
+                      <div>b</div>
+                   </div>
+                </div>
+             </div>
+        </section>
+
+        <section>
+            <p>ColorGradient with color contrast tool</p>
+            <div class="k-widget k-flatcolorpicker">
+                <div class="k-hbox k-hsv-wrap">
+                   <div class="k-hsv-rectangle" style="background: rgb(255, 0, 0);">
+                      <div class="k-hsv-gradient" style="touch-action: none;">
+                         <div class="k-draghandle" style="top: 50px; left: 73px;"></div>
+                      </div>
+                   </div>
+                   <div class="k-hbox k-sliders-wrap">
+                      <div role="slider" class="k-slider k-widget k-state-default k-slider-vertical k-hue-slider">
+                         <div class="k-slider-wrap" style="display: flex; position: relative; flex-direction: column-reverse;">
+                            <div class="k-slider-track-wrap" style="flex-grow: 1; position: relative; touch-action: none; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                               <div class="k-slider-track" style="bottom: 0px; height: 100%;">
+                                  <div class="k-slider-selection" style="height: 0%;"></div>
+                                  <a class="k-draghandle" title="Drag" style="bottom: calc(0% - 8px); z-index: 1;"></a>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div role="slider" class="k-slider k-widget k-state-default k-slider-vertical k-alpha-slider">
+                         <div class="k-slider-wrap" style="display: flex; position: relative; flex-direction: column-reverse;">
+                            <div class="k-slider-track-wrap" style="flex-grow: 1; position: relative; touch-action: none; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                               <div class="k-slider-track" style="bottom: 0px; height: 100%; background: linear-gradient(to top, transparent, rgb(255, 0, 0));">
+                                  <div class="k-slider-selection" style="height: 100%;"></div>
+                                  <a class="k-draghandle" title="Drag" style="bottom: calc(100% - 8px); z-index: 1;"></a>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="k-colorinputs">
+                   <div class="k-hbox k-gradient-values">
+                       <input class="k-textbox k-hex-value" value="#b88484">
+                       <span class="k-widget k-numerictextbox">
+                           <span class="k-numeric-wrap">
+                                <input type="tel" class="k-input k-formatted-value" value="184">
+                            </span>
+                        </span>
+                        <span class="k-widget k-numerictextbox">
+                            <span class="k-numeric-wrap">
+                                <input type="tel" class="k-input k-formatted-value" value="132">
+                            </span>
+                        </span>
+                        <span class="k-widget k-numerictextbox">
+                            <span class="k-numeric-wrap">
+                                <input type="tel" class="k-input k-formatted-value" value="132">
+                            </span>
+                        </span>
+                        <span class="k-widget k-numerictextbox">
+                            <span class="k-numeric-wrap">
+                                <input type="tel" class="k-input k-formatted-value" value="1.00">
+                            </span>
+                        </span>
+                    </div>
+                    <div class="k-hbox k-gradient-values">
+                        <div class="k-hex-value">hex</div>
+                        <div>r</div>
+                        <div>g</div>
+                        <div>b</div>
+                        <div>a</div>
+                    </div>
+                </div>
+                <div class="k-vbox k-color-contrast">
+                    <span class="k-separator"></span>
+                    <div class="k-contrast-ratio">
+                        <span class="k-contrast-ratio-text">Contrast ratio: 7.1</span>
+                        <span class="k-contrast-validation k-text-success">
+                            <span class="k-icon k-i-check"></span>
+                            <span class="k-icon k-i-check"></span>
+                        </span>
+                    </div>
+                    <div>
+                        <span>AA: 4.5</span>
+                        <span class="k-contrast-validation k-text-success">Pass
+                            <span class="k-icon k-i-check"></span>
+                        </span>
+                    </div>
+                    <div>
+                        <span>AAA: 7.0</span>
+                        <span class="k-contrast-validation k-text-error">Fail
+                            <span class="k-icon k-i-close"></span>
+                        </span>
+                    </div>
+                 </div>
+             </div>
+        </section>
+    </div>
+
+</body>
+</html>

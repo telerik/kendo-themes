@@ -315,6 +315,43 @@
         }
 
 
+        // Color contrast
+        .k-color-contrast {
+            .k-separator {
+                margin: map-get( $spacing, 2 ) 0;
+                border-width: 0;
+                border-top-width: 1px;
+                border-style: solid;
+                border-color: inherit;
+                display: block;
+                flex: 0 0 auto;
+                align-self: stretch;
+            }
+
+            .k-contrast-ratio {
+                margin-bottom: map-get( $spacing, 2 );
+            }
+
+            .k-contrast-ratio-text {
+                font-weight: $font-weight-bold;
+            }
+
+            .k-contrast-validation {
+                margin-left: map-get( $spacing, 2 );
+
+                .k-icon {
+                    vertical-align: middle;
+                }
+
+                // Needed for the double check icons.
+                // Once we have double check icon, this can be removed.
+                .k-i-check + .k-i-check {
+                    margin-left: -14px;
+                }
+            }
+        }
+
+
         // Selected color
         .k-selected-color {
             border-width: 0 0 1px;
