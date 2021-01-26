@@ -15,11 +15,20 @@
             $expander-header-border
         );
         outline: none;
+
+        &:hover,
+        &.k-state-hover {
+            background-color: $expander-header-hover-bg;
+        }
+
+        &.k-state-focused {
+            background-color: $expander-header-focused-bg;
+            box-shadow: $expander-header-focused-shadow;
+        }
     }
 
-    .k-expander-header.k-state-focused {
-        background-color: $expander-header-focused-bg;
-        box-shadow: $expander-header-focused-shadow;
+    .k-expander-title {
+        color: $expander-title-text;
     }
 
     .k-expander-sub-title {

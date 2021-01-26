@@ -1,12 +1,12 @@
 // Expansion panel
-$expander-padding-y: 8px !default;
+$expander-spacing-y: $padding-y * 2 !default;
 $expander-font-family: $font-family !default;
 $expander-font-size: $font-size !default;
 $expander-line-height: $line-height !default;
-$expander-border-width: 0 !default;
+$expander-border-width: 1px !default;
 
-$expander-header-padding-x: 0 !default;
-$expander-header-padding-y: $header-padding-y !default;
+$expander-header-padding-x: $header-padding-x * 2 !default;
+$expander-header-padding-y: $header-padding-y * 1.5 !default;
 
 $expander-indicator-margin-x: $padding-x * 1.5 !default;
 
@@ -14,15 +14,18 @@ $expander-bg: $component-bg !default;
 $expander-text: $component-text !default;
 $expander-border: $component-border !default;
 
-$expander-header-border-width: 2px !default;
 $expander-header-bg: $expander-bg !default;
 $expander-header-text: $expander-text !default;
-$expander-header-border: $expander-text !default;
+$expander-header-border: null !default;
+
+$expander-header-hover-bg: shade($expander-bg) !default;
 
 $expander-header-focused-bg: null !default;
 $expander-header-focused-shadow: $list-item-focused-shadow !default;
 
-$expander-header-sub-title-opacity: .65 !default;
+$expander-title-text: $primary !default;
 
-$expander-content-padding-x: $padding-x * 2.5 !default;
-$expander-content-padding-y: $padding-y * 5 !default;
+$expander-header-sub-title-opacity: .5 !default;
+
+$expander-content-padding-x: $padding-x * 2 !default;
+$expander-content-padding-y: $padding-y * 4 !default;
