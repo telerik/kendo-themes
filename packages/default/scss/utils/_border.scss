@@ -1,0 +1,34 @@
+@include exports( "utils/border" ) {
+
+    // Border utility classes
+    $utils-border-sides: (
+        "border",
+        "border-top",
+        "border-right",
+        "border-bottom",
+        "border-left",
+    ) !default;
+
+    $utils-border-width: (
+        0: 0,
+        1: 1px
+    ) !default;
+
+    // sass-lint:disable no-important
+    @if $utils-border-sides and $utils-border-width {
+        @each $side in $utils-border-sides {
+
+            .k-#{$side} {
+                #{$side}-width: 1px !important;
+            }
+
+            @each $width, $value in $utils-border-width {
+                .k-#{$side}-#{$width} {
+                    #{$side}-width: $value !important;
+                }
+            }
+        }
+    }
+    // sass-lint:enable no-important
+
+}
