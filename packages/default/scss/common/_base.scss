@@ -27,19 +27,6 @@ $widget-border-width: 1px !default;
     }
 
 
-    // Overlay
-    .k-overlay {
-        width: 100%;
-        height: 100%;
-        background-color: $backdrop-bg;
-        opacity: $backdrop-opacity;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 10001;
-    }
-
-
     // RTL
     .k-rtl {
         direction: rtl;

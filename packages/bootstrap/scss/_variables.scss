@@ -196,20 +196,10 @@ $error-darker: shade( $error, 2 ) !default;
 /// @type Color
 $dark: $dark !default;
 
-/// The overlay dark color of the theme.
-/// @group color-system
-/// @type Color
-$overlay-dark: rgba(0, 0, 0, .3) !default;
-
 /// The light color of the theme.
 /// @group color-system
 /// @type Color
 $light: $light !default;
-
-/// The overlay light color of the theme.
-/// @group color-system
-/// @type Color
-$overlay-light: rgba(255, 255, 255, .3) !default;
 
 /// Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark
 /// @group color-system
@@ -230,14 +220,6 @@ $theme-colors: map-merge((
     "light": $light,
     "inverse": $inverse
 ), $theme-colors);
-// sass-lint:enable indentation
-
-$overlay-theme-colors: () !default;
-// sass-lint:disable indentation
-$overlay-theme-colors: map-merge((
-    "dark": $overlay-dark,
-    "light": $overlay-light
-), $overlay-theme-colors);
 // sass-lint:enable indentation
 
 // Cursor utility classes
@@ -443,11 +425,6 @@ $drag-clue-border-radius: null !default;
 $grid-cols: 12 !default;
 $grid-rows: 10 !default;
 $grid-gap: 10px !default;
-
-
-// Backdrop (Overlay)
-$backdrop-bg: $modal-backdrop-bg !default;
-$backdrop-opacity: $modal-backdrop-opacity !default;
 
 
 // Disabled Styling maps
