@@ -394,6 +394,11 @@
         left: 0;
     }
 
+    // TODO: use k-overlay as a base class in rendering
+    .k-loader-container-overlay {
+        opacity: $overlay-opacity;
+    }
+
     .k-loader-container-inner {
         display: flex;
         align-items: center;

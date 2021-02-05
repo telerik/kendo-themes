@@ -10,19 +10,6 @@
         }
     }
 
-}
-
-
-
-@include exports( "loader-container/theme" ) {
-
-
-    @each $name, $color in $overlay-theme-colors {
-        .k-loader-container-overlay.k-overlay-#{$name} {
-            background-color: $color;
-        }
-    }
-
     .k-loader-container-panel {
         background-color: $loader-container-panel-bg;
         border-color: $loader-container-panel-border-color;

@@ -1,0 +1,15 @@
+@include exports("overlay/theme") {
+
+    // Overlay
+    .k-overlay {
+        background-color: $overlay-bg;
+    }
+
+
+    @each $name, $color in $overlay-theme-colors {
+        .k-overlay-#{$name} {
+            background-color: $color;
+        }
+    }
+
+}
