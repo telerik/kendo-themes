@@ -30,8 +30,6 @@
     // Header
     .k-expander-header {
         padding: $expander-header-padding-y $expander-header-padding-x;
-        border-width: 0 0 $expander-header-border-width;
-        border-style: solid;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -45,8 +43,8 @@
 
     // Title
     .k-expander-title {
-        font-weight: bold;
         text-transform: uppercase;
+        font-weight: 500;
     }
 
     // Expand / collapse icon
@@ -58,5 +56,14 @@
     .k-expander-content {
         padding: $expander-content-padding-y $expander-content-padding-x;
         box-sizing: border-box;
+    }
+
+    .k-expander.k-expanded + .k-expander,
+    .k-expander.k-expanded:not(:first-child) {
+        margin-top: $expander-spacing-y;
+    }
+
+    .k-expander:not(.k-expanded) + .k-expander:not(.k-expanded) {
+        border-top-width: 0;
     }
 }

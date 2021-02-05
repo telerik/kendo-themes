@@ -15,7 +15,7 @@
         &.k-state-focused > .k-label {
             @include fill(
                 $color: $floating-label-focus-text,
-                $bg: $floating-label-focus-bg,
+                $bg: $floating-label-focus-bg
             );
         }
 

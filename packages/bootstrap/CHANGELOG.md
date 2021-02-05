@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.30.0"></a>
+# [4.30.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.29.0...@progress/kendo-theme-bootstrap@4.30.0) (2021-01-13)
+
+
+### Bug Fixes
+
+* use correct value for Bootstrap SM spacing ([1751b03](https://github.com/telerik/kendo-themes/commit/1751b03))
+* **chart:** inherit pane title font ([7db96ca](https://github.com/telerik/kendo-themes/commit/7db96ca))
+
+
+### Features
+
+* add $chart-pane-title-font-weight variable ([2daf251](https://github.com/telerik/kendo-themes/commit/2daf251))
+
+
+
+
+<a name="4.29.0"></a>
+# [4.29.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.28.0...@progress/kendo-theme-bootstrap@4.29.0) (2021-01-07)
+
+
+### Bug Fixes
+
+* clear-value icon wrong width ([acb7266](https://github.com/telerik/kendo-themes/commit/acb7266))
+* missing clear button focus state ([26eab30](https://github.com/telerik/kendo-themes/commit/26eab30))
+* **chart:** set area opacity to 0.6 ([e1fc2c4](https://github.com/telerik/kendo-themes/commit/e1fc2c4))
+* **grid:** add styles for focused column menu button ([0ab43e9](https://github.com/telerik/kendo-themes/commit/0ab43e9))
+* **grid:** import textbox as a dependency ([0adbaa1](https://github.com/telerik/kendo-themes/commit/0adbaa1))
+* **toolbar:** splitbutton in overflow should display its items vertically ([9157d1f](https://github.com/telerik/kendo-themes/commit/9157d1f))
+
+
+### Features
+
+* **chart:** add default inactive opacity for area series ([6f3a175](https://github.com/telerik/kendo-themes/commit/6f3a175))
+* **chart:** add default inactive opacity for line series ([156d38c](https://github.com/telerik/kendo-themes/commit/156d38c))
+* **chart:** new series colors ([706f02b](https://github.com/telerik/kendo-themes/commit/706f02b))
+* **utils:** add utility classes for order ([6221ba1](https://github.com/telerik/kendo-themes/commit/6221ba1))
+* **utils:** add utility classes for overflow ([953ea45](https://github.com/telerik/kendo-themes/commit/953ea45))
+* **utils:** add utility classes for pointer events ([46fa35e](https://github.com/telerik/kendo-themes/commit/46fa35e))
+* **utils:** add utility classes for resizing textarea ([126ac02](https://github.com/telerik/kendo-themes/commit/126ac02))
+* **utils:** add utility classes for touch action ([025d5c0](https://github.com/telerik/kendo-themes/commit/025d5c0))
+* **utils:** add utility classes for user select ([0dc3da8](https://github.com/telerik/kendo-themes/commit/0dc3da8))
+
+
+
+
 <a name="4.28.0"></a>
 # [4.28.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.27.0...@progress/kendo-theme-bootstrap@4.28.0) (2020-12-21)
 

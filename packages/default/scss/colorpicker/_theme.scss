@@ -144,6 +144,11 @@
             box-shadow: 0 1px 4px rgba(0, 0, 0, .21);
         }
 
+        // Color contrast
+        .k-color-contrast .k-separator {
+            border-color: $colorpicker-border;
+        }
+
     }
 
 

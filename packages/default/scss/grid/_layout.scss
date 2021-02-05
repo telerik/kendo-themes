@@ -1274,6 +1274,11 @@
             display: block;
         }
 
+        .k-searchbox {
+            margin: $grid-filter-menu-item-spacing-y $grid-filter-menu-item-spacing-x;
+            width: 100%;
+        }
+
         .k-widget.k-filter-and {
             width: 6em;
         }
@@ -1359,6 +1364,10 @@
         padding: $grid-column-menu-list-item-padding-y $grid-column-menu-list-item-padding-x;
     }
 
+    .k-columnmenu-actions {
+        padding: $grid-filter-menu-item-spacing-y $grid-column-menu-list-item-padding-x;
+    }
+
     .k-column-list-item {
         position: relative;
         display: block;
@@ -1439,6 +1448,7 @@
         }
 
         .k-expander {
+            border: 0;
             background: inherit;
 
             .k-columnmenu-item {

@@ -1,2 +1,1 @@
-* @gyoshev @joneff
-docs/ @dmihaylo
+* @joneff @PreslavKozovski @inikolova

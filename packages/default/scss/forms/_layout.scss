@@ -73,6 +73,10 @@
             display: inline-flex;
         }
 
+        .k-label + .k-radio {
+            margin-left: 0;
+        }
+
         .k-form-fieldset {
             margin: $form-fieldset-margin;
             padding: $form-fieldset-padding;

@@ -75,8 +75,8 @@
         }
 
         > .k-icon {
-            width: $input-icon-width;
-            height: $input-icon-height;
+            width: $input-adornment-width;
+            height: $input-adornment-height;
             display: inline-flex;
             flex-flow: row nowrap;
             align-items: center;
@@ -84,10 +84,30 @@
             flex-shrink: 0;
         }
         > .k-clear-value {
+            width: $input-adornment-width;
+            height: $input-adornment-height;
+            position: relative;
             opacity: .5;
 
             &:hover {
                 opacity: 1;
+            }
+
+            &::after {
+                content: "";
+                opacity: 0;
+                display: none;
+                pointer-events: none;
+                position: absolute;
+                left: -1px;
+                right: -1px;
+                top: -1px;
+                bottom: -1px;
+            }
+
+            &.k-state-focused::after,
+            &:focus::after {
+                display: block;
             }
         }
     }

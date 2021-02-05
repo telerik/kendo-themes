@@ -161,7 +161,8 @@
 @include exports("fab/layout/rtl") {
 
     .k-rtl .k-fab,
-    .k-fab[dir="rtl"] {
+    .k-fab[dir="rtl"],
+    [dir="rtl"] .k-fab {
         direction: rtl;
 
         .k-fab-icon {
