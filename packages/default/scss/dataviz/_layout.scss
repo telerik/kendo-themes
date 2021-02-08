@@ -469,7 +469,7 @@
         series-30: $series-30,
 
         gauge-pointer: $primary,
-        gauge-track: darken($chart-bg, 10%)
+        gauge-track: try-shade( $chart-bg )
     );
 
     @each $name, $value in $exported {
