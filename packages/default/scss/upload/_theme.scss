@@ -120,7 +120,7 @@
         .k-file-size,
         .k-file-validation-message,
         .k-file-information {
-            color: $upload-disabled-text;
+            color: try-tint( $upload-text, 50% );
         }
 
         .k-multiple-files-wrapper .k-file-information {
