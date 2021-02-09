@@ -1345,6 +1345,12 @@
         .k-detail-row {
             display: none !important;
         }
+
+        input.k-input,
+        span.k-input,
+        input.k-textbox {
+            width: 0 !important;
+        }
     }
 
 }
