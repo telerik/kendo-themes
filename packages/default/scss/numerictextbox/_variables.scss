@@ -1,6 +1,4 @@
 // Numeric Textbox
-$numerictextbox-spinners-focused-shadow: inset $button-focused-shadow !default;
-
 $numeric-bg: $input-bg !default;
 $numeric-text: $input-text !default;
 $numeric-border: $input-border !default;
@@ -28,8 +26,7 @@ $numeric-button-hovered-text: $button-hovered-text !default;
 $numeric-button-hovered-border: $button-hovered-border !default;
 $numeric-button-hovered-gradient: $button-hovered-gradient !default;
 
-$numeric-button-pressed-text: $button-pressed-text !default;
 $numeric-button-pressed-bg: $button-pressed-bg !default;
+$numeric-button-pressed-text: $button-pressed-text !default;
 $numeric-button-pressed-border: $button-pressed-border !default;
 $numeric-button-pressed-gradient: $button-pressed-gradient !default;
-$numeric-button-pressed-shadow: $button-pressed-shadow !default;
