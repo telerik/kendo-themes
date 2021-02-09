@@ -1,1 +1,16 @@
 @import "~@progress/kendo-theme-default/scss/numerictextbox/_layout.scss";
+
+@include exports( "numerictextbox/layout/bootstrap" ) {
+
+    // Numeric
+    .k-numerictextbox {
+
+        .k-select,
+        .k-numeric-wrap {
+            transition: $transition;
+        }
+
+    }
+
+}
+
