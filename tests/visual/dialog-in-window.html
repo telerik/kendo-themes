@@ -9,62 +9,66 @@
 
     <style>
         /* ensure test area size, due to fixed element */
-        #test-area {
-            width: 1024px;
-            height: 768px;
-            align-items: stretch;
-        }
-        .k-dialog-wrapper {
+        #test-area {}
+
+
+        .k-window {
+            width: 800px;
+            height: 500px;
             position: relative;
+        }
+        .k-dialog {
+            width: 300px;
+            height: 200px;
         }
     </style>
 </head>
 <body>
 
-<kendo-window class="k-widget k-window k-window-wrapper" style="width: 800px; height: 500px;">
-    <kendo-window-titlebar class="k-window-titlebar k-dialog-titlebar k-header">
-        <div class="k-window-title">Custom window
-        </div>
-        <button class="k-button-icon k-button k-bare">
-            <span class="k-icon k-i-window-minimize"></span>
-        </button>
-        <button class="k-button-icon k-button k-bare">
-            <span class="k-icon k-i-window-maximize"></span>
-        </button>
-        <button class="k-button-icon k-button k-bare">
-            <span class="k-icon k-i-window-restore"></span>
-        </button>
-        <button  class="k-button-icon k-button k-bare">
-            <span class="k-icon k-i-close"></span>
-        </button>
-    </kendo-window-titlebar>
-    <div class="k-content k-window-content">
-        <app-custom-window>
-            <div> Hello world - Window <br>
-                <button class="k-button">Open dialog</button>
-            </div>
-            <kendo-dialog class="k-dialog-wrapper" style="position: absolute">
-                <div class="k-overlay"></div>
-                <div class="k-widget k-window k-dialog" style="height:200px;width:300px;">
-                    <kendo-dialog-titlebar class="k-window-titlebar k-dialog-titlebar k-header">
-                        <div class="k-window-title k-dialog-title">Custom dialog</div>
-                        <div class="k-window-actions k-dialog-actions">
-                            <a class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close">
-                                <span class="k-icon k-i-x"></span>
-                            </a>
-                        </div>
-                    </kendo-dialog-titlebar>
-                    <div class="k-content k-window-content k-dialog-content">
-                        <app-custom-dialog>
-                            <div>Hello world - Dialog
-                            </div>
-                        </app-custom-dialog>
+    <div id="test-area" class="k-d-grid">
+
+        <section>
+            <kendo-window class="k-widget k-window k-window-wrapper">
+                <kendo-window-titlebar class="k-window-titlebar k-header">
+                    <div class="k-window-title k-dialog-title">Window with dialog</div>
+                    <div class="k-window-actions k-dialog-actions">
+                        <button class="k-button-icon k-button k-bare">
+                            <span class="k-icon k-i-window-minimize"></span>
+                        </button>
+                        <button class="k-button-icon k-button k-bare">
+                            <span class="k-icon k-i-window-maximize"></span>
+                        </button>
+                        <button class="k-button-icon k-button k-bare">
+                            <span class="k-icon k-i-window-restore"></span>
+                        </button>
+                        <button  class="k-button-icon k-button k-bare">
+                            <span class="k-icon k-i-close"></span>
+                        </button>
                     </div>
+                </kendo-window-titlebar>
+                <div class="k-content k-window-content">
+                    Window content
+                    <kendo-dialog class="k-dialog-wrapper">
+                        <div class="k-overlay"></div>
+                        <div class="k-widget k-window k-dialog">
+                            <kendo-dialog-titlebar class="k-window-titlebar k-dialog-titlebar k-header">
+                                <div class="k-window-title k-dialog-title">Dialog in window</div>
+                                <div class="k-window-actions k-dialog-actions">
+                                    <a class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close">
+                                        <span class="k-icon k-i-x"></span>
+                                    </a>
+                                </div>
+                            </kendo-dialog-titlebar>
+                            <div class="k-content k-window-content k-dialog-content">
+                                Dialog content
+                            </div>
+                        </div>
+                    </kendo-dialog>
                 </div>
-            </kendo-dialog>
-        </app-custom-window>
+            </kendo-window>
+        </section>
+
     </div>
-</kendo-window>
 
 </body>
 </html>
