@@ -67,7 +67,7 @@
         .k-select {
             @include border-right-radius-only( $input-border-radius );
             padding: $combobox-select-padding-y $combobox-select-padding-x;
-            width: if($use-picker-select-width, $combobox-select-width, auto);
+            width: if( $use-picker-select-width, $combobox-select-width, null );
             border-width: 0 0 0 $combobox-select-border-width;
             box-sizing: border-box;
             border-style: solid;
