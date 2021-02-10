@@ -43,8 +43,7 @@ $datetime-select-hovered-text: $button-hovered-text !default;
 $datetime-select-hovered-border: $button-hovered-border !default;
 $datetime-select-hovered-gradient: $button-hovered-gradient !default;
 
-$datetime-select-focused-bg: null !default;
-$datetime-select-focused-text: null !default;
-$datetime-select-focused-border: null !default;
-$datetime-select-focused-gradient: null !default;
-$datetime-select-focused-shadow: $button-focused-shadow !default;
+$datetime-select-pressed-bg: $button-pressed-bg !default;
+$datetime-select-pressed-text: $button-pressed-text !default;
+$datetime-select-pressed-border: $button-pressed-border !default;
+$datetime-select-pressed-gradient: $button-pressed-gradient !default;
