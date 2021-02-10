@@ -8,77 +8,90 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-        /* ensure test area size, due to fixed element */
+        .k-window {
+            position: relative;
+        }
+        kendo-popup {
+            top: 50px;
+            left: 100px;
+        }
+
         #test-area {
-            width: 1024px;
-            height: 768px;
-            align-items: stretch;
+            height: 300px;
         }
     </style>
 </head>
 <body>
 
-<kendo-window class="k-widget k-window k-window-wrapper" style="width: 230px; height: 110px;">
-    <kendo-window-titlebar class="k-window-titlebar k-dialog-titlebar k-header">
-        <div class="k-window-title">Window
-        </div>
-        <button class="k-button-icon k-button k-bare">
-            <span class="k-icon k-i-window-minimize"></span>
-        </button>
-        <button class="k-button-icon k-button k-bare">
-            <span class="k-icon k-i-window-maximize"></span>
-        </button>
-        <button class="k-button-icon k-button k-bare">
-            <span class="k-icon k-i-window-restore"></span>
-        </button>
-        <button  class="k-button-icon k-button k-bare">
-            <span class="k-icon k-i-close"></span>
-        </button>
-    </kendo-window-titlebar>
-    <div class="k-content k-window-content">Target</div>
-</kendo-window>
-<kendo-popup class="k-animation-container k-context-menu-popup k-animation-container-shown">
-    <div class="k-popup k-menu-popup">
-        <ul class="k-group k-menu-group k-reset">
-            <li class="k-item k-menu-item k-first">
-                <span class="k-link k-menu-link">
-                    Item 1
-                    <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
-                </span>
-            </li>
-            <li class="k-item k-menu-item">
-                <span class="k-link k-menu-link">
-                    Item 2
-                    <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
-                </span>
-            </li>
-            <li class="k-item k-menu-item">
-                <span class="k-link k-menu-link">
-                    Item 3
-                    <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
-                </span>
-            </li>
-            <li class="k-item k-menu-item">
-                <span class="k-link k-menu-link">
-                    Item 4
-                    <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
-                </span>
-            </li>
-            <li class="k-item k-menu-item">
-                <span class="k-link k-menu-link">
-                    Item 5
-                    <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
-                </span>
-            </li>
-            <li class="k-item k-menu-item">
-                <span class="k-link k-menu-link">
-                    Item 6
-                    <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
-                </span>
-            </li>
-        </ul>
+    <div id="test-area" class="k-d-grid">
+
+        <section>
+            <kendo-window class="k-widget k-window k-window-wrapper">
+                <kendo-window-titlebar class="k-window-titlebar k-header">
+                    <div class="k-window-title">Window</div>
+                    <div class="k-window-actions">
+                        <button class="k-button-icon k-button k-bare">
+                            <span class="k-icon k-i-window-minimize"></span>
+                        </button>
+                        <button class="k-button-icon k-button k-bare">
+                            <span class="k-icon k-i-window-maximize"></span>
+                        </button>
+                        <button class="k-button-icon k-button k-bare">
+                            <span class="k-icon k-i-window-restore"></span>
+                        </button>
+                        <button  class="k-button-icon k-button k-bare">
+                            <span class="k-icon k-i-close"></span>
+                        </button>
+                    </div>
+                </kendo-window-titlebar>
+                <div class="k-content k-window-content">Target</div>
+            </kendo-window>
+
+            <kendo-popup class="k-animation-container k-context-menu-popup k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <ul class="k-group k-menu-group k-reset">
+                        <li class="k-item k-menu-item k-first">
+                            <span class="k-link k-menu-link">
+                                Item 1
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                Item 2
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                Item 3
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                Item 4
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                Item 5
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                Item 6
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </kendo-popup>
+        </section>
+
     </div>
-</kendo-popup>
 
 </body>
 </html>
