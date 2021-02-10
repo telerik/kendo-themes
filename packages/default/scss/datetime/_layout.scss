@@ -1,10 +1,221 @@
 @include exports("datetime/layout") {
 
-    // Common
-    .k-dateinput,
+    // Dateinput
+    .k-dateinput {
+        width: $input-default-width;
+        border-width: 0;
+        box-sizing: border-box;
+        outline: 0;
+        background: none;
+        font-family: $input-font-family;
+        font-size: $input-font-size;
+        line-height: $input-line-height;
+        text-align: left;
+        white-space: nowrap;
+        display: inline-flex;
+        vertical-align: middle;
+        position: relative;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
+
+        .k-dateinput-wrap {
+            @include use-background-clip();
+            @include border-radius( $input-border-radius );
+            padding: 0;
+            width: 100%;
+            border-width: 1px;
+            border-style: solid;
+            box-sizing: border-box;
+            position: relative;
+            transition: all .1s ease; // sass-lint:disable-line no-transition-all
+            cursor: default;
+            outline: 0;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+
+        // Input
+        .k-input {}
+
+
+        // Select
+        .k-select {
+            @include border-right-radius-only( $input-border-radius );
+            padding: 0;
+            width: if( $use-picker-select-width, $spinner-width, null );
+            border-width: 0 0 0 $picker-select-border-width;
+            box-sizing: border-box;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+            flex: 0 0 auto;
+            text-align: center;
+            cursor: pointer;
+        }
+        .k-link {
+            padding: 0 $picker-select-padding-x;
+            min-width: $icon-size;
+            flex: 1 1 auto;
+            display: block;
+            overflow: hidden;
+            position: relative;
+
+            .k-icon {
+                position: absolute;
+                right: 50%;
+                transform: translateX(50%);
+            }
+        }
+        .k-link-increase .k-icon {
+            bottom: -$spinner-icon-offset;
+        }
+        .k-link-decrease .k-icon {
+            top: -$spinner-icon-offset;
+        }
+
+
+        // Validation icon
+        .k-i-warning {
+            display: none;
+            position: absolute;
+            right: $padding-x;
+            top: 50%;
+            transform: translateY(-50%);
+            overflow: visible;
+        }
+        &.k-state-invalid .k-i-warning {
+            display: inline-block;
+        }
+
+
+        // RTL
+        .k-rtl &,
+        &[dir="rtl"] {
+            text-align: right;
+
+            .k-dateinput-wrap .k-i-warning {
+                left: $padding-x;
+                right: auto;
+            }
+
+            .k-select {
+                @include border-left-radius-only( $input-border-radius );
+                border-width: 0 $picker-select-border-width 0 0;
+            }
+        }
+
+
+        // Nested dateinput
+        .k-picker-wrap & {
+            margin: 0 !important; // sass-lint:disable-line no-important
+            width: 100%;
+            flex: 1 1 auto;
+
+            .k-dateinput-wrap {
+                @include border-left-radius-only( $input-border-radius );
+                border-width: 0;
+                box-shadow: none !important; // sass-lint:disable-line no-important
+            }
+        }
+    }
+
+
+    // Datepicker / timepicker
     .k-datepicker,
-    .k-datetimepicker,
     .k-timepicker {
+        width: $input-default-width;
+        border-width: 0;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $input-font-family;
+        font-size: $input-font-size;
+        line-height: $input-line-height;
+        white-space: nowrap;
+        background: none;
+        display: inline-flex;
+        vertical-align: middle;
+        position: relative;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
+
+        // Wrapper
+        .k-picker-wrap {
+            @include use-background-clip();
+            @include border-radius( $input-border-radius );
+            padding: 0;
+            width: 100%;
+            border-width: $input-border-width;
+            border-style: solid;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            transition: all .1s ease; // sass-lint:disable-block no-transition-all
+            cursor: default;
+            outline: 0;
+        }
+
+
+        // Input
+        .k-input {}
+
+
+        // Select
+        .k-select {
+            @include border-right-radius-only( $input-border-radius );
+            padding: $picker-select-padding-y $picker-select-padding-x;
+            width: if( $use-picker-select-width, $picker-select-calc-size, null );
+            border-width: 0 0 0 $picker-select-border-width;
+            border-style: solid;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            text-align: center;
+            cursor: pointer;
+        }
+
+
+        // Validation icon
+        .k-i-warning {
+            display: none;
+            position: absolute;
+            top: 50%;
+            right: calc( #{ $button-inner-calc-size } + #{ $input-padding-x-sm });
+            transform: translateY(-50%);
+            overflow: visible;
+        }
+        .k-state-invalid {
+            .k-i-warning {
+                display: inline-block;
+            }
+        }
+
+
+        // RTL
+        .k-rtl &,
+        &[dir="rtl"] {
+            text-align: right;
+
+            .k-select {
+                @include border-left-radius-only( $input-border-radius );
+                border-width: 0 $picker-select-border-width 0 0;
+            }
+
+            .k-i-warning {
+                right: auto;
+                left: calc( #{ $button-inner-calc-size } + #{ $input-padding-x-sm });
+            }
+        }
+    }
+
+
+    // Datetimepicker
+    .k-datetimepicker {
         width: $input-default-width;
         border-width: 0;
         box-sizing: border-box;
@@ -22,7 +233,6 @@
         -webkit-tap-highlight-color: $rgba-transparent;
 
         // Wrappers
-        .k-dateinput-wrap,
         .k-picker-wrap {
             @include use-background-clip();
             @include border-radius( $input-border-radius );
@@ -47,110 +257,19 @@
         // Select
         .k-select {
             @include border-right-radius-only( $input-border-radius );
-            padding: 0;
-            border-width: 0;
-            box-sizing: border-box;
+            border-width: 0 0 0 $picker-select-border-width;
             border-style: solid;
+            box-sizing: border-box;
             display: flex;
-            align-items: center;
+            align-items: stretch;
             justify-content: center;
             flex: 0 0 auto;
             text-align: center;
             cursor: pointer;
-
-            .k-icon {}
         }
-
-        &[dir="rtl"],
-        .k-rtl & {
-            text-align: right;
-
-            .k-select {
-                @include border-left-radius-only( $input-border-radius );
-            }
-        }
-    }
-
-    // Datepicker
-    .k-datepicker,
-    .k-datetimepicker,
-    .k-timepicker {
-        .k-select {
-            padding: 0;
-            width: $spinner-width;
-            border-width: 0;
-        }
-
-        .k-i-warning {
-            display: none;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            overflow: visible;
-        }
-
-        .k-state-invalid {
-            .k-i-warning {
-                display: inline-block;
-            }
-        }
-
-        .k-widget.k-dateinput {
-            width: 100%;
-            flex: 1 1 auto;
-            margin: 0;
-        }
-
-        .k-dateinput-wrap {
-            border: 0;
-            @include border-left-radius-only( $input-border-radius );
-        }
-
-        .k-picker-wrap {
-            &.k-state-invalid {
-                transition: none;
-            }
-        }
-
-        .k-rtl &,
-        &[dir="rtl"] {
-            .k-i-warning {
-                right: auto;
-            }
-        }
-    }
-
-    .k-datepicker,
-    .k-timepicker {
-
-        .k-i-warning {
-            right: calc( #{ $button-inner-calc-size } + #{ $input-padding-x-sm });
-        }
-
-        .k-rtl &,
-        &[dir="rtl"] {
-            .k-i-warning {
-                left: calc( #{ $button-inner-calc-size } + #{ $input-padding-x-sm });
-            }
-        }
-    }
-
-    // Timepicker
-    .k-timepicker {}
-
-    // Datetimepicker
-    .k-datetimepicker {
-
-        .k-select {
-            padding: 0;
-            width: auto;
-            border-left-width: 0;
-            align-items: stretch;
-        }
-
         .k-link {
-            padding: 0;
-            width: $button-inner-calc-size;
+            padding: $picker-select-padding-y $picker-select-padding-x;
+            width: if( $use-picker-select-width, $button-inner-calc-size, null );
             height: 100%;
             border-width: 0;
             border-style: solid;
@@ -161,13 +280,35 @@
             box-sizing: border-box;
         }
 
+
+        // Validation icon
         .k-i-warning {
+            display: none;
+            position: absolute;
+            top: 50%;
             right: calc( #{ $button-inner-calc-size } * 2 + #{ $input-padding-x-sm });
+            transform: translateY(-50%);
+            overflow: visible;
+        }
+        .k-state-invalid {
+            .k-i-warning {
+                display: inline-block;
+            }
         }
 
+
+        // RTL
         .k-rtl &,
         &[dir="rtl"] {
+            text-align: right;
+
+            .k-select {
+                @include border-left-radius-only( $input-border-radius );
+                border-width: 0 $picker-select-border-width 0 0;
+            }
+
             .k-i-warning {
+                right: auto;
                 left: calc( #{ $button-inner-calc-size } * 2 + #{ $input-padding-x-sm });
             }
         }
@@ -239,62 +380,6 @@
                 }
             }
         }
-    }
-
-    // Dateinput
-    .k-dateinput {
-        .k-select {
-            padding: 0;
-            border-width: 0;
-            width: $spinner-width;
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-        }
-
-        .k-link {
-            width: 100%;
-            flex: 1 1 auto;
-            display: block;
-            overflow: hidden;
-            position: relative;
-
-            .k-icon {
-                position: absolute;
-                right: 50%;
-                transform: translateX(50%);
-            }
-        }
-
-        .k-link-increase .k-icon {
-            bottom: -$spinner-icon-offset;
-        }
-
-        .k-link-decrease .k-icon {
-            top: -$spinner-icon-offset;
-        }
-
-        .k-i-warning {
-            display: none;
-            position: absolute;
-            right: $padding-x;
-            top: 50%;
-            transform: translateY(-50%);
-            overflow: visible;
-        }
-
-        &.k-state-invalid .k-i-warning {
-            display: inline-block;
-        }
-
-        .k-rtl &,
-        &[dir="rtl"] {
-            .k-i-warning {
-                left: $padding-x;
-                right: auto;
-            }
-        }
-
     }
 
     // Infinite timepicker

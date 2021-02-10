@@ -3,54 +3,37 @@
 @include exports("datetime/layout/material") {
 
     // Common
-    .k-dateinput,
     .k-datepicker,
     .k-datetimepicker,
     .k-timepicker {
 
-        // Wrappers
-        .k-dateinput-wrap,
+        // Wrapper
         .k-picker-wrap {
             border-width: $input-border-width 0;
             border-top-color: transparent !important; // sass-lint:disable-line no-important
 
-            .k-select {
-                border-width: 0;
-                font-size: $font-size;
-            }
-
-            // Disabled
+            // Disabled state
             .k-state-disabled > &,
             &.k-state-disabled {
                 border-bottom-style: dashed;
             }
         }
-
-        .k-picker-wrap {
-            > .k-dateinput {
-                width: 100%;
-            }
-
-            .k-dateinput-wrap {
-                border: 0;
-                box-shadow: none;
-            }
-        }
     }
 
-    .k-datepicker,
-    .k-datetimepicker,
-    .k-timepicker {
-        .k-select {
-            width: auto;
-        }
-    }
 
-    .k-datepicker,
-    .k-timepicker {
-        .k-picker-wrap {
-            .k-select {
-                padding: $picker-select-padding-y $picker-select-padding-x;
+    // Dateinput
+    .k-dateinput {
+
+        // Wrapper
+        .k-dateinput-wrap {
+            border-width: $input-border-width 0;
+            border-top-color: transparent !important; // sass-lint:disable-line no-important
+
+
+            // Disabled state
+            .k-state-disabled > &,
+            &.k-state-disabled {
+                border-bottom-style: dashed;
             }
         }
     }
@@ -86,13 +69,6 @@
             }
         }
 
-    }
-
-    .k-datetimepicker {
-        .k-link {
-            width: auto;
-            padding: $picker-select-padding-y $picker-select-padding-x;
-        }
     }
 
 }
