@@ -7,18 +7,7 @@
             transition: $transition;
 
             .k-select {
-                border-width: 0 0 0 $picker-select-border-width;
-                border-color: inherit;
                 transition: $transition;
-            }
-        }
-
-        .k-rtl &,
-        &[dir="rtl"] {
-            .k-picker-wrap {
-                .k-select {
-                    border-width: 0 $picker-select-border-width 0 0;
-                }
             }
         }
     }
