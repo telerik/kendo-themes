@@ -1,1 +1,32 @@
 @import "~@progress/kendo-theme-default/scss/dropdownlist/_theme.scss";
+
+@include exports( "dropdownlist/theme/material" ) {
+
+    .k-dropdown {
+        .k-dropdown-wrap {
+
+            .k-select {
+                color: $dropdownlist-select-text;
+            }
+
+            // Hover
+            &:hover,
+            &.k-state-hover {
+
+                .k-select {
+                    color: $dropdownlist-select-hovered-text;
+                }
+            }
+
+            // Focused
+            &.k-state-focused,
+            .k-state-focused > & {
+
+                .k-select {
+                    color: $dropdownlist-select-focused-text;
+                }
+            }
+        }
+    }
+
+}

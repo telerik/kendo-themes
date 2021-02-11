@@ -7,29 +7,6 @@
             border-width: $input-border-width 0;
             border-top-color: transparent !important; // sass-lint:disable-line no-important
 
-            .k-select {
-                font-size: $font-size;
-                opacity: $dropdownlist-opacity;
-            }
-
-            // Hover
-            &:hover,
-            &.k-state-hover {
-
-                .k-select {
-                    opacity: $dropdownlist-hovered-opacity;
-                }
-            }
-
-            // Focused
-            &.k-state-focused,
-            .k-state-focused > & {
-
-                .k-select {
-                    opacity: $dropdownlist-focused-opacity;
-                }
-            }
-
             // Disabled
             .k-state-disabled > &,
             &.k-state-disabled {
@@ -38,16 +15,11 @@
         }
     }
 
-    // Expanded
-    .k-state-border-up > .k-select .k-i-arrow-60-down,
-    .k-state-border-down > .k-select .k-i-arrow-60-down {
-        transform: rotate(180deg);
-    }
-
 
     // Native select
     select.k-dropdown {
-        border-width: 0 0 $input-border-width;
+        border-width: $input-border-width 0;
+        border-top-color: transparent !important; // sass-lint:disable-line no-important
     }
 
 }

@@ -41,7 +41,7 @@
             .k-select {
                 @include border-right-radius-only( $input-border-radius );
                 padding: $picker-select-padding-y $picker-select-padding-x;
-                width: if($use-picker-select-width, $button-inner-calc-size, null);
+                width: if( $use-picker-select-width, $button-inner-calc-size, null );
                 border-width: 0;
                 box-sizing: border-box;
                 border-style: solid;
@@ -115,6 +115,7 @@
         padding: $input-padding-y $input-padding-x;
         border-width: 1px;
         border-style: solid;
+        box-sizing: border-box;
         outline: 0;
         overflow: hidden;
         text-overflow: ellipsis;
