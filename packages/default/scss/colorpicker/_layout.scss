@@ -21,7 +21,7 @@
             padding: $button-padding-y;
             width: $button-inner-calc-size;
             height: $button-inner-calc-size;
-            border-width: 0 $colorpicker-select-border-width 0 0;
+            border-width: 0;
             border-style: solid;
             border-color: inherit;
             box-sizing: border-box;
@@ -48,7 +48,7 @@
             padding: $button-padding-y;
             width: $button-inner-calc-size;
             height: $button-inner-calc-size;
-            border-width: 0 $colorpicker-select-border-width 0 0;
+            border-width: 0;
             border-style: solid;
             border-color: inherit;
             box-sizing: border-box;
@@ -99,8 +99,8 @@
         .k-select {
             @include border-right-radius-only( $input-border-radius );
             padding: $picker-select-padding-y $picker-select-padding-x;
-            width: if($use-picker-select-width, $button-inner-calc-size, null);
-            border-width: 0;
+            width: if( $use-picker-select-width, $button-inner-calc-size, null );
+            border-width: 0 0 0 $colorpicker-select-border-width;
             border-style: solid;
             border-color: inherit;
             box-sizing: border-box;
@@ -116,14 +116,10 @@
 
         .k-rtl &,
         &[dir="rtl"] {
-            .k-selected-color,
-            .k-tool-icon {
-                border-width: 0 0 0 $colorpicker-select-border-width;
-            }
-
             .k-picker-wrap {
                 .k-select {
                     @include border-left-radius-only( $input-border-radius );
+                    border-width: 0 $colorpicker-select-border-width 0 0;
                 }
             }
         }
