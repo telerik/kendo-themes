@@ -26,6 +26,19 @@
 
     $utils-border-color: $theme-colors !default;
 
+    $utils-border-radius-sides: (
+        default: border-radius,
+        top: ( border-top-left-radius, border-top-right-radius ),
+        right: ( border-top-right-radius, border-bottom-right-radius ),
+        bottom: ( border-bottom-left-radius, border-bottom-right-radius ),
+        left: ( border-bottom-left-radius, border-top-left-radius ),
+    ) !default;
+
+    $utils-border-radius: (
+        default: map-get( $spacing, 1 ),
+        0: 0
+    ) !default;
+
 
     @if $utils-border-sides and $utils-border-width {
         @each $side in $utils-border-sides {
@@ -55,6 +68,24 @@
             .k-border-#{$name} {
                 border-color: $color !important;
             }
+        }
+    }
+
+    @if $utils-border-radius-sides and $utils-border-radius {
+        @each $side, $props in $utils-border-radius-sides {
+
+            $_selector-base: if( $side == default, "rounded", "rounded-#{$side}" );
+
+            @each $radius, $value in $utils-border-radius {
+                $_selector-suffix: if( $radius == default, "", "-#{$radius}" );
+
+                .k-#{$_selector-base}#{$_selector-suffix} {
+                    @each $prop in $props {
+                        #{$prop}: $value !important;
+                    }
+                }
+            }
+
         }
     }
 
