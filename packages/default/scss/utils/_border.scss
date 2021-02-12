@@ -4,11 +4,13 @@
     // sass-lint:disable-block no-important
 
     $utils-border-sides: (
-        "border",
-        "border-top",
-        "border-right",
-        "border-bottom",
-        "border-left",
+        default: border-width,
+        top: border-top-width,
+        right: border-right-width,
+        bottom: border-bottom-width,
+        left: border-left-width,
+        x: ( border-left-width, border-right-width ),
+        y: ( border-top-width, border-bottom-width )
     ) !default;
 
     $utils-border-style: (
@@ -20,8 +22,8 @@
     ) !default;
 
     $utils-border-width: (
-        0: 0,
-        1: 1px
+        default: 1px,
+        0: 0
     ) !default;
 
     $utils-border-color: $theme-colors !default;
@@ -41,15 +43,17 @@
 
 
     @if $utils-border-sides and $utils-border-width {
-        @each $side in $utils-border-sides {
+        @each $side, $props in $utils-border-sides {
 
-            .k-#{$side} {
-                #{$side}-width: 1px !important;
-            }
+            $_selector-base: if( $side == default, "border", "border-#{$side}" );
 
             @each $width, $value in $utils-border-width {
-                .k-#{$side}-#{$width} {
-                    #{$side}-width: $value !important;
+                $_selector-suffix: if( $width == default, "", "-#{$width}" );
+
+                .k-#{$_selector-base}#{$_selector-suffix} {
+                    @each $prop in $props {
+                        #{$prop}: $value !important;
+                    }
                 }
             }
         }
