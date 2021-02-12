@@ -2,18 +2,25 @@
 <!doctype html>
 <html lang="en" class="k-typography k-no-animations">
 <head>
-    <title>Gantt</title>
+    <title>Gantt -- react</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts.js"></script>
 
+    <style>
+        .k-gantt {
+            height: 700px;
+        }
+    </style>
+
 </head>
 <body>
 
-    <div id="test-area" class="grid">
-        <div class="k-gantt" style="height: 800px; width: 1000px;">
+    <div id="test-area">
+
+        <div class="k-gantt">
             <div class="k-widget k-toolbar k-gantt-toolbar k-gantt-header">
                 <span class="k-spacer"></span>
                 <span class="k-gantt-views">
@@ -31,7 +38,7 @@
                     </div>
                 </span>
             </div>
-            <div class="k-gantt-content" style="height: calc(100% - 47px);">
+            <div class="k-gantt-content">
                 <div class="k-widget k-grid k-treelist-scrollable">
                     <table class="k-table-layout-fixed" style="width: 4500px;">
                         <colgroup>
