@@ -1,6 +1,8 @@
 @include exports( "utils/border" ) {
 
     // Border utility classes
+    // sass-lint:disable-block no-important
+
     $utils-border-sides: (
         "border",
         "border-top",
@@ -14,7 +16,9 @@
         1: 1px
     ) !default;
 
-    // sass-lint:disable no-important
+    $utils-border-color: $theme-colors !default;
+
+
     @if $utils-border-sides and $utils-border-width {
         @each $side in $utils-border-sides {
 
@@ -29,6 +33,13 @@
             }
         }
     }
-    // sass-lint:enable no-important
+
+    @if $utils-border-color {
+        @each $name, $color in $utils-border-color {
+            .k-border-#{$name} {
+                border-color: $color !important;
+            }
+        }
+    }
 
 }
