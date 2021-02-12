@@ -11,6 +11,14 @@
         "border-left",
     ) !default;
 
+    $utils-border-style: (
+        solid,
+        dashed,
+        dotted,
+        double,
+        none
+    ) !default;
+
     $utils-border-width: (
         0: 0,
         1: 1px
@@ -30,6 +38,14 @@
                 .k-#{$side}-#{$width} {
                     #{$side}-width: $value !important;
                 }
+            }
+        }
+    }
+
+    @if $utils-border-style {
+        @each $style in $utils-border-style {
+            .k-border-#{$style} {
+                border-style: $style !important;
             }
         }
     }
