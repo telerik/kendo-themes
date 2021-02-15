@@ -220,7 +220,6 @@ $theme-colors: map-merge((
 ), $theme-colors);
 // sass-lint:enable indentation
 
-
 // Cursor utility classes
 $cursors: ( auto, default, none, context-menu, help, pointer, progress, wait, cell, crosshair, text,
     vertical-text, alias, copy, move, no-drop, not-allowed, e-resize, n-resize, ne-resize, nw-resize,
@@ -427,11 +426,6 @@ $drag-clue-border-radius: null !default;
 $grid-cols: 12 !default;
 $grid-rows: 10 !default;
 $grid-gap: 10px !default;
-
-
-// Backdrop (Overlay)
-$backdrop-bg: #000000 !default;
-$backdrop-opacity: .5 !default;
 
 
 // Disabled Styling maps

@@ -1,25 +1,91 @@
 @include exports( "utils/text" ) {
 
+    // White-space documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/white-space.
+    // Text-align documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/text-align.
+    // Text-transform documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform.
+
     $text-align: ( left, right, center, justify ) !default;
     $text-transform: ( lowercase, uppercase, capitalize ) !default;
 
+    $font-sizes: (
+        xs: $font-size-xs,
+        sm: $font-size-sm,
+        md: $font-size-md,
+        lg: $font-size-lg,
+        xl: $font-size-xl
+    ) !default;
+
     // Wrapping
+
+    // @name k-text-nowrap
+    // @description This is equivalent to `white-space: nowrap;`. Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
+    // @group text
     .k-text-nowrap                  { white-space: nowrap !important; } // sass-lint:disable-line no-important
+    // @name k-text-ellipsis
+    // @description This is equivalent to `white-space: nowrap; overflow: hidden; text-overflow: ellipsis;`.
+    // @group text
     .k-text-ellipsis                { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } // sass-lint:disable-line one-declaration-per-line
 
+
     // Align
+
+    // @name k-text-left
+    // @description This is equivalent to `text-align: left;`. The inline contents are aligned to the left edge of the line box.
+    // @group text
+
+    // @name k-text-right
+    // @description This is equivalent to `text-align: right;`. The inline contents are aligned to the right edge of the line box.
+    // @group text
+
+    // @name k-text-center
+    // @description This is equivalent to `text-align: center;`. The inline contents are centered within the line box.
+    // @group text
+
+    // @name k-text-justify
+    // @description This is equivalent to `text-align: justify;`. The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line.
+    // @group text
+
     @each $align in $text-align {
         .k-text-#{$align}           { text-align: $align !important; } // sass-lint:disable-line no-important
     }
 
+
     // Transform
+
+    // @name k-text-lowercase
+    // @description This is equivalent to `text-transform: lowercase;`. Is a keyword that converts all characters to lowercase.
+    // @group text
+
+    // @name k-text-uppercase
+    // @description This is equivalent to `text-transform: uppercase;`. Is a keyword that converts all characters to uppercase.
+    // @group text
+
+    // @name k-text-capitalize
+    // @description This is equivalent to `text-transform: capitalize;`. Is a keyword that converts the first letter of each word to uppercase. Other characters remain unchanged (they retain their original case as written in the element's text).
+    // @group text
+
     @each $transform in $text-transform {
         .k-text-#{$transform}       { text-transform: $transform !important; } // sass-lint:disable-line no-important
     }
 
+    // Font Size
+    @each $name, $size in $font-sizes {
+        .k-fs-#{$name}       { font-size: $size !important; } // sass-lint:disable-line no-important
+    }
+
     // Named font-weight
+
+    // @name k-font-weight-light
+    // @description This is equivalent to `font-weight: 300;`. The value of `300` may be different for each Kendo UI Theme.
+    // @group text
     .k-font-weight-light            { font-weight: $font-weight-light !important; } // sass-lint:disable-line no-important
+    // @name k-font-weight-normal
+    // @description This is equivalent to `font-weight: 400;`. The value of `400` may be different for each Kendo UI Theme.
+    // @group text
     .k-font-weight-normal           { font-weight: $font-weight-normal !important; } // sass-lint:disable-line no-important
+    // @name k-font-weight-bold
+    // @description This is equivalent to `font-weight: 700;`. The value of `700` may be different for each Kendo UI Theme.
+    // @group text
     .k-font-weight-bold             { font-weight: $font-weight-bold !important; } // sass-lint:disable-line no-important
 
 }

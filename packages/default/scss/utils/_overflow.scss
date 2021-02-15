@@ -1,5 +1,38 @@
 @include exports( "utils/overflow" ) {
 
+    // Overflow documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/overflow.
+
+    // @name k-overflow-auto
+    // @description This is equivalent to `overflow: auto;`. Depends on the user agent. If content fits inside the padding box, it looks the same as visible, but still establishes a new block formatting context. Desktop browsers provide scrollbars if content overflows.
+    // @group overflow
+
+    // @name k-overflow-hidden
+    // @description This is equivalent to `overflow: hidden;`. Content is clipped if necessary to fit the padding box. No scrollbars are provided, and no support for allowing the user to scroll (such as by dragging or using a scroll wheel) is allowed. The content can be scrolled programmatically (for example, by setting the value of a property such as offsetLeft), so the element is still a scroll container.
+    // @group overflow
+
+    // @name k-overflow-visible
+    // @description This is equivalent to `overflow: visible;`. Content is not clipped and may be rendered outside the padding box.
+    // @group overflow
+
+    // @name k-overflow-scroll
+    // @description This is equivalent to `overflow: scroll;`. Content is clipped if necessary to fit the padding box. Browsers always display scrollbars whether or not any content is actually clipped, preventing scrollbars from appearing or disappearing as content changes. Printers may still print overflowing content.
+    // @group overflow
+
+    // @name k-overflow-clip
+    // @description This is equivalent to `overflow: clip;`. Like for hidden, the content is clipped to the element's padding box. The difference between clip and hidden is that the clip keyword also forbids all scrolling, including programmatic scrolling.
+    // @group overflow
+
+    // @name k-overflow-x-VALUE
+    // @description This is equivalent to `overflow-x: VALUE;`. Sets what shows when content overflows a block-level element's left and right edges. The `VALUE` could be set to `auto`, `hidden`, `visible`, `scroll`, and `clip`.
+    // @group overflow
+
+    // @name k-overflow-y-VALUE
+    // @description This is equivalent to `overflow-y: VALUE;`. Sets what shows when content overflows a block-level element's top and bottom edges. The `VALUE` could be set to `auto`, `hidden`, `visible`, `scroll`, and `clip`.
+    // @group overflow
+
+    // @name k-overflow-VALUE_X-VALUE_Y
+    // @description This is equivalent to `overflow: VALUE_X VALUE_Y;`. This is a shorthand for `overflow-x: VALUE_X; overflow-y: VALUE_Y;`. The `VALUE_X` and `VALUE_Y` could be set to `auto`, `hidden`, `visible`, `scroll`, and `clip`.
+    // @group overflow
 
     // Overflow utility classes
     $utils-overflow: (

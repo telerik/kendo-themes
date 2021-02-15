@@ -1,5 +1,21 @@
 @include exports( "utils/order" ) {
 
+    // @name k-order-first
+    // @description This is equivalent to `order: -9999;`.
+    // @group order
+
+    // @name k-order-last
+    // @description This is equivalent to `order: 9999;`.
+    // @group order
+
+    // @name k-order-none
+    // @description This is equivalent to `order: 0;`.
+    // @group order
+
+    // @name from k-order-1 to k-order-12
+    // @description This is equivalent to `order: 1;`, `order: 2;`, `order: 12;`, etc.
+    // @group order
+
     // Order utility classes
     $utils-order: (
         first: -9999,

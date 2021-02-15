@@ -3,6 +3,10 @@
     // sass-lint:disable-block no-important
     // sass-lint:disable-block indentation
 
+    // @name Available Padding and Margin Values
+    // @description From `0`(0) to `24`(96px or 6rem), `xs`(4px or .25rem), `sm`(8px or .5rem), `md`(12px or .75rem), `lg`(16px or 1rem), `xl`(24px or 1.5rem), `thin`(2px or .125rem), and `hair`(1px or .0625rem). Numeric values examples - `1`(4px or .25rem), `5`(20px or 1.25rem), `10`(40px or 2.5rem), `20`(80px or 5rem).
+    // @group spacing
+
     $utils-margin: (
         m: margin,
         mt: margin-top,
@@ -10,6 +14,7 @@
         mb: margin-bottom,
         ml: margin-left
     ) !default;
+
     $utils-padding: (
         p: padding,
         pt: padding-top,
@@ -17,6 +22,34 @@
         pb: padding-bottom,
         pl: padding-left
     ) !default;
+
+    // @name k-m-VALUE
+    // @description This is equivalent to `margin: VALUE;`. Margin area on all four sides of the element.
+    // @group spacing
+
+    // @name k-mt-VALUE
+    // @description This is equivalent to `margin-top: VALUE;`. Margin area on top of the element.
+    // @group spacing
+
+    // @name k-mr-VALUE
+    // @description This is equivalent to `margin-right: VALUE;`. Margin area on right of the element.
+    // @group spacing
+
+    // @name k-mb-VALUE
+    // @description This is equivalent to `margin-bottom: VALUE;`. Margin area on bottom of the element.
+    // @group spacing
+
+    // @name k-ml-VALUE
+    // @description This is equivalent to `margin-left: VALUE;`. Margin area on left of the element.
+    // @group spacing
+
+    // @name k-mx-VALUE
+    // @description This is equivalent to `margin-left: VALUE; margin-right: VALUE;`. Margin area on left and right of the element.
+    // @group spacing
+
+    // @name k-my-VALUE
+    // @description This is equivalent to `margin-top: VALUE; margin-bottom: VALUE;``. Margin area on top and bottom of the element.
+    // @group spacing
 
     // Margin
     @each $size, $val in $spacing {
@@ -33,6 +66,34 @@
             margin-bottom: $val !important;
         }
     }
+
+    // @name k-p-VALUE
+    // @description This is equivalent to `padding: VALUE;`. Padding area on all four sides of the element.
+    // @group spacing
+
+    // @name k-pt-VALUE
+    // @description This is equivalent to `padding-top: VALUE;`. Padding area on top of the element.
+    // @group spacing
+
+    // @name k-pr-VALUE
+    // @description This is equivalent to `padding-right: VALUE;`. Padding area on right of the element.
+    // @group spacing
+
+    // @name k-pb-VALUE
+    // @description This is equivalent to `padding-bottom: VALUE;`. Padding area on bottom of the element.
+    // @group spacing
+
+    // @name k-pl-VALUE
+    // @description This is equivalent to `padding-left: VALUE;`. Padding area on left of the element.
+    // @group spacing
+
+    // @name k-px-VALUE
+    // @description This is equivalent to `padding-left: VALUE; padding-right: VALUE;`. Padding area on left and right of the element.
+    // @group spacing
+
+    // @name k-py-VALUE
+    // @description This is equivalent to `padding-top: VALUE; padding-bottom: VALUE;``. Padding area on top and bottom of the element.
+    // @group spacing
 
     // Padding
     @each $size, $val in $spacing {

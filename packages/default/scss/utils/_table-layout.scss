@@ -2,8 +2,15 @@
 
     // sass-lint:disable-block no-important
 
-    // Table layout modes
+    // Table-layout documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout.
+
+    // @name k-table-layout-fixed
+    // @description This is equivalent to `table-layout: fixed;`. Table and column widths are set by the widths of table and col elements or by the width of the first row of cells. Cells in subsequent rows do not affect column widths.
+    // @group table-layout
     .k-table-layout-fixed           { table-layout: fixed; }
+    // @name k-table-layout-auto
+    // @description This is equivalent to `table-layout: auto;`. By default, most browsers use an automatic table layout algorithm. The widths of the table and its cells are adjusted to fit the content.
+    // @group table-layout
     .k-table-layout-auto            { table-layout: auto; }
 
 }

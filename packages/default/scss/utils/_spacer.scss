@@ -1,10 +1,15 @@
 @include exports( "utils/spacer" ) {
 
-    // flexible space
+    // @name k-spacer
+    // @description This is equivalent to `flex: 1 0 auto;`. If every other element has a fixed size in a flex container, the spacer will take up the remaining space.
+    // @group spacer
     .k-spacer {
         flex: 1 0 auto;
     }
 
+    // @name k-spacer-sized
+    // @description This is equivalent to `flex-grow: 0;`. The spacer will not take any of the remaining space in a flex container.
+    // @group spacer
     .k-spacer-sized {
         flex-grow: 0;
     }

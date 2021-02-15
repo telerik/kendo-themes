@@ -1,5 +1,8 @@
 @include exports( "utils/aria" ) {
 
+    // @name k-sr-only
+    // @description This class could be assigned to elements which should be visually hidden, but remain accessible for screen readers.
+    // @group aria
     .k-sr-only {
         position: absolute;
         left: -1px;
