@@ -27,6 +27,11 @@
 
         }
 
+        .k-upload-files,
+        .k-file {
+            border-color: $upload-border;
+        }
+
         .k-file {
 
             &.k-state-focused {

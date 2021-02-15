@@ -381,28 +381,43 @@
         </section>
 
         <section>
+            <!-- Invalid file -->
+            <kendo-upload class="k-widget k-upload ng-pristine ng-invalid ng-touched" dir="ltr">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button"><input /><span>Select files...</span></div>
+                    <div class="k-dropzone-hint">Drop files here to upload</div>
+                </div>
+                <ul class="k-upload-files k-reset ng-star-inserted">
+                    <li class="k-file k-file-invalid ng-star-inserted">
+                        <kendo-upload-file-list-single-item class="k-file-single ng-tns-c0-0 ng-star-inserted">
+                            <div class="k-progressbar ng-trigger ng-trigger-progressState" style="opacity: 0;">
+                                <span class="k-progress" style="width: 0%;"></span>
+                            </div>
+                            <span class="k-file-group-wrapper"><span class="k-file-group k-icon k-i-file-programming"></span></span>
+                            <span class="k-file-name-size-wrapper">
+                                <span class="k-file-name ng-tns-c0-0 ng-star-inserted">untitled.html</span>
+                                <span class="ng-tns-c0-0 k-file-validation-message k-text-error ng-star-inserted">File type not allowed.</span>
+                            </span>
+                            <kendo-upload-file-list-item-action-button class="ng-tns-c0-0">
+                                <strong class="k-upload-status">
+                                    <button class="k-button k-button-icon k-flat k-upload-action ng-star-inserted">
+                                        <span class="k-icon k-delete k-i-x"></span>
+                                    </button>
+                                </strong>
+                            </kendo-upload-file-list-item-action-button>
+                        </kendo-upload-file-list-single-item>
+                    </li>
+                </ul>
+            </kendo-upload>
+        </section>
+
+        <section>
             <!-- Drag and drop file text in the dropzone -->
             <kendo-upload class="k-widget k-upload">
                 <div class="k-dropzone">
                     <div class="k-button k-upload-button">
                         <input><span>Select files...</span></div>
                     <div class="k-dropzone-hint">Drop files here to upload</div>
-                </div>
-            </kendo-upload>
-        </section>
-
-        <section>
-            <!--
-                Drag and drop file text in the dropzone, legacy drop hint rendering
-                https://github.com/telerik/kendo/issues/8240
-            -->
-            <kendo-upload dir="ltr" class="k-widget k-upload">
-                <div class="k-dropzone">
-                    <div class="k-button k-upload-button">
-                        <input type="file" name="files" multiple="multiple" dir="ltr" />
-                        <span>Select files...</span>
-                    </div>
-                    <em class="k-dropzone-hint">Drop files here to upload</em>
                 </div>
             </kendo-upload>
         </section>
@@ -425,6 +440,21 @@
                     <div class="k-button k-upload-button">
                         <input><span>Select files...</span></div>
                     <div class="k-dropzone-hint">Disabled! Drop files here to upload</div>
+                </div>
+            </kendo-upload>
+        </section>
+        <section>
+            <!--
+                Drag and drop file text in the dropzone, legacy drop hint rendering
+                https://github.com/telerik/kendo/issues/8240
+            -->
+            <kendo-upload dir="ltr" class="k-widget k-upload">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button">
+                        <input type="file" name="files" multiple="multiple" dir="ltr" />
+                        <span>Select files...</span>
+                    </div>
+                    <em class="k-dropzone-hint">Drop files here to upload, legacy drop hint rendering</em>
                 </div>
             </kendo-upload>
         </section>
