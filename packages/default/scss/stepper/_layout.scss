@@ -67,6 +67,7 @@
             transition-property: color, background-color, border-color;
             transition-duration: .4s;
             transition-timing-function: ease-in-out;
+            box-sizing: content-box;
 
             &::after {
                 @include border-radius( 100% );
@@ -126,10 +127,17 @@
 
         // Progressbar
         .k-progressbar {
-            position: absolute;
             pointer-events: none;
             z-index: 0;
             overflow: visible;
+        }
+
+        .k-progressbar-horizontal {
+            grid-row: 1 / -1;
+        }
+
+        .k-progressbar-vertical {
+            position: absolute;
         }
     }
 
@@ -137,6 +145,7 @@
     // Horizontal
     .k-step-list-horizontal {
         flex-direction: row;
+        grid-row: 1;
 
         .k-step {
             flex: 1 0 auto;
@@ -161,10 +170,9 @@
         & ~ .k-progressbar {
             width: 100%;
             height: $stepper-progressbar-size;
-            top: calc((#{$stepper-indicator-height} + 2 * #{$stepper-indicator-focus-size}) / 2);
+            top: calc(((#{$stepper-indicator-height} + 2 * #{$stepper-indicator-focus-size}) / 2) + #{$stepper-indicator-focus-size} / 2);
         }
     }
-
 
     // Vertical
     .k-step-list-vertical {
