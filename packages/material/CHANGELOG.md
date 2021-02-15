@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.29.0"></a>
+# [3.29.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.28.0...@progress/kendo-theme-material@3.29.0) (2021-02-15)
+
+
+### Bug Fixes
+
+* update drag hint font-size and line-height to match grouping indicator's ([3e7b253](https://github.com/telerik/kendo-themes/commit/3e7b253))
+* **stepper:** Stepper uses progressbar element but does not include the progressbar styling ([b1ece1c](https://github.com/telerik/kendo-themes/commit/b1ece1c))
+
+
+### Features
+
+* **notification:** generate notification-themes map dynamically ([485f9a3](https://github.com/telerik/kendo-themes/commit/485f9a3))
+* **overlay:** extract overlay as a separate component ([0e596ab](https://github.com/telerik/kendo-themes/commit/0e596ab))
+* **utils:** add border width utility classnames ([69ac5c7](https://github.com/telerik/kendo-themes/commit/69ac5c7))
+* update styles to match the new design ([45b4abc](https://github.com/telerik/kendo-themes/commit/45b4abc))
+
+
+
+
 <a name="3.28.0"></a>
 # [3.28.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.27.0...@progress/kendo-theme-material@3.28.0) (2021-01-13)
 

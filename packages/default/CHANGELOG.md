@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.33.0"></a>
+# [4.33.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.32.0...@progress/kendo-theme-default@4.33.0) (2021-02-15)
+
+
+### Bug Fixes
+
+* changing step breaks the layout in iOS ([882a397](https://github.com/telerik/kendo-themes/commit/882a397))
+* incorrect behavior of autofitting in IE and Chrome ([1ac6348](https://github.com/telerik/kendo-themes/commit/1ac6348))
+* long content in item body overflows ([cbcbd98](https://github.com/telerik/kendo-themes/commit/cbcbd98))
+* missing spacing between k-label and radio button ([d3b29f1](https://github.com/telerik/kendo-themes/commit/d3b29f1))
+* progressbar doesn't end to the selected step in Safari ([34a7125](https://github.com/telerik/kendo-themes/commit/34a7125))
+* traling comma breaks build with WebCompiler VS addon ([e047fda](https://github.com/telerik/kendo-themes/commit/e047fda))
+* update drag hint font-size and line-height to match grouping indicator's ([3e7b253](https://github.com/telerik/kendo-themes/commit/3e7b253))
+* wrong border color around invalid files ([d2ac02e](https://github.com/telerik/kendo-themes/commit/d2ac02e))
+* **dialog:** some fonts overflowing window title vertically ([4db09b8](https://github.com/telerik/kendo-themes/commit/4db09b8))
+* **grid:** grid filter button cut off in IE11 ([a54cd27](https://github.com/telerik/kendo-themes/commit/a54cd27))
+* **stepper:** Stepper uses progressbar element but does not include the progressbar styling ([b1ece1c](https://github.com/telerik/kendo-themes/commit/b1ece1c))
+* **tabstrip:** remove at-root rule ([cc29841](https://github.com/telerik/kendo-themes/commit/cc29841))
+* **window:** resize handles overflow container ([093277f](https://github.com/telerik/kendo-themes/commit/093277f))
+
+
+### Features
+
+* **colorpicker:** add contrast color section ([337a644](https://github.com/telerik/kendo-themes/commit/337a644))
+* **notification:** generate notification-themes map dynamically ([485f9a3](https://github.com/telerik/kendo-themes/commit/485f9a3))
+* **overlay:** extract overlay as a separate component ([0e596ab](https://github.com/telerik/kendo-themes/commit/0e596ab))
+* **utils:** add border color utility classnames ([2568bd2](https://github.com/telerik/kendo-themes/commit/2568bd2))
+* **utils:** add border radius utility classnames ([961ba52](https://github.com/telerik/kendo-themes/commit/961ba52))
+* **utils:** add border style utility classnames ([7bbef55](https://github.com/telerik/kendo-themes/commit/7bbef55))
+* **utils:** add border width utility classnames ([69ac5c7](https://github.com/telerik/kendo-themes/commit/69ac5c7))
+* update styles to match the new design ([45b4abc](https://github.com/telerik/kendo-themes/commit/45b4abc))
+* **utils:** add font-size utils ([e608182](https://github.com/telerik/kendo-themes/commit/e608182))
+
+
+
+
 <a name="4.32.0"></a>
 # [4.32.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.31.0...@progress/kendo-theme-default@4.32.0) (2021-01-13)
 

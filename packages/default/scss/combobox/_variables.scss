@@ -27,8 +27,7 @@ $combobox-select-hovered-text: $button-hovered-text !default;
 $combobox-select-hovered-border: $button-hovered-border !default;
 $combobox-select-hovered-gradient: $button-hovered-gradient !default;
 
-$combobox-select-focused-bg: $button-pressed-bg !default;
-$combobox-select-focused-text: $button-pressed-text !default;
-$combobox-select-focused-border: $button-pressed-border !default;
-$combobox-select-focused-gradient: $button-pressed-gradient !default;
-$combobox-select-focused-shadow: $button-pressed-shadow !default;
+$combobox-select-pressed-bg: $button-pressed-bg !default;
+$combobox-select-pressed-text: $button-pressed-text !default;
+$combobox-select-pressed-border: $button-pressed-border !default;
+$combobox-select-pressed-gradient: $button-pressed-gradient !default;

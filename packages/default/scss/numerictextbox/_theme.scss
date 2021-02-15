@@ -1,4 +1,4 @@
-@include exports("numerictextbox/theme") {
+@include exports( "numerictextbox/theme" ) {
 
     // Numeric
     .k-numerictextbox {
@@ -12,37 +12,8 @@
                 $numeric-border
             );
 
-            .k-select {
-                @include fill(
-                    $numeric-button-text,
-                    $numeric-button-bg,
-                    $numeric-button-border,
-                    $numeric-button-gradient
-                );
 
-                &:hover {
-                    @include fill(
-                        $numeric-button-hovered-text,
-                        $numeric-button-hovered-bg,
-                        $numeric-button-hovered-border,
-                        $numeric-button-hovered-gradient
-                    );
-                }
-
-                > .k-state-selected,
-                > .k-state-active {
-                    @include fill(
-                        darken($body-text, 25%),
-                        $numeric-button-hovered-bg,
-                        $numeric-button-hovered-border,
-                        $numeric-button-hovered-gradient
-                    );
-                    box-shadow: $numerictextbox-spinners-focused-shadow;
-                }
-            }
-
-
-            // Hovered state
+            // Hover state
             &:hover,
             &.k-state-hover {
                 @include fill(
@@ -50,19 +21,10 @@
                     $numeric-hovered-bg,
                     $numeric-hovered-border
                 );
-
-                .k-select {
-                    @include fill(
-                        $numeric-button-hovered-text,
-                        $numeric-button-hovered-bg,
-                        $numeric-button-hovered-border,
-                        $numeric-button-hovered-gradient
-                    );
-                }
             }
 
 
-            // Focused state
+            // Focus state
             &.k-state-focused {
                 @include fill(
                     $numeric-focused-text,
@@ -84,6 +46,39 @@
                 }
             }
         }
+
+
+        // Select buttons
+        .k-select {
+            @include fill(
+                $numeric-button-text,
+                $numeric-button-bg,
+                $numeric-button-border,
+                $numeric-button-gradient
+            );
+
+            .k-link:hover,
+            .k-link.k-state-hover {
+                @include fill(
+                    $numeric-button-hovered-text,
+                    $numeric-button-hovered-bg,
+                    $numeric-button-hovered-border,
+                    $numeric-button-hovered-gradient
+                );
+            }
+
+            .k-link:active,
+            .k-link.k-state-active,
+            .k-link.k-state-selected {
+                @include fill(
+                    $numeric-button-pressed-text,
+                    $numeric-button-pressed-bg,
+                    $numeric-button-pressed-border,
+                    $numeric-button-pressed-gradient
+                );
+            }
+        }
+
 
         // Invalid state
         &.k-state-invalid,

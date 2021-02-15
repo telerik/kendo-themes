@@ -33,7 +33,7 @@
             );
         }
 
-        // Hovered state
+        // Hover state
         > :hover,
         .k-state-hover {
             @include fill(
@@ -52,17 +52,26 @@
             }
         }
 
-        // Selected state
-        > .k-state-focused,
-        .k-state-active {
+        // Focus state
+        > .k-state-focused {
             @include fill(
                 $combobox-focused-text,
                 $combobox-focused-bg,
                 $combobox-focused-border
             );
             @include box-shadow($combobox-focused-shadow);
+        }
 
-            .k-select {}
+        // Active state
+        .k-state-active {
+            .k-select {
+                @include fill(
+                    $combobox-select-pressed-text,
+                    $combobox-select-pressed-bg,
+                    $combobox-select-pressed-border,
+                    $combobox-select-pressed-gradient
+                );
+            }
         }
 
         // Invalid

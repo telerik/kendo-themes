@@ -5,38 +5,20 @@
     .k-datepicker,
     .k-datetimepicker,
     .k-timepicker {
-        .k-select {
-            width: auto;
-        }
-
         .k-picker-wrap,
         .k-select {
             transition: $transition;
         }
     }
 
-    .k-datepicker,
-    .k-timepicker {
-        .k-picker-wrap {
-            .k-select {
-                padding: $picker-select-padding-y $picker-select-padding-x;
-                border-width: 0 0 0 $picker-select-border-width;
-            }
-        }
+    // Datetimepicker
+    .k-datetimepicker {}
 
-        .k-i-warning {
-            right: $spacer * 2.5;
-        }
-
-        .k-state-invalid {
-            transition: none;
-        }
-
-        .k-rtl &,
-        &[dir="rtl"] {
-            .k-i-warning {
-                left: $spacer * 2.5;
-            }
+    // Dateinput
+    .k-dateinput {
+        .k-dateinput-wrap,
+        .k-select {
+            transition: $transition;
         }
     }
 
@@ -58,38 +40,6 @@
         .k-title {
             z-index: 12;
             font-size: $font-size-xs;
-        }
-    }
-
-    // Datetimepicker
-    .k-datetimepicker {
-        .k-link {
-            padding: 0;
-            width: calc( #{$button-border-width} + #{$icon-size} + #{$button-padding-y * 2} );
-            border-width: 0 0 0 $picker-select-border-width;
-        }
-
-        .k-i-warning {
-            right: calc( #{ $button-inner-calc-size } * 2 + #{ $input-padding-x-sm });
-        }
-
-        .k-state-invalid {
-            transition: none;
-        }
-
-        .k-rtl &,
-        &[dir="rtl"] {
-            .k-i-warning {
-                left: calc( #{ $button-inner-calc-size } * 2 + #{ $input-padding-x-sm });
-            }
-        }
-    }
-
-    // Dateinput
-    .k-dateinput {
-        .k-dateinput-wrap,
-        .k-select {
-            transition: $transition;
         }
     }
 }

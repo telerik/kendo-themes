@@ -31,11 +31,6 @@
             border-width: $input-border-width 0;
             border-top-color: transparent !important; // sass-lint:disable-line no-important
 
-            .k-select {
-                border-width: 0;
-                font-size: $font-size;
-            }
-
             // Disabled
             .k-state-disabled > &,
             &.k-state-disabled {

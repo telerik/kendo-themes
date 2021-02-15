@@ -2,30 +2,6 @@
 
 @include exports("datetime/theme/bootstrap") {
 
-    // Shared
-    .k-datepicker,
-    .k-timepicker,
-    .k-datetimepicker {
-
-        // Normal state
-        .k-picker-wrap {
-
-            // Selected state
-            &.k-state-active {
-                .k-select {
-                    @include fill(
-                        $datetime-select-focused-text,
-                        $datetime-select-focused-bg,
-                        $datetime-select-focused-border,
-                        $datetime-select-focused-gradient
-                    );
-                }
-            }
-
-        }
-
-    }
-
     // Timepicker content
     .k-time-list {
         &::before,
@@ -33,21 +9,6 @@
             $shadow-size: 3em;
             box-shadow: 0 0 $shadow-size ($shadow-size) $popup-bg;
         }
-    }
-
-    // Dateinput
-    .k-dateinput {
-
-        // Selected state
-        .k-link.k-state-selected {
-            @include fill(
-                $datetime-select-focused-text,
-                $datetime-select-focused-bg,
-                $datetime-select-focused-border,
-                $datetime-select-focused-gradient
-            );
-        }
-
     }
 
 }

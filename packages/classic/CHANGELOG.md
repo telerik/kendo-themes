@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.10.0...@progress/kendo-theme-classic@0.11.0) (2021-02-15)
+
+
+### Bug Fixes
+
+* **stepper:** Stepper uses progressbar element but does not include the progressbar styling ([b1ece1c](https://github.com/telerik/kendo-themes/commit/b1ece1c))
+
+
+### Features
+
+* **notification:** generate notification-themes map dynamically ([485f9a3](https://github.com/telerik/kendo-themes/commit/485f9a3))
+* **overlay:** extract overlay as a separate component ([0e596ab](https://github.com/telerik/kendo-themes/commit/0e596ab))
+* **utils:** add border width utility classnames ([69ac5c7](https://github.com/telerik/kendo-themes/commit/69ac5c7))
+* update styles to match the new design ([45b4abc](https://github.com/telerik/kendo-themes/commit/45b4abc))
+
+
+
+
 <a name="0.10.0"></a>
 # [0.10.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.9.0...@progress/kendo-theme-classic@0.10.0) (2021-01-13)
 
