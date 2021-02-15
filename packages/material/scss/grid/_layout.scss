@@ -118,6 +118,10 @@ $grid-group-drag-clue-opacity: .9 !default;
         }
     }
 
+    .k-drag-clue {
+        line-height: $button-line-height;
+    }
+
     .k-resize-handle:hover .k-resize-handle-inner {
         width: 1px;
         height: 100%;

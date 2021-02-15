@@ -510,7 +510,14 @@
     }
 
     .k-drag-clue {
-        line-height: $line-height-lg;
+        font-size: $grid-font-size;
+        line-height: $grid-line-height;
+
+        .k-icon-with-modifier {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+        }
     }
 
     .k-grouping-dropclue {
