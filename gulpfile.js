@@ -16,8 +16,9 @@ const { getDefaults } = require('@progress/kendo-theme-tasks/src/build/kendo-def
 const { sassBuild, sassCompile } = require('@progress/kendo-theme-tasks/src/build/sass-build');
 const { sassFlatten } = require('@progress/kendo-theme-tasks/src/build/sass-flatten');
 const { embedFileBase64 } = require('@progress/kendo-theme-tasks/src/embedFile');
-const { getArg, logger, colors } = require("@progress/kendo-theme-tasks/src/utils");
+const { getArg, getEnvArg, logger, colors } = require("@progress/kendo-theme-tasks/src/utils");
 const { utilsDocs } = require('@progress/kendo-theme-tasks/src/docs');
+const { createComponent } = require('@progress/kendo-theme-tasks/src/create');
 
 
 // Settings
@@ -348,6 +349,24 @@ gulp.task("utils-docs", () => {
 });
 // #endregion
 
+// #region Components
+
+/**
+ * A task that creates all the needed files for a new component.
+ *
+ * @example npm run create-component --name=accordion
+ * @example gulp create-component --name accordion
+ *
+ * @param {string} [name] - The name of the new component.
+ */
+gulp.task("create-component", function( done ) {
+    const name = getArg('--name') || getEnvArg('name') || null;
+
+    createComponent({ name });
+    done();
+});
+
+// #endregion
 
 gulp.task("resolve-vars", () => {
     let themes = glob.sync(paths.sass.themes);

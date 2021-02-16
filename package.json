@@ -57,7 +57,7 @@
     "serve-tests": "http-server ./",
     "embed-assets": "gulp assets",
     "cleanup-test-results": "cd tests && npm run cleanup-test-results",
-    "create-component-files": "node ./scripts/new-component/create-component-files.js"
+    "create-component": "gulp create-component"
   },
   "husky": {
     "hooks": {
