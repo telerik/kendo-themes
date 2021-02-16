@@ -8,26 +8,21 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: 1fr;
-            align-items: start;
-            height: 800px;
-        }
+        #test-area {}
 
         .k-animation-container {
             position: relative;
             display: inline-block;
         }
 
-        body {
-            height: 800px;
-            overflow: hidden;
+        .k-menu-popup {
+            height: 560px;
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="grid k-grid-cols-1">
 
         <section>
             <kendo-popup class="k-animation-container k-animation-container-shown">
