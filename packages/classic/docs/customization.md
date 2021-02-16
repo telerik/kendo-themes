@@ -1216,6 +1216,16 @@ The following table lists the available variables for customizing the Classic th
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip content</div></div>
     </td>
 </tr>
+<tr>
+    <td>$tabstrip-content-border-focused</td>
+    <td></td>
+    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
+    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip focused content</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

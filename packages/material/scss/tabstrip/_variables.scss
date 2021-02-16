@@ -101,3 +101,6 @@ $tabstrip-content-text: inherit !default;
 /// Border color of tabstrip content
 /// @group tabstrip
 $tabstrip-content-border: transparent !default;
+/// Border color of tabstrip focused content
+/// @group tabstrip
+$tabstrip-content-border-focused: #656565 !default;
