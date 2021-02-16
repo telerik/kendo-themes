@@ -6,9 +6,9 @@ $progressbar-font-family: $font-family !default;
 $progressbar-font-size: $font-size-sm !default;
 $progressbar-line-height: 1 !default;
 
-$progressbar-bg: $base-bg !default;
-$progressbar-text: $base-text !default;
-$progressbar-border: $base-border !default;
+$progressbar-bg: try-shade( $component-bg, 1 ) !default;
+$progressbar-text: $component-text !default;
+$progressbar-border: $component-border !default;
 $progressbar-gradient: null !default;
 
 $progressbar-fill-bg: $primary !default;
