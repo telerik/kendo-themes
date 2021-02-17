@@ -51,11 +51,9 @@ While using the precompiled CSS file is faster than compiling the theme from the
 - It does not provide options for theme customization through SCSS variables because the theme is already compiled.
 
 ## Using the Build Process of the Application
-With this setup, you can customize theme variables directly in your application. For example, you can change the default primary color from orange to pink with the following lines:
+You can include Kendo theme by importing the source SCSS file.
 
 ```scss
-$primary: #ff69b4;
-
 @import "~@progress/kendo-theme-default/dist/all.scss";
 ```
 
