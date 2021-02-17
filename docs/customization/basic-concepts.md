@@ -21,16 +21,14 @@ $primary: #ff69b4;
 @import "~@progress/kendo-theme-default/dist/all.scss";
 ```
 
-The `dist/all.scss` file adds the styles for all components that are available in the theme. To trim down the size of the generated CSS, import only the source for the components that you use in your application. Each of them can be found in the `scss/` folder.
+You can also customize individual components by overriding their variables.
 
 ```scss
-// Import only the PanelBar and Grid styles using Node Sass
+$panelbar-bg: #1b56b8;
+$grid-bg: #1bb822;
+
 @import "~@progress/kendo-theme-default/scss/panelbar/_index.scss";
 @import "~@progress/kendo-theme-default/scss/grid/_index.scss";
-
-// Import only the PanelBar and Grid styles using Dart Sass
-@import "~@progress/kendo-theme-default/scss/panelbar/";
-@import "~@progress/kendo-theme-default/scss/grid/";
 ```
 
 ## Using the Build Process of the Themes
