@@ -19,7 +19,7 @@ The main benefits of using SVG icons are in terms of:
 
 * Rendering / Scalability - they are treated by the browsers as images, so anti-aliasing issues are avoided. This ensures that SVG icons are sharp at all resolutions, without losing quality;
 * Flexibility - individual parts of an SVG icon can be controlled via CSS (font-size, color, animation). There are also SVG-specific CSS filters and stroke properties. Multi-color SVG icons are supported;
-* Accessibility - using semantic elements and attributes (such as <title>, <desc>, `aria-labelledby` etc.) makes them accessible to screen readers, search engines and other devices.
+* Accessibility - using semantic elements and attributes (such as `<title>`, `<desc>`, `aria-labelledby` etc.) makes them accessible to screen readers, search engines and other devices.
 
 ## Basic Usage
 
