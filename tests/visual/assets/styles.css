@@ -80,3 +80,16 @@ body {
 .col-7 { grid-column: span 7; }
 .col-8 { grid-column: span 8; }
 .col-all { grid-column: 1 / -1; }
+
+
+/* Shades of gray*/
+.k-bg-gray-50  { background-color: #fafafa; }
+.k-bg-gray-100 { background-color: #f5f5f5; }
+.k-bg-gray-200 { background-color: #e5e5e5; }
+.k-bg-gray-300 { background-color: #d4d4d4; }
+.k-bg-gray-400 { background-color: #a3a3a3; }
+.k-bg-gray-500 { background-color: #737373; }
+.k-bg-gray-600 { background-color: #525252; }
+.k-bg-gray-700 { background-color: #404040; }
+.k-bg-gray-800 { background-color: #262626; }
+.k-bg-gray-900 { background-color: #171717; }
