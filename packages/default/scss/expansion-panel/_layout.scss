@@ -58,8 +58,9 @@
         box-sizing: border-box;
     }
 
-    .k-expander.k-expanded + .k-expander,
-    .k-expander.k-expanded:not(:first-child) {
+    // Multiple expanders
+    .k-expander + .k-expander.k-expanded,
+    .k-expander.k-expanded + .k-expander {
         margin-top: $expander-spacing-y;
     }
 
