@@ -60,7 +60,8 @@
 
         .k-link {
             padding: 0 $picker-select-padding-x;
-            min-width: $icon-size;
+            min-width: $spinner-min-width;
+            box-sizing: border-box;
             flex: 1 1 auto;
             display: block;
             overflow: hidden;

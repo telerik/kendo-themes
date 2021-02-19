@@ -61,6 +61,11 @@
             $tabstrip-content-bg,
             $tabstrip-content-border
         );
+
+        &:focus,
+        &.k-state-focused {
+            outline-color: $tabstrip-content-border-focused;
+        }
     }
 
 
