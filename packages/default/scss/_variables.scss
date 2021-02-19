@@ -290,6 +290,8 @@ $disabled-opacity: .6 !default;
 $body-bg: $bg-color !default;
 $body-text: $text-color !default;
 
+$subtle-text: try-tint( $body-text, 3 );
+
 $app-bg: lighten($base-bg, 1%) !default;
 $app-text: $body-text !default;
 $app-border: $border-color !default;
