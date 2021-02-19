@@ -318,7 +318,7 @@ $disabled-opacity: .6 !default;
 $body-bg: map-get($theme, body-bg) !default;
 $body-text: map-get($theme, body-text) !default;
 
-$body-text: map-get($theme, subtle-text) !default;
+$subtle-text: map-get($theme, subtle-text) !default;
 
 $app-bg: $body-bg !default;
 $app-text: $body-text !default;
