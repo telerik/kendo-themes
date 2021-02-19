@@ -1,6 +1,7 @@
 ---
 title: Introduction
 category: getting-started
+slug: introduction
 position: 1
 ---
 

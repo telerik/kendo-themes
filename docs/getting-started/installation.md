@@ -1,6 +1,7 @@
 ---
 title: Installation
 category: getting-started
+slug: installation
 position: 2
 ---
 

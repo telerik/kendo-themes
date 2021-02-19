@@ -1,6 +1,7 @@
 ---
 title: Themebuilder
 category: customization
+slug: themebuilder
 position: 4
 ---
 
