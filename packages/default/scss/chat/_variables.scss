@@ -13,6 +13,12 @@ $chat-message-list-padding-x: $chat-padding-x !default;
 $chat-message-list-padding-y: $chat-padding-y !default;
 $chat-message-list-spacing: $chat-item-spacing-y !default;
 
+$chat-timestamp-font-size: smaller !default;
+$chat-timestamp-line-height: null !default;
+$chat-timestamp-transform: uppercase !default;
+$chat-timestamp-text: $subtle-text !default;
+$chat-timestamp-bg: null !default;
+
 $chat-bubble-padding-x: 12px !default;
 $chat-bubble-padding-y: 8px !default;
 $chat-bubble-spacing: 2px !default;
