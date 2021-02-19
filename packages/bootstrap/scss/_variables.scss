@@ -289,6 +289,8 @@ $disabled-opacity: .65 !default;
 $body-bg: $body-bg !default;
 $body-text: $body-color !default;
 
+$subtle-text: $text-muted !default;
+
 $app-bg: $body-bg !default;
 $app-text: $body-text !default;
 $app-border: contrast-yiq( $app-bg, $gray-300, $gray-700 ) !default;
