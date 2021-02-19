@@ -1,6 +1,7 @@
 ---
 title: Browser Support
 category: getting-started
+slug: browser-support
 position: 4
 ---
 

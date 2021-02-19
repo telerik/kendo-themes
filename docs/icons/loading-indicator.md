@@ -1,6 +1,7 @@
 ---
 title: Loading indicator
 category: icons
+slug: loading-indicator
 position: 5
 ---
 
