@@ -1,6 +1,7 @@
 ---
 title: Basic concepts
 category: customization
+slug: basic-concepts
 position: 1
 ---
 

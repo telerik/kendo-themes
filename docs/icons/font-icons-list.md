@@ -1,6 +1,7 @@
 ---
 title: Font icons list
 category: icons
+slug: icons-list
 position: 2
 ---
 

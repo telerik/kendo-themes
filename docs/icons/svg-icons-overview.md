@@ -1,6 +1,7 @@
 ---
 title: SVGIcons
 category: icons
+slug: svg-icons-overview
 position: 3
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Variables overview
 category: customization
+slug: variables
 position: 2
 ---
 
