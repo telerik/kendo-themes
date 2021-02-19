@@ -8,9 +8,7 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: 1fr;
-        }
+        #test-area {}
         #filemanager-context-menu {
             position: absolute;
             top: 200px;
@@ -21,7 +19,7 @@
     </style>
 </head>
 <body>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="grid k-grid-cols-1">
 
         <span>File Manager ContextMenu</span>
         <div class="k-widget k-filemanager">
@@ -30,14 +28,6 @@
                 <div class="k-filemanager-toolbar k-toolbar k-widget">
                     <a class="k-button k-toolbar-first-visible">New Folder</a>
                     <a class="k-button">Upload</a>
-                    <div class="k-button-group">
-                        <a class="k-toggle-button k-state-active k-button k-button-icon k-group-start">
-                            <span class="k-icon k-i-grid-layout"></span>
-                        </a>
-                        <a class="k-toggle-button k-button k-button-icon k-group-end">
-                            <span class="k-icon k-i-grid"></span>
-                        </a>
-                    </div>
                 </div>
             </div>
 
