@@ -33,9 +33,6 @@ $input-inner-calc-height: calc( #{$input-line-height * 1em} + #{$input-padding-y
 $input-inner-calc-height-sm: calc( #{$input-line-height-sm * 1em} + #{$input-padding-y-sm * 2} ) !default;
 $input-inner-calc-height-lg: calc( #{$input-line-height-lg * 1em} + #{$input-padding-y-lg * 2} ) !default;
 
-$input-icon-width: calc( #{$icon-size} + #{$input-padding-y * 2} ) !default;
-$input-icon-height: calc( #{$input-line-height * $input-font-size} + #{$input-padding-y * 2} ) !default;
-
 $input-adornment-height: calc( #{$input-line-height * $input-font-size} + #{$input-padding-y * 2} ) !default;
 $input-adornment-width: $input-adornment-height !default;
 
@@ -44,24 +41,21 @@ $input-text: $component-text !default;
 $input-border: $button-border !default;
 $input-shadow: null !default;
 
-$input-hovered-text: $input-text !default;
-$input-hovered-bg: $input-bg !default;
+$input-hovered-bg: null !default;
+$input-hovered-text: null !default;
 $input-hovered-border: $button-hovered-border !default;
 $input-hovered-shadow: null !default;
 
-$input-focused-text: $input-text !default;
 $input-focused-bg: $input-bg !default;
+$input-focused-text: $input-text !default;
 $input-focused-border: rgba(0, 0, 0, .1) !default;
 $input-focused-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
-$input-placeholder-text: rgba( $input-text, .5) !default;
+$input-placeholder-text: $subtle-text !default;
 $input-placeholder-opacity: 1 !default;
 
 $input-selected-text: $primary-contrast !default;
 $input-selected-bg: $primary !default;
-
-$input-separator-color: $clear-button-text !default;
-$input-separator-opacity: .5 !default;
 
 $input-clear-button-focused-background: $base-text !default;
 $input-clear-button-focused-opacity: .2 !default;
@@ -88,3 +82,16 @@ $picker-select-calc-size-lg: $input-inner-calc-height-lg !default;
 $spinner-width: $button-inner-calc-size !default;
 $spinner-min-width: calc( #{$icon-size} + #{$picker-select-padding-x * 2} ) !default;
 $spinner-icon-offset: 2px !default;
+
+
+// Input icon
+$input-icon-width: calc( #{$icon-size} + #{$input-padding-y * 2} ) !default;
+$input-icon-height: calc( #{$input-line-height * $input-font-size} + #{$input-padding-y * 2} ) !default;
+
+$input-icon-text: $subtle-text !default;
+$input-icon-opacity: null !default;
+
+
+// Input separator
+$input-separator-color: $clear-button-text !default;
+$input-separator-opacity: .5 !default;

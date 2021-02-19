@@ -17,21 +17,9 @@
             );
         }
 
-        .k-input-prefix,
-        .k-input-suffix {
-            > .k-icon {
-                color: $textbox-icon-color;
-                opacity: $textbox-icon-opacity;
-            }
-
-            .k-clear-value {
-                color: $clear-button-text;
-            }
-        }
-
         .k-textbox-separator {
-            border-color: $textbox-separator-color;
-            opacity: $textbox-separator-opacity;
+            border-color: $input-separator-color;
+            opacity: $input-separator-opacity;
         }
 
         // Focused

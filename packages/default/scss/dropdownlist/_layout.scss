@@ -55,16 +55,8 @@
 
             // Clear value
             .k-clear-value {
-                opacity: .5;
                 visibility: hidden;
-
-                &:hover {
-                    opacity: 1;
-                }
             }
-
-
-            // Focused
             &.k-state-focused,
             &.k-state-hover,
             &:hover {

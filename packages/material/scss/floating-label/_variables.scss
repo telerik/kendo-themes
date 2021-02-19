@@ -13,7 +13,7 @@ $floating-label-focus-offset-y: 0px !default;
 $floating-label-transition: .15s cubic-bezier( .4, 0, .2, 1 ) !default;
 
 $floating-label-bg: null !default;
-$floating-label-text: rgba($input-text, .6) !default;
+$floating-label-text: $subtle-text !default;
 
 $floating-label-focus-bg: null !default;
 $floating-label-focus-text: $primary !default;

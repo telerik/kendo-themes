@@ -109,16 +109,12 @@
                 right: 0;
             }
 
+            // Clear value
             .k-clear-value {
-                opacity: .5;
                 visibility: hidden;
                 position: absolute;
                 top: 0;
                 right: 0;
-
-                &:hover {
-                    opacity: 1;
-                }
             }
             &:hover,
             &.k-state-hover,
