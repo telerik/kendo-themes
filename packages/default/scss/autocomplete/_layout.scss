@@ -37,12 +37,7 @@
 
         // Clear value
         .k-clear-value {
-            opacity: .5;
             visibility: hidden;
-
-            &:hover {
-                opacity: 1;
-            }
         }
         &:hover,
         // &:focus-within,

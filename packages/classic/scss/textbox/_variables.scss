@@ -1,11 +1,2 @@
 // Textboxe
 $textbox-line-height: $input-line-height !default;
-$textbox-icon-width: calc( #{$icon-size} + #{$input-padding-x * 2} ) !default;
-$textbox-icon-padding-x: 6px !default;
-$textbox-icon-padding-y: $textbox-icon-padding-x !default;
-
-$textbox-icon-color: $input-text !default;
-$textbox-icon-opacity: .75 !default;
-
-$textbox-separator-color: $clear-button-text !default;
-$textbox-separator-opacity: .5 !default;
