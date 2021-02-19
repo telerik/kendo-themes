@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>File Manager Toolbar</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {}
+    </style>
+</head>
+<body>
+    <div id="test-area" class="grid k-grid-cols-1">
+
+        <span>Full toolbar</span>
+        <div class="k-widget k-filemanager">
+            <!-- Header -->
+            <div class="k-filemanager-header">
+                <div class="k-filemanager-toolbar k-toolbar k-widget">
+                    <a class="k-button k-toolbar-first-visible">New Folder</a>
+                    <a class="k-button">Upload</a>
+                    <div class="k-button-group">
+                        <a class="k-toggle-button k-state-active k-button k-button-icon k-group-start">
+                            <span class="k-icon k-i-sort-asc-sm"></span>
+                        </a>
+                        <a class="k-toggle-button k-button k-button-icon k-group-end">
+                            <span class="k-icon k-i-sort-desc-sm"></span>
+                        </a>
+                    </div>
+                    <div class="k-split-button">
+                        <a class="k-button">Sort By</a>
+                        <a class="k-button k-split-button-arrow">
+                            <span class="k-icon k-i-arrow-60-down"></span>
+                        </a>
+                    </div>
+                    <div class="k-button-group">
+                        <a class="k-toggle-button k-button k-button-icon k-group-start">
+                            <span class="k-icon k-i-grid-layout"></span>
+                        </a>
+                        <a class="k-toggle-button k-state-active k-button k-button-icon k-group-end">
+                            <span class="k-icon k-i-grid"></span>
+                        </a>
+                    </div>
+                    <div class="k-spacer">&nbsp;</div>
+                    <div class="k-filemanager-details-toggle">
+                        <label>View Details</label>
+                        <span class="k-switch k-widget k-switch-on">
+                            <input type="checkbox">
+                            <span class="k-switch-container">
+                                <span class="k-switch-label-on">On</span>
+                                <span class="k-switch-label-off">Off</span>
+                                <span class="k-switch-handle"></span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="k-filemanager-search-tool k-textbox k-toolbar-last-visible" >
+                        <input class="k-input" placeholder="Search">
+                        <span class="k-input-icon">
+                            <span class="k-icon k-i-search"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
