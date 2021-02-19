@@ -8,84 +8,94 @@
     <script src="assets/scripts.js"></script>
 
     <style>
-       #test-area {
-            min-height: 600px;
-        }
+       #test-area {}
+
+       .k-dialog {
+           display: flex;
+           position: relative;
+       }
+       .k-dialog-content {
+           min-height: 5em;
+       }
     </style>
 </head>
 <body>
-    <div id="test-area">
+    <div id="test-area" class="grid k-grid-cols-2">
 
         <!-- Upload Dialog -->
-        <div class="k-widget k-window k-dialog k-filemanager-upload-dialog" style="position: relative; display: flex; align-self: flex-start; width: 530px;">
-            <div class="k-window-titlebar k-dialog-titlebar k-header" >
-                <span class="k-window-title k-dialog-title">Upload Files</span>
-                <div class="k-window-actions k-dialog-actions">
-                    <a href="#" class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close">
-                        <span class="k-icon k-i-close"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="k-content k-window-content k-dialog-content">
-                <div class="k-widget k-upload k-upload-async k-upload-empty">
-                    <div class="k-dropzone">
-                        <div class="k-button k-upload-button">
-                            <input type="file" name="file" class="k-filemanager-upload">
-                            <span>Select files...</span>
-                        </div>
-                        <em class="k-dropzone-hint">Drop files here to upload</em>
+        <section>
+            <div class="k-widget k-window k-dialog k-filemanager-upload-dialog">
+                <div class="k-window-titlebar k-dialog-titlebar k-header" >
+                    <span class="k-window-title k-dialog-title">Upload Files</span>
+                    <div class="k-window-actions k-dialog-actions">
+                        <a class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close">
+                            <span class="k-icon k-i-close"></span>
+                        </a>
                     </div>
                 </div>
+                <div class="k-content k-window-content k-dialog-content">
+                    <div class="k-widget k-upload k-upload-async k-upload-empty">
+                        <div class="k-dropzone">
+                            <div class="k-button k-upload-button">
+                                <input type="file" name="file" class="k-filemanager-upload">
+                                <span>Select files...</span>
+                            </div>
+                            <em class="k-dropzone-hint">Drop files here to upload</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-dialog-buttongroup">
+                    <button type="button" class="k-button">Clear List</button>
+                    <button type="button" class="k-button k-primary">Done</button>
+                </div>
             </div>
-            <div class="k-dialog-buttongroup k-dialog-button-layout-stretched">
-                <button type="button" class="k-button" tabindex="0">Clear List</button>
-                <button type="button" class="k-button k-primary" tabindex="0">Done</button>
-            </div>
-        </div>
-
-        <br><br>
+        </section>
+        <span><!-- empty span --></span>
 
         <!-- Move/Copy Dialog -->
-        <div class="k-widget k-window k-dialog" style="position: relative; display: flex; align-self: flex-start; width: 350px;">
-            <div class="k-window-titlebar k-dialog-titlebar k-header">
-                <span class="k-window-title k-dialog-title">Confirm</span>
-                <div class="k-window-actions k-dialog-actions">
-                    <a href="#" class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close">
-                        <span class="k-icon k-i-close"></span>
-                    </a>
+        <section>
+            <div class="k-widget k-window k-dialog">
+                <div class="k-window-titlebar k-dialog-titlebar k-header">
+                    <span class="k-window-title k-dialog-title">Confirm</span>
+                    <div class="k-window-actions k-dialog-actions">
+                        <a class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close">
+                            <span class="k-icon k-i-close"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="k-content k-window-content k-dialog-content k-text-center">
+                    <p>Do you want to move or copy?</p>
+                </div>
+                <div class="k-dialog-buttongroup">
+                    <button type="button" class="k-button k-primary">Copy</button>
+                    <button type="button" class="k-button">Move</button>
                 </div>
             </div>
-            <div class="k-content k-window-content k-dialog-content">
-                <p style="text-align: center;">Do you want to move or copy?</p>
-            </div>
-            <div class="k-dialog-buttongroup k-dialog-button-layout-stretched">
-                <button type="button" class="k-button k-primary" tabindex="0">Copy</button>
-                <button type="button" class="k-button" tabindex="0">Move</button>
-            </div>
-        </div>
-
-        <br></br>
+        </section>
 
         <!-- Delete Dialog -->
-        <div class="k-widget k-window k-dialog" style="position: relative; display: flex; align-self: flex-start; width: 350px;">
-            <div class="k-window-titlebar k-dialog-titlebar k-header">
-                <span class="k-window-title k-dialog-title">Confirm</span>
-                <div class="k-window-actions k-dialog-actions">
-                    <a href="#" class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close">
-                        <span class="k-icon k-i-close"></span>
-                    </a>
+        <section>
+            <div class="k-widget k-window k-dialog">
+                <div class="k-window-titlebar k-dialog-titlebar k-header">
+                    <span class="k-window-title k-dialog-title">Confirm</span>
+                    <div class="k-window-actions k-dialog-actions">
+                        <a class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close">
+                            <span class="k-icon k-i-close"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="k-content k-window-content k-dialog-content k-text-center">
+                    <p>Are you sure you want to delete this file?</p>
+                    <p>You can't undo this action.</p>
+                </div>
+                <div class="k-dialog-buttongroup">
+                    <button type="button" class="k-button k-primary">Delete</button>
+                    <button type="button" class="k-button">Cancel</button>
                 </div>
             </div>
-            <div class="k-content k-window-content k-dialog-content">
-                <p style="text-align: center;">Are you sure you want to delete this file?<br>You can't undo this action.</p>
-            </div>
-            <div class="k-dialog-buttongroup k-dialog-button-layout-stretched">
-                <button type="button" class="k-button k-primary" tabindex="0">Delete</button>
-                <button type="button" class="k-button" tabindex="0">Cancel</button>
-            </div>
-        </div>
+        </section>
 
-        <!-- Drag Hint -->
+
     </div>
 </body>
 </html>
