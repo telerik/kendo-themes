@@ -19,10 +19,9 @@
                 background-color: $upload-dropzone-hover-bg;
             }
 
-            .k-upload-status,
             .k-dropzone-hint {
-                color: $upload-dropzone-text;
-                opacity: $upload-dropzone-text-opacity;
+                color: $upload-status-text;
+                opacity: $upload-status-text-opacity;
             }
 
         }
@@ -45,7 +44,8 @@
         }
 
         .k-upload-status {
-            color: $base-text;
+            color: $upload-status-text;
+            opacity: $upload-status-text-opacity;
         }
 
         // Upload status: uploading
@@ -120,7 +120,7 @@
         .k-file-size,
         .k-file-validation-message,
         .k-file-information {
-            color: try-tint( $upload-text, 50% );
+            color: $subtle-text;
         }
 
         .k-multiple-files-wrapper .k-file-information {
