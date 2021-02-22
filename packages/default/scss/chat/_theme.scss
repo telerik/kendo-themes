@@ -12,8 +12,10 @@
 
         // Message meta
         .k-timestamp {
-            text-transform: uppercase;
-            opacity: .7;
+            @include fill(
+                $chat-timestamp-text,
+                $chat-timestamp-bg
+            )
         }
         .k-author {
             font-weight: bold;

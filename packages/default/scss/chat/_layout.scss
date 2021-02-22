@@ -203,9 +203,10 @@
 
 
     // Timestamp
-    .k-timestamp {
-        font-size: smaller;
-        line-height: normal;
+    .k-chat .k-timestamp {
+        font-size: $chat-timestamp-font-size;
+        line-height: $chat-timestamp-line-height;
+        text-transform: $chat-timestamp-transform;
         text-align: center;
         align-self: stretch;
     }
