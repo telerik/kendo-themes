@@ -1,6 +1,6 @@
 @import "~@progress/kendo-theme-default/scss/tabstrip/_layout.scss";
 
-@include exports("tabstrip/layout/material") {
+@include exports( "tabstrip/layout/material" ) {
 
     .k-tabstrip {
         line-height: $tabstrip-line-height;
@@ -13,13 +13,9 @@
             justify-content: flex-end;
         }
 
-        > .k-item:not(.k-state-active) {
-            opacity: .7;
-        }
-
-        > .k-item:not(.k-state-disabled):hover,
-        > .k-item.k-state-hover {
+        .k-disabled {
             opacity: 1;
+            filter: none;
         }
     }
 

@@ -103,4 +103,4 @@ $tabstrip-content-text: $component-text !default;
 $tabstrip-content-border: $component-border !default;
 /// Border color of tabstrip focused content
 /// @group tabstrip
-$tabstrip-content-border-focused: #656565 !default;
+$tabstrip-content-border-focused: $component-text !default;

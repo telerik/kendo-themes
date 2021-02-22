@@ -1,1 +1,13 @@
 @import "~@progress/kendo-theme-default/scss/tabstrip/_theme.scss";
+
+@include exports( "tabstrip/layout/theme" ) {
+
+    .k-tabstrip-items {
+
+        .k-disabled {
+            color: map-get( $theme, disabled-text );
+        }
+
+    }
+
+}

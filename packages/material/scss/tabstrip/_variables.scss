@@ -17,7 +17,7 @@ $tabstrip-wrapper-border: null !default;
 $tabstrip-bg: null !default;
 /// Text color of tabstrip component
 /// @group tabstrip
-$tabstrip-text: inherit !default;
+$tabstrip-text: $subtle-text !default;
 /// Border color of tabstrip component
 /// @group tabstrip
 $tabstrip-border: $component-border !default;
@@ -43,7 +43,7 @@ $tabstrip-item-gap: 0px !default;
 $tabstrip-item-bg: null !default;
 /// Text color of tabs
 /// @group tabstrip
-$tabstrip-item-text: inherit !default;
+$tabstrip-item-text: $subtle-text !default;
 /// Border color of tabs
 /// @group tabstrip
 $tabstrip-item-border: null !default;
@@ -53,10 +53,10 @@ $tabstrip-item-gradient: null !default;
 
 /// Background color of hovered tabs
 /// @group tabstrip
-$tabstrip-item-hovered-bg: null !default;
+$tabstrip-item-hovered-bg: $hovered-bg !default;
 /// Text color of hovered tabs
 /// @group tabstrip
-$tabstrip-item-hovered-text: inherit !default;
+$tabstrip-item-hovered-text: $body-text !default;
 /// Border color of hovered tabs
 /// @group tabstrip
 $tabstrip-item-hovered-border: null !default;
@@ -69,7 +69,7 @@ $tabstrip-item-hovered-gradient: null !default;
 $tabstrip-item-selected-bg: null !default;
 /// Text color of selected tabs
 /// @group tabstrip
-$tabstrip-item-selected-text: inherit !default;
+$tabstrip-item-selected-text: $body-text !default;
 /// Border color of selected tabs
 /// @group tabstrip
 $tabstrip-item-selected-border: null !default;
@@ -97,10 +97,10 @@ $tabstrip-content-border-width: 0px !default;
 $tabstrip-content-bg: transparent !default;
 /// Text color of tabstrip content
 /// @group tabstrip
-$tabstrip-content-text: inherit !default;
+$tabstrip-content-text: null !default;
 /// Border color of tabstrip content
 /// @group tabstrip
-$tabstrip-content-border: transparent !default;
+$tabstrip-content-border: null !default;
 /// Border color of tabstrip focused content
 /// @group tabstrip
-$tabstrip-content-border-focused: #656565 !default;
+$tabstrip-content-border-focused: $component-text !default;
