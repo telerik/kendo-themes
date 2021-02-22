@@ -39,7 +39,7 @@ $card-footer-border: $card-border !default;
 
 $card-title-margin-bottom: $h1-margin-bottom !default;
 $card-subtitle-margin-bottom: $paragraph-margin-bottom !default;
-$card-subtitle-text: true-mix($card-text, $card-bg, 54%) !default;
+$card-subtitle-text: $subtle-text !default;
 
 $card-img-max-width: 100px !default;
 $card-avatar-size: 45px !default;
@@ -51,7 +51,7 @@ $card-actions-border-width: 1px !default;
 $card-actions-gap: map-get( $spacing, 2 ) !default;
 
 $card-deck-scroll-button-radius: 50% !default;
-$card-deck-scroll-button-offset: $card-deck-gap / 2 !default;
+$card-deck-scroll-button-offset: ( $card-deck-gap / 2 ) !default;
 
 $card-callout-width: 20px !default;
 $card-callout-height: 20px !default;

@@ -17,8 +17,8 @@ $card-shadow: null !default;
 
 $card-focus-bg: null !default;
 $card-focus-text: null !default;
-$card-focus-border: rgba( black, .15) !default;
-$card-focus-shadow: 0 3px 4px 0 rgba( black, .06) !default;
+$card-focus-border: rgba( black, .15 ) !default;
+$card-focus-shadow: 0 3px 4px 0 rgba( black, .06 ) !default;
 
 $card-header-padding-x: $card-padding-x !default;
 $card-header-padding-y: $card-padding-y !default;
@@ -39,7 +39,7 @@ $card-footer-border: $header-border !default;
 
 $card-title-margin-bottom: map-get( $spacing, sm ) !default;
 $card-subtitle-margin-bottom: map-get( $spacing, sm ) !default;
-$card-subtitle-text: true-mix($card-text, $card-bg, 45%) !default;
+$card-subtitle-text: $subtle-text !default;
 
 $card-img-max-width: 100px !default;
 $card-avatar-size: 45px !default;
