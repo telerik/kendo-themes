@@ -43,7 +43,7 @@
 
             .k-time-period,
             .k-mobile-scheduler-agendaweekday {
-                color: lighten($base-text, 33%);
+                color: $adaptive-scheduler-subtle-text;
             }
 
             .k-scheduler-times,
