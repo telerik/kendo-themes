@@ -1050,8 +1050,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$tabstrip-text</td>
     <td></td>
-    <td>inherit</td>
-    <td>inherit</td>
+    <td>$subtle-text</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tabstrip component</div></div>
@@ -1130,8 +1130,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$tabstrip-item-text</td>
     <td></td>
-    <td>inherit</td>
-    <td>inherit</td>
+    <td>$subtle-text</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tabs</div></div>
@@ -1160,8 +1160,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$tabstrip-item-hovered-bg</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+    <td>$hovered-bg</td>
+    <td>map-get( $theme, hover-bg )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered tabs</div></div>
@@ -1170,8 +1170,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$tabstrip-item-hovered-text</td>
     <td></td>
-    <td>inherit</td>
-    <td>inherit</td>
+    <td>$body-text</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered tabs</div></div>
@@ -1210,8 +1210,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$tabstrip-item-selected-text</td>
     <td></td>
-    <td>inherit</td>
-    <td>inherit</td>
+    <td>$body-text</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected tabs</div></div>
@@ -1280,8 +1280,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$tabstrip-content-text</td>
     <td></td>
-    <td>inherit</td>
-    <td>inherit</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tabstrip content</div></div>
@@ -1290,8 +1290,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$tabstrip-content-border</td>
     <td></td>
-    <td>transparent</td>
-    <td>transparent</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip content</div></div>
@@ -1300,8 +1300,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$tabstrip-content-border-focused</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
-    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
+    <td>$component-text</td>
+    <td>map-get($theme, component-text)</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip focused content</div></div>
