@@ -220,6 +220,8 @@
                 opacity: $calendar-weekend-opacity;
             }
             .k-alt {
+                // remove default k-alt background color
+                background-color: transparent;
                 opacity: $calendar-week-number-opacity;
             }
             .k-other-month .k-link {
