@@ -681,11 +681,13 @@ $material-dark-complimentary: (
     body-bg: #303030,
     body-text: $light-primary-text,
     subtle-text: $light-secondary-text,
+    disabled-text: $light-disabled-text,
     component-bg: get-base-hue( grey, 800 ),
     component-text: get-base-contrast( grey, 800 ),
     component-border: $light-dividers,
     base-bg: get-base-hue( grey, 800 ),
-    hover-bg: rgba( $white, .04 ),
+    hover-bg: rgba( $white, .08 ),
+    focus-bg: rgba( $white, .24 ),
     elevation: $black
 );
 
@@ -695,10 +697,12 @@ $material-light-complimentary: (
     body-bg: get-base-hue( grey, 50 ),
     body-text: get-base-contrast( grey, 50 ),
     subtle-text: $dark-secondary-text,
+    disabled-text: $dark-disabled-text,
     component-bg: $white,
     component-text: $dark-primary-text,
     component-border: $dark-dividers,
     base-bg: $white,
     hover-bg: rgba( $black, .04 ),
+    focus-bg: rgba( $black, .12 ),
     elevation: $black
 );
