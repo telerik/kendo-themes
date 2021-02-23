@@ -3,59 +3,36 @@
 @include exports( "colorpicker/theme/material" ) {
 
     .k-colorpicker {
-
-        .k-selected-color {
-            border-color: rgba( 0, 0, 0, .08 );
-        }
-
-        .k-tool-icon {
-            color: rgba(0, 0, 0, .42);
-        }
-
-        .k-tool-icon:hover,
-        .k-tool-icon.k-state-hover {
-            color: rgba(0, 0, 0, .87);
-            background-color: transparent;
-        }
-
-        .k-select:hover,
-        .k-select.k-state-hover {
-            border-color: transparent;
-            background-color: transparent;
-        }
-
         .k-picker-wrap {
-            border-color: $colorpicker-border;
-            background-color: transparent;
 
-            .k-input {
-                color: $colorpicker-text;
+            .k-selected-color {
+                border-color: rgba( 0, 0, 0, .08 );
             }
 
             .k-select {
-                opacity: $icon-opacity;
+                color: $colorpicker-select-text;
             }
 
             // Hover
             &:hover,
             &.k-state-hover {
-                border-color: $colorpicker-hovered-border;
 
                 .k-select {
-                    opacity: $icon-hovered-opacity;
+                    color: $colorpicker-select-hovered-text;
                 }
             }
 
             // Focused
             &.k-state-focused,
             .k-state-focused > & {
-                border-color: $colorpicker-focused-border;
 
                 .k-select {
-                    opacity: $icon-focused-opacity;
+                    color: $colorpicker-select-focused-text;
                 }
             }
+
         }
+
     }
 
 }
