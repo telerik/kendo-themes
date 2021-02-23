@@ -1,62 +1,51 @@
-@include exports("colorpicker/theme") {
+@include exports( "colorpicker/theme" ) {
 
     .k-colorpicker {
 
         // Normal state
         .k-picker-wrap {
             @include fill(
-                $colorpicker-select-text,
-                $colorpicker-select-bg,
-                $colorpicker-select-border,
-                $colorpicker-select-gradient
+                $colorpicker-text,
+                $colorpicker-bg,
+                $colorpicker-border,
+                $colorpicker-gradient
             );
-
-            &:focus {
-
-            }
 
             // Invalid state
             &.k-invalid,
             &.k-invalid:hover,
             &.k-state-invalid {
-                color: $error;
                 border-color: $invalid-border;
+
+                &:focus,
+                &.k-state-focused {
+                    @include box-shadow($invalid-shadow);
+                }
             }
         }
 
-        // Hovered state
-        .k-tool-icon:hover,
-        .k-select:hover,
-        .k-tool-icon.k-state-hover,
-        .k-select.k-state-hover,
+        // Hover state
+        > :hover,
         .k-state-hover {
             @include fill(
-                $colorpicker-select-hovered-text,
-                $colorpicker-select-hovered-bg,
-                $colorpicker-select-hovered-border,
-                $colorpicker-select-hovered-gradient
+                $colorpicker-hovered-text,
+                $colorpicker-hovered-bg,
+                $colorpicker-hovered-border,
+                $colorpicker-hovered-gradient
             );
         }
 
-        .k-tool-icon:hover,
-        .k-tool-icon.k-state-hover {
-            border-color: $colorpicker-tool-icon-hovered-border;
-        }
+        &.k-state-active {}
 
-        // Selected state
-        .k-state-active {
-            @include fill(
-                $colorpicker-select-focused-text,
-                $colorpicker-select-focused-bg,
-                $colorpicker-select-focused-border,
-                $colorpicker-select-focused-gradient
-            );
-            @include box-shadow( $colorpicker-select-pressed-shadow );
-        }
-
-        // Focused state
+        // Focus state
         .k-state-focused {
-            box-shadow: $colorpicker-select-focused-shadow;
+            @include fill(
+                $colorpicker-focused-text,
+                $colorpicker-focused-bg,
+                $colorpicker-focused-border,
+                $colorpicker-focused-gradient
+            );
+            @include box-shadow($colorpicker-focused-shadow);
         }
 
         // Invalid state
@@ -65,6 +54,10 @@
         &.ng-invalid.ng-dirty {
             .k-picker-wrap {
                 border-color: $invalid-border;
+
+                &.k-state-focused {
+                    @include box-shadow($invalid-shadow);
+                }
             }
         }
 
@@ -87,9 +80,9 @@
 
         .k-color-value {
             @include fill(
-                $colorpicker-text,
-                $colorpicker-bg,
-                $colorpicker-border
+                $input-text,
+                $input-bg,
+                $input-border
             );
         }
 
