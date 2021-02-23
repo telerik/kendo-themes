@@ -15,7 +15,7 @@ $popup-filter-padding-x: $input-padding-x !default;
 $popup-content-padding-x: map-get( $spacing, 2 ) !default;
 $popup-content-padding-y: map-get( $spacing, 2 ) !default;
 
-$popup-bg: lighten($base-bg, 1%) !default;
-$popup-text: $base-text !default;
-$popup-border: $base-border !default;
+$popup-bg: try-shade( $component-bg, .25 ) !default;
+$popup-text: $component-text !default;
+$popup-border: $component-border !default;
 $popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
