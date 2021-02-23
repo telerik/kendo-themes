@@ -227,7 +227,8 @@
         }
 
         .k-form-field-wrap {
-            flex: 1;
+            max-width: $horizontal-form-field-wrap-max-width;
+            flex: 1 1 auto;
         }
 
         .k-form-buttons {

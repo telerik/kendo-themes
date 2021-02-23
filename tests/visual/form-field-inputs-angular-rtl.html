@@ -208,13 +208,41 @@
                         <label class="k-label">Upload</label>
                     </kendo-label>
                     <div>
-                        <kendo-upload class="k-widget k-upload" dir="rtl">
+                        <kendo-upload class="k-widget k-upload">
                             <div class="k-dropzone">
                                 <div class="k-button k-upload-button">
-                                    <input> <span>Select files...</span>
+                                    <input />
+                                    <span>Select files...</span>
                                 </div>
+                                <kendo-upload-status-total class="k-upload-status k-upload-status-total ng-star-inserted">
+                                    <span class="k-icon k-i-checkmark"></span>
+                                    Done
+                                </kendo-upload-status-total>
                                 <div class="k-dropzone-hint">Drop files here to upload</div>
                             </div>
+                            <ul class="k-upload-files k-reset ng-star-inserted">
+                                <li class="k-file ng-star-inserted k-file-success">
+                                    <kendo-upload-file-list-single-item class="k-file-single ng-tns-c0-0 ng-star-inserted">
+                                        <div class="k-progressbar ng-trigger ng-trigger-progressState" style="opacity: 0;">
+                                            <span class="k-progress" style="width: 100%;"></span>
+                                        </div>
+                                        <span class="k-file-group-wrapper">
+                                            <span class="k-file-group k-icon k-i-file-pdf"></span>
+                                        </span>
+                                        <span class="k-file-name-size-wrapper">
+                                            <span class="k-file-name ng-tns-c0-0 ng-star-inserted">test long long long long long long long long long long long long long.pdf</span>
+                                            <span class="ng-tns-c0-0 ng-star-inserted k-text-success k-file-information">File successfully uploaded.</span>
+                                        </span>
+                                        <kendo-upload-file-list-item-action-button class="ng-tns-c0-0">
+                                            <strong class="k-upload-status">
+                                                <button class="k-button k-button-icon k-flat k-upload-action ng-star-inserted">
+                                                    <span class="k-icon k-delete k-i-x"></span>
+                                                </button>
+                                            </strong>
+                                        </kendo-upload-file-list-item-action-button>
+                                    </kendo-upload-file-list-single-item>
+                                </li>
+                            </ul>
                         </kendo-upload>
                     </div>
                 </kendo-form-field>
@@ -411,13 +439,41 @@
                     </kendo-label>
                     <div class="k-form-field-wrap">
                         <div>
-                            <kendo-upload class="k-widget k-upload" dir="rtl">
+                            <kendo-upload class="k-widget k-upload">
                                 <div class="k-dropzone">
                                     <div class="k-button k-upload-button">
-                                        <input> <span>Select files...</span>
+                                        <input />
+                                        <span>Select files...</span>
                                     </div>
+                                    <kendo-upload-status-total class="k-upload-status k-upload-status-total ng-star-inserted">
+                                        <span class="k-icon k-i-checkmark"></span>
+                                        Done
+                                    </kendo-upload-status-total>
                                     <div class="k-dropzone-hint">Drop files here to upload</div>
                                 </div>
+                                <ul class="k-upload-files k-reset ng-star-inserted">
+                                    <li class="k-file ng-star-inserted k-file-success">
+                                        <kendo-upload-file-list-single-item class="k-file-single ng-tns-c0-0 ng-star-inserted">
+                                            <div class="k-progressbar ng-trigger ng-trigger-progressState" style="opacity: 0;">
+                                                <span class="k-progress" style="width: 100%;"></span>
+                                            </div>
+                                            <span class="k-file-group-wrapper">
+                                                <span class="k-file-group k-icon k-i-file-pdf"></span>
+                                            </span>
+                                            <span class="k-file-name-size-wrapper">
+                                                <span class="k-file-name ng-tns-c0-0 ng-star-inserted">test long long long long long long long long long long long long long.pdf</span>
+                                                <span class="ng-tns-c0-0 ng-star-inserted k-text-success k-file-information">File successfully uploaded.</span>
+                                            </span>
+                                            <kendo-upload-file-list-item-action-button class="ng-tns-c0-0">
+                                                <strong class="k-upload-status">
+                                                    <button class="k-button k-button-icon k-flat k-upload-action ng-star-inserted">
+                                                        <span class="k-icon k-delete k-i-x"></span>
+                                                    </button>
+                                                </strong>
+                                            </kendo-upload-file-list-item-action-button>
+                                        </kendo-upload-file-list-single-item>
+                                    </li>
+                                </ul>
                             </kendo-upload>
                         </div>
                     </div>

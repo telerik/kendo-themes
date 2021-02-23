@@ -170,13 +170,39 @@
 
                 <div class="k-form-field">
                     <label class="k-label">Upload</label>
-                    <div class="k-widget k-upload k-header">
+                    <div class="k-widget k-upload">
                         <div class="k-dropzone">
-                            <div class="k-button k-upload-button">
-                                <input /><span>Select files...</span>
+                            <div role="button" class="k-button k-upload-button">
+                                <input />
+                                <span>Select files...</span>
                             </div>
-                            <div class="k-dropzone-hint">Drop files here to upload</div>
+                            <div class="k-upload-status k-upload-status-total">
+                                <span class="k-i-checkmark k-icon"></span>
+                                Done
+                            </div>
                         </div>
+                        <ul class="k-upload-files k-reset">
+                            <li class="k-file k-file-success">
+                                <div class="k-file-single">
+                                    <div class="k-progressbar" style="transition: opacity 1s ease-in-out 0s; opacity: 0;">
+                                        <span class="k-progress" style="width: 100%;"></span>
+                                    </div>
+                                    <span class="k-file-group-wrapper">
+                                        <span class="k-file-group k-icon k-i-file-pdf"></span>
+                                        <span class="k-file-state"></span>
+                                    </span>
+                                    <span class="k-file-name-size-wrapper">
+                                        <span class="k-file-name">test long long long long long long long long long long long long long.pdf</span>
+                                        <span class="k-file-validation-message k-text-success">File(s) successfully uploaded.</span>
+                                    </span>
+                                    <strong class="k-upload-status">
+                                        <button type="button" class="k-button k-button-icon k-flat k-upload-action">
+                                            <span class="k-icon k-delete k-i-x"></span>
+                                        </button>
+                                    </strong>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -365,13 +391,39 @@
                 <div class="k-form-field">
                     <label class="k-label">Upload</label>
                     <div class="k-form-field-wrap">
-                        <div class="k-widget k-upload k-header">
+                        <div class="k-widget k-upload">
                             <div class="k-dropzone">
-                                <div class="k-button k-upload-button">
-                                    <input /><span>Select files...</span>
+                                <div role="button" class="k-button k-upload-button">
+                                    <input />
+                                    <span>Select files...</span>
                                 </div>
-                                <div class="k-dropzone-hint">Drop files here to upload</div>
+                                <div class="k-upload-status k-upload-status-total">
+                                    <span class="k-i-checkmark k-icon"></span>
+                                    Done
+                                </div>
                             </div>
+                            <ul class="k-upload-files k-reset">
+                                <li class="k-file k-file-success">
+                                    <div class="k-file-single">
+                                        <div class="k-progressbar" style="transition: opacity 1s ease-in-out 0s; opacity: 0;">
+                                            <span class="k-progress" style="width: 100%;"></span>
+                                        </div>
+                                        <span class="k-file-group-wrapper">
+                                            <span class="k-file-group k-icon k-i-file-pdf"></span>
+                                            <span class="k-file-state"></span>
+                                        </span>
+                                        <span class="k-file-name-size-wrapper">
+                                            <span class="k-file-name">test long long long long long long long long long long long long long.pdf</span>
+                                            <span class="k-file-validation-message k-text-success">File(s) successfully uploaded.</span>
+                                        </span>
+                                        <strong class="k-upload-status">
+                                            <button type="button" class="k-button k-button-icon k-flat k-upload-action">
+                                                <span class="k-icon k-delete k-i-x"></span>
+                                            </button>
+                                        </strong>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
