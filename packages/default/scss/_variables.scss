@@ -292,7 +292,7 @@ $body-text: $text-color !default;
 
 $subtle-text: try-tint( $body-text, 3 );
 
-$app-bg: lighten($base-bg, 1%) !default;
+$app-bg: try-shade( $body-bg, .25 ) !default;
 $app-text: $body-text !default;
 $app-border: $border-color !default;
 
