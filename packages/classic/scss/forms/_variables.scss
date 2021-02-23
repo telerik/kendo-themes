@@ -37,6 +37,8 @@ $horizontal-form-label-margin-x: 10px !default;
 $horizontal-form-label-width: 25% !default;
 $horizontal-form-label-align: flex-end !default;
 
+$horizontal-form-field-wrap-max-width: calc( ( 100% - #{$horizontal-form-label-width} ) - #{$horizontal-form-label-margin-x} ) !default;
+
 $inline-form-element-width: 25% !default;
 
 $forms-invalid-color: $error !default;
