@@ -9,7 +9,7 @@ $popup-line-height: $line-height !default;
 
 $popup-header-padding: $padding-y-lg $padding-x-lg !default;
 $popup-header-font-size: $font-size-sm !default;
-$popup-header-text: rgba($base-text, .54) !default;
+$popup-header-text: $subtle-text !default;
 $popup-filter-padding-x: $padding-x;
 
 $popup-content-padding-x: map-get( $spacing, 2 ) !default;
