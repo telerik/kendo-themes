@@ -1,1 +1,18 @@
 @import "~@progress/kendo-theme-default/scss/breadcrumb/_theme.scss";
+
+@include exports( "breadcrumb/theme/bootstrap" ) {
+
+    // Current page (last item)
+    .k-breadcrumb-last-item {
+
+        .k-breadcrumb-link {
+            color: $breadcrumb-active-color;
+        }
+
+        .k-state-disabled {
+            opacity: 1;
+            filter: none;
+        }
+    }
+
+}
