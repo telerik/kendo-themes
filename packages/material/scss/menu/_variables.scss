@@ -36,7 +36,7 @@ $menu-item-focus-shadow: null !default;
 $menu-separator-spacing: 2px !default;
 
 $menu-scroll-button-bg: $component-bg !default;
-$menu-scroll-button-text: rgba( $menu-text, $icon-opacity ) !default;
+$menu-scroll-button-text: $subtle-text !default;
 $menu-scroll-button-border: transparent !default;
 $menu-scroll-button-gradient: null !default;
 
