@@ -27,29 +27,31 @@ $breadcrumb-icon-link-padding-y: $breadcrumb-icon-link-padding-x !default;
 $breadcrumb-root-link-spacing: $breadcrumb-link-padding-x !default;
 $breadcrumb-link-icon-spacing: $icon-spacing !default;
 
-$breadcrumb-link-text: $link-text !default;
+$breadcrumb-link-initial-text: inherit !default;
+
 $breadcrumb-link-bg: null !default;
+$breadcrumb-link-text: $link-text !default;
 $breadcrumb-link-border: null !default;
 
-$breadcrumb-link-hovered-text: $link-hover-text !default;
 $breadcrumb-link-hovered-bg: $base-bg !default;
+$breadcrumb-link-hovered-text: $link-hover-text !default;
 $breadcrumb-link-hovered-border: null !default;
 
-$breadcrumb-link-focused-text: $link-text !default;
 $breadcrumb-link-focused-bg: null !default;
+$breadcrumb-link-focused-text: $link-text !default;
 $breadcrumb-link-focused-border: null !default;
 $breadcrumb-link-focused-shadow: $focused-shadow !default;
 
-$breadcrumb-root-link-text: inherit !default;
 $breadcrumb-root-link-bg: null !default;
+$breadcrumb-root-link-text: null !default;
 $breadcrumb-root-link-border: null !default;
 
-$breadcrumb-root-link-hovered-text: null !default;
 $breadcrumb-root-link-hovered-bg: $base-bg !default;
+$breadcrumb-root-link-hovered-text: null !default;
 $breadcrumb-root-link-hovered-border: null !default;
 
-$breadcrumb-root-link-focused-text: null !default;
 $breadcrumb-root-link-focused-bg: null !default;
+$breadcrumb-root-link-focused-text: null !default;
 $breadcrumb-root-link-focused-border: null !default;
 $breadcrumb-root-link-focused-shadow: $breadcrumb-link-focused-shadow !default;
 

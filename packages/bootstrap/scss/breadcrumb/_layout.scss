@@ -1,1 +1,16 @@
 @import "~@progress/kendo-theme-default/scss/breadcrumb/_layout.scss";
+
+@include exports( "breadcrumb/layout/bootstrap" ) {
+
+
+    // Breadcrumb links
+    .k-breadcrumb-link,
+    .k-breadcrumb-root-link {
+        text-decoration: $link-decoration;
+
+        &:hover,
+        &.k-state-hover {
+            text-decoration: $link-hover-decoration;
+        }
+    }
+}

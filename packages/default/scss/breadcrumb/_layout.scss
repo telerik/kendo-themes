@@ -15,94 +15,105 @@
         flex-direction: row;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
+    }
 
-        // Items
-        .k-breadcrumb-container {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            overflow: hidden;
 
-            &.k-flex-wrap {
-                flex-wrap: wrap;
-            }
+    // Breadcrumb container
+    .k-breadcrumb-container,
+    .k-breadcrumb-root-item-container {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        overflow: hidden;
+    }
+
+    .k-breadcrumb-container {
+
+        &.k-flex-wrap {
+            flex-wrap: wrap;
         }
+    }
+    .k-breadcrumb-root-item-container {
+        align-items: flex-start;
+        flex-shrink: 0;
+    }
 
-        .k-breadcrumb-item {
-            vertical-align: middle;
-            display: inline-flex;
-            flex-direction: row;
-            align-items: center;
-            overflow: hidden;
-        }
 
-        .k-breadcrumb-root-item {
-            flex: 1 0 auto;
+    // Breadcrumb item
+    .k-breadcrumb-item {
+        vertical-align: middle;
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        overflow: hidden;
+    }
 
-            &.k-flex-none {
-                flex: none;
-            }
-        }
 
-        .k-breadcrumb-link,
-        .k-breadcrumb-root-link {
-            @include border-radius( $breadcrumb-link-border-radius );
-            padding: $breadcrumb-link-padding-y $breadcrumb-link-padding-x;
-            position: relative;
-            display: inline-flex;
-            align-items: center;
-            align-self: stretch;
-            overflow: hidden;
-            white-space: nowrap;
-            text-decoration: none;
-            outline: none;
-        }
+    // Breadcrumb root item
+    .k-breadcrumb-root-item {
+        flex-shrink: 0;
+    }
 
-        .k-breadcrumb-root-link {
-            margin-right: $breadcrumb-root-link-spacing;
-        }
 
-        .k-breadcrumb-link > .k-image,
-        .k-breadcrumb-icontext-link .k-icon {
-            margin-right: $breadcrumb-link-icon-spacing;
-        }
+    // Breadcrumb links
+    .k-breadcrumb-link,
+    .k-breadcrumb-root-link {
+        @include border-radius( $breadcrumb-link-border-radius );
+        padding: $breadcrumb-link-padding-y $breadcrumb-link-padding-x;
+        color: $breadcrumb-link-initial-text;
+        text-decoration: none;
+        white-space: nowrap;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        align-self: stretch;
+        overflow: hidden;
+        transition: $transition;
+    }
 
-        .k-breadcrumb-icon-link {
-            padding: $breadcrumb-icon-link-padding-y $breadcrumb-icon-link-padding-x;
-        }
+    .k-breadcrumb-root-link {
+        margin-right: $breadcrumb-root-link-spacing;
+    }
 
-        .k-breadcrumb-delimiter-icon {
-            font-size: $breadcrumb-delimiter-icon-font-size;
-            opacity: $disabled-opacity;
-        }
+    .k-breadcrumb-link > .k-image,
+    .k-breadcrumb-icontext-link .k-icon {
+        margin-right: $breadcrumb-link-icon-spacing;
+    }
 
-        // Editing
+    .k-breadcrumb-icon-link {
+        padding: $breadcrumb-icon-link-padding-y $breadcrumb-icon-link-padding-x;
+    }
+
+
+    // Breadcrumb delimiter
+    .k-breadcrumb-delimiter,
+    .k-breadcrumb-delimiter-icon {
+        color: inherit;
+        font-size: $breadcrumb-delimiter-icon-font-size;
+        opacity: $disabled-opacity;
+    }
+
+
+    // Editing
+    .k-breadcrumb-input-container {
+        width: 100%;
+
         .k-breadcrumb-input-container {
-            width: 100%;
+            border-color: transparent;
         }
 
         .k-textbox {
             width: 100%;
             height: 100%;
         }
-
-        &.k-breadcrumb-wrap {
-            .k-breadcrumb-root-item-container {
-                margin: 0;
-                padding: 0;
-                list-style: none;
-                overflow: hidden;
-
-                display: flex;
-                align-items: flex-start;
-                flex: 0 0 auto;
-            }
-        }
     }
 
+
+    // Legacy
     .k-ie9 {
         .k-breadcrumb,
         .k-breadcrumb-container {
