@@ -118,14 +118,14 @@
             @include box-shadow( none );
         }
 
-        > .k-button:last-child .k-icon,
-        > .k-split-button-arrow .k-icon {
-            opacity: $icon-opacity;
+        > .k-button:last-child,
+        > .k-split-button-arrow {
+            color: $subtle-text;
         }
 
-        > .k-button:last-child:hover .k-icon,
-        > .k-split-button-arrow:hover .k-icon {
-            opacity: $icon-hovered-opacity;
+        > .k-button:last-child:hover,
+        > .k-split-button-arrow:hover {
+            color: $button-text;
         }
 
         &:disabled,
