@@ -2,35 +2,35 @@
 
     .k-form,
     .k-form-inline {
-        @include fill ( $color: $body-text );
+        @include fill( $color: $body-text );
 
         fieldset {
             legend {
-                @include fill ( $color: $fieldset-legend-text );
+                @include fill( $color: $fieldset-legend-text );
             }
         }
 
         .k-form-legend {
-            @include fill ( $border: $form-legend-border-color );
+            @include fill( $border: $form-legend-border-color );
         }
 
         .k-field-info {
-            @include fill ( $color: lighten($body-text, 33%) );
+            @include fill( $color: $subtle-text );
         }
 
         .k-alert-error {
-            @include fill ( $color: $error );
+            @include fill( $color: $error );
         }
     }
 
     .k-form-error,
     .k-text-error,
     .k-form-field-error .k-label {
-        @include fill ( $color: $error );
+        @include fill( $color: $error );
     }
 
     .k-form-separator {
-        @include fill ( $border: $form-separator-border-color );
+        @include fill( $border: $form-separator-border-color );
     }
 
 }
