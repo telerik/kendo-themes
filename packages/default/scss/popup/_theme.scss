@@ -39,10 +39,10 @@
         border-color: $grouping-header-bg transparent transparent $grouping-header-bg;
     }
     .k-group-header+div > .k-list > .k-item.k-first::before {
-        border-color: $grouping-border;
+        border-color: $grouping-header-border;
     }
     .k-list > .k-outer-group-header {
-        border-color: $grouping-border;
+        border-color: $grouping-header-border;
     }
     .k-popup > .k-colorpalette,
     .k-popup > .k-flatcolorpicker {

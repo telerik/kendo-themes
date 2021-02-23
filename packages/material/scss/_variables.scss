@@ -379,8 +379,8 @@ $panel-border: $component-border !default;
 
 // Grouping
 $grouping-header-bg: $component-border !default;
-$grouping-header-text: rgba($base-text, .54) !default;
-$grouping-border: $grouping-header-bg !default;
+$grouping-header-text: $subtle-text !default;
+$grouping-header-border: $grouping-header-bg !default;
 $frozen-grouping-header-text: null !default;
 $frozen-grouping-header-border-width: null !default;
 
