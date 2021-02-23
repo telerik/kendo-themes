@@ -42,7 +42,7 @@
 
             .k-rating-precision-part,
             .k-rating-precision-complement {
-                display: inline-block;
+                display: inherit;
                 position: absolute;
                 top: $rating-item-padding-y;
                 left: $rating-item-padding-x;
@@ -51,6 +51,10 @@
 
             .k-rating-precision-complement {
                 direction: rtl;
+            }
+
+            svg {
+                fill: currentColor;
             }
         }
     }

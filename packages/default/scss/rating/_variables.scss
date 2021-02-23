@@ -14,10 +14,10 @@ $rating-label-line-height: $line-height-lg !default;
 
 $rating-icon-size: ($icon-size * 1.5) !default;
 
-$rating-icon-text: lighten($base-text, 45%) !default;
+$rating-icon-text: $subtle-text !default;
 $rating-icon-selected-text: $selected-bg !default;
 $rating-icon-hover-text: $selected-bg !default;
 $rating-icon-focused-text: $selected-bg !default;
 
-$rating-icon-focused-shadow: 0 2px 3.6px rgba(black, .1) !default;
-$rating-icon-focused-selected-shadow: 0 2px 3.6px rgba($selected-bg, .4) !default;
+$rating-icon-focused-shadow: 0 2px 4px rgba( $black, .1 ) !default;
+$rating-icon-focused-selected-shadow: 0 2px 4px rgba( $black, .1) !default;
