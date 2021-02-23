@@ -14,60 +14,40 @@
             }
 
             .k-button {
-                min-height: $form-line-height-em;
+                margin: ($input-padding-y / 2) ($input-padding-y / 2) 0 0;
                 padding-top: 0;
                 padding-bottom: 0;
+                min-height: $form-line-height-em;
+                border-radius: 5em;
                 font-size: .75em;
                 line-height: $form-line-height;
-                border-radius: $form-line-height-em;
                 text-transform: none;
-                margin: ($input-padding-y / 2) ($input-padding-y / 2) 0 0;
 
                 &::before {
-                    border-radius: $form-line-height-em;
-                    opacity: $multiselect-token-opacity;
+                    display: none;
                 }
 
                 .k-select {
-                    border-radius: 50%;
                     margin-left: .5em;
                     margin-right: -.2em;
-                    align-self: unset;
+                    border-radius: 50%;
 
                     .k-icon {
-                        font-size: $font-size-sm;
-                        padding: calc( #{$font-size} - #{$font-size-sm} );
-                        box-sizing: content-box;
+                        opacity: 1;
+                        transform: scale(.75);
                     }
                 }
 
                 &:last-child {
                     margin-bottom: $input-padding-y / 2;
                 }
-
-                // Fix vertical centering icon
-                .k-icon {
-                    &.k-i-arrow-60-down {
-                        line-height: 1.2;
-
-                        .k-edge &,
-                        .k-state-border-down & {
-                            line-height: initial;
-                        }
-                    }
-                }
-            }
-
-            // Disabled
-            &.k-state-disabled {
-                border-bottom-style: dashed;
             }
         }
 
-        &.k-state-disabled {
-            > .k-multiselect-wrap {
-                border-bottom-style: dashed;
-            }
+        // Disabled
+        &.k-state-disabled > .k-multiselect-wrap,
+        .k-multiselect-wrap.k-state-disabled {
+            border-bottom-style: dashed;
         }
 
         &[dir="rtl"],

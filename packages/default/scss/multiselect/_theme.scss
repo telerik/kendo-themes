@@ -42,7 +42,7 @@
             }
 
 
-            li {
+            .k-button {
                 .k-icon {
                     opacity: .6;
                 }
@@ -51,8 +51,8 @@
                     opacity: 1;
                 }
 
-                &.k-button:active,
-                &.k-button.k-state-active {
+                &:active,
+                &.k-state-active {
                     @include fill(
                         $multiselect-button-focused-text,
                         $multiselect-button-focused-bg,

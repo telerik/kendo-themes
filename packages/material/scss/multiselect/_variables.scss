@@ -1,20 +1,6 @@
 // Multiselect
 $multiselect-width: 100% !default;
 
-$multiselect-token-opacity: .07 !default;
-$multiselect-token-focused-opacity: .46 !default;
-$multiselect-token-focused-text: $base-bg !default;
-$multiselect-token-focused-bg: $base-text !default;
-$multiselect-token-disabled-text: rgba( $base-text, .42 ) !default;
-$multiselect-token-hover-text: $base-bg !default;
-$multiselect-token-hover-bg: rgba( $base-text, .54 ) !default;
-$multiselect-remove-text: $base-bg !default;
-$multiselect-remove-bg: rgba( $base-text, .4 ) !default;
-$multiselect-remove-hover-text: $multiselect-remove-text !default;
-$multiselect-remove-hover-bg: rgba( $base-text, .54 ) !default;
-$multiselect-remove-focused-text: rgba( $base-text, .54 ) !default;
-$multiselect-remove-focused-bg: rgba($base-bg, .93) !default;
-
 $multiselect-bg: $input-bg !default;
 $multiselect-text: $input-text !default;
 $multiselect-border: $input-border !default;
@@ -33,3 +19,25 @@ $multiselect-button-focused-text: $button-pressed-text !default;
 $multiselect-button-focused-border: $button-pressed-border !default;
 $multiselect-button-focused-gradient: $button-pressed-gradient !default;
 $multiselect-button-focused-shadow: $button-pressed-shadow !default;
+
+
+// Tokens
+// TODO: remove once we use chips
+$multiselect-token-bg: $chip-filled-bg !default;
+$multiselect-token-text: $chip-filled-text !default;
+$multiselect-token-border: $chip-filled-border !default;
+
+$multiselect-token-hover-bg: $chip-filled-hovered-bg !default;
+$multiselect-token-hover-text: null !default;
+$multiselect-token-hover-border: null !default;
+
+$multiselect-token-focus-bg: $chip-filled-focused-bg !default;
+$multiselect-token-focus-text: null !default;
+$multiselect-token-focus-border: null !default;
+
+$multiselect-token-selected-bg: $chip-filled-selected-bg !default;
+$multiselect-token-selected-text: null !default;
+$multiselect-token-selected-border: null !default;
+
+$multiselect-remove-token-text: $subtle-text !default;
+$multiselect-remove-token-hover-text: $body-text !default;

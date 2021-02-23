@@ -1,116 +1,46 @@
-@include exports("multiselect/theme") {
+@import "~@progress/kendo-theme-default/scss/multiselect/_theme.scss";
+
+@include exports( "multiselect/theme/material" ) {
 
     .k-multiselect {
-        @extend .k-text-selection !optional;
-        color: $multiselect-text;
-
-        &.k-state-focused {
-            > .k-multiselect-wrap {
-                border-color: $multiselect-focused-border;
-
-                .k-select {
-                    opacity: $icon-focused-opacity;
-                }
-            }
-        }
 
         .k-multiselect-wrap {
-            background-color: transparent;
-            border-color: $multiselect-border;
-
-            .k-input {
-                color: $multiselect-text;
-            }
-
-            .k-select {
-                opacity: $icon-opacity;
-            }
-
-            > .k-readonly {
-                opacity: .6;
-            }
 
             .k-button {
-                box-shadow: none;
-                background: transparent;
+                @include fill(
+                    $multiselect-token-text,
+                    $multiselect-token-bg,
+                    $multiselect-token-border
+                );
+                @include box-shadow( none );
 
-                // focused state
-                &.k-state-focused,
-                &:focus {
-                    color: $multiselect-token-focused-text;
-                    background: $multiselect-token-focused-bg;
-
-                    &::before {
-                        opacity: $multiselect-token-focused-opacity;
-                    }
-
-                    .k-select {
-                        color: $multiselect-remove-focused-text;
-                        background: $multiselect-remove-focused-bg;
-                    }
+                // Hover state
+                &:hover,
+                &.k-state-hover {
+                    @include fill(
+                        $multiselect-token-hover-text,
+                        $multiselect-token-hover-bg,
+                        $multiselect-token-hover-border
+                    );
                 }
 
-                // hover state
-                &.k-state-hover,
-                &:hover {
-                    color: $multiselect-token-hover-text;
-                    background-color: $multiselect-token-hover-bg;
-
-                    .k-select {
-                        color: $multiselect-token-hover-bg;
-                        background: $multiselect-token-hover-text;
-                    }
-                }
-
-                // Disabled state
-                &.k-state-disabled {
-                    color: $multiselect-token-disabled-text;
+                // Focus state
+                &:focus,
+                &.k-state-focused {
+                    @include fill(
+                        $multiselect-token-focus-text,
+                        $multiselect-token-focus-bg,
+                        $multiselect-token-focus-border
+                    );
                 }
 
                 .k-select {
-                    background-color: $multiselect-remove-bg;
-                    color: $multiselect-remove-text;
+                    color: $multiselect-remove-token-text;
 
                     &:hover {
-                        background-color: $multiselect-remove-hover-bg;
-                        color: $multiselect-remove-hover-text;
+                        color: $multiselect-remove-token-hover-text;
                     }
                 }
-            }
-
-            // Hover
-            &:hover,
-            &.k-state-hover {
-                border-color: $multiselect-hovered-border;
-
-                .k-select {
-                    opacity: $icon-hovered-opacity;
-                }
-            }
-
-            // Invalid state
-            &.k-invalid,
-            &.k-invalid:hover,
-            &.k-state-invalid {
-                border-color: $invalid-border;
-            }
-
-            // Focused
-            &.k-state-focused {
-                border-color: $multiselect-focused-border;
-
-                .k-select {
-                    opacity: $icon-focused-opacity;
-                }
-            }
-        }
-
-        // Invalid
-        &.k-state-invalid,
-        &.ng-invalid.ng-touched,
-        &.ng-invalid.ng-dirty {
-            .k-multiselect-wrap {
-                border-color: $invalid-border;
             }
         }
     }
