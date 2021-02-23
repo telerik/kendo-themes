@@ -1,46 +1,76 @@
 @import "~@progress/kendo-theme-default/scss/chip/_theme.scss";
 
 @include exports( "chip/theme/material" ) {
+
+    // Single selection
     .k-selection-single {
-        .k-chip-selected.k-chip-outline {
-            .k-chip-icon,
+        .k-chip-selected {
             .k-remove-icon {
-                color: rgba($chip-outline-single-selected-text, $icon-opacity);
+                color: rgba( $chip-outline-single-selected-text, .87 );
             }
         }
     }
 
-    .k-chip-outline {
-        .k-chip-icon,
+    // Chip solid
+    .k-chip-solid,
+    .k-chip-filled {
         .k-remove-icon {
-            color: rgba($chip-outline-text, $icon-opacity);
+            color: $subtle-text;
+        }
+
+        &.k-chip-info {
+            .k-remove-icon {
+                color: rgba( $chip-outline-info-text, .87 );
+            }
         }
 
         &.k-chip-success {
-            .k-chip-icon,
             .k-remove-icon {
-                color: rgba($chip-outline-success-text, $icon-opacity);
+                color: rgba( $chip-outline-success-text, .87 );
             }
         }
 
         &.k-chip-warning {
-            .k-chip-icon,
             .k-remove-icon {
-                color: rgba($chip-outline-warning-text, $icon-opacity);
+                color: rgba( $chip-outline-warning-text, .87 );
             }
         }
 
         &.k-chip-error {
-            .k-chip-icon,
             .k-remove-icon {
-                color: rgba($chip-outline-error-text, $icon-opacity);
+                color: rgba( $chip-outline-error-text, .87 );
             }
+        }
+    }
+
+
+    // Chip outline
+    .k-chip-outline {
+        .k-remove-icon {
+            color: $subtle-text;
         }
 
         &.k-chip-info {
-            .k-chip-icon,
             .k-remove-icon {
-                color: rgba($chip-outline-info-text, $icon-opacity);
+                color: rgba( $chip-outline-info-text, .87 );
+            }
+        }
+
+        &.k-chip-success {
+            .k-remove-icon {
+                color: rgba( $chip-outline-success-text, .87 );
+            }
+        }
+
+        &.k-chip-warning {
+            .k-remove-icon {
+                color: rgba( $chip-outline-warning-text, .87 );
+            }
+        }
+
+        &.k-chip-error {
+            .k-remove-icon {
+                color: rgba( $chip-outline-error-text, .87 );
             }
         }
     }
