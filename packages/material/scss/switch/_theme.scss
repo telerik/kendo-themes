@@ -1,1 +1,17 @@
 @import "~@progress/kendo-theme-default/scss/switch/_theme.scss";
+
+@include exports( "switch/theme/material" ) {
+
+    // Switch
+    .k-switch {
+
+        // Thumb ripple
+        &.k-switch-on .k-switch-handle::before {
+            background-color: inherit;
+        }
+        &.k-switch-off .k-switch-handle::before {
+            background-color: if( $is-dark-theme == true, $white, $black );
+        }
+    }
+
+}

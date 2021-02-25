@@ -4,12 +4,9 @@
         @include border-radius( $switch-border-radius );
         cursor: pointer;
         width: $switch-size;
-        background: none;
-        border: 0;
         box-sizing: border-box;
         outline: 0;
         display: inline-flex;
-        overflow: hidden;
         vertical-align: middle;
         font-family: $font-family;
         font-size: $font-size-xs;
@@ -22,10 +19,6 @@
         [type="checkbox"] {
             display: none;
         }
-
-        .k-ie & {
-            display: inline-block;
-        }
     }
 
     .k-switch,
@@ -34,110 +27,107 @@
         box-sizing: border-box;
     }
 
+
+    // Switch track
     .k-switch-container {
         @include border-radius( $switch-border-radius );
         padding: $switch-container-padding-y $switch-container-padding-x;
         width: $switch-size;
+        height: $switch-track-size;
         border-width: $switch-container-border-width;
-        border-style: solid;
+        border-style: if( $switch-container-border-width == null, null, solid );
         flex: 1 0 auto;
         position: relative;
         outline: 0;
         transition: background-color 200ms ease-out 0s;
-
-        .k-ie & {
-            display: block;
-        }
     }
 
+
+    // Switch thumb
     .k-switch-handle {
         @include border-radius( $switch-handle-border-radius );
         width: $switch-handle-size;
         height: $switch-handle-size;
         border-width: $switch-handle-border-width;
-        border-style: solid;
+        border-style: if( $switch-handle-border-width == null, null, solid );
         display: inline-block;
         vertical-align: middle;
         position: relative;
         left: 0;
         transition: left 200ms ease-out 0s;
 
-        .k-ie & {
-            display: block;
+        @if $switch-track-size {
+            position: absolute;
+            top: 50%;
+            transform: translateY( -50% );
         }
+
     }
+    .k-switch-on .k-switch-handle { left: $switch-thumb-end-x; }
+    .k-switch-off .k-switch-handle { left: $switch-thumb-start-x; }
 
-    .k-switch-on .k-switch-handle {
-        left: $switch-on-left-x;
 
-        .k-ie &,
-        .k-edge & {
-            left: 100%;
-            margin-left: -$switch-handle-size;
-        }
-    }
-
-    .k-switch-off .k-switch-handle {
-        left: 0;
-    }
-
+    // Switch label
     .k-switch-label-on,
     .k-switch-label-off {
         display: $switch-label-display;
-        width: $switch-label-width;
+        max-width: $switch-label-width;
+        text-transform: $switch-label-text-transform;
+        line-height: $switch-handle-size;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        text-transform: $switch-label-text-transform;
-        line-height: $switch-handle-size;
         overflow: hidden;
     }
+    .k-switch-label-on { left: $switch-label-offset; }
+    .k-switch-label-off { right: $switch-label-offset; }
 
-    .k-switch-label-on {
-        text-align: left;
-        left: $switch-label-position;
-    }
 
-    .k-switch-label-off {
-        text-align: right;
-        right: $switch-label-position;
-    }
-
-    @if $switch-track-size {
-
-        .k-switch {
-            overflow: visible;
-        }
-
-        .k-switch-container {
-            height: $switch-track-size;
-        }
-
-        .k-switch-handle {
-            top: calc( #{$switch-track-size / 2} - #{$switch-handle-size / 2} - #{$switch-container-border-width} );
-        }
-
-    }
-
+    // RTL
     .k-rtl .k-switch,
     .k-switch[dir = "rtl"] {
         &.k-switch-on .k-switch-handle {
-            left: 0;
+            left: $switch-thumb-start-x;
         }
 
         &.k-switch-off .k-switch-handle {
-            left: $switch-on-left-x;
+            left: $switch-thumb-end-x;
         }
+
         .k-switch-label-on {
-            text-align: right;
             left: initial;
-            right: $switch-label-position;
+            right: $switch-label-offset;
         }
         .k-switch-label-off {
-            text-align: left;
-            left: $switch-label-position;
+            left: $switch-label-offset;
             right: initial;
         }
+    }
+
+}
+
+
+
+
+@include exports( "switch/layout/legacy" ) {
+
+    .k-ie9 {
+
+        // Switch
+        .k-switch {
+            display: inline-block;
+        }
+
+        // Switch track
+        .k-switch-container {
+            display: block;
+        }
+
+        // Switch thumb
+        .k-switch-handle {
+            display: block;
+        }
+
     }
 
 }
