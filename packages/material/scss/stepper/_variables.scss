@@ -16,7 +16,7 @@ $stepper-line-height: (20 / 14) !default;
 $stepper-font-family: $font-family !default;
 
 $stepper-bg: null !default;
-$stepper-text: null !default;
+$stepper-text: $component-text !default;
 $stepper-border: null !default;
 
 $stepper-indicator-width: 28px !default;
@@ -37,9 +37,9 @@ $stepper-indicator-hover-bg: try-shade( $stepper-indicator-bg ) !default;
 $stepper-indicator-hover-text: null !default;
 $stepper-indicator-hover-border: null !default;
 
-$stepper-indicator-disabled-bg: $stepper-indicator-bg !default;
-$stepper-indicator-disabled-text: mix($stepper-indicator-text, #ffffff, 60%) !default;
-$stepper-indicator-disabled-border: $stepper-indicator-border !default;
+$stepper-indicator-disabled-bg: null !default;
+$stepper-indicator-disabled-text: $disabled-text !default;
+$stepper-indicator-disabled-border: null !default;
 
 $stepper-indicator-done-bg: $primary !default;
 $stepper-indicator-done-text: contrast-wcag( $stepper-indicator-done-bg ) !default;
@@ -65,14 +65,16 @@ $stepper-indicator-current-disabled-bg: $stepper-indicator-done-disabled-bg !def
 $stepper-indicator-current-disabled-text: $stepper-indicator-done-disabled-text !default;
 $stepper-indicator-current-disabled-border: $stepper-indicator-done-disabled-border !default;
 
-$stepper-label-text: $component-text !default;
+$stepper-label-text: null !default;
 $stepper-label-success-text: $success !default;
 $stepper-label-error-text: $error !default;
-$stepper-label-hover-text: darken($body-text, 13%) !default;
-$stepper-label-disabled-text: mix($component-text, #ffffff, 60%) !default;
+$stepper-label-hover-text: null !default;
+$stepper-label-disabled-text: map-get( $theme, disabled-text ) !default;
 
-$stepper-optional-label-opacity: .35 !default;
-$stepper-disabled-opacity: .6 !default;
+$stepper-optional-label-text: $subtle-text !default;
+$stepper-optional-label-opacity: null !default;
+$stepper-optional-label-font-size: $font-size-sm !default;
+$stepper-optional-label-font-style: null !default;
 
 $stepper-progressbar-size: 2px !default;
 $stepper-progressbar-bg: null !default;

@@ -37,6 +37,7 @@
         // Step link
         .k-step-link {
             outline: none;
+            color: inherit;
             text-decoration: none;
             white-space: nowrap;
             display: flex;
@@ -120,9 +121,17 @@
             font-weight: bold;
         }
 
-        .k-step-label .k-step-label-optional {
-            font-style: italic;
+
+        // Optional label
+        .k-step-label-optional {
             flex-basis: 100%;
+            font-size: $stepper-optional-label-font-size;
+            font-style: $stepper-optional-label-font-style;
+            opacity: $stepper-optional-label-opacity;
+        }
+        .k-step-disabled .k-step-label-optional,
+        &.k-state-disabled .k-step-label-optional {
+            color: inherit;
         }
 
         // Progressbar
