@@ -1,1 +1,42 @@
 @import "~@progress/kendo-theme-default/scss/switch/_layout.scss";
+
+@include exports( "switch/layout/material" ) {
+
+    // Switch
+    .k-switch {
+
+        // Thumb ripple
+        .k-switch-handle::before {
+            content: "";
+            width: 200%;
+            height: 200%;
+            border-radius: 100%;
+            display: none;
+            opacity: 0;
+            transform: translate( -50%, -50% );
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            pointer-events: none;
+        }
+
+        // Hover state
+        &:hover,
+        &.k-state-hover {
+            .k-switch-handle::before {
+                display: block;
+                opacity: .04;
+            }
+        }
+
+        // Focus state
+        &:focus,
+        &.k-state-focused {
+            .k-switch-handle::before {
+                display: block;
+                opacity: .12;
+            }
+        }
+    }
+}
