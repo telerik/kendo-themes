@@ -171,8 +171,8 @@
         }
 
         // Optional Label
-        .k-step-optional .k-step-label-optional {
-            opacity: $stepper-optional-label-opacity;
+        .k-step-label-optional {
+            color: $stepper-optional-label-text;
         }
 
         // Progressbar
