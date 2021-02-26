@@ -32,4 +32,4 @@ $pdf-viewer-search-dialog-matches-width: 4.5em !default;
 
 $pdf-viewer-selection-line-height: $line-height-sm !default;
 
-$pdf-viewer-search-highlight-bg: try-darken($base-bg, 70% ) !default;
+$pdf-viewer-search-highlight-bg: $body-text !default;
