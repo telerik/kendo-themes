@@ -8,11 +8,4 @@
         }
     }
 
-    .k-item.k-drag-clue {
-        // sass-lint:disable no-important
-        width: auto !important;
-        // sass-lint:enable no-important
-        opacity: $drag-clue-opacity;
-        @include border-radius( $drag-clue-border-radius );
-    }
 }

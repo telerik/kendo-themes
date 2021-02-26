@@ -64,10 +64,6 @@ $grid-footer-text: $grid-header-text !default;
 /// @group grid
 $grid-footer-border: $grid-header-border !default;
 
-$grid-group-drag-clue-bg: $grid-header-bg !default;
-$grid-group-drag-clue-text: $grid-header-text !default;
-$grid-group-drag-clue-line-height: $line-height !default;
-
 /// Background color of alternating rows in grid
 /// @group grid
 $grid-alt-bg: rgba( contrast-wcag( $grid-bg ), .04 ) !default;

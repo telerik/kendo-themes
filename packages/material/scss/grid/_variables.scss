@@ -107,10 +107,6 @@ $grid-sorting-index-spacing-x: -$grid-sorting-index-spacing-y;
 
 $grid-focused-shadow: $list-item-focused-shadow !default;
 
-$grid-group-drag-clue-bg: try-shade( $base-bg, 1 ) !default;
-$grid-group-drag-clue-text: $base-text !default;
-$grid-group-drag-clue-line-height: 1.5 !default;
-
 $grid-command-cell-button-spacing: .16em !default;
 
 $grid-search-width: $input-default-width !default;

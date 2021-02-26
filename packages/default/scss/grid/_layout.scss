@@ -6,7 +6,6 @@
     $grid-group-dropclue-line-size: $grid-group-dropclue-size / 3;
     $grid-group-dropclue-height: $button-calc-size !default;
     $grid-group-dropclue-top: 3px !default;
-    $grid-group-drag-clue-opacity: 1 !default;
 
     $edit-cell-input-space: calc(-#{$cell-padding} - #{$input-border-width}) !default;
     $edit-cell-textbox-width: calc(100% + ((#{$cell-padding} + #{$input-border-width}) * 2)) !default;
@@ -217,8 +216,7 @@
                 border-width: 0 0 0 $grid-cell-vertical-border-width;
             }
 
-            .k-group-indicator,
-            .k-drag-clue {
+            .k-group-indicator {
                 .k-button.k-bare {
                     margin-left: -( $icon-spacing / 2 );
                     margin-right: ( 2 * $icon-spacing );
@@ -422,39 +420,48 @@
 
     // Grouping header
     .k-grouping-header {
-        display: block;
-        position: relative;
-        white-space: normal;
         padding: $grid-grouping-header-padding-y $grid-grouping-header-padding-x;
         border-width: 0 0 1px;
         border-style: solid;
         border-color: inherit;
-        line-height: $button-calc-size;
+        white-space: normal;
+        flex-shrink: 0;
+        display: block;
+        position: relative;
+
+        &::before {
+            content: "";
+            height: $button-calc-size;
+            display: inline-block;
+            vertical-align: middle;
+        }
     }
 
     .k-grouping-header-flex {
         display: flex;
-        flex-shrink: 0;
-        flex-wrap: wrap;
-        // use item padding instead of margin, in order to position the reorder clue correctly
-        $header-half-padding-y: $grid-grouping-header-padding-y / 2;
-        padding: $header-half-padding-y 0;
+        flex-flow: row wrap;
+        align-items: center;
+        gap: $grid-grouping-header-padding-y;
 
-        > .k-indicator-container {
-            display: inline-flex;
+        &::before {
+            margin-left: -$grid-grouping-header-padding-y;
+        }
+
+        .k-group-indicator {
             margin: 0;
-            padding: $header-half-padding-y 0 $header-half-padding-y $grid-grouping-header-padding-x;
-
-            &:last-child {
-                display: block;
-                flex-grow: 1;
-                line-height: $button-calc-size;
-            }
         }
     }
 
-    .k-group-indicator,
-    .k-drag-clue {
+    // override for angular
+    kendo-grid .k-indicator-container {
+        margin: -$grid-grouping-header-padding-y 0;
+        padding: $grid-grouping-header-padding-y 0;
+    }
+    kendo-grid .k-indicator-container:last-child {
+        flex-grow: 1;
+    }
+
+    .k-group-indicator {
         @include border-radius( $grid-group-indicator-border-radius );
         margin: 0;
         padding: $button-padding-y $button-padding-x;
@@ -465,7 +472,6 @@
         align-items: center;
         align-content: center;
         vertical-align: top;
-        opacity: $grid-group-drag-clue-opacity;
         box-sizing: border-box;
 
         .k-link,
@@ -502,22 +508,10 @@
 
     .k-group-indicator {
         margin-right: ( $grid-group-indicator-gap / 2 );
-        line-height: $grid-group-drag-clue-line-height;
     }
 
     .k-group-indicator + .k-group-indicator {
         margin-left: ( $grid-group-indicator-gap / 2 );
-    }
-
-    .k-drag-clue {
-        font-size: $grid-font-size;
-        line-height: $grid-line-height;
-
-        .k-icon-with-modifier {
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-        }
     }
 
     .k-grouping-dropclue {
@@ -1088,10 +1082,6 @@
 
     .k-grid-header-sticky.k-header.k-grid-no-left-border.k-first {
         border-left-width: 0;
-    }
-
-    .k-header.k-drag-clue {
-        overflow: hidden;
     }
 
     .k-grid.k-grid-no-scrollbar {
