@@ -68,7 +68,7 @@ $stepper-indicator-current-disabled-border: $stepper-indicator-done-disabled-bor
 $stepper-label-text: null !default;
 $stepper-label-success-text: $success !default;
 $stepper-label-error-text: $error !default;
-$stepper-label-hover-text: darken($body-text, 13%) !default;
+$stepper-label-hover-text: try-shade( $stepper-text, 2 ) !default;
 $stepper-label-disabled-text: $disabled-text !default;
 
 $stepper-optional-label-text: $subtle-text !default;
