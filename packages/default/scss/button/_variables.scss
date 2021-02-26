@@ -110,5 +110,5 @@ $flat-button-active-opacity: .16 !default;
 $flat-button-selected-opacity: .2 !default;
 
 $clear-button-text: $button-text !default;
-$clear-button-hover-text: darken($body-text, 13%) !default;
+$clear-button-hover-text: try-shade( $clear-button-text ) !default;
 $clear-button-focused-opacity: .1 !default;
