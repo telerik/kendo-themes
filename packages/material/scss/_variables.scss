@@ -314,6 +314,11 @@ $disabled-opacity: .6 !default;
 
 // Generic styles
 
+// TODO: refactor once we extract drag drop as separate module
+$font-size: 14px !default;
+$font-family: Roboto, "Helvetica Neue", sans-serif !default;
+$line-height: 2 !default;
+
 // Root styles
 $body-bg: map-get($theme, body-bg) !default;
 $body-text: map-get($theme, body-text) !default;
@@ -461,9 +466,22 @@ $icon-hovered-opacity: .87 !default;
 $icon-focused-opacity: .87 !default;
 
 
-$drag-clue-opacity: .9 !default;
-$drag-clue-line-height: (20 / 14) !default;
-$drag-clue-border-radius: calc( ( #{$drag-clue-line-height} * ( 14px + #{$padding-y} ) ) / 2 ) !default;
+// Drag clue
+$drag-clue-padding-x: $padding-x !default;
+$drag-clue-padding-y: ($padding-x / 2) !default;
+$drag-clue-border-width: null !default;
+$drag-clue-border-radius: 9999px !default;
+$drag-clue-font-size: $font-size !default;
+$drag-clue-font-family: $font-family !default;
+$drag-clue-line-height: ( 20 / 14 ) !default;
+
+$drag-clue-bg: mix( $black, $white, 8%) !default;
+$drag-clue-text: map-get( $theme, body-text ) !default;
+$drag-clue-border: null !default;
+$drag-clue-gradient: null !default;
+$drag-clue-shadow: $box-shadow-depth-3 !default;
+
+$drag-clue-opacity: null !default;
 
 
 // Layout

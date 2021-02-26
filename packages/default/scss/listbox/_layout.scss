@@ -118,11 +118,4 @@
         cursor: default;
     }
 
-    .k-item.k-drag-clue {
-        @include border-radius( 0 );
-        padding: $listbox-drag-clue-padding-y $listbox-drag-clue-padding-x;
-        line-height: $listbox-drag-clue-line-height;
-        border-width: 0;
-        font-size: $font-size;
-    }
 }

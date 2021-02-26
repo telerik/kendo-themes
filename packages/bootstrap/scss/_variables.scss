@@ -285,6 +285,11 @@ $disabled-opacity: .65 !default;
 
 // Generic styles
 
+// TODO: refactor once we extract drag drop as separate module
+$font-size: $font-size-base !default;
+$font-family: $font-family-base !default;
+$line-height: $line-height-base !default;
+
 // Root styles
 $body-bg: $body-bg !default;
 $body-text: $body-color !default;
@@ -418,9 +423,22 @@ $invalid-border: $error !default;
 $invalid-shadow: 0 0 0 .2rem rgba($invalid-border, .25) !default;
 
 
+// Drag clue
+$drag-clue-padding-x: $btn-padding-x !default;
+$drag-clue-padding-y: $btn-padding-y !default;
+$drag-clue-border-width: 1px !default;
+$drag-clue-border-radius: $border-radius !default;
+$drag-clue-font-size: $font-size !default;
+$drag-clue-font-family: $font-family !default;
+$drag-clue-line-height: $line-height !default;
+
+$drag-clue-bg: $selected-bg !default;
+$drag-clue-text: $selected-text !default;
+$drag-clue-border: $selected-border !default;
+$drag-clue-gradient: null !default;
+$drag-clue-shadow: null !default;
+
 $drag-clue-opacity: null !default;
-$drag-clue-line-height: null !default;
-$drag-clue-border-radius: null !default;
 
 
 // Layout

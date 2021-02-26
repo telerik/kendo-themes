@@ -40,13 +40,6 @@
         @include box-shadow( none );
     }
 
-    .k-drag-clue {
-        @include fill(
-            $color: $grid-group-drag-clue-text,
-            $bg: $grid-group-drag-clue-bg
-        );
-    }
-
     .k-grid-content {
         // setting this background color resolves glitches in iOS
         @include fill($bg: $grid-bg );
