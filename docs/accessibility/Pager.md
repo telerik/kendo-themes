@@ -11,6 +11,7 @@ position: 26
 - Moving tab index components strategy implemented.
 
 ## Keyboard Shortcuts
+
 | Shortcut | Behavior |
 |----------|----------|
 | `Arrow Keys` | Moves focus to page buttons|

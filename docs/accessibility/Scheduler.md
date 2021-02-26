@@ -29,6 +29,7 @@ Any navigation or CRUD operation will reset focus to the first appointment, as t
 |`Alt + 1,2,3` | navigates to the view with the respective number |
 
 **Actions applied to the appointments**
+
 All of the content keyboard shortcuts work when focus is on the appointment. In addition to that we also have:
 
 | Shortcut | Behavior |
@@ -38,6 +39,7 @@ All of the content keyboard shortcuts work when focus is on the appointment. In 
 |`Delete/Backspace` | opens the Delete confirmation popup to modify the appointment |
 
 **Actions applied to the Scheduler Popups**
+
 Using the default Window component shortcuts
 
 ## Resources

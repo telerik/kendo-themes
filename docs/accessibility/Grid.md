@@ -156,6 +156,7 @@ As the toolbar inside the grid is currently just an HTML container and users dec
 **Checkbox column**
 
 `CheckBoxOnlySelection` is set to `true`
+
 | Shortcut | Behavior |
 |----------|----------|
 | `Enter`| Focus checkbox|
@@ -164,6 +165,7 @@ As the toolbar inside the grid is currently just an HTML container and users dec
 
 
 `CheckBoxOnlySelection` is explicitly set to `false` or not set at all
+
 | Shortcut | Behavior |
 |----------|----------|
 | `Enter`| Focus checkbox |
