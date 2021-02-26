@@ -19,6 +19,10 @@
         [type="checkbox"] {
             display: none;
         }
+
+        &[aria-readonly="true"] {
+            pointer-events: none;
+        }
     }
 
     .k-switch,
@@ -46,6 +50,7 @@
     // Switch thumb
     .k-switch-handle {
         @include border-radius( $switch-handle-border-radius );
+        @include use-background-clip();
         width: $switch-handle-size;
         height: $switch-handle-size;
         border-width: $switch-handle-border-width;

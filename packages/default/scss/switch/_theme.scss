@@ -1,19 +1,37 @@
 @include exports("switch/theme") {
 
+    // Switch
+    .k-switch {
+
+        &:hover,
+        &.k-state-hover {
+
+            .k-switch-container {
+                @include box-shadow( $switch-container-hovered-shadow );
+            }
+        }
+
+        &:focus,
+        &.k-state-focused {
+
+            .k-switch-container {
+                outline: none;
+                @include box-shadow( $switch-container-focused-shadow );
+            }
+        }
+    }
+
+
+    // Switch track
     .k-switch-container {
         @include box-shadow( $switch-container-shadow );
     }
 
-    .k-switch-handle {
-        @include use-background-clip();
-    }
 
-    .k-switch-label-on,
-    .k-switch-label-off {
-        text-shadow: none;
-    }
-
+    // Switch ON
     .k-switch-on {
+
+        // Normal state
         .k-switch-container {
             @include fill(
                 $switch-on-text,
@@ -22,7 +40,6 @@
                 $switch-on-gradient
             );
         }
-
         .k-switch-handle {
             @include fill(
                 $switch-on-handle-text,
@@ -33,20 +50,7 @@
             @include box-shadow( $switch-on-handle-shadow );
         }
 
-        &:focus,
-        &.k-state-focused {
-            @include box-shadow( $switch-on-focused-shadow );
-
-            .k-switch-container {
-                @include fill(
-                    $switch-on-focused-text,
-                    $switch-on-focused-bg,
-                    $switch-on-focused-border,
-                    $switch-on-focused-gradient
-                );
-            }
-        }
-
+        // Hover state
         &:hover,
         &.k-state-hover {
             .k-switch-container {
@@ -68,12 +72,31 @@
             }
         }
 
+        // Focus state
+        &:focus,
+        &.k-state-focused {
+            @include box-shadow( $switch-on-focused-shadow );
+
+            .k-switch-container {
+                @include fill(
+                    $switch-on-focused-text,
+                    $switch-on-focused-bg,
+                    $switch-on-focused-border,
+                    $switch-on-focused-gradient
+                );
+            }
+        }
+
         .k-switch-label-off {
             color: transparent;
         }
     }
 
+
+    // Switch OFF
     .k-switch-off {
+
+        // Normal state
         .k-switch-container {
             @include fill(
                 $switch-off-text,
@@ -82,7 +105,6 @@
                 $switch-off-gradient
             );
         }
-
         .k-switch-handle {
             @include fill(
                 $switch-off-handle-text,
@@ -93,20 +115,7 @@
             @include box-shadow( $switch-off-handle-shadow );
         }
 
-        &:focus,
-        &.k-state-focused {
-            @include box-shadow( $switch-off-focused-shadow );
-
-            .k-switch-container {
-                @include fill(
-                    $switch-off-focused-text,
-                    $switch-off-focused-bg,
-                    $switch-off-focused-border,
-                    $switch-off-focused-gradient
-                );
-            }
-        }
-
+        // Hover state
         &:hover,
         &.k-state-hover {
             .k-switch-container {
@@ -128,42 +137,24 @@
             }
         }
 
+        // Focus state
+        &:focus,
+        &.k-state-focused {
+            @include box-shadow( $switch-off-focused-shadow );
+
+            .k-switch-container {
+                @include fill(
+                    $switch-off-focused-text,
+                    $switch-off-focused-bg,
+                    $switch-off-focused-border,
+                    $switch-off-focused-gradient
+                );
+            }
+        }
+
         .k-switch-label-on {
             color: transparent;
         }
     }
 
-    .k-switch {
-        box-shadow: none;
-
-        &:focus,
-        &.k-state-focused {
-
-            .k-switch-container {
-                outline: none;
-                @include box-shadow( $switch-container-focused-shadow );
-            }
-        }
-
-        &:hover,
-        &.k-state-hover {
-
-            .k-switch-container {
-                @include box-shadow( $switch-container-hovered-shadow );
-            }
-        }
-
-        &.k-state-disabled {
-            cursor: default;
-
-            &:focus,
-            &.k-state-focused {
-                @include box-shadow( $switch-container-shadow );
-            }
-        }
-
-        &[aria-readonly="true"] {
-            pointer-events: none;
-        }
-    }
 }
