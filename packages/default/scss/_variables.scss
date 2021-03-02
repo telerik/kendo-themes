@@ -296,6 +296,7 @@ $body-bg: $bg-color !default;
 $body-text: $text-color !default;
 
 $subtle-text: try-tint( $body-text, 3 );
+$disabled-text: try-tint( $body-text, 6 );
 
 $app-bg: try-shade( $body-bg, .25 ) !default;
 $app-text: $body-text !default;
