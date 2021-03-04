@@ -131,6 +131,27 @@
         }
     }
 
+    // Buttons Layout
+    .k-window-buttongroup {
+        @include border-bottom-radius( $window-border-radius );
+        padding: $window-buttongroup-padding-y $window-buttongroup-padding-x;
+        border-width: $window-buttongroup-border-width 0 0;
+        border-style: solid;
+        border-color: inherit;
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+
+        &.k-actions-stretched {
+            @include border-bottom-radius( $window-border-radius );
+            border-width: $window-buttongroup-border-width 0 0;
+        }
+    }
+
 
     // Prompt
     .k-prompt-container {

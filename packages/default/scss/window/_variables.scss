@@ -21,6 +21,10 @@ $window-action-hover-opacity: null !default;
 $window-inner-padding-x: 16px !default;
 $window-inner-padding-y: 16px !default;
 
+$window-buttongroup-padding-x: ($window-inner-padding-x / 2) !default;
+$window-buttongroup-padding-y: ($window-inner-padding-y / 2) !default;
+$window-buttongroup-border-width: 1px !default;
+
 $window-bg: $component-bg !default;
 $window-text: $component-text !default;
 $window-border: $component-border !default;
