@@ -84,6 +84,11 @@
                 margin-right: $dialog-button-gap;
             }
         }
+
+        &.k-actions-stretched {
+            @include border-bottom-radius( $window-border-radius );
+            border-width: $dialog-buttongroup-border-width 0 0;
+        }
     }
 
 
