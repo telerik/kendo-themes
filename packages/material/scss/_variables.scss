@@ -324,6 +324,7 @@ $body-bg: map-get($theme, body-bg) !default;
 $body-text: map-get($theme, body-text) !default;
 
 $subtle-text: map-get($theme, subtle-text) !default;
+$disabled-text: map-get($theme, disabled-text) !default;
 
 $app-bg: $body-bg !default;
 $app-text: $body-text !default;

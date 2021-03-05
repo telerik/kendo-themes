@@ -31,5 +31,5 @@ $drawer-focused-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .15) !default;
 
 $drawer-selected-bg: $selected-bg !default;
 $drawer-selected-text: $selected-text !default;
-$drawer-selected-hover-bg: try-darken( $selected-bg, 7.5% ) !default;
+$drawer-selected-hover-bg: try-shade( $selected-bg, 1 ) !default;
 $drawer-selected-hover-text: $selected-text !default;

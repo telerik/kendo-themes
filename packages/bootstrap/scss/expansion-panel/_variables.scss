@@ -18,7 +18,7 @@ $expander-header-bg: $expander-bg !default;
 $expander-header-text: $expander-text !default;
 $expander-header-border: null !default;
 
-$expander-header-hover-bg: try-darken( $header-bg, 3 ) !default;
+$expander-header-hover-bg: try-shade( $header-bg, .5 ) !default;
 
 $expander-header-focused-bg: null !default;
 $expander-header-focused-shadow: $list-item-focused-shadow !default;
