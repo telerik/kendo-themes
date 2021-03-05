@@ -378,11 +378,13 @@
 
 @include exports("dataviz/gauge/layout") {
 
-    .k-arcgauge {
+    .k-arcgauge,
+    .k-circulargauge {
         display: inline-block;
     }
 
-    .k-arcgauge-label {
+    .k-arcgauge-label,
+    .k-circulargauge-label {
         position: absolute;
         text-align: center;
         padding: 0;
