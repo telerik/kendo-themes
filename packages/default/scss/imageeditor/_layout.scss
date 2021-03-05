@@ -16,22 +16,31 @@
         -webkit-tap-highlight-color: $rgba-transparent;
     }
 
+
+    // Image editor toolbar
+    .k-imageeditor-toolbar {
+        border-width: 0;
+        border-bottom-width: $toolbar-border-width;
+    }
+
+
     // Content
     .k-imageeditor-content {
+        border-width: 0;
+        border-style: solid;
+        border-color: inherit;
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
     }
+
 
     // Canvas
     .k-imageeditor-canvas-container {
         flex: 1 1 100%;
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
         overflow: auto;
     }
-
     .k-imageeditor-canvas {
         margin: auto;
         display: flex;
@@ -39,17 +48,20 @@
         position: relative;
     }
 
+
     // Action Pane
     .k-imageeditor-action-pane {
-        border-width: $imageeditor-content-border-width;
-        border-top-width: 0;
+        border-width: 0;
+        border-left-width: $imageeditor-content-border-width;
         border-style: solid;
+        border-color: inherit;
         flex-shrink: 0;
         overflow-y: auto;
     }
     .k-imageeditor-action-pane > .k-form {
         padding: $imageeditor-action-pane-padding-y $imageeditor-action-pane-padding-x;
     }
+
 
     // Crop Tool
     .k-imageeditor-crop-overlay {
@@ -128,7 +140,11 @@
 
 }
 
+
+
+
 @include exports("imageeditor/layout/IE") {
+
     .k-ie {
         .k-imageeditor-canvas {
             flex-direction: row;
@@ -139,5 +155,6 @@
             flex: 0 0 auto;
         }
     }
+
 }
 

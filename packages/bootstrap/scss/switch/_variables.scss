@@ -15,7 +15,8 @@ $switch-handle-size: 24px !default;
 $switch-handle-border-radius: 9999px !default;
 $switch-handle-border-width: null !default;
 $switch-thumb-start-x: 0px !default;
-$switch-thumb-end-x: calc( #{$switch-size} - #{$switch-handle-size} - #{$switch-container-border-width * 2} - #{$switch-container-padding-x * 2}) !default;
+// TODO: Remove width property from jQuery and Blazor, and do not use 100% for thumb X calc
+$switch-thumb-end-x: calc( 100% - #{$switch-handle-size} ) !default;
 
 $switch-label-offset: null !default;
 $switch-label-width: null !default;

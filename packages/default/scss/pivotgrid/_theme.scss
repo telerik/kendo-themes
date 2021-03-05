@@ -66,17 +66,13 @@
         }
 
         &.k-empty {
-            color: $pivotgrid-setting-delete-color;
-        }
-
-        .k-setting-delete {
-            color: $pivotgrid-setting-delete-color;
+            color: $subtle-text;
         }
     }
 
     .k-pivot-toolbar {
         .k-empty {
-            color: $pivotgrid-setting-delete-color;
+            color: $subtle-text;
         }
     }
 
