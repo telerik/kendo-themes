@@ -453,11 +453,11 @@
     }
 
     // override for angular
-    kendo-grid .k-indicator-container {
+    .k-grid .k-indicator-container {
         margin: -$grid-grouping-header-padding-y 0;
         padding: $grid-grouping-header-padding-y 0;
     }
-    kendo-grid .k-indicator-container:last-child {
+    .k-grid .k-indicator-container:last-child {
         flex-grow: 1;
     }
 
