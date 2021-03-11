@@ -352,6 +352,10 @@
         );
     }
 
+    .k-check-all-wrap {
+        @include fill( $border: $popup-border );
+    }
+
     .k-grid-norecords-template {
         background-color: $grid-bg;
         border-color: $grid-border;
