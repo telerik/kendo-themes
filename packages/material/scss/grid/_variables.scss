@@ -130,6 +130,10 @@ $grid-sticky-selected-alt-bg: $grid-sticky-selected-bg !default;
 $grid-sticky-hovered-bg: darken($grid-bg, 7%) !default;
 $grid-sticky-selected-hovered-bg: $grid-sticky-hovered-bg !default;
 
+$grid-filter-menu-width: 250px !default;
+
+$grid-filter-menu-check-all-border-bottom-width: 0 !default;
+
 $grid-filter-menu-item-spacing-x: 0 !default;
 $grid-filter-menu-item-spacing-y: map-get( $spacing, 2 ) !default;
 
