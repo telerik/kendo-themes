@@ -509,6 +509,7 @@
         table,
         .k-calendar-table {
             width: auto;
+            table-layout: auto;
         }
         table.k-meta-view,
         .k-calendar-table.k-meta-view {
@@ -547,6 +548,7 @@
             .k-calendar-view {
                 display: flex;
                 flex-direction: row;
+                box-sizing: content-box;
 
                 .k-animation-container-sm & {
                     flex-direction: column;
