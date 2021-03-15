@@ -2,7 +2,7 @@
 title: Stock Chart
 category: components
 slug: stock-chart
-position: 33
+position: 34
 ---
 # StockChart Keyboard Support
 

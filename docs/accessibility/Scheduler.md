@@ -2,7 +2,7 @@
 title: Scheduler
 category: components
 slug: scheduler
-position: 30
+position: 31
 ---
 # Scheduler Keyboard Support
 
