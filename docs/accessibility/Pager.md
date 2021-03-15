@@ -2,7 +2,7 @@
 title: Pager
 category: components
 slug: pager
-position: 26
+position: 27
 ---
 # Pager Keyboard Support
 

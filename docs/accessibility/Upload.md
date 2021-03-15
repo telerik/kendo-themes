@@ -2,7 +2,7 @@
 title: Upload
 category: components
 slug: upload
-position: 45
+position: 46
 ---
 # Upload Keyboard Support
 

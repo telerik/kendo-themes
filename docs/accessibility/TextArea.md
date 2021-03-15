@@ -2,7 +2,7 @@
 title: Text Area
 category: components
 slug: text-area
-position: 36
+position: 37
 ---
 # Splitter Keyboard Support
 

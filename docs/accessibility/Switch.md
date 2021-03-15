@@ -2,7 +2,7 @@
 title: Switch
 category: components
 slug: switch
-position: 34
+position: 35
 ---
 # Switch Keyboard Support
 

@@ -2,7 +2,7 @@
 title: Menu
 category: components
 slug: menu
-position: 22
+position: 23
 ---
 # Menu Keyboard Support
 

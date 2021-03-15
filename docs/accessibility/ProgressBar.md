@@ -2,7 +2,7 @@
 title: Progress Bar
 category: components
 slug: progress-bar
-position: 27
+position: 28
 ---
 # ChunkProgressBar Keyboard Support
 
