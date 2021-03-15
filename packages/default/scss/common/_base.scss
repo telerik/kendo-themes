@@ -77,6 +77,12 @@ $widget-border-width: 1px !default;
         // sass-lint:disable-block no-important
         display: none !important;
     }
+
+    // Hide Script tags
+    // see https://github.com/telerik/kendo-themes/issues/2360
+    script {
+        display: none !important; // sass-lint:disable-line no-important
+    }
 }
 
 
