@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.35.0"></a>
+# [4.35.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.34.0...@progress/kendo-theme-default@4.35.0) (2021-03-15)
+
+
+### Bug Fixes
+
+* hide Script HTML tags ([7903b2e](https://github.com/telerik/kendo-themes/commit/7903b2e))
+* **calendar:** navigation animation adjustments for angular ([c98dae7](https://github.com/telerik/kendo-themes/commit/c98dae7))
+* **dragdrop:** add indicator container spacings for the KendoReact Grid ([bd36e5f](https://github.com/telerik/kendo-themes/commit/bd36e5f))
+* **drawer:** increase overlay selector specificity ([361973e](https://github.com/telerik/kendo-themes/commit/361973e))
+
+
+### Features
+
+* **grid:** update filter menu styles based on latest design ([ae4785e](https://github.com/telerik/kendo-themes/commit/ae4785e))
+* add styles for action buttons with stretched layout in window and dialog ([810c300](https://github.com/telerik/kendo-themes/commit/810c300))
+* **circulargauge:** layout styles ([79c0b82](https://github.com/telerik/kendo-themes/commit/79c0b82))
+
+
+
+
 <a name="4.34.0"></a>
 # [4.34.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.33.0...@progress/kendo-theme-default@4.34.0) (2021-03-04)
 

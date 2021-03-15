@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.31.0"></a>
+# [3.31.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.30.0...@progress/kendo-theme-material@3.31.0) (2021-03-15)
+
+
+### Features
+
+* **grid:** update filter menu styles based on latest design ([ae4785e](https://github.com/telerik/kendo-themes/commit/ae4785e))
+* add styles for action buttons with stretched layout in window and dialog ([810c300](https://github.com/telerik/kendo-themes/commit/810c300))
+
+
+
+
 <a name="3.30.0"></a>
 # [3.30.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.29.0...@progress/kendo-theme-material@3.30.0) (2021-03-04)
 
