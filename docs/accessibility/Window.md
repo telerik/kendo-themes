@@ -2,7 +2,7 @@
 title: Window
 category: components
 slug: window
-position: 46
+position: 50
 ---
 # Window Keyboard Support
 

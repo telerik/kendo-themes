@@ -2,7 +2,7 @@
 title: Range Slider
 category: components
 slug: range-slider
-position: 29
+position: 30
 ---
 # RangeSlider Keyboard Support
 

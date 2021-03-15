@@ -2,7 +2,7 @@
 title: Splitter
 category: components
 slug: splitter
-position: 32
+position: 33
 ---
 # Splitter Keyboard Support
 
