@@ -56,12 +56,5 @@
     "cleanup-test-results": "cd tests && npm run cleanup-test-results",
     "create-component-files": "node ./scripts/new-component/create-component-files.js"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run eslint && npm run sasslint",
-      "pre-push": "npm run eslint && npm run sasslint && npm run sass && npm run docs:check",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "dependencies": {}
 }
