@@ -16,6 +16,10 @@
         .k-popup {
             position: relative;
         }
+
+        .k-animation-container {
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -190,33 +194,6 @@
                 </div>
             </kendo-popup>
         </section>
-
-        <section>
-            <div class="k-animation-container" style="overflow: visible;">
-                <form class="k-filter-menu k-popup k-group k-reset k-state-border-up" style="display: flex;">
-                    <div class="k-filter-menu-container">
-                        <span class="k-searchbox">
-                            <input class="k-input" type="text" value="Normal">
-                            <span class="k-input-suffix">
-                                <button type="button" class="k-button k-button-clear k-icon-button"><span class="k-icon k-i-close"></span></button>
-                                <span class="k-icon k-i-search"></span>
-                            </span>
-                        </span>
-                        <ul class="k-reset k-multicheck-wrap">
-                            <li class="k-item"><label class="k-label"><input type="checkbox"><span>Chai</span></label></li>
-                            <li class="k-item"><label class="k-label"><input type="checkbox"><span>Chang</span></label></li>
-                            <li class="k-item"><label class="k-label"><input type="checkbox"><span>Aniseed Syrup</span></label></li>
-                        </ul>
-                        <div class="k-filter-selected-items">0 selected items</div>
-                        <div class="k-action-buttons">
-                            <button type="submit" class="k-button k-primary">Filter</button>
-                            <button type="reset" class="k-button">Clear</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-
 
     </div>
 
