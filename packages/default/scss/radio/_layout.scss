@@ -31,19 +31,23 @@
     }
 
     // Hover state
-    .k-radio:hover {
+    .k-radio:hover,
+    .k-radio.k-state-hover {
         cursor: pointer;
     }
 
     // Checked state
-    .k-radio:checked::before {
+    .k-radio:checked::before,
+    .k-radio.k-checked::before {
         @include border-radius( $radio-radius );
         transform: scale(1) translate(-50%, -50%);
     }
 
     // Disabled state
     .k-radio:disabled,
-    .k-radio:disabled + .k-radio-label {
+    .k-radio.k-disabled,
+    .k-radio:disabled + .k-radio-label,
+    .k-radio.k-disabled + .k-radio-label {
         @include disabled( $disabled-styling );
     }
 
@@ -179,7 +183,8 @@
             transform: scale(0);
         }
 
-        .k-radio:disabled::after {
+        .k-radio:disabled::after,
+        .k-radio.k-disabled::after {
             display: none;
         }
     }
