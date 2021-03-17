@@ -87,6 +87,7 @@
             transform: translateY(-50%);
             overflow: visible;
         }
+        &.k-invalid .k-i-warning,
         &.k-state-invalid .k-i-warning {
             display: inline-block;
         }

@@ -138,7 +138,8 @@ $widget-border-width: 1px !default;
 
     // Disabled state
     .k-state-disabled,
-    .k-widget[disabled] {
+    .k-widget[disabled],
+    .k-disabled {
         @include disabled( $disabled-styling );
 
 
