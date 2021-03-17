@@ -11,7 +11,8 @@
 
 
     // Hover state
-    .k-radio:hover {
+    .k-radio:hover,
+    .k-radio.k-state-hover {
         @include fill(
             $radio-hovered-text,
             $radio-hovered-bg,
@@ -21,7 +22,8 @@
 
 
     // Focus state
-    .k-radio:focus {
+    .k-radio:focus,
+    .k-radio.k-state-focus {
         @include fill( $border: $radio-focused-border );
         @include box-shadow( $radio-focused-shadow );
     }
@@ -43,7 +45,8 @@
 
 
     // Checked
-    .k-radio:checked {
+    .k-radio:checked,
+    .k-radio.k-checked {
         @include fill(
             $radio-checked-text,
             $radio-checked-bg,
@@ -51,21 +54,24 @@
         );
     }
 
-    .k-radio:checked:focus {
+    .k-radio:checked:focus,
+    .k-radio.k-checked.k-state-focus {
         @include fill( $border: $radio-focused-checked-border );
         @include box-shadow( $radio-focused-checked-shadow );
     }
 
 
     // Disabled
-    .k-radio:disabled {
+    .k-radio:disabled,
+    .k-radio.k-disabled {
         @include fill(
             $radio-disabled-text,
             $radio-disabled-bg,
             $radio-disabled-border
         );
     }
-    .k-radio:checked:disabled {
+    .k-radio:checked:disabled,
+    .k-radio.k-checked.k-disabled {
         @include fill(
             $radio-disabled-checked-text,
             $radio-disabled-checked-bg,
