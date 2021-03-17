@@ -2,7 +2,7 @@
 title: Auto Complete
 category: components
 slug: auto-complete
-position: 1
+position: 2
 ---
 # AutoComplete Keyboard Support
 

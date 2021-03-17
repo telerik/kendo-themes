@@ -2,7 +2,7 @@
 title: Date Time Picker
 category: components
 slug: date-time-picker
-position: 13
+position: 15
 ---
 # DateTimePicker Keyboard Support
 

@@ -2,7 +2,7 @@
 title: Text Box
 category: components
 slug: text-box
-position: 38
+position: 43
 ---
 # TextBox Keyboard Support
 

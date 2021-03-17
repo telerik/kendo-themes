@@ -2,7 +2,7 @@
 title: Grid
 category: components
 slug: grid
-position: 18
+position: 21
 ---
 # Grid Keyboard Support
 

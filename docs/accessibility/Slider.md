@@ -2,7 +2,7 @@
 title: Slider
 category: components
 slug: slider
-position: 32
+position: 37
 ---
 # Slider Keyboard Support
 

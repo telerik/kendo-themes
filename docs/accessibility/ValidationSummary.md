@@ -2,7 +2,7 @@
 title: Validation Summary
 category: components
 slug: validation-summary
-position: 48
+position: 53
 ---
 # ValidationSummary Keyboard Support
 

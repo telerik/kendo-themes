@@ -2,7 +2,7 @@
 title: Button Group
 category: components
 slug: button-group
-position: 3
+position: 4
 ---
 # ButtonGroup Keyboard Support
 
