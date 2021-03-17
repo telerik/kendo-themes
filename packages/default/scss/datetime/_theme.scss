@@ -54,7 +54,6 @@
         }
     }
 
-
     .k-datepicker,
     .k-timepicker {
 
@@ -227,6 +226,42 @@
                 &.k-state-focused {
                     @include box-shadow($invalid-shadow);
                 }
+            }
+        }
+    }
+
+    //Universal rendering
+    .k-dateinput {
+        &.k-state-hover {
+            .k-dateinput-wrap {
+                @include fill(
+                    $datetime-hovered-text,
+                    $datetime-hovered-bg,
+                    $datetime-hovered-border
+                );
+            }
+        }
+
+        &.k-state-focus {
+            .k-dateinput-wrap {
+                @include fill(
+                    $datetime-focused-text,
+                    $datetime-focused-bg,
+                    $datetime-focused-border
+                );
+                @include box-shadow($datetime-focused-shadow);
+            }
+        }
+
+        &.k-invalid {
+            .k-dateinput-wrap {
+                border-color: $invalid-border;
+            }
+        }
+
+        &.k-invalid.k-state-focus {
+            .k-dateinput-wrap {
+                @include box-shadow($invalid-shadow);
             }
         }
     }
