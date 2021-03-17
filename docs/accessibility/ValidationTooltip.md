@@ -2,7 +2,7 @@
 title: Validation Tooltip
 category: components
 slug: validation-tooltip
-position: 49
+position: 54
 ---
 # ValidationTooltip Keyboard Support
 

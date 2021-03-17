@@ -2,7 +2,7 @@
 title: Combo Box
 category: components
 slug: combo-box
-position: 8
+position: 10
 ---
 # ComboBox Keyboard Support
 

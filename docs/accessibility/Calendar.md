@@ -2,7 +2,7 @@
 title: Calendar
 category: components
 slug: calendar
-position: 4
+position: 5
 ---
 # Calendar Keyboard Support
 

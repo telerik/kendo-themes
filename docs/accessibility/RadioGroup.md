@@ -2,7 +2,7 @@
 title: Radio Group
 category: components
 slug: radio-group
-position: 29
+position: 34
 ---
 # RadioGroup Keyboard Support
 

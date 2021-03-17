@@ -2,7 +2,7 @@
 title: Tile Layout
 category: components
 slug: tile-layout
-position: 39
+position: 44
 ---
 # TileLayout Keyboard Support
 

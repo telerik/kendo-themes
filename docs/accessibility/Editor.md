@@ -2,7 +2,7 @@
 title: Editor
 category: components
 slug: editor
-position: 16
+position: 18
 ---
 # Editor Keyboard Support
 
