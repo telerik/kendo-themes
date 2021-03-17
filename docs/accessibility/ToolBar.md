@@ -2,7 +2,7 @@
 title: Tool Bar
 category: components
 slug: tool-bar
-position: 42
+position: 47
 ---
 # ToolBar Keyboard Support
 

@@ -2,7 +2,7 @@
 title: Time Picker
 category: components
 slug: time-picker
-position: 40
+position: 45
 ---
 # TimePicker Keyboard Support
 

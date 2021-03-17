@@ -2,7 +2,7 @@
 title: Drawer
 category: components
 slug: drawer
-position: 14
+position: 16
 ---
 # Drawer Keyboard Support
 

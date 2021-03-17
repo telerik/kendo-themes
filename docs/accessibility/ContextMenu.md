@@ -2,7 +2,7 @@
 title: Context Menu
 category: components
 slug: context-menu
-position: 9
+position: 11
 ---
 # ContextMenu Keyboard Support
 

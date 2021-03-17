@@ -2,7 +2,7 @@
 title: Button
 category: components
 slug: button
-position: 2
+position: 3
 ---
 # Button Keyboard Support
 

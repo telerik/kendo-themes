@@ -2,7 +2,7 @@
 title: Numeric Text Box
 category: components
 slug: numeric-text-box
-position: 26
+position: 30
 ---
 # NumericTextBox Keyboard Support
 

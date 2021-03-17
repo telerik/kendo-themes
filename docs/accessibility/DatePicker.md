@@ -2,7 +2,7 @@
 title: Date Picker
 category: components
 slug: date-picker
-position: 11
+position: 13
 ---
 # DatePicker Keyboard Support
 

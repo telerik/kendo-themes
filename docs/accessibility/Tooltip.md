@@ -2,7 +2,7 @@
 title: Tooltip
 category: components
 slug: tooltip
-position: 43
+position: 48
 ---
 # Tooltip Keyboard Support
 

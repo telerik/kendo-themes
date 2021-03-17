@@ -2,7 +2,7 @@
 title: Check Box
 category: components
 slug: check-box
-position: 6
+position: 7
 ---
 # CheckBox Keyboard Support
 

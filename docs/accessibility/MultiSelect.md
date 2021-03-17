@@ -2,7 +2,7 @@
 title: Multi Select
 category: components
 slug: multi-select
-position: 24
+position: 28
 ---
 # MultiSelect Keyboard Support
 

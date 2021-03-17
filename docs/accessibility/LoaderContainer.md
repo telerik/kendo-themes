@@ -2,7 +2,7 @@
 title: Loader Container
 category: components
 slug: loader-container
-position: 21
+position: 25
 ---
 # LoaderContainer Keyboard Support
 

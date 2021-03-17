@@ -2,7 +2,7 @@
 title: Masked Text Box
 category: components
 slug: masked-text-box
-position: 22
+position: 26
 ---
 # MaskedTextBox Keyboard Support
 
