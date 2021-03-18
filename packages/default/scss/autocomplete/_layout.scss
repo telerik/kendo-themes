@@ -42,7 +42,8 @@
         &:hover,
         // &:focus-within,
         &.k-state-hover,
-        &.k-state-focused {
+        &.k-state-focused,
+        &.k-state-focus {
             .k-clear-value {
                 visibility: visible;
             }
