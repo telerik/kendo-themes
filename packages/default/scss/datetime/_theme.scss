@@ -231,7 +231,43 @@
     }
 
     //Universal rendering
-    .k-dateinput {
+    .k-datepicker {
+        &.k-state-hover {
+            .k-picker-wrap {
+                @include fill(
+                    $datetime-hovered-text,
+                    $datetime-hovered-bg,
+                    $datetime-hovered-border
+                );
+            }
+        }
+
+        &.k-state-focus {
+            .k-picker-wrap {
+                @include fill(
+                    $datetime-focused-text,
+                    $datetime-focused-bg,
+                    $datetime-focused-border
+                );
+                @include box-shadow($datetime-focused-shadow);
+            }
+        }
+
+        &.k-invalid {
+            .k-picker-wrap {
+                border-color: $invalid-border;
+            }
+        }
+
+        &.k-invalid.k-state-focus {
+            .k-picker-wrap {
+                @include box-shadow($invalid-shadow);
+            }
+        }
+    }
+
+    .k-dateinput,
+    .k-daterangepicker {
         &.k-state-hover {
             .k-dateinput-wrap {
                 @include fill(
