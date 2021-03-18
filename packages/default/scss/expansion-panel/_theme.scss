@@ -6,6 +6,10 @@
             $expander-bg,
             $expander-border
         );
+
+        &.k-state-focus {
+            box-shadow: $expander-focus-shadow;
+        }
     }
 
     .k-expander-header {
@@ -21,6 +25,7 @@
             background-color: $expander-header-hover-bg;
         }
 
+        // Should be removed
         &.k-state-focused {
             background-color: $expander-header-focused-bg;
             box-shadow: $expander-header-focused-shadow;

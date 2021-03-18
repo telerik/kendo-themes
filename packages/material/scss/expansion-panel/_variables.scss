@@ -14,7 +14,9 @@ $expander-bg: $component-bg !default;
 $expander-text: $component-text !default;
 $expander-border: $component-border !default;
 
-$expander-header-bg: $expander-bg !default;
+$expander-focus-shadow: inset 0 0 0 2px rgba(0, 0, 0, .08) !default;
+
+$expander-header-bg: transparent !default;
 $expander-header-text: $expander-text !default;
 $expander-header-border: null !default;
 
