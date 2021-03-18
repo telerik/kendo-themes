@@ -43,13 +43,15 @@
     }
 
     // Hover state
-    .k-checkbox:hover {
+    .k-checkbox:hover,
+    .k-checkbox.k-state-hover {
         cursor: pointer;
     }
 
 
     // Checked state
-    .k-checkbox:checked::before {
+    .k-checkbox:checked::before,
+    .k-checkbox.k-checked::before {
         @include border-radius( $checkbox-radius );
         transform: scale(1) translate(-50%, -50%);
     }
@@ -57,7 +59,8 @@
 
     // Indeterminate state
     .k-checkbox:indeterminate::before,
-    .k-checkbox.k-state-indeterminate::before {
+    .k-checkbox.k-state-indeterminate::before,
+    .k-checkbox.k-indeterminate::before {
         content: "";
         background-color: currentColor;
         transform: scale(1) translate(-50%, -50%);
@@ -74,7 +77,9 @@
 
     // Disabled state
     .k-checkbox:disabled,
-    .k-checkbox:disabled + .k-checkbox-label {
+    .k-checkbox.k-disabled,
+    .k-checkbox:disabled + .k-checkbox-label,
+    .k-checkbox.k-disabled + .k-checkbox-label {
         @include disabled( $disabled-styling );
     }
 
@@ -220,7 +225,8 @@
             transform: scale(0);
         }
 
-        .k-checkbox:disabled::after {
+        .k-checkbox:disabled::after,
+        .k-checkbox.k-disabled::after {
             display: none;
         }
     }

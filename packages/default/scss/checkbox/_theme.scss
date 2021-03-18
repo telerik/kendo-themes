@@ -11,7 +11,8 @@
 
 
     // Hover state
-    .k-checkbox:hover {
+    .k-checkbox:hover
+    .k-checkbox.k-state-hover {
         @include fill(
             $checkbox-hovered-text,
             $checkbox-hovered-bg,
@@ -21,7 +22,8 @@
 
 
     // Focus state
-    .k-checkbox:focus {
+    .k-checkbox:focus,
+    .k-checkbox.k-state-focus {
         @include fill( $border: $checkbox-focused-border );
         @include box-shadow( $checkbox-focused-shadow );
     }
@@ -29,7 +31,8 @@
 
     // Indeterminate
     .k-checkbox:indeterminate,
-    .k-checkbox.k-state-indeterminate {
+    .k-checkbox.k-state-indeterminate,
+    .k-checkbox.k-indeterminate {
         @include fill(
             $checkbox-indeterminate-text,
             $checkbox-indeterminate-bg,
@@ -39,21 +42,24 @@
 
 
     // Checked
-    .k-checkbox:checked {
+    .k-checkbox:checked,
+    .k-checkbox.k-checked {
         @include fill(
             $checkbox-checked-text,
             $checkbox-checked-bg,
             $checkbox-checked-border
         );
     }
-    .k-checkbox:checked:focus {
+    .k-checkbox:checked:focus,
+    .k-checkbox.k-checked.k-state-focus {
         @include fill( $border: $checkbox-focused-checked-border );
         @include box-shadow( $checkbox-focused-checked-shadow );
     }
 
 
     // Disabled
-    .k-checkbox:disabled {
+    .k-checkbox:disabled,
+    .k-checkbox.k-disabled {
         @include fill(
             $checkbox-disabled-text,
             $checkbox-disabled-bg,
@@ -62,7 +68,9 @@
     }
     .k-checkbox:checked:disabled,
     .k-checkbox:indeterminate:disabled,
-    .k-checkbox.k-state-indeterminate:disabled {
+    .k-checkbox.k-state-indeterminate:disabled,
+    .k-checkbox.k-checked.k-disabled,
+    .k-checkbox.k-indeterminate.k-disabled {
         @include fill(
             $checkbox-disabled-checked-text,
             $checkbox-disabled-checked-bg,
