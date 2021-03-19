@@ -378,6 +378,11 @@
 
 @include exports("dataviz/gauge/layout") {
 
+    .k-gauge {
+        text-align: left;
+        position: relative;
+    }
+
     .k-arcgauge,
     .k-circulargauge {
         display: inline-block;
