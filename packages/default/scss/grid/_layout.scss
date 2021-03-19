@@ -1060,6 +1060,34 @@
         }
     }
 
+    kendo-grid {
+        tr.k-grid-row-sticky {
+            border: 0;
+            position: static;
+            z-index: auto;
+        }
+
+        .k-grid-row-sticky td {
+            border-bottom-width: $grid-border-width;
+            border-top-width: $grid-border-width;
+
+            position: sticky;
+            top: inherit;
+            bottom: inherit;
+        }
+
+        .k-grid-row-sticky td.k-grid-content-sticky,
+        .k-grid-row-sticky.k-alt td.k-grid-content-sticky {
+            z-index: 3;
+        }
+
+        // Locked and sticky
+        .k-grid-header-locked th.k-grid-header-sticky:last-child,
+        .k-grid-content-locked tr .k-grid-content-sticky:last-child {
+            border-right: 0;
+        }
+    }
+
     .k-grid-content-sticky.k-grid-row-sticky {
         z-index: 3;
     }
