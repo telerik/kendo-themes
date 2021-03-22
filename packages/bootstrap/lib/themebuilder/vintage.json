@@ -1,0 +1,129 @@
+{
+    "$schema": "@progress/kendo-theme-tasks/lib/schemas/themebuilder-swatch.json",
+    "name": "Vintage",
+    "base": "@progress/kendo-theme-bootstrap",
+    "previewColors": [ "#744662", "#ffffff", "#f2efe8", "#e7e1d3", "#90b8c1" ],
+    "components": [ ],
+    "themeBuilder": [
+        {
+            "name": "",
+            "variables": {
+                "border-radius": {
+                    "name": "Border radius",
+                    "type": "number",
+                    "value": "0.25rem"
+                }
+            }
+        },
+        {
+            "name": "Theme colors",
+            "variables": {
+                "primary": {
+                    "name": "Primary",
+                    "type": "color",
+                    "value": "#744662"
+                },
+                "secondary": {
+                    "name": "Secondary",
+                    "type": "color",
+                    "value": "#e8e3d6"
+                },
+                "info": {
+                    "name": "Info",
+                    "type": "color",
+                    "value": "#70c1de"
+                },
+                "success": {
+                    "name": "Success",
+                    "type": "color",
+                    "value": "#8dba4f"
+                },
+                "warning": {
+                    "name": "Warning",
+                    "type": "color",
+                    "value": "#e8be68"
+                },
+                "error": {
+                    "name": "Error",
+                    "type": "color",
+                    "value": "#b42a58"
+                }
+            }
+        },
+        {
+            "name": "Page",
+            "variables": {
+                "body-bg": {
+                    "name": "Bg color",
+                    "type": "color",
+                    "value": "#ffffff"
+                },
+                "body-color": {
+                    "name": "Text color",
+                    "type": "color",
+                    "value": "#333333"
+                }
+            }
+        },
+        {
+            "name": "Component",
+            "variables": {
+                "component-bg": {
+                    "name": "Component bg",
+                    "type": "color",
+                    "value": "#f2efe8"
+                },
+                "component-color": {
+                    "name": "Component text",
+                    "type": "color",
+                    "value": "#494138"
+                },
+                "card-cap-bg": {
+                    "name": "Header bg",
+                    "type": "color",
+                    "value": "#d3c8b2"
+                },
+                "card-cap-color": {
+                    "name": "Header text",
+                    "type": "color",
+                    "value": "#5b462a"
+                }
+            }
+        },
+        {
+            "name": "Chart",
+            "variables": {
+                "series-a": {
+                    "name": "Series A",
+                    "type": "color",
+                    "value": "#c67eab"
+                },
+                "series-b": {
+                    "name": "Series B",
+                    "type": "color",
+                    "value": "#742659"
+                },
+                "series-c": {
+                    "name": "Series C",
+                    "type": "color",
+                    "value": "#3fc0df"
+                },
+                "series-d": {
+                    "name": "Series D",
+                    "type": "color",
+                    "value": "#09899c"
+                },
+                "series-e": {
+                    "name": "Series E",
+                    "type": "color",
+                    "value": "#dfbb4c"
+                },
+                "series-f": {
+                    "name": "Series F",
+                    "type": "color",
+                    "value": "#b38400"
+                }
+            }
+        }
+    ]
+}
