@@ -89,4 +89,40 @@
         }
     }
 
+    //Universal rendering
+    .k-combobox {
+        &.k-state-hover {
+            .k-dropdown-wrap {
+                @include fill(
+                    $combobox-hovered-text,
+                    $combobox-hovered-bg,
+                    $combobox-hovered-border
+                );
+            }
+        }
+
+        &.k-state-focus {
+            .k-dropdown-wrap {
+                @include fill(
+                    $combobox-focused-text,
+                    $combobox-focused-bg,
+                    $combobox-focused-border
+                );
+                @include box-shadow($combobox-focused-shadow);
+            }
+        }
+
+        &.k-invalid {
+            .k-dropdown-wrap {
+                border-color: $invalid-border;
+            }
+        }
+
+        &.k-invalid.k-state-focus {
+            .k-dropdown-wrap {
+                @include box-shadow($invalid-shadow);
+            }
+        }
+    }
+
 }

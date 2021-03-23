@@ -47,7 +47,8 @@
                     opacity: .6;
                 }
 
-                .k-icon:hover {
+                .k-icon:hover,
+                .k-icon.k-state-hover {
                     opacity: 1;
                 }
 
@@ -99,6 +100,42 @@
         &.ng-invalid.ng-dirty {
             .k-multiselect-wrap {
                 border-color: $invalid-border;
+            }
+        }
+    }
+
+    //Universal rendering
+    .k-multiselect {
+        &.k-state-hover {
+            .k-multiselect-wrap {
+                @include fill(
+                    $multiselect-hovered-text,
+                    $multiselect-hovered-bg,
+                    $multiselect-hovered-border
+                );
+            }
+        }
+
+        &.k-state-focus {
+            .k-multiselect-wrap {
+                @include fill(
+                    $multiselect-focused-text,
+                    $multiselect-focused-bg,
+                    $multiselect-focused-border
+                );
+                @include box-shadow($multiselect-focused-shadow);
+            }
+        }
+
+        &.k-invalid {
+            .k-multiselect-wrap {
+                border-color: $invalid-border;
+            }
+        }
+
+        &.k-invalid.k-state-focus {
+            .k-multiselect-wrap {
+                @include box-shadow($invalid-shadow);
             }
         }
     }

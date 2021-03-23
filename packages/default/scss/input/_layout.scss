@@ -154,7 +154,8 @@
         cursor: pointer;
         opacity: .5;
     }
-    .k-clear-value:hover {
+    .k-clear-value:hover,
+    .k-clear-value.k-state-hover {
         opacity: 1;
     }
 
