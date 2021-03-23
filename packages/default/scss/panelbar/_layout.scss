@@ -2,7 +2,6 @@
 
     // Base
     .k-panelbar {
-        @include use-background-clip();
         margin: 0;
         padding: 0;
         border-width: $panelbar-border-width;
@@ -19,7 +18,8 @@
 
 
         // Root
-        > .k-item {
+        > .k-item,
+        > .k-panelbar-header {
             // TODO
             @include use-background-clip();
             border-width: 0;
@@ -32,6 +32,8 @@
                 color: inherit;
                 background: none;
                 text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 500;
                 display: flex;
                 flex-flow: row nowrap;
                 gap: $icon-spacing;
@@ -43,13 +45,15 @@
                 transition: $transition;
             }
         }
-        > .k-item + .k-item {
+        > .k-item + .k-item,
+        > .k-panelbar-header + .k-panelbar-header {
             border-top-width: 1px;
         }
 
 
         // Sub
-        .k-group {
+        .k-group,
+        .k-panelbar-group {
             margin: 0;
             padding: 0;
             border-width: 0;
@@ -58,7 +62,8 @@
             background-color: transparent;
             list-style: none;
         }
-        .k-group > .k-item {
+        .k-group > .k-item,
+        .k-panelbar-group > .k-panelbar-item {
             display: block;
 
             > .k-link {
@@ -75,23 +80,53 @@
                 cursor: default;
                 transition: $transition;
             }
+
+            // Hierarchy items
+            @for $i from 1 through $panelbar-item-level-count {
+                &.k-level-#{$i} {
+                    .k-link {
+                        padding-left: ( $panelbar-item-padding-x * $i );
+                    }
+                }
+            }
         }
 
 
         // Panelbar content
-        .k-content {
+        .k-content,
+        .k-panelbar-content {
             display: flow-root;
         }
 
 
         // Toggle icon
         .k-panelbar-expand,
-        .k-panelbar-collapse {
+        .k-panelbar-collapse,
+        .k-panelbar-toggle {
             margin-inline-start: auto;
         }
         .k-group .k-panelbar-expand,
-        .k-group .k-panelbar-collapse {
+        .k-group .k-panelbar-collapse,
+        .k-panelbar-group .k-panelbar-toggle {
             margin-inline-end: calc( #{$panelbar-header-padding-x} - #{$panelbar-item-padding-x} );
+        }
+
+
+        .k-rtl &,
+        &.k-rtl,
+        &[dir = "rtl"] {
+            .k-group > .k-item,
+            .k-panelbar-group > .k-panelbar-item {
+                // Hierarchy items
+                @for $i from 1 through $panelbar-item-level-count {
+                    &.k-level-#{$i} {
+                        .k-link {
+                            padding-left: $panelbar-item-padding-x;
+                            padding-right: ( $panelbar-item-padding-x * $i );
+                        }
+                    }
+                }
+            }
         }
 
     }
