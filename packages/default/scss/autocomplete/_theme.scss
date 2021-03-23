@@ -24,7 +24,8 @@
         // Focus state
         // &:focus-within,
         &.k-state-open,
-        &.k-state-focused {
+        &.k-state-focused,
+        &.k-state-focus {
             @include fill(
                 $autocomplete-focused-text,
                 $autocomplete-focused-bg,
@@ -64,7 +65,8 @@
             );
 
             // &:focus-within,
-            &.k-state-focused {
+            &.k-state-focused,
+            &.k-state-focus {
                 @include box-shadow( $autocomplete-invalid-shadow );
             }
             &:focus-within {
