@@ -347,7 +347,8 @@
 
         // Focused state
         &:focus,
-        &.k-state-focused {
+        &.k-state-focused,
+        &.k-state-focus {
             &::before {
                 opacity: $flat-button-focused-opacity;
             }
