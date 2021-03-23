@@ -1265,7 +1265,12 @@
         .k-filter-menu-container {
             width: $grid-filter-menu-width;
         }
+    }
 
+    .k-filter-menu.k-popup,
+    .k-grid-filter-popup.k-popup,
+    .k-popup .k-filter-menu,
+    .k-popup .k-grid-filter-popup {
         .k-multicheck-wrap {
             .k-item {
                 padding: $grid-column-menu-list-item-padding-y 0;
