@@ -133,7 +133,7 @@ $grid-filter-menu-width: 250px !default;
 
 $grid-filter-menu-check-all-border-bottom-width: 1px !default;
 
-$grid-filter-menu-item-spacing-x: 0 !default;
+$grid-filter-menu-item-spacing-x: map-get( $spacing, 6 ) !default;
 $grid-filter-menu-item-spacing-y: map-get( $spacing, 2 ) !default;
 
 $grid-column-menu-popup-padding-x: 0 !default;
