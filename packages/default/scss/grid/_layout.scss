@@ -133,7 +133,7 @@
             box-sizing: content-box;
         }
 
-        // Grouping and hierarcy
+        // Grouping, hierarcy
         .k-group-col,
         .k-hierarchy-col {
             padding: 0;
@@ -172,7 +172,8 @@
             border-left-width: $grid-group-footer-second-cell-border;
         }
 
-        .k-hierarchy-cell {
+        .k-hierarchy-cell,
+        .k-drag-cell {
             text-align: center;
             padding: 0;
             overflow: visible;
@@ -402,6 +403,16 @@
         .k-header-column-menu,
         .k-hierarchy-cell .k-icon {
             border-width: 0;
+        }
+
+        // Drag column
+        .k-drag-col {
+            padding: 0;
+            width: $grid-drag-cell-width;
+        }
+
+        .k-drag-cell {
+            cursor: move;
         }
     }
 
