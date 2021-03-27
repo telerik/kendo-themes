@@ -27,10 +27,10 @@ $colorpicker-hovered-text: $button-hovered-text !default;
 $colorpicker-hovered-border: $button-hovered-border !default;
 $colorpicker-hovered-gradient: $button-hovered-gradient !default;
 
-$colorpicker-focused-bg: $button-pressed-bg !default;
-$colorpicker-focused-text: $button-pressed-text !default;
-$colorpicker-focused-border: $button-pressed-border !default;
-$colorpicker-focused-gradient: $button-pressed-gradient !default;
+$colorpicker-focused-bg: $button-active-bg !default;
+$colorpicker-focused-text: $button-active-text !default;
+$colorpicker-focused-border: $button-active-border !default;
+$colorpicker-focused-gradient: $button-active-gradient !default;
 $colorpicker-focused-shadow: $button-focused-shadow !default;
 
 $colorpalette-hovered-shadow: 0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .8 ) !default;

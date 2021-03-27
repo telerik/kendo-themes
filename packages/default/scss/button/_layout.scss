@@ -2,7 +2,6 @@
 
     // Button
     .k-button {
-        @include use-background-clip();
         @include border-radius( $button-border-radius );
         padding: $button-padding-y $button-padding-x;
         box-sizing: border-box;
@@ -87,6 +86,16 @@
         > .k-button-text {
             display: none;
         }
+
+        .k-button-icon {
+            margin: 0;
+        }
+    }
+    // TODO: REMOVE
+    .k-button.k-button-icon {
+        padding: $button-padding-y;
+        width: $button-calc-size;
+        height: $button-calc-size;
     }
 
 
@@ -95,7 +104,8 @@
     .k-input-button.k-icon-button {}
 
 
-    //DropDown Button
+    // Menu Button
+    .k-menu-button,
     .k-dropdown-button {
         outline: 0;
         display: inline-flex;
@@ -132,7 +142,10 @@
         .k-button:hover,
         .k-button.k-state-hover,
         .k-button:active,
-        .k-button.k-state-active {
+        .k-button.k-state-active,
+        .k-button.k-state-selected,
+        .k-button:focus,
+        .k-button.k-state-focus {
             z-index: 2;
         }
 
@@ -147,17 +160,6 @@
         .k-group-start.k-group-end,
         .k-button:first-child:last-child {
             @include border-radius( $button-border-radius );
-        }
-
-        > input[type="radio"],
-        > input[type="checkbox"],
-        label input[type="radio"],
-        label input[type="checkbox"] {
-            margin: 0;
-            padding: 0;
-            clip: rect(0, 0, 0, 0);
-            position: absolute;
-            pointer-events: none;
         }
 
     }
@@ -230,8 +232,8 @@
         &.k-state-hover,
         &:active,
         &.k-state-active,
-        &:hover:active,
-        &:hover.k-state-active {
+        &:focus,
+        &.k-state-focus {
             color: inherit;
         }
 
@@ -254,6 +256,16 @@
     .k-button.k-outline {
         @extend .k-button-outline;
     }
+
+
+    // Clear button
+    .k-button-clear {
+        border-color: transparent !important; // sass-lint:disable-line no-important
+        color: inherit;
+        background: none !important; // sass-lint:disable-line no-important
+        box-shadow: none !important; // sass-lint:disable-line no-important
+    }
+
 
     // RTL
     .k-rtl {
@@ -339,10 +351,10 @@
 
         // Focused state
         &:focus,
-        &.k-state-focused,
-        &.k-state-focus {
+        &.k-state-focus,
+        &.k-state-focused {
             &::before {
-                opacity: $flat-button-focused-opacity;
+                opacity: $flat-button-focus-opacity;
             }
         }
         &.k-no-focus:not(:hover),
@@ -352,7 +364,7 @@
             }
         }
 
-        // Pressed state
+        // Active state
         &:active,
         &.k-state-active {
             &::before {
@@ -367,11 +379,6 @@
             }
         }
 
-        &.k-button-clear {
-            &::before {
-                display: none;
-            }
-        }
     }
 
 }
