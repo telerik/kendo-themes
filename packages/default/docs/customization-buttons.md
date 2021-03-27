@@ -66,16 +66,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$button-text</td>
-    <td></td>
-    <td>$base-text</td>
-    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the buttons.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$button-bg</td>
     <td></td>
     <td>$base-bg</td>
@@ -83,6 +73,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-text</td>
+    <td></td>
+    <td>$base-text</td>
+    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the buttons.</div></div>
     </td>
 </tr>
 <tr>
@@ -146,16 +146,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$button-pressed-text</td>
-    <td></td>
-    <td>$button-text</td>
-    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of pressed buttons.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$button-pressed-bg</td>
     <td></td>
     <td>$button-bg</td>
@@ -163,6 +153,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of pressed buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-pressed-text</td>
+    <td></td>
+    <td>$button-text</td>
+    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of pressed buttons.</div></div>
     </td>
 </tr>
 <tr>
