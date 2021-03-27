@@ -221,16 +221,6 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$button-text</td>
-    <td></td>
-    <td>$base-text</td>
-    <td>$text-color</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the buttons.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$button-bg</td>
     <td></td>
     <td>$base-bg</td>
@@ -238,6 +228,16 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-text</td>
+    <td></td>
+    <td>$base-text</td>
+    <td>$text-color</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the buttons.</div></div>
     </td>
 </tr>
 <tr>
@@ -261,16 +261,6 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$button-hovered-text</td>
-    <td></td>
-    <td>$hovered-text</td>
-    <td>$base-text</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered buttons.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$button-hovered-bg</td>
     <td></td>
     <td>$hovered-bg</td>
@@ -278,6 +268,16 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-hovered-text</td>
+    <td></td>
+    <td>$hovered-text</td>
+    <td>$base-text</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered buttons.</div></div>
     </td>
 </tr>
 <tr>
@@ -301,16 +301,6 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
-    <td>$button-pressed-text</td>
-    <td></td>
-    <td>$button-text</td>
-    <td>$text-color</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of pressed buttons.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$button-pressed-bg</td>
     <td></td>
     <td>$button-bg</td>
@@ -318,6 +308,16 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of pressed buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-pressed-text</td>
+    <td></td>
+    <td>$button-text</td>
+    <td>$text-color</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of pressed buttons.</div></div>
     </td>
 </tr>
 <tr>
