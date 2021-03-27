@@ -17,6 +17,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        gap: $icon-spacing;
         vertical-align: middle;
         user-select: none;
         cursor: pointer;
@@ -49,34 +50,24 @@
             position: relative;
         }
 
-
-        // Button variants
-        &-icontext {
-            overflow: visible; // IE9
-
-            .k-icon,
-            .k-image,
-            .k-sprite {
-                margin: 0 ($button-padding-x / 2) 0 (-$button-padding-x / 2);
-            }
-
-            &.k-rtl,
-            .k-rtl &,
-            &[dir="rtl"],
-            [dir="rtl"] & {
-                .k-icon,
-                .k-image,
-                .k-sprite {
-                    margin: 0 (-$button-padding-x / 2) 0 ($button-padding-x / 2);
-                }
-            }
-        }
-
     }
+
+
+    // Button icon
+    .k-button .k-button-icon {
+        color: inherit;
+        align-self: center;
+        position: relative;
+    }
+
+
+    // Button text
+    .k-button .k-button-text {}
 
 
     // Text button
     .k-text-button {
+
         > .k-icon,
         > .k-button-icon {
             display: none;
@@ -87,12 +78,13 @@
     // Icon button
     .k-icon-button,
     .k-button.k-button-icon {
+        padding: $button-padding-y;
         width: $button-calc-size;
         height: $button-calc-size;
-        padding: $button-padding-y;
+        gap: 0;
 
-        .k-text,
-        .k-button-text {
+        > .k-text,
+        > .k-button-text {
             display: none;
         }
     }
@@ -430,7 +422,29 @@
         .k-button,
         .k-button-group {
             display: inline-block;
+            overflow: visible; // IE9
         }
+
+        .k-button-icontext {
+
+            .k-icon,
+            .k-image,
+            .k-sprite {
+                margin: 0 $icon-spacing 0 0;
+            }
+
+            &.k-rtl,
+            .k-rtl &,
+            &[dir="rtl"],
+            [dir="rtl"] & {
+                .k-icon,
+                .k-image,
+                .k-sprite {
+                    margin: 0 0 0 $icon-spacing;
+                }
+            }
+        }
+
     }
 
 }
