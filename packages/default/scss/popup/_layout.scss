@@ -275,12 +275,12 @@
             display: flex;
             justify-content: flex-start;
 
-            .k-icon {
-                margin: 0 $icon-spacing 0 0;
-            }
-
             .k-ie11 & {
                 display: flex;
+
+                .k-icon {
+                    margin: 0 $icon-spacing 0 0;
+                }
             }
         }
 
