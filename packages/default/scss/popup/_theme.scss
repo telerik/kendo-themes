@@ -107,9 +107,8 @@
     .k-list-container {
 
         // Button normal state
-        .k-button,
-        .k-button.k-state-active {
-            box-shadow: none;
+        .k-button {
+            @include box-shadow( none );
         }
 
 
@@ -120,30 +119,41 @@
                 $list-item-hovered-text,
                 $list-item-hovered-bg
             );
-            background-image: none;
         }
 
-        // Button pressed state
+
+        // Button active state
         .k-button:active,
         .k-button.k-state-active {
+            @include fill(
+                inherit,
+                inherit
+            );
+        }
+
+
+        // Button selected state
+        .k-button.k-state-selected {
             @include fill(
                 $list-item-selected-text,
                 $list-item-selected-bg
             );
-            background-image: none;
         }
+
+
+        // Button focus state
+        .k-button:focus,
+        .k-button.k-state-focus,
+        .k-button.k-state-focused {
+            box-shadow: $list-item-focused-shadow;
+        }
+
 
         // Button disabled state
         .k-button.k-state-disabled {
             background: transparent;
         }
 
-
-        // Button focus state
-        .k-button:focus,
-        .k-button.k-state-focused {
-            box-shadow: $list-item-focused-shadow;
-        }
 
         .k-nodata {
             color: $list-container-no-data-text;

@@ -59,9 +59,9 @@ $calendar-header-button-hovered-border: $button-hovered-border !default;
 $calendar-header-button-hovered-gradient: $button-hovered-gradient !default;
 
 $calendar-header-button-pressed-bg: true-mix( $button-text, $button-bg, 16%) !default;
-$calendar-header-button-pressed-text: $button-pressed-text !default;
-$calendar-header-button-pressed-border: $button-pressed-border !default;
-$calendar-header-button-pressed-gradient: $button-pressed-gradient !default;
+$calendar-header-button-pressed-text: $button-active-text !default;
+$calendar-header-button-pressed-border: $button-active-border !default;
+$calendar-header-button-pressed-gradient: $button-active-gradient !default;
 $calendar-header-button-pressed-shadow: null !default;
 
 $calendar-navigation-bg: true-mix( $calendar-text, $calendar-bg, 3) !default;

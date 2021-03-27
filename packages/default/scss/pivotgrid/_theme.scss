@@ -55,8 +55,12 @@
         // Pressed state
         &:active,
         &.k-state-active {
-            @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
-            box-shadow: $button-pressed-shadow;
+            @include fill(
+                $button-text,
+                $button-bg,
+                $button-border,
+                $button-gradient
+            );
         }
 
         // Focused state

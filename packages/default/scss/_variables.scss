@@ -249,16 +249,16 @@ $base-text: #656565 !default;
 /// The border color of the components' chrome area.
 $base-border: rgba( black, .08 ) !default;
 /// The gradient background of the components' chrome area.
-$base-gradient: $base-bg, darken( $base-bg, 2% ) !default;
+$base-gradient: $base-bg, try-shade( $base-bg, 2% ) !default;
 
 /// The background of hovered items.
-$hovered-bg: #ededed !default; // tint $base .5
+$hovered-bg: try-shade( $base-bg, .5 ) !default;
 /// The text color of hovered items.
 $hovered-text: $base-text !default;
 /// The border color of hovered items.
 $hovered-border: rgba( black, .15 ) !default;
 /// The gradient background of hovered items.
-$hovered-gradient: $hovered-bg, darken( $hovered-bg, 2% ) !default;
+$hovered-gradient: $hovered-bg, try-shade( $hovered-bg, 2% ) !default;
 
 /// The background of selected items.
 $selected-bg: $primary !default;

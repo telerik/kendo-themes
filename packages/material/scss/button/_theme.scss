@@ -1,65 +1,16 @@
+@import "~@progress/kendo-theme-default/scss/button/_theme.scss";
+
 @include exports( "button/theme/material" ) {
 
-    // Default button
-    .k-button,
-    .k-button-secondary {
-        @include fill(
-            $button-text,
-            $button-bg,
-            $button-border,
-            $button-gradient
-        );
-        @include box-shadow( $button-shadow );
-
-        &:hover,
-        &.k-state-hover {
-            @include box-shadow( $button-hovered-shadow );
-        }
-
-        &:active,
-        &.k-state-active {
-            @include box-shadow( $button-pressed-shadow );
-        }
-
-        &:disabled,
-        &.k-state-disabled {
-            @include fill(
-                $button-disabled-text,
-                $button-disabled-bg
-            );
-            @include box-shadow( none );
-            opacity: 1;
-        }
-
-    }
-
-
-    // Primary button
-    .k-button-primary,
-    .k-button.k-primary {
-        @include fill(
-            $primary-button-text,
-            $primary-button-bg,
-            $primary-button-border,
-            $primary-button-gradient
-        );
-
-        &:disabled,
-        &.k-state-disabled {
-            @include fill(
-                $button-disabled-text,
-                $button-disabled-bg
-            );
-            @include box-shadow( none );
-            opacity: 1;
-        }
-    }
-
-
     // Flat button
-    .k-button-flat-primary,
-    .k-button-flat.k-primary,
-    .k-button.k-flat.k-primary {
+    .k-button-flat {
+
+        &:disabled,
+        &.k-state-disabled {
+            color: $button-disabled-text;
+        }
+    }
+    .k-button-flat.k-primary {
         color: $primary-button-bg;
 
         &:disabled,
@@ -70,22 +21,47 @@
 
 
     // Outline button
-    .k-button-outline,
-    .k-button.k-outline {
+    .k-button-outline {
         @include box-shadow( none );
-        background-color: transparent;
+        color: $button-text;
+
+        &:hover,
+        &.k-state-hover,
+        &:active,
+        &.k-state-active,
+        &.k-state-selected,
+        &:focus,
+        &.k-state-focus {
+            color: $button-text;
+        }
 
         &:disabled,
         &.k-state-disabled {
             color: $button-disabled-text;
         }
     }
-    .k-button-outline-primary,
-    .k-button-outline.k-primary,
-    .k-button.k-outline.k-primary {
-        border-color: currentColor;
+    .k-button-outline.k-primary {
         color: $primary-button-bg;
-        background-color: transparent;
+
+        &:hover,
+        &.k-state-hover,
+        &:active,
+        &.k-state-active,
+        &:focus,
+        &.k-state-focus {
+            color: $primary-button-bg;
+        }
+
+        &:disabled,
+        &.k-state-disabled {
+            color: $button-disabled-text;
+        }
+    }
+
+
+    // Clear button
+    .k-button-clear,
+    .k-button.k-clear {
 
         &:disabled,
         &.k-state-disabled {
@@ -144,6 +120,9 @@
     }
 
 }
+
+
+
 
 @include exports( "clear-button/theme" ) {
     .k-button.k-button-clear {
