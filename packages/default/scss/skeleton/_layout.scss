@@ -1,0 +1,86 @@
+@include exports("skeleton/layout") {
+
+    .k-skeleton {
+        display: block;
+    }
+
+    .k-skeleton-text {
+        border-radius: $skeleton-text-border-radius;
+        transform: $skeleton-text-transform;
+
+        &:empty::before {
+            content: "\00a0";
+        }
+    }
+
+    .k-skeleton-rect {
+        border-radius: $skeleton-rect-border-radius;
+    }
+
+    .k-skeleton-circle {
+        border-radius: $skeleton-circle-border-radius;
+    }
+
+}
+
+
+@include exports("skeleton/layout/wave") {
+
+    @keyframes k-skeleton-wave {
+        0% {
+            transform: translateX(-100%);
+        }
+        60% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    .k-skeleton-wave {
+
+        .k-skeleton,
+        &.k-skeleton {
+            position: relative;
+            overflow: hidden;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                transform: translateX(-100%);
+                animation: k-skeleton-wave 1.6s linear .5s infinite;
+            }
+        }
+
+    }
+}
+
+
+@include exports("skeleton/layout/pulse") {
+
+    @keyframes k-skeleton-pulse {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: .4;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .k-skeleton-pulse {
+
+        .k-skeleton,
+        &.k-skeleton {
+            animation: k-skeleton-pulse 1.5s ease-in-out .5s infinite;
+        }
+
+    }
+}
