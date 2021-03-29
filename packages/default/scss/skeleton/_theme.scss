@@ -1,0 +1,27 @@
+@include exports("skeleton/theme") {
+
+    .k-skeleton {
+        @include fill( $bg: $skeleton-item-bg );
+    }
+
+}
+
+
+@include exports("skeleton/theme/wave") {
+
+    .k-skeleton-wave {
+
+        .k-skeleton::after,
+        &.k-skeleton::after {
+
+            background-image: linear-gradient(
+                to right,
+                transparent,
+                $skeleton-wave-bg,
+                transparent
+            );
+
+        }
+
+    }
+}
