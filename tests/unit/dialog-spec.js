@@ -22,7 +22,7 @@ suite('Dialog', () => {
         assert.equal( action.offsetHeight, metrics.dialog.actions.height );
     });
 
-    test('Dialog buttons height should be 44', () => {
+    test('Dialog buttons height should be 30', () => {
         let button = $('#dialog .k-dialog-buttongroup .k-button');
 
         assert.equal( button.offsetHeight, metrics.dialog.buttons.height );
