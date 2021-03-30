@@ -16,13 +16,13 @@ $treeview-bg: null !default;
 $treeview-text: $component-text !default;
 $treeview-border: null !default;
 
-$treeview-item-hovered-text: $hovered-text !default;
 $treeview-item-hovered-bg: $hovered-bg !default;
+$treeview-item-hovered-text: $hovered-text !default;
 $treeview-item-hovered-border: null !default;
 $treeview-item-hovered-gradient: null !default;
 
-$treeview-item-selected-text: $selected-text !default;
 $treeview-item-selected-bg: $selected-bg !default;
+$treeview-item-selected-text: $selected-text !default;
 $treeview-item-selected-border: null !default;
 $treeview-item-selected-gradient: null !default;
 
@@ -33,15 +33,15 @@ $treeview-loadmore-checkboxes-padding-x: calc( #{$icon-spacing} + #{$checkbox-si
 $treeview-loadmore-checkboxes-icon-indent: calc( -1 * (#{$icon-spacing} + #{$treeview-indent}) ) !default;
 $treeview-loadmore-checkboxes-icon-margin-x: $icon-spacing !default;
 
-$treeview-loadmore-text: $primary !default;
 $treeview-loadmore-bg: transparent !default;
+$treeview-loadmore-text: $primary !default;
 $treeview-loadmore-border: null !default;
 
-$treeview-loadmore-hover-text: $primary-darker !default;
 $treeview-loadmore-hover-bg: transparent !default;
+$treeview-loadmore-hover-text: $primary-darker !default;
 $treeview-loadmore-hover-border: null !default;
 
-$treeview-loadmore-focus-text: $primary !default;
 $treeview-loadmore-focus-bg: transparent !default;
+$treeview-loadmore-focus-text: $primary !default;
 $treeview-loadmore-focus-border: null !default;
 $treeview-loadmore-focus-shadow: none !default;
