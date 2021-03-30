@@ -1,9 +1,16 @@
 {
-    "$schema": "@progress/kendo-theme-tasks/lib/schemas/themebuilder-swatch.json",
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.5.0/lib/schemas/themebuilder-swatch.json",
     "name": "Wireframe",
     "base": "@progress/kendo-theme-default",
-    "previewColors": [ "#ffffff", "#f6f6f6", "#656565", "#333333", "#000000" ],
-    "components": [ ],
+    "hidden": true,
+    "previewColors": [
+        "#ffffff",
+        "#f6f6f6",
+        "#656565",
+        "#333333",
+        "#000000"
+    ],
+    "components": [],
     "themeBuilder": [
         {
             "name": "",

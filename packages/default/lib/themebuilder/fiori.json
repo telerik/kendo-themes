@@ -1,9 +1,16 @@
 {
-    "$schema": "@progress/kendo-theme-tasks/lib/schemas/themebuilder-swatch.json",
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.5.0/lib/schemas/themebuilder-swatch.json",
     "name": "Fiori",
     "base": "@progress/kendo-theme-default",
-    "previewColors": [ "#ffffff", "#eaeaea", "#007cc0", "#13688c", "#003f59" ],
-    "components": [ ],
+    "hidden": true,
+    "previewColors": [
+        "#ffffff",
+        "#eaeaea",
+        "#007cc0",
+        "#13688c",
+        "#003f59"
+    ],
+    "components": [],
     "themeBuilder": [
         {
             "name": "",

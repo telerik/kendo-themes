@@ -1,9 +1,16 @@
 {
-    "$schema": "@progress/kendo-theme-tasks/lib/schemas/themebuilder-swatch.json",
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.5.0/lib/schemas/themebuilder-swatch.json",
     "name": "Moonlight",
     "base": "@progress/kendo-theme-default",
-    "previewColors": [ "#282f36", "#2f3640", "#40444f", "#f4af03", "#ffffff" ],
-    "components": [ ],
+    "hidden": true,
+    "previewColors": [
+        "#282f36",
+        "#2f3640",
+        "#40444f",
+        "#f4af03",
+        "#ffffff"
+    ],
+    "components": [],
     "themeBuilder": [
         {
             "name": "",

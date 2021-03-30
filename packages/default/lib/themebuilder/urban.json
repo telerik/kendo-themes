@@ -1,9 +1,16 @@
 {
-    "$schema": "@progress/kendo-theme-tasks/lib/schemas/themebuilder-swatch.json",
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.5.0/lib/schemas/themebuilder-swatch.json",
     "name": "Urban",
     "base": "@progress/kendo-theme-default",
-    "previewColors": [ "#ffffff", "#e3eef4", "#447a99", "#1b4b66", "#ff804d" ],
-    "components": [ ],
+    "hidden": true,
+    "previewColors": [
+        "#ffffff",
+        "#e3eef4",
+        "#447a99",
+        "#1b4b66",
+        "#ff804d"
+    ],
+    "components": [],
     "themeBuilder": [
         {
             "name": "",
