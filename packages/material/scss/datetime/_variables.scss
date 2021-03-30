@@ -1,9 +1,13 @@
 // DateTime
 $time-highlight-size: 1px;
 
-$time-list-highlight-color: null !default;
+$time-list-title-text: $subtle-text !default;
+$time-list-title-focus-text: $component-text !default;
+
+$time-list-highlight-bg: null !default;
+$time-list-highlight-border: null !default;
+
 $time-list-focused-bg: null !default;
-$time-list-title-focus: null !default;
 
 $time-header-padding: null !default;
 $timepicker-header-height: 2em;
