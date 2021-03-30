@@ -68,8 +68,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$base-gradient</td>
     <td></td>
-    <td>$base-bg, darken( $base-bg, 2% )</td>
-    <td>$base-bg, darken( $base-bg, 2% )</td>
+    <td>$base-bg, try-shade( $base-bg, 2% )</td>
+    <td>$base-bg, try-shade( $base-bg, 2% )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of the components' chrome area.</div></div>
@@ -78,8 +78,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$hovered-bg</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #ededed"></span>#ededed</td>
-    <td><span class="color-preview" style="background-color: #ededed"></span>#ededed</td>
+    <td>try-shade( $base-bg, .5 )</td>
+    <td>try-shade( $base-bg, .5 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered items.</div></div>
@@ -108,8 +108,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$hovered-gradient</td>
     <td></td>
-    <td>$hovered-bg, darken( $hovered-bg, 2% )</td>
-    <td>$hovered-bg, darken( $hovered-bg, 2% )</td>
+    <td>$hovered-bg, try-shade( $hovered-bg, 2% )</td>
+    <td>$hovered-bg, try-shade( $hovered-bg, 2% )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of hovered items.</div></div>

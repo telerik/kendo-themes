@@ -72,8 +72,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$base-gradient</td>
     <td></td>
-    <td>$base-bg, darken( $base-bg, 2% )</td>
-    <td>$base-bg, darken( $base-bg, 2% )</td>
+    <td>$base-bg, try-shade( $base-bg, 2% )</td>
+    <td>$base-bg, try-shade( $base-bg, 2% )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of the components' chrome area.</div></div>
@@ -82,8 +82,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$hovered-bg</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #ededed"></span>#ededed</td>
-    <td><span class="color-preview" style="background-color: #ededed"></span>#ededed</td>
+    <td>try-shade( $base-bg, .5 )</td>
+    <td>try-shade( $base-bg, .5 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered items.</div></div>
@@ -112,8 +112,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$hovered-gradient</td>
     <td></td>
-    <td>$hovered-bg, darken( $hovered-bg, 2% )</td>
-    <td>$hovered-bg, darken( $hovered-bg, 2% )</td>
+    <td>$hovered-bg, try-shade( $hovered-bg, 2% )</td>
+    <td>$hovered-bg, try-shade( $hovered-bg, 2% )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of hovered items.</div></div>
@@ -233,8 +233,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$button-text</td>
     <td></td>
-    <td>$base-text</td>
-    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
+    <td><span class="color-preview" style="background-color: #424242"></span>#424242</td>
+    <td><span class="color-preview" style="background-color: #424242"></span>#424242</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the buttons.</div></div>
@@ -243,7 +243,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$button-border</td>
     <td></td>
-    <td>$base-border</td>
+    <td>rgba( black, .08 )</td>
     <td>rgba( black, .08 )</td>
 </tr>
 <tr>
@@ -253,38 +253,38 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$button-gradient</td>
     <td></td>
-    <td>$base-gradient</td>
-    <td>$base-bg, darken( $base-bg, 2% )</td>
+    <td>rgba( black, 0 ), rgba( black, .02 )</td>
+    <td>rgba( black, 0 ), rgba( black, .02 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the buttons.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-hovered-text</td>
-    <td></td>
-    <td>$hovered-text</td>
-    <td>$base-text</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered buttons.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$button-hovered-bg</td>
     <td></td>
-    <td>$hovered-bg</td>
-    <td><span class="color-preview" style="background-color: #ededed"></span>#ededed</td>
+    <td>try-shade( $button-bg, .5 )</td>
+    <td>try-shade( $button-bg, .5 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered buttons.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$button-hovered-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered buttons.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$button-hovered-border</td>
     <td></td>
-    <td>$hovered-border</td>
-    <td>rgba( black, .15 )</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered buttons.</div></div>
@@ -293,58 +293,98 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$button-hovered-gradient</td>
     <td></td>
-    <td>$hovered-gradient</td>
-    <td>$hovered-bg, darken( $hovered-bg, 2% )</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of hovered buttons.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-pressed-bg</td>
+    <td>$button-active-bg</td>
     <td></td>
-    <td>$button-bg</td>
-    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
+    <td>try-shade( $button-bg, 1.5 )</td>
+    <td>try-shade( $button-bg, 1.5 )</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of pressed buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of active buttons.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-pressed-text</td>
+    <td>$button-active-text</td>
     <td></td>
-    <td>$button-text</td>
-    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of pressed buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of active buttons.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-pressed-border</td>
+    <td>$button-active-border</td>
     <td></td>
-    <td>$button-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of pressed buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of active buttons.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-pressed-gradient</td>
+    <td>$button-active-gradient</td>
     <td></td>
-    <td>none</td>
-    <td>none</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of pressed buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of active buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-selected-bg</td>
+    <td></td>
+    <td>$primary</td>
+    <td>$accent</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-selected-text</td>
+    <td></td>
+    <td>contrast-wcag( $button-selected-bg )</td>
+    <td>contrast-wcag( $button-selected-bg )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-selected-border</td>
+    <td></td>
+    <td>$button-selected-bg</td>
+    <td>$accent</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-selected-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of selected buttons.</div></div>
     </td>
 </tr>
 <tr>
     <td>$button-focused-shadow</td>
     <td></td>
-    <td>0 3px 4px 0 rgba(0, 0, 0, .06)</td>
-    <td>0 3px 4px 0 rgba(0, 0, 0, .06)</td>
+    <td>0 0 0 2px rgba( $button-border, .08 )</td>
+    <td>0 0 0 2px rgba( $button-border, .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of focused buttons.</div></div>
