@@ -1,0 +1,28 @@
+// Color constants
+$black: #000000;
+$white: #ffffff;
+
+$rgba-transparent: rgba( 0, 0, 0, 0 );
+
+$gradient-transparent-to-black: rgba( black, 0), black;
+$gradient-transparent-to-white: rgba( white, 0), white;
+$gradient-black-to-transparent: black, rgba( black, 0);
+$gradient-white-to-transparent: white, rgba( white, 0);
+
+$gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
+
+
+// Text colors for light themes
+$primary-text-on-light: #424242 !default;
+$secondary-text-on-light: #646464 !default;
+$tertiary-text-on-light: "" !default;
+$placeholder-text-on-light: #646464 !default;
+$disabled-text-on-light: #8d8d8d !default;
+
+
+// Text colors for dark themes
+$primary-text-on-dark: "" !default;
+$secondary-text-on-dark: "" !default;
+$tertiary-text-on-dark: "" !default;
+$placeholder-text-on-dark: "" !default;
+$disabled-text-on-dark: "" !default;

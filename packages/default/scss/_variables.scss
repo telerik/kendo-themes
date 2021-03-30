@@ -1,4 +1,5 @@
 @import "functions/_index.scss";
+@import "core/_color-system.scss";
 
 
 // Options
@@ -102,9 +103,6 @@ $zindex-window: 2 !default;
 
 // Color settings
 $is-dark-theme: false !default;
-
-$white: #ffffff !default;
-$black: #000000 !default;
 
 
 // Deprecated
@@ -227,25 +225,40 @@ $cursors: ( auto, default, none, context-menu, help, pointer, progress, wait, ce
     row-resize, all-scroll, zoom-in, zoom-out, grab, grabbing ) !default;
 
 
-// Color constants
-$rgba-transparent: rgba( 0, 0, 0, 0 );
+// Root styles
+$body-bg: $white !default;
+$body-text: #424242 !default;
 
-$gradient-transparent-to-black: rgba( black, 0), black;
-$gradient-transparent-to-white: rgba( white, 0), white;
-$gradient-black-to-transparent: black, rgba( black, 0);
-$gradient-white-to-transparent: white, rgba( white, 0);
+$heading-text: #272727 !default;
+$subtle-text: #646464 !default;
+$disabled-text: #8d8d8d !default;
 
-$gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
+$app-bg: try-shade( $body-bg, .25 ) !default;
+$app-text: $body-text !default;
+$app-border: rgba( $black, .08 ) !default;
 
 
-$bg-color: #ffffff !default;
-$text-color: #656565 !default;
-$border-color: rgba( black, .08 ) !default;
+// Components
+
+// Component
+/// Background color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.
+/// @group component
+$component-bg: $body-bg !default;
+/// Text color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.
+/// @group component
+$component-text: $body-text !default;
+/// Border color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
+/// @group component
+$component-border: rgba( black, .08 ) !default;
+
 
 /// The background of the components' chrome area.
 $base-bg: #f6f6f6 !default; // $secondary
 /// The text color of the components' chrome area.
-$base-text: #656565 !default;
+$base-text: $body-text !default;
 /// The border color of the components' chrome area.
 $base-border: rgba( black, .08 ) !default;
 /// The gradient background of the components' chrome area.
@@ -291,49 +304,6 @@ $font-size: 14px !default;
 $font-family: inherit !default;
 $line-height: ( 20 / 14 ) !default;
 
-// Root styles
-$body-bg: $bg-color !default;
-$body-text: $text-color !default;
-
-$subtle-text: try-tint( $body-text, 3 );
-$disabled-text: try-tint( $body-text, 6 );
-
-$app-bg: try-shade( $body-bg, .25 ) !default;
-$app-text: $body-text !default;
-$app-border: $border-color !default;
-
-
-// Components
-
-// Component
-/// Background color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.
-/// @group component
-$component-bg: $body-bg !default;
-/// Text color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.
-/// @group component
-$component-text: $body-text !default;
-/// Border color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
-/// @group component
-$component-border: rgba( black, .08 ) !default;
-
-
-// Widget
-/// Background color of a component.
-/// @deprecated Will be removed in v5. Use `$component-bg` variable instead.
-/// @group component
-$widget-bg: $component-bg !default;
-/// Text color of a component.
-/// @deprecated Will be removed in v5. Use `$component-text` variable instead.
-/// @group component
-$widget-text: $component-text !default;
-/// Border color of a component.
-/// @deprecated Will be removed in v5. Use `$component-border` variable instead.
-/// @group component
-$widget-border: $component-border !default;
-
 
 // Drop Hint
 $equilateral-index: 1.7320508076 !default;
@@ -358,7 +328,7 @@ $panel-border: $component-border !default;
 // Grouping
 $grouping-header-bg: $body-text !default;
 $grouping-header-text: $body-bg !default;
-$grouping-header-border: $border-color !default;
+$grouping-header-border: $component-border !default;
 $frozen-grouping-header-text: null !default;
 $frozen-grouping-header-border-width: null !default;
 
