@@ -42,8 +42,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$base-bg</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
-    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
+    <td><span class="color-preview" style="background-color: #fafafa"></span>#fafafa</td>
+    <td><span class="color-preview" style="background-color: #fafafa"></span>#fafafa</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the components' chrome area.</div></div>
@@ -52,8 +52,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$base-text</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
-    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
+    <td>$body-text</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the components' chrome area.</div></div>
@@ -93,7 +93,7 @@ The following table lists the available variables for customizing the Default th
     <td>$hovered-text</td>
     <td></td>
     <td>$base-text</td>
-    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered items.</div></div>
@@ -223,7 +223,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$button-bg</td>
     <td></td>
-    <td>$base-bg</td>
+    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
     <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
 </tr>
 <tr>
@@ -721,36 +721,6 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$widget-bg</td>
-    <td></td>
-    <td>$component-bg</td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$component-bg` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">Background color of a component.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$widget-text</td>
-    <td></td>
-    <td>$component-text</td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$component-text` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">Text color of a component.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$widget-border</td>
-    <td></td>
-    <td>$component-border</td>
-    <td>rgba( black, .08 )</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$component-border` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">Border color of a component.</div></div>
     </td>
 </tr>
 </tbody>

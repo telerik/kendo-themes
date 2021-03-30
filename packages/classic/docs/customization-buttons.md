@@ -79,7 +79,7 @@ The following table lists the available variables for customization.
     <td>$button-text</td>
     <td></td>
     <td>$base-text</td>
-    <td>$text-color</td>
+    <td>$body-text</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the buttons.</div></div>
