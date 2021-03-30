@@ -9,8 +9,8 @@ $dropdownlist-hovered-text: $button-hovered-text !default;
 $dropdownlist-hovered-border: $button-hovered-border !default;
 $dropdownlist-hovered-gradient: $button-hovered-gradient !default;
 
-$dropdownlist-focused-bg: $button-pressed-bg !default;
-$dropdownlist-focused-text: $button-pressed-text !default;
-$dropdownlist-focused-border: $button-pressed-border !default;
-$dropdownlist-focused-gradient: $button-pressed-gradient !default;
+$dropdownlist-focused-bg: $button-active-bg !default;
+$dropdownlist-focused-text: $button-active-text !default;
+$dropdownlist-focused-border: $button-active-border !default;
+$dropdownlist-focused-gradient: $button-active-gradient !default;
 $dropdownlist-focused-shadow: $button-focused-shadow !default;

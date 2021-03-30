@@ -58,11 +58,11 @@ $calendar-header-button-hovered-text: $button-hovered-text !default;
 $calendar-header-button-hovered-border: $button-hovered-border !default;
 $calendar-header-button-hovered-gradient: $button-hovered-gradient !default;
 
-$calendar-header-button-pressed-bg: $button-pressed-bg !default;
-$calendar-header-button-pressed-text: $button-pressed-text !default;
-$calendar-header-button-pressed-border: $button-pressed-border !default;
-$calendar-header-button-pressed-gradient: $button-pressed-gradient !default;
-$calendar-header-button-pressed-shadow: $button-pressed-shadow !default;
+$calendar-header-button-pressed-bg: $button-active-bg !default;
+$calendar-header-button-pressed-text: $button-active-text !default;
+$calendar-header-button-pressed-border: $button-active-border !default;
+$calendar-header-button-pressed-gradient: $button-active-gradient !default;
+$calendar-header-button-pressed-shadow: $button-active-shadow !default;
 
 $calendar-navigation-bg: $calendar-header-bg !default;
 $calendar-navigation-text: $calendar-header-text !default;

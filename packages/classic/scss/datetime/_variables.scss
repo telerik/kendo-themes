@@ -1,9 +1,13 @@
 // DateTime
 $time-highlight-size: 1px;
 
-$time-list-highlight-color: $border-color !default;
+$time-list-title-text: $subtle-text !default;
+$time-list-title-focus-text: $component-text !default;
+
+$time-list-highlight-bg: $component-bg !default;
+$time-list-highlight-border: $component-border !default;
+
 $time-list-focused-bg: rgba(0, 0, 0, .04) !default;
-$time-list-title-focus: black !default;
 
 $time-header-padding: null !default;
 $timepicker-header-height: 2em;
@@ -43,7 +47,7 @@ $datetime-select-hovered-text: $button-hovered-text !default;
 $datetime-select-hovered-border: $button-hovered-border !default;
 $datetime-select-hovered-gradient: $button-hovered-gradient !default;
 
-$datetime-select-pressed-bg: $button-pressed-bg !default;
-$datetime-select-pressed-text: $button-pressed-text !default;
-$datetime-select-pressed-border: $button-pressed-border !default;
-$datetime-select-pressed-gradient: $button-pressed-gradient !default;
+$datetime-select-pressed-bg: $button-active-bg !default;
+$datetime-select-pressed-text: $button-active-text !default;
+$datetime-select-pressed-border: $button-active-border !default;
+$datetime-select-pressed-gradient: $button-active-gradient !default;

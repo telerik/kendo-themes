@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$base-text</td>
     <td></td>
-    <td>$text-color</td>
+    <td>$body-text</td>
     <td></td>
 </tr>
 <tr>

@@ -10,7 +10,8 @@
 
 
         // Root
-        > .k-item {
+        > .k-item,
+        > .k-panelbar-header {
 
             > .k-link {
                 @include fill(
@@ -20,16 +21,10 @@
                     $panelbar-header-gradient
                 );
 
-                .k-icon {
+                .k-icon,
+                .k-panelbar-item-icon {
                     color: $panelbar-text;
                 }
-            }
-
-            &.k-state-active > .k-link,
-            &.k-state-expanded > .k-link {
-                color: inherit;
-                background-color: transparent;
-                font-weight: 500;
             }
 
             > .k-link:hover,
@@ -50,7 +45,8 @@
                     $panelbar-header-selected-gradient
                 );
 
-                .k-icon {
+                .k-icon,
+                .k-panelbar-item-icon {
                     color: inherit;
                 }
 
@@ -69,10 +65,13 @@
 
 
         // Sub
-        .k-group {
+        .k-group,
+        .k-panelbar-group {
 
             > .k-item > .k-link:hover,
-            > .k-item > .k-link.k-state-hover {
+            > .k-item > .k-link.k-state-hover,
+            > .k-panelbar-item > .k-link:hover,
+            > .k-panelbar-item > .k-link.k-state-hover, {
                 @include fill(
                     $panelbar-item-hovered-text,
                     $panelbar-item-hovered-bg,
@@ -81,7 +80,8 @@
                 );
             }
 
-            > .k-item > .k-link.k-state-selected {
+            > .k-item > .k-link.k-state-selected,
+            > .k-panelbar-item > .k-link.k-state-selected {
                 @include fill(
                     $panelbar-item-selected-text,
                     $panelbar-item-selected-bg,
@@ -97,7 +97,10 @@
 
             > .k-item > .k-link:focus,
             > .k-item > .k-link.k-state-focus,
-            > .k-item > .k-link.k-state-focused {
+            > .k-item > .k-link.k-state-focused,
+            > .k-panelbar-item > .k-link:focus,
+            > .k-panelbar-item > .k-link.k-state-focus,
+            > .k-panelbar-item > .k-link.k-state-focused {
                 box-shadow: $panelbar-item-focused-shadow;
             }
 

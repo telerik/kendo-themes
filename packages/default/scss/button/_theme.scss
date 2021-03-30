@@ -1,13 +1,15 @@
 @include exports( "button/theme" ) {
 
     // Default button
-    .k-button {
+    .k-button,
+    .k-button-secondary {
         @include fill(
             $button-text,
             $button-bg,
             $button-border,
             $button-gradient
         );
+        @include box-shadow( $button-shadow );
 
         // Hover state
         &:hover,
@@ -18,52 +20,63 @@
                 $button-hovered-border,
                 $button-hovered-gradient
             );
+            @include box-shadow( $button-hovered-shadow );
         }
 
         // Focused state
         &:focus,
+        &.k-state-focus,
         &.k-state-focused {
-            box-shadow: $button-focused-shadow;
+            @include box-shadow( $button-focused-shadow );
         }
 
-        // Pressed state
+        // Active state
         &:active,
         &.k-state-active {
             @include fill(
-                $button-pressed-text,
-                $button-pressed-bg,
-                $button-pressed-border,
-                $button-pressed-gradient
+                $button-active-text,
+                $button-active-bg,
+                $button-active-border,
+                $button-active-gradient
             );
-            box-shadow: inset $button-pressed-shadow;
+            @include box-shadow( $button-active-shadow );
         }
 
         // Selected state
         &.k-state-selected {
             @include fill(
-                $primary-button-pressed-text,
-                $primary-button-pressed-bg,
-                $primary-button-pressed-border,
-                $primary-button-pressed-gradient
+                $button-selected-text,
+                $button-selected-bg,
+                $button-selected-border,
+                $button-selected-gradient
             );
-            box-shadow: $primary-button-pressed-shadow;
+            @include box-shadow( $button-selected-shadow );
         }
 
         // Disabled state
-        // &:disabled,
-        // &.k-state-disabled {}
+        &:disabled,
+        &.k-state-disabled {
+            @include fill(
+                $button-disabled-text,
+                $button-disabled-bg,
+                $button-disabled-border,
+                $button-disabled-gradient
+            );
+            @include box-shadow( $button-disabled-shadow );
+        }
 
     }
 
 
     // Primary button
-    .k-button.k-primary {
+    .k-button-primary {
         @include fill(
             $primary-button-text,
             $primary-button-bg,
             $primary-button-border,
             $primary-button-gradient
         );
+        @include box-shadow( $primary-button-shadow );
 
         // Hovoer state
         &:hover,
@@ -74,134 +87,78 @@
                 $primary-button-hovered-border,
                 $primary-button-hovered-gradient
             );
+            @include box-shadow( $primary-button-hovered-shadow );
         }
 
         // Focused state
         &:focus,
+        &.k-state-focus,
         &.k-state-focused {
-            box-shadow: $primary-button-focused-shadow;
+            @include box-shadow( $primary-button-focused-shadow );
         }
 
         // Active state
         &:active,
         &.k-state-active {
             @include fill(
-                $primary-button-pressed-text,
-                $primary-button-pressed-bg,
-                $primary-button-pressed-border,
-                $primary-button-pressed-gradient
+                $primary-button-active-text,
+                $primary-button-active-bg,
+                $primary-button-active-border,
+                $primary-button-active-gradient
             );
-            box-shadow: $primary-button-pressed-shadow;
+            @include box-shadow( $primary-button-active-shadow );
         }
 
         // Selected state
         &.k-state-selected {
             @include fill(
-                $primary-button-pressed-text,
-                $primary-button-pressed-bg,
-                $primary-button-pressed-border,
-                $primary-button-pressed-gradient
+                $primary-button-selected-text,
+                $primary-button-selected-bg,
+                $primary-button-selected-border,
+                $primary-button-selected-gradient
             );
-            box-shadow: $primary-button-pressed-shadow;
+            @include box-shadow( $primary-button-selected-shadow );
         }
 
         // Disabled state
-        // &:disabled,
-        // &.k-state-disabled {}
-
-    }
-
-
-    // Dropdown button
-    .k-dropdown-button {
-        &:active > .k-button:not(:disabled),
-        &.k-state-active > .k-button:not(:disabled) {
-            box-shadow: inset $button-pressed-shadow;
-        }
-
-        &:focus > .k-button,
-        &.k-state-focused > .k-button {
-            box-shadow: $button-focused-shadow;
-        }
-    }
-
-    // Toggle button
-    .k-toggle-button {
-        &:focus,
-        &.k-state-focused {
-            box-shadow: $button-focused-shadow;
-        }
-
-        &:active,
-        &.k-state-active {
+        &:disabled,
+        &.k-state-disabled {
             @include fill(
-                $primary-button-pressed-text,
-                $primary-button-pressed-bg,
-                $primary-button-pressed-border,
-                $primary-button-pressed-gradient
+                $button-disabled-text,
+                $button-disabled-bg,
+                $button-disabled-border,
+                $button-disabled-gradient
             );
-            box-shadow: $primary-button-pressed-shadow;
-
-            &:focus,
-            &.k-state-focused {
-                box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13);
-            }
-
+            @include box-shadow( $button-disabled-shadow );
         }
+
     }
+    .k-button.k-primary {
+        @extend .k-button-primary;
+    }
+
+
+    // Menu button
+    .k-menu-button {}
 
 
     // Button group
     .k-button-group {
 
-        // Selected state
-        .k-button:active,
-        .k-button.k-state-active,
-        .k-button.k-state-selected,
-        > input[type="radio"]:checked + .k-button,
-        > input[type="checkbox"]:checked + .k-button {
-            @include fill(
-                $primary-button-pressed-text,
-                $primary-button-pressed-bg,
-                $primary-button-pressed-border,
-                $primary-button-pressed-gradient
-            );
-            box-shadow: $primary-button-pressed-shadow;
-        }
-
-        // Focused state
         .k-button:focus,
-        .k-button.k-state-focused,
-        > input[type="radio"]:focus + .k-button,
-        > input[type="checkbox"]:focus + .k-button {
-            box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13);
+        .k-button.k-state-focus,
+        .k-button.k-state-focused {
+            @include box-shadow( $button-group-focus-shadow );
         }
-
-        // Disabled state
-        // &:disabled,
-        // &.k-state-disabled {}
 
     }
 
 
     // Split button
     .k-split-button:focus,
+    .k-split-button.k-state-focus,
     .k-split-button.k-state-focused {
-        outline: none;
-        box-shadow: $button-focused-shadow;
-    }
-
-    .k-split-button.k-button-group .k-button {
-        &:active,
-        &.k-state-active {
-            @include fill(
-                $button-pressed-text,
-                $button-pressed-bg,
-                $button-pressed-border,
-                $button-pressed-gradient
-            );
-            box-shadow: inset $button-pressed-shadow;
-        }
+        @include box-shadow( $button-focused-shadow );
     }
 
 }
@@ -212,11 +169,11 @@
 @include exports( "outline-button/theme" ) {
 
     // Outline button
-    .k-button.k-outline {
+    .k-button-outline {
+        @include box-shadow( none );
         border-color: currentColor;
         color: $button-text;
         background: none;
-        box-shadow: none;
 
         // Hover state
         &:hover,
@@ -226,6 +183,7 @@
 
         // Focused state
         &:focus,
+        &.k-state-focus,
         &.k-state-focused {
             box-shadow: $button-focused-shadow;
         }
@@ -241,7 +199,7 @@
             @include fill( contrast-wcag( $button-text ), $button-text, $button-text, none );
         }
     }
-    .k-button.k-primary.k-outline {
+    .k-button-outline.k-primary {
         border-color: currentColor;
         color: $primary-button-bg;
         background: none;
@@ -255,6 +213,7 @@
 
         // Focused state
         &:focus,
+        &.k-state-focus,
         &.k-state-focused {
             box-shadow: $primary-button-focused-shadow;
         }
@@ -318,39 +277,36 @@
 
 }
 
-@include exports( "clear-button/theme" ) {
-    .k-button.k-button-clear {
-        border-color: transparent !important; // sass-lint:disable-line no-important
-        color: $clear-button-text;
-        background: none !important; // sass-lint:disable-line no-important
-        box-shadow: none !important; // sass-lint:disable-line no-important
 
-        &::after {
-            display: block;
-        }
+
+
+@include exports( "clear-button/theme" ) {
+
+    .k-button-clear {
+        color: $clear-button-text;
 
         &:hover,
         &.k-state-hover,
         &:active,
         &.k-state-active,
+        &.k-state-selected,
         &:focus,
+        &.k-state-focus,
         &.k-state-focused {
             color: $clear-button-hover-text;
         }
 
-        &:active,
-        &.k-state-active {
-            &::after {
-                background: transparent;
-            }
-        }
-
+        &:focus,
+        &.k-state-focus,
         &.k-state-focused,
         &.k-state-focused:active {
             &::after {
                 background-color: $clear-button-text;
                 opacity: $clear-button-focused-opacity;
+                display: block;
             }
         }
+
     }
+
 }

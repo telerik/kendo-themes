@@ -145,11 +145,6 @@
         align-items: center;
         flex-wrap: wrap;
         overflow: hidden;
-
-        &.k-actions-stretched {
-            @include border-bottom-radius( $window-border-radius );
-            border-width: $window-buttongroup-border-width 0 0;
-        }
     }
 
 

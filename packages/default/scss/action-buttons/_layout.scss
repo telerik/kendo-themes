@@ -1,27 +1,37 @@
 @include exports("action-buttons/layout") {
 
-    .k-actions,
-    .k-action-buttons,
-    .k-columnmenu-actions {
+    .k-actions {
         padding: $actions-padding-y $actions-padding-x;
-        border-width: $actions-border-width;
+        border-width: $actions-border-width 0 0 0;
         border-style: solid;
         border-color: inherit;
+        flex-shrink: 0;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         align-content: flex-end;
         justify-content: flex-end;
+        gap: $actions-button-spacing;
+        overflow: hidden;
+        // TODO: remove
         clear: both;
 
-        .k-button + .k-button {
-            margin-left: $actions-button-gap;
+        .k-button {
+            flex: 0 0 auto;
+        }
+    }
+
+
+    // Legacy spacing
+    .k-ie {
+        .k-actions .k-button ~ .k-button {
+            margin-left: $actions-button-spacing;
             flex-shrink: 0;
 
             .k-rtl &,
             [dir="rtl"] & {
                 margin-left: 0;
-                margin-right: $actions-button-gap;
+                margin-right: $actions-button-spacing;
             }
         }
     }
@@ -33,10 +43,6 @@
 
     .k-actions {
         justify-content: flex-start;
-
-        .k-button {
-            flex: 0 0 auto;
-        }
 
         &.k-actions-start {
             justify-content: flex-start;
@@ -51,38 +57,19 @@
         }
 
         &.k-actions-stretched {
-            padding: 0;
-            align-items: stretch;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-            border-width: 1px 0 0;
-            border-style: solid;
-            display: flex;
-            flex-direction: row;
-            flex-shrink: 0;
-            flex-basis: auto;
-            overflow: hidden;
-
             .k-button {
-                background-clip: border-box;
-                border-radius: 0;
-                padding: 12px 16px;
-                border-width: 0;
-                text-overflow: ellipsis;
-                flex: 1 0 0%;
-                flex-grow: 1;
-                display: inline-block;
-                overflow: hidden;
-
                 width: auto !important; // sass-lint:disable-line no-important
                 max-width: 100%;
-
-                ~ .k-button {
-                    margin: 0;
-                    border-left-width: 1px;
-                }
+                flex: 1 0 0%;
+                flex-grow: 1;
             }
         }
+    }
+
+
+    .k-action-buttons,
+    .k-columnmenu-actions {
+        @extend .k-actions;
     }
 
 }

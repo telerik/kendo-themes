@@ -26,7 +26,7 @@ $upload-multiple-items-spacing: 12px !default;
 
 $upload-validation-font-size: 12px !default;
 $upload-icon-spacing: $icon-spacing !default;
-$upload-icon-color: rgba($base-text, .52) !default;
+$upload-icon-color: $subtle-text !default;
 
 $upload-item-image-width: 24px !default;
 $upload-item-image-height: 28px !default;
@@ -36,7 +36,7 @@ $upload-group-icon-size: $icon-size-lg !default;
 
 $upload-progress-thickness: 2px !default;
 $upload-progress-bg: $info !default;
-$upload-progress-text: $base-text !default;
+$upload-progress-text: $component-text !default;
 
 $upload-success-bg: $success !default;
 $upload-success-text: $success !default;

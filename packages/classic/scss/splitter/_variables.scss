@@ -14,7 +14,7 @@ $splitter-drag-handle-length: 20px !default;
 $splitter-drag-handle-thickness: 2px !default;
 $splitter-drag-icon-margin: 7px !default;
 
-$splitbar-bg: try-shade( $base-bg, .5 ) !default;
+$splitbar-bg: $base-bg !default;
 $splitbar-text: $base-text !default;
 
 $splitbar-hover-bg: try-shade( $splitbar-bg, .5 ) !default;

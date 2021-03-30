@@ -92,21 +92,27 @@ $button-padding-y: $padding-y !default;
 
 $button-bg: $base-bg !default;
 $button-text: $base-text !default;
-$button-border: $base-border !default;
-$button-gradient: $base-gradient !default;
-$button-shadow: false !default;
+$button-border: try-shade( $button-bg, 1 ) !default;
+$button-gradient: rgba( 0, 0, 0, .02 ), rgba( 0, 0, 0, .08 ) !default;
+$button-shadow: null !default;
 
-$button-hovered-bg: $hovered-bg !default;
-$button-hovered-text: $hovered-text !default;
-$button-hovered-border: $hovered-border !default;
-$button-hovered-gradient: false !default;
-$button-hovered-shadow: false !default;
+$button-hovered-bg: try-shade( $button-bg, 1 ) !default;
+$button-hovered-text: null !default;
+$button-hovered-border: try-shade( $button-hovered-bg, 2 ) !default;
+$button-hovered-gradient: null !default;
+$button-hovered-shadow: null !default;
 
-$button-pressed-bg: $primary !default;
-$button-pressed-text: contrast-wcag( $button-pressed-bg ) !default;
-$button-pressed-border: try-shade( $button-pressed-bg, 2 ) !default;
-$button-pressed-gradient: false !default;
-$button-pressed-shadow: false !default;
+$button-active-bg: try-shade( $button-bg, 2 ) !default;
+$button-active-text: null !default;
+$button-active-border: try-shade( $button-active-bg, 2 ) !default;
+$button-active-gradient: null !default;
+$button-active-shadow: null !default;
+
+$button-selected-bg: $button-active-bg !default;
+$button-selected-text: $button-active-text !default;
+$button-selected-border: $button-active-border !default;
+$button-selected-gradient: null !default;
+$button-selected-shadow: null !default;
 
 $button-focused-shadow: 0 0 4px 0 rgba( $button-border, .75 ) !default;
 
@@ -114,20 +120,26 @@ $button-focused-shadow: 0 0 4px 0 rgba( $button-border, .75 ) !default;
 $primary-button-bg: $primary !default;
 $primary-button-text: contrast-wcag( $primary-button-bg ) !default;
 $primary-button-border: try-shade( $primary-button-bg, 2 ) !default;
-$primary-button-gradient: $base-gradient !default;
-$primary-button-shadow: false !default;
+$primary-button-gradient: rgba( 0, 0, 0, .02 ), rgba( 0, 0, 0, .08 ) !default;
+$primary-button-shadow: null !default;
 
-$primary-button-hovered-bg: try-shade( $primary-button-bg, 2 ) !default;
+$primary-button-hovered-bg: try-shade( $primary-button-bg, 1 ) !default;
 $primary-button-hovered-text: contrast-wcag( $primary-button-hovered-bg ) !default;
 $primary-button-hovered-border: try-shade( $primary-button-hovered-bg, 2 ) !default;
-$primary-button-hovered-gradient: false !default;
-$primary-button-hovered-shadow: false !default;
+$primary-button-hovered-gradient: null !default;
+$primary-button-hovered-shadow: null !default;
 
-$primary-button-pressed-bg: try-shade( $primary-button-bg, 3 ) !default;
-$primary-button-pressed-text: contrast-wcag( $primary-button-pressed-bg ) !default;
-$primary-button-pressed-border: try-shade( $primary-button-pressed-bg, 2 ) !default;
-$primary-button-pressed-gradient: none !default;
-$primary-button-pressed-shadow: false !default;
+$primary-button-active-bg: try-shade( $primary-button-bg, 2 ) !default;
+$primary-button-active-text: contrast-wcag( $primary-button-active-bg ) !default;
+$primary-button-active-border: try-shade( $primary-button-active-bg, 2 ) !default;
+$primary-button-active-gradient: null !default;
+$primary-button-active-shadow: null !default;
+
+$primary-button-selected-bg: $primary-button-active-bg !default;
+$primary-button-selected-text: $primary-button-active-text !default;
+$primary-button-selected-border: $primary-button-active-border !default;
+$primary-button-selected-gradient: null !default;
+$primary-button-selected-shadow: null !default;
 
 $primary-button-focused-shadow: 0 0 4px 0 rgba( $primary-button-border, .75 ) !default;
 

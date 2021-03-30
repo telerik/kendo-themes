@@ -26,10 +26,10 @@
             width: $slider-button-size;
             box-sizing: content-box;
 
-            .k-icon {
+            .k-icon,
+            .k-button-icon {
                 vertical-align: baseline;
                 line-height: $slider-button-size;
-                margin-right: 0;
                 height: 100%;
             }
         }

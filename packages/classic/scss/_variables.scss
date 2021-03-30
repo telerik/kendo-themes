@@ -58,7 +58,7 @@ $spacing: (
 // Icons
 $icon-size: 16px !default;
 $icon-size-lg: 32px !default;
-$icon-spacing: 4px !default;
+$icon-spacing: map-get( $spacing, 1 ) !default;
 
 /// The URL to the icon font that will be used by the theme
 /// The default value of `null` embeds the package font with a `data:` URL
@@ -221,15 +221,23 @@ $gradient-white-to-transparent: white, rgba( white, 0);
 
 $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
+// Root styles
+$body-bg: $white !default;
+$body-text: #272727 !default;
 
-$bg-color: #ffffff !default;
-$text-color: #2e2e2e !default;
-$border-color: try-shade( $bg-color, 2 ) !default;
+$heading-text: #272727 !default;
+$subtle-text: #646464 !default;
+$disabled-text: #8d8d8d !default;
+
+$app-bg: $body-bg !default;
+$app-text: $body-text !default;
+$app-border: try-shade( $app-bg, 2 ) !default;
+
 
 /// The background of the components' chrome area.
 $base-bg: $secondary !default;
 /// The text color of the components' chrome area.
-$base-text: $text-color !default;
+$base-text: $body-text !default;
 /// The border color of the components' chrome area.
 $base-border: try-shade( $base-bg, 2 ) !default;
 /// The gradient background of the components' chrome area.
@@ -274,17 +282,6 @@ $font-size: 14px !default;
 $font-family: inherit !default;
 $line-height: ( 20 / 14 ) !default;
 
-// Root styles
-$body-bg: $bg-color !default;
-$body-text: $text-color !default;
-
-$subtle-text: try-tint( $body-text, 3 );
-$disabled-text: try-tint( $body-text, 6 );
-
-$app-bg: $body-bg !default;
-$app-text: $body-text !default;
-$app-border: $border-color !default;
-
 
 // Components
 
@@ -301,21 +298,6 @@ $component-text: $body-text !default;
 /// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
 /// @group component
 $component-border: rgba( black, .08 ) !default;
-
-
-// Widget
-/// Background color of a component.
-/// @deprecated Will be removed in v5. Use `$component-bg` variable instead.
-/// @group component
-$widget-bg: $component-bg !default;
-/// Text color of a component.
-/// @deprecated Will be removed in v5. Use `$component-text` variable instead.
-/// @group component
-$widget-text: $component-text !default;
-/// Border color of a component.
-/// @deprecated Will be removed in v5. Use `$component-border` variable instead.
-/// @group component
-$widget-border: $component-border !default;
 
 
 // Drop Hint
@@ -339,9 +321,9 @@ $panel-border: $component-border !default;
 
 
 // Grouping
-$grouping-header-bg: $body-text !default;
-$grouping-header-text: $body-bg !default;
-$grouping-header-border: $border-color !default;
+$grouping-header-bg: $component-text !default;
+$grouping-header-text: $component-bg !default;
+$grouping-header-border: $component-border !default;
 $frozen-grouping-header-text: null !default;
 $frozen-grouping-header-border-width: null !default;
 

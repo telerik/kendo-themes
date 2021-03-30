@@ -54,20 +54,30 @@
             );
         }
 
-        // Pressed state
+        // Active state
         &:active,
         &.k-state-active {
             @include fill(
-                $button-pressed-text,
-                $button-pressed-bg,
-                $button-pressed-border,
-                $button-pressed-gradient
+                $button-active-text,
+                $button-active-bg,
+                $button-active-border,
+                $button-active-gradient
             );
-            @include box-shadow( $button-pressed-shadow );
+        }
+
+        // Selected state
+        &.k-state-selected {
+            @include fill(
+                $button-selected-text,
+                $button-selected-bg,
+                $button-selected-border,
+                $button-selected-gradient
+            );
         }
 
         // Focused state
         &:focus,
+        &.k-state-focus,
         &.k-state-focused {
             box-shadow: $button-focused-shadow;
         }
