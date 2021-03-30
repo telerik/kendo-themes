@@ -10,11 +10,11 @@ $appbar-line-height: $line-height !default;
 $appbar-font-family: $font-family !default;
 $appbar-gap: map-get( $spacing, 2 ) !default;
 
-$appbar-light-bg: #ffffff !default;
-$appbar-light-text: #000000 !default;
+$appbar-light-bg: $light !default;
+$appbar-light-text: contrast-wcag( $light ) !default;
 
-$appbar-dark-bg: #121212 !default;
-$appbar-dark-text: rgba(#ffffff, .87) !default;
+$appbar-dark-bg: $dark !default;
+$appbar-dark-text: contrast-wcag( $dark ) !default;
 
 $appbar-box-shadow: 0px 2px 3px rgba(0, 0, 0, .24);
 $appbar-bottom-box-shadow:  0px -2px 3px rgba(0, 0, 0, .24);
