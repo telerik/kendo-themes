@@ -103,7 +103,7 @@
     .k-time-header {
 
         .k-time-now {
-            color: $primary;
+            color: $link-text;
             background: transparent;
 
             &:hover,
@@ -116,23 +116,14 @@
 
     // Timepicker content
     .k-time-list-wrapper {
-        background-color: $popup-bg;
 
         .k-title {
-            @include fill(
-                $header-text,
-                $header-bg,
-                $header-border,
-                $header-gradient
-            );
-            background: $popup-bg;
-            opacity: $disabled-opacity;
+            color: $time-list-title-text;
         }
 
         &.k-state-focused {
             .k-title {
-                color: $time-list-title-focus;
-                opacity: 1;
+                color: $time-list-title-focus-text;
             }
 
             &::before,
@@ -159,8 +150,10 @@
     }
 
     .k-time-highlight {
-        background-color: $component-bg;
-        border-color: $time-list-highlight-color;
+        @include fill(
+            $bg: $time-list-highlight-bg,
+            $border: $time-list-highlight-border
+        );
     }
 
     .k-datetime-container {

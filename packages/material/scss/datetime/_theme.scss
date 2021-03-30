@@ -14,18 +14,7 @@
     .k-datetime-wrap {
         .k-time-header {
 
-            .k-title {
-                color: $dateinput-text;
-            }
-
             .k-time-now {
-                color: $action-button-text;
-
-                &:hover,
-                &:focus {
-                    color: $link-hover-text;
-                }
-
                 &::before {
                     opacity: 0;
                 }
@@ -33,17 +22,6 @@
         }
 
         .k-time-list-wrapper {
-            .k-title {
-                color: $dateinput-text;
-                opacity: .3;
-            }
-
-            &.k-state-focused {
-                .k-title {
-                    color: $dateinput-text;
-                    opacity: 1;
-                }
-            }
 
             .k-time-list {
                 .k-item:hover {
