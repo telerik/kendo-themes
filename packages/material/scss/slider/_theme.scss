@@ -11,7 +11,7 @@
         }
 
         .k-tick::after {
-            @include fill( $bg: $base-text );
+            @include fill( $bg: $body-text );
         }
 
         .k-button {

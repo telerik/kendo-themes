@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.31.1"></a>
+## [3.31.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.31.0...@progress/kendo-theme-material@3.31.1) (2021-03-29)
+
+
+### Bug Fixes
+
+* update focus state ([89d9020](https://github.com/telerik/kendo-themes/commit/89d9020))
+* update grid sticky columns/rows styling ([4e86821](https://github.com/telerik/kendo-themes/commit/4e86821))
+
+
+
+
 <a name="3.31.0"></a>
 # [3.31.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.30.0...@progress/kendo-theme-material@3.31.0) (2021-03-15)
 

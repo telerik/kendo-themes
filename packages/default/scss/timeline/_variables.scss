@@ -13,8 +13,8 @@ $timeline-mobile-spacing-y: 16px !default;
 $timeline-track-arrow-width: 30px !default;
 $timeline-track-arrow-height: 30px !default;
 
-$timeline-track-arrow-disabled-text: true-mix($button-text, $body-bg, 65%) !default;
 $timeline-track-arrow-disabled-bg: true-mix($button-bg, $body-bg, 65%) !default;
+$timeline-track-arrow-disabled-text: true-mix($button-text, $body-bg, 65%) !default;
 $timeline-track-arrow-disabled-border: true-mix(#000000, $body-bg, 4.8%) !default;
 
 $timeline-track-size: 6px !default;

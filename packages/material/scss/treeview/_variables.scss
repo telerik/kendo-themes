@@ -33,15 +33,15 @@ $treeview-loadmore-checkboxes-padding-x: calc( #{$icon-spacing} + #{$checkbox-si
 $treeview-loadmore-checkboxes-icon-indent: calc( -1 * (#{$icon-spacing} + #{$treeview-indent}) ) !default;
 $treeview-loadmore-checkboxes-icon-margin-x: $icon-spacing !default;
 
-$treeview-loadmore-text: $primary !default;
 $treeview-loadmore-bg: transparent !default;
+$treeview-loadmore-text: $primary !default;
 $treeview-loadmore-border: null !default;
 
-$treeview-loadmore-hover-text: $primary-darker !default;
 $treeview-loadmore-hover-bg: transparent !default;
+$treeview-loadmore-hover-text: $primary-darker !default;
 $treeview-loadmore-hover-border: null !default;
 
-$treeview-loadmore-focus-text: $primary !default;
 $treeview-loadmore-focus-bg: transparent !default;
+$treeview-loadmore-focus-text: $primary !default;
 $treeview-loadmore-focus-border: null !default;
 $treeview-loadmore-focus-shadow: none !default;

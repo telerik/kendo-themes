@@ -27,15 +27,12 @@ $button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-
 /// The background of the buttons.
 /// @group buttons
 $button-bg: $secondary !default;
-
 /// The text color of the buttons.
 /// @group buttons
 $button-text: contrast-wcag( $button-bg, $gray-900 ) !default;
-
 /// The border color of the buttons.
 /// @group buttons
 $button-border: $button-bg !default;
-
 /// The background gradient of the buttons.
 /// @group buttons
 $button-gradient: null !default;
@@ -44,45 +41,56 @@ $button-shadow: null !default;
 /// The background of hovered buttons.
 /// @group buttons
 $button-hovered-bg: try-darken( $button-bg, 7.5% ) !default;
-
 /// The text color of hovered buttons.
 /// @group buttons
-$button-hovered-text: contrast-wcag( $button-hovered-bg, $gray-900 ) !default;
-
+$button-hovered-text: null !default;
 /// The border color of hovered buttons.
 /// @group buttons
 $button-hovered-border: try-darken( $button-border, 10% ) !default;
-
 /// The background gradient of hovered buttons.
 /// @group buttons
 $button-hovered-gradient: null !default;
 $button-hovered-shadow: null !default;
 
-/// The background color of pressed buttons.
+/// The background color of active buttons.
 /// @group buttons
-$button-pressed-bg:  try-darken( $button-bg, 10% ) !default;
+$button-active-bg: try-darken( $button-bg, 10% ) !default;
+/// The text color of active buttons.
+/// @group buttons
+$button-active-text: null !default;
+/// The border color of active buttons.
+/// @group buttons
+$button-active-border: try-darken( $button-border, 12.5% ) !default;
+/// The background gradient of active buttons.
+/// @group buttons
+$button-active-gradient: null !default;
+$button-active-shadow: null !default;
 
-/// The text color of pressed buttons.
+/// The background color of selected buttons.
 /// @group buttons
-$button-pressed-text: contrast-wcag( $button-pressed-bg, $gray-900 ) !default;
-
-/// The border color of pressed buttons.
+$button-selected-bg: try-darken( $primary, 10% ) !default;
+/// The text color of selected buttons.
 /// @group buttons
-$button-pressed-border: try-darken( $button-border, 12.5% ) !default;
-
-/// The background gradient of pressed buttons.
+$button-selected-text: contrast-wcag( $button-selected-bg ) !default;
+/// The border color of selected buttons.
 /// @group buttons
-$button-pressed-gradient: null !default;
-$button-pressed-shadow: null !default;
+$button-selected-border: try-darken( $primary, 12.5% ) !default;
+/// The background gradient of selected buttons.
+/// @group buttons
+$button-selected-gradient: null !default;
+$button-selected-shadow: null !default;
 
 /// The shadow of focused buttons.
 /// @group buttons
-$button-focused-shadow: 0 0 0 3px rgba($button-border, .5) !default;
+$button-focused-shadow: 0 0 0 3px rgba( $button-border, .5 ) !default;
 
 
 // Disabled button
 $button-disabled-bg: null !default;
 $button-disabled-text: null !default;
+$button-disabled-border: null !default;
+$button-disabled-gradient: null !default;
+$button-disabled-shadow: null !default;
 
 
 // Primary button
@@ -90,22 +98,32 @@ $primary-button-bg: $primary !default;
 $primary-button-text: contrast-wcag( $primary-button-bg ) !default;
 $primary-button-border: $primary-button-bg !default;
 $primary-button-gradient: null !default;
+$primary-button-shadow: null !default;
 
 $primary-button-hovered-bg: try-darken( $primary-button-bg, 7.5% ) !default;
 $primary-button-hovered-text: contrast-wcag( $primary-button-hovered-bg ) !default;
 $primary-button-hovered-border: try-darken( $primary-button-border, 10% ) !default;
 $primary-button-hovered-gradient: null !default;
+$primary-button-hovered-shadow: null !default;
 
-$primary-button-pressed-bg: try-darken( $primary-button-bg, 10% ) !default;
-$primary-button-pressed-text: contrast-wcag( $primary-button-pressed-bg ) !default;
-$primary-button-pressed-border: try-darken( $primary-button-border, 12.5% ) !default;
-$primary-button-pressed-gradient: null !default;
-$primary-button-pressed-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
+$primary-button-active-bg: try-darken( $primary-button-bg, 10% ) !default;
+$primary-button-active-text: contrast-wcag( $primary-button-active-bg ) !default;
+$primary-button-active-border: try-darken( $primary-button-border, 12.5% ) !default;
+$primary-button-active-gradient: null !default;
+$primary-button-active-shadow: null !default;
 
-$primary-button-focused-shadow: 0 0 0 3px rgba($primary-button-border, .5) !default;
+$primary-button-selected-bg: $primary-button-active-bg !default;
+$primary-button-selected-text: $primary-button-active-text !default;
+$primary-button-selected-border: $primary-button-active-border !default;
+$primary-button-selected-gradient: null !default;
+$primary-button-selected-shadow: null !default;
+
+$primary-button-focused-shadow: 0 0 0 3px rgba( $primary-button-border, .5 ) !default;
+
+$button-group-focus-shadow: null !default;
 
 $flat-button-hover-opacity: .08 !default;
-$flat-button-focused-opacity: null !default;
+$flat-button-focus-opacity: null !default;
 $flat-button-active-opacity: .16 !default;
 $flat-button-selected-opacity: .2 !default;
 

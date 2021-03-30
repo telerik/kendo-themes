@@ -217,11 +217,8 @@
             display: inline-flex;
             flex-flow: row nowrap;
             align-items: center;
+            gap: $icon-spacing;
             cursor: pointer;
-
-            .k-icon {
-                margin-right: $icon-spacing;
-            }
 
             .k-sm-date-format,
             .k-lg-date-format {
@@ -329,6 +326,11 @@
         .k-nav-current {
             border: 0;
             margin-left: 0;
+            gap: 0;
+
+            > .k-link {
+                gap: $icon-spacing;
+            }
         }
         .k-nav-today { @include border-left-radius-only( $border-radius ); }
         .k-nav-next { @include border-right-radius-only( $border-radius ); }
@@ -458,6 +460,7 @@
             align-items: center;
             align-content: center;
             justify-content: center;
+            gap: $icon-spacing;
         }
 
         li {
@@ -473,11 +476,6 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-    }
-    .k-scheduler-fullday {
-        .k-icon {
-            margin-right: $icon-spacing;
-        }
     }
 
 
@@ -1133,19 +1131,6 @@
             li + li {
                 margin-left: 0;
                 margin-right: -1px;
-            }
-        }
-
-        .k-nav-current .k-icon {
-            margin-right: 0;
-            margin-left: .4ex;
-        }
-
-
-        .k-scheduler-fullday {
-            .k-icon {
-                margin-right: 0;
-                margin-left: $icon-spacing;
             }
         }
 

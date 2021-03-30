@@ -1,17 +1,17 @@
 // Button
 
 /// Width of border around buttons
-/// @group button
+/// @group buttons
 $button-border-width: 1px !default;
 /// Border radius of buttons
-/// @group button
+/// @group buttons
 $button-border-radius: $border-radius !default;
 
 /// Horizontal padding of buttons
-/// @group button
+/// @group buttons
 $button-padding-x: $padding-x !default;
 /// Vertical padding of buttons
-/// @group button
+/// @group buttons
 $button-padding-y: $padding-y !default;
 $button-font-family: $font-family !default;
 $button-font-size: $font-size !default;
@@ -24,91 +24,109 @@ $button-line-height-sm: $line-height-sm !default;
 $button-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} + #{$button-border-width * 2} ) !default;
 $button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} ) !default;
 
-/// The text color of the buttons.
-/// @group button
-$button-text: $base-text !default;
-
 /// The background of the buttons.
-/// @group button
+/// @group buttons
 $button-bg: $base-bg !default;
-
+/// The text color of the buttons.
+/// @group buttons
+$button-text: $base-text !default;
 /// The border color of the buttons.
-/// @group button
-$button-border: $base-border !default;
-
+/// @group buttons
+$button-border: try-shade( $button-bg, 2 ) !default;
 /// The background gradient of the buttons.
-/// @group button
+/// @group buttons
 $button-gradient: $base-gradient !default;
 $button-shadow: null !default;
 
-/// The text color of hovered buttons.
-/// @group button
-$button-hovered-text: $hovered-text !default;
-
 /// The background of hovered buttons.
-/// @group button
-$button-hovered-bg: $hovered-bg !default;
-
+/// @group buttons
+$button-hovered-bg: try-shade( $button-bg, 1 ) !default;
+/// The text color of hovered buttons.
+/// @group buttons
+$button-hovered-text: null !default;
 /// The border color of hovered buttons.
-/// @group button
-$button-hovered-border: $hovered-border !default;
-
+/// @group buttons
+$button-hovered-border: try-shade( $button-hovered-bg, 2 ) !default;
 /// The background gradient of hovered buttons.
-/// @group button
-$button-hovered-gradient: $hovered-gradient !default;
+/// @group buttons
+$button-hovered-gradient: null !default;
 $button-hovered-shadow: null !default;
 
-/// The text color of pressed buttons.
-/// @group button
-$button-pressed-text: $button-text !default;
+/// The background color of active buttons.
+/// @group buttons
+$button-active-bg: try-shade( $button-bg, 2 ) !default;
+/// The text color of active buttons.
+/// @group buttons
+$button-active-text: null !default;
+/// The border color of active buttons.
+/// @group buttons
+$button-active-border: try-shade( $button-active-bg, 2 ) !default;
+/// The background gradient of active buttons.
+/// @group buttons
+$button-active-gradient: null !default;
+$button-active-shadow: null !default;
 
-/// The background color of pressed buttons.
-/// @group button
-$button-pressed-bg: $button-bg !default;
-
-/// The border color of pressed buttons.
-/// @group button
-$button-pressed-border: $button-border !default;
-
-/// The background gradient of pressed buttons.
-/// @group button
-$button-pressed-gradient: none !default;
-$button-pressed-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
+/// The background color of selected buttons.
+/// @group buttons
+$button-selected-bg: $button-active-bg !default;
+/// The text color of selected buttons.
+/// @group buttons
+$button-selected-text: $button-active-text !default;
+/// The border color of selected buttons.
+/// @group buttons
+$button-selected-border: $button-active-border !default;
+/// The background gradient of selected buttons.
+/// @group buttons
+$button-selected-gradient: null !default;
+$button-selected-shadow: null !default;
 
 /// The shadow of focused buttons.
-/// @group button
-$button-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
+/// @group buttons
+$button-focused-shadow: 0 0 4px 0 rgba( $button-border, .75 ) !default;
 
 
 // Disabled button
 $button-disabled-bg: null !default;
 $button-disabled-text: null !default;
+$button-disabled-border: null !default;
+$button-disabled-gradient: null !default;
+$button-disabled-shadow: null !default;
 
 
 // Primary button
 $primary-button-bg: $primary !default;
 $primary-button-text: contrast-wcag( $primary-button-bg ) !default;
-$primary-button-border: $primary-button-bg !default;
-$primary-button-gradient: rgba( adjust-hue( $primary-button-bg, 14), 0 ), rgba( adjust-hue( $primary-button-bg, 14), .2 ) !default;
+$primary-button-border: try-shade( $primary-button-bg, 2 ) !default;
+$primary-button-gradient: null !default;
+$primary-button-shadow: null !default;
 
-$primary-button-hovered-text: $primary-button-text !default;
-$primary-button-hovered-bg: adjust-hue( $primary-button-bg, 3) !default;
-$primary-button-hovered-border: $primary-button-hovered-bg !default;
-$primary-button-hovered-gradient: rgba( adjust-hue( $primary-button-hovered-bg, 14), 0 ), rgba( adjust-hue( $primary-button-hovered-bg, 14), .2 ) !default;
+$primary-button-hovered-bg: try-shade( $primary-button-bg, 1 ) !default;
+$primary-button-hovered-text: null !default;
+$primary-button-hovered-border: try-shade( $primary-button-hovered-bg, 2 ) !default;
+$primary-button-hovered-gradient: null !default;
+$primary-button-hovered-shadow: null !default;
 
-$primary-button-pressed-text: $primary-button-text !default;
-$primary-button-pressed-bg: $primary-button-bg !default;
-$primary-button-pressed-border: $primary-button-pressed-bg !default;
-$primary-button-pressed-gradient: rgba( adjust-hue( $primary-button-pressed-bg, 14), .2 ), rgba( adjust-hue( $primary-button-pressed-bg, 14), 0 ) !default;
-$primary-button-pressed-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
+$primary-button-active-bg: try-shade( $primary-button-bg, 2 ) !default;
+$primary-button-active-text: null !default;
+$primary-button-active-border: try-shade( $primary-button-active-bg, 2 ) !default;
+$primary-button-active-gradient: null !default;
+$primary-button-active-shadow: null !default;
 
-$primary-button-focused-shadow: 0 3px 4px 0 rgba($primary, .4) !default;
+$primary-button-selected-bg: $primary-button-active-bg !default;
+$primary-button-selected-text: $primary-button-active-text !default;
+$primary-button-selected-border: $primary-button-active-border !default;
+$primary-button-selected-gradient: null !default;
+$primary-button-selected-shadow: null !default;
+
+$primary-button-focused-shadow: 0 0 4px 0 rgba( $primary-button-border, .75 ) !default;
+
+$button-group-focus-shadow: null !default;
 
 $flat-button-hover-opacity: .08 !default;
-$flat-button-focused-opacity: null !default;
+$flat-button-focus-opacity: .12 !default;
 $flat-button-active-opacity: .16 !default;
 $flat-button-selected-opacity: .2 !default;
 
 $clear-button-text: $button-text !default;
-$clear-button-hover-text: try-shade( $clear-button-text, 1 ) !default;
+$clear-button-hover-text: try-shade( $clear-button-text ) !default;
 $clear-button-focused-opacity: .1 !default;

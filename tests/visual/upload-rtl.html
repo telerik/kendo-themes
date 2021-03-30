@@ -65,7 +65,7 @@
                             </span>
                             <kendo-upload-file-list-item-action-button>
                                 <strong class="k-upload-status">
-                                    <span class="k-upload-pct ng-star-inserted">60%</span>
+                                    <span class="k-upload-pct">60%</span>
                                     <button class="k-button k-button-icon k-flat k-upload-action">
                                         <span class="k-icon k-cancel k-i-deny"></span>
                                     </button>
@@ -109,7 +109,7 @@
                         </kendo-upload-file-list-item-action-button>
                     </kendo-upload-file-list-single-item>
                 </li>
-                <li class="k-file ng-star-inserted k-file-success">
+                <li class="k-file k-file-success">
                     <kendo-upload-file-list-single-item class="k-file-single">
                         <div class="k-progressbar" style="opacity:1;">
                             <span class="k-progress" style="width: 100%;"></span>
@@ -150,10 +150,10 @@
                 Drag and drop file text in the dropzone, legacy drop hint rendering
                 https://github.com/telerik/kendo/issues/8240
             -->
-            <kendo-upload dir="ltr" class="k-widget k-upload" dir="rtl">
+            <kendo-upload class="k-widget k-upload" dir="rtl">
                 <div class="k-dropzone">
                     <div class="k-button k-upload-button">
-                        <input type="file" name="files" multiple="multiple" dir="ltr" />
+                        <input type="file" name="files" multiple="multiple" />
                         <span>Select files...</span>
                     </div>
                     <em class="k-dropzone-hint">Drop files here to upload</em>
@@ -388,7 +388,7 @@
                         </kendo-upload-file-list-single-item>
                     </li>
                 </ul>
-                <kendo-upload-action-buttons class="k-action-buttons ng-star-inserted">
+                <kendo-upload-action-buttons class="k-action-buttons">
                     <button class="k-button k-clear-selected"> Clear </button>
                     <button class="k-button k-primary k-upload-selected"> Upload </button>
                 </kendo-upload-action-buttons>
@@ -420,7 +420,7 @@
                             </span>
                             <kendo-upload-file-list-item-action-button>
                                 <strong class="k-upload-status">
-                                    <span class="k-upload-pct ng-star-inserted">30%</span><button class="k-button k-button-icon k-flat k-upload-action k-state-hover">
+                                    <span class="k-upload-pct">30%</span><button class="k-button k-button-icon k-flat k-upload-action k-state-hover">
                                         <span class="k-icon k-i-pause-sm"></span>
                                     </button><button class="k-button k-button-icon k-flat k-upload-action">
                                         <span class="k-icon k-cancel k-i-deny"></span>

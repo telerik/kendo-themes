@@ -51,7 +51,7 @@
 
         li.k-state-focused a::before,
         li.k-state-focused .k-link::before {
-            opacity: $flat-button-focused-opacity;
+            opacity: $flat-button-focus-opacity;
         }
     }
     kendo-scheduler .k-scheduler-toolbar {

@@ -28,9 +28,9 @@ $slider-draghandle-hovered-text: $primary-button-hovered-text !default;
 $slider-draghandle-hovered-border: $primary-button-hovered-border !default;
 $slider-draghandle-hovered-gradient: null !default;
 
-$slider-draghandle-pressed-bg: $primary-button-pressed-bg !default;
-$slider-draghandle-pressed-text: $primary-button-pressed-text !default;
-$slider-draghandle-pressed-border: $primary-button-pressed-border !default;
+$slider-draghandle-pressed-bg: $primary-button-active-bg !default;
+$slider-draghandle-pressed-text: $primary-button-active-text !default;
+$slider-draghandle-pressed-border: $primary-button-active-border !default;
 $slider-draghandle-pressed-gradient: null !default;
 
 $slider-draghandle-focused-shadow: $primary-button-focused-shadow !default;
