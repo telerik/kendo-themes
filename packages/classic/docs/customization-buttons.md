@@ -1,7 +1,7 @@
 ---
 title: Customizing Buttons
-description: "Refer to the list of the Kendo UI Bootstrap theme variables available for customization."
-slug: variables_kendothemebootstrap_buttons
+description: "Refer to the list of the Kendo UI Classic theme variables available for customization."
+slug: variables_kendothemeclassic_buttons
 position: 9
 ---
 
@@ -28,8 +28,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$button-border-width</td>
     <td></td>
-    <td>$btn-border-width</td>
-    <td></td>
+    <td>1px</td>
+    <td>1px</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around buttons</div></div>
@@ -39,7 +39,7 @@ The following table lists the available variables for customization.
     <td>$button-border-radius</td>
     <td></td>
     <td>$border-radius</td>
-    <td>$border-radius</td>
+    <td>map-get( $spacing, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of buttons</div></div>
@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-padding-x</td>
     <td></td>
-    <td>$btn-padding-x</td>
+    <td>$padding-x</td>
     <td></td>
 </tr>
 <tr>
@@ -58,7 +58,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-padding-y</td>
     <td></td>
-    <td>$btn-padding-y</td>
+    <td>$padding-y</td>
     <td></td>
 </tr>
 <tr>
@@ -68,7 +68,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-bg</td>
     <td></td>
-    <td>$secondary</td>
+    <td>$base-bg</td>
     <td>$secondary</td>
 </tr>
 <tr>
@@ -78,8 +78,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-text</td>
     <td></td>
-    <td>contrast-wcag( $button-bg, $gray-900 )</td>
-    <td>contrast-wcag( $button-bg, $gray-900 )</td>
+    <td>$base-text</td>
+    <td>$text-color</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the buttons.</div></div>
@@ -88,8 +88,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-border</td>
     <td></td>
-    <td>$button-bg</td>
-    <td>$secondary</td>
+    <td>try-shade( $button-bg, 2 )</td>
+    <td>try-shade( $button-bg, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the buttons.</div></div>
@@ -98,8 +98,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-gradient</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+    <td>$base-gradient</td>
+    <td>rgba( white, .2 ), rgba( white, 0 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the buttons.</div></div>
@@ -108,8 +108,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-hovered-bg</td>
     <td></td>
-    <td>try-darken( $button-bg, 7.5% )</td>
-    <td>try-darken( $button-bg, 7.5% )</td>
+    <td>try-shade( $button-bg, 1 )</td>
+    <td>try-shade( $button-bg, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered buttons.</div></div>
@@ -128,8 +128,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-hovered-border</td>
     <td></td>
-    <td>try-darken( $button-border, 10% )</td>
-    <td>try-darken( $button-border, 10% )</td>
+    <td>try-shade( $button-hovered-bg, 2 )</td>
+    <td>try-shade( $button-hovered-bg, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered buttons.</div></div>
@@ -148,8 +148,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-active-bg</td>
     <td></td>
-    <td>try-darken( $button-bg, 10% )</td>
-    <td>try-darken( $button-bg, 10% )</td>
+    <td>try-shade( $button-bg, 2 )</td>
+    <td>try-shade( $button-bg, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of active buttons.</div></div>
@@ -168,8 +168,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-active-border</td>
     <td></td>
-    <td>try-darken( $button-border, 12.5% )</td>
-    <td>try-darken( $button-border, 12.5% )</td>
+    <td>try-shade( $button-active-bg, 2 )</td>
+    <td>try-shade( $button-active-bg, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of active buttons.</div></div>
@@ -188,8 +188,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-selected-bg</td>
     <td></td>
-    <td>try-darken( $primary, 10% )</td>
-    <td>try-darken( $primary, 10% )</td>
+    <td>$button-active-bg</td>
+    <td>try-shade( $button-bg, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected buttons.</div></div>
@@ -198,8 +198,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-selected-text</td>
     <td></td>
-    <td>contrast-wcag( $button-selected-bg )</td>
-    <td>contrast-wcag( $button-selected-bg )</td>
+    <td>$button-active-text</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected buttons.</div></div>
@@ -208,8 +208,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-selected-border</td>
     <td></td>
-    <td>try-darken( $primary, 12.5% )</td>
-    <td>try-darken( $primary, 12.5% )</td>
+    <td>$button-active-border</td>
+    <td>try-shade( $button-active-bg, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected buttons.</div></div>
@@ -228,8 +228,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-focused-shadow</td>
     <td></td>
-    <td>0 0 0 3px rgba( $button-border, .5 )</td>
-    <td>0 0 0 3px rgba( $button-border, .5 )</td>
+    <td>0 0 4px 0 rgba( $button-border, .75 )</td>
+    <td>0 0 4px 0 rgba( $button-border, .75 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of focused buttons.</div></div>
