@@ -239,10 +239,6 @@ $gradient-white-to-transparent: white, rgba( white, 0);
 
 $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
-$bg-color: $body-bg !default;
-$text-color: $body-color !default;
-$border-color: $component-border-color !default;
-
 /// The background of the components' chrome area.
 $base-bg: try-darken( $component-bg, 3% ) !default;
 /// The text color of the components' chrome area.
@@ -319,21 +315,6 @@ $component-text: $component-color !default;
 $component-border: $component-border-color !default;
 
 
-// Widget
-/// Background color of a component.
-/// @deprecated Will be removed in v5. Use `$component-bg` variable instead.
-/// @group component
-$widget-bg: $component-bg !default;
-/// Text color of a component.
-/// @deprecated Will be removed in v5. Use `$component-text` variable instead.
-/// @group component
-$widget-text: $component-text !default;
-/// Border color of a component.
-/// @deprecated Will be removed in v5. Use `$component-border` variable instead.
-/// @group component
-$widget-border: $component-border !default;
-
-
 // Drop Hint
 $equilateral-index: 1.7320508076 !default;
 $equilateral-height: .8660254038 !default;
@@ -370,18 +351,18 @@ $header-gradient: null !default;
 
 
 // Node
-$node-text: $base-text !default;
 $node-bg: $base-bg !default;
+$node-text: $base-text !default;
 $node-border: $base-border !default;
 $node-gradient: null !default;
 
-$node-hovered-text: $list-group-hover-color !default;
 $node-hovered-bg: $list-group-hover-bg !default;
+$node-hovered-text: $list-group-hover-color !default;
 $node-hovered-border: $node-hovered-bg !default;
 $node-hovered-gradient: null !default;
 
-$node-selected-text: $selected-text !default;
 $node-selected-bg: $selected-bg !default;
+$node-selected-text: $selected-text !default;
 $node-selected-border: $selected-border !default;
 $node-selected-gradient: null !default;
 

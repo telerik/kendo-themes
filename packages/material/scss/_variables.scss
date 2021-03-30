@@ -270,10 +270,6 @@ $gradient-white-to-transparent: white, rgba( white, 0);
 $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
 
-$text-color: rgba(black, .87) !default;
-$bg-color: #ffffff !default;
-$border-color: rgba( black, .12 ) !default;
-
 /// The background of the components' chrome area.
 $base-bg: map-get( $theme, base-bg ) !default;
 /// The text color of the components' chrome area.
@@ -346,21 +342,6 @@ $component-text: map-get($theme, component-text) !default;
 /// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
 /// @group component
 $component-border: map-get($theme, component-border) !default;
-
-
-// Widget
-/// Background color of a component.
-/// @deprecated Will be removed in v5. Use `$component-bg` variable instead.
-/// @group component
-$widget-bg: $component-bg !default;
-/// Text color of a component.
-/// @deprecated Will be removed in v5. Use `$component-text` variable instead.
-/// @group component
-$widget-text: $component-text !default;
-/// Border color of a component.
-/// @deprecated Will be removed in v5. Use `$component-border` variable instead.
-/// @group component
-$widget-border: $component-border !default;
 
 
 // Drop Hint
