@@ -97,7 +97,7 @@
         );
 
         &.k-task-delayed {
-            @include repeating-striped-gradient($gantt-delayed-bg, $bg-color, 90deg, 4px, 2px);
+            @include repeating-striped-gradient($gantt-delayed-bg, $body-bg, 90deg, 4px, 2px);
         }
 
         &.k-task-advanced {
@@ -221,7 +221,7 @@
 
     // Delay offset
     .k-task-offset {
-        @include repeating-striped-gradient($gantt-delayed-bg, $bg-color, 135deg, 4px, 2px);
+        @include repeating-striped-gradient($gantt-delayed-bg, $body-bg, 135deg, 4px, 2px);
 
         .k-resize-e::before {
             @include fill(
@@ -235,7 +235,7 @@
     }
 
     .k-task-offset:hover {
-        @include repeating-striped-gradient($gantt-delayed-bg-lighter, $bg-color, 135deg, 4px, 2px);
+        @include repeating-striped-gradient($gantt-delayed-bg-lighter, $body-bg, 135deg, 4px, 2px);
     }
 
     .k-pdf-export .k-task-offset {

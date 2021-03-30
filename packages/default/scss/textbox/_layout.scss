@@ -24,9 +24,6 @@
         position: relative;
         -webkit-appearance: none;
 
-        // not to be overriden by `background: none`
-        @include use-background-clip();
-
         // Hide clear icon
         &::-ms-clear { display: none; }
 

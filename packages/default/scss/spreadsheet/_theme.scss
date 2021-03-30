@@ -134,22 +134,21 @@
         );
         box-shadow: inset 0 0 0 1px $button-border;
 
-        &.k-state-active {
-            @include fill(
-                $button-pressed-text,
-                $button-pressed-bg,
-                $button-pressed-border,
-                $button-pressed-gradient
-            );
-            @include box-shadow( $button-pressed-shadow );
-        }
-
         &:hover {
             @include fill(
                 $button-hovered-text,
                 $button-hovered-bg,
                 $button-hovered-border,
                 $button-hovered-gradient
+            );
+        }
+
+        &.k-state-active {
+            @include fill(
+                $button-active-text,
+                $button-active-bg,
+                $button-active-border,
+                $button-active-gradient
             );
         }
     }

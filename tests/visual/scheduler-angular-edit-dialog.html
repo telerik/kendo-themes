@@ -34,7 +34,7 @@
                     <kendo-dialog-titlebar class="k-window-titlebar k-dialog-titlebar k-header" id="kendo-dialog-title-797726">
                         <div class="k-window-title k-dialog-title">Event</div>
                         <div class="k-window-actions k-dialog-actions">
-                            <a class="k-button k-bare k-button-icon k-window-action k-dialog-action k-dialog-close" href="#">
+                            <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close" href="#">
                                 <span class="k-icon k-i-x"></span>
                             </a>
                         </div>
@@ -42,18 +42,18 @@
                     <div class="k-content k-window-content k-dialog-content">
                         <div class="k-scheduler-edit-form">
                             <div class="k-edit-form-container">
-                                <form class="ng-valid ng-touched ng-dirty">
+                                <form class="ng-touched">
                                     <div class="k-edit-label">
                                         <label for="k-event-title">Title</label>
                                     </div>
                                     <div class="k-edit-field">
-                                        <input class="k-textbox ng-pristine ng-valid ng-touched" id="k-event-title" placeholder="Title">
+                                        <input class="k-textbox ng-touched" id="k-event-title" placeholder="Title">
                                     </div>
                                     <div class="k-edit-label">
                                         <label>Start</label>
                                     </div>
                                     <div class="k-edit-field">
-                                        <kendo-scheduler-datetime-picker class="ng-untouched ng-pristine ng-valid">
+                                        <kendo-scheduler-datetime-picker class="">
                                             <kendo-datepicker class="k-widget k-datepicker k-header">
                                                 <span class="k-picker-wrap">
                                                     <kendo-dateinput class="k-widget k-dateinput">
@@ -84,7 +84,7 @@
                                         <label>End</label>
                                     </div>
                                     <div class="k-edit-field">
-                                        <kendo-scheduler-datetime-picker class="ng-untouched ng-pristine ng-valid">
+                                        <kendo-scheduler-datetime-picker class="">
                                             <kendo-datepicker class="k-widget k-datepicker k-header">
                                                 <span class="k-picker-wrap">
                                                     <kendo-dateinput class="k-widget k-dateinput">
@@ -112,14 +112,14 @@
                                         </kendo-scheduler-datetime-picker>
                                     </div>
                                     <div class="k-edit-field">
-                                        <input class="k-checkbox ng-untouched ng-pristine ng-valid" id="k-is-allday-chkbox" type="checkbox">
+                                        <input class="k-checkbox" id="k-is-allday-chkbox" type="checkbox">
                                         <label class="k-checkbox-label" for="k-is-allday-chkbox">All Day Event</label>
                                     </div>
                                     <div class="k-edit-field">
-                                        <input class="k-checkbox ng-untouched ng-pristine ng-valid" id="k-set-timezone" type="checkbox">
+                                        <input class="k-checkbox" id="k-set-timezone" type="checkbox">
                                         <label class="k-checkbox-label" for="k-set-timezone">Specify Time Zone</label>
                                     </div>
-                                    <kendo-recurrence-editor class="k-recurrence-editor ng-untouched ng-valid ng-dirty">
+                                    <kendo-recurrence-editor class="k-recurrence-editor">
                                         <kendo-recurrence-frequency-editor>
                                             <div class="k-edit-label">
                                                 <label>Repeat</label>
@@ -128,7 +128,7 @@
                                                 <kendo-buttongroup class="k-button-group">
                                                     <button class="k-button k-group-start" style="width: 100px;">Never</button>
                                                     <button class="k-button" style="width: 100px;">Daily</button>
-                                                    <button class="k-button k-state-active" style="width: 100px;">Weekly</button>
+                                                    <button class="k-button k-state-selected" style="width: 100px;">Weekly</button>
                                                     <button class="k-button" style="width: 100px;">Monthly</button>
                                                     <button class="k-button k-group-end" style="width: 100px;">Yearly</button>
                                                 </kendo-buttongroup>
@@ -163,7 +163,7 @@
                                                 <div class="k-edit-field">
                                                     <kendo-buttongroup class="k-button-group">
                                                         <button class="k-button k-group-start" style="width: 75px;">Sun</button>
-                                                        <button class="k-button k-state-active" style="width: 75px;">Mon</button>
+                                                        <button class="k-button k-state-selected" style="width: 75px;">Mon</button>
                                                         <button class="k-button" style="width: 75px;">Tue</button>
                                                         <button class="k-button" style="width: 75px;">Wed</button>
                                                         <button class="k-button" style="width: 75px;">Thu</button>
@@ -225,7 +225,7 @@
                                         <label for="k-event-description">Description</label>
                                     </div>
                                     <div class="k-edit-field">
-                                        <textarea class="k-textbox ng-untouched ng-pristine ng-valid" id="k-event-description"></textarea>
+                                        <textarea class="k-textbox" id="k-event-description"></textarea>
                                     </div>
                                 </form>
                             </div>

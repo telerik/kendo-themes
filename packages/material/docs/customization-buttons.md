@@ -108,8 +108,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-hovered-bg</td>
     <td></td>
-    <td>true-mix( $button-text, $button-bg, 12%)</td>
-    <td>true-mix( $button-text, $button-bg, 12%)</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered buttons.</div></div>
@@ -128,8 +128,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-hovered-border</td>
     <td></td>
-    <td>$button-hovered-bg</td>
-    <td>true-mix( $button-text, $button-bg, 12%)</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered buttons.</div></div>
@@ -146,43 +146,83 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$button-pressed-bg</td>
+    <td>$button-active-bg</td>
     <td></td>
-    <td>true-mix( $button-text, $button-bg, 12%)</td>
-    <td>true-mix( $button-text, $button-bg, 12%)</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of pressed buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of active buttons.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-pressed-text</td>
+    <td>$button-active-text</td>
     <td></td>
     <td>null</td>
     <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of pressed buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of active buttons.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-pressed-border</td>
+    <td>$button-active-border</td>
     <td></td>
-    <td>$button-pressed-bg</td>
-    <td>true-mix( $button-text, $button-bg, 12%)</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of pressed buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of active buttons.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-pressed-gradient</td>
+    <td>$button-active-gradient</td>
     <td></td>
     <td>null</td>
     <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of pressed buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of active buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-selected-bg</td>
+    <td></td>
+    <td>$button-active-bg</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-selected-text</td>
+    <td></td>
+    <td>$button-active-text</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-selected-border</td>
+    <td></td>
+    <td>$button-active-bg</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-selected-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of selected buttons.</div></div>
     </td>
 </tr>
 <tr>

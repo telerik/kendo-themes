@@ -6,23 +6,25 @@ $panelbar-font-size: $font-size !default;
 $panelbar-line-height: $line-height !default;
 $panelbar-border-width: 1px !default;
 
-$panelbar-header-padding-x: $header-padding-x !default;
-$panelbar-header-padding-y: $header-padding-y !default;
+$panelbar-header-padding-x: map-get( $spacing, 4 ) !default;
+$panelbar-header-padding-y: map-get( $spacing, 3 ) !default;
 
-$panelbar-item-padding-x: $list-item-padding-x !default;
-$panelbar-item-padding-y: $list-item-padding-y !default;
+$panelbar-item-padding-x: map-get( $spacing, 4 ) !default;
+$panelbar-item-padding-y: map-get( $spacing, 2 ) !default;
 
-$panelbar-bg: $base-bg !default;
-$panelbar-text: $base-text !default;
-$panelbar-border: $base-border !default;
+$panelbar-item-level-count: 4 !default;
 
-$panelbar-header-bg: $component-bg !default;
+$panelbar-bg: $component-bg !default;
+$panelbar-text: $component-text !default;
+$panelbar-border: $component-border !default;
+
+$panelbar-header-bg: $panelbar-bg !default;
 $panelbar-header-text: $link-text !default;
 $panelbar-header-border: null !default;
 $panelbar-header-gradient: null !default;
 
-$panelbar-header-hovered-bg: shade($panelbar-header-bg) !default;
-$panelbar-header-hovered-text: $link-hover-text !default;
+$panelbar-header-hovered-bg: try-shade( $panelbar-header-bg, .5 ) !default;
+$panelbar-header-hovered-text: null !default;
 $panelbar-header-hovered-border: null !default;
 $panelbar-header-hovered-gradient: null !default;
 
@@ -33,7 +35,7 @@ $panelbar-header-selected-gradient: null !default;
 
 $panelbar-header-focused-shadow: $list-item-focused-shadow !default;
 
-$panelbar-item-hovered-bg: shade($panelbar-bg) !default;
+$panelbar-item-hovered-bg: try-shade( $panelbar-bg, .5 ) !default;
 $panelbar-item-hovered-text: null !default;
 $panelbar-item-hovered-border: null !default;
 $panelbar-item-hovered-gradient: null !default;

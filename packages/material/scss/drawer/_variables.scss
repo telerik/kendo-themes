@@ -1,7 +1,7 @@
 // Drawer
-$drawer-bg: $base-bg !default;
-$drawer-text: $base-text !default;
-$drawer-border: $base-border !default;
+$drawer-bg: $component-bg !default;
+$drawer-text: $component-text !default;
+$drawer-border: $component-border !default;
 $drawer-border-width: 1px !default;
 $drawer-font-family: $font-family !default;
 $drawer-font-size: $font-size !default;
@@ -29,7 +29,7 @@ $drawer-hovered-text: $hovered-text !default;
 $drawer-focused-bg: $hovered-bg !default;
 $drawer-focused-shadow: none !default;
 
-$drawer-selected-bg: $base-bg !default;
+$drawer-selected-bg: null !default;
 $drawer-selected-text: $secondary !default;
 $drawer-selected-hover-bg: $hovered-bg !default;
-$drawer-selected-hover-text:  $secondary !default;
+$drawer-selected-hover-text: $secondary !default;

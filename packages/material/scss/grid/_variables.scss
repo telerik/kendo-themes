@@ -134,7 +134,7 @@ $grid-filter-menu-width: 250px !default;
 
 $grid-filter-menu-check-all-border-bottom-width: 0 !default;
 
-$grid-filter-menu-item-spacing-x: 0 !default;
+$grid-filter-menu-item-spacing-x: map-get( $spacing, 4 ) !default;
 $grid-filter-menu-item-spacing-y: map-get( $spacing, 2 ) !default;
 
 $grid-column-menu-popup-padding-x: 0 !default;
@@ -161,5 +161,7 @@ $grid-column-menu-group-header-text-transform: uppercase !default;
 $grid-column-menu-group-header-border-bottom-width: 1px !default;
 
 $grid-column-menu-group-header-bg: null !default;
-$grid-column-menu-group-header-text: $base-text !default;
-$grid-column-menu-group-header-border: $grid-column-menu-group-header-text !default;
+$grid-column-menu-group-header-text: $popup-text !default;
+$grid-column-menu-group-header-border: $popup-border !default;
+
+$grid-drag-cell-width: ($icon-size * 3) !default;

@@ -5,10 +5,9 @@ $pivotgrid-line-height: $line-height !default;
 
 $pivotgrid-border-width: 1px !default;
 
-$pivotgrid-alt-bg: try-shade($grid-bg, .5) !default;
-$pivotgrid-alt-color: null !default;
-$pivotgrid-alt-text: $grid-text !default;
-$pivotgrid-border: $component-border !default;
+$pivotgrid-alt-bg: $grid-header-bg !default;
+$pivotgrid-alt-text: $grid-header-text !default;
+$pivotgrid-border: $grid-border !default;
 $pivotgrid-chrome-border: $grid-border !default;
 
 $pivotgrid-container-bg: $grid-header-bg !default;

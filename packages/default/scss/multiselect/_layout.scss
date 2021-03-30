@@ -75,13 +75,13 @@
                 display: inline-flex;
                 flex-direction: row;
                 align-items: center;
+                gap: $icon-spacing;
                 line-height: inherit;
                 white-space: normal;
 
                 .k-select {
                     display: flex;
                     cursor: pointer;
-                    margin-left: $padding-x;
                     align-self: stretch;
                 }
 
@@ -163,11 +163,6 @@
                     width: auto;
                     margin-right: $padding-y-sm;
                     margin-left: 0;
-
-                    .k-select {
-                        margin-left: 0;
-                        margin-right: $padding-x;
-                    }
                 }
             }
 

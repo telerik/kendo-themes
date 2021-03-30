@@ -26,7 +26,7 @@ $numeric-button-hovered-text: $button-hovered-text !default;
 $numeric-button-hovered-border: $button-hovered-border !default;
 $numeric-button-hovered-gradient: $button-hovered-gradient !default;
 
-$numeric-button-pressed-bg: $button-pressed-bg !default;
-$numeric-button-pressed-text: $button-pressed-text !default;
-$numeric-button-pressed-border: $button-pressed-border !default;
-$numeric-button-pressed-gradient: $button-pressed-gradient !default;
+$numeric-button-pressed-bg: $button-active-bg !default;
+$numeric-button-pressed-text: $button-active-text !default;
+$numeric-button-pressed-border: $button-active-border !default;
+$numeric-button-pressed-gradient: $button-active-gradient !default;

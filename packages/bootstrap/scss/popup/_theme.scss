@@ -84,15 +84,6 @@
             }
         }
 
-        // Button group states
-        .k-button-group {
-            .k-button:active,
-            .k-button.k-state-active {
-                background-color: $primary-button-pressed-bg;
-                box-shadow: $primary-button-pressed-shadow;
-            }
-        }
-
     }
 
 }

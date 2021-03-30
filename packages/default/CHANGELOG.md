@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.36.0"></a>
+# [4.36.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.35.0...@progress/kendo-theme-default@4.36.0) (2021-03-29)
+
+
+### Bug Fixes
+
+* update grid sticky columns/rows styling ([4e86821](https://github.com/telerik/kendo-themes/commit/4e86821))
+* **grid:** apply correct styles for filer menu that is part of the popup content ([01e10c0](https://github.com/telerik/kendo-themes/commit/01e10c0))
+* update focus state ([89d9020](https://github.com/telerik/kendo-themes/commit/89d9020))
+
+
+### Features
+
+* add interaction states for calendar ([3ec6113](https://github.com/telerik/kendo-themes/commit/3ec6113))
+* add interaction states for combobox, autocomplete and multiselect ([9a07a6a](https://github.com/telerik/kendo-themes/commit/9a07a6a))
+* add interaction states for date pickers ([d1479f5](https://github.com/telerik/kendo-themes/commit/d1479f5))
+* **dataviz:** add Gauge styles ([f6ae7ce](https://github.com/telerik/kendo-themes/commit/f6ae7ce))
+* add interaction states for checkboxes ([bef52c6](https://github.com/telerik/kendo-themes/commit/bef52c6))
+* add interaction states for dateinput ([5d4a3a3](https://github.com/telerik/kendo-themes/commit/5d4a3a3))
+* add interaction states for radio buttons ([97aad9b](https://github.com/telerik/kendo-themes/commit/97aad9b))
+
+
+
+
 <a name="4.35.0"></a>
 # [4.35.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.34.0...@progress/kendo-theme-default@4.35.0) (2021-03-15)
 

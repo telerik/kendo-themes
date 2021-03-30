@@ -167,6 +167,52 @@
                 </div>
             </div>
         </section>
+
+        <span>Drag column</span>
+        <section class="col-2">
+            <div id="grid" data-role="grid" class="k-grid k-widget k-grid-display-block" style="">
+                <div class="k-grid-header" style="padding-right: 15px;">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table>
+                            <colgroup>
+                                <col class="k-drag-col" />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="k-drag-cell k-header"></th>
+                                    <th class="k-header">Company Name</th>
+                                    <th class="k-header">Country</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="k-grid-content k-auto-scrollable">
+                    <table role="grid">
+                        <colgroup>
+                            <col class="k-drag-col" />
+                            <col />
+                            <col />
+                        </colgroup>
+                        <tbody>
+                            <tr class="k-master-row">
+                                <td class="k-drag-cell"><span class="k-icon k-i-reorder"></span></td>
+                                <td class="">Alfreds Futterkiste</td>
+                                <td class="">Germany</td>
+                            </tr>
+                            <tr class="k-alt k-master-row">
+                                <td class="k-drag-cell"><span class="k-icon k-i-reorder"></span></td>
+                                <td class="">Ana Trujillo Emparedados y helados</td>
+                                <td class="">Mexico</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
     </div>
 
 </body>

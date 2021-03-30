@@ -55,12 +55,17 @@
         // Pressed state
         &:active,
         &.k-state-active {
-            @include fill( $button-text, $button-bg, $button-border, #{to top, $button-gradient} );
-            box-shadow: $button-pressed-shadow;
+            @include fill(
+                $button-active-text,
+                $button-active-bg,
+                $button-active-border,
+                $button-active-gradient
+            );
         }
 
         // Focused state
         &:focus,
+        &.k-state-focus,
         &.k-state-focused {
             box-shadow: $button-focused-shadow;
         }
@@ -77,8 +82,9 @@
     }
 
     .k-pivot-layout .k-grid-footer,
-    .k-pivot-layout .k-grid .k-alt {
-        color: $pivotgrid-alt-color;
+    .k-pivot-layout .k-grid.k-alt {
+        color: $pivotgrid-alt-text;
+        background-color: $pivotgrid-alt-bg;
     }
 
     // Loading indicator
