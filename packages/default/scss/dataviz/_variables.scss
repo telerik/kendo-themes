@@ -113,8 +113,8 @@ $chart-border: $component-border !default;
 $chart-tap-highlight-color: rgba(0, 0, 0, 0);
 
 $chart-crosshair-background: rgba(0, 0, 0, .5) !default;
-$chart-crosshair-shared-tooltip-color: $base-text !default;
-$chart-crosshair-shared-tooltip-background: $base-bg !default;
+$chart-crosshair-shared-tooltip-color: $chart-text !default;
+$chart-crosshair-shared-tooltip-background: try-shade( $chart-bg, 1 ) !default;
 $chart-crosshair-shared-tooltip-border: rgba(0, 0, 0, .08) !default;
 
 $chart-notes-background: rgba(0, 0, 0, .5) !default;

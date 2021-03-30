@@ -46,8 +46,6 @@ $theme-colors: map-merge((
 $body-bg: $white !default;
 $body-text: contrast-yiq( $body-bg, $gray-800, $gray-100 ) !default;
 
-$border-color: contrast-yiq( $body-bg, $gray-300, $gray-700 ) !default;
-
 
 // Components
 $component-bg: $body-bg !default;

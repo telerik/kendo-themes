@@ -273,8 +273,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$button-hovered-text</td>
     <td></td>
-    <td>contrast-wcag( $button-hovered-bg, $gray-900 )</td>
-    <td>contrast-wcag( $button-hovered-bg, $gray-900 )</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered buttons.</div></div>
@@ -301,43 +301,83 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$button-pressed-bg</td>
+    <td>$button-active-bg</td>
     <td></td>
     <td>try-darken( $button-bg, 10% )</td>
     <td>try-darken( $button-bg, 10% )</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of pressed buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of active buttons.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-pressed-text</td>
-    <td></td>
-    <td>contrast-wcag( $button-pressed-bg, $gray-900 )</td>
-    <td>contrast-wcag( $button-pressed-bg, $gray-900 )</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of pressed buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$button-pressed-border</td>
-    <td></td>
-    <td>try-darken( $button-border, 12.5% )</td>
-    <td>try-darken( $button-border, 12.5% )</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of pressed buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$button-pressed-gradient</td>
+    <td>$button-active-text</td>
     <td></td>
     <td>null</td>
     <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of pressed buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of active buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-active-border</td>
+    <td></td>
+    <td>try-darken( $button-border, 12.5% )</td>
+    <td>try-darken( $button-border, 12.5% )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of active buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-active-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of active buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-selected-bg</td>
+    <td></td>
+    <td>try-darken( $primary, 10% )</td>
+    <td>try-darken( $primary, 10% )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-selected-text</td>
+    <td></td>
+    <td>contrast-wcag( $button-selected-bg )</td>
+    <td>contrast-wcag( $button-selected-bg )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-selected-border</td>
+    <td></td>
+    <td>try-darken( $primary, 12.5% )</td>
+    <td>try-darken( $primary, 12.5% )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-selected-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of selected buttons.</div></div>
     </td>
 </tr>
 <tr>
@@ -681,36 +721,6 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$widget-bg</td>
-    <td></td>
-    <td>$component-bg</td>
-    <td>$component-bg</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$component-bg` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">Background color of a component.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$widget-text</td>
-    <td></td>
-    <td>$component-text</td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$component-text` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">Text color of a component.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$widget-border</td>
-    <td></td>
-    <td>$component-border</td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$component-border` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">Border color of a component.</div></div>
     </td>
 </tr>
 </tbody>

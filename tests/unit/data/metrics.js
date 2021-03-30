@@ -108,7 +108,7 @@ const metrics = { // eslint-disable-line no-unused-vars
             "height": 30
         },
         "buttons": {
-            "height": 44
+            "height": 30
         }
     }
 

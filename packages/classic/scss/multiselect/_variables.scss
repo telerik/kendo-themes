@@ -28,8 +28,8 @@ $multiselect-focused-text: $input-focused-text !default;
 $multiselect-focused-border: $input-focused-border !default;
 $multiselect-focused-shadow: $input-focused-shadow !default;
 
-$multiselect-button-focused-bg: $button-pressed-bg !default;
-$multiselect-button-focused-text: $button-pressed-text !default;
-$multiselect-button-focused-border: $button-pressed-border !default;
-$multiselect-button-focused-gradient: $button-pressed-gradient !default;
-$multiselect-button-focused-shadow: $button-pressed-shadow !default;
+$multiselect-button-focused-bg: $button-active-bg !default;
+$multiselect-button-focused-text: $button-active-text !default;
+$multiselect-button-focused-border: $button-active-border !default;
+$multiselect-button-focused-gradient: $button-active-gradient !default;
+$multiselect-button-focused-shadow: $button-active-shadow !default;

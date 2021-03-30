@@ -3,12 +3,8 @@ $dialog-titlebar-bg: null !default;
 $dialog-titlebar-text: null !default;
 $dialog-titlebar-border: null !default;
 
-$dialog-buttongroup-padding-x: 8px !default;
-$dialog-buttongroup-padding-y: 8px !default;
-$dialog-buttongroup-border-width: 0px !default;
+$dialog-buttongroup-padding-x: $actions-padding-x !default;
+$dialog-buttongroup-padding-y: $actions-padding-y !default;
+$dialog-buttongroup-border-width: 1px !default;
 
-$dialog-button-gap: 8px !default;
-
-$dialog-stretched-button-padding-x: 8px !default;
-$dialog-stretched-button-padding-y: $button-padding-y !default;
-$dialog-stretched-button-border-width: 0px !default;
+$dialog-button-spacing: $actions-button-spacing !default;
