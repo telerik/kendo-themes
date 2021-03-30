@@ -81,8 +81,9 @@
     }
 
     .k-pivot-layout .k-grid-footer,
-    .k-pivot-layout .k-grid .k-alt {
-        color: $pivotgrid-alt-color;
+    .k-pivot-layout .k-grid.k-alt {
+        color: $pivotgrid-alt-text;
+        background-color: $pivotgrid-alt-bg;
     }
 
     // Loading indicator
