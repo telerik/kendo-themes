@@ -21,7 +21,7 @@ $panelbar-header-text: null !default;
 $panelbar-header-border: null !default;
 $panelbar-header-gradient: null !default;
 
-$panelbar-header-hovered-bg: try-shade($panelbar-bg) !default;
+$panelbar-header-hovered-bg: try-shade( $panelbar-bg, 1 ) !default;
 $panelbar-header-hovered-text: null !default;
 $panelbar-header-hovered-border: null !default;
 $panelbar-header-hovered-gradient: null !default;
@@ -33,7 +33,7 @@ $panelbar-header-selected-gradient: null !default;
 
 $panelbar-header-focused-shadow: null !default;
 
-$panelbar-item-hovered-bg: try-shade($panelbar-bg) !default;
+$panelbar-item-hovered-bg: try-shade( $panelbar-bg, 1 ) !default;
 $panelbar-item-hovered-text: null !default;
 $panelbar-item-hovered-border: null !default;
 $panelbar-item-hovered-gradient: null !default;
