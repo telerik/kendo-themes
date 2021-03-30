@@ -68,7 +68,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-bg</td>
     <td></td>
-    <td>$base-bg</td>
+    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
     <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
 </tr>
 <tr>
