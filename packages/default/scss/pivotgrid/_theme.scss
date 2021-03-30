@@ -56,15 +56,16 @@
         &:active,
         &.k-state-active {
             @include fill(
-                $button-text,
-                $button-bg,
-                $button-border,
-                $button-gradient
+                $button-active-text,
+                $button-active-bg,
+                $button-active-border,
+                $button-active-gradient
             );
         }
 
         // Focused state
         &:focus,
+        &.k-state-focus,
         &.k-state-focused {
             box-shadow: $button-focused-shadow;
         }

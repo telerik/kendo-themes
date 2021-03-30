@@ -293,7 +293,7 @@ $body-text: $body-color !default;
 $subtle-text: if( $is-dark-theme, $gray-400, $text-muted ) !default;
 $disabled-text: if( $is-dark-theme, $gray-600, $gray-500) !default;
 
-$app-bg: $body-bg !default;
+$app-bg: try-shade( $body-bg, .25 ) !default;
 $app-text: $body-text !default;
 $app-border: contrast-yiq( $app-bg, $gray-300, $gray-700 ) !default;
 
