@@ -1,0 +1,109 @@
+@include exports("taskboard/theme") {
+
+    // TaskBoard
+    .k-taskboard {
+        @extend .k-text-selection !optional;
+        @include fill(
+            $taskboard-text,
+            $taskboard-bg,
+            $taskboard-border
+        );
+    }
+
+    // Toolbar
+    .k-taskboard-toolbar {
+        @include fill(
+            $taskboard-toolbar-text,
+            $taskboard-toolbar-bg,
+            $taskboard-toolbar-border,
+            $taskboard-toolbar-gradient
+        );
+    }
+
+    // Columns
+    .k-taskboard-column {
+        @include fill(
+            $taskboard-column-text,
+            $taskboard-column-bg,
+            $taskboard-column-border
+        );
+    }
+    .k-taskboard-column:focus,
+    .k-taskboard-column.k-state-focus {
+        @include fill(
+            $taskboard-column-focus-text,
+            $taskboard-column-focus-bg,
+            $taskboard-column-focus-border
+        );
+    }
+
+    .k-taskboard-column-header {
+        @include fill( $color: $taskboard-column-header-text );
+    }
+
+    // Preview/Edit Pane
+    .k-taskboard-pane {
+        @include fill (
+            $taskboard-pane-text,
+            $taskboard-pane-bg,
+            $taskboard-pane-border
+        )
+    }
+
+    .k-taskboard-pane-header {
+        @include fill( $color: $taskboard-pane-header-text );
+    }
+
+    // Cards
+    .k-taskboard-card {
+        @include fill(
+            $taskboard-card-text,
+            $taskboard-card-bg,
+            $taskboard-card-border
+        );
+        @include box-shadow( $taskboard-card-shadow );
+
+        .k-card-title {
+            @include fill( $color: $taskboard-card-header-text );
+
+            &:focus,
+            &.k-state-focus {
+                @include fill( $color: $taskboard-card-header-focus-text );
+            }
+
+            &:hover,
+            &.k-state-hover {
+                @include fill( $color: $taskboard-card-header-hover-text );
+            }
+        }
+
+        &:focus,
+        &.k-state-focus {
+            @include fill( $border: $taskboard-card-focus-border );
+            @include box-shadow( $taskboard-card-focus-shadow );
+        }
+
+        &:hover,
+        &.k-state-hover {
+            @include fill( $border: $taskboard-card-hover-border );
+        }
+
+        &.k-state-selected {
+            @include fill( $border: $taskboard-card-selected-border );
+            @include box-shadow( $taskboard-card-selected-shadow );
+        }
+
+        &.k-state-disabled {
+            @include disabled( $disabled-styling );
+        }
+    }
+
+    // Card Drag Placeholder
+    .k-taskboard-drag-placeholder {
+        @include fill(
+            $bg: $taskboard-drag-placeholder-bg,
+            $border: $taskboard-drag-placeholder-border
+        );
+    }
+
+}
