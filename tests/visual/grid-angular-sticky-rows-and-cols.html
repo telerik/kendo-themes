@@ -133,6 +133,150 @@
                 </div>
             </kendo-grid>
         </section>
+        <section class="col-2">
+            <kendo-grid class="k-widget k-grid">
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header" style="padding: 0px 14px 0px 0px;">
+                        <div class="k-grid-header-wrap">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 40px;" />
+                                    <col style="width: 250px;" />
+                                    <col style="width: 150px;" />
+                                    <col style="width: 80px;" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="k-header k-grid-header-sticky">ID</th>
+                                        <th class="k-header" rowspan="1" colspan="1">Name</th>
+                                        <th class="k-header k-grid-header-sticky" rowspan="1" colspan="1">Category</th>
+                                        <th class="k-header" rowspan="1" colspan="1">Price</th>
+                                    </tr>
+                                    <tr class="k-filter-row">
+                                        <td class="k-grid-header-sticky">
+                                            <kendo-grid-string-filter-cell class="k-filtercell">
+                                                <kendo-grid-filter-wrapper-cell class="k-filtercell-wrapper">
+                                                    <input class="k-textbox ng-untouched ng-pristine ng-valid" />
+                                                    <kendo-grid-filter-cell-operators class="k-filtercell-operator">
+                                                        <kendo-dropdownlist class="k-dropdown-operator k-widget k-dropdown" iconclass="k-i-filter">
+                                                            <span class="k-dropdown-wrap">
+                                                                <span class="k-input">
+                                                                    Contains
+                                                                </span>
+                                                                <span class="k-select"><span class="k-icon k-i-filter"></span></span>
+                                                            </span>
+                                                        </kendo-dropdownlist>
+                                                        <button class="k-button k-button-icon">
+                                                            <span class="k-icon k-i-filter-clear"></span>
+                                                        </button>
+                                                    </kendo-grid-filter-cell-operators>
+                                                </kendo-grid-filter-wrapper-cell>
+                                            </kendo-grid-string-filter-cell>
+                                        </td>
+                                        <td>
+                                            <kendo-grid-string-filter-cell class="k-filtercell">
+                                                <kendo-grid-filter-wrapper-cell class="k-filtercell-wrapper">
+                                                    <input class="k-textbox ng-untouched ng-pristine ng-valid" />
+                                                    <kendo-grid-filter-cell-operators class="k-filtercell-operator">
+                                                        <kendo-dropdownlist class="k-dropdown-operator k-widget k-dropdown" iconclass="k-i-filter">
+                                                            <span class="k-dropdown-wrap">
+                                                                <span class="k-input">
+                                                                    Contains
+                                                                </span>
+                                                                <span class="k-select"><span class="k-icon k-i-filter"></span></span>
+                                                            </span>
+                                                        </kendo-dropdownlist>
+                                                        <button class="k-button k-button-icon">
+                                                            <span class="k-icon k-i-filter-clear"></span>
+                                                        </button>
+                                                    </kendo-grid-filter-cell-operators>
+                                                </kendo-grid-filter-wrapper-cell>
+                                            </kendo-grid-string-filter-cell>
+                                        </td>
+                                        <td class="k-grid-header-sticky" style="left: 40px; right: 0px;">
+                                            <kendo-grid-string-filter-cell class="k-filtercell">
+                                                <kendo-grid-filter-wrapper-cell class="k-filtercell-wrapper">
+                                                    <input class="k-textbox ng-untouched ng-pristine ng-valid" />
+                                                    <kendo-grid-filter-cell-operators class="k-filtercell-operator">
+                                                        <kendo-dropdownlist class="k-dropdown-operator k-widget k-dropdown" iconclass="k-i-filter">
+                                                            <span class="k-dropdown-wrap">
+                                                                <span class="k-input">
+                                                                    Contains
+                                                                </span>
+                                                                <span class="k-select"><span class="k-icon k-i-filter"></span></span>
+                                                            </span>
+                                                        </kendo-dropdownlist>
+                                                        <button class="k-button k-button-icon">
+                                                            <span class="k-icon k-i-filter-clear"></span>
+                                                        </button>
+                                                    </kendo-grid-filter-cell-operators>
+                                                </kendo-grid-filter-wrapper-cell>
+                                            </kendo-grid-string-filter-cell>
+                                        </td>
+                                        <td>
+                                            <kendo-grid-string-filter-cell class="k-filtercell">
+                                                <kendo-grid-filter-wrapper-cell class="k-filtercell-wrapper">
+                                                    <input class="k-textbox ng-untouched ng-pristine ng-valid" />
+                                                    <kendo-grid-filter-cell-operators class="k-filtercell-operator">
+                                                        <kendo-dropdownlist class="k-dropdown-operator k-widget k-dropdown" iconclass="k-i-filter">
+                                                            <span class="k-dropdown-wrap">
+                                                                <span class="k-input">
+                                                                    Contains
+                                                                </span>
+                                                                <span class="k-select"><span class="k-icon k-i-filter"></span></span>
+                                                            </span>
+                                                        </kendo-dropdownlist>
+                                                        <button class="k-button k-button-icon">
+                                                            <span class="k-icon k-i-filter-clear"></span>
+                                                        </button>
+                                                    </kendo-grid-filter-cell-operators>
+                                                </kendo-grid-filter-wrapper-cell>
+                                            </kendo-grid-string-filter-cell>
+                                        </td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <kendo-grid-list class="k-grid-container">
+                        <div class="k-grid-content k-virtual-content">
+                            <div class="k-grid-table-wrap">
+                                <table class="k-grid-table">
+                                    <colgroup>
+                                        <col style="width: 40px;" />
+                                        <col style="width: 250px;" />
+                                        <col style="width: 150px;" />
+                                        <col style="width: 80px;" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="k-grid-content-sticky">1</td>
+                                            <td colspan="1">Chai</td>
+                                            <td class="k-grid-content-sticky">Beverages</td>
+                                            <td colspan="1">18</td>
+                                        </tr>
+                                        <tr class="k-grid-row-sticky k-alt">
+                                            <td class="k-grid-content-sticky" colspan="1">2</td>
+                                            <td colspan="1">Chang</td>
+                                            <td class="k-grid-content-sticky" colspan="1">Beverages</td>
+                                            <td colspan="1">19</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="k-grid-content-sticky" colspan="1">3</td>
+                                            <td colspan="1">Aniseed Syrup</td>
+                                            <td class="k-grid-content-sticky" colspan="1">Condiments</td>
+                                            <td colspan="1">10</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="k-height-container"><div></div></div>
+                        </div>
+                    </kendo-grid-list>
+                </div>
+            </kendo-grid>
+
+        </section>
     </div>
 
 </body>

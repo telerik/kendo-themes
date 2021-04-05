@@ -1087,6 +1087,10 @@
             bottom: inherit;
         }
 
+        .k-grid-row-sticky td {
+            z-index: 2;
+        }
+
         .k-grid-row-sticky td.k-grid-content-sticky,
         .k-grid-row-sticky.k-alt td.k-grid-content-sticky {
             z-index: 3;

@@ -202,6 +202,7 @@
         }
 
         th.k-grid-header-sticky,
+        td.k-grid-header-sticky,
         .k-grid-header-sticky.k-sorted {
             @include fill(
                 $color: $grid-sticky-header-text,
