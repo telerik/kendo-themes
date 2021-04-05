@@ -14,10 +14,9 @@ const dartSass = require("sass");
 const autoprefixer = require("autoprefixer");
 const calc = require("postcss-calc");
 
-const { sassBuild, sassFlatten } = require('@progress/kendo-theme-tasks/sass');
+const { sassBuild, sassFlatten } = require('@progress/kendo-theme-tasks/build');
 const { embedFileBase64 } = require('@progress/kendo-theme-tasks/embedFile');
-const { logger, colors } = require("@progress/kendo-theme-tasks/utils");
-const { getArg } = require("./scripts/utils");
+const { getArg, logger, colors } = require("@progress/kendo-theme-tasks/utils");
 const { utilsDocs } = require('./scripts/utils-docs/generate-utils-docs');
 
 
