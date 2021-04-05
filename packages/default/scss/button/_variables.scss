@@ -26,7 +26,7 @@ $button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-
 
 /// The background of the buttons.
 /// @group buttons
-$button-bg: #f6f6f6 !default;
+$button-bg: #f5f5f5 !default;
 /// The text color of the buttons.
 /// @group buttons
 $button-text: #424242 !default;
@@ -54,7 +54,7 @@ $button-hovered-shadow: null !default;
 
 /// The background color of active buttons.
 /// @group buttons
-$button-active-bg: try-shade( $button-bg, 1.5 ) !default;
+$button-active-bg: try-shade( $button-bg, 1 ) !default;
 /// The text color of active buttons.
 /// @group buttons
 $button-active-text: null !default;
