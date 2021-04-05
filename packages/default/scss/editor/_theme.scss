@@ -3,9 +3,9 @@
 
     .k-editor {
         @include fill(
-            $panel-text,
-            $panel-bg,
-            $panel-border
+            $component-text,
+            $component-bg,
+            $component-border
         );
     }
 

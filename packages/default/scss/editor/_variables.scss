@@ -12,6 +12,6 @@ $editor-selected-bg: $primary !default;
 
 $editor-highlighted-bg: mix($primary, #ffffff, 20%) !default;
 
-$editor-find-line-bg: $secondary;
+$editor-find-line-bg: rgba( $body-text, .1 );
 
 $editor-export-tool-icon-margin-x: .25em;
