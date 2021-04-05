@@ -68,8 +68,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$secondary</td>
     <td>Color</td>
-    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
-    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
+    <td><span class="color-preview" style="background-color: #666666"></span>#666666</td>
+    <td><span class="color-preview" style="background-color: #666666"></span>#666666</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The secondary color of the theme.</div></div>
@@ -148,8 +148,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$dark</td>
     <td>Color</td>
-    <td><span class="color-preview" style="background-color: #404040"></span>#404040</td>
-    <td><span class="color-preview" style="background-color: #404040"></span>#404040</td>
+    <td><span class="color-preview" style="background-color: #424242"></span>#424242</td>
+    <td><span class="color-preview" style="background-color: #424242"></span>#424242</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The dark color of the theme.</div></div>

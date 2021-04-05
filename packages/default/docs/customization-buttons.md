@@ -68,8 +68,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-bg</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
-    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
+    <td><span class="color-preview" style="background-color: #f5f5f5"></span>#f5f5f5</td>
+    <td><span class="color-preview" style="background-color: #f5f5f5"></span>#f5f5f5</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the buttons.</div></div>
@@ -148,8 +148,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-active-bg</td>
     <td></td>
-    <td>try-shade( $button-bg, 1.5 )</td>
-    <td>try-shade( $button-bg, 1.5 )</td>
+    <td>try-shade( $button-bg, 1 )</td>
+    <td>try-shade( $button-bg, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of active buttons.</div></div>
