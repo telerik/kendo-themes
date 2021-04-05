@@ -6,9 +6,9 @@
 
         .k-state-focused .k-link {
             @include fill(
-                $calendar-cell-hovered-text,
-                $calendar-cell-hovered-bg,
-                $calendar-cell-hovered-border
+                $calendar-cell-hover-text,
+                $calendar-cell-hover-bg,
+                $calendar-cell-hover-border
             );
         }
         .k-state-selected.k-state-focused .k-link {
