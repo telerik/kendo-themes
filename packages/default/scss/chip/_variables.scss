@@ -23,40 +23,42 @@ $chip-avatar-size: 16px !default;
 
 $chip-filled-bg: #ebebeb !default;
 $chip-filled-text: $body-text !default;
-$chip-filled-border: rgba(0, 0, 0, .15) !default;
+$chip-filled-border: rgba( black, .08 ) !default;
 
-$chip-filled-hovered-bg: #e0e0e0 !default;
-$chip-filled-hovered-border: rgba(0, 0, 0, .2) !default;
+$chip-filled-hovered-bg: try-shade( $chip-filled-bg, .5 ) !default;
+$chip-filled-hovered-text: null !default;
+$chip-filled-hovered-border: null !default;
 
 $chip-filled-focused-bg: $chip-filled-bg !default;
 $chip-filled-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
 
-$chip-filled-selected-bg: #d6d6d6 !default;
-$chip-filled-selected-border: rgba(0, 0, 0, .3) !default;
+$chip-filled-selected-bg: try-shade( $chip-filled-bg, 1 ) !default;
+$chip-filled-selected-text: null !default;
+$chip-filled-selected-border: null !default;
 
-$chip-filled-success-bg: rgba($success, .12) !default;
+$chip-filled-success-bg: rgba( $success, .12 ) !default;
 $chip-filled-success-text: $success !default;
-$chip-filled-success-border: rgba($success, .3) !default;
+$chip-filled-success-border: rgba( $success, .3 ) !default;
 
-$chip-filled-warning-bg: rgba($warning, .12) !default;
+$chip-filled-warning-bg: rgba( $warning, .12 ) !default;
 $chip-filled-warning-text: $warning !default;
-$chip-filled-warning-border: rgba($warning, .3) !default;
+$chip-filled-warning-border: rgba($warning, .3 ) !default;
 
-$chip-filled-error-bg: rgba($error, .12) !default;
+$chip-filled-error-bg: rgba( $error, .12 ) !default;
 $chip-filled-error-text: $error !default;
-$chip-filled-error-border: rgba($error, .3) !default;
+$chip-filled-error-border: rgba( $error, .3 ) !default;
 
-$chip-filled-info-bg: rgba($info, .12) !default;
+$chip-filled-info-bg: rgba( $info, .12 ) !default;
 $chip-filled-info-text: $info !default;
-$chip-filled-info-border: rgba($info, .3) !default;
+$chip-filled-info-border: rgba( $info, .3 ) !default;
 
 $chip-outline-bg: transparent !default;
-$chip-outline-text: #6c757d !default;
+$chip-outline-text: $body-text !default;
 $chip-outline-border: $body-text !default;
 
 $chip-outline-hovered-bg: $body-text !default;
 $chip-outline-hovered-text: #ffffff !default;
-$chip-outline-hovered-border: rgba(0, 0, 0, .2) !default;
+$chip-outline-hovered-border: rgba( black, .08 ) !default;
 
 $chip-outline-focused-bg: $chip-outline-bg !default;
 $chip-outline-focused-text: $chip-outline-text !default;
@@ -68,27 +70,27 @@ $chip-outline-selected-text: #ffffff !default;
 
 $chip-outline-success-bg: transparent !default;
 $chip-outline-success-text: $success !default;
-$chip-outline-success-border: rgba($success, .54) !default;
+$chip-outline-success-border: rgba( $success, .54 ) !default;
 
 $chip-outline-warning-bg: transparent !default;
 $chip-outline-warning-text: $warning !default;
-$chip-outline-warning-border: rgba($warning, .54) !default;
+$chip-outline-warning-border: rgba( $warning, .54 ) !default;
 
 $chip-outline-error-bg: transparent !default;
 $chip-outline-error-text: $error !default;
-$chip-outline-error-border: rgba($error, .54) !default;
+$chip-outline-error-border: rgba( $error, .54 ) !default;
 
 $chip-outline-info-bg: transparent !default;
 $chip-outline-info-text: $info !default;
-$chip-outline-info-border: rgba($info, .54) !default;
+$chip-outline-info-border: rgba( $info, .54 ) !default;
 
-$chip-filled-single-selected-bg: rgba($primary, .08) !default;
+$chip-filled-single-selected-bg: rgba( $primary, .08 ) !default;
 $chip-filled-single-selected-text: $primary !default;
-$chip-filled-single-selected-border: rgba($primary, .2) !default;
+$chip-filled-single-selected-border: rgba( $primary, .2 ) !default;
 
 $chip-outline-single-selected-bg: transparent !default;
 $chip-outline-single-selected-text: $primary !default;
-$chip-outline-single-selected-border: rgba($primary, .2) !default;
+$chip-outline-single-selected-border: rgba( $primary, .2 ) !default;
 
-$chip-multiple-selected-icon-bg: rgba(0, 0, 0, .36) !default;
+$chip-multiple-selected-icon-bg: rgba( black, .44 ) !default;
 $chip-multiple-selected-icon-text: #ffffff !default;
