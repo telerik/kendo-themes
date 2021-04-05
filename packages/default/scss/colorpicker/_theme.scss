@@ -73,9 +73,9 @@
     .k-flatcolorpicker {
         @extend .k-text-selection !optional;
         @include fill(
-            $panel-text,
-            $panel-bg,
-            $panel-border
+            $component-text,
+            $component-bg,
+            $component-border
         );
 
         .k-color-value {
