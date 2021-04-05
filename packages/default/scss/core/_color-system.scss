@@ -12,12 +12,30 @@ $gradient-white-to-transparent: white, rgba( white, 0);
 $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
 
+$palettes: (
+
+    gray: (
+        50:  #fafafa, // rgba( black, .02 )
+        100: #f5f5f5, // rgba( black, .04 )
+        200: #ebebeb, // rgba( black, .08 )
+        300: #e0e0e0, // rgba( black, .12 )
+        400: #d6d6d6, // rgba( black, .16 )
+        500: #cccccc, // rgba( black, .20 )
+        600: #8f8f8f, // rgba( black, .44 )
+        700: #666666, // rgba( black, .60 )
+        800: #424242, // rgba( black, .74 )
+        900: #292929  // rgba( black, .84 )
+    )
+
+) !default;
+
+
 // Text colors for light themes
 $primary-text-on-light: #424242 !default;
-$secondary-text-on-light: #646464 !default;
+$secondary-text-on-light: #666666 !default;
 $tertiary-text-on-light: "" !default;
-$placeholder-text-on-light: #646464 !default;
-$disabled-text-on-light: #8d8d8d !default;
+$placeholder-text-on-light: #666666 !default;
+$disabled-text-on-light: #8f8f8f !default;
 
 
 // Text colors for dark themes
@@ -26,3 +44,13 @@ $secondary-text-on-dark: "" !default;
 $tertiary-text-on-dark: "" !default;
 $placeholder-text-on-dark: "" !default;
 $disabled-text-on-dark: "" !default;
+
+
+// Color system functions
+@function get-base-palette($name) {
+    @return map-get( $palettes, $name );
+}
+
+@function get-base-hue($palette, $hue) {
+    @return map-get( get-base-palette( $palette ), $hue );
+}
