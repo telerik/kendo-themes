@@ -297,8 +297,10 @@ $selected-border: rgba( if($theme-type == dark, white, black), .1 ) !default;
 /// The gradient background of selected items.
 $selected-gradient: null !default;
 
-$selected-hover-bg: try-shade( $selected-bg ) !default;
+$selected-hover-bg: try-shade( $selected-bg, .5 ) !default;
 $selected-hover-text: $selected-text !default;
+$selected-hover-border: rgba( if($theme-type == dark, white, black), .1 ) !default;
+$selected-hover-gradient: null !default;
 
 $transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
 
