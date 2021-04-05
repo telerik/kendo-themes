@@ -263,10 +263,10 @@
         .k-scheduler-content tr.k-state-hover,
         .k-scheduler-content .k-scheduler-row:hover {
             @include fill(
-                $node-hovered-text,
-                $node-hovered-bg,
-                $node-hovered-border,
-                $node-hovered-gradient
+                $hovered-text,
+                $hovered-bg,
+                $hovered-border,
+                $hovered-gradient
             );
         }
 
