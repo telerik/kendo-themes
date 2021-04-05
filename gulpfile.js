@@ -17,8 +17,9 @@ const calc = require("postcss-calc");
 const { sassBuild, sassFlatten } = require('@progress/kendo-theme-tasks/sass');
 const { embedFileBase64 } = require('@progress/kendo-theme-tasks/embedFile');
 const { logger, colors } = require("@progress/kendo-theme-tasks/utils");
-const { getArg } = require("./scripts/utils");
+const { getArg, getEnvArg } = require("./scripts/utils");
 const { utilsDocs } = require('./scripts/utils-docs/generate-utils-docs');
+const { createComponentFiles } = require('@progress/kendo-theme-tasks/components');
 
 
 // Settings
@@ -223,6 +224,24 @@ gulp.task("utils-docs", function( done ) {
 });
 // #endregion
 
+// #region Components
+
+/**
+ * A task that creates all the needed files for a new component.
+ *
+ * @example npm run create-component-files --name=accordion
+ * @example gulp create-component-files --name accordion
+ *
+ * @param {string} [name] - The name of the new component.
+ */
+gulp.task("create-component-files", function( done ) {
+    const name = getArg('--name') || getEnvArg('name') || null;
+
+    createComponentFiles(name);
+    done();
+});
+
+// #endregion
 
 gulp.task("resolve-vars", function() {
     let themes = glob.sync(paths.sass.themes);
