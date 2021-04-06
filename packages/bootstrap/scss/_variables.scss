@@ -266,6 +266,11 @@ $selected-border: try-darken( $selected-bg, 12% ) !default;
 /// The gradient background of selected items.
 $selected-gradient: null !default;
 
+$selected-hover-bg: try-shade( $selected-bg, .5 ) !default;
+$selected-hover-text: $selected-text !default;
+$selected-hover-border: $base-border !default;
+$selected-hover-gradient: null !default;
+
 
 // TODO: refactor
 $focused-shadow: null !default;

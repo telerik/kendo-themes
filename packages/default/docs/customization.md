@@ -72,8 +72,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$base-gradient</td>
     <td></td>
-    <td>$base-bg, try-shade( $base-bg, 2% )</td>
-    <td>$base-bg, try-shade( $base-bg, 2% )</td>
+    <td>rgba( black, 0 ), rgba( black, .02 )</td>
+    <td>rgba( black, 0 ), rgba( black, .02 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of the components' chrome area.</div></div>
@@ -102,8 +102,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$hovered-border</td>
     <td></td>
-    <td>rgba( black, .15 )</td>
-    <td>rgba( black, .15 )</td>
+    <td>$base-border</td>
+    <td>rgba( black, .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered items.</div></div>
@@ -112,8 +112,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$hovered-gradient</td>
     <td></td>
-    <td>$hovered-bg, try-shade( $hovered-bg, 2% )</td>
-    <td>$hovered-bg, try-shade( $hovered-bg, 2% )</td>
+    <td>$base-gradient</td>
+    <td>rgba( black, 0 ), rgba( black, .02 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of hovered items.</div></div>
@@ -142,8 +142,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$selected-border</td>
     <td></td>
-    <td>rgba( black, .1 )</td>
-    <td>rgba( black, .1 )</td>
+    <td>$base-border</td>
+    <td>rgba( black, .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected items.</div></div>
@@ -152,8 +152,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$selected-gradient</td>
     <td></td>
-    <td>none</td>
-    <td>none</td>
+    <td>$base-gradient</td>
+    <td>rgba( black, 0 ), rgba( black, .02 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of selected items.</div></div>
@@ -223,8 +223,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$button-bg</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
-    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
+    <td><span class="color-preview" style="background-color: #f5f5f5"></span>#f5f5f5</td>
+    <td><span class="color-preview" style="background-color: #f5f5f5"></span>#f5f5f5</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the buttons.</div></div>
@@ -303,8 +303,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$button-active-bg</td>
     <td></td>
-    <td>try-shade( $button-bg, 1.5 )</td>
-    <td>try-shade( $button-bg, 1.5 )</td>
+    <td>try-shade( $button-bg, 1 )</td>
+    <td>try-shade( $button-bg, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of active buttons.</div></div>
@@ -565,8 +565,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$secondary</td>
     <td>Color</td>
-    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
-    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
+    <td><span class="color-preview" style="background-color: #666666"></span>#666666</td>
+    <td><span class="color-preview" style="background-color: #666666"></span>#666666</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The secondary color of the theme.</div></div>
@@ -645,8 +645,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$dark</td>
     <td>Color</td>
-    <td><span class="color-preview" style="background-color: #404040"></span>#404040</td>
-    <td><span class="color-preview" style="background-color: #404040"></span>#404040</td>
+    <td><span class="color-preview" style="background-color: #424242"></span>#424242</td>
+    <td><span class="color-preview" style="background-color: #424242"></span>#424242</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The dark color of the theme.</div></div>

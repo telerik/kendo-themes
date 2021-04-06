@@ -87,13 +87,25 @@ $calendar-other-month-bg: null !default;
 $calendar-other-month-text: $calendar-header-cell-text !default;
 $calendar-other-month-opacity: null !default;
 
-$calendar-cell-hovered-bg: $node-hovered-bg !default;
-$calendar-cell-hovered-text: $node-hovered-text !default;
-$calendar-cell-hovered-border: $node-hovered-border !default;
+$calendar-cell-bg: null !default;
+$calendar-cell-text: null !default;
+$calendar-cell-border: null !default;
+$calendar-cell-gradient: null !default;
 
-$calendar-cell-selected-bg: $node-selected-bg !default;
-$calendar-cell-selected-text: $node-selected-text !default;
-$calendar-cell-selected-border: $node-selected-border !default;
+$calendar-cell-hover-bg: $hovered-bg !default;
+$calendar-cell-hover-text: $hovered-text !default;
+$calendar-cell-hover-border: $hovered-border !default;
+$calendar-cell-hover-gradient: null !default;
+
+$calendar-cell-selected-bg: $selected-bg !default;
+$calendar-cell-selected-text: $selected-text !default;
+$calendar-cell-selected-border: $selected-border !default;
+$calendar-cell-selected-gradient: null !default;
+
+$calendar-cell-selected-hover-bg: $selected-hover-bg !default;
+$calendar-cell-selected-hover-text: $selected-hover-text !default;
+$calendar-cell-selected-hover-border: null !default;
+$calendar-cell-selected-hover-gradient: null !default;
 
 $calendar-cell-focused-shadow: $list-item-focused-shadow !default;
 $calendar-cell-selected-focus-shadow: $calendar-cell-focused-shadow !default;
