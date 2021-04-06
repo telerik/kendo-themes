@@ -150,6 +150,10 @@
             font-size: $drawer-icon-size;
             line-height: $drawer-item-line-height;
             flex-shrink: 0;
+
+            &.k-i-none {
+                margin: 0;
+            }
         }
 
         .k-item-text {
