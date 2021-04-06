@@ -1,0 +1,95 @@
+// TaskBoard
+$taskboard-spacer: map-get( $spacing, 4 ) !default;
+$taskboard-padding-y: null !default;
+$taskboard-padding-x: null !default;
+$taskboard-font-family: $font-family !default;
+$taskboard-font-size: $font-size !default;
+$taskboard-line-height: $line-height !default;
+$taskboard-bg: null !default;
+$taskboard-text: null !default;
+$taskboard-border: null !default;
+
+$taskboard-toolbar-padding-y: $taskboard-spacer !default;
+$taskboard-toolbar-padding-x: $taskboard-toolbar-padding-y !default;
+$taskboard-toolbar-bg: null !default;
+$taskboard-toolbar-text: null !default;
+$taskboard-toolbar-border: null !default;
+$taskboard-toolbar-gradient: null !default;
+
+$taskboard-content-padding-y: $taskboard-spacer !default;
+$taskboard-content-padding-x: $taskboard-content-padding-y !default;
+
+$taskboard-column-container-spacing-y: $taskboard-spacer / 2 !default;
+$taskboard-column-container-padding-y: 0 !default;
+$taskboard-column-container-padding-x: $taskboard-spacer / 2 !default;
+$taskboard-columns-container-gap: $taskboard-spacer !default;
+
+$taskboard-column-width: 320px !default;
+$taskboard-column-border-width: 1px !default;
+$taskboard-column-border-radius: $border-radius !default;
+$taskboard-column-bg: if( $is-dark-theme, $dark, $light) !default;
+$taskboard-column-text: null !default;
+$taskboard-column-border: transparent !default;
+
+$taskboard-column-focus-bg: null !default;
+$taskboard-column-focus-text: null !default;
+$taskboard-column-focus-border: try-shade( $base-border, 2.5 ) !default;
+
+$taskboard-column-header-padding-y: $taskboard-spacer / 2 !default;
+$taskboard-column-header-padding-x: $taskboard-column-header-padding-y !default;
+$taskboard-column-header-gap: $taskboard-spacer / 4 !default;
+$taskboard-column-header-actions-gap: $taskboard-spacer / 2 !default;
+$taskboard-column-header-font-weight: 500 !default;
+$taskboard-column-header-text: $header-text !default;
+
+$taskboard-column-cards-padding-y: 0 !default;
+$taskboard-column-cards-padding-x: 0 !default;
+$taskboard-column-cards-gap: $taskboard-spacer / 2 !default;
+
+$taskboard-column-new-calc-height: calc( #{$input-calc-height} + #{$taskboard-column-header-padding-y * 2} ) !default;
+
+$taskboard-pane-width: $taskboard-column-width !default;
+$taskboard-pane-padding-y: $taskboard-spacer !default;
+$taskboard-pane-padding-x: $taskboard-pane-padding-y !default;
+$taskboard-pane-border-width: 1px !default;
+$taskboard-pane-gap: $taskboard-spacer !default;
+$taskboard-pane-bg: $component-bg !default;
+$taskboard-pane-text: $component-text !default;
+$taskboard-pane-border: $component-border !default;
+
+$taskboard-pane-header-font-weight: 500 !default;
+$taskboard-pane-header-text: $header-text !default;
+
+$taskboard-pane-content-padding-y: 0 !default;
+$taskboard-pane-content-padding-x: $taskboard-spacer !default;
+
+$taskboard-pane-actions-padding-y: $taskboard-spacer / 2 !default;
+$taskboard-pane-actions-padding-x: $taskboard-pane-actions-padding-y !default;
+
+$taskboard-card-padding-y: $taskboard-spacer !default;
+$taskboard-card-padding-x: $taskboard-card-padding-y !default;
+$taskboard-card-border-width: 1px !default;
+$taskboard-card-border-radius: $card-border-radius !default;
+$taskboard-card-bg: $card-bg !default;
+$taskboard-card-text: $card-text !default;
+$taskboard-card-border: $base-border !default;
+$taskboard-card-shadow: none !default;
+
+$taskboard-card-category-border-width: 4px !default;
+
+$taskboard-card-focus-border: try-shade( $taskboard-card-border, 9% ) !default;
+$taskboard-card-focus-shadow: none !default;
+
+$taskboard-card-hover-border: try-shade( $taskboard-card-border, 10% ) !default;
+
+$taskboard-card-selected-border: $primary-lighter !default;
+$taskboard-card-selected-shadow: none !default;
+
+$taskboard-card-header-text: $primary !default;
+$taskboard-card-header-focus-text: $primary-darker !default;
+$taskboard-card-header-hover-text: try-darken( $primary-lighter, 25% ) !default;
+
+$taskboard-drag-placeholder-border-width: 1px !default;
+$taskboard-drag-placeholder-border-radius: $taskboard-card-border-radius !default;
+$taskboard-drag-placeholder-bg: rgba(255, 255, 255, .2) !default;
+$taskboard-drag-placeholder-border: $component-border !default;
