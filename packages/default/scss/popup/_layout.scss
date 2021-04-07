@@ -207,7 +207,7 @@
         position: relative;
         padding: $padding-x;
         box-sizing: border-box;
-        flex: 1 0 auto;
+        flex: 0 0 auto;
 
         > .k-textbox {
             // remove the !important declaration when https://github.com/telerik/kendo-ui-core/issues/2617 is fixed
