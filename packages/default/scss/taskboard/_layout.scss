@@ -173,6 +173,8 @@
         .k-card-title {
             font-size: inherit;
             font-weight: inherit;
+            word-break: normal;
+            overflow-wrap: anywhere;
 
             &:focus,
             &.k-state-focus,
