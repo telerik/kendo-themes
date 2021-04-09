@@ -2,55 +2,55 @@
 
     // Position documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/position.
 
-    // @name k-pos-static
-    // @description This is equivalent to `position: static;`. The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.
-    // @group position
+    /// @name k-pos-static
+    /// @description This is equivalent to `position: static;`. The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.
+    /// @group position
 
-    // @name k-pos-relative
-    // @description This is equivalent to `position: relative;`. The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.
-    // @group position
+    /// @name k-pos-relative
+    /// @description This is equivalent to `position: relative;`. The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.
+    /// @group position
 
-    // @name k-pos-absolute
-    // @description This is equivalent to `position: absolute;`. The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.
-    // @group position
+    /// @name k-pos-absolute
+    /// @description This is equivalent to `position: absolute;`. The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.
+    /// @group position
 
-    // @name k-pos-fixed
-    // @description This is equivalent to `position: fixed;`. The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a transform, perspective, or filter property set to something other than none (see the CSS Transforms Spec), in which case that ancestor behaves as the containing block. (Note that there are browser inconsistencies with perspective and filter contributing to containing block formation.) Its final position is determined by the values of top, right, bottom, and left.
-    // @group position
+    /// @name k-pos-fixed
+    /// @description This is equivalent to `position: fixed;`. The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a transform, perspective, or filter property set to something other than none (see the CSS Transforms Spec), in which case that ancestor behaves as the containing block. (Note that there are browser inconsistencies with perspective and filter contributing to containing block formation.) Its final position is determined by the values of top, right, bottom, and left.
+    /// @group position
 
-    // @name k-pos-sticky
-    // @description This is equivalent to `position: sticky;`. The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements.
-    // @group position
+    /// @name k-pos-sticky
+    /// @description This is equivalent to `position: sticky;`. The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements.
+    /// @group position
 
     @each $pos in (static, relative, absolute, fixed, sticky) {
         .k-#{$pos},
         .k-pos-#{$pos} { position: $pos !important; } // sass-lint:disable-line brace-style no-important
     }
 
-    // @name k-pos-top
-    // @description This is equivalent to `top: 0;`.
-    // @group position
+    /// @name k-pos-top
+    /// @description This is equivalent to `top: 0;`.
+    /// @group position
 
-    // @name k-pos-right
-    // @description This is equivalent to `right: 0;`.
-    // @group position
+    /// @name k-pos-right
+    /// @description This is equivalent to `right: 0;`.
+    /// @group position
 
-    // @name k-pos-bottom
-    // @description This is equivalent to `bottom: 0;`.
-    // @group position
+    /// @name k-pos-bottom
+    /// @description This is equivalent to `bottom: 0;`.
+    /// @group position
 
-    // @name k-pos-left
-    // @description This is equivalent to `left: 0;`.
-    // @group position
+    /// @name k-pos-left
+    /// @description This is equivalent to `left: 0;`.
+    /// @group position
 
     @each $side in (top, right, bottom, left) {
         .k-#{$side},
         .k-pos-#{$side} { #{$side}: 0; } // sass-lint:disable-line brace-style
     }
 
-    // @name k-pos-top-start
-    // @description This is equivalent to `top: 0; left: 0;`.
-    // @group position
+    /// @name k-pos-top-start
+    /// @description This is equivalent to `top: 0; left: 0;`.
+    /// @group position
     .k-top-start,
     .k-pos-top-start {
         top: 0;
@@ -64,9 +64,9 @@
         }
     }
 
-    // @name k-pos-top-center
-    // @description This is equivalent to `top: 0; left: 50%; transform: translateX(-50%);`.
-    // @group position
+    /// @name k-pos-top-center
+    /// @description This is equivalent to `top: 0; left: 50%; transform: translateX(-50%);`.
+    /// @group position
     .k-top-center,
     .k-pos-top-center {
         top: 0;
@@ -74,9 +74,9 @@
         transform: translateX(-50%);
     }
 
-    // @name k-pos-top-end
-    // @description This is equivalent to `top: 0; right: 0;`.
-    // @group position
+    /// @name k-pos-top-end
+    /// @description This is equivalent to `top: 0; right: 0;`.
+    /// @group position
     .k-top-end,
     .k-pos-top-end {
         top: 0;
@@ -90,9 +90,9 @@
         }
     }
 
-    // @name k-pos-middle-start
-    // @description This is equivalent to `top: 50%; left: 0; transform: translateY(-50%);`.
-    // @group position
+    /// @name k-pos-middle-start
+    /// @description This is equivalent to `top: 50%; left: 0; transform: translateY(-50%);`.
+    /// @group position
     .k-middle-start,
     .k-pos-middle-start {
         top: 50%;
@@ -107,9 +107,9 @@
         }
     }
 
-    // @name k-pos-middle-center
-    // @description This is equivalent to `top: 50%; left: 50%; transform: translate(-50%, -50%);`.
-    // @group position
+    /// @name k-pos-middle-center
+    /// @description This is equivalent to `top: 50%; left: 50%; transform: translate(-50%, -50%);`.
+    /// @group position
     .k-middle-center ,
     .k-pos-middle-center {
         top: 50%;
@@ -117,9 +117,9 @@
         transform: translate(-50%, -50%);
     }
 
-    // @name k-pos-middle-end
-    // @description This is equivalent to `top: 50%; right: 0; transform: translateY(-50%);`.
-    // @group position
+    /// @name k-pos-middle-end
+    /// @description This is equivalent to `top: 50%; right: 0; transform: translateY(-50%);`.
+    /// @group position
     .k-middle-end ,
     .k-pos-middle-end {
         top: 50%;
@@ -134,9 +134,9 @@
         }
     }
 
-    // @name k-pos-bottom-start
-    // @description This is equivalent to `bottom: 0; left: 0;`.
-    // @group position
+    /// @name k-pos-bottom-start
+    /// @description This is equivalent to `bottom: 0; left: 0;`.
+    /// @group position
     .k-bottom-start,
     .k-pos-bottom-start {
         bottom: 0;
@@ -150,9 +150,9 @@
         }
     }
 
-    // @name k-pos-bottom-center
-    // @description This is equivalent to `bottom: 0; left: 50%; translateX(-50%);`.
-    // @group position
+    /// @name k-pos-bottom-center
+    /// @description This is equivalent to `bottom: 0; left: 50%; translateX(-50%);`.
+    /// @group position
     .k-bottom-center,
     .k-pos-bottom-center {
         bottom: 0;
@@ -160,9 +160,9 @@
         transform: translateX(-50%);
     }
 
-    // @name k-pos-bottom-end
-    // @description This is equivalent to `bottom: 0; right: 0;`.
-    // @group position
+    /// @name k-pos-bottom-end
+    /// @description This is equivalent to `bottom: 0; right: 0;`.
+    /// @group position
     .k-bottom-end,
     .k-pos-bottom-end {
         bottom: 0;
