@@ -186,8 +186,17 @@ gulp.task("docs", function() {
                 return Promise.resolve();
             }
 
+            // Temporary workaround before we move docs generation to theme-tasks
+            let themeFiles = glob.sync(theme + "/scss/**/*.scss");
+
+            if ( theme === './packages/default' ) {
+                themeFiles = themeFiles.filter(function(item) {
+                    return !item.startsWith("./packages/default/scss/utils/_");
+                });
+            }
+
             let sassdocrc = JSON.parse( fs.readFileSync( path.join(theme, ".sassdocrc"), "utf8" ) );
-            return sassdoc(theme + "/scss/**/*.scss", {
+            return sassdoc(themeFiles, {
                 dest: path.join(theme, "/.tmp/docs"),
                 dist: path.join(theme, "/docs"),
                 theme: "./docs/sassdoc-theme.js",
