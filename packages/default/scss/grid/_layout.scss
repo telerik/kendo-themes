@@ -377,6 +377,10 @@
         .k-dirty-cell {
             position: relative;
 
+            &.k-edit-cell {
+                position: static;
+            }
+
             &.k-grid-content-sticky {
                 position: sticky;
             }
@@ -898,10 +902,6 @@
         .k-edit-cell {
             padding-top: 0;
             padding-bottom: 0;
-        }
-
-        .k-dirty-cell {
-            overflow: visible;
         }
     }
 
