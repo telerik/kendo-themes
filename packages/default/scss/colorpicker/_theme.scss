@@ -109,6 +109,10 @@
                 background-color: transparent;
             }
 
+            .k-draghandle.k-state-focus {
+                outline: 1px dotted black;
+            }
+
         }
 
 
@@ -135,6 +139,10 @@
         .k-draghandle {
             border-color: rgba(255, 255, 255, .8);
             box-shadow: 0 1px 4px rgba(0, 0, 0, .21);
+
+            &.k-state-focus {
+                outline: 1px dotted black;
+            }
         }
 
         // Color contrast
