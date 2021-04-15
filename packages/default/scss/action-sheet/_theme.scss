@@ -1,0 +1,77 @@
+@include exports("action-sheet/theme") {
+
+    // Actionsheet
+    .k-actionsheet {
+        @include fill(
+            $actionsheet-text,
+            $actionsheet-bg,
+            $actionsheet-border,
+        );
+        @include box-shadow( $actionsheet-shadow );
+    }
+
+
+    // Actionsheet header
+    .k-actionsheet-header {
+        @include fill(
+            $actionsheet-header-text,
+            $actionsheet-header-bg,
+            $actionsheet-header-border,
+            $actionsheet-header-gradient
+        );
+        @include box-shadow( $actionsheet-header-shadow );
+    }
+
+
+    // Actionsheet items
+    .k-actionsheet-items {}
+
+
+    // Actionsheet item
+    .k-actionsheet-item {}
+
+
+    // Actionsheet action
+    .k-actionsheet-action {
+
+
+        // Hover state
+        &:hover,
+        &.k-state-hover {
+            @include fill(
+                $actionsheet-item-hover-text,
+                $actionsheet-item-hover-bg,
+                $actionsheet-item-hover-border,
+                $actionsheet-item-hover-gradient
+            );
+            @include box-shadow( $actionsheet-item-hover-shadow );
+        }
+
+
+        // Focus state
+        &:focus,
+        &.k-state-focus {
+            @include fill(
+                $actionsheet-item-focus-text,
+                $actionsheet-item-focus-bg,
+                $actionsheet-item-focus-border,
+                $actionsheet-item-focus-gradient
+            );
+            @include box-shadow( $actionsheet-item-focus-shadow );
+        }
+
+
+        // Disabed state
+        &:disabled,
+        &.k-state-disabled {
+            @include fill(
+                $actionsheet-item-disabled-text,
+                $actionsheet-item-disabled-bg,
+                $actionsheet-item-disabled-border,
+                $actionsheet-item-disabled-gradient
+            );
+            @include box-shadow( $actionsheet-item-disabled-shadow );
+        }
+    }
+
+}
