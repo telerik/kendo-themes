@@ -103,7 +103,7 @@
 
         <span class="col-2">Angular -- fixed height, hierarchy, filter menu, sort icon</span>
         <section class="col-2">
-            <kendo-grid class="k-widget k-grid k-grid-no-scrollbar" style="height: 250px;">
+            <kendo-grid class="k-widget k-grid k-grid-no-scrollbar" style="height: 240px;">
                 <div class="k-grid-aria-root">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
@@ -184,6 +184,79 @@
                     </kendo-grid-list>
                 </div>
             </kendo-grid>
+        </section>
+
+        <span class="col-2">Angular -- expand/collapse cell and first column is a checkbox column</span>
+        <section class="col-2">
+            <kendo-grid class="k-widget k-grid">
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header" role="presentation" style="padding: 0px 14px 0px 0px;">
+                        <div class="k-grid-header-wrap">
+                            <table>
+                                <colgroup>
+                                    <col class="k-hierarchy-col" />
+                                    <col style="width: 100px;" />
+                                    <col style="width: 300px;" />
+                                    <col style="width: 100px;" />
+                                    <col />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="k-hierarchy-cell k-header"></th>
+                                        <th class="k-header"></th>
+                                        <th class="k-header">Product</th>
+                                        <th class="k-header">Unit Price</th>
+                                        <th class="k-header">Qty Per Unit</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <kendo-grid-list class="k-grid-container">
+                        <div class="k-grid-content k-virtual-content">
+                            <div class="k-grid-table-wrap">
+                                <table class="k-grid-table">
+                                    <colgroup>
+                                        <col class="k-hierarchy-col" />
+                                        <col style="width: 100px;" />
+                                        <col style="width: 300px;" />
+                                        <col style="width: 100px;" />
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr class="k-master-row">
+                                            <td class="k-hierarchy-cell">
+                                                <a class="k-icon k-minus"></a>
+                                            </td>
+                                            <td><input class="k-checkbox" /><label class="k-checkbox-label"></label></td>
+                                            <td>Chai</td>
+                                            <td>18</td>
+                                            <td>10 boxes x 20 bags</td>
+                                        </tr>
+                                        <tr class="k-detail-row">
+                                            <td class="k-hierarchy-cell"></td>
+                                            <td class="k-detail-cell" colspan="4"><div style="background: #ccc; padding: 10px;">Nested content</div></td>
+                                        </tr>
+                                        <tr class="k-alt k-master-row">
+                                            <td class="k-hierarchy-cell">
+                                                <a class="k-icon k-plus"></a>
+                                            </td>
+                                            <td><input class="k-checkbox" type="checkbox" /><label class="k-checkbox-label"></label></td>
+                                            <td>Chang</td>
+                                            <td>19</td>
+                                            <td>24 - 12 oz bottles</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="k-height-container">
+                                <div></div>
+                            </div>
+                        </div>
+                    </kendo-grid-list>
+                </div>
+            </kendo-grid>
+
         </section>
 
     </div>
