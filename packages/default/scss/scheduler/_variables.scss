@@ -54,3 +54,42 @@ $scheduler-weekend-text: null !default;
 
 $scheduler-othermonth-bg: try-shade( $scheduler-bg, .5 ) !default;
 $scheduler-othermonth-text: null !default;
+
+$scheduler-yearview-padding-x: map-get( $spacing, 3 ) !default;
+$scheduler-yearview-padding-y: $scheduler-yearview-padding-x !default;
+
+$scheduler-yearview-month-header-font-weight: bold !default;
+$scheduler-yearview-month-header-font-size: inherit !default;
+$scheduler-yearview-month-header-opacity: 1 !default;
+$scheduler-yearview-month-header-text: $subtle-text !default;
+
+$scheduler-yearview-calendar-gap: map-get( $spacing, 3 ) !default;
+
+$scheduler-yearview-indicator-size: 3px !default;
+$scheduler-yearview-indicator-calc-offset-top: calc( #{$calendar-cell-size} - (#{$calendar-cell-padding-y} * 2)) !default;
+$scheduler-yearview-indicator-calc-offset-left: calc( 50% - (#{$scheduler-yearview-indicator-size} / 2) ) !default;
+$scheduler-yearview-indicator-border-radius: 50% !default;
+$scheduler-yearview-indicator-bg: $primary !default;
+$scheduler-yearview-indicator-selected-bg: $primary-contrast !default;
+
+$scheduler-tooltip-padding-x: $padding-x !default;
+$scheduler-tooltip-padding-y: $scheduler-tooltip-padding-x !default;
+$scheduler-tooltip-border-width: 0 !default;
+$scheduler-tooltip-bg: $primary-contrast !default;
+$scheduler-tooltip-text: $base-text !default;
+$scheduler-tooltip-border: null !default;
+$scheduler-tooltip-shadow: 0px 0px 10px rgba(0, 0, 0, .2) !default;
+
+$scheduler-tooltip-title-margin-y: map-get( $spacing, 3 ) !default;
+$scheduler-tooltip-month-font-size: $font-size-sm !default;
+$scheduler-tooltip-day-font-size: $scheduler-tooltip-month-font-size * 2 !default;
+
+$scheduler-tooltip-events-max-height: 250px !default;
+$scheduler-tooltip-events-gap: $padding-y !default;
+
+$scheduler-tooltip-event-padding-x: $padding-x !default;
+$scheduler-tooltip-event-padding-y: $padding-y !default;
+$scheduler-tooltip-event-border-radius: $border-radius !default;
+$scheduler-tooltip-event-gap: $padding-x-sm !default;
+
+$scheduler-tooltip-callout-text: $scheduler-tooltip-bg !default;

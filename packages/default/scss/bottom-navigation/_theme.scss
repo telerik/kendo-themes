@@ -14,9 +14,7 @@
                 @include fill( $bg: rgba(true-mix( $color, contrast-wcag( $color ), 35%), .2));
             }
 
-            .k-bottom-nav-item.k-state-selected,
-            .k-bottom-nav-item.k-state-active,
-            .k-bottom-nav-item:active {
+            .k-bottom-nav-item.k-state-selected {
                 @include fill( $color: contrast-wcag( $color ) );
             }
         }
@@ -37,9 +35,7 @@
         }
 
         @each $name, $color in $theme-colors {
-            &.k-bottom-nav-#{$name} .k-bottom-nav-item.k-state-selected,
-            &.k-bottom-nav-#{$name} .k-bottom-nav-item.k-state-active,
-            &.k-bottom-nav-#{$name} .k-bottom-nav-item:active {
+            &.k-bottom-nav-#{$name} .k-bottom-nav-item.k-state-selected {
                 @if $name == "secondary" or $name == "light" {
                     @include fill( $color: try-shade($color, 3) );
                 } @else {
