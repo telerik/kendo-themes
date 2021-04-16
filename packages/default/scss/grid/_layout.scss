@@ -1102,6 +1102,10 @@
         .k-grid-content-locked tr .k-grid-content-sticky:last-child {
             border-right: 0;
         }
+
+        .k-grid-header .k-grid-column-menu {
+            z-index: 5;
+        }
     }
 
     .k-grid-content-sticky.k-grid-row-sticky {
