@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.32.0"></a>
+# [3.32.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.31.1...@progress/kendo-theme-material@3.32.0) (2021-04-16)
+
+
+### Bug Fixes
+
+* **adaptive:** use component and app colors for adaptive styling ([b38436e](https://github.com/telerik/kendo-themes/commit/b38436e))
+* **appbar:** use light and dark colors for light and dark appbar ([3346deb](https://github.com/telerik/kendo-themes/commit/3346deb))
+* **calendar:** update calendar colors to match latest design spec ([fdfc48c](https://github.com/telerik/kendo-themes/commit/fdfc48c))
+* **color-system:** update selected hover colors ([d2daeaa](https://github.com/telerik/kendo-themes/commit/d2daeaa))
+* **dataviz:** use linked chart colors for crosshair ([a7a9313](https://github.com/telerik/kendo-themes/commit/a7a9313))
+* **drawer:** use component- variables for drawer styles ([60d11b6](https://github.com/telerik/kendo-themes/commit/60d11b6))
+* **filter:** use subtle text variable for filter styling ([2eba3f6](https://github.com/telerik/kendo-themes/commit/2eba3f6))
+* **grid:** filter menu items spacings ([02e2f54](https://github.com/telerik/kendo-themes/commit/02e2f54))
+* **grid:** use correct colors for grid colum menu styles ([fc1f85c](https://github.com/telerik/kendo-themes/commit/fc1f85c))
+* **loader:** use component- variables for loader styles ([d2a9808](https://github.com/telerik/kendo-themes/commit/d2a9808))
+* **panelbar:** change panelbar-bg to white ([f27f218](https://github.com/telerik/kendo-themes/commit/f27f218))
+* **pivotgrid:** use correct colors for pivotgrid ([4dd2df2](https://github.com/telerik/kendo-themes/commit/4dd2df2))
+* **slider:** use correct variables for material slider ([8040af2](https://github.com/telerik/kendo-themes/commit/8040af2))
+* **splitter:** tweak splitbar colors ([9b978ef](https://github.com/telerik/kendo-themes/commit/9b978ef))
+* **spreadsheet:** use component- variables for spreadsheet styles ([fb20ad7](https://github.com/telerik/kendo-themes/commit/fb20ad7))
+* **timepicker:** align timepicker colors to design spec ([ec115cc](https://github.com/telerik/kendo-themes/commit/ec115cc))
+* **upload:** use component- variables for upload styles ([b814610](https://github.com/telerik/kendo-themes/commit/b814610))
+
+
+### Features
+
+* **action-sheet:** add styles for action sheet ([a6fc80c](https://github.com/telerik/kendo-themes/commit/a6fc80c))
+* **button:** align button colors to design specification ([1d40910](https://github.com/telerik/kendo-themes/commit/1d40910))
+* **button:** update button spacing ([b539940](https://github.com/telerik/kendo-themes/commit/b539940))
+* **panelbar:** styles update ([613d2a3](https://github.com/telerik/kendo-themes/commit/613d2a3))
+* **scheduler:** add year view styles ([96647f1](https://github.com/telerik/kendo-themes/commit/96647f1)), closes [#2229](https://github.com/telerik/kendo-themes/issues/2229)
+* **skeleton:** component styles ([3a31ce0](https://github.com/telerik/kendo-themes/commit/3a31ce0))
+* add styles for drag cell ([35c043b](https://github.com/telerik/kendo-themes/commit/35c043b))
+* add TaskBoard styles ([fe98511](https://github.com/telerik/kendo-themes/commit/fe98511))
+* increase contrast of textual colors ([da847d9](https://github.com/telerik/kendo-themes/commit/da847d9))
+
+
+
+
 <a name="3.31.1"></a>
 ## [3.31.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.31.0...@progress/kendo-theme-material@3.31.1) (2021-03-29)
 
