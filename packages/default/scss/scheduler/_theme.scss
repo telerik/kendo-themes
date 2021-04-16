@@ -295,6 +295,42 @@
     // Timeline view
     .k-scheduler-timelineview {}
 
+
+    // Year view
+    .k-scheduler-yearview {
+        .k-month-header {
+            @include fill( $color: $scheduler-yearview-month-header-text );
+        }
+
+        .k-day-indicator {
+            @include fill( $bg: $scheduler-yearview-indicator-bg );
+        }
+
+        .k-state-selected .k-day-indicator {
+            @include fill( $bg: $scheduler-yearview-indicator-selected-bg );
+        }
+    }
+
+}
+
+
+
+
+@include exports("scheduler-tooltip/theme") {
+
+    .k-tooltip.k-scheduler-tooltip {
+        @include fill(
+            $scheduler-tooltip-text,
+            $scheduler-tooltip-bg,
+            $scheduler-tooltip-border
+        );
+        @include box-shadow( $scheduler-tooltip-shadow );
+
+        .k-callout {
+            @include fill( $color: $scheduler-tooltip-callout-text );
+        }
+    }
+
 }
 
 
