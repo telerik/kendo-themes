@@ -240,6 +240,45 @@
     .k-i-overlap::before { content: "\e033"; }
     .k-i-home::before { content: "\e034"; }
     .k-i-root::before { content: "\e034"; }
+    .k-i-height::before { content: "\e035"; }
+    .k-i-width::before { content: "\e036"; }
+    .k-i-max-height::before { content: "\e037"; }
+    .k-i-max-width::before { content: "\e038"; }
+    .k-i-min-height::before { content: "\e039"; }
+    .k-i-min-width::before { content: "\e03a"; }
+    .k-i-margin::before { content: "\e03b"; }
+    .k-i-margin-top::before { content: "\e03c"; }
+    .k-i-margin-right::before { content: "\e03d"; }
+    .k-i-margin-bottom::before { content: "\e03e"; }
+    .k-i-margin-left::before { content: "\e03f"; }
+    .k-i-padding::before { content: "\e040"; }
+    .k-i-padding-top::before { content: "\e041"; }
+    .k-i-padding-right::before { content: "\e042"; }
+    .k-i-padding-bottom::before { content: "\e043"; }
+    .k-i-padding-left::before { content: "\e044"; }
+    .k-i-border-style::before { content: "\e045"; }
+    .k-i-border-style-top::before { content: "\e046"; }
+    .k-i-border-style-right::before { content: "\e047"; }
+    .k-i-border-style-bottom::before { content: "\e048"; }
+    .k-i-border-style-left::before { content: "\e049"; }
+    .k-i-border-radius::before { content: "\e04a"; }
+    .k-i-border-radius-top-right::before { content: "\e04b"; }
+    .k-i-border-radius-bottom-right::before { content: "\e04c"; }
+    .k-i-border-radius-bottom-left::before { content: "\e04d"; }
+    .k-i-border-radius-top-left::before { content: "\e04e"; }
+    .k-i-outline-width::before { content: "\e04f"; }
+    .k-i-outline-offset::before { content: "\e050"; }
+    .k-i-box-sizing::before { content: "\e051"; }
+    .k-i-position-top::before { content: "\e052"; }
+    .k-i-position-right::before { content: "\e053"; }
+    .k-i-position-bottom::before { content: "\e054"; }
+    .k-i-position-left::before { content: "\e055"; }
+    .k-i-display-block::before { content: "\e056"; }
+    .k-i-display-inline-block::before { content: "\e057"; }
+    .k-i-display-flex::before { content: "\e058"; }
+    .k-i-display-inline-flex::before { content: "\e059"; }
+    .k-i-gap-column::before { content: "\e05a"; }
+    .k-i-gap-row::before { content: "\e05b"; }
     .k-i-undo::before { content: "\e100"; }
     .k-i-undo-large::before { content: "\e100"; }
     .k-i-redo::before { content: "\e101"; }
@@ -1010,15 +1049,21 @@
     .k-i-files-validation::before { content: "\e945"; }
     .k-i-data-rest::before { content: "\e946"; }
     .k-i-file-typescript::before { content: "\e947"; }
-    .k-i-table-position-start::before { content: "\e948"; }
-    .k-i-table-position-left::before { content: "\e948"; }
-    .k-i-table-position-center::before { content: "\e949"; }
-    .k-i-table-position-end::before { content: "\e94a"; }
-    .k-i-table-position-right::before { content: "\e94a"; }
-    .k-i-list-roman-upper::before { content: "\e94b"; }
-    .k-i-list-roman-lower::before { content: "\e94c"; }
-    .k-i-import::before { content: "\e94d"; }
-    .k-i-export::before { content: "\e94e"; }
+    .k-i-table-position-start::before { content: "\e6a2"; }
+    .k-i-table-position-left::before { content: "\e6a2"; }
+    .k-i-table-position-center::before { content: "\e6a3"; }
+    .k-i-table-position-end::before { content: "\e6a4"; }
+    .k-i-table-position-right::before { content: "\e6a4"; }
+    .k-i-list-roman-upper::before { content: "\e6a5"; }
+    .k-i-list-roman-lower::before { content: "\e6a6"; }
+    .k-i-import::before { content: "\e6a7"; }
+    .k-i-export::before { content: "\e6a8"; }
+    .k-i-match-full-word::before { content: "\e6a9"; }
+    .k-i-regular-expression::before { content: "\e6ab"; }
+    .k-i-replace-single::before { content: "\e6ac"; }
+    .k-i-replace-all::before { content: "\e6ad"; }
+    .k-i-letter-space::before { content: "\e6ae"; }
+    .k-i-line-height::before { content: "\e6af"; }
     .k-i-graph::before { content: "\ea00"; }
     .k-i-chart-column-clustered::before { content: "\ea01"; }
     .k-i-chart-column-stacked::before { content: "\ea02"; }
