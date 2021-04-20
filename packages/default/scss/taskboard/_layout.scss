@@ -129,6 +129,11 @@
         align-items: center;
     }
 
+    .k-taskboard-pane-header-text {
+        word-break: normal;
+        overflow-wrap: anywhere;
+    }
+
     .k-taskboard-pane-header-actions {
         flex-shrink: 0;
         align-self: flex-start;
