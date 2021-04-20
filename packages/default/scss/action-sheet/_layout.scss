@@ -127,4 +127,14 @@
         transform: translatey( -50% );
     }
 
+
+    // Action sheet in popup
+    .k-animation-container > .k-actionsheet {
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        transform: none;
+    }
+
 }
