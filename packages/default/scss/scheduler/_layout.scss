@@ -1089,6 +1089,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            flex-shrink: 0;
             position: relative;
             gap: $scheduler-tooltip-event-gap;
         }
