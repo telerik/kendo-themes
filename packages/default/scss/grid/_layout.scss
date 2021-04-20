@@ -300,6 +300,8 @@
 
             .k-grid-header {
                 .k-header {
+                    z-index: 1;
+
                     &.k-first {
                         border-left-width: 0;
                         border-right-width: $grid-cell-vertical-border-width;
