@@ -52,6 +52,8 @@ To set up the monorepo:
 
 Just run `npm install` in the root directory. Using node hooks, the command will clean the repo, install it and link the files.
 
+Then run 'npm run bootstrap`.
+
 The following commands have to be run in the root of the repository and help you check if various tasks are accomplished successfully:
 
 * To lint over all the themes, run `npm run lint`.
