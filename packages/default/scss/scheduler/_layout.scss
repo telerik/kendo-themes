@@ -1287,9 +1287,14 @@
 
 @include exports("scheduler/layout/compatibility") {
 
-    .k-ie {
+    .k-ie,
+    .k-safari {
         .k-scheduler-tooltip .k-tooltip-event:not(:last-child) {
             margin-bottom: $scheduler-tooltip-event-gap;
+        }
+
+        .k-scheduler-yearview .k-calendar-view .k-month {
+            margin: 0 ($scheduler-yearview-calendar-gap / 2);
         }
     }
 
