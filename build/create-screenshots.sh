@@ -1,23 +1,35 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -e
+shopt -s extglob
 
-dir=$(pwd);
-theme=${1-default}
-test_dir="$dir/tests/.tmp/visual/$theme"
+THEME=${1-default}
+TEMP_DIR="./tests/.tmp/visual"
+THEME_DIR="$TEMP_DIR/$THEME"
 
-mkdir -p $test_dir
-
-cp $dir/tests/visual/*.html $test_dir
-cp $dir/tests/visual/assets -r $test_dir
-cp $dir/packages/$theme/dist -r $test_dir
+mkdir -p $THEME_DIR
+cp -r ./tests/visual/!(output) $THEME_DIR
+cp -r ./packages/$THEME/dist $THEME_DIR
 
 # replace theme reference
-find $test_dir -name '*.html'  | xargs sed -i -e 's#../../packages/default/dist#dist#'
-
-cd tests
+find $THEME_DIR -name '*.html' | xargs sed -i -E \
+    -e 's#..\/..\/packages/default/dist/#dist/#' \
+    -e 's#"assets/#"assets/#'
 
 # capture screenshots. see .pastshotsrc for config options
-npx pastshots --serve ".tmp/visual/$theme/*.html" --port $((RANDOM % 1000 + 8000)) --output visual/output/$theme
+npm install --no-save pastshots optipng
 
-rm -rf $dir/tests/.tmp/visual/$theme
+find $TEMP_DIR \
+    -type d \
+    -not -wholename "*output*" \
+    -not -name "dist" \
+    -not -name "assets" \
+    -not -name "visual" \
+    -exec bash -c ' \
+        npx pastshots \
+            --serve "{}/*.html" \
+            --port $((RANDOM % 1000 + 8000)) \
+            --output ./tests/visual/output/$(realpath --relative-to "'$TEMP_DIR'" {}) \
+    ' \;
+
+rm -rf $THEME_DIR
