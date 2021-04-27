@@ -230,12 +230,10 @@
 
     kendo-grid {
         .k-grid-content-sticky {
-            @include fill(
-                $grid-sticky-text,
-                $grid-sticky-bg,
-                $grid-sticky-border
-            );
             border-top-color: $grid-border;
+            border-left-color: $grid-sticky-border;
+            border-right-color: $grid-sticky-border;
+            background-color: $grid-sticky-bg;
 
             &:hover,
             &.k-state-hover {

@@ -277,6 +277,98 @@
             </kendo-grid>
 
         </section>
+
+        <section class="col-2">
+            <kendo-grid dir="ltr" class="k-widget k-grid">
+                <kendo-grid-toolbar position="top" class="k-toolbar k-grid-toolbar">
+                    <button class="k-button k-grid-add-command">Add new</button>
+                </kendo-grid-toolbar>
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header" style="padding: 0px 14px 0px 0px;">
+                        <div class="k-grid-header-wrap" >
+                            <table>
+                                <colgroup>
+                                    <col style="width: 50px;" />
+                                    <col style="width: 300px;" />
+                                    <col style="width: 200px;" />
+                                    <col style="width: 150px;" />
+                                    <col style="width: 250px;" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="k-header k-grid-header-sticky" style="left: 0px; right: 160px;"></th>
+                                        <th class="k-header">Product Name</th>
+                                        <th class="k-header">Price</th>
+                                        <th class="k-header">Discontinued</th>
+                                        <th class="k-header k-grid-header-sticky" style="border-right-width: 0px; text-align: center; left: 50px; right: 0px;"
+                                        >command</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <kendo-grid-list class="k-grid-container">
+                        <div class="k-grid-content k-virtual-content">
+                            <div class="k-grid-table-wrap">
+                                <table class="k-grid-table">
+                                    <colgroup>
+                                        <col style="width: 50px;" />
+                                        <col style="width: 300px;" />
+                                        <col style="width: 200px;" />
+                                        <col style="width: 150px;" />
+                                        <col style="width: 250px;" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr class="k-grid-add-row k-grid-edit-row">
+                                            <td class="k-grid-content-sticky" style="left: 0px; right: 160px;">
+                                            </td>
+                                            <td>
+                                                <input class="k-textbox ng-pristine ng-invalid ng-touched" type="text" />
+                                            </td>
+                                            <td>
+                                                <kendo-numerictextbox class="k-widget k-numerictextbox ng-untouched ng-pristine ng-valid">
+                                                    <span class="k-numeric-wrap">
+                                                        <input class="k-input k-formatted-value" />
+                                                        <span class="k-select">
+                                                            <span class="k-link k-link-increase"><span class="k-icon k-i-arrow-n"></span></span>
+                                                            <span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-s"></span></span>
+                                                        </span>
+                                                    </span>
+                                                </kendo-numerictextbox>
+                                            </td>
+                                            <td>
+                                                <input class="k-checkbox ng-untouched ng-pristine ng-valid" type="checkbox" />
+                                            </td>
+                                            <td class="k-grid-content-sticky k-command-cell" style="border-right-width: 0px; text-align: center; left: 0px; right: 0px;"
+                                            >
+                                                <button class="k-button k-primary k-grid-edit-command" style="display: none;">Edit</button>
+                                                <button class="k-button k-grid-remove-command" style="display: none;">Remove</button>
+                                                <button class="k-button k-state-disabled k-grid-save-command">Add</button>
+                                                <button class="k-button k-grid-cancel-command">Discard</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="k-grid-content-sticky k-touch-action-auto" style="left: 0px; right: 160px;">1</td>
+                                            <td class="k-touch-action-auto">Chai</td>
+                                            <td class="k-touch-action-auto">18</td>
+                                            <td class="k-touch-action-auto">false</td>
+                                            <td class="k-grid-content-sticky k-touch-action-auto k-command-cell" style="border-right-width: 0px; text-align: center; left: 50px; right: 0px;">
+                                                <button class="k-button k-primary k-grid-edit-command">Edit</button>
+                                                <button class="k-button k-grid-remove-command">Remove</button>
+                                                <button class="k-button k-grid-save-command k-state-disabled" style="display: none;">Update</button>
+                                                <button class="k-button k-grid-cancel-command" style="display: none;">Cancel</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="k-height-container" role="presentation"><div></div></div>
+                        </div>
+                    </kendo-grid-list>
+                </div>
+            </kendo-grid>
+
+        </section>
     </div>
 
 </body>

@@ -281,8 +281,9 @@
 
     kendo-grid {
         .k-grid-content-sticky {
-            border-color: $grid-sticky-border;
             border-top-color: $grid-header-border;
+            border-left-color: $grid-sticky-border;
+            border-right-color: $grid-sticky-border;
             background-color: $grid-sticky-bg;
 
             &:hover,
