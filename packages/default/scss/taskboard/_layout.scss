@@ -206,9 +206,11 @@
 
 @include exports( "taskboard/layout/rtl" ) {
 
-    .k-rtl,
-    [dir="rtl"] {
-        .k-taskboard-card.k-taskboard-card-category {
+    .k-taskboard-card.k-taskboard-card-category {
+        .k-rtl &,
+        &.k-rtl,
+        [dir="rtl"] &,
+        &[dir="rtl"] {
             border-left-width: $taskboard-card-border-width;
             border-right-width: $taskboard-card-category-border-width;
         }
