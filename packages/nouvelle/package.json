@@ -6,8 +6,8 @@
   "license": "Apache-2.0",
   "keywords": [
     "Kendo UI",
-    "Nouvelle",
     "Theme",
+    "Nouvelle",
     "css variables"
   ],
   "main": "dist/index.css",
@@ -15,7 +15,8 @@
   "files": [
     "dist/",
     "scss/",
-    "modules/"
+    "modules/",
+    "lib/"
   ],
   "repository": {
     "type": "git",
@@ -23,6 +24,14 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "kendo": {
+    "themebuilder": {
+      "swatches": {
+        "path": "lib/themebuilder",
+        "default": "nouvelle.json"
+      }
+    }
   },
   "scripts": {
     "sass": "gulp sass",
