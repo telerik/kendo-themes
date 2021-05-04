@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.15.0"></a>
+# [0.15.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.14.0...@progress/kendo-theme-classic@0.15.0) (2021-05-04)
+
+
+### Features
+
+* expose certain swatches to theme builder ([9f75bc5](https://github.com/telerik/kendo-themes/commit/9f75bc5))
+
+
+
+
 <a name="0.14.0"></a>
 # [0.14.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.13.1...@progress/kendo-theme-classic@0.14.0) (2021-04-16)
 

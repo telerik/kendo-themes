@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.38.0"></a>
+# [4.38.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.37.0...@progress/kendo-theme-default@4.38.0) (2021-05-04)
+
+
+### Bug Fixes
+
+* various fixes for content with virtualization ([a71c12b](https://github.com/telerik/kendo-themes/commit/a71c12b))
+* **action-sheet:** add z-index to actionsheet container ([d6aca3b](https://github.com/telerik/kendo-themes/commit/d6aca3b))
+* wrong border color ([5c12855](https://github.com/telerik/kendo-themes/commit/5c12855))
+* **actionsheet:** reset position of action sheet in popup ([e331c6b](https://github.com/telerik/kendo-themes/commit/e331c6b))
+* **grid:** non sticky header cells should slide below sticky cells ([be74a9e](https://github.com/telerik/kendo-themes/commit/be74a9e))
+* **taskboard:** scope category border selector in rtl ([1f021e3](https://github.com/telerik/kendo-themes/commit/1f021e3))
+
+
+### Features
+
+* expose certain swatches to theme builder ([9f75bc5](https://github.com/telerik/kendo-themes/commit/9f75bc5))
+
+
+
+
 <a name="4.37.0"></a>
 # [4.37.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.36.0...@progress/kendo-theme-default@4.37.0) (2021-04-16)
 

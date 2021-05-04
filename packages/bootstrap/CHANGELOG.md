@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.35.0"></a>
+# [4.35.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.34.0...@progress/kendo-theme-bootstrap@4.35.0) (2021-05-04)
+
+
+### Bug Fixes
+
+* wrong border color ([5c12855](https://github.com/telerik/kendo-themes/commit/5c12855))
+
+
+### Features
+
+* expose certain swatches to theme builder ([9f75bc5](https://github.com/telerik/kendo-themes/commit/9f75bc5))
+
+
+
+
 <a name="4.34.0"></a>
 # [4.34.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.33.1...@progress/kendo-theme-bootstrap@4.34.0) (2021-04-16)
 

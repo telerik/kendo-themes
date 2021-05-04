@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.33.0"></a>
+# [3.33.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.32.0...@progress/kendo-theme-material@3.33.0) (2021-05-04)
+
+
+### Features
+
+* expose certain swatches to theme builder ([9f75bc5](https://github.com/telerik/kendo-themes/commit/9f75bc5))
+
+
+
+
 <a name="3.32.0"></a>
 # [3.32.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.31.1...@progress/kendo-theme-material@3.32.0) (2021-04-16)
 
