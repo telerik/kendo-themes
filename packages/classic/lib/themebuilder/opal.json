@@ -1,5 +1,5 @@
 {
-    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.5.0/lib/schemas/themebuilder-swatch.json",
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.8.2/lib/schemas/themebuilder-swatch.json",
     "name": "Opal",
     "base": "@progress/kendo-theme-classic",
     "hidden": true,

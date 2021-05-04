@@ -1,8 +1,7 @@
 {
-    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.5.0/lib/schemas/themebuilder-swatch.json",
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.8.2/lib/schemas/themebuilder-swatch.json",
     "name": "Nordic",
     "base": "@progress/kendo-theme-bootstrap",
-    "hidden": true,
     "previewColors": [
         "#ffffff",
         "#50686e",
@@ -13,7 +12,6 @@
     "components": [],
     "themeBuilder": [
         {
-            "name": "",
             "variables": {
                 "border-radius": {
                     "name": "Border radius",
@@ -58,47 +56,112 @@
             }
         },
         {
-            "name": "Page",
+            "name": "Body",
             "variables": {
+                "body-color": {
+                    "name": "Body text color",
+                    "type": "color",
+                    "value": "#50686e"
+                },
                 "body-bg": {
-                    "name": "Bg color",
+                    "name": "Body background",
                     "type": "color",
                     "value": "#ffffff"
                 },
-                "body-color": {
-                    "name": "Text color",
+                "headings-text": {
+                    "name": "Headings text color",
                     "type": "color",
-                    "value": "#50686e"
+                    "value": "#5e747a"
+                },
+                "subtle-text": {
+                    "name": "Subtle text color",
+                    "type": "color",
+                    "value": "#8f9ea2"
+                },
+                "disabled-text": {
+                    "name": "Disabled text color",
+                    "type": "color",
+                    "value": "#afbabd"
                 }
             }
         },
         {
-            "name": "Component",
+            "name": "Components",
             "variables": {
-                "component-bg": {
-                    "name": "Component bg",
-                    "type": "color",
-                    "value": "#ffffff"
-                },
-                "component-color": {
+                "component-text": {
                     "name": "Component text",
                     "type": "color",
                     "value": "#292b2c"
                 },
-                "card-cap-bg": {
-                    "name": "Header bg",
+                "component-bg": {
+                    "name": "Component background",
                     "type": "color",
                     "value": "#ffffff"
                 },
-                "card-cap-color": {
-                    "name": "Header text",
+                "base-text": {
+                    "name": "Header text color",
                     "type": "color",
                     "value": "#292b2c"
+                },
+                "base-bg": {
+                    "name": "Header background",
+                    "type": "color",
+                    "value": "#f8f9fa"
+                },
+                "hovered-text": {
+                    "name": "Hover text color",
+                    "type": "color",
+                    "value": "#212529"
+                },
+                "hovered-bg": {
+                    "name": "Hover background",
+                    "type": "color",
+                    "value": "#e4e7eb"
+                },
+                "selected-text": {
+                    "name": "Selected text color",
+                    "type": "color",
+                    "value": "#ffffff"
+                },
+                "selected-bg": {
+                    "name": "Selected background",
+                    "type": "color",
+                    "value": "#e7607b"
                 }
             }
         },
         {
-            "name": "Chart",
+            "name": "Button",
+            "variables": {
+                "button-text": {
+                    "name": "Button text color",
+                    "type": "color",
+                    "value": "#212529"
+                },
+                "button-bg": {
+                    "name": "Button background",
+                    "type": "color",
+                    "value": "#d6e5e9"
+                }
+            }
+        },
+        {
+            "name": "Link",
+            "variables": {
+                "link-text": {
+                    "name": "Link text color",
+                    "type": "color",
+                    "value": "#e7607b"
+                },
+                "link-hover-text": {
+                    "name": "Link hover text color",
+                    "type": "color",
+                    "value": "#da2146"
+                }
+            }
+        },
+        {
+            "name": "Dataviz",
             "variables": {
                 "series-a": {
                     "name": "Series A",

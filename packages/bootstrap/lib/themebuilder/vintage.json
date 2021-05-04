@@ -1,8 +1,7 @@
 {
-    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.5.0/lib/schemas/themebuilder-swatch.json",
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.8.2/lib/schemas/themebuilder-swatch.json",
     "name": "Vintage",
     "base": "@progress/kendo-theme-bootstrap",
-    "hidden": true,
     "previewColors": [
         "#744662",
         "#ffffff",
@@ -13,7 +12,6 @@
     "components": [],
     "themeBuilder": [
         {
-            "name": "",
             "variables": {
                 "border-radius": {
                     "name": "Border radius",
@@ -58,47 +56,112 @@
             }
         },
         {
-            "name": "Page",
+            "name": "Body",
             "variables": {
-                "body-bg": {
-                    "name": "Bg color",
-                    "type": "color",
-                    "value": "#ffffff"
-                },
-                "body-color": {
-                    "name": "Text color",
-                    "type": "color",
-                    "value": "#333333"
-                }
-            }
-        },
-        {
-            "name": "Component",
-            "variables": {
-                "component-bg": {
-                    "name": "Component bg",
-                    "type": "color",
-                    "value": "#f2efe8"
-                },
-                "component-color": {
-                    "name": "Component text",
+                "body-text": {
+                    "name": "Body text color",
                     "type": "color",
                     "value": "#494138"
                 },
-                "card-cap-bg": {
-                    "name": "Header bg",
+                "body-bg": {
+                    "name": "Body background",
                     "type": "color",
-                    "value": "#d3c8b2"
+                    "value": "#ffffff"
                 },
-                "card-cap-color": {
-                    "name": "Header text",
+                "headings-text": {
+                    "name": "Headings text color",
                     "type": "color",
-                    "value": "#5b462a"
+                    "value": "#494138"
+                },
+                "subtle-text": {
+                    "name": "Subtle text color",
+                    "type": "color",
+                    "value": "#6d6760"
+                },
+                "disabled-text": {
+                    "name": "Disabled text color",
+                    "type": "color",
+                    "value": "#928d88"
                 }
             }
         },
         {
-            "name": "Chart",
+            "name": "Components",
+            "variables": {
+                "component-text": {
+                    "name": "Component text color",
+                    "type": "color",
+                    "value": "#494138"
+                },
+                "component-bg": {
+                    "name": "Component background",
+                    "type": "color",
+                    "value": "#ffffff"
+                },
+                "base-text": {
+                    "name": "Header text color",
+                    "type": "color",
+                    "value": "#494138"
+                },
+                "base-bg": {
+                    "name": "Header background",
+                    "type": "color",
+                    "value": "#f2efe8"
+                },
+                "hovered-text": {
+                    "name": "Hover text color",
+                    "type": "color",
+                    "value": "#494138"
+                },
+                "hovered-bg": {
+                    "name": "Hover background",
+                    "type": "color",
+                    "value": "#dfdcd5"
+                },
+                "selected-text": {
+                    "name": "Selected text color",
+                    "type": "color",
+                    "value": "#ffffff"
+                },
+                "selected-bg": {
+                    "name": "Selected background",
+                    "type": "color",
+                    "value": "#744662"
+                }
+            }
+        },
+        {
+            "name": "Button",
+            "variables": {
+                "button-text": {
+                    "name": "Button text color",
+                    "type": "color",
+                    "value": "#212529"
+                },
+                "button-bg": {
+                    "name": "Button background",
+                    "type": "color",
+                    "value": "#dad2bd"
+                }
+            }
+        },
+        {
+            "name": "Link",
+            "variables": {
+                "link-text": {
+                    "name": "Link text color",
+                    "type": "color",
+                    "value": "#744662"
+                },
+                "link-hover-text": {
+                    "name": "Link hover text color",
+                    "type": "color",
+                    "value": "#44293a"
+                }
+            }
+        },
+        {
+            "name": "Dataviz",
             "variables": {
                 "series-a": {
                     "name": "Series A",
