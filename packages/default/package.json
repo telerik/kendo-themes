@@ -13,7 +13,8 @@
   "files": [
     "dist/",
     "scss/",
-    "modules/"
+    "modules/",
+    "lib/"
   ],
   "repository": {
     "type": "git",
@@ -21,6 +22,14 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "kendo": {
+    "themebuilder": {
+      "swatches": {
+        "path": "lib/themebuilder",
+        "default": "default.json"
+      }
+    }
   },
   "scripts": {
     "sass": "gulp sass",

@@ -6,16 +6,17 @@
   "license": "Apache-2.0",
   "keywords": [
     "Kendo UI",
+    "Theme",
     "Material",
-    "Material design",
-    "Theme"
+    "Material design"
   ],
   "main": "dist/all.css",
   "sass": "scss/all.scss",
   "files": [
     "dist/",
     "scss/",
-    "modules/"
+    "modules/",
+    "lib/"
   ],
   "repository": {
     "type": "git",
@@ -23,6 +24,14 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "kendo": {
+    "themebuilder": {
+      "swatches": {
+        "path": "lib/themebuilder",
+        "default": "main.json"
+      }
+    }
   },
   "scripts": {
     "sass": "gulp sass",
