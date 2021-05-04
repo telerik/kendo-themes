@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.35.1"></a>
+## [4.35.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.35.0...@progress/kendo-theme-bootstrap@4.35.1) (2021-05-04)
+
+
+
+
+**Note:** Version bump only for package @progress/kendo-theme-bootstrap
+
 <a name="4.35.0"></a>
 # [4.35.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.34.0...@progress/kendo-theme-bootstrap@4.35.0) (2021-05-04)
 

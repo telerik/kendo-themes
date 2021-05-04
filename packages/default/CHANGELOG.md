@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.38.1"></a>
+## [4.38.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.38.0...@progress/kendo-theme-default@4.38.1) (2021-05-04)
+
+
+### Bug Fixes
+
+* revert fix for virtual scrolling container ([d096e68](https://github.com/telerik/kendo-themes/commit/d096e68))
+
+
+
+
 <a name="4.38.0"></a>
 # [4.38.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.37.0...@progress/kendo-theme-default@4.38.0) (2021-05-04)
 
