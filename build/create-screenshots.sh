@@ -1,20 +1,24 @@
 #!/usr/bin/env bash
-
 set -e
 shopt -s extglob
 
-THEME=${1-default}
+THEME=$1
 TEMP_DIR="./tests/.tmp/visual"
 THEME_DIR="$TEMP_DIR/$THEME"
 
-mkdir -p $THEME_DIR
-cp -r ./tests/visual/!(output) $THEME_DIR
-cp -r ./packages/$THEME/dist $THEME_DIR
+if [ -z "$THEME" ]; then
+    echo "Usage: create-screenshots <default|bootstrap|material>"
+    exit
+else
+    echo "Creating screenshots for theme '$THEME'"
+fi
+
+mkdir -p "$THEME_DIR"
+cp -r ./tests/visual/!(output) "$THEME_DIR"
 
 # replace theme reference
-find $THEME_DIR -name '*.html' | xargs sed -i -E \
-    -e 's#..\/..\/packages/default/dist/#dist/#' \
-    -e 's#"assets/#"assets/#'
+find "$THEME_DIR" -name '*.html' -print0 | xargs -0 sed -i -E \
+    -e "s#/packages/default/dist/#/../../packages/$THEME/dist/#"
 
 # capture screenshots. see .pastshotsrc for config options
 npm install --no-save pastshots optipng
@@ -25,11 +29,9 @@ find $TEMP_DIR \
     -not -name "dist" \
     -not -name "assets" \
     -not -name "visual" \
-    -exec bash -c ' \
+    -exec bash -c '\
         npx pastshots \
-            --serve "{}/*.html" \
+            --serve "$0/*.html" \
             --port $((RANDOM % 1000 + 8000)) \
-            --output ./tests/visual/output/$(realpath --relative-to "'$TEMP_DIR'" {}) \
-    ' \;
-
-rm -rf $THEME_DIR
+            --output ./tests/visual/output/$(realpath --relative-to "$1" "$0")' \
+        {} "$TEMP_DIR" \;
