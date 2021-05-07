@@ -17,7 +17,7 @@ $scrollview-pagebutton-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 $scrollview-pager-offset: 0 !default;
 $scrollview-pager-item-spacing: 20px !default;
-$scrollview-pager-item-border-width: 0 !default;
+$scrollview-pager-item-border-width: 0px !default;
 $scrollview-pager-height: calc( #{$scrollview-pagebutton-size} + #{$scrollview-pager-item-border-width * 2} + #{$scrollview-pager-item-spacing * 2} ) !default;
 
 $scrollview-pager-multidot-threshold: 10;
