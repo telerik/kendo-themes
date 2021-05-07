@@ -41,7 +41,7 @@ jobs:
         run: npm run sass:flat
 
       - name: Visual tests
-        run: ./build/create-screenshots-ci.sh ${{ matrix.theme }}
+        run: ./build/create-screenshots.sh ${{ matrix.theme }}
 
       - name: Upload screenshots
         uses: actions/upload-artifact@v2
