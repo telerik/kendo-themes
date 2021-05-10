@@ -185,3 +185,44 @@
     }
 
 }
+
+
+
+
+@include exports( "panelbar/layout/compatibility" ) {
+
+    .k-ie {
+
+        // Toggle icon
+        .k-panelbar-expand,
+        .k-panelbar-collapse,
+        .k-panelbar-toggle {
+            margin-left: auto;
+        }
+
+        .k-group .k-panelbar-expand,
+        .k-group .k-panelbar-collapse,
+        .k-panelbar-group .k-panelbar-toggle {
+            margin-right: calc( #{$panelbar-header-padding-x} - #{$panelbar-item-padding-x} );
+        }
+
+        .k-rtl &,
+        &.k-rtl,
+        &[dir = "rtl"] {
+            // Toggle icon
+            .k-panelbar-expand,
+            .k-panelbar-collapse,
+            .k-panelbar-toggle {
+                margin-left: initial;
+                margin-right: auto;
+            }
+
+            .k-group .k-panelbar-expand,
+            .k-group .k-panelbar-collapse,
+            .k-panelbar-group .k-panelbar-toggle {
+                margin-left: calc( #{$panelbar-header-padding-x} - #{$panelbar-item-padding-x} );
+            }
+        }
+    }
+
+}
