@@ -37,5 +37,8 @@ $colorpicker-select-text: $subtle-text !default;
 $colorpicker-select-hovered-text: $input-text !default;
 $colorpicker-select-focused-text: $input-text !default;
 
+$colorpicker-draghandle-shadow: 0 1px 4px rgba(0, 0, 0, .5) !default;
+$colorpicker-draghandle-focused-shadow: 0 1px 4px black !default;
+
 $colorpalette-hovered-shadow: 0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .8 ) !default;
 $colorpalette-focused-shadow: 0 1px 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, 1 ) !default;

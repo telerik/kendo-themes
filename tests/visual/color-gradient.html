@@ -222,6 +222,74 @@
                  </div>
              </div>
         </section>
+
+
+        <section>
+            <p>Draghandles focus state</p>
+            <kendo-colorgradient class="k-widget k-flatcolorpicker">
+             <div class="k-hbox k-hsv-wrap">
+                 <div class="k-hsv-rectangle" style="background: rgb(255, 0, 0);">
+                     <div class="k-hsv-gradient">
+                         <div class="k-draghandle k-state-focus" style="top: 40px; left: 88px;"></div>
+                     </div>
+                 </div>
+                 <div class="k-hbox k-sliders-wrap k-sliders-wrap-clearable">
+                     <span class="k-clear-color k-button k-bare k-button-icon"><span class="k-icon k-i-reset-color"></span></span>
+                     <kendo-slider class="k-hue-slider k-slider-vertical k-slider k-widget k-slider-transitions k-state-focused">
+                         <div class="k-slider-wrap">
+                             <div class="k-slider-track" style="height: 140px;">
+                                 <div class="k-slider-selection" style="height: 31px;"></div>
+                                 <a class="k-draghandle" style="bottom: 24px; touch-action: none;"></a>
+                             </div>
+                             <kendo-resize-sensor></kendo-resize-sensor>
+                         </div>
+                     </kendo-slider>
+                     <kendo-slider class="k-alpha-slider k-slider-vertical k-slider k-widget k-slider-transitions k-state-focused">
+                         <div class="k-slider-wrap">
+                             <div class="k-slider-track" style="height: 140px; background: linear-gradient(to top, transparent, rgb(170, 255, 0));">
+                                 <div class="k-slider-selection" style="height: 91px;"></div>
+                                 <a class="k-draghandle" style="bottom: 84px; touch-action: none;"></a>
+                             </div>
+                             <kendo-resize-sensor></kendo-resize-sensor>
+                         </div>
+                     </kendo-slider>
+                 </div>
+             </div>
+             <kendo-colorinput class="k-colorinputs">
+                 <div class="k-hbox k-gradient-values">
+                     <input class="k-textbox k-hex-value" placeholder="no color" />
+                     <kendo-numerictextbox placeholder="R" class="k-widget k-numerictextbox">
+                         <span class="k-numeric-wrap">
+                             <input class="k-input k-formatted-value" value="67" />
+                         </span>
+                     </kendo-numerictextbox>
+                     <kendo-numerictextbox placeholder="G" class="k-widget k-numerictextbox">
+                         <span class="k-numeric-wrap">
+                             <input class="k-input k-formatted-value" value="150" />
+                         </span>
+                     </kendo-numerictextbox>
+                     <kendo-numerictextbox placeholder="B" class="k-widget k-numerictextbox">
+                         <span class="k-numeric-wrap">
+                             <input class="k-input k-formatted-value" value="50" />
+                         </span>
+                     </kendo-numerictextbox>
+                     <kendo-numerictextbox placeholder="A" class="k-widget k-numerictextbox">
+                         <span class="k-numeric-wrap">
+                             <input class="k-input k-formatted-value" value="1.00" />
+                         </span>
+                     </kendo-numerictextbox>
+                 </div>
+                 <div class="k-hbox k-gradient-values">
+                     <div class="k-hex-value">hex</div>
+                     <div>r</div>
+                     <div>g</div>
+                     <div>b</div>
+                     <div>a</div>
+                 </div>
+             </kendo-colorinput>
+         </kendo-colorgradient>
+
+         </section>
     </div>
 
 </body>
