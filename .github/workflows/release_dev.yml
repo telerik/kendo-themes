@@ -10,7 +10,7 @@ env:
 
 on:
   workflow_run:
-    workflows: ["CI | Nightly"]
+    workflows: ["CI | Dev"]
     branches: [develop]
     types:
       - completed
@@ -53,7 +53,6 @@ jobs:
       - name: Build themes for dist
         run: |
           npm run sass:flat
-          npm run sass:swatches
 
       - name: Lerna publish
         run: |
