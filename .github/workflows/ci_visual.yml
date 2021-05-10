@@ -43,11 +43,14 @@ jobs:
       - name: Visual tests
         run: ./build/create-screenshots.sh ${{ matrix.theme }}
 
+      - name: Pack screenshots
+        run: tar -cf screenshots-${{ matrix.theme }}.tar tests/visual/output/${{ matrix.theme }}
+
       - name: Upload screenshots
         uses: actions/upload-artifact@v2
         with:
-          name: ${{ matrix.theme }}
-          path: tests/visual/output/${{ matrix.theme }}
+          name: screenshots-${{ matrix.theme }}
+          path: screenshots-${{ matrix.theme }}.tar
 
   detect-changes:
     # The name of the last step is used for the branch protection status check
@@ -63,10 +66,10 @@ jobs:
       - name: Download screenshots
         uses: actions/download-artifact@v2
         with:
-          path: .screenshots
+          path: .tmp
 
-      - name: Copy screenshots
-        run: cp -rf .screenshots/* tests/visual/output/
+      - name: Unpack screenshots
+        run: find .tmp -name "screenshots-*.tar" -type f -exec tar -xf {} \;
 
       - name: Compare artifacts
         run: |
