@@ -7,5 +7,8 @@ updates:
     schedule:
       interval: "monthly"
     target-branch: "develop"
+    allow:
+      - dependency-name: "*"
+        dependency-type: "direct"
     reviewers:
       - "telerik/kendo-front-end"
