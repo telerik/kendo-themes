@@ -1,4 +1,4 @@
-name: CI | Nightly
+name: CI | Dev
 
 defaults:
   run:
@@ -9,8 +9,8 @@ env:
 
 on:
   schedule:
-    # Run at midnight every working day
-    - cron: '0 0 * * Mon-Fri'
+    # Run at 00:20 every Monday
+    - cron: '20 0 * * Mon'
   workflow_dispatch:
 
 jobs:

@@ -11,57 +11,125 @@ const merge = require('lodash.merge');
 const { parse } = require('sass-variable-parser');
 const nodeSass = require("node-sass");
 const dartSass = require("sass");
+const postcss = require("postcss");
 const autoprefixer = require("autoprefixer");
 const calc = require("postcss-calc");
 
-const { sassBuild, sassFlatten } = require('@progress/kendo-theme-tasks/build');
-const { embedFileBase64 } = require('@progress/kendo-theme-tasks/embedFile');
-const { getArg, logger, colors } = require("@progress/kendo-theme-tasks/utils");
-const { utilsDocs } = require('@progress/kendo-theme-tasks/docs');
+const { sassBuild, sassCompile } = require('@progress/kendo-theme-tasks/src/build/sass-build');
+const { sassFlatten } = require('@progress/kendo-theme-tasks/src/build/sass-flatten');
+const aioImporterFactory = require('@progress/kendo-theme-tasks/lib/sassImporters/aio-importer');
+const { embedFileBase64 } = require('@progress/kendo-theme-tasks/src/embedFile');
+const { getArg, logger, colors } = require("@progress/kendo-theme-tasks/src/utils");
+const { utilsDocs } = require('@progress/kendo-theme-tasks/src/docs');
 
 
 // Settings
 const paths = {
     sass: {
-        all: "./packages/*/scss/**/*.scss",
-        assets: "./packages/*/scss/**/*.{png,gif,ttf,woff}",
-        themes: "./packages/!(theme-tasks)",
-        theme: "./scss/all.scss",
-        swatches: "./scss/swatches/!(_)*.scss",
-        inline: "./dist/all.scss",
-        dist: "./dist"
+        all: "packages/*/scss/**/*.scss",
+        assets: "packages/*/scss/**/*.{png,gif,ttf,woff}",
+        themes: "packages/*",
+        theme: "scss/all.scss",
+        swatches: "scss/swatches/!(_)*.scss",
+        inline: "dist/all.scss",
+        dist: "dist"
     }
 };
 
-const postcssPlugins = [
-    calc({
-        precision: 10
-    }),
-    autoprefixer()
-];
+const sassCache = new Set();
+let nodeModules = 'node_modules';
+function getNodeModules() {
+    return nodeModules;
+}
+
+const defaults = {
+
+    sassOptions: {
+        importer: [
+            aioImporterFactory({
+                cache: sassCache,
+                nodeModules: getNodeModules
+            })
+        ]
+    },
+
+    postcssOptions: {
+        implementation: postcss,
+        plugins: [
+            calc({
+                precision: 10
+            }),
+            autoprefixer()
+        ]
+    }
+};
+
+const nodeSassOptions = {
+    implementation: nodeSass
+};
+const dartSassOptions = {
+    implementation: dartSass
+};
 
 
 // #region helpers
 function buildAll( cwds, options ) {
 
-    let opts = merge( {}, options );
-    opts.output = {
-        filename: '[name].css',
-        path: opts.dest
-    };
-
-    delete opts.dest;
+    let opts = merge( {}, defaults, options );
 
     cwds.forEach( cwd => {
-        sassBuild({ cwd, ...opts });
+        sassCache.clear();
+        nodeModules = path.resolve( cwd, 'node_modules' );
+
+        let file = path.resolve( cwd, opts.file );
+        let output = merge( {}, opts.output, { path: path.resolve( cwd, opts.output.path ) } );
+
+        sassBuild({ ...opts, file, output });
     });
 }
+
+function buildSwatches( cwds, options ) {
+
+    let opts = merge( {}, defaults, options );
+
+    flattenAll( cwds, { file: paths.sass.theme, output: opts.output } );
+
+    cwds.forEach( cwd => {
+        let files = glob.sync( path.resolve( cwd, paths.sass.swatches ) );
+
+        files.forEach( file => {
+            sassCache.clear();
+            nodeModules = path.resolve( cwd, 'node_modules' );
+
+            let output = merge( {}, opts.output, { path: path.resolve( cwd, opts.output.path ) } );
+
+            sassBuild({ ...opts, file, output });
+        });
+    });
+}
+
+function compileAll( cwds, options ) {
+
+    let opts = merge( {}, defaults, options );
+
+    cwds.forEach( cwd => {
+        let files = glob.sync( path.resolve( cwd, 'scss/!(common|styling)*/_index.scss' ) );
+
+        files.forEach( file => {
+            sassCache.clear();
+            nodeModules = path.resolve( cwd, 'node_modules' );
+
+            sassCompile({ ...opts, file, });
+        });
+    });
+}
+
 function flattenAll( cwds, options ) {
 
     cwds.forEach( cwd => {
         let file = path.resolve( cwd, options.file );
-        let outFile = path.resolve( cwd, options.dest, './all.scss' );
-        let nodeModules = path.resolve( cwd, './node_modules' );
+        let outFile = path.resolve( cwd, options.output.path, 'all.scss' );
+        let nodeModules = path.resolve( cwd, 'node_modules' );
 
         sassFlatten( file, outFile, { nodeModules } );
     });
@@ -72,7 +140,7 @@ function flattenAll( cwds, options ) {
 // #region assets
 gulp.task("assets", function() {
     let files = glob.sync(paths.sass.assets);
-    let template = fs.readFileSync('./lib/data-uri.template', 'utf8');
+    let template = fs.readFileSync('lib/data-uri.template', 'utf8');
 
     files.forEach( file => {
         logger.info(`Converting to data URI ${colors.magentaBright(file)}`);
@@ -92,91 +160,90 @@ gulp.task("assets", function() {
 
 
 // #region node-sass
-gulp.task("sass", function( done ) {
+gulp.task("sass", () => {
     let file = getArg('--file') || paths.sass.theme;
-    let dest = getArg('--dest') || paths.sass.dist;
+    let output = { path: getArg('--output-path') || paths.sass.dist };
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
-    let dryRun = getArg('--dry-run') || false;
 
-    buildAll( themes, { file, dest, dryRun, compiler: nodeSass, postcssPlugins } );
+    buildAll( themes, { file, output, sassOptions: nodeSassOptions } );
 
-    done();
+    return Promise.resolve();
 });
 
-gulp.task("sass:watch", function() {
+gulp.task("sass:watch", () => {
     gulp.watch(paths.sass.all, gulp.series("sass"));
 });
 
-gulp.task("sass:swatches", function( done ) {
-    let file = getArg('--file') || paths.sass.theme;
-    let dest = getArg('--dest') || paths.sass.dist;
+gulp.task("sass:swatches", () => {
+    let output = { path: getArg('--output-path') || paths.sass.dist };
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
-    let swatches = paths.sass.swatches;
 
-    flattenAll( themes, { file, dest } );
-    buildAll( themes, { file: swatches, dest, compiler: nodeSass, postcssPlugins } );
+    buildSwatches( themes, { output, sassOptions: nodeSassOptions } );
 
-    done();
+    return Promise.resolve();
 });
 
-gulp.task("sass:flat", function( done ) {
+gulp.task("sass:flat", () => {
     let file = getArg('--file') || paths.sass.theme;
-    let dest = getArg('--dest') || paths.sass.dist;
+    let output = { path: getArg('--output-path') || paths.sass.dist };
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
     let inline = paths.sass.inline;
 
-    flattenAll( themes, { file, dest } );
-    buildAll( themes, { file: inline, dest, compiler: nodeSass, postcssPlugins } );
+    flattenAll( themes, { file, output } );
+    buildAll( themes, { file: inline, output, sassOptions: nodeSassOptions } );
 
-    done();
+    return Promise.resolve();
+});
+
+gulp.task("sass:standalone", () => {
+    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
+    compileAll( themes, { sassOptions: nodeSassOptions } );
+
+    return Promise.resolve();
 });
 // #endregion
 
 
 // #region dart-sass
-gulp.task("dart", function( done ) {
+gulp.task("dart", () => {
     let file = getArg('--file') || paths.sass.theme;
-    let dest = getArg('--dest') || paths.sass.dist;
+    let output = { path: getArg('--output-path') || paths.sass.dist };
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
-    let dryRun = getArg('--dry-run') || false;
 
-    buildAll( themes, { file, dest, dryRun, compiler: dartSass, postcssPlugins } );
+    buildAll( themes, { file, output, sassOptions: dartSassOptions } );
 
-    done();
+    return Promise.resolve();
 });
 
-gulp.task("dart:watch", function() {
+gulp.task("dart:watch", () => {
     gulp.watch(paths.sass.all, gulp.series("dart"));
 });
 
-gulp.task("dart:swatches", function( done ) {
-    let file = getArg('--file') || paths.sass.theme;
-    let dest = getArg('--dest') || paths.sass.dist;
+gulp.task("dart:swatches", () => {
+    let output = { path: getArg('--output-path') || paths.sass.dist };
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
-    let swatches = paths.sass.swatches;
 
-    flattenAll( themes, { file, dest } );
-    buildAll( themes, { file: swatches, dest, compiler: dartSass, postcssPlugins } );
+    buildSwatches( themes, { output, sassOptions: dartSassOptions } );
 
-    done();
+    return Promise.resolve();
 });
 
-gulp.task("dart:flat", function( done ) {
+gulp.task("dart:flat", () => {
     let file = getArg('--file') || paths.sass.theme;
-    let dest = getArg('--dest') || paths.sass.dist;
+    let output = { path: getArg('--output-path') || paths.sass.dist };
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
     let inline = paths.sass.inline;
 
-    flattenAll( themes, { file, dest } );
-    buildAll( themes, { file: inline, dest, compiler: dartSass, postcssPlugins } );
+    flattenAll( themes, { file, output } );
+    buildAll( themes, { file: inline, output, sassOptions: dartSassOptions } );
 
-    done();
+    return Promise.resolve();
 });
 // #endregion
 
 
 // #region docs
-gulp.task("docs", function() {
+gulp.task("docs", () => {
     let themes = glob.sync(paths.sass.themes);
 
     return Promise.all(
@@ -228,14 +295,15 @@ gulp.task("docs:check", function() {
  * @example npm run utils-docs
  * @example gulp utils-docs
  */
-gulp.task("utils-docs", function( done ) {
+gulp.task("utils-docs", () => {
     utilsDocs();
-    done();
+
+    return Promise.resolve();
 });
 // #endregion
 
 
-gulp.task("resolve-vars", function() {
+gulp.task("resolve-vars", () => {
     let themes = glob.sync(paths.sass.themes);
     const cwd = process.cwd();
 

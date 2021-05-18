@@ -5,7 +5,10 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
     target-branch: "develop"
+    allow:
+      - dependency-name: "*"
+        dependency-type: "direct"
     reviewers:
       - "telerik/kendo-front-end"
