@@ -1,5 +1,51 @@
 @include exports("pivotgrid/theme") {
 
+}
+
+
+
+@include exports("pivotgrid/theme/settings-panel") {
+
+    // Settings Panel
+    .k-pivotgrid-settings {
+        @include fill (
+            $component-text, //$pivotgrid-settings-text,
+            $component-bg, // $pivotgrid-settings-bg,
+            $component-border, // $pivotgrid-settings-border
+        )
+    }
+
+    .k-pivotgrid-settings-header {
+        @include fill( $color: $header-text ); //$pivotgrid-settings-header-text
+    }
+
+
+    // Calculated field
+    .k-calculated-field {
+        @include fill (
+            $component-text, //$pivotgrid-calculated-field-text,
+            $component-bg, // $pivotgrid-calculated-field-bg,
+            $component-border, // $pivotgrid-calculated-field-border
+        )
+    }
+
+    .k-calculated-field-header {
+        @include fill( $color: $header-text ); //$pivotgrid-calculated-field-header-text
+    }
+
+    .k-filter-menu .k-calculated-item  {
+        @include fill( $border: $popup-border );
+    }
+
+    .k-pivotgrid-settings-content .k-form-field-wrapper {
+        @include fill( $border: $component-border );
+    }
+}
+
+
+
+@include exports("pivotgrid/theme/legacy") {
+
     .k-pivot {
         border-color: $pivotgrid-border;
     }
