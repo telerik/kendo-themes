@@ -567,8 +567,13 @@
                 > tbody,
                 > .k-calendar-tbody {
                     display: inline-block;
+                }
+
+                > tbody tr:first-child,
+                > .k-calendar-tbody .k-calendar-tr:first-child {
                     vertical-align: top;
                 }
+
                 > tbody + tbody,
                 > .k-calendar-tbody + .k-calendar-tbody {
                     margin-left: $multiviewcalendar-gap;

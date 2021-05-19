@@ -1,0 +1,30 @@
+@mixin input-ripple() {
+    $height: 2 * $input-border-width;
+
+    &::after {
+        display: block;
+        z-index: 2;
+        content: "";
+        position: absolute;
+        bottom: calc( 1px - #{$height} );
+        left: 0;
+        right: 0;
+        height: $height;
+        margin: auto;
+        opacity: 0;
+        transform: scaleX(.5);
+        transition: transform .3s;
+        background-color: $primary;
+    }
+
+    &.k-state-focused::after {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+
+
+    &.k-state-invalid::after {
+        background-color: $error;
+        transition: none;
+    }
+}

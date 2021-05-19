@@ -4,8 +4,8 @@ options:
 files:
     include: 'packages/*/scss/**/*.scss'
     ignore:
-        - 'packages/*/scss/mixins/**/*.scss'
-        - 'packages/*/scss/functions/**/*.scss'
+        - 'packages/*/scss/core/mixins/**/*.scss'
+        - 'packages/*/scss/core/functions/**/*.scss'
 
 rules:
     no-ids: 2

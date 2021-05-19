@@ -1,6 +1,8 @@
-@import "functions/_index.scss";
-@import "mixins/_index.scss";
+@import "core/functions/_index.scss";
+@import "core/mixins/_index.scss";
 @import "_variables.scss";
+
+@import "core/index.scss";
 
 @import "popup/index.scss";
 

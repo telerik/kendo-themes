@@ -37,12 +37,4 @@
     /// @group display
     .k-display-none             { display: none !important; }
 
-
-    // Aliases
-
-    /// @name k-hidden
-    /// @description This is an alias of `k-display-none`.
-    /// @group display
-    .k-hidden { @extend .k-display-none; }
-
 }

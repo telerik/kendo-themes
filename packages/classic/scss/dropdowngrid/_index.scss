@@ -1,5 +1,4 @@
-@import "../_variables.scss";
-@import "../mixins/_index.scss";
+@import "../core/_index.scss";
 
 
 // Dependencies
@@ -14,5 +13,5 @@
 
 
 // Component
-@import "~@progress/kendo-theme-default/scss/dropdowngrid/_layout.scss";
-@import "~@progress/kendo-theme-default/scss/dropdowngrid/_theme.scss";
+@import "_layout.scss";
+@import "_theme.scss";
