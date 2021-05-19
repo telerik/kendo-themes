@@ -1,9 +1,9 @@
 @import "../typography/_variables.scss";
 
-@import "~@progress/kendo-theme-default/scss/common/_base.scss";
-@import "~@progress/kendo-theme-default/scss/common/_animations.scss";
-@import "~@progress/kendo-theme-default/scss/common/_dragdrop.scss";
-@import "~@progress/kendo-theme-default/scss/common/_loading.scss";
-@import "~@progress/kendo-theme-default/scss/common/_resizing.scss";
-@import "~@progress/kendo-theme-default/scss/common/_scrollbar.scss";
-@import "~@progress/kendo-theme-default/scss/common/_selection.scss";
+@import "_base.scss";
+@import "_animations.scss";
+@import "_dragdrop.scss";
+@import "_loading.scss";
+@import "_resizing.scss";
+@import "_scrollbar.scss";
+@import "_selection.scss";
