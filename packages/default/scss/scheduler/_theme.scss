@@ -261,7 +261,8 @@
         // Hover
         .k-scheduler-content tr:hover,
         .k-scheduler-content tr.k-state-hover,
-        .k-scheduler-content .k-scheduler-row:hover {
+        .k-scheduler-content .k-scheduler-row:hover,
+        .k-scheduler-content .k-scheduler-row.k-state-hover {
             @include fill(
                 $hovered-text,
                 $hovered-bg,
