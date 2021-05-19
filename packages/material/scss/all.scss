@@ -1,6 +1,10 @@
-@import "functions/_index.scss";
+@import "core/functions/_index.scss";
+@import "core/mixins/_index.scss";
 @import "_variables.scss";
-@import "mixins/_index.scss";
+
+
+// Core
+// @import "core/_index.scss";
 
 
 // Dependencies
