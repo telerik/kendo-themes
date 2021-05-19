@@ -71,7 +71,7 @@
             > .k-item > .k-link:hover,
             > .k-item > .k-link.k-state-hover,
             > .k-panelbar-item > .k-link:hover,
-            > .k-panelbar-item > .k-link.k-state-hover, {
+            > .k-panelbar-item > .k-link.k-state-hover {
                 @include fill(
                     $panelbar-item-hovered-text,
                     $panelbar-item-hovered-bg,
