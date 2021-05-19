@@ -52,6 +52,13 @@ jobs:
           name: screenshots-${{ matrix.theme }}
           path: screenshots-${{ matrix.theme }}.tar
 
+      - name: Upload themes
+        uses: actions/upload-artifact@v2
+        with:
+          name: themes
+          path: packages/*/dist/all.css
+          if-no-files-found: error
+
   detect-changes:
     # The name of the last step is used for the branch protection status check
     name: CI | Visual
