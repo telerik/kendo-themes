@@ -5,7 +5,7 @@
         @include fill(
             $actionsheet-text,
             $actionsheet-bg,
-            $actionsheet-border,
+            $actionsheet-border
         );
         @include box-shadow( $actionsheet-shadow );
     }
