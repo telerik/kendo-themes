@@ -240,182 +240,35 @@
         }
 
 
-        // Scheduler views
-        .k-scheduler-views-wrapper {
-            margin-left: auto;
-
-            .k-views-dropdown {
-                width: auto;
-                font: inherit;
-                display: none;
-            }
-        }
-
-
         // Responsive scheduler toolbar
         @media (max-width: 1400px) {
             .k-nav-current .k-lg-date-format { max-width: 200px; }
         }
 
         @media (max-width: 1024px) {
-
             .k-nav-current .k-lg-date-format { display: none; }
             .k-nav-current .k-sm-date-format { display: inline-block; }
-
-            .k-scheduler-views-wrapper .k-scheduler-views { display: none; }
-            .k-scheduler-views-wrapper .k-views-dropdown { display: inline-block; }
         }
-    }
-    kendo-scheduler .k-scheduler-toolbar {
-        padding: $toolbar-padding-y $toolbar-padding-x;
-        border-style: solid;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: space-between;
     }
 
 
     // Scheduler navigation
-    ul.k-scheduler-navigation {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex: 1;
-
-        li {
-            border-width: $button-border-width;
-            border-style: solid;
-            position: relative;
-            z-index: 1;
-        }
-        li + li {
-            margin-left: -$button-border-width;
-        }
-        .k-state-hover,
-        .k-state-selected {
-            z-index: 2;
-        }
-
-
-        .k-link {
-            padding: $button-padding-y $button-padding-x;
-            box-sizing: border-box;
-            color: inherit;
-            text-decoration: none;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-        }
-
-
-        // Prev / next
-        .k-nav-prev,
-        .k-nav-next {
-            .k-link {
-                padding: $button-padding-y;
-                width: $button-inner-calc-size;
-                height: $button-inner-calc-size;
-            }
-        }
-
-
-        // Exception
-        .k-nav-current {
-            border: 0;
-            margin-left: 0;
-            gap: 0;
-
-            > .k-link {
-                gap: $icon-spacing;
-            }
-        }
-        .k-nav-today { @include border-left-radius-only( $border-radius ); }
-        .k-nav-next { @include border-right-radius-only( $border-radius ); }
-    }
+    .k-scheduler-navigation {}
 
 
     // View switcher
-    ul.k-scheduler-views {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-left: auto;
+    .k-scheduler-views-wrapper {
 
-        li {
-            border-width: $button-border-width;
-            border-style: solid;
-            position: relative;
-            z-index: 1;
-        }
-        li + li {
-            margin-left: -$button-border-width;
-        }
-        .k-state-hover,
-        .k-state-selected {
-            z-index: 2;
-        }
-
-
-        .k-link {
-            padding: $button-padding-y $button-padding-x;
-            box-sizing: border-box;
-            color: inherit;
-            text-decoration: none;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-        }
-
-        li:first-child { @include border-radius( $border-radius ); }
-        li:first-child + li { @include border-left-radius-only( $border-radius ); }
-        li:last-child { @include border-right-radius-only( $border-radius ); }
-
-        &.k-state-expanded {
-            li {
-                @include border-radius( 0 );
-                margin: 0;
-            }
-            li + li { margin-top: -1px; }
-            li:first-child { @include border-top-radius-only( $border-radius ); }
-            li:first-child + li { @include border-radius( 0 ); }
-            li:last-child { @include border-bottom-radius-only( $border-radius ); }
-        }
-
-        .k-current-view { display: none; }
-        .k-current-view .k-link::after {
-            content: "";
-            margin: 0 0 0 1ex;
-            border: .25em solid transparent;
-            border-top: .5em solid currentColor;
-            border-bottom-width: 0;
-            display: inline-block;
+        // Views dropdown
+        .k-views-dropdown {
+            width: auto;
+            font: inherit;
+            display: none;
         }
 
         @media (max-width: 1024px) {
-            flex-direction: column;
-            align-items: stretch;
-            position: absolute;
-            right: $toolbar-padding-x;
-            top: $toolbar-padding-y;
-            z-index: 1000;
-
-            li { display: none; }
-            .k-current-view { display: block; }
-
-
-            &.k-state-expanded {
-                li { display: block; }
-            }
-
-            .k-rtl & {
-                left: $toolbar-padding-x;
-                right: auto;
-            }
+            .k-scheduler-views { display: none; }
+            .k-views-dropdown { display: inline-block; }
         }
     }
 
@@ -428,50 +281,6 @@
         white-space: nowrap;
         flex-shrink: 0;
         position: relative;
-
-        .k-widget {
-            font-size: inherit;
-        }
-
-        li {
-            border-width: $button-border-width;
-            border-style: solid;
-            position: relative;
-            z-index: 1;
-        }
-        li + li {
-            margin-left: -$button-border-width;
-        }
-        .k-state-hover,
-        .k-state-selected {
-            z-index: 2;
-        }
-
-
-        .k-link {
-            padding: $button-padding-y $button-padding-x;
-            box-sizing: border-box;
-            color: inherit;
-            text-decoration: none;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-            gap: $icon-spacing;
-        }
-
-        li {
-            @include border-radius( $border-radius );
-        }
-    }
-    kendo-scheduler .k-scheduler-footer {
-        padding: $toolbar-padding-y $toolbar-padding-x;
-        border-style: solid;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: space-between;
     }
 
 
@@ -1214,34 +1023,6 @@
                 margin-right: 0;
             }
 
-        }
-
-        .k-scheduler-views {
-            margin-left: 0;
-            margin-right: auto;
-
-            li:first-child + li { @include border-right-radius-only( $border-radius ); }
-            li:last-child { @include border-left-radius-only( $border-radius ); }
-
-            .k-current-view .k-link::after {
-                margin: 0 1ex 0 0;
-            }
-        }
-
-        .k-scheduler-navigation {
-
-            .k-nav-today {
-                @include border-right-radius-only( $border-radius );
-            }
-
-            .k-nav-next {
-                @include border-left-radius-only( $border-radius );
-            }
-
-            li + li {
-                margin-left: 0;
-                margin-right: -1px;
-            }
         }
 
         .k-scheduler-marquee .k-label-top {
