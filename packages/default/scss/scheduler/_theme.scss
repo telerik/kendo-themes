@@ -54,96 +54,15 @@
 
 
     //Scheduler navigation
-    ul.k-scheduler-navigation {
-
-        li {
-            &.k-state-focused {
-                @include box-shadow( $list-item-focused-shadow );
-            }
-        }
-
-        .k-nav-today,
-        .k-nav-prev,
-        .k-nav-next {
-            @include fill(
-                $button-text,
-                $button-bg,
-                $button-border,
-                $button-gradient
-            );
-
-            &:hover,
-            &.k-state-hover {
-                @include fill(
-                    $button-hovered-text,
-                    $button-hovered-bg,
-                    $button-hovered-border,
-                    $button-hovered-gradient
-                );
-             }
-        }
-    }
+    .k-scheduler-navigation {}
 
 
     // View switcher
-    ul.k-scheduler-views {
-        &.k-state-expanded { background-color: $base-bg; }
-
-        li {
-            @include fill(
-                $button-text,
-                $button-bg,
-                $button-border,
-                $button-gradient
-            );
-
-            &:hover,
-            &.k-state-hover {
-                @include fill(
-                    $button-hovered-text,
-                    $button-hovered-bg,
-                    $button-hovered-border,
-                    $button-hovered-gradient
-                );
-            }
-            &.k-state-selected {
-                @include fill(
-                    $button-selected-text,
-                    $button-selected-bg,
-                    $button-selected-border,
-                    $button-selected-gradient
-                );
-            }
-            &:focus,
-            &.k-state-focus,
-            &.k-state-focused {
-                @include box-shadow( $button-focused-shadow );
-            }
-        }
-    }
+    .k-scheduler-views {}
 
 
     // Scheduler footer
-    .k-scheduler-footer {
-
-        li {
-            @include fill(
-                $button-text,
-                $button-bg,
-                $button-border,
-                $button-gradient
-            );
-
-            &:hover {
-                @include fill(
-                    $button-hovered-text,
-                    $button-hovered-bg,
-                    $button-hovered-border,
-                    $button-hovered-gradient
-                );
-            }
-        }
-    }
+    .k-scheduler-footer {}
 
 
     // Scheduler content

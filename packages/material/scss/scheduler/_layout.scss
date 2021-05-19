@@ -8,79 +8,12 @@
     }
 
 
-    // Header and footer
-    kendo-scheduler .k-scheduler-toolbar,
-    kendo-scheduler .k-scheduler-footer {
-        line-height: $toolbar-line-height;
-        text-transform: uppercase;
-
-
-        li,
-        li.k-state-hover,
-        li.k-state-selected {
-            color: inherit !important; // sass-lint:disable-line no-important
-            background: none !important; // sass-lint:disable-line no-important
-        }
-
-        li a,
-        li .k-link {
-            @extend .k-button-flat;
-            padding: $button-padding-y $button-padding-x;
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-        li a::before,
-        li .k-link::before {
-            @extend .k-button-overlay;
-            display: block;
-        }
-
-        li:hover,
-        li.k-state-hover {
-            a::before,
-            .k-link::before {
-                opacity: $flat-button-hover-opacity;
-            }
-        }
-
-        li.k-state-selected a::before,
-        li.k-state-selected .k-link::before {
-            opacity: $flat-button-selected-opacity;
-        }
-
-        li.k-state-focused a::before,
-        li.k-state-focused .k-link::before {
-            opacity: $flat-button-focus-opacity;
-        }
-    }
-    kendo-scheduler .k-scheduler-toolbar {
-        @include box-shadow( $toolbar-shadow );
-    }
-
-
     //Scheduler navigation
     .k-scheduler-navigation {}
 
 
     // View switcher
-    ul.k-scheduler-views {
-
-        &.k-state-expanded {
-            li {
-                margin: 0;
-                border-radius: 0;
-            }
-            li + li {
-                margin: 0;
-            }
-            .k-current-view ~ li a {
-                padding-top: $list-item-padding-y;
-                padding-bottom: $list-item-padding-y;
-                line-height: 2;
-            }
-        }
-    }
+    .k-scheduler-views {}
 
 
     // View header
