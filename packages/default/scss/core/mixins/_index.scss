@@ -1,7 +1,7 @@
 // Core
-@import "core/_import-once.scss";
-@import "core/_data-uri.scss";
-@import "core/_props.scss";
+@import "_import-once.scss";
+@import "_data-uri.scss";
+@import "_props.scss";
 
 
 // Utils
@@ -13,3 +13,7 @@
 @import "_gradients.scss";
 @import "_hide-scrollbar.scss";
 @import "_typography.scss";
+
+
+// Other
+@import "_input-ripple.scss";
