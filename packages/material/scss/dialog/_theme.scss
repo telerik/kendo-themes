@@ -2,6 +2,7 @@
 
     .k-dialog {}
 
+
     // Titlebar
     .k-dialog-titlebar {
         @include fill(
@@ -18,16 +19,6 @@
 
 
     // Button group
-    .k-dialog-buttongroup {
-        .k-button,
-        .k-button-secondary {
-            background-color: try-shade( $button-bg );
-        }
-
-        .k-button-primary,
-        .k-button.k-primary {
-            background-color: $primary-button-bg;
-        }
-    }
+    .k-dialog-buttongroup {}
 
 }

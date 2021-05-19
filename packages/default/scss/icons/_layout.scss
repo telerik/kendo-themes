@@ -1103,11 +1103,6 @@
     .k-i-chart-choropleth::before { content: "\ea21"; }
 
 
-    // Manual aliases
-    .k-plus { @extend .k-i-plus; }
-    .k-minus { @extend .k-i-minus; }
-
-
     // RTL icons
     .k-rtl .k-i-indent-increase,
     .k-rtl .k-i-indent-decrease,
