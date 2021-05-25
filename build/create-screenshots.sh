@@ -22,17 +22,9 @@ find "$SRC_DIR" -name '*.html' -print0 | xargs -0 sed -i -E \
     -e "s#/packages/default/dist/#/../../packages/$THEME/dist/#"
 
 # capture screenshots. see .pastshotsrc for config options
-npm install --no-save pastshots optipng
+npm install --no-save pastshots@1.6 optipng
 
-find $SRC_DIR \
-    -type d \
-    -not -wholename "*output*" \
-    -not -name "dist" \
-    -not -name "assets" \
-    -not -name "visual" \
-    -exec bash -c '\
-        npx pastshots \
-            --serve "$0/*.html" \
-            --port $((RANDOM % 1000 + 8000)) \
-            --output ./tests/visual/output/$(realpath --relative-to "$1" "$0")' \
-        {} "$SRC_DIR" \;
+npx pastshots \
+    --serve "$SRC_DIR/**/*.html" \
+    --port $((RANDOM % 1000 + 8000)) \
+    --output ./tests/visual/output
