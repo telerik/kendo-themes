@@ -1,10 +1,15 @@
 // Pivot grid
+$pivotgrid-spacer: map-get( $spacing, 4 ) !default;
+$pivotgrid-padding-y: null !default;
+$pivotgrid-padding-x: null !default;
 $pivotgrid-font-family: $font-family !default;
 $pivotgrid-font-size: $font-size !default;
 $pivotgrid-line-height: $line-height !default;
 
 $pivotgrid-border-width: 1px !default;
 
+
+// TODO revise these
 $pivotgrid-alt-bg: $grid-header-bg !default;
 $pivotgrid-alt-text: $grid-header-text !default;
 $pivotgrid-border: $grid-border !default;
@@ -24,3 +29,27 @@ $pivotgrid-remove-bg: null !default;
 $pivotgrid-remove-text: null !default;
 
 $pivotgrid-configurator-text: $component-text !default;
+// End TODO
+
+$pivotgrid-settings-padding-y: $pivotgrid-spacer !default;
+$pivotgrid-settings-padding-x: $pivotgrid-spacer !default;
+$pivotgrid-settings-border-width: 1px !default;
+$pivotgrid-settings-gap: $pivotgrid-spacer !default;
+
+$pivotgrid-settings-header-font-size: 18px !default;
+$pivotgrid-settings-header-font-weight: 500 !default;
+
+$pivotgrid-settings-content-padding-y: 0 !default;
+$pivotgrid-settings-content-padding-x: $pivotgrid-spacer !default;
+
+$pivotgrid-settings-actions-padding-y: $pivotgrid-spacer / 2 !default;
+$pivotgrid-settings-actions-padding-x: $pivotgrid-spacer / 2 !default;
+
+$pivotgrid-calculated-field-padding-y: $pivotgrid-spacer !default;
+$pivotgrid-calculated-field-padding-x: $pivotgrid-spacer !default;
+$pivotgrid-calculated-field-border-width: 1px !default;
+$pivotgrid-calculated-field-border-radius: 2px !default;
+$pivotgrid-calculated-field-gap: $pivotgrid-spacer !default;
+
+$pivotgrid-settings-vertical-width: 320px !default;
+$pivotgrid-settings-horizontal-height: 420px !default;
