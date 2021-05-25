@@ -40,6 +40,30 @@
     .k-pivotgrid-settings-content .k-form-field-wrapper {
         @include fill( $border: $component-border );
     }
+
+
+    // Overlay mode
+    .k-pivotgrid-settings-overlay {
+        .k-pivotgrid-settings {
+            @include box-shadow( -3px 0px 6px rgba(0, 0, 0, .16) );
+        }
+
+        &.k-pivotgrid-settings-start .k-pivotgrid-settings {
+            @include box-shadow( 3px 0px 6px rgba(0, 0, 0, .16) );
+        }
+
+        &.k-pivotgrid-settings-top .k-pivotgrid-settings {
+            width: 100%;
+            right: auto;
+            bottom: auto;
+        }
+
+        &.k-pivotgrid-settings-bottom .k-pivotgrid-settings {
+            width: 100%;
+            top: auto;
+            right: auto;
+        }
+    }
 }
 
 

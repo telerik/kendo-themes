@@ -166,13 +166,12 @@
 
     // Vertical Layout
     .k-pivotgrid-settings-vertical {
-        width: 320px; // $pivotgrid-settings-vertical-width;
-        height: 670px; //$pivotgrid-settings-vertical-height;
+        width: 320px; // $pivotgrid-settings-width;
     }
 
     // Horizontal Layout
     .k-pivotgrid-settings-horizontal {
-        height: 420px; //$pivotgrid-settings-horizontal-height;
+        height: 420px; //$pivotgrid-settings-height;
 
         .k-pivotgrid-settings-content {
             .k-spacer { display: none; }
@@ -203,6 +202,40 @@
 
         .k-value-fields {
             flex-direction: row;
+        }
+    }
+
+
+    // Positions
+    .k-pivotgrid-settings-start .k-pivotgrid-settings {
+        right: auto;
+        left: 0;
+    }
+
+
+    // Modes
+    .k-pivotgrid-settings-push {
+        display: flex;
+        flex-direction: row;
+
+        .k-pivotgrid-settings {
+            position: relative;
+        }
+
+        .k-pivotgrid-settings-vertical {
+            min-width: 320px; // $pivotgrid-settings-width;
+        }
+
+        &.k-pivotgrid-settings-start {
+            flex-direction: row-reverse;
+        }
+
+        &.k-pivotgrid-settings-top {
+            flex-direction: column-reverse;
+        }
+
+        &.k-pivotgrid-settings-bottom {
+            flex-direction: column;
         }
     }
 }
