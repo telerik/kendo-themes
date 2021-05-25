@@ -11,13 +11,320 @@
     </style> -->
 </head>
 <body>
-    <div id="test-area" class="k-d-grid k-grid-cols-3">
-
-        <span>Start View</span>
-        <!-- TODO add rendering -->
-
-        <span>Columns, Rows and Values Applied (with scrolling)</span>
-        <!-- TODO add rendering -->
+    <div id="test-area">
+        <section>
+            <div class="k-dialog-wrapper">
+                <div class="k-overlay"></div>
+                <div class="k-widget k-window k-dialog" style="width: 640px;">
+                    <div class="k-window-titlebar k-dialog-titlebar k-header">
+                        <div class="k-window-title k-dialog-title">Settings</div>
+                        <div class="k-window-actions k-dialog-actions">
+                            <a href="#" role="button" class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
+                                <span class="k-icon k-i-x"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="k-content k-window-content k-dialog-content">
+                        <div class="k-spivotgrid-settings k-pivotgrid-settings-horizontal">
+                            <!-- Without header and action buttons rendering (use dialog rendering instead)-->
+                            <div class="k-pivotgrid-settings-content">
+                                <form class="k-form k-form-horizontal">
+                                    <!-- For horizontal layout wrapping field and chip values-->
+                                    <div class="k-form-field-wrapper">
+                                        <div class="k-form-field">
+                                            <label class="k-label">Columns:</label>
+                                            <span class="k-spacer"></span>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-widget k-dropdown">
+                                                    <span class="k-dropdown-wrap">
+                                                        <span class="k-input">Add</span>
+                                                        <span class="k-select">
+                                                            <span class="k-icon k-i-arrow-s"></span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-chip-list k-column-fields">
+                                            <div class="k-chip k-chip-has-icon k-chip-filled">
+                                                <!-- Add container element to switch the direction of the icon and text -->
+                                                <span class="k-chip-icontext k-row-reverse">
+                                                    <span class="k-icon k-chip-icon k-i-more-vertical"></span>
+                                                    <span class="k-chip-content">
+                                                        <span class="k-chip-label">Date.Calendar</span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-remove-icon">
+                                                    <span class="k-icon k-i-close-circle"></span>
+                                                </span>
+                                            </div>
+                                            <div class="k-chip k-chip-has-icon k-chip-filled">
+                                                <!-- Add container element to switch the direction of the icon and text -->
+                                                <span class="k-chip-icontext k-row-reverse">
+                                                    <span class="k-icon k-chip-icon k-i-more-vertical"></span>
+                                                    <span class="k-chip-content">
+                                                        <span class="k-chip-label">Product.Category</span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-remove-icon">
+                                                    <span class="k-icon k-i-close-circle"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="k-form-field-wrapper">
+                                        <div class="k-form-field">
+                                            <label class="k-label">Rows:</label>
+                                            <span class="k-spacer"></span>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-widget k-dropdown">
+                                                    <span class="k-dropdown-wrap">
+                                                        <span class="k-input">Add</span>
+                                                        <span class="k-select">
+                                                            <span class="k-icon k-i-arrow-s"></span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-chip-list k-row-fields">
+                                            <div class="k-chip k-chip-has-icon k-chip-filled">
+                                                <!-- Add container element to switch the direction of the icon and text -->
+                                                <span class="k-chip-icontext k-row-reverse">
+                                                    <span class="k-icon k-chip-icon k-i-more-vertical"></span>
+                                                    <span class="k-chip-content">
+                                                        <span class="k-chip-label">Geography.City</span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-remove-icon">
+                                                    <span class="k-icon k-i-close-circle"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="k-switch-fields">
+                                    <label>Switch rows & columns</label>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-widget k-switch k-switch-off">
+                                        <span class="k-switch-container">
+                                            <span class="k-switch-label-on">ON</span>
+                                            <span class="k-switch-label-off">OFF</span>
+                                            <span class="k-switch-handle"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <form class="k-form k-form-horizontal">
+                                    <div class="k-form-field-wrapper">
+                                        <div class="k-form-field">
+                                            <label class="k-label">Values:</label>
+                                            <span class="k-spacer"></span>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-widget k-dropdown">
+                                                    <span class="k-dropdown-wrap">
+                                                        <span class="k-input">Add</span>
+                                                        <span class="k-select">
+                                                            <span class="k-icon k-i-arrow-s"></span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="k-value-fields">
+                                    <div class="k-calculated-field">
+                                        <div class="k-calculated-field-header">
+                                            <div class="k-calculated-field-header-text">Calculated Field 1</div>
+                                            <button class="k-button k-button-icon k-flat">
+                                                <i class="k-icon k-i-edit"></i>
+                                            </button>
+                                            <span class="k-spacer"></span>
+                                            <div class="k-calculated-field-header-actions">
+                                                <button class="k-button k-button-icon k-flat">
+                                                    <i class="k-icon k-i-close"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="k-calculated-field-content">
+                                            <input class="k-textbox" placeholder="Custom function"/>
+                                        </div>
+                                        <div class="k-calculated-field-actions">
+                                            <span class="k-icon k-i-formula-fx"></span>
+                                            <span class="k-widget k-dropdown">
+                                                <span class="k-dropdown-wrap">
+                                                    <span class="k-input">Custom</span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-arrow-s"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="k-spacer"></span>
+                                            <span class="k-icon k-i-preview"></span>
+                                            <span class="k-widget k-dropdown">
+                                                <span class="k-dropdown-wrap">
+                                                    <span class="k-input">Default</span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-arrow-s"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="k-calculated-field">
+                                        <div class="k-calculated-field-header">
+                                            <div class="k-textbox">
+                                                <input class="k-input" value="Renamed Field"/>
+                                                <span class="k-input-suffix">
+                                                    <button class="k-button-icon k-button k-button-clear">
+                                                        <span class="k-icon k-i-check"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <span class="k-spacer"></span>
+                                            <div class="k-calculated-field-header-actions">
+                                                <button class="k-button k-button-icon k-flat">
+                                                    <i class="k-icon k-i-close"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="k-calculated-field-content">
+                                            <div class="k-textbox">
+                                                <span class="k-input-prefix">
+                                                    <span class="k-icon k-i-formula-fx"></span>
+                                                </span>
+                                                <input class="k-input" value="=IF(Amount>100, 3%*Amount)"/>
+                                            </div>
+                                        </div>
+                                        <div class="k-calculated-field-actions">
+                                            <span class="k-icon k-i-formula-fx"></span>
+                                            <span class="k-widget k-dropdown">
+                                                <span class="k-dropdown-wrap">
+                                                    <span class="k-input">Custom</span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-arrow-s"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="k-spacer"></span>
+                                            <span class="k-icon k-i-preview"></span>
+                                            <span class="k-widget k-dropdown">
+                                                <span class="k-dropdown-wrap">
+                                                    <span class="k-input">Default</span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-arrow-s"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="k-calculated-field">
+                                        <div class="k-calculated-field-header">
+                                            <div class="k-calculated-field-header-text">Date.Calendar</div>
+                                            <span class="k-spacer"></span>
+                                            <div class="k-calculated-field-header-actions">
+                                                <button class="k-button k-button-icon k-flat">
+                                                    <i class="k-icon k-i-close"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="k-calculated-field-actions">
+                                            <span class="k-icon k-i-sum"></span>
+                                            <span class="k-widget k-dropdown">
+                                                <span class="k-dropdown-wrap">
+                                                    <span class="k-input">SUM</span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-arrow-s"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="k-spacer"></span>
+                                            <span class="k-icon k-i-preview"></span>
+                                            <span class="k-widget k-dropdown">
+                                                <span class="k-dropdown-wrap">
+                                                    <span class="k-input">Default</span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-arrow-s"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="k-calculated-field">
+                                        <div class="k-calculated-field-header">
+                                            <div class="k-calculated-field-header-text">Date.Calendar</div>
+                                            <span class="k-spacer"></span>
+                                            <div class="k-calculated-field-header-actions">
+                                                <button class="k-button k-button-icon k-flat">
+                                                    <i class="k-icon k-i-close"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="k-calculated-field-actions">
+                                            <span class="k-icon k-i-sum"></span>
+                                            <span class="k-widget k-dropdown">
+                                                <span class="k-dropdown-wrap">
+                                                    <span class="k-input">SUM</span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-arrow-s"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="k-spacer"></span>
+                                            <span class="k-icon k-i-preview"></span>
+                                            <span class="k-widget k-dropdown">
+                                                <span class="k-dropdown-wrap">
+                                                    <span class="k-input">Default</span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-arrow-s"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="k-calculated-field">
+                                        <div class="k-calculated-field-header">
+                                            <div class="k-calculated-field-header-text">Date.Calendar</div>
+                                            <span class="k-spacer"></span>
+                                            <div class="k-calculated-field-header-actions">
+                                                <button class="k-button k-button-icon k-flat">
+                                                    <i class="k-icon k-i-close"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="k-calculated-field-actions">
+                                            <span class="k-icon k-i-sum"></span>
+                                            <span class="k-widget k-dropdown">
+                                                <span class="k-dropdown-wrap">
+                                                    <span class="k-input">SUM</span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-arrow-s"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="k-spacer"></span>
+                                            <span class="k-icon k-i-preview"></span>
+                                            <span class="k-widget k-dropdown">
+                                                <span class="k-dropdown-wrap">
+                                                    <span class="k-input">Default</span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-arrow-s"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="k-dialog-buttongroup k-actions k-actions-end">
+                        <button class="k-button">Cancel</button>
+                        <button class="k-button k-button-primary">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </div>
 </body>
