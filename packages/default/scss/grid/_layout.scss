@@ -425,8 +425,11 @@
 
     // Toolbar
     .k-grid-toolbar {
-        border-width: 0 0 1px;
+        border-width: 0 0 $grid-toolbar-border-width;
         flex-shrink: 0;
+    }
+    .k-grid-toolbar-bottom {
+        border-width: $grid-toolbar-border-width 0 0;
     }
 
 
