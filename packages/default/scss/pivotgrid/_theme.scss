@@ -9,28 +9,36 @@
     // Settings Panel
     .k-pivotgrid-settings {
         @include fill (
-            $component-text, //$pivotgrid-settings-text,
-            $component-bg, // $pivotgrid-settings-bg,
-            $component-border, // $pivotgrid-settings-border
-        )
+            $pivotgrid-settings-text,
+            $pivotgrid-settings-bg,
+            $pivotgrid-settings-border
+        );
     }
 
     .k-pivotgrid-settings-header {
-        @include fill( $color: $header-text ); //$pivotgrid-settings-header-text
+        @include fill(
+            $pivotgrid-settings-header-text,
+            $pivotgrid-settings-header-bg,
+            $pivotgrid-settings-header-border
+        );
     }
 
 
     // Calculated field
     .k-calculated-field {
         @include fill (
-            $component-text, //$pivotgrid-calculated-field-text,
-            $component-bg, // $pivotgrid-calculated-field-bg,
-            $component-border, // $pivotgrid-calculated-field-border
-        )
+            $pivotgrid-calculated-field-text,
+            $pivotgrid-calculated-field-bg,
+            $pivotgrid-calculated-field-border
+        );
     }
 
     .k-calculated-field-header {
-        @include fill( $color: $header-text ); //$pivotgrid-calculated-field-header-text
+        @include fill(
+            $pivotgrid-calculated-field-header-text,
+            $pivotgrid-calculated-field-header-bg,
+            $pivotgrid-calculated-field-header-border
+        );
     }
 
     .k-filter-menu .k-calculated-item  {
@@ -45,22 +53,22 @@
     // Overlay mode
     .k-pivotgrid-settings-overlay {
         .k-pivotgrid-settings {
-            @include box-shadow( -3px 0px 6px rgba(0, 0, 0, .16) );
+            @include box-shadow( $pivotgrid-settings-end-shadow );
         }
 
         &.k-pivotgrid-settings-start .k-pivotgrid-settings {
-            @include box-shadow( 3px 0px 6px rgba(0, 0, 0, .16) );
+            @include box-shadow( $pivotgrid-settings-start-shadow );
         }
 
         &.k-pivotgrid-settings-top .k-pivotgrid-settings {
-            @include box-shadow( 0px 3px 6px rgba(0, 0, 0, .16) );
+            @include box-shadow( $pivotgrid-settings-top-shadow );
             width: 100%;
             right: auto;
             bottom: auto;
         }
 
         &.k-pivotgrid-settings-bottom .k-pivotgrid-settings {
-            @include box-shadow( 0px -3px 6px rgba(0, 0, 0, .16) );
+            @include box-shadow( $pivotgrid-settings-bottom-shadow );
             width: 100%;
             top: auto;
             right: auto;

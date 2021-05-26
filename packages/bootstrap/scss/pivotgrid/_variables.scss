@@ -53,3 +53,24 @@ $pivotgrid-calculated-field-gap: $pivotgrid-spacer !default;
 
 $pivotgrid-settings-vertical-width: 320px !default;
 $pivotgrid-settings-horizontal-height: 420px !default;
+
+$pivotgrid-settings-bg: $component-bg !default;
+$pivotgrid-settings-text: $component-text !default;
+$pivotgrid-settings-border: $component-border !default;
+
+$pivotgrid-settings-header-bg: null !default;
+$pivotgrid-settings-header-text: $header-text !default;
+$pivotgrid-settings-header-border: null !default;
+
+$pivotgrid-calculated-field-bg: $component-bg !default;
+$pivotgrid-calculated-field-text: $component-text !default;
+$pivotgrid-calculated-field-border: $component-border !default;
+
+$pivotgrid-calculated-field-header-bg: null !default;
+$pivotgrid-calculated-field-header-text: $header-text !default;
+$pivotgrid-calculated-field-header-border: null !default;
+
+$pivotgrid-settings-end-shadow: -3px 0px 6px rgba(0, 0, 0, .16) !default;
+$pivotgrid-settings-start-shadow: 3px 0px 6px rgba(0, 0, 0, .16) !default;
+$pivotgrid-settings-top-shadow: 0px 3px 6px rgba(0, 0, 0, .16) !default;
+$pivotgrid-settings-bottom-shadow: 0px -3px 6px rgba(0, 0, 0, .16) !default;
