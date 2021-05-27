@@ -93,7 +93,9 @@
         .k-master-row > td:focus,
         .k-grouping-row > td:focus,
         .k-detail-row > td:focus,
-        .k-group-footer > td:focus {
+        .k-group-footer > td:focus,
+        .k-grid-pager.k-state-focused,
+        .k-grid-pager:focus {
             box-shadow: $grid-focused-shadow;
         }
 

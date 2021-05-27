@@ -62,6 +62,10 @@
             }
 
         }
+        .k-grid-pager.k-state-focused,
+        .k-grid-pager:focus {
+            background-color: $grid-sticky-hovered-bg;
+        }
 
         th,
         td {
