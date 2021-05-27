@@ -1,7 +1,7 @@
 // Chart
 /// The first base series color and its light and dark shades.
 /// @group charts
-$series-a: #0275d8 !default;
+$series-a: $teal !default;
 $series-a-dark: mix(black, $series-a, 25%) !default;
 $series-a-darker: mix(black, $series-a, 50%) !default;
 $series-a-light: mix(white, $series-a, 25%) !default;
@@ -9,7 +9,7 @@ $series-a-lighter: mix(white, $series-a, 50%) !default;
 
 /// The second base series color and its light and dark shades.
 /// @group charts
-$series-b: #5bc0de !default;
+$series-b: $blue !default;
 $series-b-dark: mix(black, $series-b, 25%) !default;
 $series-b-darker: mix(black, $series-b, 50%) !default;
 $series-b-light: mix(white, $series-b, 25%) !default;
@@ -17,7 +17,7 @@ $series-b-lighter: mix(white, $series-b, 50%) !default;
 
 /// The third base series color and its light and dark shades.
 /// @group charts
-$series-c: #5cb85c !default;
+$series-c: $purple !default;
 $series-c-dark: mix(black, $series-c, 25%) !default;
 $series-c-darker: mix(black, $series-c, 50%) !default;
 $series-c-light: mix(white, $series-c, 25%) !default;
@@ -25,7 +25,7 @@ $series-c-lighter: mix(white, $series-c, 50%) !default;
 
 /// The fourth base series color and its light and dark shades.
 /// @group charts
-$series-d: #f0ad4e !default;
+$series-d: $red !default;
 $series-d-dark: mix(black, $series-d, 25%) !default;
 $series-d-darker: mix(black, $series-d, 50%) !default;
 $series-d-light: mix(white, $series-d, 25%) !default;
@@ -33,7 +33,7 @@ $series-d-lighter: mix(white, $series-d, 50%) !default;
 
 /// The fifth base series color and its light and dark shades.
 /// @group charts
-$series-e: #e67d4a !default;
+$series-e: $yellow !default;
 $series-e-dark: mix(black, $series-e, 25%) !default;
 $series-e-darker: mix(black, $series-e, 50%) !default;
 $series-e-light: mix(white, $series-e, 25%) !default;
@@ -41,7 +41,7 @@ $series-e-lighter: mix(white, $series-e, 50%) !default;
 
 /// The sixth base series color and its light and dark shades.
 /// @group charts
-$series-f: #d9534f !default;
+$series-f: $green !default;
 $series-f-dark: mix(black, $series-f, 25%) !default;
 $series-f-darker: mix(black, $series-f, 50%) !default;
 $series-f-light: mix(white, $series-f, 25%) !default;
