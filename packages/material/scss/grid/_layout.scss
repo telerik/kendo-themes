@@ -203,6 +203,20 @@ $grid-group-dropclue-top: calc( ( #{$button-calc-size} + #{$grid-grouping-header
             }
         }
 
+        // Nested dateinput
+        .k-datepicker,
+        .k-timepicker,
+        .k-datetimepicker {
+            &[dir="rtl"] .k-picker-wrap .k-dateinput-wrap,
+            &.k-rtl .k-picker-wrap .k-dateinput-wrap,
+            .k-picker-wrap .k-dateinput-wrap {
+                border-radius: 0;
+                border-width: 0;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
         .k-combobox {
             .k-dropdown-wrap {
                 border-radius: $text-field-radius;
