@@ -8,35 +8,46 @@
     <script src="../../assets/scripts.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: repeat(4, min-content);
-            align-items: start;
+        .k-dateinput,
+        .k-datepicker,
+        .k-timepicker,
+        .k-datetimepicker {
+            width: 170px;
         }
     </style>
 </head>
 <body>
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-5">
+        <span></span>
+        <span>DateInput</span>
+        <span>DatePicker</span>
+        <span>TimePicker</span>
+        <span>DateTimePicker</span>
 
-        <!-- React - invalid  -->
-        <span class="k-widget k-datepicker k-state-invalid">
-            <span class="k-picker-wrap">
-                <span class="k-widget k-dateinput">
-                    <span class="k-dateinput-wrap">
-                        <input class="k-input" value="React Invalid DatePicker">
-                    </span>
-                </span>
-                <span class="k-select">
-                    <span class="k-icon k-i-calendar"></span>
-                </span>
+        <span>Empty</span>
+        <span class="k-widget k-dateinput">
+            <span class="k-dateinput-wrap">
+                <input class="k-input" />
             </span>
         </span>
-
-        <div class="k-widget k-timepicker k-state-invalid">
+        <span class="k-widget k-datepicker">
             <span class="k-picker-wrap">
                 <span class="k-widget k-dateinput">
                     <span class="k-dateinput-wrap">
-                        <input class="k-input" value="React Invalid TimePicker">
+                        <input class="k-input"/>
+                    </span>
+                </span>
+                <a class="k-select">
+                    <span class="k-icon k-i-calendar"></span>
+                </a>
+            </span>
+        </span>
+        <div class="k-widget k-timepicker">
+            <span class="k-picker-wrap">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" />
                     </span>
                 </span>
                 <span class="k-select">
@@ -44,12 +55,11 @@
                 </span>
             </span>
         </div>
-
-        <div class="k-widget k-datetimepicker k-state-invalid">
+        <div class="k-widget k-datetimepicker">
             <div class="k-picker-wrap">
                 <span class="k-widget k-dateinput">
                     <span class="k-dateinput-wrap">
-                        <input class="k-input" value="React DateTimePicker">
+                        <input class="k-input" />
                     </span>
                 </span>
                 <span class="k-select">
@@ -60,31 +70,29 @@
             </div>
         </div>
 
-        <span class="k-widget k-dateinput k-state-invalid">
+        <span>Normal</span>
+        <span class="k-widget k-dateinput">
             <span class="k-dateinput-wrap">
-                <input class="k-input" value="React Invalid DateInput">
+                <input class="k-input" value="5/28/2021" />
             </span>
         </span>
-
-          <!-- React - invalid + Focused -->
-          <span class="k-widget k-datepicker k-state-invalid">
-            <span class="k-picker-wrap k-state-focused">
+        <span class="k-widget k-datepicker">
+            <span class="k-picker-wrap">
                 <span class="k-widget k-dateinput">
                     <span class="k-dateinput-wrap">
-                        <input class="k-input" value="React Invalid+Focused">
+                        <input class="k-input" value="5/28/2021" />
                     </span>
                 </span>
-                <span class="k-select">
+                <a class="k-select">
                     <span class="k-icon k-i-calendar"></span>
-                </span>
+                </a>
             </span>
         </span>
-
-        <div class="k-widget k-timepicker k-state-invalid">
-            <span class="k-picker-wrap k-state-focused">
+        <div class="k-widget k-timepicker">
+            <span class="k-picker-wrap">
                 <span class="k-widget k-dateinput">
                     <span class="k-dateinput-wrap">
-                        <input class="k-input" value="React Invalid+Focused">
+                        <input class="k-input" value="5:30 PM" />
                     </span>
                 </span>
                 <span class="k-select">
@@ -92,12 +100,11 @@
                 </span>
             </span>
         </div>
-
-        <div class="k-widget k-datetimepicker k-state-invalid">
-            <div class="k-picker-wrap k-state-focused">
+        <div class="k-widget k-datetimepicker">
+            <div class="k-picker-wrap">
                 <span class="k-widget k-dateinput">
                     <span class="k-dateinput-wrap">
-                        <input class="k-input" value="React Invalid+Focused">
+                        <input class="k-input" value="5/28/2021 5:30 PM" />
                     </span>
                 </span>
                 <span class="k-select">
@@ -108,27 +115,396 @@
             </div>
         </div>
 
-        <span class="k-widget k-dateinput k-state-invalid">
-            <span class="k-dateinput-wrap">
-                <input class="k-input" value="React Invalid+Focused">
+        <span>Hover</span>
+        <span class="k-widget k-dateinput">
+            <span class="k-dateinput-wrap k-state-hover">
+                <input class="k-input" value="5/28/2021" />
             </span>
         </span>
+        <span class="k-widget k-datepicker">
+            <span class="k-picker-wrap k-state-hover">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5/28/2021" />
+                    </span>
+                </span>
+                <a class="k-select">
+                    <span class="k-icon k-i-calendar"></span>
+                </a>
+            </span>
+        </span>
+        <div class="k-widget k-timepicker">
+            <span class="k-picker-wrap k-state-hover">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5:30 PM" />
+                    </span>
+                </span>
+                <span class="k-select">
+                    <span class="k-icon k-i-clock"></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-widget k-datetimepicker">
+            <div class="k-picker-wrap k-state-hover">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5/28/2021 5:30 PM" />
+                    </span>
+                </span>
+                <span class="k-select">
+                    <span class="k-link k-link-date">
+                        <span class="k-icon k-i-calendar"></span>
+                    </span>
+                </span>
+            </div>
+        </div>
 
-        <span>React Invalid DateRange</span>
-        <span class="k-daterangepicker k-state-invalid">
+        <span>Hover Button</span>
+        <span class="k-widget k-dateinput">
+            <span class="k-dateinput-wrap k-state-hover">
+                <input class="k-input" value="5/28/2021" />
+            </span>
+        </span>
+        <span class="k-widget k-datepicker">
+            <span class="k-picker-wrap k-state-hover">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5/28/2021" />
+                    </span>
+                </span>
+                <a class="k-select k-state-hover">
+                    <span class="k-icon k-i-calendar"></span>
+                </a>
+            </span>
+        </span>
+        <div class="k-widget k-timepicker">
+            <span class="k-picker-wrap k-state-hover">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5:30 PM" />
+                    </span>
+                </span>
+                <span class="k-select k-state-hover">
+                    <span class="k-icon k-i-clock"></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-widget k-datetimepicker">
+            <div class="k-picker-wrap k-state-hover">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5/28/2021 5:30 PM" />
+                    </span>
+                </span>
+                <span class="k-select">
+                    <span class="k-link k-link-date k-state-hover">
+                        <span class="k-icon k-i-calendar"></span>
+                    </span>
+                </span>
+            </div>
+        </div>
+
+        <span>Active</span>
+        <span class="k-widget k-dateinput">
+            <span class="k-dateinput-wrap k-state-active">
+                <input class="k-input" value="5/28/2021" />
+            </span>
+        </span>
+        <span class="k-widget k-datepicker">
+            <span class="k-picker-wrap k-state-active">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5/28/2021" />
+                    </span>
+                </span>
+                <a class="k-select">
+                    <span class="k-icon k-i-calendar"></span>
+                </a>
+            </span>
+        </span>
+        <div class="k-widget k-timepicker">
+            <span class="k-picker-wrap k-state-active">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5:30 PM" />
+                    </span>
+                </span>
+                <span class="k-select">
+                    <span class="k-icon k-i-clock"></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-widget k-datetimepicker">
+            <div class="k-picker-wrap k-state-active">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5/28/2021 5:30 PM" />
+                    </span>
+                </span>
+                <span class="k-select">
+                    <span class="k-link k-link-date">
+                        <span class="k-icon k-i-calendar"></span>
+                    </span>
+                </span>
+            </div>
+        </div>
+
+        <span>Focus</span>
+        <span class="k-widget k-dateinput">
+            <span class="k-dateinput-wrap k-state-focused">
+                <input class="k-input" value="5/28/2021" />
+            </span>
+        </span>
+        <span class="k-widget k-datepicker">
+            <span class="k-picker-wrap k-state-focused">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5/28/2021" />
+                    </span>
+                </span>
+                <a class="k-select">
+                    <span class="k-icon k-i-calendar"></span>
+                </a>
+            </span>
+        </span>
+        <div class="k-widget k-timepicker">
+            <span class="k-picker-wrap k-state-focused">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5:30 PM" />
+                    </span>
+                </span>
+                <span class="k-select">
+                    <span class="k-icon k-i-clock"></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-widget k-datetimepicker">
+            <div class="k-picker-wrap k-state-focused">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5/28/2021 5:30 PM" />
+                    </span>
+                </span>
+                <span class="k-select">
+                    <span class="k-link k-link-date">
+                        <span class="k-icon k-i-calendar"></span>
+                    </span>
+                </span>
+            </div>
+        </div>
+
+        <span>Disabled</span>
+        <span class="k-widget k-dateinput">
+            <span class="k-dateinput-wrap k-state-disabled">
+                <input class="k-input" value="5/28/2021" />
+            </span>
+        </span>
+        <span class="k-widget k-datepicker">
+            <span class="k-picker-wrap k-state-disabled">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5/28/2021" />
+                    </span>
+                </span>
+                <a class="k-select">
+                    <span class="k-icon k-i-calendar"></span>
+                </a>
+            </span>
+        </span>
+        <div class="k-widget k-timepicker">
+            <span class="k-picker-wrap k-state-disabled">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5:30 PM" />
+                    </span>
+                </span>
+                <span class="k-select">
+                    <span class="k-icon k-i-clock"></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-widget k-datetimepicker">
+            <div class="k-picker-wrap k-state-disabled">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5/28/2021 5:30 PM" />
+                    </span>
+                </span>
+                <span class="k-select">
+                    <span class="k-link k-link-date">
+                        <span class="k-icon k-i-calendar"></span>
+                    </span>
+                </span>
+            </div>
+        </div>
+
+        <span>Invalid</span>
+        <span class="k-widget k-dateinput">
+            <span class="k-dateinput-wrap k-invalid">
+                <input class="k-input" value="5/28/2021" />
+            </span>
+        </span>
+        <span class="k-widget k-datepicker">
+            <span class="k-picker-wrap k-invalid">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5/28/2021" />
+                    </span>
+                </span>
+                <a class="k-select">
+                    <span class="k-icon k-i-calendar"></span>
+                </a>
+            </span>
+        </span>
+        <div class="k-widget k-timepicker">
+            <span class="k-picker-wrap k-invalid">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5:30 PM" />
+                    </span>
+                </span>
+                <span class="k-select">
+                    <span class="k-icon k-i-clock"></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-widget k-datetimepicker">
+            <div class="k-picker-wrap k-invalid">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5/28/2021 5:30 PM" />
+                    </span>
+                </span>
+                <span class="k-select">
+                    <span class="k-link k-link-date">
+                        <span class="k-icon k-i-calendar"></span>
+                    </span>
+                </span>
+            </div>
+        </div>
+
+        <span>Invalid & Focus</span>
+        <span class="k-widget k-dateinput">
+            <span class="k-dateinput-wrap k-state-focused k-invalid">
+                <input class="k-input" value="5/28/2021" />
+            </span>
+        </span>
+        <span class="k-widget k-datepicker">
+            <span class="k-picker-wrap k-state-focused k-invalid">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5/28/2021" />
+                    </span>
+                </span>
+                <a class="k-select">
+                    <span class="k-icon k-i-calendar"></span>
+                </a>
+            </span>
+        </span>
+        <div class="k-widget k-timepicker">
+            <span class="k-picker-wrap k-state-focused k-invalid">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5:30 PM" />
+                    </span>
+                </span>
+                <span class="k-select">
+                    <span class="k-icon k-i-clock"></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-widget k-datetimepicker">
+            <div class="k-picker-wrap k-state-focused k-invalid">
+                <span class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="5/28/2021 5:30 PM" />
+                    </span>
+                </span>
+                <span class="k-select">
+                    <span class="k-link k-link-date">
+                        <span class="k-icon k-i-calendar"></span>
+                    </span>
+                </span>
+            </div>
+        </div>
+
+        <span>DateRangePicker</span>
+        <span class="k-daterangepicker">
             <span class="k-daterangepicker-wrap">
-                <span class="k-floating-label-container">
+                <span class="k-textbox-container">
                     <span class="k-widget k-dateinput">
                         <span class="k-dateinput-wrap">
-                            <input class="k-input" value="month/day/year">
+                            <input class="k-input">
                         </span>
                     </span>
                     <label class="k-label">Start</label>
                 </span>
-                <span class="k-floating-label-container">
+                <span class="k-textbox-container">
                     <span class="k-widget k-dateinput">
                         <span class="k-dateinput-wrap">
-                            <input class="k-input" value="month/day/year">
+                            <input class="k-input" value="Normal">
+                        </span>
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
+        </span>
+        <span class="k-daterangepicker">
+            <span class="k-daterangepicker-wrap">
+                <span class="k-textbox-container">
+                    <span class="k-widget k-dateinput">
+                        <span class="k-dateinput-wrap k-state-hover">
+                            <input class="k-input" value="Hover">
+                        </span>
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-textbox-container">
+                    <span class="k-widget k-dateinput">
+                        <span class="k-dateinput-wrap k-state-active">
+                            <input class="k-input" value="Active">
+                        </span>
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
+        </span>
+        <span class="k-daterangepicker">
+            <span class="k-daterangepicker-wrap">
+                <span class="k-textbox-container">
+                    <span class="k-widget k-dateinput">
+                        <span class="k-dateinput-wrap k-state-focused">
+                            <input class="k-input" value="Focus">
+                        </span>
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-textbox-container">
+                    <span class="k-widget k-dateinput">
+                        <span class="k-dateinput-wrap k-state-disabled">
+                            <input class="k-input" value="Disabled">
+                        </span>
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
+        </span>
+        <span class="k-daterangepicker">
+            <span class="k-daterangepicker-wrap">
+                <span class="k-textbox-container">
+                    <span class="k-widget k-dateinput">
+                        <span class="k-dateinput-wrap k-invalid">
+                            <input class="k-input" value="Invalid">
+                        </span>
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-textbox-container">
+                    <span class="k-widget k-dateinput">
+                        <span class="k-dateinput-wrap k-state-focused k-invalid">
+                            <input class="k-input" value="Invalid & Focus">
                         </span>
                     </span>
                     <label class="k-label">End</label>
