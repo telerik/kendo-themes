@@ -1,5 +1,23 @@
 @include exports("pivotgrid/theme") {
 
+    .k-pivotgrid-table {
+        @include fill (
+            $pivotgrid-text,
+            $pivotgrid-bg,
+            $pivotgrid-border
+        );
+    }
+
+    .k-pivotgrid-toolbar,
+    .k-pivotgrid-header,
+    .k-pivotgrid-content > td:first-child {
+        @include fill (
+            $pivotgrid-header-text,
+            $pivotgrid-header-bg,
+            $pivotgrid-header-border
+        );
+    }
+
 }
 
 

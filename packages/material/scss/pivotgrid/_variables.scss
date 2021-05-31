@@ -8,28 +8,6 @@ $pivotgrid-line-height: $line-height !default;
 
 $pivotgrid-border-width: 1px !default;
 
-// TODO revise these
-$pivotgrid-alt-bg: $grid-header-bg !default;
-$pivotgrid-alt-text: $grid-header-text !default;
-$pivotgrid-border: $grid-border !default;
-$pivotgrid-chrome-border: $grid-border !default;
-
-$pivotgrid-container-bg: $grid-header-bg !default;
-$pivotgrid-row-headers-bg: null !default;
-
-$pivotgrid-button-bg: try-shade($button-bg, 1) !default;
-$pivotgrid-button-text: $button-text !default;
-$pivotgrid-button-hover-bg: try-shade($button-bg, 2) !default;
-$pivotgrid-button-hover-text: $button-text !default;
-$pivotgrid-button-active-bg: try-shade($button-bg, 2) !default;
-$pivotgrid-button-active-text: $button-text !default;
-
-$pivotgrid-remove-bg: $pivotgrid-button-text !default;
-$pivotgrid-remove-text: $pivotgrid-button-bg !default;
-
-$pivotgrid-configurator-text: $component-text !default;
-// End TODO
-
 // TODO apply correct values once we have designs
 $pivotgrid-settings-padding-y: $pivotgrid-spacer !default;
 $pivotgrid-settings-padding-x: $pivotgrid-spacer !default;
@@ -74,3 +52,32 @@ $pivotgrid-settings-end-shadow: -3px 0px 6px rgba(0, 0, 0, .16) !default;
 $pivotgrid-settings-start-shadow: 3px 0px 6px rgba(0, 0, 0, .16) !default;
 $pivotgrid-settings-top-shadow: 0px 3px 6px rgba(0, 0, 0, .16) !default;
 $pivotgrid-settings-bottom-shadow: 0px -3px 6px rgba(0, 0, 0, .16) !default;
+
+$pivotgrid-bg: $grid-bg !default;
+$pivotgrid-text: $grid-text !default;
+$pivotgrid-border: $grid-border !default;
+
+$pivotgrid-header-bg: $grid-header-bg !default;
+$pivotgrid-header-text: $grid-header-text !default;
+$pivotgrid-header-border: $grid-header-border !default;
+
+// TODO revise these
+$pivotgrid-alt-bg: $grid-header-bg !default;
+$pivotgrid-alt-text: $grid-header-text !default;
+$pivotgrid-chrome-border: $grid-border !default;
+
+$pivotgrid-container-bg: $grid-header-bg !default;
+$pivotgrid-row-headers-bg: null !default;
+
+$pivotgrid-button-bg: try-shade($button-bg, 1) !default;
+$pivotgrid-button-text: $button-text !default;
+$pivotgrid-button-hover-bg: try-shade($button-bg, 2) !default;
+$pivotgrid-button-hover-text: $button-text !default;
+$pivotgrid-button-active-bg: try-shade($button-bg, 2) !default;
+$pivotgrid-button-active-text: $button-text !default;
+
+$pivotgrid-remove-bg: $pivotgrid-button-text !default;
+$pivotgrid-remove-text: $pivotgrid-button-bg !default;
+
+$pivotgrid-configurator-text: $component-text !default;
+// End TODO

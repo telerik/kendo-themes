@@ -1,5 +1,5 @@
 @include exports("pivotgrid/layout") {
-    .k-pivotgrid-wrapper {
+    .k-pivotgrid {
         box-sizing: border-box;
         font-size: $pivotgrid-font-size;
         font-family: $pivotgrid-font-family;
@@ -9,13 +9,26 @@
         position: relative;
     }
 
-    .k-pivotgrid {
+    .k-pivotgrid-table {
         padding: $pivotgrid-padding-y $pivotgrid-padding-x;
         border-width: $pivotgrid-border-width;
         border-style: solid;
+        border-collapse: collapse;
+        border-spacing: 0;
+        // To layout the Settings Panel
         display: flex;
         flex-direction: column;
+        table-layout: auto;
         position: relative;
+    }
+
+    .k-pivotgrid-toolbar {
+        border-bottom-width: $pivotgrid-border-width;
+        border-bottom-style: solid;
+    }
+
+    .k-pivotgrid .k-pivotgrid-cell {
+        padding: 8px;
     }
 }
 
