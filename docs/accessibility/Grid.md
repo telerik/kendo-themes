@@ -109,9 +109,9 @@ To access the pager press `Arrow Down` when focus is on the last row in the grid
 
 | Shortcut | Behavior |
 |----------|----------|
-| `Tab` | When a header cell is focused, pressing `Tab` will move to the filter header icon (`Enter` key is reserved for sorting. After that navigation will be focused as a standard DropDownList navigation, e.g. `Alt + Down arrow` will open the DropDownList. |
-| `Shift + Tab` | When the FilterMenu is focused, moves focus back to the header cell. |
-| `Esc`| Closes the filter menu. Note that if a DropDownList inside the menu is currently opened, `Escape` will close the DropDownList instead of the filter menu (pressing `Escape` a second time will close the menu). |
+| `Alt + Down Arrow` | When a header cell is focused, pressing `Alt + Down Arrow` will open the filter menu. Note that header cells can't contain arbitrary focusable elements if the Grid is sortable, as the `Enter` key is reserved for sorting. There should be an option to remap the `Enter` key if a user scenario requires focusable elements in the header.
+| `Tab` and `Shift + Tab` | Cycles the filter menu fields. |
+| `Escape`| Closes the filter menu. Note that if a popup inside the menu is currently opened, `Escape` will close it instead. Pressing `Escape` a second time will close the menu. |
 
 **Multi-checkbox Filter**
 
