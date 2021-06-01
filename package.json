@@ -48,7 +48,7 @@
     "utils-docs": "gulp utils-docs",
     "pre-tests": "cd tests && npm ci",
     "visual-tests": "./build/visual-test.sh",
-    "create-screenshots": "./build/create-screenshots.sh default",
+    "create-screenshots": "./build/create-screenshots.sh",
     "karma-watch": "cd tests && npm run karma-watch",
     "karma-single": "cd tests && npm run karma-single",
     "karma-travis": "cd tests && npm run karma-travis",
