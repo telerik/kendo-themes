@@ -2,7 +2,7 @@
 set -e
 shopt -s extglob
 
-THEME=$1
+THEME="${1:-default}"
 TEMP_DIR="./tests/.tmp/visual"
 THEME_DIR="$TEMP_DIR/$THEME"
 SRC_DIR="$THEME_DIR/src"
