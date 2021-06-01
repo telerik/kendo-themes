@@ -78,15 +78,14 @@ Opening the popup editor focuses the first editor.
 | `Enter`| Triggers a submit action for the editor, including validation.|
 
 **Pager**
-To access the pager press `Arrow Down` when focus is on the last row in the grid.
+To access the pager press `Tab` when the focus is on a Grid cell.
 
 | Shortcut | Behavior |
 |----------|----------|
-| `Left/Right Arrow` | Moves focus to page buttons|
-| `Up Arrow` | Moves focus to first cell of last row in grid|
-| `Enter`| Selects the page|
-
-**Note:** After a discussion it was decided that selecting the go to first/last page of the pager will move the focus to the first/last number button in the pager (instead of focusing the first actionable button).
+| `Enter` | When the pager wrapper is focused, moves the focus to first focusable pager element|
+| `Tab` | When a pager element is focused, moves focus through all focusable pager elements sequentially. Tabbing out of the last element or shift-tabbing out of the first element moves the focus back to the pager wrapper.|
+| `Enter`| When a pager element is focused, triggers the default action, associated with the currently focused element.|
+| `Escape`| When a pager element is focused, brings the focus back to the pager wrapper. If a popup within the pager is currently opened, `Escape` will close the popup instead. Pressing `Escape` again brings the focus back to the pager wrapper.|
 
 **Header**
 
