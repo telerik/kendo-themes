@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Floating Label Angular</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
+
+        <span>Input</span>
+        <span>Optional text</span>
+        <span>Numeric</span>
+        <span>Masked</span>
+
+        <!-- empty -->
+        <div>
+            <kendo-floatinglabel class="k-state-empty k-floating-label-container">
+                <input class="k-textbox ng-touched" />
+                <label class="k-label">Empty</label>
+            </kendo-floatinglabel>
+        </div>
+        <div>
+            <kendo-floatinglabel class="k-floating-label-container k-state-empty">
+                <input class="k-textbox ng-touched" />
+                <label class="k-label">Empty<span class="k-label-optional">(Optional)</span></label>
+            </kendo-floatinglabel>
+        </div>
+        <div>
+            <kendo-floatinglabel class="k-state-empty k-floating-label-container">
+                <kendo-numerictextbox class="k-widget k-numerictextbox ng-touched">
+                    <span class="k-numeric-wrap">
+                        <input class="k-input k-formatted-value" />
+                        <span class="k-select">
+                            <span class="k-link k-link-increase">
+                                <span class="k-icon k-i-arrow-n"></span>
+                            </span>
+                            <span class="k-link k-link-decrease">
+                                <span class="k-icon k-i-arrow-s"></span>
+                            </span>
+                        </span>
+                    </span>
+                </kendo-numerictextbox>
+                <label class="k-label">Empty</label>
+            </kendo-floatinglabel>
+        </div>
+        <div>
+            <kendo-floatinglabel class="k-floating-label-container k-state-empty">
+                <kendo-maskedtextbox class="k-widget k-maskedtextbox ng-touched">
+                    <input class="k-textbox" />
+                </kendo-maskedtextbox>
+                <label class="k-label">Empty</label>
+            </kendo-floatinglabel>
+        </div>
+
+        <!-- focus -->
+        <div>
+            <kendo-floatinglabel class="k-state-empty k-floating-label-container k-state-focused">
+                <input class="k-textbox ng-touched k-state-focus" />
+                <label class="k-label">Focus</label>
+            </kendo-floatinglabel>
+        </div>
+        <div>
+            <kendo-floatinglabel class="k-floating-label-container k-state-empty k-state-focused">
+                <input class="k-textbox ng-touched k-state-focus" />
+                <label class="k-label">Focus<span class="k-label-optional">(Optional)</span></label>
+            </kendo-floatinglabel>
+        </div>
+        <div>
+            <kendo-floatinglabel class="k-state-empty k-floating-label-container k-state-focused">
+                <kendo-numerictextbox class="k-widget k-numerictextbox ng-touched">
+                    <span class="k-numeric-wrap k-state-focused">
+                        <input class="k-input k-formatted-value" />
+                        <span class="k-select">
+                            <span class="k-link k-link-increase">
+                                <span class="k-icon k-i-arrow-n"></span>
+                            </span>
+                            <span class="k-link k-link-decrease">
+                                <span class="k-icon k-i-arrow-s"></span>
+                            </span>
+                        </span>
+                    </span>
+                </kendo-numerictextbox>
+                <label class="k-label">Focus</label>
+            </kendo-floatinglabel>
+        </div>
+        <div>
+            <kendo-floatinglabel class="k-floating-label-container k-state-empty k-state-focused">
+                <kendo-maskedtextbox class="k-widget k-maskedtextbox ng-touched k-state-focused">
+                    <input class="k-textbox k-state-focus" />
+                </kendo-maskedtextbox>
+                <label class="k-label">Focus</label>
+            </kendo-floatinglabel>
+        </div>
+
+
+        <span class="k-colspan-all"></span>
+
+
+        <span>Datepicker</span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!-- empty -->
+        <div>
+            <kendo-floatinglabel text="Enter date" class="k-floating-label-container k-state-empty">
+                <kendo-datepicker class="k-widget k-datepicker ng-touched">
+                    <span class="k-picker-wrap">
+                        <kendo-dateinput class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" />
+                            </span>
+                        </kendo-dateinput>
+                        <span class="k-select">
+                            <span class="k-icon k-i-calendar"></span>
+                        </span>
+                    </span>
+                </kendo-datepicker>
+                <label class="k-label">Empty</label>
+            </kendo-floatinglabel>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <!-- focus -->
+        <div>
+            <kendo-floatinglabel text="Enter date" class="k-floating-label-container k-state-empty k-state-focused">
+                <kendo-datepicker class="k-widget k-datepicker ng-touched">
+                    <span class="k-picker-wrap k-state-focused">
+                        <kendo-dateinput class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" />
+                            </span>
+                        </kendo-dateinput>
+                        <span class="k-select">
+                            <span class="k-icon k-i-calendar"></span>
+                        </span>
+                    </span>
+                </kendo-datepicker>
+                <label class="k-label">Focus</label>
+            </kendo-floatinglabel>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+
+        <span class="k-colspan-all"></span>
+
+
+        <span>Autocomplete</span>
+        <span>Combobox</span>
+        <span>Dropdown</span>
+        <span>Multiselect</span>
+
+        <!-- empty -->
+        <div>
+            <kendo-floatinglabel class="k-state-empty k-floating-label-container">
+                <kendo-autocomplete class="k-widget k-autocomplete ng-touched">
+                    <kendo-searchbar class="k-searchbar">
+                        <input class="k-input" />
+                    </kendo-searchbar>
+                </kendo-autocomplete>
+                <label class="k-label">Empty</label>
+            </kendo-floatinglabel>
+        </div>
+        <div>
+            <kendo-floatinglabel class="k-state-empty k-floating-label-container">
+                <kendo-combobox class="k-widget k-combobox ng-touched">
+                    <span class="k-dropdown-wrap">
+                        <kendo-searchbar class="k-searchbar">
+                            <input class="k-input" />
+                        </kendo-searchbar>
+                        <span class="k-select">
+                            <span class="k-icon k-i-arrow-s"> </span>
+                        </span>
+                    </span>
+                </kendo-combobox>
+                <label class="k-label">Empty</label>
+            </kendo-floatinglabel>
+        </div>
+        <div>
+            <kendo-floatinglabel class="k-state-empty k-floating-label-container">
+                <kendo-dropdownlist class="k-widget k-dropdown ng-touched">
+                    <span class="k-dropdown-wrap k-state-focused">
+                        <span class="k-input"> </span>
+                        <span class="k-select">
+                            <span class="k-icon k-i-arrow-s"> </span>
+                        </span>
+                    </span>
+                </kendo-dropdownlist>
+                <label class="k-label">Empty</label>
+            </kendo-floatinglabel>
+        </div>
+        <div>
+            <kendo-floatinglabel class="k-state-empty k-floating-label-container">
+                <kendo-multiselect class="k-widget k-multiselect ng-touched">
+                    <div class="k-multiselect-wrap k-floatwrap">
+                        <kendo-taglist>
+                            <ul class="k-reset"></ul>
+                        </kendo-taglist>
+                        <kendo-searchbar class="k-searchbar">
+                            <input class="k-input" />
+                        </kendo-searchbar>
+                    </div>
+                </kendo-multiselect>
+                <label class="k-label">Empty</label>
+            </kendo-floatinglabel>
+        </div>
+
+        <!-- focus -->
+        <div>
+            <kendo-floatinglabel class="k-state-empty k-floating-label-container k-state-focused">
+                <kendo-autocomplete class="k-widget k-autocomplete k-state-focused ng-touched">
+                    <kendo-searchbar class="k-searchbar">
+                        <input class="k-input" />
+                    </kendo-searchbar>
+                </kendo-autocomplete>
+                <label class="k-label">Focus</label>
+            </kendo-floatinglabel>
+        </div>
+        <div>
+            <kendo-floatinglabel class="k-state-empty k-floating-label-container k-state-focused">
+                <kendo-combobox class="k-widget k-combobox ng-touched">
+                    <span class="k-dropdown-wrap k-state-focused">
+                        <kendo-searchbar class="k-searchbar">
+                            <input class="k-input" />
+                        </kendo-searchbar>
+                        <span class="k-select">
+                            <span class="k-icon k-i-arrow-s"> </span>
+                        </span>
+                    </span>
+                </kendo-combobox>
+                <label class="k-label">Focus</label>
+            </kendo-floatinglabel>
+        </div>
+        <div>
+            <kendo-floatinglabel class="k-state-empty k-floating-label-container k-state-focused">
+                <kendo-dropdownlist class="k-widget k-dropdown ng-touched">
+                    <span class="k-dropdown-wrap k-state-focused">
+                        <span class="k-input"> </span>
+                        <span class="k-select">
+                            <span class="k-icon k-i-arrow-s"> </span>
+                        </span>
+                    </span>
+                </kendo-dropdownlist>
+                <label class="k-label">Focus</label>
+            </kendo-floatinglabel>
+        </div>
+        <div>
+            <kendo-floatinglabel class="k-state-empty k-floating-label-container k-state-focused">
+                <kendo-multiselect class="k-widget k-multiselect ng-touched k-state-focused">
+                    <div class="k-multiselect-wrap k-floatwrap">
+                        <kendo-taglist>
+                            <ul class="k-reset"></ul>
+                        </kendo-taglist>
+                        <kendo-searchbar class="k-searchbar">
+                            <input class="k-input" />
+                        </kendo-searchbar>
+                    </div>
+                </kendo-multiselect>
+                <label class="k-label">Focus</label>
+            </kendo-floatinglabel>
+        </div>
+
+    </div>
+
+</body>
+</html>

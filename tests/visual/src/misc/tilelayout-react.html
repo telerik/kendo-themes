@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Tile Layout React</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+</head>
+<body>
+
+    <div id="test-area">
+        <div class="k-tilelayout k-grid-flow-col" style="grid-template-columns: repeat(3, minmax(0px, 1fr)); grid-auto-rows: minmax(0px, 200px); gap: 10px; padding: 10px;">
+            <div style="grid-area: 3 / 2 / span 1 / span 1; outline: none; order: 0;">
+               <div class="k-tilelayout-item k-card k-cursor-grab" style="height: 100%;">
+                  <div class="k-tilelayout-item-header k-card-header">
+                     <h5 class="k-card-title">Tile 1</h5>
+                  </div>
+                  <div class="k-tilelayout-item-body k-card-body">
+                     <p>Resizable tile.</p>
+                     <p>Position: row: 3, col: 2, colSpan: 1, rowSpan: 1</p>
+                  </div>
+                  <div class="k-resize-handle k-cursor-ew-resize" style="bottom: 0px; right: 0px; top: 0px; width: 9px;"></div>
+                  <div class="k-resize-handle k-cursor-ns-resize" style="bottom: 0px; right: 0px; left: 0px; height: 9px;"></div>
+                  <div class="k-resize-handle k-cursor-nwse-resize" style="bottom: 0px; right: 0px; width: 9px; height: 9px;"></div>
+               </div>
+            </div>
+            <div style="grid-area: 1 / 2 / span 1 / span 1; outline: none; order: 1;">
+               <div class="k-tilelayout-item k-card k-cursor-grab" style="height: 100%;">
+                  <div class="k-tilelayout-item-header k-card-header">
+                     <h5 class="k-card-title">Tile 2</h5>
+                  </div>
+                  <div class="k-tilelayout-item-body k-card-body">
+                     <p>Non-resizable.</p>
+                     <p>Position: row: 1, col: 2, colSpan: 1, rowSpan: 1</p>
+                  </div>
+               </div>
+            </div>
+            <div style="grid-area: 1 / 3 / span 2 / span 1; outline: none; order: 2;">
+               <div class="k-tilelayout-item k-card k-cursor-grab" style="height: 100%;">
+                  <div class="k-tilelayout-item-header k-card-header">
+                     <h5 class="k-card-title">Tile 3</h5>
+                  </div>
+                  <div class="k-tilelayout-item-body k-card-body">
+                     <p>Vertically resizable only tile.</p>
+                     <p>Position: row: 1, col: 3, colSpan: 1, rowSpan: 2</p>
+                  </div>
+                  <div class="k-resize-handle k-cursor-ns-resize" style="bottom: 0px; right: 0px; left: 0px; height: 9px;"></div>
+               </div>
+            </div>
+            <div style="grid-area: 3 / 1 / span 1 / span 3; outline: none; order: 3;">
+               <div class="k-tilelayout-item k-card k-cursor-grab" style="height: 100%;">
+                  <div class="k-tilelayout-item-header k-card-header">
+                     <h5 class="k-card-title">Tile 4</h5>
+                  </div>
+                  <div class="k-tilelayout-item-body k-card-body">
+                     <p>Horizontally resizable only tile.</p>
+                     <p>Position: row: 3, col: 1, colSpan: 3, rowSpan: 1</p>
+                     <p>Goes over Tile 1</p>
+                  </div>
+                  <div class="k-resize-handle k-cursor-ew-resize" style="bottom: 0px; right: 0px; top: 0px; width: 9px;"></div>
+               </div>
+            </div>
+         </div>
+    </div>
+</body>
+</html>

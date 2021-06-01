@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Grouping Angular</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: start;
+        }
+
+        .title {
+            display: inline-block;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <section>
+            <span class="title">Angular Popup list with grouping</span>
+            <div class="k-popup k-list-container k-reset" >
+                <kendo-list>
+                    <div class="k-outer-group-header k-first"> <strong>STICKY GROUP</strong> </div>
+                    <div class="k-list-scroller" style="max-height: 350px;">
+                        <ul class="k-list k-reset" id="7cd3c284-09ac-46bc-a247-9cb719c25e80">
+                            <li class="k-item" index="3"> Item </li>
+                            <li class="k-item k-state-focused"> Focused item </li>
+                            <li class="k-item k-state-hover"> Hovered item </li>
+                            <li class="k-item k-state-selected"> Selected item </li>
+                            <li class="k-item k-state-hover k-state-selected"> Hovered Selected item </li>
+                            <li class="k-item k-state-selected k-state-focused"> Focused Selected item </li>
+                            <li class="k-item k-state-disabled"> Disabled item </li>
+                            <li  class="k-outer-group-header"> <strong> SECOND GROUP </strong> </li>
+                            <li class="k-item" index="3"> Item </li>
+                            <li class="k-item k-state-disabled k-state-selected"> Disabled Selected item </li>
+                        </ul>
+                    </div>
+                </kendo-list>
+            </div>
+        </section>
+
+        <section class="k-rtl">
+            <span class="title">Angular Popup list with grouping RTL</span>
+            <div class="k-popup k-list-container k-reset" >
+                <kendo-list>
+                    <div class="k-outer-group-header k-first"> <strong>STICKY GROUP</strong> </div>
+                    <div class="k-list-scroller" style="max-height: 350px;">
+                        <ul class="k-list k-reset" id="7cd3c284-09ac-46bc-a247-9cb719c25e80">
+                            <li class="k-item" index="3"> Item </li>
+                            <li class="k-item k-state-focused"> Focused item </li>
+                            <li class="k-item k-state-hover"> Hovered item </li>
+                            <li class="k-item k-state-selected"> Selected item </li>
+                            <li class="k-item k-state-hover k-state-selected"> Hovered Selected item </li>
+                            <li class="k-item k-state-selected k-state-focused"> Focused Selected item </li>
+                            <li class="k-item k-state-disabled"> Disabled item </li>
+                            <li  class="k-outer-group-header"> <strong> SECOND GROUP </strong> </li>
+                            <li class="k-item" index="3"> Item </li>
+                            <li class="k-item k-state-disabled k-state-selected"> Disabled Selected item </li>
+                        </ul>
+                    </div>
+                </kendo-list>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

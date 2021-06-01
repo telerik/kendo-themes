@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Scheduler jQuery Agenda</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+
+        th {
+            text-align: left;
+        }
+        .k-scheduler-mark {
+            background: gold;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <div class="k-widget k-scheduler">
+            <div class="k-scheduler-toolbar k-toolbar">
+                <span class="k-button-group k-scheduler-navigation">
+                    <button type="button" class="k-button"><span class="k-button-text">Today</span></button>
+                    <button type="button" class="k-button k-button-icon k-icon-button"><span class="k-icon k-i-arrow-60-left"></span></button>
+                    <button type="button" class="k-button k-button-icon k-icon-button"><span class="k-icon k-i-arrow-60-right"></span></button>
+                </span>
+                <a href="#" class="k-nav-current">
+                    <span class="k-icon k-i-calendar"></span>
+                    <span class="k-sm-date-format">6/10/2013 - 6/14/2013</span>
+                    <span class="k-lg-date-format">Monday, June 10, 2013 - Friday, June 14, 2013</span>
+                </a>
+                <span class="k-spacer k-toolbar-spacer"></span>
+                <span class="k-scheduler-views-wrapper">
+                    <select class="k-dropdown k-views-dropdown">
+                        <option>Agenda</option>
+                    </select>
+                    <span class="k-button-group k-scheduler-views">
+                        <button type="button" class="k-button k-state-selected"><span class="k-button-text">Agenda</span></button>
+                    </span>
+                </span>
+            </div>
+            <table class="k-scheduler-layout k-scheduler-agendaview k-scheduler-agenda k-scrollbar-h">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="k-scheduler-header">
+                                <div class="k-scheduler-header-wrap">
+                                    <table class="k-scheduler-table">
+                                        <tbody>
+                                            <tr>
+                                                <th class="k-scheduler-datecolumn">Date</th>
+                                                <th class="k-scheduler-timecolumn">Time</th>
+                                                <th>Event</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="k-scheduler-content">
+                                <table class="k-scheduler-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="k-scheduler-datecolumn k-first"><strong class="k-scheduler-agendaday">13</strong><em class="k-scheduler-agendaweek">Thursday</em><span class="k-scheduler-agendadate">June, 2013</span></td>
+                                            <td class="k-scheduler-timecolumn"><div>7:00 PM-9:00 PM</div></td>
+                                            <td>
+                                                <div class="k-task">
+                                                    <span class="k-scheduler-mark"></span>
+                                                    <span class="k-scheduler-task-text">Normal</span>
+                                                    <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-state-hover">
+                                            <td class="k-scheduler-datecolumn k-first"><strong class="k-scheduler-agendaday">14</strong><em class="k-scheduler-agendaweek">Friday</em><span class="k-scheduler-agendadate">June, 2013</span></td>
+                                            <td class="k-scheduler-timecolumn"><div>all day</div></td>
+                                            <td>
+                                                <div class="k-task">
+                                                    <span class="k-scheduler-mark"></span>
+                                                    <span class="k-scheduler-task-text">Hover</span>
+                                                    <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-state-selected">
+                                            <td class="k-scheduler-datecolumn k-first"><strong class="k-scheduler-agendaday">17</strong><em class="k-scheduler-agendaweek">Monday</em><span class="k-scheduler-agendadate">June, 2013</span></td>
+                                            <td class="k-scheduler-timecolumn"><div>6:30 PM-8:00 PM</div></td>
+                                            <td>
+                                                <div class="k-task">
+                                                    <span class="k-scheduler-mark"></span>
+                                                    <span class="k-scheduler-task-text">Selected</span>
+                                                    <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="k-scheduler-datecolumn k-first"><strong class="k-scheduler-agendaday">18</strong><em class="k-scheduler-agendaweek">Tuesday</em><span class="k-scheduler-agendadate">June, 2013</span></td>
+                                            <td class="k-scheduler-timecolumn"><div>7:00 PM-9:00 PM</div></td>
+                                            <td>
+                                                <div class="k-task">
+                                                    <span class="k-scheduler-mark"></span>
+                                                    <span class="k-icon k-i-reload"></span>
+                                                    <span class="k-scheduler-task-text">Recurring</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="k-scheduler-footer k-toolbar">
+                <button type="button" class="k-button k-scheduler-fullday"><span class="k-icon k-i-clock"></span><span class="k-button-text">Show business hours</span></button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1391 @@
+
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Scheduler React Month View</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 1400px;
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area">
+        <div class="k-widget k-scheduler k-scheduler-flex k-floatwrap" style="height: 900px;">
+            <div class="k-scheduler-toolbar k-toolbar">
+                <span class="k-button-group k-scheduler-navigation">
+                    <button type="button" class="k-button"><span class="k-button-text">Today</span></button>
+                    <button type="button" class="k-button k-button-icon k-icon-button"><span class="k-icon k-i-arrow-60-left"></span></button>
+                    <button type="button" class="k-button k-button-icon k-icon-button"><span class="k-icon k-i-arrow-60-right"></span></button>
+                </span>
+                <a href="#" class="k-nav-current">
+                    <span class="k-icon k-i-calendar"></span>
+                    <span class="k-sm-date-format">June 2020</span>
+                    <span class="k-lg-date-format">June 2020</span>
+                </a>
+                <span class="k-spacer k-toolbar-spacer"></span>
+                <span class="k-scheduler-views-wrapper">
+                    <select class="k-dropdown k-views-dropdown">
+                        <option>Month</option>
+                    </select>
+                    <span class="k-button-group k-scheduler-views">
+                        <button type="button" class="k-button"><span class="k-button-text">Day</span></button>
+                        <button type="button" class="k-button"><span class="k-button-text">Week</span></button>
+                        <button type="button" class="k-button k-state-selected"><span class="k-button-text">Month</span></button>
+                        <button type="button" class="k-button"><span class="k-button-text">Timeline</span></button>
+                        <button type="button" class="k-button"><span class="k-button-text">Agenda</span></button>
+                        <button type="button" class="k-button"><span class="k-button-text">Timeline Multiday</span></button>
+                    </span>
+                </span>
+            </div>
+            <div class="k-scheduler-layout k-scheduler-layout-flex k-scheduler-monthview">
+                <div class="k-scheduler-head">
+                    <div class="k-scheduler-group k-group-horizontal">
+                        <div class="k-scheduler-row">
+                            <div class="k-scheduler-cell k-heading-cell">Meeting Room 101</div>
+                            <div class="k-scheduler-cell k-heading-cell">Meeting Room 201</div>
+                        </div>
+                        <div class="k-scheduler-row">
+                            <div class="k-scheduler-cell k-heading-cell">Peter</div>
+                            <div class="k-scheduler-cell k-heading-cell">Alex</div>
+                            <div class="k-scheduler-cell k-heading-cell">Peter</div>
+                            <div class="k-scheduler-cell k-heading-cell">Alex</div>
+                        </div>
+                        <div class="k-scheduler-row">
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Sunday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Monday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Tuesday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Wednesday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Thursday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Friday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Saturday</span></div>
+                                </div>
+                            </div>
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Sunday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Monday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Tuesday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Wednesday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Thursday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Friday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Saturday</span></div>
+                                </div>
+                            </div>
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Sunday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Monday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Tuesday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Wednesday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Thursday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Friday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Saturday</span></div>
+                                </div>
+                            </div>
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Sunday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Monday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Tuesday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Wednesday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Thursday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Friday</span></div>
+                                    <div class="k-scheduler-cell k-heading-cell"><span class="k-link k-nav-day">Saturday</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-scheduler-body">
+                    <div class="k-scheduler-group k-group-horizontal">
+                        <div class="k-scheduler-row">
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">31</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">01</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">02</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">03</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">04</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">05</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">06</span></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">07</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">08</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">09</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">10</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">11</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">12</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">13</span></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">14</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">15</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">16</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">17</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">18</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">19</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">20</span></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">21</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">22</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">23</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">24</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">25</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">26</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">27</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">28</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">29</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">30</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">01</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">02</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">03</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">04</span></div>
+                                </div>
+                            </div>
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">31</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">01</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">02</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">03</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">04</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">05</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">06</span></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">07</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">08</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">09</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">10</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">11</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">12</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">13</span></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">14</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">15</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">16</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">17</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">18</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">19</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">20</span></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">21</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">22</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">23</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">24</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">25</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">26</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">27</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">28</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">29</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">30</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">01</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">02</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">03</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">04</span></div>
+                                </div>
+                            </div>
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">31</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">01</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">02</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">03</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">04</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">05</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">06</span></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">07</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">08</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">09</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">10</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">11</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">12</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">13</span></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">14</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">15</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">16</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">17</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">18</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">19</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">20</span></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">21</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">22</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">23</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">24</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">25</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">26</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">27</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">28</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">29</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">30</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">01</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">02</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">03</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">04</span></div>
+                                </div>
+                            </div>
+                            <div class="k-scheduler-cell k-group-cell">
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">31</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">01</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">02</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">03</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">04</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">05</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">06</span></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">07</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">08</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">09</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">10</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">11</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">12</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">13</span></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">14</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">15</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">16</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">17</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">18</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">19</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">20</span></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">21</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">22</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">23</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">24</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">25</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">26</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">27</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                </div>
+                                <div class="k-scheduler-row">
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">28</span><button class="k-more-events k-button"><span class="k-icon k-i-more-horizontal"></span></button></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">29</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">30</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">01</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">02</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">03</span></div>
+                                    <div class="k-scheduler-cell k-slot-cell"><span class="k-link k-nav-day">04</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 0px; left: 180px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 0px; left: 599px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 0px; left: 1019px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 0px; left: 1438px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 0px; left: 240px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:00 AM - 12:30 PM): Breakfast at Starbucks</div>
+                            <div class="k-event-template">Breakfast at Starbucks</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 0px; left: 659px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:00 AM - 12:30 PM): Breakfast at Starbucks</div>
+                            <div class="k-event-template">Breakfast at Starbucks</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 0px; left: 1079px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:00 AM - 12:30 PM): Breakfast at Starbucks</div>
+                            <div class="k-event-template">Breakfast at Starbucks</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 0px; left: 1498px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:00 AM - 12:30 PM): Breakfast at Starbucks</div>
+                            <div class="k-event-template">Breakfast at Starbucks</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 26px; left: 240px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 PM - 3:00 PM): Software updates</div>
+                            <div class="k-event-template">Software updates</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 26px; left: 659px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 PM - 3:00 PM): Software updates</div>
+                            <div class="k-event-template">Software updates</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 26px; left: 1079px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 PM - 3:00 PM): Software updates</div>
+                            <div class="k-event-template">Software updates</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 26px; left: 1498px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 PM - 3:00 PM): Software updates</div>
+                            <div class="k-event-template">Software updates</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 0px; left: 300px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(1:00 PM - 3:00 PM): HR seminar preparation</div>
+                            <div class="k-event-template">HR seminar preparation</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 0px; left: 719px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(1:00 PM - 3:00 PM): HR seminar preparation</div>
+                            <div class="k-event-template">HR seminar preparation</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 0px; left: 1139px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(1:00 PM - 3:00 PM): HR seminar preparation</div>
+                            <div class="k-event-template">HR seminar preparation</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 0px; left: 1558px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(1:00 PM - 3:00 PM): HR seminar preparation</div>
+                            <div class="k-event-template">HR seminar preparation</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 97px; left: 0px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 AM - 11:30 AM): Website upload</div>
+                            <div class="k-event-template">Website upload</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 97px; left: 420px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 AM - 11:30 AM): Website upload</div>
+                            <div class="k-event-template">Website upload</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 97px; left: 839px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 AM - 11:30 AM): Website upload</div>
+                            <div class="k-event-template">Website upload</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 97px; left: 1259px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 AM - 11:30 AM): Website upload</div>
+                            <div class="k-event-template">Website upload</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 97px; left: 60px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 97px; left: 479px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 97px; left: 899px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 97px; left: 1318px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 97px; left: 120px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 97px; left: 539px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 97px; left: 959px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 97px; left: 1378px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 97px; left: 180px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 AM - 3:00 AM): Bowling tournament</div>
+                            <div class="k-event-template">Bowling tournament</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 97px; left: 599px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 AM - 3:00 AM): Bowling tournament</div>
+                            <div class="k-event-template">Bowling tournament</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 97px; left: 1019px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 AM - 3:00 AM): Bowling tournament</div>
+                            <div class="k-event-template">Bowling tournament</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 97px; left: 1438px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 AM - 3:00 AM): Bowling tournament</div>
+                            <div class="k-event-template">Bowling tournament</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 123px; left: 180px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 AM - 11:00 AM): Take the dog to the vet</div>
+                            <div class="k-event-template">Take the dog to the vet</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 123px; left: 599px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 AM - 11:00 AM): Take the dog to the vet</div>
+                            <div class="k-event-template">Take the dog to the vet</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 123px; left: 1019px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 AM - 11:00 AM): Take the dog to the vet</div>
+                            <div class="k-event-template">Take the dog to the vet</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 123px; left: 1438px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 AM - 11:00 AM): Take the dog to the vet</div>
+                            <div class="k-event-template">Take the dog to the vet</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 97px; left: 240px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(2:30 PM - 4:00 PM): Call Charlie about the project</div>
+                            <div class="k-event-template">Call Charlie about the project</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 97px; left: 659px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(2:30 PM - 4:00 PM): Call Charlie about the project</div>
+                            <div class="k-event-template">Call Charlie about the project</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 97px; left: 1079px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(2:30 PM - 4:00 PM): Call Charlie about the project</div>
+                            <div class="k-event-template">Call Charlie about the project</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 97px; left: 1498px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(2:30 PM - 4:00 PM): Call Charlie about the project</div>
+                            <div class="k-event-template">Call Charlie about the project</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 123px; left: 240px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 123px; left: 659px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 123px; left: 1079px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 123px; left: 1498px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 97px; left: 300px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(2:00 PM - 3:00 PM): Meeting with Alex</div>
+                            <div class="k-event-template">Meeting with Alex</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 97px; left: 719px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(2:00 PM - 3:00 PM): Meeting with Alex</div>
+                            <div class="k-event-template">Meeting with Alex</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 97px; left: 1139px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(2:00 PM - 3:00 PM): Meeting with Alex</div>
+                            <div class="k-event-template">Meeting with Alex</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 97px; left: 1558px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(2:00 PM - 3:00 PM): Meeting with Alex</div>
+                            <div class="k-event-template">Meeting with Alex</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 194px; left: 60px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 194px; left: 479px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 194px; left: 899px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 194px; left: 1318px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 194px; left: 120px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 194px; left: 539px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 194px; left: 959px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 194px; left: 1378px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 194px; left: 180px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(6:00 PM - 7:00 PM): Helpdesk weekly meeting</div>
+                            <div class="k-event-template">Helpdesk weekly meeting</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 194px; left: 599px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(6:00 PM - 7:00 PM): Helpdesk weekly meeting</div>
+                            <div class="k-event-template">Helpdesk weekly meeting</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 194px; left: 1019px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(6:00 PM - 7:00 PM): Helpdesk weekly meeting</div>
+                            <div class="k-event-template">Helpdesk weekly meeting</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 194px; left: 1438px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(6:00 PM - 7:00 PM): Helpdesk weekly meeting</div>
+                            <div class="k-event-template">Helpdesk weekly meeting</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 220px; left: 180px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 220px; left: 599px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 220px; left: 1019px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 220px; left: 1438px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 194px; left: 240px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 194px; left: 659px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 194px; left: 1079px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 194px; left: 1498px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 291px; left: 60px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 291px; left: 479px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 291px; left: 899px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 291px; left: 1318px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 291px; left: 120px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 291px; left: 539px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 291px; left: 959px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 291px; left: 1378px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 291px; left: 180px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:30 AM - 1:00 PM): Car Service</div>
+                            <div class="k-event-template">Car Service</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 291px; left: 599px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:30 AM - 1:00 PM): Car Service</div>
+                            <div class="k-event-template">Car Service</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 291px; left: 1019px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:30 AM - 1:00 PM): Car Service</div>
+                            <div class="k-event-template">Car Service</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 291px; left: 1438px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:30 AM - 1:00 PM): Car Service</div>
+                            <div class="k-event-template">Car Service</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 317px; left: 180px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:45 PM - 2:30 PM): Breakfast with Tom</div>
+                            <div class="k-event-template">Breakfast with Tom</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 317px; left: 599px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:45 PM - 2:30 PM): Breakfast with Tom</div>
+                            <div class="k-event-template">Breakfast with Tom</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 317px; left: 1019px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:45 PM - 2:30 PM): Breakfast with Tom</div>
+                            <div class="k-event-template">Breakfast with Tom</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 317px; left: 1438px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:45 PM - 2:30 PM): Breakfast with Tom</div>
+                            <div class="k-event-template">Breakfast with Tom</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 291px; left: 240px; width: 119px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template">Attending HR Conference</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 291px; left: 659px; width: 119px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template">Attending HR Conference</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 291px; left: 1079px; width: 119px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template">Attending HR Conference</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 291px; left: 1498px; width: 119px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template">Attending HR Conference</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 317px; left: 240px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 PM - 1:00 PM): Business breakfast with Caroline</div>
+                            <div class="k-event-template">Business breakfast with Caroline</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 317px; left: 659px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 PM - 1:00 PM): Business breakfast with Caroline</div>
+                            <div class="k-event-template">Business breakfast with Caroline</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 317px; left: 1079px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 PM - 1:00 PM): Business breakfast with Caroline</div>
+                            <div class="k-event-template">Business breakfast with Caroline</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 317px; left: 1498px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 PM - 1:00 PM): Business breakfast with Caroline</div>
+                            <div class="k-event-template">Business breakfast with Caroline</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 317px; left: 300px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 PM - 1:00 PM): Banking</div>
+                            <div class="k-event-template">Banking</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 317px; left: 719px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 PM - 1:00 PM): Banking</div>
+                            <div class="k-event-template">Banking</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 317px; left: 1139px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 PM - 1:00 PM): Banking</div>
+                            <div class="k-event-template">Banking</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 317px; left: 1558px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(12:00 PM - 1:00 PM): Banking</div>
+                            <div class="k-event-template">Banking</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 291px; left: 360px; width: 58px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:30 AM - 11:30 AM): Website upload</div>
+                            <div class="k-event-template">Website upload</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 291px; left: 779px; width: 58px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:30 AM - 11:30 AM): Website upload</div>
+                            <div class="k-event-template">Website upload</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 291px; left: 1199px; width: 58px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:30 AM - 11:30 AM): Website upload</div>
+                            <div class="k-event-template">Website upload</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 291px; left: 1618px; width: 58px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:30 AM - 11:30 AM): Website upload</div>
+                            <div class="k-event-template">Website upload</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 317px; left: 360px; width: 58px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:30 AM - 12:30 PM): Breakfast with CFO and COO</div>
+                            <div class="k-event-template">Breakfast with CFO and COO</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 317px; left: 779px; width: 58px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:30 AM - 12:30 PM): Breakfast with CFO and COO</div>
+                            <div class="k-event-template">Breakfast with CFO and COO</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 317px; left: 1199px; width: 58px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:30 AM - 12:30 PM): Breakfast with CFO and COO</div>
+                            <div class="k-event-template">Breakfast with CFO and COO</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 317px; left: 1618px; width: 58px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:30 AM - 12:30 PM): Breakfast with CFO and COO</div>
+                            <div class="k-event-template">Breakfast with CFO and COO</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 388px; left: 0px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:00 AM - 12:00 PM): Dentist</div>
+                            <div class="k-event-template">Dentist</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 388px; left: 420px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:00 AM - 12:00 PM): Dentist</div>
+                            <div class="k-event-template">Dentist</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 388px; left: 839px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:00 AM - 12:00 PM): Dentist</div>
+                            <div class="k-event-template">Dentist</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 388px; left: 1259px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(11:00 AM - 12:00 PM): Dentist</div>
+                            <div class="k-event-template">Dentist</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 414px; left: 0px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Job Interview - Laura Bailey">
+                            <div class="k-event-template k-event-time ">(12:30 PM - 1:30 PM): Job Interview - Laura Bailey</div>
+                            <div class="k-event-template">Job Interview - Laura Bailey</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 414px; left: 420px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Job Interview - Laura Bailey">
+                            <div class="k-event-template k-event-time ">(12:30 PM - 1:30 PM): Job Interview - Laura Bailey</div>
+                            <div class="k-event-template">Job Interview - Laura Bailey</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 414px; left: 839px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Job Interview - Laura Bailey">
+                            <div class="k-event-template k-event-time ">(12:30 PM - 1:30 PM): Job Interview - Laura Bailey</div>
+                            <div class="k-event-template">Job Interview - Laura Bailey</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 414px; left: 1259px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Job Interview - Laura Bailey">
+                            <div class="k-event-template k-event-time ">(12:30 PM - 1:30 PM): Job Interview - Laura Bailey</div>
+                            <div class="k-event-template">Job Interview - Laura Bailey</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 388px; left: 60px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 388px; left: 479px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 388px; left: 899px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 388px; left: 1318px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 414px; left: 60px; width: 119px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Bob's Birthday Party">
+                            <div class="k-event-template k-event-time ">(11:00 PM - 2:30 AM): Bob's Birthday Party</div>
+                            <div class="k-event-template">Bob's Birthday Party</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 414px; left: 479px; width: 119px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Bob's Birthday Party">
+                            <div class="k-event-template k-event-time ">(11:00 PM - 2:30 AM): Bob's Birthday Party</div>
+                            <div class="k-event-template">Bob's Birthday Party</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 414px; left: 899px; width: 119px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Bob's Birthday Party">
+                            <div class="k-event-template k-event-time ">(11:00 PM - 2:30 AM): Bob's Birthday Party</div>
+                            <div class="k-event-template">Bob's Birthday Party</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 414px; left: 1318px; width: 119px; height: 25px;">
+                        <span class="k-event-actions"></span>
+                        <div title="Bob's Birthday Party">
+                            <div class="k-event-template k-event-time ">(11:00 PM - 2:30 AM): Bob's Birthday Party</div>
+                            <div class="k-event-template">Bob's Birthday Party</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 388px; left: 120px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 388px; left: 539px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 388px; left: 959px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 388px; left: 1378px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 388px; left: 180px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(6:00 PM - 7:00 PM): Helpdesk weekly meeting</div>
+                            <div class="k-event-template">Helpdesk weekly meeting</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 388px; left: 599px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(6:00 PM - 7:00 PM): Helpdesk weekly meeting</div>
+                            <div class="k-event-template">Helpdesk weekly meeting</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 388px; left: 1019px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(6:00 PM - 7:00 PM): Helpdesk weekly meeting</div>
+                            <div class="k-event-template">Helpdesk weekly meeting</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 388px; left: 1438px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(6:00 PM - 7:00 PM): Helpdesk weekly meeting</div>
+                            <div class="k-event-template">Helpdesk weekly meeting</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 414px; left: 180px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 414px; left: 599px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 414px; left: 1019px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 414px; left: 1438px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(9:30 PM - 11:00 PM): Dance Practice</div>
+                            <div class="k-event-template">Dance Practice</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 388px; left: 240px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: red; background-color: red; transform: translateY(30px); top: 388px; left: 659px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 388px; left: 1079px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                    <div class="k-event" style="cursor: pointer; user-select: none; border-color: green; background-color: green; transform: translateY(30px); top: 388px; left: 1498px; width: 59px; height: 25px;">
+                        <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                        <div>
+                            <div class="k-event-template k-event-time ">(10:00 PM - 12:00 AM): HR Lecture</div>
+                            <div class="k-event-template">HR Lecture</div>
+                        </div>
+                        <span class="k-event-actions"><a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a></span><span class="k-resize-handle k-resize-w"></span><span class="k-resize-handle k-resize-e"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Drawer overlay</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            height: 600px;
+            position: relative;
+        }
+        #test-area .k-drawer,
+        #test-area .k-overlay {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area">
+
+        <div class="k-drawer-container k-drawer-left k-drawer-overlay k-drawer-mini">
+            <div class="k-widget k-drawer">
+                <div class="k-drawer-wrapper">
+                    <div class="k-drawer-items">
+                        <ul>
+                            <li class="k-drawer-item">
+                                <span class="k-icon k-i-star-outline"></span>
+                                <span class="k-item-text">Item</span>
+                            </li>
+                            <li class="k-drawer-item k-drawer-separator"></li>
+                            <li class="k-drawer-item k-state-hover">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                <span class="k-item-text">Hovered Item</span>
+                            </li>
+                            <li class="k-drawer-item k-state-selected">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                <span class="k-item-text">Selected Item</span>
+                            </li>
+                            <li class="k-drawer-item k-state-selected k-state-hover">
+                                <span class="k-icon k-i-star-outline"></span>
+                                <span class="k-item-text">Selected and hovered item</span>
+                            </li>
+                            <li class="k-drawer-item k-state-focused">
+                                <span class="k-icon k-i-star-outline"></span>
+                                <span class="k-item-text">Focused item</span>
+                            </li>
+
+                             <!-- React and Angular rendering -->
+                             <li class="k-drawer-item">
+                                <span class="k-icon k-i-star-outline"></span>
+                            </li>
+                            <li class="k-drawer-item k-drawer-separator"></li>
+                            <li class="k-drawer-item k-state-hover">
+                                <span class="k-icon k-i-star-outline"></span>
+                            </li>
+                            <li class="k-drawer-item k-state-selected">
+                                <span class="k-icon k-i-star-outline"></span>
+                            </li>
+                            <li class="k-drawer-item k-state-selected k-state-hover">
+                                <span class="k-icon k-i-star-outline"></span>
+                            </li>
+                            <li class="k-drawer-item k-state-focused">
+                                <span class="k-icon k-i-star-outline"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="k-overlay" style="display: block;"></div>
+        </div>
+
+        <div class="k-drawer-container k-drawer-right k-drawer-overlay k-drawer-mini">
+            <div class="k-widget k-drawer">
+                <div class="k-drawer-wrapper">
+                    <div class="k-drawer-items">
+                        <ul>
+                            <li class="k-drawer-item">
+                                <span class="k-icon k-i-star-outline"></span>
+                                <span class="k-item-text">Item</span>
+                            </li>
+                            <li class="k-drawer-item k-drawer-separator"></li>
+                            <li class="k-drawer-item k-state-hover">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                <span class="k-item-text">Hovered Item</span>
+                            </li>
+                            <li class="k-drawer-item k-state-selected">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                <span class="k-item-text">Selected Item</span>
+                            </li>
+                            <li class="k-drawer-item k-state-selected k-state-hover">
+                                <span class="k-icon k-i-star-outline"></span>
+                                <span class="k-item-text">Selected and hovered item</span>
+                            </li>
+                            <li class="k-drawer-item k-state-focused">
+                                <span class="k-icon k-i-star-outline"></span>
+                                <span class="k-item-text">Focused item</span>
+                            </li>
+
+                             <!-- React and Angular rendering -->
+                             <li class="k-drawer-item">
+                                <span class="k-icon k-i-star-outline"></span>
+                            </li>
+                            <li class="k-drawer-item k-drawer-separator"></li>
+                            <li class="k-drawer-item k-state-hover">
+                                <span class="k-icon k-i-star-outline"></span>
+                            </li>
+                            <li class="k-drawer-item k-state-selected">
+                                <span class="k-icon k-i-star-outline"></span>
+                            </li>
+                            <li class="k-drawer-item k-state-selected k-state-hover">
+                                <span class="k-icon k-i-star-outline"></span>
+                            </li>
+                            <li class="k-drawer-item k-state-focused">
+                                <span class="k-icon k-i-star-outline"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="k-overlay" style="display: none;"><!-- Hide on purpuse --></div>
+        </div>
+
+        <h2 style="text-align: center;">Drawer overlay mini</h2>
+        <div class="k-drawer-content" style="padding: 0 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.olor sit amet consectetur
+            adipisicing elit. Error accusantium odit, optio nulla maiores quo neque fugit debitis dignissimos incidunt
+            maxime? Eum voluptatem blanditiis voluptatum praesentium dolorem, dolore placeat debitis quod delectus laborum
+            assumenda cupiditate.
+        </div>
+    </div>
+
+</body>
+</html>

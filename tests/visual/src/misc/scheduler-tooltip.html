@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="k-typography">
+
+<head>
+    <title>Scheduler Tooltip</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /* rest position and visiblity */
+        .k-animation-container,
+        .k-popup,
+        .k-tooltip {
+            position: relative;
+            overflow: visible;
+        }
+
+        /* reset display and align */
+        .k-animation-container {
+            display: inline-flex;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="test-area" class="grid">
+
+        <span>Events List</span>
+        <span>No Data</span>
+
+        <section>
+            <div class="k-animation-container" style="width: 220px;">
+                <div class="k-widget k-tooltip k-scheduler-tooltip" style="width: 220px;">
+                    <div class="k-tooltip-content">
+                        <div class="k-tooltip-title k-text-center">
+                            <div class="k-month">Jan</div>
+                            <div class="k-link k-day k-text-primary">02</div>
+                        </div>
+                        <div class="k-tooltip-events-container">
+                            <div class="k-tooltip-events">
+                                <div class="k-tooltip-event k-event" style="background-color: #51a0ed; border-color: #51a0ed;">
+                                    <div class="k-event-title k-text-ellipsis">Dance Practice</div>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-event-time">6:30 PM</span>
+                                </div>
+                                <div class="k-tooltip-event k-event" style="background-color: #56ca85; border-color: #56ca85;">
+                                    <div class="k-event-title k-text-ellipsis">Helpdesk weekly meeting</div>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-event-time">12:30 PM</span>
+                                </div>
+                                <div class="k-tooltip-event k-event" style="background-color: #51a0ed; border-color: #51a0ed;">
+                                    <div class="k-event-title k-text-ellipsis">Regular Appointment</div>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-event-time">13:30 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="k-callout k-callout-w" style="top: 45px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="k-animation-container" style="width: 220px;">
+                <div class="k-widget k-tooltip k-scheduler-tooltip" style="width: 220px;">
+                    <div class="k-tooltip-content">
+                        <div class="k-tooltip-title k-text-center">
+                            <div class="k-month">Jan</div>
+                            <div class="k-link k-day k-text-primary">29</div>
+                        </div>
+                        <div class="k-no-data k-text-center">No events on this date.</div>
+                    </div>
+                    <div class="k-callout k-callout-w" style="top: 45px;"></div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

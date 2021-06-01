@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Upload</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area" >
+        <section>
+            <!-- File restrictions set with group icons-->
+            <div class="k-widget k-upload k-upload-async">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button">
+                        <input style="display: none;" /><input />
+                        <span>Select files...</span>
+                    </div>
+                    <em class="k-dropzone-hint k-hidden">Drop files here to upload</em><strong class="k-upload-status k-upload-status-total"><span class="k-icon k-i-upload"></span>Uploading...</strong>
+                </div>
+
+                <ul class="k-upload-files k-reset">
+                    <li class="k-file k-file-invalid">
+                        <div class="k-progressbar k-hidden"><span class="k-progress" style="width: 0%;"></span></div>
+                        <span class="k-file-invalid-group-wrapper"><span class="k-file-group k-icon k-i-file-image"></span><span class="k-file-state"></span></span>
+                        <span class="k-file-name-size-wrapper">
+                            <span class="k-file-name k-file-name-invalid">Video_File_with_Very_Very_Very_Very_Long_Name.jpg</span>
+                            <span class="k-file-validation-message k-text-error">File type not allowed.</span>
+                        </span>
+                        <strong class="k-upload-status">
+                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x" title="Remove"></span></button>
+                        </strong>
+                    </li>
+                    <li class="k-file k-file-progress">
+                        <div class="k-progressbar"><span class="k-progress" style="width: 60%;"></span></div>
+                        <span class="k-file-group-wrapper"><span class="k-file-group k-icon k-i-file-pdf"></span><span class="k-file-state">uploaded</span></span>
+                        <span class="k-file-name-size-wrapper">
+                            <span class="k-file-name">Document.txt</span>
+                            <span class="k-file-size">225.68 KB</span>
+                        </span>
+                        <strong class="k-upload-status">
+                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                        </strong>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <!-- Successfully uploaded files with group type icon; upload button hovered -->
+            <div class="k-widget k-upload k-upload-async">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button"><input /><span>Select files...</span></div>
+                    <em class="k-dropzone-hint k-hidden">Drop files here to upload</em><strong class="k-upload-status k-upload-status-total"><span class="k-icon k-i-check"></span>Done</strong>
+                </div>
+                <ul class="k-upload-files k-reset">
+                    <li class="k-file k-file-success">
+                        <div class="k-progressbar" style="display: none;"><span class="k-progress" style="width: 0%;"></span></div>
+                        <span class="k-file-group-wrapper"><span class="k-file-group k-icon k-i-file-image"></span><span class="k-file-state">uploaded</span></span>
+                        <span class="k-file-name-size-wrapper">
+                            <span class="k-file-name">Image1_With_Very_Very_Very_Very_Long_Name.png</span><span class="k-file-size k-hidden">24.34 KB</span>
+                            <span class="k-file-validation-message k-text-success">File(s) uploaded successfully.</span>
+                        </span>
+                        <strong class="k-upload-status">
+                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x" title="Remove"></span></button>
+                        </strong>
+                    </li>
+                    <li class="k-file k-file-success">
+                        <div class="k-progressbar" style="display: none;"><span class="k-progress" style="width: 0%;"></span></div>
+                        <span class="k-file-group-wrapper"><span class="k-file-group k-icon k-i-file-image"></span><span class="k-file-state">uploaded</span></span>
+                        <span class="k-file-name-size-wrapper">
+                            <span class="k-file-name">Image2.png</span><span class="k-file-size k-hidden">19.85 KB</span>
+                            <span class="k-file-validation-message k-text-success">File(s) uploaded successfully.</span>
+                        </span>
+                        <strong class="k-upload-status">
+                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                        </strong>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <!-- Batch upload ->  successfully uploaded files -->
+            <div class="k-widget k-upload k-upload-async">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button"><input /><span>Select files...</span></div>
+                    <em class="k-dropzone-hint k-hidden">Drop files here to upload</em><strong class="k-upload-status k-upload-status-total"><span class="k-icon k-i-check"></span>Done</strong>
+                </div>
+                <ul class="k-upload-files k-reset">
+                    <li class="k-file k-file-success">
+                        <div class="k-progressbar" style="display: none;"><span class="k-progress" style="width: 0%;"></span></div>
+                        <span class="k-multiple-files-group-wrapper"><span class="k-file-group k-icon k-i-files"></span><span class="k-file-state">uploaded</span></span>
+                        <span class="k-multiple-files-wrapper">
+                            <span class="k-file-name-size-wrapper"><span class="k-file-name">Video_File_with_Very_Very_Very_Very_Long_Name.png</span><span class="k-file-size">19.61 KB</span></span>
+                            <span class="k-file-name-size-wrapper"> <span class="k-file-name">Video_File_with_Very_Very_Very_VeryLong_Name2.jpg</span><span class="k-file-size">106.43 KB</span> </span>
+                            <span class="k-file-name-size-wrapper"> <span class="k-file-name">Video3.png</span><span class="k-file-size">24.34 KB</span> </span>
+                            <span class="k-file-name-size-wrapper"> <span class="k-file-name">Video4.png</span><span class="k-file-size">19.85 KB</span> </span>
+                            <span class="k-file-information k-hidden">Total: 4 files, 170.22 KB</span><span class="k-file-validation-message k-text-success">4 File(s) uploaded successfully.</span>
+                        </span>
+                        <strong class="k-upload-status">
+                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                        </strong>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <!-- Batch upload; files in progress -->
+            <div class="k-widget k-upload k-upload-async">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button"><input /><span>Select files...</span></div>
+                    <em class="k-dropzone-hint k-hidden">Drop files here to upload</em><strong class="k-upload-status k-upload-status-total"><span class="k-icon k-i-check"></span>Done</strong>
+                </div>
+                <ul class="k-upload-files k-reset">
+                    <li class="k-file k-file-progress">
+                        <div class="k-progressbar"><span class="k-progress" style="width: 70%;"></span></div>
+                        <span class="k-multiple-files-group-wrapper"><span class="k-file-group k-icon k-i-files"></span><span class="k-file-state">uploaded</span></span>
+                        <span class="k-multiple-files-wrapper">
+                            <span class="k-file-name-size-wrapper"><span class="k-file-name">Video_File_with_Very_Very_Very_Very_Long_Name.png</span><span class="k-file-size">19.61 KB</span></span>
+                            <span class="k-file-name-size-wrapper"> <span class="k-file-name">Video_File_with_Very_Very_Very_VeryLong_Name2.jpg</span><span class="k-file-size">106.43 KB</span> </span>
+                            <span class="k-file-name-size-wrapper"> <span class="k-file-name">Video3.png</span><span class="k-file-size">24.34 KB</span> </span>
+                            <span class="k-file-name-size-wrapper"> <span class="k-file-name">Video4.png</span><span class="k-file-size">19.85 KB</span> </span>
+                            <span class="k-file-information">Total: 4 files, 170.22 KB</span>
+                        </span>
+                        <strong class="k-upload-status">
+                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                        </strong>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <!-- Batch upload -> validation failed -->
+            <div class="k-widget k-upload k-upload-async">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button">
+                        <input style="display: none;" />
+                        <input /><span>Select files...</span>
+                    </div>
+                    <em class="k-dropzone-hint k-hidden">Drop files here to upload</em><strong class="k-upload-status k-upload-status-total"><span class="k-icon k-i-warning"></span>Done</strong>
+                </div>
+                <ul class="k-upload-files k-reset">
+                    <li class="k-file k-file-invalid">
+                        <div class="k-progressbar k-hidden"><span class="k-progress" style="width: 0%;"></span></div>
+                        <span class="k-multiple-files-invalid-group-wrapper"><span class="k-file-group k-icon k-i-files"></span><span class="k-file-state"></span></span>
+                        <span class="k-multiple-files-wrapper">
+                            <span class="k-file-name-size-wrapper"><span class="k-file-name k-file-name-invalid">Movie_With_Very_Very_Very_Very_Very_Long_Name1.mkv</span><span class="k-file-size">12.61 KB</span></span>
+                            <span class="k-file-name-size-wrapper"><span class="k-file-name k-file-name-invalid">Movie2.mkv</span><span class="k-file-size">12.36 KB</span></span>
+                            <span class="k-file-name-size-wrapper"><span class="k-file-name">Image1.jpg</span><span class="k-file-size">1.09 MB</span></span>
+                            <span class="k-file-name-size-wrapper"><span class="k-file-name">Image2.jpg</span><span class="k-file-size">1.09 MB</span></span>
+                            <span class="k-file-validation-message k-text-error">Invalid file(s). Please check file upload requirements.</span>
+                        </span>
+                        <strong class="k-upload-status">
+                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                        </strong>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <!-- Auto Upload - false -->
+            <div class="k-widget k-upload k-upload-async">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button">
+                        <input style="display: none;" />
+                        <input /><span>Select files...</span>
+                    </div>
+                    <em class="k-dropzone-hint">Drop files here to upload</em>
+                </div>
+                <ul class="k-upload-files k-reset">
+                    <li class="k-file k-toupload">
+                        <div class="k-progressbar k-hidden"><span class="k-progress"></span></div>
+                        <span class="k-file-group-wrapper"><span class="k-file-group k-icon k-i-file-image"></span><span class="k-file-state"></span></span>
+                        <span class="k-file-name-size-wrapper"> <span class="k-file-name">Image_With_Very_Very_Very_Very_Very_Long_Name1.png</span><span class="k-file-size">51.23 KB</span> </span>
+                        <strong class="k-upload-status">
+                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                        </strong>
+                    </li>
+                    <li class="k-file k-toupload">
+                        <div class="k-progressbar k-hidden"><span class="k-progress"></span></div>
+                        <span class="k-file-group-wrapper"><span class="k-file-group k-icon k-i-file-image"></span><span class="k-file-state"></span></span>
+                        <span class="k-file-name-size-wrapper"> <span class="k-file-name">Image2.jpg</span><span class="k-file-size">106.43 KB</span> </span>
+                        <strong class="k-upload-status">
+                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                        </strong>
+                    </li>
+                </ul>
+                <div class="k-action-buttons"><button type="button" class="k-button k-clear-selected">Clear</button><button class="k-button k-upload-selected k-primary">Upload</button></div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Chunk upload -->
+            <div class="k-widget k-upload k-upload-async">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button">
+                        <input style="display: none;" />
+                        <input /><span>Select files...</span>
+                    </div>
+                    <em class="k-dropzone-hint k-hidden">Drop files here to upload</em><strong class="k-upload-status k-upload-status-total"><span class="k-icon k-i-upload"></span>Uploading...</strong>
+                </div>
+                <ul class="k-upload-files k-reset">
+                    <li class="k-file k-file-progress">
+                        <div class="k-progressbar"><span class="k-progress" style="width: 30%;"></span></div>
+                        <span class="k-file-group-wrapper"><span class="k-file-group k-icon k-i-file-video"></span><span class="k-file-state">uploading</span></span>
+                        <span class="k-file-name-size-wrapper"><span class="k-file-name">Video1.mkv</span><span class="k-file-size">158.97 MB</span></span>
+                        <strong class="k-upload-status">
+                            <span class="k-upload-pct">30%</span><button class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-pause-sm"></span></button>
+                            <button class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-cancel k-i-cancel"></span></button>
+                        </strong>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+                <!-- Drag and drop file text in the dropzone -->
+                <div class="k-widget k-upload k-upload-async k-upload-empty">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button"><input /><span>Select files...</span></div>
+                    <em class="k-dropzone-hint">Drop files here to upload</em>
+                </div>
+            </div>
+        </section>
+
+        <section>
+                <!-- Drag and drop file + Hover the dropzone -->
+            <div class="k-widget k-upload k-upload-async k-upload-empty">
+                <div class="k-dropzone k-dropzone-active k-dropzone-hovered">
+                    <div class="k-button k-upload-button"><input /><span>Select files...</span></div>
+                    <em class="k-dropzone-hint">Drop files here to upload</em>
+                </div>
+            </div>
+        </section>
+
+        <section>
+                <!-- Disabled Upload -->
+            <div class="k-widget k-upload k-upload-sync k-upload-empty k-state-disabled">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button"><input disabled /><span>Select files...</span></div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+</body>
+</html>

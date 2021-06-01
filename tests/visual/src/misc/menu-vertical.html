@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Menu Vertical</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr 1fr;
+            align-items: start;
+        }
+
+        .k-animation-container {
+            position: relative;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <span>Vertical Menu</span>
+        <span>Vertical Scrolling Menu</span>
+
+        <!-- vertical menu -->
+        <section>
+            <ul id="menu" class="k-widget k-reset k-header k-menu k-menu-vertical">
+                <li class="k-item k-menu-item k-state-disabled k-first">
+                    <span class="k-link k-menu-link">Disabled</span>
+                </li>
+                <li class="k-item k-menu-item">
+                    <span class="k-link k-menu-link">Normal</span>
+                </li>
+                <li class="k-item k-menu-item k-state-hover">
+                    <span class="k-link k-menu-link">
+                        Hover
+                        <span class="k-icon k-i-arrow-60-right k-menu-expand-arrow"></span>
+                    </span>
+                </li>
+                <li class="k-item k-menu-item">
+                    <span class="k-link k-menu-link k-state-active">
+                        Active
+                        <span class="k-icon k-i-arrow-60-right k-menu-expand-arrow"></span>
+                    </span>
+                </li>
+                <li class="k-item k-menu-item k-state-focused">
+                    <span class="k-link k-menu-link">Focus</span>
+                </li>
+                <li class="k-item k-menu-item">
+                    <span class="k-link k-menu-link">
+                        <span class="k-icon k-i-folder"></span>
+                        Normal with icon
+                        <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                    </span>
+                </li>
+                <li class="k-item k-menu-item k-state-hover">
+                    <span class="k-link k-menu-link">
+                        <span class="k-icon k-i-folder"></span>
+                        Hover with icon
+                        <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                    </span>
+                </li>
+                <li class="k-item k-menu-item">
+                    <span class="k-link k-menu-link k-state-active">
+                        <span class="k-icon k-i-folder"></span>
+                        Active with icon
+                        <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                    </span>
+                </li>
+                <li class="k-item k-menu-item k-state-focused">
+                    <span class="k-link k-menu-link">
+                        <span class="k-icon k-i-folder"></span>
+                        Focus with icon
+                        <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- vertical scrolling menu -->
+        <section>
+            <div class="k-menu-scroll-wrapper vertical">
+                <ul id="menu" class="k-widget k-reset k-header k-menu k-menu-vertical" style="height: 150px">
+                    <li class="k-item k-menu-item k-first">
+                        <span class="k-link k-menu-link">Item 1</span>
+                    </li>
+                    <li class="k-item k-menu-item">
+                        <span class="k-link k-menu-link">Item 2</span>
+                    </li>
+                    <li class="k-item k-menu-item">
+                        <span class="k-link k-menu-link">Item 3</span>
+                    </li>
+                    <li class="k-item k-menu-item">
+                        <span class="k-link k-menu-link">Item 4</span>
+                    </li>
+                    <li class="k-item k-menu-item k-last">
+                        <span class="k-link k-menu-link">Item 5</span>
+                    </li>
+                    <li class="k-item k-menu-item k-last">
+                        <span class="k-link k-menu-link">Item 6</span>
+                    </li>
+                </ul>
+                <span class="k-button k-button-icon k-menu-scroll-button k-scroll-up"><span class="k-icon k-i-arrow-60-up"></span></span>
+                <span class="k-button k-button-icon k-menu-scroll-button k-scroll-down"><span class="k-icon k-i-arrow-60-down"></span></span>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

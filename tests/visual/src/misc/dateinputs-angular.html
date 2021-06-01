@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Date Inputs Angular</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(4, min-content);
+            align-items: start;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <!-- Angular focused -->
+        <kendo-datepicker class="k-widget k-datepicker k-header">
+            <span class="k-picker-wrap k-state-focused">
+                <kendo-dateinput class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="Angular Focused">
+                    </span>
+                </kendo-dateinput>
+                <span class="k-select">
+                    <span class="k-icon k-i-calendar"></span>
+                </span>
+            </span>
+        </kendo-datepicker>
+        <kendo-timepicker class="k-widget k-timepicker k-header">
+            <span class="k-picker-wrap k-state-focused">
+                <kendo-dateinput class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                        <input class="k-input" value="Angular Focused">
+                    </span>
+                </kendo-dateinput>
+                <span class="k-select">
+                    <span class="k-icon k-i-clock"></span>
+                </span>
+            </span>
+        </kendo-timepicker>
+        <kendo-datetimepicker class="k-widget k-datetimepicker">
+            <span class="k-picker-wrap k-state-focused">
+                    <kendo-dateinput class="k-widget k-dateinput">
+                        <span class="k-dateinput-wrap">
+                            <input class="k-input" value="Angular Focused">
+                        </span>
+                    </kendo-dateinput>
+                    <span class="k-select">
+                        <span class="k-link k-link-date">
+                            <span class="k-icon k-i-calendar"></span>
+                        </span>
+                    </span>
+            </span>
+        </kendo-datetimepicker>
+        <kendo-dateinput class="k-widget k-dateinput">
+            <span class="k-dateinput-wrap k-state-focused">
+                <input class="k-input" value="Angular Focused">
+                <span class="k-select">
+                    <span class="k-link k-link-increase">
+                        <span class="k-icon k-i-arrow-n"></span>
+                    </span>
+                    <span class="k-link k-link-decrease">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </span>
+            </span>
+        </kendo-dateinput>
+
+        <!-- Angular invalid -->
+        <kendo-datepicker class="k-widget k-datepicker k-header ng-touched ng-invalid">
+            <span class="k-picker-wrap">
+             <kendo-dateinput class="k-widget k-dateinput">
+             <span class="k-dateinput-wrap"><input class="k-input" value="Angular Invalid"></span>
+            </kendo-dateinput>
+            <span class="k-select"><span class="k-icon k-i-calendar"></span></span>
+            </span>
+        </kendo-datepicker>
+
+        <kendo-timepicker class="k-widget k-timepicker k-header ng-touched ng-invalid">
+            <span class="k-picker-wrap">
+                <kendo-dateinput class="k-widget k-dateinput">
+                  <span class="k-dateinput-wrap">
+                    <input class="k-input" value="Angular Invalid">
+                  </span>
+            </kendo-dateinput>
+            <span class="k-select"><span class="k-icon k-i-clock"></span></span>
+            </span>
+        </kendo-timepicker>
+
+        <kendo-datetimepicker class="k-widget k-datetimepicker ng-touched ng-invalid">
+            <span class="k-picker-wrap">
+                    <kendo-dateinput class="k-widget k-dateinput">
+                        <span class="k-dateinput-wrap">
+                            <input class="k-input" value="Angular Invalid">
+                        </span>
+                    </kendo-dateinput>
+                    <span class="k-select">
+                        <span class="k-link k-link-date">
+                            <span class="k-icon k-i-calendar"></span>
+                        </span>
+                    </span>
+            </span>
+        </kendo-datetimepicker>
+
+        <kendo-dateinput class="k-widget k-dateinput ng-touched ng-invalid">
+            <span class="k-dateinput-wrap">
+                <input class="k-input" value="Angular Invalid">
+                <span class="k-select">
+                    <span class="k-link k-link-increase">
+                        <span class="k-icon k-i-arrow-n"></span>
+                    </span>
+                    <span class="k-link k-link-decrease">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </span>
+            </span>
+        </kendo-dateinput>
+
+        <!-- Angular - focused + invalid -->
+        <kendo-datepicker class="k-widget k-datepicker k-header ng-touched ng-invalid">
+            <span class="k-picker-wrap k-state-focused">
+             <kendo-dateinput class="k-widget k-dateinput">
+             <span class="k-dateinput-wrap k-state-focused"><input class="k-input" value="Angular Invalid+Focused"></span>
+            </kendo-dateinput>
+            <span class="k-select"><span class="k-icon k-i-calendar"></span></span>
+            </span>
+        </kendo-datepicker>
+
+        <kendo-timepicker class="k-widget k-timepicker k-header ng-touched ng-invalid">
+            <span class="k-picker-wrap k-state-focused">
+                <kendo-dateinput class="k-widget k-dateinput">
+                  <span class="k-dateinput-wrap k-state-focused">
+                    <input class="k-input" value="Angular Invalid+Focused">
+                  </span>
+            </kendo-dateinput>
+            <span class="k-select"><span class="k-icon k-i-clock"></span></span>
+            </span>
+        </kendo-timepicker>
+
+        <kendo-datetimepicker class="k-widget k-datetimepicker ng-touched ng-invalid">
+            <span class="k-picker-wrap k-state-focused">
+                    <kendo-dateinput class="k-widget k-dateinput">
+                        <span class="k-dateinput-wrap k-state-focused">
+                            <input class="k-input" value="Angular Invalid+Focused">
+                        </span>
+                    </kendo-dateinput>
+                    <span class="k-select">
+                        <span class="k-link k-link-date">
+                            <span class="k-icon k-i-calendar"></span>
+                        </span>
+                    </span>
+            </span>
+        </kendo-datetimepicker>
+
+        <kendo-dateinput class="k-widget k-dateinput ng-touched ng-invalid">
+            <span class="k-dateinput-wrap k-state-focused">
+                <input class="k-input" value="Angular Invalid+Focused">
+                <span class="k-select">
+                    <span class="k-link k-link-increase">
+                        <span class="k-icon k-i-arrow-n"></span>
+                    </span>
+                    <span class="k-link k-link-decrease">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </span>
+            </span>
+        </kendo-dateinput>
+
+        <span>Angular DateRange</span>
+        <kendo-daterange>
+            <label>
+                <span class="label">Start</span>
+                <kendo-dateinput class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap">
+                <input class="k-input">
+            </span>
+                </kendo-dateinput>
+            </label>
+            <label>
+                <span class="label">End</span>
+                <kendo-dateinput class="k-widget k-dateinput">
+                    <span class="k-dateinput-wrap k-state-focused">
+                <input class="k-input">
+            </span>
+                </kendo-dateinput>
+            </label>
+            <kendo-daterange-popup>
+            </kendo-daterange-popup>
+        </kendo-daterange>
+
+        <span>Angular Invalid DateRange</span>
+        <kendo-daterange>
+            <kendo-form-field class="k-form-field k-form-field-error">
+                <label>
+                    <label>Start</label>
+                    <kendo-dateinput class="k-widget k-dateinput ng-invalid ng-touched">
+                        <span class="k-dateinput-wrap"><input class="k-input"></span></kendo-dateinput>
+                </label>
+            </kendo-form-field>
+            <kendo-form-field class="k-form-field k-form-field-error">
+                <label>
+                    <label>End</label>
+                    <kendo-dateinput class="k-widget k-dateinput ng-invalid ng-touched">
+                        <span class="k-dateinput-wrap k-state-focused"><input class="k-input"></span></kendo-dateinput>
+                </label>
+            </kendo-form-field>
+            <kendo-daterange-popup>
+            </kendo-daterange-popup>
+        </kendo-daterange>
+    </div>
+
+</body>
+</html>

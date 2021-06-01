@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>PivotGrid Configurator</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .k-fieldselector {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <section>
+            <div class="k-widget k-fieldselector k-alt k-edit-form-container" style="height: 600px;">
+                <div class="k-columns k-floatwrap">
+                    <div>
+                        <p class="k-reset"><span class="k-icon k-i-group"></span>Fields</p>
+                        <div class="k-widget k-treeview">
+                            <ul class="k-group k-treeview-lines">
+                                <li class="k-item k-first">
+                                    <div class="k-top">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in"><span class="k-icon k-i-arrows-dimensions"></span>Axis</span>
+                                    </div>
+                                </li>
+                                <li class="k-item">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in"><span class="k-icon k-i-sum"></span>Sum</span>
+                                    </div>
+                                </li>
+                                <li class="k-item k-last">
+                                    <div class="k-bot">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in"><span class="k-icon k-i-kpi"></span>KPI</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="k-reset"><span class="k-icon k-i-columns"></span>Columns</p>
+                        <div class="k-list-container k-reset">
+                            <ul class="k-pivot-configurator-settings k-list k-reset k-pivot-setting">
+                                <li class="k-item k-header">
+                                    Column 1 Long text test
+                                    <span class="k-field-actions">
+                                        <span class="k-icon k-i-sort-asc-sm"></span>
+                                        <span class="k-icon k-i-more-vertical k-setting-fieldmenu"></span>
+                                        <span class="k-icon k-i-close k-setting-delete"></span>
+                                    </span>
+                                </li>
+                                <li class="k-item k-header">
+                                    Column2Longtexttest
+                                    <span class="k-field-actions">
+                                        <span class="k-icon k-i-sort-asc-sm"></span>
+                                        <span class="k-icon k-i-more-vertical k-setting-fieldmenu"></span>
+                                        <span class="k-icon k-i-close k-setting-delete"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="k-reset"><span class="k-icon k-i-rows"></span>Rows</p>
+                        <div class="k-list-container k-reset">
+                            <ul class="k-pivot-configurator-settings k-list k-reset k-pivot-setting">
+                                <li class="k-item k-header">
+                                    Row 1
+                                    <span class="k-field-actions">
+                                        <span class="k-icon k-i-more-vertical k-setting-fieldmenu"></span>
+                                        <span class="k-icon k-i-close k-setting-delete"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="k-reset"><span class="k-icon k-i-sum"></span>Measures</p>
+                        <div class="k-list-container k-reset">
+                            <ul class="k-pivot-configurator-settings k-list k-reset k-pivot-setting">
+                                <li class="k-item k-header">
+                                    Measure 1
+                                    <span class="k-field-actions">
+                                        <span class="k-icon k-i-close k-setting-delete"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="k-rtl">
+            <div class="k-widget k-fieldselector k-alt k-edit-form-container" style="height: 600px;">
+                <div class="k-columns k-floatwrap">
+                    <div>
+                        <p class="k-reset"><span class="k-icon k-i-group"></span>Fields</p>
+                        <div class="k-widget k-treeview">
+                            <ul class="k-group k-treeview-lines">
+                                <li class="k-item k-first">
+                                    <div class="k-top">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in"><span class="k-icon k-i-arrows-dimensions"></span>Axis</span>
+                                    </div>
+                                </li>
+                                <li class="k-item">
+                                    <div class="k-mid">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in"><span class="k-icon k-i-sum"></span>Sum</span>
+                                    </div>
+                                </li>
+                                <li class="k-item k-last">
+                                    <div class="k-bot">
+                                        <span class="k-icon k-i-expand"></span>
+                                        <span class="k-in"><span class="k-icon k-i-kpi"></span>KPI</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="k-reset"><span class="k-icon k-i-columns"></span>Columns</p>
+                        <div class="k-list-container k-reset">
+                            <ul class="k-pivot-configurator-settings k-list k-reset k-pivot-setting">
+                                <li class="k-item k-header">
+                                    Column 1
+                                    <span class="k-field-actions">
+                                        <span class="k-icon k-i-more-vertical k-setting-fieldmenu"></span>
+                                        <span class="k-icon k-i-close k-setting-delete"></span>
+                                    </span>
+                                </li>
+                                <li class="k-item k-header">
+                                    Column 2
+                                    <span class="k-field-actions">
+                                        <span class="k-icon k-i-more-vertical k-setting-fieldmenu"></span>
+                                        <span class="k-icon k-i-close k-setting-delete"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="k-reset"><span class="k-icon k-i-rows"></span>Rows</p>
+                        <div class="k-list-container k-reset">
+                            <ul class="k-pivot-configurator-settings k-list k-reset k-pivot-setting">
+                                <li class="k-item k-header">
+                                    Row 1
+                                    <span class="k-field-actions">
+                                        <span class="k-icon k-i-more-vertical k-setting-fieldmenu"></span>
+                                        <span class="k-icon k-i-close k-setting-delete"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="k-reset"><span class="k-icon k-i-sum"></span>Measures</p>
+                        <div class="k-list-container k-reset">
+                            <ul class="k-pivot-configurator-settings k-list k-reset k-pivot-setting">
+                                <li class="k-item k-header">
+                                    Measure 1
+                                    <span class="k-field-actions">
+                                        <span class="k-icon k-i-close k-setting-delete"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+
+<head>
+    <title>TreeList React</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div id="test-area" class="grid">
+        <section>
+            <span>React Treelist</span>
+            <div class="k-widget k-grid k-treelist-scrollable">
+                <table>
+                    <colgroup>
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: 400px;">
+                        <col style="width: 100px;">
+                    </colgroup>
+                    <thead class="k-grid-header">
+                        <tr>
+                            <th class="k-header">
+                                <a class="k-link">id</a>
+                            </th>
+                            <th class="k-header">
+                                <a class="k-link">text</a>
+                            </th>
+                            <th class="k-header">
+                                <a class="k-link">price</a>
+                            </th>
+                            <th class="k-header">
+                                <a class="k-link">manufactured</a>
+                            </th>
+                            <th class="k-header">
+                                <a class="k-link">discontinued</a>
+                            </th>
+                        </tr>
+                        <tr class="k-filter-row">
+                            <th></th>
+                            <th>
+                                <div class="k-filtercell">
+                                    <div class="k-filtercell-wrapper">
+                                        <input class="k-textbox">
+                                        <div class="k-filtercell-operator">
+                                            <span class="k-widget k-dropdown k-dropdown-operator">
+                                                <span class="k-dropdown-wrap">
+                                                    <span class="k-input"></span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-filter k-icon"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <button class="k-button k-button-icon" type="button">
+                                                <span class="k-icon k-i-filter-clear"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="k-filtercell">
+                                    <div class="k-filtercell-wrapper">
+                                        <span class="k-widget k-numerictextbox">
+                                            <span class="k-numeric-wrap">
+                                                <input class="k-input k-formatted-value">
+                                                <span class="k-select">
+                                                    <span class="k-link k-link-increase">
+                                                        <span class="k-icon k-i-arrow-n"></span>
+                                                    </span>
+                                                    <span class="k-link k-link-decrease">
+                                                        <span class="k-icon k-i-arrow-s"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <div class="k-filtercell-operator">
+                                            <span class="k-widget k-dropdown k-dropdown-operator">
+                                                <span class="k-dropdown-wrap">
+                                                    <span class="k-input"></span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-filter k-icon"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <button class="k-button k-button-icon" type="button">
+                                                <span class="k-icon k-i-filter-clear"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="k-filtercell">
+                                    <div class="k-filtercell-wrapper">
+                                        <span class="k-widget k-datepicker">
+                                            <span class="k-picker-wrap">
+                                                <span class="k-widget k-dateinput">
+                                                    <span class="k-dateinput-wrap">
+                                                        <input class="k-input">
+                                                    </span>
+                                                </span>
+                                                <span class="k-select">
+                                                    <span class="k-icon k-i-calendar"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <div class="k-filtercell-operator">
+                                            <span class="k-widget k-dropdown k-dropdown-operator">
+                                                <span class="k-dropdown-wrap">
+                                                    <span class="k-input"></span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-filter k-icon"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <button class="k-button k-button-icon" type="button">
+                                                <span class="k-icon k-i-filter-clear"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="k-filtercell">
+                                    <div class="k-filtercell-wrapper">
+                                        <div class="k-filtercell-operator">
+                                            <span class="k-widget k-dropdown k-dropdown-operator">
+                                                <span class="k-dropdown-wrap">
+                                                    <span class="k-input">(All)</span>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-filter k-icon"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <button class="k-button k-button-icon" type="button">
+                                                <span class="k-icon k-i-filter-clear"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="k-master-row">
+                            <td>
+                                <span class="k-icon k-i-collapse"></span>
+                                1
+                            </td>
+                            <td>Furniture</td>
+                            <td>4</td>
+                            <td>8/12/1996</td>
+                            <td>false</td>
+                        </tr>
+                        <tr class="k-master-row">
+                            <td>
+                                <span class="k-icon k-i-none"></span>
+                                <span class="k-icon k-i-none"></span>
+                                1.1
+                            </td>
+                            <td>Tables &amp; Chairs</td>
+                            <td>123</td>
+                            <td>8/12/1996</td>
+                            <td>false</td>
+                        </tr>
+                        <tr class="k-master-row">
+                            <td>
+                                <span class="k-icon k-i-none"></span>
+                                <span class="k-icon k-i-none"></span>
+                                1.2
+                            </td>
+                            <td>Sofas</td>
+                            <td>213</td>
+                            <td>8/12/1996</td>
+                            <td>true</td>
+                        </tr>
+                        <tr class="k-master-row">
+                            <td>
+                                <span class="k-icon k-i-none"></span>
+                                <span class="k-icon k-i-none"></span>
+                                1.3
+                            </td>
+                            <td>Occasional Furniture</td>
+                            <td>42</td>
+                            <td>8/12/1996</td>
+                            <td>false</td>
+                        </tr>
+                        <tr class="k-master-row">
+                            <td>
+                                <span class="k-icon k-i-collapse"></span>
+                                2
+                            </td>
+                            <td>Decor</td>
+                            <td>2</td>
+                            <td>8/12/1996</td>
+                            <td>false</td>
+                        </tr>
+                        <tr class="k-master-row">
+                            <td>
+                                <span class="k-icon k-i-none"></span>
+                                <span class="k-icon k-i-none"></span>
+                                2.1
+                            </td>
+                            <td>Bed Linen</td>
+                            <td>12</td>
+                            <td>8/12/1996</td>
+                            <td>false</td>
+                        </tr>
+                        <tr class="k-master-row">
+                            <td>
+                                <span class="k-icon k-i-none"></span>
+                                <span class="k-icon k-i-collapse"></span>
+                                2.2
+                            </td>
+                            <td>Curtains &amp; Blinds</td>
+                            <td>1</td>
+                            <td>8/12/1996</td>
+                            <td>true</td>
+                        </tr>
+                        <tr class="k-master-row">
+                            <td>
+                                <span class="k-icon k-i-none"></span>
+                                <span class="k-icon k-i-none"></span>
+                                <span class="k-icon k-i-none"></span>
+                                2.2.1
+                            </td>
+                            <td>Carpets</td>
+                            <td>54</td>
+                            <td>8/12/1996</td>
+                            <td>true</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

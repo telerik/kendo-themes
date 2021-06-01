@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Steppers</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        body {
+            background: #fcfcfc;
+        }
+        #test-area {
+            grid-template-columns: 100px 500px;
+        }
+        #test-area hr {
+            width: 100%;
+            grid-column: 1 / -1;
+            visibility: hidden;
+        }
+
+        .subgrid-horizontal {
+            display: grid;
+            grid-gap: 20px;
+        }
+
+        .subgrid-two-cols {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <span class="col-2">LTR</span>
+
+        <span>Indicator</span>
+        <section>
+            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr)">
+                <ol class="k-step-list k-step-list-horizontal" style="grid-column-start: 1; grid-column-end: -1;">
+                    <li class="k-step k-step-first k-step-done" style="max-width: 33.333%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-icon k-icon k-i-check"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-current k-step-focus" style="max-width: 33.333%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">2</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-last k-step-optional" style="max-width: 33.333%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">3</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-label-optional">(Optional)</span>
+                            </span>
+                        </a>
+                    </li>
+                </ol>
+                <div class="k-widget k-progressbar k-progressbar-horizontal" style="grid-column-start: 2; grid-column-end: 6;">
+                    <span class="k-progress-status-wrap k-progress-end"></span>
+                    <div class="k-state-selected" style="height: 100%; width: 50%;">
+                        <span class="k-progress-status-wrap k-progress-end" style="height: 100%; width: 200%;"></span>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <span>^ + label</span>
+        <section>
+            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr)">
+                <ol class="k-step-list k-step-list-horizontal" style="grid-column-start: 1; grid-column-end: -1;">
+                    <li class="k-step k-step-first k-step-done k-step-success" style="max-width: 33.333%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">1</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Account Info with too long label</span>
+                                <span class="k-icon k-i-check"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-current k-step-focus k-step-error" style="max-width: 33.333%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">2</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Personal Info</span>
+                                <span class="k-icon k-i-warning"></span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-last k-step-optional" style="max-width: 33.333%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">3</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Payment Details</span>
+                                <span class="k-step-label-optional">(Optional)</span>
+                            </span>
+                        </a>
+                    </li>
+                </ol>
+                <div class="k-widget k-progressbar k-progressbar-horizontal" style="grid-column-start: 2; grid-column-end: 6;">
+                    <span class="k-progress-status-wrap k-progress-end"></span>
+                    <div class="k-state-selected" style="height: 100%; width: 50%;">
+                        <span class="k-progress-status-wrap k-progress-end" style="height: 100%; width: 200%;"></span>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <span>Icons</span>
+        <section>
+            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr)">
+                <ol class="k-step-list k-step-list-horizontal" style="grid-column-start: 1; grid-column-end: -1;">
+                    <li class="k-step k-step-first k-step-done" style="max-width: 33.333%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-icon k-icon k-i-lock"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-current k-step-focus" style="max-width: 33.333%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-icon k-icon k-i-user"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-last k-step-optional" style="max-width: 33.333%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-icon k-icon k-i-track-changes">3</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-label-optional">(Optional)</span>
+                            </span>
+                        </a>
+                    </li>
+                </ol>
+                <div class="k-widget k-progressbar k-progressbar-horizontal" style="grid-column-start: 2; grid-column-end: 6;">
+                    <span class="k-progress-status-wrap k-progress-end"></span>
+                    <div class="k-state-selected" style="height: 100%; width: 50%;">
+                        <span class="k-progress-status-wrap k-progress-end" style="height: 100%; width: 200%;"></span>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <span>^ + label</span>
+        <section>
+            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr)">
+                <ol class="k-step-list k-step-list-horizontal" style="grid-column-start: 1; grid-column-end: -1;">
+                    <li class="k-step k-step-first k-step-done" style="max-width: 33.333%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-icon k-icon k-i-lock"></span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Account Info</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-current k-step-focus" style="max-width: 33.333%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-icon k-icon k-i-user"></span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Personal Info</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-last k-step-optional" style="max-width: 33.333%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-icon k-icon k-i-track-changes">3</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Payment Details</span>
+                                <span class="k-step-label-optional">(Optional)</span>
+                            </span>
+                        </a>
+                    </li>
+                </ol>
+                <div class="k-widget k-progressbar k-progressbar-horizontal" style="grid-column-start: 2; grid-column-end: 6;">
+                    <span class="k-progress-status-wrap k-progress-end"></span>
+                    <div class="k-state-selected" style="height: 100%; width: 50%;">
+                        <span class="k-progress-status-wrap k-progress-end" style="height: 100%; width: 200%;"></span>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <span>Labels</span>
+        <section>
+            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr)">
+                <ol class="k-step-list k-step-list-horizontal" style="grid-column-start: 1; grid-column-end: -1;">
+                    <li class="k-step k-step-first k-step-done" style="max-width: 33.333%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-label">
+                                <span class="k-step-text">Account Info</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-current k-step-focus" style="max-width: 33.333%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-label">
+                                <span class="k-step-text">Personal Info</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-last k-step-optional" style="max-width: 33.333%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-label">
+                                <span class="k-step-text">Payment Details</span>
+                                <span class="k-step-label-optional">(Optional)</span>
+                            </span>
+                        </a>
+                    </li>
+                </ol>
+                <div class="k-widget k-progressbar k-progressbar-horizontal" style="grid-column-start: 2; grid-column-end: 6;">
+                    <span class="k-progress-status-wrap k-progress-end"></span>
+                    <div class="k-state-selected" style="height: 100%; width: 50%;">
+                        <span class="k-progress-status-wrap k-progress-end" style="height: 100%; width: 200%;"></span>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <hr />
+
+        <span>Many steps</span>
+        <section class="col-2">
+            <!-- one step equals to 2 frames => 8 steps = 16 fr -->
+            <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(16, 1fr)">
+                <!-- step list starts from the first step and ends to the last -->
+                <ol class="k-step-list k-step-list-horizontal" style="grid-column-start: 1; grid-column-end: -1;">
+                    <!-- only in horizontal mode: max-width equals to 100% / num of steps -->
+                    <li class="k-step k-step-done k-step-first" style="max-width: 12.5%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">1</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Step one</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-done" style="max-width: 12.5%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">2</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Step two</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-done" style="max-width: 12.5%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">3</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Step three with extremely long label</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-done" style="max-width: 12.5%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">4</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Step four</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-current k-step-focus" style="max-width: 12.5%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">5</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Step five</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step" style="max-width: 12.5%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">6</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Step six</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step" style="max-width: 12.5%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">7</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Step seven</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="k-step k-step-last" style="max-width: 12.5%">
+                        <a href="#" class="k-step-link">
+                            <span class="k-step-indicator">
+                                <span class="k-step-indicator-text">8</span>
+                            </span>
+                            <span class="k-step-label">
+                                <span class="k-step-text">Step eight</span>
+                            </span>
+                        </a>
+                    </li>
+                </ol>
+                <!-- the progressbar starts from the starting point of the second frame, e.g. middle of the first step and ends to the starting point of the last step -->
+                <div class="k-widget k-progressbar k-progressbar-horizontal" style="grid-column-start: 2; grid-column-end: 16;">
+                    <span class="k-progress-status-wrap k-progress-end"></span>
+                    <div class="k-state-selected" style="height: 100%; width: 59%;">
+                        <span class="k-progress-status-wrap k-progress-end" style="height: 100%; width: 200%;"></span>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+    </div>
+
+</body>
+</html>

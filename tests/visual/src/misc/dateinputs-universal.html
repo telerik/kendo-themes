@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Date Inputs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(3, min-content);
+            align-items: start;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <!-- Placeholder  -->
+        <span class="k-datepicker"><span class="k-picker-wrap"><span class="k-dateinput"><span class="k-dateinput-wrap"><input class="k-input" value="Datepicker" /></span></span><a class="k-select k-select"><span class="k-icon k-i-calendar"></span></a></span></span>
+        <span class="k-dateinput"><span class="k-dateinput-wrap"><input class="k-input" value="DateInput"/></span></span>
+        <span>
+            <span class="k-daterangepicker">
+                <span class="k-daterangepicker-wrap">
+                    <span class="k-floating-label-container">
+                        <span class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" value="DateRangePicker"/>
+                            </span>
+                        </span>
+                        <label class="k-label">Start</label>
+                    </span>
+                    <span class="k-floating-label-container">
+                        <span class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" value="DateRangePicker"/>
+                            </span>
+                        </span>
+                        <label class="k-label">End</label>
+                    </span>
+                </span>
+            </span>
+        </span>
+
+        <!-- Hover  -->
+        <span class="k-datepicker k-state-hover"><span class="k-picker-wrap"><span class="k-dateinput"><span class="k-dateinput-wrap"><input class="k-input" value="Hover"/></span></span><a class="k-select k-select"><span class="k-icon k-i-calendar"></span></a></span></span>
+        <span class="k-dateinput k-state-hover"><span class="k-dateinput-wrap"><input class="k-input" value="Hover"/></span></span>
+        <span>
+            <span class="k-daterangepicker k-state-hover">
+                <span class="k-daterangepicker-wrap">
+                    <span class="k-floating-label-container">
+                        <span class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" value="Hover"/>
+                            </span>
+                        </span>
+                        <label class="k-label">Start</label>
+                    </span>
+                    <span class="k-floating-label-container">
+                        <span class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" value="Hover"/>
+                            </span>
+                        </span>
+                        <label class="k-label">End</label>
+                    </span>
+                </span>
+            </span>
+        </span>
+
+        <!-- Focus  -->
+        <span class="k-datepicker k-state-focus"><span class="k-picker-wrap"><span class="k-dateinput"><span class="k-dateinput-wrap"><input class="k-input" value="Focus"/></span></span><a class="k-select k-select"><span class="k-icon k-i-calendar"></span></a></span></span>
+        <span class="k-dateinput k-state-focus"><span class="k-dateinput-wrap"><input class="k-input" value="Focus"/></span></span>
+        <span>
+            <span class="k-daterangepicker k-state-focus">
+                <span class="k-daterangepicker-wrap">
+                    <span class="k-floating-label-container">
+                        <span class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" value="Focus"/>
+                            </span>
+                        </span>
+                        <label class="k-label">Start</label>
+                    </span>
+                    <span class="k-floating-label-container">
+                        <span class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" value="Focus"/>
+                            </span>
+                        </span>
+                        <label class="k-label">End</label>
+                    </span>
+                </span>
+            </span>
+        </span>
+
+        <!-- Disabled  -->
+        <span class="k-datepicker k-disabled"><span class="k-picker-wrap"><span class="k-dateinput"><span class="k-dateinput-wrap"><input class="k-input" value="Disabled" /></span></span><a class="k-select k-select"><span class="k-icon k-i-calendar"></span></a></span></span>
+        <span class="k-dateinput k-disabled"><span class="k-dateinput-wrap"><input class="k-input" value="Disabled" /></span></span>
+        <span>
+            <span class="k-daterangepicker k-disabled">
+                <span class="k-daterangepicker-wrap">
+                    <span class="k-floating-label-container">
+                        <span class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" value="Disabled"/>
+                            </span>
+                        </span>
+                        <label class="k-label">Start</label>
+                    </span>
+                    <span class="k-floating-label-container">
+                        <span class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" value="Disabled"/>
+                            </span>
+                        </span>
+                        <label class="k-label">End</label>
+                    </span>
+                </span>
+            </span>
+        </span>
+
+        <!-- Invalid  -->
+        <span class="k-datepicker k-invalid"><span class="k-picker-wrap"><span class="k-dateinput"><span class="k-dateinput-wrap"><input class="k-input" value="Invalid" /></span></span><a class="k-select k-select"><span class="k-icon k-i-calendar"></span></a></span></span>
+        <span class="k-dateinput k-invalid"><span class="k-dateinput-wrap"><input class="k-input" value="Invalid" /></span></span>
+        <span>
+            <span class="k-daterangepicker k-invalid">
+                <span class="k-daterangepicker-wrap">
+                    <span class="k-floating-label-container">
+                        <span class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" value="Invalid"/>
+                            </span>
+                        </span>
+                        <label class="k-label">Start</label>
+                    </span>
+                    <span class="k-floating-label-container">
+                        <span class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" value="Invalid"/>
+                            </span>
+                        </span>
+                        <label class="k-label">End</label>
+                    </span>
+                </span>
+            </span>
+        </span>
+
+        <!-- Invalid + focus -->
+        <span class="k-datepicker k-state-focus k-invalid"><span class="k-picker-wrap"><span class="k-dateinput"><span class="k-dateinput-wrap"><input class="k-input" value="Invalid + Focus" /></span></span><a class="k-select k-select"><span class="k-icon k-i-calendar"></span></a></span></span>
+        <span class="k-dateinput k-state-focus k-invalid"><span class="k-dateinput-wrap"><input class="k-input" value="Invalid + Focus" /></span></span>
+        <span>
+            <span class="k-daterangepicker k-state-focus k-invalid">
+                <span class="k-daterangepicker-wrap">
+                    <span class="k-floating-label-container">
+                        <span class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" value="Invalid + Focus"/>
+                            </span>
+                        </span>
+                        <label class="k-label">Start</label>
+                    </span>
+                    <span class="k-floating-label-container">
+                        <span class="k-widget k-dateinput">
+                            <span class="k-dateinput-wrap">
+                                <input class="k-input" value="Invalid + Focus"/>
+                            </span>
+                        </span>
+                        <label class="k-label">End</label>
+                    </span>
+                </span>
+            </span>
+        </span>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Filter</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div id="filter" class="k-widget k-filter">
+            <ul class="k-filter-container">
+                <li class="k-filter-group-main">
+                    <div class="k-filter-toolbar">
+                        <div class="k-toolbar">
+                            <div class="k-filter-toolbar-item">
+                                <div class="k-widget k-button-group">
+                                    <span class="k-button k-state-selected">
+                                        And
+                                    </span>
+                                    <span class="k-button">
+                                        Or
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-filter-toolbar-item">
+                                <button class="k-button k-button-icon">
+                                    <span class="k-icon k-i-filter-add-expression"></span>
+                                </button>
+                            </div>
+                            <div class="k-filter-toolbar-item">
+                                <button class="k-button k-button-icon">
+                                    <span class="k-icon k-i-filter-add-group"></span>
+                                </button>
+                            </div>
+                            <div class="k-filter-toolbar-item">
+                                <button class="k-button-flat k-button k-button-icon">
+                                    <span class="k-icon k-i-close"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="k-filter-lines">
+                        <li class="k-filter-item">
+                            <div class="k-filter-toolbar">
+                                <div class="k-toolbar">
+                                    <div class="k-filter-toolbar-item k-filter-field">
+                                        <span class="k-widget k-dropdown">
+                                            <span class="k-dropdown-wrap">
+                                                <span class="k-input">Discontinued</span>
+                                                <span class="k-select">
+                                                    <span class="k-icon k-i-arrow-60-down"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="k-filter-toolbar-item k-filter-operator">
+                                        <span class="k-widget k-dropdown">
+                                            <span class="k-dropdown-wrap">
+                                                <span class="k-input">Is greater than or equal to</span>
+                                                <span class="k-select">
+                                                    <span class="k-icon k-i-arrow-60-down"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="k-filter-toolbar-item k-filter-value">
+                                        <input class="k-checkbox" type="checkbox">
+                                        <label class="k-checkbox-label k-no-text">&#8203;</label>
+                                    </div>
+                                    <div class="k-filter-toolbar-item">
+                                        <button class="k-button-flat k-button k-button-icon">
+                                            <span class="k-icon k-i-close"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="k-filter-item">
+                            <div class="k-filter-toolbar">
+                                <div class="k-toolbar">
+                                    <div class="k-filter-toolbar-item k-filter-field">
+                                        <span class="k-widget k-dropdown">
+                                            <span class="k-dropdown-wrap">
+                                                <span class="k-input">UnitsInStock</span>
+                                                <span class="k-select">
+                                                    <span class="k-icon k-i-arrow-60-down"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="k-filter-toolbar-item k-filter-operator">
+                                        <span class="k-widget k-dropdown">
+                                            <span class="k-dropdown-wrap">
+                                                <span class="k-input">Is equal to</span>
+                                                <span class="k-select">
+                                                    <span class="k-icon k-i-arrow-60-down"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="k-filter-toolbar-item k-filter-value">
+                                            <input type="text" class="k-textbox" data-bind="value: value">
+                                    </div>
+                                    <div class="k-filter-toolbar-item">
+                                        <button  class="k-button-flat k-button k-button-icon">
+                                            <span class="k-icon k-i-close"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="k-filter-item">
+                            <div class="k-filter-toolbar">
+                                <div class="k-toolbar">
+                                    <div class="k-filter-toolbar-item k-filter-field">
+                                        <span class="k-widget k-dropdown">
+                                            <span class="k-dropdown-wrap">
+                                                <span class="k-input">UnitsInStock</span>
+                                                <span class="k-select">
+                                                    <span class="k-icon k-i-arrow-60-down"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="k-filter-toolbar-item k-filter-operator">
+                                        <span class="k-widget k-dropdown ">
+                                            <span class="k-dropdown-wrap">
+                                                <span class="k-input">Is equal to</span>
+                                                <span class="k-select">
+                                                    <span class="k-icon k-i-arrow-60-down"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="k-filter-toolbar-item k-filter-value">
+                                        <span class="k-widget k-numerictextbox">
+                                            <span class="k-numeric-wrap">
+                                                <input type="text" class="k-formatted-value k-input" style="display: block;">
+                                                <span class="k-select">
+                                                    <span class="k-link k-link-increase">
+                                                        <span class="k-icon k-i-arrow-60-up"></span>
+                                                    </span>
+                                                    <span class="k-link k-link-decrease">
+                                                        <span class="k-icon k-i-arrow-60-down"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="k-filter-toolbar-item">
+                                        <button  class="k-button-flat k-button k-button-icon">
+                                            <span class="k-icon k-i-close"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="k-filter-item">
+                            <div class="k-filter-toolbar">
+                                <div class="k-toolbar">
+                                    <div class="k-filter-toolbar-item">
+                                        <div class="k-widget k-button-group">
+                                            <span class="k-button k-state-selected">
+                                                And
+                                            </span>
+                                            <span class="k-button">
+                                                Or
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="k-filter-toolbar-item">
+                                        <button class="k-button k-button-icon">
+                                            <span class="k-icon k-i-filter-add-expression"></span>
+                                        </button>
+                                    </div>
+                                    <div class="k-filter-toolbar-item">
+                                        <button  class="k-button k-button-icon">
+                                            <span class="k-icon k-i-filter-add-group"></span>
+                                        </button>
+                                    </div>
+                                    <div class="k-filter-toolbar-item">
+                                        <button class="k-button-flat k-button k-button-icon">
+                                            <span class="k-icon k-i-close"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="k-filter-lines">
+                                <li class="k-filter-item">
+                                    <div class="k-filter-toolbar">
+                                        <div class="k-toolbar">
+                                            <div class="k-filter-toolbar-item">
+                                                <div class="k-widget k-button-group">
+                                                    <span class="k-button k-state-selected">
+                                                        And
+                                                    </span>
+                                                    <span class="k-button">
+                                                        Or
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="k-filter-toolbar-item">
+                                                <button class="k-button k-button-icon">
+                                                    <span class="k-icon k-i-filter-add-expression"></span>
+                                                </button>
+                                            </div>
+                                            <div class="k-filter-toolbar-item">
+                                                <button class="k-button k-button-icon">
+                                                    <span class="k-icon k-i-filter-add-group"></span>
+                                                </button>
+                                            </div>
+                                            <div class="k-filter-toolbar-item">
+                                                <button class="k-button-flat k-button k-button-icon">
+                                                    <span class="k-icon k-i-close"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="k-filter-lines">
+                                        <li class="k-filter-item">
+                                            <div class="k-filter-toolbar">
+                                                <div class="k-toolbar">
+                                                    <div class="k-filter-toolbar-item k-filter-field">
+                                                        <span class="k-widget k-dropdown ">
+                                                            <span class="k-dropdown-wrap">
+                                                                <span class="k-input">DeliveryDate</span>
+                                                                <span class="k-select">
+                                                                    <span class="k-icon k-i-arrow-60-down"></span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="k-filter-toolbar-item k-filter-operator">
+                                                        <span class="k-widget k-dropdown ">
+                                                            <span class="k-dropdown-wrap">
+                                                                <span class="k-input">Is equal to</span>
+                                                                <span class="k-select">
+                                                                    <span class="k-icon k-i-arrow-60-down"></span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="k-filter-toolbar-item k-filter-value">
+                                                        <span class="k-widget k-datepicker">
+                                                            <span class="k-picker-wrap">
+                                                                <input type="text" class="k-input" style="width: 100%;">
+                                                                <span class="k-select">
+                                                                    <span class="k-icon k-i-calendar"></span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="k-filter-toolbar-item">
+                                                        <button class="k-button-flat k-button k-button-icon">
+                                                            <span class="k-icon k-i-close"></span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="k-filter-preview"><span class="k-filter-preview-bracket">(</span><span
+                    class="k-filter-preview-field">Discontinued</span><span class="k-filter-preview-criteria"> Is equal to </span><span
+                    class="k-filter-preview-value">'true'</span><span class="k-filter-preview-operator"> AND </span><span
+                    class="k-filter-preview-field">UnitsInStock</span><span class="k-filter-preview-criteria"> Is equal to </span><span
+                    class="k-filter-preview-value">'2'</span><span class="k-filter-preview-operator"> AND </span><span
+                    class="k-filter-preview-bracket">(</span><span class="k-filter-preview-bracket">(</span><span
+                    class="k-filter-preview-field">DeliveryDate</span><span class="k-filter-preview-criteria"> Is equal to </span><span
+                    class="k-filter-preview-value">'Fri Aug 09 2019 00:00:00 GMT+0300 (Eastern European Summer Time)'</span><span
+                    class="k-filter-preview-bracket">)</span><span class="k-filter-preview-bracket">)</span><span
+                    class="k-filter-preview-bracket">)</span></div><button type="button" class="k-button k-filter-apply">Apply</button>
+        </div>
+    </div>
+</body>
+</html>

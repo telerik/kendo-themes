@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Grid</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <kendo-grid class="k-widget k-grid">
+            <div class="k-grid-aria-root">
+                <div class="k-grid-header" style="padding: 0px 14px 0px 0px;">
+                    <div class="k-grid-header-wrap">
+                        <table>
+                            <colgroup>
+                                <col style="width: 100px;" />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="k-header k-grid-draggable-header" rowspan="1" colspan="1">
+                                        <span  class="k-cell-inner">
+                                            <span  class="k-link">
+                                                <span  class="k-column-title">
+                                                    ProductName
+                                                </span>
+                                                <span class="k-icon k-i-sort-asc-sm"></span>
+                                                  <span class="k-sort-order">3</span>
+                                            </span>
+                                            <span  class="k-sort-status"  style="position: absolute; left: -10000px;">Sorted Ascending</span>
+                                        </span>
+                                          <span class="k-column-resizer" style="display: block; right: 0px;"></span>
+                                    </th>
+                                     <th class="k-header k-grid-draggable-header" rowspan="1" colspan="1">
+                                        <span  class="k-cell-inner">
+                                            <span  class="k-link">
+                                                <span  class="k-column-title">
+                                                   Discontinued
+                                                </span>
+                                                <span class="k-icon k-i-sort-asc-sm"></span>
+                                                <span class="k-sort-order">1</span>
+                                            </span>
+                                            <span class="k-sort-status" style="position: absolute; left: -10000px;">Sorted Ascending</span>
+                                           </span>
+                                        <span class="k-column-resizer" style="display: block; right: 0px;"></span>
+                                    </th>
+                                       <th class="k-header k-grid-draggable-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">
+                                                   UnitsInStock
+                                                </span>
+                                                <span class="k-icon k-i-sort-asc-sm"></span>
+                                                <span class="k-sort-order">2</span>
+                                            </span>
+                                            <span class="k-sort-status" style="position: absolute; left: -10000px;">Sorted Ascending</span>
+                                            </span>
+                                        <span class="k-column-resizer" style="display: block; right: 0px;"></span>
+                                    </th>
+                                 </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </kendo-grid>
+
+
+        <kendo-grid class="k-widget k-grid">
+            <div class="k-grid-aria-root">
+                <div class="k-grid-header" style="padding: 0px 14px 0px 0px;">
+                    <div class="k-grid-header-wrap">
+                        <table>
+                            <colgroup>
+                                <col style="width: 100px;" />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                     <th class="k-header k-filterable k-grid-draggable-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">ProductName</span>
+                                                <span aria-label="Sortable" class="k-icon k-i-sort-asc-sm"></span>
+                                                <span class="k-sort-order">2</span>
+                                            </span>
+                                            <span class="k-sort-status" role="status" style="position: absolute; left: -10000px;">Sorted Ascending</span>
+                                            <kendo-grid-filter-menu>
+                                                <a href="#" class="k-grid-filter"><span class="k-icon k-i-filter"></span></a>
+                                            </kendo-grid-filter-menu>
+                                        </span>
+                                        <span class="k-column-resizer" style="display: block; right: 0px;"></span>
+                                    </th>
+                                    <th class="k-header k-filterable k-grid-draggable-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Discontinued Discontinued Discontinued</span>
+                                                <span class="k-icon k-i-sort-asc-sm"></span>
+                                                <span class="k-sort-order">2</span>
+                                            </span>
+                                            <span class="k-sort-status" style="position: absolute; left: -10000px;">Sorted Ascending</span>
+                                            <kendo-grid-filter-menu>
+                                                <a href="#" class="k-grid-filter"><span class="k-icon k-i-filter"></span></a>
+                                            </kendo-grid-filter-menu>
+                                        </span>
+                                        <span class="k-column-resizer" style="display: block; right: 0px;"></span>
+                                    </th>
+                                    <th class="k-header k-filterable k-grid-draggable-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">UnitsInStockUnitsInStockUnitsInStockvvvv</span>
+                                                <span class="k-icon k-i-sort-asc-sm"></span>
+                                                <span  class="k-sort-order">3</span>
+                                            </span>
+                                            <span class="k-sort-status" style="position: absolute; left: -10000px;">Sorted Ascending</span>
+                                            <kendo-grid-filter-menu>
+                                                <a href="#" class="k-grid-filter"><span class="k-icon k-i-filter"></span></a>
+                                            </kendo-grid-filter-menu>
+                                        </span>
+                                        <span class="k-column-resizer" style="display: block; right: 0px;"></span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+        </kendo-grid>
+
+        <kendo-grid class="k-widget k-grid">
+            <div class="k-grid-aria-root">
+                <div class="k-grid-header" style="padding: 0px 14px 0px 0px;">
+                    <div class="k-grid-header-wrap">
+                        <table>
+                            <colgroup>
+                                <col style="width: 100px;" />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="k-header k-filterable k-grid-draggable-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">
+                                                   ProductName
+                                                </span>
+                                                <span class="k-icon k-i-sort-asc-sm"></span>
+                                                <span class="k-sort-order">1</span>
+                                            </span>
+                                            <span class="k-sort-status"  style="position: absolute; left: -10000px;">Sorted Ascending</span>
+                                            <kendo-grid-column-menu>
+                                                <a class="k-grid-column-menu k-grid-filter">
+                                                    <span class="k-icon k-i-more-vertical"></span>
+                                                </a>
+                                            </kendo-grid-column-menu>
+                                        </span>
+                                        <span class="k-column-resizer" style="display: block; right: 0px;"></span>
+                                    </th>
+                                    <th class="k-header k-filterable k-grid-draggable-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Discontinued Discontinued Discontinued
+                                                </span>
+                                                <span  aria-label="Sortable" class="k-icon k-i-sort-asc-sm"></span>
+
+                                                <span class="k-sort-order">2</span>
+                                            </span>
+                                            <span class="k-sort-status"  style="position: absolute; left: -10000px;">Sorted Ascending</span>
+                                             <kendo-grid-column-menu>
+                                                <a class="k-grid-column-menu k-grid-filter">
+                                                    <span class="k-icon k-i-more-vertical"></span>
+                                                </a>
+                                            </kendo-grid-column-menu>
+                                        </span>
+                                        <span class="k-column-resizer" style="display: block; right: 0px;"></span>
+                                    </th>
+                                    <th class="k-header k-filterable k-grid-draggable-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                  <span class="k-column-title">UnitsInStock
+                                                </span>
+                                                <span class="k-icon k-i-sort-asc-sm"></span>
+                                                 <span class="k-sort-order">3</span>
+                                            </span>
+                                            <span class="k-sort-status" style="position: absolute; left: -10000px;">Sorted Ascending</span>
+                                            <kendo-grid-column-menu>
+                                                <a class="k-grid-column-menu k-grid-filter">
+                                                    <span class="k-icon k-i-more-vertical"></span>
+                                                </a>
+                                            </kendo-grid-column-menu>
+                                        </span>
+                                        <span class="k-column-resizer" style="display: block; right: 0px;"></span>
+                                    </th>
+                                </tr>
+                                <tr class="k-filter-row">
+                                     <td>
+                                        <kendo-grid-string-filter-cell class="k-filtercell">
+                                            <kendo-grid-filter-wrapper-cell class="k-filtercell-wrapper">
+                                                <input class="k-textbox" />
+                                                <kendo-grid-filter-cell-operators class="k-filtercell-operator">
+                                                   <kendo-dropdownlist class="k-dropdown-operator k-widget k-dropdown">
+                                                        <span class="k-dropdown-wrap">
+                                                            <span class="k-input">Contains
+                                                            </span>
+                                                            <span class="k-select"><span class="k-icon k-i-filter"></span></span>
+
+                                                        </span>
+
+                                                    </kendo-dropdownlist>
+                                                    <button class="k-button k-button-icon">
+                                                        <span class="k-icon k-i-filter-clear"></span>
+                                                    </button>
+                                                </kendo-grid-filter-cell-operators>
+                                            </kendo-grid-filter-wrapper-cell>
+                                        </kendo-grid-string-filter-cell>
+                                        </td>
+                                    <td>
+                                        <kendo-grid-string-filter-cell class="k-filtercell">
+                                            <kendo-grid-filter-wrapper-cell class="k-filtercell-wrapper">
+                                                <input class="k-textbox" />
+                                                <kendo-grid-filter-cell-operators class="k-filtercell-operator">
+                                                     <kendo-dropdownlist class="k-dropdown-operator k-widget k-dropdown">
+                                                        <span class="k-dropdown-wrap">
+                                                            <span class="k-input" >Contains
+                                                            </span>
+                                                            <span class="k-select"><span class="k-icon k-i-filter"></span></span>
+
+                                                        </span>
+                                                    </kendo-dropdownlist>
+                                                    <button class="k-button k-button-icon">
+                                                        <span class="k-icon k-i-filter-clear"></span>
+                                                    </button>
+                                                </kendo-grid-filter-cell-operators>
+                                            </kendo-grid-filter-wrapper-cell>
+                                        </kendo-grid-string-filter-cell>
+                                    </td>
+                                    <td>
+                                         <kendo-grid-string-filter-cell class="k-filtercell">
+                                            <kendo-grid-filter-wrapper-cell class="k-filtercell-wrapper">
+                                                <input class="k-textbox" />
+                                                <kendo-grid-filter-cell-operators class="k-filtercell-operator">
+                                                    <kendo-dropdownlist class="k-dropdown-operator k-widget k-dropdown">
+                                                        <span class="k-dropdown-wrap">
+                                                            <span class="k-input">Contains</span>
+                                                            <span class="k-select"><span class="k-icon k-i-filter"></span></span>
+
+                                                        </span>
+                                                    </kendo-dropdownlist>
+                                                    <button class="k-button k-button-icon">
+                                                        <span class="k-icon k-i-filter-clear"></span>
+                                                    </button>
+                                                </kendo-grid-filter-cell-operators>
+                                            </kendo-grid-filter-wrapper-cell>
+                                        </kendo-grid-string-filter-cell>
+                                    </td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+        </kendo-grid>
+
+
+
+    </div>
+
+</body>
+</html>

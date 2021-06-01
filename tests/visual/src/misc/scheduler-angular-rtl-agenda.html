@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Scheduler Angular Agenda -- RTL</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 1200px;
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area">
+        <kendo-scheduler class="k-widget k-scheduler k-floatwrap k-rtl" dir="rtl">
+            <kendo-scheduler-toolbar class="k-scheduler-toolbar k-header k-floatwrap">
+                <ul class="k-scheduler-navigation k-reset">
+                    <li class="k-header k-nav-today"><a class="k-link">Today</a></li>
+                    <li class="k-header k-nav-prev"><a class="k-link"><span class="k-icon k-i-arrow-60-left"></span></a></li>
+                    <li class="k-header k-nav-next"><a class="k-link"><span class="k-icon k-i-arrow-60-right"></span></a></li>
+                    <li class="k-nav-current"><a class="k-link"><span class="k-icon k-i-calendar"></span><span class="k-sm-date-format">6/23/2019 - 6/29/2019</span><span class="k-lg-date-format">Sunday, June 23, 2019 - Saturday, June 29, 2019</span></a></li>
+                </ul>
+                <ul class="k-scheduler-views k-reset">
+                    <li class="k-current-view"><a class="k-link">Agenda</a></li>
+                    <li><a class="k-link">Day</a></li>
+                    <li><a class="k-link">Week</a></li>
+                    <li><a class="k-link">Month</a></li>
+                    <li><a class="k-link">Timeline</a></li>
+                    <li class="k-state-selected"><a class="k-link">Agenda</a></li>
+                </ul>
+            </kendo-scheduler-toolbar>
+            <agenda-view-internal>
+                <table class="k-scheduler-layout k-scheduler-agendaview k-scheduler-agenda">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="k-scheduler-header">
+                                    <div class="k-scheduler-header-wrap">
+                                        <table class="k-scheduler-table">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="k-scheduler-datecolumn">Date</th>
+                                                    <th class="k-scheduler-timecolumn">Time</th>
+                                                    <th>Event</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="k-scheduler-content" style="height: 508px;">
+                                    <table class="k-scheduler-table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="k-scheduler-datecolumn" rowspan="9">
+                                                    <strong class="k-scheduler-agendaday">24</strong>
+                                                    <em class="k-scheduler-agendaweek">Monday</em>
+                                                    <span class="k-scheduler-agendadate">Jun 2013</span>
+                                                </td>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div><span class="k-icon k-i-arrow-60-left"></span> all day</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+                                                        All day event
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+                                                        Event 1
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+                                                        Event 2
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+                                                        Event 3
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+                                                        Event 4
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+                                                        Event 5
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+                                                        Event 6
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+                                                        Event 7
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+                                                        Event 8
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-datecolumn" rowspan="9">
+                                                    <strong class="k-scheduler-agendaday">25</strong>
+                                                    <em class="k-scheduler-agendaweek">Tuesday</em>
+                                                    <span class="k-scheduler-agendadate">Jun 2013</span>
+                                                </td>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div><span class="k-icon k-i-arrow-60-left"></span> all day</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+                                                        All day event
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+                                                        Event 1
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+                                                        Event 2
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+                                                        Event 3
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>
+                                                        Event 4
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+                                                        Event 5
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+                                                        Event 6
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+                                                        Event 7
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="k-scheduler-timecolumn">
+                                                    <div>8:30 AM-2:30 PM</div>
+                                                </td>
+                                                <td>
+                                                    <div class="k-task">
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>
+                                                        Event 8
+                                                        <a class="k-link k-event-delete"><span class="k-icon k-i-close"></span></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </agenda-view-internal>
+        </kendo-scheduler>
+    </div>
+</body>
+</html>

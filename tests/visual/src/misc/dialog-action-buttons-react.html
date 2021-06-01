@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Dialog Action Buttons React</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, min-content);
+            align-items: start;
+        }
+        /* test page overrides */
+        .k-dialog {
+            position: relative;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <div class="k-widget k-window k-dialog">
+            <div class="k-window-titlebar k-dialog-titlebar k-header">
+               <div class="k-window-title k-dialog-title">Title</div>
+               <div class="k-window-actions k-dialog-actions">
+                   <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
+                       <span class="k-icon k-i-x"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="k-content k-window-content k-dialog-content">
+                Action Buttons at start position
+            </div>
+            <div class="k-dialog-buttongroup k-actions k-actions-start">
+                <button class="k-button k-primary">Cancel</button>
+                <button class="k-button">Delete</button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog">
+            <div class="k-window-titlebar k-dialog-titlebar k-header">
+               <div class="k-window-title k-dialog-title">Title</div>
+               <div class="k-window-actions k-dialog-actions">
+                   <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
+                       <span class="k-icon k-i-x"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="k-content k-window-content k-dialog-content">
+                Action Buttons at center position
+            </div>
+            <div class="k-dialog-buttongroup k-actions k-actions-center">
+                <button class="k-button k-primary">Cancel</button>
+                <button class="k-button">Delete</button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog">
+            <div class="k-window-titlebar k-dialog-titlebar k-header">
+               <div class="k-window-title k-dialog-title">Title</div>
+               <div class="k-window-actions k-dialog-actions">
+                   <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
+                       <span class="k-icon k-i-x"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="k-content k-window-content k-dialog-content">
+                Action Buttons at end position
+            </div>
+            <div class="k-dialog-buttongroup k-actions k-actions-end">
+                <button class="k-button k-primary">Cancel</button>
+                <button class="k-button">Delete</button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog">
+            <div class="k-window-titlebar k-dialog-titlebar k-header">
+               <div class="k-window-title k-dialog-title">Title</div>
+               <div class="k-window-actions k-dialog-actions">
+                   <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
+                       <span class="k-icon k-i-x"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="k-content k-window-content k-dialog-content">
+                Action Buttons with stretched position
+            </div>
+            <div class="k-dialog-buttongroup k-actions k-actions-stretched">
+                <button class="k-button k-primary">Cancel</button>
+                <button class="k-button">Delete</button>
+            </div>
+        </div>
+</body>
+</html>

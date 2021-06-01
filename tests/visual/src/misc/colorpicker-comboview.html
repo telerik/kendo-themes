@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>ColorPicker</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .k-animation-container {
+            position: relative;
+        }
+
+        .k-colorpicker,
+        .k-colorpalette {
+            vertical-align: top;
+        }
+    </style>
+</head>
+    <body>
+
+        <div id="test-area" class="grid">
+
+            <section>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-popup k-colorpicker-popup">
+                        <div class="k-widget k-flatcolorpicker">
+                            <div class="k-hbox k-hsv-wrap">
+                                <div class="k-hsv-rectangle" style="background-color: rgb(255, 150, 0);">
+                                    <div class="k-hsv-gradient">
+                                        <div class="k-draghandle" style="top: 4.23529px; left: 84.5783px;"></div>
+                                    </div>
+                                </div>
+                                <div class="k-hbox k-sliders-wrap">
+                                    <kendo-slider class="k-widget k-slider k-slider-vertical k-hue-slider">
+                                        <div class="k-slider-wrap"style="position: relative;">
+                                            <div class="k-slider-track" style="height: 180px;">
+                                                <div class="k-slider-selection" style="height: 17px;"></div>
+                                                <a class="k-draghandle" style="bottom: 9px;"></a>
+                                            </div>
+                                        </div>
+                                    </kendo-slider>
+                                </div>
+                            </div>
+                            <div class="k-colorinputs">
+                                <div class="k-hbox k-gradient-values">
+                                    <input class="k-textbox k-hex-value" value="#ffffff" />
+                                    <span class="k-numerictextbox"><input class="k-textbox" value="255" /></span>
+                                    <span class="k-numerictextbox"><input class="k-textbox" value="255" /></span>
+                                    <span class="k-numerictextbox"><input class="k-textbox" value="255" /></span>
+                                </div>
+                                <div class="k-hbox k-gradient-values">
+                                    <div class="k-hex-value">hex</div>
+                                    <div>r</div>
+                                    <div>g</div>
+                                    <div>b</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="k-widget k-colorpalette">
+                            <div><table class="k-palette k-reset">
+                                <tbody>
+                                    <tr>
+                                        <td class="k-item" style="background-color: rgb(240, 208, 201); width: 20px; height: 20px;"></td>
+                                        <td class="k-item" style="background-color: rgb(226, 162, 147); width: 20px; height: 20px;"></td>
+                                        <td class="k-item" style="background-color: rgb(212, 115, 94); width: 20px; height: 20px;"></td>
+                                        <td class="k-item" style="background-color: rgb(101, 40, 26); width: 20px; height: 20px;"></td>
+                                        <td class="k-item" style="background-color: rgb(237, 223, 218); width: 20px; height: 20px;"></td>
+                                        <td class="k-item" style="background-color: rgb(220, 192, 182); width: 20px; height: 20px;"></td>
+                                        <td class="k-item" style="background-color: rgb(203, 160, 146); width: 20px; height: 20px;"></td>
+                                        <td class="k-item" style="background-color: rgb(123, 75, 58); width: 20px; height: 20px;"></td>
+                                        <td class="k-item" style="background-color: rgb(252, 236, 213); width: 20px; height: 20px;"></td>
+                                        <td class="k-item k-state-selected" style="background-color: rgb(249, 217, 171); width: 20px; height: 20px;"></td>
+                                        <td class="k-item" style="background-color: rgb(246, 199, 129); width: 20px; height: 20px;"></td>
+                                        <td class="k-item" style="background-color: rgb(200, 125, 14); width: 20px; height: 20px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-item" style="background-color: rgb(225, 220, 165); width: 20px; height: 20px;"></td>
+                                        <td class="k-item" style="background-color: rgb(208, 201, 116); width: 20px; height: 20px;"></td>
+                                        <td class="k-item" style="background-color: rgb(162, 154, 54); width: 20px; height: 20px;"></td>
+                                        <td class="k-item" style="background-color: rgb(81, 77, 27); width: 20px; height: 20px;"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-popup k-colorpicker-popup">
+                        <div class="k-widget k-flatcolorpicker">
+                            <div class="k-hbox k-hsv-wrap">
+                                <div class="k-hsv-rectangle" style="background-color: rgb(255, 0, 0);">
+                                    <div class="k-hsv-gradient">
+                                        <div class="k-draghandle" style="left: 100px; top: 100px;"></div>
+                                    </div>
+                                </div>
+                                <div class="k-hbox k-sliders-wrap">
+                                    <div class="k-widget k-slider k-slider-vertical k-hue-slider">
+                                        <div class="k-slider-wrap" style="position: relative;">
+                                            <div class="k-slider-track" style="height: 180px;">
+                                                <div class="k-slider-selection" style="height: 0px;"></div>
+                                                <a class="k-draghandle" style="bottom: -8px;"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="k-widget k-slider k-slider-vertical k-alpha-slider">
+                                        <div class="k-slider-wrap" style="position: relative;">
+                                            <div class="k-slider-track" style="height: 180px;">
+                                                <div class="k-slider-selection" style="height: 180px;"></div>
+                                                <a class="k-draghandle" style="bottom: 172px;"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-colorinputs">
+                                <div class="k-hbox k-gradient-values">
+                                    <input class="k-textbox k-hex-value" value="#ffffff" />
+                                    <span class="k-numerictextbox"><input class="k-textbox" value="255" /></span>
+                                    <span class="k-numerictextbox"><input class="k-textbox" value="255" /></span>
+                                    <span class="k-numerictextbox"><input class="k-textbox" value="255" /></span>
+                                    <span class="k-numerictextbox"><input class="k-textbox" value="1" /></span>
+                                </div>
+                                <div class="k-hbox k-gradient-values">
+                                    <div class="k-hex-value">hex</div>
+                                    <div>r</div>
+                                    <div>g</div>
+                                    <div>b</div>
+                                    <div>a</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div value="#ffcc33" class="k-widget k-colorpalette">
+                            <div>
+                                <table class="k-palette k-reset">
+                                        <table class="k-palette k-reset">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="k-item" style="background-color: rgb(255, 255, 255); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(0, 0, 0); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(230, 230, 230); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(67, 85, 105); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(67, 113, 196); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(237, 126, 50); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(165, 164, 165); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(254, 191, 4); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(90, 155, 213); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(113, 174, 72); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(242, 242, 243); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(127, 127, 127); width: 24px; height: 24px;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="k-item" style="background-color: rgb(209, 206, 206); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(213, 221, 227); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(218, 225, 244); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(252, 229, 212); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(222, 237, 237); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(255, 242, 204); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(222, 234, 246); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(225, 239, 217); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(215, 216, 216); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(88, 89, 89); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(174, 171, 171); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(173, 186, 202); width: 24px; height: 24px;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="k-item" style="background-color: rgb(180, 197, 231); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(246, 202, 172); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(219, 219, 219); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(255, 228, 152); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(188, 214, 238); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(197, 224, 178); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(191, 191, 192); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(63, 63, 63); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(118, 112, 112); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(133, 149, 177); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(143, 171, 219); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(245, 177, 131); width: 24px; height: 24px;"></td>
+                                                </tr><tr>
+                                                    <td class="k-item" style="background-color: rgb(201, 200, 201); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(254, 217, 101); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(155, 196, 229); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(168, 208, 141); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(165, 165, 166); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(38, 38, 37); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(57, 57, 57); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(51, 64, 80); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(46, 84, 150); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(196, 90, 17); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(123, 123, 122); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(191, 144, 0); width: 24px; height: 24px;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="k-item" style="background-color: rgb(47, 117, 181); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(84, 130, 53); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(127, 127, 127); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(11, 12, 12); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(22, 22, 22); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(34, 42, 52); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(32, 55, 100); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(132, 61, 11); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(82, 82, 82); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(127, 96, 0); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(29, 77, 121); width: 24px; height: 24px;"></td>
+                                                    <td class="k-item" style="background-color: rgb(55, 86, 35); width: 24px; height: 24px;"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </body>
+</html>

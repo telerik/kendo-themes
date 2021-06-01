@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Buttons</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        #test-area > section {
+            position: relative;
+            min-height: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <section>
+            <p>Angular</p>
+            <kendo-dropdownbutton class="k-widget k-dropdown-button">
+                <button class="k-button-icontext k-button">
+                    <span class="k-icon k-i-cog"></span>
+                    User Settings
+                </button>
+            </kendo-dropdownbutton>
+
+            <kendo-popup class="k-animation-container k-animation-container-fixed k-animation-container-shown" style="position: absolute; left: 0; top: 85px;">
+                <div class="k-popup k-list-container k-reset k-group">
+                    <kendo-button-list>
+                        <ul class="k-list k-reset">
+                            <li class="k-item k-state-focused">
+                                <span class="k-icon k-i-pdfa"></span>
+                                <span>My Profile</span>
+                            </li>
+                            <li class="k-item">
+                                <span class="k-icon k-i-xlsa"></span>
+                                <span>Friend Requests</span>
+                            </li>
+                            <li class="k-item">
+                                <span class="k-icon k-i-calendar"></span>
+                                <span>Account Settings</span>
+                            </li>
+                        </ul>
+                    </kendo-button-list>
+                </div>
+            </kendo-popup>
+        </section>
+
+        <section>
+            <p>Angular - RTL</p>
+            <kendo-dropdownbutton class="k-widget k-dropdown-button" dir="rtl">
+                <button class="k-button-icontext k-button">
+                    <span class="k-icon k-i-cog"></span>
+                    User Settings
+                </button>
+            </kendo-dropdownbutton>
+
+            <kendo-popup class="k-animation-container k-animation-container-fixed k-animation-container-shown" style="position: absolute; left: 0; top: 85px;">
+                <div class="k-popup k-list-container k-reset k-group">
+                    <kendo-button-list dir="rtl">
+                        <ul class="k-list k-reset" unselectable="on">
+                            <li class="k-item k-state-focused">
+                                <span class="k-icon k-i-pdfa"></span>
+                                <span>RTL mode with icons</span>
+                            </li>
+                            <li class="k-item">
+                                <span class="k-icon k-i-xlsa"></span>
+                                <span>Friend Requests</span>
+                            </li>
+                            <li class="k-item">
+                                <span class="k-icon k-i-calendar"></span>
+                                <span>Account Settings</span>
+                            </li>
+                        </ul>
+                    </kendo-button-list>
+                </div>
+            </kendo-popup>
+        </section>
+    </div>
+
+</body>
+</html>

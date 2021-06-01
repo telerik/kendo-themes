@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Notification -- Angular</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        body {
+            background: #fcfcfc;
+        }
+
+        #test-area {
+            align-items: start;
+            justify-items: start;
+        }
+
+        .k-notification-container {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
+
+        <span class="k-colspan-all">LTR</span>
+
+        <div>
+            <div class="k-notification-container">
+                <div class="k-widget k-notification">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Default notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-closable">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Closable notification</div>
+                        <a class="k-icon k-i-close"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-primary">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Primary notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-secondary">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Secondary notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-tertiary">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Tertiary notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-info">
+                    <div class="k-notification-wrap">
+                        <span class="k-icon k-i-info"></span>
+                        <div class="k-notification-content">Info notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-success">
+                    <div class="k-notification-wrap">
+                        <span class="k-icon k-i-success"></span>
+                        <div class="k-notification-content">Success notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-warning">
+                    <div class="k-notification-wrap">
+                        <span class="k-icon k-i-warning"></span>
+                        <div class="k-notification-content">Warning notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-error">
+                    <div class="k-notification-wrap">
+                        <span class="k-icon k-i-error"></span>
+                        <div class="k-notification-content">Error notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-dark">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Dark notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-light">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Light notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-inverse">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Inverse notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span class="k-colspan-all">RTL</span>
+        <div dir="rtl">
+            <div class="k-notification-container">
+                <div class="k-widget k-notification">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Default notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-closable">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Closable notification</div>
+                        <a class="k-icon k-i-close"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-primary">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Primary notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-secondary">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Secondary notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-tertiary">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Tertiary notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-info">
+                    <div class="k-notification-wrap">
+                        <span class="k-icon k-i-info"></span>
+                        <div class="k-notification-content">Info notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-success">
+                    <div class="k-notification-wrap">
+                        <span class="k-icon k-i-success"></span>
+                        <div class="k-notification-content">Success notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-warning">
+                    <div class="k-notification-wrap">
+                        <span class="k-icon k-i-warning"></span>
+                        <div class="k-notification-content">Warning notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-error">
+                    <div class="k-notification-wrap">
+                        <span class="k-icon k-i-error"></span>
+                        <div class="k-notification-content">Error notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-dark">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Dark notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-light">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Light notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <div class="k-notification-container">
+                <div class="k-widget k-notification k-notification-inverse">
+                    <div class="k-notification-wrap">
+                        <div class="k-notification-content">Inverse notification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>

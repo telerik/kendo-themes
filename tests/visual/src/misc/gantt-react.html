@@ -1,0 +1,596 @@
+
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Gantt -- react</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        .k-gantt {
+            height: 700px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="test-area">
+
+        <div class="k-gantt">
+            <div class="k-widget k-toolbar k-gantt-toolbar k-gantt-header">
+                <span class="k-spacer"></span>
+                <span class="k-gantt-views">
+                    <div class="k-gantt-views-wrapper">
+                        <div class="k-button-group k-gantt-views">
+                            <button class="k-button">Day</button>
+                            <button class="k-button k-state-selected">Week</button>
+                            <button class="k-button">Month</button>
+                        </div>
+                        <div class="k-widget k-dropdown-button k-views-dropdown">
+                            <button class="k-button">Week
+                                <span class="k-icon k-i-arrow-60-down"></span>
+                            </button>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="k-gantt-content">
+                <div class="k-widget k-grid k-treelist-scrollable">
+                    <table class="k-table-layout-fixed" style="width: 4500px;">
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col style="width: 200px;">
+                            <col style="width: 4200px;">
+                        </colgroup>
+                        <thead class="k-grid-header">
+                            <tr>
+                            <th colspan="2" rowspan="1" class="k-header k-grid-header-sticky" style="left: 0px; right: 0px; border-right-width: 1px; top: 0px;"><a class="k-link">summary</a></th>
+                            <th colspan="1" rowspan="2" class="k-header" style="top: 0px;">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                        <td colspan="7" class="k-header k-nonwork-hour">Sun, 6/1 - Sun, 6/8</td>
+                                        <td colspan="7" class="k-header k-nonwork-hour">Sun, 6/8 - Sun, 6/15</td>
+                                        <td colspan="7" class="k-header k-nonwork-hour">Sun, 6/15 - Sun, 6/22</td>
+                                        <td colspan="7" class="k-header k-nonwork-hour">Sun, 6/22 - Sun, 6/29</td>
+                                        <td colspan="7" class="k-header k-nonwork-hour">Sun, 6/29 - Sun, 7/6</td>
+                                        <td colspan="7" class="k-header k-nonwork-hour">Sun, 7/6 - Sun, 7/13</td>
+                                        </tr>
+                                        <tr>
+                                        <td colspan="1" class="k-header k-nonwork-hour">Sun, 6/1</td>
+                                        <td colspan="1" class="k-header">Mon, 6/2</td>
+                                        <td colspan="1" class="k-header">Tue, 6/3</td>
+                                        <td colspan="1" class="k-header">Wed, 6/4</td>
+                                        <td colspan="1" class="k-header">Thu, 6/5</td>
+                                        <td colspan="1" class="k-header">Fri, 6/6</td>
+                                        <td colspan="1" class="k-header k-nonwork-hour">Sat, 6/7</td>
+                                        <td colspan="1" class="k-header k-nonwork-hour">Sun, 6/8</td>
+                                        <td colspan="1" class="k-header">Mon, 6/9</td>
+                                        <td colspan="1" class="k-header">Tue, 6/10</td>
+                                        <td colspan="1" class="k-header">Wed, 6/11</td>
+                                        <td colspan="1" class="k-header">Thu, 6/12</td>
+                                        <td colspan="1" class="k-header">Fri, 6/13</td>
+                                        <td colspan="1" class="k-header k-nonwork-hour">Sat, 6/14</td>
+                                        <td colspan="1" class="k-header k-nonwork-hour">Sun, 6/15</td>
+                                        <td colspan="1" class="k-header">Mon, 6/16</td>
+                                        <td colspan="1" class="k-header">Tue, 6/17</td>
+                                        <td colspan="1" class="k-header">Wed, 6/18</td>
+                                        <td colspan="1" class="k-header">Thu, 6/19</td>
+                                        <td colspan="1" class="k-header">Fri, 6/20</td>
+                                        <td colspan="1" class="k-header k-nonwork-hour">Sat, 6/21</td>
+                                        <td colspan="1" class="k-header k-nonwork-hour">Sun, 6/22</td>
+                                        <td colspan="1" class="k-header">Mon, 6/23</td>
+                                        <td colspan="1" class="k-header">Tue, 6/24</td>
+                                        <td colspan="1" class="k-header">Wed, 6/25</td>
+                                        <td colspan="1" class="k-header">Thu, 6/26</td>
+                                        <td colspan="1" class="k-header">Fri, 6/27</td>
+                                        <td colspan="1" class="k-header k-nonwork-hour">Sat, 6/28</td>
+                                        <td colspan="1" class="k-header k-nonwork-hour">Sun, 6/29</td>
+                                        <td colspan="1" class="k-header">Mon, 6/30</td>
+                                        <td colspan="1" class="k-header">Tue, 7/1</td>
+                                        <td colspan="1" class="k-header">Wed, 7/2</td>
+                                        <td colspan="1" class="k-header">Thu, 7/3</td>
+                                        <td colspan="1" class="k-header">Fri, 7/4</td>
+                                        <td colspan="1" class="k-header k-nonwork-hour">Sat, 7/5</td>
+                                        <td colspan="1" class="k-header k-nonwork-hour">Sun, 7/6</td>
+                                        <td colspan="1" class="k-header">Mon, 7/7</td>
+                                        <td colspan="1" class="k-header">Tue, 7/8</td>
+                                        <td colspan="1" class="k-header">Wed, 7/9</td>
+                                        <td colspan="1" class="k-header">Thu, 7/10</td>
+                                        <td colspan="1" class="k-header">Fri, 7/11</td>
+                                        <td colspan="1" class="k-header k-nonwork-hour">Sat, 7/12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </th>
+                            </tr>
+                            <tr>
+                                <th colspan="1" rowspan="1" class="k-header k-grid-header-sticky" style="left: 0px; right: 200px; top: 37px;">
+                                    <a class="k-link">id title</a>
+                                </th>
+                                <th colspan="1" rowspan="1" class="k-header k-grid-header-sticky" style="left: 100px; right: 0px; border-right-width: 1px; top: 37px;">
+                                    <a class="k-link">title</a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="k-master-row" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-collapse"></span>7
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">
+                                    Software validation, research and implementation
+                                </td>
+                                <td>
+                                    <div class="k-task k-task-summary" style="left: 83px; top: 15px; width: 4000px;">
+                                        <div class="k-task-summary-progress" style="width: 1828px;">
+                                            <div class="k-task-summary-complete"></div>
+                                        </div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row k-alt" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>18
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">
+                                    Project Kickoff
+                                </td>
+                                <td>
+                                    <div class="k-task k-task-milestone" style="left: 77px; top: 13px;">
+                                        <div class="k-task-milestone-content"></div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span><span class="k-icon k-i-collapse"></span>11
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">
+                                    Research
+                                </td>
+                                <td>
+                                    <div class="k-task k-task-summary" style="left: 83px; top: 15px; width: 500px;">
+                                        <div class="k-task-summary-progress" style="width: 288px;">
+                                            <div class="k-task-summary-complete"></div>
+                                        </div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row k-alt" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>19
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">
+                                    Validation with Customers
+                                </td>
+                                <td>
+                                    <div class="k-task k-task-single" style="left: 83px; top: 8px; width: 200px;">
+                                        <div class="k-task-complete" style="width: 50px;"></div>
+                                        <div class="k-task-content">Validation with Customers</div>
+                                        <span class="k-task-actions">
+                                            <a class="k-link k-task-delete">
+                                                <span class="k-icon k-i-close"></span>
+                                            </a>
+                                        </span>
+                                        <span class="k-resize-handle k-resize-w"></span>
+                                        <span class="k-resize-handle k-resize-e"></span>
+                                        <div class="k-task-draghandle"></div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>20
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">
+                                    Market Research
+                                </td>
+                                <td>
+                                    <div class="k-task k-task-single" style="left: 83px; top: 8px; width: 8px;">
+                                        <div class="k-task-complete" style="width: 7px;"></div>
+                                        <div class="k-task-content">Market Research</div>
+                                        <span class="k-task-actions">
+                                            <a class="k-link k-task-delete">
+                                                <span class="k-icon k-i-close"></span>
+                                            </a>
+                                        </span>
+                                        <span class="k-resize-handle k-resize-w"></span>
+                                        <span class="k-resize-handle k-resize-e"></span>
+                                        <div class="k-task-draghandle"></div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row k-alt" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>39
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">
+                                    Functional and Technical Specification
+                                </td>
+                                <td>
+                                    <div class="k-task k-task-single" style="left: 283px; top: 8px; width: 300px;">
+                                        <div class="k-task-complete" style="width: 198px;"></div>
+                                        <div class="k-task-content">Functional and Technical Specification</div>
+                                        <span class="k-task-actions">
+                                            <a class="k-link k-task-delete">
+                                                <span class="k-icon k-i-close"></span>
+                                            </a>
+                                        </span>
+                                        <span class="k-resize-handle k-resize-w"></span>
+                                        <span class="k-resize-handle k-resize-e"></span>
+                                        <div class="k-task-draghandle"></div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-collapse"></span>12
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Design</td>
+                                <td>
+                                    <div class="k-task k-task-summary" style="left: 783px; top: 15px; width: 500px;">
+                                        <div class="k-task-summary-progress" style="width: 300px;">
+                                            <div class="k-task-summary-complete"></div>
+                                        </div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row k-alt" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>22
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">UI Design</td>
+                                <td>
+                                    <div class="k-task k-task-single" style="left: 783px; top: 8px; width: 200px;">
+                                        <div class="k-task-complete" style="width: 112px;"></div>
+                                        <div class="k-task-content">UI Design</div>
+                                        <span class="k-task-actions">
+                                            <a class="k-link k-task-delete">
+                                                <span class="k-icon k-i-close"></span>
+                                            </a>
+                                        </span>
+                                        <span class="k-resize-handle k-resize-w"></span>
+                                        <span class="k-resize-handle k-resize-e"></span>
+                                        <div class="k-task-draghandle"></div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row k-state-selected" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>23
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">HTML Prototype</td>
+                                <td>
+                                    <div class="k-task k-task-single" style="left: 983px; top: 8px; width: 300px;">
+                                        <div class="k-task-complete" style="width: 192px;"></div>
+                                        <div class="k-task-content">HTML Prototype</div>
+                                        <span class="k-task-actions">
+                                            <a class="k-link k-task-delete">
+                                                <span class="k-icon k-i-close"></span>
+                                            </a>
+                                        </span>
+                                        <span class="k-resize-handle k-resize-w"></span>
+                                        <span class="k-resize-handle k-resize-e"></span>
+                                        <div class="k-task-draghandle"></div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row k-alt" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-collapse"></span>13
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Implementation</td>
+                                <td>
+                                    <div class="k-task k-task-summary" style="left: 983px; top: 15px; width: 2100px;">
+                                        <div class="k-task-summary-progress" style="width: 1617px;">
+                                            <div class="k-task-summary-complete"></div>
+                                        </div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>24
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Prototype</td>
+                                <td>
+                                    <div class="k-task k-task-single" style="left: 983px; top: 8px; width: 600px;">
+                                        <div class="k-task-complete" style="width: 462px;"></div>
+                                        <div class="k-task-content">Prototype</div>
+                                        <span class="k-task-actions">
+                                            <a class="k-link k-task-delete">
+                                                <span class="k-icon k-i-close"></span>
+                                            </a>
+                                        </span>
+                                        <span class="k-resize-handle k-resize-w"></span>
+                                        <span class="k-resize-handle k-resize-e"></span>
+                                        <div class="k-task-draghandle"></div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row k-alt" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>26
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Architecture</td>
+                                <td>
+                                    <div class="k-task k-task-single" style="left: 1583px; top: 8px; width: 100px;">
+                                        <div class="k-task-complete" style="width: 82px;"></div>
+                                        <div class="k-task-content">Architecture</div>
+                                        <span class="k-task-actions">
+                                            <a class="k-link k-task-delete">
+                                                <span class="k-icon k-i-close"></span>
+                                            </a>
+                                        </span>
+                                        <span class="k-resize-handle k-resize-w"></span>
+                                        <span class="k-resize-handle k-resize-e"></span>
+                                        <div class="k-task-draghandle"></div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>27
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Data Layer</td>
+                                <td>
+                                    <div class="k-task k-task-single" style="left: 1683px; top: 8px; width: 600px;">
+                                        <div class="k-task-complete" style="width: 300px;"></div>
+                                        <div class="k-task-content">Data Layer</div>
+                                        <span class="k-task-actions">
+                                            <a class="k-link k-task-delete">
+                                                <span class="k-icon k-i-close"></span>
+                                            </a>
+                                        </span>
+                                        <span class="k-resize-handle k-resize-w"></span>
+                                        <span class="k-resize-handle k-resize-e"></span>
+                                        <div class="k-task-draghandle"></div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row k-alt" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>29
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">
+                                    UI and Interaction
+                                </td>
+                                <td>
+                                    <div class="k-task k-task-single" style="left: 2583px; top: 8px; width: 500px;">
+                                        <div class="k-task-complete" style="width: 300px;"></div>
+                                        <div class="k-task-content">UI and Interaction</div>
+                                        <span class="k-task-actions">
+                                            <a class="k-link k-task-delete">
+                                                <span class="k-icon k-i-close"></span>
+                                            </a>
+                                        </span>
+                                        <span class="k-resize-handle k-resize-w"></span>
+                                        <span class="k-resize-handle k-resize-e"></span>
+                                        <div class="k-task-draghandle"></div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>28
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Unit Tests</td>
+                                <td>
+                                    <div class="k-task k-task-single" style="left: 1683px; top: 8px; width: 900px;">
+                                        <div class="k-task-complete" style="width: 612px;"></div>
+                                        <div class="k-task-content">Unit Tests</div>
+                                        <span class="k-task-actions">
+                                            <a class="k-link k-task-delete">
+                                                <span class="k-icon k-i-close"></span>
+                                            </a>
+                                        </span>
+                                        <span class="k-resize-handle k-resize-w"></span>
+                                        <span class="k-resize-handle k-resize-e"></span>
+                                        <div class="k-task-draghandle"></div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row k-alt" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-expand"></span>14
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Testing</td>
+                                <td>
+                                    <div class="k-task k-task-summary" style="left: 2883px; top: 15px; width: 500px;">
+                                        <div class="k-task-summary-progress" style="width: 260px;">
+                                            <div class="k-task-summary-complete"></div>
+                                        </div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-expand"></span>30
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Documentation</td>
+                                <td>
+                                    <div class="k-task k-task-summary" style="left: 2183px; top: 15px; width: 1200px;">
+                                        <div class="k-task-summary-progress" style="width: 168px;">
+                                            <div class="k-task-summary-complete"></div>
+                                        </div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row k-alt" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-expand"></span>31
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Demos</td>
+                                <td>
+                                    <div class="k-task k-task-summary" style="left: 2883px; top: 15px; width: 1200px;">
+                                        <div class="k-task-summary-progress" style="width: 984px;">
+                                            <div class="k-task-summary-complete"></div>
+                                        </div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row" style="height: 40px;">
+                                <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>17
+                                </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Release</td>
+                                <td>
+                                    <div class="k-task k-task-milestone" style="left: 4077px; top: 13px;">
+                                        <div class="k-task-milestone-content"></div>
+                                        <div class="k-task-dot k-task-start"></div>
+                                        <div class="k-task-dot k-task-end"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                         </tbody>
+                      </table>
+                      <svg class="k-gantt-dependencies-svg">
+                         <polyline points="391,135 401,135 401,155 373,155 373,214 379,214 379,216 382,214 379,212 379,214"></polyline>
+                         <polyline points="1283,374 1293,374 1293,394 1273,394 1273,414 1279,414 1279,416 1282,414 1279,412 1279,414"></polyline>
+                         <polyline points="1583,414 1593,414 1593,434 1273,434 1273,494 1279,494 1279,496 1282,494 1279,492 1279,494"></polyline>
+                         <polyline points="1883,494 1893,494 1893,514 1873,514 1873,534 1879,534 1879,536 1882,534 1879,532 1879,534"></polyline>
+                         <polyline points="1983,534 1993,534 1993,554 1973,554 1973,574 1979,574 1979,576 1982,574 1979,572 1979,574"></polyline>
+                         <polyline points="1983,534 1993,534 1993,554 1973,554 1973,654 1979,654 1979,656 1982,654 1979,652 1979,654"></polyline>
+                         <polyline points="2583,574 2593,574 2593,614 2879,614 2879,616 2882,614 2879,612 2879,614"></polyline>
+                         <polyline points="2883,654 3393,654 3393,614 3387,614 3387,612 3384,614 3387,616 3387,614"></polyline>
+                         <polyline style="display: none;"></polyline>
+                         <polyline style="display: none;"></polyline>
+                         <polyline style="display: none;"></polyline>
+                         <polyline points="3383,454 3393,454 3393,614 3387,614 3387,612 3384,614 3387,616 3387,614"></polyline>
+                         <polyline style="display: none;"></polyline>
+                         <polyline style="display: none;"></polyline>
+                         <polyline style="display: none;"></polyline>
+                         <polyline style="display: none;"></polyline>
+                         <polyline style="display: none;"></polyline>
+                         <polyline style="display: none;"></polyline>
+                         <polyline style="display: none;"></polyline>
+                         <polyline points="391,135 401,135 401,155 373,155 373,254 379,254 379,256 382,254 379,252 379,254"></polyline>
+                         <polyline points="391,254 401,254 401,294 579,294 579,296 582,294 579,292 579,294"></polyline>
+                         <polyline points="583,214 593,214 593,234 573,234 573,294 579,294 579,296 582,294 579,292 579,294"></polyline>
+                         <polyline points="883,294 893,294 893,374 1079,374 1079,376 1082,374 1079,372 1079,374"></polyline>
+                         <polyline points="2883,614 1973,614 1973,654 1979,654 1979,656 1982,654 1979,652 1979,654"></polyline>
+                         <polyline points="383,94 373,94 373,114 893,114 893,174 887,174 887,172 884,174 887,176 887,174"></polyline>
+                      </svg>
+                      <table class="k-gantt-columns" style="top: 74px; left: 300px; width: 4200px; height: 760px;">
+                         <tbody>
+                            <tr>
+                               <td colspan="1" class="k-nonwork-hour"></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class="k-nonwork-hour"></td>
+                               <td colspan="1" class="k-nonwork-hour"></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class="k-nonwork-hour"></td>
+                               <td colspan="1" class="k-nonwork-hour"></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class="k-nonwork-hour"></td>
+                               <td colspan="1" class="k-nonwork-hour"></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class="k-nonwork-hour"></td>
+                               <td colspan="1" class="k-nonwork-hour"></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class="k-nonwork-hour"></td>
+                               <td colspan="1" class="k-nonwork-hour"></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class=""></td>
+                               <td colspan="1" class="k-nonwork-hour"></td>
+                            </tr>
+                         </tbody>
+                      </table>
+                   </div>
+                </div>
+             </div>
+    </div>
+
+</body>
+</html>

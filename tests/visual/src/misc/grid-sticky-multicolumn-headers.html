@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Grid Sticky Multi-Column Headers</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <h3>LTR</h3>
+        <div class="test-grid k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style="height: 300px; width: 800px;">
+            <div class="k-grid-header">
+                <div class="k-grid-header-wrap k-auto-scrollable">
+                    <table>
+                        <colgroup>
+                            <col style="width:200px">
+                            <col style="width:100px">
+                            <col style="width:100px">
+                            <col style="width:100px">
+                            <col style="width:100px">
+                            <col style="width:1000px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th rowspan="4" class="k-header">Contact Name</th>
+                                <th colspan="4" class="k-grid-header-sticky k-header" style="left: 0px; right: 0px;">Contact Info</th>
+                                <th rowspan="4" class="k-header">Phone</th>
+                            </tr>
+                            <tr>
+                                <th rowspan="3" class="k-grid-header-sticky k-header k-first" style="left: 0px; right: 300px;">Contact Title</th>
+                                <th colspan="3" class="k-grid-no-left-border k-grid-header-sticky k-header" style="left: 100px; right: 0px;">Location</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2" class="k-grid-no-left-border k-grid-header-sticky k-header k-first" style="left: 100px; right: 100px;">Test</th>
+                                <th rowspan="2" class="k-grid-no-left-border k-grid-header-sticky k-header" style="left: 300px; right: 0px;">City</th>
+                            </tr>
+                            <tr>
+                                <th class="k-grid-no-left-border k-grid-header-sticky k-header k-first" style="left: 100px; right: 200px;">Fax</th>
+                                <th class="k-grid-no-left-border k-grid-header-sticky k-header" style="left: 200px; right: 100px;">Country</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <h3>RTL</h1>
+        <div class="k-rtl k-d-flex k-justify-content-end">
+            <div class="test-grid k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style="height: 300px; width: 800px;">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table>
+                            <colgroup>
+                                <col style="width:200px">
+                                <col style="width:100px">
+                                <col style="width:100px">
+                                <col style="width:100px">
+                                <col style="width:100px">
+                                <col style="width:1000px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th rowspan="4" class="k-header">Contact Name</th>
+                                    <th colspan="4" class="k-grid-header-sticky k-header" style="left: 0px; right: 0px;">Contact Info</th>
+                                    <th rowspan="4" class="k-header">Phone</th>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3" class="k-grid-header-sticky k-header k-first" style="left: 300px; right: 0px;">Contact Title</th>
+                                    <th colspan="3" class="k-grid-no-left-border k-grid-header-sticky k-header" style="left: 0px; right: 100px;">Location</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="k-grid-no-left-border k-grid-header-sticky k-header k-first" style="left: 100px; right: 100px;">Test</th>
+                                    <th rowspan="2" class="k-grid-no-left-border k-grid-header-sticky k-header" style="left: 0px; right: 300px;">City</th>
+                                </tr>
+                                <tr>
+                                    <th class="k-grid-no-left-border k-grid-header-sticky k-header k-first" style="left: 200px; right: 100px;">Fax</th>
+                                    <th class="k-grid-no-left-border k-grid-header-sticky k-header" style="left: 100px; right: 200px;">Country</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

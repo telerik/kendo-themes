@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Toolbar -- rtl</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        .k-combobox,
+        .k-dropdown {
+            width: 150px;
+        }
+        .k-numerictextbox {
+            width: 70px;
+        }
+
+        .sub-grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .sub-grid-4 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .k-overflow-wrapper {
+            display: inline-block;
+            position: relative;
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <span>Toolbar</span>
+        <section>
+            <div class="k-widget k-toolbar k-toolbar-resizable k-rtl">
+                <div class="k-overflow-anchor k-button">
+                    <span class="k-icon k-i-more-vertical"></span>
+                </div>
+                <a class="k-button k-button-icon k-toolbar-first-visible">
+                    <span class="k-icon k-i-bold"></span>
+                </a>
+                <a class="k-button">Button</a>
+                <a class="k-toggle-button k-button">Toggle Button</a>
+                <div class="k-separator"></div>
+                <div class="k-button-group">
+                    <a class="k-toggle-button k-button k-group-start">
+                        <span class="k-icon k-i-align-left"></span>
+                        Left
+                    </a>
+                    <a class="k-toggle-button k-button">
+                        <span class="k-icon k-i-align-center"></span>
+                        Center
+                    </a>
+                    <a class="k-toggle-button k-button k-group-end">
+                        <span class="k-icon k-i-align-right"></span>
+                    Right
+                    </a>
+                </div>
+                <div class="k-separator"></div>
+                <a class="k-button k-primary">Primary</a>
+                <div class="k-separator"></div>
+                <div class="k-toolbar-template">
+                    <label>Label:</label>
+                    <span class="k-widget k-colorpicker k-header">
+                        <span class="k-picker-wrap">
+                            <span class="k-selected-color" style="background-color: rgb(255, 255, 255);"><span class="k-icon k-i-line"></span></span>
+                            <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                        </span>
+                        <input style="display: none;" />
+                    </span>
+                </div>
+                <kendo-switch class="k-widget k-switch k-switch-on">
+                    <span class="k-switch-container">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                        <span class="k-switch-handle"></span>
+                    </span>
+                </kendo-switch>
+            </div>
+        </section>
+
+
+        <span>Button states</span>
+        <section>
+            <div class="k-widget k-toolbar k-toolbar-resizable k-rtl">
+                <div class="k-button k-overflow-anchor k-state-hover">
+                    <span class="k-icon k-i-more-vertical"></span>
+                </div>
+                <!-- Buttons without icon -->
+                <a class="k-button k-toolbar-first-visible">Normal</a>
+                <a class="k-button k-state-hover">Hover</a>
+                <a class="k-button k-state-focus">Focus</a>
+                <a class="k-button k-state-active">Active</a>
+                <a class="k-button k-state-selected">Selected</a>
+                <a class="k-button k-state-disabled">Disabled</a>
+                <div class="k-separator"></div>
+                <!-- Icon buttons -->
+                <a class="k-button k-button-icon">
+                    <span class="k-icon k-i-bold"></span>
+                </a>
+                <a class="k-button k-button-icon k-state-hover">
+                    <span class="k-icon k-i-bold"></span>
+                </a>
+                <a class="k-button k-button-icon k-state-focus">
+                    <span class="k-icon k-i-bold"></span>
+                </a>
+                <a class="k-button k-button-icon k-state-active">
+                    <span class="k-icon k-i-bold"></span>
+                </a>
+                <a class="k-button k-button-icon k-state-selected">
+                    <span class="k-icon k-i-bold"></span>
+                </a>
+                <a class="k-button k-button-icon k-toolbar-last-visible k-state-disabled">
+                    <span class="k-icon k-i-bold"></span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <div class="k-widget k-toolbar k-toolbar-resizable k-rtl">
+                <div class="k-button k-overflow-anchor k-state-active">
+                    <span class="k-icon k-i-more-vertical"></span>
+                </div>
+                <!-- Buttons with icon -->
+                <a class="k-toggle-button k-button">
+                    <span class="k-icon k-i-align-left"></span>
+                    Normal
+                </a>
+                <a class="k-toggle-button k-button k-state-hover">
+                    <span class="k-icon k-i-align-left"></span>
+                    Hover
+                </a>
+                <a class="k-toggle-button k-button k-state-focus">
+                    <span class="k-icon k-i-align-left"></span>
+                    Focus
+                </a>
+                <a class="k-toggle-button k-button k-state-active">
+                    <span class="k-icon k-i-align-left"></span>
+                    Actve
+                </a>
+                <a class="k-toggle-button k-button k-state-selected">
+                    <span class="k-icon k-i-align-left"></span>
+                    Selected
+                </a>
+                <a class="k-toggle-button k-button k-state-disabled">
+                    <span class="k-icon k-i-align-left"></span>
+                    Disabled
+                </a>
+            </div>
+        </section>
+
+        <span>Disabled focus state of buttons</span>
+        <section>
+            <div class="k-widget k-toolbar k-toolbar-resizable k-rtl">
+                <div class="k-overflow-anchor k-button k-state-disabled k-state-focus">
+                    <span class="k-icon k-i-more-vertical"></span>
+                </div>
+                <a class="k-button k-state-disabled k-state-focus">Button</a>
+                <a class="k-button k-toggle-button k-state-disabled k-state-focus">Toggle Button</a>
+                <div class="k-split-button k-state-disabled k-state-focus">
+                    <a class="k-button">SplitButton</a>
+                    <a class="k-button k-split-button-arrow">
+                        <span class="k-icon k-i-arrow-60-down"></span>
+                    </a>
+                </div>
+                <div class="k-button-group">
+                    <a class="k-button k-toggle-button k-group-start k-state-disabled k-state-focus">
+                        <span class="k-icon k-i-align-left"></span>
+                        Button 1
+                    </a>
+                    <a class="k-button k-toggle-button k-state-disabled">
+                        <span class="k-icon k-i-align-center"></span>
+                        Button 2
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="sub-grid-2">
+
+            <span class="col-2">wrapped kendo-jquery</span>
+
+            <section>
+                <div class="k-widget k-toolbar k-rtl">
+                    <a class="k-button">Button</a>
+                    <a class="k-toggle-button k-button">Toggle</a>
+                    <a class="k-button k-primary">Primary</a>
+                    <a class="k-button">DropDownButton</a>
+                    <div class="k-button-group">
+                        <a class="k-toggle-button k-button k-group-start">
+                            <span class="k-icon k-i-align-left"></span>
+                            Left
+                        </a>
+                        <a class="k-toggle-button k-button">
+                            <span class="k-icon k-i-align-center"></span>
+                            Center
+                        </a>
+                        <a class="k-toggle-button k-button">
+                            <span class="k-icon k-i-align-right"></span>
+                            Right
+                        </a>
+                        <a class="k-toggle-button k-button k-group-end">
+                            <span class="k-icon k-i-align-justify"></span>
+                            Justify
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

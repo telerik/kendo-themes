@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Toolbar Overflow Popup</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        .k-combobox,
+        .k-dropdown {
+            width: 150px;
+        }
+        .k-numerictextbox {
+            width: 70px;
+        }
+
+        .sub-grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .sub-grid-4 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .k-overflow-wrapper {
+            display: inline-block;
+            position: relative;
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+         <span>Overflow popup</span>
+        <div class="sub-grid-4">
+
+            <span>Button</span>
+            <span>Menu button</span>
+            <span>Split button</span>
+            <span>Button group</span>
+
+            <section>
+                <div class="k-animation-container k-overflow-wrapper">
+                    <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
+                        <li class="k-item">
+                            <a class="k-overflow-button k-button">
+                                <span class="k-text">Normal</span>
+                            </a>
+                        </li>
+                        <li class="k-item">
+                            <a class="k-overflow-button k-button k-state-hover">
+                                <span class="k-text">Hover</span>
+                            </a>
+                        </li>
+                        <li class="k-item">
+                            <a class="k-overflow-button k-button k-state-focused">
+                                <span class="k-text">Focus</span>
+                            </a>
+                        </li>
+                        <li class="k-item">
+                            <a class="k-overflow-button k-button k-state-selected">
+                                <span class="k-text">Selected</span>
+                            </a>
+                        </li>
+                        <li class="k-item k-state-disabled">
+                            <a class="k-overflow-button k-button">
+                                <span class="k-text">Disabled</span>
+                            </a>
+                        </li>
+                        <li class="k-item k-state-disabled">
+                            <a class="k-overflow-button k-button k-state-focused">
+                                <span class="k-text">Disabled Focus Button</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-popup">
+                        <ul class="k-overflow-container k-list-container k-reset">
+                            <li class="k-item">
+                                <span style="display: block;">
+                                    <button class="k-button k-state-disabled k-overflow-button" type="button">Menu button</button>
+                                    <span>
+                                        <button class="k-button k-overflow-button" style="padding-left: 16px" type="button">
+                                            <span class="k-icon k-i-add"></span> Normal
+                                        </button>
+                                        <button class="k-button k-overflow-button k-state-hover" style="padding-left: 16px" type="button">
+                                            <span class="k-icon k-i-add"></span> Hover
+                                        </button>
+                                        <button class="k-button k-overflow-button k-state-focused" style="padding-left: 16px" type="button">
+                                            <span class="k-icon k-i-add"></span> Focus
+                                        </button>
+                                        <button class="k-button k-overflow-button k-state-disabled" style="padding-left: 16px" type="button">
+                                            <span class="k-icon k-i-add"></span> Disabled
+                                        </button>
+                                    </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="k-animation-container k-animation-container-shown">
+                    <div class="k-popup">
+                        <ul class="k-overflow-container k-list-container k-reset">
+                            <li class="k-item">
+                                <span style="display: block;">
+                                    <button class="k-button k-overflow-button" type="button">Split button</button>
+                                    <span>
+                                        <button class="k-button k-overflow-button" style="padding-left: 16px" type="button">
+                                            <span class="k-icon k-i-add"></span> Normal
+                                        </button>
+                                        <button class="k-button k-overflow-button k-state-hover" style="padding-left: 16px" type="button">
+                                            <span class="k-icon k-i-add"></span> Hover
+                                        </button>
+                                        <button class="k-button k-overflow-button k-state-focused" style="padding-left: 16px" type="button">
+                                            <span class="k-icon k-i-add"></span> Focus
+                                        </button>
+                                        <button class="k-button k-overflow-button k-state-disabled" style="padding-left: 16px" type="button">
+                                            <span class="k-icon k-i-add"></span> Disabled
+                                        </button>
+                                    </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="k-animation-container k-overflow-wrapper">
+                    <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
+                        <li class="k-button-group k-overflow-group k-item">
+                            <a class="k-toggle-button k-overflow-button k-button k-group-start">
+                                <span class="k-icon k-i-bold"></span>
+                                <span class="k-text">Normal</span>
+                            </a>
+                            <a class="k-toggle-button k-state-hover k-overflow-button k-button">
+                                <span class="k-text">Hover</span>
+                            </a>
+                            <a class="k-toggle-button k-state-focused k-overflow-button k-button">
+                                <span class="k-text">Focus</span>
+                            </a>
+                            <a class="k-toggle-button k-state-selected k-overflow-button k-button">
+                                <span class="k-text">Selected</span>
+                            </a>
+                            <a class="k-toggle-button k-state-disabled k-overflow-button k-button">
+                                <span class="k-text">Disabled</span>
+                            </a>
+                            <a class="k-toggle-button k-state-disabled k-state-focused k-overflow-button k-button k-group-end">
+                                <span class="k-text">Disabled Focus</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <span>Angular Button</span>
+            <span>Angular Menu button</span>
+            <span>Angular Split button</span>
+            <span>Angular Button group</span>
+            <section>
+                <kendo-popup class="k-animation-container k-animation-container-shown k-overflow-wrapper">
+                    <div class="k-popup">
+                        <ul class="k-overflow-container k-list-container k-reset">
+                            <li class="k-item">
+                                <kendo-toolbar-renderer style="display: block;">
+                                    <button class="k-overflow-button k-button">Normal</button>
+                                </kendo-toolbar-renderer>
+                            </li>
+                            <li class="k-item">
+                                <kendo-toolbar-renderer style="display: block;">
+                                    <button class="k-overflow-button k-button k-state-hover">Hover</button>
+                                </kendo-toolbar-renderer>
+                            </li>
+                            <li class="k-item">
+                                <kendo-toolbar-renderer style="display: block;">
+                                    <button class="k-overflow-button k-button k-state-focused">Focus</button>
+                                </kendo-toolbar-renderer>
+                            </li>
+                            <li class="k-item">
+                                <kendo-toolbar-renderer style="display: block;">
+                                    <button class="k-overflow-button k-button k-state-selected">Selected</button>
+                                </kendo-toolbar-renderer>
+                            </li>
+                            <li class="k-item">
+                                <kendo-toolbar-renderer style="display: block;">
+                                    <button class="k-overflow-button k-button k-state-disabled">Disabled</button>
+                                </kendo-toolbar-renderer>
+                            </li>
+                        </ul>
+                    </div>
+                </kendo-popup>
+            </section>
+            <section>
+                <kendo-popup class="k-animation-container k-animation-container-shown k-overflow-wrapper">
+                    <div class="k-popup">
+                        <ul class="k-overflow-container k-list-container k-reset">
+                            <li class="k-item">
+                                <kendo-toolbar-renderer style="display: block;">
+                                    <button class="k-overflow-button k-button k-state-disabled">Menu button</button>
+                                    <kendo-toolbar-buttonlist>
+                                        <button class="k-overflow-button k-button" style="padding-left: 16px"><span class="k-icon k-i-add"></span> Normal</button>
+                                        <button class="k-overflow-button k-button k-state-hover" style="padding-left: 16px"><span class="k-icon k-i-add"></span> Hover</button>
+                                        <button class="k-overflow-button k-button k-state-focused" style="padding-left: 16px"><span class="k-icon k-i-add"></span> Focus</button>
+                                        <button class="k-overflow-button k-button k-state-disabled" style="padding-left: 16px"><span class="k-icon k-i-add"></span> Disabled</button>
+                                    </kendo-toolbar-buttonlist>
+                                </kendo-toolbar-renderer>
+                            </li>
+                        </ul>
+                    </div>
+                </kendo-popup>
+            </section>
+            <section>
+                <kendo-popup class="k-animation-container k-animation-container-shown k-overflow-wrapper">
+                    <div class="k-popup">
+                        <ul class="k-overflow-container k-list-container k-reset">
+                            <li class="k-item">
+                                <kendo-toolbar-renderer style="display: block;">
+                                    <button class="k-overflow-button k-button">Split button</button>
+                                    <kendo-toolbar-buttonlist>
+                                        <button class="k-overflow-button k-button" style="padding-left: 16px"><span class="k-icon k-i-add"></span> Normal</button>
+                                        <button class="k-overflow-button k-button k-state-hover" style="padding-left: 16px"><span class="k-icon k-i-add"></span> Hover</button>
+                                        <button class="k-overflow-button k-button k-state-focused" style="padding-left: 16px"><span class="k-icon k-i-add"></span> Focus</button>
+                                        <button class="k-overflow-button k-button k-state-disabled" style="padding-left: 16px"><span class="k-icon k-i-add"></span> Disabled</button>
+                                    </kendo-toolbar-buttonlist>
+                                </kendo-toolbar-renderer>
+                            </li>
+                        </ul>
+                    </div>
+                </kendo-popup>
+            </section>
+            <section>
+                <kendo-popup class="k-animation-container k-animation-container-shown k-overflow-wrapper">
+                    <div class="k-popup">
+                        <ul class="k-overflow-container k-list-container k-reset">
+                            <li class="k-item">
+                                <kendo-toolbar-renderer style="display: block;">
+                                    <kendo-buttongroup class="k-overflow-button k-button-group">
+                                        <span class="k-overflow-button k-button k-group-start">Normal</span>
+                                        <span class="k-overflow-button k-button k-state-hover">Hover</span>
+                                        <span class="k-overflow-button k-button k-state-focused">Focus</span>
+                                        <span class="k-overflow-button k-button k-state-selected">Selected</span>
+                                        <span class="k-overflow-button k-button k-state-disabled k-group-end">Disabled</span>
+                                    </kendo-buttongroup>
+                                </kendo-toolbar-renderer>
+                            </li>
+                        </ul>
+                    </div>
+                </kendo-popup>
+            </section>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

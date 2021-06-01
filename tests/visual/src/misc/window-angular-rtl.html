@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Window Angular RTL</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        /* test page overrides */
+        .k-window {
+            width: 100%;
+            position: relative;
+        }
+
+        #test-area {}
+    </style>
+</head>
+
+<body>
+
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
+        <section>
+            <kendo-window class="k-widget k-window" dir="rtl">
+                <kendo-window-titlebar class="k-window-titlebar k-dialog-titlebar">
+                    <div class="k-window-title">
+                        Angular Window
+                    </div>
+                    <div class="k-window-actions">
+                        <button class="k-button-icon k-button k-flat">
+                            <span class="k-icon k-i-window-minimize"></span>
+                        </button>
+                        <button class="k-button-icon k-button k-flat">
+                            <span class="k-icon k-i-window-maximize"></span>
+                        </button>
+                        <button class="k-button-icon k-button k-flat">
+                            <span class="k-icon k-i-window-restore"></span>
+                        </button>
+                        <button class="k-button-icon k-button k-flat">
+                            <span class="k-icon k-i-close"></span>
+                        </button>
+                    </div>
+                </kendo-window-titlebar>
+                <div class="k-content k-window-content">
+                    Angular window content
+                </div>
+            </kendo-window>
+        </section>
+
+        <section>
+            <kendo-window class="k-widget k-window" dir="rtl">
+                <kendo-window-titlebar class="k-window-titlebar k-dialog-titlebar">
+                    <div class="k-window-title"></div>
+                    <div class="k-window-actions">
+                        <button class="k-button-icon k-button k-flat">
+                            <span class="k-icon k-i-window-minimize"></span>
+                        </button>
+                        <button class="k-button-icon k-button k-flat">
+                            <span class="k-icon k-i-window-maximize"></span>
+                        </button>
+                        <button class="k-button-icon k-button k-flat">
+                            <span class="k-icon k-i-window-restore"></span>
+                        </button>
+                        <button class="k-button-icon k-button k-flat">
+                            <span class="k-icon k-i-close"></span>
+                        </button>
+                    </div>
+                </kendo-window-titlebar>
+                <div class="k-content k-window-content">
+                    Angular window with no title specified
+                </div>
+            </kendo-window>
+        </section>
+
+        <section>
+
+            <kendo-window class="k-widget k-window" dir="rtl">
+                <kendo-window-titlebar class="k-window-titlebar k-dialog-titlebar">
+                    <div class="k-window-title"></div>
+                </kendo-window-titlebar>
+                <div class="k-content k-window-content">
+                    Angular window with empty title and no actions
+                </div>
+            </kendo-window>
+
+        </section>
+
+        <section>
+            <kendo-window class="k-widget k-window k-window-minimized" dir="rtl">
+                <kendo-window-titlebar class="k-window-titlebar k-dialog-titlebar">
+                    <div class="k-window-title">Angular window minimized</div>
+                    <div class="k-window-actions">
+                        <button class="k-button-icon k-button k-flat">
+                            <span class="k-icon k-i-window-minimize"></span>
+                        </button>
+                        <button class="k-button-icon k-button k-flat">
+                            <span class="k-icon k-i-window-maximize"></span>
+                        </button>
+                        <button class="k-button-icon k-button k-flat">
+                            <span class="k-icon k-i-window-restore"></span>
+                        </button>
+                        <button class="k-button-icon k-button k-flat">
+                            <span class="k-icon k-i-close"></span>
+                        </button>
+                    </div>
+                </kendo-window-titlebar>
+                <div class="k-content k-window-content" hidden="">
+                    Angular minimised content
+                </div>
+            </kendo-window>
+        </section>
+    </div>
+
+</body>
+</html>

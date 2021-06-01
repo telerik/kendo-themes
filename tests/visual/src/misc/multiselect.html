@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Multiselect</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {}
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
+
+        <span>Multiselect</span>
+        <span>Angular Multiselect</span>
+        <span>Multiselect RTL</span>
+        <span>Angular RTL</span>
+
+        <!-- empty -->
+        <div>
+            <div class="k-widget k-multiselect">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <input class="k-input" type="text" placeholder="Multiselect..." />
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="Multiselect..." class="k-input">
+                    </span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-multiselect">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <input class="k-input" type="text" placeholder="Multiselect..." />
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect" dir="rtl">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="Multiselect..." class="k-input" dir="rtl">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- normal -->
+        <div>
+            <div class="k-widget k-multiselect">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Normal</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button">
+                                <span>Normal</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" style="width: 25px;">
+                    </span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-multiselect">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Normal</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect" dir="rtl">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button">
+                                <span>Normal</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" dir="rtl" style="width: 25px;">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- hover -->
+        <div>
+            <div class="k-widget k-multiselect k-state-hover">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button k-state-hover"><span>Hover</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect k-state-hover">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button k-state-hover">
+                                <span>Hover</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" style="width: 25px;">
+                    </span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-multiselect k-state-hover">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button k-state-hover"><span>Hover</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect k-state-hover" dir="rtl">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button k-state-hover">
+                                <span>Hover</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" dir="rtl" style="width: 25px;">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- open -->
+        <div>
+            <div class="k-widget k-multiselect k-state-focused k-state-border-down">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Open</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect k-state-focused">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button">
+                                <span>Open</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" style="width: 25px;">
+                    </span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-multiselect k-state-focused k-state-border-down">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Open</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect k-state-focused" dir="rtl">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button">
+                                <span>Open</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" dir="rtl" style="width: 25px;">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- focus -->
+        <div>
+            <div class="k-widget k-multiselect k-state-focused">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button k-state-focused"><span>Focus</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect k-state-focused">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button k-state-focused">
+                                <span>Focus</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" style="width: 25px;">
+                    </span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-multiselect k-state-focused">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button k-state-focused"><span>Focus</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect k-state-focused" dir="rtl">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button k-state-focused">
+                                <span>Focus</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" dir="rtl" style="width: 25px;">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- disabled -->
+        <div>
+            <div class="k-widget k-multiselect k-state-disabled">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Disabled</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect k-state-disabled">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button k-state-disabled">
+                                <span>Disabled</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" style="width: 25px;">
+                    </span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-multiselect k-state-disabled">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Disabled</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect k-state-disabled" dir="rtl">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button k-state-disabled">
+                                <span>Disabled</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" dir="rtl" style="width: 25px;">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- invalid -->
+        <div>
+            <div class="k-widget k-multiselect">
+                <div class="k-multiselect-wrap k-floatwrap k-invalid">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Invalid</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect ng-invalid ng-touched">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button">
+                                <span>NG Invalid</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" style="width: 25px;">
+                    </span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-multiselect">
+                <div class="k-multiselect-wrap k-floatwrap k-invalid">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Invalid</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect ng-invalid ng-touched" dir="rtl">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button">
+                                <span>NG Invalid</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" dir="rtl" style="width: 25px;">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- invalid + focus -->
+        <div>
+            <div class="k-widget k-multiselect k-state-focused">
+                <div class="k-multiselect-wrap k-floatwrap k-invalid">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Invalid + Focus</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect ng-invalid ng-touched k-state-focused">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button">
+                                <span>NG Invalid + Focus</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" style="width: 25px;">
+                    </span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-multiselect k-state-focused">
+                <div class="k-multiselect-wrap k-floatwrap k-invalid">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Invalid + Focus</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect ng-invalid ng-touched k-state-focused" dir="rtl">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button">
+                                <span>NG Invalid + Focus</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" dir="rtl" style="width: 25px;">
+                    </span>
+                    <span class="k-icon k-clear-value k-i-close"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- loding -->
+        <div>
+            <div class="k-widget k-multiselect">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Loading</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                        <li class="k-button"><span>Something</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                    <span class="k-icon k-i-loading"></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button">
+                                <span>Loading</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                            <li class="k-button">
+                                <span>Something</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" style="width: 25px;">
+                    </span>
+                    <span class="k-icon k-i-loading"></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-multiselect">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Loading</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                        <li class="k-button"><span>Something</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                    <span class="k-icon k-i-loading"></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect" dir="rtl">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button">
+                                <span>Loading</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                            <li class="k-button">
+                                <span>Something</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" dir="rtl" style="width: 25px;">
+                    </span>
+                    <span class="k-icon k-i-loading"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- clear -->
+        <div>
+            <div class="k-widget k-multiselect">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Clear</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                        <li class="k-button"><span>Something</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                    <span class="k-clear-value" title="clear" style="visibility: visible;"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button">
+                                <span>Clear</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                            <li class="k-button">
+                                <span>Something</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" style="width: 25px;">
+                    </span>
+                    <span class="k-clear-value" title="clear" style="visibility: visible;"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-multiselect">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Clear</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                        <li class="k-button"><span>Something</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <input class="k-input" type="text" style="width: 25px;"/>
+                    <span class="k-clear-value" title="clear" style="visibility: visible;"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="k-widget k-multiselect" dir="rtl">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <kendo-taglist>
+                        <ul class="k-reset">
+                            <li class="k-button">
+                                <span>Clear</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                            <li class="k-button">
+                                <span>Something</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </kendo-taglist>
+                    <span class="k-searchbar">
+                        <input placeholder="" class="k-input" dir="rtl" style="width: 25px;">
+                    </span>
+                    <span class="k-clear-value" title="clear" style="visibility: visible;"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

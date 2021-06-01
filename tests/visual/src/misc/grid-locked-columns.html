@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Grid Locked Columns</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        /* These overrides are needed for the "Angular Grid with locked columns, Grouping and Multiline headers" example ->
+        they ensure the Grid layout is not broken in neither of the themes */
+        .grid-styling-overrides .k-header,
+        .grid-styling-overrides .k-grouping-row td,
+        .grid-styling-overrides .k-group-footer td {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area" class="grid">
+        <div class="k-widget k-grid k-grid-display-block k-reorderable k-grid-lockedcolumns" id="Grid" style="width: 793px">
+            <div class="k-grouping-header" style="touch-action: none;">Drag a column header and drop it here to group by that column</div>
+            <div class="k-grid-header" style="padding-right: 17px;">
+                <div class="k-grid-header-locked" style="width: 450px;">
+                    <table>
+                        <colgroup>
+                            <col style="width:150px">
+                                <col style="width:300px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="k-header k-with-icon"><a class="k-header-column-menu" href="#"><span class="k-icon k-i-more-vertical"></span></a><a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=OrderID-asc">Order ID</a></th>
+                                <th class="k-header k-with-icon"><a class="k-header-column-menu" href="#"><span class="k-icon k-i-more-vertical"></span></a><a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipName-asc">Ship Name</a></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="k-grid-header-wrap k-auto-scrollable"  style="width: 319px;">
+                    <table style="width: 1000px;">
+                        <colgroup>
+                            <col style="width:300px">
+                                <col style="width:300px">
+                                    <col style="width:400px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="k-header k-with-icon"><a class="k-header-column-menu" href="#"><span class="k-icon k-i-more-vertical"></span></a><a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipCountry-asc">Ship Country</a></th>
+                                <th class="k-header k-with-icon"><a class="k-header-column-menu" href="#"><span class="k-icon k-i-more-vertical"></span></a><a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipCity-asc">Ship City</a></th>
+                                <th class="k-header k-with-icon"><a class="k-header-column-menu" href="#"><span class="k-icon k-i-more-vertical"></span></a><a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipAddress-asc">Ship Address</a></th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="k-resize-handle" style="top: 0px; left: 595.5px; height: 37px; width: 9px;">
+                        <div class="k-resize-handle-inner"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="k-grid-content-locked" style="width: 450px; height: 303px;">
+                <table>
+                    <colgroup>
+                        <col style="width:150px">
+                            <col style="width:300px">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>10248</td>
+                            <td>Vins et alcools Chevalier</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td>10249</td>
+                            <td>Toms Spezialitäten</td>
+                        </tr>
+                        <tr>
+                            <td>10250</td>
+                            <td>Hanari Carnes</td>
+                        </tr>
+                        <tr class="k-alt k-state-hover">
+                            <td>10251</td>
+                            <td>Victuailles en stock (Hovered)</td>
+                        </tr>
+                        <tr class="k-state-selected">
+                            <td>10252</td>
+                            <td>Suprêmes délices (Selected)</td>
+                        </tr>
+                        <tr class="k-alt k-state-hover k-state-selected">
+                            <td>10253</td>
+                            <td>Hanari (Selected and Hovered)</td>
+                        </tr>
+                        <tr>
+                            <td>10254</td>
+                            <td>Chop-suey Chinese</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td>10255</td>
+                            <td>Richter Supermarkt</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="k-grid-content k-auto-scrollable" style="height: 320px; width: 337px;">
+                <table style="width: 1000px;">
+                    <colgroup>
+                        <col style="width:300px">
+                            <col style="width:300px">
+                                <col style="width:400px">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>France</td>
+                            <td>Reims</td>
+                            <td>59 rue de l'Abbaye</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td>Germany</td>
+                            <td>Münster</td>
+                            <td>Luisenstr. 48</td>
+                        </tr>
+                        <tr>
+                            <td>Brazil</td>
+                            <td>Rio de Janeiro</td>
+                            <td>Rua do Paço, 67</td>
+                        </tr>
+                        <tr class="k-alt k-state-hover">
+                            <td>France</td>
+                            <td>Lyon</td>
+                            <td>2, rue du Commerce</td>
+                        </tr>
+                        <tr class="k-state-selected">
+                            <td>Belgium</td>
+                            <td>Charleroi</td>
+                            <td>Boulevard Tirou, 255</td>
+                        </tr>
+                        <tr class="k-alt k-state-selected k-state-hover">
+                            <td>Brazil</td>
+                            <td>Rio de Janeiro</td>
+                            <td>Rua do Paço, 67</td>
+                        </tr>
+                        <tr>
+                            <td>Switzerland</td>
+                            <td>Bern</td>
+                            <td>Hauptstr. 31</td>
+                        </tr>
+                        <tr class="k-alt">
+                            <td>Switzerland</td>
+                            <td>Genève</td>
+                            <td>Starenweg 5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <span>jQuery Grid - Frozen columns and sorting</span>
+            <div style="width: 1000px; height: 200px;" class="k-grid k-widget k-grid-display-block k-grid-lockedcolumns">
+                <div class="k-grid-header" style="padding-right: 15px;">
+                    <div class="k-grid-header-locked" style="width: 400px;">
+                        <table>
+                            <colgroup>
+                                <col style="width: 150px;" />
+                                <col style="width: 250px;" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th rowspan="1" class="k-header">
+                                        <a class="k-link" href="#">Order ID</a>
+                                    </th>
+                                    <th rowspan="1" class="k-header k-sorted">
+                                        <a class="k-link" href="#">Ship Name<span class="k-icon k-i-sort-desc-sm"></span><span class="k-sort-order">1</span></a>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="k-grid-header-wrap k-auto-scrollable" style="width: 581px;">
+                        <table style="width: 900px;">
+                            <colgroup>
+                                <col style="width: 400px;" />
+                                <col style="width: 500px;" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th rowspan="1" class="k-header k-sorted">
+                                        <a class="k-link" href="#">Ship Country<span class="k-icon k-i-sort-asc-sm"></span><span class="k-sort-order">2</span></a>
+                                    </th>
+                                    <th rowspan="1" class="k-header">
+                                        <a class="k-link" href="#">Ship City</a>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="k-grid-content-locked" style="width: 400px; height: 146px;">
+                    <table>
+                        <colgroup>
+                            <col style="width: 150px;" />
+                            <col style="width: 250px;" class="k-sorted" />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>10374</td>
+                                <td>Wolski Zajazd</td>
+                            </tr>
+                            <tr class="k-alt">
+                                <td>10611</td>
+                                <td>Wolski Zajazd</td>
+                            </tr>
+                            <tr>
+                                <td>10792</td>
+                                <td>Wolski Zajazd</td>
+                            </tr>
+                            <tr class="k-alt">
+                                <td>10792</td>
+                                <td>Wolski Zajazd</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><div class="k-grid-content k-auto-scrollable" style="width: 597px; height: 161px;">
+                    <table role="grid" style="height: auto; width: 900px;">
+                        <colgroup>
+                            <col style="width: 400px;" class="k-sorted" />
+                            <col style="width: 500px;" />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>Poland</td>
+                                <td>Warszawa</td>
+                            </tr>
+                            <tr class="k-alt">
+                                <td>Poland</td>
+                                <td>Warszawa</td>
+                            </tr>
+                            <tr>
+                                <td>Poland</td>
+                                <td>Warszawa</td>
+                            </tr>
+                            <tr class="k-alt">
+                                <td>Poland</td>
+                                <td>Warszawa</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <span>Angular Grid with locked columns, Grouping and Multiline headers</span>
+            <kendo-grid class="k-widget k-grid k-grid-lockedcolumns grid-styling-overrides" style="height: 430px;">
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header" style="padding: 0px 14px 0px 0px;">
+                        <div class="k-grid-header-locked" style="width: 512px;">
+                            <table style="width: 512px;">
+                                <colgroup>
+                                    <col class="k-group-col" />
+                                    <col style="width: 200px;" />
+                                    <col style="width: 280px;" />
+                                </colgroup>
+                                <thead>
+                                    <tr style="height: 38px;">
+                                        <th class="k-group-cell k-header"></th>
+                                        <th class="k-header" rowspan="2" colspan="1">
+                                            Product ID
+                                        </th>
+                                        <th class="k-header" rowspan="2" colspan="1">
+                                            Product Name
+                                        </th>
+                                    </tr>
+                                    <tr style="height: 38px;">
+                                        <th class="k-group-cell k-header"></th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="k-grid-header-wrap" style="width: 347px;">
+                            <table style="width: 480px;">
+                                <colgroup>
+                                    <col style="width: 120px;" />
+                                    <col style="width: 120px;" />
+                                    <col style="width: 120px;" />
+                                    <col style="width: 120px;" />
+                                </colgroup>
+                                <thead>
+                                    <tr style="height: 38px;">
+                                        <th class="k-header" rowspan="1" colspan="3">
+                                            Availability
+                                        </th>
+                                        <th class="k-header" rowspan="2" colspan="1">
+                                            Discontinued
+                                        </th>
+                                    </tr>
+                                    <tr style="height: 38px;">
+                                        <th class="k-header"rowspan="1" colspan="1">
+                                            Unit Price
+                                        </th>
+                                        <th class="k-header" rowspan="1" colspan="1">
+                                            Units On Order
+                                        </th>
+                                        <th class="k-header" rowspan="1" colspan="1">
+                                            Units In Stock
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <kendo-grid-list class="k-grid-container">
+                        <div class="k-grid-content-locked" style="width: 512px; height: 300px;">
+                            <div class="k-grid-table-wrap">
+                                <table class="k-grid-table" style="width: 512px;">
+                                    <colgroup>
+                                        <col class="k-group-col" />
+                                        <col style="width: 200px;" />
+                                        <col style="width: 280px;" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr class="k-grouping-row" style="height: 37px;">
+                                            <td colspan="3">
+                                                <p class="k-reset">
+                                                    <a class="k-icon k-i-collapse" href="#"> </a>
+                                                    Discontinued: false
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 39px;">
+                                            <td class="k-group-cell"></td>
+                                            <td colspan="1">
+                                                1
+                                            </td>
+                                            <td colspan="1">
+                                                Chai
+                                            </td>
+                                        </tr>
+                                        <tr class="k-alt" style="height: 38px;">
+                                            <td class="k-group-cell"></td>
+                                            <td colspan="1">
+                                                2
+                                            </td>
+                                            <td colspan="1">
+                                                Chang
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 38px;">
+                                            <td class="k-group-cell"></td>
+                                            <td colspan="1">
+                                                3
+                                            </td>
+                                            <td colspan="1">
+                                                Aniseed Syrup
+                                            </td>
+                                        </tr>
+                                        <tr class="k-group-footer" style="height: 39px;">
+                                            <td class="k-group-cell"></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="k-grouping-row" style="height: 37px;">
+                                            <td colspan="3">
+                                                <p class="k-reset">
+                                                    <a class="k-icon k-i-collapse" href="#"> </a>
+                   Discontinued: true
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-alt" style="height: 39px;">
+                                            <td class="k-group-cell"></td>
+                                            <td colspan="1">
+                                                9
+                                            </td>
+                                            <td colspan="1">
+                                                Mishi Kobe Niku
+                                            </td>
+                                        </tr>
+                                        <tr class="k-group-footer" style="height: 38px;">
+                                            <td class="k-group-cell"></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <kendo-resize-sensor></kendo-resize-sensor>
+                            </div>
+                            <div class="k-height-container">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="k-grid-content k-virtual-content" style="width: 363px;">
+                            <div class="k-grid-table-wrap">
+                                <table class="k-grid-table" style="width: 480px;">
+                                    <colgroup>
+                                        <col style="width: 120px;" />
+                                        <col style="width: 120px;" />
+                                        <col style="width: 120px;" />
+                                        <col style="width: 120px;" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr class="k-grouping-row" style="height: 37px;">
+                                            <td colspan="4">
+                                                <p class="k-reset"></p>
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 39px;">
+                                            <td colspan="1">
+                                                18
+                                            </td>
+                                            <td colspan="1">
+                                                0
+                                            </td>
+                                            <td colspan="1">
+                                                39
+                                            </td>
+                                            <td colspan="1">
+                                                <input disabled="" type="checkbox" />
+                                            </td>
+                                        </tr>
+                                        <tr class="k-alt" style="height: 38px;">
+                                            <td colspan="1">
+                                                19
+                                            </td>
+                                            <td colspan="1">
+                                                40
+                                            </td>
+                                            <td colspan="1">
+                                                17
+                                            </td>
+                                            <td colspan="1">
+                                                <input disabled="" type="checkbox" />
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 38px;">
+                                            <td colspan="1"></td>
+                                            <td colspan="1">
+                                                70
+                                            </td>
+                                            <td colspan="1">
+                                                13
+                                            </td>
+                                            <td colspan="1">
+                                                <input disabled="" type="checkbox" />
+                                            </td>
+                                        </tr>
+                                        <tr class="k-group-footer" style="height: 39px;">
+                                            <td>
+                                                Sum: 47
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="k-grouping-row" style="height: 37px;">
+                                            <td colspan="4">
+                                                <p class="k-reset"></p>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-alt"style="height: 39px;">
+                                            <td colspan="1">
+                                                97
+                                            </td>
+                                            <td colspan="1">
+                                                0
+                                            </td>
+                                            <td colspan="1">
+                                                29
+                                            </td>
+                                            <td colspan="1">
+                                                <input disabled="" type="checkbox" />
+                                            </td>
+                                        </tr>
+                                        <tr class="k-group-footer" style="height: 38px;">
+                                            <td>
+                                                Sum: 97
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <kendo-resize-sensor></kendo-resize-sensor>
+                            </div>
+                            <kendo-resize-sensor></kendo-resize-sensor>
+                            <div class="k-height-container" role="presentation">
+                                <div></div>
+                            </div>
+                        </div>
+                    </kendo-grid-list>
+                    <div class="k-grid-footer" style="padding: 0px 14px 0px 0px;">
+                        <div class="k-grid-footer-locked" style="width: 512px;">
+                            <table style="width: 512px;">
+                                <colgroup>
+                                    <col class="k-group-col" />
+                                    <col style="width: 200px;" />
+                                    <col style="width: 280px;" />
+                                </colgroup>
+                                <tfoot>
+                                    <tr class="k-footer-template">
+                                        <td class="k-group-cell"></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="k-grid-footer-wrap" style="width: 346px;">
+                            <table style="width: 480px;">
+                                <colgroup>
+                                    <col style="width: 120px;" />
+                                    <col style="width: 120px;" />
+                                    <col style="width: 120px;" />
+                                    <col style="width: 120px;" />
+                                </colgroup>
+                                <tfoot>
+                                    <tr class="k-footer-template">
+                                        <td>
+                                            Total Unit Price: 144
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </kendo-grid>
+        </div>
+    </div>
+</body>
+</html>

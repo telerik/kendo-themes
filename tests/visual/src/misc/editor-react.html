@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Editor React</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <span>React Editor with iFrame</span>
+        <span>React Editor without iFrame</span>
+        <section>
+            <div class="k-widget k-editor" style="height: 400px;">
+                <div class="k-widget k-toolbar">
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-bold"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-italic"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-underline"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button"
+                            ><span class="k-icon k-i-strikethrough"></span>
+                        </button>
+                    </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-subscript"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-superscript"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-align-left"></span>
+                            </button>
+                            <button class="k-button k-button-icon k-state-selected" type="button">
+                                <span class="k-icon k-i-align-center"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-align-right"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-align-justify"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-indent-increase"></span>
+                            </button><button class="k-button k-state-disabled k-button-icon" disabled="" type="button">
+                                <span class="k-icon k-i-indent-decrease"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-list-ordered"></span>
+                            </button><button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-list-unordered"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <span class="k-widget k-dropdown">
+                            <span class="k-dropdown-wrap">
+                                <span class="k-input">Font Size</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                                <select style="opacity: 0; width: 1px; border: 0px; z-index: -1; position: absolute; left: 50%;">
+                                    <option value="[object Object]"></option>
+                                </select>
+                            </span>
+                        </span>
+                    </span>
+                    <span class="k-tool-group">
+                        <span class="k-widget k-dropdown">
+                            <span class="k-dropdown-wrap">
+                                <span class="k-input">Font Name</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                                <select style="opacity: 0; width: 1px; border: 0px; z-index: -1; position: absolute; left: 50%;">
+                                    <option value="[object Object]"></option>
+                                </select>
+                            </span>
+                        </span>
+                    </span>
+                    <span class="k-tool-group">
+                        <span class="k-widget k-dropdown">
+                            <span class="k-dropdown-wrap">
+                                <span class="k-input">Paragraph</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                                <select style="opacity: 0; width: 1px; border: 0px; z-index: -1; position: absolute; left: 50%;">
+                                    <option value="[object Object]"></option>
+                                </select>
+                            </span>
+                        </span>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-undo"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-redo"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-state-disabled k-button-icon" disabled="" type="button">
+                                <span class="k-icon k-i-link-horizontal"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" disabled="" type="button">
+                                <span class="k-icon k-i-unlink-horizontal"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-image"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-html"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-table-insert"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-table-row-insert-above"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-table-row-insert-below"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-table-column-insert-left"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-table-column-insert-right"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-table-row-delete"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-table-column-delete"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-table-delete"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-cells-merge"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-cell-split-horizontally"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <span class="k-widget k-colorpicker">
+                            <span class="k-picker-wrap">
+                                <span class="k-tool-icon k-icon k-i-foreground-color">
+                                    <span class="k-selected-color" style="background-color: black;"></span>
+                                </span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                    <span class="k-tool-group">
+                        <span class="k-widget k-colorpicker">
+                            <span class="k-picker-wrap">
+                                <span class="k-tool-icon k-icon k-i-background">
+                                    <span class="k-selected-color" style="background-color: rgb(188, 214, 238);"></span>
+                                </span><span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                    <span class="k-tool-group">
+                        <button class="k-button k-button-icon">
+                            <span class="k-icon k-i-clear-css"></span>
+                        </button>
+                    </span>
+                </div>
+                <div class="k-editor-content">
+                    <iframe frameborder="0" class="k-iframe" src="editor-iFrameContent.html"></iframe>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-widget k-editor" style="height: 400px;">
+                <div class="k-widget k-toolbar">
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-bold"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-italic"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-underline"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button"
+                            ><span class="k-icon k-i-strikethrough"></span>
+                        </button>
+                    </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-subscript"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-superscript"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-align-left"></span>
+                            </button>
+                            <button class="k-button k-button-icon k-state-selected" type="button">
+                                <span class="k-icon k-i-align-center"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-align-right"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-align-justify"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-indent-increase"></span>
+                            </button><button class="k-button k-state-disabled k-button-icon" disabled="" type="button">
+                                <span class="k-icon k-i-indent-decrease"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-list-ordered"></span>
+                            </button><button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-list-unordered"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <span class="k-widget k-dropdown">
+                            <span class="k-dropdown-wrap">
+                                <span class="k-input">Font Size</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                                <select style="opacity: 0; width: 1px; border: 0px; z-index: -1; position: absolute; left: 50%;">
+                                    <option value="[object Object]"></option>
+                                </select>
+                            </span>
+                        </span>
+                    </span>
+                    <span class="k-tool-group">
+                        <span class="k-widget k-dropdown">
+                            <span class="k-dropdown-wrap">
+                                <span class="k-input">Font Name</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                                <select style="opacity: 0; width: 1px; border: 0px; z-index: -1; position: absolute; left: 50%;">
+                                    <option value="[object Object]"></option>
+                                </select>
+                            </span>
+                        </span>
+                    </span>
+                    <span class="k-tool-group">
+                        <span class="k-widget k-dropdown">
+                            <span class="k-dropdown-wrap">
+                                <span class="k-input">Paragraph</span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                                <select style="opacity: 0; width: 1px; border: 0px; z-index: -1; position: absolute; left: 50%;">
+                                    <option value="[object Object]"></option>
+                                </select>
+                            </span>
+                        </span>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-undo"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-redo"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-state-disabled k-button-icon" disabled="" type="button">
+                                <span class="k-icon k-i-link-horizontal"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" disabled="" type="button">
+                                <span class="k-icon k-i-unlink-horizontal"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-image"></span>
+                            </button>
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-html"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon" type="button">
+                                <span class="k-icon k-i-table-insert"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-table-row-insert-above"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-table-row-insert-below"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-table-column-insert-left"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-table-column-insert-right"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-table-row-delete"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-table-column-delete"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-table-delete"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-cells-merge"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon" type="button" disabled="">
+                                <span class="k-icon k-i-cell-split-horizontally"></span>
+                            </button>
+                        </div>
+                    </span>
+                    <span class="k-tool-group">
+                        <span class="k-widget k-colorpicker">
+                            <span class="k-picker-wrap">
+                                <span class="k-tool-icon k-icon k-i-foreground-color">
+                                    <span class="k-selected-color" style="background-color: black;"></span>
+                                </span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                    <span class="k-tool-group">
+                        <span class="k-widget k-colorpicker">
+                            <span class="k-picker-wrap">
+                                <span class="k-tool-icon k-icon k-i-background">
+                                    <span class="k-selected-color" style="background-color: rgb(188, 214, 238);"></span>
+                                </span><span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                    <span class="k-tool-group">
+                        <button class="k-button k-button-icon">
+                            <span class="k-icon k-i-clear-css"></span>
+                        </button>
+                    </span>
+                </div>
+                <div class="k-editor-content"><div class="ProseMirror"><p>The Kendo React Editor allows your users to edit HTML in a familiar, user-friendly way.</p><p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p><p>Features include:</p><ul><li>Text formatting</li><li>Bulleted and numbered lists</li><li>Hyperlinks</li><li>Cross-browser support</li><li>Identical HTML output across browsers</li></ul></div></div>
+             </div>
+        </section>
+        <section></section>
+        <section>
+            <div class="k-widget k-editor">
+                <div class="k-widget k-toolbar">
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon" title="Bold" type="button">
+                                <span class="k-icon k-i-bold"></span>
+                            </button>
+                            <button class="k-button k-button-icon" title="Italic" type="button">
+                                <span class="k-icon k-i-italic"></span>
+                            </button>
+                            <button class="k-button k-button-icon" title="Underline" type="button">
+                                <span class="k-icon k-i-underline"></span>
+                            </button>
+                        </div>
+                    </span>
+                </div>
+                <div class="k-editor-content"><div contenteditable="true" class="ProseMirror"><p data-placeholder="Enter some content ..." class="k-placeholder"><br></p></div></div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Adaptive Grid Filter</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div class="k-pane-wrapper k-widget" style="height: 550px;">
+            <div class="k-pane">
+                <div class="k-grid-filter-menu k-view k-widget">
+                    <div class="k-header">
+                        <a class="k-header-cancel k-link"><span class="k-icon k-i-arrow-chevron-left"></span></a>
+                        Filter in ProductID
+                        <a class="k-header-done k-link"><span class="k-icon k-i-check"></span></a>
+                    </div>
+                    <div class="k-stretched-view k-content">
+                        <form class="k-filter-menu">
+                            <ul class="k-reset">
+                                <li>
+                                    <span class="k-list-title k-filter-help-text">Show items with value that:</span>
+                                    <ul class="k-listgroup k-listgroup-flush">
+                                        <li class="k-item k-listgroup-item">
+                                            <label class="k-label k-listgroup-form-row">
+                                                <span class="k-filter-operator-text k-listgroup-form-field-label">Operator</span>
+                                                <span class="k-listgroup-form-field-wrapper">
+                                                    <select class="k-filter-operator">
+                                                        <option>Is equal to</option>
+                                                        <option>Is not equal to</option>
+                                                    </select>
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item k-listgroup-item">
+                                            <label class="k-label k-listgroup-form-row">
+                                                <label class="k-filter-input-text k-listgroup-form-field-label">Value</label>
+                                                <span class="k-listgroup-form-field-wrapper">
+                                                    <input class="k-value-input" type="text">
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                    <ul class="k-listgroup k-listgroup-flush">
+                                        <li class="k-item k-listgroup-item">
+                                            <label class="k-label k-listgroup-form-row">
+                                                <span class="k-filter-logic-and-text k-listgroup-form-field-label">And</span>
+                                                <span class="k-listgroup-form-field-wrapper">
+                                                    <input checked type="radio" class="k-radio">
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item k-listgroup-item">
+                                            <label class="k-label k-listgroup-form-row">
+                                                <span class="k-filter-logic-or-text k-listgroup-form-field-label">Or</span>
+                                                <span class="k-listgroup-form-field-wrapper">
+                                                    <input type="radio" class="k-radio">
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="k-item k-clear-wrap">
+                                    <span class="k-list-title">&nbsp;</span>
+                                    <ul class="k-listgroup k-listgroup-flush">
+                                        <li class="k-listgroup-item">
+                                            <span class="k-link k-label k-clear">Clear</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

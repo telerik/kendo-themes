@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Filter Row</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default@latest/dist/all.css" />
+    <link rel="stylesheet" href="../../../assets/styles.css" />
+    <script src="../../../assets/scripts.js"></script>
+</head>
+<body>
+    <div id="test-area" class="grid">
+        <h3>Base</h3>
+        <div class="k-grid k-widget telerik-blazor" style="">
+            <div class="k-grid-header" role="presentation" style="padding-right: 18px;">
+                <div class="k-grid-header-wrap" role="presentation">
+                    <table role="grid" style="width: ;">
+                        <colgroup role="presentation">
+                            <col style="width: 65px">
+                            <col style="width: ">
+                            <col style="width: ">
+                            <col style="width: ">
+                        </colgroup>
+                        <thead role="rowgroup">
+                            <tr role="row">
+                                <th class="k-header  " role="columnheader" colspan="1">
+                                    <input type="checkbox" class="k-checkbox telerik-blazor" tabindex="-1">
+                                </th>
+                                <th class="k-header  " role="columnheader" colspan="1">
+                                    Id
+                                </th>
+                                <th class="k-header  " role="columnheader" colspan="1">
+                                    Name
+                                </th>
+                                <th class="k-header  " role="columnheader" colspan="1">
+                                    Command
+                                </th>
+                            </tr>
+                            <tr class="k-filter-row">
+                                <th class=" ">
+                                    <div class="k-filtercell">
+                                        <div class="k-filtercell-wrapper">
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class=" ">
+                                    <div class="k-filtercell">
+                                        <div class="k-filtercell-wrapper">
+                                            <div class="k-widget k-numerictextbox telerik-blazor ">
+                                                <span class="  k-numeric-wrap">
+                                                    <input tabindex="-1" class="k-input k-formatted-value" _bl_ad36d6e1-975b-4b35-a861-febb4a0df861="">
+                                                    <span class="k-select">
+                                                        <span class="k-link k-link-increase" aria-label="Increase value" title="Increase value">
+                                                            <span class="k-icon k-i-arrow-n"></span>
+                                                        </span>
+                                                        <span class="k-link k-link-decrease" aria-label="Decrease value" title="Decrease value">
+                                                            <span class="k-icon k-i-arrow-s"></span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="k-filtercell-operator">
+                                                <span role="listbox" aria-describedby="ebb79baf-2d4e-4a88-8341-2530bf9a8add " class="k-widget k-dropdown k-header k-dropdown-operator    telerik-blazor" tabindex="-1">
+                                                    <span class="k-dropdown-wrap k-state-default ">
+                                                        <span class="k-select">
+                                                            <span class="k-icon k-i-filter"></span>
+                                                        </span>
+                                                    </span>
+                                                    <select tabindex="-1" style="opacity: 0; width: 0px; border: 0px; z-index: -1; position: absolute;">
+                                                    </select>
+                                                </span>
+                                                <button class="k-button-icon  k-button telerik-blazor k-button-icon" tabindex="-1" type="button">
+                                                    <span class="k-icon k-i-filter-clear"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class=" ">
+                                    <div class="k-filtercell">
+                                        <div class="k-filtercell-wrapper">
+                                            <input id="1d3ea255-43df-4294-a388-1fc82199ffa8" class="k-textbox telerik-blazor" tabindex="-1" value="p">
+                                            <div class="k-filtercell-operator">
+                                                <span role="listbox" aria-describedby="00dfa2d5-b835-4be6-a908-131096b5c282 " class="k-widget k-dropdown k-header k-dropdown-operator    telerik-blazor" tabindex="-1">
+                                                    <span class="k-dropdown-wrap k-state-default ">
+                                                        <span class="k-select">
+                                                            <span class="k-icon k-i-filter"></span>
+                                                        </span>
+                                                    </span>
+                                                    <select tabindex="-1" style="opacity: 0; width: 0px; border: 0px; z-index: -1; position: absolute;">
+                                                    </select>
+                                                </span>
+                                                <button class="k-button-icon k-clear-button-visible k-button telerik-blazor k-button-icon" tabindex="-1" type="button">
+                                                    <span class="k-icon k-i-filter-clear"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class=" ">
+                                    <div class="k-filtercell">
+                                        <div class="k-filtercell-wrapper">
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="k-grid-container">
+                <div class="k-loader-container k-loader-container-md k-loader-top " style="display:none;">
+                    <div class="k-loader-container-overlay k-overlay-light"></div>
+                    <div class="k-loader-container-inner ">
+                        <div class="k-loader k-loader-spinner-3 k-loader-lg k-loader-primary">
+                            <div class="k-loader-canvas">
+                                <span class="k-loader-segment"></span>
+                                <span class="k-loader-segment"></span>
+                                <span class="k-loader-segment"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-grid-content k-virtual-content">
+                    <div style="position: relative;">
+                        <div class="k-virtual-position" style="">
+                            <table role="grid" class="k-grid-table" style="height: auto; width: ;">
+                                <colgroup>
+                                    <col style="width: 65px;">
+                                    <col style="width: ;">
+                                    <col style="width: ;">
+                                    <col style="width: ;">
+                                </colgroup>
+                                <tbody role="rowgroup">
+                                    <tr role="row" class="k-master-row  ">
+                                        <td role="gridcell" class="  " colspan="0">
+                                            <span>
+                                                <input type="checkbox" class="k-checkbox k-grid-checkbox  telerik-blazor" tabindex="-1">
+                                            </span>
+                                        </td>
+                                        <td role="gridcell" colspan="0" class="  ">
+                                            1
+                                        </td>
+                                        <td role="gridcell" colspan="0" class="  ">
+                                            Product1
+                                        </td>
+                                        <td class="k-command-cell   " role="gridcell" colspan="0">
+                                            <span>
+                                                <button class="k-button telerik-blazor k-button-icontext" tabindex="-1" type="button">
+                                                    <span class="k-icon k-i-delete"></span>
+                                                    Delete
+                                                </button>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr role="row" class="k-master-row k-alt ">
+                                        <td role="gridcell" class="  " colspan="0">
+                                            <span>
+                                                <input type="checkbox" class="k-checkbox k-grid-checkbox  telerik-blazor" tabindex="-1">
+                                            </span>
+                                        </td>
+                                        <td role="gridcell" colspan="0" class="  ">
+                                            2
+                                        </td>
+                                        <td role="gridcell" colspan="0" class="  ">
+                                            Product2
+                                        </td>
+                                        <td class="k-command-cell   " role="gridcell" colspan="0">
+                                            <span>
+                                                <button class="k-button telerik-blazor k-button-icontext" tabindex="-1" type="button">
+                                                    <span class="k-icon k-i-delete"></span>
+                                                    Delete
+                                                </button>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="k-height-container">
+                        <div style=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3>With Toolbar</h3>
+        <div class="k-grid k-widget telerik-blazor" style="">
+            <div class="k-toolbar k-grid-toolbar" role="presentation">
+                <button class="k-button telerik-blazor k-button-icontext" tabindex="0" type="button">
+                    <span class="k-icon k-i-add"></span>
+                    Add
+                </button>
+            </div>
+            <div class="k-grid-header" role="presentation" style="padding-right: 18px;">
+                <div class="k-grid-header-wrap" role="presentation">
+                    <table role="grid" style="width: ;">
+                        <colgroup role="presentation">
+                            <col style="width: 65px">
+                            <col style="width: ">
+                            <col style="width: ">
+                            <col style="width: ">
+                        </colgroup>
+                        <thead role="rowgroup">
+                            <tr role="row">
+                                <th class="k-header  " role="columnheader" colspan="1">
+                                    <input type="checkbox" class="k-checkbox telerik-blazor" tabindex="-1">
+                                </th>
+                                <th class="k-header  " role="columnheader" colspan="1">
+                                    Id
+                                </th>
+                                <th class="k-header  " role="columnheader" colspan="1">
+                                    Name
+                                </th>
+                                <th class="k-header  " role="columnheader" colspan="1">
+                                    Command
+                                </th>
+                            </tr>
+                            <tr class="k-filter-row">
+                                <th class=" ">
+                                    <div class="k-filtercell">
+                                        <div class="k-filtercell-wrapper">
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class=" ">
+                                    <div class="k-filtercell">
+                                        <div class="k-filtercell-wrapper">
+                                            <div class="k-widget k-numerictextbox telerik-blazor ">
+                                                <span class="  k-numeric-wrap">
+                                                    <input tabindex="-1" class="k-input k-formatted-value" _bl_cc758263-cae6-497f-bdc2-76ff71ed309d="">
+                                                    <span class="k-select">
+                                                        <span class="k-link k-link-increase" aria-label="Increase value" title="Increase value">
+                                                            <span class="k-icon k-i-arrow-n"></span>
+                                                        </span>
+                                                        <span class="k-link k-link-decrease" aria-label="Decrease value" title="Decrease value">
+                                                            <span class="k-icon k-i-arrow-s"></span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="k-filtercell-operator">
+                                                <span role="listbox" aria-describedby="4ab4ad16-f6eb-4408-8239-1dfec6a4a200 " class="k-widget k-dropdown k-header k-dropdown-operator    telerik-blazor" tabindex="-1">
+                                                    <span class="k-dropdown-wrap k-state-default ">
+                                                        <span class="k-select">
+                                                            <span class="k-icon k-i-filter"></span>
+                                                        </span>
+                                                    </span>
+                                                    <select tabindex="-1" style="opacity: 0; width: 0px; border: 0px; z-index: -1; position: absolute;">
+                                                    </select>
+                                                </span>
+                                                <button class="k-button-icon  k-button telerik-blazor k-button-icon" tabindex="-1" type="button">
+                                                    <span class="k-icon k-i-filter-clear"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class=" ">
+                                    <div class="k-filtercell">
+                                        <div class="k-filtercell-wrapper">
+                                            <input id="504d0090-799d-4914-a6c8-d48e8fd17f4d" class="k-textbox telerik-blazor" tabindex="-1" value="p">
+                                            <div class="k-filtercell-operator">
+                                                <span role="listbox" aria-describedby="efa2ebf5-ff53-4f7a-a5cf-09da089e4fb6 " class="k-widget k-dropdown k-header k-dropdown-operator    telerik-blazor" tabindex="-1">
+                                                    <span class="k-dropdown-wrap k-state-default ">
+                                                        <span class="k-select">
+                                                            <span class="k-icon k-i-filter"></span>
+                                                        </span>
+                                                    </span>
+                                                    <select tabindex="-1" style="opacity: 0; width: 0px; border: 0px; z-index: -1; position: absolute;">
+                                                    </select>
+                                                </span>
+                                                <button class="k-button-icon k-clear-button-visible k-button telerik-blazor k-button-icon" tabindex="-1" type="button">
+                                                    <span class="k-icon k-i-filter-clear"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class=" ">
+                                    <div class="k-filtercell">
+                                        <div class="k-filtercell-wrapper">
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="k-grid-container">
+                <div class="k-loader-container k-loader-container-md k-loader-top " style="display:none;">
+                    <div class="k-loader-container-overlay k-overlay-light"></div>
+                    <div class="k-loader-container-inner ">
+                        <div class="k-loader k-loader-spinner-3 k-loader-lg k-loader-primary">
+                            <div class="k-loader-canvas">
+                                <span class="k-loader-segment"></span>
+                                <span class="k-loader-segment"></span>
+                                <span class="k-loader-segment"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-grid-content k-virtual-content">
+                    <div style="position: relative;">
+                        <div class="k-virtual-position" style="">
+                            <table role="grid" class="k-grid-table" style="height: auto; width: ;">
+                                <colgroup>
+                                    <col style="width: 65px;">
+                                    <col style="width: ;">
+                                    <col style="width: ;">
+                                    <col style="width: ;">
+                                </colgroup>
+                                <tbody role="rowgroup">
+                                    <tr role="row" class="k-master-row  ">
+                                        <td role="gridcell" class="  " colspan="0">
+                                            <span>
+                                                <input type="checkbox" class="k-checkbox k-grid-checkbox  telerik-blazor" tabindex="-1">
+                                            </span>
+                                        </td>
+                                        <td role="gridcell" colspan="0" class="  ">
+                                            1
+                                        </td>
+                                        <td role="gridcell" colspan="0" class="  ">
+                                            Product1
+                                        </td>
+                                        <td class="k-command-cell   " role="gridcell" colspan="0">
+                                            <span>
+                                                <button class="k-button telerik-blazor k-button-icontext" tabindex="-1" type="button">
+                                                    <span class="k-icon k-i-delete"></span>
+                                                    Delete
+                                                </button>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr role="row" class="k-master-row k-alt ">
+                                        <td role="gridcell" class="  " colspan="0">
+                                            <span>
+                                                <input type="checkbox" class="k-checkbox k-grid-checkbox  telerik-blazor" tabindex="-1">
+                                            </span>
+                                        </td>
+                                        <td role="gridcell" colspan="0" class="  ">
+                                            2
+                                        </td>
+                                        <td role="gridcell" colspan="0" class="  ">
+                                            Product2
+                                        </td>
+                                        <td class="k-command-cell   " role="gridcell" colspan="0">
+                                            <span>
+                                                <button class="k-button telerik-blazor k-button-icontext" tabindex="-1" type="button">
+                                                    <span class="k-icon k-i-delete"></span>
+                                                    Delete
+                                                </button>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="k-height-container">
+                        <div style=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

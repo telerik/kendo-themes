@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Menu Popup Angular</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr 1fr;
+            align-items: start;
+        }
+
+        .k-animation-container {
+            position: relative;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <span>LTR</span>
+        <span>RTL</span>
+
+        <!-- detached menu popup (Angular) -->
+        <section>
+            <kendo-popup class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <ul class="k-group k-menu-group k-reset">
+                        <li class="k-item k-menu-item k-first">
+                            <span class="k-link k-menu-link">
+                                First
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                Normal
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-state-hover">
+                            <span class="k-link k-menu-link">
+                                Hover
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link k-state-active">
+                                Active
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-state-focused">
+                            <span class="k-link k-menu-link">
+                                Focus
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                <span class="k-icon k-i-folder"></span>
+                                Normal with icon
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-state-hover">
+                            <span class="k-link k-menu-link">
+                                <span class="k-icon k-i-folder"></span>
+                                Hover with icon
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link k-state-active">
+                                <span class="k-icon k-i-folder"></span>
+                                Active with icon
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-state-focused">
+                            <span class="k-link k-menu-link">
+                                <span class="k-icon k-i-folder"></span>
+                                Focus with icon
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-last">
+                            <span class="k-link k-menu-link">
+                                Last
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-right"></span>
+                            </span>
+                        </li>
+                    </ul>
+
+                </div>
+            </kendo-popup>
+        </section>
+
+        <!-- detached menu popup (Angular, RTL) -->
+        <section>
+            <kendo-popup class="k-animation-container k-rtl k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <ul class="k-group k-menu-group k-reset">
+                        <li class="k-item k-menu-item k-first">
+                            <span class="k-link k-menu-link">
+                                First
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-left"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                Normal
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-left"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-state-hover">
+                            <span class="k-link k-menu-link">
+                                Hover
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-left"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link k-state-active">
+                                Active
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-left"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-state-focused">
+                            <span class="k-link k-menu-link">
+                                Focus
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-left"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                <span class="k-icon k-i-folder"></span>
+                                Normal with icon
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-left"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-state-hover">
+                            <span class="k-link k-menu-link">
+                                <span class="k-icon k-i-folder"></span>
+                                Hover with icon
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-left"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link k-state-active">
+                                <span class="k-icon k-i-folder"></span>
+                                Active with icon
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-left"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-state-focused">
+                            <span class="k-link k-menu-link">
+                                <span class="k-icon k-i-folder"></span>
+                                Focus with icon
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-left"></span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-last">
+                            <span class="k-link k-menu-link">
+                                Last
+                                <span class="k-icon k-menu-expand-arrow k-i-arrow-60-left"></span>
+                            </span>
+                        </li>
+                    </ul>
+
+                </div>
+            </kendo-popup>
+        </section>
+
+    </div>
+
+</body>
+</html>

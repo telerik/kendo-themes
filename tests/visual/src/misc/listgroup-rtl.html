@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Listgroup RTL</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <span class="col-4">RTL</span>
+
+        <section dir="rtl">
+            <ul class="k-listgroup">
+                <li class="k-listgroup-item">Item</li>
+                <li class="k-listgroup-item">
+                    <a href="#" class="k-link">Link</a>
+                </li>
+                <li class="k-listgroup-item">
+                    <span class="k-link">Pseudo link</span>
+                </li>
+            </ul>
+        </section>
+
+        <section dir="rtl">
+            <ul class="k-listgroup">
+                <li class="k-listgroup-item">
+                    <a href="#" class="k-link">
+                        Link
+                        <span class="k-select"><span class="k-icon k-i-arrow-chevron-right"></span></span>
+                    </a>
+                </li>
+                <li class="k-listgroup-item k-listgroup-item-segmented">
+                    <span class="k-link">Pseudo link</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-chevron-right"></span></span>
+                </li>
+            </ul>
+        </section>
+
+        <hr class="k-hr col-4">
+
+        <section class="col-2" dir="rtl">
+            <ul class="k-listgroup">
+                <li class="k-listgroup-item">
+                    <span class="k-listgroup-form-row">
+                        <span class="k-listgroup-form-field-label">Select</span>
+                        <span class="k-listgroup-form-field-wrapper">
+                            <select></select>
+                        </span>
+                    </span>
+                </li>
+                <li class="k-listgroup-item">
+                    <span class="k-listgroup-form-row">
+                        <span class="k-listgroup-form-field-label">Text</span>
+                        <span class="k-listgroup-form-field-wrapper">
+                            <input type="text" />
+                        </span>
+                    </span>
+                </li>
+                <li class="k-listgroup-item">
+                    <span class="k-listgroup-form-row">
+                        <span class="k-listgroup-form-field-label">Password</span>
+                        <span class="k-listgroup-form-field-wrapper">
+                            <input type="password" />
+                        </span>
+                    </span>
+                </li>
+                <li class="k-listgroup-item">
+                    <span class="k-listgroup-form-row">
+                        <span class="k-listgroup-form-field-label">Date</span>
+                        <span class="k-listgroup-form-field-wrapper">
+                            <input type="date" />
+                        </span>
+                    </span>
+                </li>
+                <li class="k-listgroup-item">
+                    <span class="k-listgroup-form-row">
+                        <span class="k-listgroup-form-field-label">Time</span>
+                        <span class="k-listgroup-form-field-wrapper">
+                            <input type="time" />
+                        </span>
+                    </span>
+                </li>
+                <li class="k-listgroup-item">
+                    <span class="k-listgroup-form-row">
+                        <span class="k-listgroup-form-field-label">Number</span>
+                        <span class="k-listgroup-form-field-wrapper">
+                            <input type="number" />
+                        </span>
+                    </span>
+                </li>
+                <li class="k-listgroup-item">
+                    <span class="k-listgroup-form-row">
+                        <span class="k-listgroup-form-field-label">Radio</span>
+                        <span class="k-listgroup-form-field-wrapper">
+                            <input type="radio" />
+                        </span>
+                    </span>
+                </li>
+                <li class="k-listgroup-item">
+                    <span class="k-listgroup-form-row">
+                        <span class="k-listgroup-form-field-label">Checkbox</span>
+                        <span class="k-listgroup-form-field-wrapper">
+                            <input type="checkbox" />
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>

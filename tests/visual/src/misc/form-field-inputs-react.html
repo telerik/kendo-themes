@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Form Field Inputs React</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        section {
+            padding: 20px;
+            border: 1px dashed grey;
+        }
+
+        .test-heading {
+            margin: 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
+        <section>
+            <h3 class="test-heading">Vertical Form (React)</h3>
+
+            <form class="k-form">
+
+                <div class="k-form-field">
+                    <label class="k-label">Textbox:</label>
+                    <input class="k-textbox" />
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">Checkbox:</label>
+                    <span>
+                        <input type="checkbox" class="k-checkbox" />
+                    </span>
+                </div>
+
+                <div class="k-form-field">
+                    <span>
+                        <input type="checkbox" class="k-checkbox" />
+                        <label class="k-checkbox-label">Label after the box</label>
+                    </span>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">Radio:</label>
+                    <input type="radio" class="k-radio" />
+                </div>
+
+                <div class="k-form-field">
+                    <input type="radio" class="k-radio" />
+                    <label class="k-radio-label">Label after the box</label>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">Radio (Y):</label>
+                    <ul role="radiogroup" class="k-radio-list k-list-vertical">
+                        <li class="k-radio-item">
+                            <input type="radio" class="k-radio" />
+                            <label class="k-radio-label">Female</label>
+                        </li>
+                        <li class="k-radio-item">
+                            <input type="radio" class="k-radio" />
+                            <label class="k-radio-label">Male</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">Radio (X):</label>
+                    <ul role="radiogroup" class="k-radio-list k-list-horizontal">
+                        <li class="k-radio-item">
+                            <input type="radio" class="k-radio" />
+                            <label class="k-radio-label">Female</label>
+                        </li>
+                        <li class="k-radio-item">
+                            <input type="radio" class="k-radio" />
+                            <label class="k-radio-label">Male</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">ColorPicker:</label>
+                    <span class="k-widget k-colorpicker">
+                        <span class="k-picker-wrap">
+                            <span class="k-selected-color">
+                                <span class="k-icon k-i-line"></span>
+                            </span>
+                            <span class="k-select">
+                                <span class="k-icon k-i-arrow-s"></span>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">MaskedTextBox:</label>
+                    <span class="k-widget k-maskedtextbox">
+                        <input type="text" class="k-textbox" value="(359) 884-12-33-21" />
+                    </span>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">NumericTextBox:</label>
+                    <span class="k-widget k-numerictextbox">
+                        <span class="k-numeric-wrap">
+                            <input type="tel" class="k-input k-formatted-value" value="6" />
+                            <span class="k-select">
+                                <span class="k-link k-link-increase">
+                                    <span class="k-icon k-i-arrow-n"></span>
+                                </span>
+                                <span class="k-link k-link-decrease">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">Switch:</label>
+                    <span class="k-widget k-switch k-switch-on">
+                        <span class="k-switch-container">
+                            <input type="checkbox" />
+                            <span class="k-switch-label-on">ON</span>
+                            <span class="k-switch-label-off">OFF</span>
+                            <span class="k-switch-handle"></span>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">Slider:</label>
+                    <div class="k-slider k-widget k-slider-horizontal">
+                        <div class="k-slider-wrap k-slider-buttons" style="display: flex; position: relative; flex-direction: row;">
+                            <a class="k-button k-button-decrease" style="position: relative;">
+                                <span class="k-icon k-i-arrow-w"></span>
+                            </a>
+                            <div class="k-slider-track-wrap" style="flex-grow: 1; position: relative; touch-action: none; margin-left: 0.5rem; margin-right: 0.5rem;">
+                                <div class="k-slider-track" style="left: 0px; width: 100%;">
+                                    <div class="k-slider-selection" style="width: 53.8574%;"></div>
+                                    <a class="k-draghandle" style="left: calc(53.8574% - 8px); z-index: 1;"></a>
+                                </div>
+                            </div>
+                            <a class="k-button k-button-increase" style="position: relative;">
+                                <span class="k-icon k-i-arrow-e"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <span class="k-floating-label-container k-state-empty">
+                        <input class="k-textbox" />
+                        <label class="k-label">FloatingLabel</label>
+                    </span>
+                </div>
+
+                <div class="k-form-field">
+                    <span class="k-floating-label-container k-state-empty k-state-focused">
+                        <input class="k-textbox" />
+                        <label class="k-label">FloatingLabel (focused)</label>
+                    </span>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">Upload</label>
+                    <div class="k-widget k-upload">
+                        <div class="k-dropzone">
+                            <div role="button" class="k-button k-upload-button">
+                                <input />
+                                <span>Select files...</span>
+                            </div>
+                            <div class="k-upload-status k-upload-status-total">
+                                <span class="k-i-checkmark k-icon"></span>
+                                Done
+                            </div>
+                        </div>
+                        <ul class="k-upload-files k-reset">
+                            <li class="k-file k-file-success">
+                                <div class="k-file-single">
+                                    <div class="k-progressbar" style="transition: opacity 1s ease-in-out 0s; opacity: 0;">
+                                        <span class="k-progress" style="width: 100%;"></span>
+                                    </div>
+                                    <span class="k-file-group-wrapper">
+                                        <span class="k-file-group k-icon k-i-file-pdf"></span>
+                                        <span class="k-file-state"></span>
+                                    </span>
+                                    <span class="k-file-name-size-wrapper">
+                                        <span class="k-file-name">test long long long long long long long long long long long long long.pdf</span>
+                                        <span class="k-file-validation-message k-text-success">File(s) successfully uploaded.</span>
+                                    </span>
+                                    <strong class="k-upload-status">
+                                        <button type="button" class="k-button k-button-icon k-flat k-upload-action">
+                                            <span class="k-icon k-delete k-i-x"></span>
+                                        </button>
+                                    </strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+
+
+        <section>
+            <h3 class="test-heading">Horizontal Form (React)</h3>
+
+            <form class="k-form k-form-horizontal">
+
+                <div class="k-form-field">
+                    <label class="k-label">Textbox:</label>
+                    <div class="k-form-field-wrap">
+                        <input class="k-textbox" />
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">Checkbox:</label>
+                    <div class="k-form-field-wrap">
+                        <span>
+                            <input type="checkbox" class="k-checkbox" />
+                        </span>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-label-empty"></label>
+                    <div class="k-form-field-wrap">
+                        <span>
+                            <input type="checkbox" class="k-checkbox" />
+                            <label class="k-checkbox-label">Label after the box</label>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">Radio:</label>
+                    <div class="k-form-field-wrap">
+                        <input type="radio" class="k-radio" />
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label k-label-empty"></label>
+                    <div class="k-form-field-wrap">
+                        <input type="radio" class="k-radio" />
+                        <label class="k-radio-label">Label after the box</label>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">Radio (Y):</label>
+                    <div class="k-form-field-wrap">
+                        <ul role="radiogroup" class="k-radio-list k-list-vertical">
+                            <li class="k-radio-item">
+                                <input type="radio" class="k-radio" />
+                                <label class="k-radio-label">Female</label>
+                            </li>
+                            <li class="k-radio-item">
+                                <input type="radio" class="k-radio" />
+                                <label class="k-radio-label">Male</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">Radio (X):</label>
+                    <div class="k-form-field-wrap">
+                        <ul role="radiogroup" class="k-radio-list k-list-horizontal">
+                            <li class="k-radio-item">
+                                <input type="radio" class="k-radio" />
+                                <label class="k-radio-label">Female</label>
+                            </li>
+                            <li class="k-radio-item">
+                                <input type="radio" class="k-radio" />
+                                <label class="k-radio-label">Male</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">ColorPicker:</label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-widget k-colorpicker">
+                            <span class="k-picker-wrap">
+                                <span class="k-selected-color">
+                                    <span class="k-icon k-i-line"></span>
+                                </span>
+                                <span class="k-select">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">MaskedTextBox:</label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-widget k-maskedtextbox">
+                            <input class="k-textbox" value="(359) 884-12-33-21" />
+                        </span>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">NumericTextBox:</label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-widget k-numerictextbox">
+                            <span class="k-numeric-wrap">
+                                <input class="k-input k-formatted-value" value="6">
+                                <span class="k-select">
+                                    <span class="k-link k-link-increase">
+                                        <span class="k-icon k-i-arrow-n"></span>
+                                    </span>
+                                    <span class="k-link k-link-decrease">
+                                        <span class="k-icon k-i-arrow-s"></span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">Switch:</label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-widget k-switch k-switch-on">
+                            <span class="k-switch-container" >
+                                <input type="checkbox">
+                                <span class="k-switch-label-on">ON</span>
+                                <span class="k-switch-label-off">OFF</span>
+                                <span class="k-switch-handle"></span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">Slider:</label>
+                    <div class="k-form-field-wrap">
+                        <div class="k-slider k-widget k-slider-horizontal">
+                            <div class="k-slider-wrap k-slider-buttons" style="display: flex; position: relative; flex-direction: row;">
+                                <a class="k-button k-button-decrease" style="position: relative;">
+                                    <span class="k-icon k-i-arrow-w"></span>
+                                </a>
+                                <div class="k-slider-track-wrap" style="flex-grow: 1; position: relative; touch-action: none; margin-left: 0.5rem; margin-right: 0.5rem;">
+                                    <div class="k-slider-track" style="left: 0px; width: 100%;">
+                                        <div class="k-slider-selection" style="width: 53.8574%;"></div>
+                                        <a class="k-draghandle" style="left: calc(53.8574% - 8px); z-index: 1;"></a>
+                                    </div>
+                                </div>
+                                <a class="k-button k-button-increase" style="position: relative;">
+                                    <span class="k-icon k-i-arrow-e"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <span class="k-label k-label-empty"></span>
+                    <div class="k-form-field-wrap">
+                        <span class="k-floating-label-container k-state-empty">
+                            <input class="k-textbox" />
+                            <label class="k-label">FloatingLabel</label>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <span class="k-label k-label-empty"></span>
+                    <div class="k-form-field-wrap">
+                        <span class="k-floating-label-container k-state-empty k-state-focused">
+                            <input class="k-textbox" />
+                            <label class="k-label">FloatingLabel (focused)</label>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="k-form-field">
+                    <label class="k-label">Upload</label>
+                    <div class="k-form-field-wrap">
+                        <div class="k-widget k-upload">
+                            <div class="k-dropzone">
+                                <div role="button" class="k-button k-upload-button">
+                                    <input />
+                                    <span>Select files...</span>
+                                </div>
+                                <div class="k-upload-status k-upload-status-total">
+                                    <span class="k-i-checkmark k-icon"></span>
+                                    Done
+                                </div>
+                            </div>
+                            <ul class="k-upload-files k-reset">
+                                <li class="k-file k-file-success">
+                                    <div class="k-file-single">
+                                        <div class="k-progressbar" style="transition: opacity 1s ease-in-out 0s; opacity: 0;">
+                                            <span class="k-progress" style="width: 100%;"></span>
+                                        </div>
+                                        <span class="k-file-group-wrapper">
+                                            <span class="k-file-group k-icon k-i-file-pdf"></span>
+                                            <span class="k-file-state"></span>
+                                        </span>
+                                        <span class="k-file-name-size-wrapper">
+                                            <span class="k-file-name">test long long long long long long long long long long long long long.pdf</span>
+                                            <span class="k-file-validation-message k-text-success">File(s) successfully uploaded.</span>
+                                        </span>
+                                        <strong class="k-upload-status">
+                                            <button type="button" class="k-button k-button-icon k-flat k-upload-action">
+                                                <span class="k-icon k-delete k-i-x"></span>
+                                            </button>
+                                        </strong>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Editor Find and Replace</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+</head>
+<body>
+
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
+        <div class="k-form k-form-vertical">
+            <div class="k-form-field">
+               <label class="k-label k-form-label">Complex content</label>
+               <div class="k-form-field-wrap">
+                  <div class="k-widget k-editor">
+                     <div class="k-widget k-toolbar">
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon k-group-start">
+                                <span class="k-icon k-i-bold"></span>
+                            </button>
+                            <button class="k-button k-button-icon">
+                                <span class="k-icon k-i-italic"></span>
+                            </button>
+                            <button class="k-button k-button-icon">
+                                <span class="k-icon k-i-underline"></span>
+                            </button>
+                            <button class="k-button k-button-icon k-group-end">
+                                <span class="k-icon k-i-strikethrough"></span>
+                            </button>
+                        </div>
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon k-group-start">
+                                <span class="k-icon k-i-subscript"></span>
+                            </button>
+                            <button class="k-button k-button-icon k-group-end">
+                                <span class="k-icon k-i-superscript"></span>
+                            </button>
+                        </div>
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon k-group-start">
+                                <span class="k-icon k-i-align-left"></span>
+                            </button>
+                            <button class="k-button k-state-active k-button-icon">
+                                <span class="k-icon k-i-align-center"></span>
+                            </button>
+                            <button class="k-button k-button-icon">
+                                <span class="k-icon k-i-align-right"></span>
+                            </button>
+                            <button class="k-button k-button-icon k-group-end">
+                                <span class="k-icon k-i-align-justify"></span>
+                            </button>
+                        </div>
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon k-group-start">
+                                <span class="k-icon k-i-indent-increase"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon k-group-end"><span class="k-icon k-i-indent-decrease"></span></button></div>
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon k-group-start">
+                                <span class="k-icon k-i-list-ordered"></span>
+                            </button>
+                            <button class="k-button k-button-icon k-group-end">
+                                <span class="k-icon k-i-list-unordered"></span>
+                            </button>
+                        </div>
+                        <span class="k-widget k-dropdown">
+                           <span class="k-dropdown-wrap">
+                              <span class="k-input">Font Size</span>
+                              <span class="k-select">
+                                  <span class="k-icon k-i-arrow-s"></span>
+                              </span>
+                           </span>
+                        </span>
+                        <span class="k-widget k-dropdown">
+                           <span class="k-dropdown-wrap">
+                              <span class="k-input">Font Name</span>
+                              <span class="k-select">
+                                  <span class="k-icon k-i-arrow-s"></span>
+                              </span>
+                           </span>
+                        </span>
+                        <span class="k-widget k-dropdown">
+                           <span class="k-dropdown-wrap">
+                              <span class="k-input">Paragraph</span>
+                              <span class="k-select">
+                                  <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                           </span>
+                        </span>
+                        <div class="k-button-group">
+                            <button class="k-button k-state-disabled k-button-icon k-group-start">
+                                <span class="k-icon k-i-undo"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon k-group-end">
+                                <span class="k-icon k-i-redo"></span>
+                            </button>
+                        </div>
+                        <div class="k-button-group">
+                            <button class="k-button k-state-disabled k-button-icon k-group-start">
+                                <span class="k-icon k-i-link-horizontal"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon">
+                                <span class="k-icon k-i-unlink-horizontal"></span>
+                            </button>
+                            <button class="k-button k-button-icon">
+                                <span class="k-icon k-i-image"></span>
+                            </button>
+                            <button class="k-button k-button-icon k-group-end">
+                                <span class="k-icon k-i-html"></span>
+                            </button>
+                        </div>
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon k-group-start k-group-end">
+                                <span class="k-icon k-i-table-insert"></span>
+                            </button>
+                        </div>
+                        <div class="k-button-group">
+                            <button class="k-button k-state-disabled k-button-icon k-group-start">
+                                <span class="k-icon k-i-table-row-insert-above"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon">
+                                <span class="k-icon k-i-table-row-insert-below"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon">
+                                <span class="k-icon k-i-table-column-insert-left"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon k-group-end">
+                                <span class="k-icon k-i-table-column-insert-right"></span>
+                            </button>
+                        </div>
+                        <div class="k-button-group">
+                            <button class="k-button k-state-disabled k-button-icon k-group-start">
+                                <span class="k-icon k-i-table-row-delete"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon">
+                                <span class="k-icon k-i-table-column-delete"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon k-group-end">
+                                <span class="k-icon k-i-table-delete"></span>
+                            </button>
+                        </div>
+                        <div class="k-button-group">
+                            <button class="k-button k-state-disabled k-button-icon k-group-start">
+                                <span class="k-icon k-i-cells-merge"></span>
+                            </button>
+                            <button class="k-button k-state-disabled k-button-icon k-group-end">
+                                <span class="k-icon k-i-cell-split-horizontally"></span>
+                            </button>
+                        </div>
+                     </div>
+                     <div class="k-editor-content"><iframe frameborder="0" class="k-iframe" style="height: 100px;"></iframe></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+    </div>
+
+</body>
+</html>

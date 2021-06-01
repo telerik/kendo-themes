@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Scheduler Angular Edit Dialog</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 1200px;
+            grid-template-columns: 1fr;
+            align-items: top;
+            padding: 0;
+        }
+
+        /* test page overrides */
+        .k-dialog-wrapper {
+            position: relative;
+        }
+
+        .k-scheduler-edit-form {
+            height: 1500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area">
+        <kendo-scheduler-edit-dialog>
+            <kendo-dialog class="k-scheduler-edit-dialog k-dialog-wrapper">
+                <div class="k-overlay"></div>
+                <div class="k-widget k-window k-dialog" style="min-width:700px;">
+                    <kendo-dialog-titlebar class="k-window-titlebar k-dialog-titlebar k-header" id="kendo-dialog-title-797726">
+                        <div class="k-window-title k-dialog-title">Event</div>
+                        <div class="k-window-actions k-dialog-actions">
+                            <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close" href="#">
+                                <span class="k-icon k-i-x"></span>
+                            </a>
+                        </div>
+                    </kendo-dialog-titlebar>
+                    <div class="k-content k-window-content k-dialog-content">
+                        <div class="k-scheduler-edit-form">
+                            <div class="k-edit-form-container">
+                                <form class="ng-touched">
+                                    <div class="k-edit-label">
+                                        <label for="k-event-title">Title</label>
+                                    </div>
+                                    <div class="k-edit-field">
+                                        <input class="k-textbox ng-touched" id="k-event-title" placeholder="Title">
+                                    </div>
+                                    <div class="k-edit-label">
+                                        <label>Start</label>
+                                    </div>
+                                    <div class="k-edit-field">
+                                        <kendo-scheduler-datetime-picker class="">
+                                            <kendo-datepicker class="k-widget k-datepicker k-header">
+                                                <span class="k-picker-wrap">
+                                                    <kendo-dateinput class="k-widget k-dateinput">
+                                                        <span class="k-dateinput-wrap">
+                                                            <input autocapitalize="off" autocomplete="off" autocorrect="off" class="k-input" spellcheck="false" placeholder="null" id="k-a2da2a40-900b-40ca-a92f-40087bd6c0b5">
+                                                        </span>
+                                                    </kendo-dateinput>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-calendar"></span>
+                                                    </span>
+                                                </span>
+                                            </kendo-datepicker>
+                                            <kendo-timepicker class="k-widget k-timepicker k-header">
+                                                <span class="k-picker-wrap">
+                                                    <kendo-dateinput class="k-widget k-dateinput">
+                                                        <span class="k-dateinput-wrap">
+                                                            <input autocapitalize="off" autocomplete="off" autocorrect="off" class="k-input" spellcheck="false" placeholder="null" id="k-2a9feed1-d98a-409d-a83d-d615e4f37f1c">
+                                                        </span>
+                                                    </kendo-dateinput>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-clock"></span>
+                                                    </span>
+                                                </span>
+                                            </kendo-timepicker>
+                                        </kendo-scheduler-datetime-picker>
+                                    </div>
+                                    <div class="k-edit-label">
+                                        <label>End</label>
+                                    </div>
+                                    <div class="k-edit-field">
+                                        <kendo-scheduler-datetime-picker class="">
+                                            <kendo-datepicker class="k-widget k-datepicker k-header">
+                                                <span class="k-picker-wrap">
+                                                    <kendo-dateinput class="k-widget k-dateinput">
+                                                        <span class="k-dateinput-wrap">
+                                                            <input autocapitalize="off" autocomplete="off" autocorrect="off" class="k-input" spellcheck="false" placeholder="null" id="k-323a3cd2-8c58-4968-8132-fbc488fea634">
+                                                        </span>
+                                                    </kendo-dateinput>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-calendar"></span>
+                                                    </span>
+                                                </span>
+                                            </kendo-datepicker>
+                                            <kendo-timepicker class="k-widget k-timepicker k-header">
+                                                <span class="k-picker-wrap">
+                                                    <kendo-dateinput class="k-widget k-dateinput">
+                                                        <span class="k-dateinput-wrap">
+                                                            <input autocapitalize="off" autocomplete="off" autocorrect="off" class="k-input" spellcheck="false" placeholder="null" id="k-bb6eca97-ca8e-42f1-906e-533e81ea046f" >
+                                                        </span>
+                                                    </kendo-dateinput>
+                                                    <span class="k-select">
+                                                        <span class="k-icon k-i-clock"></span>
+                                                    </span>
+                                                </span>
+                                            </kendo-timepicker>
+                                        </kendo-scheduler-datetime-picker>
+                                    </div>
+                                    <div class="k-edit-field">
+                                        <input class="k-checkbox" id="k-is-allday-chkbox" type="checkbox">
+                                        <label class="k-checkbox-label" for="k-is-allday-chkbox">All Day Event</label>
+                                    </div>
+                                    <div class="k-edit-field">
+                                        <input class="k-checkbox" id="k-set-timezone" type="checkbox">
+                                        <label class="k-checkbox-label" for="k-set-timezone">Specify Time Zone</label>
+                                    </div>
+                                    <kendo-recurrence-editor class="k-recurrence-editor">
+                                        <kendo-recurrence-frequency-editor>
+                                            <div class="k-edit-label">
+                                                <label>Repeat</label>
+                                            </div>
+                                            <div class="k-edit-field">
+                                                <kendo-buttongroup class="k-button-group">
+                                                    <button class="k-button k-group-start" style="width: 100px;">Never</button>
+                                                    <button class="k-button" style="width: 100px;">Daily</button>
+                                                    <button class="k-button k-state-selected" style="width: 100px;">Weekly</button>
+                                                    <button class="k-button" style="width: 100px;">Monthly</button>
+                                                    <button class="k-button k-group-end" style="width: 100px;">Yearly</button>
+                                                </kendo-buttongroup>
+                                            </div>
+                                        </kendo-recurrence-frequency-editor>
+                                        <div class="k-recur-view">
+                                            <kendo-recurrence-interval-editor>
+                                                <div class="k-edit-label">
+                                                    <label>Repeat every</label>
+                                                </div>
+                                                <div class="k-edit-field">
+                                                    <kendo-numerictextbox class="k-widget k-numerictextbox" style="width: 70px;">
+                                                        <span class="k-numeric-wrap">
+                                                            <input autocomplete="off" autocorrect="off" class="k-input k-formatted-value" id="k-7d6ba977-90e9-4ae1-aa47-6162fc02963c">
+                                                            <span class="k-select">
+                                                                <span class="k-link k-link-increase">
+                                                                    <span class="k-icon k-i-arrow-n"></span>
+                                                                </span>
+                                                                <span class="k-link k-link-decrease">
+                                                                    <span class="k-icon k-i-arrow-s"></span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </kendo-numerictextbox>
+                                                    <span>week(s)</span>
+                                                </div>
+                                            </kendo-recurrence-interval-editor>
+                                            <kendo-recurrence-weekday-rule-editor>
+                                                <div class="k-edit-label">
+                                                    <label>Repeat on</label>
+                                                </div>
+                                                <div class="k-edit-field">
+                                                    <kendo-buttongroup class="k-button-group">
+                                                        <button class="k-button k-group-start" style="width: 75px;">Sun</button>
+                                                        <button class="k-button k-state-selected" style="width: 75px;">Mon</button>
+                                                        <button class="k-button" style="width: 75px;">Tue</button>
+                                                        <button class="k-button" style="width: 75px;">Wed</button>
+                                                        <button class="k-button" style="width: 75px;">Thu</button>
+                                                        <button class="k-button" style="width: 75px;">Fri</button>
+                                                        <button class="k-button k-group-end" style="width: 75px;">Sat</button>
+                                                    </kendo-buttongroup>
+                                                </div>
+                                            </kendo-recurrence-weekday-rule-editor>
+                                            <kendo-recurrence-end-rule-editor>
+                                                <div class="k-edit-label">
+                                                    <label>End</label>
+                                                </div>
+                                                <div class="k-edit-field">
+                                                    <ul class="k-reset">
+                                                        <li>
+                                                            <input id="k-endrule-never" type="radio" name="end" class="k-radio">
+                                                            <label class="k-radio-label" for="k-endrule-never">Never</label>
+                                                        </li>
+                                                        <li>
+                                                            <input id="k-endrule-count" type="radio" name="end" class="k-radio">
+                                                            <label class="k-radio-label" for="k-endrule-count">After</label>
+                                                            <kendo-numerictextbox class="k-widget k-numerictextbox" style="width: 70px;">
+                                                                <span class="k-numeric-wrap k-state-disabled">
+                                                                    <input autocomplete="off" autocorrect="off" class="k-input k-formatted-value" id="k-be122636-7527-492b-9591-7eb689c1da33" disabled="">
+                                                                    <span class="k-select">
+                                                                        <span class="k-link k-link-increase">
+                                                                            <span class="k-icon k-i-arrow-n"></span>
+                                                                        </span>
+                                                                        <span class="k-link k-link-decrease">
+                                                                            <span class="k-icon k-i-arrow-s"></span>
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </kendo-numerictextbox>
+                                                            <span>occurrence(s)</span>
+                                                        </li>
+                                                        <li>
+                                                            <input id="k-endrule-until" type="radio" name="end" class="k-radio">
+                                                            <label class="k-radio-label" for="k-endrule-until">On</label>
+                                                            <kendo-datepicker class="k-widget k-datepicker k-header k-state-disabled" style="width: 150px;">
+                                                                <span class="k-picker-wrap k-state-disabled">
+                                                                    <kendo-dateinput class="k-widget k-dateinput k-state-disabled">
+                                                                        <span class="k-dateinput-wrap">
+                                                                            <input autocapitalize="off" autocomplete="off" autocorrect="off" class="k-input" spellcheck="false" placeholder="null" id="k-943ac2a6-c9db-444e-bcb5-a67343fd93b0" disabled="">
+                                                                        </span>
+                                                                    </kendo-dateinput>
+                                                                    <span class="k-select">
+                                                                        <span class="k-icon k-i-calendar"></span>
+                                                                    </span>
+                                                                </span>
+                                                            </kendo-datepicker>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </kendo-recurrence-end-rule-editor>
+                                        </div>
+                                    </kendo-recurrence-editor>
+                                    <div class="k-edit-label">
+                                        <label for="k-event-description">Description</label>
+                                    </div>
+                                    <div class="k-edit-field">
+                                        <textarea class="k-textbox" id="k-event-description"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <kendo-dialog-actions class="k-dialog-buttongroup">
+                        <button class="k-button">Cancel</button>
+                        <button class="k-button k-primary">Save</button>
+                    </kendo-dialog-actions>
+                </div>
+            </kendo-dialog>
+        </kendo-scheduler-edit-dialog>
+    </div>
+</body>
+</html>

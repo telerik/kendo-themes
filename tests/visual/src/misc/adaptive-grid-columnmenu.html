@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Adaptive Grid Columnmenu</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div class="k-pane-wrapper k-widget" style="height: 650px;">
+            <div class="k-pane">
+                <div class="k-grid-column-menu k-view k-widget">
+                    <div class="k-header">
+                        <a class="k-header-cancel k-link"><span class="k-icon k-i-arrow-chevron-left"></span></a>
+                        Edit Column Settings
+                        <a class="k-header-done k-link"><span class="k-icon k-i-check"></span></a>
+                    </div>
+                    <div class="k-stretched-view k-content">
+                        <div class="k-column-menu">
+                            <ul class="k-reset">
+                                <li>
+                                    <span class="k-list-title">Column: Discontinued</span>
+                                    <ul class="k-listgroup k-listgroup-flush k-mb-4">
+                                        <li class="k-item k-listgroup-item k-sort-asc k-state-selected">
+                                            <span class="k-link">
+                                                <span class="k-icon k-i-sort-asc-sm"></span>
+                                                <span class="k-item-title">Sort Ascending</span>
+                                            </span>
+                                        </li>
+                                        <li class="k-item k-listgroup-item k-sort-desc">
+                                            <span class="k-link">
+                                                <span class="k-icon k-i-sort-desc-sm"></span>
+                                                <span class="k-item-title">Sort Descending</span>
+                                            </span>
+                                        </li>
+                                        <li class="k-item k-listgroup-item k-lock">
+                                            <span class="k-link">
+                                                <span class="k-icon k-i-lock"></span>
+                                                <span class="k-item-title">Lock</span>
+                                            </span>
+                                        </li>
+                                        <li class="k-item k-listgroup-item k-unlock k-state-disabled">
+                                            <span class="k-link">
+                                                <span class="k-icon k-i-unlock"></span>
+                                                <span class="k-item-title">Unlock</span>
+                                            </span>
+                                        </li>
+                                        <li class="k-item k-listgroup-item k-filter-item">
+                                            <span class="k-link k-filterable">
+                                                <span class="k-icon k-i-filter"></span>
+                                                <span class="k-item-title">Filter</span>
+                                                <span class="k-select"><span class="k-icon k-i-arrow-chevron-right"></span></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="k-columns-item">
+                                    <span class="k-list-title">Column Visibility</span>
+                                    <span class="k-list-group-header k-pb-1">Group A</span>
+                                    <ul class="k-listgroup k-listgroup-flush k-mb-4">
+                                        <li class="k-item k-listgroup-item">
+                                            <span class="k-listgroup-form-row">
+                                                <span class="k-item-title k-listgroup-form-field-label">Discontinued</span>
+                                                <span class="k-listgroup-form-field-wrapper">
+                                                    <span class="k-switch k-widget k-switch-on">
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="k-switch-container">
+                                                            <span class="k-switch-label-on"></span>
+                                                            <span class="k-switch-label-off"></span>
+                                                            <span class="k-switch-handle"></span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </li>
+                                        <li class="k-item k-listgroup-item">
+                                            <span class="k-listgroup-form-row">
+                                                <span class="k-item-title k-listgroup-form-field-label">ProductID</span>
+                                                <span class="k-listgroup-form-field-wrapper">
+                                                    <span class="k-switch k-widget k-switch-on">
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="k-switch-container">
+                                                            <span class="k-switch-label-on"></span>
+                                                            <span class="k-switch-label-off"></span>
+                                                            <span class="k-switch-handle"></span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <span class="k-list-group-header k-pb-1">Group B</span>
+                                    <ul class="k-listgroup k-listgroup-flush k-mb-4">
+                                        <li class="k-item k-listgroup-item">
+                                            <span class="k-listgroup-form-row">
+                                                <span class="k-item-title k-listgroup-form-field-label">Name</span>
+                                                <span class="k-listgroup-form-field-wrapper">
+                                                    <span class="k-switch k-widget k-switch-on k-state-disabled">
+                                                        <input type="checkbox" checked="checked" disabled="disabled">
+                                                        <span class="k-switch-container">
+                                                            <span class="k-switch-label-on"></span>
+                                                            <span class="k-switch-label-off"></span>
+                                                            <span class="k-switch-handle"></span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="k-item k-clear-wrap">
+                                    <ul class="k-listgroup k-listgroup-flush k-mb-4">
+                                        <li class="k-listgroup-item">
+                                            <span class="k-link k-label k-clear">Clear</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

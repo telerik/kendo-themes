@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+
+<head>
+    <title>TreeList</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div id="test-area" class="grid">
+
+        <section>
+
+            <div id="treelist" class="k-treelist k-grid k-widget k-grid-no-scrollbar">
+                <div class="k-grid-header" style="padding-right: 0;">
+                    <div class="k-grid-header-wrap">
+                        <table>
+                            <colgroup>
+                                <col style="width: 250px;">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="k-header k-with-icon"><a class="k-header-column-menu"><span
+                                                class="k-icon k-i-more-vertical"></span></a><a class="k-link">First
+                                            Name</a></th>
+                                    <th class="k-header k-with-icon"><a class="k-header-column-menu"><span
+                                                class="k-icon k-i-more-vertical"></span></a><a class="k-link">Last
+                                            Name</a></th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="k-grid-content k-auto-scrollable">
+                    <table>
+                        <colgroup>
+                            <col style="width: 250px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td><span class="k-icon k-i-expand"></span>Daryl</td>
+                                <td>Sweeney</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div id="treelist" class="k-treelist k-grid k-widget">
+                <div class="k-grid-header" style="padding-right: 17px;">
+                    <div class="k-grid-header-wrap">
+                        <table>
+                            <colgroup>
+                                <col style="width: 280px;">
+                                <col style="width: 160px;">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="k-header k-with-icon k-filterable">
+                                        <a class="k-grid-filter"><span class="k-icon k-i-filter"></span></a>
+                                        <a class="k-link">First Name</a>
+                                    </th>
+                                    <th class="k-header k-with-icon k-filterable">
+                                        <a class="k-grid-filter"><span class="k-icon k-i-filter"></span></a>
+                                        <a class="k-link">Last Name</a>
+                                    </th>
+                                    <th class="k-header k-with-icon k-filterable">
+                                        <a class="k-grid-filter"><span class="k-icon k-i-filter"></span></a>
+                                        <a class="k-link">Position</a>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="k-grid-content k-auto-scrollable">
+                    <table>
+                        <colgroup>
+                            <col style="width: 280px;">
+                            <col style="width: 160px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr class="k-treelist-group">
+                                <td><span class="k-icon k-i-collapse"></span>Daryl</td>
+                                <td>Sweeney</td>
+                                <td>CEO</td>
+                            </tr>
+                            <tr class="k-alt k-treelist-group">
+                                <td><span class="k-icon k-i-none"></span><span class="k-icon k-i-collapse"></span>Guy
+                                </td>
+                                <td>Wooten</td>
+                                <td>Chief Technical Officer</td>
+                            </tr>
+                            <tr class="k-treelist-group">
+                                <td><span class="k-icon k-i-none"></span><span class="k-icon k-i-none"></span><span
+                                        class="k-icon k-i-collapse"></span>Buffy</td>
+                                <td>Weber</td>
+                                <td>VP, Engineering</td>
+                            </tr>
+                            <tr class="k-alt k-treelist-group">
+                                <td><span class="k-icon k-i-none"></span><span class="k-icon k-i-none"></span><span
+                                        class="k-icon k-i-none"></span><span class="k-icon k-i-collapse"></span>Hyacinth
+                                </td>
+                                <td>Hood</td>
+                                <td>Team Lead</td>
+                            </tr>
+                            <tr>
+                                <td><span class="k-icon k-i-none"></span><span class="k-icon k-i-none"></span><span
+                                        class="k-icon k-i-none"></span><span class="k-icon k-i-none"></span><span
+                                        class="k-icon k-i-none"></span>Akeem</td>
+                                <td>Carr</td>
+                                <td>Junior Software Developer</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

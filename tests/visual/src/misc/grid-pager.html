@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Grid Pager</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <span>jQuery grid</span>
+        <span>Angular grid</span>
+
+        <section>
+            <div class="k-widget k-grid k-grid-no-scrollbar">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap">
+                        <table>
+                            <colgroup>
+                                <col style="width: 100px;" />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="k-header">100px</th>
+                                    <th class="k-header">no width</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="k-grid-content">
+                    <table class="k-grid-table">
+                        <colgroup>
+                            <col style="width: 100px;" />
+                            <col />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Row</td>
+                            </tr>
+                            <tr class="k-alt">
+                                <td>2</td>
+                                <td>Alt row</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="k-widget k-pager-wrap k-grid-pager k-state-focused">
+                    <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
+                    <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
+                    <div class="k-pager-numbers-wrap">
+                        <select class="k-dropdown">
+                            <option>1</option>
+                        </select>
+                        <ul class="k-pager-numbers">
+                            <li><span class="k-link k-state-selected">1</span></li>
+                            <li><a class="k-link">2</a></li>
+                            <li><a class="k-link">3</a></li>
+                        </ul>
+                    </div>
+                    <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
+                    <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
+                    <span class="k-pager-info k-label">1 - 6 of 9 items</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <kendo-grid class="k-widget k-grid k-grid-no-scrollbar">
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header"> <!-- add padding-left or -right for scrollbar width-->
+                        <div class="k-grid-header-wrap">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 100px;" />
+                                    <col />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="k-header">100px</th>
+                                        <th class="k-header">no width</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+
+                    <kendo-grid-list class="k-grid-container">
+                        <div class="k-grid-content k-virtual-content">
+                            <div>
+                                <table class="k-grid-table">
+                                    <colgroup>
+                                        <col style="width: 100px;" />
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Row</td>
+                                        </tr>
+                                        <tr class="k-alt">
+                                            <td>2</td>
+                                            <td>Alt row</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="k-height-container">
+                                <div style="height: 0px;"></div> <!-- set height to scroll height (virtual scrolling) -->
+                            </div>
+                        </div>
+                    </kendo-grid-list>
+                </div>
+                <kendo-pager class="k-widget k-pager-wrap k-grid-pager k-state-focused">
+                    <kendo-pager-prev-buttons>
+                        <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-seek-w"></span></a>
+                        <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-w"></span></a>
+                    </kendo-pager-prev-buttons>
+                    <kendo-pager-numeric-buttons>
+                        <ul class="k-pager-numbers">
+                            <li><a class="k-link k-state-selected">1</a></li>
+                            <li><a class="k-link">2</a></li>
+                            <li><a class="k-link">3</a></li>
+                        </ul>
+                    </kendo-pager-numeric-buttons>
+                    <kendo-pager-next-buttons>
+                        <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-e"></span></a>
+                        <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-seek-e"></span>
+                        </a>
+                    </kendo-pager-next-buttons>
+                    <kendo-pager-info class="k-pager-info k-label">1 - 2 of 5 items</kendo-pager-info>
+                </kendo-pager>
+            </kendo-grid>
+        </section>
+
+
+        <span>jQuery grid pager top</span>
+        <span>Angular grid pager top</span>
+
+        <section>
+            <div class="k-widget k-grid k-grid-no-scrollbar">
+                <div class="k-widget k-pager-wrap k-grid-pager k-grid-pager-top">
+                    <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-arrow-end-left"></span></a>
+                    <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-60-left"></span></a>
+                    <div class="k-pager-numbers-wrap">
+                        <select class="k-dropdown">
+                            <option>1</option>
+                        </select>
+                        <ul class="k-pager-numbers">
+                            <li><span class="k-link k-state-selected">1</span></li>
+                            <li><a class="k-link">2</a></li>
+                            <li><a class="k-link">3</a></li>
+                        </ul>
+                    </div>
+                    <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
+                    <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
+                    <span class="k-pager-info k-label">1 - 6 of 9 items</span>
+                </div>
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap">
+                        <table>
+                            <colgroup>
+                                <col style="width: 100px;" />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="k-header">100px</th>
+                                    <th class="k-header">no width</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="k-grid-content">
+                    <table class="k-grid-table">
+                        <colgroup>
+                            <col style="width: 100px;" />
+                            <col />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Row</td>
+                            </tr>
+                            <tr class="k-alt">
+                                <td>2</td>
+                                <td>Alt row</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <kendo-grid class="k-widget k-grid k-grid-no-scrollbar">
+                <kendo-pager class="k-widget k-pager-wrap k-grid-pager k-grid-pager-top">
+                    <kendo-pager-prev-buttons>
+                        <a class="k-link k-pager-nav k-pager-first k-state-disabled"><span class="k-icon k-i-seek-w"></span></a>
+                        <a class="k-link k-pager-nav k-state-disabled"><span class="k-icon k-i-arrow-w"></span></a>
+                    </kendo-pager-prev-buttons>
+                    <kendo-pager-numeric-buttons>
+                        <ul class="k-pager-numbers">
+                            <li><a class="k-link k-state-selected">1</a></li>
+                            <li><a class="k-link">2</a></li>
+                            <li><a class="k-link">3</a></li>
+                        </ul>
+                    </kendo-pager-numeric-buttons>
+                    <kendo-pager-next-buttons>
+                        <a class="k-link k-pager-nav"><span class="k-icon k-i-arrow-e"></span></a>
+                        <a class="k-link k-pager-nav k-pager-last"><span class="k-icon k-i-seek-e"></span>
+                        </a>
+                    </kendo-pager-next-buttons>
+                    <kendo-pager-info class="k-pager-info k-label">1 - 2 of 5 items</kendo-pager-info>
+                </kendo-pager>
+                <div class="k-grid-aria-root">
+                    <div class="k-grid-header"> <!-- add padding-left or -right for scrollbar width-->
+                        <div class="k-grid-header-wrap">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 100px;" />
+                                    <col />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="k-header">100px</th>
+                                        <th class="k-header">no width</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+
+                    <kendo-grid-list class="k-grid-container">
+                        <div class="k-grid-content k-virtual-content">
+                            <div>
+                                <table class="k-grid-table">
+                                    <colgroup>
+                                        <col style="width: 100px;" />
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Row</td>
+                                        </tr>
+                                        <tr class="k-alt">
+                                            <td>2</td>
+                                            <td>Alt row</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="k-height-container">
+                                <div style="height: 0px;"></div> <!-- set height to scroll height (virtual scrolling) -->
+                            </div>
+                        </div>
+                    </kendo-grid-list>
+                </div>
+            </kendo-grid>
+        </section>
+
+    </div>
+
+</body>
+</html>

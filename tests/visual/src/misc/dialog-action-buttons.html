@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Dialog Action Buttons</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(3, 1fr);
+            align-items: start;
+        }
+        /* test page overrides */
+        .k-dialog {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div class="k-widget k-window k-dialog col-3">
+            <div class="k-window-titlebar k-dialog-titlebar">
+                <span class="k-window-title k-dialog-title">Title</span>
+            </div>
+            <div class="k-content k-window-content k-dialog-content">
+                Normal buttons
+            </div>
+
+            <div class="k-dialog-buttongroup k-actions">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
+
+                <button type="button" class="k-button k-state-hover">Hover</button>
+                <button type="button" class="k-button k-primary k-state-hover">Hover</button>
+
+                <button type="button" class="k-button k-state-focused">Focus</button>
+                <button type="button" class="k-button k-primary k-state-focused">Focus</button>
+
+                <button type="button" class="k-button k-state-active">Active</button>
+                <button type="button" class="k-button k-primary k-state-active">Active</button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog col-3">
+            <div class="k-window-titlebar k-dialog-titlebar">
+                <span class="k-window-title k-dialog-title">Title</span>
+            </div>
+            <div class="k-content k-window-content k-dialog-content">
+                Stretched buttons
+            </div>
+            <div class="k-dialog-buttongroup k-actions k-actions-stretched">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
+
+                <button type="button" class="k-button k-state-hover">Hover</button>
+                <button type="button" class="k-button k-primary k-state-hover">Hover</button>
+
+                <button type="button" class="k-button k-state-focused">Focus</button>
+                <button type="button" class="k-button k-primary k-state-focused">Focus</button>
+
+                <button type="button" class="k-button k-state-active">Active</button>
+                <button type="button" class="k-button k-primary k-state-active">Active</button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog k-window-sm">
+            <div class="k-window-titlebar k-dialog-titlebar k-header">
+                <span class="k-window-title k-dialog-title">Title</span>
+                <div class="k-window-actions k-dialog-actions">
+                    <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
+                        <span class="k-icon k-i-close"></span>
+                    </a>
+                </div>
+            </div>
+
+             <div class="k-content k-window-content k-dialog-content">
+                <!-- template -->
+                Narrow Dialog with Stretched button layout
+            </div>
+
+             <div class="k-dialog-buttongroup k-actions k-actions-stretched">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog k-window-sm">
+            <div class="k-window-titlebar k-dialog-titlebar k-header">
+                <span class="k-window-title k-dialog-title">Title</span>
+                <div class="k-window-actions k-dialog-actions">
+                    <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
+                        <span class="k-icon k-i-close"></span>
+                    </a>
+                </div>
+            </div>
+
+             <div class="k-content k-window-content k-dialog-content">
+                <!-- template -->
+                Narrow Dialog with Normal button layout
+            </div>
+
+             <div class="k-dialog-buttongroup">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog k-window-md col-3">
+            <div class="k-window-titlebar k-dialog-titlebar k-header">
+                <span class="k-window-title k-dialog-title">Title</span>
+                <div class="k-window-actions k-dialog-actions">
+                    <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
+                        <span class="k-icon k-i-close"></span>
+                    </a>
+                </div>
+            </div>
+
+             <div class="k-content k-window-content k-dialog-content">
+                <!-- template -->
+                Medium Dialog with Stretched button layout
+            </div>
+
+             <div class="k-dialog-buttongroup k-actions k-actions-stretched">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

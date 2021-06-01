@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>LoaderContainer</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <style>
+        #test-area  {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .example {
+            width: 100%;
+            min-height: 200px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Remove the .k-no-animations class in order to enable the animations -->
+    <div id="test-area" class="grid k-no-animations">
+
+        <span></span>
+        <span class="col">Small</span>
+        <span class="col">Medium</span>
+        <span class="col">Large</span>
+
+
+        <span>Top</span>
+        <span class="example">
+            <div class="k-loader-container k-loader-container-sm k-loader-top">
+                <div class="k-loader-container-overlay k-overlay-dark"></div>
+                <div class="k-loader-container-inner k-loader-container-panel">
+                    <div class="k-loader k-loader-pulsing-2 k-loader-primary k-loader-sm">
+                        <div class="k-loader-canvas">
+                            <span class="k-loader-segment"></span>
+                            <span class="k-loader-segment"></span>
+                        </div>
+                    </div>
+                    <div class="k-loader-container-label k-text-primary">Loading...</div>
+                </div>
+            </div>
+        </span>
+
+        <span class="example">
+            <div class="k-loader-container k-loader-container-md k-loader-top">
+                <div class="k-loader-container-overlay k-overlay-dark"></div>
+                <div class="k-loader-container-inner k-loader-container-panel">
+                    <div class="k-loader k-loader-pulsing-2 k-loader-primary k-loader-md">
+                        <div class="k-loader-canvas">
+                            <span class="k-loader-segment"></span>
+                            <span class="k-loader-segment"></span>
+                        </div>
+                    </div>
+                    <div class="k-loader-container-label k-text-primary">Loading...</div>
+                </div>
+            </div>
+        </span>
+
+        <span class="example">
+            <div class="k-loader-container k-loader-container-lg k-loader-top">
+                <div class="k-loader-container-overlay k-overlay-dark"></div>
+                <div class="k-loader-container-inner k-loader-container-panel">
+                    <div class="k-loader k-loader-pulsing-2 k-loader-primary k-loader-lg">
+                        <div class="k-loader-canvas">
+                            <span class="k-loader-segment"></span>
+                            <span class="k-loader-segment"></span>
+                        </div>
+                    </div>
+                    <div class="k-loader-container-label k-text-primary">Loading...</div>
+                </div>
+            </div>
+        </span>
+
+        <span>End</span>
+        <span class="example">
+            <div class="k-loader-container k-loader-container-sm k-loader-end">
+                <div class="k-loader-container-overlay k-overlay-dark"></div>
+                <div class="k-loader-container-inner k-loader-container-panel">
+                    <div class="k-loader k-loader-pulsing-2 k-loader-primary k-loader-sm">
+                        <div class="k-loader-canvas">
+                            <span class="k-loader-segment"></span>
+                            <span class="k-loader-segment"></span>
+                        </div>
+                    </div>
+                    <div class="k-loader-container-label k-text-primary">Loading...</div>
+                </div>
+            </div>
+        </span>
+
+        <span class="example">
+            <div class="k-loader-container k-loader-container-md k-loader-end">
+                <div class="k-loader-container-overlay k-overlay-dark"></div>
+                <div class="k-loader-container-inner k-loader-container-panel">
+                    <div class="k-loader k-loader-pulsing-2 k-loader-primary k-loader-md">
+                        <div class="k-loader-canvas">
+                            <span class="k-loader-segment"></span>
+                            <span class="k-loader-segment"></span>
+                        </div>
+                    </div>
+                    <div class="k-loader-container-label k-text-primary">Loading...</div>
+                </div>
+            </div>
+        </span>
+
+        <span class="example">
+            <div class="k-loader-container k-loader-container-lg k-loader-end">
+                <div class="k-loader-container-overlay k-overlay-dark"></div>
+                <div class="k-loader-container-inner k-loader-container-panel">
+                    <div class="k-loader k-loader-pulsing-2 k-loader-primary k-loader-lg">
+                        <div class="k-loader-canvas">
+                            <span class="k-loader-segment"></span>
+                            <span class="k-loader-segment"></span>
+                        </div>
+                    </div>
+                    <div class="k-loader-container-label k-text-primary">Loading...</div>
+                </div>
+            </div>
+        </span>
+
+        <span>Start</span>
+        <span class="example">
+            <div class="k-loader-container k-loader-container-sm k-loader-start">
+                <div class="k-loader-container-overlay k-overlay-dark"></div>
+                <div class="k-loader-container-inner k-loader-container-panel">
+                    <div class="k-loader k-loader-pulsing-2 k-loader-primary k-loader-sm">
+                        <div class="k-loader-canvas">
+                            <span class="k-loader-segment"></span>
+                            <span class="k-loader-segment"></span>
+                        </div>
+                    </div>
+                    <div class="k-loader-container-label k-text-primary">Loading...</div>
+                </div>
+            </div>
+        </span>
+
+        <span class="example">
+            <div class="k-loader-container k-loader-container-md k-loader-start">
+                <div class="k-loader-container-overlay k-overlay-dark"></div>
+                <div class="k-loader-container-inner k-loader-container-panel">
+                    <div class="k-loader k-loader-pulsing-2 k-loader-primary k-loader-md">
+                        <div class="k-loader-canvas">
+                            <span class="k-loader-segment"></span>
+                            <span class="k-loader-segment"></span>
+                        </div>
+                    </div>
+                    <div class="k-loader-container-label k-text-primary">Loading...</div>
+                </div>
+            </div>
+        </span>
+
+        <span class="example">
+            <div class="k-loader-container k-loader-container-lg k-loader-start">
+                <div class="k-loader-container-overlay k-overlay-dark"></div>
+                <div class="k-loader-container-inner k-loader-container-panel">
+                    <div class="k-loader k-loader-pulsing-2 k-loader-primary k-loader-lg">
+                        <div class="k-loader-canvas">
+                            <span class="k-loader-segment"></span>
+                            <span class="k-loader-segment"></span>
+                        </div>
+                    </div>
+                    <div class="k-loader-container-label k-text-primary">Loading...</div>
+                </div>
+            </div>
+        </span>
+
+    </div>
+
+</body>
+</html>

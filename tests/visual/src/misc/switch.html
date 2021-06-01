@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Switch</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        body {
+            background: #fcfcfc;
+        }
+
+        #test-area {
+            max-width: 600px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area" class="grid">
+        <span></span>
+        <span>On</span>
+        <span>Off</span>
+
+        <span>Normal</span>
+        <section>
+            <kendo-switch class="k-widget k-switch k-switch-on">
+                <span class="k-switch-container">
+                    <span class="k-switch-label-on">On</span>
+                    <span class="k-switch-label-off">Off</span>
+                    <span class="k-switch-handle"></span>
+                </span>
+            </kendo-switch>
+        </section>
+        <section>
+            <kendo-switch class="k-widget k-switch k-switch-off">
+                <span class="k-switch-container">
+                    <span class="k-switch-label-on">On</span>
+                    <span class="k-switch-label-off">Off</span>
+                    <span class="k-switch-handle"></span>
+                </span>
+            </kendo-switch>
+        </section>
+
+        <span>Hover</span>
+        <section>
+            <kendo-switch class="k-widget k-switch k-state-hover k-switch-on">
+                <span class="k-switch-container">
+                    <span class="k-switch-label-on">On</span>
+                    <span class="k-switch-label-off">Off</span>
+                    <span class="k-switch-handle"></span>
+                </span>
+            </kendo-switch>
+        </section>
+        <section>
+            <kendo-switch class="k-widget k-switch k-state-hover k-switch-off">
+                <span class="k-switch-container">
+                    <span class="k-switch-label-on">On</span>
+                    <span class="k-switch-label-off">Off</span>
+                    <span class="k-switch-handle"></span>
+                </span>
+            </kendo-switch>
+        </section>
+
+        <span>Focus</span>
+        <section>
+            <kendo-switch class="k-widget k-switch k-state-focused k-switch-on">
+                <span class="k-switch-container">
+                    <span class="k-switch-label-on">On</span>
+                    <span class="k-switch-label-off">Off</span>
+                    <span class="k-switch-handle"></span>
+                </span>
+            </kendo-switch>
+        </section>
+        <section>
+            <kendo-switch class="k-widget k-switch k-state-focused k-switch-off">
+                    <span class="k-switch-container">
+                        <span class="k-switch-label-on">On</span>
+                        <span class="k-switch-label-off">Off</span>
+                        <span class="k-switch-handle"></span>
+                    </span>
+              </kendo-switch>
+        </section>
+
+
+        <span>Disabled</span>
+        <section>
+            <kendo-switch class="k-widget k-switch k-state-disabled k-switch-on">
+                <span class="k-switch-container">
+                    <span class="k-switch-label-on">ON</span>
+                    <span class="k-switch-label-off">OFF</span>
+                    <span class="k-switch-handle"></span>
+                </span>
+            </kendo-switch>
+        </section>
+        <section>
+            <kendo-switch class="k-widget k-switch k-switch-off k-state-disabled">
+                <span class="k-switch-container">
+                    <span class="k-switch-label-on">On</span>
+                    <span class="k-switch-label-off">Off</span>
+                    <span class="k-switch-handle"></span>
+                </span>
+            </kendo-switch>
+        </section>
+
+        <span>Localized</span>
+        <section>
+            <kendo-switch class="k-widget k-switch k-switch-on">
+                <span class="k-switch-container">
+                    <span class="k-switch-label-on">Immer</span>
+                    <span class="k-switch-label-off">Nimmer</span>
+                    <span class="k-switch-handle"></span>
+                </span>
+            </kendo-switch>
+        </section>
+        <section>
+            <kendo-switch class="k-widget k-switch k-switch-off">
+                <span class="k-switch-container">
+                    <span class="k-switch-label-on">Immer</span>
+                    <span class="k-switch-label-off">Nimmer</span>
+                    <span class="k-switch-handle"></span>
+                </span>
+              </kendo-switch>
+        </section>
+
+        <span>RTL</span>
+        <section>
+            <kendo-switch dir="rtl" class="k-widget k-switch k-switch-on">
+                <span class="k-switch-container">
+                    <span class="k-switch-label-on">On</span>
+                    <span class="k-switch-label-off">Off</span>
+                    <span class="k-switch-handle"></span>
+                </span>
+            </kendo-switch>
+        </section>
+        <section>
+            <kendo-switch dir="rtl" class="k-widget k-switch k-switch-off">
+                <span class="k-switch-container">
+                    <span class="k-switch-label-on">On</span>
+                    <span class="k-switch-label-off">Off</span>
+                    <span class="k-switch-handle"></span>
+                </span>
+              </kendo-switch>
+        </section>
+    </div>
+</body>
+</html>

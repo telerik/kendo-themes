@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Adaptive Grid Popup Edit</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div class="k-pane-wrapper k-widget" style="height: 550px;">
+            <div class="k-pane">
+                <div class="k-grid-edit-form k-view k-widget">
+                    <div class="k-header">
+                        <a class="k-header-cancel k-link"><span class="k-icon k-i-arrow-chevron-left"></span></a>
+                        Edit
+                        <a class="k-header-done k-link"><span class="k-icon k-i-check"></span></a>
+                    </div>
+                    <div class="k-content k-stretched-view">
+                        <div class="k-popup-edit-form">
+                            <ul class="k-edit-form-container k-listgroup k-listgroup-flush">
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row k-no-click">
+                                        <label class="k-item-title k-listgroup-form-field-label">ProductID</label>
+                                        <span class="k-no-editor k-listgroup-form-field-wrapper">1</span>
+                                    </label>
+                                </li>
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <label class="k-item-title k-listgroup-form-field-label">Discontinued</label>
+                                        <div class="k-listgroup-form-field-wrapper">
+                                            <input type="checkbox">
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <label class="k-item-title k-listgroup-form-field-label">myText</label>
+                                        <div class="k-listgroup-form-field-wrapper">
+                                            <input type="text">
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <label class="k-item-title k-listgroup-form-field-label">UnitsInStock</label>
+                                        <div class="k-listgroup-form-field-wrapper">
+                                            <input type="number">
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <label class="k-item-title k-listgroup-form-field-label">myDate</label>
+                                        <div class="k-listgroup-form-field-wrapper">
+                                            <input type="date">
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <label class="k-item-title k-listgroup-form-field-label">myID</label>
+                                        <div class="k-listgroup-form-field-wrapper">
+                                            <select>
+                                                <option>Beverages</option>
+                                                <option>Condiments</option>
+                                            </select>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <label class="k-item-title k-listgroup-form-field-label">Unit Price</label>
+                                        <div class="k-listgroup-form-field-wrapper">
+                                            <input type="number">
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Grid Editing</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <kendo-grid class="k-widget k-grid k-grid-no-scrollbar">
+            <kendo-grid-toolbar class="k-toolbar k-grid-toolbar">
+                <button class="k-button k-grid-add-command">Add new</button>
+                <button class="k-button" disabled>Save Changes</button>
+                <button class="k-button" disabled>Cancel Changes</button>
+            </kendo-grid-toolbar>
+            <div class="k-grid-aria-root">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap">
+                        <table>
+                            <colgroup>
+                                <col /><col /><col /><col style="width: 300px;" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="k-header"><a class="k-link">Name<span></span></a></th>
+                                    <th class="k-header"><a class="k-link">Price<span></span></a></th>
+                                    <th class="k-header"><a class="k-link">Available<span></span></a></th>
+                                    <th class="k-header"></th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <kendo-grid-list class="k-grid-container">
+                    <div class="k-grid-content">
+                        <div>
+                            <table class="k-grid-table">
+                                <colgroup>
+                                    <col /><col /><col /><col style="width: 300px;" />
+                                </colgroup>
+                                <tbody>
+                                    <tr class="k-grid-add-row k-grid-edit-row">
+                                        <td><input class="k-textbox" type="text" value="Towel" /></td>
+                                        <td><kendo-numerictextbox class="k-widget k-numerictextbox"><span class="k-numeric-wrap"><input class="k-input k-formatted-value" value="42" /><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-n"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-s"></span></span></span></span></kendo-numerictextbox></td>
+                                        <td><input class="" type="checkbox" /></td>
+                                        <td class="k-command-cell">
+                                            <button class="k-button k-grid-save-command">Add</button>
+                                            <button class="k-button k-grid-cancel-command">Cancel</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chai</td>
+                                        <td>18</td>
+                                        <td>false</td>
+                                        <td class="k-command-cell">
+                                            <button class="k-button k-grid-remove-command">Remove</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-alt">
+                                        <td>Chang</td>
+                                        <td>19</td>
+                                        <td>false</td>
+                                        <td class="k-command-cell">
+                                            <button class="k-button k-grid-remove-command">Remove</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </kendo-grid-list>
+            </div>
+        </kendo-grid>
+
+        <div class="k-widget k-grid k-grid-no-scrollbar">
+            <div class="k-toolbar k-grid-toolbar">
+                <a class="k-button k-button-icontext k-grid-add"><span class="k-icon k-i-plus"></span>Add new record</a>
+            </div>
+            <div class="k-grid-header">
+                <div class="k-grid-header-wrap">
+                    <table>
+                        <colgroup>
+                            <col /><col /><col /><col style="width:300px" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="k-header">Name</th>
+                                <th scope="col" class="k-header">Price</th>
+                                <th scope="col" class="k-header">Available</th>
+                                <th scope="col" class="k-header">&nbsp;</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="k-grid-content">
+                <table style="height: auto;">
+                    <colgroup>
+                        <col /><col /><col /><col style="width:300px" />
+                    </colgroup>
+                    <tbody>
+                        <tr class="k-grid-edit-row">
+                            <td><input class="k-textbox" name="ProductName" required="required" type="text" value="Towel" /></td>
+                            <td>
+                                <span class="k-widget k-numerictextbox"><span class="k-numeric-wrap k-invalid"><input class="k-formatted-value k-input" type="text" value="" /><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-60-up"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-60-down"></span></span></span></span></span>
+                                <div class="k-tooltip k-validator-tooltip k-tooltip-error k-invalid-msg"><span class="k-tooltip-icon k-icon k-i-warning"></span><span class="k-tooltip-content">Price</span><div class="k-callout k-callout-n"></div></div>
+                            </td>
+                            <td><input class="k-checkbox" id="e77452cd-b3b5-4dc9-8210-17007584b695" name="Discontinued" type="checkbox" /><label class="k-checkbox-label" for="e77452cd-b3b5-4dc9-8210-17007584b695">​</label></td>
+                            <td class="k-command-cell"><a class="k-button k-button-icontext k-primary k-grid-update"><span class="k-icon k-i-check"></span>Update</a><a class="k-button k-button-icontext k-grid-cancel"><span class="k-icon k-i-cancel"></span>Cancel</a></td>
+                        </tr>
+                        <tr class="k-alt k-grid-edit-row">
+                            <td class="k-dirty-cell">
+                                <span class="k-dirty"></span>
+                                LongSingleWordTestLongSingleWordTestLongSingleWordTestLongSingleWordTest
+                            </td>
+                            <td>18</td>
+                            <td>false</td>
+                            <td class="k-command-cell k-command-cell"><a class="k-button k-button-icontext k-grid-edit"><span class="k-icon k-i-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete"><span class="k-icon k-i-close"></span>Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>Chang</td>
+                            <td>19</td>
+                            <td>false</td>
+                            <td class="k-command-cell"><a class="k-button k-button-icontext k-grid-edit"><span class="k-icon k-i-edit"></span>Edit</a><a class="k-button k-button-icontext k-grid-delete"><span class="k-icon k-i-close"></span>Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

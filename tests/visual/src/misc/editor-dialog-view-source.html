@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Editor view source dialog</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+        }
+        .k-dialog-wrapper {
+            position: relative;
+        }
+        .k-dialog {
+            width: 500px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <div class="k-dialog-wrapper">
+            <div class="k-overlay"></div>
+            <div class="k-widget k-window k-dialog">
+                <div class="k-window-titlebar k-dialog-titlebar k-header">
+                    <div class="k-window-title k-dialog-title">View HTML</div>
+                    <div class="k-window-actions k-dialog-actions"><a href="#" class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close"><span class="k-icon k-i-x"></span></a></div>
+                </div>
+                <div class="k-content k-window-content k-dialog-content">
+                    <textarea class="k-textarea k-editor-textarea"></textarea>
+                </div>
+                <div class="k-dialog-buttongroup">
+                    <button class="k-button">Cancel</button>
+                    <button class="k-button k-primary">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

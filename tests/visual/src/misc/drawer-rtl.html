@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Drawer push rtl</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        #test-area .separator {
+            width: 100%;
+            grid-column: span 2;
+        }
+
+        #test-area h2 {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <h2>Drawer Push Mode</h2>
+        <section class="k-rtl">
+            <h4>Drawer mini left</h4>
+            <div class="k-drawer-container k-drawer-left k-drawer-push k-drawer-mini k-drawer-expanded">
+                <div class="k-widget k-drawer">
+                    <div class="k-drawer-wrapper">
+                        <div class="k-drawer-items">
+                            <ul>
+                                <li class="k-drawer-item">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Item</span>
+                                </li>
+                                <li class="k-drawer-item k-drawer-separator"></li>
+                                <li class="k-drawer-item k-state-hover">
+                                        <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Hovered Item</span>
+                                </li>
+                                <li class="k-drawer-item k-state-selected">
+                                        <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Selected Item</span>
+                                </li>
+                                <li class="k-drawer-item k-state-selected k-state-hover">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Selected and hovered item</span>
+                                </li>
+                                <li class="k-drawer-item k-state-focused">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Focused item</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-drawer-content" style="padding: 0 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.olor sit amet consectetur
+                    adipisicing elit. Error accusantium odit, optio nulla maiores quo neque fugit debitis dignissimos incidunt
+                    maxime? Eum voluptatem blanditiis voluptatum praesentium dolorem, dolore placeat debitis quod delectus laborum
+                    assumenda cupiditate.
+                </div>
+            </div>
+        </section>
+
+
+        <section class="k-rtl">
+            <h4> Drawer mini right</h4>
+            <div class="k-drawer-container k-drawer-right k-drawer-push k-drawer-mini k-drawer-expanded">
+                <div class="k-widget k-drawer">
+                    <div class="k-drawer-wrapper">
+                        <div class="k-drawer-items">
+                            <ul>
+                                <li class="k-drawer-item">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Item</span>
+                                </li>
+                                <li class="k-drawer-item k-drawer-separator"></li>
+                                <li class="k-drawer-item k-state-hover">
+                                        <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Hovered Item</span>
+                                </li>
+                                <li class="k-drawer-item k-state-selected">
+                                        <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Selected Item</span>
+                                </li>
+                                <li class="k-drawer-item k-state-selected k-state-hover">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Selected and hovered item</span>
+                                </li>
+                                <li class="k-drawer-item k-state-focused">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Focused item</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-drawer-content" style="padding: 0 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.olor sit amet consectetur
+                    adipisicing elit. Error accusantium odit, optio nulla maiores quo neque fugit debitis dignissimos incidunt
+                    maxime? Eum voluptatem blanditiis voluptatum praesentium dolorem, dolore placeat debitis quod delectus laborum
+                    assumenda cupiditate.
+                </div>
+            </div>
+        </section>
+
+        <hr class="separator" />
+
+        <section class="k-rtl">
+            <h4>Drawer left</h4>
+            <div class="k-drawer-container k-drawer-left k-drawer-push k-drawer-expanded">
+                <div class="k-widget k-drawer">
+                    <div class="k-drawer-wrapper" style="width: 280px;">
+                        <div class="k-drawer-items">
+                            <ul>
+                                <li class="k-drawer-item">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Item</span>
+                                </li>
+                                <li class="k-drawer-item k-drawer-separator"></li>
+                                <li class="k-drawer-item k-state-hover">
+                                    <span class="k-icon k-i-twitter"></span>
+                                    <span class="k-item-text">Hovered Item</span>
+                                </li>
+                                <li class="k-drawer-item k-state-selected">
+                                    <span class="k-icon k-i-anchor"></span>
+                                    <span class="k-item-text">Selected Item</span>
+                                </li>
+                                <li class="k-drawer-item">
+                                    <span class="k-item-text">Item</span>
+                                </li>
+                                <li class="k-drawer-item k-drawer-separator"></li>
+                                <li class="k-drawer-item">
+                                    <span class="k-drawer-link">
+                                        <span class="k-icon k-i-anchor"></span>
+                                        <span class="k-item-text">Drawer Link</span>
+                                    </span>
+                                </li>
+                                <li class="k-drawer-item k-state-selected k-state-hover">
+                                    <span class="k-item-text">Selected and hovered item</span>
+                                </li>
+                                <li class="k-drawer-item k-state-focused">
+                                    <span class="k-item-text">Focused item</span>
+                                </li>
+                                <li class="k-drawer-item">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Collapsed</span>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-icon k-i-arrow-chevron-down"></span>
+                                </li>
+                                <li class="k-drawer-item">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Expanded</span>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-icon k-i-arrow-chevron-up"></span>
+                                </li>
+                                <li class="k-drawer-item">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Child Lvl 1</span>
+                                </li>
+                                <li class="k-drawer-item">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Child Lvl 2</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-drawer-content" style="padding: 0 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.olor sit amet consectetur
+                        adipisicing elit. Error accusantium odit, optio nulla maiores quo neque fugit debitis dignissimos incidunt
+                        maxime? Eum voluptatem blanditiis voluptatum praesentium dolorem, dolore placeat debitis quod delectus laborum
+                        assumenda cupiditate.
+                </div>
+            </div>
+        </section>
+
+        <section class="k-rtl">
+            <h4>Drawer right</h4>
+            <div class="k-drawer-container k-drawer-right k-drawer-push k-drawer-expanded">
+                <div class="k-widget k-drawer">
+                    <div class="k-drawer-wrapper" style="width: 280px;">
+                        <div class="k-drawer-items">
+                            <ul>
+                                <li class="k-drawer-item">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Item</span>
+                                </li>
+                                <li class="k-drawer-item k-drawer-separator"></li>
+                                <li class="k-drawer-item k-state-hover">
+                                    <span class="k-icon k-i-twitter"></span>
+                                    <span class="k-item-text">Hovered Item</span>
+                                </li>
+                                <li class="k-drawer-item k-state-selected">
+                                    <span class="k-icon k-i-anchor"></span>
+                                    <span class="k-item-text">Selected Item</span>
+                                </li>
+                                <li class="k-drawer-item">
+                                    <span class="k-item-text">Item</span>
+                                </li>
+                                <li class="k-drawer-item k-drawer-separator"></li>
+                                <li class="k-drawer-item">
+                                    <span class="k-drawer-link">
+                                        <span class="k-icon k-i-anchor"></span>
+                                        <span class="k-item-text">Drawer Link</span>
+                                    </span>
+                                </li>
+                                <li class="k-drawer-item k-state-selected k-state-hover">
+                                    <span class="k-item-text">Selected and hovered item</span>
+                                </li>
+                                <li class="k-drawer-item k-state-focused">
+                                    <span class="k-item-text">Focused item</span>
+                                </li>
+                                <li class="k-drawer-item">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Collapsed</span>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-icon k-i-arrow-chevron-down"></span>
+                                </li>
+                                <li class="k-drawer-item">
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Expanded</span>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-icon k-i-arrow-chevron-up"></span>
+                                </li>
+                                <li class="k-drawer-item">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Child Lvl 1</span>
+                                </li>
+                                <li class="k-drawer-item">
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-star-outline"></span>
+                                    <span class="k-item-text">Child Lvl 2</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-drawer-content" style="padding: 0 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.olor sit amet consectetur
+                        adipisicing elit. Error accusantium odit, optio nulla maiores quo neque fugit debitis dignissimos incidunt
+                        maxime? Eum voluptatem blanditiis voluptatum praesentium dolorem, dolore placeat debitis quod delectus laborum
+                        assumenda cupiditate.
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

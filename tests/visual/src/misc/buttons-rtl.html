@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Buttons RTL</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {}
+
+        .k-rtl {
+            justify-items: end;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid k-grid-cols-1">
+
+        <!-- rtl set aby attribute -->
+        <section class="buttons k-d-grid k-grid-cols-6">
+            <span>Default</span>
+            <span>Primary</span>
+            <span>Flat</span>
+            <span>Flat primary</span>
+            <span>Outline</span>
+            <span>Outline primary</span>
+        </section>
+        <section class="buttons k-d-grid k-grid-cols-6">
+            <span><button class="k-button k-button-icontext" dir="rtl"><span class="k-icon k-i-add"></span> Add</button></span>
+            <span><button class="k-button k-button-icontext k-primary" dir="rtl"><span class="k-icon k-i-add"></span> Add</button></span>
+            <span><button class="k-button k-button-icontext k-flat" dir="rtl"><span class="k-icon k-i-add"></span> Add</button></span>
+            <span><button class="k-button k-button-icontext k-flat k-primary" dir="rtl"><span class="k-icon k-i-add"></span> Add</button></span>
+            <span><button class="k-button k-button-icontext k-outline" dir="rtl"><span class="k-icon k-i-add"></span> Add</button></span>
+            <span><button class="k-button k-button-icontext k-outline k-primary" dir="rtl"><span class="k-icon k-i-add"></span> Add</button></span>
+        </section>
+
+        <!-- rtl set by class name -->
+        <section class="buttons k-rtl k-d-grid k-grid-cols-6">
+            <span>Default</span>
+            <span>Primary</span>
+            <span>Flat</span>
+            <span>Flat primary</span>
+            <span>Outline</span>
+            <span>Outline primary</span>
+        </section>
+        <section class="buttons k-rtl k-d-grid k-grid-cols-6">
+            <span><button class="k-button k-button-icontext"><span class="k-icon k-i-add"></span> Add</button></span>
+            <span><button class="k-button k-button-icontext k-primary"><span class="k-icon k-i-add"></span> Add</button></span>
+            <span><button class="k-button k-button-icontext k-flat"><span class="k-icon k-i-add"></span> Add</button></span>
+            <span><button class="k-button k-button-icontext k-flat k-primary"><span class="k-icon k-i-add"></span> Add</button></span>
+            <span><button class="k-button k-button-icontext k-outline"><span class="k-icon k-i-add"></span> Add</button></span>
+            <span><button class="k-button k-button-icontext k-outline k-primary"><span class="k-icon k-i-add"></span> Add</button></span>
+        </section>
+    </div>
+
+</body>
+</html>

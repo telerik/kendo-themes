@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Autocomplete</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            align-items: start;
+            justify-items: start;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
+
+        <span>Autocomplete</span>
+        <span>Angular</span>
+        <span>Autocomplete RTL</span>
+        <span>Angular RTL</span>
+
+        <!-- empty -->
+        <div>
+            <span class="k-widget k-autocomplete"><input type="text" class="k-input" placeholder="Autocomplete..." /></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" placeholder="Autocomplete..." />
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-autocomplete"><input type="text" class="k-input" placeholder="Autocomplete..." /></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete" dir="rtl">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" placeholder="Autocomplete..." dir="rtl" />
+                </span>
+            </span>
+        </div>
+
+        <!-- normal -->
+        <div>
+            <span class="k-widget k-autocomplete">
+                <input type="text" class="k-input" value="Normal" />
+                <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+            </span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="Normal" />
+                </span>
+                <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-autocomplete">
+                <input type="text" class="k-input" value="Normal" />
+                <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+            </span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete" dir="rtl">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="Normal" dir="rtl" />
+                </span>
+                <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+            </span>
+        </div>
+
+        <!-- hover -->
+        <div>
+            <span class="k-widget k-autocomplete k-state-hover"><input type="text" class="k-input" value="Hover" /></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete k-state-hover">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="Hover" />
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-autocomplete k-state-hover"><input type="text" class="k-input" value="Hover" /></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete k-state-hover" dir="rtl">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="Hover" dir="rtl" />
+                </span>
+            </span>
+        </div>
+
+        <!-- open -->
+        <div>
+            <span class="k-widget k-autocomplete k-state-open"><input type="text" class="k-input" value="Open" /></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete k-state-open">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="Open" />
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-autocomplete k-state-open"><input type="text" class="k-input" value="Open" /></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete k-state-open" dir="rtl">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="Open" dir="rtl" />
+                </span>
+            </span>
+        </div>
+
+        <!-- focus -->
+        <div>
+            <span class="k-widget k-autocomplete k-state-focused"><input type="text" class="k-input" value="Focus" /></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete k-state-focused">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="Focus" />
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-autocomplete k-state-focused"><input type="text" class="k-input" value="Focus" /></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete k-state-focused" dir="rtl">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="Focus" dir="rtl" />
+                </span>
+            </span>
+        </div>
+
+        <!-- disabled -->
+        <div>
+            <span class="k-widget k-autocomplete k-state-disabled"><input type="text" class="k-input" value="Disabled" /></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete k-state-disabled">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="Disabled" />
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-autocomplete k-state-disabled"><input type="text" class="k-input" value="Disabled" /></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete k-state-disabled" dir="rtl">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="Disabled" dir="rtl" />
+                </span>
+            </span>
+        </div>
+
+        <!-- invalid -->
+        <div>
+            <span class="k-widget k-autocomplete k-invalid"><input type="text" class="k-input" value="Invalid" /></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete ng-invalid ng-touched">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="NG Invalid" />
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-autocomplete k-invalid"><input type="text" class="k-input" value="Invalid" /></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete ng-invalid ng-touched" dir="rtl">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="NG Invalid" dir="rtl" />
+                </span>
+            </span>
+        </div>
+
+        <!-- invalid + focus -->
+        <div>
+            <span class="k-widget k-autocomplete k-invalid k-state-focused"><input type="text" class="k-input" value="Invalid + Focus" /></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete ng-invalid ng-touched k-state-focused">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="NG Invalid + Focus" />
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-autocomplete k-invalid k-state-focused"><input type="text" class="k-input" value="Invalid + Focus" /></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete ng-invalid ng-touched k-state-focused" dir="rtl">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="NG Invalid + Focus" dir="rtl" />
+                </span>
+            </span>
+        </div>
+
+        <!-- loading -->
+        <div>
+            <span class="k-widget k-autocomplete"><input type="text" class="k-input" value="Loading" /><span class="k-icon k-i-loading"></span></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="Loading" />
+                </span>
+                <span class="k-icon k-i-loading"></span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-autocomplete"><input type="text" class="k-input" value="Loading" /><span class="k-icon k-i-loading"></span></span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete" dir="rtl">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="Loading" dir="rtl" />
+                </span>
+                <span class="k-icon k-i-loading"></span>
+            </span>
+        </div>
+
+        <!-- clear -->
+        <div>
+            <span class="k-widget k-autocomplete">
+                <input type="text" class="k-input" value="Clear" />
+                <span class="k-clear-value" title="clear" style="visibility: visible;"><span class="k-icon k-i-x"></span></span>
+            </span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="Clear" />
+                </span>
+                <span class="k-clear-value" title="clear" style="visibility: visible;"><span class="k-icon k-i-x"></span></span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-autocomplete">
+                <input type="text" class="k-input" value="Clear" />
+                <span class="k-clear-value" title="clear" style="visibility: visible;"><span class="k-icon k-i-x"></span></span>
+            </span>
+        </div>
+        <div>
+            <span class="k-widget k-autocomplete" dir="rtl">
+                <span class="k-searchbar">
+                    <input type="text" class="k-input" value="Clear" dir="rtl" />
+                </span>
+                <span class="k-clear-value" title="clear" style="visibility: visible;"><span class="k-icon k-i-x"></span></span>
+            </span>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Card RTL</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid k-rtl">
+
+        <div class="k-card k-card-vertical">
+            <div class="k-card-body">
+                <h5 class="k-card-title">RTL Vertical Card</h5>
+                <h6 class="k-card-subtitle">Actions Start</h6>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <span class="k-card-separator"></span>
+            <div class="k-card-actions k-card-actions-start">
+               <span class="k-button k-flat k-primary k-state-hover">Action 1</span>
+               <span class="k-button k-flat k-primary">Action 2</span>
+            </div>
+        </div>
+
+        <div class="k-card k-card-horizontal">
+            <div class="k-d-flex k-flex-column">
+                <div class="k-card-header">
+                    <h5 class="k-card-title">RTL Horizontal Card</h5>
+                    <h6 class="k-card-subtitle">Actions Stretched</h6>
+                </div>
+                <div class="k-card-body">
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="k-card-footer">
+                    Footer
+                </div>
+            </div>
+            <div class="k-card-actions k-card-actions-vertical k-card-actions-stretched">
+                <span class="k-button k-flat k-primary k-state-hover">Action 1</span>
+                <hr class="k-card-separator">
+                <span class="k-button k-flat k-primary">Action 2</span>
+            </div>
+        </div>
+
+        <div class="k-card k-card-horizontal">
+            <img class="k-card-image" src="http://via.placeholder.com/80x80">
+            <div class="k-d-flex k-flex-column">
+                <div class="k-card-header">
+                    <h5 class="k-card-title">RTL Horizontal Card</h5>
+                    <h6 class="k-card-subtitle">Card Subtitle</h6>
+                </div>
+                <div class="k-card-body">
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="k-card-actions k-card-actions-horizontal k-card-actions-stretched">
+                    <span class="k-card-action"><span class="k-button k-flat k-primary k-state-hover">Action 1</span></span>
+                </div>
+                <div class="k-card-footer">
+                    Footer here
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>DropdownTree</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {}
+
+        .k-dropdowntree {
+            width: 100%;
+        }
+
+        .k-animation-container {
+            position: relative;
+            overflow: visible;
+        }
+        .k-popup-dropdowntree {
+            max-height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
+
+        <span>Single selection</span>
+        <span>Multiple selection</span>
+        <span>Single RTL</span>
+        <span>Multiple RTL</span>
+
+        <!-- empty -->
+        <div>
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap">
+                    <span class="k-input">Dropdown...</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <div class="k-widget k-dropdowntree">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <span class="k-input k-readonly">Multiselect...</span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap">
+                    <span class="k-input">Dropdown...</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-dropdowntree">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <span class="k-input k-readonly">Multiselect...</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- normal -->
+        <div>
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap">
+                    <span class="k-input">Normal</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <div class="k-widget k-dropdowntree">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Normal</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap">
+                    <span class="k-input">Normal</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-dropdowntree">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Normal</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- hover -->
+        <div>
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap k-state-hover">
+                    <span class="k-input">Hover</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <div class="k-widget k-dropdowntree k-state-hover">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button k-state-hover"><span>Hover</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap k-state-hover">
+                    <span class="k-input">Hover</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-dropdowntree k-state-hover">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button k-state-hover"><span>Hover</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- open -->
+        <div>
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap k-state-active k-state-border-down">
+                    <span class="k-input">Open</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <div class="k-widget k-dropdowntree k-state-focused k-state-border-down">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Open</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap k-state-active k-state-border-down">
+                    <span class="k-input">Open</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-dropdowntree k-state-focused k-state-border-down">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Open</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- focus -->
+        <div>
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap k-state-focused">
+                    <span class="k-input">Focus</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <div class="k-widget k-dropdowntree k-state-focused">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button k-state-focused"><span>Focus</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap k-state-focused">
+                    <span class="k-input">Focus</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-dropdowntree k-state-focused">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button k-state-focused"><span>Focus</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- disabled -->
+        <div>
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap k-state-disabled">
+                    <span class="k-input">Disabled</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <div class="k-widget k-dropdowntree k-state-disabled">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Disabled</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap k-state-disabled">
+                    <span class="k-input">Disabled</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-dropdowntree k-state-disabled">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Disabled</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- invalid -->
+        <div>
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap k-invalid">
+                    <span class="k-input">Invalid</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <div class="k-widget k-dropdowntree">
+                <div class="k-multiselect-wrap k-floatwrap k-invalid">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Invalid</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap k-invalid">
+                    <span class="k-input">Invalid</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-dropdowntree">
+                <div class="k-multiselect-wrap k-floatwrap k-invalid">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Invalid</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- invalid + focus -->
+        <div>
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap k-invalid k-state-focused">
+                    <span class="k-input">Invalid + Focus</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <div class="k-widget k-dropdowntree k-state-focused">
+                <div class="k-multiselect-wrap k-floatwrap k-invalid">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Invalid + Focus</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap k-invalid k-state-focused">
+                    <span class="k-input">Invalid + Focus</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-dropdowntree k-state-focused">
+                <div class="k-multiselect-wrap k-floatwrap k-invalid">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Invalid + Focus</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                    <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- loading -->
+        <div>
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap">
+                    <span class="k-input">Loading</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down k-i-loading"></span></span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <div class="k-widget k-dropdowntree">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Loading</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                        <li class="k-button"><span>Something</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                    <span class="k-icon k-i-loading"></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap">
+                    <span class="k-input">Loading</span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down k-i-loading"></span></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-dropdowntree">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Loading</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                        <li class="k-button"><span>Something</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                    <span class="k-icon k-i-loading"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- clear -->
+        <div>
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap">
+                    <span class="k-input">Clear</span>
+                    <span class="k-clear-value" title="clear" style="visibility: visible;"><span class="k-icon k-i-x"></span></span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <div class="k-widget k-dropdowntree">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Clear</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                        <li class="k-button"><span>Something</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                    <span class="k-clear-value" title="clear" style="visibility: visible;"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="k-rtl">
+            <span class="k-widget k-dropdowntree">
+                <span class="k-dropdown-wrap">
+                    <span class="k-input">Clear</span>
+                    <span class="k-clear-value" title="clear" style="visibility: visible;"><span class="k-icon k-i-x"></span></span>
+                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
+                </span>
+            </span>
+        </div>
+        <div class="k-rtl">
+            <div class="k-widget k-dropdowntree">
+                <div class="k-multiselect-wrap k-floatwrap">
+                    <ul class="k-reset">
+                        <li class="k-button"><span>Clear</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                        <li class="k-button"><span>Something</span><span class="k-select"><span class="k-icon k-i-close"></span></span></li>
+                    </ul>
+                    <span class="k-input k-readonly" style="display: none;">Multiselect...</span>
+                    <span class="k-clear-value" title="clear" style="visibility: visible;"><span class="k-icon k-i-x"></span></span>
+                </div>
+            </div>
+        </div>
+
+
+        <section>
+            <div class="k-animation-container">
+                <div class="k-list-container k-popup k-group k-reset k-popup-dropdowntree">
+                    <span class="k-list-filter">
+                        <input class="k-textbox" value="Filter text" />
+                        <span class="k-icon k-i-zoom"></span>
+                    </span>
+                    <div class="k-widget k-treeview">
+                        <ul class="k-group k-treeview-lines">
+                            <li class="k-item k-first">
+                                <div class="k-top">
+                                    <span class="k-icon k-i-collapse"></span>
+                                    <span class="k-in">Furniture</span>
+                                </div>
+                                <ul class="k-group">
+                                    <li class="k-item">
+                                        <div class="k-top">
+                                            <span class="k-in">Tables &amp; Chairs</span>
+                                        </div>
+                                    </li>
+                                    <li class="k-item">
+                                        <div class="k-mid">
+                                            <span class="k-in">Sofas</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="k-item k-last">
+                                <div class="k-bot">
+                                    <span class="k-icon k-i-expand"></span>
+                                    <span class="k-in">Decor</span>
+                                </div>
+                                <ul class="k-group">
+                                    <li class="k-item">
+                                        <div class="k-top">
+                                            <span class="k-in">Bed Linen</span>
+                                        </div>
+                                    </li>
+                                    <li class="k-item">
+                                        <div class="k-mid">
+                                            <span class="k-in">Curtains &amp; Blinds</span>
+                                        </div>
+                                    </li>
+                                    <li class="k-item k-last">
+                                        <div class="k-bot">
+                                            <span class="k-in">Carpets</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container">
+                <div class="k-list-container k-popup k-group k-reset k-popup-dropdowntree">
+                    <span class="k-list-filter">
+                        <input class="k-textbox" value="Filter text" />
+                        <span class="k-icon k-i-zoom"></span>
+                    </span>
+                    <div class="k-check-all">
+                        <input type="checkbox" class="k-checkbox" />
+                        <span class="k-checkbox-label">Check all</span>
+                    </div>
+                    <div class="k-widget k-treeview">
+                        <ul class="k-group k-treeview-lines">
+                            <li class="k-item k-first">
+                                <div class="k-top">
+                                    <span class="k-icon k-i-collapse"></span>
+                                    <span class="k-checkbox-wrapper"><input type="checkbox" class="k-checkbox" /><span class="k-checkbox-label checkbox-span"></span></span>
+                                    <span class="k-in">Furniture</span>
+                                </div>
+                                <ul class="k-group">
+                                    <li class="k-item">
+                                        <div class="k-top">
+                                            <span class="k-checkbox-wrapper"><input type="checkbox" class="k-checkbox" /><span class="k-checkbox-label checkbox-span"></span></span>
+                                            <span class="k-in">Tables &amp; Chairs</span>
+                                        </div>
+                                    </li>
+                                    <li class="k-item">
+                                        <div class="k-mid">
+                                            <span class="k-checkbox-wrapper"><input type="checkbox" class="k-checkbox" /><span class="k-checkbox-label checkbox-span"></span></span>
+                                            <span class="k-in">Sofas</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="k-item k-last">
+                                <div class="k-bot">
+                                    <span class="k-icon k-i-expand"></span>
+                                    <span class="k-checkbox-wrapper"><input type="checkbox" class="k-checkbox" /><span class="k-checkbox-label checkbox-span"></span></span>
+                                    <span class="k-in">Decor</span>
+                                </div>
+                                <ul class="k-group">
+                                    <li class="k-item">
+                                        <div class="k-top">
+                                            <span class="k-checkbox-wrapper"><input type="checkbox" class="k-checkbox" /><span class="k-checkbox-label checkbox-span"></span></span>
+                                            <span class="k-in">Bed Linen</span>
+                                        </div>
+                                    </li>
+                                    <li class="k-item">
+                                        <div class="k-mid">
+                                            <span class="k-checkbox-wrapper"><input type="checkbox" class="k-checkbox" /><span class="k-checkbox-label checkbox-span"></span></span>
+                                            <span class="k-in">Curtains &amp; Blinds</span>
+                                        </div>
+                                    </li>
+                                    <li class="k-item k-last">
+                                        <div class="k-bot">
+                                            <span class="k-checkbox-wrapper"><input type="checkbox" class="k-checkbox" /><span class="k-checkbox-label checkbox-span"></span></span>
+                                            <span class="k-in">Carpets</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="k-rtl">
+            <div class="k-animation-container">
+                <div class="k-list-container k-popup k-group k-reset k-popup-dropdowntree">
+                    <span class="k-list-filter">
+                        <input class="k-textbox" value="Filter text" />
+                        <span class="k-icon k-i-zoom"></span>
+                    </span>
+                    <div class="k-widget k-treeview">
+                        <ul class="k-group k-treeview-lines">
+                            <li class="k-item k-first">
+                                <div class="k-top">
+                                    <span class="k-icon k-i-collapse"></span>
+                                    <span class="k-in">Furniture</span>
+                                </div>
+                                <ul class="k-group">
+                                    <li class="k-item">
+                                        <div class="k-top">
+                                            <span class="k-in">Tables &amp; Chairs</span>
+                                        </div>
+                                    </li>
+                                    <li class="k-item">
+                                        <div class="k-mid">
+                                            <span class="k-in">Sofas</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="k-item k-last">
+                                <div class="k-bot">
+                                    <span class="k-icon k-i-expand"></span>
+                                    <span class="k-in">Decor</span>
+                                </div>
+                                <ul class="k-group">
+                                    <li class="k-item">
+                                        <div class="k-top">
+                                            <span class="k-in">Bed Linen</span>
+                                        </div>
+                                    </li>
+                                    <li class="k-item">
+                                        <div class="k-mid">
+                                            <span class="k-in">Curtains &amp; Blinds</span>
+                                        </div>
+                                    </li>
+                                    <li class="k-item k-last">
+                                        <div class="k-bot">
+                                            <span class="k-in">Carpets</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="k-rtl">
+            <div class="k-animation-container">
+                <div class="k-list-container k-popup k-group k-reset k-popup-dropdowntree">
+                    <span class="k-list-filter">
+                        <input class="k-textbox" value="Filter text" />
+                        <span class="k-icon k-i-zoom"></span>
+                    </span>
+                    <div class="k-check-all">
+                        <input type="checkbox" class="k-checkbox" />
+                        <span class="k-checkbox-label">Check all</span>
+                    </div>
+                    <div class="k-widget k-treeview">
+                        <ul class="k-group k-treeview-lines">
+                            <li class="k-item k-first">
+                                <div class="k-top">
+                                    <span class="k-icon k-i-collapse"></span>
+                                    <span class="k-checkbox-wrapper"><input type="checkbox" class="k-checkbox" /><span class="k-checkbox-label checkbox-span"></span></span>
+                                    <span class="k-in">Furniture</span>
+                                </div>
+                                <ul class="k-group">
+                                    <li class="k-item">
+                                        <div class="k-top">
+                                            <span class="k-checkbox-wrapper"><input type="checkbox" class="k-checkbox" /><span class="k-checkbox-label checkbox-span"></span></span>
+                                            <span class="k-in">Tables &amp; Chairs</span>
+                                        </div>
+                                    </li>
+                                    <li class="k-item">
+                                        <div class="k-mid">
+                                            <span class="k-checkbox-wrapper"><input type="checkbox" class="k-checkbox" /><span class="k-checkbox-label checkbox-span"></span></span>
+                                            <span class="k-in">Sofas</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="k-item k-last">
+                                <div class="k-bot">
+                                    <span class="k-icon k-i-expand"></span>
+                                    <span class="k-checkbox-wrapper"><input type="checkbox" class="k-checkbox" /><span class="k-checkbox-label checkbox-span"></span></span>
+                                    <span class="k-in">Decor</span>
+                                </div>
+                                <ul class="k-group">
+                                    <li class="k-item">
+                                        <div class="k-top">
+                                            <span class="k-checkbox-wrapper"><input type="checkbox" class="k-checkbox" /><span class="k-checkbox-label checkbox-span"></span></span>
+                                            <span class="k-in">Bed Linen</span>
+                                        </div>
+                                    </li>
+                                    <li class="k-item">
+                                        <div class="k-mid">
+                                            <span class="k-checkbox-wrapper"><input type="checkbox" class="k-checkbox" /><span class="k-checkbox-label checkbox-span"></span></span>
+                                            <span class="k-in">Curtains &amp; Blinds</span>
+                                        </div>
+                                    </li>
+                                    <li class="k-item k-last">
+                                        <div class="k-bot">
+                                            <span class="k-checkbox-wrapper"><input type="checkbox" class="k-checkbox" /><span class="k-checkbox-label checkbox-span"></span></span>
+                                            <span class="k-in">Carpets</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

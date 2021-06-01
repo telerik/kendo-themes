@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Grid Sticky Columns</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+</head>
+
+<body>
+    <div id="test-area" class="grid">
+       <p>React Grid - Sticky columns - RTL</p>
+       <div class="k-widget k-grid k-rtl" role="grid" style="height: 700px; width: 500px;">
+        <div class="k-grouping-header k-grouping-header-flex">
+            <div class="k-indicator-container" style="touch-action: none;">
+                <div class="k-group-indicator">
+                    <a class="k-link" href="#"><span class="k-icon k-i-sort-asc-sm"></span>shipName</a><a class="k-button k-button-icon k-flat"><span class="k-icon k-i-group-delete"></span></a>
+                </div>
+            </div>
+            <div class="k-indicator-container"></div>
+        </div>
+        <div class="k-grid-header" role="presentation" style="padding: 0px 0px 0px 14px;">
+            <div class="k-grid-header-wrap" role="presentation" style="border-width: 0px;">
+                <table role="presentation" style="width: 1434px;">
+                    <colgroup role="presentation">
+                        <col width="32px" />
+                        <col width="32px" />
+                        <col width="200px" />
+                        <col width="300px" />
+                        <col width="280px" />
+                        <col width="200px" />
+                        <col width="300px" />
+                        <col width="90px" />
+                    </colgroup>
+                    <thead role="presentation">
+                        <tr role="row" style="touch-action: none;">
+                            <th colspan="1" rowspan="1" class="k-header" role="presentation" style="left: 0px; right: 0px;"><a class="k-link"> </a></th>
+                            <th colspan="1" rowspan="1" class="k-header k-hierarchy-cell k-header" role="presentation" style="left: 0px; right: 0px;"><a class="k-link"> </a></th>
+                            <th colspan="1" rowspan="1" class="k-header k-grid-header-sticky" aria-sort="none" role="columnheader" aria-colindex="1" aria-selected="false" style="left: 90px; right: 0px;">
+                                <a class="k-link" href="#">customerID</a>
+                            </th>
+                            <th colspan="1" rowspan="1" class="k-header k-sorted" aria-sort="descending" role="columnheader" aria-colindex="2" aria-selected="false">
+                                <a class="k-link" href="#">orderDate<span class="k-icon k-i-sort-desc-sm"></span></a>
+                            </th>
+                            <th colspan="1" rowspan="1" class="k-header" aria-sort="none" role="columnheader" aria-colindex="3" aria-selected="false"><a class="k-link" href="#">shipName</a></th>
+                            <th colspan="1" rowspan="1" class="k-header" aria-sort="none" role="columnheader" aria-colindex="4" aria-selected="false"><a class="k-link" href="#">freight</a></th>
+                            <th colspan="1" rowspan="1" class="k-header" aria-sort="none" role="columnheader" aria-colindex="5" aria-selected="false"><a class="k-link" href="#">shippedDate</a></th>
+                            <th colspan="1" rowspan="1" class="k-header k-grid-header-sticky" aria-sort="none" role="columnheader" aria-colindex="6" aria-selected="false" style="left: 0px; right: 200px;"><a class="k-link" href="#">ID</a></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class="k-grid-container" role="presentation">
+            <div class="k-grid-content k-virtual-content" role="presentation">
+                <div role="presentation" style="position: relative;">
+                    <table class="k-grid-table" role="presentation" style="width: 1434px;">
+                        <colgroup role="presentation">
+                            <col width="32px" />
+                            <col width="32px" />
+                            <col width="200px" />
+                            <col class="k-sorted" width="300px" />
+                            <col width="280px" />
+                            <col width="200px" />
+                            <col width="300px" />
+                            <col width="90px" />
+                        </colgroup>
+                        <tbody role="presentation">
+                            <tr class="k-grouping-row" role="row">
+                                <td colspan="8" role="gridcell" aria-selected="false" aria-expanded="true" aria-colindex="1" style="left: 0px; right: 0px;">
+                                    <p class="k-reset"><a href="#" class="k-i-collapse k-icon"></a>Lehmanns Marktstand</p>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row" role="row">
+                                <td class="k-group-cell" role="presentation" style="left: 0px; right: 0px;"></td>
+                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"></a></td>
+                                <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="2" aria-selected="false" style="left: 90px; right: 0px;">LEHMS</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">Saturday, January 13, 1996</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="4" aria-selected="false">Lehmanns Marktstand</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">25.83</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="6" aria-selected="false">Tuesday, January 16, 1996</td>
+                                <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="7" aria-selected="false" style="left: 0px; right: 200px;">10279</td>
+                            </tr>
+                            <tr class="k-master-row k-alt" role="row">
+                                <td class="k-group-cell" role="presentation" style="left: 0px; right: 0px;"></td>
+                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"></a></td>
+                                <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="2" aria-selected="false" style="left: 90px; right: 0px;">LEHMS</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">Saturday, January 13, 1996</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="4" aria-selected="false">Lehmanns Marktstand</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">25.83</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="6" aria-selected="false">Tuesday, January 16, 1996</td>
+                                <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="7" aria-selected="false" style="left: 0px; right: 200px;">10279</td>
+                            </tr>
+                            <tr class="k-grouping-row" role="row">
+                                <td colspan="8" role="gridcell" aria-selected="false" aria-expanded="true" aria-colindex="1" style="left: 0px; right: 0px;">
+                                    <p class="k-reset"><a href="#" class="k-i-collapse k-icon"></a>Split Rail Beer &amp; Ale</p>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row" role="row">
+                                <td class="k-group-cell" role="presentation" style="left: 0px; right: 0px;"></td>
+                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"></a></td>
+                                <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="2" aria-selected="false" style="left: 90px; right: 0px;">SPLIR</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">Monday, January 1, 1996</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="4" aria-selected="false">Split Rail Beer &amp; Ale</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">4.54</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="6" aria-selected="false">Tuesday, January 30, 1996</td>
+                                <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="7" aria-selected="false" style="left: 0px; right: 200px;">10271</td>
+                            </tr>
+                            <tr class="k-master-row k-alt" role="row">
+                                <td class="k-group-cell" role="presentation" style="left: 0px; right: 0px;"></td>
+                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"></a></td>
+                                <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="2" aria-selected="false" style="left: 90px; right: 0px;">SPLIR</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">Monday, January 1, 1996</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="4" aria-selected="false">Split Rail Beer &amp; Ale</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">4.54</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="6" aria-selected="false">Tuesday, January 30, 1996</td>
+                                <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="7" aria-selected="false" style="left: 0px; right: 200px;">10271</td>
+                            </tr>
+                            <tr class="k-grouping-row" role="row">
+                                <td colspan="8" role="gridcell" aria-selected="false" aria-expanded="true" aria-colindex="1" style="left: 0px; right: 0px;">
+                                    <p class="k-reset"><a href="#" class="k-i-collapse k-icon"></a>Wartian Herkku</p>
+                                </td>
+                            </tr>
+                            <tr class="k-master-row" role="row">
+                                <td class="k-group-cell" role="presentation" style="left: 0px; right: 0px;"></td>
+                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"></a></td>
+                                <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="2" aria-selected="false" style="left: 90px; right: 0px;">WARTH</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">Friday, January 26, 1996</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="4" aria-selected="false">Wartian Herkku</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">25.73</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="6" aria-selected="false">Wednesday, January 31, 1996</td>
+                                <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="7" aria-selected="false" style="left: 0px; right: 200px;">10266</td>
+                            </tr>
+                            <tr class="k-master-row k-alt" role="row">
+                                <td class="k-group-cell" role="presentation" style="left: 0px; right: 0px;"></td>
+                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"></a></td>
+                                <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="2" aria-selected="false" style="left: 90px; right: 0px;">WARTH</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="3" aria-selected="false">Friday, January 26, 1996</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="4" aria-selected="false">Wartian Herkku</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="5" aria-selected="false">25.73</td>
+                                <td colspan="1" class="" role="gridcell" aria-colindex="6" aria-selected="false">Wednesday, January 31, 1996</td>
+                                <td colspan="1" class="k-grid-content-sticky" role="gridcell" aria-colindex="7" aria-selected="false" style="left: 0px; right: 200px;">10266</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="k-height-container" role="presentation"><div></div></div>
+            </div>
+        </div>
+        <div class="k-pager-wrap k-pager k-widget k-grid-pager k-pager-sm" role="navigation">
+            <a href="#" class="k-link k-pager-nav k-pager-first k-state-disabled" title="Go to the first page"><span class="k-icon k-i-arrow-end-left" aria-label="Go to the first page"></span></a>
+            <a href="#" class="k-link k-pager-nav k-state-disabled" title="Go to the previous page"><span class="k-icon k-i-arrow-60-left" aria-label="Go to the previous page"></span></a>
+            <div class="k-pager-numbers-wrap">
+                <select class="k-dropdown">
+                    <option class="k-link">1</option>
+                </select>
+                <ul class="k-pager-numbers k-reset">
+                    <li><a href="#" class="k-link k-state-selected">1</a></li>
+                </ul>
+            </div>
+            <a href="#" class="k-link k-pager-nav k-state-disabled" title="Go to the next page"><span class="k-icon k-i-arrow-60-right" aria-label="Go to the next page"></span></a>
+            <a href="#" class="k-link k-pager-nav k-pager-last k-state-disabled" title="Go to the last page"><span class="k-icon k-i-arrow-end-right" aria-label="Go to the last page"></span></a>
+            <span class="k-pager-sizes k-label">
+                <span class="k-widget k-dropdown">
+                    <span
+                        role="listbox"
+
+                        class="k-dropdown-wrap"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        aria-owns="93c49597-9cb5-416d-863b-0d15a7379e66"
+                        aria-activedescendant="option-02b5eee1-c548-41cb-a60f-ede8641313b0-2"
+                    >
+                        <span class="k-input">20</span><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span>
+                        <select aria-hidden="true" style="opacity: 0; width: 1px; border: 0px; z-index: -1; position: absolute; left: 50%;">
+                            <option value="20"></option>
+                        </select>
+                    </span>
+                </span>
+                items per page
+            </span>
+            <div class="k-pager-info k-label">1 - 6 of 6 items</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+</body>
+</html>

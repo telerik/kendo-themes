@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Dialog</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(3, 1fr);
+            align-items: start;
+        }
+        /* test page overrides */
+        .k-dialog {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <div class="k-widget k-window k-dialog">
+
+            <div class="k-window-titlebar k-dialog-titlebar">
+                <span class="k-window-title k-dialog-title">
+                    Title
+                    <!-- descendants --> g y p
+                    <!-- ascendant --> t d l
+                </span>
+                <div class="k-window-actions k-dialog-actions">
+                    <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
+                        <span class="k-icon k-i-close"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="k-content k-window-content k-dialog-content">
+                <!-- template -->
+                Dialog content template
+            </div>
+
+            <div class="k-dialog-buttongroup">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog">
+
+            <div class="k-window-titlebar k-dialog-titlebar">
+                <span class="k-window-title k-dialog-title" style="font-family: cursive;">
+                    Cursive
+                    <!-- descendants --> g y p
+                    <!-- ascendant --> t d l
+                </span>
+            </div>
+
+            <div class="k-content k-window-content k-dialog-content">
+                <!-- template -->
+                Dialog without titlebar actions
+            </div>
+
+            <div class="k-dialog-buttongroup">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog">
+
+            <div class="k-window-titlebar k-dialog-titlebar">
+                <span class="k-window-title k-dialog-title"></span>
+                <div class="k-window-actions k-dialog-actions">
+                    <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
+                        <span class="k-icon k-i-close"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="k-content k-window-content k-dialog-content">
+                <!-- template -->
+                Dialog with empty title and actions
+            </div>
+
+            <div class="k-dialog-buttongroup">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog">
+
+            <div class="k-window-titlebar k-dialog-titlebar">
+                <span class="k-window-title k-dialog-title"></span>
+            </div>
+
+            <div class="k-content k-window-content k-dialog-content">
+                <!-- template -->
+                Dialog with empty title and no actions
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog">
+
+            <div class="k-content k-window-content k-dialog-content">
+                <!-- template -->
+                Dialog without title
+            </div>
+
+            <div class="k-dialog-buttongroup">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog" style="height: 170px">
+            <div class="k-window-titlebar k-dialog-titlebar">
+                <span class="k-window-title k-dialog-title">Scrolling</span>
+                <div class="k-window-actions k-dialog-actions">
+                    <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
+                        <span class="k-icon k-i-close"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="k-content k-window-content k-dialog-content k-scroll">
+                <!-- template -->
+                <p>Dialog content template with long text and vertical scrolling.</p>
+                <p>Dialog content template with long text and vertical scrolling.</p>
+                <p>Dialog content template with long text and vertical scrolling.</p>
+            </div>
+
+            <div class="k-dialog-buttongroup">
+                <button type="button" class="k-button">Action</button>
+                <button type="button" class="k-button k-primary">Primary</button>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog k-window-sm">
+            <div class="k-window-titlebar k-dialog-titlebar k-header">
+                <span class="k-window-title k-dialog-title">Multiselect</span>
+                <div class="k-window-actions k-dialog-actions">
+                    <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
+                        <span class="k-icon k-i-close"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="k-content k-window-content k-dialog-content">
+                <kendo-multiselect class="k-widget k-multiselect">
+                    <div class="k-multiselect-wrap k-floatwrap">
+                        <kendo-taglist>
+                            <ul class="k-reset">
+                                <li class="k-button k-state-hover">
+                                  <span>Baseball</span>
+                                  <span class="k-select">
+                                    <span class="k-icon k-i-close"></span>
+                                  </span>
+                                </li>
+                            </ul>
+                        </kendo-taglist>
+                        <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                    </div>
+                </kendo-multiselect>
+            </div>
+        </div>
+
+        <div class="k-widget k-window k-dialog k-window-sm">
+            <div class="k-window-titlebar k-dialog-titlebar k-header">
+                <span class="k-window-title k-dialog-title">Multiselect</span>
+                <div class="k-window-actions k-dialog-actions">
+                    <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
+                        <span class="k-icon k-i-close"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="k-content k-window-content k-dialog-content">
+                <div class="k-edit-label">
+                    .k-edit-field
+                </div>
+                <div class="k-edit-field">
+                    <kendo-multiselect class="k-widget k-multiselect">
+                        <div class="k-multiselect-wrap k-floatwrap">
+                            <kendo-taglist>
+                                <ul class="k-reset">
+                                    <li class="k-button k-state-hover">
+                                    <span>Baseball</span>
+                                    <span class="k-select">
+                                        <span class="k-icon k-i-close"></span>
+                                    </span>
+                                    </li>
+                                </ul>
+                            </kendo-taglist>
+                            <span class="k-clear-value" title="clear"><span class="k-icon k-i-x"></span></span>
+                        </div>
+                    </kendo-multiselect>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

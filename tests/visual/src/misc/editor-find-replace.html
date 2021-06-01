@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Editor Find and Replace</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .k-window {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <span>Find Dialog</span>
+        <span>Replace Dialog</span>
+        <section>
+            <div class="k-widget k-window">
+                <div class="k-window-titlebar k-dialog-titlebar">
+                    <div class="k-window-title">Find and Replace</div>
+                    <div class="k-window-actions">
+                        <button class="k-button-icon k-button k-flat">
+                            <span class="k-icon k-i-close"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="k-content k-window-content">
+                    <div class="k-widget k-header k-floatwrap k-tabstrip k-tabstrip-top k-editor-find-replace">
+                        <ul class="k-tabstrip-items k-reset">
+                            <li class="k-item k-state-active k-tab-on-top">
+                                <span class="k-link">Find</span>
+                            </li>
+                            <li class="k-item">
+                                <span class="k-link">Replace</span>
+                            </li>
+                        </ul>
+                        <div class="k-content k-state-active">
+                            <div>
+                                <div class="k-edit-form-container">
+                                    <div class="k-edit-label">
+                                        <label>Find What:</label>
+                                    </div>
+                                    <div class="k-edit-field">
+                                        <input class="k-textbox" value="editor"/>
+                                    </div>
+                                 </div>
+                                <div class="k-search-options">
+                                    <span>
+                                        <input class="k-checkbox" type="checkbox">
+                                        <label class="k-checkbox-label">Match case</label>
+                                    </span>
+                                    <span>
+                                        <input class="k-checkbox" type="checkbox">
+                                        <label class="k-checkbox-label">Match whole word only</label>
+                                    </span>
+                                    <span>
+                                        <input class="k-checkbox" type="checkbox">
+                                        <label class="k-checkbox-label">Match cyclic (Wrap around)</label>
+                                    </span>
+                                    <span>
+                                        <input class="k-checkbox" type="checkbox">
+                                        <label class="k-checkbox-label">Regular Expression</label>
+                                    </span>
+                                </div>
+                                <div class="k-matches-container">
+                                    <button class="k-button k-flat k-primary">
+                                        <span class="k-icon k-i-arrow-chevron-left"></span>
+                                        Prev
+                                    </button>
+                                    <span>1 of 3 matches</span>
+                                    <button class="k-button k-flat k-primary">
+                                        Next
+                                        <span class="k-icon k-i-arrow-chevron-right"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+        <section>
+            <div class="k-widget k-window">
+                <div class="k-window-titlebar k-dialog-titlebar">
+                    <div class="k-window-title">Find and Replace</div>
+                    <div class="k-window-actions">
+                        <button class="k-button-icon k-button k-flat">
+                            <span class="k-icon k-i-close"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="k-content k-window-content">
+                   <div class="k-widget k-header k-floatwrap k-tabstrip k-tabstrip-top k-editor-find-replace">
+                      <ul class="k-tabstrip-items k-reset">
+                         <li class="k-item">
+                             <span class="k-link">Find</span>
+                            </li>
+                         <li class="k-item k-state-active k-tab-on-top">
+                             <span class="k-link">Replace</span>
+                        </li>
+                      </ul>
+                      <div class="k-content k-state-active">
+                            <div>
+                                <div class="k-edit-form-container">
+                                    <div class="k-edit-label">
+                                        <label>Find What:</label>
+                                    </div>
+                                    <div class="k-edit-field">
+                                        <input class="k-textbox" value="editor"/>
+                                    </div>
+                                    <div class="k-edit-label">
+                                        <label>Replace With:</label>
+                                    </div>
+                                    <div class="k-edit-field">
+                                        <input class="k-textbox" value="grid"/>
+                                    </div>
+                                 </div>
+                                <div class="k-action-buttons k-actions k-actions-end">
+                                    <button class="k-button">Replace</button>
+                                    <button class="k-button">Replace All</button>
+                                </div>
+                                <div class="k-search-options">
+                                    <span>
+                                        <input class="k-checkbox" type="checkbox">
+                                        <label class="k-checkbox-label">Match case</label>
+                                    </span>
+                                    <span>
+                                        <input class="k-checkbox" type="checkbox">
+                                        <label class="k-checkbox-label">Match whole word only</label>
+                                    </span>
+                                    <span>
+                                        <input class="k-checkbox" type="checkbox">
+                                        <label class="k-checkbox-label">Match cyclic (Wrap around)</label>
+                                    </span>
+                                    <span>
+                                        <input class="k-checkbox" type="checkbox">
+                                        <label class="k-checkbox-label">Regular Expression</label>
+                                    </span>
+                                </div>
+                                <div class="k-matches-container">
+                                    <button class="k-button k-flat k-primary">
+                                        <span class="k-icon k-i-arrow-chevron-left"></span>
+                                        Prev
+                                    </button>
+                                    <span>1 of 3 matches</span>
+                                    <button class="k-button k-flat k-primary">
+                                        Next
+                                        <span class="k-icon k-i-arrow-chevron-right"></span>
+                                    </button>
+                                </div>
+                            </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+        </section>
+        <span>Text Highlight</span>
+        <span></span>
+        <section>
+            <div class="k-widget k-editor">
+                <div class="k-widget k-toolbar">
+                    <span class="k-tool-group">
+                        <div class="k-button-group">
+                            <button class="k-button k-button-icon">
+                                <span class="k-icon k-i-bold"></span>
+                            </button>
+                            <button class="k-button k-button-icon">
+                                <span class="k-icon k-i-italic"></span>
+                            </button>
+                            <button class="k-button k-button-icon">
+                                <span class="k-icon k-i-underline"></span>
+                            </button>
+                            <button class="k-button k-button-icon k-state-selected">
+                                <span class="k-icon k-i-find"></span>
+                            </button>
+                        </div>
+                    </span>
+                </div>
+                <div class="k-editor-content" style="height: 320px;">
+                   <div class="ProseMirror">
+                        <p>The KendoReact Editor allows your users to edit <span class="k-text-selected">HTML</span> in a familiar, user-friendly way.<br>
+                            The Editor provides the core <span class="k-text-highlighted">HTML</span> editing engine, which includes text formatting, hyperlinks, and lists.
+                            The component <strong>outputs identical <span class="k-text-highlighted">HTML</span></strong> across all major browsers, follows accessibility standards,
+                            and provides API for content manipulation.
+                        </p>
+                   </div>
+                </div>
+             </div>
+        </section>
+    </div>
+
+</body>
+</html>

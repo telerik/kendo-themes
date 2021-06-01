@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Dialog</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        /* ensure test area size, due to fixed element */
+        #test-area {
+            width: 1024px;
+            height: 768px;
+            align-items: stretch;
+        }
+        .k-dialog-wrapper {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+
+        <kendo-dialog class="k-dialog-wrapper">
+            <div class="k-overlay"></div>
+
+            <div class="k-widget k-window k-dialog">
+                <kendo-dialog-titlebar class="k-window-titlebar k-dialog-titlebar k-header">
+                    <div class="k-window-title k-dialog-title">
+                        Title
+                    </div>
+                    <div class="k-window-actions k-dialog-actions">
+                        <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
+                            <span class="k-icon k-i-x"></span>
+                        </a>
+                    </div>
+                </kendo-dialog-titlebar>
+
+                <div class="k-content k-window-content k-dialog-content">
+                    <!-- template -->
+                    Dialog content template
+                </div>
+
+                <kendo-dialog-actions class="k-dialog-buttongroup">
+                    <button class="k-button">
+                        Action
+                    </button>
+                    <button class="k-button k-primary">
+                        Primary
+                    </button>
+                </kendo-dialog-actions>
+            </div>
+        </kendo-dialog>
+
+    </div>
+
+</body>
+</html>

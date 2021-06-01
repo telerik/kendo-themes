@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>TaskBoard</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 1030px;
+            padding: 0;
+        }
+
+        #test-area > span { padding: 20px 20px 0; }
+    </style>
+</head>
+<body>
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
+
+        <span>TaskBoard</span>
+        <div class="k-widget k-taskboard">
+            <!-- Toolbar -->
+            <div class="k-taskboard-header">
+                <div class="k-taskboard-header">
+                    <div class="k-taskboard-toolbar k-toolbar">
+                        <button class="k-button k-button-icontext">
+                            <span class="k-icon k-i-plus"></span>
+                            Add Column
+                        </button>
+                        <span class="k-spacer"></span>
+                        <span class="k-searchbox">
+                            <span class="k-input-prefix">
+                                <span class="k-icon k-i-search"></span>
+                            </span>
+                            <input class="k-input" type="text" placeholder="Search...">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="k-taskboard-content">
+                <div class="k-taskboard-columns-container">
+                    <div class="k-taskboard-column" tabindex="0">
+                        <div class="k-taskboard-column-header">
+                            <div class="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-taskboard-column-header-actions">
+                                <button class="k-button k-button-icon k-flat">
+                                    <i class="k-icon k-i-plus"></i>
+                                </button>
+                                <button class="k-button k-button-icon k-flat">
+                                    <i class="k-icon k-i-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="k-taskboard-column-cards-container">
+                            <div class="k-taskboard-column-cards">
+                                <div class="k-taskboard-card k-card" tabindex="0">
+                                    <div class="k-card-header k-hbox">
+                                        <a class="k-card-title k-link" href="#">Card Title</a>
+                                        <span class="k-spacer"></span>
+                                        <div class="k-card-header-actions">
+                                            <button class="k-card-details k-card-details k-button k-button-icon k-flat">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="k-card-body">
+                                        <p>Card Body</p>
+                                    </div>
+                                </div>
+                                <div class="k-taskboard-card k-card" tabindex="0">
+                                    <div class="k-card-header k-hbox">
+                                        <a class="k-card-title k-link" href="#">Card Title</a>
+                                        <span class="k-spacer"></span>
+                                        <div class="k-card-header-actions">
+                                            <button class="k-card-details k-card-details k-button k-button-icon k-flat">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="k-card-body">
+                                        <p>Card Body</p>
+                                    </div>
+                                </div>
+                                <div class="k-taskboard-card k-card" tabindex="0">
+                                    <div class="k-card-header k-hbox">
+                                        <a class="k-card-title k-link" href="#">Card Title</a>
+                                        <span class="k-spacer"></span>
+                                        <div class="k-card-header-actions">
+                                            <button class="k-card-details k-card-details k-button k-button-icon k-flat">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="k-card-body">
+                                        <p>Card Body</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="k-taskboard-column" tabindex="0">
+                        <div class="k-taskboard-column-header">
+                            <div class="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-taskboard-column-header-actions">
+                                <button class="k-button k-button-icon k-flat">
+                                    <i class="k-icon k-i-plus"></i>
+                                </button>
+                                <button class="k-button k-button-icon k-flat">
+                                    <i class="k-icon k-i-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="k-taskboard-column-cards-container">
+                            <div class="k-taskboard-column-cards">
+                                <div class="k-taskboard-card k-card" tabindex="0">
+                                    <div class="k-card-header k-hbox">
+                                        <a class="k-card-title k-link" href="#">Card Title</a>
+                                        <span class="k-spacer"></span>
+                                        <div class="k-card-header-actions">
+                                            <button class="k-card-details k-card-details k-button k-button-icon k-flat">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="k-card-body">
+                                        <p>Card Body</p>
+                                    </div>
+                                </div>
+                                <div class="k-taskboard-card k-card" tabindex="0">
+                                    <div class="k-card-header k-hbox">
+                                        <a class="k-card-title k-link" href="#">Card Title</a>
+                                        <span class="k-spacer"></span>
+                                        <div class="k-card-header-actions">
+                                            <button class="k-card-details k-card-details k-button k-button-icon k-flat">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="k-card-body">
+                                        <p>Card Body</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="k-taskboard-column" tabindex="0">
+                        <div class="k-taskboard-column-header">
+                            <div class="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-taskboard-column-header-actions">
+                                <button class="k-button k-button-icon k-flat">
+                                    <i class="k-icon k-i-plus"></i>
+                                </button>
+                                <button class="k-button k-button-icon k-flat">
+                                    <i class="k-icon k-i-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="k-taskboard-column-cards-container">
+                            <div class="k-taskboard-column-cards">
+                                <div class="k-taskboard-card k-card" tabindex="0">
+                                    <div class="k-card-header k-hbox">
+                                        <a class="k-card-title k-link" href="#">Card Title</a>
+                                        <span class="k-spacer"></span>
+                                        <div class="k-card-header-actions">
+                                            <button class="k-card-details k-card-details k-button k-button-icon k-flat">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="k-card-body">
+                                        <p>Card Body</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Preview/Edit Pane -->
+            <div class="k-taskboard-pane k-taskboard-edit-pane k-hidden"></div>
+        </div>
+
+    </div>
+</body>
+</html>

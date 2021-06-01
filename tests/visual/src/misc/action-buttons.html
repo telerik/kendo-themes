@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Action buttons</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .container {
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .container,
+        #test-area .k-upload {
+            margin-bottom: 8px;
+        }
+
+        .buttons-position {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <section>
+        <!-- Action buttons - stretched -->
+        <div class="container">
+            <p>Default buttons</p>
+            <div class="k-action-buttons k-actions">
+                <button class="k-button k-clear-selected">Clear</button>
+                <button class="k-button k-primary k-upload-selected">Upload</button>
+                <button class="k-button k-primary k-upload-selected">Another button</button>
+            </div>
+        </div>
+
+        <!-- Action buttons - stretched -->
+        <div class="container">
+            <p>Stretched buttons: <span class="buttons-position">k-actions-stretched</span></k-actions-stretched></p>
+            <div class="k-action-buttons k-actions k-actions-stretched">
+                <button class="k-button k-clear-selected">Clear</button>
+                <button class="k-button k-upload-selected">Upload</button>
+                <button class="k-button k-primary k-upload-selected">Another button</button>
+            </div>
+        </div>
+
+        <!-- Action buttons - stretched -->
+        <div class="container">
+            <p>Buttons placed at the start: <span class="buttons-position">k-actions-start</span></p>
+            <div class="k-action-buttons k-actions k-actions-start">
+                <button class="k-button k-clear-selected">Clear</button>
+                <button class="k-button k-primary k-upload-selected">Upload</button>
+                <button class="k-button k-primary k-upload-selected">Another button</button>
+
+            </div>
+        </div>
+        <!-- Action buttons - stretched -->
+        <div class="container">
+            <p>Buttons placed at the center: <span class="buttons-position">k-actions-center</span></p>
+            <div class="k-action-buttons k-actions k-actions-center">
+                <button class="k-button k-clear-selected">Clear</button>
+                <button class="k-button k-primary k-upload-selected">Upload</button>
+                <button class="k-button k-primary k-upload-selected">Another button</button>
+            </div>
+        </div>
+        <!-- Action buttons - stretched -->
+        <div class="container">
+            <p>Buttons placed at the end: <span class="buttons-position">k-actions-end</span></p>
+            <div class="k-action-buttons k-actions k-actions-end">
+                <button class="k-button k-clear-selected">Clear</button>
+                <button class="k-button k-primary k-upload-selected">Upload</button>
+                <button class="k-button k-primary k-upload-selected">Another button</button>
+            </div>
+        </div>
+       </section>
+
+        <section>
+            <kendo-upload class="k-widget k-upload">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button">
+                        <input><span>Select files...</span>
+                    </div>
+                    <div class="k-dropzone-hint">Drop files here to upload</div>
+                </div>
+                <ul class="k-upload-files">
+                    <li class="k-file">
+                        <kendo-upload-file-list-single-item class="k-file-single">
+                            <div class="k-progressbar" style="opacity: 0;">
+                                <span class="k-progress" style="width: 0%;"></span>
+                            </div>
+                            <span class="k-file-group-wrapper">
+                                <span class="k-file-group k-icon k-i-file-image"></span>
+                            </span>
+                            <span class="k-file-name-size-wrapper">
+                                <span class="k-file-name">Action buttons: <span class="buttons-position">end</span></span>
+                                <span class="k-file-size">51.23 KB</span>
+                            </span>
+                            <kendo-upload-file-list-item-action-button>
+                                <strong class="k-upload-status">
+                                    <button class="k-button k-button-icon k-flat k-upload-action">
+                                        <span class="k-icon k-delete k-i-x"></span>
+                                    </button>
+                                </strong>
+                            </kendo-upload-file-list-item-action-button>
+                        </kendo-upload-file-list-single-item>
+                    </li>
+                </ul>
+                <kendo-upload-action-buttons class="k-action-buttons k-actions k-actions-end">
+                    <button class="k-button k-clear-selected"> Clear </button>
+                    <button class="k-button k-primary k-upload-selected"> Upload </button>
+                </kendo-upload-action-buttons>
+            </kendo-upload>
+
+            <!-- Action buttons - stretched -->
+            <kendo-upload class="k-widget k-upload">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button">
+                        <input><span>Select files...</span>
+                    </div>
+                    <div class="k-dropzone-hint">Drop files here to upload</div>
+                </div>
+                <ul class="k-upload-files">
+                    <li class="k-file">
+                        <kendo-upload-file-list-single-item class="k-file-single">
+                            <div class="k-progressbar" style="opacity: 0;">
+                                <span class="k-progress" style="width: 0%;"></span>
+                            </div>
+                            <span class="k-file-group-wrapper">
+                                <span class="k-file-group k-icon k-i-file-image"></span>
+                            </span>
+                            <span class="k-file-name-size-wrapper">
+                                <span class="k-file-name">Action buttons: <span class="buttons-position">stretched</span></span>
+                                <span class="k-file-size">51.23 KB</span>
+                            </span>
+                            <kendo-upload-file-list-item-action-button>
+                                <strong class="k-upload-status">
+                                    <button class="k-button k-button-icon k-flat k-upload-action">
+                                        <span class="k-icon k-delete k-i-x"></span>
+                                    </button>
+                                </strong>
+                            </kendo-upload-file-list-item-action-button>
+                        </kendo-upload-file-list-single-item>
+                    </li>
+                </ul>
+                <kendo-upload-action-buttons class="k-action-buttons k-actions k-actions-stretched">
+                    <button class="k-button k-clear-selected"> Clear </button>
+                    <button class="k-button k-primary k-upload-selected"> Upload </button>
+                </kendo-upload-action-buttons>
+            </kendo-upload>
+
+            <kendo-upload class="k-widget k-upload">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button">
+                        <input><span>Select files...</span>
+                    </div>
+                    <div class="k-dropzone-hint">Drop files here to upload</div>
+                </div>
+                <ul class="k-upload-files">
+                    <li class="k-file">
+                        <kendo-upload-file-list-single-item class="k-file-single">
+                            <div class="k-progressbar" style="opacity: 0;">
+                                <span class="k-progress" style="width: 0%;"></span>
+                            </div>
+                            <span class="k-file-group-wrapper">
+                                <span class="k-file-group k-icon k-i-file-image"></span>
+                            </span>
+                            <span class="k-file-name-size-wrapper">
+                                <span class="k-file-name">Action buttons: <span class="buttons-position">start</span></span>
+                                <span class="k-file-size">51.23 KB</span>
+                            </span>
+                            <kendo-upload-file-list-item-action-button>
+                                <strong class="k-upload-status">
+                                    <button class="k-button k-button-icon k-flat k-upload-action">
+                                        <span class="k-icon k-delete k-i-x"></span>
+                                    </button>
+                                </strong>
+                            </kendo-upload-file-list-item-action-button>
+                        </kendo-upload-file-list-single-item>
+                    </li>
+                </ul>
+                <kendo-upload-action-buttons class="k-action-buttons k-actions k-actions-start">
+                    <button class="k-button k-clear-selected"> Clear </button>
+                    <button class="k-button k-primary k-upload-selected"> Upload </button>
+                </kendo-upload-action-buttons>
+            </kendo-upload>
+
+            <!-- Action buttons - stretched -->
+            <kendo-upload class="k-widget k-upload">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button">
+                        <input><span>Select files...</span>
+                    </div>
+                    <div class="k-dropzone-hint">Drop files here to upload</div>
+                </div>
+                <ul class="k-upload-files">
+                    <li class="k-file">
+                        <kendo-upload-file-list-single-item class="k-file-single">
+                            <div class="k-progressbar" style="opacity: 0;">
+                                <span class="k-progress" style="width: 0%;"></span>
+                            </div>
+                            <span class="k-file-group-wrapper">
+                                <span class="k-file-group k-icon k-i-file-image"></span>
+                            </span>
+                            <span class="k-file-name-size-wrapper">
+                                <span class="k-file-name">Action buttons: <span class="buttons-position">center</span></span>
+                                <span class="k-file-size">51.23 KB</span>
+                            </span>
+                            <kendo-upload-file-list-item-action-button>
+                                <strong class="k-upload-status">
+                                    <button class="k-button k-button-icon k-flat k-upload-action">
+                                        <span class="k-icon k-delete k-i-x"></span>
+                                    </button>
+                                </strong>
+                            </kendo-upload-file-list-item-action-button>
+                        </kendo-upload-file-list-single-item>
+                    </li>
+                </ul>
+                <kendo-upload-action-buttons class="k-action-buttons k-actions k-actions-center">
+                    <button class="k-button k-clear-selected"> Clear </button>
+                    <button class="k-button k-primary k-upload-selected"> Upload </button>
+                </kendo-upload-action-buttons>
+            </kendo-upload>
+        </section>
+
+    </div>
+
+</body>
+</html>

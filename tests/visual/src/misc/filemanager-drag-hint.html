@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>File Manager Drag Hint</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {}
+        #filemanager-draghint {
+            position: absolute;
+            left: 250px;
+            top: 200px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-area" class="grid k-grid-cols-1">
+
+        <span>File Manager Drag Hint</span>
+        <div class="k-widget k-filemanager">
+            <!-- Header -->
+            <div class="k-filemanager-header">
+                <div class="k-filemanager-toolbar k-toolbar k-widget">
+                    <a class="k-button k-toolbar-first-visible">New Folder</a>
+                    <a class="k-button">Upload</a>
+                </div>
+            </div>
+
+            <div class="k-filemanager-content-container" >
+                <!-- Navigation -->
+                <div class="k-filemanager-navigation">
+                    <div class="k-filemanager-treeview k-widget k-treeview">
+                        <ul class="k-group k-treeview-lines">
+                            <li class="k-item k-first">
+                                <div class="k-top">
+                                    <span class="k-in">Folder</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="k-filemanager-content">
+                    <nav class="k-filemanager-breadcrumb k-widget k-breadcrumb">
+                        <ol class="k-breadcrumb-container">
+                            <li class="k-breadcrumb-item k-breadcrumb-root-item">
+                                <a class="k-breadcrumb-root-link k-breadcrumb-icon-link">
+                                    <span class="k-icon k-i-home"></span>
+                                </a>
+                            </li>
+                        </ol>
+                    </nav>
+
+                    <!-- View -->
+                    <div class="k-widget k-listview k-selectable k-filemanager-listview">
+                        <div class="k-listview-content k-d-flex k-flex-row k-flex-wrap">
+                            <div class="k-listview-item">
+                                <span class="k-file-preview"><span class="k-file-icon k-icon k-i-folder"></span></span>
+                                <span class="k-file-name">Folder</span>
+                            </div>
+                            <div class="k-listview-item k-state-selected">
+                                <span class="k-file-preview"><span class="k-file-icon k-icon k-i-file-image"></span></span>
+                                <span class="k-file-name">file.png</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Preview -->
+                <div class="k-filemanager-preview k-hidden">
+                </div>
+            </div>
+        </div>
+
+        <div class="k-filemanager-drag-hint k-drag-clue" id="filemanager-draghint">
+            <span class="k-icon k-i-file"></span>
+            <span>file.png</span>
+        </div>
+
+    </div>
+</body>
+</html>
