@@ -298,9 +298,6 @@
 
     // Year view
     .k-scheduler-yearview {
-        .k-month-header {
-            @include fill( $color: $scheduler-yearview-month-header-text );
-        }
 
         .k-day-indicator {
             @include fill( $bg: $scheduler-yearview-indicator-bg );
