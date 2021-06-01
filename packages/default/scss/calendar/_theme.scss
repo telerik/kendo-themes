@@ -3,6 +3,7 @@
 // box - instead of changing the text color, show a box around the date
 
 @include exports("calendar/theme") {
+
     .k-calendar {
         @include fill(
             $calendar-text,
@@ -22,56 +23,23 @@
             @include box-shadow( $calendar-header-shadow );
         }
 
-        .k-nav-prev,
-        .k-nav-next,
-        .k-nav-fast {
-            &:hover,
-            &.k-state-hover {
-                @include fill(
-                    $calendar-header-button-hovered-text,
-                    $calendar-header-button-hovered-bg,
-                    $calendar-header-button-hovered-border,
-                    $calendar-header-button-hovered-gradient
-                );
-            }
-
-            &:active,
-            &.k-state-active {
-                @include fill(
-                    $calendar-header-button-pressed-text,
-                    $calendar-header-button-pressed-bg,
-                    $calendar-header-button-pressed-border,
-                    $calendar-header-button-pressed-gradient
-                );
-                @include box-shadow( $calendar-header-button-pressed-shadow );
-            }
-        }
-
 
         // Today navigation
-        .k-footer .k-nav-today,
-        .k-calendar-header .k-today,
-        .k-calendar-footer .k-today,
-        .k-calendar-header .k-nav-today,
-        .k-calendar-footer .k-nav-today {
+        .k-nav-today {
             color: $calendar-today-nav-text;
 
             &:hover,
             &.k-state-hover,
             &:focus,
             &.k-state-focus {
-                color: $calendar-today-nav-hovered-text;
+                color: $calendar-today-nav-hover-text;
             }
         }
 
 
         // Header cells
-        .k-content th,
-        .k-calendar-content th,
-        .k-content .k-calendar-th,
-        .k-calendar-content .k-calendar-th,
-        .k-calendar-view th,
-        .k-calendar-view .k-calendar-th
+        .k-calendar-th,
+        .k-calendar-caption,
         .k-meta-header,
         .k-month-header {
             color: $calendar-header-cell-text;
@@ -79,8 +47,7 @@
 
 
         // Special days
-        .k-content .k-today,
-        .k-calendar-content .k-today {
+        .k-calendar-view .k-today {
             @if $calendar-today-style == box {
                 .k-link {
                     box-shadow: inset 0 0 0 1px $calendar-today-color;
@@ -105,6 +72,8 @@
             );
         }
         .k-alt {
+            // remove default k-alt background color
+            background-color: transparent;
             @include fill(
                 $calendar-week-number-text,
                 $calendar-week-number-bg
@@ -117,9 +86,6 @@
 
 
         // Interactive states
-        .k-state-hover .k-link,
-        td:hover .k-link,
-        td.k-state-hover .k-link,
         .k-calendar-td:hover .k-link,
         .k-calendar-td.k-state-hover .k-link {
             @include fill(
@@ -129,7 +95,7 @@
                 $calendar-cell-hover-gradient
             );
         }
-        .k-state-selected .k-link {
+        .k-calendar-td.k-state-selected .k-link {
             @include fill(
                 $calendar-cell-selected-text,
                 $calendar-cell-selected-bg,
@@ -137,8 +103,8 @@
                 $calendar-cell-selected-gradient
             );
         }
-        .k-state-selected:hover .k-link,
-        .k-state-selected.k-state-hover .k-link {
+        .k-calendar-td.k-state-selected:hover .k-link,
+        .k-calendar-td.k-state-selected.k-state-hover .k-link {
             @include fill(
                 $calendar-cell-selected-hover-text,
                 $calendar-cell-selected-hover-bg,
@@ -146,12 +112,12 @@
                 $calendar-cell-selected-hover-gradient
             );
         }
-        .k-state-focused .k-link,
-        .k-state-focus .k-link  {
+        .k-calendar-td.k-state-focused .k-link,
+        .k-calendar-td.k-state-focus .k-link  {
             box-shadow: $calendar-cell-focused-shadow;
         }
-        .k-state-selected.k-state-focused .k-link,
-        .k-state-selected.k-state-focus .k-link {
+        .k-calendar-td.k-state-selected.k-state-focused .k-link,
+        .k-calendar-td.k-state-selected.k-state-focus .k-link {
             box-shadow: $calendar-cell-selected-focus-shadow;
         }
 
@@ -166,7 +132,7 @@
 
             li:hover,
             li.k-state-hover {
-                color: $calendar-today-nav-hovered-text;
+                color: $calendar-today-nav-hover-text;
             }
         }
         .k-calendar-navigation-highlight {
@@ -209,9 +175,9 @@
 
 
 
-@include exports("multiviewcalendar/theme") {
+@include exports( "multiview-calendar/theme" ) {
 
-    .k-calendar.k-calendar-range {
+    .k-calendar {
 
         $calendar-range-gap: 1px !default;
         $calendar-range-bg: rgba( $calendar-cell-selected-bg, .25 );
@@ -283,7 +249,10 @@
 
 }
 
-@include exports("daterangepicker/theme") {
+
+
+
+@include exports( "daterangepicker/theme" ) {
 
     //jQuery DateRangePicker
     .k-daterangepicker {
