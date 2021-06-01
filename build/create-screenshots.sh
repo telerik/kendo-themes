@@ -19,7 +19,7 @@ cp -r ./tests/visual/!(output) "$THEME_DIR"
 
 # replace theme reference
 find "$SRC_DIR" -name '*.html' -print0 | xargs -0 sed -i -E \
-    -e "s#/packages/default/dist/#/../../packages/$THEME/dist/#"
+    -e "s#/packages/default/dist/#/../../../packages/$THEME/dist/#"
 
 # capture screenshots. see .pastshotsrc for config options
 npm install --no-save pastshots@1.6 optipng
