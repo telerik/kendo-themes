@@ -7,6 +7,10 @@
         display: flex;
         flex-direction: column;
         position: relative;
+
+        .k-pivotgrid-cell {
+            vertical-align: baseline;
+        }
     }
 
     .k-pivotgrid-table {
@@ -27,9 +31,12 @@
         border-bottom-style: solid;
     }
 
-    .k-pivotgrid .k-pivotgrid-cell {
+
+    .k-pivotgrid-toolbar .k-pivotgrid-cell,
+    .k-pivotgrid-header .k-pivotgrid-cell:first-child {
         padding: 8px;
     }
+
 }
 
 
