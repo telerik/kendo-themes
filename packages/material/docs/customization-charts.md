@@ -28,8 +28,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$series-a</td>
     <td></td>
-    <td>get-base-hue( teal, 500 )</td>
-    <td>get-base-hue( teal, 500 )</td>
+    <td><span class="color-preview" style="background-color: #3f51b5"></span>#3f51b5</td>
+    <td><span class="color-preview" style="background-color: #3f51b5"></span>#3f51b5</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The first base series color and its light and dark shades.</div></div>
@@ -38,8 +38,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$series-b</td>
     <td></td>
-    <td>get-base-hue( blue, 500 )</td>
-    <td>get-base-hue( blue, 500 )</td>
+    <td><span class="color-preview" style="background-color: #2196f3"></span>#2196f3</td>
+    <td><span class="color-preview" style="background-color: #2196f3"></span>#2196f3</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The second base series color and its light and dark shades.</div></div>
@@ -48,8 +48,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$series-c</td>
     <td></td>
-    <td>get-base-hue( purple, 500 )</td>
-    <td>get-base-hue( purple, 500 )</td>
+    <td><span class="color-preview" style="background-color: #43a047"></span>#43a047</td>
+    <td><span class="color-preview" style="background-color: #43a047"></span>#43a047</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The third base series color and its light and dark shades.</div></div>
@@ -58,8 +58,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$series-d</td>
     <td></td>
-    <td>get-base-hue( red, 500 )</td>
-    <td>get-base-hue( red, 500 )</td>
+    <td><span class="color-preview" style="background-color: #ffc107"></span>#ffc107</td>
+    <td><span class="color-preview" style="background-color: #ffc107"></span>#ffc107</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fourth base series color and its light and dark shades.</div></div>
@@ -68,8 +68,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$series-e</td>
     <td></td>
-    <td>get-base-hue( yellow, 500 )</td>
-    <td>get-base-hue( yellow, 500 )</td>
+    <td><span class="color-preview" style="background-color: #ff5722"></span>#ff5722</td>
+    <td><span class="color-preview" style="background-color: #ff5722"></span>#ff5722</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fifth base series color and its light and dark shades.</div></div>
@@ -78,8 +78,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$series-f</td>
     <td></td>
-    <td>get-base-hue( green, 500 )</td>
-    <td>get-base-hue( green, 500 )</td>
+    <td><span class="color-preview" style="background-color: #e91e63"></span>#e91e63</td>
+    <td><span class="color-preview" style="background-color: #e91e63"></span>#e91e63</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sixth base series color and its light and dark shades.</div></div>
@@ -89,7 +89,7 @@ The following table lists the available variables for customization.
     <td>$series-1</td>
     <td></td>
     <td>$series-a</td>
-    <td>get-base-hue( teal, 500 )</td>
+    <td><span class="color-preview" style="background-color: #3f51b5"></span>#3f51b5</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series colors in order:<br />base, light, dark, lighter, darker</div></div>
