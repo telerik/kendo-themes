@@ -27,4 +27,4 @@ npm install --no-save pastshots@1.6 optipng
 npx pastshots \
     --serve "$SRC_DIR/**/*.html" \
     --port $((RANDOM % 1000 + 8000)) \
-    --output ./tests/visual/output
+    --output "./tests/visual/output/$THEME"
