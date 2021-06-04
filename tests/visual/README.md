@@ -27,7 +27,19 @@ Create tests for the reference rendering for components and their features in `t
 
 ### Per-Suite Rendering
 
-Follow the process established by your team to create and update reference tests. The test pages are typically created from live examples with some formatting and filtering applied.
+Follow the process established by your team to create and update reference tests.
+The test pages are typically created from live examples with some formatting and filtering applied.
+
+A generic workflow can look like this:
+1. Create a runnable example, either for a new scenario or an existing reference demo.
+1. Wrap the actual example in a `<div id="test-area" class="grid">` (see [reference](https://github.com/telerik/kendo-themes/blob/b777e466fa0275f165be5646e51f5be577d55c36/tests/visual/src/reference/buttons/buttons-blazor.html#L24)).
+1. Copy and reference the [styles.css](https://github.com/telerik/kendo-themes/blob/develop/tests/visual/assets/styles.css) stylesheet in your example.
+1. Run the demo and copy the source code of the page.
+1. Clean-up the source:
+  * Either using the [Pretty HTML](https://pretty-html.stackblitz.io/) tool.
+  * Or in a different way. Add the [page boilerplate](https://github.com/telerik/kendo-themes/blob/b777e466fa0275f165be5646e51f5be577d55c36/tests/visual/src/reference/buttons/buttons-blazor.html#L1-L22) in this case.
+1. Create a new file following this name template: `tests/visual/src/reference/[component]/[component]-[scenario]-[platform].html`
+1. Create a PR and submit the new example.
 
 ### Ad-hoc tests
 
