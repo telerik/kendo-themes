@@ -11,14 +11,18 @@
         #test-area {
             grid-template-columns: 1fr 1fr;
         }
+
+        body {
+            --kendo-scrollbar-width: 15px;
+        }
     </style>
 </head>
 <body>
 
     <div id="test-area" class="grid">
         <div class="k-widget k-grid" style="height: 650px; width: 600px;">
-            <div class="k-grid-header" style="padding: 0px;">
-               <div class="k-grid-header-wrap" style="border-width: 0px;">
+            <div class="k-grid-header">
+               <div class="k-grid-header-wrap">
                   <table style="width: 1180px;">
                      <colgroup>
                         <col width="60px">
@@ -981,7 +985,7 @@
                   </div>
                </div>
             </div>
-            <div class="k-grid-footer" style="padding: 0px;">
+            <div class="k-grid-footer">
                <div class="k-grid-footer-wrap">
                   <table style="width: 1180px;">
                      <colgroup>
