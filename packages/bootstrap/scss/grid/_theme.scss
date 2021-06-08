@@ -202,12 +202,14 @@
 
         // Selected state
         &.k-state-selected .k-grid-content-sticky,
-        &.k-state-selected .k-grid-row-sticky {
+        &.k-state-selected .k-grid-row-sticky,
+        td.k-grid-content-sticky.k-state-selected {
             @include fill( $bg: $grid-sticky-selected-bg );
         }
 
         &.k-state-selected.k-alt .k-grid-content-sticky,
-        &.k-state-selected.k-alt .k-grid-row-sticky {
+        &.k-state-selected.k-alt .k-grid-row-sticky,
+        &.k-alt td.k-grid-content-sticky.k-state-selected {
             @include fill( $bg: $grid-sticky-selected-alt-bg );
         }
 
@@ -225,7 +227,9 @@
         &.k-state-selected:hover .k-grid-content-sticky,
         &.k-state-selected:hover .k-grid-row-sticky,
         &.k-state-selected.k-state-hover .k-grid-content-sticky,
-        &.k-state-selected.k-state-hover .k-grid-row-sticky {
+        &.k-state-selected.k-state-hover .k-grid-row-sticky,
+        &:hover td.k-grid-content-sticky.k-state-selected,
+        &.k-state-hover td.k-grid-content-sticky.k-state-selected {
             background-color: $grid-sticky-selected-hovered-bg;
         }
     }
