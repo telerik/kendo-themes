@@ -129,7 +129,7 @@ $grid-sticky-selected-bg: shade($grid-bg, 4%) !default;
 $grid-sticky-selected-alt-bg: $grid-sticky-selected-bg !default;
 
 $grid-sticky-hovered-bg: darken($grid-bg, 7%) !default;
-$grid-sticky-selected-hovered-bg: $grid-sticky-hovered-bg !default;
+$grid-sticky-selected-hovered-bg: shade($grid-sticky-selected-bg, .87) !default;
 
 $grid-filter-menu-width: 250px !default;
 
