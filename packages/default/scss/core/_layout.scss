@@ -1,0 +1,37 @@
+@include exports( "core/layout" ) {
+
+    // Basic layout
+    .k-hbox,
+    .k-hstack {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .k-vbox,
+    .k-vstack {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .k-flex,
+    .k-spacer {
+        flex: 1 0 0;
+    }
+
+
+    // Stack layout
+    .k-stack-layout {}
+
+
+    // Flex layout
+    .k-flex-layout {
+        display: flex;
+    }
+
+
+    // Grid layout
+    .k-grid-layout {
+        display: grid;
+    }
+
+}
