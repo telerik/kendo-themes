@@ -1,5 +1,17 @@
 @include exports( "core/extra" ) {
 
+    // Hidden
+    .k-hidden {
+        display: none !important; // sass-lint:disable-line no-important
+    }
+
+
+    // RTL
+    .k-rtl {
+        direction: rtl;
+    }
+
+
     /// @name k-sr-only
     /// @description This class could be assigned to elements which should be visually hidden, but remain accessible for screen readers.
     /// @group extra
