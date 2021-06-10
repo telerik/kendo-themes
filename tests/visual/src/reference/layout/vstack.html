@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Vertical layout</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../../assets/styles.css" />
+    <script src="../../../assets/scripts.js"></script>
+
+    <style>
+        .k-hstack,
+        .k-vstack {
+            outline: 1px dotted;
+        }
+        .box {
+            padding: 4px;
+            border: 1px solid #cccccc;
+            background: #fafafa;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
+
+        <span>vertical stack</span>
+        <span>stretched item (needs height)</span>
+        <span></span>
+        <span></span>
+
+        <section>
+            <div class="k-vstack">
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+            </div>
+        </section>
+        <section>
+            <div class="k-vstack" style="height: 150px;">
+                <div class="box">Box</div>
+                <div class="box k-flex">Box</div>
+                <div class="box">Box</div>
+            </div>
+        </section>
+        <section></section>
+        <section></section>
+
+        <span>align start</span>
+        <span>align center</span>
+        <span>align end</span>
+        <span></span>
+        <section>
+            <div class="k-vstack k-align-items-start">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 33</div>
+            </div>
+        </section>
+        <section>
+            <div class="k-vstack k-align-items-center">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 33</div>
+            </div>
+        </section>
+        <section>
+            <div class="k-vstack k-align-items-end">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 33</div>
+            </div>
+        </section>
+        <section></section>
+
+        <span>pack start</span>
+        <span>pack center</span>
+        <span>pack end</span>
+        <span></span>
+        <section>
+            <div class="k-vstack k-justify-content-start" style="height: 150px;">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 33</div>
+            </div>
+        </section>
+        <section>
+            <div class="k-vstack k-justify-content-center" style="height: 150px;">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 33</div>
+            </div>
+        </section>
+        <section>
+            <div class="k-vstack  k-justify-content-end" style="height: 150px;">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 33</div>
+            </div>
+        </section>
+        <section></section>
+
+    </div>
+
+</body>
+</html>

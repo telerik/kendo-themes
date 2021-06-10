@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Horizontal stack</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../../assets/styles.css" />
+    <script src="../../../assets/scripts.js"></script>
+
+    <style>
+        .k-hstack,
+        .k-vstack {
+            outline: 1px dotted;
+        }
+        .box {
+            padding: 4px;
+            border: 1px solid #cccccc;
+            background: #fafafa;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
+
+        <span>horizontal stack</span>
+        <span>stretched item</span>
+        <span>single line</span>
+        <span>wrapped</span>
+
+        <section>
+            <div class="k-hstack">
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+            </div>
+        </section>
+        <section>
+            <div class="k-hstack">
+                <div class="box">Box</div>
+                <div class="box k-flex">Box</div>
+                <div class="box">Box</div>
+            </div>
+        </section>
+        <section>
+            <div class="k-hstack">
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+            </div>
+        </section>
+        <section>
+            <div class="k-hstack k-flex-wrap">
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+            </div>
+        </section>
+
+        <span>align start</span>
+        <span>align center</span>
+        <span>align end</span>
+        <span>align stretch</span>
+        <section>
+            <div class="k-hstack k-align-items-start">
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box" style="height: 50px">Box</div>
+            </div>
+        </section>
+        <section>
+            <div class="k-hstack k-align-items-center">
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box" style="height: 50px">Box</div>
+            </div>
+        </section>
+        <section>
+            <div class="k-hstack k-align-items-end">
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box" style="height: 50px">Box</div>
+            </div>
+        </section>
+        <section>
+            <div class="k-hstack">
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box" style="height: 50px">Box</div>
+            </div>
+        </section>
+
+        <span>pack start</span>
+        <span>pack center</span>
+        <span>pack start</span>
+        <span></span>
+        <section>
+            <div class="k-hstack k-justify-content-start">
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+            </div>
+        </section>
+        <section>
+            <div class="k-hstack k-justify-content-center">
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+            </div>
+        </section>
+        <section>
+            <div class="k-hstack  k-justify-content-end">
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+                <div class="box">Box</div>
+            </div>
+        </section>
+        <section></section>
+
+    </div>
+
+</body>
+</html>
