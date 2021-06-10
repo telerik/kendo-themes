@@ -1,21 +1,15 @@
 @include exports( "core/normalize" ) {
 
     // Hidden attribute
-    [hidden],
-    .k-hidden {
+    [hidden] {
         display: none !important; // sass-lint:disable-line no-important
     }
+
 
     // Hide script tags
     // see https://github.com/telerik/kendo-themes/issues/2360
     script {
         display: none !important; // sass-lint:disable-line no-important
-    }
-
-
-    // RTL
-    .k-rtl {
-        direction: rtl;
     }
 
 }

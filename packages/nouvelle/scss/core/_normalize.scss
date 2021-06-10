@@ -1,6 +1,5 @@
 // Hidden attribute
-[hidden],
-.k-hidden {
+[hidden] {
     display: none !important; // sass-lint:disable-line no-important
 }
 
@@ -8,10 +7,4 @@
 // see https://github.com/telerik/kendo-themes/issues/2360
 script {
     display: none !important; // sass-lint:disable-line no-important
-}
-
-
-// RTL
-.k-rtl {
-    direction: rtl;
 }
