@@ -121,7 +121,7 @@
     .k-align-self-baseline      { align-self: baseline; }
 
 
-    // Flex justify
+    // Justify content
     .k-justify-content-start    { justify-content: flex-start; }
     .k-justify-content-end      { justify-content: flex-end; }
     .k-justify-content-center   { justify-content: center; }
@@ -130,21 +130,10 @@
     .k-justify-content-evenly   { justify-content: space-evenly; }
 
 
-    // Columns
-    .k-column {
-        flex-grow: 1;
-        flex-basis: 0;
-    }
-
-
-    // Aliases
-    .k-flex                     { @extend .k-flex-1; }
-    .k-no-flex                  { @extend .k-flex-none; }
-    .k-no-flex-grow             { @extend .k-flex-grow-0; }
-    .k-no-flex-shrink           { @extend .k-flex-shrink-0; }
-    .k-hbox                     { @extend .k-d-flex-row; }
-    .k-vbox                     { @extend .k-d-flex-col; }
-    .k-columnset                { @extend .k-d-flex-row; }
-    .k-rowset                   { @extend .k-d-flex-col; }
+    // Justify items
+    .k-justify-items-start      { justify-items: flex-start; }
+    .k-justify-items-end        { justify-items: flex-end; }
+    .k-justify-items-center     { justify-items: center; }
+    .k-justify-items-stretch    { justify-items: stretch; }
 
 }

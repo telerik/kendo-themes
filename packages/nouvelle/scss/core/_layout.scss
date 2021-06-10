@@ -1,0 +1,37 @@
+// Basic layout
+.k-hbox,
+.k-hstack {
+    display: flex;
+    flex-flow: row nowrap;
+
+    > * { flex-shrink: 0; }
+}
+
+.k-vbox,
+.k-vstack {
+    display: flex;
+    flex-flow: column nowrap;
+
+    > * { flex-shrink: 0; }
+}
+
+.k-flex,
+.k-spacer {
+    flex: 1 0 auto;
+}
+
+
+// Stack layout
+.k-stack-layout {}
+
+
+// Flex layout
+.k-flex-layout {
+    display: flex;
+}
+
+
+// Grid layout
+.k-grid-layout {
+    display: grid;
+}
