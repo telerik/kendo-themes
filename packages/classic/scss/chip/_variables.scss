@@ -29,7 +29,7 @@ $chip-filled-hovered-bg: #e0e0e0 !default;
 $chip-filled-hovered-border: rgba(0, 0, 0, .2) !default;
 
 $chip-filled-focused-bg: $chip-filled-bg !default;
-$chip-filled-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
+$chip-filled-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .08) !default;
 
 $chip-filled-selected-bg: #d6d6d6 !default;
 $chip-filled-selected-border: rgba(0, 0, 0, .3) !default;
@@ -61,7 +61,7 @@ $chip-outline-hovered-border: rgba(0, 0, 0, .2) !default;
 $chip-outline-focused-bg: $chip-outline-bg !default;
 $chip-outline-focused-text: $chip-outline-text !default;
 $chip-outline-focused-border: $chip-outline-border !default;
-$chip-outline-focused-shadow: 0 3px 4px 0 rgba(0, 0, 0, .4) !default;
+$chip-outline-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .08) !default;
 
 $chip-outline-selected-bg: $body-text !default;
 $chip-outline-selected-text: #ffffff !default;
@@ -92,3 +92,11 @@ $chip-outline-single-selected-border: rgba($primary, .2) !default;
 
 $chip-multiple-selected-icon-bg: rgba(0, 0, 0, .36) !default;
 $chip-multiple-selected-icon-text: #ffffff !default;
+
+
+$chip-primary-focus-shadow: 0 0 0 2px rgba( $primary, .16 ) !default;
+$chip-secondary-focus-shadow: 0 0 0 2px rgba( $secondary, .16 ) !default;
+$chip-info-focus-shadow: 0 0 0 2px rgba( $info, .16 ) !default;
+$chip-success-focus-shadow: 0 0 0 2px rgba( $success, .16 ) !default;
+$chip-warning-focus-shadow: 0 0 0 2px rgba( $warning, .16 ) !default;
+$chip-error-focus-shadow: 0 0 0 2px rgba( $error, .16 ) !default;

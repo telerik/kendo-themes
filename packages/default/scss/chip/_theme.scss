@@ -152,4 +152,42 @@
         }
     }
 
+
+    // Chip colors
+    .k-chip-primary {
+
+        &:focus,
+        &.k-chip-focus {
+            box-shadow: $chip-primary-focus-shadow;
+        }
+    }
+    .k-chip-info {
+
+        &:focus,
+        &.k-chip-focus {
+            box-shadow: $chip-info-focus-shadow;
+        }
+    }
+    .k-chip-success {
+
+        &:focus,
+        &.k-chip-focus {
+            box-shadow: $chip-success-focus-shadow;
+        }
+    }
+    .k-chip-warning {
+
+        &:focus,
+        &.k-chip-focus {
+            box-shadow: $chip-warning-focus-shadow;
+        }
+    }
+    .k-chip-error {
+
+        &:focus,
+        &.k-chip-focus {
+            box-shadow: $chip-error-focus-shadow;
+        }
+    }
+
 }
