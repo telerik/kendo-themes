@@ -92,3 +92,11 @@ $chip-outline-single-selected-border: $primary !default;
 
 $chip-multiple-selected-icon-bg: rgba(0, 0, 0, .36) !default;
 $chip-multiple-selected-icon-text: #ffffff !default;
+
+
+$chip-primary-focus-shadow: null !default;
+$chip-secondary-focus-shadow: null !default;
+$chip-info-focus-shadow: null !default;
+$chip-success-focus-shadow: null !default;
+$chip-warning-focus-shadow: null !default;
+$chip-error-focus-shadow: null !default;
