@@ -128,8 +128,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$dark</td>
     <td>Color</td>
-    <td>get-base-hue( grey, 800 )</td>
-    <td>get-base-hue( grey, 800 )</td>
+    <td>get-base-hue( gray, 800 )</td>
+    <td>get-base-hue( gray, 800 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The dark color of the theme.</div></div>
@@ -138,8 +138,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$light</td>
     <td>Color</td>
-    <td>get-base-hue( grey, 100 )</td>
-    <td>get-base-hue( grey, 100 )</td>
+    <td>get-base-hue( gray, 100 )</td>
+    <td>get-base-hue( gray, 100 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The light color of the theme.</div></div>
