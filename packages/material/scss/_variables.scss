@@ -224,12 +224,12 @@ $error-darker: shade( $error, 2 ) !default;
 /// The dark color of the theme.
 /// @group color-system
 /// @type Color
-$dark: get-base-hue( grey, 800 ) !default;
+$dark: get-base-hue( gray, 800 ) !default;
 
 /// The light color of the theme.
 /// @group color-system
 /// @type Color
-$light: get-base-hue( grey, 100 ) !default;
+$light: get-base-hue( gray, 100 ) !default;
 
 /// Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark
 /// @group color-system

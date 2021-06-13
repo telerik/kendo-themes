@@ -605,8 +605,8 @@ $palettes: (
         )
     ),
 
-    // Grey
-    grey: (
+    // Gray
+    gray: (
         50: #fafafa,
         100: #f5f5f5,
         200: #eeeeee,
@@ -639,8 +639,8 @@ $palettes: (
         )
     ),
 
-    // Blue Grey
-    blueGrey: (
+    // Blue Gray
+    blueGray: (
         50: #eceff1,
         100: #cfd8dc,
         200: #b0bec5,
@@ -693,10 +693,10 @@ $material-dark-complimentary: (
     body-text: $light-primary-text,
     subtle-text: $light-secondary-text,
     disabled-text: $light-disabled-text,
-    component-bg: get-base-hue( grey, 800 ),
-    component-text: get-base-contrast( grey, 800 ),
+    component-bg: get-base-hue( gray, 800 ),
+    component-text: get-base-contrast( gray, 800 ),
     component-border: $light-dividers,
-    base-bg: get-base-hue( grey, 800 ),
+    base-bg: get-base-hue( gray, 800 ),
     hover-bg: rgba( $white, .08 ),
     focus-bg: rgba( $white, .24 ),
     elevation: $black
@@ -705,8 +705,8 @@ $material-dark-complimentary: (
 
 $material-light-complimentary: (
     is-dark: false,
-    body-bg: get-base-hue( grey, 50 ),
-    body-text: get-base-contrast( grey, 50 ),
+    body-bg: get-base-hue( gray, 50 ),
+    body-text: get-base-contrast( gray, 50 ),
     subtle-text: $dark-secondary-text,
     disabled-text: $dark-disabled-text,
     component-bg: $white,
