@@ -14,8 +14,8 @@ $tooltip-title-line-height: 1 !default;
 
 $tooltip-callout-size: 6px !default;
 
-$tooltip-bg: material-color( grey, 700, .9 ) !default;
-$tooltip-text: get-base-contrast( grey, 700 ) !default;
+$tooltip-bg: material-color( gray, 700, .9 ) !default;
+$tooltip-text: get-base-contrast( gray, 700 ) !default;
 $tooltip-border: $tooltip-bg !default;
 
 $tooltip-primary-bg: $primary !default;
