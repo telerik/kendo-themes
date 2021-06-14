@@ -696,8 +696,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$component-border</td>
     <td></td>
-    <td>rgba( black, .08 )</td>
-    <td>rgba( black, .08 )</td>
+    <td>$base-border</td>
+    <td>try-shade( $base-bg, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.</div></div>
@@ -748,7 +748,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$grid-border</td>
     <td></td>
     <td>$component-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>try-shade( $base-bg, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid component</div></div>
@@ -778,7 +778,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$grid-header-border</td>
     <td></td>
     <td>$grid-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>try-shade( $base-bg, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid header</div></div>
@@ -818,7 +818,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$grid-footer-border</td>
     <td></td>
     <td>$grid-header-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>try-shade( $base-bg, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid footer</div></div>
@@ -827,8 +827,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$grid-alt-bg</td>
     <td></td>
-    <td>rgba( contrast-wcag( $grid-bg ), .04 )</td>
-    <td>rgba( contrast-wcag( $grid-bg ), .04 )</td>
+    <td>try-shade( $grid-bg, .5 )</td>
+    <td>try-shade( $grid-bg, .5 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in grid</div></div>
@@ -857,8 +857,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$grid-hovered-bg</td>
     <td></td>
-    <td>darken($grid-bg, 7%)</td>
-    <td>darken($grid-bg, 7%)</td>
+    <td>try-shade( $grid-bg, 1 )</td>
+    <td>try-shade( $grid-bg, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered rows in grid</div></div>
@@ -887,8 +887,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$grid-selected-bg</td>
     <td></td>
-    <td>rgba($selected-bg, .25)</td>
-    <td>rgba($selected-bg, .25)</td>
+    <td>rgba( $selected-bg, .25 )</td>
+    <td>rgba( $selected-bg, .25 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected rows in grid</div></div>
@@ -990,7 +990,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$tabstrip-border</td>
     <td></td>
     <td>$component-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>try-shade( $base-bg, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip component</div></div>
@@ -1049,8 +1049,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$tabstrip-item-bg</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+    <td>$base-bg</td>
+    <td>$secondary</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tabs</div></div>
@@ -1059,8 +1059,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$tabstrip-item-text</td>
     <td></td>
-    <td>$link-text</td>
-    <td></td>
+    <td>$base-text</td>
+    <td>$body-text</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tabs</div></div>
@@ -1069,8 +1069,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$tabstrip-item-border</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+    <td>$base-border</td>
+    <td>try-shade( $base-bg, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabs</div></div>
@@ -1079,8 +1079,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$tabstrip-item-gradient</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+    <td>$base-gradient</td>
+    <td>rgba( white, .2 ), rgba( white, 0 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of tabs</div></div>
@@ -1089,8 +1089,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$tabstrip-item-hovered-bg</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+    <td>$hovered-bg</td>
+    <td>try-shade( $base-bg, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered tabs</div></div>
@@ -1099,8 +1099,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$tabstrip-item-hovered-text</td>
     <td></td>
-    <td>$link-hover-text</td>
-    <td></td>
+    <td>$hovered-text</td>
+    <td>$base-text</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered tabs</div></div>
@@ -1109,8 +1109,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$tabstrip-item-hovered-border</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+    <td>$hovered-border</td>
+    <td>try-shade( $hovered-bg, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered tabs</div></div>
@@ -1150,7 +1150,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$tabstrip-item-selected-border</td>
     <td></td>
     <td>$component-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>try-shade( $base-bg, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected tabs</div></div>
@@ -1159,8 +1159,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$tabstrip-item-selected-gradient</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+    <td>false</td>
+    <td>false</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of selected tabs</div></div>
@@ -1220,7 +1220,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$tabstrip-content-border</td>
     <td></td>
     <td>$component-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>try-shade( $base-bg, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip content</div></div>
