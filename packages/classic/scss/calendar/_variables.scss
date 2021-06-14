@@ -19,10 +19,10 @@ $calendar-infinite-content-padding-y: map-get( $spacing, 2 ) !default;
 $calendar-footer-padding-x: map-get( $spacing, 4 ) !default;
 $calendar-footer-padding-y: map-get( $spacing, 2 ) !default;
 
-$calendar-cell-padding-x: .5em !default;
+$calendar-cell-padding-x: map-get( $spacing, 1 ) !default;
 $calendar-cell-padding-y: $calendar-cell-padding-x !default;
 $calendar-cell-line-height: $calendar-line-height !default;
-$calendar-cell-size-px: 34px !default;
+$calendar-cell-size-px: 32px !default;
 $calendar-cell-size: ($calendar-cell-size-px / $font-size) * 1em !default;
 $calendar-cell-border-radius: $border-radius !default;
 

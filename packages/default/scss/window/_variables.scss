@@ -32,6 +32,7 @@ $window-border: $component-border !default;
 $window-titlebar-bg: $header-bg !default;
 $window-titlebar-text: $header-text !default;
 $window-titlebar-border: inherit !default;
+$window-titlebar-gradient: null !default;
 
 $window-shadow: 0 3px 3px 0 rgba(0, 0, 0, .06) !default;
 $window-focused-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;

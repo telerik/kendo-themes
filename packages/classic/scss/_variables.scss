@@ -9,9 +9,9 @@ $enable-transitions: true !default;
 $enable-flex-classes: true !default;
 $enable-grid-classes: true !default;
 
-$use-background-clip: true !default;
+$use-background-clip: false !default;
 $use-calc-badge-size: true !default;
-$use-picker-select-width: true !default;
+$use-picker-select-width: false !default;
 
 
 // Spacing
@@ -83,13 +83,13 @@ $panel-padding-x: $padding-x !default;
 $panel-padding-y: $padding-y !default;
 
 $nav-item-margin: 0px !default;
-$nav-item-padding-x: $padding-x-lg !default;
-$nav-item-padding-y: $padding-y-lg !default;
+$nav-item-padding-x: map-get( $spacing, 2 ) !default;
+$nav-item-padding-y: map-get( $spacing, 1 ) !default;
 
-$header-cell-padding-x: 12px !default;
-$header-cell-padding-y: 8px !default;
-$cell-padding-x: 12px !default;
-$cell-padding-y: 8px !default;
+$header-cell-padding-x: map-get( $spacing, 2 ) !default;
+$header-cell-padding-y: map-get( $spacing, 1 ) !default;
+$cell-padding-x: map-get( $spacing, 2 ) !default;
+$cell-padding-y: map-get( $spacing, 1 ) !default;
 $cell-padding: 8px !default;
 // $cell-padding-sm: $table-sm-cell-padding !default;
 
@@ -261,10 +261,10 @@ $selected-border: try-shade( $selected-bg, 2 ) !default;
 /// The gradient background of selected items.
 $selected-gradient: $base-gradient !default;
 
-$selected-hover-bg: shade( $selected-bg, .5 ) !default;
-$selected-hover-text: $selected-text !default;
-$selected-hover-border: $base-border !default;
-$selected-hover-gradient: $base-gradient !default;
+$selected-hover-bg: try-shade( $selected-bg, 1 ) !default;
+$selected-hover-text: contrast-wcag( $selected-hover-bg ) !default;
+$selected-hover-border: $selected-border !default;
+$selected-hover-gradient: $selected-gradient !default;
 
 $focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
 $primary-focused-shadow: inset 0 0 0 2px rgba($primary, .3) !default;
@@ -299,7 +299,7 @@ $component-text: $body-text !default;
 /// Border color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
 /// @group component
-$component-border: rgba( black, .08 ) !default;
+$component-border: $base-border !default;
 
 
 // Drop Hint

@@ -6,7 +6,7 @@ $window-font-size: $font-size !default;
 $window-line-height: $line-height !default;
 
 $window-titlebar-padding-x: map-get( $spacing, 3 ) !default;
-$window-titlebar-padding-y: map-get( $spacing, 3 ) !default;
+$window-titlebar-padding-y: map-get( $spacing, 2 ) !default;
 $window-titlebar-border-width: 0 0 1px !default;
 $window-titlebar-border-style: solid !default;
 
@@ -31,10 +31,11 @@ $window-border: $component-border !default;
 
 $window-titlebar-bg: $header-bg !default;
 $window-titlebar-text: $header-text !default;
-$window-titlebar-border: inherit !default;
+$window-titlebar-border: $header-border !default;
+$window-titlebar-gradient: $header-gradient !default;
 
-$window-shadow: 0 3px 3px 0 rgba(0, 0, 0, .06) !default;
-$window-focused-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
+$window-shadow: 1px 1px 7px 1px rgba( 0, 0, 0, .12 ) !default;
+$window-focused-shadow: 1px 1px 7px 1px rgba( 0, 0, 0, .25 ) !default;
 
 $window-sizes: () !default;
 $window-sizes: map-merge((

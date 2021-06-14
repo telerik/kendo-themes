@@ -6,11 +6,11 @@ $panelbar-font-size: $font-size !default;
 $panelbar-line-height: $line-height !default;
 $panelbar-border-width: 1px !default;
 
-$panelbar-header-padding-x: map-get( $spacing, 4 ) !default;
-$panelbar-header-padding-y: map-get( $spacing, 3 ) !default;
+$panelbar-header-padding-x: $nav-item-padding-x !default;
+$panelbar-header-padding-y: $nav-item-padding-y !default;
 
-$panelbar-item-padding-x: map-get( $spacing, 4 ) !default;
-$panelbar-item-padding-y: map-get( $spacing, 2 ) !default;
+$panelbar-item-padding-x: $nav-item-padding-x !default;
+$panelbar-item-padding-y: $nav-item-padding-y !default;
 
 $panelbar-item-level-count: 4 !default;
 
@@ -18,14 +18,14 @@ $panelbar-bg: $component-bg !default;
 $panelbar-text: $component-text !default;
 $panelbar-border: $component-border !default;
 
-$panelbar-header-bg: $panelbar-bg !default;
-$panelbar-header-text: $link-text !default;
-$panelbar-header-border: null !default;
-$panelbar-header-gradient: null !default;
+$panelbar-header-bg: $header-bg !default;
+$panelbar-header-text: $header-text !default;
+$panelbar-header-border: $header-border !default;
+$panelbar-header-gradient: $header-gradient !default;
 
-$panelbar-header-hovered-bg: try-shade( $panelbar-header-bg, .5 ) !default;
-$panelbar-header-hovered-text: null !default;
-$panelbar-header-hovered-border: null !default;
+$panelbar-header-hovered-bg: $hovered-bg !default;
+$panelbar-header-hovered-text: $hovered-text !default;
+$panelbar-header-hovered-border: $hovered-border !default;
 $panelbar-header-hovered-gradient: null !default;
 
 $panelbar-header-focused-bg: null !default;
@@ -41,7 +41,7 @@ $panelbar-header-hovered-focused-gradient: null !default;
 
 $panelbar-header-selected-bg: $selected-bg !default;
 $panelbar-header-selected-text: $selected-text !default;
-$panelbar-header-selected-border: null !default;
+$panelbar-header-selected-border: $selected-border !default;
 $panelbar-header-selected-gradient: null !default;
 
 $panelbar-header-selected-hovered-bg: try-shade( $panelbar-header-selected-bg ) !default;
