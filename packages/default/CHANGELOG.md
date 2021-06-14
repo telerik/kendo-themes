@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.39.0"></a>
+# [4.39.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.38.1...@progress/kendo-theme-default@4.39.0) (2021-06-14)
+
+
+### Bug Fixes
+
+* **window:** add missing titlebar gradient variable ([b1a334d](https://github.com/telerik/kendo-themes/commit/b1a334d))
+* add styles for emulating justify content stretch ([d2f5580](https://github.com/telerik/kendo-themes/commit/d2f5580))
+* modify chip shadow to match design ([4bbb886](https://github.com/telerik/kendo-themes/commit/4bbb886))
+* **dateinputs:** vertically align week number with other dates ([944341f](https://github.com/telerik/kendo-themes/commit/944341f))
+* **datetime:** apply opposite border-radius in RTL for Default and Bootstrap themes ([66c3abb](https://github.com/telerik/kendo-themes/commit/66c3abb))
+* **expansionpanel:** import missing dependencies ([a4164ad](https://github.com/telerik/kendo-themes/commit/a4164ad))
+* **form:** fix the layout of the editor in form ([ba3f99a](https://github.com/telerik/kendo-themes/commit/ba3f99a))
+* **grid:** add pager focus styles ([2c1d642](https://github.com/telerik/kendo-themes/commit/2c1d642))
+* **grid:** apply correct selected and hover styles on sticky cells in React Grid ([1a9268f](https://github.com/telerik/kendo-themes/commit/1a9268f))
+* **grid:** do not apply pager focus styles on non-navigable grid ([b0f4b8b](https://github.com/telerik/kendo-themes/commit/b0f4b8b))
+* **grid:** import missing spacer dependency ([93b8d75](https://github.com/telerik/kendo-themes/commit/93b8d75))
+* **panelbar:** apply correct focus styles in Material theme ([6e655aa](https://github.com/telerik/kendo-themes/commit/6e655aa))
+* traling commas break builds ([d1c30c7](https://github.com/telerik/kendo-themes/commit/d1c30c7)), closes [telerik/kendo-themes#2480](https://github.com/telerik/kendo-themes/issues/2480)
+* **panelbar:** the arrow icons are not aligned correctly in IE ([3d9c3e9](https://github.com/telerik/kendo-themes/commit/3d9c3e9))
+* **scheduler:** add selector for adgenda view rows hover via class name ([29f6abf](https://github.com/telerik/kendo-themes/commit/29f6abf))
+* update draghandle focus state ([4dc5fd9](https://github.com/telerik/kendo-themes/commit/4dc5fd9))
+* **scrollview:** add missing px units for height calc ([0fdc4d5](https://github.com/telerik/kendo-themes/commit/0fdc4d5))
+
+
+### Features
+
+* **core:** add styles for stack and grid layout ([171e9ae](https://github.com/telerik/kendo-themes/commit/171e9ae))
+* **core:** extract extra scss file with common styles ([7697789](https://github.com/telerik/kendo-themes/commit/7697789))
+* **grid:** add k-grid-toolbar-bottom styles ([65c18f2](https://github.com/telerik/kendo-themes/commit/65c18f2))
+* extract core module ([4d0cfda](https://github.com/telerik/kendo-themes/commit/4d0cfda))
+
+
+
+
 <a name="4.38.1"></a>
 ## [4.38.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.38.0...@progress/kendo-theme-default@4.38.1) (2021-05-04)
 

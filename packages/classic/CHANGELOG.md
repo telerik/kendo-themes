@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.16.0"></a>
+# [0.16.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.15.1...@progress/kendo-theme-classic@0.16.0) (2021-06-14)
+
+
+### Bug Fixes
+
+* **window:** add missing titlebar gradient variable ([b1a334d](https://github.com/telerik/kendo-themes/commit/b1a334d))
+* modify chip shadow to match design ([4bbb886](https://github.com/telerik/kendo-themes/commit/4bbb886))
+* update draghandle focus state ([4dc5fd9](https://github.com/telerik/kendo-themes/commit/4dc5fd9))
+* update paths to function/index in swatches ([a474b02](https://github.com/telerik/kendo-themes/commit/a474b02))
+* **grid:** import missing spacer dependency ([93b8d75](https://github.com/telerik/kendo-themes/commit/93b8d75))
+* **panelbar:** apply correct focus styles in Material theme ([6e655aa](https://github.com/telerik/kendo-themes/commit/6e655aa))
+* **scrollview:** add missing px units for height calc ([0fdc4d5](https://github.com/telerik/kendo-themes/commit/0fdc4d5))
+
+
+### Features
+
+* **classic-theme:** expose classic green opal and silver swatches ([6de80cc](https://github.com/telerik/kendo-themes/commit/6de80cc))
+* **core:** add styles for stack and grid layout ([171e9ae](https://github.com/telerik/kendo-themes/commit/171e9ae))
+* **core:** extract extra scss file with common styles ([7697789](https://github.com/telerik/kendo-themes/commit/7697789))
+* **grid:** add k-grid-toolbar-bottom styles ([65c18f2](https://github.com/telerik/kendo-themes/commit/65c18f2))
+* extract core module ([4d0cfda](https://github.com/telerik/kendo-themes/commit/4d0cfda))
+
+
+
+
 <a name="0.15.1"></a>
 ## [0.15.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-classic@0.15.0...@progress/kendo-theme-classic@0.15.1) (2021-05-04)
 

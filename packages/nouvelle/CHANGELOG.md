@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# 0.3.0 (2021-06-14)
+
+
+### Features
+
+* **core:** add styles for stack and grid layout ([171e9ae](https://github.com/telerik/kendo-themes/commit/171e9ae))
+* **core:** extract extra scss file with common styles ([7697789](https://github.com/telerik/kendo-themes/commit/7697789))
+* extract core module ([4d0cfda](https://github.com/telerik/kendo-themes/commit/4d0cfda))
+
+
+
+
 <a name="0.2.6"></a>
 ## 0.2.6 (2021-05-04)
 

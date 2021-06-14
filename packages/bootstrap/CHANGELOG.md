@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.36.0"></a>
+# [4.36.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.35.1...@progress/kendo-theme-bootstrap@4.36.0) (2021-06-14)
+
+
+### Bug Fixes
+
+* **window:** add missing titlebar gradient variable ([b1a334d](https://github.com/telerik/kendo-themes/commit/b1a334d))
+* modify chip shadow to match design ([4bbb886](https://github.com/telerik/kendo-themes/commit/4bbb886))
+* update paths to function/index in swatches ([a474b02](https://github.com/telerik/kendo-themes/commit/a474b02))
+* **bootstrap:** revert chart series colors ([157958f](https://github.com/telerik/kendo-themes/commit/157958f))
+* **expansionpanel:** import missing dependencies ([a4164ad](https://github.com/telerik/kendo-themes/commit/a4164ad))
+* **grid:** add pager focus styles ([2c1d642](https://github.com/telerik/kendo-themes/commit/2c1d642))
+* **grid:** apply correct selected and hover styles on sticky cells in React Grid ([1a9268f](https://github.com/telerik/kendo-themes/commit/1a9268f))
+* **grid:** import missing spacer dependency ([93b8d75](https://github.com/telerik/kendo-themes/commit/93b8d75))
+* **panelbar:** apply correct focus styles in Material theme ([6e655aa](https://github.com/telerik/kendo-themes/commit/6e655aa))
+* update draghandle focus state ([4dc5fd9](https://github.com/telerik/kendo-themes/commit/4dc5fd9))
+* **scrollview:** add missing px units for height calc ([0fdc4d5](https://github.com/telerik/kendo-themes/commit/0fdc4d5))
+
+
+### Features
+
+* **core:** add styles for stack and grid layout ([171e9ae](https://github.com/telerik/kendo-themes/commit/171e9ae))
+* **core:** extract extra scss file with common styles ([7697789](https://github.com/telerik/kendo-themes/commit/7697789))
+* **grid:** add k-grid-toolbar-bottom styles ([65c18f2](https://github.com/telerik/kendo-themes/commit/65c18f2))
+* extract core module ([4d0cfda](https://github.com/telerik/kendo-themes/commit/4d0cfda))
+
+
+
+
 <a name="4.35.1"></a>
 ## [4.35.1](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-bootstrap@4.35.0...@progress/kendo-theme-bootstrap@4.35.1) (2021-05-04)
 
