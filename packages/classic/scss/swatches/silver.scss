@@ -2,7 +2,7 @@
 $primary: #1984c8 !default;
 $secondary: #f3f3f4 !default;
 
-$info: #2498bc !default;
+$info: #007bc3 !default;
 $success: #3ea44e !default;
 $warning: #ff9800 !default;
 $error: #d92800 !default;
@@ -13,14 +13,42 @@ $body-bg: #ffffff !default;
 $body-text: #515967 !default;
 
 
-// Charts
+// Component
+$component-bg: #ffffff !default;
+$component-text: #515967 !default;
+$component-border: #dedee0 !default;
+
+$base-bg: #f3f3f4 !default;
+$base-text: #515967 !default;
+$base-border: #dedee0 !default;
+
+$hovered-bg: #dbdee5 !default;
+$hovered-text: #263248 !default;
+$hovered-border: #bebec3 !default;
+
+$selected-bg: #1984c8 !default;
+$selected-text: #ffffff !default;
+
+
+// Button
+$button-bg: #f3f3f4 !default;
+$button-text: #515967 !default;
+$button-border: #c3c3c8 !default;
+
+
+// Link
+$link-text: #1984c8 !default;//125d8c
+$link-hover-text: #156fa8 !default;
+
+
+// Dataviz
 $series-a: #007bc3 !default;
-$series-b: #76b800 !default;
+$series-b: #3ea44e !default;
 $series-c: #ffae00 !default;
 $series-d: #ef4c00 !default;
 $series-e: #a419b7 !default;
 $series-f: #430b62 !default;
 
 
-// Import classic swatch file
-@import "_classic.scss";
+// Import main theme file
+@import "../all.scss";
