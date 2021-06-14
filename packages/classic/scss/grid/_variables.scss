@@ -67,7 +67,7 @@ $grid-footer-border: $grid-header-border !default;
 
 /// Background color of alternating rows in grid
 /// @group grid
-$grid-alt-bg: rgba( contrast-wcag( $grid-bg ), .04 ) !default;
+$grid-alt-bg: try-shade( $grid-bg, .5 ) !default;
 /// Text color of alternating rows in grid
 /// @group grid
 $grid-alt-text: null !default;
@@ -77,7 +77,7 @@ $grid-alt-border: null !default;
 
 /// Background color of hovered rows in grid
 /// @group grid
-$grid-hovered-bg: darken($grid-bg, 7%) !default;
+$grid-hovered-bg: try-shade( $grid-bg, 1 ) !default;
 /// Text color of hovered rows in grid
 /// @group grid
 $grid-hovered-text: null !default;
@@ -87,7 +87,7 @@ $grid-hovered-border: null !default;
 
 /// Background color of selected rows in grid
 /// @group grid
-$grid-selected-bg: rgba($selected-bg, .25) !default;
+$grid-selected-bg: rgba( $selected-bg, .25 ) !default;
 /// Text color of selected rows in grid
 /// @group grid
 $grid-selected-text: null !default;
@@ -95,10 +95,10 @@ $grid-selected-text: null !default;
 /// @group grid
 $grid-selected-border: null !default;
 
-$grid-selected-alt-bg: shade($grid-selected-bg, .4) !default;
-$grid-selected-hovered-bg: shade($grid-selected-bg, .7) !default;
+$grid-selected-alt-bg: try-shade( $grid-selected-bg, .5 ) !default;
+$grid-selected-hovered-bg: try-shade( $grid-selected-bg, 1 ) !default;
 
-$grid-grouping-row-bg: darken($grid-bg, 7%) !default;
+$grid-grouping-row-bg: try-shade( $grid-bg, 1 ) !default;
 $grid-grouping-row-text: $grid-text !default;
 
 $grid-sorted-bg: rgba( contrast-wcag( $grid-bg ), .02 ) !default;
@@ -115,11 +115,11 @@ $grid-command-cell-button-spacing: .16em !default;
 
 $grid-search-width: $input-default-width !default;
 
-$grid-sticky-bg: $component-bg !default;
+$grid-sticky-bg: $grid-bg !default;
 $grid-sticky-text: $grid-text !default;
-$grid-sticky-border: rgba( black, .3 ) !default;
+$grid-sticky-border: $grid-border !default;
 
-$grid-sticky-alt-bg: shade($grid-bg, 3.5%) !default;
+$grid-sticky-alt-bg: $grid-alt-bg !default;
 
 $grid-sticky-header-bg: $grid-header-bg !default;
 $grid-sticky-header-text: $grid-header-text !default;
@@ -128,11 +128,11 @@ $grid-sticky-header-border: $grid-sticky-border !default;
 $grid-sticky-footer-bg: $grid-header-bg !default;
 $grid-sticky-footer-hovered-bg: $grid-hovered-bg !default;
 
-$grid-sticky-selected-bg: mix($selected-bg, #ffffff, 25%) !default;
-$grid-sticky-selected-alt-bg: shade($grid-sticky-selected-bg, .4) !default;
+$grid-sticky-selected-bg: $grid-selected-bg !default;
+$grid-sticky-selected-alt-bg: $grid-selected-alt-bg !default;
 
-$grid-sticky-hovered-bg: darken($grid-bg, 8%) !default;
-$grid-sticky-selected-hovered-bg: shade($grid-sticky-selected-bg, .7) !default;
+$grid-sticky-hovered-bg: $grid-hovered-bg !default;
+$grid-sticky-selected-hovered-bg: $grid-selected-hovered-bg !default;
 
 $grid-filter-menu-width: 230px !default;
 
@@ -161,7 +161,7 @@ $grid-column-menu-group-header-padding-y: $menu-popup-item-padding-y !default;
 
 $grid-column-menu-group-header-font-size: $font-size-sm !default;
 $grid-column-menu-group-header-line-height: $line-height !default;
-$grid-column-menu-group-header-text-transform: uppercase !default;
+$grid-column-menu-group-header-text-transform: null !default;
 $grid-column-menu-group-header-border-bottom-width: 1px !default;
 
 $grid-column-menu-group-header-bg: null !default;

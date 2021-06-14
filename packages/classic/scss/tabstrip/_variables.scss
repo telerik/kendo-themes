@@ -40,26 +40,26 @@ $tabstrip-item-gap: $nav-item-margin !default;
 
 /// Background color of tabs
 /// @group tabstrip
-$tabstrip-item-bg: null !default;
+$tabstrip-item-bg: $base-bg !default;
 /// Text color of tabs
 /// @group tabstrip
-$tabstrip-item-text: $link-text !default;
+$tabstrip-item-text: $base-text !default;
 /// Border color of tabs
 /// @group tabstrip
-$tabstrip-item-border: null !default;
+$tabstrip-item-border: $base-border !default;
 /// Background gradient of tabs
 /// @group tabstrip
-$tabstrip-item-gradient: null !default;
+$tabstrip-item-gradient: $base-gradient !default;
 
 /// Background color of hovered tabs
 /// @group tabstrip
-$tabstrip-item-hovered-bg: null !default;
+$tabstrip-item-hovered-bg: $hovered-bg !default;
 /// Text color of hovered tabs
 /// @group tabstrip
-$tabstrip-item-hovered-text: $link-hover-text !default;
+$tabstrip-item-hovered-text: $hovered-text !default;
 /// Border color of hovered tabs
 /// @group tabstrip
-$tabstrip-item-hovered-border: null !default;
+$tabstrip-item-hovered-border: $hovered-border !default;
 /// Background gradient of hovered tabs
 /// @group tabstrip
 $tabstrip-item-hovered-gradient: null !default;
@@ -75,7 +75,7 @@ $tabstrip-item-selected-text: $component-text !default;
 $tabstrip-item-selected-border: $component-border !default;
 /// Background gradient of selected tabs
 /// @group tabstrip
-$tabstrip-item-selected-gradient: null !default;
+$tabstrip-item-selected-gradient: false !default;
 
 $tabstrip-item-focused-shadow: $list-item-focused-shadow !default;
 

@@ -7,10 +7,10 @@ $treeview-line-height: $line-height !default;
 
 $treeview-indent: 16px !default;
 
-$treeview-item-padding-x: map-get( $spacing, 1 ) !default;
-$treeview-item-padding-y: $treeview-item-padding-x !default;
+$treeview-item-padding-x: $nav-item-padding-x !default;
+$treeview-item-padding-y: $nav-item-padding-y !default;
 $treeview-item-border-width: 0px !default;
-$treeview-item-border-radius: map-get( $spacing, 1 ) !default;
+$treeview-item-border-radius: $border-radius !default;
 
 $treeview-bg: null !default;
 $treeview-text: $component-text !default;
@@ -18,13 +18,13 @@ $treeview-border: null !default;
 
 $treeview-item-hovered-bg: $hovered-bg !default;
 $treeview-item-hovered-text: $hovered-text !default;
-$treeview-item-hovered-border: null !default;
-$treeview-item-hovered-gradient: null !default;
+$treeview-item-hovered-border: $hovered-border !default;
+$treeview-item-hovered-gradient: $hovered-gradient !default;
 
 $treeview-item-selected-bg: $selected-bg !default;
 $treeview-item-selected-text: $selected-text !default;
-$treeview-item-selected-border: null !default;
-$treeview-item-selected-gradient: null !default;
+$treeview-item-selected-border: $selected-border !default;
+$treeview-item-selected-gradient: $selected-gradient !default;
 
 $treeview-item-focused-shadow: $focused-shadow !default;
 $treeview-item-selected-focused-shadow: null !default;

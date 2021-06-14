@@ -24,7 +24,8 @@
         @include fill(
             $window-titlebar-text,
             $window-titlebar-bg,
-            $window-titlebar-border
+            $window-titlebar-border,
+            $window-titlebar-gradient
         );
     }
 
