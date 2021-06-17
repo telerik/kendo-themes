@@ -363,24 +363,6 @@
             }
         }
 
-        .k-actions,
-        .k-action-buttons,
-        .k-columnmenu-actions {
-            .k-button {
-                flex: 1 1 50%;
-            }
-        }
-
-        .k-actions {
-            &.k-actions-start,
-            &.k-actions-center,
-            &.k-actions-end {
-                .k-button {
-                    flex: 0 1 auto;
-                }
-            }
-        }
-
         .k-rtl &,
         &.k-rtl,
         [dir="rtl"] &,
@@ -395,26 +377,7 @@
     }
 
     // Infinite timepicker
-    .k-timeselector {
-
-        .k-actions,
-        .k-action-buttons,
-        .k-columnmenu-actions {
-            .k-button {
-                flex: 1 1 50%;
-            }
-        }
-
-        .k-actions {
-            &.k-actions-start,
-            &.k-actions-center,
-            &.k-actions-end {
-                .k-button {
-                    flex: 0 1 auto;
-                }
-            }
-        }
-    }
+    .k-timeselector {}
 
 
     // Header

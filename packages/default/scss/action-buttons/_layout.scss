@@ -9,16 +9,23 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-        align-content: flex-end;
-        justify-content: flex-end;
         gap: $actions-button-spacing;
         overflow: hidden;
         // TODO: remove
         clear: both;
+    }
 
-        .k-button {
-            flex: 0 0 auto;
-        }
+
+    // Actions in popup
+    .k-popup .k-actions {
+        margin-top: $actions-margin-top;
+    }
+
+
+    // Aliases
+    .k-action-buttons,
+    .k-columnmenu-actions {
+        @extend .k-actions;
     }
 
 
@@ -36,40 +43,18 @@
         }
     }
 
-    .k-popup .k-actions,
-    .k-popup .k-action-buttons {
-        margin-top: $actions-margin-top;
-    }
-
-    .k-actions {
+    // Legacy align
+    .k-actions-start {
         justify-content: flex-start;
-
-        &.k-actions-start {
-            justify-content: flex-start;
-        }
-
-        &.k-actions-center {
-            justify-content: center;
-        }
-
-        &.k-actions-end {
-            justify-content: flex-end;
-        }
-
-        &.k-actions-stretched {
-            .k-button {
-                width: auto !important; // sass-lint:disable-line no-important
-                max-width: 100%;
-                flex: 1 0 0%;
-                flex-grow: 1;
-            }
-        }
     }
-
-
-    .k-action-buttons,
-    .k-columnmenu-actions {
-        @extend .k-actions;
+    .k-actions-center {
+        justify-content: center;
+    }
+    .k-actions-end {
+        justify-content: flex-end;
+    }
+    .k-actions-stretched > * {
+        flex: 1 0 0%;
     }
 
 }
