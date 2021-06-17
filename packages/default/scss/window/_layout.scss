@@ -140,10 +140,8 @@
         border-color: inherit;
         flex: 0 0 auto;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        flex-flow: row wrap;
         align-items: center;
-        flex-wrap: wrap;
         overflow: hidden;
     }
 

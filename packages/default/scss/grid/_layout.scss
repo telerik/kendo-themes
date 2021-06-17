@@ -1465,25 +1465,9 @@
     .k-column-list-wrapper,
     .k-columnmenu-item-content {
 
-        .k-actions,
-        .k-action-buttons,
-        .k-columnmenu-actions {
+        .k-actions {
             margin-top: ($grid-filter-menu-item-spacing-y / 2);
             padding: $grid-filter-menu-item-spacing-y $grid-filter-menu-item-spacing-x;
-
-            .k-button {
-                flex: 1 1 50%;
-            }
-        }
-
-        .k-actions {
-            &.k-actions-start,
-            &.k-actions-center,
-            &.k-actions-end {
-                .k-button {
-                    flex: 0 1 auto;
-                }
-            }
         }
     }
 

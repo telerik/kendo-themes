@@ -678,24 +678,6 @@
                 margin: 8px 0;
             }
         }
-
-        .k-actions,
-        .k-action-buttons,
-        .k-columnmenu-actions {
-            .k-button {
-                flex: 1 1 50%;
-            }
-        }
-
-        .k-actions {
-            &.k-actions-start,
-            &.k-actions-center,
-            &.k-actions-end {
-                .k-button {
-                    flex: 0 1 auto;
-                }
-            }
-        }
     }
 
 }
