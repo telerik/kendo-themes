@@ -11,13 +11,10 @@ const merge = require('lodash.merge');
 const { parse } = require('sass-variable-parser');
 const nodeSass = require("node-sass");
 const dartSass = require("sass");
-const postcss = require("postcss");
-const autoprefixer = require("autoprefixer");
-const calc = require("postcss-calc");
 
+const { getDefaults } = require('@progress/kendo-theme-tasks/src/build/kendo-defaults');
 const { sassBuild, sassCompile } = require('@progress/kendo-theme-tasks/src/build/sass-build');
 const { sassFlatten } = require('@progress/kendo-theme-tasks/src/build/sass-flatten');
-const aioImporterFactory = require('@progress/kendo-theme-tasks/lib/sassImporters/aio-importer');
 const { embedFileBase64 } = require('@progress/kendo-theme-tasks/src/embedFile');
 const { getArg, logger, colors } = require("@progress/kendo-theme-tasks/src/utils");
 const { utilsDocs } = require('@progress/kendo-theme-tasks/src/docs');
@@ -42,27 +39,7 @@ function getNodeModules() {
     return nodeModules;
 }
 
-const defaults = {
-
-    sassOptions: {
-        importer: [
-            aioImporterFactory({
-                cache: sassCache,
-                nodeModules: getNodeModules
-            })
-        ]
-    },
-
-    postcssOptions: {
-        implementation: postcss,
-        plugins: [
-            calc({
-                precision: 10
-            }),
-            autoprefixer()
-        ]
-    }
-};
+const defaults = getDefaults( { cache: sassCache, nodeModules: getNodeModules } );
 
 const nodeSassOptions = {
     implementation: nodeSass
