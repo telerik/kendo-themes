@@ -1,6 +1,7 @@
 {
-    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.8.2/lib/schemas/themebuilder-swatch.json",
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.11.0/lib/schemas/kendo-swatch.json",
     "name": "Flat",
+    "product": "kendo",
     "base": "@progress/kendo-theme-default",
     "hidden": true,
     "previewColors": [
@@ -11,7 +12,7 @@
         "#363940"
     ],
     "components": [],
-    "themeBuilder": [
+    "groups": [
         {
             "name": "",
             "variables": {
@@ -22,8 +23,9 @@
                 },
                 "enable-gradients": {
                     "name": "Enable gradients",
-                    "type": "hidden",
-                    "value": "false"
+                    "type": "boolean",
+                    "value": false,
+                    "hidden": true
                 }
             }
         },
