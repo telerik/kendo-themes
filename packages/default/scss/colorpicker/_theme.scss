@@ -71,7 +71,6 @@
 @include exports( "flatcolorpicker/theme" ) {
 
     .k-flatcolorpicker {
-        @extend .k-text-selection !optional;
         @include fill(
             $component-text,
             $component-bg,

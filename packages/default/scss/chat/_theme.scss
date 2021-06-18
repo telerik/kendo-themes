@@ -2,7 +2,6 @@
 
     // Chat
     .k-chat {
-        @extend .k-text-selection !optional;
         @include fill(
             $chat-text,
             $chat-bg,

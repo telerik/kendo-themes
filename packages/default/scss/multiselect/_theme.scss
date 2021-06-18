@@ -1,7 +1,6 @@
 @include exports("multiselect/theme") {
 
     .k-multiselect {
-        @extend .k-text-selection !optional;
 
         &.k-state-focused {
             > .k-multiselect-wrap {

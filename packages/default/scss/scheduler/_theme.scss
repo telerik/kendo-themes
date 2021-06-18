@@ -2,7 +2,6 @@
 
     // Appearance
     .k-scheduler {
-        @extend .k-text-selection !optional;
         @include fill(
             $scheduler-text,
             $scheduler-bg,

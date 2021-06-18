@@ -2,7 +2,6 @@
 
     // TaskBoard
     .k-taskboard {
-        @extend .k-text-selection !optional;
         @include fill(
             $taskboard-text,
             $taskboard-bg,

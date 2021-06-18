@@ -1,7 +1,6 @@
 @include exports("drawer/theme") {
 
     .k-drawer {
-        @extend .k-text-selection !optional;
         @include fill(
             $drawer-text,
             $drawer-bg,

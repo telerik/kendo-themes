@@ -1,7 +1,6 @@
 @include exports("rating/theme") {
 
     .k-rating {
-        @extend .k-text-selection !optional;
         color: $component-text;
 
         &:focus,

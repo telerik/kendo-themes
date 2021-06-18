@@ -1,7 +1,6 @@
 @include exports("combobox/theme") {
 
     .k-combobox {
-        @extend .k-text-selection !optional;
 
         // Normal state
         .k-dropdown-wrap {
