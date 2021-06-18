@@ -11,8 +11,9 @@
         .k-calendar-header {
             display: block;
 
-            .k-today {
-                float: right;
+            .k-today,
+            .k-nav-today {
+                display: inline-block;
             }
         }
     }
