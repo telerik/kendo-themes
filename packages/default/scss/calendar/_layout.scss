@@ -125,7 +125,9 @@
             .k-calendar-title {
                 font-weight: bold;
             }
-            .k-today {
+            .k-today,
+            .k-nav-today {
+                text-decoration: none;
                 cursor: pointer;
                 outline: none;
             }
@@ -148,16 +150,9 @@
         // Footer
         .k-footer,
         .k-calendar-footer {
+            padding: $calendar-footer-padding-y $calendar-footer-padding-x;
             text-align: center;
             clear: both;
-        }
-        .k-nav-today,
-        .k-footer > .k-state-disabled {
-            padding: $calendar-footer-padding-y $calendar-footer-padding-x;
-            display: block;
-        }
-        .k-nav-today:hover {
-            text-decoration: underline;
         }
 
 

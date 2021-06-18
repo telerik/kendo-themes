@@ -214,7 +214,8 @@
                 white-space: nowrap;
             }
 
-            .k-grid-header-wrap {
+            .k-grid-header-wrap,
+            .k-grid-footer-wrap {
                 border-width: 0 0 0 $grid-cell-vertical-border-width;
             }
 
@@ -290,12 +291,6 @@
 
             .k-hierarchy-cell + td {
                 border-right-width: 0;
-            }
-
-            .k-grid-header,
-            .k-grid-footer {
-                padding-left: $default-scrollbar-width;
-                padding-right: 0;
             }
 
             .k-grid-header {
@@ -616,6 +611,8 @@
     }
 
     .k-grid-header {
+        padding-inline-start: 0;
+        padding-inline-end: var(--kendo-scrollbar-width, $default-scrollbar-width);
         border-bottom-width: 1px;
         font-size: $grid-header-font-size;
 
@@ -733,6 +730,8 @@
     }
 
     .k-grid-footer {
+        padding-inline-start: 0;
+        padding-inline-end: var(--kendo-scrollbar-width, $default-scrollbar-width);
         border-width: 1px 0 0;
 
         td {
@@ -1548,6 +1547,28 @@
                     padding-right: $grid-header-padding-x;
                     padding-left: 0;
                 }
+            }
+        }
+    }
+}
+
+@include exports("grid/layout/IE") {
+    // TODO: Remove once we drop IE support
+
+    $default-scrollbar-width: 17px;
+    .k-ie {
+        .k-grid-header,
+        .k-grid-footer {
+            padding-right: $default-scrollbar-width;
+            padding-left: 0;
+        }
+
+        [dir = "rtl"],
+        .k-rtl {
+            .k-grid-header,
+            .k-grid-footer {
+                padding-right: 0;
+                padding-left: $default-scrollbar-width;
             }
         }
     }
