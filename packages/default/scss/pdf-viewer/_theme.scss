@@ -2,7 +2,6 @@
 
 
     .k-pdf-viewer {
-        @extend .k-text-selection !optional;
         @include fill(
             $pdf-viewer-text,
             $pdf-viewer-bg,

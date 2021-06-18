@@ -3,7 +3,6 @@
     // refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
     kendo-scrollview.k-scrollview-wrap,
     .k-scrollview {
-        @extend .k-text-selection !optional;
         @include fill(
             $scrollview-text,
             $scrollview-bg,

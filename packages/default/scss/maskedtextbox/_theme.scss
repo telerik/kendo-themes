@@ -1,7 +1,6 @@
 @include exports("maskedtextbox/theme") {
 
     .k-maskedtextbox {
-        @extend .k-text-selection !optional;
 
         .k-i-warning {
             color: $error;

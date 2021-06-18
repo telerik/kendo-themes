@@ -1,7 +1,6 @@
 @include exports("splitter/theme") {
 
     .k-splitter {
-        @extend .k-text-selection !optional;
         @include fill(
             $splitter-text,
             $splitter-bg,

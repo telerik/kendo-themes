@@ -2,7 +2,6 @@
 
     // Card
     .k-card {
-        @extend .k-text-selection !optional;
         @include fill(
             $card-text,
             $card-bg,

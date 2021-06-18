@@ -2,7 +2,6 @@
 
     // Theme
     .k-notification {
-        @extend .k-text-selection !optional;
         @include fill(
             $notification-text,
             $notification-bg,
