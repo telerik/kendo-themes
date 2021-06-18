@@ -1,0 +1,9 @@
+module.exports.main = require('./main.json');
+module.exports.mainDark = require('./main-dark.json');
+module.exports.blue = require('./blue.json');
+module.exports.green = require('./green.json');
+module.exports.orange = require('./orange.json');
+module.exports.purple = require('./purple.json');
+module.exports.turquoise = require('./turquoise.json');
+module.exports.nordic = require('./nordic.json');
+module.exports.urban = require('./urban.json');
