@@ -27,7 +27,7 @@ const paths = {
         assets: "packages/*/scss/**/*.{png,gif,ttf,woff}",
         themes: "packages/*",
         theme: "scss/all.scss",
-        swatches: "scss/swatches/!(_)*.scss",
+        swatches: "lib/swatches/*.json",
         inline: "dist/all.scss",
         dist: "dist"
     }
@@ -69,18 +69,19 @@ function buildSwatches( cwds, options ) {
 
     let opts = merge( {}, defaults, options );
 
-    flattenAll( cwds, { file: paths.sass.theme, output: opts.output } );
-
     cwds.forEach( cwd => {
-        let files = glob.sync( path.resolve( cwd, paths.sass.swatches ) );
+        let files = glob.sync( path.resolve( cwd, opts.swatches ) );
 
         files.forEach( file => {
             sassCache.clear();
             nodeModules = path.resolve( cwd, 'node_modules' );
 
             let output = merge( {}, opts.output, { path: path.resolve( cwd, opts.output.path ) } );
+            let sassFile = path.resolve( output.path, `${path.basename( file, '.json')}.scss`);
 
-            sassBuild({ ...opts, file, output });
+            if ( fs.existsSync( sassFile ) ) {
+                sassBuild({ ...opts, file: sassFile, output });
+            }
         });
     });
 }
@@ -111,6 +112,42 @@ function flattenAll( cwds, options ) {
         sassFlatten( file, outFile, { nodeModules } );
     });
 }
+
+function writeSwatches( cwds, options ) {
+
+    cwds.forEach( cwd => {
+        let files = glob.sync( path.resolve( cwd, options.swatches ) );
+
+        files.forEach( file => {
+            let json = JSON.parse( fs.readFileSync( file, 'utf-8' ) );
+
+            if ( json.hidden === true ) {
+                return;
+            }
+
+            let sassFile = path.resolve( cwd, options.output.path, `${path.basename( file, '.json')}.scss` );
+            let sassContent = swatchJsonTransformer( json );
+            fs.writeFileSync( sassFile, sassContent );
+        });
+    });
+}
+
+function swatchJsonTransformer(json) {
+    const sassContent = [];
+    let { groups } = json;
+
+    groups.forEach( (group) => {
+        for ( const [ name, meta ] of Object.entries(group.variables) ) {
+            sassContent.push(`$${name}: ${meta.value};`);
+        }
+    });
+
+    sassContent.push('');
+
+    sassContent.push(`@import "all.scss";`);
+
+    return sassContent.join( '\n' );
+}
 // #endregion
 
 
@@ -136,6 +173,30 @@ gulp.task("assets", function() {
 // #endregion
 
 
+// #region dist
+gulp.task("dist:flat", () => {
+    let file = paths.sass.theme;
+    let output = { path: getArg('--output-path') || paths.sass.dist };
+    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
+
+    flattenAll( themes, { file, output } );
+
+    return Promise.resolve();
+});
+gulp.task("dist:swatches", () => {
+    let file = paths.sass.theme;
+    let output = { path: getArg('--output-path') || paths.sass.dist };
+    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
+    let swatches = paths.sass.swatches;
+
+    flattenAll( themes, { file, output } );
+    writeSwatches( themes, { swatches, output } );
+
+    return Promise.resolve();
+});
+// #endregion
+
+
 // #region node-sass
 gulp.task("sass", () => {
     let file = getArg('--file') || paths.sass.theme;
@@ -152,10 +213,14 @@ gulp.task("sass:watch", () => {
 });
 
 gulp.task("sass:swatches", () => {
+    let file = paths.sass.theme;
     let output = { path: getArg('--output-path') || paths.sass.dist };
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
+    let swatches = paths.sass.swatches;
 
-    buildSwatches( themes, { output, sassOptions: nodeSassOptions } );
+    flattenAll( themes, { file, output } );
+    writeSwatches( themes, { swatches, output } );
+    buildSwatches( themes, { swatches, output, sassOptions: nodeSassOptions } );
 
     return Promise.resolve();
 });
@@ -197,10 +262,14 @@ gulp.task("dart:watch", () => {
 });
 
 gulp.task("dart:swatches", () => {
+    let file = paths.sass.theme;
     let output = { path: getArg('--output-path') || paths.sass.dist };
     let themes = glob.sync( getArg('--theme') || paths.sass.themes );
+    let swatches = paths.sass.swatches;
 
-    buildSwatches( themes, { output, sassOptions: dartSassOptions } );
+    flattenAll( themes, { file, output } );
+    writeSwatches( themes, { swatches, output } );
+    buildSwatches( themes, { swatches, output, sassOptions: dartSassOptions } );
 
     return Promise.resolve();
 });
