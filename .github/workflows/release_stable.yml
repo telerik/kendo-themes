@@ -61,6 +61,7 @@ jobs:
       - name: Build themes for dist
         run: |
           npm run sass:flat
+          npm run dist:swatches
 
       - name: Lerna publish
         run: |
