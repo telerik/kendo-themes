@@ -24,8 +24,7 @@ $theme-colors: () !default;
     $yellow:   #ffc107 !default;
     $red:      #dc3545 !default;
 
-    $accent: $blue !default;
-    $primary: $accent !default;
+    $primary: $blue !default;
     $secondary: #e4e7eb !default;
     $info: $cyan !default;
     $success: $green !default;
@@ -90,7 +89,7 @@ $theme-colors: () !default;
     $nav-tabs-link-active-border-color: $component-border-color !default;
 
     $pagination-bg: $component-bg !default;
-    $pagination-color: $accent !default;
+    $pagination-color: $primary !default;
     $pagination-border-color: $component-border-color !default;
     $pagination-hover-bg: darken( $pagination-bg, 8% ) !default;
     $pagination-hover-border-color: $pagination-border-color !default;

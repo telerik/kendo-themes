@@ -127,7 +127,7 @@ $accent-contrast: contrast-wcag( $accent ) !default;
 /// Used for primary buttons and for elements of primary importance across the theme.
 /// @group color-system
 /// @type Color
-$primary: $accent !default;
+$primary: $primary !default;
 $primary-lighter: tint( $primary, 2 ) !default;
 $primary-darker: shade( $primary, 2 ) !default;
 
@@ -135,7 +135,7 @@ $primary-darker: shade( $primary, 2 ) !default;
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$primary-contrast: $accent-contrast !default;
+$primary-contrast: contrast-wcag( $primary ) !default;
 
 /// The secondary color of the theme.
 /// @group color-system
