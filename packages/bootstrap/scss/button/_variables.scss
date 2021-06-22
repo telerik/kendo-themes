@@ -26,7 +26,7 @@ $button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-
 
 /// The background of the buttons.
 /// @group buttons
-$button-bg: $secondary !default;
+$button-bg: #e4e7eb !default;
 /// The text color of the buttons.
 /// @group buttons
 $button-text: contrast-wcag( $button-bg, $gray-900 ) !default;
