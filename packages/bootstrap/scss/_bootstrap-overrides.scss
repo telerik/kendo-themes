@@ -59,13 +59,6 @@ $theme-colors: () !default;
     $breadcrumb-padding-y: 0px !default;
     $breadcrumb-bg: $component-bg !default;
 
-    $card-bg: $component-bg !default;
-    $card-color: $component-color !default;
-    $card-border-color: rgba( contrast-yiq( $card-bg, $black, $white ), .125 ) !default;
-    $card-cap-bg: rgba( contrast-yiq( $card-bg, $black, $white ), .03 ) !default;
-    $card-cap-color: $card-color !default;
-    $card-cap-border-color: rgba( contrast-yiq( $card-bg, $black, $white ), .125 ) !default;
-
     $input-bg: $component-bg !default;
     $input-color: contrast-yiq( $input-bg, $gray-700, $gray-300 ) !default;
     $input-border-color:  contrast-yiq( $input-bg, $gray-400, $gray-600 ) !default;
