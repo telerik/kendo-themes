@@ -68,8 +68,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-bg</td>
     <td></td>
-    <td>$secondary</td>
-    <td>$secondary</td>
+    <td><span class="color-preview" style="background-color: #e4e7eb"></span>#e4e7eb</td>
+    <td><span class="color-preview" style="background-color: #e4e7eb"></span>#e4e7eb</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the buttons.</div></div>
@@ -89,7 +89,7 @@ The following table lists the available variables for customization.
     <td>$button-border</td>
     <td></td>
     <td>$button-bg</td>
-    <td>$secondary</td>
+    <td><span class="color-preview" style="background-color: #e4e7eb"></span>#e4e7eb</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the buttons.</div></div>

@@ -42,8 +42,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$base-bg</td>
     <td></td>
-    <td>try-darken( $component-bg, 3% )</td>
-    <td>try-darken( $component-bg, 3% )</td>
+    <td>$gray-100</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the components' chrome area.</div></div>
@@ -52,7 +52,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$base-text</td>
     <td></td>
-    <td>$component-color</td>
+    <td>$body-text</td>
     <td></td>
 </tr>
 <tr>
@@ -62,8 +62,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$base-border</td>
     <td></td>
-    <td>try-darken( $base-bg, 3% )</td>
-    <td>try-darken( $base-bg, 3% )</td>
+    <td>try-shade( $base-bg, 1 )</td>
+    <td>try-shade( $base-bg, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the components' chrome area.</div></div>
@@ -82,8 +82,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$hovered-bg</td>
     <td></td>
-    <td>try-darken( $base-bg, 3% )</td>
-    <td>try-darken( $base-bg, 3% )</td>
+    <td>$gray-200</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered items.</div></div>
@@ -102,8 +102,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$hovered-border</td>
     <td></td>
-    <td>try-darken( $base-border, 12% )</td>
-    <td>try-darken( $base-border, 12% )</td>
+    <td>try-shade( $hovered-bg, 1 )</td>
+    <td>try-shade( $hovered-bg, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered items.</div></div>
@@ -123,7 +123,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$selected-bg</td>
     <td></td>
     <td>$primary</td>
-    <td>$accent</td>
+    <td>$primary</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of selected items.</div></div>
@@ -142,8 +142,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$selected-border</td>
     <td></td>
-    <td>try-darken( $selected-bg, 12% )</td>
-    <td>try-darken( $selected-bg, 12% )</td>
+    <td>try-shade( $selected-bg, 1 )</td>
+    <td>try-shade( $selected-bg, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected items.</div></div>
@@ -223,8 +223,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$button-bg</td>
     <td></td>
-    <td>$secondary</td>
-    <td>$secondary</td>
+    <td><span class="color-preview" style="background-color: #e4e7eb"></span>#e4e7eb</td>
+    <td><span class="color-preview" style="background-color: #e4e7eb"></span>#e4e7eb</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the buttons.</div></div>
@@ -244,7 +244,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$button-border</td>
     <td></td>
     <td>$button-bg</td>
-    <td>$secondary</td>
+    <td><span class="color-preview" style="background-color: #e4e7eb"></span>#e4e7eb</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the buttons.</div></div>
@@ -526,7 +526,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$accent</td>
     <td>Color</td>
     <td>$primary</td>
-    <td>$accent</td>
+    <td>$primary</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$primary` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.</div></div>
@@ -545,8 +545,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$primary</td>
     <td>Color</td>
-    <td>$accent</td>
-    <td>$accent</td>
+    <td>$primary</td>
+    <td>$primary</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.<br />Used for primary buttons and for elements of primary importance across the theme.</div></div>
@@ -555,8 +555,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$primary-contrast</td>
     <td>Color</td>
-    <td>$accent-contrast</td>
-    <td>contrast-wcag( $accent )</td>
+    <td>contrast-wcag( $primary )</td>
+    <td>contrast-wcag( $primary )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
