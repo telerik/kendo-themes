@@ -189,7 +189,7 @@ The following table lists the available variables for customization.
     <td>$button-selected-bg</td>
     <td></td>
     <td>$primary</td>
-    <td>$accent</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected buttons.</div></div>
@@ -209,7 +209,7 @@ The following table lists the available variables for customization.
     <td>$button-selected-border</td>
     <td></td>
     <td>$button-selected-bg</td>
-    <td>$accent</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected buttons.</div></div>

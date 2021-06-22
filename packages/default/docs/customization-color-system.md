@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$primary</td>
     <td>Color</td>
-    <td>$accent</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
     <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
 </tr>
 <tr>
@@ -58,8 +58,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$primary-contrast</td>
     <td>Color</td>
-    <td>$accent-contrast</td>
-    <td>contrast-wcag( $accent )</td>
+    <td>contrast-wcag( $primary )</td>
+    <td>contrast-wcag( $primary )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the accent color denoted by $primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
