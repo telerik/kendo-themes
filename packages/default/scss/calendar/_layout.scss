@@ -17,10 +17,8 @@
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
 
-        .k-popup & {
-            height: 100%;
-        }
 
+        // Nested calendar
         > .k-calendar {
             border: 0;
         }
@@ -77,27 +75,27 @@
             text-transform: none;
             text-align: left;
         }
+    }
 
 
-        // Header
-        .k-header {
-            padding: $calendar-header-padding-y $calendar-header-padding-x;
-            border-bottom-width: $calendar-header-border-width;
-            border-bottom-style: solid;
-            text-align: center;
+    // Calendar header
+    .k-calendar .k-header {
+        padding: $calendar-header-padding-y $calendar-header-padding-x;
+        border-bottom-width: $calendar-header-border-width;
+        border-bottom-style: solid;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        z-index: 2;
+
+        .k-link {
+            @include border-radius( $border-radius );
+            padding: $calendar-header-padding-y;
             display: flex;
             flex-direction: row;
-            position: relative;
-            z-index: 2;
-
-            .k-link {
-                @include border-radius( $border-radius );
-                padding: $calendar-header-padding-y;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-            }
+            align-items: center;
+            justify-content: center;
         }
 
         .k-nav-prev,
@@ -111,273 +109,279 @@
             margin: 0 $calendar-header-padding-x;
             flex: 1 1 auto;
         }
+    }
 
 
-        // Calendar header
-        @at-root .k-calendar-header {
-            padding: $calendar-header-padding-y $calendar-header-padding-x;
+    // Calendar header
+    .k-calendar-header {
+        padding: $calendar-header-padding-y $calendar-header-padding-x;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 0 0 auto;
+
+        .k-title,
+        .k-calendar-title {
+            font-weight: bold;
+        }
+        .k-today,
+        .k-nav-today {
+            text-decoration: none;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .k-calendar-nav {
             display: flex;
+            flex-flow: row nowrap;
             align-items: center;
-            justify-content: space-between;
-            flex: 0 0 auto;
-
-            .k-title,
-            .k-calendar-title {
-                font-weight: bold;
-            }
-            .k-today,
-            .k-nav-today {
-                text-decoration: none;
-                cursor: pointer;
-                outline: none;
-            }
-
-            .k-calendar-nav {
-                display: flex;
-                flex-flow: row nowrap;
-                align-items: center;
-                gap: $calendar-nav-gap;
-            }
-
-            .k-button { @extend .k-button-flat; }
+            gap: $calendar-nav-gap;
         }
 
-        > .k-calendar-header {
-            min-width: $calendar-header-min-width;
+        .k-button { @extend .k-button-flat; }
+    }
+    .k-calendar > .k-calendar-header {
+        min-width: $calendar-header-min-width;
+        box-sizing: border-box;
+    }
+
+
+    // Calendar footer
+    .k-calendar-footer,
+    .k-calendar .k-footer {
+        padding: $calendar-footer-padding-y $calendar-footer-padding-x;
+        text-align: center;
+        clear: both;
+    }
+
+
+    // View wrapper
+    .k-calendar-view {
+        // setting width / height prevents layout changes in meta views
+        width: (7 * $calendar-cell-size);
+        height: (7 * $calendar-cell-size);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        margin: auto;
+        padding: 0 $calendar-header-padding-x;
+        gap: $calendar-view-gap;
+    }
+    .k-calendar.k-week-number .k-calendar-view {
+        width: (8 * $calendar-cell-size);
+    }
+
+
+    // Calendar content
+    .k-calendar-content,
+    .k-calendar .k-content {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        flex: 1 1 auto;
+        position: relative;
+
+        > table,
+        > .k-calendar-table {
+            table-layout: fixed;
+            margin-right: -17px; // scrollbar-size
+        }
+
+        td,
+        .k-calendar-td {
+            @include border-radius( $calendar-cell-border-radius );
+            border-color: transparent;
+        }
+        .k-link {
+            @include border-radius( $calendar-cell-border-radius );
+            padding: $calendar-cell-padding-y $calendar-cell-padding-x;
             box-sizing: border-box;
-        }
-
-        // Footer
-        .k-footer,
-        .k-calendar-footer {
-            padding: $calendar-footer-padding-y $calendar-footer-padding-x;
-            text-align: center;
-            clear: both;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
         }
 
 
-        // View wrapper
-        .k-calendar-view {
-            // setting width / height prevents layout changes in meta views
-            width: (7 * $calendar-cell-size);
-            height: (7 * $calendar-cell-size);
-            position: relative;
-            z-index: 1;
-            overflow: hidden;
-            margin: auto;
-            padding: 0 $calendar-header-padding-x;
-            gap: $calendar-view-gap;
+        // Special days
+        .k-weekend {
+            @include border-radius( 0 );
+            opacity: $calendar-weekend-opacity;
         }
-        &.k-week-number .k-calendar-view {
-            width: (8 * $calendar-cell-size);
+        .k-alt {
+            // remove default k-alt background color
+            background-color: transparent;
+            opacity: $calendar-week-number-opacity;
         }
-        &-infinite .k-calendar-view {
-            width: $calendar-view-width;
-            height: $calendar-view-height;
-            gap: 0;
+        .k-other-month .k-link {
+            opacity: $calendar-other-month-opacity;
         }
-
-
-        // Content
-        .k-content,
-        .k-calendar-content {
-            width: 100%;
-            margin: 0;
-            text-align: center;
-            flex: 1 1 auto;
-            position: relative;
-
-            > table,
-            > .k-calendar-table {
-                table-layout: fixed;
-                margin-right: -17px; // scrollbar-size
-            }
-
-            td,
-            .k-calendar-td {
-                @include border-radius( $calendar-cell-border-radius );
-                border-color: transparent;
-            }
-            .k-link {
-                @include border-radius( $calendar-cell-border-radius );
-                padding: $calendar-cell-padding-y $calendar-cell-padding-x;
-                box-sizing: border-box;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-            }
-
-
-            // Special days
-            .k-weekend {
-                @include border-radius( 0 );
-                opacity: $calendar-weekend-opacity;
-            }
-            .k-alt {
-                // remove default k-alt background color
-                background-color: transparent;
-                opacity: $calendar-week-number-opacity;
-            }
-            .k-other-month .k-link {
-                opacity: $calendar-other-month-opacity;
-            }
-            .k-state-disabled {
-                opacity: $disabled-opacity;
-            }
+        .k-state-disabled {
+            opacity: $disabled-opacity;
         }
-        table.k-content,
-        table.k-calendar-content,
-        .k-calendar-table.k-content,
-        .k-calendar-table.k-calendar-content {
-            display: inline-table;
-            vertical-align: top;
+    }
+    .k-calendar table.k-content,
+    table.k-calendar-content,
+    .k-calendar-table.k-content,
+    .k-calendar-table.k-calendar-content {
+        display: inline-table;
+        vertical-align: top;
+    }
+
+
+    // Month view
+    .k-calendar .k-month,
+    .k-calendar-monthview {
+
+        td,
+        .k-calendar-td {
+            width: $calendar-cell-size;
+            height: $calendar-cell-size;
         }
-
-
-        // Month view
-        .k-month,
-        .k-calendar-monthview {
-
-            td,
-            .k-calendar-td {
-                width: $calendar-cell-size;
-                height: $calendar-cell-size;
-            }
-            .k-link {
-                width: $calendar-cell-size;
-                height: $calendar-cell-size;
-            }
+        .k-link {
+            width: $calendar-cell-size;
+            height: $calendar-cell-size;
         }
+    }
 
 
-        // Year view
-        .k-year,
-        .k-calendar-yearview {
-            $cell-size: ( (7 / 4) * $calendar-cell-size);
+    // Year view
+    .k-calendar .k-year,
+    .k-calendar-yearview {
+        $cell-size: ( (7 / 4) * $calendar-cell-size);
 
-            td,
-            .k-calendar-td {
-                width: auto;
-                height: auto;
-            }
-            .k-link {
-                width: $cell-size;
-                height: $cell-size;
-            }
-        }
-
-
-        // Decade view
-        .k-decade,
-        .k-calendar-decadeview {
-            $cell-size: ( (7 / 4) * $calendar-cell-size);
-
-            td,
-            .k-calendar-td {
-                width: auto;
-                height: auto;
-            }
-            .k-link {
-                width: $cell-size;
-                height: $cell-size;
-            }
-        }
-
-
-        // Century view
-        .k-century,
-        .k-calendar-centuryview {
-            $cell-size: ( (7 / 4) * $calendar-cell-size);
-
-            td,
-            .k-calendar-td {
-                width: auto;
-                height: auto;
-            }
-            .k-link {
-                width: $cell-size;
-                height: $cell-size;
-                text-align: left;
-            }
-        }
-
-
-
-
-        // Angular
-        &-infinite {
-            box-sizing: content-box;
+        td,
+        .k-calendar-td {
             width: auto;
-            display: inline-flex;
-            vertical-align: bottom;
-
-            .k-calendar-view,
-            .k-calendar-monthview { // <- BACKCOMPAT: ensures backwards compatibility for previous versions of kendo-angular-dateinputs
-                padding: 0 $calendar-infinite-content-padding-x;
-                display: flex;
-                flex: 0 0 auto;
-                flex-direction: column;
-                overflow: hidden;
-                box-sizing: content-box;
-
-                &::after {
-                    display: block;
-                    position: absolute;
-                    bottom: 0;
-                    content: " ";
-                    height: 0;
-                    line-height: 0;
-                    z-index: 1;
-                    width: 150%;
-                    left: -25%;
-                    box-shadow: 0 0 $calendar-cell-size ($calendar-cell-size / 2) $calendar-bg;
-                }
-            }
-
-            .k-calendar-header {
-                margin-left: -$calendar-infinite-content-padding-x;
-                margin-right: -$calendar-infinite-content-padding-x;
-                padding: $calendar-infinite-header-padding-y $calendar-infinite-header-padding-x;
-            }
-
-            .k-calendar-weekdays {
-                width: 100%;
-                flex: 0 0 auto;
-            }
-
-            .k-calendar-yearview,
-            .k-calendar-decadeview,
-            .k-calendar-centuryview {
-                .k-content,
-                .k-calendar-content {
-                    $cell-size: $calendar-view-width / 5;
-
-                    td,
-                    .k-calendar-td {
-                        width: auto;
-                        height: auto;
-                    }
-
-                    .k-link,
-                    td.k-empty,
-                    .k-calendar-td.k-empty {
-                        width: $cell-size;
-                        height: $cell-size;
-                    }
-                }
-            }
+            height: auto;
         }
+        .k-link {
+            width: $cell-size;
+            height: $cell-size;
+        }
+    }
 
-        &-classic {
-            display: inline-flex;
+
+    // Decade view
+    .k-calendar .k-decade,
+    .k-calendar-decadeview {
+        $cell-size: ( (7 / 4) * $calendar-cell-size);
+
+        td,
+        .k-calendar-td {
+            width: auto;
+            height: auto;
+        }
+        .k-link {
+            width: $cell-size;
+            height: $cell-size;
+        }
+    }
+
+
+    // Century view
+    .k-calendar .k-century,
+    .k-calendar-centuryview {
+        $cell-size: ( (7 / 4) * $calendar-cell-size);
+
+        td,
+        .k-calendar-td {
+            width: auto;
+            height: auto;
+        }
+        .k-link {
+            width: $cell-size;
+            height: $cell-size;
+            text-align: left;
         }
     }
 
 
 
 
+    // Infinite calendar
+    .k-calendar-infinite {
+        box-sizing: content-box;
+        width: auto;
+        display: inline-flex;
+        vertical-align: bottom;
+
+        .k-calendar-view {
+            width: $calendar-view-width;
+            height: $calendar-view-height;
+            gap: 0;
+        }
+
+        .k-calendar-view,
+        .k-calendar-monthview { // <- BACKCOMPAT: ensures backwards compatibility for previous versions of kendo-angular-dateinputs
+            padding: 0 $calendar-infinite-content-padding-x;
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            overflow: hidden;
+            box-sizing: content-box;
+
+            &::after {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                content: " ";
+                height: 0;
+                line-height: 0;
+                z-index: 1;
+                width: 150%;
+                left: -25%;
+                box-shadow: 0 0 $calendar-cell-size ($calendar-cell-size / 2) $calendar-bg;
+            }
+        }
+
+        .k-calendar-header {
+            margin-left: -$calendar-infinite-content-padding-x;
+            margin-right: -$calendar-infinite-content-padding-x;
+            padding: $calendar-infinite-header-padding-y $calendar-infinite-header-padding-x;
+        }
+
+        .k-calendar-weekdays {
+            width: 100%;
+            flex: 0 0 auto;
+        }
+
+        .k-calendar-yearview,
+        .k-calendar-decadeview,
+        .k-calendar-centuryview {
+            .k-content,
+            .k-calendar-content {
+                $cell-size: $calendar-view-width / 5;
+
+                td,
+                .k-calendar-td {
+                    width: auto;
+                    height: auto;
+                }
+
+                .k-link,
+                td.k-empty,
+                .k-calendar-td.k-empty {
+                    width: $cell-size;
+                    height: $cell-size;
+                }
+            }
+        }
+    }
+
+
+    // Classic calendar
+    .k-calendar-classic {
+        display: inline-flex;
+    }
+
+
+
+
     // Calendar in popup
+    .k-popup .k-calendar {
+        height: 100%;
+    }
     .k-calendar-container,
     .k-datetime-container {
         padding: 0;
@@ -620,7 +624,7 @@
 
 @include exports("daterangepicker/layout") {
 
-    //jQuery DateRangePicker
+    // jQuery DateRangePicker
     .k-widget.k-daterangepicker {
         border: 0;
     }
