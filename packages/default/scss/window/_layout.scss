@@ -1,7 +1,6 @@
 @include exports("window/layout") {
 
     .k-window {
-        @include use-background-clip();
         @include border-radius( $window-border-radius );
         padding: 0;
         border-width: $window-border-width;
@@ -39,7 +38,6 @@
 
     // Title bar
     .k-window-titlebar {
-        @include use-background-clip();
         @include border-top-radius( $window-border-radius );
         padding: $window-titlebar-padding-y $window-titlebar-padding-x;
         border-width: $window-titlebar-border-width;
