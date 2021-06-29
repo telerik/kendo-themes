@@ -109,12 +109,3 @@ $calendar-cell-selected-hover-gradient: null !default;
 
 $calendar-cell-focused-shadow: $list-item-focused-shadow !default;
 $calendar-cell-selected-focus-shadow: $calendar-cell-focused-shadow !default;
-
-
-// Multiview Calendar
-$multiviewcalendar-button-style: stretched !default;
-$multiviewcalendar-button-size: 44px !default;
-$multiviewcalendar-gap: ($calendar-infinite-content-padding-x * 2) !default;
-$multiviewcalendar-content-padding-y: 0px !default;
-$multiviewcalendar-navigation-margin-x: 0px !default;
-$multiviewcalendar-navigation-margin-y: calc( #{$calendar-header-padding-y * 2} + #{$calendar-header-height} + #{$button-border-width * 2} ) !default;
