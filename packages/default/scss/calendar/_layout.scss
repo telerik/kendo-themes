@@ -232,15 +232,16 @@
     // Month view
     .k-calendar .k-month,
     .k-calendar-monthview {
+        $_month-cell-size: $calendar-cell-size;
 
         td,
         .k-calendar-td {
-            width: $calendar-cell-size;
-            height: $calendar-cell-size;
+            width: $_month-cell-size;
+            height: $_month-cell-size;
         }
         .k-link {
-            width: $calendar-cell-size;
-            height: $calendar-cell-size;
+            width: $_month-cell-size;
+            height: $_month-cell-size;
         }
     }
 
@@ -248,7 +249,7 @@
     // Year view
     .k-calendar .k-year,
     .k-calendar-yearview {
-        $cell-size: ( (7 / 4) * $calendar-cell-size);
+        $_year-cell-size: ( (7 / 4) * $calendar-cell-size);
 
         td,
         .k-calendar-td {
@@ -256,8 +257,8 @@
             height: auto;
         }
         .k-link {
-            width: $cell-size;
-            height: $cell-size;
+            width: $_year-cell-size;
+            height: $_year-cell-size;
         }
     }
 
@@ -265,7 +266,7 @@
     // Decade view
     .k-calendar .k-decade,
     .k-calendar-decadeview {
-        $cell-size: ( (7 / 4) * $calendar-cell-size);
+        $_decade-cell-size: ( (7 / 4) * $calendar-cell-size);
 
         td,
         .k-calendar-td {
@@ -273,8 +274,8 @@
             height: auto;
         }
         .k-link {
-            width: $cell-size;
-            height: $cell-size;
+            width: $_decade-cell-size;
+            height: $_decade-cell-size;
         }
     }
 
@@ -282,7 +283,7 @@
     // Century view
     .k-calendar .k-century,
     .k-calendar-centuryview {
-        $cell-size: ( (7 / 4) * $calendar-cell-size);
+        $_century-cell-size: ( (7 / 4) * $calendar-cell-size);
 
         td,
         .k-calendar-td {
@@ -290,8 +291,8 @@
             height: auto;
         }
         .k-link {
-            width: $cell-size;
-            height: $cell-size;
+            width: $_century-cell-size;
+            height: $_century-cell-size;
             text-align: left;
         }
     }
