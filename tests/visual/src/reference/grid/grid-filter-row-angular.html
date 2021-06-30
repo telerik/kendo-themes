@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+
+<head>
+    <title>KUI/Angular Grid - Filter Row</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../../assets/styles.css" />
+    <script src="../../../assets/scripts.js"></script>
+</head>
+
+<body>
+    <div class="grid" id="test-area">
+        <h3>Base</h3>
+        <kendo-grid dir="ltr" class="k-widget k-grid">
+            <div class="k-grid-aria-root" role="grid" aria-rowcount="3" aria-colcount="4">
+                <div class="k-grid-header" role="presentation" style="padding: 0px 14px 0px 0px;">
+                    <div class="k-grid-header-wrap" role="presentation">
+                        <table role="presentation">
+                            <colgroup role="presentation">
+                                <col style="width: 50px;">
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead role="presentation">
+                                <tr role="row" aria-rowindex="1">
+                                    <th aria-selected="false" class="k-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="1"><input class="k-checkbox" id="k-grid0-select-all" aria-label="Select All Rows" type="checkbox"></th>
+                                    <th aria-selected="false" class="k-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="2">ID</th>
+                                    <th aria-selected="false" class="k-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="3">Name</th>
+                                    <th aria-selected="false" class="k-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="4">Command</th>
+                                </tr>
+                                <tr role="row" aria-rowindex="2" class="k-filter-row">
+                                    <td aria-label="undefined Filter" aria-colindex="1"></td>
+                                    <td aria-label="ID Filter" aria-colindex="2">
+                                        <kendo-grid-numeric-filter-cell class="k-filtercell">
+                                            <kendo-grid-filter-wrapper-cell class="k-filtercell-wrapper">
+                                                <kendo-numerictextbox dir="ltr" class="k-widget k-numerictextbox"><span class="k-numeric-wrap"><input autocomplete="off" autocorrect="off" class="k-input k-formatted-value" role="spinbutton" id="k-99e9f599-481b-4caf-becd-64ed8d5a647f" tabindex="0" aria-label="ID Filter"><span class="k-select"><span class="k-link k-link-increase" aria-label="Increment" title="Increment"><span class="k-icon k-i-arrow-n"></span></span><span class="k-link k-link-decrease" aria-label="Decrement" title="Decrement"><span class="k-icon k-i-arrow-s"></span></span></span></span></kendo-numerictextbox>
+                                                <kendo-grid-filter-cell-operators class="k-filtercell-operator">
+                                                    <kendo-dropdownlist class="k-dropdown-operator k-widget k-dropdown" iconclass="k-i-filter" textfield="text" valuefield="value" dir="ltr"><span aria-haspopup="listbox" role="listbox" unselectable="on" aria-describedby="edd24597-0e32-4443-8157-241cbbd45929" class="k-dropdown-wrap" id="k-7195d2df-1c3f-4704-88ba-c368b0af7b13" dir="ltr" readonly="false" tabindex="0" aria-disabled="false" aria-readonly="false" aria-expanded="false" aria-activedescendant="b493d50f-c1c8-4bc8-8bf1-04af285d6bf4-eq"><span class="k-input" unselectable="on" id="edd24597-0e32-4443-8157-241cbbd45929">Is equal to</span><span class="k-select" unselectable="on"><span class="k-icon k-i-filter" unselectable="on"></span></span></span></kendo-dropdownlist><button class="k-button k-button-icon" type="button" title="Clear"><span class="k-icon k-i-filter-clear"></span></button>
+                                                </kendo-grid-filter-cell-operators>
+                                            </kendo-grid-filter-wrapper-cell>
+                                        </kendo-grid-numeric-filter-cell>
+                                    </td>
+                                    <td aria-label="Name Filter" aria-colindex="3">
+                                        <kendo-grid-string-filter-cell class="k-filtercell">
+                                            <kendo-grid-filter-wrapper-cell class="k-filtercell-wrapper"><input class="k-textbox ng-untouched ng-pristine ng-valid" aria-label="Name Filter">
+                                                <kendo-grid-filter-cell-operators class="k-filtercell-operator">
+                                                    <kendo-dropdownlist class="k-dropdown-operator k-widget k-dropdown" iconclass="k-i-filter" textfield="text" valuefield="value" dir="ltr"><span aria-haspopup="listbox" role="listbox" unselectable="on" aria-describedby="b4c95048-fcdf-4941-89ff-84ecf5529942" class="k-dropdown-wrap" id="k-74fbe802-e569-42b4-81fc-bcec134e993f" dir="ltr" readonly="false" tabindex="0" aria-disabled="false" aria-readonly="false" aria-expanded="false" aria-activedescendant="c6cf5c73-814b-47c6-beeb-84591bce3f53-contains"><span class="k-input" unselectable="on" id="b4c95048-fcdf-4941-89ff-84ecf5529942">Contains</span><span class="k-select" unselectable="on"><span class="k-icon k-i-filter" unselectable="on"></span></span></span></kendo-dropdownlist><button class="k-button k-button-icon k-clear-button-visible" type="button" title="Clear"><span class="k-icon k-i-filter-clear"></span></button>
+                                                </kendo-grid-filter-cell-operators>
+                                            </kendo-grid-filter-wrapper-cell>
+                                        </kendo-grid-string-filter-cell>
+                                    </td>
+                                    <td aria-label="Command Filter" aria-colindex="4"></td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <kendo-grid-list class="k-grid-container" role="presentation">
+                    <div class="k-grid-content k-virtual-content" role="presentation" tabindex="-1">
+                        <div class="k-grid-table-wrap" role="presentation">
+                            <table class="k-grid-table" role="presentation">
+                                <colgroup role="presentation">
+                                    <col style="width: 50px;">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody role="presentation">
+                                    <tr role="row" aria-rowindex="3">
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="1"><input class="k-checkbox" id="k-grid0-checkbox0" aria-label="Select Row" type="checkbox"></td>
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="2">1</td>
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="3">Product1</td>
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto k-command-cell" colspan="1" aria-colindex="4"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" aria-disabled="false" dir="ltr"><span class="k-icon k-i-delete" role="presentation"></span>Delete</button></td>
+                                    </tr>
+                                    <tr class="k-alt" role="row" aria-rowindex="4">
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="1"><input class="k-checkbox" id="k-grid0-checkbox1" aria-label="Select Row" type="checkbox"></td>
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="2">2</td>
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="3">Product2</td>
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto k-command-cell" colspan="1" aria-colindex="4"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" aria-disabled="false" dir="ltr"><span class="k-icon k-i-delete" role="presentation"></span>Delete</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-height-container" role="presentation">
+                            <div></div>
+                        </div>
+                    </div>
+                </kendo-grid-list>
+            </div>
+        </kendo-grid>
+        <h3>With Toolbar</h3>
+        <kendo-grid dir="ltr" class="k-widget k-grid">
+            <kendo-grid-toolbar class="k-toolbar k-grid-toolbar" position="top"><button icon="add" class="k-button-icontext k-button k-grid-add-command" role="button" aria-disabled="false" dir="ltr"><span class="k-icon k-i-add" role="presentation"></span>Add</button></kendo-grid-toolbar>
+            <div class="k-grid-aria-root" role="grid" aria-rowcount="3" aria-colcount="4">
+                <div class="k-grid-header" role="presentation" style="padding: 0px 14px 0px 0px;">
+                    <div class="k-grid-header-wrap" role="presentation">
+                        <table role="presentation">
+                            <colgroup role="presentation">
+                                <col style="width: 50px;">
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead role="presentation">
+                                <tr role="row" aria-rowindex="1">
+                                    <th aria-selected="false" class="k-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="1"><input class="k-checkbox" id="k-grid1-select-all" aria-label="Select All Rows" type="checkbox"></th>
+                                    <th aria-selected="false" class="k-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="2"><span class="k-cell-inner"><span class="k-link"><span class="k-column-title">ID</span><span aria-label="Sortable"></span></span><span class="k-sort-status" role="status" style="position: absolute; left: -10000px;"></span></span></th>
+                                    <th aria-selected="false" class="k-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="3"><span class="k-cell-inner"><span class="k-link"><span class="k-column-title">Name</span><span aria-label="Sortable"></span></span><span class="k-sort-status" role="status" style="position: absolute; left: -10000px;"></span></span></th>
+                                    <th aria-selected="false" class="k-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="4">Command</th>
+                                </tr>
+                                <tr role="row" aria-rowindex="2" class="k-filter-row">
+                                    <td aria-label="undefined Filter" aria-colindex="1"></td>
+                                    <td aria-label="ID Filter" aria-colindex="2">
+                                        <kendo-grid-numeric-filter-cell class="k-filtercell">
+                                            <kendo-grid-filter-wrapper-cell class="k-filtercell-wrapper">
+                                                <kendo-numerictextbox dir="ltr" class="k-widget k-numerictextbox"><span class="k-numeric-wrap"><input autocomplete="off" autocorrect="off" class="k-input k-formatted-value" role="spinbutton" id="k-84f60ead-5aba-4ce7-8379-8739701c302e" tabindex="0" aria-label="ID Filter"><span class="k-select"><span class="k-link k-link-increase" aria-label="Increment" title="Increment"><span class="k-icon k-i-arrow-n"></span></span><span class="k-link k-link-decrease" aria-label="Decrement" title="Decrement"><span class="k-icon k-i-arrow-s"></span></span></span></span></kendo-numerictextbox>
+                                                <kendo-grid-filter-cell-operators class="k-filtercell-operator">
+                                                    <kendo-dropdownlist class="k-dropdown-operator k-widget k-dropdown" iconclass="k-i-filter" textfield="text" valuefield="value" dir="ltr"><span aria-haspopup="listbox" role="listbox" unselectable="on" aria-describedby="d1edf58d-d9a7-4059-92c7-64eabb9f882f" class="k-dropdown-wrap" id="k-b9590558-e336-420e-9f3a-194e5bba75c6" dir="ltr" readonly="false" tabindex="0" aria-disabled="false" aria-readonly="false" aria-expanded="false" aria-activedescendant="928341d1-62fe-4488-b6f4-7417d5382b59-eq"><span class="k-input" unselectable="on" id="d1edf58d-d9a7-4059-92c7-64eabb9f882f">Is equal to</span><span class="k-select" unselectable="on"><span class="k-icon k-i-filter" unselectable="on"></span></span></span></kendo-dropdownlist><button class="k-button k-button-icon" type="button" title="Clear"><span class="k-icon k-i-filter-clear"></span></button>
+                                                </kendo-grid-filter-cell-operators>
+                                            </kendo-grid-filter-wrapper-cell>
+                                        </kendo-grid-numeric-filter-cell>
+                                    </td>
+                                    <td aria-label="Name Filter" aria-colindex="3">
+                                        <kendo-grid-string-filter-cell class="k-filtercell">
+                                            <kendo-grid-filter-wrapper-cell class="k-filtercell-wrapper"><input class="k-textbox ng-untouched ng-pristine ng-valid" aria-label="Name Filter">
+                                                <kendo-grid-filter-cell-operators class="k-filtercell-operator">
+                                                    <kendo-dropdownlist class="k-dropdown-operator k-widget k-dropdown" iconclass="k-i-filter" textfield="text" valuefield="value" dir="ltr"><span aria-haspopup="listbox" role="listbox" unselectable="on" aria-describedby="9787ebb2-0a94-4c2c-8c9b-285415f74ef9" class="k-dropdown-wrap" id="k-48320500-3e5d-4ade-899f-9f9def71ac0b" dir="ltr" readonly="false" tabindex="0" aria-disabled="false" aria-readonly="false" aria-expanded="false" aria-activedescendant="12f8505f-75d7-4f7a-bd9c-5b2581277620-contains"><span class="k-input" unselectable="on" id="9787ebb2-0a94-4c2c-8c9b-285415f74ef9">Contains</span><span class="k-select" unselectable="on"><span class="k-icon k-i-filter" unselectable="on"></span></span></span></kendo-dropdownlist><button class="k-button k-button-icon k-clear-button-visible" type="button" title="Clear"><span class="k-icon k-i-filter-clear"></span></button>
+                                                </kendo-grid-filter-cell-operators>
+                                            </kendo-grid-filter-wrapper-cell>
+                                        </kendo-grid-string-filter-cell>
+                                    </td>
+                                    <td aria-label="Command Filter" aria-colindex="4"></td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <kendo-grid-list class="k-grid-container" role="presentation">
+                    <div class="k-grid-content k-virtual-content" role="presentation" tabindex="-1">
+                        <div class="k-grid-table-wrap" role="presentation">
+                            <table class="k-grid-table" role="presentation">
+                                <colgroup role="presentation">
+                                    <col style="width: 50px;">
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody role="presentation">
+                                    <tr role="row" aria-rowindex="3">
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="1"><input class="k-checkbox" id="k-grid1-checkbox0" aria-label="Select Row" type="checkbox"></td>
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="2">1</td>
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="3">Product1</td>
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto k-command-cell" colspan="1" aria-colindex="4"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" aria-disabled="false" dir="ltr"><span class="k-icon k-i-delete" role="presentation"></span>Delete</button></td>
+                                    </tr>
+                                    <tr class="k-alt" role="row" aria-rowindex="4">
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="1"><input class="k-checkbox" id="k-grid1-checkbox1" aria-label="Select Row" type="checkbox"></td>
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="2">2</td>
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="3">Product2</td>
+                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto k-command-cell" colspan="1" aria-colindex="4"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" aria-disabled="false" dir="ltr"><span class="k-icon k-i-delete" role="presentation"></span>Delete</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-height-container" role="presentation">
+                            <div></div>
+                        </div>
+                    </div>
+                </kendo-grid-list>
+            </div>
+        </kendo-grid>
+    </div>
+</body>
+
+</html>
