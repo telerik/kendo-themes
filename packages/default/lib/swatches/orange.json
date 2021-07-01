@@ -1,6 +1,6 @@
 {
     "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.11.0/lib/schemas/kendo-swatch.json",
-    "name": "Default Orange",
+    "name": "Orange",
     "product": "kendo",
     "base": "@progress/kendo-theme-default",
     "previewColors": [
