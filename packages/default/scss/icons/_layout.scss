@@ -3,11 +3,14 @@
 @include exports( "icons/layout" ) {
     $icon-font-url: map-get( $data-uris, "WebComponentsIcons.ttf" ) !default;
 
-    @font-face {
-        font-family: "WebComponentsIcons";
-        font-style: normal;
-        font-weight: normal;
-        src: url(#{$icon-font-url}) format( "truetype" );
+    // Keep this as a root selector, because nested themes will not work
+    @at-root {
+        @font-face {
+            font-family: "WebComponentsIcons";
+            font-style: normal;
+            font-weight: normal;
+            src: url(#{$icon-font-url}) format( "truetype" );
+        }
     }
 
     .k-icon {
