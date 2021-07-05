@@ -49,10 +49,10 @@ $h6-margin-bottom: $headings-margin-bottom !default;
 
 
 // Display
-$display1-font-size: $display1-size !default;
-$display2-font-size: $display2-size !default;
-$display3-font-size: $display3-size !default;
-$display4-font-size: $display4-size !default;
+$display1-font-size: map-get( $display-font-sizes, 1) !default;
+$display2-font-size: map-get( $display-font-sizes, 2) !default;
+$display3-font-size: map-get( $display-font-sizes, 3) !default;
+$display4-font-size: map-get( $display-font-sizes, 4) !default;
 
 // Paragraph
 $paragraph-margin-bottom: $paragraph-margin-bottom !default;
@@ -67,10 +67,10 @@ $link-hover-text: $link-hover-color !default;
 $typography-config: () !default;
 // sass-lint:disable indentation
 $typography-config: map-merge((
-    display-1: font-map($headings-font-family, $display1-font-size, $display-line-height, $display1-weight ),
-    display-2: font-map($headings-font-family, $display2-font-size, $display-line-height, $display2-weight ),
-    display-3: font-map($headings-font-family, $display3-font-size, $display-line-height, $display3-weight ),
-    display-4: font-map($headings-font-family, $display4-font-size, $display-line-height, $display4-weight ),
+    display-1: font-map($headings-font-family, $display1-font-size, $display-line-height, $display-font-weight ),
+    display-2: font-map($headings-font-family, $display2-font-size, $display-line-height, $display-font-weight ),
+    display-3: font-map($headings-font-family, $display3-font-size, $display-line-height, $display-font-weight ),
+    display-4: font-map($headings-font-family, $display4-font-size, $display-line-height, $display-font-weight ),
     h1: font-map($headings-font-family, $h1-font-size, $headings-line-height, $headings-font-weight ),
     h2: font-map($headings-font-family, $h2-font-size, $headings-line-height, $headings-font-weight ),
     h3: font-map($headings-font-family, $h3-font-size, $headings-line-height, $headings-font-weight ),
