@@ -47,29 +47,6 @@
         }
     }
 
-    kendo-scrollview.k-scrollview-wrap.k-scrollview-multidot .k-scrollview-pageable > .k-button,
-    kendo-scrollview.k-scrollview.k-scrollview-multidot .k-scrollview-pageable > .k-button,
-    .k-widget.k-scrollview.k-scrollview-multidot .k-scrollview-nav > .k-link {
-
-        &:nth-last-of-type(1),
-        &:nth-of-type(1) {
-            width: ($scrollview-pagebutton-size - 6px);
-            height: ($scrollview-pagebutton-size - 6px);
-        }
-
-        &:nth-last-of-type(2),
-        &:nth-of-type(2) {
-            width: ($scrollview-pagebutton-size - 4px);
-            height: ($scrollview-pagebutton-size - 4px);
-        }
-
-        &:nth-last-of-type(3),
-        &:nth-of-type(3) {
-            width: ($scrollview-pagebutton-size - 2px);
-            height: ($scrollview-pagebutton-size - 2px);
-        }
-    }
-
     kendo-scrollview.k-scrollview-wrap kendo-scrollview-pager,
     kendo-scrollview.k-scrollview kendo-scrollview-pager,
     .k-scrollview-nav-wrap {
