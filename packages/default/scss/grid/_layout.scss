@@ -7,9 +7,6 @@
     $grid-group-dropclue-height: $button-calc-size !default;
     $grid-group-dropclue-top: 3px !default;
 
-    $edit-cell-input-space: calc(-#{$cell-padding} - #{$input-border-width}) !default;
-    $edit-cell-textbox-width: calc(100% + ((#{$cell-padding} + #{$input-border-width}) * 2)) !default;
-
     $grid-row-inner-height: calc( #{$line-height-em} + #{$cell-padding-y * 2} );
     // $grid-row-half-inner-height: calc( #{$line-height-em / 2} + #{$cell-padding-y} );
 
@@ -334,14 +331,6 @@
                 border-color: currentColor currentColor transparent transparent;
                 left: auto;
                 right: 0;
-            }
-
-            .k-edit-cell,
-            .k-grid-edit-row > td {
-                >.k-textbox,
-                >.k-widget {
-                    margin-right: $edit-cell-input-space;
-                }
             }
 
             .k-grid-header-wrap.k-auto-scrollable {
@@ -888,55 +877,24 @@
 
 
     // Edit row
-    .k-grid-edit-row {
-
-        td {
-            text-overflow: clip;
-        }
-
-        .k-widget,
-        .k-button,
-        .k-textbox {
-            height: auto;
-            // Commented out pending a better approach
-            //     margin-top: -$input-padding-y;
-            //     margin-bottom: -$input-padding-y;
-        }
-
-        .k-edit-cell {
-            padding-top: 0;
-            padding-bottom: 0;
-        }
-    }
-
-    .k-edit-cell,
-    .k-grid-edit-row > td {
-        > .k-textbox,
-        > .k-widget:not(.k-switch) {
-            margin-left: $edit-cell-input-space;
-        }
-    }
-
-    .k-grid-edit-row td,
-    .k-edit-cell {
-        > .k-textbox,
-        > .k-widget:not(.k-switch) {
-            width: $edit-cell-textbox-width;
-        }
-    }
-
-    .k-grid-edit-row td > .k-textbox,
-    .k-grid-edit-row td > .k-widget,
-    .k-command-cell > .k-button,
-    .k-edit-cell > .k-textbox,
-    .k-edit-cell > .k-widget {
-        vertical-align: $grid-form-component-vertical-align;
-    }
-
-    .k-grid .k-grid-edit-row td:not(.k-hierarchy-cell),
+    .k-grid .k-edit-cell,
     .k-grid .k-command-cell,
-    .k-grid .k-edit-cell {
-        padding: $grid-command-cell-padding-y $grid-cell-padding-x;
+    .k-grid .k-grid-edit-row td {
+        padding: $grid-edit-cell-padding-y $grid-edit-cell-padding-x;
+        text-overflow: clip;
+    }
+
+    .k-grid .k-edit-cell,
+    .k-grid .k-grid-edit-row td {
+
+        > input:not([type="checkbox"]):not([type="radio"]),
+        > select,
+        > .k-textbox,
+        > .k-widget:not(.k-switch) {
+            width: 100%;
+            vertical-align: $grid-form-component-vertical-align;
+            box-sizing: border-box;
+        }
     }
 
     .k-grid .k-command-cell > .k-button {
@@ -946,8 +904,8 @@
         margin-left: $grid-command-cell-button-spacing;
         margin-inline-end: unset;
         margin-inline-start: $grid-command-cell-button-spacing;
-
     }
+
 
     // Resize handle
     .k-grid > .k-resize-handle,

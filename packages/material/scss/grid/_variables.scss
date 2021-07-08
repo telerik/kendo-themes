@@ -106,7 +106,11 @@ $grid-sorting-index-height: $icon-size !default;
 $grid-sorting-index-spacing-y: $icon-spacing / 2;
 $grid-sorting-index-spacing-x: -$grid-sorting-index-spacing-y;
 
+
 $grid-focused-shadow: $list-item-focused-shadow !default;
+
+$grid-edit-cell-padding-x: $grid-cell-padding-x !default;
+$grid-edit-cell-padding-y: 6px !default;
 
 $grid-command-cell-button-spacing: map-get( $spacing, 2 ) !default;
 

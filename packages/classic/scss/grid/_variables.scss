@@ -111,6 +111,9 @@ $grid-sorting-index-spacing-x: -$grid-sorting-index-spacing-y !default;
 
 $grid-focused-shadow: $list-item-focused-shadow !default;
 
+$grid-edit-cell-padding-x: $grid-cell-padding-x !default;
+$grid-edit-cell-padding-y: 3px !default;
+
 $grid-command-cell-button-spacing: map-get( $spacing, 2 ) !default;
 
 $grid-search-width: $input-default-width !default;
