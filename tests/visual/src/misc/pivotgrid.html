@@ -11,7 +11,9 @@
     <div id="test-area" class="k-d-grid k-grid-cols-1" style="max-width: 1073px;">
 
         <section>
-            <div class="k-pivotgrid k-pivotgrid-settings-push k-pivotgrid-settings-end">
+            <!-- k-flex-row: sets the default right position of the settings panel.
+                Other positions are set via k-flex-row-reverse, k-flex-col and k-flex-col-reverse classes -->
+            <div class="k-pivotgrid k-flex-row">
                 <table class="k-pivotgrid-table">
 
                     <tr class="k-pivotgrid-row k-pivotgrid-header">
@@ -498,11 +500,85 @@
                         </td>
                     </tr>
                 </table>
-                <div class="k-pivotgrid-settings-button">
-                    <span class="test">
+                <div class="k-pivotgrid-settings">
+                    <div class="k-pivotgrid-settings-button">
                         Change settings
                         <span class="k-icon k-i-gear"></span>
-                    </span>
+                    </div>
+                    <div class="k-pivotgrid-settings-panel k-pivotgrid-settings-push k-pivotgrid-settings-vertical">
+                        <div class="k-pivotgrid-settings-header">
+                            <div class="k-pivotgrid-settings-header-text">Settings</div>
+                            <span class="k-spacer"></span>
+                            <div class="k-pivotgrid-settings-header-actions">
+                                <button class="k-button k-button-icon k-flat">
+                                    <i class="k-icon k-i-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="k-pivotgrid-settings-content">
+                            <form class="k-form k-form-horizontal">
+                                <div class="k-form-field">
+                                    <label class="k-label">Columns:</label>
+                                    <span class="k-spacer"></span>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-widget k-dropdown">
+                                            <span class="k-dropdown-wrap">
+                                                <span class="k-input">Add</span>
+                                                <span class="k-select">
+                                                    <span class="k-icon k-i-arrow-s"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <label class="k-label">Rows:</label>
+                                    <span class="k-spacer"></span>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-widget k-dropdown">
+                                            <span class="k-dropdown-wrap">
+                                                <span class="k-input">Add</span>
+                                                <span class="k-select">
+                                                    <span class="k-icon k-i-arrow-s"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="k-switch-fields">
+                                <label>Switch rows & columns</label>
+                                <span class="k-spacer"></span>
+                                <span class="k-widget k-switch k-switch-off">
+                                    <span class="k-switch-container">
+                                        <span class="k-switch-label-on">ON</span>
+                                        <span class="k-switch-label-off">OFF</span>
+                                        <span class="k-switch-handle"></span>
+                                    </span>
+                                </span>
+                            </div>
+                            <form class="k-form k-form-horizontal">
+                                <div class="k-form-field">
+                                    <label class="k-label">Values:</label>
+                                    <span class="k-spacer"></span>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-widget k-dropdown">
+                                            <span class="k-dropdown-wrap">
+                                                <span class="k-input">Add</span>
+                                                <span class="k-select">
+                                                    <span class="k-icon k-i-arrow-s"></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="k-pivotgrid-settings-actions k-action-buttons k-actions-end">
+                            <button class="k-button">Cancel</button>
+                            <button class="k-button k-button-primary">Apply</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
