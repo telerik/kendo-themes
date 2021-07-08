@@ -25,7 +25,8 @@
 @include exports("pivotgrid/theme/settings-panel") {
 
     // Settings Panel
-    .k-pivotgrid-settings {
+    .k-pivotgrid-settings-button,
+    .k-pivotgrid-settings-panel {
         @include fill (
             $pivotgrid-settings-text,
             $pivotgrid-settings-bg,
@@ -70,26 +71,20 @@
 
     // Overlay mode
     .k-pivotgrid-settings-overlay {
-        .k-pivotgrid-settings {
+        .k-flex-row & {
             @include box-shadow( $pivotgrid-settings-end-shadow );
         }
 
-        &.k-pivotgrid-settings-start .k-pivotgrid-settings {
+        .k-flex-row-reverse & {
             @include box-shadow( $pivotgrid-settings-start-shadow );
         }
 
-        &.k-pivotgrid-settings-top .k-pivotgrid-settings {
+        .k-flex-col & {
             @include box-shadow( $pivotgrid-settings-top-shadow );
-            width: 100%;
-            right: auto;
-            bottom: auto;
         }
 
-        &.k-pivotgrid-settings-bottom .k-pivotgrid-settings {
+        .k-flex-col-reverse & {
             @include box-shadow( $pivotgrid-settings-bottom-shadow );
-            width: 100%;
-            top: auto;
-            right: auto;
         }
     }
 }

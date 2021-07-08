@@ -5,7 +5,6 @@
         font-family: $pivotgrid-font-family;
         line-height: $pivotgrid-line-height;
         display: flex;
-        flex-direction: column;
         position: relative;
 
         .k-pivotgrid-cell {
@@ -19,11 +18,7 @@
         border-style: solid;
         border-collapse: collapse;
         border-spacing: 0;
-        // To layout the Settings Panel
-        display: flex;
-        flex-direction: column;
         table-layout: auto;
-        position: relative;
     }
 
     .k-pivotgrid-toolbar {
@@ -36,28 +31,104 @@
     .k-pivotgrid-header .k-pivotgrid-cell:first-child {
         padding: 8px;
     }
-
 }
 
 
 
 @include exports("pivotgrid/layout/settings-panel") {
+    // Wrapper
     .k-pivotgrid-settings {
+        display: flex;
+
+        .k-flex-row & {
+            flex-direction: row-reverse;
+        }
+        .k-flex-row-reverse & {
+            flex-direction: row;
+        }
+        .k-flex-col & {
+            flex-direction: column-reverse;
+        }
+        .k-flex-col-reverse & {
+            flex-direction: column;
+        }
+    }
+
+    // Button
+    .k-pivotgrid-settings-button {
+        padding: 4px 4px; // TODO extract variable
+        border-width: $pivotgrid-settings-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        text-align: center;
+        cursor: pointer;
+
+        .k-flex-row & {
+            writing-mode: vertical-rl;
+        }
+        .k-flex-row-reverse & {
+            writing-mode: vertical-rl;
+        }
+        .k-icon {
+            vertical-align: baseline;
+        }
+    }
+
+    // Panel
+    .k-pivotgrid-settings-panel {
         padding: $pivotgrid-settings-padding-y $pivotgrid-settings-padding-x;
         border-width: $pivotgrid-settings-border-width;
         border-style: solid;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
         overflow: hidden;
         z-index: 2;
         gap: $pivotgrid-settings-gap;
     }
 
+    // Modes
+    .k-pivotgrid-settings-push {
+        .k-flex-row &,
+        .k-flex-row-reverse & {
+            border-right-width: 0;
+            border-left-width: 0;
+        }
+
+        .k-flex-col &,
+        .k-flex-col-reverse & {
+            border-top-width: 0;
+            border-bottom-width: 0;
+        }
+
+        .k-pivotgrid-settings-vertical {
+            min-width: $pivotgrid-settings-vertical-width;
+        }
+    }
+
+    .k-pivotgrid-settings-overlay {
+        position: absolute;
+        overflow: hidden;
+        z-index: 2;
+
+        .k-flex-row & {
+            right: 28px;  // TODO calculate dynamically the button width
+        }
+        .k-flex-row-reverse & {
+            left: 28px;  // TODO calculate dynamically the button width
+        }
+
+        .k-flex-col & {
+            top: 28px;  // TODO calculate dynamically the button width
+        }
+        .k-flex-col-reverse & {
+            bottom: 28px;  // TODO calculate dynamically the button width
+        }
+    }
+
+
+
+    // Panel Content
     .k-pivotgrid-settings-header {
         font-size: $pivotgrid-settings-header-font-size;
         font-weight: $pivotgrid-settings-header-font-weight;
@@ -233,40 +304,6 @@
 
         .k-value-fields {
             flex-direction: row;
-        }
-    }
-
-
-    // Positions
-    .k-pivotgrid-settings-start .k-pivotgrid-settings {
-        right: auto;
-        left: 0;
-    }
-
-
-    // Modes
-    .k-pivotgrid-settings-push {
-        display: flex;
-        flex-direction: row;
-
-        .k-pivotgrid-settings {
-            position: relative;
-        }
-
-        .k-pivotgrid-settings-vertical {
-            min-width: $pivotgrid-settings-vertical-width;
-        }
-
-        &.k-pivotgrid-settings-start {
-            flex-direction: row-reverse;
-        }
-
-        &.k-pivotgrid-settings-top {
-            flex-direction: column-reverse;
-        }
-
-        &.k-pivotgrid-settings-bottom {
-            flex-direction: column;
         }
     }
 }
