@@ -47,7 +47,7 @@
 
         td,
         th {
-            padding: $cell-padding;
+            padding: $scheduler-cell-padding-y $scheduler-cell-padding-x;
             height: $scheduler-cell-height;
             overflow: hidden;
             white-space: nowrap;
