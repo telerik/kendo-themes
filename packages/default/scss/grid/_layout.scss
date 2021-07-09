@@ -939,9 +939,14 @@
         padding: $grid-command-cell-padding-y $grid-cell-padding-x;
     }
 
-    .k-command-cell > .k-button {
+    .k-grid .k-command-cell > .k-button {
+        vertical-align: $grid-form-component-vertical-align;
+    }
+    .k-grid .k-command-cell > .k-button + .k-button {
         margin-left: $grid-command-cell-button-spacing;
-        margin-right: $grid-command-cell-button-spacing;
+        margin-inline-end: unset;
+        margin-inline-start: $grid-command-cell-button-spacing;
+
     }
 
     // Resize handle

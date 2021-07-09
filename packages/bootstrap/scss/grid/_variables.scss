@@ -107,7 +107,7 @@ $grid-sorting-index-spacing-x: -$grid-sorting-index-spacing-y !default;
 
 $grid-focused-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .08) !default;
 
-$grid-command-cell-button-spacing: .16em !default;
+$grid-command-cell-button-spacing: map-get( $spacing, 2 ) !default;
 
 $grid-search-width: $input-default-width !default;
 
