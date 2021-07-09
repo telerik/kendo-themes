@@ -104,7 +104,7 @@ $zindex-window: 2 !default;
 
 
 // Color settings
-$is-dark-theme: false;
+$is-dark-theme: false !default;
 
 $white: #ffffff !default;
 $black: #000000 !default;
@@ -127,7 +127,7 @@ $accent-contrast: contrast-wcag( $accent ) !default;
 /// Used for primary buttons and for elements of primary importance across the theme.
 /// @group color-system
 /// @type Color
-$primary: $accent !default;
+$primary: $primary !default;
 $primary-lighter: tint( $primary, 2 ) !default;
 $primary-darker: shade( $primary, 2 ) !default;
 
@@ -135,7 +135,7 @@ $primary-darker: shade( $primary, 2 ) !default;
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$primary-contrast: $accent-contrast !default;
+$primary-contrast: contrast-wcag( $primary ) !default;
 
 /// The secondary color of the theme.
 /// @group color-system
@@ -239,58 +239,6 @@ $gradient-white-to-transparent: white, rgba( white, 0);
 
 $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
-/// The background of the components' chrome area.
-$base-bg: try-darken( $component-bg, 3% ) !default;
-/// The text color of the components' chrome area.
-$base-text: $component-color !default;
-/// The border color of the components' chrome area.
-$base-border: try-darken( $base-bg, 3% ) !default;
-/// The gradient background of the components' chrome area.
-$base-gradient: null !default;
-
-/// The background of hovered items.
-$hovered-bg: try-darken( $base-bg, 3% ) !default;
-/// The text color of hovered items.
-$hovered-text: $base-text !default;
-/// The border color of hovered items.
-$hovered-border: try-darken( $base-border, 12% ) !default;
-/// The gradient background of hovered items.
-$hovered-gradient: null !default;
-
-/// The background of selected items.
-$selected-bg: $primary !default;
-/// The text color of selected items.
-$selected-text: contrast-wcag( $selected-bg ) !default;
-/// The border color of selected items.
-$selected-border: try-darken( $selected-bg, 12% ) !default;
-/// The gradient background of selected items.
-$selected-gradient: null !default;
-
-$selected-hover-bg: try-shade( $selected-bg, .5 ) !default;
-$selected-hover-text: $selected-text !default;
-$selected-hover-border: $base-border !default;
-$selected-hover-gradient: null !default;
-
-
-// TODO: refactor
-$focused-shadow: null !default;
-$primary-focused-shadow: null !default;
-
-$transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
-
-
-// Disabled mixin variables
-$disabled-filter: grayscale(.1) !default;
-$disabled-opacity: .65 !default;
-
-
-// Generic styles
-
-// TODO: refactor once we extract drag drop as separate module
-$font-size: $font-size-base !default;
-$font-family: $font-family-base !default;
-$line-height: $line-height-base !default;
-
 // Root styles
 $body-bg: $body-bg !default;
 $body-text: $body-color !default;
@@ -318,6 +266,59 @@ $component-text: $component-color !default;
 /// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
 /// @group component
 $component-border: $component-border-color !default;
+
+
+/// The background of the components' chrome area.
+$base-bg: $gray-100 !default;
+/// The text color of the components' chrome area.
+$base-text: $body-text !default;
+/// The border color of the components' chrome area.
+$base-border: try-shade( $base-bg, 1 ) !default;
+/// The gradient background of the components' chrome area.
+$base-gradient: null !default;
+
+/// The background of hovered items.
+$hovered-bg: $gray-200 !default;
+/// The text color of hovered items.
+$hovered-text: $base-text !default;
+/// The border color of hovered items.
+$hovered-border: try-shade( $hovered-bg, 1 ) !default;
+/// The gradient background of hovered items.
+$hovered-gradient: null !default;
+
+/// The background of selected items.
+$selected-bg: $primary !default;
+/// The text color of selected items.
+$selected-text: contrast-wcag( $selected-bg ) !default;
+/// The border color of selected items.
+$selected-border: try-shade( $selected-bg, 1 ) !default;
+/// The gradient background of selected items.
+$selected-gradient: null !default;
+
+$selected-hover-bg: try-shade( $selected-bg, .5 ) !default;
+$selected-hover-text: $selected-text !default;
+$selected-hover-border: $base-border !default;
+$selected-hover-gradient: null !default;
+
+
+// TODO: refactor
+$focused-shadow: null !default;
+$primary-focused-shadow: null !default;
+
+$transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
+
+
+// Disabled mixin variables
+$disabled-filter: grayscale(.1) !default;
+$disabled-opacity: .65 !default;
+
+
+// Generic styles
+
+// TODO: refactor once we extract drag drop as separate module
+$font-size: $font-size-base !default;
+$font-family: $font-family-base !default;
+$line-height: $line-height-base !default;
 
 
 // Drop Hint
@@ -349,27 +350,10 @@ $frozen-grouping-header-border-width: 2px !default;
 
 
 // Header
-$header-bg: contrast-wcag( $component-bg, $gray-100, $gray-900 ) !default;
+$header-bg: $base-bg !default;
 $header-text: $component-text !default;
 $header-border: $component-border !default;
 $header-gradient: null !default;
-
-
-// Node
-$node-bg: $base-bg !default;
-$node-text: $base-text !default;
-$node-border: $base-border !default;
-$node-gradient: null !default;
-
-$node-hovered-bg: $list-group-hover-bg !default;
-$node-hovered-text: $list-group-hover-color !default;
-$node-hovered-border: $node-hovered-bg !default;
-$node-hovered-gradient: null !default;
-
-$node-selected-bg: $selected-bg !default;
-$node-selected-text: $selected-text !default;
-$node-selected-border: $selected-border !default;
-$node-selected-gradient: null !default;
 
 
 // List item

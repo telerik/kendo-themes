@@ -19,8 +19,8 @@ $upload-dropzone-hover-bg: $hovered-bg !default;
 $upload-status-text: $subtle-text !default;
 $upload-status-text-opacity: null !default;
 
-$upload-item-padding-x: ($cell-padding * 2) !default;
-$upload-item-padding-y: ($cell-padding * 2) !default;
+$upload-item-padding-x: map-get( $spacing, 4 ) !default;
+$upload-item-padding-y: map-get( $spacing, 4 ) !default;
 
 $upload-multiple-items-spacing: 12px !default;
 

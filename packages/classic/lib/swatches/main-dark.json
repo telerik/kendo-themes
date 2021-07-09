@@ -1,6 +1,6 @@
 {
     "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.11.0/lib/schemas/kendo-swatch.json",
-    "name": "Classic Dark",
+    "name": "Main Dark",
     "product": "kendo",
     "base": "@progress/kendo-theme-classic",
     "hidden": true,

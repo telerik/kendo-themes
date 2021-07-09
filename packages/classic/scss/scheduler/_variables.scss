@@ -40,6 +40,8 @@ $scheduler-event-selected-border: null !default;
 $scheduler-event-selected-gradient: null !default;
 $scheduler-event-selected-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
+$scheduler-cell-padding-x: map-get( $spacing, 2 ) !default;
+$scheduler-cell-padding-y: map-get( $spacing, 2 ) !default;
 $scheduler-cell-height: $line-height-em !default;
 $scheduler-datecolumn-width: 12em !default;
 $scheduler-timecolumn-width: 11em !default;
