@@ -242,15 +242,6 @@
         background-color: $primary;
     }
 
-    .k-grid-edit-row > td {
-
-        > .k-textbox,
-        > .k-textarea,
-        > .k-widget {
-            background-color: $text-field-bg;
-        }
-    }
-
     .k-columnmenu-item {
         &.k-state-selected {
             @include fill(
