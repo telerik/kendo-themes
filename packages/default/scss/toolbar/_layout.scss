@@ -122,6 +122,15 @@
     }
 
 
+    // Toolbar group
+    .k-toolbar-group {
+        display: flex;
+        flex-direction: inherit;
+        flex-wrap: nowrap;
+        gap: inherit;
+    }
+
+
     // Angular specific
     kendo-toolbar-renderer {
         border-color: inherit;
