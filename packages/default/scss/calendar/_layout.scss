@@ -2,7 +2,6 @@
 
     // Base
     .k-calendar {
-        @include use-background-clip();
         border-width: $calendar-border-width;
         border-style: solid;
         box-sizing: border-box;
