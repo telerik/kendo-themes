@@ -28,8 +28,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$toolbar-padding-x</td>
     <td></td>
-    <td>6px</td>
-    <td>6px</td>
+    <td>map-get( $spacing, 2 )</td>
+    <td>map-get( $spacing, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the container.</div></div>
@@ -38,8 +38,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$toolbar-padding-y</td>
     <td></td>
-    <td>6px</td>
-    <td>6px</td>
+    <td>map-get( $spacing, 2 )</td>
+    <td>map-get( $spacing, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the container.</div></div>
