@@ -140,15 +140,7 @@
         align-items: center;
         flex: 1;
 
-        &::before {
-            @extend .k-i-formula-fx;
-            font-size: $icon-size;
-            font-family: "WebComponentsIcons";
-            font-style: normal;
-            font-variant: normal;
-            font-weight: normal;
-            line-height: 1;
-
+        > .k-i-formula-fx {
             padding: 0 $padding-y;
             border-width: 0 1px 0 0;
             border-style: solid;
