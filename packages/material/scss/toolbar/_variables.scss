@@ -2,10 +2,10 @@
 
 /// The horizontal padding of the container.
 /// @group toolbar
-$toolbar-padding-x: 6px !default;
+$toolbar-padding-x: map-get( $spacing, 2 ) !default;
 /// The vertical padding of the container.
 /// @group toolbar
-$toolbar-padding-y: 6px !default;
+$toolbar-padding-y: map-get( $spacing, 2 ) !default;
 $toolbar-border-width: 0 !default;
 $toolbar-border-radius: null !default;
 $toolbar-spacing: $toolbar-padding-x !default;
