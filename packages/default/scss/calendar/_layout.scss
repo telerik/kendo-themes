@@ -345,28 +345,6 @@
             width: 100%;
             flex: 0 0 auto;
         }
-
-        .k-calendar-yearview,
-        .k-calendar-decadeview,
-        .k-calendar-centuryview {
-            .k-content,
-            .k-calendar-content {
-                $cell-size: $calendar-view-width / 5;
-
-                td,
-                .k-calendar-td {
-                    width: auto;
-                    height: auto;
-                }
-
-                .k-link,
-                td.k-empty,
-                .k-calendar-td.k-empty {
-                    width: $cell-size;
-                    height: $cell-size;
-                }
-            }
-        }
     }
 
 
