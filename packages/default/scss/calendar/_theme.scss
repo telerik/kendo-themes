@@ -195,6 +195,15 @@
         }
     }
 
+
+    // Scheduler integration
+    .k-scheduler .k-calendar .k-other-month {
+        @include fill(
+            $calendar-other-month-text,
+            transparent
+        );
+    }
+
 }
 
 
